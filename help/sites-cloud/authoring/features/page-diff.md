@@ -3,9 +3,9 @@ title: 'Differenze tra pagine '
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,14 +23,14 @@ La creazione di contenuti è un processo iterativo. Per un authoring efficace, �
 >
 >Per ulteriori informazioni tecniche su questa funzione, consulta [Sviluppo e differenze tra pagine](/help/implementing/developing/introduction/page-diff.md#operation-details).
 
-## Utilizzo {#use}
+## Utilizzare {#use}
 
 La visualizzazione affiancata delle differenze permette di confrontare:
 
 * [Versioni](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - Versione precedente di una pagina con il relativo stato corrente
-* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy con la relativa blueprint
-* [Lanci](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Lancio con la rispettiva origine
-* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)Copie per lingua - Una pagina prima e dopo la traduzione o la ritraduzione
+* [live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy con la relativa blueprint
+* [Lanci](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Lancio con la rispettiva sorgente
+* [Copie per lingua](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) - Una pagina prima e dopo la traduzione o la ritraduzione
 
 Consulta i rispettivi argomenti su come avviare la funzione per il rilevamento delle differenze in questi contesti.
 
@@ -88,7 +88,7 @@ Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsias
 Esistono alcune situazioni in cui il confronto delle differenze della pagina non è in grado di rilevare una differenza nel modo previsto.
 
 * Nel confronto di versioni e lanci, la funzione non prende in considerazione le differenze dinamiche, come i componenti breadcrumb, i menu, gli elenchi di prodotti o i loghi (componenti che si basano sulla struttura del sito per eseguire il rendering del contenuto).
-* Per le versioni, la differenza non ricrea i criteri di controllo accessi e le relazioni Live Copy.
+* Per le versioni, non viene ricreato il criterio per il controllo degli accessi e le relazioni Live Copy.
 * Se una pagina viene spostata, non ti sarà più possibile eseguire una rilevazione delle differenze con qualsiasi versione creata prima dello spostamento.
    * Se rilevi dei problemi con una differenza, controlla la [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) per verificare se la pagina è stata spostata.
 
