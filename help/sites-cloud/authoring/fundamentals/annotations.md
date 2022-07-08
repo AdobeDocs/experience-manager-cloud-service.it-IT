@@ -11,13 +11,13 @@ ht-degree: 100%
 
 # Aggiunta di annotazioni di pagina {#adding-page-annotations}
 
-La creazione di contenuti per esperienze digitali richiede spesso discussioni e feedback prima di passare alla loro pubblicazione. Per facilitare il processo di feedback, AEM consente di aggiungere annotazioni al contenuto.
+La creazione di contenuti per la tua esperienza digitale richiede spesso discussioni e feedback prima della pubblicazione. Per facilitare questo processo di feedback, AEM consente di aggiungere annotazioni al contenuto.
 
-Un’annotazione si presenta come un semplice schizzo o una nota (simile a un post-it) applicata alla pagina. L’annotazione consente di lasciare commenti o domande per altri autori e revisori.
+Un’annotazione si presenta come uno schizzo o una nota semplice (pensa alle note adesiva) applicata alla pagina. L’annotazione consente di lasciare commenti o domande per altri autori e revisori.
 
 >[!TIP]
 >
->Sono disponibili anche i [commenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) per fornire feedback su una pagina.
+>Sono disponibili anche i [commenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) per fornire feedback in una pagina.
 
 Per la creazione e la visualizzazione delle annotazioni viene utilizzata una [modalità](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) speciale.
 
@@ -43,21 +43,21 @@ Le annotazioni sono visibili solo in modalità Annota.
 
    ![Esempi di annotazione](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Tocca o fai clic sull’annotazione per aprire la relativa finestra di dialogo e visualizzarne i dettagli.
+1. Tocca o fai clic sull’annotazione per aprirla e visualizzarne i dettagli.
 
    ![Dettagli annotazione](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. Per uscire dalla modalità di annotazione e tornare alla modalità precedente tocca o fai clic sul pulsante x a destra della barra degli strumenti superiore.
+1. Per uscire dalla modalità Annota e tornare alla modalità precedente tocca/fai clic sul pulsante x a destra della barra degli strumenti superiore.
 
 ## Aggiunta e modifica di annotazioni {#annotating-a-component}
 
-Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, modificare, spostare o eliminare le annotazioni nel contenuto.
+Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, modificare, spostare o eliminare le annotazioni nel contenuto
 
-1. [Avvia la modalità Annota](#annotate-mode) sulla pagina.
+1. [Modalità Avvia annotazione](#annotate-mode) sulla pagina.
 
-1. Per iniziare ad aggiungere annotazioni, tocca o fai clic sull’icona Aggiungi annotazione (simbolo + a sinistra della barra degli strumenti).
+1. Tocca o fai clic sull’icona Aggiungi annotazione (simbolo + a sinistra della barra degli strumenti) per iniziare ad aggiungere annotazioni.
 
-1. Tocca o fai clic sul componente richiesto (i componenti ai quali è possibile aggiungere annotazioni sono evidenziati da un bordo blu) per aggiungere l’annotazione e aprire la relativa finestra di dialogo:
+1. Tocca o fai clic sul componente richiesto (i componenti ai quali è possibile aggiungere annotazioni saranno evidenziati da un bordo blu) per aggiungere l’annotazione e aprire la relativa finestra di dialogo:
 
    ![Aggiunta di un’annotazione](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -80,9 +80,9 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 1. Dopo aver modificato un’annotazione, puoi effettuare le seguenti operazioni:
 
-   * Tocca o fai clic sul marcatore di testo per aprire l’annotazione. Una volta aperta, è possibile visualizzare il testo completo, apportare modifiche o [eliminare l’annotazione.](#deleting-annotations)
+   * Tocca o fai clic sul marcatore di testo per aprire l’annotazione. Una volta aperto, è possibile visualizzare il testo completo, apportare modifiche o [eliminare l’annotazione.](#deleting-annotations)
    * Riposiziona il marcatore di testo.
-   * Tocca o fai clic su una linea di uno schizzo per selezionarlo e trascinarlo nella posizione desiderata.
+   * Tocca o fai clic su una linea dello schizzo per selezionarlo e trascinarlo nella posizione desiderata.
    * Spostare o copiare un componente
       * Vengono spostate o copiate anche tutte le annotazioni e gli schizzi associati, mantenendo la stessa posizione in relazione al paragrafo.
 
@@ -99,7 +99,7 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 È possibile eliminare le annotazioni e gli schizzi associati.
 
-1. [Avvia la modalità Annota](#annotate-mode) sulla pagina.
+1. [Avvia modalità annota](#annotate-mode) sulla pagina.
 
 1. Tocca o fai clic sul marcatore di testo per aprire l’annotazione.
 
@@ -111,13 +111,13 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 >[!NOTE]
 >
->Se si elimina un componente, vengono anche eliminati tutte le annotazioni e gli schizzi associati ad esso, indipendentemente dalla loro posizione sulla pagina.
+>Se si elimina un componente, vengono anche eliminate tutte le annotazioni e gli schizzi associati ad esso, indipendentemente dalla loro posizione sulla pagina.
 
-## Eliminazione dei soli schizzi {#deleting-sketches}
+## Eliminazione solo degli schizzi {#deleting-sketches}
 
-È possibile eliminare solo specifici schizzi invece dell’intera annotazione con gli schizzi associati.
+Con tutti gli schizzi associati è possibile eliminare solo gli schizzi specifici invece dell’intera annotazione.
 
-1. [Avvia la modalità Annota](#annotate-mode) sulla pagina.
+1. [Avvia Modalità annota](#annotate-mode) sulla pagina.
 
 1. Tocca o fai clic sullo schizzo. AEM lo evidenzia con una casella blu più scura.
 
@@ -125,7 +125,7 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 1. Premi il tasto Canc sulla tastiera.
 
-1. Lo schizzo viene eliminato, ma l’annotazione rimane.
+1. Lo schizzo viene eliminato, ma l’annotazione rimane invariata.
 
 ## Aggiunta di annotazioni ad altre risorse {#annotating-other-resources}
 
