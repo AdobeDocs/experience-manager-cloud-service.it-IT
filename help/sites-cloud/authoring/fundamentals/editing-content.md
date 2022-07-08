@@ -3,7 +3,7 @@ title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile modificarla per aggiornarne i contenuti
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2974'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ La barra degli strumenti offre l&#39;accesso a numerose opzioni. A seconda del c
 
    ![Pulsante Anteprima](/help/sites-cloud/authoring/assets/preview.png)
 
-* **Annota**
+* **Annotazioni**
 
    Consente di aggiungere [annotazioni](/help/sites-cloud/authoring/fundamentals/annotations.md) alla pagina durante la revisione. Dopo la prima annotazione, l’icona viene sostituita da un numero che indica quante annotazioni sono presenti sulla pagina.
 
@@ -212,7 +212,7 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
    ![Pulsante Taglia](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
-* **Elimina**
+* **Eliminare**
 
    Questo comando elimina il componente dalla pagina, previa conferma.
 
@@ -400,7 +400,7 @@ La [modalità di pagina Stato Live Copy](/help/sites-cloud/authoring/fundamental
 * Bordo verde: componente ereditato
 * Bordo rosa: l’ereditarietà del componente è stata annullata
 
-Ad esempio:
+Esempio:
 
 ![Esempio di visualizzazione stato Live Copy](/help/sites-cloud/authoring/assets/editing-live-copy-status.png)
 
