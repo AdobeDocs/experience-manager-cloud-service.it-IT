@@ -3,9 +3,9 @@ title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2154'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Ad esempio, nella vista a colonne:
 
 ## Modifica del contenuto di una pagina {#editing-page-content}
 
-Puoi modificare una pagina con l’editor di pagina. Ad esempio:
+Puoi modificare una pagina con l’editor di pagina. Esempio:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -46,7 +46,7 @@ Ulteriori [risorse di aiuto sono disponibili dalle console](/help/sites-cloud/au
 
 ## Browser Componenti   {#components-browser}
 
-I componenti sono gli elementi costitutivi dei contenuti AEM. Per creare la pagina dei contenuti con AEM, posiziona più componenti su una pagina e configurane le relative opzioni .
+I componenti sono gli elementi costitutivi dei contenuti AEM. Per creare la pagina dei contenuti con AEM, posiziona più componenti su una pagina e configurane le relative opzioni.
 
 Il browser Componenti mostra tutti i componenti disponibili per la pagina corrente. Puoi trascinarli nella posizione desiderata, quindi modificarli per aggiungere i contenuti richiesti.
 
@@ -190,7 +190,7 @@ Fai clic sul componente per evidenziarlo nell’editor di pagine. Le azioni disp
 
    ![Pulsante modifica Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Una pagina che fa parte di un [livecopy](/help/sites-cloud/administering/msm/overview.md), in cui i componenti vengono ereditati da un’altra pagina.
+* Oppure una pagina che fa parte di una [live copy](/help/sites-cloud/administering/msm/overview.md), dove i componenti vengono ereditati da un’altra pagina, ad esempio.
 
 >[!NOTE]
 >
@@ -224,8 +224,8 @@ Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determi
 * **Collegamenti in entrata**: fornisce un elenco di pagine che fanno riferimento a una data pagina, insieme all’accesso diretto alla funzione di **Modifica** di una di queste pagine quando selezioni un collegamento specifico.
 * Istanze di contenuto prestato o preso in prestito mediante il componente **Riferimento**: da qui puoi passare alla pagina di riferimento o a cui si fa riferimento.
 * [Lanci](/help/sites-cloud/authoring/launches/overview.md): fornisce accesso ai lanci correlati.
-* [](/help/sites-cloud/administering/msm/overview.md)Live Copy visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
-* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md), fornisce dettagli e varie azioni
+* [Live Copy](/help/sites-cloud/administering/msm/overview.md) visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
+* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md) fornisce dettagli e varie azioni
 * [Copie per lingua](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel): fornisce dettagli e varie azioni
 
 ## Eventi - Timeline {#events-timeline}
