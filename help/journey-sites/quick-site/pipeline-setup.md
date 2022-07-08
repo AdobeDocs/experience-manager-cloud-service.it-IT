@@ -1,51 +1,51 @@
 ---
-title: Imposta la pipeline
+title: Configurare la pipeline
 description: Crea una pipeline front-end per gestire la personalizzazione del tema del sito.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '976'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Imposta la pipeline {#set-up-your-pipeline}
+# Configurare la pipeline {#set-up-your-pipeline}
 
 Crea una pipeline front-end per gestire la personalizzazione del tema del sito.
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di creazione di siti rapidi AEM, [Crea sito da modello,](create-site.md) hai imparato a utilizzare un modello di sito per creare rapidamente un sito AEM che può essere ulteriormente personalizzato utilizzando gli strumenti front-end e ora devi:
+Nel documento precedente del percorso di creazione rapida sito di AEM, [Creare sito da modello,](create-site.md) hai imparato a utilizzare un modello di sito per creare rapidamente un sito AEM che può essere ulteriormente personalizzato utilizzando gli strumenti front-end e ora dovresti:
 
-* Scopri come ottenere AEM modelli di sito.
+* Comprendere come ottenere i modelli di sito di AEM.
 * Scopri come creare un nuovo sito utilizzando un modello.
-* Scopri come scaricare il modello dal tuo nuovo sito per fornire allo sviluppatore front-end.
+* Scopri come scaricare il modello dal tuo nuovo sito per fornirlo allo sviluppatore front-end.
 
 Questo articolo si basa su questi elementi fondamentali per consentire l’impostazione di una pipeline front-end, che lo sviluppatore front-end utilizzerà successivamente nel percorso per distribuire personalizzazioni front-end.
 
 ## Obiettivo {#objective}
 
-Questo documento consente di comprendere le pipeline front-end e come crearne una per gestire la distribuzione del tema personalizzato del sito. Dopo la lettura è necessario:
+Questo documento consente di comprendere le pipeline front-end e come crearne una per gestire la distribuzione del tema personalizzato del sito. Dopo la lettura dovresti:
 
 * Comprendere cos’è una pipeline front-end.
-* Scopri come impostare una pipeline front-end in Cloud Manager.
+* Scoprire come impostare una pipeline front-end in Cloud Manager.
 
 ## Ruolo responsabile {#responsible-role}
 
 Questa parte del percorso si applica all’amministratore di Cloud Manager.
 
-## Requisiti {#requirements}
+## Requisiti  {#requirements}
 
 * Devi avere accesso a Cloud Manager.
-* Devi essere membro del **Gestione distribuzione** in Cloud Manager.
+* Devi essere membro del **Responsabile della distribuzione** in Cloud Manager.
 * In Cloud Manager deve essere configurato un archivio git per l’ambiente AEM.
-   * In generale, questo vale già per qualsiasi progetto attivo. Tuttavia, in caso contrario, consulta la documentazione Archivio Cloud Manager disponibile nella sezione [Risorse aggiuntive](#additional-resources) sezione .
+   * In generale, questo vale già per qualsiasi progetto attivo. Tuttavia, in caso contrario, consulta la documentazione Archivio Cloud Manager disponibile nella sezione [Risorse aggiuntive](#additional-resources).
 
 ## Che cos’è una pipeline front-end {#front-end-pipeline}
 
 Lo sviluppo front-end comporta la personalizzazione di risorse JavaScript, CSS e statiche che definiscono lo stile del sito AEM. Lo sviluppatore front-end lavorerà nei propri ambienti locali per effettuare queste personalizzazioni. Una volta pronte, le modifiche vengono salvate nell’archivio Git AEM. Ma sono impegnati solo nel codice sorgente. Non sono ancora in diretta.
 
-La pipeline front-end porta queste personalizzazioni impegnate e le distribuisce in un ambiente AEM, in genere in ambienti di produzione o non di produzione.
+La pipeline front-end porta queste personalizzazioni impegnate e le distribuisce in un ambiente AEM, in genere in ambienti di produzione o di non produzione.
 
 In questo modo, lo sviluppo front-end può funzionare separatamente e parallelamente a qualsiasi sviluppo back-end full-stack su AEM, che dispone di proprie pipeline di distribuzione.
 
@@ -57,7 +57,7 @@ In questo modo, lo sviluppo front-end può funzionare separatamente e parallelam
 
 1. Accedi ad Adobe Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Cloud Manager elenca i vari programmi disponibili. Tocca o fai clic su quello che desideri gestire. Se inizi con AEM as a Cloud Service, probabilmente avrai a disposizione solo un programma.
+1. Cloud Manager elenca i vari programmi disponibili. Tocca o fai clic su quello che desideri gestire. Se hai iniziato a lavorare con AEM as a Cloud Service da poco, probabilmente avrai a disposizione solo un programma.
 
    ![Selezione di un programma in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -65,58 +65,58 @@ Viene visualizzata una panoramica del programma. La pagina avrà un aspetto dive
 
 ![Panoramica di Cloud Manager](assets/cloud-manager-overview.png)
 
-Prendi nota del nome del programma a cui hai effettuato l’accesso o che hai copiato l’URL. In seguito, dovrai fornire questa funzionalità allo sviluppatore front-end.
+Prendi nota del nome del programma a cui hai effettuato l’accesso o di cui hai copiato l’URL. In seguito, dovrai fornire questa funzionalità allo sviluppatore front-end.
 
 ## Creare una pipeline front-end {#create-front-end-pipeline}
 
 Dopo aver effettuato l’accesso a Cloud Manager, puoi creare una pipeline per la distribuzione front-end.
 
-1. In **Tubi** della pagina Cloud Manager, tocca o fai clic sul pulsante **Aggiungi** pulsante .
+1. Nella sezione **Pipeline** della pagina Cloud Manager, tocca o fai clic sul pulsante **Aggiungi**.
 
-   ![Tubi](assets/pipelines-add.png)
+   ![Pipeline](assets/pipelines-add.png)
 
-1. Nel menu a comparsa visualizzato sotto la finestra di dialogo **Aggiungi** pulsante seleziona **Aggiungi pipeline non di produzione** ai fini del presente percorso.
+1. Nel menu a comparsa visualizzato sotto il pulsante **Aggiungi**, seleziona **Aggiungi pipeline di non produzione** ai fini del presente percorso.
 
-1. Sulla **Configurazione** della scheda **Aggiungi pipeline non di produzione** che apre:
-   * Seleziona **Pipeline di distribuzione**.
-   * Fornisci alla pipeline un nome nel **Nome della pipeline non di produzione** campo .
+1. Sulla scheda **Configurazione** della finestra di dialogo **Aggiungi pipeline di non produzione** che viene visualizzata:
+   * seleziona **Pipeline di distribuzione**.
+   * Fornisci alla pipeline un nome nel campo **Nome della pipeline di non produzione**.
 
-   ![Aggiungere la configurazione della pipeline](assets/add-pipeline-configuration.png)
+   ![Aggiungi la configurazione della pipeline](assets/add-pipeline-configuration.png)
 
-1. Tocca o fai clic su **Continua**.
+1. Tocca o fai clic su **Continua**.
 
-1. Sulla **Codice sorgente** scheda:
+1. Sulla scheda **Codice sorgente**:
    * Seleziona **Codice front-end** come tipo di codice da distribuire.
    * Assicurati che l’ambiente corretto sia selezionato in **Ambienti di distribuzione idonei**.
-   * Selezionare la risposta corretta **Archivio**.
-   * Definisci quali **Ramo Git** la pipeline deve essere associata a .
-   * Definisci la **Posizione codice** se lo sviluppo front-end si trova sotto un particolare percorso nell’archivio selezionato. Il valore predefinito è la directory principale dell’archivio, ma spesso lo sviluppo front-end e il back-end si trovano in percorsi diversi.
+   * Seleziona l’**Archivio** corretto.
+   * Definisci quale **Ramo Git** deve essere associato alla pipeline.
+   * Definisci la **Posizione del codice** se lo sviluppo front-end si trova sotto un particolare percorso nell’archivio selezionato. Il valore predefinito è la directory principale dell’archivio, ma spesso lo sviluppo front-end e il back-end si trovano in percorsi diversi.
 
    ![Informazioni sul codice sorgente per l’aggiunta della pipeline](assets/add-pipeline-source-code.png)
 
 1. Tocca o fai clic su **Salva**.
 
-La nuova pipeline viene creata e visibile nel **Tubi** della finestra di Cloud Manager. Quando toccate i puntini di sospensione dopo il nome della pipeline, vengono visualizzate le opzioni che consentono di modificare o visualizzare i dettagli in base alle necessità.
+La nuova pipeline viene creata ed è visibile nella sezione **Pipeline** della finestra di Cloud Manager. Toccando o facendo clic sui puntini di sospensione dopo il nome della pipeline, vengono visualizzate le opzioni che consentono di modificare o visualizzare i dettagli in base alle necessità.
 
 ![Opzioni pipeline](assets/new-pipeline.png)
 
 >[!TIP]
 >
->Se conosci le pipeline in AEMaaCS e vuoi saperne di più sulle differenze tra i diversi tipi di pipeline, compresi ulteriori dettagli sulla pipeline front-end, consulta Configura pipeline CI/CD - Cloud Services collegati nel [Risorse aggiuntive](#additional-resources) di seguito.
+>Se conosci le pipeline in AEMaaCS e vuoi saperne di più sulle differenze tra i diversi tipi di pipeline, compresi ulteriori dettagli sulla pipeline front-end, consulta Configura pipeline CI/CD - Cloud Services nella sezione [Risorse aggiuntive](#additional-resources) di seguito.
 
 ## Novità {#what-is-next}
 
-Dopo aver completato questa parte del percorso di creazione siti rapidi AEM, è necessario:
+Dopo aver completato questa parte del percorso di creazione rapida sito di AEM, è necessario:
 
 * Comprendere cos’è una pipeline front-end.
-* Scopri come impostare una pipeline front-end in Cloud Manager.
+* Scoprire come impostare una pipeline front-end in Cloud Manager.
 
-Sviluppare questa conoscenza e continuare il percorso di creazione siti rapida AEM revisione successiva del documento [Concedere l’accesso allo sviluppatore front-end,](grant-access.md) dove puoi integrare gli sviluppatori front-end in Cloud Manager in modo che possano accedere all’archivio Git del sito AEM e alla pipeline.
+Sviluppa questa conoscenza e continua il percorso di creazione rapida sito di AEM rivedendo il documento [Concedere l’accesso allo sviluppatore front-end,](grant-access.md) dove puoi integrare gli sviluppatori front-end in Cloud Manager in modo che possano accedere all’archivio Git del sito AEM e alla pipeline.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre si consiglia di passare alla parte successiva del percorso Creazione rapida siti esaminando il documento [Personalizzare il tema del sito,](customize-theme.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso.
+Sebbene sia raccomandato passare alla parte successiva del percorso Creazione rapida sito esaminando il documento [Personalizzare il tema del sito,](customize-theme.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento. Non è necessario che tali risorse continuino sul percorso.
 
-* [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Per ulteriori informazioni sulle funzioni di Cloud Manager, consulta direttamente i documenti tecnici approfonditi.
-* [Repository di Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Per ulteriori informazioni su come impostare e gestire archivi Git per il progetto AEMaaCS, consulta questo documento.
-* [Configurare la pipeline CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - Ulteriori informazioni sulla configurazione delle tubazioni, sia full stack che front end, in questo documento.
+* [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=it) - Per ulteriori informazioni sulle funzioni di Cloud Manager, consulta direttamente i documenti tecnici approfonditi.
+* [Archivi di Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Per ulteriori informazioni su come impostare e gestire archivi Git per il progetto AEMaaCS, consulta questo documento.
+* [Configurare la pipeline CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - Ulteriori informazioni sulla configurazione delle pipeline, sia full stack che front end, in questo documento.
