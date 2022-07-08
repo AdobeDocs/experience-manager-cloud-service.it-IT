@@ -3,9 +3,9 @@ title: 'Creazione di modelli di pagina  '
 description: Un modello definisce la struttura della pagina risultante. Con l’Editor modelli, la creazione e manutenzione dei modelli non è più un’attività riservata agli sviluppatori.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4596'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Tramite l’**Editor modelli**, gli autori dei modelli possono:
 
 Questo documento spiega come un **autore di modelli** può usare la console e l’editor per creare e gestire modelli modificabili.
 
-Per informazioni dettagliate sul funzionamento dei modelli modificabili a livello tecnico, consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md) per ulteriori informazioni.
+Per informazioni dettagliate su come funzionano i modelli modificabili a livello tecnico, consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md).
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Durante la creazione di un nuovo modello modificabile:
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
-È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. Si tratta di un’attività amministrativa descritta nel documento [Modelli di pagina](/help/implementing/developing/components/templates.md#template-folders)—>
+È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. Si tratta di un’operazione amministrativa descritta nel documento [Modelli di pagina](/help/implementing/developing/components/templates.md#template-folders).-->
 
 ### Creazione di un nuovo modello - Autore del modello {#creating-a-new-template-template-author}
 
@@ -113,7 +113,7 @@ Durante la creazione di un nuovo modello modificabile:
 
    >[!NOTE]
    >
-   >I tipi di modello sono layout predefiniti e possono essere pensati come modelli per un modello. Questi sono predefiniti dagli sviluppatori o dall’amministratore di sistema. Ulteriori informazioni sono disponibili nel documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md#template-type)—>
+   >I tipi di modello sono layout predefiniti e possono essere pensati come modelli per un modello. Questi sono predefiniti dagli sviluppatori o dall’amministratore di sistema. Per ulteriori informazioni consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md#template-type).-->
 
 1. Completa i **Dettagli modello**:
 
@@ -128,7 +128,7 @@ Durante la creazione di un nuovo modello modificabile:
 
 >[!NOTE]
 >
->I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e confondere la creazione di pagine. Una buona regola è mantenere il numero di modelli sotto i 100.
+>I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione della pagina. Tuttavia, troppi modelli possono sopraffare gli autori e confondere la creazione di pagine. Una buona regola è mantenere il numero di modelli sotto i 100.
 >
 >Adobe consiglia di non disporre di più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
 
@@ -198,7 +198,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 1. Apri la scheda **Avanzate**.
 1. In **Impostazioni modello** utilizza **Aggiungi campo** per specificare il percorso del modello.
 
-   Il percorso può essere esplicito o utilizzare schemi ricorrenti. Ad esempio:
+   Il percorso può essere esplicito o utilizzare schemi ricorrenti. Esempio:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
@@ -209,7 +209,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
    >Se l’elenco dei **Modelli consentiti** viene lasciato vuoto, l’albero viene asceso fino a quando non viene trovato un valore o un elenco.
    >
    >
-   >Vedi [Disponibilità del modello](/help/implementing/developing/components/templates.md#template-availability) - i principi per i modelli consentiti rimangono gli stessi.
+   >Consulta [Disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability): i principi per i modelli consentiti rimangono gli stessi.
 
 1. Fai clic su **Salva** per salvare le modifiche alle proprietà della pagina.
 
@@ -419,7 +419,7 @@ Ad esempio, per un componente immagine è possibile definire le proporzioni di r
 
 >[!NOTE]
 >
->[](/help/implementing/developing/extending/rich-text-editor.md)I criteri dei contenuti per i componenti che si avvalgono dell’editor Rich Text possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni di interfaccia utente.
+>[I criteri dei contenuti per i componenti che si avvalgono dell’editor Rich Text](/help/implementing/developing/extending/rich-text-editor.md) possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni di interfaccia utente.
 
 #### Criteri e proprietà (contenitore di layout) {#policy-and-properties-layout-container}
 
@@ -532,7 +532,7 @@ Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **
 >
 >Il contenuto iniziale è destinato alla preparazione dei componenti e del layout di pagina che fungono da punto di partenza per la creazione dei contenuti. Non è inteso come contenuto effettivo da mantenere così com’è. Per questo motivo, non può essere tradotto.
 >
->Per includere nel modello il testo traducibile, ad esempio nelle intestazioni o nei piè di pagina, puoi utilizzare le funzioni di [localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Per includere nel modello il testo traducibile, ad esempio nelle intestazioni o nei piè di pagina, puoi utilizzare le funzioni di [localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it).
 
 ### Modifica di un modello - Layout - Autore del modello {#editing-a-template-layout-template-author}
 
