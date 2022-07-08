@@ -3,9 +3,9 @@ title: Modifica dei lanci
 description: Quando è stato creato un lancio per una pagina (o per un insieme di pagine), è possibile modificare il contenuto nella copia di lancio della pagina (o delle pagine).
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '555'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Dopo aver creato un lancio per una pagina o un insieme di pagine, è possibile m
 1. Accedi a [Lancio da Riferimenti (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) per visualizzare le azioni disponibili.
 1. Seleziona **Vai a pagina** per aprire la pagina e modificarla.
 
-Quando modifichi la pagina, nella barra degli strumenti superiore viene visualizzata un’indicazione insieme alla **Esci** e **Naviga** opzioni:
+Quando modifichi la pagina, nella barra degli strumenti superiore viene visualizzata un’indicazione insieme alle opzioni **Esci** e **Naviga**:
 
 ![Lascia e naviga all’avvio dall’Editor pagina](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
@@ -26,15 +26,15 @@ Quando modifichi la pagina, nella barra degli strumenti superiore viene visualiz
 >
 >Non puoi spostare una pagina all’interno di un lancio. Il tentativo di eseguire questa azione attiva un messaggio di avviso:
 >
->* Avviso: Questa pagina è l’origine di un lancio. Lo spostamento della pagina non è consentito.
+>* Attenzione: questa pagina è l’origine di un lancio. Lo spostamento della pagina non è consentito.
 
 
 ### Modifica delle pagine di lanci soggette a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
-Se il lancio si basa su un [Live Copy](/help/sites-cloud/administering/msm/overview.md) quindi:
+Se il lancio si basa su una [Live Copy](/help/sites-cloud/administering/msm/overview.md):
 
-* Quando modifichi un componente (contenuto e/o proprietà), consulta simboli a forma di lucchetto piccoli .
-* Consulta la sezione **Live Copy** scheda in **Proprietà pagina**
+* saranno visibili simboli a forma di piccoli lucchetti quando si modifica un componente (contenuto e/o proprietà);
+* sarà visibile la scheda **Live Copy** in **Proprietà pagina**.
 
 Una Live Copy viene utilizzata per sincronizzare il contenuto *dal* ramo di origine *al* ramo lancio, al fine di mantenere aggiornato il lancio con le modifiche apportate nell’origine.
 
@@ -49,7 +49,7 @@ Per ulteriori informazioni, consulta [Modifica del contenuto per Live Copy](/hel
 
 Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **Riferimenti** e confrontare la pagina del lancio con la relativa pagina di origine:
 
-1. In **Sites** console, [passa alle pagine sorgente del lancio e selezionane una](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Nella console **Sites**, [passa alle pagine di origine del lancio e selezionane una](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Apri il pannello **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e seleziona **Lanci**.
 1. Seleziona il tuo specifico lancio, quindi **Confronta con origine**:
 
@@ -64,7 +64,7 @@ Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **R
 In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la gamma di pagine di origine per un lancio:
 
 1. Accedi e seleziona il lancio in uno dei seguenti modi:
-   * La [Console Lanci](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+   * La [console Lanci](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * Seleziona **Modifica**.
    * Da [Riferimenti (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) per mostrare le azioni disponibili:
       * Seleziona **Modifica lancio**.
