@@ -3,7 +3,7 @@ title: 'Configurazione dell’ambiente dell’account  '
 description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
 ht-degree: 100%
 
