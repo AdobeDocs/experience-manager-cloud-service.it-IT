@@ -2,10 +2,10 @@
 title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
+source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
 workflow-type: tm+mt
-source-wordcount: '3053'
-ht-degree: 94%
+source-wordcount: '3006'
+ht-degree: 93%
 
 ---
 
@@ -209,29 +209,7 @@ Per ulteriori informazioni sulle API, consulta la sezione [Documentazione API di
 
 ### Routing del traffico {#dedcated-egress-ip-traffic-routing}
 
-Il traffico http o https verso le destinazioni attraverso le porte 80 o 443 passerà attraverso un proxy preconfigurato, supponendo che venga utilizzata la libreria di rete Java standard. Per il traffico http o https attraverso altre porte, è necessario configurare un proxy utilizzando le seguenti proprietà.
-
-```
-AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
-AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
-```
-
-Ad esempio, di seguito è riportato un codice di esempio per inviare una richiesta a `www.example.com:8443`:
-
-```java
-String url = "www.example.com:8443"
-String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
-
-HttpClient client = HttpClient.newBuilder()
-      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
-      .build();
- 
-HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
-HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-```
-
-Se utilizzi librerie di rete Java non standard, configura i proxy utilizzando le proprietà riportate sopra per tutto il traffico.
+Il traffico Http o https passa attraverso un proxy preconfigurato, a condizione che utilizzino le proprietà standard del sistema Java per le configurazioni proxy.
 
 Il traffico non http/s con destinazioni attraverso porte dichiarate nel parametro `portForwards` deve fare riferimento a una proprietà denominata `AEM_PROXY_HOST`, oltre alla porta mappata. Esempio:
 
