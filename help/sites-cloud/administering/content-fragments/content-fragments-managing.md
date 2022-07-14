@@ -1,10 +1,10 @@
 ---
 title: Gestione dei frammenti di contenuto
 description: Scopri come utilizzare la console Frammenti di contenuto per gestire i frammenti di contenuto AEM. per l’authoring delle pagine o come base per il contenuto headless.
-source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
+source-git-commit: 2c5b04d297a71a276ef3e85386f052de36337622
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 3%
+source-wordcount: '2043'
+ht-degree: 2%
 
 ---
 
@@ -63,6 +63,21 @@ Per creare un frammento di contenuto:
    ![Finestra di dialogo Nuovo frammento di contenuto](assets/cfm-managing-new-cf-01.png)
 
 1. Seleziona **Crea** oppure **Crea e apri** per mantenere la definizione.
+
+## Stato dei frammenti di contenuto {#statuses-content-fragments}
+
+Durante la sua esistenza, un frammento di contenuto può avere diversi stati, come mostrato nella [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
+
+* **Nuovo**
+È stato creato un nuovo frammento di contenuto, ma non è mai stato modificato né aperto nell’editor frammento di contenuto.
+* **Bozza**
+Un utente ha modificato o aperto il frammento di contenuto nell’Editor frammento di contenuto prima che sia stato pubblicato.
+* **Pubblicato**
+Il frammento di contenuto è stato pubblicato.
+* **Modificato**
+Il frammento di contenuto è stato modificato dopo la sua pubblicazione (ma prima di pubblicarlo nuovamente).
+* **Non pubblicato**
+Il frammento di contenuto è stato annullato.
 
 ## Azioni per un frammento di contenuto nella console Frammenti di contenuto {#actions-content-fragment-console}
 
