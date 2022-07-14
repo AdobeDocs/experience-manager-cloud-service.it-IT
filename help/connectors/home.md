@@ -3,9 +3,9 @@ title: Connettori di Adobe Experience Manager as a Cloud Service
 description: Scopri i connettori, cosa possono fare e come implementare questi preziosi strumenti in Experience Manager.
 landing-page-description: Scopri i connettori, cosa possono fare e come implementare questi preziosi strumenti in Experience Manager.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '395'
 ht-degree: 93%
 
 ---
@@ -27,7 +27,7 @@ Scopri quali sono i connettori, ad Experience Manager as a Cloud Service, quali 
 | [Panoramica](/help/overview/home.md) | Questa guida offre una panoramica iniziale di Experience Manager as a Cloud Service, con introduzione, terminologia, architettura e altro ancora. |
 | [Note sulla versione](/help/release-notes/home.md) | Questa guida include informazioni importanti sull’ultima versione di Experience Manager as a Cloud Service e illustra le funzioni nuove, obsolete e rimosse, nonché i problemi noti. |
 | [Guida utente sulla sicurezza](/help/security/home.md) | Argomenti importanti sulla sicurezza relativi a Experience Manager as a Cloud Service. |
-| [Onboarding](/help/onboarding/home.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
+| [Percorso di onboarding](/help/journey-onboarding/overview.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Informazioni su come creare con, e amministrare, Experience Manager Sites as a Cloud Service. |
 | [Guida utente di Assets](/help/assets/home.md) | Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service. |
 | [Passaggio ad AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Comprendi il percorso di transizione verso Cloud Service. |

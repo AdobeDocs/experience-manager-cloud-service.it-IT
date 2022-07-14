@@ -1,16 +1,16 @@
 ---
-title: percorsi di documentazione AEM
+title: Percorsi di documentazione AEM
 description: I Percorsi di documentazione forniscono una struttura narrativa all'interno AEM documentazione mediante l'unione di funzioni complesse e disparate al fine di risolvere un obiettivo aziendale in modo best practice. Progettati con AEM principianti, i percorsi introducono i concetti e le funzionalità per raggiungere un obiettivo da A a Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 3%
 
 ---
 
-# percorsi di documentazione AEM {#aem-documentation-journeys}
+# Percorsi di documentazione AEM {#aem-documentation-journeys}
 
 I Percorsi di documentazione forniscono una struttura narrativa all&#39;interno AEM documentazione mediante l&#39;unione di funzioni complesse e disparate al fine di risolvere un obiettivo aziendale in modo best practice. Progettati con AEM principianti, i percorsi introducono i concetti e le funzionalità per raggiungere un obiettivo da A a Z.
 
@@ -59,7 +59,7 @@ AEM obiettivo principale dei Percorsi di documentazione è quello di aiutare i l
 
 Quindi, se sei nuovo di AEM e hai in mente un caso di business specifico e vuoi una panoramica di come AEM risolverlo, i Percorsi di documentazione sono dove vuoi iniziare.
 
-Tuttavia esistono molti tipi diversi di utenti AEM con esigenze e aspettative diverse. Ad esempio:
+Tuttavia esistono molti tipi diversi di utenti AEM con esigenze e aspettative diverse. Esempio:
 
 * Amministratori
 * Sviluppatori
@@ -90,7 +90,7 @@ Sono già disponibili diversi Percorsi di documentazione. Poiché ogni percorso 
 | [Percorso per authoring headless](/help/journey-headless/author/overview.md) | Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come modellare i contenuti sul tuo primo progetto headless. |
 | [Percorso per architetto headless](/help/journey-headless/architect/overview.md) | Inizia qui per un’introduzione alle funzionalità avanzate, flessibili e headless di Adobe Experience Manager as a Cloud Service e a come modellare i contenuti per il tuo progetto. |
 | [Percorso di traduzione headless](/help/journey-headless/translation/overview.md) | Inizia qui per scoprire come impostare e gestire i tuoi progetti di traduzione headless in AEM. |
-| [percorso di onboarding AEM](/help/journey-onboarding/home.md) | Inizia qui per iniziare a lavorare rapidamente con il tuo nuovo ambiente as a Cloud Service AEM! |
+| [percorso di onboarding AEM](/help/journey-onboarding/overview.md) | Inizia qui per iniziare a lavorare rapidamente con il tuo nuovo ambiente as a Cloud Service AEM! |
 | [Percorso di creazione di siti rapidi AEM](/help/journey-sites/quick-site/overview.md) | Iniziate qui per un percorso guidato attraverso lo strumento di creazione AEM sito rapido semplice da utilizzare per semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza AEM conoscenza back-end. |
 | percorso Commerce AEM | Presto! |
 | [Percorso di migrazione ad AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Inizia qui per un percorso passo passo su come migrare dall&#39;installazione di AEM gestiti on-premise o Adobe all&#39;AEM completamente basata sul cloud as a Cloud Service e riceverai i suoi numerosi vantaggi. |

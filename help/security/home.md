@@ -1,18 +1,18 @@
 ---
 title: Sicurezza di Adobe Experience Manager as a Cloud Service
-description: 'Ulteriori informazioni sulle funzioni di sicurezza di Adobe Experience Manager as a Cloud Service. '
+description: 'Scopri le funzioni di sicurezza di Adobe Experience Manager as a Cloud Service. '
 landing-page-description: Argomenti importanti sulla sicurezza relativi a Experience Manager as a Cloud Service.
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
-source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Sicurezza per Experience Manager as a Cloud Service {#aem-security-guide}
 
-Ulteriori informazioni sulle funzioni di sicurezza di Adobe Experience Manager as a Cloud Service.
+Scopri le funzioni di sicurezza di Adobe Experience Manager as a Cloud Service.
 
 ## Articoli principali sulla sicurezza {#key-articles}
 
@@ -26,7 +26,7 @@ Ulteriori informazioni sulle funzioni di sicurezza di Adobe Experience Manager a
 |---|---|
 | [Panoramica](/help/overview/home.md) | Questa guida offre una panoramica di Experience Manager as a Cloud Service, con un’introduzione, terminologia, architettura e altro ancora. |
 | [Note sulla versione](/help/release-notes/home.md) | Questa guida include informazioni importanti sull’ultima versione di Experience Manager as a Cloud Service e illustra le funzioni nuove, obsolete e rimosse, nonché i problemi noti. |
-| [Onboarding](/help/onboarding/home.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
+| [Percorso di onboarding](/help/journey-onboarding/overview.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Informazioni su come creare con, e amministrare, Experience Manager Sites as a Cloud Service. |
 | [Guida utente di Assets](/help/assets/home.md) | Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service. |
 | [Passaggio ad AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Comprendi il percorso di transizione verso Cloud Service. |
@@ -42,7 +42,7 @@ Ulteriori informazioni sulle funzioni di sicurezza di Adobe Experience Manager a
 * [Documentazione di Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
 * [Documentazione di Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [Documentazione di Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [Preparazione al GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)

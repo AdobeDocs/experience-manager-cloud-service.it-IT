@@ -1,14 +1,14 @@
 ---
 title: Guida as a Cloud Service di Assets
-description: Scopri le risorse as a Cloud Service e aggiorna le novità.
+description: Scopri Assets as a Cloud Service e resta al passo con le novità.
 landing-page-description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 37%
+source-wordcount: '294'
+ht-degree: 42%
 
 ---
 
@@ -30,7 +30,7 @@ Scopri [!DNL AEM Assets as a Cloud Service] e vieni aggiornato sulle novità.
 | [Panoramica](/help/overview/home.md) | Panoramica introduttiva e glossario di [!DNL Experience Manager] come [!DNL Cloud Service]. |
 | [Note sulla versione](/help/release-notes/home.md) | Note sulla versione, novità, funzionalità obsolete e rimosse e problemi noti. |
 | [Guida utente sulla sicurezza](/help/security/home.md) | Scopri importanti argomenti sulla sicurezza riguardanti [!DNL Experience Manager] come [!DNL Cloud Service]. |
-| [Onboarding](/help/onboarding/home.md) | Introduzione a [!DNL Experience Manager] come [!DNL Cloud Service] accesso e protezione di dati importanti. |
+| [Percorso di onboarding](/help/journey-onboarding/overview.md) | Introduzione a [!DNL Experience Manager] come [!DNL Cloud Service] accesso e protezione di dati importanti. |
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Comprendere come creare e amministrare, [!DNL Experience Manager Sites] come [!DNL Cloud Service]. |
 | [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando le potenti funzionalità di Experience Manager esplorando questi argomenti relativi allo sviluppo e all’implementazione. |
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Esplora questo percorso guidato attraverso le potenti e flessibili funzionalità di Experience Manager headless per preparare il tuo primo progetto headless. |

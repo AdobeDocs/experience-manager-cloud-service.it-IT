@@ -3,10 +3,10 @@ title: AEM Screens as a Cloud Service
 description: Scopri di più su AEM Screens e come funziona questa soluzione di digital signage.
 landing-page-description: Cos’è AEM Screens as a Cloud Service.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 69%
+ht-degree: 72%
 
 ---
 
@@ -33,7 +33,7 @@ Questa pagina ti aiuta a comprendere meglio AEM Screens e come funziona questa s
 | [Panoramica](/help/overview/home.md) | Questa guida offre una panoramica di Experience Manager as a Cloud Service, con un’introduzione, terminologia, architettura e altro ancora. |
 | [Note sulla versione](/help/release-notes/home.md) | Questa guida include informazioni importanti sull’ultima versione di Experience Manager as a Cloud Service e illustra le funzioni nuove, obsolete e rimosse, nonché i problemi noti. |
 | [Guida utente sulla sicurezza](/help/security/home.md) | Argomenti importanti sulla sicurezza relativi a Experience Manager as a Cloud Service. |
-| [Onboarding](/help/onboarding/home.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
+| [Percorso di onboarding](/help/journey-onboarding/overview.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Informazioni su come amministrare Experience Manager Sites as a Cloud Service. |
 | [Guida utente di Assets](/help/assets/home.md) | Informazioni su come amministrare Experience Manager Assets as a Cloud Service. |
 | [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando le potenti funzionalità di AEM ed esplorando questi argomenti relativi allo sviluppo e alla distribuzione. |
@@ -46,7 +46,7 @@ Questa pagina ti aiuta a comprendere meglio AEM Screens e come funziona questa s
 * [Documentazione di Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
 * [Documentazione di Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [Documentazione di Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [Preparazione al GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)

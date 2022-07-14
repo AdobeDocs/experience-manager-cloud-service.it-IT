@@ -2,9 +2,9 @@
 title: Fase di implementazione
 description: Assicurati che il codice e il contenuto siano pronti per la migrazione al cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2416'
 ht-degree: 9%
 
 ---
@@ -35,7 +35,7 @@ Cloud Manager consente alle organizzazioni di gestire autonomamente AEM nel clou
 
 Per acquisire familiarità con l’utilizzo di Cloud Manager, consulta le risorse seguenti:
 
-* [Onboarding per Experience Manager as a Cloud Service](/help/onboarding/home.md) per comprendere le risorse disponibili sull’onboarding per Experience Manager as a Cloud Service.
+* [Percorso di onboarding](/help/journey-onboarding/overview.md) per comprendere le risorse di supporto autonomo relative all’onboarding, ad Experience Manager as a Cloud Service.
 
 * [Integrazione di Git con Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) per informazioni sull’utilizzo di un archivio Git singolo per implementare il codice.
 

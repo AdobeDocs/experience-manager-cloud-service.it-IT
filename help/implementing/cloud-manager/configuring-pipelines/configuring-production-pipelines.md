@@ -3,7 +3,7 @@ title: Configurazione delle pipeline di produzione
 description: Scopri come configurare le pipeline di produzione per generare e distribuire il codice agli ambienti di produzione.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 94e37ae6aef64ec61e633e4c034ceefe5e75c7c8
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Scopri come configurare le pipeline di produzione per generare e distribuire il codice agli ambienti di produzione. Una pipeline di produzione distribuisce il codice prima nell’ambiente Stage e dopo l’approvazione distribuisce lo stesso codice all’ambiente di produzione.
 
-Un utente deve avere **[Gestione distribuzione](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** ruolo per configurare le pipeline di produzione.
+Un utente deve avere **[Gestione distribuzione](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** ruolo per configurare le pipeline di produzione.
 
 >[!NOTE]
 >

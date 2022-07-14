@@ -2,9 +2,9 @@
 title: Guida introduttiva ad Experience Manager as a Cloud Service
 description: Scopri come funziona Experience Manager as a Cloud Service e cosa può fare il software per te.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '359'
 ht-degree: 87%
 
 ---
@@ -26,7 +26,7 @@ Inizia qui per scoprire come funziona l&#39;Experience Manager as a Cloud Servic
 |---|---|
 | [Note sulla versione](/help/release-notes/home.md) | Questa guida include informazioni importanti sull’ultima versione di Experience Manager as a Cloud Service e illustra le funzioni nuove, obsolete e rimosse, nonché i problemi noti. |
 | [Guida utente sulla sicurezza](/help/security/home.md) | Argomenti importanti sulla sicurezza relativi a Experience Manager as a Cloud Service. |
-| [Onboarding](/help/onboarding/home.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
+| [Onboarding](/help/journey-onboarding/overview.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Informazioni su come creare con, e amministrare, Experience Manager Sites as a Cloud Service. |
 | [Guida utente di Assets](/help/assets/home.md) | Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service. |
 | [Passaggio ad AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Comprendi il percorso di transizione verso Cloud Service. |
@@ -42,7 +42,7 @@ Inizia qui per scoprire come funziona l&#39;Experience Manager as a Cloud Servic
 * [Documentazione di Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
 * [Documentazione di Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [Documentazione di Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [Preparazione al GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)

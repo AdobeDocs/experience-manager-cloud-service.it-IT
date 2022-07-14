@@ -2,10 +2,10 @@
 title: Differenze e novità - Adobe Experience Manager as a Cloud Service
 description: Differenze e novità - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 96%
+source-wordcount: '1904'
+ht-degree: 95%
 
 ---
 
@@ -125,10 +125,6 @@ Cloud Manager crea ambienti nei centri dati in molte aree geografiche, offrendo 
 
 ## Onboarding {#onboarding}
 
->[!NOTE]
->
->Per maggiori dettagli, consulta [Onboarding](/help/onboarding/home.md).
-
 L’avvio e la gestione di un progetto AEM è semplice quando si utilizza AEM as a Cloud Service poiché Adobe è responsabile di molti aspetti:
 
 * Le immagini AEM della linea di base sono ottimizzate per casi d’uso specifici.
@@ -150,6 +146,10 @@ L’avvio e la gestione di un progetto AEM è semplice quando si utilizza AEM as
    * Aggiornamenti del codice; tutte le applicazioni per clienti sviluppate per una versione precedente di AEM dovranno essere riviste ed eventualmente aggiornate.
 
    * Migrazione dei contenuti
+
+>[!TIP]
+>
+>Per una panoramica completa del processo di onboarding, consulta la sezione [percorso di bordo.](/help/journey-onboarding/overview.md)
 
 ## Sviluppo {#developing}
 
@@ -273,6 +273,6 @@ Per ulteriori informazioni, consulta:
 
 >[!TIP]
 >
->Una volta acquisite le nozioni generali su AEM as a Cloud Service, per iniziare in breve tempo a utilizzarlo segui il [Percorso di onboarding](/help/journey-onboarding/home.md).
+>Una volta acquisite le nozioni generali su AEM as a Cloud Service, per iniziare in breve tempo a utilizzarlo segui il [Percorso di onboarding](/help/journey-onboarding/overview.md).
 >
 >Hai già iniziato a utilizzarlo, oppure vuoi iniziare a testare le funzionalità di AEM? Installa [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) per esplorare le potenti funzioni di AEM utilizzando esempi articolati.

@@ -2,8 +2,8 @@
 title: Distribuire il tema personalizzato
 description: Scopri come distribuire il tema del sito utilizzando la pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 100%
 
@@ -110,11 +110,11 @@ Di seguito sono riportate alcune risorse aggiuntive che approfondiscono alcuni c
 * [Configurare la pipeline CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md): ulteriori informazioni sulla configurazione delle pipeline, sia full stack che front end, in questo documento.
 * [Modello del sito standard AEM](https://github.com/adobe/aem-site-template-standard): questo è l’archivio GitHub del modello del sito standard AEM.
 * [Tema del sito AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e): questo è l’archivio GitHub del tema del sito AEM.
-* [npm](https://www.npmjs.com): i temi AEM utilizzati per creare rapidamente i siti sono basati su npm.
+* [npm](https://www.npmjs.com): i temi AEM utilizzati per costruire rapidamente i siti sono basati su npm.
 * [webpack](https://webpack.js.org): i temi AEM utilizzati per creare rapidamente i siti si basano su webpack.
 * [Creazione e organizzazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md): questa guida descrive come gestire le pagine del sito AEM se desideri personalizzarlo ulteriormente dopo averlo creato dal modello.
 * [Come lavorare con il pacchetto](/help/implementing/developing/tools/package-manager.md): i pacchetti consentono l&#39;importazione e l&#39;esportazione del contenuto dell&#39;archivio. Questo documento spiega come lavorare con i pacchetti in AEM 6.5, ed è applicabile anche ad AEMaaCS.
-* [Percorso di onboarding](/help/journey-onboarding/home.md): questa guida funge da punto di partenza per garantire che i team siano configurati e abbiano accesso a AEM as a Cloud Service.
+* [Percorso di onboarding](/help/journey-onboarding/overview.md): questa guida funge da punto di partenza per garantire che i team siano configurati e abbiano accesso a AEM as a Cloud Service.
 * [Documentazione Cloud Manager di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it): esplora la documentazione di Cloud Manager per informazioni dettagliate sulle sue funzioni.
 * [Documentazione sull’amministrazione del sito](/help/sites-cloud/administering/site-creation/create-site.md): per ulteriori informazioni sulle funzioni dello strumento Creazione Rapida dei Siti, consulta i documenti tecnici sulla creazione del sito.
 * [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md): questo documento descrive alcune considerazioni di cui tenere conto per sfruttare appieno il potenziale del processo di sviluppo utilizzando la pipeline front-end.
