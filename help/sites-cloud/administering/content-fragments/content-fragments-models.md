@@ -1,9 +1,9 @@
 ---
 title: Modelli per frammenti di contenuto
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i frammenti di contenuto in AEM. che consentono di creare contenuti strutturati da utilizzare nella distribuzione headless o nella creazione di pagine.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+source-git-commit: a5a5ec2211fe51bb04a1016f34fdac2f25cfe4e1
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2904'
 ht-degree: 7%
 
 ---
@@ -72,7 +72,7 @@ Il modello a frammento di contenuto definisce efficacemente la struttura dei fra
 
          >[!CAUTION]
          >
-         >Quando si aggiorna manualmente la proprietà **Nome proprietà** per un tipo di dati, tenere presente che i nomi devono contenere solo caratteri latini, cifre numeriche e caratteri di sottolineatura &quot;_&quot; come carattere speciale.
+         >Quando si aggiorna manualmente la proprietà **Nome proprietà** per un tipo di dati, tenere presente che i nomi devono contenere solo i caratteri A-Z, a-z, 0-9 e il carattere di sottolineatura &quot;_&quot; come carattere speciale.
          >
          >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
       Esempio:
@@ -138,7 +138,7 @@ Molte proprietà sono auto-esplicative, per alcune proprietà ulteriori dettagli
 
 * **Nome proprietà**
 
-   Quando aggiorni manualmente questa proprietà per un tipo di dati, tieni presente che i nomi **deve** contain *only* Caratteri latini, cifre numeriche e carattere di sottolineatura &quot;_&quot; come carattere speciale.
+   Quando aggiorni manualmente questa proprietà per un tipo di dati, tieni presente che i nomi **deve** contain *only* A-Z, a-z, 0-9 e carattere di sottolineatura &quot;_&quot; come carattere speciale.
 
    >[!CAUTION]
    >
