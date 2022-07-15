@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 4f81a315d637b567fc6a6038b192f048bb462b4d
 workflow-type: tm+mt
-source-wordcount: '2664'
-ht-degree: 96%
+source-wordcount: '2708'
+ht-degree: 94%
 
 ---
 
@@ -346,6 +346,10 @@ Il campo `_variations` è stato implementato per semplificare l’esecuzione del
 
 Vedi [Query di esempio: tutte le città con una variante denominata](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
+>[!NOTE]
+>
+>Se la variante specificata non esiste per un frammento di contenuto, la variante principale verrà restituita come impostazione predefinita (fallback).
+
 <!--
 ## Security Considerations {#security-considerations}
 -->
@@ -450,42 +454,47 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
 * Se prevedi un elenco di risultati:
    * aggiungi `List` al nome del modello; ad esempio, `cityList`
-   * Vedi [Query di esempio: informazioni su tutte le città](#sample-all-information-all-cities)
+   * Vedi [Query di esempio: informazioni su tutte le città](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * Se vuoi utilizzare un operatore OR logico:
    * utilizza ` _logOp: OR`
-   * Vedi [Query di esempio: tutti gli utenti denominati “Jobs” o “Smith”](#sample-all-persons-jobs-smith)
+   * Vedi [Query di esempio: tutti gli utenti denominati “Jobs” o “Smith”](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * Esiste anche l’operatore AND logico, ma è (spesso) implicito
 
 * Puoi eseguire query sui nomi dei campi corrispondenti ai campi all’interno del modello per frammenti di contenuto
-   * Vedi [Query di esempio: informazioni complete sull’amministratore delegato e sui dipendenti di un’azienda](#sample-full-details-company-ceos-employees)
+   * Vedi [Query di esempio: informazioni complete sull’amministratore delegato e sui dipendenti di un’azienda](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)
 
 * Oltre ai campi del modello, sono disponibili alcuni campi generati dal sistema (preceduti dal carattere di sottolineatura):
 
    * Per il contenuto:
 
       * `_locale`: per visualizzare la lingua; basato su Language Manager
-         * Vedi [Query di esempio per più frammenti di contenuto di una specifica impostazione locale](#sample-wknd-multiple-fragments-given-locale)
+         * Vedi [Query di esempio per più frammenti di contenuto di una specifica impostazione locale](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
       * `_metadata`: per visualizzare i metadati del frammento
-         * Vedi [Query di esempio per metadati: elenca i metadati per riconoscimenti con titolo GB](#sample-metadata-awards-gb)
+         * Vedi [Query di esempio per metadati: elenca i metadati per riconoscimenti con titolo GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
       * `_model`: consente di eseguire query per un modello per frammenti di contenuto (percorso e titolo)
-         * Vedi [Query di esempio per un modello per frammenti di contenuto da un modello](#sample-wknd-content-fragment-model-from-model)
+         * Vedi [Query di esempio per un modello per frammenti di contenuto da un modello](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
       * `_path`: il percorso del frammento di contenuto all’interno dell’archivio
-         * Vedi [Query di esempio: un singolo frammento di città specifico](#sample-single-specific-city-fragment)
+         * Vedi [Query di esempio: un singolo frammento di città specifico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
       * `_reference`: per visualizzare riferimenti; inclusi riferimenti in linea nell’Editor testo RTF
-         * Vedi [Query di esempio per più frammenti di contenuto con riferimenti di prelettura](#sample-wknd-multiple-fragments-prefetched-references)
+         * Vedi [Query di esempio per più frammenti di contenuto con riferimenti di prelettura](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
       * `_variation`: per visualizzare varianti specifiche all’interno del frammento di contenuto
+
+         >[!NOTE]
+         >
+         >Se la variante specificata non esiste per un frammento di contenuto, la variante principale verrà restituita come impostazione predefinita (fallback).
+
          * Vedi [Query di esempio: tutte le città con una variante denominata](#sample-cities-named-variation)
    * E operazioni:
 
       * `_operator`: applica operatori specifici; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
-         * Vedi [Query di esempio: tutti gli utenti non denominati “Jobs”](#sample-all-persons-not-jobs)
-         * Vedi [Query di esempio: tutte le avventure in cui `_path` inizia con un prefisso specifico](#sample-wknd-all-adventures-cycling-path-filter)
+         * Vedi [Query di esempio: tutti gli utenti non denominati “Jobs”](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
+         * Vedi [Query di esempio: tutte le avventure in cui `_path` inizia con un prefisso specifico](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply`: applica condizioni specifiche; ad esempio, `AT_LEAST_ONCE`
-         * Vedi [Query di esempio: applica filtro su un array con un elemento che deve verificarsi almeno una volta](#sample-array-item-occur-at-least-once)
+         * Vedi [Query di esempio: applica filtro su un array con un elemento che deve verificarsi almeno una volta](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`: per ignorare il caso durante la query
-         * Vedi [Query di esempio: tutte le città che contengono SAN nel nome, indipendentemente da maiuscole/minuscole](#sample-all-cities-san-ignore-case)
+         * Vedi [Query di esempio: tutte le città che contengono SAN nel nome, indipendentemente da maiuscole/minuscole](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
 
 
 
@@ -498,7 +507,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 * I tipi di unione GraphQL sono supportati:
 
    * utilizza `... on`
-      * Vedi [Query di esempio per un frammento di contenuto di un modello specifico con un riferimento ai contenuti](#sample-wknd-fragment-specific-model-content-reference)
+      * Vedi [Query di esempio per un frammento di contenuto di un modello specifico con un riferimento ai contenuti](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)
 
 * Fallback durante la query dei frammenti nidificati:
 
