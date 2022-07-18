@@ -2,10 +2,10 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
+source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 17%
+source-wordcount: '908'
+ht-degree: 13%
 
 ---
 
@@ -44,8 +44,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 
    >[!IMPORTANT]
    >
-   >Potrai avviare un’acquisizione nell’ambiente di destinazione solo se appartieni alla pagina locale **Amministratori AEM** nell’istanza di Cloud Service in cui stai trasferendo il contenuto. Se non appartieni al gruppo di amministratori AEM, quando tenti di avviare un’acquisizione verrà visualizzato un errore come mostrato di seguito.
-   >![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
+   >Potrai avviare un’acquisizione nell’ambiente di destinazione solo se appartieni alla pagina locale **Amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non riesci a avviare un’acquisizione, consulta [Impossibile avviare l&#39;acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
 
    >[!IMPORTANT]
    >
@@ -103,7 +102,25 @@ A tale scopo, crea un nuovo processo di acquisizione e assicurati di: **Wipe** �
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## Risoluzione dei problemi {#troubleshooting}
 
+### CAM: impossibile recuperare il token di migrazione {#cam-unable-to-retrieve-the-migration-token}
+
+Il recupero automatico del token di migrazione potrebbe non riuscire per diversi motivi, tra cui [configurazione di un elenco consentiti IP tramite Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) nell’ambiente del Cloud Service di destinazione.  In questi scenari, quando tenti di avviare un’acquisizione visualizzerai la seguente finestra di dialogo:
+
+![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+Sarà necessario recuperare manualmente il token di migrazione facendo clic sul collegamento &quot;Ottieni token&quot; nella finestra di dialogo. Verrà aperta un’altra scheda che visualizza il token. Puoi quindi copiare il token e incollarlo nel **Input token di migrazione** campo . Ora, dovreste essere in grado di iniziare l&#39;ingestione.
+
+>[!NOTE]
+>
+>Il token sarà disponibile per gli utenti che appartengono al locale **Amministratori AEM** nel servizio di authoring del Cloud Service di destinazione.
+
+### Impossibile avviare l&#39;acquisizione {#unable-to-start-ingestion}
+
+Potrai avviare un’acquisizione nell’ambiente di destinazione solo se appartieni alla pagina locale **Amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non appartieni al gruppo di amministratori AEM, quando tenti di avviare un’acquisizione verrà visualizzato un errore come mostrato di seguito. Puoi chiedere all’amministratore di aggiungerti al **Amministratori AEM** oppure chiedi il token stesso, che puoi quindi incollare nel **Input token di migrazione** campo .
+
+![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ## Novità {#whats-next}
 
