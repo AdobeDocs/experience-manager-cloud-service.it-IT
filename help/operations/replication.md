@@ -2,9 +2,9 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
+source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1259'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Per realizzare la replica automatica è necessario abilitare **Replica automatic
 
 ### Gestisci pubblicazione  {#manage-publication}
 
-Gestisci pubblicazione offre più opzioni rispetto alla pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili; consente inoltre di pubblicare la pagina in un secondo momento.
+Gestisci pubblicazione offre più opzioni rispetto alla Pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili. Consente inoltre di pubblicare la pagina in un secondo momento.
 
 L’inclusione degli elementi figlio di una cartella per l’opzione &quot;Pubblica più tardi&quot; richiamerà il flusso di lavoro Pubblica albero del contenuto descritto in questo articolo.
 
@@ -172,6 +172,9 @@ Nel caso in cui non si fornisca un filtro di questo tipo e si utilizzi solo l’
 
 Il `ReplicationStatus` di una risorsa viene modificata solo se l&#39;azione di replica include almeno un agente attivo per impostazione predefinita. Nell’esempio precedente questo non avviene, in quanto la replica utilizza solo l’agente &quot;preview&quot;. Pertanto, devi utilizzare il nuovo `getStatusForAgent()` , che consente di eseguire una query sullo stato di un agente specifico. Questo metodo funziona anche per l’agente &quot;publish&quot;. Restituisce un valore non-null se è stata eseguita un&#39;azione di replica utilizzando l&#39;agente fornito.
 
+### Metodi di invalidazione dei contenuti {#invalidating-content}
+
+Puoi annullare direttamente la validità del contenuto utilizzando Sling Content Invalidation (SCD) dell’autore (metodo preferito) o utilizzando l’API di replica per richiamare l’agente di replica dello scaricamento del dispatcher per la pubblicazione. Fai riferimento a [Memorizzazione in cache](/help/implementing/dispatcher/caching.md) per ulteriori dettagli.
 
 **Limiti di capacità dell’API di replica**
 
@@ -179,6 +182,7 @@ Si consiglia di replicare meno di 100 percorsi alla volta, con 500 come limite r
 Se la logica dell&#39;applicazione non richiede la replica atomica, questo limite può essere superato impostando il `ReplicationOptions.setUseAtomicCalls` su false, che accetta qualsiasi numero di percorsi, ma crea internamente bucket per rimanere al di sotto di questo limite.
 
 La dimensione del contenuto trasmesso per chiamata di replica non deve superare `10 MB`. Ciò include i nodi e le proprietà, ma non eventuali binari (i pacchetti di flusso di lavoro e i pacchetti di contenuto sono considerati binari).
+
 
 ## Risoluzione dei problemi {#troubleshooting}
 
