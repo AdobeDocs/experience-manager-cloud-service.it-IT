@@ -2,7 +2,8 @@
 title: 'Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail, utilizzare Adobe Sign in un flusso di lavoro? '
 description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti via e-mail, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
+google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
+source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
 workflow-type: tm+mt
 source-wordcount: '5467'
 ht-degree: 0%
@@ -166,7 +167,7 @@ Il passaggio e-mail ha le seguenti proprietà:
 * **[!UICONTROL Metadati del flusso di lavoro]**: Utilizza l’opzione quando il valore da utilizzare viene salvato in una proprietà di metadati di un flusso di lavoro. Dopo aver selezionato l’opzione , immetti il nome della proprietà metadati nella casella di testo vuota sotto l’opzione Metadati flusso di lavoro . Ad esempio, emailAddress.
 
 <!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
-* **[!UICONTROL Immagine]**: Utilizza l’opzione per incorporare un’immagine nell’e-mail. Dopo aver selezionato l&#39;opzione , sfoglia e scegli l&#39;immagine. L’opzione immagine è disponibile solo per i tag immagine (&lt;img src=&quot;*&quot; />) disponibili nel modello e-mail.
+* **[!UICONTROL Immagine]**: Utilizza l’opzione per incorporare un’immagine nell’e-mail. Dopo aver selezionato l&#39;opzione , sfoglia e scegli l&#39;immagine. L’opzione immagine è disponibile solo per i tag immagine (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) disponibili nel modello e-mail.&#42;
 
 **[!UICONTROL Indirizzo e-mail del mittente/destinatario]**: Seleziona la **[!UICONTROL Letterale]** opzione per specificare manualmente un indirizzo e-mail o selezionare **[!UICONTROL Recupera dai metadati del flusso di lavoro]** per recuperare l’indirizzo e-mail da una proprietà metadati. È inoltre possibile specificare un elenco di array di proprietà di metadati per **[!UICONTROL Recupera dai metadati del flusso di lavoro]** opzione . Seleziona la **[!UICONTROL Variabile]** per recuperare l’indirizzo e-mail dal valore memorizzato in una variabile di tipo dati stringa.
 
