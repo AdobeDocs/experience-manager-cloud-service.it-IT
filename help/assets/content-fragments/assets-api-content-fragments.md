@@ -3,9 +3,9 @@ title: Supporto dei frammenti di contenuto Adobe Experience Manager as a Cloud S
 description: Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, una funzione importante AEM consegna headless.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
+source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -255,47 +255,6 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 >[!NOTE]
 >
 >Per ulteriori dettagli, consulta la sezione [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particolare, [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
-
-### Lettura/consegna {#read-delivery}
-
-L’utilizzo avviene tramite:
-
-`GET /{cfParentPath}/{cfName}.json`
-
-Ad esempio:
-
-`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
-La risposta viene serializzata JSON con il contenuto strutturato come nel frammento di contenuto. I riferimenti vengono consegnati come URL di riferimento.
-
-Sono possibili due tipi di operazioni di lettura:
-
-* Quando si legge un frammento di contenuto specifico in base al percorso, viene restituita la rappresentazione JSON del frammento di contenuto.
-* Lettura di una cartella di frammenti di contenuto in base al percorso: restituisce le rappresentazioni JSON di tutti i frammenti di contenuto all’interno della cartella.
-
-### Crea {#create}
-
-L’utilizzo avviene tramite:
-
-`POST /{cfParentPath}/{cfName}`
-
-Il corpo deve contenere una rappresentazione JSON del frammento di contenuto da creare, incluso qualsiasi contenuto iniziale da impostare sugli elementi del frammento di contenuto. È obbligatorio impostare il `cq:model` e deve puntare a un modello di frammento di contenuto valido. In caso contrario si verifica un errore. È inoltre necessario aggiungere un’intestazione `Content-Type` che è impostato su `application/json`.
-
-### Aggiorna {#update}
-
-Utilizzo tramite
-
-`PUT /{cfParentPath}/{cfName}`
-
-Il corpo deve contenere una rappresentazione JSON di ciò che deve essere aggiornato per il frammento di contenuto specificato.
-
-Può trattarsi semplicemente del titolo o della descrizione di un frammento di contenuto, di un singolo elemento o di tutti i valori e/o metadati degli elementi.
-
-### Elimina {#delete}
-
-L’utilizzo avviene tramite:
-
-`DELETE /{cfParentPath}/{cfName}`
 
 ## Limitazioni  {#limitations}
 
