@@ -2,9 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
+source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2253'
 ht-degree: 88%
 
 ---
@@ -283,4 +283,5 @@ Se non è più necessario avere una personalizzazione di un indice predefinito, 
 ## Ottimizzazioni di indici e query {#index-query-optimizations}
 
 Apache Jackrabbit Oak consente configurazioni di indice flessibili per gestire in modo efficiente le query di ricerca. Gli indici sono particolarmente importanti per gli archivi più grandi. Assicurati che tutte le query siano supportate da un indice appropriato. Le query senza un indice appropriato possono leggere migliaia di nodi e viene registrata un’avvertenza.
-Vedi [questa pagina](best-practices-for-querying-and-indexing.md) su come è possibile ottimizzare query e indici.
+
+Vedi [presente documento](query-and-indexing-best-practices.md) per informazioni su come è possibile ottimizzare query e indici.
