@@ -4,10 +4,10 @@ description: Scopri come abilitare alcune funzionalità dei frammenti di contenu
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 18%
+source-wordcount: '371'
+ht-degree: 23%
 
 ---
 
@@ -63,9 +63,12 @@ A [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-conte
 1. Utilizzo **Crea** per aprire la finestra di dialogo, in cui:
 
    1. Specifica una **Titolo**.
+   1. Il **nome** diventerà il nome del nodo nell’archivio.
+      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Se necessario, è possibile regolarlo.
    1. Per attivarne l&#39;uso, seleziona
       * **Modelli per frammenti di contenuto**
-      * **Query GraphQL persistenti**
+      * **Query persistenti GraphQL**
 
       ![Definire la configurazione](assets/cfm-conf-01.png)
 

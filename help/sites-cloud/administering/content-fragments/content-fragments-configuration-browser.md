@@ -1,10 +1,11 @@
 ---
 title: Frammenti di contenuto - Browser di configurazione
 description: Scopri come abilitare funzionalità specifiche per i frammenti di contenuto nel browser di configurazione.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 19%
+source-wordcount: '358'
+ht-degree: 24%
 
 ---
 
@@ -60,9 +61,12 @@ A [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-conte
 1. Utilizzo **Crea** per aprire la finestra di dialogo, in cui:
 
    1. Specifica una **Titolo**.
+   1. Il **nome** diventerà il nome del nodo nell’archivio.
+      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Se necessario, è possibile regolarlo.
    1. Per attivarne l&#39;uso, seleziona
       * **Modelli per frammenti di contenuto**
-      * **Query GraphQL persistenti**
+      * **Query persistenti GraphQL**
 
       ![Definire la configurazione](assets/cfm-conf-01.png)
 

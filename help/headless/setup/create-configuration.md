@@ -2,10 +2,10 @@
 title: 'Creazione di una configurazione: configurazione headless'
 description: Crea una configurazione come primo passo per familiarizzare con le funzioni headless in AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Un amministratore deve creare una configurazione solo una volta oppure, molto ra
       * Se necessario è possibile modificarlo.
 1. Seleziona le seguenti opzioni:
    * **Modelli per frammenti di contenuto**
-   * **Query GraphQL persistenti**
+   * **Query persistenti GraphQL**
 
    ![Crea configurazione](../assets/create-configuration.png)
 
@@ -43,7 +43,7 @@ Se necessario, puoi creare più configurazioni. È inoltre possibile nidificare 
 
 >[!NOTE]
 >
->In base ai requisiti di implementazione, oltre a **Modelli per frammenti di contenuto** e **Query GraphQL persistenti** potrebbe essere necessario selezionare anche altre opzioni di configurazione.
+>Opzioni di configurazione oltre a **Modelli per frammenti di contenuto** e **Query persistenti GraphQL** può essere necessario in base ai requisiti di implementazione.
 
 ## Passaggi successivi {#next-steps}
 
