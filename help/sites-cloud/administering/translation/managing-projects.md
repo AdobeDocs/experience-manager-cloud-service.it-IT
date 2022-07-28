@@ -4,10 +4,10 @@ description: Scopri come creare e gestire progetti di traduzione automatica e um
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
-workflow-type: ht
-source-wordcount: '3863'
-ht-degree: 100%
+source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
+workflow-type: tm+mt
+source-wordcount: '3920'
+ht-degree: 98%
 
 ---
 
@@ -178,6 +178,11 @@ Le modifiche manuali dei contenuti tradotti possono essere sincronizzate con il 
 ![Confronta le modifiche per la memoria di traduzione](../assets/update-translation-memory-compare.png)
 
 AEM invierà le stringhe selezionate al sistema di gestione della traduzione.
+
+* L&#39;azione aggiorna la traduzione delle stringhe esistenti nella memoria di traduzione dei sistemi di gestione della traduzione configurati (TMS).
+* Non crea nuovi lavori di traduzione.
+* Invia nuovamente al TMS le coppie di valori di stringhe e le relative traduzioni tramite AEM API di traduzione.
+* Questa funzione richiede che un sistema di gestione della traduzione sia configurato per l&#39;utilizzo con AEM.
 
 ### Verifica dello stato di traduzione di una pagina {#check-translation-status}
 
