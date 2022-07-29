@@ -2,9 +2,10 @@
 title: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.7.0
 description: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.7.0
 feature: Release Information
-source-git-commit: f84327096951772e1bed8656334841e1292d6bcf
+exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
+source-git-commit: ad9edf7bc164ea7e03496680dff8df6d1ebe266a
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '430'
 ht-degree: 9%
 
 ---
@@ -12,6 +13,22 @@ ht-degree: 9%
 # Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.7.0 {#release-notes}
 
 Questa pagina illustra le note sulla versione per gli strumenti di migrazione in AEM as a Cloud Service 2022.7.0.
+
+## Analisi delle best practice {#bpa-release}
+
+### Data di pubblicazione {#release-date-bpa}
+
+La data di rilascio di Best Practices Analyzer v2.1.30 è il 27 luglio 2022.
+
+### Novità {#what-is-new-bpa}
+
+* BPA ora è in grado di rilevare e segnalare la dimensione totale dell&#39;indice Lucene migrabile che è Indice Lucene totale escluso `/oak:index/lucene` e `/oak:index/damAssetLucene`.
+* È stato aggiunto un nuovo pattern in BPA per rilevare e creare rapporti sull’utilizzo di un dizionario i18n personalizzato. Translator.html non è disponibile AEM dizionario i18n as a Cloud Service e personalizzato deve essere distribuito da Git tramite la pipeline CI/CD di Cloud Manager.
+
+### Correzioni di bug {#bug-fixes-bpa}
+
+* BPA generava rapporti sulle rappresentazioni originali mancanti per i frammenti di contenuto. Poiché i frammenti di contenuto non dispongono di rappresentazioni, questo controllo viene ignorato per i frammenti di contenuto.
+* L’opzione per filtrare i risultati di ACS Commons era mancante nell’interfaccia utente BPA. Questo problema è stato risolto.
 
 ## Strumento Trasferimento contenuti {#ctt-release}
 
@@ -44,4 +61,3 @@ La data di rilascio di Cloud Acceleration Manager è il 15 luglio 2022.
 
 * Cloud Acceleration Manager ora consente agli utenti di recuperare manualmente il token di migrazione per poter avviare un’acquisizione quando il recupero automatico non riesce. Il recupero automatico può non riuscire se i clienti hanno impostato un elenco di indirizzi IP che blocca CAM o se un utente non amministratore tenta di avviare un&#39;acquisizione. Fai riferimento a [Risoluzione dei problemi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) per ulteriori informazioni.
 * Le tabelle lunghe nella pagina Complessità di migrazione ora sono comprimibili per facilitarne l’utilizzo.
-
