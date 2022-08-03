@@ -2,10 +2,10 @@
 title: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 description: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: d763bacb0844a438ebea6ef206dfa184a49993fe
+source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
@@ -15,23 +15,19 @@ La sezione seguente illustra le note generali sulla versione di [!DNL Workfront 
 
 ## Data di pubblicazione {#release-date}
 
-Data di rilascio dell’ultima versione 1.9.1 di [!DNL Workfront for Experience Manager enhanced connector] è l’1 luglio 2022.
+Data di rilascio dell’ultima versione 1.9.2 di [!DNL Workfront for Experience Manager enhanced connector] è il 3 agosto 2022.
 
 ## Funzioni principali {#release-highlights}
 
 La versione più recente del [!DNL Workfront for Experience Manager enhanced connector] include i seguenti miglioramenti e correzioni di bug:
 
-* È stato aggiunto il supporto per l’autenticazione tra le applicazioni Experience Manager e Workfront tramite la chiave API Workfront per le istanze migrate ad Adobe IMS.
+* La **[!UICONTROL Carica documento]** il passaggio del flusso di lavoro non allega un documento a Workfront.
 
-* Quando si collegano file o cartelle esterni, l&#39;applicazione Workfront visualizza la `SERVER_ERROR` messaggio di errore. Il messaggio di errore fa riferimento a un&#39;eccezione non autorizzata a causa di una mancata corrispondenza nelle chiavi API.
-
-* Quando esegui un flusso di lavoro Crea attività per una risorsa, nei messaggi di registro viene visualizzata l’eccezione Null Pointer.
-
-* Quando si abilita la `Replace Spaces with DASH` l&#39;opzione di configurazione in Impostazioni avanzate in Experience Manager si traduce in creazione di cartelle duplicate in Workfront.
+* La **[!UICONTROL Carica documento]** il passaggio del flusso di lavoro non allega un documento alle attività e ai problemi in Workfront. Il passaggio del flusso di lavoro collega un documento a Progetti con successo.
 
 >[!IMPORTANT]
 >
->L’Adobe consiglia di [aggiornamento alla versione più recente 1.9.1](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
+>L’Adobe consiglia di [aggiornamento alla versione più recente 1.9.2](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemi noti {#known-issues}
 
@@ -40,6 +36,18 @@ La versione più recente del [!DNL Workfront for Experience Manager enhanced con
 * Quando utilizzi l’esperienza Workfront classica, la **[!UICONTROL Invia a]** opzione disponibile in **[!UICONTROL Altro]** l’elenco a discesa non consente di selezionare la destinazione all’interno di Experience Manager. La **[!UICONTROL Invia a]** funziona correttamente utilizzando **[!UICONTROL Azioni documento]** elenco a discesa. La **[!UICONTROL Invia a]** funziona correttamente per **[!UICONTROL Altro]** l’elenco a discesa e **[!UICONTROL Azioni documento]** elenco a discesa disponibile nella nuova esperienza Workfront.
 
 ## Versioni precedenti {#previous-releases}
+
+### Versione di luglio 2022 {#july-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] La versione 1.9.1 include i seguenti aggiornamenti:
+
+* È stato aggiunto il supporto per l’autenticazione tra le applicazioni Experience Manager e Workfront tramite la chiave API Workfront per le istanze migrate ad Adobe IMS.
+
+* Quando si collegano file o cartelle esterni, l&#39;applicazione Workfront visualizza la `SERVER_ERROR` messaggio di errore. Il messaggio di errore fa riferimento a un&#39;eccezione non autorizzata a causa di una mancata corrispondenza nelle chiavi API.
+
+* Quando esegui un flusso di lavoro Crea attività per una risorsa, nei messaggi di registro viene visualizzata l’eccezione Null Pointer.
+
+* Quando si abilita la `Replace Spaces with DASH` l&#39;opzione di configurazione in Impostazioni avanzate in Experience Manager si traduce in creazione di cartelle duplicate in Workfront.
 
 ### Versione di giugno 2022 {#june-2022-release}
 
