@@ -3,9 +3,9 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Convalida e debug con gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
+source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2653'
 ht-degree: 2%
 
 ---
@@ -229,6 +229,10 @@ Lo script prevede le tre fasi seguenti:
 
 Durante l’implementazione di Cloud Manager, la variabile `httpd -t` verrà eseguito anche il controllo della sintassi e eventuali errori verranno inclusi in Cloud Manager `Build Images step failure` registro.
 
+>[!NOTE]
+>
+>Consulta la sezione [Caricamento e convalida automatici](#automatic-loading) sezione per un&#39;alternativa efficiente all&#39;esecuzione `validate.sh` dopo ogni modifica della configurazione.
+
 ### Fase 1 {#first-phase}
 
 Se una direttiva non viene inserita nell&#39;elenco Consentiti, lo strumento registra un errore e restituisce un codice di uscita diverso da zero. Inoltre, scansiona ulteriormente tutti i file con pattern `conf.dispatcher.d/enabled_farms/*.farm` e controlla che:
@@ -418,6 +422,42 @@ I livelli di registro per tali moduli sono definiti dalle variabili `DISP_LOG_LE
 Quando si esegue Dispatcher localmente, i registri vengono stampati direttamente nell’output del terminale. Nella maggior parte dei casi, si desidera che questi log siano in DEBUG, che può essere fatto passando il livello Debug come parametro durante l&#39;esecuzione di Docker. Esempio: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 I registri per gli ambienti cloud sono esposti tramite il servizio di registrazione disponibile in Cloud Manager.
+
+### Caricamento e convalida automatici {#automatic-loading}
+
+>[!NOTE]
+>
+>A causa di una limitazione del sistema operativo Windows, questa funzione è disponibile solo per gli utenti Linux.
+
+Invece di eseguire la convalida locale (`validate.sh`) e avvio del contenitore docker (`docker_run.sh`) ogni volta che la configurazione viene modificata, puoi in alternativa eseguire il `docker_run_hot_reload.sh` script.  Lo script controlla eventuali modifiche alla configurazione e la ricaricherà automaticamente ed eseguirà nuovamente la convalida. Utilizzando questa opzione è possibile risparmiare molto tempo durante il debug.
+
+È possibile eseguire lo script utilizzando il seguente comando: `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+
+Tieni presente che le prime righe di output avranno un aspetto simile a quello per cui verrebbe eseguito `docker_run.sh`ad esempio:
+
+```
+~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
+opt-in USE_SOURCES_DIRECTLY marker file detected
+Running script /docker_entrypoint.d/10-check-environment.sh
+Running script /docker_entrypoint.d/15-check-pod-name.sh
+Running script /docker_entrypoint.d/20-create-docroots.sh
+Running script /docker_entrypoint.d/30-wait-for-backend.sh
+Waiting until host.docker.internal is available
+host.docker.internal resolves to 192.168.65.2
+Running script /docker_entrypoint.d/40-generate-allowed-clients.sh
+Running script /docker_entrypoint.d/50-check-expiration.sh
+Running script /docker_entrypoint.d/60-check-loglevel.sh
+Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
+Running script /docker_entrypoint.d/80-frontend-domain.sh
+Running script /docker_entrypoint.d/zzz-import-sdk-config.sh
+WARN Mon Jul  4 09:53:54 UTC 2022: Pseudo symlink conf.d seems to point to a non-existing file!
+INFO Mon Jul  4 09:53:55 UTC 2022: Copied customer configuration to /etc/httpd.
+INFO Mon Jul  4 09:53:55 UTC 2022: Start testing
+Cloud manager validator 2.0.43
+2022/07/04 09:53:55 No issues found
+INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
+INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
 
 ## Diverse configurazioni del Dispatcher per ambiente {#different-dispatcher-configurations-per-environment}
 
