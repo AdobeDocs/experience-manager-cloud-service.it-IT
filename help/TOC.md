@@ -8,9 +8,9 @@ user-guide-description: Risorse di supporto autonomo e collegamenti alla documen
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5de4f8642d6dfae2697bd2fc18b8b9845b883e18
+source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
 workflow-type: tm+mt
-source-wordcount: '3698'
+source-wordcount: '3697'
 ht-degree: 92%
 
 ---
@@ -273,6 +273,9 @@ ht-degree: 92%
          + [Segmentazione](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Configurazione della segmentazione con ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registrazione, accesso e profilo utente](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + Campaign {#campaign}
+         + 
+            + [Creazione di newsletter con AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + Amministrazione {#administering}
       + Frammenti di contenuto {#content-fragments}
          + [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -340,7 +343,6 @@ ht-degree: 92%
       + [Configurazione IMS da utilizzare per l’integrazione con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign Classic](/help/sites-cloud/integrating/integrating-campaign-classic.md)
-      + [Creazione di una newsletter Adobe Experience Manager](/help/sites-cloud/integrating/creating-newsletter.md)
 + Assets {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [Panoramica e novità](/help/assets/overview.md)
