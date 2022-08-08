@@ -3,9 +3,9 @@ title: 'Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail, u
 description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti via e-mail, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
+source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
 workflow-type: tm+mt
-source-wordcount: '5467'
+source-wordcount: '6098'
 ht-degree: 0%
 
 ---
@@ -140,6 +140,23 @@ Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo 
 >
 >Le opzioni per salvare il passaggio Assegna attività come bozza e recuperare la cronologia del passaggio Assegna attività sono disabilitate quando si configura un modello di flusso di lavoro AEM per l’archiviazione dei dati esterni. Inoltre, in Posta in arrivo, l’opzione per il salvataggio è disabilitata.
 
+## Passaggio Converti in PDF/A {#convert-pdfa}
+
+PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, incorporando i font e decomprimendo il file. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. È possibile utilizzare ***Converti in PDF/A*** passa a un flusso di lavoro AEM per convertire i documenti PDF in formato PDF/A.
+
+Il passaggio Converti in PDF/A ha le seguenti proprietà:
+
+**[!UICONTROL Documento di input]**: Il documento di input può essere relativo al payload, avere un percorso assoluto, può essere fornito come payload o memorizzato in una variabile di tipo di dati Documento.
+
+**[!UICONTROL Opzioni di conversione]**: Utilizzando questa proprietà, vengono specificate le impostazioni per la conversione di documenti PDF in documenti PDF/A. Varie opzioni disponibili in questa scheda sono:
+* **[!UICONTROL Conformità]**: Specifica gli standard a cui il documento PDF/A di output deve conformarsi.
+* **[!UICONTROL Livello dei risultati]**: Specifica il livello del risultato come PassFail, Summary o Detailed, per l&#39;output di conversione.
+* **[!UICONTROL Spazio colore]**: Specifica lo spazio colore predefinito utilizzato per i file di output PDF/A.
+* **[!UICONTROL Contenuto facoltativo]**: Consente di visualizzare specifici oggetti grafici e/o annotazioni nel documento di output PDF/A solo quando viene soddisfatto un set specifico di criteri.
+
+**[!UICONTROL Documenti di output]**: Specifica il percorso in cui salvare il file di output. Il file di output può essere salvato in una posizione relativa al payload, sovrascrive il payload, se il payload è un file o in una variabile del tipo di dati Documento.
+
+
 ## Invia passaggio e-mail {#send-email-step}
 
 Utilizza il passaggio e-mail per inviare un’e-mail, ad esempio un messaggio e-mail con un documento di record, un collegamento a un modulo adattivo <!-- , link of an interactive communication-->oppure con un documento PDF allegato. Supporto dei passaggi di invio e-mail [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono reattive e si adattano al client e-mail e alle dimensioni dello schermo dei destinatari. Puoi utilizzare un modello e-mail di HTML per definire l’aspetto, lo schema colore e il comportamento dell’e-mail.
@@ -197,6 +214,31 @@ Se si specifica il percorso di una cartella, ad esempio gli allegati, tutti i fi
 **[!UICONTROL Salva documento di record generato utilizzando le opzioni seguenti]**: Specificare il percorso in cui conservare un file del documento di record. È possibile scegliere di sovrascrivere la cartella payload, posizionare il documento di record in una posizione all’interno della directory di payload o archiviare il documento di record in una variabile di tipo di dati Documento.
 
 **[!UICONTROL Impostazioni internazionali]**: Specificare la lingua del documento di record. Seleziona **[!UICONTROL Letterale]** per selezionare le impostazioni internazionali da un elenco a discesa o selezionare **[!UICONTROL Variabile]** per recuperare le impostazioni internazionali dal valore memorizzato in una variabile di tipo dati stringa. È necessario definire il codice delle impostazioni internazionali quando si memorizza il valore delle impostazioni internazionali in una variabile. Ad esempio, specifica **en_US** per inglese e **fr_FR** per il francese.
+
+## Richiama passaggio DDX {#invokeddx}
+
+Document Description XML (DDX) è un linguaggio di markup dichiarativo i cui elementi rappresentano blocchi predefiniti di documenti. Questi blocchi predefiniti includono documenti PDF e XDP e altri elementi quali commenti, segnalibri e testo con stili. DDX definisce un set di operazioni, che può essere applicato su uno o più documenti di input per generare uno o più documenti di output.  Un singolo DDX può essere utilizzato con una serie di documenti sorgente. È possibile utilizzare ***Richiama passaggio DDX*** in un flusso di lavoro di AEM per eseguire varie operazioni, come Assembling Disassembling Documents, Creating e edit Acrobat e XFA Forms, e altre descritte in [Documentazione di riferimento DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+
+Richiama il passaggio DDX con le seguenti proprietà:
+
+**[!UICONTROL Documenti di input]**: Utilizzato per impostare le proprietà di un documento di input. Varie opzioni disponibili in questa scheda sono:
+* **[!UICONTROL Specifica DDX utilizzando]**: Specifica i documenti di input relativi al payload, hanno un percorso assoluto, possono essere forniti come payload o memorizzati in una variabile di tipo di dati Documento.
+* **[!UICONTROL Crea mappa da payload]**: Aggiunge tutti i documenti sotto la cartella payload alla mappa del documento di input per l’API di chiamata in Assembler. Il nome del nodo di ciascun documento viene utilizzato come chiave nella mappa.
+* **[!UICONTROL Mappa del documento di input]**: L&#39;opzione viene utilizzata per aggiungere più voci utilizzando **[!UICONTROL AGGIUNGI]** pulsante . Ogni voce rappresenta la chiave del documento nella mappa e nell’origine del documento.
+
+**[!UICONTROL Opzioni ambiente]**: Questa opzione viene utilizzata per impostare le impostazioni di elaborazione per l’API di chiamata. Varie opzioni disponibili in questa scheda sono:
+* **[!UICONTROL Convalida solo]**: Verifica la validità del documento DDX di input.
+* **[!UICONTROL Errore]**: Controlla se il servizio API di chiamata non riesce, in caso di errore. Per impostazione predefinita, il relativo valore è impostato su False.
+* **[!UICONTROL Numero di Bates]**: Specifica il numero, che si auto-incrementa. Questo numero con incremento automatico viene visualizzato automaticamente su ogni pagina consecutiva.
+* **[!UICONTROL Stile predefinito]**: Imposta lo stile predefinito per il file di output.
+
+>[!NOTE]
+>
+>Le opzioni dell’ambiente vengono mantenute sincronizzate con le API HTTP.
+
+**[!UICONTROL Documenti di output]**: Specifica il percorso in cui salvare il file di output. Varie opzioni disponibili in questa scheda sono:
+* **[!UICONTROL Salva output nel payload]**: Salva i documenti di output sotto la cartella payload o sovrascrive il payload, nel caso in cui il payload sia un file.
+* **[!UICONTROL Mappa del documento di output]**: Specifica il percorso in cui salvare esplicitamente ogni file di documento, aggiungendo una voce per documento. Ogni voce rappresenta il documento e il percorso, dove salvarlo. Se sono presenti più documenti di output, viene utilizzata questa opzione.
 
 ## Passaggio Invoca il servizio del modello dati del modulo {#invoke-form-data-model-service-step}
 

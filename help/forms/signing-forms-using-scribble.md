@@ -9,21 +9,43 @@ topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 73953a3d71f3328def3bd4c1f03516b4839695ea
+exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
+source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
-
 
 # Applicazione di firme elettroniche a un modulo utilizzando firme a mano libera{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 È possibile utilizzare **Firma scarabocchio** componente e **Passaggio firma** componente da disegnare (scarabocchio) in un modulo adattivo. Il componente Passaggio firma visualizza una versione PDF del modulo adattivo. Per utilizzare il componente Passaggio firma è necessaria l’opzione Documento di record abilitata o l’opzione Forms adattivo basata su un modello di modulo.
 
-Entrambi i componenti dispongono di una finestra, come illustrato di seguito, per firmare un modulo. Puoi anche fare clic sull’icona di geolocalizzazione ![aem_6_3_geolocalizzazione](assets/aem_6_3_geolocation.png) per aggiungere una geolocalizzazione alla firma.
-
 ![Finestra di dialogo dei segni di scorrimento](assets/scribble-signature.png)
+
+## Varie opzioni disponibili nella finestra Firma
+
+* **R:** Fai clic sul pulsante **Pennello** per disegnare la firma su tela.
+* **B:** Fai clic sul pulsante **Cancella** per cancellare la firma sull’area di lavoro.
+* **C:** Fai clic sul pulsante **Geolocalizzazione** per aggiungere una geolocalizzazione insieme alla firma.
+* **D:** Fai clic sul pulsante **Tastiera** per digitare il nome nell’area di lavoro.
+
+Una volta toccato Fine ![aem_forms_save](assets/aem_forms_save.png) nella finestra Firma scarabocchio non è possibile modificare la firma. Se si desidera modificare la firma, è necessario ignorare la firma corrente e firmare nuovamente utilizzando l’opzione Pennello/Tastiera di disegno di cui sopra.
+
+Puoi toccare il pulsante **Configura** ![](assets/configure.png) per impostare le proporzioni dell’area di lavoro Firma scarabocchio.
+* Se le proporzioni dell’area di lavoro Firma scarabocchio sono inferiori a 1, le informazioni sulla geolocalizzazione vengono aggiunte nella parte inferiore dell’area di lavoro Firma scarabocchio.
+
+
+* Quando le proporzioni dell’area di lavoro Firma scarabocchio sono superiori a 1, le informazioni sulla geolocalizzazione vengono aggiunte a destra dell’area di lavoro Firma scarabocchio.
+
+
+![scarabocchio firma-fondo](assets/scribble-signature-aspectratio.PNG)
+
+
+
+>[!NOTE]
+>
+>Le firme vengono sempre salvate in formato PNG.
 
 ## Configurare un modulo adattivo per l’utilizzo della firma digitale {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -36,7 +58,7 @@ Entrambi i componenti dispongono di una finestra, come illustrato di seguito, pe
    >
    >Il componente Passaggio firma occupa la larghezza completa disponibile per il modulo. Si consiglia di non avere alcun altro componente nella sezione contenente il componente Passaggio firma.
 
-1. Nel browser Contenuto, tocca **Contenitore modulo** e tocca **Configura** ![](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo. Passa a **Contenitore di moduli adattivi** > **Firma elettronica** e deselezionare la **Abilita Adobe Sign** opzione . Tocca Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche.
+1. Nel browser Contenuto, tocca **Contenitore modulo** e tocca **Configura** ![](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo. Passa a **Contenitore di moduli adattivi** > **Firma elettronica** e deselezionare la **Abilita Adobe Sign** opzione . Tocca Fine ![aem_forms_save](assets/aem_forms_save.png) per salvare le modifiche.
 
    >[!NOTE]
    >
@@ -52,7 +74,7 @@ Entrambi i componenti dispongono di una finestra, come illustrato di seguito, pe
 
    * **Classe CSS**: Specifica la classe CSS della libreria client, se presente. Si consiglia di utilizzare [temi](themes.md) e [stili in linea](inline-style-adaptive-forms.md) anziché CSS Class.
 
-   Tocca Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche. La firma è configurata correttamente.
+   Tocca Fine ![aem_forms_save](assets/aem_forms_save.png) per salvare le modifiche. La firma è configurata correttamente.
 
    Ora, quando si compila un modulo, viene visualizzata una versione PDF di Modulo adattivo e vengono fornite le opzioni per firmare il documento PDF. Per informazioni dettagliate, consulta [Firma digitale di un modulo adattivo](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
@@ -62,13 +84,12 @@ Entrambi i componenti dispongono di una finestra, come illustrato di seguito, pe
 
    ![Schermata della firma per la pagina EchoSign](assets/esignscribblesign.jpg)
 
-1. Fai clic su **[!UICONTROL Sign]**. Viene visualizzata la finestra di dialogo del segno di scarabocchio. Firma il modulo e fai clic su Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare la firma.
+1. Fai clic su **[!UICONTROL Sign]**. Viene visualizzata la finestra di dialogo del segno di scarabocchio. Firma il modulo e fai clic su Fine ![aem_forms_save](assets/aem_forms_save.png) per salvare la firma.
 
-   ![Finestra di dialogo dei segni di scorrimento](assets/scribblewidget.jpg)
+   ![Finestra di dialogo dei segni di scorrimento](assets/scribblewidget.png)
 
 1. Fare clic su completa per completare il processo di firma.
 
    ![Completare il processo di firma](assets/scribblecomplete.jpg)
 
 Le firme vengono aggiunte al modulo e il controllo modulo si sposta nel pannello successivo.
-

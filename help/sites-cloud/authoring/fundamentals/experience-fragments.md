@@ -2,9 +2,9 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1566'
 ht-degree: 97%
 
 ---
@@ -346,6 +346,10 @@ I dettagli vengono visualizzati in tutte le viste della console **Frammenti espe
       * **Bacheca Pinterest**
    * **Riferimenti**
       * Un elenco di riferimenti
+   * **Personalizzazione**
+      * **Percorso ContextHub**
+      * **Percorso dei segmenti**
+      * **Marchio**
 
 ## Rendering HTML semplice {#the-plain-html-rendition}
 
