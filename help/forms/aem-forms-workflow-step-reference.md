@@ -3,7 +3,7 @@ title: 'Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail, u
 description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti via e-mail, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
+source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
 workflow-type: tm+mt
 source-wordcount: '6098'
 ht-degree: 0%
@@ -54,18 +54,25 @@ Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo 
 * **[!UICONTROL Timeout dopo la data di scadenza]**: Selezionare questa opzione per abilitare il campo di selezione Gestore timeout.
 * **[!UICONTROL Gestore di timeout]**: Selezionare lo script da eseguire quando la fase dell&#39;attività di assegnazione supera la data di scadenza. Script inseriti nell’archivio CRX in [app]/fd/dashboard/scripts/timeoutHandler sono disponibili per la selezione. Il percorso specificato non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo.
 * **[!UICONTROL Evidenziare l&#39;azione e il commento dall&#39;ultima attività in Dettagli attività]**: Selezionare questa opzione per visualizzare l’ultima azione eseguita e il commento ricevuto sulla sezione dei dettagli dell’attività di un’attività.
-* **[!UICONTROL Tipo]**: Scegliere il tipo di documento da compilare all&#39;avvio del flusso di lavoro. È possibile scegliere un modulo adattivo, un modulo adattivo di sola lettura, un documento PDF non interattivo. <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+* **[!UICONTROL Tipo]**: Scegliere il tipo di documento da compilare all&#39;avvio del flusso di lavoro. È possibile scegliere un modulo adattivo, un modulo adattivo di sola lettura, un documento PDF non interattivo.
+
+<!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+
+
 * **[!UICONTROL Usa modulo adattivo]**: Specificare il metodo per individuare il modulo adattivo di input. Questa opzione è disponibile se si seleziona Modulo adattivo o Modulo adattivo di sola lettura dall’elenco a discesa Tipo . Puoi utilizzare il Modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto o disponibile in un percorso in una variabile. È possibile utilizzare una variabile di tipo String per specificare il percorso.\
    Puoi associare più Forms adattivo a un flusso di lavoro. Di conseguenza, è possibile specificare un Modulo adattivo in fase di esecuzione utilizzando i metodi di input disponibili.
 
 <!-- 
+
 * **[!UICONTROL Use Interactive Communication]**: Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
 
 > [!NOTE]
 >
->You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  -->
+>You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  
 
-* **[!UICONTROL Percorso modulo adattivo]**: Specifica il percorso del modulo adattivo.<!--  or Interactive Communication.--> È possibile utilizzare il modulo adattivo <!-- or interactive communication --> che viene inviato al flusso di lavoro, disponibile in un percorso assoluto, o recupera il Modulo adattivo da un percorso memorizzato in una variabile di tipo dati stringa.
+-->
+
+* **[!UICONTROL Percorso modulo adattivo]**: Specifica il percorso del modulo adattivo. È possibile utilizzare il Modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto, oppure recuperare il Modulo adattivo da un percorso memorizzato in una variabile di tipo dati stringa.
 * **[!UICONTROL Seleziona PDF di input utilizzando]**: Specifica il percorso di un documento PDF non interattivo. Il campo è disponibile quando si sceglie un documento PDF non interattivo nel campo Tipo. È possibile selezionare il PDF di input utilizzando il percorso relativo al payload, salvato in un percorso assoluto o utilizzando una variabile del tipo di dati Documento. Ad esempio: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Il percorso non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo. Per utilizzare l’opzione Percorso di PDF è necessario abilitare l’opzione Documento di record o Forms adattivo basato su modelli di modulo.
 * **[!UICONTROL Per l’attività completata, eseguire il rendering del modulo adattivo come]**: Quando un’attività è contrassegnata come completa, è possibile eseguire il rendering del modulo adattivo come modulo adattivo di sola lettura o come documento PDF. Per eseguire il rendering del modulo adattivo come documento di record, è necessario abilitare l’opzione Documento di record o Forms adattivo basato su modelli di modulo.
 * **[!UICONTROL Prepopolato]**: I campi seguenti elencati fungono da input per l’attività:
@@ -73,14 +80,23 @@ Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo 
    * **[!UICONTROL Seleziona il file di dati di input utilizzando]**: Percorso del file di dati di input (.json, .xml, .doc o modello di dati del modulo). È possibile recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile di tipo di dati Document, XML o JSON. Ad esempio, il file contiene i dati inviati per il modulo tramite un’applicazione Casella in entrata AEM. Un esempio di percorso è [Payload_Directory]/workflow/data.
    * **[!UICONTROL Selezionare gli allegati di input utilizzando]**: Gli allegati disponibili nella posizione vengono allegati al modulo associato all&#39;attività. Il percorso può essere relativo al payload o recuperare l&#39;allegato memorizzato in una variabile di un documento. Un esempio di percorso è [Payload_Directory]/attachment/. È possibile specificare gli allegati posizionati in relazione al payload o utilizzare una variabile di tipo documento (Elenco array > Documento) per specificare un allegato di input per il modulo adattivo.
 
-   <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+   <!-- 
+    
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
-    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. -->
+    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. 
+    
+    -->
+
    * **[!UICONTROL Mappatura attributi richiesta]**: Utilizza la sezione Mappatura attributi di richiesta per definire la [nome e valore dell’attributo della richiesta](work-with-form-data-model.md#bindargument). Recupera i dettagli dall’origine dati in base al nome e al valore dell’attributo specificati nella richiesta. È possibile definire un valore dell&#39;attributo della richiesta utilizzando un valore letterale o una variabile di tipo dati String.
 
-   <!--  The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. -->
+   <!--  
+     
+     The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
+     
+     -->
 
 * **[!UICONTROL Informazioni inviate]**: I campi seguenti elencati fungono da percorsi di output per l’attività:
 
@@ -88,9 +104,13 @@ Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo 
    * **[!UICONTROL Salva allegati utilizzando]**: Salvare gli allegati del modulo forniti in un’attività. È possibile salvare gli allegati utilizzando un percorso relativo al payload o archiviarlo in una variabile dell&#39;elenco di matrice del tipo di dati Documento.
    * **[!UICONTROL Salva documento di record utilizzando]**: Percorso per il salvataggio di un file del documento di record. Ad esempio: [Payload_Directory]/DocumentofRecord/credit-card.pdf. È possibile salvare il documento di record utilizzando un percorso relativo al payload o archiviarlo in una variabile del tipo di dati Documento. Se si seleziona **[!UICONTROL Relativo al payload]** Se il campo percorso viene lasciato vuoto, il documento di record non viene generato. Questa opzione è disponibile solo se si seleziona Modulo adattivo dall’elenco a discesa Tipo .
 
-   <!-- * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+   <!-- 
+    
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
-    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
+    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
+    
+    -->
 
 * **[!UICONTROL Assegnatario]** > **[!UICONTROL Opzioni di assegnazione]**: Specificare il metodo per assegnare l&#39;attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selezione partecipanti o assegnarla a un utente o gruppo AEM specifico.
 * **[!UICONTROL Selettore partecipante]**: L’opzione è disponibile quando **[!UICONTROL In modo dinamico per un utente o un gruppo]** l’opzione è selezionata nel campo Assegna opzioni . È possibile utilizzare uno script ECMAScript o un servizio per selezionare in modo dinamico un utente o un gruppo. Per ulteriori informazioni, consulta [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato Adobe Experience Manager Dynamic Participant .](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
@@ -183,7 +203,12 @@ Il passaggio e-mail ha le seguenti proprietà:
 
 * **[!UICONTROL Metadati del flusso di lavoro]**: Utilizza l’opzione quando il valore da utilizzare viene salvato in una proprietà di metadati di un flusso di lavoro. Dopo aver selezionato l’opzione , immetti il nome della proprietà metadati nella casella di testo vuota sotto l’opzione Metadati flusso di lavoro . Ad esempio, emailAddress.
 
-<!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
+<!-- 
+
+* **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. 
+
+-->
+
 * **[!UICONTROL Immagine]**: Utilizza l’opzione per incorporare un’immagine nell’e-mail. Dopo aver selezionato l&#39;opzione , sfoglia e scegli l&#39;immagine. L’opzione immagine è disponibile solo per i tag immagine (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) disponibili nel modello e-mail.&#42;
 
 **[!UICONTROL Indirizzo e-mail del mittente/destinatario]**: Seleziona la **[!UICONTROL Letterale]** opzione per specificare manualmente un indirizzo e-mail o selezionare **[!UICONTROL Recupera dai metadati del flusso di lavoro]** per recuperare l’indirizzo e-mail da una proprietà metadati. È inoltre possibile specificare un elenco di array di proprietà di metadati per **[!UICONTROL Recupera dai metadati del flusso di lavoro]** opzione . Seleziona la **[!UICONTROL Variabile]** per recuperare l’indirizzo e-mail dal valore memorizzato in una variabile di tipo dati stringa.
@@ -367,7 +392,9 @@ Il passaggio Firma documento ha le seguenti proprietà:
 * **[!UICONTROL Script o servizio per selezionare i firmatari]**: L’opzione è disponibile solo se nel campo Seleziona firmatari è selezionata l’opzione Dinamicamente . È possibile specificare uno script ECMAScript o un servizio per scegliere i firmatari e le opzioni di verifica di un documento.
 * **[!UICONTROL Dettagli del firmatario]**: L’opzione è disponibile solo se l’opzione Manualmente è selezionata nel campo Seleziona firmatari . Specifica l’indirizzo e-mail e scegli un meccanismo di verifica facoltativo. Prima di selezionare un meccanismo di verifica in due fasi, assicurati che l’opzione di verifica corrispondente sia abilitata per il [!DNL Adobe Sign] conto. È possibile utilizzare una variabile del tipo di dati Stringa per definire i valori dei campi E-mail, Codice paese e Numero di telefono. I campi Codice paese e Numero di telefono vengono visualizzati solo se si seleziona Verifica telefono dall’elenco a discesa di verifica in due passaggi.
 
-<!-- ## Document Services steps {#document-services-steps}
+<!-- 
+
+## Document Services steps {#document-services-steps}
 
 AEM Document services are a set of services for creating, assembling, and securing PDF Documents. [!DNL AEM Forms] provides a separate AEM Workflow step for each document service.
 
@@ -519,4 +546,6 @@ The Generate Printed Output step has the following properties:
 * **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
     * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
     * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
-    * **[!UICONTROL Simplex]**: Use single-sided printing.-->
+    * **[!UICONTROL Simplex]**: Use single-sided printing.
+    
+    -->
