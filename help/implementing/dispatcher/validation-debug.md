@@ -3,7 +3,7 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Convalida e debug con gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 2%
@@ -231,7 +231,7 @@ Durante l’implementazione di Cloud Manager, la variabile `httpd -t` verrà ese
 
 >[!NOTE]
 >
->Consulta la sezione [Caricamento e convalida automatici](#automatic-loading) sezione per un&#39;alternativa efficiente all&#39;esecuzione `validate.sh` dopo ogni modifica della configurazione.
+>Consulta la sezione [Ricaricamento e convalida automatici](#automatic-loading) sezione per un&#39;alternativa efficiente all&#39;esecuzione `validate.sh` dopo ogni modifica della configurazione.
 
 ### Fase 1 {#first-phase}
 
@@ -423,7 +423,7 @@ Quando si esegue Dispatcher localmente, i registri vengono stampati direttamente
 
 I registri per gli ambienti cloud sono esposti tramite il servizio di registrazione disponibile in Cloud Manager.
 
-### Caricamento e convalida automatici {#automatic-loading}
+### Ricaricamento e convalida automatici {#automatic-reloading}
 
 >[!NOTE]
 >
