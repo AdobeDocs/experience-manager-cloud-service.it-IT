@@ -8,10 +8,10 @@ user-guide-description: Risorse di supporto autonomo e collegamenti alla documen
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2d84e6f2cc8345598af64f5b33ef88b26faa15fa
+source-git-commit: 5e8f70da6de27bf59e4a89e196a016820245a068
 workflow-type: tm+mt
-source-wordcount: '3717'
-ht-degree: 92%
+source-wordcount: '3709'
+ht-degree: 91%
 
 ---
 
@@ -503,7 +503,6 @@ ht-degree: 92%
       + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
          + [Creare un modulo adattivo](/help/forms/creating-adaptive-form.md)
          + [Progettazione di uno schema JSON per un modulo adattivo](/help/forms/adaptive-form-json-schema-form-model.md)
-         + [Progettazione di uno schema XML per un modulo adattivo](/help/forms/adaptive-form-xml-schema-form-model.md)
          + [Utilizzare Forms Designer](/help/forms/use-forms-designer.md)
          + [Miglioramento delle prestazioni dei moduli di grandi dimensioni con caricamento lento](/help/forms/lazy-loading-adaptive-forms.md)
       + Aggiungere componenti a un modulo adattivo {#add-components-to-an-adaptive-form}
