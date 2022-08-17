@@ -3,9 +3,9 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Convalida e debug con gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
+source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2655'
 ht-degree: 2%
 
 ---
@@ -427,7 +427,7 @@ I registri per gli ambienti cloud sono esposti tramite il servizio di registrazi
 
 >[!NOTE]
 >
->A causa di una limitazione del sistema operativo Windows, questa funzione è disponibile solo per gli utenti Linux.
+>A causa di una limitazione del sistema operativo Windows, questa funzione è disponibile solo per gli utenti macOS e Linux.
 
 Invece di eseguire la convalida locale (`validate.sh`) e avvio del contenitore docker (`docker_run.sh`) ogni volta che la configurazione viene modificata, puoi in alternativa eseguire il `docker_run_hot_reload.sh` script.  Lo script controlla eventuali modifiche alla configurazione e la ricaricherà automaticamente ed eseguirà nuovamente la convalida. Utilizzando questa opzione è possibile risparmiare molto tempo durante il debug.
 
