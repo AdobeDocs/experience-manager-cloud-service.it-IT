@@ -2,7 +2,7 @@
 title: Estrazione del contenuto dall’origine
 description: Estrazione del contenuto dall’origine
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 5075482f48bf9aaf2c7386af74c14a50b4469840
+source-git-commit: e9af2bee0867b6787cd25f4af80cf8bf6a4d706a
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 21%
@@ -32,19 +32,20 @@ Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferiment
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
-   >!![IMPORTANT]
-   Assicurati che la chiave di estrazione sia valida e non sia vicina alla sua scadenza. Se è vicina alla data di scadenza, puoi rinnovare la chiave di estrazione selezionando il set di migrazione e facendo clic su Proprietà . Fai clic su **Rinnova**. Verrà visualizzato Cloud Acceleration Manager, dove puoi fare clic su **Copia chiave di estrazione**. Ogni volta che fai clic su **Copia chiave di estrazione**, viene generata una nuova chiave di estrazione valida per 14 giorni dalla creazione.
-   [!immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >[!IMPORTANT]
+   >
+   >Assicurati che la chiave di estrazione sia valida e non sia vicina alla sua scadenza. Se è vicina alla data di scadenza, puoi rinnovare la chiave di estrazione selezionando il set di migrazione e facendo clic su Proprietà . Fai clic su **Rinnova**. Verrà visualizzato Cloud Acceleration Manager, dove puoi fare clic su **Copia chiave di estrazione**. Ogni volta che fai clic su **Copia chiave di estrazione**, viene generata una nuova chiave di estrazione valida per 14 giorni dalla creazione.
+   >[!immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. Viene visualizzata la finestra di dialogo Estrazione . Fai clic su **Extract** per avviare la fase di estrazione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
 
    >[!NOTE]
-Puoi sovrascrivere il contenitore di staging durante la fase di estrazione. Se **Sovrascrivi contenitore di staging** è disattivato e può velocizzare le estrazioni per le successive migrazioni in cui i percorsi dei contenuti o le impostazioni delle versioni &quot;include&quot; non sono cambiati. Tuttavia, se i percorsi dei contenuti o le impostazioni delle versioni incluse sono cambiati, allora **Sovrascrivi contenitore di staging** deve essere abilitato.
+   >Puoi sovrascrivere il contenitore di staging durante la fase di estrazione. Se **Sovrascrivi contenitore di staging** è disattivato e può velocizzare le estrazioni per le successive migrazioni in cui i percorsi dei contenuti o le impostazioni delle versioni &quot;include&quot; non sono cambiati. Tuttavia, se i percorsi dei contenuti o le impostazioni delle versioni incluse sono cambiati, allora **Sovrascrivi contenitore di staging** deve essere abilitato.
 
    >[!IMPORTANT]
-Se la Mappatura utente non è stata eseguita su questo set di migrazione prima di estrarre il contenuto dall’origine, verrà visualizzato un avviso che mostra che il passaggio Mappatura utente è in sospeso, come illustrato nella figura precedente. Fai clic su **Mappa utenti** per eseguire lo strumento User Mapping (Mappatura utente).
+   >Se la Mappatura utente non è stata eseguita su questo set di migrazione prima di estrarre il contenuto dall’origine, verrà visualizzato un avviso che mostra che il passaggio Mappatura utente è in sospeso, come illustrato nella figura precedente. Fai clic su **Mappa utenti** per eseguire lo strumento User Mapping (Mappatura utente).
 
 1. La **Estrazione** viene ora visualizzato il campo **IN ESECUZIONE** stato per indicare che l’estrazione è in corso.
 
@@ -68,8 +69,8 @@ Se la Mappatura utente non è stata eseguita su questo set di migrazione prima d
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
 
 >[!NOTE]
-Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service. Se hai utilizzato il passaggio di pre-copia per la prima estrazione completa, puoi saltare la pre-copia per le successive estrazioni integrative (se la dimensione del set di migrazione integrativa è inferiore a 200 GB) perché potrebbe aggiungere tempo all’intero processo.
-Inoltre, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui l’estrazione iniziale viene portata al momento dell’esecuzione dell’estrazione integrativa. Non è possibile eseguire i top-up su contenuto la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questa limitazione durante il processo di migrazione.
+>Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service. Se hai utilizzato il passaggio di pre-copia per la prima estrazione completa, puoi saltare la pre-copia per le successive estrazioni integrative (se la dimensione del set di migrazione integrativa è inferiore a 200 GB) perché potrebbe aggiungere tempo all’intero processo.
+>Inoltre, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui l’estrazione iniziale viene portata al momento dell’esecuzione dell’estrazione integrativa. Non è possibile eseguire i top-up su contenuto la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questa limitazione durante il processo di migrazione.
 
 Una volta completato il processo di estrazione, puoi trasferire il contenuto delta utilizzando il metodo di estrazione integrativa.
 
@@ -81,8 +82,9 @@ Effettua le seguenti operazioni:
 
 1. La **Estrazione set di migrazione** viene visualizzata la finestra di dialogo. Fai clic su **Extract**.
 
-   >[!IMPORTANT]Disattiva l’opzione **Overwrite staging container during extraction** (Sovrascrivi contenitore di staging durante l’estrazione).
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >[!IMPORTANT]
+   >Disattiva l’opzione **Overwrite staging container during extraction** (Sovrascrivi contenitore di staging durante l’estrazione).
+   >![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
 
 
 ## Novità {#whats-next}
