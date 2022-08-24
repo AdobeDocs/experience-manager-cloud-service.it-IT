@@ -4,9 +4,9 @@ description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1008'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Un’implementazione dell’IDE [GraphiQL](https://graphql.org/learn/serving-ove
 >
 >GraphiQL è incluso in tutti gli ambienti di AEM (ma sarà accessibile/visibile solo quando configuri gli endpoint).
 >
->Nelle versioni precedenti, era necessario un pacchetto per installare l&#39;IDE GraphiQL. Se hai installato questa funzionalità, puoi rimuoverla.
+>Nelle versioni precedenti, era necessario un pacchetto per installare l’IDE GraphiQL. Se installato, ora è possibile rimuoverlo.
 
 >[!NOTE]
 >Prima di utilizzare l’IDE GraphiQL, devi avere [configurato gli endpoint](/help/headless/graphql-api/graphql-endpoint.md) nel [browser delle configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
@@ -31,18 +31,18 @@ Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query G
 * eseguire le query per visualizzare immediatamente i risultati;
 * gestire **variabili di query**;
 * salvare e gestire **query persistenti**;
-* pubblicare o annullare la pubblicazione, **Query persistenti** (ad esempio, a/da `dev-publish`)
+* pubblicare o annullare la pubblicazione di **query persistenti** (ad esempio, a/da `dev-publish`);
 * vedere la **cronologia** delle query precedenti;
 * utilizzare **Esplora documentazione** per accedere alla documentazione, per scoprire e comprendere i metodi disponibili.
 
 Puoi accedere all’editor delle query da:
 
 * **Strumenti** -> **Generale** -> **Editor query GraphQL**
-* direttamente; ad esempio, `http://localhost:4502/aem/graphiql.html`
+* direttamente; ad esempio `http://localhost:4502/aem/graphiql.html`
 
 ![Interfaccia di GraphiQL](assets/cfm-graphiql-interface.png "Interfaccia di GraphiQL")
 
-È possibile utilizzare GraphiQL sul sistema in modo che le query possano essere richieste dall&#39;applicazione client utilizzando le richieste GET e per la pubblicazione delle query. Per l&#39;utilizzo in produzione, potete quindi [spostare le query nell&#39;ambiente di produzione](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inizialmente devi spostarle nell’istanza Author dell’ambiente di produzione per convalidare i contenuti appena creati con le query, e infine nell’istanza Publish di produzione per l’utilizzo live.
+Puoi utilizzare GraphiQL nel tuo sistema in modo che le query possano essere richieste dall’applicazione client mediante richieste GET, nonché per pubblicarle. Per l’utilizzo in produzione, puoi quindi [spostare le query nell’ambiente di produzione](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inizialmente devi spostarle nell’istanza Author dell’ambiente di produzione per convalidare i contenuti appena creati con le query, e infine nell’istanza Publish di produzione per l’utilizzo live.
 
 ## Selezione dell’endpoint {#selecting-endpoint}
 
@@ -98,38 +98,39 @@ Esempio:
 
 ## Gestione della cache per le query persistenti {#managing-cache}
 
-[Query persistenti](/help/headless/graphql-api/persisted-queries.md) sono consigliati in quanto possono essere memorizzati nella cache ai livelli dispatcher e CDN, migliorando in ultima analisi le prestazioni dell’applicazione client richiedente. Per impostazione predefinita, AEM la cache CDN (Content Delivery Network) in base a un valore predefinito Time To Live (TTL).
+Le [query persistenti](/help/headless/graphql-api/persisted-queries.md) sono consigliate in quanto possono essere memorizzate nella cache ai livelli dispatcher e CDN, migliorando in ultima analisi le prestazioni dell’applicazione client richiedente. Per impostazione predefinita, AEM renderà non valida la cache CDN (Content Delivery Network) in base a un valore Time To Live (TTL) predefinito.
 
-Utilizzando GraphQL è possibile configurare le intestazioni della cache HTTP per controllare questi parametri per la singola query persistita.
+Utilizzando GraphQL è possibile configurare le intestazioni cache HTTP per controllare questi parametri per la singola query persistente.
 
-1. La **Intestazioni** è accessibile tramite i tre punti verticali a destra del nome della query persistente (pannello a sinistra):
+1. L’opzione **Intestazioni** è accessibile tramite i tre punti in verticale a destra del nome della query persistente (ultimo pannello a sinistra):
 
-   ![Intestazioni persistenti della cache HTTP della query](assets/cfm-graphqlapi-headers-01.png "Intestazioni persistenti della cache HTTP della query")
+   ![Intestazioni cache HTTP per query persistenti](assets/cfm-graphqlapi-headers-01.png "Intestazioni cache HTTP per query persistenti")
 
-1. Selezionando questa opzione si aprirà la **Configurazione cache** finestra di dialogo:
+1. Selezionando questa opzione si aprirà la finestra di dialogo **Configurazione cache**:
 
-   ![Impostazioni di intestazione della cache HTTP query persistente](assets/cfm-graphqlapi-headers-02.png "Impostazioni di intestazione della cache HTTP query persistente")
+   ![Impostazioni di intestazione cache HTTP per query persistenti](assets/cfm-graphqlapi-headers-02.png "Impostazioni di intestazione cache HTTP per query persistenti")
 
 1. Seleziona il parametro appropriato, quindi regola il valore come richiesto:
 
-   * **controllo della cache** - **età massima**
-Le cache possono memorizzare questo contenuto per un numero specificato di secondi. In genere si tratta del TTL del browser (Time To Live).
-   * **controllo sostitutivo** - **s-maxage**
-Uguale all’età massima, ma si applica in modo specifico alle cache proxy.
-   * **controllo sostitutivo** - **stale-while-revalidate**
-Le cache possono continuare a servire una risposta nella cache dopo che è diventata obsoleta, per un massimo di un numero specificato di secondi.
-   * **controllo sostitutivo** - **stale-if-error**
-Le cache possono continuare a fornire una risposta nella cache in caso di errore di origine o di origine, per un massimo di un numero specificato di secondi.
+   * **cache-control** - **max-age**
+Le cache possono memorizzare questo contenuto per un numero specificato di secondi. In genere si tratta del valore TTL (Time To Live) del browser.
+   * **surrogate-control** - **s-maxage**
+Uguale a max-age ma si applica in modo specifico alle cache proxy.
+   * **surrogate-control** - **stale-while-revalidate**
+Le cache possono continuare a fornire una risposta dalla cache dopo che questa è diventata obsoleta, per un massimo di un numero specificato di secondi.
+   * **surrogate-control** - **stale-if-error**
 
-1. Seleziona **Salva** per mantenere le modifiche.
+Le cache possono continuare a fornire una risposta dalla cache in caso di errore di origine, per un massimo di un numero specificato di secondi.
+
+1. Seleziona **Salva** per mantenere le modifiche persistenti.
 
 ## Pubblicazione di query persistenti {#publishing-persisted-queries}
 
-Dopo aver selezionato la query persistente dall’elenco (pannello a sinistra), puoi utilizzare le azioni **Pubblica** e **Annulla pubblicazione**. Questo li attiverà nell’ambiente di pubblicazione (ad esempio, `dev-publish`) per un facile accesso da parte delle applicazioni durante il test.
+Dopo aver selezionato la query persistente dall’elenco (pannello a sinistra), puoi utilizzare le azioni **Pubblica** e **Annulla pubblicazione**. Queste consentono di attivarle nell’ambiente di pubblicazione (ad esempio, `dev-publish`) per renderle facilmente accessibili dalle applicazioni in fase di test.
 
 >[!NOTE]
 >
->La definizione della cache della query persistente `Time To Live` {&quot;cache-control&quot;:&quot;parametro&quot;:valore} ha un valore predefinito di 2 ore (7200 secondi).
+>La definizione della cache della query persistente `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} ha un valore predefinito di 2 ore (7200 secondi).
 
 ## Copiare l’URL per accedere direttamente alla query {#copy-url}
 
