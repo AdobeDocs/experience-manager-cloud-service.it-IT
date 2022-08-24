@@ -3,9 +3,9 @@ title: '"Canale prerelease [!DNL Adobe Experience Manager] as a Cloud Service"'
 description: '"Canale prerelease [!DNL Adobe Experience Manager] as a Cloud Service"'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -29,23 +29,23 @@ Le funzioni prerelease possono essere utilizzate in diversi modi:
 
 ### Ambienti cloud {#cloud-environments}
 
-Per aggiornare un ambiente Cloud per utilizzare la versione prerelease, aggiungi una nuova [variabile di ambiente](../implementing/cloud-manager/environment-variables.md) utilizzo dell’interfaccia utente di configurazione dell’ambiente in Cloud Manager:
+Per aggiornare un ambiente Cloud in modo da utilizzare la versione prerelease, aggiungi una nuova [variabile di ambiente](../implementing/cloud-manager/environment-variables.md) mediante l’interfaccia utente di configurazione dell’ambiente in Cloud Manager:
 
-1. Passa a **Programma** > **Ambiente** > **Configurazione dell&#39;ambiente** si desidera aggiornare.
-1. Aggiungi un nuovo [variabile di ambiente](../implementing/cloud-manager/environment-variables.md):
+1. Passa a **Programma** > **Ambiente** e scegli la **Configurazione ambiente** che desideri aggiornare.
+1. Aggiungi una nuova [variabile di ambiente](../implementing/cloud-manager/environment-variables.md):
 
    | Nome | Valore | Servizio applicato | Tipo |
    |------|-------|-----------------|------|
    | `AEM_RELEASE_CHANNEL` | `prerelease` | Tutti i bundle  | Variabile |
 
-1. Salva le modifiche e l’ambiente si aggiorna quando la funzione prerelease è attivata.
+1. Salva le modifiche; l’ambiente verrà aggiornato con le funzioni prerelease attivate.
 
    ![Nuova variabile di ambiente](assets/env-configuration-prerelease.png)
 
 
-**Alternativa** puoi utilizzare l’API di Cloud Manager e CLI per aggiornare le variabili di ambiente:
+**In alternativa** puoi utilizzare l’API di Cloud Manager e la CLI per aggiornare le variabili di ambiente:
 
-* Utilizzo [Endpoint per le variabili di ambiente dell’API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), imposta le **AEM_RELEASE_CHANNEL** variabile di ambiente al valore **prerelease**.
+* Utilizzando l’[endpoint per le variabili di ambiente dell’API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), imposta la variabile di ambiente **AEM_RELEASE_CHANNEL** con il valore **prerelease**.
 
    ```
    PATCH /program/{programId}/environment/{environmentId}/variables
@@ -63,7 +63,7 @@ Per aggiornare un ambiente Cloud per utilizzare la versione prerelease, aggiungi
    ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
 
 
-La variabile può essere eliminata o impostata su un valore diverso se desideri che l’ambiente venga ripristinato al comportamento del canale normale (non pre-rilascio).
+La variabile può essere eliminata o impostata su un valore diverso se desideri che l’ambiente venga ripristinato al comportamento del canale regolare (non prerelease).
 
 ### SDK locale {#local-sdk}
 
