@@ -3,9 +3,9 @@ title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redigere e utilizzare contenuti indipendenti dalla pagina.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1164'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -182,5 +182,5 @@ Altre modifiche, come spostamento, copia, eliminazione devono essere eseguite ne
 
 I frammenti devono essere pubblicati in modo che possano essere utilizzati nelle pagine web pubblicate:
 
-* Un frammento può essere pubblicato dopo [creazione del frammento nella console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
+* Un frammento può essere pubblicato dopo che è stato [creato nella console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
 * Se in una pagina in corso di pubblicazione viene utilizzato un *frammento non pubblicato*, è possibile pubblicare anche quest’ultimo allo stesso tempo.
