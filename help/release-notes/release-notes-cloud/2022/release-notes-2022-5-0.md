@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2022.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
+exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: ht
-source-wordcount: '805'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
-
 
 # Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -58,7 +58,7 @@ Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [dist
 
 * **Integrare moduli adattivi con Microsoft® Power Automate**: ora è possibile configurare un modulo adattivo per eseguire un flusso cloud Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record al flusso cloud Power Automate per l’elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche di business sulla base dei dati acquisiti e automatizzare i flussi di lavoro dei clienti.
 
-* **Creazione guidata di un modulo adattivo**: puoi utilizzare la procedura guidata di facile utilizzo che consente all’utente aziendale di creare rapidamente moduli adattivi. La procedura guidata fornisce una navigazione rapida a schede per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati e creare un modulo adattivo.
+* **Creazione guidata di un modulo adattivo**: puoi utilizzare la procedura guidata per utenti aziendali per creare moduli adattivi in modo facile e veloce. La procedura guidata fornisce una navigazione rapida a schede per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati e creare un modulo adattivo.
 
    ![Creazione guidata di un modulo adattivo](/help/release-notes/assets/wizard.png)
 
@@ -101,4 +101,4 @@ L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui](/h
 
 ## Strumenti di migrazione {#migration-tools}
 
-L’elenco completo dei rilasci degli strumenti di migrazione è disponibile [qui](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+L’elenco completo dei rilasci mensili degli strumenti di migrazione è disponibile [qui](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
