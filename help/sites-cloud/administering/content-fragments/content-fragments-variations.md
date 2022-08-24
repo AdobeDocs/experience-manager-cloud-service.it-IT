@@ -1,7 +1,8 @@
 ---
 title: 'Varianti - Authoring dei contenuti di frammenti '
 description: Scopri come le varianti consentono di creare contenuti per il frammento, quindi di creare varianti di tale contenuto in base allo scopo. Ciò offre maggiore flessibilità sia per la distribuzione headless che per l’authoring delle pagine.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: ht
 source-wordcount: '2287'
 ht-degree: 100%
