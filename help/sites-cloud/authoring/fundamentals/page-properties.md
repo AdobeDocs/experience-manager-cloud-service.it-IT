@@ -3,9 +3,9 @@ title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1987'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -98,8 +98,8 @@ Le proprietà sono distribuite su più schede.
 
    * **Lingua**: indica la lingua della pagina
    * **Lingua root**: deve essere selezionato, se la pagina è la root di una copia in lingua
-   * **Reindirizza**: indica la pagina a cui deve essere automaticamente reindirizzata la pagina corrente con un HTML `302 Found` stato.
-      * **Reindirizzamento permanente** - Se questa opzione è selezionata, la pagina viene reindirizzata al percorso di destinazione fornito insieme a un HTML `301 Moved Permanently` stato.
+   * **Reindirizza**: indica la pagina a cui deve essere automaticamente reindirizzata la pagina corrente con uno stato HTML `302 Found`.
+      * **Reindirizzamento permanente**: se questa opzione è selezionata, la pagina viene reindirizzata al percorso di destinazione fornito, con uno stato HTML `301 Moved Permanently`.
    * **Design**: indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito risultante
    * **Alias**: specifica un alias da utilizzare per la pagina
       * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
