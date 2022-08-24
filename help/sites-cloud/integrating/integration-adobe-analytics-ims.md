@@ -4,8 +4,8 @@ description: Scopri di più sulla configurazione IMS da utilizzare per l’integ
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
 source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

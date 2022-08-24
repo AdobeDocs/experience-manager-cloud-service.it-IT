@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Implementazione di connettori per Experience Manager as a Cloud Service {#aem-connectors-guide}
 
-Scopri quali sono i connettori, ad Experience Manager as a Cloud Service, quali operazioni possono eseguire e come implementare questi preziosi strumenti in Experience Manager.
+Scopri quali sono i connettori per Experience Manager as a Cloud Service, quali operazioni possono eseguire e come implementare questi preziosi strumenti in Experience Manager.
 
 ## Articoli principali sui connettori di Experience Manager as a Cloud Service {#key-articles}
 

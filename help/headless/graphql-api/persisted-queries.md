@@ -5,8 +5,8 @@ feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 47%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,9 +16,9 @@ Le query persistenti sono query GraphQL create e memorizzate sul server di Adobe
 
 >[!NOTE]
 >
->Si consiglia di effettuare query persistenti. Vedi [Tecniche consigliate per le query GraphQL (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) per informazioni dettagliate e la relativa configurazione di Dispatcher.
+>Si consiglia di effettuare query persistenti. Consulta [Tecniche consigliate per le query GraphQL (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) per informazioni dettagliate e la relativa configurazione di Dispatcher.
 
-La [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) è disponibile in AEM per sviluppare, testare e mantenere le query GraphQL, prima di [trasferimento all&#39;ambiente di produzione](#transfer-persisted-query-production). Per i casi che richiedono personalizzazione (come la [personalizzazione della cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) puoi utilizzare l’API; vedi l’esempio curl fornito in [Persistenza di una query GraphQL](#how-to-persist-query).
+La [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) è disponibile in AEM per sviluppare, testare e mantenere le query GraphQL, prima del [trasferimento all’ambiente di produzione](#transfer-persisted-query-production). Per i casi che richiedono personalizzazione (come la [personalizzazione della cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) puoi utilizzare l’API; vedi l’esempio curl fornito in [Persistenza di una query GraphQL](#how-to-persist-query).
 
 ## Query ed endpoint persistenti {#persisted-queries-and-endpoints}
 
@@ -55,11 +55,11 @@ Si consiglia di creare le query persistenti in un ambiente di authoring AEM per 
 
 Esistono diversi metodi per le query persistenti, tra cui:
 
-* IDE GraphiQL - vedi [Salvataggio delle query persistenti](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (metodo preferito)
+* IDE GraphiQL: vedi [Salvataggio delle query persistenti](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (metodo preferito)
 * curl: vedi l’esempio seguente
 * Altri strumenti, tra cui [Postman](https://www.postman.com/)
 
-L&#39;IDE GraphiQL è il **preferito** metodo per query persistenti. Per persistere una determinata query utilizzando **arricciare** strumento della riga di comando:
+L’IDE GraphiQL è il metodo **preferito** per le query persistenti. Per rendere persistente una determinata query utilizzando lo strumento per riga di comando **cURL**:
 
 1. Prepara la query inserendola mediante il metodo PUT nel nuovo URL dell’endpoint `/graphql/persist.json/<config>/<persisted-label>`.
 
@@ -188,7 +188,7 @@ L&#39;IDE GraphiQL è il **preferito** metodo per query persistenti. Per persist
 
 ## Come eseguire una query persistente {#execute-persisted-query}
 
-Per eseguire una query persistente, un&#39;applicazione client invia una richiesta GET utilizzando la seguente sintassi:
+Per eseguire una query persistente, un’applicazione client invia una richiesta GET utilizzando la seguente sintassi:
 
 ```
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
@@ -216,11 +216,11 @@ Dove `PERSISTENT_PATH` è un percorso abbreviato in cui viene salvata la query p
        "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
 
-   Consulta la sezione [variabili di query](#query-variables) per ulteriori dettagli.
+   Per ulteriori dettagli, consulta la sezione sulle [variabili di query](#query-variables).
 
 ## Utilizzo delle variabili di query {#query-variables}
 
-Le variabili di query possono essere utilizzate con le query persistenti. Le variabili della query vengono aggiunte alla richiesta con un punto e virgola (`;`) utilizzando il nome e il valore della variabile. Le variabili multiple sono separate da punto e virgola.
+Le variabili di query possono essere utilizzate con le query persistenti. Le variabili di query aggiunte alla richiesta devono essere precedute da un punto e virgola (`;`) e devono utilizzare il nome e il valore della variabile. Se si utilizzano più variabili, queste devono essere separate da un punto e virgola.
 
 Il pattern si presenta come segue:
 
@@ -251,19 +251,19 @@ query getAdventuresByActivity($activity: String!) {
   }
 ```
 
-Questa query può essere persistente in un percorso `wknd/adventures-by-activity`. Per chiamare la query persistente dove `activity=Camping` la richiesta sarà simile alla seguente:
+Questa query può essere resa persistente in un percorso `wknd/adventures-by-activity`. Per chiamare la query persistente dove `activity=Camping`, la richiesta sarà simile alla seguente:
 
 ```
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-Tieni presente che `%3B` è la codifica UTF-8 per `;` e `%3D` è la codifica per `=`. Le variabili della query e gli eventuali caratteri speciali devono essere [codificato correttamente](#encoding-query-url) per eseguire la query persistente.
+Tieni presente che `%3B` è la codifica UTF-8 per `;` e `%3D` è la codifica per `=`. Affinché la query persistente possa essere eseguita, le variabili della query ed eventuali caratteri speciali devono essere [codificati correttamente](#encoding-query-url).
 
 ## Memorizzazione in cache delle query persistenti {#caching-persisted-queries}
 
-Le query persistenti sono consigliate in quanto possono essere memorizzate nella cache dei livelli dispatcher e CDN, migliorando in ultima analisi le prestazioni dell’applicazione client richiedente.
+Le query persistenti sono consigliate in quanto possono essere memorizzate nella cache a livello di dispatcher e CDN, il che migliora le prestazioni dell’applicazione client richiedente.
 
-Per impostazione predefinita, AEM la cache CDN (Content Delivery Network) in base a un valore predefinito Time To Live (TTL).
+Per impostazione predefinita, AEM renderà non valida la cache CDN (Content Delivery Network) in base a un valore Time To Live (TTL) predefinito.
 
 Questo valore è impostato su:
 
@@ -272,14 +272,14 @@ Questo valore è impostato su:
 * 60, TTL predefinito per il client (ad esempio, un browser)
    * impostazione predefinita: maxage=60
 
-Se desideri modificare il TTL per la query GraphLQ, la query deve essere:
+Se desideri modificare il valore TTL per la query GraphLQ, quest’ultima deve essere impostata come:
 
-* persistente dopo la gestione del [Intestazioni HTTP Cache - dall’IDE GraphQL](#http-cache-headers)
-* persistente utilizzando [Metodo API](#cache-api).
+* persistente dopo la gestione delle [intestazioni cache HTTP, dall’IDE GraphQL](#http-cache-headers);
+* persistente utilizzando il [metodo API](#cache-api).
 
-### Gestione delle intestazioni della cache HTTP in GraphQL  {#http-cache-headers-graphql}
+### Gestione delle intestazioni cache HTTP in GraphQL  {#http-cache-headers-graphql}
 
-IDE GraphiQL - vedi [Salvataggio delle query persistenti](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+GraphiQL IDE: vedi [Salvataggio delle query persistenti](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
 ### Gestione della cache dall’API {#cache-api}
 
@@ -300,7 +300,7 @@ curl -X PUT \
 
 ## Codifica dell’URL della query per l’utilizzo da parte di un’app {#encoding-query-url}
 
-Per l&#39;uso da parte di un&#39;applicazione, qualsiasi carattere speciale utilizzato per la costruzione di variabili di query (ovvero punto e virgola (`;`), segno di uguale (`=`), barre `/`) deve essere convertito per utilizzare la codifica UTF-8 corrispondente.
+Per poter essere utilizzati da un’applicazione, eventuali caratteri speciali utilizzati per creare variabili di query (come punto e virgola (`;`), segno di uguale (`=`), barra `/`) deve essere convertito nella codifica UTF-8 corrispondente.
 
 Esempio:
 
@@ -314,42 +314,42 @@ L’URL può essere suddiviso nelle seguenti parti:
 |----------| -------------|
 | `/graphql/execute.json` | Endpoint query persistente |
 | `/wknd/adventure-by-path` | Percorso query persistente |
-| `%3B` | Codifica di `;` |
+| `%3B` | Codice per `;` |
 | `adventurePath` | Variabile query |
-| `%3D` | Codifica di `=` |
-| `%2F` | Codifica di `/` |
+| `%3D` | Codice per `=` |
+| `%2F` | Codice per `/` |
 | `%2Fcontent%2Fdam...` | Percorso codificato del frammento di contenuto |
 
-In testo normale, l’URI della richiesta ha il seguente aspetto:
+Come testo normale, l’URI della richiesta si presenta così:
 
 ```plaintext
 /graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
 ```
 
-Per utilizzare una query persistente in un’app client, è necessario utilizzare l’SDK client headless AEM per [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java)oppure [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). L’SDK del client headless codificherà automaticamente tutte le variabili di query in modo appropriato nella richiesta.
+Per utilizzare una query persistente in un’app client, è necessario utilizzare l’SDK client AEM headless per [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java) oppure [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). L’SDK client headless codificherà automaticamente tutte le variabili di query in modo appropriato nella richiesta.
 
 ## Trasferimento di una query persistente all’ambiente di produzione  {#transfer-persisted-query-production}
 
-Le query persistenti devono sempre essere create su un servizio AEM Author e quindi pubblicate (replicate) in un servizio AEM Publish. Spesso, le query persistenti vengono create e testate in ambienti inferiori, come gli ambienti locali o di sviluppo. È quindi necessario promuovere le query persistenti in ambienti di livello superiore, rendendole infine disponibili in un ambiente di produzione AEM Publish per l’utilizzo da parte delle applicazioni client.
+Le query persistenti devono sempre essere create su un servizio AEM Author e quindi pubblicate (replicate) in un servizio AEM Publish. Spesso, le query persistenti vengono create e testate in ambienti inferiori, come ambienti locali o di sviluppo. È quindi necessario promuovere le query persistenti in ambienti di livello superiore, rendendole infine disponibili in un ambiente AEM Publish di produzione affinché possano essere utilizzate da parte delle applicazioni client.
 
 ### Query persistenti del pacchetto
 
-Le query persistenti possono essere incorporate in [Pacchetti AEM](/help/implementing/developing/tools/package-manager.md). AEM I pacchetti possono quindi essere scaricati e installati in ambienti diversi. AEM pacchetti possono essere replicati anche da un ambiente AEM Author agli ambienti AEM Publish.
+Le query persistenti possono essere incorporate in [Pacchetti AEM](/help/implementing/developing/tools/package-manager.md). I pacchetti AEM possono quindi essere scaricati e installati in ambienti diversi. I pacchetti AEM possono essere replicati anche da un ambiente AEM Author ad ambienti AEM Publish.
 
 Per creare un pacchetto:
 
-1. Passa a **Strumenti** > **Distribuzione** > **Pacchetti**.
-1. Crea un nuovo pacchetto toccando **Crea pacchetto**. Viene visualizzata una finestra di dialogo per la definizione del pacchetto.
-1. Nella finestra di dialogo Definizione pacchetto, in **Generale** inserire un **Nome** come &quot;query wknd-persistenti&quot;.
-1. Immettere un numero di versione simile a &quot;1.0&quot;.
-1. Sotto **Filtri** aggiungi una nuova **Filtro**. Utilizza il Finder del percorso per selezionare il `persistentQueries` sotto la configurazione. Ad esempio, per `wknd` configurazione del percorso completo `/conf/wknd/settings/graphql/persistentQueries`.
-1. Tocca **Salva** per salvare la nuova definizione del pacchetto e chiudere la finestra di dialogo.
-1. Tocca **Crea** nella definizione del pacchetto appena creata.
+1. Passa a **Strumenti** > **Implementazione** > **Pacchetti**.
+1. Per creare un nuovo pacchetto, tocca **Crea pacchetto**. Viene visualizzata una finestra di dialogo per la definizione del pacchetto.
+1. Nella finestra di dialogo Definizione pacchetto, nella sezione **Generale** inserisci un **Nome**, ad esempio “wknd-persistent-queries”.
+1. Immetti un numero di versione, ad esempio a “1.0”.
+1. Nella sezione **Filtri**, aggiungi un nuovo **Filtro**. Utilizza Trova percorso per selezionare la cartella `persistentQueries` sotto la configurazione. Ad esempio, per la configurazione `wknd` il percorso completo sarà `/conf/wknd/settings/graphql/persistentQueries`.
+1. Tocca **Salva** per salvare la definizione del nuovo pacchetto e chiudere la finestra di dialogo.
+1. Tocca **Genera** nella definizione del pacchetto appena creata.
 
 Dopo aver generato il pacchetto puoi:
 
-* **Scarica** il pacchetto e ricaricalo in un ambiente diverso.
-* **Replicare** il pacchetto toccando **Altro** > **Replicare**. Questo replicherà il pacchetto all’ambiente di pubblicazione AEM connesso.
+* **Scaricare** il pacchetto e ricaricalo in un altro ambiente.
+* **Replicare** il pacchetto toccando **Altro** > **Replica**. Il pacchetto verrà replicato nell’ambiente AEM Publish collegato.
 
 <!--
 1. Using replication/distribution tool:

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Conformità in AEM as a Cloud Service {#aem-compliance}
 
-Segui una panoramica sulla conformità in Experience Manager as a Cloud Service.
+Ottieni una panoramica sulla conformità in Experience Manager as a Cloud Service.
 
 ## Articoli principali sulla panoramica {#key-articles}
 

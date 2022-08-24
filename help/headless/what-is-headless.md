@@ -1,77 +1,77 @@
 ---
-title: Cos'è un CMS headless?
-description: Scopri di più su Headless CMS. Come funzionano? Quali sono le alternative e le differenze? Perché utilizzare un CMS headless?
+title: Cos’è un CMS headless?
+description: Scopri di più sui CMS headless. Come funzionano? Quali sono le alternative e le differenze? Perché utilizzare un CMS headless?
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
 source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Cos&#39;è un CMS headless? {#what-is-a-headless-cms}
+# Cos’è un CMS headless? {#what-is-a-headless-cms}
 
-La gestione dei contenuti headless è uno sviluppo chiave per la progettazione web di oggi che consente di separare le applicazioni front-end lato client dal sistema di gestione dei contenuti back-end. Un CMS headless è quindi responsabile dei servizi di gestione dei contenuti (back-end), insieme ai meccanismi che consentono alle applicazioni (front-end) di accedere a tali contenuti.
+La gestione dei contenuti headless è uno sviluppo chiave per la progettazione web di oggi che consente di separare le applicazioni front-end lato client dal sistema di gestione dei contenuti (CMS, content management system) back-end. Un CMS headless è quindi responsabile dei servizi di gestione dei contenuti (back-end), insieme ai meccanismi che consentono alle applicazioni (front-end) di accedere a tali contenuti.
 
-Ma cosa significa veramente questo termine? Qui offriamo un’introduzione (molto rapida) ai concetti chiave.
+Ma cosa significa veramente questo termine? Qui offriamo una rapida introduzione ai concetti chiave.
 
 ## Che cos’è un sistema di gestione dei contenuti (CMS)? {#content-management-system}
 
 Cominciamo dalle nozioni di base: cos’è un sistema di gestione dei contenuti?
 
-Un sistema di gestione dei contenuti (CMS) archivia, gestisce e distribuisce i contenuti utilizzati per fornire esperienze online.
+Un sistema di gestione dei contenuti (CMS, content management system) archivia, gestisce e distribuisce i contenuti utilizzati per fornire esperienze online.
 
 ## CMS tradizionale {#traditional-cms}
 
-In genere, un CMS include sia la funzionalità back-end per l’archiviazione e la distribuzione dei contenuti, sia la tecnologia front-end utilizzata per eseguire il rendering del markup per un’esperienza che verrà visualizzata dal browser (il livello di presentazione).
+In genere, un CMS include sia le funzionalità back-end di archiviazione e distribuzione dei contenuti, sia la tecnologia front-end utilizzata per il rendering del linguaggio markup al fine di creare l’esperienza che verrà visualizzata dal browser (il livello di presentazione).
 
-Molto potente, che offre il pieno controllo del contenuto e della formattazione, ma manca parte della flessibilità necessaria nell&#39;ambiente in rapido movimento di oggi; ad esempio, quando si interagisce con applicazioni esterne.
+Si tratta di uno strumento molto potente, che offre il pieno controllo del contenuto e della formattazione, ma a cui manca parte della flessibilità necessaria negli ambienti di oggi che richiedono elevate velocità, ad esempio nell’interazione con applicazioni esterne.
 
 ## CMS headless {#headless-cms}
 
-Con un sistema di gestione dei contenuti headless, il back-end e la front-end sono ora disaccoppiati.
+Con un sistema di gestione dei contenuti headless, il back-end e il front-end sono ora separati, o “disaccoppiati”.
 
 La parte headless è il backend del contenuto, in quanto un sistema di gestione dei contenuti headless (CMS) è un sistema di gestione dei contenuti back-end, progettato e creato esplicitamente come archivio dei contenuti che rende i contenuti accessibili tramite un’API, per la visualizzazione su qualsiasi dispositivo.
 
-Il front-end, sviluppato e gestito in modo indipendente, recupera il contenuto dal backend headless utilizzando un’API di distribuzione dei contenuti, in genere in formato JSON. Ad esempio, potrebbe trattarsi di un’applicazione React o Angular (applicazione a pagina singola (SPA)).
+Il front-end, sviluppato e gestito in modo indipendente, recupera il contenuto dal back-end headless tramite un’API di distribuzione dei contenuti, in genere in formato JSON. Ad esempio, potrebbe trattarsi di un’applicazione React o Angular (applicazione a pagina singola).
 
-Un backend CMS headless richiede in genere la struttura del contenuto, in base a un modello o a uno schema. Questo facilita le applicazioni client che richiedono il contenuto giusto per il rendering di un’esperienza. Alcuni CMS possono esporre contenuti strutturati e non strutturati in formato JSON.
+Un back-end CMS headless richiede in genere la struttura del contenuto, in base a un modello o a uno schema. Questo facilita le applicazioni client che richiedono il contenuto giusto per il rendering di un’esperienza. Alcuni CMS possono esporre contenuti strutturati e non strutturati in formato JSON.
 
-Una caratteristica chiave di questa topologia è che il contenuto servito da CMS headless in formato JSON è contenuto puro, senza informazioni di progettazione o layout. In un&#39;implementazione CMS headless, tutta la formattazione e il layout vengono mantenuti dall&#39;applicazione front-end disaccoppiata.
+Una caratteristica chiave di questa topologia è che il contenuto fornito dal CMS headless in formato JSON è contenuto puro, senza informazioni di progettazione o layout. In un’implementazione CMS headless, tutta la formattazione e il layout vengono mantenuti dall’applicazione front-end separata.
 
-Un vantaggio chiave di una topologia CMS headless è la possibilità di riutilizzare i contenuti su più canali, che possono utilizzare implementazioni frontend lato client diverse. Ciò può rendere il processo di sviluppo frontale più efficiente. Ma significa anche che il processo di sviluppo delle esperienze può diventare molto orientato al codice e all&#39;IT, con l&#39;IT che essenzialmente possiede l&#39;esperienza.
+Un vantaggio chiave di una topologia CMS headless è la possibilità di riutilizzare i contenuti su più canali, che possono utilizzare implementazioni front-end lato client diverse. Ciò può rendere il processo di sviluppo del front-end più efficiente. Ma significa anche che il processo di sviluppo delle esperienze front-end può diventare molto orientato al codice e all’IT, a tal punto che sarà l’IT a gestire l’esperienza.
 
 ## API per la distribuzione dei contenuti {#content-delivery-apis}
 
-Un CMS headless può fornire uno o più modi per esporre i contenuti ad applicazioni lato client. Nella maggior parte dei casi, API REST HTTP, API GraphQL o entrambe.
+Un CMS headless può fornire uno o più modi per esporre i contenuti ad applicazioni lato client. Nella maggior parte dei casi utilizza API REST HTTP, API GraphQL o entrambe.
 
-Anche se un’API REST può spesso sembrare un modo più semplice di richiedere il contenuto (ad esempio, fornendo JSON per tutti i contenuti che corrispondono a un criterio), in genere consegnano troppo contenuto a un’applicazione client. Questo può comportare la necessità da parte del client di analizzare e filtrare il contenuto effettivamente necessario per il rendering.
+Anche se un’API REST può spesso sembrare un modo più semplice di richiedere il contenuto (ad esempio, fornendo JSON per tutti i contenuti che corrispondono a un criterio), in genere consegna troppo contenuto a un’applicazione client. Questo può comportare la necessità da parte del client di analizzare e filtrare il contenuto effettivamente necessario per il rendering.
 
-GraphQL per contrasto è un meccanismo più mirato per consentire alle applicazioni client di eseguire query per individuare esattamente il contenuto necessario per eseguire il rendering di un’esperienza.
+GraphQL, al contrario, si basa su un meccanismo più mirato che consente alle applicazioni client di richiedere esattamente il contenuto necessario per riprodurre un’esperienza.
 
 ## CMS full-stack {#fullstack-cms}
 
-Un CMS Full-Stack solitamente rappresenta la topologia tradizionale per la gestione e la distribuzione dei contenuti, includendo la tecnologia di back-end e front-end per le esperienze di rendering. La distribuzione dei contenuti in CMS con stack completo si verifica solitamente rispetto alle API di distribuzione dei contenuti interne. La funzionalità front-end è tipicamente specifica per il CMS completo. Questa combinazione di tecnologia front-end e content back-end consente di ottenere l&#39;authoring di esperienze WYSIWYG (What-you-see-is-what-you-get) come vantaggio chiave.
+Un CMS full-stack solitamente rappresenta la topologia tradizionale per la gestione e la distribuzione dei contenuti, includendo la tecnologia di back-end e front-end per la riproduzione delle esperienze. La distribuzione dei contenuti in CMS full-stack si verifica solitamente rispetto alle API di distribuzione dei contenuti interne. La funzionalità front-end è tipicamente specifica per il CMS full-stack. Questa combinazione di tecnologia front-end con back-end di contenuto offre il vantaggio chiave di consentire la creazione di esperienze WYSIWYG (What-you-see-is-what-you-get).
 
 ## CMS ibrido {#hybrid-cms}
 
-Una moderna evoluzione del CMS a pieno stack può essere un CMS ibrido. L&#39;obiettivo è quello di combinare il meglio di entrambi i mondi:
+Una moderna evoluzione del CMS full-stack può essere il CMS ibrido. L’obiettivo è quello di combinare il meglio di entrambi i mondi:
 
-* sviluppo frontale efficiente su tutti i canali utilizzando strumenti frontend moderni,
-* mantenendo al tempo stesso l’authoring di esperienze WYSIWYG per consentire agli utenti non tecnici e per evitare che l’IT diventi un collo di bottiglia per la gestione di contenuti ed esperienze tra organizzazioni diverse.
+* uno sviluppo front-end efficiente su tutti i canali utilizzando strumenti moderni,
+* mantenendo al tempo stesso un approccio WYSIWYG alla creazione delle esperienze, per rendere autonomi gli utenti non tecnici ed evitare colli di bottiglia all’IT per la gestione di contenuti ed esperienze tra organizzazioni diverse.
 
-Ciò si ottiene adottando framework frontend moderni come React, mantenendo però un minimo essenziale di associazione con il back-end dei contenuti.
+Ciò si ottiene adottando framework front-end moderni come React, mantenendo però un minimo essenziale di associazione con il back-end dei contenuti.
 
 ## CMS disaccoppiato {#decoupled-cms}
 
-Mentre il termine CMS disaccoppiato a volte viene utilizzato indipendentemente, essenzialmente descrive un backend CMS headless sottolineando la sua caratteristica chiave di essere disaccoppiato dall&#39;applicazione front-end lato client.
+Mentre il termine CMS disaccoppiato a volte viene utilizzato indipendentemente, in pratica descrive un back-end CMS headless sottolineandone la caratteristica chiave di essere separato dall’applicazione front-end lato client.
 
 ## CMS headful {#headful-cms}
 
-Questo è un altro termine per un CMS tradizionale.
+Questo è un altro termine che indica un CMS tradizionale.
 
 ## Ulteriori informazioni {#further-reading}
 
-Ulteriori informazioni sull&#39;utilizzo di AEM in una topologia CMS headless:
+Per ulteriori informazioni sull’utilizzo di AEM in una topologia CMS headless, consulta:
 
-* [Introduzione ad Adobe Experience Manager as a Headless CMS](/help/headless/introduction.md)
+* [Introduzione ad Adobe Experience Manager come CMS headless](/help/headless/introduction.md)

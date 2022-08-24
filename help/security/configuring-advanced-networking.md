@@ -4,8 +4,8 @@ description: Scopri come configurare funzionalità di rete avanzate come VPN o u
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -68,11 +68,11 @@ L’API dovrebbe rispondere in pochi secondi, indicando lo stato di aggiornament
 
 È possibile aggiornare le regole di inoltro delle porte per ambiente richiamando nuovamente l’endpoint `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`, assicurandosi di includere l’intero set di parametri di configurazione, anziché un sottoinsieme.
 
-### Disabilitazione dell&#39;avanzamento della porta flessibile {#disabling-flexible-port-egress-provision}
+### Disabilitazione dell’uscita con porta flessibile {#disabling-flexible-port-egress-provision}
 
-Al fine di **disabilitare** l’uscita di porta flessibile da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Al fine di **disabilitare** l’uscita con porta flessibile da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
-Per ulteriori informazioni sulle API, consulta la sezione [Documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Per ulteriori informazioni sulle API, consulta la [documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Routing del traffico {#flexible-port-egress-traffic-routing}
 
@@ -201,11 +201,11 @@ Oltre alle regole di routing supportate dall’uscita da porta flessibile nell�
 
 Quando si decide tra uscita da porta flessibile e indirizzo IP in uscita dedicato, i clienti devono scegliere la prima soluzione se non è necessario un indirizzo IP specifico, poiché Adobe può ottimizzare le prestazioni del traffico in uscita da porta flessibile.
 
-### Disattivazione dell&#39;indirizzo IP Egress dedicato {#disabling-dedicated-egress-IP-address}
+### Disabilitazione indirizzo IP di uscita dedicato {#disabling-dedicated-egress-IP-address}
 
-Al fine di **disable** Indirizzo IP Egress dedicato da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Per **disabilitare** l’indirizzo IP di uscita dedicato da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
-Per ulteriori informazioni sulle API, consulta la sezione [Documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Per ulteriori informazioni sulle API, consulta la [documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Routing del traffico {#dedcated-egress-ip-traffic-routing}
 
@@ -496,7 +496,7 @@ Il diagramma seguente fornisce una rappresentazione visiva di un insieme di domi
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>IP del traffico proveniente dal lato AEM della VPN verso il lato cliente. Questo può essere aggiunto all’elenco Consentiti nella configurazione del cliente per garantire che le connessioni possano essere effettuate solo da AEM.</td>
-    <td>Se il cliente desidera consentire l’accesso VPN a AEM, deve configurare le voci DNS CNAME per mappare il proprio dominio personalizzato e/o <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> e/o <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> a questo.</td>
+    <td>Se il cliente desidera consentire l’accesso VPN ad AEM, deve configurare le voci DNS CNAME per mappare il proprio dominio personalizzato e/o <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> e/o <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> a questo oggetto.</td>
   </tr>
 </tbody>
 </table>
@@ -516,25 +516,25 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
-## Eliminazione dell&#39;infrastruttura di rete di un programma {#deleting-network-infrastructure}
+## Eliminazione dell’infrastruttura di rete di un programma {#deleting-network-infrastructure}
 
-A **delete** infrastruttura di rete per un programma, richiamare `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+Per **eliminare** l’infrastruttura di rete per un programma, richiama `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
 
 >[!NOTE]
 >
-> Elimina eliminerà l&#39;infrastruttura solo se tutte le reti avanzate sono disabilitate.
+> Il comando Elimina eliminerà l’infrastruttura solo se tutte le reti avanzate sono disabilitate.
 
 ## Transizione tra tipi di rete avanzati {#transitioning-between-advanced-networking-types}
 
-È possibile migrare tra tipi di rete avanzati seguendo la seguente procedura:
+È possibile migrare tra tipi di rete avanzate seguendo questa procedura:
 
-* disattivare la rete avanzata in tutti gli ambienti
-* eliminare l&#39;infrastruttura di rete avanzata
-* ricreare le informazioni di rete avanzate con i valori corretti
-* riabilitazione della rete avanzata a livello di ambiente
+* Disabilita la rete avanzata in tutti gli ambienti.
+* Elimina l’infrastruttura di rete avanzata.
+* Crea di nuovo le infrastrutture di rete avanzata con i valori corretti.
+* Abilita di nuovo la rete avanzata a livello di ambiente.
 
 >[!WARNING]
 >
-> Questa procedura comporterà un downtime dei servizi di rete avanzati tra eliminazione e ricreazione
+> Questa procedura comporterà un downtime dei servizi di rete avanzata tra eliminazione e ricreazione.
 
-Se i tempi di inattività potrebbero causare un impatto significativo sulle attività aziendali, contattare l&#39;assistenza clienti per descrivere cosa è già stato creato e il motivo del cambiamento.
+Se i tempi di inattività dovessero avere un impatto significativo sulle attività aziendali, contatta l’Assistenza clienti e descrivi cosa è già stato creato e il motivo del cambiamento.

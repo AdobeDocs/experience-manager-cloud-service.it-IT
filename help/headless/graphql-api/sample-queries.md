@@ -5,8 +5,8 @@ feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 7e89ac3f575082d19e509ca133500b71070cc605
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -1576,7 +1576,7 @@ Per le query di esempio, verranno utilizzati i seguenti modelli di contenuto e l
 
 * [Azienda](#model-company)
 -> [Utente](#model-person)
-    -> [Riconoscimento](#model-award)
+-> [Riconoscimento](#model-award)
 
 * [Città](#model-city)
 

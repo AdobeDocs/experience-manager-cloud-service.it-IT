@@ -4,8 +4,8 @@ description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Clou
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -359,11 +359,11 @@ Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML s
 >
 >Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere ai contenuti del frammento esperienza direttamente dall’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
-## Pubblicazione di frammenti esperienza {#publishing-experience-fragments}
+## Pubblicazione di frammenti di esperienza {#publishing-experience-fragments}
 
-La pubblicazione del frammento esperienza è fondamentalmente identica a [pubblicazione di una pagina](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (dalla console o dall’editor Frammenti esperienza).
+La pubblicazione di un frammento di esperienza è fondamentalmente identica alla [pubblicazione di una pagina](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (ma viene eseguita dalla console o dall’editor frammenti di esperienza).
 
-In alternativa è possibile [pubblica in anteprima](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (di nuovo dalla console o dall’editor Frammenti esperienza).
+In alternativa è possibile [pubblicare in anteprima](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (di nuovo dalla console o dall’editor frammenti di esperienza).
 
 ## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
 

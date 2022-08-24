@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-Questa pagina fornisce un elenco completo di tutte le risorse di supporto di AEM Cloud Services . Risposte al tuo [!DNL AEM Sites as a Cloud Service] domande.
+Questa pagina fornisce un elenco completo di tutte le risorse di supporto di AEM Cloud Services. Trova le risposte alle tue domande su [!DNL AEM Sites as a Cloud Service].
 
 ## Articoli principali su Sites {#key-articles}
 

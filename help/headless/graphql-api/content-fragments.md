@@ -5,8 +5,8 @@ feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
 workflow-type: tm+mt
-source-wordcount: '2708'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -105,18 +105,18 @@ Puoi anche eseguire le seguenti operazioni:
 
 * [Query persistenti memorizzate nella cache](/help/headless/graphql-api/persisted-queries.md)
 
-### Tecniche consigliate per le query GraphQL (Dispatcher) {#graphql-query-best-practices}
+### Best Practice per le query GraphQL (Dispatcher) {#graphql-query-best-practices}
 
-La [Query persistenti](/help/headless/graphql-api/persisted-queries.md) sono il metodo consigliato come:
+Le [query persistenti](/help/headless/graphql-api/persisted-queries.md) sono il metodo consigliato, dato che:
 
-* sono memorizzati nella cache
-* sono gestite centralmente da AEM as a Cloud Service
+* vengono memorizzate nella cache;
+* sono gestite centralmente da AEM as a Cloud Service.
 
-Le query dirette e/o POST non sono consigliate in quanto non sono memorizzate nella cache, pertanto in un’istanza predefinita Dispatcher è configurato per bloccare tali query.
+Le query dirette e/o POST non sono consigliate in quanto non sono memorizzate nella cache; pertanto, in un’istanza predefinita, Dispatcher è configurato per bloccarle.
 
 >[!NOTE]
 >
->Per consentire query dirette e/o POST in Dispatcher, è possibile chiedere all’amministratore di sistema di:
+>Per consentire query dirette e/o POST in Dispatcher, puoi chiedere all’amministratore di sistema di:
 >
 >* Creare una variabile di ambiente Cloud Manager denominata `ENABLE_GRAPHQL_ENDPOINT`
 >* con il valore `true`
@@ -124,7 +124,7 @@ Le query dirette e/o POST non sono consigliate in quanto non sono memorizzate ne
 
 >[!NOTE]
 >
->In futuro, la capacità di eseguire query dirette potrebbe risultare obsoleta.
+>In futuro, la capacità di eseguire query dirette potrebbe diventare obsoleta.
 
 ### IDE GraphiQL {#graphiql-ide}
 

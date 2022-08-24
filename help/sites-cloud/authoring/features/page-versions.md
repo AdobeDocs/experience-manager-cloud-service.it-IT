@@ -4,8 +4,8 @@ description: Creare, confrontare e ripristinare le versioni di una pagina
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -115,6 +115,7 @@ Questo metodo può essere utilizzato per ripristinare versioni di pagine specifi
    >Se:
    >* hai selezionato una singola pagina che non ha mai avuto pagine figlie,
    >* o nessuna delle pagine della cartella dispone di versioni,
+
    >
    >Il display sarà quindi vuoto in quanto non sono disponibili versioni applicabili.
 

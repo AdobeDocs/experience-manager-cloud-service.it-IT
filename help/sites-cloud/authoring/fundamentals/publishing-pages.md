@@ -4,8 +4,8 @@ description: Come pubblicare e annullare la pubblicazione di pagine con AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1791'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Puoi anche pubblicare o annullare la pubblicazione di una pagina immediatamente 
 
 >[!NOTE]
 >
->La pubblicazione di un frammento esperienza segue sostanzialmente la stessa procedura utilizzata per la pubblicazione di una pagina, dalla console o dall’editor Frammenti esperienza.
+>La pubblicazione di un frammento di esperienza segue sostanzialmente la stessa procedura utilizzata per la pubblicazione di una pagina, ma dalla console o dall’editor Frammenti di esperienza.
 
 ## Terminologia {#terminology}
 

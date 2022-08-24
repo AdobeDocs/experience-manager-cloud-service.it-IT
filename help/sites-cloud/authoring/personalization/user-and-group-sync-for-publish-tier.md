@@ -4,8 +4,8 @@ description: Scopri di più su Registrazione, Accesso, Dati utente e Sincronizza
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ I clienti possono utilizzare l’autenticazione basata su SAML tramite il propri
 >
 >Solo l’autenticazione iniziale delle credenziali dell’utente viene autenticata dall’IdP e le richieste successive a AEM vengono eseguite utilizzando un cookie token di accesso AEM, purché il cookie sia disponibile.
 
-Consulta la documentazione per ulteriori informazioni sul [Gestore autenticazione SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
+Consulta la documentazione per ulteriori informazioni sul [Gestore autenticazione SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=it).
 
 **OAuth/SSO**
 
