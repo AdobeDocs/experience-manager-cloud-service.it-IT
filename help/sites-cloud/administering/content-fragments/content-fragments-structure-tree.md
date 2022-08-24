@@ -1,7 +1,8 @@
 ---
 title: Struttura dei frammenti di contenuto
 description: Utilizza la funzione Struttura dell’Editor frammenti di contenuto in AEM per comprendere meglio i contenuti headless.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: 7e55d7b7-3a82-4665-b4aa-9b47094d91c9
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: ht
 source-wordcount: '112'
 ht-degree: 100%
