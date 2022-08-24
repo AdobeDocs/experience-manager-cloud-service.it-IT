@@ -3,9 +3,9 @@ title: Supporto per i cookie SameSite per Adobe Experience Manager as a Cloud Se
 description: Supporto per i cookie SameSite per Adobe Experience Manager as a Cloud Service
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ Per ovviare a questo problema, è necessario impostare l’attributo per cookie 
 
 >[!CAUTION]
 >
->La `SameSite=None` viene applicata solo se il protocollo è protetto (HTTPS).
+>L’impostazione `SameSite=None` viene applicata solo se il protocollo è protetto (HTTPS).
 >
->Se il protocollo non è protetto (HTTP), l&#39;impostazione viene ignorata e il server visualizza questo messaggio WARN:
+>Se il protocollo non è protetto (HTTP), l’impostazione viene ignorata e il server persenta questo messaggio di avvertenza:
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 
-Puoi aggiungere l’impostazione seguendo i passaggi seguenti:
+Per aggiungere l’impostazione, segui questi passaggi:
 
 1. Installa localmente una versione QuickStart per SDK AEM
 1. Passa alla console Web all’indirizzo `http://serveraddress:serverport/system/console/configMgr`
