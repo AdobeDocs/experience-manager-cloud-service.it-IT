@@ -3,8 +3,8 @@ title: Distribuire il tema personalizzato
 description: Scopri come distribuire il tema del sito utilizzando la pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: tm+mt
-source-wordcount: '1027'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
