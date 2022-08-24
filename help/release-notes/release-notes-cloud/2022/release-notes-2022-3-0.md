@@ -1,13 +1,13 @@
 ---
-title: Note sulla versione 2022.3.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione 2022.3.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 5d0f6fb726527434c57dc058bcf3a7b9d512b551
-workflow-type: tm+mt
+title: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
+source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
-
 
 # Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -34,9 +34,9 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Sites] {#prerelease-features-sites}
 
-* I tipi di dati del modello di contenuto possono ora essere definiti come traducibili utilizzando una semplice casella di controllo nell’editor del modello di contenuto. Inoltre, AEM regole di traduzione e configurazioni vengono aggiornate automaticamente.
+* I tipi di dati del modello di contenuto possono ora essere definiti come traducibili utilizzando una semplice casella di controllo nell’editor dei modelli di contenuto. Inoltre, le regole di traduzione e le configurazioni di AEM vengono aggiornate automaticamente.
 
-## [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
@@ -54,9 +54,9 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Assets] {#prerelease-features-assets}
 
-* Ora puoi [ordinare tag](/help/assets/organize-assets.md#use-tags-to-organize-assets) nella finestra del selettore tag in ordine crescente o decrescente in base al nome del tag, alla data di creazione o alla data di modifica.
+* Ora puoi [ordinare i tag](/help/assets/organize-assets.md#use-tags-to-organize-assets) nella finestra del selettore dei tag in ordine crescente o decrescente in base al nome del tag, alla data di creazione o alla data di modifica.
 
-## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
@@ -83,7 +83,7 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 * Gestione semplificata della configurazione CIF e della gestione degli errori utilizzando il nome della configurazione cloud CIF anziché l’URL proxy
 * Selezione manuale della categoria per l’elenco dei prodotti e i componenti Carosello. Questo consente agli utenti del contenuto di utilizzare questi componenti sulle pagine di contenuto, al di fuori dell’esperienza del catalogo
 
-### Nuove funzioni disponibili nel canale di prerelease CIF {#prerelease-features-cif}
+### Nuove funzioni disponibili nel canale prerelease CIF {#prerelease-features-cif}
 
 * supporto per i componenti core di ricerca CIF di AEM Commerce LiveSearch
 
@@ -99,11 +99,11 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
 * Le attività di manutenzione dell’eliminazione della versione e del registro di controllo, che non erano state precedentemente abilitate, verranno abilitate per i nuovi ambienti. Vedi i valori associati nell’articolo [Attività di manutenzione](/help/operations/maintenance.md).
 
-* Gli strumenti di Dispatcher SDK in AEM as a Cloud Service ora supportano i computer Mac con il chip M1
+* Gli strumenti di Dispatcher SDK in AEM as a Cloud Service ora supportano i computer Mac con il chip M1.
 
 ## Cloud Manager {#cloud-manager}
 
-È possibile trovare un elenco completo delle versioni mensili di Cloud Manager [qui](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
 ## Strumento Trasferimento contenuti {#ctt-release}
 
