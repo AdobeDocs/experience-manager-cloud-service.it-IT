@@ -1,9 +1,10 @@
 ---
 title: Utilizzo di frammenti di contenuto
 description: Scopri in che modo i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring e la distribuzione headless.
-source-git-commit: 6de4120a5b8b312ca1a665b7d7ef7686670c4997
+exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: ht
-source-wordcount: '2068'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
