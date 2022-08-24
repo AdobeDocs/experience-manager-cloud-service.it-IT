@@ -3,9 +3,9 @@ title: Abilitare AEM Screens per il tuo sito demo
 description: Scopri i passaggi per abilitare l’esperienza completa di AEM Screens as a Cloud Service sul tuo sito demo.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2671'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -296,7 +296,7 @@ Innanzitutto devi pubblicare il contenuto demo di Screens in AEM Screens as a Cl
 
    ![Crea visualizzazione](assets/create-display.png)
 
-1. Dopo aver creato la visualizzazione, fare clic sul nome della visualizzazione per aprire la schermata dei dettagli della visualizzazione. È necessario assegnare alla visualizzazione un canale sincronizzato dal sito demo. Fai clic su **Assegna canale** in alto a destra dello schermo.
+1. Dopo aver creato la visualizzazione, fai clic sul nome per aprire la schermata dei dettagli della visualizzazione. È necessario assegnare alla visualizzazione un canale sincronizzato dal sito demo. Fai clic su **Assegna canale** in alto a destra dello schermo.
 
    ![Dettaglio canale](assets/channel-detail.png)
 
