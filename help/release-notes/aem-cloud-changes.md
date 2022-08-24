@@ -3,9 +3,9 @@ title: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Clo
 description: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '846'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Le principali differenze riguardano le seguenti aree:
 
 * [/apps e /libs non sono modificabili in fase di esecuzione](#apps-libs-immutable)
 
-* [I bundle e le configurazioni OSGi devono essere trattati come codice](#osgi)
+* [I bundle e le configurazioni OSGi devono essere trattate come codice](#osgi)
 
 * [Non sono consentite modifiche all’archivio di pubblicazione](#changes-to-publish-repo)
 
@@ -54,7 +54,7 @@ Tutti i contenuti e le sottocartelle in `/apps` e `/libs` sono di sola lettura. 
 
 * Non sono consentite modifiche in `/libs`.
    * Questa non è una nuova regola, ma non veniva applicata nelle versioni on-premise precedenti di AEM.
-* Sovrapposizioni per le aree in `/libs` che possono essere sovrapposti sono ancora consentiti entro `/apps`.
+* Le sovrapposizioni per le aree in `/libs` in cui è consentita la sovrapposizione sono ancora consentite in `/apps`.
    * Tali sovrapposizioni devono provenire da Git tramite la pipeline CI/CD.
 * Le informazioni di progettazione dei modelli statici memorizzate in `/apps` non possono essere modificate tramite l’interfaccia.
    * In alternativa, puoi sfruttare i modelli modificabili.
@@ -62,14 +62,14 @@ Tutti i contenuti e le sottocartelle in `/apps` e `/libs` sono di sola lettura. 
 * Le configurazioni di rollout di blueprint MSM e MSM personalizzato devono essere installate da Git tramite la pipeline CI/CD.
 * Le modifiche per la traduzione I18N devono provenire da Git tramite la pipeline CI/CD.
 
-## I bundle e le configurazioni OSGi devono essere trattati come codice {#osgi}
+## I bundle e le configurazioni OSGi devono essere trattate come codice {#osgi}
 
 Le modifiche ai bundle e alle configurazioni OSGi devono essere introdotte tramite la pipeline CI/CD.
 
-* I bundle OSGi nuovi o aggiornati devono essere introdotti tramite Git tramite la pipeline CI/CD.
+* I bundle OSGi nuovi o aggiornati devono essere introdotti tramite Git mediante la pipeline CI/CD.
 * Le modifiche alle configurazioni OSGi possono provenire solo da Git tramite la pipeline CI/CD.
 
-La console Web, utilizzata nelle versioni precedenti di AEM per modificare i bundle e le configurazioni di OSGi, non è disponibile in AEM Cloud Service.
+La console Web, utilizzata nelle versioni precedenti di AEM per modificare i bundle e le configurazioni OSGi, non è disponibile in AEM Cloud Service. 
 
 ## Non sono consentite modifiche all’archivio di pubblicazione {#changes-to-publish-repo}
 
@@ -118,4 +118,4 @@ Per la transizione dei progetti da AMS o da un’installazione on-premise, Adobe
 
 ## Gestione e distribuzione delle risorse {#asset-handling}
 
-Il caricamento, l’elaborazione e il download delle risorse sono ottimizzati in [!DNL Experience Manager Assets] come [!DNL Cloud Service]. [!DNL Assets] è ora più efficiente, consente una maggiore scalabilità e offre velocità di caricamento e download molto più elevate. Inoltre, influisce sul codice personalizzato esistente e su alcune operazioni. Per un elenco delle modifiche e per il livello di parità con le funzioni di [!DNL Experience Manager] 6.5, vedi le [modifiche apportate a [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Il caricamento, l’elaborazione e il download delle risorse sono ottimizzati in [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] è ora più efficiente, consente una maggiore scalabilità e offre velocità di caricamento e download molto più elevate. Inoltre, influisce sul codice personalizzato esistente e su alcune operazioni. Per un elenco delle modifiche e per il livello di parità con le funzioni di [!DNL Experience Manager] 6.5, vedi le [modifiche apportate a [!DNL Assets]](/help/assets/assets-cloud-changes.md).
