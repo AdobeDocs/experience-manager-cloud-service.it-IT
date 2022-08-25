@@ -2,9 +2,9 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare Logging per AEM as a Cloud Service per configurare parametri globali per il servizio di registrazione centrale, impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
+source-git-commit: 690939074570fb5285f242fe8d782380cfa5abc1
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2324'
 ht-degree: 3%
 
 ---
@@ -524,7 +524,7 @@ Per recuperare i registri:
    * Log degli errori del server web HTTPD di Apache `httpd_error.log`
    * Log di Dispatcher - `dispatcher.log`
 
-I registri vengono inoltre stampati direttamente nell&#39;uscita terminale. Nella maggior parte dei casi, questi log devono essere DEBUG, che può essere realizzato passando il livello Debug come parametro durante l&#39;esecuzione di Docker. Ad esempio:
+I registri vengono inoltre stampati direttamente nell&#39;uscita terminale. Nella maggior parte dei casi, questi log devono essere DEBUG, che può essere realizzato passando il livello Debug come parametro durante l&#39;esecuzione di Docker. Esempio:
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
@@ -549,7 +549,7 @@ La larghezza di banda di rete associata ai log inviati a Splunk è considerata p
 
 Nella richiesta di assistenza, i clienti devono indicare:
 
-* Indirizzo endpoint HEC Splunk
+* Indirizzo dell&#39;endpoint HEC Splunk. Questo endpoint deve avere un certificato SSL valido
 * Indice Splunk
 * Porta Splunk
 * Il token Splunk HEC. Vedi [questa pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) per ulteriori informazioni.
