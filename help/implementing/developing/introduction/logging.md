@@ -2,9 +2,9 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare Logging per AEM as a Cloud Service per configurare parametri globali per il servizio di registrazione centrale, impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 690939074570fb5285f242fe8d782380cfa5abc1
+source-git-commit: 197bff164df83788b4b8b16ba4c7a82021f86002
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2334'
 ht-degree: 3%
 
 ---
@@ -560,7 +560,7 @@ Le proprietà di cui sopra devono essere specificate per ciascuna combinazione d
 >
 >L&#39;inoltro di Splunk per ambienti di programmi sandbox non è supportato.
 
-Assicurati che la richiesta iniziale includa tutti gli ambienti di sviluppo che devono essere abilitati, oltre agli ambienti stage/prod.
+Assicurati che la richiesta iniziale includa tutti gli ambienti di sviluppo che devono essere abilitati, oltre agli ambienti stage/prod. Splunk deve avere un certificato SSL ed essere pubblico.
 
 Se dopo la richiesta iniziale sono stati creati nuovi ambienti di sviluppo per cui è previsto l’inoltro Splunk, ma non è stato abilitato , è necessario effettuare una richiesta aggiuntiva.
 
