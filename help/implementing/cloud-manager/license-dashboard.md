@@ -1,15 +1,15 @@
 ---
-title: Dashboard di licenza
+title: Dashboard della licenza
 description: Cloud Manager fornisce una dashboard per visualizzare facilmente le adesioni ai prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
+source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 1%
+source-wordcount: '787'
+ht-degree: 4%
 
 ---
 
-# Dashboard di licenza {#license-dashboard}
+# Dashboard della licenza {#license-dashboard}
 
 Cloud Manager fornisce una dashboard per visualizzare facilmente le adesioni ai prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
 
@@ -28,11 +28,11 @@ Per accedere al dashboard delle licenze, segui questi passaggi.
 >
 >Un utente in **Proprietario business** per visualizzare il dashboard della licenza è necessario accedere al ruolo.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione appropriata.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
 1. Nella pagina di panoramica dei prodotti , passa alla pagina **Licenza** scheda .
 
-![Dashboard di licenza](assets/license-dashboard.png)
+![Dashboard della licenza](assets/license-dashboard.png)
 
 Il dashboard è diviso in tre sezioni che ti mostrano:
 
@@ -67,35 +67,21 @@ Le richieste di contenuto vengono tracciate sui server perimetrali AEM as a Clou
 
 AEM inoltre ha delle regole per escludere bot ben noti, tra cui servizi noti che visitano regolarmente il sito per aggiornare il loro indice di ricerca o servizio.
 
-Di seguito è riportato un elenco non esaustivo di esempi di servizi noti esclusi.
-
-* AddSearchBot
-* AhrefsBot
-* Applebot
-* Chiedi a Jeeves ragno aziendale
-* Bingbot
-* Anteprima bing
-* BLEXBot
-* BuiltWith
-* Bytespider
-* CrawlerKengo
-* Facebookexternalhit
-* Google AdsBot
-* Google AdsBot Mobile
-
 ### Perché il mio rapporto di Analytics mostra risultati diversi rispetto alle richieste di contenuto AEM? {#why-are-reports-different}
 
-Le richieste di contenuto avranno varianze con gli strumenti di reporting di Analytics di un’organizzazione, come riepilogato in questa tabella.
+Le richieste di contenuto avranno varianze con gli strumenti di reporting di Analytics di un&#39;organizzazione, come riepilogato in questa tabella.
 
 | Motivo della varianza | Spiegazione |
 |---|---|
-| Assegnazione tag | Tutte le pagine tracciate come richieste di contenuto AEM possono o meno essere contrassegnate con il tracciamento di Analytics.<br>Tutte le chiamate API tracciate come richieste di contenuto AEM non saranno taggate dallo strumento Analytics di un&#39;organizzazione.<br>Le pagine o le chiamate API possono essere taggate per tenere traccia delle azioni invece che delle visualizzazioni. |
+| Assegnazione tag | Tutte le pagine tracciate come richieste di contenuto AEM possono o meno essere contrassegnate con il tracciamento di Analytics. Tutte le chiamate API tracciate come richieste di contenuto AEM non saranno taggate dallo strumento Analytics di un&#39;organizzazione.<br>Le pagine o le chiamate API possono essere taggate per tenere traccia delle azioni o solo delle visualizzazioni di pagina univoche invece di tutte le visualizzazioni. |
 | Regole Tag Management | Le impostazioni delle regole di gestione dei tag possono comportare diverse configurazioni di raccolta dati su una pagina, con conseguente combinazione di discrepanze con il tracciamento delle richieste di contenuto. |
 | Bot | I bot sconosciuti che non sono stati pre-identificati e rimossi da AEM possono causare discrepanze nel tracciamento. |
 | Suite per report | Le pagine che fanno parte della stessa istanza AEM e dello stesso dominio possono inviare dati a suite di rapporti Analytics diverse. |
 | Strumenti di monitoraggio e sicurezza di terze parti | Gli strumenti di monitoraggio e scansione della sicurezza possono generare richieste di contenuto per AEM che non sono monitorate nei rapporti di Analytics. |
 | Richieste di preacquisizione | L’utilizzo di un servizio di preacquisizione per precaricare le pagine per aumentare la velocità può causare un aumento significativo del traffico della richiesta di contenuto. |
-| DDOS | Mentre Adobe fa ogni sforzo per rilevare e filtrare automaticamente il traffico dagli attacchi DDOS, non c&#39;è alcuna garanzia che tutti i possibili attacchi DDOS vengano rilevati. |
+| DDOS | Sebbene l&#39;Adobe faccia ogni sforzo per rilevare e filtrare automaticamente il traffico dagli attacchi DDOS, non c&#39;è alcuna garanzia che tutti i possibili attacchi DDOS vengano rilevati |
+| Blocchi di traffico | L&#39;utilizzo di un tracker blocker in un browser può negare il tracciamento di alcune richieste. |
+| Firewall | I firewall possono bloccare il tracciamento di Analytics. Ciò è più frequente con i firewall aziendali. |
 
 ### Cosa succede se uso la mia rete CDN? {#using-own-cdn}
 
