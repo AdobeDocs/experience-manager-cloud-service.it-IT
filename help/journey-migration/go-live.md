@@ -2,9 +2,9 @@
 title: Go-Live
 description: Scopri come eseguire la migrazione quando il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1718'
 ht-degree: 1%
 
 ---
@@ -144,6 +144,7 @@ Controlla questo elenco di attività per assicurarti di eseguire una migrazione 
          * [Introduzione alla gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [Gestione del certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Gestione dei nomi di dominio personalizzati (DNS)
+         * Per assicurarti che il cutover DNS non presenti problemi imprevisti, è consigliabile creare un sottodominio di prova a cui collegare l’istanza di produzione prima di iniziare il ciclo di vita e di eseguire un ciclo di test UAT. Quindi se il tuo dominio è example.com, puoi creare un sottodominio test.example.com e applicarlo alla produzione. Durante il test UAT del dominio dovrai cercare cose come il corretto reindirizzamento dei collegamenti, la memorizzazione in cache e le configurazioni del dispatcher.
          * [Introduzione ai nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [Gestione del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
