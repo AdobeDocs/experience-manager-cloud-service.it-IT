@@ -2,10 +2,10 @@
 title: 'Introduzione ai programmi sandbox '
 description: Scopri quali programmi sandbox differiscono dai programmi di produzione.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 05cba12cdd14c2e29f6a471047ce95fcf720abc4
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 0%
+source-wordcount: '437'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ Un programma sandbox è uno dei due tipi di programmi disponibili in AEM Cloud S
 I programmi sandbox dispongono di creazione automatica. Ogni volta che crei un nuovo programma sandbox, Cloud Manager automaticamente:
 
 * Aggiunge AEM Sites e AEM Assets come soluzioni nel programma.
-* Imposta un archivio Git del progetto con un progetto di esempio basato su [AEM Archetipo di progetto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* Imposta un archivio Git del progetto con un progetto di esempio basato su [AEM Archetipo di progetto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
 * Crea un ambiente di sviluppo.
 * Crea una pipeline non di produzione da distribuire nell’ambiente di sviluppo.
 
@@ -46,6 +46,10 @@ Gli ambienti creati in un programma sandbox non sono configurati per il ridimens
 ### Nessun dominio personalizzato o Elenco consentiti IP {#ip-allow}
 
 I domini personalizzati e gli elenchi consentiti IP non sono disponibili nei programmi sandbox.
+
+### Nessuna rete avanzata {#advanced-networking}
+
+[Funzioni di rete avanzate](/help/security/configuring-advanced-networking.md) (ad esempio provisioning self-service di VPN, porte non standard, indirizzi IP in uscita dedicati, ecc.) non sono disponibili nei programmi sandbox.
 
 ### Aggiornamenti manuali AEM {#updates}
 

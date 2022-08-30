@@ -2,9 +2,9 @@
 title: Ambiente build
 description: Scopri l’ambiente di build di Cloud Manager e come crea e verifica il codice.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: c138f0be15550df85a2ec23b6b551ccba07996c8
+source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
@@ -84,12 +84,12 @@ Le combinazioni fornitore/versione attualmente disponibili sono:
 
 | Produttore | Versione |
 |---|---|
-| `oracle` | `1.8` |
-| `oracle` | `1.11` |
+| `oracle` | `8` |
 | `oracle` | `11` |
-| `sun` | `1.8` |
-| `sun` | `1.11` |
+| `sun` | `8` |
 | `sun` | `11` |
+
+Questa tabella si riferisce ai numeri di versione del prodotto. I numeri di build Java o i percorsi di installazione possono riflettere le vecchie convenzioni di versione Java, come 1.8 per Java 8.
 
 >[!NOTE]
 >
