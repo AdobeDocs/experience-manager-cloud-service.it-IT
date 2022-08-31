@@ -4,9 +4,9 @@ description: Scopri come lavorare con i video 360 e Virtual Reality (VR) in Dyna
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Vedi anche [Gestione dei predefiniti per visualizzatori](/help/assets/dynamic-me
 
 ## 360 Video in azione {#video-in-action}
 
-Seleziona [Stazione Spaziale 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) per aprire una finestra del browser e guardare un video a 360°. Durante la riproduzione del video, trascinare il puntatore in una nuova posizione per modificare l’angolo di visualizzazione.
+Seleziona [Stazione Spaziale 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) per aprire una finestra del browser e guardare un video a 360°. Durante la riproduzione del video, trascinare il puntatore in una nuova posizione per modificare l’angolo di visualizzazione.
 
 ![Campione video 360](assets/6_5_360videoiss_simplified.png)
 *Frame video da Space Station 360*
@@ -43,18 +43,18 @@ Vedi [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-36
 360 risorse video caricate in [!DNL Experience Manager] sono etichettate come **Multimedia** in una pagina Risorsa, simile alla normale risorsa video.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*Una risorsa video caricata 360 visualizzata nella vista a schede. La risorsa viene etichettata come Multimedia.*
+*Una risorsa video 360 caricata visualizzata nella vista a schede. La risorsa viene etichettata come Multimedia.*
 
 **Carica le risorse da utilizzare con il visualizzatore video 360:**
 
-1. È stata creata una cartella dedicata alla risorsa video 360.
+1. È stata creata una cartella dedicata alla risorsa video a 360°.
 1. [Applicare un profilo video adattivo alla cartella](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
    Il rendering di contenuti video a 360° richiede una risoluzione video sorgente e una risoluzione delle rappresentazioni codificate superiori a quella dei contenuti video standard non a 360°.
 
-   Puoi utilizzare il profilo video adattivo predefinito già fornito con Dynamic Media. Tuttavia, si ottiene una qualità video di 360 notevolmente inferiore rispetto a quella dei video non-360 codificati con le stesse impostazioni renderizzate con un visualizzatore video non-360. Pertanto, se è necessario un video di alta qualità 360, procedi come segue:
+   Puoi utilizzare il profilo video adattivo predefinito già fornito con Dynamic Media. Tuttavia, si ottiene una qualità video di 360-video notevolmente inferiore rispetto a quella dei video non-360 codificati con le stesse impostazioni renderizzate con un visualizzatore video non-360. Pertanto, se è necessario un video di alta qualità 360, procedi come segue:
 
-   * Idealmente, il contenuto video 360 originale ha una delle seguenti risoluzioni:
+   * Idealmente, il contenuto video a 360° originale presenta una delle seguenti risoluzioni:
 
       * 1080p - 1920 x 1080, noto come risoluzione Full HD o FHD o,
       * 2160p - 3840 x 2160, noto come risoluzione 4k, UHD o HD Ultra. Questa grande risoluzione del display si trova più spesso su televisori e monitor per computer premium. La risoluzione 2160p viene spesso chiamata &quot;4k&quot; perché la larghezza è vicina a 4000 pixel. In altre parole, offre quattro volte i pixel di 1080p.
@@ -63,7 +63,7 @@ Vedi [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-36
       * Width=auto; Altezza=720; Bit rate=2500 kbps
       * Width=auto; Height=1080; Bit rate=5000 kbps
       * Width=auto; Height=1440; Bit rate=6600 kbps
-   * Elabora 360 contenuti video in una cartella dedicata esclusivamente a 360 risorse video.
+   * Elabora il contenuto video a 360° in una cartella dedicata esclusivamente a 360 risorse video.
 
    Questo approccio pone maggiori richieste sulla rete e sulla CPU dell&#39;utente finale.
 
