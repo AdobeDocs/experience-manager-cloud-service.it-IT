@@ -2,9 +2,9 @@
 title: AEM profili di team e prodotti as a Cloud Service
 description: Scopri AEM profili di team e di prodotto as a Cloud Service e come concedere e limitare l’accesso alle soluzioni di Adobe con licenza.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
+source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Cloud Manager dispone di profili di prodotto preconfigurati che possono essere c
 
 A ciascuno dei profili di prodotto sono associate autorizzazioni specifiche.
 
-* **Proprietario business** - In questo ruolo si dispone dell&#39;autorizzazione per aggiungere un nuovo programma o modificare un programma, aggiungere o aggiornare un ambiente, aggiungere/modificare/eliminare/eseguire pipeline, distribuire il codice nell&#39;ambiente AEM o eseguire controlli di qualità del codice.
+* **Proprietario business** - In questo ruolo si dispone dell&#39;autorizzazione per aggiungere un nuovo programma o modificare un programma, aggiungere o aggiornare un ambiente, distribuire il codice AEM ambiente o eseguire controlli di qualità del codice.
 * **Gestione distribuzione** - In questo ruolo, disponi dell’autorizzazione per aggiungere o aggiornare un ambiente, eseguire qualsiasi pipeline e distribuire il codice AEM ambiente o eseguire controlli di qualità del codice.
 * **Sviluppatore** - In questo ruolo, disponi dell’autorizzazione per generare token di accesso personali per l’accesso a Git.
 * **Responsabile del programma** - In questo ruolo, si dispone dell&#39;autorizzazione per pianificare le pipeline, ignorare i gate di qualità a 3 livelli e fornire l&#39;approvazione di produzione.
