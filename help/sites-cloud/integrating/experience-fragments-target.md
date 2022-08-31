@@ -2,10 +2,10 @@
 title: Esportazione di frammenti di esperienza in Adobe Target
 description: Esportazione di frammenti di esperienza in Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 8e13f671ada67e4e22b66094ad23bf5a0508ccba
-workflow-type: ht
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+workflow-type: tm+mt
 source-wordcount: '2259'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -51,7 +51,7 @@ I Frammenti di esperienza possono essere esportati nell’area di lavoro predefi
 >
 >Per ulteriori informazioni, consulta:
 >
->* [Sviluppo Adobe Target](http://developers.adobetarget.com/)
+>* [Sviluppo Adobe Target](https://developers.adobetarget.com/)
 >* [Componenti core: Frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 >* [Adobe Target: come si utilizzano i Frammenti di esperienza Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=it)
 >* [AEM 6.5: configurazione manuale dell’integrazione con Adobe Target; creazione di una configurazione cloud di Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=it#creating-a-target-cloud-configuration)
@@ -209,6 +209,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
       >* Maggiore sicurezza
       >* Migliori opzioni di implementazione per le applicazioni a pagina singola
       >* AT.js contiene i componenti inclusi in target.js, quindi non effettua più chiamate a target.js
+
       >
       >Puoi selezionare AT.js o mbox.js nel menu a discesa **Libreria client**.
 

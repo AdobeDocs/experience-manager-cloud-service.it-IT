@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2021.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione 2021.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione 2021.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione 2021.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 13%
+source-wordcount: '1316'
+ht-degree: 12%
 
 ---
 
@@ -86,9 +86,9 @@ API `com.day.cq.dam.api.collection.SmartCollection` non è disponibile in [!DNL 
 * Ora puoi utilizzare il servizio Automated forms conversion per [convertire i PDF forms in francese, tedesco e spagnolo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) ai moduli adattivi.
 * È stato aggiunto un pannello separato all’editor modelli per visualizzare gli errori relativi ai componenti per moduli adattivi. Consente di consolidare tutti gli errori dei moduli adattivi in un&#39;unica posizione e di ridurre i tempi di risoluzione.
 
-### Nuove funzioni disponibili in [!DNL Forms] canale prerelease {#beta-features-forms}
+### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=it) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che permettono di:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che permettono di:
    * Generare i documenti compilando i file modello con dati XML.
    * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
    * Generare file PDF di stampa da un modulo XFA PDF e Adobe Acrobat Form.
@@ -134,11 +134,11 @@ API `com.day.cq.dam.api.collection.SmartCollection` non è disponibile in [!DNL 
 
 * Impossibile creare in precedenza tag con lo stesso nome ma con spazi dei nomi diversi.
 
-## Documentazione XML per Experience Manager as a Cloud Service {#xml-documentation}
+## XML Documentation per Experience Manager as a Cloud Service {#xml-documentation}
 
 ### Novità {#what-is-new-xml-documentation}
 
-La documentazione XML per l’Experience Manager as a Cloud Service è generalmente disponibile. Consente ad Experienci Manager clienti as a Cloud Service di elaborare la documentazione XML e di importare, creare, gestire e distribuire contenuti tecnici su più canali, incluso Experience Manager Sites.
+XML Documentation, ad Experience Manager as a Cloud Service, è generalmente disponibile. Consente ad Experienci Manager clienti as a Cloud Service di acquistare XML Documentation e di importare, creare, gestire e distribuire contenuti tecnici su più canali, incluso Experience Manager Sites.
 
 ## Cloud Manager {#cloud-manager}
 

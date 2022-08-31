@@ -2,7 +2,7 @@
 title: Materiali di riferimento API
 description: AEM dispone di API estese e potenti che puoi sfruttare per il tuo progetto di esperienza digitale.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 6%
@@ -34,7 +34,7 @@ AEM si basa su una serie di API open-source aggiuntive.
 | API | Descrizione |
 |---|---|
 | [Sling Apache](https://sling.apache.org/apidocs/sling11/) | Framework web che utilizza un Java Content Repository (JCR) per archiviare e gestire il contenuto |
-| [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Implementazione di un archivio di contenuti Java (JCR) scalabile e gerarchico ad alte prestazioni per l&#39;utilizzo come base dei moderni siti web di livello mondiale |
+| [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Implementazione di un archivio di contenuti Java (JCR) scalabile e gerarchico ad alte prestazioni per l&#39;utilizzo come base dei moderni siti web di livello mondiale |
 | [Archivio dei contenuti Java](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Specifiche per JCR versione 2.0 |
 | [Apache Felix](https://felix.apache.org) | Implementazione del framework e della piattaforma di servizi dell&#39;iniziativa Open Services Gateway (OSGi) |
 
@@ -46,7 +46,7 @@ AEM è basato sui seguenti quattro set principali di API Java in ordine decresce
 |---|---|---|
 | 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | astrazioni di prodotto come pagine, risorse, flussi di lavoro, ecc. |
 | 2 | [Sling Apache](https://sling.apache.org/apidocs/sling11/) | astrazioni REST e basate su risorse come risorse, mappe dei valori e richieste HTTP. |
-| 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | astrazioni di dati e contenuti quali nodo, proprietà e sessioni. |
+| 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | astrazioni di dati e contenuti quali nodo, proprietà e sessioni. |
 | 4 | [Apache Felix](https://felix.apache.org/) | astrazioni del contenitore dell&#39;applicazione OSGi quali servizi e componenti (OSGi). |
 
 Se un’API è fornita da AEM, preferiscila rispetto a Sling, JCR e OSGi. Se AEM non fornisce un’API, preferisci Sling rispetto a JCR e OSGi.

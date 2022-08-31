@@ -2,7 +2,7 @@
 title: 'Pacchetto per la struttura dell’archivio dei progetti AEM  '
 description: I progetti Adobe Experience Manager as a Cloud Service Maven richiedono una definizione di sottopacchetto con struttura dell’archivio il cui unico scopo è quello di definire le radici dell’archivio JCR in cui vengono distribuiti i pacchetti secondari del codice del progetto.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 9%
@@ -37,7 +37,7 @@ Aggiungi questo nuovo sottoprogetto Maven ai progetti padre `<modules>` elenco.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- ====================================================================== -->
@@ -157,7 +157,7 @@ In `ui.apps/pom.xml`e qualsiasi altro pacchetto di codice `pom.xml`s, aggiungi u
 
 Un caso d’uso meno comune e più complesso supporta la distribuzione di più pacchetti di codice che si installano nelle stesse aree dell’archivio JCR.
 
-Ad esempio:
+Esempio:
 
 + Il pacchetto di codice A viene distribuito in `/apps/a`
 + Il pacchetto di codice B viene distribuito in `/apps/a/b`
@@ -182,4 +182,4 @@ Questo indica che il pacchetto di codice di interruzione non ha un `<repositoryS
 
 ## Risorse aggiuntive
 
-+ [Plug-in Maven pacchetto di contenuti FileVault](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [Plug-in Maven pacchetto di contenuti FileVault](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

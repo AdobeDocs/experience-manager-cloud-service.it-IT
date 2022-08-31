@@ -1,8 +1,8 @@
 ---
-title: Estensione [!DNL Adobe Experience Manager] as a Cloud Service tramite Adobe Developer App Builder.
-description: Estensione [!DNL Adobe Experience Manager] as a Cloud Service tramite Adobe Developer App Builder.
+title: Estensione [!DNL Adobe Experience Manager] as a Cloud Service con Adobe Developer App Builder.
+description: Estensione [!DNL Adobe Experience Manager] as a Cloud Service con Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -23,7 +23,7 @@ App Builder consente ai clienti di estendere facilmente Adobe Experience Manager
 * Estensibilità servizi di base : estende le funzionalità delle applicazioni di base estendendo il comportamento predefinito con funzioni personalizzate e logica di business.
 * Estensibilità dell’esperienza utente : estende l’esperienza di base per supportare i requisiti aziendali o creare proprietà digitali, vetrine e app back-office specifiche per i clienti.
 
-App Builder (precedentemente noto come Project Firefly) è disponibile per clienti e partner aziendali tramite la nostra anteprima per sviluppatori dall’estate 2020. La disponibilità generale (GA) di App Builder è prevista per dicembre 2021. Gli sviluppatori possono provare App Builder tramite la nostra [Programma di prova](http://adobe.ly/appbuilder-trial).
+App Builder (precedentemente noto come Project Firefly) è disponibile per clienti e partner aziendali tramite la nostra anteprima per sviluppatori dall’estate 2020. La disponibilità generale (GA) di App Builder è prevista per dicembre 2021. Gli sviluppatori possono provare App Builder tramite la nostra [Programma di prova](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ App Builder (precedentemente noto come Project Firefly) è disponibile per clien
 
 Invece di una soluzione standard, Adobe Developer App Builder fornisce una piattaforma di sviluppo comune, coerente e standardizzata per l’estensione delle soluzioni Adobe Cloud, come AEM, che include:
 
-* Adobe Developer Console: per lo sviluppo di microservizi ed estensioni personalizzati, gli sviluppatori possono creare e gestire progetti accedendo a tutti gli strumenti e le API necessari per creare plug-in e integrazioni.
+* Console Adobe Developer : per lo sviluppo di microservizi ed estensioni personalizzati, gli sviluppatori possono creare e gestire progetti accedendo a tutti gli strumenti e le API necessari per creare plug-in e integrazioni.
 * Strumenti per sviluppatori: strumenti open-source, SDK e librerie per consentire agli sviluppatori di creare facilmente estensioni e integrazioni personalizzate. Utilizza React Spectrum (toolkit per l’interfaccia utente di Adobe) per avere un’interfaccia utente comune per tutte le app di Adobe.
 * Servizi: I/O Runtime per l&#39;hosting di infrastrutture sulla piattaforma senza server ed eventi I/O per integrazioni basate su eventi. Offriamo inoltre supporto integrato per la memorizzazione di dati e file.
 * Adobe Experience Cloud: gli sviluppatori possono inviare estensioni e integrazioni da pubblicare nell’organizzazione Experience Cloud. Gli amministratori di sistema possono quindi rivedere, gestire e approvare queste estensioni. Una volta pubblicato, le estensioni e gli strumenti personalizzati di App Builder si trovano accanto ad altre app Adobe Experience Cloud.
@@ -61,7 +61,7 @@ App Builder fornisce video e documentazione per gli sviluppatori, incluse guide 
 
 Pronti per iniziare lo sviluppo? Sono disponibili numerose applicazioni di esempio per aiutarti a procedere rapidamente:
 
-* [App Builder Code Labs su Adobe Developer Website](https://www.adobe.io/app-builder/docs/resources/)
+* [Labs di codice di App Builder sul sito web Adobe Developer](https://www.adobe.io/app-builder/docs/resources/)
 
 ## Supporto {#support}
 

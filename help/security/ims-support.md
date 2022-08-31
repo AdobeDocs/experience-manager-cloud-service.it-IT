@@ -2,7 +2,7 @@
 title: Supporto IMS per Adobe Experience Manager as a Cloud Service
 description: Supporto IMS per Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 100%
@@ -229,7 +229,7 @@ Per ulteriori informazioni sui ruoli degli utenti che determinano la disponibili
    ![ACL 3](/help/security/assets/ims22.png)
 
 
-1. Dopo avere aggiunto il profilo appropriato, dovresti essere in grado di accedere ai rispettivi tenant in Cloud Manager tramite [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) dall’angolo in alto a destra dell’interfaccia utente.
+1. Dopo avere aggiunto il profilo appropriato, dovresti essere in grado di accedere ai rispettivi tenant in Cloud Manager tramite [Adobe Experience Cloud](https://my.cloudmanager.adobe.com) dall’angolo in alto a destra dell’interfaccia utente.
 
 
 ### Accesso a un’istanza in AEM as a Cloud Service {#accessing-instance-cloud-service}

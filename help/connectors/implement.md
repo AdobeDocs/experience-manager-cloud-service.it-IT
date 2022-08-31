@@ -2,10 +2,10 @@
 title: Implementazione di un connettore AEM
 description: Implementazione di un connettore AEM
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Documentazione utile
 
 La [documentazione](../overview/introduction.md) Experience Manager as a Cloud Service fornisce informazioni utili sullo sviluppo in AEM. Di seguito sono riportati alcuni argomenti tecnici e riferimenti specifici che possono essere utili durante l&#39;implementazione di un connettore AEM:
 
-* Servizi di consulenza Adobe (ACS) [esempi AEM](http://adobe-consulting-services.github.io/acs-aem-samples/) per un codice ben commentato per aiutare gli sviluppatori AEM
+* Servizi di consulenza Adobe (ACS) [esempi AEM](https://adobe-consulting-services.github.io/acs-aem-samples/) per un codice ben commentato per aiutare gli sviluppatori AEM
 * I vari collegamenti alla documentazione nella sezione Modelli di integrazione comuni di questo articolo
 
 Risorse della community
@@ -45,9 +45,9 @@ Risorse della community
 
 Oltre alla documentazione statica di cui sopra, Adobe e la comunità AEM offrono risorse per aiutare a immettere un connettore sul mercato:
 
-* La comunità di Adobe [AEM Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) è un sito attivo in cui i tuoi colleghi chiedono e rispondono alle domande
+* La comunità di Adobe [AEM Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) è un sito attivo in cui i tuoi colleghi chiedono e rispondono alle domande
 * Ulteriori risorse tecniche Adobe sono disponibili per determinati livelli di partner. Scopri di più su [Adobe Exchange Program](https://partners.adobe.com/exchangeprogram/experiencecloud).
-* Se la tua azienda desidera ricevere assistenza nell’implementazione, può consultare il team [Servizi professionali](http://www.adobe.com/it/experience-cloud/consulting-services.html) di Adobe o consultare [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) per ottenere un elenco dei partner Adobe presenti in tutto il mondo
+* Se la tua azienda desidera ricevere assistenza nell’implementazione, può consultare il team [Servizi professionali](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) di Adobe o consultare [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) per ottenere un elenco dei partner Adobe presenti in tutto il mondo
 
 Regole della struttura del pacchetto
 -----------------------

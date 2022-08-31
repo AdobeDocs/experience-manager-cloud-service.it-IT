@@ -3,7 +3,7 @@ title: Implementazione in AEM as a Cloud Service
 description: 'Implementazione in AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Poiché le modifiche dell&#39;applicazione dovute al pattern di distribuzione Bl
 
 Per i clienti con basi di codice esistenti, è fondamentale seguire l’esercizio di ristrutturazione dell’archivio descritto nella documentazione di AEM per garantire che il contenuto precedente sotto /etc venga spostato nella posizione giusta.
 
-Per questi pacchetti di codice si applicano alcune restrizioni aggiuntive, ad esempio [installare gli hook](http://jackrabbit.apache.org/filevault/installhooks.html) non sono supportati.
+Per questi pacchetti di codice si applicano alcune restrizioni aggiuntive, ad esempio [installare gli hook](https://jackrabbit.apache.org/filevault/installhooks.html) non sono supportati.
 
 ## Configurazione OSGI {#osgi-configuration}
 
@@ -104,7 +104,7 @@ Dopo il passaggio alla nuova versione dell&#39;applicazione:
    * Cartelle (aggiungere, modificare, rimuovere)
    * Modelli modificabili (aggiungere, modificare, rimuovere)
    * Configurazione in base al contesto (qualsiasi cosa in `/conf`) (aggiungere, modificare, rimuovere)
-   * Script (i pacchetti possono attivare gli hook di installazione in varie fasi del processo di installazione del pacchetto. Consulta la sezione [Documentazione di Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) informazioni sugli hook di installazione. Nota che AEM CS utilizza attualmente Filevault versione 3.4.0, che limita gli hook di installazione agli utenti amministratori, agli utenti di sistema e al membro del gruppo di amministratori).
+   * Script (i pacchetti possono attivare gli hook di installazione in varie fasi del processo di installazione del pacchetto. Consulta la sezione [Documentazione di Jackrabbit filevault](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) informazioni sugli hook di installazione. Nota che AEM CS utilizza attualmente Filevault versione 3.4.0, che limita gli hook di installazione agli utenti amministratori, agli utenti di sistema e al membro del gruppo di amministratori).
 
 È possibile limitare l’installazione di contenuti modificabili all’authoring o alla pubblicazione incorporando pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per rispecchiare tale separazione è stata effettuata nel AEM 6.5 e i dettagli relativi alla ristrutturazione del progetto raccomandata si trovano nella [Documentazione di AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=it)
 
@@ -171,7 +171,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Gestione pacchetti - Migrazione dei pacchetti di contenuto variabile"
 >abstract="Esplora l’utilizzo di package manager per i casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;, che include l’importazione di contenuti specifici dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, il trasferimento di piccoli pacchetti di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Strumento Trasferimento contenuti"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Strumento Content Transfer (Trasferimento contenuti)"
 
 Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;. Ad esempio, per eseguire il debug di un problema di produzione, è necessario importare contenuto specifico dalla produzione nella fase di staging. Per questi scenari, [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) può essere utilizzato in ambienti AEM as a Cloud Service.
 

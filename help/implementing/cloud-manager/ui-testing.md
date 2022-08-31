@@ -2,10 +2,10 @@
 title: Test dell’interfaccia utente
 description: Il test personalizzato dell’interfaccia utente è una funzione opzionale che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni personalizzate
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ Il test personalizzato dell’interfaccia utente è una funzione opzionale che c
 
 AEM fornisce una suite integrata di [Cancelli di qualità di Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) per garantire l&#39;agevole aggiornamento delle applicazioni personalizzate. In particolare, i gate di test IT già creano e automatizzano test personalizzati utilizzando API AEM.
 
-I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium). Inoltre, un progetto di test dell’interfaccia utente può essere facilmente generato utilizzando [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium). Inoltre, un progetto di test dell’interfaccia utente può essere facilmente generato utilizzando [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
 
 I test dell’interfaccia utente vengono eseguiti come parte di un gate di qualità specifico per ogni pipeline di Cloud Manager con un [dedicato **Test personalizzati dell&#39;interfaccia utente** passo.](/help/implementing/cloud-manager/deploy-code.md) Qualsiasi test dell’interfaccia utente, compresi la regressione e le nuove funzionalità, consente di rilevare e segnalare gli errori.
 
@@ -79,7 +79,7 @@ Per generare un contesto di creazione Docker, è necessario un modulo Maven che:
 * Produce un archivio contenente un `Dockerfile` e tutti gli altri file necessari per creare l&#39;immagine Docker con i test.
 * Assegna tag all’archivio con la `ui-test-docker-context` classificatore.
 
-Il modo più semplice per farlo è configurare il [Plug-in assembly Maven](http://maven.apache.org/plugins/maven-assembly-plugin/) per creare l&#39;archivio contestuale della build Docker e assegnargli il classificatore corretto.
+Il modo più semplice per farlo è configurare il [Plug-in assembly Maven](https://maven.apache.org/plugins/maven-assembly-plugin/) per creare l&#39;archivio contestuale della build Docker e assegnargli il classificatore corretto.
 
 Puoi creare test dell’interfaccia utente con diverse tecnologie e framework, ma questa sezione presuppone che il progetto sia disposto in modo simile al seguente.
 
