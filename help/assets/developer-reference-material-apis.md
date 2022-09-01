@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
+source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 4%
+source-wordcount: '1869'
+ht-degree: 3%
 
 ---
 
@@ -84,6 +84,8 @@ L’approccio fornisce una gestione scalabile e più performante del caricamento
 
 >[!NOTE]
 Vedi il codice client per implementare questo approccio in open-source [libreria aem-upload](https://github.com/adobe/aem-upload).
+[!IMPORTANT]
+In determinate circostanze, le modifiche potrebbero non propagarsi completamente tra le richieste all&#39;Experience Manager a causa della natura coerente dell&#39;archiviazione nel Cloud Service. Questo porta a 404 risposte per avviare o completare chiamate di caricamento a causa della mancata propagazione delle creazioni di cartelle richieste. I clienti devono aspettarsi 404 risposte e gestirle implementando un nuovo tentativo con una strategia di back-off.
 
 ### Avvia caricamento {#initiate-upload}
 
