@@ -2,7 +2,7 @@
 title: Usa font personalizzati
 description: Usa font personalizzati
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Oltre alle operazioni precedentemente menzionate, è possibile utilizzare i font
 
 ## Comportamento dei documenti PDF
 
-È possibile [incorporare un font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) a un documento PDF. Quando un font è incorporato, il documento PDF appare identico in tutte le piattaforme. Utilizza i font incorporati per garantire un aspetto coerente. Quando un font non è incorporato, il rendering del font dipende dalle impostazioni di rendering dei client visualizzatore di PDF come Acrobat o Acrobat Reader. Se il font è disponibile nel computer client, PDF utilizza il font specificato, altrimenti viene eseguito il rendering di PDF con un font di fallback predefinito.
+È possibile [incorporare un font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) a un documento PDF. Quando un font è incorporato, il documento PDF appare identico in tutte le piattaforme. Utilizza i font incorporati per garantire un aspetto coerente. Quando un font non è incorporato, il rendering del font dipende dalle impostazioni di rendering dei client visualizzatore di PDF come Acrobat o Acrobat Reader. Se il font è disponibile nel computer client, PDF utilizza il font specificato, altrimenti viene eseguito il rendering di PDF con un font di fallback predefinito.
 
 ## Aggiungi font personalizzati al tuo ambiente Forms as a Cloud Service {#custom-fonts-cloud-service}
 
@@ -71,7 +71,7 @@ Per aggiungere font personalizzati all’ambiente del Cloud Service:
    </plugin>
    ```
 
-1. Aggiungi la cartella dei font a `<modules>` elencati nel file pom. Ad esempio:
+1. Aggiungi la cartella dei font a `<modules>` elencati nel file pom. Esempio:
 
    ```xml
    <modules>

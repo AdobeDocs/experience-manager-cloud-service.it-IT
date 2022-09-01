@@ -2,10 +2,10 @@
 title: Guida di riferimento dei componenti
 description: Guida di riferimento per sviluppatori per i dettagli dei componenti e della relativa struttura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -41,7 +41,7 @@ Prima di investire tempo nella creazione di un componente completamente nuovo, �
 
 #### Estensione dei componenti core {#extending-core-components}
 
-I componenti core offrono anche [cancella pattern di personalizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html) che puoi utilizzare per adattarli alle esigenze del tuo progetto.
+I componenti core offrono anche [cancella pattern di personalizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=it) che puoi utilizzare per adattarli alle esigenze del tuo progetto.
 
 #### Sovrapposizione dei componenti {#overlying-components}
 
@@ -59,11 +59,11 @@ Verrà eseguito il rendering del componente con [HTML.](https://www.w3schools.co
 
 Si consiglia di mantenere il codice responsabile del markup e del rendering separato dal codice che controlla la logica utilizzata per selezionare il contenuto del componente.
 
-Questa filosofia è sostenuta da [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it), un linguaggio di template appositamente limitato per garantire un linguaggio di programmazione reale viene utilizzato per definire la logica di business sottostante. Questo meccanismo evidenzia il codice richiesto per una determinata visualizzazione e, se necessario, consente una logica specifica per diverse visualizzazioni dello stesso componente.
+Questa filosofia è sostenuta da [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), un linguaggio di template appositamente limitato per garantire un linguaggio di programmazione reale viene utilizzato per definire la logica di business sottostante. Questo meccanismo evidenzia il codice richiesto per una determinata visualizzazione e, se necessario, consente una logica specifica per diverse visualizzazioni dello stesso componente.
 
 Questa logica (facoltativa) può essere implementata in modi diversi e viene richiamata da HTL con comandi specifici:
 
-* Utilizzo di Java - [API di utilizzo Java HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) abilita un file HTL per accedere a metodi helper in una classe Java personalizzata. Questo consente di utilizzare il codice Java per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
+* Utilizzo di Java - [API di utilizzo Java HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) abilita un file HTL per accedere a metodi helper in una classe Java personalizzata. Questo consente di utilizzare il codice Java per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
 * Utilizzo di JavaScript - [API di utilizzo JavaScript HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) abilita un file HTL per accedere al codice helper scritto in JavaScript. Questo consente di utilizzare il codice JavaScript per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
 * Utilizzo di librerie lato client : i siti web moderni si basano in larga misura sull’elaborazione lato client basata su codice JavaScript e CSS complessi. Vedere il documento [Utilizzo delle librerie lato client su AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) per ulteriori informazioni.
 

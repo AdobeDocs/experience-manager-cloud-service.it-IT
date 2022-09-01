@@ -2,9 +2,9 @@
 title: Regole per la qualità del codice personalizzato
 description: Questa pagina descrive le regole di qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice di AEM Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3493'
 ht-degree: 4%
 
 ---
@@ -772,7 +772,7 @@ I componenti AEM che dispongono di una finestra di dialogo dell’interfaccia cl
 * Un componente con una finestra di dialogo di progettazione dell’interfaccia classica (ad es. `design_dialog` deve avere una finestra di dialogo corrispondente per la progettazione dell&#39;interfaccia Touch (cioè, un `cq:design_dialog` nodo figlio).
 * Un componente con una finestra di dialogo di interfaccia classica e una finestra di dialogo di progettazione dell’interfaccia classica deve avere sia una finestra di dialogo corrispondente dell’interfaccia utente touch sia una finestra di dialogo corrispondente di progettazione dell’interfaccia touch.
 
-La documentazione sugli strumenti di modernizzazione AEM fornisce documentazione e strumenti per la conversione dei componenti dall’interfaccia classica all’interfaccia utente touch. Fai riferimento a [la documentazione AEM Strumenti di modernizzazione](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) per ulteriori dettagli.
+La documentazione sugli strumenti di modernizzazione AEM fornisce documentazione e strumenti per la conversione dei componenti dall’interfaccia classica all’interfaccia utente touch. Fai riferimento a [la documentazione AEM Strumenti di modernizzazione](https://opensource.adobe.com/aem-modernize-tools/) per ulteriori dettagli.
 
 ### I pacchetti non devono mescolare contenuto variabile e immutabile {#oakpal-packages-immutable}
 

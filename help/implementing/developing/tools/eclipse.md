@@ -2,7 +2,7 @@
 title: Strumenti AEM Developer per Eclipse
 description: Strumenti AEM Developer per Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 3%
@@ -25,7 +25,7 @@ Offre diverse funzioni che semplificano AEM sviluppo:
 * Bootstrap semplice dei progetti AEM tramite una Creazione guidata progetto specifica
 * Editing semplice delle proprietà JCR
 
-## Requisiti {#requirements}
+## Requisiti  {#requirements}
 
 Prima di utilizzare gli strumenti per sviluppatori AEM, è necessario:
 
@@ -38,9 +38,9 @@ Prima di utilizzare gli strumenti per sviluppatori AEM, è necessario:
 
 ## Come installare AEM Developer Tools per Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Una volta realizzato il [requisiti](#requirements) sopra, è possibile installare il plug-in come segue:
+Quando hai soddisfatto il [requisiti](#requirements) sopra, è possibile installare il plug-in come segue:
 
-1. Apri [Sito Web AEM Developer Tools.](https://eclipse.adobe.com/aem/dev-tools/)
+1. Apri [Sito Web AEM Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. Copia il **Collegamento di installazione**.
 
@@ -163,7 +163,7 @@ Per creare il progetto di esempio, effettua le seguenti operazioni:
 
    1. In Eclipse, apri `PROJECT.ui.apps/src/main/content/META-INF/filter.xml`.
    1. Sostituire il contenuto della `<workspaceFilter>` con le regole del pacchetto che iniziano con `/apps` e `/etc`
-      * Ad esempio:
+      * Esempio:
 
          ```xml
          <?xml version="1.0" encoding="UTF-8"?>
@@ -175,7 +175,7 @@ Per creare il progetto di esempio, effettua le seguenti operazioni:
          ```
    1. Quindi apri `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
    1. Sostituisci le regole con quelle del pacchetto che iniziano con `/content`.
-      * Ad esempio:
+      * Esempio:
 
          ```xml
          <?xml version="1.0" encoding="UTF-8"?>
