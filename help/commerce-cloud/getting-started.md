@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1099'
 ht-degree: 29%
 
 ---
@@ -141,3 +141,5 @@ Per configurazioni più complesse che utilizzano più strutture di siti AEM comb
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Configurazione di Commerce Multi-Store](configuring/multi-store-setup.md)
+- [Configurazione di più sistemi commerce](configuring/multiple-commerce-systems-setup.md)
+
