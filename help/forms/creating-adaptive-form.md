@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 5e8f70da6de27bf59e4a89e196a016820245a068
+source-git-commit: bcd9f3cfe6c22a6db51a9e6f96576bb8cdde7d0c
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 # Creare un modulo adattivo {#creating-an-adaptive-form}
 
 
-La funzione Forms adattiva consente di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. Per creare un modulo adattivo, la procedura guidata dispone di una navigazione rapida a schede che consente di selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati.
+La funzione Forms adattiva consente di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. La procedura guidata consente di navigare a schede rapide per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per creare un modulo adattivo.
 
 <!-- 
 
@@ -45,13 +45,14 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 Per creare un modulo adattivo è necessario quanto segue:
 
-* **Un modello di modulo adattivo**: Un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Dispone di componenti preformattati contenenti determinate proprietà e struttura del contenuto. Offre inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto e l’aspetto e l’azione di invio definisce l’azione da intraprendere all’invio di un modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. È possibile [creare un nuovo modello](template-editor.md) o importa un modello esistente. Puoi anche distribuire il [archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.test%3A%20are%20based%20integration%20test.) per alcuni modelli di esempio.
-* **Un tema Modulo adattivo**: Un tema contiene dettagli di stile per i componenti e i pannelli. Gli stili includono proprietà quali colori di sfondo, colori dello stato, trasparenza, allineamento e dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. È possibile [creare un nuovo tema](themes.md), [importare un tema esistente](import-export-forms-templates.md#uploading-a-theme), oppure scarica e importa alcuni [temi di esempio](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2779f80e-16ba-4cd1-a96f-8e2b53f3be25). Puoi anche distribuire il [archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.test%3A%20are%20based%20integration%20test.) per alcuni temi di esempio.
+* **Un modello di modulo adattivo**: Un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Dispone di componenti preformattati contenenti determinate proprietà e struttura del contenuto. Offre inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto e l’aspetto dell’azione di invio definisce l’azione da intraprendere in seguito all’invio di un Modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Il servizio cloud supporta due tipi di modelli:
+
+   * **Modello modificabile**: È possibile [creare una nuova](template-editor.md) o [importare un modello modificabile esistente](migrate-to-forms-as-a-cloud-service.md). Puoi anche distribuire il [archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.test%3A%20are%20based%20integration%20test.) per ottenere alcuni modelli modificabili di esempio.
+   * **Modello statico**: Si tratta di modelli legacy e consigliati solo per i clienti che eseguono la migrazione da Adobe Managed Services (AMS) e installazioni on-premise AEM Forms (AEM 6.5 Forms o versioni precedenti). Questi ti consentono di continuare a sfruttare l’investimento esistente in modelli statici. Quando si crea un nuovo modulo adattivo, è consigliabile utilizzare un modello modificabile.
+
+* **Un tema Modulo adattivo**: Un tema contiene dettagli di stile per i componenti e i pannelli. Gli stili includono proprietà quali colori di sfondo, colori dello stato, trasparenza, allineamento e dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. È possibile [creare un nuovo tema](themes.md) o [importare un tema esistente](import-export-forms-templates.md#uploading-a-theme). Puoi anche distribuire il [archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) per alcuni temi di esempio.
+
 * **Autorizzazioni**: Aggiungi gli utenti a [!DNL forms-users] per fornire loro le autorizzazioni necessarie per creare un modulo adattivo. Per un elenco dettagliato dei gruppi di utenti specifici dei moduli, vedere [Gruppi e autorizzazioni](forms-groups-privileges-tasks.md).
-
-## Creare un modulo adattivo {#strong-create-an-adaptive-form-strong}
-
-Per creare un modulo adattivo, effettua le seguenti operazioni.
 
 1. Accesso [!DNL Experience Manager Forms] Istanza di authoring. Può essere un’istanza Cloud o un’istanza di sviluppo locale.
 
@@ -59,25 +60,38 @@ Per creare un modulo adattivo, effettua le seguenti operazioni.
 
    Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra tocca **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
-1. Tocca **[!UICONTROL Crea]**  > **[!UICONTROL Forms adattivo]**. Viene visualizzata la procedura guidata.
+1. Tocca **[!UICONTROL Crea]**  > **[!UICONTROL Forms adattivo]**. Viene visualizzata la procedura guidata.s
 1. Nella scheda Origine, seleziona un modello:
-   * Quando selezioni un modello, un tema e un’azione di invio specificati nel modello vengono selezionati automaticamente e la **[!UICONTROL Crea]** è abilitato. Puoi andare al **[!UICONTROL Stile]** o **[!UICONTROL Invio]** schede per selezionare un tema diverso o inviare un&#39;azione.
-   * Se il modello selezionato non specifica un tema, il pulsante crea rimane disattivato. Puoi andare al **[!UICONTROL Stili]** per selezionare manualmente un tema.
+
+   * Quando selezioni un modello modificabile, un tema e un’azione di invio specificati nel modello vengono selezionati automaticamente e la **[!UICONTROL Crea]** è abilitato. Puoi andare al **[!UICONTROL Stile]** o **[!UICONTROL Invio]** schede per selezionare un tema diverso o inviare un&#39;azione. Se il modello modificabile selezionato non specifica un tema, il pulsante crea rimane disattivato. Puoi andare al **[!UICONTROL Stili]** per selezionare manualmente un tema.
+   * Quando selezioni un modello statico, le opzioni relative a dati, stile, invio, consegna e anteprima non sono disponibili. Quando si crea un nuovo modulo adattivo, è consigliabile utilizzare un modello modificabile.
+
 1. Nella scheda Stile , seleziona un tema:
    * Quando il modello selezionato specifica un tema, il tema viene selezionato automaticamente nella procedura guidata. Puoi anche scegliere un tema diverso dalla scheda Stile .
    * Se il modello selezionato non specifica un tema, è possibile utilizzare la scheda Stile per scegliere un tema. La **[!UICONTROL Crea]** viene attivato solo dopo aver selezionato un tema.
 1. (Facoltativo) Nella scheda Dati, seleziona un modello dati:
    * **Modello dati modulo**: A [Modello dati modulo](data-integration.md) consente di integrare entità e servizi da origini dati diverse in un modulo adattivo. Scegliere Modello dati modulo se il modulo adattivo creato prevede il recupero e la scrittura di dati da e verso più origini dati.
    * **Schema JSON**: [Schema JSON](adaptive-form-json-schema-form-model.md) rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili per l’uso nella scheda Oggetti modello dati del browser Contenuto durante la creazione di Forms adattivo e tutti i campi vengono aggiunti anche al modulo adattivo appena creato.
+
+   Per impostazione predefinita, vengono selezionati tutti i campi del modello dati. Quando si crea il modulo adattivo, tutti i campi del modello dati selezionati vengono convertiti nei corrispondenti componenti del modulo adattivo. La procedura guidata fornisce delle caselle di controllo per selezionare solo i campi da includere nel modulo adattivo.
+
+   <!-- 
+   
+   If your JSON schema contains a fragment, the fragment is considered a single unit. You can select or deselect a complete fragment and all the fields of the fragment are selected or deselected accordingly. 
+   
+   -->
+
 1. Nella scheda Invio, selezionare un’azione di invio:
+
    * Quando selezioni un modello, l’azione di invio specificata nel modello viene selezionata automaticamente. È possibile selezionare un’altra azione di invio dalla scheda Invio. La **[!UICONTROL Invio]** visualizza tutte le azioni di invio disponibili.
+
    * Se il modello selezionato non specifica un’azione di invio, è possibile utilizzare la **[!UICONTROL Invio]** scheda per selezionare un’azione di invio
 
 1. (Facoltativo) Nella scheda Consegna è possibile specificare una data di pubblicazione o di annullamento della pubblicazione per un modulo adattivo.
 
 1. Tocca **[!UICONTROL Crea]**. Viene visualizzata una finestra di dialogo per specificare il titolo, il nome e la posizione in cui salvare il modulo adattivo:
 
-   * **[!UICONTROL Titolo:]** Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nel [!DNL Experience Manager Forms] interfaccia utente.
+   * **[!UICONTROL Titolo]** Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nel [!DNL Experience Manager Forms] interfaccia utente.
    * **[!UICONTROL Nome:]** Specifica il nome del modulo. Nel repository viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo nome viene generato automaticamente. È possibile modificare il valore suggerito. Il campo name può includere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti con un trattino.
    * **[!UICONTROL Percorso:]** Specifica il percorso in cui salvare il modulo adattivo. Puoi salvare il modulo adattivo direttamente in `/content/dam/formsanddocuments` o creare una cartella come `/content/dam/formsanddocuments/adaptiveforms` per salvare un modulo adattivo. Assicurati di creare la cartella prima di utilizzarla nel percorso. La **[!UICONTROL Percorso:]** non crea automaticamente una cartella.
 

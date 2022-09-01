@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: 16b27bc4f56519a0f1d2dfd9bd0b3090e77a8cc1
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 2%
+source-wordcount: '421'
+ht-degree: 1%
 
 ---
 
@@ -21,23 +21,28 @@ ht-degree: 2%
 
 Scopri come gli esperti di marketing possono arricchire i dati dei prodotti con i contenuti associati provenienti da Adobe Experience Manager. I contenuti, come le risorse, i frammenti esperienza e i frammenti di contenuto in AEM possono essere associati ai prodotti commerce. Una volta associati, questi tipi di contenuto possono essere inseriti in modo dinamico in un segnaposto all’interno di una pagina di prodotto o di una pagina di categoria. Questo apre una vasta gamma di possibilità agli esperti di marketing di eseguire il targeting di una pagina di prodotto specifica con contenuti aggiuntivi come immagini e video.
 
-## Risorse digitali
+## Risorse digitali {#digital-assets}
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
 Le risorse digitali possono essere associate a uno o più SKU del prodotto. Una volta associata, la risorsa digitale può essere scoperta con ricerche di parole chiave basate sullo SKU. La risorsa verrà anche visualizzata automaticamente come contenuto associato durante la modifica di una pagina che include il prodotto rilevante, facilitando così la creazione della tua prossima esperienza digitale.
 
-## Frammenti di esperienza
+## Frammenti di esperienza {#experience-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
 I frammenti esperienza sono una funzione di Adobe Experience Manager che consente agli addetti al marketing di creare **non strutturato** contenuto riutilizzabile. I frammenti esperienza possono essere associati a un SKU del prodotto o a un ID catalogo. Una volta associati, gli addetti al marketing possono individuare facilmente i frammenti correlati in base ai prodotti visualizzati su una pagina. I frammenti esperienza possono anche essere inclusi in modo dinamico in una pagina di catalogo di prodotti tramite un segnaposto e un’associazione.
 
-## Frammenti di contenuto
+## Frammenti di contenuto {#content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
 
 I frammenti di contenuto sono una funzione di Adobe Experience Manager che consente agli addetti al marketing di creare **strutturato** contenuto riutilizzabile. I frammenti di contenuto possono essere associati a un SKU del prodotto o a un ID catalogo. Una volta associati, gli addetti al marketing possono individuare facilmente i frammenti correlati in base ai prodotti visualizzati su una pagina. I frammenti di contenuto possono essere inclusi in modo dinamico anche in una pagina di catalogo di prodotto tramite un segnaposto e un’associazione.
+
+## Pagine di contenuto {#content-pages}
+
+Le pagine di contenuto possono essere associate a uno o più SKU del prodotto. Una volta associata, la pagina può essere scoperta con ricerche di parole chiave basate sullo SKU. Le pagine di contenuto possono anche essere incluse in modo dinamico in una pagina di catalogo di prodotti tramite un segnaposto e un’associazione.
+
 
 ## Risorse correlate {#related}
 

@@ -3,10 +3,10 @@ title: Console Frammenti di contenuto
 description: Scopri come gestire i frammenti di contenuto dalla console Frammenti di contenuto.
 landing-page-description: Scopri come gestire i frammenti di contenuto dalla console Frammenti di contenuto. La console è incentrata sull’utilizzo di volumi elevati di frammenti di contenuto per casi d’uso headless, ma viene utilizzata anche per l’authoring delle pagine.
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
+source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '882'
+ht-degree: 66%
 
 ---
 
@@ -36,6 +36,8 @@ La console Frammenti di contenuto è dedicata a gestione, ricerca e creazione di
 
 ![Navigazione globale - Console Frammenti di contenuto](assets/cfc-global-navigation.png)
 
+## Struttura e gestione di base della console {#basic-structure-handling-content-fragments-console}
+
 Selezionando **Frammenti di contenuto** verrà aperta la console in una nuova scheda.
 
 ![Console Frammenti di contenuto - Panoramica](assets/cfc-console-overview.png)
@@ -49,16 +51,20 @@ Nella console puoi osservare tre aree principali:
    * Qui puoi nascondere o visualizzare la struttura delle cartelle
    * Puoi selezionare un ramo specifico della struttura
 * Pannello principale/destro; da qui puoi:
-   * Visualizzare l’elenco di tutti i frammenti di contenuto nel ramo selezionato della struttura
+   * Visualizzare l’elenco di tutti i frammenti di contenuto nel ramo selezionato della struttura:
       * La posizione è indicata dalle breadcrumb; puoi utilizzarle anche per modificare la posizione
-      * Verranno visualizzati i frammenti di contenuto della cartella selezionata e tutte le cartelle secondarie
-         * Vari campi di informazioni su un frammento di contenuto includono collegamenti che possono aprire il frammento appropriato nell’editor
+      * Verranno visualizzati i frammenti di contenuto della cartella selezionata e tutte le cartelle secondarie:
+         * [Vari campi d&#39;informazione](#selectuse-available-columns) informazioni su un frammento di contenuto forniscono collegamenti; a seconda del campo , possono:
+            * Apri il frammento appropriato nell’editor
+            * Mostra informazioni sui riferimenti
+            * Mostra informazioni sulle versioni linguistiche del frammento
+         * È possibile [seleziona uno o più frammenti di contenuto per visualizzare le azioni disponibili](#actions-selected-content-fragment)
       * Puoi selezionare un’intestazione di colonna per ordinare la tabella in base a tale colonna; selezionala ancora per passare da ordine crescente a decrescente
    * **[Creare](#creating-new-content-fragment)** un nuovo frammento di contenuto
    * [Filtrare](#filtering-fragments) i frammenti di contenuto in base a una selezione di predicati e salvare il filtro per utilizzi futuri
    * [Ricercare](#searching-fragments) i frammenti di contenuto
-   * Personalizzare la vista tabella per mostrare le colonne di informazioni selezionate
-   * Utilizzare **Apri in Assets** per aprire direttamente la posizione corrente nella console **Assets**.
+   * [Personalizzare la vista tabella per mostrare le colonne di informazioni selezionate](#selectuse-available-columns)
+   * Utilizzare **Apri in Assets** per aprire direttamente la posizione corrente nella console **Assets**
 
       >[!NOTE]
       >
@@ -68,9 +74,69 @@ Nella console puoi osservare tre aree principali:
       >* direttamente dal riquadro di navigazione globale.
 
 
+## Azioni per un frammento di contenuto (selezionato) {#actions-selected-content-fragment}
+
 Quando si seleziona un frammento specifico, viene aperta una barra degli strumenti incentrata sulle azioni disponibili per tale frammento. Puoi inoltre selezionare più frammenti; la selezione delle azioni verrà regolata di conseguenza.
 
 ![Console Frammenti di contenuto; barra degli strumenti per un frammento selezionato](assets/cfc-fragment-toolbar.png)
+
+* **Apri**
+* **Pubblica** (e **Annulla pubblicazione**)
+* **Copia**
+* **Sposta**
+* **Rinomina**
+* **Elimina**
+
+>[!NOTE]
+>
+>Azioni come Pubblica, Annulla pubblicazione, Elimina, Sposta, Rinomina, Copia, attivano un processo asincrono. L’avanzamento di tale processo può essere monitorato tramite l’interfaccia dei processi asincroni di AEM.
+
+## Informazioni fornite sui frammenti di contenuto {#information-content-fragments}
+
+Il pannello principale/destro (vista tabella) della console fornisce una serie di informazioni sui frammenti di contenuto. Alcuni elementi forniscono anche collegamenti diretti a ulteriori azioni e/o informazioni:
+
+* **Nome**
+   * Fornisce un collegamento per aprire il frammento nell’editor.
+* **Modello**
+   * Fornisce un collegamento per aprire il frammento nell’editor.
+* **Cartella**
+   * Fornisce un collegamento per aprire la cartella nella console.
+Passando il puntatore del mouse sul nome della cartella verrà visualizzato il percorso JCR.
+* **Stato**
+   * Solo informazioni
+* **Modificato**
+   * Solo informazioni
+* **Modificato da**
+   * Solo informazioni
+* **Pubblicato In**
+   * Solo informazioni
+* **Pubblicato da**
+   * Solo informazioni
+* **Con riferimento da**
+
+   * Fornisce un collegamento che apre una finestra di dialogo in cui sono elencati tutti i riferimenti padre di quel frammento; , compresi i riferimenti a frammenti di contenuto, frammenti esperienza e pagine. Per aprire un riferimento specifico, fai clic sul pulsante **Titolo** nella finestra di dialogo.
+
+      ![Console Frammenti di contenuto - Finestra di dialogo Riferimenti](assets/cfc-console-references-dialog.png)
+
+* **Lingua**
+
+   * Indica le impostazioni internazionali del frammento di contenuto e il numero totale di impostazioni internazionali/copie per lingua associate al frammento di contenuto.
+
+      ![Console Frammenti di contenuto - Indicatore della lingua](assets/cfc-console-language-indicator.png)
+
+      * Tocca o fai clic sul conteggio per aprire una finestra di dialogo in cui sono visualizzate tutte le copie della lingua. Per aprire una copia specifica della lingua, fai clic sul pulsante **Titolo** nella finestra di dialogo.
+
+         ![Console Frammenti di contenuto - Finestra di dialogo Lingua](assets/cfc-console-languages-dialog.png)
+
+## Selezionare le colonne disponibili {#select-available-columns}
+
+Come per altre console, puoi configurare le colonne visibili e disponibili per l’azione :
+
+![Console Frammenti di contenuto - configurazione delle colonne](assets/cfc-console-column-icon.png)
+
+Presenta un elenco di colonne che puoi nascondere o mostrare:
+
+![Console Frammenti di contenuto - configurazione delle colonne](assets/cfc-console-column-selection.png)
 
 ## Creazione di un nuovo frammento di contenuto {#creating-new-content-fragment}
 

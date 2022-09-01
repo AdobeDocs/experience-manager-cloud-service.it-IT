@@ -2,10 +2,10 @@
 title: Gestione dei frammenti di contenuto
 description: Scopri come utilizzare la console Frammenti di contenuto per gestire i frammenti di contenuto AEM, per l’authoring delle pagine o come base per i contenuti headless.
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1915'
+ht-degree: 90%
 
 ---
 
@@ -36,6 +36,20 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 >[!NOTE]
 >
 >I frammenti di contenuto sono memorizzati come **Risorse**. Sono gestite principalmente dalla console **Frammenti di contenuto**, ma la gestione è possibile anche dalla console **Assets**.
+
+## Console Frammenti di contenuto {#content-fragments-console}
+
+La console Frammenti di contenuto consente di accedere direttamente ai frammenti e alle attività correlate. Per maggiori informazioni, vedi:
+
+* [Struttura e gestione di base della console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+
+* [Informazioni fornite sui frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+
+* [Azioni relative a un frammento di contenuto nella console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+
+* [Personalizzazione delle colonne disponibili nella console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+
+* [Cercare e filtrare nella console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
@@ -79,61 +93,6 @@ Il frammento di contenuto è stato pubblicato.
 Il frammento di contenuto è stato modificato dopo la pubblicazione (ma prima della pubblicazione della modifica).
 * **Non pubblicato**
 Il frammento di contenuto è stato annullato.
-
-## Azioni relative a un frammento di contenuto nella console Frammenti di contenuto {#actions-content-fragment-console}
-
-Nella barra degli strumenti della console **Frammenti di contenuto** è disponibile una scelta di azioni relative ai frammenti di contenuto:
-
-![Azioni della console](assets/cfm-managing-cf-console-01.png)
-
-* **Apri in Assets**
-* **Crea**
-* La colonna **Riferimento da** fornisce inoltre un collegamento diretto per visualizzare tutti i riferimenti principali di tale frammento, compresi i riferimenti a frammenti di contenuto, frammenti di esperienza e pagine.
-* Passando il puntatore del mouse sul nome della cartella verrà visualizzato il percorso JCR.
-
-Dopo aver selezionato il frammento, saranno disponibili tutte le azioni appropriate:
-
-![Azioni console - frammento selezionato](assets/cfm-managing-cf-console-selected-01.png)
-
-* **Apri**
-* **Pubblica** (e **Annulla pubblicazione**)
-* **Copia**
-* **Sposta**
-* **Rinomina**
-* **Elimina**
-
->[!NOTE]
->
->Azioni come Pubblica, Annulla pubblicazione, Elimina, Sposta, Rinomina, Copia, attivano un processo asincrono. L’avanzamento di tale processo può essere monitorato tramite l’interfaccia dei processi asincroni di AEM.
-
-## Personalizzazione della visualizzazione nella console Frammenti di contenuto {#viewing-content-fragment-console}
-
-La console mostra informazioni sui frammenti di contenuto presenti nella cartella corrente e in tutte le cartelle secondarie.
-
-Puoi personalizzare le informazioni visualizzate mediante l’icona **Personalizza tabella**:
-
-![Icona Personalizza tabella](assets/cfm-managing-cf-console-customize-table-icon.png)
-
-Verrà aperta la finestra di dialogo **Personalizza tabella** in cui è possibile selezionare o deselezionare le colonne disponibili:
-
-![Personalizza tabella](assets/cfm-managing-cf-console-customize-table.png)
-
-## Cercare e filtrare nella console Frammenti di contenuto {#search-filter-content-fragment-console}
-
-Puoi cercare e/o filtrare i frammenti di contenuto da visualizzare nella console.
-
-Operazioni disponibili:
-
-* seleziona la cartella richiesta
-* seleziona i filtri con l’icona **Mostra filtri** e utilizza in parallelo la casella di ricerca:
-
-![Icona Personalizza tabella](assets/cfm-managing-cf-console-filter-search-01.png)
-
-È disponibile una selezione di filtri:
-
-![Filtro e ricerca](assets/cfm-managing-cf-console-filter-search-02.png)
-
-La combinazione di filtri e ricerca può essere salvata anche per riferimento successivo.
 
 ## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 
@@ -285,7 +244,7 @@ Se pubblichi un frammento di contenuto per il quale il modello non è ancora sta
 
 I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione. Questa operazione viene eseguita utilizzando la funzionalità standard di Assets
 
-* Dall’opzione **Pubblicazione** nella barra degli strumenti della [console Frammenti di contenuto](#actions-content-fragment-console)
+* Dall’opzione **Pubblicazione** nella barra degli strumenti della [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
    * **Ora** - dopo la conferma, il frammento viene pubblicato immediatamente
    * **Pianificazione** - puoi selezionare la data e l’ora in cui verrà pubblicato il frammento
 
@@ -326,6 +285,14 @@ Per eliminare un frammento:
 
    >[!CAUTION]
    Se il frammento è già oggetto di riferimento da un altro frammento o da una pagina, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con il comando **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.
+
+## Ricerca di riferimenti padre del frammento {#parent-references-fragment}
+
+È possibile accedere ai dettagli dei riferimenti padre da **Riferimenti** della colonna [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+
+## Ricerca di copie in lingua del frammento {#language-copies-fragment}
+
+I dettagli delle copie per lingua sono accessibili dal **Lingua** della colonna [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Timeline per i frammenti di contenuto {#timeline-for-content-fragments}
 
