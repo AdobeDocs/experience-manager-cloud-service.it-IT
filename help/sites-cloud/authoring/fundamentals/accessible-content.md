@@ -2,10 +2,10 @@
 title: Creazione di contenuti accessibili per Adobe Experience Manager as a Cloud Service (conformità WCAG 2.1)
 description: Utilizzare AEM as a Cloud Service per rendere il contenuto web accessibile e fruibile per le persone con disabilità
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
 workflow-type: tm+mt
-source-wordcount: '14054'
-ht-degree: 99%
+source-wordcount: '14053'
+ht-degree: 97%
 
 ---
 
@@ -28,11 +28,11 @@ Inoltre, vedi:
 * [Accessibilità in Assets](/help/assets/accessibility.md)
 * [Configurazione dell’editor Rich Text per generare contenuto accessibile](/help/implementing/developing/extending/rte-accessible-content.md)
 
-Le linee guida sono classificate in base a tre livelli di conformità: livello A (il più basso), livello AA e livello AAA (il più alto). Brevemente, i livelli sono definiti come segue:
+Le linee guida sono classificate in base a tre livelli di conformità: Livello A (il più basso), livello AA e livello AAA (il più alto). Brevemente, i livelli sono definiti come segue:
 
 * **Livello A**: il sito ha raggiunto un livello minimo di accessibilità di base. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A.
 * **Livello AA**: si tratta di un livello di accessibilità ideale da porsi come obiettivo, in cui il sito raggiunge un livello di accessibilità di base, affinché sia accessibile al maggior numero di persone nella gran parte delle situazioni e con l’utilizzo di più tecnologie possibili. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A e livello AA.
-* **Livello AAA**: il sito ha raggiunto un livello molto alto di accessibilità. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A, AA e AAA.
+* **Livello AAA:** Il sito presenta un livello elevato di accessibilità. Per raggiungere questo livello, devono essere soddisfatti tutti i criteri di successo di livello A, AA e AAA.
 
 Quando si crea un sito, è necessario determinare il livello complessivo che si desidera ottenere.
 
@@ -40,7 +40,7 @@ Nella sezione seguente sono illustrate le [basi delle linee guida WCAG 2.1](http
 
 >[!NOTE]
 >
->In questo documento vengono utilizzati:
+>In questo documento utilizziamo quanto segue:
 >
 >* I [nomi brevi per le linee guida WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* La [numerazione utilizzata nelle linee guida WCAG 2.1](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) per facilitare i riferimenti incrociati al sito web WCAG.
@@ -52,7 +52,7 @@ Nella sezione seguente sono illustrate le [basi delle linee guida WCAG 2.1](http
 
 ### Alternative testuali (1.1)  {#text-alternatives}
 
-[Linea guida 1.1 - Alternative testuali: fornire alternative testuali per qualsiasi contenuto non testuale in modo che possa essere convertito in altri formati richiesti, come la stampa a caratteri grandi, il Braille, la sintesi vocale, i simboli o un linguaggio più semplice.](https://www.w3.org/TR/WCAG/#text-alternatives)
+[Linea guida 1.1 - Alternative testuali: Fornisci alternative testuali per qualsiasi contenuto non testuale in modo che possa essere convertito in altri formati richiesti, ad esempio stampa a caratteri grandi, Braille, sintesi vocale, simboli o un linguaggio più semplice.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
 ### Contenuto non testuale (1.1.1)  {#non-text-content}
 
@@ -60,9 +60,9 @@ Nella sezione seguente sono illustrate le [basi delle linee guida WCAG 2.1](http
 * Livello A
 * Contenuto non testuale: tutto il contenuto non testuale presentato all’utente dispone di un’alternativa testuale che svolge la finalità equivalente, fatta eccezione per le situazioni elencate di seguito.
 
-#### Finalità: contenuto non testuale (1.1.1) {#purpose-non-text-content}
+#### Finalità - Contenuto non testuale (1.1.1) {#purpose-non-text-content}
 
-Le informazioni su una pagina web possono essere fornite in diversi formati non testuali, ad esempio immagini, video, animazioni, tabelle e grafici. Le persone non vedenti o con gravi problemi visivi non sono in grado di vedere il contenuto non testuale, ma possono accedere ai contenuti testuali letti mediante un’utilità per la lettura dello schermo o presentati in forma tattile da un dispositivo Braille. Così, grazie alla disponibilità di alternative testuali al contenuto in formato grafico, i non vedenti possono accedere a una versione equivalente delle informazioni veicolate.
+Le informazioni contenute in una pagina web possono essere fornite in diversi formati non testuali, ad esempio immagini, video, animazioni, grafici e grafici. Le persone non vedenti o con gravi disabilità visive non sono in grado di visualizzare contenuti non testuali, ma possono accedere al contenuto testuale tramite la lettura da parte di un assistente vocale o la presentazione in forma tattile da parte di un dispositivo di visualizzazione Braille. Pertanto, fornendo alternative testuali al contenuto in formato grafico, le persone che non possono vedere il contenuto grafico possono accedere a una versione equivalente delle informazioni fornite dal contenuto.
 
 Un ulteriore vantaggio è rappresentato dal fatto che le alternative testuali consentono l’indicizzazione dei contenuti non testuali da parte dei motori di ricerca.
 
@@ -74,17 +74,17 @@ Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire
 >
 >Alcuni componenti di base predefiniti, come il **[carosello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=it)**, non forniscono un campo di **testo alternativo** per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se il campo **Etichetta** è disponibile nella scheda per l’**[accessibilità](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=it#accessibility-tab)** dell’intero componente.
 >
->Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo dovrà configurarli per supportare l’attributo `alt`, affinché gli autori possano aggiungerlo al contenuto (consulta Aggiunta di supporto per elementi e attributi HTML aggiuntivi).
+>Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo deve configurarli per supportare la `alt` in modo che gli autori possano aggiungerlo al contenuto (consulta Aggiunta di supporto per elementi e attributi di HTML aggiuntivi).
 >
 >Alcuni componenti di base predefiniti, come il **[carosello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, non forniscono un campo di **testo alternativo** per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se il campo **Etichetta** è disponibile nella scheda per l’**[accessibilità](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** dell’intero componente.
 >
->Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo dovrà configurarli per supportare l’attributo `alt`, affinché gli autori possano aggiungerlo al contenuto (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo deve configurarli per supportare la `alt` in modo che gli autori possano aggiungerlo al contenuto (consulta [Aggiunta di supporto per elementi e attributi di HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 In AEM il campo **Testo alternativo** deve essere compilato per impostazione predefinita. Se l’immagine è puramente decorativa e un testo alternativo sarebbe superfluo, seleziona l’opzione **L’immagine è decorativa**.
 
-#### Creazione di buone alternative di testo {#creating-good-text-alternatives}
+#### Creazione di buone alternative testuali  {#creating-good-text-alternatives}
 
-Esistono varie forme di contenuti non testuali, di conseguenza il valore del testo alternativo dipende dal ruolo dell’elemento grafico all’interno della pagina web. Alcune regole generali da seguire:
+Esistono varie forme di contenuto non testuale, pertanto il valore del testo alternativo dipende dal ruolo che l’immagine svolge nella pagina web. Alcune regole generali che puoi trovare utili includono:
 
 * Le alternative testuali dovrebbero essere sintetiche ma veicolare chiaramente le informazioni essenziali fornite dal contenuto non testuale.
 * È bene evitare descrizioni eccessivamente lunghe (oltre 100 caratteri). Se un testo alternativo richiede una descrizione più dettagliata:
@@ -258,7 +258,7 @@ Segui le indicazioni fornite sopra per [Sottotitoli (preregistrati)](#captions-p
 
 Istruzioni dettagliate al riguardo vanno oltre lo scopo di questo documento, ma informazioni utili sono reperibili tramite le risorse seguenti:
 
-* [WebAIM: aggiunta di sottotitoli in tempo reale](https://www.webaim.org/techniques/captions/realtime.php)
+* [WebAIM: aggiunta di sottotitoli in tempo reale](https://webaim.org/techniques/captions/realtime.php)
 
 * [Progetto AccessComputing (University of Washington): i sottotitoli possono essere generati automaticamente utilizzando il riconoscimento vocale?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -567,7 +567,7 @@ Assicurati che il testo contrasti a sufficienza con il relativo sfondo. I rappor
 >* [PMtoEM.com: PX to EM conversion made simple](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
-Per controllare i rapporti di contrasto, utilizza uno strumento di contrasto del colore, come ad esempio [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) o [l’utilità di controllo del contrasto di colore di WebAIM](https://www.webaim.org/resources/contrastchecker/). Questi strumenti consentono di controllare le coppie di colori ed evidenziano eventuali problemi di contrasto.
+Per controllare i rapporti di contrasto, utilizza uno strumento di contrasto del colore, come ad esempio [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) o [l’utilità di controllo del contrasto di colore di WebAIM](https://webaim.org/resources/contrastchecker/). Questi strumenti consentono di controllare le coppie di colori ed evidenziano eventuali problemi di contrasto.
 
 In alternativa, se la specificazione dell’aspetto della pagina non è un problema, è possibile scegliere di non specificare colori di sfondo e del testo in primo piano. In questo caso non sarà necessario alcun controllo del contrasto, in quanto sarà il browser dell’utente a determinare i colori del testo e dello sfondo.
 
