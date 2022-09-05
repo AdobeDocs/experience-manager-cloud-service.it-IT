@@ -2,10 +2,10 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
+source-git-commit: 456b754fad3dc2d8f684f344b69d57d47b823b03
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1566'
+ht-degree: 100%
 
 ---
 
@@ -313,7 +313,7 @@ Durante la modifica di un frammento esperienza, nella scheda a sinistra vengono 
 I dettagli del frammento vengono visualizzati in diverse posizioni:
 
 1. Passa alla posizione dei frammenti esperienza, senza scendere fino alle varianti all’interno del frammento.
-I dettagli vengono visualizzati in tutte le viste della console **Frammenti esperienza**. Nella **vista a elenco** sono visualizzati i dettagli di un’esportazione in Target: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+I dettagli vengono visualizzati in tutte le viste della console **Frammenti esperienza**. Nella **vista a elenco**[ sono visualizzati i dettagli di un’esportazione in Target](/help/sites-cloud/integrating/integrating-adobe-target.md):
 
    ![Dettagli del frammento esperienza](/help/sites-cloud/authoring/assets/xf-15.png)
 
