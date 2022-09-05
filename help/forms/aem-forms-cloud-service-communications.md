@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - Comunicazioni
 description: Unisci automaticamente i dati con i modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
+source-git-commit: 07b9118b8cfc27bc9e2bfa134fbb57c7ae2728ad
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 0%
+source-wordcount: '731'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Un&#39;operazione sincrona è un processo di generazione di documenti in modo li
 * Genera un documento di PDF da un modello e vi unisce i dati.
 * Generare un documento PostScript (PS), PCL (Printer Command Language), Zebra Printing Language (ZPL) da un file XDP o da un documento PDF.
 * Assemblare documenti PDF
-* Smontare documenti PDF
+* Separare i documenti PDF
 * Convertire un documento in un documento conforme a PDF/A
 * Convalida di un documento conforme a PDF/A
 
@@ -75,7 +75,7 @@ In genere, un&#39;organizzazione dispone di più modelli. Ad esempio, un modello
 
 ### Richiamare un’API
 
-La [Documentazione di riferimento API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API fornisce anche il file di definizione API in formato .yaml. Puoi scaricare il file .yaml e caricarlo su postman per verificare la funzionalità delle API.
+La [Documentazione di riferimento API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API fornisce anche il file di definizione API in formato .yaml. Puoi scaricare il file .yaml e caricarlo su postman per verificare la funzionalità delle API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
