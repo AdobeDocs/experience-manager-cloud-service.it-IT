@@ -2,10 +2,10 @@
 title: Anteprima del contenuto
 description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima i contenuti prima della pubblicazione.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
-workflow-type: ht
-source-wordcount: '372'
-ht-degree: 100%
+source-git-commit: 5a804895013e19592f918341bbc7921261b26945
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 91%
 
 ---
 
@@ -45,6 +45,12 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 Per ulteriori informazioni su come recuperare gli URL per i tuoi ambienti, consulta il documento [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md).
 
 Il contenuto può anche essere pubblicato in anteprima utilizzando un [flusso di lavoro della struttura dei contenuti di pubblicazione](/help/operations/replication.md#publish-content-tree-workflow) con il parametro `agentId` impostato su `preview` oppure utilizzando [API di replica](/help/operations/replication.md#replication-api) con `AgentFilter` configurato per l’anteprima.
+
+## Annullamento della pubblicazione di contenuti dall’anteprima {#unpublishing-content-from-preview}
+
+Annullamento della pubblicazione di contenuti **Anteprima** l&#39;ambiente è sostanzialmente lo stesso processo [annullamento della pubblicazione delle pagine](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) dal **Pubblica** ambiente.
+
+L’unica differenza è che è possibile selezionare il **Destinazione** essere **Anteprima**.
 
 ## Configurazione delle impostazioni OSGi per il livello di anteprima {#configuring-osgi-settings-for-the-preview-tier}
 

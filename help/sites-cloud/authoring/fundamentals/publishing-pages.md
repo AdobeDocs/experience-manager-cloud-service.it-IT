@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Come pubblicare e annullare la pubblicazione di pagine con AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 5a804895013e19592f918341bbc7921261b26945
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1811'
+ht-degree: 97%
 
 ---
 
@@ -215,9 +215,9 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
 ## Annullamento della pubblicazione delle pagine {#unpublishing-pages}
 
-L’annullamento della pubblicazione di una pagina ne effettua la rimozione dall’ambiente di pubblicazione e la pagina non sarà più disponibile per i lettori.
+L’annullamento della pubblicazione di una pagina ne effettua la rimozione dalla pubblicazione, oppure [anteprima](/help/sites-cloud/authoring/fundamentals/previewing-content.md), in modo che non sia più disponibile per i lettori.
 
-Con una procedura [simile alla pubblicazione](#publishing-pages), è possibile annullare la pubblicazione di una o più pagine:
+In una [simile alla pubblicazione](#publishing-pages), è possibile annullare la pubblicazione di una o più pagine dalla destinazione desiderata:
 
 * [Dall’editor di pagine](#unpublishing-from-the-editor)
 * [Dalla console Sites](#unpublishing-from-the-console)
@@ -244,6 +244,9 @@ Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazion
    >[!NOTE]
    >
    >Per annullare un’attività di pubblicazione, anche programmata per un momento successivo, accedete alla [console Flusso di lavoro](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) e interrompete il flusso di lavoro corrispondente.
+
+   >[!NOTE]
+   >Se hai [Anteprima](/help/sites-cloud/authoring/fundamentals/previewing-content.md) l&#39;ambiente è selezionabile **Destinazione** durante Gestisci pubblicazione.
 
 1. Per completare l’annullamento della pubblicazione, continua a seguire la procedura guidata come faresti per [pubblicare la pagina](#manage-publication).
 
