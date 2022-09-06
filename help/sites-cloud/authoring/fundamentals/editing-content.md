@@ -2,10 +2,10 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile modificarla per aggiornarne i contenuti
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '2974'
-ht-degree: 100%
+source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
+workflow-type: tm+mt
+source-wordcount: '2992'
+ht-degree: 97%
 
 ---
 
@@ -466,7 +466,7 @@ Una volta eseguito il blocco le informazioni di visualizzazione della console ve
 
 >[!CAUTION]
 >
->Il blocco di pagina può essere eseguito quando si impersona un utente. Tuttavia, una pagina bloccata in tale modalità può essere sbloccata solo dall’utente impersonato o da un utente amministratore.
+>Il blocco di pagina può essere eseguito quando si impersona un utente. Tuttavia, una pagina bloccata in questo modo può essere sbloccata solo dall’utente impersonato o da un utente con diritti di amministratore (un membro del profilo IMS dell’amministratore) AEM.
 >
 >Non è consentito sbloccare le pagine bloccate impersonando l’utente che le ha boccate.
 <!--
@@ -483,7 +483,7 @@ Nel menu Informazioni pagina è presente l’opzione **Sblocca** e l’icona Blo
 
 >[!CAUTION]
 >
->Il blocco di pagina può essere eseguito quando si impersona un utente. Tuttavia, una pagina bloccata in tale modalità può essere sbloccata solo dall’utente impersonato o da un utente amministratore.
+>Il blocco di pagina può essere eseguito quando si impersona un utente. Tuttavia, una pagina bloccata in questo modo può essere sbloccata solo dall’utente impersonato o da un utente con diritti di amministratore (un membro del profilo IMS dell’amministratore) AEM.
 >
 >Non è consentito sbloccare le pagine bloccate impersonando l’utente che le ha boccate.
 <!--
