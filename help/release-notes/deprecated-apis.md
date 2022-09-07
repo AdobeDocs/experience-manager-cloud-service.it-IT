@@ -2,10 +2,10 @@
 title: API obsolete
 description: Note sulla versione specifiche per le API obsolete e rimosse in  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 9e84b57efef89613c7ddf7abec3e71d1d844ed30
+source-git-commit: ed57f15e2e85d1b2d957d396f9d93725d389375c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1063'
+ht-degree: 99%
 
 ---
 
@@ -197,6 +197,12 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
     <td>È necessario aggiornare Handlebars da 4.0.5 a 4.3.0 a causa di vulnerabilità di sicurezza. Questo pacchetto non è più presente nella versione aggiornata di Handlebars.</td>
     <td>5/5/2022</td>
     <td>8/5/2022</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.resourceresolverhelper</td>
+    <td>Questa API non è più supportata. Utilizza invece org.apache.sling.api.resource.ResourceResolverFactory .</td>
+    <td>29/09/2022</td>
+    <td>24/11/2022</td>
   </tr>
 </tbody>
 </table>
