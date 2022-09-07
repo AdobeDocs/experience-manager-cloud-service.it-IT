@@ -2,10 +2,10 @@
 title: Scopri lo sviluppo di CMS Headless
 description: In questa parte del Percorso AEM Headless Developer, scopri la tecnologia headless e perché utilizzarla.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 2abceb1333877c41c61d1036ab82ec40058011fe
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ In questa parte del [AEM Percorso di sviluppo headless,](overview.md) scopri la 
 
 ## Obiettivo {#objective}
 
-Questo documento è utile per comprendere la distribuzione dei contenuti headless e perché deve essere utilizzato. Dopo la lettura è necessario:
+Questo documento è utile per comprendere la distribuzione dei contenuti headless e perché deve essere utilizzato. Dopo la lettura dovresti:
 
 * Comprendere i concetti e la terminologia di base per la distribuzione di contenuti headless
 * Capire perché e quando è richiesto un headless
@@ -86,7 +86,7 @@ La distribuzione di contenuti headless utilizza spesso le API GraphQL. GraphQL c
 
 Qualunque sia la tua API scelta, definendo un sistema headless basato su API comuni, puoi sfruttare il browser più recente e altre tecnologie web come le app web progressive (PWA). Le API creano un&#39;interfaccia standard facilmente estensibile e adattabile.
 
-In genere, il rendering del contenuto viene eseguito sul lato client. In genere, significa che qualcuno effettua una chiamata al contenuto su un dispositivo mobile, che il CMS consegna il contenuto e che quindi il dispositivo mobile (il client) è responsabile del rendering del contenuto servito. Se il dispositivo è vecchio o altrimenti lento, anche l&#39;esperienza digitale è lenta.
+In genere, il rendering del contenuto viene eseguito sul lato client. In genere, il contenuto viene richiamato da un utente su un dispositivo mobile, il CMS lo distribuisce e il dispositivo mobile (il client) è responsabile del rendering del contenuto servito. Se il dispositivo è vecchio o altrimenti lento, anche l&#39;esperienza digitale è lenta.
 
 La possibilità di scollegare i contenuti dalla presentazione consente di avere un maggiore controllo su tali problemi di prestazioni lato client. Il rendering lato server (SSR) trasferisce la responsabilità del rendering del contenuto dal browser del client al server. In questo modo, in qualità di fornitore del contenuto, puoi offrire al pubblico un livello di prestazioni garantito, se necessario.
 
@@ -114,7 +114,7 @@ Questo percorso si concentra sul modello di distribuzione dei contenuti headless
 
 ## Novità {#what-is-next}
 
-Grazie per aver iniziato sul tuo percorso AEM senza testa! Dopo aver letto questo documento, è necessario:
+Grazie per aver iniziato sul tuo percorso AEM senza testa! Dopo aver letto questo documento, devi:
 
 * Comprendi i concetti e la terminologia di base per la distribuzione di contenuti headless.
 * Capire perché e quando è richiesto il headless.
