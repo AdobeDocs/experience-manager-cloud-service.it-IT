@@ -1,8 +1,8 @@
 ---
-title: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione 2021.4.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione 2021.4.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 8f4b504898b1332c21f3cb82ab9bbf663c9dc312
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 9%
@@ -11,7 +11,7 @@ ht-degree: 9%
 
 # Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note generali sulla versione per la versione corrente (più recente) di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note generali sulla versione per la versione corrente (più recente) di [!DNL Adobe Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >Da qui puoi passare alle note sulla versione delle versioni precedenti; per esempio, per quelli del 2020, 2021 e così via.
@@ -192,4 +192,4 @@ La data di rilascio di Best Practices Analyzer v2.1.12 è il 12 aprile 2021.
 ### Correzioni di bug {#bug-fixes-bpa-april}
 
 * Sono state visualizzate righe duplicate nel BPA segnalato. Questo problema è stato risolto.
-* L’interfaccia utente BPA sulla versione 6.4.2 AEM generava un errore JS che disattivava il pulsante Genera report . Questo problema è stato risolto
+* L’interfaccia utente BPA sulla versione 6.4.2 AEM generava un errore JS che disattivava il pulsante Genera report . Questo problema è stato risolto.
