@@ -2,10 +2,10 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile modificarla per aggiornarne i contenuti
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
+source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
 workflow-type: tm+mt
-source-wordcount: '2992'
-ht-degree: 97%
+source-wordcount: '3019'
+ht-degree: 96%
 
 ---
 
@@ -466,12 +466,11 @@ Una volta eseguito il blocco le informazioni di visualizzazione della console ve
 
 >[!CAUTION]
 >
->Il blocco di pagina può essere eseguito quando si impersona un utente. Tuttavia, una pagina bloccata in questo modo può essere sbloccata solo dall’utente impersonato o da un utente con diritti di amministratore (un membro del profilo IMS dell’amministratore) AEM.
+>Il blocco di pagina può essere eseguito quando si impersona un utente. Tuttavia, una pagina bloccata in questo modo può essere sbloccata (dai clienti) solo utilizzando l’utente impersonato.
 >
->Non è consentito sbloccare le pagine bloccate impersonando l’utente che le ha boccate.
-<!--
->Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
--->
+>Non è possibile sbloccare le pagine impersonando l’utente che ha bloccato la pagina.
+>
+>Se l’utente che ha bloccato la pagina non è disponibile per sbloccare la pagina, contatta l’Assistenza clienti per valutare le opzioni per rimuovere il blocco.
 
 ## Sblocco di una pagina {#unlocking-a-page}
 
@@ -483,9 +482,20 @@ Nel menu Informazioni pagina è presente l’opzione **Sblocca** e l’icona Blo
 
 >[!CAUTION]
 >
->Il blocco di pagina può essere eseguito quando si impersona un utente. Tuttavia, una pagina bloccata in questo modo può essere sbloccata solo dall’utente impersonato o da un utente con diritti di amministratore (un membro del profilo IMS dell’amministratore) AEM.
+>Il blocco di pagina può essere eseguito quando si impersona un utente. Tuttavia, una pagina bloccata in questo modo può essere sbloccata (dai clienti) solo utilizzando l’utente impersonato.
 >
->Non è consentito sbloccare le pagine bloccate impersonando l’utente che le ha boccate.
+>Non è possibile sbloccare le pagine impersonando l’utente che ha bloccato la pagina.
+>
+>Se l’utente che ha bloccato la pagina non è disponibile per sbloccare la pagina, contatta l’Assistenza clienti per valutare le opzioni per rimuovere il blocco.
+
+<!--
+>[!CAUTION]
+>
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
+>
+>Pages can not be unlocked by impersonating the user who locked the page.
+-->
+
 <!--
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
