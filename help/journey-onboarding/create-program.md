@@ -2,13 +2,13 @@
 title: Creare un programma
 description: Scopri come utilizzare Cloud Manager per creare il tuo primo programma.
 role: Admin, User, Developer
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
+source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 2%
+source-wordcount: '648'
+ht-degree: 4%
 
 ---
-
 
 # Creare un programma {#create-program}
 
@@ -39,11 +39,15 @@ Esistono due diversi tipi di programmi:
 
 Poiché hanno scopi diversi, i diversi ambienti hanno opzioni diverse. Tuttavia, il processo di creazione è simile. Per questo percorso di onboarding creeremo un ambiente sandbox.
 
+>[!NOTE]
+>
+>Per impostazione predefinita, un utente con accesso a un ambiente AEM avrà anche il ruolo Utente di Cloud >Manager . Questo ruolo in e di per sé è insufficiente per consentire all&#39;utente di accedere alla visualizzazione dei dettagli del programma. Un utente con solo il ruolo utente di Cloud Manager può navigare tramite le opzioni del menu di programma fino all’URL dell’autore dell’ambiente AEM (se esistono ambienti). Gli utenti devono contattare il proprio amministratore se desiderano ottenere l&#39;accesso a livello di programma.
+
 ## Creazione di un programma sandbox {#create-sandbox}
 
 Segui questi passaggi per creare un programma sandbox.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione appropriata.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
 1. Dalla pagina di destinazione di Cloud Manager, fai clic su **Aggiungi programma** nell’angolo in alto a destra dello schermo.
 
