@@ -1,19 +1,19 @@
 ---
-title: Note sulla versione per Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service
-description: Queste sono le note sulla versione per Cloud Manager 2022.8.0 in AEM as a Cloud Service.
+title: Note sulla versione per Cloud Manager 202.9.0 in Adobe Experience Manager as a Cloud Service
+description: Queste sono le note sulla versione per Cloud Manager 2022.9.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 0b453290cd0e7dc5ec319e8ddbfa085f109717df
+source-git-commit: f7f4f1c81b1dd611b723514b8c06aad6909a73c1
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 7%
+source-wordcount: '212'
+ht-degree: 2%
 
 ---
 
 
-# Note sulla versione per Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Note sulla versione per Cloud Manager 202.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina documenta le note sulla versione di Cloud Manager 2022.8.0 in AEM as a Cloud Service.
+Questa pagina documenta le note sulla versione di Cloud Manager 2022.9.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,16 +21,16 @@ Questa pagina documenta le note sulla versione di Cloud Manager 2022.8.0 in AEM 
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione 2022.8.0 di Cloud Manager in AEM as a Cloud Service è l’11 agosto 2022. La prossima versione è prevista per il 9 settembre 2022.
+La data di rilascio della versione 2022.9.0 di Cloud Manager in AEM as a Cloud Service è l’8 settembre 2022. La prossima versione è prevista per il 6 ottobre 2022.
 
 ## Novità {#what-is-new}
 
-* È disponibile un’esperienza di interfaccia utente aggiornata nella sezione [aggiungi flusso di lavoro dell’ambiente.](/help/implementing/cloud-manager/manage-environments.md)
-* [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) incluso in Cloud Manager è stato aggiornato alla versione 37.
+* È ora possibile configurare le guide AEM in modo autonomo sui programmi sandbox.
+* I clienti che non dispongono di alcun ruolo di Cloud Manager non potranno accedere ai dettagli del programma. Tuttavia, possono passare ai punti finali di authoring dalle pagine di destinazione di Cloud Manager.
+* I clienti possono configurare **Notifica incidente e proattiva** gruppi per ricevere Adobi su incidenti o raccomandazioni relativi alla propria applicazione AEMaaCS.
+* Aggiungi un costo del programma nell&#39;interfaccia utente fornirà in modo coerente descrizioni comandi quando è disabilitato a causa di motivi relativi a autorizzazioni o adesione.
 
 ## Correzioni di bug {#bug-fixes}
 
-* È stato corretto il caso in cui i nuovi utenti relativi alle relazioni non venivano creati o eliminati nell’interfaccia utente di Cloud Manager.
-* Alcuni casi di errori di creazione dell’archivio non frequenti sono stati resi più resilienti.
-* Le occorrenze rare degli errori di configurazione dell’organizzazione VSTS ora vengono ridotte a causa dei nuovi tentativi introdotti.
-* Una migliore convalida durante la creazione di nuovi account secondari relativi ora evita alcuni errori.
+* Il flusso di lavoro Aggiungi ambiente include convalide aggiuntive per garantire il successo del processo.
+* È stato migliorato il feedback dei clienti sulla build delle app AEM dei clienti quando maven si trova ad affrontare problemi di connettività ai repository privati.
