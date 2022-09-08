@@ -3,7 +3,7 @@ title: Gruppi di utenti per le notifiche
 description: Scopri come creare un gruppo di utenti nell’Admin Console per gestire la ricezione di notifiche e-mail importanti.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
+source-git-commit: 532184edca597452e76fdf763e7377d5e835bebc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -81,7 +81,7 @@ Ora che i gruppi sono stati creati, devi assegnare gli utenti appropriati. Puoi 
 
 1. Seleziona la **Utenti** scheda dalla navigazione in alto, quindi seleziona **Aggiungi utente**.
 
-![Utenti](assets/cloud_manager_add_user.png)
+   ![Utenti](assets/cloud_manager_add_user.png)
 
 1. In **Aggiungi utenti al tuo team** , immetti l’ID e-mail dell’utente che desideri aggiungere.
 
