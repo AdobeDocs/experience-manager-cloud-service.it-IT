@@ -8,7 +8,7 @@ exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -81,6 +81,6 @@ I flussi di lavoro di post-elaborazione sono regolari [!DNL Experience Manager] 
 >* [Introduzione all’utilizzo dei microservizi per le risorse](asset-microservices-configure-and-use.md)
 >* [Formati di file supportati](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
->* App desktop [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* App desktop [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it)
 >* [Documentazione Apache Oak sull&#39;accesso binario diretto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 

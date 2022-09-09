@@ -161,7 +161,7 @@ Vedi anche la risorsa npm [@adobe/aem-react-editable-components](https://www.npm
 
 Il componente SPA è mappato a un contenitore grafico come la griglia reattiva e deve aggiungere un segnaposto figlio virtuale durante la creazione del contenuto. Quando il contenuto del SPA viene creato dall’Editor pagina, tale contenuto viene incorporato nell’editor utilizzando un iframe e il `data-cq-editor` viene aggiunto al nodo del documento di tale contenuto. Quando il `data-cq-editor` Il contenitore deve includere un elemento HTMLElement per rappresentare l&#39;area con cui l&#39;autore interagisce quando inserisce un nuovo componente nella pagina.
 
-Ad esempio:
+Esempio:
 
 ```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>

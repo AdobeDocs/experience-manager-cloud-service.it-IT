@@ -1,7 +1,8 @@
 ---
 title: Configurare le restrizioni di caricamento delle risorse
-description: 'Configura risorse Adobe Experience Manager per limitare il tipo di risorse che gli utenti possono caricare in base al tipo MIME. Consente di evitare caricamenti accidentali di formati indesiderati e file dannosi. '
-source-git-commit: 3be29e4f76b53b4be7815e50ec42c627fec84b68
+description: Configura risorse Adobe Experience Manager per limitare il tipo di risorse che gli utenti possono caricare in base al tipo MIME. Consente di evitare caricamenti accidentali di formati indesiderati e file dannosi.
+exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 1%
@@ -49,7 +50,3 @@ Per aggiungere formati immagine specifici ai tipi MIME consentiti e per limitare
 ![Restrizioni alle risorse](assets/asset-restrictions.png)
 
 In base alle impostazioni illustrate nell’immagine, puoi caricare le immagini nei formati .JPG, .PNG e .GIF in Experience Manager Assets.
-
-
-
-

@@ -9,17 +9,17 @@ exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2397'
-ht-degree: 19%
+ht-degree: 22%
 
 ---
 
 # Gestire le raccolte {#manage-collections}
 
-Una raccolta è un set di risorse all’interno di Adobe Experience Manager Assets. Utilizza le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati della ricerca.
+Una raccolta è un set di risorse all’interno di Adobe Experience Manager Assets. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati della ricerca.
 
 A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Puoi condividere raccolte con vari utenti a cui sono assegnati diversi livelli di privilegi, tra cui visualizzazione, modifica e così via.
 
-Puoi condividere più raccolte con un utente. Ogni raccolta contiene riferimenti alle risorse. L’integrità referenziale delle risorse viene mantenuta tra le raccolte.
+Puoi condividere più raccolte con un utente. Ogni raccolta contiene riferimenti alle risorse. L’integrità dei riferimenti alle risorse viene mantenuta tra le varie raccolte.
 
 Le raccolte sono dei tipi seguenti, in base alla modalità di raccolta delle risorse:
 
@@ -113,7 +113,7 @@ Le raccolte avanzate vengono create salvando una ricerca per modificarne il cont
 1. Tocca o fai clic su **[!UICONTROL Sovrascrittura]** per sostituire la raccolta avanzata originale con la raccolta modificata. In alternativa, seleziona **[!UICONTROL Salva con nome]** per salvare la raccolta modificata separatamente.
 1. Nella finestra di dialogo di conferma, tocca o fai clic su **[!UICONTROL Salva]** per completare il processo.
 
-## Visualizzare e modificare i metadati della raccolta {#view-and-edit-collection-metadata}
+## Visualizzare e modificare i metadati di una raccolta {#view-and-edit-collection-metadata}
 
 I metadati della raccolta includono dati sulla raccolta, compresi eventuali tag aggiunti.
 

@@ -1,6 +1,6 @@
 ---
-title: Note sulla versione 2021.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione 2021.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione 2021.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione 2021.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -66,7 +66,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di agosto 2021](https://video.
 
 * **Connettore dell’archivio dati di Microsoft Azure**: Ora puoi [collega il modello dati del modulo all’archiviazione di Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Consente di recuperare e archiviare dati adattivi del modulo in Microsoft Azure Storage as a BLOB.
 
-### Nuove funzioni disponibili in [!DNL Forms] canale prerelease {#prerelease-features-forms}
+### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms}
 
 * **Utilizzare i ruoli Adobe Sign in un modulo adattivo**: Adobe Sign per i livelli di servizio aziendali e aziendali ha la possibilità di espandere i ruoli per i destinatari del contratto, oltre al solo firmatario, in modo da soddisfare meglio i requisiti del flusso di lavoro. Ora puoi abilitare ogni destinatario dell’accordo a configurare il proprio ruolo in un modulo adattivo, con il ruolo predefinito Firma .
 

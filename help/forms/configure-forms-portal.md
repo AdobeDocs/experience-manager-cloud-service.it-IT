@@ -104,7 +104,7 @@ Una volta abilitato un componente portale, puoi utilizzarlo nell’istanza di au
 
 Puoi creare e personalizzare Forms Portal sui siti web creati utilizzando AEM aggiungendo e configurando i componenti del portale. Assicurati che [componenti abilitati](#enable-forms-portal-components) prima di utilizzarli nel portale Forms.
 
-Per aggiungere un componente, trascinalo dal riquadro Componenti al contenitore di layout nella pagina oppure tocca l’icona di aggiunta nel contenitore di layout e aggiungi il componente dal [!UICONTROL Inserisci nuovo componente] finestra di dialogo.
+Per aggiungere un componente, trascina e rilascia il componente dal riquadro Componenti al contenitore di layout nella pagina oppure tocca l’icona di aggiunta nel contenitore di layout e aggiungi il componente dal [!UICONTROL Inserisci nuovo componente] finestra di dialogo.
 
 ### Configura il componente Bozze e invii {#configure-drafts-submissions-component}
 

@@ -55,7 +55,7 @@ La configurazione deve essere associata al servizio OSGi **Configurazione del co
 >
 >Vedi [Configurazione OSGi](/help/implementing/deploying/overview.md#osgi-configuration) per ulteriori dettagli.
 
-Ad esempio:
+Esempio:
 
 ![Configurazione del componente Frammento di contenuto di configurazione OSGi](assets/cf-component-configuration-osgi.png)
 

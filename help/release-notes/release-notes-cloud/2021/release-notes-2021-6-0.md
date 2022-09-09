@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione 2021.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione 2021.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -30,12 +30,12 @@ La versione seguente (2021.7.0) sarà del 29 luglio 2021.
 
 Dai un&#39;occhiata al [Panoramica sulla versione di giugno 2021](https://video.tv.adobe.com/v/334296) video per un riepilogo delle funzioni aggiunte.
 
-## Documentazione XML per AEM as a cloud Service {#xml-documentation}
+## XML Documentation for AEM as a cloud Service {#xml-documentation}
 
 ### Novità {#what-is-new-xml-documentation}
 
-* La documentazione XML per AEM as a Cloud Service è ora GA.
-* In questo modo i clienti esistenti di AEM Cloud Service potranno procurarsi l’aggiunta alla documentazione XML per l’importazione, la creazione, la gestione e la distribuzione di contenuti tecnici su più canali, inclusi i siti di AEM
+* XML Documentation per AEM as a Cloud Service è ora GA.
+* In questo modo, i clienti AEM Cloud Service esistenti potranno acquistare addon XML Documentation per l’importazione, la creazione, la gestione e la distribuzione di contenuti tecnici su più canali, compresi i siti di AEM
 
 ## Cloud Manager {#cloud-manager}
 
@@ -74,7 +74,7 @@ La prossima versione è prevista per il 15 luglio 2021.
 
 * Le definizioni dei nodi JCR contenenti una nuova riga dopo che il nome dell&#39;elemento principale non è stato analizzato correttamente.
 
-* L&#39;API degli archivi di elenchi non filtrerebbe gli archivi eliminati.
+* L&#39;API degli archivi di elenco non filtrerebbe gli archivi eliminati.
 
 * Veniva visualizzato un messaggio di errore non corretto quando veniva fornito un valore non valido per il passaggio di pianificazione.
 

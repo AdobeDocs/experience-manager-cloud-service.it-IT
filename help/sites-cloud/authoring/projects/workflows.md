@@ -3,7 +3,7 @@ title: Utilizzo dei flussi di lavoro per i progetti
 description: La soluzione offre diversi flussi di lavoro per progetti già pronti all’uso.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 100%
 

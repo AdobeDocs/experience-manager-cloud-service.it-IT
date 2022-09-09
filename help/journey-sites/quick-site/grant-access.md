@@ -3,8 +3,8 @@ title: Concedere l’accesso allo sviluppatore front-end
 description: Inserisci gli sviluppatori front-end in Cloud Manager in modo che abbiano accesso all'archivio git del sito AEM e alla pipeline.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '785'
 ht-degree: 100%
 
 ---

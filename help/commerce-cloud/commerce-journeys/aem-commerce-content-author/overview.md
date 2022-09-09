@@ -5,7 +5,7 @@ exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 6%
+ht-degree: 35%
 
 ---
 
@@ -23,25 +23,25 @@ Questa guida ti guida attraverso gli argomenti più importanti sull’authoring 
 * Gestire le esperienze catalogo prodotti in fase di staging
 * Arricchire i dati dei prodotti con i contenuti mediante gli strumenti di gestione dell’esperienza di prodotto
 
-## percorsi di documentazione AEM {#documentation-journeys}
+## Percorsi di documentazione AEM {#documentation-journeys}
 
-[Un Percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e forse complicati fornendo una narrazione che aiuta il lettore, che può essere nuovo a AEM, capire e risolvere un problema di business dall&#39;inizio alla fine, assumendo al contempo un argomento preliminare minimo o AEM conoscenza.
+[Un percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e forse complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente di AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
 
-I Percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback dai progetti dei clienti.
+I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti dei clienti.
 
-Se desideri sapere come Adobe consiglia di risolvere i casi aziendali relativi ai siti con AEM, dove iniziare è possibile utilizzare gli Percorsi AEM Sites.
+Se desideri sapere come Adobe consiglia di risolvere i casi aziendali relativi ai siti con AEM, per iniziare puoi utilizzare i Percorsi AEM Sites.
 
 ## Pubblico {#audience}
 
 Questo percorso è progettato per l’autore di contenuti Commerce AEM. Questo percorso descrive i requisiti, i passaggi e l’approccio per iniziare a gestire le pagine di catalogo, i modelli e le esperienze di prodotto complete.
 
-Le informazioni in questo percorso possono ovviamente essere utili ad altri utenti, ma alcune informazioni saranno superflue a determinati ruoli. Continuate a seguire i prossimi percorsi per ruoli aggiuntivi.
+Le informazioni in questo percorso possono ovviamente essere utili ad altri utenti, ma alcune informazioni saranno superflue a determinati ruoli. Rimani sintonizzato per i prossimi percorsi che includeranno ruoli aggiuntivi.
 
 ## Il Percorso {#the-journey}
 
-Esplorerai molti argomenti in questo percorso. I seguenti articoli ti forniscono informazioni fondamentali e ti collegano alla documentazione tecnica dettagliata.
+In questo percorso esplorerai molti argomenti. I seguenti articoli ti forniscono informazioni fondamentali e ti collegano alla documentazione tecnica dettagliata.
 
-Anche se puoi passare direttamente a una particolare parte del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se hai poca esperienza con AEM Contenuto e Commerce, ti consigliamo di iniziare dall’inizio e procedere in sequenza.
+Anche se puoi passare direttamente a una parte specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se hai poca esperienza con AEM Contenuto e Commerce, ti consigliamo di iniziare dall’inizio e procedere in sequenza.
 
 | # | Articolo | Descrizione |
 |---|---|---|

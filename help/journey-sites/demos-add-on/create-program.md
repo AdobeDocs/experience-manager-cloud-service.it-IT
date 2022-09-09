@@ -3,7 +3,7 @@ title: Crea programma
 description: Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 100%
 

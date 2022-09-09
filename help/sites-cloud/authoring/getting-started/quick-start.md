@@ -247,7 +247,7 @@ Queste azioni possono essere attivate da:
    * [Copia](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
       * Sarà poi necessario passare alla nuova posizione e incollare.
-   * [Spostare](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
+   * [Sposta](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
       * Verrà visualizzata la procedura guidata per la raccolta delle informazioni necessarie allo spostamento della pagina. Segui le istruzioni sullo schermo.
    * [Eliminare](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):

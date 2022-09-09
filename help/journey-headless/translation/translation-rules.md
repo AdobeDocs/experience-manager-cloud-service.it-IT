@@ -5,7 +5,7 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 0%
+ht-degree: 40%
 
 ---
 
@@ -17,8 +17,8 @@ Scopri come definire le regole di traduzione per identificare i contenuti per la
 
 Nel documento precedente del percorso di traduzione senza testa AEM, [Configurare il connettore di traduzione](configure-connector.md) hai imparato a installare e configurare il connettore di traduzione e ora dovresti:
 
-* Comprendi gli importanti parametri del framework di integrazione della traduzione in AEM.
-* È possibile impostare la propria connessione al servizio di traduzione.
+* Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
+* Essere in grado di impostare la propria connessione al servizio di traduzione.
 
 Ora che il connettore è configurato, questo articolo illustra il passaggio successivo per identificare il contenuto da tradurre.
 
@@ -33,10 +33,10 @@ Ora che il connettore è configurato, questo articolo illustra il passaggio succ
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a capire come utilizzare AEM regole di traduzione per identificare il contenuto di traduzione. Dopo aver letto questo documento è necessario:
+Questo documento ti aiuta a capire come utilizzare le regole di traduzione di AEM per identificare il contenuto per la traduzione. Dopo aver letto questo documento, dovresti:
 
-* Comprendi cosa fanno le regole di traduzione.
-* Puoi definire le tue regole di traduzione.
+* Comprendere come funzionano le regole di traduzione.
+* Essere in grado di definire le tue regole di traduzione.
 
 ## Regole di traduzione {#translation-rules}
 
@@ -49,7 +49,7 @@ Le regole di traduzione includono le seguenti informazioni:
 * Percorso del contenuto a cui si applica la regola
    * La regola si applica anche ai discendenti del contenuto
 * Nomi delle proprietà che contengono il contenuto da tradurre
-   * La proprietà può essere specifica per un tipo di risorsa specifico o per tutti i tipi di risorsa
+   * La proprietà può essere specifica per un tipo di risorsa specifica o per tutti i tipi di risorsa
 
 Poiché i modelli per frammenti di contenuto, che definiscono la struttura dei frammenti di contenuto, sono unici nel tuo progetto, è fondamentale impostare le regole di traduzione in modo AEM conoscere gli elementi dei modelli di contenuto da tradurre.
 
@@ -61,9 +61,9 @@ Poiché i modelli per frammenti di contenuto, che definiscono la struttura dei f
 
 È possibile creare più regole per supportare requisiti di traduzione complessi. Ad esempio, un progetto su cui si sta lavorando richiede la traduzione di tutti i campi del modello, ma su un altro solo campo di descrizione deve essere tradotto mentre i titoli non vengono tradotti.
 
-Le regole di traduzione sono progettate per gestire tali scenari. Tuttavia, in questo esempio viene illustrato come creare regole concentrandoci su una configurazione semplice e singola.
+Le regole di traduzione sono progettate per gestire tali scenari. Tuttavia, in questo esempio viene illustrato come creare regole concentrandosi su una configurazione semplice e singola.
 
-C&#39;è una **Configurazione della traduzione** console disponibile per la configurazione delle regole di traduzione. Per accedervi:
+Una console **Configurazione della traduzione** è disponibile per la configurazione delle regole di traduzione. Per accedervi:
 
 1. Passa a **Strumenti** -> **Generale**.
 1. Tocca o fai clic su **Configurazione della traduzione**.
@@ -79,10 +79,10 @@ In **Configurazione della traduzione** Nell’interfaccia utente sono disponibil
    ![Editor regole di traduzione](assets/translation-rules-editor.png)
 1. Per impostazione predefinita, tutte le configurazioni vengono ereditate dal percorso padre, in questo caso `/content/dam`. Deseleziona l’opzione **Eredita da`/content/dam`** per aggiungere ulteriori campi alla configurazione.
 1. Una volta deselezionato, sotto il **Generale** aggiungere i nomi delle proprietà dei modelli di frammento di contenuto desiderati nell’elenco [precedentemente identificato come campi per la traduzione.](getting-started.md#content-models)
-   1. Immetti il nome della proprietà nel **Nuova proprietà** campo .
-   1. Le opzioni **Traduci** e **Eredita** vengono controllati automaticamente.
-   1. Tocca o fai clic su **Aggiungi**.
-   1. Ripetere questi passaggi per tutti i campi da tradurre.
+   1. Immetti il nome della proprietà nel campo **Nuova proprietà**.
+   1. Le opzioni **Traduci** e **Eredita** vengono controllate automaticamente.
+   1. Tocca o fai clic su **Avanti**.
+   1. Ripeti questi passaggi per tutti i campi da tradurre.
    1. Tocca o fai clic su **Salva**.
       ![Aggiungi proprietà](assets/add-property.png)
 
@@ -98,8 +98,8 @@ Tali funzioni generalmente non sono necessarie per iniziare a localizzare il con
 
 Ora che hai completato questa parte del percorso di traduzione headless dovresti:
 
-* Comprendi cosa fanno le regole di traduzione.
-* Puoi definire le tue regole di traduzione.
+* Comprendere come funzionano le regole di traduzione.
+* Essere in grado di definire le tue regole di traduzione.
 
 Sviluppa questa conoscenza e continua il tuo percorso di traduzione senza testa AEM prossimo revisione del documento [Tradurre il contenuto](translate-content.md) dove scoprirai come il connettore e le regole funzionano insieme per tradurre contenuti headless.
 

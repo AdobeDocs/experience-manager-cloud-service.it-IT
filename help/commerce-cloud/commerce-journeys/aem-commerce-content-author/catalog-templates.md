@@ -5,7 +5,7 @@ exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ Questo articolo si basa su questi fondamentali.
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come gestire le pagine e i modelli del catalogo dei prodotti. Dopo la lettura è necessario:
+Questo documento spiega come gestire le pagine e i modelli del catalogo dei prodotti. Dopo la lettura dovresti:
 
 * comprendere i concetti dei modelli di catalogo
 * funzionamento dei modelli generici

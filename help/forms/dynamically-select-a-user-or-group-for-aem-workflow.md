@@ -1,6 +1,6 @@
 ---
 title: Seleziona dinamicamente un utente o un gruppo per i passaggi del flusso di lavoro incentrati su AEM Forms
-description: 'Scopri come selezionare un utente o un gruppo per un [!DNL AEM Forms] flusso di lavoro in fase di runtime. '
+description: Scopri come selezionare un utente o un gruppo per un [!DNL AEM Forms] flusso di lavoro in fase di runtime.
 content-type: troubleshooting
 topic-tags: publish
 source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0

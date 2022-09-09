@@ -3,7 +3,7 @@ title: Creare un sito da un modello
 description: Scopri come creare rapidamente un nuovo sito AEM utilizzando un modello di sito.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 100%
 

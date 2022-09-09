@@ -1,5 +1,5 @@
 ---
-title: 'Domande frequenti as a Cloud Service di Forms '
+title: Domande frequenti as a Cloud Service di Forms
 description: Domande frequenti as a Cloud Service di Forms
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7

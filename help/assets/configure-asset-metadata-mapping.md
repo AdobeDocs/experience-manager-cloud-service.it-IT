@@ -1,7 +1,8 @@
 ---
 title: Configurare la mappatura dei metadati delle risorse tra Workfront e Experience Manager Assets
 description: Mappa i campi dei metadati della risorsa tra Adobe Workfront e le applicazioni Experience Manager as a Cloud Service. Come risultato della mappatura dei campi di metadati, quando invii una risorsa da Workfront a Experience Manager Assets, puoi visualizzare i metadati della risorsa mappata in Experience Manager Assets.
-source-git-commit: 212ecb5330de739b2e479d36462953ce33697c1c
+exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -127,6 +128,3 @@ Per applicare le impostazioni metadati alla cartella immagine:
 1. Selezionare la cartella di destinazione in cui [l’immagine viene inviata dall’applicazione Adobe Workfront](#send-image-workfront-assets) e fai clic su **[!UICONTROL Applica]**.
 
 Puoi passare all’immagine in Experience Manager Assets e visualizzare i metadati associati all’immagine. Seleziona l’immagine e fai clic su **[!UICONTROL Proprietà]** per visualizzare i metadati dell&#39;immagine.
-
-
-

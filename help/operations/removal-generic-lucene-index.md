@@ -13,7 +13,7 @@ ht-degree: 0%
 
 L&#39;Adobe intende rimuovere l&#39;indice &quot;generico Lucene&quot; (`/oak:index/lucene-*`) da Adobe Experience Manager as a Cloud Service. Questo indice è stato dichiarato obsoleto a partire dal AEM 6.5. In questo documento viene descritto l&#39;impatto di questa decisione, insieme a descrizioni dettagliate su come esaminare se un&#39;istanza AEM è interessata. Contiene anche modi per modificare le query in modo che continuino a funzionare senza l&#39;indice Lucene generico.
 
-## Sfondo {#background}
+## Informazioni di base {#background}
 
 In AEM, le query full text sono quelle che utilizzano le seguenti funzioni:
 

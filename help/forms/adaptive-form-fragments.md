@@ -189,7 +189,7 @@ Puoi modificare la risorsa frammento e i relativi binding dalla finestra di dial
    <td><p>Apre il pannello Proprietà. Dal pannello Proprietà è possibile visualizzare e modificare le proprietà, generare un’anteprima e caricare un’immagine in miniatura per il frammento selezionato. Per ulteriori informazioni, consulta <a href="manage-form-metadata.md" target="_blank">Gestione dei metadati</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Copia</p> </td>
+   <td><p>Copiare</p> </td>
    <td><p>Copia il frammento selezionato. Il pulsante Incolla viene visualizzato nella barra degli strumenti.<br /> <br /> </p> </td>
   </tr>
   <tr>

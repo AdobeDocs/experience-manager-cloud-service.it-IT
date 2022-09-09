@@ -56,7 +56,7 @@ Puoi attivare Brand Portal durante la creazione degli ambienti per le risorse Ex
 >
 >Brand Portal deve essere attivato sulla stessa organizzazione IMS di Experience Manager Assets come [!DNL Cloud Service] istanza.
 >
->Se disponi di una configurazione cloud Brand Portal esistente ([configurato manualmente tramite Adobe Developer Console](#manual-configuration)) per un’organizzazione IMS (org1-esistente) e le risorse Experience Manager come a [!DNL Cloud Service] L’istanza è configurata per un’altra organizzazione IMS (org2-new), attivando Brand Portal da Cloud Manager l’organizzazione Brand Portal IMS viene reimpostata su `org2-new`. Anche se la configurazione cloud configurata manualmente è attiva `org1-existing` Sarà visibile nell’istanza di authoring di Experience Manager Assets, ma non sarà più in uso dopo l’attivazione di Brand Portal da Cloud Manager.
+>Se disponi di una configurazione cloud Brand Portal esistente ([configurato manualmente tramite la console Adobe Developer](#manual-configuration)) per un’organizzazione IMS (org1-esistente) e le risorse Experience Manager come a [!DNL Cloud Service] L’istanza è configurata per un’altra organizzazione IMS (org2-new), attivando Brand Portal da Cloud Manager l’organizzazione Brand Portal IMS viene reimpostata su `org2-new`. Anche se la configurazione cloud configurata manualmente è attiva `org1-existing` Sarà visibile nell’istanza di authoring di Experience Manager Assets, ma non sarà più in uso dopo l’attivazione di Brand Portal da Cloud Manager.
 >
 >Se la configurazione cloud di Brand Portal esistente e Experience Manager Assets come [!DNL Cloud Service] Le istanze utilizzano la stessa organizzazione IMS (org1), è necessario attivare Brand Portal solo da Cloud Manager.
 >
@@ -175,17 +175,17 @@ Nell’esempio precedente, viene attivata un’ulteriore combinazione di richies
 >
 >Viene generata un’ulteriore richiesta nel caso in cui la cartella principale non esista in Brand Portal o sia stata modificata in Experience Manager Assets.
 
-Insieme al flusso di lavoro di automazione per attivare Brand Portal su Experience Manager Assets come [!DNL Cloud Service], esiste un altro metodo per configurare manualmente Experience Manager Assets come [!DNL Cloud Service] con Brand Portal che utilizza Adobe Developer Console e che non è più consigliato.
+Insieme al flusso di lavoro di automazione per attivare Brand Portal su Experience Manager Assets come [!DNL Cloud Service], esiste un altro metodo per configurare manualmente Experience Manager Assets come [!DNL Cloud Service] con Brand Portal che utilizza la console Adobe Developer, che non è più consigliata.
 
 >[!NOTE]
 >
 >Se riscontri problemi durante l’attivazione del tenant Brand Portal, contatta l’Assistenza clienti .
 
-## Configurazione manuale tramite Adobe Developer Console {#manual-configuration}
+## Configurazione manuale tramite la console Adobe Developer {#manual-configuration}
 
-La sezione seguente descrive come configurare manualmente Experience Manager Assets come [!DNL Cloud Service] con Brand Portal tramite Adobe Developer Console.
+La sezione seguente descrive come configurare manualmente Experience Manager Assets come [!DNL Cloud Service] con Brand Portal tramite la console Adobe Developer.
 
-Precedente, Experience Manager Assets come [!DNL Cloud Service] è stato configurato manualmente con Brand Portal tramite Adobe Developer Console, che fornisce un token account Adobe Identity Management Services (IMS) per l’autorizzazione del tenant Brand Portal. Richiede configurazioni sia in Experience Manager Assets che in Adobe Developer Console.
+Precedente, Experience Manager Assets come [!DNL Cloud Service] è stato configurato manualmente con Brand Portal tramite Adobe Developer Console, che fornisce un token account Adobe Identity Management Services (IMS) per l’autorizzazione del tenant Brand Portal. Richiede configurazioni sia in Experience Manager Assets che nella console Adobe Developer.
 
 1. In Experience Manager Assets, crea un account IMS e genera una chiave pubblica (certificato).
 1. In Adobe Developer Console, crea un progetto per il tenant Brand Portal (organizzazione).
@@ -227,7 +227,7 @@ La configurazione IMS prevede due passaggi:
 
 ### Recuperare il certificato pubblico {#public-certificate}
 
-La chiave pubblica (certificato) autentica il tuo profilo in Adobe Developer Console.
+La chiave pubblica (certificato) autentica il tuo profilo nella console Adobe Developer.
 
 1. Accedi a Experience Manager Assets.
 1. Da **Strumenti** pannello, passa a **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni Adobe IMS]**.
@@ -248,15 +248,15 @@ La chiave pubblica (certificato) autentica il tuo profilo in Adobe Developer Con
 
    In **Account** viene creato l’account Adobe IMS che richiede le credenziali dell’account del servizio generate in Adobe Developer Console. Per il momento tieni aperta questa pagina.
 
-   Apri una nuova scheda e [creare una connessione a un account di servizio (JWT) in Adobe Developer Console](#createnewintegration) per ottenere le credenziali e il payload JWT per la configurazione dell’account IMS.
+   Apri una nuova scheda e [creare una connessione account di servizio (JWT) nella console Adobe Developer](#createnewintegration) per ottenere le credenziali e il payload JWT per la configurazione dell’account IMS.
 
 ### Crea connessione account di servizio (JWT) {#createnewintegration}
 
-In Adobe Developer Console, i progetti e le API sono configurati a livello di tenant Brand Portal (organizzazione). La configurazione di un’API crea una connessione a un account di servizio (JWT). Esistono due metodi per configurare l’API, generando una coppia di chiavi (chiavi private e pubbliche) o caricando una chiave pubblica. Per configurare Experience Manager Assets con Brand Portal, devi generare una chiave pubblica (certificato) in Experience Manager Assets e creare credenziali in Adobe Developer Console caricando la chiave pubblica. Queste credenziali sono necessarie per configurare l’account IMS in Experience Manager Assets. Una volta configurato l’account IMS, puoi configurare il servizio cloud Brand Portal in Experience Manager Assets.
+Nella console Adobe Developer, i progetti e le API sono configurati a livello di tenant Brand Portal (organizzazione). La configurazione di un’API crea una connessione a un account di servizio (JWT). Esistono due metodi per configurare l’API, generando una coppia di chiavi (chiavi private e pubbliche) o caricando una chiave pubblica. Per configurare Experience Manager Assets con Brand Portal, devi generare una chiave pubblica (certificato) in Experience Manager Assets e creare credenziali in Adobe Developer Console caricando la chiave pubblica. Queste credenziali sono necessarie per configurare l’account IMS in Experience Manager Assets. Una volta configurato l’account IMS, puoi configurare il servizio cloud Brand Portal in Experience Manager Assets.
 
 Esegui i seguenti passaggi per generare le credenziali dell’account del servizio e il payload JWT:
 
-1. Accedi ad Adobe Developer Console con privilegi di amministratore di sistema nell’organizzazione IMS (tenant Brand Portal). L’URL predefinito è [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Accedi alla console Adobe Developer con privilegi di amministratore di sistema nell’organizzazione IMS (tenant Brand Portal). L’URL predefinito è [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]

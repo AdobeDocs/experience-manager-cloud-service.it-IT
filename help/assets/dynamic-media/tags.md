@@ -797,7 +797,7 @@ Ad esempio: `https://ims-na1.adobelogin.com/`
 1. Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Crea]**.
 1. Sulla **[!UICONTROL Generale]** pagina (1/3 pagine) del **[!UICONTROL Creare la configurazione dei tag di Experience Platform]** , compila i campi seguenti:
 
-   * **[!UICONTROL Titolo]** - Inserisci un titolo di configurazione descrittivo. Esempio, `We.Retail Tags cloud configuration`.
+   * **[!UICONTROL Titolo]** - Inserisci un titolo di configurazione descrittivo. Esempio: `We.Retail Tags cloud configuration`.
 
    * **[!UICONTROL Configurazione Adobe IMS associata]** - Seleziona la configurazione IMS creata in precedenza in [Configurare Experience Manager IMS](#configuring-aem-ims).
 

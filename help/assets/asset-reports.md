@@ -28,7 +28,7 @@ Quando viene generato un rapporto, viene inviata una notifica tramite <!-- throu
 
 [!DNL Experience Manager Assets] genera i seguenti rapporti standard:
 
-* Carica
+* Caricare
 * Scadenza
 * Modifiche
 * Pubblicazione
@@ -119,7 +119,7 @@ Puoi aggiungere colonne personalizzate ai seguenti rapporti per visualizzare piÃ
 * Files
 -->
 
-* Carica
+* Caricare
 * Scadenza
 * Modifiche
 * Pubblicazione

@@ -1,5 +1,5 @@
 ---
-title: 'Come collegare un database a [!DNL AEM Forms] as a Cloud Service? '
+title: Come collegare un database a [!DNL AEM Forms] as a Cloud Service?
 seo-title: AEM Forms Data Integration
 description: È possibile recuperare e salvare i dati in servizi web RESTful, servizi web basati su SOAP e servizi OData da [!DNL AEM Forms] as a Cloud Service. Il servizio fornisce uno strumento dedicato per recuperare, testare, convalidare e inviare dati a vari tipi di origini dati.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3

@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -26,7 +26,7 @@ Questo articolo si basa su questi elementi per comprendere come utilizzare i rif
 
    * Riferimenti contenuto
    * Riferimenti a risorse/file multimediali
-   * Riferimenti ai frammenti
+   * Riferimenti frammento
    * Riferimenti ad hoc all&#39;interno di un blocco di testo
 
 ## Riferimenti {#what-are-references}
@@ -47,7 +47,7 @@ I riferimenti al contenuto fanno proprio questo: ti consentono di fare riferimen
 
 ![Frammenti di contenuto - Inserire una risorsa](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
-## Riferimenti ai frammenti {#fragment-references}
+## Riferimenti frammento {#fragment-references}
 
 Anche in questo caso, i riferimenti a frammenti consentono di fare riferimento a un altro frammento. Perché questo è significativo ha bisogno di un po&#39; più di spiegazione.
 
@@ -96,7 +96,7 @@ Utilizzo della **Struttura ad albero** La scheda dell’Editor frammento di cont
 >
 >Utilizzando le breadcrumb nel pannello principale è possibile tornare al punto iniziale.
 
-![Struttura ad albero dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![Struttura del frammento di contenuto](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
 
 ## Riferimenti ad hoc {#adhoc-references}
 
@@ -104,7 +104,7 @@ I riferimenti ad hoc possono essere aggiunti come semplice collegamento all’in
 
 ![Frammenti di contenuto - Riferimenti ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
-## Prossimi passaggi {#whats-next}
+## Novità {#whats-next}
 
 Ora che hai imparato i riferimenti e la struttura nei frammenti di contenuto, il passaggio successivo è [Informazioni su metadati e tag](metadata-tagging.md). In questo modo verrà illustrato come definire metadati e tag per i frammenti di contenuto.
 

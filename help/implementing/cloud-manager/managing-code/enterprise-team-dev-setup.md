@@ -1,11 +1,11 @@
 ---
-title: Configurazione del team di sviluppo aziendale
+title: Configurazione del team di sviluppo Enterprise
 description: Scopri come configurare e scalare il team di sviluppo aziendale e come AEM as a Cloud Service può supportare il processo di sviluppo.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
 workflow-type: tm+mt
 source-wordcount: '1444'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ L’onboarding di un nuovo progetto richiede l’inserimento nel file di progett
 
 ![Diagramma del flusso di lavoro](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-L’archivio Git per ogni viene configurato utilizzando [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) e quindi segue le migliori pratiche per la creazione AEM progetti. L’unica eccezione è la configurazione del dispatcher che viene eseguita nell’archivio Git condiviso come descritto sopra.
+L’archivio Git per ogni viene configurato utilizzando [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) e quindi segue le migliori pratiche per la creazione AEM progetti. L’unica eccezione è la configurazione del dispatcher che viene eseguita nell’archivio Git condiviso come descritto sopra.
 
 Ogni team utilizza un flusso di lavoro Git semplificato con due rami + N, seguendo il modello di flusso Git:
 

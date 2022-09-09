@@ -6,7 +6,7 @@ exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
 source-git-commit: cba6648d7ef18f3cccbd9562f3a66d9c683ae852
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ I due elenchi riportati di seguito riflettono la AEM superficie di configurazion
 
 Se una configurazione OSGI non è elencata, potrebbe essere configurata dal codice cliente.
 
-Queste regole vengono convalidate durante il processo di compilazione di Cloud Manager. È possibile aggiungere ulteriori regole nel tempo e la data prevista per l’applicazione è indicata nella tabella. I clienti sono tenuti a rispettare queste regole entro la data di implementazione prevista. Il mancato rispetto delle regole dopo la data di rimozione genera errori nel processo di compilazione di Cloud Manager. I progetti Maven devono includere [Plug-in Maven di AEM SDK Build Analyzer as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) per contrassegnare gli errori di configurazione OSGI durante lo sviluppo dell&#39;SDK locale.
+Queste regole vengono convalidate durante il processo di compilazione di Cloud Manager. È possibile aggiungere ulteriori regole nel tempo e la data prevista per l’applicazione è indicata nella tabella. I clienti sono tenuti a rispettare queste regole entro la data di implementazione prevista. Il mancato rispetto delle regole dopo la data di rimozione genera errori nel processo di compilazione di Cloud Manager. I progetti Maven devono includere [Plug-in Maven di AEM SDK Build Analyzer as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it) per contrassegnare gli errori di configurazione OSGI durante lo sviluppo dell&#39;SDK locale.
 
 Ulteriori informazioni sulla configurazione OSGI sono disponibili all&#39;indirizzo [questa posizione](/help/implementing/deploying/configuring-osgi.md).
 

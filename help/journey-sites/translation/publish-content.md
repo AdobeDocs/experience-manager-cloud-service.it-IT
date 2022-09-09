@@ -6,7 +6,7 @@ hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 100%
 
@@ -98,8 +98,8 @@ Tuttavia, come in precedenza, il processo varia leggermente se si sceglie di cre
 1. Passa a **Navigazione** -> **Risorse** -> **File**. Ricorda che il contenuto in AEM è memorizzato in `/content`.
 1. Seleziona la directory principale della lingua del progetto. In questo caso abbiamo selezionato `/content/wknd/en`.
 1. Tocca o fai clic sul selettore della barra e mostra il pannello **Riferimenti**.
-1. Tocca o fai clic su **Copie per lingua**.
-1. Seleziona la casella di controllo **Copie per lingua**.
+1. Tocca o fai clic su **Copie in lingua**.
+1. Seleziona la casella di spunta delle **Copie in lingua**.
 1. Espandi la sezione **Aggiorna copie per lingua** nella parte inferiore del pannello dei riferimenti.
 1. Nel menu a discesa **Progetto**, seleziona **Aggiungi a un progetto di traduzione esistente**.
 1. Nel menu a discesa **Progetto di traduzione esistente**, seleziona il progetto creato per la traduzione iniziale.

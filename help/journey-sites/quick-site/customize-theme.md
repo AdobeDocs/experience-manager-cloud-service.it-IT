@@ -3,7 +3,7 @@ title: Personalizza il tema del sito
 description: Scopri come è fatto il tema del sito, come personalizzarlo e come testarlo utilizzando contenuti live AEM.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 100%
 

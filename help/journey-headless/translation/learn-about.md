@@ -5,7 +5,7 @@ exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ Impara concetti headless, come si mappano a AEM e la teoria della traduzione AEM
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a comprendere la distribuzione headless dei contenuti, come AEM supporta la conversione headless e come tali contenuti possono essere tradotti. Dopo la lettura è necessario:
+Questo documento ti aiuta a comprendere la distribuzione headless dei contenuti, come AEM supporta la conversione headless e come tali contenuti possono essere tradotti. Dopo la lettura dovresti:
 
 * Comprendi i concetti di base sulla distribuzione di contenuti headless.
 * Sii familiare con come AEM supporta headless e la traduzione.
@@ -59,14 +59,14 @@ La potenza di AEM consente di distribuire contenuti headless, full-stack o conte
 
 Più avanti nel percorso imparerai i dettagli su come AEM tradurre i contenuti, ma ad alto livello, il concetto è semplice:
 
-1. Definire una connessione a un servizio di traduzione configurando il framework di integrazione della traduzione.
-1. Definisci il contenuto da tradurre utilizzando le regole di traduzione.
-1. Crea un progetto di traduzione per raccogliere il contenuto, inviarlo al servizio di traduzione e ricevere i risultati.
-1. Rivedi e pubblica il contenuto tradotto.
+1. Definire una connessione a un servizio di traduzione configurando il Translation Integration Framework.
+1. Definire il contenuto da tradurre utilizzando le regole di traduzione.
+1. Creare un progetto di traduzione per raccogliere il contenuto, inviarlo al servizio di traduzione e ricevere il lavoro svolto.
+1. Rivedere e pubblicare il contenuto tradotto.
 
 ## Novità {#what-is-next}
 
-Grazie per aver iniziato sul tuo percorso di traduzione senza testa AEM! Dopo aver letto questo documento, è necessario:
+Grazie per aver iniziato sul tuo percorso di traduzione senza testa AEM! Dopo aver letto questo documento, devi:
 
 * Comprendi i concetti di base sulla distribuzione di contenuti headless.
 * Sii familiare con come AEM supporta headless e la traduzione.
@@ -77,4 +77,4 @@ Sviluppa questa conoscenza e continua il tuo percorso di traduzione senza testa 
 
 Mentre si consiglia di passare alla parte successiva del percorso di traduzione headless rivedendo il documento [Inizia con AEM traduzione senza testa,](getting-started.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
 
-* [MSM e traduzione](/help/sites-cloud/administering/msm-and-translation.md) - Dettagli di AEM Multi-Site Manager e come funziona con i suoi strumenti di traduzione
+* [MSM e traduzione](/help/sites-cloud/administering/msm-and-translation.md): dettagli di AEM Multi-Site Manager e come funzionano i suoi strumenti di traduzione

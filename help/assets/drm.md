@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Digital Rights Management per le risorse digitali {#digital-rights-management-in-assets}
 
-Digital assets are often associated with a license that specifies the terms and the duration of use. Utilizzo della [!DNL Experience Manager] Platform consente di gestire in modo efficiente le informazioni sulla scadenza delle risorse e le informazioni sulla licenza.
+Le risorse digitali sono spesso associate a una licenza che specifica i termini e la durata dell’utilizzo. Utilizzo della [!DNL Experience Manager] Platform consente di gestire in modo efficiente le informazioni sulla scadenza delle risorse e le informazioni sulla licenza.
 
 ## Scadenza risorse {#asset-expiration}
 
@@ -31,19 +31,19 @@ Per visualizzare le pagine web di riferimento e le risorse composte di una risor
 
 1. Accedi alla risorsa, selezionala e fai clic su ![icona dei riferimenti dei contenuti della barra a sinistra](assets/do-not-localize/content-rail-icon.png). Viene visualizzata la barra a sinistra.
 1. Seleziona **[!UICONTROL Riferimenti]** dalla barra a sinistra.
-1. For expired assets, the [!UICONTROL References] displays the expiry status as **[!UICONTROL Asset is Expired]**. Se la risorsa è scaduta, la [!UICONTROL Riferimenti] visualizza lo stato **[!UICONTROL Risorse secondarie scadute]**.
+1. Per le risorse scadute, la [!UICONTROL Riferimenti] visualizza lo stato di scadenza come **[!UICONTROL Risorsa scaduta]**. Se la risorsa è scaduta, la [!UICONTROL Riferimenti] visualizza lo stato **[!UICONTROL Risorse secondarie scadute]**.
 
 ### Cercare risorse scadute {#search-expired-assets}
 
 Per cercare una risorsa scaduta, incluse le risorse secondarie scadute, procedi come segue:
 
-1. In the [!DNL Assets] console, click **[!UICONTROL Search]** in the toolbar and press `Enter`.
+1. In [!DNL Assets] console, fai clic su **[!UICONTROL Ricerca]** nella barra degli strumenti e premere `Enter`.
 
 1. Fai clic sull’icona di Navigazione globale e seleziona la **[!UICONTROL Stato di scadenza]** opzione .
 
 1. Seleziona **[!UICONTROL Scaduto]**. Nei risultati della ricerca vengono visualizzate le risorse scadute.
 
-When you choose the **[!UICONTROL Expired]** option, the [!DNL Assets] console only displays the expired assets and subassets that are referenced by compound assets. The compound assets that reference expired subassets are not displayed immediately after the subassets expire. Instead, they are displayed after [!DNL Experience Manager] detects that they reference expired subassets the next time the scheduler executes.
+Quando scegli la **[!UICONTROL Scaduto]** l&#39;opzione [!DNL Assets] in console vengono visualizzate solo le risorse e le risorse secondarie scadute a cui fanno riferimento le risorse composte. Le risorse composte che fanno riferimento a risorse secondarie scadute non vengono visualizzate immediatamente dopo la scadenza delle risorse secondarie. Vengono invece visualizzati dopo [!DNL Experience Manager] rileva che fanno riferimento a risorse secondarie scadute alla successiva esecuzione della pianificazione.
 
 È possibile modificare la data di scadenza di una risorsa pubblicata in una data precedente al ciclo di pianificazione corrente. Tuttavia, la pianificazione rileva ancora una risorsa come una risorsa scaduta quando viene eseguita la prossima volta e [!DNL Experience Manager] riflette lo stato del rapporto. La data di scadenza di una risorsa viene visualizzata in modo diverso per gli utenti che usano fusi orari diversi.
 
@@ -66,7 +66,7 @@ Puoi configurare la pianificazione utilizzando le seguenti proprietà:
 
 * A `true` valore della proprietà `cq.dam.expiry.notification.scheduler.istimebased` avvia la pianificazione. * Il valore della proprietà `cq.dam.expiry.notification.scheduler.timebased.rule` è l’espressione regolare per definire l’ora. L&#39;esempio precedente avvia il processo di pianificazione alle 00 ore.
 * Se `send_email` è impostato su `true`, il creatore di risorse (la persona che carica una particolare risorsa in [!DNL Assets]) riceve un’e-mail alla scadenza della risorsa.
-* The maximum number of assets expired in one iteration of the scheduler is the value of the property `asset_expired_limit`.
+* Il numero massimo di risorse scadute in un&#39;iterazione dello scheduler è il valore della proprietà `asset_expired_limit`.
 * Per eseguire periodicamente il processo, imposta il valore della proprietà `cq.dam.expiry.notification.scheduler.istimebased` come `false` e imposta il valore della proprietà `cq.dam.expiry.notification.scheduler.period.rule` con tempo in secondi.
 
 <!-- TBD: Web Console not available in CS.
@@ -83,9 +83,9 @@ Puoi configurare la pianificazione utilizzando le seguenti proprietà:
 1. Select **[!UICONTROL Save]**.
 -->
 
-## Asset states {#asset-states}
+## Stati delle risorse {#asset-states}
 
-La [!DNL Assets] La console può visualizzare vari stati delle risorse. Depending on the current state of a particular asset, its card view displays a label that describes its state, for example, Expired, Published, Approved, Rejected, and so on.
+La [!DNL Assets] La console può visualizzare vari stati delle risorse. A seconda dello stato corrente di una particolare risorsa, nella relativa vista a schede viene visualizzata un’etichetta che ne descrive lo stato, ad esempio Scaduto, Pubblicato, Approvato, Rifiutato e così via.
 
 1. In [!DNL Assets] interfaccia utente, seleziona una risorsa.
 
@@ -93,7 +93,7 @@ La [!DNL Assets] La console può visualizzare vari stati delle risorse. Dependin
 
 1. Scegli **[!UICONTROL Pubblica]** dal menu , quindi chiudi la finestra di dialogo di conferma.
 
-1. Esci dalla modalità di selezione. The publication status for the asset appears at the bottom of the asset thumbnail in the card view. In the list view, the Published column displays the time when the asset was published.
+1. Esci dalla modalità di selezione. Lo stato di pubblicazione della risorsa viene visualizzato nella parte inferiore della miniatura della risorsa nella vista a schede. Nella vista a elenco, la colonna Pubblicato visualizza l’ora in cui è stata pubblicata la risorsa.
 
 1. Per visualizzare la pagina dei dettagli della relativa risorsa, nella [!DNL Assets] interfaccia, seleziona una risorsa e fai clic su **[!UICONTROL Proprietà]**.
 
@@ -107,7 +107,7 @@ La [!DNL Assets] La console può visualizzare vari stati delle risorse. Dependin
 
 1. Rivedi e approva/rifiuta le risorse nell’attività di revisione e fai clic su **[!UICONTROL Completa]**.
 
-1. Passare alla cartella per la quale è stata creata l&#39;attività di revisione. Lo stato delle risorse approvate o rifiutate viene visualizzato nella parte inferiore della vista a schede. In the list view, the approval and expiry statuses are displayed in appropriate columns.
+1. Passare alla cartella per la quale è stata creata l&#39;attività di revisione. Lo stato delle risorse approvate o rifiutate viene visualizzato nella parte inferiore della vista a schede. Nella vista a elenco, gli stati di approvazione e scadenza vengono visualizzati nelle colonne appropriate.
 
 1. Per cercare le risorse in base al loro stato, fai clic su **[!UICONTROL Ricerca]** per visualizzare la barra di ricerca.
 
@@ -119,7 +119,7 @@ La [!DNL Assets] La console può visualizzare vari stati delle risorse. Dependin
 
 1. Per cercare le risorse in base al loro stato di scadenza, seleziona **[!UICONTROL Stato di scadenza]** nel pannello di ricerca e seleziona l’opzione appropriata.
 
-1. Puoi anche cercare le risorse in base a una combinazione di stati in vari facet di ricerca. Ad esempio, puoi cercare le risorse pubblicate approvate in un’attività di revisione e non scadute. To search such assets, select the appropriate options in the search facets.
+1. Puoi anche cercare le risorse in base a una combinazione di stati in vari facet di ricerca. Ad esempio, puoi cercare le risorse pubblicate approvate in un’attività di revisione e non scadute. Per cercare tali risorse, seleziona le opzioni appropriate nei facet di ricerca.
 
 ## Digital Rights Management in [!DNL Assets] {#digital-rights-management-in-assets-1}
 
@@ -146,6 +146,6 @@ Un’attività è considerata protetta se una di queste condizioni è soddisfatt
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Download]** option is enabled only when you choose to agree to the license agreement for a protected asset. Tuttavia, se la selezione include sia risorse protette che non protette, solo le risorse protette sono elencate nel riquadro e nella **[!UICONTROL Scarica]** per scaricare le risorse non protette, è disponibile l’opzione . Per accettare in contemporanea i contratti di licenza per più risorse protette, seleziona le risorse dall’elenco e fai clic su **[!UICONTROL Accetto]**.
+   >La **[!UICONTROL Scarica]** l’opzione è abilitata solo quando scegli di accettare il contratto di licenza per una risorsa protetta. Tuttavia, se la selezione include sia risorse protette che non protette, solo le risorse protette sono elencate nel riquadro e nella **[!UICONTROL Scarica]** per scaricare le risorse non protette, è disponibile l’opzione . Per accettare in contemporanea i contratti di licenza per più risorse protette, seleziona le risorse dall’elenco e fai clic su **[!UICONTROL Accetto]**.
 
-1. To download the asset or its renditions, select **[!UICONTROL Download]** in the dialog.
+1. Per scaricare la risorsa o i relativi rendering, seleziona **[!UICONTROL Scarica]** nella finestra di dialogo.

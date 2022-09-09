@@ -1,5 +1,5 @@
 ---
-title: 'Risoluzione dei problemi di installazione e configurazione  '
+title: Risoluzione dei problemi di installazione e configurazione
 seo-title: Troubleshooting installation and configuration
 description: Risoluzione dei problemi di installazione e configurazione
 seo-description: Troubleshooting installation and configuration

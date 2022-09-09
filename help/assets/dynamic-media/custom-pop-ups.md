@@ -1,6 +1,6 @@
 ---
 title: Creare pop-up personalizzati utilizzando Quickview
-description: '"Scopri come viene utilizzata la visualizzazione rapida predefinita nelle esperienze di e-commerce in cui viene visualizzata una finestra a comparsa con informazioni sul prodotto per promuovere un acquisto. Puoi attivare il contenuto personalizzato da visualizzare nella finestra a comparsa."'
+description: "Scopri come viene utilizzata la visualizzazione rapida predefinita nelle esperienze di e-commerce in cui viene visualizzata una finestra a comparsa con informazioni sul prodotto per promuovere un acquisto. Puoi attivare il contenuto personalizzato da visualizzare nella finestra a comparsa."
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c

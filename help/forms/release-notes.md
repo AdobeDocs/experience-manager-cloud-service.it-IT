@@ -1,11 +1,11 @@
 ---
-title: '"[!DNL AEM Forms] Note sulla versione as a Cloud Service"'
-description: '"[!DNL AEM Forms] Note sulla versione as a Cloud Service"'
+title: "[!DNL AEM Forms] Note sulla versione as a Cloud Service"
+description: "[!DNL AEM Forms] Note sulla versione as a Cloud Service"
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 17%
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Manager [!DNL AEM Forms] Gli as a Cloud Service ricevono miglio
 
 - **Analytics per Forms adattivo**: È ora possibile acquisire e tenere traccia del comportamento sia di accesso che di non accesso (anonimo) tramite Adobe Analytics per Adaptive Forms per raccogliere informazioni sugli utenti finali. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza dell’utente finale.
 
-### Nuove funzioni disponibili in [!DNL Forms] canale prerelease {#prerelease-features-forms-oct-2021}
+### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
 - **Esternalizzare i dati del flusso di lavoro AEM per un’elaborazione sicura**: è possibile memorizzare i dati dei flussi di lavoro AEM in elaborazione (dati variabili di flusso di lavoro AEM) contenenti elementi di dati personali sensibili (SPD) in un archivio gestito dal cliente per un’elaborazione sicura. Gli elementi dei dati e le variabili del flusso di lavoro non vengono memorizzati nell’archivio AEM e vengono recuperati su richiesta da un archivio gestito dal cliente durante l’elaborazione del flusso di lavoro.
 
@@ -121,7 +121,7 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
-### Nuove funzioni disponibili in [!DNL Forms] canale prerelease {#prerelease-features-forms-aug-2021}
+### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms-aug-2021}
 
 - **Utilizzare i ruoli Adobe Sign in un modulo adattivo**: Adobe Sign per i livelli di servizio aziendali e aziendali ha la possibilità di espandere i ruoli per i destinatari del contratto, oltre al solo firmatario, in modo da soddisfare meglio i requisiti del flusso di lavoro. Ora puoi [abilitare ogni destinatario dell&#39;accordo a configurare il proprio ruolo in un modulo adattivo](working-with-adobe-sign.md#addsignerstoanadaptiveform), con il ruolo predefinito Firma .
 
@@ -136,7 +136,7 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 - Ora puoi utilizzare il servizio Automated forms conversion per [convertire i PDF forms in francese, tedesco e spagnolo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) ai moduli adattivi.
 - È stato aggiunto un pannello separato all’editor modelli per visualizzare gli errori relativi ai componenti per moduli adattivi. Consente di consolidare tutti gli errori dei moduli adattivi in un&#39;unica posizione e di ridurre i tempi di risoluzione.
 
-### Nuove funzioni disponibili in [!DNL Forms] canale prerelease {#july-prerelease-features-forms}
+### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#july-prerelease-features-forms}
 
 - **Documento di record basato su Acroform**: È inoltre possibile [utilizzare Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) come modello per il modello di modulo Document of Record oltre a basato su XFA.
 

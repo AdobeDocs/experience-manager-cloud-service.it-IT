@@ -1,6 +1,6 @@
 ---
-title: Note sulla versione 2020.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2020.8.0."'
+title: Note sulla versione 2020.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: "[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
@@ -118,7 +118,7 @@ Data di rilascio per [!UICONTROL Cloud Manager] La versione 2020.8.0 è il 6 ago
 
 * Per attivare il passaggio Verifica contenuto, gli utenti devono modificare la pipeline e, facoltativamente, aggiungere pagine. Se non viene aggiunta alcuna pagina, la home page verrà sottoposta a controllo.
 
-## Strumento Trasferimento contenuti {#content-transfer-tool}
+## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
 
 Leggi questa sezione per scoprire le novità e gli aggiornamenti della versione 1.0.4 dello strumento Content Transfer (Trasferimento contenuti).
 

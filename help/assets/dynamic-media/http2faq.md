@@ -88,7 +88,7 @@ Le richieste vengono elaborate nell’ordine in cui vengono ricevute dall’Assi
 
 La transizione a HTTP/2 cancella la cache alla rete CDN perché comporta il passaggio a una nuova configurazione CDN.
 
-Il contenuto non memorizzato nella cache colpisce direttamente i server di origine di Adobe fino a quando la cache non viene ricostruita nuovamente. A causa di questa azione, Adobe pianifica di gestire alcune transizioni cliente alla volta. Questo metodo garantisce il mantenimento di prestazioni accettabili durante l’estrazione delle richieste dall’origine.
+Il contenuto non memorizzato nella cache colpisce direttamente i server di origine di Adobe fino a quando la cache non viene ricreata. A causa di questa azione, Adobe pianifica di gestire alcune transizioni cliente alla volta. Questo metodo garantisce il mantenimento di prestazioni accettabili durante l’estrazione delle richieste dall’origine.
 
 ## Come si verifica se un URL o un sito web è attivato con HTTP/2? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 

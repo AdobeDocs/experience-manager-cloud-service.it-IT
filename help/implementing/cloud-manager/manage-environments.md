@@ -35,7 +35,7 @@ Le funzionalità dei singoli ambienti dipendono dalle soluzioni abilitate nel co
 
 ## Aggiunta di un ambiente {#adding-environments}
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione appropriata.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
 1. Fai clic sul programma per il quale desideri aggiungere un ambiente.
 

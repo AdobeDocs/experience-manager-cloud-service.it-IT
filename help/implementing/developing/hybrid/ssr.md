@@ -191,6 +191,6 @@ Di solito, il modello HTL di un componente pagina è il destinatario principale 
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
 ```
 
-### Requisiti {#requirements}
+### Requisiti  {#requirements}
 
 I servlet sfruttano l’esportatore di modelli Sling per serializzare i dati dei componenti. Per impostazione predefinita, entrambe le `com.adobe.cq.export.json.ContainerExporter` e `com.adobe.cq.export.json.ComponentExporter` sono supportate come schede di rete Sling Model. Se necessario, puoi aggiungere classi alle quali la richiesta deve essere adattata utilizzando il `RemoteContentRendererServlet` e l&#39;attuazione `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. Le classi aggiuntive devono estendere il `ComponentExporter`.

@@ -61,7 +61,7 @@ Se un cliente deve utilizzare il proprio CDN esistente, può gestirlo e indirizz
 
 Istruzioni di configurazione:
 
-1. Posiziona il CDN nell’ingresso della CDN di Adobe come dominio di origine. Esempio, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Posiziona il CDN nell’ingresso della CDN di Adobe come dominio di origine. Esempio: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. L&#39;SNI deve essere impostato anche sull&#39;ingresso dell&#39;Adobe CDN.
 1. Imposta l’intestazione Host sul dominio di origine. Esempio: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Imposta la `X-Forwarded-Host` intestazione con il nome di dominio in modo AEM determinare l&#39;intestazione host. Esempio: `X-Forwarded-Host:example.com`.

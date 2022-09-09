@@ -1,21 +1,21 @@
 ---
-title: Tag del colore per le immagini
+title: Tag colore per immagini
 description: Experience Manager Assets consente di distinguere i colori in un’immagine e di applicarli automaticamente come tag. Puoi quindi utilizzare questi tag per cercare e filtrare le immagini.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
 workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
-# Tag del colore per le immagini {#color-tag-images}
+# Tag colore per immagini {#color-tag-images}
 
 ![Banner a colori](assets/banner-image.png)
 
 Experience Manager Assets utilizza le funzionalità di intelligenza artificiale di Adobe Sensei per distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’acquisizione. Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine.
 
-È possibile configurare il numero di colori, compresi tra uno e quaranta, che vengono assegnati a un’immagine in modo da poter cercare le immagini in base a tali colori in un secondo momento. Experience Manager Assets applica i tag in base alla copertura del colore in un’immagine. Puoi anche configurare il formato di visualizzazione per un tag colore.
+È possibile configurare il numero di colori (da 1 a 40) che vengono assegnati come tag in modo da poter cercare, in un secondo momento, le immagini in base a tali colori. Experience Manager Assets applica i tag in base alla copertura del colore in un’immagine. Puoi anche configurare il formato di visualizzazione per un tag colore.
 
 La figura seguente illustra la sequenza di attività eseguite per configurare e gestire l’assegnazione di tag colore alle immagini in Experience Manager Assets:
 

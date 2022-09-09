@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2020.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2020.9.0."'
+title: Note sulla versione 2020.9.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: "[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2020.9.0."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -34,7 +34,7 @@ Data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
    * Pubblicazione selettiva : è ora possibile accedere a un team di marketing [!DNL Dynamic Media] immagini di ritaglio avanzato e rappresentazioni dinamiche sincronizzate con [!DNL Dynamic Media] in modo che possano creare materiale promozionale, il tutto senza la necessità di pubblicare tali risorse in [!DNL Dynamic Media] per la distribuzione globale. [!DNL Experience Manager] e [!DNL Dynamic Media] la pubblicazione è disaccoppiata e può avvenire separatamente a questo scopo. Vedi [pubblicazione selettiva](/help/assets/dynamic-media/selective-publishing.md).
    * Gli amministratori ora possono reimpostare [!DNL Dynamic Media] Password di Cloud Service ricevuta al momento del provisioning. La reimpostazione può essere eseguita in [!DNL Experience Manager] interfaccia utente, senza la necessità di utilizzare [!DNL Dynamic Media Classic] app desktop.
 
-* Per informazioni sui seguenti miglioramenti, consulta [Novità in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+* Per informazioni sui seguenti miglioramenti, consulta [Novità in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it).
 
    * Anteprima PDF migliorata con l’integrazione Adobe Document Cloud View SDK.
    * Funzionalità di download con un solo clic.
@@ -96,7 +96,7 @@ Leggi questa sezione per saperne di più sulle novità e sugli aggiornamenti di 
 
 * In alcuni casi, il rapporto CRA non veniva aggiornato dopo aver forzato un aggiornamento. Questo problema è stato risolto in questa versione.
 
-## Strumento Trasferimento contenuti {#content-transfer-tool}
+## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
 
 Leggi questa sezione per scoprire le novità e gli aggiornamenti della versione 1.1.10 dello strumento Content Transfer (Trasferimento contenuti).
 

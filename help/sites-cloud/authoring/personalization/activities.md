@@ -3,7 +3,7 @@ title: Gestione delle attività
 description: La console Attività consente di creare, organizzare e gestire le attività di marketing dei tuoi marchi
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 100%
 

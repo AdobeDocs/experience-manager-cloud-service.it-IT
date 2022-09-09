@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ![integrazione dei dati](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] è un software CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning) che fornisce soluzioni aziendali per la creazione e la gestione di account cliente, contatti, lead, opportunità e casi. [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce una configurazione del servizio cloud OData per integrare Forms sia online che on-premise [!DNL Microsoft Dynamics] server. Consente di creare un modello dati modulo basato su entità, attributi e servizi definiti in [!DNL Microsoft Dynamics] servizio. Il modello dati modulo può essere utilizzato per creare un Forms adattivo che interagisca con [!DNL Microsoft Dynamics] per abilitare i flussi di lavoro aziendali. Ad esempio:
+[!DNL Microsoft Dynamics] è un software CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning) che fornisce soluzioni aziendali per la creazione e la gestione di account cliente, contatti, lead, opportunità e casi. [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce una configurazione del servizio cloud OData per integrare Forms sia online che on-premise [!DNL Microsoft Dynamics] server. Consente di creare un modello dati modulo basato su entità, attributi e servizi definiti in [!DNL Microsoft Dynamics] servizio. Il modello dati modulo può essere utilizzato per creare un Forms adattivo che interagisca con [!DNL Microsoft Dynamics] per abilitare i flussi di lavoro aziendali. Esempio:
 
 * Query [!DNL Microsoft Dynamics] server per i dati e precompilare Adaptive Forms
 * Scrivere dati in [!DNL Microsoft Dynamics] sull’invio di moduli adattivi

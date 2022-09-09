@@ -5,7 +5,7 @@ exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 In questa parte del [percorso di architetti di contenuti headless AEM](overview.md), puoi imparare i concetti e la terminologia di base necessari per comprendere la modellazione dei contenuti quando utilizzi Adobe Experience Manager (AEM) as a Cloud Service come CMS headless.
 
-Questo documento ti aiuta a comprendere la distribuzione headless dei contenuti, come AEM supporta gli headless e come viene modellato il contenuto per gli headless. Dopo la lettura è necessario:
+Questo documento ti aiuta a comprendere la distribuzione headless dei contenuti, come AEM supporta gli headless e come viene modellato il contenuto per gli headless. Dopo la lettura dovresti:
 
 * Comprendi i concetti di base sulla distribuzione di contenuti headless.
 * Verificare come AEM supporta la modellazione headless e content.

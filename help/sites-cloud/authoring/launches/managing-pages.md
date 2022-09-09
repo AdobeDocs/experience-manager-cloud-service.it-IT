@@ -3,7 +3,7 @@ title: Gestione delle pagine nel lancio
 description: Puoi creare nuove pagine all’interno del lancio. Puoi anche eliminare le pagine indesiderate.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 100%
 

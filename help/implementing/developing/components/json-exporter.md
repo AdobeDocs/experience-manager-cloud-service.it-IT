@@ -1,11 +1,11 @@
 ---
 title: Esportatore JSON per Content Services
-description: AEM Content Services è progettato per generalizzare la descrizione e la distribuzione dei contenuti in/da AEM oltre l’attenzione sulle pagine web. Forniscono contenuti a canali che non sono pagine web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente.
+description: AEM Content Services è progettato per generalizzare la descrizione e la consegna dei contenuti in/da AEM, non limitandosi alle pagine web. Fornisce contenuti a canali diversi dalle tradizionali pagine web di AEM, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 12%
+ht-degree: 31%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 AEM Content Services è progettato per generalizzare la descrizione e la distribuzione dei contenuti in/da AEM oltre lo scopo delle pagine web.
 
-Forniscono contenuti a canali che non sono pagine web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. Questi canali possono includere:
+Fornisce contenuti a canali diversi dalle tradizionali pagine web di AEM, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. Questi canali possono includere:
 
 * Applicazioni a pagina singola
 * Applicazioni mobile native

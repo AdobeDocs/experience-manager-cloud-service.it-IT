@@ -1,5 +1,5 @@
 ---
-title: 'Testo segnaposto in [!DNL AEM Forms] '
+title: Testo segnaposto in [!DNL AEM Forms]
 description: Il testo segnaposto ha lo scopo di aiutare l’utente a inserire dati quando il controllo non ha alcun valore. Può trattarsi di un valore di esempio o di una breve descrizione del formato previsto.
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt

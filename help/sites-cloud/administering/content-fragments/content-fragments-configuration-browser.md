@@ -1,11 +1,11 @@
 ---
-title: 'Frammenti di contenuto - Browser configurazioni '
+title: Frammenti di contenuto - Browser configurazioni
 description: Scopri come abilitare funzionalità specifiche per i frammenti di contenuto nel browser configurazioni.
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '358'
+ht-degree: 97%
 
 ---
 

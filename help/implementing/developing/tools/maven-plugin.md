@@ -5,7 +5,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
 source-wordcount: '1851'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service aderisce alle best practice più recenti per la gestione 
 
 >[!TIP]
 >
->Per ulteriori dettagli, consulta la sezione [AEM struttura del progetto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) articolo nella documentazione as a Cloud Service AEM nonché [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentazione. Entrambi sono pienamente supportati per AEM 6.5.
+>Per ulteriori dettagli, consulta la sezione [AEM struttura del progetto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) articolo nella documentazione as a Cloud Service AEM nonché [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) documentazione. Entrambi sono pienamente supportati per AEM 6.5.
 
 ## Ottenimento del plug-in Maven del pacchetto di contenuti {#obtaining-the-content-package-maven-plugin}
 

@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2021.1.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2021.1.0."'
+title: Note sulla versione 2021.1.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: "[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2021.1.0."
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 7%
+ht-degree: 14%
 
 ---
 
@@ -90,22 +90,22 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.1.0 è il 14
 
 * Chiamate API autenticate server-to-server : genera i token di accesso appropriati per effettuare chiamate API server-to-server autenticate tra le applicazioni esterne e AEM ambienti as a Cloud Service. Per saperne di più, leggi [la documentazione](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) o consultando [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
 
-### SDK Build Analytics {#sdk-build-analyzers}
+### SDK Build Analyzer {#sdk-build-analyzers}
 
-Il plug-in Maven di AEM SDK Build Analyzer as a Cloud Service rileva i problemi in un progetto Maven, incluse le dipendenze mancanti. Offre agli sviluppatori l’opportunità di scoprire i problemi durante lo sviluppo locale, molto prima di distribuirli in ambienti Cloud con Cloud Manager.
+Il plug-in Maven SDK Build Analyzer per AEM as a Cloud Service rileva i problemi in un progetto Maven, incluse eventuali dipendenze mancanti. Offre agli sviluppatori l’opportunità di individuare i problemi durante lo sviluppo locale, molto prima che vengano distribuiti in ambienti Cloud con Cloud Manager.
 
 Per questa versione sono stati aggiunti due nuovi analizzatori:
 
 * analizzatore repoinit
 * codice nativo del bundle
 
-Per ulteriori informazioni, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it#developing).
+Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it#developing).
 
 ## Strumenti di transizione verso il cloud {#code-transition-tools}
 
 ### Data di pubblicazione {#release-date-ctt}
 
-La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.2.2 è il 10 febbraio 2021.
+La data di pubblicazione dello strumento Content Transfer v1.2.2 è il 01 febbraio 2021.
 
 ### Novità in [!DNL Content Transfer Tool] {#what-is-new-ctt}
 

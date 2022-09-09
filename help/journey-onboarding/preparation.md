@@ -1,13 +1,13 @@
 ---
 title: Preparazione all'onboarding
 description: Prima dell'inizio del processo di onboarding, è necessario che l'amministratore di sistema comprenda una serie di passaggi preparatori prima di effettuare l'accesso al sistema.
-source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
+exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 0%
 
 ---
-
 
 # Preparazione all&#39;onboarding {#onboarding-preparation}
 

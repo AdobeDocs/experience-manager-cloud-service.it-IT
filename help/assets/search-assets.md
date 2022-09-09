@@ -23,7 +23,7 @@ ht-degree: 6%
 |---|---|---|
 | [Ricerche di base](#searchbasics) | [Indice di ricerca](#searchindex) | [Ordinare i risultati](#sort) |
 | [Comprendere l’interfaccia utente di ricerca](#searchui) | [Estrazione di testo](#extracttextupload) | [Controllare le proprietà e i metadati di una risorsa](#checkinfo) |
-| [Suggerimenti per la ricerca](#searchsuggestions) | [Metadati obbligatori](#mandatorymetadata) | [Scarica](#download) |
+| [Suggerimenti per la ricerca](#searchsuggestions) | [Metadati obbligatori](#mandatorymetadata) | [Download](#download) |
 | [Comprendere i risultati e il comportamento della ricerca](#searchbehavior) | [Modificare i facet di ricerca](#searchfacets) | [Aggiornamenti in blocco dei metadati](#metadata-updates) |
 | [Grado di ricerca e incremento](#searchrank) | [Predicati personalizzati](#custompredicates) | [Raccolte intelligenti](#collections) |
 | [Ricerca avanzata: filtraggio e ambito di ricerca](#scope) |  | [Comprendere e risolvere i problemi di risultati imprevisti](#unexpected-results) |
@@ -166,7 +166,7 @@ Puoi cercare le risorse in base ai valori esatti dei campi di metadati, ad esemp
 | Ora di attivazione | ontime:YYYY-MM-DDTHH |
 | Ora di disattivazione | tempo libero:AAAA-MM-DDTHH |
 | Intervallo di tempo (dateontime di scadenza, offtime) | campo facet : in basso..superiore |
-| Percorso | /content/dam/&lt;folder name=&quot;&quot;> |
+| Percorso  | /content/dam/&lt;folder name=&quot;&quot;> |
 | Titolo PDF | pdftitle:&quot;Documento di Adobe&quot; |
 | Oggetto | oggetto: &quot;Formazione&quot; |
 | Tag | tags:&quot;Località E Viaggi&quot; |

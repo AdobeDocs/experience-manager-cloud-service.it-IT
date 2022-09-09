@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2020.11.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2020.11.0."'
+title: Note sulla versione 2020.11.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: "[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2020.11.0."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1265'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 
@@ -111,15 +111,15 @@ Fai riferimento a [Gestione degli ambienti](/help/implementing/cloud-manager/man
 
 * I dati utente, inclusi gli attributi di profilo e le appartenenze al gruppo, possono essere mantenuti sul livello di pubblicazione. Ulteriori informazioni su questa funzione in [Documentazione di registrazione, accesso e profilo utente](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md).
 
-### SDK Build Analytics {#analyzers}
+### SDK Build Analyzer {#analyzers}
 
-Il plug-in Maven di AEM SDK Build Analyzer as a Cloud Service rileva i problemi in un progetto Maven, incluse le dipendenze mancanti. Offre agli sviluppatori l’opportunità di scoprire i problemi durante lo sviluppo locale, molto prima di distribuirli in ambienti Cloud con Cloud Manager. Per ulteriori informazioni, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it#developing) e [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+Il plug-in Maven SDK Build Analyzer per AEM as a Cloud Service rileva i problemi in un progetto Maven, incluse eventuali dipendenze mancanti. Offre agli sviluppatori l’opportunità di individuare i problemi durante lo sviluppo locale, molto prima che vengano distribuiti in ambienti Cloud con Cloud Manager. Per ulteriori informazioni, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it#developing) e [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
 
 ### Altro {#others-foundation}
 
 Nuovo [Sintassi &quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overview.md#local-validation) controlla la configurazione di apache e dispatcher eseguita durante la build di Cloud Manager, che può essere eseguita anche utilizzando AEM strumenti di Dispatcher dell’SDK as a Cloud Service.
 
-## Strumento Trasferimento contenuti {#content-transfer-tool}
+## Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
 
 Leggi questa sezione per scoprire le novità e gli aggiornamenti di [Strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Versione v1.1.12.
 

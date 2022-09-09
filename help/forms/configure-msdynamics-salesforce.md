@@ -9,9 +9,9 @@ ht-degree: 1%
 
 ---
 
-# Configurazione[!DNL Microsoft Dynamics 365]e[!DNL Salesforce]servizi cloud {#configure-azure-storage}
+# Configurazione [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud {#configure-azure-storage}
 
-[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud per integrare moduli adattivi con modelli di dati modulo predefiniti. L&#39;Adaptive Forms può quindi interagire con [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] server per abilitare i flussi di lavoro aziendali. Ad esempio:
+[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud per integrare moduli adattivi con modelli di dati modulo predefiniti. L&#39;Adaptive Forms può quindi interagire con [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] server per abilitare i flussi di lavoro aziendali. Esempio:
 
 * Scrivere dati in [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] all’invio di moduli adattivi.
 * Scrivi dati in [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] attraverso entità personalizzate definite in Form Data Model e viceversa.
@@ -82,7 +82,7 @@ Esegui i seguenti passaggi per configurare il [!DNL Microsoft Dynamics 365] serv
    1. Immetti il valore per la **[!UICONTROL Directory principale servizio]** campo . Vai all’istanza di Dynamics e passa a [Riferimenti per sviluppatori](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) per visualizzare il valore del campo Directory principale del servizio. Esempio, `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. Specifica l’ID client (indicato come ID applicazione) e il segreto client per l’applicazione connessa.
    1. Sostituisci `{tenant}` con un ID tenant nel **[!UICONTROL URL OAuth]**, **[!UICONTROL Aggiorna URL token]** e **[!UICONTROL URL token di accesso]** campi.
-   1. Specifica l’URL dell’istanza di dinamica nel **[!UICONTROL Risorsa]** campo da configurare [!UICONTROL Microsoft Dynamics] con un modello dati modulo. Utilizza l’URL principale del servizio per derivare l’URL dell’istanza Dynamics. Esempio, `https://<tenant-name>.dynamics.com`.
+   1. Specifica l’URL dell’istanza di dinamica nel **[!UICONTROL Risorsa]** campo da configurare [!UICONTROL Microsoft Dynamics] con un modello dati modulo. Utilizza l’URL principale del servizio per derivare l’URL dell’istanza Dynamics. Esempio: `https://<tenant-name>.dynamics.com`.
 
    1. Specifica `openid` in **[!UICONTROL Ambito di autorizzazione]** campo del processo di autorizzazione [!DNL Microsoft Dynamics 365].
    1. Accedi con il tuo [!DNL Microsoft Dynamics 365] credenziali e accettazione per consentire la connessione della configurazione del servizio cloud [!DNL Microsoft Dynamics 365] servizio. Se la connessione ha esito positivo, viene reindirizzato al [!DNL Microsoft Dynamics 365] pagina di configurazione del servizio cloud, che visualizza un messaggio di successo.

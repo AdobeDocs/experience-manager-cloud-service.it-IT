@@ -1,5 +1,5 @@
 ---
-title: 'Gestisci pubblicazione '
+title: Gestisci pubblicazione
 description: Pubblicare o annullare la pubblicazione delle risorse in Experience Manager Assets, Dynamic Media e Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
@@ -67,7 +67,7 @@ Pubblicazione su [!DNL Experience Manager Assets] consente di aggiungere ulterio
 
 ![Aggiungi contenuto](assets/manage-publication-add-content.png)
 
-### Includi impostazioni cartella {#include-folder-settings}
+### Impostazioni cartelle da includere {#include-folder-settings}
 
 Per impostazione predefinita, quando si pubblica una cartella in [!DNL Experience Manager Assets] pubblica tutte le risorse, le sottocartelle e i relativi riferimenti.
 
@@ -88,7 +88,7 @@ Per filtrare il contenuto della cartella da pubblicare, fai clic su **[!UICONTRO
 Only the selected folder content and references are published.
 -->
 
-![Includi impostazioni cartella](assets/manage-publication-include-folder-settings.png)
+![Impostazioni cartelle da includere](assets/manage-publication-include-folder-settings.png)
 
 Dopo aver applicato i filtri, fai clic su **[!UICONTROL OK]**, quindi fai clic su **[!UICONTROL Pubblica]**. Fai clic sul pulsante pubblica per visualizzare un messaggio di conferma `Resource(s) have been scheduled for publication` appare. E le risorse e (o) cartelle selezionate vengono pubblicate nella destinazione definita in base alla pianificazione (`Now` o `Later`). Accedi all’istanza di pubblicazione per verificare che le risorse e (o) le cartelle siano state pubblicate correttamente.
 

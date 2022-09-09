@@ -205,7 +205,7 @@ Il super tipo di risorsa può essere definito in due modi:
 * dal `sling:resourceSuperType` della risorsa.
 * dal `sling:resourceSuperType` proprietà del nodo a cui `sling:resourceType` punti.
 
-Ad esempio:
+Esempio:
 
 * `/`
    * `a`

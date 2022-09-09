@@ -292,7 +292,7 @@ Non supporta l’estrazione dei facet.
 
 Questa corrispondenza del predicato `JCR DATE` proprietà rispetto a un intervallo data/ora che utilizza scostamenti di tempo relativi all&#39;ora del server corrente. Puoi specificare `lowerBound` e `upperBound` utilizzando un valore di millisecondi o la sintassi Bugzilla `1s 2m 3h 4d 5w 6M 7y` (un secondo, due minuti, tre ore, quattro giorni, cinque settimane, sei mesi, sette anni). Prefisso con `-` per indicare un offset negativo prima del tempo corrente. Se specifichi solo `lowerBound` o `upperBound`, l’altro viene impostato come impostazione predefinita su `0`, che rappresenta l&#39;ora corrente.
 
-Ad esempio:
+Esempio:
 
 * `upperBound=1h` (e no) `lowerBound`) seleziona qualsiasi elemento nell&#39;ora successiva
 * `lowerBound=-1d` (e no) `upperBound`) seleziona qualsiasi elemento nelle ultime 24 ore

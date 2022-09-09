@@ -5,7 +5,7 @@ exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -72,7 +72,7 @@ Il valore predefinito è **Solo contenuto** (barra nascosta).
 
 Durante l’authoring delle pagine, le aree strutturali sono le seguenti:
 
-### Frame di contenuto {#content-frame}
+### Frame del contenuto {#content-frame}
 
 Viene eseguito il rendering del contenuto della pagina nel frame del contenuto. La cornice contenuto è completamente indipendente dall’editor, per garantire che non ci siano conflitti dovuti a CSS o javascript.
 

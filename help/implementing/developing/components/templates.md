@@ -5,7 +5,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -115,7 +115,7 @@ Durante la creazione di un nuovo modello modificabile:
 
 >[!NOTE]
 >
->I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e confondere la creazione di pagine. Una buona regola è mantenere il numero di modelli sotto i 100.
+>I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione della pagina. Tuttavia, troppi modelli possono sopraffare gli autori e confondere la creazione di pagine. Una buona regola è mantenere il numero di modelli sotto i 100.
 >
 >Adobe consiglia di non disporre di più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
 
@@ -233,7 +233,7 @@ Nella tabella seguente sono descritte le autorizzazioni necessarie per la modifi
 <table>
  <tbody>
   <tr>
-   <th>Percorso</th>
+   <th>Percorso </th>
    <th>Ruolo/Gruppo</th>
    <th>Autorizzazioni<br /> </th>
    <th>Descrizione</th>
@@ -319,7 +319,7 @@ I tipi di modelli specifici per il sito devono essere memorizzati nel percorso c
 
 * `/apps/settings/wcm/template-types`
 
-Le definizioni dei tipi di modelli personalizzati devono essere memorizzate in cartelle definite dall&#39;utente (consigliato) o in alternativa in `global`. Ad esempio:
+Le definizioni dei tipi di modelli personalizzati devono essere memorizzate in cartelle definite dall&#39;utente (consigliato) o in alternativa in `global`. Esempio:
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -370,7 +370,7 @@ Puoi trovare il codice di questa pagina su GitHub
 
 ## Definizioni dei modelli {#template-definitions}
 
-Vengono memorizzate le definizioni dei modelli modificabili [cartelle definite dall&#39;utente](#template-folders) (consigliato) o in alternativa in `global`. Ad esempio:
+Vengono memorizzate le definizioni dei modelli modificabili [cartelle definite dall&#39;utente](#template-folders) (consigliato) o in alternativa in `global`. Esempio:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`

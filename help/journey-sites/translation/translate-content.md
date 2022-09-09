@@ -6,7 +6,7 @@ hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 100%
 
@@ -216,9 +216,9 @@ Puoi utilizzare i passaggi precedenti per aggiungere il contenuto necessario a t
 
 In genere il contenuto del lavoro di traduzione inizia nello stato di **Bozza** come indicato dalla colonna **Stato** nella finestra **Lavoro di traduzione**.
 
-Per avviare il lavoro di traduzione, torna alla panoramica del progetto di traduzione e tocca o fai clic sul pulsante con la freccia nella parte superiore della scheda **Lavoro di traduzione** e seleziona **Inizio**.
+Per avviare il lavoro di traduzione, torna alla panoramica del progetto di traduzione e tocca o fai clic sul pulsante con la freccia nella parte superiore della scheda **Processo di traduzione** e seleziona **Avvia**.
 
-![Avvia lavoro di traduzione](assets/start-translation-job.png)
+![Avviare il lavoro di traduzione](assets/start-translation-job.png)
 
 AEM ora comunica con la configurazione di traduzione e il connettore per inviare il contenuto al servizio di traduzione. Per visualizzare l’avanzamento della traduzione, torna alla finestra **Lavoro di traduzione** e controlla la colonna **Stato** delle voci.
 
@@ -228,7 +228,7 @@ Le traduzioni automatiche risultano automaticamente con lo stato **Approvato**. 
 
 >[!TIP]
 >
->L&#39;elaborazione di un lavoro di traduzione può richiedere un po&#39; di tempo e potresti vedere gli elementi di traduzione spostarsi dallo stato di **Bozza** a quello di **Traduzione in corso** a **Pronto per la revisione** prima che arrivino allo stato **Approvato**. Questo è normale.
+>L&#39;elaborazione di un lavoro di traduzione può richiedere un po&#39; di tempo e potresti vedere gli elementi di traduzione spostarsi dallo stato di **Bozza** a **Traduzione in corso** a **Pronto per la revisione** prima che arrivino allo stato **Approvato**. Questo è normale.
 
 >[!NOTE]
 >

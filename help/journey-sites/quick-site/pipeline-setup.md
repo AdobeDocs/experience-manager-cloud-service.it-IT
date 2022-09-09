@@ -3,7 +3,7 @@ title: Configurare la pipeline
 description: Crea una pipeline front-end per gestire la personalizzazione del tema del sito.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 100%
 

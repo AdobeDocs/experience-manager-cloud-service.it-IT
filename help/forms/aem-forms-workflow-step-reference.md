@@ -1,5 +1,5 @@
 ---
-title: 'Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail, utilizzare Adobe Sign in un flusso di lavoro? '
+title: Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail, utilizzare Adobe Sign in un flusso di lavoro?
 description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti via e-mail, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4

@@ -3,7 +3,7 @@ title: Gestire siti demo
 description: Scopri gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 100%
 
@@ -103,7 +103,7 @@ Ora puoi esplorare le funzionalità di AEM utilizzando i tuoi siti demo. Tuttavi
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=it): per ulteriori informazioni sulle funzioni di Cloud Manager, consulta i documenti tecnici approfonditi.
+* [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=it): per ulteriori informazioni sulle funzioni di Cloud Manager, consulta direttamente i documenti tecnici dettagliati.
 * [Crea sito](/help/sites-cloud/administering/site-creation/create-site.md) - scopri come utilizzare AEM per creare un sito utilizzando i modelli per definirne lo stile e la struttura.
 * [Convenzioni AEM di denominazione delle pagine.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)Per informazioni sulle convenzioni per l’organizzazione delle pagine AEM, consulta questa pagina.
 * [Operazioni di base in AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): esplora questo documento se hai poca esperienza con AEM per comprendere i concetti di base, come la navigazione e l’organizzazione della console.

@@ -1,16 +1,16 @@
 ---
-title: 'Applicazione e annullamento dell’applicazione di Elenchi consentiti IP '
+title: Applicazione e annullamento dell’applicazione di Elenchi indirizzi IP consentiti
 description: Scopri come applicare e annullare l’applicazione degli elenchi consentiti IP agli ambienti.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Applicazione e annullamento dell’applicazione di Elenchi consentiti IP {#apply-allow-list}
+# Applicazione e annullamento dell’applicazione di Elenchi indirizzi IP consentiti {#apply-allow-list}
 
 Quando si applica un elenco consentiti IP, tutti gli intervalli IP inclusi nella definizione dell’elenco sono associati a un servizio di authoring o pubblicazione in un ambiente. L’annullamento dell’applicazione di un elenco è l’inverso di questo processo.
 

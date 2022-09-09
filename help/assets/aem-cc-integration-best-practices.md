@@ -27,12 +27,12 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 
 ## Necessità di collaborazione tra creativi, esperti di marketing e utenti DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-| Requisiti | Caso d’uso | Superfici interessate |
+| Requisiti  | Caso d’uso | Superfici interessate |
 |---|---|---|
 | Semplificare l&#39;esperienza per i creativi sul desktop | Semplificare l’accesso alle risorse da un DAM ([!DNL Assets]) per i creativi o, più in generale, per gli utenti desktop che lavorano in applicazioni native per la creazione di risorse. Hanno bisogno di un modo semplice e semplice per scoprire, utilizzare (aprire), modificare e salvare le modifiche all&#39;Experience Manager, nonché caricare nuovi file. | desktop Win o Mac; Creative Cloud app |
 | Fornire risorse pronte all’uso di alta qualità da [!DNL Adobe Stock] | Gli addetti al marketing contribuiscono ad accelerare il processo di creazione dei contenuti fornendo assistenza per l’origine e l’individuazione delle risorse. I professionisti creativi utilizzano le risorse approvate direttamente dai propri strumenti creativi. | [!DNL Assets]; [!DNL Adobe Stock] mercato; campi metadati |
 | Distribuire e condividere le risorse per organizzazioni | I dipartimenti interni/le filiali locali e i partner esterni, i distributori e le agenzie utilizzano le risorse approvate condivise dall&#39;organizzazione madre. L&#39;organizzazione desidera condividere in modo sicuro e senza soluzione di continuità le risorse create per un riutilizzo più ampio. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
-| Genera automaticamente varianti predefinite delle risorse caricate | Elabora automaticamente le risorse sfruttando l’esclusiva tecnologia di gestione e trasformazione dei contenuti multimediali di Adobe per azioni predefinite. Crea una logica personalizzata per definire le tue azioni tramite API e microservizi per le risorse. | [!DNL Assets] interfaccia utente |
+| Genera automaticamente varianti predefinite delle risorse caricate | Elabora automaticamente le risorse sfruttando l’esclusiva tecnologia di gestione e trasformazione dei contenuti multimediali di Adobe per azioni predefinite. Crea una logica personalizzata per definire le tue azioni tramite API e microservizi per le risorse. | [!DNL Assets] - Interfaccia utente |
 
 ## Offerte di Adobe per supportare le esigenze di collaborazione {#adobe-offerings-to-support-the-collaboration-need}
 

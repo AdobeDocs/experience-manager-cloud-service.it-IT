@@ -5,7 +5,7 @@ exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 21%
+ht-degree: 25%
 
 ---
 
@@ -27,7 +27,7 @@ L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno
 
 L’implementazione delle esercitazioni sfrutta molte funzioni avanzate di AEM. Il sito verrà implementato utilizzando:
 
-* [Archetipo AEM progetto Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Archetipo AEM progetto Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
 * [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)

@@ -35,7 +35,7 @@ Il rendering HTML semplice aggiunge il protocollo, l&#39;host e il percorso cont
 
 * o termina con: `-src`oppure `-href`
 
-Ad esempio:
+Esempio:
 
 `.../brooklyn-coat/master.plain.html`
 
@@ -235,7 +235,7 @@ Devi indicare al sistema se è necessario riscrivere i collegamenti quando viene
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
-Ad esempio:
+Esempio:
 
 ```java
 @Override

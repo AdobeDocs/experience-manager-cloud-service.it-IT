@@ -1,11 +1,11 @@
 ---
-title: 'Sospensione e disattivazione ambienti sandbox  '
+title: Sospensione e disattivazione ambienti sandbox
 description: Scopri in che modo gli ambienti di un programma sandbox entrano automaticamente in modalità ibernazione e come è possibile disattivarli.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ Puoi riattivare manualmente il programma sandbox dalla Console per sviluppatori.
 
 Segui questi passaggi per ibernare manualmente gli ambienti del programma sandbox.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione appropriata.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
 1. Clicca sul programma che desideri ibernare per mostrarne i dettagli.
 
@@ -63,7 +63,7 @@ Puoi attivare manualmente il programma sandbox dalla Console per sviluppatori.
 >
 >Un utente con un **Sviluppatore** Il ruolo può annullare la sospensione di un ambiente di programma sandbox.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione appropriata.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
 1. Clicca sul programma che desideri ibernare per mostrarne i dettagli.
 

@@ -5,15 +5,15 @@ exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
 # Introduzione ad AEM Screens as a Cloud Service {#introduction-screens-cloud}
 
-Con AEM Screens as a Cloud Service, puoi creare esperienze di digital signage coinvolgenti e dinamiche destinate a essere utilizzate in spazi pubblici. È la prossima evoluzione del prodotto AEM Screens e rappresenta un importante passo avanti in termini di usabilità e scalabilità.
+Con AEM Screens as a Cloud Service, puoi creare esperienze di segnaletica digitale coinvolgenti e dinamiche destinate a essere utilizzate negli spazi pubblici. È la prossima evoluzione del prodotto AEM Screens e rappresenta un importante passo avanti in termini di usabilità e scalabilità.
 
-AEM Screens as a Cloud Service è una soluzione di digital signage che consente agli esperti di marketing di creare e gestire esperienze digitali dinamiche su larga scala. Inoltre, prevede diversi tipi di schermi fisici nell&#39;ambito di una strategia di marketing digitale completa. Estende l&#39;offerta omni-channel di Adobe oltre i consueti canali web e mobili per includere anche i canali di digital signage che ci circondano. AEM Screens as a Cloud Service consente esperienze utente più rilevanti, contestuali, produttive e anticipatrici attraverso una profonda comprensione della creazione dei contenuti, dell’assemblaggio dei contenuti, della gestione degli eventi attivati e della riproduzione dei contenuti multimediali per tutti i consumatori e i visitatori in qualsiasi spazio pubblico.
+AEM Screens as a Cloud Service è una soluzione di segnaletica digitale che consente ai professionisti del marketing di creare e gestire esperienze digitali dinamiche su larga scala. Inoltre, prevede diversi tipi di schermi fisici nell&#39;ambito di una strategia di marketing digitale completa. Estende l&#39;offerta omni-channel di Adobe oltre i consueti canali web e mobili per includere anche i canali di digital signage che ci circondano. AEM Screens as a Cloud Service consente esperienze utente più rilevanti, contestuali, produttive e anticipatrici attraverso una profonda comprensione della creazione dei contenuti, dell’assemblaggio dei contenuti, della gestione degli eventi attivati e della riproduzione dei contenuti multimediali per tutti i consumatori e i visitatori in qualsiasi spazio pubblico.
 
 ## Informazioni sui componenti in Screens as a Cloud Service {#understanding-components}
 

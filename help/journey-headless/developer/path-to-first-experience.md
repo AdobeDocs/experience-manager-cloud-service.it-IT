@@ -33,7 +33,7 @@ Questo documento illustra i passaggi necessari per implementare il primo progett
 * Scopri quali strumenti e configurazioni AEM sono necessari.
 * Scopri le best practice per semplificare il tuo percorso headless, garantire l’efficienza nella generazione dei contenuti e la distribuzione rapida dei contenuti.
 
-## Requisiti {#requirements}
+## Requisiti  {#requirements}
 
 Prima di continuare con questo documento, accertati di aver rivisto il documento precedente nel Percorso di sviluppatori AEM Headless, [Guida introduttiva a AEM Headless as a Cloud Service](getting-started.md) assicurati di:
 
@@ -120,7 +120,7 @@ Un progetto senza testa non solo ha successo grazie alla tecnologia implementata
 * Sfrutta tutte le funzionalità offerte dal tuo sistema di tecnologia di traduzione che puoi integrare con AEM come la memoria di traduzione.
 * Comprendere se i contenuti rich media, come immagini e video, devono essere localizzati.
 
-## Prossimi passaggi {#what-is-next}
+## Novità {#what-is-next}
 
 Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, devi:
 

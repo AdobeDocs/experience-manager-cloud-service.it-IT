@@ -1,7 +1,7 @@
 ---
 title: Creazione e gestione di revisioni per le risorse nei moduli
 seo-title: Creating and managing reviews for assets in forms
-description: 'La funzione Revisione è un meccanismo che consente a uno o più revisori di commentare una risorsa disponibile in un modulo. '
+description: La funzione Revisione è un meccanismo che consente a uno o più revisori di commentare una risorsa disponibile in un modulo.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference

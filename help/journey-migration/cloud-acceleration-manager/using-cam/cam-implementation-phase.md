@@ -123,6 +123,6 @@ Per stimare le dimensioni dell&#39;archivio AEM, è possibile eseguire il rappor
 
 Puoi anche stimare la dimensione di percorsi di archivio specifici utilizzando la `path` ad esempio, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
 
-## Prossimi passaggi {#whats-next}
+## Novità {#whats-next}
 
 Dopo aver appreso come accedere a Cloud Acceleration Manager e come utilizzare la fase di implementazione, ora puoi passare alla revisione del passaggio successivo in [Vai alla fase live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en).

@@ -183,12 +183,12 @@ Simile al modo in cui aggiungi un predicato Proprietà o un predicato Opzioni, p
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Percorso</p> </td>
+   <td><p>Percorso </p> </td>
    <td><p>Utilizzalo per filtrare i risultati in base alla posizione. Puoi specificare percorsi diversi come opzioni.</p> </td>
    <td>
     <ul>
      <li>Etichetta</li>
-     <li>Percorso</li>
+     <li>Percorso </li>
      <li>Descrizione</li>
     </ul> </td>
   </tr>
@@ -252,7 +252,7 @@ Simile al modo in cui aggiungi un predicato Proprietà o un predicato Opzioni, p
     <ul>
      <li>Etichetta</li>
      <li>Nome proprietà</li>
-     <li>Percorso</li>
+     <li>Percorso </li>
      <li>Descrizione</li>
     </ul> </td>
   </tr>

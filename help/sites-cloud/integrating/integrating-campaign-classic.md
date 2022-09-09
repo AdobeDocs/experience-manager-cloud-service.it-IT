@@ -98,7 +98,7 @@ Il pacchetto di integrazione crea automaticamente il `aemserver` che AEM utilizz
 
 1. Assicurati che la zona di sicurezza non venga sovrascritta dalle rispettive impostazioni nella `config-<server name>.xml` file.
 
-   * Se il file di configurazione contiene un&#39;impostazione separata per l&#39;area di sicurezza, modificare la `allowUserPassword` attributo a `true`.
+   * Se il file di configurazione contiene un&#39;impostazione separata per l&#39;area di sicurezza, modificare il `allowUserPassword` attributo a `true`.
 
 1. Se si desidera modificare la porta del server Adobe Campaign Classic, sostituire `8080` con la porta desiderata.
 

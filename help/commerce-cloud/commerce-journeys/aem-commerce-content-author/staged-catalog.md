@@ -5,7 +5,7 @@ exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -64,7 +64,7 @@ Ora che hai completato questa parte del percorso devi:
 * comprendere i concetti di catalogo e contenuto di prodotti in staging con Lanci
 * essere in grado di accedere ai dati di catalogo dei prodotti in fase di sviluppo tramite product cockpit e editor
 
-Ora puoi gestire [esperienze prodotto](product-experience-management.md). Tuttavia, AEM Contenuto e Commerce dispongono di molte opzioni aggiuntive. Consulta alcune delle risorse aggiuntive disponibili nella sezione [Sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
+Ora puoi gestire [esperienze prodotto](product-experience-management.md). Tuttavia, AEM Contenuto e Commerce dispongono di molte opzioni aggiuntive. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 
 ## Risorse aggiuntive {#additional-resources}
 

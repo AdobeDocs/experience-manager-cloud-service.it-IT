@@ -25,7 +25,7 @@ Questo articolo si basa su questi elementi fondamentali per comprendere come uti
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a capire AEM Headless nel contesto del tuo progetto. Dopo la lettura è necessario:
+Questo documento ti aiuta a capire AEM Headless nel contesto del tuo progetto. Dopo la lettura dovresti:
 
 * Comprendere le nozioni di base AEM funzioni headless.
 * Conoscere i prerequisiti per l&#39;utilizzo di AEM funzionalità headless.
@@ -260,7 +260,7 @@ Spesso diverse sezioni di esperienze hanno diverse frequenze di aggiornamenti de
 * Alcuni tipi di contenuto devono scadere dopo un determinato periodo di tempo?
 * Esistono elementi specifici dell’utente e quindi non possono essere memorizzati nella cache?
 
-## Prossimi passaggi {#what-is-next}
+## Novità {#what-is-next}
 
 Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, devi:
 

@@ -268,7 +268,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
     </ul> </td>
   </tr>
   <tr>
-   <td>Proprietà Options</td>
+   <td>Opzioni Proprietà</td>
    <td>Cerca una o più proprietà dell’opzione.</td>
    <td>
     <ul>
@@ -292,7 +292,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
     </ul> </td>
   </tr>
   <tr>
-   <td>Percorso</td>
+   <td>Percorso </td>
    <td>Filtrare in base a un percorso specifico. Puoi specificare più percorsi come opzioni.</td>
    <td>
     <ul>
@@ -664,13 +664,13 @@ L’esempio seguente (per eseguire ricerche in base al modello utilizzato per cr
 
    * **Nome proprietà**
 
-      Specifica la proprietà nodo da cercare sui nodi target. Ad esempio:
+      Specifica la proprietà nodo da cercare sui nodi target. Esempio:
 
       `jcr:content/cq:template`
 
    * **Percorso nodo opzione**
 
-      Seleziona il percorso in cui vengono mantenute le opzioni. Ad esempio:
+      Seleziona il percorso in cui vengono mantenute le opzioni. Esempio:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![Predicati delle opzioni](assets/csf-options-predicate-02.png)

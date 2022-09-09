@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4274'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Per creare una configurazione blueprint:
 Puoi modificare o eliminare una configurazione blueprint esistente:
 
 1. [Passa](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) al menu **Strumenti** quindi seleziona il menu **Sites**.
-1. Seleziona **Blueprint** per aprire la console **Configurazioni Blueprint**:
+1. Seleziona **Blueprint** per aprire la console **Configurazioni blueprint**:
 
    ![Configurazioni blueprint](../assets/blueprint-configurations.png)
 

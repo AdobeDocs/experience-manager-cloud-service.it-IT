@@ -3,7 +3,8 @@ title: Gestione di archivi di contenuti di grandi dimensioni (legacy)
 description: Questa sezione descrive la gestione di archivi di contenuti di grandi dimensioni
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 19021f40-d0a5-4e0c-a213-c421338cedeb
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '1638'
 ht-degree: 1%

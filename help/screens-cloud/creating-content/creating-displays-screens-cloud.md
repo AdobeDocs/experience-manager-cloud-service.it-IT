@@ -5,7 +5,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ Una visualizzazione è un raggruppamento virtuale di schermate solitamente posiz
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come creare e gestire le visualizzazioni nel provider di servizi Screens. Dopo la lettura è necessario:
+Questo documento spiega come creare e gestire le visualizzazioni nel provider di servizi Screens. Dopo la lettura dovresti:
 
 * Come creare ed eliminare le visualizzazioni
 * Informazioni su come organizzare le visualizzazioni in cartelle

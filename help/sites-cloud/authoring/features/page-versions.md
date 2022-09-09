@@ -1,11 +1,11 @@
 ---
-title: 'Utilizzo delle versioni di una pagina  '
+title: Utilizzo delle versioni di una pagina
 description: Creare, confrontare e ripristinare le versioni di una pagina
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1521'
+ht-degree: 100%
 
 ---
 

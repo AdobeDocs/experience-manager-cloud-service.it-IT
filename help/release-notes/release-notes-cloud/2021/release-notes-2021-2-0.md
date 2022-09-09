@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2021.2.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2021.2.0."'
+title: Note sulla versione 2021.2.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: "[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1237'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -123,7 +123,7 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.2.0 è l’1
 
 ### Data di pubblicazione {#release-date-ctt}
 
-La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.2.4 è il 10 febbraio 2021.
+La data di pubblicazione dello strumento Content Transfer v1.2.4 è il 10 febbraio 2021.
 
 ### Correzioni di bug {#bug-fixes-ctt}
 
@@ -131,7 +131,7 @@ La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v
 
 ### Data di pubblicazione {#release-date-ctt-feb}
 
-La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.2.2 è il 10 febbraio 2021.
+La data di pubblicazione dello strumento Content Transfer v1.2.2 è il 01 febbraio 2021.
 
 ### Novità nello strumento Content Transfer (Trasferimento contenuti) {#what-is-new-ctt}
 

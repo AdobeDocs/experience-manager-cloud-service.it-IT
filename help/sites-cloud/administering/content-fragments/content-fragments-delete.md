@@ -4,8 +4,8 @@ description: Esamina queste considerazioni importanti prima di definire i criter
 exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '470'
+ht-degree: 100%
 
 ---
 

@@ -5,7 +5,7 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 5%
+ht-degree: 13%
 
 ---
 
@@ -92,7 +92,7 @@ La gestione dei modelli di frammenti di contenuto comporta:
 
 <!-- needs more details -->
 
-I modelli di frammento di contenuto devono essere pubblicati quando/prima che vengano pubblicati eventuali frammenti di contenuto dipendenti.
+I modelli per frammenti di contenuto devono essere pubblicati quando/prima che vengano pubblicati eventuali frammenti di contenuto dipendenti.
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ Non appena un modello viene pubblicato, viene *bloccato* in modalità READ-ONLY 
 
 Quando il modello è **Bloccato** (in modalità DI SOLA LETTURA), è possibile visualizzare il contenuto e la struttura dei modelli, ma non è possibile modificarli direttamente; anche se puoi gestire **Bloccato** modelli dalla console o dall’editor modelli.
 
-## Prossimi passaggi {#whats-next}
+## Novità {#whats-next}
 
 Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’iniziare a creare modelli di frammenti di contenuto personalizzati.
 
@@ -118,15 +118,15 @@ Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’in
 
       * [Definizione del modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [Abilitazione o disabilitazione di un modello di frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [Abilitazione o disabilitazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Consentire modelli di frammenti di contenuto nella cartella delle risorse](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Eliminazione di un modello di frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [Eliminazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [Pubblicazione di un modello di frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [Pubblicazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [Annullamento della pubblicazione di un modello di frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [Annullamento della pubblicazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
       * [Modelli per frammenti di contenuto bloccati (pubblicati)](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 

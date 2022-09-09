@@ -9,9 +9,9 @@ ht-degree: 1%
 
 ---
 
-# Installing and Configuring Players in Screens as a Cloud Service {#installing-players-screens-cloud}
+# Installazione e configurazione dei lettori in Screens as a Cloud Service {#installing-players-screens-cloud}
 
-This section describes how to install AEM Screens players that are registered to on-premise AEM instances. Additionally, you must do a factory reset of the existing player and then register the new player against AEM Screens as a Cloud Service.
+Questa sezione descrive come installare i lettori AEM Screens registrati nelle istanze di AEM on-premise. Inoltre, è necessario eseguire una reimpostazione di fabbrica del lettore esistente e quindi registrare il nuovo lettore su AEM Screens as a Cloud Service.
 
 ## Obiettivo {#objective}
 
@@ -43,9 +43,9 @@ Per aggiornare il lettore, effettua le seguenti operazioni:
 
 1. Fai clic su **Conferma** quando si passa alla modalità cloud, il lettore viene cancellato dalla registrazione.
 
-## Basic Playback Monitoring {#playback-monitoring}
+## Monitoraggio della riproduzione di base {#playback-monitoring}
 
-Il lettore riporta varie metriche di riproduzione con ciascuna `ping` il valore predefinito è 30 secondi. Based on these metrics, we can detect various edge cases such as stuck experience, blank screen, and scheduling issues. This lets us understand and troubleshoot issues on the device, and thus expedites an investigation and corrective measures with you.
+Il lettore riporta varie metriche di riproduzione con ciascuna `ping` il valore predefinito è 30 secondi. In base a queste metriche, possiamo rilevare vari casi edge come esperienza bloccata, schermata vuota e problemi di pianificazione. Questo ci permette di capire e risolvere i problemi del dispositivo, e quindi di accelerare un&#39;indagine e le misure correttive con voi.
 
 Il monitoraggio della riproduzione di base in un lettore AEM Screens consente di:
 
@@ -66,12 +66,12 @@ Le seguenti proprietà sono incluse in ogni `ping`:
 | activeElements {string} | stringa separata da virgole, elementi attualmente visibili in tutti i canali di riproduzione a sequenza (multipli in caso di layout a più zone) |
 | isDefaultContent {boolean} | true se il canale di riproduzione è considerato un canale predefinito o di fallback (ovvero, ha priorità 1 e nessuna pianificazione) |
 | hasContentChanged {boolean} | true se il contenuto è cambiato negli ultimi 5 minuti, false in caso contrario |
-| lastContentChange {string} | timestamp of the last content change |
+| lastContentChange {string} | timestamp dell’ultima modifica del contenuto |
 
 >[!NOTE]
 >Facoltativamente, è possibile abilitare una proprietà più avanzata dalle preferenze del lettore (Abilita monitoraggio riproduzione), ovvero:
 >|Proprietà|Descrizione|
->|---|---|
+>|—|—|
 >|isContentRendering {boolean}|true se la GPU può confermare che sta riproducendo il contenuto effettivo (in base all&#39;analisi dei pixel)|
 
 ### Limitazioni  {#limitations}

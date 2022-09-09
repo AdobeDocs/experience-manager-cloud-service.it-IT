@@ -3,7 +3,7 @@ title: Percorso AEM Reference Demos Add-On
 description: Inizia qui per un percorso guidato su come aggiungere facilmente il componente aggiuntivo Demos di riferimento di AEM a un ambiente sandbox con una configurazione di AEM minima ed essere in grado di testare le potenti funzionalità di AEM con esempi ricchi basati sulle best practice.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 100%
 

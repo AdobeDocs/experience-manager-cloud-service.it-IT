@@ -18,14 +18,14 @@ Questa funzione visualizza i registri attività per le risorse nella timeline. S
 
 Le seguenti operazioni vengono registrate nel flusso di attività:
 
-* Crea
+* Creare
 * Elimina
 * Download (incluse le rappresentazioni)
 * Pubblicazione
 * Annulla pubblicazione
 * Approva
 * Rifiuta
-* Sposta
+* Spostare
 
 I registri attività da visualizzare nella timeline vengono recuperati dalla posizione `/var/audit/com.day.cq.dam/content/dam` di CRX, dove vengono memorizzati i file di registro.  Inoltre, l’attività timeline viene registrata al caricamento di nuove risorse o quando le risorse esistenti vengono modificate e archiviate [!DNL Experience Manager] tramite [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) o [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 

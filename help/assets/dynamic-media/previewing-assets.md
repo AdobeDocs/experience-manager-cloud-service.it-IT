@@ -1,5 +1,5 @@
 ---
-title: Anteprima delle risorse
+title: Visualizzare l’anteprima delle risorse
 description: Scopri come visualizzare in anteprima le risorse in Dynamic Media.
 feature: Asset Management
 role: User
@@ -7,11 +7,11 @@ exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '1212'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Anteprima delle risorse{#previewing-assets}
+# Visualizzare l’anteprima delle risorse{#previewing-assets}
 
 Puoi utilizzare Anteprima per vedere come viene visualizzata una risorsa digitale caricata quando viene visualizzata da un cliente nel proprio browser web. Per l’anteprima viene utilizzato il visualizzatore predefinito incorporato per più dispositivi assegnato alla risorsa.
 
@@ -85,7 +85,7 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell’interfaccia ute
         </ul> </td>
       </tr>
       <tr>
-      <td>Set di immagini</td>
+      <td>Set immagini</td>
       <td>No</td>
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>

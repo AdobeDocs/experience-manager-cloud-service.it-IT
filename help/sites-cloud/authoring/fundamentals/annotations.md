@@ -3,7 +3,7 @@ title: Aggiunta di annotazioni di pagina
 description: La modalità di annotazione consente di lasciare annotazioni e schizzi sulle pagine, in modo da facilitare il processo di revisione dei contenuti
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 100%
 

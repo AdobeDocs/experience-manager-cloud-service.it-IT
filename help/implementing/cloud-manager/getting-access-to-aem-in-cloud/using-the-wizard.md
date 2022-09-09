@@ -5,13 +5,13 @@ exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 # Creazione guidata progetto {#project-creation-wizard}
 
-Dopo aver creato il programma di produzione, Cloud Manager offre una procedura guidata per creare un progetto AEM minimo basato su [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) per iniziare rapidamente.
+Dopo aver creato il programma di produzione, Cloud Manager offre una procedura guidata per creare un progetto AEM minimo basato su [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) per iniziare rapidamente.
 
 Segui questi passaggi per creare un progetto di applicazione AEM in Cloud Manager utilizzando la procedura guidata.
 

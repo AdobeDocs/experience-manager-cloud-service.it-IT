@@ -1,6 +1,6 @@
 ---
 title: Utilizzare Media Library per la gestione di base delle risorse digitali
-description: '"[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse."'
+description: "[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse."
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
@@ -59,7 +59,7 @@ Media Library copre ampiamente i seguenti casi di utilizzo:
 Per utilizzare la funzionalità Media Library, è possibile utilizzare la [!DNL Experience Manager] interfaccia utente. Media Library fa parte del [!DNL Experience Manager Sites] installazione e non è necessaria alcuna interfaccia o componente aggiuntivo separata. Utilizzando l’interfaccia esistente, gli utenti di Media Library possono eseguire le seguenti attività:
 
 * Crea cartelle per organizzare le risorse.
-* Carica le risorse.
+* Caricare le risorse.
 * Pubblicare le risorse.
 * Modificare, spostare e copiare le risorse.
 * Sfogliare, filtrare e cercare (include la ricerca per similarità) le risorse.

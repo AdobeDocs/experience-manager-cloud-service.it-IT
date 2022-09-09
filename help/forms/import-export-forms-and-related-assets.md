@@ -1,5 +1,5 @@
 ---
-title: 'Importare ed esportare le risorse '
+title: Importare ed esportare le risorse
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: È possibile importare ed esportare Adattivo Forms e le relative risorse in istanze AEM. Questo consente di migrare i moduli o spostarli tra i diversi sistemi.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.

@@ -5,7 +5,7 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
@@ -18,16 +18,16 @@ Cloud Manager si basa su una gerarchia di entità. I dettagli di questo non sono
 
 * **TENDA** - Questa è la parte superiore della gerarchia. A ogni cliente viene eseguito il provisioning con un tenant.
 * **PROGRAMMI** - Ogni tenant dispone di uno o più programmi, [che spesso riflettono le soluzioni concesse in licenza dal cliente.](introduction-production-programs.md)
-* **AMBIENTI** - Ogni programma dispone di più ambienti, ad esempio la produzione di contenuti live, uno per la gestione temporanea e uno per lo sviluppo.
+* **AMBIENTI**: ogni programma dispone di più ambienti, ad esempio la produzione di contenuti live, uno per la gestione temporanea e uno per lo sviluppo.
    * Ogni programma può avere un solo ambiente di produzione, ma più ambienti non di produzione.
 * **ARCHIVIO** - I programmi dispongono di archivi git in cui l’applicazione e il codice front-end vengono mantenuti per gli ambienti.
 * **STRUMENTI E FLUSSI DI LAVORO** - Le pipeline gestiscono la distribuzione del codice dagli archivi agli ambienti, mentre altri strumenti consentono l’accesso ai registri, al monitoraggio e alla gestione dell’ambiente.
 
 Un esempio è spesso utile per contestualizzare questa gerarchia.
 
-* WKND Viaggi e Avventura Le aziende potrebbero essere un **inquilino** che si concentra sui supporti correlati ai viaggi.
+* WKND Travel and Adventure Enterprises potrebbe essere un **tenant** che si occupa di media legati ai viaggi.
 * Il tenant WKND Travel and Adventure Enterprises potrebbe avere due **programmi**: un programma Sites per WKND Magazine e un programma Assets per WKND Media.
-* I programmi WKND Magazine e WKND Media avrebbero sia sviluppo che stage e produzione **ambienti**.
+* I programmi WKND Magazine e WKND Media avrebbero sia **ambienti** di sviluppo che di stage e di produzione.
 
 ## Archivio del codice sorgente {#source-code-repository}
 

@@ -4,8 +4,8 @@ description: Scopri di più sui CMS headless. Come funzionano? Quali sono le alt
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
 source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '742'
+ht-degree: 94%
 
 ---
 

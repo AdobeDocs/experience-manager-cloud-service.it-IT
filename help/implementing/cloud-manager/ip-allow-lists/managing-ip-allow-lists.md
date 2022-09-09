@@ -1,13 +1,13 @@
 ---
 title: Gestione degli Elenchi IP consentiti
 description: Scopri come visualizzare, modificare, eliminare e controllare lo stato degli elenchi consentiti IP in Cloud Manager.
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
+source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Gestione degli Elenchi IP consentiti {#manage-ip-allow-lists}
 

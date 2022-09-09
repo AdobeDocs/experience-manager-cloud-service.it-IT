@@ -4,8 +4,8 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2904'
+ht-degree: 98%
 
 ---
 

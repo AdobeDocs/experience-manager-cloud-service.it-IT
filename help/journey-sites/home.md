@@ -3,7 +3,7 @@ title: Percorsi AEM Sites
 description: Inizia qui per una panoramica dei percorsi guidati disponibili per comprendere le potenti funzionalità di AEM Sites.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 

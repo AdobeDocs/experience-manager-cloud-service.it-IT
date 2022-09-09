@@ -5,8 +5,8 @@ feature: Release Information
 exl-id: e7ff623b-aeca-40a6-bf48-98af270a4117
 source-git-commit: 458d63c27bb2ab4d09237aa3ecb96c0f6d5e67ed
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '399'
+ht-degree: 3%
 
 ---
 
@@ -29,7 +29,7 @@ La data di rilascio della versione 2022.4.0 di Cloud Manager in AEM as a Cloud S
 * Poco dopo la versione di aprile, l’India sarà disponibile per la selezione quando definirà l’area cloud durante la creazione dell’ambiente.
 * La **Tubi** La pagina ora dispone di impaginazione per migliorare l’usabilità dei programmi con un numero elevato di pipeline.
    * Nella tabella vengono visualizzate 50 righe per pagina.
-* Versione del [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) utilizzato da Cloud Manager è stato aggiornato alla versione 36.
+* Versione del [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) utilizzato da Cloud Manager è stato aggiornato alla versione 36.
 * Oracle JDK è ora il JDK predefinito per lo sviluppo e il funzionamento delle applicazioni AEM. Il processo di creazione di Cloud Manager passa automaticamente a utilizzando Oracle JDK, anche se nella toolchain Maven è selezionata esplicitamente un’opzione alternativa.
    * Per ulteriori informazioni su come passare ad Oracle JDK, consulta [la documentazione sull’ambiente di creazione.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)
    * Fai riferimento a [Domande frequenti sui criteri di supporto Java per Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/assets/Java_Policy_for_Adobe_Experience_Manager.pdf) per risolvere le domande comuni su questa modifica.

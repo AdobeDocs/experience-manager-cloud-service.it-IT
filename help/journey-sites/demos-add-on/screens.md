@@ -3,7 +3,7 @@ title: Abilitare AEM Screens per il tuo sito demo
 description: Scopri i passaggi per abilitare l’esperienza completa di AEM Screens as a Cloud Service sul tuo sito demo.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2671'
 ht-degree: 100%
 

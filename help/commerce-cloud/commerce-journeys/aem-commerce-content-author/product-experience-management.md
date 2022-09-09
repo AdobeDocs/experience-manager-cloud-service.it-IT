@@ -5,7 +5,7 @@ exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -101,7 +101,7 @@ Se per quel prodotto è stato creato del contenuto associato, passa alla barra l
 
 ![pagina arricchita da pem](assets/pem-page-enriched.png)
 
-## Fine del Percorso? {#end-of-journey}
+## Fine del percorso? {#end-of-journey}
 
 Congratulazioni! Hai completato il percorso AEM Content and Commerce Developer! Ora dovresti:
 
@@ -109,7 +109,7 @@ Congratulazioni! Hai completato il percorso AEM Content and Commerce Developer! 
 * utilizzare i segnaposto per arricchire singolarmente le pagine di prodotti e categorie
 * Scopri come rendere il contenuto acquistabile e utilizzare la scheda contenuto associata
 
-Ora puoi gestire le esperienze dei prodotti utilizzando AEM Contenuto e Commerce. Tuttavia, AEM Contenuto e Commerce dispongono di molte opzioni aggiuntive. Consulta alcune delle risorse aggiuntive disponibili nella sezione [Sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
+Ora puoi gestire le esperienze dei prodotti utilizzando AEM Contenuto e Commerce. Tuttavia, AEM Contenuto e Commerce dispongono di molte opzioni aggiuntive. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 
 ## Risorse aggiuntive {#additional-resources}
 

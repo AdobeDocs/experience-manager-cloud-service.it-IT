@@ -31,7 +31,7 @@ L&#39;integrazione richiede:
 * Un&#39;operazione in corso [!DNL Experience Manager Assets] come [!DNL Cloud Service] istanza
 * Un [enterprise [!DNL Adobe Stock] piano](https://stockenterprise.adobe.com/)
 * Un utente con autorizzazioni in Admin Console al profilo di prodotto Stock predefinito
-* Utente con autorizzazioni per il profilo Developer Access per la creazione di integrazioni in Adobe Developer Console
+* Utente con autorizzazioni per il profilo Developer Access per la creazione di integrazioni nella console Adobe Developer
 
 Un&#39;impresa [!DNL Adobe Stock] piano,
 
@@ -111,7 +111,7 @@ La configurazione IMS prevede due passaggi:
 
 ### Recuperare il certificato pubblico {#public-certificate}
 
-La chiave pubblica (certificato) autentica il profilo di prodotto in Adobe Developer Console.
+La chiave pubblica (certificato) autentica il tuo profilo di prodotto nella console Adobe Developer.
 
 1. Accedi al tuo [!DNL Experience Manager Assets] istanza cloud.
 
@@ -135,15 +135,15 @@ La chiave pubblica (certificato) autentica il profilo di prodotto in Adobe Devel
 
 1. In **Account** viene creato l’account Adobe IMS che richiede le credenziali dell’account del servizio.
 
-   Apri una nuova scheda e [creare una connessione a un account di servizio (JWT) in Adobe Developer Console](#createnewintegration).
+   Apri una nuova scheda e [creare una connessione account di servizio (JWT) nella console Adobe Developer](#createnewintegration).
 
 ### Crea connessione account di servizio (JWT) {#createnewintegration}
 
-In Adobe Developer Console, i progetti e le API sono configurati a livello di organizzazione. La configurazione di un’API crea una connessione a un account di servizio (JWT). Esistono due metodi per configurare l’API, generando una coppia di chiavi (chiavi private e pubbliche) o caricando una chiave pubblica. In questo esempio, le credenziali dell’account del servizio vengono generate caricando la chiave pubblica.
+Nella console Adobe Developer, i progetti e le API sono configurati a livello di organizzazione. La configurazione di un’API crea una connessione a un account di servizio (JWT). Esistono due metodi per configurare l’API, generando una coppia di chiavi (chiavi private e pubbliche) o caricando una chiave pubblica. In questo esempio, le credenziali dell’account del servizio vengono generate caricando la chiave pubblica.
 
 Per generare le credenziali dell’account del servizio e il payload JWT:
 
-1. Accedi ad Adobe Developer Console con privilegi di amministratore di sistema. L’URL predefinito è [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Accedi alla console Adobe Developer con i privilegi di amministratore di sistema. L’URL predefinito è [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    Accertati di aver selezionato l’organizzazione IMS corretta (adesione Stock) dall’elenco a discesa (organizzazione).

@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ Segui questi passaggi per definire gli utenti del tuo nuovo account secondario R
 >
 >Un utente in **Proprietario business** o **Gestione distribuzione** per gestire i nuovi utenti di Relic One, è necessario accedere al ruolo.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione appropriata.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
 1. Fare clic sul programma per il quale si desidera gestire i nuovi utenti Relic One.
 
@@ -92,7 +92,7 @@ Una volta che [ha attivato il tuo nuovo account Relic,](#activate-account) puoi 
 
 Per accedere a New Relic One tramite Cloud Manager:
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione appropriata.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
 1. Fare clic sul programma per il quale si desidera accedere a Nuovo Relic One.
 

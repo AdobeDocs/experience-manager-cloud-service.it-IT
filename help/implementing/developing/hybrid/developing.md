@@ -54,7 +54,7 @@ Qualsiasi indirizzamento statico funziona contro [principio di portabilità](#po
 
 ## Archetipo progetto AEM {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
 ## Modelli di progettazione SPA {#spa-design-models}
 
@@ -170,14 +170,14 @@ L’architettura generale di AEM, inclusi gli ambienti di sviluppo, authoring e 
 
 ![Architettura AEM e SPA](assets/aem-architecture.png)
 
-* **Ambiente di compilazione**
+* **Ambiente build**
 
    In questo punto viene estratto l’origine dell’applicazione SPA e l’origine del componente.
 
    * Il generatore clientlib NPM crea una libreria client dal progetto SPA.
    * Tale libreria verrà prelevata da Maven e distribuita dal plug-in Maven Build insieme al componente per l’authoring di AEM.
 
-* **AEM Author**
+* **Autore AEM**
 
    Il contenuto viene creato sull’autore AEM, inclusa la SPA di authoring.
 

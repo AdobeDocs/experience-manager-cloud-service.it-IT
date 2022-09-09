@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
@@ -72,29 +72,29 @@ Nella console puoi selezionare le cartelle nel pannello a sinistra per passare a
 
 ### Azioni, Selezione, Visualizzazione {#actions-selecting-viewing}
 
-In **Frammenti di contenuto** dalla barra degli strumenti sono disponibili diverse azioni per i frammenti di contenuto:
+Nella barra degli strumenti della console **Frammenti di contenuto** è disponibile una scelta di azioni relative ai frammenti di contenuto:
 
 <!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
 * **Apri in Assets**
-* **Creare**
-* La **A cui fa riferimento** la colonna fornisce inoltre un collegamento diretto per visualizzare tutti i riferimenti principali di tale frammento; , compresi i riferimenti a frammenti di contenuto, frammenti esperienza e pagine.
+* **Crea**
+* La colonna **Riferimento da** fornisce inoltre un collegamento diretto per visualizzare tutti i riferimenti principali di tale frammento, compresi i riferimenti a frammenti di contenuto, frammenti di esperienza e pagine.
 * Passando il puntatore del mouse sul nome della cartella verrà visualizzato il percorso JCR.
 
-Dopo aver selezionato il frammento sono disponibili tutte le azioni appropriate:
+Dopo aver selezionato il frammento, saranno disponibili tutte le azioni appropriate:
 
 <!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
 * **Apri**
-* **Pubblica** e **Annulla pubblicazione**)
+* **Pubblica** (e **Annulla pubblicazione**)
 * **Copia**
-* **Spostare**
+* **Sposta**
 * **Rinomina**
 * **Elimina**
 
 >[!NOTE]
 >
->Azioni come Pubblica, Annulla pubblicazione, Elimina, Sposta, Rinomina, Copia, attivano un processo asincrono. L’avanzamento di quel processo può essere monitorato tramite l’interfaccia utente AEM processi asincroni .
+>Azioni come Pubblica, Annulla pubblicazione, Elimina, Sposta, Rinomina, Copia, attivano un processo asincrono. L’avanzamento di tale processo può essere monitorato tramite l’interfaccia dei processi asincroni di AEM.
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
@@ -172,7 +172,7 @@ In **Frammenti di contenuto** console utilizzabile **Crea** per aprire **Nuovo f
 
 Specifica la:
 
-* **Posizione**
+* **Dove si trova**
 * **Modello a frammento di contenuto**
 * **Titolo**
 * **Nome**
@@ -253,7 +253,7 @@ I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di con
 
    Questa è un’altra scheda nell’editor e fornisce una vista tecnica, destinata principalmente agli sviluppatori.
 
-* **Aggiorna i riferimenti pagina**
+* **Aggiorna i riferimenti di pagina**
 
    Questa azione è disponibile nella pagina **...** (puntini di sospensione) a discesa. Non è interessante per gli autori headless in quanto si riferisce all’authoring delle pagine.
 
@@ -267,7 +267,7 @@ Le azioni di pubblicazione sono disponibili nell’editor (o dalla barra degli s
 
 ![Editor frammento di contenuto - Frammento personale](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
-## Prossimi passaggi {#whats-next}
+## Novità {#whats-next}
 
 Ora che hai imparato le nozioni di base, il passo successivo è quello di [Scopri come utilizzare i riferimenti](references.md). Questo introduce e discute i vari riferimenti disponibili e come creare livelli di struttura con i Riferimenti ai frammenti, una parte chiave dell’authoring per gli oggetti headless.
 

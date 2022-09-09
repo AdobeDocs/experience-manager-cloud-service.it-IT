@@ -1,6 +1,6 @@
 ---
-title: 'Incorporato [!DNL AEM Forms] Gruppi as a Cloud Service '
-description: 'Elenco dei gruppi di utenti predefiniti e delle autorizzazioni assegnate a ciascun gruppo '
+title: Incorporato [!DNL AEM Forms] Gruppi as a Cloud Service
+description: Elenco dei gruppi di utenti predefiniti e delle autorizzazioni assegnate a ciascun gruppo
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
 workflow-type: tm+mt

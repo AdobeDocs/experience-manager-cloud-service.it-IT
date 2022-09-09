@@ -384,7 +384,7 @@ Le opzioni per personalizzare gli stili di stato variano per i diversi component
  <tbody>
   <tr>
    <td><strong>Proprietà</strong></td>
-   <td><strong>Utilizzo</strong></td>
+   <td><strong>Utilizzare</strong></td>
   </tr>
   <tr>
    <td><p>Dimensioni e posizione</p> </td>
@@ -395,7 +395,7 @@ Le opzioni per personalizzare gli stili di stato variano per i diversi component
    <td><p>Consente di personalizzare gli stili di testo nel componente del tema.</p> <p>Ad esempio, si desidera modificare l’aspetto del testo immesso nella casella di testo.</p> <p>Le opzioni disponibili sono famiglia di font, peso, colore, dimensione, altezza riga, allineamento testo, spaziatura lettere, rientro testo, sottolineatura, corsivo, trasformazione testo, allineamento verticale, linea di base e direzione. </p> </td>
   </tr>
   <tr>
-   <td><p>Sfondo </p> </td>
+   <td><p>Informazioni di base </p> </td>
    <td><p>Consente di riempire lo sfondo del componente con un’immagine o un colore. </p> </td>
   </tr>
   <tr>

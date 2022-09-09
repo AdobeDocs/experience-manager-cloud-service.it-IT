@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6351'
+source-wordcount: '6346'
 ht-degree: 0%
 
 ---
@@ -628,7 +628,7 @@ Per aprire un modulo in modalità di modifica, selezionalo e tocca **[!UICONTROL
 1. Seleziona la casella numerica di input e tocca ![edit-rules](assets/edit-rules-icon.svg) per aprire l’editor di regole.
 1. Tocca **[!UICONTROL Crea regola]**. Utilizzando le opzioni visualizzate di seguito, creare una regola per salvare il valore al quadrato dell&#39;input nel campo Output del modulo.
 
-[![Utilizzo di funzioni personalizzate per creare una regola](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+   [![Utilizzo di funzioni personalizzate per creare una regola](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. Toccate **[!UICONTROL Chiudi]**. Viene aggiunta la funzione personalizzata .
 

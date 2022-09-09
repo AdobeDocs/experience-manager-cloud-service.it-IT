@@ -8,7 +8,7 @@ exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '2584'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
@@ -196,7 +196,7 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 
 Per creare una copia per lingua, attiva uno dei seguenti flussi di lavoro di copia per lingua disponibili nella barra laterale Riferimenti nell’interfaccia utente Assets:
 
-**Creare e tradurre**
+**Crea e traduci**
 
 In questo flusso di lavoro, le risorse da tradurre vengono copiate nella directory principale della lingua in cui desideri tradurre. Inoltre, a seconda delle opzioni selezionate, viene creato un progetto di traduzione per le risorse nella console Progetti . A seconda delle impostazioni, il progetto di traduzione può essere avviato manualmente o può essere eseguito automaticamente non appena viene creato il progetto di traduzione.
 

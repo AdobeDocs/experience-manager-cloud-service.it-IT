@@ -1,6 +1,6 @@
 ---
 title: Panoramica as a Cloud Service di Adobe Experience Manager (AEM) Forms
-description: '"[!DNL AEM Forms] as a Cloud Service è una piattaforma per creare, gestire e pubblicare moduli e processi aziendali di classe enterprise."'
+description: "[!DNL AEM Forms] as a Cloud Service è una piattaforma per creare, gestire e pubblicare moduli e processi aziendali di classe enterprise."
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '82'

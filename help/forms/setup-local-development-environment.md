@@ -293,7 +293,7 @@ Per istruzioni dettagliate su come impostare Dispatcher, vedi [Configurare gli s
 Esegui i seguenti passaggi per configurare la cache del Dispatcher per Experience Manager Forms as a Cloud Service:
 
 1. Apri il progetto AEM e passa a `\src\conf.dispatcher.d\available_farms`
-1. Crea una copia del `default.farm` file. Esempio, `forms.farm`.
+1. Crea una copia del `default.farm` file. Esempio: `forms.farm`.
 1. Apri la nuova creazione `forms.farm` per modificare e sostituire il codice seguente:
 
    ```json

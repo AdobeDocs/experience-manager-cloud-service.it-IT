@@ -7,14 +7,14 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1218'
 ht-degree: 3%
 
 ---
 
-# Migrare a[!DNL AEM Forms]as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# Migrare a [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 Puoi eseguire la migrazione di Forms adattivo, temi, modelli e configurazioni cloud da <!-- AEM 6.3 Forms--> AEM 6.4 Forms su OSGi e AEM Forms 6.5 su OSGi a [!DNL AEM] as a Cloud Service. Prima di eseguire la migrazione di queste risorse, utilizza l&#39;utility di migrazione per convertire il formato utilizzato nelle versioni precedenti nel formato utilizzato in [!DNL AEM] as a Cloud Service. Quando esegui l&#39;utilità di migrazione, vengono aggiornate le risorse seguenti:
 
@@ -27,7 +27,7 @@ Puoi eseguire la migrazione di Forms adattivo, temi, modelli e configurazioni cl
 
 * Il servizio consente di eseguire la migrazione del contenuto solo da [!DNL AEM Forms] negli ambienti OSGi. Migrazione dei contenuti da [!DNL AEM Forms] su JEE in un ambiente di Cloud Service non supportato.
 
-* (Solo per AEM 6.3 Forms o un ambiente di versione precedente aggiornato a AEM 6.4 Forms o AEM 6.5 Forms) Forms adattivo basato su modelli e temi predefiniti disponibili in AEM 6.3 Forms o versione precedente non sono supportati su [!DNL [!DNL AEM Forms]] as a Cloud Service.
+* (Solo per AEM 6.3 Forms o un ambiente di versione precedente aggiornato a AEM 6.4 Forms o AEM 6.5 Forms) Forms adattivo basato su modelli e temi predefiniti disponibili in AEM 6.3 Forms o versione precedente non sono supportati in [!DNL AEM Forms] as a Cloud Service.
 
 ## Prerequisiti {#prerequisites}
 
@@ -97,7 +97,7 @@ Esegui i seguenti passaggi per effettuare [!DNL AEM Forms] risorse compatibili c
 ## Percorsi di varie risorse specifiche di AEM Forms
 
 * **Forms adattivo**: Puoi trovare i moduli adattivi all’indirizzo `/content/dam/formsanddocuments/`e /content/forms/af. Ad esempio, per un modulo adattivo denominato WKND Registration, aggiungere percorsi `/content/dam/formsanddocuments/wknd-registration` e `/content/forms/af/wknd-registration`.
-* **Modalità dati modulo**: Puoi trovare tutti i modelli di dati modulo in `/content/dam/formsanddocuments-fdm`. Esempio, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **Modalità dati modulo**: Puoi trovare tutti i modelli di dati modulo in `/content/dam/formsanddocuments-fdm`. Esempio: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Librerie client**: Il percorso predefinito delle librerie client è `/etc/clientlibs/fd/theme`.
 

@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione 2021.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione 2021.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -33,7 +33,7 @@ La versione seguente (2021.6.0) sarà del 28 giugno 2021.
 
 * [Obsolescenza API](/help/release-notes/deprecated-apis.md): è disponibile un elenco delle API obsolete più recenti per AEM as a Cloud Service .
 
-* [Plug-in Maven di AEM SDK Build Analyzer as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Aggiorna i progetti Maven all’ultima versione, che include un controllo Java API obsoleto e altri miglioramenti.
+* [Plug-in Maven di AEM SDK Build Analyzer as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it): Aggiorna i progetti Maven all’ultima versione, che include un controllo Java API obsoleto e altri miglioramenti.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

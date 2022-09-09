@@ -178,7 +178,7 @@ Per configurare lo strumento di importazione in blocco, effettua le seguenti ope
 
 1. (Facoltativo) Immetti la dimensione massima dei file in MB per includerli nel processo di acquisizione nel **[!UICONTROL Filtra per dimensione massima]** campo .
 
-1. (Facoltativo) Specifica un elenco separato da virgole di tipi MIME da escludere dall’acquisizione nel **[!UICONTROL Escludere i tipi MIME]** campo . Esempio, `image/jpeg, image/.*, video/mp4`. Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
+1. (Facoltativo) Specifica un elenco separato da virgole di tipi MIME da escludere dall’acquisizione nel **[!UICONTROL Escludere i tipi MIME]** campo . Esempio: `image/jpeg, image/.*, video/mp4`. Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
 
 1. Specifica l’elenco di tipi MIME separati da virgola da includere dall’acquisizione in **[!UICONTROL Includi tipi MIME]** campo . Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
 
@@ -186,7 +186,7 @@ Per configurare lo strumento di importazione in blocco, effettua le seguenti ope
 
 1. Seleziona la **[!UICONTROL Modalità importazione]**. Seleziona **Salta**, **Sostituisci** oppure **Crea versione**. La modalità Salta è l’impostazione predefinita e in questa modalità l’utente che esegue l’acquisizione salta per importare una risorsa, se esiste già. Vedere il significato di [opzioni di sostituzione e creazione della versione](#handling-upload-existing-file).
 
-1. Specifica un percorso per definire una posizione in DAM in cui le risorse devono essere importate tramite **[!UICONTROL Cartella di destinazione delle risorse]** campo . Esempio, `/content/dam/imported_assets`.
+1. Specifica un percorso per definire una posizione in DAM in cui le risorse devono essere importate tramite **[!UICONTROL Cartella di destinazione delle risorse]** campo . Esempio: `/content/dam/imported_assets`.
 
 1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel **[!UICONTROL File metadati]** campo . Specifica il file CSV nella posizione del BLOB di origine e fai riferimento al percorso durante la configurazione dello strumento di importazione in blocco. Il formato di file CSV a cui si fa riferimento in questo campo è lo stesso del formato di file CSV quando [Importare ed esportare in blocco i metadati delle risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Se selezioni la **Elimina il file sorgente dopo l’importazione** , filtra i file CSV utilizzando **Escludi** o **Includi tipo MIME** o **Filtra per percorso/file** campi. Puoi usare un’espressione regolare per filtrare i file CSV in questi campi.
 

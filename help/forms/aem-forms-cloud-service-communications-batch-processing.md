@@ -56,7 +56,7 @@ Un&#39;operazione batch è un processo di generazione di più documenti di tipo 
 
 >[!VIDEO](https://video.tv.adobe.com/v/338349)
 
-Puoi guardare il video o eseguire le istruzioni riportate di seguito per scoprire come generare documenti utilizzando operazioni batch. La documentazione di riferimento API utilizzata nei video è disponibile in formato .yaml. È possibile scaricare [API batch](assets/batch-api.yaml) filma e caricalo su Postman per verificare la funzionalità delle API e segui il video.
+Puoi guardare il video o eseguire le istruzioni riportate di seguito per scoprire come generare documenti utilizzando operazioni batch. La documentazione di riferimento API utilizzata nei video è disponibile in formato .yaml. È possibile scaricare [API batch](assets/batch-api.yaml) archivia e caricalo in Postman per verificare la funzionalità delle API e segui il video.
 
 ### Prerequisiti {#pre-requisites}
 

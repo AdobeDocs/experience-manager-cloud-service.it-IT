@@ -49,7 +49,7 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.6.0 è il 10
 
 * Le definizioni dei nodi JCR contenenti una nuova riga dopo che il nome dell&#39;elemento principale non è stato analizzato correttamente.
 
-* L&#39;API degli archivi di elenchi non filtrerebbe gli archivi eliminati.
+* L&#39;API degli archivi di elenco non filtrerebbe gli archivi eliminati.
 
 * Veniva visualizzato un messaggio di errore non corretto quando veniva fornito un valore non valido per il passaggio di pianificazione.
 

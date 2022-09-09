@@ -191,7 +191,7 @@ Esempio di un valore valido `htmlPasteRules` La struttura è qui sotto:
 
 ## Configurare gli stili di testo {#textstyles}
 
-Gli autori possono applicare gli stili per modificare l’aspetto di una parte di testo. Gli stili si basano sulle classi CSS predefinite nel foglio di stile CSS. Il contenuto stilizzato è racchiuso in `span` che utilizzano `class` per fare riferimento alla classe CSS . Ad esempio:
+Gli autori possono applicare gli stili per modificare l’aspetto di una parte di testo. Gli stili si basano sulle classi CSS predefinite nel foglio di stile CSS. Il contenuto stilizzato è racchiuso in `span` che utilizzano `class` per fare riferimento alla classe CSS . Esempio:
 
 `<span class=monospaced>Monospaced Text Here</span>`
 

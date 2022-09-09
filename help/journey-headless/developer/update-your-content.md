@@ -303,7 +303,7 @@ Per ulteriori dettagli sull’utilizzo dell’API REST di AEM Assets, puoi fare 
 * API HTTP di Adobe Experience Manager Assets (risorse aggiuntive)
 * Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets (risorse aggiuntive)
 
-## Prossimi passaggi {#whats-next}
+## Novità {#whats-next}
 
 Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, devi:
 

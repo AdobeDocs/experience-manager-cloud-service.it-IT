@@ -17,7 +17,7 @@ Lo strumento di mappatura utenti utilizza un’API che consente di cercare gli u
 
 Segui i passaggi riportati di seguito per configurare questa impostazione:
 
-1. Passa a [Console per sviluppatori di Adobe](https://console.adobe.io) utilizzando il tuo Adobe ID.
+1. Passa a [Console Adobe Developer](https://console.adobe.io) utilizzando il tuo Adobe ID.
 1. Crea un nuovo progetto o apri un progetto esistente.
 1. Aggiungi un’API - Fai clic su **Aggiungi a progetto** e seleziona **API**
 1. Scegli API User Management.  Potrebbe essere necessario ottenere le autorizzazioni per avere questa opzione.
@@ -54,14 +54,14 @@ Lo strumento di mappatura utente è integrato nello strumento Content Transfer (
    * **ID organizzazione**: Immetti l’ID organizzazione Adobe Identity Management System (IMS) per l’organizzazione di migrazione degli utenti.
 
       >[!NOTE]
-      >Per ottenere l&#39;ID organizzazione, accedi al [Admin Console](https://adminconsole.adobe.com/) e scegli la tua organizzazione (in alto a destra) se appartieni a più di una. L&#39;ID organizzazione sarà nell&#39;URL della pagina, nel formato come `xx@AdobeOrg`, dove xx è l’ID organizzazione IMS.  In alternativa, puoi trovare l’ID organizzazione nel [Console per sviluppatori di Adobe](https://console.adobe.io) pagina in cui viene generato il token di accesso.
+      >Per ottenere l&#39;ID organizzazione, accedi al [Admin Console](https://adminconsole.adobe.com/) e scegli la tua organizzazione (in alto a destra) se appartieni a più di una. L&#39;ID organizzazione sarà nell&#39;URL della pagina, nel formato come `xx@AdobeOrg`, dove xx è l’ID organizzazione IMS.  In alternativa, puoi trovare l’ID organizzazione nel [Console Adobe Developer](https://console.adobe.io) pagina in cui viene generato il token di accesso.
 
    * **ID client**: Immetti l’ID client salvato dal passaggio Configurazione.
 
    * **Token di accesso**: Immetti il token di accesso salvato dal passaggio Configurazione.
 
       >[!NOTE]
-      >Il token di accesso scade ogni 24 ore ed è necessario crearne uno nuovo. Per creare un nuovo token, torna a [Console per sviluppatori di Adobe](https://console.adobe.io), scegli il progetto e fai clic su **API di gestione utenti** e incolla la stessa chiave privata nella casella.
+      >Il token di accesso scade ogni 24 ore ed è necessario crearne uno nuovo. Per creare un nuovo token, torna a [Console Adobe Developer](https://console.adobe.io), scegli il progetto e fai clic su **API di gestione utenti** e incolla la stessa chiave privata nella casella.
 
 1. Dopo aver compilato i campi, fai clic su **Configurazione del test** per verificare la connessione al servizio API User Management. Se la connessione ha esito positivo, potrai fare clic su **Salva** per salvare la configurazione.
 

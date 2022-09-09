@@ -78,7 +78,7 @@ Queste proprietà influiscono sul modo in cui le risorse/proprietà corrisponden
 
 ### Creazione della struttura {#creating-the-structure}
 
-Per creare una sovrapposizione o una sostituzione è necessario ricreare il nodo originale, con la struttura equivalente, sotto la destinazione (di solito `/apps`). Ad esempio:
+Per creare una sovrapposizione o una sostituzione è necessario ricreare il nodo originale, con la struttura equivalente, sotto la destinazione (di solito `/apps`). Esempio:
 
 * Sovrapposizione
 
@@ -168,7 +168,7 @@ Oltre alle funzionalità standard, queste consentono di:
    La proprietà è definita in `/libs`, ma non è richiesto nel `/apps` sovrapposizione/override.
 
    1. Crea il nodo corrispondente all&#39;interno di `/apps`
-   1. Creare una proprietà `sling:hideProperties` di tipo `String` o `String[]`. Utilizza questa opzione per specificare le proprietà da nascondere o ignorare. Possono essere utilizzati anche i caratteri jolly. Ad esempio:
+   1. Creare una proprietà `sling:hideProperties` di tipo `String` o `String[]`. Utilizza questa opzione per specificare le proprietà da nascondere o ignorare. Possono essere utilizzati anche i caratteri jolly. Esempio:
 
       * `*`
       * `["*"]`

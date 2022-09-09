@@ -5,7 +5,7 @@ exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -32,7 +32,7 @@ Questo articolo si basa sulla tua conoscenza di AEM Headless esplorando in detta
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a capire come vengono sviluppate le applicazioni a pagina singola utilizzando il framework dell’editor SPA AEM. Dopo aver letto questo documento è necessario:
+Questo documento ti aiuta a capire come vengono sviluppate le applicazioni a pagina singola utilizzando il framework dell’editor SPA AEM. Dopo aver letto questo documento, dovresti:
 
 * Comprendere la funzione di base dell’Editor SPA.
 * Conoscere i requisiti per la costruzione di un SPA completamente modificabile per AEM.
@@ -101,7 +101,7 @@ Il componente RemotePage consente il rendering di un SPA esterno in AEM.
 
 Per una descrizione completa di come rendere modificabile un SPA esterno in AEM, consulta la sezione [risorse aggiuntive](#additional-resources) per i collegamenti a una documentazione più dettagliata.
 
-## Prossimi passaggi {#what-is-next}
+## Novità {#what-is-next}
 
 Per iniziare a sviluppare un proprio SPA per AEM, controlla i seguenti documenti:
 

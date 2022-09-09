@@ -334,7 +334,7 @@ Se il predefinito per visualizzatori che stai cercando non è visibile, assicura
 
 ### Componente: Video 360 {#video-media-component}
 
-Utilizza la **[!UICONTROL Video 360]** per eseguire il rendering di video equirettangolari sulla pagina web. In questo modo si garantisce un&#39;esperienza visiva coinvolgente di una stanza, proprietà, posizione, paesaggio o procedura medica.
+Utilizza la **[!UICONTROL Video 360]** per eseguire il rendering di video equirettangolare sulla pagina web. In questo modo si garantisce un&#39;esperienza visiva coinvolgente di una stanza, proprietà, posizione, paesaggio o procedura medica.
 
 Durante la riproduzione su un display piatto, l&#39;utente ha il controllo dell&#39;angolo di visione; la riproduzione su dispositivi mobili utilizza solitamente i controlli giroscopici incorporati.
 

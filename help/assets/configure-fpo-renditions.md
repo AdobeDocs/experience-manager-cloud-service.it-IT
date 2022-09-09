@@ -18,7 +18,7 @@ Quando si inseriscono risorse di grandi dimensioni dall’Experience Manager ai 
 
 Assets fornisce rappresentazioni utilizzate solo per il posizionamento (FPO). Queste rappresentazioni FPO hanno dimensioni file ridotte ma hanno le stesse proporzioni. Se per una risorsa non è disponibile un rendering FPO, Adobe InDesign utilizza invece la risorsa originale. Questo meccanismo di fallback assicura che il flusso di lavoro creativo proceda senza interruzioni.
 
-Experience Manager as a Cloud Service offre funzionalità di elaborazione delle risorse native per il cloud per generare le rappresentazioni FPO. Utilizza i microservizi per le risorse per la generazione del rendering. Puoi configurare la generazione di rendering delle risorse appena caricate e delle risorse esistenti in Experience Manager.
+Experience Manager as a Cloud Service offre funzionalità di elaborazione delle risorse native per il cloud per generare le rappresentazioni FPO. Utilizza i microservizi per le risorse per la generazione del rendering. Puoi configurare la generazione di rendering delle nuove risorse caricate e delle risorse esistenti in Experience Manager.
 
 Di seguito sono riportati i passaggi per generare rappresentazioni FPO:
 

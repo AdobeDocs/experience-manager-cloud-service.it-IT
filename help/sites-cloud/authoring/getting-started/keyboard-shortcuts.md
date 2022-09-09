@@ -1,5 +1,5 @@
 ---
-title: 'Scelte rapide da tastiera per le console  '
+title: Scelte rapide da tastiera per le console
 description: Risparmia tempo durante l’authoring utilizzando le scelte rapide da tastiera
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881

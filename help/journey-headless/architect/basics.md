@@ -5,7 +5,7 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -105,7 +105,7 @@ Questo fornisce riferimenti ad altri frammenti di contenuto.
 Questo tipo di riferimento viene utilizzato per creare contenuti nidificati, introducendo le relazioni necessarie per modellare il contenuto.
 Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
    * Modificare direttamente il frammento a cui si fa riferimento.
-   * Crea un nuovo frammento di contenuto basato sul modello appropriato
+   * Creare un nuovo frammento di contenuto basato sul modello appropriato
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ Ed è solo per cominciare. A seconda della complessità, un premio potrebbe esse
 
 La rappresentazione di queste interrelazioni può essere ottenuta con i Riferimenti ai frammenti, in quanto sono compresi dall’utente (l’architetto), dall’autore dei contenuti e dalle applicazioni headless.
 
-## Prossimi passaggi {#whats-next}
+## Novità {#whats-next}
 
 Ora che hai imparato le nozioni di base, il passo successivo è quello di [Scopri come creare modelli di frammenti di contenuto in AEM](model-structure.md). Questo introdurrà e discuterà i vari riferimenti disponibili e come creare livelli di struttura con i Riferimenti frammento - una parte chiave della modellazione per gli headless.
 

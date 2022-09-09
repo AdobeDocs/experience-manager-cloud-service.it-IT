@@ -5,7 +5,7 @@ exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ A questo scopo, lo strumento Creazione rapida sito utilizza diverse potenti funz
 1. Un **Tema sito AEM** è incluso nel modello e contiene le risorse CSS, JavaScript e statiche che definiscono lo stile del sito.
 1. La **Pipeline front-end** può essere utilizzato per distribuire personalizzazioni al tema del sito indipendentemente dallo sviluppo back-end.
 
-## Percorso di creazione di siti rapidi {#quick-site-creation-journey}
+## Percorso Creazione rapida sito {#quick-site-creation-journey}
 
 Per una panoramica completa del funzionamento dello strumento di creazione rapida dei siti e per iniziare immediatamente a distribuire e personalizzare il tuo sito utilizzando questi potenti strumenti, controlla la [Percorso di creazione rapida del sito.](/help/journey-sites/quick-site/overview.md)
 

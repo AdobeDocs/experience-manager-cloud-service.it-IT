@@ -38,7 +38,7 @@ Esistono tre metodi per aggiungere metadati e tag:
 
    * È inoltre direttamente accessibile tramite l’ **Proprietà** nella barra degli strumenti della console Risorse.
 
-## Prossimi passaggi {#whats-next}
+## Novità {#whats-next}
 
 Ora puoi mettere a disposizione tutte queste conoscenze per utilizzare e iniziare a creare frammenti di contenuto per il tuo progetto.
 

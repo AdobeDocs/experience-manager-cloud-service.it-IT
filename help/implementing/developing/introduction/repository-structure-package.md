@@ -1,5 +1,5 @@
 ---
-title: 'Pacchetto per la struttura dell’archivio dei progetti AEM  '
+title: Pacchetto per la struttura dell’archivio dei progetti AEM
 description: I progetti Adobe Experience Manager as a Cloud Service Maven richiedono una definizione di sottopacchetto con struttura dell’archivio il cui unico scopo è quello di definire le radici dell’archivio JCR in cui vengono distribuiti i pacchetti secondari del codice del progetto.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341

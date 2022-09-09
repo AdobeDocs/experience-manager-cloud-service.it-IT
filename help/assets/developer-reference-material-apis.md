@@ -1,6 +1,6 @@
 ---
 title: Riferimenti per sviluppatori per [!DNL Assets]
-description: '"[!DNL Assets] API e contenuti di riferimento per sviluppatori consentono di gestire le risorse, inclusi file binari, metadati, rappresentazioni, commenti e [!DNL Content Fragments]."'
+description: "[!DNL Assets] API e contenuti di riferimento per sviluppatori consentono di gestire le risorse, inclusi file binari, metadati, rappresentazioni, commenti e [!DNL Content Fragments]."
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin

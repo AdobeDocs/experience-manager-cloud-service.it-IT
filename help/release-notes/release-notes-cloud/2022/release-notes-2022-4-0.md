@@ -3,7 +3,7 @@ title: Note sulla versione 2022.4.0 di  [!DNL Adobe Experience Manager]  as a Cl
 description: Note sulla versione 2022.4.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
 source-git-commit: f42cf1b82f7cf42be2afd30d69d71354fe0afeb3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 100%
 
@@ -36,14 +36,14 @@ Dai un’occhiata al video [Panoramica sulla versione di aprile 2022](https://vi
 
 * I tipi di dati del modello di contenuto possono ora essere definiti come [traducibili](/help/assets/content-fragments/content-fragments-models.md#properties) utilizzando una semplice casella di controllo nell’editor dei modelli di contenuto. Inoltre, le regole di traduzione e le configurazioni di AEM vengono aggiornate automaticamente.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#assets}
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
 * Ora puoi [ordinare i tag](/help/assets/organize-assets.md#use-tags-to-organize-assets) nella finestra del selettore dei tag in ordine crescente o decrescente in base al nome, alla data di creazione o alla data di modifica.
 
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
@@ -82,4 +82,4 @@ L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui](/h
 
 ## Strumenti di migrazione {#migration-tools}
 
-L’elenco completo dei rilasci degli strumenti di migrazione è disponibile [qui](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+L’elenco completo dei rilasci mensili degli strumenti di migrazione è disponibile [qui](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

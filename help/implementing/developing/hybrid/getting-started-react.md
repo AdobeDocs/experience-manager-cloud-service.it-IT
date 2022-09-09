@@ -5,7 +5,7 @@ exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -105,7 +105,7 @@ Una volta generato, il pacchetto può essere caricato in un&#39;istanza AEM.
 
 ### Archetipo progetto AEM {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
 ## Struttura dell&#39;applicazione {#application-structure}
 

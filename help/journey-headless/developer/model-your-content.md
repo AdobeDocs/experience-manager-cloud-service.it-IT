@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -202,7 +202,7 @@ Questo fornisce riferimenti ad altri frammenti di contenuto.
 Questo tipo di riferimento viene utilizzato per creare contenuti nidificati, introducendo le relazioni necessarie per modellare il contenuto.
 Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
    * Modificare direttamente il frammento a cui si fa riferimento.
-   * Crea un nuovo frammento di contenuto basato sul modello appropriato
+   * Creare un nuovo frammento di contenuto basato sul modello appropriato
 
 ### Creazione di modelli di frammenti di contenuto {#creating-content-fragment-models}
 
@@ -242,7 +242,7 @@ Una volta creato il frammento, è possibile aprirlo nell’Editor frammento di c
 * Associa contenuto.
 * Modifica i metadati.
 * Mostra la struttura ad albero.
-* Visualizzare in anteprima la rappresentazione JSON.
+* Visualizzare un’anteprima della rappresentazione JSON.
 
 ### Creazione di frammenti di contenuto {#creating-content-fragments}
 
@@ -264,7 +264,7 @@ tbc...
 
 Per una struttura di base come esempio, vedere Struttura dei frammenti di contenuto di esempio.
 
-## Prossimi passaggi {#whats-next}
+## Novità {#whats-next}
 
 Ora che hai imparato a modellare la tua struttura e a creare contenuti a seconda di ciò, il passaggio successivo è: [Scopri come utilizzare le query GraphQL per accedere e recuperare il contenuto dei frammenti di contenuto](access-your-content.md). Questo introdurrà e discuterà GraphQL, quindi esaminerà alcune query di esempio per vedere come funzionano le cose in pratica.
 

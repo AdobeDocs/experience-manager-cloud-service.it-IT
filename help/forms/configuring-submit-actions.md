@@ -81,7 +81,7 @@ Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati co
 
 ![Configurazione dell&#39;azione di invio dell&#39;endpoint rimanente](assets/action-config.png)
 
-È inoltre possibile **[!UICONTROL Abilita richiesta POST]** e fornire un URL per inviare la richiesta. Per inviare dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso principale del server AEM. Esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare un percorso assoluto.
+È inoltre possibile **[!UICONTROL Abilita richiesta POST]** e fornire un URL per inviare la richiesta. Per inviare dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso principale del server AEM. Esempio: `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare un percorso assoluto.
 
 >[!NOTE]
 >
