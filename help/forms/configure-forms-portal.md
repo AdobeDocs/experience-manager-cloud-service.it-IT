@@ -2,9 +2,9 @@
 title: Come creare un portale Forms su una pagina Experience Manager Sites
 description: Scopri come creare un portale Forms e utilizzare i componenti core predefiniti in una pagina AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1764'
 ht-degree: 1%
 
 ---
@@ -59,9 +59,7 @@ Per importare componenti predefiniti di Forms Portal su AEM Forms as a Cloud Ser
 
    Inoltre, cambia `appTitle`, `appId`e `groupId`, nel comando precedente per riflettere l&#39;ambiente.
 
-1. **In Prerelease, esegui i seguenti passaggi per utilizzare i componenti del portale Forms:**
-   * [Abilita il canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
-   * Sostituisci `core-forms-components-*` con la versione prerelease desiderata (ad esempio, 1.0.4-PRERELEASE-20211223) nel tuo `Cloud Manager/AEM Archetype` il progetto aggiornando `<core.forms.components.version>x.y.z</core.forms.components.version>` nel livello principale `pom.xml` del progetto Archetype.
+   Quando il progetto è pronto, aggiorna il `<core.forms.components.version>x.y.z</core.forms.components.version>` nel livello principale `pom.xml` del progetto Archetype per riflettere la versione più recente di [core-forms-components](https://github.com/adobe/aem-core-forms-components) nel tuo `AEM Archetype` progetto.
 
 1. **Distribuisci il progetto nell’ambiente di sviluppo locale:** È possibile utilizzare il comando seguente per distribuire nell&#39;ambiente di sviluppo locale
 
@@ -104,7 +102,7 @@ Una volta abilitato un componente portale, puoi utilizzarlo nell’istanza di au
 
 Puoi creare e personalizzare Forms Portal sui siti web creati utilizzando AEM aggiungendo e configurando i componenti del portale. Assicurati che [componenti abilitati](#enable-forms-portal-components) prima di utilizzarli nel portale Forms.
 
-Per aggiungere un componente, trascina e rilascia il componente dal riquadro Componenti al contenitore di layout nella pagina oppure tocca l’icona di aggiunta nel contenitore di layout e aggiungi il componente dal [!UICONTROL Inserisci nuovo componente] finestra di dialogo.
+Per aggiungere un componente, trascinalo dal riquadro Componenti al contenitore di layout nella pagina oppure tocca l’icona di aggiunta nel contenitore di layout e aggiungi il componente dal [!UICONTROL Inserisci nuovo componente] finestra di dialogo.
 
 ### Configura il componente Bozze e invii {#configure-drafts-submissions-component}
 
