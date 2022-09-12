@@ -115,7 +115,6 @@ Questo metodo può essere utilizzato per ripristinare versioni di pagine specifi
    >Se:
    >* hai selezionato una singola pagina che non ha mai avuto pagine figlie,
    >* o nessuna delle pagine della cartella dispone di versioni,
-
    >
    >Il display sarà quindi vuoto in quanto non sono disponibili versioni applicabili.
 
