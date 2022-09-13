@@ -2,10 +2,10 @@
 title: Creazione e gestione di offerte (console Offerte)
 description: Usa la console Offerte per creare offerte da utilizzare in più esperienze.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
+source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 67%
+source-wordcount: '1393'
+ht-degree: 63%
 
 ---
 
@@ -88,6 +88,23 @@ Se necessario, aggiungi dei tag.
 1. Conferma con **Fine**.
 
    Se ora accedi alla **Offerte dei frammenti esperienza** Il nuovo frammento di esperienza verrà visualizzato insieme alle relative varianti associate.
+
+### Targeting con il modello di offerte {#targeting-offers-template}
+
+>[!CAUTION]
+>
+>Questa opzione è disponibile solo per i clienti con offerte legacy precedenti.
+>
+>Come con il **Offerte** la console non sarà più disponibile:
+>
+>* una volta convertita l’ultima offerta legacy in Frammenti esperienza
+>* quando le offerte legacy sono obsolete (in futuro)
+>
+>Pertanto, si consiglia di utilizzare Frammenti esperienza, non questa opzione.
+
+Per i clienti con offerte legacy preesistenti, l’ **Usa modello di offerta** le opzioni saranno visibili quando si esegue il targeting di componenti che **not** Frammenti esperienza:
+
+![Finestra di dialogo Converti in variante frammento esperienza](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## Console Offerte {#offers-console}
 
