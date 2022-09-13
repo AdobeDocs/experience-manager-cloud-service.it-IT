@@ -1,15 +1,101 @@
 ---
-title: Creazione e gestione delle offerte
+title: Creazione e gestione di offerte (console Offerte)
 description: Usa la console Offerte per creare offerte da utilizzare in più esperienze.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '1306'
+ht-degree: 67%
 
 ---
 
-# Creazione e gestione delle offerte {#creating-and-managing-offers}
+# Creazione e gestione delle offerte (Console Offerte) {#creating-and-managing-offers}
+
+La **Offerte** in futuro la console diventerà obsoleta. Da ora in poi è:
+
+* Disponibile solo per i clienti che hanno *legacy* offerte già definite (ovvero preesistenti)
+* Consigliato di convertire tali offerte legacy in offerte di frammenti esperienza
+   * Non appena l’ultima offerta legacy viene convertita/rimossa, la funzione **Offerte** la console non sarà più disponibile.
+
+![Console di personalizzazione](/help/sites-cloud/authoring/assets/offers-consoles.png)
+
+>[!NOTE]
+>
+>I clienti che dispongono di offerte precedenti possono comunque utilizzare **Offerte** per visualizzare e creare nuove offerte legacy.
+>
+>I clienti che non dispongono di offerte legacy precedenti non visualizzeranno i **Offerte** console.
+>
+>Tutti i clienti possono utilizzare **Offerte di frammenti esperienza** per creare e gestire le offerte.
+
+## Conversione di un’offerta legacy in un frammento esperienza {#convert-legacy-offer-to-experience-fragment}
+
+A **Converti in variante del frammento di esperienza** È stata implementata l’opzione e il flusso di lavoro per aiutarti a convertire l’offerta legacy in un frammento esperienza:
+
+>[!NOTE]
+>
+>Si tratta del flusso di lavoro consigliato per convertire le offerte legacy in frammenti di esperienza.
+
+>[!NOTE]
+>
+>Puoi anche creare manualmente un nuovo frammento esperienza, trasferire manualmente il contenuto dall’offerta legacy al frammento, quindi eliminare l’offerta legacy.
+
+>[!CAUTION]
+>
+>La **Converti in variante del frammento di esperienza** è disponibile per tutti i componenti core.
+>
+>Questa opzione non sarà supportata per i componenti personalizzati. Per tali componenti, devi convertire manualmente il contenuto in un frammento di esperienza.
+
+>[!CAUTION]
+>
+>Non appena l’ultima offerta legacy viene convertita/rimossa:
+>
+>* La **Offerte** la console non sarà più disponibile.
+>* L’icona di destinazione nella barra degli strumenti di qualsiasi altro componente interessato non verrà più visualizzata.
+
+
+1. Apri una pagina contenente l’offerta per la modifica.
+
+1. Passa a **Targeting** modalità per la pagina.
+
+1. Fai clic su **Inizia impostazione destinazione**.
+
+1. Seleziona il componente appropriato (con targeting).
+
+1. La barra degli strumenti del componente fornisce un’opzione per **Converti in variante del frammento di esperienza**:
+
+   ![Conversione di offerte legacy in frammento esperienza](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+
+1. Viene visualizzata una finestra di dialogo. Qui puoi selezionare il **Azione**:
+
+   * Crea un nuovo frammento esperienza
+   * Aggiungi il contenuto a un frammento esperienza esistente
+
+   Per questo scenario, seleziona **Creare un nuovo frammento esperienza**.
+
+   ![Finestra di dialogo Converti in variante frammento esperienza](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
+
+1. Compila i campi richiesti nella finestra di dialogo :
+
+   * **Percorso padre**
+Specifica il percorso principale del nuovo frammento esperienza
+   * **Modello**
+Seleziona il modello da utilizzare per creare il frammento di esperienza.
+   * **Titolo frammento**
+Specifica il titolo.
+   * **Tag frammento**
+Se necessario, aggiungi dei tag.
+
+1. Conferma con **Fine**.
+
+   Se ora accedi alla **Offerte dei frammenti esperienza** Il nuovo frammento di esperienza verrà visualizzato insieme alle relative varianti associate.
+
+## Console Offerte {#offers-console}
+
+>[!CAUTION]
+>
+>Questa console diventerà obsoleta in futuro, in quanto offre un modo legacy di personalizzare i contenuti.
+>
+>Lei ha un po&#39; di tempo per prepararsi. Scopri come [convertire le offerte legacy esistenti in un’offerta di frammento di esperienza](#convert-legacy-offer-to-experience-fragment).
 
 Usa la console Offerte per creare offerte da [utilizzare in più esperienze](/help/sites-cloud/authoring/personalization/targeted-content.md). La creazione di offerte nella console Offerte consente di risparmiare tempo nel caso in cui più esperienze richiedano la stessa offerta:
 
@@ -18,7 +104,7 @@ Usa la console Offerte per creare offerte da [utilizzare in più esperienze](/he
 
 Nella console Offerte, le offerte sono organizzate per marchio. Ogni marchio contiene una libreria di offerte che possono essere utilizzate nelle diverse esperienze del marchio. Utilizza le cartelle per definire una struttura gerarchica e organizzare le offerte in ogni libreria. Una struttura logica delle cartelle consente agli autori di trovare facilmente le offerte navigando nella libreria. Anche gli strumenti di tagging e ricerca consentono agli autori di trovare le offerte.
 
-## Aggiungi un marchio utilizzando la console Offerte {#add-a-brand-using-the-offers-console}
+### Aggiungi un marchio utilizzando la console Offerte {#add-a-brand-using-the-offers-console}
 
 Crea un marchio a cui le offerte vengono associate. Apri un marchio nella console Offerte per accedere alla libreria delle offerte, dove puoi creare cartelle e offerte.
 
@@ -33,7 +119,7 @@ Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato
 1. Digita un titolo per il marchio come desideri che appaia nelle console Offerte e Attività. Facoltativamente, digita o seleziona uno o più tag da associare al marchio.
 1. Tocca o fai clic su **Crea**.
 
-## Aggiunta di una cartella a una libreria di offerte {#add-a-folder-to-an-offer-library}
+### Aggiunta di una cartella a una libreria di offerte {#add-a-folder-to-an-offer-library}
 
 Consente di aggiungere una cartella alla libreria di offerte di un marchio per organizzare e salvare le offerte. Puoi creare una sottocartella sotto il marchio o altre cartelle.
 
@@ -49,7 +135,7 @@ Consente di aggiungere una cartella alla libreria di offerte di un marchio per o
 
 1. Tocca o fai clic su **Crea**.
 
-## Aggiunta di un&#39;offerta a una libreria di offerte {#add-an-offer-to-an-offer-library}
+### Aggiunta di un&#39;offerta a una libreria di offerte {#add-an-offer-to-an-offer-library}
 
 Consente di aggiungere un&#39;offerta alla libreria delle offerte di un marchio in modo che possa essere aggiunta alle esperienze del marchio. Quando aggiungi un&#39;offerta devi inserire un titolo. Puoi anche associare l&#39;offerta con uno o più tag per migliorare la ricerca.
 
@@ -64,7 +150,7 @@ Dopo aver creato l&#39;offerta puoi aprirla per creare il contenuto.
 1. Digita un titolo per l&#39;offerta e, facoltativamente, seleziona o digita uno o più tag da associare all&#39;offerta, quindi tocca o fai clic su **Crea**.
 1. Nella finestra di dialogo di conferma, per aprire l&#39;offerta di modifica tocca o fai clic su **Apri pagina**.
 
-## Modifica di un&#39;offerta {#editing-an-offer}
+### Modifica di un&#39;offerta {#editing-an-offer}
 
 Apri un&#39;offerta e modifica il contenuto come vuoi che appaia nelle esperienze che lo utilizzano. Quando modifichi un&#39;offerta che viene utilizzata in qualsiasi esperienza, le modifiche vengono visualizzate nelle esperienze.
 
@@ -73,7 +159,7 @@ Puoi aprire un&#39;offerta da una cartella in una libreria di offerte o dai risu
 1. Nella console Offerte, tocca o fai clic sull&#39;icona accanto all&#39;offerta e tocca o fai clic su **Modifica**.
 1. Aggiungi componenti all&#39;offerta e modifica il contenuto dei componenti come d&#39;abitudine.
 
-## Eliminazione di un&#39;offerta {#deleting-an-offer}
+### Eliminazione di un&#39;offerta {#deleting-an-offer}
 
 Consente di eliminare un&#39;offerta quando non è più necessaria. Quando tenti di eliminare un&#39;offerta utilizzata in un&#39;esperienza, ti viene richiesto di confermare l&#39;eliminazione. Con la conferma viene eliminata l&#39;offerta e la rimuove dalle esperienze.
 
@@ -89,7 +175,7 @@ Puoi eliminare un&#39;offerta visualizzando il contenuto di una cartella in una 
    * Per eliminare l&#39;offerta e rimuoverla dalle esperienze, tocca o fai clic su **Forza eliminazione**.
    * Per mantenere l&#39;offerta, tocca o fai clic su **Annulla**.
 
-## Ricerca delle offerte {#searching-for-offers}
+### Ricerca delle offerte {#searching-for-offers}
 
 Consente di cercare offerte di qualsiasi marchio utilizzando parole chiave per abbinare il titolo.
 
