@@ -2,10 +2,10 @@
 title: Gestione dei frammenti di contenuto
 description: Scopri come utilizzare la console Frammenti di contenuto per gestire i frammenti di contenuto AEM, per l’authoring delle pagine o come base per i contenuti headless.
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 90%
+source-wordcount: '1947'
+ht-degree: 88%
 
 ---
 
@@ -52,6 +52,11 @@ La console Frammenti di contenuto consente di accedere direttamente ai frammenti
 * [Cercare e filtrare nella console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="Crea nuovo contenuto"
+>abstract="Basandosi sui modelli creati nel modulo 1, imparerai a creare contenuti che possono essere utilizzati per l’authoring delle pagine o come base per il contenuto headless."
 
 ### Creazione di un modello di contenuto {#creating-a-content-model}
 
