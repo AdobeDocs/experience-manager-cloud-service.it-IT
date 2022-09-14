@@ -2,9 +2,9 @@
 title: Esportazione di frammenti di esperienza in Adobe Target
 description: Esportazione di frammenti di esperienza in Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2249'
 ht-degree: 99%
 
 ---
@@ -229,8 +229,6 @@ Ora puoi selezionare la nuova configurazione da modificare.
 
 1. Fai clic su **Connetti ad Adobe Target** per inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio **Connessione riuscita**. Fai clic su **OK** sul messaggio e quindi **OK** nella finestra di dialogo.
 
-   Se non riesci a connetterti a Target, consulta la sezione [risoluzione problemi](#troubleshooting-target-connection-problems).
-
 ### Aggiunta di un framework Target {#adding-a-target-framework}
 
 <!-- Is this section needed? -->
@@ -312,17 +310,6 @@ When you associate a page with the framework, the child pages inherit the associ
    >[!NOTE]
    >
    >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
--->
-
-<!--
-### Troubleshooting Target Connection Problems {#troubleshooting-target-connection-problems}
-
-Perform the following tasks to troubleshoot problems that occur when connecting to Target:
-
-* Make sure that the user credentials that you provide are correct.
-* Make sure that the AEM instance can connect to the Target server. For example, make sure that firewall rules are not blocking outbound AEM connections, or that AEM is configured to use necessary proxies.
-* Look for helpful messages in the AEM error log. The error.log file is located in the **crx-quickstart/logs** directory where AEM is installed.
-* When editing the activity in Adobe Target, the URL is pointing to localhost. Work around this by setting the AEM externalizer to the correct URL.
 -->
 
 ## Esportazione di un frammento di esperienza in Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
