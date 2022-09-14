@@ -3,9 +3,9 @@ title: Aggiornamenti della versione di AEM
 description: Aggiornamenti della versione di AEM
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 575be022704e998e63162f19c37ece877efef627
+source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '399'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ Gli aggiornamenti AEM passano attraverso una pipeline di convalida del prodotto 
 
 >[!NOTE]
 >
->Se il codice personalizzato è stato inviato alla gestione temporanea e successivamente rifiutato da te, il successivo aggiornamento AEM rimuoverà tali modifiche per riflettere il tag git dell’ultima versione del cliente riuscita in produzione.
+>Se il codice personalizzato è stato inviato allo staging e non alla produzione, il successivo aggiornamento AEM rimuoverà tali modifiche per riflettere il tag git dell’ultima versione del cliente riuscita in produzione. Pertanto, il codice personalizzato disponibile solo in fase di staging dovrà essere nuovamente distribuito.
 
 ## Archiviazione dei nodi compositi {#composite-node-store}
 
