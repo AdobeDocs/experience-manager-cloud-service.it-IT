@@ -4,10 +4,10 @@ description: Scopri come creare profili immagine di Dynamic Media contenenti imp
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
 workflow-type: tm+mt
-source-wordcount: '3277'
-ht-degree: 9%
+source-wordcount: '3333'
+ht-degree: 8%
 
 ---
 
@@ -84,6 +84,10 @@ Per ogni generazione di ritaglio avanzato creata è necessaria un’elaborazione
 ### Formati di file immagine supportati per ritaglio avanzato e campioni colore
 
 La risoluzione massima supportata del file di input è di 16 K.
+
+>[!NOTE]
+>
+>La risoluzione 16K è una risoluzione del display con circa 16.000 pixel in orizzontale. La risoluzione 16K più comunemente discussa è di 15360 × 8640, che raddoppia il numero di pixel di 8K UHD in ogni dimensione, per un totale di quattro volte il numero di pixel. Questa risoluzione ha 132,7 megapixel, risoluzione 16 volte superiore a quella 4K e risoluzione 64 volte superiore a quella 1080p.
 
 | Formato immagine | Estensione dei file senza distinzione tra maiuscole e minuscole | Tipo MIME | Spazio colore di ingresso supportato | Dimensione massima del file di input supportato | Formato immagine supportato? |
 | --- | --- | --- | --- | --- | --- |

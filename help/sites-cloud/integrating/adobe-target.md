@@ -2,10 +2,10 @@
 title: Integrazione con Adobe Target
 description: Integrazione con Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: e6fc31a5c4b3bb62f7d6e639eae7e1f222b2f5ed
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -72,8 +72,8 @@ Una volta completata l’integrazione, puoi [contenuto mirato dell&#39;autore](h
 L’integrazione di AEM as a Cloud Service con Adobe Target richiede la conoscenza di Adobe Target, AEM Activities management e AEM Audiences management. Devi avere familiarità con le seguenti informazioni:
 
 * Adobe Target (consulta [Documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=it)).
-* Console Attività AEM (consulta [Gestione delle attività](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)).
-* Pubblico AEM (consulta [Gestione dei tipi di pubblico](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html?lang=it)).
+* AEM console Attività (consulta [Gestione delle attività](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)).
+* Pubblico AEM (Vedi [Gestione dei tipi di pubblico](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html?lang=it)).
 
 >[!NOTE]
 >
