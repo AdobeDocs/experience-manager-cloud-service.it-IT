@@ -2,9 +2,9 @@
 title: Utilizzo delle librerie lato client su AEM as a Cloud Service
 description: AEM fornisce Cartelle libreria lato client, che ti consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere distribuita al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2565'
 ht-degree: 1%
 
 ---
@@ -211,7 +211,7 @@ L&#39;incorporamento del codice è utile per fornire l&#39;accesso alle librerie
 
 #### Cartelle della libreria client specifiche per l’app {#app-specific-client-library-folders}
 
-È consigliabile mantenere tutti i file relativi all’applicazione nella cartella dell’applicazione sottostante `/app`. È inoltre consigliabile negare l’accesso ai visitatori del sito web `/app` cartella. Per soddisfare entrambe le best practice, crea una cartella della libreria client sotto la `/etc` cartella che incorpora la libreria client riportata di seguito `/app`.
+È consigliabile mantenere tutti i file relativi all&#39;applicazione nella cartella dell&#39;applicazione sotto /apps. È inoltre consigliabile negare l’accesso alla cartella /apps ai visitatori del sito web. Per soddisfare entrambe le best practice, crea una cartella della libreria client sotto la cartella /etc che incorpora la libreria client sotto /apps.
 
 Utilizzare la proprietà categories per identificare la cartella della libreria client da incorporare. Per incorporare la libreria, aggiungi una proprietà all&#39;incorporamento `cq:ClientLibraryFolder` utilizzando i seguenti attributi di proprietà:
 
