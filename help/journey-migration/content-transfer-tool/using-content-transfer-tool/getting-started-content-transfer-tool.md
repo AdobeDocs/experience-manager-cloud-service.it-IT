@@ -2,7 +2,7 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8e1cc042da37fd246a5048e67fc04cbacfa69775
+source-git-commit: 501441717f541439ac8d914f1e419491399e6667
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 9%
@@ -65,9 +65,6 @@ A volte può essere difficile comprendere i problemi di connessione SSL/TLS. Per
 >abstract="Scopri come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare il contenuto in AEM as a Cloud Service (authoring/pubblicazione)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Vedere Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial: utilizzo dello strumento Content Transfer (Trasferimento contenuti)"
-
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
-<!-- Need to remove the video -->
 
 La sezione seguente si applica alla nuova versione dello strumento Content Transfer (Trasferimento contenuti). Leggi questa sezione per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare il contenuto in AEM as a Cloud Service:
 
