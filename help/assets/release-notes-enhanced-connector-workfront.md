@@ -2,7 +2,7 @@
 title: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 description: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
+source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 2%
@@ -24,7 +24,7 @@ La versione più recente del [!DNL Workfront for Experience Manager enhanced con
 * Impossibile caricare un file di dimensioni superiori a 8 GB.
 * Problemi durante la pubblicazione automatica delle risorse inviate da Workfront a AEM.
 * Il campo Percorso principale non è disponibile per il campo Tag durante la modifica di un modulo schema metadati predefinito.
-* Problemi durante l’aggiunta di nuove versioni in Workfront tramite flussi di lavoro AEM
+* Problemi durante l’aggiunta di nuove versioni in Workfront tramite flussi di lavoro AEM.
 * Quando esegui una ricerca AEM delle risorse disponibili in Workfront, AEM visualizza un messaggio di errore.
 * Quando si crea un flusso di lavoro AEM per la creazione di attività da una risorsa e non si definisce un nome di attività padre, l’attività non viene creata in Workfront.
 
