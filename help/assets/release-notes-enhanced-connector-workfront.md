@@ -2,9 +2,9 @@
 title: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 description: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
+source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '568'
 ht-degree: 2%
 
 ---
@@ -15,19 +15,24 @@ La sezione seguente illustra le note generali sulla versione di [!DNL Workfront 
 
 ## Data di pubblicazione {#release-date}
 
-Data di rilascio dell’ultima versione 1.9.2 di [!DNL Workfront for Experience Manager enhanced connector] è il 3 agosto 2022.
+Data di rilascio dell’ultima versione 1.9.3 di [!DNL Workfront for Experience Manager enhanced connector] è il 16 settembre 2022.
 
 ## Funzioni principali {#release-highlights}
 
 La versione più recente del [!DNL Workfront for Experience Manager enhanced connector] include i seguenti miglioramenti e correzioni di bug:
 
-* La **[!UICONTROL Carica documento]** il passaggio del flusso di lavoro non allega un documento a Workfront.
+* Impossibile caricare un file di dimensioni superiori a 8 GB.
+* Problemi durante la pubblicazione automatica delle risorse inviate da Workfront a AEM.
+* Il campo Percorso principale non è disponibile per il campo Tag durante la modifica di un modulo schema metadati predefinito.
+* Problemi durante l’aggiunta di nuove versioni in Workfront tramite flussi di lavoro AEM
+* Quando esegui una ricerca AEM delle risorse disponibili in Workfront, AEM visualizza un messaggio di errore.
+* Quando si crea un flusso di lavoro AEM per la creazione di attività da una risorsa e non si definisce un nome di attività padre, l’attività non viene creata in Workfront.
 
-* La **[!UICONTROL Carica documento]** il passaggio del flusso di lavoro non allega un documento alle attività e ai problemi in Workfront. Il passaggio del flusso di lavoro collega un documento a Progetti con successo.
+
 
 >[!IMPORTANT]
 >
->L’Adobe consiglia di [aggiornamento alla versione più recente 1.9.2](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
+>L’Adobe consiglia di [aggiornamento alla versione più recente 1.9.3](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemi noti {#known-issues}
 
@@ -35,7 +40,17 @@ La versione più recente del [!DNL Workfront for Experience Manager enhanced con
 
 * Quando utilizzi l’esperienza Workfront classica, la **[!UICONTROL Invia a]** opzione disponibile in **[!UICONTROL Altro]** l’elenco a discesa non consente di selezionare la destinazione all’interno di Experience Manager. La **[!UICONTROL Invia a]** funziona correttamente utilizzando **[!UICONTROL Azioni documento]** elenco a discesa. La **[!UICONTROL Invia a]** funziona correttamente per **[!UICONTROL Altro]** l’elenco a discesa e **[!UICONTROL Azioni documento]** elenco a discesa disponibile nella nuova esperienza Workfront.
 
+* Workfront visualizza un `SERVER_ERROR` messaggio durante il collegamento di documenti a AEM dopo l’aggiornamento alla versione 8316. Per risolvere il problema, assegna `rep:readProperties` a `content/dam/collections` per `wf-workfront-user` Gruppo di utenti AEM.
+
 ## Versioni precedenti {#previous-releases}
+
+### Versione di agosto 2022 {#august-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] La versione 1.9.2, rilasciata il 3 agosto, include i seguenti aggiornamenti:
+
+* La **[!UICONTROL Carica documento]** il passaggio del flusso di lavoro non allega un documento a Workfront.
+
+* La **[!UICONTROL Carica documento]** il passaggio del flusso di lavoro non allega un documento alle attività e ai problemi in Workfront. Il passaggio del flusso di lavoro collega un documento a Progetti con successo.
 
 ### Versione di luglio 2022 {#july-2022-release}
 
