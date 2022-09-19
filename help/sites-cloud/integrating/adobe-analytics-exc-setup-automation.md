@@ -7,7 +7,7 @@ exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -27,19 +27,19 @@ La configurazione dell’automazione è progettata per funzionare con un sito AE
 
 ## Prerequisiti {#prerequisites}
 
-Prima di utilizzare questa funzione, è importante seguire queste istruzioni per garantire che i servizi prerequisiti siano stati configurati correttamente nell’ambiente:
+Prima di utilizzare questa funzione, è importante seguire queste istruzioni per garantire che i servizi necessari come prerequisiti siano stati configurati correttamente nell’ambiente:
 
-1. Accedi a Adobe Admin Console (https://adminconsole.adobe.com/).
+1. Accedi ad Adobe Admin Console (https://adminconsole.adobe.com/).
 1. Verifica che nell’angolo in alto a destra sia selezionato l’ID organizzazione IMS corretto.
-1. Fai clic sull’opzione di navigazione Prodotti .
-1. Verifica che sia stato effettuato il provisioning di &quot;Adobe Experience Manager as a Cloud Service&quot; per l’organizzazione IMS.
-1. Verifica che sia stato effettuato il provisioning di &quot;Adobe Analytics&quot; per l’organizzazione IMS.
-1. Vai a Cloud Manager (https://experience.adobe.com/cloud-manager).
-1. Selezionare il programma appropriato.
-1. Controlla che l’ambiente sia nell’ultima versione del Cloud Service (in caso contrario, seleziona Aggiorna nelle opzioni del menu).
-1. Esegui una pipeline di stack completa in Cloud Manager.
+1. Fai clic sull’opzione di navigazione Prodotti.
+1. Verifica che sia stato effettuato il provisioning di “Adobe Experience Manager as a Cloud Service” per l’organizzazione IMS.
+1. Verifica che sia stato effettuato il provisioning di “Adobe Analytics” per l’organizzazione IMS.
+1. Passa a Cloud Manager (https://experience.adobe.com/cloud-manager).
+1. Seleziona il Programma desiderato.
+1. Controlla che nell’ambiente sia installata l’ultima versione di Cloud Service (in caso contrario, seleziona Aggiorna nelle opzioni del menu).
+1. Esegui una pipeline full-stack in Cloud Manager.
 
-L’ambiente dovrebbe ora essere pronto per Experience Cloud Setup Automation.
+L’ambiente ora dovrebbe essere pronto per la configurazione dell’automazione di Experience Cloud.
 
 ## Come impostare
 

@@ -5,7 +5,7 @@ exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Un amministratore deve creare una configurazione solo una volta oppure, molto ra
       * Se necessario è possibile modificarlo.
 1. Seleziona le seguenti opzioni:
    * **Modelli per frammenti di contenuto**
-   * **Query persistenti GraphQL**
+   * **Query GraphQL persistenti**
 
    ![Crea configurazione](../assets/create-configuration.png)
 
@@ -43,7 +43,7 @@ Se necessario, puoi creare più configurazioni. È inoltre possibile nidificare 
 
 >[!NOTE]
 >
->Opzioni di configurazione oltre a **Modelli per frammenti di contenuto** e **Query persistenti GraphQL** può essere necessario in base ai requisiti di implementazione.
+>In base ai requisiti di implementazione, oltre a **Modelli per frammenti di contenuto** e **Query GraphQL persistenti** potrebbe essere necessario selezionare anche altre opzioni di configurazione.
 
 ## Passaggi successivi {#next-steps}
 

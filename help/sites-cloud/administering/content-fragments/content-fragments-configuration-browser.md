@@ -5,7 +5,7 @@ exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Scopri come abilitare funzionalità specifiche per i frammenti di contenuto nel 
 Prima di utilizzare i frammenti di contenuto, è necessario utilizzare la funzione **Browser di configurazione** per abilitare:
 
 * **Modelli per frammenti di contenuto**: obbligatorio
-* **Query persistenti GraphQL** - opzionale
+* **Query GraphQL persistenti**: facoltativo
 
 >[!CAUTION]
 >
@@ -63,7 +63,7 @@ Per [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-con
    1. Specificare un **Titolo**.
    1. Il **nome** diventerà il nome del nodo nell’archivio.
       * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/implementing/developing/introduction/naming-conventions.md)
-      * Se necessario, è possibile regolarlo.
+      * Se necessario è possibile regolarlo.
    1. Per attivarne l’uso, seleziona
       * **Modelli per frammenti di contenuto**
       * **Query persistenti GraphQL**

@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2253'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -282,6 +282,6 @@ Se non è più necessario avere una personalizzazione di un indice predefinito, 
 
 ## Ottimizzazioni di indici e query {#index-query-optimizations}
 
-Apache Jackrabbit Oak consente configurazioni di indice flessibili per gestire in modo efficiente le query di ricerca. Gli indici sono particolarmente importanti per gli archivi più grandi. Assicurati che tutte le query siano supportate da un indice appropriato. Le query senza un indice appropriato possono leggere migliaia di nodi e viene registrata un’avvertenza.
+Apache Jackrabbit Oak consente configurazioni di indice flessibili per gestire in modo efficiente le query di ricerca. Gli indici sono particolarmente importanti per gli archivi più grandi. Assicurati che tutte le query siano supportate da un indice appropriato. Le query senza un indice appropriato possono leggere migliaia di nodi, pertanto viene registrata un’avvertenza.
 
-Vedi [presente documento](query-and-indexing-best-practices.md) per informazioni su come è possibile ottimizzare query e indici.
+Per informazioni su come è possibile ottimizzare le query e gli indici, consulta [questo documento](query-and-indexing-best-practices.md).

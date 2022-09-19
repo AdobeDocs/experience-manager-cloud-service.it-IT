@@ -5,18 +5,18 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service su Unified Shell {#aem-as-a-cloud-service-on-unified-shell}
 
 >[!NOTE]
->Questa funzione si trova nel Canale prerelease di luglio 2022.
+>Questa funzione è disponibile nel canale prerelease di luglio 2022.
 >
->Questa è un’introduzione a una nuova funzione che sarà Generalmente disponibile nella versione di agosto 2022.
+>Si tratta dell’introduzione di una nuova funzionalità la cui disponibilità generale è prevista con la versione di agosto 2022.
 >
->Consulta la sezione [Documentazione sul canale prerelease](/help/release-notes/prerelease.md#enable-prerelease) per informazioni su come abilitare la funzione per il tuo ambiente.
+>Consulta la sezione [Documentazione del canale prerelease](/help/release-notes/prerelease.md#enable-prerelease) per informazioni su come abilitare la funzione per il tuo ambiente.
 
 ## Panoramica {#overview}
 

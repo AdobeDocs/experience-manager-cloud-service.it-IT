@@ -5,7 +5,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 9dc9bd253ea2df30ad287f5d8d5ffa99e3a6b092
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 95%
 
 ## Come prepararsi per una versione {#how-to-prepare}
 
-Con il modello di rilascio continuo in [!DNL Adobe Experience Manager] as a Cloud Service, l’applicazione viene aggiornata automaticamente su base continuativa. Esistono due tipi di aggiornamenti, release di funzionalità e release di manutenzione:
+Con il modello di rilascio continuo in [!DNL Adobe Experience Manager] as a Cloud Service, l’applicazione viene aggiornata automaticamente su base continuativa. Esistono due tipi di aggiornamenti, rilascio di funzionalità e versioni di manutenzione:
 
 * Le versioni di funzioni vengono rilasciate con frequenza mensile prevedibile e sono incentrate su nuove funzionalità e innovazioni dei prodotti.
-* Le versioni di manutenzione vengono rilasciate frequentemente e si concentrano su aggiornamenti di sicurezza, correzioni di bug e miglioramenti delle prestazioni. Ciò assicura che [!DNL Adobe Experience Manager] as a Cloud Service sia sempre aggiornato con eventuali correzioni critiche.
+* Le versioni di manutenzione vengono eseguite frequentemente e si concentrano su aggiornamenti di sicurezza, correzioni di bug e miglioramenti delle prestazioni. Ciò assicura che [!DNL Adobe Experience Manager] as a Cloud Service sia sempre aggiornato con eventuali correzioni critiche.
 
 Oltre alla rapidità dell’innovazione, [!DNL Adobe Experience Manager] as a Cloud Service offre anche la flessibilità di visualizzare in anteprima le prossime funzioni con un mese di anticipo rispetto al momento in cui vengono rilasciate in produzione. Questo consente di valutare l’impatto di una versione futura sull’organizzazione sottoponendo a test le funzioni nel proprio ambiente personalizzato e di addestrare/preparare gli utenti interni con largo anticipo.
 
@@ -68,7 +68,7 @@ Per prepararsi per una versione:
 * [Documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
 * [Documentazione di Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=it)
-* [Preparazione al GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Preparazione al RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

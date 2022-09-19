@@ -5,7 +5,7 @@ exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
 source-wordcount: '1947'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -84,20 +84,20 @@ Per creare un frammento di contenuto:
 
 1. Seleziona **Crea** oppure **Crea e apri** per confermare la definizione.
 
-## Stato dei frammenti di contenuto {#statuses-content-fragments}
+## Stati dei frammenti di contenuto {#statuses-content-fragments}
 
 Durante la sua esistenza, un frammento di contenuto può avere diversi stati, come mostrato nella [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
 
 * **Nuovo**
-Nell’editor frammento di contenuto è stato creato un nuovo frammento di contenuto, ma non è mai stato modificato né aperto.
+Nell’Editor frammenti di contenuto è stato creato un nuovo frammento di contenuto, che non è mai stato modificato né aperto.
 * **Bozza**
-Un utente ha modificato o aperto il (nuovo) frammento di contenuto nell’Editor frammento di contenuto, ma non è ancora stato pubblicato.
+Un utente ha modificato o aperto nell’Editor frammenti di contenuto il (nuovo) frammento di contenuto, che non è ancora stato pubblicato.
 * **Pubblicato**
 Il frammento di contenuto è stato pubblicato.
 * **Modificato**
 Il frammento di contenuto è stato modificato dopo la pubblicazione (ma prima della pubblicazione della modifica).
 * **Non pubblicato**
-Il frammento di contenuto è stato annullato.
+Il frammento di contenuto non è stato pubblicato.
 
 ## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 

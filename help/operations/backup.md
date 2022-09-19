@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
 workflow-type: tm+mt
 source-wordcount: '1229'
-ht-degree: 89%
+ht-degree: 95%
 
 ---
 
@@ -33,15 +33,15 @@ Il processo di ripristino influisce solo sul contenuto, lasciando invariati il c
 
 Cloud Manager fornisce due tipi di backup dai quali è possibile ripristinare il contenuto.
 
-* **Punto nel tempo (PIT):** Questo tipo ripristina i backup continui del sistema dalle ultime 24 ore dall&#39;ora corrente.
+* **Punto nel tempo (PIT):** questo tipo ripristina i backup continui del sistema delle ultime 24 ore dall’ora corrente.
 * **Ultima settimana:** questo tipo ripristina i backup del sistema degli ultimi sette giorni, escludendo le 24 ore precedenti.
 
 In entrambi i casi, la versione del codice personalizzato e la versione di AEM rimangono invariate.
 
 Le metriche delle prestazioni per il ripristino dei contenuti in AEM as a ContentService fanno riferimento ai benchmark standardizzati:
 
-* **Obiettivo del tempo di ripristino (RTO):** L&#39;obiettivo del tempo di ripristino varia a seconda delle dimensioni dell&#39;archivio, ma come regola generale, una volta che la sequenza di ripristino inizia, dovrebbe richiedere circa 30 minuti.
-* **RPO (Recovery Point Objective):** L&#39;obiettivo del punto di ripristino è 24 ore al massimo
+* **Obiettivo del tempo di ripristino (RTO):** l’obiettivo del tempo di ripristino varia a seconda delle dimensioni dell’archivio, ma in linea di massima, una volta iniziata la sequenza di ripristino, dovrebbe richiedere circa 30 minuti.
+* **Obiettivo del punto di ripristino (RPO):** l’obiettivo del punto di ripristino è un massimo di 24 ore
 
 >[!TIP]
 >

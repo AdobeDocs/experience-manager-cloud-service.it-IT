@@ -5,13 +5,13 @@ exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Scelte rapide da tastiera per la modifica delle pagine {#keyboard-shortcuts-when-editing-pages}
 
-AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcuni sono applicabili quando si modificano le pagine, altri al [utilizzo delle console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), e in particolare alcuni [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili quando si modificano le pagine, altre quando si [utilizzano le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e alcune sono specifiche per la [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcuni 
 >
 >Una volta che l’utente inizia a interagire con la pagina in modalità Anteprima, la scelta rapida `Ctrl-Shift-m` non è più disponibile. Per renderla nuovamente disponibile, si deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
 
-Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano [console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), e in particolare alcuni [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop quando utilizzano le [console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e alcune sono specifiche per la [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >

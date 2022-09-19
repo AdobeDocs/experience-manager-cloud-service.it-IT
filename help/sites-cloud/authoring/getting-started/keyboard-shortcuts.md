@@ -5,13 +5,13 @@ exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Scelte rapide da tastiera per le console   {#keyboard-shortcuts-for-consoles}
 
-Le seguenti scelte rapide sono disponibili per le console Sites, Assets, Utenti, Gruppi, Progetti e Frammenti esperienza. Sono inoltre disponibili collegamenti specifici per [Console Frammenti di contenuto](#keyboard-shortcuts-for-the-content-fragments-console).
+Le seguenti scelte rapide sono disponibili per le console Sites, Assets, Utenti, Gruppi, Progetti e Frammenti esperienza. Sono inoltre disponibili scelte rapide specifiche per la [Console Frammenti di contenuto](#keyboard-shortcuts-for-the-content-fragments-console).
 
 | Dove si trova | Scelta rapida | Descrizione |
 |---|---|---|
@@ -82,6 +82,6 @@ Per gli utenti che non utilizzano scelte rapide da tastiera o che hanno determin
 
 AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’utilizzo delle console e la [modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
-## Scelte rapide da tastiera per la console Frammenti di contenuto {#keyboard-shortcuts-for-the-content-fragments-console}
+## Scelte rapide da tastiera per la Console Frammenti di contenuto {#keyboard-shortcuts-for-the-content-fragments-console}
 
-Alcune scelte rapide da tastiera sono applicabili al [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+Alcune scelte rapide da tastiera sono applicabili alla [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)

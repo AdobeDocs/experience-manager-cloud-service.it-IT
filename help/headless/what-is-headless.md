@@ -5,7 +5,7 @@ exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
 source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Si tratta di uno strumento molto potente, che offre il pieno controllo del conte
 
 Con un sistema di gestione dei contenuti headless, il back-end e il front-end sono ora separati, o “disaccoppiati”.
 
-La parte headless è il backend del contenuto, in quanto un sistema di gestione dei contenuti headless (CMS) è un sistema di gestione dei contenuti back-end, progettato e creato esplicitamente come archivio dei contenuti che rende i contenuti accessibili tramite un’API, per la visualizzazione su qualsiasi dispositivo.
+La parte headless è il back-end del contenuto, in quanto un sistema di gestione dei contenuti headless è un sistema di gestione dei contenuti (CSM) solo back-end, progettato e creato esplicitamente come archivio dei contenuti che li rende accessibili tramite un’API per la visualizzazione su qualsiasi dispositivo.
 
 Il front-end, sviluppato e gestito in modo indipendente, recupera il contenuto dal back-end headless tramite un’API di distribuzione dei contenuti, in genere in formato JSON. Ad esempio, potrebbe trattarsi di un’applicazione React o Angular (applicazione a pagina singola).
 

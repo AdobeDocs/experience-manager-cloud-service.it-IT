@@ -5,7 +5,7 @@ exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
 workflow-type: tm+mt
 source-wordcount: '1258'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -174,7 +174,7 @@ Lo stato `ReplicationStatus` complessivo di una risorsa viene modificato solo se
 
 ### Metodi di invalidazione dei contenuti {#invalidating-content}
 
-Puoi annullare direttamente la validità del contenuto utilizzando Sling Content Invalidation (SCD) dell’autore (metodo preferito) o utilizzando l’API di replica per richiamare l’agente di replica dello scaricamento del dispatcher per la pubblicazione. Fai riferimento a [Memorizzazione in cache](/help/implementing/dispatcher/caching.md) per ulteriori dettagli.
+Puoi annullare direttamente la validità del contenuto utilizzando l’Invalidazione dei contenuti Sling (SCD) dall’authoring (metodo preferito) oppure utilizzando l’API di replica per richiamare l’agente di svuotamento del Dispatcher per la pubblicazione. Per ulteriori dettagli, fai riferimento alla pagina [Memorizzazione in cache](/help/implementing/dispatcher/caching.md).
 
 **Limiti di capacità dell’API di replica**
 

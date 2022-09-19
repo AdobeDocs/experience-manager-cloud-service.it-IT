@@ -5,7 +5,7 @@ exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '2904'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
          >[!CAUTION]
          >
-         >Quando si aggiorna manualmente la proprietà **Nome proprietà** per un tipo di dati, tenere presente che i nomi devono contenere solo i caratteri A-Z, a-z, 0-9 e il carattere di sottolineatura &quot;_&quot; come carattere speciale.
+         >Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, tieni presente che i nomi devono contenere solo caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_”.
          >
          >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
       Esempio:
@@ -139,7 +139,7 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 
 * **Nome proprietà**
 
-   Quando aggiorni manualmente questa proprietà per un tipo di dati, tieni presente che i nomi **deve** contain *only* A-Z, a-z, 0-9 e carattere di sottolineatura &quot;_&quot; come carattere speciale.
+   Quando aggiorni manualmente questa proprietà per un tipo di dati, tieni presente che i nomi **devono** contenere *solo* caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_“.
 
    >[!CAUTION]
    >

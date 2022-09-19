@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '1903'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -150,7 +150,7 @@ L’avvio e la gestione di un progetto AEM è semplice quando si utilizza AEM as
 
 >[!TIP]
 >
->Per una panoramica completa del processo di onboarding, consulta la sezione [percorso di bordo.](/help/journey-onboarding/overview.md)
+>Per una panoramica completa del processo di onboarding, consulta [percorso di onboarding.](/help/journey-onboarding/overview.md)
 
 ## Sviluppo {#developing}
 

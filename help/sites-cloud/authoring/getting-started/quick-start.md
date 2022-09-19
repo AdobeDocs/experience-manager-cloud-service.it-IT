@@ -250,7 +250,7 @@ Queste azioni possono essere attivate da:
    * [Sposta](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
       * Verrà visualizzata la procedura guidata per la raccolta delle informazioni necessarie allo spostamento della pagina. Segui le istruzioni sullo schermo.
-   * [Eliminare](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
+   * [Elimina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
       * Viene richiesto di confermare l’operazione.
    >[!NOTE]

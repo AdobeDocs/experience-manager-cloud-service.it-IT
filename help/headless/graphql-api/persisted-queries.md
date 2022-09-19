@@ -6,7 +6,7 @@ exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Ad esempio, per creare una query persistente per la configurazione di Sites WKND
 >
 >Per ulteriori dettagli, vedi [Abilitare la funzionalità Frammenti di contenuto nel browser configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
 >
->La **Query persistenti GraphQL** deve essere abilitato per la configurazione Sites appropriata.
+>Per la configurazione di Sites appropriata, è necessario abilitare **query GraphQL persistenti**.
 
 Ad esempio, se vi è una particolare query denominata `my-query`, che utilizza un modello `my-model` della configurazione Sites `my-conf`:
 
@@ -194,9 +194,9 @@ Per eseguire una query persistente, un’applicazione client invia una richiesta
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-Dove `PERSISTENT_PATH` è un percorso abbreviato in cui viene salvata la query persistente.
+dove `PERSISTENT_PATH` è un percorso abbreviato in cui viene salvata la query persistente.
 
-1. Esempio `wknd` è il nome della configurazione e `plain-article-query` è il nome della query persistente. Per eseguire la query:
+1. Ad esempio `wknd` è il nome della configurazione e `plain-article-query` è il nome della query persistente. Per eseguire la query:
 
    ```shell
    $ curl -X GET \
@@ -207,7 +207,7 @@ Dove `PERSISTENT_PATH` è un percorso abbreviato in cui viene salvata la query p
 
    >[!NOTE]
    >
-   > Le variabili e i valori della query devono essere correttamente [codificato](#encoding-query-url) durante l&#39;esecuzione di una query persistente.
+   > Le variabili e i valori della query devono essere correttamente [codificati](#encoding-query-url) durante l’esecuzione di una query persistente.
 
    Esempio:
 
@@ -312,7 +312,7 @@ L’URL può essere suddiviso nelle seguenti parti:
 
 | Parte URL | Descrizione |
 |----------| -------------|
-| `/graphql/execute.json` | Endpoint query persistente |
+| `/graphql/execute.json` | Endpoint di query persistente |
 | `/wknd/adventure-by-path` | Percorso query persistente |
 | `%3B` | Codice per `;` |
 | `adventurePath` | Variabile query |
@@ -332,9 +332,9 @@ Per utilizzare una query persistente in un’app client, è necessario utilizzar
 
 Le query persistenti devono sempre essere create su un servizio AEM Author e quindi pubblicate (replicate) in un servizio AEM Publish. Spesso, le query persistenti vengono create e testate in ambienti inferiori, come ambienti locali o di sviluppo. È quindi necessario promuovere le query persistenti in ambienti di livello superiore, rendendole infine disponibili in un ambiente AEM Publish di produzione affinché possano essere utilizzate da parte delle applicazioni client.
 
-### Query persistenti del pacchetto
+### Query persistenti nei pacchetti
 
-Le query persistenti possono essere incorporate in [Pacchetti AEM](/help/implementing/developing/tools/package-manager.md). I pacchetti AEM possono quindi essere scaricati e installati in ambienti diversi. I pacchetti AEM possono essere replicati anche da un ambiente AEM Author ad ambienti AEM Publish.
+È possibile integrare le query persistenti in [pacchetti AEM](/help/implementing/developing/tools/package-manager.md). I pacchetti AEM possono quindi essere scaricati e installati in ambienti diversi. I pacchetti AEM possono essere replicati anche da un ambiente AEM Author ad ambienti AEM Publish.
 
 Per creare un pacchetto:
 

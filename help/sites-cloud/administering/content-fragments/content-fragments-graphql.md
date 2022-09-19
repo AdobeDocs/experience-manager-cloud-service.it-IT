@@ -5,7 +5,7 @@ exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ Vengono utilizzati Frammenti di contenuto AEM insieme all’API GraphQL di AEM (
 
 ## CMS headless {#headless-cms}
 
-Un sistema di gestione dei contenuti headless (CMS) è un sistema di gestione dei contenuti back-end, progettato e creato esplicitamente come archivio di contenuti che rende i contenuti accessibili tramite un’API, per la visualizzazione su qualsiasi dispositivo.
+“Un sistema per la gestione dei contenuti headless è un sistema di gestione dei contenuti (CMS) solo back-end progettato e creato esplicitamente come archivio di contenuti che li rende accessibili tramite un’API per la visualizzazione su qualsiasi dispositivo“.
 
 In termini di authoring di frammenti di contenuto in AEM, questo significa che:
 

@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 05adf79b66c36e6354fe95fe4d5f654b49980589
 workflow-type: tm+mt
 source-wordcount: '3726'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -130,19 +130,19 @@ ht-degree: 97%
    + [Supporto per i cookie dello stesso sito per AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Supporto OAuth2 per il servizio di posta](/help/security/oauth2-support-for-mail-service.md)
 + Onboarding {#onboarding}
-   + [Inizia qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
+   + [Inizia qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=it)
    + Percorso di onboarding {#journey}
       + [Percorso di onboarding Panoramica](/help/journey-onboarding/overview.md)
-      + [Preparazione all&#39;onboarding](/help/journey-onboarding/preparation.md)
-      + [Terminologia as a Cloud Service AEM](/help/journey-onboarding/terminology.md)
-      + [L&#39;Admin Console](/help/journey-onboarding/admin-console.md)
+      + [Preparazione all’onboarding](/help/journey-onboarding/preparation.md)
+      + [Terminologia di AEM as a Cloud Service](/help/journey-onboarding/terminology.md)
+      + [L’Admin Console](/help/journey-onboarding/admin-console.md)
       + [Assegnazione dei profili di prodotto di Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md)
       + [Accesso a Cloud Manager](/help/journey-onboarding/cloud-manager.md)
       + [Creare un programma](/help/journey-onboarding/create-program.md)
       + [Creare ambienti](/help/journey-onboarding/create-environments.md)
       + [Assegnazione di profili di prodotto AEM](/help/journey-onboarding/assign-profiles-aem.md)
-      + [Attività di Developer Manager e Deployment Manager](/help/journey-onboarding/developers.md)
-      + [Attività utente AEM](/help/journey-onboarding/aem-users.md)
+      + [Attività del Responsabile degli sviluppatori e del Responsabile della distribuzione](/help/journey-onboarding/developers.md)
+      + [Attività dell’utente di AEM](/help/journey-onboarding/aem-users.md)
       + [Gruppi utenti](/help/journey-onboarding/user-groups.md)
    + Percorso AEM Reference Demos Add-On {#demo-add-on}
       + [Panoramica](/help/journey-sites/demos-add-on/overview.md)
@@ -153,7 +153,7 @@ ht-degree: 97%
       + [Gestire il sito demo](/help/journey-sites/demos-add-on/manage.md)
    + Altri concetti di onboarding {#concepts}
       + [Introduzione a Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
-      + [AEM profili di team e prodotti as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [Profili Team e Prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
 + Percorso di migrazione ad AEM as a Cloud Service {#migration-journey}
    + [Guida introduttiva di AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase di preparazione](/help/journey-migration/readiness.md)
@@ -512,7 +512,7 @@ ht-degree: 97%
       + Aggiungere componenti a un modulo adattivo {#add-components-to-an-adaptive-form}
          + [Utilizzare il CAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms.md)
          + [Utilizza componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-         + [Applica firma scarabocchio](/help/forms/signing-forms-using-scribble.md)
+         + [Applicare una firma scarabocchio](/help/forms/signing-forms-using-scribble.md)
       + Configurare il layout e applicare lo stile a un modulo adattivo {#configure-layout-of-an-adaptive-form}
          + [Impostare il layout di un modulo adattivo](/help/forms/layout-capabilities-adaptive-forms.md)
          + [Utilizzare la modalità Layout per ridimensionare i componenti](/help/forms/resize-using-layout-mode.md)
@@ -521,7 +521,7 @@ ht-degree: 97%
       + Aggiungere regole ed utilizzare espressioni in un modulo adattivo {#add-rules-and-use-expressions-in-an-adaptive-form}
          + [Aggiungere regole a un modulo adattivo](/help/forms/rule-editor.md)
       + Utilizzo [!DNL Adobe Sign] {#use-adobe-sign}
-         + [Utilizzare Adobe Acrobat Sign per apporre la firma elettronica a un modulo adattivo](/help/forms/working-with-adobe-sign.md)
+         + [Utilizzare Adobe Sign per apporre la firma elettronica a un modulo adattivo](/help/forms/working-with-adobe-sign.md)
       + Configurare le azioni di invio e l’invio dei metadati {#configure-submit-actions-and-metadata-submission}
          + [Imposta azione di invio per un modulo adattivo](/help/forms/configuring-submit-actions.md)
          + [Configurare la pagina di reindirizzamento](/help/forms/configuring-redirect-page.md)
@@ -543,7 +543,7 @@ ht-degree: 97%
       + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
       + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
       + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
-   + [Integrare con Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+   + [Integrare con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [Integrare con DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
    + [Integrare con Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Integrare con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
@@ -902,7 +902,7 @@ ht-degree: 97%
    + [Backup e ripristino](/help/operations/backup.md)
    + [Processi asincroni](/help/operations/asynchronous-jobs.md)
    + [Rimozione dell’indice generico Lucene](/help/operations/removal-generic-lucene-index.md)
-   + [Tecniche consigliate per query e indicizzazione](/help/operations/query-and-indexing-best-practices.md)
+   + [Best practice per query e indicizzazione](/help/operations/query-and-indexing-best-practices.md)
 + Conformità {#compliance}
    + [Conformità in AEM as a Cloud Service](/help/compliance/home.md)
    + Preparazione per privacy e protezione dei dati {#data-privacy}

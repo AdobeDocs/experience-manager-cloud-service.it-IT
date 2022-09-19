@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
 workflow-type: tm+mt
 source-wordcount: '3016'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,8 @@ Una volta effettuata la chiamata, in genere sono necessari circa 15 minuti per i
 
 Se la configurazione dell’uscita della porta flessibile con ambito di programma è pronta, l’endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` deve essere richiamato per ambiente per abilitare la rete a livello di ambiente e per dichiarare facoltativamente eventuali regole di inoltro porte. I parametri sono configurabili in base all’ambiente per offrire flessibilità.
 
-Le regole di inoltro di porta devono essere dichiarate per tutte le porte di destinazione diverse da 80/443, ma solo se non si utilizza il protocollo http o https, specificando il set di host di destinazione (nomi o IP e con porte). Per ogni host di destinazione, i clienti devono mappare la porta di destinazione prevista su una porta da 30000 a 30999.
+Le regole di port forwarding devono essere dichiarate per tutte le porte di destinazione diverse da 80/443, ma solo se non si utilizza il protocollo http o https, 
+specificando il set di host di destinazione (nomi o IP e con le porte). Per ogni host di destinazione, i clienti devono mappare la porta di destinazione prevista su una porta da 30000 a 30999.
 
 L’API dovrebbe rispondere in pochi secondi, indicando lo stato di aggiornamento e dopo circa 10 minuti, il metodo `GET` dell’endpoint indica che la rete avanzata è abilitata.
 
@@ -209,7 +210,7 @@ Per ulteriori informazioni sulle API, consulta la [documentazione API di Cloud M
 
 ### Routing del traffico {#dedcated-egress-ip-traffic-routing}
 
-Il traffico Http o https passa attraverso un proxy preconfigurato, a condizione che utilizzino le proprietà standard del sistema Java per le configurazioni proxy.
+Il traffico http o https passa attraverso un proxy preconfigurato, a condizione che utilizzi le proprietà standard del sistema Java per le configurazioni proxy.
 
 Il traffico non http/s con destinazioni attraverso porte dichiarate nel parametro `portForwards` deve fare riferimento a una proprietà denominata `AEM_PROXY_HOST`, oltre alla porta mappata. Esempio:
 
