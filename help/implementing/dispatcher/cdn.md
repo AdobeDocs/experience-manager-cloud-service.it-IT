@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
+source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1093'
 ht-degree: 8%
 
 ---
@@ -127,6 +127,10 @@ La CDN gestita AEM aggiunge intestazioni a ogni richiesta con:
 
 * codice del paese: `x-aem-client-country`
 * Codice continente: `x-aem-client-continent`
+
+>[!NOTE]
+>
+>Nel caso di CDN gestito dal cliente, queste intestazioni rifletteranno la posizione del server proxy CDN dei clienti anziché il client effettivo.  Pertanto, per la CDN gestita dal cliente, le intestazioni di geolocalizzazione devono essere gestite dalla CDN dei clienti.
 
 I valori per i codici paese sono i codici alfa-2 descritti [qui](https://en.wikipedia.org/wiki/ISO_3166-1).
 
