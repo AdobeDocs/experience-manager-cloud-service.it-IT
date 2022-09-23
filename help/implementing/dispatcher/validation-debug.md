@@ -3,10 +3,10 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Convalida e debug con gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
+source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -313,13 +313,26 @@ Questa istruzione ha lo scopo di consentire le richieste di `css` , ma consente 
 
 **il file incluso (...) non corrisponde ad alcun file noto**
 
-Nella configurazione dell’host virtuale Apache sono disponibili due tipi di file che è possibile specificare come include: riscrive e variabili.
-I file inclusi devono essere denominati come segue:
+Per impostazione predefinita, è possibile specificare due tipi di file nella configurazione dell&#39;host virtuale Apache come include: riscrive e variabili.
 
 | Tipo | Nome file di inclusione |
 |-----------|---------------------------------|
 | Riscrittura | `conf.d/rewrites/rewrite.rules` |
 | Variabili | `conf.d/variables/custom.vars` |
+
+In modalità flessibile è possibile includere anche altri file, purché si trovino in sottodirectory (a qualsiasi livello) di `conf.d` directory con il prefisso seguente.
+
+| Includi prefisso della directory superiore del file |
+|-------------------------------------|
+| `conf.d/includes` |
+| `conf.d/modsec` |
+| `conf.d/rewrites` |
+
+Ad esempio, puoi includere un file in una directory appena creata in `conf.d/includes` come segue:
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 In alternativa, puoi includere il **default** versione delle regole di riscrittura il cui nome è `conf.d/rewrites/default_rewrite.rules`.
 Tieni presente che non esiste una versione predefinita dei file delle variabili.

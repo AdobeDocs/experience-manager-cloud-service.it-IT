@@ -4,10 +4,10 @@ description: Convalida e debug tramite gli strumenti di Dispatcher (legacy)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
 workflow-type: tm+mt
-source-wordcount: '2304'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -309,6 +309,10 @@ I file inclusi devono essere denominati come segue:
 |-----------|---------------------------------|
 | Riscrittura | `conf.d/rewrites/rewrite.rules` |
 | Variabili | `conf.d/variables/custom.vars` |
+
+>[!TIP]
+>
+>Per poter includere più file in modo molto meno limitato, potresti voler passare alla modalità di configurazione flessibile del dispatcher. Vedi il documento [Convalida e debug tramite gli strumenti di Dispatcher](/help/implementing/dispatcher/validation-debug.md) per maggiori dettagli sulla modalità flessibile.
 
 In alternativa, puoi includere il **default** versione delle regole di riscrittura il cui nome è `conf.d/rewrites/default_rewrite.rules`.
 Tieni presente che non esiste una versione predefinita dei file delle variabili.
