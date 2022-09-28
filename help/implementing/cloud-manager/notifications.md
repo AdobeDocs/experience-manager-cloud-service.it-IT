@@ -2,7 +2,7 @@
 title: Notifiche
 description: Scopri come ricevere informazioni sulle distribuzioni delle pipeline utilizzando il sistema di notifica Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 0de041211c8257d920bcf354593b3caa2db43572
+source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Gli avvisi vengono visualizzati nell’angolo in alto a destra della finestra pe
 * **Gli avvisi dovrebbero rimanere sullo schermo fino a quando non li ignoro** - Controlla se gli avvisi devono persistere a meno che non vengano attivamente ignorati
 * **Durata** - Definisce per quanto tempo l&#39;avviso deve rimanere sullo schermo se non si è scelto di rimanere sullo schermo.
 
-## E-mail {#emails}
+### E-mail {#emails}
 
 Le notifiche sono disponibili nell’interfaccia utente web di Adobe [!UICONTROL Experience Cloud] soluzioni. Puoi anche optare per l’invio di queste notifiche tramite e-mail nella **E-mail** sezione .
 
