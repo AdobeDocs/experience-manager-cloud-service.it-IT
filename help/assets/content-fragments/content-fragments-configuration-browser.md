@@ -1,13 +1,11 @@
 ---
 title: Frammenti di contenuto - Browser di configurazione (Assets - Frammenti di contenuto)
-description: Scopri come abilitare alcune funzionalità dei frammenti di contenuto nel browser di configurazione per sfruttare AEM potenti funzionalità di distribuzione headless.
-feature: Content Fragments
-role: User
+description: Scopri come abilitare la funzionalità Frammento di contenuto nel browser di configurazione.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 78%
+source-wordcount: '364'
+ht-degree: 82%
 
 ---
 
@@ -20,7 +18,7 @@ Scopri come abilitare alcune funzionalità dei frammenti di contenuto nel browse
 Prima di utilizzare i frammenti di contenuto, è necessario utilizzare la funzione **Browser di configurazione** per abilitare:
 
 * **Modelli per frammenti di contenuto**: obbligatorio
-* **Query persistenti GraphQL** - opzionale
+* **Query GraphQL persistenti**: facoltativo
 
 >[!CAUTION]
 >
@@ -65,7 +63,7 @@ Per [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-con
    1. Specificare un **Titolo**.
    1. Il **nome** diventerà il nome del nodo nell’archivio.
       * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/implementing/developing/introduction/naming-conventions.md)
-      * Se necessario, è possibile regolarlo.
+      * Se necessario è possibile regolarlo.
    1. Per attivarne l’uso, seleziona
       * **Modelli per frammenti di contenuto**
       * **Query persistenti GraphQL**

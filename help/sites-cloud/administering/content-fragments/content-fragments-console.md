@@ -1,12 +1,14 @@
 ---
 title: Console Frammenti di contenuto
 description: Scopri come gestire i frammenti di contenuto dalla console Frammenti di contenuto.
-landing-page-description: Scopri come gestire i frammenti di contenuto dalla console Frammenti di contenuto. La console è incentrata sull’utilizzo di volumi elevati di frammenti di contenuto per casi d’uso headless, ma viene utilizzata anche per l’authoring delle pagine.
+landing-page-description: Scopri come gestire i frammenti di contenuto dalla console Frammenti di contenuto , che si concentra sull’utilizzo di volumi elevati di frammenti di contenuto per casi d’uso headless, ma viene utilizzato anche per la creazione delle pagine.
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 68%
+source-wordcount: '883'
+ht-degree: 64%
 
 ---
 

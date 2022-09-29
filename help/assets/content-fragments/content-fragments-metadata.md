@@ -1,13 +1,11 @@
 ---
 title: Metadati - Proprietà dei frammenti (Assets - Frammenti di contenuto)
-description: Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto in AEM per regolare il contenuto headless.
-feature: Content Fragments
-role: User
+description: Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 77%
+source-wordcount: '202'
+ht-degree: 87%
 
 ---
 
