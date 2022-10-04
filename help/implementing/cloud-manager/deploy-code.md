@@ -2,9 +2,9 @@
 title: Implementazione del codice
 description: Scopri come distribuire il codice utilizzando le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cb08fcbd6c1060466ca9e6b4639774d43b70c83c
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1220'
 ht-degree: 2%
 
 ---
@@ -121,6 +121,10 @@ I seguenti passaggi si interrompono se rimangono in attesa del feedback degli ut
 ## Processo di distribuzione {#deployment-process}
 
 Tutte le distribuzioni di Cloud Service seguono un processo continuo per garantire tempi di inattività pari a zero. Fare riferimento al documento [Funzionamento delle implementazioni continue](/help/implementing/deploying/overview.md#how-rolling-deployments-work) per saperne di più.
+
+>[!NOTE]
+>
+>La cache del Dispatcher viene cancellata su ogni distribuzione. Viene successivamente riscaldato prima che i nuovi nodi di pubblicazione accetti il traffico.
 
 ## Esegui nuovamente una distribuzione di produzione {#Reexecute-Deployment}
 
