@@ -2,10 +2,10 @@
 title: Personalizzazione e targeting dei contenuti
 description: Scopri come creare contenuti personalizzati e mirati con AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
+source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 12%
+source-wordcount: '1056'
+ht-degree: 10%
 
 ---
 
@@ -111,29 +111,32 @@ Attualmente AEM utilizzare:
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEM fornisce il motore di targeting integrato ContextHub che elabora le richieste di pagina e determina il contenuto da visualizzare. Quando utilizzi il motore di destinazione AEM, puoi usare solo i segmenti creati con AEM per definire il pubblico delle esperienze.
+AEM fornisce il motore di targeting integrato [ContextHub](/help/implementing/developing/personalization/contexthub.md) elabora le richieste di pagina e determina il contenuto da visualizzare. Quando utilizzi il motore di destinazione AEM, puoi usare solo i segmenti creati con AEM per definire il pubblico delle esperienze.
 
 ### Adobe Target {#adobe-target}
 
-Il motore di destinazione Adobe Target permette di tenere traccia e raccogliere le informazioni sulle visite della pagina.
+La [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) il motore di destinazione fa sì che le informazioni raccolte dalle visite di pagina siano tracciate in Adobe Target.
 
 * Con questo motore di destinazione, si utilizzano i segmenti importati da Adobe Target per definire il pubblico delle esperienze.
 * Le attività che sfruttano Adobe Target vengono [sincronizzate con Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
-Puoi utilizzare questo motore quando hai [integrato con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+Puoi utilizzare questo motore quando hai [integrato con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ## Come impostare contenuti personalizzati {#how-to-setup-personalized-content}
 
 Sono necessari vari passaggi e definizioni per la distribuzione dei contenuti personalizzati:
 
-1. Integra AEM con il tuo motore di destinazione.
+1. Imposta il motore di destinazione effettuando una delle seguenti operazioni:
+
+   1. Configurazione [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
+   1. Integrazione con [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
 1. Configura i tipi di pubblico.
 
-   1. A seconda del motore di destinazione, definisci il pubblico o il segmento, insieme alle regole.
+   1. A seconda del motore di destinazione, definisci le [Pubblico di destinazione](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) o [Segmento ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md), insieme alle regole.
 
-1. Crea il tuo marchio e le tue attività.
+1. Crea il tuo [Marchio e attività](/help/sites-cloud/authoring/personalization/activities.md).
 
 1. Crea la selezione delle esperienze da mostrare ai vari tipi di pubblico.
 
-1. Personalizza queste esperienze, indirizzandole a tipi di pubblico specifici (segmenti).
+1. Personalizza queste esperienze, per [targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) per tipi di pubblico specifici (segmenti).
