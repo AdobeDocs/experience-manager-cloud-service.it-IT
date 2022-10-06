@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
+source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1139'
 ht-degree: 8%
 
 ---
@@ -25,7 +25,7 @@ Vedi anche i seguenti video [Parte 1 della rete CDN Cloud 5 AEM](https://experie
 
 ## CDN gestito AEM  {#aem-managed-cdn}
 
-Segui le sezioni seguenti per utilizzare l’interfaccia utente self-service di Cloud Manager per prepararsi alla distribuzione dei contenuti utilizzando la rete CDN standard di AEM:
+Segui le sezioni seguenti per utilizzare l’interfaccia utente self-service di Cloud Manager per prepararsi alla distribuzione dei contenuti utilizzando AEM CDN preconfigurato:
 
 1. [Gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -38,7 +38,7 @@ Fai riferimento a [Gestione degli Elenchi consentiti IP](/help/implementing/clou
 
 >[!CAUTION]
 >
->Solo le richieste dagli IP consentiti saranno servite dalla rete CDN gestita di AEM. Se punti la tua CDN alla CDN gestita AEM, assicurati che gli IP della tua CDN siano inclusi nell&#39;inserire nell&#39;elenco Consentiti.
+>Solo le richieste dagli IP consentiti verranno servite da AEM CDN gestito. Se punti la tua CDN alla CDN gestita AEM, assicurati che gli IP della tua CDN siano inclusi nell&#39;inserire nell&#39;elenco Consentiti.
 
 ## CDN cliente punta a AEM CDN gestito {#point-to-point-CDN}
 
@@ -120,6 +120,19 @@ Di seguito sono riportati diversi esempi di configurazione da parte di alcuni de
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+## Disposizione dei contenuti {#content-disposition}
+
+Per il livello di pubblicazione, l’impostazione predefinita per il servizio dei BLOB è come allegato. Questo può essere ignorato utilizzando lo standard [intestazione di disposizione dei contenuti](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) nel dispatcher.
+
+Di seguito è riportato un esempio di come dovrebbe essere la configurazione:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## Intestazioni di geolocalizzazione {#geo-headers}
 
