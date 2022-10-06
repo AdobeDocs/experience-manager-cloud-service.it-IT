@@ -2,10 +2,10 @@
 title: Dashboard della licenza
 description: Cloud Manager fornisce una dashboard per visualizzare facilmente le adesioni ai prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
+source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 4%
+source-wordcount: '876'
+ht-degree: 3%
 
 ---
 
@@ -83,6 +83,10 @@ Le richieste di contenuto avranno varianze con gli strumenti di reporting di Ana
 | Blocchi di traffico | L&#39;utilizzo di un tracker blocker in un browser può negare il tracciamento di alcune richieste. |
 | Firewall | I firewall possono bloccare il tracciamento di Analytics. Ciò è più frequente con i firewall aziendali. |
 
+### Cosa succede se voglio saperne di più sul volume di richiesta del contenuto? {#current-request-volumes}
+
+Se desideri ulteriori informazioni sul volume di richiesta del contenuto visualizzato nel dashboard della licenza, il team di Adobe può fornire un rapporto che mostra i principali driver di volume delle richieste di contenuto. Rivolgiti al tuo team di Adobe o all’Assistenza clienti Adobe per richiedere un rapporto sull’utilizzo principale.
+
 ### Cosa succede se uso la mia rete CDN? {#using-own-cdn}
 
-Il dashboard di richiesta del contenuto in Cloud Manager non mostrerà il tracciamento per il tuo CDN.
+Il Dashboard licenze mostrerà solo i dati tracciati dal CDN del Cloud Service.  Se scegli di portare il tuo CDN (BYOCDN), segnalerai il volume della richiesta di contenuti all&#39;Adobe su base annuale, come indicato nel tuo contratto.
