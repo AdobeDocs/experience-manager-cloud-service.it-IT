@@ -2,7 +2,7 @@
 title: Estrazione del contenuto dall’origine
 description: Estrazione del contenuto dall’origine
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: a2e14d73fd6b8138799799c6408a0846224cd8c9
+source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 21%
@@ -35,7 +35,7 @@ Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferiment
    >[!IMPORTANT]
    >
    >Assicurati che la chiave di estrazione sia valida e non sia vicina alla sua scadenza. Se è vicina alla data di scadenza, puoi rinnovare la chiave di estrazione selezionando il set di migrazione e facendo clic su Proprietà . Fai clic su **Rinnova**. Verrà visualizzato Cloud Acceleration Manager, dove puoi fare clic su **Copia chiave di estrazione**. Ogni volta che fai clic su **Copia chiave di estrazione**, viene generata una nuova chiave di estrazione valida per 14 giorni dalla creazione.
-   >[!immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. Viene visualizzata la finestra di dialogo Estrazione . Fai clic su **Extract** per avviare la fase di estrazione.
 
