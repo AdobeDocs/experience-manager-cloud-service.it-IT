@@ -2,10 +2,10 @@
 title: Utilizzo di frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri in che modo i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring e la distribuzione headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 94%
+source-wordcount: '2075'
+ht-degree: 93%
 
 ---
 
@@ -60,8 +60,8 @@ Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, c
 
 Il numero di canali di comunicazione aumenta ogni anno. In genere i canali si distinguono in base al meccanismo di consegna, come segue:
 
-* Canale fisico, ad esempio desktop o mobile.
-* Forma di consegna in un canale fisico, ad esempio “pagina dei dettagli di un prodotto”, “pagina della categoria del prodotto” per desktop oppure “web mobile”, “app mobile” per dispositivi mobili.
+* canale fisico; ad esempio, desktop, mobile.
+* forma di consegna in un canale fisico; ad esempio, la &quot;pagina di dettaglio del prodotto&quot;, la &quot;pagina di categoria del prodotto&quot; per desktop o &quot;web mobile&quot;, &quot;app mobile&quot; per dispositivi mobili.
 
 Tuttavia, probabilmente non vorrai utilizzare esattamente gli stessi contenuti per tutti i canali: vorrai piuttosto ottimizzarli in base ai singoli canali.
 

@@ -2,10 +2,10 @@
 title: Configurazione dell’ambiente dell’account
 description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 100%
+source-wordcount: '490'
+ht-degree: 94%
 
 ---
 
@@ -67,7 +67,7 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Presentazione data relativa**
 
-   Per migliorare la leggibilità, AEM presenta le date degli ultimi sette giorni come date relative (ad esempio, tre giorni fa) e le date più lontane come date esatte (ad esempio, il 20 marzo 2017).
+   Per migliorare la leggibilità, AEM le date degli ultimi sette giorni come date relative (ad esempio, Tre giorni fa) e le date precedenti come date esatte (ad esempio, 20 marzo 2017).
 
    Questa opzione definisce il modo in cui il sistema visualizza le date. Sono disponibili le seguenti opzioni:
 

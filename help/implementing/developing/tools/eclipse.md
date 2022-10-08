@@ -2,9 +2,9 @@
 title: Strumenti AEM Developer per Eclipse
 description: Strumenti AEM Developer per Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1183'
 ht-degree: 3%
 
 ---
@@ -196,7 +196,7 @@ Al termine, il pacchetto dovrebbe essere in esecuzione sull&#39;istanza e al mom
 
 Per ricreare un pacchetto dal progetto, fai clic con il pulsante destro del mouse sul `PROJECT.ui.apps` o `PROJECT.ui.content` e scegli **Esegui come** -> **Installazione Maven**.
 
-Ora disponi di una cartella di destinazione creata con il pacchetto all’interno di (ad es. `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Ora disponi di una cartella di destinazione creata con il pacchetto all’interno (ad esempio, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Risoluzione dei problemi {#troubleshooting}
 

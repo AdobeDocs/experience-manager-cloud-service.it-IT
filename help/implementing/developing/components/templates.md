@@ -2,10 +2,10 @@
 title: Modelli di pagina
 description: I modelli di pagina vengono utilizzati per creare una pagina che verrà utilizzata come base per la nuova pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 9%
+source-wordcount: '3297'
+ht-degree: 10%
 
 ---
 
@@ -188,7 +188,7 @@ Per creare una nuova cartella è possibile effettuare le seguenti operazioni:
    * Tipo: `String`
    * Valore: Titolo (per la cartella) che si desidera visualizzare nel **Modelli** console.
 
-1. Oltre alle autorizzazioni e ai privilegi standard per l’authoring (ad es. `content-authors`) devi ora assegnare i gruppi e definire i diritti di accesso richiesti (ACL, Access Rights) affinché gli autori possano creare modelli nella nuova cartella.
+1. Oltre alle autorizzazioni e ai privilegi di authoring standard (ad esempio, `content-authors`) devi ora assegnare i gruppi e definire i diritti di accesso richiesti (ACL, Access Rights) affinché gli autori possano creare modelli nella nuova cartella.
 
    La `template-authors` gruppo è il gruppo predefinito che deve essere assegnato. Vedi la sezione [ACL e gruppi](#acls-and-groups) per i dettagli.
 

@@ -2,9 +2,9 @@
 title: Modifica di uno SPA esterno in AEM
 description: Questo documento descrive i passaggi consigliati per caricare un SPA autonomo in un’istanza AEM, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2402'
 ht-degree: 1%
 
 ---
@@ -188,7 +188,7 @@ La `AEMText` Il componente è ora modificabile in AEM.
 ### AEM pagine autorizzate {#aem-authorable-pages}
 
 1. Identifica una pagina da aggiungere per l’authoring nel SPA. Questo esempio utilizza `/content/wknd-spa-react/us/en/home.html`.
-1. Crea un nuovo file (ad es. `Page.js`) per il componente Pagina modificabile. In questo caso, è possibile riutilizzare il componente Pagina fornito in `@adobe/cq-react-editable-components`.
+1. Crea un nuovo file (ad esempio, `Page.js`) per il componente Pagina modificabile. In questo caso, è possibile riutilizzare il componente Pagina fornito in `@adobe/cq-react-editable-components`.
 1. Ripeti il passaggio 4 nella sezione [AEM componenti foglia utilizzabili.](#authorable-leaf-components) Utilizzare la funzione wrapper `withMappable` sul componente.
 1. Come è stato fatto in precedenza, applica `MapTo` ai tipi di risorse AEM per tutti i componenti secondari all’interno della pagina.
 

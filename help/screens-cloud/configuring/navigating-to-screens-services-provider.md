@@ -2,9 +2,9 @@
 title: Navigazione al provider di servizi Screens
 description: Questa pagina descrive come passare a Screens Services Provider.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '266'
 ht-degree: 6%
 
 ---
@@ -36,8 +36,8 @@ Segui i passaggi seguenti per configurare Screens Services Provider:
    ![immagine](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. Immetti i seguenti dettagli nella finestra di dialogo Modifica impostazioni .
-   * **Pubblica Url** - AEM URL di pubblicazione (ad es. `https://publish-p12345-e12345.adobeaemcloud.com`)
-   * **Url Autore** - URL AEM autore (ad es. `https://author-p12345-e12345.adobeaemcloud.com`)
+   * **Pubblica Url** - AEM URL di pubblicazione (ad esempio, `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **Url Autore** - URL AEM autore (ad esempio, `https://author-p12345-e12345.adobeaemcloud.com`)
 
    ![immagine](/help/screens-cloud/assets/configure/configure-screens4.png)
 

@@ -2,9 +2,9 @@
 title: Componenti di configurazione dei frammenti di contenuto per il rendering
 description: Componenti di configurazione dei frammenti di contenuto per il rendering
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '522'
 ht-degree: 6%
 
 ---
@@ -73,22 +73,22 @@ La configurazione OSGi è:
   <tr>
    <td><strong>Tipo risorsa</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>Il tipo di risorsa da registrare; ad esempio <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>Il tipo di risorsa da registrare; ad esempio, <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Proprietà di riferimento</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>Nome della proprietà contenente il riferimento al frammento; ad esempio <code>fragmentPath</code> o <code>fileReference</code></td>
+   <td>Nome della proprietà contenente il riferimento al frammento; ad esempio, <code>fragmentPath</code> o <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Proprietà elemento/i</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>Nome della proprietà che contiene i nomi degli elementi da riprodurre; ad esempio<code>elementName</code></td>
+   <td>Nome della proprietà che contiene i nomi degli elementi da riprodurre; ad esempio,<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Proprietà variante</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>Il nome della proprietà che contiene il nome della variante di cui eseguire il rendering; ad esempio<code>variationName</code></td>
+   <td>Il nome della proprietà che contiene il nome della variante di cui eseguire il rendering; ad esempio,<code>variationName</code></td>
   </tr>
  </tbody>
 </table>

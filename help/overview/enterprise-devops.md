@@ -2,10 +2,10 @@
 title: DevOps aziendale
 description: Scopri i processi, i metodi e la comunicazione necessari per semplificare l’implementazione e la collaborazione.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 98eaa1390e499f48bb1a615e21b2dfb7a0523c57
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 100%
+source-wordcount: '1002'
+ht-degree: 97%
 
 ---
 
@@ -108,7 +108,7 @@ Il codice deve sempre essere propagato dal basso verso l’alto:
 * Quindi viene testato nuovamente negli ambienti di gestione temporanea.
 * Solo a questo punto il codice può essere distribuito agli ambienti di produzione.
 
-Il codice (ad esempio funzionalità di applicazioni web personalizzate e modelli di progettazione) viene in genere trasferito esportando e importando pacchetti tra i diversi archivi dei contenuti. Se utile, questa replica può essere configurata come processo automatico.
+Il codice (ad esempio, funzionalità di applicazioni web personalizzate e modelli di progettazione) viene in genere trasferito esportando e importando pacchetti tra i diversi archivi di contenuti. Se utile, questa replica può essere configurata come processo automatico.
 
 I progetti di AEM as a Cloud Service spesso attivano la distribuzione del codice:
 

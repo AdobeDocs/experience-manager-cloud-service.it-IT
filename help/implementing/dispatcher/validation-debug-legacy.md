@@ -4,10 +4,10 @@ description: Convalida e debug tramite gli strumenti di Dispatcher (legacy)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2345'
+ht-degree: 1%
 
 ---
 
@@ -271,11 +271,11 @@ Nella configurazione della farm sono presenti quattro sezioni in cui puoi includ
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-In alternativa, è possibile includere la versione **predefinita** di tali file, i cui nomi sono preceduti dalla parola `default_`, ad esempio `../filters/default_filters.any`.
+In alternativa, puoi includere il **default** versione di tali file, i cui nomi sono preceduti dalla parola `default_`ad esempio, `../filters/default_filters.any`.
 
 **include l&#39;istruzione in (...), al di fuori di qualsiasi posizione nota: ...**
 
-Oltre alle sei sezioni menzionate nei paragrafi precedenti, non è consentito utilizzare il `$include` , ad esempio, il seguente genererebbe questo errore:
+Oltre alle sei sezioni menzionate nei paragrafi precedenti, non è consentito utilizzare il `$include` ad esempio, il seguente genera questo errore:
 
 ```
 /invalidate {
@@ -290,7 +290,7 @@ Questo errore viene generato quando non si specifica un&#39;inclusione per `/ren
 
 **Il filtro non deve utilizzare il pattern glob per consentire le richieste**
 
-Non è sicuro consentire le richieste con un `/glob` regola di stile, corrispondente alla riga di richiesta completa, ad esempio
+Non è sicuro consentire le richieste con un `/glob` regola di stile, che viene confrontata con la riga di richiesta completa, ad esempio,
 
 ```
 /0100 {

@@ -2,9 +2,9 @@
 title: Utilizzo delle librerie lato client su AEM as a Cloud Service
 description: AEM fornisce Cartelle libreria lato client, che ti consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere distribuita al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2566'
 ht-degree: 1%
 
 ---
@@ -348,5 +348,5 @@ YUI è impostato come minificatore predefinito in AEM. Per modificare questo val
 1. Trova e modifica le **Adobe Granite HTML Library Manager**.
 1. Abilita la **Miniatura** (se non è già abilitato).
 1. Imposta il valore **Configurazioni predefinite del processore JS** a `min:gcc`.
-   * Le opzioni possono essere passate se separate da un punto e virgola, ad esempio `min:gcc;obfuscate=true`.
+   * Le opzioni possono essere passate se separate da un punto e virgola, ad esempio, `min:gcc;obfuscate=true`.
 1. Fai clic su **Salva** per salvare le modifiche.

@@ -2,9 +2,9 @@
 title: Migrazione al componente aggiuntivo CIF (AEM Commerce Integration Framework)
 description: Come migrare al componente aggiuntivo CIF di AEM Commerce Integration Framework (CIF) da una versione precedente
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 45%
 
 ---
@@ -51,4 +51,4 @@ Se utilizzi la blueprint del catalogo con Classic CIF, devi aggiornare il flusso
 
 ## Dati non memorizzabili nella cache e interazione con lo shopping
 
-Le richieste lato client per dati e interazioni non memorizzabili nella cache (ad esempio, add-to-cart, search) devono passare direttamente all’endpoint e-commerce (soluzione e-commerce o livello di integrazione) tramite CDN/Dispatcher. Rimuovi tutte le chiamate in cui AEM solo un proxy.
+Le richieste lato client per dati e interazioni non memorizzabili nella cache (ad esempio, add-to-cart, search) devono passare direttamente all’endpoint commerce (soluzione commerce o livello di integrazione) tramite CDN/Dispatcher. Rimuovi tutte le chiamate in cui AEM solo un proxy.

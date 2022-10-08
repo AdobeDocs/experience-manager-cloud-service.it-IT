@@ -2,10 +2,10 @@
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redigere e utilizzare contenuti indipendenti dalla pagina.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 100%
+source-wordcount: '1166'
+ht-degree: 96%
 
 ---
 
@@ -153,7 +153,7 @@ Se hai [associato del contenuto](/help/sites-cloud/administering/content-fragmen
 
 >[!NOTE]
 >
->Esistono diversi metodi per aggiungere [risorse visive (ad es. immagini)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
+>Sono disponibili diversi metodi di aggiunta [risorse visive (ad esempio, immagini)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Da qui puoi trascinare le risorse nella posizione richiesta (su un componente es
 
 ### Risorse inserite nel frammento {#assets-inserted-into-the-fragment}
 
-Se sono state inserite delle risorse (ad es. immagini) nel frammento stesso (come [frammenti con file multimediali diversi](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)) le opzioni per la modifica di tali risorse nell’editor pagina sono limitate.
+Se sono state inserite risorse (ad esempio, immagini) nel frammento stesso (come [frammenti di file multimediali diversi](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), le opzioni per la modifica di queste risorse nell’editor pagina sono limitate.
 
 Ad esempio, per un’immagine è possibile:
 

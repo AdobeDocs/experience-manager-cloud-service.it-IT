@@ -2,7 +2,7 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare Logging per AEM as a Cloud Service per configurare parametri globali per il servizio di registrazione centrale, impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 437c6b3bcd331bf385f2845bfdb0be656a57488e
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 3%
@@ -554,7 +554,7 @@ Nella richiesta di assistenza, i clienti devono indicare:
 * Porta Splunk
 * Il token Splunk HEC. Vedi [questa pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) per ulteriori informazioni.
 
-Le proprietà di cui sopra devono essere specificate per ciascuna combinazione di programmi/tipi di ambiente pertinente.  Ad esempio, se un cliente desidera ambienti di sviluppo, staging e produzione, deve fornire tre set di informazioni, come indicato di seguito.
+Le proprietà di cui sopra devono essere specificate per ciascuna combinazione di programmi/tipi di ambiente pertinente. Ad esempio, se un cliente desidera ambienti di sviluppo, staging e produzione, deve fornire tre set di informazioni, come indicato di seguito.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Riferimento API di ContextHub Javascript
 description: L’API Javascript di ContextHub è disponibile per i tuoi script quando il componente ContextHub è stato aggiunto alla pagina
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '4622'
 ht-degree: 3%
 
 ---
@@ -58,7 +58,7 @@ Nella tabella seguente sono elencati i nomi degli eventi che si verificano per l
 | `ContextHub.Constants.EVENT_UI_CONTAINER_OPENED` | Attivazione all’apertura dell’interfaccia utente di ContextHub | `ui-container-opened` |
 | `ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED` | Attivazione quando l’interfaccia utente di ContextHub viene compressa | `ui-container-closed` |
 | `ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED` | Generato quando una proprietà viene modificata | `ui-property-modified` |
-| `ContextHub.Constants.EVENT_UI_RENDERED` | Viene attivata ogni volta che viene eseguito il rendering dell’interfaccia utente di ContextHub (ad esempio dopo una modifica della proprietà) | `ui-rendered` |
+| `ContextHub.Constants.EVENT_UI_RENDERED` | Viene attivata ogni volta che viene eseguito il rendering dell’interfaccia utente ContextHub (ad esempio, dopo una modifica della proprietà) | `ui-rendered` |
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | Generato quando il contenitore dell’interfaccia utente viene inizializzato | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | Indica la modalità di interfaccia attiva | `/_/active-ui-mode` |
 

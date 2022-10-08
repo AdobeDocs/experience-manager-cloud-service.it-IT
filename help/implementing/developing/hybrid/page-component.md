@@ -2,9 +2,9 @@
 title: Componente pagina SPA
 description: In un SPA il componente pagina non fornisce gli elementi HTML dei suoi componenti figlio, ma lo delega al framework SPA. Questo documento spiega come questo rende univoco il componente della pagina di un SPA.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '599'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Proprietà della risorsa meta che descrivono il contenuto SPA:
 
 ## Metaproprietà {#meta-properties}
 
-* `cq:wcmmode`: Modalità WCM degli editor (ad esempio pagina, modello)
+* `cq:wcmmode`: Modalità WCM degli editor (ad esempio, pagina, modello)
 * `cq:pagemodel_root_url`: URL del modello principale dell’app. Importante quando si accede direttamente a una pagina figlio, poiché il modello di pagina figlio è un frammento del modello principale dell’app. La `PageModelManager` quindi ricompone sistematicamente il modello iniziale dell&#39;applicazione quando entra nell&#39;applicazione dal suo punto di ingresso principale.
 * `cq:pagemodel_router`: Attiva o disattiva la [`ModelRouter`](routing.md) del `PageModelManager` libreria
 * `cq:pagemodel_route_filters`: Elenco o espressioni regolari separati da virgole per fornire i percorsi [`ModelRouter`](routing.md) devono ignorare.

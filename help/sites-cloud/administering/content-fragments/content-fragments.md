@@ -4,10 +4,10 @@ description: Scopri in che modo i frammenti di contenuto in Adobe Experience Man
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 98%
+source-wordcount: '2109'
+ht-degree: 96%
 
 ---
 
@@ -63,8 +63,8 @@ Per facilitare questa fase, puoi visualizzare un’anteprima della [Struttura ad
 
 Il numero di canali di comunicazione aumenta ogni anno. In genere i canali si distinguono in base al meccanismo di consegna, come segue:
 
-* Canale fisico, ad esempio desktop o mobile.
-* Forma di consegna in un canale fisico, ad esempio “pagina dei dettagli di un prodotto”, “pagina della categoria del prodotto” per desktop oppure “web mobile”, “app mobile” per dispositivi mobili.
+* canale fisico; ad esempio, desktop, mobile.
+* forma di consegna in un canale fisico; ad esempio, la &quot;pagina di dettaglio del prodotto&quot;, la &quot;pagina di categoria del prodotto&quot; per desktop o &quot;web mobile&quot;, &quot;app mobile&quot; per dispositivi mobili.
 
 Tuttavia, probabilmente non vorrai utilizzare esattamente gli stessi contenuti per tutti i canali: vorrai piuttosto ottimizzarli in base ai singoli canali.
 

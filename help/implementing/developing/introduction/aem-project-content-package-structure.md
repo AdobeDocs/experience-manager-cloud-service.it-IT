@@ -2,10 +2,10 @@
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti per la distribuzione in Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 13%
+source-wordcount: '2931'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +19,7 @@ Il presente articolo illustra le modifiche necessarie affinché i progetti Adobe
 
 AEM implementazioni di applicazioni devono essere costituite da un singolo pacchetto AEM. Questo pacchetto deve a sua volta contenere pacchetti secondari che comprendono tutto ciò che l’applicazione deve funzionare, compresi il codice, la configurazione ed eventuali contenuti di base di supporto.
 
-AEM richiede una separazione di **contenuto** e **codice**, il che significa che un singolo pacchetto di contenuti **non può** essere distribuito **sia** su `/apps` che su aree scrivibili di runtime dell’archivio (ad esempio `/content`, `/conf`, `/home` o tutto il resto fuorché `/apps`). Al contrario, l’applicazione deve separare codice e contenuto in pacchetti discreti da distribuire in AEM.
+AEM richiede una separazione **content** e **codice**, che significa un unico pacchetto di contenuti **impossibile** distribuire **entrambi** `/apps` e aree scrivibili in fase di esecuzione (ad esempio, `/content`, `/conf`, `/home`o altro `/apps`) del repository. Al contrario, l’applicazione deve separare codice e contenuto in pacchetti discreti da distribuire in AEM.
 
 La struttura del pacchetto descritta in questo documento è compatibile **sia** con le distribuzioni di sviluppo locali che con le distribuzioni di AEM Cloud Service.
 

@@ -2,9 +2,9 @@
 title: Creazione di tag nelle applicazioni AEM
 description: Funzionamento programmatico con tag o estensione tag all'interno di un'applicazione AEM personalizzata
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Per l’implementazione basata su JCR, che mappa `Tags` su JCR `Nodes`, puoi utilizzare direttamente gli `adaptTo` se disponi della risorsa (ad esempio `/content/cq:tags/default/my/tag`):
+Per l’implementazione basata su JCR, che mappa `Tags` su JCR `Nodes`, puoi utilizzare direttamente gli `adaptTo` se disponi della risorsa (ad esempio, `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Tag Garbage Collector {#the-tag-garbage-collector}
 
-Il tag garbage Collector è un servizio di background che pulisce i tag nascosti e inutilizzati. I tag nascosti e non utilizzati sono tag sottostanti `/content/cq:tags` che hanno `cq:movedTo` e non vengono utilizzati in un nodo di contenuto. Hanno un conteggio di zero. Utilizzando questo processo di eliminazione pigra, il nodo del contenuto (ovvero `cq:tags` non è necessario aggiornare come parte dell&#39;operazione di spostamento o unione. I riferimenti nel `cq:tags` viene automaticamente aggiornata quando `cq:tags` viene aggiornata, ad esempio tramite la finestra di dialogo delle proprietà della pagina.
+Il tag garbage Collector è un servizio di background che pulisce i tag nascosti e inutilizzati. I tag nascosti e non utilizzati sono tag sottostanti `/content/cq:tags` che hanno `cq:movedTo` e non vengono utilizzati in un nodo di contenuto. Hanno un conteggio di zero. Utilizzando questo processo di eliminazione pigra, il nodo del contenuto (ovvero `cq:tags` non è necessario aggiornare come parte dell&#39;operazione di spostamento o unione. I riferimenti nel `cq:tags` viene automaticamente aggiornata quando `cq:tags` viene aggiornata, ad esempio, tramite la finestra di dialogo delle proprietà della pagina.
 
 Il Garbage Collector dei tag viene eseguito per impostazione predefinita una volta al giorno. Puoi configurarlo in:
 
@@ -136,7 +136,7 @@ La ricerca di tag e l’elenco dei tag funzionano come segue:
 
 ## Tag in diverse lingue {#tags-in-different-languages}
 
-Un tag `title` può essere definito in lingue diverse. Al nodo del tag viene quindi aggiunta una proprietà sensibile alla lingua. Questa proprietà ha il formato `jcr:title.<locale>`ad esempio `jcr:title.fr` per la traduzione francese. `<locale>` deve essere una stringa internazionale ISO in minuscolo e utilizzare il carattere di sottolineatura (`_`) invece del trattino/trattino (`-`), ad esempio: `de_ch`.
+Un tag `title` può essere definito in lingue diverse. Al nodo del tag viene quindi aggiunta una proprietà sensibile alla lingua. Questa proprietà ha il formato `jcr:title.<locale>`ad esempio, `jcr:title.fr` per la traduzione francese. `<locale>` deve essere una stringa internazionale ISO in minuscolo e utilizzare il carattere di sottolineatura (`_`) invece del trattino/trattino (`-`), ad esempio: `de_ch`.
 
 Ad esempio quando **Animali** viene aggiunto al **Prodotti** page, il valore `stockphotography:animals` viene aggiunto alla proprietà `cq:tags` del nodo `/content/wknd/en/products/jcr:content`. La traduzione viene referenziata dal nodo del tag.
 
@@ -159,7 +159,7 @@ Per l’assegnazione tag, la localizzazione dipende dal contesto come tag `title
 
 ### Aggiunta di una nuova lingua alla finestra di dialogo Modifica tag {#adding-a-new-language-to-the-edit-tag-dialog}
 
-La procedura seguente descrive come aggiungere una nuova lingua (ad esempio il finlandese) al **Modifica tag** finestra di dialogo:
+La procedura seguente descrive come aggiungere una nuova lingua (ad esempio, il finlandese) al **Modifica tag** finestra di dialogo:
 
 1. In **CRXDE**, modifica la proprietà multivalore `languages` del nodo `/content/cq:tags`.
 1. Aggiungi `fi_fi`, che rappresenta le impostazioni internazionali finlandesi e salva le modifiche.

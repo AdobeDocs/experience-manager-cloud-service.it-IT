@@ -2,9 +2,9 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1811'
 ht-degree: 3%
 
 ---
@@ -63,9 +63,9 @@ I frammenti di contenuto, basati su un modello di frammento di contenuto, sono m
    * I dati dell’elemento vengono memorizzati sotto il sotto-nodo principale:
       `jcr:content/data/master`
 
-   * Le varianti sono memorizzate sotto un nodo secondario che porta il nome della variante: ad esempio `jcr:content/data/myvariation`
+   * Le varianti sono memorizzate sotto un nodo secondario che porta il nome della variante: ad esempio, `jcr:content/data/myvariation`
 
-   * I dati di ciascun elemento vengono memorizzati nel rispettivo sottonodo come proprietà con il nome dell’elemento: Ad esempio, il contenuto dell’elemento `text` viene memorizzato come proprietà `text` su `jcr:content/data/master`
+   * I dati di ciascun elemento vengono memorizzati nel rispettivo sottonodo come proprietà con il nome dell’elemento: ad esempio, il contenuto dell’elemento `text` viene memorizzato come proprietà `text` su `jcr:content/data/master`
 
 * I metadati e il contenuto associato sono memorizzati di seguito `jcr:content/metadata`
 Ad eccezione del titolo e della descrizione, che non sono considerati metadati tradizionali e memorizzati su 
@@ -180,7 +180,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
    L’interfaccia ti fornisce i mezzi per:
 
-   * Gestire i dati di base (ad esempio nome get; get/set title/description)
+   * Gestire i dati di base (ad esempio, ottenere il nome; get/set title/description)
    * Accedere ai metadati
    * Elementi di accesso:
 

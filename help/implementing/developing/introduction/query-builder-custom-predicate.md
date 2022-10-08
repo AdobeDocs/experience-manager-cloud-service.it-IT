@@ -2,9 +2,9 @@
 title: Implementazione di un valutatore del predicato personalizzato per il Generatore di query
 description: Query Builder in AEM offre un modo semplice e personalizzabile per eseguire query sull’archivio dei contenuti
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Un predicato personalizzato potrebbe anche eseguire altre operazioni non diretta
 
 Un valutatore predicato gestisce la valutazione di alcuni predicati, che sono i vincoli di definizione di una query.
 
-Associa un vincolo di ricerca di livello superiore (ad esempio `width>200`) a una query JCR specifica che si adatta al modello di contenuto effettivo (ad esempio `metadata/@width > 200`). Oppure può filtrare manualmente i nodi e controllarne i vincoli.
+Associa un vincolo di ricerca di livello superiore (ad esempio `width>200`) a una query JCR specifica che si adatta al modello di contenuto effettivo (ad esempio, `metadata/@width > 200`). Oppure può filtrare manualmente i nodi e controllarne i vincoli.
 
 >[!TIP]
 >
@@ -60,7 +60,7 @@ Ad esempio, in questa sezione viene descritto come creare un valutatore di predi
 
 * `cq:lastReplicated` che memorizza la data dell&#39;ultima azione di replica
 * `cq:lastReplicatedBy` che memorizza l&#39;id dell&#39;utente che ha attivato l&#39;ultima azione di replica
-* `cq:lastReplicationAction` che memorizza l’ultima azione di replica (ad esempio Attivazione, Disattivazione)
+* `cq:lastReplicationAction` che memorizza l’ultima azione di replica (ad esempio, Attivazione, Disattivazione)
 
 #### Query dei metadati di replica con valutatori predefiniti dei predicati {#querying-replication-metadata-with-default-predicate-evaluators}
 

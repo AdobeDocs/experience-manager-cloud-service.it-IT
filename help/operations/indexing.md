@@ -2,10 +2,10 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 100%
+source-wordcount: '2255'
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Le definizioni degli indici sono ora contrassegnate con “custom” e con il nu
 
 * La definizione stessa dell’indice (ad esempio `/oak:index/ntBaseLucene-custom-1`)
 
-Per distribuire un indice personalizzato, la definizione dell’indice (`/oak:index/definitionname`) deve essere consegnata tramite `ui.apps` da Git e il processo di implementazione di Cloud Manager. Nel filtro FileVault, ad esempio `ui.apps/src/main/content/META-INF/vault/filter.xml`, elenca singolarmente ogni indice personalizzato, ad esempio `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definizione di indice personalizzato verrà quindi memorizzata nel file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, come segue:
+Per distribuire un indice personalizzato, la definizione dell’indice (`/oak:index/definitionname`) deve essere consegnata tramite `ui.apps` da Git e il processo di implementazione di Cloud Manager. Nel filtro FileVault, ad esempio: `ui.apps/src/main/content/META-INF/vault/filter.xml`, elencare singolarmente ogni indice personalizzato e personalizzato, ad esempio `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definizione di indice personalizzato verrà quindi memorizzata nel file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, come segue:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

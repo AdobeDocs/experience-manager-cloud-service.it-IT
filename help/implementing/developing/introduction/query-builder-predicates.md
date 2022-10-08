@@ -2,9 +2,9 @@
 title: Riferimento predicato di Query Builder
 description: Riferimento predicato per l’API di Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2221'
 ht-degree: 2%
 
 ---
@@ -265,7 +265,7 @@ Supporta l’estrazione dei facet e fornisce bucket per ogni valore di propriet�
    * `equals` per corrispondenza esatta (predefinito)
    * `unequals` per il confronto delle disuguaglianze
    * `like` per utilizzare `jcr:like` funzione xpath (opzionale)
-   * `not` per nessuna corrispondenza (ad es. `not(@prop)` in xpath, il parametro del valore verrà ignorato)
+   * `not` per nessuna corrispondenza (ad esempio, `not(@prop)` in xpath, il parametro del valore verrà ignorato)
    * `exists` verifica dell&#39;esistenza
       * `true` la proprietà deve esistere
       * `false` è uguale a `not` ed è l&#39;impostazione predefinita
@@ -275,7 +275,7 @@ Supporta l’estrazione dei facet e fornisce bucket per ogni valore di propriet�
 
 Questo predicato corrisponde a una proprietà JCR rispetto a un intervallo. Questo vale per le proprietà con tipi lineari quali `LONG`, `DOUBLE` e `DECIMAL`. Per `DATE` per favore, vedi [`daterange`](#daterange) predicato con input del formato data ottimizzato.
 
-È possibile definire un limite inferiore, un limite superiore o entrambi. L&#39;operazione (ad esempio minore o minore o uguale a) può essere specificata anche singolarmente per i limiti inferiore e superiore.
+È possibile definire un limite inferiore, un limite superiore o entrambi. L’operazione (ad esempio, minore o minore o uguale a) può essere specificata anche singolarmente per i limiti inferiore e superiore.
 
 Non supporta l’estrazione dei facet.
 
@@ -370,7 +370,7 @@ Non supporta l’estrazione dei facet.
 
 * **`tagsearch`** - parola chiave da cercare nei titoli dei tag
 * **`property`** - proprietà (o percorso relativo alla proprietà) da considerare (impostazione predefinita) `cq:tags`)
-* **`lang`** - per cercare solo un titolo di tag localizzato (ad es. `de`)
+* **`lang`** - per cercare solo un titolo di tag localizzato (ad esempio, `de`)
 * **`all`** - valore booleano per cercare l’intero tag fulltext, ovvero tutti i titoli, la descrizione, ecc. (ha la precedenza su `lang`)
 
 ### tipo {#type}

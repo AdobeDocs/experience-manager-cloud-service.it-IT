@@ -2,10 +2,10 @@
 title: Creazione di contenuti accessibili per Adobe Experience Manager as a Cloud Service (conformità WCAG 2.1)
 description: Utilizzare AEM as a Cloud Service per rendere il contenuto web accessibile e fruibile per le persone con disabilità
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '14053'
-ht-degree: 97%
+source-wordcount: '14061'
+ht-degree: 96%
 
 ---
 
@@ -436,7 +436,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 1.3.
 
 Nel presentare le informazioni, i designer spesso si concentrano sulle caratteristiche di progettazione visiva come il colore, la forma, lo stile del testo o la posizione assoluta o relativa di un elemento di contenuto. Anche se queste possono essere tecniche di progettazione molto potenti per veicolare le informazioni (e possono migliorare l’accessibilità complessiva per normovedenti ma con particolari esigenze di accessibilità cognitive), le persone non vedenti o ipovedenti potrebbero non essere in grado di accedere alle informazioni che richiedono l’identificazione visiva di attributi come la posizione, il colore o la forma.
 
-Allo stesso modo, le informazioni che richiedono di distinguere tra suoni diversi (ad esempio, contenuti parlati da voci di sesso maschile o femminile) presenteranno problemi di accessibilità per le persone con disabilità uditive, se non vengono incluse in un testo alternativo per il contenuto audio.
+Allo stesso modo, le informazioni che richiedono di distinguere tra suoni diversi (ad esempio, contenuti parlati da voci maschili o femminili) presenteranno barriere di accessibilità per le persone con disabilità uditive, se non sono incluse in un testo alternativo per il contenuto audio.
 
 >[!NOTE]
 >
@@ -488,7 +488,7 @@ Qualunque colore sia utilizzato per trasmettere le informazioni, accertati che q
 
 Ad esempio, accertati che le informazioni fornite dal colore siano presenti in modo esplicito anche nel testo.
 
-Se il colore viene usato come spunto per fornire informazioni, è necessario dare un ulteriore segnale visivo, ad esempio la modifica dello stile (grassetto, corsivo) o del font. Tutto questo favorisce l’identificazione delle informazioni da parte delle persone con problemi di vista o affette da daltonismo. Tuttavia, non vi si può fare completo affidamento, in quanto non aiuterà le persone che non possono vedere affatto la pagina. Per veicolare tali informazioni a utenti non vedenti, è in alcuni casi utile fornire testo nascosto o utilizzare soluzioni a livello di programmazione, come la [suite di standard web Accessible Rich Internet Applications (ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/).
+Se il colore viene utilizzato come spunto per fornire informazioni, è necessario fornire un ulteriore segnale visivo, ad esempio la modifica dello stile (grassetto, corsivo) o del font. Questo aiuta le persone con problemi di vista o con problemi di vista del colore a identificare le informazioni. Tuttavia, non vi si può fare completo affidamento, in quanto non aiuterà le persone che non possono vedere affatto la pagina. Per veicolare tali informazioni a utenti non vedenti, è in alcuni casi utile fornire testo nascosto o utilizzare soluzioni a livello di programmazione, come la [suite di standard web Accessible Rich Internet Applications (ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/).
 
 #### Ulteriori informazioni - Uso del colore (1.4.1) {#more-information-use-of-color}
 
@@ -611,7 +611,7 @@ Oltre a seguire le linee guida in [Come soddisfare i criteri di successo 1.4.4](
 
 #### Finalità - Immagini di testo (1.4.5)  {#purpose-images-of-text}
 
-Le immagini di testo vengono spesso utilizzate quando un particolare stile di testo è quello preferenziale (ad esempio un logo) o se il testo è stato generato da un’altra sorgente (ad esempio la scansione di un documento cartaceo). Tuttavia, rispetto al testo presentato in HTML e formattato mediante i CSS, le immagini di testo non hanno la flessibilità necessaria per modificarsi in dimensioni o aspetto nel modo che potrebbe essere necessario per le persone con disabilità visive o difficoltà di lettura.
+Le immagini di testo vengono spesso utilizzate quando si preferisce un particolare stile di testo; ad esempio, un logotipo o se il testo è stato generato da un&#39;altra origine (ad esempio, la scansione di un documento cartaceo). Tuttavia, rispetto al testo presentato in HTML e formattato tramite CSS, le immagini di testo non hanno la flessibilità di modificare le dimensioni o l’aspetto che potrebbe essere necessario per le persone con disabilità visive o difficoltà di lettura.
 
 #### Come soddisfare il criterio - Immagini di testo (1.4.5)  {#how-to-meet-images-of-text}
 
@@ -1063,7 +1063,7 @@ L’obiettivo di questo criterio di successo è garantire prevedibilità durante
 * nuove finestre aperte quando un componente diventa attivo;
 * stato di attivazione che passa a un altro componente quando un componente diventa attivo.
 
-Lo stato di attivazione può essere passato a un altro controllo tramite la tastiera (ad esempio, tasto Tab per passare da un controllo all’altro) o il mouse (ad esempio, clic su un campo di testo). Lo spostamento del mouse su un controllo non ne determina l’attivazione, a meno che questo comportamento non venga implementato mediante script. Tieni presente che alcuni tipi di controlli usano il clic per attivare il controllo (ad esempio, un pulsante), che a sua volta determina un cambiamento del contesto.
+Lo stato attivo può essere spostato su un controllo tramite la tastiera (ad esempio, tasto di tabulazione su un controllo) o il mouse (ad esempio, clic su un campo di testo). Lo spostamento del mouse su un controllo non ne determina l’attivazione, a meno che questo comportamento non venga implementato mediante script. Tenere presente che per alcuni tipi di controlli, facendo clic su un controllo è possibile attivare anche il controllo (ad esempio, pulsante), che a sua volta può determinare una modifica nel contesto.
 
 #### Come soddisfare il criterio - Al focus (3.2.1) {#how-to-meet-on-focus}
 
@@ -1212,8 +1212,7 @@ Il posizionamento delle etichette è importante anche in quanto aiuta a individu
 
 * Caselle di selezione o pulsanti di scelta:
 Le etichette sono posizionate immediatamente a destra del campo.
-* Tutti gli altri componenti del modulo (ad esempio caselle di testo, caselle combinate):
-Le etichette sono posizionate immediatamente sopra o a sinistra del campo.
+* Tutti gli altri componenti del modulo (ad esempio caselle di testo, caselle combinate): Le etichette sono posizionate immediatamente sopra o a sinistra del campo.
 
 Nei moduli semplici con funzionalità molto limitata, l’etichettatura appropriata di un pulsante `Submit` può fungere da etichetta per il campo adiacente (ad esempio `Search`). Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
 

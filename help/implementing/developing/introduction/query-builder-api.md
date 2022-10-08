@@ -2,9 +2,9 @@
 title: API Query Builder
 description: La funzionalità di Asset Share Query Builder è esposta tramite un’API Java e un’API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2040'
 ht-degree: 0%
 
 ---
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Ottimizzazione dei risultati {#refining-what-is-returned}
 
-Per impostazione predefinita, il servlet JSON di QueryBuilder restituisce un set predefinito di proprietà per ciascun nodo nel risultato della ricerca (ad esempio percorso, nome, titolo, ecc.). Per ottenere il controllo sulle proprietà restituite, è possibile effettuare una delle seguenti operazioni:
+Per impostazione predefinita, il servlet JSON di QueryBuilder restituisce un set predefinito di proprietà per ciascun nodo nel risultato della ricerca (ad esempio, percorso, nome, titolo, ecc.). Per ottenere il controllo sulle proprietà restituite, è possibile effettuare una delle seguenti operazioni:
 
 Specifica
 

@@ -2,9 +2,9 @@
 title: Modernizzatore dell'archivio
 description: Modernizzatore dell'archivio
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '300'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ Il Repository Modernizer crea una struttura di progetto AEM Cloud Service compat
 
 * `ui.apps` implementazioni dei pacchetti in `/apps` e contiene tutto il codice
 
-* `ui.content` implementazioni di pacchetti in aree scrivibili in fase di esecuzione (ad esempio `/content`, `/conf`, `/home`o altro `/apps`) e contiene tutti i contenuti e la configurazione.
+* `ui.content` implementazioni di pacchetti in aree scrivibili in fase di esecuzione (ad esempio, `/content`, `/conf`, `/home`o altro `/apps`) e contiene tutti i contenuti e la configurazione.
 
 * `all` pacchetto contenitore che contiene i pacchetti secondari `ui.apps` e `ui.content`.
 

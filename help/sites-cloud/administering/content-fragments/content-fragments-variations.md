@@ -4,10 +4,10 @@ description: Scopri come le varianti consentono di creare contenuti per il framm
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '2306'
-ht-degree: 99%
+source-wordcount: '2308'
+ht-degree: 98%
 
 ---
 
@@ -307,7 +307,7 @@ Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; l
 
 >[!CAUTION]
 Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
-La formattazione della risorsa (ad es. per ridimensionarla) deve invece essere eseguita nell’[editor pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
+Tuttavia, la formattazione della risorsa (ad esempio, la dimensione) deve essere eseguita nel [editor di pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
 
 >[!NOTE]
 Esistono diversi metodi per aggiungere [immagini](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
@@ -343,7 +343,7 @@ Questa opzione è disponibile quando **Testo su più righe** è configurato con 
 
 >[!CAUTION]
 Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
-La formattazione della risorsa (ad es. per ridimensionarla) deve invece essere eseguita nell’[editor pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
+Tuttavia, la formattazione della risorsa (ad esempio, la dimensione) deve essere eseguita nel [editor di pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
 
 >[!NOTE]
 Esistono diversi metodi per aggiungere [immagini](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.

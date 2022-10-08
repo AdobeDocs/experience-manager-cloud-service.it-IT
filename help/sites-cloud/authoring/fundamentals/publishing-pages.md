@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Come pubblicare e annullare la pubblicazione di pagine con AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 97%
+source-wordcount: '1812'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Puoi anche pubblicare o annullare la pubblicazione di una pagina immediatamente 
    * Sinonimi di pubblicare/annullare la pubblicazione.
    * Questi termini sono stati utilizzati nelle versioni precedenti di AEM.
 * **Replicare/Replica**
-   * Questi sono i termini tecnici che descrivono lo spostamento di dati da un ambiente all’altro al momento di pubblicare una pagina, ad esempio: contenuto di una pagina, file, codice e commenti degli utenti.
+   * Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio, contenuto di una pagina, file, codice, commenti degli utenti) da un ambiente all’altro al momento della pubblicazione di una pagina.
    * Questi termini vengono utilizzati principalmente dagli sviluppatori.
 
 ## Pubblicazione delle pagine {#publishing-pages-1}

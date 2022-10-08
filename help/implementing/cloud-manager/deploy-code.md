@@ -2,9 +2,9 @@
 title: Implementazione del codice
 description: Scopri come distribuire il codice utilizzando le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: cb08fcbd6c1060466ca9e6b4639774d43b70c83c
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ Il processo di compilazione distribuisce il codice in tre fasi.
 
 La **Implementazione fase** fase. comporta questi passaggi.
 
-* **Convalida**  - Questo passaggio assicura che la pipeline sia configurata per l’utilizzo delle risorse attualmente disponibili. Ad esempio, verificare che il ramo configurato esista e che gli ambienti siano disponibili.
+* **Convalida**  - Questo passaggio assicura che la pipeline sia configurata per l’utilizzo delle risorse attualmente disponibili. ad esempio, verificare che il ramo configurato esista e che gli ambienti siano disponibili.
 * **Build &amp; Unit Testing** - Questo passaggio esegue un processo di compilazione containerizzato.
    * Vedi il documento [Dettagli dell’ambiente di generazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) per informazioni dettagliate sull’ambiente di creazione.
 * **Scansione del codice** - Questo passaggio valuta la qualità del codice dell&#39;applicazione.

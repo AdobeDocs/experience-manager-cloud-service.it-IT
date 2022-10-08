@@ -4,10 +4,10 @@ description: Scopri come risolvere i problemi più comuni relativi a MSM e ottie
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 100%
+source-wordcount: '760'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Conoscere queste proprietà può essere utile anche per eseguire query sull’ar
 
 Ecco alcune domande frequenti relative a MSM e Live Copy.
 
-### Perché alcune proprietà (ad esempio titolo, annotazioni) non vengono aggiornate durante un rollout di MSM? {#missing-properties}
+### Perché alcune proprietà (ad esempio, titolo, annotazioni) non vengono aggiornate durante un rollout di MSM? {#missing-properties}
 
 Le azioni di sincronizzazione MSM sono altamente configurabili. Quali proprietà o componenti vengono modificati durante il rollout dipendono direttamente dalle proprietà di tali configurazioni.
 
@@ -75,7 +75,7 @@ In alternativa, puoi effettuare le seguenti operazioni:
 
 ### Perché vedo le pagine Live Copy con il suffisso “_msm_moved“? {#moved-pages}
 
-Se viene eseguito il rollout di una pagina blueprint, la pagina Live Copy verrà aggiornata, oppure verrà creata una nuova pagina Live Copy, se non esiste ancora (ad esempio, quando ne viene eseguito il rollout per la prima volta, oppure la pagina Live Copy è stata eliminata manualmente).
+Se viene implementata una pagina blueprint, la pagina Live Copy verrà aggiornata o creata una nuova pagina Live Copy, se non esiste ancora (ad esempio, quando viene lanciata per la prima volta o la pagina Live Copy è stata eliminata manualmente).
 
 In quest’ultimo caso, tuttavia, se esiste una pagina senza una proprietà `cq:LiveRelationship` con lo stesso nome, la pagina verrà rinominata di conseguenza prima che venga creata la pagina Live Copy.
 

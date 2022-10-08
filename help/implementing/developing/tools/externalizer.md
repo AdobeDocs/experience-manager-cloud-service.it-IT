@@ -2,16 +2,16 @@
 title: Esternalizzazione degli URL
 description: L’esternalizzatore è un servizio OSGi che consente di trasformare programmaticamente un percorso di risorsa in un URL esterno e assoluto.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 28903c1cbadece9d0ef575cdc0f0d7fd32219538
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
 
 # Esternalizzazione degli URL {#externalizing-urls}
 
-In AEM, il **Esternalizzatore** è un servizio OSGi che consente di trasformare programmaticamente un percorso di risorsa (ad esempio `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) prefissando il percorso con un DNS preconfigurato.
+In AEM, il **Esternalizzatore** è un servizio OSGi che consente di trasformare programmaticamente un percorso di risorsa (ad esempio, `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) prefissando il percorso con un DNS preconfigurato.
 
 Poiché un’istanza AEM as a Cloud Service non può conoscere il proprio URL visibile esternamente e poiché a volte un collegamento deve essere creato al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare tali URL esterni e generarli.
 

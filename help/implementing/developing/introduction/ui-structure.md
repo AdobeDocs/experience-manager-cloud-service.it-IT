@@ -2,9 +2,9 @@
 title: Struttura dell’interfaccia AEM
 description: L’interfaccia utente AEM presenta diversi principi di base ed è composta da diversi elementi chiave
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '916'
 ht-degree: 4%
 
 ---
@@ -158,7 +158,7 @@ Il commutatore di livello è disponibile come un menu a discesa dalla barra degl
 
 ### Barra degli strumenti del componente {#component-toolbar}
 
-Ogni istanza di un componente mostra la relativa barra degli strumenti quando viene fatto clic su (una volta o con un doppio clic lento). La barra degli strumenti contiene le azioni specifiche (ad esempio copia, incolla, editor aperto) disponibili per l’istanza del componente sulla pagina.
+Ogni istanza di un componente mostra la relativa barra degli strumenti quando viene fatto clic su (una volta o con un doppio clic lento). La barra degli strumenti contiene le azioni specifiche (ad esempio, copia, incolla, editor aperto) disponibili per l’istanza del componente sulla pagina.
 
 A seconda dello spazio disponibile, le barre degli strumenti dei componenti sono posizionate nell’angolo superiore o inferiore destro del componente appropriato.
 

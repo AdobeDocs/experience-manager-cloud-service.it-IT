@@ -2,9 +2,9 @@
 title: Framework di assegnazione tag AEM
 description: Assegna tag ai contenuti e sfrutta l’infrastruttura di assegnazione tag AEM per organizzarli e suddividerli in categorie.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1570'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Per assegnare tag ai contenuti e sfruttare l’infrastruttura di assegnazione ta
 
 La dichiarazione di un tag viene acquisita nell’archivio in un nodo di tipo `cq:Tag.`
 
-* Un tag può essere una parola semplice (ad esempio `sky`) o rappresentano una tassonomia gerarchica (ad es. `fruit/apple`, che significa sia il frutto generico che la mela più specifica).
+* Un tag può essere una parola semplice (ad esempio, `sky`) o rappresentano una tassonomia gerarchica (ad esempio, `fruit/apple`, che significa sia il frutto generico che la mela più specifica).
 * I tag sono identificati da un `TagID`.
 * Un tag contiene metadati facoltativi, ad esempio un titolo, titoli localizzati e una descrizione. Il titolo deve essere visualizzato nelle interfacce utente anziché nel `TagID`, se presente.
 
@@ -64,7 +64,7 @@ In AEM, il percorso di base è `/content/cq:tags` e il nodo principale è di tip
 
 ### Spazio dei nomi tag {#tag-namespace}
 
-I namespace consentono di raggruppare gli elementi. Il caso d’uso più tipico è quello di avere uno spazio dei nomi per sito (ad esempio pubblico rispetto a interno) o per applicazione più grande (ad esempio Sites o Assets), ma i namespace possono essere utilizzati per varie altre esigenze. Nell’interfaccia utente i namespace vengono utilizzati per mostrare solo il sottoinsieme di tag (ovvero i tag di un determinato namespace) applicabile al contenuto corrente.
+I namespace consentono di raggruppare gli elementi. Il caso d’uso più tipico è quello di avere uno spazio dei nomi per sito (ad esempio pubblico o interno) o per applicazione più grande (ad esempio, Sites o Assets), ma i namespace possono essere utilizzati per varie altre esigenze. Nell’interfaccia utente i namespace vengono utilizzati per mostrare solo il sottoinsieme di tag (ovvero i tag di un determinato namespace) applicabile al contenuto corrente.
 
 Lo spazio dei nomi del tag è il primo livello della sottostruttura della tassonomia, che è il nodo immediatamente sotto la [nodo principale della tassonomia.](#taxonomy-root-node) Uno spazio dei nomi è un nodo di tipo `cq:Tag` il cui genitore non è un `cq:Tag` tipo di nodo.
 

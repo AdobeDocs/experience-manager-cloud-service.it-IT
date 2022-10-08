@@ -2,9 +2,9 @@
 title: Utilizzo di CRXDE Lite
 description: CRXDE Lite fa parte del quickstart AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: a9c646d24378e67df84c00a4355c692cac85e50b
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1694'
 ht-degree: 1%
 
 ---

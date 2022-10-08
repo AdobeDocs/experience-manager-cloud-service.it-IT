@@ -2,9 +2,9 @@
 title: Fondamenti tecnici AEM
 description: Una panoramica delle fondamenta tecniche di AEM, tra cui il modo in cui AEM è strutturato e tecnologie fondamentali come JCR, Sling e OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2191'
 ht-degree: 1%
 
 ---
@@ -123,8 +123,8 @@ Con Sling, è possibile specificare quale script esegue il rendering di una dete
 
 La richiesta è suddivisa ed estrae le informazioni necessarie. Nell’archivio viene eseguita la ricerca della risorsa richiesta (nodo di contenuto):
 
-* Il primo Sling controlla se un nodo esiste nella posizione specificata nella richiesta; ad esempio `../content/corporate/jobs/developer.html`
-* Se non viene trovato alcun nodo, l&#39;estensione viene eliminata e la ricerca viene ripetuta; ad esempio `../content/corporate/jobs/developer`
+* Il primo Sling controlla se un nodo esiste nella posizione specificata nella richiesta; ad esempio, `../content/corporate/jobs/developer.html`
+* Se non viene trovato alcun nodo, l&#39;estensione viene eliminata e la ricerca viene ripetuta; ad esempio, `../content/corporate/jobs/developer`
 * Se non viene trovato alcun nodo, Sling restituirà il codice http 404 (Non trovato).
 
 Sling consente anche di usare risorse diverse dai nodi JCR, ma questa è una funzione avanzata.
@@ -146,7 +146,7 @@ Tutti gli script Sling sono memorizzati in sottocartelle di `/apps` (modificabil
 
 Alcuni altri punti da sottolineare sono:
 
-* Quando il metodo (GET, POST) è obbligatorio, viene specificato in maiuscolo come in base alle specifiche HTTP, ad esempio `jobs.POST.esp`
+* Quando il metodo (GET, POST) è obbligatorio, viene specificato in maiuscolo come in base alle specifiche HTTP, ad esempio: `jobs.POST.esp`
 * Sono supportati diversi motori di script, ma gli script comuni consigliati sono HTL e JavaScript.
 
 L&#39;elenco dei motori di script supportati dalla data istanza di AEM è elencato nella console di gestione Felix ( `http://<host>:<port>/system/console/slingscripting`).
@@ -278,7 +278,7 @@ Questo consente di eseguire le seguenti azioni su uno qualsiasi dei pacchetti al
 * Aggiorna
 * Disinstalla
 * Vedi lo stato corrente
-* Accedi a informazioni più dettagliate (ad esempio nome simbolico, versione, posizione, ecc.) sui bundle specifici
+* Accedi a informazioni più dettagliate (ad esempio, nome simbolico, versione, posizione, ecc.) sui bundle specifici
 
 Vedi [Configurazione di OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) per ulteriori informazioni.
 

@@ -2,9 +2,9 @@
 title: Guida introduttiva a SPA in AEM con React
 description: Questo articolo presenta un esempio di applicazione SPA, spiega come viene assemblato e ti consente di iniziare a usare rapidamente il tuo SPA utilizzando il framework React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1144'
 ht-degree: 3%
 
 ---
@@ -140,7 +140,7 @@ Si tratta di un utilizzo standard di questa funzione, non univoco per questa app
 
 #### Istanza statica {#static-instantiation}
 
-Quando il componente viene istanziato staticamente utilizzando il modello di componente (ad esempio JSX), il valore deve essere passato dal modello alle proprietà del componente.
+Quando il componente viene istanziato staticamente utilizzando il modello di componente (ad esempio, JSX), il valore deve essere passato dal modello alle proprietà del componente.
 
 ### App.js {#app-js}
 
