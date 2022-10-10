@@ -2,12 +2,13 @@
 title: Utilizzo delle librerie lato client su AEM as a Cloud Service
 description: AEM fornisce Cartelle libreria lato client, che ti consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere distribuita al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2568'
 ht-degree: 1%
 
 ---
+
 
 # Utilizzo delle librerie lato client su AEM as a Cloud Service {#using-client-side-libraries}
 
@@ -55,7 +56,7 @@ Una cartella libreria lato client è un nodo del repository di tipo `cq:ClientLi
 
 Ogni `cq:ClientLibraryFolder` viene popolato con un set di file JS e/o CSS, insieme ad alcuni file di supporto (vedi di seguito). Proprietà importanti del `cq:ClientLibraryFolder` sono configurati come segue:
 
-* `allowProxy`: Poiché tutte le clientlib devono essere memorizzate in `apps`, questa proprietà consente l&#39;accesso alle clientlibrerie tramite il servlet proxy. Vedi [Individuazione di una cartella della libreria client e utilizzo del servlet delle librerie client proxy](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) sotto.
+* `allowProxy`: Poiché tutte le clientlib devono essere memorizzate in `apps`, questa proprietà consente l’accesso alle librerie client tramite il servlet proxy. Vedi la sezione [Individuazione di una cartella della libreria client e utilizzo del servlet delle librerie client proxy](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) sotto.
 * `categories`: Identifica le categorie in cui il set di file JS e/o CSS all’interno di questo `cq:ClientLibraryFolder` cadere. La `categories` , con più valori, consente a una cartella libreria di far parte di più di una categoria (consulta di seguito per informazioni su come ciò possa essere utile).
 
 Se la cartella della libreria client contiene uno o più file di origine che, in fase di runtime, vengono uniti in un singolo file JS e/o CSS. Il nome del file generato è il nome del nodo con il `.js` o `.css` estensione del nome file. Ad esempio, il nodo della libreria denominato `cq.jquery` restituisce il file generato denominato `cq.jquery.js` o `cq.jquery.css`.
@@ -87,7 +88,7 @@ Per le librerie client in `/apps` per essere accessibile, viene utilizzato un se
    * Tipo: booleano
    * Valore: `true`
 1. Per gestire le risorse statiche, crea una sottocartella denominata `resources` nella cartella della libreria client.
-   * Se si memorizzano risorse statiche nella cartella `resources`, non possono essere referenziati in un&#39;istanza di pubblicazione.
+   * Se si memorizzano risorse statiche in un punto qualsiasi diverso dalla cartella `resources`, non possono essere referenziati in un&#39;istanza di pubblicazione.
 1. Aggiungi i file di origine alla cartella della libreria.
    * Questa operazione viene in genere eseguita dal processo di compilazione front-end del [AEM Archetipo di progetto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * Se necessario, è possibile organizzare i file di origine in sottocartelle.
@@ -211,7 +212,7 @@ L&#39;incorporamento del codice è utile per fornire l&#39;accesso alle librerie
 
 #### Cartelle della libreria client specifiche per l’app {#app-specific-client-library-folders}
 
-È consigliabile mantenere tutti i file relativi all&#39;applicazione nella cartella dell&#39;applicazione sotto /apps. È inoltre consigliabile negare l’accesso alla cartella /apps ai visitatori del sito web. Per soddisfare entrambe le best practice, crea una cartella della libreria client sotto la cartella /etc che incorpora la libreria client sotto /apps.
+È consigliabile mantenere tutti i file relativi all’applicazione nella cartella dell’applicazione sottostante `/apps`. È inoltre consigliabile negare l’accesso ai visitatori del sito web `/apps` cartella. Per soddisfare entrambe le best practice, crea una cartella della libreria client sotto la `/etc` cartella che incorpora la libreria client riportata di seguito `/apps`.
 
 Utilizzare la proprietà categories per identificare la cartella della libreria client da incorporare. Per incorporare la libreria, aggiungi una proprietà all&#39;incorporamento `cq:ClientLibraryFolder` utilizzando i seguenti attributi di proprietà:
 
