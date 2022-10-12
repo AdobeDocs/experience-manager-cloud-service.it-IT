@@ -2,10 +2,10 @@
 title: Configurazione della segmentazione con ContextHub
 description: Scopri come configurare la segmentazione utilizzando ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ AEM ti consente di personalizzare facilmente le esperienze degli utenti. Consent
 
 La console [Tipi di pubblico](audiences.md) viene utilizzata sia per gestire i segmenti per ContextHub, sia i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub.
 
-Per accedere ai segmenti, nella navigazione globale seleziona **Navigazione > Personalizzazione > Tipi di pubblico**.
+Per accedere ai segmenti, nella navigazione globale seleziona **Navigazione > Personalizzazione > Tipi di pubblico**. Seleziona la configurazione (ad esempio, Sito WKND) per visualizzare i segmenti:
 
 ![Gestione tipi di pubblico](../assets/contexthub-segmentation-audiences.png)
 
@@ -86,7 +86,7 @@ Sono disponibili i seguenti riferimenti predefiniti per eseguire un collegamento
 
 Per definire il nuovo segmento:
 
-1. Dopo l’[accesso ai segmenti](#accessing-segments), [passa alla cartella](#organizing-segments) dove desideri creare il segmento o lascialo nella directory principale.
+1. Dopo [accesso ai segmenti](#accessing-segments), [passa alla cartella](#organizing-segments) dove desideri creare il segmento.
 
 1. Tocca o fai clic sul pulsante **Crea** e seleziona **Crea segmento ContextHub**.
 
