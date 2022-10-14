@@ -2,7 +2,7 @@
 title: Regole per la qualità del codice personalizzato
 description: Questa pagina descrive le regole di qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice di AEM Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: d7509556e4ae7a377498f2de2bae57f3557522ac
 workflow-type: tm+mt
 source-wordcount: '3493'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 >title="Regole per la qualità del codice personalizzato"
 >abstract="Questa pagina descrive le regole di qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice di AEM Engineering."
 
-Questa pagina descrive le regole per la qualità del codice personalizzato eseguite da Cloud Manager come parte di [test di qualità del codice.](/help/implementing/cloud-manager/code-quality-testing.md) Si basano sulle best practice di AEM Engineering.
+Questa pagina descrive le regole per la qualità del codice personalizzato eseguite da Cloud Manager come parte di [test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md). Si basano sulle best practice di AEM Engineering.
 
 >[!NOTE]
 >
