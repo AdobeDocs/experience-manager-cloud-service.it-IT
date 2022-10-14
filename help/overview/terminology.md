@@ -2,10 +2,10 @@
 title: Introduzione ad Adobe Experience Manager as a Cloud Service - Terminologia
 description: Introduzione ad Adobe Experience Manager as a Cloud Service - Terminologia.
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
-source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
+source-git-commit: aa55c2579f3a1361f263c7681eca8d3b4b7c963b
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 100%
+source-wordcount: '364'
+ht-degree: 90%
 
 ---
 
@@ -40,7 +40,7 @@ I termini seguenti sono utilizzati in riferimento ad Adobe Experience Manager (A
 | Immagine AEM | Artefatto distribuibile che contiene il codice prodotto AEM unitamente al codice cliente. |
 | Microservizi per le risorse | Servizi di elaborazione delle risorse digitali basati su cloud che si prestano a diversi casi d’uso per l’elaborazione di risorse, ad esempio generazione di rendering, elaborazioni di PDF, gestione delle risorse secondarie, estrazione del testo e così via. Per ulteriori informazioni, consulta [Panoramica sui microservizi per le risorse](/help/assets/asset-microservices-overview.md). |
 | Archivio Git di Cloud Manager | Archivio in cui sono memorizzati il codice e le impostazioni di configurazione dei clienti. |
-| Provider cloud | AEM as a Cloud Service supporta attualmente Azure. Il supporto di AWS è un elemento della roadmap. |
+| Provider cloud | AEM as a Cloud Service è in esecuzione su infrastrutture cloud pubbliche da più fornitori dietro la scena (come Microsoft Azure o Amazon Web Services) per fornire il servizio con lo SLA contrattuale. |
 | Rete per la distribuzione di contenuti (CDN) | AEM as Cloud Service viene fornito con una rete CDN predefinita. Il suo scopo principale è ridurre la latenza distribuendo contenuti memorizzabili nella cache dai nodi della CDN al perimetro, vicino al browser. È completamente gestita e configurata per garantire prestazioni ottimali alle applicazioni AEM. |
 | Archivio dei contenuti | Archivio in cui i contenuti vengono salvati in modo permanente. |
 | Isolamento Enterprise | Funzione per cui ogni istanza di AEM as a Cloud Service è isolata dalle altre istanze. |
