@@ -3,9 +3,9 @@ title: Dispatcher nel cloud
 description: Dispatcher nel cloud
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '998'
 ht-degree: 6%
 
 ---
@@ -56,6 +56,19 @@ Gli strumenti del dispatcher vengono utilizzati per convalidare ed eseguire il d
 
 Per ulteriori informazioni su come migrare dal modello di configurazione legacy a quello più flessibile, fornito con AEM archetipo 28 in poi, vedi [questa documentazione](/help/implementing/dispatcher/validation-debug.md#migrating).
 
+## Disposizione dei contenuti {#content-disposition}
+
+Per il livello di pubblicazione, l’impostazione predefinita per il servizio dei BLOB è come allegato. Questo può essere ignorato utilizzando lo standard [intestazione di disposizione dei contenuti](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) nel dispatcher.
+
+Di seguito è riportato un esempio di come dovrebbe essere la configurazione:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
+
 ## Moduli Apache supportati {#supported-directives}
 
 La tabella seguente mostra i moduli Apache supportati:
@@ -89,9 +102,9 @@ La tabella seguente mostra i moduli Apache supportati:
 | `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
 
 
-I clienti non possono aggiungere moduli arbitrari, tuttavia è possibile considerare moduli aggiuntivi da includere in futuro. I clienti possono trovare l’elenco delle direttive disponibili per una determinata versione di Dispatcher eseguendo il comando di inserire nell&#39;elenco Consentiti della convalida nell’SDK.
+I clienti non possono aggiungere moduli arbitrari, tuttavia è possibile considerare moduli aggiuntivi da includere in futuro. I clienti possono trovare l’elenco delle direttive disponibili per una determinata versione di Dispatcher eseguendo il comando di inserire nell&#39;elenco Consentiti convalida nell’SDK.
 
-Le direttive consentite nei file di configurazione di Apache possono essere elencate eseguendo il comando di inserire nell&#39;elenco Consentiti della convalida:
+Le direttive consentite nei file di configurazione Apache possono essere elencate eseguendo il comando di inserire nell&#39;elenco Consentiti della convalida:
 
 ```
 $ validator allowlist
