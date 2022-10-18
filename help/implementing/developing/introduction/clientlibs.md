@@ -2,9 +2,9 @@
 title: Utilizzo delle librerie lato client su AEM as a Cloud Service
 description: AEM fornisce Cartelle libreria lato client, che ti consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere distribuita al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
+source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2567'
 ht-degree: 1%
 
 ---
@@ -114,7 +114,7 @@ Una volta che la cartella della libreria client è [configurato come richiesto,]
 
 La `allowProxy` La proprietà ti consente di richiedere:
 
-* clientlib tramite j`/etc.clientlibs/myprojects/clientlibs/foo.js`
+* clientlib tramite `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * Immagine statica tramite `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
 
 ### Caricamento delle librerie client tramite HTL {#loading-via-htl}
