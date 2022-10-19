@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service su Unified Shell
 description: AEM as a Cloud Service su Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
+source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 100%
+source-wordcount: '370'
+ht-degree: 91%
 
 ---
 
@@ -30,14 +30,14 @@ Offre i seguenti vantaggi:
 * Semplicità di passaggio a un’altra organizzazione o applicazione
 * Documentazione del prodotto migliorata
 * Pulsante di feedback semplificato all’interno del prodotto per segnalare i problemi o condividere idee con Adobe
-* Accesso agli annunci e alle notifiche globali dei prodotti, oltre a notifiche specifiche di AEM as a Cloud Service
+* Accesso agli annunci e alle notifiche globali dei prodotti oltre a notifiche specifiche per AEM as a Cloud Service
 
 ## Disattivazione di Unified Shell {#disabling-unified-shell}
 
 La funzionalità Unified Shell è attivata in AEM as a Cloud Service per impostazione predefinita. Tuttavia, nel caso in cui l’intestazione superiore sia stata personalizzata, si consiglia di disabilitare Unified Shell per evitare problemi nelle personalizzazioni. Per disattivare Unified Shell, effettua le seguiti operazioni:
 
 >[!NOTE]
->La funzionalità Unified Shell può essere disabilitata solo da un account con autorizzazioni di livello amministratore.
+>La shell unificata può essere disabilitata solo da un account con privilegi amministrativi.
 
 1. Passa a **Strumenti > Cloud Services**.
 
@@ -49,7 +49,7 @@ La funzionalità Unified Shell è attivata in AEM as a Cloud Service per imposta
 
    ![immagine](/help/overview/assets/unifiedshell3.png)
 
-## Passare al tema scuro {#chaning-to-dark-theme}
+## Passare al tema scuro {#changing-to-dark-theme}
 
 Per passare al tema scuro, fai clic sull’icona del tuo profilo. Viene visualizzata una finestra a comparsa. Puoi utilizzare l’interruttore per passare al tema scuro di Unified Shell.
 
