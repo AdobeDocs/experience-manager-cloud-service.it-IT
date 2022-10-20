@@ -5,7 +5,7 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
 workflow-type: tm+mt
 source-wordcount: '1175'
-ht-degree: 17%
+ht-degree: 19%
 
 ---
 
@@ -73,16 +73,16 @@ I seguenti articoli descrivono in dettaglio i concetti di base dell’onboarding
 | # | Articolo | Descrizione | Pubblico |
 |---|---|---|---|
 | 0 | Percorso di onboarding | Questo documento | Amministratore di sistema |
-| 1 | [Preparazione all&#39;onboarding](preparation.md) | Prima dell&#39;inizio del processo di onboarding, è necessario che l&#39;amministratore di sistema comprenda una serie di passaggi preparatori prima di effettuare l&#39;accesso al sistema. | Amministratore di sistema |
-| 2 | [Terminologia as a Cloud Service AEM](terminology.md) | Prima di accedere ad AEMaaCS per la prima volta, è utile comprendere alcuni termini del sistema e la sua struttura di base. | Amministratore di sistema |
-| 3 | [L&#39;Admin Console](admin-console.md) | Scopri l’Admin Console, come effettuare l’accesso e come verificare il tuo profilo come amministratore di sistema. | Amministratore di sistema |
+| 1 | [Preparazione all’onboarding](preparation.md) | Prima dell&#39;inizio del processo di onboarding, è necessario che l&#39;amministratore di sistema comprenda una serie di passaggi preparatori prima di effettuare l&#39;accesso al sistema. | Amministratore di sistema |
+| 2 | [Terminologia di AEM as a Cloud Service](terminology.md) | Prima di accedere ad AEMaaCS per la prima volta, è utile comprendere alcuni termini del sistema e la sua struttura di base. | Amministratore di sistema |
+| 3 | [L’Admin Console](admin-console.md) | Scopri l’Admin Console, come effettuare l’accesso e come verificare il tuo profilo come amministratore di sistema. | Amministratore di sistema |
 | 4 | [Assegnazione dei profili di prodotto di Cloud Manager](assign-profiles-cloud-manager.md) | Esamina i profili di prodotto di Cloud Manager e scopri come assegnare i membri del team ai profili di prodotto di Cloud Manager. | Amministratore di sistema |
 | 5 | [Accesso a Cloud Manager](cloud-manager.md) | Scopri come accedere a Cloud Manager per configurare le risorse del progetto. | Amministratore di sistema |
 | 6 | [Creare un programma](create-program.md) | Scopri come creare un programma utilizzando Cloud Manager. | Amministratore di sistema |
 | 7 | [Creare ambienti](create-environments.md) | Scopri come creare un ambiente utilizzando Cloud Manager. | Amministratore di sistema |
 | 8 | [Assegnazione di profili di prodotto AEM](assign-profiles-aem.md) | Scopri come l’amministratore di sistema assegna i membri del team a AEM i profili di prodotto as a Cloud Service. | Amministratore di sistema |
-| 9 | [Attività di Developer Manager e Deployment Manager](developers.md) | Facoltativo - Scopri come, in qualità di sviluppatore, puoi accedere e gestire Cloud Manager Git e come configurare le pipeline e distribuire il codice in Cloud Manager in quanto gestore dell’implementazione. | Sviluppatori e gestori di distribuzione |
-| 10 | [Attività utente AEM](aem-users.md) | Facoltativo - Scopri come, in qualità di autore AEM, puoi accedere AEM’istanza as a Cloud Service e acquisire familiarità con i contenuti di authoring per AEM as a Cloud Service. | Utenti AEM |
+| 9 | [Attività del Responsabile degli sviluppatori e del Responsabile della distribuzione](developers.md) | Facoltativo - Scopri come, in qualità di sviluppatore, puoi accedere e gestire Cloud Manager Git e come configurare le pipeline e distribuire il codice in Cloud Manager in quanto gestore dell’implementazione. | Sviluppatori e gestori di distribuzione |
+| 10 | [Attività dell’utente di AEM](aem-users.md) | Facoltativo - Scopri come, in qualità di autore AEM, puoi accedere AEM’istanza as a Cloud Service e acquisire familiarità con i contenuti di authoring per AEM as a Cloud Service. | Utenti AEM |
 
 ## Novità {#what-is-next}
 
