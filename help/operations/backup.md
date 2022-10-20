@@ -2,10 +2,10 @@
 title: Ripristino del contenuto in AEM as a Cloud Service
 description: Scopri come ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando Cloud Manager.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
+source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 95%
+source-wordcount: '1259'
+ht-degree: 85%
 
 ---
 
@@ -36,12 +36,14 @@ Cloud Manager fornisce due tipi di backup dai quali è possibile ripristinare il
 * **Punto nel tempo (PIT):** questo tipo ripristina i backup continui del sistema delle ultime 24 ore dall’ora corrente.
 * **Ultima settimana:** questo tipo ripristina i backup del sistema degli ultimi sette giorni, escludendo le 24 ore precedenti.
 
-In entrambi i casi, la versione del codice personalizzato e la versione di AEM rimangono invariate.
+In entrambi i casi, la versione del codice personalizzato e la versione AEM rimangono invariate.
 
 Le metriche delle prestazioni per il ripristino dei contenuti in AEM as a ContentService fanno riferimento ai benchmark standardizzati:
 
 * **Obiettivo del tempo di ripristino (RTO):** l’obiettivo del tempo di ripristino varia a seconda delle dimensioni dell’archivio, ma in linea di massima, una volta iniziata la sequenza di ripristino, dovrebbe richiedere circa 30 minuti.
-* **Obiettivo del punto di ripristino (RPO):** l’obiettivo del punto di ripristino è un massimo di 24 ore
+* **RPO (Recovery Point Objective):** L&#39;obiettivo del punto di ripristino dipende da quanto tempo funziona l&#39;istanza:
+   * per le prime 24 ore di funzionamento: qualsiasi punto nel tempo durante queste 24 ore.
+   * dopo le prime 24 ore: un massimo di 12 ore per i sei giorni precedenti.
 
 >[!TIP]
 >
@@ -55,7 +57,7 @@ L’utilizzo del meccanismo di ripristino self-service è soggetto alle seguenti
 * È consentito un massimo di dieci ripristini riusciti in tutti gli ambienti in un programma per ogni mese di calendario.
 * Dopo la creazione dell’ambiente, sono necessarie sei ore prima che venga creato il primo snapshot di backup. Fino alla creazione dello snapshot, non è possibile eseguire alcun ripristino sull’ambiente.
 * Un’operazione di ripristino non viene avviata se per l’ambiente è in esecuzione una pipeline di configurazione full stack o a livello web.
-* Non è possibile avviare un ripristino se è già in esecuzione un altro ripristino nello stesso ambiente.
+* Impossibile avviare un ripristino se un altro ripristino è già in esecuzione nello stesso ambiente.
 * In rari casi, a causa del limite di 24 ore/sette giorni sui backup, il backup selezionato potrebbe non essere disponibile a causa di un ritardo tra la selezione e l’avvio del ripristino.
 * I dati provenienti da ambienti eliminati vengono persi in modo permanente e non possono essere recuperati.
 
@@ -112,7 +114,7 @@ Dopo il corretto ripristino:
 
 ## Scelta del backup corretto {#choosing-backup}
 
-I ripristini provvedono unicamente a ripristinare il contenuto in AEM. Per questo motivo, è necessario considerare attentamente le modifiche del codice apportate tra il punto di ripristino desiderato e l’ora corrente, verificando la cronologia impegno tra l’ID impegno corrente e quello sul quale viene effettuato il ripristino.
+I ripristini provvedono unicamente a ripristinare il contenuto in AEM. Per questo motivo, è necessario considerare attentamente le modifiche del codice apportate tra il punto di ripristino desiderato e l&#39;ora corrente esaminando la cronologia del commit tra l&#39;ID commit corrente e quello ripristinato in.
 
 Sono possibili diversi scenari.
 
