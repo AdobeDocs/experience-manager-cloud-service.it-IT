@@ -2,9 +2,9 @@
 title: Ripristino del contenuto in AEM as a Cloud Service
 description: Scopri come ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando Cloud Manager.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
+source-git-commit: a32b8d94be8119854e21fc89456474ac554082a3
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1262'
 ht-degree: 85%
 
 ---
@@ -41,7 +41,7 @@ In entrambi i casi, la versione del codice personalizzato e la versione AEM rima
 Le metriche delle prestazioni per il ripristino dei contenuti in AEM as a ContentService fanno riferimento ai benchmark standardizzati:
 
 * **Obiettivo del tempo di ripristino (RTO):** l’obiettivo del tempo di ripristino varia a seconda delle dimensioni dell’archivio, ma in linea di massima, una volta iniziata la sequenza di ripristino, dovrebbe richiedere circa 30 minuti.
-* **RPO (Recovery Point Objective):** L&#39;obiettivo del punto di ripristino dipende da quanto tempo funziona l&#39;istanza:
+* **RPO (Recovery Point Objective):** L&#39;obiettivo del punto di ripristino dipende da quanto tempo in passato il tempo di ripristino selezionato è:
    * per le prime 24 ore di funzionamento: qualsiasi punto nel tempo durante queste 24 ore.
    * dopo le prime 24 ore: un massimo di 12 ore per i sei giorni precedenti.
 
