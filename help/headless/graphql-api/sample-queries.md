@@ -3,10 +3,10 @@ title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
+source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 99%
+source-wordcount: '1456'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Per assistenza, consulta:
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
->title="Utilizzo di GraphQL"
+>title="Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query"
 >abstract="Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio."
 
 ## GraphQL: query di esempio con l’utilizzo della struttura dei frammenti di contenuto di esempio {#graphql-sample-queries-sample-content-fragment-structure}

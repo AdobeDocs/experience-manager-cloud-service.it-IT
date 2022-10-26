@@ -4,9 +4,9 @@ description: Scopri come le varianti consentono di creare contenuti per il framm
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
+source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2310'
 ht-degree: 98%
 
 ---
@@ -372,7 +372,7 @@ Esistono diversi metodi per aggiungere [immagini](/help/sites-cloud/administerin
 
 [!CONTEXTUALHELP]
 id="aemcloud_sites_contentfragments_variations"
-title="Gestione delle varianti"
+title="Varianti - Authoring dei contenuti di frammenti "
 abstract="Scopri come creare varianti di contenuto da utilizzare con canali specifici."
 additional-url="https://video.tv.adobe.com/v/333295" text="Varianti dei frammenti di contenuto"
 
