@@ -2,10 +2,10 @@
 title: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 98b81d918d60722ddb3f1c7736bc5b3506e05f6f
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 21%
+source-wordcount: '1597'
+ht-degree: 19%
 
 ---
 
@@ -26,13 +26,11 @@ ht-degree: 21%
 * Miglioramento dell’esperienza utente grazie a stati di caricamento, protezioni e gestione degli errori più efficienti
 * I registri di acquisizione vengono mantenuti e sono sempre disponibili per la risoluzione dei problemi
 
-Per iniziare a utilizzare la nuova versione (v2.0.10), dovrai disinstallare le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti). Questo è necessario perché la nuova versione è dotata di un grande cambiamento architettonico. Con la versione v2.0.10, dovrai creare nuovi set di migrazione ed eseguire nuovamente l’estrazione e l’acquisizione sui nuovi set di migrazione. Se una migrazione è già in corso, puoi continuare a utilizzare la versione precedente di CTT fino al completamento della migrazione.
+Per iniziare a utilizzare la nuova versione è necessario disinstallare le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti). Questo è necessario perché la nuova versione è dotata di un grande cambiamento architettonico. Con la versione v2.0.10, dovrai creare nuovi set di migrazione ed eseguire nuovamente l’estrazione e l’acquisizione sui nuovi set di migrazione. Se una migrazione è già in corso, puoi continuare a utilizzare la versione precedente di CTT fino al completamento della migrazione.
 
 Le seguenti linee guida e best practice si applicano alla nuova versione dello strumento Content Transfer (Trasferimento contenuti):
 
 * È consigliabile eseguire la [pulizia delle revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e i [controlli di coerenza dell’archivio dati](https://helpx.adobe.com/it/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) nell’archivio **sorgente** per identificare potenziali problemi e ridurre le dimensioni dell’archivio.
-
-* Se la rete CDN (Content Delivery Network) di authoring di AEM Cloud è configurata per disporre di un elenco di indirizzi IP consentiti, è necessario assicurarsi che anche gli IP dell’ambiente sorgente vengano aggiunti all’elenco Consentiti in modo che l’ambiente sorgente e l’ambiente AEM Cloud possano comunicare tra loro.
 
 * Nella fase di acquisizione, si consiglia di eseguire l’acquisizione con la modalità *Cancella* abilitata, affinché l’archivio esistente (di authoring o pubblicazione) nell’ambiente di destinazione AEM Cloud Service venga completamente eliminato e quindi aggiornato con i dati del set di migrazione. Questa modalità è molto più veloce della modalità in cui la cancellazione è disattivata e il set di migrazione viene applicato sul contenuto corrente.
 
@@ -60,11 +58,11 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Se utilizzi un *Ambiente sandbox*, assicurati che l’ambiente sia aggiornato alla versione più recente. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
 
-* Per utilizzare lo strumento Content Transfer (Trasferimento contenuti), devi essere un utente amministratore nell’istanza sorgente e appartenere al AEM locale **amministratori** nell’istanza di Cloud Service a cui stai trasferendo il contenuto. Gli utenti non privilegiati non potranno avviare l’acquisizione.
+* Per avviare un&#39;acquisizione, devi appartenere al AEM locale **amministratori** nell’istanza di Cloud Service a cui stai trasferendo il contenuto. Gli utenti con privilegi non potranno avviare le acquisizioni senza fornire manualmente il token di migrazione.
 
 * Se l’impostazione **Cancella il contenuto esistente sull’istanza Cloud prima dell’acquisizione** viene abilitata, elimina l’intero archivio esistente e crea un nuovo archivio in cui inserire il contenuto. Questo significa che reimposta tutte le impostazioni, comprese le autorizzazioni sull&#39;istanza del Cloud Service di destinazione. Questo vale anche per un utente amministratore aggiunto al **amministratori** gruppo. L’utente deve essere aggiunto nuovamente al **amministratori** per recuperare il token di accesso per lo strumento Content Transfer (Trasferimento contenuti).
 
-* Lo strumento Content Transfer (Trasferimento contenuti) non supporta l’unione di contenuti da più sorgenti all’interno dell’istanza del Cloud Service di destinazione se il contenuto dalle due sorgenti viene spostato negli stessi percorsi sul target. Per spostare il contenuto da più sorgenti a un’unica istanza di Cloud Service di destinazione, è necessario assicurarsi che non vi sia sovrapposizione dei percorsi di contenuto dalle sorgenti.
+* I movimenti non supportano l’unione di contenuto da più sorgenti nell’istanza del Cloud Service di destinazione se il contenuto dalle due sorgenti viene spostato negli stessi percorsi sul target. Per spostare il contenuto da più sorgenti a un’unica istanza di Cloud Service di destinazione, è necessario assicurarsi che non vi sia sovrapposizione dei percorsi di contenuto dalle sorgenti.
 
 * La chiave di estrazione è valida per 14 giorni dal momento in cui è stata creata/rinnovata. Può essere rinnovato in qualsiasi momento. Se la chiave di estrazione è scaduta, non potrai eseguire un’estrazione.
 

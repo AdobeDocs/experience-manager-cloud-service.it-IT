@@ -2,9 +2,9 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 501441717f541439ac8d914f1e419491399e6667
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1292'
 ht-degree: 9%
 
 ---
@@ -34,16 +34,8 @@ Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato co
 
 L’istanza di origine AEM può essere in esecuzione dietro un firewall in cui può raggiungere solo alcuni host aggiunti a un Elenco consentiti. Per eseguire correttamente un’estrazione, i seguenti endpoint devono essere accessibili dall’istanza in esecuzione AEM:
 
-* Il target AEM ambiente as a Cloud Service: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 * Servizio di archiviazione BLOB di Azure: `casstorageprod.blob.core.windows.net`
 * Endpoint I/O di mappatura utente: `usermanagement.adobe.io`
-
-Per testare la connettività all&#39;ambiente di destinazione AEM as a Cloud Service, esegui il seguente comando cURL dalla shell dell&#39;istanza di origine (sostituisci `program_id`, `environment_id`e `migration_token`):
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
->[!NOTE]
->Se `HTTP/2 200` è stata ricevuta una connessione a AEM as a Cloud Service.
 
 ### Abilita registrazione SSL {#enable-ssl-logging}
 
@@ -111,7 +103,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
 Per popolare il set di migrazione creato in Cloud Acceleration Manager, devi installare la versione più recente dello strumento Content Transfer (Trasferimento contenuti) sull’istanza Adobe Experience Manager (AEM) sorgente. Leggi questa sezione per scoprire come compilare il set di migrazione.
 
-1. Dopo aver installato la versione più recente (v2.0.10) dello strumento Content Transfer (Trasferimento contenuti) sull’istanza Adobe Experience Manager sorgente, vai a **Operazioni - Migrazione dei contenuti**
+1. Dopo aver installato la versione più recente dello strumento Content Transfer (Trasferimento contenuti) sull’istanza Adobe Experience Manager sorgente, vai a **Operazioni - Migrazione dei contenuti**
 
 1. Fai clic su **Crea set di migrazione**
 

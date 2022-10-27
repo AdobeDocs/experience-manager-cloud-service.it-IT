@@ -2,10 +2,10 @@
 title: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
 description: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 3bf12642e94076a67010e4701715a54138a490ee
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 43%
+source-wordcount: '629'
+ht-degree: 44%
 
 ---
 
@@ -36,7 +36,7 @@ Questo strumento trasferisce automaticamente anche entità principali (utenti o 
 * Miglioramento dell’esperienza utente grazie a stati di caricamento, protezioni e gestione degli errori più efficienti
 * I registri di acquisizione vengono mantenuti e sono sempre disponibili per la risoluzione dei problemi
 
-Per iniziare a utilizzare la nuova versione (v2.0.10) <!-- update when version is available --> sarà necessario disinstallare le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti) perché lo strumento ha subito una modifica importante dell’architettura.
+Per iniziare a utilizzare la nuova versione, è necessario disinstallare le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti), in quanto lo strumento conteneva un importante cambiamento architetturale.
 
 >[!NOTE]
 >
