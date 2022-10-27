@@ -2,9 +2,9 @@
 title: Riferimento predicato di Query Builder
 description: Riferimento predicato per l’API di Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
 workflow-type: tm+mt
-source-wordcount: '2221'
+source-wordcount: '2268'
 ht-degree: 2%
 
 ---
@@ -244,10 +244,12 @@ Non supporta l’estrazione dei facet.
 * **`path`** - Definisce il pattern del percorso.
    * A seconda del `exact` l&#39;intera sottostruttura corrisponderà (come l&#39;aggiunta `//*` in xpath, ma nota che questo non include il percorso di base) o solo una corrispondenza esatta del percorso, che può includere caratteri jolly (`*`).
       * Impostazione predefinita `true`
-   * Se la `self`viene impostata e viene eseguita la ricerca dell&#39;intero sottoalbero, incluso il nodo base.
+
+<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`** - se `exact` è `true`, il percorso esatto deve corrispondere, ma può contenere caratteri jolly semplici (`*`), che corrispondono ai nomi, ma non `/`; se `false` (impostazione predefinita) sono inclusi tutti i discendenti (facoltativo)
 * **`flat`** - cerca solo gli elementi figlio diretti (come aggiungere `/*` in xpath) (utilizzato solo se `exact` non è true, facoltativo)
-* **`self`** - esegue la ricerca nella sottostruttura ma include il nodo di base specificato come percorso (nessun carattere jolly)
+* **`self`** - esegue la ricerca nella sottostruttura ma include il nodo di base specificato come percorso (nessun carattere jolly).
+   * *Nota importante*: È stato identificato un problema con `self` la proprietà nell&#39;implementazione corrente di querybuilder e il suo utilizzo nelle query potrebbero non produrre risultati di ricerca corretti. Modifica dell&#39;attuale attuazione `self` non è inoltre possibile poiché potrebbe interrompere le applicazioni esistenti che si basano su di essa. Per questo motivo, `self` Questa proprietà è stata dichiarata obsoleta ed è consigliabile evitare di utilizzarla.
 
 ### proprietà {#property}
 
