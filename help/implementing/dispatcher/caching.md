@@ -3,25 +3,25 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Memorizzazione in cache in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 42c1d4fcfef4487aca6225821c16304ccf4deb04
+source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2580'
 ht-degree: 1%
 
 ---
 
 # Introduzione {#intro}
 
-Il traffico passa attraverso la CDN a un livello di server web Apache, che supporta moduli incluso il dispatcher. Per migliorare le prestazioni, il dispatcher viene utilizzato principalmente come cache per limitare l’elaborazione sui nodi di pubblicazione.
-Le regole possono essere applicate alla configurazione del dispatcher per modificare eventuali impostazioni di scadenza della cache predefinite, con conseguente memorizzazione in cache nella CDN. Tieni presente che il dispatcher rispetta anche le intestazioni di scadenza della cache risultanti se `enableTTL` è abilitato nella configurazione del dispatcher, il che implica che aggiornerà contenuti specifici anche al di fuori del contenuto che viene ripubblicato.
+Il traffico passa attraverso la rete CDN a un livello di server web Apache, che supporta moduli tra cui Dispatcher. Per migliorare le prestazioni, Dispatcher viene utilizzato principalmente come cache per limitare l’elaborazione sui nodi di pubblicazione.
+È possibile applicare regole alla configurazione del Dispatcher per modificare eventuali impostazioni di scadenza della cache predefinite, con conseguente memorizzazione in cache nella rete CDN. Tieni presente che Dispatcher rispetta anche le intestazioni di scadenza della cache risultanti se `enableTTL` è abilitato nella configurazione di Dispatcher e aggiornerà contenuti specifici anche al di fuori del contenuto ripubblicato.
 
-Questa pagina descrive anche come la cache del dispatcher viene invalidata, nonché come funziona la memorizzazione in cache a livello di browser per quanto riguarda le librerie lato client.
+Questa pagina descrive anche come la cache di Dispatcher viene invalidata e come funziona la memorizzazione in cache a livello di browser per quanto riguarda le librerie lato client.
 
 ## Memorizzazione in cache {#caching}
 
 ### HTML/Testo {#html-text}
 
-* per impostazione predefinita, è stata memorizzata nella cache dal browser per cinque minuti, in base alla `cache-control` intestazione emessa dal livello apache. Anche la CDN rispetta questo valore.
+* per impostazione predefinita, è stata memorizzata nella cache dal browser per cinque minuti, in base alla `cache-control` intestazione emessa dal livello Apache. Anche la CDN rispetta questo valore.
 * l’impostazione predefinita per la memorizzazione in cache di HTML/Text può essere disabilitata definendo `DISABLE_DEFAULT_CACHING` variabile in `global.vars`:
 
 ```
@@ -31,7 +31,7 @@ Define DISABLE_DEFAULT_CACHING
 Ciò può essere utile, ad esempio, quando la logica di business richiede una regolazione precisa dell’intestazione di pagina (con un valore basato sul giorno del calendario), in quanto per impostazione predefinita l’intestazione di pagina è impostata su 0. Detto questo, **prestare attenzione quando si disattiva la memorizzazione in cache predefinita.**
 
 * può essere ignorato per tutto il contenuto di HTML/Testo definendo la variabile `EXPIRATION_TIME` variabile in `global.vars` mediante gli strumenti AEM SDK Dispatcher.
-* possono essere ignorati a un livello più granulare, incluso il controllo della CDN e della cache del browser in modo indipendente, con le seguenti direttive mod_headers di apache:
+* può essere sostituito a un livello di grana più preciso, compreso il controllo della CDN e della cache del browser in modo indipendente, con i seguenti Apache `mod_headers` direttive:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -44,7 +44,7 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
    >[!NOTE]
    >L&#39;intestazione Surrogate-Control si applica alla rete CDN gestita da Adobe. Se utilizzi un [CDN gestito dal cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), potrebbe essere necessaria un’intestazione diversa a seconda del provider CDN.
 
-   Fai attenzione quando imposti le intestazioni di controllo cache globale o quelle che corrispondono a un’area estesa in modo che non vengano applicate al contenuto che potresti voler mantenere privato. Valuta l’utilizzo di più direttive per garantire che le regole vengano applicate in modo dettagliato. Detto questo, AEM as a Cloud Service rimuoverà l’intestazione della cache se rileva che è stata applicata a ciò che rileva di non essere memorizzabile nella cache dal dispatcher, come descritto nella documentazione del dispatcher. Per forzare AEM ad applicare sempre le intestazioni di memorizzazione in cache, è possibile aggiungere il **sempre** come segue:
+   Fai attenzione quando imposti intestazioni di controllo cache globale o quelle che corrispondono a un’ampia regex in modo che non vengano applicate al contenuto che devi mantenere privato. Valuta l’utilizzo di più direttive per garantire che le regole vengano applicate in modo dettagliato. Detto questo, AEM as a Cloud Service rimuoverà l’intestazione della cache se rileva che è stata applicata a ciò che rileva come non possa essere memorizzata nella cache da Dispatcher, come descritto nella documentazione di Dispatcher. Per forzare AEM ad applicare sempre le intestazioni di memorizzazione in cache, è possibile aggiungere il **sempre** come segue:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -76,7 +76,7 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
    >Gli altri metodi, compresi i [Progetto ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), non sovrascriverà correttamente i valori.
 
    >[!NOTE]
-   >Tieni presente che il dispatcher potrebbe comunque memorizzare in cache il contenuto in base alla propria [regole di cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Per rendere il contenuto davvero privato, assicurati che non sia memorizzato nella cache dal dispatcher.
+   >Tieni presente che Dispatcher potrebbe comunque memorizzare in cache il contenuto in base alla propria [regole di cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Per rendere il contenuto davvero privato, è necessario assicurarsi che non sia memorizzato nella cache da Dispatcher.
 
 ### Librerie lato client (js, css) {#client-side-libraries}
 
@@ -87,7 +87,7 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
 
 Il comportamento predefinito per i programmi creati dopo la metà di maggio 2022 (in particolare, per gli ID di programma superiori a 65000) è quello di memorizzare in cache per impostazione predefinita, nel rispetto anche del contesto di autenticazione della richiesta. I programmi precedenti (ID programma uguale o inferiore a 65000) non memorizzano in cache il contenuto BLOB per impostazione predefinita.
 
-In entrambi i casi, le intestazioni di memorizzazione in cache possono essere sostituite a un livello più granulare a livello di apache/dispatcher utilizzando l’apache `mod_headers` direttive, ad esempio:
+In entrambi i casi, le intestazioni di memorizzazione in cache possono essere sostituite a un livello più granulare nel livello Apache/Dispatcher utilizzando l’ `mod_headers` direttive, ad esempio:
 
 ```
    <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -96,11 +96,11 @@ In entrambi i casi, le intestazioni di memorizzazione in cache possono essere so
    </LocationMatch>
 ```
 
-Quando modifichi le intestazioni di memorizzazione in cache al livello del dispatcher, presta attenzione a non memorizzare in cache troppo ampiamente, consulta la discussione nella sezione HTML/testo [sopra](#html-text). Inoltre, assicurati che le risorse destinate a essere mantenute private (anziché memorizzate nella cache) non facciano parte del `LocationMatch` filtri di direttiva.
+Quando modifichi le intestazioni di memorizzazione in cache a livello di Dispatcher, presta attenzione a non memorizzare in cache troppo ampiamente, consulta la discussione nella sezione HTML/testo [sopra](#html-text). Inoltre, assicurati che le risorse destinate a essere mantenute private (anziché memorizzate nella cache) non facciano parte del `LocationMatch` filtri di direttiva.
 
 #### Nuovo comportamento predefinito di memorizzazione in cache {#new-caching-behavior}
 
-Il livello AEM imposterà le intestazioni della cache a seconda che l’intestazione della cache sia già stata impostata e il valore del tipo di richiesta. Tieni presente che se non è stata impostata alcuna intestazione di controllo cache, il contenuto pubblico viene memorizzato nella cache e il traffico autenticato è impostato su privato. Se è stata impostata un’intestazione di controllo cache, le intestazioni della cache non verranno toccate.
+Il livello AEM imposterà le intestazioni della cache a seconda che l’intestazione della cache sia già stata impostata e il valore del tipo di richiesta. Tieni presente che se non è stata impostata alcuna intestazione di controllo cache, il contenuto pubblico viene memorizzato nella cache e il traffico autenticato è impostato su privato. Se è stata impostata un’intestazione di controllo cache, le intestazioni della cache vengono lasciate intatte.
 
 | L&#39;intestazione di controllo cache esiste? | Tipo di richiesta | AEM imposta le intestazioni di cache su |
 |------------------------------|---------------|------------------------------------------------|
@@ -128,7 +128,7 @@ Per impostazione predefinita, il livello AEM non memorizza in cache il contenuto
 
 ### Ulteriori ottimizzazioni {#further-optimizations}
 
-* Evitare di utilizzare `User-Agent` come parte del `Vary` intestazione. Le versioni precedenti dell’impostazione predefinita del dispatcher (prima dell’archetipo versione 28) includevano questo e ti consigliamo di rimuoverlo utilizzando i passaggi seguenti.
+* Evitare di utilizzare `User-Agent` come parte del `Vary` intestazione. Le versioni precedenti dell’impostazione predefinita di Dispatcher (prima dell’archetipo versione 28) includevano questo elemento e consigliamo di rimuoverlo utilizzando i passaggi seguenti.
    * Individua i file vhost in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
    * Rimuovi o commenta la riga: `Header append Vary User-Agent env=!dont-vary` da tutti i file vhost, ad eccezione di default.vhost, che è di sola lettura
 * Utilizza la `Surrogate-Control` intestazione per controllare la memorizzazione in cache CDN indipendente dalla memorizzazione in cache del browser
@@ -195,21 +195,21 @@ Per impostazione predefinita, il livello AEM non memorizza in cache il contenuto
 
 ### Comportamento della richiesta di HEAD {#request-behavior}
 
-Quando viene ricevuta una richiesta di HEAD al CDN di Adobe per una risorsa che è **not** memorizzato in cache, la richiesta viene trasformata e ricevuta dal dispatcher e/o dall’istanza AEM come richiesta GET. Se la risposta è memorizzabile nella cache, le richieste successive di HEAD verranno servite dalla CDN. Se la risposta non è memorizzabile in cache, le richieste successive di HEAD verranno trasmesse al dispatcher e/o all’istanza AEM per un periodo di tempo che dipende dal `Cache-Control` TTL.
+Quando viene ricevuta una richiesta di HEAD al CDN di Adobe per una risorsa che è **not** memorizzata nella cache, la richiesta viene trasformata e ricevuta dal Dispatcher e/o dall’istanza AEM come richiesta di GET. Se la risposta è memorizzabile nella cache, le richieste successive di HEAD verranno servite dalla rete CDN. Se la risposta non è memorizzabile in cache, le richieste successive di HEAD verranno trasmesse all’istanza di Dispatcher e/o AEM per un periodo di tempo che dipende dal `Cache-Control` TTL.
 
 ## Annullamento della validità della cache del dispatcher {#disp}
 
-In generale, non sarà necessario annullare la validità della cache del dispatcher. Al contrario, dovresti affidarti all’aggiornamento della cache del dispatcher quando il contenuto viene ripubblicato e la CDN che rispetta le intestazioni di scadenza della cache.
+In generale, non sarà necessario annullare la validità della cache del Dispatcher. Dovresti invece affidarti all’aggiornamento della cache da parte di Dispatcher quando il contenuto viene ripubblicato e la CDN che rispetta le intestazioni di scadenza della cache.
 
 ### Annullamento della validità della cache del dispatcher durante l’attivazione/disattivazione {#cache-activation-deactivation}
 
-Come nelle versioni precedenti di AEM, la pubblicazione o l’annullamento della pubblicazione di pagine cancella il contenuto dalla cache del dispatcher. Se si sospetta un problema di caching, i clienti devono ripubblicare le pagine in questione e assicurarsi che sia disponibile un host virtuale che corrisponda a ServerAlias localhost, richiesto per l’annullamento della validità della cache del dispatcher.
+Come nelle versioni precedenti di AEM, la pubblicazione o l’annullamento della pubblicazione di pagine cancella il contenuto dalla cache di Dispatcher. Se si sospetta un problema di caching, i clienti devono ripubblicare le pagine in questione e assicurarsi che sia disponibile un host virtuale che corrisponda al `ServerAlias` localhost, necessario per l’annullamento della validità della cache del Dispatcher.
 
-Quando l’istanza di pubblicazione riceve una nuova versione di una pagina o di una risorsa dall’autore, utilizza l’agente di eliminazione per annullare la validità dei percorsi appropriati sul proprio dispatcher. Il percorso aggiornato viene rimosso dalla cache del dispatcher, insieme ai relativi genitori, fino a un livello (puoi configurarlo con il [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
+Quando l’istanza di pubblicazione riceve una nuova versione di una pagina o di una risorsa dall’autore, utilizza l’agente di eliminazione per annullare la validità dei percorsi appropriati sul suo Dispatcher. Il percorso aggiornato viene rimosso dalla cache di Dispatcher, insieme ai relativi elementi principali, fino a un livello (puoi configurarlo con il [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
-## Annullamento esplicito della validità della cache del dispatcher {#explicit-invalidation}
+## Annullamento esplicito della validità della cache del Dispatcher {#explicit-invalidation}
 
-L’Adobe consiglia di basarsi su intestazioni di cache standard per controllare il ciclo di vita della distribuzione dei contenuti. Tuttavia, se necessario, è possibile annullare la validità del contenuto direttamente nel dispatcher.
+L’Adobe consiglia di basarsi su intestazioni di cache standard per controllare il ciclo di vita della distribuzione dei contenuti. Tuttavia, se necessario, è possibile annullare la validità del contenuto direttamente in Dispatcher.
 
 Il seguente elenco contiene scenari in cui si potrebbe voler annullare esplicitamente la validità della cache (ascoltando facoltativamente il completamento dell’annullamento della validità):
 
@@ -219,7 +219,7 @@ Il seguente elenco contiene scenari in cui si potrebbe voler annullare esplicita
 Esistono due approcci per annullare esplicitamente la validità della cache:
 
 * L’approccio preferito è l’utilizzo di Sling Content Distribution (SCD) dall’autore.
-* Utilizzando l’API di replica per richiamare l’agente di replica dello scaricamento del dispatcher di pubblicazione.
+* Utilizzando l’API di replica per richiamare l’agente di replica di svuotamento del dispatcher di pubblicazione.
 
 Gli approcci differiscono in termini di disponibilità del livello, capacità di deduplicare eventi e garanzia di elaborazione degli eventi. La tabella seguente riassume queste opzioni:
 
@@ -297,11 +297,11 @@ Le due azioni direttamente collegate all’annullamento della validità della ca
 
 Inoltre, dal tavolo osserviamo che:
 
-* L’API SCD è necessaria quando ogni evento deve essere garantito, ad esempio, la sincronizzazione con un sistema esterno che richiede una conoscenza accurata. Se al momento dell’annullamento della validità della chiamata è presente un evento di upscaling del livello di pubblicazione, viene generato un evento aggiuntivo quando ogni nuova pubblicazione elabora l’annullamento della validità.
+* L’API SCD è necessaria quando ogni evento deve essere garantito, ad esempio, la sincronizzazione con un sistema esterno che richiede una conoscenza accurata. Se al momento della chiamata di annullamento della validità è presente un evento di upscaling del livello di pubblicazione, viene generato un evento aggiuntivo quando ogni nuova pubblicazione elabora l’annullamento della validità.
 
 * L’utilizzo dell’API di replica non è un caso d’uso comune, ma deve essere utilizzato nei casi in cui il trigger per annullare la validità della cache proviene dal livello di pubblicazione e non dal livello di authoring. Questo potrebbe essere utile se il TTL del dispatcher è configurato.
 
-In conclusione, se desideri annullare la validità della cache del dispatcher, l’opzione consigliata è quella di utilizzare l’azione Annulla validità API SCD da Author. Inoltre, puoi anche ascoltare l’evento in modo da poter attivare ulteriori azioni a valle.
+In conclusione, se desideri annullare la validità della cache del Dispatcher, l’opzione consigliata è quella di utilizzare l’azione Annulla validità API SCD da Author. Inoltre, puoi anche ascoltare l’evento in modo da poter attivare ulteriori azioni a valle.
 
 ### Distribuzione di contenuti Sling (SCD) {#sling-distribution}
 
@@ -324,7 +324,7 @@ DistributionRequest distributionRequest = new SimpleDistributionRequest(Distribu
 distributor.distribute(agentName, resolver, distributionRequest);
 ```
 
-* (Facoltativo) Ascolta un evento che riflette la risorsa invalidata per tutte le istanze del dispatcher:
+* (Facoltativo) Ascolta un evento che riflette la risorsa invalidata per tutte le istanze di Dispatcher:
 
 
 ```
@@ -383,15 +383,15 @@ public class InvalidatedHandler implements EventHandler {
 
 >[!NOTE]
 >
->L’Adobe CDN non viene scaricato quando il dispatcher viene invalidato. La rete CDN gestita da Adobe rispetta i TTL e non è quindi necessario scaricarla.
+>La rete CDN Adobe non viene scaricata quando Dispatcher viene invalidato. La rete CDN gestita da Adobe rispetta i TTL e non è quindi necessario scaricarla.
 
 ### API di replica {#replication-api}
 
 Di seguito è riportato il pattern di implementazione quando si utilizza l’azione di disattivazione API di replica:
 
-1. Sul livello di pubblicazione, chiama l’API di replica per attivare l’agente di replica dello scaricamento del dispatcher di pubblicazione.
+1. Sul livello di pubblicazione, chiama l’API di replica per attivare l’agente di replica di svuotamento del dispatcher di pubblicazione.
 
-L’endpoint dell’agente di scaricamento non è configurabile ma è preconfigurato per puntare al dispatcher, con corrispondenza con il servizio di pubblicazione in esecuzione accanto all’agente di scaricamento.
+L’endpoint dell’agente di svuotamento non è configurabile ma è preconfigurato per puntare a Dispatcher, con corrispondenza con il servizio di pubblicazione in esecuzione accanto all’agente di svuotamento.
 
 L’agente di flush può in genere essere attivato dal codice personalizzato in base agli eventi o ai flussi di lavoro OSGi.
 
@@ -464,5 +464,5 @@ Per abilitare il controllo delle versioni di clientlib restrittive nell’SDK Qu
 1. Trova la configurazione OSGi per Adobe Granite HTML Library Manager:
    * Seleziona la casella di controllo per abilitare il controllo delle versioni restrittive .
    * Nel campo con etichetta Chiave cache lato client a lungo termine, immetti il valore di /.*;hash
-1. Salva le modifiche. Nota che non è necessario salvare questa configurazione nel controllo del codice sorgente, in quanto AEM as a Cloud Service abiliterà automaticamente questa configurazione negli ambienti di sviluppo, stage e produzione.
+1. Salva le modifiche. Non è necessario salvare questa configurazione nel controllo del codice sorgente, in quanto AEM as a Cloud Service abilita automaticamente questa configurazione negli ambienti di sviluppo, stage e produzione.
 1. Ogni volta che il contenuto della libreria client viene modificato, viene generata una nuova chiave hash e il riferimento di HTML verrà aggiornato.
