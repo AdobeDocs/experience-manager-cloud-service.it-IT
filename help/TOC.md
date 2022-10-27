@@ -8,7 +8,7 @@ user-guide-description: Risorse di supporto autonomo e collegamenti alla documen
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
+source-git-commit: 2e0aef129333eb99933bc0adfc8a753069bd656f
 workflow-type: tm+mt
 source-wordcount: '3731'
 ht-degree: 99%
@@ -478,11 +478,11 @@ ht-degree: 99%
       + [Fine del ciclo di vita dei visualizzatori DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Integrazione con Adobe Workfront {#integrations}
       + [Integrazioni con [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
+      + [Configurare la mappatura dei metadati delle risorse](/help/assets/configure-asset-metadata-mapping.md)
       + [Installa  [!DNL enhanced connector]  per  [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Rimuovere le dipendenze esterne per le installazioni esistenti](/help/assets/remove-external-dependencies.md)
       + [Configura  [!DNL enhanced connector]  per  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Aggiorna [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-      + [Configurare la mappatura dei metadati delle risorse](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
    + [Introduzione](/help/forms/home.md)
    + [Funzioni principali](/help/forms/key-features.md)
