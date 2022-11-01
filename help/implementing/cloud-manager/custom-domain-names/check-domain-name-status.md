@@ -1,77 +1,89 @@
 ---
-title: Verifica dello stato del nome di dominio
+title: Controllo dello stato del nome di dominio
 description: Scopri come determinare se il nome di dominio personalizzato è stato verificato correttamente da Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 0%
+source-wordcount: '663'
+ht-degree: 71%
 
 ---
 
 
-# Verifica dello stato del nome di dominio {#check-status}
+# Controllo dello stato del nome di dominio {#check-status}
 
-In Cloud Manager puoi determinare lo stato del nome di dominio personalizzato.
+In Cloud Manager è possibile determinare lo stato del nome di dominio personalizzato.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Passa a **Ambienti** dalla schermata **Panoramica** pagina.
+1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Fai clic su **Impostazioni di dominio** nel pannello di navigazione a sinistra.
+1. Nel pannello di navigazione a sinistra, fai clic su **Impostazioni dominio**.
 
-1. Fai clic sul pulsante **Stato** per il nome di dominio.
+1. Fai clic sull’icona **Stato** del nome di dominio.
 
 Cloud Manager verifica la proprietà del dominio tramite il valore TXT e visualizza uno dei seguenti messaggi di stato.
 
-* **Verifica del dominio non riuscita** - Il valore TXT è mancante o viene rilevato con errori.
+* **Verifica del dominio non riuscita**: il valore TXT è mancante o viene rilevato con errori.
 
-   * Segui le istruzioni fornite per risolvere il problema.
-   * Quando è pronto, è necessario selezionare la **Verifica di nuovo** accanto allo stato .
+   * Per risolvere il problema, segui le istruzioni fornite.
+   * Al termine dell’operazione, seleziona l’icona **Nuovo tentativo di verifica** accanto allo stato.
 
-* **Verifica del dominio in corso** - La verifica è in corso.
+* **Verifica del dominio in corso**: la verifica è in corso.
 
-   * Questo stato viene generalmente visualizzato dopo aver selezionato **Verifica di nuovo** accanto allo stato .
+   * Questo stato viene generalmente visualizzato dopo aver selezionato l’icona **Nuovo tentativo di verifica** accanto allo stato.
 
-* **Verificato, Distribuzione non riuscita** - La verifica TXT ha avuto esito positivo, ma la distribuzione CDN non è riuscita.
+* **Verificato, distribuzione non riuscita**: la verifica TXT è stata completata correttamente, ma la distribuzione CDN non è riuscita.
 
-   * In questi casi, contatta il tuo rappresentante Adobe.
+   * In questo caso, contatta il rappresentante Adobe.
 
-* **Dominio verificato e distribuito** - Questo stato indica che il nome di dominio personalizzato è pronto per essere utilizzato.
+* **Dominio verificato e distribuito**: questo stato indica che il nome di dominio personalizzato è pronto all’uso.
 
-   * A questo punto, il nome di dominio personalizzato è pronto per il test e deve essere indirizzato al nome di dominio di Cloud Manager.
-   * Fare riferimento al documento [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) per saperne di più.
+   * A questo punto, il nome di dominio personalizzato è pronto per la fase di test e per puntare al nome di dominio di Cloud Manager.
+   * Per ulteriori informazioni, consulta il documento [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
 
-* **Eliminazione** - È in corso l&#39;eliminazione di un nome di dominio personalizzato.
+* **Eliminazione in corso**: è in corso l’eliminazione di un nome di dominio personalizzato.
 
-* **Eliminazione non riuscita** - L&#39;eliminazione del nome di dominio personalizzato non è riuscita e deve essere ritentata.
+* **Eliminazione non riuscita**: l’eliminazione del nome di dominio personalizzato non è riuscita; è necessario effettuare un nuovo tentativo.
 
-   * Fare riferimento al documento [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) per saperne di più.
+   * Per ulteriori informazioni, consulta il documento [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
 
-Cloud Manager attiva automaticamente una verifica TXT quando selezioni **Salva** sulla fase di verifica della **Aggiungi dominio personalizzato** procedura guidata. Per le verifiche successive, devi selezionare attivamente l’icona verifica di nuovo accanto allo stato.
+Cloud Manager attiva automaticamente una verifica TXT quando nel passaggio di verifica della procedura guidata **Aggiungi dominio personalizzato** selezioni **Salva**. Per le verifiche successive, devi riselezionare attivamente l’icona di verifica accanto allo stato.
 
-## Errori nome di dominio {#domain-error}
+## Errori dei nomi di dominio {#domain-error}
 
-Questa sezione spiega gli errori che potresti visualizzare e come risolverli.
+Di seguito sono riportati alcuni errori comuni relativi ai nomi di dominio e le relative risoluzioni tipiche.
 
-**Dominio non installato** - Si riceve questo errore durante la convalida del dominio del record TXT anche dopo aver verificato che il record sia stato aggiornato in modo appropriato.
+### Errore del dominio non installato {#domain-not-installed}
 
-**Spiegazione errore** - Blocca infine un dominio all&#39;account iniziale che lo ha registrato e nessun altro account può registrare un sottodominio senza richiedere l&#39;autorizzazione. Inoltre, Flast ti consente di assegnare un dominio apex e i sottodomini associati a un solo servizio e account Flast. Se disponi di un account Flast esistente che collega lo stesso apex e sottodomini utilizzati per i tuoi domini AEM Cloud Service, verrà visualizzato questo errore.
+Questo errore può verificarsi durante la convalida del dominio del record TXT anche dopo aver verificato che il record sia stato aggiornato in modo appropriato.
 
-**Risoluzione degli errori** - L&#39;errore viene corretto come segue:
+#### Causa errore {#cause}
 
-* Rimuovi l’apex e i sottodomini dall’account esistente prima di installare il dominio in Cloud Manager. Utilizza questa opzione per collegare il dominio apex e tutti i sottodomini all’account Flast AEM as a Cloud Service. Vedi [Utilizzo dei domini nella documentazione finale](https://docs.fastly.com/en/guides/working-with-domains) per ulteriori dettagli.
+Blocca infine un dominio all&#39;account iniziale che lo ha registrato e nessun altro account può registrare un sottodominio senza richiedere l&#39;autorizzazione. Inoltre, Fastly consente di assegnare un dominio APEX e i sottodomini associati a un unico servizio e account Fastly. L’errore viene visualizzato se disponi di un account Fastly che collega gli stessi domini e sottodomini APEX utilizzati per i domini di AEM Cloud Service.
 
-* Se il dominio apex ha più sottodomini per AEM siti as a Cloud Service e non AEM as a Cloud Service che desideri collegare a diversi account Flast, prova a installare il dominio in Cloud Manager e se l’installazione del dominio non riesce a creare un ticket di assistenza clienti con Flast in modo da poter seguire Flast per tuo conto.
+#### Risoluzione degli errori {#resolution}
+
+L&#39;errore viene corretto come segue:
+
+* Prima di installare il dominio in Cloud Manager, rimuovi il dominio APEX e i sottodomini dall’account esistente.
+
+* Collega il dominio APEX e tutti i sottodomini all’account Fastly AEM as a Cloud Service con questa opzione. Per ulteriori informazioni, consulta [Utilizzo dei domini nella documentazione Fastly](https://docs.fastly.com/en/guides/working-with-domains).
+
+* Se il dominio apex ha più sottodomini per AEM siti as a Cloud Service e non AEM as a Cloud Service che desideri collegare a diversi account Flast, prova a installare il dominio in Cloud Manager. Se l&#39;installazione del dominio non riesce, crea un ticket di assistenza clienti con Flast in modo che l&#39;Adobe possa seguire Flast per tuo conto.
+
+>[!TIP]
+>
+>Per risolvere i problemi di delega del dominio con Fast in genere sono necessari 1-2 giorni lavorativi. Per questo motivo, si consiglia vivamente di installare i domini molto prima della loro data di entrata in vigore.
 
 >[!NOTE]
 >
->NOTA: Non instradare il DNS del sito a AEM IP as a Cloud Service se il dominio non è stato installato correttamente.
+>Non instradare il DNS del sito a AEM IP as a Cloud Service se il dominio non è stato installato correttamente.
 
 ## Configurazioni CDN preesistenti per nomi di dominio personalizzati {#pre-existing-cdn}
 
-Se disponi di una configurazione CDN preesistente per i nomi di dominio personalizzati, verrà visualizzato un messaggio informativo sul **Nomi di dominio personalizzati** e **Ambiente** pagine, ti incoraggiano ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
+Se disponi di una configurazione CDN preesistente per i nomi di dominio personalizzati, viene visualizzato un messaggio informativo sulle pagine **Nomi di dominio personalizzati** e **Ambiente** che ti invita ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
 
-Il messaggio scompare dopo la migrazione di tutte le configurazioni di ambiente preesistenti tramite l’interfaccia utente. Potrebbero essere necessari 1-2 giorni lavorativi per far scomparire il messaggio.
+Il messaggio non viene più visualizzato dopo aver eseguito la migrazione di tutte le configurazioni dell’ambiente preesistenti tramite l’interfaccia utente. Potrebbero essere necessari 1-2 giorni lavorativi affinché il messaggio non venga più visualizzato.
 
-Fare riferimento al documento [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) per ulteriori dettagli.
+Per ulteriori informazioni, consulta il documento [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
