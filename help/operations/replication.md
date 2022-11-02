@@ -2,9 +2,9 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
+source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1262'
 ht-degree: 99%
 
 ---
@@ -84,7 +84,7 @@ In alternativa, è possibile ottenere questo risultato creando un modello di flu
 * `enableVersion` (valore booleano, predefinito: `true`). Questo parametro determina se viene creata una nuova versione al momento della replica.
 * `agentId` (valore stringa, “default” indica che vengono utilizzati solo gli agenti per la pubblicazione). Si consiglia di impostare un valore esplicito per agentId; ad esempio: publish. Se si imposta l’agente su `preview`, verrà eseguita la pubblicazione nel servizio di anteprima.
 * `filters` (valore stringa, “default” significa che tutti i percorsi sono attivati). I valori disponibili sono:
-   * `onlyActivated` - verranno attivati solo i percorsi contrassegnati come attivati.
+   * `onlyActivated` - attiva solo le pagine che sono (già) state attivate. Si tratta di una forma di riattivazione.
    * `onlyModified`: verranno attivati solo i percorsi già attivati e la cui data di modifica è successiva alla data di attivazione.
    * Quanto sopra può essere impostato con OR inserendo il simbolo “|”. Esempio: `onlyActivated|onlyModified`.
 
