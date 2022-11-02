@@ -1,43 +1,41 @@
 ---
-title: Note sulla versione per Cloud Manager 202.6.0 in Adobe Experience Manager as a Cloud Service
-description: Queste sono le note sulla versione per Cloud Manager 2022.6.0 in AEM as a Cloud Service.
+title: Note sulla versione 2022.6.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
+description: Queste sono le note sulla versione 2022.6.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 1%
+source-wordcount: '313'
+ht-degree: 100%
 
 ---
 
-# Note sulla versione per Cloud Manager 202.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Note sulla versione 2022.6.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina documenta le note sulla versione di Cloud Manager 2022.6.0 in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2022.6.0 di Cloud Manager in AEM as a Cloud Service.
 
 >[!NOTE]
 >
->Fai riferimento a [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) per le note sulla versione corrente per Adobe Experience Manager as a Cloud Service.
+>Per le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, consulta [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione 2022.6.0 di Cloud Manager in AEM as a Cloud Service è il 9 giugno 2022. La prossima versione è prevista per il 30 giugno 2022.
+La data di pubblicazione di Cloud Manager versione 2022.6.0 in AEM as a Cloud Service è il 9 giugno 2022. La prossima versione è pianificata per il 30 giugno 2022.
 
 ## Novità {#what-is-new}
 
-* L’interfaccia utente di Cloud Manager ora consente [ripristino automatico dei contenuti](/help/operations/backup.md) a uno stato valido noto dell&#39;ambiente cloud AEM.
-   * Questa funzione verrà implementata in un approccio graduale nelle settimane successive alla versione 2022.06.0.
-* Una nuova scheda di benvenuto nella pagina di destinazione di Cloud Manager consente agli utenti di accedere rapidamente alle esercitazioni di onboarding e alle metriche di avanzamento correlate al tenant.
-   * Questa funzione verrà implementata in un approccio graduale durante la settimana successiva alla versione 2022.06.0.
-* Gli utenti con le autorizzazioni necessarie possono accedere a un nuovo [Dashboard di licenza](/help/implementing/cloud-manager/license-dashboard.md) nella pagina di destinazione di Cloud Manager per visualizzare i dettagli delle adesioni disponibili per il tenant.
-   * AEM Sites è la prima soluzione per la quale la disponibilità e il consumo di utilizzo vengono distribuiti tramite il dashboard Cloud Manage.
-   * Questa funzione verrà implementata in un approccio graduale nelle settimane successive alla versione 2022.06.0.
-* [Nuovo account secondario relic e gestione utenti self-service](/help/implementing/cloud-manager/user-access-new-relic.md) è ora disponibile tramite l’interfaccia utente di Cloud Manager.
-   * Questa funzione verrà implementata in un approccio graduale nelle settimane successive alla versione 2022.06.0.
-* Un nuovo widget Go Live sulla home page dei programmi di produzione di Cloud Service fornisce ora indicazioni per prepararsi a un&#39;esperienza live di successo.
-* [È ora possibile riutilizzare gli artefatti di creazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) quando si utilizza il mirroring git.
+* Una nuova scheda di benvenuto nella pagina di destinazione di Cloud Manager consente agli utenti di accedere rapidamente ai tutorial di onboarding e alle metriche di avanzamento correlate al tenant.
+   * La funzione verrà implementata gradualmente nella settimana successiva alla pubblicazione della versione 2022.06.0.
+* Per visualizzare i dettagli dei diritti disponibili per il tenant, gli utenti con le autorizzazioni necessarie ora possono accedere a una nuova [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md) dalla pagina di destinazione di Cloud Manager.
+   * AEM Sites è la prima soluzione che fornisce informazioni su disponibilità e utilizzo dei consumi tramite la dashboard di Cloud Manager.
+   * La funzione verrà implementata gradualmente nelle settimane successive alla pubblicazione della versione 2022.06.0.
+* Ora tramite l’interfaccia di Cloud Manager sono disponibili [gli account secondari New Relic e la gestione self-service degli utenti](/help/implementing/cloud-manager/user-access-new-relic.md).
+   * La funzione verrà implementata gradualmente nelle settimane successive alla pubblicazione della versione 2022.06.0.
+* Ora sulla pagina Home dei programmi di produzione di Cloud Service è disponibile un nuovo widget di pubblicazione che fornisce indicazioni per prepararsi a eseguire correttamente la pubblicazione.
+* [Ora è possibile riutilizzare gli artefatti della build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) quando si utilizza il mirroring Git.
 
 ## Modifiche API {#api-changes}
 
-* La [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) L’API è stata dichiarata obsoleta e [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) Deve essere invece utilizzato.
-   * `List Programs` continua a funzionare, ma il suo utilizzo genererà messaggi di avviso nei registri.
-   * Non sarà più supportato dopo tre mesi.
+* Ora l’API [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms?lang=it) è considerata obsoleta. Al suo posto viene utilizzata l’API [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant?lang=it).
+   * `List Programs` continua a funzionare, ma quando viene utilizzata genera messaggi di avviso nei registri.
+   * Non sarà più supportata dopo tre mesi.

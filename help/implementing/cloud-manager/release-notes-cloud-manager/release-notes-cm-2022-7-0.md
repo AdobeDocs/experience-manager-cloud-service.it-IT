@@ -1,34 +1,33 @@
 ---
-title: Note sulla versione per Cloud Manager 2022.7.0 in Adobe Experience Manager as a Cloud Service
-description: Queste sono le note sulla versione per Cloud Manager 2022.7.0 in AEM as a Cloud Service.
+title: Note sulla versione 2022.7.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
+description: Queste sono le note sulla versione 2022.7.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: c19e4efb-69d6-4915-9e63-c47cd91e941b
-source-git-commit: 1ec1b3f58f7614140d584d3bc7fc113527d6511d
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 3%
+source-wordcount: '173'
+ht-degree: 100%
 
 ---
 
-# Note sulla versione per Cloud Manager 2022.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Note sulla versione 2022.7.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina documenta le note sulla versione di Cloud Manager 2022.7.0 in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2022.7.0 di Cloud Manager in AEM as a Cloud Service.
 
 >[!NOTE]
 >
->Fai riferimento a [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) per le note sulla versione corrente per Adobe Experience Manager as a Cloud Service.
+>Per le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, consulta [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione 2022.7.0 di Cloud Manager in AEM as a Cloud Service è l’8 agosto 2022. La prossima versione è prevista per l’11 agosto 2022.
+La data di pubblicazione di Cloud Manager versione 2022.7.0 in AEM as a Cloud Service è l’8 agosto 2022. La prossima versione è pianificata per l’11 Agosto 2022.
 
 ## Novità {#what-is-new}
 
-* Gli utenti di Cloud Manager possono ora accedere a utili esercitazioni video da **Benvenuto** sulla pagina di destinazione in qualsiasi momento.
-* Il pover sul **[Ripristina contenuto](/help/operations/backup.md)** nella scheda della pagina dei dettagli degli ambienti viene ora visualizzato un utile elenco di comandi git che consentono all’utente di visualizzare le modifiche localmente.
+* Ora gli utenti di Cloud Manager possono accedere in qualsiasi momento a utili video tutorial dalla scheda **Benvenuti** sulla pagina di destinazione.
 
 ## Correzioni di bug {#bug-fixes}
 
-* Sono stati migliorati i messaggi di feedback nell’interfaccia utente relativi alla creazione di un nuovo account secondario relic durante la creazione del programma.
-* Gli utenti possono ora scaricare i registri di test personalizzati dell’interfaccia utente dall’interfaccia utente di Cloud Manager.
+* Sono stati migliorati i messaggi di feedback nell’interfaccia utente relativi alla creazione dell’account secondario di New Relic durante la creazione del programma.
+* Ora gli utenti possono scaricare i registri dei test personalizzati dell’interfaccia utente dall’interfaccia utente di Cloud Manager.
 * È stato risolto un problema a causa del quale, dopo l’approvazione di una pipeline front-end, non veniva effettuata alcuna chiamata per eseguire il passaggio di distribuzione.
