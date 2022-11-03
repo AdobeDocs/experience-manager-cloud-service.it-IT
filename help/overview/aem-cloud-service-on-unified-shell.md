@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service su Unified Shell
 description: AEM as a Cloud Service su Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
+source-git-commit: 53e22737e62835872e47ac07530078c3d1dfcf31
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 91%
+source-wordcount: '443'
+ht-degree: 71%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 91%
 
 ## Panoramica {#overview}
 
-AEM as a Cloud Service è integrato con Unified Shell per migliorare l’esperienza utente e per coerenza con tutte le altre applicazioni di Experience Cloud. L’impatto di questa integrazione può essere visto nell’intestazione superiore dell’applicazione, come illustrato di seguito.
+AEM as a Cloud Service (Author Service) è integrato con Unified Shell per migliorare l’esperienza utente e unificarla a tutte le altre applicazioni di Experience Cloud. L’impatto di questa integrazione può essere visto nell’intestazione superiore dell’applicazione, come illustrato di seguito.
 
-![immagine](/help/overview/assets/unifiedshell1.png)
+![immagine](/help/overview/assets/unifiedshell_header.png)
 
 Offre i seguenti vantaggi:
 
@@ -58,6 +58,13 @@ Per passare al tema scuro, fai clic sull’icona del tuo profilo. Viene visualiz
 >Il tema scuro viene applicato solo all’area Unified Shell (la barra superiore).
 
 ![immagine](/help/overview/assets/unifiedshell4.png)
+
+## Identificazione dell’ambiente as a Cloud Service AEM {#identify-aemaacs-environment}
+
+AEM as a Cloud Service fornisce tre tipi di ambienti: Produzione, stage e sviluppo. Fai riferimento a [Tipi di ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) per ulteriori dettagli. Con questa integrazione con Unified Shell, il tipo di ambiente a cui l’utente ha effettuato l’accesso al servizio Author viene visualizzato nell’intestazione superiore tramite un’etichetta come mostrato di seguito.
+
+![immagine](/help/overview/assets/unifiedshell_header_label.png)
+
 
 ## Accesso alla casella in entrata AEM {#accessing-the-aem-inbox}
 
