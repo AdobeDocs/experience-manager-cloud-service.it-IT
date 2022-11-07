@@ -2,9 +2,9 @@
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
+source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
 workflow-type: tm+mt
-source-wordcount: '1987'
+source-wordcount: '1975'
 ht-degree: 100%
 
 ---
@@ -306,7 +306,7 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
    * Puoi aggiornare i valori nei campi disponibili.
       * I nuovi valori saranno applicati a tutte le pagine selezionate quando fai clic su **Fine**.
       * Quando il campo ha valori multipli (ad esempio i Tag), puoi aggiungere un nuovo valore o rimuovere un valore comune.
-   * I campi in comune ma con valori diversi nelle varie pagine saranno contraddistinti da uno speciale valore, ad esempio `<Mixed Entries>`. Presta attenzione quando modifichi tali campi per evitare perdite di dati.
+   * I campi in comune ma con valori diversi nelle varie pagine saranno contraddistinti da uno speciale valore, ad esempio `<Mixed Entries>`.
 
 >[!NOTE]
 >
