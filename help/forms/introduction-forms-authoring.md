@@ -9,9 +9,9 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2409'
 ht-degree: 4%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 4%
 
 La funzione Forms adattiva consente di creare moduli coinvolgenti, reattivi, dinamici e adattivi. [!DNL AEM Forms] fornisce un’interfaccia utente intuitiva e componenti pronti all’uso per la creazione e l’utilizzo di Adaptive Forms. È possibile scegliere di creare un modulo adattivo basato su un modello di modulo o schema o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo che non solo si adatta alle proprie esigenze ma estende gli investimenti e le risorse infrastrutturali esistenti. Per creare un modulo adattivo è possibile scegliere tra le seguenti opzioni:
 
-<!-- * **Using a form data model**
-  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. -->
+* **Uso di un modello dati modulo**
+   [Integrazione dei dati](data-integration.md) consente di integrare entità e servizi da diverse origini dati in a un modello dati modulo da utilizzare per creare Forms adattivo. Scegliere Modello dati modulo se il modulo adattivo che si sta creando prevede il recupero e la scrittura di dati da e verso più origini dati.
 
 * **Utilizzo di un modello di modulo XDP**
 Si tratta di un modello di modulo ideale per gli investimenti in moduli XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in Forms adattivo. Eventuali regole XFA esistenti vengono mantenute nel Forms adattivo associato. I costrutti XFA risultanti da Adaptive Forms supportano, ad esempio convalide, eventi, proprietà e pattern.
@@ -35,9 +35,13 @@ Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti 
 * **Uso di un modello di modulo senza o senza**
 La funzione Forms adattiva creata con questa opzione non utilizza alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.
 
-<!--  For more information about creating an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md). -->
+   >[!NOTE]
+   >
+   > È possibile modificare le proprietà del modello di modulo dall’editor di moduli adattivi o dall’editor di modelli di moduli adattivi. Per ulteriori informazioni, consulta [Modificare le proprietà del modello di modulo di un modulo adattivo](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
-## Interfaccia utente per la creazione di moduli adattivi {#adaptive-form-authoring-ui}
+Per creare un modulo adattivo, consulta [Creazione di un modulo adattivo](creating-adaptive-form.md).
+
+## Interfaccia utente di authoring dei moduli adattivi {#adaptive-form-authoring-ui}
 
 L’interfaccia touch per l’authoring di Adaptive Forms è intuitiva e fornisce:
 

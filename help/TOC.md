@@ -8,10 +8,10 @@ user-guide-description: Risorse di supporto autonomo e collegamenti alla documen
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d310b48d3abe8ffba2f25a27899cd042a186db84
+source-git-commit: 50b2859dc2a8a83a007bfef30d5c0959e92aa212
 workflow-type: tm+mt
-source-wordcount: '3739'
-ht-degree: 99%
+source-wordcount: '3759'
+ht-degree: 98%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 99%
    + Note generali sulla versione di AEMaaCS {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [Note sulla versione 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
          + [Note sulla versione 2022.7.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
          + [Note sulla versione 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
          + [Note sulla versione 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
@@ -388,6 +389,7 @@ ht-degree: 99%
       + [Risorse filigrana](/help/assets/watermark-assets.md)
       + [Elaborare risorse utilizzando  [!DNL Creative Cloud]  API](/help/assets/cc-api-integration.md)
       + [Tag colore per immagini](/help/assets/color-tag-images.md)
+      + [Gestire i documenti PDF](/help/assets/manage-pdf-documents.md)
    + Configurare, amministrare ed estendere [!DNL Assets] {#admin}
       + [Riferimenti ai documenti e alle API per sviluppatori](/help/assets/developer-reference-material-apis.md)
       + [Schema metadati per cartelle](/help/assets/folder-metadata-schema.md)
@@ -501,6 +503,7 @@ ht-degree: 99%
       + [Revisione dei moduli convertiti](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=it#welcome-to-review-and-correct-editor)
    + Creare e pubblicare un modulo adattivo {#create-an-adaptive-form}
       + Prima di iniziare {#before-you-start}
+         + [Introduzione all’authoring di un Forms adattivo](/help/forms/introduction-forms-authoring.md)
          + [Creare un modello](/help/forms/template-editor.md)
          + [Creare un tema](/help/forms/themes.md)
          + [Collegare le origini dati al Cloud Service](/help/forms/data-integration.md)
@@ -535,19 +538,21 @@ ht-degree: 99%
       + Migliorare l’accessibilità di un modulo adattivo {#accessible-adaptive-forms}
          + [Creare un modulo adattivo accessibile](/help/forms/creating-accessible-adaptive-forms.md)
       + [Configurare Forms Portal](/help/forms/configure-forms-portal.md)
-   + Integrare un modulo con una o più origini dati {#use-form-data-model}
-      + [Configurare origini dati](/help/forms/configure-data-sources.md)
-      + [Configurazione  [!DNL Microsoft Dynamics]  OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [Configura  [!DNL Azure]  archiviazione](/help/forms/configure-azure-storage.md)
-      + [Configurazione  [!DNL Microsoft Dynamics 365]  e  [!DNL Salesforce]  servizi cloud](/help/forms/configure-msdynamics-salesforce.md)
-      + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
+   + Integrare {#integrate}
+      + Integrare un modulo con una o più origini dati {#use-form-data-model}
+         + [Configurare origini dati](/help/forms/configure-data-sources.md)
+         + [Configurazione  [!DNL Microsoft Dynamics]  OData](/help/forms/ms-dynamics-odata-configuration.md)
+         + [Configura  [!DNL Azure]  archiviazione](/help/forms/configure-azure-storage.md)
+         + [Configurazione  [!DNL Microsoft Dynamics 365]  e  [!DNL Salesforce]  servizi cloud](/help/forms/configure-msdynamics-salesforce.md)
+         + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
       + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
       + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
-   + [Integrare con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-   + [Integrare con DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-   + [Integrare con Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-   + [Integrare con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-   + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [Integrare con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+      + [Integrare con DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
+      + [Integrare con Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+      + [Integrare con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+      + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [Incorporare Forms adattivo in AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
    + Creare e utilizzare flussi di lavoro {#create-form-centric-workflows}
       + [Utilizzare passaggi incentrati su Forms in un flusso di lavoro + riferimento a passaggi](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilizzare le variabili in un flusso di lavoro incentrato su Forms](/help/forms/variable-in-aem-workflows.md)

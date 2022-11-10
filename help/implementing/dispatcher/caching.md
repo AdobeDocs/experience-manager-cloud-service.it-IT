@@ -3,9 +3,9 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Memorizzazione in cache in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
+source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2663'
 ht-degree: 1%
 
 ---
@@ -196,6 +196,19 @@ Per impostazione predefinita, il livello AEM non memorizza in cache il contenuto
 ### Comportamento della richiesta di HEAD {#request-behavior}
 
 Quando viene ricevuta una richiesta di HEAD al CDN di Adobe per una risorsa che è **not** memorizzata nella cache, la richiesta viene trasformata e ricevuta dal Dispatcher e/o dall’istanza AEM come richiesta di GET. Se la risposta è memorizzabile nella cache, le richieste successive di HEAD verranno servite dalla rete CDN. Se la risposta non è memorizzabile in cache, le richieste successive di HEAD verranno trasmesse all’istanza di Dispatcher e/o AEM per un periodo di tempo che dipende dal `Cache-Control` TTL.
+
+### Parametri della campagna di marketing {#marketing-parameters}
+
+Gli URL dei siti web includono frequentemente i parametri delle campagne di marketing utilizzati per monitorare il successo di una campagna. Per utilizzare in modo efficace la cache del dispatcher, ti consigliamo di configurare la configurazione del dispatcher `ignoreUrlParams` proprietà come [documentato](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+
+La `ignoreUrlParams` deve essere rimossa la funzione e deve fare riferimento al file `conf.dispatcher.d/cache/marketing_query_parameters.any`, che può essere modificato rimuovendo il commento dalle righe corrispondenti ai parametri rilevanti per i canali di marketing. Puoi aggiungere anche altri parametri.
+
+```
+/ignoreUrlParams {
+{{ /0001 { /glob "*" /type "deny" }}}
+{{ $include "../cache/marketing_query_parameters.any"}}
+}
+```
 
 ## Annullamento della validità della cache del dispatcher {#disp}
 

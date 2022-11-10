@@ -2,9 +2,9 @@
 title: Genera documento di record per Forms adattivo
 description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '3659'
+source-wordcount: '4100'
 ht-degree: 2%
 
 ---
@@ -330,27 +330,35 @@ Per localizzare le informazioni di branding immesse nella scheda Documento di re
 1. Seleziona un pannello (pannello principale) nel documento di record e tocca ![configurare](assets/configure.png).
 1. Tocca ![scheda](assets/dortab.png). Viene visualizzata la scheda Documento di record.
 1. Selezionare il modello predefinito o un modello personalizzato per il rendering del documento di record. Se si seleziona il modello predefinito, sotto il menu a discesa Modello viene visualizzata una miniatura del documento di record.
+1. A seconda che si selezioni un modello predefinito o personalizzato, nella scheda Documento di record vengono visualizzate alcune o tutte le proprietà seguenti. Specificare le proprietà riportate di seguito per definire l&#39;aspetto del documento di record:
 
-   ![modello di branding](assets/brandingtemplate.png)
+   1. **Proprietà base**:
+      * **Modello**: Se scegli di selezionare un modello personalizzato, sfoglia e seleziona un XDP sul tuo [!DNL AEM Forms] server. Se desideri utilizzare un modello che non è già nel tuo [!DNL AEM Forms] server, devi prima caricare XDP nel tuo [!DNL AEM Forms] server.
+      * **Colore accento**: Colore in cui viene eseguito il rendering del testo dell&#39;intestazione e delle righe separatore nel documento o nel PDF record.
+      * **Famiglia di font**: Famiglia di font del testo nel Document of Record PDF.
+      * **Includi oggetti modulo non associati a modelli dati**: L&#39;impostazione della proprietà include campi non associati di Modulo adattivo basato su schema nel documento di record.
+      * **Escludere i campi nascosti dal documento di record**: L&#39;impostazione della proprietà identifica i campi nascosti da escludere dal documento di record.
+      * **Nascondere la descrizione dei pannelli**: L&#39;impostazione della proprietà esclude la descrizione del pannello/tabella dal documento di registrazione. Applicabile per il pannello e la tabella.
 
-   Se scegli di selezionare un modello personalizzato, sfoglia e seleziona un XDP sul tuo [!DNL AEM Forms] server. Se desideri utilizzare un modello che non è già nel tuo [!DNL AEM Forms] server, devi prima caricare XDP nel tuo [!DNL AEM Forms] server.
+      ![Proprietà base](/help/forms/assets/basicpropertiesdor.png)
 
-1. A seconda che si selezioni un modello predefinito o personalizzato, nella scheda Documento di record vengono visualizzate alcune o tutte le proprietà seguenti. Specifica in modo appropriato:
+   1. **Proprietà del campo modulo**:
+      * **Per i componenti Casella di controllo e Pulsante di scelta, mostrare solo i valori selezionati**: L&#39;impostazione della proprietà visualizza solo i valori selezionati della casella di controllo e del pulsante di scelta in [!UICONTROL Documento di registrazione].
+      * **Separatore per più valori**: Per visualizzare più valori è possibile scegliere un separatore, ad esempio una virgola o un&#39;interruzione di riga.
+      * **Allineamento opzioni**: È possibile selezionare l’allineamento desiderato (orizzontale, verticale, uguale a modulo adattivo) per impostare l’allineamento dei campi, ad esempio la casella di controllo o il pulsante di scelta, su cui visualizzare l’allineamento [!UICONTROL Documento di registrazione]. Per impostazione predefinita, l’allineamento verticale è impostato per i campi in [!UICONTROL Documento di registrazione]. Impostazione delle proprietà dalla [!UICONTROL Proprietà campo modulo] di DoR sovrascrive le proprietà impostate nel [!UICONTROL Allineamento articolo] per i campi di un modulo adattivo. Nel caso in cui selezioni [!UICONTROL Uguale al modulo adattivo] l’allineamento configurato in un’istanza dell’autore di un modulo adattivo viene utilizzato per [!UICONTROL Documento di registrazione] campi.
+      * **Numero di opzioni per l&#39;allineamento orizzontale**:È possibile impostare il numero di opzioni da visualizzare nel documento di record per l&#39;allineamento orizzontale.
 
-   * **Immagine del logo**: Puoi scegliere di utilizzare l’immagine logo dal modulo adattivo, sceglierne uno da DAM o caricarne uno dal computer.
-   * **Titolo modulo**
-   * **Testo intestazione**
-   * **Etichetta di dichiarazione di non responsabilità**
-   * **Liberatoria**
-   * **Testo della liberatoria**
-   * **Colore accento**: Colore in cui viene eseguito il rendering del testo dell&#39;intestazione e delle righe separatore nel documento o nel PDF record
-   * **Famiglia di font**: Famiglia di font del testo nel Document of Record PDF
-   * **Per i componenti Casella di controllo e Pulsante di scelta, mostrare solo i valori selezionati**
-   * **Separatore per più valori selezionati**
-   * **Includi oggetti modulo non associati a modelli dati**
-   * **Escludere i campi nascosti dal documento di record**
-   * **Nascondi descrizione pannelli**
+      ![Proprietà del campo modulo](/help/forms/assets/formfieldpropertiesdor.png)
 
+   1. **Proprietà pagina mastro**:
+      * **Immagine del logo**: Puoi scegliere di utilizzare l’immagine logo dal modulo adattivo, sceglierne uno da DAM o caricarne uno dal computer.
+      * **Titolo modulo**: Titolo del DoR.
+      * **Testo intestazione**: Testo visualizzato nella sezione di intestazione del documento di registrazione.
+      * **Etichetta della liberatoria**: Etichetta della liberatoria.
+      * **Disclaimer**: Testo che specifica la portata dei diritti e degli obblighi del documento di registrazione.
+      * **Testo della liberatoria**: Testo della liberatoria.
+
+      ![Proprietà pagina mastro](/help/forms/assets/masterpagepropertiesdor.png)
    >[!NOTE]
    >
    >Se si utilizza un modello di modulo adattivo creato con una versione di Designer precedente alla versione 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, assicurarsi che quanto segue sia presente nel modello di modulo adattivo sotto il sottomodulo principale:
@@ -367,7 +375,30 @@ Per localizzare le informazioni di branding immesse nella scheda Documento di re
    </proto>
    ```
 
-1. Per salvare le modifiche di branding, tocca Fine.
+1. Per salvare le modifiche al branding, tocca **[!UICONTROL Fine]**.
+
+## Supporto per i documenti di record nell’Editor di moduli adattivi {#dor-support-in-adaptiveform}
+
+Puoi configurare le [!UICONTROL Documento di registrazione] direttamente dall’editor di moduli adattivi o dall’editor di modelli di moduli adattivi.
+
+Esegui i seguenti passaggi dall’istanza di authoring dell’editor di moduli adattivi:
+
+1. Seleziona la **[!UICONTROL Contenitore Modulo adattivo (Root)]** componente.
+1. Fai clic su ![Icona Configura](/help/forms/assets/configure-icon.svg) per aprire **[!UICONTROL Proprietà]** del contenitore Modulo adattivo.
+1. Apri **[!UICONTROL Modello del documento di registrazione]** e seleziona tra le seguenti opzioni:
+   * **[!UICONTROL Nessuno]**: Quando questa opzione è selezionata, non [!UICONTROL Documento di registrazione] creato per il modulo adattivo.
+
+   * **[!UICONTROL Associa modello di modulo come modello di documento di record]**:Quando questa opzione è selezionata, XFA Form viene utilizzato come modello per Document of Record.
+
+   * **[!UICONTROL Genera documento di registrazione]**: Quando questa opzione è selezionata, la [!UICONTROL Documento di registrazione] Il modello viene generato automaticamente per il modulo adattivo.
+
+1. Tocca ![Salva](/help/forms/assets/check-button.png) per salvare le proprietà.
+
+![Supporto per i modelli di record](/help/forms/assets/dor-templatesupport.png)
+
+>[!NOTE]
+>
+>Quando [!UICONTROL Documento di registrazione] Il modello viene creato utilizzando un editor per modelli di modulo adattivo, quindi sono disponibili solo due opzioni in [!UICONTROL Modello del documento di registrazione] scheda come [!UICONTROL Nessuno] e [!UICONTROL Genera documento di registrazione].
 
 ## Layout di tabelle e colonne per pannelli nel documento di registrazione {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -400,7 +431,7 @@ L’impostazione del componente Documento di record è disponibile nelle relativ
 **Impostazioni a livello di modulo**
 
 * **Includi campi non associati in DoR:** L&#39;impostazione della proprietà include campi non associati di Modulo adattivo basato su schema nel documento di record. Per impostazione predefinita è true.
-* **Escludere i campi dal DoR se nascosti:** L&#39;impostazione della proprietà sostituisce il comportamento della proprietà a livello di campo &quot;Escludi dal documento di record&quot; quando non è true. Se i campi sono nascosti al momento dell’invio del modulo, vengono esclusi dal documento se la proprietà è impostata su true, purché la proprietà &quot;Escludi dal documento di record&quot; non sia impostata. Impostazione [Rivelare sul server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) su true identifica i campi nascosti per l&#39;esclusione dal documento di record sul lato server.
+* **Escludere i campi dal DoR se nascosti:** L&#39;impostazione della proprietà sostituisce il comportamento della proprietà a livello di campo &quot;Escludi dal documento di record&quot; quando non è true. Se i campi sono nascosti al momento dell’invio del modulo, vengono esclusi dal documento se la proprietà è impostata su true, purché la proprietà &quot;Escludi dal documento di record&quot; non sia impostata. Impostazione [Rivelare sul server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) su true identifica i campi nascosti da escludere da Document of Record sul lato server.
 
 ## Utilizzare un file XCI personalizzato
 

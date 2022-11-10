@@ -4,9 +4,9 @@ description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
+source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3064'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Mentre puoi caricare e gestire qualsiasi file binario in [!DNL Experience Manage
 
 Puoi anche scegliere di eseguire un’ulteriore elaborazione sulle risorse caricate. È possibile configurare diversi profili di elaborazione delle risorse nella cartella in cui vengono caricate le risorse per aggiungere metadati, rappresentazioni o servizi di elaborazione delle immagini specifici. Vedi [elabora le risorse quando vengono caricate](#process-when-uploaded).
 
-[!DNL Assets] fornisce i seguenti metodi di caricamento. L’Adobe consiglia di comprendere il caso d’uso e l’applicabilità di un’opzione di caricamento prima di utilizzarla.
+[!DNL Assets] fornisci i seguenti metodi di caricamento. L’Adobe consiglia di comprendere il caso d’uso e l’applicabilità di un’opzione di caricamento prima di utilizzarla.
 
 | Metodo di caricamento | Quando utilizzare? | Persona principale |
 |---------------------|----------------|-----------------|
@@ -58,7 +58,7 @@ Puoi anche scegliere di eseguire un’ulteriore elaborazione sulle risorse caric
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-Per caricare un file (o più file), puoi selezionarlo sul desktop e trascinarlo sull’interfaccia utente (browser web) nella cartella di destinazione. In alternativa, puoi avviare il caricamento da dall’interfaccia utente di .
+Per caricare un file (o più file), puoi selezionarlo sul desktop e trascinarlo sull’interfaccia utente (browser web) nella cartella di destinazione. In alternativa, puoi avviare il caricamento dall’interfaccia utente di .
 
 1. In [!DNL Assets] nell’interfaccia utente, individua il percorso in cui desideri aggiungere risorse digitali.
 1. Per caricare le risorse, effettua una delle seguenti operazioni:
@@ -109,7 +109,7 @@ Puoi caricare una risorsa con lo stesso percorso (nome e posizione identici) di 
    >
    >L’opzione per sostituire le risorse non è disponibile se la risorsa è bloccata o estratta.
 
-* Crea un&#39;altra versione: Nella directory archivio viene creata una nuova versione della risorsa esistente. È possibile visualizzare le due versioni nel [!UICONTROL Timeline] e, se necessario, può ripristinare la versione esistente precedente.
+* Crea un&#39;altra versione: Nella directory archivio viene creata una nuova versione della risorsa esistente. È possibile visualizzare le due versioni nel [!UICONTROL Timeline] e può, se necessario, ripristinare la versione esistente precedente.
 * Mantieni entrambi: Se scegli di mantenere entrambe le risorse, la nuova risorsa viene rinominata.
 
 Per mantenere la risorsa duplicata in [!DNL Assets], fai clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, fai clic su **[!UICONTROL Elimina]**.
@@ -118,7 +118,7 @@ Per mantenere la risorsa duplicata in [!DNL Assets], fai clic su **[!UICONTROL M
 
 [!DNL Experience Manager Assets] impedisce il caricamento di risorse con i caratteri non consentiti nei nomi dei file. Se tenti di caricare una risorsa con nomi di file contenenti un carattere non consentito o più, [!DNL Assets] visualizza un messaggio di avviso e interrompe il caricamento finché non rimuovi questi caratteri o li carichi con un nome consentito.
 
-Per soddisfare convenzioni specifiche di denominazione dei file per la tua organizzazione, la [!UICONTROL Caricare risorse] La finestra di dialogo consente di specificare nomi lunghi per i file caricati. I seguenti caratteri (elenco separato da spazi) non sono supportati:
+Per soddisfare convenzioni di denominazione dei file specifiche per la tua organizzazione, la [!UICONTROL Caricare risorse] La finestra di dialogo consente di specificare nomi lunghi per i file caricati. I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
 * Caratteri non validi per il nome della risorsa: `* / : [ \\ ] | # % { } ? &`
 * Caratteri non validi per il nome della cartella di risorse: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -139,7 +139,7 @@ Per caricare un numero maggiore di file, utilizza uno dei seguenti approcci. Ino
 
 ### Strumento di importazione in blocco risorsa {#asset-bulk-ingestor}
 
-Lo strumento viene fornito solo al gruppo di amministratori per utilizzare per l’acquisizione su larga scala di risorse dai datastore di Azure o S3. Guarda un video dettagliato sulla configurazione e l’acquisizione.
+Lo strumento viene fornito solo al gruppo di amministratori per utilizzare per l’inserimento su larga scala di risorse dai datastore di Azure o S3. Guarda un video dettagliato sulla configurazione e l’acquisizione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
@@ -172,13 +172,15 @@ Per configurare lo strumento di importazione in blocco, effettua le seguenti ope
 
 1. Immetti i valori per creare una connessione con l’origine dati. Ad esempio, se selezioni **Archiviazione BLOB di Azure** come origine dati, specifica i valori per l’account di archiviazione Azure, il contenitore BLOB di Azure e la chiave di accesso di Azure.
 
+1. Seleziona la modalità di autenticazione desiderata dall’elenco a discesa. **Chiave di accesso di Azure** fornisce accesso completo all’account di archiviazione di Azure, mentre **Token SAS di Azure** consente all’amministratore di limitare le funzionalità del token utilizzando le autorizzazioni e i criteri di scadenza.
+
 1. Fornisci il nome della cartella principale che contiene le risorse nell’origine dati in **[!UICONTROL Cartella di origine]** campo .
 
 1. (Facoltativo) Immetti la dimensione minima dei file in MB per includerli nel processo di acquisizione nel **[!UICONTROL Filtra per dimensione minima]** campo .
 
 1. (Facoltativo) Immetti la dimensione massima dei file in MB per includerli nel processo di acquisizione nel **[!UICONTROL Filtra per dimensione massima]** campo .
 
-1. (Facoltativo) Specifica un elenco separato da virgole di tipi MIME da escludere dall’acquisizione nel **[!UICONTROL Escludere i tipi MIME]** campo . Esempio: `image/jpeg, image/.*, video/mp4`. Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
+1. (Facoltativo) Specifica un elenco separato da virgole di tipi MIME da escludere dall’acquisizione nel **[!UICONTROL Escludere i tipi MIME]** campo . Esempio, `image/jpeg, image/.*, video/mp4`. Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
 
 1. Specifica l’elenco di tipi MIME separati da virgola da includere dall’acquisizione in **[!UICONTROL Includi tipi MIME]** campo . Vedi [tutti i formati di file supportati](/help/assets/file-format-support.md).
 
@@ -220,7 +222,7 @@ Seleziona la configurazione e fai clic su **[!UICONTROL Prova a secco]** per ric
 
 Quando si importano in massa risorse o cartelle, [!DNL Experience Manager Assets] importa l’intera struttura di ciò che esiste nella fonte di importazione. [!DNL Experience Manager] segue le regole integrate per i caratteri speciali nei nomi delle risorse e delle cartelle, pertanto questi nomi di file devono essere eliminati. Sia per il nome della cartella che per il nome della risorsa, il titolo definito dall’utente rimane invariato e viene memorizzato in `jcr:title`.
 
-Durante l&#39;importazione alla rinfusa, [!DNL Experience Manager] cerca le cartelle esistenti per evitare di reimportare le risorse e le cartelle e verifica anche le regole di pulizia applicate nella cartella padre in cui avviene l’importazione. Se le regole di pulizia vengono applicate nella cartella padre, le stesse regole vengono applicate all&#39;origine di importazione. Per la nuova importazione, vengono applicate le seguenti regole di sanatizzazione per gestire i nomi file delle risorse e delle cartelle.
+Durante l&#39;importazione alla rinfusa, [!DNL Experience Manager] cerca le cartelle esistenti per evitare di reimportare le risorse e le cartelle e verifica anche le regole di pulizia applicate nella cartella padre in cui avviene l’importazione. Se le regole di pulizia vengono applicate nella cartella padre, le stesse regole vengono applicate all&#39;origine di importazione. Per la nuova importazione, vengono applicate le seguenti regole di pulizia per gestire i nomi file delle risorse e delle cartelle.
 
 **Nomi non consentiti nell&#39;importazione in blocco**
 

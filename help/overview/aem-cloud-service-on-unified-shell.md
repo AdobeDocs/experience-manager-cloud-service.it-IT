@@ -2,21 +2,14 @@
 title: AEM as a Cloud Service su Unified Shell
 description: AEM as a Cloud Service su Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 5d9acdd9b6a377a7509e0638984cb40983fa6652
+source-git-commit: 76b7fb1d354664ec9fa773623ea4dee09164bec8
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 84%
+source-wordcount: '328'
+ht-degree: 82%
 
 ---
 
 # AEM as a Cloud Service su Unified Shell {#aem-as-a-cloud-service-on-unified-shell}
-
->[!NOTE]
->Questa funzione è disponibile nel canale prerelease di luglio 2022.
->
->Si tratta dell’introduzione di una nuova funzionalità la cui disponibilità generale è prevista con la versione di agosto 2022.
->
->Consulta la sezione [Documentazione del canale prerelease](/help/release-notes/prerelease.md#enable-prerelease) per informazioni su come abilitare la funzione per il tuo ambiente.
 
 ## Panoramica {#overview}
 

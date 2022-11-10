@@ -2,10 +2,10 @@
 title: Creazione di contenuti di destinazione utilizzando la modalità di targeting
 description: La modalità di targeting e il componente Target forniscono strumenti per la creazione di contenuti per esperienze
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
 workflow-type: tm+mt
-source-wordcount: '5342'
-ht-degree: 100%
+source-wordcount: '5414'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,25 @@ Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targe
 * Simulazione dell’esperienza utente.
 * Per ulteriori personalizzazioni, configura il componente Target.
 
-Puoi utilizzare AEM o Adobe Target come motore di targeting (per utilizzare Adobe Target devi disporre di un account Adobe Target valido). Se utilizzi Adobe Target, devi prima di tutto configurare l’integrazione. Consulta le istruzioni per l’integrazione con Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
+>[!NOTE]
+>
+>La modalità di targeting è disponibile sia nell’Editor pagina che nell’Editor frammento esperienza.
+>
+>La seguente documentazione è applicabile a entrambi (in quanto funzionano entrambi allo stesso modo), anche se è scritta per l’Editor pagina.
+
+>[!CAUTION]
+>
+>Quando si esegue il targeting nell’Editor pagina, è possibile eseguire il targeting solo dei componenti Frammento esperienza.
+>
+>Altri tipi di componenti possono essere convertiti in un frammento esperienza utilizzando **Converti in variante del frammento di esperienza** sulla barra degli strumenti del componente.
+
+<!--
+>Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
+>
+>![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+-->
+
+Puoi utilizzare AEM o Adobe Target come motore di targeting (per utilizzare Adobe Target devi disporre di un account Adobe Target valido). Se utilizzi Adobe Target, devi prima di tutto configurare l’integrazione. Consulta la sezione [istruzioni per l’integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![Contenuto di targeting](../assets/targeted-content.png)
 

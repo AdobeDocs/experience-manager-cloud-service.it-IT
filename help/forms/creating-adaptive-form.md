@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: bcd9f3cfe6c22a6db51a9e6f96576bb8cdde7d0c
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -60,10 +60,15 @@ Per creare un modulo adattivo è necessario quanto segue:
 
    Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra tocca **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
-1. Tocca **[!UICONTROL Crea]**  > **[!UICONTROL Forms adattivo]**. Viene visualizzata la procedura guidata.s
+1. Tocca **[!UICONTROL Crea]**  > **[!UICONTROL Forms adattivo]**. Viene visualizzata la procedura guidata.
 1. Nella scheda Origine, seleziona un modello:
 
    * Quando selezioni un modello modificabile, un tema e un’azione di invio specificati nel modello vengono selezionati automaticamente e la **[!UICONTROL Crea]** è abilitato. Puoi andare al **[!UICONTROL Stile]** o **[!UICONTROL Invio]** schede per selezionare un tema diverso o inviare un&#39;azione. Se il modello modificabile selezionato non specifica un tema, il pulsante crea rimane disattivato. Puoi andare al **[!UICONTROL Stili]** per selezionare manualmente un tema.
+
+      >[!NOTE]
+      >
+      > Puoi anche creare [!UICONTROL Documento di registrazione] utilizzando un editor di moduli adattivi. Per ulteriori informazioni, consulta [Supporto per i documenti di record nell’Editor di moduli adattivi](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
    * Quando selezioni un modello statico, le opzioni relative a dati, stile, invio, consegna e anteprima non sono disponibili. Quando si crea un nuovo modulo adattivo, è consigliabile utilizzare un modello modificabile.
 
 1. Nella scheda Stile , seleziona un tema:
@@ -159,3 +164,15 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
    * Se il modulo adattivo è basato su un modello di modulo, è possibile scegliere un altro modello <!-- form template, --> Schema XML o JSON o Modello dati modulo per lo stesso modello di modulo.
 
 1. Tocca **[!UICONTROL Salva]** per salvare le proprietà.
+
+È inoltre possibile modificare le proprietà del modello di modulo dall’editor di moduli adattivi o dall’editor di modelli di moduli adattivi.
+
+1. Seleziona la **[!UICONTROL Contenitore Modulo adattivo (Root)]** componente.
+1. Fai clic su ![Icona Configura](/help/forms/assets/configure-icon.svg) per aprire **[!UICONTROL Proprietà]** del contenitore Modulo adattivo.
+1. Seleziona la **[!UICONTROL Modello dati]** e effettuare una delle seguenti operazioni:
+
+   * Se il modulo adattivo non dispone di un modello di modulo, è possibile scegliere un modello di modulo e quindi selezionare <!-- a form template, --> Schema XML o JSON o modello dati del modulo.
+   * Se il modulo adattivo è basato su un modello di modulo, non è possibile modificare il modello di modulo. Puoi sceglierne un altro <!-- form template, --> Schema XML o JSON o Modello dati modulo per lo stesso modello di modulo, come applicabile.
+1. Tocca ![Salva](/help/forms/assets/check-button.png) per salvare le proprietà.
+
+![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)

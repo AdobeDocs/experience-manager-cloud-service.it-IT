@@ -3,10 +3,10 @@ title: Incorporare un modulo adattivo nella pagina AEM Sites
 seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: È possibile utilizzare il componente Contenitore di AEM Forms per aggiungere o incorporare Forms adattivo in una pagina AEM Sites per compilare e inviare un modulo senza uscire dalle pagine AEM Sites.
 feature: Adaptive Forms
-source-git-commit: dac38b2a90b2a1969e5332b8a658e8f1e0e5eccb
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 1%
+source-wordcount: '1178'
+ht-degree: 0%
 
 ---
 
@@ -20,17 +20,21 @@ AEM Forms consente agli sviluppatori di moduli di incorporare facilmente i modul
 
 Nella pagina AEM Sites è possibile aggiungere un modulo adattivo utilizzando:
 
-* **[Componente Contenitore di AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+* **Componente Contenitore di AEM Forms**
 AEM Forms fornisce un componente che è possibile aggiungere alle pagine del sito. Il componente Contenitore di AEM Forms consente di incorporare un modulo adattivo.
 
-* **[Browser risorse](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+* **Browser risorse**
 Tutti i moduli sono disponibili in Risorse. È possibile trascinare il modulo come risorsa sulla pagina.
 
 ## Prerequisiti {#prerequisites}
 
-Per incorporare un modulo adattivo in una pagina AEM Sites che utilizza un modello modificabile, accertati che il componente Modulo AEM sia configurato come componente consentito nel modello associato. Per ulteriori informazioni, consulta **Criteri e proprietà (contenitore di layout)** sezione [Creazione di modelli di pagina](/help/sites-authoring/templates.md).
+Per incorporare un modulo adattivo in una pagina AEM Sites che utilizza un modello modificabile, accertati che il componente Modulo AEM sia configurato come componente consentito nel modello associato.
 
-Nel caso di una pagina Sites che utilizza un modello statico, devi configurarla nel sistema di paragrafi della pagina del sito. Per ulteriori informazioni, consulta [Configurazione dei componenti in modalità Progettazione](/help/sites-authoring/default-components-designmode.md).
+Nel caso **Componente Contenitore di AEM Forms** non è visibile nel **Pannello del browser Componenti** della pagina AEM siti , esegui i seguenti passaggi come illustrato nel video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410544)
+
+Nel caso in cui la pagina Sites utilizzi un modello statico, devi configurarlo nel sistema di paragrafi della pagina del sito.
 
 ## Incorporazione di un modulo adattivo {#af-component}
 
@@ -48,21 +52,31 @@ Per incorporare un modulo adattivo utilizzando il componente Contenitore di AEM 
 1. Tocca il componente contenitore AEM Forms incorporato nella pagina Sites , quindi tocca ![settings_icon](assets/settings_icon.png) sulla barra delle azioni. La **[!UICONTROL Modifica contenitore AEM Forms]** viene visualizzata la finestra di dialogo .
 1. Nella finestra di dialogo Modifica contenitore AEM Forms , specifica quanto segue.
 
-   <!-- * **Asset Type:** Select the type of asset to embed. The options are Adaptive Form -->
+   **Tipo risorsa:** Seleziona il tipo di risorsa da incorporare.
    * **Percorso risorsa**: Sfoglia e seleziona il modulo adattivo da incorporare. Viene compilato automaticamente se viene rilasciato dal browser Risorse.
    * **Invia invio** : Selezionare l’azione da attivare all’invio del modulo. Puoi scegliere di mostrare un messaggio di ringraziamento o una pagina di ringraziamento.
+      * Mostra
 
       * **Messaggio di ringraziamento**: Scrivere un messaggio utilizzando l’editor Rich Text da visualizzare durante l’invio del modulo. Questa opzione è disponibile solo quando scegli di mostrare un messaggio di ringraziamento.
       * **Pagina di ringraziamento**: Individuare e selezionare la pagina da visualizzare durante l’invio del modulo. Questa opzione è disponibile solo quando scegli di mostrare una pagina di ringraziamento.
          * **Reindirizza alla pagina di ringraziamento**: Abilita l’opzione per sostituire la pagina contenente il modulo adattivo incorporato con la pagina di ringraziamento. In caso contrario, la pagina di ringraziamento sostituisce il Modulo adattivo nel contenitore AEM Forms, senza aggiornare i siti sottostanti la pagina. Questa opzione è disponibile solo quando scegli di mostrare una pagina di ringraziamento.
    * **Usa lingua pagina**: Utilizza locale della pagina AEM Sites invece delle impostazioni internazionali del modulo adattivo.
    * **Imposta lo stato attivo sul modulo**: Selezionare questa opzione per impostare lo stato attivo sul primo campo del modulo adattivo.
-
    * **Tema**: Seleziona un tema che definisce lo stile dei componenti del modulo adattivo. Lo stile include proprietà di aspetto quali stile font, colore di sfondo, dimensioni e allineamento.
+   * **Il modulo copre l&#39;intera larghezza del frame**: Se questa opzione è selezionata, non viene utilizzato iframe per il rendering del modulo.
    * **Altezza**: Specifica l’altezza del contenitore. Lascia vuoto per ridimensionare automaticamente il contenitore.
    * **Libreria client CSS**: Specifica il percorso di una libreria client CSS.
 
 1. Salva le impostazioni. Il modulo adattivo è ora incorporato nella pagina .
+
+AEM sito consente inoltre di creare al volo un Modulo adattivo utilizzando il componente contenitore dei moduli AEM. Segui i passaggi per creare un modulo adattivo utilizzando **Componente contenitore AEM Forms** nella pagina AEM siti:
+1. Aprire la pagina AEM siti in modalità di modifica in cui si desidera incorporare un modulo adattivo.
+1. Dal pannello del browser Componenti , trascina sulla pagina il componente Contenitore di AEM Forms .
+1. Fai clic sul pulsante **Plus** e verranno reindirizzati alla procedura guidata per la creazione del modulo.
+
+   ![Componente contenitore AEM modulo](/help/forms/assets/aemformcontainer.png)
+
+1. Quando si crea un modulo adattivo, si viene reindirizzati alla pagina dei siti di AEM e il modulo creato viene riprodotto nella pagina dei siti di AEM.
 
 ## Pubblicazione di un modulo adattivo incorporato {#publishing-embedded-adaptive-form}
 

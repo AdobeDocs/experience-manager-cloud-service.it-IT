@@ -2,9 +2,9 @@
 title: Come si crea un modello di modulo adattivo?
 description: Creare modelli di modulo adattivo per definire la struttura di base e il contenuto iniziale utilizzando l’Editor modelli.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1806'
 ht-degree: 1%
 
 ---
@@ -153,9 +153,17 @@ Quando si crea un modulo adattivo, è possibile visualizzare il modello elencato
 
 Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando importi il font su un’altra [!DNL AEM Forms] ad esempio, viene importato senza il relativo modello. Se un modulo viene importato ma il relativo modello non è disponibile, il modulo non viene sottoposto a rendering. Puoi creare un pacchetto del modello personalizzato da `/conf` nodo in `https://<server>:<port>/crx/packmgr`e la porta nel [!DNL AEM Forms] istanza in cui si desidera caricare il modulo. È inoltre possibile [Crea un modello utilizzando AEM Archeype e implementalo nell&#39;istanza dei Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
+>[!NOTE]
+>
+> * È possibile associare un [!UICONTROL Schema del modello dati del modulo] a un modello di modulo adattivo in un editor modelli. Vedi [Creazione di un modulo adattivo](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) per ulteriori informazioni.
+> * Puoi anche configurare le [!UICONTROL Documento di registrazione] direttamente dall’editor di moduli adattivi o dall’editor di modelli di moduli adattivi. Per ulteriori informazioni, consulta [Genera documento di record per Forms adattivo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
 ## Creazione di un modulo adattivo utilizzando il modello {#creating-an-adaptive-form-using-the-template}
 
 Dopo aver creato e abilitato un modello, questo è disponibile in Forms Manager quando si crea un modulo adattivo. Per utilizzare un modello e creare un modulo adattivo, consulta [Creazione di un modulo adattivo](creating-adaptive-form.md).
+
 
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
