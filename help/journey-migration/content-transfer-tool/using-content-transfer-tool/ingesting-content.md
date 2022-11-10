@@ -2,9 +2,9 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
+source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '916'
 ht-degree: 13%
 
 ---
@@ -54,7 +54,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. Puoi quindi monitorare la fase di acquisizione dalla vista a elenco Processi di acquisizione
+1. Puoi quindi monitorare la fase di acquisizione dalla vista a elenco Processi di acquisizione e utilizzare il menu delle azioni di acquisizione per visualizzare il registro mentre l’acquisizione progredisce.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -122,6 +122,6 @@ Potrai avviare un’acquisizione nell’ambiente di destinazione solo se apparti
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
-## Novità {#whats-next}
+## Passaggio successivo {#whats-next}
 
-Dopo aver appreso l’inserimento di contenuti in Target nello strumento Content Transfer (Trasferimento contenuti), puoi visualizzare i registri al termine di ogni passaggio (estrazione e acquisizione) e cercare gli errori. Vedi [Visualizzazione dei registri di un set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) per saperne di più.
+Una volta completato l’inserimento di contenuto in Target, puoi visualizzare i registri di ogni passaggio (estrazione e acquisizione) e cercare gli errori. Vedi [Visualizzazione dei registri di un set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) per saperne di più.
