@@ -8,9 +8,9 @@ user-guide-description: Risorse di supporto autonomo e collegamenti alla documen
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 435d42e750f868970bed8f6b3f30a2762c5ce395
+source-git-commit: 28c64256c64bf3f7f2e38e1f52a615ff8ca457bb
 workflow-type: tm+mt
-source-wordcount: '3728'
+source-wordcount: '3738'
 ht-degree: 99%
 
 ---
@@ -899,6 +899,7 @@ ht-degree: 99%
    + [Operazioni e manutenzione in AEM as a Cloud Service](/help/operations/home.md)
    + [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md)
    + [Servizio di replica dei contenuti](/help/operations/replication.md)
+   + [Monitoraggio dell&#39;infrastruttura e dei servizi in AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Attività di manutenzione](/help/operations/maintenance.md)
    + [Backup e ripristino](/help/operations/backup.md)
    + [Processi asincroni](/help/operations/asynchronous-jobs.md)
