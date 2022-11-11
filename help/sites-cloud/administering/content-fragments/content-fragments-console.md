@@ -5,10 +5,10 @@ landing-page-description: Scopri come gestire i frammenti di contenuto dalla con
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 64%
+source-wordcount: '901'
+ht-degree: 63%
 
 ---
 
@@ -33,6 +33,10 @@ La console Frammenti di contenuto è dedicata a gestione, ricerca e creazione di
 >[!NOTE]
 >
 >Una selezione di [scelte rapide da tastiera è disponibile per questa console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+
+>[!NOTE]
+>
+>Se necessario, il team di progetto può personalizzare la console. Vedi [Personalizzazione della console Frammenti di contenuto](/help/implementing/developing/extending/content-fragment-console-customizing.md) per ulteriori dettagli.
 
 È possibile accedere direttamente alla console Frammenti di contenuto dal livello superiore della navigazione globale:
 

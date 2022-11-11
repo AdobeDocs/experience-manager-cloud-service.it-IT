@@ -8,9 +8,9 @@ user-guide-description: Risorse di supporto autonomo e collegamenti alla documen
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 50b2859dc2a8a83a007bfef30d5c0959e92aa212
+source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
 workflow-type: tm+mt
-source-wordcount: '3759'
+source-wordcount: '3764'
 ht-degree: 98%
 
 ---
@@ -872,6 +872,7 @@ ht-degree: 98%
       + [Estensione dei frammenti esperienza](/help/implementing/developing/extending/experience-fragments.md)
       + [Personalizzazione ed estensione dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+      + [Personalizzazione della console Frammenti di contenuto](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + Gestire i moduli di ricerca {#manage-search-forms}
          + [Configurazione dei moduli di ricerca](/help/implementing/developing/extending/search-forms.md)
          + [Configurare i filtri di ricerca per la casella in entrata](/help/implementing/developing/extending/configure-inbox-search-rail.md)
