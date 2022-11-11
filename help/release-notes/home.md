@@ -2,7 +2,7 @@
 title: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service.
 description: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: e638ab3b436ad0e65db33ab6093bc101f413d93e
+source-git-commit: 78c0ea75affc2d2f691ef983385b188b35c10120
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 | Prodotto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versione | 2022.9.0 |
+| Versione | 2022.10.0 |
 | Tipo | Aggiornamenti continui |
 | Data di disponibilità | Aggiornamento continuo |
 
