@@ -2,9 +2,9 @@
 title: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 description: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
+source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '830'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ La versione più recente del [!DNL Workfront for Experience Manager enhanced con
          `200` poiché il codice di risposta indica l’eliminazione corretta delle sottoscrizioni di eventi errate.
    >[!NOTE]
    >
-   >Se hai già eliminato le sottoscrizioni di eventi errate prima di eseguire i passaggi indicati in questa procedura, puoi saltare il passaggio 4.
+   >Se hai già eliminato le sottoscrizioni di eventi errate prima di eseguire i passaggi indicati in questa procedura, puoi saltare l’ultimo passaggio di questa procedura.
 
 
 >[!IMPORTANT]
