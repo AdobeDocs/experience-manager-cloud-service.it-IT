@@ -2,10 +2,10 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Attività di manutenzione in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 4e820caa043eeba22d14894d6943c957ea0bf80a
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 92%
+source-wordcount: '1013'
+ht-degree: 81%
 
 ---
 
@@ -44,23 +44,23 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
   <tr>
     <td>Pulizia delle versioni</td>
     <td>Adobe</td>
-    <td>Affinché il livello di authoring rimanga performante, le versioni precedenti di ogni elemento di contenuto sotto il nodo dell’archivio <code>/content</code> vengono eliminate in base al seguente comportamento:<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Per gli ambienti esistenti (creati prima del 1° marzo 2023), l’eliminazione è disabilitata e non verrà abilitata in futuro, a meno che il cliente non abbia abilitato esplicitamente tale funzionalità e al momento in cui potrà configurarla anche con valori personalizzati.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Per impostazione predefinita, per i nuovi ambienti (creati a partire dal 1° marzo 2023) la pulizia è abilitata con i valori riportati di seguito, consentendo ai clienti di effettuare la configurazione con valori personalizzati.
      <ol>
        <li>Le versioni precedenti a 30 giorni vengono rimosse</li>
        <li>Le ultime 5 versioni degli ultimi 30 giorni vengono conservate</li>
        <li>Indipendentemente dalle regole di cui sopra, viene conservata la versione più recente.</li>
-     </ol><br>NOTA: il comportamento descritto sopra viene applicato per impostazione predefinita per i nuovi ambienti creati dopo il 14 marzo 2022. Invia un ticket all’assistenza clienti se hai bisogno di impostazioni diverse.</td>
+     </ol></td>
   </td>
   </tr>
   <tr>
     <td>Elimina log di controllo</td>
     <td>Adobe</td>
-    <td>Affinché il livello di authoring rimanga performante, i registri di controllo più vecchi sotto il nodo <code>/content</code> dell’archivio vengono eliminati in base al seguente comportamento:<br><br> <!-- See above for the two line breaks -->
+    <td>Per gli ambienti esistenti (creati prima del 1° marzo 2023), l’eliminazione è disabilitata e non verrà abilitata in futuro, a meno che il cliente non abbia abilitato esplicitamente tale funzionalità e al momento in cui potrà configurarla anche con valori personalizzati.<br><br> <!-- See above for the two line breaks -->Per impostazione predefinita, nei nuovi ambienti (creati a partire dal 1° marzo 2023) la funzione di eliminazione è attivata in <code>/content</code> nodo del repository in base al seguente comportamento:
      <ol>
        <li>Per il controllo della replica, i registri di audit precedenti a 3 giorni vengono rimossi</li>
        <li>Per il controllo DAM (Assets), i registri di audit precedenti a 30 giorni vengono rimossi</li>
        <li>Per il controllo delle pagine, i registri con più di 3 giorni vengono rimossi.</li>
-     </ol><br>NOTA: il comportamento descritto sopra viene applicato per impostazione predefinita per i nuovi ambienti creati dopo il 14 marzo 2022. Invia un ticket all’assistenza clienti se hai bisogno di impostazioni diverse.</td>
+     </ol></td>
    </td>
   </tr>
   <tr>
