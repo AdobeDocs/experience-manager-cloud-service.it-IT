@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
+source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1106'
 ht-degree: 13%
 
 ---
@@ -76,7 +76,8 @@ Guarda il video Panoramica sulla versione di ottobre 2022 per un riepilogo delle
 
 ## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
 
-### Nuove funzioni disponibili nel canale di [!DNL Forms] {#new-features-available-in-channel}
+### Nuove funzioni disponibili in [!DNL Forms] {#new-features-available-in-channel}
+
 
 * [Procedura guidata Forms adattiva](/help/forms/creating-adaptive-form.md): AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. Per creare un modulo adattivo, la procedura guidata dispone di una navigazione rapida a schede che consente di selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati. Questa versione include i seguenti miglioramenti alla procedura guidata:
 
@@ -85,8 +86,6 @@ Guarda il video Panoramica sulla versione di ottobre 2022 per un riepilogo delle
    * Usa modelli statici: I clienti con investimenti esistenti in modelli statici legacy possono continuare il loro percorso di adozione cloud utilizzando modelli statici nella procedura guidata per la creazione di moduli adattivi. Questo offre ai clienti un ulteriore tempo per migrare i vecchi modelli statici a modelli modificabili moderni.
 
 * [Rimuovere i campi nascosti da un documento di record (DoR) durante l&#39;elaborazione sul lato server](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): È possibile generare il documento di record PDF per gli utenti finali contenenti solo i campi che erano visibili durante l’esperienza di acquisizione dei dati. Dopo l’invio del modulo, il server convalida i campi nascosti all’utente finale in base ai dati inviati ed esclude dal documento per coerenza i campi.
-
-
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms}
 
