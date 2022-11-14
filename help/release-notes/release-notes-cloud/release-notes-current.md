@@ -3,10 +3,10 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ac209259b8e8ac7c1734c0662dd640809b4e2932
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 16%
+source-wordcount: '1107'
+ht-degree: 13%
 
 ---
 
@@ -75,6 +75,18 @@ Guarda il video Panoramica sulla versione di ottobre 2022 per un riepilogo delle
 * Experience Manager Assets [supporta il token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) oltre alla chiave di accesso per l’autenticazione durante la connessione all’origine dati Archiviazione BLOB di Azure per l’acquisizione delle risorse tramite lo strumento Importazione in blocco.
 
 ## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
+
+### Nuove funzioni disponibili nel canale di [!DNL Forms] {#new-features-available-in-channel}
+
+* [Procedura guidata Forms adattiva](/help/forms/creating-adaptive-form.md): AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. Per creare un modulo adattivo, la procedura guidata dispone di una navigazione rapida a schede che consente di selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati. Questa versione include i seguenti miglioramenti alla procedura guidata:
+
+   * Seleziona o deseleziona i campi: La procedura guidata consente di creare un modulo adattivo basato su schemi JSON e Form Data Model. È ora possibile selezionare un sottoinsieme di campi all’interno di uno schema da includere in un modulo adattivo. I campi selezionati vengono convertiti nei corrispondenti componenti di acquisizione dati per modulo adattivo per creare rapidamente i moduli adattivi desiderati.
+
+   * Usa modelli statici: I clienti con investimenti esistenti in modelli statici legacy possono continuare il loro percorso di adozione cloud utilizzando modelli statici nella procedura guidata per la creazione di moduli adattivi. Questo offre ai clienti un ulteriore tempo per migrare i vecchi modelli statici a modelli modificabili moderni.
+
+* [Rimuovere i campi nascosti da un documento di record (DoR) durante l&#39;elaborazione sul lato server](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): È possibile generare il documento di record PDF per gli utenti finali contenenti solo i campi che erano visibili durante l’esperienza di acquisizione dei dati. Dopo l’invio del modulo, il server convalida i campi nascosti all’utente finale in base ai dati inviati ed esclude dal documento per coerenza i campi.
+
+
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms}
 

@@ -4,9 +4,9 @@ seo-title: Reference Themes
 description: AEM Forms fornisce temi per i moduli adattivi che è possibile ottenere dalla Distribuzione di software e utilizzare per personalizzare lo stile di un modulo.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 3%
 
 ---
@@ -14,8 +14,7 @@ ht-degree: 3%
 
 # Risorse di riferimento per Forms as a Cloud Service {#reference-themes}
 
-È possibile ottenere i temi di riferimento, i modelli e i modelli di dati dei moduli installando il [Pacchetto risorse di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Consente di avviare e accelerare rapidamente lo sviluppo di Adaptive Forms. È possibile utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=it) per distribuire questo pacchetto nel tuo ambiente AEM Forms as a Cloud Service.
-
+È possibile ottenere i temi di riferimento, i modelli e i modelli di dati dei moduli installando il [Pacchetto risorse di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Consente di avviare e accelerare rapidamente lo sviluppo di Adaptive Forms. È possibile utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=it) per distribuire questo pacchetto nell’ambiente as a Cloud Service di Forms.
 Le risorse di riferimento incluse nel pacchetto sono:
 
 ## Temi {#themes}
