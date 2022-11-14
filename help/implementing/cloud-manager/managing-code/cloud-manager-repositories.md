@@ -1,82 +1,82 @@
 ---
-title: Repository di Cloud Manager
+title: Archivi di Cloud Manager
 description: Scopri come creare, visualizzare ed eliminare gli archivi Git in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Repository di Cloud Manager {#cloud-manager-repos}
+# Archivi di Cloud Manager {#cloud-manager-repos}
 
 Scopri come creare, visualizzare ed eliminare gli archivi Git in Cloud Manager.
 
 >[!NOTE]
 >
->Esiste un limite di 300 archivi in tutti i programmi di una determinata azienda o organizzazione IMS.
+>Per ogni azienda o organizzazione IMS, vi è un limite di 300 archivi per tutti i programmi.
 
-## Aggiunta e gestione di archivi {#add-manage-repos}
+## Aggiunta e gestione degli archivi {#add-manage-repos}
 
-Segui questi passaggi per visualizzare e gestire gli archivi in Cloud Manager.
+Per visualizzare e gestire gli archivi in Cloud Manager, segui la procedura riportata di seguito.
 
-1. Da **Panoramica del programma** pagina, fai clic su **Repository** e passa alla **Repository** pagina.
+1. Dalla pagina **Panoramica del programma**, fai clic sulla scheda **Archivi** e accedi alla pagina **Archivi**.
 
-1. Fai clic su **Aggiungi archivio** per avviare la procedura guidata.
+1. Per avviare la procedura guidata, fai clic su **Aggiungi archivio**.
 
-   ![Pulsante Aggiungi repository](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
+   ![Pulsante Aggiungi archivio](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
 1. Inserisci il nome e la descrizione come richiesto e fai clic su **Salva**.
 
    ![Finestra di dialogo Aggiungi archivio](/help/implementing/cloud-manager/assets/repos/repo-1.png)
 
-Al termine della procedura guidata, il nuovo archivio verrà visualizzato nella tabella.
+Al termine della procedura guidata, il nuovo archivio viene visualizzato nella tabella.
 
-Puoi selezionare il repository nella tabella e fare clic sul pulsante con i puntini di sospensione e selezionare **Copia URL archivio**, **Visualizza e aggiorna** oppure **Elimina**.
+Seleziona l’archivio nella tabella e fai clic sul pulsante con i puntini di sospensione, quindi seleziona **Copia URL archivio**, **Visualizza e aggiorna** o **Elimina**.
 
-![Opzioni archivio](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+![Opzioni dell’archivio](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-Gli archivi creati in Cloud Manager saranno disponibili anche per la selezione al momento dell’aggiunta o della modifica delle pipeline. Fare riferimento al documento [Pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) per saperne di più.
+Gli archivi creati in Cloud Manager sono disponibili per la selezione anche quando aggiungi o modifichi le pipeline. Per ulteriori informazioni, consulta il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
-Esiste un singolo archivio principale o un ramo per una determinata pipeline. Con [supporto dei sottomoduli git](#git-submodule-support), molti rami secondari possono essere inclusi in fase di creazione.
+Esiste un singolo archivio principale o ramo per ogni pipeline. Grazie al [supporto per i moduli Git secondari](#git-submodule-support), molti rami secondari possono essere aggiunti al momento della generazione.
 
 >[!NOTE]
 >
->Un utente deve avere il ruolo **Gestione distribuzione** o **Proprietario business** per poter aggiungere un archivio.
+>Per poter aggiungere un archivio, l’utente deve avere il ruolo **Responsabile dell’implementazione** o **Proprietario business**.
 
 ## Eliminazione di un archivio {#delete-repo}
 
-L&#39;eliminazione di un repository comporta:
+L’eliminazione di un archivio:
 
-* Rendi il nome del repository eliminato inutilizzabile per i nuovi archivi che possono essere creati in futuro.
-   * Messaggio di errore `Repository name should be unique within organization.` in tali casi.
-* Rendi l’archivio eliminato non disponibile in Cloud Manager e non disponibile per il collegamento a una pipeline.
+* Rende il nome dell’archivio eliminato inutilizzabile per i nuovi archivi che possono essere creati in futuro.
+   * In tali casi viene visualizzato il messaggio di errore `Repository name should be unique within organization.`.
+* Rende l’archivio eliminato non disponibile in Cloud Manager e non disponibile per il collegamento a una pipeline.
 
-Segui questi passaggi per eliminare un archivio in Cloud Manager.
+Per eliminare un archivio in Cloud Manager, segui la procedura riportata di seguito.
 
-1. Da **Panoramica del programma** pagina, fai clic su **Repository** e passa alla **Repository** pagina.
+1. Dalla pagina **Panoramica del programma**, fai clic sulla scheda **Archivi** e accedi alla pagina **Archivi**.
 
-1. Seleziona il repository e fai clic sul pulsante dei puntini di sospensione e seleziona **Elimina** per eliminare il repository.
+1. Per eliminare l’archivio, selezionalo e fai clic sul pulsante con i puntini di sospensione, quindi seleziona **Elimina**.
 
    ![Elimina archivio](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
-## Supporto per i sottomoduli Git {#git-submodule-support}
+## Supporto per i moduli Git secondari {#git-submodule-support}
 
-I sottomoduli Git possono essere utilizzati per unire il contenuto di più rami tra archivi Git in fase di creazione.
+È possibile utilizzare i moduli Git secondari per unire il contenuto di più rami tra archivi Git al momento della generazione.
 
-Quando viene eseguito il processo di creazione di Cloud Manager, dopo che l’archivio configurato per la pipeline è stato clonato e il ramo configurato viene estratto, se il ramo contiene un `.gitmodules` file nella directory principale, il comando viene eseguito.
+Quando viene eseguito il processo di build di Cloud Manager, dopo la clonazione dell’archivio configurato per la pipeline e l’estrazione del ramo configurato, se il ramo contiene un file `.gitmodules` nella directory radice il comando viene eseguito.
 
-Il comando seguente estrae ogni sottomodulo nella directory appropriata.
+Il comando seguente estrae ogni modulo secondario nella directory appropriata.
 
 ```
 $ git submodule update --init
 ```
 
-Questa tecnica rappresenta una potenziale alternativa alla soluzione descritta nel documento [Utilizzo di più archivi Git di origine](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) per le organizzazioni che hanno familiarità con l’utilizzo dei sottomoduli git e che non desiderano gestire un processo di unione esterno.
+Questa tecnica rappresenta una potenziale alternativa alla soluzione descritta nel documento [Utilizzo di più archivi Git di origine](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) per le organizzazioni che hanno familiarità con l’utilizzo dei moduli Git secondari e non desiderano gestire un processo di unione esterno.
 
-Ad esempio, supponiamo che ci siano tre archivi, ciascuno contenente un singolo ramo denominato `main`. Nell’archivio principale, ovvero quello configurato nelle pipeline, il `main` un ramo `pom.xml` file che dichiara i progetti contenuti negli altri due archivi.
+Supponiamo ad esempio la presenza di tre archivi, ciascuno contenente un singolo ramo denominato `main`. Nell’archivio principale, ovvero quello configurato nelle pipeline, il ramo `main` include un file `pom.xml` dove sono riportati i progetti contenuti negli altri due archivi.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -97,14 +97,14 @@ Ad esempio, supponiamo che ci siano tre archivi, ciascuno contenente un singolo 
 </project>
 ```
 
-Aggiungeresti quindi i sottomoduli per gli altri due archivi.
+A questo punto, si aggiungono i moduli secondari degli altri due archivi.
 
 ```shell
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-Questo determina un `.gitmodules` simile al seguente.
+Questo determina un file `.gitmodules` simile al seguente.
 
 ```text
 [submodule "project-a"]
@@ -117,16 +117,16 @@ Questo determina un `.gitmodules` simile al seguente.
     branch = main
 ```
 
-Ulteriori informazioni sui sottomoduli git sono disponibili nella sezione [Manuale Di Riferimento Git.](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+Per ulteriori informazioni sui moduli Git secondari, consulta il [Manuale di riferimento Git.](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
 ### Limitazioni e consigli {#limitations-recommendations}
 
-Quando utilizzi i sottomoduli git, tieni presente le seguenti limitazioni.
+Quando utilizzi i moduli Git secondari, tieni presente le seguenti limitazioni.
 
-* L’URL Git deve essere esattamente nella sintassi descritta nella sezione precedente.
-* Sono supportati solo i sottomoduli nella directory principale del ramo.
+* La sintassi dell’URL Git deve essere esattamente quella descritta nella sezione precedente.
+* I moduli secondari sono supportati unicamente nella radice del ramo.
 * Per motivi di sicurezza, non incorporare le credenziali negli URL Git.
-* Se non diversamente necessario, si consiglia vivamente di utilizzare sottomoduli superficiali.
-   * Per eseguire questa operazione, esegui `git config -f .gitmodules submodule.<submodule path>.shallow true` per ciascun sottomodulo.
-* I riferimenti ai sottomoduli Git vengono archiviati in commit specifici Git. Di conseguenza, quando vengono apportate modifiche all’archivio dei sottomoduli, il commit a cui si fa riferimento deve essere aggiornato.
-   * Ad esempio, utilizzando `git submodule update --remote`
+* Se non diversamente necessario, è consigliabile utilizzare dei moduli secondari superficiali.
+   * Per eseguire l’operazione, esegui `git config -f .gitmodules submodule.<submodule path>.shallow true` per ciascun modulo secondario.
+* I riferimenti ai moduli Git secondari vengono archiviati in commit Git specifici. Di conseguenza, quando si apportano modifiche all’archivio dei moduli secondari, il commit a cui si fa riferimento deve essere aggiornato.
+   * Ad esempio, utilizzando `git submodule update --remote`. 

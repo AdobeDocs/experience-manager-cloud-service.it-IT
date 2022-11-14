@@ -1,50 +1,50 @@
 ---
-title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.12.0
-description: Queste sono le note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.12.0.
+title: Note sulla versione 2021.12.0 di Cloud Manager in AEM as a Cloud Service
+description: Queste sono le note sulla versione 2021.12.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: ee920bc5-cad7-4fac-bf73-bc1178699f90
 source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.12.0 {#release-notes}
+# Note sulla versione 2021.12.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.12.0.
+Questa pagina illustra le note sulla versione 2021.12.0 di Cloud Manager in AEM as a Cloud Service.
 
 >[!NOTE]
 >
->Fai riferimento a [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) per le note sulla versione corrente per Adobe Experience Manager as a Cloud Service.
+>Per le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, consulta [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.12.0 è il 16 dicembre 2021. La prossima versione è prevista per il 20 gennaio 2022.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.12.0 è il 16 dicembre 2021. La prossima versione è pianificata per il 20 gennaio 2022.
 
 ## Novità {#what-is-new}
 
-* L’hash di commit, già visibile nell’interfaccia utente, ora viene fornito anche nell’API.
-* La pagina Attività ora include un pop-over per l’esecuzione delle pipeline che fornisce un riepilogo dei dettagli della pipeline a colpo d’occhio.
-* Sono stati aggiunti aggiornamenti per includere ulteriori dettagli presentati nella pagina Attività .
-* La scheda Informazioni in Cloud Manager ora include l’accesso rapido alle guide API e alle risorse associate.
-* Un utente con il ruolo di gestione distribuzione può ora avviare la procedura guidata per la creazione di progetti/rami per un archivio senza rami dal menu azione nella pagina repository.
-* Deployment Manager, che si trova nel flusso di lavoro di aggiunta o modifica della pipeline, ora viene informato su come creare un ramo o un progetto se l’archivio selezionato non dispone di rami.
-* È stata aggiunta una nuova funzione self-service di Cloud Manager per consentire [aggiunta di variabili e segreti in formato libero a livello di ambiente.](/help/implementing/cloud-manager/environment-variables.md)
-* Con il nuovo [Componente aggiuntivo Demos di riferimento](/help/journey-sites/demos-add-on/overview.md) (disponibile il 17 dicembre 2021), è possibile installare le ultime basi di codice demo per i prodotti AEM ed essere pronti per essere implementati tramite il nuovo [strumento rapido per la creazione di siti](/help/journey-sites/quick-site/overview.md) in Sites.
-* Le pipeline front-end ora supportano le variabili della pipeline.
-* È ora possibile abilitare gli schermi nella finestra di dialogo Modifica programma per tutte le sandbox.
-* Le indicazioni fornite dalla scheda di invito all’azione nella pagina della panoramica sono state aggiornate per riflettere con precisione la sua associazione con la pipeline di stack completa di produzione.
-* Sono stati aggiunti miglioramenti alla pagina Attività per ottenere ulteriori dettagli applicabili alle pipeline, tra cui codice sorgente, ID commit e così via.
-* Sono stati apportati aggiornamenti minori all’interfaccia utente durante la copia delle voci TXT (&quot;valore TXT&quot; invece di &quot;record TXT&quot;) per rimuovere potenziali confusione.
-* [Documentazione relativa agli errori del certificato](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) è stato aggiornato per fornire ulteriori esempi insieme ai passaggi necessari per risolvere i problemi.
-* È ora disponibile un’opzione nell’esecuzione della pipeline front-end per rifiutare o approvare prima della distribuzione in produzione.
-* La versione dell’Archetipo di progetto AEM utilizzato da Cloud Manager è stata aggiornata alla versione 32.
+* Ora l’hash di commit, già visibile nell’interfaccia utente, viene visualizzato anche nell’API.
+* Ora la pagina Attività include un popover per l’esecuzione delle pipeline che fornisce una panoramica di riepilogo dei dettagli della pipeline.
+* Sono stati aggiunti aggiornamenti per includere ulteriori dettagli nella pagina Attività.
+* Ora la scheda Scopri in Cloud Manager include l’accesso rapido alle guide API e alle risorse associate.
+* Ora l’utente con il ruolo Responsabile dell’implementazione può avviare la procedura guidata per la creazione di progetti o rami per un archivio senza rami dal menu Azioni nella pagina degli archivi.
+* Ora l’utente con il ruolo Responsabile dell’implementazione, incluso nel flusso di lavoro per l’aggiunta o la modifica della pipeline, viene informato su come creare un ramo o un progetto se l’archivio selezionato non presenta rami.
+* È stata aggiunta una nuova funzione self-service di Cloud Manager per consentire l’[aggiunta di variabili e segreti in formato libero a livello di ambiente.](/help/implementing/cloud-manager/environment-variables.md)
+* Con il nuovo [componente aggiuntivo Reference Demos](/help/journey-sites/demos-add-on/overview.md) (disponibile dal 17 dicembre 2021) è possibile installare le basi del codice di dimostrazione più aggiornate per i prodotti AEM e distribuirle in Sites tramite il nuovo [strumento per la creazione rapida dei siti](/help/journey-sites/quick-site/overview.md).
+* Ora le pipeline front-end supportano le variabili della pipeline.
+* Ora è possibile abilitare Screens nella finestra di dialogo Modifica programma per tutti i sandbox.
+* Le indicazioni fornite dalla scheda di invito all’azione nella pagina della panoramica sono state aggiornate per riflettere con precisione l’associazione con la pipeline full stack di produzione.
+* Sono stati aggiunti miglioramenti alla pagina Attività per rendere visibili ulteriori dettagli applicabili alle pipeline, tra cui codice sorgente, ID commit e altro.
+* Sono stati apportati aggiornamenti minori all’interfaccia utente durante la copia delle voci TXT (“valore TXT” invece di “record TXT”) per eliminare potenziale confusione.
+* La [documentazione relativa agli errori dei certificati](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) è stata aggiornata per fornire ulteriori esempi oltre ai passaggi di risoluzione dei problemi necessari.
+* Ora nell’esecuzione della pipeline front-end è disponibile un’opzione per rifiutare o approvare l’operazione prima della distribuzione nell’ambiente di produzione.
+* L’archetipo del progetto AEM utilizzato da Cloud Manager è stato aggiornato alla versione 32.
 
 
 ## Correzioni di bug {#bug-fixes}
 
-* Gli artefatti funzionali e di test dell’interfaccia utente non sono stati inclusi nel registro dei passaggi della build.
-* I registri per i passaggi di test di prodotto, funzionale e interfaccia utente non erano accessibili tramite l’API pubblica.
-* In rari casi, il collegamento dalla pagina dei dettagli dell’ambiente al servizio di pubblicazione o anteprima non funzionerebbe.
-* Le pipeline di produzione dello stack complete rimangono denominate &quot;pipeline di produzione&quot; anche quando l’utente immette un nome diverso nel campo name.
+* Gli artefatti funzionali e dei test dell’interfaccia utente non venivano inclusi nel registro della fase di build.
+* I registri per i passaggi dei test di prodotto, funzionali e interfaccia utente non erano accessibili tramite l’API pubblica.
+* In rari casi, il collegamento dalla pagina Dettagli dell’ambiente al servizio di pubblicazione o anteprima non funzionava.
+* Le pipeline full stack di produzione rimanevano denominate “Pipeline di produzione” anche quando l’utente inseriva un nome diverso nel relativo campo.

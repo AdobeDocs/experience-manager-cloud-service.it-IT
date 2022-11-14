@@ -1,29 +1,29 @@
 ---
-title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2020.2.0
-description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2020.2.0
+title: Note sulla versione 2020.2.0 di Cloud Manager in AEM as a Cloud Service
+description: Note sulla versione 2020.2.0 di Cloud Manager in AEM as a Cloud Service
 feature: Release Information
 exl-id: 3f3324d9-53db-458d-9523-2e0d5d6dc3f7
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.2.0 {#release-notes}
+# Note sulla versione 2020.2.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.2.0.
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.2.0 è il 13 febbraio 2020.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2020.2.0 è il 13 febbraio 2020.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Novità {#what-is-new}
 
 * La versione dell’archetipo di Adobe Experience Manager è stata aggiornata alla versione 22.
-* Gli ambienti di stage e produzione nei programmi Sandbox/Demo ora possono essere aggiornati tramite l’interfaccia utente di Cloud Manager.
+* Gli ambienti di staging e produzione nei programmi Sandbox/Demo ora possono essere aggiornati tramite l’interfaccia utente di Cloud Manager.
 * Gli URL utilizzati nelle notifiche di Experience Cloud sono stati ottimizzati per evitare un reindirizzamento aggiuntivo.
 * I passaggi di esecuzione della pipeline interrotti a causa di timeout ora vengono segnalati in modo esplicito.
 * Il passaggio di analisi del codice ora include un registro scaricabile.

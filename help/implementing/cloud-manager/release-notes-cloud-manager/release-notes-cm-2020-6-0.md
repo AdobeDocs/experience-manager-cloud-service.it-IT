@@ -1,30 +1,30 @@
 ---
-title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2020.6.0
-description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2020.6.0
+title: Note sulla versione 2020.6.0 di Cloud Manager in AEM as a Cloud Service
+description: Note sulla versione 2020.6.0 di Cloud Manager in AEM as a Cloud Service
 feature: Release Information
 exl-id: 879a5025-f94f-4549-bf6e-e1cc6b6a7b58
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.6.0 {#release-notes}
+# Note sulla versione 2020.6.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.6.0.
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.6.0 è il 4 giugno 2020.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2020.6.0 è il 4 giugno 2020.
 
 ## Novità {#whats-new-cloud-manager}
 
-* Un utente con il ruolo *Proprietario business* in Cloud Manager è ora in grado di eliminare un programma sandbox dalla pagina di destinazione (tramite il pulsante di azione rapida nella scheda Programma) o dall’interno del programma.
+* Ora l’utente con il ruolo *Proprietario business* in Cloud Manager può eliminare un programma sandbox dalla pagina di destinazione (tramite il pulsante di azione rapida nella scheda Programma) o dall’interno del programma.
 
-   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=it).
 
-* Un utente del programma sandbox con il ruolo di *Proprietario business* o *Manager implementazione* in Cloud Manager è ora in grado di eliminare l’ambiente di produzione e stage impostato tramite l’interfaccia di Cloud Manager. L’opzione di eliminazione è ora disponibile sia nella scheda Ambiente nella pagina **Panoramica dei programmi**, sia nella pagina **Ambienti**. Selezionando l’opzione Elimina in Produzione o Stage, viene eliminato anche l’altro nel set.
+* Ora l’utente del programma sandbox con il ruolo di *Proprietario business* o *Responsabile dell’implementazione* in Cloud Manager può eliminare il set di ambienti di produzione e di staging impostato tramite l’interfaccia utente di Cloud Manager. L’opzione di eliminazione è ora disponibile sia nella scheda Ambiente nella pagina **Panoramica dei programmi**, sia nella pagina **Ambienti**. Selezionando l’opzione di eliminazione nell’ambiente di produzione o staging, viene eliminato anche l’altro nel set.
 
    Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
@@ -38,17 +38,17 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.6.0 è il 4 
 
 * Un utente con il ruolo SysAdmin ora ha accesso con un solo clic alla posizione in Admin Console da cui è possibile gestire i ruoli o le autorizzazioni degli utenti per Cloud Manager. Nella pagina di destinazione è ora disponibile un pulsante **Gestisci accesso** accanto al pulsante **Aggiungi programma**.
 
-   Per ulteriori informazioni, consulta [Attività SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks).
+   Per ulteriori informazioni, consulta [Attività SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#sysadmin-tasks).
 
 * Un utente con il ruolo SysAdmin ora dispone dell’accesso con un solo clic all’istanza di authoring direttamente da Cloud Manager.
 
-   Per ulteriori informazioni, consulta [Gestione dell’accesso all’istanza di authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem).
+   Per ulteriori informazioni, consulta [Gestione dell’accesso all’istanza di authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#manage-access-aem).
 
 * Il registro Build ora include l’elenco degli artefatti individuati, inclusi i pacchetti di contenuti saltati.
 
-* Il passaggio Build ora verifica se tutti i pacchetti di contenuto generati includono tutte le proprietà obbligatorie: nome, gruppo e versione.
+* La fase di build ora verifica se tutti i pacchetti di contenuto generati includono tutte le proprietà obbligatorie: nome, gruppo e versione.
 
-* Il passaggio Build ora verifica se la build ha prodotto almeno un pacchetto di contenuto.
+* La fase di build ora verifica se la build ha generato almeno un pacchetto di contenuto.
 
 ### Correzioni di bug {#bug-fixes-cm}
 
@@ -56,7 +56,7 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.6.0 è il 4 
 
 * L’identificatore di versione di AEM non veniva visualizzato in modo coerente nella pagina **Panoramica dei programmi**.
 
-* Durante la configurazione della pipeline di produzione, l’opzione **Scheduled Deployment** (Implementazione pianificata) non era visibile per alcuni clienti.
+* Durante la configurazione della pipeline di produzione, l’opzione **Distribuzione pianificata** non era visibile per alcuni clienti.
 
 ### Problemi noti {#known-issues-cm}
 

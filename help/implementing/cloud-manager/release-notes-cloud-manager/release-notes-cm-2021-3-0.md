@@ -1,62 +1,62 @@
 ---
-title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.3.0
-description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.3.0
+title: Note sulla versione 2021.3.0 di Cloud Manager in AEM as a Cloud Service
+description: Note sulla versione 2021.3.0 di Cloud Manager in AEM as a Cloud Service
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.3.0 {#release-notes}
+# Note sulla versione 2021.3.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione di Cloud Manager in AEM 2021.3.0.
+Questa pagina illustra le note sulla versione 2021.3.0 di Cloud Manager in AEM as a Cloud Service.
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.3.0 è l’11 marzo 2021.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.3.0 è il 11 marzo 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Novità {#what-is-new}
 
-* Clienti con ambienti con configurazioni di nomi di dominio personalizzati preesistenti per [ELENCHI CONSENTITI IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizzerà un messaggio sulle configurazioni esistenti in precedenza e sarà in grado di self-service tramite l’interfaccia utente di .
+* Ora i clienti con ambienti con configurazioni preesistenti dei nomi di dominio personalizzati per [Elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizzano un messaggio relativo alle precedenti configurazioni esistenti e possono intraprendere azioni in modalità self-service tramite l’interfaccia utente.
 
-* Gli utenti con le autorizzazioni necessarie possono ora modificare un programma, consentendo loro di effettuare le seguenti operazioni in modalità self-service:
-   * Aggiungi la soluzione Sites a un programma esistente con Assets o viceversa.
-   * Rimuovi Sites o Assets da un programma esistente sia con Sites che con Assets.
-   * Aggiungi il secondo diritto inutilizzato alla soluzione a un programma esistente o a un nuovo programma.
+* Ora gli utenti con le autorizzazioni necessarie possono modificare un programma ed effettuare le seguenti operazioni in modalità self-service:
+   * Aggiungere la soluzione Sites a un programma esistente con Assets o viceversa.
+   * Rimuovere Sites o Assets da un programma esistente con entrambi Sites e Assets.
+   * Aggiungere il secondo diritto inutilizzato di una soluzione a un programma esistente o nuovo.
 
-* **Aggiornamento della manutenzione AEM** verrà ora visualizzata l’etichetta per le schermate di esecuzione della pipeline e di attività.
+* Ora l’etichetta **Aggiornamento di manutenzione di AEM** viene visualizzata per entrambe le schermate Esecuzione delle pipeline e Attività.
 
-* Se un ambiente è in ibernazione ma è disponibile anche un aggiornamento AEM, il **Sospeso** lo stato ha la precedenza **Aggiornamento disponibile**.
+* Ora se un ambiente è in stato di sospensione ma è disponibile un aggiornamento di AEM lo stato **Sospeso** ha la precedenza su **Aggiornamento disponibile**.
 
-* Gli utenti possono ora visualizzare i propri ruoli di Cloud Manager selezionando l’opzione &quot;Visualizza ruoli Cloud Manager&quot; dopo aver visualizzato l’icona Profilo utente (in alto a destra) di Unified Shell.
+* Ora gli utenti possono visualizzare i ruoli di Cloud Manager dall’icona Profilo utente (in alto a destra) di Unified Shell selezionando l’opzione “Visualizza ruoli di Cloud Manager”.
 
-* Etichetta **Domanda di approvazione** è stato riassegnato a **Approvazione produzione** per una maggiore chiarezza.
+* L’etichetta **Domanda di approvazione** è stata rinominata in **Approvazione produzione** per maggiore chiarezza.
 
-* La **Versione** l’etichetta è stata rinominata in **Tag Git** nella schermata di esecuzione della pipeline di produzione .
+* L’etichetta **Versione** è stata rinominata in **Tag Git** nella schermata di esecuzione della pipeline di produzione.
 
-* Le etichette che definiscono il comportamento quando metriche importanti non soddisfano la soglia definita sono state rinominate per rispecchiare il loro comportamento effettivo: **Annulla immediatamente** e **Approva immediatamente**.
+* Le etichette che definiscono il comportamento quando delle metriche importanti non soddisfano la soglia definita sono state rinominate per rispecchiare il comportamento effettivo: **Annulla immediatamente** e **Approva immediatamente**.
 
-* Gli elenchi di elementi obsoleti di classi e metodi sono stati aggiornati in base alla versione `2021.3.4997.20210303T022849Z-210225` dell’SDK AEM Cloud Service.
+* Gli elenchi di classi e metodi obsoleti sono stati aggiornati in base alla versione `2021.3.4997.20210303T022849Z-210225` dell’SDK di AEM Cloud Service.
 
-* La pipeline di produzione di Cloud Manager ora include [Test personalizzati dell&#39;interfaccia utente](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) funzionalità.
+* Ora la pipeline di produzione di Cloud Manager include la funzionalità [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Correzioni di bug  {#bug-fixes}
 
-* Il controllo delle versioni del pacchetto è stato ignorato in alcuni casi durante AEM aggiornamento push.
+* Il controllo delle versioni del pacchetto veniva ignorato in alcuni casi durante l’aggiornamento push di AEM.
 
-* Alcuni problemi di qualità non sono stati rilevati correttamente quando i pacchetti sono stati incorporati in altri pacchetti.
+* Alcuni problemi di qualità non venivano rilevati correttamente quando i pacchetti erano incorporati in altri pacchetti.
 
-* In situazioni oscure, il nome predefinito del programma generato all’apertura della finestra di dialogo Aggiungi programma potrebbe essere un duplicato di un nome di programma esistente.
+* In situazioni ignote, il nome predefinito del programma generato all’apertura della finestra di dialogo Aggiungi programma poteva essere un duplicato di un nome di programma esistente.
 
-* Talvolta, se l’utente si allontana dalla pagina di esecuzione della pipeline immediatamente dopo l’avvio di una pipeline, viene visualizzato un messaggio di errore che indica che l’azione non è riuscita, anche se l’esecuzione viene effettivamente avviata.
+* A volte, se l’utente si allontanava dalla pagina di esecuzione della pipeline subito dopo aver avviato una pipeline, veniva visualizzato un messaggio di errore indicante che l’azione non era riuscita sebbene l’esecuzione venisse effettivamente avviata.
 
-* Il passaggio di compilazione è stato riavviato inutilmente quando le build del cliente hanno generato pacchetti non validi.
+* La fase di build veniva riavviata inutilmente quando le build del cliente generavano pacchetti non validi.
 
-* In alcuni casi, l’utente potrebbe visualizzare uno stato verde &quot;attivo&quot; accanto a un Inserire nell&#39;elenco Consentiti IP anche quando tale configurazione non è stata distribuita.
+* In alcuni casi, l’utente visualizzava uno stato verde “attivo” a fianco dell’elenco IP consentiti anche quando tale configurazione non era stata distribuita.
 
-* Tutte le pipeline di produzione esistenti verranno abilitate automaticamente con il passaggio Audit esperienze .
+* Ora tutte le pipeline di produzione esistenti sono abilitate automaticamente con il passaggio Audit dell’esperienza.

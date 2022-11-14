@@ -1,27 +1,27 @@
 ---
-title: Ambiente build
-description: Scopri l’ambiente di build di Cloud Manager e come crea e verifica il codice.
+title: Ambiente di build
+description: Scopri l’ambiente di build di Cloud Manager e come genera e verifica il codice.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 1%
+ht-degree: 98%
 
 ---
 
-# Ambiente build {#build-environment}
+# Ambiente di build {#build-environment}
 
-Scopri l’ambiente di build di Cloud Manager e come crea e verifica il codice.
+Scopri l’ambiente di build di Cloud Manager e come genera e verifica il codice.
 
-## Dettagli dell’ambiente di generazione {#build-environment-details}
+## Dettagli sull’ambiente di build {#build-environment-details}
 
-Cloud Manager crea ed esegue il test del codice utilizzando un ambiente di build specializzato.
+Cloud Manager genera e verifica il codice mediante un ambiente di build specializzato.
 
-* L&#39;ambiente di creazione è basato su Linux, derivato da Ubuntu 18.04.
+* L’ambiente di build è basato su Linux, derivato da Ubuntu 18.04.
 * Apache Maven 3.6.0 è installato.
 * Le versioni Java installate sono Oracle JDK 8u202 e Oracle JDK 11.0.2.
-* Per impostazione predefinita, la `JAVA_HOME` variabile di ambiente impostata su `/usr/lib/jvm/jdk1.8.0_202`  che contiene l&#39;Oracle JDK 8u202. Vedi [Versione JDK di esecuzione Maven alternativa](#alternate-maven-jdk-version) per ulteriori dettagli.
-* Ci sono alcuni pacchetti di sistema aggiuntivi installati che sono necessari.
+* Per impostazione predefinita, la variabile di ambiente `JAVA_HOME` è impostata su `/usr/lib/jvm/jdk1.8.0_202`, che contiene Oracle JDK 8u202. Per ulteriori informazioni, consulta la sezione [Versione JDK alternativa per l’esecuzione Maven](#alternate-maven-jdk-version).
+* È necessario installare anche alcuni pacchetti di sistema aggiuntivi.
 
    * `bzip2`
    * `unzip`
@@ -29,29 +29,29 @@ Cloud Manager crea ed esegue il test del codice utilizzando un ambiente di build
    * `imagemagick`
    * `graphicsmagick`
 
-* Altri pacchetti possono essere installati in fase di creazione come descritto nella sezione [Installazione di pacchetti di sistema aggiuntivi.](#installing-additional-system-packages)
-* Ogni costruzione è fatta su un ambiente incontaminato; il contenitore build non mantiene nessuno stato tra le esecuzioni.
-* Maven viene sempre eseguito con i tre comandi seguenti.
+* Altri pacchetti possono essere installati al momento della generazione, come descritto nella sezione [Installazione di pacchetti di sistema aggiuntivi.](#installing-additional-system-packages)
+* Ogni generazione viene svolta in un ambiente incontaminato; il contenitore della build non conserva nessuno stato tra le esecuzioni.
+* Maven viene sempre eseguito con i tre comandi riportati di seguito.
 
 * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
 * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
 * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
-* Maven è configurato a livello di sistema con un `settings.xml` file , che include automaticamente l’archivio degli artefatti dell’Adobe pubblico utilizzando un profilo denominato `adobe-public`. (Vedi [Archivio Maven pubblico di Adobe](https://repo1.maven.org/) per ulteriori dettagli).
+* Maven è configurato a livello di sistema con un file `settings.xml`, che include automaticamente l’archivio di artefatti pubblico di Adobe utilizzando un profilo denominato `adobe-public`. Per ulteriori informazioni, consulta [Archivio Maven pubblico di Adobe](https://repo1.maven.org/).
 
 >[!NOTE]
 >
->Anche se Cloud Manager non definisce una versione specifica del `jacoco-maven-plugin`, la versione utilizzata deve essere almeno `0.7.5.201505241946`.
+>Sebbene Cloud Manager non definisca una versione specifica del `jacoco-maven-plugin`, la versione utilizzata deve essere `0.7.5.201505241946` o superiore.
 
 ### Utilizzo di una versione Java specifica {#using-java-support}
 
-Per impostazione predefinita, i progetti sono generati dal processo di creazione di Cloud Manager utilizzando il JDK di Oracle 8. I clienti che desiderano utilizzare un JDK alternativo hanno due opzioni.
+Per impostazione predefinita, i progetti sono generati dal processo di build di Cloud Manager utilizzando il JDK di Oracle 8. Chi desidera utilizzare un JDK alternativo ha due opzioni.
 
-* [Usa le catene degli strumenti Maven.](#maven-toolchains)
-* [Seleziona una versione JDK alternativa per l’intero processo di esecuzione Maven.](#alternate-maven-jdk-version)
+* [Usare le toolchain Maven.](#maven-toolchains)
+* [Selezionare una versione JDK alternativa per l’intero processo di esecuzione Maven.](#alternate-maven-jdk-version)
 
-#### Catene di strumenti Maven {#maven-toolchains}
+#### Toolchain Maven {#maven-toolchains}
 
-La [Plug-in catene di strumenti Maven](https://maven.apache.org/plugins/maven-toolchains-plugin/) consente ai progetti di selezionare un JDK specifico (o toolchain) da utilizzare nel contesto dei plug-in Maven consapevoli delle catene di strumenti. Questo viene fatto nel `pom.xml` specificando un valore di fornitore e di versione.
+Il [plug-in Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/) consente di selezionare un JDK (o toolchain) specifico per i progetti da utilizzare nel contesto dei plug-in Maven compatibili con le toolchain. L’operazione viene eseguita nel file `pom.xml` del progetto specificando un fornitore e un valore per la versione.
 
 ```xml
 <plugin>
@@ -76,80 +76,80 @@ La [Plug-in catene di strumenti Maven](https://maven.apache.org/plugins/maven-to
 </plugin>
 ```
 
-Questo farà sì che tutti i plug-in Maven consapevoli delle catene di strumenti utilizzino l’Oracle JDK, versione 11.
+Questo farà sì che tutti i plug-in Maven compatibili con le toolchain utilizzino Oracle JDK versione 11.
 
-Quando si utilizza questo metodo, Maven stesso viene comunque eseguito utilizzando il JDK predefinito (Oracle 8) e il `JAVA_HOME`  la variabile di ambiente non viene modificata. Pertanto, il controllo o l’applicazione della versione Java tramite plug-in come Apache Maven Enforcer Plugin non funziona e tali plug-in non devono essere utilizzati.
+Quando si utilizza questo metodo, Maven continua a essere eseguito con il JDK predefinito (Oracle 8) e la variabile di ambiente `JAVA_HOME` non viene modificata. Pertanto, il controllo o l’applicazione della versione Java tramite plug-in come Apache Maven Enforcer non funziona. Non utilizzare questi plug-in.
 
 Le combinazioni fornitore/versione attualmente disponibili sono:
 
-| Produttore | Versione |
+| Fornitore | Versione |
 |---|---|
 | `oracle` | `8` |
 | `oracle` | `11` |
 | `sun` | `8` |
 | `sun` | `11` |
 
-Questa tabella si riferisce ai numeri di versione del prodotto. I numeri di build Java o i percorsi di installazione possono riflettere le vecchie convenzioni di versione Java, come 1.8 per Java 8.
+Questa tabella si riferisce ai numeri di versione del prodotto. I numeri di build Java o i percorsi di installazione possono riflettere le precedenti convenzioni di versione Java, come 1.8 per Java 8.
 
 >[!NOTE]
 >
->A partire da aprile 2022, Oracle JDK sarà il JDK predefinito per lo sviluppo e il funzionamento delle applicazioni AEM. Il processo di creazione di Cloud Manager passa automaticamente a utilizzando Oracle JDK, anche se nella toolchain Maven è selezionata esplicitamente un’opzione alternativa. Per ulteriori informazioni, consulta le note sulla versione di aprile pubblicate .
+>A partire da aprile 2022, Oracle JDK sarà il JDK predefinito per lo sviluppo e il funzionamento delle applicazioni AEM. Il processo di build di Cloud Manager passa automaticamente all’uso di Oracle JDK, anche se nella toolchain Maven è selezionata esplicitamente un’opzione alternativa. Per ulteriori informazioni, consulta le note sulla versione di aprile pubblicata.
 
-#### Versione JDK di esecuzione Maven alternativa {#alternate-maven-jdk-version}
+#### Versione JDK alternativa per l’esecuzione Maven {#alternate-maven-jdk-version}
 
-È anche possibile selezionare Java 8 o Java 11 come JDK per l&#39;intera esecuzione Maven. A differenza delle opzioni delle catene degli strumenti, questo cambia il JDK utilizzato per tutti i plugin a meno che la configurazione delle catene degli utensili non sia impostata anche nel qual caso la configurazione delle catene degli utensili viene ancora applicata per i plugin Maven consapevoli delle catene degli utensili. Di conseguenza, verifica e applica la versione Java utilizzando il [Plug-in applicazione Apache Maven](https://maven.apache.org/enforcer/maven-enforcer-plugin/) funzionerà.
+È inoltre possibile selezionare Java 8 o Java 11 come JDK per l’intera esecuzione Maven. A differenza delle opzioni toolchain, questa opzione modifica il JDK utilizzato per tutti i plug-in, a meno che non venga impostata anche la configurazione delle toolchain. In questo caso, la configurazione delle toolchain viene ancora applicata per i plug-in Maven compatibili con le toolchain. Di conseguenza, controllare e applicare la versione Java con il [plug-in Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) funzionerà.
 
-A questo scopo, crea un file denominato `.cloudmanager/java-version` nel ramo dell’archivio git utilizzato dalla pipeline. Questo file può avere il contenuto 11 o 8. Qualsiasi altro valore viene ignorato. Se è specificato 11, si utilizza l&#39;Oracle 11 e la `JAVA_HOME` variabile di ambiente impostata su `/usr/lib/jvm/jdk-11.0.2`. Se si specifica 8, si utilizza l&#39;Oracle 8 e la `JAVA_HOME` variabile di ambiente impostata su `/usr/lib/jvm/jdk1.8.0_202`.
+Per eseguire l’operazione, crea un file denominato `.cloudmanager/java-version` nel ramo dell’archivio Git utilizzato dalla pipeline. Questo file può avere contenuti della versione 11 o 8. Qualsiasi altro valore viene ignorato. Se si specifica 11, viene utilizzato Oracle 11 e la variabile di ambiente `JAVA_HOME` viene impostata su `/usr/lib/jvm/jdk-11.0.2`. Se si specifica 8, viene utilizzato Oracle 8 e la variabile di ambiente `JAVA_HOME` viene impostata su `/usr/lib/jvm/jdk1.8.0_202`.
 
 ## Variabili di ambiente {#environment-variables}
 
 ### Variabili di ambiente standard {#standard-environ-variables}
 
-Potrebbe essere necessario variare il processo di creazione in base alle informazioni sul programma o sulla pipeline.
+Potrebbe essere necessario variare il processo di build in base alle informazioni sul programma o sulla pipeline.
 
-Ad esempio, se la minimizzazione JavaScript in fase di creazione viene eseguita tramite uno strumento come il gulp, potrebbe essere utile utilizzare un livello di minimizzazione diverso durante la creazione di un ambiente di sviluppo rispetto alla creazione di uno staging e produzione.
+Ad esempio, se in fase di generazione la minimizzazione JavaScript viene eseguita tramite uno strumento come Gulp, potrebbe risultare utile utilizzare livelli di minimizzazione diversi per la build di un ambiente di sviluppo e per la build di un ambiente di staging e produzione.
 
-Per supportare questa funzione, Cloud Manager aggiunge queste variabili di ambiente standard al contenitore di build per ogni esecuzione.
+Per supportare la funzione, Cloud Manager aggiunge le variabili di ambiente standard al contenitore della build per ogni esecuzione.
 
 | Nome della variabile | Definizione |
 |---|---|
 | `CM_BUILD` | Sempre impostato su `true` |
-| `BRANCH` | Il ramo configurato per l’esecuzione |
+| `BRANCH` | Ramo configurato per l’esecuzione |
 | `CM_PIPELINE_ID` | Identificatore numerico della pipeline |
 | `CM_PIPELINE_NAME` | Nome della pipeline |
 | `CM_PROGRAM_ID` | Identificatore numerico del programma |
 | `CM_PROGRAM_NAME` | Nome del programma |
-| `ARTIFACTS_VERSION` | Per una fase o una pipeline di produzione, la versione sintetica generata da Cloud Manager |
-| `CM_AEM_PRODUCT_VERSION` | Versione della versione |
+| `ARTIFACTS_VERSION` | Per una pipeline di staging o di produzione, la versione sintetica generata da Cloud Manager |
+| `CM_AEM_PRODUCT_VERSION` | Versione |
 
-### Variabili di pipeline {#pipeline-variables}
+### Variabili delle pipeline {#pipeline-variables}
 
-Il processo di creazione può dipendere da specifiche variabili di configurazione che non sarebbe opportuno inserire nell’archivio Git oppure potrebbe essere necessario modificarle tra le esecuzioni della pipeline che utilizzano lo stesso ramo.
+Il processo di build può dipendere da specifiche variabili di configurazione che sarebbe inopportuno inserire nell’archivio Git o che potrebbero dover essere modificate tra le esecuzioni della pipeline che utilizzano lo stesso ramo.
 
-Cloud Manager consente di configurare queste variabili tramite l’API di Cloud Manager o l’CLI di Cloud Manager in base alla pipeline. Le variabili possono essere memorizzate come testo normale o cifrate a riposo. In entrambi i casi, le variabili sono rese disponibili all&#39;interno dell&#39;ambiente di creazione come variabile di ambiente a cui è possibile fare riferimento dall&#39;interno del `pom.xml` file o altri script di build.
+Cloud Manager consente di configurare queste variabili tramite l’API o l’interfaccia della riga di comando di Cloud Manager, in base alla pipeline. Le variabili possono essere archiviate come testo normale o crittografate quando inattive. In entrambi i casi, le variabili sono rese disponibili all’interno dell’ambiente di build come una variabile di ambiente a cui è possibile fare riferimento dal file `pom.xml` o da altri script della build.
 
-Questo comando CLI imposta una variabile.
+Comando CLI per impostare una variabile.
 
 ```shell
 $ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
 ```
 
-Questo comando elenca le variabili.
+Comando per elencare le variabili.
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables PIPELINEID
 ```
 
-I nomi delle variabili devono rispettare le convenzioni seguenti.
+I nomi delle variabili devono rispettare le seguenti convenzioni.
 
 * Le variabili possono contenere solo caratteri alfanumerici e il carattere di sottolineatura (`_`).
-* I nomi devono essere maiuscoli.
-* Esiste un limite di 200 variabili per pipeline.
-* Ogni nome deve contenere meno di 100 caratteri.
-* Ogni `string` Il valore della variabile deve essere minore di 2048 caratteri.
-* Ogni `secretString` Il valore della variabile di tipo deve essere inferiore a 500 caratteri.
+* I nomi devono essere scritti in lettere maiuscole.
+* È previsto un limite di 200 variabili per pipeline.
+* Ogni nome deve avere una lunghezza inferiore a 100 caratteri.
+* Ogni valore della variabile `string` deve avere una lunghezza inferiore a 2048 caratteri.
+* Ogni valore della variabile di tipo `secretString` deve avere una lunghezza inferiore a 500 caratteri.
 
-Quando viene utilizzato all&#39;interno di un Maven `pom.xml` tipicamente è utile mappare queste variabili alle proprietà Maven utilizzando una sintassi simile a questa.
+Per l’utilizzo in un file `pom.xml` Maven, in genere è utile associare queste variabili alle proprietà Maven scrivendo una sintassi simile a quella proposta di seguito.
 
 ```xml
         <profile>
@@ -167,7 +167,7 @@ Quando viene utilizzato all&#39;interno di un Maven `pom.xml` tipicamente è uti
 
 ## Installazione di pacchetti di sistema aggiuntivi {#installing-additional-system-packages}
 
-Alcune build richiedono l&#39;installazione di pacchetti di sistema aggiuntivi per funzionare completamente. Ad esempio, una build può richiamare uno script Python o Ruby e dovrà disporre di un interprete di lingua appropriato installato. Questa operazione può essere eseguita chiamando il [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) nel tuo `pom.xml` per richiamare APT. Questa esecuzione deve generalmente essere racchiusa in un profilo Maven specifico per Cloud Manager. In questo esempio viene installato Python.
+Alcune build richiedono l’installazione di pacchetti di sistema aggiuntivi per l’operatività completa. Ad esempio, una build può richiamare uno script Python o Ruby e richiedere l’installazione dell’interprete di linguaggio appropriato. È possibile eseguire l’operazione chiamando [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in `pom.xml` per richiamare APT. Questa esecuzione deve generalmente essere integrata in un profilo Maven specifico per Cloud Manager. In questo esempio viene installato Python.
 
 ```xml
         <profile>
@@ -224,4 +224,4 @@ Questa stessa tecnica può essere utilizzata per installare pacchetti specifici 
 
 >[!NOTE]
 >
->L&#39;installazione di un pacchetto di sistema in questo modo non lo installa nell&#39;ambiente di runtime utilizzato per l&#39;esecuzione di Adobe Experience Manager. Se hai bisogno di un pacchetto di sistema installato nell’ambiente AEM, contatta il tuo rappresentante Adobe.
+>Installando un pacchetto di sistema in questo modo, non lo si installa nell’ambiente di runtime utilizzato per l’esecuzione di Adobe Experience Manager. Se hai bisogno di installare un pacchetto di sistema nell’ambiente AEM, contatta il rappresentante Adobe.

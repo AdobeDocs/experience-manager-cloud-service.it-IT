@@ -1,118 +1,118 @@
 ---
-title: Sospensione e disattivazione ambienti sandbox
-description: Scopri in che modo gli ambienti di un programma sandbox entrano automaticamente in modalità ibernazione e come è possibile disattivarli.
+title: Sospensione e disattivazione degli ambienti sandbox
+description: Scopri in che modo gli ambienti di un programma sandbox entrano automaticamente in modalità di sospensione e come riattivarli.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# Ambienti Sandbox sospensione e disattivazione {#hibernating-introduction}
+# Sospensione e disattivazione degli ambienti sandbox {#hibernating-introduction}
 
-Gli ambienti di un programma sandbox entrano in modalità ibernazione se non viene rilevata alcuna attività per otto ore.La sospensione è unica per gli ambienti di programma sandbox. Gli ambienti dei programmi di produzione non sono in ibernazione.
+Gli ambienti di un programma sandbox entrano in modalità di sospensione se non viene rilevata alcuna attività per otto ore. La sospensione è specifica degli ambienti dei programmi sandbox. Per gli ambienti dei programmi di produzione la sospensione non è disponibile.
 
 ## Sospensione {#hibernation-introduction}
 
-La sospensione può avvenire automaticamente o manualmente.
+La sospensione può essere attivata automaticamente o manualmente.
 
-* **Automatico** - Gli ambienti dei programmi sandbox vengono automaticamente ibernati dopo otto ore di inattività. L’inattività non è definita né come il servizio di authoring, né come servizio di anteprima o pubblicazione ricevano richieste.
-* **Manuale** - In qualità di utente, è possibile ibernare manualmente un ambiente di programma sandbox. Non è necessario farlo, poiché l&#39;ibernazione si verifica automaticamente come descritto in precedenza.
+* **Automatica**: la sospensione degli ambienti di un programma sandbox viene attivata automaticamente dopo otto ore di inattività. L’inattività è definita dall’assenza di richieste ricevute dal servizio di Author, Anteprima e Publish.
+* **Manuale**: l’utente può attivare manualmente la sospensione di un ambiente di un programma sandbox. Non si tratta di un requisito, in quanto la sospensione viene attivata automaticamente come descritto in precedenza.
 
-Potrebbero essere necessari fino a pochi minuti per l&#39;accesso alla modalità ibernazione degli ambienti del programma sandbox. I dati vengono conservati durante la sospensione.
+Potrebbero essere necessari alcuni minuti prima che gli ambienti del programma sandbox entrino in modalità di sospensione. Durante la sospensione i dati vengono conservati.
 
 ### Utilizzo della sospensione manuale {#using-manual-hibernation}
 
-Puoi riattivare manualmente il programma sandbox dalla Console per sviluppatori. L’accesso a Developer Console per un programma sandbox è disponibile per qualsiasi utente di Cloud Manager.
+Puoi sospendere manualmente il programma sandbox da Console sviluppatori. L’accesso a Console sviluppatori di un programma sandbox è disponibile per tutti gli utenti di Cloud Manager.
 
-Segui questi passaggi per ibernare manualmente gli ambienti del programma sandbox.
+Per sospendere manualmente gli ambienti di un programma sandbox, segui la procedura riportata di seguito.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Clicca sul programma che desideri ibernare per mostrarne i dettagli.
+1. Per visualizzare i dettagli del programma, fai clic su quello che desideri sospendere.
 
-1. Sulla **Ambienti** fare clic sul pulsante con i puntini di sospensione e selezionare **Console per sviluppatori**.
+1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
 
-   * Consulta il documento [Accesso alla Console per sviluppatori](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) per ulteriori informazioni su Developer Console.
+   * Per ulteriori informazioni su Console sviluppatori, consulta il documento [Accesso a Console sviluppatori](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
 
-   ![Opzione del menu Console per sviluppatori](assets/developer-console-menu-option.png)
+   ![Opzione di menu Console sviluppatori](assets/developer-console-menu-option.png)
 
-1. In Developer Console, fai clic su **Sospensione**.
+1. In Console sviluppatori, fai clic su **Sospendi**.
 
    ![Pulsante Sospendi](assets/hibernate-1.png)
 
-1. Fai clic su **Sospensione** per confermare il passaggio.
+1. Per confermare, fai clic su **Sospendi**.
 
-   ![Conferma ibernazione](assets/hibernate-2.png)
+   ![Conferma della sospensione](assets/hibernate-2.png)
 
-Quando la sospensione avrà esito positivo, verrà visualizzata la notifica completa del processo di ibernazione per l&#39;ambiente nel **Console per sviluppatori** schermo.
+Quando la sospensione si attiva correttamente, nella schermata di **Console sviluppatori** viene visualizzata la notifica di completamento del processo di sospensione.
 
 ![Conferma della sospensione](assets/hibernate-4.png)
 
-In Developer Console puoi anche fare clic sul pulsante **Ambienti** collegamento nel percorso di navigazione al di sopra del **Pod** elenco a discesa per un elenco di ambienti da ibernare.
+Per accedere all’elenco di ambienti da sospendere in Console sviluppatori, fai clic sul collegamento **Ambienti** nel percorso di navigazione sopra all’elenco a discesa **Pod**.
 
-![Elenco di ambienti da ibernare](assets/hibernate-1b.png)
+![Elenco degli ambienti da sospendere](assets/hibernate-1b.png)
 
-## Disibernazione {#de-hibernation-introduction}
+## Riattivazione {#de-hibernation-introduction}
 
-Puoi attivare manualmente il programma sandbox dalla Console per sviluppatori.
+Puoi sospendere manualmente il programma sandbox da Console sviluppatori.
 
 >[!IMPORTANT]
 >
->Un utente con un **Sviluppatore** Il ruolo può annullare la sospensione di un ambiente di programma sandbox.
+>L’utente con il ruolo **Sviluppatore** può riattivare un ambiente di un programma sandbox.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Clicca sul programma che desideri ibernare per mostrarne i dettagli.
+1. Per visualizzare i dettagli del programma, fai clic su quello che desideri sospendere.
 
-1. Sulla **Ambienti** fare clic sul pulsante con i puntini di sospensione e selezionare **Console per sviluppatori**.
+1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
 
-   * Consulta il documento [Accesso alla Console per sviluppatori](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) per ulteriori informazioni su Developer Console.
+   * Per ulteriori informazioni su Console sviluppatori, consulta il documento [Accesso a Console sviluppatori](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
 
-1. Fai clic su **De-ibernare**.
+1. Fai clic su **Riattiva**.
 
-   ![Pulsante di disattivazione](assets/de-hibernation-img1.png)
+   ![Pulsante Riattiva](assets/de-hibernation-img1.png)
 
-1. Fai clic su **De-Ibernato** per confermare il passaggio.
+1. Per confermare, fai clic su **Riattiva**.
 
-   ![Conferma della disattivazione](assets/de-hibernation-img2.png)
+   ![Conferma riattivazione](assets/de-hibernation-img2.png)
 
-1. Ricevi una notifica dell’avvio del processo di disattivazione e dell’aggiornamento con l’avanzamento.
+1. Viene visualizzata una notifica dell’avvio del processo di riattivazione e aggiornamenti sull’avanzamento.
 
-   ![Notifica dell&#39;avanzamento della sospensione](assets/de-hibernation-img3.png)
+   ![Notifica dell’avanzamento della sospensione](assets/de-hibernation-img3.png)
 
 1. Al termine del processo, l’ambiente del programma sandbox è nuovamente attivo.
 
-   ![De-ibernazione completa](assets/de-hibernation-img4.png)
+   ![Riattivazione completa](assets/de-hibernation-img4.png)
 
 
-In Developer Console puoi anche fare clic sul pulsante **Ambienti** collegamento nel percorso di navigazione al di sopra del **Pod** elenco a discesa per un elenco di ambienti da disattivare.
+Per accedere all’elenco di ambienti da riattivare in Console sviluppatori, fai clic sul collegamento **Ambienti** nel percorso di navigazione sopra all’elenco a discesa **Pod**.
 
-![Elenco dei baccelli ibernati](assets/de-hibernate-1b.png)
+![Elenco dei pod sospesi](assets/de-hibernate-1b.png)
 
-### Autorizzazioni per lo scioglimento {#permissions-de-hibernate}
+### Autorizzazioni per la riattivazione {#permissions-de-hibernate}
 
-Qualsiasi utente con un profilo di prodotto che dia accesso a AEM as a Cloud Service deve essere in grado di accedere al **Console per sviluppatori**, permettendo loro di deibernare l&#39;ambiente.
+Tutti gli utenti con un profilo di prodotto che consente di accedere a AEM as a Cloud Service possono accedere a **Console sviluppatori** e riattivare l’ambiente.
 
 ## Accesso a un ambiente sospeso {#accessing-hibernated-environment}
 
-Quando effettua richieste del browser al servizio di authoring, anteprima o pubblicazione di un ambiente attivato, l’utente incontra una pagina di destinazione che descrive lo stato di ibernazione dell’ambiente e un collegamento alla Console per sviluppatori, in cui è possibile disattivare il servizio.
+Quando un browser invia richieste al servizio di Author, Anteprima o Publish di un ambiente sospeso, l’utente visualizza una pagina di destinazione in cui viene indicato lo stato di sospensione dell’ambiente e un collegamento a Console sviluppatori da cui è possibile riattivarlo.
 
 ![Pagina di destinazione del servizio sospeso](assets/de-hibernation-img5.png)
 
-## Implementazioni e aggiornamenti AEM {#deployments-updates}
+## Distribuzioni e aggiornamenti AEM {#deployments-updates}
 
-Gli ambienti sospesi consentono comunque l’implementazione e l’aggiornamento AEM manuale.
+Negli ambienti sospesi è ancora possibile eseguire distribuzioni e aggiornamenti AEM manuali.
 
-* Un utente può utilizzare una pipeline per distribuire codice personalizzato per gli ambienti in sospensione. L’ambiente rimarrà in ibernazione e il nuovo codice verrà visualizzato nell’ambiente una volta disattivato.
+* È possibile utilizzare una pipeline per distribuire il codice personalizzato negli ambienti sospesi. L’ambiente rimane sospeso e il nuovo codice verrà visualizzato nell’ambiente alla sua riattivazione.
 
-* Gli aggiornamenti AEM possono essere applicati agli ambienti in sospensione e possono essere attivati manualmente da Cloud Manager. L’ambiente rimarrà in ibernazione e la nuova versione apparirà nell’ambiente una volta disattivata.
+* Gli aggiornamenti AEM possono essere applicati agli ambienti sospesi e attivati manualmente da Cloud Manager. L’ambiente rimane sospeso e la nuova versione verrà visualizzata nell’ambiente alla sua riattivazione.
 
-## Sospensione e cancellazione {#hibernation-deletion}
+## Sospensione ed eliminazione {#hibernation-deletion}
 
-* Gli ambienti in un programma sandbox vengono automaticamente ibernati dopo otto ore di inattività.
-   * L’inattività non è definita né come il servizio di authoring, né come servizio di anteprima o pubblicazione ricevano richieste.
-   * Una volta ibernati, possono essere disattivati manualmente.
-* I programmi sandbox vengono cancellati dopo sei mesi di essere in modalità di sospensione continua, dopo di che, possono essere ricreati.
+* Gli ambienti in un programma sandbox vengono automaticamente sospesi dopo otto ore di inattività.
+   * L’inattività è definita dall’assenza di richieste ricevute dal servizio di Author, Anteprima e Publish.
+   * Una volta sospesi, possono essere riattivati manualmente.
+* I programmi sandbox vengono eliminati dopo sei mesi di sospensione continua. Al termine di questo periodo, possono essere ricreati.

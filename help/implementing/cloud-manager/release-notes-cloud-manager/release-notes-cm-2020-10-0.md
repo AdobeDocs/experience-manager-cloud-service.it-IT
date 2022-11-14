@@ -1,22 +1,22 @@
 ---
-title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2020.10.0
-description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2020.10.0
+title: Note sulla versione 2020.10.0 di Cloud Manager in AEM as a Cloud Service
+description: Note sulla versione 2020.10.0 di Cloud Manager in AEM as a Cloud Service
 feature: Release Information
 exl-id: 129d0dd8-3d6e-4cf0-b42e-5526f5cf0836
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes}
+# Note sulla versione 2020.10.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.10.0.
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.10.0 è il 10 ottobre 2020.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2020.10.0 è il 1° ottobre 2020.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -24,23 +24,23 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.10.0 è il 1
 
 * La pagina Ambienti è stata riprogettata.
 
-* Ora in Cloud Manager gli ambienti che sono stati sospesi presentano uno stato discreto.
+* Ora gli ambienti che sono stati sospesi presentano uno stato discreto in Cloud Manager.
 
-* Il contenitore di build di Cloud Manager ora supporta la compilazione di progetti utilizzando Java 8 o Java 11. Il supporto per Java 11 è fornito dal sistema Maven toolchain.
+* Ora il contenitore di build di Cloud Manager supporta la compilazione dei progetti sia con Java 8 che con Java 11. Il supporto per Java 11 è fornito dal sistema toolchain di Maven.
 
-* In ogni ambiente, il numero di variabili dell’ambiente è stato aumentato a 200.
+* Il numero di variabili per ambiente è stato aumentato a 200.
 
-* Nella scheda Ambiente della pagina Panoramica sono ora elencati fino a tre ambienti. Gli utenti possono selezionare **Mostra tutto** per passare alla pagina di riepilogo Ambiente e visualizzare una tabella con un elenco completo di ambienti.
-Fai riferimento a [Ambiente di visualizzazione](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) per ulteriori dettagli.
+* Ora nella scheda Ambiente della pagina Panoramica sono elencati fino a tre ambienti. Gli utenti possono selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo Ambiente e visualizzare una tabella con l’elenco completo degli ambienti.
+Per ulteriori informazioni, consulta [Visualizzazione dell’ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
 
 
 ### Correzioni di bug {#bug-fixes-cloud-manager}
 
-* Il collegamento tra Cloud Manager e Developer Console era erroneamente attivo prima che gli ambienti fossero completamente creati.
+* Il collegamento tra Cloud Manager e Console sviluppatori era erroneamente attivo prima che gli ambienti fossero completamente creati.
 
-* Il collegamento diretto da Cloud Manager a Developer Console non mostrava l’opzione per sospendere/riattivare l’ambiente di un programma sandbox.
+* Il collegamento diretto da Cloud Manager a Console sviluppatori non mostrava l’opzione per sospendere/riattivare l’ambiente di un programma sandbox.
 
-* I pulsanti Annulla e Salva nella pagina Modifica pipeline non di produzione non erano sempre visibili.
+* I pulsanti Annulla e Salva nella pagina di modifica della pipeline non di produzione non erano sempre visibili.
 
 * Alcuni errori nel processo di qualità del codice potevano causare la generazione non corretta del file di registro.
 

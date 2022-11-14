@@ -1,49 +1,49 @@
 ---
-title: Creazione guidata progetto
-description: Scopri la procedura guidata di creazione del progetto per velocizzare la configurazione del progetto dopo la creazione del programma di produzione.
+title: Creazione guidata di un progetto
+description: Scopri la procedura guidata di creazione del progetto per velocizzare la configurazione del tuo progetto dopo aver creato il programma di produzione.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Creazione guidata progetto {#project-creation-wizard}
+# Creazione guidata di un progetto {#project-creation-wizard}
 
-Dopo aver creato il programma di produzione, Cloud Manager offre una procedura guidata per creare un progetto AEM minimo basato su [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) per iniziare rapidamente.
+Dopo aver creato il programma di produzione, Cloud Manager offre una procedura guidata per creare un progetto AEM minimo basato sull’[archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) e iniziare subito.
 
-Segui questi passaggi per creare un progetto di applicazione AEM in Cloud Manager utilizzando la procedura guidata.
+Segui questi passaggi per creare un progetto di applicazione AEM in Cloud Manager seguendo la procedura guidata.
 
-1. Crea un programma di produzione seguendo i passaggi del documento [Creazione di programmi di produzione](creating-production-programs.md)
+1. Crea un programma di produzione seguendo i passaggi riportati nel documento [Creazione di programmi di produzione](creating-production-programs.md)
 
-1. Una volta completata la configurazione del programma, accedi al **Panoramica** dello schermo del programma e visualizzare **Crea ramo e progetto** scheda call-to-action nella parte superiore.
+1. Dopo aver completato la configurazione del programma, accedi alla schermata **Panoramica** del programma e apri la scheda di invito all’azione **Crea ramo e progetto** nella parte superiore.
 
-   ![Assistenza telefonica per la procedura guidata](assets/create-wizard1.png)
+   ![Invito all’azione della procedura guidata](assets/create-wizard1.png)
 
-1. Fai clic su **Crea** per avviare la procedura guidata e confermare l’impostazione del progetto **Titolo** e **Nuovo nome della filiale** in **Creare un ramo e un progetto** finestra.
+1. Per avviare la procedura guidata, fai clic su **Crea** e, nella finestra **Crea ramo e progetto**, conferma **Titolo** e **Nome nuovo ramo** del progetto.
 
-   ![Creare un ramo e un progetto](assets/create-wizard2.png)
+   ![Crea ramo e progetto](assets/create-wizard2.png)
 
-1. Facoltativamente, fai clic sul divisore per visualizzare i parametri aggiuntivi del progetto. I valori predefiniti vengono forniti dall’Archetipo di progetto AEM e in genere non è necessario modificarli.
+1. Facoltativamente, fai clic sul divisore per visualizzare i parametri aggiuntivi del progetto. I valori predefiniti vengono forniti dall’archetipo del progetto AEM e in genere non è necessario modificarli.
 
-   ![Parametri di progetto aggiuntivi](assets/create-wizard5.png)
+   ![Parametri aggiuntivi del progetto](assets/create-wizard5.png)
 
-1. Fai clic su **Crea** per avviare il processo di creazione del progetto.
+1. Per avviare il processo di creazione del progetto, fai clic su **Crea**.
 
 
-A **Creazione di progetti in corso** la scheda ora sostituisce la **Crea ramo e progetto** scheda call-to-action come parte superiore del **Panoramica del programma** schermo.
+Ora la scheda **Creazione progetto in corso** sostituisce la scheda di invito all’azione **Crea ramo e progetto** nella parte superiore della schermata **Panoramica programma**.
 
 ![Creazione del progetto in corso](assets/create-wizard3.png)
 
-Una volta completata la creazione del programma, un **Aggiungi ambiente** la carta sostituisce **Creazione di progetti in corso** scheda nella parte superiore della **Panoramica del programma** schermo.
+Dopo aver completato la creazione del programma, la scheda **Aggiungi ambiente** sostituisce la scheda **Creazione del progetto in corso** nella parte superiore della schermata **Panoramica programma**.
 
 ![Aggiungi ambiente](assets/create-wizard4.png)
 
-Ora disponi di un progetto AEM basato sull’archetipo AEM aggiunto all’archivio Git per fungere da base di sviluppo per il tuo progetto. Ora puoi creare gli ambienti in cui puoi distribuire il codice del progetto.
+Ora hai aggiunto all’archivio Git un progetto AEM basato sull’archetipo AEM, da utilizzare come base di sviluppo per il tuo progetto. Ora puoi creare ambienti in cui distribuire il codice del progetto.
 
-Fare riferimento al documento [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md) per scoprire come aggiungere o gestire gli ambienti.
+Per ulteriori informazioni su come aggiungere o gestire gli ambienti, consulta il documento [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md).
 
 >[!NOTE]
 >
->La procedura guidata è disponibile solo per i programmi di produzione. Perché [programmi sandbox](introduction-sandbox-programs.md#auto-creation) include la creazione automatica del progetto. La procedura guidata non è necessaria.
+>La procedura guidata è disponibile solo per i programmi di produzione. Per i [programmi sandbox](introduction-sandbox-programs.md#auto-creation), la procedura guidata non è necessaria in quanto già includono la creazione automatica del progetto.

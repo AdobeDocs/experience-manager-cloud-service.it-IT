@@ -1,50 +1,50 @@
 ---
-title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.2.0
-description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.2.0
+title: Note sulla versione 2021.2.0 di Cloud Manager in AEM as a Cloud Service
+description: Note sulla versione 2021.2.0 di Cloud Manager in AEM as a Cloud Service
 exl-id: 281f9523-dec2-44f1-9459-5a45d48489d9
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.2.0 {#release-notes}
+# Note sulla versione 2021.2.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.2.0.
+Questa pagina illustra le note sulla versione 2021.2.0 di Cloud Manager in AEM as a Cloud Service.
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.2.0 è l’11 febbraio 2021.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.2.0 è il 11 febbraio 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Novità {#what-is-new}
 
-* I clienti di Assets ora potranno scegliere quando e dove implementare la propria istanza Brand Portal in modalità self-service tramite l’interfaccia utente di Cloud Manager. Per un programma normale (non sandbox) con soluzione Assets, ora è possibile eseguire il provisioning di Brand Portal nell’ambiente Produzione. Il provisioning può essere eseguito una sola volta nell’ambiente di produzione.
+* Ora i clienti di Assets possono scegliere quando e dove distribuire l’istanza di Brand Portal in modalità self-service tramite l’interfaccia utente di Cloud Manager. Ora per un programma normale (non sandbox) con soluzione Assets è possibile eseguire il provisioning di Brand Portal nell’ambiente di produzione. Il provisioning può essere eseguito una sola volta nell’ambiente di produzione.
 
-* L’Archetipo di progetto AEM utilizzato nella creazione di progetti e sandbox è stato aggiornato alla versione 25.
+* L’archetipo del progetto AEM utilizzato nella creazione di progetti e sandbox è stato aggiornato alla versione 25.
 
-* L’elenco delle API obsolete identificate durante la scansione del codice è stato perfezionato per includere classi e metodi aggiuntivi obsoleti nelle ultime versioni dell’SDK di Cloud Service.
+* L’elenco delle API obsolete identificate durante il controllo del codice è stato perfezionato per includere classi e metodi obsoleti aggiuntivi rilevati nelle versioni più aggiornate dell’SDK di Cloud Service.
 
-* Profilo SonarQube per Cloud Manager aggiornato per rimuovere Sonar rule squid:S2142. Questo non entrerà più in conflitto con i controlli di interruzione del thread.
+* Il profilo SonarQube per Cloud Manager è stato aggiornato per rimuovere la regola Sonar squid:S2142. Non entrerà più in conflitto con i controlli di interruzione del thread.
 
-* L’interfaccia utente di Cloud Manager informa l’utente che potrebbe non essere temporaneamente in grado di aggiungere/aggiornare il nome di dominio perché all’ambiente associato è collegata una pipeline in esecuzione o attualmente in attesa del passaggio di approvazione.
+* Ora l’interfaccia utente di Cloud Manager informa l’utente che temporaneamente potrebbe non essere possibile aggiungere/aggiornare il nome di dominio in quanto all’ambiente associato è collegata una pipeline in esecuzione o attualmente in attesa del passaggio di approvazione.
 
-* Proprietà impostate nel cliente `pom.xml` i file con prefisso sonar vengono ora rimossi dinamicamente per evitare errori di creazione e di scansione della qualità.
+* Ora le proprietà impostate nei file `pom.xml` del cliente con prefisso sonar vengono rimosse dinamicamente per evitare errori di build e del controllo di qualità.
 
-* L’interfaccia utente di Cloud Manager informa l’utente che potrebbe non essere temporaneamente in grado di selezionare un certificato SSL se è utilizzato da un nome di dominio attualmente distribuito.
+* Ora l’interfaccia utente di Cloud Manager informa l’utente che temporaneamente potrebbe non essere possibile selezionare un certificato SSL se questo è in uso da un nome di dominio attualmente in fase di distribuzione.
 
-* Sono state aggiunte regole aggiuntive per la qualità del codice per risolvere i problemi relativi alla compatibilità dei Cloud Service.
+* Sono state aggiunte ulteriori regole per la qualità del codice per risolvere i problemi relativi alla compatibilità con Cloud Service.
 
 ### Correzioni di bug  {#bug-fixes}
 
-* La corrispondenza del certificato SSL rispetto a un nome di dominio non fa più distinzione tra maiuscole e minuscole.
+* La corrispondenza tra certificato SSL e nome di dominio non fa più distinzione tra maiuscole e minuscole.
 
-* L’interfaccia utente di Cloud Manager ora informa un utente se le chiavi private del certificato non soddisfano il limite di 2048 bit con un messaggio di errore appropriato.
+* Ora l’interfaccia utente di Cloud Manager informa l’utente con un messaggio di errore appropriato nel caso in cui le chiavi private del certificato non rientrino nel limite di 2048 bit.
 
-* L’interfaccia utente di Cloud Manager informa l’utente che potrebbe non essere temporaneamente in grado di selezionare un certificato SSL se è utilizzato da un nome di dominio attualmente distribuito.
+* Ora l’interfaccia utente di Cloud Manager informa l’utente che temporaneamente potrebbe non essere possibile selezionare un certificato SSL se questo è in uso da un nome di dominio attualmente in fase di distribuzione.
 
-* In alcuni casi, un problema interno può causare il blocco dell’eliminazione dell’ambiente.
+* In alcuni casi, un problema interno causa il blocco dell’eliminazione dell’ambiente.
 
-* Alcuni errori di pipeline non sono stati segnalati correttamente come errori di pipeline.
+* Alcuni problemi della pipeline venivano erroneamente segnalati come errori della pipeline.

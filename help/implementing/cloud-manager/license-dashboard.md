@@ -1,92 +1,92 @@
 ---
-title: Dashboard della licenza
-description: Cloud Manager fornisce una dashboard per visualizzare facilmente le adesioni ai prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
+title: Dashboard delle licenze
+description: Cloud Manager fornisce una dashboard per visualizzare facilmente i diritti dei prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 3%
+ht-degree: 80%
 
 ---
 
-# Dashboard della licenza {#license-dashboard}
+# Dashboard delle licenze {#license-dashboard}
 
-Cloud Manager fornisce una dashboard per visualizzare facilmente le adesioni ai prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
+Cloud Manager fornisce una dashboard per visualizzare facilmente i diritti dei prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
 
 ## Panoramica {#overview}
 
-Il Dashboard di licenza di Cloud Manager fornisce un facile accesso alle seguenti informazioni:
+Con la dashboard delle licenze di Cloud Manager è possibile accedere facilmente alle seguenti informazioni:
 
-1. Diritti alla soluzione disponibili in tutti i programmi, compresi quelli utilizzati e quelli disponibili
-1. Metriche di consumo della richiesta di contenuto con tendenze mensili per la soluzione Sites
+1. Diritti delle soluzioni disponibili per tutti i programmi, compresi quelli utilizzati e quelli disponibili
+1. Metriche sul consumo delle richieste di contenuto con trend mensili per la soluzione Sites
 
-## Utilizzo del dashboard delle licenze {#using-dashboard}
+## Utilizzo della dashboard delle licenze {#using-dashboard}
 
-Per accedere al dashboard delle licenze, segui questi passaggi.
+Per accedere alla dashboard delle licenze, segui la procedura riportata di seguito.
 
 >[!NOTE]
 >
->Un utente in **Proprietario business** per visualizzare il dashboard della licenza è necessario accedere al ruolo.
+>Per visualizzare la dashboard delle licenze, l’utente con il ruolo **Proprietario business** deve aver effettuato l’accesso.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Nella pagina di panoramica dei prodotti , passa alla pagina **Licenza** scheda .
+1. Dalla pagina di panoramica dei prodotti, passa alla scheda **Licenza**.
 
-![Dashboard della licenza](assets/license-dashboard.png)
+![Dashboard delle licenze](assets/license-dashboard.png)
 
-Il dashboard è diviso in tre sezioni che ti mostrano:
+La dashboard è divisa in tre sezioni:
 
-* **Soluzioni** - Questa sezione riepiloga le soluzioni per le quali hai concesso la licenza, ad esempio Sites o Assets.
-* **Componenti aggiuntivi** - In questa sezione vengono riepilogati i componenti aggiuntivi disponibili per le soluzioni concesse in licenza.
-* **Sandbox e ambienti di sviluppo** - Questa sezione riepiloga gli ambienti disponibili.
+* **Soluzioni**: in questa sezione vengono riepilogate le soluzioni per le quali si dispone di una licenza, come ad esempio Sites o Assets.
+* **Componenti aggiuntivi**: in questa sezione vengono riepilogati i componenti aggiuntivi disponibili per le soluzioni concesse in licenza.
+* **Ambienti sandbox e di sviluppo**: in questa sezione vengono riepilogati gli ambienti disponibili.
 
-Ogni sezione riepiloga le opzioni disponibili e il modo in cui viene attualmente utilizzata, se del caso. Attualmente vengono visualizzate solo le soluzioni Sites anche se nel tenant sono presenti altre soluzioni.
+In ogni sezione vengono riepilogate le opzioni disponibili e come sono attualmente utilizzate, se del caso. Attualmente, anche se nel tenant sono presenti altre soluzioni, vengono visualizzate solo quelle Sites.
 
-* La **Stato** visualizza il numero di adesioni non utilizzate rispetto al totale disponibile per il tenant.
-* La **Configurato su** colonna indica i programmi in cui è stata applicata l&#39;adesione alla soluzione.
-   * Un diritto viene considerato utilizzato solo quando è stato creato un ambiente di produzione o se esiste già, se è stata eseguita una pipeline di aggiornamento.
-* La **Utilizzo** In questa colonna vengono visualizzate le richieste di contenuto utilizzate negli ultimi 12 mesi sotto forma di grafico quando si fa clic su di esse.
+* La colonna **Stato** mostra il confronto tra il numero di diritti inutilizzati e quelli totali disponibili per il tenant.
+* La colonna **Configurato per** indica i programmi ai quali il diritto per la soluzione è stato applicato.
+   * Un diritto viene considerato utilizzato solo quando è stato creato un ambiente di produzione o, se ne esiste già uno, se al suo interno è stata eseguita una pipeline di aggiornamento.
+* Una volta selezionata, la colonna **Utilizzo** visualizza le richieste di contenuto presentate negli ultimi 12 mesi sotto forma di grafico.
 
 >[!TIP]
 >
->Fai riferimento a [Panoramica di Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per scoprire come gestire le adesioni agli Adobi in tutta l’organizzazione a partire dall’Admin Console.
+>Per ulteriori informazioni su come gestire i diritti Adobe in tutta l’organizzazione da Admin Console, consulta [Panoramica di Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html).
 
-## Domande frequenti  {#faq}
+## Domande frequenti {#faq}
 
-### Cos’è una richiesta di contenuto? {#what-is-a-content-request}
+### Che cos’è una richiesta di contenuto? {#what-is-a-content-request}
 
 Una richiesta di contenuto è una richiesta che arriva in AEM Sites o in qualsiasi sistema di caching fornito dal cliente, ad esempio una rete di distribuzione di contenuti, per distribuire contenuto o dati in formato HTML come visualizzazione di pagina o in formato JSON come chiamata API.
 
-Viene conteggiata una richiesta di contenuto per ogni visualizzazione di pagina o per ogni cinque chiamate API, misurate in base all’ingresso del primo sistema di memorizzazione in cache che riceve una richiesta di contenuto. Le richieste di contenuto vengono conteggiate solo per gli ambienti di produzione.
+Viene conteggiata una richiesta di contenuto per ogni visualizzazione di pagina o per ogni cinque chiamate API, misurate all’ingresso del primo sistema di caching che riceve una richiesta di contenuto. Le richieste di contenuto vengono conteggiate solo per gli ambienti di produzione.
 
-Le richieste di contenuto escludono le richieste o le attività avviate da o per conto dell’Adobe al solo scopo di fornire prodotti e servizi. Sono esclusi anche il traffico di agenti utente identificati da Adobi da bot, crawler e spider relativi a motori di ricerca comuni e servizi di social media.
+Dalle richieste di contenuto sono escluse le richieste o le attività avviate da o per conto di Adobe al solo scopo di fornire prodotti e servizi. È escluso anche il traffico dell’agente utente identificato da Adobe come proveniente da bot, crawler e spider relativi ai comuni motori di ricerca e servizi di social media.
 
 ### In che modo Adobe Experience Manager misura le richieste di contenuto? {#how-are-content-requests-measured}
 
 Le richieste di contenuto vengono tracciate sui server perimetrali AEM as a Cloud Service. Il traffico di origine non viene conteggiato per le richieste di contenuto. La CDN integrata in AEM as a Cloud Service traccia le richieste HTML e JSON valide.
 
-AEM inoltre ha delle regole per escludere bot ben noti, tra cui servizi noti che visitano regolarmente il sito per aggiornare il loro indice di ricerca o servizio.
+AEM inoltre offre regole per escludere bot noti, tra cui servizi noti che visitano regolarmente il sito per aggiornare l’indice di ricerca o il servizio.
 
-### Perché il mio rapporto di Analytics mostra risultati diversi rispetto alle richieste di contenuto AEM? {#why-are-reports-different}
+### Perché il rapporto di Analytics mostra risultati diversi rispetto alle richieste di contenuto di AEM? {#why-are-reports-different}
 
-Le richieste di contenuto avranno varianze con gli strumenti di reporting di Analytics di un&#39;organizzazione, come riepilogato in questa tabella.
+Le richieste di contenuto presentano delle varianze rispetto agli strumenti di generazione rapporti di Analytics di un’organizzazione, come riepilogato in questa tabella.
 
 | Motivo della varianza | Spiegazione |
 |---|---|
-| Assegnazione tag | Tutte le pagine tracciate come richieste di contenuto AEM possono o meno essere contrassegnate con il tracciamento di Analytics. Tutte le chiamate API tracciate come richieste di contenuto AEM non saranno taggate dallo strumento Analytics di un&#39;organizzazione.<br>Le pagine o le chiamate API possono essere taggate per tenere traccia delle azioni o solo delle visualizzazioni di pagina univoche invece di tutte le visualizzazioni. |
-| Regole Tag Management | Le impostazioni delle regole di gestione dei tag possono comportare diverse configurazioni di raccolta dati su una pagina, con conseguente combinazione di discrepanze con il tracciamento delle richieste di contenuto. |
+| Assegnazione dei tag | Alle pagine tracciate come richieste di contenuto di AEM possono essere assegnati o meno dei tag per il tracciamento di Analytics. Alle chiamate API tracciate come richieste di contenuto di AEM non vengono assegnati tag dallo strumento Analytics di un’organizzazione.<br>Alle pagine o alle chiamate API possono essere assegnati dei tag per tenere traccia delle azioni o solo delle visualizzazioni di pagina univoche, anziché di tutte. |
+| Regole di gestione dei tag | Le impostazioni delle regole di gestione dei tag possono comportare diverse configurazioni di raccolta dati su una pagina, con conseguente combinazione di discrepanze con il tracciamento delle richieste di contenuto. |
 | Bot | I bot sconosciuti che non sono stati pre-identificati e rimossi da AEM possono causare discrepanze nel tracciamento. |
-| Suite per report | Le pagine che fanno parte della stessa istanza AEM e dello stesso dominio possono inviare dati a suite di rapporti Analytics diverse. |
-| Strumenti di monitoraggio e sicurezza di terze parti | Gli strumenti di monitoraggio e scansione della sicurezza possono generare richieste di contenuto per AEM che non sono monitorate nei rapporti di Analytics. |
-| Richieste di preacquisizione | L’utilizzo di un servizio di preacquisizione per precaricare le pagine per aumentare la velocità può causare un aumento significativo del traffico della richiesta di contenuto. |
-| DDOS | Sebbene l&#39;Adobe faccia ogni sforzo per rilevare e filtrare automaticamente il traffico dagli attacchi DDOS, non c&#39;è alcuna garanzia che tutti i possibili attacchi DDOS vengano rilevati |
-| Blocchi di traffico | L&#39;utilizzo di un tracker blocker in un browser può negare il tracciamento di alcune richieste. |
-| Firewall | I firewall possono bloccare il tracciamento di Analytics. Ciò è più frequente con i firewall aziendali. |
+| Suite per rapporti | Le pagine che fanno parte della stessa istanza di AEM e dello stesso dominio possono inviare dati a suite per rapporti di Analytics diverse. |
+| Strumenti di monitoraggio e sicurezza di terze parti | Gli strumenti di monitoraggio e sicurezza possono generare richieste di contenuto per AEM che non vengono monitorate nei rapporti di Analytics. |
+| Richieste di prelettura | L’utilizzo di un servizio di prelettura per precaricare le pagine al fine di aumentare la velocità può causare un aumento significativo del traffico delle richieste di contenuto. |
+| DDOS | Sebbene Adobe si impegni al massimo per rilevare e filtrare automaticamente il traffico dagli attacchi DDOS, non c’è alcuna garanzia che tutti i possibili attacchi DDOS vengano rilevati. |
+| Blocchi del traffico | L’utilizzo di un blocco del tracciamento in un browser può far sì che il tracciamento di alcune richieste non venga eseguito. |
+| Firewall | I firewall possono bloccare il tracciamento di Analytics. Il problema è più frequente con i firewall aziendali. |
 
 ### Cosa succede se voglio saperne di più sul volume di richiesta del contenuto? {#current-request-volumes}
 
 Se desideri ulteriori informazioni sul volume di richiesta del contenuto visualizzato nel dashboard della licenza, il team di Adobe può fornire un rapporto che mostra i principali driver di volume delle richieste di contenuto. Rivolgiti al tuo team di Adobe o all’Assistenza clienti Adobe per richiedere un rapporto sull’utilizzo principale.
 
-### Cosa succede se uso la mia rete CDN? {#using-own-cdn}
+### Cosa succede se utilizzo una rete CDN personalizzata? {#using-own-cdn}
 
 Il Dashboard licenze mostrerà solo i dati tracciati dal CDN del Cloud Service.  Se scegli di portare il tuo CDN (BYOCDN), segnalerai il volume della richiesta di contenuti all&#39;Adobe su base annuale, come indicato nel tuo contratto.

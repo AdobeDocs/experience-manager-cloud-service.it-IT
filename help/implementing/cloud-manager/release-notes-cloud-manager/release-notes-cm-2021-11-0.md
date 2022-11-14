@@ -1,34 +1,34 @@
 ---
-title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.11.0
-description: Queste sono le note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2021.11.0
+title: Note sulla versione 2021.11.0 di Cloud Manager in AEM as a Cloud Service
+description: Queste sono le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.11.0
 feature: Release Information
 exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
 source-git-commit: 4505f703754fa46cd746ae4794a3cab65cb19976
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.11.0 {#release-notes}
+# Note sulla versione 2021.11.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
 >
->Fai riferimento a [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) per le note sulla versione corrente per Adobe Experience Manager as a Cloud Service.
+>Per le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, consulta [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.11.0 è il 4 novembre 2021.
-La prossima versione è prevista per il 16 dicembre 2021.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.11.0 è il 4 novembre 2021.
+La prossima versione è pianificata per il 16 dicembre 2021.
 
 ## Novità {#what-is-new}
 
 * Gli utenti possono ora sfruttare le nuove pipeline Front End per distribuire esclusivamente il codice front-end in modo accelerato. Consulta [Pipeline front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per ulteriori informazioni.
 
    >[!IMPORTANT]
-   >È necessario utilizzare AEM versione `2021.10.5933.20211012T154732Z` per sfruttare le nuove pipeline front-end.
+   >Per utilizzare le nuove pipeline front-end è necessaria la versione `2021.10.5933.20211012T154732Z` di AEM.
 
 * La durata della pipeline di qualità del codice viene notevolmente ridotta, eseguendo l’analisi del codice in modo più efficiente senza la necessità di creare un’immagine intera AEM. Questa modifica verrà implementata progressivamente nelle settimane successive al rilascio.
 
@@ -48,7 +48,7 @@ La prossima versione è prevista per il 16 dicembre 2021.
 
 * L’API di modifica delle pipeline ora supporta la modifica dell’ambiente utilizzato nelle fasi di distribuzione.
 
-* È stata introdotta un&#39;ottimizzazione nel processo di scansione OakPal per i pacchetti di grandi dimensioni.
+* È stata introdotta un’ottimizzazione nel processo di scansione OakPal per i pacchetti di grandi dimensioni.
 
 * Il file CSV del problema qualità conterrà ora la timestamp per ogni problema di qualità.
 

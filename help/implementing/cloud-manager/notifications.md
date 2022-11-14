@@ -1,18 +1,18 @@
 ---
 title: Notifiche
-description: Scopri come ricevere informazioni sulle distribuzioni delle pipeline utilizzando il sistema di notifica Adobe Experience Cloud.
+description: Scopri come ricevere informazioni sulle distribuzioni delle pipeline con il sistema di notifica di Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 1%
+ht-degree: 12%
 
 ---
 
 
 # Notifiche {#notifications}
 
-Scopri in che modo Cloud Manager ti notifica di eventi importanti.
+Scopri in che modo Cloud Manager notifica gli eventi importanti.
 
 ## Notifiche in Cloud Manager {#cloud-manager-notifications}
 
@@ -20,17 +20,17 @@ Scopri in che modo Cloud Manager ti notifica di eventi importanti.
 
 Queste notifiche vengono inviate tramite [!UICONTROL Experience Cloud] sistema di notifica agli utenti nel **Proprietario business**, **Responsabile del programma** e **Gestione distribuzione** ruoli.
 
-Le notifiche vengono visualizzate in una barra laterale in [!UICONTROL Cloud Manager] e in tutto l&#39;Adobe [!UICONTROL Experience Cloud]. L’icona della campana nell’intestazione viene contrassegnata quando si dispone di nuove notifiche.
+Le notifiche vengono visualizzate in una barra laterale in [!UICONTROL Cloud Manager] e in tutto l&#39;Adobe [!UICONTROL Experience Cloud]. Quando ricevi nuove notifiche, l’icona a forma di campana nell’intestazione viene contrassegnata.
 
-![Icona Notifiche](assets/notifications-bell-badged.png)
+![Icona delle notifiche](assets/notifications-bell-badged.png)
 
-Fai clic sull’icona della campana per aprire la barra laterale e visualizzare le notifiche. La **Notifiche** nella barra laterale sono elencate le notifiche più recenti, ad esempio le conferme di distribuzione. Le notifiche riguardano i tuoi ambienti.
+Fai clic sull’icona a forma di campana per aprire la barra laterale e visualizzare le notifiche. La **Notifiche** nella barra laterale sono elencate le notifiche più recenti, ad esempio le conferme di distribuzione. Le notifiche riguardano i tuoi ambienti.
 
-![Barra laterale Notifiche](assets/notifications-activities.png)
+![Barra laterale delle notifiche](assets/notifications-activities.png)
 
 La **Annunci** La scheda include Adobi di annunci di prodotti. Gli annunci riguardano il prodotto.
 
-![Barra laterale Notifiche](assets/notificaitons-announcements.png)
+![Barra laterale delle notifiche](assets/notificaitons-announcements.png)
 
 Fai clic su una notifica o un annuncio per visualizzarne i dettagli. Le notifiche collegate ad attività come le distribuzioni di pipeline ti portano ai dettagli di quell’attività, ad esempio la finestra di esecuzione della pipeline.
 

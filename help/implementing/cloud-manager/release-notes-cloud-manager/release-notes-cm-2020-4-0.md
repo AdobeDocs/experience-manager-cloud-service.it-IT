@@ -1,22 +1,22 @@
 ---
-title: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2020.4.0
-description: Note sulla versione per Cloud Manager in AEM versione as a Cloud Service 2020.4.0
+title: Note sulla versione 2020.4.0 di Cloud Manager in AEM as a Cloud Service
+description: Note sulla versione 2020.4.0 di Cloud Manager in AEM as a Cloud Service
 feature: Release Information
 exl-id: 15665fb5-9444-416b-938a-45c31fdce5cf
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione di Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
+# Note sulla versione 2020.4.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 Questa pagina illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2020.4.0.
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.4.0 è il 9 aprile 2020.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2020.4.0 è il 9 aprile 2020.
 
 ## Novità {#whats-new-cloud-manager}
 
@@ -27,13 +27,13 @@ La data di rilascio di Cloud Manager in AEM as a Cloud Service 2020.4.0 è il 9 
 * Sono stati introdotti miglioramenti nella pagina di esecuzione della pipeline, che ne facilitano la comprensione. Questi includono la visualizzazione del nome della pipeline (solo per pipeline non di produzione) e del tipo, oltre all’indicazione dello stato della pipeline (In corso, Annullato, Non riuscito).
 * Sono state aggiunte descrizioni per migliorare l’esperienza utente e spiegare perché il pulsante Aggiungi programma/ambiente è disattivato.
 * Gli ambienti con errore possono ora essere eliminati tramite l’interfaccia utente e l’API.
-* Il processo utilizzato per generare password git è stato reso più flessibile per affrontare eventuali problemi nel livello di servizio sottostante.
+* Il processo utilizzato per generare password Git è stato reso più flessibile per affrontare eventuali problemi nel livello di servizio sottostante.
 
 ### Correzioni di bug {#bug-fixes-cloud-manager}
 
-* I collegamenti all’ambiente Stage nella pagina dei dettagli di esecuzione della pipeline non passavano alla posizione corretta in modo regolare.
+* I collegamenti all’ambiente di staging nella pagina dei dettagli di esecuzione della pipeline non passavano alla posizione corretta in modo regolare.
 * Singoli passaggi del processo di creazione dell’ambiente venivano interrotti per timeout prima del necessario, causando errori del processo.
 * La configurazione Maven utilizzata nel contenitore di build è stata aggiornata per evitare deadlock durante il download dei metadati dell’artefatto.
-* In alcuni casi, il passaggio di generazione dell’immagine non eseguiva il download dei pacchetti dei clienti.
+* In alcuni casi, la fase di generazione dell’immagine non eseguiva il download dei pacchetti dei clienti.
 * Alcune condizioni poco frequenti impedivano l’eliminazione degli ambienti.
 * Le notifiche di Experience Cloud non venivano ricevute in modo costante.

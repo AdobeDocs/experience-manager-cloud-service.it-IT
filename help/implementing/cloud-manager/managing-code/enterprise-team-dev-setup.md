@@ -1,105 +1,105 @@
 ---
 title: Configurazione del team di sviluppo Enterprise
-description: Scopri come configurare e scalare il team di sviluppo aziendale e come AEM as a Cloud Service può supportare il processo di sviluppo.
+description: Scopri come configurare e scalare il team di sviluppo Enterprise e come supportare il processo di sviluppo con AEM as a Cloud Service.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
 workflow-type: tm+mt
 source-wordcount: '1444'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Configurazione del team di sviluppo aziendale per AEM as a Cloud Service {#enterprise-setup}
+# Configurazione del team di sviluppo Enterprise per AEM as a Cloud Service {#enterprise-setup}
 
-Scopri come configurare e scalare il team di sviluppo aziendale e come AEM as a Cloud Service può supportare il processo di sviluppo.
+Scopri come configurare e scalare il team di sviluppo Enterprise e come supportare il processo di sviluppo con AEM as a Cloud Service.
 
 ## Introduzione {#introduction}
 
-Per supportare i clienti con configurazioni di sviluppo aziendali, AEM as a Cloud Service si integra completamente con Cloud Manager e con le sue funzioni specifiche, [oleodotti CI/CD ostinati.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Tali pipeline e servizi sono basati sulle best practice, garantendo [test e la massima qualità del codice.](/help/implementing/cloud-manager/code-quality-testing.md)
+Per supportare i clienti con configurazioni di sviluppo di livello Enterprise, AEM as a Cloud Service si integra completamente con Cloud Manager e le relative [pipeline CI/CD appositamente progettate.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Queste pipeline e servizi sono progettati in base alle best practice e garantiscono [test accurati e la qualità più elevata del codice.](/help/implementing/cloud-manager/code-quality-testing.md)
 
-## Supporto di Cloud Manager nell’installazione di Enterprise Team Development {#cloud-manager}
+## Supporto di Cloud Manager per la configurazione del team di sviluppo Enterprise {#cloud-manager}
 
-Per garantire l’onboarding rapido, Cloud Manager offre tutto il necessario per iniziare a sviluppare esperienze digitali immediatamente, incluso un archivio Git per archiviare personalizzazioni che vengono poi create, verificate e distribuite da Cloud Manager.
+Per garantire un processo di onboarding rapido, Cloud Manager offre tutto il necessario per iniziare a sviluppare esperienze digitali fin da subito, incluso un archivio Git per archiviare personalizzazioni che vengono poi generate, verificate e distribuite da Cloud Manager.
 
-Utilizzando Cloud Manager, i team di sviluppo possono lavorare spesso per eseguire modifiche senza dipendere dal personale di Adobe.
+Con Cloud Manager i team di sviluppo possono apportare modifiche frequenti senza dipendere dal personale Adobe.
 
 In Cloud Manager sono disponibili tre tipi di ambienti.
 
-* Sviluppo
-* Area di visualizzazione
+* Ambiente di sviluppo
+* Ambiente di staging
 * Produzione
 
-Il codice può essere distribuito agli ambienti di sviluppo utilizzando una pipeline non di produzione. Per gli ambienti di staging e produzione, che si combinano sempre e quindi garantiscono la convalida prima dell’implementazione di produzione come best practice, una pipeline di produzione utilizza [cancelli di qualità](/help/implementing/cloud-manager/custom-code-quality-rules.md) per convalidare il codice dell&#39;applicazione e le modifiche di configurazione.
+Il codice può essere distribuito negli ambienti di sviluppo con una pipeline non di produzione. Per gli ambienti di staging e produzione, che sono sempre forniti in combinazione e quindi garantiscono la convalida prima della distribuzione nell’ambiente di produzione come best practice, una pipeline di produzione utilizza [gate di qualità](/help/implementing/cloud-manager/custom-code-quality-rules.md) per convalidare il codice dell’applicazione e le modifiche alla configurazione.
 
-La pipeline di produzione distribuisce prima il codice e la configurazione nell’ambiente di staging, esegue il test dell’applicazione e infine distribuisce in produzione.
+La pipeline di produzione distribuisce il codice e la configurazione nell’ambiente di staging, esegue il test dell’applicazione e infine la distribuisce nell’ambiente di produzione.
 
-Un SDK di Cloud Service sempre aggiornato con gli ultimi miglioramenti as a Cloud Service AEM consente lo sviluppo locale utilizzando direttamente l’hardware locale dello sviluppatore. Ciò consente uno sviluppo rapido con tempi di rotazione molto bassi. In questo modo, gli sviluppatori possono rimanere nel loro ambiente locale familiare e scegliere tra un&#39;ampia varietà di strumenti di sviluppo, oltre a essere spinti negli ambienti di sviluppo o produzione quando lo ritengano opportuno.
+Grazie all’SDK di Cloud Service, sempre aggiornato con i più recenti miglioramenti per AEM as a Cloud Service, è possibile sviluppare a livello locale utilizzando direttamente l’hardware locale dello sviluppatore o della sviluppatrice. In questo modo lo sviluppo è rapido e i tempi di risposta molto ridotti. Di conseguenza, il team di sviluppo può lavorare dal proprio ambiente locale conosciuto e scegliere tra un’ampia gamma di strumenti di sviluppo, eseguendo il push negli ambienti di sviluppo o produzione quando ritenuto opportuno.
 
-Cloud Manager supporta configurazioni multi-team flessibili che possono essere regolate in base alle esigenze di un’azienda. Per garantire implementazioni stabili con più team evitando nel contempo situazioni in cui un solo team influisce sulla produzione per tutti i team, la pipeline con opinioni di Cloud Manager convalida e verifica sempre il codice da tutti i team.
+Cloud Manager supporta configurazioni flessibili di più team che possono essere regolate in base alle esigenze dell’azienda. Per garantire distribuzioni stabili con più team ed evitare situazioni in cui un solo team influisce sulla produzione di tutti gli altri, la pipeline categorica di Cloud Manager convalida e verifica sempre il codice da tutti i team.
 
-## Esempio nel mondo reale {#real-world-example}
+## Esempio reale {#real-world-example}
 
-Ogni azienda ha requisiti diversi, tra cui configurazione del team, processi e flussi di lavoro di sviluppo diversi. La configurazione descritta di seguito viene utilizzata per Adobe per diversi progetti che forniscono esperienze oltre a AEM as a Cloud Service.
+Ogni azienda ha requisiti diversi, che riguardano configurazione del team, processi e flussi di lavoro per lo sviluppo. Adobe utilizza la configurazione descritta di seguito per diversi progetti che forniscono esperienze per AEM as a Cloud Service.
 
-Ad esempio, le applicazioni Adobe Creative Cloud, come Adobe Photoshop o Adobe Illustrator, includono risorse di contenuto quali esercitazioni, esempi e guide disponibili per gli utenti finali. Questo contenuto viene utilizzato dalle applicazioni client utilizzando AEM as a Cloud Service in modo headless, effettuando chiamate API al livello di pubblicazione AEM Cloud per recuperare il contenuto strutturato come flussi JSON e sfruttando il [Rete per la distribuzione dei contenuti (CDN) in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) per fornire contenuti strutturati e non strutturati con prestazioni ottimali.
+Ad esempio, le applicazioni Adobe Creative Cloud, come Adobe Photoshop o Adobe Illustrator, mettono a disposizione degli utenti risorse di contenuti quali tutorial, esempi e guide. Tali contenuti vengono utilizzati dalle applicazioni client che utilizzano AEM as a Cloud Service in modo headless, effettuando chiamate API al livello Publish di AEM Cloud per recuperare i contenuti strutturati come flussi JSON e sfruttando la [rete per la distribuzione dei contenuti (CDN) in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) per fornire contenuti strutturati e non strutturati con prestazioni ottimali.
 
-I team che contribuiscono a questo progetto aderiscono al seguente processo.
+I team che contribuiscono a questo progetto si attengono al processo indicato di seguito.
 
-Ogni team utilizza il proprio flusso di lavoro di sviluppo e dispone di un archivio git separato. Un archivio Git condiviso aggiuntivo viene utilizzato per i progetti di onboarding. Questo archivio Git contiene la struttura principale dell’archivio Git di Cloud Manager, inclusa la configurazione del dispatcher condiviso.
+Ogni team utilizza il proprio flusso di lavoro di sviluppo e dispone di un archivio Git separato. Per i progetti di onboarding viene utilizzato un ulteriore archivio Git condiviso. Tale archivio Git contiene la struttura radice dell’archivio Git di Cloud Manager, inclusa la configurazione dispatcher condivisa.
 
-L’onboarding di un nuovo progetto richiede l’inserimento nel file di progetto Maven del reattore nella directory principale dell’archivio git condiviso. Per la configurazione del dispatcher viene creato un nuovo file di configurazione all’interno del progetto dispatcher. Questo file viene quindi incluso dalla configurazione del dispatcher principale. Ogni team è responsabile del proprio file di configurazione del dispatcher. Le modifiche all’archivio Git condiviso sono rare e di solito sono necessarie solo quando viene effettuato l’onboarding di un nuovo progetto. Il lavoro principale viene svolto da ogni team di progetto all’interno del proprio archivio Git.
+L’onboarding di un nuovo progetto richiede l’inserimento nel file di progetto Maven multi-modulo nella radice dell’archivio Git condiviso. Per la configurazione dispatcher viene creato un nuovo file di configurazione all’interno del progetto dispatcher. Questo file viene quindi incluso dalla configurazione dispatcher principale. Ogni team è responsabile del proprio file di configurazione dispatcher. Le modifiche all’archivio Git condiviso sono rare e di solito sono necessarie solo per effettuare l’onboarding di un nuovo progetto. Le operazioni principali vengono svolto da ogni team di progetto all’interno del proprio archivio Git.
 
 ![Diagramma del flusso di lavoro](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-L’archivio Git per ogni viene configurato utilizzando [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) e quindi segue le migliori pratiche per la creazione AEM progetti. L’unica eccezione è la configurazione del dispatcher che viene eseguita nell’archivio Git condiviso come descritto sopra.
+Ogni archivio Git viene configurato utilizzando l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) e segue pertanto le best practice per la creazione di progetti AEM. L’unica eccezione è la configurazione dispatcher, che viene eseguita nell’archivio Git condiviso come descritto in precedenza.
 
 Ogni team utilizza un flusso di lavoro Git semplificato con due rami + N, seguendo il modello di flusso Git:
 
-* Un ramo di rilascio stabile contiene il codice di produzione.
+* Un ramo della versione stabile contiene il codice di produzione.
 
-* Un ramo di sviluppo contiene l&#39;ultimo sviluppo.
+* Un ramo di sviluppo contiene il codice di sviluppo più aggiornato.
 
-* Per ogni feature viene creato un nuovo ramo.
+* Per ogni funzione viene creato un nuovo ramo.
 
-Lo sviluppo viene eseguito in un ramo di funzione. Quando la feature matura viene unita al ramo di sviluppo. Le funzioni completate e convalidate vengono prelevate dal ramo di sviluppo e unite al ramo stabile.
+Lo sviluppo viene eseguito in un ramo della funzione. Quando la funzione è pronta, viene unita al ramo di sviluppo. Le funzioni completate e convalidate vengono prelevate dal ramo di sviluppo e unite al ramo stabile.
 
-Tutte le modifiche vengono effettuate tramite le richieste di pull (PR). Ogni PR viene convalidato automaticamente dai gate di qualità. Sonar viene utilizzato per il controllo della qualità del codice e viene eseguito un set di suite di test per garantire che il nuovo codice non introduca alcuna regressione.
+Tutte le modifiche vengono effettuate tramite richieste pull (PR). Ogni PR viene convalidato automaticamente dai gate di qualità. Per il controllo di qualità del codice si utilizza Sonar e si eseguono una serie di suite di test per garantire che il nuovo codice non introduca alcuna regressione.
 
-La configurazione nell’archivio Git di Cloud Manager ha due rami.
+La configurazione nell’archivio Git di Cloud Manager presenta due rami.
 
-* Un ramo di rilascio stabile contiene il codice di produzione di tutti i team.
+* Un ramo della versione stabile contiene il codice di produzione di tutti i team.
 * Un ramo di sviluppo contiene il codice di sviluppo di tutti i team.
 
-Ogni push all’archivio Git di un team nello sviluppo o nel ramo stabile attiva un [Azione GitHub.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+Ogni push all’archivio Git di un team nel ramo di sviluppo o nel ramo stabile attiva un’[azione GitHub.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
 
-Tutti i progetti seguono la stessa impostazione per il ramo stabile. Un push al ramo stabile di un progetto viene inviato automaticamente al ramo stabile nell’archivio Git di Cloud Manager. La pipeline di produzione in Cloud Manager è configurata per essere attivata da un push al ramo stabile. La pipeline di produzione viene quindi eseguita da ogni push di un team in un ramo stabile e la distribuzione di produzione viene aggiornata se tutti i gate di qualità passano.
+Tutti i progetti presentano la stessa configurazione per il ramo stabile. Un push al ramo stabile di un progetto viene inviato automaticamente al ramo stabile nell’archivio Git di Cloud Manager. La pipeline di produzione in Cloud Manager è configurata per essere attivata da un push al ramo stabile. La pipeline di produzione viene quindi eseguita da ogni push in un ramo stabile eseguito dai team, mentre la distribuzione in produzione viene aggiornata se supera tutti i gate di qualità.
 
 ![Diagramma push](/help/implementing/cloud-manager/assets/team-setup2.png)
 
-I push al ramo di sviluppo vengono gestiti in modo diverso. Mentre un push a un ramo di sviluppatori nell’archivio Git di un team attiva anche un’azione GitHub e il codice viene inviato automaticamente nel ramo di sviluppo nell’archivio Git di Cloud Manager, la pipeline non di produzione non viene attivata automaticamente dal push del codice. Viene attivata da una chiamata all’API di Cloud Manager.
+I push al ramo di sviluppo vengono gestiti in modo diverso. Mentre un push a un ramo di sviluppo nell’archivio Git di un team attiva anche un’azione GitHub e il codice viene inviato automaticamente nel ramo di sviluppo dell’archivio Git di Cloud Manager, la pipeline non di produzione non viene attivata automaticamente dal push del codice. Viene attivata da una chiamata all’API di Cloud Manager.
 
-L’esecuzione della pipeline di produzione include il controllo del codice di tutti i team tramite i gate di qualità forniti. Una volta distribuito il codice sullo stage, i test e i controlli vengono eseguiti per garantire che tutto funzioni come previsto. Una volta passati tutti i cancelli, le modifiche vengono implementate in produzione senza interruzioni o tempi di inattività.
+L’esecuzione della pipeline di produzione include il controllo del codice di tutti i team tramite i gate di qualità forniti. Dopo aver distribuito il codice nell’ambiente di staging, vengono eseguiti test e audit per garantire che tutto funzioni come previsto. Se il controllo di tutti i gate viene superato, le modifiche vengono implementate nell’ambiente di produzione senza interruzioni o tempi di inattività.
 
-Per lo sviluppo locale, [SDK per AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing) viene utilizzato. L’SDK consente di configurare un’istanza di authoring, pubblicazione e dispatcher locale. Questo consente lo sviluppo offline e tempi di consegna rapidi. A volte solo l’ambiente di authoring viene utilizzato per lo sviluppo, ma la configurazione rapida degli ambienti di dispatcher e pubblicazione consente di testare tutto ciò che si trova localmente prima di inviarlo all’archivio git.
+Per lo sviluppo locale, si utilizza l’[SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing). L’SDK consente di configurare un’istanza di Author, Publish e Dispatcher locale. In questo modo lo sviluppo può avvenire offline con tempi di risposta rapidi. A volte per lo sviluppo si utilizza solo l’ambiente di Author, ma configurare rapidamente gli ambienti Dispatcher e Publish consente di eseguire test completi a livello locale prima di eseguire il push nell’archivio Git.
 
-In genere, i membri di ogni team estraggono il codice dall’git condiviso per e il codice del loro progetto. Non è necessario effettuare il pagamento di altri progetti in quanto i progetti sono indipendenti.
+In genere, i membri di ogni team estraggono il codice dall’archivio Git condiviso anche per il codice dei progetti proprietari. Non è necessario estrarre altri progetti, in quanto ognuno è indipendente.
 
-![Checkout locale e SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
+![Ritiro locale e SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
-Questa configurazione reale può essere utilizzata come blueprint e quindi personalizzata in base alle esigenze di un&#39;azienda. Il concetto di branching e unione flessibile di git consente di modificare i flussi di lavoro di cui sopra in base alle esigenze di ogni team. AEM as a Cloud Service supporta tutte queste varianti senza sacrificare il valore di base della pipeline di Cloud Manager opinionated.
-
->[!TIP]
->
->Fare riferimento al documento [Utilizzo di più archivi Git di origine](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) per ulteriori informazioni su questa configurazione.
-
-### Considerazioni per una configurazione multi-team {#considerations}
-
-Con l’archivio Git di Cloud Manager e la pipeline di produzione, l’intero codice di produzione viene sempre eseguito attraverso tutti i gate di qualità, trattandolo come un’unica unità di distribuzione. In questo modo il sistema di produzione è sempre in funzione senza interruzioni o tempi di inattività.
-
-Al contrario, senza un tale sistema, poiché ogni team può distribuire separatamente, c&#39;è il rischio che un aggiornamento da un singolo team possa portare a problemi di stabilità della produzione. Inoltre, per distribuire gli aggiornamenti è necessario il coordinamento e i tempi di inattività pianificati. Con un numero crescente di squadre, lo sforzo di coordinamento diventerà molto più complesso e rapidamente ingestibile.
-
-Se viene rilevato un problema nei cancelli di qualità, la produzione non viene influenzata e il problema può essere rilevato e risolto senza il personale Adobe necessario per intervenire. Senza Cloud Service e senza sempre testare l&#39;intera implementazione, le distribuzioni parziali possono causare interruzioni che richiedono il rollback di una richiesta o persino un ripristino completo da un backup. Il test parziale potrebbe anche portare ad altri problemi che devono poi essere risolti dopo il fatto che ancora una volta richiede il coordinamento e il sostegno del personale Adobe.
+Questa configurazione reale può essere utilizzata come blueprint e personalizzata in base alle specifiche esigenze aziendali. Il concetto di ramificazione e unione flessibile degli archivi Git consente di utilizzare delle varianti dei flussi di lavoro di cui sopra in base alle esigenze specifiche dei team. AEM as a Cloud Service supporta tutte queste varianti senza dover rinunciare al valore di base della pipeline categorica di Cloud Manager.
 
 >[!TIP]
 >
->Per qualsiasi configurazione multi-team è fondamentale definire un modello di governance e un insieme di standard che tutti i team devono seguire. Il modello precedente per una configurazione multi-team consente di scalare un numero maggiore di team, che è possibile utilizzare come punto di partenza.
+>Per ulteriori informazioni su questa configurazione, consulta il documento [Utilizzo di più archivi Git di origine](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=it#managing-code).
+
+### Considerazioni per una configurazione con più team {#considerations}
+
+Con l’archivio Git e la pipeline di produzione di Cloud Manager, l’intero codice di produzione viene sempre controllato da tutti i gate di qualità, da cui viene considerato alla stregua di un’unica unità di distribuzione. In questo modo il sistema di produzione è sempre attivo, senza interruzioni o tempi di inattività.
+
+In assenza di un tale sistema, poiché ogni team può eseguire la distribuzione separatamente, c’è il rischio che l’aggiornamento apportato da un singolo team possa portare a problemi di stabilità della produzione. Inoltre, per distribuire gli aggiornamenti è necessario essere coordinati e pianificare i tempi di inattività. Con il costante aumento del numero dei team, coordinarsi diventa molto più complesso e rapidamente ingestibile.
+
+Se viene rilevato un problema al livello dei gate di qualità, la produzione non viene influenzata e il problema può essere rilevato e risolto senza necessità di intervento del personale Adobe. Se non si integra Cloud Service e non si eseguono test continui dell’intera distribuzione, le distribuzioni parziali possono causare interruzioni che richiedono il ripristino dello stato precedente di una richiesta o persino un ripristino completo da un backup. Anche l’esecuzione parziale dei test può far sorgere altri problemi che dovranno essere risolti richiedendo nuovamente il coordinamento e il supporto del personale Adobe.
+
+>[!TIP]
+>
+>Per qualsiasi configurazione con più team è fondamentale definire un modello di governance e una serie di standard a cui dovranno attenersi tutti i team. Il blueprint precedente per una configurazione con più team è scalabile per un numero maggiore di team e può essere utilizzato come punto di partenza.

@@ -1,83 +1,83 @@
 ---
 title: Modifica dei programmi
-description: Scopri come modificare i programmi di produzione e sandbox per regolare le loro opzioni dopo averli creati.
+description: Scopri come modificare i programmi sandbox e di produzione per apportare modifiche alle opzioni dopo averli creati.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Modifica dei programmi {#editing-programs}
 
-Gli utenti con le autorizzazioni necessarie possono modificare [programmi di produzione creati nella tua organizzazione](creating-production-programs.md) nonché [programmi sandbox creati nella tua organizzazione.](creating-sandbox-programs.md) Modificando un programma è possibile:
+Gli utenti con le autorizzazioni necessarie possono modificare i [programmi di produzione](creating-production-programs.md) e i [programmi sandbox creati nell’organizzazione.](creating-sandbox-programs.md) Modificando un programma è possibile:
 
-* Aggiungi la soluzione Sites a un programma esistente con Assets e viceversa.
-* Rimuovi Sites o Assets da un programma esistente sia con Sites che con Assets.
-* Aggiungi un secondo diritto non utilizzato alla soluzione a un programma esistente o a un nuovo programma.
-* Elimina i programmi sandbox.
+* Aggiungere la soluzione Sites a un programma esistente con Assets e viceversa.
+* Rimuovere Sites o Assets da un programma esistente con entrambi Sites e Assets.
+* Aggiungere una seconda soluzione non utilizzata a un programma esistente o nuovo.
+* Eliminare i programmi sandbox.
 
 >[!NOTE]
 >
->Devi essere un membro del **Proprietario business** ruolo per modificare programmi o eliminare programmi sandbox.
+>Per modificare i programmi o eliminare i programmi sandbox, è necessario avere il ruolo di **Proprietario business**.
 
-Segui questi passaggi per modificare un programma.
+Per modificare un programma, segui la procedura riportata di seguito.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Fai clic sul programma da modificare per visualizzarne i dettagli.
+1. Per visualizzare i dettagli del programma, fai clic su quello che desideri modificare.
 
-1. Fai clic sul nome del programma in alto a sinistra nella pagina e seleziona **Modifica programma**.
+1. Fai clic sul nome del programma nella parte superiore sinistra della pagina e seleziona **Modifica programma**.
 
    ![Opzione Modifica programma](assets/edit-program-overview.png)
 
-1. La **Modifica programma** viene visualizzata la pagina . Sulla **Generale** , modifica il nome e la descrizione del programma.
+1. Viene visualizzata la pagina **Modifica programma**. Dalla scheda **Generale**, modifica il nome e la descrizione del programma.
 
-   * È necessario selezionare almeno una soluzione per un programma.
+   * È necessario selezionare almeno una soluzione per programma.
 
    ![Scheda Generale](assets/edit-program-prod1.png)
 
-1. Sulla **Soluzioni e componenti aggiuntivi** , modifica le soluzioni per il programma.
+1. Dalla scheda **Soluzioni e componenti aggiuntivi**, modifica le soluzioni del programma.
 
-   ![Selezionare le soluzioni](assets/edit-prg.png)
+   ![Selezione delle soluzioni](assets/edit-prg.png)
 
-1. Fai clic sulla freccia prima dei nomi delle soluzioni per visualizzare i componenti aggiuntivi facoltativi, ad esempio selezionando la **Commerce** opzione add-on in **Sites**.
+1. Per visualizzare i componenti aggiuntivi facoltativi, come l’opzione per il componente **Commerce** in **Sites**, fai clic sulla freccia che precede il nome della soluzione.
 
-   ![Modificare i componenti aggiuntivi](assets/edit-program-add-on.png)
+   ![Modifica dei componenti aggiuntivi](assets/edit-program-add-on.png)
 
-1. Sulla **Vai alle impostazioni live** , modifica la data di pubblicazione pianificata per il programma.
+1. Dalla scheda **Impostazioni pubblicazione**, modifica la data di pubblicazione pianificata per il programma.
 
-   ![Modificare le impostazioni in tempo reale](assets/edit-program-go-live.png)
+   ![Modifica delle impostazioni di pubblicazione](assets/edit-program-go-live.png)
 
-   * Questa data è solo per uso informativo e attiva il widget Go Live sulla pagina di panoramica del programma per fornire collegamenti all’interno del prodotto alla documentazione sulle best practice as a Cloud Service in modo tempestivo per allinearsi con il percorso che culmina in un’esperienza Go Live di successo e fluida.
+   * Questa data è solo per uso informativo e attiva il widget di pubblicazione sulla pagina della panoramica del programma per fornire collegamenti rapidi alla documentazione sulle best practice di AEM as a Cloud Service, al fine di allinearsi con il percorso che culmina in un’esperienza di pubblicazione fluida e di successo.
 
-1. Fai clic su **Aggiorna** per salvare le modifiche apportate al programma.
+1. Per salvare le modifiche apportate al programma, fai clic su **Aggiorna**.
 
-Tutte le volte che un programma viene modificato, inclusa l&#39;aggiunta o la rimozione di una soluzione o di un componente aggiuntivo, tali modifiche avranno effetto dopo la distribuzione successiva.
+Ogni volta che si modifica un programma, compreso aggiungere o rimuovere una soluzione o un componente aggiuntivo, le modifiche hanno effetto dopo la distribuzione successiva.
 
 ## Eliminazione dei programmi sandbox {#delete-sandbox-program}
 
-L’eliminazione di un programma sandbox comporta la rimozione di tutti gli ambienti e le pipeline ad esso associate.
+L’eliminazione di un programma sandbox comporta la rimozione di tutti gli ambienti e delle relative pipeline associate.
 
 >[!TIP]
 >
->Utenti con **Proprietario business** o **Gestione distribuzione** In alternativa, i ruoli possono eliminare i rispettivi ambienti di produzione e di stage invece dell’intero programma sandbox.
+>In alternativa, gli utenti con i ruoli **Proprietario business** o **Responsabile dell’implementazione** possono eliminare gli ambienti di produzione e di staging al posto dell’intero programma sandbox.
 
-Per eliminare un programma sandbox, effettua le seguenti operazioni.
+Per eliminare un programma sandbox, segui la procedura riportata di seguito.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Fai clic sul programma da modificare per visualizzarne i dettagli.
+1. Per visualizzare i dettagli del programma, fai clic su quello che desideri modificare.
 
-1. Fai clic sul nome del programma in alto a sinistra nella pagina e seleziona **Elimina programma**.
+1. Fai clic sul nome del programma nella parte superiore sinistra della pagina e seleziona **Elimina programma**.
 
    ![Opzione Elimina programma](assets/delete-sandbox1.png)
 
-In alternativa, puoi fare clic sul pulsante con i puntini di sospensione sulla scheda del programma dalla pagina di panoramica di Cloud Manager e selezionare **Elimina programma**.
+In alternativa, dalla pagina della panoramica di Cloud Manager, accedi alla scheda del programma, fai clic sul pulsante con i puntini di sospensione e seleziona **Elimina programma**.
 
-![Elimina sandbox dalla scheda del programma](assets/delete-sandbox2.png)
+![Scheda Elimina sandbox da programma](assets/delete-sandbox2.png)
 
 >[!NOTE]
 >
->È possibile eliminare solo i programmi sandbox. Impossibile eliminare i programmi di produzione.
+>È possibile eliminare solo i programmi sandbox. I programmi di produzione non possono essere eliminati.

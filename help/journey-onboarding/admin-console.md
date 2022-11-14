@@ -1,112 +1,112 @@
 ---
-title: Accesso all’Admin Console
-description: Una volta compresa la preparazione necessaria all’onboarding e le nozioni di base della struttura AEMaaCS, puoi accedere all’Admin Console per la prima volta.
+title: Accesso a Admin Console
+description: Una volta comprese le operazioni preliminari all’onboarding e le nozioni di base della struttura di AEMaaCS, puoi effettuare il primo accesso a Admin Console.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Accesso all’Admin Console {#accessing-admin-console}
+# Accesso a Admin Console {#accessing-admin-console}
 
-In questa parte del [percorso di bordo,](overview.md) apprenderai la preparazione necessaria prima di poter accedere al sistema per la prima volta.
+In questa sezione del [percorso di onboarding](overview.md) scoprirai le operazioni preliminari necessarie per accedere al sistema per la prima volta.
 
 ## Obiettivo {#objective}
 
-Ora che hai letto l&#39;articolo [Terminologia as a Cloud Service AEM](terminology.md) e comprendi le nozioni di base della struttura AEMaaCS, sei pronto per accedere all’Admin Console per la prima volta!
+Ora che hai letto l’articolo [Terminologia di AEM as a Cloud Service](terminology.md) e conosci le nozioni di base della struttura di AEMaaCS, puoi effettuare il primo accesso a Admin Console.
 
-In qualità di amministratore di sistema, sei responsabile della gestione degli utenti all’interno dell’organizzazione. A tale scopo, utilizza l’Admin Console . Dopo aver letto questa sezione devi:
+In qualità di amministratore di sistema, sei responsabile della gestione degli utenti dell’organizzazione. Per farlo è disponibile Admin Console. Dopo aver letto questa sezione dovresti sapere:
 
-* Scopri cos’è un Adobe ID.
-* Puoi accedere ad Admin Console.
-* Scopri come rivedere i privilegi di amministratore di sistema tramite Admin Console.
-* Scopri come contattare il supporto Adobe per ricevere assistenza.
+* Che cos’è un Adobe ID.
+* Come accedere a Admin Console.
+* Come rivedere i privilegi di amministratore di sistema tramite Admin Console.
+* Come contattare il supporto Adobe per ricevere assistenza.
 
-## L&#39;Admin Console {#admin-console}
+## Admin Console {#admin-console}
 
-Adobe Admin Console è un luogo centrale per amministrare e gestire le licenze e gli utenti dei prodotti Adobe. L’Admin Console ti consente di creare e gestire gli utenti in un’unica posizione invece che all’interno delle singole soluzioni.
+Adobe Admin Console è una piattaforma centralizzata da cui amministrare e gestire le licenze e gli utenti dei prodotti Adobe. Con Admin Console è possibile creare e gestire gli utenti da un’unica posizione anziché dalle singole soluzioni individuali.
 
 ## Adobe ID {#adobe-id}
 
-Per accedere all’Admin Console, è necessario un Adobe ID. E Adobe ID è un account associato a un indirizzo e-mail specifico che è necessario per accedere e accedere AEM as a Cloud Service o a una delle soluzioni di Adobe. Utilizzando il tuo Adobe ID mantieni tutti i tuoi piani di Adobe e i prodotti associati a un singolo account.
+Per accedere a Admin Console è necessario un Adobe ID. Adobe ID è un account associato a un indirizzo e-mail specifico, necessario per accedere a AEM as a Cloud Service o alle soluzioni Adobe in possesso. Con Adobe ID puoi riunire tutti i tuoi piani Adobe e i prodotti associati in un singolo account.
 
-Quando nell’Admin Console l’amministratore di sistema imposta il team, specifica l’indirizzo e-mail che verrà utilizzato come Adobe ID.
+Quando configuri il team come amministratore di sistema in Admin Console, specifica l’indirizzo e-mail da utilizzare come Adobe ID.
 
-Esistono tre tipi di ID Adobe:
+Esistono tre tipi di Adobe ID:
 
-* **ID personale**: Questo è il tipo predefinito di Adobe ID e viene creato su adobe.com. Questo account è gestito da Adobe e chiunque può creare un account di questo tipo.
+* **ID personale**: è il tipo predefinito di Adobe ID che viene creato su adobe.com/it/. Questo account è gestito da Adobe: tutti gli utenti possono creare un account di questo tipo.
 
-* **Enterprise ID**: Le organizzazioni in genere desiderano aumentare il controllo degli account utente. Solo gli amministratori di sistema possono creare Enterprise ID e l&#39;organizzazione possiede questi account con Adobe che funge solo da host.
+* **Enterprise ID**: le organizzazioni in genere richiedono un maggiore controllo sugli account utente. Solo gli amministratori di sistema possono creare gli Enterprise ID: è l’organizzazione a gestire questi account, in cui Adobe funge solo da host.
 
-* **Federated ID**: Con gli ID federati l&#39;organizzazione assume la piena proprietà e il controllo degli account. A questo scopo, la tua organizzazione deve integrare Adobe Experience Cloud con il tuo sistema di single sign-on (SSO) SAML2. Questo consente agli utenti di effettuare l’autenticazione sul sistema SSO della propria organizzazione anziché su un account ospitato da Adobe.
+* **Federated ID**: con i Federated ID l’organizzazione assume la piena gestione e il controllo completo sugli account. Per farlo, l’organizzazione deve integrare Adobe Experience Cloud con il sistema Single Sign-On (SSO) SAML2. Il sistema permette agli utenti di effettuare l’autenticazione tramite il sistema SSO dell’organizzazione anziché da un account ospitato da Adobe.
 
-In qualità di amministratore di sistema, puoi decidere di effettuare l’onboarding di te stesso e del tuo team in AEM as a Cloud Service utilizzando gli ID personali prima che gli Enterprise ID o Federated ID siano impostati. Una volta impostati gli Enterprise ID o Federated ID, è possibile effettuare la transizione dei membri all&#39;utilizzo di tali ID.
+In qualità di amministratore di sistema, puoi decidere di effettuare l’onboarding del tuo account utente e del team in AEM as a Cloud Service con gli ID personali prima di configurare gli Enterprise ID o i Federated ID. Dopo aver impostato gli Enterprise ID o i Federated ID, i membri possono passare a utilizzarli.
 
-## Accesso ad Admin Console {#steps-admin-console}
+## Accesso a Admin Console {#steps-admin-console}
 
-Prima di poter utilizzare l’Admin Console per amministrare gli utenti all’interno del team, è necessario assicurarsi di poter accedervi correttamente e di disporre delle autorizzazioni appropriate.
+Prima di poter gestire gli utenti del team con Admin Console, assicurati di poter accedere correttamente e di disporre delle autorizzazioni appropriate.
 
-1. In qualità di amministratore di sistema, riceverai più e-mail da Adobe come parte del processo di onboarding. Cerca l’e-mail di benvenuto che fornisce le informazioni sul nome dell’organizzazione a cui ti è stato concesso l’accesso.
+1. In qualità di amministratore di sistema, come parte del processo di onboarding riceverai più e-mail da Adobe. Cerca l’e-mail di benvenuto con le informazioni sul nome dell’organizzazione a cui hai accesso.
 
-1. Fai clic sul pulsante **Introduzione** nel messaggio e-mail di benvenuto per passare ad Admin Console. Se non riesci a trovare l’e-mail, apri un browser direttamente all’Admin Console in [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Per accedere a Admin Console, fai clic sul collegamento **Inizia** nell’e-mail di benvenuto. Se non riesci a trovare l’e-mail, apri un browser per accedere direttamente a Admin Console all’indirizzo [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![E-mail di benvenuto](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Effettua il login utilizzando il tuo Adobe ID. Al termine dell’accesso, verrà visualizzata la **Panoramica** della Adobe Admin Console.
+1. Accedi con il tuo Adobe ID. Dopo aver effettuato l’accesso, viene visualizzata la pagina **Panoramica** di Adobe Admin Console.
 
-   ![L&#39;Admin Console](/help/journey-onboarding/assets/get-started1.png)
+   ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. Se hai accesso a più organizzazioni, assicurati di aver effettuato l’accesso all’organizzazione corretta. Per modificare l’organizzazione, fai clic sul nome dell’organizzazione nell’angolo in alto a destra e scegli l’organizzazione a cui devi accedere.
+1. Se hai accesso a più organizzazioni, assicurati di aver effettuato l’accesso a quella corretta. Per cambiare organizzazione, fai clic sul relativo nome nell’angolo in alto a destra e scegli l’organizzazione a cui desideri accedere.
 
-   ![Cambia organizzazione](/help/journey-onboarding/assets/admin-console-orgswitch.png)
+   ![Cambiare organizzazione](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 
-1. Seleziona **Amministratori** dal **Utenti** per verificare di essere un amministratore di sistema.
+1. Dalla scheda **Utenti**, seleziona **Amministratori** per verificare di essere uno degli amministratori di sistema.
 
-   ![Amministratori di revisione](/help/journey-onboarding/assets/get-started2.png)
+   ![Verifica degli amministratori](/help/journey-onboarding/assets/get-started2.png)
 
-1. Una volta fatto clic su **Amministratori** dal **Utenti** scheda, puoi eseguire la ricerca inserendo il tuo indirizzo e-mail Adobe ID, nome utente, nome utente o cognome.
+1. Dopo aver fatto clic su **Amministratori** dalla scheda **Utenti**, puoi effettuare una ricerca inserendo e-mail, nome utente, nome o cognome associati all’Adobe ID.
 
    ![Ricerca utenti](/help/journey-onboarding/assets/get-started3.png)
 
-1. Se tutto funziona correttamente, la ricerca restituirà il record. Se il valore in **RUOLO AMMINISTRATORE** presentazioni a colonne **Sistema**, l’utente (o l’utente visualizzato) è un amministratore di sistema.
+1. Se tutto funziona correttamente, la ricerca restituirà il record. Se il valore nella colonna **RUOLO AMMINISTRATORE** mostra **Sistema**, l’amministratore di sistema sei tu (o l’utente visualizzato).
 
-   ![Stato del sistema](/help/journey-onboarding/assets/get-started4.png)
+   ![Stato sistema](/help/journey-onboarding/assets/get-started4.png)
 
-Congratulazioni, amministratore di sistema!
+Congratulazioni, amministratore di sistema.
 
 ## Adobe Identity Management System {#ims}
 
-AEM as a Cloud Service è preconfigurato con Adobe Identity Management System (noto anche come IMS) per l’autenticazione. Non è necessario eseguire alcuna operazione in qualità di amministratore di sistema per eseguire questa operazione.
+AEM as a Cloud Service è preconfigurato con Adobe Identity Management System (anche noto come Adobe IMS) per l’autenticazione. Non è necessario eseguire alcuna operazione in qualità di amministratore di sistema per abilitare la funzione.
 
-Utilizzando IMS, AEM as a Cloud Service consolida l’esperienza di accesso tra AEM e il resto del Adobe Experience Cloud. Le organizzazioni con più prodotti Adobe beneficiano in particolare della creazione di gruppi basati su ruoli nell’Admin Console e dell’assegnazione dell’accesso a più prodotti, tra cui AEM as a Cloud Service tramite IMS.
+Con IMS, AEM as a Cloud Service consolida l’esperienza di accesso tra AEM e Adobe Experience Cloud. Le organizzazioni con più prodotti Adobe possono trarre particolare vantaggio dalla creazione di gruppi basati su ruoli in Admin Console e dall’assegnazione dell’accesso a più prodotti, tra cui AEM as a Cloud Service, tramite IMS.
 
-Ulteriori informazioni sui profili di prodotto e sull’assegnazione di utenti nella parte successiva di questo percorso di onboarding.
+Nella sezione successiva di questo percorso di onboarding troverai ulteriori informazioni sui profili di prodotto.
 
 ## Contattare il supporto Adobe {#support}
 
-In caso di problemi, è possibile accedere al supporto Adobe tramite l’Admin Console . La **Supporto** tab consente di accedere a varie funzioni di supporto di Adobe tramite un’interfaccia semplice e intuitiva.
+In caso di problemi, accedi al supporto Adobe tramite Admin Console. Nella scheda **Supporto** sono disponibili diverse funzioni di assistenza offerte da Adobe tramite un’interfaccia utente di semplice utilizzo.
 
 ![Scheda Supporto](/help/journey-onboarding/assets/support-menu.png)
 
-La scheda ti consente di creare e gestire i casi, di chattare direttamente con i rappresentanti di assistenza clienti Adobi e di pianificare le sessioni con gli esperti. Gli amministratori di sistema e gli amministratori di supporto devono effettuare l’accesso per accedere ai casi di assistenza e alle opzioni di sessione esperte.
+Dalla scheda è possibile creare e gestire i casi, chattare direttamente con l’assistenza clienti Adobe e pianificare le sessioni con gli esperti. Gli amministratori di sistema e gli amministratori del supporto devono effettuare l’accesso per accedere ai casi e alle opzioni delle sessioni con gli esperti.
 
-## Novità {#whats-next}
+## Passaggio successivo {#whats-next}
 
-Dopo aver letto questo documento, devi:
+Ora che hai letto questo documento dovresti sapere:
 
-* Scopri cosa è e Adobe ID.
-* Puoi accedere ad Admin Console.
-* Scopri come rivedere i privilegi di amministratore di sistema tramite Admin Console.
-* Scopri come contattare il supporto Adobe per ricevere assistenza.
+* Che cos’è un Adobe ID.
+* Come accedere a Admin Console.
+* Come rivedere i privilegi di amministratore di sistema tramite Admin Console.
+* Come contattare il supporto Adobe per ricevere assistenza.
 
-Sei pronto a continuare il tuo percorso di onboarding imparando come [assegnare i membri del team a profili di prodotto Cloud Manager](assign-profiles-cloud-manager.md) in modo che i tuoi colleghi possano accedere anche ad AEMaaCS.
+Ora puoi continuare il percorso di onboarding scoprendo come [assegnare i membri del gruppo ai profili di prodotto di Cloud Manager](assign-profiles-cloud-manager.md) per consentire a colleghi e colleghe di accedere a AEMaaCS.
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Panoramica dell’Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) - Panoramica completa dell&#39;Admin Console
-* [Crea o aggiorna il tuo Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Scopri come creare un Adobe ID, modificarlo e gestire più ID Adobe.
-* [Gestore autenticazione SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html) - AEM navi con un gestore di autenticazione SAML. Questo gestore fornisce il supporto per SAML 2.0 Authentication Request Protocol (profilo Web-SSO) utilizzando il binding HTTP POST.
-* [Ruoli amministrativi](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) - Utilizzando Adobe Admin Console, le organizzazioni possono definire una gerarchia amministrativa flessibile che consenta una gestione dettagliata dell’accesso e dell’utilizzo dei prodotti Adobe.
-* [Sessioni di supporto ed esperti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) - Scopri come accedere alle opzioni di supporto nell’Admin Console, gestire i casi di assistenza, pianificare una sessione di esperti e altro ancora.
+* [Panoramica di Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html): una panoramica completa di Admin Console
+* [Creazione o aggiornamento dell’Adobe ID](https://helpx.adobe.com/it/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID/): scopri come creare un Adobe ID, come modificarlo e gestirne più di uno.
+* [Gestore autenticazione SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=it): AEM viene fornito con un gestore per l’autenticazione SAML. Questo gestore fornisce il supporto per il protocollo di richiesta di autenticazione SAML 2.0 (profilo Web-SSO) utilizzando l’associazione HTTP POST.
+* [Ruoli amministrativi](https://helpx.adobe.com/it/enterprise/using/admin-roles.ug.html): con Adobe Admin Console le organizzazioni possono definire una gerarchia amministrativa flessibile per una gestione dettagliata dell’accesso e dell’utilizzo dei prodotti Adobe.
+* [Supporto e sessioni con gli esperti](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html): scopri come accedere alle opzioni di supporto in Admin Console, gestire i casi di assistenza, pianificare una sessione con gli esperti e altro ancora.

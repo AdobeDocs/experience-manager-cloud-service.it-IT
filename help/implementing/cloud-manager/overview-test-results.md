@@ -5,35 +5,35 @@ exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 
 # Panoramica dei test di Cloud Manager {#overview}
 
-Cloud Manager supporta tre categorie di test per le pipeline dei Cloud Services.
+Cloud Manager supporta tre categorie di test per le pipeline di Cloud Service.
 
-1. [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md)
+1. [Test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md)
 
-   * Il test della qualità del codice valuta la qualità del codice dell’applicazione.
-   * La pipeline di qualità del codice viene eseguita immediatamente dopo il passaggio di compilazione in tutte le pipeline non di produzione e di produzione.
-   * La [regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md) le esecuzioni di Cloud Manager vengono create in base alle best practice di AEM Engineering.
+   * Il test di qualità del codice valuta la qualità del codice dell’applicazione.
+   * La pipeline di qualità del codice viene eseguita immediatamente dopo la fase di build in tutte le pipeline non di produzione e di produzione.
+   * Le [regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md) eseguite da Cloud Manager vengono create in base alle best practice indicate dal team ingegneristico di AEM.
 
-1. [Test funzionale](/help/implementing/cloud-manager/functional-testing.md)
+1. [Test funzionali](/help/implementing/cloud-manager/functional-testing.md)
 
-   * Il test funzionale è una parte della fase di test della fase di una pipeline di produzione.
+   * I test funzionali costituiscono una parte della fase di test dell’ambiente di staging di una pipeline di produzione.
 
-1. [Test di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
+1. [Test dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   * Il test del controllo di audit di esperienza è abilitato in tutte le pipeline di produzione di Cloud Manager e non può essere ignorato.
+   * I test dell’audit dell’esperienza sono abilitati in tutte le pipeline di produzione di Cloud Manager e non possono essere ignorati.
 
-Questi test possono essere:
+I test possono essere:
 
-* Scritto dal cliente
-* scritto in Adobe
-* Creato con strumenti open source
+* Scritti dal cliente
+* Scritti da Adobe
+* Creati con strumenti open source
 
 >[!NOTE]
 >
-> I test scritti dai clienti e i test scritti in Adobe vengono eseguiti in un&#39;infrastruttura containerizzata progettata per l&#39;esecuzione di tali test.
+> I test scritti dal cliente e da Adobe vengono eseguiti in un’infrastruttura in contenitori progettata per l’esecuzione di tali test.

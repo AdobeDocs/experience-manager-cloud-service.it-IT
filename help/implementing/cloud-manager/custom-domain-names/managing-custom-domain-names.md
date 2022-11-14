@@ -1,68 +1,68 @@
 ---
 title: Gestione dei nomi di dominio personalizzati
-description: Scopri come utilizzare Cloud Manager per visualizzare, aggiornare, sostituire ed eliminare i nomi di dominio personalizzati.
+description: Scopri come visualizzare, aggiornare, sostituire ed eliminare i nomi di dominio personalizzati con Cloud Manager.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 source-git-commit: 955f4bb55434eeb1a429a1972714b71c5370de1e
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 # Gestione dei nomi di dominio personalizzati {#managing-custom-domain-names}
 
-Cloud Manager consente di visualizzare, aggiornare, sostituire ed eliminare nomi di dominio personalizzati.
+Con Cloud Manager è possibile visualizzare, aggiornare, sostituire ed eliminare nomi di dominio personalizzati.
 
-## Visualizza e aggiorna {#view-and-update}
+## Menu Visualizza e aggiorna {#view-and-update}
 
-Utilizza la **Visualizza e aggiorna** per visualizzare i dettagli di uno dei nomi di dominio personalizzati.
+Visualizza i dettagli di qualsiasi nome di dominio personalizzato tramite il menu **Visualizza e aggiorna**.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Passa a **Ambienti** dalla schermata **Panoramica** pagina.
+1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Identifica la riga del nome di dominio personalizzato che desideri visualizzare o aggiornare.
+1. Individua la riga del nome di dominio personalizzato che desideri visualizzare o aggiornare.
 
-1. Fai clic sul pulsante con i puntini di sospensione all’estremità destra della riga.
+1. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga.
 
-1. Seleziona la **Visualizza e aggiorna** opzione .
+1. Seleziona l’opzione **Visualizza e aggiorna**.
 
-## Aggiornamento del certificato SSL del nome di dominio personalizzato {#update-cert}
+## Aggiornamento del certificato SSL di un nome di dominio personalizzato {#update-cert}
 
-Puoi seguire [gli stessi passaggi per visualizzare e aggiornare un nome di dominio personalizzato](#view-and-update) per aggiornare il certificato SSL di un nome di dominio personalizzato.
+Per aggiornare il certificato SSL di un nome di dominio personalizzato, segui la [stessa procedura indicata per visualizzare e aggiornare un nome di dominio personalizzato](#view-and-update).
 
 >[!NOTE]
 >
->Il certificato SSL deve essere valido, [già configurato,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) e contengono il nome di dominio personalizzato che si sta aggiornando.
+>Il certificato SSL deve essere valido, [precedentemente configurato](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) e contenere il nome di dominio personalizzato che desideri aggiornare.
 
 ## Eliminazione di un nome di dominio personalizzato {#deleting}
 
-Un utente con **Proprietario business** o **Gestione distribuzione** Il ruolo può utilizzare Cloud Manager per eliminare un nome di dominio personalizzato.
+L’utente con il ruolo **Proprietario business** o **Responsabile dell’implementazione** può eliminare un nome di dominio personalizzato con Cloud Manager.
 
 ### Eliminazione di un nome di dominio personalizzato da tutti gli ambienti associati {#delete-cdn-all}
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Passa a **Ambienti** dalla schermata **Panoramica** pagina.
+1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Passa a **Impostazioni di dominio** dalla pagina **Ambienti** schermo.
+1. Dalla schermata **Ambienti**, accedi alla pagina **Impostazioni dominio**.
 
-1. Identifica la riga del nome di dominio personalizzato che desideri eliminare.
+1. Individua la riga del nome di dominio personalizzato che desideri eliminare.
 
-1. Fai clic sul pulsante con i puntini di sospensione all’estremità destra della riga.
+1. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga.
 
 1. Seleziona **Elimina**.
 
    ![Eliminazione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
-1. Conferma l’invio.
+1. Conferma quanto inserito.
 
 ### Eliminazione di un nome di dominio personalizzato da un ambiente specifico {#delete-cdn-specific}
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione e il programma appropriati.
-1. Passa a **Ambienti** dalla schermata **Panoramica** pagina.
-1. Da **Ambienti** , passa alla schermata dei dettagli dell’ambiente di interesse.
-1. Nella tabella dei nomi di dominio, identificare la riga del nome di dominio personalizzato che si desidera eliminare.
-1. Fai clic sul pulsante con i puntini di sospensione all’estremità destra della riga.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
+1. Dalla pagina **Ambienti**, accedi alla schermata dei dettagli dell’ambiente di tuo interesse.
+1. Nella tabella dei nomi di dominio, individua la riga del nome di dominio personalizzato che desideri eliminare.
+1. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga.
 1. Seleziona **Elimina**.
-1. Conferma l’invio.
+1. Conferma quanto inserito.

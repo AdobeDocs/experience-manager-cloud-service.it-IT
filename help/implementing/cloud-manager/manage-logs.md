@@ -5,7 +5,7 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
@@ -14,35 +14,35 @@ ht-degree: 8%
 
 Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
 
-Puoi accedere a un elenco dei file di registro disponibili per l’ambiente selezionato utilizzando **Ambienti** scheda da **Panoramica** pagina o pagina Dettagli ambiente.
+Dalla scheda **Ambienti** della pagina **Panoramica** o dalla pagina Dettagli dell’ambiente è possibile accedere all’elenco dei file di registro disponibili per l’ambiente selezionato.
 
 ## Download dei registri {#download-logs}
 
-Segui questi passaggi per scaricare i registri.
+Per scaricare i registri, segui la procedura riportata di seguito.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Passa a **Ambienti** scheda da **Panoramica** pagina.
+1. Dalla pagina **Panoramica**, accedi alla scheda **Ambienti**.
 
-1. Seleziona **Download dei registri** dal menu ellissi.
+1. Dal menu con i puntini di sospensione, seleziona **Scarica registri**.
 
-   ![Voce di menu dei registri di download](assets/download-logs1.png)
+   ![Voce di menu Scarica registri](assets/download-logs1.png)
 
-1. In **Download dei registri** seleziona la finestra di dialogo appropriata **Servizio** dal menu a discesa
+1. Nella finestra di dialogo **Scarica registri**, seleziona il **Servizio** appropriato dal menu a discesa.
 
-   ![Finestra di dialogo Download Logs (Registri di download)](assets/download-preview.png)
+   ![Finestra di dialogo Scarica registri](assets/download-preview.png)
 
-1. Dopo aver selezionato il servizio, fai clic sull&#39;icona di download accanto al registro che desideri recuperare.
+1. Dopo aver selezionato il servizio, fai clic sull’icona accanto al registro che desideri recuperare per scaricarlo.
 
-Puoi anche accedere ai tuoi registri da **Ambienti** pagina.
+È possibile accedere ai registri anche dalla pagina **Ambienti**.
 
 ![Registri dalla schermata Ambienti](assets/download-logs.png)
 
 ## Registri tramite API {#logs-through-api}
 
-Oltre a scaricare i registri tramite l’interfaccia utente, i registri sono disponibili tramite l’API e l’interfaccia della riga di comando.
+Oltre che dall’interfaccia utente, i registri possono essere scaricati tramite l’API e l’interfaccia della riga di comando.
 
-Per scaricare i file di registro per un ambiente specifico, il comando sarà simile al seguente.
+Per scaricare i file di registro di un ambiente specifico, il comando è simile al seguente.
 
 ```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
@@ -54,7 +54,7 @@ $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Per ottenere l&#39;ID ambiente (1884 in questo esempio) e le opzioni del servizio o del nome di registro disponibili, puoi utilizzare i seguenti comandi.
+Per ottenere l’ID dell’ambiente (1884 in questo esempio) e le opzioni del servizio o del nome di registro disponibili, utilizza i seguenti comandi.
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### Risorse aggiuntive {#resources}
 
-Per ulteriori informazioni sull’API di Cloud Manager e su Adobe I/O CLI, consulta le seguenti risorse aggiuntive:
+Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia della riga di comando Adobe I/O, consulta le seguenti risorse aggiuntive:
 
 * [Documentazione API di Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Interfaccia della riga di comando Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)

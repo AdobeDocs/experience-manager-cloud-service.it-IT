@@ -4,62 +4,62 @@ description: Ruoli e responsabilità
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service: Ruoli e responsabilità {#roles-responsibilities}
+# Adobe Experience Manager as a Cloud Service: ruoli e responsabilità {#roles-responsibilities}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_raci"
 >title="Ruoli e responsabilità"
->abstract="Adobe fornisce una serie di servizi relativi al provisioning, allo sviluppo, alla gestione temporanea e alla produzione di Experienci Manager as a Cloud Service. Affinché lo sviluppo e l&#39;implementazione della soluzione procedano nel modo più efficiente possibile, è importante che il cliente e il cliente comprendano e svolgano i loro ruoli, come descritto qui."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=it" text="Scegli le persone giuste, i ruoli giusti"
+>abstract="Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging e produzione per Experience Manager as a Cloud Service. Affinché lo sviluppo e la distribuzione della soluzione procedano con la massima efficienza, è importante che il cliente e l’addetto alla personalizzazione comprendano e svolgano i rispettivi ruoli, come descritto di seguito."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=it" text="Assegna i ruoli giusti alle persone giuste"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aligning-kpis.html?lang=it" text="Allineamento dei KPI"
 
 <br></br>
-Adobe fornisce una serie di servizi relativi al provisioning, allo sviluppo, alla gestione temporanea e alla produzione di Experienci Manager as a Cloud Service. Affinché lo sviluppo e l&#39;implementazione della soluzione procedano nel modo più efficiente possibile, è importante che il cliente e il cliente comprendano e svolgano i loro ruoli, come descritto di seguito.
+Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging e produzione per Experience Manager as a Cloud Service. Affinché lo sviluppo e la distribuzione della soluzione procedano con la massima efficienza, è importante che il cliente e l’addetto alla personalizzazione comprendano e svolgano i relativi ruoli, come descritto di seguito.
 
 
-| Attività | Attività secondaria | Cliente | Personalizzatore | Adobe | Funzionalità di Cloud Manager |
+| Attività | Attività secondaria | Cliente | Addetto personalizzazione | Adobe | Funzionalità di Cloud Manager |
 |---------------------------------|-------------------------------------------------------|-------------|-------------|---------|-----------------------------|
-| Provisioning | Selezione area cloud | Collaboratore | Proprietario | Advisor | Sì |
+| Provisioning | Selezione area geografica cloud | Collaboratore | Proprietario | Consulente | Sì |
 | Provisioning | Accesso a AEM as a Cloud Service |  |  | Proprietario | Sì |
-| Provisioning | Creazione di ambienti | Collaboratore | Proprietario | Advisor | Sì |
-| Provisioning | Configurazione di rete | Collaboratore | Proprietario | Advisor | Sì |
-| Provisioning | Configurazione della sicurezza dell&#39;ambiente e della rete | Collaboratore | Proprietario | Advisor | Sì |
-| Sviluppo e garanzia della qualità | Configurazione e personalizzazione dell&#39;applicazione | Collaboratore | Proprietario |  |  |
-| Sviluppo e garanzia della qualità | Configurazione e personalizzazione - tuning specifici | Collaboratore | Proprietario |  |  |
-| Sviluppo e garanzia della qualità | Test di configurazione e personalizzazione dei casi d’uso | Collaboratore | Proprietario |  |  |
-| Sviluppo e garanzia della qualità | Test end-to-end di configurazione e personalizzazione | Collaboratore | Proprietario |  |  |
-| Sviluppo e garanzia della qualità | Analisi e test della qualità del codice | Collaboratore | Proprietario | Advisor | Sì |
-| Staging e transizione | Distribuzione del codice da sviluppo o QA | Collaboratore | Proprietario | Advisor | Sì |
-| Staging e transizione | Distribuzione dei contenuti | Proprietario | Collaboratore |  |  |
+| Provisioning | Creazione di ambienti | Collaboratore | Proprietario | Consulente | Sì |
+| Provisioning | Configurazione di rete | Collaboratore | Proprietario | Consulente | Sì |
+| Provisioning | Configurazione della sicurezza di ambiente e rete | Collaboratore | Proprietario | Consulente | Sì |
+| Sviluppo e controllo qualità | Configurazione e personalizzazione dell’applicazione | Collaboratore | Proprietario |  |  |
+| Sviluppo e controllo qualità | Configurazione e personalizzazione: miglioramento specifico | Collaboratore | Proprietario |  |  |
+| Sviluppo e controllo qualità | Test casi d’uso di configurazione e personalizzazione | Collaboratore | Proprietario |  |  |
+| Sviluppo e controllo qualità | Test end-to-end di configurazione e personalizzazione | Collaboratore | Proprietario |  |  |
+| Sviluppo e controllo qualità | Analisi e test di qualità del codice | Collaboratore | Proprietario | Consulente | Sì |
+| Staging e transizione | Distribuzione del codice da sviluppo o controllo qualità | Collaboratore | Proprietario | Consulente | Sì |
+| Staging e transizione | Distribuzione contenuto | Proprietario | Collaboratore |  |  |
 | Staging e transizione | Migrazione dei contenuti | Collaboratore | Proprietario |  |  |
-| Staging e transizione | Sviluppo del test di accettazione dell&#39;utente | Proprietario | Collaboratore |  |  |
-| Staging e transizione | Certificati SSL personalizzati | Collaboratore | Proprietario | Advisor | Sì |
-| Staging e transizione | Sviluppo di test delle prestazioni | Collaboratore | Proprietario |  |  |
-| Staging e transizione | Completamento del Runbook | Proprietario | Collaboratore |  |  |
-| Staging e transizione | Test del carico | Proprietario |  |  |  |
-| Staging e transizione | Ottimizzazione delle prestazioni | Collaboratore | Proprietario |  |  |
+| Staging e transizione | Sviluppo test di accettazione dell’utente | Proprietario | Collaboratore |  |  |
+| Staging e transizione | Certificati SSL personalizzati | Collaboratore | Proprietario | Consulente | Sì |
+| Staging e transizione | Sviluppo test delle prestazioni | Collaboratore | Proprietario |  |  |
+| Staging e transizione | Completamento runbook | Proprietario | Collaboratore |  |  |
+| Staging e transizione | Test di carico | Proprietario |  |  |  |
+| Staging e transizione | Miglioramento delle prestazioni | Collaboratore | Proprietario |  |  |
 | Staging e transizione | Test di sicurezza | Proprietario | Collaboratore |  |  |
-| Go-Live | Elenco di controllo per la pubblicazione | Collaboratore | Proprietario |  |  |
-| Go-Live | Distribuzione del codice di produzione | Collaboratore | Proprietario | Advisor | Sì |
+| Pubblicazione | Elenco di controllo per la pubblicazione | Collaboratore | Proprietario |  |  |
+| Pubblicazione | Distribuzione del codice di produzione | Collaboratore | Proprietario | Consulente | Sì |
 | Produzione | Monitoraggio della produzione | Collaboratore |  | Proprietario |  |
-| Produzione | Risposta evento produzione | Collaboratore | Collaboratore | Proprietario |  |
-| Produzione | Garantire il tempo di attività del sistema di Experience Manager |  |  | Proprietario |  |
+| Produzione | Risposta agli eventi di produzione | Collaboratore | Collaboratore | Proprietario |  |
+| Produzione | Controllo dell’operatività corretta del sistema Experience Manager |  |  | Proprietario |  |
 | Produzione | Manutenzione a livello di infrastruttura e sistema operativo |  |  | Proprietario |  |
-| Produzione | AEM manutenzione as a Cloud Service delle applicazioni |  |  | Proprietario |  |
+| Produzione | Manutenzione dell’applicazione AEM as a Cloud Service |  |  | Proprietario |  |
 | Produzione | Manutenzione di configurazione e personalizzazione | Collaboratore | Proprietario |  |  |
-| Produzione | Amministrazione di applicazioni di produzione | Proprietario |  |  |  |
-| Produzione | Ottimizzazione dell&#39;infrastruttura di produzione |  |  | Proprietario |  |
-| Produzione | Scalabilità dell&#39;infrastruttura di produzione |  |  | Proprietario |  |
-| Produzione | Aggiornamenti a AEM&#39;applicazione as a Cloud Service |  |  | Proprietario |  |
-| Produzione | Backup e disaster recovery di produzione |  |  | Proprietario |  |
+| Produzione | Amministrazione applicazioni di produzione | Proprietario |  |  |  |
+| Produzione | Miglioramento dell’infrastruttura di produzione |  |  | Proprietario |  |
+| Produzione | Scalabilità dell’infrastruttura di produzione |  |  | Proprietario |  |
+| Produzione | Aggiornamenti dell’applicazione AEM as a Cloud Service |  |  | Proprietario |  |
+| Produzione | Backup e ripristino di emergenza di produzione |  |  | Proprietario |  |
 
 >[!NOTE]
 >
-> Si presuppone che il Premier Support sia incluso. La tabella può essere soggetta a modifiche mediante accordo tra il Cliente e il Cliente. È consigliabile lavorare con i team di vendita e personalizzazione di Adobi se si desidera ottenere chiarimenti su uno dei punti precedenti.
-> I clienti che non desiderano gestire direttamente la personalizzazione devono ottenere i servizi del team Professional Services di Adobe o di un partner Experience Manager.
->Per mantenere livelli di alta qualità, l&#39;Adobe richiede che i partner impegnati in progetti di sviluppo as a Cloud Service Experienci Manager siano dotati di almeno una persona che ha ottenuto la certificazione Advanced Developer per il software di Experience Manager.
+> Quanto riportato sopra presuppone che Premier Support sia incluso. La tabella può essere soggetta a modifiche accordate tra il cliente e l’addetto alla personalizzazione. Per chiarimenti su uno dei punti precedenti, consigliamo di consultare i team di vendita e personalizzazione di Adobe.
+> Per chi non desidera gestire la personalizzazione in autonomia, è possibile richiedere i servizi del team per i servizi professionali di Adobe o di un partner Experience Manager.
+>Per mantenere livelli di qualità elevati, Adobe richiede ai partner impegnati in progetti di sviluppo di Experience Manager as a Cloud Service di disporre di almeno una persona con la certificazione Advanced Developer per il software Experience Manager tra il personale.

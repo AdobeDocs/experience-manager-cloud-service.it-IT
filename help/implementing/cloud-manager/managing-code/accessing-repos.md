@@ -1,42 +1,42 @@
 ---
 title: Accesso agli archivi
-description: Scopri come accedere e gestire l’archivio Git utilizzando la gestione autonoma dell’account Git di Cloud Manager.
+description: Scopri come accedere e gestire l’archivio Git con la gestione self-service dell’account Git da Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Accesso agli archivi {#accessing-repos}
 
-Scopri come accedere e gestire l’archivio Git utilizzando la gestione autonoma dell’account Git di Cloud Manager.
+Scopri come accedere e gestire l’archivio Git con la gestione self-service dell’account Git da Cloud Manager.
 
-## Utilizzo della gestione dell’account dell’archivio self-service {#self-service-repos}
+## Utilizzo della gestione self-service dell’account dell’archivio {#self-service-repos}
 
-Cloud Manager consente di recuperare facilmente le informazioni sull’archivio utilizzando **Accesso alle informazioni sul repository** pulsante disponibile in modo visibile sulla scheda della pipeline.
+Cloud Manager consente di recuperare facilmente le informazioni sull’archivio tramite il pulsante **Accedi a dati archivio** disponibile nella scheda Pipeline.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Passa a **Tubi** scheda da **Panoramica del programma** e trova la **Accesso alle informazioni sul repository** per accedere e gestire il tuo archivio Git.
+1. Dalla pagina **Panoramica del programma**, accedi alla scheda **Pipeline** e individua il pulsante **Accedi a dati archivio** per accedere e gestire il tuo archivio Git.
 
-   ![Pulsante Accedi alle informazioni sui repository nella scheda Ambienti](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![Pulsante Accedi a dati archivio nella scheda Ambienti](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Fai clic sul pulsante **Visualizza informazioni repository** per aprire una finestra di dialogo da visualizzare:
+1. Fai clic sul pulsante **Visualizza informazioni archivio** per aprire una finestra di dialogo e visualizzare:
 
-   * URL dell’archivio Git di Cloud Manager.
-   * Nome utente git.
-   * La password git, il cui valore viene visualizzato quando **Genera password** fai clic su .
+   * L’URL dell’archivio Git di Cloud Manager.
+   * Il nome utente di Git.
+   * La password di Git, il cui valore viene visualizzato quando fai clic sul pulsante **Genera password**.
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-Utilizzando queste credenziali, l’utente può clonare una copia locale dell’archivio, apportare modifiche all’archivio locale e, quando è pronto, eseguire il commit di eventuali modifiche al codice nell’archivio del codice remoto in Cloud Manager.
+Con queste credenziali l’utente può clonare una copia locale dell’archivio, apportare qui le modifiche e, una volta terminato, riconfermarle nell’archivio del codice remoto in Cloud Manager.
 
-La **Accesso alle informazioni sul repository** è disponibile anche nella **Non produzione** scheda pipeline **Tubi** il Card.
+L’opzione **Accedi a dati archivio** è disponibile anche nella scheda delle pipeline **non di produzione** della scheda **Pipeline**.
 
-![Pulsante Accedi alle informazioni sui repository nella scheda non di produzione](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
+![Pulsante Accedi a dati archivio nella scheda non di produzione](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
 
 >[!NOTE]
 >
->La **Accesso alle informazioni sul repository** è visibile agli utenti con **Sviluppatore** o **Gestione distribuzione** ruoli.
+>L’opzione **Accedi a dati archivio** è visibile agli utenti con i ruoli **Sviluppatore** o **Responsabile dell’implementazione**.

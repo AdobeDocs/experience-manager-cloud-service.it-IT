@@ -1,43 +1,43 @@
 ---
 title: Verifica dello stato del record DNS
-description: Scopri come determinare se le impostazioni DNS vengono corrette utilizzando Cloud Manager.
+description: Scopri come determinare se la risoluzione delle impostazioni DNS avviene in modo corretto con Cloud Manager.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Verifica dello stato del record DNS {#check-dns-record-status}
 
-In Cloud Manager puoi determinare se il nome di dominio viene risolto correttamente nel sito web as a Cloud Service AEM.
+Cloud Manager consente di determinare se la risoluzione del nome di dominio avviene in modo corretto nel sito web di AEM as a Cloud Service.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selezionare l&#39;organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Passa a **Ambienti** dalla schermata **Panoramica** pagina.
+1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Fai clic su **Impostazioni di dominio** nel pannello di navigazione a sinistra.
+1. Nel pannello di navigazione a sinistra, fai clic su **Impostazioni dominio**.
 
-1. Fai clic sul pulsante **Stato** per il nome di dominio.
+1. Fai clic sull’icona **Stato** del nome di dominio.
 
 Cloud Manager esegue una ricerca DNS per il nome di dominio e visualizza uno dei seguenti messaggi di stato.
 
-* **Stato DNS non rilevato** - Lo stato DNS non verrà rilevato finché il nome di dominio personalizzato non sarà stato verificato e distribuito correttamente.
+* **Stato DNS non rilevato**: lo stato del DNS non viene rilevato fino alla completa verifica e distribuzione del nome di dominio personalizzato.
 
-   * Questo stato viene osservato anche quando il nome del dominio personalizzato è in fase di eliminazione.
+   * Questo stato viene riscontrato anche quando è in corso il processo di eliminazione del nome di dominio personalizzato.
 
-* **Il DNS viene risolto in modo errato** - Indica che la configurazione dei record DNS non è stata risolta o è errata.
+* **Risoluzione DNS errata**: indica che la risoluzione della configurazione dei record DNS non è avvenuta o è errata.
 
-   * Consulta il documento [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) per saperne di più.
-   * Quando è pronto, è necessario selezionare la **Risolvi di nuovo** accanto allo stato .
+   * Per ulteriori informazioni, consulta il documento [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
+   * Al termine dell’operazione, seleziona l’icona **Nuovo tentativo di risoluzione** accanto allo stato.
 
-* **Risoluzione DNS in corso** - La risoluzione è in corso.
+* **Risoluzione DNS in corso**: indica che la risoluzione è in corso.
 
-   * Questo stato viene generalmente visualizzato dopo aver selezionato **Risolvi di nuovo** accanto allo stato .
+   * In genere questo stato viene visualizzato dopo aver selezionato l’icona **Nuovo tentativo di risoluzione** accanto allo stato.
 
-* **Il DNS viene risolto correttamente** - Le impostazioni DNS sono configurate correttamente.
+* **Risoluzione DNS corretta**: le impostazioni DNS sono configurate correttamente.
 
-   * Il tuo sito è al servizio dei visitatori.
+   * Il sito è disponibile per i visitatori e le visitatrici.
 
-Cloud Manager attiva automaticamente una ricerca DNS quando il nome di dominio personalizzato viene verificato e distribuito correttamente per la prima volta. Per i tentativi successivi, devi selezionare attivamente il **Risolvi di nuovo** accanto allo stato .
+Cloud Manager attiva automaticamente una ricerca DNS quando il nome di dominio personalizzato viene verificato e distribuito correttamente per la prima volta. Per i tentativi successivi, seleziona attivamente l’icona **Nuovo tentativo di risoluzione** accanto allo stato.

@@ -21,7 +21,7 @@ Quando consenti l’accesso a una soluzione Adobe specifica a un utente, non dev
 
 AEM as a Cloud Service è un’offerta completamente nativa per il cloud che include AEM as a service. AEM viene fornito come applicazione nativa del cloud che offre nuove funzionalità sempre attive, sempre aggiornate, sempre sicure e sempre scalabili. Allo stesso tempo, conserva la proposta di valore principale offerta alla clientela da AEM come piattaforma personalizzabile che i team di livello Enterprise possono integrare nella procedura di sviluppo e distribuzione. Per ulteriori informazioni su AEM as a Cloud Service, consulta [Introduzione a Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md).
 
-Durante l’onboarding, i membri del team di AEM as a Cloud Service vengono aggiunti e assegnati a uno o più dei seguenti profili di prodotto tramite Admin Console.
+Durante l’onboarding, i membri del gruppo di AEM as a Cloud Service vengono aggiunti e assegnati a uno o più dei seguenti profili di prodotto tramite Admin Console.
 
 * **Amministratori AEM**: il ruolo Amministratore AEM in genere viene assegnato ai membri del team di sviluppo, in particolare a chi deve, ad esempio, accedere agli ambienti di sviluppo. Il profilo di prodotto Amministratore AEM consente di concedere i privilegi di amministratore nell’istanza AEM associata.
 
