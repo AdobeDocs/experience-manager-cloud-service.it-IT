@@ -3,7 +3,7 @@ title: Test dell’interfaccia utente
 description: I test personalizzati dell’interfaccia utente sono una funzionalità facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni personalizzate.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1338'
 ht-degree: 100%
 
