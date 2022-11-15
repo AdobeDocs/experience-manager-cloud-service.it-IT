@@ -4,10 +4,10 @@ description: Scopri come creare profili immagine di Dynamic Media contenenti imp
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
+source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
 workflow-type: tm+mt
-source-wordcount: '3351'
-ht-degree: 8%
+source-wordcount: '3344'
+ht-degree: 9%
 
 ---
 
@@ -84,14 +84,13 @@ L’Adobe consiglia di esaminare tutte le colture e i campioni generati per assi
 
 La risoluzione massima supportata del file di input è di 16 K.
 
-Il formato immagine CMYK non è supportato con il ritaglio avanzato.
-
 >[!NOTE]
 La risoluzione 16K è una risoluzione del display con circa 16.000 pixel in orizzontale. La risoluzione 16K più comunemente discussa è di 15360 × 8640, che raddoppia il numero di pixel di 8K UHD in ogni dimensione, per un totale di quattro volte il numero di pixel. Questa risoluzione ha 132,7 megapixel, risoluzione 16 volte superiore a quella 4K e risoluzione 64 volte superiore a quella 1080p.
 
 | Formato immagine | Estensione dei file senza distinzione tra maiuscole e minuscole | Tipo MIME | Spazio colore di ingresso supportato | Dimensione massima del file di input supportato | Formato immagine supportato? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Sì |
+| CMYK |  |  |  |  | No |
 | EPS |  |  |  |  | No |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Sì; per il rendering viene utilizzato il primo fotogramma di GIF animato. Non è possibile configurare o modificare il primo fotogramma. |
 | JPEG | `.jpg` e `.jpeg` | image/jpeg | sRGB | 15 GB | Sì |
