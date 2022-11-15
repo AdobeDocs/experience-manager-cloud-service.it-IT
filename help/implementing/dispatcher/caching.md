@@ -3,9 +3,9 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Memorizzazione in cache in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
+source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2666'
 ht-degree: 1%
 
 ---
@@ -199,9 +199,9 @@ Quando viene ricevuta una richiesta di HEAD al CDN di Adobe per una risorsa che 
 
 ### Parametri della campagna di marketing {#marketing-parameters}
 
-Gli URL dei siti web includono frequentemente i parametri delle campagne di marketing utilizzati per monitorare il successo di una campagna. Per utilizzare in modo efficace la cache del dispatcher, ti consigliamo di configurare la configurazione del dispatcher `ignoreUrlParams` proprietà come [documentato](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+Gli URL dei siti web includono frequentemente i parametri delle campagne di marketing utilizzati per monitorare il successo di una campagna. Per utilizzare in modo efficace la cache del dispatcher, ti consigliamo di configurare le `ignoreUrlParams` proprietà come [documentato qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
-La `ignoreUrlParams` deve essere rimossa la funzione e deve fare riferimento al file `conf.dispatcher.d/cache/marketing_query_parameters.any`, che può essere modificato rimuovendo il commento dalle righe corrispondenti ai parametri rilevanti per i canali di marketing. Puoi aggiungere anche altri parametri.
+La `ignoreUrlParams` deve essere rimossa la funzione e deve fare riferimento al file `conf.dispatcher.d/cache/marketing_query_parameters.any`. Puoi modificare il file rimuovendo il commento dalle righe corrispondenti ai parametri rilevanti per i tuoi canali di marketing. Puoi aggiungere anche altri parametri.
 
 ```
 /ignoreUrlParams {
