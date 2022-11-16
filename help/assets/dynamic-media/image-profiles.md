@@ -4,10 +4,10 @@ description: Scopri come creare profili immagine di Dynamic Media contenenti imp
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
+source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
 workflow-type: tm+mt
-source-wordcount: '3344'
-ht-degree: 9%
+source-wordcount: '3390'
+ht-degree: 8%
 
 ---
 
@@ -56,9 +56,9 @@ La nitidezza è descritta in [Nitidezza delle immagini](/help/assets/dynamic-med
 
 Quando implementi il ritaglio avanzato sulle immagini, Adobe consiglia la seguente best practice e applica il seguente limite:
 
-| Tipo di limite | Best practice | Limite imposto | Modifica del limite il 31 dicembre 2022 |
-| --- | --- | --- | --- |
-| Numero di ritagli avanzati per immagine | 5 | 100 | 20 |
+| Tipo di limite | Best practice | Limite imposto |
+| --- | --- | --- |
+| Numero di ritagli avanzati per immagine | 5 | 100 |
 
 Vedi anche [Limiti Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
@@ -71,7 +71,8 @@ Per ogni generazione di ritaglio avanzato creata è necessaria un’elaborazione
 È possibile scegliere tra due opzioni di ritaglio immagine. È inoltre possibile scegliere di automatizzare la creazione di campioni di colore e immagine o di mantenere il contenuto di ritaglio nelle risoluzioni di destinazione.
 
 >[!IMPORTANT]
-L’Adobe consiglia di esaminare tutte le colture e i campioni generati per assicurarsi che siano appropriati e pertinenti per il marchio e i valori.
+・ L’Adobe consiglia di esaminare tutte le colture e i campioni generati per assicurarsi che siano appropriati e rilevanti per il marchio e i valori.
+・ Il formato immagine CMYK non è supportato con il ritaglio avanzato.
 
 | Opzione | Quando utilizzare | Descrizione |
 | --- | --- | --- |
@@ -199,7 +200,8 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 ## Modificare il ritaglio avanzato o il campione avanzato di una singola immagine {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-L’Adobe consiglia di esaminare tutte le raccolte avanzate e i campioni avanzati generati per assicurarsi che siano appropriati e pertinenti per il marchio e i valori.
+・ L’Adobe consiglia di esaminare tutte le colture avanzate e i campioni avanzati generati per assicurarsi che siano appropriati e pertinenti per il marchio e i valori.
+・ Il formato immagine CMYK non è supportato con il ritaglio avanzato.
 
 È possibile riallineare o ridimensionare manualmente la finestra di ritaglio avanzato di un’immagine per perfezionarne ulteriormente il punto focale.
 
@@ -231,6 +233,10 @@ Vedi anche [Modificare il ritaglio avanzato o il campione avanzato di più immag
 1. Nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Salva]**, quindi seleziona **[!UICONTROL Chiudi]** per tornare alla cartella delle risorse.
 
 ## Modificare il ritaglio avanzato o il campione avanzato di più immagini {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+・ L’Adobe consiglia di esaminare tutte le colture avanzate e i campioni avanzati generati per assicurarsi che siano appropriati e pertinenti per il marchio e i valori.
+・ Il formato immagine CMYK non è supportato con il ritaglio avanzato.
 
 Dopo aver applicato un profilo immagine contenente ritaglio avanzato a una cartella, a tutte le immagini in quella cartella viene applicato un ritaglio. Se lo desideri, puoi *manuale* riallineare o ridimensionare la finestra di ritaglio avanzato in più immagini per perfezionare ulteriormente il punto focale.
 
