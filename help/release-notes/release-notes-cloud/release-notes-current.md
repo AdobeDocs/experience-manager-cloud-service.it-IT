@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
+source-git-commit: 272225bbeea4443bf97349d11805dbb3386fd2cc
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1092'
 ht-degree: 13%
 
 ---
@@ -25,14 +25,13 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 >[!CAUTION]
 >
->**Periodo di esclusione manutenzione Black Friday e Christmas**
+>**Periodo di esclusione della manutenzione pianificata**
 >
 > Non verrà eseguita alcuna manutenzione automatica di AEMaaCS nei seguenti intervalli di tempo, a partire dalla mezzanotte (00:00) CET:
 >
 >* Lunedì 21 Novembre - Lunedì 5 Dicembre
 >* Lunedì 19 dicembre - Martedì 3 gennaio
->
-> Questi periodi coprono Black Friday, Cyber Monday, Natale e Capodanno.
+
 
 ## Data di pubblicazione {#release-date}
 
