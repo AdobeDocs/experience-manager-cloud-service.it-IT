@@ -2,9 +2,9 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 1dfef0f1157ead7f1240e9a41794436197136daa
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1327'
 ht-degree: 9%
 
 ---
@@ -36,6 +36,9 @@ L’istanza di origine AEM può essere in esecuzione dietro un firewall in cui p
 
 * Servizio di archiviazione BLOB di Azure: `casstorageprod.blob.core.windows.net`
 * Endpoint I/O di mappatura utente: `usermanagement.adobe.io`
+
+>[!NOTE]
+>Se l’estrazione non riesce a causa del seguente errore: &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: Creazione percorso PKIX non riuscita: sun.security.provider.certpath.SunCertPathBuilderException: impossibile trovare un percorso di certificazione valido per la destinazione richiesta&quot;, è possibile risolvere il problema importando il certificato CA pertinente.
 
 ### Abilita registrazione SSL {#enable-ssl-logging}
 
@@ -187,6 +190,6 @@ Per eseguire un controllo delle dimensioni, effettua le seguenti operazioni:
    ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
 
 
-## Novità {#whats-next}
+## Passaggio successivo {#whats-next}
 
 Dopo aver imparato a creare un set di migrazione, ora puoi imparare a usare i processi di estrazione e acquisizione nello strumento Content Transfer (Trasferimento contenuti). Prima di apprendere questi processi, è necessario rivedere [Gestione di archivi di contenuti di grandi dimensioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM as a Cloud Service.
