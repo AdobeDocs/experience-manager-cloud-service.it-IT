@@ -3,9 +3,9 @@ title: AEM Percorso di sviluppatori CMS headless
 description: Scopri lo sviluppo headless utilizzando Adobe Experience Manager (AEM) come CMS headless. Scopri come utilizzare funzioni come Modelli di contenuto, Frammenti di contenuto e un’API GraphQL per fornire contenuti headless.
 landing-page-description: Scopri la distribuzione e l’implementazione headless dei contenuti. Ulteriori informazioni sullo sviluppo della strategia all'interno dell'azienda.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 06aec2fa43db2393416dd5efab886d9c301ffdb2
+source-git-commit: 64862456bfbffe1799a3f0b6ea3353f45e60c52f
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1051'
 ht-degree: 16%
 
 ---
@@ -62,7 +62,9 @@ Anche se puoi passare direttamente a una particolare parte del percorso, molti c
 | 8 | [Come vivere con la tua applicazione headless](go-live.md) | Scopri come distribuire l’applicazione in tempo reale e prendere il codice locale in Git e spostarlo nella pipeline CI/CD di Cloud Manager Git. |
 | 9 | [Facoltativo - Come creare applicazioni a pagina singola (SPA) con AEM](create-spa.md) | Scopri come combinare consegna headful e headless e come creare SPA modificabili utilizzando AEM framework dell’editor SPA. |
 
-## Novità {#what-is-next}
+{style=&quot;table-layout:auto&quot;}
+
+## Passaggio successivo {#what-is-next}
 
 Per iniziare, controlla il prossimo articolo: [Scopri lo sviluppo headless di CMS.](learn-about.md)
 
