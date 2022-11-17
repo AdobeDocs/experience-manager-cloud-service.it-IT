@@ -2,10 +2,10 @@
 title: Introduzione ai nomi di dominio personalizzati
 description: Tramite l’interfaccia utente di Cloud Manager è possibile aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
+source-git-commit: 42318a42a55134501eb13feca22791bb5db4e83f
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -55,7 +55,7 @@ L’aggiunta di un nome di dominio personalizzato richiede l’interazione tra i
 
 | Passaggio | Descrizione | Responsabilità | Ulteriori informazioni |
 |--- |--- |--- |---|
-| 1 | Aggiunta di un certificato SLL a Cloud Manager | Cliente | [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | Aggiungere un certificato SSL a Cloud Manager | Cliente | [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | Aggiunta di un record TXT per verificare il dominio | Cliente | [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 3 | Revisione dello stato di verifica del dominio | Cliente | [Controllo dello stato del nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3a | Se la verifica del dominio non va a buon fine e riporta lo stato `Domain Verification Failure` | Cliente | [Controllo dello stato del nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
