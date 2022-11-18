@@ -2,10 +2,10 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Attività di manutenzione in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4e820caa043eeba22d14894d6943c957ea0bf80a
+source-git-commit: 174e9b2410745ec766dbcd071a3508a509b8367a
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 81%
+source-wordcount: '1023'
+ht-degree: 78%
 
 ---
 
@@ -74,7 +74,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
     <td>Cliente</td>
     <td>
     <p>Deve essere eseguito in git. Sovrascrivi il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà sotto la cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> o <code>granite_daily</code>.</p>
-    <p>Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_TaskPurgeTask</code>) con le proprietà appropriate. Configura le proprietà OSGI.</p>
+    <p>Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. Attiva l'attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra. Denomina <code>granite_TaskPurgeTask</code>, con attributo <code>sling:resourceType</code> impostato su <code>granite/operations/components/maintenance/task</code> e attributo <code>granite.maintenance.name</code> impostato su <code>TaskPurge</code>. Configura le proprietà OSGI, vedi <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> per l'elenco delle proprietà.</p>
   </td>
   </tr>
     <tr>
