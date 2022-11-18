@@ -3,10 +3,10 @@ title: Dispatcher nel cloud
 description: Dispatcher nel cloud
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
+source-git-commit: 10da82c572682156534f7a897715d703ba3bde3d
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 6%
+source-wordcount: '1010'
+ht-degree: 7%
 
 ---
 
@@ -50,7 +50,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 Gli strumenti del dispatcher vengono utilizzati per convalidare ed eseguire il debug della configurazione del Dispatcher del progetto. Scopri di più su come utilizzare questi strumenti nelle pagine a cui si fa riferimento di seguito, a seconda che la configurazione del dispatcher del progetto sia strutturata in modalità flessibile o in modalità legacy:
 
-* **Modalità flessibile** - la modalità consigliata e l&#39;impostazione predefinita per [AEM archetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) e versioni successive, che viene utilizzato anche da Cloud Manager per i nuovi ambienti creati dopo la versione 2021.7.0 di Cloud Manager. I clienti possono attivare questa modalità aggiungendo la cartella e il file `opt-in/USE_SOURCES_DIRECTLY`. Utilizzando questa modalità più flessibile, non ci sono limitazioni nella struttura del file sotto la cartella di riscrittura che in modalità legacy richiedeva un singolo `rewrite.rules` file. Inoltre, non esiste alcuna limitazione al numero di regole che puoi aggiungere. Per informazioni dettagliate sulla struttura delle cartelle e sulla convalida locale, consulta [Convalida e debug tramite gli strumenti di Dispatcher](/help/implementing/dispatcher/validation-debug.md).
+* **Modalità flessibile** - la modalità consigliata e l&#39;impostazione predefinita per [AEM archetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) e versioni successive, che viene utilizzato anche da Cloud Manager per i nuovi ambienti creati dopo la versione 2021.7.0 di Cloud Manager. I clienti possono attivare questa modalità aggiungendo la cartella e il file `opt-in/USE_SOURCES_DIRECTLY`. Utilizzando questa modalità più flessibile, non ci sono limitazioni nella struttura del file sotto la cartella di riscrittura che in modalità legacy richiedeva un singolo `rewrite.rules` file. Inoltre, non esiste alcuna limitazione al numero di regole che puoi aggiungere. Per informazioni dettagliate sulla struttura delle cartelle e sulla convalida locale, consulta [Convalida e debug tramite gli strumenti di Dispatcher](/help/implementing/dispatcher/validation-debug.md).
 
 * **Modalità legacy** - per informazioni sulla struttura delle cartelle e sulla convalida locale per la configurazione del dispatcher in modalità legacy, consulta [Convalida e debug tramite gli strumenti di Dispatcher (legacy)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
@@ -100,6 +100,7 @@ La tabella seguente mostra i moduli Apache supportati:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 | `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
+| `mod_include (no directives supported)` | [https://httpd.apache.org/docs/2.4/mod/mod_include.html](https://httpd.apache.org/docs/2.4/mod/mod_include.html) |
 
 
 I clienti non possono aggiungere moduli arbitrari, tuttavia è possibile considerare moduli aggiuntivi da includere in futuro. I clienti possono trovare l’elenco delle direttive disponibili per una determinata versione di Dispatcher eseguendo il comando di inserire nell&#39;elenco Consentiti convalida nell’SDK.
