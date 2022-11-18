@@ -4,10 +4,10 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: ht
-source-wordcount: '2904'
-ht-degree: 100%
+source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
+workflow-type: tm+mt
+source-wordcount: '2898'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ Per utilizzare i modelli di frammento di contenuto:
 
 1. [Abilita la funzionalità modello Frammento di contenuto per un’istanza](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 1. [Crea](#creating-a-content-fragment-model) e [configura](#defining-your-content-fragment-model) i modelli per frammenti di contenuto
-1. [Abilita i modelli per frammenti di contenuto](#enabling-disabling-a-content-fragment-model) da utilizzare per la creazione di frammenti di contenuto
+1. [Abilitare i modelli di frammenti di contenuto](#enabling-disabling-a-content-fragment-model) da utilizzare per la creazione di frammenti di contenuto
 1. [Consenti modelli di frammento di contenuto nelle cartelle Risorse richieste](#allowing-content-fragment-models-assets-folder) configurando i **Criteri**.
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
@@ -78,7 +78,6 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
          >Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, tieni presente che i nomi devono contenere solo caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_”.
          >
          >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
-
       Esempio:
 
       ![proprietà del campo](assets/cfm-models-05.png)
@@ -231,10 +230,10 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 >AEM ha una protezione periodica per:
 >
 >* Riferimenti contenuto
->  Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
+   >  Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
 >
 >* Riferimenti frammento in GraphQL
->  Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituirà null.
+   >  Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituirà null.
 
 
 ### Riferimento contenuto {#content-reference}

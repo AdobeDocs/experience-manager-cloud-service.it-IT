@@ -2,10 +2,10 @@
 title: Modelli per frammenti di contenuto (Assets - Frammenti di contenuto)
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuto strutturato.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
 workflow-type: tm+mt
-source-wordcount: '2893'
-ht-degree: 98%
+source-wordcount: '2887'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ Per utilizzare i modelli di frammento di contenuto:
 
 1. [Abilita la funzionalità modello Frammento di contenuto per un’istanza](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Crea](#creating-a-content-fragment-model) e [configura](#defining-your-content-fragment-model) i modelli per frammenti di contenuto
-1. [Abilita i modelli per frammenti di contenuto](#enabling-disabling-a-content-fragment-model) da utilizzare per la creazione di frammenti di contenuto
+1. [Abilitare i modelli di frammenti di contenuto](#enabling-disabling-a-content-fragment-model) da utilizzare per la creazione di frammenti di contenuto
 1. [Consenti modelli di frammento di contenuto nelle cartelle Risorse richieste](#allowing-content-fragment-models-assets-folder) configurando i **Criteri**.
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
