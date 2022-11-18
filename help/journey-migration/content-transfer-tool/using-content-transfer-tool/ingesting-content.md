@@ -2,9 +2,9 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
+source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '956'
 ht-degree: 13%
 
 ---
@@ -26,6 +26,11 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 1. Vai a Cloud Acceleration Manager. Fai clic sulla scheda del progetto e sulla scheda Content Transfer (Trasferimento contenuti). Passa a **Processi di acquisizione** e fai clic su **Nuovo inserimento**
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+
+1. Rivedi la lista di controllo per l’acquisizione e assicurati che tutti i passaggi siano stati completati. Si tratta di misure necessarie per garantire il successo dell’acquisizione. Potrai procedere alla **Successivo** solo se la checklist è stata completata.
+
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
 1. Fornisci le informazioni necessarie per creare una nuova acquisizione.
 
