@@ -3,7 +3,7 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Convalida e debug con gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
+source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
 workflow-type: tm+mt
 source-wordcount: '2693'
 ht-degree: 1%
@@ -50,6 +50,7 @@ La struttura della sottocartella Dispatcher del progetto è la seguente:
     ├── cache
     │   ├── default_invalidate.any
     │   ├── default_rules.any
+    │   ├── marketing_query_parameters.any
     │   └── rules.any
     ├── clientheaders
     │   ├── clientheaders.any
@@ -535,7 +536,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migrazione dalla modalità legacy alla modalità flessibile {#migrating}
 
-Con la versione 2021.7.0 di Cloud Manager, i nuovi programmi Cloud Manager generano strutture di progetto Maven con [AEM archetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) o superiore, che include il file **opt-in/USE_SOURCES_DIRECTLY**. Questo elimina le limitazioni precedenti del [modalità legacy](/help/implementing/dispatcher/validation-debug-legacy.md) circa il numero e le dimensioni dei file, con conseguente miglioramento della convalida e distribuzione della configurazione da parte dell’SDK e del runtime. Se la configurazione del dispatcher non dispone di questo file, ti consigliamo vivamente di eseguire la migrazione. Utilizza i seguenti passaggi per garantire una transizione sicura:
+Con la versione 2021.7.0 di Cloud Manager, i nuovi programmi Cloud Manager generano strutture di progetto Maven con [AEM archetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) o superiore, che include il file **opt-in/USE_SOURCES_DIRECTLY**. Questo elimina le limitazioni precedenti del [modalità legacy](/help/implementing/dispatcher/validation-debug-legacy.md) circa il numero e le dimensioni dei file, con conseguente miglioramento della convalida e distribuzione della configurazione da parte dell’SDK e del runtime. Se la configurazione del dispatcher non dispone di questo file, ti consigliamo vivamente di eseguire la migrazione. Utilizza i seguenti passaggi per garantire una transizione sicura:
 
 1. **Test locale.** Utilizzando l’SDK degli strumenti del dispatcher più recenti, aggiungi la cartella e il file `opt-in/USE_SOURCES_DIRECTLY`. Segui le istruzioni di &quot;convalida locale&quot; in questo articolo per verificare che il dispatcher funzioni localmente.
 1. **Test di sviluppo cloud:**
