@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 17%
+source-wordcount: '2214'
+ht-degree: 15%
 
 ---
 
@@ -182,6 +182,18 @@ Le pagine di prodotto specifiche vengono selezionate in base allo SKU o alla cat
 La `UrlProvider` è preconfigurato per generare collegamenti profondi a specifiche pagine di prodotti e categorie nelle istanze del livello di authoring. È utile per gli editor che navigano su un sito utilizzando la modalità Anteprima, accedono a una pagina di prodotto o categoria specifica e tornano alla modalità Modifica per modificare la pagina.
 
 Sulle istanze del livello di pubblicazione, invece, gli URL delle pagine di catalogo devono essere mantenuti stabili in modo da non perdere, ad esempio, guadagni nella classificazione dei motori di ricerca. Per impostazione predefinita, le istanze del livello di pubblicazione non eseguono il rendering dei collegamenti profondi a pagine di catalogo specifiche. Per modificare questo comportamento, _Strategia di pagina specifica per provider URL CIF_ può essere configurato per generare sempre URL di pagina specifici.
+
+### Pagine catalogo multiple {#multiple-product-pages}
+
+Quando gli editor desiderano avere il controllo completo della navigazione di primo livello di un sito, potrebbe non essere opportuno utilizzare una singola pagina di catalogo per eseguire il rendering delle categorie di primo livello di un catalogo. Gli editor possono invece creare più pagine di catalogo, una per ogni categoria del catalogo che desiderano includere nella navigazione di livello superiore.
+
+In tal caso d’uso, ciascuna pagina del catalogo può avere un riferimento a una pagina di prodotto e di categoria specifica per la categoria configurata per la pagina del catalogo. La `UrlProvider` utilizzeranno questi per creare collegamenti per le pagine e le categorie della categoria configurata. Tuttavia, per motivi di prestazioni, vengono considerati solo gli elementi secondari della pagina di catalogo diretta della pagina principale o della pagina di destinazione di un sito.
+
+È consigliabile che le pagine di prodotti e categorie di una pagina di catalogo siano discendenti di tale pagina di catalogo, altrimenti i componenti come Navigazione o Breadcrumb potrebbero non funzionare correttamente.
+
+>[!NOTE]
+>
+> Il supporto completo per più pagine di catalogo richiede [Componenti core CIF 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) o più recente.
 
 ## Personalizzazioni {#customization}
 
