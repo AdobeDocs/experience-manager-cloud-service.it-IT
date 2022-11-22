@@ -2,10 +2,10 @@
 title: Convalida dei trasferimenti di contenuto
 description: Utilizza lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuto
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 015f3b0232861ac961922245650cb02db44daf77
+source-git-commit: 99ecf1309b9fa7613bfb9c99de9677700082f128
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '890'
+ht-degree: 2%
 
 ---
 
@@ -136,7 +136,7 @@ Oltre a essere incluso nel registro di acquisizione, il rapporto di convalida è
 
 ### Convalida non riuscita. E adesso? {#validation-fail}
 
-Il primo passaggio consiste nel determinare se l’acquisizione ha avuto esito negativo o se il contenuto estratto è già presente nell’ambiente di destinazione. Ciò può verificarsi se un’acquisizione viene ripetuta con **Cancella il contenuto esistente sull’istanza Cloud prima dell’acquisizione** Opzione disabilitata.
+Il primo passaggio consiste nel determinare se l’acquisizione ha avuto esito negativo o se il contenuto estratto è già presente nell’ambiente di destinazione. Ciò può verificarsi se un’acquisizione viene ripetuta con **Cancella il contenuto esistente sull’istanza Cloud prima dell’acquisizione** opzione disabilitata.
 
 Per verificare, scegli un percorso dal rapporto di convalida e verifica se è presente nell’ambiente di destinazione. Se si tratta di un ambiente di pubblicazione, puoi limitarti a controllare direttamente pagine e risorse. Apri un ticket con l’Assistenza clienti se hai bisogno di assistenza per questo passaggio.
 

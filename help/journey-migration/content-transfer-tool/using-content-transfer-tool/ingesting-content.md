@@ -2,10 +2,10 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
+source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 13%
+source-wordcount: '1029'
+ht-degree: 12%
 
 ---
 
@@ -40,6 +40,10 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
    >[!NOTE]
    >
    >Se l’origine era Autore, è consigliabile inserirla nel livello Autore nella destinazione. Analogamente, se l’origine era Pubblica, anche target dovrebbe essere Pubblica.
+
+   >[!NOTE]
+   >
+   >Se il livello di destinazione è `Author`, l’istanza di authoring verrà chiusa durante la durata dell’acquisizione e non sarà disponibile per gli utenti (ad esempio, autori o chiunque esegua la manutenzione, ecc.). In questo modo si protegge il sistema e si evita qualsiasi modifica che possa essere persa o causare un conflitto di acquisizione. Assicurati che il tuo team sia a conoscenza di questo fatto. Inoltre, l’ambiente apparirà in ibernazione durante l’acquisizione dell’autore.
 
    >[!NOTE]
    >
