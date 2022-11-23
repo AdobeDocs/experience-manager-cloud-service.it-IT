@@ -2,9 +2,9 @@
 title: Utilizzo dello strumento di mappatura utente
 description: Utilizzo dello strumento di mappatura utente
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
+source-git-commit: a9e30f6a15bbc9fc830849e05e1814a2cdd50fd5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '816'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 4%
 Lo strumento di mappatura utenti utilizza un’API che consente di cercare gli utenti di Adobe Identity Management System (IMS) tramite e-mail e restituire i loro ID IMS. Questa API richiede all’utente di creare un ID client per la propria organizzazione, un segreto client e un token di accesso o portatore.
 
 ## Impostazione dello strumento di mappatura utente {#setting-up-user-mapping}
+
+**Prerequisito:** La mappatura utente richiede che ogni utente sia mappato al suo ID IMS abbia un indirizzo e-mail nel suo profilo in AEM e in IMS.  Tieni presente che anche se l’utente utilizza un indirizzo e-mail come ID utente per l’accesso, la mappatura non funzionerà per tale utente, a meno che l’indirizzo e-mail non sia anche nel profilo e anche in IMS.
 
 Segui i passaggi riportati di seguito per configurare questa impostazione:
 
