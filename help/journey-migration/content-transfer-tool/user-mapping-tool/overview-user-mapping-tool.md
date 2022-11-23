@@ -2,10 +2,10 @@
 title: Panoramica sullo strumento di mappatura utente
 description: Panoramica sullo strumento di mappatura utente
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 99af299c3f401ce898366a75563d2b933f120e40
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 10%
+source-wordcount: '361'
+ht-degree: 11%
 
 ---
 
@@ -26,8 +26,8 @@ Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente
 
 ## Strumento di mappatura utente {#mapping-tool}
 
-Lo strumento Content Transfer (senza User Mapping) eseguirà la migrazione di tutti gli utenti e i gruppi associati al contenuto in corso di migrazione. Lo strumento di mappatura utenti fa parte dello strumento Content Transfer (Trasferimento contenuti) e il suo unico scopo è modificare gli utenti e i gruppi in modo che possano essere riconosciuti correttamente da IMS, la funzionalità single sign-on utilizzata da AEM as a Cloud Service. Una volta apportate queste modifiche, lo strumento Content Transfer (Trasferimento contenuti) esegue la migrazione usuale degli utenti e dei gruppi del contenuto specificato.
+Lo strumento Content Transfer (senza User Mapping) eseguirà la migrazione di tutti gli utenti e i gruppi associati al contenuto in corso di migrazione. Lo strumento di mappatura utenti fa parte dello strumento Content Transfer (Trasferimento contenuti) e il suo unico scopo è modificare gli utenti in modo che possano essere riconosciuti correttamente da IMS, la funzionalità single sign-on utilizzata da AEM as a Cloud Service. Una volta apportate queste modifiche, lo strumento Content Transfer (Trasferimento contenuti) esegue la migrazione usuale degli utenti e dei gruppi del contenuto specificato.
 
-### Novità {#whats-next}
+### Passaggio successivo {#whats-next}
 
 Dopo aver appreso l’uso di uno strumento di mappatura utente, è ora possibile esaminare considerazioni importanti e casi eccezionali prima di utilizzare lo strumento di mappatura utente. Vedi [Considerazioni importanti sullo strumento di mappatura degli utenti](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md) per ulteriori dettagli.
