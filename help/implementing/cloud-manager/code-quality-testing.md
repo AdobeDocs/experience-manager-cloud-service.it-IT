@@ -4,7 +4,7 @@ description: Scopri come funziona il test di qualità del codice delle pipeline 
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: ht
-source-wordcount: '0'
+source-wordcount: '1176'
 ht-degree: 100%
 
 ---
