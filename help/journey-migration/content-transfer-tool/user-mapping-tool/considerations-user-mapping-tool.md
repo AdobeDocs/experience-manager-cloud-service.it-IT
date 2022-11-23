@@ -2,9 +2,9 @@
 title: Considerazioni importanti sullo strumento di mappatura degli utenti
 description: Considerazioni importanti sullo strumento di mappatura degli utenti
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 18047b129a9a347cbf6edcdc07dc6570fca26d3b
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,15 @@ ht-degree: 0%
 
 Verranno registrati i seguenti casi specifici:
 
-1. Se un utente non dispone di un indirizzo e-mail nel `profile/email` campo di applicazione *jcr* verrà effettuata la migrazione dell&#39;utente o del gruppo in questione, ma non verrà eseguita la mappatura.
+1. Se un utente non dispone di un indirizzo e-mail nel `profile/email` campo di applicazione *jcr* verrà effettuata la migrazione dell&#39;utente o del gruppo in questione, ma non verrà eseguita la mappatura.  Ciò avverrà anche se l’indirizzo e-mail viene utilizzato come nome utente per l’accesso.
 
 1. Se una data e-mail non viene trovata nel sistema Adobe Identity Management System (IMS) per l’ID organizzazione utilizzato (o se l’ID IMS non può essere recuperato per un altro motivo), l’utente o il gruppo in questione verrà migrato ma non mappato.
 
 1. Se l’utente è attualmente disattivato, viene trattato come se non fosse disabilitato. Sarà mappato e migrato normalmente e rimarrà disattivato nell’istanza cloud.
 
 1. Se un utente esiste nell’istanza AEM Cloud Service di destinazione con lo stesso nome utente (rep:principalName) di uno degli utenti nell’istanza AEM di origine, l’utente o il gruppo in questione non verrà migrato.
+
+1. Se un utente viene migrato senza prima essere mappato tramite User Mapping, nel sistema cloud di destinazione non sarà in grado di accedere utilizzando il proprio IMS ID.  Potrebbero essere in grado di accedere utilizzando il metodo tradizionale AEM, ma tenete presente che questo non è normalmente ciò che si vuole o si aspetta.
 
 ## Considerazioni aggiuntive {#additional-considerations}
 
@@ -36,6 +38,6 @@ Verranno registrati i seguenti casi specifici:
 
 * Se due utenti nell&#39;istanza AEM di origine hanno lo stesso indirizzo e-mail e User Mapping è abilitato, nei registri verrà scritto un messaggio di errore e uno degli utenti AEM di origine non verrà trasferito, in quanto sul sistema di destinazione è consentito un solo utente con un dato indirizzo e-mail.
 
-### Novità {#whats-next}
+### Passaggio successivo {#whats-next}
 
 Dopo aver appreso le considerazioni importanti e i casi eccezionali, è ora possibile utilizzare lo strumento. Vedi [Utilizzo dello strumento di mappatura utente](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) per ulteriori dettagli.
