@@ -2,9 +2,9 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
+source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1072'
 ht-degree: 12%
 
 ---
@@ -22,6 +22,9 @@ ht-degree: 12%
 Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 >[!NOTE]
 >Puoi eseguire il passaggio di pre-copia opzionale per velocizzare in modo significativo la fase di acquisizione. Il passaggio di pre-copia è più efficace per la prima estrazione e acquisizione completa. Fai riferimento a [Acquisizione con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) per ulteriori dettagli.
+
+>[!NOTE]
+>Ti sei ricordato di registrare un ticket di supporto per questa acquisizione? Vedi [Considerazioni importanti prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) per questo e altre considerazioni per rendere l’acquisizione efficace.
 
 1. Vai a Cloud Acceleration Manager. Fai clic sulla scheda del progetto e sulla scheda Content Transfer (Trasferimento contenuti). Passa a **Processi di acquisizione** e fai clic su **Nuovo inserimento**
 
@@ -96,7 +99,8 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 ## Acquisizione integrativa {#top-up-ingestion-process}
 
 >[!CONTEXTUALHELP]
->id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion"
+>id="aemcloud_ctt_ingestion_topup"
+>title="Acquisizione integrativa"
 >abstract="Utilizza la funzione di integrazione per spostare il contenuto modificato rispetto all’attività precedente di trasferimento dei contenuti. Al termine dell’acquisizione, controlla i registri per eventuali errori/avvisi. Gli eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’Assistenza clienti Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Visualizzazione dei registri"
 
