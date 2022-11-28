@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
+source-git-commit: 093a83b7e76167b1962639b245332e515df2447b
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1145'
 ht-degree: 8%
 
 ---
@@ -38,7 +38,7 @@ Segui le sezioni seguenti per utilizzare l’interfaccia utente self-service di 
 
 Per impostazione predefinita, per una configurazione AEM CDN gestita, tutto il traffico pubblico può indirizzarsi al servizio di pubblicazione, sia per gli ambienti di produzione che per quelli non di produzione (sviluppo e stage). Se desideri limitare il traffico al servizio di pubblicazione per un dato ambiente (ad esempio, limitando la gestione temporanea per un intervallo di indirizzi IP), puoi farlo in modalità self-service tramite l’interfaccia utente di Cloud Manager.
 
-Fai riferimento a [Gestione degli Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) per saperne di più.
+Per ulteriori informazioni, consulta [Gestione degli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!CAUTION]
 >
@@ -90,7 +90,8 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Quando utilizzi una tua CDN, non è necessario installare i domini e i certificati in Cloud Manager. Il routing nella rete CDN di Adobe verrà eseguito utilizzando il dominio predefinito `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>Quando utilizzi una tua CDN, non devi installare domini e certificati in Cloud Manager. Il routing nella rete CDN di Adobe verrà eseguito utilizzando il dominio predefinito `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` da inviare nella richiesta `Host` intestazione. Sovrascrittura della richiesta `Host` intestazione con un nome di dominio personalizzato può causare l’instradamento errato della richiesta da parte della CDN di Adobe.
+
 
 >[!NOTE]
 >
