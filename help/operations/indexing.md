@@ -2,10 +2,10 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
+source-git-commit: 7e32c997a69feb8447609bf984ba731008489095
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 90%
+source-wordcount: '2498'
+ht-degree: 88%
 
 ---
 
@@ -18,22 +18,20 @@ Con AEM as a Cloud Service, Adobe si sta spostando da un modello AEM incentrato 
 Di seguito è riportato un elenco delle modifiche principali rispetto ad AEM 6.5 e versioni precedenti:
 
 1. Gli utenti non avranno più accesso al gestore degli indici di una singola istanza AEM per eseguire il debug, configurare o mantenere l’indicizzazione. Viene utilizzato solo per lo sviluppo locale e le distribuzioni on-premise.
-
 1. Gli utenti non cambieranno gli indici su una singola istanza AEM né dovranno più preoccuparsi dei controlli di coerenza o della reindicizzazione.
-
 1. In generale, le modifiche dell’indice vengono avviate prima di passare alla produzione per non aggirare i gateway di qualità nelle pipeline CI/CD di Cloud Manager e non influire sui KPI aziendali in produzione.
-
 1. Tutte le metriche correlate, comprese le prestazioni di ricerca in produzione, saranno disponibili per i clienti in fase di runtime al fine di fornire una visione olistica sugli argomenti di ricerca e indicizzazione.
-
 1. I clienti potranno impostare gli avvisi in base alle proprie esigenze.
-
 1. Gli SRE monitorano lo stato di integrità del sistema 24/7 e intraprendono le azioni necessarie il più presto possibile.
-
 1. La configurazione dell’indice viene modificata tramite le distribuzioni. Le modifiche alla definizione dell’indice sono configurate come altre modifiche al contenuto.
-
 1. A un livello elevato, su AEM as a Cloud Service, con l’introduzione del [Modello di distribuzione Blue-Green](#index-management-using-blue-green-deployments), esistono due serie di indici: un set per la versione precedente (blue) e uno per la nuova versione (green).
-
 1. I clienti possono vedere se il processo di indicizzazione è completo nella pagina di compilazione di Cloud Manager e ricevono una notifica quando la nuova versione è pronta per il traffico.
+
+Limiti:
+
+* Attualmente, la gestione degli indici su AEM as a Cloud Service è supportata solo per gli indici di tipo `lucene`.
+* Sono supportati solo gli analizzatori standard (ovvero quelli forniti con il prodotto). Gli analizzatori personalizzati non sono supportati.
+* Internamente, possono essere configurati e utilizzati per le query altri indici. Ad esempio, le query scritte rispetto all’indice `damAssetLucene` potrebbero, su Skyline, essere eseguite in base a una versione Elasticsearch di questo indice. Questa differenza generalmente non è visibile all’applicazione e all’utente, tuttavia alcuni strumenti come la funzionalità `explain` riferiranno un indice diverso. Per le differenze tra gli indici Lucene e gli indici Elastic, vedi [la documentazione Elastic in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non devono e non possono configurare direttamente gli indici di Elasticsearch.
 
 ## Guida all’uso {#how-to-use}
 
@@ -146,6 +144,64 @@ In `ui.apps.structure/pom.xml`, la sezione `filters` per questo plug-in deve con
 ```
 
 Una volta aggiunta la nuova definizione dell’indice, la nuova applicazione deve essere distribuita tramite Cloud Manager. Al momento della distribuzione vengono avviati due processi, responsabili dell’aggiunta (e dell’unione, se necessario) delle definizioni dell’indice a MongoDB e Azure Segment Store rispettivamente per l’authoring e la pubblicazione. Gli archivi sottostanti vengono reindicizzati con le nuove definizioni dell’indice, prima che si verifichi lo switch Blue-Green.
+
+### NOTA
+
+Nel caso in cui si osservi il seguente errore nella convalida filevault <br>
+`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
+Quindi puoi seguire uno dei seguenti passaggi per risolvere il problema: <br>
+1. Esegui il downgrade dell&#39;archivio alla versione 1.0.4 e aggiungi quanto segue all&#39;archivio dei file principale :
+
+```xml
+<allowIndexDefinitions>true</allowIndexDefinitions>
+```
+
+Di seguito è riportato un esempio di dove collocare la configurazione di cui sopra nel riquadro principale.
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <properties>
+        ...
+        </properties>
+        ...
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <repositoryStructurePackages>
+        ...
+        </repositoryStructurePackages>
+        <dependencies>
+        ...
+        </dependencies>
+    </configuration>
+</plugin>
+```
+
+1. Disattiva la convalida del tipo di nodo. Imposta la seguente proprietà nella sezione jackrabbit-nodetypes della configurazione del plugin filevault:
+
+```xml
+<isDisabled>true</isDisabled>
+```
+
+Di seguito è riportato un esempio di dove collocare la configurazione di cui sopra nel riquadro principale.
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    ...
+    <configuration>
+    ...
+        <validatorsSettings>
+        ...
+            <jackrabbit-nodetypes>
+                <isDisabled>true</isDisabled>
+            </jackrabbit-nodetypes>
+        </validatorsSettings>
+    </configuration>
+</plugin>
+```
 
 >[!TIP]
 >
@@ -276,7 +332,7 @@ Se un indice deve essere rimosso in una versione successiva dell’applicazione,
                 </properties>
             </rep:root>
         </indexRules>
-    </acme.product-custom-3>
+</acme.product-custom-3>
 ```
 
 Se non è più necessario avere una personalizzazione di un indice predefinito, è necessario copiare la definizione di indice preconfigurata. Ad esempio, se hai già distribuito `damAssetLucene-8-custom-3`, ma non sono più necessarie le personalizzazioni e desideri tornare all’indice predefinito `damAssetLucene-8`, devi aggiungere un indice `damAssetLucene-8-custom-4` che contiene la definizione dell’indice di `damAssetLucene-8`.
