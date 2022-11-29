@@ -3,7 +3,7 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 272225bbeea4443bf97349d11805dbb3386fd2cc
+source-git-commit: 218dd65d1969f92317ae1d9877e2e37bb201ea6a
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 13%
@@ -29,7 +29,7 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 >
 > Non verrà eseguita alcuna manutenzione automatica di AEMaaCS nei seguenti intervalli di tempo, a partire dalla mezzanotte (00:00) CET:
 >
->* Lunedì 21 Novembre - Lunedì 5 Dicembre
+>* Lunedì 21 novembre - Lunedì 12 Dicembre
 >* Lunedì 19 dicembre - Martedì 3 gennaio
 
 
