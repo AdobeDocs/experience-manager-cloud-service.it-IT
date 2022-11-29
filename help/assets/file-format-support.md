@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 77cba988368c07438835148d08f1e8cc6e469b7b
+source-git-commit: 93e25fcbe07d3262d924f97551e19661ea80a034
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1000'
 ht-degree: 8%
 
 ---
@@ -67,7 +67,7 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 
-## Formati 3D {#support-3d-formats}
+## 3Formati D {#support-3d-formats}
 
 Sono supportati i seguenti formati 3D.
 
@@ -118,27 +118,27 @@ Vedi anche [Utilizzare le risorse 3D in Dynamic Media](/help/assets/dynamic-medi
 
 I formati di documento supportati per le funzioni di gestione delle risorse sono i seguenti.
 
-| Formato file | Generazione di miniature | Estrazione full-text | Larghezza/Altezza | Gestione dei metadati | [Risorse collegate](use-assets-across-connected-assets-instances.md) |
-| ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| DOC | - | - | - | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
-| HTML | - | ✓ | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
-| UFG | ✓ | ✓ | ✓ | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | ✓ | ✓ | - | ✓ | ✓ |
-| XLS | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XML | - | ✓ | - | - | - |
+| Formato file | Generazione di miniature | Estrazione full-text | Larghezza/Altezza | Gestione dei metadati | [Risorse collegate](use-assets-across-connected-assets-instances.md) | Anteprima documento completa |
+| ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |--------|
+| DOC | - | - | - | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | ✓ | - | - | - | - |
+| HTML | - | ✓ | - | ✓ | ✓ | - |
+| ODF | ✓ | ✓ | ✓ | - | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - | - |
+| ODP | ✓ | ✓ | ✓ | - | - | - |
+| ODS | ✓ | ✓ | ✓ | - | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| UFG | ✓ | ✓ | ✓ | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | ✓ | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PS | - | - | ✓ | - | - | - |
+| RTF | - | ✓ | - | ✓ | ✓ | ✓ |
+| TXT | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| XLS | - | - | - | ✓ | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | - | ✓ | - | - | - | - |
 
 ## Formati video {#video-formats}
 
