@@ -2,10 +2,10 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
+source-git-commit: b40c46ff5d4399e6feff0ccaf37bdf0336c88016
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 99%
+source-wordcount: '1374'
+ht-degree: 91%
 
 ---
 
@@ -18,6 +18,14 @@ Adobe Experience Manager as a Cloud Service utilizza la funzionalità di [Distri
 >Leggi [Distribuzione](/help/overview/architecture.md#content-distribution) per ulteriori informazioni.
 
 ## Metodi di pubblicazione dei contenuti {#methods-of-publishing-content}
+
+>[!NOTE]
+>
+>Se sei interessato alla pubblicazione in blocco dei contenuti, utilizza la [Flusso di lavoro della struttura del contenuto di Pubblica](#publish-content-tree-workflow).
+>Questo passaggio del flusso di lavoro è stato creato appositamente per il Cloud Service e può gestire in modo efficiente payload di grandi dimensioni.
+>Non è consigliabile creare un codice personalizzato per la pubblicazione in blocco.
+>Se devi personalizzare per qualsiasi motivo, puoi attivare questo passaggio di flusso di lavoro o flusso di lavoro utilizzando le API esistenti del flusso di lavoro.
+>È sempre buona norma pubblicare solo i contenuti che devono essere pubblicati e, per essere prudenti, non tentare di pubblicare un gran numero di contenuti se non necessario, non ci sono limiti alla quantità di contenuto che puoi inviare tramite il Flusso di lavoro della struttura dei contenuti pubblicati.
 
 ### Annullamento/pubblicazione rapida - Annullamento/pubblicazione pianificata {#publish-unpublish}
 
