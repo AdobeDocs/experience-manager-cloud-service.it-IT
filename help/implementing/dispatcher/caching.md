@@ -3,10 +3,10 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Memorizzazione in cache in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
+source-git-commit: 6c2baf7fde73abc831db906c7a6471751be3572d
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 1%
+source-wordcount: '2753'
+ht-degree: 2%
 
 ---
 
@@ -72,6 +72,8 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
      </LocationMatch>
    ```
 
+* Mentre il contenuto HTML impostato su privato non verrà memorizzato nella cache della rete CDN, può essere memorizzato nella cache del dispatcher se [Memorizzazione in cache sensibile alle autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it) è configurato in modo efficiente, garantendo che solo gli utenti autorizzati possano ricevere il contenuto.
+
    >[!NOTE]
    >Gli altri metodi, compresi i [Progetto ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), non sovrascriverà correttamente i valori.
 
@@ -80,7 +82,7 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
 
 ### Librerie lato client (js, css) {#client-side-libraries}
 
-* utilizzando AEM framework di libreria lato client, i codici JavaScript e CSS vengono generati in modo tale che i browser possano memorizzarli nella cache a tempo indefinito, poiché qualsiasi modifica si manifesta come nuovi file con un percorso univoco.  In altre parole, HTML che fa riferimento alle librerie client verrà prodotto in base alle esigenze, in modo che i clienti possano vedere nuovi contenuti mentre vengono pubblicati. Il controllo della cache è impostato su &quot;immutabile&quot; o su 30 giorni per i browser meno recenti che non rispettano il valore &quot;immutabile&quot;.
+* Quando si utilizza AEM framework di libreria lato client, il codice JavaScript e CSS viene generato in modo tale che i browser possano memorizzarlo nella cache a tempo indefinito, poiché qualsiasi modifica si manifesta come nuovo file con un percorso univoco.  In altre parole, HTML che fa riferimento alle librerie client verrà prodotto in base alle esigenze, in modo che i clienti possano vedere nuovi contenuti mentre vengono pubblicati. Il controllo della cache è impostato su &quot;immutabile&quot; o su 30 giorni per i browser meno recenti che non rispettano il valore &quot;immutabile&quot;.
 * vedi la sezione [Librerie lato client e coerenza delle versioni](#content-consistency) per ulteriori dettagli.
 
 ### Immagini e contenuti di dimensioni sufficienti per essere archiviati in BLOB {#images}
@@ -116,6 +118,8 @@ Per impostazione predefinita, il livello AEM non memorizza in cache il contenuto
 
 >[!NOTE]
 >È consigliabile modificare il comportamento predefinito precedente in modo che sia coerente con il nuovo comportamento (ID programma superiori a 65000) impostando la variabile di ambiente Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS su true. Se il programma è già attivo, verifica che dopo le modifiche il contenuto si comporti come previsto.
+
+Al momento, le immagini in memoria BLOB contrassegnate come private non possono essere memorizzate nella cache del dispatcher utilizzando [Memorizzazione in cache sensibile alle autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). L&#39;immagine viene sempre richiesta dall&#39;origine AEM e distribuita se l&#39;utente è autorizzato.
 
 >[!NOTE]
 >Gli altri metodi, compresi i [Progetto ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), non sovrascriverà correttamente i valori.
