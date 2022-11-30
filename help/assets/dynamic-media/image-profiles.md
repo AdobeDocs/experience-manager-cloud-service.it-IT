@@ -4,9 +4,9 @@ description: Scopri come creare profili immagine di Dynamic Media contenenti imp
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
+source-git-commit: 08b523fe66b86867f65c794e843fc55fe0faa050
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3524'
 ht-degree: 8%
 
 ---
@@ -54,11 +54,11 @@ La nitidezza è descritta in [Nitidezza delle immagini](/help/assets/dynamic-med
 
 ## Opzioni di ritaglio {#crop-options}
 
-Quando implementi il ritaglio avanzato sulle immagini, Adobe consiglia la seguente best practice e applica il seguente limite:
+Quando implementi il ritaglio avanzato sulle immagini, Adobe consiglia le seguenti best practice e applica il seguente limite:
 
 | Tipo di limite | Best practice | Limite imposto |
 | --- | --- | --- |
-| Numero di ritagli avanzati per immagine | 5 | 100 |
+| Numero di colture avanzate per immagine | 5 | 100 |
 
 Vedi anche [Limiti Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
@@ -66,7 +66,16 @@ Vedi anche [Limiti Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 Le coordinate di ritaglio avanzato dipendono dalle proporzioni. Per le impostazioni di ritaglio avanzato in un profilo immagine, se le proporzioni sono le stesse per le dimensioni aggiunte nel profilo immagine, le stesse proporzioni vengono inviate a Dynamic Media. Adobe consiglia di utilizzare la stessa area di ritaglio. In questo modo si garantisce che non vi sia alcun impatto sulle diverse dimensioni utilizzate nel profilo immagine.
 
-Per ogni generazione di ritaglio avanzato creata è necessaria un’elaborazione aggiuntiva. Ad esempio, l’aggiunta di più di cinque rapporti di formato Ritaglio avanzato potrebbe causare un tasso di inserimento delle risorse lento. Può anche causare un aumento del carico sui sistemi. Poiché è possibile applicare Smart Crop a livello di cartella, Adobe consiglia di utilizzarlo nelle cartelle *only* dove è necessario.
+Per ogni generazione di ritaglio intelligente creata è necessaria un’elaborazione aggiuntiva. Ad esempio, l’aggiunta di più di cinque rapporti di formato di ritaglio avanzato potrebbe causare un tasso di inserimento delle risorse lento. Può anche causare un aumento del carico sui sistemi. Poiché è possibile applicare Smart Crop a livello di cartella, Adobe consiglia di utilizzarlo nelle cartelle *only* dove è necessario.
+
+**Linee guida per la definizione del ritaglio avanzato in un profilo immagine**
+Per tenere sotto controllo l’utilizzo di Smart Crop e ottimizzare il tempo di lavorazione e la conservazione delle colture, l’Adobe consiglia le seguenti linee guida e suggerimenti:
+
+* Evita di creare profili di ritaglio avanzati duplicati con gli stessi valori di larghezza e altezza.
+* Denomina le colture avanzate in base alle dimensioni di ritaglio, non in base all&#39;utilizzo finale. In questo modo è possibile ottimizzare i duplicati in cui una singola dimensione viene utilizzata su più pagine.
+* Crea profili immagine per tipo di pagina/risorsa per cartelle e sottocartelle specifiche invece di un profilo di ritaglio avanzato comune applicato a tutte le cartelle o a tutte le risorse.
+* Un profilo immagine applicato alle sottocartelle sostituisce un profilo immagine applicato alla cartella.
+* Idealmente, puoi utilizzare 10-15 ritagli avanzati per immagine per ottimizzare i rapporti dello schermo e il tempo di elaborazione.
 
 È possibile scegliere tra due opzioni di ritaglio immagine. È inoltre possibile scegliere di automatizzare la creazione di campioni di colore e immagine o di mantenere il contenuto di ritaglio nelle risoluzioni di destinazione.
 
