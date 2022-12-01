@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 3255e988c5ec9a0de33660061aeb21d91c3bc4d3
+source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
 workflow-type: tm+mt
-source-wordcount: '2449'
+source-wordcount: '2420'
 ht-degree: 11%
 
 ---
@@ -29,11 +29,11 @@ Per attivare Brand Portal su Experience Manager Assets as a è necessario quanto
 
 >[!NOTE]
 >
->Un Experience Manager Assets as a [!DNL Cloud Service] L’istanza è autorizzata a connettersi con un solo tenant Brand Portal. Puoi disporre di più ambienti (sviluppo, produzione e stage) per Experience Manager Assets as a [!DNL Cloud Service] istanza, in cui Brand Portal viene attivato in un ambiente.
+>È necessario un ambiente di produzione configurato per un Experience Manager Assets as a [!DNL Cloud Service] istanza per la connessione con il tenant Brand Portal.
 
 **Passaggi per attivare Brand Portal**
 
-È possibile attivare Brand Portal durante la creazione degli ambienti per Experience Manager Assets as a [!DNL Cloud Service] o separatamente. Supponiamo che gli ambienti siano già stati creati e che sia ora necessario attivare Brand Portal.
+È possibile attivare Brand Portal durante la creazione degli ambienti di produzione per il Experience Manager Assets as a [!DNL Cloud Service] o separatamente. Supponiamo che l’ambiente sia già stato creato e che sia ora necessario attivare Brand Portal.
 
 1. Accedi ad Adobe Cloud Manager e passa a **[!UICONTROL Ambienti]**.
 
@@ -71,7 +71,7 @@ Per attivare Brand Portal su Experience Manager Assets as a è necessario quanto
 
 **Accedi al tuo tenant Brand Portal**:
 
-Dopo l’attivazione del tenant Brand Portal in Cloud Manager, puoi accedere a Brand Portal dall’Admin Console o direttamente utilizzando l’URL del tenant.
+Dopo l’attivazione del tenant Brand Portal in Cloud Manager, puoi accedere a Brand Portal dall’Admin Console o utilizzando direttamente l’URL del tenant.
 
 L’URL predefinito del tenant Brand Portal è: `https://<tenant-id>.brand-portal.adobe.com/`.
 
@@ -80,7 +80,7 @@ In questo caso, l’ID tenant è l’organizzazione IMS.
 Esegui i seguenti passaggi se non sei sicuro dell’URL Brand Portal:
 
 1. Accedi a [Admin Console](https://adminconsole.adobe.com/) e passa a **[!UICONTROL Prodotti]**.
-1. Dalla barra a sinistra, seleziona **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
+1. Dal pannello di sinistra, seleziona **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
 1. Fai clic su **[!UICONTROL Vai a Brand Portal]** per aprire direttamente Brand Portal nel browser.
 
    Oppure copia l’URL del tenant Brand Portal dal **[!UICONTROL Vai a Brand Portal]** collegalo e incollalo nel browser per aprire l’interfaccia di Brand Portal.
@@ -403,7 +403,7 @@ Ora puoi testare la configurazione controllando l’agente di distribuzione e pu
 
 Perform the following steps to validate the configuration:
 
-1. Log in to AEM Assets.
+1. Login to AEM Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
