@@ -2,9 +2,9 @@
 title: Genera documento di record per Forms adattivo
 description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 8d6a5aceaf930c6597f570cdaec44015b86e20cd
 workflow-type: tm+mt
-source-wordcount: '4100'
+source-wordcount: '4065'
 ht-degree: 2%
 
 ---
@@ -431,7 +431,7 @@ L’impostazione del componente Documento di record è disponibile nelle relativ
 **Impostazioni a livello di modulo**
 
 * **Includi campi non associati in DoR:** L&#39;impostazione della proprietà include campi non associati di Modulo adattivo basato su schema nel documento di record. Per impostazione predefinita è true.
-* **Escludere i campi dal DoR se nascosti:** L&#39;impostazione della proprietà sostituisce il comportamento della proprietà a livello di campo &quot;Escludi dal documento di record&quot; quando non è true. Se i campi sono nascosti al momento dell’invio del modulo, vengono esclusi dal documento se la proprietà è impostata su true, purché la proprietà &quot;Escludi dal documento di record&quot; non sia impostata. Impostazione [Rivelare sul server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) su true identifica i campi nascosti da escludere da Document of Record sul lato server.
+* **Escludere i campi dal DoR se nascosti:** Impostare la proprietà per escludere i campi nascosti dal documento di record all’invio del modulo. Quando si abilita [Rivelare sul server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), il server ricalcola i campi nascosti prima di escluderli dal documento di record.
 
 ## Utilizzare un file XCI personalizzato
 
