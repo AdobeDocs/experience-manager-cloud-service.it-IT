@@ -4,7 +4,7 @@ description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
+source-git-commit: bc46064093c22d8902a673e76fdb53c626a5cbb0
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 1%
@@ -125,7 +125,7 @@ Per soddisfare convenzioni di denominazione dei file specifiche per la tua organ
 
 ## Caricamento in blocco delle risorse {#bulk-upload}
 
-Il gestore di risorse in blocco può gestire in modo efficiente un numero molto elevato di risorse. Tuttavia, un’acquisizione su larga scala non è solo un’immagine di file ampia o una migrazione casuale. Affinché un’acquisizione su larga scala sia un progetto significativo per il tuo scopo aziendale ed efficiente, pianifica la migrazione e cura l’organizzazione delle risorse. Tutte le acquisizioni sono diverse, quindi invece di generalizzare, sono fattori nella composizione dell’archivio e nelle esigenze aziendali più articolate. Di seguito sono riportati alcuni suggerimenti generali per pianificare ed eseguire un’acquisizione in blocco:
+Il gestore di risorse in blocco può gestire in modo efficiente un numero molto elevato di risorse. Tuttavia, un’acquisizione su larga scala non è solo un’immagine di file ampia o una migrazione casuale. Affinché un’acquisizione su larga scala sia un progetto significativo per il tuo scopo aziendale ed efficiente, pianifica la migrazione e cura l’organizzazione delle risorse. Tutte le acquisizioni sono diverse, quindi invece di generalizzare, fanno parte della composizione dell’archivio e delle esigenze aziendali più articolate. Di seguito sono riportati alcuni suggerimenti generali per pianificare ed eseguire un’acquisizione in blocco:
 
 * Cura risorse: Rimuovi le risorse non necessarie nel DAM. È consigliabile rimuovere le risorse inutilizzate, obsolete o duplicate. Questo consente di ridurre i dati trasferiti e le risorse acquisite, con conseguente maggiore velocità di assimilazione.
 * Organizzare le risorse: È consigliabile organizzare il contenuto in un ordine logico, ad esempio per dimensione del file, formato del file, caso d’uso o priorità. In generale, i file complessi di grandi dimensioni richiedono una maggiore elaborazione. Puoi anche considerare l’acquisizione separata di file di grandi dimensioni utilizzando l’opzione di filtro delle dimensioni del file (descritta di seguito).
@@ -238,7 +238,7 @@ I file o le cartelle con nomi corrispondenti a queste condizioni vengono ignorat
 Per i nomi dei file delle risorse, il nome e il percorso JCR vengono bonificati utilizzando l’API: `JcrUtil.escapeIllegalJcrChars`.
 
 * I caratteri Unicode non vengono modificati
-* Sostituisci i caratteri speciali con il relativo codice di escape URL, ad esempio: `new asset.png` è stato aggiornato a `new%20asset.png`:
+* Sostituisci i caratteri speciali con il relativo codice di escape URL, ad esempio: `new%asset.png` è stato aggiornato a `new%25asset.png`:
 
    ```
                    URL escape code   
@@ -247,16 +247,14 @@ Per i nomi dei file delle risorse, il nome e il percorso JCR vengono bonificati 
    %               %25
    '               %27
    *               %2A
-   .               %2E
    /               %2F
    :               %3A
    [               %5B
-   \n              %5Cn
-   \r              %5Cr
-   \t              %5Ct
+   \n              %0A
+   \r              %0D
+   \t              %09
    ]               %5D
    |               %7C
-   space char      %20
    ```
 
 **Gestione del nome della cartella nell’importazione in serie**
@@ -344,7 +342,7 @@ Nell&#39;Experience Manager viene visualizzata la cronologia dei processi. Nella
 
 ## Caricare risorse utilizzando client desktop {#upload-assets-desktop-clients}
 
-Oltre all&#39;interfaccia utente del browser web, [!DNL Experience Manager] supporta altri client sul desktop. Forniscono anche un’esperienza di caricamento senza la necessità di andare al browser web.
+Oltre all&#39;interfaccia utente del browser web, [!DNL Experience Manager] supporta altri client sul desktop. Forniscono anche un’esperienza di caricamento senza dover passare al browser web.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) consente l’accesso alle risorse da [!DNL Experience Manager] nelle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign. È possibile caricare il documento attualmente aperto in [!DNL Experience Manager] direttamente dall’interfaccia utente di Adobe Asset Link all’interno di queste applicazioni desktop.
 * [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) semplifica l’utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall’applicazione nativa che le gestisce. È particolarmente utile caricare file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file flat.
