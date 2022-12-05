@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
+source-git-commit: 85de154adbd0bc09aa9960665826c36af05b3a56
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2478'
 ht-degree: 11%
 
 ---
@@ -397,6 +397,16 @@ Esegui i seguenti passaggi per configurare il servizio cloud Brand Portal:
    Il tuo Experience Manager Assets as a [!DNL Cloud Service] L’istanza è ora configurata con il tenant Brand Portal.
 
 Ora puoi testare la configurazione controllando l’agente di distribuzione e pubblicando le risorse in Brand Portal.
+
+**Inserire nell&#39;elenco Consentiti gli IP Egress in SPS se l&#39;anteprima sicura è abilitata**
+Se utilizzi Dynamic Media-Scene7 con [anteprima protetta abilitata](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) per un&#39;azienda), allora si consiglia di amministratore dell&#39;azienda Scene7 [inserire nell&#39;elenco Consentiti gli IP in uscita pubblici](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) per le rispettive aree geografiche che utilizzano l’interfaccia flash SPS (Scene7 Publishing System).
+Gli IP in uscita sono i seguenti:
+
+| **Regione** | **IP avanzato** |
+|--- |--- |
+| ND | 130.248.160.68 del 20.94.203.130 |
+| EMEA | 185.34.189.3, 51.132.146.75 |
+| APAC | 63,140,44,54 |
 
 <!--
 ### Test configuration {#test-configuration}
