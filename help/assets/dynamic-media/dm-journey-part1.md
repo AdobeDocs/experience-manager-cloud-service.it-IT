@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
+source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3712'
 ht-degree: 1%
 
 ---
@@ -254,7 +254,7 @@ Dopo il caricamento, in Dynamic Media sono disponibili diversi modi per visualiz
 ![Anteprima di un rendering di una risorsa basato sul predefinito per immagini Grandi](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Anteprima di un rendering di una risorsa basato sul predefinito immagine &quot;Grande&quot; selezionato. È stato fatto clic sul pulsante URL. Il percorso URL risultante contiene il nome del predefinito immagine &quot;Grande&quot; e può essere utilizzato in una pagina web._
 
-L&#39;URL di cui sopra è attivo! [Provate](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
+L&#39;URL di cui sopra è attivo! [Provate](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target=&quot;_blank&quot;}.
 
 Un altro metodo per visualizzare in anteprima una risorsa è quello di selezionare la risorsa immagine e quindi selezionare un _Visualizzatori_ come illustrato di seguito.
 
