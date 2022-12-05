@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
+source-git-commit: 9e425601c493740050d61e8025ea3f9e3dbdc4d8
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2902'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Ora aggiungi un parametro di elaborazione dell’immagine alla fine dell’URL. 
 
 Si noti che viene generata una nuova rappresentazione dell’orologio. Un elemento fondamentale da capire da questo semplice esercizio di modifica della larghezza dell&#39;immagine, è che l&#39;immagine visualizzata è generata al 100% in modo dinamico.
 
-Ora modifica il valore della larghezza di `500` pixel a `1000` pixel, quindi premere **[!UICONTROL Invio]**. [Provate](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000).
+Ora modifica il valore della larghezza di `500` pixel a `1000` pixel, quindi premere **[!UICONTROL Invio]**. [Provate](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 Il momento in cui premi **[!UICONTROL Invio]**, il browser torna al server di immagini Dynamic Media. Genera una nuova rappresentazione dell’orologio, basata sul nuovo valore di larghezza appena inserito, quindi restituisce la nuova immagine al browser e la memorizza in cache.
 
 Dynamic Media dispone di numerosi parametri di elaborazione delle immagini che è possibile utilizzare per perfezionare le risorse delle immagini sulle pagine web. È possibile [consulta qui un elenco](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
@@ -128,7 +128,9 @@ Al termine, salvi il predefinito ed è ora disponibile per tutte le immagini in 
 ![Applicazione del predefinito per immagini *Media* per generare un rendering di un’immagine](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Applicazione del predefinito per immagini Media per generare un rendering di un’immagine._
 
-Copia l’URL, quindi incollalo nel browser per controllare l’aspetto dell’immagine. [Provate](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}. Nel browser, noterai il nome del predefinito per immagini _Media_ nel percorso URL completo.
+Copia l’URL, quindi incollalo nel browser per controllare l’aspetto dell’immagine. [Provate](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}.
+
+Nel browser, noterai il nome del predefinito per immagini _Media_ nel percorso URL completo.
 
 Potete vedere il tipo di chiarezza che viene visualizzata nell&#39;immagine. Questa qualità è in parte dovuta al modo in cui è stata girata la ciotola di cioccolato. Inoltre, in parte perché con Dynamic Media è possibile archiviare immagini più grandi di quelle consegnate ai canali digitali.
 
