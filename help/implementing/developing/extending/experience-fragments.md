@@ -2,9 +2,9 @@
 title: Panoramica dei frammenti esperienza
 description: Estendi i frammenti esperienza Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 912ecb02f0f38fc2766a81445c448f869964f94a
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1651'
 ht-degree: 3%
 
 ---
@@ -48,6 +48,19 @@ Esempio:
 Il selettore di rendering normale utilizza un trasformatore invece degli script aggiuntivi; la [Rewriter Sling](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) viene utilizzato come trasformatore. Questa configurazione è disponibile in
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### Configurazione della generazione del rendering di HTML {#configuring-html-rendition-generation}
+
+Il rendering di HTML viene generato utilizzando le pipeline di rewriter Sling. La pipeline è definita in `/libs/experience-fragments/config/rewriter/experiencefragments`. HTML Transformer supporta le seguenti opzioni:
+
+* `allowedCssClasses`
+   * Espressione RegEx che corrisponde alle classi CSS che devono essere lasciate nel rendering finale.
+   * Questa funzione è utile se il cliente desidera eliminare alcune classi CSS specifiche
+* `allowedTags`
+   * Elenco di tag HTML da consentire nel rendering finale.
+   * Per impostazione predefinita sono consentiti i seguenti tag (non è necessaria alcuna configurazione): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link e script
+
+Si consiglia di configurare il rewriter utilizzando una sovrapposizione. Vedi [Sovrapposizioni in AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
 
 ## Modelli per frammenti esperienza {#templates-for-experience-fragments}
 
