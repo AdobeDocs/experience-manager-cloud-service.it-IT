@@ -2,7 +2,7 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Attività di manutenzione in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 0e33ef91ce3668e7ce6aff98053c9f798b940dfd
+source-git-commit: e52d44015c040c1739152263d88ae436bd83d414
 workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 75%
@@ -49,7 +49,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
        <li>Le versioni precedenti a 30 giorni vengono rimosse</li>
        <li>Le ultime 5 versioni degli ultimi 30 giorni vengono conservate</li>
        <li>Indipendentemente dalle regole di cui sopra, viene conservata la versione più recente.</li>
-       <li>Si consiglia ai clienti, che hanno requisiti normativi per il rendering delle pagine del sito esattamente come apparivano in una data specifica, di integrarsi con servizi esterni specializzati.<li>
+       <br>Si consiglia ai clienti che hanno requisiti normativi per eseguire il rendering delle pagine del sito esattamente come apparivano in una data specifica, di integrarsi con servizi esterni specializzati.
      </ol></td>
   </td>
   </tr>
@@ -61,7 +61,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
        <li>Per il controllo della replica, i registri di audit precedenti a 3 giorni vengono rimossi</li>
        <li>Per il controllo DAM (Assets), i registri di audit precedenti a 30 giorni vengono rimossi</li>
        <li>Per il controllo delle pagine, i registri con più di 3 giorni vengono rimossi.</li>
-       <li>Si consiglia ai clienti, che hanno requisiti normativi per produrre registri di audit non modificabili, di integrarsi con servizi esterni specializzati.<li>
+       <br>Si consiglia ai clienti che hanno requisiti normativi per produrre registri di audit non modificabili di integrarsi con servizi esterni specializzati.
      </ol></td>
    </td>
   </tr>
