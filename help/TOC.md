@@ -4,13 +4,13 @@ product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
 feature: Release Information
-user-guide-description: Risorse di supporto autonomo e collegamenti alla documentazione relativi alla panoramica di Adobe Experience Manager as a Cloud Service
+user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f1e1e12d9a19afd6c98029fc5b7a7b73ebf41686
+source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3820'
 ht-degree: 97%
 
 ---
@@ -163,7 +163,7 @@ ht-degree: 97%
       + [Personalizzare il contenuto di un’app a reazione di esempio](/help/trials/headless/customize-app.md)
       + [Creare la struttura del contenuto per l’app](/help/trials/headless/content-structure.md)
       + [Crea contenuto headless](/help/trials/headless/create-content.md)
-      + [Estrarre contenuti tramite l’API GraphQL](/help/trials/headless/extract-content.md)
+      + [Estrarre contenuti tramite l’API di GraphQL](/help/trials/headless/extract-content.md)
 + Percorso di migrazione ad AEM as a Cloud Service {#migration-journey}
    + [Guida introduttiva di AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase di preparazione](/help/journey-migration/readiness.md)
