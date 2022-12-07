@@ -2,10 +2,10 @@
 title: Creazione di programmi di produzione
 description: Scopri come creare un programma di produzione per ospitare il traffico in tempo reale con Cloud Manager.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
+source-git-commit: c68d4240fb70cc1d533c5fad6472c6c192085603
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '541'
+ht-degree: 80%
 
 ---
 
@@ -32,13 +32,26 @@ Per creare un programma di produzione, segui la procedura riportata di seguito.
 
 1. Fai clic su **Aggiungi programma** dall’angolo superiore destro della schermata.
 
-   ![Pagina di destinazione di Cloud Manager](assets/first_timelogin1.png)
+   ![Pagina di destinazione di Cloud Manager](assets/log-in.png)
 
-1. Per creare un programma di produzione, seleziona **Configurazione per la produzione** nella procedura guidata Crea programma. Prima di fare clic su **Continua** è possibile accettare il nome predefinito del programma o modificarlo.
+1. Per creare un programma di produzione, seleziona **Configurazione per la produzione** nella procedura guidata Crea programma.
 
-   ![Procedura guidata per la creazione di un programma](assets/create-prod1.png)
+   1. È possibile accettare il nome predefinito del programma o modificarlo.
+   1. Facoltativamente, puoi trascinare e rilasciare un&#39;immagine in miniatura per identificare il programma.
+   1. Tocca o fai clic su **Continua**.
+
+   ![Procedura guidata per la creazione di un programma](assets/create-production-program.png)
+
+1. Se disponi di diritti per la sicurezza migliorati, la funzione **Protezione avanzata** La scheda fornisce l’opzione per **Abilita protezione avanzata** per il programma di produzione. Se necessario, seleziona l’opzione per abilitare la protezione avanzata e tocca o fai clic su **Continua**.
+
+   * Impossibile abilitare o disabilitare la protezione avanzata dopo la creazione del programma.
+   * [Ulteriori informazioni](https://www.adobe.com/go/hipaa-ready) informazioni sull&#39;implementazione della soluzione HIPAA di Adobe.
+
+   ![Opzione Protezione avanzata](assets/create-production-program-enhanced.png)
 
 1. Dalla scheda **Soluzioni e componenti aggiuntivi**, seleziona le soluzioni da includere nel programma.
+
+   * Se hai selezionato la **Abilita protezione avanzata** in precedenza, potrai selezionare solo il numero di soluzioni per le quali sono disponibili adesioni HIPAA.
 
    ![Selezione delle soluzioni](assets/setup-prod-select.png)
 

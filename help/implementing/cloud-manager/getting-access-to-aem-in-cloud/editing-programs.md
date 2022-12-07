@@ -2,10 +2,10 @@
 title: Modifica dei programmi
 description: Scopri come modificare i programmi sandbox e di produzione per apportare modifiche alle opzioni dopo averli creati.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
+source-git-commit: b56b8b448060cd446c6f17689882bc0515e27d25
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 100%
+source-wordcount: '513'
+ht-degree: 87%
 
 ---
 
@@ -55,6 +55,12 @@ Per modificare un programma, segui la procedura riportata di seguito.
 1. Per salvare le modifiche apportate al programma, fai clic su **Aggiorna**.
 
 Ogni volta che si modifica un programma, compreso aggiungere o rimuovere una soluzione o un componente aggiuntivo, le modifiche hanno effetto dopo la distribuzione successiva.
+
+Se il tuo programma di produzione aveva abilitato la sicurezza avanzata, aggiungi **Protezione avanzata** sarà disponibile nella scheda **Modifica programma** per confermare che la funzione è attiva per il programma.
+
+![Protezione avanzata attiva per un programma](assets/edit-program-enhanced.png)
+
+Questa impostazione non può essere modificata dopo la creazione del programma. Per ulteriori informazioni sull’opzione di protezione avanzata, consulta la sezione [Creazione di programmi di produzione](creating-production-programs.md) documento.
 
 ## Eliminazione dei programmi sandbox {#delete-sandbox-program}
 
