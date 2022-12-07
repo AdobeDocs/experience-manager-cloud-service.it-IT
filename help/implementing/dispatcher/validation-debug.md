@@ -3,9 +3,9 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Convalida e debug con gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
+source-git-commit: 3915e0f281731928b8d918e741235f8bef41c885
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2701'
 ht-degree: 1%
 
 ---
@@ -31,11 +31,12 @@ La struttura della sottocartella Dispatcher del progetto è la seguente:
 ./
 ├── conf.d
 │   ├── available_vhosts
+│   │   ├── my_site.vhost # Created by customer
 │   │   └── default.vhost
 │   ├── dispatcher_vhost.conf
 │   ├── enabled_vhosts
 │   │   ├── README
-│   │   └── default.vhost -> ../available_vhosts/default.vhost
+│   │   └── my_site.vhost -> ../available_vhosts/my_site.vhost  # Created by customer
 │   └── rewrites
 │   │   ├── default_rewrite.rules
 │   │   └── rewrite.rules
@@ -46,6 +47,7 @@ La struttura della sottocartella Dispatcher del progetto è la seguente:
 │   └── USE_SOURCES_DIRECTLY
 └── conf.dispatcher.d
     ├── available_farms
+    │   ├── my_farm.farm # Created by customer
     │   └── default.farm
     ├── cache
     │   ├── default_invalidate.any
@@ -58,7 +60,7 @@ La struttura della sottocartella Dispatcher del progetto è la seguente:
     ├── dispatcher.any
     ├── enabled_farms
     │   ├── README
-    │   └── default.farm -> ../available_farms/default.farm
+    │   └── my_farm.farm -> ../available_farms/my_farm.farm  # Created by customer
     ├── filters
     │   ├── default_filters.any
     │   └── filters.any
@@ -131,6 +133,7 @@ Si consiglia che i file di cui sopra facciano riferimento ai file immutabili ele
 * `conf.d/available_vhosts/default.vhost`
 
 Contiene un esempio di host virtuale. Per il tuo host virtuale, crea una copia di questo file, personalizzalo, vai a `conf.d/enabled_vhosts` e crea un collegamento simbolico alla copia personalizzata.
+Non copiare il file default.vhost direttamente in `conf.d/enabled_vhosts`.
 
 Assicurati che un host virtuale sia sempre disponibile e che corrisponda a ServerAlias `\*.local` e localhost, necessari per i processi di Adobe interni.
 
