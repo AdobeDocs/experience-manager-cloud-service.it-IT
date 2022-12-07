@@ -3,16 +3,21 @@ title: Configurazione del filtro Referrer con AEM Headless
 description: Il filtro Referrer di Adobe Experience Manager consente l’accesso da host di terze parti. Per abilitare l’accesso all’endpoint GraphQL per le applicazioni headless è necessaria una configurazione OSGi per il filtro Referrer.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d8cc024fa5128e4b27098d1bff92588487fe101a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '277'
+ht-degree: 69%
 
 ---
 
 # Filtro referrer {#referrer-filter}
 
-Il filtro Referrer di Adobe Experience Manager consente l’accesso da host di terze parti. Per abilitare l’accesso all’endpoint GraphQL per le applicazioni headless è necessaria una configurazione OSGi per il filtro Referrer.
+Il filtro Referrer di Adobe Experience Manager consente l’accesso da host di terze parti.
+
+È necessaria una configurazione OSGi per il filtro referente per abilitare l’accesso all’endpoint GraphQL per le applicazioni headless su HTTP POST. Quando si utilizzano query persistenti senza titolo AEM che accedono a AEM tramite HTTP GET, non è necessaria una configurazione del filtro referente.
+
+>[!WARNING]
+> AEM Referrer Filter non è un factory di configurazione OSGi, il che significa che solo una configurazione è attiva su un servizio AEM alla volta. Quando possibile, evita di aggiungere configurazioni personalizzate del filtro referente, in quanto questo sovrascrive AEM configurazioni native e potrebbe interrompere la funzionalità del prodotto.
 
 Ciò avviene tramite una configurazione OSGi appropriata per il filtro Referrer che:
 
@@ -25,21 +30,21 @@ Ad esempio, per concedere l’accesso alle richieste con il Referrer `my.domain`
 
 ```xml
 {
-    "allow.empty":false,
-    "allow.hosts":[
+    "allow.empty": false,
+    "allow.hosts": [
       "my.domain"
     ],
-    "allow.hosts.regexp":[
+    "allow.hosts.regexp": [
       ""
     ],
-    "filter.methods":[
+    "filter.methods": [
       "POST",
       "PUT",
       "DELETE",
       "COPY",
       "MOVE"
     ],
-    "exclude.agents.regexp":[
+    "exclude.agents.regexp": [
       ""
     ]
 }
