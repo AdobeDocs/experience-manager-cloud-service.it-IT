@@ -2,10 +2,10 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
+source-git-commit: ee2240eac76d4df372d94152a7c17b6e449ef7c8
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 12%
+source-wordcount: '1181'
+ht-degree: 11%
 
 ---
 
@@ -119,7 +119,7 @@ A tale scopo, crea un nuovo processo di acquisizione e assicurati di: **Wipe** �
 
 ### CAM: impossibile recuperare il token di migrazione {#cam-unable-to-retrieve-the-migration-token}
 
-Il recupero automatico del token di migrazione potrebbe non riuscire per diversi motivi, tra cui [configurazione di un elenco consentiti IP tramite Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) nell’ambiente del Cloud Service di destinazione.  In questi scenari, quando tenti di avviare un’acquisizione visualizzerai la seguente finestra di dialogo:
+Il recupero automatico del token di migrazione potrebbe non riuscire per diversi motivi, tra cui [configurazione di un elenco consentiti IP tramite Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) nell’ambiente del Cloud Service di destinazione. In questi scenari, quando tenti di avviare un’acquisizione visualizzerai la seguente finestra di dialogo:
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -134,6 +134,14 @@ Sarà necessario recuperare manualmente il token di migrazione facendo clic sul 
 Potrai avviare un’acquisizione nell’ambiente di destinazione solo se appartieni alla pagina locale **Amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non appartieni al gruppo di amministratori AEM, quando tenti di avviare un’acquisizione verrà visualizzato un errore come mostrato di seguito. Puoi chiedere all’amministratore di aggiungerti al **Amministratori AEM** oppure chiedi il token stesso, che puoi quindi incollare nel **Input token di migrazione** campo .
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+
+### Aggiornamenti automatici tramite Release Orchestrator ancora abilitati
+
+Release Orchestrator mantiene automaticamente gli ambienti aggiornati applicando automaticamente gli aggiornamenti. Se l’aggiornamento viene attivato durante l’esecuzione di un’acquisizione, possono verificarsi risultati imprevedibili, tra cui la corruzione dell’ambiente. Questo è uno dei motivi per cui è necessario registrare un ticket di supporto prima di avviare un’acquisizione (vedi &quot;Nota&quot; sopra), in modo che sia possibile pianificare la disattivazione temporanea di Release Orchestrator.
+
+Se Release Orchestrator è ancora in esecuzione all&#39;avvio di un&#39;acquisizione, l&#39;interfaccia utente presenta questo messaggio di errore. È possibile scegliere di continuare comunque, accettando il rischio, controllando il campo e premendo nuovamente il pulsante.
+
+![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
 ## Passaggio successivo {#whats-next}
 
