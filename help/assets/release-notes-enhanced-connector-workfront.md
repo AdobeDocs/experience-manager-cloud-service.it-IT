@@ -2,9 +2,9 @@
 title: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 description: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
+source-git-commit: f98704357c38f61e8e7d36b33ad32e9154c611e6
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,43 @@ La sezione seguente illustra le note generali sulla versione di [!DNL Workfront 
 
 ## Data di pubblicazione {#release-date}
 
-Data di rilascio dell’ultima versione 1.9.5 di [!DNL Workfront for Experience Manager enhanced connector] è l’11 novembre 2022.
+Data di rilascio dell’ultima versione 1.9.6 di [!DNL Workfront for Experience Manager enhanced connector] è il 9 dicembre 2022.
 
 ## Funzioni principali {#release-highlights}
 
 La versione più recente del [!DNL Workfront for Experience Manager enhanced connector] include i seguenti miglioramenti e correzioni di bug:
+
+**Miglioramento**
+
+<!--
+
+* Workfront enhanced connector now allows you to use new search parameters to be more specific while defining folder names on large repositories.
+
+-->
+
+* Il connettore avanzato di Workfront ora supporta l’esecuzione di ricerche full-text su risorse e cartelle.
+
+**Correzioni di bug**
+
+* I metadati della versione del documento non vengono sincronizzati in modo appropriato tra Workfront e Experience Manager.
+* Problemi durante la creazione di una cartella collegata ad Experience Manager in Workfront quando la cartella utilizza uno schema mancante nella configurazione globale.
+* Il modulo dell’editor dello schema metadati smette di rispondere quando si fa clic su un campo a causa di un tempo di caricamento più lungo del previsto. È stata aggiunta una configurazione OSGi specifica per i moduli personalizzati per risolvere il problema. I nomi dei moduli personalizzati aggiunti all’editor dello schema metadati sono disponibili nei registri.
+
+>[!IMPORTANT]
+>
+>L’Adobe consiglia di [aggiornamento alla versione più recente 1.9.6](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
+
+## Problemi noti {#known-issues}
+
+* Durante la configurazione di cartelle collegate a un progetto con AEM 6.4, Experience Manager non salva i valori per **[!UICONTROL sottocartelle]** e **[!UICONTROL Crea cartella collegata in progetti con portfolio]** campi. Il valore per **[!UICONTROL sottocartelle]** aggiornamenti dei campi in **[!UICONTROL indefinito]** e il valore per **[!UICONTROL Crea cartella collegata in progetti con portfolio]** aggiornamenti dei campi in **[!UICONTROL Portfolio predefinito]** automaticamente dopo il salvataggio della configurazione.
+
+* Quando utilizzi l’esperienza Workfront classica, la **[!UICONTROL Invia a]** opzione disponibile in **[!UICONTROL Altro]** l’elenco a discesa non consente di selezionare la destinazione all’interno di Experience Manager. La **[!UICONTROL Invia a]** funziona correttamente utilizzando **[!UICONTROL Azioni documento]** elenco a discesa. La **[!UICONTROL Invia a]** funziona correttamente per **[!UICONTROL Altro]** l’elenco a discesa e **[!UICONTROL Azioni documento]** elenco a discesa disponibile nella nuova esperienza Workfront.
+
+## Versioni precedenti {#previous-releases}
+
+### Versione di novembre 2022 {#november-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] La versione 1.9.5, rilasciata l’11 novembre, include i seguenti aggiornamenti:
 
 * Quando si definisce un solo valore per un campo con più valori in Workfront, il valore del campo non viene mappato in modo appropriato su Experience Manager.
 
@@ -58,19 +90,6 @@ La versione più recente del [!DNL Workfront for Experience Manager enhanced con
    >[!NOTE]
    >
    >Se hai già eliminato le sottoscrizioni di eventi errate prima di eseguire i passaggi indicati in questa procedura, puoi saltare l’ultimo passaggio di questa procedura.
-
-
->[!IMPORTANT]
->
->L’Adobe consiglia di [aggiornamento all&#39;ultima versione 1.9.5](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
-
-## Problemi noti {#known-issues}
-
-* Durante la configurazione di cartelle collegate a un progetto con AEM 6.4, Experience Manager non salva i valori per **[!UICONTROL sottocartelle]** e **[!UICONTROL Crea cartella collegata in progetti con portfolio]** campi. Il valore per **[!UICONTROL sottocartelle]** aggiornamenti dei campi in **[!UICONTROL indefinito]** e il valore per **[!UICONTROL Crea cartella collegata in progetti con portfolio]** aggiornamenti dei campi in **[!UICONTROL Portfolio predefinito]** automaticamente dopo il salvataggio della configurazione.
-
-* Quando utilizzi l’esperienza Workfront classica, la **[!UICONTROL Invia a]** opzione disponibile in **[!UICONTROL Altro]** l’elenco a discesa non consente di selezionare la destinazione all’interno di Experience Manager. La **[!UICONTROL Invia a]** funziona correttamente utilizzando **[!UICONTROL Azioni documento]** elenco a discesa. La **[!UICONTROL Invia a]** funziona correttamente per **[!UICONTROL Altro]** l’elenco a discesa e **[!UICONTROL Azioni documento]** elenco a discesa disponibile nella nuova esperienza Workfront.
-
-## Versioni precedenti {#previous-releases}
 
 ### Versione di ottobre 2022 {#october-2022-release}
 
