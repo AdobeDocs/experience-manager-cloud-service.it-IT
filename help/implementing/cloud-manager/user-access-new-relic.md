@@ -2,10 +2,10 @@
 title: New Relic One
 description: Scopri il servizio New Relic One di monitoraggio delle prestazioni delle applicazioni (APM) per AEM as a Cloud Service e come accedervi.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
-workflow-type: ht
-source-wordcount: '1612'
-ht-degree: 100%
+source-git-commit: 9089c66a2fdb5a05eb888e2af736862aff1b7a11
+workflow-type: tm+mt
+source-wordcount: '1607'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Quando si crea un nuovo programma di produzione, l’account secondario New Reli
 
 New Relic One APM per AEM as a Cloud Service presenta numerose funzioni.
 
-* Accesso diretto a un account New Relic One dedicato (accesso gestito dal supporto Adobe)
+* Accesso diretto a un account New Relic One dedicato
 
 * Agente New Relic One APM instrumentato che mostra le chiamate al metodo esatto con i numeri delle righe, includendo le dipendenze e i database esterni
 
@@ -150,7 +150,7 @@ L’aggiunta di utenti a New Relic One prevede le seguenti limitazioni:
 * Gli utenti aggiunti a New Relic saranno di tipo **Limitato**. Per ulteriori informazioni, consulta la [documentazione di New Relic.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
 * AEM as a Cloud Service offre unicamente la soluzione New Relic One APM e non fornisce supporto per avvisi, registrazione o integrazioni API.
 
-Per ulteriore assistenza o informazioni sulle offerte di New Relic One per i programmi AEM as a Cloud Service, apri un ticket di supporto tramite il [portale AEM dedicato all’assistenza](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+Per ulteriore assistenza o informazioni sulle offerte di New Relic One per i programmi AEM as a Cloud Service, apri un ticket di supporto tramite il [portale AEM dedicato all’assistenza](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Domande frequenti su New Relic One {#faqs}
 
