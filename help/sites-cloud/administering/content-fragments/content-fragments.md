@@ -4,10 +4,10 @@ description: Scopri in che modo i frammenti di contenuto in Adobe Experience Man
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 96%
+source-wordcount: '2070'
+ht-degree: 98%
 
 ---
 
@@ -88,11 +88,6 @@ I frammenti di contenuto possono quindi essere assemblati per fornire esperienze
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 >
 >Per ulteriori informazioni consulta anche [Frammenti di contenuto e frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview"
->title="Creare la struttura del contenuto per l’app"
->abstract="Seguendo la nostra serie di guide interattive imparerai a creare la struttura (nota anche come modello per frammenti di contenuto) che funge da base per tutti i contenuti headless."
 
 ## Frammenti di contenuto e Content Services {#content-fragments-and-content-services}
 

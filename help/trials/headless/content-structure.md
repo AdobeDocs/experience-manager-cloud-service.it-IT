@@ -4,9 +4,9 @@ description: Scopri come creare la struttura che funge da base per tutti i conte
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1149'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,21 @@ ht-degree: 1%
 I Frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Il loro utilizzo consente di preparare contenuti pronti per l’uso in più posizioni e su più canali, ideali per la distribuzione headless. I modelli di frammento di contenuto vengono utilizzati per definire la struttura del contenuto e sono la prima cosa da creare per gestire il contenuto headless.
 
 Per aiutarti a capire come si esegue questa operazione, questo modulo di AEM prove ti guida attraverso il processo con un tour rapido e interattivo che prima crea il modello e poi ne aggiunge la struttura. Il presente documento funge da complemento del tour interno del prodotto, che comprende gli stessi passaggi e, se del caso, il collegamento a risorse aggiuntive.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
+>title="Avvia l&#39;editor modelli"
+>abstract="La creazione di un modello di frammento di contenuto inizia con la creazione di un elemento modello nel flusso di lavoro di amministrazione del modello, e quindi con l’aggiunta di elementi struttura tramite l’editor del modello di frammento di contenuto.<br><br>Fai clic qui sotto per avviare la funzione in una nuova scheda e segui questo documento di apprendimento per creare il tuo primo frammento di contenuto."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
+>title="Avvia l&#39;editor modelli"
+>abstract="La creazione di un modello di frammento di contenuto inizia con la creazione di un elemento modello nel flusso di lavoro di amministrazione del modello, e quindi con l’aggiunta di elementi struttura tramite l’editor del modello di frammento di contenuto.\n\nFate clic qui sotto per avviare la funzione in una nuova scheda e seguite questo documento di apprendimento per creare il primo frammento di contenuto."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="Creare la struttura del contenuto per l’app"
+>abstract="Seguendo la nostra serie di guide interattive imparerai a creare la struttura (nota anche come modello per frammenti di contenuto) che funge da base per tutti i contenuti headless."
 
 ## Console del modello per frammenti di contenuto {#content-fragment-model-console}
 

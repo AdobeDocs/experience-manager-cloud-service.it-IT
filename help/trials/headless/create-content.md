@@ -4,9 +4,9 @@ description: Utilizza il modello Frammento di contenuto creato in precedenza per
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 1%
 # Crea contenuto headless {#create-content}
 
 Seguendo il modulo di apprendimento interno al prodotto, scopri come utilizzare [Modelli di frammento di contenuto creati in precedenza](content-structure.md) per creare contenuti che possono essere utilizzati per l’authoring delle pagine o come base per i contenuti headless. Il presente documento funge da complemento del tour interattivo, che copre gli stessi passaggi e collega, se del caso, a risorse aggiuntive.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="Crea nuovo contenuto"
+>abstract="Basandosi sui modelli creati nel modulo 1, imparerai a creare contenuti che possono essere utilizzati per l’authoring delle pagine o come base per il contenuto headless."
 
 ## Frammenti di contenuto {#introduction}
 

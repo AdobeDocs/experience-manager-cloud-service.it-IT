@@ -4,9 +4,9 @@ description: Utilizza un’app React di esempio per scoprire come personalizzare
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 AEM Trials for headless viene precaricato con una semplice app React per mostrare contenuti headless. In questo modulo imparerai come visualizzare in anteprima l’app e modificarne il contenuto sostituendo un’immagine e creando un momento acquistabile per essa.
 
 L’app stessa si basa sulla struttura dei frammenti di contenuto. Utilizzando l’editor Frammento di contenuto in AEM, puoi modificare il contenuto delle app. Per aiutarti a capire come si fa, questo modulo di AEM prove ti accompagna attraverso il processo con un tour rapido e interattivo. Il presente documento funge da complemento del tour interattivo, che copre gli stessi passaggi e collega, se del caso, a risorse aggiuntive.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="Personalizzare il contenuto di un’app React di esempio"
+>abstract="Abbiamo impostato una moderna app React che puoi utilizzare per imparare a personalizzare i contenuti utilizzando le funzioni headless impostate."
 
 ## Editor frammento di contenuto {#fragment-editor}
 

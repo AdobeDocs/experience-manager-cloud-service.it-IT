@@ -1,12 +1,12 @@
 ---
-title: Estrarre contenuti tramite l’API di GraphQL
+title: Estrarre contenuti tramite l’API GraphQL
 description: Scopri come utilizzare Frammenti di contenuto e l’API GraphQL come sistema di gestione dei contenuti headless.
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1216'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,12 @@ In primo luogo, verrà illustrato come eseguire due diversi tipi di query: **ele
 
 >[!TIP]
 >
->Per ulteriori dettagli sull’API di GraphQL, consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) alla fine di questo modulo per la guida API di GraphQL.
+>Per ulteriori dettagli sull’API GraphQL, consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) alla fine di questo modulo per la guida API di GraphQL.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="Estrarre contenuto utilizzando l’API di GraphQL"
+>abstract="In questo modulo imparerai come utilizzare i frammenti di contenuto e l’API GraphQL come sistema di gestione dei contenuti headless."
 
 ## GraphQL Explorer {#graphql-explorer}
 
@@ -29,7 +34,7 @@ Viene avviato GraphQL Explorer. Qui puoi creare ed eseguire query sul tuo conten
 
 ![Editor query GraphQL](assets/extract-content/query-editor.png)
 
-Per passare direttamente a GraphQL Explorer al di fuori della guida in-app, utilizza l’icona di Adobe in alto a sinistra della pagina. Viene aperta la navigazione globale di AEM. Da qui puoi scegliere il **Strumenti** e quindi **Generale** -> **Editor query GraphQL**.
+Per passare direttamente a Esplora risorse all&#39;esterno della guida in-app, utilizza l&#39;icona di Adobe in alto a sinistra della pagina. Viene aperta la navigazione globale di AEM. Da qui puoi scegliere il **Strumenti** e quindi **Generale** -> **Editor query GraphQL**.
 
 >[!TIP]
 >
@@ -173,6 +178,6 @@ Per tornare alla schermata iniziale di prova, fai clic su **Soluzioni** in alto 
 
 Per ulteriori informazioni su Frammenti di contenuto e AEM, consulta questa documentazione aggiuntiva.
 
-* [Guida all’API GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/explore-graphql-api.html)
+* [Guida all’API di GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/explore-graphql-api.html)
 * [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentazione su come navigare e utilizzare i AEM per i nuovi utenti
 * [Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)
