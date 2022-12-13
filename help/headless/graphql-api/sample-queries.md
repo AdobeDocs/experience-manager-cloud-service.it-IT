@@ -3,10 +3,10 @@ title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 92%
+source-wordcount: '1540'
+ht-degree: 93%
 
 ---
 
@@ -1116,12 +1116,6 @@ Queste query di esempio si basano sul progetto WKND. Caratteristiche:
 >
 >Poiché i risultati possono essere estesi, non vengono riprodotti qui.
 
->[!NOTE]
->
->Varie query fanno riferimento alla variante `variation1`. Questo non è nel pacchetto WKND standard. Deve essere creato per il test.
->
->Se `variation1` non esiste, quindi il `master`La variante viene restituita come impostazione predefinita.
-
 ### Query di esempio per tutti i Frammenti di contenuto di un determinato modello con le proprietà specificate {#sample-wknd-all-model-properties}
 
 Questa query di esempio rappresenta un’interrogazione per ottenere:
@@ -1471,27 +1465,19 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all&#39;interno del quale, sono presenti dati relativi alla variante: `variation1`
+   * all&#39;interno del quale, sono presenti dati relativi alla variante: `another`
 
 **Query di esempio**
 
 ```graphql
 {
-  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo", variation: "another") {
     item {
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
@@ -1501,29 +1487,23 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 Questa query rappresenta un’interrogazione per ottenere:
 
-* frammenti di contenuto di tipo `article` con una variante specifica: `variation1`
+* frammenti di contenuto di tipo `article` con una variante specifica: `another`
+
+>[!NOTE]
+>
+>Questo dimostrerà il fallback per i frammenti di contenuto privi di un [Variazione](/help/headless/graphql-api/content-fragments.md#variations) del nome specificato.
 
 **Query di esempio**
 
 ```graphql
 {
-  articleList(variation: "variation1") {
+  authorList(variation: "another") {
     items {
-      _path
-      _variation
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
