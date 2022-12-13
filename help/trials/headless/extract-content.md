@@ -1,17 +1,17 @@
 ---
-title: Estrarre contenuti tramite l’API GraphQL
+title: Estrarre contenuti tramite l’API di GraphQL
 description: Scopri come utilizzare Frammenti di contenuto e l’API GraphQL come sistema di gestione dei contenuti headless.
 hidefromtoc: true
 index: false
-source-git-commit: a832ed1d81866a6470b47d8e30f5c242b10d1422
+exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%
 
 ---
 
-
-# Estrarre contenuti tramite l’API GraphQL {#extract-content}
+# Estrarre contenuti tramite l’API di GraphQL {#extract-content}
 
 Fino ad ora in AEM Trial for headless, avete [creazione di modelli di frammenti di contenuto personalizzati](content-structure.md) e creare il proprio contenuto headless [Frammenti di contenuto.](create-content.md) Ora puoi imparare a utilizzare Frammenti di contenuto e l’API GraphQL come sistema di gestione dei contenuti headless per distribuire i tuoi contenuti.
 
@@ -21,11 +21,11 @@ In primo luogo, verrà illustrato come eseguire due diversi tipi di query: **ele
 
 >[!TIP]
 >
->Per ulteriori dettagli sull’API GraphQL, consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) alla fine di questo modulo per la guida API GraphQL.
+>Per ulteriori dettagli sull’API di GraphQL, consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) alla fine di questo modulo per la guida API di GraphQL.
 
 ## GraphQL Explorer {#graphql-explorer}
 
-Si inizia da GraphQL Explorer. Qui puoi creare ed eseguire query sul tuo contenuto headless.
+Viene avviato GraphQL Explorer. Qui puoi creare ed eseguire query sul tuo contenuto headless.
 
 ![Editor query GraphQL](assets/extract-content/query-editor.png)
 

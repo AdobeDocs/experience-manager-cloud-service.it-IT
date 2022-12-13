@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
-source-wordcount: '4179'
-ht-degree: 60%
+source-wordcount: '4174'
+ht-degree: 59%
 
 ---
 
@@ -122,11 +122,9 @@ Anche se GraphQL supporta anche le richieste GET, possono raggiungere i limiti (
 >
 >Per consentire query dirette e/o POST in Dispatcher, puoi chiedere all’amministratore di sistema di:
 >
->* Creare una variabile di ambiente Cloud Manager denominata `ENABLE_GRAPHQL_ENDPOINT`
+>* Crea un [Variabile di ambiente Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) chiamato `ENABLE_GRAPHQL_ENDPOINT`
 >* con il valore `true`
 
-
-<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -261,7 +259,7 @@ Tali [campi di supporto](#helper-fields) sono contrassegnati con un `_` per dist
 
 #### Percorso  {#path}
 
-Il campo percorso viene utilizzato come identificatore in AEM GraphQL. Rappresenta il percorso della risorsa Frammenti di contenuto all’interno dell’archivio AEM. Questo è l’identificatore di un frammento di contenuto in quanto:
+Il campo percorso viene utilizzato come identificatore in AEM GraphQL. Rappresenta il percorso della risorsa Frammenti di contenuto all’interno dell’archivio AEM. Questo è l’identificatore di un frammento di contenuto, in quanto:
 
 * è univoco all’interno di AEM,
 * può essere facilmente recuperato.
@@ -296,7 +294,7 @@ Vedi [Query di esempio: un singolo frammento di città specifico](/help/headless
 
 #### Metadati {#metadata}
 
-Tramite GraphQL, AEM espone inoltre i metadati di un frammento di contenuto. I metadati sono informazioni che descrivono un frammento di contenuto, ad esempio il titolo di un frammento di contenuto, il percorso della miniatura, la descrizione di un frammento di contenuto, la data di creazione, e così via.
+Tramite GraphQL, AEM espone inoltre i metadati di un frammento di contenuto. I metadati sono informazioni che descrivono un frammento di contenuto, ad esempio il titolo di un frammento di contenuto, il percorso delle miniature, la descrizione di un frammento di contenuto, la data di creazione, tra gli altri.
 
 Poiché i metadati vengono generati tramite l’Editor schemi e, pertanto, non dispongono di una struttura specifica, il tipo di `TypedMetaData` GraphQL è stato implementato per esporre i metadati di un frammento di contenuto. `TypedMetaData` espone le informazioni raggruppate per i seguenti tipi scalari:
 
@@ -501,8 +499,8 @@ Alcuni tipi consentono inoltre di specificare opzioni aggiuntive che modificano 
 
 | Opzione | Tipo/i | Descrizione |
 |--- |--- |--- |
-| _ignoreCase | Stringa | Ignora il caso di una stringa, ad esempio un valore di `time` corrisponderà `TIME`, `time`, `tImE`... |
-| _sensibilità | Mobile | consente di considerare uguali i valori float a un certo margine (per aggirare le limitazioni tecniche dovute alla rappresentazione interna dei valori float); dovrebbe essere evitata, in quanto questa opzione potrebbe avere un impatto negativo sulle prestazioni |
+| `_ignoreCase` | `String` | Ignora il caso di una stringa, ad esempio un valore di `time` corrisponderà `TIME`, `time`, `tImE`... |
+| `_sensitiveness` | `Float` | Consente un certo margine per `float` valori da considerare uguali (per aggirare i limiti tecnici dovuti alla rappresentazione interna di `float` valori; dovrebbe essere evitata, in quanto questa opzione potrebbe avere un impatto negativo sulle prestazioni |
 
 Le espressioni possono essere combinate con un set tramite un operatore logico (`_logOp`):
 
@@ -513,7 +511,7 @@ Ogni campo può essere filtrato in base al proprio set di espressioni. I set di 
 
 Una definizione di filtro (passata come `filter` argomento a una query) contiene:
 
-* Una sottodefinizione per ciascun campo (a cui è possibile accedere tramite il suo nome, ad esempio, è disponibile una `lastName` nel filtro per `lastName` campo nel tipo di campo)
+* Una sottodefinizione per ciascun campo (a cui è possibile accedere tramite il suo nome, ad esempio, è disponibile una `lastName` nel filtro per `lastName` nel campo Tipo di dati (campo)
 * Ogni sottodefinizione contiene la variabile `_expressions` array, fornendo il set di espressioni e `_logOp` campo che definisce l’operatore logico con cui combinare le espressioni
 * Ciascuna espressione è definita dal valore (`value` e l&#39;operatore (`_operator` campo) il contenuto di un campo deve essere confrontato con
 
@@ -652,15 +650,15 @@ query {
 }
 ```
 
-<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
 
-<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
 
 >[!NOTE]
 >
->* Il paging richiede un ordinamento stabile per funzionare correttamente in più query che richiedono pagine diverse dello stesso set di risultati. Per impostazione predefinita, utilizza il percorso del repository di ogni elemento del set di risultati per assicurarsi che l&#39;ordine sia sempre lo stesso. Se utilizzi un ordinamento diverso e se tale ordinamento non può essere eseguito a livello di query jcr, le prestazioni risulteranno negative, poiché l’intero set di risultati deve essere caricato in memoria prima di determinare le pagine.
+>* Il paging richiede un ordinamento stabile per funzionare correttamente in più query che richiedono pagine diverse dello stesso set di risultati. Per impostazione predefinita, utilizza il percorso del repository di ogni elemento del set di risultati per assicurarsi che l&#39;ordine sia sempre lo stesso. Se viene utilizzato un ordinamento diverso e se tale ordinamento non può essere eseguito a livello di query JCR, le prestazioni risulteranno negative, poiché l’intero set di risultati deve essere caricato in memoria prima di determinare le pagine.
 >
->* Maggiore è l&#39;offset, più tempo sarà necessario per saltare gli elementi dal set di risultati completo della query jcr. Una soluzione alternativa per i set di risultati di grandi dimensioni è quella di utilizzare la query impaginata con `first` e `after` metodo .
+>* Maggiore è l&#39;offset, più tempo sarà necessario per saltare gli elementi dal set di risultati completo della query JCR. Una soluzione alternativa per i set di risultati di grandi dimensioni è quella di utilizzare la query impaginata con `first` e `after` metodo .
 
 
 ### Query impaginata - prima e dopo {#paginated-first-after}

@@ -3,13 +3,13 @@ title: Personalizzare il contenuto di un’app a reazione di esempio
 description: Utilizza un’app React di esempio per scoprire come personalizzare il contenuto utilizzando la funzione headless impostata in AEM as a Cloud Service.
 hidefromtoc: true
 index: false
-source-git-commit: 62c8be81d0d46e69b44cc803419fafcce2e93d33
+exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '1371'
 ht-degree: 0%
 
 ---
-
 
 # Personalizzare il contenuto di un’app a reazione di esempio {#customize-app}
 

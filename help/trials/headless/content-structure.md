@@ -3,13 +3,13 @@ title: Creare la struttura del contenuto per l’app
 description: Scopri come creare la struttura che funge da base per tutti i contenuti headless utilizzando modelli di frammenti di contenuto AEM.
 hidefromtoc: true
 index: false
-source-git-commit: 6010fb398ec8c04ae9153f313585bcf38ccaa26d
+exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 1%
 
 ---
-
 
 # Creare la struttura del contenuto per l’app {#content-structure}
 
