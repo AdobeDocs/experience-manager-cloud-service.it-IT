@@ -2,9 +2,9 @@
 title: Modelli di pagina
 description: I modelli di pagina vengono utilizzati per creare una pagina che verrà utilizzata come base per la nuova pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3300'
 ht-degree: 10%
 
 ---
@@ -357,7 +357,7 @@ Se hai creato un modello che può fungere da base per altri modelli, puoi copiar
 1. Crea un modello come faresti con un modello di pagina [come documentato qui](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), che fungerà da base per il tipo di modello.
 1. Utilizzando CRXDE Lite, copia il modello appena creato dal `templates` al nodo `template-types` sotto il nodo [cartella dei modelli](#template-folders).
 1. Elimina il modello dal `templates` sotto il nodo [cartella dei modelli](#template-folders).
-1. Nella copia del modello che si trova sotto il `template-types` nodo, elimina tutto `cq:template` e `cq:templateType` `jcr:content` proprietà.
+1. Nella copia del modello che si trova sotto il `template-types` nodo, elimina tutto `cq:template` e `cq:templateType` proprietà da tutti `jcr:content` nodi.
 
 Puoi anche sviluppare un tipo di modello personalizzato utilizzando un modello modificabile di esempio come base, disponibile su GitHub.
 
