@@ -2,10 +2,10 @@
 title: Componente RemotePage
 description: Il componente RemotePage è un componente di pagina personalizzato per la modifica del SPA React remoto in AEM.
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
-source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
+source-git-commit: d213dd0788e66015237d241caf0f3b5737ce725c
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 3%
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ Il componente RemotePage recupera tutte le risorse necessarie dall&#39;applicazi
 
 Vedi l&#39;articolo [Modifica di un SPA esterno in AEM](editing-external-spa.md) per ulteriori dettagli sulle SPA modificabili esterne in AEM.
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 * Abilitare CORS nello sviluppo
 * Configurare l’URL remoto nelle Proprietà pagina
@@ -35,9 +35,9 @@ Vedi l&#39;articolo [Modifica di un SPA esterno in AEM](editing-external-spa.md)
       ![esempio di proprietà entrypoints](assets/asset-manifest-entrypoints.png)
 * L&#39;applicazione deve essere in grado di inizializzare in un `<div id="root"></div>` sotto il `body` elemento. Se è previsto un markup diverso per l’istanza dell’app, questo deve essere regolato di conseguenza negli script HTL del componente proxy che ha un `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
-## Limitazioni  {#limitations}
+## Limitazioni {#limitations}
 
-* L&#39;implementazione corrente del componente RemotePage supporta solo le applicazioni React remote.
+* Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto di risorse come quello [Ho trovato qui.](https://github.com/shellscape/webpack-manifest-plugin) Il componente RemotePage, tuttavia, è stato testato solo per funzionare con il framework React (e Next.js tramite il componente Remote-page-next) e quindi non supporta il caricamento in remoto di applicazioni da altri framework, come ad Angular.
 * I CSS interni definiti nel file HTML principale dell’applicazione e i CSS in linea sul nodo DOM principale non saranno disponibili quando si esegue il rendering remoto in AEM.
 
 ## Dettagli tecnici {#technical-details}
