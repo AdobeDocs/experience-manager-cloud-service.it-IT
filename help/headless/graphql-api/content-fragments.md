@@ -3,7 +3,7 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 666125abe28ed71e85fdcf4a3b44f26e61c7795f
 workflow-type: tm+mt
 source-wordcount: '4174'
 ht-degree: 59%
@@ -245,7 +245,7 @@ GraphQL per AEM supporta un elenco di tipi. Vengono rappresentati tutti i tipi d
 | Testo su più righe | Stringa, [Stringa] |  Utilizzato per l’output di testo, ad esempio il corpo di un articolo |
 | Numero |  Mobile, [Mobile] | Utilizzato per visualizzare il numero a virgola mobile e i numeri regolari |
 | Booleano |  Booleano |  Utilizzato per visualizzare le caselle di controllo → semplici istruzioni true/false |
-| Data e ora | Calendario |  Utilizzato per visualizzare la data e l’ora in formato ISO 8086. A seconda del tipo selezionato, sono disponibili tre versioni da utilizzare in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
+| Data e ora | Calendario |  Utilizzato per visualizzare la data e l’ora in formato ISO 8601. A seconda del tipo selezionato, sono disponibili tre versioni da utilizzare in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
 | Enumerazione |  Stringa |  Utilizzato per visualizzare un’opzione da un elenco di opzioni definito durante la creazione del modello |
 |  Tag |  [Stringa] |  Utilizzato per visualizzare un elenco di stringhe che rappresentano tag utilizzati in AEM |
 | Riferimento contenuto |  Stringa, [Stringa] |  Utilizzato per visualizzare il percorso per un’altra risorsa in AEM |
