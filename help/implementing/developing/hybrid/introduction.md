@@ -2,9 +2,9 @@
 title: Introduzione a SPA e procedura dettagliata
 description: Questo articolo introduce i concetti di un SPA e spiega come utilizzare un'applicazione SPA di base per l'authoring, mostrando come si relaziona con l'Editor SPA sottostante.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '2076'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,18 @@ Questo articolo introduce i concetti di base di SPA prima di guidare il lettore 
 
 L&#39;obiettivo di questa introduzione e di questa procedura dettagliata è dimostrare a uno sviluppatore AEM perché SPA sono rilevanti, come funzionano in generale, come un SPA viene gestito dall&#39;editor di SPA AEM e come è diverso da un&#39;applicazione AEM standard.
 
-La procedura dettagliata si basa sulle funzionalità AEM standard e sull’app di esempio WKND SPA Project . Per seguire, prego [scarica e installa l’app di esempio WKND SPA Project da GitHub qui.](https://github.com/adobe/aem-guides-wknd-spa)
+## Requisiti {#requirements}
+
+La procedura dettagliata si basa sulle funzionalità AEM standard e sull’app di esempio WKND SPA Project . Per seguire questa procedura dettagliata, è necessario disporre dei seguenti elementi.
+
+* [SDK di sviluppo più recente di AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   * Dovrebbe funzionare come ambiente di sviluppo locale.
+   * Devi disporre dei diritti di amministratore del sistema.
+* [L’app di esempio WKND SPA Project disponibile su GitHub](https://github.com/adobe/aem-guides-wknd-spa)
+   * Scarica la [ultima versione dell’app React](https://github.com/adobe/aem-guides-wknd-spa/releases) denominato simile a `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
+   * Scarica la [immagini di esempio più recenti per l’app](https://github.com/adobe/aem-guides-wknd-spa/releases) denominato simile a `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [Utilizza il gestore dei pacchetti](/help/implementing/developing/tools/package-manager.md) per installare entrambi i pacchetti come qualsiasi altro pacchetto in AEM.
+   * Ai fini della procedura dettagliata, non è necessario installare l’app tramite Maven.
 
 >[!CAUTION]
 >
