@@ -1,30 +1,25 @@
 ---
-title: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.9.0
-description: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.9.0
+title: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.12.0
+description: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.12.0
 feature: Release Information
-source-git-commit: 6b58b253c554fc2958fdff2b246f341f56b1639f
+exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
+source-git-commit: b88fec3247179beefd76c520b10a1145e9b0c911
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 10%
+source-wordcount: '74'
+ht-degree: 22%
 
 ---
 
-# Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.9.0 {#release-notes}
+# Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2022.12.0 {#release-notes}
 
-Questa pagina illustra le note sulla versione per gli strumenti di migrazione AEM as a Cloud Service 2022.9.0.
+Questa pagina illustra le note sulla versione per gli strumenti di migrazione AEM as a Cloud Service 2022.12.0.
 
 ## Analisi delle best practice {#bpa-release}
 
 ### Data di pubblicazione {#release-date-bpa}
 
-La data di rilascio di Best Practices Analyzer v2.1.34 è il 12 settembre 2022.
-
-### Novità {#what-is-new-bpa}
-
-* BPA ora può rilevare e segnalare se il cliente ha aggiunto una configurazione di logger personalizzata. AEM as a Cloud Service non supporta i file di registro personalizzati. Tutti i file di registro devono essere inviati a `error.log`
-* BPA può ora generare rapporti sui diversi tipi MIME binari presenti nell’archivio del cliente e sui conteggi associati ad essi.
+La data di rilascio di Best Practices Analyzer v2.1.38 è il 1 dicembre 2022.
 
 ### Correzioni di bug {#bug-fixes-bpa}
 
-* L’interfaccia utente BPA ha avuto problemi di rendering durante la visualizzazione di un gran numero di risultati in un unico pattern. Questo problema è stato risolto.
-* BPA segnalava erroneamente alcuni risultati come modifiche non compatibili con gravità critica. Questo problema è stato risolto.
+* Sono stati corretti alcuni falsi positivi.

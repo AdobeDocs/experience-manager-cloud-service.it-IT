@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
+source-git-commit: 91d3e2ea02f34963688dd9ee44aed17f55752587
 workflow-type: tm+mt
-source-wordcount: '3820'
+source-wordcount: '3823'
 ht-degree: 97%
 
 ---
@@ -108,6 +108,7 @@ ht-degree: 97%
    + Note sulla versione per gli strumenti di migrazione {#migration-tools}
       + [Note sulla versione corrente](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2022 {#2022}
+         + [Note sulla versione 2022.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
          + [Note sulla versione 2022.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
          + [Note sulla versione 2022.5.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
          + [Note sulla versione 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
@@ -808,7 +809,7 @@ ht-degree: 97%
          + Componenti e modelli {#components-templates}
             + [Panoramica dei componenti](/help/implementing/developing/components/overview.md)
             + [Modelli](/help/implementing/developing/components/templates.md)
-            + [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+            + [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
             + [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=it)
             + [Esportatore JSON per Content Services](/help/implementing/developing/components/json-exporter.md)
             + [Abilitazione dell’esportazione JSON per un componente](/help/implementing/developing/components/enabling-json-exporter.md)
@@ -843,7 +844,7 @@ ht-degree: 97%
          + [Modifica di uno SPA esterno in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [Componenti compositi negli SPA](/help/implementing/developing/hybrid/composite-components.md)
          + [Rendering lato server](/help/implementing/developing/hybrid/ssr.md)
-         + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=it)
          + [Integrazione Launch](/help/implementing/developing/hybrid/launch-integration.md)
          + [Documenti di riferimento SPA](/help/implementing/developing/hybrid/reference-materials.md)
    + Strumenti per gli sviluppatori {#developer-tools}
