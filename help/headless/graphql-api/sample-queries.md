@@ -3,7 +3,7 @@ title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 93%
@@ -1652,32 +1652,32 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 
 #### Azienda {#fragment-company}
 
-| Nome dell’azienda | Amministratore delegato | Dipendenti |
+| Nome dell’azienda | CEO | Dipendenti |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
+| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### Persona {#fragment-person}
 
 | Nome | Nome | Premi |
 |--- |--- |--- |
-| Lincoln |  Abe |  |
-| Smith | Adam |   |
-| Slade |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Croft |  Lara | Gamestar |
-| Caulfield |  Max |  Gameblitz |
-|  Jobs |  Steve |   |
+| Lincoln | Abe |  |
+| Smith | Adam |  |
+| Slade | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke |  |
+| Smith | Joe |  |
+| Croft | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| Processi | Steve |  |
 
 #### Riconoscimento {#fragment-award}
 
 | Scelta rapida/ID | Titolo |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### Città {#fragment-city}
 
@@ -1685,8 +1685,8 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 |--- |--- |--- |--- |
 | Basilea | Svizzera | 172258 | city:emea |
 | Berlino | Germania | 3669491 | city:capital<br>city:emea |
-| Bucarest | Romania | 1821000 |  city:capital<br>city:emea |
-| San Francisco |  USA |  883306 |  city:beach<br>city:na |
-| San Jose |  USA |  102635 |  city:na |
-| Stoccarda |  Germania |  634830 |  city:emea |
-|  Zurigo |  Svizzera |  415367 |  città:capitale<br>città:emea |
+| Bucarest | Romania | 1821000 | city:capital<br>city:emea |
+| San Francisco | USA | 883306 | city:beach<br>city:na |
+| San Jose | USA | 102635 | city:na |
+| Stoccarda | Germania | 634830 | city:emea |
+| Zurigo | Svizzera | 415367 | city:capital<br>city:emea |
