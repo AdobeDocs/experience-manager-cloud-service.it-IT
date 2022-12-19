@@ -3,12 +3,13 @@ title: Configurazione delle pipeline non di produzione
 description: Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1177'
 ht-degree: 100%
 
 ---
+
 
 # Configurazione delle pipeline non di produzione {#configuring-non-production-pipelines}
 
@@ -145,6 +146,12 @@ Per completare la configurazione della pipeline non di produzione del codice a l
 >Se già disponi di una pipeline full stack distribuita in un ambiente, creando una pipeline di configurazione a livello web per lo stesso ambiente la configurazione del livello web esistente nella pipeline full stack verrà ignorata.
 
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
+
+## Sviluppo di Sites con la pipeline front-end {#developing-with-front-end-pipeline}
+
+Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore indipendenza e il processo di sviluppo può essere accelerato.
+
+Per informazioni sul funzionamento di questo processo e alcune considerazioni per sfruttare al massimo il suo potenziale, consulta il documento [Sviluppo di Sites con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
 
 ## Ignorare i pacchetti Dispatcher {#skip-dispatcher-packages}
 

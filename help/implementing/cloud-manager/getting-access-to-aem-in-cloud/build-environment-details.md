@@ -2,12 +2,13 @@
 title: Ambiente di build
 description: Scopri l’ambiente di build di Cloud Manager e come genera e verifica il codice.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 98%
+source-wordcount: '1003'
+ht-degree: 96%
 
 ---
+
 
 # Ambiente di build {#build-environment}
 
@@ -225,3 +226,7 @@ Questa stessa tecnica può essere utilizzata per installare pacchetti specifici 
 >[!NOTE]
 >
 >Installando un pacchetto di sistema in questo modo, non lo si installa nell’ambiente di runtime utilizzato per l’esecuzione di Adobe Experience Manager. Se hai bisogno di installare un pacchetto di sistema nell’ambiente AEM, contatta il rappresentante Adobe.
+
+>[!TIP]
+>
+>Per informazioni dettagliate sull’ambiente di compilazione front-end, consulta il documento [Sviluppo di siti con la pipeline front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
