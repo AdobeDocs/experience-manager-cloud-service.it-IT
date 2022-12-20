@@ -4,9 +4,9 @@ description: Utilizza il modello Frammento di contenuto creato in precedenza per
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '900'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,13 @@ Seguendo il modulo di apprendimento interno al prodotto, scopri come utilizzare 
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Crea nuovo contenuto"
 >abstract="Basandosi sui modelli creati nel modulo 1, imparerai a creare contenuti che possono essere utilizzati per l’authoring delle pagine o come base per il contenuto headless."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
+>title="Avvia la console Frammento di contenuto"
+>abstract="In AEM CMS headless, i &quot;frammenti di contenuto&quot; sono tutti i contenuti che si adattano alla struttura predefinita denominata &quot;modello di frammento di contenuto&quot;. Questa procedura dettagliata illustra come creare contenuti per il modello di frammento di contenuto.<br><br>Fai clic qui sotto per avviare la funzione in una nuova scheda e segui questo documento di apprendimento per creare il tuo primo frammento di contenuto."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Segnaposto per il video introduttivo"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Miniatura video: Aggiunta di contenuti - la ricetta vincente"
 
 ## Frammenti di contenuto {#introduction}
 

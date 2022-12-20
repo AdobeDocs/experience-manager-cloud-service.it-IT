@@ -1,17 +1,17 @@
 ---
-title: Estrarre contenuti tramite l’API GraphQL
+title: Estrarre contenuti tramite l’API di GraphQL
 description: Scopri come utilizzare Frammenti di contenuto e l’API GraphQL come sistema di gestione dei contenuti headless.
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1301'
 ht-degree: 1%
 
 ---
 
-# Estrarre contenuti tramite l’API di GraphQL {#extract-content}
+# Estrarre contenuti tramite l’API GraphQL {#extract-content}
 
 Fino ad ora in AEM Trial for headless, avete [creazione di modelli di frammenti di contenuto personalizzati](content-structure.md) e creare il proprio contenuto headless [Frammenti di contenuto.](create-content.md) Ora puoi imparare a utilizzare Frammenti di contenuto e l’API GraphQL come sistema di gestione dei contenuti headless per distribuire i tuoi contenuti.
 
@@ -21,12 +21,19 @@ In primo luogo, verrà illustrato come eseguire due diversi tipi di query: **ele
 
 >[!TIP]
 >
->Per ulteriori dettagli sull’API GraphQL, consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) alla fine di questo modulo per la guida API di GraphQL.
+>Per ulteriori dettagli sull’API GraphQL, consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) alla fine di questo modulo per la guida API GraphQL.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
 >title="Estrarre contenuto utilizzando l’API di GraphQL"
 >abstract="In questo modulo imparerai come utilizzare i frammenti di contenuto e l’API GraphQL come sistema di gestione dei contenuti headless."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
+>title="Avvia GraphQL Explorer"
+>abstract="GraphQL fornisce un’API basata su query che consente alle applicazioni client esterne di eseguire query AEM solo per il contenuto necessario, utilizzando una singola chiamata API. Segui questa guida per scoprire come eseguire due diversi tipi di query, quindi recupera il contenuto dal frammento di contenuto creato in un modulo precedente.<br><br>Avvia la funzione in una nuova scheda facendo clic qui sotto."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Segnaposto per il video introduttivo"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Miniatura video: Estrazione rapida dei contenuti GraphQL"
 
 ## GraphQL Explorer {#graphql-explorer}
 
@@ -34,7 +41,7 @@ Viene avviato GraphQL Explorer. Qui puoi creare ed eseguire query sul tuo conten
 
 ![Editor query GraphQL](assets/extract-content/query-editor.png)
 
-Per passare direttamente a Esplora risorse all&#39;esterno della guida in-app, utilizza l&#39;icona di Adobe in alto a sinistra della pagina. Viene aperta la navigazione globale di AEM. Da qui puoi scegliere il **Strumenti** e quindi **Generale** -> **Editor query GraphQL**.
+Per passare direttamente a GraphQL Explorer al di fuori della guida in-app, utilizza l’icona di Adobe in alto a sinistra della pagina. Viene aperta la navigazione globale di AEM. Da qui puoi scegliere il **Strumenti** e quindi **Generale** -> **Editor query GraphQL**.
 
 >[!TIP]
 >
