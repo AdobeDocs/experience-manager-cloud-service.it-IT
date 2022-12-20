@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
+source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
 workflow-type: tm+mt
-source-wordcount: '2899'
+source-wordcount: '2902'
 ht-degree: 2%
 
 ---
@@ -111,10 +111,10 @@ Può trasformare immagini, video, documenti e altri formati di file in diverse r
 
 Gli sviluppatori possono utilizzare [!DNL Asset Compute Service] a [creare applicazioni personalizzate](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) per i casi d’uso supportati. [!DNL Experience Manager] può chiamare queste applicazioni personalizzate dall’interfaccia utente utilizzando profili personalizzati configurati dagli amministratori. [!DNL Asset Compute Service] supporta i seguenti casi d’uso per richiamare servizi esterni:
 
-* Utilizzo [!DNL Adobe Photoshop]s [API ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) e salvare il risultato come rendering.
+* Utilizzo [!DNL Adobe Photoshop]s [API ImageCutout](https://developer.adobe.com/photoshop/photoshop-api-docs/) e salvare il risultato come rendering.
 * Invoca sistemi di terze parti per aggiornare i dati, ad esempio un sistema PIM.
 * Utilizzo [!DNL Photoshop] API per generare diverse rappresentazioni basate su modelli Photoshop.
-* Utilizzo [API Adobe Lightroom](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) per ottimizzare le risorse acquisite e salvarle come rappresentazioni.
+* Utilizzo [API Adobe Lightroom](https://developer.adobe.com/photoshop/photoshop-api-docs/) per ottimizzare le risorse acquisite e salvarle come rappresentazioni.
 
 >[!NOTE]
 >
@@ -129,17 +129,17 @@ Per creare un profilo personalizzato, effettua le seguenti operazioni:
 1. Fornisci le seguenti informazioni.
 
    * Nome file di ogni rendering e estensione file supportata.
-   * [URL punto finale di un’app personalizzata Firefly](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). L&#39;app deve provenire dalla stessa organizzazione dell&#39;account Experience Manager.
+   * [URL punto finale di un’app personalizzata di App Builder](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). L&#39;app deve provenire dalla stessa organizzazione dell&#39;account Experience Manager.
    * Aggiungi parametri di servizio a [trasmettere informazioni o parametri aggiuntivi all&#39;applicazione personalizzata](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
    * Tipi MIME inclusi ed esclusi per limitare l’elaborazione ad alcuni formati di file specifici.
 
    Fai clic su **[!UICONTROL Salva]**.
 
-Le applicazioni personalizzate sono headless [Progetto Firefly](https://github.com/AdobeDocs/project-firefly) app. L&#39;applicazione personalizzata ottiene tutti i file forniti se sono configurati con un profilo di elaborazione. L&#39;applicazione deve filtrare i file.
+Le applicazioni personalizzate sono headless [Generatore di app di progetto](https://developer.adobe.com/app-builder/docs/overview/) app. L&#39;applicazione personalizzata ottiene tutti i file forniti se sono configurati con un profilo di elaborazione. L&#39;applicazione deve filtrare i file.
 
 >[!CAUTION]
 >
->Se l’app Firefly e [!DNL Experience Manager] l&#39;account non proviene dalla stessa organizzazione; l&#39;integrazione non funziona.
+>Se l’app Builder e [!DNL Experience Manager] l&#39;account non proviene dalla stessa organizzazione; l&#39;integrazione non funziona.
 
 ### Esempio di profilo personalizzato {#custom-profile-example}
 
