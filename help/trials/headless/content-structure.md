@@ -4,9 +4,9 @@ description: Scopri come creare la struttura che funge da base per tutti i conte
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,6 @@ Per aiutarti a capire come si esegue questa operazione, questo modulo di AEM pro
 >title="Avvia l&#39;editor modelli"
 >abstract="La creazione di un modello di frammento di contenuto inizia con la creazione di un elemento modello nel flusso di lavoro di amministrazione del modello, e quindi con l’aggiunta di elementi struttura tramite l’editor del modello di frammento di contenuto.<br><br>Fai clic qui sotto per avviare la funzione in una nuova scheda e segui questo documento di apprendimento per creare il tuo primo modello di frammento di contenuto."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Segnaposto per il video introduttivo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Miniatura video: I blocchi di base di AEM senza testa"
 
 ## Console del modello per frammenti di contenuto {#content-fragment-model-console}
 
