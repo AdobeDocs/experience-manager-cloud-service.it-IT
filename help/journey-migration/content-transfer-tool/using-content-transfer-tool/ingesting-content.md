@@ -2,10 +2,10 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 11%
+source-wordcount: '1375'
+ht-degree: 9%
 
 ---
 
@@ -142,6 +142,18 @@ Release Orchestrator mantiene automaticamente gli ambienti aggiornati applicando
 Se Release Orchestrator è ancora in esecuzione all&#39;avvio di un&#39;acquisizione, l&#39;interfaccia utente presenta questo messaggio di errore. È possibile scegliere di continuare comunque, accettando il rischio, controllando il campo e premendo nuovamente il pulsante.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+
+### Errore di acquisizione integrativa
+
+Una causa comune di un [Acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) l&#39;errore è un conflitto negli ID nodo. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come segue:
+
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Proprietà violata vincolo di univocità [jcr:uuid] aventi valore a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+
+Ogni nodo in AEM deve avere un uuid univoco. Questo errore indica che un nodo da acquisire ha lo stesso uuid di un nodo già esistente in un percorso diverso nell’istanza di destinazione.
+Questo può accadere se un nodo viene spostato sull’origine tra un’estrazione e una successiva [Estrazione dall&#39;alto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+Può anche accadere se un nodo sulla destinazione viene spostato tra un’acquisizione e una successiva acquisizione integrativa.
+
+Questo conflitto deve essere risolto manualmente. Un utente che abbia familiarità con il contenuto deve decidere quale dei due nodi deve essere eliminato, tenendo presente altri contenuti che vi fanno riferimento. La soluzione può richiedere che l’estrazione integrativa venga eseguita nuovamente senza il nodo che lo ha interessato.
 
 ## Passaggio successivo {#whats-next}
 
