@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 12%
+source-wordcount: '324'
+ht-degree: 11%
 
 ---
 
@@ -29,8 +29,12 @@ Prima di iniziare a utilizzare [!DNL AEM Forms] as a Cloud Service, controlla i 
 
 * Quando si invia un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file a 0 byte dall’altro lato. Questo è un problema noto in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
+* AEM Forms as a Cloud Service non genera miniature per i file di schema XDP e JSON. Il servizio visualizza le icone predefinite al posto delle miniature.
 
-## Limitazioni  {#limitations}
+   ![Problema noto della miniatura di Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
+
+
+## Limitazioni {#limitations}
 
 * Il supporto per Forms adattivo basato su XFA non è immediatamente disponibile. Se desideri utilizzare Forms adattivo basato su XFA, contatta il Supporto Adobe con i dettagli del caso d’uso e i requisiti specifici.
 
