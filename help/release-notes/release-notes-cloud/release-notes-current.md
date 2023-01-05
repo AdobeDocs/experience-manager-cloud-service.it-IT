@@ -3,10 +3,10 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 218dd65d1969f92317ae1d9877e2e37bb201ea6a
+source-git-commit: 33bf3dbf6118a9d93e0fe021736b74079100a214
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 13%
+ht-degree: 17%
 
 ---
 
@@ -29,8 +29,8 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 >
 > Non verrà eseguita alcuna manutenzione automatica di AEMaaCS nei seguenti intervalli di tempo, a partire dalla mezzanotte (00:00) CET:
 >
->* Lunedì 21 novembre - Lunedì 12 Dicembre
->* Lunedì 19 dicembre - Martedì 3 gennaio
+>* Da lunedì 21 novembre a lunedì 12 dicembre
+>* Da lunedì 19 dicembre a martedì 3 gennaio
 
 
 ## Data di pubblicazione {#release-date}
@@ -56,7 +56,7 @@ Guarda il video Panoramica sulla versione di ottobre 2022 per un riepilogo delle
 
 * Riduci ulteriormente il tempo di caricamento delle pagine per i visitatori ottimizzando le impostazioni delle dimensioni delle immagini nei modelli. Per ulteriori informazioni sul componente immagine, visita [Componente WCM core](https://github.com/adobe/aem-core-wcm-components)
 
-## [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
@@ -73,7 +73,7 @@ Guarda il video Panoramica sulla versione di ottobre 2022 per un riepilogo delle
 
 * Experience Manager Assets [supporta il token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) oltre alla chiave di accesso per l’autenticazione durante la connessione all’origine dati Archiviazione BLOB di Azure per l’acquisizione delle risorse tramite lo strumento Importazione in blocco.
 
-## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nuove funzioni disponibili in [!DNL Forms] {#new-features-available-in-channel}
 

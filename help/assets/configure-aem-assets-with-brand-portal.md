@@ -404,9 +404,9 @@ Gli IP in uscita sono i seguenti:
 
 | **Regione** | **IP avanzato** |
 |--- |--- |
-| ND | 130.248.160.68 del 20.94.203.130 |
+| ND | 130.248.160.68, 20.94.203.130 |
 | EMEA | 185.34.189.3, 51.132.146.75 |
-| APAC | 63,140,44,54 |
+| APAC | 63.140.44.54 |
 
 <!--
 ### Test configuration {#test-configuration}

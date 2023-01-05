@@ -74,7 +74,7 @@ Per attivare l’account come utente di New Relic, segui la procedura riportata 
 
 1. Fai clic sul collegamento fornito nell’e-mail da New Relic. Ti reindirizza alla pagina di accesso a New Relic nel browser.
 
-1. Nella pagina di accesso di New Relic, seleziona il collegamento **per il ripristino della password**.
+1. Nella pagina di accesso di New Relic, seleziona il collegamento per il **ripristino della password**.
 
    ![Accesso a New Relic](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
@@ -88,7 +88,7 @@ Se non ricevi un’e-mail di conferma da New Relic, consulta la [sezione Risoluz
 
 ## Accesso a New Relic One {#accessing-new-relic}
 
-Dopo aver [attivato l’account di New Relic,](#activate-account) puoi accedere a New Relic One direttamente o tramite Cloud Manager.
+Dopo aver [attivato l’account New Relic,](#activate-account) puoi accedere a New Relic One direttamente o tramite Cloud Manager.
 
 Per accedere a New Relic One tramite Cloud Manager:
 
@@ -184,8 +184,8 @@ New Relic One è la nuova piattaforma di osservabilità di New Relic abilitata a
 
 New Relic One mette a disposizione degli utenti la possibilità di effettuare ricerche in tutti gli account a cui hanno accesso e di visualizzare i dati di tutti i servizi e gli host in un’unica vista.
 
-Sebbene il supporto Adobe monitori l’applicazione AEM as a Cloud Service con New Relic One e altri strumenti interni parte del servizio, i team possono continuare a sfruttare New Relic per infrastrutture e servizi ospitati on-premise. Possono visualizzare sia i dati dell’account Adobe New Relic One sia quelli degli account di New Relic gestiti dal cliente.
+Sebbene il supporto Adobe monitori l’applicazione AEM as a Cloud Service con New Relic One e altri strumenti interni parte del servizio, i team possono continuare a sfruttare New Relic per infrastrutture e servizi ospitati on-premise. Possono visualizzare sia i dati dell’account New Relic One di Adobe sia quelli degli account di New Relic gestiti dal cliente.
 
 >[!NOTE]
 >
->Per visualizzare entrambi i set di dati in New Relic One, l’utente deve disporre delle adeguate autorizzazioni e utilizzare la stessa metodologia di accesso per entrambi gli account (Adobe New Relic One e gli account di New Relic gestiti dal cliente).
+>Per visualizzare entrambi i set di dati in New Relic One, l’utente deve disporre delle adeguate autorizzazioni e utilizzare la stessa metodologia di accesso per entrambi gli account (l’account New Relic One di Adobe e l’account New Relic gestito dal cliente).

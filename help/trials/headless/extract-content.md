@@ -1,5 +1,5 @@
 ---
-title: Estrarre contenuti tramite l’API di GraphQL
+title: Estrarre contenuti tramite l’API GraphQL
 description: Scopri come utilizzare Frammenti di contenuto e l’API GraphQL come sistema di gestione dei contenuti headless.
 hidefromtoc: true
 index: false
@@ -36,11 +36,11 @@ In primo luogo, verrà illustrato come eseguire due diversi tipi di query: **ele
 
 ## GraphQL Explorer {#graphql-explorer}
 
-Si inizia da GraphQL Explorer. Qui puoi creare ed eseguire query sul tuo contenuto headless.
+Viene avviato GraphQL Explorer. Qui puoi creare ed eseguire query sul tuo contenuto headless.
 
 ![Editor query GraphQL](assets/extract-content/query-editor.png)
 
-Per passare direttamente a Esplora risorse all&#39;esterno della guida in-app, utilizza l&#39;icona di Adobe in alto a sinistra della pagina. Viene aperta la navigazione globale di AEM. Da qui puoi scegliere il **Strumenti** e quindi **Generale** -> **Editor query GraphQL**.
+Per passare direttamente a GraphQL Explorer al di fuori della guida in-app, utilizza l’icona di Adobe in alto a sinistra della pagina. Viene aperta la navigazione globale di AEM. Da qui puoi scegliere il **Strumenti** e quindi **Generale** -> **Editor query GraphQL**.
 
 >[!TIP]
 >
@@ -184,6 +184,6 @@ Per tornare alla schermata iniziale di prova, fai clic su **Soluzioni** in alto 
 
 Per ulteriori informazioni su Frammenti di contenuto e AEM, consulta questa documentazione aggiuntiva.
 
-* [Guida all’API di GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/explore-graphql-api.html)
+* [Guida all’API GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/explore-graphql-api.html)
 * [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentazione su come navigare e utilizzare i AEM per i nuovi utenti
 * [Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)

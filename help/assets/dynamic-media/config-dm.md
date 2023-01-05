@@ -3,7 +3,7 @@ title: Configura Cloud Service Dynamic Media
 description: Scopri come configurare Dynamic Media in Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 50a7db14a378f99eeadc3f9cb91f228ea4139ff4
+source-git-commit: 8066d24193822a79d88f564a2db26b3acbb4e918
 workflow-type: tm+mt
 source-wordcount: '3795'
 ht-degree: 3%
@@ -105,7 +105,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >
    >Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in tempo reale su S7 Delivery.
 
-   ![dynamic icmediaconfiguration2update](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
+   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
 1. Seleziona **[!UICONTROL Salva]**. La nuova password e la nuova configurazione di Dynamic Media viene salvata. Se hai selezionato **[!UICONTROL Annulla]** non viene invece eseguito alcun aggiornamento della password.
 1. In **[!UICONTROL Configurazione di Dynamic Media]** finestra di dialogo, seleziona **[!UICONTROL OK]** per iniziare la configurazione.
@@ -222,7 +222,7 @@ Quando si esegue Dynamic Media su AEM, al momento viene inoltrato `/is/image` ri
 
    ![Abilita le impostazioni dell&#39;elenco di controllo accessi in modalità Dynamic Media - Scene7](/help/assets/dynamic-media/assets/acl.png)
 
-1. Nell’angolo in basso a destra della pagina, seleziona **[!UICONTROL Salva]**.
+1. Nell’angolo inferiore destro della pagina, seleziona **[!UICONTROL Salva]**.
 
 ### (Facoltativo) Configurazione e configurazione delle impostazioni di Dynamic Media {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 

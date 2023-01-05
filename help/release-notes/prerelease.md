@@ -48,7 +48,7 @@ Sfruttare efficacemente il canale pre-rilascio richiede quattro passaggi.
 
 ## Contrassegnare i calendari {#mark-calendars}
 
-Le versioni mensili sono pianificate con largo anticipo e le date di rilascio sono pubblicate il [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Le versioni mensili sono pianificate con largo anticipo e le date di rilascio sono pubblicate il [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it#aem-as-cloud-service)
 
 Prendi nota delle date di rilascio per pianificare il tempo necessario per rivedere e testare le prossime funzioni.
 

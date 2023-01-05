@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
+source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 15%
@@ -219,7 +219,7 @@ Come accennato prima di selezionare uno dei formati predefiniti disponibili, o a
 
 _**Utilizza un formato URL della pagina di un prodotto contenente lo SKU.**_
 
-I componenti core CIF utilizzano lo SKU come identificatore principale in tutti i componenti. Se il formato dell’URL della pagina di prodotto non contiene lo SKU, è necessaria una query GraphQL per risolverlo. Questo può influire sul time-to-first-byte. Inoltre, può essere desiderato, che i consumatori possono trovare prodotti da sku utilizzando motori di ricerca.
+I componenti core CIF utilizzano lo SKU come identificatore principale in tutti i componenti. Se il formato dell’URL della pagina del prodotto non contiene lo SKU, è necessaria una query GraphQL per risolverlo. Questo può influire sul time-to-first-byte. Inoltre, può essere desiderato, che i consumatori possono trovare prodotti da sku utilizzando motori di ricerca.
 
 _**Utilizza un formato URL della pagina del prodotto che contiene il contesto della categoria.**_
 

@@ -393,8 +393,8 @@ Dettagli tecnici delle API e del protocollo di caricamento, nonché collegamenti
 
 >[!MORELIKETHIS]
 >
->* App desktop [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* App desktop [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it)
 >* [Informazioni su [!DNL Adobe Asset Link]](https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html)
->* [[!DNL Adobe Asset Link] documentazione](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] documentazione](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
 >* [Riferimento tecnico per il caricamento delle risorse](developer-reference-material-apis.md#asset-upload)
 

@@ -119,7 +119,7 @@ Per impostazione predefinita, il livello AEM non memorizza in cache il contenuto
 >[!NOTE]
 >È consigliabile modificare il comportamento predefinito precedente in modo che sia coerente con il nuovo comportamento (ID programma superiori a 65000) impostando la variabile di ambiente Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS su true. Se il programma è già attivo, verifica che dopo le modifiche il contenuto si comporti come previsto.
 
-Al momento, le immagini in memoria BLOB contrassegnate come private non possono essere memorizzate nella cache del dispatcher utilizzando [Memorizzazione in cache sensibile alle autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). L&#39;immagine viene sempre richiesta dall&#39;origine AEM e distribuita se l&#39;utente è autorizzato.
+Al momento, le immagini in memoria BLOB contrassegnate come private non possono essere memorizzate nella cache del dispatcher utilizzando [Memorizzazione in cache sensibile alle autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it). L&#39;immagine viene sempre richiesta dall&#39;origine AEM e distribuita se l&#39;utente è autorizzato.
 
 >[!NOTE]
 >Gli altri metodi, compresi i [Progetto ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), non sovrascriverà correttamente i valori.

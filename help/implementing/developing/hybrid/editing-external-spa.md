@@ -368,8 +368,8 @@ Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto
 Il seguente materiale di riferimento può essere utile per comprendere SPA nel contesto di AEM.
 
 * [Headful e Headless in AEM](/help/implementing/developing/headful-headless.md)
-* [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [Progetto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
+* [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
+* [Progetto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it)
 * [Guida introduttiva a SPA in AEM con React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [Materiali di riferimento SPA (riferimenti API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [Blueprint SPA e PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
