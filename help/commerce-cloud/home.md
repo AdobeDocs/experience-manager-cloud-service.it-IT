@@ -10,7 +10,7 @@ ht-degree: 88%
 
 ---
 
-# Contenuto AEM e commercio {#commerce-guide}
+# AEM Content and Commerce {#commerce-guide}
 
 Scopri come utilizzare e amministrare Experience Manager Content and Commerce as a Cloud Service.
 

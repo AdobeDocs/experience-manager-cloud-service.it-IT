@@ -56,6 +56,6 @@ Oltre ai passaggi descritti in questo percorso, Adobe fornisce Cloud Acceleratio
 
 È possibile consultare [Documentazione di Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) o guardare un [video introduttivo](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning) per avviare il percorso di migrazione.
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Grazie per aver iniziato il tuo percorso di migrazione AEM Cloud Service! Dopo aver letto questo documento, devi imparare a usare la [Fase di preparazione](/help/journey-migration/readiness.md), che consente di determinare se la distribuzione è pronta per essere spostata in AEM as a Cloud Service.
