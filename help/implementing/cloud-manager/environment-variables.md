@@ -2,10 +2,10 @@
 title: Variabili di ambiente di Cloud Manager
 description: È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager e fornirle all’ambiente di runtime per l’utilizzo nella configurazione OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
-workflow-type: ht
-source-wordcount: '897'
-ht-degree: 100%
+source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 88%
 
 ---
 
@@ -107,3 +107,29 @@ Puoi accedere alle variabili di ambiente e dei segreti tramite XML come indicato
 Per un esempio su come utilizzare entrambi i tipi di variabili in un file `pom.xml`, consulta il documento [Configurazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories).
 
 Per ulteriori informazioni, consulta la [documentazione Maven ufficiale](https://maven.apache.org/settings.html#quick-overview).
+
+## Disponibilità variabile ambiente {#availability}
+
+Le variabili di ambiente possono essere utilizzate in diversi punti.
+
+### Creazione, anteprima e pubblicazione {#author-preview-publish}
+
+Negli ambienti di authoring, anteprima e pubblicazione è possibile utilizzare sia le normali variabili di ambiente che i segreti.
+
+### Dispatcher {#dispatcher}
+
+Solo le variabili di ambiente normali possono essere utilizzate sul dispatcher. I segreti non possono essere utilizzati.
+
+Tuttavia, le variabili di ambiente non possono essere utilizzate in `IfDefine` direttive.
+
+>[!TIP]
+>
+>È necessario convalidare l’utilizzo di variabili di ambiente con [dispatcher locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) prima della distribuzione.
+
+### Configurazioni OSGi {#osgi}
+
+Le normali variabili di ambiente e i segreti possono essere utilizzati nelle configurazioni OSGi.
+
+### Variabili delle pipeline {#pipeline}
+
+Oltre alle variabili di ambiente, sono presenti anche variabili di pipeline, che vengono esposte durante la fase di creazione. [Qui puoi trovare ulteriori informazioni sulle variabili della pipeline.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
