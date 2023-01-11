@@ -4,7 +4,7 @@ description: Aggiungi le risorse digitali a [!DNL Adobe Experience Manager] come
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a01a9e34fed9182c6c1e7325b2035c63acf875dd
+source-git-commit: 55e117bba7037d44eaadab8bd2de7164e23b47fa
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 1%
@@ -259,11 +259,11 @@ Per i nomi dei file delle risorse, il nome e il percorso JCR vengono bonificati 
 
 **Gestione del nome della cartella nell’importazione in serie**
 
-Per i nomi dei file delle cartelle, il nome e il percorso JCR vengono bonificati utilizzando l’API: `JcrUtil.createValidName`.
+Per i nomi dei file delle cartelle, il nome e il percorso JCR vengono bonificati utilizzando l’API: `DamUtil.getSanitizedFolderName`.
 
 * I caratteri maiuscoli vengono convertiti in lettere minuscole
 * I caratteri Unicode non vengono modificati
-* Sostituisci i caratteri speciali con il trattino (&#39;-&#39;), ad esempio: `new asset.png` è stato aggiornato a `new-asset.png`:
+* Sostituisci i caratteri speciali con il trattino (&#39;-&#39;), ad esempio: `new folder` è stato aggiornato a `new-folder`:
 
    ```
    "                           
@@ -342,7 +342,7 @@ Nell&#39;Experience Manager viene visualizzata la cronologia dei processi. Nella
 
 ## Caricare risorse utilizzando client desktop {#upload-assets-desktop-clients}
 
-Oltre all&#39;interfaccia utente del browser web, [!DNL Experience Manager] supporta altri client sul desktop. Forniscono anche un’esperienza di caricamento senza dover passare al browser web.
+Oltre all&#39;interfaccia utente del browser web, [!DNL Experience Manager] supporta altri client sul desktop. Forniscono anche un’esperienza di caricamento senza la necessità di andare al browser web.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) consente l’accesso alle risorse da [!DNL Experience Manager] nelle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign. È possibile caricare il documento attualmente aperto in [!DNL Experience Manager] direttamente dall’interfaccia utente di Adobe Asset Link all’interno di queste applicazioni desktop.
 * [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) semplifica l’utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall’applicazione nativa che le gestisce. È particolarmente utile caricare file in gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file flat.
