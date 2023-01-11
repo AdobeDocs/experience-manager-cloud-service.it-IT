@@ -2,9 +2,9 @@
 title: Variabili di ambiente di Cloud Manager
 description: È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager e fornirle all’ambiente di runtime per l’utilizzo nella configurazione OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
+source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1021'
 ht-degree: 88%
 
 ---
@@ -118,7 +118,7 @@ Negli ambienti di authoring, anteprima e pubblicazione è possibile utilizzare s
 
 ### Dispatcher {#dispatcher}
 
-Solo le variabili di ambiente normali possono essere utilizzate sul dispatcher. I segreti non possono essere utilizzati.
+È possibile utilizzare solo le normali variabili di ambiente con [il dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) I segreti non possono essere utilizzati.
 
 Tuttavia, le variabili di ambiente non possono essere utilizzate in `IfDefine` direttive.
 
@@ -128,7 +128,7 @@ Tuttavia, le variabili di ambiente non possono essere utilizzate in `IfDefine` d
 
 ### Configurazioni OSGi {#osgi}
 
-Le normali variabili di ambiente e i segreti possono essere utilizzati nelle configurazioni OSGi.
+È possibile utilizzare sia le normali variabili di ambiente che i segreti in [Configurazioni OSGi.](/help/implementing/deploying/configuring-osgi.md)
 
 ### Variabili delle pipeline {#pipeline}
 
