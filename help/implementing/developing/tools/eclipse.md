@@ -2,9 +2,9 @@
 title: Strumenti AEM Developer per Eclipse
 description: Strumenti AEM Developer per Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1179'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ Offre diverse funzioni che semplificano AEM sviluppo:
 * Bootstrap semplice dei progetti AEM tramite una Creazione guidata progetto specifica
 * Editing semplice delle proprietà JCR
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 Prima di utilizzare gli strumenti per sviluppatori AEM, è necessario:
 
@@ -196,7 +196,7 @@ Al termine, il pacchetto dovrebbe essere in esecuzione sull&#39;istanza e al mom
 
 Per ricreare un pacchetto dal progetto, fai clic con il pulsante destro del mouse sul `PROJECT.ui.apps` o `PROJECT.ui.content` e scegli **Esegui come** -> **Installazione Maven**.
 
-Ora disponi di una cartella di destinazione creata con il pacchetto all’interno (ad esempio, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Ora disponi di una cartella di destinazione creata con il pacchetto all’interno di (ad esempio `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Risoluzione dei problemi {#troubleshooting}
 
@@ -216,7 +216,7 @@ Eclipse scarica le dipendenze richieste. Questo può richiedere un momento.
 
 Il sito web ufficiale Apache Sling IDE tooling for Eclipse fornisce informazioni utili:
 
-* La [**Strumenti Apache Sling IDE per Eclipse** Guida utente](https://sling.apache.org/documentation/development/ide-tooling.html), questa documentazione ti guiderà attraverso i concetti generali, le funzionalità di integrazione e distribuzione dei server supportate dagli strumenti di sviluppo AEM.
+* La [**Strumenti Apache Sling IDE per Eclipse** Guida utente](https://sling.apache.org/documentation/development/ide-tooling.html), questa documentazione ti guida attraverso i concetti generali, le funzionalità di integrazione e distribuzione dei server supportate dagli strumenti di sviluppo AEM.
 * La [Sezione Risoluzione dei problemi](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * La [Elenco dei problemi noti](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
