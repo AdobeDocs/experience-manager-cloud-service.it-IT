@@ -1,26 +1,22 @@
 ---
-title: Tabelle in Forms adattivo
-seo-title: Tables in Adaptive Forms
-description: Il componente Tabella in [!DNL AEM Forms] consente di creare tabelle in Adattivo Forms adattabili ai layout per dispositivi mobili e di utilizzare componenti per tabelle XDP.
-seo-description: The Table component in [!DNL AEM Forms] lets you create tables in Adaptive Forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
-topic-tags: author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+title: Tabelle nei moduli adattivi
+seo-title: Tables in adaptive forms
+description: Il componente Tabella di AEM Forms consente di creare tabelle in moduli adattivi reattivi ai layout per dispositivi mobili e di utilizzare componenti per tabelle XDP.
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Adaptive Forms
+source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2418'
 ht-degree: 0%
 
 ---
 
-
-# Tabelle in Forms adattivo {#tables-in-adaptive-forms}
+# Tabelle in forma adattiva {#tables-in-adaptive-forms}
 
 L’utilizzo delle tabelle rappresenta un modo efficace, semplificato e organizzato di presentare dati complessi. Consente agli utenti di identificare facilmente le informazioni e fornire gli input in una disposizione ordinata di righe e colonne. La maggior parte dei moduli dei servizi finanziari e delle organizzazioni governative richiede tabelle di dati di grandi dimensioni per inserire numeri ed eseguire calcoli.
 
-[!DNL AEM Forms] fornisce un componente Tabella nel browser Componenti nella barra laterale che consente di creare tabelle in Forms adattivo. Alcune delle funzionalità chiave che offre sono:
+AEM Forms fornisce un componente Tabella nel browser Componenti nella barra laterale che consente di creare tabelle nei moduli adattivi. Alcune delle funzionalità chiave che offre sono:
 
 * Layout reattivo su dispositivi mobili
 * Righe e colonne configurabili
@@ -42,7 +38,7 @@ Per creare una tabella, trascinate il componente Tabella dal browser Componenti 
 
 Le celle di intestazione sono campi di testo. Per modificare l’etichetta di un’intestazione, fai clic con il pulsante destro del mouse sulla cella di intestazione e fai clic su **Modifica**. Nella finestra di dialogo Modifica , aggiorna l’etichetta nel **Valore** campo e fai clic su **OK**.
 
-Per impostazione predefinita, le celle corpo sono caselle di testo. È possibile sostituire una cella corpo con qualsiasi altro componente Forms adattivo disponibile nella barra laterale, ad esempio una casella numerica, un selettore data o un elenco a discesa.
+Per impostazione predefinita, le celle corpo sono caselle di testo. È possibile sostituire una cella corpo con qualsiasi altro componente di moduli adattivi disponibile nella barra laterale, ad esempio una casella numerica, un selettore data o un elenco a discesa.
 
 Ad esempio, la prima riga corpo della tabella seguente include come celle i componenti casella di testo, selezione data e elenco a discesa.
 
@@ -54,25 +50,30 @@ Per unire due o più celle corpo, selezionare le celle da unire, fare clic con i
 
 È possibile aggiungere ed eliminare una riga o una colonna e spostare una riga verso l’alto o il basso all’interno di una tabella.
 
-Per aggiungere o eliminare una riga o una colonna o spostare una riga, fare clic su una cella della riga o della colonna. Nella parte superiore della colonna e a sinistra della riga viene visualizzato un menu a discesa. Il menu in alto fornisce le opzioni per aggiungere o eliminare la colonna, mentre il menu a sinistra consente di aggiungere, eliminare o spostare la riga.
+#### Aggiungere, eliminare o spostare una riga
 
-* L’operazione Aggiungi aggiunge una riga sotto o una colonna a destra della riga o colonna selezionata.
-* L’operazione Elimina elimina la riga o la colonna selezionata.
-* L’operazione Sposta su e Sposta giù sposta la riga selezionata verso l’alto o verso il basso.
+Per aggiungere, eliminare o spostare la riga, fare clic su una cella della riga. aprire il browser dei contenuti ![Browser dei contenuti](/help/forms/assets/Smock_Layers_18_N.svg) e selezionare la riga corrispondente, evidenzia la riga selezionata con l’opzione della barra degli strumenti da cui è possibile aggiungere, eliminare o spostare la riga verso l’alto o verso il basso.
+* La **[!UICONTROL Sposta su]** e **[!UICONTROL Sposta in basso]** sposta la riga selezionata in alto e in basso.
 
-Il menu a discesa della riga fornisce inoltre l’operazione Modifica per modificare le proprietà, le impostazioni e le opzioni di stile della riga.
+* La **[!UICONTROL Aggiungi colonna]** aggiunge una riga sotto la riga selezionata.
 
-![add-delete-move-row-column](assets/add-delete-move-row-column.png)
+* La **[!UICONTROL Elimina colonna]** elimina la riga selezionata.
+
+![add-delete-move-row-column](assets/add-delete-move-row.png)
+
+Fai doppio clic sulla riga per configurare le proprietà di una riga, ad esempio Nome, Riferimento binding, Impostazioni ripetute, Classe CSS.
+![add-delete-move-row-column](assets/row-properties-image.png)
+
+
+#### Aggiungere o eliminare una colonna
+
+Per aggiungere o eliminare una colonna, fai clic sulla cella di testo nella sezione intestazione. Viene visualizzata una barra degli strumenti con le opzioni per aggiungere o eliminare una colonna:
+
+![add-delete-move-row-column](assets/add-delet-column.png)
 
 >[!NOTE]
 >
->* È possibile aggiungere un qualsiasi numero di righe in una tabella, ma il numero massimo di colonne è sei. Inoltre, non è possibile eliminare la riga di intestazione dalla tabella.
->
->* La conversione automatica di un modulo PDF in modulo adattivo consente di creare tabelle senza intestazioni. È possibile aggiungere ed eliminare colonne alle tabelle senza intestazioni. Le intestazioni nascoste vengono aggiunte a tali tabelle per facilitare l’aggiunta e l’eliminazione di colonne. Queste intestazioni sono visibili durante l’authoring ma rimangono nascoste nel modulo pubblicato.
-
-
-
-
+>È possibile aggiungere un qualsiasi numero di righe in una tabella, ma il numero massimo di colonne è sei. Inoltre, non è possibile eliminare la riga di intestazione dalla tabella.
 
 ### Aggiungi descrizione tabella {#add-table-description}
 
@@ -84,7 +85,7 @@ Il menu a discesa della riga fornisce inoltre l’operazione Modifica per modifi
 
 ### Ordinare le colonne in una tabella {#sortcolumnstable}
 
-Puoi ordinare i dati in base a qualsiasi colonna di una tabella nel Modulo adattivo. I valori della colonna possono essere ordinati in ordine crescente o decrescente.
+Puoi ordinare i dati in base a qualsiasi colonna di una tabella nel modulo adattivo. I valori della colonna possono essere ordinati in ordine crescente o decrescente.
 
 L’ordinamento può essere applicato alle colonne della tabella contenenti:
 
@@ -113,6 +114,14 @@ Per abilitare l’ordinamento:
 
    È inoltre possibile apportare modifiche alla tabella nella **Anteprima** e fai nuovamente clic sull&#39;intestazione della colonna per ordinare i valori della colonna.
 
+## Impostare la larghezza della colonna per una tabella {#set-column-width}
+
+Esegui i seguenti passaggi per impostare la larghezza della colonna per una tabella:
+
+1. In **[!UICONTROL Contenuto]** tocca **[!UICONTROL Tabella]** e tocca Configura (![Configura](assets/configure-icon.svg))icona.
+
+1. Inserisci l&#39;elenco di valori separati da virgole nel **[!UICONTROL Larghezza colonna]** per specificare la larghezza proporzionale di ciascuna colonna della tabella. Ad esempio, per una tabella che include 3 colonne, specificando 2,4,6 come valore nel **[!UICONTROL Larghezza colonna]** il campo restituisce come valore di larghezza le colonne 2/12 per la prima colonna, 4/12 per la seconda colonna e 6/12 per la terza colonna. 2/12 in quanto la larghezza della prima colonna si riferisce a un sesto della larghezza della tabella. Analogamente, 4/12 imposta la seconda larghezza della colonna come un terzo della larghezza della tabella e 6/12 imposta la terza larghezza della colonna come metà della larghezza della tabella.
+
 ## Configurare lo stile di tabella {#configure}
 
 È possibile definire lo stile di una tabella utilizzando la modalità Stile nella barra degli strumenti della pagina. Esegui i seguenti passaggi per passare alla modalità stile e modificare lo stile della tabella
@@ -126,7 +135,7 @@ Le proprietà di stile vengono visualizzate nella barra laterale.
 
 >[!NOTE]
 >
->È possibile modificare il tema colore per le righe di intestazione e corpo modificando i valori delle variabili LESS. Per ulteriori informazioni, consulta [Temi in [!DNL AEM Forms]](themes.md)
+>È possibile modificare il tema colore per le righe di intestazione e corpo modificando i valori di [Meno variabili](https://lesscss.org//). Per ulteriori informazioni, consulta [Temi in AEM Forms](/help/forms/themes.md).
 
 ## Aggiungere o eliminare una riga in modo dinamico {#add-or-delete-a-row-dynamically}
 
@@ -136,9 +145,9 @@ Le tabelle forniscono supporto predefinito per l’aggiunta o l’eliminazione d
 1. Nella scheda Ripeti impostazioni specificare i conteggi minimo e massimo per limitare il numero di righe nella tabella.
 1. Fai clic su **Fine**.
 
-In fase di esecuzione, vedrai **+** e *-* per aggiungere o eliminare una riga.
+In fase di runtime o di anteprima, visualizzerai **+** e ![Pulsante Elimina](/help/forms/assets/Smock_Delete.svg) per aggiungere o eliminare una riga.
 
-![add-delete-rows-dinamicamente](assets/add-delete-rows-dynamically.png)
+![add-delete-rows-dinamicamente](assets/add-delete-layout.png)
 
 >[!NOTE]
 >
@@ -146,7 +155,7 @@ In fase di esecuzione, vedrai **+** e *-* per aggiungere o eliminare una riga.
 
 ## Espressioni in una tabella {#expressions-in-a-table}
 
-Le tabelle in Forms adattivo consentono di scrivere espressioni in JavaScript per indurre comportamenti come mostrare o nascondere una tabella o una riga, sommare tutti i numeri e mostrare il totale in una cella, abilitare o disabilitare una cella, convalidare l’input dell’utente e così via. Queste espressioni utilizzano le API del modello di script di Forms adattivo.
+Le tabelle nei moduli adattivi consentono di scrivere espressioni in JavaScript per indurre comportamenti come mostrare o nascondere una tabella o una riga, sommare tutti i numeri e mostrare il totale in una cella, abilitare o disabilitare una cella, convalidare l’input dell’utente e così via. Queste espressioni utilizzano API per modelli di script di moduli adattivi.
 
 Mentre tabelle e righe supportano solo espressioni di visibilità per controllarne la visibilità in base al valore restituito da un&#39;espressione, le celle supportano le seguenti espressioni:
 
@@ -164,11 +173,11 @@ Mentre tabelle e righe supportano solo espressioni di visibilità per controllar
 
 L’espressione di visibilità per una tabella o una riga può essere definita nella scheda Proprietà pannello della finestra di dialogo corrispondente del componente Modifica . Le espressioni per una cella possono essere definite nella scheda Script della finestra di dialogo del componente Modifica.
 
-Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API di Forms adattive, consulta [Riferimento API della libreria JavaScript per Forms adattivo](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+Per l’elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Layout dei dispositivi mobili {#mobile-layouts}
 
-Le tabelle in Forms adattivo forniscono dispositivi mobili con esperienza senza pari a causa dei layout fluidi e reattivi. [!DNL AEM Forms] offre due tipi di layout per dispositivi mobili per le tabelle: intestazioni a sinistra e colonne comprimibili.
+Le tabelle nei moduli adattivi offrono ai dispositivi mobili un’esperienza senza pari a causa dei layout fluidi e reattivi. AEM Forms offre due tipi di layout per dispositivi mobili per le tabelle: intestazioni a sinistra e colonne comprimibili.
 
 Puoi configurare un layout mobile per una tabella dalla scheda Stile della finestra di dialogo Modifica componente per una tabella.
 
@@ -204,7 +213,7 @@ Colonna espansa di una tabella su un dispositivo mobile
 
 ## Unione di dati in una tabella {#merge-data-in-a-table}
 
-Le tabelle in Forms adattivo consentono di compilare la tabella in fase di runtime utilizzando i dati di un file XML. Il file XML di dati può risiedere nel file system locale del computer in cui [!DNL AEM Forms] server in esecuzione o nell&#39;archivio CRX.
+Le tabelle nei moduli adattivi consentono di compilare la tabella in fase di esecuzione utilizzando i dati di un file XML. Il file XML di dati può trovarsi nel file system locale del computer in cui è in esecuzione il server AEM Forms o nell&#39;archivio CRX.
 
 Esempio della seguente tabella di riepilogo delle transazioni bancarie che si desidera compilare con i dati di un file XML.
 
@@ -278,9 +287,9 @@ File XML contenente i dati nel formato seguente:
 
 Nell’XML di esempio, i dati di una riga sono definiti dalla variabile `<Row1>` tag, che è il nome dell’elemento per la riga nella tabella. All&#39;interno di `<Row1>` i dati di ogni cella vengono definiti all’interno del tag per il nome dell’elemento, ad esempio `<tableItem1>`, `<tableItem2>`, `<tableItem3>`e `<type>`.
 
-Per unire questi dati alla tabella in fase di runtime, è necessario indirizzare il modulo adattivo contenente la tabella alla posizione XML assoluta con wcmmode disattivato. Ad esempio, se il modulo adattivo si trova in *https://`servername`/myForms/bankTransaction.html* e il file XML di dati viene salvato in *C:/myTransactions/bankSummary.xml*, puoi visualizzare la tabella con i dati al seguente URL:
+Per unire questi dati alla tabella in fase di runtime, è necessario indirizzare il modulo adattivo contenente la tabella al percorso XML assoluto con wcmmode disattivato. Ad esempio, se il modulo adattivo si trova in *https://localhost:4502/myForms/bankTransaction.html* e il file XML di dati viene salvato in *C:/myTransactions/bankSummary.xml*, puoi visualizzare la tabella con i dati al seguente URL:
 
-*https://`servername`/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
+*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
 ![data-merge-table](assets/data-merged-table.png)
 
@@ -288,13 +297,13 @@ Per unire questi dati alla tabella in fase di runtime, è necessario indirizzare
 
 Se hai creato un modulo adattivo basato su un modello di modulo XFA, gli elementi XFA sono disponibili nella scheda Modello dati di AEM Content Finder. Puoi trascinare questi elementi XFA, incluse le tabelle, nel modulo adattivo.
 
-L’elemento tabella XFA è mappato sul componente Tabella e funziona come standard in Forms adattivo. Tutte le proprietà e le funzionalità della tabella XDP vengono mantenute quando vengono spostate in Modulo adattivo e puoi eseguire qualsiasi operazione su di essa, proprio come per la tabella Modulo adattivo nativo. Ad esempio, se una riga in una tabella XDP è contrassegnata come ripetibile, viene ripetuta anche quando viene rilasciata in Forms adattivo.
+L’elemento di tabella XFA è mappato sul componente Tabella e funziona preconfigurato nei moduli adattivi. Tutte le proprietà e le funzionalità della tabella XDP vengono mantenute quando vengono spostate in forma adattiva e puoi eseguire qualsiasi operazione su di essa, proprio come per la tabella di moduli adattivi nativi. Ad esempio, se una riga in una tabella XDP è contrassegnata come ripetibile, viene ripetuta anche quando viene rilasciata in moduli adattivi.
 
 È inoltre possibile trascinare il sottomodulo XDP per aggiungere una nuova riga nella tabella. Tuttavia, il rilascio di un sottomodulo nidificato non funziona.
 
 >[!NOTE]
 >
->Una tabella XDP senza riga di intestazione non verrà mappata al componente Tabella modulo adattiva. Verrà invece mappato sul componente Pannello modulo adattivo con layout fluido. Inoltre, quando si aggiunge una tabella nidificata da un XDP a un Modulo adattivo, la tabella esterna viene convertita in un pannello mantenendo la tabella interna.
+>Una tabella XDP senza riga di intestazione non verrà mappata al componente Tabella modulo adattivo. Al contrario, verrà mappato sul componente per pannello adattivo con layout fluido. Inoltre, quando si aggiunge una tabella nidificata da un XDP a un modulo adattivo, la tabella esterna viene convertita in un pannello mantenendo la tabella interna.
 
 Inoltre, puoi trascinare un gruppo di elementi di tipo complesso XSD per creare una riga di tabella. Viene creata una nuova riga immediatamente sotto la riga in cui sono stati rilasciati gli elementi. Le celle create utilizzando gli elementi di tipo complesso XSD mantengono un riferimento di binding a XSD. È inoltre possibile sostituire una cella corpo con un elemento di tipo complesso XSD rilasciando l&#39;elemento sulla cella.
 
@@ -310,4 +319,3 @@ Inoltre, puoi trascinare un gruppo di elementi di tipo complesso XSD per creare 
 * A ogni cella corpo di una tabella predefinita è associato un nome di elemento predefinito. Se si aggiunge un’altra tabella nel modulo adattivo, le celle del corpo predefinite nella nuova tabella avranno lo stesso nome di elemento della prima tabella. In questo caso, i dati generati al momento dell’invio del modulo includeranno i dati nelle celle corpo predefinite di una sola tabella. Assicurati pertanto di rinominare i nomi degli elementi per le celle corpo predefinite in modo da mantenerle univoche tra le tabelle ed evitare la perdita di dati.
 
    Si noti che questo è applicabile solo alle celle corpo predefinite. Se si aggiungono più righe o colonne a una tabella, verranno generati automaticamente nomi di elementi univoci per le celle corpo non predefinite.
-
