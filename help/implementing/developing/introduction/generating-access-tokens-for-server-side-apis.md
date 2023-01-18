@@ -2,14 +2,14 @@
 title: Generazione dei token di accesso per le API lato server
 description: Scopri come facilitare la comunicazione tra un server di terze parti e AEM as a Cloud Service generando un token JWT protetto
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
+source-git-commit: dd6753c6605d5c48c54d173803a541db54991481
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
 
-# Introduzione {#introduction}
+# Generazione dei token di accesso per le API lato server {#generating-access-tokens-for-server-side-apis}
 
 Alcune architetture si basano sull&#39;effettuazione di chiamate a AEM as a Cloud Service da un&#39;applicazione ospitata su un server al di fuori dell&#39;infrastruttura AEM. Ad esempio, un’app mobile che chiama un server e quindi invia richieste API a AEM as a Cloud Service.
 
