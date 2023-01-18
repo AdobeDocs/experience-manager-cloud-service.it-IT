@@ -4,67 +4,50 @@ description: Scopri come creare la struttura che funge da base per tutti i conte
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 900f9fc951a2b95b77abc5835ef9651128824826
+source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 1%
+source-wordcount: '492'
+ht-degree: 0%
 
 ---
 
+
 # Creare la struttura del contenuto per l’app {#content-structure}
-
-I Frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Il loro utilizzo consente di preparare contenuti pronti per l’uso in più posizioni e su più canali, ideali per la distribuzione headless. I modelli di frammento di contenuto vengono utilizzati per definire la struttura del contenuto e sono la prima cosa da creare per gestire il contenuto headless.
-
-Per aiutarti a capire come si esegue questa operazione, questo modulo di AEM prove ti guida attraverso il processo con un tour rapido e interattivo che prima crea il modello e poi ne aggiunge la struttura. Il presente documento funge da complemento del tour interno del prodotto, che comprende gli stessi passaggi e, se del caso, il collegamento a risorse aggiuntive.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Creare la struttura del contenuto per l’app"
->abstract="Seguendo la nostra serie di guide interattive imparerai a creare la struttura (nota anche come modello per frammenti di contenuto) che funge da base per tutti i contenuti headless."
+>abstract="Seguendo questa serie di guide interattive imparate a creare una struttura, nota come modello per frammenti di contenuto, che funge da base per i contenuti headless."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
->title="Avvia l&#39;editor modelli"
->abstract="La creazione di un modello di frammento di contenuto inizia con la creazione di un elemento modello nel flusso di lavoro di amministrazione del modello, e quindi con l’aggiunta di elementi struttura tramite l’editor del modello di frammento di contenuto.<br><br>Fai clic qui sotto per avviare la funzione in una nuova scheda e segui questo documento di apprendimento per creare il tuo primo modello di frammento di contenuto."
+>title="Avvia la console del modello"
+>abstract="Scopriamo come creare uno schema riutilizzabile, denominato modello per frammenti di contenuto, per il contenuto in Adobe Experience Manager as a Cloud Service. Guarda il video per capire perché questo è un passo importante. <br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante e quindi segui questa guida."
 >additional-url="https://video.tv.adobe.com/v/3413261" text="Video introduttivo sulla struttura dei contenuti"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
->title="Avvia l&#39;editor modelli"
->abstract="Congratulazioni. Creando un modello per frammenti di contenuto, hai fatto il primo passo per distribuire contenuti omni-channel in modo scalato e standard."
-
-## Console del modello per frammenti di contenuto {#content-fragment-model-console}
-
-Inizia dalla console Modelli di frammento di contenuto . La console Modelli per frammenti di contenuto è paragonabile alla libreria di modelli. Utilizza la console per creare nuovi modelli e gestire quelli esistenti. La console inizia vuota, quindi creiamo un nuovo modello!
-
-![Console del modello Frammento di contenuto](assets/content-structure/content-fragment-model-console.png)
-
-Per passare direttamente alla console del modello Frammento di contenuto al di fuori della guida in-app, utilizza l’icona di Adobe in alto a sinistra nella pagina. Viene aperta la navigazione globale di AEM. Da qui puoi scegliere il **Strumenti** e quindi **Generale** -> **Modelli per frammenti di contenuto**.
-
->[!TIP]
->
->Per ulteriori informazioni sulla navigazione in AEM, consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) di questo documento per ulteriori informazioni AEM gestione di base.
+>title="Congratulazioni. Hai imparato a creare un modello per frammenti di contenuto per rappresentare la struttura dei dati headless e hai fatto il primo passo per distribuire contenuti omni-channel in modo scalato e standard."
+>abstract=""
 
 ## Creare un modello {#create-model}
 
-Una volta nella console del modello Frammento di contenuto , puoi creare un nuovo modello per rappresentare il tuo contenuto headless.
+Fai clic su **Avvia la console del modello** questo pulsante consente di aprire la console Modelli di frammento di contenuto in una nuova scheda.
+
+![Console del modello Frammento di contenuto](assets/content-structure/content-fragment-model-console.png)
+
+Considera la console del modello Frammento di contenuto come una libreria di modelli, in cui puoi creare nuovi modelli e gestire quelli esistenti. La console inizia vuota, quindi creiamo un nuovo modello!
 
 1. Nella console del modello Frammento di contenuto , fai clic sul pulsante **Crea** in alto a destra dello schermo per iniziare a creare un modello di frammento di contenuto.
 
-1. Viene avviata la procedura guidata Crea modello , che guida l’utente attraverso la creazione di un modello di frammento di contenuto.
+1. Viene avviata la procedura guidata Crea modello, che consente di guidarti.
 
    ![Procedura guidata del modello Frammento di contenuto](assets/content-structure/model-wizard.png)
 
    Fornire le informazioni obbligatorie.
 
-   * **Titolo modello** - Questa è una breve descrizione del modello e in genere ne indica lo scopo.
-   * **Abilita modello** - Questa opzione è selezionata per impostazione predefinita e deve essere selezionata per poter creare frammenti di contenuto in un secondo momento in base a questo modello.
-
-   Puoi anche scegliere di aggiungere un valore più lungo **Descrizione** al modello e **Tag** per suddividerlo in categorie e differenziarlo per gli utenti in un secondo momento nella console del modello Frammento di contenuto .
-
-   >[!TIP]
-   >
-   >Per informazioni su come i tag possono organizzare i contenuti, consulta [Sezione Risorse aggiuntive](#additional-resources) di questo documento per ulteriori informazioni sull’assegnazione tag in AEM.
+   * **Titolo modello** - Questa è una breve descrizione del modello e in genere indica lo scopo del modello.
+   * **Abilita modello** - Questa opzione è selezionata per impostazione predefinita e deve essere selezionata per poter creare frammenti di contenuto in base a questo modello.
 
 1. Una volta compilati i campi obbligatori, fai clic su **Crea** in alto a sinistra per creare il modello.
 
@@ -72,59 +55,22 @@ Una volta nella console del modello Frammento di contenuto , puoi creare un nuov
 
    ![Finestra di dialogo di successo per la creazione di un nuovo modello di frammento di contenuto](assets/content-structure/success.png)
 
-1. Prima di poter utilizzare il modello, è necessario definire anche la struttura dei relativi dati. Fai clic su **Apri** nella finestra di dialogo per aprirla e continuare a definire il modello.
-
 ## Aggiungi campi al modello {#configure-model}
 
-Il modello Frammento di contenuto è essenzialmente uno schema per i frammenti di contenuto. Ad esempio, definisce i campi/tipi di dati contenuti nel modello.
+Prima di poter utilizzare il modello, è necessario definire la struttura dei relativi dati.
 
-![Editor modello frammento di contenuto](assets/content-structure/model-editor.png)
+1. Fai clic su **Apri** in **Completato** finestra di dialogo del passaggio precedente per aprire il nuovo modello nell’editor modelli di frammenti di contenuto in cui puoi definirne i campi.
 
-Utilizzando l’editor modelli Frammento di contenuto , puoi definire i campi per il modello Frammento di contenuto mediante un’interfaccia a trascinamento della selezione.
-
-1. Trascina un campo dalla **Tipi di dati** a destra dello schermo e rilascialo sul modello Frammento di contenuto. È possibile scegliere tra più tipi di dati, ad esempio un testo a riga singola, un testo a più righe, un numero e riferimenti ad altri frammenti.
+1. Trascina un campo dalla **Tipi di dati** a destra dell’editor e rilascialo sul modello per frammenti di contenuto.
 
    ![Aggiungere un tipo di dati](assets/content-structure/drop-fields.png)
-
-   >[!TIP]
-   >
-   >Per ulteriori informazioni sui tipi di dati disponibili, consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) di questo documento per la documentazione dettagliata sui modelli di frammenti di contenuto .
 
 1. Una volta inserito un tipo di dati, il **Tipi di dati** viene automaticamente modificata nella colonna **Proprietà** , che ti consente di definire i dettagli del tipo di dati appena inserito.
 
    ![Scheda Proprietà del campo dati](assets/content-structure/data-type-properties.png)
 
-   Le proprietà del modello possono includere il nome del campo, il tipo di campo, la lunghezza del campo, se obbligatorio, ecc.
-
-1. Utilizza la **Proprietà** scheda del tipo di dati selezionato per definire proprietà quali valore predefinito, lunghezza massima, se si tratta di un campo obbligatorio, ecc.
-
-   >[!TIP]
-   >
-   >Per ulteriori informazioni sulle proprietà disponibili, consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) di questo documento per la documentazione dettagliata sui modelli di frammenti di contenuto .
-
 1. Dopo aver aggiunto tutti i campi necessari per il modello Frammento di contenuto, fai clic su **Salva** in alto a destra nella finestra.
 
-1. Questo consente di salvare il modello e di tornare alla console del modello di frammento di contenuto, dove è possibile aggiungere altri modelli necessari.
+Il modello viene salvato e torna alla console del modello a frammenti di contenuto, dove puoi aggiungere altri modelli in base alle necessità.
 
 ![Modulo completo](assets/content-structure/content-fragment-model-console-populated.png)
-
-## Hai imparato a creare un modello per frammenti di contenuto {#conclusion}
-
-In questo modulo hai imparato a creare un modello di frammento di contenuto per rappresentare la struttura dei dati headless. Innanzitutto, hai creato il modello e poi lo hai popolato con i tipi di dati e le relative proprietà, definendo così uno schema per il contenuto headless.
-
-Ora che disponi di un modello per frammenti di contenuto personalizzato, puoi utilizzare il modello per creare frammenti di contenuto. Modulo [Crea nuovo contenuto](create-content.md) dettagli per utilizzare il nuovo modello Frammento di contenuto per creare contenuti headless.
-
-Per tornare alla schermata iniziale di prova, fai clic su **Soluzioni** in alto a destra nella barra di navigazione e selezionando **Experience Manager**.
-
-![Passa alla home](assets/content-structure/home.png)
-
-## Risorse aggiuntive {#additional-resources}
-
-Per ulteriori informazioni su Frammenti di contenuto e AEM, consulta questa documentazione aggiuntiva.
-
-* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentazione su come navigare e utilizzare i AEM per i nuovi utenti
-* [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md) - Documentazione su come utilizzare i tag in AEM per organizzare i contenuti
-* [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) - Panoramica dei frammenti di contenuto e collegamenti alla documentazione completa sui frammenti di contenuto
-* [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) - Documentazione completa sui modelli di frammenti di contenuto
-* [Modelli per frammenti di contenuto - Tipi di dati](/help/assets/content-fragments/content-fragments-models.md#data-types) - Dettagli sui vari tipi di dati disponibili per i modelli di frammenti di contenuto
-* [Modelli per frammenti di contenuto - Proprietà](/help/assets/content-fragments/content-fragments-models.md#data-types) - Dettagli sulle varie proprietà disponibili per i tipi di dati dei modelli di frammento di contenuto

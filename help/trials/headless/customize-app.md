@@ -4,105 +4,87 @@ description: Utilizza un’app React di esempio per scoprire come personalizzare
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
+source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
 
+
 # Personalizzare il contenuto di un’app a reazione di esempio {#customize-app}
-
-AEM Trials for headless viene precaricato con una semplice app React per mostrare contenuti headless. In questo modulo imparerai come visualizzare in anteprima l’app e modificarne il contenuto sostituendo un’immagine e creando un momento acquistabile per essa.
-
-L’app stessa si basa sulla struttura dei frammenti di contenuto. Utilizzando l’editor Frammento di contenuto in AEM, puoi modificare il contenuto delle app. Per aiutarti a capire come si fa, questo modulo di AEM prove ti accompagna attraverso il processo con un tour rapido e interattivo. Il presente documento funge da complemento del tour interattivo, che copre gli stessi passaggi e collega, se del caso, a risorse aggiuntive.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
 >title="Personalizzare il contenuto di un’app React di esempio"
->abstract="Abbiamo impostato una moderna app React che puoi utilizzare per imparare a personalizzare i contenuti utilizzando le funzioni headless impostate."
+>abstract="La tua versione di prova AEM senza testa viene integrata con un&#39;app React di esempio, personalizzabile."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Avvia l’editor dei frammenti di contenuto"
->abstract="AEM Trials for headless viene precaricato con una semplice app React per mostrare contenuti headless. L’app è basata sulla struttura dei frammenti di contenuto. Utilizzando l’editor Frammento di contenuto in AEM, puoi modificare il contenuto dell’app.<br><br>Avvia la funzione in una nuova scheda facendo clic qui sotto, quindi segui questa guida."
->additional-url="https://video.tv.adobe.com/v/328618" text="Segnaposto per il video introduttivo"
+>abstract="La tua versione di prova AEM headless viene integrata con un’app React di esempio, per consentirti di gestire i contenuti in modo indipendente senza tempi di sviluppo.<br><br>Avvia questo modulo in una nuova scheda facendo clic qui sotto, quindi segui questa guida."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Video introduttivo per personalizzare l’app"
 
-## Editor frammento di contenuto {#fragment-editor}
-
-Inizia dall’editor Frammento di contenuto per l’app di esempio.
-
-![Editor frammento di contenuto](assets/customize-app/content-fragment-editor.png)
-
-Per passare direttamente all’editor dei frammenti di contenuto al di fuori della guida in-app, utilizza l’icona di Adobe in alto a sinistra della pagina. Viene aperta la navigazione globale di AEM. Da qui puoi scegliere il **Navigazione** e quindi **Frammenti di contenuto**.
-
-![Passa all’app nella console Frammenti di contenuto](assets/customize-app/navigate-to-app.png)
-
-Viene visualizzata la console Frammento di contenuto . Da lì, utilizza la struttura del contenuto nel pannello a sinistra per spostarti nella posizione del contenuto dell’app. In questo caso, **Frammenti di contenuto** -> **App WKND di esempio** -> **Inglese** -> **Frammenti di contenuto** -> **pagine**.
-
-Tocca o fai clic sul pulsante **Pagina principale WKND** frammento di pagina visualizzato nella console a destra della struttura del contenuto per avviare l’editor per il contenuto dell’app.
-
->[!TIP]
->
->Per ulteriori informazioni sulla navigazione in AEM, consulta la sezione [Sezione Risorse aggiuntive](#additional-resources) di questo documento per ulteriori informazioni AEM gestione di base.
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
+>title="In questo modulo hai imparato a personalizzare un’app React di esempio.<br><br>Tempo di commercializzazione: Accelerato!<br>Cicli di sviluppo: Ridotto!<br><br>Ora capisci quanto sia semplice gestire i contenuti headless per siti web e app basati su funzionalità AEM headless."
+>abstract=""
 
 ## Anteprima dell’app {#preview}
 
-Prima di iniziare a modificare l’app, acquisisci familiarità con l’anteprima del relativo stato corrente. Tocca o fai clic sul pulsante **Anteprima** in alto a destra nella schermata dell’editor.
+Fai clic su **Avvia l’editor dei frammenti di contenuto** questo pulsante consente di aprire l’editor Frammento di contenuto in una nuova scheda.
 
-L’app di dimostrazione si apre in una nuova scheda.
+![Editor frammento di contenuto](assets/customize-app/content-fragment-editor.png)
 
-![Anteprima dell’app demo](assets/customize-app/preview-demo-app.png)
+L’app di esempio fornita con la tua versione di prova AEM headless è basata su Frammenti di contenuto forniti tramite GraphQL. Utilizza l’editor Frammento di contenuto per acquisire familiarità con il contenuto visualizzando l’anteprima del campione.
 
-L&#39;app stessa è una semplice applicazione di e-commerce per il brand fittizio WKND outdoor lifestyle implementato in React. Fai clic su per navigare nel contenuto di esempio.
+1. Tocca o fai clic sul pulsante **Anteprima** in alto a destra nella schermata dell’editor.
 
-Torna alla scheda dell’editor Frammento di contenuto per continuare.
+1. L’app di dimostrazione si apre in una nuova scheda. L&#39;app è per il brand fittizio WKND outdoor lifestyle. Fai clic su per navigare nel contenuto di esempio.
 
-## Modificare il testo nell’app {#edit-app}
+   ![Anteprima dell’app demo](assets/customize-app/preview-demo-app.png)
 
-Come accennato in precedenza, l’app stessa è composta da Frammenti di contenuto. Questi frammenti sono collegati tra loro in una struttura per creare l’app.
+1. Torna alla scheda del browser dell’editor Frammento di contenuto per continuare.
 
-L’editor Frammento di contenuto visualizza il layout di base dell’app sotto forma di pagina. Questa pagina è un frammento di contenuto, che a sua volta è costituito da una raccolta di altri frammenti. La **Pannelli** rappresentano pagine diverse dell’app, ciascuna delle quali è un proprio frammento di contenuto. Modificando questi frammenti, puoi modificare il contenuto dell’app.
+## Modificare un’intestazione nell’app {#edit-app}
+
+L’editor Frammento di contenuto visualizza il layout di base dell’app come frammento di contenuto di una pagina. La **Pannelli** rappresentano pagine diverse dell’app, ciascuna delle quali è un proprio frammento di contenuto. Modificando questi frammenti, puoi modificare il contenuto dell’app.
 
 1. Tocca o fai clic su **Mtn Biker a Canyon** in **Pannelli** sezione .
 
    ![Toccare Mtn Biker nel frammento di Canyon](assets/customize-app/mtn-biker-in-canyon.png)
 
-1. L&#39;editor apre il pannello di intestazione per il mountain bike. Ogni pannello è costituito da livelli che rappresentano contenuti diversi all’interno di una pagina dell’app.
+1. L’editor apre il pannello di intestazione dell’app per il mountain bike. Ogni pannello è costituito da livelli, che rappresentano diverse immagini e testo che compongono l’esperienza.
 
    ![Pannelli](assets/customize-app/panels.png)
 
-1. Selezionare il livello di testo **Mtn Biker nel livello di testo di Canyon**. Questo apre i dettagli del livello nell’editor. Il livello è costituito da più frammenti di contenuto.
+1. Selezionare il livello di testo **Mtn Biker nel livello di testo di Canyon**. Questo apre i dettagli del livello nell’editor. Il livello è costituito da più frammenti di contenuto che controllano il testo visualizzato in questo pannello dell’app.
 
    ![Selezionare Mtn Biker nel Titolo Canyon](assets/customize-app/mtn-biker-in-canyon-text-layer.png)
 
-1. Seleziona la **Mtn Biker nel titolo di Canyon** elemento di testo. Viene aperto l’editor Frammento di contenuto, con il contenuto del frammento e la possibilità di modificarlo.
+1. Seleziona la **Mtn Biker nel titolo di Canyon** elemento di testo. Viene aperto l’editor Frammento di contenuto .
 
    ![Selezionare l&#39;elemento di testo Mtn Biker nel Titolo Canyon](assets/customize-app/mtn-biker-in-canyon-title.png)
 
 1. Modificare il testo da `Your next great adventure is calling` a `Choose your own adventure`. La modifica viene salvata automaticamente dall’editor.
 
-1. Fai clic su anteprima per visualizzare le modifiche. L’app di dimostrazione si apre in una nuova scheda.
+1. Tocca o fai clic su **Anteprima** in alto a destra nella finestra per visualizzare le modifiche. L’anteprima dell’app dimostrativa si apre in una nuova scheda.
 
    ![Anteprima dell’app demo](assets/customize-app/preview-demo-app-text.png)
 
-Torna alla scheda dell’editor Frammento di contenuto per continuare il modulo.
+È così semplice aggiornare contenuti all&#39;interno di un&#39;app React quando viene integrata in AEM CMS headless.
 
-## Modificare l’immagine principale dell’app {#change-image}
+## Scambiare un’immagine nell’app {#change-image}
 
-Ora che hai modificato del testo nell&#39;app, prova a cambiare l&#39;immagine principale dell&#39;app. Innanzitutto, devi individuare il contenuto.
+Ora che hai modificato un titolo nell’app, prova a cambiare un’immagine.
 
-Le breadcrumb in alto a sinistra nell’editor mostrano dove ti trovi nella gerarchia dei contenuti.
+1. Torna alla scheda del browser dell’editor Frammento di contenuto .
 
-1. Tocca o fai clic su **Mtn Biker a Canyon** nelle breadcrumb per tornare a tale pagina.
+1. È necessario tornare alla posizione corretta nell’editor frammento di contenuto. Le breadcrumb in alto a sinistra nell’editor mostrano dove ti trovi nella gerarchia dei contenuti. Tocca o fai clic su **Mtn Biker a Canyon** nelle breadcrumb per tornare a tale pagina.
 
    ![Breadcrumb](assets/customize-app/breadcrumbs.png)
 
-1. Torna al pannello con i vari livelli dell’app. I livelli non rappresentano solo il contenuto del testo. Rappresentano tutti i contenuti dell’app. Pertanto, puoi scambiare le immagini anche utilizzando l’editor Frammento di contenuto .
-
-   ![Pannelli](assets/customize-app/panels.png)
-
-1. Seleziona la **Mtn Biking - Bike** livello immagine. Viene aperto l’editor Frammento di contenuto, con il contenuto del frammento e la possibilità di modificarlo.
+1. Seleziona la **Mtn Biking - Bike** livello immagine. Viene aperto l’editor Frammento di contenuto
 
    ![Modifica frammento immagine](assets/customize-app/mtn-biking-biker.png)
 
@@ -110,27 +92,31 @@ Le breadcrumb in alto a sinistra nell’editor mostrano dove ti trovi nella gera
 
    ![Immagine rimossa dal frammento](assets/customize-app/mtn-biking-biker-no-image.png)
 
-1. Tocca o fai clic su **Aggiungi risorsa** e individuare l&#39;immagine del biker giallo in **sample-wknd-app** > **en** > **file di immagini**. Utilizzare la vista ad albero sul lato sinistro del **Seleziona risorse** per navigare nella gerarchia dei contenuti.
+1. Tocca o fai clic su **Aggiungi risorsa**.
 
-   ![Finestra di dialogo Seleziona risorse](assets/customize-app/select-assets.png)
+1. La **Seleziona risorsa** apre la finestra di dialogo e il percorso **sample-wknd-app** > **en** > **file di immagini** viene selezionato automaticamente.
 
-1. Filtro per il testo `yellow`. Utilizza la **Cercare tutte le risorse** campo nella parte superiore del **Seleziona risorse** per cercare l&#39;immagine. Inserisci il testo di ricerca e premi Invio o torna alla ricerca.
-
-   ![Ricerca delle risorse](assets/customize-app/search-assets.png)
-
-1. Tocca o fai clic per selezionare la `biker-yellow.png` immagine, quindi tocca o fai clic su **Seleziona**.
+1. Seleziona l’immagine `biker-yellow.png` quindi tocca o fai clic su **Seleziona**.
 
    ![Seleziona risorsa](assets/customize-app/select-asset.png)
 
-1. L&#39;immagine del biker è stata sostituita con l&#39;immagine selezionata. Le modifiche vengono salvate automaticamente dall’editor.
+1. L&#39;immagine del biker viene sostituita con l&#39;immagine selezionata. Le modifiche vengono salvate automaticamente dall’editor.
 
    ![Frammento modificato dell’immagine del biker](assets/customize-app/mtn-biking-biker-edited.png)
 
-## Creare un momento acquistabile {#create-moment}
+1. Tocca o fai clic su **Anteprima** in alto a destra nella finestra per visualizzare le modifiche. L’anteprima dell’app dimostrativa si apre in una nuova scheda. Fai clic su aggiorna sul browser e dovresti visualizzare la tua nuova immagine del biker con i pantaloncini gialli nell&#39;app.
 
-Ora che hai aggiornato l’immagine del biker, puoi aggiungere un momento acquistabile per i pantaloncini gialli del biker.
+È così facile aggiornare immagini e risorse nelle tue app con AEM CMS headless.
 
-1. Per iniziare, torna all’editor Frammento di contenuto per il frammento di pagina. Le breadcrumb in alto a sinistra nell’editor mostrano dove ti trovi nella gerarchia dei contenuti. Tocca o fai clic su **Pagina principale WKND** nelle breadcrumb per tornare a tale pagina.
+## Aggiungere un riferimento a un nuovo frammento di contenuto nell’app {#create-moment}
+
+Ora che hai aggiornato l’immagine del biker, vediamo come aggiungere nuovi contenuti a un’app creando e facendo riferimento a un nuovo frammento di contenuto. Aggiungi una chiamata al prodotto gestita da un frammento di contenuto &quot;momento acquistabile&quot; al secondo pannello dell’app.
+
+![Esempio di momento acquistabile](assets/customize-app/example-shoppable-moment.png)
+
+1. Torna alla scheda del browser dell’editor Frammento di contenuto .
+
+1. È necessario tornare alla posizione corretta nell’editor frammento di contenuto. Le breadcrumb in alto a sinistra nell’editor mostrano dove ti trovi nella gerarchia dei contenuti. Tocca o fai clic su **Pagina principale WKND** nelle breadcrumb per tornare a tale pagina.
 
    ![Torna alla schermata di layout](assets/customize-app/breadcrumbs-2.png)
 
@@ -138,53 +124,32 @@ Ora che hai aggiornato l’immagine del biker, puoi aggiungere un momento acquis
 
    ![Crea un momento acquistabile](assets/customize-app/mtn-biker-on-wknd-yellow.png)
 
-1. Ora potete vedere i livelli che compongono l&#39;immagine del biker. Aggiungi un momento acquistabile ai pantaloncini gialli del biker selezionando la **Mtn Bike - Shopable** strato.
+1. Seleziona la **Mtn Bike - Shopable** strato.
 
    ![Seleziona il livello momento acquistabile](assets/customize-app/mtn-biking-shoppable.png)
 
-1. Per creare un momento acquistabile, devi creare un nuovo frammento di contenuto che rappresenti tale momento. Tocca o fai clic sul pulsante **+ Crea nuovo frammento** pulsante per aggiungere un momento acquistabile per i pantaloncini del biker.
+1. Per creare una nuova chiamata di uscita su questo pannello, devi creare un nuovo frammento di contenuto nel momento dell’acquisto. Tocca o fai clic sul pulsante **+ Crea nuovo frammento** pulsante .
 
    ![Aggiungi un momento acquistabile](assets/customize-app/create-new-fragment.png)
 
-1. Poiché i frammenti di contenuto rappresentano dati strutturati headless, ogni volta che crei un frammento di contenuto devi prima scegliere un modello su cui basarlo. Seleziona la **Articolo Momento Negoziabile** dal modello **Modello a frammento di contenuto** a discesa.
+1. Devi innanzitutto scegliere un modello su cui basare il nuovo frammento di contenuto. Seleziona la **Articolo Momento Negoziabile** dal modello **Modello a frammento di contenuto** a discesa.
 
-   ![Scegliere il modello Frammento di contenuto](assets/customize-app/new-content-fragment.png)
-
-1. Assegna un nome al frammento di contenuto che rappresenterà questo nuovo momento acquistabile. Ad esempio, immetti `Shorts` nel **Nome** campo .
+1. Assegna un nome al frammento di contenuto. Ad esempio, immetti `Shorts` nel **Nome** campo .
 
    ![Nome del momento dell&#39;acquisto](assets/customize-app/new-content-fragment.png)
 
 1. Tocca o fai clic su **Crea e apri**.
 
 1. Viene aperto l’editor per il nuovo frammento di contenuto.
-   * Dai un nome al momento dell&#39;acquisto nel **Testo** ad esempio `Yellow shorts`.
-   * Imposta una X e una Y, posizione in cui sovrapporre questo momento acquistabile.
-      * **X**: `-18`
-      * **Y**: `-28`
-   * Le modifiche al frammento vengono salvate automaticamente dall’editor
+
+1. Dai un nome al momento dell&#39;acquisto nel **Testo** ad esempio `Yellow shorts`.
+
+1. Imposta valori per **X** e **Y**. Questo è il punto in cui questa chiamata dovrebbe essere sovrapposta sul pannello. Le modifiche al frammento vengono salvate automaticamente dall’editor
+   * **X**: `-18`
+   * **Y**: `-28`
 
    ![Modifica il momento dell&#39;acquisto](assets/customize-app/edit-shoppable-moment.png)
 
-1. Tocca o fai clic su **Anteprima** per verificare questo posizionamento e apportare le regolazioni necessarie.
+1. Tocca o fai clic su **Anteprima** in alto a destra nella finestra per visualizzare le modifiche. L’anteprima dell’app dimostrativa si apre in una nuova scheda. Fai clic su aggiorna nel browser per verificare il posizionamento e apportare le modifiche necessarie nell’editor.
 
-   ![Anteprima del nuovo momento di acquisto](assets/customize-app/preview-demo-app-shoppable.png)
-
-## Hai imparato a personalizzare un’app React di esempio! {#conclusion}
-
-In questo modulo hai imparato a personalizzare un’app React di esempio. Innanzitutto hai imparato a modificare il testo esistente. Poi un&#39;immagine è stata scambiata con un&#39;altra istanza di quell&#39;immagine. Finalmente hai visto come viene creato e posizionato un oggetto momento acquistabile.
-
-Assicurati di controllare il [Sezione Risorse aggiuntive](#additional-resources) per ulteriori risorse sull’utilizzo di AEM e dei relativi frammenti di contenuto.
-
-Per scoprire in che modo Frammenti di contenuto e contenuti headless vengono creati per il consumo da applicazioni personalizzate, puoi iniziare revisionando il modulo [Crea la struttura del contenuto per l’app.](content-structure.md)
-
-Per tornare alla schermata iniziale di prova, fai clic su **Soluzioni** in alto a destra nella barra di navigazione e selezionando **Experience Manager**.
-
-![Passa alla home](assets/customize-app/home.png)
-
-## Risorse aggiuntive {#additional-resources}
-
-Per ulteriori informazioni su Frammenti di contenuto e AEM, consulta questa documentazione aggiuntiva.
-
-* [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) - Documentazione completa sui modelli di frammenti di contenuto
-* [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) - Panoramica dei frammenti di contenuto e collegamenti alla documentazione completa sui frammenti di contenuto
-* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentazione su come navigare e utilizzare i AEM per i nuovi utenti
+Ora puoi comprendere come creare nuovi contenuti e farvi riferimento come frammento di contenuto nell’app, senza alcun ciclo di sviluppo.
