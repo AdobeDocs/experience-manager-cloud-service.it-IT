@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2683'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -216,7 +216,7 @@ Le modifiche possono essere [sincronizzate](creating-live-copies.md#synchronizin
 
 #### Live Copy con pagine non Live Copy {#live-copy-with-non-live-copy-pages}
 
-Quando crei una Live Copy in AEM, puoi visualizzare e navigare attraverso il ramo Live Copy e utilizzare le normali funzionalità AEM sul ramo Live Copy. Questo significa che tu o un processo potete creare nuove risorse (pagine e/o paragrafi) all’interno della Live Copy. Ad esempio, un prodotto per una determinata regione o paese.
+Quando crei una Live Copy in AEM, puoi visualizzare e navigare attraverso il ramo Live Copy e utilizzare le normali funzionalità AEM sul ramo Live Copy. Questo significa che tu o un processo potete creare nuove risorse (pagine e/o paragrafi) all’interno della Live Copy. Ad esempio, un prodotto per una determinata area geografica.
 
 * Tali risorse non hanno alcuna relazione live con le pagine sorgente/blueprint e non sono sincronizzate.
 * Si possono verificare scenari che MSM gestisce come casi speciali. Ad esempio, quando crei una pagina con la stessa posizione e lo stesso nome nei rami sorgente/blueprint e Live Copy. Per tali situazioni vedi [Conflitti di rollout MSM](rollout-conflicts.md) per ulteriori informazioni.
