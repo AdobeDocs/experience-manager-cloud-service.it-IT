@@ -3,9 +3,9 @@ title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2157'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ All’apertura, il pannello laterale scivolerà in posizione da sinistra (se nec
 
 L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in uso:
 
-* **Dispositivo mobile (ad esempio, iPad)**
+* **Dispositivo mobile (ad esempio iPad)**
 
    Il browser Componenti copre completamente la pagina in corso di modifica.
 
@@ -230,7 +230,7 @@ Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determi
 
 ## Eventi - Timeline {#events-timeline}
 
-Per le risorse appropriate (ad esempio, le pagine dalla sezione **Sites** o risorse dalla console **Risorse** console) [può essere utilizzata per mostrare l’attività recente su qualsiasi elemento selezionato](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+Per le risorse appropriate (ad esempio, pagine dalla console **Sites** o risorse dalla console **Assets**) è possibile utilizzare la [timeline per visualizzare le attività recenti relative agli elementi selezionati](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
 Apri la console richiesta, quindi accedi alla risorsa desiderata e apri la **Timeline** utilizzando:
 
@@ -282,7 +282,7 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* A seconda delle caratteristiche della pagina, alcune modalità possono non essere disponibili.
 >* L’accesso ad alcune modalità richiede autorizzazioni o privilegi adeguati.
 >* La modalità Sviluppatore non è disponibile su dispositivi mobili a causa di limitazioni di spazio.
->* C&#39;è una [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) per passare da **Anteprima** e la modalità attualmente selezionata (ad esempio, **Modifica**, **Layout**, ecc.).
+>* La [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
 >
 
 
