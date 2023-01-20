@@ -3,9 +3,9 @@ title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e le funzioni di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2994'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -208,7 +208,7 @@ Sono disponibili diverse risorse di Aiuto:
 
 ## Barra delle azioni  {#actions-toolbar}
 
-Ogni volta che selezioni una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo esplicativo nella barra degli strumenti. Queste azioni dipendono da:
+Ogni volta che viene selezionata una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo descrittivo nella barra degli strumenti. Queste azioni dipendono da:
 
 * La console corrente
 * Il contesto attuale
