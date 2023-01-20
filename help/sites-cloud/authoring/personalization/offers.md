@@ -1,35 +1,35 @@
 ---
-title: Creazione e gestione di offerte (console Offerte)
-description: Usa la console Offerte per creare offerte da utilizzare in più esperienze.
+title: Creazione e gestione delle offerte (console Offerte)
+description: Usa la console Offerte per creare offerte da utilizzare nelle esperienze Attività.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1393'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Creazione e gestione delle offerte (Console Offerte) {#creating-and-managing-offers}
+# Creazione e gestione delle offerte (console Offerte) {#creating-and-managing-offers}
 
-La **Offerte** in futuro la console diventerà obsoleta. Da ora in poi è:
+La console **Offerte** in futuro diventerà obsoleta. Da ora in poi:
 
-* Disponibile solo per i clienti che hanno *legacy* offerte già definite (ovvero preesistenti)
-* Consigliato di convertire tali offerte legacy in offerte di frammenti esperienza
-   * Non appena l’ultima offerta legacy viene convertita/rimossa, la funzione **Offerte** la console non sarà più disponibile.
+* sarà disponibile solo per i clienti che dispongono di offerte *legacy* già definite (ovvero preesistenti);
+* si consiglia di convertire tali offerte legacy in offerte basate su frammenti di esperienza;
+   * non appena l’ultima offerta legacy sarà stata convertita o rimossa, la console **Offerte** non sarà più disponibile.
 
 ![Console di personalizzazione](/help/sites-cloud/authoring/assets/offers-consoles.png)
 
 >[!NOTE]
 >
->I clienti che dispongono di offerte precedenti possono comunque utilizzare **Offerte** per visualizzare e creare nuove offerte legacy.
+>I clienti che dispongono di offerte legacy possono ancora utilizzare la console **Offerte** per visualizzare offerte legacy esistenti e crearne di nuove.
 >
->I clienti che non dispongono di offerte legacy precedenti non visualizzeranno i **Offerte** console.
+>I clienti che non dispongono di offerte legacy precedenti non visualizzeranno la console **Offerte**.
 >
->Tutti i clienti possono utilizzare **Offerte di frammenti esperienza** per creare e gestire le offerte.
+>Tutti i clienti possono utilizzare **Offerte con frammenti di esperienza** per creare e gestire le offerte.
 
-## Conversione di un’offerta legacy in un frammento esperienza {#convert-legacy-offer-to-experience-fragment}
+## Conversione di un’offerta legacy in un frammento di esperienza {#convert-legacy-offer-to-experience-fragment}
 
-A **Converti in variante del frammento di esperienza** È stata implementata l’opzione e il flusso di lavoro per aiutarti a convertire l’offerta legacy in un frammento esperienza:
+L’opzione e flusso di lavoro **Converti in variante di frammento di esperienza** è stata implementata per aiutarti a convertire le offerte legacy in frammenti di esperienza:
 
 >[!NOTE]
 >
@@ -37,47 +37,47 @@ A **Converti in variante del frammento di esperienza** È stata implementata l�
 
 >[!NOTE]
 >
->Puoi anche creare manualmente un nuovo frammento esperienza, trasferire manualmente il contenuto dall’offerta legacy al frammento, quindi eliminare l’offerta legacy.
+>Puoi anche creare un nuovo frammento di esperienza, trasferire manualmente il contenuto dall’offerta legacy al frammento, quindi eliminare l’offerta legacy.
 
 >[!CAUTION]
 >
->La **Converti in variante del frammento di esperienza** è disponibile per tutti i componenti core.
+>L’opzione **Converti in variantei il frammento di esperienza** è disponibile per tutti i componenti core.
 >
 >Questa opzione non sarà supportata per i componenti personalizzati. Per tali componenti, devi convertire manualmente il contenuto in un frammento di esperienza.
 
 >[!CAUTION]
 >
->Non appena l’ultima offerta legacy viene convertita/rimossa:
+>Non appena l’ultima offerta legacy sarà stata convertita o rimossa:
 >
->* La **Offerte** la console non sarà più disponibile.
->* L’icona di destinazione nella barra degli strumenti di qualsiasi altro componente interessato non verrà più visualizzata.
+>* La console **Offerte** non sarà più disponibile.
+>* L’icona Target nella barra degli strumenti di qualsiasi altro componente interessato non verrà più visualizzata.
 
 
-1. Apri una pagina contenente l’offerta per la modifica.
+1. Apri una pagina contenente l’offerta da modificare.
 
-1. Passa a **Targeting** modalità per la pagina.
+1. Passa alla modalità **Targeting** per tale pagina.
 
 1. Fai clic su **Inizia impostazione destinazione**.
 
-1. Seleziona il componente appropriato (con targeting).
+1. Seleziona il componente appropriato (di destinazione).
 
-1. La barra degli strumenti del componente fornisce un’opzione per **Converti in variante del frammento di esperienza**:
+1. La barra degli strumenti del componente fornisce un’opzione per **convertire in variante di frammento di esperienza**:
 
-   ![Conversione di offerte legacy in frammento esperienza](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+   ![Conversione di offerte legacy in frammenti di esperienza](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
-1. Viene visualizzata una finestra di dialogo. Qui puoi selezionare il **Azione**:
+1. Viene visualizzata una finestra di dialogo. Qui puoi selezionare l’**Azione** richiesta:
 
    * Crea un nuovo frammento esperienza
-   * Aggiungi il contenuto a un frammento esperienza esistente
+   * Aggiungi il contenuto a un frammento di esperienza esistente
 
-   Per questo scenario, seleziona **Creare un nuovo frammento esperienza**.
+   Per questo scenario, seleziona **Crea un nuovo frammento di esperienza**.
 
-   ![Finestra di dialogo Converti in variante frammento esperienza](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
+   ![Finestra di dialogo Converti in variante di frammento di esperienza](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
 
-1. Compila i campi richiesti nella finestra di dialogo :
+1. Compila i campi richiesti nella finestra di dialogo:
 
-   * **Percorso padre**
-Specifica il percorso principale del nuovo frammento esperienza
+   * **Percorso principale**
+Specifica il percorso principale del nuovo frammento di esperienza.
    * **Modello**
 Seleziona il modello da utilizzare per creare il frammento di esperienza.
    * **Titolo frammento**
@@ -87,24 +87,24 @@ Se necessario, aggiungi dei tag.
 
 1. Conferma con **Fine**.
 
-   Se ora accedi alla **Offerte dei frammenti esperienza** Il nuovo frammento di esperienza verrà visualizzato insieme alle relative varianti associate.
+   Se ora passi alla console **Offerte con frammenti di esperienza**, il nuovo frammento di esperienza verrà visualizzato insieme alle relative varianti.
 
 ### Targeting con il modello di offerte {#targeting-offers-template}
 
 >[!CAUTION]
 >
->Questa opzione è disponibile solo per i clienti con offerte legacy precedenti.
+>Questa opzione è disponibile solo per i clienti che dispongono di offerte legacy precedenti.
 >
->Come con il **Offerte** la console non sarà più disponibile:
+>Come per la console **Offerte**, non sarà più disponibile nelle seguenti situazioni:
 >
->* una volta convertita l’ultima offerta legacy in Frammenti esperienza
->* quando le offerte legacy sono obsolete (in futuro)
+>* una volta convertita l’ultima offerta legacy in frammenti di esperienza;
+>* quando le offerte legacy saranno diventate obsolete (in futuro).
 >
->Pertanto, si consiglia di utilizzare Frammenti esperienza, non questa opzione.
+>Pertanto, si consiglia di utilizzare l’opzione Frammenti di esperienza, non questa opzione.
 
-Per i clienti con offerte legacy preesistenti, l’ **Usa modello di offerta** le opzioni saranno visibili quando si esegue il targeting di componenti che **not** Frammenti esperienza:
+Per i clienti che dispongono di offerte legacy preesistenti, le opzioni **Usa modello di offerta** saranno visibili quando si esegue il targeting di componenti che **non** sono frammenti di esperienza:
 
-![Finestra di dialogo Converti in variante frammento esperienza](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
+![Finestra di dialogo Converti in variante di frammento di esperienza](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## Console Offerte {#offers-console}
 
@@ -112,7 +112,7 @@ Per i clienti con offerte legacy preesistenti, l’ **Usa modello di offerta** l
 >
 >Questa console diventerà obsoleta in futuro, in quanto offre un modo legacy di personalizzare i contenuti.
 >
->Lei ha un po&#39; di tempo per prepararsi. Scopri come [convertire le offerte legacy esistenti in un’offerta di frammento di esperienza](#convert-legacy-offer-to-experience-fragment).
+>Hai ancora un po’ di tempo per prepararti. Scopri come [convertire le offerte legacy esistenti in offerte basate su frammenti di esperienza](#convert-legacy-offer-to-experience-fragment).
 
 Usa la console Offerte per creare offerte da [utilizzare in più esperienze](/help/sites-cloud/authoring/personalization/targeted-content.md). La creazione di offerte nella console Offerte consente di risparmiare tempo nel caso in cui più esperienze richiedano la stessa offerta:
 
