@@ -3,9 +3,9 @@ title: Creazione di contenuti di destinazione utilizzando la modalità di target
 description: La modalità di targeting e il componente Target forniscono strumenti per la creazione di contenuti per esperienze
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5414'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,15 +24,15 @@ Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targe
 
 >[!NOTE]
 >
->La modalità di targeting è disponibile sia nell’Editor pagina che nell’Editor frammento esperienza.
+>La modalità di targeting è disponibile sia nell’Editor pagina che nell’Editor frammento di esperienza.
 >
->La seguente documentazione è applicabile a entrambi (in quanto funzionano entrambi allo stesso modo), anche se è scritta per l’Editor pagina.
+>La seguente documentazione è stata scritta per l’Editor pagina, ma è applicabile a entrambi (in quanto funzionano entrambi allo stesso modo).
 
 >[!CAUTION]
 >
->Quando si esegue il targeting nell’Editor pagina, è possibile eseguire il targeting solo dei componenti Frammento esperienza.
+>Quando si esegue il targeting nell’Editor pagina, è possibile eseguire il targeting solo dei componenti Frammento di esperienza.
 >
->Altri tipi di componenti possono essere convertiti in un frammento esperienza utilizzando **Converti in variante del frammento di esperienza** sulla barra degli strumenti del componente.
+>Altri tipi di componenti possono essere convertiti in un frammento di esperienza utilizzando l’icona **Converti in variante di frammento di esperienza** sulla barra degli strumenti del componente.
 
 <!--
 >Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
@@ -40,7 +40,7 @@ Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targe
 >![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 -->
 
-Puoi utilizzare AEM o Adobe Target come motore di targeting (per utilizzare Adobe Target devi disporre di un account Adobe Target valido). Se utilizzi Adobe Target, devi prima di tutto configurare l’integrazione. Consulta la sezione [istruzioni per l’integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+Puoi utilizzare AEM o Adobe Target come motore di targeting (per utilizzare Adobe Target devi disporre di un account Adobe Target valido). Se utilizzi Adobe Target, devi prima di tutto configurare l’integrazione. Consulta le [istruzioni per l’integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![Contenuto di targeting](../assets/targeted-content.png)
 
@@ -520,13 +520,13 @@ Per configurare obiettivi e impostazioni con Adobe Target:
 
    ![Origine per la generazione di rapporti](../assets/targeted-reporting-source.png)
 
-1. Da **Obiettivo principale**, vai all’area **Metrica per obiettivo** e seleziona la metrica di successo che desideri monitorare: Conversione, Entrate, Coinvolgimento. Quindi inserisci come viene misurata la metrica (o quale azione intraprende l’audience per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche dell’obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) sulle metriche di successo.
+1. Da **Obiettivo principale**, vai all’area **Metrica per obiettivo** e seleziona la metrica di successo che desideri monitorare: Conversione, Entrate, Coinvolgimento. Quindi inserisci come viene misurata la metrica (o quale azione intraprende l’audience per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche dell’obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=it) sulle metriche di successo.
 
    Per rinominare l’obiettivo, fai clic sui tre punti nell’angolo in alto a destra e seleziona **Rinomina**.
 
    Per cancellare tutti i campi, fai clic sui tre punti nell’angolo superiore destro e seleziona **Cancella tutti i campi**.
 
-   Tutte le metriche hanno anche impostazioni avanzate che è possibile definire. Seleziona **Impostazioni avanzate** per accedere a queste impostazioni. Vedi la definizione del conteggio delle metriche di successo nella tabella precedente e consulta la [documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
+   Tutte le metriche hanno anche impostazioni avanzate che è possibile definire. Seleziona **Impostazioni avanzate** per accedere a queste impostazioni. Vedi la definizione del conteggio delle metriche di successo nella tabella precedente e consulta la [documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=it).
 
    >[!NOTE]
    >
