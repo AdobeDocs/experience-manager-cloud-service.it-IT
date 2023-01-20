@@ -1,13 +1,13 @@
 ---
 title: Frammenti di contenuto - Browser configurazioni
-description: Scopri come abilitare le funzionalità Frammento di contenuto e GraphQL nel browser di configurazione per sfruttare AEM funzionalità di distribuzione headless.
+description: Scopri come abilitare le funzionalità Frammento di contenuto e GraphQL nel Browser configurazioni per sfruttare le funzionalità di distribuzione headless di AEM.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '365'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -81,6 +81,6 @@ Per [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-con
 
 Quando la configurazione **globale** è abilitata per la funzionalità frammento di contenuto, questa si applica quindi a qualsiasi cartella Assets accessibile tramite la console **Risorse**.
 
-Per utilizzare altre configurazioni con una cartella Risorse simile, ovvero escludendo il formato globale, è necessario definire la connessione. Questa operazione viene eseguita selezionando l’appropriata **Configurazione** nella scheda **Cloud Services** della finestra **Proprietà cartella** della cartella specifica.
+Per utilizzare altre configurazioni con una cartella Risorse simile, ovvero escludendo il formato globale, è necessario definire la connessione. Questa operazione viene eseguita selezionando l’appropriata **Configurazione** nella scheda **Servizi cloud** della finestra **Proprietà cartella** della cartella specifica.
 
 ![Applica configurazione](assets/cfm-conf-02.png)
