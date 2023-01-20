@@ -3,9 +3,9 @@ title: Controllo dello stato del nome di dominio
 description: Scopri come determinare se il nome di dominio personalizzato è stato verificato correttamente da Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -60,27 +60,27 @@ Questo errore può verificarsi durante la convalida del dominio del record TXT a
 
 #### Causa errore {#cause}
 
-Blocca infine un dominio all&#39;account iniziale che lo ha registrato e nessun altro account può registrare un sottodominio senza richiedere l&#39;autorizzazione. Inoltre, Fastly consente di assegnare un dominio APEX e i sottodomini associati a un unico servizio e account Fastly. L’errore viene visualizzato se disponi di un account Fastly che collega gli stessi domini e sottodomini APEX utilizzati per i domini di AEM Cloud Service.
+Faslty blocca un dominio all’account iniziale che ne ha effettuato la registrazione, impedendo a qualsiasi altro account di registrare un sottodominio senza richiedere l’autorizzazione. Inoltre, Fastly consente di assegnare un dominio APEX e i sottodomini associati a un unico servizio e account Fastly. L’errore viene visualizzato se disponi di un account Fastly che collega gli stessi domini e sottodomini APEX utilizzati per i domini di AEM Cloud Service.
 
 #### Risoluzione degli errori {#resolution}
 
-L&#39;errore viene corretto come segue:
+L’errore viene corretto come segue:
 
 * Prima di installare il dominio in Cloud Manager, rimuovi il dominio APEX e i sottodomini dall’account esistente.
 
 * Collega il dominio APEX e tutti i sottodomini all’account Fastly AEM as a Cloud Service con questa opzione. Per ulteriori informazioni, consulta [Utilizzo dei domini nella documentazione Fastly](https://docs.fastly.com/en/guides/working-with-domains).
 
-* Se il dominio apex ha più sottodomini per AEM siti as a Cloud Service e non AEM as a Cloud Service che desideri collegare a diversi account Flast, prova a installare il dominio in Cloud Manager. Se l&#39;installazione del dominio non riesce, crea un ticket di assistenza clienti con Flast in modo che l&#39;Adobe possa seguire Flast per tuo conto.
+* Se il dominio apex ha più sottodomini per siti AEM as a Cloud Service e non AEM as a Cloud Service che desideri collegare a diversi account Fastly, prova a installare il dominio in Cloud Manager. Se l’installazione del dominio non riesce, crea un ticket di assistenza clienti con Fastly in modo che Adobe possa eseguire il follow-up con Fastly a tuo nome.
 
 >[!TIP]
 >
->Per risolvere i problemi di delega del dominio con Fast in genere sono necessari 1-2 giorni lavorativi. Per questo motivo, si consiglia vivamente di installare i domini molto prima della loro data di entrata in vigore.
+>Per risolvere i problemi di delega del dominio con Fastly in genere sono necessari 1-2 giorni lavorativi. Per questo motivo, si consiglia vivamente di installare i domini molto prima della loro data di Go Live.
 
 >[!NOTE]
 >
->Non instradare il DNS del sito a AEM IP as a Cloud Service se il dominio non è stato installato correttamente.
+>Se il dominio non è stato installato correttamente, non instradare il DNS del sito agli IP di AEM as a Cloud Service.
 
-## Configurazioni CDN preesistenti per nomi di dominio personalizzati {#pre-existing-cdn}
+## Configurazioni CDN preesistenti per i nomi di dominio personalizzati {#pre-existing-cdn}
 
 Se disponi di una configurazione CDN preesistente per i nomi di dominio personalizzati, viene visualizzato un messaggio informativo sulle pagine **Nomi di dominio personalizzati** e **Ambiente** che ti invita ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
 
