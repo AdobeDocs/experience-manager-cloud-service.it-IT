@@ -5,19 +5,19 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Connetti a Microsoft Translator {#connecting-to-microsoft-translator}
 
-Crea una configurazione per [Microsoft Translator](https://www.microsoft.com/en-us/translator/business/) Cloud Service per utilizzare il tuo account di traduzione Microsoft per tradurre il contenuto di una pagina o le risorse di AEM.
+Crea una configurazione per [Microsoft Translator](https://www.microsoft.com/it-it/translator/business/) Cloud Service per utilizzare il tuo account di traduzione Microsoft per tradurre il contenuto di una pagina o le risorse di AEM.
 
 >[!TIP]
 >
->Se sei alle prime armi con la traduzione di contenuti, consulta il nostro [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti dei tuoi siti AEM utilizzando i potenti strumenti di traduzione di AEM, ideale per chi non ha esperienza di AEM o di traduzione.
+>Se non hai ancora tradotto i contenuti, fai riferimento al [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ La procedura seguente crea una configurazione di Microsoft Translator.
 1. Tocca o fai clic sul pulsante **Crea**.
 1. Definisci la configurazione.
    1. Seleziona **Microsoft Translator** nel menu a discesa.
-   1. Digita un titolo per la configurazione. Il titolo identifica la configurazione sia nella console Cloud Services che negli elenchi a discesa delle proprietà della pagina.
+   1. Digita un titolo per la configurazione. Il titolo identifica la configurazione sia nella console Servizi cloud che negli elenchi a discesa delle proprietà della pagina.
    1. Facoltativamente, digita un nome da utilizzare per il nodo dell’archivio che memorizza la configurazione.
 
    ![Creare una configurazione di traduzione](../assets/create-translation-config.png)
