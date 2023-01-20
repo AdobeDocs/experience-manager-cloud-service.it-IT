@@ -3,9 +3,9 @@ title: Registrazione, accesso e profilo utente
 description: Scopri di più su Registrazione, Accesso, Dati utente e Sincronizzazione dei gruppi per AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1174'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Una volta che un utente finale è registrato sul servizio AEM Publish, può effe
 
 L’accesso può essere implementato con i due approcci seguenti:
 
-### AEM gestito {#aem-managed-implementation}
+### AEM Managed {#aem-managed-implementation}
 
 I clienti possono creare i propri componenti personalizzati. Per saperne di più, acquisisci familiarità con:
 
