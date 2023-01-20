@@ -3,9 +3,9 @@ title: Implementazione di un connettore AEM
 description: Implementazione di un connettore AEM
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '968'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Oltre alla documentazione statica di cui sopra, Adobe e la comunità AEM offrono
 
 * La comunità di Adobe [AEM Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) è un sito attivo in cui i tuoi colleghi chiedono e rispondono alle domande
 * Ulteriori risorse tecniche Adobe sono disponibili per determinati livelli di partner. Scopri di più su [Adobe Exchange Program](https://partners.adobe.com/exchangeprogram/experiencecloud).
-* Se la tua azienda desidera ricevere assistenza nell’implementazione, può consultare il team [Servizi professionali](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) di Adobe o consultare [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) per ottenere un elenco dei partner Adobe presenti in tutto il mondo
+* Se la tua azienda desidera ricevere assistenza nell’implementazione, può consultare il team [Servizi professionali](https://www.adobe.com/it/marketing-cloud/service-support/professional-consulting-training.html) di Adobe o consultare [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) per ottenere un elenco dei partner Adobe presenti in tutto il mondo
 
 Regole della struttura del pacchetto
 -----------------------
@@ -68,13 +68,13 @@ Ti consigliamo di posizionare la maggior parte del codice del connettore sotto `
 Configurazioni servizi cloud
 -----------------------------
 
-Un aspetto dell’implementazione del connettore è il codice che ne supporta la configurazione. Questo codice fa apparire una scheda con il nome del connettore in Strumenti > Operazioni > Cloud Services. Se cliccato, viene visualizzato un [browser di configurazione](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) in cui il cliente seleziona la cartella genitore per contenere la configurazione del connettore. Il codice del connettore deve tradursi in un modulo con tutte le proprietà che devono essere configurate, in ultima analisi memorizzando i valori in una cartella di configurazione in `/conf`. Questa cartella può essere successivamente selezionata nella scheda Proprietà siti o nella scheda Proprietà risorse.
+Un aspetto dell’implementazione del connettore è il codice che ne supporta la configurazione. Questo codice fa apparire una scheda con il nome del connettore in Strumenti > Operazioni > Servizi cloud. Se cliccato, viene visualizzato un [browser di configurazione](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) in cui il cliente seleziona la cartella genitore per contenere la configurazione del connettore. Il codice del connettore deve tradursi in un modulo con tutte le proprietà che devono essere configurate, in ultima analisi memorizzando i valori in una cartella di configurazione in `/conf`. Questa cartella può essere successivamente selezionata nella scheda Proprietà siti o nella scheda Proprietà risorse.
 
 
 Configurazioni in base al contesto
 -----------------------------
 
-[Configurazioni in base al contesto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) consente la configurazione dei livelli in diverse cartelle, tra cui `/libs`, `/apps`, `/conf` e sottocartelle in `/conf`. Supporta l’ereditarietà in modo che un cliente possa impostare la configurazione globale mentre apporta modifiche specifiche a ciascun microsito. Poiché è possibile sfruttare questa funzione per le configurazioni dei Cloud Services, il codice del connettore dovrebbe fare riferimento alla configurazione utilizzando l’API di configurazione in base al contesto, invece di fare riferimento a un nodo di configurazione specifico.
+[Configurazioni in base al contesto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) consente la configurazione dei livelli in diverse cartelle, tra cui `/libs`, `/apps`, `/conf` e sottocartelle in `/conf`. Supporta l’ereditarietà in modo che un cliente possa impostare la configurazione globale mentre apporta modifiche specifiche a ciascun microsito. Poiché è possibile sfruttare questa funzione per le configurazioni dei Servizi cloud, il codice del connettore dovrebbe fare riferimento alla configurazione utilizzando l’API di configurazione in base al contesto, invece di fare riferimento a un nodo di configurazione specifico.
 
 Se le configurazioni modificate sono usate nel connettore, occorre architettare il connettore in modo da gestire l&#39;inclusione/unione di qualsiasi aggiornamento futuro delle configurazioni predefinite fornite dal connettore con le configurazioni del cliente. Ricordate che la modifica di contenuti o configurazioni personalizzate (cioè modificate dal cliente) senza l&#39;avviso e il consenso del cliente può interrompere (o creare un comportamento imprevisto) con il connettore.
 
