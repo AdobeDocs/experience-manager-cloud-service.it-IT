@@ -3,9 +3,9 @@ title: Dashboard delle licenze
 description: Cloud Manager fornisce una dashboard per visualizzare facilmente i diritti dei prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ In ogni sezione vengono riepilogate le opzioni disponibili e come sono attualmen
 
 ### Che cos’è una richiesta di contenuto? {#what-is-a-content-request}
 
-Una richiesta di contenuto è una richiesta che arriva in AEM Sites o in qualsiasi sistema di caching fornito dal cliente, ad esempio una rete di distribuzione di contenuti, per distribuire contenuto o dati in formato HTML come visualizzazione di pagina o in formato JSON come chiamata API.
+Una richiesta di contenuto è una richiesta pervenuta in AEM Sites o altro sistema di caching fornito dal cliente, ad esempio una rete di distribuzione di contenuti, per distribuire contenuti o dati in formato HTML come vista pagina oppure in formato JSON come chiamata API.
 
 Viene conteggiata una richiesta di contenuto per ogni visualizzazione di pagina o per ogni cinque chiamate API, misurate all’ingresso del primo sistema di caching che riceve una richiesta di contenuto. Le richieste di contenuto vengono conteggiate solo per gli ambienti di produzione.
 
@@ -63,7 +63,7 @@ Dalle richieste di contenuto sono escluse le richieste o le attività avviate da
 
 ### In che modo Adobe Experience Manager misura le richieste di contenuto? {#how-are-content-requests-measured}
 
-Le richieste di contenuto vengono tracciate sui server perimetrali AEM as a Cloud Service. Il traffico di origine non viene conteggiato per le richieste di contenuto. La CDN integrata in AEM as a Cloud Service traccia le richieste HTML e JSON valide.
+Le richieste di contenuto vengono tracciate sui server Edge di AEM as a Cloud Service. Il traffico di origine non viene conteggiato per le richieste di contenuto. La rete CDN integrata in AEM as a Cloud Service traccia le richieste HTML e JSON valide.
 
 AEM inoltre offre regole per escludere bot noti, tra cui servizi noti che visitano regolarmente il sito per aggiornare l’indice di ricerca o il servizio.
 
@@ -83,10 +83,10 @@ Le richieste di contenuto presentano delle varianze rispetto agli strumenti di g
 | Blocchi del traffico | L’utilizzo di un blocco del tracciamento in un browser può far sì che il tracciamento di alcune richieste non venga eseguito. |
 | Firewall | I firewall possono bloccare il tracciamento di Analytics. Il problema è più frequente con i firewall aziendali. |
 
-### Cosa succede se voglio saperne di più sul volume di richiesta del contenuto? {#current-request-volumes}
+### Come posso ottenere ulteriori informazioni sul volume di richieste di contenuto? {#current-request-volumes}
 
-Se desideri ulteriori informazioni sul volume di richiesta del contenuto visualizzato nel dashboard della licenza, il team di Adobe può fornire un rapporto che mostra i principali driver di volume delle richieste di contenuto. Rivolgiti al tuo team di Adobe o all’Assistenza clienti Adobe per richiedere un rapporto sull’utilizzo principale.
+Se desideri ulteriori informazioni sul volume di richieste di contenuto visualizzato nella dashboard delle licenze, il team di Adobe può fornirti un rapporto che mostra i principali driver di volume delle richieste dei contenuti. Per richiedere un rapporto sulle pricipali voci di utilizzo, rivolgiti al tuo team di Adobe o all’Assistenza clienti Adobe.
 
-### Cosa succede se utilizzo una rete CDN personalizzata? {#using-own-cdn}
+### Cosa succede se utilizzo una mia rete CDN? {#using-own-cdn}
 
-Il Dashboard licenze mostrerà solo i dati tracciati dal CDN del Cloud Service.  Se scegli di portare il tuo CDN (BYOCDN), segnalerai il volume della richiesta di contenuti all&#39;Adobe su base annuale, come indicato nel tuo contratto.
+La Dashboard delle licenze mostrerà solo i dati tracciati dalla rete CDN di Cloud Service.  Se scegli di usare una tua rete CDN (BYOCDN), dovrai comunicare il volume di richieste di contenuto ad Adobe su base annuale, come indicato nel tuo contratto.
