@@ -3,9 +3,9 @@ title: Introduzione ai programmi sandbox
 description: Scopri che cosa sono i programmi sandbox e in cosa differiscono dai programmi di produzione.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ I domini personalizzati e gli elenchi IP consentiti non sono disponibili nei pro
 
 ### Funzionalità di rete avanzate non disponibili {#advanced-networking}
 
-[Funzioni di rete avanzate](/help/security/configuring-advanced-networking.md) (ad esempio, provisioning self-service di VPN, porte non standard, indirizzi IP in uscita dedicati, ecc.) non sono disponibili nei programmi sandbox.
+[Le funzionalità di rete avanzate](/help/security/configuring-advanced-networking.md) (ad esempio il provisioning self-service di VPN, porte non standard, indirizzi IP in uscita dedicati e così via) non sono disponibili nei programmi sandbox.
 
 ### Aggiornamenti di AEM manuali {#updates}
 
