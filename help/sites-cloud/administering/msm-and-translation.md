@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Queste due funzioni possono essere combinate per gestire i siti Web che sono [mu
 
 >[!TIP]
 >
->Se sei alle prime armi con la traduzione di contenuti, consulta il nostro [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti dei tuoi siti AEM utilizzando i potenti strumenti di traduzione di AEM, ideale per chi non ha esperienza di AEM o di traduzione.
+>Se non hai ancora tradotto i contenuti, fai riferimento al [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 ## Siti multinazionali e multilingue {#multinational-and-multilingual-sites}
 
@@ -41,7 +41,7 @@ In genere, si crea un sito master in una lingua e per un paese specifico, quindi
 >
 >Limitare l’utilizzo di Multi Site Manager ai contenuti in una sola lingua.
 >
->Ad esempio, utilizza il master inglese per creare la versione inglese delle pagine per gli Stati Uniti, il Canada, il Regno Unito, ecc. e utilizza il master francese per creare la versione francese delle pagine per Francia, Svizzera, Canada, ecc.
+>Ad esempio, utilizza il master inglese per creare la versione inglese delle pagine per Stati Uniti, Canada, Regno Unito, ecc. e utilizza il master francese per creare la versione francese delle pagine per Francia, Svizzera, Canada, ecc.
 
 Il diagramma seguente illustra l’intersezione dei concetti principali (ma non tutti i livelli/elementi coinvolti):
 
