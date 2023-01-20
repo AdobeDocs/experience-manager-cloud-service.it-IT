@@ -3,9 +3,9 @@ title: Configurazione della segmentazione con ContextHub
 description: Scopri come configurare la segmentazione utilizzando ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1697'
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Sono disponibili i seguenti riferimenti predefiniti per eseguire un collegamento
 
 Per definire il nuovo segmento:
 
-1. Dopo [accesso ai segmenti](#accessing-segments), [passa alla cartella](#organizing-segments) dove desideri creare il segmento.
+1. Dopo l’[accesso ai segmenti](#accessing-segments), [passa alla cartella](#organizing-segments) in cui desideri creare il segmento.
 
 1. Tocca o fai clic sul pulsante **Crea** e seleziona **Crea segmento ContextHub**.
 
