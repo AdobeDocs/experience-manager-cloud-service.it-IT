@@ -3,9 +3,9 @@ title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1971'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -308,42 +308,42 @@ Durante la modifica di un frammento esperienza, nella scheda a sinistra vengono 
 
 ![Selezione dei blocchi predefiniti](/help/sites-cloud/authoring/assets/xf-14.png)
 
-## Personalizzazione del frammento esperienza {#personalization-experience-fragment}
+## Personalizzazione nel frammento di esperienza {#personalization-experience-fragment}
 
-La personalizzazione nel frammento esperienza ti consente, in qualità di addetto al marketing, di definire i tipi di pubblico target per il frammento esperienza una sola volta, quindi di riutilizzare il frammento in qualsiasi pagina. Tale comportamento:
+La personalizzazione nel frammento di esperienza ti consente, in qualità di addetto al marketing, di definire i tipi di pubblico target per il frammento di esperienza una sola volta e di riutilizzare il frammento in qualsiasi pagina. Tale comportamento:
 
 * elimina la necessità di specificare le varianti richieste per ogni pubblico ogni volta che viene utilizzato il frammento
 * mantiene lo stile tra le offerte
 
-Puoi creare un frammento esperienza con più componenti raggruppati all’interno di questo singolo frammento. Puoi anche creare varianti del frammento per ogni segmento di pubblico specifico, quindi riutilizzare questi frammenti esperienza nei canali richiesti.
+Puoi creare un frammento di esperienza con più componenti raggruppati all’interno di questo singolo frammento. Puoi anche creare varianti del frammento per ogni segmento di pubblico specifico, quindi riutilizzare questi frammenti di esperienza nei canali richiesti.
 
-La personalizzazione si ottiene definendo il **Personalizzazione** proprietà del frammento esperienza o della variante o della cartella contenente i frammenti; ciò significa che l’ereditarietà può ignorare le proprietà di personalizzazione.
+La personalizzazione si ottiene definendo le proprietà di **Personalizzazione** del frammento di esperienza o della variante, oppure della cartella contenente i frammenti; ciò significa che l’ereditarietà può ignorare le proprietà di personalizzazione.
 
-La configurazione di queste proprietà abilita anche la **Targeting** nell’editor Frammento esperienza.
+La configurazione di queste proprietà abilita anche la modalità di **Targeting** nell’editor del frammento di esperienza.
 
-### Definizione della personalizzazione per il frammento esperienza {#defining-personalization-experience-fragment}
+### Definizione della personalizzazione per il frammento di esperienza {#defining-personalization-experience-fragment}
 
 Per personalizzare il frammento:
 
-1. Passa alla posizione desiderata nel **Frammenti esperienza** console.
+1. Passa alla posizione desiderata nella console **Frammenti di esperienza**.
 
-1. Selezionare una cartella o un frammento, quindi **Proprietà** dalla barra degli strumenti.
+1. Seleziona una cartella o un frammento e poi, dalla barra degli strumenti, seleziona **Proprietà**.
 
    >[!NOTE]
    >
-   >Le proprietà di personalizzazione definite in una cartella vengono ereditate da tutte le cartelle secondarie nella struttura secondaria, mentre i frammenti di esperienza (e le varianti) nella struttura secondaria. È possibile sostituirli interrompendo l’ereditarietà.
+   >Le proprietà di personalizzazione definite in una cartella vengono ereditate da tutte le cartelle secondarie nella sotto-struttura, mentre i frammenti di esperienza (e le varianti) all’interno di questa sotto-struttura. È possibile sostituirli interrompendo l’ereditarietà.
 
-1. Apri **Personalizzazione** per definire e salvare le impostazioni. Ad esempio, in una cartella:
+1. Apri la scheda **Personalizzazione** per definire e salvare le impostazioni. Ad esempio, su una cartella:
 
-   ![Frammento esperienza - Proprietà di personalizzazione](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
+   ![Frammento di esperienza - Proprietà di personalizzazione](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
 
    >[!CAUTION]
    >
-   >Quando un frammento è incorporato in una pagina Sites e **Personalizzazione** è stata configurata, quindi al momento del rendering della pagina verrà utilizzata solo la versione di personalizzazione della pagina.
+   >Quando un frammento è incorporato in una pagina Sites e la **Personalizzazione** è stata configurata, al momento del rendering della pagina verrà utilizzata solo la versione di personalizzazione della pagina.
    >
    >Affinché il targeting eseguito sui componenti di un frammento funzioni correttamente nel rendering della pagina, è necessario soddisfare le seguenti condizioni:
    >
-   >La **Percorso ContextHub** selezionato in **Personalizzazione** La scheda deve essere:
+   >Il **Percorso ContextHub** selezionato nella scheda **Personalizzazione** deve essere:
    >
    >* lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento
       >Oppure:
@@ -351,16 +351,17 @@ Per personalizzare il frammento:
 
    >
    > 
-La **Percorso segmenti** selezionato in **Personalizzazione** La scheda deve essere:
-   * lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento oppure
+Il **Percorso segmenti** selezionato nella scheda **Personalizzazione** deve essere:
+   * lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento 
+oppure
    * un percorso che contiene un sottoinsieme dei segmenti configurati per la pagina
 
 
-### Definizione del targeting per il frammento esperienza {#defining-targeting-experience-fragment}
+### Definizione del targeting per il frammento di esperienza {#defining-targeting-experience-fragment}
 
 Una volta configurate le proprietà di personalizzazione, la modalità Targeting sarà disponibile quando il frammento viene aperto per la modifica.
 
-![Editor frammento esperienza - Modalità di targeting](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
+![Editor frammento di esperienza - Modalità di targeting](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
 Questa modalità funziona come per la modifica delle pagine. Vedi [Modalità di targeting per l’Editor pagina](/help/sites-cloud/authoring/personalization/targeted-content.md) per ulteriori dettagli.
 
@@ -369,7 +370,7 @@ Questa modalità funziona come per la modifica delle pagine. Vedi [Modalità di 
 I dettagli del frammento vengono visualizzati in diverse posizioni:
 
 1. Passa alla posizione dei frammenti esperienza, senza scendere fino alle varianti all’interno del frammento.
-I dettagli vengono visualizzati in tutte le viste della console **Frammenti esperienza**. Nella **vista a elenco**[ sono visualizzati i dettagli di un’esportazione in Target](/help/sites-cloud/integrating/integrating-adobe-target.md):
+I dettagli vengono visualizzati in tutte le viste della console **Frammenti esperienza**. Nella **vista a elenco** sono visualizzati i dettagli di un’[esportazione in Target](/help/sites-cloud/integrating/integrating-adobe-target.md):
 
    ![Dettagli del frammento esperienza](/help/sites-cloud/authoring/assets/xf-15.png)
 
@@ -393,7 +394,7 @@ I dettagli vengono visualizzati in tutte le viste della console **Frammenti espe
       * **Numero di varianti web** - solo informativo
       * **Numero di varianti non web** - solo informativo
       * **Numero di pagine con questo frammento** - solo informativo
-   * **Cloud Services**
+   * **Servizi cloud**
       * **Configurazione cloud**
       * **Configurazioni Cloud Service**
       * **ID pagina Facebook**
