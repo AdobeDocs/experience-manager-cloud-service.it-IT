@@ -3,9 +3,9 @@ title: Esportazione di frammenti di esperienza in Adobe Target
 description: Esportazione di frammenti di esperienza in Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2249'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Le opzioni richieste possono essere selezionate in **Proprietà pagina** della c
 >
 >L’aggiunta di una nuova configurazione precedente è uno scenario speciale supportato solo per l’esportazione di Frammenti di esperienza.
 
-Dopo l’[aggiunta della configurazione cloud](#add-the-cloud-configuration) per utilizzare Launch by Adobe, per l’integrare iniziale di AEM con Adobe Target, è inoltre necessario eseguire l’integrazione manuale con Adobe Target utilizzando una configurazione precedente.
+Dopo l’[aggiunta della configurazione cloud](#add-the-cloud-configuration) per utilizzare Experience Platform Launch, per l’integrare iniziale di AEM con Adobe Target, è inoltre necessario eseguire l’integrazione manuale con Adobe Target utilizzando una configurazione precedente.
 
 ### Creazione di una configurazione cloud di Target {#creating-a-target-cloud-configuration}
 
