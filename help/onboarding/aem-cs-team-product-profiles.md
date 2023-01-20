@@ -1,17 +1,17 @@
 ---
 title: Team e profili di prodotto di AEM as a Cloud Service
-description: Scopri come AEM profili di team e di prodotto as a Cloud Service possono concedere e limitare l’accesso alle soluzioni di Adobe con licenza.
+description: Scopri come usare i team e i profili di prodotto di AEM as a Cloud Service per consentire e limitare l’accesso alle soluzioni Adobe con licenza.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Team e profili di prodotto di AEM as a Cloud Service {#product-profiles}
 
-Scopri come AEM profili di team e di prodotto as a Cloud Service possono concedere e limitare l’accesso alle soluzioni di Adobe con licenza.
+Scopri come usare i team e i profili di prodotto di AEM as a Cloud Service per consentire e limitare l’accesso alle soluzioni Adobe con licenza.
 
 ## Profili di prodotto {#profiles}
 
@@ -31,13 +31,13 @@ Durante l’onboarding, i membri del gruppo di AEM as a Cloud Service vengono ag
 
 >[!NOTE]
 >
->Ogni utente assegnato a un AEM profilo di prodotto as a Cloud Service ha accesso in sola lettura a Cloud Manager tramite la **Utente di Cloud Manager** ruolo.
+>Ogni utente assegnato a un profilo di prodotto di AEM as a Cloud Service ha accesso in sola lettura a Cloud Manager tramite il ruolo **Utente di Cloud Manager**.
 >
->Utenti con solo **Utente di Cloud Manager** Il ruolo può accedere a Cloud Manager e passare agli ambienti di authoring AEM (se esistono) utilizzando **Programmi** opzioni del menu. La **Utente di Cloud Manager** Il ruolo non è sufficiente per accedere ai dettagli del programma. Se tale accesso è necessario, l’amministratore di sistema deve assegnare agli utenti ruoli aggiuntivi.
+>Gli utenti con il solo ruolo di **Utente di Cloud Manager** possono accedere a Cloud Manager e passare agli ambienti di authoring di AEM (se esistono) utilizzando le opzioni del menu **Programmi**. Il ruolo **Utente di Cloud Manager** non è sufficiente per accedere ai dettagli dei programmi. Se tale accesso è necessario, l’amministratore di sistema deve assegnare agli utenti ruoli aggiuntivi.
 
 >[!TIP]
 >
->* Per ulteriori informazioni sui profili di prodotto AEM, consulta il documento [Assegnazione AEM profili di prodotto.](/help/journey-onboarding/assign-profiles-aem.md)
+>* Per ulteriori informazioni sui profili di prodotto di AEM, consulta il documento [Assegnazione dei profili di prodotto di AEM.](/help/journey-onboarding/assign-profiles-aem.md)
 >* Per ulteriori informazioni sul processo di onboarding, consulta [Percorso di onboarding.](/help/journey-onboarding/overview.md)
 
 
