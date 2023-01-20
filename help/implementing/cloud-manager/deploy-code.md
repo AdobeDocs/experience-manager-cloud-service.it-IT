@@ -3,9 +3,9 @@ title: Distribuzione del codice
 description: Scopri come distribuire il codice con le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1221'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Il processo di build distribuisce il codice in tre fasi.
 
 La fase di **implementazione nell’ambiente di staging** prevede i passaggi riportati di seguito.
 
-* **Convalida**: questo passaggio garantisce che la pipeline sia configurata per utilizzare le risorse attualmente disponibili. ad esempio, verificare che il ramo configurato esista e che gli ambienti siano disponibili.
+* **Convalida**: questo passaggio garantisce che la pipeline sia configurata per utilizzare le risorse attualmente disponibili. Ad esempio, i test per verificare che il ramo configurato esista e che gli ambienti siano disponibili.
 * **Test della build e unit test**: questo passaggio esegue un processo di build in contenitori.
    * Per ulteriori informazioni sull’ambiente di build, consulta il documento [Dettagli sull’ambiente di build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md).
 * **Controllo del codice**: questo passaggio valuta la qualità del codice dell’applicazione.
@@ -124,7 +124,7 @@ Tutte le distribuzioni di Cloud Service seguono un processo continuo per garanti
 
 >[!NOTE]
 >
->La cache del Dispatcher viene cancellata su ogni distribuzione. Viene successivamente riscaldato prima che i nuovi nodi di pubblicazione accetti il traffico.
+>La cache del Dispatcher viene cancellata su ogni distribuzione. Subisce successivamente un processo di riscaldamento prima che i nuovi nodi di pubblicazione accettino il traffico.
 
 ## Riesecuzione di una distribuzione nell’ambiente di produzione {#Reexecute-Deployment}
 
