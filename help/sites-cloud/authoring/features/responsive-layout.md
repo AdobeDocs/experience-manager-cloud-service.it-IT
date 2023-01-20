@@ -3,9 +3,9 @@ title: Layout reattivo
 description: AEM consente di realizzare un layout reattivo per le pagine
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1766'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Questo fornisce un sistema paragrafo che consente di posizionare i componenti al
 Il Contenitore di layout:
 
 * Fornisce ancoraggio orizzontale sulla griglia, unitamente alla possibilità di posizionare componenti affiancati sulla griglia e definire quando dovrebbero venire compressi/ridisposti.
-* Utilizza punti di interruzione predefiniti (ad esempio per telefono, tablet e così via) per definire il comportamento del contenuto per i relativi dispositivi e orientamenti.
+* Utilizza punti di interruzione predefiniti (ad esempio per telefoni, tablet ecc.) per definire il comportamento del contenuto per i relativi dispositivi e orientamenti.
    * Ad esempio, puoi personalizzare le dimensioni del componente o specificare se il componente può essere visualizzato su dispositivi specifici.
 * Può essere nidificato per abilitare il controllo delle colonne.
 
