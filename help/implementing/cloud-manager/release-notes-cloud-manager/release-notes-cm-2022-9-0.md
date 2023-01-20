@@ -1,22 +1,22 @@
 ---
-title: Note sulla versione per Cloud Manager 202.9.0 in Adobe Experience Manager as a Cloud Service
-description: Queste sono le note sulla versione per Cloud Manager 2022.9.0 in AEM as a Cloud Service.
+title: Note sulla versione 2022.9.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
+description: Queste sono le note sulla versione 2022.9.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: 115c98b207d3dea89cbeb3dbc8559a81efefe461
-workflow-type: tm+mt
+exl-id: d61ef0fe-f632-4222-bb7b-10a337010942
+source-git-commit: 83e49215eff975300f263dcf0215081b02260e70
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
+# Note sulla versione 2022.9.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-# Note sulla versione per Cloud Manager 202.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
-
-Questa pagina documenta le note sulla versione di Cloud Manager 2022.9.0 in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2022.9.0 di Cloud Manager in AEM as a Cloud Service.
 
 >[!NOTE]
 >
->Fai riferimento a [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) per le note sulla versione corrente per Adobe Experience Manager as a Cloud Service.
+>Per le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, consulta [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Data di pubblicazione {#release-date}
 
@@ -24,12 +24,12 @@ La data di rilascio della versione 2022.9.0 di Cloud Manager in AEM as a Cloud S
 
 ## Novità {#what-is-new}
 
-* È ora possibile configurare le guide AEM in modo autonomo sui programmi sandbox.
-* I clienti che non dispongono di alcun ruolo di Cloud Manager non potranno accedere ai dettagli del programma. Tuttavia, possono passare ai punti finali di authoring dalle pagine di destinazione di Cloud Manager.
-* I clienti possono configurare **Notifica incidente e proattiva** gruppi per ricevere Adobi su incidenti o raccomandazioni relativi alla propria applicazione AEMaaCS. Vedi [Gruppo di utenti per le notifiche](/help/journey-onboarding/user-groups.md) per ulteriori dettagli.
-* Aggiungi un costo del programma nell&#39;interfaccia utente fornirà in modo coerente descrizioni comandi quando è disabilitato a causa di motivi relativi a autorizzazioni o adesione.
+* È ora possibile configurare le guide AEM in modo autonomo sui programmi Sandbox.
+* I clienti che non dispongono di alcun ruolo di Cloud Manager non potranno accedere ai dettagli del programma. Tuttavia, possono passare ai punti finali dell‘Autore dalle pagine di destinazione di Cloud Manager.
+* I clienti possono configurare gruppi di **Notifica per incidente e proattiva** per ricevere informazioni di Adobe su problemi o raccomandazioni relativi alla propria applicazione AEMaaCS. Per ulteriori dettagli, consulta [Gruppo di utenti per le notifiche](/help/journey-onboarding/user-groups.md).
+* Aggiungi costo del programma nell’interfaccia utente fornirà in modo coerente descrizioni comandi quando è disabilitato a causa di motivi relativi ad autorizzazioni o adesione.
 
 ## Correzioni di bug {#bug-fixes}
 
 * Il flusso di lavoro Aggiungi ambiente include convalide aggiuntive per garantire il successo del processo.
-* È stato migliorato il feedback dei clienti sulla build delle app AEM dei clienti quando maven si trova ad affrontare problemi di connettività ai repository privati.
+* È‧stato‧migliorato‧il‧feedback‧dei‧clienti‧sulla‧build‧delle‧app‧AEM‧dei‧clienti‧quando‧maven‧si‧trova‧ad‧affrontare‧problemi‧di‧connettività‧ai‧repository‧privati.
