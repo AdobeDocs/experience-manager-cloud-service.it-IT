@@ -1,13 +1,13 @@
 ---
 title: Markdown
-description: Scopri in che modo l’editor dei frammenti di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti sia per la creazione delle pagine che per la distribuzione headless.
+description: Scopri in che modo l’editor dei frammenti di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti sia per la creazione della pagina che per la consegna headless.
 feature: Content Fragments
 role: User
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '534'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
