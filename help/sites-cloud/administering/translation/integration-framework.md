@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 source-git-commit: 294743b3ca309cc0de3295cb55679e647bb10756
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Per una panoramica delle funzioni di traduzione dei contenuti di AEM, vedi [Trad
 
 >[!TIP]
 >
->Se sei alle prime armi con la traduzione di contenuti, consulta il nostro [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti dei tuoi siti AEM utilizzando i potenti strumenti di traduzione di AEM, ideale per chi non ha esperienza di AEM o di traduzione.
+>Se non hai ancora tradotto i contenuti, fai riferimento al [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 ## Connessione a un fornitore di servizi di traduzione {#connecting-to-a-translation-service-provider}
 
@@ -73,7 +73,7 @@ Una singola configurazione del framework controlla come vengono tradotti il cont
 1. Passa alla posizione in cui desideri creare la configurazione nella struttura del contenuto. Questo è spesso basato su un sito specifico o può essere globale.
 1. Fornisci le seguenti informazioni nei campi, quindi tocca o fai clic su **Crea**.
    1. Seleziona **Tipo di configurazione** nel menu a discesa.
-   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione nella console **Cloud Services** così come nell’elenco a discesa delle proprietà della pagina.
+   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione nella console **Servizi cloud** così come nell’elenco a discesa delle proprietà della pagina.
    1. In alternativa, digita un **Nome** da utilizzare per il nodo dell’archivio in cui è memorizzata la configurazione.
 1. Nella finestra di dialogo **Modifica configurazione**, configura le proprietà nelle schede **Sites** e **Assets**, quindi tocca o fai clic su **Salva e chiudi**.
 
@@ -129,7 +129,7 @@ Se necessario, è possibile sovrascrivere tale associazione in una pagina discen
 Associa una pagina al fornitore di traduzione utilizzato per tradurre tale pagina e le relative pagine discendenti.
 
 1. Nella console Sites, seleziona la pagina da configurare e tocca o fai clic su **Visualizza proprietà**.
-1. Tocca o fai clic sulla scheda **Cloud Services**.
+1. Tocca o fai clic sulla scheda **Servizi cloud**.
 1. Seleziona la configurazione dall’elenco a discesa **Aggiungi configurazione**.
 1. Tocca o fai clic su **Salva e chiudi**.
 
@@ -138,6 +138,6 @@ Associa una pagina al fornitore di traduzione utilizzato per tradurre tale pagin
 Associa una pagina a un framework di integrazione della traduzione che definisce come eseguire la traduzione della pagina e delle relative pagine discendenti.
 
 1. Nella console Sites, seleziona la pagina da configurare e tocca o fai clic su **Visualizza proprietà**.
-1. Tocca o fai clic sulla scheda **Cloud Services**.
+1. Tocca o fai clic sulla scheda **Servizi cloud**.
 1. Seleziona la configurazione dall’elenco a discesa **Aggiungi configurazione**.
 1. Tocca o fai clic su **Salva e chiudi**.
