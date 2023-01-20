@@ -3,9 +3,9 @@ title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3053'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ L’uscita dalla porta flessibile è la scelta consigliata se non hai bisogno di
 
 ### Configurazione {#configuring-flexible-port-egress-provision}
 
-Una volta per programma, l’endpoint POST `/program/<programId>/networkInfrastructures` viene richiamato, passando semplicemente il valore di `flexiblePortEgress` per il parametro `kind` e area geografica. L’endpoint risponde con `network_id`, nonché altre informazioni, compreso lo stato. l&#39;intero insieme di parametri e la sintassi esatta, nonché informazioni importanti come i parametri che non possono essere modificati in un secondo momento, [possono essere referenziati nei documenti API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+Una volta per programma, l’endpoint POST `/program/<programId>/networkInfrastructures` viene richiamato, passando semplicemente il valore di `flexiblePortEgress` per il parametro `kind` e area geografica. L’endpoint risponde con `network_id`, nonché altre informazioni, compreso lo stato. Per informazioni sull’intero set di parametri e sulla sintassi esatta, nonché altre informazioni importanti (ad esempio, quali parametri non possono essere modificati in un secondo momento), consulta la [documentazione sulle API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 Una volta effettuata la chiamata, in genere sono necessari circa 15 minuti per il provisioning dell’infrastruttura di rete. Una chiamata all’[endpoint GET per infrastruttura di rete](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) di Cloud Manager mostrerebbe uno stato “ready”.
 
@@ -337,7 +337,7 @@ Per verificare che il traffico sia effettivamente in uscita all’indirizzo IP d
 ## Clienti con indirizzi in uscita dedicati legacy {#legacy-dedicated-egress-address-customers}
 
 Se hai effettuato il provisioning con un IP in uscita dedicato prima del 30.09.2021, la funzionalità IP in uscita dedicata supporta solo le porte HTTP e HTTPS.
-Questo include HTTP/1.1 e HTTP/2 se crittografati. Inoltre, un endpoint di uscita dedicato può comunicare con qualsiasi destinazione solo tramite HTTP/HTTPS sulle porte 80/443 rispettivamente.
+Questo include HTTP/1.1 e HTTP/2 se crittografati. Inoltre, un endpoint di uscita dedicato può comunicare con qualsiasi destinazione solo tramite HTTP/HTTPS rispettivamente sulle porte 80/443.
 
 ## Virtual Private Network (VPN) {#vpn}
 
