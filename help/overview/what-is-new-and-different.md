@@ -3,9 +3,9 @@ title: Differenze e novità - Adobe Experience Manager as a Cloud Service
 description: Differenze e novità - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1903'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,23 +67,23 @@ Questo approccio consente la scalabilità automatica in base alle esigenze di di
 
 ## Aggiornamenti AEM {#aem-updates}
 
-AEM as a Cloud Service ora utilizza l’integrazione continua e la distribuzione continua (CI/CD) per garantire che i progetti siano nella versione di AEM più recente. Ciò significa che le istanze di produzione e staging vengono aggiornate alla versione più recente AEM senza alcuna interruzione del servizio per gli utenti.
+AEM as a Cloud Service ora utilizza un approccio CI/CD (Continuous Integration/Continuous Delivery, integrazione continua e distribuzione continua), affinché tu possa lavorare sempre sui tuoi progetti con la versione più recente di AEM. Ciò significa che le istanze di produzione e staging vengono aggiornate alla versione più recente di AEM senza alcuna interruzione del servizio per gli utenti.
 
 >[!NOTE]
 >
->Se l’aggiornamento all’ambiente di produzione non riesce, Cloud Manager ripristina automaticamente l’ambiente di staging. Questa operazione viene eseguita automaticamente per assicurarsi che al termine di un aggiornamento, sia gli ambienti di staging che quelli di produzione si trovino nella stessa versione AEM.
+>Se l’aggiornamento dell’ambiente di produzione non riesce, Cloud Manager ripristina automaticamente l’ambiente di staging. Questa operazione viene eseguita automaticamente per assicurarsi che al termine di un aggiornamento, entrambi gli ambienti di staging e di produzione utilizzino la stessa versione di AEM.
 
-Esistono due tipi di aggiornamenti delle versioni AEM:
+Esistono due tipi di aggiornamenti delle versioni di AEM:
 
-* **Aggiornamenti alla manutenzione AEM**
+* **Aggiornamenti di manutenzione di AEM**
 
    * Possono essere rilasciati su base giornaliera.
-   * Sono principalmente a scopo di manutenzione, incluse le ultime correzioni di bug e gli aggiornamenti di sicurezza.
-   * Hanno un impatto minimo poiché le modifiche vengono applicate regolarmente.
+   * Vengono utilizzati principalmente a scopo di manutenzione, e possono contenere le correzioni di bug e gli aggiornamenti di sicurezza più recenti.
+   * Dal momento che le modifiche vengono applicate su base regolare, hanno un impatto minimo.
 
-* **Nuovi aggiornamenti delle funzioni**
+* **Aggiornamenti con nuove funzioni**
 
-   * Vengono rilasciati tramite un programma mensile prevedibile.
+   * Vengono rilasciati in base a una pianificazione mensile prevedibile.
 
 >[!TIP]
 >
