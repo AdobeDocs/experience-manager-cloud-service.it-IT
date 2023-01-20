@@ -3,7 +3,7 @@ title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1975'
 ht-degree: 100%
 
@@ -152,9 +152,9 @@ Configurare la miniatura della pagina
    * **Variante XF preferita**
       * Consente di definire la variante del frammento esperienza utilizzato per generare i metadati della pagina.
 
-### Cloud Services {#cloud-services}
+### Servizi cloud {#cloud-services}
 
-* **Configurazioni Cloud Service**: definizione delle proprietà per i servizi cloud
+* **Configurazioni Servizi cloud**: definizione delle proprietà per i servizi cloud
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
