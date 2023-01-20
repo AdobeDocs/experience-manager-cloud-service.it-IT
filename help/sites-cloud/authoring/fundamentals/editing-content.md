@@ -3,9 +3,9 @@ title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile modificarla per aggiornarne i contenuti
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3019'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -468,7 +468,7 @@ Una volta eseguito il blocco le informazioni di visualizzazione della console ve
 >
 >Il blocco di pagina può essere eseguito quando si impersona un utente. Tuttavia, una pagina bloccata in questo modo può essere sbloccata (dai clienti) solo utilizzando l’utente impersonato.
 >
->Non è possibile sbloccare le pagine impersonando l’utente che ha bloccato la pagina.
+>Non è consentito sbloccare le pagine bloccate impersonando l’utente che le ha boccate.
 >
 >Se l’utente che ha bloccato la pagina non è disponibile per sbloccare la pagina, contatta l’Assistenza clienti per valutare le opzioni per rimuovere il blocco.
 
@@ -484,7 +484,7 @@ Nel menu Informazioni pagina è presente l’opzione **Sblocca** e l’icona Blo
 >
 >Il blocco di pagina può essere eseguito quando si impersona un utente. Tuttavia, una pagina bloccata in questo modo può essere sbloccata (dai clienti) solo utilizzando l’utente impersonato.
 >
->Non è possibile sbloccare le pagine impersonando l’utente che ha bloccato la pagina.
+>Non è consentito sbloccare le pagine bloccate impersonando l’utente che le ha boccate.
 >
 >Se l’utente che ha bloccato la pagina non è disponibile per sbloccare la pagina, contatta l’Assistenza clienti per valutare le opzioni per rimuovere il blocco.
 
