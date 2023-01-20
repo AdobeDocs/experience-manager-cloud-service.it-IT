@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 5877f3c84ab6303520dd4697144e9b18d717b74f
 workflow-type: tm+mt
 source-wordcount: '3837'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -159,13 +159,13 @@ ht-degree: 97%
    + Altri concetti di onboarding {#concepts}
       + [Introduzione a Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [Profili Team e Prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
-      + [Gruppi di utenti delle notifiche](/help/journey-onboarding/user-groups.md)
+      + [Gruppi di utenti per le notifiche](/help/journey-onboarding/user-groups.md)
 + Versioni di prova di AEMaaCS {#trials}
    + Prove headless {#headless}
       + [Personalizzare il contenuto di un’app a reazione di esempio](/help/trials/headless/customize-app.md)
       + [Creare la struttura del contenuto per l’app](/help/trials/headless/content-structure.md)
       + [Crea contenuto headless](/help/trials/headless/create-content.md)
-      + [Estrarre contenuti tramite l’API di GraphQL](/help/trials/headless/extract-content.md)
+      + [Estrarre contenuti tramite l’API GraphQL](/help/trials/headless/extract-content.md)
 + Percorso di migrazione ad AEM as a Cloud Service {#migration-journey}
    + [Guida introduttiva di AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase di preparazione](/help/journey-migration/readiness.md)
@@ -287,7 +287,7 @@ ht-degree: 97%
          + [Struttura della gestione multisito per contenuti di destinazione](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [Gestione delle attività](/help/sites-cloud/authoring/personalization/activities.md)
          + [Gestione dei tipi di pubblico](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [Creazione e gestione delle offerte (Console Offerte)](/help/sites-cloud/authoring/personalization/offers.md)
+         + [Creazione e gestione delle offerte (console Offerte)](/help/sites-cloud/authoring/personalization/offers.md)
          + [Segmentazione](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Configurazione della segmentazione con ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registrazione, accesso e profilo utente](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -359,7 +359,7 @@ ht-degree: 97%
       + [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Configurazione IMS da utilizzare per l’integrazione con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
-      + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
+      + [Integrazione con Adobe Campaign ](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [Panoramica e novità](/help/assets/overview.md)
@@ -492,7 +492,7 @@ ht-degree: 97%
       + [Installa  [!DNL enhanced connector]  per  [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Rimuovere le dipendenze esterne per le installazioni esistenti](/help/assets/remove-external-dependencies.md)
       + [Configura  [!DNL enhanced connector]  per  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-      + [Aggiorna [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+      + [Aggiornare [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
    + [Introduzione](/help/forms/home.md)
    + [Funzioni principali](/help/forms/key-features.md)
@@ -512,7 +512,7 @@ ht-degree: 97%
       + [Revisione dei moduli convertiti](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=it#welcome-to-review-and-correct-editor)
    + Creare e pubblicare un modulo adattivo {#create-an-adaptive-form}
       + Prima di iniziare {#before-you-start}
-         + [Introduzione all’authoring di un Forms adattivo](/help/forms/introduction-forms-authoring.md)
+         + [Introduzione all’authoring di moduli adattivi](/help/forms/introduction-forms-authoring.md)
          + [Creare un modello](/help/forms/template-editor.md)
          + [Creare un tema](/help/forms/themes.md)
          + [Collegare le origini dati al Cloud Service](/help/forms/data-integration.md)
@@ -563,7 +563,7 @@ ht-degree: 97%
       + [Integrare con Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
       + [Integrare con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
       + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [Incorporare Forms adattivo in AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
+      + [Incorporare moduli adattivi in AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
    + Creare e utilizzare flussi di lavoro {#create-form-centric-workflows}
       + [Utilizzare passaggi incentrati su Forms in un flusso di lavoro + riferimento a passaggi](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilizzare le variabili in un flusso di lavoro incentrato su Forms](/help/forms/variable-in-aem-workflows.md)
@@ -654,8 +654,8 @@ ht-degree: 97%
    + [Domande frequenti](/help/commerce-cloud/faq.md)
 + Headless {#headless}
    + [Cos’è un CMS headless?](/help/headless/what-is-headless.md)
-   + [Introduzione a Headless AEM](/help/headless/introduction.md)
-   + [Developer Portal (risorse aggiuntive)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [Introduzione ad AEM Headless](/help/headless/introduction.md)
+   + [Portale per sviluppatori (risorse aggiuntive)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
    + Configurazione {#setup}
       + [Introduzione](/help/headless/setup/introduction.md)
       + [Configurazione](/help/headless/setup/create-configuration.md)
@@ -703,7 +703,7 @@ ht-degree: 97%
          + [Come mettere tutto insieme](/help/journey-headless/developer/put-it-all-together.md)
          + [Come vivere con la tua applicazione headless](/help/journey-headless/developer/go-live.md)
          + [Facoltativo - Come creare applicazioni a pagina singola con AEM](/help/journey-headless/developer/create-spa.md)
-         + [Developer Portal (risorse aggiuntive)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+         + [Portale per sviluppatori (risorse aggiuntive)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
       + Percorso Architect di contenuti headless {#architect}
          + [Panoramica del percorso Architect di contenuti AEM headless](/help/journey-headless/architect/overview.md)
          + [Modellazione dei contenuti per headless con AEM - Introduzione](/help/journey-headless/architect/introduction.md)
@@ -919,7 +919,7 @@ ht-degree: 97%
    + [Operazioni e manutenzione in AEM as a Cloud Service](/help/operations/home.md)
    + [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md)
    + [Servizio di replica dei contenuti](/help/operations/replication.md)
-   + [Monitoraggio dell&#39;infrastruttura e dei servizi in AEM as a Cloud Service](/help/operations/monitoring.md)
+   + [Monitoraggio dell’infrastruttura e dei servizi in AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Attività di manutenzione](/help/operations/maintenance.md)
    + [Backup e ripristino](/help/operations/backup.md)
    + [Processi asincroni](/help/operations/asynchronous-jobs.md)

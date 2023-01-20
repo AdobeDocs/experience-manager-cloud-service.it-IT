@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ L’utilizzo di nomi di dominio personalizzati con AEMaaCS presenta diverse limi
 
 >[!NOTE]
 >
->I domini personalizzati sono supportati in Cloud Manager **only** se utilizzi la rete CDN gestita AEM. Se porti il tuo CDN e [puntare alla CDN gestita AEM](/help/implementing/dispatcher/cdn.md) per gestire i domini non Cloud Manager dovrai usare quel CDN specifico.
+>I domini personalizzati sono supportati in Cloud Manager **solo** se utilizzi la rete CDN gestita AEM. Se utilizzi una tua CDN e [la indirizzi alla CDN gestita da AEM](/help/implementing/dispatcher/cdn.md), per gestire i domini non Cloud Manager dovrai usare quella specifica CDN.
 
 ## Flusso di lavoro {#workflow}
 
@@ -67,4 +67,4 @@ L’aggiunta di un nome di dominio personalizzato richiede l’interazione tra i
 
 >[!TIP]
 >
->L’impostazione di nomi di dominio personalizzati con AEM as a Cloud Service è in genere un processo semplice. Tuttavia, a volte possono verificarsi problemi di delega del dominio che possono richiedere 1-2 giorni lavorativi per la risoluzione. Per questo motivo, si consiglia vivamente di installare i domini molto prima della loro data di entrata in vigore. Vedere il documento [Verifica dello stato del nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) per ulteriori informazioni.
+>L’impostazione di nomi di dominio personalizzati con AEM as a Cloud Service è in genere un processo semplice. Tuttavia, a volte possono verificarsi problemi di delega del dominio la cui risoluzione può richiedere 1-2 giorni lavorativi. Per questo motivo, si consiglia vivamente di installare i domini con grande anticipo rispetto alla data di Go Live prevista. Per ulteriori informazioni, consulta il documento [Verifica dello stato del nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).

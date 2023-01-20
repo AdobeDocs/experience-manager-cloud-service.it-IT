@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
 workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -197,9 +197,9 @@ Se implementi l’immagine Docker con altri linguaggi di programmazione o esecuz
 
 ### Acquisire schermate e video {#capture-screenshots}
 
-L’immagine Docker può generare un output di test aggiuntivo (ad esempio schermate, video) e salvarli nel percorso specificato dalla variabile di ambiente `REPORTS_PATH`. Qualsiasi file trovato sotto la `REPORTS_PATH` sono inclusi nell’archivio dei risultati del test.
+L’immagine Docker può generare un output di test aggiuntivo (ad esempio schermate, video) e salvarli nel percorso specificato dalla variabile di ambiente `REPORTS_PATH`. Qualsiasi file trovato sotto `REPORTS_PATH` è incluso nell’archivio dei risultati del test.
 
-Se durante un&#39;esecuzione di un test dell&#39;interfaccia utente è stato creato un archivio dei risultati del test, il file di log del test contiene alla fine un riferimento alla posizione dell&#39;archivio dei risultati del test.
+Se durante l’esecuzione di un test dell’interfaccia utente è stato creato un archivio dei risultati del test, il file di registro del test contiene alla fine un riferimento alla posizione dell’archivio dei risultati del test.
 
 ```
 [...]

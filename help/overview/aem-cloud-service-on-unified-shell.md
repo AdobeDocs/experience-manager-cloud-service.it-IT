@@ -5,7 +5,7 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: aeb8244b4da17a0675b86a69727807abf45ca84a
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 68%
+ht-degree: 82%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 68%
 
 ## Panoramica {#overview}
 
-AEM as a Cloud Service (Author Service) è integrato con Unified Shell per migliorare l’esperienza utente e unificarla a tutte le altre applicazioni di Experience Cloud. L’impatto di questa integrazione può essere visto nell’intestazione superiore dell’applicazione, come illustrato di seguito.
+AEM as a Cloud Service (Servizio di authoring) è integrato con Unified Shell per migliorare l’esperienza utente e per coerenza con tutte le altre applicazioni di Experience Cloud. L’impatto di questa integrazione può essere visto nell’intestazione superiore dell’applicazione, come illustrato di seguito.
 
 ![immagine](/help/overview/assets/unifiedshell_header.png)
 
@@ -23,16 +23,16 @@ Offre i seguenti vantaggi:
 * Semplicità di passaggio a un’altra organizzazione o applicazione
 * Documentazione del prodotto migliorata
 * Pulsante di feedback semplificato all’interno del prodotto per segnalare i problemi o condividere idee con Adobe
-* Accesso agli annunci e alle notifiche globali dei prodotti oltre a notifiche specifiche per AEM as a Cloud Service
+* Accesso agli annunci e alle notifiche dei prodotti globali, oltre a notifiche specifiche di AEM as a Cloud Service
 
 ## Disattivazione di Unified Shell {#disabling-unified-shell}
 
 La funzionalità Unified Shell è attivata in AEM as a Cloud Service per impostazione predefinita. Tuttavia, nel caso in cui l’intestazione superiore sia stata personalizzata, si consiglia di disabilitare Unified Shell per evitare problemi nelle personalizzazioni. Per disattivare Unified Shell, effettua le seguiti operazioni:
 
 >[!NOTE]
->La shell unificata può essere disabilitata solo da un account con privilegi amministrativi.
+>La funzionalità Unified Shell può essere disabilitata solo da un account con autorizzazioni di livello amministratore.
 
-1. Passa a **Strumenti > Cloud Services**.
+1. Passa a **Strumenti > Servizi cloud**.
 
    All’utente amministratore verrà presentata la scheda di configurazione Unified Shell, come illustrato di seguito:
 

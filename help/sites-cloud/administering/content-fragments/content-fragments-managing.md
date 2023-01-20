@@ -7,7 +7,7 @@ exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
 source-wordcount: '1915'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 
 ## Console Frammenti di contenuto {#content-fragments-console}
 
-La console Frammenti di contenuto consente di accedere direttamente ai frammenti e alle attività correlate. Per maggiori informazioni, vedi:
+La console Frammenti di contenuto consente di accedere direttamente ai frammenti e alle attività correlate. Per ulteriori informazioni consulta:
 
 * [Struttura e gestione di base della console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
 
@@ -288,13 +288,13 @@ Per eliminare un frammento:
    >[!CAUTION]
    Se il frammento è già oggetto di riferimento da un altro frammento o da una pagina, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con il comando **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.
 
-## Ricerca di riferimenti padre del frammento {#parent-references-fragment}
+## Individuare i riferimenti principali di un frammento {#parent-references-fragment}
 
-È possibile accedere ai dettagli dei riferimenti padre da **Riferimenti** della colonna [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+È possibile accedere ai dettagli dei riferimenti pricipali dalla colonna **Riferimenti** della [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
-## Ricerca di copie in lingua del frammento {#language-copies-fragment}
+## Individuare le copie per lingua di un frammento {#language-copies-fragment}
 
-I dettagli delle copie per lingua sono accessibili dal **Lingua** della colonna [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+I dettagli delle copie per lingua sono accessibili dalla colonna **Lingua** della [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Timeline per i frammenti di contenuto {#timeline-for-content-fragments}
 

@@ -5,7 +5,7 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: 48ac0566409f74d3ffa389e5016af0d14419dc3a
 workflow-type: tm+mt
 source-wordcount: '14056'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -28,11 +28,11 @@ Inoltre, vedi:
 * [Accessibilità in Assets](/help/assets/accessibility.md)
 * [Configurazione dell’editor Rich Text per generare contenuto accessibile](/help/implementing/developing/extending/rte-accessible-content.md)
 
-Le linee guida sono classificate in base a tre livelli di conformità: Livello A (il più basso), livello AA e livello AAA (il più alto). Brevemente, i livelli sono definiti come segue:
+Le linee guida sono classificate in base a tre livelli di conformità: livello A (il più basso), livello AA e livello AAA (il più alto). Brevemente, i livelli sono definiti come segue:
 
 * **Livello A**: il sito ha raggiunto un livello minimo di accessibilità di base. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A.
 * **Livello AA**: si tratta di un livello di accessibilità ideale da porsi come obiettivo, in cui il sito raggiunge un livello di accessibilità di base, affinché sia accessibile al maggior numero di persone nella gran parte delle situazioni e con l’utilizzo di più tecnologie possibili. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A e livello AA.
-* **Livello AAA:** Il sito presenta un livello elevato di accessibilità. Per raggiungere questo livello, devono essere soddisfatti tutti i criteri di successo di livello A, AA e AAA.
+* **Livello AAA:** il sito ha raggiunto un livello molto alto di accessibilità. Per arrivare a questo livello sono stati soddisfatti tutti i criteri di successo di livello A, AA e AAA.
 
 Quando si crea un sito, è necessario determinare il livello complessivo che si desidera ottenere.
 
@@ -52,9 +52,9 @@ Nella sezione seguente sono illustrate le [basi delle linee guida WCAG 2.1](http
 
 ### Alternative testuali (1.1)  {#text-alternatives}
 
-[Linea guida 1.1 - Alternative testuali: Fornisci alternative testuali per qualsiasi contenuto non testuale in modo che possa essere convertito in altri formati richiesti, ad esempio stampa a caratteri grandi, Braille, sintesi vocale, simboli o un linguaggio più semplice.](https://www.w3.org/TR/WCAG/#text-alternatives)
+[Linea guida 1.1 - Alternative testuali: fornire alternative testuali per qualsiasi contenuto non testuale in modo che possa essere convertito in altri formati richiesti, come la stampa a caratteri grandi, il Braille, la sintesi vocale, i simboli o un linguaggio più semplice.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
-### Contenuto non testuale (1.1.1)  {#non-text-content}
+### Contenuto non testuale (1.1.1) {#non-text-content}
 
 * Criterio di successo 1.1.1
 * Livello A
@@ -62,11 +62,11 @@ Nella sezione seguente sono illustrate le [basi delle linee guida WCAG 2.1](http
 
 #### Finalità - Contenuto non testuale (1.1.1) {#purpose-non-text-content}
 
-Le informazioni contenute in una pagina web possono essere fornite in diversi formati non testuali, ad esempio immagini, video, animazioni, grafici e grafici. Le persone non vedenti o con gravi disabilità visive non sono in grado di visualizzare contenuti non testuali, ma possono accedere al contenuto testuale tramite la lettura da parte di un assistente vocale o la presentazione in forma tattile da parte di un dispositivo di visualizzazione Braille. Pertanto, fornendo alternative testuali al contenuto in formato grafico, le persone che non possono vedere il contenuto grafico possono accedere a una versione equivalente delle informazioni fornite dal contenuto.
+Le informazioni su una pagina Web possono essere fornite in diversi formati non testuali, ad esempio immagini, video, animazioni, tabelle e grafici. Le persone non vedenti o con gravi problemi visivi non sono in grado di vedere il contenuto non testuale, ma possono accedere ai contenuti testuali letti mediante un assistente vocale, o presentati in forma tattile da un dispositivo Braille. Così, grazie alla disponibilità di alternative testuali al contenuto in formato grafico, i non vedenti possono accedere a una versione equivalente delle informazioni veicolate.
 
 Un ulteriore vantaggio è rappresentato dal fatto che le alternative testuali consentono l’indicizzazione dei contenuti non testuali da parte dei motori di ricerca.
 
-#### Come soddisfare il criterio - Contenuto non testuale (1.1.1)  {#how-to-meet-non-text-content}
+#### Come soddisfare il criterio - Contenuto non testuale (1.1.1) {#how-to-meet-non-text-content}
 
 Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire un&#39;alternativa testuale equivalente. Ciò può essere effettuato tramite il campo **Testo alternativo**, vedi ad esempio l’**[Immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it)** del componente di base.
 
@@ -74,17 +74,17 @@ Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire
 >
 >Alcuni componenti di base predefiniti, come il **[carosello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=it)**, non forniscono un campo di **testo alternativo** per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se il campo **Etichetta** è disponibile nella scheda per l’**[accessibilità](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=it#accessibility-tab)** dell’intero componente.
 >
->Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo deve configurarli per supportare la `alt` in modo che gli autori possano aggiungerlo al contenuto (consulta Aggiunta di supporto per elementi e attributi di HTML aggiuntivi).
+>Quando implementi le versioni di questi componenti per l’istanza di AEM, il team di sviluppo dovrà configurarli per il supporto dell’attributo `alt`, affinché gli autori possano aggiungerlo al contenuto (vedi la sezione Aggiunta di supporto per elementi e attributi HTML aggiuntivi).
 >
 >Alcuni componenti di base predefiniti, come il **[carosello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=it)**, non forniscono un campo di **testo alternativo** per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se il campo **Etichetta** è disponibile nella scheda per l’**[accessibilità](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=it#accessibility-tab)** dell’intero componente.
 >
->Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo deve configurarli per supportare la `alt` in modo che gli autori possano aggiungerlo al contenuto (consulta [Aggiunta di supporto per elementi e attributi di HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Quando implementi le versioni di questi componenti per l’istanza AEM, il team di sviluppo dovrà configurarli per supportare l’attributo `alt`, affinché gli autori possano aggiungerlo al contenuto (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 In AEM il campo **Testo alternativo** deve essere compilato per impostazione predefinita. Se l’immagine è puramente decorativa e un testo alternativo sarebbe superfluo, seleziona l’opzione **L’immagine è decorativa**.
 
 #### Creazione di buone alternative testuali  {#creating-good-text-alternatives}
 
-Esistono varie forme di contenuto non testuale, pertanto il valore del testo alternativo dipende dal ruolo che l’immagine svolge nella pagina web. Alcune regole generali che puoi trovare utili includono:
+Esistono varie forme di contenuti non testuali, di conseguenza il valore del testo alternativo dipende dal ruolo dell’elemento grafico all’interno della pagina Web. Alcune regole generali che puoi trovare utili includono:
 
 * Le alternative testuali dovrebbero essere sintetiche ma veicolare chiaramente le informazioni essenziali fornite dal contenuto non testuale.
 * È bene evitare descrizioni eccessivamente lunghe (oltre 100 caratteri). Se un testo alternativo richiede una descrizione più dettagliata:
@@ -115,7 +115,7 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 >
 >Dovrebbe essere previsto un livello adeguato di contrasto tra lo sfondo e il testo in primo piano; questo elemento viene discusso più dettagliatamente in [Contrasto (minimo) (1.4.3)](#contrast-minimum).
 
-#### Ulteriori informazioni - Contenuto non testuale (1.1.1)  {#more-information-non-text-content}
+#### Ulteriori informazioni - Contenuto non testuale (1.1.1) {#more-information-non-text-content}
 
 * [Comprendere i criteri di successo 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Come soddisfare i criteri di successo 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
@@ -436,7 +436,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 1.3.
 
 I designer spesso si concentrano sulle caratteristiche di progettazione visiva, come il colore, la forma, lo stile del testo o la posizione assoluta o relativa di un contenuto durante la presentazione delle informazioni. Anche se queste possono essere tecniche di progettazione molto potenti per veicolare le informazioni (e possono migliorare l’accessibilità complessiva per normovedenti ma con particolari esigenze di accessibilità cognitive), le persone non vedenti o ipovedenti potrebbero non essere in grado di accedere alle informazioni che richiedono l’identificazione visiva di attributi come la posizione, il colore o la forma.
 
-Allo stesso modo, le informazioni che richiedono di distinguere tra suoni diversi (ad esempio, contenuti parlati da voci maschili o femminili) presenteranno barriere di accessibilità per le persone con disabilità uditive, se non sono incluse in un testo alternativo per il contenuto audio.
+Allo stesso modo, le informazioni che richiedono di distinguere tra suoni diversi (ad esempio, contenuti parlati da voci di sesso maschile o femminile) presenteranno problemi di accessibilità per le persone con disabilità uditive, se non vengono incluse in un testo alternativo per il contenuto audio.
 
 >[!NOTE]
 >
@@ -488,7 +488,7 @@ Qualunque colore sia utilizzato per trasmettere le informazioni, accertati che q
 
 Ad esempio, accertati che le informazioni fornite dal colore siano presenti in modo esplicito anche nel testo.
 
-Se il colore viene utilizzato come spunto per fornire informazioni, è necessario fornire un ulteriore segnale visivo, ad esempio la modifica dello stile (grassetto, corsivo) o del font. Questo aiuta le persone con problemi di vista o con problemi di vista a colori a identificare le informazioni. Tuttavia, non vi si può fare completo affidamento, in quanto non aiuterà le persone che non possono vedere affatto la pagina. Per veicolare tali informazioni a utenti non vedenti, è in alcuni casi utile fornire testo nascosto o utilizzare soluzioni a livello di programmazione, come la [suite di standard web Accessible Rich Internet Applications (ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/).
+Se il colore viene utilizzato come spunto per fornire informazioni, è necessario fornire un ulteriore segnale visivo, come la modifica dello stile (ad esempio, grassetto, corsivo) o del font. Questo aiuta le persone con problemi di vista o daltonismo a identificare le informazioni. Tuttavia, non vi si può fare completo affidamento, in quanto non aiuterà le persone che non possono vedere affatto la pagina. Per veicolare tali informazioni a utenti non vedenti, è in alcuni casi utile fornire testo nascosto o utilizzare soluzioni a livello di programmazione, come la [suite di standard web Accessible Rich Internet Applications (ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/).
 
 #### Ulteriori informazioni - Uso del colore (1.4.1) {#more-information-use-of-color}
 
@@ -611,9 +611,9 @@ Oltre a seguire le linee guida in [Come soddisfare i criteri di successo 1.4.4](
 
 #### Finalità - Immagini di testo (1.4.5)  {#purpose-images-of-text}
 
-Le immagini di testo vengono spesso utilizzate quando si preferisce un particolare stile di testo; ad esempio, un logotipo o se il testo è stato generato da un&#39;altra origine (ad esempio, la scansione di un documento cartaceo). Tuttavia, rispetto al testo presentato in HTML e formattato tramite CSS, le immagini di testo non hanno la flessibilità di modificare le dimensioni o l’aspetto che potrebbe essere necessario per le persone con disabilità visive o difficoltà di lettura.
+Le immagini di testo vengono spesso utilizzate quando si preferisce un particolare stile di testo; ad esempio un logotipo, o se il testo è stato generato da un’altra origine, ad esempio la scansione di un documento cartaceo. Tuttavia, rispetto al testo presentato in HTML e formattato tramite CSS, le immagini di testo non hanno la flessibilità di modificare le dimensioni o l’aspetto che potrebbe essere necessario per le persone con disabilità visive o difficoltà di lettura.
 
-#### Come soddisfare il criterio - Immagini di testo (1.4.5)  {#how-to-meet-images-of-text}
+#### Come soddisfare il criterio - Immagini di testo (1.4.5) {#how-to-meet-images-of-text}
 
 Se è necessario utilizzare le immagini di testo, utilizza CSS per sostituirle con testo equivalente in HTML, in modo che sia possibile personalizzare il testo. Per visualizzare un esempio di come ottenere questo risultato, consulta [C30: Utilizzare CSS per sostituire il testo con immagini di testo e fornire i comandi dell’interfaccia utente per effettuare il passaggio](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
 
@@ -1063,7 +1063,7 @@ L’obiettivo di questo criterio di successo è garantire prevedibilità durante
 * nuove finestre aperte quando un componente diventa attivo;
 * stato di attivazione che passa a un altro componente quando un componente diventa attivo.
 
-Lo stato attivo può essere spostato su un controllo tramite la tastiera (ad esempio, tasto di tabulazione su un controllo) o il mouse (ad esempio, clic su un campo di testo). Lo spostamento del mouse su un controllo non ne determina l’attivazione, a meno che questo comportamento non venga implementato mediante script. Tenere presente che per alcuni tipi di controlli, facendo clic su un controllo è possibile attivare anche il controllo (ad esempio, pulsante), che a sua volta può determinare una modifica nel contesto.
+Lo stato di attivazione può essere passato a un altro controllo tramite la tastiera (ad esempio, tasto Tab per passare da un controllo all’altro) o il mouse (ad esempio, clic su un campo di testo). Lo spostamento del mouse su un controllo non ne determina l’attivazione, a meno che questo comportamento non venga implementato mediante script. Tieni presente che per alcuni tipi di controlli, il clic su di esso ne determina l’attivazione (ad esempio, un pulsante), che a sua volta determina un cambiamento del contesto.
 
 #### Come soddisfare il criterio - Al focus (3.2.1) {#how-to-meet-on-focus}
 
@@ -1212,7 +1212,8 @@ Il posizionamento delle etichette è importante anche in quanto aiuta a individu
 
 * Caselle di selezione o pulsanti di scelta:
 Le etichette sono posizionate immediatamente a destra del campo.
-* Tutti gli altri componenti del modulo (ad esempio caselle di testo, caselle combinate): Le etichette sono posizionate immediatamente sopra o a sinistra del campo.
+* Tutti gli altri componenti del modulo (ad esempio caselle di testo, caselle combinate):
+Le etichette sono posizionate immediatamente sopra o a sinistra del campo.
 
 Nei moduli semplici con funzionalità molto limitata, l’etichettatura appropriata di un pulsante `Submit` può fungere da etichetta per il campo adiacente (ad esempio `Search`). Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
 

@@ -7,7 +7,7 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
 source-wordcount: '2070'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,8 +63,8 @@ Per facilitare questa fase, puoi visualizzare un’anteprima della [Struttura ad
 
 Il numero di canali di comunicazione aumenta ogni anno. In genere i canali si distinguono in base al meccanismo di consegna, come segue:
 
-* canale fisico; ad esempio, desktop, mobile.
-* forma di consegna in un canale fisico; ad esempio, la &quot;pagina di dettaglio del prodotto&quot;, la &quot;pagina di categoria del prodotto&quot; per desktop o &quot;web mobile&quot;, &quot;app mobile&quot; per dispositivi mobili.
+* Canale fisico; ad esempio, desktop, dispositivi mobili.
+* Forma di consegna in un canale fisico, ad esempio “pagina dei dettagli di un prodotto”, “pagina della categoria del prodotto” per desktop oppure “web mobile”, “app mobile” per dispositivi mobili.
 
 Tuttavia, probabilmente non vorrai utilizzare esattamente gli stessi contenuti per tutti i canali: vorrai piuttosto ottimizzarli in base ai singoli canali.
 
