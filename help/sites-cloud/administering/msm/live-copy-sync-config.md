@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | Attiva in caso di attivazione Blueprint | Pubblica la Live Copy quando il sorgente viene pubblicato | Al momento dell’attivazione | `targetActivate` |
 | Disattiva in caso di disattivazione Blueprint | Disattiva la Live Copy quando il sorgente è disattivato | Alla disattivazione | `targetDeactivate` |
 | Invia dopo modifica | Invia il contenuto alla Live Copy quando il sorgente viene modificato<br>Utilizza questa configurazione di rollout con moderazione in quanto utilizza il trigger Durante la modifica. | In caso di modifica | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| Invia dopo modifica (superficiale) | Invia il contenuto alla Live Copy quando la pagina blueprint viene modificata, senza aggiornare i riferimenti (ad esempio, per le copie superficiali)<br>Utilizza questa configurazione di rollout con moderazione in quanto utilizza l’attivatore Al momento della modifica. | In caso di modifica | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| Invia dopo modifica (superficiale) | Invia il contenuto alla Live Copy quando la pagina blueprint viene modificata, senza aggiornare i riferimenti (ad esempio, per le copie superficiali)<br>Utilizza questa configurazione di rollout con moderazione in quanto utilizza il trigger In caso di modifica. | In caso di modifica | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | Promuovi lancio | Configurazione rollout standard per la promozione di pagine di lanci. | Al momento del rollout | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### Azioni di sincronizzazione {#synchronization-actions}
