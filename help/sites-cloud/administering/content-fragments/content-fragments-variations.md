@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2310'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -307,7 +307,7 @@ Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; l
 
 >[!CAUTION]
 Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
-Tuttavia, la formattazione della risorsa (ad esempio, la dimensione) deve essere eseguita nel [editor di pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
+La formattazione della risorsa (ad esempio, dimensione) deve invece essere eseguita nell’[editor pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
 
 >[!NOTE]
 Esistono diversi metodi per aggiungere [immagini](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
@@ -343,7 +343,7 @@ Questa opzione è disponibile quando **Testo su più righe** è configurato con 
 
 >[!CAUTION]
 Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
-Tuttavia, la formattazione della risorsa (ad esempio, la dimensione) deve essere eseguita nel [editor di pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
+In ogni caso, la formattazione della risorsa (ad esempio, dimensione) deve invece essere eseguita nell’[editor pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
 
 >[!NOTE]
 Esistono diversi metodi per aggiungere [immagini](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
@@ -374,7 +374,7 @@ Esistono diversi metodi per aggiungere [immagini](/help/sites-cloud/administerin
 id="aemcloud_sites_contentfragments_variations"
 title="Varianti - Authoring dei contenuti di frammenti "
 abstract="Scopri come creare varianti di contenuto da utilizzare con canali specifici."
-additional-url="https://video.tv.adobe.com/v/333295" text="Varianti dei frammenti di contenuto"
+additional-url="https://video.tv.adobe.com/v/333295/?captions=ita" text="Varianti dei frammenti di contenuto"
 
 ### Creazione di una variante {#creating-a-variation}
 
