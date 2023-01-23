@@ -26,7 +26,7 @@ Adobe Launch è necessario per gestire le proprietà lato client sia per Analyti
 
 ## Creazione della configurazione di Adobe Target {#create-configuration}
 
-1. Passa a **Strumenti** 	 **Servizi cloud**.
+1. Passa a **Strumenti** → **Servizi cloud**.
    ![Navigazione](assets/cloudservice1.png "Navigazione")
 2. Seleziona **Adobe Target**.
 3. Seleziona il pulsante **Crea**.
