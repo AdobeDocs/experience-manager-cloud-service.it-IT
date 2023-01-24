@@ -2,10 +2,10 @@
 title: Ambienti di sviluppo rapidi
 description: Scopri come sfruttare gli ambienti di sviluppo rapido per iterazioni di sviluppo rapide in un ambiente cloud.
 hidefromtoc: true
-source-git-commit: 983901387d059a98942b4f7c533770a55dd4ff4a
+source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
 workflow-type: tm+mt
-source-wordcount: '2114'
-ht-degree: 7%
+source-wordcount: '2350'
+ht-degree: 6%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 >[!AVAILABILITY]
 >
->Questa funzione non è ancora disponibile.
+>Questa funzione sarà gradualmente disponibile per i clienti durante tutto il mese di febbraio.
 
 Per implementare le modifiche, gli ambienti di Cloud Development correnti richiedono l’utilizzo di un processo che utilizzi un’ampia protezione del codice e regole di qualità denominate pipeline CI/CD. Per le situazioni in cui sono necessari cambiamenti rapidi e iterativi, Adobe ha introdotto gli RDE (Rapid Development Environments, RDE in breve).
 
@@ -30,9 +30,7 @@ Ogni programma è fornito con un RDE. In caso di account Sandbox, saranno iberna
 
 In genere, un RDE viene utilizzato da un singolo sviluppatore alla volta per testare e eseguire il debug di una funzione specifica. Al termine della sessione di sviluppo, l’RDE può essere reimpostato in uno stato predefinito per l’utilizzo successivo.
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
-
-Additional RDEs may be purchased for Production programs -->
+Ulteriori RDE possono essere concessi in licenza per i programmi Produzione (non sandbox).
 
 ## Abilitazione dell’RDE in un programma {#enabling-rde-in-a-program}
 
@@ -388,14 +386,17 @@ Sebbene l’RDE sia in molti modi simile a un ambiente di sviluppo cloud, esisto
 
 Per questi motivi, dopo aver convalidato il codice in un ambiente RDE, devi distribuire il codice in un ambiente di sviluppo Cloud utilizzando la pipeline non di produzione. Infine, testa il codice prima di distribuirlo con la pipeline di produzione.
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
+Tieni presente anche le seguenti considerazioni specifiche sulla soluzione:
 
-## How many RDEs do I need? {#how-many-rds-do-i-need}
+* Gli RDE non supportano attualmente la visualizzazione e il debug del codice front-end distribuito utilizzando la pipeline front-end di Cloud Manager.
 
-The purchase of additional RDEs for Production programs will be possible beginning with late January.
 
-The number of RDEs needed depends on the make-up and processes of an organization. The most flexible model is where an organization purchases a dedicated RDE for each one of their AEM CS developers. In this model, each developer can test their code on the RDE without needing to coordinate with other team members around whether an RDE environment is available.
+## Di quanti RDE ho bisogno? {#how-many-rds-do-i-need}
 
-At the other extreme, a team with a single RDE may use internal processes to coordinate which developer can use the environment at a given time. This can possibly be whenever a developer has hit an intermediate feature milestone and is ready to validate in a Cloud environment where they can quickly make the changes they need.
+È disponibile un RDE per ogni soluzione con licenza e Adobe offre anche altri RDE, che possono essere concessi in licenza per i programmi di produzione (non sandbox).
 
-An intermediate model is one where an organization purchases a number of RDEs that will create a situation in which not every developer will have a dedicated environment, but there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments. -->
+Il numero di RDE necessari dipende dalla composizione e dai processi di un&#39;organizzazione. Il modello più flessibile è quello in cui un’organizzazione acquista un RDE dedicato per ciascuno dei propri sviluppatori AEM Cloud Service. In questo modello, ogni sviluppatore può testare il proprio codice sull’RDE senza coordinarsi con altri membri del team riguardo alla disponibilità di un ambiente RDE.
+
+All’altro estremo, un team con un singolo RDE può utilizzare processi interni per coordinare quali sviluppatori possono utilizzare l’ambiente in un dato momento. Questo può accadere ogni volta che uno sviluppatore raggiunge una fase cardine di una funzione intermedia ed è pronto per la convalida in un ambiente Cloud in cui può apportare rapidamente le modifiche necessarie.
+
+Un modello intermedio è quello in cui un’organizzazione acquista un numero di RDE, quindi c’è una maggiore probabilità che un RDE non utilizzato sia disponibile. Una strategia potrebbe essere quella di allocare un RDE per team di script o funzionalità principali. I processi interni possono essere utilizzati per coordinare l’utilizzo degli ambienti.
