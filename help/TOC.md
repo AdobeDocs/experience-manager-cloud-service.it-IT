@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a3f7a6759ca41d929e250171e52e43c21ad9450b
+source-git-commit: 592810c45c89d569644263c01b843d51761ebe8d
 workflow-type: tm+mt
-source-wordcount: '3845'
+source-wordcount: '3849'
 ht-degree: 98%
 
 ---
@@ -165,7 +165,7 @@ ht-degree: 98%
       + [Personalizzare il contenuto di un’app a reazione di esempio](/help/trials/headless/customize-app.md)
       + [Creare la struttura del contenuto per l’app](/help/trials/headless/content-structure.md)
       + [Crea contenuto headless](/help/trials/headless/create-content.md)
-      + [Estrarre contenuti tramite l’API GraphQL](/help/trials/headless/extract-content.md)
+      + [Estrarre contenuti tramite l’API di GraphQL](/help/trials/headless/extract-content.md)
 + Percorso di migrazione ad AEM as a Cloud Service {#migration-journey}
    + [Guida introduttiva di AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase di preparazione](/help/journey-migration/readiness.md)
@@ -526,6 +526,7 @@ ht-degree: 98%
          + [Utilizzare il CAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms.md)
          + [Utilizza componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
          + [Applicare una firma scarabocchio](/help/forms/signing-forms-using-scribble.md)
+         + [Supporto della nuova localizzazione delle lingue](/help/forms/supporting-new-language-localization.md)
          + [Aggiungere una tabella a un modulo adattivo](/help/forms/adaptive-forms-tables.md)
       + Configurare il layout e applicare lo stile a un modulo adattivo {#configure-layout-of-an-adaptive-form}
          + [Impostare il layout di un modulo adattivo](/help/forms/layout-capabilities-adaptive-forms.md)
