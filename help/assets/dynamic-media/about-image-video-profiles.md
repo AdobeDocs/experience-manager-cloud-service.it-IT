@@ -4,9 +4,9 @@ description: Un profilo immagine o un profilo video è una ricetta per le opzion
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f2f805043ab3037cb8dcc8636ab162c9d0f80e19
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Vedi [Regola le dimensioni batch del flusso di lavoro di rielaborazione](#adjust
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
-Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
+Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
 
 -->
 
@@ -74,13 +74,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Seleziona dall’elenco a discesa nell’angolo in alto a sinistra della pagina. **[!UICONTROL Timeline]**.
 1. Nell’angolo in basso a sinistra della pagina, a destra della [!UICONTROL Commento] , seleziona l’icona del carrello ( **^** ).
 
-   ![Rielaborazione del flusso di lavoro delle risorse 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Schermata delle risorse nell’Experience Manager che mostra una cartella selezionata di risorse, l’elenco a discesa Timeline evidenziato, il pulsante Avvia flusso di lavoro evidenziato e anche l’icona del carrello a destra del campo Commento evidenziato.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. Seleziona **[!UICONTROL Avvia flusso di lavoro]**.
 1. Da **[!UICONTROL Avvia flusso di lavoro]** elenco a discesa, scegli **[!UICONTROL Scene7: Rielaborazione delle risorse]**.
 1. (Facoltativo) In **Immetti il titolo del flusso di lavoro** campo di testo, immetti un nome per il flusso di lavoro. Se necessario, puoi utilizzare il nome per fare riferimento all’istanza del flusso di lavoro.
 
-   ![Rielaborazione delle risorse 2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![Schermata dell’interfaccia utente della Timeline con &quot;Scene7: Rielabora risorse&quot; selezionate dall’elenco a discesa Avvia flusso di lavoro ed evidenziato il pulsante Start .](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
 1. Seleziona **[!UICONTROL Inizio]**, quindi seleziona **[!UICONTROL Conferma]**.
 
@@ -95,13 +95,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. In [!DNL Experience Manager], seleziona **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, seleziona **[!UICONTROL Strumenti]** Icona (martello) > **[!UICONTROL Flusso di lavoro > Modelli]**.
 1. Nella pagina Modelli di flusso di lavoro, seleziona Vista a schede o Vista a elenco **[!UICONTROL Scene7: Rielaborazione delle risorse]**.
 
-   ![Pagina Modelli di flusso di lavoro con Scene7: Rielaborazione del flusso di lavoro delle risorse selezionato nella vista a schede](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![Schermata della pagina dei modelli di flusso di lavoro con &quot;Scene7: Rielabora il flusso di lavoro delle risorse selezionato nella vista Scheda dell’Experience Manager.](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
 1. Nella barra degli strumenti, seleziona **[!UICONTROL Modifica]**. Viene visualizzata una nuova scheda del browser Scene7: Rielabora la pagina del modello di flusso di lavoro Assets.
 1. Su Scene7: Rielabora la pagina del flusso di lavoro delle risorse, seleziona nell’angolo in alto a destra **[!UICONTROL Modifica]** per &quot;sbloccare&quot; il flusso di lavoro.
 1. Nel flusso di lavoro, seleziona il componente Caricamento in batch di Scene7 per aprire la barra degli strumenti, quindi seleziona **[!UICONTROL Configura]** nella barra degli strumenti.
 
-   ![Componente Caricamento in batch di Scene7](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![Schermata del componente &quot;Caricamento in batch di Scene7&quot; su &quot;Scene7: Rielabora le risorse&quot; con il puntatore del mouse che passa sopra l’icona &quot;Configura&quot;.](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
 1. Sulla **[!UICONTROL Caricamento in batch in Scene7 - Proprietà passaggio]** impostare quanto segue:
    * In **[!UICONTROL Titolo]** e **[!UICONTROL Descrizione]** campi di testo, immettere un nuovo titolo e una nuova descrizione per il processo, se necessario.
@@ -111,13 +111,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * In **[!UICONTROL Campo batch]**, immetti il numero massimo di risorse (50-1000) da elaborare in un processo di caricamento batch di elaborazione batch del server Dynamic Media.
    * Seleziona **[!UICONTROL Avanzamento al timeout]** se desideri avanzare quando viene raggiunto il timeout. Deseleziona se desideri passare alla casella in entrata quando viene raggiunto il timeout.
 
-   ![Finestra di dialogo Proprietà](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![Schermata della pagina &quot;Caricamento in batch in Scene7 - Proprietà passaggio&quot;.](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
 1. Nell&#39;angolo in alto a destra del **[!UICONTROL Caricamento in batch in Scene7 - Proprietà passaggio]** finestra di dialogo, seleziona **[!UICONTROL Fine]**.
 
 1. Nell’angolo in alto a destra di Scene7: Rielabora la pagina del modello di flusso di lavoro Assets, seleziona **[!UICONTROL Sincronizzazione]**. Quando vedi **[!UICONTROL Sincronizzato]**, il modello di runtime del flusso di lavoro viene sincronizzato correttamente e pronto per rielaborare le risorse in una cartella.
 
-   ![Sincronizzazione del modello di flusso di lavoro](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Schermata delle risorse nell’Experience Manager che mostra una cartella selezionata di risorse, l’elenco a discesa Timeline evidenziato, il pulsante Avvia flusso di lavoro evidenziato e anche l’icona del carrello a destra del campo Commento evidenziato.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. Chiudi la scheda del browser che mostra Scene7: Rielabora il modello di flusso di lavoro Assets.
 

@@ -4,9 +4,9 @@ description: Scopri come lavorare con i video 360 e Virtual Reality (VR) in Dyna
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Vedi anche [Gestione dei predefiniti per visualizzatori](/help/assets/dynamic-me
 
 Seleziona [Stazione Spaziale 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) per aprire una finestra del browser e guardare un video a 360°. Durante la riproduzione del video, trascinare il puntatore in una nuova posizione per modificare l’angolo di visualizzazione.
 
-![Campione video 360](assets/6_5_360videoiss_simplified.png)
+![Video frame da Space Station 360](assets/6_5_360videoiss_simplified.png)
 *Frame video da Space Station 360*
 
 ## Video e Adobe Premiere Pro 360/VR {#vr-video-and-adobe-premiere-pro}
@@ -42,7 +42,7 @@ Vedi [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-36
 
 360 risorse video caricate in [!DNL Experience Manager] sono etichettate come **Multimedia** in una pagina Risorsa, simile alla normale risorsa video.
 
-![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
+![Una risorsa video 360 caricata visualizzata nella vista a schede](assets/6_5_360video-selecttopreview.png)
 *Una risorsa video 360 caricata visualizzata nella vista a schede. La risorsa viene etichettata come Multimedia.*
 
 **Carica le risorse da utilizzare con il visualizzatore video 360:**
@@ -106,25 +106,25 @@ Vedi [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/
 
 1. In **[!UICONTROL Risorse]**, passa a un video 360 esistente creato. Per aprirlo in modalità anteprima, seleziona la risorsa video 360.
 
-   ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
+   ![Schermata di una risorsa video 360 caricata, come mostrato nella vista a schede dell’Experience Manager.](assets/6_5_360video-selecttopreview-1.png)
 
    Per visualizzare l’anteprima del video, seleziona la risorsa video 360.
 
 1. Nella pagina di anteprima, nell’angolo in alto a sinistra della pagina, seleziona l’elenco a discesa, quindi seleziona **[!UICONTROL Visualizzatori]**.
 
-   ![6_5_360visualizzatori di anteprima video](assets/6_5_360video-preview-viewers.png)
+   ![Schermata della selezione dei visualizzatori per visualizzare l’elenco dei visualizzatori video disponibili.](assets/6_5_360video-preview-viewers.png)
 
    Dall’elenco Visualizzatori, seleziona **[!UICONTROL Video360_social]**, quindi effettua una delle seguenti operazioni:
 
    * Per modificare l’angolo di visualizzazione della scena statica, trascinare il puntatore sul video.
    * Per iniziare la riproduzione, selezionare il **[!UICONTROL Play]** pulsante . Durante la riproduzione del video, trascinate il puntatore sull’angolo di visualizzazione per modificarlo.
 
-   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Schermata video a 360°.*
+   ![Schermata di un utente che seleziona il visualizzatore Video360_Social per visualizzare in anteprima un video a 360 gradi.](assets/6_5_360video-preview-video360-social.png)*Schermata video a 360°.*
 
    * Dall’elenco Visualizzatori, seleziona **[!UICONTROL Video360VR]**.
 
       Il video Virtual Reality (VR) è un video coinvolgente a cui è possibile accedere utilizzando cuffie per realtà virtuale. Come per i video ordinari, si creano video VR all&#39;inizio quando un video viene registrato o catturato utilizzando videocamere a 360°.
-   ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
+   ![Schermata di un utente che passa il puntatore del mouse sull’opzione del visualizzatore Video360VR.](assets/6_5_360video-preview-video360vr.png)
    *Schermata video VR a 360°.*
 
 1. Vicino all’angolo superiore destro della pagina di anteprima, seleziona **[!UICONTROL Chiudi]**.

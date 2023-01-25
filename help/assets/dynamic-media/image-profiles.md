@@ -4,9 +4,9 @@ description: Scopri come creare profili immagine di Dynamic Media contenenti imp
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 08c4474c71d39ba95191225279bbfca92bb64d7c
+source-git-commit: 163b6b19f0401213813d8de30caf8144855b4e4c
 workflow-type: tm+mt
-source-wordcount: '3524'
+source-wordcount: '3488'
 ht-degree: 8%
 
 ---
@@ -17,15 +17,15 @@ Quando carichi le immagini, puoi ritagliare automaticamente l’immagine al mome
 
 >[!IMPORTANT]
 >
->・ Il formato immagine CMYK non è supportato con il ritaglio avanzato.
-・ I profili immagine non sono applicabili ai file PDF, animated GIF o INDD (Adobe InDesign).
+>I profili immagine non sono applicabili ai file PDF, animated GIF o INDD (Adobe InDesign).
 
 ## Opzione Maschera definizione dettagli {#unsharp-mask}
 
-Quando crei un profilo immagine, puoi utilizzare la funzione **[!UICONTROL Maschera definizione dettagli]** per regolare con precisione un effetto filtro di nitidezza sull’immagine ricampionata verso il basso finale. Puoi controllare l’intensità dell’effetto, il raggio in pixel e una soglia di contrasto da ignorare. L’effetto utilizza le stesse opzioni del filtro “Maschera definizione dettagli” di Adobe Photoshop.
+Quando crei un profilo immagine, puoi utilizzare la funzione **[!UICONTROL Maschera definizione dettagli]** per regolare con precisione un effetto filtro di nitidezza sull’immagine ricampionata verso il basso finale. Puoi controllare l’intensità dell’effetto, il raggio in pixel e una soglia di contrasto da ignorare. Questo effetto utilizza le stesse opzioni del filtro &quot;Maschera definizione dettagli&quot; di Adobe Photoshop.
 
 >[!NOTE]
-Maschera definizione dettagli viene applicata solo alle rappresentazioni ridimensionate all’interno del PTIFF (TIFF piramidale) che vengono sottoposte a sottocampionamento superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del font non sono influenzate da una maschera definizione dettagli. Le rappresentazioni di piccole dimensioni, come le miniature, vengono invece modificate e mostrano la maschera di contrasto.
+>
+>Maschera definizione dettagli viene applicata solo alle rappresentazioni ridimensionate all’interno del PTIFF (TIFF piramidale) che vengono sottoposte a sottocampionamento superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del font non sono influenzate da una maschera definizione dettagli. Le rappresentazioni di piccole dimensioni, come le miniature, vengono invece modificate e mostrano la maschera di contrasto.
 
 In **[!UICONTROL Maschera definizione dettagli]**, sono disponibili le seguenti opzioni di filtro:
 
@@ -80,8 +80,8 @@ Per tenere sotto controllo l’utilizzo di Smart Crop e ottimizzare il tempo di 
 È possibile scegliere tra due opzioni di ritaglio immagine. È inoltre possibile scegliere di automatizzare la creazione di campioni di colore e immagine o di mantenere il contenuto di ritaglio nelle risoluzioni di destinazione.
 
 >[!IMPORTANT]
-・ L’Adobe consiglia di esaminare tutte le colture e i campioni generati per assicurarsi che siano appropriati e rilevanti per il marchio e i valori.
-・ Il formato immagine CMYK non è supportato con il ritaglio avanzato.
+>
+>L’Adobe consiglia di esaminare tutte le colture e i campioni generati per assicurarsi che siano appropriati e pertinenti per il marchio e i valori.
 
 | Opzione | Quando utilizzare | Descrizione |
 | --- | --- | --- |
@@ -95,12 +95,13 @@ Per tenere sotto controllo l’utilizzo di Smart Crop e ottimizzare il tempo di 
 La risoluzione massima supportata del file di input è di 16 K.
 
 >[!NOTE]
-La risoluzione 16K è una risoluzione del display con circa 16.000 pixel in orizzontale. La risoluzione 16K più comunemente discussa è di 15360 × 8640, che raddoppia il numero di pixel di 8K UHD in ogni dimensione, per un totale di quattro volte il numero di pixel. Questa risoluzione ha 132,7 megapixel, risoluzione 16 volte superiore a quella 4K e risoluzione 64 volte superiore a quella 1080p.
+>
+>La risoluzione 16K è una risoluzione del display con circa 16.000 pixel in orizzontale. La risoluzione 16K più comunemente discussa è di 15360 × 8640, che raddoppia il numero di pixel di 8K UHD in ogni dimensione, per un totale di quattro volte il numero di pixel. Questa risoluzione ha 132,7 megapixel, risoluzione 16 volte superiore a quella 4K e risoluzione 64 volte superiore a quella 1080p.
 
 | Formato immagine | Estensione dei file senza distinzione tra maiuscole e minuscole | Tipo MIME | Spazio colore di ingresso supportato | Dimensione massima del file di input supportato | Formato immagine supportato? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Sì |
-| CMYK |  |  |  |  | No |
+| CMYK |  |  |  |  | Sì |
 | EPS |  |  |  |  | No |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Sì; per il rendering viene utilizzato il primo fotogramma di GIF animato. Non è possibile configurare o modificare il primo fotogramma. |
 | JPEG | `.jpg` e `.jpeg` | image/jpeg | sRGB | 15 GB | Sì |
@@ -209,16 +210,17 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 ## Modificare il ritaglio avanzato o il campione avanzato di una singola immagine {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-・ L’Adobe consiglia di esaminare tutte le colture avanzate e i campioni avanzati generati per assicurarsi che siano appropriati e pertinenti per il marchio e i valori.
-・ Il formato immagine CMYK non è supportato con il ritaglio avanzato.
+>
+>L’Adobe consiglia di esaminare tutte le raccolte avanzate e i campioni avanzati generati per assicurarsi che siano appropriati e pertinenti per il marchio e i valori.
 
 È possibile riallineare o ridimensionare manualmente la finestra di ritaglio avanzato di un’immagine per perfezionarne ulteriormente il punto focale.
 
 Dopo aver modificato e salvato un ritaglio avanzato, la modifica viene propagata ovunque si utilizzi il ritaglio per le immagini specifiche.
 
 >[!IMPORTANT]
-Quando riallineate o ridimensionate manualmente la finestra di ritaglio avanzato di una risorsa, la modifica viene mantenuta e mantenuta, anche se successivamente decidete di rielaborare la risorsa. Tuttavia, se modifichi la larghezza, l’altezza o entrambi nel **[!UICONTROL Ritaglio immagine reattivo]** nell’area del profilo immagine, la risorsa viene rielaborata.
-Vedi [Rielaborazione delle risorse Dynamic Media in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>
+>Quando riallineate o ridimensionate manualmente la finestra di ritaglio avanzato di una risorsa, la modifica viene mantenuta e mantenuta, anche se successivamente decidete di rielaborare la risorsa. Tuttavia, se modifichi la larghezza, l’altezza o entrambi nel **[!UICONTROL Ritaglio immagine reattivo]** nell’area del profilo immagine, la risorsa viene rielaborata.
+>Vedi [Rielaborazione delle risorse Dynamic Media in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Se necessario, potete eseguire di nuovo il ritaglio avanzato per generare di nuovo il raccolto aggiuntivo.
 
@@ -244,16 +246,17 @@ Vedi anche [Modificare il ritaglio avanzato o il campione avanzato di più immag
 ## Modificare il ritaglio avanzato o il campione avanzato di più immagini {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 >[!IMPORTANT]
-・ L’Adobe consiglia di esaminare tutte le colture avanzate e i campioni avanzati generati per assicurarsi che siano appropriati e pertinenti per il marchio e i valori.
-・ Il formato immagine CMYK non è supportato con il ritaglio avanzato.
+>
+>L’Adobe consiglia di esaminare tutte le raccolte avanzate e i campioni avanzati generati per assicurarsi che siano appropriati e pertinenti per il marchio e i valori.
 
 Dopo aver applicato un profilo immagine contenente ritaglio avanzato a una cartella, a tutte le immagini in quella cartella viene applicato un ritaglio. Se lo desideri, puoi *manuale* riallineare o ridimensionare la finestra di ritaglio avanzato in più immagini per perfezionare ulteriormente il punto focale.
 
 Dopo aver modificato e salvato un ritaglio avanzato, la modifica viene propagata ovunque si utilizzi il ritaglio per le immagini specifiche.
 
 >[!IMPORTANT]
-Se si riallinea o ridimensiona manualmente la finestra di ritaglio avanzato per più risorse, le modifiche vengono mantenute anche se successivamente si decide di rielaborare le risorse. Tuttavia, se si modificano la larghezza, l’altezza o entrambe nell’area **[!UICONTROL Ritaglio immagine reattivo]** del profilo immagine, le risorse verranno rielaborate.
-Vedi [Rielaborazione delle risorse Dynamic Media in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>
+>Se si riallinea o ridimensiona manualmente la finestra di ritaglio avanzato per più risorse, le modifiche vengono mantenute anche se successivamente si decide di rielaborare le risorse. Tuttavia, se si modificano la larghezza, l’altezza o entrambe nell’area **[!UICONTROL Ritaglio immagine reattivo]** del profilo immagine, le risorse verranno rielaborate.
+>Vedi [Rielaborazione delle risorse Dynamic Media in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Se necessario, potete eseguire di nuovo il ritaglio avanzato per generare di nuovo il raccolto aggiuntivo.
 
