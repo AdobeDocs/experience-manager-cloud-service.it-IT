@@ -4,9 +4,9 @@ description: Utilizza il modello Frammento di contenuto creato in precedenza per
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 4a99ce530f3ca13f52648ffc0782d62cd5ebf395
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '459'
 ht-degree: 3%
 
 ---
@@ -22,8 +22,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Avvia la console Frammento di contenuto"
->abstract="La creazione di contenuti coerenti e di alta qualità che funzionano perfettamente nelle applicazioni e nei siti web ti permette di offrire ai tuoi clienti esperienze eccezionali. Questo modulo ti guida attraverso la creazione del primo frammento di contenuto per illustrare come eseguire questa operazione. Guarda il video per capire perché questo è un passo importante.<br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante, quindi segui questa guida."
->additional-url="https://video.tv.adobe.com/v/328618/?captions=ita" text="Video introduttivo sulla creazione di nuovi contenuti"
+>abstract="La creazione di contenuti coerenti e di alta qualità che funzionano perfettamente nelle applicazioni e nei siti web ti permette di offrire ai tuoi clienti esperienze eccezionali. Questo modulo ti guida attraverso la creazione del primo frammento di contenuto per illustrare come eseguire questa operazione.<br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante, quindi segui questa guida."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
