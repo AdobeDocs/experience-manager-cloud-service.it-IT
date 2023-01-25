@@ -3,7 +3,7 @@ title: Supporto di nuove impostazioni internazionali per la localizzazione di mo
 seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione di moduli adattivi. Inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
+source-git-commit: 848c6a4ea403f644408407aed0a7e06c3524d942
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -34,8 +34,8 @@ Per aggiungere il supporto per una nuova impostazione internazionale in fase di 
 1. [Clonare l’archivio](#1-clone-the-repository-clone-the-repository)
 1. [Aggiungere un’impostazione internazionale al servizio GuideLocalizationService](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [Aggiungi cartella specifica per il nome dell&#39;impostazione internazionale](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-3.1 [Aggiungere una libreria client XFA per le impostazioni internazionali](#3-add-xfa-client-library-for-a-locale)
-3.2. [Aggiungere una libreria client per moduli adattivi per le impostazioni internazionali](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+   * [Aggiungere una libreria client XFA per le impostazioni internazionali](#3-add-xfa-client-library-for-a-locale)
+   * [Aggiungere una libreria client per moduli adattivi per le impostazioni internazionali](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [Aggiungere supporto per le impostazioni internazionali del dizionario](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [Conferma le modifiche nell’archivio e distribuisci la pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
@@ -63,9 +63,9 @@ Per aggiungere il supporto per una nuova impostazione internazionale in fase di 
 #### 3.1 Aggiungi la libreria client XFA per un&#39;impostazione internazionale nella cartella locale-name
 
 1. Crea un nodo denominato come `[locale-name]_xfa` e digitare come `cq:ClientLibraryFolder` sotto `etc/clientlibs/locale_name`, con categoria `xfaforms.I18N.<locale>`e aggiungi i seguenti file:
-* **I18N.js** definizione `xfalib.locale.Strings` per `<locale>` come definito in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
-* **js.txt** contenenti:
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+   * **I18N.js** definizione `xfalib.locale.Strings` per `<locale>` come definito in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+   * **js.txt** contenenti:
+      */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
 #### 3.2. Aggiungere una libreria client per moduli adattivi per una cartella locale-name {#add-adaptive-form-client-library-for-a-locale-br}
 
@@ -77,9 +77,9 @@ Per aggiungere il supporto per una nuova impostazione internazionale in fase di 
 
 1. Aggiungi **js.txt** contenenti:
 
-   ```text
+   ```
      i18n.js
-       LogMessages.js
+     LogMessages.js
    ```
 
 ### 4. Aggiungi il supporto delle impostazioni internazionali per il dizionario {#add-locale-support-for-the-dictionary-br}
@@ -143,7 +143,7 @@ Se non sono presenti informazioni sulle impostazioni internazionali, il modulo a
 
 Get [libreria client di esempio](/help/forms/assets/locale-support-sample.zip) per aggiungere il supporto per le nuove impostazioni internazionali. È necessario modificare il contenuto della cartella nelle impostazioni internazionali richieste.
 
-### Best practice per supportare la nuova localizzazione {#best-practices}
+## Best practice per supportare la nuova localizzazione {#best-practices}
 
 * Adobe consiglia di creare un progetto di traduzione dopo la creazione di un modulo adattivo.
 
