@@ -3,7 +3,7 @@ title: Supporto di nuove impostazioni internazionali per la localizzazione di mo
 seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione di moduli adattivi. Inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: f8bbc6605e77cf2858c69dae96e9ab32698d1f16
+source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -34,8 +34,8 @@ Per aggiungere il supporto per una nuova impostazione internazionale in fase di 
 1. [Clonare l’archivio](#1-clone-the-repository-clone-the-repository)
 1. [Aggiungere un’impostazione internazionale al servizio GuideLocalizationService](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [Aggiungi cartella specifica per il nome dell&#39;impostazione internazionale](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-1. [Aggiungere una libreria client XFA per le impostazioni internazionali](#3-add-xfa-client-library-for-a-locale)
-1. [Aggiungere una libreria client per moduli adattivi per le impostazioni internazionali](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+3.1 [Aggiungere una libreria client XFA per le impostazioni internazionali](#3-add-xfa-client-library-for-a-locale)
+3.2. [Aggiungere una libreria client per moduli adattivi per le impostazioni internazionali](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [Aggiungere supporto per le impostazioni internazionali del dizionario](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [Conferma le modifiche nell’archivio e distribuisci la pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
