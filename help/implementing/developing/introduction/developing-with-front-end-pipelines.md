@@ -2,7 +2,7 @@
 title: Sviluppo di Sites con la pipeline front-end
 description: Con la pipeline front-end, viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può ottenere una notevole velocità. Questo documento descrive alcune considerazioni specifiche sul processo di compilazione front-end da fornire.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
+source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Il contenuto del `dist` La cartella è ciò che viene infine distribuito a AEM a
 
 ### Versioni dei nodi {#node-versions}
 
-Per impostazione predefinita, la pipeline front-end utilizza il nodo 14, ma sono disponibili anche 16 e 16.
+Per impostazione predefinita, la pipeline front-end utilizza il nodo 14, ma sono disponibili anche 12 e 16.
 
 È possibile utilizzare `CM_CUSTOM_VAR_NODE_VERSION` per impostare la versione desiderata.
 
