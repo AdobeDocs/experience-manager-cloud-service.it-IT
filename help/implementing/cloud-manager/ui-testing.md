@@ -2,10 +2,10 @@
 title: Test dell’interfaccia utente
 description: I test personalizzati dell’interfaccia utente sono una funzionalità facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni personalizzate.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
+source-git-commit: 00cbf0b9fa50ab3f42a0a3917caf40708c7209b9
 workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ A differenza dei test funzionali personalizzati, che rappresentano test HTTP scr
 
 ### Consenso del cliente {#customer-opt-in}
 
-Affinché Cloud Manager possa generare ed eseguire i test dell’interfaccia utente, l’utente deve fornire il consenso esplicito alla funzione aggiungendo un file all’archivio.
+Affinché Cloud Manager possa generare ed eseguire i test dell’interfaccia utente, devi optare per questa funzione aggiungendo un file all’archivio.
 
 * Il nome file deve essere `testing.properties`.
 * Il contenuto del file deve essere `ui-tests.version=1`.
