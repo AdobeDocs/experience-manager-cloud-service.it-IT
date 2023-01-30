@@ -3,9 +3,9 @@ title: Implementazione in AEM as a Cloud Service
 description: Implementazione in AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3415'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ Inoltre, non esiste un meccanismo per ripristinare le modifiche al pacchetto di 
 
 Eventuali pacchetti di terze parti inclusi devono essere convalidati come compatibili con AEM servizio as a Cloud Service, altrimenti la loro inclusione provocherà un errore di distribuzione.
 
-Come indicato in precedenza, i clienti con basi di codice esistenti devono conformarsi all’esercizio di ristrutturazione dell’archivio richiesto dalle modifiche dell’archivio 6.5 descritte nella sezione [Documentazione di AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+Come indicato in precedenza, i clienti con basi di codice esistenti devono conformarsi all’esercizio di ristrutturazione dell’archivio richiesto dalle modifiche dell’archivio 6.5 descritte nella sezione [Documentazione di AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=it)
 
 ## Repoinit {#repoinit}
 
@@ -170,6 +170,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Gestione pacchetti - Migrazione dei pacchetti di contenuto variabile"
+>abstract="Esplora l’utilizzo di package manager per i casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;, che include l’importazione di contenuti specifici dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, il trasferimento di piccoli pacchetti di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
 >abstract="Esplora l’utilizzo di package manager per i casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;, che include l’importazione di contenuti specifici dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, il trasferimento di piccoli pacchetti di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Strumento Content Transfer (Trasferimento contenuti)"
 
@@ -281,11 +282,11 @@ Se viene segnalato o rilevato un errore dopo la distribuzione, è possibile che 
 
 ## Modalità di esecuzione {#runmodes}
 
-Nelle soluzioni AEM esistenti, i clienti possono scegliere di eseguire istanze con modalità di esecuzione arbitrarie e applicare la configurazione OSGI o installare i bundle OSGI a quelle istanze specifiche. Le modalità di esecuzione definite includono in genere i *servizio* (autore e pubblicazione) e l’ambiente (sviluppo, stage, prod).
+Nelle soluzioni AEM esistenti, i clienti possono scegliere di eseguire istanze con modalità di esecuzione arbitrarie e applicare la configurazione OSGI o installare i bundle OSGI a quelle istanze specifiche. Le modalità di esecuzione definite includono in genere i *servizio* (autore e pubblicazione) e l’ambiente (rde, dev, stage, prod).
 
 AEM as a Cloud Service d&#39;altra parte è più opinionista su quali modalità di esecuzione sono disponibili e come i bundle OSGI e la configurazione OSGI possono essere mappati su di loro:
 
-* Le modalità di esecuzione della configurazione OSGI devono fare riferimento a dev, stage, prod per l’ambiente o l’autore, publish per il servizio. Una combinazione di `<service>.<environment_type>` è supportato, che devono essere utilizzati in questo particolare ordine (ad esempio `author.dev` o `publish.prod`). I token OSGI devono essere referenziati direttamente dal codice anziché utilizzando `getRunModes` , che non includerà più `environment_type` in fase di runtime. Per ulteriori informazioni, consulta [Configurazione di OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* Le modalità di esecuzione della configurazione OSGI devono fare riferimento a RDE, dev, stage, prod per l’ambiente o l’autore, publish per il servizio. Una combinazione di `<service>.<environment_type>` è supportato, che devono essere utilizzati in questo particolare ordine (ad esempio `author.dev` o `publish.prod`). I token OSGI devono essere referenziati direttamente dal codice anziché utilizzando `getRunModes` , che non includerà più `environment_type` in fase di runtime. Per ulteriori informazioni, consulta [Configurazione di OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Le modalità di esecuzione dei bundle OSGI sono limitate al servizio (autore, pubblicazione). I bundle OSGI per modalità di esecuzione devono essere installati nel pacchetto di contenuti in `install/author` o `install/publish`.
 
 Come le soluzioni AEM esistenti, non c&#39;è modo di utilizzare le modalità di esecuzione per installare solo contenuti per ambienti o servizi specifici. Se si desidera impostare un ambiente di sviluppo con dati o HTML che non sono sul palco o in produzione, è possibile utilizzare il gestore dei pacchetti.
@@ -295,13 +296,16 @@ Le configurazioni supportate per la modalità di esecuzione sono:
 * **config** (*Il valore predefinito si applica a tutti i servizi AEM*)
 * **config.author** (*Si applica a tutti i servizi AEM Author*)
 * **config.author.dev** (*Si applica al servizio AEM Dev Author*)
+* **config.author.rde** (*Si applica AEM servizio Author RDE*)
 * **config.author.stage** (*Si applica a AEM servizio di authoring di staging*)
 * **config.author.prod** (*Si applica AEM servizio di authoring di produzione*)
 * **config.publish** (*Si applica al servizio di pubblicazione AEM*)
 * **config.publish.dev** (*Si applica al servizio Pubblicazione sviluppo AEM*)
+* **config.publish.rde** (*Si applica AEM servizio RDE Publish*)
 * **config.publish.stage** (*Si applica a AEM servizio di pubblicazione temporanea*)
 * **config.publish.prod** (*Si applica a AEM servizio di pubblicazione di produzione*)
 * **config.dev** (*Si applica ai servizi di sviluppo AEM*)
+* **config.rde** (*Si applica ai servizi RDE*)
 * **config.stage** (*Si applica ai servizi di staging AEM*)
 * **config.prod** (*Si applica ai servizi di produzione AEM*)
 
