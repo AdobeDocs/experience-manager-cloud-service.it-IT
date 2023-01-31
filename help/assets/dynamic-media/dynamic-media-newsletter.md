@@ -1,10 +1,11 @@
 ---
 title: Archivio newsletter Dynamic Media
 description: La newsletter Dynamic Media per Experience League è una newsletter mensile. È stato progettato per aiutarti a imparare a usare Dynamic Media e Dynamic Media Classic in modo da poter realizzare subito valore. In questa newsletter dedicata a un punto vendita sono disponibili preziose risorse per lo sviluppo delle conoscenze. Ad esempio, ci sono video dimostrativi e panoramiche della soluzione. Scopri alcune delle funzioni e funzionalità principali come i predefiniti per immagini, i predefiniti per visualizzatori, i profili video e altro ancora.
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 0%
@@ -37,7 +38,7 @@ In questa newsletter archiviata con un unico punto vendita, puoi trovare prezios
     * Summit customer spotlight: Under Armour.
     * Never miss an Experience Insider webinar.
     * Public sector spotlight: The urgent need for digital enrollment.
-    * Look what’s new in Experience Manager Innovation.
+    * Look what's new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->

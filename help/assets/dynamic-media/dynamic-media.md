@@ -1,9 +1,10 @@
 ---
 title: Utilizzo di Dynamic Media
 description: Scopri come utilizzare Dynamic Media per distribuire risorse da utilizzare sui siti web, mobili e social.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 14%
@@ -37,7 +38,7 @@ Le funzioni solo per Dynamic Media includono quanto segue:
 * [Video](video.md)
 * [Distribuzione di risorse Dynamic Media](delivering-dynamic-media-assets.md)
 * [Gestione delle risorse](managing-assets.md)
-* [Utilizzo delle visualizzazioni rapide per creare un pop-up Windows® personalizzato](custom-pop-ups.md)
+* [Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate](custom-pop-ups.md)
 
 Vedi anche [Configurazione di Dynamic Media](administering-dynamic-media.md).
 

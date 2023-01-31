@@ -1,7 +1,8 @@
 ---
 title: Utilizzo di Dynamic Media
 description: Dynamic Media permette di fornire on-demand risorse visive di marketing e merchandising, ridimensionandole automaticamente per siti web, dispositivi mobili e piattaforme social. Utilizzando una serie di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+contentOwner: Rick Brough
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 30%

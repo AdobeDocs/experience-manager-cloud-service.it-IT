@@ -1,10 +1,11 @@
 ---
 title: Immagini interattive
 description: Scopri come utilizzare le immagini interattive in Dynamic Media.
+contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4176'
 ht-degree: 2%
@@ -64,7 +65,7 @@ Se utilizzi un WCM di terze parti (Web Content Manager), integra il nuovo video 
 >* Per aggiungere interattività all’immagine, attiva le visualizzazioni rapide.
 >* La tua implementazione di Experience Manager *not* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in Experience Manager da qualsiasi soluzione eCommerce. Tali soluzioni includono IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop.
 >
->Se l’implementazione di Experience Manager utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
+Se l’implementazione di Experience Manager utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
 
 Per iniziare, identifica le variabili dinamiche utilizzate dall&#39;implementazione di Quickview esistente in modo da poter inserire i dati dei punti attivi per creare l&#39;immagine interattiva.
 
@@ -220,8 +221,7 @@ Quando aggiungi degli hotspot, puoi definirli come una visualizzazione a compars
 Vedi [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->Gli strumenti di condivisione social media in Immagine interattiva non sono supportati quando si incorpora il visualizzatore in un frammento esperienza. Al contrario, utilizza o crea predefiniti visualizzatore che non dispongono di strumenti per la condivisione dei social media. Questi predefiniti per visualizzatori consentono di incorporarli correttamente nei Frammenti esperienza.
+Gli strumenti di condivisione social media in Immagine interattiva non sono supportati quando si incorpora il visualizzatore in un frammento esperienza. Al contrario, utilizza o crea predefiniti visualizzatore che non dispongono di strumenti per la condivisione dei social media. Questi predefiniti per visualizzatori consentono di incorporarli correttamente nei Frammenti esperienza.
 
 Le opzioni Annulla e Ripristina, situate nell’angolo superiore destro della pagina, sono supportate durante la sessione di creazione/modifica corrente.
 
@@ -230,8 +230,7 @@ Al termine della creazione dell’immagine interattiva, puoi utilizzare Anteprim
 Vedi [(Facoltativo) Anteprima delle immagini interattive](#optional-previewing-interactive-images).
 
 >[!NOTE]
->
->Quando aggiungi punti attivi a un&#39;immagine in un&#39;immagine interattiva o in un banner carosello, le informazioni relative ai punti attivi vengono memorizzate nella stessa posizione di metadati. Questa posizione è relativa alla posizione dell’immagine, indipendentemente dal fatto che si tratti di un’immagine interattiva o di un banner carosello. Questa funzionalità consente di riutilizzare facilmente la stessa immagine, insieme ai relativi dati definiti per i punti attivi, in entrambi i visualizzatori.
+Quando aggiungi punti attivi a un&#39;immagine in un&#39;immagine interattiva o in un banner carosello, le informazioni relative ai punti attivi vengono memorizzate nella stessa posizione di metadati. Questa posizione è relativa alla posizione dell’immagine, indipendentemente dal fatto che si tratti di un’immagine interattiva o di un banner carosello. Questa funzionalità consente di riutilizzare facilmente la stessa immagine, insieme ai relativi dati definiti per i punti attivi, in entrambi i visualizzatori.
 Tenere tuttavia presente che i caroselli banner supportano mappe immagine su immagini che possono contenere anche punti attivi; un&#39;immagine interattiva non lo è. Tieni presente questo aspetto se vuoi creare un’immagine interattiva o un banner carosello che utilizza la stessa immagine. È invece possibile creare immagini interattive e banner carosello utilizzando copie separate della stessa immagine.
 Vedi anche [Banner a carosello](/help/assets/dynamic-media/carousel-banners.md).
 

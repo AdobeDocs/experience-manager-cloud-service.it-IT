@@ -1,9 +1,10 @@
 ---
 title: Risoluzione dei problemi di Dynamic Media
 description: Suggerimenti per la risoluzione dei problemi quando utilizzi Dynamic Media.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 1%
@@ -211,7 +212,7 @@ Esempio:
 Se le risorse di esempio o l’immagine predefinita del visualizzatore non sono sincronizzate o pubblicate, riavvia l’intero processo di copia/sincronizzazione:
 
 1. Passa a CRXDE Lite.
-1. Eliminare `<sync-folder>/_CSS/_OOTB`.
+1. Elimina `<sync-folder>/_CSS/_OOTB`.
 1. Passa a Gestione pacchetti CRX: `https://localhost:4502/crx/packmgr/`.
 1. Cerca il pacchetto visualizzatore nell&#39;elenco; inizia con `cq-dam-scene7-viewers-content`.
 1. Seleziona **Reinstalla**.

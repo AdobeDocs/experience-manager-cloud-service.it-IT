@@ -1,9 +1,10 @@
 ---
 title: Utilizzare i selettori
 description: Scopri i metodi per selezionare le risorse per le immagini interattive, i video interattivi e i banner a carosello in Dynamic Media.
+contentOwner: Rick Brough
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 3%

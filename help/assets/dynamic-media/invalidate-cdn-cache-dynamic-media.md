@@ -1,10 +1,11 @@
 ---
 title: Annullare la validità della cache della rete di distribuzione dei contenuti tramite Dynamic Media
 description: Scopri come annullare la validità della rete CDN (Content Delivery Network) memorizzata nella cache per consentirti di aggiornare rapidamente le risorse consegnate da Dynamic Media, anziché attendere la scadenza della cache.
+contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: db0451e76564f238b34555aafa3692202887a1d6
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%

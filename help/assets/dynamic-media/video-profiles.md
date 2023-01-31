@@ -1,10 +1,11 @@
 ---
 title: Profili video di Dynamic Media
 description: Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni di questo profilo predefinito sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Puoi anche aggiungere ritaglio avanzato ai video.
+contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3656'
 ht-degree: 7%
@@ -298,7 +299,7 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Nell’angolo inferiore destro della pagina, seleziona **[!UICONTROL Aggiungi]**.
+1. Nell’angolo in basso a destra della pagina, seleziona **[!UICONTROL Aggiungi]**.
 1. Effettua una delle operazioni seguenti:
 
    * Ripeti i passaggi 3 e 4 per aggiungere un altro parametro al profilo di codifica video.

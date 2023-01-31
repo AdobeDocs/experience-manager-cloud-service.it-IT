@@ -1,9 +1,10 @@
 ---
 title: Configura Cloud Service Dynamic Media
 description: Scopri come configurare Dynamic Media in Adobe Experience Manager as a Cloud Service.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 8066d24193822a79d88f564a2db26b3acbb4e918
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3795'
 ht-degree: 3%
@@ -222,7 +223,7 @@ Quando si esegue Dynamic Media su AEM, al momento viene inoltrato `/is/image` ri
 
    ![Abilita le impostazioni dell&#39;elenco di controllo accessi in modalità Dynamic Media - Scene7](/help/assets/dynamic-media/assets/acl.png)
 
-1. Nell’angolo inferiore destro della pagina, seleziona **[!UICONTROL Salva]**.
+1. Nell’angolo in basso a destra della pagina, seleziona **[!UICONTROL Salva]**.
 
 ### (Facoltativo) Configurazione e configurazione delle impostazioni di Dynamic Media {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
