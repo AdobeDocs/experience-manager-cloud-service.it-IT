@@ -2,9 +2,9 @@
 title: Ambienti di sviluppo rapidi
 description: Scopri come sfruttare gli ambienti di sviluppo rapido per iterazioni di sviluppo rapide in un ambiente cloud.
 hidefromtoc: true
-source-git-commit: 966644ae0027264f25a3aaf3b2f777fb3e97c556
+source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2476'
 ht-degree: 6%
 
 ---
@@ -202,6 +202,8 @@ La risposta per una distribuzione di successo è simile alla seguente:
 Facoltativamente, puoi fare riferimento a un archivio remoto:
 
 `aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+
+Per impostazione predefinita, gli artefatti vengono distribuiti sia sui livelli di authoring che di pubblicazione, ma il flag &quot;-s&quot; può essere utilizzato per eseguire il targeting di un livello specifico.
 
 <u>Distribuzione di una configurazione OSGI</u>
 
@@ -415,9 +417,10 @@ Sebbene l’RDE sia in molti modi simile a un ambiente di sviluppo cloud, esisto
 
 Per questi motivi, dopo aver convalidato il codice in un ambiente RDE, devi distribuire il codice in un ambiente di sviluppo Cloud utilizzando la pipeline non di produzione. Infine, testa il codice prima di distribuirlo con la pipeline di produzione.
 
-Tieni presente anche le seguenti considerazioni specifiche sulla soluzione:
+Considera anche le seguenti considerazioni:
 
 * Gli RDE non supportano attualmente la visualizzazione e il debug del codice front-end distribuito utilizzando la pipeline front-end di Cloud Manager.
+* Attualmente gli RDE non supportano il canale prerelease.
 
 
 ## Di quanti RDE ho bisogno? {#how-many-rds-do-i-need}
