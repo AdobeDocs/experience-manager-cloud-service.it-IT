@@ -1,15 +1,17 @@
 ---
 title: Note sulla versione di manutenzione più recente di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione di manutenzione più recente di [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 23c4b815c0485286806ca76796460ef4fd81951c
+source-git-commit: bb310f87a3bbc114e971dc2dca5eab6a028d140a
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 4%
+source-wordcount: '153'
+ht-degree: 3%
 
 ---
 
 
 # Note sulla versione di manutenzione {#maintenance-release-notes}
+
+La sezione seguente illustra le note tecniche sulla versione per l’ultima versione di manutenzione di Experience Manager as a Cloud Service.
 
 ## Versione 10912 {#release-10912}
 
