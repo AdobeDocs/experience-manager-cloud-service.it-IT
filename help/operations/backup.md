@@ -2,9 +2,9 @@
 title: Backup e ripristino in AEM as a Cloud Service
 description: Backup e ripristino in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 12e747ff73e9416775a3f26040ac7e15c21505ec
+source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '515'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ AEM supporto as a Cloud Service:
 
 In tutti i casi, la versione del codice personalizzato verrà presa dall&#39;ultima distribuzione riuscita prima del punto di ripristino.
 
-L&#39;obiettivo RTO (Recovery Time Objective) può variare, ma come linea guida generale, la sequenza di ripristino richiede in media tra 60 e 90 minuti a seconda di diversi fattori, come la dimensione dell&#39;archivio.
+L&#39;obiettivo RTO (Recovery Time Objective) può variare, ma come linea guida generale, la sequenza di ripristino richiede in media tra 60 e 90 minuti a seconda di diversi fattori, come la dimensione dell&#39;archivio. Gli ambienti di anteprima e gli editori con più aree possono estendere l’obiettivo del tempo di ripristino.
 
 Dopo un ripristino, la versione AEM verrà aggiornata alla versione più recente.
 
