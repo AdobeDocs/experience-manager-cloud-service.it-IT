@@ -2,9 +2,9 @@
 title: Modifica dei programmi
 description: Scopri come modificare i programmi sandbox e di produzione per apportare modifiche alle opzioni dopo averli creati.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 2638843c5646d3190327ae1dbd5348a9c207d674
+source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '517'
 ht-degree: 87%
 
 ---
@@ -18,9 +18,11 @@ Gli utenti con le autorizzazioni necessarie possono modificare i [programmi di p
 * Aggiungere una seconda soluzione non utilizzata a un programma esistente o nuovo.
 * Eliminare i programmi sandbox.
 
->[!NOTE]
->
->Per modificare i programmi o eliminare i programmi sandbox, è necessario avere il ruolo di **Proprietario business**.
+## Autorizzazioni {#permissions}
+
+Per modificare i programmi o eliminare i programmi sandbox, è necessario avere il ruolo di **Proprietario business**.
+
+## Modifica di un programma {#editing}
 
 Per modificare un programma, segui la procedura riportata di seguito.
 
