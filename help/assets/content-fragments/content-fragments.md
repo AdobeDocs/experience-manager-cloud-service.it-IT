@@ -2,9 +2,9 @@
 title: Utilizzo di frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri in che modo i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring e la distribuzione headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 4478cee8f9a20e0b70bfe2fa8767e3262188cb33
 workflow-type: tm+mt
-source-wordcount: '2075'
+source-wordcount: '2071'
 ht-degree: 93%
 
 ---
@@ -45,7 +45,7 @@ Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, c
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md): come utilizzare la sintassi markdown per il frammento
 * [Utilizzo di contenuti associati](/help/assets/content-fragments/content-fragments-assoc-content.md): come aggiungere contenuti associati
 * [Metadati: proprietà dei frammenti](/help/assets/content-fragments/content-fragments-metadata.md): come visualizzare e modificare le proprietà dei frammenti
-* Utilizzo [Frammenti di contenuto, insieme a GraphQL, per distribuire contenuti](/help/assets/content-fragments/content-fragments-graphql.md) da utilizzare nelle applicazioni. Per facilitare questa fase, puoi visualizzare un’anteprima [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+* Utilizzo [Frammenti di contenuto e GraphQL per la distribuzione dei contenuti](/help/assets/content-fragments/content-fragments-graphql.md) da utilizzare nelle applicazioni. Per facilitare questa fase, puoi visualizzare un’anteprima [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -60,8 +60,8 @@ Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, c
 
 Il numero di canali di comunicazione aumenta ogni anno. In genere i canali si distinguono in base al meccanismo di consegna, come segue:
 
-* canale fisico; ad esempio, desktop, mobile.
-* forma di consegna in un canale fisico; ad esempio, la &quot;pagina di dettaglio del prodotto&quot;, la &quot;pagina di categoria del prodotto&quot; per desktop o &quot;web mobile&quot;, &quot;app mobile&quot; per dispositivi mobili.
+* Canale fisico; ad esempio, desktop, dispositivi mobili.
+* Forma di consegna in un canale fisico, ad esempio “pagina dei dettagli di un prodotto”, “pagina della categoria del prodotto” per desktop oppure “web mobile”, “app mobile” per dispositivi mobili.
 
 Tuttavia, probabilmente non vorrai utilizzare esattamente gli stessi contenuti per tutti i canali: vorrai piuttosto ottimizzarli in base ai singoli canali.
 
@@ -79,7 +79,7 @@ I frammenti di contenuto possono quindi essere assemblati per fornire esperienze
 >[!NOTE]
 >
 >I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sono funzioni diverse in AEM:
->* I **frammenti di contenuto** sono contenuti editoriali che possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date. Sono contenuti puri, con definizione e struttura, ma senza elementi visivi aggiuntivi di design e/o layout.
+>* **Frammenti di contenuto** sono contenuti editoriali, con definizione e struttura, ma senza design e/o layout visivi aggiuntivi. Possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.

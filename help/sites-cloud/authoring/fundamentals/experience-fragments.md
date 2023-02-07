@@ -2,10 +2,10 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
-workflow-type: ht
-source-wordcount: '1971'
-ht-degree: 100%
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+workflow-type: tm+mt
+source-wordcount: '2064'
+ht-degree: 98%
 
 ---
 
@@ -38,6 +38,16 @@ Senza Frammenti esperienza, l’autore dovrebbe copiare e incollare tale frammen
 Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
 * Per supportare il caso d’uso del CMS headless.
 Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. Un sistema o punto di contatto di terze parti potrebbe prendere in carico questa particolare esperienza e in seguito trasmetterla all’utente finale.
+
+>[!NOTE]
+>
+>I **[frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** e i **frammenti di esperienza** sono funzioni diverse in AEM:
+>* **Frammenti di contenuto** sono contenuti editoriali, con definizione e struttura, ma senza design e/o layout visivi aggiuntivi. Possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date.
+>* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
+>
+>I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
+>
+>Per ulteriori informazioni consulta anche [Frammenti di contenuto e frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
 
 >[!NOTE]
 >
@@ -346,11 +356,11 @@ Per personalizzare il frammento:
    >Il **Percorso ContextHub** selezionato nella scheda **Personalizzazione** deve essere:
    >
    >* lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento
-   >Oppure:
+      >Oppure:
    >* un percorso che contiene un sottoinsieme degli archivi definiti in ContextHub configurati per la pagina
+
    >
    > 
-
 Il **Percorso segmenti** selezionato nella scheda **Personalizzazione** deve essere:
    * lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento 
 oppure
@@ -381,8 +391,8 @@ I dettagli vengono visualizzati in tutte le viste della console **Frammenti espe
    Le proprietà sono disponibili in diverse schede:
 
    >[!CAUTION]
-   >Queste schede vengono visualizzate quando apri **Proprietà** dalla console Frammenti esperienza.
-   >Se scegli **Apri proprietà** durante la modifica di un frammento esperienza, vengono visualizzate le [proprietà di pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriate.
+   Queste schede vengono visualizzate quando apri **Proprietà** dalla console Frammenti esperienza.
+   Se scegli **Apri proprietà** durante la modifica di un frammento esperienza, vengono visualizzate le [proprietà di pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriate.
 
    ![Proprietà dei frammenti esperienza](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -411,7 +421,7 @@ I dettagli vengono visualizzati in tutte le viste della console **Frammenti espe
 Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML semplice dal browser.
 
 >[!NOTE]
->Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere ai contenuti del frammento esperienza direttamente dall’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere ai contenuti del frammento esperienza direttamente dall’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Pubblicazione di frammenti di esperienza {#publishing-experience-fragments}
 

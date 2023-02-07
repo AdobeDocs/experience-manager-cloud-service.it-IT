@@ -4,10 +4,10 @@ description: Scopri in che modo i frammenti di contenuto in Adobe Experience Man
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
 workflow-type: tm+mt
-source-wordcount: '2070'
-ht-degree: 100%
+source-wordcount: '2066'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ I frammenti di contenuto possono quindi essere assemblati per fornire esperienze
 >[!NOTE]
 >
 >I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sono funzioni diverse in AEM:
->* I **frammenti di contenuto** sono contenuti editoriali che possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date. Sono contenuti puri, con definizione e struttura, ma senza elementi visivi aggiuntivi di design e/o layout.
+>* **Frammenti di contenuto** sono contenuti editoriali, con definizione e struttura, ma senza design e/o layout visivi aggiuntivi. Possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
