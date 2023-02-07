@@ -2,18 +2,14 @@
 title: Generazione dei token di accesso per le API lato server
 description: Scopri come facilitare la comunicazione tra un server di terze parti e AEM as a Cloud Service generando un token JWT protetto
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 41458eb1fba12e8ef45a32d3bb6fc5dd732f78ec
+source-git-commit: 9f7157be1a9e7b635b9c7d0f0c653646e6f1b43b
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2132'
 ht-degree: 1%
 
 ---
 
 # Generazione dei token di accesso per le API lato server {#generating-access-tokens-for-server-side-apis}
-
->[!AVAILABILITY]
->
->L&#39;Adobe sta gradualmente estendendo le nuove funzionalità di revoca delle credenziali e delle credenziali multiple descritte in questo articolo. Se, controllando la scheda integrazioni nella console per sviluppatori AEM della tua organizzazione, noterai che la schermata è diversa dalle schermate sottostanti, significa che le nuove modifiche non sono ancora state implementate nell’organizzazione. In questo caso, si prega di fare riferimento al [documentazione legacy](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md).
 
 Alcune architetture si basano sull&#39;effettuazione di chiamate a AEM as a Cloud Service da un&#39;applicazione ospitata su un server al di fuori dell&#39;infrastruttura AEM. Ad esempio, un’app mobile che chiama un server e quindi invia richieste API a AEM as a Cloud Service.
 
