@@ -2,9 +2,9 @@
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione di archivi di contenuti di grandi dimensioni
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
+source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1749'
 ht-degree: 2%
 
 ---
@@ -36,6 +36,9 @@ Leggi la sezione seguente per comprendere le considerazioni importanti prima di 
 
 * Data Store Garbage Collection è stato eseguito nei 7 giorni precedenti sull&#39;origine. Per ulteriori informazioni, consulta [Raccolta rifiuti dell&#39;archivio dati](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
 
+### Considerazioni aggiuntive relative all’utilizzo di AzCopy
+
+La pre-copia con AzCopy non è attualmente supportata su Windows durante l’estrazione CTT.
 
 ### Considerazioni aggiuntive se l’istanza di AEM di origine è configurata per l’utilizzo di un archivio dati di archiviazione BLOB di Amazon S3 o Azure {#additional-considerations-amazons3-azure}
 
