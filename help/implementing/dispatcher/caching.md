@@ -3,9 +3,9 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Memorizzazione in cache in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
+source-git-commit: b0db2224e3dd7af01bf61fe29e8e24793ab33c5b
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2832'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede una re
      </LocationMatch>
    ```
 
-* Mentre il contenuto HTML impostato su privato non verrà memorizzato nella cache della rete CDN, può essere memorizzato nella cache del dispatcher se [Memorizzazione in cache sensibile alle autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it) è configurato in modo efficiente, garantendo che solo gli utenti autorizzati possano ricevere il contenuto.
+* Mentre il contenuto HTML impostato su privato non verrà memorizzato nella cache della rete CDN, può essere memorizzato nella cache del dispatcher se [Memorizzazione in cache sensibile alle autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it) è configurato, garantendo che solo gli utenti autorizzati possano ricevere il contenuto.
 
    >[!NOTE]
    >Gli altri metodi, compresi i [Progetto ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), non sovrascriverà correttamente i valori.
