@@ -2,9 +2,9 @@
 title: Ambienti di sviluppo rapidi
 description: Scopri come sfruttare gli ambienti di sviluppo rapido per iterazioni di sviluppo rapide in un ambiente cloud.
 hidefromtoc: true
-source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
+source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2664'
 ht-degree: 6%
 
 ---
@@ -201,9 +201,13 @@ La risposta per una distribuzione di successo è simile alla seguente:
 
 Facoltativamente, puoi fare riferimento a un archivio remoto:
 
-`aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+`aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 Per impostazione predefinita, gli artefatti vengono distribuiti sia sui livelli di authoring che di pubblicazione, ma il flag &quot;-s&quot; può essere utilizzato per eseguire il targeting di un livello specifico.
+
+>[!IMPORTANT]
+>
+>La configurazione del dispatcher per il progetto WKND non viene distribuita tramite l’installazione del pacchetto di contenuti di cui sopra. Sarà necessario distribuirlo separatamente seguendo i passaggi &quot;Implementazione di una configurazione Apache/Dispatcher&quot;.
 
 <u>Distribuzione di una configurazione OSGI</u>
 
