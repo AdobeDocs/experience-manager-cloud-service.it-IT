@@ -2,9 +2,9 @@
 title: Ambienti di sviluppo rapidi
 description: Scopri come sfruttare gli ambienti di sviluppo rapido per iterazioni di sviluppo rapide in un ambiente cloud.
 hidefromtoc: true
-source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
+source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2634'
 ht-degree: 6%
 
 ---
@@ -406,6 +406,20 @@ Consulta la sezione [documentazione in modalità runmode](/help/implementing/dep
 >[!NOTE]
 >
 >La configurazione OSGI RDE è univoca in quanto eredita i valori di qualsiasi proprietà OSGI dichiarata dal bundle `dev` modalità di esecuzione.
+
+Gli RDE sono diversi dagli altri ambienti in quanto il contenuto può essere installato in una cartella install.rde (o install.author.rde o install.publish.rde) in /apps. Questo consente di eseguire il commit del contenuto in git e di consegnarlo all’RDE utilizzando gli strumenti della riga di comando.
+
+## Popolamento con il contenuto {#populating-content}
+
+Quando un RDE viene reimpostato, tutti i contenuti vengono rimossi e quindi, se lo si desidera, è necessario intervenire in modo esplicito per aggiungere contenuto. Come best practice, considera l’assemblaggio di un set di contenuti da utilizzare come contenuto di prova per la convalida o il debug delle funzioni nell’RDE. Esistono diverse strategie possibili per popolare l’RDE con tale contenuto:
+
+1. Sincronizza esplicitamente il pacchetto di contenuti con l’RDE utilizzando gli strumenti della riga di comando
+
+1. Posiziona e esegui il commit del contenuto di esempio in git all’interno di una cartella install.rde in /apps, quindi sincronizza il pacchetto di contenuto complessivo con l’RDE utilizzando gli strumenti della riga di comando.
+
+1. Utilizzo di Gestione pacchetti
+
+Tieni presente che la sincronizzazione dei pacchetti di contenuti è limitata a 1 GB.
 
 ## Registrazione {#logging}
 
