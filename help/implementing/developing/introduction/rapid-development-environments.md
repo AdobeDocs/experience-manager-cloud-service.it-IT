@@ -1,11 +1,10 @@
 ---
 title: Ambienti di sviluppo rapidi
 description: Scopri come sfruttare gli ambienti di sviluppo rapido per iterazioni di sviluppo rapide in un ambiente cloud.
-hidefromtoc: true
-source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '2664'
-ht-degree: 6%
+source-wordcount: '2903'
+ht-degree: 5%
 
 ---
 
@@ -450,3 +449,20 @@ Il numero di RDE necessari dipende dalla composizione e dai processi di un&#39;o
 All’altro estremo, un team con un singolo RDE può utilizzare processi interni per coordinare quali sviluppatori possono utilizzare l’ambiente in un dato momento. Questo può accadere ogni volta che uno sviluppatore raggiunge una fase cardine di una funzione intermedia ed è pronto per la convalida in un ambiente Cloud in cui può apportare rapidamente le modifiche necessarie.
 
 Un modello intermedio è quello in cui un’organizzazione acquista un numero di RDE, quindi c’è una maggiore probabilità che un RDE non utilizzato sia disponibile. Una strategia potrebbe essere quella di allocare un RDE per team di script o funzionalità principali. I processi interni possono essere utilizzati per coordinare l’utilizzo degli ambienti.
+
+## In che modo un ambiente AEM Forms Cloud Service Rapid Development Environment (RDE) è diverso da altri ambienti? {#how-are-forms-rds-different-from-cloud-development-environments}
+
+Gli sviluppatori Forms possono utilizzare AEM Forms Cloud Service Rapid Development Environment per sviluppare rapidamente Forms adattivo, flussi di lavoro e personalizzazioni come la personalizzazione di componenti core, integrazioni con sistemi di terze parti e altro ancora. L’ambiente AEM Forms Cloud Service Rapid Development Environment (RDE) non supporta funzioni e funzionalità che richiedono documenti di record, come la generazione di documenti di record all’invio di un modulo adattivo. Le funzioni elencate di seguito utilizzano Documento di registrazione. Non sono disponibili per un ambiente di sviluppo rapido (RDE):
+
+* Configurazione di un documento di record per un modulo adattivo
+* Generazione di un documento di record all’invio di un modulo adattivo o con un passaggio del flusso di lavoro
+* Invia documento come allegato con azione Invia per e-mail o con passaggio E-mail in un flusso di lavoro
+* Utilizzo di Adobe Sign in un modulo adattivo o in un passaggio del flusso di lavoro
+* API di comunicazione
+
+Viene visualizzato un messaggio di errore durante l&#39;utilizzo di una funzione che richiede Documento di record.
+
+>[!NOTE]
+>
+> Non vi è alcuna modifica tra l’interfaccia utente di Rapid Development Environment (RDE) e altri ambienti di Cloud Service per Forms. Tutte le opzioni relative al documento di record, come la selezione di un modello di documento per un modulo adattivo, continuano a essere visualizzate nell’interfaccia utente. Questi ambienti non dispongono di funzionalità Document of Record per testare tali opzioni. Pertanto, quando si sceglie un&#39;opzione Documento di record, non viene eseguita alcuna azione e viene visualizzato o restituito un messaggio di errore.
+

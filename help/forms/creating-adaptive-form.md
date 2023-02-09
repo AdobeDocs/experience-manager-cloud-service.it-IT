@@ -5,17 +5,22 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
 
-# Creare un modulo adattivo {#creating-an-adaptive-form}
+# Creare un modulo adattivo (componenti di base) {#creating-an-adaptive-form}
 
 
 La funzione Forms adattiva consente di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. La procedura guidata consente di navigare a schede rapide per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per creare un modulo adattivo.
+
+>[!NOTE]
+>
+> Questo articolo descrive un vecchio approccio alla creazione di un modulo adattivo. Per creare un Forms adattivo basato sull&#39;approccio più recente, vedi [Creare un modulo adattivo (componenti core)](creating-adaptive-form.md).
+
 
 <!-- 
 
@@ -39,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-   Adaptive Forms created with this option don’t use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
+   Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
 ## Prerequisiti
 
@@ -54,6 +59,8 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 * **Autorizzazioni**: Aggiungi gli utenti a [!DNL forms-users] per fornire loro le autorizzazioni necessarie per creare un modulo adattivo. Per un elenco dettagliato dei gruppi di utenti specifici dei moduli, vedere [Gruppi e autorizzazioni](forms-groups-privileges-tasks.md).
 
+## Creare un modulo adattivo (componenti di base) {#create-an-adaptive-form-foundation-components}
+
 1. Accesso [!DNL Experience Manager Forms] Istanza di authoring. Può essere un’istanza Cloud o un’istanza di sviluppo locale.
 
 1. Immetti le credenziali nella pagina di accesso di Experience Manager.
@@ -67,15 +74,19 @@ Per creare un modulo adattivo è necessario quanto segue:
 
       >[!NOTE]
       >
-      > Puoi anche creare [!UICONTROL Documento di registrazione] utilizzando un editor di moduli adattivi. Per ulteriori informazioni, consulta [Supporto per i documenti di record nell’Editor di moduli adattivi](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+      > Puoi anche creare [!UICONTROL Documento di registrazione] utilizzando un editor Forms adattivo. Per ulteriori informazioni, consulta [Supporto per i documenti di record nell’Editor di moduli adattivi](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * Quando selezioni un modello statico, le opzioni relative a dati, stile, invio, consegna e anteprima non sono disponibili. Quando si crea un nuovo modulo adattivo, è consigliabile utilizzare un modello modificabile.
 
-1. Nella scheda Stile , seleziona un tema:
+1. In **[!UICONTROL Stile]** seleziona un tema:
+
    * Quando il modello selezionato specifica un tema, il tema viene selezionato automaticamente nella procedura guidata. Puoi anche scegliere un tema diverso dalla scheda Stile .
    * Se il modello selezionato non specifica un tema, è possibile utilizzare la scheda Stile per scegliere un tema. La **[!UICONTROL Crea]** viene attivato solo dopo aver selezionato un tema.
-1. (Facoltativo) Nella scheda Dati, seleziona un modello dati:
+
+1. (Facoltativo) In **[!UICONTROL Dati]** seleziona un modello dati:
+
    * **Modello dati modulo**: A [Modello dati modulo](data-integration.md) consente di integrare entità e servizi da origini dati diverse in un modulo adattivo. Scegliere Modello dati modulo se il modulo adattivo creato prevede il recupero e la scrittura di dati da e verso più origini dati.
+
    * **Schema JSON**: [Schema JSON](adaptive-form-json-schema-form-model.md) rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili per l’uso nella scheda Oggetti modello dati del browser Contenuto durante la creazione di Forms adattivo e tutti i campi vengono aggiunti anche al modulo adattivo appena creato.
 
    Per impostazione predefinita, vengono selezionati tutti i campi del modello dati. Quando si crea il modulo adattivo, tutti i campi del modello dati selezionati vengono convertiti nei corrispondenti componenti del modulo adattivo. La procedura guidata fornisce delle caselle di controllo per selezionare solo i campi da includere nel modulo adattivo.
@@ -86,7 +97,7 @@ Per creare un modulo adattivo è necessario quanto segue:
    
    -->
 
-1. Nella scheda Invio, selezionare un’azione di invio:
+1. In **[!UICONTROL Invio]** seleziona un’azione di invio:
 
    * Quando selezioni un modello, l’azione di invio specificata nel modello viene selezionata automaticamente. È possibile selezionare un’altra azione di invio dalla scheda Invio. La **[!UICONTROL Invio]** visualizza tutte le azioni di invio disponibili.
 
@@ -176,3 +187,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. Tocca ![Salva](/help/forms/assets/check-button.png) per salvare le proprietà.
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
+
+>[!NOTE]
+>
+> È inoltre possibile salvare un modulo adattivo come modello. Per ulteriori informazioni, consulta [Creare un modello utilizzando un modulo adattivo](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).

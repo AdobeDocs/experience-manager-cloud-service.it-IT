@@ -6,21 +6,15 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3072'
 ht-degree: 0%
 
 ---
 
 
 # Utilizzo [!DNL Adobe Sign] in un modulo adattivo {#using-adobe-sign-in-an-adaptive-form}
-
-
->[!NOTE]
->
->La funzione per utilizzare i ruoli di Adobe Sign in un modulo adattivo si trova nel Canale prerelease per agosto 2021. La funzione sarà generalmente disponibile nella versione di settembre 2021.
-
 
 [!DNL Adobe Sign] abilita i flussi di lavoro di firma elettronica per Adaptive Forms. Le firme elettroniche migliorano i flussi di lavoro per elaborare i documenti per aree legali, di vendita, di retribuzione, di gestione delle risorse umane e per altre aree.
 

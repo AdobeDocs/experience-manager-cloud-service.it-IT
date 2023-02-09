@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: ede33e43bdfd4b6aa4670fe74c2133a7a3b54b75
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '890'
 ht-degree: 8%
 
 ---
@@ -29,6 +29,7 @@ Quando viene generato un rapporto, viene inviata una notifica tramite <!-- throu
 [!DNL Experience Manager Assets] genera i seguenti rapporti standard:
 
 * Caricare
+* Scarica
 * Scadenza
 * Modifiche
 * Pubblicazione
@@ -60,7 +61,7 @@ Quando viene generato un rapporto, viene inviata una notifica tramite <!-- throu
 
    ![Seleziona tipo di rapporto](assets/choose_report.png)
 
-1. Configura i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella nell&#39;archivio CRX in cui è memorizzato il rapporto. Per impostazione predefinita, il percorso della cartella è `/content/dam`. È possibile specificare un percorso diverso.
+1. Configura i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella. Per impostazione predefinita, il percorso della cartella è `/content/dam`. Puoi specificare un percorso diverso per eseguire il rapporto in una cartella specifica.
 
    ![Pagina per aggiungere i dettagli del rapporto](assets/report_configuration.png)
 
@@ -104,6 +105,10 @@ Quando viene generato un rapporto, viene inviata una notifica tramite <!-- throu
    ![Un rapporto generato](assets/report_page.png)
 
    Fai clic su **[!UICONTROL Scarica]** dalla barra degli strumenti per scaricare il rapporto in formato CSV.
+
+   >[!NOTE]
+   >
+   >Puoi generare rapporti in base agli eventi generati negli ultimi 360 giorni. Experience Manager conserva i dati ID utente per 30 giorni.
 
 ## Aggiungere colonne personalizzate ai rapporti {#add-custom-columns}
 

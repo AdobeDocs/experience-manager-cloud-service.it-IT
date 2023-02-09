@@ -2,10 +2,10 @@
 title: Come configurare un’azione di invio per un modulo adattivo
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. È possibile utilizzare le azioni di invio integrate o crearne una personalizzata.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 0%
+source-wordcount: '3065'
+ht-degree: 1%
 
 ---
 
@@ -17,6 +17,9 @@ Un’azione di invio viene attivata quando un utente fa clic sul pulsante **[!UI
 * [Invia e-mail](#send-email)
 * [Invia usando il modello dati modulo](#submit-using-form-data-model)
 * [Richiamare un flusso di lavoro AEM](#invoke-an-aem-workflow)
+* [Invia a SharePoint](#submit-to-sharedrive)
+* [Invia a OneDrive](#submit-to-onedrive)
+* [Invia ad Azure Blob Storage](#azure-blob-storage)
 
 È inoltre possibile [estendere le azioni di invio predefinite](custom-submit-action-form.md) per creare un’azione di invio personalizzata.
 
@@ -46,9 +49,6 @@ Puoi configurare un’azione di invio nella **[!UICONTROL Invio]** della sezione
 
 
 -->
-
-
-
 
 ## Invia all’endpoint REST {#submit-to-rest-endpoint}
 
@@ -81,7 +81,7 @@ Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati co
 
 ![Configurazione dell&#39;azione di invio dell&#39;endpoint rimanente](assets/action-config.png)
 
-È inoltre possibile **[!UICONTROL Abilita richiesta POST]** e fornire un URL per inviare la richiesta. Per inviare dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso principale del server AEM. Esempio: `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare un percorso assoluto.
+È inoltre possibile **[!UICONTROL Abilita richiesta POST]** e fornire un URL per inviare la richiesta. Per inviare dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso principale del server AEM. Esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare un percorso assoluto.
 
 >[!NOTE]
 >
@@ -161,7 +161,160 @@ Prima di utilizzare **[!UICONTROL Richiamare un flusso di lavoro AEM]** Invia az
 
 * **[!UICONTROL Nome utente del server di elaborazione]**: Nome utente dell’utente del flusso di lavoro
 
-* **[!UICONTROL Password server di elaborazione]**: Password dell’utente del flusso di lavoro
+* **[!UICONTROL Password server di elaborazione]**: Password utente del flusso di lavoro
+
+## Invia a SharePoint {#submit-to-sharedrive}
+
+La **[!UICONTROL Invia a SharePoint]** L’azione di invio collega un modulo adattivo a un archivio Microsoft SharePoint. È possibile inviare il file di dati del modulo, gli allegati o il documento di record alla Microsoft Sharepoint Storage connessa. Per utilizzare **[!UICONTROL Invia a SharePoint]** Invia azione in un modulo adattivo:
+
+1. [Creare una configurazione SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): Collega AEM Forms al tuo Microsoft Sharepoint Storage.
+2. [Utilizzare l’azione Invia a SharePoint in un modulo adattivo](#use-sharepoint-configuartion-in-af): Collega il modulo adattivo a Microsoft SharePoint configurato.
+
+### Creare una configurazione SharePoint {#create-sharepoint-configuration}
+
+Per collegare AEM Forms al tuo Microsoft Sharepoint Storage:
+
+1. Vai al tuo **Autore di AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft SharePoint]**.
+1. Una volta selezionato il **[!UICONTROL Microsoft SharePoint]**, viene reindirizzato a **[!UICONTROL Browser SharePoint]**.
+1. Seleziona una **Contenitore di configurazione**. La configurazione viene memorizzata nel contenitore di configurazione selezionato.
+1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata di configurazione di SharePoint.
+   ![Configurazione di Sharepoint](/help/forms/assets/sharepoint_configuration.png)
+1. Specifica la **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l’ID client, il segreto client e l’ID tenant per l’URL OAuth, consulta [Documentazione di Microsoft](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * È possibile recuperare `Client ID` e `Client Secret` dell’app dal portale Microsoft Azure.
+   * Nel portale Microsoft Azure, aggiungi l’URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l’URL dell’istanza di authoring.
+   * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` per fornire autorizzazioni di lettura/scrittura.
+   * Utilizza URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell’app dal portale Microsoft Azure.
+
+1. Fai clic su **[!UICONTROL Connetti]**. In caso di connessione riuscita, il `Connection Successful` viene visualizzato un messaggio.
+
+1. Ora, seleziona **Sito SharePoint** > **Raccolta documenti** > **Cartella SharePoint**, per salvare i dati.
+
+   >[!NOTE]
+   >
+   >* Per impostazione predefinita, `forms-ootb-storage-adaptive-forms-submission` è presente nel sito SharePoint selezionato.
+   >* Crea una cartella come `forms-ootb-storage-adaptive-forms-submission`, se non già presente nel `Documents` libreria del sito SharePoint selezionato facendo clic su **Crea cartella**.
+
+
+Ora è possibile utilizzare questa configurazione di SharePoint Sites per l’azione di invio in un modulo adattivo.
+
+### Utilizzare la configurazione SharePoint in un modulo adattivo {#use-sharepoint-configuartion-in-af}
+
+È possibile utilizzare la configurazione SharePoint creata in un modulo adattivo per salvare i dati o il documento di record generato in una cartella SharePoint. Esegui i seguenti passaggi per utilizzare una configurazione di archiviazione SharePoint in un modulo adattivo come:
+1. Crea un [Modulo adattivo](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * Seleziona lo stesso [!UICONTROL Contenitore di configurazione] per un modulo adattivo, in cui è stato creato lo storage SharePoint.
+   > * Se no [!UICONTROL Contenitore di configurazione] viene selezionato, quindi il valore globale [!UICONTROL Configurazione dell&#39;archiviazione] Le cartelle vengono visualizzate nella finestra delle proprietà dell’azione di invio.
+
+
+1. Seleziona **Invia azione** come **[!UICONTROL Invia a SharePoint]**.
+   ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
+1. Seleziona la **[!UICONTROL Configurazione dell&#39;archiviazione]**, in cui salvare i dati.
+1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
+
+Quando si invia il modulo, i dati vengono salvati nell’archivio Microsoft Sharepoint specificato.
+La struttura della cartella per salvare i dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## Invia a OneDrive {#submit-to-onedrive}
+
+La **[!UICONTROL Invia a OneDrive]** L’azione di invio collega un modulo adattivo a Microsoft OneDrive. È possibile inviare i dati del modulo, i file, gli allegati o il documento di record all&#39;archivio Microsoft OneDrive collegato. Per utilizzare [!UICONTROL Invia a OneDrive] Invia azione in un modulo adattivo:
+
+1. [Creare una configurazione OneDrive](#create-a-onedrive-configuration-create-onedrive-configuration): Collega AEM Forms al tuo Microsoft OneDrive Storage.
+2. [Utilizzare l’azione Invia a OneDrive in un modulo adattivo](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Collega il modulo adattivo a Microsoft OneDrive configurato.
+
+### Creare una configurazione OneDrive {#create-onedrice-configuration}
+
+Per collegare AEM Forms al tuo Microsoft OneDrive Storage:
+
+1. Vai al tuo **Autore di AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft OneDrive]**.
+1. Una volta selezionato il **[!UICONTROL Microsoft OneDrive]**, viene reindirizzato a **[!UICONTROL Browser OneDrive]**.
+1. Seleziona una **Contenitore di configurazione**. La configurazione viene memorizzata nel contenitore di configurazione selezionato.
+1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata di configurazione di OneDrive.
+
+   ![Schermata Configurazione di OneDrive](/help/forms/assets/onedrive-configuration.png)
+
+1. Specifica la **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l’ID client, il segreto client e l’ID tenant per l’URL OAuth, consulta [Documentazione di Microsoft](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * È possibile recuperare `Client ID` e `Client Secret` dell’app dal portale Microsoft Azure.
+   * Nel portale Microsoft Azure, aggiungi l’URI di reindirizzamento come `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l’URL dell’istanza di authoring.
+   * Aggiungere le autorizzazioni API `offline_access` e `Files.ReadWrite.All` per fornire autorizzazioni di lettura/scrittura.
+   * Utilizza URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell’app dal portale Microsoft Azure.
+
+1. Fai clic su **[!UICONTROL Connetti]**. In caso di connessione riuscita, il `Connection Successful` viene visualizzato un messaggio.
+
+1. Ora, seleziona **[!UICONTROL Contenitore OneDrive]** > **[Cartella OneDrive]**  per salvare i dati.
+
+   >[!NOTE]
+   >
+   >* Per impostazione predefinita, `forms-ootb-storage-adaptive-forms-submission` è presente in Contenitore OneDrive.
+   > * Crea una cartella come `forms-ootb-storage-adaptive-forms-submission`, se non è già presente facendo clic su **Crea cartella**.
+
+
+Ora è possibile utilizzare questa configurazione di archiviazione OneDrive per l’azione di invio in un modulo adattivo.
+
+### Utilizzare la configurazione di OneDrive in un modulo adattivo {#use-onedrive-configuartion-in-af}
+
+È possibile utilizzare la configurazione di archiviazione OneDrive creata in un modulo adattivo per salvare i dati o il documento di record generato in una cartella OneDrive. Esegui i seguenti passaggi per utilizzare la configurazione di archiviazione OneDrive in un modulo adattivo come:
+1. Crea un [Modulo adattivo](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * Seleziona lo stesso [!UICONTROL Contenitore di configurazione] per un modulo adattivo, in cui è stato creato l&#39;archivio OneDrive.
+   > * Se no [!UICONTROL Contenitore di configurazione] viene selezionato, quindi il valore globale [!UICONTROL Configurazione dell&#39;archiviazione] Le cartelle vengono visualizzate nella finestra delle proprietà dell’azione di invio.
+
+
+1. Seleziona **Invia azione** come **[!UICONTROL Invia a OneDrive]**.
+   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+1. Seleziona la **[!UICONTROL Configurazione dell&#39;archiviazione]**, in cui salvare i dati.
+1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
+
+Quando si invia il modulo, i dati vengono salvati nell&#39;archivio Microsoft OneDrive specificato.
+La struttura della cartella per salvare i dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## Invia ad Azure Blob Storage {#submit-to-azure-blob-storage}
+
+La **[!UICONTROL Invia ad Azure Blob Storage]**  L’azione Invia collega un modulo adattivo a un portale Microsoft Azure. È possibile inviare i dati del modulo, il file, gli allegati o il documento di record ai contenitori Archiviazione di Azure collegati. Per utilizzare l’azione Invia per Azure Blob Storage:
+
+1. [Creare un contenitore di archiviazione BLOB di Azure](#create-a-azure-blob-storage-container-create-azure-configuration): Collega AEM Forms ai contenitori di archiviazione di Azure.
+2. [Utilizzare la configurazione di archiviazione di Azure in un modulo adattivo ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Collega il modulo adattivo ai contenitori di archiviazione di Azure configurati.
+
+### Creare un contenitore di archiviazione BLOB di Azure {#create-azure-configuration}
+
+Per collegare AEM Forms ai contenitori di archiviazione di Azure:
+1. Vai al tuo **Autore di AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Archiviazione di Azure]**.
+1. Una volta selezionato il **[!UICONTROL Archiviazione di Azure]**, viene reindirizzato a **[!UICONTROL Browser di archiviazione di Azure]**.
+1. Seleziona una **Contenitore di configurazione**. La configurazione viene memorizzata nel contenitore di configurazione selezionato.
+1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata Crea configurazione di archiviazione di Azure.
+
+   ![Configurazione archiviazione Azure](/help/forms/assets/azure-storage-configuration.png)
+
+1. Specifica la **[!UICONTROL Titolo]**, **[!UICONTROL Account di archiviazione di Azure]** e **[!UICONTROL Chiave di accesso di Azure]**.
+
+   * È possibile recuperare `Azure Storage Account` nome e `Azure Access key` dagli account di archiviazione nel portale Microsoft Azure.
+
+1. Fai clic su **[!UICONTROL Salva]**.
+
+Ora è possibile utilizzare questa configurazione del contenitore di archiviazione di Azure per l’azione di invio in un modulo adattivo.
+
+### Utilizzare la configurazione di archiviazione di Azure in un modulo adattivo {#use-azure-storage-configuartion-in-af}
+
+È possibile utilizzare la configurazione del contenitore Archiviazione di Azure creata in un modulo adattivo per salvare i dati o il documento di record generato nel contenitore Archiviazione di Azure. Esegui i seguenti passaggi per utilizzare la configurazione del contenitore di archiviazione di Azure in un modulo adattivo come:
+1. Crea un [Modulo adattivo](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * Seleziona lo stesso [!UICONTROL Contenitore di configurazione] per un modulo adattivo, in cui è stato creato l&#39;archivio OneDrive.
+   > * Se no [!UICONTROL Contenitore di configurazione] viene selezionato, quindi il valore globale [!UICONTROL Configurazione dell&#39;archiviazione] Le cartelle vengono visualizzate nella finestra delle proprietà dell’azione di invio.
+
+
+1. Seleziona **Invia azione** come **[!UICONTROL Invia ad Azure Blob Storage]**.
+   ![GIF archiviazione BLOB di Azure](/help/forms/assets/azure-submit-video.gif)
+
+1. Seleziona la **[!UICONTROL Configurazione dell&#39;archiviazione]**, in cui salvare i dati.
+1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
+
+Quando si invia il modulo, i dati vengono salvati nella configurazione del contenitore di archiviazione di Azure specificata.
+La struttura della cartella per salvare i dati è `/configuration_container/form_name/year/month/date/submission_id/data`.
 
 Per impostare i valori di una configurazione, [Generare configurazioni OSGi utilizzando l’SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)e [distribuire la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) all&#39;istanza di Cloud Service.
 

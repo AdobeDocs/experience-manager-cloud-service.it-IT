@@ -2,9 +2,9 @@
 title: Come si crea un modello di modulo adattivo?
 description: Creare modelli di modulo adattivo per definire la struttura di base e il contenuto iniziale utilizzando l’Editor modelli.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
@@ -184,6 +184,23 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
+
+## Salvare un modulo adattivo come modello {#saving-adaptive-form-as-template}
+
+È inoltre possibile salvare un modulo adattivo come modello da utilizzare in futuro. Per salvare un modulo adattivo come modello:
+
+1. Seleziona un modulo adattivo per salvarlo come modello.
+1. Fai clic su **[!UICONTROL Salva come modello]**. Viene visualizzata una finestra di dialogo.
+1. Specifica **[!UICONTROL Titolo]** (campo obbligatorio), **[!UICONTROL Posizione]** (campo obbligatorio) e **[!UICONTROL Descrizione]** (campo facoltativo) per il modello.
+1. Fai clic su **[!UICONTROL Crea]**.
+
+   ![Salva come modulo come modello](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>Per utilizzare lo stesso criterio contenitore del modulo adattivo di origine, si consiglia di salvare il modello nella stessa cartella del modulo adattivo di origine. Nel caso in cui il modello venga salvato in qualsiasi altra cartella, il modello creato utilizza un criterio contenitore predefinito.
 
 ## Consigli {#recommendations}
 
