@@ -4,9 +4,9 @@ description: Scopri come creare un modulo adattivo utilizzando [!DNL Experience 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Creare un modulo adattivo (componenti core) {#creating-an-adaptive-form-core-components}
 
-La funzione Forms adattiva consente di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. La procedura guidata consente di navigare a schede rapide per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per creare un modulo adattivo. Adaptive Forms fornisce due tipi di componenti:
+La funzione Forms adattiva consente di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. La procedura guidata consente di navigare a schede rapide per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per creare un modulo adattivo.
 
-* I componenti core Forms adattivi sono componenti standard per l’acquisizione dei dati. Questi componenti offrono funzionalità di personalizzazione, tempi di sviluppo ridotti e costi di manutenzione inferiori per le esperienze di iscrizione digitale. Uno sviluppatore può personalizzare facilmente questi componenti. Adobe consiglia di utilizzare questi componenti moderni ed estensibili per sviluppare Adaptive Forms.
+Prima di iniziare, scopri il tipo di componenti Forms disponibili:
 
-* I componenti adattivi di Forms Foundation sono componenti classici (vecchi) per l’acquisizione di dati.
+* [Componenti core adattabili di Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): Si tratta di componenti di acquisizione dati standardizzati. Questi componenti offrono funzionalità di personalizzazione, tempi di sviluppo ridotti e costi di manutenzione inferiori per le esperienze di iscrizione digitale. Uno sviluppatore può personalizzare e personalizzare facilmente questi componenti. Adobe consiglia di utilizzare questi componenti moderni ed estensibili per sviluppare Adaptive Forms.
 
-Questo articolo descrive un approccio più recente per creare un modulo adattivo. Per creare un Forms adattivo basato sul vecchio approccio, vedi [Creare un modulo adattivo (componenti di base)](creating-adaptive-form.md)
+* [Componenti adattivi di Forms Foundation](creating-adaptive-form.md): Si tratta di componenti di acquisizione dati classici (vecchi). Puoi continuare a utilizzarli per modificare i componenti di base esistenti basati su Modulo adattivo. Se si creano nuovi moduli, Adobe consiglia di utilizzare  [Componenti core adattabili di Forms](creating-adaptive-form-core-components.md) per creare un Forms adattivo.
 
 ![Creazione guidata di un modulo adattivo](/help/release-notes/assets/wizard.png)
 
@@ -89,30 +89,7 @@ Ora è possibile trascinare i componenti core di Forms adattivi nel contenitore 
 
 ## Componenti core adattabili di Forms disponibili
 
-I componenti core Forms adattivi sono componenti standard per l’acquisizione dei dati. Questi componenti offrono funzionalità di personalizzazione, tempi di sviluppo ridotti e costi di manutenzione inferiori per le esperienze di iscrizione digitale. Sono disponibili i seguenti componenti core pronti all’uso:
-
-* Pannello a soffietto Forms adattivo: La funzione a soffietto consente all’utente di visualizzare e nascondere sezioni di contenuti correlati in un Modulo adattivo.
-
-* Pulsante Adattivo Forms
-* Gruppo di caselle di controllo Forms adattivo
-* Selettore data adattivo di Forms
-* Elenco a discesa Adattivo Forms
-* Ingresso e-mail Forms adattivo
-* Allegati file Forms adattivi
-* Schede orizzontali Forms adattabili
-* Immagine Forms adattiva
-* Ingresso numero Forms adattivo
-* Pannello Forms adattivo
-* Pulsante di scelta Forms adattivo
-* Pulsante Reimpostazione Forms adattivo
-* Pulsante di invio Forms adattivo
-* Ingresso telefonico Forms adattivo
-* Testo Forms adattivo
-* Casella di testo Forms adattiva
-* Titolo Forms adattivo
-* Layout guidato Forms adattivo
-* Intestazione
-* Piè di pagina
+I componenti core Forms adattivi sono componenti standard per l’acquisizione dei dati. Questi componenti offrono funzionalità di personalizzazione, consentono di ridurre i tempi di sviluppo e i costi di manutenzione per le esperienze di iscrizione digitale. [Documentazione sui componenti core adattabili di Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) presenta un elenco dettagliato dei componenti disponibili e informazioni dettagliate sulle funzionalità di ciascun componente. È inoltre possibile visitare [https://aemcomponents.dev/](https://aemcomponents.dev/) per visualizzare i componenti core disponibili in azione.
 
 ## Modificare le proprietà del modello di modulo di un modulo adattivo {#edit-form-model}
 

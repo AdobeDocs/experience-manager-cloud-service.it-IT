@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1032'
 ht-degree: 23%
 
 ---
@@ -66,17 +66,18 @@ Dai un’occhiata al video Panoramica sulla versione di gennaio 2023 per un riep
 
 ### Nuove funzioni nella versione prerelease di [!DNL Forms] {#prerelease-features-forms}
 
-* **[Utilizzare i componenti core di acquisizione dati per creare Forms adattivo](/help/forms/creating-adaptive-form-core-components.md)**: Utilizza l’editor Forms adattivo per creare moduli basati su componenti di acquisizione dati standardizzati (componenti core). Questi componenti offrono funzionalità di personalizzazione, tempi di sviluppo ridotti e costi di manutenzione inferiori per le esperienze di iscrizione digitale.
+* **[Utilizzare i componenti core di acquisizione dati per creare Forms adattivo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Utilizza l’editor Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) per creare moduli basati su componenti di acquisizione dati standardizzati (componenti core). Questi componenti offrono funzionalità di personalizzazione, tempi di sviluppo ridotti e costi di manutenzione inferiori per le esperienze di iscrizione digitale.
 * **[Supporto della pipeline front-end per lo stile basato su componenti adattativi Forms](/help/forms/using-themes-in-core-components.md)**: Utilizza temi basati su BEM facilmente personalizzabili per Forms adattivo basato su componenti core distribuendoli con la pipeline di distribuzione Frontend per migliorare l’aspetto dei moduli.
 * **[Genera documento di record per Forms adattivo basato su componenti core](/help/forms/generate-document-of-record-core-components.md)**: Crea un record per i moduli adattivi basati su componenti core all’invio per l’archiviazione a lungo termine, in formato cartaceo o nel formato del documento.
 
-![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
+![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **Condivisione di un modulo adattivo per la revisione**: Utilizza il meccanismo di revisione di Forms adattivo per consentire a uno o più revisori di rivedere il modulo.
 * **[Inviare Forms adattivo a Microsoft SharePoint e Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Semplifica l’invio dei dati con la possibilità di inviare direttamente i dati del modulo adattivo a Microsoft SharePoint e Microsoft OneDrive. È possibile inviare sia dati basati su schema che dati privi di schema. Queste azioni di invio si aggiungono alle azioni di invio già disponibili.
 * **[Creazione efficiente di moduli con la funzione Salva un modulo adattivo come modello](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Semplifica il processo di creazione dei moduli salvando un modulo adattivo come modello e riutilizzando i modelli per il nuovo modulo adattivo.
-* **[Collegare Forms Data Model ai database che supportano JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**: Collega AEM Forms as a Cloud Service a un database che supporta JDBC per leggere e scrivere i dati in tali database.
-* **Collegare il modello dati del modulo agli endpoint REST che supportano la versione 3.0 della specifica Open API**: Collega AEM Forms as a Cloud Service agli endpoint REST che supportano la versione 3.0 della specifica Open API per l’invio e la ricezione di dati.
+* **[Collegare AEM Forms ai database supportati da JDBC](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Collega facilmente il tuo modello dati AEM Forms ai database che supportano JDBC, consentendoti di leggere e scrivere i dati senza problemi.
+* **[Integrare con gli endpoint REST utilizzando Open API 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Collega i modelli di dati dei moduli as a Cloud Service di AEM Forms agli endpoint REST che supportano la versione 3.0 della specifica Open API, che consente di inviare e ricevere i dati con facilità.
+* **[Condivisione di un modulo adattivo per la revisione](/help/forms/create-reviews-forms.md)**: Utilizza il meccanismo di revisione di Forms adattivo per consentire a uno o più revisori di rivedere il modulo.
+
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 

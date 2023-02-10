@@ -1,9 +1,9 @@
 ---
 title: Ambienti di sviluppo rapidi
 description: Scopri come sfruttare gli ambienti di sviluppo rapido per iterazioni di sviluppo rapide in un ambiente cloud.
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '2903'
+source-wordcount: '2898'
 ht-degree: 5%
 
 ---
@@ -452,7 +452,7 @@ Un modello intermedio è quello in cui un’organizzazione acquista un numero di
 
 ## In che modo un ambiente AEM Forms Cloud Service Rapid Development Environment (RDE) è diverso da altri ambienti? {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Gli sviluppatori Forms possono utilizzare AEM Forms Cloud Service Rapid Development Environment per sviluppare rapidamente Forms adattivo, flussi di lavoro e personalizzazioni come la personalizzazione di componenti core, integrazioni con sistemi di terze parti e altro ancora. L’ambiente AEM Forms Cloud Service Rapid Development Environment (RDE) non supporta funzioni e funzionalità che richiedono documenti di record, come la generazione di documenti di record all’invio di un modulo adattivo. Le funzioni elencate di seguito utilizzano Documento di registrazione. Non sono disponibili per un ambiente di sviluppo rapido (RDE):
+Gli sviluppatori Forms possono utilizzare AEM Forms Cloud Service Rapid Development Environment per sviluppare rapidamente Forms adattivo, flussi di lavoro e personalizzazioni come la personalizzazione di componenti core, integrazioni con sistemi di terze parti e altro ancora. L’ambiente AEM Forms Cloud Service Rapid Development Environment (RDE) non supporta le API di comunicazione e per le funzioni e le funzionalità che richiedono Document of Record, come la generazione di un documento di record all’invio di un modulo adattivo. Le seguenti funzioni di AEM Forms elencate non sono disponibili in un ambiente di sviluppo rapido (RDE):
 
 * Configurazione di un documento di record per un modulo adattivo
 * Generazione di un documento di record all’invio di un modulo adattivo o con un passaggio del flusso di lavoro
@@ -460,9 +460,7 @@ Gli sviluppatori Forms possono utilizzare AEM Forms Cloud Service Rapid Developm
 * Utilizzo di Adobe Sign in un modulo adattivo o in un passaggio del flusso di lavoro
 * API di comunicazione
 
-Viene visualizzato un messaggio di errore durante l&#39;utilizzo di una funzione che richiede Documento di record.
-
 >[!NOTE]
 >
-> Non vi è alcuna modifica tra l’interfaccia utente di Rapid Development Environment (RDE) e altri ambienti di Cloud Service per Forms. Tutte le opzioni relative al documento di record, come la selezione di un modello di documento per un modulo adattivo, continuano a essere visualizzate nell’interfaccia utente. Questi ambienti non dispongono di funzionalità Document of Record per testare tali opzioni. Pertanto, quando si sceglie un&#39;opzione Documento di record, non viene eseguita alcuna azione e viene visualizzato o restituito un messaggio di errore.
+> Non vi è alcuna modifica tra l’interfaccia utente di Rapid Development Environment (RDE) e altri ambienti di Cloud Service per Forms. Tutte le opzioni relative al documento di record, come la selezione di un modello di documento per un modulo adattivo, continuano a essere visualizzate nell’interfaccia utente. Questi ambienti non dispongono di API di comunicazione e funzionalità di documentazione per testare tali opzioni. Quindi, quando scegli un’opzione che richiede le funzionalità API di comunicazione o Documento di record, non viene eseguita alcuna azione e viene visualizzato o restituito un messaggio di errore.
 

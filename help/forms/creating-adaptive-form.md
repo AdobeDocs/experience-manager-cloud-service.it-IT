@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,12 @@ ht-degree: 0%
 
 La funzione Forms adattiva consente di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. La procedura guidata consente di navigare a schede rapide per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per creare un modulo adattivo.
 
->[!NOTE]
->
-> Questo articolo descrive un vecchio approccio alla creazione di un modulo adattivo. Per creare un Forms adattivo basato sull&#39;approccio più recente, vedi [Creare un modulo adattivo (componenti core)](creating-adaptive-form.md).
+Prima di iniziare, scopri il tipo di componenti Forms disponibili:
+
+* [Componenti core adattabili di Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) sono componenti di acquisizione dati standardizzati. Questi componenti offrono funzionalità di personalizzazione, tempi di sviluppo ridotti e costi di manutenzione inferiori per le esperienze di iscrizione digitale. Uno sviluppatore può personalizzare e personalizzare facilmente questi componenti. Adobe consiglia di utilizzare questi componenti moderni ed estensibili per sviluppare Adaptive Forms.
+
+* [Componenti adattivi di Forms Foundation](creating-adaptive-form.md) sono componenti di acquisizione dati classici (vecchi). Puoi continuare a utilizzarli per modificare i componenti di base esistenti basati su Modulo adattivo. Se si creano nuovi moduli, Adobe consiglia di utilizzare  [Componenti core adattabili di Forms](creating-adaptive-form-core-components.md) per creare un Forms adattivo.
+
 
 
 <!-- 

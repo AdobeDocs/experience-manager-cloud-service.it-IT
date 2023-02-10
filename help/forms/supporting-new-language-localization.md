@@ -1,18 +1,20 @@
 ---
-title: Supporto di nuove impostazioni internazionali per la localizzazione di moduli adattivi
-seo-title: Supporting new locales for adaptive forms localization
+title: Aggiunta del supporto per nuove impostazioni internazionali a un modulo adattivo
+seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione di moduli adattivi. Inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: 848c6a4ea403f644408407aed0a7e06c3524d942
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1180'
 ht-degree: 0%
 
 ---
 
-# Supporto di nuove impostazioni internazionali per la localizzazione Adaptive Forms{#supporting-new-locales-for-adaptive-forms-localization}
+# Supporto di nuove impostazioni internazionali per la localizzazione Adaptive Forms {#supporting-new-locales-for-adaptive-forms-localization}
 
-## Informazioni sui dizionari internazionali {#about-locale-dictionaries}
+AEM Forms fornisce supporto preconfigurato per le impostazioni internazionali (inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR). È possibile aggiungere supporto anche per più impostazioni internazionali, come Hindi(hi_IN).
+
+## Informazioni sui dizionari delle impostazioni internazionali {#about-locale-dictionaries}
 
 La localizzazione dei moduli adattivi si basa su due tipi di dizionari locali:
 
@@ -20,33 +22,33 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari locali:
 
 * **Dizionari globali** Ci sono due dizionari globali, gestiti come oggetti JSON, nella libreria client AEM. Questi dizionari contengono messaggi di errore predefiniti, nomi di mese, simboli di valuta, pattern di data e ora e così via. Puoi trovare questi dizionari in `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Queste posizioni contengono cartelle separate per ogni impostazione internazionale. Poiché i dizionari globali non vengono aggiornati frequentemente, mantenere file JavaScript separati per ogni impostazione internazionale consente ai browser di memorizzarli nella cache e di ridurre l’utilizzo della larghezza di banda della rete quando si accede a diversi moduli adattivi sullo stesso server.
 
-Passaggi per supportare la nuova localizzazione per AEM Forms:
+## Aggiungi supporto per nuove impostazioni internazionali {#add-support-for-new-locales}
+
+Esegui le seguenti operazioni per aggiungere il supporto per una nuova impostazione internazionale:
 
 1. [Aggiunta del supporto per la localizzazione per le impostazioni internazionali non supportate](#add-localization-support-for-non-supported-locales-add-localization-support-for-non-supported-locales)
 1. [Usa impostazioni internazionali aggiunte in Adaptive Forms](#use-added-locale-in-adaptive-forms-use-added-locale-in-af)
 
-## Aggiunta del supporto per la localizzazione per le impostazioni internazionali non supportate {#add-localization-support-for-non-supported-locales}
+### Aggiunta del supporto per la localizzazione per le impostazioni internazionali non supportate {#add-localization-support-for-non-supported-locales}
 
 AEM Forms supporta attualmente la localizzazione di contenuti Forms adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
 
 Per aggiungere il supporto per una nuova impostazione internazionale in fase di runtime di Adaptive Forms:
 
 1. [Clonare l’archivio](#1-clone-the-repository-clone-the-repository)
-1. [Aggiungere un’impostazione internazionale al servizio GuideLocalizationService](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
-1. [Aggiungi cartella specifica per il nome dell&#39;impostazione internazionale](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-   * [Aggiungere una libreria client XFA per le impostazioni internazionali](#3-add-xfa-client-library-for-a-locale)
-   * [Aggiungere una libreria client per moduli adattivi per le impostazioni internazionali](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
-1. [Aggiungere supporto per le impostazioni internazionali del dizionario](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
-1. [Conferma le modifiche nell’archivio e distribuisci la pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
+1. [Aggiungere un’impostazione internazionale al servizio GuideLocalizationService](#2-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
+1. [Aggiungi cartella specifica per il nome dell&#39;impostazione internazionale](#3-add-locale-name-specific-folder-client-library-add-locale-name-specific-folder)
+1. [Aggiungere supporto per le impostazioni internazionali del dizionario](#about-locale-dictionaries-about-locale-dictionaries)
+1. [Conferma le modifiche nell’archivio e distribuisci la pipeline](#5-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-chnages-in-repo-deploy-pipeline)
 
-### 1. Clonare l&#39;archivio {#clone-the-repository}
+#### 1. Clonare l&#39;archivio {#clone-the-repository}
 
 1. Dalla riga di comando, individua il punto in cui desideri duplicare l’archivio del Cloud Service Forms.
 1. Esegui il comando [recuperato da Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) È simile a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Usa il nome utente e la password git per clonare l’archivio.
 1. Apri la cartella dell’archivio del Cloud Service Forms clonato nell’editor desiderato.
 
-### 2. Aggiungere un’impostazione internazionale al servizio Guide Localization {#add-a-locale-to-the-guide-localization-service-br}
+#### 2. Aggiungere un’impostazione internazionale al servizio Guide Localization {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Individua il `Guide Localization Service.cfg.json` e aggiungere le impostazioni internazionali da aggiungere all&#39;elenco delle impostazioni internazionali supportate.
 
@@ -55,19 +57,20 @@ Per aggiungere il supporto per una nuova impostazione internazionale in fase di 
    >* Crea un file con il nome `Guide Localization Service.cfg.json` , se non è già presente.
 
 
-### 3. Aggiungi la libreria client della cartella specifica per il nome locale {#add-locale-name-specific-folder}
+#### 3. Aggiungi la libreria client della cartella specifica per il nome locale {#add-locale-name-specific-folder}
 
 1. Nella cartella UI.content, crea `etc/clientlibs` cartella.
 1. Creare ulteriormente una cartella denominata come `locale-name` sotto `etc/clientlibs` da utilizzare come contenitore per clientlibs xfa e af.
 
-#### 3.1 Aggiungi la libreria client XFA per un&#39;impostazione internazionale nella cartella locale-name
+##### 3.1 Aggiungi la libreria client XFA per un&#39;impostazione internazionale nella cartella locale-name
 
-1. Crea un nodo denominato come `[locale-name]_xfa` e digitare come `cq:ClientLibraryFolder` sotto `etc/clientlibs/locale_name`, con categoria `xfaforms.I18N.<locale>`e aggiungi i seguenti file:
-   * **I18N.js** definizione `xfalib.locale.Strings` per `<locale>` come definito in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
-   * **js.txt** contenenti:
-      */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+Crea un nodo denominato come `[locale-name]_xfa` e digitare come `cq:ClientLibraryFolder` sotto `etc/clientlibs/locale_name`, con categoria `xfaforms.I18N.<locale>`e aggiungi i seguenti file:
 
-#### 3.2. Aggiungere una libreria client per moduli adattivi per una cartella locale-name {#add-adaptive-form-client-library-for-a-locale-br}
+* **I18N.js** definizione `xfalib.locale.Strings` per `<locale>` come definito in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+* **js.txt** contenenti:
+   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+
+##### 3.2. Aggiungere una libreria client per moduli adattivi per una cartella locale-name {#add-adaptive-form-client-library-for-a-locale-br}
 
 1. Crea un nodo denominato come `[locale-name]_af` e digitare come `cq:ClientLibraryFolder` sotto `etc/clientlibs/locale_name`, con la categoria `guides.I18N.<locale>` e le dipendenze come `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` e `guide.common`.
 1. Crea una cartella denominata `javascript` e aggiungi i seguenti file:
@@ -82,7 +85,7 @@ Per aggiungere il supporto per una nuova impostazione internazionale in fase di 
      LogMessages.js
    ```
 
-### 4. Aggiungi il supporto delle impostazioni internazionali per il dizionario {#add-locale-support-for-the-dictionary-br}
+#### 4. Aggiungi il supporto delle impostazioni internazionali per il dizionario {#add-locale-support-for-the-dictionary-br}
 
 Esegui questo passaggio solo se `<locale>` aggiungi non è tra `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -102,7 +105,7 @@ Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hie
 
 Prima di apportare le modifiche all’archivio Git AEM, devi accedere al tuo [Informazioni sull’archivio Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 
-### 5. Conferma le modifiche nell’archivio e distribuisci la pipeline {#commit-chnages-in-repo-deploy-pipeline}
+#### 5. Conferma le modifiche nell’archivio e distribuisci la pipeline {#commit-chnages-in-repo-deploy-pipeline}
 
 Dopo aver aggiunto un nuovo supporto per le impostazioni internazionali, conferma le modifiche all’archivio GIT. Distribuisci il codice utilizzando l’intera pipeline di stack. Scopri [come impostare una pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) per aggiungere nuovo supporto per le impostazioni internazionali.
 
@@ -110,7 +113,7 @@ Al termine della pipeline, nell’ambiente AEM viene visualizzata la nuova impos
 
 ### Usa impostazioni internazionali aggiunte in Adaptive Forms {#use-added-locale-in-af}
 
-Passaggi per utilizzare ed eseguire il rendering di un modulo adattivo utilizzando una nuova impostazione internazionale aggiunta:
+Esegui i seguenti passaggi per utilizzare ed eseguire il rendering di un modulo adattivo utilizzando un’impostazione internazionale appena aggiunta:
 
 1. Accedi alla tua istanza di authoring AEM.
 1. Vai a **Forms** >  **Forms e documenti**.
@@ -121,11 +124,11 @@ Passaggi per utilizzare ed eseguire il rendering di un modulo adattivo utilizzan
 1. Aggiungi `&afAcceptLang=<locale-name>` nell’URL di un modulo adattivo.
 1. Aggiorna la pagina e il modulo adattivo viene riprodotto in un’impostazione internazionale specifica.
 
-Esistono due metodi per identificare le impostazioni internazionali di un modulo adattivo. Quando viene eseguito il rendering di un modulo adattivo, identifica le impostazioni internazionali richieste da :
+Esistono due metodi per identificare le impostazioni internazionali di un modulo adattivo. Quando viene eseguito il rendering di un modulo adattivo, identifica le impostazioni internazionali richieste nei seguenti modi:
 
-* guardando `[local]` nell’URL del modulo adattivo. Il formato dell’URL è `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Utilizzo `[local]` Il selettore consente di memorizzare in cache un modulo adattivo.
+* Ripristino della `[local]` nell’URL del modulo adattivo. Il formato dell’URL è `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Utilizzo `[local]` Il selettore consente di memorizzare in cache un modulo adattivo.
 
-* osservando i seguenti parametri nell’ordine specificato:
+* Ripristino dei seguenti parametri nell’ordine elencato:
 
    * Parametro di richiesta `afAcceptLang`
 Per ignorare le impostazioni internazionali del browser degli utenti, puoi trasmettere le 
