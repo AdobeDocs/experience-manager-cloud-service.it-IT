@@ -2,7 +2,7 @@
 title: Come si crea un modello di modulo adattivo?
 description: Creare modelli di modulo adattivo per definire la struttura di base e il contenuto iniziale utilizzando l’Editor modelli.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
+source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 1%
@@ -158,7 +158,7 @@ Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo
 
 
 
-### Associare uno schema del modello dati modulo a un modello {#associating-form-data-model-schema-in-template}
+## Associare uno schema del modello dati modulo a un modello {#associating-form-data-model-schema-in-template}
 
 Gli autori possono associare un [!UICONTROL Schema del modello dati del modulo] in un modello di modulo adattivo nell’editor modelli. Consente agli autori di selezionare uno schema dall’editor modelli. Quando si associa uno schema a un modello e l’autore crea un modulo basato sul modello, lo schema viene preselezionato per il modulo. Consente agli autori dei moduli di regolare l’utilizzo dello schema e di risparmiare tempo anche per gli autori dei moduli. Per selezionare uno schema del modello dati modulo nell’editor modelli:
 
