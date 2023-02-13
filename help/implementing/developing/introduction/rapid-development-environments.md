@@ -1,9 +1,9 @@
 ---
 title: Ambienti di sviluppo rapidi
 description: Scopri come sfruttare gli ambienti di sviluppo rapido per iterazioni di sviluppo rapide in un ambiente cloud.
-source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
+source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3069'
 ht-degree: 5%
 
 ---
@@ -447,6 +447,7 @@ Per questi motivi, dopo aver convalidato il codice in un ambiente RDE, devi dist
 
 Considera anche le seguenti considerazioni:
 
+* Gli RDE non includono un livello di anteprima
 * Gli RDE non supportano attualmente la visualizzazione e il debug del codice front-end distribuito utilizzando la pipeline front-end di Cloud Manager.
 * Attualmente gli RDE non supportano il canale prerelease.
 
