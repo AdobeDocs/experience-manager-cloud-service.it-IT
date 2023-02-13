@@ -3,9 +3,9 @@ title: Implementazione in AEM as a Cloud Service
 description: Implementazione in AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
+source-git-commit: 0481267958fe8ac4b28b2742924d2bc2c337eebc
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3497'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Le basi dello sviluppo del codice sono simili in AEM as a Cloud Service rispetto alle soluzioni AEM On Premise e Managed Services. Gli sviluppatori scrivono il codice e lo testano localmente, che viene quindi inviato agli ambienti AEM as a Cloud Service remoti. Cloud Manager, uno strumento opzionale per la distribuzione dei contenuti per Managed Services, è necessario. Questo è ora l’unico meccanismo per distribuire il codice AEM ambienti as a Cloud Service.
+Le basi dello sviluppo del codice sono simili in AEM as a Cloud Service rispetto alle soluzioni AEM On Premise e Managed Services. Gli sviluppatori scrivono il codice e lo testano localmente, che viene quindi inviato agli ambienti AEM as a Cloud Service remoti. Cloud Manager, uno strumento opzionale per la distribuzione dei contenuti per Managed Services, è necessario. Questo è ora l’unico meccanismo per distribuire il codice AEM ambienti as a Cloud Service di sviluppo, stage e produzione. Per eseguire rapidamente la convalida e il debug delle funzioni prima della distribuzione di tali ambienti, il codice può essere sincronizzato da un ambiente locale a un [Ambiente di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 L&#39;aggiornamento della [Versione AEM](/help/implementing/deploying/aem-version-updates.md) è sempre un evento di distribuzione separato dal push [codice personalizzato](#customer-releases). Visualizzate in un altro modo, le versioni del codice personalizzato devono essere testate rispetto alla versione AEM in produzione, in quanto questo è ciò che verrà distribuito in alto. AEM aggiornamenti di versione che si verificano in seguito, che saranno frequenti e vengono applicati automaticamente. Sono compatibili con le versioni precedenti del codice cliente già distribuito.
 
@@ -171,7 +171,6 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Gestione pacchetti - Migrazione dei pacchetti di contenuto variabile"
 >abstract="Esplora l’utilizzo di package manager per i casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;, che include l’importazione di contenuti specifici dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, il trasferimento di piccoli pacchetti di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
->abstract="Esplora l’utilizzo di package manager per i casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;, che include l’importazione di contenuti specifici dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, il trasferimento di piccoli pacchetti di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Strumento Content Transfer (Trasferimento contenuti)"
 
 Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;. Ad esempio, per eseguire il debug di un problema di produzione, è necessario importare contenuto specifico dalla produzione nella fase di staging. Per questi scenari, [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) può essere utilizzato in ambienti AEM as a Cloud Service.
@@ -279,6 +278,12 @@ Se vengono apportate modifiche agli indici, è importante che la versione blu co
 ### Codifica conservativa per i rollback {#conservative-coding-for-rollbacks}
 
 Se viene segnalato o rilevato un errore dopo la distribuzione, è possibile che sia necessario eseguire il rollback alla versione Blue. Sarebbe opportuno garantire che il codice blu sia compatibile con tutte le nuove strutture create dalla versione verde, in quanto le nuove strutture (qualsiasi contenuto mutabile) non verranno rimandate indietro. Se il codice precedente non è compatibile, le correzioni dovranno essere applicate nelle versioni successive del cliente.
+
+## Ambienti di sviluppo rapido (RDE) {#rde}
+
+[Ambienti di sviluppo rapidi](/help/implementing/developing/introduction/rapid-development-environments.md) (o RDE in breve) consentono agli sviluppatori di implementare e rivedere rapidamente le modifiche, riducendo al minimo il tempo necessario per testare le funzioni che sono già collaudate in un ambiente di sviluppo locale.
+
+A differenza dei normali ambienti di sviluppo, che distribuiscono il codice tramite la pipeline di Cloud Manager, gli sviluppatori utilizzano strumenti a riga di comando per sincronizzare il codice da un ambiente di sviluppo locale all’RDE. Una volta testate con successo le modifiche in un RDE, queste devono essere distribuite in un ambiente di sviluppo cloud regolare tramite la pipeline di Cloud Manager, che inserirà il codice attraverso i gate di qualità appropriati.
 
 ## Modalità di esecuzione {#runmodes}
 

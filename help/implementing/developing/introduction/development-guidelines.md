@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Scopri le linee guida per lo sviluppo su AEM modalità as a Cloud Service e su importanti modi in cui differisce da AEM nei locali e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2591'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 >id="development_guidelines"
 >title="Linee guida per lo sviluppo in AEM as a Cloud Service"
 >abstract="Scopri le linee guida per lo sviluppo su AEM modalità as a Cloud Service e su importanti modi in cui differisce da AEM nei locali e AEM in AMS."
->additional-url="https://video.tv.adobe.com/v/330555/" text="Demo della struttura del pacchetto"
+>additional-url="https://video.tv.adobe.com/v/330555/?captions=ita/" text="Demo della struttura del pacchetto"
 
 Questo documento presenta le linee guida per lo sviluppo su AEM modalità as a Cloud Service e su importanti modi in cui differisce da AEM nei locali e AEM in AMS.
 
@@ -162,7 +162,7 @@ I clienti possono accedere a CRXDE lite nell’ambiente di sviluppo del livello 
 
 È invece possibile avviare il browser Repository dalla Console per sviluppatori, fornendo una visualizzazione in sola lettura nell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima. Ulteriori informazioni sul browser Repository [qui](/help/implementing/developing/tools/repository-browser.md).
 
-Nella Console per sviluppatori sono disponibili un set di strumenti per il debug AEM ambienti di sviluppo as a Cloud Service per ambienti di sviluppo, stage e produzione. L’URL può essere determinato regolando gli url del servizio Author o Publish come segue:
+Nella Console per sviluppatori per gli ambienti RDE, sviluppo, stage e produzione è disponibile un set di strumenti per il debug AEM ambienti di sviluppo as a Cloud Service. L’URL può essere determinato regolando gli url del servizio Author o Publish come segue:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 

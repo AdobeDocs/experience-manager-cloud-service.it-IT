@@ -2,10 +2,10 @@
 title: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service
 description: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 100%
+source-wordcount: '1797'
+ht-degree: 98%
 
 ---
 
@@ -79,6 +79,8 @@ Con AEM as a Cloud Service sono disponibili tre tipi di ambienti:
 
    Fai riferimento a [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=it#using-cloud-manager) per ulteriori dettagli.
 
+* **Ambiente di sviluppo rapido**: consente iterazioni di sviluppo rapide per il debug di codice nuovo o esistente.
+
 ## Programmi {#programs}
 
 Qualsiasi nuovo progetto AEM è sempre associato a una singola base di codice specifica, in cui puoi memorizzare sia la configurazione che il codice personalizzato per il progetto. Queste informazioni sono memorizzate in un archivio di codice, accessibile tramite i consueti client Git, messi a disposizione al momento della creazione di nuovi programmi.
@@ -90,7 +92,7 @@ Un programma AEM è il contenitore che include:
 | Archivio del codice (Git) |  1 |
 | Immagine linea di base (Sites o Assets) |  1 |
 | Set di ambienti di stage e produzione (1:1) | 0 o 1 |
-| Ambienti non di produzione (sviluppo o dimostrazione) | Da 0 a N |
+| Ambienti non di produzione (RDE, sviluppo o dimostrazione) | Da 0 a N |
 | Pipeline per ogni ambiente | 0 o 1 |
 
 Per AEM as a Cloud Service, inizialmente sono disponibili due tipi di programmi:
