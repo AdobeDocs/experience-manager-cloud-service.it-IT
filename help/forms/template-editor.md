@@ -2,9 +2,9 @@
 title: Come si crea un modello di modulo adattivo?
 description: Creare modelli di modulo adattivo per definire la struttura di base e il contenuto iniziale utilizzando l’Editor modelli.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '2017'
 ht-degree: 1%
 
 ---
@@ -50,8 +50,7 @@ Contiene le seguenti opzioni:
    * **Informazioni pagina**: Consente di specificare informazioni quali l’ora di pubblicazione/annullamento della pubblicazione, le miniature, le librerie lato client, i criteri pagina e la libreria lato client della progettazione della pagina.
 
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Selettore modalità:** Consente di modificare la modalità.
-Puoi scegliere **[!UICONTROL Struttura]** modalità, **[!UICONTROL Contenuto iniziale]**, **[!UICONTROL Controllo layout]** modalità. La modalità Struttura consente di aggiungere e personalizzare l’intestazione e il piè di pagina. La modalità Contenuto iniziale consente di personalizzare il contenuto del modulo.
+   * **Selettore modalità:** Consente di modificare la modalità.È possibile scegliere **[!UICONTROL Struttura]** modalità, **[!UICONTROL Contenuto iniziale]**, **[!UICONTROL Controllo layout]** modalità. La modalità Struttura consente di aggiungere e personalizzare l’intestazione e il piè di pagina. La modalità Contenuto iniziale consente di personalizzare il contenuto del modulo.
    * **Anteprima:** Consente di visualizzare un’anteprima dell’aspetto del modello quando lo si pubblica. È possibile utilizzare Selettore livello e Anteprima per attivare o disattivare le modalità di modifica e anteprima.
 * **Barra laterale:** Fornisce i browser Contenuto, Proprietà, Risorse e Componenti .
 * **Barra degli strumenti del componente:** Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di personalizzare il componente.
@@ -151,12 +150,24 @@ Quando si crea un modulo adattivo, è possibile visualizzare il modello elencato
 
 ## Importazione o esportazione di un modello {#importing-or-exporting-a-template}
 
-Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando importi il font su un’altra [!DNL AEM Forms] ad esempio, viene importato senza il relativo modello. Se un modulo viene importato ma il relativo modello non è disponibile, il modulo non viene sottoposto a rendering. Puoi creare un pacchetto del modello personalizzato da `/conf` nodo in `https://<server>:<port>/crx/packmgr`e la porta nel [!DNL AEM Forms] istanza in cui si desidera caricare il modulo. È inoltre possibile [Crea un modello utilizzando AEM Archeype e implementalo nell&#39;istanza dei Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando si importa il modulo su un altro [!DNL AEM Forms] ad esempio, viene importato senza il relativo modello. Se un modulo viene importato ma il relativo modello non è disponibile, il modulo non viene sottoposto a rendering. Puoi creare un pacchetto del modello personalizzato da `/conf` nodo in `https://<server>:<port>/crx/packmgr`e la porta nel [!DNL AEM Forms] istanza in cui si desidera caricare il modulo. È inoltre possibile [Crea un modello utilizzando AEM Archeype e implementalo nell&#39;istanza dei Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >
-> * È possibile associare un [!UICONTROL Schema del modello dati del modulo] a un modello di modulo adattivo in un editor modelli. Vedi [Creazione di un modulo adattivo](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) per ulteriori informazioni.
 > * Puoi anche configurare le [!UICONTROL Documento di registrazione] direttamente dall’editor di moduli adattivi o dall’editor di modelli di moduli adattivi. Per ulteriori informazioni, consulta [Genera documento di record per Forms adattivo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
+### Associare uno schema del modello dati modulo a un modello {#associating-form-data-model-schema-in-template}
+
+Gli autori possono associare un [!UICONTROL Schema del modello dati del modulo] in un modello di modulo adattivo nell’editor modelli. Consente agli autori di selezionare uno schema dall’editor modelli. Quando si associa uno schema a un modello e l’autore crea un modulo basato sul modello, lo schema viene preselezionato per il modulo. Consente agli autori dei moduli di regolare l’utilizzo dello schema e di risparmiare tempo anche per gli autori dei moduli. Per selezionare uno schema del modello dati modulo nell’editor modelli:
+
+1. Tocca **[!UICONTROL Browser dei contenuti]** situato sul lato sinistro.
+1. Passa al contenitore del modulo **[!UICONTROL Impostazione]**.
+1. Seleziona **[!UICONTROL Modello dati]**.
+1. Scegliere il modello dati del modulo tramite **[!UICONTROL Seleziona modello dati modulo]** e salva la configurazione.
+
+![Modulo-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
 
 
 

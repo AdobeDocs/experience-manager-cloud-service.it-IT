@@ -2,9 +2,9 @@
 title: Genera documento di record per Forms adattivo
 description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3172'
 ht-degree: 2%
 
 ---
@@ -116,11 +116,16 @@ Dopo aver utilizzato il modello per un certo periodo di tempo, l&#39;organizzazi
 
 ![Modello aggiornato](assets/we-retail-new-invoice.png)
 
-Lo sviluppatore carica e applica al modello aggiornato il modulo adattivo. Il modulo adattivo rileva e visualizza automaticamente l’elenco dei campi in cui è stato modificato il binding.
+<!--
 
-![Errore di binding](assets/we-retail-binding-error.png)
+The developer uploads and applies to the updated template to the adaptive form. The adaptive form automatically detects and displays list of fields where binding has changed.
 
-Lo sviluppatore del modulo unisce i campi Forms adattivi con il modello di documento di record corrispondente.
+![Binding Error](assets/we-retail-binding-error.png)
+
+The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+
+-->
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Ora, quando viene inviato il modulo adattivo, viene generato un documento di record aggiornato.
