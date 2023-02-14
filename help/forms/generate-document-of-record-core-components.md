@@ -2,9 +2,9 @@
 title: Genera documento di record per Forms adattivo
 description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
+source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
 workflow-type: tm+mt
-source-wordcount: '3172'
+source-wordcount: '3109'
 ht-degree: 2%
 
 ---
@@ -326,8 +326,10 @@ Per localizzare le informazioni di branding immesse nella scheda Documento di re
       * **Modello**: Se desideri selezionare un modello personalizzato, sfoglia e seleziona un XDP sul tuo [!DNL AEM Forms] server. Se desideri utilizzare un modello non disponibile sul tuo [!DNL AEM Forms] server, devi prima caricare XDP nel tuo [!DNL AEM Forms] server.
       * **Colore accento**: Colore in cui viene eseguito il rendering del testo dell&#39;intestazione e delle righe separatore nel documento di record PDF.
       * **Famiglia di font**: Famiglia di font del testo nel Document of Record PDF.
+
       * **Includi oggetti modulo non associati a modelli dati**: L&#39;impostazione della proprietà include campi non associati di Modulo adattivo basato su schema nel documento di record.
-      * **Escludere i campi nascosti dal documento di record**: L&#39;impostazione della proprietà identifica i campi nascosti da escludere dal documento di record.
+      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+
       * **Nascondere la descrizione dei pannelli**: L&#39;impostazione della proprietà esclude la descrizione del pannello/tabella dal documento di record. Applicabile per il pannello e la tabella.
    1. **Proprietà del campo modulo**:
       * **Per i componenti Casella di controllo e Pulsante di scelta, mostrare solo i valori selezionati**: L&#39;impostazione della proprietà visualizza solo i valori selezionati della casella di controllo e del pulsante di scelta in [!UICONTROL Documento di registrazione].
@@ -341,7 +343,6 @@ Per localizzare le informazioni di branding immesse nella scheda Documento di re
       * **Etichetta della liberatoria**: Etichetta della liberatoria.
       * **Disclaimer**: Testo che specifica la portata dei diritti e degli obblighi del documento di registrazione.
       * **Testo della liberatoria**: Testo della liberatoria.
-
       ![Proprietà pagina mastro](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
@@ -394,4 +395,4 @@ L’impostazione del componente Documento di record è disponibile nelle relativ
 **Impostazioni a livello di modulo**
 
 * **Includi campi non associati in DoR:** L&#39;impostazione della proprietà include campi non associati di Modulo adattivo basato su schema nel documento di record. Per impostazione predefinita è true.
-* **Escludere i campi dal DoR se nascosti:** Impostare la proprietà per escludere i campi nascosti dal documento di record all’invio del modulo. Quando si abilita [Rivelare sul server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), il server ricalcola i campi nascosti prima di escluderli dal documento di record.
+<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
