@@ -4,9 +4,9 @@ description: Modifiche di rilievo apportate a [!DNL Adobe Experience Manager Ass
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
+source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1004'
 ht-degree: 6%
 
 ---
@@ -62,7 +62,6 @@ Per eseguire una convalida end-to-end del codice e del processo, compresi l’in
 | Estrarre risorse dall’archivio ZIP | Non supportato | Vedi [Estrazione ZIP in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Valutazioni delle risorse | Non supportato | Il widget di valutazione nell&#39;editor dello schema metadati non è supportato. |
 | Filtro per la disposizione dei contenuti | Non supportato | Un caso d’uso comune di `ContentDispositionFilter` consente agli amministratori di configurare [!DNL Experience Manager] per distribuire i file HTML e aprire i file PDF in linea invece di scaricarli. Nelle istanze di pubblicazione, puoi gestire la disposizione utilizzando la configurazione di Dispatcher. Nelle istanze di authoring, Adobe non consiglia di modificare l’intestazione Content Disposition (Disposizione contenuto). Vedi [Filtro di disposizione dei contenuti in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
-| [Download del rapporto](/help/assets/asset-reports.md) | Non supportato | Per il momento, il rapporto di download che informa dell’utilizzo delle risorse non è disponibile. Vedi [scarica report in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Modello di servizio fotografico per prodotto | Non supportato | Vedi [modello di servizio fotografico del prodotto in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | Traduzione intelligente | Non supportato | [Traduzione intelligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) non è supportato in [!DNL Experience Manager] come [!DNL Cloud Service]. |
 | WebDAV | Non supportato | Per le alternative, vedi [[!DNL Creative Cloud] integrazione](/help/assets/aem-cc-integration-best-practices.md) o [Materiale di riferimento per sviluppatori](/help/assets/developer-reference-material-apis.md). |
