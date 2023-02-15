@@ -2,9 +2,9 @@
 title: Come configurare un’azione di invio per un modulo adattivo
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. È possibile utilizzare le azioni di invio integrate o crearne una personalizzata.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
 workflow-type: tm+mt
-source-wordcount: '3065'
+source-wordcount: '3131'
 ht-degree: 1%
 
 ---
@@ -185,6 +185,10 @@ Per collegare AEM Forms al tuo Microsoft Sharepoint Storage:
    * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` per fornire autorizzazioni di lettura/scrittura.
    * Utilizza URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell’app dal portale Microsoft Azure.
 
+   >[!NOTE]
+   >
+   > La **segreto client** Il campo è obbligatorio o facoltativo dipende dalla configurazione dell’applicazione Azure Active Directory. Se l&#39;applicazione configurata per l&#39;utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+
 1. Fai clic su **[!UICONTROL Connetti]**. In caso di connessione riuscita, il `Connection Successful` viene visualizzato un messaggio.
 
 1. Ora, seleziona **Sito SharePoint** > **Raccolta documenti** > **Cartella SharePoint**, per salvare i dati.
@@ -239,6 +243,10 @@ Per collegare AEM Forms al tuo Microsoft OneDrive Storage:
    * Nel portale Microsoft Azure, aggiungi l’URI di reindirizzamento come `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l’URL dell’istanza di authoring.
    * Aggiungere le autorizzazioni API `offline_access` e `Files.ReadWrite.All` per fornire autorizzazioni di lettura/scrittura.
    * Utilizza URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell’app dal portale Microsoft Azure.
+
+   >[!NOTE]
+   >
+   > La **segreto client** Il campo è obbligatorio o facoltativo dipende dalla configurazione dell’applicazione Azure Active Directory. Se l&#39;applicazione configurata per l&#39;utilizzo di un segreto client, è obbligatorio fornire il segreto client.
 
 1. Fai clic su **[!UICONTROL Connetti]**. In caso di connessione riuscita, il `Connection Successful` viene visualizzato un messaggio.
 
