@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 11%
+ht-degree: 34%
 
 ---
 
@@ -43,46 +43,46 @@ Questa sezione illustra le note sulla versione per Cloud Manager in AEM 2021.6.0
 
 ### Data di pubblicazione {#release-date-june-cm}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.6.0 è il 10 giugno 2021.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.6.0 è il 10 giugno 2021.
 La prossima versione è prevista per il 15 luglio 2021.
 
 ### Novità {#what-is-new-junecm}
 
-* Preview Service verrà distribuito su base continua a tutti i programmi. I clienti riceveranno una notifica interna al prodotto quando il loro programma è abilitato per Preview Service. Fai riferimento a [Accesso al servizio di anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) per ulteriori dettagli.
+* Ora il servizio di anteprima viene distribuito su base continua per tutti i programmi. Quando il programma sarà abilitato per il servizio di anteprima, i clienti riceveranno una notifica interna al prodotto. Per ulteriori informazioni, consulta [Accedere al servizio di anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
-* Le dipendenze Maven scaricate durante il passaggio di creazione ora verranno memorizzate nella cache tra le esecuzioni della pipeline. Questa funzione verrà attivata per i clienti nelle prossime settimane.
+* Ora le dipendenze Maven scaricate durante la fase di build vengono memorizzate nella cache tra le esecuzioni della pipeline. La funzione verrà attivata per i clienti nelle prossime settimane.
 
-* È ora possibile modificare il nome del programma tramite la finestra di dialogo modifica programma.
+* Ora è possibile modificare il nome del programma tramite la finestra di dialogo Modifica programma.
 
-* Il nome del ramo predefinito utilizzato sia durante la creazione del progetto che nel comando push predefinito tramite gestione flussi di lavoro Git è stato modificato in `main`.
+* Il nome del ramo predefinito utilizzato sia durante la creazione del progetto sia nel comando push predefinito tramite Gestione flussi di lavoro Git è stato modificato in `main`.
 
 * L’esperienza di modifica del programma nell’interfaccia utente è stata aggiornata.
 
-* Regola di qualità `ImmutableMutableMixCheck` è stato aggiornato per classificare `/oak:index` nodi immutabili.
+* La regola di qualità `ImmutableMutableMixCheck` è stata aggiornata per classificare i nodi `/oak:index` come non modificabili.
 
-* Le norme di qualità `CQBP-84` e `CQBP-84--dependencies` sono stati consolidati in un&#39;unica regola. Come parte di questo consolidamento, la scansione delle dipendenze identifica più accuratamente i problemi nelle dipendenze di terze parti che vengono distribuiti nel runtime di AEM.
+* Le regole di qualità `CQBP-84` e `CQBP-84--dependencies` sono state consolidate in un’unica regola. Come parte di tale consolidamento, la scansione delle dipendenze identifica più accuratamente i problemi nelle dipendenze di terze parti che vengono distribuiti nel runtime di AEM.
 
-* Per evitare confusione, le righe del segmento Pubblica AEM e Pubblica dispatcher nella pagina Dettagli ambiente sono state consolidate.
+* Per evitare confusione, nella pagina Dettagli dell’ambiente sono state consolidate le righe del segmento Pubblica AEM e Pubblica Dispatcher.
 
-   ![](/help/implementing/cloud-manager/release-notes-cloud-manager/assets/aem-dispatcher.png)
+   ![](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* È stata aggiunta una nuova regola di qualità del codice per convalidare la struttura di `damAssetLucene` indici. Fai riferimento a [Indici Oak Lucene della risorsa DAM personalizzati](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) per ulteriori dettagli.
+* È stata aggiunta una nuova regola di qualità del codice per convalidare la struttura degli indici `damAssetLucene`. Per ulteriori informazioni, consulta [Indici Oak DAM Asset Lucene personalizzati](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check).
 
-* Nella pagina dei dettagli dell’ambiente vengono ora visualizzati più nomi di dominio per i servizi di pubblicazione e anteprima (a seconda dei casi). Fai riferimento a [Dettagli dell&#39;ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) per ulteriori dettagli.
+* Ora nella pagina Dettagli dell’ambiente vengono visualizzati più nomi di dominio per i servizi Publish e Anteprima (a seconda dei casi). Per ulteriori informazioni, consulta [Dettagli dell’ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
 
 ### Correzioni di bug {#bug-fixes-junecm}
 
-* Le definizioni dei nodi JCR contenenti una nuova riga dopo che il nome dell&#39;elemento principale non è stato analizzato correttamente.
+* Le definizioni dei nodi JCR contenenti una nuova riga dopo il nome dell’elemento radice non venivano analizzate correttamente.
 
-* L&#39;API degli archivi di elenco non filtrerebbe gli archivi eliminati.
+* L’API Elenca archivi non filtrava gli archivi eliminati.
 
-* Veniva visualizzato un messaggio di errore non corretto quando veniva fornito un valore non valido per il passaggio di pianificazione.
+* Veniva visualizzato un messaggio di errore non corretto quando si forniva un valore non valido nel passaggio di pianificazione.
 
-* A volte l&#39;utente può vedere un verde *attivo* stato accanto a un Elenco consentiti IP anche quando tale configurazione non è stata distribuita.
+* A volte l’utente visualizzava uno stato verde *attivo* a fianco di un elenco IP consentiti anche quando tale configurazione non era stata distribuita.
 
-* Alcune sequenze di modifica dei programmi potrebbero impedire la creazione o la modifica della pipeline di produzione.
+* Alcune sequenze di modifica dei programmi impedivano la creazione o la modifica della pipeline di produzione.
 
-* Alcune sequenze di modifica del programma potrebbero causare **Panoramica** visualizzazione di un messaggio fuorviante per eseguire nuovamente la configurazione del programma.
+* Alcune sequenza di modifica dei programmi causavano la visualizzazione di un messaggio errato nella pagina **Anteprima**, che indicava di rieseguire la configurazione del programma.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -110,14 +110,14 @@ La prossima versione è prevista per il 15 luglio 2021.
 * Quando si aggiungono risorse alle raccolte, se un utente applica un filtro alla ricerca Raccolte, non può visualizzare le Raccolte nella vista Elenco. (CQ-4323181)
 * Durante la ricerca di file e cartelle, se l&#39;utente applica un filtro e seleziona [!UICONTROL File e cartelle], vengono visualizzati solo i file ma non la cartella . (CQ-4319543)
 
-## [!DNL Experience Manager Sites] come [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nuove funzioni in [!DNL Sites] {#ga-features-sites}
 
 * Pubblica nel livello anteprima ora mostrato come stato della pagina nell’interfaccia utente di amministrazione di Sites
 * Pubblica nel livello di anteprima ora con l’URL di anteprima alla fine dell’azione e la persistenza dell’URL nelle proprietà della pagina per un riferimento successivo
 
-## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
@@ -142,7 +142,7 @@ Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 * Quando un campo viene convalidato prima dell’invio di dati al servizio back-end tramite Form Data Model (FDM), le convalide hanno esito positivo, ma il servizio Form Data Model non riesce ad avviare la convalida post-convalida.
 * Quando si invia un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file a 0 byte dall’altro lato. Questo è un problema noto in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-## [!DNL Experience Manager Screens] come [!DNL Cloud Service] {#screens}
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
 Questa sezione illustra le note sulla versione per AEM Screens as a Cloud Service.
 

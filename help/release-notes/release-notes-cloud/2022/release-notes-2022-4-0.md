@@ -2,7 +2,7 @@
 title: Note sulla versione 2022.4.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.4.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: f42cf1b82f7cf42be2afd30d69d71354fe0afeb3
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 100%
@@ -36,14 +36,14 @@ Dai un’occhiata al video [Panoramica sulla versione di aprile 2022](https://vi
 
 * I tipi di dati del modello di contenuto possono ora essere definiti come [traducibili](/help/assets/content-fragments/content-fragments-models.md#properties) utilizzando una semplice casella di controllo nell’editor dei modelli di contenuto. Inoltre, le regole di traduzione e le configurazioni di AEM vengono aggiornate automaticamente.
 
-## [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
 * Ora puoi [ordinare i tag](/help/assets/organize-assets.md#use-tags-to-organize-assets) nella finestra del selettore dei tag in ordine crescente o decrescente in base al nome, alla data di creazione o alla data di modifica.
 
 
-## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
@@ -78,7 +78,7 @@ Se continui a utilizzare versioni precedenti di TLS come 1.0 o 1.1, potresti per
 
 ## Cloud Manager {#cloud-manager}
 
-L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Strumenti di migrazione {#migration-tools}
 

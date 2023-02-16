@@ -2,7 +2,7 @@
 title: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 97%
@@ -36,7 +36,7 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
 * I tipi di dati del modello di contenuto possono ora essere definiti come traducibili utilizzando una semplice casella di controllo nell’editor dei modelli di contenuto. Inoltre, le regole di traduzione e le configurazioni di AEM vengono aggiornate automaticamente.
 
-## [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
@@ -56,7 +56,7 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
 * Ora puoi [ordinare i tag](/help/assets/organize-assets.md#use-tags-to-organize-assets) nella finestra del selettore dei tag in ordine crescente o decrescente in base al nome del tag, alla data di creazione o alla data di modifica.
 
-## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
@@ -95,7 +95,7 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* Le credenziali utilizzate per autenticare le chiamate API da server a server (ad esempio, per le richieste API GraphQL) ora possono essere aggiornate prima della scadenza in modo self-service dalla Console per sviluppatori. Consulta la [documentazione](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) per ulteriori informazioni.
+* Le credenziali utilizzate per autenticare le chiamate API da server a server (ad esempio, per le richieste API di GraphQL) ora possono essere aggiornate prima della scadenza in modo self-service dalla Console per sviluppatori. Consulta la [documentazione](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) per ulteriori informazioni.
 
 * Le attività di manutenzione dell’eliminazione della versione e del registro di controllo, che non erano state precedentemente abilitate, verranno abilitate per i nuovi ambienti. Vedi i valori associati nell’articolo [Attività di manutenzione](/help/operations/maintenance.md).
 
@@ -103,7 +103,7 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
 ## Cloud Manager {#cloud-manager}
 
-L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Strumento Trasferimento contenuti {#ctt-release}
 
