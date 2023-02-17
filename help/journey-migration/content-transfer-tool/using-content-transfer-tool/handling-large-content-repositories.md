@@ -2,9 +2,9 @@
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione di archivi di contenuti di grandi dimensioni
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1771'
 ht-degree: 2%
 
 ---
@@ -101,7 +101,7 @@ In breve, molto probabilmente si desidera scaricare il binario Linux x86-64 dal 
 
 Il supporto di AzCopy per Amazon S3, Azure Blob Storage e File Data Store è incluso nella versione più recente del CTT.
 Puoi scaricare l’ultima versione di CTT dal [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) portale.
-
+È opportuno notare che saranno supportate solo le versioni 2.0.0 e successive ed è consigliabile utilizzare la versione più recente.
 
 ### 3. Configurare un file azcopy.config {#configure-azcopy-config-file}
 
