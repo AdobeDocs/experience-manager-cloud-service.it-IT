@@ -4,10 +4,10 @@ description: Scopri come amministrare le istanze dei flussi di lavoro
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
+source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 95%
 
 ---
 
@@ -63,6 +63,12 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
+   >[!NOTE]
+   >
+   >
+   >Per terminare o interrompere un flusso di lavoro, deve trovarsi in uno stato di attesa dell’intervento dell’utente, ad esempio in un Passaggio partecipante. Il tentativo di interrompere un flusso di lavoro in esecuzione di processi (thread attivi in esecuzione) potrebbe non produrre i risultati previsti.
+
+
 ## Visualizzazione dei flussi di lavoro archiviati {#viewing-archived-workflows}
 
 1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
@@ -76,6 +82,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
    >
    >* utilizzo dell’azione **Termina**
    >* quando una pagina, soggetta a un flusso di lavoro, viene eliminata (forzatamente), il flusso di lavoro viene terminato
+
 
 
 1. Seleziona un elemento specifico, quindi **Cronologia elementi aperti** per ulteriori dettagli:
