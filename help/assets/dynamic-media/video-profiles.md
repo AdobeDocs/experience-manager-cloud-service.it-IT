@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '3656'
+source-wordcount: '3705'
 ht-degree: 7%
 
 ---
 
 # Profili video di Dynamic Media{#video-profiles}
 
-Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni di questo profilo predefinito sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Quando si codificano i video sorgente primari utilizzando il profilo di codifica video adattivo, durante la riproduzione il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. Questa azione è nota come streaming adattivo.
+Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni di questo profilo predefinito sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Durante la riproduzione, quando si codificano i video sorgente primari utilizzando il profilo di codifica video adattiva, il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. Questa azione è nota come streaming adattivo.
 
 Di seguito sono riportati altri fattori che determinano la qualità dei video:
 
@@ -45,7 +45,7 @@ Vedi anche [Profili per elaborazione di metadati, immagini e video](/help/assets
 
 ## Predefiniti di codifica video adattivi {#adaptive-video-encoding-presets}
 
-La tabella seguente identifica i profili di codifica best practice per lo streaming di video adattivo su dispositivi mobili e tablet e computer desktop. Puoi usare questi predefiniti per qualsiasi video con proporzioni.
+La tabella seguente identifica le best practice per la codifica di profili per lo streaming video adattivo su dispositivi mobili e tablet e computer desktop. Puoi usare questi predefiniti per qualsiasi video con proporzioni.
 
 <table>
  <tbody>
@@ -104,7 +104,7 @@ La dimensione massima supportata del file video per il ritaglio avanzato è il s
 * 30 frame al secondo (FPS).
 * Dimensione del file di 300 MB.
 
-Adobe Sensei è limitato a 9000 fotogrammi. Cioè, cinque minuti a 30 fps. Se il video ha un valore FPS più alto, la durata massima del video supportato diminuisce. Ad esempio, un video a 60 fps deve essere lungo due minuti e mezzo per essere supportato da Adobe Sensei e da Smart Crop.
+Adobe Sensei è limitato a 9000 fotogrammi. Cioè, cinque minuti a 30 fps. Se il video ha un valore FPS più alto, la durata video massima supportata diminuisce. Ad esempio, un video a 60 fps deve essere lungo due minuti e mezzo per essere supportato da Adobe Sensei e da Smart Crop.
 
 ![Ritaglio avanzato per video](assets/smart-crop-video.png)
 
@@ -112,7 +112,7 @@ Adobe Sensei è limitato a 9000 fotogrammi. Cioè, cinque minuti a 30 fps. Se il
 >
 >Affinché il ritaglio avanzato funzioni correttamente nel video, è necessario includere uno o più predefiniti di codifica video nel profilo video.
 
-Per utilizzare il ritaglio avanzato per i video, crea un profilo di codifica video adattivo o progressivo. Come parte del tuo profilo, utilizza **[!UICONTROL Rapporto ritaglio avanzato]** strumento per selezionare le proporzioni predefinite. Ad esempio, dopo aver definito i predefiniti di codifica video, puoi aggiungere una definizione di &quot;Mobile Landscape&quot; con proporzioni pari a 16x9 e una definizione di &quot;Mobile Portrait&quot; con proporzioni pari a 9x16. Altri rapporti di formato o ritaglio da cui è possibile scegliere sono 1x1, 4x3 e 4x5.
+Per utilizzare il ritaglio avanzato per i video, crea un profilo di codifica video adattivo o progressivo. Come parte del tuo profilo, utilizza **[!UICONTROL Rapporto ritaglio avanzato]** strumento per selezionare le proporzioni predefinite. Ad esempio, dopo aver definito i predefiniti di codifica video, puoi aggiungere una definizione di &quot;Mobile Landscape&quot; con proporzioni pari a 16x9 e una definizione di &quot;Mobile Portrait&quot; con proporzioni pari a 9x16. Altri rapporti di formato o ritaglio da cui puoi scegliere di includere 1x1, 4x3 e 4x5.
 
 ![Modificare un profilo di codifica video con lo smart crop](assets/edit-smart-crop-video2.png)
 
@@ -128,7 +128,7 @@ Vedi anche [Ritaglio avanzato per le immagini](image-profiles.md).
 
 Dynamic Media è già dotato di un profilo di codifica video adattivo predefinito, un gruppo di impostazioni di caricamento video per MP4 H.264, ottimizzato per la migliore esperienza di visualizzazione. Puoi usare questo profilo quando carichi i tuoi video.
 
-Tuttavia, se questo profilo predefinito non soddisfa le tue esigenze, puoi scegliere di creare un tuo profilo di codifica video adattivo. Come best practice, quando utilizzi l’impostazione **[!UICONTROL Codifica per lo streaming adattivo]**, vengono convalidati tutti i predefiniti di codifica aggiunti al profilo. Questa funzionalità assicura che tutti i video abbiano le stesse proporzioni. Inoltre, i video codificati vengono trattati come un set a più bit rate per lo streaming.
+Tuttavia, se questo profilo predefinito non soddisfa le tue esigenze, puoi scegliere di creare un tuo profilo di codifica video adattivo. Come best practice, quando utilizzi l’impostazione **[!UICONTROL Codifica per lo streaming adattivo]**, vengono convalidati tutti i predefiniti di codifica aggiunti al profilo. Questa funzionalità assicura che tutti i video abbiano le stesse proporzioni. Inoltre, i video codificati vengono trattati come un set a più byte per lo streaming.
 
 Quando crei il profilo di codifica video, noterai che la maggior parte delle opzioni di codifica sono precompilate con le impostazioni predefinite consigliate per aiutarti. Tuttavia, se si seleziona un valore diverso da quello predefinito consigliato, può verificarsi una scarsa qualità video durante la riproduzione e altri problemi di prestazioni.
 
@@ -243,7 +243,7 @@ Ora puoi applicare il profilo alle cartelle che contengono video. Vedi [Applicar
 
 ## Utilizzare parametri di codifica video personalizzati {#using-custom-added-video-encoding-parameters}
 
-Puoi modificare un profilo di codifica video esistente per sfruttare parametri di codifica video avanzati che non sono disponibili nell’interfaccia utente quando crei o modifichi un profilo video in Experience Manager. Puoi aggiungere al profilo esistente uno o più parametri avanzati, ad esempio minBitrate e maxBitrate.
+È possibile modificare un profilo di codifica video esistente per sfruttare parametri di codifica video avanzati che non sono disponibili nell’interfaccia utente quando si crea o si modifica un profilo video in Experience Manager. Puoi aggiungere al profilo esistente uno o più parametri avanzati, ad esempio minBitrate e maxBitrate.
 
 **Per utilizzare parametri di codifica video personalizzati:**
 
@@ -266,7 +266,7 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
   </tr>
   <tr>
    <td><code>h264Level</code></td>
-   <td>Livello H.264 da utilizzare per la codifica. Normalmente questo livello viene determinato automaticamente in base alle impostazioni di codifica utilizzate.</td>
+   <td>Livello H.264 da utilizzare per la codifica. Normalmente questo livello viene determinato automaticamente in base alle impostazioni di codifica in uso.</td>
    <td><code>String</code></td>
    <td><p>10 * livello h264</p> <p>Ad esempio, 3,0 = 30, 1,3 = 13)</p> <p>Nessun valore predefinito.</p> </td>
   </tr>
@@ -274,7 +274,7 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
    <td><code>keyframe</code></td>
    <td>Il numero di fotogrammi di destinazione tra i fotogrammi chiave. Calcola questo valore in modo da poter generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo del fotogramma chiave è di 60-300.<br /> <br /> Intervalli di fotogrammi chiave inferiori migliorano la ricerca del flusso e il comportamento di commutazione del flusso per le codifiche video adattive e possono anche migliorare la qualità dei video che hanno molto movimento. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito si traduce in una qualità video complessiva inferiore a un dato bitrate.</td>
    <td><code>String</code></td>
-   <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per HLS (HTTP Live Streaming) è 60-90.</p> </td>
+   <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per HLS o DASH (streaming adattivo) è 60-90. (Per visualizzare o utilizzare DASH, deve prima essere attivato dal supporto tecnico Adobe sul tuo account. Vedi <a href="/help/assets/dynamic-media/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -292,14 +292,14 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
    <td><code>audioBitrateCustom</code></td>
    <td>Imposta valore su <code>true</code> per forzare un bitrate costante per lo streaming audio, se supportato dal codec audio.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Il valore predefinito è <code>false</code>.</p> <p>Il valore consigliato per HLS (HTTP Live Streaming) è <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Il valore predefinito è <code>false</code>.</p> <p>Il valore consigliato per HLS o DASH è <code>false</code>. (Per visualizzare o utilizzare DASH, deve prima essere attivato dal supporto tecnico Adobe sul tuo account. Vedi <a href="/help/assets/dynamic-media/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Nell’angolo in basso a destra della pagina, seleziona **[!UICONTROL Aggiungi]**.
+1. Nell’angolo inferiore destro della pagina, seleziona **[!UICONTROL Aggiungi]**.
 1. Effettua una delle operazioni seguenti:
 
    * Ripeti i passaggi 3 e 4 per aggiungere un altro parametro al profilo di codifica video.

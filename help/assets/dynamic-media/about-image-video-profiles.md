@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 8b878a26653874c94a671a404d9b35740e43a514
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Vedi anche [Tecniche consigliate per l’organizzazione delle risorse digitali p
 
 Puoi rielaborare le risorse in una cartella che dispone già di un profilo immagine Dynamic Media o di un profilo video Dynamic Media che hai successivamente modificato.
 
-Ad esempio, supponi di aver creato un profilo immagine Dynamic Media e di averlo assegnato a una cartella. Per tutte le risorse immagine caricate nella cartella, il profilo immagine viene automaticamente applicato alle risorse. Tuttavia, in seguito decidi di aggiungere una nuova proporzione di ritaglio avanzato al profilo immagine. Ora, invece di dover selezionare e ricaricare le risorse nella cartella tutte le volte, esegui semplicemente il *Scene7: Rielaborazione delle risorse* workflow.
+Ad esempio, supponi di aver creato un profilo immagine Dynamic Media e di averlo assegnato a una cartella. Per tutte le risorse immagine caricate nella cartella, il profilo immagine viene automaticamente applicato alle risorse. Tuttavia, in seguito decidi di aggiungere una nuova proporzione di ritaglio avanzato al profilo immagine. Ora, invece di dover selezionare e ricaricare le risorse nella cartella completamente, è sufficiente eseguire il *Scene7: Rielaborazione delle risorse* workflow.
 
 Puoi eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale l’elaborazione non è riuscita la prima volta. Anche se non hai modificato un profilo immagine o video, o hai già applicato un profilo immagine o un profilo video, puoi comunque eseguire il flusso di lavoro di rielaborazione su una cartella di risorse in qualsiasi momento.
 

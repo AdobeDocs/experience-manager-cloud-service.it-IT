@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '4194'
+source-wordcount: '4369'
 ht-degree: 9%
 
 ---
@@ -51,7 +51,7 @@ Per aggiungere, modificare, eliminare, pubblicare, annullare la pubblicazione e 
 
 ### Supporto visualizzatore per pagine web reattive {#viewer-support-for-responsive-designed-web-pages}
 
-Pagine web diverse hanno esigenze diverse. Ad esempio, a volte si desidera una pagina web che fornisca un collegamento che apra il visualizzatore HTML5 in una finestra separata del browser. In altri casi, è necessario incorporare il visualizzatore HTML5 direttamente nella pagina di hosting. In quest&#39;ultimo caso, la pagina web ha un layout statico. Oppure, è &quot;reattivo&quot; e viene visualizzato in modo diverso su diversi dispositivi o per diverse dimensioni della finestra del browser. Per soddisfare queste esigenze, tutti i visualizzatori HTML5 predefiniti forniti con Dynamic Media supportano sia le pagine web statiche che le pagine web reattive.
+Pagine web diverse hanno esigenze diverse. Ad esempio, a volte si desidera una pagina web che fornisca un collegamento che apra il visualizzatore HTML5 in una finestra separata del browser. In altri casi, è necessario incorporare il visualizzatore HTML5 direttamente nella pagina di hosting. In quest&#39;ultimo caso, la pagina web ha un layout statico. Oppure, è &quot;reattivo&quot; e viene visualizzato in modo diverso su diversi dispositivi o per diverse dimensioni della finestra del browser. Per soddisfare queste esigenze, tutti i visualizzatori HTML5 predefiniti forniti con Dynamic Media supportano sia pagine web statiche che pagine web reattive.
 
 Vedi [Libreria di immagini statiche reattive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) in *Guida API di Dynamic Media Image Serving e Rendering* per ulteriori informazioni su come incorporare visualizzatori reattivi nelle pagine web.
 
@@ -440,6 +440,19 @@ Vedi [Considerazioni speciali per la creazione di un predefinito visualizzatore 
 
 1. (Facoltativo) Nella parte superiore della pagina Modifica predefinito visualizzatore, seleziona **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** oppure **[!UICONTROL Telefono]** per definire in modo univoco gli stili visivi per dispositivi e tipi di schermo diversi.
 1. Nella pagina Editor predefiniti per visualizzatori , seleziona la **[!UICONTROL Comportamento]** scheda . In alternativa, puoi selezionare qualsiasi elemento visivo nel visualizzatore per selezionarlo per la configurazione.
+Ad esempio, per *VideoPlayer* tipo, sotto **[!UICONTROL Modificatori]** > **[!UICONTROL Riproduzione]**, puoi scegliere tra una delle tre opzioni di streaming adattivo:
+
+   * **[!UICONTROL sciocco]** - I video vengono trasmessi solo come trattino.
+   * **[!UICONTROL hls]** - I video vengono trasmessi solo come hls.
+   * **[!UICONTROL auto]** - Best practice. La creazione di flussi DASH e HLS è ottimizzata per lo storage. Pertanto, l’Adobe consiglia di selezionare sempre **[!UICONTROL auto]** come tipo di riproduzione. I video vengono trasmessi come trattini, hls o progressivi, come illustrato di seguito:
+      * Se il browser supporta DASH, viene prima utilizzato lo streaming DASH.
+      * Se il browser non supporta DASH, viene utilizzato lo streaming HLS, secondo.
+      * Se il browser non supporta DASH o HLS, si utilizza infine la riproduzione progressiva.
+
+   >[!NOTE]
+   >
+   >Per visualizzare e utilizzare il **[!UICONTROL sciocco]** deve prima essere attivato dal supporto tecnico Adobe sul tuo account. Vedi [Abilita DASH sul tuo account](/help/assets/dynamic-media/video.md#enable-dash).
+
 1. Dal menu a discesa **[!UICONTROL Tipo selezionato]**, scegli un componente di cui vuoi modificare i comportamenti.
 
    A molti componenti nell’editor visivo è associata una descrizione dettagliata. Queste descrizioni vengono visualizzate in caselle blu quando espandi un componente per visualizzarne i parametri associati.
@@ -454,15 +467,19 @@ Vedi [Considerazioni speciali per la creazione di un predefinito visualizzatore 
    >Dopo aver digitato un valore nel campo di testo, selezionare un&#39;altra opzione nell&#39;interfaccia utente per inviare la modifica e chiudere la tastiera virtuale. Se si seleziona **[!UICONTROL Invio]**, non si verifica alcuna azione.
 
 1. Nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Salva]**.
-1. Pubblica il nuovo predefinito per visualizzatori. È necessario pubblicare il predefinito prima di poterlo utilizzare sul sito web.
+1. Pubblica il nuovo predefinito per visualizzatori. È necessario pubblicare il predefinito in modo da poter utilizzare il suo URL risultante sul tuo sito web.
 
    Vedi [Pubblicazione dei predefiniti per visualizzatori](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >Per i vecchi video che utilizzano un profilo di streaming adattivo, l’URL continua a essere riprodotto come al solito, con streaming HLS, fino a quando non si [rielaborare le risorse video](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Dopo la rielaborazione, lo stesso URL continuerà a funzionare ma ora con *entrambi* Streaming DASH e HLS abilitato.
 
 ### Considerazioni speciali per la creazione di un predefinito visualizzatore interattivo {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **Modalità di visualizzazione per le miniature delle immagini nel pannello:**
 
-Quando crei o modifichi un predefinito visualizzatore video interattivo, puoi scegliere l’impostazione della modalità di visualizzazione da utilizzare. Questa scelta si verifica quando si seleziona `InteractiveSwatches` dal **[!UICONTROL Componente selezionato]** menu a discesa sotto la **[!UICONTROL Comportamento]** scheda . La modalità di visualizzazione selezionata influisce sulla modalità e sul momento in cui vengono visualizzate le miniature durante la riproduzione del video. Puoi scegliere la Modalità di visualizzazione `segment` (predefinita) o `continuous`.
+Quando crei o modifichi un predefinito visualizzatore video interattivo, puoi scegliere l’impostazione della modalità di visualizzazione da utilizzare. Questa scelta si verifica quando si seleziona `InteractiveSwatches` dal **[!UICONTROL Componente selezionato]** menu a discesa sotto la **[!UICONTROL Comportamento]** scheda . La modalità di visualizzazione selezionata influisce su come e quando vengono visualizzate le miniature durante la riproduzione del video. Puoi scegliere la Modalità di visualizzazione `segment` (predefinita) o `continuous`.
 
 <table>
  <tbody>
