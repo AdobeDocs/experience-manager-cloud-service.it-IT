@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d711057024e62aab00d76f40a729ee59590bbb59
+source-git-commit: 1fb28674df6ea45589d3b44237edfb51ef167756
 workflow-type: tm+mt
 source-wordcount: '10264'
 ht-degree: 4%
@@ -1347,7 +1347,7 @@ T**o add a custom video thumbnail**,
 
 -->
 
-## Modifica dell’URL di Dynamic Media per le risorse Dynamic Media
+## Modificare l’URL Dynamic Media per le risorse Dynamic Media
 
 I video elaborati in Dynamic Media possono essere utilizzati tramite visualizzatori predefiniti e anche tramite l’accesso diretto agli URL manifest e la riproduzione tramite i visualizzatori personalizzati. Di seguito è riportata l’API per il recupero degli URL manifest di un video.
 
@@ -1409,8 +1409,7 @@ dependency>
 </dependency> 
 ```
 
-+++
-**Servlet di esempio**
++++**Servlet di esempio**
 
 ```java
 @Component
@@ -1487,8 +1486,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
-+++
-**Classe di risposta per il servlet**
++++**Classe di risposta per il servlet**
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1516,9 +1514,7 @@ public abstract class VideoResponse {
 
 +++
 
-
-+++
-**File di costanti a cui si fa riferimento nel servlet**
++++**File di costanti a cui si fa riferimento nel servlet**
 
 ```java
 public final class Constants { 
@@ -1535,8 +1531,7 @@ public final class Constants {
 
 +++
 
-+++
-**ServletContext**
++++**ServletContext**
 
 Montare il servlet di cui sopra utilizzando un `servletContext`. Di seguito è riportato un esempio di `servletContext`.
 
