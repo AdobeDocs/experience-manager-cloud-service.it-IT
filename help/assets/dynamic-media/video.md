@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 4b51ace98d547a6a31f30d6348508a71266dbfed
+source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
 workflow-type: tm+mt
-source-wordcount: '10300'
+source-wordcount: '10318'
 ht-degree: 4%
 
 ---
@@ -157,9 +157,9 @@ Dal lato del design del lettore, è possibile progettare le funzionalità del le
 
 Dal lato della riproduzione del visualizzatore, rileva automaticamente la funzionalità video del browser. Il video viene quindi trasmesso utilizzando HLS o DASH, noto anche come streaming video adattivo. Oppure, se tali metodi di consegna non sono presenti, viene invece utilizzato HTML5 progressive.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Per visualizzare o utilizzare DASH, deve prima essere attivato dal supporto tecnico Adobe sul tuo account. Vedi [Abilita DASH sul tuo account](#enable-dash).)
+>Per utilizzare DASH per i video, deve prima essere attivato dal supporto tecnico Adobe sul tuo account. Vedi [Abilita DASH sul tuo account](#enable-dash).)
 
 È possibile combinare in un unico lettore la possibilità di progettare i componenti di riproduzione utilizzando HTML5 e CSS. Può avere una riproduzione incorporata e utilizzare lo streaming adattivo e progressivo a seconda della capacità del browser. Tutte queste funzionalità consentono di estendere la portata dei contenuti rich media sia agli utenti desktop che ai dispositivi mobili e di garantire un’esperienza video semplificata.
 
@@ -174,9 +174,9 @@ La riproduzione video si verifica utilizzando HLS o DASH, o il download progress
 
 Tuttavia, all’Experience Manager 6.3 e versioni successive, i video vengono ora trasmessi in streaming su HTTPS (ovvero HLS o DASH) perché l’URL del servizio gateway DM utilizza sempre anche HTTPS. Questo comportamento predefinito non ha alcun impatto sui clienti. In altre parole, lo streaming video si verifica sempre su HTTPS a meno che non sia supportato dal browser. (vedere la tabella seguente).
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Per visualizzare o utilizzare DASH, deve prima essere attivato dal supporto tecnico Adobe sul tuo account. Vedi [Abilita DASH sul tuo account](#enable-dash).)
+>Per utilizzare DASH per i video, deve prima essere attivato dal supporto tecnico Adobe sul tuo account. Vedi [Abilita DASH sul tuo account](#enable-dash).)
 
 Quindi,
 
@@ -256,7 +256,7 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
 
 >[!IMPORTANT]
 >
->*Per visualizzare o utilizzare il DASH, deve essere attivato prima dal supporto tecnico Adobe sul tuo account. Vedi [Abilita DASH sul tuo account](#enable-dash).)
+>*Per utilizzare DASH per i video, deve essere attivato innanzitutto dal supporto tecnico Adobe sul tuo account. Vedi [Abilita DASH sul tuo account](#enable-dash).)
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -1396,9 +1396,13 @@ L&#39;API restituisce null se si verificano degli errori. Le eccezioni vengono r
 * `IOException` viene registrato quando si verifica un problema di connessione a Dynamic Media.
 * `UnsupportedOperationException` viene registrato quando un `manifestType` è passato il parametro `ManifestType.DASH`, mentre il video non è stato elaborato utilizzando il formato DASH.
 
-Di seguito è riportato un esempio dell’API di cui sopra utilizzando i servlet scritti in *SchedaHiteTPW* specifica.
+Di seguito è riportato un esempio dell’API di cui sopra utilizzando i servlet scritti in *SchedaHiteTPW* specifica. Seleziona ciascuna scheda per la sintassi del codice.
 
-**Aggiungi dipendenza in pom.xml**
+>[!BEGINTABS]
+
+>[!TAB Aggiungi dipendenza in pom.xml]
+
++++**Aggiungi dipendenza in pom.xml**
 
 ```java
 dependency> 
@@ -1409,7 +1413,7 @@ dependency>
 </dependency> 
 ```
 
->[!BEGINTABS]
++++
 
 >[!TAB Servlet di esempio]
 
@@ -1650,6 +1654,19 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 +++
 
 >[!ENDTABS]
+
++++**Aggiungi dipendenza in pom.xml**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
 
 +++**Servlet di esempio**
 
