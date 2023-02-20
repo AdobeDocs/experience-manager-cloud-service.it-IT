@@ -4,9 +4,9 @@ description: Scopri come creare un modulo adattivo utilizzando [!DNL Experience 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Prima di iniziare, scopri il tipo di componenti Forms disponibili:
 
 Per creare un modulo adattivo è necessario quanto segue:
 
+* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: Se utilizzi AEM programma basato su Archetype versione 40 o successiva, i componenti core vengono abilitati automaticamente per il tuo ambiente. Per abilitare i componenti core Forms adattivi per l’ambiente as a Cloud Service AEM Forms in base alle versioni precedenti di Archetype, vedi [Abilitare i componenti core Forms adattivi per il tuo ambiente](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
 * **Un modello di modulo adattivo**: Un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Dispone di componenti preformattati contenenti determinate proprietà e struttura del contenuto. Offre inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto e l’aspetto dell’azione di invio definisce l’azione da intraprendere in seguito all’invio di un Modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Il servizio cloud fornisce un modello OOTB denominato vuoto:
 
    * La `blank` Il modello è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
