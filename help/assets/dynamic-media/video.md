@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
+source-git-commit: f3d8f0a7a5c41ecca7bced1d5de9017ada422f7a
 workflow-type: tm+mt
-source-wordcount: '10318'
+source-wordcount: '10322'
 ht-degree: 4%
 
 ---
@@ -204,7 +204,7 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>Su Windows® 8 e Windows® 10 - Imponi l'uso di HTTPS ogni volta che viene richiesto HLS. Limitazione nota: HTTP su HLS non funziona in questa combinazione browser/sistema operativo<br /> <br /> Su Windows® 7 - Download progressivo. Utilizza la logica standard per selezionare il protocollo HTTP rispetto a quello HTTPS.</td>
+   <td>Su Windows® 8 e Windows® 10 - Imponi l'uso di HTTPS ogni volta che viene richiesto DASH o HLS. Limitazione nota: HTTP su DASH o HLS non funziona in questa combinazione browser/sistema operativo<br /> <br /> Su Windows® 7 - Download progressivo. Utilizza la logica standard per selezionare il protocollo HTTP rispetto a quello HTTPS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -448,8 +448,7 @@ Crea un caso di assistenza come descritto di seguito. Nel tuo caso di assistenza
 1. L’Assistenza clienti di Adobe ti aggiunge all’Elenco di attesa clienti DASH in base all’ordine in cui vengono inviate le richieste.
 1. Quando Adobe è pronto per gestire la tua richiesta, l&#39;Assistenza clienti ti contatta per coordinare e impostare una data di destinazione per l&#39;abilitazione DASH.
 1. Dopo il completamento dell’attività, riceverai una notifica dall’Assistenza clienti.
-1. Crea il tuo [predefinito visualizzatore video](#creating-a-new-viewer-preset) come al solito.
-
+1. Crea il tuo [predefinito visualizzatore video](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) come al solito.
 
 ## Pubblicare video in YouTube {#publishing-videos-to-youtube}
 
