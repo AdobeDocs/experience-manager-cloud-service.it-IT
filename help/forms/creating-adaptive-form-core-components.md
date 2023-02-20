@@ -4,9 +4,9 @@ description: Scopri come creare un modulo adattivo utilizzando [!DNL Experience 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1458'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,8 @@ Prima di iniziare, scopri il tipo di componenti Forms disponibili:
 
 Per creare un modulo adattivo è necessario quanto segue:
 
-* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: Se utilizzi AEM programma basato su Archetype versione 40 o successiva, i componenti core vengono abilitati automaticamente per il tuo ambiente. Per abilitare i componenti core Forms adattivi per l’ambiente as a Cloud Service AEM Forms in base alle versioni precedenti di Archetype, vedi [Abilitare i componenti core Forms adattivi per il tuo ambiente](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
+* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: Quando crei un nuovo programma, i componenti core Forms adattivi sono già abilitati per il tuo ambiente. Se disponi di un ambiente as a Cloud Service Forms basato su Archetype 39 o versioni precedenti, [Abilitare i componenti core Forms adattivi per il tuo ambiente](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Quando abiliti i componenti core per il tuo ambiente, **Forms adattivo (componente core)** il tema modello e canvas viene aggiunto all’ambiente.
+
 * **Un modello di modulo adattivo**: Un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Dispone di componenti preformattati contenenti determinate proprietà e struttura del contenuto. Offre inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto e l’aspetto dell’azione di invio definisce l’azione da intraprendere in seguito all’invio di un Modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Il servizio cloud fornisce un modello OOTB denominato vuoto:
 
    * La `blank` Il modello è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
@@ -55,6 +56,11 @@ Per creare un modulo adattivo è necessario quanto segue:
    ![Modello dei componenti core](/help/forms/assets/core-components-template.png)
 
    Quando selezioni un modello, un tema e un’azione di invio specificati nel modello vengono selezionati automaticamente e la **[!UICONTROL Crea]** è abilitato. Puoi andare al **[!UICONTROL Stile]** o **[!UICONTROL Invio]** schede per selezionare un tema diverso o inviare un&#39;azione. Se il modello selezionato non specifica un tema, il pulsante crea rimane disattivato. Puoi andare al **[!UICONTROL Stili]** per selezionare manualmente un tema.
+
+   >[!NOTE]
+   >
+   >
+   > In caso contrario, **Forms adattivo (componente core)** modello nell’ambiente, [Abilitare i componenti core Forms adattivi per il tuo ambiente](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Quando abiliti i componenti core per il tuo ambiente, **Forms adattivo (componente core)** viene aggiunto all’ambiente.
 
 1. In **[!UICONTROL Stile]** seleziona un tema:
 
