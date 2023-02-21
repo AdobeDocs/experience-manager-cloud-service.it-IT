@@ -1,12 +1,12 @@
 ---
-title: Introduzione a Headless AEM
-description: Scopri Adobe Experience Manager (AEM) come CMS headless con documentazione dettagliata e percorsi headless. Scopri come funzionalità quali i Modelli di contenuto, i Frammenti di contenuto e un'API GraphQL vengono utilizzate per attivare esperienze headless.
-landing-page-description: Scopri come utilizzare e amministrare Experience Manager Headless as a Cloud Service.
+title: Introduzione a Headless per AEM
+description: Scopri Headless in Adobe Experience Manager (AEM) con una combinazione di documentazione dettagliata e percorsi headless. Scopri come funzionalità quali i Modelli di contenuto, i Frammenti di contenuto e un'API GraphQL vengono utilizzate per attivare esperienze headless.
+landing-page-description: Scopri come utilizzare e amministrare Headless in Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
+source-git-commit: 58a7886e32664dddfd3ca9c888717452ed5d362a
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '675'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ L’implementazione headless ignora la gestione di pagine e componenti come avvi
 
 ![Modelli di implementazione di AEM](assets/aem-implementation-models.png)
 
-## Caratteristiche di AEM Headless {#aem-headless-features}
+## Funzioni {#aem-headless-features}
 
 AEM as a Cloud Service è uno strumento flessibile per il modello di implementazione headless che offre tre potenti caratteristiche:
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service è uno strumento flessibile per il modello di implementaz
    * L’API REST di AEM Assets supporta le operazioni CRUD relative ai frammenti di contenuto.
    * La distribuzione diretta dei contenuti è possibile anche mediante l’[esportazione JSON del componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it).
 
-## Primi passi con AEM headless {#first-steps}
+## Primi passi {#first-steps}
 
 Sono disponibili diverse risorse per iniziare a utilizzare le funzionalità headless di AEM. Ogni guida è personalizzata per diversi casi d’uso e tipi di pubblico.
 
