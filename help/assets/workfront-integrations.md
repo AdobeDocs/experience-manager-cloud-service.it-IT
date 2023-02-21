@@ -4,9 +4,9 @@ description: Introduzione all'integrazione tra [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 269dff32b41dba86fb048418da3f3b3ef8a6781e
+source-git-commit: 1631ec4b7174c9d98747fe290e21db3839777fcb
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1224'
 ht-degree: 3%
 
 ---
@@ -50,7 +50,7 @@ Di seguito sono riportati i dettagli delle funzionalità disponibili attraverso 
 
 | Funzione obsoleta | Descrizione | [!DNL Workfront] e [!DNL Assets Essentials] *Nessun connettore (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Richiede connettore* | Workfront e [!DNL Experience Manager as a Cloud Service] *Nessun connettore (OOTB)* |
 |----|----|----|-----|-----|
-| Metodi di distribuzione | Adeguata per la quale [!DNL Assets] offerta. | Assets Essentials | Cloud Service, Adobe Managed Services, on-premise | Servizio cloud |
+| Metodi di distribuzione | Adeguata per la quale [!DNL Assets] offerta. | Assets Essentials | Adobe Managed Services, on-premise | Servizio cloud |
 | **Generale** |
 | Invia file digitali da [!DNL Workfront] a [!DNL Assets] | È possibile caricare in AEM Assets l’ultima versione di un documento WF, che verrà collegata come nuova versione del documento. | ✓ | ✓ | ✓ |
 | Collegamento manuale di cartelle AEM a oggetti Workfront | Le cartelle AEM esistenti possono essere collegate come cartella Workfront e le relative risorse secondarie sono collegate come nuovi documenti Workfront. | ✓ | ✓ | ✓ |
