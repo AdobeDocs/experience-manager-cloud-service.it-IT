@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 41e17fdae57244d83c8ee715326a0ee41488ba60
+source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 7%
@@ -274,7 +274,7 @@ Ora puoi applicare il profilo alle cartelle che contengono video. Vedi [Applicar
    <td><code>keyframe</code></td>
    <td>Il numero di fotogrammi di destinazione tra i fotogrammi chiave. Calcola questo valore in modo da poter generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo del fotogramma chiave è di 60-300.<br /> <br /> Intervalli di fotogrammi chiave inferiori migliorano la ricerca del flusso e il comportamento di commutazione del flusso per le codifiche video adattive e possono anche migliorare la qualità dei video che hanno molto movimento. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito si traduce in una qualità video complessiva inferiore a un dato bitrate.</td>
    <td><code>String</code></td>
-   <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per HLS o DASH (streaming adattivo) è 60-90. (Per utilizzare DASH, per i tuoi video deve prima essere abilitato dal supporto tecnico Adobe sul tuo account. Vedi <a href="/help/assets/dynamic-media/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> </td>
+   <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per HLS o DASH (streaming adattivo) è 60-90. (Per utilizzare DASH per i video, deve prima essere attivato dal supporto tecnico Adobe sul tuo account. Vedi <a href="/help/assets/dynamic-media/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -299,7 +299,7 @@ Ora puoi applicare il profilo alle cartelle che contengono video. Vedi [Applicar
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Nell’angolo in basso a destra della pagina, seleziona **[!UICONTROL Aggiungi]**.
+1. Nell’angolo inferiore destro della pagina, seleziona **[!UICONTROL Aggiungi]**.
 1. Effettua una delle operazioni seguenti:
 
    * Ripeti i passaggi 3 e 4 per aggiungere un altro parametro al profilo di codifica video.
