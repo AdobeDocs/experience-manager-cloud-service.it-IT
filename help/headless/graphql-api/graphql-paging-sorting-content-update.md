@@ -1,7 +1,7 @@
 ---
 title: Aggiornamento dei frammenti di contenuto per la gestione delle pagine e l’ordinamento
 description: Scopri come aggiornare i frammenti di contenuto per Paging e Ordinamento in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
-source-git-commit: 130f653a1b0db55ea6d49a87be1215001223bf78
+source-git-commit: d12e2c3c23b5c0eebe35038c6c461c7f05dedc55
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 6%
@@ -32,7 +32,7 @@ Per eseguire la procedura, attenersi alla seguente procedura:
 
    Le variabili disponibili sono:
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
