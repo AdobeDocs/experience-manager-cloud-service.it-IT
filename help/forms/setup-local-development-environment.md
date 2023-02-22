@@ -2,9 +2,9 @@
 title: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 description: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 55a53f23ee81877bd3a6ba3b9b0a1c3c98edb764
 workflow-type: tm+mt
-source-wordcount: '2974'
+source-wordcount: '2960'
 ht-degree: 2%
 
 ---
@@ -257,7 +257,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    Apri il prompt dei comandi ed esegui il comando sottostante per creare un [!DNL Experience Manager Forms] Progetto as a Cloud Service.
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
    ```
 
    Modificare la `appTitle`, `appId`e `groupId` nel comando precedente per riflettere l&#39;ambiente. Inoltre, imposta il valore per includeFormsenrollment, includeFormscommunication e includeFormsheadless su `y` o `n` a seconda della licenza e dei requisiti. IncludeFormsheadless è obbligatorio per la creazione di Forms adattivo basato su componenti core.
@@ -265,8 +265,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    * Utilizza la `includeFormsenrollment=y` per includere configurazioni specifiche di Forms, temi, modelli, componenti core e dipendenze necessarie per creare Forms adattivo. Se utilizzi Forms Portal, imposta la variabile `includeExamples=y` opzione . Aggiunge anche componenti core di Forms Portal al progetto.
 
    * Utilizza la `includeFormscommunications=y` per includere i componenti core di Forms e le dipendenze necessarie per includere la funzionalità di comunicazioni cliente.
-
-   * Utilizza la `includeFormsheadless` per aggiungere artefatti e librerie necessarie per creare Forms adattivo headless.
 
 1. Distribuisci il progetto nell’ambiente di sviluppo locale. È possibile utilizzare il comando seguente per distribuire nell&#39;ambiente di sviluppo locale
 
