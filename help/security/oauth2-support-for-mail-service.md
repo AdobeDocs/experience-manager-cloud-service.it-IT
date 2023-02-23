@@ -2,7 +2,7 @@
 title: Supporto OAuth2 per il servizio di posta
 description: Supporto Oauth2 per il servizio di posta in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 0d0b137dfca0a91f02ff8358747f59ec7530cae5
+source-git-commit: 9f9c1c45b27e249e7051af1fe5eea7580aceab15
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
@@ -29,11 +29,14 @@ Per ulteriori informazioni sul servizio di posta AEM as a Cloud Service, consult
 1. Vai alla nuova app creata e seleziona **Autorizzazioni API**
 1. Vai a **Aggiungi autorizzazione** - **Autorizzazione grafico** - **Autorizzazioni delegate**
 1. Seleziona le seguenti autorizzazioni per la tua app, quindi fai clic su **Aggiungi autorizzazione**:
-   * `SMTP.Send`
-   * `Mail.Read`
-   * `Mail.Send`
+   * `https://graph.microsoft.com/SMTP.Send`
+   * `https://graph.microsoft.com/Mail.Read`
+   * `https://graph.microsoft.com/Mail.Send`
+   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
+   * `email`
+   * `profile`
 1. Vai a **Autenticazione** - **Aggiungi una piattaforma** - **Web** e nella sezione **URL di reindirizzamento** aggiungi i seguenti URL - uno con e uno senza una barra:
    * `http://localhost/`
    * `http://localhost`
@@ -55,7 +58,7 @@ Successivamente, devi generare il token di aggiornamento, che farà parte della 
 
 Puoi eseguire questa operazione seguendo questi passaggi:
 
-1. Apri il seguente URL nel browser dopo la sostituzione `clientID` e `tenantID` con i valori specifici del tuo account: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https%3A%2F%2Foutlook.office365.com%2FSMTP.Send%20EWS.AccessAsUser.All%20https%3A%2F%2Foutlook.office365.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office365.com%2FMail.Read%20https%3A%2F%2Foutlook.office365.com%2FMail.Send%20openid%20offline_access&state=12345`
+1. Apri il seguente URL nel browser dopo la sostituzione `clientID` e `tenantID` con i valori specifici del tuo account: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access&state=12345`
 1. Consenti autorizzazione quando richiesto
 1. L’URL verrà reindirizzato a una nuova posizione, costruita in questo formato: `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
 1. Copia il valore di `<code>` nell’esempio precedente
@@ -66,7 +69,7 @@ Puoi eseguire questa operazione seguendo questi passaggi:
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
    --data-urlencode 'client_id=<clientID>' \
-   --data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
+   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=authorization_code' \
    --data-urlencode 'client_secret=<clientSecret>' \
@@ -86,7 +89,7 @@ Prima di procedere alla configurazione di OAuth sul lato AEM, assicurati di conv
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_IezHLAQAAAPeNSdgOAAAA' \
    --data-urlencode 'client_id=<client_id>' \
-   --data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
+   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=refresh_token' \
    --data-urlencode 'client_secret=<client_secret>' \
@@ -113,6 +116,7 @@ Prima di procedere alla configurazione di OAuth sul lato AEM, assicurati di conv
           "scope1",
           "scope2"
        ],
+       authCodeRedirectUrl: "http://localhost",
        refreshUrl: "<Refresh token Url>",
        refreshToken: "$[secret:SECRET_SMTP_OAUTH_REFRESH_TOKEN]"
    }
@@ -120,11 +124,14 @@ Prima di procedere alla configurazione di OAuth sul lato AEM, assicurati di conv
 
 1. Compila il `authUrl`, `tokenUrl` e `refreshURL` costruendoli come descritto nella sezione precedente.
 1. Aggiungi i seguenti ambiti alla configurazione:
+   * `https://graph.microsoft.com/SMTP.Send`
+   * `https://graph.microsoft.com/Mail.Read`
+   * `https://graph.microsoft.com/Mail.Send`
+   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
-   * `https://outlook.office365.com/Mail.Send`
-   * `https://outlook.office365.com/Mail.Read`
-   * `https://outlook.office365.com/SMTP.Send`
+   * `email`
+   * `profile`
 1. Creare un file di proprietà OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
 sotto 
 `/apps/<my-project>/osgiconfig/config` con la seguente sintassi:
