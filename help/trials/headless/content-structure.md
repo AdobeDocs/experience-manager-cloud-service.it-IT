@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Creare la struttura del contenuto per l’app"
->abstract="Seguendo questa serie di guide interattive imparate a creare una struttura, nota come modello per frammenti di contenuto, che funge da base per i contenuti headless."
+>abstract="Seguendo questa serie di guide interattive imparerai a creare la struttura (nota anche come modello per frammenti di contenuto) che funge da base per tutti i contenuti headless."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
->title="Avvia la console del modello"
+>title="Avviare la console del modello"
 >abstract="Scopriamo come creare uno schema riutilizzabile, denominato modello per frammenti di contenuto, per il contenuto in Adobe Experience Manager as a Cloud Service. Guarda il video per capire perché questo è un passo importante. <br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante e quindi segui questa guida."
->additional-url="https://video.tv.adobe.com/v/3413261/?captions=ita" text="Video introduttivo sulla struttura dei contenuti"
+>additional-url="https://video.tv.adobe.com/v/3413261?captions=ita" text="Video introduttivo sulla struttura dei contenuti"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
@@ -36,27 +36,27 @@ La console Modelli per frammenti di contenuto si apre in una nuova scheda. Consi
 
 1. Fai clic sul pulsante **Crea** in alto a destra dello schermo per iniziare a creare un modello di frammento di contenuto.
 
-1. Viene avviata la procedura guidata Crea modello, che consente di guidarti. Fornire le informazioni obbligatorie.
+1. Viene avviata la procedura guidata Crea modello. Fornisci le seguenti informazioni obbligatorie.
 
    * **Titolo modello** - Questa è una breve descrizione del modello e in genere indica lo scopo del modello.
    * **Abilita modello** - Questa opzione è selezionata per impostazione predefinita e deve essere selezionata per poter creare frammenti di contenuto in base a questo modello.
 
 1. Una volta compilati i campi obbligatori, fai clic su **Crea** in alto a sinistra per creare il modello.
 
-1. La **Completato** viene confermato che il modello è stato creato. Fai clic su **Apri** nella finestra di dialogo per aprire il nuovo modello di frammento di contenuto nell’editor in una nuova scheda. Quindi passa al passaggio successivo per aggiungere campi di dati al modello.
+1. La finestra di dialogo **Completato** conferma che il modello è stato creato. Fai clic su **Apri** nella finestra di dialogo per aprire il nuovo modello di frammento di contenuto nell’editor in una nuova scheda. Quindi passa al passaggio successivo per aggiungere campi di dati al modello.
 
 ![Passaggi due e tre della creazione di un modello di frammento di contenuto](assets/do-not-localize/create-model-2-3.png)
 
-## Aggiungi campi al modello {#configure-model}
+## Aggiungere campi al modello {#configure-model}
 
 Prima di poter utilizzare il modello, è necessario definire la struttura dei relativi dati. Nell’editor modelli di frammento di contenuto è possibile configurare i tipi di dati e le proprietà che definiscono il contenuto del modello.
 
-1. Trascina un campo dalla **Tipi di dati** a destra dell’editor e rilascialo sul modello per frammenti di contenuto.
+1. Trascina un campo dal pannello **Tipi di dati** a destra dell’editor e rilascialo sul modello per frammenti di contenuto.
 
-1. Una volta inserito un tipo di dati, il **Tipi di dati** viene automaticamente modificata nella colonna **Proprietà** , che ti consente di definire i dettagli del tipo di dati appena inserito.
+1. Una volta inserito un tipo di dati, la colonna **Tipi di dati** viene automaticamente modificata nella scheda **Proprietà**, che ti consente di definire i dettagli del tipo di dati appena inserito.
 
 1. Dopo aver aggiunto tutti i campi necessari per il modello Frammento di contenuto, fai clic su **Salva** in alto a destra nella finestra.
 
-1. Il modello viene salvato e si torna alla console del modello di frammento di contenuto .
+1. Il modello viene salvato e si torna alla console del modello di frammento di contenuto.
 
 ![Passaggi uno, due e tre per aggiungere campi al modello](assets/do-not-localize/define-model-fields-1-2-3.png)
