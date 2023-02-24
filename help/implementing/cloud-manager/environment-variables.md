@@ -3,9 +3,9 @@ title: Variabili di ambiente di Cloud Manager
 description: È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager e fornirle all’ambiente di runtime per l’utilizzo nella configurazione OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1021'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -108,27 +108,27 @@ Per un esempio su come utilizzare entrambi i tipi di variabili in un file `pom.x
 
 Per ulteriori informazioni, consulta la [documentazione Maven ufficiale](https://maven.apache.org/settings.html#quick-overview).
 
-## Disponibilità variabile ambiente {#availability}
+## Disponibilità di variabili di ambiente {#availability}
 
-Le variabili di ambiente possono essere utilizzate in diversi punti.
+Le variabili di ambiente possono essere utilizzate in diverse posizioni.
 
-### Creazione, anteprima e pubblicazione {#author-preview-publish}
+### Authoring, Anteprima e Pubblicazione {#author-preview-publish}
 
 Negli ambienti di authoring, anteprima e pubblicazione è possibile utilizzare sia le normali variabili di ambiente che i segreti.
 
 ### Dispatcher {#dispatcher}
 
-È possibile utilizzare solo le normali variabili di ambiente con [il dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) I segreti non possono essere utilizzati.
+Solo le variabili di ambiente normali possono essere utilizzate dal [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) I segreti non possono essere utilizzati.
 
-Tuttavia, le variabili di ambiente non possono essere utilizzate in `IfDefine` direttive.
+Tuttavia, le variabili di ambiente non possono essere utilizzate nelle direttive `IfDefine`.
 
 >[!TIP]
 >
->È necessario convalidare l’utilizzo di variabili di ambiente con [dispatcher locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) prima della distribuzione.
+>È necessario convalidare l’utilizzo di variabili di ambiente con il [Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=it) prima della distribuzione.
 
 ### Configurazioni OSGi {#osgi}
 
-È possibile utilizzare sia le normali variabili di ambiente che i segreti in [Configurazioni OSGi.](/help/implementing/deploying/configuring-osgi.md)
+Le normali variabili di ambiente e i segreti possono essere utilizzati nelle [configurazioni OSGi.](/help/implementing/deploying/configuring-osgi.md)
 
 ### Variabili delle pipeline {#pipeline}
 
