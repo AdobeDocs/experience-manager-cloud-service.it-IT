@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
+source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 3%
+source-wordcount: '1816'
+ht-degree: 5%
 
 ---
 
@@ -28,6 +28,21 @@ Puoi eseguire la migrazione di Forms adattivo, temi, modelli e configurazioni cl
 * Il servizio consente di eseguire la migrazione del contenuto solo da [!DNL AEM Forms] negli ambienti OSGi. Migrazione dei contenuti da [!DNL AEM Forms] su JEE in un ambiente di Cloud Service non supportato.
 
 * (Solo per AEM 6.3 Forms o un ambiente di versione precedente aggiornato a AEM 6.4 Forms o AEM 6.5 Forms) Forms adattivo basato su modelli e temi predefiniti disponibili in AEM 6.3 Forms o versione precedente non sono supportati in [!DNL AEM Forms] as a Cloud Service.
+
+* Il passaggio Verifica non è disponibile. Rimuovi il passaggio di verifica dal Forms adattivo esistente prima di spostare tali moduli in un ambiente di Cloud Service.
+
+* Il Passaggio firma per Adattivo Forms non è disponibile. Rimuovi il passaggio Firma da un modulo adattivo esistente. Configura il modulo adattivo per utilizzare l’esperienza di firma nel browser. All’invio di un modulo adattivo, mostra il consenso di Adobe Acrobat Sign alla firma del contratto all’interno del browser. L’esperienza di firma nel browser consente di rendere più rapida l’operazione e di far risparmiare tempo al firmatario.
+
+## Differenza con AEM 6.5 Forms
+
+| Funzione obsoleta | Differenza con AEM 6.5 Forms |
+|--------------|-----------|
+| HTML5 Forms (Mobile Forms) | Il servizio non supporta HTML5 Forms (Mobile Forms). Se esegui il rendering dei moduli basati su XDP come HTML5 Forms, puoi continuare a utilizzare la funzione su Forms 6.5. |
+| Moduli adattivi | <li><b>Forms adattivo basato su XSD:</b> Il servizio non supporta HTML5 Forms (Mobile Forms). Se esegui il rendering dei moduli basati su XDP come HTML5 Forms, puoi continuare a utilizzare la funzione su Forms 6.5. </li> <li><b> Modelli di modulo adattivo:</b> Utilizza la pipeline di compilazione e l’archivio Git corrispondente del programma per importare i modelli di moduli adattivi esistenti. </li><li><b>Editor di regole:</b> AEM Forms as a Cloud Service fornisce un [Editor di regole](rule-editor.md#visual-rule-editor). L&#39;editor di codice non è disponibile su Forms as a Cloud Service. L’utility di migrazione consente di migrare i moduli con regole personalizzate (create nell’editor di codice). L&#39;utility converte tali regole in funzioni personalizzate supportate su Forms as a Cloud Service. È possibile utilizzare le funzioni riutilizzabili con l&#39;editor di regole per continuare a ottenere i risultati ottenuti con gli script di regole Il `onSubmitError` o `onSubmitSuccess` Le funzioni sono ora disponibili come azioni nell’editor di regole. </li> <li><b>Progetti e osservazioni:</b> Il servizio non conserva i metadati per le bozze e invia Adaptive Forms. </li> <li><b> Servizio di precompilazione:</b> Per impostazione predefinita, il servizio di precompilazione unisce i dati con un modulo adattivo sul client anziché con l’unione dei dati sul server in Forms 6.5 AEM. Questa funzione consente di migliorare il tempo necessario per precompilare un modulo adattivo. È sempre possibile configurare l&#39;esecuzione dell&#39;azione di unione sul server Adobe Experience Manager Forms. </li><li><b>Azioni di invio:</b> La **Invia e-mail come PDF** azione non disponibile. La **E-mail** l’azione di invio fornisce opzioni per l’invio di allegati e allega documento di record (DoR) con e-mail. </li> |
+| Modello dati modulo | <li>Il modello dati Forms supporta solo endpoint HTTP e HTTP per l’invio dei dati. </li><li>Forms as a Cloud Service consente di utilizzare Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive e i servizi che supportano le operazioni CRUD generali (creazione, lettura, aggiornamento ed eliminazione) come archivi di dati. Il servizio non supporta il connettore JDBC, SSL reciproco per il connettore Rest e l’autenticazione basata su certificato x509 per le origini dati SOAP. </li> |
+| Servizio automated forms conversion | Il servizio non fornisce un metamodello per il servizio di Automated forms conversion. È possibile [scaricarlo dalla documentazione di Automated forms conversion Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model). |
+| Configurazioni | <li>Per impostazione predefinita, le e-mail supportano solo i protocolli HTTP e HTTP. [Contatta il team di supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) per abilitare le porte per l’invio di e-mail e per abilitare il protocollo SMTP per l’ambiente. </li> <li>Se utilizzi i bundle personalizzati, ricompila il codice con l&#39;ultima versione di adobe-aemfd-docmanager prima di utilizzare questi bundle con Forms as a Cloud Service.</li> |
+| API di manipolazione documenti (servizio Assembler) | Il servizio non supporta operazioni dipendenti da altri servizi o applicazioni: <li>La conversione di documenti in formato non PDF in formato PDF non è supportata. Ad esempio, Microsoft Word in PDF, Microsoft Excel in PDF e HTML in PDF non sono supportati</li><li>Adobe Le conversioni basate su Distiller non sono supportate. Ad esempio, da PostScript(PS) a PDF</li><li>Le conversioni basate su servizi Forms non sono supportate. Ad esempio, da XDP a PDF forms.</li><li>Il servizio non supporta la conversione di un PDF o di un PDF trasparente con firma in un altro formato di PDF.</li> |
 
 ## Prerequisiti {#prerequisites}
 
@@ -57,7 +72,7 @@ Esegui i seguenti passaggi per effettuare [!DNL AEM Forms] risorse compatibili c
 
 1. Esegui il [Strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) per mappare i tuoi utenti con gli account utente Adobe IMS corrispondenti. È necessario che gli account utente Adobe IMS effettuino l’accesso a un [!DNL AEM Forms] Istanza as a Cloud Service.
 
-1. Scarica e installa la [Strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) e [!DNL AEM Forms] Utilità di migrazione as a Cloud Service da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) sull’ambiente clonato. È possibile utilizzare Gestione pacchetti AEM per installare lo strumento e l&#39;utility.
+1. Scarica e installa la [Strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) e [!DNL AEM Forms] Utilità di migrazione as a Cloud Service da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) sull’ambiente clonato. È possibile utilizzare Gestione pacchetti AEM per installare lo strumento e l&#39;utility.
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Migrazione dei contenuti]**.
 
