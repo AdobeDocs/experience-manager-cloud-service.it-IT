@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '4369'
+source-wordcount: '4382'
 ht-degree: 9%
 
 ---
@@ -442,8 +442,8 @@ Vedi [Considerazioni speciali per la creazione di un predefinito visualizzatore 
 1. Nella pagina Editor predefiniti per visualizzatori , seleziona la **[!UICONTROL Comportamento]** scheda . In alternativa, puoi selezionare qualsiasi elemento visivo nel visualizzatore per selezionarlo per la configurazione.
 Ad esempio, per *VideoPlayer* tipo, sotto **[!UICONTROL Modificatori]** > **[!UICONTROL Riproduzione]**, puoi scegliere tra una delle tre opzioni di streaming adattivo:
 
-   * **[!UICONTROL sciocco]** - I video vengono trasmessi solo come trattino.
-   * **[!UICONTROL hls]** - I video vengono trasmessi solo come hls.
+   * **[!UICONTROL sciocco]** - I video vengono trasmessi solo come DASH. Tuttavia, sui dispositivi Safari/iOS, devi selezionare **[!UICONTROL hls]** come tipo, invece.
+   * **[!UICONTROL hls]** - I video vengono trasmessi solo come HLS.
    * **[!UICONTROL auto]** - Best practice. La creazione di flussi DASH e HLS è ottimizzata per lo storage. Pertanto, l’Adobe consiglia di selezionare sempre **[!UICONTROL auto]** come tipo di riproduzione. I video vengono trasmessi come trattini, hls o progressivi, come illustrato di seguito:
       * Se il browser supporta DASH, viene prima utilizzato lo streaming DASH.
       * Se il browser non supporta DASH, viene utilizzato lo streaming HLS, secondo.
