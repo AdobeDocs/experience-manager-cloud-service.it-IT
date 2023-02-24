@@ -6,7 +6,7 @@ exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Poiché hanno scopi diversi, i diversi ambienti presentano opzioni differenti. T
 
 >[!TIP]
 >
->Per creare un programma di produzione, consulta la [Risorse aggiuntive](#additional-resources) per un collegamento alla documentazione che descrive i programmi in dettaglio.
+>Per creare un programma di produzione, consulta la sezione [Risorse aggiuntive](#additional-resources) per un collegamento alla documentazione che descrive i programmi in dettaglio.
 
 ## Creazione di un programma sandbox {#create-sandbox}
 

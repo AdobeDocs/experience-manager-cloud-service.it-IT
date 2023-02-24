@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -58,11 +58,11 @@ Per modificare un programma, segui la procedura riportata di seguito.
 
 Ogni volta che si modifica un programma, compreso aggiungere o rimuovere una soluzione o un componente aggiuntivo, le modifiche hanno effetto dopo la distribuzione successiva.
 
-Se il tuo programma di produzione aveva abilitato la sicurezza avanzata, aggiungi **Protezione avanzata** sarà disponibile nella scheda **Modifica programma** per confermare che la funzione è attiva per il programma.
+Se il tuo programma di produzione aveva abilitato la sicurezza avanzata, sarà disponibile una scheda **Protezione avanzata** nella finestra **Modifica programma** per confermare che la funzione è attiva per il programma.
 
 ![Protezione avanzata attiva per un programma](assets/edit-program-enhanced.png)
 
-Questa impostazione non può essere modificata dopo la creazione del programma. Per ulteriori informazioni sull’opzione di protezione avanzata, consulta la sezione [Creazione di programmi di produzione](creating-production-programs.md) documento.
+Questa impostazione non può essere modificata dopo la creazione del programma. Per ulteriori informazioni sull’opzione di protezione avanzata, consulta il documento [Creazione di programmi di produzione](creating-production-programs.md).
 
 ## Eliminazione dei programmi sandbox {#delete-sandbox-program}
 

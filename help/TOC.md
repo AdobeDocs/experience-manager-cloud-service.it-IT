@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
 workflow-type: tm+mt
 source-wordcount: '3946'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -166,11 +166,11 @@ ht-degree: 94%
       + [Profili Team e Prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
       + [Gruppi di utenti per le notifiche](/help/journey-onboarding/user-groups.md)
 + Versioni di prova di AEMaaCS {#trials}
-   + Prove headless {#headless}
-      + [Personalizzare il contenuto di un’app a reazione di esempio](/help/trials/headless/customize-app.md)
+   + Versioni di prova headless {#headless}
+      + [Personalizzare il contenuto di un’app React di esempio](/help/trials/headless/customize-app.md)
       + [Creare la struttura del contenuto per l’app](/help/trials/headless/content-structure.md)
-      + [Crea contenuto headless](/help/trials/headless/create-content.md)
-      + [Estrarre contenuti tramite l’API di GraphQL](/help/trials/headless/extract-content.md)
+      + [Creare contenuti headless](/help/trials/headless/create-content.md)
+      + [Estrarre contenuti utilizzando l’API GraphQL](/help/trials/headless/extract-content.md)
 + Percorso di migrazione ad AEM as a Cloud Service {#migration-journey}
    + [Guida introduttiva di AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase di preparazione](/help/journey-migration/readiness.md)
@@ -806,7 +806,7 @@ ht-degree: 94%
       + [Struttura dei progetti AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Pacchetto per la struttura dell’archivio dei progetti AEM](/help/implementing/developing/introduction/repository-structure-package.md)
       + [SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-      + [AEM ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md)
+      + [Ambienti di sviluppo rapido AEM](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Linee guida per lo sviluppo per AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
       + [Registrazione](/help/implementing/developing/introduction/logging.md)
       + [Configurazioni e browser di configurazione](/help/implementing/developing/introduction/configurations.md)

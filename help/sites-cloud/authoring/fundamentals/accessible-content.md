@@ -5,7 +5,7 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: 48ac0566409f74d3ffa389e5016af0d14419dc3a
 workflow-type: tm+mt
 source-wordcount: '14056'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -104,12 +104,12 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 * Foto illustrative: queste sono immagini di persone, oggetti o luoghi. È importante considerare il ruolo della foto nella pagina. In genere, è consigliabile descrivere il contenuto dell’immagine, in quanto la tecnologia per l’accessibilità annuncia il tipo di elemento (ad esempio, `graphic` o `image`). Per maggiore chiarezza, è possibile utilizzare `screenshot` o `illustration` nelle descrizioni di testo alternative, ma questo dipende dal contesto. La coerenza è un fattore essenziale ed è quindi importante che la decisione venga presa per un intero team di authoring e applicata uniformemente in tutta l’esperienza utente.
 * Icone: Si tratta di piccoli pittogrammi (immagini) che veicolano informazioni specifiche. Devono essere utilizzati in modo coerente all’interno di una pagina e del sito. Tutte le istanze dell’icona in una pagina o in un sito devono avere lo stesso testo alternativo, breve e sintetico, a meno che questo determini inutili duplicazioni di testo adiacente.
 * Grafici e diagrammi: solitamente rappresentano dati numerici. Di conseguenza, un possibile testo alternativo potrebbe consistere in una breve sintesi delle principali tendenze indicate nel diagramma o grafico. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando il campo **Descrizione** nella scheda **Avanzate** delle proprietà dell’immagine. In aggiunta, è possibile fornire i dati di origine in formato tabellare altrove nella pagina o nel sito.
-* Mappe, diagrammi, diagrammi di flusso: per gli elementi grafici che forniscono dati spaziali (ad esempio, per la descrizione di relazioni tra oggetti o un processo), assicurati che il messaggio principale venga comunicato in formato testuale e che tali informazioni testuali vengano posizionate in prossimità di ciascun punto di dati associato. Per le mappe, fornire un equivalente testuale completo è probabilmente poco pratico, ma se la mappa è fornita come mezzo per aiutare le persone a trovare la strada per una particolare posizione, allora il testo alternativo dell&#39;immagine della mappa può indicare brevemente *Mappa di X*, quindi fornire indicazioni sulla posizione in questione nel testo altrove nella pagina o attraverso il **Descrizione** nel campo **Avanzate** della scheda **Immagine** componente.
+* Mappe, diagrammi, diagrammi di flusso: per gli elementi grafici che forniscono dati spaziali (ad esempio, per la descrizione di relazioni tra oggetti o un processo), assicurati che il messaggio principale venga comunicato in formato testuale e che tali informazioni testuali vengano posizionate in prossimità di ciascun punto di dati associato. Per le mappe, potrebbe non risultare pratico fornire un equivalente di testo completo. Se la mappa ha lo scopo di aiutare le persone a individuare una posizione particolare, il testo alternativo dell’immagine della mappa può indicare brevemente *Mappa di X*, fornendo poi le indicazioni per tale posizione in un altro testo della pagina o attraverso il campo **Descrizione**, disponibile nella scheda **Avanzate** del componente **Immagine**.
 * CAPTCHA: è l’acronimo di “*Completely Automated Public Turing test to tell Computers and Humans Apart*” (test di Turing completamente automatizzato per distinguere macchine e persone). Viene utilizzato come controllo di sicurezza nelle pagine web per distinguere esseri umani da software dannosi, ma che può rappresentare un ostacolo all’accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che vedono, al fine di superare un test di sicurezza. Fornire un testo alternativo per l’immagine non è ovviamente possibile, quindi sarà necessario prendere in considerazione soluzioni alternative non grafiche. Il W3C fornisce una serie di suggerimenti (ciascuno dei quali presenta vantaggi e svantaggi), ad esempio:
    * Puzzle logici
    * L’impiego di output audio anziché di immagini
    * Account a utilizzo limitato e filtri anti-spam.
-* Immagini di sfondo: Questi risultati vengono ottenuti utilizzando i CSS (Cascading Style Sheets, fogli di stile a cascata) anziché in HTML. Ciò significa che non è possibile specificare un valore di testo alternativo. Pertanto, le immagini di sfondo non devono fornire informazioni testuali importanti, se lo fanno, devono essere fornite anche nel testo della pagina. Tuttavia, è importante che venga visualizzato uno sfondo alternativo quando l&#39;immagine non può essere visualizzata.
+* Immagini di sfondo: sono ottenute utilizzando i CSS (Cascading Style Sheets, fogli di stile a cascata) anziché in HTML, e non è quindi possibile specificare un valore di testo alternativo. Pertanto le immagini di sfondo non dovrebbero includere informazioni testuali importanti, a meno che non siano incluse anche nel testo della pagina. Tuttavia, è importante utilizzare uno sfondo alternativo per i casi in cui l’immagine non possa essere visualizzata.
 
 >[!NOTE]
 >
@@ -434,7 +434,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 1.3.
 
 #### Finalità - Caratteristiche sensoriali (1.3.3)  {#purpose-sensory-characteristics}
 
-I designer spesso si concentrano sulle caratteristiche di progettazione visiva, come il colore, la forma, lo stile del testo o la posizione assoluta o relativa di un contenuto durante la presentazione delle informazioni. Anche se queste possono essere tecniche di progettazione molto potenti per veicolare le informazioni (e possono migliorare l’accessibilità complessiva per normovedenti ma con particolari esigenze di accessibilità cognitive), le persone non vedenti o ipovedenti potrebbero non essere in grado di accedere alle informazioni che richiedono l’identificazione visiva di attributi come la posizione, il colore o la forma.
+Nel presentare le informazioni, i designer spesso si concentrano sulle caratteristiche di progettazione visiva come il colore, la forma, lo stile del testo o la posizione assoluta o relativa di un elemento di contenuto. Anche se queste possono essere tecniche di progettazione molto potenti per veicolare le informazioni (e possono migliorare l’accessibilità complessiva per normovedenti ma con particolari esigenze di accessibilità cognitive), le persone non vedenti o ipovedenti potrebbero non essere in grado di accedere alle informazioni che richiedono l’identificazione visiva di attributi come la posizione, il colore o la forma.
 
 Allo stesso modo, le informazioni che richiedono di distinguere tra suoni diversi (ad esempio, contenuti parlati da voci di sesso maschile o femminile) presenteranno problemi di accessibilità per le persone con disabilità uditive, se non vengono incluse in un testo alternativo per il contenuto audio.
 
@@ -451,9 +451,9 @@ Assicurati che tutte le informazioni che si basano su caratteristiche visive del
 
 >[!NOTE]
 >
->L’utilizzo di termini descrittivi sarà accettabile se questi hanno un significato in un contesto non visivo. Ad esempio, utilizzando *sopra* e *di seguito* è generalmente accettabile, in quanto si riferiscono rispettivamente al contenuto prima e dopo un particolare contenuto; questo avrebbe ancora senso quando il contenuto viene parlato ad alta voce.
+>L’utilizzo di termini descrittivi sarà accettabile se questi hanno un significato in un contesto non visivo. Ad esempio, l’utilizzo dei termini *sopra* e *sotto* sarà generalmente accettabile, in quanto si riferiscono rispettivamente al contenuto prima e dopo un particolare elemento di contenuto; questa indicazione continuerà ad avere senso quando il contenuto è parlato.
 
-#### Ulteriori informazioni - Caratteristiche sensoriali (1.3.3)  {#more-information-sensory-characteristics}
+#### Ulteriori informazioni - Caratteristiche sensoriali (1.3.3) {#more-information-sensory-characteristics}
 
 * [Comprendere i criteri di successo 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Come soddisfare i criteri di successo 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
@@ -563,13 +563,13 @@ Assicurati che il testo contrasti a sufficienza con il relativo sfondo. I rappor
 >I seguenti strumenti possono essere utili per la conversione in altre unità:
 >
 >* [Calcolatore da Px a Em](https://www.omnicalculator.com/conversion/px-to-em)
->* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/)
+>* [Conversione dimensione font: pixel-point-em-rem-percent](https://websemantics.uk/tools/)
 >* [Convertitore da pixel a EM](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
 Per controllare i rapporti di contrasto, utilizza uno strumento di contrasto del colore, come ad esempio [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) o [l’utilità di controllo del contrasto di colore di WebAIM](https://webaim.org/resources/contrastchecker/). Questi strumenti consentono di controllare le coppie di colori ed evidenziano eventuali problemi di contrasto.
 
-In alternativa, se non sei preoccupato di specificare l’aspetto della pagina, puoi scegliere di non specificare i colori di sfondo e di testo in primo piano. Non è necessario alcun controllo del contrasto, in quanto il browser dell’utente determinerà i colori del testo e dello sfondo.
+In alternativa, se la specifica dell’aspetto della pagina non è un problema, è possibile scegliere di non specificare colori di sfondo e del testo in primo piano. In questo caso non sarà necessario alcun controllo del contrasto, in quanto sarà il browser dell’utente a determinare i colori del testo e dello sfondo.
 
 Se non è possibile rispettare i livelli di contrasto raccomandati, sarà necessario fornire un collegamento a una versione alternativa ed equivalente della pagina (senza problemi di contrasto di colore) o consentire all’utente di regolare il contrasto dello schema di colore della pagina in base alle proprie esigenze.
 
@@ -857,7 +857,7 @@ Al momento in cui scriviamo, l’uso degli attributi title per garantire che col
 
 Così, mentre l’attributo title può essere utilizzato per fornire contesto aggiuntivo per un collegamento, è importante essere consapevoli dei suoi limiti e non utilizzarlo come alternativa a un testo collegamento adeguato.
 
-Se il collegamento è costituito da un’immagine, accertati che il testo alternativo per l’immagine descriva la destinazione del collegamento. Ad esempio, se l’immagine di una libreria è impostata come collegamento alle pubblicazioni di un autore, il testo alternativo dovrebbe essere letto **Pubblicazioni di John Smith** e non **Libreria**.
+Se il collegamento è costituito da un’immagine, accertati che il testo alternativo per l’immagine descriva la destinazione del collegamento. Ad esempio, se come collegamento alle pubblicazioni di un autore è impostata l’immagine di una libreria, il testo alternativo dovrebbe riportare **Pubblicazioni di John Smith** e non **Libreria**.
 
 In alternativa, se nell’ancoraggio del collegamento è incluso testo che descrive lo scopo del collegamento in aggiunta all’elemento immagine (e, quindi, il testo viene visualizzato a fianco dell’immagine), utilizza un attributo alt vuoto per l’immagine:
 
@@ -945,7 +945,7 @@ Lo scopo di questo criterio di successo è aiutare l’utente a individuare l’
 
 In presenza di più elementi, l’utente deve poter individuare con facilità l’elemento attivo. Se sullo schermo è presente un solo controllo utilizzabile da tastiera, il criterio di successo sarà soddisfatto perché la progettazione visiva presenta un solo elemento utilizzabile da tastiera.
 
-Dove il criterio di successo indica &quot;modalità operativa&quot;, questo significa tenere conto delle piattaforme che potrebbero non sempre mostrare un indicatore di messa a fuoco. Nella maggior parte dei casi, è disponibile una sola modalità operativa, pertanto questo criterio di successo è già soddisfatto.
+Nei punti in cui il criterio di successo indica “modalità operativa”, si fa riferimento alle piattaforme che potrebbero non mostrare sempre un indicatore dell’elemento di interesse. Nella maggior parte dei casi, è disponibile una sola modalità operativa, pertanto questo criterio di successo è già soddisfatto.
 
 #### Come soddisfare il criterio - Focus visibile (2.4.7) {#how-to-meet-focus-visible}
 
@@ -1014,7 +1014,7 @@ Le pagine che applicano questo criterio di successo consentono:
 
 #### Come soddisfare il criterio - Parti in lingua (3.1.2)  {#how-to-meet-language-of-parts}
 
-L’attributo `lang` può essere utilizzato per identificare le modifiche nella lingua del contenuto. Ad esempio, una citazione in tedesco (codice ISO 639-1 &quot;de&quot;) può essere mostrata come segue:
+L’attributo `lang` può essere utilizzato per identificare le modifiche nella lingua del contenuto. Ad esempio, una citazione in tedesco (codice ISO 639-1 “de”) può essere mostrata come segue:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">

@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -229,4 +229,4 @@ Questa stessa tecnica può essere utilizzata per installare pacchetti per uno sp
 
 >[!TIP]
 >
->Per informazioni dettagliate sull’ambiente di compilazione front-end, consulta il documento [Sviluppo di siti con la pipeline front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+>Per informazioni dettagliate sull’ambiente di creazione front-end, consulta il documento [Sviluppo di siti con la pipeline front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
