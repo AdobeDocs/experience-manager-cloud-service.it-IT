@@ -4,9 +4,9 @@ description: Il filtro Referrer di Adobe Experience Manager consente l’accesso
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 69%
 
 Il filtro Referrer di Adobe Experience Manager consente l’accesso da host di terze parti.
 
-È necessaria una configurazione OSGi per il filtro referente per abilitare l’accesso all’endpoint GraphQL per le applicazioni headless su HTTP POST. Quando si utilizzano query persistenti senza titolo AEM che accedono a AEM tramite HTTP GET, non è necessaria una configurazione del filtro referente.
+Per abilitare l’accesso all’endpoint GraphQL per le applicazioni headless su HTTP POST è necessaria una configurazione OSGi per il filtro Referrer. Quando si utilizzano query persistenti headless AEM che accedono a AEM tramite HTTP GET, non è necessaria una configurazione del filtro referrer.
 
 >[!WARNING]
-> AEM Referrer Filter non è un factory di configurazione OSGi, il che significa che solo una configurazione è attiva su un servizio AEM alla volta. Quando possibile, evita di aggiungere configurazioni personalizzate del filtro referente, in quanto questo sovrascrive AEM configurazioni native e potrebbe interrompere la funzionalità del prodotto.
+> Il filtro referrer di AEM non è un factory di configurazione OSGi, il che significa che è attiva solo una configurazione alla volta su un servizio AEM. Quando possibile, evita di aggiungere configurazioni personalizzate del filtro referrer, in quanto questo sovrascrive le configurazioni native di AEM e potrebbe interrompere la funzionalità del prodotto.
 
 Ciò avviene tramite una configurazione OSGi appropriata per il filtro Referrer che:
 
