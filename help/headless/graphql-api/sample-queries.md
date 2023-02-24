@@ -4,9 +4,9 @@ description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti he
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1540'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Per assistenza, consulta:
 
 * Un [esempio di struttura dei Frammenti di contenuto](#content-fragment-structure-graphql)
 
-* E alcuni [query GraphQL di esempio](#graphql-sample-queries), in base alla struttura dei frammenti di contenuto di esempio (Modelli per frammenti di contenuto e frammenti di contenuto correlati).
+* E alcuni [esempi di query GraphQL](#graphql-sample-queries), in base alla struttura del frammento di contenuto di esempio (modelli di Frammento di contenuto e frammenti di contenuto correlati).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -1121,7 +1121,7 @@ Queste query di esempio si basano sul progetto WKND. Caratteristiche:
 Questa query di esempio rappresenta un’interrogazione per ottenere:
 
 * per tutti i Frammenti di contenuto di tipo `article`
-* con `_path` e le proprietà `authorFragment`.
+* con `_path` e le proprietà di `authorFragment`.
 
 **Query di esempio**
 
@@ -1491,7 +1491,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 >[!NOTE]
 >
->Questo dimostrerà il fallback per i frammenti di contenuto privi di un [Variazione](/help/headless/graphql-api/content-fragments.md#variations) del nome specificato.
+>Questo dimostrerà il fallback per i frammenti di contenuto privi di una [Variazione](/help/headless/graphql-api/content-fragments.md#variations) del nome specificato.
 
 **Query di esempio**
 
@@ -1541,9 +1541,9 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 ### Query a elenco di esempio con offset e limite {#sample-list-offset-limit}
 
-Questa query rappresenta un’interrogazione per ottenere:
+Questa query rappresenta un’interrogazione:
 
-* per la pagina dei risultati contenenti fino a cinque articoli, a partire dal quinto articolo dal *completato* elenco dei risultati
+* per la pagina dei risultati contenenti fino a cinque articoli, a partire dal quinto articolo dall’elenco dei risultati *completato*
 
 **Query di esempio**
 
@@ -1565,9 +1565,9 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 ### Query di impaginazione di esempio utilizzando prima e dopo  {#sample-pagination-first-after}
 
-Questa query rappresenta un’interrogazione per ottenere:
+Questa query rappresenta un’interrogazione:
 
-* per la pagina dei risultati contenente fino a cinque avventure, a partire dalla voce del cursore data nel *completato* elenco dei risultati
+* per la pagina dei risultati contenente fino a cinque avventure, a partire dalla voce del cursore data nell’elenco dei risultati *completato*
 
 **Query di esempio**
 
@@ -1613,10 +1613,10 @@ I campi di base che definiscono l’azienda sono:
 | Nome campo | Tipo di dati | Riferimento |
 |--- |--- |--- |
 | Nome dell’azienda | Testo su riga singola |  |
-| CEO | Riferimento frammento (singolo) | [Utente](#model-person) |
+| CEO | Riferimento frammento (singolo) | [Persona](#model-person) |
 | Dipendenti | Riferimento frammento (con più campi) | [Persona](#model-person) |
 
-#### Utente {#model-person}
+#### Persona {#model-person}
 
 I campi che definiscono un’utente, che può anche essere un dipendente:
 
@@ -1669,7 +1669,7 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 | Smith | Joe |  |
 | Croft | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |
-| Processi | Steve |  |
+| Jobs | Steve |  |
 
 #### Riconoscimento {#fragment-award}
 
