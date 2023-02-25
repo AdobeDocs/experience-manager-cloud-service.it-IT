@@ -3,10 +3,10 @@ title: Introduzione a [!DNL AEM Forms] as a Cloud Service
 description: Scopri AEM Forms e come ti può aiutare a produrre documenti e contenuti di moduli pronti per l’azienda. Scopri Platform-as-a-Service (PaaS) e come gestire moduli digitali e processi aziendali di classe enterprise, nonché come collegare Forms alle origini dati correnti.
 landing-page-description: Scopri come utilizzare i moduli in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 95e1981faf9532aa56cc8a2e18166d08f35ecf29
+source-git-commit: e28eb4340f9beb2d350620d635dc00de11c6e32b
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 4%
+source-wordcount: '1158'
+ht-degree: 5%
 
 ---
 
@@ -44,11 +44,9 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-
-| Moduli adattivi | Servizio automated forms conversion | API di comunicazione | Integrazioni | Forms Workflow |
-|---|---|---|---|---|
-| Adaptive Forms consente alle aziende di creare e gestire moduli interattivi basati su dati per i propri siti web e altri canali digitali responsive, moduli adatti ai dispositivi mobili. | automated forms conversion Service consente alle aziende di convertire i moduli legacy basati su PDF in moduli digitali interattivi che possono essere facilmente gestiti e distribuiti online. | Le API di comunicazione sono un set di API RESTful (interfacce di programmazione applicazioni) che consentono alle aziende di automatizzare la creazione, la gestione e la distribuzione di comunicazioni personalizzate basate su dati. | La piattaforma può essere integrata con Adobe Sign e DocuSign, semplificando l’invio e il tracciamento delle richieste di firma digitale direttamente dai moduli adattivi. </br></br>Inoltre, la piattaforma può integrarsi con Adobe Analytics, consentendo alle organizzazioni di ottenere informazioni utili sul comportamento e sulle preferenze degli utenti. </br></br> Infine, AEM Forms Cloud Service consente agli utenti di incorporare moduli adattivi direttamente nelle pagine AEM Sites, creando un’esperienza utente semplice | I flussi di lavoro incentrati su Forms in Adobe Experience Manager (AEM) Forms sono progettati per automatizzare i processi aziendali che coinvolgono i moduli. Questi flussi di lavoro automatizzano il ciclo di produzione, la revisione e l’approvazione dei moduli mentre si spostano in diverse fasi di un processo aziendale. I flussi di lavoro incentrati su Forms possono essere creati visivamente utilizzando AEM Forms Workflow Designer e possono essere integrati con AEM Forms per attivare i flussi di lavoro quando un modulo viene inviato. I flussi di lavoro possono essere configurati in modo da indirizzare i moduli a diversi utenti o gruppi in base a criteri specifici e possono includere notifiche e promemoria automatici per garantire che i moduli vengano elaborati in modo tempestivo. Nel complesso, i flussi di lavoro incentrati sui moduli in AEM Forms consentono alle organizzazioni di semplificare i processi aziendali, migliorare l’efficienza e ridurre gli errori. |
-
+| Moduli adattivi | Servizio automated forms conversion | API di comunicazione | Forms Workflow | E-Sign | Forms Analytics |
+|---|---|---|---|---|---|
+| Adaptive Forms consente alle aziende di creare e gestire moduli interattivi basati su dati per i propri siti web e altri canali digitali responsive, moduli adatti ai dispositivi mobili. | automated forms conversion Service consente alle aziende di convertire i moduli legacy basati su PDF in moduli digitali interattivi che possono essere facilmente gestiti e distribuiti online. | Le API di comunicazione sono un set di API RESTful (interfacce di programmazione applicazioni) che consentono alle aziende di automatizzare la creazione, la gestione e la distribuzione di comunicazioni personalizzate basate su dati. | I flussi di lavoro incentrati su Forms sono progettati per automatizzare i processi aziendali che coinvolgono moduli e servizi basati su documenti. Questi flussi di lavoro automatizzano il ciclo di produzione, la revisione e l’approvazione di moduli e la generazione di documenti mentre si spostano in diverse fasi di un processo aziendale. | La piattaforma può integrarsi con Adobe Analytics, consentendo alle organizzazioni di ottenere informazioni utili sul comportamento e sulle preferenze degli utenti. | La piattaforma offre l’integrazione predefinita con Adobe Sign. È inoltre possibile integrarlo con e DocuSign, semplificando l’invio di Forms per le firme elettroniche. |
 
 <!--
 | | |
