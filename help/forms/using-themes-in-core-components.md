@@ -1,10 +1,10 @@
 ---
 title: Creazione e utilizzo dei temi
 description: È possibile utilizzare i temi per stilizzare e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in un qualsiasi numero di Adaptive Forms.
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 7%
+source-wordcount: '1669'
+ht-degree: 5%
 
 ---
 
@@ -51,6 +51,7 @@ Per personalizzare un tema,
 Per personalizzare un tema Canvas:
 1. [Clona il tema Canvas](#1-download-canvas-theme-download-canvas-theme)
 1. [Comprendere la struttura del tema](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [Cambia il nome in package.json e package_lock.json](#changename-packagelock-packagelockjson)
 1. [Crea il ](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
 1. [Avvia il server proxy locale](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
 1. [Personalizzare il tema](#customize-the-theme-customizing-theme)
@@ -67,9 +68,9 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 >[!NOTE]
 >
-> La scheda Stile della Creazione guidata modulo visualizza lo stesso nome del tema di package.json .
+> La scheda Stile della Creazione guidata modulo visualizza lo stesso nome del tema presente nel file package.json.
 
-### 2. Comprendere la struttura della struttura del tema {#structure-of-canvas-theme}
+### 2. Comprendere la struttura del tema {#structure-of-canvas-theme}
 
 Un tema Modulo adattivo è un pacchetto contenente le risorse CSS, JavaScript e statiche che definiscono lo stile del modulo e rispetta la struttura di un tema Modulo adattivo. Un tema Modulo adattivo presenta la seguente struttura tipica di un progetto front-end:
 
@@ -85,12 +86,22 @@ La `src/components` La cartella contiene file JavaScript e CSS specifici per tut
 
 Per personalizzare il tema, puoi avviare il server proxy locale per visualizzare le personalizzazioni del tema in tempo reale in base al contenuto AEM effettivo.
 
+### 4. Cambia il nome in package.json e package_lock.json del tema Canvas {#changename-packagelock-packagelockjson}
+
+Aggiorna il nome e la versione del tema Canvas nel `package.json` e `package_lock.json` file.
+
+>[!NOTE]
+>
+> I nomi non devono contenere `@aemforms` tag . Deve essere testo semplice come nome fornito dall’utente.
+
+![Tema tela Pic](/help/forms/assets/changename_canvastheme.png)
+
 ### 3. Crea il file .env in una cartella theme {#creating-env-file-theme-folder}
 
 Crea un `.env` nella cartella theme e aggiungi i seguenti parametri:
 
 * **URL AEM**
-AEM_URL=https://[istanza autore] o http://localhost:[porta]/
+AEM_URL=https://[istanza autore]
 
 * **Nome del sito AEM**
 AEM_ADAPTIVE_FORM=Nome_modulo
@@ -109,7 +120,7 @@ AEM_PROXY_PORT=7000
 
    ![npm run live](/help/forms/assets/theme_proxy.png)
 
-1. All&#39;avvio del server proxy, apre automaticamente un browser a `http://localhost:[port]/`.
+
 1. Tocca o fai clic su **ACCEDI LOCALMENTE (SOLO ATTIVITÀ AMMINISTRATORE)** e accedi con le credenziali utente proxy fornite dall&#39;amministratore AEM.
 
    ![Accesso locale](/help/forms/assets/local_signin.png)
@@ -168,18 +179,33 @@ Dopo aver apportato modifiche al tema e averlo testato con un server proxy local
 
 Prima di eseguire il commit delle modifiche nell’archivio Git del Cloud Service AEM Forms, è necessario un clone dell’archivio sul computer locale. Per duplicare l’archivio:
 
-1. Apri il prompt dei comandi ed esegui il comando seguente dopo la sostituzione [my-org] e [il mio programma] con i valori forniti dall’amministratore AEM. Puoi anche trovare i dettagli nella tua [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git):
+1. Crea un nuovo archivio di temi facendo clic sul pulsante **[!UICONTROL Repository]** opzione .
+
+   ![crea nuovo repo tema](/help/forms/assets/createrepo_canvastheme.png)
+
+1. Fai clic su **[!UICONTROL Aggiungi archivio]** e specifica **Nome archivio** in **Aggiungi archivio** finestra di dialogo. Fai clic su **[!UICONTROL Salva]**.
+
+   ![Aggiungi repository tema canvas](/help/forms/assets/addcanvasthemerepo.png)
+
+1. Fai clic su **[!UICONTROL Copia URL archivio]** per copiare l’URL dell’archivio creato.
+
+   ![URL del tema Canvas](/help/forms/assets/copyurl_canvastheme.png)
+
+1. Apri il prompt dei comandi e duplica l’archivio cloud creato sopra.
 
    ```
-   git clone https://git.cloudmanager.adobe.com/[my-org]/[my-org]/
+   git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
    ```
-1. Sposta il progetto tema che stavi modificando nell’archivio clonato con un comando simile a `mv <theme-sources> <cloned-repo>`.
-1. Apporta le modifiche desiderate nelle cartelle dei componenti del tema modificandone il file CSS.
-1. Nella directory dell’archivio clonato, esegui il commit dei file tema appena spostati con i seguenti comandi.
+
+1. Sposta i file dell’archivio dei temi che stai modificando nell’archivio cloud con un comando simile a
+   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
+Ad esempio, utilizzare questo comando 
+`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+1. Nella directory dell’archivio cloud, esegui il commit dei file tema in cui hai spostato con i seguenti comandi.
 
    ```text
-   git add <theme-file-name>
-   git commit -m "Adding theme sources"
+   git add .
+   git commit -a -m "Adding theme files"
    git push
    ```
 
@@ -190,10 +216,10 @@ Prima di eseguire il commit delle modifiche nell’archivio Git del Cloud Servic
 Le personalizzazioni sono ora archiviate in modo sicuro nell’archivio Git.
 
 
-### 7. Distribuzione della pipeline front-end {#deploy-pipeline}
+### 7. Eseguire la pipeline front-end {#deploy-pipeline}
 
-Distribuisci il tema personalizzato utilizzando la pipeline front-end. Scopri [come impostare una pipeline front-line per distribuire un tema personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
-
+1. Crea la pipeline front-end per distribuire il tema personalizzato. Scopri [come impostare una pipeline front-line per distribuire un tema personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
+1. Esegui la pipeline front-end creata per distribuire la cartella tema personalizzata sotto la **[!UICONTROL Stile]** scheda di una procedura guidata per la creazione di un modulo adattivo.
 
 >[!NOTE]
 >
@@ -205,13 +231,13 @@ Distribuisci il tema personalizzato utilizzando la pipeline front-end. Scopri [c
 1. Apri un modulo adattivo creato utilizzando i componenti core.
 1. Avviare il server proxy locale utilizzando il prompt dei comandi e fare clic su **ACCEDI LOCALMENTE (SOLO ATTIVITÀ AMMINISTRATORE)**.
 1. Una volta effettuato l’accesso, verrai reindirizzato al browser e vedrai il tema applicato.
-1. Scarica il tema Canvas ed estrai la cartella zip scaricata.
+1. Scarica la [Tema canvas](https://github.com/adobe/aem-forms-theme-canvas) ed estrarre la cartella zip scaricata.
 1. Apri la cartella zip estratta nell’editor desiderato.
 1. Crea un `.env` nella cartella theme e aggiungi parametri: **URL AEM**, **AEM_ADAPTIVE_FORM** e **AEM_PROXY_PORT**.
 1. Apri il file CSS della casella di testo nella cartella tema Canvas e modifica il colore del bordo in modo che venga detto `red` e salva le modifiche.
 1. Riapri il browser e vedrai che le modifiche si riflettono immediatamente in un Modulo adattivo.
 1. Sposta la cartella del tema canvas nell’archivio clonato.
-1. Conferma le modifiche e implementa la pipeline front-end.
+1. Conferma le modifiche ed esegui la pipeline front-end.
 
 Una volta eseguita la pipeline, il tema è disponibile nella scheda Stile .
 
