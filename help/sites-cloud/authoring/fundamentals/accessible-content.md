@@ -357,7 +357,6 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
       >
       >* `<b>` per `<strong>`
       >* `<i>` per `<em>`
-
       >
       >L’efficacia è la medesima, ma `<strong>` e `<em>` sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il tuo team di sviluppo può configurare l’editor Rich Text in modo che utilizzi `<strong>` e `<em>` (anziché `<b>` e `<i>`) durante lo sviluppo dell’istanza di progetto.
 
