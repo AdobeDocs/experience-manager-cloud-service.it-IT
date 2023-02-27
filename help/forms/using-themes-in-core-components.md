@@ -1,15 +1,15 @@
 ---
 title: Creazione e utilizzo dei temi
 description: È possibile utilizzare i temi per stilizzare e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in un qualsiasi numero di Adaptive Forms.
-source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
+source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 5%
 
 ---
 
 
-# Introduzione ai temi per i moduli adattivi tramite i componenti core {#introduction-to-themes-for-af-using-core-components}
+# Temi in Forms adattivo (componenti core) {#themes-for-af-using-core-components}
 
 È possibile creare e applicare temi per stilizzare un modulo adattivo utilizzando i componenti core. Un tema contiene dettagli di stile per i componenti e i pannelli. Gli stili includono proprietà quali colori di sfondo, colori dello stato, trasparenza, allineamento e dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Il tema viene gestito in modo indipendente senza alcun riferimento a un modulo adattivo.
 
