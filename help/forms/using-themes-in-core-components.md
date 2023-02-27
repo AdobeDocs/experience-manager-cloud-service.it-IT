@@ -1,7 +1,7 @@
 ---
 title: Creazione e utilizzo dei temi
 description: È possibile utilizzare i temi per stilizzare e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in un qualsiasi numero di Adaptive Forms.
-source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
+source-git-commit: 1357b36dc3d14d2ceceb6761cb005b592472890a
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 5%
@@ -86,7 +86,7 @@ La `src/components` La cartella contiene file JavaScript e CSS specifici per tut
 
 Per personalizzare il tema, puoi avviare il server proxy locale per visualizzare le personalizzazioni del tema in tempo reale in base al contenuto AEM effettivo.
 
-### 4. Cambia il nome in package.json e package_lock.json del tema Canvas {#changename-packagelock-packagelockjson}
+### 3. Cambia il nome in package.json e package_lock.json del tema Canvas {#changename-packagelock-packagelockjson}
 
 Aggiorna il nome e la versione del tema Canvas nel `package.json` e `package_lock.json` file.
 
@@ -96,7 +96,7 @@ Aggiorna il nome e la versione del tema Canvas nel `package.json` e `package_loc
 
 ![Tema tela Pic](/help/forms/assets/changename_canvastheme.png)
 
-### 3. Crea il file .env in una cartella theme {#creating-env-file-theme-folder}
+### 4. Crea il file .env in una cartella theme {#creating-env-file-theme-folder}
 
 Crea un `.env` nella cartella theme e aggiungi i seguenti parametri:
 
@@ -112,7 +112,7 @@ AEM_PROXY_PORT=7000
 
 ![Struttura del tema dell&#39;area di lavoro](/help/forms/assets/env-file-canvas-theme.png)
 
-### 4. Avviare un server proxy locale {#starting-a-local-proxy-server}
+### 5. Avviare un server proxy locale {#starting-a-local-proxy-server}
 
 1. Dalla riga di comando, passa alla root del tema nel computer locale.
 1. Esegui `npm install` e npm recupera le dipendenze e installa il progetto.
@@ -139,7 +139,7 @@ AEM_PROXY_PORT=7000
 
 Passa a un modulo adattivo per visualizzare il tema Area di lavoro applicato a un modulo adattivo.
 
-### 5. Personalizzare il tema {#customize-theme}
+### 6. Personalizzare il tema {#customize-theme}
 
 1. Nell’editor, apri il file `<your-theme-sources>/src/site/_variables.scss`.
 
@@ -173,7 +173,7 @@ La finestra di progettazione dei temi visualizza in anteprima le modifiche nel s
 
 Prima di apportare le modifiche all’archivio Git AEM, devi accedere al tuo [Informazioni sull’archivio Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
 
-### 6. Conferma le modifiche {#committing-the-changes}
+### 7. Conferma le modifiche {#committing-the-changes}
 
 Dopo aver apportato modifiche al tema e averlo testato con un server proxy locale, esegui il commit delle modifiche nell’archivio Git del tuo Cloud Service AEM Forms. Rende il tema personalizzato disponibile nell’ambiente del Cloud Service Forms per gli autori di Forms adattivi da utilizzare.
 
@@ -216,7 +216,7 @@ Ad esempio, utilizzare questo comando
 Le personalizzazioni sono ora archiviate in modo sicuro nell’archivio Git.
 
 
-### 7. Eseguire la pipeline front-end {#deploy-pipeline}
+### 8. Eseguire la pipeline front-end {#deploy-pipeline}
 
 1. Crea la pipeline front-end per distribuire il tema personalizzato. Scopri [come impostare una pipeline front-line per distribuire un tema personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
 1. Esegui la pipeline front-end creata per distribuire la cartella tema personalizzata sotto la **[!UICONTROL Stile]** scheda di una procedura guidata per la creazione di un modulo adattivo.
