@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '4382'
+source-wordcount: '4384'
 ht-degree: 9%
 
 ---
@@ -440,7 +440,7 @@ Vedi [Considerazioni speciali per la creazione di un predefinito visualizzatore 
 
 1. (Facoltativo) Nella parte superiore della pagina Modifica predefinito visualizzatore, seleziona **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** oppure **[!UICONTROL Telefono]** per definire in modo univoco gli stili visivi per dispositivi e tipi di schermo diversi.
 1. Nella pagina Editor predefiniti per visualizzatori , seleziona la **[!UICONTROL Comportamento]** scheda . In alternativa, puoi selezionare qualsiasi elemento visivo nel visualizzatore per selezionarlo per la configurazione.
-Ad esempio, per *VideoPlayer* tipo, sotto **[!UICONTROL Modificatori]** > **[!UICONTROL Riproduzione]**, puoi scegliere tra una delle tre opzioni di streaming adattivo:
+Ad esempio, per *VideoPlayer* tipo, sotto **[!UICONTROL Modificatori]** > **[!UICONTROL Riproduzione]**, puoi scegliere tra una delle tre opzioni di streaming a bitrate adattivo:
 
    * **[!UICONTROL sciocco]** - I video vengono trasmessi solo come DASH. Tuttavia, sui dispositivi Safari/iOS, devi selezionare **[!UICONTROL hls]** come tipo, invece.
    * **[!UICONTROL hls]** - I video vengono trasmessi solo come HLS.
@@ -473,7 +473,7 @@ Ad esempio, per *VideoPlayer* tipo, sotto **[!UICONTROL Modificatori]** > **[!UI
 
    >[!IMPORTANT]
    >
-   >Per i vecchi video che utilizzano un profilo di streaming adattivo, l’URL continua a essere riprodotto come al solito, con streaming HLS, fino a quando non si [rielaborare le risorse video](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Dopo la rielaborazione, lo stesso URL continuerà a funzionare ma ora con *entrambi* Streaming DASH e HLS abilitato.
+   >Per i vecchi video che utilizzano un profilo di streaming a bitrate adattivo, l’URL continua a essere riprodotto come al solito, con streaming HLS, fino a quando non si [rielaborare le risorse video](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Dopo la rielaborazione, lo stesso URL continuerà a funzionare ma ora con *entrambi* Streaming DASH e HLS abilitato.
 
 ### Considerazioni speciali per la creazione di un predefinito visualizzatore interattivo {#special-considerations-for-creating-an-interactive-viewer-preset}
 

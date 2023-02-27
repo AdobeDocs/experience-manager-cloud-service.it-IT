@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '3707'
+source-wordcount: '3716'
 ht-degree: 7%
 
 ---
 
 # Profili video di Dynamic Media{#video-profiles}
 
-Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni di questo profilo predefinito sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Durante la riproduzione, quando si codificano i video sorgente primari utilizzando il profilo di codifica video adattiva, il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. Questa azione è nota come streaming adattivo.
+Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni di questo profilo predefinito sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Durante la riproduzione, quando si codificano i video sorgente primari utilizzando il profilo di codifica video adattiva, il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. Questa azione è nota come streaming a bitrate adattivo.
 
 Di seguito sono riportati altri fattori che determinano la qualità dei video:
 
@@ -124,7 +124,7 @@ Vedi [Applicare profili video a cartelle specifiche](#applying-video-profiles-to
 
 Vedi anche [Ritaglio avanzato per le immagini](image-profiles.md).
 
-## Creare un profilo video per lo streaming adattivo {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## Creare un profilo video per lo streaming a bitrate adattivo {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media è già dotato di un profilo di codifica video adattivo predefinito, un gruppo di impostazioni di caricamento video per MP4 H.264, ottimizzato per la migliore esperienza di visualizzazione. Puoi usare questo profilo quando carichi i tuoi video.
 
@@ -132,7 +132,7 @@ Tuttavia, se questo profilo predefinito non soddisfa le tue esigenze, puoi scegl
 
 Quando crei il profilo di codifica video, noterai che la maggior parte delle opzioni di codifica sono precompilate con le impostazioni predefinite consigliate per aiutarti. Tuttavia, se si seleziona un valore diverso da quello predefinito consigliato, può verificarsi una scarsa qualità video durante la riproduzione e altri problemi di prestazioni.
 
-Pertanto, per tutti i predefiniti di codifica video MP4 H.264 presenti nel profilo, i seguenti valori vengono convalidati per garantire che siano gli stessi tra i singoli predefiniti di codifica nel profilo, consentendo lo streaming adattivo:
+Pertanto, per tutti i predefiniti di codifica video MP4 H.264 presenti nel profilo, i seguenti valori vengono convalidati per garantire che siano gli stessi tra i singoli predefiniti di codifica nel profilo, consentendo lo streaming adattivo del bitrate:
 
 * Codec video formato - MP4 H.264 (.mp4)
 * Codec audio
@@ -143,7 +143,7 @@ Pertanto, per tutti i predefiniti di codifica video MP4 H.264 presenti nel profi
 * Profilo H264
 * Frequenza di campionamento audio
 
-Se i valori non sono uguali, puoi continuare a creare il profilo così com’è. Tuttavia, lo streaming adattivo non è possibile. Invece, gli utenti sperimentano lo streaming a bitrate singolo. È consigliabile modificare le impostazioni di codifica per utilizzare gli stessi valori tra i singoli predefiniti di codifica nel profilo. (L’editor del profilo video/predefinito applica la parità delle impostazioni di codifica del video adattivo se è abilitato &quot;Codifica per lo streaming adattivo&quot;).
+Se i valori non sono uguali, puoi continuare a creare il profilo così com’è. Tuttavia, lo streaming a bitrate adattivo non è possibile. Invece, gli utenti sperimentano lo streaming a bitrate singolo. È consigliabile modificare le impostazioni di codifica per utilizzare gli stessi valori tra i singoli predefiniti di codifica nel profilo. (L’editor del profilo video/predefinito applica la parità delle impostazioni di codifica del video adattivo se è abilitato &quot;Codifica per lo streaming adattivo&quot;).
 
 Vedi anche [Creare un profilo di codifica video per lo streaming progressivo](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -151,7 +151,7 @@ Vedi anche [Best practice per la codifica video](/help/assets/dynamic-media/vide
 
 Per definire parametri di elaborazione avanzati per altri tipi di risorse, consulta [Configurare l’elaborazione delle risorse](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Per creare un profilo video per lo streaming adattivo**,
+**Per creare un profilo video per lo streaming a bitrate adattivo**,
 
 1. Seleziona il logo dell’Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
 1. Seleziona **[!UICONTROL Crea]**.
@@ -194,7 +194,7 @@ Se scegli di non utilizzare l’opzione **[!UICONTROL Codifica per lo streaming 
 
 I codec supportati sono H.264 (.mp4) e WebM.
 
-Vedi anche [Creare un profilo di codifica video per lo streaming adattivo](#creating-a-video-encoding-profile-for-adaptive-streaming).
+Vedi anche [Creare un profilo di codifica video per lo streaming a bitrate adattivo](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
 Vedi anche [Best practice per la codifica video](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -274,7 +274,7 @@ Ora puoi applicare il profilo alle cartelle che contengono video. Vedi [Applicar
    <td><code>keyframe</code></td>
    <td>Il numero di fotogrammi di destinazione tra i fotogrammi chiave. Calcola questo valore in modo da poter generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo del fotogramma chiave è di 60-300.<br /> <br /> Intervalli di fotogrammi chiave inferiori migliorano la ricerca del flusso e il comportamento di commutazione del flusso per le codifiche video adattive e possono anche migliorare la qualità dei video che hanno molto movimento. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito si traduce in una qualità video complessiva inferiore a un dato bitrate.</td>
    <td><code>String</code></td>
-   <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per HLS o DASH (streaming adattivo) è 60-90. (Per utilizzare DASH per i video, deve prima essere attivato dal supporto tecnico Adobe sul tuo account. Vedi <a href="/help/assets/dynamic-media/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> </td>
+   <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per HLS o DASH (flusso a bit rate adattivo) è 60-90. (Per utilizzare DASH per i video, deve prima essere attivato dal supporto tecnico Adobe sul tuo account. Vedi <a href="/help/assets/dynamic-media/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -324,7 +324,7 @@ Per definire parametri di elaborazione avanzati per altri tipi di risorse, consu
 1. Sulla barra degli strumenti, seleziona **[!UICONTROL Modifica]**.
 1. Nella pagina Profilo di codifica video , modifica il nome e la descrizione desiderati.
 1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming adattivo]** sia selezionata.
-Seleziona l’icona delle informazioni per una descrizione dello streaming adattivo. Se stai modificando un profilo video progressivo, non selezionare questa casella di controllo.
+Seleziona l’icona delle informazioni per una descrizione dello streaming del bitrate adattivo. Se stai modificando un profilo video progressivo, non selezionare questa casella di controllo.
 1. Nell’intestazione Predefiniti di codifica video , aggiungi, modifica o elimina i predefiniti di codifica video che compongono il profilo.
 
    Seleziona l’icona delle informazioni accanto a ciascuna opzione nel **[!UICONTROL Base]** e **[!UICONTROL Avanzate]** schede per ulteriori descrizioni o impostazioni consigliate in base al codec del formato video selezionato.
@@ -337,7 +337,7 @@ Seleziona l’icona delle informazioni per una descrizione dello streaming adatt
 1. Nella pagina Profili video , seleziona il nome di un profilo video.
 1. Sulla barra degli strumenti, seleziona **[!UICONTROL Copia]**.
 1. Nella pagina Profilo di codifica video , immetti un nuovo nome per il profilo.
-1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming adattivo]** sia selezionata. Seleziona l’icona delle informazioni per una descrizione dello streaming adattivo. Se copi un profilo video progressivo, non selezionare la casella di controllo.
+1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming adattivo]** sia selezionata. Seleziona l’icona delle informazioni per una descrizione dello streaming del bitrate adattivo. Se copi un profilo video progressivo, non selezionare la casella di controllo.
 
    In modalità Dynamic Media - Hybrid, se un predefinito video WebM fa parte del profilo video, allora **[!UICONTROL Codifica per lo streaming adattivo]** non è possibile perché tutti i predefiniti devono essere MP4.
 1. Nell’intestazione Predefiniti di codifica video , aggiungi, modifica o elimina i predefiniti di codifica video che compongono il profilo.
