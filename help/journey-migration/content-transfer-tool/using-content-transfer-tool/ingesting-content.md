@@ -2,10 +2,10 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
+source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 9%
+source-wordcount: '1660'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 >id="aemcloud_ctt_ingestion"
 >title="Acquisizione dei contenuti"
 >abstract="Per acquisizione si intende l’acquisizione del contenuto dal set di migrazione nell’istanza del Cloud Service di destinazione. Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Acquisizione integrativa"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="Acquisizione integrativa"
 
 Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 >[!NOTE]
@@ -135,11 +135,28 @@ Potrai avviare un’acquisizione nell’ambiente di destinazione solo se apparti
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
+### Impossibile raggiungere il servizio di migrazione {#unable-to-reach-migration-service}
+
+Dopo aver richiesto un’acquisizione, può essere presentato all’utente un messaggio come il seguente: &quot;Il servizio di migrazione nell&#39;ambiente di destinazione non è attualmente raggiungibile. Riprova più tardi o contatta il supporto Adobe.&quot;
+
+![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+
+Questo indica che Cloud Acceleration Manager non è stato in grado di raggiungere il servizio di migrazione dell’ambiente di destinazione per avviare l’acquisizione. Questo può accadere per una serie di motivi.
+
+>[!NOTE]
+> 
+> Viene visualizzato il campo &quot;Token di migrazione&quot; perché in alcuni casi il recupero del token è ciò che è effettivamente non consentito. Consentendo di fornirlo manualmente, può consentire all’utente di avviare rapidamente l’acquisizione, senza ulteriore aiuto. Se il token viene fornito e il messaggio continua a essere visualizzato, il problema non è stato il recupero del token.
+
+* AEM as a Cloud Service mantiene lo stato dell’ambiente e occasionalmente può essere necessario riavviare il servizio di migrazione per una serie di motivi normali. Se il servizio viene riavviato, non sarà possibile raggiungerlo, ma sarà presto disponibile.
+* È possibile che nell&#39;istanza sia in esecuzione un altro processo. Ad esempio, se Release Orchestrator sta applicando un aggiornamento, il sistema potrebbe essere occupato e il servizio di migrazione potrebbe non essere regolarmente disponibile. Questo, e la possibilità di danneggiare lo stadio o l&#39;istanza di produzione, è il motivo per cui si consiglia vivamente di mettere in pausa gli aggiornamenti durante un&#39;acquisizione.
+* Se [È stato applicato l’Inserire nell&#39;elenco Consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tramite Cloud Manager, impedirà a Cloud Acceleration Manager di raggiungere il servizio di migrazione. Impossibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è molto dinamico. Attualmente, l’unica soluzione è quella di disabilitare l’elenco consentiti IP durante l’acquisizione.
+* Ci possono essere altri motivi che necessitano di indagini. Se l’acquisizione continua a non riuscire, contatta l’Assistenza clienti Adobe.
+
 ### Aggiornamenti automatici tramite Release Orchestrator ancora abilitati
 
 Release Orchestrator mantiene automaticamente gli ambienti aggiornati applicando automaticamente gli aggiornamenti. Se l’aggiornamento viene attivato durante l’esecuzione di un’acquisizione, possono verificarsi risultati imprevedibili, tra cui la corruzione dell’ambiente. Questo è uno dei motivi per cui è necessario registrare un ticket di supporto prima di avviare un’acquisizione (vedi &quot;Nota&quot; sopra), in modo che sia possibile pianificare la disattivazione temporanea di Release Orchestrator.
 
-Se Release Orchestrator è ancora in esecuzione all&#39;avvio di un&#39;acquisizione, l&#39;interfaccia utente presenta questo messaggio di errore. È possibile scegliere di continuare comunque, accettando il rischio, controllando il campo e premendo nuovamente il pulsante.
+Se Release Orchestrator è ancora in esecuzione all&#39;avvio di un&#39;acquisizione, l&#39;interfaccia utente presenta questo messaggio. È possibile scegliere di continuare comunque, accettando il rischio, controllando il campo e premendo nuovamente il pulsante.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
