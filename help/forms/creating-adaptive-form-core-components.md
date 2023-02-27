@@ -4,7 +4,7 @@ description: Scopri come creare un modulo adattivo utilizzando [!DNL Experience 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
+source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 * **Un modello di modulo adattivo**: Un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Dispone di componenti preformattati contenenti determinate proprietà e struttura del contenuto. Offre inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto e l’aspetto dell’azione di invio definisce l’azione da intraprendere in seguito all’invio di un Modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Il servizio cloud fornisce un modello OOTB denominato vuoto:
 
    * La `blank` Il modello è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
-   * Puoi installare il pacchetto di riferimento, tramite il gestore dei pacchetti, per aggiungere il `blank` al programma as a Cloud Service di AEM Forms.
+   * Puoi installare il pacchetto di riferimento, tramite Gestione pacchetti, per aggiungere il `blank` al programma as a Cloud Service di AEM Forms.
    * È inoltre possibile [creare un nuovo modello di Forms adattivo (componenti core)](template-editor.md) da zero.
 
 * **Un tema Modulo adattivo**: Un tema contiene dettagli di stile per i componenti e i pannelli. Gli stili includono proprietà quali colori di sfondo, colori dello stato, trasparenza, allineamento e dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti.  La `Canvas` Il modello è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
