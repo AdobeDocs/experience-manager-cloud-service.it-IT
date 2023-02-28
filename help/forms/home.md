@@ -3,7 +3,7 @@ title: Introduzione a [!DNL AEM Forms] as a Cloud Service
 description: Scopri AEM Forms e come ti può aiutare a produrre documenti e contenuti di moduli pronti per l’azienda. Scopri Platform-as-a-Service (PaaS) e come gestire moduli digitali e processi aziendali di classe enterprise, nonché come collegare Forms alle origini dati correnti.
 landing-page-description: Scopri come utilizzare i moduli in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 6861f83b292dfb8a8e62e685830289e3a2eded2d
+source-git-commit: c51aa20a37e27252a8c1e6a72d4bc6ffacea46f7
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 7%
@@ -20,7 +20,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] offre una soluzione nat
 
 L&#39;organizzazione può utilizzare [!DNL AEM Forms] as a Cloud Service per creare moduli digitali, collegare moduli a origini dati esistenti, integrare moduli con [!DNL Adobe Sign] aggiungere firme elettroniche ai moduli e generare documenti di record per archiviare i moduli inviati come file PDF. L’organizzazione può inoltre utilizzare il servizio per convertire i PDF forms esistenti in moduli digitali.
 
-![Raccolta di dati - Struttura dei moduli reattivi](/help/forms/assets/data-collection.jpeg)
+![Raccolta di dati - Struttura dei moduli reattivi](/help/forms/assets/data-collection.jpeg){width="40%"}
 Progettazione di moduli reattivi
 
 Nelle grandi aziende, i moduli vengono spesso creati una sola volta e riutilizzati copiando in un sistema di gestione dei contenuti. Mantenere aggiornato un ampio database di moduli e renderlo individuabile può essere una sfida notevole. AEM fornisce un portale Forms personalizzabile che consente ai clienti di trovare e accedere ai moduli necessari sia sui canali web che mobili.
@@ -34,7 +34,7 @@ Utilizzando AEM Forms, gli utenti aziendali possono creare esperienze utente per
 I documenti personalizzati, come le ricevute, i kit di benvenuto e le istruzioni, possono essere facilmente generati. Le organizzazioni possono indirizzare il traffico verso portali web personalizzati con conseguente iscrizione o acquisto di servizi aggiuntivi.
 
 
-![Comunicazione personalizzata - Design reattivo](/help/forms/assets/personalized-communication.jpeg)
+![Comunicazione personalizzata - Design reattivo](/help/forms/assets/personalized-communication.jpeg){width="40%"}
 Fattura personalizzata
 
 Il servizio è sempre corrente, sempre disponibile e sempre in formazione. Le organizzazioni possono utilizzare [!DNL AEM Forms] as a Cloud Service e ottieni tutte queste funzionalità nel cloud senza richiedere alcuna infrastruttura locale. Il servizio consente inoltre di liberare le organizzazioni da complessi cicli di aggiornamento in quanto è sempre aggiornato con le funzioni più recenti.
