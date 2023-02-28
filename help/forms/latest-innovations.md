@@ -1,10 +1,10 @@
 ---
-title: Ultime innovazioni di Adobe Experience Manager (AEM) Forms as a Cloud Service
+title: Scopri le ultime innovazioni in Adobe Experience Manager Forms as a Cloud Service.
 description: "Scopri le funzionalità più recenti di [!DNL AEM Forms] as a Cloud Service per creare, gestire e pubblicare moduli e processi aziendali di classe enterprise."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 Alcune delle ultime innovazioni in AEM Forms as a Cloud Service includono:
 
-|  |  |
+| Funzione obsoleta | Dettagli |
 |---|---|
 | Forms adattivo headless | Creare e gestire [Forms adattivo headless](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) nella piattaforma Adobe Experience Manager. Consente agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e interagire tramite API, anziché tramite un’interfaccia utente grafica tradizionale. <br/> <br/> Questi moduli sono progettati per essere inviati senza la necessità di un’interfaccia modulo HTML tradizionale. In altre parole, consentono di inviare i dati del modulo a livello di programmazione tramite un’API o un codice di backend senza richiedere elementi di modulo visibili sul front-end. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)<br/> I moduli headless sono utili in vari scenari, ad esempio per la creazione di applicazioni a pagina singola, applicazioni web progressive o applicazioni per dispositivi mobili, in cui l’interfaccia di un modulo HTML tradizionale potrebbe non essere necessaria o non essere pratica. Consentendo agli sviluppatori di inviare i dati dei moduli direttamente tramite API o codice backend, i moduli headless semplificano i flussi di lavoro e migliorano le prestazioni complessive delle applicazioni web. |
 | Componenti core  | La [Componenti core adattabili di Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) sono un set di 24 componenti open-source compatibili con BEM basati sulle basi dei componenti core di Adobe Experience Manager WCM. Sono progettati appositamente per la creazione di Forms adattivo, moduli che si adattano al dispositivo, al browser e alle dimensioni dello schermo dell&#39;utente. <br/> <br/> Questi componenti possono essere utilizzati per creare esperienze eccezionali di acquisizione e registrazione dei dati fornendo un’ampia gamma di opzioni per i campi modulo, compresi campi di testo, caselle di controllo, menu a discesa e altro ancora. Includono anche funzioni quali convalida, logica condizionale e progettazione reattiva, che possono essere utilizzate per creare moduli facili da usare e intuitivi. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>  Inoltre, poiché questi componenti sono open-source, gli sviluppatori possono personalizzare ed estendere facilmente i componenti in base alle esigenze specifiche della propria organizzazione. Questi componenti sono inoltre basati sulla metodologia BEM, che garantisce la scalabilità e la manutenzione dei componenti. |
