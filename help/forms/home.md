@@ -3,33 +3,21 @@ title: Introduzione a [!DNL AEM Forms] as a Cloud Service
 description: Scopri AEM Forms e scopri come è utile per produrre moduli e documenti pronti per l’azienda. Informazioni su Platform-as-a-Service (PaaS) e su come gestire moduli digitali e processi aziendali di classe enterprise, nonché collegare Forms ad Adobe Sign e alle origini dati correnti.
 landing-page-description: Scopri come utilizzare i moduli in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
+source-git-commit: 2a464a0a11396a1948ba7211d5c0534769e6659c
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1109'
 ht-degree: 3%
 
 ---
 
-# Introduzione {#introduction}
+# Introduzione ad AEM Forms as a Cloud Service {#introduction}
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] offre una soluzione nativa per il cloud, Platform as a Service (PaaS), che consente alle aziende di creare, gestire, pubblicare e aggiornare moduli digitali complessi, integrando i dati inviati con i processi back-end, le regole aziendali e il salvataggio dei dati in un archivio dati esterno.
 
 Il servizio è sempre corrente, sempre disponibile e sempre in formazione. Le organizzazioni possono utilizzare [!DNL AEM Forms] as a Cloud Service e ottieni tutte queste funzionalità nel cloud senza richiedere alcuna infrastruttura locale. Il servizio consente inoltre di liberare le organizzazioni da complessi cicli di aggiornamento in quanto è sempre aggiornato con le funzioni più recenti.
 
-Adobe [!DNL Experience Manager Forms as a Cloud Service] è una soluzione incentrata sul cliente per supportare ogni fase del percorso:
+Adobe [!DNL Experience Manager Forms as a Cloud Service] è una soluzione incentrata sul cliente per supportare ogni fase del percorso di clienti:
 
-
-![](/help/forms/assets/customer-journey.png)
-
-
-
-
-
-## Facile accesso ai moduli per migliorare la consapevolezza
-
-Nelle grandi aziende, i moduli vengono spesso creati una sola volta e riutilizzati copiando in un sistema di gestione dei contenuti. Mantenere aggiornato un ampio database di moduli e renderlo individuabile può essere una sfida notevole. AEM fornisce un portale Forms personalizzabile che consente ai clienti di trovare e accedere ai moduli necessari sia sui canali web che mobili.
-
-Puoi personalizzare l’aspetto, il branding e i loghi di Forms Portal per soddisfare i requisiti specifici della tua organizzazione.
 
 ## Digitalizzare e semplificare l’esperienza di registrazione e onboarding
 
@@ -40,12 +28,7 @@ L&#39;organizzazione può utilizzare [!DNL AEM Forms] as a Cloud Service per cre
 ![Progettazione di moduli reattivi](/help/forms/assets/data-collection.jpeg "Esperienze Forms adattive per più dispositivi"){width="70%" align="center"}
 
 
-## Automatizzare i flussi di lavoro di back-office
-
-Utilizzare flussi di lavoro incentrati sui moduli per automatizzare l’elaborazione e l’indirizzamento dei dati dei moduli a vari soggetti interessati, ad esempio responsabili o reparti, per la revisione, l’approvazione o un’ulteriore elaborazione.
-
-Questi flussi di lavoro consentono alla tua organizzazione di ridurre al minimo i rischi e di mantenere la conformità garantendo un&#39;elaborazione coerente e verificabile dei dati dei moduli, automatizzando le attività manuali, garantendo un controllo degli accessi basato sui ruoli e rispettando i requisiti normativi.
-
+Nelle grandi aziende, i moduli vengono spesso creati una sola volta e riutilizzati copiando in un sistema di gestione dei contenuti. Mantenere aggiornato un ampio database di moduli e renderlo individuabile può essere una sfida notevole. AEM fornisce un portale Forms personalizzabile che consente ai clienti di trovare e accedere ai moduli necessari sia sui canali web che mobili. Puoi personalizzare l’aspetto, il branding e i loghi di Forms Portal per soddisfare i requisiti specifici della tua organizzazione.
 
 ## Fornire comunicazioni personalizzate
 
@@ -53,10 +36,16 @@ Un componente importante di un&#39;esperienza digitale self-service efficiente �
 
 Utilizzando AEM Forms, gli utenti aziendali possono creare esperienze utente personalizzate avvincenti personalizzando modelli di documenti e incorporando informazioni dai processi back-end ai modelli. Un set di API intuitive consente alle regole aziendali di impostare che decidono quando generare una comunicazione basata su un’interrogazione o a intervalli regolari in batch.
 
+![Fattura personalizzata](/help/forms/assets/personalized-communication.jpeg "Fatture PDF personalizzate generate su richiesta"){width="70%" align="center"}
+
 È possibile generare facilmente documenti personalizzati, come ricevute, kit di benvenuto e istruzioni. Le organizzazioni possono indirizzare il traffico verso portali web personalizzati con conseguente iscrizione o acquisto di servizi aggiuntivi.
 
 
-![Fattura personalizzata](/help/forms/assets/personalized-communication.jpeg "Fatture PDF personalizzate generate su richiesta"){width="70%" align="center"}
+## Automatizzare i flussi di lavoro di back-office
+
+Utilizzare flussi di lavoro incentrati sui moduli per automatizzare l’elaborazione e l’indirizzamento dei dati dei moduli a vari soggetti interessati, ad esempio responsabili o reparti, per la revisione, l’approvazione o un’ulteriore elaborazione.
+
+Questi flussi di lavoro consentono alla tua organizzazione di ridurre al minimo i rischi e di mantenere la conformità garantendo un&#39;elaborazione coerente e verificabile dei dati dei moduli, automatizzando le attività manuali, garantendo un controllo degli accessi basato sui ruoli e rispettando i requisiti normativi.
 
 
 ## Ottimizzare le prestazioni dei moduli
