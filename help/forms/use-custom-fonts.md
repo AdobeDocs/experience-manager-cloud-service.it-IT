@@ -1,36 +1,36 @@
 ---
-title: Usa font personalizzati
-description: Usa font personalizzati
+title: Usa caratteri personalizzati
+description: Usa caratteri personalizzati
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
 
 ---
 
-# Usa font personalizzati
+# Usa caratteri personalizzati
 
-**La documentazione sulle comunicazioni di Cloud Service è disponibile in versione beta**
+**La documentazione sulle comunicazioni di Cloud Service è in versione beta**
 
-È possibile utilizzare Forms as a Cloud Service Communications per combinare un modello XDP, un documento PDF basato su XDP o un modulo Acrobat (AcroForm) con dati XML per generare documenti PDF. È inoltre possibile utilizzare Comunicazioni per combinare, ridisporre e integrare documenti PDF e XDP e ottenere informazioni sui documenti PDF.
+È possibile utilizzare Forms as a Cloud Service Communications per combinare un modello XDP, un documento PDF basato su XDP o Acrobat Form (AcroForm) con dati XML per generare documenti PDF. È inoltre possibile utilizzare le comunicazioni per combinare, ridisporre e migliorare i documenti PDF e XDP e ottenere informazioni sui documenti PDF.
 
-Oltre alle operazioni precedentemente menzionate, è possibile utilizzare i font inclusi nei font di Cloud Service o personalizzati (font approvati dall’organizzazione) per eseguire il rendering dei documenti PDF generati. Puoi utilizzare il progetto di sviluppo del Cloud Service per aggiungere font personalizzati all’ambiente del Cloud Service.
+Oltre alle operazioni precedentemente menzionate, potete utilizzare i font inclusi nei font di Cloud Service o personalizzati (font approvati dall&#39;organizzazione) per eseguire il rendering dei documenti PDF generati. Potete utilizzare il progetto di sviluppo del Cloud Service per aggiungere font personalizzati all&#39;ambiente del Cloud Service.
 
 ## Comportamento dei documenti PDF
 
-È possibile [incorporare un font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) a un documento PDF. Quando un font è incorporato, il documento PDF appare identico in tutte le piattaforme. Utilizza i font incorporati per garantire un aspetto coerente. Quando un font non è incorporato, il rendering del font dipende dalle impostazioni di rendering dei client visualizzatore di PDF come Acrobat o Acrobat Reader. Se il font è disponibile nel computer client, PDF utilizza il font specificato, altrimenti viene eseguito il rendering di PDF con un font di fallback predefinito.
+È possibile [incorporare un font](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) a un documento PDF. Quando un font è incorporato, il documento PDF appare (sembra) identico su tutte le piattaforme. Utilizza font incorporati per garantire un aspetto coerente. Quando un font non è incorporato, il rendering del font dipende dalle impostazioni di rendering dei client visualizzatore di PDF come Acrobat o Acrobat Reader. Se il font è disponibile nel computer client, il PDF utilizza il font specificato, altrimenti il PDF viene riprodotto con un font di fallback predefinito.
 
-## Aggiungi font personalizzati al tuo ambiente Forms as a Cloud Service {#custom-fonts-cloud-service}
+## Aggiungere font personalizzati all’ambiente as a Cloud Service di Forms {#custom-fonts-cloud-service}
 
-Per aggiungere font personalizzati all’ambiente del Cloud Service:
+Per aggiungere caratteri personalizzati all&#39;ambiente di Cloud Service:
 
-1. Imposta e apri la [progetto di sviluppo locale](setup-local-development-environment.md). È possibile utilizzare qualsiasi IDE desiderato.
-1. Nella struttura di cartelle di livello superiore del progetto, crea una cartella (modulo) per salvare i font personalizzati e aggiungere font personalizzati alla cartella. Ad esempio, fonts/src/main/resources
-   ![Cartella Font](assets/fonts.png)
+1. Configura e apri [progetto di sviluppo locale](setup-local-development-environment.md). Puoi utilizzare qualsiasi IDE a tua scelta.
+1. Nella struttura di cartelle di livello superiore del progetto, crea una cartella (modulo) per salvare i font personalizzati e aggiungerli alla cartella. Ad esempio, font/src/main/resources
+   ![Cartella Fonts](assets/fonts.png)
 
-1. Apri il file pom.xml del modulo dei font del progetto di sviluppo.
-1. Aggiungi il plugin jar al file pom:
+1. Apri il file pom.xml del modulo font del progetto di sviluppo.
+1. Aggiungi il plug-in jar al file pom:
 
    ```xml
    <plugin>
@@ -48,8 +48,7 @@ Per aggiungere font personalizzati all’ambiente del Cloud Service:
    </plugin>
    ```
 
-
-1. Aggiungi il `<Font-Archive-Version>` voce manifest del file .pom e imposta il valore della versione a 1:
+1. Aggiungi il `<Font-Archive-Version>` voce manifesto file .pom e imposta il valore della versione su 1:
 
    ```xml
    <plugin>
@@ -71,7 +70,7 @@ Per aggiungere font personalizzati all’ambiente del Cloud Service:
    </plugin>
    ```
 
-1. Aggiungi la cartella dei font a `<modules>` elencati nel file pom. Esempio:
+1. Aggiungi la cartella font a `<modules>` elencate nel file pom. Esempio:
 
    ```xml
    <modules>
@@ -91,24 +90,24 @@ Per aggiungere font personalizzati all’ambiente del Cloud Service:
    </modules>
    ```
 
-   La cartella dei font contiene tutti i font personalizzati.
+   La cartella font contiene tutti i font personalizzati.
 
-1. Archivia il codice aggiornato e [eseguire la pipeline](/help/implementing/cloud-manager/deploy-code.md) per distribuire i font nell’ambiente di Cloud Service.
+1. Archivia il codice aggiornato e [eseguire la pipeline](/help/implementing/cloud-manager/deploy-code.md) per distribuire i font nell&#39;ambiente di Cloud Service.
 
-1. (Facoltativo) Apri il prompt dei comandi, accedi alla cartella del progetto locale ed esegui il comando sottostante. Il comando contiene i font in un file .jar insieme alle informazioni pertinenti. Puoi usare il file .jar per aggiungere font personalizzati a un ambiente di sviluppo locale di un Cloud Service Forms.
+1. (Facoltativo) Apri il prompt dei comandi, accedi alla cartella del progetto locale ed esegui il comando seguente. Il comando consente di inserire i font in un file .jar insieme alle relative informazioni. È possibile utilizzare il file .jar per aggiungere caratteri personalizzati a un ambiente di sviluppo locale di Cloud Service Forms.
 
    ```shell
    mvn clean install
    ```
 
-## Aggiungi font personalizzati al tuo ambiente di sviluppo del Cloud Service Forms locale {#custom-fonts-cloud-service-sdk}
+## Aggiunta di font personalizzati all&#39;ambiente di sviluppo di Cloud Service Forms locale {#custom-fonts-cloud-service-sdk}
 
-1. Avvia l&#39;ambiente di sviluppo locale.
-1. Passa a `<aem install directory>/crx-quickstart/install` cartella.
-1. Posiziona il `<jar file contaning custom fonts and relevant deployment code>.jar` nella cartella di installazione. Se non disponi del file .jar, esegui i passaggi elencati in [Aggiungi font personalizzati al tuo ambiente Forms as a Cloud Service](#custom-fonts-cloud-service) per generare il file.
+1. Avvia l’ambiente di sviluppo locale.
+1. Accedi a `<aem install directory>/crx-quickstart/install` cartella.
+1. Posiziona `<jar file contaning custom fonts and relevant deployment code>.jar` nella cartella di installazione. Se non disponi del file .jar, esegui i passaggi elencati in [Aggiungere font personalizzati all’ambiente as a Cloud Service di Forms](#custom-fonts-cloud-service) per generare il file.
 1. Esegui il [ambiente SDK basato su docker](setup-local-development-environment.md#docker-microservices)
 
 
    >[!NOTE]
    >
-   >Ogni volta che distribuisci un file .jar di font personalizzati aggiornati nell’ambiente di sviluppo locale, riavvia l’ambiente SDK basato su docker.
+   >Ogni volta che distribuisci un file .jar dei font personalizzati aggiornato nell’ambiente di sviluppo locale, riavvia l’ambiente SDK basato su docker.
