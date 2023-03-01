@@ -2,10 +2,10 @@
 title: Test dell’audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
+source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 97%
 
 ---
 
@@ -33,6 +33,10 @@ I risultati dell’audit sono informativi e consentono agli utenti con ruolo Res
 
 L’audit dell’esperienza è basato su Google Lighthouse, uno strumento open source di Google abilitato in tutte le pipeline di produzione di Cloud Manager.
 
+>[!TIP]
+>
+>Puoi configurare le pagine incluse nell’audit dell’esperienza quando [configurare la pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+
 ## Lettura dei risultati dell’audit dell’esperienza {#understanding-experience-audit-results}
 
 L’audit dell’esperienza fornisce risultati di test aggregati e dettagliati a livello di pagina tramite la [pagina di esecuzione della pipeline di produzione.](/help/implementing/cloud-manager/deploy-code.md)
@@ -59,7 +63,6 @@ La metrica relativa al cambiamento può presentare uno dei seguenti valori.
 * **N/D**: non è disponibile alcun punteggio precedente con cui confrontare il dato.
 
 ![Risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/assets/exp-audit-1.png)
-
 
 ### Punteggi a livello di pagina {#page-level-scores}
 
