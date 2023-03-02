@@ -2,10 +2,10 @@
 title: Scelte rapide da tastiera per le console
 description: Risparmia tempo durante l’authoring utilizzando le scelte rapide da tastiera
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 100%
+source-wordcount: '376'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Le seguenti scelte rapide sono disponibili per le console Sites, Assets, Utenti,
 |  | `Left Arrow` | Consente di spostarsi verso l’alto nella struttura ad albero o di comprimere un nodo |
 |  | `Down Arrow` | Consente di spostarsi verso il basso in un elenco di pagine sullo stesso livello |
 |  | `Up Arrow` | Consente di spostarsi verso l’alto in un elenco di pagine sullo stesso livello |
-| Console: vista a colonne | `Shift-Up/Down Arrow` | Consente di spostarsi verso l’alto in un elenco di pagine sullo stesso livello |
+| Console: vista a colonne | `Shift-Up/Down Arrow` | Sposta su/giù e seleziona un elenco di pagine allo stesso livello |
 |  | `Esc` | Consente di spostarsi verso l’alto in un elenco di pagine sullo stesso livello |
 | Console | `?` | Aiuto per scelte rapide da tastiera |
 |  | `/` | Avvia la [ricerca](/help/sites-cloud/authoring/getting-started/search.md) |
