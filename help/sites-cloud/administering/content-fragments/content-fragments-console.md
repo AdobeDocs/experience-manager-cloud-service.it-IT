@@ -5,10 +5,10 @@ landing-page-description: Scopri come gestire i frammenti di contenuto dalla con
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: ht
-source-wordcount: '901'
-ht-degree: 100%
+source-git-commit: db81eac064d4616cb6b1beae85abc0c55a993fce
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Nella console puoi osservare tre aree principali:
             * Mostrare informazioni sui riferimenti
             * Mostrare informazioni sulle versioni linguistiche del frammento
          * È possibile [selezionare uno o più frammenti di contenuto per visualizzare le azioni disponibili](#actions-selected-content-fragment).
-      * Puoi selezionare un’intestazione di colonna per ordinare la tabella in base a tale colonna; selezionala ancora per passare da ordine crescente a decrescente
+      * Puoi selezionare un’intestazione di colonna per ordinare la tabella in base a tale colonna; selezionala ancora per passare da ordine crescente a decrescente. Attualmente, l’ordinamento è supportato sulla **Titolo**, **Modificato**, e **Modificato da** colonne.
    * **[Creare](#creating-new-content-fragment)** un nuovo frammento di contenuto
    * [Filtrare](#filtering-fragments) i frammenti di contenuto in base a una selezione di predicati e salvare il filtro per utilizzi futuri
    * [Ricercare](#searching-fragments) i frammenti di contenuto
