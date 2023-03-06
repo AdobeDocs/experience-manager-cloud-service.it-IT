@@ -2,10 +2,10 @@
 title: Funzioni obsolete e rimosse
 description: Note sulla versione specifiche per le funzioni obsolete e rimosse in  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: c4809bcbeae5339427b1da588021606d18b482a5
+source-git-commit: d848c1a9369a91cbfd0105e4acf2fb390ca20b1a
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 98%
 
 ---
 
@@ -60,6 +60,8 @@ In questa sezione sono elencate le funzionalità che sono state rimosse da [!DNL
 | [!DNL Foundation] | Supporto per le origini dati Apache Sling (OSGi bundle org.apache.sling.datasource) | N/D | Rimosso |
 | [!DNL Foundation] | Supporto per i modelli di script JST (OSGi bundle org.apache.sling.scripting.jst) | N/D | Rimosso |
 | [!DNL Foundation] | Supporto per Apache Felix Http Whiteboard | OSGi Http Whiteboard | Marzo 2022 |
+| [!DNL Foundation] | Supporto per com.adobe.granite.oauth.server | Integrazione Adobe IMS | Marzo 2023 |
+
 
 ## API Java {#java-api}
 
