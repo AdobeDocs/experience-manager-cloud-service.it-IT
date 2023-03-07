@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4416c43b408f576a547590796141a6b551e25681
+source-git-commit: 5815dacd2806cc7886aa0c7c5c9fd329306b3e1b
 workflow-type: tm+mt
-source-wordcount: '3952'
+source-wordcount: '3955'
 ht-degree: 95%
 
 ---
@@ -114,6 +114,7 @@ ht-degree: 95%
    + Note sulla versione per gli strumenti di migrazione {#migration-tools}
       + [Note sulla versione corrente](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2022 {#2022}
+         + [Note sulla versione 2022.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
          + [Note sulla versione 2022.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
          + [Note sulla versione 2022.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
          + [Note sulla versione 2022.5.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
