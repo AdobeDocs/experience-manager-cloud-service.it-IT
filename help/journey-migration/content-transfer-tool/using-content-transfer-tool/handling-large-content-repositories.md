@@ -2,9 +2,9 @@
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione di archivi di contenuti di grandi dimensioni
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 5043caa54c3ba4553245a948758ee7da40c1e227
+source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1846'
 ht-degree: 2%
 
 ---
@@ -37,9 +37,6 @@ Prima di iniziare, segui la sezione seguente per comprendere le considerazioni i
 * Per installare è necessario disporre dell&#39;accesso [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) sull&#39;istanza (o VM) che esegue l&#39;istanza AEM di origine.
 
 * La raccolta oggetti inattivi dell’archivio dati è stata eseguita nei 7 giorni precedenti sull’origine. Per ulteriori informazioni, consulta [Raccolta oggetti inattivi dell’archivio dati](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
-
->[!NOTE]
->Attualmente, le rappresentazioni di testo non funzionano correttamente sui computer Windows e questo è un problema noto. Tuttavia, risolveremo questo problema nella prossima versione e forniremo una soluzione.
 
 ### Considerazioni aggiuntive se l’istanza AEM di origine è configurata per utilizzare un archivio dati di archiviazione Amazon S3 o Azure Blob {#additional-considerations-amazons3-azure}
 
