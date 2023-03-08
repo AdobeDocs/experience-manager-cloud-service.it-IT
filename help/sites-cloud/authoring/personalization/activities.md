@@ -2,10 +2,10 @@
 title: Gestione delle attività
 description: La console Attività consente di creare, organizzare e gestire le attività di marketing dei tuoi marchi
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 100%
+source-wordcount: '2019'
+ht-degree: 99%
 
 ---
 
@@ -81,6 +81,10 @@ Aggiungi un&#39;attività o modifica un&#39;attività esistente per concentrare 
 * **Durata:** il periodo di tempo in cui viene applicata l’attività.
 * **Priorità:** la priorità relativa dell’attività. Quando le attività forniscono contenuto per gli stessi segmenti di utenti, l’attività della priorità superiore ha la precedenza.
 * **Metrica per obiettivo:** se Adobe Target è selezionato come motore di destinazione, puoi aggiungere all’attività le metriche di successo. È necessaria una metrica di successo.
+
+>[!NOTE]
+>
+>Essere in grado di **Seleziona una configurazione di destinazione** devi essere in **Autori attività di Target** gruppo.
 
 >[!NOTE]
 >
