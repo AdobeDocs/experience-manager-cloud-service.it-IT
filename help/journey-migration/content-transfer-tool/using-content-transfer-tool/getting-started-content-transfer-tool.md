@@ -2,9 +2,9 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
+source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1328'
 ht-degree: 9%
 
 ---
@@ -21,35 +21,34 @@ ht-degree: 9%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it" text="Note sulla versione"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html" text="Portale di distribuzione software"
 
-Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) sull’istanza Adobe Experience Manager (AEM) sorgente. Assicurati di scaricare la versione più recente. Per ulteriori dettagli sull’ultima versione, consulta [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. È possibile installare il pacchetto tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) nell’istanza Adobe Experience Manager (AEM) di origine. Assicurati di scaricare la versione più recente. Per ulteriori dettagli sull’ultima versione, consulta [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
 Sarà supportata solo la versione 2.0.0 o successiva ed è consigliabile utilizzare la versione più recente.
 
 >[!NOTE]
 >Scarica lo strumento Content Transfer (Trasferimento contenuti) dal portale di [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
 
-## Connettività ambiente sorgente {#source-environment-connectivity}
+## Connettività dell’ambiente di origine {#source-environment-connectivity}
 
 >[!NOTE]
 >
->Un errore di connessione può verificarsi anche se un set di migrazione è stato eliminato da Cloud Acceleration Manager.
+>Se un set di migrazione è stato eliminato da Cloud Acceleration Manager, può verificarsi anche un errore di connessione.
 
-L’istanza di origine AEM può essere in esecuzione dietro un firewall in cui può raggiungere solo alcuni host aggiunti a un Elenco consentiti. Per eseguire correttamente un’estrazione, i seguenti endpoint devono essere accessibili dall’istanza in esecuzione AEM:
+L’istanza AEM di origine potrebbe essere in esecuzione dietro un firewall e raggiungere solo alcuni host aggiunti a un Elenco consentiti. Per eseguire correttamente un’estrazione, i seguenti endpoint devono essere accessibili dall’istanza che esegue AEM:
 
-* Servizio di archiviazione BLOB di Azure: `casstorageprod.blob.core.windows.net`
-* Endpoint I/O di mappatura utente: `usermanagement.adobe.io`
+* Il servizio di archiviazione BLOB di Azure: `casstorageprod.blob.core.windows.net`
 
 >[!NOTE]
->Se l’estrazione non riesce a causa del seguente errore: &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: Creazione percorso PKIX non riuscita: sun.security.provider.certpath.SunCertPathBuilderException: impossibile trovare un percorso di certificazione valido per la destinazione richiesta&quot;, è possibile risolvere il problema importando il certificato CA pertinente.
+>Se l&#39;estrazione non riesce a causa del seguente errore: &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: generazione del percorso PKIX non riuscita: sun.security.provider.certpath.SunCertPathBuilderException: impossibile trovare un percorso di certificazione valido per la destinazione richiesta&quot;, è possibile risolvere il problema importando il certificato CA pertinente.
 
 ### Abilita registrazione SSL {#enable-ssl-logging}
 
-A volte può essere difficile comprendere i problemi di connessione SSL/TLS. Per risolvere i problemi di connessione durante un processo di estrazione, puoi abilitare la registrazione SSL tramite la console di sistema dell’ambiente AEM sorgente seguendo questi passaggi:
+Talvolta può essere difficile comprendere i problemi di connessione SSL/TLS. Per risolvere i problemi di connessione durante un processo di estrazione, puoi abilitare la registrazione SSL tramite la console di sistema dell’ambiente AEM sorgente seguendo la procedura riportata di seguito:
 
-1. Passa alla console Web di Adobe Experience Manager nell’istanza sorgente, scegliendo **Strumenti - Operazioni - Console web** o direttamente all’URL in *https://serveraddress:serverport/system/console/configMgr*
-1. Cerca **Configurazione del servizio di estrazione dello strumento Content Transfer (Trasferimento contenuti)**
-1. Utilizza il pulsante icona a forma di matita per modificarne i valori di configurazione
-1. Abilita la **Abilita la registrazione ssl per l’estrazione** premere **Salva**:
+1. Passa alla console web di Adobe Experience Manager nell’istanza sorgente, da **Strumenti - Operazioni - Console web** o direttamente all’URL in *https://serveraddress:serverport/system/console/configMgr*
+1. Cerca **Configurazione del servizio di estrazione dello strumento Content Transfer**
+1. Utilizza il pulsante di icona della matita per modificarne i valori di configurazione
+1. Abilita **Abilita registrazione SSL per l&#39;estrazione** , quindi premere **Salva**:
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
@@ -58,44 +57,44 @@ A volte può essere difficile comprendere i problemi di connessione SSL/TLS. Per
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
->title="Esecuzione dello strumento Content Transfer (Trasferimento contenuti)"
->abstract="Scopri come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare il contenuto in AEM as a Cloud Service (authoring/pubblicazione)."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Vedere Demo"
+>title="Esecuzione strumento Content Transfer (Trasferimento contenuti)"
+>abstract="Scopri come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti a AEM as a Cloud Service (Author/Publish)."
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Vedi Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial: utilizzo dello strumento Content Transfer (Trasferimento contenuti)"
 
-La sezione seguente si applica alla nuova versione dello strumento Content Transfer (Trasferimento contenuti). Leggi questa sezione per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare il contenuto in AEM as a Cloud Service:
+La sezione seguente si applica alla nuova versione dello strumento Content Transfer (Trasferimento contenuti). Leggi questa sezione per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti a AEM as a Cloud Service:
 
-### Fase di configurazione dell&#39;estrazione {#extraction-setup-phase}
+### Fase impostazione estrazione {#extraction-setup-phase}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction_setup"
->title="Fase di configurazione dell&#39;estrazione"
+>title="Fase impostazione estrazione"
 >abstract="Scopri come creare un set di migrazione e copiare la chiave di estrazione."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial: utilizzo dello strumento Content Transfer (Trasferimento contenuti)"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
-1. Accedi a Cloud Acceleration Manager (CAM) e fai clic sul progetto CAM creato in precedenza per valutare la tua disponibilità a passare a AEM as a Cloud Service. Se non hai creato un progetto CAM, consulta Creazione e gestione di un progetto in CAM.
+1. Accedi a Cloud Acceleration Manager (CAM) e fai clic sul progetto CAM creato in precedenza per valutare se sei pronto a passare a AEM as a Cloud Service. Se non avete creato un progetto CAM, consultate Creazione e gestione di un progetto in CAM.
 
-1. Fai clic sul pulsante **Trasferimento dei contenuti** il Card. Viene visualizzata la vista Elenco set di migrazione.
+1. Fai clic sul pulsante **Trasferimento dei contenuti** Card. Verrà visualizzata la vista Elenco set di migrazione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
-1. Crea un set di migrazione facendo clic su **Crea set di migrazione**.
+1. Creare un set di migrazione facendo clic su **Crea set di migrazione**.
 
    >[!NOTE]
    >
-   >In Cloud Acceleration Manager è possibile creare un massimo di cinque set di migrazione per progetto.
+   >In Cloud Acceleration Manager è possibile creare fino a cinque set di migrazione per progetto.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
-1. Ora puoi visualizzare l’elenco delle migrazioni nella vista a elenco. Fai clic sul simbolo dei tre punti (**...**) per aprire il menu a discesa e fare clic su **Copia chiave di estrazione**. Questa chiave sarà necessaria durante la fase di estrazione. Copia questa chiave di estrazione.
+1. Ora l’elenco delle migrazioni dovrebbe essere visualizzato nella vista a elenco. Fai clic sul simbolo dei tre punti (**...**) per aprire il menu a discesa e fare clic su **Copia chiave di estrazione**. Questa chiave sarà necessaria durante la fase di estrazione. Copia questa chiave di estrazione.
 
    >[!NOTE]
    >
-   >La chiave di estrazione consente all’ambiente AEM sorgente di connettersi in modo sicuro al set di migrazione. Tratta questa chiave con la stessa attenzione che vorresti avere una password e non condividerla mai su un supporto non protetto come e-mail.
+   >La chiave di estrazione consente all’ambiente AEM di origine di connettersi in modo sicuro al set di migrazione. Tratta questa chiave con la stessa attenzione con cui useresti una password e non condividerla mai su un supporto non sicuro come l’e-mail.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
@@ -103,47 +102,47 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
->title="Popolare set di migrazione"
->abstract="Dopo aver creato un set di migrazione, deve essere compilato con il contenuto dell’istanza sorgente che deve essere spostato nell’ambiente as a Cloud Service AEM. A questo scopo, è necessario installare lo strumento Content Transfer (Trasferimento contenuti) nell’istanza sorgente."
+>title="Popolare il set di migrazione"
+>abstract="Dopo aver creato un set di migrazione, questo deve essere compilato con i contenuti dell’istanza di origine che devono essere spostati nell’ambiente as a Cloud Service dell’AEM. A questo scopo, è necessario installare lo strumento Content Transfer (Trasferimento contenuti) nell’istanza sorgente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Estrazione del contenuto"
 
-Per popolare il set di migrazione creato in Cloud Acceleration Manager, devi installare la versione più recente dello strumento Content Transfer (Trasferimento contenuti) sull’istanza Adobe Experience Manager (AEM) sorgente. Leggi questa sezione per scoprire come compilare il set di migrazione.
+Per popolare il set di migrazione creato in Cloud Acceleration Manager, devi installare la versione più recente dello strumento Content Transfer nell’istanza Adobe Experience Manager (AEM) di origine. Segui questa sezione per scoprire come popolare il set di migrazione.
 
-1. Dopo aver installato la versione più recente dello strumento Content Transfer (Trasferimento contenuti) sull’istanza Adobe Experience Manager sorgente, vai a **Operazioni - Migrazione dei contenuti**
+1. Dopo aver installato la versione più recente dello strumento Content Transfer (Trasferimento contenuti) nell’istanza Adobe Experience Manager di origine, vai a **Operazioni - Migrazione dei contenuti**
 
 1. Fai clic su **Crea set di migrazione**
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Incolla la chiave di estrazione copiata da CAM in precedenza nel campo di input della chiave di estrazione di **Crea set di migrazione** modulo. In questo modo, i campi Nome set di migrazione e Nome progetto Cloud Acceleration Manager (CAM) verranno compilati automaticamente. Devono corrispondere al nome del set di migrazione in CAM e al nome del progetto CAM creato. È ora possibile aggiungere percorsi di contenuto. Dopo aver aggiunto i percorsi dei contenuti, potrai salvare il set di migrazione. Puoi eseguire l’estrazione con versioni incluse o escluse.
+1. Incolla la chiave di estrazione copiata in precedenza da CAM nel campo di immissione chiave di estrazione di **Crea set di migrazione** modulo. Dopo aver eseguito questa operazione, i campi Nome set di migrazione e Nome progetto Cloud Acceleration Manager (CAM) verranno compilati automaticamente. Questi devono corrispondere al nome del Set di migrazione in CAM e al nome del progetto CAM creato. Ora puoi aggiungere percorsi di contenuto. Dopo aver aggiunto i percorsi dei contenuti, potrai salvare il set di migrazione. Puoi eseguire l’estrazione con le versioni incluse o escluse.
 
    >[!NOTE]
    >
-   >Assicurati che la chiave di estrazione sia valida e non sia vicina alla sua scadenza. Puoi ottenere queste informazioni nel **Crea set di migrazione** dopo aver incollato la chiave di estrazione. Se ricevi un errore di connessione, fai riferimento a [Connettività ambiente sorgente](#source-environment-connectivity) per ulteriori informazioni.
+   >Assicurati che la chiave di estrazione sia valida e non vicina alla scadenza. È possibile ottenere queste informazioni in **Crea set di migrazione** dopo aver incollato la chiave di estrazione. Se ricevi un errore di connessione, consulta [Connettività dell’ambiente di origine](#source-environment-connectivity) per ulteriori informazioni.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
 1. Quindi, seleziona i seguenti parametri per creare un set di migrazione:
 
-   1. **Include Version** (Includi versione): seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` è incluso automaticamente per la migrazione degli eventi di controllo.
+   1. **Include Version** (Includi versione): seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` è incluso automaticamente per migrare gli eventi di controllo.
 
       ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
 
       >[!NOTE]
-      >Se intendi includere versioni come parte di un set di migrazione e stai eseguendo integrazioni con `wipe=false`, quindi devi disattivare l’eliminazione della versione a causa di un limite corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione della versione e stai eseguendo i top-up in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
+      >Se desideri includere le versioni come parte di un set di migrazione ed esegui integrazioni con `wipe=false`, devi quindi disabilitare l’eliminazione della versione a causa di una limitazione corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione delle versioni e stai eseguendo integrazioni in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
 
-   1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore del percorso accetta l’input digitando o selezionando.
+   1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore di percorsi accetta l’input digitando o selezionando.
 
       >[!IMPORTANT]
       >Durante la creazione di un set di migrazione, i percorsi seguenti sono soggetti a restrizioni:
       >* `/apps`
       >* `/libs`
       >* `/home`
-      >* `/etc` (alcuni) `/etc` i percorsi possono essere selezionati in CTT)
+      >* `/etc` (alcuni `/etc` I percorsi possono essere selezionati in CTT)
 
 
-1. Fai clic su **Salva** dopo aver compilato tutti i campi nel **Crea set di migrazione** schermata dei dettagli.
+1. Fai clic su **Salva** dopo aver compilato tutti i campi nel **Crea set di migrazione** nella schermata dei dettagli.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
@@ -162,29 +161,29 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, devi ins
 ### Determinazione delle dimensioni del set di migrazione {#migration-set-size}
 
 Dopo aver creato un set di migrazione, si consiglia vivamente di eseguire un controllo delle dimensioni del set di migrazione prima di avviare un processo di estrazione.
-Eseguendo un controllo delle dimensioni del set di migrazione, potrai:
-* Determinare se c&#39;è spazio su disco sufficiente nel `crx-quickstart` sottodirectory per completare l’estrazione.
-* Determina se le dimensioni del set di migrazione rientrano nei limiti dei prodotti supportati ed evita l’inserimento non riuscito di contenuti.
+Eseguendo un controllo delle dimensioni sul set di migrazione, sarà possibile:
+* Determinare se lo spazio su disco è sufficiente nel `crx-quickstart` sottodirectory per completare correttamente l’estrazione.
+* Determina se le dimensioni del set di migrazione rientrano nei limiti dei prodotti supportati ed evita l’acquisizione di contenuti non riuscita.
 
-Per eseguire un controllo delle dimensioni, effettua le seguenti operazioni:
+Per eseguire un controllo delle dimensioni, attenersi alla procedura descritta di seguito.
 
-1. Seleziona un set di migrazione e fai clic su **Dimensioni controllo**.
+1. Seleziona un set di migrazione e fai clic su **Verifica dimensione**.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Verrà aperto il **Dimensioni controllo** finestra di dialogo.
+1. Verrà aperto il **Verifica dimensione** .
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Fai clic su **Dimensioni controllo** per avviare il processo. Tornerai quindi alla vista elenco set di migrazione e visualizzerai un messaggio che indica che **Dimensioni controllo** è in esecuzione.
+1. Fai clic su **Verifica dimensione** per avviare il processo. Si tornerà quindi alla vista elenco set di migrazione e dovrebbe essere visualizzato un messaggio che indica che **Verifica dimensione** è in esecuzione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Una volta **Dimensioni controllo** processo completato, lo stato verrà modificato in **COMPLETATO**. Seleziona lo stesso set di migrazione e fai clic su **Dimensioni controllo** per visualizzare i risultati. Di seguito è riportato un esempio di **Dimensioni controllo** risultati senza avvisi.
+1. Una volta **Verifica dimensione** processo è completato, lo stato cambierà in **COMPLETATO**. Seleziona lo stesso set di migrazione e fai clic su **Verifica dimensione** per visualizzare i risultati. Ecco un esempio di **Verifica dimensione** risultati senza avvisi.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Se la **Dimensioni controllo** i risultati indicano che lo spazio su disco è insufficiente e/o che il set di migrazione supera i limiti del prodotto, **AVVISO** verrà visualizzato lo stato .
+1. Se il **Verifica dimensione** i risultati indicano che lo spazio su disco è insufficiente e/o che il set di migrazione supera i limiti del prodotto, **AVVISO** verrà visualizzato lo stato.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
@@ -195,4 +194,4 @@ Per eseguire un controllo delle dimensioni, effettua le seguenti operazioni:
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver imparato a creare un set di migrazione, ora puoi imparare a usare i processi di estrazione e acquisizione nello strumento Content Transfer (Trasferimento contenuti). Prima di apprendere questi processi, è necessario rivedere [Gestione di archivi di contenuti di grandi dimensioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM as a Cloud Service.
+Dopo aver appreso come creare un set di migrazione, puoi iniziare a conoscere i processi di estrazione e acquisizione dallo strumento Content Transfer (Trasferimento contenuti). Prima di imparare questi processi, è necessario rivedere [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti, al fine di spostare i contenuti in AEM as a Cloud Service.
