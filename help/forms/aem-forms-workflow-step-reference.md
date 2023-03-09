@@ -1,66 +1,66 @@
 ---
-title: Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail, utilizzare Adobe Sign in un flusso di lavoro?
-description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti via e-mail, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
+title: Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail e utilizzare Adobe Sign in un flusso di lavoro?
+description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti tramite e-sign, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '7210'
+source-wordcount: '7190'
 ht-degree: 0%
 
 ---
 
-# Flussi di lavoro AEM incentrati su Forms - Riferimento dettagliato {#forms-centric-workflow-on-osgi-step-reference}
+# Flussi di lavoro AEM incentrati su Forms - Riferimento per la fase {#forms-centric-workflow-on-osgi-step-reference}
 
-I modelli di flusso di lavoro consentono di convertire una logica di business in un processo ripetitivo automatizzato. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o se utilizza più risorse. È possibile [includere vari passaggi del flusso di lavoro AEM in un modello per raggiungere la logica di business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
+I modelli di workflow consentono di convertire una regola business in un processo ripetitivo automatizzato. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. È possibile [includere vari passaggi del flusso di lavoro AEM in un modello per raggiungere la logica di business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
 ## Passaggi incentrati su Forms {#forms-workflow-steps}
 
-I passaggi del flusso di lavoro incentrati su Forms eseguono operazioni specifiche di AEM Forms in un flusso di lavoro AEM. Questi passaggi ti consentono di creare rapidamente un flusso di lavoro basato su Forms adattivo basato su Forms su OSGi. Questi flussi di lavoro possono essere utilizzati per sviluppare flussi di lavoro di base per la revisione e l’approvazione, processi aziendali interni e attraverso il firewall. Puoi inoltre utilizzare i passaggi Forms Workflow per:
+I passaggi del flusso di lavoro incentrati su Forms eseguono operazioni specifiche per AEM Forms in un flusso di lavoro AEM. Questi passaggi ti consentono di creare rapidamente un flusso di lavoro basato su Forms e adattivo per Forms su OSGi. Questi flussi di lavoro possono essere utilizzati per sviluppare flussi di lavoro di revisione e approvazione di base, interni e attraverso il firewall. È inoltre possibile utilizzare i passaggi di Forms Workflow per:
 
-* Crea processi aziendali, flussi di lavoro post-invio e flussi di lavoro di back-end per gestire i processi di iscrizione.
+* Crea processi aziendali, flussi di lavoro successivi all’invio e flussi di lavoro back-end per gestire i processi di iscrizione.
 
-* Creare e assegnare attività a un utente o a un gruppo.
+* Crea e assegna attività a un utente o a un gruppo.
 
-* Utilizzo [!DNL Adobe Sign] in un flusso di lavoro AEM per inviare un documento per la firma.
+* Utilizzare [!DNL Adobe Sign] in un flusso di lavoro AEM per inviare un documento per la firma.
 
-* Generare un documento di registrazione on-demand o su invio del modulo.
+* Genera un documento di record su richiesta o all’invio di un modulo.
 
-* Collega un modello di flusso di lavoro con varie origini dati per salvare e recuperare facilmente i dati.
+* Collega un modello di flusso di lavoro con diverse origini dati per salvare e recuperare facilmente i dati.
 
 * Utilizza il passaggio e-mail per inviare e-mail di notifica e altri allegati al completamento di un’azione e all’inizio o al completamento di un flusso di lavoro.
 
 >[!NOTE]
 >
->Se il modello di flusso di lavoro è contrassegnato per uno storage esterno, per tutti i passaggi del flusso di lavoro Forms è possibile selezionare solo l&#39;opzione variabile per archiviare o recuperare file di dati e allegati.
+>Se il modello di flusso di lavoro è contrassegnato per un archivio esterno e quindi per tutti i passaggi del flusso di lavoro di Forms, è possibile selezionare solo l&#39;opzione della variabile per memorizzare o recuperare file di dati e allegati.
 
 
 ## Assegna passaggio attività {#assign-task-step}
 
-Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo assegna a un utente o a un gruppo. Oltre ad assegnare l’attività, il componente specifica anche il Modulo adattivo o il PDF non interattivo per l’attività. Il Modulo adattivo è necessario per accettare l’input degli utenti e PDF non interattivo o un Modulo adattivo di sola lettura viene utilizzato per i flussi di lavoro di revisione.
+Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un utente o a un gruppo. Oltre all’assegnazione dell’attività, il componente specifica anche il Modulo adattivo o il PDF non interattivo per l’attività. Il modulo adattivo è necessario per accettare l’input degli utenti e dei PDF non interattivi, oppure un modulo adattivo di sola lettura viene utilizzato per i flussi di lavoro di sola revisione.
 
-È inoltre possibile utilizzare il componente per controllare il comportamento dell’attività. Ad esempio, creazione di un documento di record automatico, assegnazione dell&#39;attività a un utente o a un gruppo specifico, specifica il percorso dei dati inviati, specifica il percorso dei dati da precompilare e specifica le azioni predefinite. Il passaggio Assegna attività ha le seguenti proprietà:
+È inoltre possibile utilizzare il componente per controllare il comportamento dell&#39;attività. Ad esempio, la creazione di un documento di record automatico, l’assegnazione dell’attività a un utente o gruppo specifico, la specifica del percorso dei dati inviati, il percorso dei dati da precompilare e le azioni predefinite. Il passaggio Assegna attività presenta le seguenti proprietà:
 
-* **[!UICONTROL Titolo]**: Titolo dell’attività. Il titolo viene visualizzato in AEM casella in entrata.
-* **[!UICONTROL Descrizione]**: Spiegazione delle operazioni eseguite nell&#39;attività. Queste informazioni sono utili per altri sviluppatori di processi quando lavori in un ambiente di sviluppo condiviso.
+* **[!UICONTROL Titolo]**: titolo dell’attività. Il titolo viene visualizzato nella casella in entrata AEM.
+* **[!UICONTROL Descrizione]**: Spiegazione delle operazioni eseguite nell’attività. Queste informazioni sono utili per altri sviluppatori di processi quando si lavora in un ambiente di sviluppo condiviso.
 
-* **[!UICONTROL Percorso miniatura]**: Percorso della miniatura dell&#39;attività. Se non viene specificato alcun percorso, per una miniatura predefinita del modulo adattivo viene visualizzata un’icona predefinita per il documento di record.
-* **[!UICONTROL Fase del flusso di lavoro]**: Un flusso di lavoro può avere più fasi. Queste fasi vengono visualizzate nella casella in entrata AEM. Puoi definire questi stadi nelle proprietà del modello (Barra laterale > Pagina > Proprietà pagina > Stadi).
-* **[!UICONTROL Priorità]**: La priorità selezionata viene visualizzata nella casella in entrata AEM. Le opzioni disponibili sono Alta, Media e Bassa. Il valore predefinito è Medio.
-* **[!UICONTROL Data di scadenza]**: Specificare il numero di giorni o ore dopo le quali l&#39;attività è contrassegnata come scaduta. Se si seleziona **[!UICONTROL Disattivato]**, quindi l&#39;attività non viene mai contrassegnata come scaduta. È inoltre possibile specificare un gestore di timeout per eseguire attività specifiche dopo la scadenza dell&#39;attività.
+* **[!UICONTROL Percorso miniatura]**: percorso della miniatura dell’attività. Se non viene specificato alcun percorso, viene visualizzata la miniatura predefinita di un modulo adattivo e per il documento di record viene visualizzata un’icona predefinita.
+* **[!UICONTROL Fase flusso di lavoro]**: un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello (barra laterale > Pagina > Proprietà pagina > Stadi).
+* **[!UICONTROL Priorità]**: la priorità selezionata viene visualizzata nella casella in entrata AEM. Le opzioni disponibili sono Alta, Media e Bassa. Il valore predefinito è Medio.
+* **[!UICONTROL Data di scadenza]**: specifica quanti giorni o ore devono trascorrere prima che l’attività venga contrassegnata come scaduta. Se si seleziona **[!UICONTROL Disattivato]**, quindi l’attività non viene mai contrassegnata come scaduta. È inoltre possibile specificare un gestore di timeout per eseguire attività specifiche dopo la scadenza dell&#39;attività.
 
-* **[!UICONTROL Giorni]**: Numero di giorni precedenti al completamento dell&#39;attività. Il numero di giorni conteggiati dopo l’assegnazione dell’attività a un utente. Se un&#39;attività non è completa e supera il numero di giorni specificato nel campo Giorni, se selezionato, viene attivato un gestore di timeout dopo la data di scadenza.
-* **[!UICONTROL Ore]**: Numero di ore prima del completamento dell&#39;attività. Il numero di ore viene conteggiato dopo che l’attività è stata assegnata a un utente. Se un&#39;attività non è completa e supera il numero di ore specificato nel campo Ore, se selezionato, viene attivato un gestore di timeout dopo le ore di scadenza.
-* **[!UICONTROL Timeout dopo la data di scadenza]**: Selezionare questa opzione per abilitare il campo di selezione Gestore timeout.
-* **[!UICONTROL Gestore di timeout]**: Selezionare lo script da eseguire quando la fase dell&#39;attività di assegnazione supera la data di scadenza. Script inseriti nell’archivio CRX in [app]/fd/dashboard/scripts/timeoutHandler sono disponibili per la selezione. Il percorso specificato non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo.
-* **[!UICONTROL Evidenziare l&#39;azione e il commento dall&#39;ultima attività in Dettagli attività]**: Selezionare questa opzione per visualizzare l’ultima azione eseguita e il commento ricevuto sulla sezione dei dettagli dell’attività di un’attività.
-* **[!UICONTROL Tipo]**: Scegliere il tipo di documento da compilare all&#39;avvio del flusso di lavoro. È possibile scegliere un modulo adattivo, un modulo adattivo di sola lettura, un documento PDF non interattivo.
+* **[!UICONTROL Giorni]**: numero di giorni prima dei quali l’attività deve essere completata. Il numero di giorni viene conteggiato dopo l&#39;assegnazione dell&#39;attività a un utente. Se un’attività non è completa e supera il numero di giorni specificato nel campo Giorni, se selezionata, viene attivato un gestore di timeout dopo la data di scadenza.
+* **[!UICONTROL Ore]**: numero di ore prima del quale l’attività deve essere completata. Il numero di ore che vengono conteggiate dopo l&#39;assegnazione dell&#39;attività a un utente. Se un’attività non è completa e supera il numero di ore specificato nel campo Ore, se selezionato viene attivato un gestore di timeout dopo le ore dovute.
+* **[!UICONTROL Timeout dopo la data di scadenza]**: seleziona questa opzione per abilitare il campo di selezione Gestore di timeout.
+* **[!UICONTROL Gestore timeout]**: seleziona lo script da eseguire quando il passaggio dell’attività di assegnazione oltrepassa la data di scadenza. Script inseriti nell’archivio CRX in [app]È possibile selezionare /fd/dashboard/scripts/timeoutHandler. Il percorso specificato non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo.
+* **[!UICONTROL Evidenzia l&#39;azione e commenta dall&#39;ultima attività in Dettagli attività]**: seleziona questa opzione per visualizzare l’ultima azione eseguita e il commento ricevuto nella sezione dei dettagli di un’attività.
+* **[!UICONTROL Tipo]**: scegli il tipo di documento da compilare all’avvio del flusso di lavoro. Puoi scegliere un modulo adattivo, un modulo adattivo di sola lettura, un documento PDF non interattivo.
 
 <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
 
 
-* **[!UICONTROL Usa modulo adattivo]**: Specificare il metodo per individuare il modulo adattivo di input. Questa opzione è disponibile se si seleziona Modulo adattivo o Modulo adattivo di sola lettura dall’elenco a discesa Tipo . Puoi utilizzare il Modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto o disponibile in un percorso in una variabile. È possibile utilizzare una variabile di tipo String per specificare il percorso.\
-   Puoi associare più Forms adattivo a un flusso di lavoro. Di conseguenza, è possibile specificare un Modulo adattivo in fase di esecuzione utilizzando i metodi di input disponibili.
+* **[!UICONTROL Usa modulo adattivo]**: specifica il metodo per individuare il modulo adattivo di input. Questa opzione è disponibile se si seleziona Modulo adattivo o Modulo adattivo di sola lettura dall’elenco a discesa Tipo. Puoi utilizzare il modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto o disponibile in un percorso in una variabile. È possibile utilizzare una variabile di tipo String per specificare il percorso.\
+   È possibile associare più Forms adattivi a un flusso di lavoro. Di conseguenza, puoi specificare un modulo adattivo in fase di esecuzione utilizzando i metodi di input disponibili.
 
 <!-- 
 
@@ -72,13 +72,13 @@ Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo 
 
 -->
 
-* **[!UICONTROL Percorso modulo adattivo]**: Specifica il percorso del modulo adattivo. È possibile utilizzare il Modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto, oppure recuperare il Modulo adattivo da un percorso memorizzato in una variabile di tipo dati stringa.
-* **[!UICONTROL Seleziona PDF di input utilizzando]**: Specifica il percorso di un documento PDF non interattivo. Il campo è disponibile quando si sceglie un documento PDF non interattivo nel campo Tipo. È possibile selezionare il PDF di input utilizzando il percorso relativo al payload, salvato in un percorso assoluto o utilizzando una variabile del tipo di dati Documento. Ad esempio: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Il percorso non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo. Per utilizzare l’opzione Percorso di PDF è necessario abilitare l’opzione Documento di record o Forms adattivo basato su modelli di modulo.
-* **[!UICONTROL Per l’attività completata, eseguire il rendering del modulo adattivo come]**: Quando un’attività è contrassegnata come completa, è possibile eseguire il rendering del modulo adattivo come modulo adattivo di sola lettura o come documento PDF. Per eseguire il rendering del modulo adattivo come documento di record, è necessario abilitare l’opzione Documento di record o Forms adattivo basato su modelli di modulo.
-* **[!UICONTROL Prepopolato]**: I campi seguenti elencati fungono da input per l’attività:
+* **[!UICONTROL Percorso modulo adattivo]**: specifica il percorso del modulo adattivo. Puoi utilizzare il modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto, oppure recuperare il modulo adattivo da un percorso memorizzato in una variabile di tipo stringa di dati.
+* **[!UICONTROL Seleziona PDF di input tramite]**: specifica il percorso di un documento PDF non interattivo. Il campo è disponibile quando si sceglie un documento PDF non interattivo nel campo Tipo. È possibile selezionare il PDF di input utilizzando il percorso relativo al payload, salvato in un percorso assoluto oppure utilizzando una variabile di tipo dati Documento. Ad esempio: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Il percorso non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo. Per utilizzare l’opzione Percorso PDF, è necessario abilitare l’opzione Documento di record o Adaptive Forms basato su modello di modulo.
+* **[!UICONTROL Per l’attività completata, esegui il rendering del modulo adattivo come]**: quando un’attività è contrassegnata come completata, è possibile eseguire il rendering del modulo adattivo come modulo adattivo di sola lettura o documento PDF. Per eseguire il rendering del modulo adattivo come documento record, è necessario abilitare l’opzione Documento di record o un Forms adattivo basato su modello di modulo.
+* **[!UICONTROL Prepopolato]**: i seguenti campi elencati di seguito fungono da input per l’attività:
 
-   * **[!UICONTROL Seleziona il file di dati di input utilizzando]**: Percorso del file di dati di input (.json, .xml, .doc o modello di dati del modulo). È possibile recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile di tipo di dati Document, XML o JSON. Ad esempio, il file contiene i dati inviati per il modulo tramite un’applicazione Casella in entrata AEM. Un esempio di percorso è [Payload_Directory]/workflow/data.
-   * **[!UICONTROL Selezionare gli allegati di input utilizzando]**: Gli allegati disponibili nella posizione vengono allegati al modulo associato all&#39;attività. Il percorso può essere relativo al payload o recuperare l&#39;allegato memorizzato in una variabile di un documento. Un esempio di percorso è [Payload_Directory]/attachment/. È possibile specificare gli allegati posizionati in relazione al payload o utilizzare una variabile di tipo documento (Elenco array > Documento) per specificare un allegato di input per il modulo adattivo.
+   * **[!UICONTROL Seleziona file di dati di input tramite]**: percorso del file di dati di input (.json, .xml, .doc o modello dati modulo). Puoi recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile di tipo Documento, XML o JSON. Ad esempio, il file contiene i dati inviati per il modulo tramite un&#39;applicazione Casella in entrata AEM. Un esempio di percorso è [Payload_Directory]/workflow/data.
+   * **[!UICONTROL Seleziona allegati di input tramite]**: gli allegati disponibili nel percorso vengono allegati al modulo associato all’attività. Il percorso può essere relativo al payload o recuperare l’allegato memorizzato in una variabile di un documento. Un esempio di percorso è [Payload_Directory]/attachments/. È possibile specificare gli allegati posizionati rispetto al payload o utilizzare una variabile di tipo documento (Elenco array > Documento) per specificare un allegato di input per il modulo adattivo.
 
    <!-- 
     
@@ -90,7 +90,7 @@ Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo 
     
     -->
 
-   * **[!UICONTROL Mappatura attributi richiesta]**: Utilizza la sezione Mappatura attributi di richiesta per definire la [nome e valore dell’attributo della richiesta](work-with-form-data-model.md#bindargument). Recupera i dettagli dall’origine dati in base al nome e al valore dell’attributo specificati nella richiesta. È possibile definire un valore dell&#39;attributo della richiesta utilizzando un valore letterale o una variabile di tipo dati String.
+   * **[!UICONTROL Mappatura attributi richiesta]**: utilizza la sezione Mappatura attributi della richiesta per definire [nome e valore dell’attributo di richiesta](work-with-form-data-model.md#bindargument). Recupera i dettagli dall’origine dati in base al nome e al valore dell’attributo specificati nella richiesta. È possibile definire un valore di attributo della richiesta utilizzando un valore letterale o una variabile di tipo di dati String.
 
    <!--  
      
@@ -98,11 +98,11 @@ Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo 
      
      -->
 
-* **[!UICONTROL Informazioni inviate]**: I campi seguenti elencati fungono da percorsi di output per l’attività:
+* **[!UICONTROL Informazioni inviate]**: i seguenti campi elencati di seguito fungono da posizioni di output per l’attività:
 
-   * **[!UICONTROL Salva file di dati di output utilizzando]**: Salvare il file di dati (.json, .xml, .doc o modello dati modulo). Il file di dati contiene informazioni inviate tramite il modulo associato. È possibile salvare il file di dati di output utilizzando un percorso relativo al payload o archiviarlo in una variabile di tipo di dati Document, XML o JSON. Ad esempio: [Payload_Directory]/Workflow/data, dove i dati sono un file.
-   * **[!UICONTROL Salva allegati utilizzando]**: Salvare gli allegati del modulo forniti in un’attività. È possibile salvare gli allegati utilizzando un percorso relativo al payload o archiviarlo in una variabile dell&#39;elenco di matrice del tipo di dati Documento.
-   * **[!UICONTROL Salva documento di record utilizzando]**: Percorso per il salvataggio di un file del documento di record. Ad esempio: [Payload_Directory]/DocumentofRecord/credit-card.pdf. È possibile salvare il documento di record utilizzando un percorso relativo al payload o archiviarlo in una variabile del tipo di dati Documento. Se si seleziona **[!UICONTROL Relativo al payload]** Se il campo percorso viene lasciato vuoto, il documento di record non viene generato. Questa opzione è disponibile solo se si seleziona Modulo adattivo dall’elenco a discesa Tipo .
+   * **[!UICONTROL Salva file di dati di output tramite]**: salva il file di dati (.json, .xml, .doc o il modello dati del modulo). Il file di dati contiene informazioni inviate tramite il modulo associato. Puoi salvare il file di dati di output utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Documento, XML o JSON. Ad esempio: [Payload_Directory]/Workflow/data, dove i dati sono un file.
+   * **[!UICONTROL Salva allegati tramite]**: salva gli allegati del modulo forniti in un’attività. È possibile salvare gli allegati utilizzando un percorso relativo al payload o memorizzarlo in una variabile dell’elenco di matrici del tipo di dati Documento.
+   * **[!UICONTROL Salva documento di record tramite]**: percorso per salvare un file del documento record. Ad esempio: [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puoi salvare il documento record utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Dati documento. Se si seleziona **[!UICONTROL Relativo al payload]** , il documento di record non viene generato se il campo percorso viene lasciato vuoto. Questa opzione è disponibile solo se si seleziona Modulo adattivo dall’elenco a discesa Tipo.
 
    <!-- 
     
@@ -112,96 +112,96 @@ Il passaggio dell&#39;attività di assegnazione crea un elemento di lavoro e lo 
     
     -->
 
-* **[!UICONTROL Assegnatario]** > **[!UICONTROL Opzioni di assegnazione]**: Specificare il metodo per assegnare l&#39;attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selezione partecipanti o assegnarla a un utente o gruppo AEM specifico.
-* **[!UICONTROL Selettore partecipante]**: L’opzione è disponibile quando **[!UICONTROL In modo dinamico per un utente o un gruppo]** l’opzione è selezionata nel campo Assegna opzioni . È possibile utilizzare uno script ECMAScript o un servizio per selezionare in modo dinamico un utente o un gruppo. Per ulteriori informazioni, consulta [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato Adobe Experience Manager Dynamic Participant .](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL Assegnatario]** > **[!UICONTROL Assegna opzioni]**: specifica il metodo per assegnare l’attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selettore partecipanti oppure assegnare l&#39;attività a un utente o a un gruppo AEM specifico.
+* **[!UICONTROL Selettore partecipanti]**: l’opzione è disponibile quando **[!UICONTROL Dinamicamente per un utente o un gruppo]** nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, consulta [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato di Adobe Experience Manager Dynamic Participant.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
 
-* **[!UICONTROL Partecipanti]**: Il campo è disponibile quando la **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata nella **[!UICONTROL Selettore partecipante]** campo . Il campo consente di selezionare utenti o gruppi per l’opzione RandomParticipantChooser.
+* **[!UICONTROL Partecipanti]**: campo disponibile quando **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata in **[!UICONTROL Selettore partecipanti]** campo. Il campo consente di selezionare utenti o gruppi per l&#39;opzione RandomParticipantChooser.
 
-* **[!UICONTROL Assegnatario]**: Il campo è disponibile quando la **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** è selezionato in **[!UICONTROL Selettore partecipante]** campo . Il campo ti consente di selezionare una variabile del tipo di dati String per definire l’assegnatario.
+* **[!UICONTROL Assegnatario]**: campo disponibile quando **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** è selezionato in **[!UICONTROL Selettore partecipanti]** campo. Il campo consente di selezionare una variabile di tipo String per definire l’assegnatario.
 
-* **[!UICONTROL Argomenti]**: Il campo è disponibile quando nel campo Selettore partecipante è selezionato uno script diverso da quello RandomParticipantChoose . Il campo consente di fornire un elenco di un argomento separato da virgole per lo script selezionato nel campo Selettore partecipante.
+* **[!UICONTROL Argomenti]**: il campo è disponibile quando nel campo Selettore partecipante è selezionato uno script diverso da RandomParticipantChoose. Il campo consente di fornire un elenco di argomenti separati da virgole per lo script selezionato nel campo Selettore partecipanti.
 
-* **[!UICONTROL Utente o gruppo]**: L&#39;attività viene assegnata all&#39;utente o al gruppo selezionato. L’opzione è disponibile quando **[!UICONTROL Per un utente o un gruppo specifico]** è selezionato in **[!UICONTROL Opzioni di assegnazione]** campo . Il campo elenca tutti gli utenti e i gruppi del [!DNL workflow-users] gruppo.\
-   La **[!UICONTROL Utente o gruppo]** nel menu a discesa sono elencati gli utenti e i gruppi a cui l&#39;utente connesso ha accesso. La visualizzazione del nome utente dipende dal se si dispone delle autorizzazioni di accesso per **[!UICONTROL utenti]** nodo in crx-repository per quel particolare utente.
+* **[!UICONTROL Utente o gruppo]**: l’attività viene assegnata all’utente o al gruppo selezionato. L’opzione è disponibile quando **[!UICONTROL A un utente o gruppo specifico, opzione]** è selezionato in **[!UICONTROL Assegna opzioni]** campo. Il campo elenca tutti gli utenti e i gruppi del [!DNL workflow-users] gruppo.\
+   Il **[!UICONTROL Utente o gruppo]** Il menu a discesa elenca gli utenti e i gruppi a cui l&#39;utente connesso ha accesso. La visualizzazione del nome utente dipende dalla disponibilità delle autorizzazioni di accesso per **[!UICONTROL utenti]** in crx-repository per quel particolare utente.
 
-* **[!UICONTROL Invia e-mail di notifica]**: Seleziona questa opzione per inviare notifiche e-mail all’assegnatario. Queste notifiche vengono inviate quando un’attività viene assegnata a un utente o a un gruppo. È possibile utilizzare **[!UICONTROL Indirizzo e-mail destinatario]** per specificare il meccanismo per recuperare l’indirizzo e-mail.
+* **[!UICONTROL Invia e-mail di notifica]**: seleziona questa opzione per inviare notifiche e-mail all’assegnatario. Queste notifiche vengono inviate quando un’attività viene assegnata a un utente o a un gruppo. È possibile utilizzare **[!UICONTROL Indirizzo e-mail destinatario]** per specificare il meccanismo di recupero dell’indirizzo e-mail.
 
-* **[!UICONTROL Indirizzo e-mail destinatario]**: È possibile memorizzare l’indirizzo e-mail in una variabile, utilizzare un valore letterale per specificare un indirizzo e-mail permanente o utilizzare l’indirizzo e-mail predefinito dell’assegnatario specificato nel profilo dell’assegnatario. Puoi utilizzare il valore letterale o una variabile per specificare l’indirizzo e-mail di un gruppo. L’opzione della variabile è utile per recuperare e utilizzare in modo dinamico un indirizzo e-mail. La **[!UICONTROL Usa indirizzo e-mail predefinito dell’assegnatario]** l&#39;opzione è disponibile solo per un singolo assegnatario. In questo caso, viene utilizzato l’indirizzo e-mail memorizzato nel profilo utente assegnatari.
+* **[!UICONTROL Indirizzo e-mail destinatario]**: puoi memorizzare l’indirizzo e-mail in una variabile, utilizzare un valore letterale per specificare un indirizzo e-mail permanente o utilizzare l’indirizzo e-mail predefinito dell’assegnatario specificato nel profilo dell’assegnatario. Puoi utilizzare il letterale o una variabile per specificare l’indirizzo e-mail di un gruppo. L’opzione della variabile è utile per recuperare e utilizzare in modo dinamico un indirizzo e-mail. Il **[!UICONTROL Usa indirizzo e-mail predefinito dell’assegnatario]** l&#39;opzione è riservata a un solo assegnatario. In questo caso, viene utilizzato l’indirizzo e-mail memorizzato nel profilo utente degli assegnatari.
 
-* **[!UICONTROL Modello e-mail HTML]**: Seleziona il modello e-mail per l’e-mail di notifica. Per modificare un modello, modifica il file che si trova in /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-repository.
-* **[!UICONTROL Consenti delega a]**: AEM casella in entrata fornisce all’utente connesso un’opzione per delegare il flusso di lavoro assegnato a un altro utente. Puoi delegare all’interno dello stesso gruppo o all’utente del flusso di lavoro di un altro gruppo. Se l’attività viene assegnata a un singolo utente e la **[!UICONTROL consentire la delega ai membri del gruppo assegnatario]** l’opzione è selezionata, quindi non è possibile delegare l’attività a un altro utente o gruppo.
-* **[!UICONTROL Impostazioni condivisione]**: AEM casella in entrata fornisce opzioni per condividere con un altro utente una singola o tutte le attività presenti nella casella in entrata:
-   * Quando il **[!UICONTROL Consentire agli assegnatari di condividere esplicitamente nella casella in entrata]** l’opzione è selezionata, l’utente può selezionare l’attività in AEM casella in entrata e condividerla con un altro utente AEM.
-   * Quando il **[!UICONTROL Consentire agli assegnatari di condividere tramite condivisione in entrata]** l’opzione è selezionata e gli utenti condividono gli elementi della casella in entrata o consentono ad altri utenti di accedere agli elementi della casella in entrata, solo le attività con l’opzione precedentemente menzionata abilitata vengono condivise con altri utenti.
-   * Quando il **[!UICONTROL Consenti agli assegnatari di delegare utilizzando le impostazioni &quot;Fuori sede&quot;]** è selezionato. L&#39;assegnatario può abilitare l&#39;opzione per delegare l&#39;attività ad altri utenti insieme ad altre opzioni Out of Office. Tutte le nuove attività assegnate all’utente fuori sede vengono automaticamente delegate (assegnate) agli utenti indicati nelle impostazioni fuori sede.
+* **[!UICONTROL Modello e-mail HTML]**: seleziona il modello e-mail per l’e-mail di notifica. Per modificare un modello, modifica il file che si trova in /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-repository.
+* **[!UICONTROL Consenti delega a]**: la Casella in entrata AEM fornisce all’utente connesso un’opzione per delegare il flusso di lavoro assegnato a un altro utente. Puoi delegare all’interno dello stesso gruppo o all’utente del flusso di lavoro di un altro gruppo. Se l’attività è assegnata a un singolo utente e il **[!UICONTROL consenti delega a membri del gruppo assegnatario]** , non è possibile delegare l&#39;attività a un altro utente o gruppo.
+* **[!UICONTROL Impostazioni di condivisione]**: la Casella in entrata AEM fornisce opzioni per condividere una o tutte le attività presenti nella Casella in entrata con un altro utente:
+   * Quando **[!UICONTROL Consenti all’assegnatario di condividere in modo esplicito nella casella in entrata]** è selezionata, l’utente può selezionare l’attività nella casella in entrata AEM e condividerla con un altro utente AEM.
+   * Quando **[!UICONTROL Consenti all’assegnatario di condividere tramite la casella in entrata]** L&#39;opzione è selezionata e gli utenti condividono i propri elementi casella in entrata o consentono ad altri utenti di accedere ai propri elementi casella in entrata. Solo le attività per le quali è stata precedentemente attivata l&#39;opzione sono condivise con altri utenti.
+   * Quando **[!UICONTROL Consenti all’assegnatario di delegare utilizzando le impostazioni &quot;Fuori sede&quot;]** è selezionato. L’assegnatario può abilitare l’opzione per delegare l’attività ad altri utenti insieme ad altre opzioni Fuori sede. Tutte le nuove attività assegnate all&#39;utente fuori sede vengono automaticamente delegate (assegnate) agli utenti indicati nelle impostazioni fuori sede.
 
-   Consente agli altri utenti di scegliere le attività assegnate mentre è fuori sede e non è in grado di lavorare sulle attività assegnate.
+   Consente ad altri utenti di scegliere le attività assegnate mentre è fuori sede e non può lavorare sulle attività assegnate.
 
-* **[!UICONTROL Azioni]** > **[!UICONTROL Azioni predefinite]**: Sono disponibili le azioni Invia, Salva e Ripristina predefinite. Per impostazione predefinita sono abilitate tutte le azioni predefinite.
-* **[!UICONTROL Variabile di percorso]**: Nome della variabile di route. La variabile di route acquisisce le azioni personalizzate selezionate da un utente nella casella in entrata AEM.
-* **[!UICONTROL Percorsi]**: Un&#39;attività può essere suddivisa in percorsi diversi. Se selezionata in AEM casella in entrata, la route restituisce un valore e i rami del flusso di lavoro in base alla route selezionata. È possibile memorizzare i percorsi in una variabile della matrice del tipo di dati String oppure selezionare **[!UICONTROL Letterale]** per aggiungere manualmente i percorsi.
+* **[!UICONTROL Azioni]** > **[!UICONTROL Azioni predefinite]**: sono disponibili le azioni Invio, Salva e Reimposta pronte all’uso. Per impostazione predefinita, sono attivate tutte le azioni predefinite.
+* **[!UICONTROL Variabile percorso]**: nome della variabile di route. La variabile di route acquisisce le azioni personalizzate selezionate da un utente nella casella in entrata AEM.
+* **[!UICONTROL Percorsi]**: un’attività può diramarsi in diversi percorsi. Se selezionata nella casella in entrata AEM, la route restituisce un valore e i rami del flusso di lavoro si basano sulla route selezionata. È possibile archiviare le route in una variabile di matrice di tipo di dati String oppure selezionare **[!UICONTROL Letterale]** per aggiungere percorsi manualmente.
 
-* **[!UICONTROL Titolo percorso]**: Specifica il titolo della route. Viene visualizzato in AEM casella in entrata.
-* **[!UICONTROL Icona Corallo]**: Specifica l&#39;attributo HTML di un&#39;icona corallo. La libreria CorelUI di Adobe fornisce un ampio set di icone touch-first. È possibile scegliere e utilizzare un&#39;icona per il percorso. Viene visualizzato insieme al titolo nella casella in entrata AEM. Se si memorizzano i percorsi in una variabile, i percorsi utilizzano un&#39;icona corallina &#39;Tags&#39; predefinita.
-* **[!UICONTROL Consenti all&#39;assegnatario di aggiungere un commento]**: Selezionare questa opzione per abilitare i commenti per l&#39;attività. Al momento dell’invio dell’attività, un assegnatario può aggiungere i commenti all’interno AEM casella in entrata.
-* **[!UICONTROL Salva commento nella variabile]**: Salvare il commento in una variabile di tipo dati String. Questa opzione viene visualizzata solo se si seleziona la **[!UICONTROL Consenti all&#39;assegnatario di aggiungere un commento]** casella di controllo.
+* **[!UICONTROL Titolo percorso]**: specifica il titolo della route. Viene visualizzato nella casella in entrata AEM.
+* **[!UICONTROL Icona rosso corallo]**: specifica l’attributo HTML di un’icona corallo. La libreria CorelUI di Adobe fornisce un ampio set di icone touch-first. È possibile scegliere e utilizzare un&#39;icona per il ciclo di lavorazione. Viene visualizzato insieme al titolo nella casella in entrata AEM. Se memorizzi le route in una variabile, le route utilizzano un&#39;icona di corallo &quot;Tag&quot; predefinita.
+* **[!UICONTROL Consenti all’assegnatario di aggiungere commenti]**: seleziona questa opzione per abilitare i commenti per l’attività. L’assegnatario può aggiungere i commenti dalla casella in entrata AEM al momento dell’invio dell’attività.
+* **[!UICONTROL Salva commento in variabile]**: salva il commento in una variabile di tipo stringa. Questa opzione viene visualizzata solo se si seleziona **[!UICONTROL Consenti all’assegnatario di aggiungere commenti]** casella di controllo.
 
-* **[!UICONTROL Consenti all&#39;assegnatario di aggiungere allegati all&#39;attività]**: Selezionare questa opzione per abilitare gli allegati per l&#39;attività. Al momento dell’invio dell’attività, un assegnatario può aggiungere gli allegati dall’interno AEM casella in entrata. Puoi anche limitare la dimensione massima **[!UICONTROL (Dimensione massima del file)]** di un allegato. La dimensione predefinita è 2 MB.
+* **[!UICONTROL Consenti all’assegnatario di aggiungere allegati all’attività]**: selezionare questa opzione per abilitare gli allegati per l&#39;attività. L’assegnatario può aggiungere gli allegati dalla casella in entrata AEM al momento dell’invio dell’attività. Puoi anche limitare la dimensione massima **[!UICONTROL (Dimensione massima file)]** di un allegato. La dimensione predefinita è 2 MB.
 
-* **[!UICONTROL Salva gli allegati delle attività di output utilizzando]**: Specificare il percorso della cartella dell&#39;allegato. È possibile salvare gli allegati dell&#39;attività di output utilizzando un percorso relativo al payload o in una variabile di matrice del tipo di dati del documento. Questa opzione viene visualizzata solo se si seleziona la **[!UICONTROL Consenti all&#39;assegnatario di aggiungere allegati all&#39;attività]** seleziona e seleziona **[!UICONTROL Modulo adattivo]**, **[!UICONTROL Modulo adattivo di sola lettura]** oppure **[!UICONTROL Documento PDF non interattivo]** dal **[!UICONTROL Tipo]** elenco a discesa nella **[!UICONTROL Modulo/Documento]** scheda .
+* **[!UICONTROL Salva allegati attività di output tramite]**: specifica il percorso della cartella dell’allegato. È possibile salvare gli allegati delle attività di output utilizzando un percorso relativo al payload o in una variabile di matrice del tipo di dati del documento. Questa opzione viene visualizzata solo se si seleziona **[!UICONTROL Consenti all’assegnatario di aggiungere allegati all’attività]** e seleziona **[!UICONTROL Modulo adattivo]**, **[!UICONTROL Modulo adattivo di sola lettura]**, o **[!UICONTROL Documento PDF non interattivo]** dal **[!UICONTROL Tipo]** elenco a discesa nella **[!UICONTROL Modulo/Documento]** scheda.
 
-* **[!UICONTROL Utilizzare i metadati personalizzati]**: Seleziona questa opzione per abilitare il campo metadati personalizzato. I metadati personalizzati vengono utilizzati nei modelli e-mail.
-* **[!UICONTROL Metadati personalizzati]**: Seleziona un metadati personalizzato per i modelli e-mail. I metadati personalizzati sono disponibili in crx-repository su apps/fd/dashboard/scripts/metadataScripts. Il percorso specificato non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo. Puoi anche utilizzare un servizio per i metadati personalizzati. È inoltre possibile estendere `WorkitemUserMetadataService` per fornire metadati personalizzati.
-* **[!UICONTROL Mostra dati dai passaggi precedenti]**: Selezionare questa opzione per consentire agli assegnatari di visualizzare gli assegnatari precedenti, le azioni già eseguite sull&#39;attività, i commenti aggiunti all&#39;attività e il documento di registrazione dell&#39;attività completata, se disponibile.
-* **[!UICONTROL Mostra dati dai passaggi successivi]**: Selezionare questa opzione per consentire all&#39;assegnatario corrente di visualizzare l&#39;azione intrapresa e i commenti aggiunti all&#39;attività dagli assegnatari successivi. Consente inoltre all&#39;assegnatario corrente di visualizzare un documento di registrazione dell&#39;attività completata, se disponibile.
-* **[!UICONTROL Visibilità del tipo di dati]**: Per impostazione predefinita, un assegnatario può visualizzare un documento di registrazione, gli assegnatari, le azioni intraprese e i commenti aggiunti dagli assegnatari precedenti e successivi. Utilizza l’opzione di visibilità del tipo di dati per limitare il tipo di dati visibili agli assegnatari.
+* **[!UICONTROL Utilizzare metadati personalizzati]**: seleziona questa opzione per abilitare il campo di metadati personalizzato. I metadati personalizzati vengono utilizzati nei modelli e-mail.
+* **[!UICONTROL Metadati personalizzati]**: seleziona un metadati personalizzato per i modelli e-mail. I metadati personalizzati sono disponibili nel crx-repository in apps/fd/dashboard/scripts/metadataScripts. Il percorso specificato non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo. Puoi anche utilizzare un servizio per i metadati personalizzati. Puoi anche estendere `WorkitemUserMetadataService` per fornire metadati personalizzati.
+* **[!UICONTROL Mostra dati da passaggi precedenti]**: seleziona questa opzione per consentire agli assegnatari di visualizzare gli assegnatari precedenti, le azioni già eseguite sull’attività, i commenti aggiunti all’attività e il documento di record dell’attività completata, se disponibile.
+* **[!UICONTROL Mostra dati da passaggi successivi]**: seleziona questa opzione per consentire all’assegnatario corrente di visualizzare l’azione intrapresa e i commenti aggiunti all’attività dagli assegnatari successivi. Consente inoltre all’assegnatario corrente di visualizzare un documento di record dell’attività completata, se disponibile.
+* **[!UICONTROL Visibilità del tipo di dati]**: per impostazione predefinita, l’assegnatario può visualizzare un documento di record, gli assegnatari, le azioni intraprese e i commenti aggiunti dagli assegnatari precedenti e successivi. Utilizza l’opzione visibilità del tipo di dati per limitare il tipo di dati visibile agli assegnatari.
 
 >[!NOTE]
 >
->Le opzioni per salvare il passaggio Assegna attività come bozza e recuperare la cronologia del passaggio Assegna attività sono disabilitate quando si configura un modello di flusso di lavoro AEM per l’archiviazione dei dati esterni. Inoltre, in Posta in arrivo, l’opzione per il salvataggio è disabilitata.
+>Le opzioni per salvare il passaggio Assegna attività come bozza e per recuperare la cronologia del passaggio Assegna attività sono disabilitate quando si configura un modello di flusso di lavoro AEM per l’archiviazione di dati esterni. Inoltre, nella casella in entrata, l’opzione di salvataggio è disabilitata.
 
 ## Passaggio Converti in PDF/A {#convert-pdfa}
 
-PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, incorporando i font e decomprimendo il file. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. È possibile utilizzare ***Converti in PDF/A*** passa a un flusso di lavoro AEM per convertire i documenti PDF in formato PDF/A.
+PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, incorporando i font e decomprimendo il file. Di conseguenza, un documento PDF/A è in genere più grande di un documento PDF standard. È possibile utilizzare ***Converti in PDF/A*** entra in un flusso di lavoro AEM per convertire i documenti PDF in formato PDF/A.
 
 Il passaggio Converti in PDF/A ha le seguenti proprietà:
 
-**[!UICONTROL Documento di input]**: Il documento di input può essere relativo al payload, avere un percorso assoluto, può essere fornito come payload o memorizzato in una variabile di tipo di dati Documento.
+**[!UICONTROL Documento di input]**: il documento di input può essere relativo al payload, avere un percorso assoluto, può essere fornito come payload o memorizzato in una variabile di tipo dati Documento.
 
-**[!UICONTROL Opzioni di conversione]**: Questa proprietà consente di specificare le impostazioni per la conversione dei documenti PDF in documenti PDF/A. Varie opzioni disponibili in questa scheda sono:
-* **[!UICONTROL Conformità]**: Specifica lo standard a cui deve conformarsi il documento PDF/A di output. Supporta diversi standard PDF come PDF/A-1b, PDF/A-2b o PDF/A-3b.
-* **[!UICONTROL Livello dei risultati]**: Specifica il livello del risultato come PassFail, Summary o Detailed, per l&#39;output di conversione.
-* **[!UICONTROL Spazio colore]**: Specifica lo spazio colore predefinito come S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED o SWOP, che può essere utilizzato per i file di output PDF/A.
-* **[!UICONTROL Contenuto facoltativo]**: Consenti la visualizzazione di oggetti grafici e/o annotazioni specifici nel documento PDF/A di output, solo quando viene soddisfatto un set specifico di criteri.
+**[!UICONTROL Opzioni di conversione]**: utilizzando questa proprietà, vengono specificate le impostazioni per la conversione di documenti PDF in documenti PDF/A. Le opzioni disponibili in questa scheda sono:
+* **[!UICONTROL Conformità]**: specifica lo standard a cui deve conformarsi il documento PDF/A di output. Supporta diversi standard PDF come PDF/A-1b, PDF/A-2b o PDF/A-3b.
+* **[!UICONTROL Livello di risultato]**: specifica il livello di risultato come PassFail, Summary o Detailed, per l&#39;output di conversione.
+* **[!UICONTROL Spazio colore]**: specifica lo spazio colore predefinito come S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED o SWOP, che può essere utilizzato per i file PDF/A di output.
+* **[!UICONTROL Contenuto facoltativo]**: consenti a specifici oggetti grafici e/o annotazioni di essere visibili nel documento PDF/A di output solo quando viene soddisfatto un set di criteri specificato.
 
-**[!UICONTROL Documenti di output]**: Specifica il percorso in cui salvare il file di output. Il file di output può essere salvato in una posizione relativa al payload, sovrascrive il payload, se il payload è un file o in una variabile del tipo di dati Documento.
+**[!UICONTROL Documenti di output]**: specifica il percorso in cui salvare il file di output. Il file di output può essere salvato in una posizione relativa al payload, sovrascrive il payload, se il payload è un file, o in una variabile di tipo dati Document.
 
 
-## Invia passaggio e-mail {#send-email-step}
+## Passaggio Invia e-mail {#send-email-step}
 
-Utilizza il passaggio e-mail per inviare un’e-mail, ad esempio un messaggio e-mail con un documento di record, un collegamento a un modulo adattivo <!-- , link of an interactive communication-->oppure con un documento PDF allegato. Supporto dei passaggi di invio e-mail [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono reattive e si adattano al client e-mail e alle dimensioni dello schermo dei destinatari. Puoi utilizzare un modello e-mail di HTML per definire l’aspetto, lo schema colore e il comportamento dell’e-mail.
+Utilizza la fase e-mail per inviare un’e-mail, ad esempio un’e-mail con un documento Record e il collegamento di un modulo adattivo <!-- , link of an interactive communication-->o con un documento PDF allegato. Il passaggio Invia e-mail supporta [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello di e-mail HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
 
-Il passaggio e-mail utilizza Day CQ Mail Service per inviare e-mail. Prima di utilizzare il passaggio e-mail, assicurati che il servizio e-mail sia configurato. Per impostazione predefinita, le e-mail supportano solo i protocolli HTTP e HTTP. [Contatta il team di supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email) per abilitare le porte per l’invio di e-mail e per abilitare il protocollo SMTP per l’ambiente. Questa limitazione consente di migliorare la sicurezza della piattaforma.
+Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, accertati che il servizio e-mail sia configurato. Per impostazione predefinita, le e-mail supportano solo i protocolli HTTP e HTTP. [Contatta il team di supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) per abilitare le porte per l’invio di e-mail e il protocollo SMTP per il tuo ambiente. La restrizione contribuisce a migliorare la sicurezza della piattaforma.
 
-Il passaggio e-mail ha le seguenti proprietà:
+Il passaggio e-mail presenta le seguenti proprietà:
 
-**[!UICONTROL Titolo]**: Il titolo del passaggio ti aiuta a identificare il passaggio nell’editor del flusso di lavoro.
+**[!UICONTROL Titolo]**: il titolo del passaggio aiuta a identificare il passaggio nell’editor del flusso di lavoro.
 
-**[!UICONTROL Descrizione]**: La spiegazione è utile per altri sviluppatori di processi quando lavori in un ambiente di sviluppo condiviso.
+**[!UICONTROL Descrizione]**: la spiegazione è utile per altri sviluppatori di processi quando si lavora in un ambiente di sviluppo condiviso.
 
-**[!UICONTROL Oggetto e-mail]**: L’oggetto può essere recuperato dai metadati di un flusso di lavoro, specificati manualmente o recuperati dal valore memorizzato in una variabile. Seleziona tra le seguenti opzioni:
+**[!UICONTROL Oggetto e-mail]**: l’oggetto può essere recuperato dai metadati di un flusso di lavoro, specificato manualmente, o recuperato dal valore memorizzato in una variabile. Selezionare una delle opzioni seguenti:
 
-* **[!UICONTROL Letterale]** Specifica manualmente un oggetto.
-* **[!UICONTROL Recupera dai metadati del flusso di lavoro]** - Recupera l&#39;oggetto da una proprietà di metadati.
-* **[!UICONTROL Variabile]** - Recupera l&#39;oggetto dal valore memorizzato in una variabile del tipo di dati stringa.
+* **[!UICONTROL Letterale]** Specificare manualmente un oggetto.
+* **[!UICONTROL Recupera dai metadati del flusso di lavoro]** : recupera l’oggetto da una proprietà di metadati.
+* **[!UICONTROL Variabile]** : recupera l’oggetto dal valore memorizzato in una variabile di tipo dati stringa.
 
-**[!UICONTROL Modello e-mail HTML]**: Modello HTML per l’e-mail. Puoi specificare le variabili in un modello e-mail. Il Passaggio e-mail estrae e visualizza tutte le variabili incluse in un modello per gli input.
+**[!UICONTROL Modello e-mail HTML]**: modello di HTML per l’e-mail. Puoi specificare le variabili in un modello e-mail. Il passaggio E-mail estrae e visualizza tutte le variabili incluse in un modello per gli input.
 
-**[!UICONTROL Metadati modello e-mail]**: Il valore delle variabili del modello e-mail può essere un valore specificato dall’utente, il percorso di una risorsa sull’autore o sul server di pubblicazione, sull’immagine o su una proprietà di metadati del flusso di lavoro.
+**[!UICONTROL Metadati modello e-mail]**: il valore delle variabili del modello e-mail può essere un valore specificato dall’utente, il percorso di una risorsa nell’istanza di authoring o nel server di pubblicazione, un’immagine o una proprietà di metadati del flusso di lavoro.
 
-* **[!UICONTROL Letterale]**: Utilizza l’opzione quando conosci il valore esatto da specificare. Ad esempio: [example@example.com](mailto:example@example.com).
+* **[!UICONTROL Letterale]**: utilizza l’opzione quando conosci il valore esatto da specificare. Ad esempio: [example@example.com](mailto:example@example.com).
 
-* **[!UICONTROL Metadati del flusso di lavoro]**: Utilizza l’opzione quando il valore da utilizzare viene salvato in una proprietà di metadati di un flusso di lavoro. Dopo aver selezionato l’opzione , immetti il nome della proprietà metadati nella casella di testo vuota sotto l’opzione Metadati flusso di lavoro . Ad esempio, emailAddress.
+* **[!UICONTROL Metadati flusso di lavoro]**: utilizza l’opzione quando il valore da utilizzare viene salvato in una proprietà di metadati del flusso di lavoro. Dopo aver selezionato l’opzione, immetti il nome della proprietà dei metadati nella casella di testo vuota sotto l’opzione Metadati del flusso di lavoro. Ad esempio, emailAddress.
 
 <!-- 
 
@@ -209,67 +209,67 @@ Il passaggio e-mail ha le seguenti proprietà:
 
 -->
 
-* **[!UICONTROL Immagine]**: Utilizza l’opzione per incorporare un’immagine nell’e-mail. Dopo aver selezionato l&#39;opzione , sfoglia e scegli l&#39;immagine. L’opzione immagine è disponibile solo per i tag immagine (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) disponibili nel modello e-mail.&#42;
+* **[!UICONTROL Immagine]**: utilizza l’opzione per incorporare un’immagine nell’e-mail. Dopo aver selezionato l’opzione, sfoglia e scegli l’immagine. L’opzione immagine è disponibile solo per i tag immagine (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) disponibili nel modello e-mail.&#42;
 
-**[!UICONTROL Indirizzo e-mail del mittente/destinatario]**: Seleziona la **[!UICONTROL Letterale]** opzione per specificare manualmente un indirizzo e-mail o selezionare **[!UICONTROL Recupera dai metadati del flusso di lavoro]** per recuperare l’indirizzo e-mail da una proprietà metadati. È inoltre possibile specificare un elenco di array di proprietà di metadati per **[!UICONTROL Recupera dai metadati del flusso di lavoro]** opzione . Seleziona la **[!UICONTROL Variabile]** per recuperare l’indirizzo e-mail dal valore memorizzato in una variabile di tipo dati stringa.
+**[!UICONTROL Indirizzo e-mail del mittente/destinatario]**: seleziona la **[!UICONTROL Letterale]** per specificare manualmente un indirizzo e-mail o selezionare **[!UICONTROL Recupera dai metadati del flusso di lavoro]** per recuperare l’indirizzo e-mail da una proprietà di metadati. È inoltre possibile specificare un elenco di matrici di proprietà dei metadati per **[!UICONTROL Recupera dai metadati del flusso di lavoro]** opzione. Seleziona la **[!UICONTROL Variabile]** per recuperare l&#39;indirizzo di posta elettronica dal valore memorizzato in una variabile di tipo di dati string.
 
-* **[!UICONTROL File allegato]**: La risorsa disponibile nel percorso specificato viene allegata all’e-mail. Il percorso della risorsa può essere relativo al payload o al percorso assoluto. Un esempio di percorso è [Payload_Directory]/attachment/.
+* **[!UICONTROL File allegato]**: la risorsa disponibile nella posizione specificata viene allegata all’e-mail. Il percorso della risorsa può essere relativo al payload o al percorso assoluto. Un esempio di percorso è [Payload_Directory]/attachments/.
 
-Seleziona la **[!UICONTROL Variabile]** per recuperare l’allegato del file memorizzato in una variabile del tipo di dati Document, XML o JSON.
+Seleziona la **[!UICONTROL Variabile]** per recuperare il file allegato memorizzato in una variabile di tipo Documento, XML o JSON.
 
-**[!UICONTROL Nome file]**: Nome del file allegato e-mail. Il Passaggio e-mail modifica il nome file originale dell’allegato al nome file specificato. Il nome può essere specificato manualmente o recuperato da una proprietà di metadati di un flusso di lavoro o da una variabile. Utilizza la **[!UICONTROL Letterale]** quando si conosce il valore esatto da specificare. Utilizza la **[!UICONTROL Variabile]** per recuperare il nome del file dal valore memorizzato in una variabile di tipo dati stringa. Utilizza la **[!UICONTROL Recupera da un metadati del flusso di lavoro]** quando il valore da utilizzare viene salvato in una proprietà di metadati del flusso di lavoro.
+**[!UICONTROL Nome file]**: nome del file allegato e-mail. Il passaggio E-mail modifica il nome file originale dell’allegato con il nome file specificato. Il nome può essere specificato manualmente o recuperato da una proprietà o variabile di metadati del flusso di lavoro. Utilizza il **[!UICONTROL Letterale]** quando si conosce il valore esatto da specificare. Utilizza il **[!UICONTROL Variabile]** per recuperare il nome del file dal valore memorizzato in una variabile di tipo di dati string. Utilizza il **[!UICONTROL Recuperare da un flusso di lavoro Metadati]** quando il valore da utilizzare viene salvato in una proprietà dei metadati di un flusso di lavoro.
 
 ## Passaggio Genera documento di record {#generate-document-of-record-step}
 
-Quando un modulo viene compilato o inviato, è possibile conservare un record del modulo, in formato cartaceo o documento. Questo record è denominato documento di registrazione (DoR). È possibile utilizzare il passaggio Genera documento di record per creare una versione PDF interattiva o di sola lettura di un modulo adattivo. La versione PDF contiene informazioni inserite nel modulo insieme al layout del modulo adattivo.
+Quando un modulo viene compilato o inviato, è possibile conservarne una registrazione, in formato cartaceo o in formato documento. Questo record è denominato documento record (DoR). È possibile utilizzare il passaggio Genera documento di record per creare una versione PDF interattiva o di sola lettura di un modulo adattivo. La versione PDF contiene informazioni inserite nel modulo insieme al layout del modulo adattivo.
 
-Il passaggio Documento di record ha le seguenti proprietà:
+Il passaggio Documento record presenta le seguenti proprietà:
 
-**[!UICONTROL Usa modulo adattivo]**: Specificare il metodo per individuare il modulo adattivo di input. Puoi utilizzare il Modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto o disponibile in un percorso in una variabile. È possibile utilizzare una variabile del tipo di dati String per specificare il percorso nel **[!UICONTROL Selezionare la variabile da risolvere]** campo .\
-Puoi associare più Forms adattivo a un flusso di lavoro. Di conseguenza, è possibile specificare un Modulo adattivo in fase di esecuzione utilizzando i metodi di input disponibili.
+**[!UICONTROL Usa modulo adattivo]**: specifica il metodo per individuare il modulo adattivo di input. Puoi utilizzare il modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto o disponibile in un percorso in una variabile. È possibile utilizzare una variabile del tipo di dati String per specificare il percorso in **[!UICONTROL Seleziona variabile da risolvere]** campo.\
+È possibile associare più Forms adattivi a un flusso di lavoro. Di conseguenza, puoi specificare un modulo adattivo in fase di esecuzione utilizzando i metodi di input disponibili.
 
-**[!UICONTROL Percorso modulo adattivo]**: Specifica il percorso del modulo adattivo. Il campo è disponibile quando selezioni la **[!UICONTROL Disponibile in un percorso assoluto]** dall&#39;opzione **[!UICONTROL Usa modulo adattivo]** campo .
+**[!UICONTROL Percorso modulo adattivo]**: specifica il percorso del modulo adattivo. Il campo è disponibile quando selezioni il **[!UICONTROL Disponibile in un percorso assoluto]** opzione dalla **[!UICONTROL Usa modulo adattivo]** campo.
 
-**[!UICONTROL Seleziona i dati di input utilizzando]**: Percorso dei dati di input per il modulo adattivo. È possibile mantenere i dati in una posizione relativa al payload, specificare un percorso assoluto dei dati o recuperare i dati memorizzati in una variabile di tipo Document, JSON o XML. I dati di input vengono uniti al modulo adattivo per creare un documento di record.
+**[!UICONTROL Seleziona dati di input tramite]**: percorso dei dati di input per il modulo adattivo. È possibile mantenere i dati in una posizione relativa al payload, specificare un percorso assoluto dei dati o recuperare i dati memorizzati in una variabile di tipo Documento, JSON o XML. I dati di input vengono uniti al modulo adattivo per creare un documento di record.
 
-**[!UICONTROL Selezionare il percorso dell&#39;allegato di input utilizzando]**: Percorso degli allegati. Questi allegati sono inclusi nel documento di registrazione. È possibile mantenere gli allegati in una posizione relativa al payload, specificare un percorso assoluto degli allegati o recuperare gli allegati memorizzati in una variabile di tipo di dati Documento.
+**[!UICONTROL Seleziona il percorso dell&#39;allegato di input tramite]**: percorso degli allegati. Questi allegati sono inclusi nel documento di record. È possibile mantenere gli allegati in una posizione relativa al payload, specificare un percorso assoluto degli allegati o recuperare gli allegati memorizzati in una variabile di matrice di tipo dati Documento.
 
-Se si specifica il percorso di una cartella, ad esempio gli allegati, tutti i file direttamente disponibili nella cartella vengono allegati al documento di record. Se sono disponibili file nelle cartelle direttamente disponibili nel percorso allegato specificato, i file sono inclusi nel documento di registrazione come allegati. Se sono presenti cartelle in cartelle direttamente disponibili, queste vengono ignorate.
+Se si specifica il percorso di una cartella, ad esempio gli allegati, tutti i file direttamente disponibili nella cartella vengono allegati al documento di record. Se nelle cartelle sono disponibili file direttamente disponibili nel percorso di allegato specificato, tali file vengono inclusi nel documento di record come allegati. Se sono presenti cartelle in cartelle direttamente disponibili, queste vengono ignorate.
 
-**[!UICONTROL Salva documento di record generato utilizzando le opzioni seguenti]**: Specificare il percorso in cui conservare un file del documento di record. È possibile scegliere di sovrascrivere la cartella payload, posizionare il documento di record in una posizione all’interno della directory di payload o archiviare il documento di record in una variabile di tipo di dati Documento.
+**[!UICONTROL Salva documento di record generato tramite le opzioni di seguito]**: specifica il percorso in cui mantenere un file del documento di record. Puoi scegliere di sovrascrivere la cartella del payload, inserire il documento di record in una posizione all’interno della directory del payload o archiviare il documento di record in una variabile di tipo dati Documento.
 
-**[!UICONTROL Impostazioni internazionali]**: Specificare la lingua del documento di record. Seleziona **[!UICONTROL Letterale]** per selezionare le impostazioni internazionali da un elenco a discesa o selezionare **[!UICONTROL Variabile]** per recuperare le impostazioni internazionali dal valore memorizzato in una variabile di tipo dati stringa. È necessario definire il codice delle impostazioni internazionali quando si memorizza il valore delle impostazioni internazionali in una variabile. Ad esempio, specifica **en_US** per inglese e **fr_FR** per il francese.
+**[!UICONTROL Lingua]**: specifica la lingua del documento record. Seleziona **[!UICONTROL Letterale]** per selezionare le impostazioni locali da un elenco a discesa o selezionare **[!UICONTROL Variabile]** per recuperare le impostazioni locali dal valore memorizzato in una variabile di tipo stringa. Definisci il codice locale durante la memorizzazione del valore della lingua in una variabile. Ad esempio, specifica **en_US** per inglese e **fr_FR** per il francese.
 
 ## Richiama passaggio DDX {#invokeddx}
 
-Document Description XML (DDX) è un linguaggio di markup dichiarativo i cui elementi rappresentano blocchi predefiniti di documenti. Questi blocchi predefiniti includono documenti PDF e XDP e altri elementi quali commenti, segnalibri e testo con stili. DDX definisce un set di operazioni, che può essere applicato su uno o più documenti di input per generare uno o più documenti di output.  Un singolo DDX può essere utilizzato con una serie di documenti sorgente. È possibile utilizzare ***Richiama passaggio DDX*** in un flusso di lavoro di AEM per eseguire varie operazioni, come Assembling Disassembling Documents, Creating e edit Acrobat e XFA Forms, e altre descritte in [Documentazione di riferimento DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+Document Description XML (DDX) è un linguaggio di markup dichiarativo i cui elementi rappresentano blocchi predefiniti di documenti. Questi blocchi predefiniti includono documenti PDF e XDP e altri elementi quali commenti, segnalibri e testo con stili. DDX definisce un set di operazioni che possono essere applicate a uno o più documenti di input per generare uno o più documenti di output. Un singolo DDX può essere utilizzato con una serie di documenti sorgente. È possibile utilizzare ***Richiama passaggio DDX*** in un flusso di lavoro AEM per eseguire varie operazioni, come assemblaggio e disassemblaggio di documenti, creazione e modifica di Acrobat e XFA Forms e altre descritte in [Documentazione di riferimento DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
 
-Richiama il passaggio DDX con le seguenti proprietà:
+Il passaggio Richiama DDX ha le seguenti proprietà:
 
-**[!UICONTROL Documenti di input]**: Utilizzato per impostare le proprietà di un documento di input. Varie opzioni disponibili in questa scheda sono:
-* **[!UICONTROL Specifica DDX utilizzando]**: Specifica il documento di input relativo al payload, presenta un percorso assoluto, può essere fornito come payload o memorizzato in una variabile di tipo di dati Documento.
-* **[!UICONTROL Crea mappa da payload]**: Aggiungi tutti i documenti sotto la cartella payload alla mappa del documento di input per l’API di chiamata in Assembler. Il nome del nodo di ciascun documento viene utilizzato come chiave nella mappa.
-* **[!UICONTROL Mappa del documento di input]**: L&#39;opzione viene utilizzata per aggiungere più voci utilizzando **[!UICONTROL AGGIUNGI]** pulsante . Ogni voce rappresenta la chiave del documento nella mappa e nell’origine del documento.
+**[!UICONTROL Documenti di input]**: utilizzato per impostare le proprietà di un documento di input. Le opzioni disponibili in questa scheda sono:
+* **[!UICONTROL Specifica DDX tramite]**: specifica il documento di input relativo al payload, dispone di un percorso assoluto, può essere fornito come payload o memorizzato in una variabile di tipo dati Documento.
+* **[!UICONTROL Crea mappa da payload]**: aggiungi tutti i documenti nella cartella del payload alla mappa del documento di input per l’API di richiamo nell’Assembler. Il nome del nodo di ciascun documento viene utilizzato come chiave nella mappa.
+* **[!UICONTROL Mappa del documento di input]**: l’opzione viene utilizzata per aggiungere più voci tramite **[!UICONTROL AGGIUNGI]** pulsante. Ogni voce rappresenta la chiave del documento nella mappa e l&#39;origine del documento.
 
-**[!UICONTROL Opzioni ambiente]**: Questa opzione viene utilizzata per impostare le impostazioni di elaborazione per l’API di chiamata. Varie opzioni disponibili in questa scheda sono:
-* **[!UICONTROL Convalida solo]**: Verifica la validità del documento DDX di input.
-* **[!UICONTROL Errore]**: Valore booleano per indicare se il servizio API di chiamata non riesce, in caso di errore o meno. Per impostazione predefinita, il relativo valore è impostato su False.
-* **[!UICONTROL Numero di Bates]**: Specifica il numero, che si auto-incrementa. Questo numero con incremento automatico viene visualizzato automaticamente su ogni pagina consecutiva.
-* **[!UICONTROL Stile predefinito]**: Imposta lo stile predefinito per il file di output.
+**[!UICONTROL Opzioni di ambiente]**: questa opzione viene utilizzata per impostare le impostazioni di elaborazione per l’API di chiamata. Le opzioni disponibili in questa scheda sono:
+* **[!UICONTROL Solo convalida]**: verifica la validità del documento DDX di input.
+* **[!UICONTROL Non riuscito in caso di errore]**: valore booleano per indicare se il servizio Richiama API non riesce, in caso di errore o meno. Per impostazione predefinita, il relativo valore è impostato su False.
+* **[!UICONTROL Primo numero di Bates]**: specifica il numero, con incremento automatico. Questo numero con incremento automatico viene visualizzato automaticamente su ogni pagina consecutiva.
+* **[!UICONTROL Stile predefinito]**: imposta lo stile predefinito per il file di output.
 
 >[!NOTE]
 >
->Le opzioni dell’ambiente vengono mantenute sincronizzate con le API HTTP.
+>Le opzioni dell’ambiente sono mantenute sincronizzate con le API HTTP.
 
-**[!UICONTROL Documenti di output]**: Specifica il percorso in cui salvare il file di output. Varie opzioni disponibili in questa scheda sono:
-* **[!UICONTROL Salva output nel payload]**: Salva i documenti di output sotto la cartella payload o sovrascrive il payload, nel caso in cui il payload sia un file.
-* **[!UICONTROL Mappa del documento di output]**: Specifica il percorso in cui salvare esplicitamente ogni file di documento, aggiungendo una voce per documento. Ogni voce rappresenta il documento e il percorso, dove salvarlo. Se sono presenti più documenti di output, viene utilizzata questa opzione.
+**[!UICONTROL Documenti di output]**: specifica il percorso in cui salvare il file di output. Le opzioni disponibili in questa scheda sono:
+* **[!UICONTROL Salva output nel payload]**: salva i documenti di output nella cartella del payload o sovrascrive il payload, nel caso in cui il payload sia un file.
+* **[!UICONTROL Mappa del documento di output]**: specifica la posizione in cui salvare in modo esplicito ogni file di documento, aggiungendo una voce per documento. Ogni voce rappresenta il documento e la posizione in cui salvarlo. Se sono presenti più documenti di output, viene utilizzata questa opzione.
 
-## Passaggio Invoca il servizio del modello dati del modulo {#invoke-form-data-model-service-step}
+## Passaggio del servizio Richiama modello dati modulo {#invoke-form-data-model-service-step}
 
-È possibile utilizzare [[!DNL AEM Forms] Integrazione dei dati](data-integration.md) per configurare e connettersi a origini dati diverse. Queste origini dati possono essere un servizio Web, un servizio REST, un servizio OData e una soluzione CRM. [!DNL AEM Forms] L’integrazione dei dati consente di creare un modello dati modulo che include vari servizi per eseguire operazioni di recupero, aggiunta e aggiornamento dei dati sul database configurato. È possibile utilizzare **[!UICONTROL Richiama del passaggio Servizio del modello dati]** per selezionare un modello dati modulo (FDM) e utilizzare i servizi di FDM per recuperare, aggiornare o aggiungere dati a origini dati diverse.
+È possibile utilizzare [[!DNL AEM Forms] Integrazione dei dati](data-integration.md) per configurare e connettersi a diverse origini dati. Queste origini dati possono essere un servizio web, un servizio REST, un servizio OData e una soluzione CRM. [!DNL AEM Forms] L’integrazione dei dati consente di creare un modello di dati modulo che include vari servizi per eseguire operazioni di recupero, aggiunta e aggiornamento dei dati sul database configurato. È possibile utilizzare **[!UICONTROL Passaggio Richiama servizio modello dati]** per selezionare un modello di dati modulo (FDM) e utilizzare i servizi di FDM per recuperare, aggiornare o aggiungere dati per origini dati diverse.
 
-Per spiegare gli input per i campi del passaggio , come esempio vengono utilizzati la seguente tabella di database e il file JSON :
+Per spiegare gli input per i campi del passaggio, vengono utilizzati, ad esempio, la seguente tabella di database e il seguente file JSON:
 
 **[!UICONTROL Tabella CustomerDetails di esempio]**
 
@@ -322,75 +322,75 @@ Per spiegare gli input per i campi del passaggio , come esempio vengono utilizza
   }
 ```
 
-Il passaggio Invoke Form Data Model Service presenta i campi elencati di seguito per facilitare le operazioni del Form Data Model:
+Il passaggio Richiama servizio modello dati modulo presenta i campi elencati di seguito per facilitare le operazioni del modello dati modulo:
 
-* **[!UICONTROL Titolo]**: Titolo del passaggio. Consente di identificare il passaggio nell’editor del flusso di lavoro.
-* **[!UICONTROL Descrizione]**: Spiegazione utile per altri sviluppatori di processi quando lavori in un ambiente di sviluppo condiviso.
+* **[!UICONTROL Titolo]**: titolo del passaggio. Consente di identificare il passaggio nell’editor del flusso di lavoro.
+* **[!UICONTROL Descrizione]**: spiegazione utile per altri sviluppatori di processi quando si lavora in un ambiente di sviluppo condiviso.
 
-* **[!UICONTROL Percorso modello dati modulo]**: Individuare e selezionare un modello dati modulo presente sul server.
+* **[!UICONTROL Percorso modello dati modulo]**: sfoglia e seleziona un modello dati modulo presente sul server.
 
-* **[!UICONTROL Errori e convalide]**: L’opzione ti consente di acquisire messaggi di errore e specificare le opzioni di convalida per i dati recuperati e inviati a origini dati. Con queste modifiche, è possibile garantire che i dati passati al passaggio Invoke Form Data Model Service aderiscano ai vincoli dati definiti dall’origine dati. Per ulteriori dettagli, consulta [Convalida automatizzata dei dati di input](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL Errori e convalide]**: l’opzione ti consente di acquisire messaggi di errore e specificare le opzioni di convalida per i dati recuperati e inviati alle origini dati. Con queste modifiche, puoi garantire che i dati passati al passaggio Richiama servizio modello dati modulo siano conformi ai vincoli di dati definiti dall’origine dati. Per ulteriori dettagli, consulta [Convalida automatica dei dati di input](work-with-form-data-model.md#automated-validation-of-input-data)
 
-* **[!UICONTROL Livello di convalida]**: Sono disponibili tre categorie di convalide: Base, Completo e OFF:
+* **[!UICONTROL Livello di convalida]**: sono disponibili tre categorie di convalide: Base, Completo e Disattivato:
 
-   * Completo: Vengono convalidati tutti i vincoli.
-   * Base: Solo vincoli obbligatori e nullable
-   * OFF Non viene eseguita alcuna convalida.
+   * Completo: tutti i vincoli vengono convalidati.
+   * Di base: solo i vincoli obbligatori e nullable
+   * OFF: non viene eseguita alcuna convalida.
 
-* **[!UICONTROL Termina flusso di lavoro in caso di errore]**: Quando un vincolo non viene convalidato, il flusso di lavoro viene interrotto.
+* **[!UICONTROL Termina flusso di lavoro in caso di errore]**: quando un vincolo non viene convalidato, il flusso di lavoro viene interrotto.
 
-* **[!UICONTROL Memorizza il codice di errore nella variabile]**: È possibile memorizzare un codice di errore in un [Variabile del tipo di stringa](variable-in-aem-workflows.md).
+* **[!UICONTROL Memorizza codice errore in variabile]**: puoi memorizzare un codice di errore in un [Variabile di tipo stringa](variable-in-aem-workflows.md).
 
-* **[!UICONTROL Archiviare il messaggio di errore nella variabile]**: È possibile memorizzare un messaggio di errore in un [Variabile del tipo di stringa](variable-in-aem-workflows.md).
+* **[!UICONTROL Memorizza messaggio di errore in variabile]**: puoi memorizzare un messaggio di errore in un [Variabile di tipo stringa](variable-in-aem-workflows.md).
 
-* **[!UICONTROL Memorizza dettagli errore in variabile]**: È possibile memorizzare un dettaglio di errore in una [Variabile del tipo JSON](variable-in-aem-workflows.md).
+* **[!UICONTROL Memorizza dettagli errore in variabile]**: puoi memorizzare i dettagli di un errore in una [Variabile di tipo JSON](variable-in-aem-workflows.md).
 
-* **[!UICONTROL Servizio]**: Elenco dei servizi forniti dal modello dati modulo selezionato.
-* **[!UICONTROL Input per i servizi]** > **[!UICONTROL Fornire i dati di input utilizzando i metadati letterali, variabili o flussi di lavoro e un file JSON]**: Un servizio può avere più argomenti. Seleziona l’opzione per ottenere il valore degli argomenti del servizio da una proprietà dei metadati di un flusso di lavoro, un oggetto JSON, una variabile o immetti direttamente il valore nella casella di testo fornita:
+* **[!UICONTROL Servizio]**: elenco dei servizi forniti dal modello dati modulo selezionato.
+* **[!UICONTROL Input per servizi]** > **[!UICONTROL Fornisci dati di input utilizzando metadati letterali, variabili o del flusso di lavoro e un file JSON]**: un servizio può avere più argomenti. Seleziona l’opzione per ottenere il valore degli argomenti del servizio da una proprietà di metadati del flusso di lavoro, da un oggetto JSON, da una variabile o inserisci direttamente il valore nella casella di testo fornita:
 
-   * **[!UICONTROL Letterale]**: Utilizza l’opzione quando conosci il valore esatto da specificare. Ad esempio, srose@we.info.
-   * **[!UICONTROL Variabile]**: Utilizza l’opzione per recuperare il valore memorizzato in una variabile.
-   * **[!UICONTROL Recupera dai metadati del flusso di lavoro]**: Utilizza l’opzione quando il valore da utilizzare viene salvato in una proprietà di metadati di un flusso di lavoro. Ad esempio, emailAddress.
+   * **[!UICONTROL Letterale]**: utilizza l’opzione quando conosci il valore esatto da specificare. Ad esempio, srose@we.info.
+   * **[!UICONTROL Variabile]**: utilizza l’opzione per recuperare il valore memorizzato in una variabile.
+   * **[!UICONTROL Recupera dai metadati del flusso di lavoro]**: utilizza l’opzione quando il valore da utilizzare viene salvato in una proprietà di metadati del flusso di lavoro. Ad esempio, emailAddress.
 
-   * **[!UICONTROL Relativo al payload]**: Utilizzare l&#39;opzione per recuperare l&#39;allegato salvato in un percorso relativo al payload. Selezionare l&#39;opzione e specificare il nome della cartella che include l&#39;allegato o specificare il nome dell&#39;allegato del file nella casella di testo.
+   * **[!UICONTROL Relativo al payload]**: utilizza l’opzione per recuperare il file allegato salvato in un percorso relativo al payload. Selezionare l&#39;opzione e specificare il nome della cartella che include il file allegato oppure specificare il nome del file allegato nella casella di testo.
 
-      Ad esempio, se la cartella Relativo a Payload nell&#39;archivio CRX include un allegato al `attachment\attachment-folder` posizione, specificare `attachment\attachment-folder` nella casella di testo dopo aver selezionato il **[!UICONTROL Relativo al payload]** opzione .
+      Ad esempio, se la cartella relativa al payload nell’archivio CRX include un file allegato in corrispondenza di `attachment\attachment-folder` posizione, specificare `attachment\attachment-folder` nella casella di testo dopo aver selezionato **[!UICONTROL Relativo al payload]** opzione.
 
-   * **[!UICONTROL Notazione punto JSON]**: Utilizza l’opzione quando il valore da utilizzare si trova in un file JSON. Ad esempio, Insurance.customerDetails.emailAddress. L’opzione Notazione punto JSON è disponibile solo se è selezionata l’opzione Mappa campi di input dall’input JSON di input.
-   * **[!UICONTROL Mappare i campi di input da JSON di input]**: Specifica il percorso di un file JSON per ottenere il valore di input di alcuni argomenti di servizio dal file JSON. Il percorso del file JSON può essere relativo al payload, a un percorso assoluto, oppure è possibile selezionare un documento JSON di input utilizzando una variabile di tipo JSON o Form Data Model.
+   * **[!UICONTROL Notazione in punti JSON]**: utilizza l’opzione quando il valore da utilizzare si trova in un file JSON. Ad esempio, insurance.customerDetails.emailAddress. L’opzione JSON Dot Notation è disponibile solo se è selezionata l’opzione Mappa campi di input da JSON di input.
+   * **[!UICONTROL Mappa i campi di input da JSON di input]**: specifica il percorso di un file JSON per ottenere il valore di input di alcuni argomenti del servizio dal file JSON. Il percorso del file JSON può essere relativo al payload, un percorso assoluto oppure puoi selezionare un documento JSON di input utilizzando una variabile di tipo JSON o Modello dati modulo.
 
-* **[!UICONTROL Input per i servizi]** > **[!UICONTROL Fornire dati di input utilizzando una variabile o un file JSON]**: Seleziona l’opzione per ottenere i valori per tutti gli argomenti da un file JSON salvato in un percorso assoluto, in un percorso relativo al payload o in una variabile.
-* **[!UICONTROL Seleziona il documento JSON di input utilizzando]**: Il file JSON contenente i valori per tutti gli argomenti del servizio. Il percorso del file JSON può essere **[!UICONTROL relativo al payload]** o **[!UICONTROL percorso assoluto]**. È inoltre possibile recuperare il documento JSON di input utilizzando una variabile di tipo JSON o Form Data Model.
+* **[!UICONTROL Input per servizi]** > **[!UICONTROL Fornisci dati di input utilizzando una variabile o un file JSON]**: seleziona l’opzione per ottenere valori per tutti gli argomenti da un file JSON salvato in un percorso assoluto, in un percorso relativo al payload o in una variabile.
+* **[!UICONTROL Seleziona documento JSON di input tramite]**: file JSON contenente i valori per tutti gli argomenti del servizio. Il percorso del file JSON può essere **[!UICONTROL relativo al payload]** o un **[!UICONTROL percorso assoluto]**. Puoi anche recuperare il documento JSON di input utilizzando una variabile di tipo di dati JSON o Modello dati modulo.
 
-* **[!UICONTROL Notazione punto JSON]**: Lascia vuoto il campo per utilizzare tutti gli oggetti del file JSON specificato come input per gli argomenti del servizio. Per leggere un oggetto JSON specifico dal file JSON specificato come input per gli argomenti del servizio, specifica la notazione del punto per l’oggetto JSON, ad esempio, se disponi di un JSON simile a quello elencato all’inizio della sezione, specifica Insurance.customerDetails per fornire tutti i dettagli di un cliente come input al servizio.
-* **[!UICONTROL Uscita del servizio]** > **[!UICONTROL Mappare e scrivere i valori di output su variabili o metadati]**: Seleziona l&#39;opzione per salvare i valori di output come proprietà del nodo di metadati dell&#39;istanza del flusso di lavoro in crx-repository. Specifica il nome della proprietà metadati e seleziona l&#39;attributo di output del servizio corrispondente da mappare con la proprietà metadati, ad esempio, mappa il numero_telefono restituito dal servizio di output con la proprietà numero_telefono dei metadati del flusso di lavoro. Analogamente, è possibile memorizzare l&#39;output in una variabile di tipo Long. Quando selezioni una proprietà per la **[!UICONTROL Attributo di output del servizio da mappare]** solo le variabili in grado di memorizzare i dati della proprietà selezionata vengono compilate per **[!UICONTROL Salva l’output in]** opzione .
+* **[!UICONTROL Notazione in punti JSON]**: lascia vuoto il campo per utilizzare tutti gli oggetti del file JSON specificato come input per gli argomenti del servizio. Per leggere un oggetto JSON specifico dal file JSON specificato come input per gli argomenti del servizio, specifica la notazione del punto per l’oggetto JSON. Ad esempio, se disponi di un JSON simile a quello elencato all’inizio della sezione, specifica insurance.customerDetails per fornire tutti i dettagli di un cliente come input per il servizio.
+* **[!UICONTROL Produzione del servizio]** > **[!UICONTROL Associa e scrivi i valori di output in una variabile o nei metadati]**: seleziona l’opzione per salvare i valori di output come proprietà del nodo di metadati dell’istanza del flusso di lavoro in crx-repository. Specifica il nome della proprietà dei metadati e seleziona l’attributo di output del servizio corrispondente da mappare con la proprietà dei metadati. Ad esempio, mappa phone_number restituito dal servizio di output con la proprietà phone_number dei metadati del flusso di lavoro. Allo stesso modo, puoi memorizzare l’output in una variabile di tipo dati Long. Quando selezioni una proprietà per **[!UICONTROL Attributo di output del servizio da mappare]** , solo le variabili in grado di memorizzare i dati della proprietà selezionata vengono compilate per **[!UICONTROL Salva l’output in]** opzione.
 
-* **[!UICONTROL Uscita del servizio]** > **[!UICONTROL Salvare l’output su una variabile o un file JSON]**: Seleziona l’opzione per salvare i valori di output in un file JSON in un percorso assoluto, in un percorso relativo al payload o in una variabile .
-* **[!UICONTROL Salva il documento JSON di output utilizzando le seguenti opzioni]**: Salva il file JSON di output. Il percorso del file JSON di output può essere relativo al payload o a un percorso assoluto. Puoi anche salvare il file JSON di output utilizzando una variabile di tipo JSON o Form Data Model.
+* **[!UICONTROL Produzione del servizio]** > **[!UICONTROL Salva l’output in una variabile o in un file JSON]**: seleziona l’opzione per salvare i valori di output in un file JSON in un percorso assoluto, in un percorso relativo al payload o in una variabile.
+* **[!UICONTROL Salva documento JSON di output tramite le opzioni di seguito]**: salva il file JSON di output. Il percorso del file JSON di output può essere relativo al payload o a un percorso assoluto. Puoi anche salvare il file JSON di output utilizzando una variabile di tipo di dati JSON o Modello dati modulo.
 
 ## Passaggio Firma documento {#sign-document-step}
 
-Il passaggio Firma documento consente di utilizzare [!DNL Adobe Sign] per firmare documenti. Quando utilizzi [!DNL Adobe Sign] Passaggio del flusso di lavoro per firmare un modulo adattivo, il modulo può essere trasmesso tra i firmatari uno dopo l’altro o può essere inviato simultaneamente a tutti i firmatari, a seconda della configurazione del passaggio del flusso di lavoro. [!DNL Adobe Sign] Adaptive Forms abilitato viene inviato a Experience Manager Forms Server solo dopo che tutti i firmatari hanno completato il processo di firma.
+Il passaggio Firma documento consente di utilizzare [!DNL Adobe Sign] per firmare i documenti. Quando si utilizza [!DNL Adobe Sign] Passaggio del flusso di lavoro per firmare un modulo adattivo, il modulo può essere trasmesso tra i firmatari uno dopo l’altro o può essere inviato a tutti i firmatari contemporaneamente, a seconda della configurazione del passaggio del flusso di lavoro. [!DNL Adobe Sign] Forms adattivo abilitato vengono inviati a Experience Manager Forms Server solo dopo che tutti i firmatari hanno completato il processo di firma.
 
-Per impostazione predefinita, la [!DNL Adobe Sign] I servizi di pianificazione controllano (sondaggi) la risposta del firmatario dopo ogni 24 ore. È possibile [modifica dell&#39;intervallo predefinito per l&#39;ambiente](adobe-sign-integration-adaptive-forms.md##configure-adobe-sign-scheduler-to-sync-the-signing-status).
+Per impostazione predefinita, il [!DNL Adobe Sign] I servizi di pianificazione controllano (polling) la risposta del firmatario dopo ogni 24 ore. È possibile [modificare l’intervallo predefinito per l’ambiente](adobe-sign-integration-adaptive-forms.md##configure-adobe-sign-scheduler-to-sync-the-signing-status).
 
-Il passaggio Firma documento ha le seguenti proprietà:
+Il passaggio Firma documento presenta le seguenti proprietà:
 
-* **[!UICONTROL Nome del contratto]**: Specifica il titolo del contratto. Il nome del contratto fa parte dell’oggetto e del corpo del messaggio e-mail inviato ai firmatari. È possibile memorizzare il nome in una variabile di tipo dati String oppure selezionare **[!UICONTROL Letterale]** per aggiungere manualmente il nome.
+* **[!UICONTROL Nome contratto]**: specifica il titolo del contratto. Il nome del contratto diventa parte dell’oggetto e del corpo del testo dell’e-mail inviata ai firmatari. È possibile memorizzare il nome in una variabile di tipo di dati String oppure selezionare **[!UICONTROL Letterale]** per aggiungere manualmente il nome.
 
-* **[!UICONTROL Impostazioni internazionali]**: Specifica la lingua per le opzioni di e-mail e verifica. È possibile memorizzare le impostazioni internazionali in una variabile di tipo dati String oppure selezionare **[!UICONTROL Letterale]** per scegliere le impostazioni internazionali dall’elenco delle opzioni disponibili. È necessario definire il codice delle impostazioni internazionali quando si memorizza il valore delle impostazioni internazionali in una variabile. Ad esempio, specifica **[!UICONTROL en_US]** per inglese e **[!UICONTROL fr_FR]** per il francese.
+* **[!UICONTROL Lingua]**: specifica la lingua per le opzioni e-mail e verifica. È possibile archiviare le impostazioni locali in una variabile di tipo String oppure selezionare **[!UICONTROL Letterale]** per scegliere le impostazioni locali dall&#39;elenco delle opzioni disponibili. È necessario definire il codice delle impostazioni locali durante la memorizzazione del valore relativo in una variabile. Ad esempio, specifica **[!UICONTROL en_US]** per inglese e **[!UICONTROL fr_FR]** per il francese.
 
-* **[!UICONTROL Configurazione di Adobe Sign Cloud]**: Scegli un [!DNL Adobe Sign] Configurazione cloud. Se non hai configurato [!DNL Adobe Sign] per [!DNL AEM Forms], vedi [Integrare Adobe Sign con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+* **[!UICONTROL Configurazione cloud Adobe Sign]**: scegli un [!DNL Adobe Sign] Configurazione cloud. Se non hai configurato [!DNL Adobe Sign] per [!DNL AEM Forms], vedi [Integrare Adobe Sign con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-* **[!UICONTROL Selezionare il documento da firmare utilizzando]**: È possibile scegliere un documento da una posizione relativa al payload, utilizzare il payload come documento, specificare un percorso assoluto del documento o recuperare il documento memorizzato in una variabile di tipo Dati documento.
-* **[!UICONTROL Giorni fino alla scadenza]**: Un documento viene contrassegnato come scaduto (superato il termine) dopo che non vi è alcuna attività sull&#39;attività per il numero di giorni specificato nel **[!UICONTROL Giorni fino alla scadenza]** campo . Il numero di giorni viene conteggiato dopo che il documento è stato assegnato a un utente per la firma.
-* **[!UICONTROL Frequenza e-mail promemoria]**: Puoi inviare un messaggio e-mail di promemoria a intervalli giornalieri o settimanali. La settimana viene conteggiata dal giorno in cui il documento viene assegnato a un utente per la firma.
-* **[!UICONTROL Processo di firma]**: È possibile scegliere di firmare un documento in ordine sequenziale o parallelo. In ordine sequenziale, un firmatario riceve il documento alla volta per la firma. Al termine della firma del documento da parte del primo firmatario, il documento viene inviato al secondo firmatario e così via. In ordine parallelo, più firmatari possono firmare un documento alla volta.
-* **[!UICONTROL URL di reindirizzamento]**: Specifica un URL di reindirizzamento. Dopo aver firmato il documento, è possibile reindirizzare l’assegnatario a un URL. Di solito, questo URL contiene un messaggio di ringraziamento o ulteriori istruzioni.
-* **[!UICONTROL Fase del flusso di lavoro]**: Un flusso di lavoro può avere più fasi. Queste fasi vengono visualizzate nella casella in entrata AEM. È possibile definire queste fasi nelle proprietà del modello ( **[!UICONTROL Barra laterale]** > **[!UICONTROL Pagina]** > **[!UICONTROL Proprietà pagina]** > **[!UICONTROL Fasi]**).
-* **[!UICONTROL Seleziona firmatari]**: Specificare il metodo per scegliere i firmatari per il documento. Puoi assegnare dinamicamente il flusso di lavoro a un utente o a un gruppo oppure aggiungere manualmente i dettagli di un firmatario.
-* **[!UICONTROL Script o servizio per selezionare i firmatari]**: L’opzione è disponibile solo se nel campo Seleziona firmatari è selezionata l’opzione Dinamicamente . È possibile specificare uno script ECMAScript o un servizio per scegliere i firmatari e le opzioni di verifica di un documento.
-* **[!UICONTROL Dettagli del firmatario]**: L’opzione è disponibile solo se l’opzione Manualmente è selezionata nel campo Seleziona firmatari . Specifica l’indirizzo e-mail e scegli un meccanismo di verifica facoltativo. Prima di selezionare un meccanismo di verifica in due fasi, assicurati che l’opzione di verifica corrispondente sia abilitata per il [!DNL Adobe Sign] conto. È possibile utilizzare una variabile del tipo di dati Stringa per definire i valori dei campi E-mail, Codice paese e Numero di telefono. I campi Codice paese e Numero di telefono vengono visualizzati solo se si seleziona Verifica telefono dall’elenco a discesa di verifica in due passaggi.
+* **[!UICONTROL Seleziona documento da firmare tramite]**: puoi scegliere un documento da una posizione relativa al payload, utilizzare il payload come documento, specificare un percorso assoluto del documento o recuperare il documento memorizzato in una variabile di tipo dati Documento.
+* **[!UICONTROL Giorni mancanti alla scadenza]**: un documento viene contrassegnato come dovuto (scadenza passata) dopo che non è presente alcuna attività sull’attività per il numero di giorni specificato in **[!UICONTROL Giorni mancanti alla scadenza]** campo. Il numero di giorni viene conteggiato dopo che il documento è stato assegnato a un utente per la firma.
+* **[!UICONTROL Frequenza e-mail promemoria]**: puoi inviare un’e-mail di promemoria a intervalli giornalieri o settimanali. La settimana viene conteggiata dal giorno in cui il documento viene assegnato a un utente per la firma.
+* **[!UICONTROL Processo di firma]**: puoi scegliere di firmare un documento in ordine sequenziale o parallelo. In ordine sequenziale, un firmatario riceve il documento alla volta per la firma. Dopo che il primo firmatario ha completato la firma del documento, quest&#39;ultimo viene inviato al secondo firmatario e così via. In ordine parallelo, più firmatari possono firmare un documento alla volta.
+* **[!UICONTROL URL di reindirizzamento]**: specifica un URL di reindirizzamento. Dopo aver firmato il documento, puoi reindirizzare l’assegnatario a un URL. Di solito, questo URL contiene un messaggio di ringraziamento o ulteriori istruzioni.
+* **[!UICONTROL Fase flusso di lavoro]**: un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello ( **[!UICONTROL Barra laterale]** > **[!UICONTROL Pagina]** > **[!UICONTROL Proprietà pagina]** > **[!UICONTROL Fasi]**).
+* **[!UICONTROL Seleziona firmatari]**: specifica il metodo di selezione dei firmatari per il documento. Puoi assegnare dinamicamente il flusso di lavoro a un utente o a un gruppo oppure aggiungere manualmente i dettagli di un firmatario.
+* **[!UICONTROL Script o servizio per selezionare i firmatari]**: l’opzione è disponibile solo se l’opzione Dinamicamente è selezionata nel campo Seleziona firmatari. È possibile specificare un codice ECMAScript o un servizio per scegliere i firmatari e le opzioni di verifica per un documento.
+* **[!UICONTROL Dettagli firmatario]**: l’opzione è disponibile solo se l’opzione Manualmente è selezionata nel campo Seleziona firmatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, assicurati che l’opzione di verifica corrispondente sia abilitata per il [!DNL Adobe Sign] account. Puoi utilizzare una variabile di tipo stringa per definire i valori per i campi E-mail, Codice paese e Numero di telefono. I campi Codice paese e Numero di telefono vengono visualizzati solo se si seleziona Verifica telefono dall&#39;elenco a discesa Verifica in due passaggi.
 
 <!--
 ## Document Services steps {#document-services-steps}
@@ -485,84 +485,84 @@ Encrypt, Sign, and certify a document. [!DNL AEM Forms] supports both password b
 Send a document directly to a printer. It supports the following printing access mechanisms:
 
 * **[!UICONTROL Direct accessible printer]**: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.
-* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
+* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX&reg; printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server's IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
     -->
 
 ## Genera passaggio di output stampato {#generatePrintedOutput}
 
-Il passaggio genera un output PCL, PostScript, ZPL, IPL, TPCL o DPL in base a una struttura del modulo e a un file di dati. Il file di dati viene unito alla struttura del modulo e formattato per la stampa. L&#39;output generato da questo passaggio può essere inviato direttamente a una stampante o salvato come file. Si consiglia di utilizzare questo passaggio quando si desidera utilizzare le strutture del modulo o i dati provenienti da un&#39;applicazione. Se le strutture del modulo o le strutture del modulo si trovano in una posizione di rete, in un file system locale o in una posizione HTTP, utilizzare l&#39;operazione generaStampaOutput.
+Il passaggio genera un output PCL, PostScript, ZPL, IPL, TPCL o DPL in base a un progetto di modulo e a un file di dati. Il file di dati viene unito alla struttura del modulo e formattato per la stampa. L&#39;output generato da questo passaggio può essere inviato direttamente a una stampante o salvato come file. È consigliabile utilizzare questo passaggio quando si desidera utilizzare le progettazioni dei moduli o i dati di un&#39;applicazione. Se le progettazioni dei moduli si trovano in rete, nel file system locale o in una posizione HTTP, utilizzare l&#39;operazione generatePrintedOutput.
 
-Ad esempio, l’applicazione richiede l’unione di una struttura del modulo con un file di dati. I dati contengono centinaia di record. Inoltre, richiede l&#39;invio dell&#39;output a una stampante che supporti ZPL. La struttura del modulo e i dati di input si trovano in un’applicazione. Utilizzare l&#39;operazione generatePraintOutput per unire ogni record con una struttura del modulo e inviare l&#39;output a una stampante che supporti ZPL.
+Ad esempio, l&#39;applicazione richiede l&#39;unione di una struttura di modulo con un file di dati. I dati contengono centinaia di record. Inoltre, richiede che l&#39;output venga inviato a una stampante che supporta ZPL. La struttura del modulo e i dati di input sono inclusi in un&#39;applicazione. Utilizzare l&#39;operazione generatePrintedOutput per unire ogni record con una struttura di modulo e inviare l&#39;output a una stampante che supporta ZPL.
 
 Il passaggio Genera output stampato ha le seguenti proprietà:
 
 **[!UICONTROL Proprietà di input]**
 
-* **[!UICONTROL Seleziona il file modello utilizzando]**: Specifica il percorso del file modello. È possibile selezionare il file modello utilizzando il percorso relativo al payload, salvato in un percorso assoluto o utilizzando una variabile del tipo di dati Documento. Ad esempio: [Payload_Directory]/Workflow/data.xml. Se il percorso non esiste in crx-repository, un amministratore può creare il percorso prima di utilizzarlo. Inoltre, puoi anche accettare payload come file di dati di input.
+* **[!UICONTROL Seleziona file modello tramite]**: specifica il percorso del file modello. Puoi selezionare il file modello utilizzando il percorso relativo al payload, salvato in un percorso assoluto oppure utilizzando una variabile di tipo dati Documento. Ad esempio: [Payload_Directory]/Workflow/data.xml. Se il percorso non esiste in crx-repository, un amministratore può crearlo prima di utilizzarlo. Inoltre, puoi anche accettare il payload come file di dati di input.
 
-* **[!UICONTROL Seleziona il documento dati utilizzando]**: Specifica il percorso di un file di dati di input. È possibile selezionare il file di dati di input utilizzando il percorso relativo al payload, salvato in un percorso assoluto o utilizzando una variabile del tipo di dati Documento. Ad esempio: [Payload_Directory]/Workflow/data.xml. Se il percorso non esiste in crx-repository, un amministratore può creare il percorso prima di utilizzarlo.
+* **[!UICONTROL Seleziona documento dati tramite]**: specifica il percorso di un file di dati di input. Puoi selezionare il file di dati di input utilizzando il percorso relativo al payload, salvato in un percorso assoluto oppure utilizzando una variabile di tipo dati Documento. Ad esempio: [Payload_Directory]/Workflow/data.xml. Se il percorso non esiste in crx-repository, un amministratore può crearlo prima di utilizzarlo.
 
-* **[!UICONTROL Formato stampante]**: Valore di formato di stampa che specifica il linguaggio di descrizione della pagina da utilizzare, quando non viene fornito un file XDC, per generare il flusso di output. Se si specifica un valore letterale, selezionare uno dei seguenti valori:
+* **[!UICONTROL Formato stampante]**: valore di Formato di stampa che specifica la lingua di descrizione della pagina da utilizzare, quando non viene fornito un file XDC, per generare il flusso di output. Se fornisci un valore letterale, seleziona uno dei seguenti valori:
 
-   * **[!UICONTROL PCL a colori]**: Utilizzare l&#39;opzione per specificare un file XDC per PCL.
-   * **[!UICONTROL PostScript generico]**: Utilizzare l&#39;opzione per specificare un file XDC generico per PostScript.
-   * **[!UICONTROL ZPL 300 DPI]**: Utilizzare ZPL 300 DPI. Viene utilizzato zpl300.xdc.
-   * **[!UICONTROL ZPL 600 DPI]**: Utilizzare ZPL 600 DPI. Viene utilizzato il file zpl600.xdc.
-   * **[!UICONTROL IPL 300 DPI]**: Utilizzare IPL 300 DPI. Viene utilizzato ipl300.xdc.
-   * **[!UICONTROL IPL 400 DPI]**: Utilizzare IPL 400 DPI. Viene utilizzato il file ipl400.xdc.
-   * **[!UICONTROL TPCL 600 DPI]**: Utilizzare TPCL 600 DPI. Viene utilizzato il file tpcl600.xdc.
-   * **[!UICONTROL Plain PostScript]**: Utilizzare l&#39;opzione per specificare un file XDC di testo normale per PostScript.
-   * **[!UICONTROL DPL300DPI]**: Utilizzare DPL 300 DPI. Viene utilizzato dpl300.xdc.
-   * **[!UICONTROL DPL400DPI]**: Utilizzare DPL 400 DPI. Viene utilizzato dpl400.xdc.
-   * **[!UICONTROL DPL600DPI]**: Utilizzare DPL 600 DPI. Viene utilizzato dpl600.xdc.
-   * **[!UICONTROL HP_PCL_5e]**: Utilizza l’opzione per supportare più dispositivi Canon.
+   * **[!UICONTROL PCL colore]**: utilizza l’opzione per specificare un file XDC per PCL.
+   * **[!UICONTROL PostScript generico]**: utilizza l’opzione per specificare un file XDC generico per PostScript.
+   * **[!UICONTROL ZPL 300 DPI]**: utilizzare ZPL 300 DPI. Viene utilizzato zpl300.xdc.
+   * **[!UICONTROL ZPL 600 DPI]**: utilizzare ZPL 600 DPI. Viene utilizzato il file zpl600.xdc.
+   * **[!UICONTROL IPL 300 DPI]**: utilizza IPL 300 DPI. Viene utilizzato ipl300.xdc.
+   * **[!UICONTROL IPL 400 DPI]**: utilizza IPL 400 DPI. Viene utilizzato il file ipl400.xdc.
+   * **[!UICONTROL TPCL 600 DPI]**: utilizza TPCL 600 DPI. Viene utilizzato il file tpcl600.xdc.
+   * **[!UICONTROL PostScript normale]**: utilizza l’opzione per specificare un file XDC in testo normale per PostScript.
+   * **[!UICONTROL DPL300DPI]**: utilizzare DPL 300 DPI. Viene utilizzato dpl300.xdc.
+   * **[!UICONTROL DPL400DPI]**: utilizzare DPL 400 DPI. Viene utilizzato dpl400.xdc.
+   * **[!UICONTROL DPL600DPI]**: utilizzare DPL 600 DPI. Viene utilizzato dpl600.xdc.
+   * **[!UICONTROL HP_PCL_5e]**: utilizza l’opzione per supportare più dispositivi Canon.
 
 
 **[!UICONTROL Proprietà di output]**
 
-* **[!UICONTROL Salva documento di output utilizzando]**: Specificare il percorso in cui salvare il file di output. È possibile salvare il file di output in una posizione relativa al payload, in una variabile, oppure specificare una posizione assoluta per salvare il file di output. Se il percorso non esiste in crx-repository, un amministratore può creare il percorso prima di utilizzarlo.
+* **[!UICONTROL Salva documento di output tramite]**: specifica il percorso in cui salvare il file di output. Puoi salvare il file di output in una posizione relativa al payload, in una variabile, oppure specificare una posizione assoluta per salvare il file di output. Se il percorso non esiste in crx-repository, un amministratore può crearlo prima di utilizzarlo.
 
 **[!UICONTROL Proprietà avanzate]**
 
-* **[!UICONTROL Selezionare la posizione principale del contenuto utilizzando]**: La directory principale del contenuto è un valore stringa che specifica l’URI, il riferimento assoluto o la posizione nell’archivio per recuperare le risorse relative utilizzate dalla struttura del modulo. Ad esempio, se la struttura del modulo fa riferimento a un’immagine relativamente, ad esempio ../myImage.gif, myImage.gif deve trovarsi all’indirizzo repository://. Il valore predefinito è repository://, che punta al livello principale dell&#39;archivio.
+* **[!UICONTROL Seleziona posizione principale contenuto tramite]**: radice del contenuto è un valore stringa che specifica l’URI, il riferimento assoluto o la posizione nell’archivio per recuperare le risorse relative utilizzate dalla progettazione del modulo. Ad esempio, se la progettazione del modulo fa riferimento a un’immagine relativamente, ad esempio `../myImage.gif`, `myImage.gif` deve essere in `repository://`. Il valore predefinito è `repository://`, che punta al livello principale dell’archivio.
 
-   Quando selezioni una risorsa dall&#39;applicazione, il percorso URI della directory principale contenuto deve avere la struttura corretta. Ad esempio, se un modulo viene prelevato da un&#39;applicazione denominata SampleApp e viene posizionato in SampleApp/1.0/forms/Test.xdp, l&#39;URI della directory principale del contenuto deve essere specificato come repository://administrator@password/Applications/SampleApp/1.0/forms/ o repository:/Applications/SampleApp/1.0/forms/ (quando l&#39;autorità è null). Quando l’URI della directory principale contenuto viene specificato in questo modo, i percorsi di tutte le risorse di riferimento nel modulo verranno risolti rispetto a questo URI.
+   Quando scegli una risorsa dall’applicazione, il percorso URI della directory principale del contenuto deve avere la struttura corretta. Ad esempio, se un modulo viene selezionato da un’applicazione denominata SampleApp e viene posizionato in `SampleApp/1.0/forms/Test.xdp`, l&#39;URI radice del contenuto deve essere specificato come `repository://administrator@password/Applications/SampleApp/1.0/forms/`, o `repository:/Applications/SampleApp/1.0/forms/` (quando l&#39;autorità è nulla). Quando l’URI della directory principale del contenuto viene specificato in questo modo, i percorsi di tutte le risorse a cui si fa riferimento nel modulo verranno risolti in base a questo URI.
 
-* **[!UICONTROL Seleziona il file XCI utilizzando]**: I file XCI vengono utilizzati per descrivere i font e altre proprietà utilizzati per gli elementi della struttura del modulo. È possibile mantenere un file XCI relativo al payload, in un percorso assoluto o utilizzando una variabile del tipo di dati Documento.
+* **[!UICONTROL Seleziona file XCI tramite]**: i file XCI vengono utilizzati per descrivere i font e altre proprietà utilizzati per gli elementi di progettazione dei moduli. È possibile mantenere un file XCI relativo al payload, in un percorso assoluto o utilizzando una variabile di tipo dati Documento.
 
-* **[!UICONTROL Impostazioni internazionali]**: Specifica la lingua utilizzata per generare il documento PDF. Se si specifica un valore letterale, selezionare una lingua dall’elenco o selezionare uno dei seguenti valori:
-   * **[!UICONTROL Per utilizzare le impostazioni predefinite del server]**: (Impostazione predefinita) Utilizza le impostazioni internazionali configurate nella [!DNL AEM Forms] Server. Le impostazioni internazionali sono configurate mediante la console di amministrazione. (Vedi [Guida di Designer](http://www.adobe.com/go/learn_aemforms_designer_65).)
+* **[!UICONTROL Lingua]**: specifica la lingua utilizzata per generare il documento PDF. Se fornisci un valore letterale, seleziona una lingua dall’elenco o scegli uno dei seguenti valori:
+   * **[!UICONTROL Per utilizzare il server predefinito]**: (impostazione predefinita) utilizza l’impostazione Locale configurata sul [!DNL AEM Forms] Server. L&#39;impostazione Locale viene configurata utilizzando la console di amministrazione. (vedere [Guida di Designer](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
-   * **[!UICONTROL Per utilizzare un valore personalizzato]**: Digitare il codice di impostazione internazionale nella casella letterale oppure selezionare una variabile di stringa contenente il codice di impostazione internazionale. Per un elenco completo dei codici locali supportati, consulta http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+   * **[!UICONTROL Per utilizzare un valore personalizzato]**: digita il codice locale nella casella letterale o seleziona una variabile stringa contenente il codice locale. Per un elenco completo dei codici delle impostazioni internazionali supportati, vedere https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
 
-* **[!UICONTROL Copie]**: Un valore intero che specifica il numero di copie da generare per l&#39;output. Il valore predefinito è 1.
+* **[!UICONTROL Copie]**: valore intero che specifica il numero di copie da generare per l’output. Il valore predefinito è 1.
 
-* **[!UICONTROL Stampa fronte retro]**: Valore di impaginazione che specifica se utilizzare la stampa fronte/retro o fronte/retro. Le stampanti che supportano PostScript e PCL utilizzano questo valore.Se si fornisce un valore letterale, selezionare uno dei seguenti valori:
-   * **[!UICONTROL Doppio lato lungo]**: Utilizzare la stampa e la stampa fronte/retro utilizzando l&#39;impaginazione a lungo termine.
-   * **[!UICONTROL Bordo corto duplex]**: Utilizzare la stampa e la stampa fronte/retro utilizzando l’impaginazione a bordi brevi.
-   * **[!UICONTROL Simplex]**: Utilizzare la stampa su un solo lato.
+* **[!UICONTROL Stampa fronte retro]**: valore di impaginazione che specifica se utilizzare la stampa fronte/retro o fronte/retro. Le stampanti che supportano PostScript e PCL utilizzano questo valore. Se fornisci un valore letterale, seleziona uno dei seguenti valori:
+   * **[!UICONTROL Bordo lungo fronte-retro]**: utilizza la stampa fronte/retro e la stampa con impaginazione a lungo termine.
+   * **[!UICONTROL Bordo corto fronte-retro]**: utilizza la stampa fronte/retro e la stampa con impaginazione lato corto.
+   * **[!UICONTROL Simplex]**: stampa fronte/retro.
 
-## Passaggio Genera output PDF non interattivo   {#generatePDFdocuments}
+## Genera passaggio di output PDF non interattivo   {#generatePDFdocuments}
 
 1. Trascina il flusso di lavoro Genera output PDF non interattivo nella scheda Forms Workflow nella barra laterale.
 1. Fai doppio clic sul passaggio del flusso di lavoro aggiunto per modificare il componente.
-1. Nella finestra di dialogo Modifica componente, configura documenti di input, documenti di output e parametri aggiuntivi e fai clic su **[!UICONTROL OK]**.
+1. Nella finestra di dialogo Modifica componente configura i documenti di input, i documenti di output e i parametri aggiuntivi, quindi fai clic su **[!UICONTROL OK]**.
 
 ### Documenti di input {#input-documents-3}
 
-* **File modello**: Specifica la posizione del modello XDP. È un campo obbligatorio.
+* **File modello**: specifica la posizione del modello XDP. È un campo obbligatorio.
 
-* **Documento dati**: Specifica la posizione del file xml di dati da unire al modello.
+* **Documento dati**: specifica la posizione dell&#39;xml dati da unire al modello.
 
 ### Documento di output {#output-document}
 
-**Documento di output**: Specifica il nome del modulo PDF generato.
+**Documento di output**: specifica il nome del modulo PDF generato.
 
 ### Parametri aggiuntivi {#additional-parameters-1}
 
-* **Directory principale dei contenuti**: Specifica il percorso della cartella nell&#39;archivio in cui sono archiviati i frammenti o le immagini utilizzati nel modello XDP di input.
-* **Impostazioni internazionali**: Specifica le impostazioni internazionali predefinite per il modulo PDF generato.
-* **Versione Acrobat**: Specifica la versione Acrobat di destinazione per il modulo PDF generato.
-* **PDF lineare**: Specifica se ottimizzare il PDF generato per la visualizzazione Web.
-* **PDF con tag**: Specifica se rendere accessibile il PDF generato.
-* **Documento XCI**: Specifica il percorso del file XCI.
+* **Directory principale contenuto**: specifica il percorso della cartella nell’archivio in cui vengono memorizzati i frammenti o le immagini utilizzati nel modello XDP di input.
+* **Lingua**: specifica le impostazioni locali predefinite per il modulo PDF generato.
+* **Versione Acrobat**: specifica la versione di Acrobat di destinazione per il modulo PDF generato.
+* **Linearized PDF**: specifica se ottimizzare il PDF generato per la visualizzazione Web.
+* **PDF con tag**: specifica se rendere accessibile il PDF generato.
+* **Documento XCI**: specifica il percorso del file XCI.
