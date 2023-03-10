@@ -3,7 +3,7 @@ title: Progetti
 description: I progetti consentono di raggruppare le risorse in un’entità con ambiente comune e condiviso, che semplifica la gestione dei progetti
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1259'
 ht-degree: 100%
 
