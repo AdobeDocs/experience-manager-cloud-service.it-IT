@@ -10,9 +10,9 @@ kt: 9452, 9464, 9465, 9466
 thumbnail: 339158.jpg
 exl-id: c6fc96a0-ff95-4fb9-8674-71e60d23ef5c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 11%
 
 ## Introduzione
 
-Scopri App Builder, le sue funzionalità e il valore aziendale fornito da App Builder.
+Scopri App Builder, le sue funzionalità e il suo valore aziendale.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
 
 ## Punti di contatto
 
-Scopri in che modo gli utenti finali interagiscono con SPA di App Builder e dove gli sviluppatori possono imparare a sviluppare app Builder.
+Scopri in che modo gli utenti finali interagiscono con SPA di App Builder e dove gli sviluppatori possono imparare a sviluppare App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
 
