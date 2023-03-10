@@ -1,27 +1,27 @@
 ---
-title: percorso di authoring dei contenuti di AEM Commerce
-description: Inizia qui per un percorso guidato tramite AEM Commerce Authoring
+title: Percorso di authoring dei contenuti in AEM Commerce
+description: Inizia qui un percorso guidato di authoring in AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '458'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
 # Percorso di authoring di contenuti AEM e Commerce {#aem-commerce-author-journey}
 
-Inizia qui per un percorso guidato attraverso AEM Contenuto e Commerce per scoprire come gestire le esperienze dei prodotti.
+Inizia qui un percorso guidato in contenuti AEM e Commerce per scoprire come gestire le esperienze dei prodotti.
 
 ## Introduzione {#introduction}
 
-Questa guida ti guida attraverso gli argomenti più importanti sull’authoring di contenuti e contenuti AEM e commerce in modo che, una volta completato:
+Questa guida illustra gli argomenti più importanti sui temi relativi all’authoring in contenuti AEM e Commerce in modo che, una volta completato:
 
-* Scopri le nozioni di base su Contenuto AEM e Commerce
-* Guida introduttiva AEM nozioni di base sull’authoring CIF
-* Creare esperienze catalogo prodotti con singoli modelli e contenuti
-* Gestire le esperienze catalogo prodotti in fase di staging
-* Arricchire i dati dei prodotti con i contenuti mediante gli strumenti di gestione dell’esperienza di prodotto
+* avrai appreso le nozioni di base sui contenuti AEM e Commerce
+* conoscerai le nozioni di base sull’authoring CIF di AEM
+* potrai creare esperienze del catalogo prodotti con singoli modelli e contenuti
+* potrai gestire esperienze del catalogo prodotti in fase di sviluppo
+* potrai arricchire i dati dei prodotti con i contenuti mediante gli strumenti di gestione dell’esperienza dei prodotti
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 
@@ -33,25 +33,25 @@ Se desideri sapere come Adobe consiglia di risolvere i casi aziendali relativi a
 
 ## Pubblico {#audience}
 
-Questo percorso è progettato per l’autore di contenuti Commerce AEM. Questo percorso descrive i requisiti, i passaggi e l’approccio per iniziare a gestire le pagine di catalogo, i modelli e le esperienze di prodotto complete.
+Questo percorso è progettato per l’authoring di contenuti in AEM Commerce. Questo percorso descrive i requisiti, le fasi e l’approccio per iniziare a gestire le pagine di catalogo, i modelli e le esperienze dei prodotti complete.
 
-Le informazioni in questo percorso possono ovviamente essere utili ad altri utenti, ma alcune informazioni saranno superflue a determinati ruoli. Rimani sintonizzato per i prossimi percorsi che includeranno ruoli aggiuntivi.
+Le informazioni di questo percorso possono essere utili per altri utenti tipo, ma alcune informazioni potrebbero essere superflue per certi ruoli. Rimani sintonizzato per i prossimi percorsi che includeranno ruoli aggiuntivi.
 
-## Il Percorso {#the-journey}
+## Il percorso {#the-journey}
 
-In questo percorso esplorerai molti argomenti. I seguenti articoli ti forniscono informazioni fondamentali e ti collegano alla documentazione tecnica dettagliata.
+In questo percorso esplorerai molti argomenti. I seguenti articoli ti forniscono le nozioni fondamentali e ti collegano alla documentazione tecnica dettagliata.
 
-Anche se puoi passare direttamente a una parte specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se hai poca esperienza con AEM Contenuto e Commerce, ti consigliamo di iniziare dall’inizio e procedere in sequenza.
+Sebbene tu possa accedere direttamente a una sezione specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Quindi, se stai usando contenuti AEM e Commerce per la prima volta, ti consigliamo di iniziare dalla prima parte e di andare avanti progressivamente.
 
 | # | Articolo | Descrizione |
 |---|---|---|
-| 0 | percorso per sviluppatori di contenuti AEM e commerce | Questo documento |
-| 1 | [Informazioni su AEM contenuti e commercio](/help/commerce-cloud/introduction.md) | Scopri i concetti e le nozioni di base su AEM contenuti e commercio. |
-| 2 | [Guida introduttiva alle nozioni di base sull’authoring CIF AEM](getting-started.md) | Scopri come accedere ai dati di prodotto e utilizzarli per i tuoi casi di utilizzo per l’authoring. |
+| 0 | Percorso per sviluppatori e sviluppatrici dei contenuti AEM e Commerce | Questo documento |
+| 1 | [Scopri di più sui contenuti AEM e Commerce](/help/commerce-cloud/introduction.md) | Scopri i concetti e le nozioni di base sui contenuti di AEM e Commerce. |
+| 2 | [Guida introduttiva alle nozioni di base sull’authoring CIF di AEM](getting-started.md) | Scopri come accedere ai dati di prodotto e utilizzarli per i tuoi casi di utilizzo per l’authoring. |
 | 3 | [Gestione delle pagine e dei modelli del catalogo dei prodotti](catalog-templates.md) | Scopri come creare una tipica esperienza di catalogo dei prodotti. |
-| 4 | [Gestire le esperienze catalogo prodotti in fase di staging](staged-catalog.md) | Scopri come creare un’esperienza di catalogo dei prodotti futura con dati e avvii di AEM. |
+| 4 | [Gestione di esperienze del catalogo prodotti in fase di sviluppo](staged-catalog.md) | Scopri come creare un’esperienza del catalogo prodotti futuri con dati in fase di sviluppo e lanci AEM. |
 | 5 | [Creazione di esperienze di prodotto](product-experience-management.md) | Scopri come migliorare i dati dei prodotti con contenuti coinvolgenti in AEM. |
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
-È ora possibile iniziare a utilizzare il percorso di sviluppo AEM contenuti e commercio. Ti invitiamo a continuare nella parte successiva del percorso e a leggere l&#39;articolo [Informazioni su AEM contenuti e commercio](/help/commerce-cloud/introduction.md).
+Ora puoi iniziare il percorso di sviluppo dei contenuti di AEM e Commerce. Ti invitiamo a continuare nella parte successiva del percorso e a leggere l’articolo [Scopri di più sui contenuti di AEM e Commerce](/help/commerce-cloud/introduction.md).
