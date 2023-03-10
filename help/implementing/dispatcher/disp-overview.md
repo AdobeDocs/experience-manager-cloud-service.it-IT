@@ -4,9 +4,9 @@ description: Dispatcher nel cloud
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 6ea869b3067d168c661ea925e112857c4bbd70e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1010'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
@@ -15,27 +15,27 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispoverview"
 >title="Dispatcher nel cloud"
->abstract="Questa pagina descrive come scaricare ed estrarre gli strumenti del dispatcher, i moduli apache supportati e fornisce una panoramica di alto livello delle modalità legacy e flessibile."
+>abstract="Questa pagina descrive come scaricare ed estrarre gli strumenti di dispatcher, i moduli Apache supportati e fornisce una panoramica di alto livello delle modalità legacy e flessibile."
 
 ## Introduzione {#apache-and-dispatcher-configuration-and-testing}
 
-Questa pagina descrive gli strumenti del dispatcher e come scaricarli ed estrarli, i moduli apache supportati e fornisce una panoramica di alto livello delle modalità legacy e flessibili. Sono inoltre disponibili ulteriori riferimenti sulla convalida, il debug e la migrazione della configurazione del Dispatcher da AMS a AEM as a Cloud Service. Vedi anche [questo video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) per ulteriori informazioni sulla distribuzione dei file dispatcher in un ambiente cloud service.
+Questa pagina descrive gli strumenti di Dispatcher e come scaricarli ed estrarli, i moduli Apache supportati e fornisce una panoramica di alto livello delle modalità legacy e flessibili. Sono inoltre disponibili ulteriori riferimenti sulla convalida, il debug e la migrazione della configurazione di Dispatcher da AMS a AEM as a Cloud Service. Vedi anche [questo video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html?lang=it) per ulteriori informazioni sulla distribuzione dei file Dispatcher in un ambiente cloud service.
 
-## Strumenti Dispatcher {#dispatcher-sdk}
+## Strumenti di Dispatcher {#dispatcher-sdk}
 
-Gli strumenti di Dispatcher fanno parte dell’SDK globale AEM as a Cloud Service e forniscono:
+Gli strumenti di Dispatcher fanno parte dell’SDK globale di AEM as a Cloud Service e forniscono:
 
 * Una struttura di file vaniglia contenente i file di configurazione da includere in un progetto Maven per Dispatcher.
-* Strumenti che consentono ai clienti di verificare che la configurazione di Dispatcher includa solo AEM direttive supportate as a Cloud Service.        Inoltre, il tooling verifica che la sintassi sia corretta in modo che apache possa avviarsi con successo.
+* Strumenti che consentono ai clienti di verificare che la configurazione di Dispatcher includa solo direttive supportate di AEM as a Cloud Service.        Inoltre, lo strumento verifica che la sintassi sia corretta in modo che Apache possa avviarsi correttamente.
 * Immagine Docker che porta il Dispatcher localmente.
 
 ## Download ed estrazione degli strumenti {#extracting-the-sdk}
 
-Strumenti di Dispatcher, parte del [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), può essere scaricato da un file zip all&#39;indirizzo [Distribuzione di software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portale. Qualsiasi nuova configurazione disponibile in quella nuova versione di Dispatcher Tools può essere utilizzata per distribuire agli ambienti Cloud che eseguono tale versione di AEM nel Cloud o nella versione successiva.
+Strumenti di Dispatcher, parte del [SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), può essere scaricato da un file zip al portale di [Distribuzione di software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Qualsiasi nuova configurazione disponibile in quella nuova versione di strumenti di Dispatcher può essere utilizzata per distribuire agli ambienti Cloud che eseguono tale versione di AEM nel Cloud o nella versione successiva.
 
-Decomprimi l’SDK, che crea i bundle degli strumenti Dispatcher per macOS, Linux e Windows.
+Decomprimi l’SDK, che crea i bundle degli strumenti di Dispatcher per macOS, Linux e Windows.
 
-**Per macOS/Linux**, rendi eseguibile l’artefatto dello strumento Dispatcher ed eseguilo. Estrae automaticamente i file degli strumenti del Dispatcher sotto la directory in cui è stato memorizzato (dove `version` è la versione degli strumenti di Dispatcher).
+**Per macOS/Linux**, rendi eseguibile l’artefatto dello strumento di Dispatcher ed eseguilo. Estrae automaticamente i file degli strumenti di Dispatcher sotto la directory in cui è stato memorizzato (dove `version` è la versione degli strumenti di Dispatcher).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -44,21 +44,21 @@ Verifying archive integrity...  100%   All good.
 Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**Per Windows**, estrae l’archivio zip Dispatcher Tooling.
+**Per Windows**, estrae l’archivio zip dello strumento di Dispatcher.
 
 ## Convalida e debug mediante gli strumenti di Dispatcher {#validation-debug}
 
-Gli strumenti del dispatcher vengono utilizzati per convalidare ed eseguire il debug della configurazione del Dispatcher del progetto. Scopri di più su come utilizzare questi strumenti nelle pagine a cui si fa riferimento di seguito, a seconda che la configurazione del dispatcher del progetto sia strutturata in modalità flessibile o in modalità legacy:
+Gli strumenti di dispatcher vengono utilizzati per convalidare ed eseguire il debug della configurazione del Dispatcher del progetto. Scopri di più su come utilizzare questi strumenti nelle pagine a cui si fa riferimento di seguito, a seconda che la configurazione del dispatcher del progetto sia strutturata in modalità flessibile o in modalità legacy:
 
-* **Modalità flessibile** - la modalità consigliata e l&#39;impostazione predefinita per [AEM archetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) e versioni successive, che viene utilizzato anche da Cloud Manager per i nuovi ambienti creati dopo la versione 2021.7.0 di Cloud Manager. I clienti possono attivare questa modalità aggiungendo la cartella e il file `opt-in/USE_SOURCES_DIRECTLY`. Utilizzando questa modalità più flessibile, non ci sono limitazioni nella struttura del file sotto la cartella di riscrittura che in modalità legacy richiedeva un singolo `rewrite.rules` file. Inoltre, non esiste alcuna limitazione al numero di regole che puoi aggiungere. Per informazioni dettagliate sulla struttura delle cartelle e sulla convalida locale, consulta [Convalida e debug tramite gli strumenti di Dispatcher](/help/implementing/dispatcher/validation-debug.md).
+* **Modalità flessibile**: la modalità consigliata e l’impostazione predefinita per [AEM archetipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) e versioni successive, che viene utilizzata anche da Cloud Manager per i nuovi ambienti creati dopo la versione 2021.7.0 di Cloud Manager. I clienti possono attivare questa modalità aggiungendo la cartella e il file `opt-in/USE_SOURCES_DIRECTLY`. Utilizzando questa modalità più flessibile, non ci sono limitazioni nella struttura del file sotto la cartella di riscrittura che in modalità legacy richiedeva un singolo file `rewrite.rules`. Inoltre, non esiste alcuna limitazione al numero di regole che puoi aggiungere. Per informazioni dettagliate sulla struttura delle cartelle e sulla convalida locale, consulta [Convalida e debug tramite gli strumenti di Dispatcher](/help/implementing/dispatcher/validation-debug.md).
 
-* **Modalità legacy** - per informazioni sulla struttura delle cartelle e sulla convalida locale per la configurazione del dispatcher in modalità legacy, consulta [Convalida e debug tramite gli strumenti di Dispatcher (legacy)](/help/implementing/dispatcher/validation-debug-legacy.md)
+* **Modalità legacy**: per informazioni sulla struttura delle cartelle e sulla convalida locale per la modalità legacy di configurazione del dispatcher, consulta [Convalida e debug tramite gli strumenti di Dispatcher (legacy)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
-Per ulteriori informazioni su come migrare dal modello di configurazione legacy a quello più flessibile, fornito con AEM archetipo 28 in poi, vedi [questa documentazione](/help/implementing/dispatcher/validation-debug.md#migrating).
+Per ulteriori informazioni su come eseguire la migrazione dal modello di configurazione legacy a quello più flessibile, fornito dall&#39;archetipo 28 di AEM in poi, vedi [questa documentazione](/help/implementing/dispatcher/validation-debug.md#migrating).
 
 ## Disposizione dei contenuti {#content-disposition}
 
-Per il livello di pubblicazione, l’impostazione predefinita per il servizio dei BLOB è come allegato. Questo può essere ignorato utilizzando lo standard [intestazione di disposizione dei contenuti](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) nel dispatcher.
+Per il livello di pubblicazione, l’impostazione predefinita per il servizio dei blob è come allegato. Questo può essere ignorato utilizzando l’[intestazione di disposizione dei contenuti](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) standard nel dispatcher.
 
 Di seguito è riportato un esempio di come dovrebbe essere la configurazione:
 
@@ -103,7 +103,7 @@ La tabella seguente mostra i moduli Apache supportati:
 | `mod_include (no directives supported)` | [https://httpd.apache.org/docs/2.4/mod/mod_include.html](https://httpd.apache.org/docs/2.4/mod/mod_include.html) |
 
 
-I clienti non possono aggiungere moduli arbitrari, tuttavia è possibile considerare moduli aggiuntivi da includere in futuro. I clienti possono trovare l’elenco delle direttive disponibili per una determinata versione di Dispatcher eseguendo il comando di inserire nell&#39;elenco Consentiti convalida nell’SDK.
+I clienti non possono aggiungere moduli arbitrari, tuttavia è possibile considerare moduli aggiuntivi da includere in futuro. I clienti possono trovare l’elenco delle direttive disponibili per una determinata versione di Dispatcher eseguendo il comando di inserire nell&#39;elenco Consentiti della convalida nell’SDK.
 
 Le direttive consentite nei file di configurazione Apache possono essere elencate eseguendo il comando di inserire nell&#39;elenco Consentiti della convalida:
 
@@ -119,8 +119,8 @@ Allowlisted directives:
 
 ## Struttura delle cartelle {#folder-structure}
 
-La struttura di cartelle apache e dispatcher del progetto varia leggermente in base alla modalità utilizzata dal progetto, come descritto in [Convalida e debug mediante gli strumenti di Dispatcher](#validation-debug) sezione precedente.
+La struttura delle cartelle apache e dispatcher del progetto varia leggermente in base alla modalità utilizzata dal progetto, come descritto nella sezione precedente [Convalida e debug mediante gli strumenti di Dispatcher](#validation-debug).
 
-## Migrazione della configurazione del Dispatcher da AMS {#ams-aem}
+## Migrazione della configurazione di Dispatcher da AMS {#ams-aem}
 
-Per informazioni dettagliate su come migrare la configurazione del Dispatcher da AMS a AEM as a Cloud Service, consulta la sezione [Migrazione della configurazione del Dispatcher da AMS a AEM](/help/implementing/dispatcher/ams-aem.md) Pagina as a Cloud Service.
+Per informazioni dettagliate su come migrare la configurazione di Dispatcher da AMS a AEM as a Cloud Service, consulta la pagina [Migrazione della configurazione di Dispatcher da AMS a AEM](/help/implementing/dispatcher/ams-aem.md) as a Cloud Service.
