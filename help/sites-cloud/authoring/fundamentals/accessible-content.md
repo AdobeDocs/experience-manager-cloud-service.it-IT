@@ -2,9 +2,9 @@
 title: Creazione di contenuti accessibili per Adobe Experience Manager as a Cloud Service (conformità WCAG 2.1)
 description: Utilizzare AEM as a Cloud Service per rendere il contenuto web accessibile e fruibile per le persone con disabilità
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '13853'
+source-wordcount: '13870'
 ht-degree: 71%
 
 ---
@@ -100,7 +100,7 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 * Icone: Si tratta di piccoli pittogrammi (immagini) che veicolano informazioni specifiche. Devono essere utilizzati in modo coerente all’interno di una pagina e del sito. Tutte le istanze dell’icona in una pagina o in un sito devono avere lo stesso testo alternativo, breve e sintetico, a meno che questo determini inutili duplicazioni di testo adiacente.
 * Grafici e diagrammi: in genere rappresentano dati numerici. Pertanto, un&#39;opzione per fornire un testo alternativo potrebbe essere quella di includere un breve riepilogo delle principali tendenze mostrate nel grafico o grafico. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando **Descrizione** campo in **Avanzate** scheda proprietà immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
 * Mappe, diagrammi, diagrammi di flusso: per gli elementi grafici che forniscono dati spaziali (ad esempio, per la descrizione di relazioni tra oggetti o un processo), assicurati che il messaggio principale venga comunicato in formato testuale e che tali informazioni testuali vengano posizionate in prossimità di ciascun punto di dati associato. Per le mappe, potrebbe non risultare pratico fornire un equivalente di testo completo. Se la mappa ha lo scopo di aiutare le persone a individuare una posizione particolare, il testo alternativo dell’immagine della mappa può indicare brevemente *Mappa di X*, fornendo poi le indicazioni per tale posizione in un altro testo della pagina o attraverso il campo **Descrizione**, disponibile nella scheda **Avanzate** del componente **Immagine**.
-* CAPTCHA: un CAPTCHA è un *Test di Turing completamente automatizzato per distinguere computer e persone*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani dal software dannoso, ma che può causare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che visualizzano per superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche. Il W3C fornisce diversi suggerimenti. Ognuno di questi approcci ha i propri meriti e svantaggi.
+* CAPTCHA: Un CAPTCHA è un *Test di Turing completamente automatizzato per distinguere computer e persone*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani dal software dannoso, ma che può causare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che visualizzano per superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche. Il W3C fornisce diversi suggerimenti. Ognuno di questi approcci ha i propri meriti e svantaggi.
 
    * Puzzle logici
    * L’impiego di output audio anziché di immagini
@@ -115,7 +115,7 @@ Dovrebbe essere previsto un livello adeguato di contrasto tra lo sfondo e il tes
 
 * [Comprendere i criteri di successo 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Come soddisfare i criteri di successo 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [Spiegazione W3C dei CAPTCHA e relative alternative](https://www.w3.org/TR/turingtest/)
+* [Spiegazione W3C del CAPTCHA e relative alternative](https://www.w3.org/TR/turingtest/)
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -197,9 +197,9 @@ Se è necessario utilizzare sottotitoli non codificati, inserisci il testo nella
 * [Comprendere i criteri di successo 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [Come soddisfare i criteri di successo 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-<!--
-* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
-* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+c
+* [W3C: File multimediali sincronizzati](https://www.w3.org/AudioVideo/)
+* [Sottotitoli, trascrizioni e descrizioni audio, di WebAIM](https://webaim.org/techniques/captions/)
 -->
 
 ### Audiodescrizione o tipo di media alternativo (preregistrato) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
@@ -251,7 +251,7 @@ Seguire le indicazioni fornite per [Sottotitoli (preregistrati)](#captions-prere
 
 Istruzioni dettagliate al riguardo vanno oltre lo scopo di questo documento, ma informazioni utili sono reperibili tramite le risorse seguenti:
 
-* [WebAIM: aggiunta di sottotitoli in tempo reale](https://webaim.org/techniques/captions/realtime)
+* [WebAIM: sottotitoli in tempo reale](https://webaim.org/techniques/captions/realtime)
 
 * [Progetto AccessComputing (University of Washington): i sottotitoli possono essere generati automaticamente utilizzando il riconoscimento vocale?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -538,13 +538,13 @@ Ricorda che il rendering dei font varia a seconda delle dimensioni PT/PX/EM equi
 Utilizza il buon senso ed esprimi dal punto di vista della leggibilità e dell’usabilità quando selezioni i font e le dimensioni appropriati per i contenuti web.
 
 >[!NOTE]
-I seguenti strumenti possono essere utili per la conversione in altre unità:
-* [Calcolatore da Px a Em](https://www.omnicalculator.com/conversion/px-to-em)
-* [Conversione dimensione font: pixel-point-em-rem-percent](https://www.websemantics.uk/tools/)
-* [Convertitore da pixel a EM](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+Effettuare una ricerca Web nelle seguenti frasi per trovare gli strumenti che possono facilitare la conversione in altre unità:
+* Calcolatore da Px a Em <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+* Conversione dimensione font: pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+* Convertitore da pixel a EM <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 
-Per controllare i rapporti di contrasto, utilizza uno strumento di contrasto del colore, come ad esempio [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) o [l’utilità di controllo del contrasto di colore di WebAIM](https://webaim.org/resources/contrastchecker/). Questi strumenti consentono di controllare le coppie di colori ed evidenziano eventuali problemi di contrasto.
+Per controllare i rapporti di contrasto, usate uno strumento di contrasto del colore, ad esempio [Analisi del contrasto del colore del gruppo Paciello](https://www.tpgi.com/resources/contrast-analyser.html) o [Verifica contrasto colore WebAIM](https://webaim.org/resources/contrastchecker/). Questi strumenti consentono di controllare coppie di colori e segnalare eventuali problemi di contrasto.
 
 In alternativa, se non si desidera specificare l&#39;aspetto della pagina, è possibile scegliere di non specificare i colori del testo di sfondo e di primo piano. Non è richiesto alcun controllo del contrasto, in quanto il browser dell&#39;utente determina i colori del testo e dello sfondo.
 
@@ -846,7 +846,7 @@ John Smith's publications
 >[!NOTE]
 Il frammento di codice sopra ha esclusivamente scopo illustrativo; si consiglia di utilizzare il componente **Immagine**.
 
-Mentre è opportuno fornire un testo di collegamento che identifichi lo scopo del collegamento senza necessità di ulteriore contesto, questo effettivamente non è sempre possibile. I collegamenti senza contesto possono essere utilizzati nei casi seguenti, di cui è possibile trovare alcuni esempi HTML in [Come soddisfare il criterio di successo 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Sebbene sia consigliabile fornire un testo di collegamento che identifichi lo scopo del collegamento senza necessità di ulteriore contesto, questo non è sempre possibile. I collegamenti senza contesto possono essere utilizzati nei casi seguenti, di cui è possibile trovare alcuni esempi HTML in [Come soddisfare il criterio di successo 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Qualora il testo di collegamento sia parte di un elenco di collegamenti strettamente correlati, e la voce di elenco che racchiude il collegamento fornisca contesto sufficiente.
 * Laddove lo scopo di un collegamento possa essere chiaramente identificato dal testo di paragrafo *che lo precede* (non che lo segue).

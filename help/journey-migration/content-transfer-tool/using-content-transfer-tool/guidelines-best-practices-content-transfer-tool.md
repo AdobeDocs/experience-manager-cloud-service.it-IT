@@ -2,10 +2,10 @@
 title: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
 source-wordcount: '1554'
-ht-degree: 19%
+ht-degree: 23%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 19%
 
 È disponibile una nuova versione dello strumento Content Transfer (Trasferimento contenuti) che integra il processo di trasferimento dei contenuti con Cloud Acceleration Manager. Si consiglia vivamente di passare a questa nuova versione per sfruttare tutti i vantaggi che offre:
 
-* Metodo self-service per estrarre un set di migrazione una volta e acquisirlo in più ambienti in parallelo
-* Miglioramento dell&#39;esperienza utente grazie a migliori stati di caricamento, guardrail e gestione degli errori
-* I registri di acquisizione sono persistenti e sono sempre disponibili per la risoluzione dei problemi
+* Modalità self-service per estrarre un set di migrazione in una sola volta e trasferirlo in più ambienti in parallelo
+* Miglioramento dell’esperienza utente grazie a stati di caricamento, guardrail e gestione degli errori più efficienti
+* I registri di acquisizione vengono mantenuti e sono sempre disponibili per la risoluzione dei problemi
 
 Per iniziare a utilizzare la nuova versione, è necessario disinstallare le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti). Questo è necessario perché la nuova versione viene fornita con un importante cambiamento architettonico. Con la versione 2.x, è necessario creare nuovi set di migrazione ed eseguire nuovamente l’estrazione e l’acquisizione sui nuovi set di migrazione.
 Le versioni precedenti alla 2.0.0 non saranno più supportate ed è consigliabile utilizzare la versione più recente.
@@ -71,9 +71,9 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * La chiave di estrazione è valida per 14 giorni dal momento in cui è stata creata/rinnovata. Può essere rinnovato in qualsiasi momento. Se la chiave di estrazione è scaduta, non potrai eseguire un’estrazione.
 
-* Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferirlo dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione del contenuto in un ambiente di pubblicazione. Qualsiasi contenuto specificato nel set di migrazione verrà acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author, Publish o entrambe. Durante lo spostamento del contenuto in un’istanza di produzione, si consiglia di installare CTT nell’istanza di authoring di origine per spostare il contenuto nell’istanza di authoring di destinazione e, analogamente, di installare CTT nell’istanza di pubblicazione di origine per spostare il contenuto nell’istanza di pubblicazione di destinazione. Fai riferimento a [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.md?lang=en#running-ctt-on-publish) per ulteriori dettagli.
+* Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferirlo dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione del contenuto in un ambiente di pubblicazione. Qualsiasi contenuto specificato nel set di migrazione verrà acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author, Publish o entrambe. Durante lo spostamento del contenuto in un’istanza di produzione, si consiglia di installare CTT nell’istanza di authoring di origine per spostare il contenuto nell’istanza di authoring di destinazione e, analogamente, di installare CTT nell’istanza di pubblicazione di origine per spostare il contenuto nell’istanza di pubblicazione di destinazione. Consulta [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) per ulteriori dettagli.
 
-* Gli utenti e i gruppi trasferiti dallo strumento Content Transfer (Trasferimento contenuti) sono solo quelli necessari per il contenuto per soddisfare le autorizzazioni. Il _Estrazione_ processo copia l&#39;intero `/home` nel set di migrazione e esegue la mappatura degli utenti aggiungendo un campo creato dall’indirizzo e-mail di ciascun utente. Per ulteriori informazioni, consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).  Il _Acquisizione_ process copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL dei contenuti migrati.
+* Gli utenti e i gruppi trasferiti dallo strumento Content Transfer (Trasferimento contenuti) sono solo quelli necessari per il contenuto per soddisfare le autorizzazioni. Il _Estrazione_ processo copia l&#39;intero `/home` nel set di migrazione e esegue la mappatura degli utenti aggiungendo un campo creato dall’indirizzo e-mail di ciascun utente. Per ulteriori informazioni, consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Il _Acquisizione_ process copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL dei contenuti migrati.
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 

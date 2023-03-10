@@ -4,9 +4,9 @@ description: Linee guida e best practice per l’utilizzo dello strumento Conten
 hide: true
 hidefromtoc: true
 exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1476'
 ht-degree: 14%
 
 ---
@@ -57,7 +57,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Il token di accesso può scadere periodicamente dopo un periodo di tempo specifico o dopo l’aggiornamento dell’ambiente del Cloud Service. Se il token di accesso è scaduto, non è possibile connettersi all’istanza di Cloud Service. In questo caso, devi recuperare il nuovo token di accesso. L’icona di stato associata a un set di migrazione esistente diventa una nuvola rossa e visualizza un messaggio quando ci passi sopra con il cursore.
 
-* Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferirlo dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione del contenuto in un ambiente di pubblicazione. Qualsiasi contenuto specificato nel set di migrazione viene acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author, Publish o entrambe. Durante lo spostamento di contenuti in un’istanza Production, installa CTT nell’istanza Author di origine per spostare i contenuti nell’istanza Author di destinazione. Allo stesso modo, installa CTT sull’istanza Publish di origine per spostare il contenuto nell’istanza Publish di destinazione. Fai riferimento a [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) per ulteriori dettagli.
+* Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferirlo dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione del contenuto in un ambiente di pubblicazione. Qualsiasi contenuto specificato nel set di migrazione viene acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author, Publish o entrambe. Durante lo spostamento di contenuti in un’istanza Production, installa CTT nell’istanza Author di origine per spostare i contenuti nell’istanza Author di destinazione. Allo stesso modo, installa CTT sull’istanza Publish di origine per spostare il contenuto nell’istanza Publish di destinazione. Consulta [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) per ulteriori dettagli.
 
 * Gli utenti e i gruppi trasferiti dallo strumento Content Transfer (Trasferimento contenuti) sono solo quelli necessari per il contenuto per soddisfare le autorizzazioni. Il *Estrazione* processo copia l&#39;intero `/home` nel set di migrazione e nel *Acquisizione* process copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL dei contenuti migrati. Per mappare automaticamente gli utenti e i gruppi esistenti ai loro ID IMS, consulta [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
 
