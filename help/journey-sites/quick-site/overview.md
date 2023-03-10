@@ -3,7 +3,7 @@ title: Percorso di creazione di siti rapidi AEM
 description: Inizia qui per un percorso guidato attraverso lo strumento Creazione rapida sito di AEM facile da usare che permette di semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza alcuna conoscenza del back-end di AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1030'
 ht-degree: 100%
 
@@ -51,12 +51,12 @@ Questo percorso descrive i requisiti, i passaggi e l’approccio per personalizz
 In questo percorso esplorerai molti argomenti. I seguenti articoli forniscono informazioni fondamentali sulla creazione e la personalizzazione di siti AEM mediante lo strumento Creazione rapida di siti e collegamenti a una documentazione tecnica dettagliata.
 
 |#|Articolo|Descrizione|Ruolo responsabile|
-|—|—|—|—|
+|---|---|---|--|
 |0|AEM Percorso di creazione di siti rapidi|Questo documento|Amministratori di AEM e Cloud Manager|
 |1|[Comprendere Cloud Manager e il flusso di lavoro di Creazione rapida di siti rapidi](cloud-manager.md)|Scopri Cloud Manager e come si unisce al nuovo processo di Creazione rapida di siti.|Amministratore AEM|
 |2|[Crea sito da modello](create-site.md)|Scopre come creare rapidamente un nuovo sito AEM utilizzando un modello di sito.|Amministratore AEM|
-|3|[Configura la pipeline](pipeline-setup.md)|Crea una pipeline front-end per gestire la personalizzazione del tema del sito.Amministratore di Cloud Manager|
-|4|[Concede l’accesso allo sviluppatore front-end](grant-access.md)|Esegue l’onboarding degli sviluppatori front-end in Cloud Manager in modo che possano accedere all’archivio Git del sito AEM e alla pipeline.Amministratore di Cloud Manager|
+|3|[Configura la pipeline](pipeline-setup.md)|Crea una pipeline front-end per gestire la personalizzazione del tema del sito.|Amministratore di Cloud Manager|
+|4|[Concede l’accesso allo sviluppatore front-end](grant-access.md)|Esegue l’onboarding degli sviluppatori front-end in Cloud Manager in modo che possano accedere all’archivio Git del sito AEM e alla pipeline.|Amministratore di Cloud Manager|
 |5|[Recupera le informazioni di accesso all’archivio Git](retrieve-access.md)|Scopre in che modo lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell’archivio Git.|Sviluppatore front-end|
 |6|[Personalizza il tema del sito](customize-theme.md)|Scopre come viene creato un tema del sito, come personalizzarlo e come testarlo utilizzando il contenuto live AEM.|Sviluppatore front-end|
 |7|[Distribuisce il tema personalizzato](deploy-theme.md)|Scopre come distribuire il tema del sito utilizzando la pipeline.|Sviluppatore front-end|
