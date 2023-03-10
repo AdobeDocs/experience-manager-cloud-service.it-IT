@@ -6,7 +6,7 @@ hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '932'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ AEM Sites è un potente set di strumenti per la creazione e la gestione di esper
 
 Per tradurre i contenuti, AEM offre strumenti altrettanto potenti, che consentono la distribuzione più rapida possibile al pubblico in altre aree geografiche o con diverse impostazioni internazionali. Questo percorso di documentazione introduce gli strumenti di authoring per comprendere come viene creato e gestito il contenuto in AEM, per poi passare a ciò che è necessario sapere per gestire il progetto di traduzione.
 
-Se conosci già AEM Sites e le tue esigenze di traduzione, potresti avere già le conoscenze di base di questo percorso. In caso affermativo, considera la possibilità di fare riferimento alla nostra documentazione tecnica collegata alla [ sezione risorse aggiuntive più avanti](#additional-resources).
+Se conosci già AEM Sites e le tue esigenze di traduzione, potresti avere già le conoscenze di base di questo percorso. In caso affermativo, considera la possibilità di fare riferimento alla nostra documentazione tecnica collegata alla [sezione risorse aggiuntive più avanti](#additional-resources).
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 
@@ -44,7 +44,7 @@ Di seguito sono riportati gli utenti tipo che interagiscono in questo percorso.
 |---|---|---|
 | Specialista di traduzione | Definisce il contenuto da tradurre e gestisce i flussi di lavoro relativi | Pubblico di questo percorso |
 | Autore del contenuto | Crea e gestisce i contenuti consegnati come siti | Gli autori dei contenuti creano i contenuti che devono essere tradotti dallo specialista della traduzione. |
-| Administrator | Gestisce l’impostazione e la configurazione di base di AEM | Lo specialista di traduzione collabora con l’amministratore per apportare le modifiche di configurazione necessarie per la traduzione, ad esempio per l’installazione di un connettore di traduzione. |
+| Amministratore | Gestisce l’impostazione e la configurazione di base di AEM | Lo specialista di traduzione collabora con l’amministratore per apportare le modifiche di configurazione necessarie per la traduzione, ad esempio per l’installazione di un connettore di traduzione. |
 | Architetto dei contenuti | Analizza i requisiti dei dati che devono essere consegnati come siti e ne definisce la struttura | Gli esperti di traduzione collaborano con l&#39;architetto dei contenuti per definirne l&#39;organizzazione in modo che possano essere facilmente tradotti. |
 
 Le informazioni in questo percorso possono ovviamente essere utili a tutti gli utenti, ma alcune possono essere superflue per determinati ruoli. Rimani sintonizzato per [i prossimi percorsi che includeranno ruoli aggiuntivi.](/help/journey-documentation/documentation-journeys.md#journeys)
