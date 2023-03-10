@@ -1,14 +1,14 @@
 ---
 title: Come si crea una sequenza di moduli a più passaggi?
-description: Con [!DNL Experience Manager Forms], è possibile definire una sequenza di pannelli per consentire agli utenti di spostarsi e compilare un modulo adattivo. Approfondisci la profondità adottando un approccio basato su casi d’uso come esempio per creare una sequenza di moduli a più passaggi.
+description: Con [!DNL Experience Manager Forms], è possibile definire una sequenza di pannelli per consentire agli utenti di spostarsi e compilare un modulo adattivo. Per approfondire, prendi un caso d’uso come esempio per creare una sequenza di moduli a più passaggi.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -22,26 +22,26 @@ Se il tuo caso d’uso richiede una serie di passaggi per l’acquisizione dei d
 
 Esempio di sequenza di moduli a più passaggi
 
-Prendiamo un caso d’uso in cui è necessario creare una sequenza per compilare, verificare, firmare e confermare i passaggi di un modulo. La procedura per creare una sequenza di questo tipo è la seguente:
+Prendiamo un caso d’uso in cui è necessario creare una sequenza per compilare, verificare, firmare e confermare i passaggi di un modulo. I passaggi per creare una sequenza di questo tipo sono i seguenti:
 
 1. Definire un modello di modulo e aggiungergli il pannello richiesto. Dovrebbe essere disponibile un pannello per ogni passaggio della sequenza. Tuttavia, puoi includere i pannelli secondari all’interno di un pannello.
 
    In questo esempio, possiamo aggiungere i seguenti pannelli:
 
-   * **[!UICONTROL Riempimento]**: Contiene campi dei moduli per l’acquisizione dei dati. In questo caso è possibile includere pannelli secondari nidificati per creare sezioni per diversi tipi di informazioni, ad esempio personali, familiari, finanziarie e così via.
+   * **[!UICONTROL Riempimento]**: contiene campi dei moduli per l’acquisizione dei dati. In questo caso è possibile includere pannelli secondari nidificati per creare sezioni per diversi tipi di informazioni, ad esempio personali, familiari, finanziarie e così via.
 
    <!--* **[!UICONTROL Verify]**: It contains the **[!UICONTROL Verify]** component that can be used in an XFA-based Adaptive Form. It displays the information captured in the Fill panel in read-only mode for verification.-->
 
 
-   * **[!UICONTROL E-sign]**: Contiene il **[!UICONTROL Sign]** che può essere utilizzato in un modulo adattivo basato su XFA. Fornisce i seguenti servizi di firma:
+   * **[!UICONTROL Firma elettronica]**: contiene il componente **[!UICONTROL Firma]** che può essere utilizzata in un modulo adattivo basato su XFA. Fornisce i seguenti servizi di firma:
 
-      * Servizi eSign di Adobe Document Cloud
+      * Servizi di firma elettronica di Adobe Document Cloud
       * Firma scarabocchio
-   * **[!UICONTROL Conferma]**: Contiene il **[!UICONTROL Riepilogo]** che visualizza un messaggio di conferma dell’invio del modulo dopo che un utente firma il modulo e raggiunge il passaggio Conferma (riepilogo) nella sequenza. Gli autori possono configurare il testo [!UICONTROL Riepilogo] , mostrare un messaggio di ringraziamento, mostrare un collegamento al PDF generato e così via.
+   * **[!UICONTROL Conferma]**: contiene il componente **[!UICONTROL Riepilogo]** che visualizza un messaggio di conferma dell’invio del modulo dopo che un utente firma il modulo e raggiunge il passaggio Conferma (riepilogo) nella sequenza. Gli autori possono configurare il testo del componente [!UICONTROL Riepilogo] con un messaggio di ringraziamento, un collegamento al PDF generato e così via.
 
 
 
-1. Seleziona il layout del pannello principale come **[!UICONTROL Creazione guidata]**.
+1. Seleziona il layout del pannello principale come **[!UICONTROL Procedura guidata]**.
 1. Completare i passaggi successivi per creare il modello di modulo. <!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->
 
 Dopo aver definito la sequenza del modulo nel modello di modulo, è possibile utilizzarla per creare moduli che avranno la struttura di base definita come sequenza in posizione, anche se è sempre possibile personalizzare il modulo in base alle proprie esigenze.
