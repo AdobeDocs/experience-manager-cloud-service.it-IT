@@ -3,9 +3,9 @@ title: Configura il connettore di traduzione per il contenuto headless
 description: Scopri come connettere AEM a un servizio di traduzione.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1234'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -15,10 +15,10 @@ Scopri come connettere AEM a un servizio di traduzione.
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione senza testa AEM, [Guida introduttiva alla traduzione senza testa AEM](learn-about.md) hai imparato a organizzare i contenuti headless e come funzionano gli strumenti di traduzione AEM e dovresti ora:
+Nel documento precedente del percorso di traduzione di AEM headless, [Guida introduttiva alla traduzione in AEM headless](learn-about.md), hai imparato a organizzare i contenuti headless e il modo in cui gli strumenti di traduzione di AEM funzionano. Ora dovresti:
 
 * Comprendere l’importanza della struttura dei contenuti per la traduzione.
-* Comprendere come AEM memorizza i contenuti headless.
+* Avere compreso come AEM archivia il contenuto headless.
 * Conoscere gli strumenti di traduzione di AEM.
 
 Questo articolo si basa su queste nozioni di base per permetterti di compiere il primo passaggio di configurazione e impostare un servizio di traduzione, che utilizzerai successivamente nel percorso per tradurre i contenuti.
@@ -66,7 +66,7 @@ Dopo aver installato il pacchetto del connettore per il servizio di traduzione p
 
 * Quale fornitore di servizi di traduzione utilizzare
 * Se deve essere eseguita la traduzione umana o automatica
-* Se tradurre altri contenuti associati al frammento di contenuto, ad esempio i tag
+* Se tradurre altri contenuti associati ai Frammenti di contenuto, come i tag
 
 Per creare una nuova configurazione di traduzione:
 
@@ -78,14 +78,14 @@ Per creare una nuova configurazione di traduzione:
 
 1. Fornisci le seguenti informazioni nei campi, quindi tocca o fai clic su **Crea**.
    1. Seleziona **Tipo di configurazione** nel menu a discesa. Seleziona **Integrazione della traduzione** dall’elenco.
-   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione nella console **Cloud Services** così come nell’elenco a discesa delle proprietà della pagina.
+   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione nella console **Servizi cloud** così come nell’elenco a discesa delle proprietà della pagina.
    1. Facoltativamente, digita un **Nome** da utilizzare per il nodo dell’archivio che memorizza la configurazione.
 
    ![Creare una configurazione di traduzione](assets/create-translation-configuration.png)
 
 1. Tocca o fai clic su **Crea**, viene visualizzata la finestra **Modifica configurazione** in cui è possibile configurare le proprietà di configurazione.
 
-1. I frammenti di contenuto sono memorizzati come risorse in AEM. Tocca o fai clic sul pulsante **Risorse** scheda .
+1. I frammenti di contenuto sono memorizzati come risorse in AEM. Tocca o fai clic sulla scheda **Risorse**.
 
 ![Proprietà di configurazione della traduzione](assets/translation-configuration.png)
 
@@ -94,13 +94,13 @@ Per creare una nuova configurazione di traduzione:
    1. **Metodo di traduzione** - Seleziona **Traduzione automatica** o **Traduzione manuale** a seconda del provider di traduzione. Ai fini di questo percorso, si assume la traduzione automatica.
    1. **Fornitori di traduzioni** - Seleziona dall’elenco il connettore installato per il servizio di traduzione.
    1. **Categoria contenuto** - Seleziona la categoria più appropriata per eseguire meglio il targeting della traduzione (solo per la traduzione automatica).
-   1. **Tradurre le risorse dei frammenti di contenuto** : seleziona questa opzione per tradurre le risorse associate ai frammenti di contenuto.
-   1. **Tradurre le risorse** - Controlla questo per tradurre le risorse.
-   1. **Traduci metadati** - Controlla questo per tradurre i metadati delle risorse.
-   1. **Traduci tag** - Seleziona questa opzione per tradurre i tag associati alla risorsa.
+   1. **Traduci le risorse dei Frammenti di contenuto**: seleziona questa opzione per tradurre le risorse associate ai Frammenti di contenuto.
+   1. **Traduci risorse**: seleziona questa opzione per tradurre le risorse.
+   1. **Traduci metadati**: seleziona questa opzione per tradurre i metadati delle risorse.
+   1. **Traduci tag**: seleziona questa opzione per tradurre i tag associati alle risorse.
    1. **Esegui automaticamente la traduzione** - Seleziona questa proprietà se vuoi che le traduzioni vengano inviate automaticamente al tuo servizio di traduzione.
-   1. **Disattiva la traduzione solo aggiornamento** - Quando questa opzione è selezionata, l’aggiornamento del progetto di traduzione invierà tutti i campi traducibili per la traduzione, non solo quelli modificati dall’ultima traduzione. L’aggiornamento del progetto di traduzione verrà discusso più avanti nel percorso.
-   1. **Abilita campi del modello di contenuto per la traduzione** - Seleziona questa opzione in modo che la configurazione di traduzione riconosca automaticamente i campi nei Modelli di contenuto in base al **Traducibile** bandiera.
+   1. **Disattiva la traduzione di solo aggiornamento**: quando questa opzione è selezionata, l’aggiornamento del progetto di traduzione invierà in traduzione tutti i campi traducibili, non solo quelli modificati dall’ultima traduzione. L’aggiornamento del progetto di traduzione verrà discusso più avanti nel percorso.
+   1. **Abilita campi del modello di contenuto per la traduzione**: seleziona questa opzione in modo che la configurazione di traduzione riconosca automaticamente i campi nei Modelli di contenuto in base al flag **Traducibile**.
 
 1. Tocca o fai clic su **Salva e chiudi**.
 
@@ -127,16 +127,16 @@ A questo scopo, accedi alla directory principale della lingua del contenuto. Per
 
 ## Novità {#what-is-next}
 
-Ora che hai completato questa parte del percorso di traduzione headless dovresti:
+Ora cha hai completato questa parte del percorso di traduzione headless, dovresti:
 
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
 * Essere in grado di impostare la propria connessione al servizio di traduzione.
 
-Sviluppa questa conoscenza e continua il tuo percorso di traduzione senza testa AEM prossimo revisione del documento [Tradurre il contenuto,](translation-rules.md) dove imparerai come utilizzare la tua configurazione fino ad ora per tradurre effettivamente il tuo contenuto.
+Sviluppa questa conoscenza e continua il tuo percorso di traduzione in AEM headless andando poi al documento [Tradurre il contenuto,](translation-rules.md) dove imparerai come utilizzare la configurazione impostata finora per tradurre effettivamente il tuo contenuto.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre si consiglia di passare alla parte successiva del percorso di traduzione headless rivedendo il documento [Configurare le regole di traduzione](translation-rules.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless consultando il documento [Configurare le regole di traduzione](translation-rules.md), le seguenti risorse sono aggiuntive e opzionali e approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [Configurazione del framework di integrazione della traduzione](/help/sites-cloud/administering/translation/integration-framework.md) - Rivedi un elenco di connettori di traduzione selezionati e scopri come configurare il framework di integrazione della traduzione per l’integrazione con i servizi di traduzione di terze parti.
 * [Connessione a Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM fornisce un account di traduzione Microsoft di prova a scopo di test.
