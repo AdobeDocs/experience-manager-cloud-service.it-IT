@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 39%
+ht-degree: 77%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 39%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Panoramica"
->abstract="Lo strumento Content Transfer (Trasferimento contenuti) è uno strumento sviluppato da Adobe che può essere utilizzato per spostare il contenuto esistente da un’istanza AEM di origine (on-premise o AMS) all’istanza AEM Cloud Service di destinazione. Questo strumento trasferisce automaticamente anche entità principali (utenti o gruppi)."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Linee guida e best practice"
+>abstract="Lo strumento Content Transfer (Trasferimento contenuti) è uno strumento sviluppato da Adobe che può essere utilizzato per spostare i contenuti esistenti da un’istanza AEM di origine (on-premise o AMS) all’istanza di destinazione AEM Cloud Service. Questo strumento trasferisce automaticamente anche entità principali (utenti o gruppi)."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=it" text="Linee guida e best practice"
 
 Lo strumento Content Transfer (Trasferimento contenuti) è uno strumento sviluppato da Adobe che può essere utilizzato per spostare i contenuti esistenti da un’istanza AEM di origine (on-premise o AMS) all’istanza AEM Cloud Service di destinazione.
 
@@ -23,15 +23,15 @@ Questo strumento trasferisce automaticamente anche entità principali (utenti o 
 
 È disponibile una nuova versione dello strumento Content Transfer (Trasferimento contenuti) che integra il processo di trasferimento dei contenuti con Cloud Acceleration Manager. Si consiglia vivamente di passare a questa nuova versione per sfruttare tutti i vantaggi che offre:
 
-* Metodo self-service per estrarre un set di migrazione una volta e acquisirlo in più ambienti in parallelo
-* Miglioramento dell&#39;esperienza utente grazie a migliori stati di caricamento, guardrail e gestione degli errori
-* I registri di acquisizione sono persistenti e sono sempre disponibili per la risoluzione dei problemi
+* Modalità self-service per estrarre un set di migrazione in una sola volta e trasferirlo in più ambienti in parallelo
+* Miglioramento dell’esperienza utente grazie a stati di caricamento, guardrail e gestione degli errori più efficienti
+* I registri di acquisizione vengono mantenuti e sono sempre disponibili per la risoluzione dei problemi
 
-Per iniziare a utilizzare la nuova versione, è necessario disinstallare le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti), a causa di una modifica importante dell’architettura dello strumento.
+Per iniziare a utilizzare la nuova versione, è necessario disinstallare le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti), in quanto allo strumento è stato apportato un importante cambiamento nell’architettura.
 
 >[!NOTE]
 >
-> Per le situazioni in cui è già in corso una migrazione, puoi continuare a utilizzare la versione precedente di CTT fino al completamento della migrazione. Per la documentazione relativa alla versione precedente di CTT, consulta [documentazione legacy](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+> Nelle situazioni in cui è già in corso una migrazione, puoi continuare a utilizzare la versione precedente di CTT fino al completamento della migrazione. Per la documentazione relativa alla versione precedente di CTT, consulta la [documentazione precedente](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## Fasi nello strumento Content Transfer (Trasferimento contenuti) {#phases-content-transfer-tool}
 
@@ -46,7 +46,7 @@ Il trasferimento dei contenuti prevede due fasi:
 
 1. **Acquisizione**: per acquisizione si intende l’acquisizione dei contenuti dal *set di migrazione* nell’istanza Cloud Service di destinazione.
 
-   Consulta [Processo di acquisizione nel trasferimento dei contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) per ulteriori dettagli.
+   Vedi [Processo di acquisizione nel trasferimento contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) per ulteriori dettagli.
 
 ## Attributi di un set di migrazione {#attributes-migration-set}
 
@@ -85,4 +85,4 @@ La scadenza di un set di migrazione può essere monitorata nella riga Set di mig
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso le informazioni sullo strumento Content Transfer (Trasferimento contenuti) e la relativa panoramica, che descrive questo strumento, puoi spostare il contenuto esistente da un’istanza AEM di origine (on-premise o AMS) all’istanza AEM Cloud Service di destinazione. [Prerequisiti per lo strumento Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).
+Dopo aver studiato lo strumento Content Transfer (Trasferimento contenuti), e la panoramica che descrive come lo si può utilizzare per spostare il contenuto esistente da un’istanza di AEM di origine (on-premise o AMS) all’istanza di AEM Cloud Service di destinazione, devi consultare i [Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).

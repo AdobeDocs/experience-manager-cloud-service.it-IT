@@ -1,17 +1,17 @@
 ---
-title: Panoramica sullo strumento Content Transfer (Trasferimento contenuti (legacy)
-description: Panoramica sullo strumento Content Transfer (Trasferimento contenuti)
+title: Panoramica dello strumento Content Transfer (Trasferimento contenuti) (precedente)
+description: Panoramica dello strumento Content Transfer (Trasferimento contenuti)
 hide: true
 hidefromtoc: true
 exl-id: dd031580-e9d7-461e-8689-9bc3dbb2121b
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 56%
+ht-degree: 68%
 
 ---
 
-# Panoramica dello strumento Content Transfer (Legacy) {#overview-content-transfer-tool}
+# Panoramica dello strumento Content Transfer (Trasferimento contenuti) (precedente) {#overview-content-transfer-tool}
 
 Lo strumento Content Transfer (Trasferimento contenuti) è uno strumento sviluppato da Adobe che può essere utilizzato per spostare i contenuti esistenti da un’istanza AEM di origine (on-premise o AMS) all’istanza AEM Cloud Service di destinazione.
 
@@ -26,11 +26,11 @@ Il trasferimento dei contenuti prevede due fasi:
    Per ulteriori informazioni, consulta [Processo di estrazione nel trasferimento dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html).
 
    >[!NOTE]
-   >Eseguite lo strumento di mappatura utente durante la fase di estrazione. Consulta [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en) per ulteriori dettagli.
+   >Eseguite lo strumento di mappatura utente durante la fase di estrazione. Vedi [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en) per ulteriori dettagli.
 
 1. **Acquisizione**: per acquisizione si intende l’acquisizione dei contenuti dal *set di migrazione* nell’istanza Cloud Service di destinazione.
 
-   Consulta [Processo di acquisizione nel trasferimento dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) per ulteriori dettagli.
+   Vedi [Processo di acquisizione nel trasferimento contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) per ulteriori dettagli.
 
 ## Attributi di un set di migrazione {#attributes-migration-set}
 
