@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione dei registri di un set di migrazione nello strumento Content Transfer (Trasferimento contenuti) (legacy)
+title: Visualizzazione dei registri di un set di migrazione nello strumento Content Transfer (Legacy)
 description: Visualizzazione dei registri di un set di migrazione nello strumento Content Transfer (Trasferimento contenuti)
 hide: true
 hidefromtoc: true
@@ -13,9 +13,9 @@ ht-degree: 64%
 
 # Visualizzazione dei registri di un set di migrazione (legacy) {#view-logs-content-transfer-tool}
 
-Al completamento di ogni passaggio (estrazione e acquisizione) controlla i registri e cerca gli errori.  Eventuali errori devono essere risolti immediatamente sia affrontando i problemi segnalati sia contattando il supporto Adobe.
+Al completamento di ogni passaggio (estrazione e acquisizione), controlla i registri e cerca gli errori.  Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’assistenza di Adobi.
 
-## Passaggi per la visualizzazione dei registri {#viewing-logs}
+## Passaggi per visualizzare i registri {#viewing-logs}
 
 Puoi visualizzare i registri di un set di migrazione esistente nella pagina *Overview* (Panoramica).
 Effettua le seguenti operazioni:

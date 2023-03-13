@@ -3,7 +3,7 @@ title: Tradurre il contenuto headless
 description: Utilizzare il connettore di traduzione per tradurre i contenuti headless.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2177'
 ht-degree: 100%
 
@@ -234,7 +234,7 @@ Se il servizio di traduzione fornisce una traduzione umana, il processo di revis
 
 La traduzione umana va oltre lo scopo di questo percorso di localizzazione. Vedi la sezione [Risorse aggiuntive](#additional-resources) alla fine di questo documento per ulteriori informazioni su questo argomento. Tuttavia, oltre alle opzioni di approvazione aggiuntive, il flusso di lavoro per le traduzioni umane è lo stesso delle traduzioni automatiche descritto in questo percorso.
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Ora cha hai completato questa parte del percorso di traduzione headless, dovresti:
 

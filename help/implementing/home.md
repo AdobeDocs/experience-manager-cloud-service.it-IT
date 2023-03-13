@@ -17,7 +17,7 @@ Trova risorse di supporto autonomo sull’implementazione, ad Experience Manager
 ## Articoli principali sull’implementazione {#key-articles}
 
 * [Gestione degli ambienti con Cloud Manager](cloud-manager/manage-environments.md)
-* [Distribuzione AEM as a Cloud Service](deploying/overview.md)
+* [Distribuzione di AEM as a Cloud Service](deploying/overview.md)
 * [Sviluppo per AEM as a Cloud Service](developing/introduction/development-guidelines.md)
 * [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md)
 * [Dispatcher in AEM as a Cloud Service](dispatcher/overview.md)
@@ -32,7 +32,7 @@ Trova risorse di supporto autonomo sull’implementazione, ad Experience Manager
 | [Percorso di onboarding](/help/journey-onboarding/overview.md) | Questa guida illustra brevemente come iniziare a usare Experience Manager as a Cloud Service, spiega come accedere e include informazioni importanti sulla protezione dei dati. |
 | [Guida utente di Sites](/help/sites-cloud/home.md) | Informazioni su come creare con, e amministrare, Experience Manager Sites as a Cloud Service. |
 | [Guida utente di Assets](/help/assets/home.md) | Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service. |
-| [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando AEM funzioni avanzate. |
+| [Guida utente sull’implementazione](/help/implementing/home.md) | Scopri come creare e personalizzare esperienze utilizzando le potenti funzioni dell’AEM. |
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Esplora questo percorso guidato attraverso le potenti e flessibili funzionalità di AEM per prepararti al tuo primo progetto headless. |
 | [Passaggio ad AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Comprendi il percorso di transizione verso Cloud Service. |
 | [Guida utente dei connettori](/help/connectors/home.md) | Questa guida contiene informazioni su come integrare i connettori in Experience Manager as a Cloud Service. |

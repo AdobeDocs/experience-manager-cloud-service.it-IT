@@ -2,8 +2,8 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile modificarla per aggiornarne i contenuti
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
-workflow-type: ht
+source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
+workflow-type: tm+mt
 source-wordcount: '3019'
 ht-degree: 100%
 
@@ -271,7 +271,7 @@ Esistono due metodi per aggiungere e/o modificare contenuti nei componenti:
 
 ### Finestra di dialogo di modifica del componente   {#component-edit-dialog}
 
-Puoi aprire un componente per modificarne il contenuto utilizzando l’icona [Modifica (matita) nella barra degli strumenti del componente](#component-toolbar).
+Per aprire un componente e modificarne il contenuto, utilizza l’icona [Modifica (a forma di matita) nella barra degli strumenti del componente](#component-toolbar).
 
 Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti [tutte le azioni sono disponibili solo in modalità a schermo intero](#edit-content-full-screen-mode). Esempio:
 
@@ -541,5 +541,5 @@ I comandi Annulla e Ripristina possono essere utilizzati per i seguenti tipi di 
 >* Per annullare e ripristinare le modifiche apportate a file e immagini sono necessarie autorizzazioni speciali.
 >* La cronologia delle modifiche ai file e alle immagini viene conservata per almeno dieci ore. Oltre tale limite, la possibilità di annullare le modifiche non è garantita. L’amministratore può cambiare il tempo predefinito di dieci ore.
 >* L’amministratore di sistema può configurare vari aspetti delle funzioni Annulla e Ripristina in base ai requisiti particolari del caso in questione.
+   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
 
-<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

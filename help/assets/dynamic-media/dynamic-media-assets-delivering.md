@@ -1,8 +1,8 @@
 ---
 title: Distribuire elementi multimediali dinamici
-description: Con Dynamic Media, hai diverse opzioni per distribuire le tue risorse Dynamic Media - sia video che immagini - al tuo sito web.
+description: Con Dynamic Media, hai a disposizione diverse opzioni per distribuire le risorse Dynamic Media, sia video che immagini, al tuo sito web.
 contentOwner: Rick Brough
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 19%
@@ -12,12 +12,12 @@ ht-degree: 19%
 
 # Distribuire elementi multimediali dinamici{#delivering-dynamic-media-assets}
 
-La modalità di distribuzione delle risorse Dynamic Media, sia video che immagini, dipende da come viene implementato il sito web.
+Il modo in cui distribuisci le risorse Dynamic Media, sia video che immagini, dipende da come viene implementato il sito web.
 
-Con Dynamic Media hai diverse opzioni:
+Dynamic Media offre diverse opzioni:
 
-* Se il sito web è ospitato su Adobe Experience Manager, è necessario aggiungere le risorse Dynamic Media direttamente alla pagina.
-* Se il tuo sito web non è disponibile come Experience Manager, consulta [Distribuzione di risorse Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) nell’interfaccia touch.
+* Se il tuo sito web è ospitato su Adobe Experience Manager, allora desideri aggiungere le risorse Dynamic Media direttamente alla tua pagina.
+* Se il tuo sito web non è su Experience Manager, vedi [Distribuzione di risorse Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) nell’interfaccia touch.
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 

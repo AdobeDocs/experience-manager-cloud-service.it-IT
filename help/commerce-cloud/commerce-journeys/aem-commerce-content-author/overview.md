@@ -3,7 +3,7 @@ title: Percorso di authoring dei contenuti in AEM Commerce
 description: Inizia qui un percorso guidato di authoring in AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 100%
 

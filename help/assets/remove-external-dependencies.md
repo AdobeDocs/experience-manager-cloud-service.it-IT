@@ -12,15 +12,15 @@ ht-degree: 17%
 
 # Rimuovere le dipendenze esterne per le installazioni esistenti {#remove-external-depedencies}
 
-Adobe consiglia di eseguire i passaggi di configurazione per le installazioni di connettori avanzate esistenti per Workfront per rimuovere le dipendenze dai punti di distribuzione Hoodoo.
+L’Adobe consiglia di eseguire i passaggi di configurazione per le installazioni di connettori avanzati esistenti affinché Workfront rimuova le dipendenze dai punti di distribuzione Hoodoo.
 
 >[!NOTE]
 >
->Esegui i passaggi di configurazione solo se hai installato il connettore avanzato per Workfront prima di marzo 2022. A partire da marzo 2022, non vi sono dipendenze dai punti di distribuzione di Hoodoo per le nuove installazioni di connettori migliorati per Workfront.
+>Esegui i passaggi di configurazione solo se hai installato il connettore avanzato per Workfront prima di marzo 2022. Non vi sono dipendenze dai punti di distribuzione Hoodoo per le nuove installazioni di connettori avanzati per Workfront a partire da marzo 2022.
 
 Per rimuovere le dipendenze esterne:
 
-1. Rimuovi dalla pagina padre la seguente configurazione dell&#39;archivio Hoodoo `pom.xml`:
+1. Rimuovi la seguente configurazione dell’archivio Hoodoo dall’elemento padre `pom.xml`:
 
    ```XML
      <repository>
@@ -30,7 +30,7 @@ Per rimuovere le dipendenze esterne:
      </repository>
    ```
 
-1. Rimuovi la seguente configurazione del server dal `settings.xml` file, disponibile all&#39;indirizzo `./cloudmanager/maven/settings.xml`:
+1. Rimuovi la seguente configurazione server da `settings.xml` file, disponibile all’indirizzo `./cloudmanager/maven/settings.xml`:
 
    ```XML
          <server>

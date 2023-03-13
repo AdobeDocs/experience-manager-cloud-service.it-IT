@@ -1,6 +1,6 @@
 ---
 title: Convalida dei trasferimenti di contenuto
-description: Utilizza lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuto
+description: Utilizzare lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuti
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
 workflow-type: tm+mt
@@ -13,22 +13,22 @@ ht-degree: 2%
 
 ## Guida introduttiva {#getting-started}
 
-Gli utenti possono determinare in modo affidabile se tutti i contenuti estratti dallo strumento Content Transfer (Trasferimento contenuti) sono stati correttamente acquisiti nell’istanza di destinazione. Questa funzione di convalida funziona confrontando un riassunto dei percorsi di tutti i nodi coinvolti durante l’estrazione con un riassunto dei percorsi di tutti i nodi coinvolti durante l’acquisizione. Se nel digest di estrazione mancano percorsi di nodo nel digest di acquisizione, la convalida si considera non riuscita e potrebbe essere necessaria una convalida manuale aggiuntiva.
+Gli utenti possono determinare in modo affidabile se tutti i contenuti estratti dallo strumento Content Transfer sono stati correttamente acquisiti nell’istanza di destinazione. Questa funzione di convalida funziona confrontando un riepilogo dei percorsi di tutti i nodi coinvolti durante l’estrazione con un riepilogo dei percorsi di tutti i nodi coinvolti durante l’acquisizione. Se nel digest di estrazione sono presenti percorsi di nodo mancanti nel digest di acquisizione, la convalida viene considerata non riuscita e potrebbe essere necessaria un’ulteriore convalida manuale.
 
 >[!INFO]
 >
->Questa funzione sarà disponibile a partire dalla versione 1.8.x dello strumento Content Transfer (CTT) . L’ambiente di destinazione di AEM Cloud Service deve essere in esecuzione almeno nella versione 6158 o successiva. Richiede inoltre la configurazione dell&#39;ambiente sorgente per l&#39;esecuzione [pre-copia](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La funzione di convalida cerca il file azcopy.config nell&#39;origine. Se il file non viene trovato, la convalida non viene eseguita. Per ulteriori informazioni su come configurare un file azcopy.config, vedi [questa pagina](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>Questa funzione sarà disponibile a partire dalla versione 1.8.x dello strumento Content Transfer (CTT). L’ambiente di destinazione AEM Cloud Service deve eseguire almeno la versione 6158 o successiva. Richiede anche che l’ambiente di origine sia configurato per essere eseguito [pre-copia](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La funzionalità di convalida cerca il file azcopy.config nell&#39;origine. Se il file non viene trovato, la convalida non verrà eseguita. Per ulteriori informazioni su come configurare un file azcopy.config, vedere [questa pagina](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-La convalida di un trasferimento di contenuto è facoltativa. L’abilitazione di questa funzione aumenta sia il tempo necessario per eseguire un’estrazione che un’acquisizione. Per utilizzare la funzione, abilitala nella console di sistema dell’ambiente AEM sorgente seguendo questi passaggi:
+La convalida di un trasferimento di contenuto è una funzione facoltativa. L’abilitazione di questa funzione aumenta sia il tempo necessario per eseguire un’estrazione che l’acquisizione. Per utilizzare la funzione, abilitala nella console di sistema dell’ambiente AEM sorgente seguendo questi passaggi:
 
-1. Passa alla console Web di Adobe Experience Manager nell’istanza sorgente, scegliendo **Strumenti - Operazioni - Console web** o direttamente all’URL in *https://serveraddress:serverport/system/console/configMgr*
-1. Cerca **Configurazione del servizio di estrazione dello strumento Content Transfer (Trasferimento contenuti)**
-1. Utilizza il pulsante icona a forma di matita per modificarne i valori di configurazione
-1. Abilita la **Abilita convalida di migrazione durante l’estrazione** premere **Salva**:
+1. Passa alla console web di Adobe Experience Manager nell’istanza sorgente, da **Strumenti - Operazioni - Console web** o direttamente all’URL in *https://serveraddress:serverport/system/console/configMgr*
+1. Cerca **Configurazione del servizio di estrazione dello strumento Content Transfer**
+1. Utilizza il pulsante di icona della matita per modificarne i valori di configurazione
+1. Abilita **Abilita convalida migrazione durante l’estrazione** , quindi premere **Salva**:
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
-Con questa impostazione abilitata e con l’ambiente AEM Cloud Service di destinazione che esegue una versione compatibile, la convalida della migrazione verrà eseguita durante tutte le operazioni di estrazione e acquisizione successive.
+Se questa impostazione è abilitata e l’ambiente AEM Cloud Service di destinazione esegue una versione compatibile, la convalida della migrazione verrà eseguita durante tutte le estrazioni e acquisizioni successive.
 
 Per ulteriori informazioni su come installare lo strumento Content Transfer (Trasferimento contenuti), consulta [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
 
@@ -36,9 +36,9 @@ Per ulteriori informazioni su come installare lo strumento Content Transfer (Tra
 
 Con la convalida della migrazione abilitata nell’ambiente AEM di origine, inizia un’estrazione.
 
-Se **Sovrascrivi contenitore di staging durante l’estrazione** è attivato, tutti i nodi coinvolti nell’estrazione verranno registrati nel digest del percorso di estrazione. Quando si utilizza questa impostazione, è importante abilitare **Cancella il contenuto esistente sull’istanza Cloud prima dell’acquisizione** durante l’acquisizione, in caso contrario potrebbero mancare nodi nel digest di acquisizione. Si tratta dei nodi già presenti nel target da acquisizioni precedenti.
+Se **Sovrascrivi contenitore staging durante l’estrazione** è abilitato, tutti i nodi coinvolti nell’estrazione verranno registrati nel riepilogo del percorso di estrazione. Quando si utilizza questa impostazione, è importante abilitare **Cancella i contenuti esistenti nell’istanza Cloud prima dell’acquisizione** durante l’acquisizione, altrimenti potrebbero mancare dei nodi dal digest di acquisizione. Si tratta dei nodi già presenti sul target dalle acquisizioni precedenti.
 
-Per un&#39;illustrazione grafica, si prega di fare riferimento agli esempi seguenti:
+Per un’illustrazione grafica, consulta gli esempi seguenti:
 
 ### Esempio 1 {#example-1}
 
@@ -52,7 +52,7 @@ Per un&#39;illustrazione grafica, si prega di fare riferimento agli esempi segue
 
 * **Note**
 
-   Questa combinazione di &quot;Sovrascrivi&quot; e &quot;Cancella&quot; darà luogo a risultati di convalida coerenti, anche per acquisizioni ripetute.
+   Questa combinazione di &quot;Sovrascrivi&quot; e &quot;Cancella&quot; darà risultati di convalida coerenti, anche per acquisizioni ripetute.
 
 ### Esempio 2 {#example-2}
 
@@ -66,21 +66,21 @@ Per un&#39;illustrazione grafica, si prega di fare riferimento agli esempi segue
 
 * **Note**
 
-   Questa combinazione di &quot;Sovrascrivi&quot; e &quot;Cancella&quot; darà luogo a risultati di convalida coerenti per l’acquisizione iniziale.
+   Questa combinazione di &quot;Sovrascrivi&quot; e &quot;Cancella&quot; genera risultati di convalida coerenti per l’acquisizione iniziale.
 
-   Se l’acquisizione viene ripetuta, il digest di acquisizione sarà vuoto e la convalida apparirà non riuscita. Il digest di acquisizione sarà vuoto perché tutti i nodi di questa estrazione saranno già presenti nel target.
+   Se l’acquisizione viene ripetuta, il riepilogo dell’acquisizione sarà vuoto e la convalida non riuscirà. Il digest di acquisizione sarà vuoto perché tutti i nodi di questa estrazione saranno già presenti nella destinazione.
 
 Una volta completata l’estrazione, inizia l’acquisizione.
 
-La parte superiore del registro di acquisizione conterrà una voce, simile a `aem-ethos/tools:1.2.438`. Verifica che il numero di versione sia **1.2.438** o superiore, in caso contrario la convalida non è supportata dal rilascio di AEM as a Cloud Service in uso.
+La parte superiore del registro di acquisizione conterrà una voce simile a `aem-ethos/tools:1.2.438`. Verifica che il numero di versione sia **1,2,438** o superiore, altrimenti la convalida non è supportata dal rilascio di AEM as a Cloud Service che si sta utilizzando.
 
-Una volta completata l’acquisizione e avviata la convalida, la seguente voce di registro verrà annotata nel registro di acquisizione:
+Una volta completata l’acquisizione e avviata la convalida, nel registro di acquisizione verrà annotata la seguente voce di registro:
 
 ```
 Gathering artifacts for migration validation...  
 ```
 
-I dettagli della convalida seguiranno questa voce. Di seguito è riportato un esempio di migrazione di grandi dimensioni:
+I dettagli della convalida seguiranno questa voce. Di seguito è riportato un esempio tratto da una migrazione di grandi dimensioni:
 
 ```
 Beginning publish migration validation. Migration job id=[3aba1f96-84b6-4bd0-8642-c61c0d528387]
@@ -99,9 +99,9 @@ Comparing the path digests took 29 seconds
 Migration validation took 33 minutes
 ```
 
-Questo è un esempio di convalida riuscita, in quanto non mancavano voci nel digest di acquisizione presenti nel digest di estrazione.
+Questo è un esempio di convalida riuscita, poiché nel digest di estrazione non erano presenti voci mancanti nel digest di acquisizione.
 
-Per confrontare, in caso di errore di convalida, come si presenterà un rapporto di convalida:
+Per confrontare, ecco come apparirebbe un rapporto di convalida se la convalida non fosse riuscita:
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]
@@ -125,9 +125,9 @@ Comparing the path digests took 0 seconds
 Migration validation took 0 minutes
 ```
 
-L’esempio di errore di cui sopra è stato ottenuto eseguendo un’acquisizione, e quindi eseguendo nuovamente la stessa acquisizione con Wipe disabilitata, in modo tale che nessun nodo era coinvolto durante l’acquisizione, tutto era già presente sul target.
+L’esempio di errore precedente è stato ottenuto eseguendo un’acquisizione e quindi eseguendo nuovamente la stessa acquisizione con Wipe disabilitato, in modo che non vi fossero nodi coinvolti durante l’acquisizione — tutto era già presente nel target.
 
-Oltre a essere incluso nel registro di acquisizione, il rapporto di convalida è accessibile anche dal **Processi di acquisizione** Interfaccia utente in Cloud Acceleration Manager. A tale scopo, fai clic sui tre punti (**...**), quindi fai clic su **Rapporto di convalida** nel menu a discesa per visualizzare il rapporto di convalida.
+Oltre a essere incluso nel registro di acquisizione, il rapporto di convalida è accessibile dalla sezione **Processi di acquisizione** interfaccia utente in Cloud Acceleration Manager. A tale scopo, fai clic sui tre punti (**...**) quindi fare clic su **Rapporto di convalida** nel menu a discesa per visualizzare il rapporto di convalida.
 
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -136,12 +136,12 @@ Oltre a essere incluso nel registro di acquisizione, il rapporto di convalida è
 
 ### Convalida non riuscita. E adesso? {#validation-fail}
 
-Il primo passaggio consiste nel determinare se l’acquisizione ha avuto esito negativo o se il contenuto estratto è già presente nell’ambiente di destinazione. Ciò può verificarsi se un’acquisizione viene ripetuta con **Cancella il contenuto esistente sull’istanza Cloud prima dell’acquisizione** opzione disabilitata.
+Il primo passaggio consiste nel determinare se l’acquisizione non ha avuto esito positivo o se il contenuto estratto è già presente nell’ambiente di destinazione. Ciò può verificarsi se un’acquisizione viene ripetuta con **Cancella i contenuti esistenti nell’istanza Cloud prima dell’acquisizione** opzione disabilitata.
 
-Per verificare, scegli un percorso dal rapporto di convalida e verifica se è presente nell’ambiente di destinazione. Se si tratta di un ambiente di pubblicazione, puoi limitarti a controllare direttamente pagine e risorse. Apri un ticket con l’Assistenza clienti se hai bisogno di assistenza per questo passaggio.
+Per verificare il funzionamento, scegliere un percorso dal rapporto di convalida e verificare se è presente nell&#39;ambiente di destinazione. Se si tratta di un ambiente di pubblicazione, potresti essere limitato al controllo diretto di pagine e risorse. Apri un ticket presso l’Assistenza clienti se hai bisogno di assistenza per questo passaggio.
 
-### Il conteggio dei nodi è inferiore a quanto mi aspettavo. Perché? {#node-count-lower-than-expected}
+### Il conteggio dei nodi è inferiore al previsto. Perché? {#node-count-lower-than-expected}
 
-Alcuni percorsi dei digesti di estrazione e acquisizione sono esclusi appositamente per mantenere le dimensioni di questi file gestibili, con l’obiettivo di poter calcolare il risultato della convalida della migrazione entro due ore dal completamento dell’acquisizione.
+Alcuni percorsi dai digest di estrazione e acquisizione sono esclusi appositamente per mantenere gestibili le dimensioni di questi file, con l’obiettivo di poter calcolare il risultato della convalida della migrazione entro due ore dal completamento dell’acquisizione.
 
-I percorsi che escludiamo attualmente dai digesti includono: `cqdam.text.txt` rappresentazioni, nodi `/home`e i nodi all&#39;interno di `/jcr:system`.
+I percorsi che attualmente escludiamo dai digest includono: `cqdam.text.txt` rappresentazioni, nodi in `/home`, e nodi in `/jcr:system`.

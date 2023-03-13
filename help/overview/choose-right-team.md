@@ -78,4 +78,4 @@ Ora che sai quali ruoli sono richiesti, osserva il grafico seguente per vedere q
 
 >[!TIP]
 >
-> Ulteriori informazioni su Adobe Experience Cloud e utilizzo delle risorse su [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) per ottenere la certificazione tramite [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+> Ulteriori informazioni su Adobe Experience Cloud e utilizzo delle risorse su [Experience League](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager) per ottenere la certificazione tramite [Adobe Digital Learning](https://learning.adobe.com/certification.html).

@@ -3,7 +3,7 @@ title: Scopri di più sullo sviluppo di CMS headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri la tecnologia headless e perché utilizzarla.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 7ded4f891f5ab5c1562044772ea3304fc07b173e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 100%
 

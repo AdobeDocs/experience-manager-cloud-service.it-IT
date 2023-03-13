@@ -5,7 +5,7 @@ exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1439'
-ht-degree: 48%
+ht-degree: 71%
 
 ---
 
@@ -23,8 +23,8 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 ## Data di pubblicazione {#release-date}
 
-Data di rilascio di [!DNL Adobe Experience Manager] come [!DNL Cloud Service] la versione corrente (2021.10.0) è il 4 novembre 2021.
-La versione seguente (2021.11.0) è del 2 dicembre 2021.
+La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2021.10.0) è il 4 novembre 2021.
+La seguente versione (2021.11.0) è del 2 dicembre 2021.
 
 ## Video sulla versione {#release-video}
 
@@ -34,19 +34,19 @@ Dai un&#39;occhiata al [Panoramica sulla versione di ottobre 2021](https://video
 
 ### Nuova funzione in [!DNL Sites] {#sites-features}
 
-* I modelli di frammenti di contenuto ora vengono impostati automaticamente in modalità di sola lettura dopo la pubblicazione, per evitare l’interruzione involontaria di query API live dopo la ripubblicazione di un modello modificato. Agli utenti viene visualizzato un avviso quando si tenta di modificare un modello pubblicato. Una modifica è possibile dopo aver accettato l’avviso.
+* I modelli per frammenti di contenuto ora vengono impostati automaticamente in stato di sola lettura una volta pubblicati, per evitare di interrompere accidentalmente le query API live dopo la ripubblicazione di un modello modificato. Gli utenti ricevono un avviso quando tentano di modificare un modello pubblicato. La modifica è possibile dopo aver accettato l’avviso.
 
-## [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] ora supporta la generazione automatica di trascrizioni di testo dalle risorse audio e video supportate, utilizzando un connettore integrato per [!DNL Azure Media Services]. La [tipi di file supportati](/help/assets/file-format-support.md#audio-video-transcription-formats) vengono automaticamente trascritti e il testo viene memorizzato in formato WebVTT. Le didascalie WebVTT vengono utilizzate per operazioni di ricerca, sottotitoli o traduzione più efficaci. Inoltre, la funzione migliora l’accessibilità, la scoperta e la localizzazione delle risorse.
+* [!DNL Experience Manager] ora supporta la generazione automatica di trascrizioni di testo dalle risorse audio e video supportate, utilizzando un connettore integrato per [!DNL Azure Media Services]. Il [tipi di file supportati](/help/assets/file-format-support.md#audio-video-transcription-formats) vengono trascritti automaticamente e il testo viene memorizzato in formato WebVTT. I sottotitoli WebVTT vengono utilizzati per ricerche, sottotitoli o traduzioni più efficaci. Inoltre, la funzione migliora l’accessibilità, la reperibilità e la localizzazione delle risorse.
 
-### Nuova funzione nel [!DNL Assets] canale prerelease {#assets-prerelease-features}
+### Nuova funzione in [!DNL Assets] canale prerelease {#assets-prerelease-features}
 
 * [!DNL Dynamic Media]Il ritaglio e il campione avanzato dell’immagine di è ora basato sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali verranno mantenute al momento della rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
 
-* I tag avanzati vengono applicati automaticamente alle risorse utilizzando i microservizi per le risorse, anziché i servizi di contenuti avanzati. Il modello sottostante viene aggiornato per migliorare i risultati dei tag e ridurre i pregiudizi. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
+* I tag avanzati vengono applicati automaticamente alle risorse utilizzando i microservizi per le risorse, anziché Smart Content Services. Il modello sottostante viene aggiornato per migliorare i risultati dei tag e ridurre i pregiudizi. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
 <!-- Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
@@ -54,11 +54,11 @@ Dai un&#39;occhiata al [Panoramica sulla versione di ottobre 2021](https://video
 No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 -->
 
-## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novità in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics per Forms adattivo**: È ora possibile acquisire e tenere traccia del comportamento sia di accesso che di non accesso (anonimo) tramite Adobe Analytics per Adaptive Forms per raccogliere informazioni sugli utenti finali. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza dell’utente finale.
+* **Analytics per Forms adattivo**: ora puoi acquisire e tenere traccia del comportamento degli utenti connessi e non (anonimi) tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni approfondite sull’utente finale. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza dell’utente finale.
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
@@ -71,21 +71,21 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
    * Generare i documenti compilando i file modello (PDF e XDP) con i dati XML.
    * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
 
-Puoi scrivere in [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
+Puoi scrivere a [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 
 ### Novità {#what-is-new-cif}
 
-* Il componente aggiuntivo CIF supporta la versione più recente di Commerce v2.4.3 con nuove API e schemi GraphQL
+* Il componente aggiuntivo CIF supporta la versione più recente di Commerce v2.4.3 con nuovi API e schemi di GraphQL
 
-* Gli autori possono aggiungere collegamenti alle pagine di prodotti e catalogo nei campi di testo mediante l’editor Rich Text. È stata aggiunta un’icona CIF alla barra degli strumenti dell’editor Rich Text che consente di aprire i selettori per cercare e selezionare rapidamente il prodotto o la categoria senza uscire dal contesto.
+* Gli autori possono aggiungere collegamenti alle pagine di prodotti e cataloghi nei campi di testo utilizzando l’editor Rich Text. Alla barra degli strumenti dell’editor Rich Text è stata aggiunta un’icona CIF che consente di aprire i selettori per cercare e selezionare rapidamente il prodotto o la categoria senza uscire dal contesto.
 
-* Il carrello e il pagamento a comparsa esistenti sono stati sostituiti da pagine dedicate AEM carrello e per il pagamento. I componenti di queste pagine vengono creati utilizzando i componenti di Adobe Commerce per funzioni estese
+* I carrelli e le pagine di pagamento pop-up esistenti sono stati sostituiti da carrelli e pagine di pagamento dedicati per l’AEM. I componenti di queste pagine vengono generati utilizzando i componenti PEGRA estensibili di Adobe Commerce
 
-* I commercianti possono nascondere alcune categorie di catalogo dei prodotti nella navigazione utilizzando il backend Commerce . Il componente core di navigazione CIF rispetta la configurazione back-end di e-commerce &quot;include nel menu&quot; per mostrare/nascondere categorie nella navigazione
+* Gli esercenti possono nascondere determinate categorie del catalogo dei prodotti nella navigazione utilizzando il backend di Commerce. Il componente core di navigazione CIF rispetta la configurazione back-end di commerce &quot;includi nel menu&quot; per mostrare/nascondere le categorie nella navigazione
 
-* AEM Storefront Venia restituisce un errore HTTP 404 se la pagina di categoria o prodotto non è trovata
+* AEM Storefront Venia restituisce l’errore HTTP 404 se la pagina della categoria o del prodotto non è stata trovata
 
 ## Cloud Manager {#cloud-manager}
 
@@ -101,7 +101,7 @@ La prossima versione è prevista per il 9 dicembre 2021.
 * Gli utenti possono ora sfruttare le nuove pipeline Front End per distribuire esclusivamente il codice front-end in modo accelerato. Consulta [Pipeline front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per ulteriori informazioni.
 
    >[!IMPORTANT]
-   >È necessario utilizzare AEM versione `2021.10.5933.20211012T154732Z` per sfruttare le nuove pipeline front-end.
+   >Per utilizzare le nuove pipeline front-end è necessaria la versione `2021.10.5933.20211012T154732Z` di AEM.
 
 * La durata della pipeline di qualità del codice viene notevolmente ridotta, eseguendo l’analisi del codice in modo più efficiente senza la necessità di creare un’immagine intera AEM. Questa modifica verrà implementata progressivamente nelle settimane successive al rilascio.
 
@@ -121,7 +121,7 @@ La prossima versione è prevista per il 9 dicembre 2021.
 
 * L’API di modifica delle pipeline ora supporta la modifica dell’ambiente utilizzato nelle fasi di distribuzione.
 
-* È stata introdotta un&#39;ottimizzazione nel processo di scansione OakPal per i pacchetti di grandi dimensioni.
+* È stata introdotta un’ottimizzazione nel processo di scansione OakPal per i pacchetti di grandi dimensioni.
 
 * Il file CSV del problema qualità conterrà ora la timestamp per ogni problema di qualità.
 
@@ -140,37 +140,37 @@ La prossima versione è prevista per il 9 dicembre 2021.
 
 ## Data di pubblicazione {#release-date-cm-oct}
 
-La data di rilascio di Cloud Manager in AEM as a Cloud Service 2021.10.0 è il 14 ottobre 2021.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.10.0 è il 14 ottobre 2021.
 
 ### Novità {#what-is-new-cm-oct}
 
-* In preparazione di alcune modifiche imminenti, nell’interfaccia utente verrà fatto riferimento alle pipeline di distribuzione esistenti ed etichettarle come **Stack completo** gasdotti.
+* Per prepararci ad alcune modifiche imminenti, ora le pipeline di distribuzione esistenti verranno indicate ed etichettate nell’interfaccia utente come pipeline **full stack**.
 
-* La scheda della pipeline è stata aggiornata per visualizzare una singola faccia integrata che mostra sia le pipeline di produzione che quelle non di produzione e l’utente può selezionare Esegui/Pausa/Riprendi direttamente dal menu delle azioni associato a ciascuna pipeline.
+* Ora la scheda Pipeline è stata aggiornata per visualizzare una singola pagina integrata che mostra entrambe le pipeline di produzione e non di produzione. L’utente può selezionare Esegui/Pausa/Riprendi direttamente dal menu Azioni associato a ogni pipeline.
 
-* Un utente con il ruolo di Deployment Manager può ora eliminare la pipeline di produzione in modo self-service tramite l’interfaccia utente.
+* Ora l’utente con il ruolo Responsabile dell’implementazione può eliminare la pipeline di produzione tramite l’interfaccia utente in modo autonomo.
 
-* Le esperienze di aggiunta e modifica delle pipeline sono state aggiornate per poter utilizzare modelli moderni e familiari.
+* Le esperienze di aggiunta e modifica delle pipeline sono state aggiornate per poter utilizzare finestre modali moderne e intuitive.
 
-* Gli utenti di Cloud Manager ora possono inviare un feedback direttamente dall’interfaccia utente tramite l’ **Feedback** in alto a destra della pagina di destinazione.
+* Ora gli utenti di Cloud Manager possono inviare feedback direttamente dall’interfaccia utente, tramite il pulsante **Feedback** posizionato nella parte in alto a destra della pagina di destinazione.
 
-* I grafici SLA annuali possono ora essere scaricati dall’interfaccia utente di Cloud Manager.
+* Ora è possibile scaricare i grafici SLA annuali dall’interfaccia utente di Cloud Manager.
 
-* Le esecuzioni della pipeline di qualità del codice e non di produzione ora utilizzeranno un processo di duplicazione poco profondo più efficiente durante il passaggio di creazione, consentendo ai clienti con archivi Git di dimensioni particolarmente grandi di ottenere tempi di creazione più rapidi.
+* Ora le esecuzioni delle pipeline di qualità del codice e non di produzione utilizzano un processo di clonazione superficiale durante la fase di build, garantendo tempi di generazione più brevi ai clienti con archivi Git di dimensioni particolarmente grandi.
 
-* La procedura guidata Aggiungi Elenco consentiti IP informa l’utente se è stato raggiunto il numero massimo consentito di Elenchi consentiti IP.
+* Ora la procedura guidata Aggiungi elenco IP consentiti informa l’utente se è stato raggiunto il numero massimo di elenchi IP consentiti.
 
-* La documentazione API di Cloud Manager ora include un parco giochi interattivo che consente agli utenti connessi di sperimentare l’API dal proprio browser. Vedi [Playground API di Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) per ulteriori dettagli.
+* Ora la documentazione API di Cloud Manager include un ambiente playground interattivo che consente agli utenti connessi di sperimentare l’API dal browser in uso. Per ulteriori informazioni, consulta [Ambiente playground dell’API di Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/).
 
-* La descrizione comandi nella scheda Programma sarà più descrittiva se un’opzione di selezione in &quot;Passa a&quot; è disabilitata. Ora viene visualizzato &quot;Un ambiente di produzione non esiste&quot;.
+* Il suggerimento della scheda Programma presenta una descrizione più dettagliata se è disattivata l’opzione di selezione sotto “Accedi a”. Ora viene visualizzato “Non esiste un ambiente di produzione”.
 
 ### Correzioni di bug {#bug-fixes-cm-oct}
 
-* In rare situazioni, quando uno staff Adobe ripristina l&#39;ambiente del cliente, il ripristino è stato considerato completo prima che l&#39;ambiente fosse completamente operativo.
+* In rare situazioni, quando il personale Adobe ripristinava l’ambiente del cliente, il ripristino veniva considerato completo prima che l’ambiente fosse completamente operativo.
 
-* Alcune richieste interne effettuate durante la creazione dell’ambiente non sono state ritentate.
+* Per alcune richieste interne effettuate durante la creazione dell’ambiente non veniva effettuato un secondo tentativo.
 
-* Se si verifica un errore di distribuzione in seguito alla verifica del nome di dominio, il messaggio di errore è stato corretto per richiedere al cliente di contattare il proprio rappresentante Adobe.
+* In caso di errori della distribuzione rilevati successivamente alla verifica del nome di dominio, il messaggio di errore è stato corretto per suggerire all’utente di contattare il rappresentante Adobe.
 
 ## Analisi delle best practice {#best-practices-analyzer}
 
@@ -182,6 +182,6 @@ La data di rilascio di Best Practices Analyzer v2.1.20 è il 5 ottobre 2021.
 
 * Possibilità di rilevare e segnalare la lunghezza del nome del nodo.
 
-* Capacità di rilevare e segnalare la dimensione totale dell&#39;indice.
+* Possibilità di rilevare e segnalare le dimensioni totali dell’indice.
 
-* Possibilità di rilevare e segnalare le risorse per le quali manca il rendering originale.
+* Possibilità di rilevare e segnalare le risorse per le quali manca la rappresentazione originale.

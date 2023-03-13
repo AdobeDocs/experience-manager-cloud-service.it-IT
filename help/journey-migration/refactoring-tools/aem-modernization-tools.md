@@ -11,7 +11,7 @@ ht-degree: 77%
 
 # Strumenti di modernizzazione AEM {#aem-moderization-tools}
 
-Gli strumenti di modernizzazione AEM forniscono una suite di utility che possono essere utilizzate per convertire le funzionalità di AEM legacy alle funzionalità moderne e supportate di AEM as a Cloud Service.
+Gli strumenti di modernizzazione dell’AEM forniscono una suite di utility che possono essere utilizzate per convertire le funzioni legacy dell’AEM nelle capacità moderne e supportate dell’AEM as a Cloud Service.
 
 
 ## Introduzione {#introduction}

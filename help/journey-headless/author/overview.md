@@ -3,7 +3,7 @@ title: Percorso di authoring di contenuti AEM headless
 description: Inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche, e la creazione di contenuti per il tuo progetto.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 100%
 

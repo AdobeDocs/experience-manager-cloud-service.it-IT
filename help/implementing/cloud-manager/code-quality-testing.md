@@ -2,8 +2,8 @@
 title: Test di qualità del codice
 description: Scopri come funziona il test di qualità del codice delle pipeline e come può migliorare la qualità delle distribuzioni.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
-workflow-type: ht
+source-git-commit: ae586cc2f576aa4aee4cc611b5184e2bbda6696c
+workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 100%
 

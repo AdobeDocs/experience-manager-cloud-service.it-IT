@@ -1,10 +1,10 @@
 ---
 title: Fine del ciclo di vita del visualizzatore DHTML
-description: Dal 31 gennaio 2014, la piattaforma di visualizzatori DHTML è ufficialmente terminata.
+description: A partire dal 31 gennaio 2014, la piattaforma visualizzatore DHTML è ufficialmente terminata.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: f1595962-6da3-441d-838e-c1140745c088
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 0%
@@ -13,6 +13,6 @@ ht-degree: 0%
 
 # Fine del ciclo di vita del visualizzatore DHTML {#dhtml-viewer-end-of-life}
 
-Dal 31 gennaio 2014, la piattaforma di visualizzatori DHTML è ufficialmente terminata.
+A partire dal 31 gennaio 2014, la piattaforma visualizzatore DHTML è ufficialmente terminata.
 
-Consulta la sezione [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) per gli ultimi visualizzatori supportati.
+Consulta la [Guida di riferimento per i visualizzatori di Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) per i visualizzatori supportati più recenti.

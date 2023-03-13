@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Impostazione di Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di gestire le risorse distribuendo su richiesta risorse visive di marketing e merchandising, ridimensionate automaticamente per essere utilizzate su siti web, mobili e social. Utilizzando un set di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di gestire le risorse offrendo risorse visive avanzate per il merchandising e il marketing on-demand, scalabili automaticamente per il consumo su siti web, mobili e social. Utilizzando un set di risorse di origine principale, Dynamic Media genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -25,21 +25,21 @@ ht-degree: 7%
 
 -->
 
-Se stai amministrando Dynamic Media, i seguenti argomenti sono di interesse:
+Se si amministra Dynamic Media, sono di interesse i seguenti argomenti:
 
 * [Configurare Dynamic Media](config-dm.md)
-* [Gestire i predefiniti per immagini](managing-image-presets.md)
-* [Gestire i predefiniti per visualizzatori](managing-viewer-presets.md)
+* [Gestione predefiniti immagine](managing-image-presets.md)
+* [Gestisci predefiniti visualizzatore](managing-viewer-presets.md)
 * [Risoluzione dei problemi di Dynamic Media](troubleshoot-dm.md)
 
-Vedi anche i seguenti argomenti:
+Consulta anche i seguenti argomenti:
 
 * [Codifica video e profili video](video-profiles.md)
 * [Profili immagine](image-profiles.md)
 
 >[!NOTE]
 >
->**Per l&#39;aggiornamento:**
+>**Se si sta eseguendo l&#39;aggiornamento:**
 >
->* Dopo aver ricevuto un Adobe [!DNL Experience Manager] Tutte le risorse caricate sono attivate automaticamente da Dynamic Media (a meno che non siano state esplicitamente disabilitate dall’amministratore di sistema). Se utilizzi un&#39;istanza aggiornata di [!DNL Experience Manager] e per i nuovi prodotti Dynamic Media, è probabile che tu debba rielaborare le risorse per renderle abilitate per Dynamic Media. Vedi [Rielaborazione delle risorse in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Dopo l’Adobe [!DNL Experience Manager] Quando sei in esecuzione, tutte le risorse caricate vengono automaticamente abilitate in Dynamic Media, a meno che non siano state esplicitamente disabilitate dall’amministratore di sistema. Se ti trovi in un’istanza aggiornata di [!DNL Experience Manager] e per chi non ha mai utilizzato Dynamic Media, probabilmente dovrai rielaborare le risorse per renderle abilitate per Dynamic Media. Consulta [Rielaborazione delle risorse in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 

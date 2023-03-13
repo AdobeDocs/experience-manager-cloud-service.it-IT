@@ -3,7 +3,7 @@ title: Percorso Architect di contenuti AEM headless
 description: Inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come modellare i contenuti sul tuo primo progetto headless.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 100%
 

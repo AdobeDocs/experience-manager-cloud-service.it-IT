@@ -44,24 +44,24 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
   <tr>
     <td>Pulizia delle versioni</td>
     <td>Adobe</td>
-    <td>Per gli ambienti esistenti (creati prima del 1° marzo 2023), l’eliminazione è disabilitata e non verrà abilitata in futuro, a meno che il cliente non abbia abilitato esplicitamente tale funzionalità e al momento in cui potrà configurarla anche con valori personalizzati.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Per impostazione predefinita, per i nuovi ambienti (creati a partire dal 1° marzo 2023) la pulizia è abilitata con i valori riportati di seguito, consentendo ai clienti di effettuare la configurazione con valori personalizzati.
+    <td>Per gli ambienti esistenti (creati prima del 1° marzo 2023), la rimozione è disabilitata e non sarà abilitata in futuro a meno che non sia esplicitamente abilitata dal cliente, che potrà anche configurarla con valori personalizzati.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Per impostazione predefinita, per i nuovi ambienti (creati a partire dal 1° marzo 2023) è abilitata l’eliminazione con i valori riportati di seguito, e i clienti possono effettuare la configurazione con valori personalizzati.
      <ol>
        <li>Le versioni precedenti a 30 giorni vengono rimosse</li>
        <li>Le ultime 5 versioni degli ultimi 30 giorni vengono conservate</li>
        <li>Indipendentemente dalle regole di cui sopra, viene conservata la versione più recente.</li>
-       <br>Si consiglia ai clienti che hanno requisiti normativi per eseguire il rendering delle pagine del sito esattamente come apparivano in una data specifica, di integrarsi con servizi esterni specializzati.
+       <br>Si consiglia ai clienti con requisiti normativi di eseguire il rendering delle pagine del sito esattamente come sono apparse in una data specifica di integrarsi con servizi esterni specializzati.
      </ol></td>
   </td>
   </tr>
   <tr>
     <td>Elimina log di controllo</td>
     <td>Adobe</td>
-    <td>Per gli ambienti esistenti (creati prima del 1° marzo 2023), l’eliminazione è disabilitata e non verrà abilitata in futuro, a meno che il cliente non abbia abilitato esplicitamente tale funzionalità e al momento in cui potrà configurarla anche con valori personalizzati.<br><br> <!-- See above for the two line breaks -->Per impostazione predefinita, nei nuovi ambienti (creati a partire dal 1° marzo 2023) la funzione di eliminazione è attivata in <code>/content</code> nodo del repository in base al seguente comportamento:
+    <td>Per gli ambienti esistenti (creati prima del 1° marzo 2023), la rimozione è disabilitata e non sarà abilitata in futuro a meno che non sia esplicitamente abilitata dal cliente, che potrà anche configurarla con valori personalizzati.<br><br> <!-- See above for the two line breaks -->Per impostazione predefinita, nei nuovi ambienti (creati a partire dal 1° marzo 2023) la rimozione è abilitata nella sezione <code>/content</code> nodo dell’archivio in base al seguente comportamento:
      <ol>
        <li>Per il controllo della replica, i registri di audit precedenti a 3 giorni vengono rimossi</li>
        <li>Per il controllo DAM (Assets), i registri di audit precedenti a 30 giorni vengono rimossi</li>
        <li>Per il controllo delle pagine, i registri con più di 3 giorni vengono rimossi.</li>
-       <br>Si consiglia ai clienti che hanno requisiti normativi per produrre registri di audit non modificabili di integrarsi con servizi esterni specializzati.
+       <br>Si consiglia ai clienti che dispongono di requisiti normativi per la produzione di registri di audit non modificabili di integrarsi con servizi esterni specializzati.
      </ol></td>
    </td>
   </tr>
@@ -76,7 +76,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
     <td>Cliente</td>
     <td>
     <p>Deve essere eseguito in git. Sovrascrivi il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà sotto la cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> o <code>granite_daily</code>.</p>
-    <p>Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. Attiva l'attività di manutenzione aggiungendo un altro nodo sotto il nodo sopra. Denomina <code>granite_TaskPurgeTask</code>, con attributo <code>sling:resourceType</code> impostato su <code>granite/operations/components/maintenance/task</code> e attributo <code>granite.maintenance.name</code> impostato su <code>TaskPurge</code>. Configura le proprietà OSGI, vedi <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> per l'elenco delle proprietà.</p>
+    <p>Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore. Assegna un nome <code>granite_TaskPurgeTask</code>, con attributo <code>sling:resourceType</code> imposta su <code>granite/operations/components/maintenance/task</code> Attributo e <code>granite.maintenance.name</code> imposta su <code>TaskPurge</code>. Configura le proprietà OSGI, vedi <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> per l’elenco delle proprietà.</p>
   </td>
   </tr>
     <tr>
@@ -124,7 +124,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
     <p><strong>windowSchedule=weekly</strong> (questo valore non deve essere modificato)</p>
     <p><strong>windowStartTime=HH:MM</strong> utilizzando un orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono iniziare l’esecuzione.</p>
     <p><strong>windowEndTime=HH:MM</strong> utilizzando un orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono interrompere l’esecuzione se non sono già state completate.</p>
-    <p><strong>windowScheduleWeekdays= Array di 2 valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell'array è il giorno iniziale in cui il processo viene pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
+    <p><strong>windowScheduleWeekdays= Array di 2 valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell’array è il giorno iniziale in cui il processo è pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
     </td>
   </tr>
   <tr>
@@ -135,7 +135,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
     <p><strong>windowSchedule=daily</strong> (questo valore non deve essere modificato)</p>
     <p><strong>windowStartTime=HH:MM</strong> utilizzando un orologio da 24 ore.  Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono iniziare l’esecuzione.</p>
     <p><strong>windowEndTime=HH:MM</strong> utilizzando un orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono interrompere l’esecuzione se non sono già state completate.</p>
-    <p><strong>windowScheduleWeekdays=Array di 2 valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell'array è il giorno iniziale in cui il processo viene pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
+    <p><strong>windowScheduleWeekdays=Array di 2 valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell’array è il giorno iniziale in cui il processo è pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 per pianificare la prima settimana del mese o 1 per pianificare l’ultima settimana del mese. L’assenza di un valore consente di pianificare ogni giorno in modo efficace i processi secondo le regole mensili di windowScheduleWeekdays.</p>
     </td> 
     </tr>

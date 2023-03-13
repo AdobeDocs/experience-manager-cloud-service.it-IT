@@ -2,7 +2,7 @@
 title: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
 description: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 7becee73a64fbfd2b4f89c307f63868461b0e853
+source-git-commit: 8e06dff01e06ced62686a4784619278f29345082
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 85%
@@ -46,9 +46,9 @@ L’iniziatore di tali azioni può controllarne lo stato in una nuova interfacci
 
 ## Nuovo sito di riferimento e tutorial {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), un nuovo sito di riferimento AEM è stato aggiornato e pubblicato per riflettere le best practice per la creazione di un sito web con AEM e con l’insieme completo di funzionalità, componenti e modelli di distribuzione disponibili in AEM. Il nuovo sito di riferimento e [tutorial di accompagnamento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it) tratta argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti con Adobe Experience Manager Sites.
+[WKND](https://wknd.site/), un nuovo sito di riferimento dell’AEM è stato aggiornato e pubblicato per riflettere le best practice per la creazione di un sito web con AEM e con l’insieme completo di funzionalità, componenti e modelli di implementazione disponibili nell’AEM. Il nuovo sito di riferimento e [tutorial di accompagnamento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it) tratta argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti con Adobe Experience Manager Sites.
 
-In precedenza, We.Retail veniva installato per impostazione predefinita con AEM (tranne quando avviato in modalità di produzione). In AEM as a Cloud Service, un sito di riferimento non è installato per impostazione predefinita. Invece, vengono forniti [archivio git](https://github.com/adobe/aem-guides-wknd/) e [tutorial di accompagnamento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it) con il codice del sito di riferimento WKND aggiornato.
+In precedenza, We.Retail veniva installato per impostazione predefinita con AEM (tranne quando avviato in modalità di produzione). In AEM as a Cloud Service, per impostazione predefinita non viene installato un sito di riferimento. Invece, vengono forniti [archivio git](https://github.com/adobe/aem-guides-wknd/) e [tutorial di accompagnamento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it) con il codice del sito di riferimento WKND aggiornato.
 
 ## Funzionalità non disponibili in fase di esecuzione {#capabilities-not-available-at-runtime}
 

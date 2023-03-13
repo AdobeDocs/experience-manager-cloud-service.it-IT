@@ -15,7 +15,7 @@ Scopri i passaggi per abilitare l’esperienza completa di AEM Screens as a Clou
 
 >[!NOTE]
 >
->La demo di AEM Screens richiede l’aggiunta del componente aggiuntivo Screens al programma Cloud Manager. Scopri [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) come aggiungerlo.
+>AEM Screens Demo richiede l’aggiunta del componente aggiuntivo Screens al programma Cloud Manager. Scopri [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) come aggiungerlo.
 
 ## La storia finora {#story-so-far}
 

@@ -16,13 +16,13 @@ Scopri come utilizzare e amministrare Experience Manager Content and Commerce as
 
 >[!NOTE]
 >
->Per contenuti AEM e commerce con AEM 6.5 e CIF classico, consulta [AEM 6.5 Contenuto e commercio](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>Per i contenuti e il commercio AEM con AEM 6.5 e CIF classico, consulta [AEM 6.5 Contenuti e commercio](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
 
-## Articoli principali su contenuto e commercio {#key-articles}
+## Contenuti chiave e articoli commerciali {#key-articles}
 
-* [Introduzione del contenuto AEM e del commercio](introduction.md)
-* [Guida introduttiva a Contenuto AEM e Commerce](/help/commerce-cloud/getting-started.md)
-* [Sviluppo di contenuti AEM e commercio](/help/commerce-cloud/develop.md)
+* [Introduzione di contenuti e commercio AEM](introduction.md)
+* [Guida introduttiva a AEM Content and Commerce](/help/commerce-cloud/getting-started.md)
+* [Sviluppo di contenuti e commercio AEM](/help/commerce-cloud/develop.md)
 
 ## Guide di Experience Manager as a Cloud Service {#aem-guides}
 
@@ -48,4 +48,4 @@ Scopri come utilizzare e amministrare Experience Manager Content and Commerce as
 * [Preparazione al RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
-* [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Forum della community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=it)

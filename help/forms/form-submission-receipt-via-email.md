@@ -1,7 +1,7 @@
 ---
-title: Invio di una conferma dell’invio di un modulo via e-mail
+title: Invio di una conferma per l’invio di un modulo tramite e-mail
 seo-title: Sending a form submission acknowledgement via email
-description: AEM Forms consente di configurare l’azione di invio tramite e-mail che invia una conferma all’utente al momento dell’invio del modulo.
+description: AEM Forms consente di configurare l’azione di invio e-mail che invia una conferma a un utente all’invio del modulo.
 seo-description: AEM Forms allows you to configure the email Submit Action that sends an acknowledgement to a user on submitting the form.
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
@@ -17,23 +17,23 @@ ht-degree: 0%
 ---
 
 
-# Invio di una conferma dell’invio di un modulo via e-mail {#sending-a-form-submission-acknowledgement-via-email}
+# Invio di una conferma per l’invio di un modulo tramite e-mail {#sending-a-form-submission-acknowledgement-via-email}
 
-## Invio dei dati del modulo adattivo {#adaptive-form-data-submission}
+## Invio di dati per modulo adattivo {#adaptive-form-data-submission}
 
-Adaptive Forms fornisce diverse funzionalità predefinite [Inviare azioni](configuring-submit-actions.md) flussi di lavoro per l’invio dei dati del modulo a endpoint diversi.
+Forms adattivo offre diversi [Invia azioni](configuring-submit-actions.md) flussi di lavoro per l’invio dei dati del modulo a endpoint diversi.
 
-Ad esempio, il **[!UICONTROL Invia e-mail]** Invia azione invia un messaggio e-mail dopo l’invio corretto di un modulo adattivo. Può anche essere configurato per inviare i dati del modulo e PDF nell’e-mail.
+Ad esempio, il **[!UICONTROL Invia e-mail]** Azione di invio invia un’e-mail in caso di invio corretto di un modulo adattivo. Può anche essere configurato per inviare i dati del modulo e il PDF nell’e-mail.
 
-Questo articolo descrive i passaggi per abilitare l’azione E-mail su un modulo adattivo e le diverse configurazioni che fornisce.
+Questo articolo descrive i passaggi per abilitare l’azione E-mail su un modulo adattivo e le diverse configurazioni fornite.
 
 >[!NOTE]
 >
->È inoltre possibile utilizzare **[!UICONTROL Invia PDF tramite e-mail]** opzione per inviare il modulo completato tramite e-mail come allegato PDF. Le opzioni di configurazione disponibili per questa azione sono le stesse opzioni disponibili per la **[!UICONTROL Invia e-mail]** azione. L’azione E-mail PDF è disponibile solo per Forms adattivo basato su XFA
+>È inoltre possibile utilizzare **[!UICONTROL Invia PDF tramite e-mail]** opzione per inviare il modulo compilato tramite e-mail come allegato PDF. Le opzioni di configurazione disponibili per questa azione sono le stesse disponibili per **[!UICONTROL Invia e-mail]** azione. L’azione E-mail PDF è disponibile solo per Adaptive Forms basato su XFA
 
-## Invia azione e-mail {#email-action}
+## Azione Invia e-mail {#email-action}
 
-L’azione Invia e-mail consente all’autore di inviare automaticamente e-mail a uno o più destinatari dopo l’invio corretto di un modulo adattivo.
+L’azione Invia e-mail consente all’autore di inviare automaticamente e-mail a uno o più destinatari in caso di invio corretto di un modulo adattivo.
 
 <!-- >>[!NOTE]
 >
@@ -65,23 +65,23 @@ L’azione Invia e-mail consente all’autore di inviare automaticamente e-mail 
 
 ### Utilizzo dei nomi dei campi del modulo adattivo per creare in modo dinamico contenuti e-mail {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
-I nomi di campo in un modulo adattivo sono denominati segnaposto che vengono sostituiti con il valore di tale campo dopo l’invio del modulo da parte dell’utente.
+I nomi dei campi in un modulo adattivo sono denominati segnaposto e vengono sostituiti con il valore del campo dopo che un utente ha inviato il modulo.
 
-In **[!UICONTROL Invia e-mail]** è possibile utilizzare segnaposto elaborati al momento dell&#39;esecuzione dell&#39;azione. Ciò implica che le intestazioni dell&#39;e-mail (come **[!UICONTROL A]**, **[!UICONTROL CC]**, **[!UICONTROL CCN]**, **[!UICONTROL Oggetto]**) vengono generate al momento dell’invio del modulo da parte dell’utente.
+In **[!UICONTROL Invia e-mail]** , è possibile utilizzare segnaposto che vengono elaborati durante l&#39;esecuzione dell&#39;azione. Ciò implica che le intestazioni dell’e-mail (come **[!UICONTROL A]**, **[!UICONTROL CC]**, **[!UICONTROL CCN]**, **[!UICONTROL Oggetto]**) vengono generate quando l&#39;utente invia il modulo.
 
 Per definire un segnaposto, specificare `${<field name>}` in un campo dopo aver selezionato **[!UICONTROL Invia e-mail]** come azione di invio.
 
-Ad esempio, se il modulo contiene **[!UICONTROL Indirizzo e-mail]** campo denominato `email_addr`, per acquisire l’ID e-mail di un utente, puoi specificare quanto segue in **[!UICONTROL A]**, **[!UICONTROL CC]** oppure **[!UICONTROL CCN]** campi.
+Ad esempio, se il modulo contiene **[!UICONTROL Indirizzo e-mail]** campo, denominato `email_addr`, per acquisire l’ID e-mail di un utente, puoi specificare quanto segue nel **[!UICONTROL A]**, **[!UICONTROL CC]**, o **[!UICONTROL CCN]** campi.
 
 `${email_addr}`
 
-Quando un utente invia il modulo, viene inviata un’e-mail all’ID e-mail immesso nel `email_addr` campo del modulo.
+Quando un utente invia il modulo, viene inviata un’e-mail all’ID e-mail inserito nel `email_addr` del modulo.
 
 >[!NOTE]
 >
->Puoi trovare il nome di un campo nella **[!UICONTROL Modifica]** finestra di dialogo per il campo .
+>È possibile trovare il nome di un campo nel **[!UICONTROL Modifica]** per il campo.
 
-I segnaposto variabili possono essere utilizzati anche nella variabile **[!UICONTROL Oggetto]** e **[!UICONTROL Modello e-mail]** campi.
+I segnaposto variabili possono essere utilizzati anche nel **[!UICONTROL Oggetto]** e **[!UICONTROL Modello e-mail]** campi.
 
 Esempio:
 
@@ -95,5 +95,5 @@ Esempio:
 
 >[!NOTE]
 >
->I campi nei pannelli ripetibili non possono essere utilizzati come segnaposto variabili.
+>I campi nei pannelli ripetibili non possono essere utilizzati come segnaposto per le variabili.
 

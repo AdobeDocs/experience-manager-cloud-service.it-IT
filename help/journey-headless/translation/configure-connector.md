@@ -3,7 +3,7 @@ title: Configura il connettore di traduzione per il contenuto headless
 description: Scopri come connettere AEM a un servizio di traduzione.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1234'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Nel documento precedente del percorso di traduzione di AEM headless, [Guida intr
 
 * Comprendere l’importanza della struttura dei contenuti per la traduzione.
 * Avere compreso come AEM archivia il contenuto headless.
-* Conoscere gli strumenti di traduzione di AEM.
+* conoscere gli strumenti di traduzione di AEM.
 
 Questo articolo si basa su queste nozioni di base per permetterti di compiere il primo passaggio di configurazione e impostare un servizio di traduzione, che utilizzerai successivamente nel percorso per tradurre i contenuti.
 
@@ -125,7 +125,7 @@ A questo scopo, accedi alla directory principale della lingua del contenuto. Per
 
 ![Seleziona le configurazioni del servizio cloud](assets/select-cloud-service-configurations.png)
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Ora cha hai completato questa parte del percorso di traduzione headless, dovresti:
 

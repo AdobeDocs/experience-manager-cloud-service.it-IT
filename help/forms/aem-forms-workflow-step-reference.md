@@ -162,7 +162,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 
 ## Passaggio Converti in PDF/A {#convert-pdfa}
 
-PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, incorporando i font e decomprimendo il file. Di conseguenza, un documento PDF/A è in genere più grande di un documento PDF standard. È possibile utilizzare ***Converti in PDF/A*** entra in un flusso di lavoro AEM per convertire i documenti PDF in formato PDF/A.
+PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, incorporando i font e decomprimendo il file. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. È possibile utilizzare ***Converti in PDF/A*** entra in un flusso di lavoro AEM per convertire i documenti PDF in formato PDF/A.
 
 Il passaggio Converti in PDF/A ha le seguenti proprietà:
 

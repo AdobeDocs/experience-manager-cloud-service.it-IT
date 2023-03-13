@@ -63,7 +63,7 @@ Dai un’occhiata al video [Panoramica sulla versione di gennaio 2022](https://v
 
 * Le risorse non elaborate senza rendering originale vengono inviate ad Asset Compute per l’elaborazione durante la migrazione delle risorse da AEM on-premise a Cloud Services.
 
-## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
@@ -103,10 +103,10 @@ La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2022.01.0 è
 
 ### Novità {#what-is-new-cm}
 
-* Cloud Manager [evita di ricostruire la base di codice quando rileva che viene utilizzato lo stesso commit git](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in più esecuzioni di pipeline full-stack.
-* L’accesso al registro dell’ambiente AEM ora richiede il profilo di prodotto **Gestione distribuzione**. Gli utenti senza questo profilo visualizzeranno un pulsante disabilitato nell’interfaccia utente.
+* Cloud Manager [evita di ricostruire la base di codice quando rileva che viene utilizzato lo stesso commit Git](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in più esecuzioni di pipeline full-stack.
+* L’accesso al registro dell’ambiente AEM ora richiede il profilo di prodotto **Responsabile dell’implementazione**. Gli utenti senza questo profilo visualizzeranno un pulsante disabilitato nell’interfaccia utente.
 * L’interfaccia utente non consente la configurazione della pipeline front-end per un programma in cui Sites non è abilitato come soluzione.
-* Al momento della generazione di una password git, verrà visualizzata la data di scadenza.
+* Al momento della generazione di una password Git, verrà visualizzata la data di scadenza.
 
 ### Correzioni di bug {#bug-fixes-cm}
 

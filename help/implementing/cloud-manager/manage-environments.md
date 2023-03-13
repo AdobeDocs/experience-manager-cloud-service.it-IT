@@ -2,7 +2,7 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 2af14814a4e8af22cfdc1caa2ff656020c79ce77
+source-git-commit: 4631ab86ae1b4405e31d8bb8eae8edbbe2272c2c
 workflow-type: tm+mt
 source-wordcount: '1826'
 ht-degree: 88%
@@ -17,13 +17,13 @@ Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e co
 
 L’utente con le autorizzazioni necessarie può creare i seguenti tipi di ambienti (entro i limiti delle opzioni disponibili per il tenant specifico).
 
-* **Produzione + fase** - Gli ambienti di produzione e di staging sono disponibili come coppia e sono utilizzati rispettivamente a scopo di produzione e di test.
+* **Produzione e staging** - Gli ambienti di produzione e di staging sono disponibili in coppia e vengono utilizzati rispettivamente a scopo di produzione e test.
 
 * **Sviluppo**: è possibile creare un ambiente di sviluppo sia per scopi di sviluppo sia per scopi di test e associarlo solo a pipeline non di produzione.
 
-* **Sviluppo rapido** - Un ambiente di sviluppo rapido (RDE) consente agli sviluppatori di implementare e rivedere rapidamente le modifiche, riducendo al minimo il tempo necessario per testare le funzioni che sono comprovate funzionare in un ambiente di sviluppo locale. Vedi [la documentazione sull&#39;ambiente di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md) per informazioni dettagliate su come utilizzare un RDE.
+* **Sviluppo rapido** - Un ambiente di sviluppo rapido (RDE, rapid development environment) consente allo sviluppatore di implementare e rivedere rapidamente le modifiche, riducendo al minimo il tempo necessario per testare le funzioni che hanno dimostrato di funzionare in un ambiente di sviluppo locale. Consulta [documentazione dell’ambiente di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md) per informazioni dettagliate sull&#39;utilizzo di un RDE.
 
-Le funzionalità dei singoli ambienti dipendono dalle soluzioni abilitate nella [programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) dell&#39;ambiente.
+Le funzionalità dei singoli ambienti dipendono dalle soluzioni abilitate in [programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) dell&#39;ambiente.
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -53,12 +53,12 @@ Le funzionalità dei singoli ambienti dipendono dalle soluzioni abilitate nella 
 1. Nella finestra di dialogo **Aggiungi ambiente** che viene visualizzata:
 
    * Seleziona un [**tipo di ambiente**.](#environment-types)
-      * Il numero di ambienti disponibili/utilizzati viene visualizzato tra parentesi dietro il nome del tipo di ambiente.
+      * Il numero di ambienti disponibili/utilizzati viene visualizzato tra parentesi dopo il nome del tipo di ambiente.
    * Fornire un ambiente **Nome**.
    * Fornire un ambiente **Descrizione**.
-   * Seleziona una **Regione principale** dal menu a discesa.
-      * Tieni presente che non è possibile modificarlo dopo la creazione.
-   * Se aggiungi un **Produzione + fase** ambiente, devi fornire un nome e una descrizione dell’ambiente sia per gli ambienti di produzione che per quelli di staging.
+   * Seleziona un **Area geografica primaria** dal menu a discesa.
+      * Nota che questo non può essere modificato dopo la creazione.
+   * Se stai aggiungendo una **Produzione e staging** è necessario fornire un nome e una descrizione dell’ambiente sia per l’ambiente di produzione che per quello di staging.
       ![Finestra di dialogo Aggiungi ambiente](assets/add-environment2.png)
 
 1. Per aggiungere l’ambiente specificato, fai clic su **Salva**.
@@ -103,7 +103,7 @@ Al momento della creazione, al servizio di anteprima viene applicato un elenco I
 
 ![Servizio di anteprima e relativo elenco Consentiti](assets/preview-ip-allow.png)
 
-Un utente con le autorizzazioni necessarie deve completare i seguenti passaggi prima di condividere l’URL del servizio di anteprima per assicurarne l’accesso.
+Per garantire l’accesso al servizio di anteprima, prima di condividerlo l’utente con le autorizzazioni necessarie deve completare i passaggi seguenti.
 
 1. Crea un elenco IP consentiti appropriato, applicalo al servizio di anteprima e rimuovi immediatamente l’elenco Consentiti `Preview Default [<envId>]`.
 
@@ -111,13 +111,13 @@ Un utente con le autorizzazioni necessarie deve completare i seguenti passaggi p
 
 1. Rimuovi l’IP predefinito e aggiungi gli IP appropriati con il flusso di lavoro per l’aggiornamento dell’**elenco IP consentiti**. Per ulteriori informazioni, consulta [Gestione degli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md).
 
-Una volta sbloccato l&#39;accesso al servizio di anteprima, l&#39;icona del lucchetto davanti al nome del servizio di anteprima non verrà più visualizzata.
+Una volta sbloccato l’accesso al servizio di anteprima, l’icona a forma di lucchetto davanti al nome del servizio non viene più visualizzata.
 
 Dopo l’attivazione puoi pubblicare il contenuto nel servizio di anteprima tramite l’interfaccia utente Gestisci pubblicazione in AEM. Per ulteriori informazioni, consulta il documento [Anteprima del contenuto](/help/sites-cloud/authoring/fundamentals/previewing-content.md).
 
 >[!NOTE]
 >
->L&#39;ambiente deve essere in versione AEM `2021.05.5368.20210529T101701Z` o più recente per utilizzare il servizio di anteprima. Per eseguire l’operazione, assicurati che nell’ambiente sia stata eseguita correttamente una pipeline di aggiornamento.
+>La versione dell’ambiente deve essere AEM `2021.05.5368.20210529T101701Z` o più recente per utilizzare il servizio di anteprima. Per eseguire l’operazione, assicurati che nell’ambiente sia stata eseguita correttamente una pipeline di aggiornamento.
 
 ## Aggiornamento degli ambienti {#updating-dev-environment}
 

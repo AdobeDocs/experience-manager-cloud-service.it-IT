@@ -1,5 +1,5 @@
 ---
-title: Filtrare le risorse
+title: Applicare una filigrana alle risorse
 description: Aggiungi una filigrana alle risorse digitali.
 contentOwner: AG
 feature: Asset Management,Publishing
@@ -12,21 +12,21 @@ ht-degree: 2%
 
 ---
 
-# Filtrare le risorse {#watermark-assets}
+# Applicare una filigrana alle risorse {#watermark-assets}
 
-[!DNL Adobe Experience Manager Assets] consente di aggiungere una filigrana digitale alle immagini. [!DNL Assets] supporta l’applicazione di un’immagine come filigrana ad altri file di immagine. Le filigrane possono aiutare gli utenti a verificare l’autenticità e la proprietà del copyright delle risorse. Inoltre, una filigrana può essere utilizzata per indicare lo stato di un documento come confidenziale, bozza, validità e così via.
+[!DNL Adobe Experience Manager Assets] consente di aggiungere una filigrana digitale alle immagini. [!DNL Assets] supporta l’applicazione di un’immagine come filigrana ad altri file di immagine. Le filigrane consentono agli utenti di verificare l’autenticità e la proprietà del copyright delle risorse. Inoltre, è possibile utilizzare una filigrana per indicare lo stato di un documento, ad esempio riservato, bozza, validità e così via.
 
 Per configurare [!DNL Experience Manager] per applicare una filigrana alle risorse:
 
 1. Un file PNG viene applicato come filigrana. Carica questo file nel tuo archivio DAM.
 
-1. Passa a **[!UICONTROL Strumenti > Risorse > Configurazioni risorse]**.
+1. Accedi a **[!UICONTROL Strumenti > Risorse > Configurazioni risorse]**.
 
-1. Fai clic su **[!UICONTROL Profilo di filigrana del sistema]**.
+1. Clic **[!UICONTROL Profilo filigrana sistema]**.
 
-1. Sulla [!UICONTROL Pagina del profilo di filigrana del sistema], specifica il percorso immagine caricato nell’archivio DAM al passaggio 1.
+1. Il giorno [!UICONTROL Pagina Profilo filigrana sistema], specifica il percorso dell’immagine caricata nell’archivio DAM al passaggio 1.
 
-1. Specifica la scala della filigrana, da 0,0 a 1,0, relativa alla larghezza del rendering, nella **[!UICONTROL Scala]** campo .
+1. Specificare la scala della filigrana, compresa tra 0,0 e 1,0, relativa alla larghezza della rappresentazione, nel **[!UICONTROL Scala]** campo.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
@@ -34,21 +34,21 @@ Per configurare [!DNL Experience Manager] per applicare una filigrana alle risor
 
    >[!NOTE]
    >
-   >Se hai configurato il profilo di filigrana di sistema utilizzando `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` file di configurazione (configurazione OSGi), è possibile continuare a utilizzarlo, tuttavia, Adobe consiglia di utilizzare il nuovo metodo.
+   >Se hai configurato il profilo Filigrana di sistema utilizzando `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` file di configurazione di (configurazione OSGi), puoi continuare a utilizzarlo, tuttavia, l’Adobe consiglia di utilizzare il nuovo metodo.
 
 
-1. [Creare un profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) per sfruttare i microservizi delle risorse per applicare la filigrana.
+1. [Creare un profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) per applicare la filigrana sfruttando i microservizi per risorse.
 
-   ![Profilo di elaborazione delle risorse per creare una filigrana](assets/watermark-processing-profile.png)
+   ![Profilo di elaborazione risorsa per la creazione della filigrana](assets/watermark-processing-profile.png)
 
-   Assicurati di abilitare il **[!UICONTROL Filigrana]** durante la creazione del profilo di elaborazione.
+   Assicurati di abilitare **[!UICONTROL Filigrana]** durante la creazione del profilo di elaborazione.
 
 1. [Applicare i profili di elaborazione a una cartella](/help/assets/asset-microservices-configure-and-use.md#use-profiles) per creare risorse con filigrana.
 
 ## Suggerimenti e limitazioni {#tips-limitations-bestpractices}
 
-* Puoi utilizzare una singola configurazione per applicare una filigrana a tutte le risorse. Per la filigrana viene utilizzata una sola immagine e la sua larghezza è fissa.
-* È possibile posizionare la filigrana al centro senza piastrelle.
+* Puoi utilizzare un’unica configurazione per applicare una filigrana a tutte le risorse. Per la filigrana viene utilizzata una sola immagine e la sua larghezza è fissa.
+* È possibile posizionare la filigrana al centro senza affiancare.
 * Le filigrane basate su testo non sono supportate.
 
 >[!MORELIKETHIS]

@@ -24,7 +24,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 ### Novità {#what-is-new}
 
 * La versione dell’archetipo di Adobe Experience Manager è stata aggiornata alla versione 22.
-* Gli ambienti di stage e produzione nei programmi Sandbox/Demo ora possono essere aggiornati tramite l’interfaccia utente di Cloud Manager.
+* Gli ambienti di staging e produzione nei programmi Sandbox/Demo ora possono essere aggiornati tramite l’interfaccia utente di Cloud Manager.
 * Gli URL utilizzati nelle notifiche di Experience Cloud sono stati ottimizzati per evitare un reindirizzamento aggiuntivo.
 * I passaggi di esecuzione della pipeline interrotti a causa di timeout ora vengono segnalati in modo esplicito.
 * Il passaggio di analisi del codice ora include un registro scaricabile.

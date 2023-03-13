@@ -16,18 +16,18 @@ ht-degree: 0%
 Questa sezione descrive come creare rappresentazioni video utilizzate nei lettori Screens.
 
 >[!IMPORTANT]
->I passaggi evidenziati in questa sezione devono essere configurati, se intendi utilizzare i video nei canali Screens.
+>Se intendi utilizzare i video nei canali Screens, è necessario configurare i passaggi evidenziati in questa sezione.
 
 ## Passaggi per creare rappresentazioni video in Screens as a Cloud Service {#steps-creating-screens-video-renditions}
 
-Per creare rappresentazioni video in Screens as a Cloud Service da Screens Content Provider, effettua le seguenti operazioni:
+Per creare rappresentazioni video in Screens as a Cloud Service dal provider di contenuti Screens, segui i passaggi seguenti:
 
-1. Passa al canale nel provider di contenuti Screens.
+1. Passa al tuo canale nel provider di contenuti Screens.
 
    >[!NOTE]
    >Fai riferimento a [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) per ulteriori dettagli.
 
-1. Fai clic sulla sezione Strumenti dalla barra di navigazione a sinistra e fai clic su **Risorse** e quindi fai clic su **Profili di elaborazione**.
+1. Fai clic sulla sezione Strumenti nella barra di navigazione a sinistra, quindi fai clic su **Risorse** e quindi fare clic su **Profili elaborazione**.
 
    ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
@@ -35,23 +35,23 @@ Per creare rappresentazioni video in Screens as a Cloud Service da Screens Conte
 
    ![](/help/screens-cloud/assets/configure/screens-video-2.png)
 
-1. Inserisci il **Nome**, quali **ScreensProcessingProfile**.
+1. Inserisci il **Nome**, ad esempio **ScreensProcessingProfile**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-3.png)
 
-1. Passa a **Video** per aggiungere una codifica video e fai clic su **Aggiungi nuovo**.
+1. Accedi a **Video** per aggiungere una codifica video e fare clic su **Aggiungi nuovo**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
-1. Inserisci il **Nome codifica** , ad esempio **screens-fullhd** e **Bitrate** come **2500**.
+1. Inserisci il **Nome codifica** ad esempio, **schermo intero** e **Bitrate** as **2500**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Assicurati di utilizzare il nome di codifica che inizia con &quot;screens-&quot;, solo queste rappresentazioni video saranno considerate per riprodurre l’esperienza video in Screens as a Cloud Service. Inserisci il bitrate che funziona i tuoi video (2500 kbps per video 720px e 5000 kbps per 1080px).
+   >Assicurati di utilizzare il nome della codifica che inizia con &quot;screens-&quot;, solo queste rappresentazioni video verranno considerate per riprodurre l’esperienza video in Screens as a Cloud Service. Immetti il bitrate che funziona con i video (2500 kbps per i video a 720 px e 5000 kbps per i video a 1080 px).
 
    >[!NOTE]
-   >Per lavorare i video, è possibile aggiungere più rappresentazioni video con larghezza/altezza/bitrate variabili. Ricorda che tutte le schermate- rappresentazioni saranno scaricate dai dispositivi Screens, anche se il dispositivo riproduce solo rendering video.
+   >Per lavorare con i video è possibile aggiungere più rappresentazioni video con larghezza/altezza/bitrate variabile. Ricorda che tutte le rappresentazioni degli schermi verranno scaricate dai dispositivi Screens, anche se il dispositivo riproduce solo la rappresentazione video.
 
 1. Fai clic su **Salva**.
 
@@ -64,6 +64,6 @@ Per creare rappresentazioni video in Screens as a Cloud Service da Screens Conte
    ![](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
-   >* Puoi creare più profili di elaborazione e applicarli alle cartelle corrispondenti, in modo che i video presenti in tali cartelle ricevano le rappresentazioni video specifiche.
-   >* Quando carichi dei video nella cartella in cui viene applicato il profilo di elaborazione, i video vengono elaborati e configurati e vengono create rappresentazioni, che vengono ulteriormente utilizzate dai dispositivi Screens per riprodurre i video.
+   >* Puoi creare più profili di elaborazione e applicarli alle cartelle corrispondenti, in modo che i video in tali cartelle ottengano le rappresentazioni video specifiche.
+   >* Quando carichi dei video nella cartella in cui viene applicato il profilo di elaborazione, vengono elaborati i video e creati i rendering configurati, ulteriormente utilizzati dai dispositivi Screens per riprodurre i video.
 

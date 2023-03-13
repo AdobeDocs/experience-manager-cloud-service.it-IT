@@ -3,7 +3,7 @@ title: Creazione di programmi di produzione
 description: Scopri come creare un programma di produzione per ospitare il traffico in tempo reale con Cloud Manager.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 100%
 

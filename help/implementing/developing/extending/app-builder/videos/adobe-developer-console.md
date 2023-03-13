@@ -1,6 +1,6 @@
 ---
 title: Console Adobe Developer per App Builder
-description: Scopri i progetti Console di Adobe Developer e App Builder.
+description: Scopri la console Adobe Developer e i progetti App Builder.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -12,7 +12,7 @@ exl-id: bf358ead-cd39-4284-86d5-5b4ab0cf1ae3
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -24,24 +24,24 @@ ht-degree: 0%
 
 ## Guida introduttiva alla console Adobe Developer
 
-Scopri cos’è la console Adobe Developer e come accedervi e navigarvi.
+Scopri la console Adobe Developer, come accedervi e navigarla.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
 
 ## Utilizzare progetti e modelli
 
-Scopri come creare un progetto App Builder utilizzando il modello App Builder della console di Adobe Developer.
+Scopri come creare un progetto App Builder utilizzando il modello App Builder della console Adobe Developer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
 
-## Credenziali del progetto
+## Credenziali progetto
 
-Scopri come utilizzare le opzioni nel menu delle credenziali di Adobe Developer Console e il processo di approvazione.
+Scopri come utilizzare le opzioni del menu delle credenziali di Adobe Developer Console e il processo di approvazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
 
-## Informazioni e utilizzo della quota
+## Informazioni approfondite e utilizzo delle quote
 
-Scopri le informazioni approfondite sulle applicazioni di App Builder e l’utilizzo delle quote.
+Scopri gli approfondimenti sull’applicazione App Builder e l’utilizzo delle quote.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339165/?quality=12&learn=on)

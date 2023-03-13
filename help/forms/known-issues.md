@@ -1,6 +1,6 @@
 ---
 title: Problemi noti e limitazioni
-description: Problemi noti e limitazioni di  [!DNL AEM Forms] Ambiente as a Cloud Service
+description: Problemi noti e limitazioni di  [!DNL AEM Forms] ambiente as a Cloud Service
 contentOwner: khsingh
 role: User, Developer
 level: Intermediate
@@ -15,23 +15,23 @@ ht-degree: 11%
 
 # Problemi noti e limitazioni {#known-issues-and-limitations}
 
-Prima di iniziare a utilizzare [!DNL AEM Forms] as a Cloud Service, controlla i seguenti problemi noti e limitazioni:
+Prima di iniziare a utilizzare [!DNL AEM Forms] as a Cloud Service, esamina i seguenti problemi noti e limitazioni:
 
 ## Problemi noti {#known-issues}
 
-* Non aggiungere ed eseguire un test per l’invio di un modulo adattivo da un’istanza di pubblicazione a un flusso di lavoro AEM in esecuzione su un’istanza di authoring fino a nuovo avviso.
+* Fino a nuovo avviso, non aggiungere ed eseguire un test che invia un modulo adattivo da un’istanza Publish a un flusso di lavoro AEM in esecuzione su un’istanza Author.
 
-* Quando si importa un modulo adattivo che utilizza un modello contenente **[!UICONTROL Salva]** il pulsante **[!UICONTROL Salva]** Il pulsante continua a essere visualizzato nel modulo adattivo anche dopo essere stato rimosso dal modello corrispondente. Rimuovi **[!UICONTROL Salva]** dal Forms adattivo prima di pubblicarlo. Controlla le note sulla versione per verificare la disponibilità del portale Forms e la funzione Salva come bozza per ripristinare e utilizzare il pulsante .
+* Quando importi un modulo adattivo che utilizza un modello contenente **[!UICONTROL Salva]** pulsante, il pulsante **[!UICONTROL Salva]** continua a essere visualizzato nel modulo adattivo anche dopo essere stato rimosso dal modello corrispondente. Rimuovi il **[!UICONTROL Salva]** dal Forms adattivo prima di pubblicarlo. Tieni d’occhio le note sulla versione per verificare la disponibilità del portale Forms e della funzione Salva come bozza da ripristinare e utilizzare il pulsante.
 
-* La **[!UICONTROL Imposta variabile]** passaggio di flussi di lavoro AEM non supporta le variabili di tipo elenco array. È possibile utilizzare il passaggio del processo per impostare variabili di tipo elenco array.
+* Il **[!UICONTROL Imposta variabile]** Il passaggio dei flussi di lavoro AEM non supporta le variabili dell’elenco di array di tipo. È possibile utilizzare il passaggio del processo per impostare variabili di tipo elenco matrice.
 
-* Quando si invia un modulo adattivo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, il contenuto del file non viene inviato e viene ricevuto un file a 0 byte dall’altra parte. Il problema si verifica a intermittenza e solo quando si utilizza l’invio sincrono. Questa è una [problema noto](https://feedbackassistant.apple.com/feedback/9117687) in Apple iOS.
+* Quando invii un modulo adattivo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, il contenuto del file non viene inviato e viene ricevuto un file da 0 byte all’altra estremità. Il problema si verifica in modo intermittente e solo quando si utilizza l’invio sincrono. Questo è un [problema noto](https://feedbackassistant.apple.com/feedback/9117687) in Apple iOS.
 
-* Quando si invia un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file a 0 byte dall’altro lato. Questo è un problema noto in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* Quando invii un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file da 0 byte all’altra estremità. Questo è un problema noto in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-* AEM Forms as a Cloud Service non genera miniature per i file di schema XDP e JSON. Il servizio visualizza le icone predefinite al posto delle miniature.
+* AEM Forms as a Cloud Service non genera miniature per i file di schema XDP e JSON. Al posto delle miniature, vengono visualizzate le icone predefinite.
 
-   ![Problema noto della miniatura di Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
+   ![Problema noto della miniatura del Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
 
 
 ## Limitazioni {#limitations}

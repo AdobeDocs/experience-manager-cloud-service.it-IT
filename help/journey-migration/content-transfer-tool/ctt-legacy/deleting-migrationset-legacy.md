@@ -1,6 +1,6 @@
 ---
-title: Eliminazione di un set di migrazione nello strumento Content Transfer (Trasferimento contenuti) (legacy)
-description: Eliminazione di un set di migrazione nello strumento Content Transfer (Trasferimento contenuti)
+title: Eliminazione di un set di migrazione nello strumento Content Transfer (Legacy)
+description: Eliminazione di un set di migrazione nello strumento Content Transfer
 hide: true
 hidefromtoc: true
 exl-id: a307b085-681a-46b5-9044-b7c14a1b0119
@@ -20,7 +20,7 @@ Puoi eliminare il set di migrazione dalla pagina *Overview* (Panoramica).
 
 Effettua le seguenti operazioni:
 
-1. Passa a **Trasferimento dei contenuti** seleziona il set di migrazione da eliminare e fai clic su **Elimina** dalla barra delle azioni.
+1. Accedi a **Trasferimento dei contenuti** e selezionare il set di migrazione da eliminare, quindi fare clic su **Elimina** dalla barra delle azioni.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 

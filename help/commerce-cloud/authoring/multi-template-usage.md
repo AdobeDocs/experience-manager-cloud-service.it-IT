@@ -1,6 +1,6 @@
 ---
 title: Creazione di più pagine per categorie e prodotti
-description: Scopri come arricchire le pagine di destinazione delle categorie e dei dettagli dei prodotti con contenuti di marketing mirati.
+description: Scopri come arricchire le pagine di destinazione delle categorie e i dettagli dei prodotti con contenuti di marketing mirati.
 sub-product: Commerce
 version: Cloud Service
 doc-type: feature-video
@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 49%
@@ -27,7 +27,7 @@ I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components)
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-Le pagine di prodotto specifiche possono essere selezionate da uno SKU o dalla categoria di un prodotto. La versione successiva è supportata solo da alcuni dei formati URL predefiniti disponibili per la pagina di prodotto, in quanto richiede la codifica delle informazioni sulla categoria nell’url del prodotto.
+Le pagine di prodotti specifici possono essere selezionate da uno SKU o dalla categoria di un prodotto. Quest’ultimo è supportato solo da alcuni dei formati URL predefiniti disponibili per le pagine dei prodotti, in quanto richiede che le informazioni sulle categorie siano codificate nell’URL del prodotto.
 
 Per ulteriori informazioni su questo argomento, consulta le risorse seguenti:
 
@@ -36,4 +36,4 @@ Per ulteriori informazioni su questo argomento, consulta le risorse seguenti:
 
 ## Risorse correlate {#related}
 
-È inoltre possibile eseguire il targeting dinamico di aree specifiche di una pagina e riutilizzare lo stesso modello. Scopri come [arricchire i dati dei prodotti con il contenuto AEM associato](./enrich-product-associated-content.md).
+È inoltre possibile eseguire il targeting dinamico di aree specifiche di una pagina e riutilizzare lo stesso modello. Scopri come [arricchire i dati di prodotto con i contenuti AEM associati](./enrich-product-associated-content.md).

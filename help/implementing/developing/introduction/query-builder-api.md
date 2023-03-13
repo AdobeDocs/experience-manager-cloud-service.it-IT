@@ -2,7 +2,7 @@
 title: API Query Builder
 description: La funzionalità di Asset Share Query Builder è esposta tramite un’API Java e un’API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '2040'
 ht-degree: 0%
@@ -11,31 +11,31 @@ ht-degree: 0%
 
 # API Query Builder {#query-builder-api}
 
-Query Builder offre un modo semplice per eseguire query sull’archivio dei contenuti di AEM. La funzionalità è esposta tramite un’API Java e un’API REST. Questo documento descrive queste API.
+Query Builder offre un modo semplice per eseguire query sull’archivio dei contenuti dell’AEM. La funzionalità è esposta tramite un’API Java e un’API REST. Questo documento descrive queste API.
 
-Generatore di query lato server ([`QueryBuilder`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) accetta una descrizione della query, crea ed esegue una query XPath, filtra facoltativamente il set di risultati e, se necessario, estrae anche i facet.
+Generatore di query lato server ([`QueryBuilder`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) accetterà una descrizione della query, creerà ed eseguirà una query XPath, facoltativamente filtrerà il set di risultati e, se necessario, estrarrà i facet.
 
-La descrizione della query è semplicemente un insieme di predicati ([`Predicate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Gli esempi includono un predicato full-text che corrisponde al `jcr:contains()` in XPath.
+La descrizione della query è semplicemente un set di predicati ([`Predicate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Gli esempi includono un predicato full-text, che corrisponde al `jcr:contains()` funzione in XPath.
 
-Per ogni tipo di predicato, esiste un componente valutatore ([`PredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) che sa come gestire quel predicato specifico per XPath, filtraggio ed estrazione del facet. È molto facile creare valutatori personalizzati, che sono collegati tramite il runtime del componente OSGi.
+Per ogni tipo di predicato, è disponibile un componente valutatore ([`PredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) che sa come gestire il predicato specifico per XPath, il filtro e l&#39;estrazione facet. È molto semplice creare valutatori personalizzati, collegati tramite il runtime del componente OSGi.
 
-L’API REST consente di accedere esattamente alle stesse funzioni tramite HTTP e le risposte vengono inviate in JSON.
+L’API REST consente di accedere esattamente alle stesse funzioni tramite HTTP, con risposte inviate in JSON.
 
 >[!NOTE]
 >
->L’API QueryBuilder viene creata utilizzando l’API JCR. Puoi anche eseguire query sul JCR AEM utilizzando l&#39;API JCR da un bundle OSGi. Per informazioni, consulta [Query dei dati di Adobe Experience Manager tramite l’API JCR](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
+>L’API QueryBuilder viene creata utilizzando l’API JCR. Puoi anche eseguire query sul JCR dell’AEM utilizzando l’API JCR all’interno di un bundle OSGi. Per informazioni, consulta [Query dei dati di Adobe Experience Manager tramite l’API JCR](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## Sessione Gem {#gem-session}
 
-[AEM gemme](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti di Adobe.
+[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobi.
 
-È possibile [controlla la sessione dedicata al generatore di query](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) per una panoramica e l’utilizzo dello strumento.
+È possibile [rivedi la sessione dedicata al generatore di query](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) per una panoramica e l’utilizzo dello strumento.
 
 ## Query di esempio {#sample-queries}
 
-Questi esempi sono forniti nella notazione dello stile delle proprietà Java. Per utilizzarli con l’API Java, utilizza un `HashMap` come nell’esempio di API che segue.
+Questi esempi sono forniti nella notazione di stile delle proprietà Java. Per utilizzarli con l’API Java, utilizza un’interfaccia Java `HashMap` come nell’esempio di API che segue.
 
-Per `QueryBuilder` Servlet JSON, ogni esempio include un collegamento di esempio a un’installazione AEM (nella posizione predefinita, `http://<host>:<port>`). Prima di utilizzare questi collegamenti, è necessario accedere all’istanza AEM.
+Per `QueryBuilder` Servlet JSON, ogni esempio include un collegamento di esempio a un’installazione AEM (nella posizione predefinita, `http://<host>:<port>`). Tieni presente che devi accedere all’istanza AEM prima di utilizzare questi collegamenti.
 
 >[!CAUTION]
 >
@@ -47,11 +47,11 @@ Per `QueryBuilder` Servlet JSON, ogni esempio include un collegamento di esempio
 
 >[!NOTE]
 >
->Per visualizzare i dati JSON restituiti nel browser, potresti voler usare un plug-in come JSONView per Firefox.
+>Per visualizzare i dati JSON restituiti nel browser, è possibile utilizzare un plug-in come JSONView per Firefox.
 
 ### Restituzione di tutti i risultati {#returning-all-results}
 
-La seguente query **restituisce dieci risultati** (o per essere precisi un massimo di dieci), ma informarti **Numero di hit:** che sono effettivamente disponibili:
+La seguente query **restituisce dieci risultati** (o per essere precisi un massimo di dieci), ma informarti del **Numero di hit:** effettivamente disponibili:
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&orderby=path`
 
@@ -63,7 +63,7 @@ path=/content
 orderby=path
 ```
 
-La stessa query (con il parametro `p.limit=-1`) **restituisce tutti i risultati** (potrebbe essere un numero elevato a seconda dell’istanza):
+La stessa query (con il parametro `p.limit=-1`) si **restituisce tutti i risultati** (numero elevato a seconda dell’istanza):
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&orderby=path&p.limit=-1`
 
@@ -78,9 +78,9 @@ orderby=path
 
 ### Utilizzo di p.guessTotal per restituire i risultati {#using-p-guesstotal-to-return-the-results}
 
-Lo scopo del `p.guessTotal` è quello di restituire il numero appropriato di risultati che possono essere mostrati combinando il minimo fattibile `p.offset` e `p.limit` valori. Il vantaggio di utilizzare questo parametro è il miglioramento delle prestazioni con grandi set di risultati. In questo modo si evita di calcolare l&#39;intero totale (ad es. `result.getSize()`) e lettura dell&#39;intero set di risultati, ottimizzato fino al motore OAK e indice. Questa può essere una differenza significativa quando ci sono centinaia di migliaia di risultati, sia in termini di tempo di esecuzione che di utilizzo della memoria.
+Scopo della `p.guessTotal` parametro è quello di restituire il numero appropriato di risultati che possono essere mostrati combinando la soglia minima `p.offset` e `p.limit` valori. L&#39;utilizzo di questo parametro offre il vantaggio di migliorare le prestazioni con set di risultati di grandi dimensioni. In questo modo si evita di calcolare il totale completo (ad es. chiamando `result.getSize()`) e la lettura dell&#39;intero set di risultati, ottimizzati fino al motore e all&#39;indice OAK. Questa può essere una differenza significativa quando ci sono centinaia di migliaia di risultati, sia nel tempo di esecuzione che nell&#39;utilizzo della memoria.
 
-Lo svantaggio del parametro è che gli utenti non vedono il totale esatto. Ma puoi impostare un numero minimo come `p.guessTotal=1000` quindi sarà sempre letto fino a 1000, quindi si ottengono i totali esatti per set di risultati più piccoli, ma se è più di questo, si può solo mostrare &quot;e più&quot;.
+Lo svantaggio del parametro è che gli utenti non vedono il totale esatto. Ma puoi impostare un numero minimo come `p.guessTotal=1000` quindi può sempre leggere fino a 1000, in modo da ottenere totali esatti per set di risultati più piccoli, ma se è più di questo, puoi mostrare solo &quot;e altro&quot;.
 
 Aggiungi `p.guessTotal=true` alla query seguente per vedere come funziona:
 
@@ -95,7 +95,7 @@ p.guessTotal=true
 orderby=path
 ```
 
-La query restituirà la variabile `p.limit` predefinito `10` risultati con un `0` offset:
+La query restituirà il `p.limit` valore predefinito di `10` risultati con un `0` offset:
 
 ```xml
 "success": true,
@@ -105,11 +105,11 @@ La query restituirà la variabile `p.limit` predefinito `10` risultati con un `0
 "offset": 0,
 ```
 
-È inoltre possibile utilizzare un valore numerico per contare fino a un numero personalizzato di risultati massimi. Utilizza la stessa query di cui sopra, ma modifica il valore di `p.guessTotal` a `50`:
+Puoi anche utilizzare un valore numerico per contare fino a un numero personalizzato di risultati massimi. Utilizza la stessa query di cui sopra, ma modifica il valore di `p.guessTotal` a `50`:
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&p.guessTotal=50&orderby=path`
 
-Restituisce un numero con lo stesso limite predefinito di 10 risultati con un offset 0, ma visualizza solo un massimo di 50 risultati:
+Restituisce un numero con lo stesso limite predefinito di 10 risultati con un offset pari a 0, ma visualizza solo un massimo di 50 risultati:
 
 ```xml
 "success": true,
@@ -121,21 +121,21 @@ Restituisce un numero con lo stesso limite predefinito di 10 risultati con un of
 
 ### Implementazione della paginazione {#implementing-pagination}
 
-Per impostazione predefinita, il Generatore di query fornisce anche il numero di hit. A seconda della dimensione del risultato, questo potrebbe richiedere molto tempo, in quanto la determinazione del conteggio accurato comporta il controllo di ogni risultato per il controllo degli accessi. Per lo più, il totale viene utilizzato per implementare l’impaginazione per l’interfaccia utente finale. Poiché la determinazione del conteggio esatto può essere lenta, si consiglia di utilizzare la funzione guessTotal per implementare l’impaginazione.
+Per impostazione predefinita, Query Builder fornisce anche il numero di hit. A seconda della dimensione del risultato, l’operazione potrebbe richiedere molto tempo, poiché per determinare il conteggio accurato è necessario verificare ogni risultato per il controllo degli accessi. La maggior parte del totale viene utilizzata per implementare la paginazione per l’interfaccia utente dell’utente finale. Poiché la determinazione del conteggio esatto può essere lenta, si consiglia di utilizzare la funzione guessTotal per implementare l’impaginazione.
 
 Ad esempio, l’interfaccia utente può adattare il seguente approccio:
 
-* Ottieni e visualizza il conteggio accurato del numero di hit totali ([SearchResult.getTotalMatches()](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) o totale `querybuilder.json` risposte) sono inferiori o uguali a 100;
+* Ottieni e visualizza il conteggio accurato del numero di hit totali ([SearchResult.getTotalMatches()](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) o totale nel `querybuilder.json` risposta) sono inferiori o pari a 100;
 * Imposta `guessTotal` a 100 durante la chiamata al Generatore di query.
 
 * La risposta può avere il seguente risultato:
 
-   * `total=43`, `more=false` - Indica che il numero totale di hit è 43. L’interfaccia utente può visualizzare fino a dieci risultati nella prima pagina e fornire l’impaginazione per le tre pagine successive. Puoi anche utilizzare questa implementazione per visualizzare un testo descrittivo come **&quot;43 risultati trovati&quot;**.
-   * `total=100`, `more=true` - Indica che il numero totale di hit è maggiore di 100 e che il conteggio esatto non è noto. L’interfaccia utente può visualizzare fino a dieci pagine come parte della prima pagina e fornire impaginazione per le dieci pagine successive. È inoltre possibile utilizzare questa opzione per visualizzare un testo come **&quot;più di 100 risultati trovati&quot;**. Man mano che l’utente passa alle successive chiamate effettuate al Generatore di query, il limite di `guessTotal` e anche del `offset` e `limit` Parametri.
+   * `total=43`, `more=false` - Indica che il numero totale di hit è 43. L’interfaccia utente può visualizzare fino a dieci risultati come parte della prima pagina e fornire l’impaginazione per le tre pagine successive. Puoi inoltre utilizzare questa implementazione per visualizzare un testo descrittivo come **&quot;43 risultati trovati&quot;**.
+   * `total=100`, `more=true` - Indica che il numero totale di hit è maggiore di 100 e il conteggio esatto non è noto. L’interfaccia utente può visualizzare fino a dieci pagine come parte della prima pagina e fornire l’impaginazione per le dieci pagine successive. Puoi anche utilizzarlo per visualizzare un testo come **&quot;trovati più di 100 risultati&quot;**. Quando l’utente passa alle pagine successive, le chiamate effettuate al Query Builder aumentano il limite di `guessTotal` e anche del `offset` e `limit` parametri.
 
-`guessTotal` Deve essere utilizzato anche nei casi in cui l’interfaccia utente deve utilizzare lo scorrimento infinito, per evitare che Query Builder determini l’esatto numero di hit.
+`guessTotal` deve essere utilizzato anche nei casi in cui l’interfaccia utente deve utilizzare uno scorrimento infinito, al fine di evitare che Query Builder determini il conteggio esatto degli hit.
 
-### Trova i file jar e ordinali, al più recente {#find-jar-files-and-order-them-newest-first}
+### Trova i file jar e ordinali, a partire dal più recente {#find-jar-files-and-order-them-newest-first}
 
 `http://<host>:<port>/bin/querybuilder.json?type=nt:file&nodename=*.jar&orderby=@jcr:content/jcr:lastModified&orderby.sort=desc`
 
@@ -146,7 +146,7 @@ orderby=@jcr:content/jcr:lastModified
 orderby.sort=desc
 ```
 
-### Trova tutte le pagine e ordinale per ultima modifica {#find-all-pages-and-order-them-by-last-modified}
+### Trova tutte le pagine e ordina per ultima modifica {#find-all-pages-and-order-them-by-last-modified}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified`
 
@@ -155,7 +155,7 @@ type=cq:Page
 orderby=@jcr:content/cq:lastModified
 ```
 
-### Trova tutte le pagine e ordinale per ultima modifica, decrescente {#find-all-pages-and-order-them-by-last-modified-but-descending}
+### Trova tutte le pagine e ordina per ultima modifica, decrescente {#find-all-pages-and-order-them-by-last-modified-but-descending}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified&orderby.sort=desc`
 
@@ -175,7 +175,7 @@ orderby=@jcr:score
 orderby.sort=desc
 ```
 
-### Cercare pagine con un determinato tag {#search-for-pages-tagged-with-a-certain-tag}
+### Cerca le pagine con un determinato tag {#search-for-pages-tagged-with-a-certain-tag}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&tagid=wknd:activity/cycling&tagid.property=jcr:content/cq:tags`
 
@@ -185,13 +185,13 @@ tagid=wknd:activity/cycling
 tagid.property=jcr:content/cq:tags
 ```
 
-Utilizza la `tagid` predicare come nell&#39;esempio se conosci l&#39;ID tag esplicito.
+Utilizza il `tagid` predicato come nell’esempio, se conosci l’ID tag esplicito.
 
-Utilizza la `tag` predicato per il percorso del titolo del tag (senza spazi).
+Utilizza il `tag` predicato per il percorso del titolo del tag (senza spazi).
 
-Perché, nell’esempio precedente, stai cercando le pagine (`cq:Page` nodi), è necessario utilizzare il percorso relativo da quel nodo per `tagid.property` predicato, ovvero `jcr:content/cq:tags`. Per impostazione predefinita, la `tagid.property` semplicemente `cq:tags`.
+Perché nell&#39;esempio precedente si stanno cercando le pagine (`cq:Page` ), è necessario utilizzare il percorso relativo di tale nodo per `tagid.property` predicato, che è `jcr:content/cq:tags`. Per impostazione predefinita, il `tagid.property` sarebbe semplicemente `cq:tags`.
 
-### Ricerca in più percorsi (tramite gruppi) {#search-under-multiple-paths-using-groups}
+### Ricerca di più percorsi (utilizzando i gruppi) {#search-under-multiple-paths-using-groups}
 
 `http://<host>:<port>/bin/querybuilder.json?fulltext=Experience&group.1_path=/content/wknd/us/en/magazine&group.2_path=/content/wknd/us/en/adventures&group.p.or=true`
 
@@ -202,15 +202,15 @@ group.1_path=/content/wknd/us/en/magazine
 group.2_path=/content/wknd/us/en/adventures
 ```
 
-Questa query utilizza un *gruppo* (denominato `group`), che agisce per delimitare le sottoespressioni all’interno di una query, come fanno le parentesi nelle notazioni più standard. Ad esempio, la query precedente potrebbe essere espressa in uno stile più familiare come:
+Questa query utilizza un *gruppo* (denominato `group`), che agisce per delimitare le sottoespressioni all’interno di una query, proprio come fanno le parentesi nelle notazioni più standard. Ad esempio, la query precedente potrebbe essere espressa in uno stile più familiare come:
 
 `"Experience" and ("/content/wknd/us/en/magazine" or "/content/wknd/us/en/adventures")`
 
-All’interno del gruppo nell’esempio, il `path` Il predicato viene utilizzato più volte. Per differenziare e ordinare le due istanze del predicato (l’ordinamento è necessario per alcuni predicati), è necessario preimpostare i predicati con `N_` dove `N` è l&#39;indice di ordinamento. Nell’esempio precedente, i predicati risultanti sono `1_path` e `2_path`.
+All&#39;interno del gruppo nell&#39;esempio, il `path` Il predicato viene utilizzato più volte. Per differenziare e ordinare le due istanze del predicato (per alcuni predicati è necessario ordinare), è necessario anteporre ai predicati il prefisso `N_` dove `N` è l’indice di ordinamento. Nell’esempio precedente, i predicati risultanti sono `1_path` e `2_path`.
 
-La `p` in `p.or` è un delimitatore speciale che indica quanto segue (in questo caso un `or`) è un *parameter* del gruppo, invece di un subpredicato del gruppo, come `1_path`.
+Il `p` in `p.or` è un delimitatore speciale che indica che quanto segue (in questo caso un `or`) è un *parametro* del gruppo, anziché un subpredicato del gruppo, ad esempio `1_path`.
 
-Se no `p.or` viene dato allora tutti i predicati sono ANDed insieme, cioè, ogni risultato deve soddisfare tutti i predicati.
+In caso negativo `p.or` è dato allora tutti i predicati sono AND insieme, ovvero ogni risultato deve soddisfare tutti i predicati.
 
 >[!NOTE]
 >
@@ -218,7 +218,7 @@ Se no `p.or` viene dato allora tutti i predicati sono ANDed insieme, cioè, ogni
 
 ### Cerca proprietà {#search-for-properties}
 
-Qui stai cercando tutte le pagine di un dato modello, utilizzando `cq:template` proprietà:
+Qui si stanno cercando tutte le pagine di un dato modello, utilizzando `cq:template` proprietà:
 
 `http://<host>:<port>/bin/querybuilder.json?property=cq%3atemplate&property.value=%2fconf%2fwknd%2fsettings%2fwcm%2ftemplates%2fadventure-page-template&type=cq%3aPageContent`
 
@@ -228,7 +228,7 @@ property=cq:template
 property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 ```
 
-Questo ha lo svantaggio che il `jcr:content` vengono restituiti i nodi delle pagine, non le pagine stesse. Per risolvere questo problema, è possibile eseguire ricerche per percorso relativo:
+Questo ha lo svantaggio che il `jcr:content` vengono restituiti i nodi delle pagine, non le pagine stesse. Per risolvere questo problema, puoi eseguire ricerche per percorso relativo:
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3acontent%2fcq%3atemplate&property.value=%2fconf%2fwknd%2fsettings%2fwcm%2ftemplates%2fadventure-page-template&type=cq%3aPage`
 
@@ -238,9 +238,9 @@ property=jcr:content/cq:template
 property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 ```
 
-### Ricerca di più proprietà {#search-for-multiple-properties}
+### Cerca più proprietà {#search-for-multiple-properties}
 
-Quando si utilizza il predicato proprietà più volte, è necessario aggiungere di nuovo i prefissi numerici:
+Quando utilizzi più volte il predicato proprietà, devi aggiungere nuovamente i prefissi numerici:
 
 `http://<host>:<port>/bin/querybuilder.json?1_property=jcr%3acontent%2fcq%3atemplate&1_property.value=%2fconf%2fwknd%2fsettings%2fwcm%2ftemplates%2fadventure-page-template&2_property=jcr%3acontent%2fjcr%3atitle&2_property.value=Cycling%20Tuscany&type=cq%3aPage`
 
@@ -254,7 +254,7 @@ type=cq:Page
 
 ### Ricerca di più valori di proprietà {#search-for-multiple-property-values}
 
-Per evitare grandi gruppi quando si desidera cercare più valori di una proprietà (`"A" or "B" or "C"`), è possibile fornire più valori al `property` predicato:
+Per evitare gruppi numerosi quando si desidera cercare più valori di una proprietà (`"A" or "B" or "C"`), è possibile fornire più valori al `property` predicato:
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 
@@ -277,9 +277,9 @@ property.2_value=Ski Touring
 property.3_value=Whistler Mountain Biking
 ```
 
-## Ottimizzazione dei risultati {#refining-what-is-returned}
+## Ottimizzazione di ciò che viene restituito {#refining-what-is-returned}
 
-Per impostazione predefinita, il servlet JSON di QueryBuilder restituisce un set predefinito di proprietà per ciascun nodo nel risultato della ricerca (ad esempio, percorso, nome, titolo, ecc.). Per ottenere il controllo sulle proprietà restituite, è possibile effettuare una delle seguenti operazioni:
+Per impostazione predefinita, il servlet JSON QueryBuilder restituisce un set predefinito di proprietà per ciascun nodo del risultato della ricerca (ad esempio, percorso, nome, titolo e così via). Per controllare quali proprietà vengono restituite, è possibile effettuare una delle seguenti operazioni:
 
 Specifica
 
@@ -287,7 +287,7 @@ Specifica
 p.hits=full
 ```
 
-in tal caso tutte le proprietà verranno incluse per ogni nodo:
+in questo caso, tutte le proprietà verranno incluse per ciascun nodo:
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
@@ -303,7 +303,7 @@ Utilizzare
 p.hits=selective
 ```
 
-e specifica le proprietà che desideri inserire
+e specificare le proprietà che si desidera ottenere
 
 ```xml
 p.properties
@@ -320,13 +320,13 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-Un’altra cosa che è possibile fare è includere nodi figlio nella risposta di Query Builder. Per eseguire questa operazione è necessario specificare
+È inoltre possibile includere nodi figlio nella risposta di Query Builder. A questo scopo è necessario specificare
 
 ```xml
 p.nodedepth=n
 ```
 
-dove `n` è il numero di livelli che la query deve restituire. Tieni presente che per restituire un nodo figlio, è necessario specificarlo dal selettore delle proprietà
+dove `n` è il numero di livelli che la query deve restituire. Per restituire un nodo figlio, è necessario specificarlo con il selettore delle proprietà
 
 ```xml
 p.hits=full
@@ -343,17 +343,17 @@ p.hits=full
 p.nodedepth=5
 ```
 
-## Predicati aggiuntivi {#morepredicates}
+## Altri predicati {#morepredicates}
 
-Per ulteriori predicati, consulta la sezione [Pagina di riferimento del predicato di Query Builder](query-builder-predicates.md).
+Per ulteriori predicati, vedere [Pagina Riferimento predicato di Query Builder](query-builder-predicates.md).
 
-Puoi anche controllare la [Javadoc per `PredicateEvaluator` classi](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Javadoc per queste classi contiene l&#39;elenco delle proprietà che è possibile utilizzare.
+È inoltre possibile controllare [JavaScript per `PredicateEvaluator` classi](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Il codice Javadoc per queste classi contiene l’elenco delle proprietà che puoi utilizzare.
 
-Prefisso del nome della classe (ad esempio, `similar` in [`SimilarityPredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) è *proprietà principale* della classe. Questa proprietà è anche il nome del predicato da utilizzare nella query (in minuscolo).
+Il prefisso del nome della classe (ad esempio, `similar` in [`SimilarityPredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) è il *proprietà principale* della classe. Questa proprietà è anche il nome del predicato da utilizzare nella query (in minuscolo).
 
-Per tali proprietà principali, è possibile accorciare la query e utilizzare `similar=/content/en` invece della variante completa `similar.similar=/content/en`. Il modulo completo deve essere utilizzato per tutte le proprietà non principali di una classe.
+Per tali proprietà principali, puoi abbreviare la query e utilizzare `similar=/content/en` invece della variante completamente qualificata `similar.similar=/content/en`. Il modulo completo deve essere utilizzato per tutte le proprietà non principali di una classe.
 
-## Esempio di utilizzo dell’API di Query Builder {#example-query-builder-api-usage}
+## Esempio di utilizzo API di Query Builder {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "WKND";
@@ -409,25 +409,25 @@ Per tali proprietà principali, è possibile accorciare la query e utilizzare `s
     }
 ```
 
-La stessa query eseguita su HTTP utilizzando il servlet Query Builder (JSON):
+La stessa query viene eseguita su HTTP utilizzando il servlet Query Builder (JSON):
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&type=cq:Page&group.p.or=true&group.1_fulltext=WKND&group.1_fulltext.relPath=jcr:content&group.2_fulltext=WKND&group.2_fulltext.relPath=jcr:content/@cq:tags&p.offset=0&p.limit=20`
 
 ## Memorizzazione e caricamento delle query {#storing-and-loading-queries}
 
-Le query possono essere archiviate nell’archivio in modo da poterle utilizzare in un secondo momento. La `QueryBuilder` fornisce `storeQuery` metodo con la firma seguente:
+Le query possono essere archiviate nel repository in modo da poterle utilizzare in un secondo momento. Il `QueryBuilder` fornisce `storeQuery` metodo con la firma seguente:
 
 ```java
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Quando utilizzi [`QueryBuilder#storeQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) il metodo `Query` viene memorizzato nell&#39;archivio come file o come proprietà in base al `createFile` valore dell&#39;argomento. L’esempio seguente mostra come salvare un `Query` al percorso `/mypath/getfiles` come file:
+Quando si utilizza [`QueryBuilder#storeQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) metodo, il valore specificato `Query` viene memorizzato nel repository come file o come proprietà in base al `createFile` valore argomento. L’esempio seguente mostra come salvare un `Query` al percorso `/mypath/getfiles` come file:
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Qualsiasi query precedentemente archiviata può essere caricata dal repository utilizzando [`QueryBuilder#loadQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) metodo:
+Tutte le query memorizzate in precedenza possono essere caricate dall’archivio utilizzando [`QueryBuilder#loadQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) metodo:
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -441,11 +441,11 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 ## Test e debug {#testing-and-debugging}
 
-Per riprodurre e eseguire il debug delle query di Query Builder, puoi utilizzare la console di debug di Query Builder in
+Per eseguire il gioco e il debug delle query di Query Builder, puoi utilizzare la console del debugger di Query Builder all’indirizzo
 
 `http://<host>:<port>/libs/cq/search/content/querydebug.html`
 
-o in alternativa il servlet JSON di Query Builder all’indirizzo
+o in alternativa il servlet JSON di Query Builder in
 
 `http://<host>:<port>/bin/querybuilder.json?path=/tmp`
 
@@ -453,39 +453,39 @@ o in alternativa il servlet JSON di Query Builder all’indirizzo
 
 ### Debug generale di Recommendations {#general-debugging-recommendations}
 
-### Ottenere XPath spiegabile tramite Logging {#obtain-explain-able-xpath-via-logging}
+### Ottenere XPath spiegabile tramite la registrazione {#obtain-explain-able-xpath-via-logging}
 
-Spiegare **tutto** le query durante il ciclo di sviluppo rispetto all&#39;indice di destinazione impostato.
+Spiega **tutto** query durante il ciclo di sviluppo rispetto al set di indici di destinazione.
 
 1. Abilita i registri DEBUG per QueryBuilder per ottenere la query XPath sottostante e spiegabile
    * Accedi a `https://<host>:<port>/system/console/slinglog`. Crea un nuovo logger per `com.day.cq.search.impl.builder.QueryImpl` a **DEBUG**.
-1. Una volta abilitato DEBUG per la classe di cui sopra, i registri visualizzeranno l&#39;XPath generato da Query Builder.
-1. Copia la query XPath dalla voce di registro per la query Query Builder associata, ad esempio:
+1. Una volta abilitato DEBUG per la classe precedente, nei registri verrà visualizzato l&#39;XPath generato da Query Builder.
+1. Copiare la query XPath dalla voce di registro per la query Query Builder associata, ad esempio:
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
-1. Incolla la query XPath in Explain Query as XPath per ottenere il piano di query.
+1. Incollare la query XPath in Explain Query come XPath per ottenere il piano di query.
 
-### Ottenere XPath spiegabile tramite il debugger di Query Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
+### Ottenere XPath spiegabile tramite Query Builder Debugger {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-Utilizza il debugger di Query Builder AEM per generare una query XPath spiegabile.
+Utilizza il debugger di AEM Query Builder per generare una query XPath spiegabile.
 
 ![Debugger di Query Builder](assets/query-builder-debugger.png)
 
-1. Fornire la query Query Builder nel debugger di Query Builder
-1. Esegui la ricerca
-1. Ottieni l&#39;XPath generato
-1. Incolla la query XPath in Explain Query as XPath per ottenere il piano di query
+1. Fornisci la query di Query Builder nel debugger di Query Builder
+1. Eseguire la ricerca
+1. Ottenere l&#39;XPath generato
+1. Incollare la query XPath in Explain Query come XPath per ottenere il piano di query
 
 >[!NOTE]
 >
->Le query non Query Builder (XPath, JCR-SQL2) possono essere fornite direttamente a Explain Query.
+>Le query non Query Builder (XPath, JCR-SQL2) possono essere fornite direttamente in Explain Query.
 
-## Debug delle query con la registrazione {#debugging-queries-with-logging}
+## Eseguire il debug delle query con la registrazione {#debugging-queries-with-logging}
 
 >[!NOTE]
 >
 >La configurazione dei logger è descritta nel documento [Registrazione](/help/implementing/developing/introduction/logging.md).
 
-L&#39;output di log (livello INFO) dell&#39;implementazione del generatore di query durante l&#39;esecuzione della query descritta nella sezione precedente [Test e debug:](#testing-and-debugging)
+L’output del registro (livello INFO) dell’implementazione del generatore di query durante l’esecuzione della query descritta nella sezione precedente [Test e debug:](#testing-and-debugging)
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
@@ -502,7 +502,7 @@ com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```
 
-Se disponi di una query che utilizza valutatori predicati che filtrano o utilizzano un ordine personalizzato per comparatore, questa operazione verrà rilevata anche nella query:
+Se una query utilizza valutatori di predicati che filtrano o che utilizzano un ordine personalizzato per comparatore, nella query verrà annotato anche quanto segue:
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
@@ -521,10 +521,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Descrizione** |
 |---|---|
-| [com.day.cq.search](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | API Query Builder di base e query |
+| [com.day.cq.search](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | Generatore di query di base e API di query |
 | [com.day.cq.search.result](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | API dei risultati |
 | [com.day.cq.search.facets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | Facet |
-| [com.day.cq.search.facets.bukets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Punti (contenuti nei facet) |
-| [com.day.cq.search.eval](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | Valutatori del predicato |
-| [com.day.cq.search.facets.extractor](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Estrattori di sfaccettature (per valutatori) |
-| [com.day.cq.search.writer](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | Redattore di hit di risultati JSON per il servlet di Query Builder (`/bin/querybuilder.json`) |
+| [com.day.cq.search.facets.bucket](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Bucket (contenuti all’interno di facet) |
+| [com.day.cq.search.eval](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | Valutatori predicato |
+| [com.day.cq.search.facets.extractors](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Estrattori sfaccettatura (per valutatori) |
+| [com.day.cq.search.writer](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | Hit writer di risultati JSON per il servlet Query Builder (`/bin/querybuilder.json`) |

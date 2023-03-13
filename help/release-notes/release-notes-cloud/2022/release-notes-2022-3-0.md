@@ -2,7 +2,7 @@
 title: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 9a08514f11c86b783ae68940a0c3c58fcada3dc2
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 97%
@@ -95,7 +95,7 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* Le credenziali utilizzate per autenticare le chiamate API da server a server (ad esempio, per le richieste API di GraphQL) ora possono essere aggiornate prima della scadenza in modo self-service dalla Console per sviluppatori. Consulta la [documentazione](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) per ulteriori informazioni.
+* Le credenziali utilizzate per autenticare le chiamate API da server a server (ad esempio, per le richieste API di GraphQL) ora possono essere aggiornate prima della scadenza in modo autonomo dalla Console per sviluppatori. Consulta la [documentazione](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) per ulteriori informazioni.
 
 * Le attività di manutenzione dell’eliminazione della versione e del registro di controllo, che non erano state precedentemente abilitate, verranno abilitate per i nuovi ambienti. Vedi i valori associati nell’articolo [Attività di manutenzione](/help/operations/maintenance.md).
 

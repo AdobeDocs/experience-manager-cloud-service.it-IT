@@ -1,6 +1,6 @@
 ---
 title: Azioni di App Builder
-description: Scopri le azioni di Adobe Runtime e utilizzarle nelle applicazioni App Builder.
+description: Scopri le azioni Adobe Runtime e come utilizzarle nelle applicazioni App Builder.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -12,7 +12,7 @@ exl-id: f1a67f80-7366-4337-8bcd-062a3412acc9
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 0%
 
 ## Introduzione alle azioni
 
-Scopri Adobe I/O Runtime, le azioni e come creare le azioni.
+Scopri Adobe I/O Runtime, le azioni e come crearle.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339192/?quality=12&learn=on)
 
 ## Attivazione, sequenza, trigger e regole
 
-Scopri in che modo le azioni sono correlate a attivazioni, azioni web, attivatori e regole.
+Scopri come le azioni sono correlate ad attivazioni, azioni web, trigger e regole.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
 

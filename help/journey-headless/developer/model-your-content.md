@@ -3,7 +3,7 @@ title: Come modellare il contenuto
 description: In questa parte del Percorso per sviluppatori di AEM headless, scopri come modellare i contenuti per la distribuzione AEM headless utilizzando la modellazione dei contenuti con modelli di frammenti di contenuto e frammenti di contenuto.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 100%
 

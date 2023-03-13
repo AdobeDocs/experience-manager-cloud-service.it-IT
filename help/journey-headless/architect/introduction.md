@@ -3,7 +3,7 @@ title: Modellazione dei contenuti per AEM come CMS headless - Introduzione
 description: Introduzione all’utilizzo delle funzioni di Adobe Experience Manager as a Cloud Service come CMS headless per la modellazione dei contenuti del tuo progetto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Tuttavia, la complessità delle dipendenze all’interno dello stack diventa sub
 
 La “testa” di qualsiasi sistema è generalmente il renderer di output di quel sistema, tipicamente un&#39;interfaccia utente grafica o un altro tipo di output grafico.
 
-Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, distribuendo il **contenuto** solo in modo standardizzato, un CMS headless non fornisce il rendering dell’output finale, lasciando la **presentazione** del contenuto al servizio utilizzato.
+Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, consegnando solo il **contenuto** in modo standardizzato, un CMS headless omette il rendering finale dell’output, lasciando la **presentazione** del contenuto al servizio utilizzato.
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 

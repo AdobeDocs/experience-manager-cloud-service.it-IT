@@ -1,21 +1,21 @@
 ---
-title: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2021.12.0
-description: Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2021.12.0
+title: Note sulla versione 2021.12.0 degli strumenti di migrazione nell’AEM as a Cloud Service
+description: Note sulla versione 2021.12.0 degli strumenti di migrazione nell’AEM as a Cloud Service
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 40%
+ht-degree: 46%
 
 ---
 
-# Note sulla versione per gli strumenti di migrazione in AEM versione as a Cloud Service 2021.12.0 {#release-notes}
+# Note sulla versione 2021.12.0 degli strumenti di migrazione nell’AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione per gli strumenti di migrazione in AEM as a Cloud Service 2021.12.0.
+Questa pagina illustra le note sulla versione 2021.12.0 degli strumenti di migrazione in AEM as a Cloud Service.
 
 >[!NOTE]
->Per visualizzare le note sulla versione corrente per Adobe Experience Manager as a Cloud Service, fai clic su [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+>Per visualizzare le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
 ## Analisi delle best practice {#bpa-release}
 
@@ -39,9 +39,9 @@ La data di rilascio di Best Practices Analyzer v2.1.22 è il 1 dicembre 2021.
 
 ### Data di pubblicazione {#release-date-ctt}
 
-La data di rilascio dello strumento Content Transfer (Trasferimento contenuti) v1.7.10 è l’8 dicembre 2021.
+La data di pubblicazione dello strumento Content Transfer v1.7.10 è il 8 dicembre 2021.
 
 ### Novità {#what-is-new-ctt}
 
-* Passa alla fase di acquisizione nello strumento Content Transfer (Trasferimento contenuti) per consentire agli utenti di disattivarla [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) durante l&#39;ingestione. Per una velocità di acquisizione ottimale, la pre-copia durante l’acquisizione deve essere disabilitata per i set di migrazione di piccole dimensioni o se sono stati aggiunti solo pochi BLOB dall’ultima acquisizione.
-* La mappatura utente è stata aggiornata per utilizzare l&#39;API User Management migliorata che consente di ottenere 2000 utenti alla volta, migliorando significativamente le prestazioni.
+* È stata aggiunta un’opzione alla fase di acquisizione nello strumento Content Transfer (Trasferimento contenuti) per consentire agli utenti di disabilitare [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) durante l’acquisizione. Per velocità di acquisizione ottimali, la pre-copia durante l’acquisizione deve essere disabilitata per piccoli set di migrazione o se sono stati aggiunti solo pochi BLOB dall’ultima acquisizione.
+* La mappatura degli utenti è stata aggiornata per utilizzare l’API di gestione utenti migliorata, che consente di ottenere 2000 utenti alla volta, migliorando in modo significativo le prestazioni.

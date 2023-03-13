@@ -44,7 +44,7 @@ Dai un’occhiata al video [Panoramica sulla versione di dicembre 2021](https://
 
 * Dopo aver configurato una connessione tra le implementazioni remote di DAM e Sites, le risorse in DAM remoto sono rese disponibili nell’implementazione di Sites. È ora possibile [aggiornare, eliminare, rinominare e spostare le operazioni](/help/assets/use-assets-across-connected-assets-instances.md) sulle risorse o cartelle DAM remote. Gli aggiornamenti, con un certo ritardo, sono disponibili automaticamente nell’implementazione di Sites.
 
-## [!DNL Experience Manager Forms] come [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
@@ -107,7 +107,7 @@ La prossima versione è prevista per il 9 dicembre 2021.
 
 * L’API di modifica delle pipeline ora supporta la modifica dell’ambiente utilizzato nelle fasi di distribuzione.
 
-* È stata introdotta un&#39;ottimizzazione nel processo di scansione OakPal per i pacchetti di grandi dimensioni.
+* È stata introdotta un’ottimizzazione nel processo di scansione OakPal per i pacchetti di grandi dimensioni.
 
 * Il file CSV del problema qualità conterrà ora la timestamp per ogni problema di qualità.
 

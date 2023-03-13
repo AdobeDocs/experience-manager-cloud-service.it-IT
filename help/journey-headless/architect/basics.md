@@ -3,7 +3,7 @@ title: Scopri le nozioni di base sulla modellazione dei contenuti
 description: Scopri le nozioni di base sulla modellazione dei contenuti per CMS headless utilizzando Frammenti di contenuto.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Un modello per frammento di contenuto descrive un’entità.
 All’interno di un modello:
 
 1. **Tipi di dati** consente di definire i singoli attributi.
-Ad esempio, definisce il campo contenente il nome di un insegnante come **Testo** e i loro anni di servizio come **Numero**.
+Ad esempio, definisci il campo contenente il nome di un insegnante come **Testo** e i relativi anni di servizio come **Numero**.
 1. I tipi di dati **Riferimento contenuto** e **Riferimento frammento** consentono di creare relazioni con altri contenuti all’interno di AEM.
 1. Il tipo di dati **Riferimento frammento** consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
 
@@ -97,11 +97,11 @@ AEM fornisce i seguenti tipi di dati per modellare il contenuto:
 Due tipi di dati forniscono riferimenti a contenuti esterni a uno specifico frammento:
 
 * **Riferimento contenuto**
-Questo fornisce un semplice riferimento ad altri contenuti di qualsiasi tipo.
+Fornisce un semplice riferimento ad altri contenuti di qualsiasi tipo.
 Ad esempio, è possibile fare riferimento a un’immagine in una posizione specifica.
 
 * **Riferimento frammento**
-Questo fornisce riferimenti ad altri frammenti di contenuto.
+Fornisce riferimenti ad altri frammenti di contenuto.
 Questo tipo di riferimento viene utilizzato per creare contenuti nidificati, introducendo le relazioni necessarie per modellare il contenuto.
 Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
    * Modificare direttamente il frammento a cui si fa riferimento.

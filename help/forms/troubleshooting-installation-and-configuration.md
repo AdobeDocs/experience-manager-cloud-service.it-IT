@@ -8,7 +8,7 @@ exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -18,21 +18,21 @@ Durante la configurazione di un ambiente di Cloud Service è possibile riscontra
 
 ## Opzione Forms non disponibile
 
-La **[!UICONTROL Forms]** l’opzione non è disponibile nel **[!UICONTROL Navigazione]** pagina.
+Il **[!UICONTROL Forms]** non è disponibile nella **[!UICONTROL Navigazione]** pagina.
 
 ![Opzione Forms non disponibile](assets/installation-configuration-forms-option-unavailable-troubleshooting.png)
 
-Per abilitare **[!UICONTROL Forms]** opzione:
+Per attivare **[!UICONTROL Forms]** opzione:
 
 1. Accedi a [Cloud Manager](https://experience.adobe.com/)
-1. Individua il programma e fai clic sul pulsante ![Opzione Forms non disponibile](assets/Smock_Edit_18_N.svg) icona. Viene visualizzata la pagina Modifica programma per il programma.
-1. Apri **[!UICONTROL Soluzioni e componenti aggiuntivi]** scheda .
+1. Individua il programma e fai clic su ![Opzione Forms non disponibile](assets/Smock_Edit_18_N.svg) icona. Viene visualizzata la pagina Modifica programma del programma.
+1. Apri **[!UICONTROL Soluzioni e componenti aggiuntivi]** scheda.
 1. Seleziona la **[!UICONTROL Forms]** e fai clic su **[!UICONTROL Salva]**.
 
-   ![Selezionare l’opzione Forms](assets/installation-configuration-select-forms-option.png)
-1. [Crea](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) e [eseguire](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) oleodotti di produzione e di non produzione.
+   ![Seleziona l’opzione Forms](assets/installation-configuration-select-forms-option.png)
+1. [Crea](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) e [eseguire](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it) pipeline di produzione e non di produzione.
 
-Dopo la creazione e l’implementazione della pipeline, l’ **[!UICONTROL Forms]** l&#39;opzione **[!UICONTROL Navigazione]** pagina.
+Dopo la generazione e la distribuzione della pipeline, il **[!UICONTROL Forms]** opzione sul **[!UICONTROL Navigazione]** pagina.
 
 <!--  
 ## Environment creation fails {#environment-creation-fails}
@@ -48,8 +48,8 @@ A missing profile can lead to environment creation failure. Check that the profi
 
 If the profile exists and issues still persist, contact Adobe Support. -->
 
-## Errore di creazione della pipeline {#build-pipeline-fails}
+## La pipeline di compilazione non riesce {#build-pipeline-fails}
 
-Gli utenti non possono eseguire la pipeline di compilazione. La pipeline non riesce dopo essere stata eseguita per un certo periodo di tempo.
+Gli utenti non possono eseguire la pipeline di build. La pipeline ha esito negativo dopo un certo periodo di tempo dall’esecuzione.
 
 Per risolvere il problema, apri Cloud Manager, seleziona la **[!UICONTROL Aggiorna]** per il tuo ambiente ed esegui la pipeline.

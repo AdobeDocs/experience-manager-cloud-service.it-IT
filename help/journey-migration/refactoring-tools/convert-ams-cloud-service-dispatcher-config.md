@@ -1,7 +1,7 @@
 ---
 title: Conversione di una configurazione AMS in una configurazione Adobe Experience Manager as a Cloud Service Dispatcher
 description: Conversione di una configurazione AMS in una configurazione Adobe Experience Manager as a Cloud Service Dispatcher
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 95%
@@ -36,7 +36,7 @@ Questa sezione fornisce istruzioni dettagliate su come convertire una configuraz
 
 1. Rimuovere o impostare come commento le sezioni di host virtuali che non fanno riferimento alla porta 80
 
-   Se i file host virtuali contengono ancora sezioni che fanno riferimento esclusivamente a porte diverse dalla porta 80, ad esempio
+   Se i file host virtuali contengono ancora sezioni che fanno riferimento esclusivamente a porte diverse dalla porta 80, ad esempio,
 
    `<VirtualHost *:443>`
    `...`
@@ -89,7 +89,7 @@ Se si verificano degli errori relativi a file di inclusione mancanti, verifica d
 
 1. **Rinominare i file di farm**
 
-   Tutte le farm in conf.dispatcher.d/enabled_farms devono essere rinominate in modo che corrispondano al pattern *.farm. Ad esempio, un file farm denominato customerX_farm.any deve essere rinominato customerX.farm.
+   Tutte le farm in conf.dispatcher.d/enabled_farms devono essere rinominate in base al pattern *.farm. Ad esempio, un file farm denominato customerX_farm.any deve essere rinominato customerX.farm.
 
 1. **Verificare la cache**
 

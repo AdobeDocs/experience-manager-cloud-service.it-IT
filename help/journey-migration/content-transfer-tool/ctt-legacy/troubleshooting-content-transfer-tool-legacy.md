@@ -1,5 +1,5 @@
 ---
-title: Strumento per la risoluzione dei problemi relativi al trasferimento dei contenuti (legacy)
+title: Strumento di risoluzione dei problemi relativi al trasferimento dei contenuti (legacy)
 description: Risoluzione dei problemi dello strumento Content Transfer (Trasferimento contenuti)
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 94%
 
 ---
 
-# Strumento per la risoluzione dei problemi relativi al trasferimento dei contenuti (legacy) {#troubleshoot-content-transfer-tool}
+# Strumento di risoluzione dei problemi relativi al trasferimento dei contenuti (legacy) {#troubleshoot-content-transfer-tool}
 
 
 ## ID BLOB mancanti {#missing-blobs}

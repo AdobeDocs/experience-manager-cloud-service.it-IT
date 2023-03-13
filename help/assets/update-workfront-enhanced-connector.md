@@ -15,18 +15,18 @@ ht-degree: 1%
 
 >[!TIP]
 >
->Stai cercando [!DNL Workfront for Experience Manager enhanced connector] aggiornare la documentazione per AEM 6.5? Fai clic su [qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
+>Stai cercando [!DNL Workfront for Experience Manager enhanced connector] Aggiornare la documentazione di AEM 6.5? Clic [qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
 
 
-Per aggiornare [!DNL Workfront for Experience Manager enhanced connector] all’ultima versione:
+Per aggiornare [!DNL Workfront for Experience Manager enhanced connector] alla versione più recente:
 
 1. Scarica la versione più recente del connettore avanzato da [Distribuzione di software di Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
 
-1. [Accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) e duplica l’archivio AEM as a Cloud Service da Cloud Manager.
+1. [Accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) e clona l’archivio AEM as a Cloud Service da Cloud Manager.
 
-1. Apri l’archivio as a Cloud Service di Experience Manager clonato utilizzando un IDE di tua scelta.
+1. Apri l’archivio as a Cloud Service dell’Experience Manager clonato utilizzando un IDE a tua scelta.
 
-1. Posiziona il file zip del connettore avanzato scaricato al passaggio 1 nel seguente percorso:
+1. Posiziona il file zip del connettore avanzato scaricato nel passaggio 1 nel seguente percorso:
 
    ```TXT
       /ui.apps/src/main/resources/<zip file>
@@ -34,9 +34,9 @@ Per aggiornare [!DNL Workfront for Experience Manager enhanced connector] all’
 
    >[!NOTE]
    >
-   >Se la `resources` cartella inesistente. Creare la cartella.
+   >Se il `resources` cartella inesistente, crea la cartella.
 
-1. Aggiorna la versione del connettore avanzato nell&#39;elemento padre `pom.xml`.
+1. Aggiorna la versione del connettore avanzato nell’elemento padre `pom.xml`.
 
    ```XML
       <dependency>
@@ -49,7 +49,7 @@ Per aggiornare [!DNL Workfront for Experience Manager enhanced connector] all’
       </dependency>
    ```
 
-1. Aggiorna la dipendenza in `all module pom.xml`.
+1. Aggiornare la dipendenza in `all module pom.xml`.
 
    ```XML
       <dependency>
@@ -63,9 +63,9 @@ Per aggiornare [!DNL Workfront for Experience Manager enhanced connector] all’
 
    >[!NOTE]
    >
-   >Assicurati di aggiungere `<scope>` e `<systemPath>` alle dipendenze dei punti 5 e 6.
+   >Assicurati di aggiungere `<scope>` e `<systemPath>` alle dipendenze nei passaggi 5 e 6.
 
-1. Aggiorna `pom.xml` incorpora. Aggiungi il [!DNL Workfront for Experience Manager enhanced connector] pacchetti a `embeddeds` della sezione `pom.xml` di tutti i sottoprogetti. Incorpora gli aggiornamenti in tutti i moduli `pom.xml`.
+1. Aggiorna `pom.xml` incorpora. Aggiungi il [!DNL Workfront for Experience Manager enhanced connector] pacchetti a `embeddeds` sezione del `pom.xml` di tutti i sottoprogetti. Incorpora gli aggiornamenti in tutti i moduli `pom.xml`.
 
    ```XML
    <!-- Workfront Tools -->
@@ -77,10 +77,10 @@ Per aggiornare [!DNL Workfront for Experience Manager enhanced connector] all’
    </embedded>
    ```
 
-   Il target della sezione incorporata è impostato su `/apps/<path-to-project-install-folder>/install`. Questo percorso JCR `/apps/<path-to-project-install-folder>` deve essere incluso nelle regole di filtro nel `all/src/main/content/META-INF/vault/filter.xml` file. Le regole di filtro per l&#39;archivio sono in genere derivate dal nome del programma. Utilizza il nome della cartella come destinazione nelle regole esistenti.
+   La destinazione della sezione incorporata è impostata su `/apps/<path-to-project-install-folder>/install`. Questo percorso JCR `/apps/<path-to-project-install-folder>` deve essere incluso nelle regole del filtro in `all/src/main/content/META-INF/vault/filter.xml` file. Le regole di filtro per l’archivio in genere derivano dal nome del programma. Utilizza il nome della cartella come destinazione nelle regole esistenti.
 
-1. [Rimuovere le dipendenze dai punti di distribuzione di Hoodoo](remove-external-dependencies.md), se del caso.
+1. [Rimuovere le dipendenze dai punti di distribuzione Hoodoo](remove-external-dependencies.md), se presente.
 
 1. Invia le modifiche all’archivio.
 
-1. Esegui la pipeline in [distribuire le modifiche a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).

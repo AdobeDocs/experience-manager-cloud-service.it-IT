@@ -1,7 +1,7 @@
 ---
-title: Risoluzione dei problemi relativi alle prestazioni della cache
+title: Risoluzione dei problemi relativi alle prestazioni di memorizzazione nella cache
 seo-title: Troubleshooting caching performance
-description: Risoluzione dei problemi relativi alle prestazioni della cache
+description: Risoluzione dei problemi relativi alle prestazioni di memorizzazione nella cache
 seo-description: Troubleshooting caching performance
 contentOwner: khsingh
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
@@ -14,30 +14,30 @@ ht-degree: 1%
 
 # Prestazioni di memorizzazione in cache {#caching-performance}
 
-È possibile riscontrare alcuni dei seguenti problemi durante la configurazione o l’utilizzo della cache Forms adattiva in un ambiente di Cloud Service:
+Durante la configurazione o l’utilizzo della cache di Forms adattivo in un ambiente di Cloud Service si possono verificare alcuni dei seguenti problemi:
 
-## Alcuni Forms adattivi contenenti immagini o video non vengono invalidati automaticamente dalla cache del Dispatcher {#images-videos-not-invalidated}
+## Alcuni Forms adattivi contenenti immagini o video non vengono invalidati automaticamente dalla cache di Dispatcher {#images-videos-not-invalidated}
 
-Puoi selezionare e aggiungere immagini o video dal browser delle risorse a un modulo adattivo. Quando queste immagini vengono modificate nell’editor di Assets, la versione cache di un modulo adattivo contenente tali immagini non viene annullata. Nel modulo adattivo vengono visualizzate le immagini precedenti.
+Puoi selezionare e aggiungere immagini o video dal browser di risorse a un modulo adattivo. Quando queste immagini vengono modificate nell’editor delle risorse, la versione cache di un modulo adattivo contenente tali immagini non viene invalidata. Il modulo adattivo continua a mostrare immagini precedenti.
 
-Per risolvere il problema, dopo aver pubblicato le immagini e i video, annulla esplicitamente la pubblicazione e pubblica l’Adaptive Forms che fa riferimento a queste risorse.
+Per risolvere il problema, dopo la pubblicazione delle immagini e del video, annulla esplicitamente la pubblicazione e pubblica il Forms adattivo che fa riferimento a tali risorse.
 
-## Alcuni Forms adattivi contenenti frammenti di contenuto o frammenti esperienza non vengono invalidati automaticamente dalla cache del Dispatcher {#content-fragments-experience-fragments-not-invalidated}
+## Alcuni Forms adattivi contenenti frammenti di contenuto o frammenti di esperienza non vengono invalidati automaticamente dalla cache di Dispatcher {#content-fragments-experience-fragments-not-invalidated}
 
-È possibile aggiungere un frammento di contenuto o un frammento esperienza a un modulo adattivo. Quando questi frammenti vengono modificati e pubblicati in modo indipendente, la versione cache di un Modulo adattivo contenente tali frammenti non viene invalidata. Il modulo adattivo continua a mostrare frammenti precedenti.
+Puoi aggiungere un frammento di contenuto o un frammento di esperienza a un modulo adattivo. Quando questi frammenti vengono modificati e pubblicati in modo indipendente, la versione cache di un modulo adattivo contenente tali frammenti non viene invalidata. Il modulo adattivo continua a mostrare frammenti meno recenti.
 
-Per risolvere il problema, dopo aver pubblicato frammento di contenuto aggiornato o Frammento esperienza, annulla esplicitamente la pubblicazione e pubblica l’Adaptive Forms che utilizza queste risorse.
+Per risolvere il problema, dopo aver pubblicato un frammento di contenuto o un frammento di esperienza aggiornato, annulla esplicitamente la pubblicazione e pubblica il Forms adattivo che utilizza queste risorse.
 
 ## Solo la prima istanza di Adaptive Forms è memorizzata nella cache {#only-first-instance-cached}
 
-Se l’URL del modulo adattivo non contiene informazioni sulla localizzazione e l’opzione Usa impostazione internazionale browser in configuration manager è abilitata, viene fornita una versione localizzata del modulo adattivo e viene fornita a ogni utente successivo un’istanza del modulo adattivo, in base alla prima richiesta (richiesta locale del browser).
+Se l’URL del modulo adattivo non contiene informazioni sulla localizzazione e l’opzione Usa impostazioni locali del browser nella gestione della configurazione è abilitata, viene distribuita una versione localizzata del modulo adattivo e un’istanza del modulo adattivo, basata sulla prima richiesta (impostazioni locali del browser richieste), viene memorizzata in cache e distribuita a ogni utente successivo.
 
-Esegui i seguenti passaggi per risolvere il problema:
+Per risolvere il problema, effettua le seguenti operazioni:
 
 1. Apri il progetto di Experience Manager.
 1. Apri `dispatcher/scr/conf.d/rewrites/rewrite.rules` per la modifica.
-1. Apri `conf.d/httpd-dispatcher.conf` o qualsiasi altro file di configurazione configurato per il caricamento in fase di runtime.
-1. Aggiungi il seguente codice al file e salvalo. Si tratta di un codice di esempio modificarlo in base all’ambiente.
+1. Apri `conf.d/httpd-dispatcher.conf` o qualsiasi altro file di configurazione configurato per il caricamento in fase di esecuzione.
+1. Aggiungi il seguente codice al file e salvalo. Si tratta di un codice di esempio per modificarlo in base all’ambiente in uso.
 
 ```shellscript
     # Handle actual URL convention (just pass through)
@@ -55,15 +55,15 @@ Esegui i seguenti passaggi per risolvere il problema:
     RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]
 ```
 
-## La memorizzazione in cache CDN smette di funzionare dopo 300 secondi {#cdn-caching-stops-working-after-300-seconds}
+## Il caching CDN smette di funzionare dopo 300 secondi {#cdn-caching-stops-working-after-300-seconds}
 
-La memorizzazione in cache CDN smette di funzionare dopo 300 secondi e tutte le richieste da memorizzare in cache su CDN vengono reindirizzate a Dispatcher.
+Il caching della rete CDN non funziona più dopo 300 secondi e tutte le richieste da memorizzare nella cache della rete CDN vengono reindirizzate a Dispatcher.
 
-Per risolvere il problema, imposta l’intestazione di pagina su 0:
+Per risolvere il problema, imposta l’intestazione della pagina su 0:
 
 1. Crea un file in `src\conf.d\available_vhosts`
 
-1. Aggiungi quanto segue al file per impostare l’intestazione della pagina
+1. Aggiungi quanto segue al file per impostare l’intestazione age
 
    ```shellscript
        <IfModule mod_headers.c>
@@ -73,4 +73,4 @@ Per risolvere il problema, imposta l’intestazione di pagina su 0:
    ```
 
 1. Salva e chiudi il file 
-1. Modifica il collegamento software per `src\conf.d\enabled_vhosts\default.vhost` per puntare a nuovo file.
+1. Modifica il soft link per `src\conf.d\enabled_vhosts\default.vhost` per selezionare un nuovo file.

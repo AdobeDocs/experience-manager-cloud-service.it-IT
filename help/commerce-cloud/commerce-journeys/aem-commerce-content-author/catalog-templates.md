@@ -1,5 +1,5 @@
 ---
-title: Gestione delle pagine e dei modelli del catalogo dei prodotti
+title: Gestire pagine e modelli del catalogo dei prodotti
 description: Scopri come gestire pagine e modelli di catalogo dei prodotti
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
@@ -9,19 +9,19 @@ ht-degree: 2%
 
 ---
 
-# Gestione delle pagine e dei modelli del catalogo dei prodotti {#product-catalog}
+# Gestire pagine e modelli del catalogo dei prodotti {#product-catalog}
 
-Scopri come gestire le pagine e i modelli del catalogo dei prodotti.
+Scopri come gestire pagine e modelli di catalogo dei prodotti.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di authoring Contenuto e Commercio AEM, [Guida introduttiva alle nozioni di base sull’authoring CIF AEM](getting-started.md), hai appreso le nozioni di base sull’authoring CIF.
+Nel documento precedente del percorso di authoring dei contenuti e del commercio dell’AEM, [Guida introduttiva alle nozioni di base sull’authoring CIF dell’AEM](getting-started.md), hai imparato le nozioni di base sull’authoring CIF.
 
-Questo articolo si basa su questi fondamentali.
+Questo articolo si basa su questi principi fondamentali.
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come gestire le pagine e i modelli del catalogo dei prodotti. Dopo la lettura dovresti:
+Questo documento spiega come gestire pagine e modelli di catalogo dei prodotti. Dopo la lettura dovresti:
 
 * comprendere i concetti dei modelli di catalogo
 * funzionamento dei modelli generici
@@ -29,13 +29,13 @@ Questo documento spiega come gestire le pagine e i modelli del catalogo dei prod
 
 ## Concetto di base {#basic-concept}
 
-Venia vetrina è dotata di una tipica esperienza di catalogo dei prodotti con navigazione, e destinazione, categorie (PLP) e pagine di dettaglio dei prodotti (PDP).
+La vetrina Venia offre un’esperienza tipica con il catalogo dei prodotti, con navigazione e pagine di dettaglio dei prodotti (PDP), categorie (PLP) e destinazione.
 
-Le pagine di catalogo vengono create in modo dinamico utilizzando un modello di catalogo CIF AEM e i dati di prodotto in tempo reale recuperati dall’endpoint di e-commerce quando necessario. Ogni catalogo dispone di un modello generico per le pagine di prodotti e categorie.
+Le pagine di catalogo vengono create dinamicamente utilizzando un modello di catalogo CIF dell’AEM e dati di prodotto in tempo reale che vengono recuperati dall’endpoint commerce quando necessario. Ogni catalogo dispone di un modello generico per le pagine di prodotti e categorie.
 ![struttura del catalogo](assets/catalog-structure.png)
 
-Il componente di navigazione mostra il contenuto e le pagine del catalogo. È possibile visualizzare la pagina di destinazione del catalogo o le categorie di primo livello nella navigazione. Passando il puntatore del mouse su una categoria verranno visualizzate categorie di secondo livello come seconda riga.
-![navigazione nel catalogo](assets/catalog-navigation.png)
+Il componente Navigazione mostra il contenuto e le pagine del catalogo. È possibile visualizzare la pagina di destinazione del catalogo o le categorie di primo livello nella navigazione. Passando il puntatore del mouse su una categoria, le categorie di secondo livello vengono visualizzate come seconda riga.
+![navigazione catalogo](assets/catalog-navigation.png)
 
 Facendo clic su una categoria si aprirà la pagina della categoria (o la pagina dell’elenco dei prodotti).
 
@@ -49,69 +49,69 @@ Facendo clic su un prodotto si aprirà la pagina dei dettagli del prodotto.
 
 ### Modelli generici {#generic}
 
-Il modello di catalogo Venia generico utilizza il componente di base Elenco prodotti . Questo componente visualizza l’immagine della categoria, se disponibile, e i prodotti della categoria .
+Il modello di catalogo Venia generico utilizza il componente core Elenco prodotti. Questo componente visualizza l’immagine della categoria, se disponibile, e i prodotti della categoria.
 ![modello di categoria](assets/category-template.png)
 
-Il modello di prodotto Venia generico utilizza il componente core Product Detail. Questo componente visualizza le informazioni sui prodotti per vari tipi di prodotti e azioni add-to-cart.
+Il modello di prodotto Venia generico utilizza il componente core Dettagli prodotto. Questo componente visualizza le informazioni sul prodotto per vari tipi di prodotto e azioni di aggiunta al carrello.
 ![modello di prodotto](assets/product-template.png)
 
-### Modifica modelli {#edit-templates}
+### Modifica Modelli {#edit-templates}
 
-È possibile modificare i modelli aprendo direttamente la pagina del modello o passando alla modalità di modifica durante la navigazione in una pagina del catalogo dei prodotti. Tieni presente che la modifica della pagina modificherà il modello e non solo la pagina specifica del prodotto o della categoria.
+I modelli possono essere modificati aprendo direttamente la pagina del modello o passando alla modalità di modifica durante la navigazione in una pagina del catalogo prodotti. Tieni presente che la modifica della pagina modificherà il modello e non solo la pagina specifica del prodotto/categoria.
 
-### Modelli specifici per categorie o prodotti {#specific}
+### Modelli per categorie o prodotti specifici {#specific}
 
-CIF supporta più modelli in pochi clic. Per creare un altro modello, seleziona il modello generico dalla rispettiva categoria e crea una nuova pagina utilizzando il **Crea** azione.
+CIF supporta più modelli con pochi clic. Per creare un altro modello, seleziona il modello generico dalla rispettiva categoria e crea una nuova pagina utilizzando **Crea** azione.
 
 ![crea pagina modello](assets/create-template-page.png)
 
-Selezionare il rispettivo modello di prodotto o categoria.
+Seleziona il rispettivo modello di prodotto o categoria.
 
 ![crea selezione modello](assets/create-template-select.png)
 
 Inserisci il titolo e crea la pagina.
 
-![crea inserimento modelli](assets/create-template-enter.png)
+![crea immissione modello](assets/create-template-enter.png)
 
-Ora disponi di un modello specifico sotto quello generico.
+Tieni presente che ora disponi di un modello specifico sotto quello generico.
 
-![creazione gerarchia dei modelli](assets/create-template-hierachry.png)
+![crea gerarchia modelli](assets/create-template-hierachry.png)
 
 Apri il modello. Assomiglia esattamente al modello di categoria generico.
 
-![crea nuovo modello](assets/create-template-new.png)
+![crea modello nuovo](assets/create-template-new.png)
 
-Aggiungi un’immagine nella parte superiore della pagina.
+Aggiungi un’immagine sopra la pagina.
 
 ![crea aggiornamento modello](assets/create-template-update.png)
 
-Il modello può essere visualizzato in anteprima con qualsiasi categoria/prodotto. Apri **Informazioni pagina** quindi seleziona **Visualizza con categoria/prodotto**. Seleziona il prodotto/categoria dal selettore per ottenere un’anteprima con questo prodotto/categoria. Seleziona **Acquista il look** per ottenere un’anteprima del modello aggiornato.
+Il modello può essere visualizzato in anteprima con qualsiasi categoria/prodotto. Apri **Informazioni pagina** e quindi seleziona **Visualizza con categoria/prodotto**. Seleziona il prodotto o la categoria dal selettore per ottenere un’anteprima con questo prodotto o categoria. Seleziona **Acquista il look** categoria per ottenere un’anteprima del modello aggiornato.
 
 ![crea modello ](assets/create-template-picker.png)
 
-Ora dobbiamo assegnare questo modello alla categoria specifica. Apri le proprietà in **Informazioni pagina** e passa alla scheda commercio. Fai clic sull’icona della cartella per selezionare il **Acquista il look** categoria dal selettore categoria. È possibile assegnare più categorie a un modello e includere anche le sottocategorie abilitando la casella di controllo.
+Ora dobbiamo assegnare questo modello alla categoria specifica. Apri proprietà in **Informazioni pagina** e passa alla scheda commerce. Fai clic sull’icona della cartella per selezionare **Acquista il look** categoria dal selettore delle categorie. È possibile assegnare più categorie a un modello e includere anche le sottocategorie abilitando la casella di controllo.
 
-![creare un&#39;associazione di modelli](assets/create-template-associate.png)
+![crea associazione modello](assets/create-template-associate.png)
 
 Torna alla home page principale e fai clic su **Acquista il look** per visualizzare il modello specifico. Tutte le altre categorie utilizzano ancora il modello generico.
 
 ![crea risultato modello](assets/create-template-result.png)
 
-Lo stesso flusso di lavoro può essere applicato per creare singoli modelli di prodotto.
+È possibile applicare lo stesso flusso di lavoro per creare singoli modelli di prodotto.
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
-Ora che hai completato questa parte del percorso devi:
+Ora che hai completato questa parte del percorso dovresti:
 
 * comprendere i concetti dei modelli di catalogo
 * funzionamento dei modelli generici
 * hanno creato un singolo modello
 
-Sviluppa questa conoscenza e continua il tuo percorso rivedendo il documento successivo [Gestire le esperienze catalogo prodotti in fase di staging](staged-catalog.md), dove imparerai a lavorare con i dati di prodotto e i lanci di AEM.
+Approfondisci l&#39;argomento e continua il tuo percorso esaminando il documento [Gestire le esperienze del catalogo dei prodotti in staging](staged-catalog.md), dove imparerai a utilizzare i dati di prodotto staging e i lanci AEM.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre si consiglia di passare alla parte successiva del percorso rivedendo il documento [Gestire le esperienze catalogo prodotti in fase di staging](staged-catalog.md)Di seguito sono riportate alcune risorse aggiuntive facoltative che consentono di approfondire alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless:
+Sebbene sia consigliabile passare alla parte successiva del percorso esaminando il documento [Gestire le esperienze del catalogo dei prodotti in staging](staged-catalog.md), di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma che non è necessario che continuino sul percorso headless:
 
 * [Creazione di più pagine per categorie e prodotti](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Guida alla migrazione per l’Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Come migrare al componente aggiuntivo CIF di AEM Commerce Integration Framework (CIF) da una versione precedente
+* [Guida alla migrazione per l’Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Come migrare al componente aggiuntivo AEM Commerce Integration Framework (CIF) da una versione precedente

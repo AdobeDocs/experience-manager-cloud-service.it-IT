@@ -1,11 +1,11 @@
 ---
-title: Anteprima - Rappresentazione JSON (Assets - Frammenti di contenuto)
-description: Scopri come visualizzare in anteprima facilmente una rappresentazione JSON dei frammenti di contenuto durante l’implementazione della soluzione AEM headless.
+title: Anteprima - Rappresentazione JSON (risorse - Frammenti di contenuto)
+description: Scopri come visualizzare facilmente in anteprima la rappresentazione JSON dei frammenti di contenuto durante l’implementazione della soluzione AEM headless.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 79%
+ht-degree: 94%
 
 ---
 

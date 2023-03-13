@@ -3,7 +3,7 @@ title: Come strutturare i vari elementi - La tua app e il tuo contenuto in AEM h
 description: In questa parte del Percorso per sviluppatori AEM Headless, scoprirai come realizzare il tuo progetto AEM utilizzando i frammenti di contenuto, le chiamate GraphQL, le chiamate REST API e la tua applicazione, e prepararlo per la pubblicazione.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 100%
 

@@ -2,8 +2,8 @@
 title: Creazione di contenuti di destinazione utilizzando la modalità di targeting
 description: La modalità di targeting e il componente Target forniscono strumenti per la creazione di contenuti per esperienze
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
-workflow-type: ht
+source-git-commit: 41027653bffb064b3c313d6512b0314336f6c8dc
+workflow-type: tm+mt
 source-wordcount: '5414'
 ht-degree: 100%
 
@@ -490,7 +490,7 @@ Per configurare le impostazioni utilizzando il targeting di AEM:
 1. Per specificare quando avviare l’attività, utilizza il menu a comparsa **Avvia** per selezionare uno dei seguenti valori:
 
    * **Quando viene attivato**: l’attività viene avviata quando la pagina contenente il contenuto di destinazione viene attivata.
-   * **Data e ora specificate**: in un momento specifico. Quando selezioni questa opzione, fai clic o tocca l’icona del calendario, seleziona una data e specifica l’ora in cui avviare l’attività.
+   * **Data e ora specificata**: un tempo specifico. Quando selezioni questa opzione, fai clic o tocca l’icona del calendario, seleziona una data e specifica l’ora in cui avviare l’attività.
 
 1. Per specificare quando l’attività termina, usa il menu a comparsa **Fine** per selezionare uno dei seguenti valori:
 
@@ -506,7 +506,7 @@ Per configurare obiettivi e impostazioni con Adobe Target:
 1. Per specificare quando avviare l’attività, utilizza il menu a comparsa **Avvia** per selezionare uno dei seguenti valori:
 
    * **Quando viene attivato**: l’attività viene avviata quando la pagina contenente il contenuto di destinazione viene attivata.
-   * **Data e ora specificate**: in un momento specifico. Quando selezioni questa opzione, fai clic o tocca l’icona del calendario, seleziona una data e specifica l’ora in cui avviare l’attività.
+   * **Data e ora specificata**: un tempo specifico. Quando selezioni questa opzione, fai clic o tocca l’icona del calendario, seleziona una data e specifica l’ora in cui avviare l’attività.
 
 1. Per specificare quando l’attività termina, usa il menu a comparsa **Fine** per selezionare uno dei seguenti valori:
 

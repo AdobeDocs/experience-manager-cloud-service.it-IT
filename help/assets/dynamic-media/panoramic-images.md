@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 2%
@@ -14,25 +14,25 @@ ht-degree: 2%
 
 # Immagini panoramiche{#panoramic-images}
 
-Questa sezione descrive come utilizzare il visualizzatore di immagini panoramiche per riprodurre immagini panoramiche sferiche per un’esperienza di visualizzazione a 360° di una stanza, una proprietà, una posizione o un paesaggio.
+Questa sezione descrive come lavorare con il visualizzatore Immagine panoramica per riprodurre immagini panoramiche sferiche per un&#39;esperienza di visualizzazione a 360° coinvolgente di una stanza, una proprietà, una posizione o un paesaggio.
 
-Vedi anche [Gestire i predefiniti per visualizzatori](/help/assets/dynamic-media/managing-viewer-presets.md).
+Vedi anche [Gestire i predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## Caricare le risorse da utilizzare con il visualizzatore di immagini panoramiche {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Carica le risorse da utilizzare con il visualizzatore immagini panoramiche {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
-Affinché una risorsa caricata possa qualificarsi come immagine panoramica sferica che intendi utilizzare con il visualizzatore di immagini panoramiche, la risorsa deve avere uno o entrambi i seguenti elementi:
+Affinché una risorsa caricata possa essere considerata un’immagine panoramica sferica da utilizzare con il visualizzatore immagini panoramiche, è necessario che la risorsa presenti uno o entrambi i seguenti elementi:
 
-* Rapporto di formato 2.
+* Proporzioni pari a 2.
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Etichettate con le parole chiave `equirectangular`oppure `spherical`e `panorama`oppure `spherical` e `panoramic`. Vedi [Usa tag](/help/sites-cloud/authoring/features/tags.md).
+* Contrassegnato con le parole chiave `equirectangular`, o `spherical`e `panorama`, o `spherical` e `panoramic`. Consulta [Usa tag](/help/sites-cloud/authoring/features/tags.md).
 
-Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche della pagina dei dettagli della risorsa che `Panoramic Media` Componente WCM.
+Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche della pagina dei dettagli della risorsa e `Panoramic Media` Componente WCM.
 
-Per caricare le risorse da utilizzare con il visualizzatore di immagini panoramiche, vedi [Caricare le risorse](/help/assets/manage-digital-assets.md#uploading-assets).
+Per caricare le risorse da utilizzare con il visualizzatore immagini panoramiche, consulta [Caricare le risorse](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -79,8 +79,8 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## Anteprima immagini panoramiche {#previewing-panoramic-images}
 
-Vedi [Anteprima delle risorse](/help/assets/dynamic-media/previewing-assets.md).
+Consulta [Visualizzare in anteprima le risorse](/help/assets/dynamic-media/previewing-assets.md).
 
-## Pubblicare immagini panoramiche {#publishing-panoramic-images}
+## Pubblica immagini panoramiche {#publishing-panoramic-images}
 
-Vedi [Pubblicare le risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulta [Pubblicare le risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

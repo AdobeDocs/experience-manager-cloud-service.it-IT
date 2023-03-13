@@ -82,7 +82,7 @@ Per creare una nuova configurazione di traduzione:
 1. Tocca o fai clic su **Crea** nella barra degli strumenti per creare la nuova configurazione.
 1. Fornisci le seguenti informazioni nei campi, quindi tocca o fai clic su **Crea**.
    1. Seleziona **Tipo di configurazione** nel menu a discesa. Seleziona **Integrazione della traduzione** dall’elenco.
-   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione nella console **Cloud Services** così come nell’elenco a discesa delle proprietà della pagina.
+   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione nella console **Servizi cloud** così come nell’elenco a discesa delle proprietà della pagina.
    1. Facoltativamente, digita un **Nome** da utilizzare per il nodo dell’archivio che memorizza la configurazione.
 
    ![Creare una configurazione di traduzione](assets/create-translation-configuration.png)

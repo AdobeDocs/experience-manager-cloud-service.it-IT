@@ -1,6 +1,6 @@
 ---
-title: SDK per App Builder e CLI
-description: Scopri gli SDK e la CLI utilizzati per sviluppare le applicazioni App Builder.
+title: SDK e CLI di App Builder
+description: Scopri gli SDK e la CLI utilizzati per sviluppare applicazioni App Builder.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -12,11 +12,11 @@ exl-id: 4aabd84b-0ccb-482b-85e7-09bacbce85c1
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '73'
-ht-degree: 0%
+ht-degree: 21%
 
 ---
 
-# SDK per App Builder e CLI
+# SDK e CLI di App Builder
 
 >[!IMPORTANT]
 >
@@ -24,12 +24,12 @@ ht-degree: 0%
 
 ## SDK
 
-Scopri l’SDK per Adobe I/O e come viene utilizzato per sviluppare applicazioni App Builder.
+Scopri l’SDK di Adobe I/O e come viene utilizzato per sviluppare applicazioni di App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339166/?quality=12&learn=on)
 
 ## CLI
 
-Scopri l’Adobe I/O CLI e come utilizzarlo per lo sviluppo di App Builder.
+Scopri Adobe I/O CLI e come utilizzarlo per lo sviluppo di App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339167/?quality=12&learn=on)

@@ -3,7 +3,7 @@ title: Guida introduttiva alla traduzione in AEM headless
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Questo documento ti aiuta a capire come iniziare a tradurre il contenuto headles
 
 * Comprendere l’importanza della struttura dei contenuti per la traduzione.
 * Avere compreso come AEM archivia il contenuto headless.
-* Conoscere gli strumenti di traduzione di AEM.
+* conoscere gli strumenti di traduzione di AEM.
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
@@ -170,7 +170,7 @@ Ora che conosci i frammenti di contenuto e l’importanza della struttura dei co
 
 In genere, il connettore viene configurato una sola volta per l’istanza. Poi utilizzi i progetti di traduzione per tradurre i contenuti e tenerne aggiornate le traduzioni su base continua.
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Ora cha hai completato questa parte del percorso di traduzione headless, dovresti:
 

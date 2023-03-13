@@ -1,8 +1,8 @@
 ---
-title: Gestione dei frammenti di contenuto (Assets - Frammenti di contenuto)
-description: Scopri come utilizzare la console Risorse per gestire i frammenti di contenuto AEM, alla base dei contenuti headless.
+title: Gestione dei frammenti di contenuto (risorse - frammenti di contenuto)
+description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '1781'
 ht-degree: 81%
@@ -11,7 +11,7 @@ ht-degree: 81%
 
 # Gestione dei frammenti di contenuto {#managing-content-fragments}
 
-Scopri come utilizzare la console Risorse per gestire i frammenti di contenuto AEM, alla base dei contenuti headless.
+Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 
 Dopo aver definito i [Modelli per frammenti di contenuto](#creating-a-content-model) puoi utilizzarli per [creare i tuoi frammenti di contenuto](#creating-a-content-fragment).
 
@@ -35,7 +35,7 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 
 >[!NOTE]
 >
->I frammenti di contenuto sono memorizzati come **Risorse**. Ora sono gestite principalmente con il **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** , anche se possono ancora essere gestiti dalla **Risorse** console. Questa sezione riguarda la gestione da **Risorse** console.
+>I frammenti di contenuto sono memorizzati come **Risorse**. Ora sono gestite principalmente con **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** , anche se possono ancora essere gestite dalla **Risorse** console. Questa sezione riguarda la gestione da **Risorse** console.
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
@@ -45,19 +45,19 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 
 ### Creazione di un frammento di contenuto {#creating-a-content-fragment}
 
-Il metodo di creazione di un frammento di contenuto è:
+Il metodo per creare un frammento di contenuto è:
 
 1. Passa alla cartella **Risorse** in cui desideri creare il frammento.
 1. Per aprire la procedura guidata, seleziona **Crea**, quindi **Frammento di contenuto**.
 1. Il primo passaggio della procedura guidata richiede di specificare la base del nuovo frammento.
 
-   * [Modello](/help/assets/content-fragments/content-fragments-models.md) - utilizzato per creare un frammento che richiede contenuto strutturato; ad esempio **Avventura** model
+   * [Modello](/help/assets/content-fragments/content-fragments-models.md) : utilizzato per creare un frammento che richiede contenuto strutturato, ad esempio **Avventura** modello
 
       * Vengono visualizzati tutti i modelli disponibili.
 
    Dopo la selezione, utilizza **Successivo** per procedere.
 
-   ![base del frammento](assets/cfm-managing-01.png)
+   ![base frammento](assets/cfm-managing-01.png)
 
 1. Nel passaggio **Proprietà** specifica:
 
@@ -76,22 +76,22 @@ Il metodo di creazione di un frammento di contenuto è:
 
       * **Nome**
 
-         il nome; verrà utilizzato per formare l’URL.
+         Il nome; verrà utilizzato per formare l’URL.
 
-         Obbligatorio; viene derivato automaticamente dal titolo, ma può essere aggiornato.
+         Obbligatorio; deriverà automaticamente dal titolo, ma può essere aggiornato.
 
 
 1. Seleziona **Crea** per completare l’azione, quindi **Apri** il frammento per la modifica oppure tornare alla console facendo clic su **Fine**.
 
    >[!NOTE]
-   >In **Elenco** della console è possibile aggiornare la **Visualizza impostazioni** per abilitare **Modello per frammento di contenuto** colonna.
+   >In entrata **Elenco** della console è possibile aggiornare il **Impostazioni vista** per attivare **Modello per frammenti di contenuto** colonna.
 
-## Azioni per un frammento di contenuto nella console Risorse {#actions-for-a-content-fragment-assets-console}
+## Azioni per un frammento di contenuto nella console Assets {#actions-for-a-content-fragment-assets-console}
 
-In **Risorse** per i frammenti di contenuto sono disponibili diverse azioni:
+In **Risorse** console è disponibile una serie di azioni per i frammenti di contenuto:
 
-* Dalla barra degli strumenti; dopo aver selezionato il frammento sono disponibili tutte le azioni appropriate.
-* Come [azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); un sottoinsieme di azioni disponibili per le singole schede di frammento.
+* Dalla barra degli strumenti; dopo aver selezionato il frammento, sono disponibili tutte le azioni appropriate.
+* As [azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); un sottoinsieme di azioni disponibile per le singole schede dei frammenti.
 
 ![azioni](assets/cfm-managing-02.png)
 
@@ -101,7 +101,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 * **Crea**
 * **Download**
 
-   * Salvare il frammento come file ZIP; puoi definire se includere elementi, varianti, metadati.
+   * Salva il frammento come file ZIP; puoi definire se includere elementi, varianti, metadati.
 
 * **Pagamento**
 * **Proprietà**
@@ -110,19 +110,19 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 * **Modifica**
 
-   * Permette di [aprire il frammento per la modifica del contenuto](/help/assets/content-fragments/content-fragments-variations.md) insieme ai relativi elementi, varianti, contenuti associati e metadati.
+   * Ti consente di: [apri il frammento per la modifica del contenuto](/help/assets/content-fragments/content-fragments-variations.md) insieme ai relativi elementi, varianti, contenuti e metadati associati.
 
 * **Pubblicazione rapida**
 * **Gestisci pubblicazione**
 * **Gestisci i tag**
 * **Alla raccolta**
-* **Copia** e **Incolla**)
+* **Copia** (e **Incolla**)
 * **Sposta**
 * **Eliminare**
 
 >[!NOTE]
 >
->Molti di questi sono [azioni standard per Assets](/help/assets/manage-digital-assets.md) e/o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it).
+>Molti di questi sono [azioni standard per Assets](/help/assets/manage-digital-assets.md) e/o [App desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it).
 
 ## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 
@@ -136,11 +136,11 @@ Per aprire la pagina per la modifica:
 >
 >Per modificare un frammento di contenuto sono necessarie le autorizzazioni appropriate. Se riscontri problemi, contatta l’amministratore del sistema.
 
-1. Utilizza la **Risorse** per passare alla posizione del frammento di contenuto.
-1. Apri il frammento per la modifica:
+1. Utilizza il **Risorse** per passare alla posizione del frammento di contenuto.
+1. Apri il frammento per la modifica eseguendo una delle seguenti operazioni:
 
-   * Tocca o fai clic sul collegamento frammento o frammento (a seconda della vista della console).
-   * Selezione del frammento, quindi **Modifica** dalla barra degli strumenti.
+   * Tocca o fai clic sul collegamento del frammento o del frammento (a seconda della vista della console).
+   * Selezionando il frammento, quindi **Modifica** dalla barra degli strumenti.
 
 1. Viene aperto l’editor frammenti. Apporta le modifiche necessarie:
 
@@ -353,12 +353,12 @@ Se pubblichi un frammento di contenuto per il quale il modello non è ancora sta
 
 I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione. Questa operazione viene eseguita utilizzando la funzionalità standard di Assets:
 
-* [Pubblicazione rapida ](/help/assets/manage-publication.md#quick-publish)
+* [Pubblicazione rapida](/help/assets/manage-publication.md#quick-publish)
 * [Gestisci pubblicazione](/help/assets/manage-publication.md#manage-publication)
 
 È possibile accedere a questa 
 
-* Dopo la creazione; utilizzo [azioni disponibili nella console Risorse](#actions-for-a-content-fragment-assets-console).
+* Dopo la creazione; utilizzo [azioni disponibili nella console Assets](#actions-for-a-content-fragment-assets-console).
 * Dall’[editor frammento di contenuto](#toolbar-actions-in-the-content-fragment-editor).
 
 Inoltre, quando [pubblichi una pagina che utilizza il frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), il frammento verrà elencato nei riferimenti di pagina.

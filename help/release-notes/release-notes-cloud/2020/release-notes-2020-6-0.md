@@ -5,7 +5,7 @@ exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -58,13 +58,13 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 ### Novità {#what-is-new-cloud-manager}
 
-* Un utente con il ruolo *Proprietario business* in Cloud Manager è ora in grado di eliminare un programma sandbox dalla pagina di destinazione (tramite il pulsante di azione rapida nella scheda Programma) o dall’interno del programma.
+* Ora l’utente con il ruolo *Proprietario business* in Cloud Manager può eliminare un programma sandbox dalla pagina di destinazione (tramite il pulsante di azione rapida nella scheda Programma) o dall’interno del programma.
 
-   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=it).
 
-* Un utente del programma sandbox con il ruolo di *Proprietario business* o *Manager implementazione* in Cloud Manager è ora in grado di eliminare l’ambiente di produzione e stage impostato tramite l’interfaccia di Cloud Manager. L’opzione di eliminazione è ora disponibile sia nella scheda Ambiente nella pagina **Panoramica dei programmi**, sia nella pagina **Ambienti**. Selezionando l’opzione Elimina in Produzione o Stage, viene eliminato anche l’altro nel set.
+* Ora l’utente del programma sandbox con il ruolo di *Proprietario business* o *Responsabile dell’implementazione* in Cloud Manager può eliminare il set di ambienti di produzione e di staging impostato tramite l’interfaccia utente di Cloud Manager. L’opzione di eliminazione è ora disponibile sia nella scheda Ambiente nella pagina **Panoramica dei programmi**, sia nella pagina **Ambienti**. Selezionando l’opzione di eliminazione nell’ambiente di produzione o staging, viene eliminato anche l’altro nel set.
 
-   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=it).
 
 * Delle descrizioni sulla pagina di destinazione forniscono all’utente istruzioni di base sulla navigazione.
 
@@ -76,17 +76,17 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * Un utente con il ruolo SysAdmin ora ha accesso con un solo clic alla posizione in Admin Console da cui è possibile gestire i ruoli o le autorizzazioni degli utenti per Cloud Manager. Nella pagina di destinazione è ora disponibile un pulsante **Gestisci accesso** accanto al pulsante **Aggiungi programma**.
 
-   Per ulteriori informazioni, consulta [Attività SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks).
+   Per ulteriori informazioni, consulta [Attività SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#sysadmin-tasks).
 
 * Un utente con il ruolo SysAdmin ora dispone dell’accesso con un solo clic all’istanza di authoring direttamente da Cloud Manager.
 
-   Per ulteriori informazioni, consulta [Gestione dell’accesso all’istanza di authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem).
+   Per ulteriori informazioni, consulta [Gestione dell’accesso all’istanza di authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#manage-access-aem).
 
 * Il registro Build ora include l’elenco degli artefatti individuati, inclusi i pacchetti di contenuti saltati.
 
-* Il passaggio Build ora verifica se tutti i pacchetti di contenuto generati includono tutte le proprietà obbligatorie: nome, gruppo e versione.
+* La fase di build ora verifica se tutti i pacchetti di contenuto generati includono tutte le proprietà obbligatorie: nome, gruppo e versione.
 
-* Il passaggio Build ora verifica se la build ha prodotto almeno un pacchetto di contenuto.
+* La fase di build ora verifica se la build ha generato almeno un pacchetto di contenuto.
 
 ### Correzioni di bug {#bug-fixes-cm}
 
@@ -94,7 +94,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * L’identificatore di versione di AEM non veniva visualizzato in modo coerente nella pagina **Panoramica dei programmi**.
 
-* Durante la configurazione della pipeline di produzione, l’opzione **Scheduled Deployment** (Implementazione pianificata) non era visibile per alcuni clienti.
+* Durante la configurazione della pipeline di produzione, l’opzione **Distribuzione pianificata** non era visibile per alcuni clienti.
 
 ### Problemi noti {#known-issues-cm}
 
@@ -109,7 +109,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 I tag avanzati migliorati consentono di addestrare modelli di assegnazione tag avanzati per riconoscere le immagini in base a tag aziendali specifici, oltre che ai tag avanzati generici.
 
 Con questa versione, è disponibile una nuova user experience guidata che consente di impostare l’addestramento di tag avanzati per set di tag specifici dei clienti e di addestrarli con risorse che in futuro dovranno essere riconosciute e a cui dovranno essere assegnati i tag. L’esperienza è ora più intuitiva.
-Addestra i tag avanzati migliorati in modo più intuitivo. Vedi [come aggiungere tag avanzati alle risorse](/help/assets/smart-tags.md).
+Addestra i tag avanzati migliorati in modo più intuitivo. Consulta [aggiungere tag avanzati alle risorse](/help/assets/smart-tags.md).
 
 **Supporto per l’acquisizione, l’anteprima e la distribuzione di contenuti 3D**
 
@@ -189,4 +189,4 @@ Oltre alle nuove funzioni di cui sopra, la versione corrente fornisce le correzi
 * Quando si scarica una risorsa, se è selezionata l’opzione e-mail e viene fornito un ID e-mail valido, l’opzione di download non è disponibile. (CQ-4296535)
 * I filtri personalizzati salvati come raccolte avanzate non vengono applicati correttamente alle risorse. (CQ-4294942)
 * Sono stati introdotti numerosi miglioramenti a livello di ricerca e indicizzazione e correzioni di bug per migliorare le prestazioni. (CQ-4286373)
-* Impossibile accedere alla scheda delle proprietà della cartella in Assets e restituisce un errore 500. (CQ-4295701)
+* Non è possibile accedere alla scheda delle proprietà della cartella in Assets e restituisce un errore 500. (CQ-4295701)

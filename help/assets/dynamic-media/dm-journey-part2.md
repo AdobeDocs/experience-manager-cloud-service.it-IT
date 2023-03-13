@@ -1,6 +1,6 @@
 ---
-title: Percorso in Dynamic Media, parte II
-description: Il Percorso Dynamic Media illustra le nozioni di base di Dynamic Media, il suo funzionamento, le sue funzioni e il suo valore per il tuo lavoro e per i tuoi clienti.
+title: Percorso in Dynamic Media, Parte II
+description: Il Percorso Dynamic Media illustra le nozioni di base di Dynamic Media, il suo funzionamento, il suo potenziale vantaggio e il valore che apporta al lavoro e ai clienti.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -13,220 +13,220 @@ hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '2878'
 ht-degree: 0%
 
 ---
 
-# percorso Dynamic Media: Nozioni di base, parte II  {#dm-journey-part2}
+# Percorso Dynamic Media: nozioni di base, parte II  {#dm-journey-part2}
 
-Benvenuto nel Percorso Dynamic Media: Nozioni di base, parte II, in cui ti aspetti di imparare quanto segue:
+Benvenuti nel Percorso Dynamic Media: Nozioni di base, parte II, dove è possibile aspettarsi di apprendere quanto segue:
 
-* Anatomia di un URL Dynamic Media e modalità di distribuzione dei contenuti da parte di Dynamic Media
+* Anatomia di un URL Dynamic Media e modo in cui Dynamic Media distribuisce i contenuti
 * Nozioni di base sulla creazione di predefiniti immagine per il rendering delle risorse
 * Set di immagini, set 360 gradi e set di file multimediali diversi
 
-Vedi anche [percorso Dynamic Media; Nozioni di base, parte I](/help/assets/dynamic-media/dm-journey-part1.md).
+Vedi anche [Percorso Dynamic Media; nozioni di base, parte I](/help/assets/dynamic-media/dm-journey-part1.md).
 
 >[!TIP]
 >
->Per ottenere risultati ottimali, Adobe consiglia di leggere e visualizzare questo Percorso Dynamic Media su un computer desktop.
+>Per ottenere risultati ottimali, l&#39;Adobe consiglia di leggere e visualizzare questo Percorso Dynamic Media su un computer desktop.
 
-## Anatomia di un URL Dynamic Media e modalità di distribuzione dei contenuti da parte di Dynamic Media {#dm-journey-d}
+## Anatomia di un URL Dynamic Media e modo in cui Dynamic Media distribuisce i contenuti {#dm-journey-d}
 
-Dopo aver caricato e pubblicato le risorse Dynamic Media, puoi copiare l’URL generato di una risorsa e incollarlo nel browser per vedere come apparirà la risorsa a un cliente. Il seguente URL copiato per un’immagine orologio è suddiviso per colore per facilitare la lettura e la comprensione.
+Dopo aver caricato e pubblicato le risorse Dynamic Media, puoi copiare l’URL generato di una risorsa e incollarlo nel browser per vedere come verrà visualizzata da un cliente. Il seguente URL copiato per un’immagine di controllo viene suddiviso per colore per facilitarne la lettura e la comprensione.
 
 ![Anatomia di un URL Dynamic Media](/help/assets/dynamic-media/assets/dm-colored-url.png)
 _Anatomia di un URL Dynamic Media._
 
-La prima parte dell’URL in rosso fa riferimento al dominio del server stesso. In questo caso, Dynamic Media è in esecuzione su un dominio server generico, ovvero `https://s7d1.scene7.com/is/image/`. È facile guardare un set di immagini e capire se vengono servite da Dynamic Media solo guardando il dominio del server. L’URL sarà abbastanza coerente. Tuttavia, alcuni clienti Dynamic Media hanno effettuato il passaggio a un dominio server dedicato in cui potrebbe essere `name-of-your-company.scene7.com`. Per Smart imaging è necessario un dominio server dedicato.
+La prima parte dell’URL in rosso fa riferimento al dominio del server stesso. In questo caso, Dynamic Media è in esecuzione su un dominio server generico `https://s7d1.scene7.com/is/image/`. È facile osservare un insieme di immagini e capire se Dynamic Media le sta servendo semplicemente osservando il dominio del server. L’URL sarà abbastanza coerente. Tuttavia, alcuni clienti di Dynamic Media sono passati a un dominio server dedicato in cui potrebbe `name-of-your-company.scene7.com`. Per l&#39;imaging avanzato è necessario un dominio server dedicato.
 
-Il nome dell&#39;account è la porzione in viola. In questo caso, l’account viene chiamato `jpearldemo`.
+Il nome dell’account è la porzione in viola. In questo caso, l’account viene chiamato `jpearldemo`.
 
-ID o nome della risorsa, `AdobeStock_28563982` è in verde. Tieni presente che la risorsa ha _no_ estensione di file, ad esempio `.png` o `.jpg`. Quando le risorse vengono acquisite in Dynamic Media, l’estensione del file viene rimossa e viene creato un tipo diverso di file: un file piramidale-TIFF. Il TIFF piramidale consente a Dynamic Media di creare rapidamente rappresentazioni on-the-fly.
+ID o nome della risorsa, `AdobeStock_28563982` è in verde. Tieni presente che la risorsa ha _no_ estensione file come `.png` o `.jpg`. Quando le risorse vengono acquisite in Dynamic Media, l’estensione del file viene eliminata e viene creato un tipo diverso di file: un file piramidale-TIFF. Il pyramic-TIFF consente a Dynamic Media di creare rapidamente copie trasformate in tempo reale.
 
-Infine, ci sono alcuni parametri di elaborazione delle immagini, `?wid=1000&fmt=jpeg&qlt=85`, in giallo alla fine.
+E infine, ci sono alcuni parametri di elaborazione dell&#39;immagine, `?wid=1000&fmt=jpeg&qlt=85`, visualizzato in giallo alla fine.
 
-L’intero percorso URL è live. [Provate](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target=&quot;_blank&quot;}.
+L’intero percorso URL è live. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target="_blank"}.
 
-Con la finestra del browser ancora aperta all’URL Dynamic Media e all’immagine Watch, cerchiamo di vedere più da vicino come creare rappresentazioni dell’immagine semplicemente modificando l’URL.
+Con la finestra del browser ancora aperta all’URL di Dynamic Media e all’immagine di controllo, esaminiamo più da vicino come creare rappresentazioni dell’immagine modificando semplicemente l’URL.
 
 ### Rendering dell’immagine dell’orologio tramite l’URL
 
-Per iniziare, elimina manualmente solo le regole di elaborazione dell’immagine nel percorso URL; lascia il nome del server, il nome dell’account e l’ID della risorsa o il nome dell’immagine. [Provate](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target=&quot;_blank&quot;}.
+Inizia eliminando manualmente solo le regole di elaborazione delle immagini nel percorso URL; lascia il nome del server, il nome dell’account e l’ID della risorsa o il nome dell’immagine. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target="_blank"}.
 
-Ora aggiungi un parametro di elaborazione dell’immagine alla fine dell’URL. Nel campo URL, a destra del nome dell’immagine, digita `?wid=500`, quindi premi **[!UICONTROL Invio]**. [Provate](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target=&quot;_blank&quot;}.
+Ora aggiungi un parametro di elaborazione dell’immagine alla fine dell’URL. Nel campo URL, a destra del nome dell’immagine, digita `?wid=500`, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target="_blank"}.
 
-Si noti che viene generata una nuova rappresentazione dell’orologio. Un elemento fondamentale da capire da questo semplice esercizio di modifica della larghezza dell&#39;immagine, è che l&#39;immagine visualizzata è generata al 100% in modo dinamico.
+Viene generata una nuova rappresentazione dell’orologio. Un aspetto fondamentale di questo semplice esercizio di modifica della larghezza dell&#39;immagine è che l&#39;immagine visualizzata viene generata al 100% in modo dinamico.
 
-Ora modifica il valore della larghezza di `500` pixel a `1000` pixel, quindi premere **[!UICONTROL Invio]**. [Provate](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
-Il momento in cui premi **[!UICONTROL Invio]**, il browser torna al server di immagini Dynamic Media. Genera una nuova rappresentazione dell’orologio, basata sul nuovo valore di larghezza appena inserito, quindi restituisce la nuova immagine al browser e la memorizza in cache.
+Ora modifica il valore della larghezza di `500` pixel a `1000` pixel, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}.
+Nel momento in cui premi **[!UICONTROL Invio]**, il browser torna al server immagini Dynamic Media. Genera una nuova rappresentazione dell’orologio, basata sul nuovo valore di larghezza appena inserito, quindi consegna la nuova immagine al browser e la memorizza in cache.
 
-Dynamic Media dispone di numerosi parametri di elaborazione delle immagini che è possibile utilizzare per perfezionare le risorse delle immagini sulle pagine web. È possibile [consulta qui un elenco](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
+Dynamic Media dispone di numerosi parametri di elaborazione delle immagini che puoi utilizzare per ottimizzare le risorse delle immagini nelle pagine web. È possibile [consulta un elenco](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
-Ora prova ad aggiungere un parametro di rotazione all&#39;immagine dell&#39;orologio. E la fine del percorso URL, subito dopo `wid=1000`, tipo `&rotate=90`, quindi premere **[!UICONTROL Invio]**. [Provate](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target=&quot;_blank&quot;}.
+Provare ora ad aggiungere un parametro di rotazione all&#39;immagine dell&#39;orologio. E la fine del percorso URL, immediatamente successivo `wid=1000`, tipo `&rotate=90`, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
 
-L&#39;orologio è ancora leggermente inclinato a sinistra. Modifica il valore di rotazione di `90` a `92`, quindi premere **[!UICONTROL Invio]**. [Provate](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target=&quot;_blank&quot;}.
+L&#39;orologio è ancora leggermente inclinato verso sinistra. Modificare il valore di rotazione di `90` a `92`, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
 
-Di nuovo, quando premete **[!UICONTROL Invio]**, una nuova rappresentazione dell’orologio viene generata quasi istantaneamente. Potete vedere il tipo di prestazioni che ottenete, che spiega perché Dynamic Media può fornire più di 800.000 richieste di immagini, _al secondo_, in un weekend occupato, o una vacanza importante.
+Di nuovo, nel momento in cui premi **[!UICONTROL Invio]**, viene generata quasi istantaneamente una nuova rappresentazione dell’orologio. Potete vedere il tipo di prestazioni che ottenete, il che spiega perché Dynamic Media può fornire più di 800.000 richieste di immagini, _al secondo_, in un weekend intenso o in una festività importante.
 
-Anche se è possibile modificare i parametri di elaborazione delle immagini in un URL a livello di immagine per immagine, non è un metodo efficiente, soprattutto se si dispone di decine di migliaia di immagini che compongono il tuo sito web. Un approccio molto migliore consiste nell’utilizzare i predefiniti per immagini.
+Anche se è possibile modificare i parametri di elaborazione delle immagini in un URL immagine per immagine, non è un metodo efficiente, soprattutto se si dispone di decine di migliaia di immagini che compongono il sito web. Un approccio migliore consiste nell&#39;utilizzare immagini preimpostate.
 
 ## Nozioni di base sulla creazione di predefiniti immagine per il rendering delle risorse {#dm-journey-e}
 
-Esistono diversi modi e luoghi in cui desideri creare un’immagine o rendere disponibile un’immagine. Tradizionalmente, un creativo entra in Adobe Photoshop e salva ognuna di queste diverse rappresentazioni come immagini statiche.
+Esistono diversi modi e luoghi in cui desideri creare un’immagine o renderla disponibile. In genere, i contenuti creativi vengono inseriti in Adobe Photoshop e salvano ciascuna di queste diverse rappresentazioni come immagini statiche.
 
 ![Immagini statiche](/help/assets/dynamic-media/assets/dm-static-images.png)
-_Buono: immagini statiche, ciascuna creata manualmente._
+_Corretto: immagini statiche, ciascuna creata manualmente._
 
-Immaginate ora che il Creative Director guardi le immagini e dica:
+Ora immaginate che Creative Director guardi le immagini e dica:
 
-_&quot;Volevo questa ripresa in modo che la mano grande puntasse verso i quattro, e la mano piccola puntasse verso il 1 per rendere il quadrante dell&#39;orologio più facile da vedere.&quot;_
+_&quot;Volevo davvero effettuare questa ripresa in modo che la mano grande indicasse le quattro e la mano piccola indicasse l&#39;1 per rendere più facile da vedere il quadrante dell&#39;orologio.&quot;_
 
 Il creativo dovrebbe riprendere tutte queste nuove immagini statiche.
 
-Tuttavia, con Dynamic Media, se hai diversi predefiniti per immagini, puoi usarli ovunque ne hai bisogno. I predefiniti per immagini applicano gli standard.
+Ma con Dynamic Media, se avete predefiniti di immagine diversi, potete usarli ovunque. I predefiniti immagine impongono gli standard.
 
-![Approccio principale dei file](/help/assets/dynamic-media/assets/dm-onefile.png)
+![Approccio basato sul file principale](/help/assets/dynamic-media/assets/dm-onefile.png)
 _Migliore: un file con più rappresentazioni create al volo utilizzando predefiniti per immagini, ad esempio `Search_Grid` e `Thumbnail`._
 
-| **Perché utilizzare i predefiniti immagine?** |  |
+| **Perché utilizzare i predefiniti per immagini?** |  |
 |---|---|
-| Standard | I predefiniti immagine applicano un trattamento standard di elaborazione delle immagini su qualsiasi immagine con cui viene richiesto. |
-| Gestione delle modifiche | Se devi modificare l’elaborazione dell’immagine, è sufficiente modificare il parametro del predefinito per immagini esistente. La definizione aggiornata viene propagata automaticamente a tutte le richieste. |
+| Standard | I predefiniti per immagini impongono un trattamento standard di elaborazione per tutte le immagini richieste. |
+| Gestione delle modifiche | Se è necessario modificare l’elaborazione dell’immagine, è sufficiente modificare il parametro del predefinito immagine esistente. La definizione aggiornata viene propagata automaticamente a tutte le richieste. |
 
-Ogni luogo in cui è necessario avere un particolare tipo di immagine, ad esempio:
+In ogni luogo in cui è necessario avere un particolare tipo di immagine, ad esempio,
 
-* una pagina dettagliata del prodotto,
+* una pagina dei dettagli del prodotto,
 * griglia di ricerca,
 * miniatura,
-* carta commerciale, oppure
+* carta acquisti, oppure
 * immagine protagonista
 
-L’immagine deve essere consegnata con gli stessi parametri ovunque vengano utilizzati.
+Desideri che l’immagine venga distribuita con gli stessi parametri ovunque verranno utilizzati.
 
-Per un momento, vediamo come viene creato un predefinito per immagini in Dynamic Media.
+Vediamo per un momento come viene creato un predefinito immagine in Dynamic Media.
 
-![Creazione di un predefinito per immagini a partire dalla scheda Base](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
-_Creazione di un predefinito per immagini a partire dalla scheda Base ._
+![Creazione di un predefinito immagine a partire dalla scheda Base](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
+_Creazione di un predefinito immagine a partire dalla scheda Base._
 
-Nell’esempio precedente, puoi vedere che è stato creato un nuovo predefinito per immagini con il nome _Media_. Dynamic Media utilizza un esempio di immagine preconfigurata, lo zaino, per consentirti di vedere le caratteristiche del predefinito immagine quando lo crei.
+Nell’esempio precedente, puoi vedere che è stato creato un nuovo predefinito immagine con il nome _Medio_. Dynamic Media utilizza un esempio di immagine preconfigurata, lo zaino, per aiutarti a visualizzare le caratteristiche del predefinito dell&#39;immagine durante la sua creazione.
 
-La _Media_ immagine preimpostata ha una larghezza di 500 pixel e un&#39;altezza di 800 pixel. Nella parte I di questo Percorso, leggi come consegnare risorse in diversi formati. Da **[!UICONTROL Formato]** menu a discesa, puoi scegliere di distribuire le risorse come JPEG, PNG, TIFF o diversi altri formati. Qui c&#39;è flessibilità.
+Il _Medio_ il predefinito per immagini ha una larghezza di 500 pixel e un&#39;altezza di 800 pixel. Nella Parte I di questo Percorso, leggi come distribuire risorse in diversi formati. Dalla sezione **[!UICONTROL Formato]** menu a discesa, puoi scegliere di distribuire risorse come JPEG, PNG, TIFF o in diversi altri formati. Avete flessibilità qui.
 
-Selezione della **[!UICONTROL Avanzate]** La scheda ti offre le opzioni per lo spazio colore della risorsa. A seconda del formato selezionato nella **[!UICONTROL Base]** scheda : nell’esempio precedente, è stato selezionato JPEG; è possibile distribuire le risorse in RGB, Scala di grigio o CMYK. Da **[!UICONTROL Profilo colore]** menu a discesa, puoi selezionare come distribuire una risorsa immagine CMYK da utilizzare per la stampa. Tieni presente che sono disponibili parametri aggiuntivi da applicare per la nitidezza delle immagini. In questo caso, **[!UICONTROL Maschera definizione dettagli]** è stato applicato.
+Selezione del **[!UICONTROL Avanzate]** Questa scheda ti offre le opzioni per lo spazio colore della risorsa. A seconda del formato selezionato in **[!UICONTROL Base]** nell’esempio precedente, era selezionato JPEG . Puoi distribuire le risorse in RGB, Gradazioni di grigio o CMYK. Dalla sezione **[!UICONTROL Profilo colore]** menu a discesa, puoi selezionare come distribuire una risorsa immagine CMYK da utilizzare per la stampa. Inoltre, è possibile applicare parametri aggiuntivi per la nitidezza delle immagini. In questo caso, **[!UICONTROL Maschera definizione dettagli]** è stato applicato.
 
-![Creazione di un predefinito per immagini selezionando le opzioni dalla scheda Avanzate](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
-_Creazione di un predefinito per immagini selezionando le opzioni dalla scheda Avanzate ._
+![Creazione di un predefinito immagine selezionando le opzioni dalla scheda Avanzate](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
+_Per creare un predefinito immagine, seleziona le opzioni dalla scheda Avanzate._
 
-Ti ricordi di [Anatomia di un URL Dynamic Media](#dm-journey-d) prima, leggi l’URL di Dynamic Media e la relativa modalità di creazione. La **[!UICONTROL Modificatore immagine]** nella casella di testo è possibile digitare tutti i parametri di elaborazione immagine desiderati. I parametri vengono inclusi nel nome predefinito dell&#39;URL quando le immagini vengono consegnate, utilizzando il predefinito. Nella schermata precedente, il parametro `bgc=451B15` è stato aggiunto. In altre parole, è stato aggiunto un colore di sfondo marrone scuro.
+Ricordi in [Anatomia di un URL Dynamic Media](#dm-journey-d) in precedenza, hai letto dell’URL di Dynamic Media e di come viene creato. Il **[!UICONTROL Modificatore immagine]** è la casella di testo in cui è possibile digitare qualsiasi parametro di elaborazione immagine aggiuntivo desiderato. I parametri vengono inclusi nel nome predefinito dell’URL quando le immagini vengono distribuite, utilizzando il predefinito. Nella schermata precedente, il parametro `bgc=451B15` è stato aggiunto. In altre parole, è stato aggiunto un colore di sfondo marrone scuro.
 
-È possibile considerare un predefinito per immagini come una ricetta per le immagini. Fornirà tutte le immagini che utilizzano il preset, in modo costante, ogni volta; sarà lo stesso. Il parametro `&op_brightness=+10` è stato aggiunto anche per aumentare leggermente la luminosità.
+Potete immaginare un predefinito immagine come una ricetta per le immagini. Fornirà tutte le immagini che usano il predefinito, in modo coerente, ogni volta; sarà lo stesso. Il parametro `&op_brightness=+10` per aumentare leggermente la luminosità.
 
-Al termine, salvi il predefinito ed è ora disponibile per tutte le immagini in tuo possesso. In questo caso, vogliamo applicare il _Media_ immagine preimpostata su un&#39;immagine di una ciotola di cioccolato liquido.
+Una volta terminato, salvate il predefinito, che ora è disponibile per tutte le immagini. In questo caso, vogliamo applicare la _Medio_ predefinito immagine di un&#39;immagine di una ciotola di cioccolato liquido.
 
-![Applicazione del predefinito per immagini *Media* per generare un rendering di un’immagine](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
-_Applicazione del predefinito per immagini Media per generare un rendering di un’immagine._
+![Applicazione del predefinito immagine *Medio* per generare una rappresentazione di un&#39;immagine](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
+_Applicazione del predefinito immagine Media per generare una rappresentazione di un&#39;immagine._
 
-Copia l’URL, quindi incollalo nel browser per controllare l’aspetto dell’immagine. [Provate](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}.
+Copiate l&#39;URL, quindi incollatelo nel browser per verificare l&#39;aspetto dell&#39;immagine. [Prova](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}.
 
-Nel browser, noterai il nome del predefinito per immagini _Media_ nel percorso URL completo.
+Nel browser, notate il nome del predefinito immagine _Medio_ nel percorso URL completo.
 
-Potete vedere il tipo di chiarezza che viene visualizzata nell&#39;immagine. Questa qualità è in parte dovuta al modo in cui è stata girata la ciotola di cioccolato. Inoltre, in parte perché con Dynamic Media è possibile archiviare immagini più grandi di quelle consegnate ai canali digitali.
+Potete vedere il tipo di chiarezza che viene visualizzata nell&#39;immagine. Questa qualità è dovuta in parte al modo in cui è stata girata la ciotola di cioccolato. Inoltre, ciò è dovuto in parte al fatto che con Dynamic Media è possibile archiviare immagini di dimensioni maggiori rispetto a quelle distribuite ai canali digitali.
 
-Se tutto sembra soddisfacente per la tua ciotola di cioccolato, incolla l&#39;URL nelle tue pagine web in cui vuoi che l&#39;immagine appaia sul tuo sito web.
+Se tutto sembra soddisfacente per la tua ciotola di cioccolato, incollare l&#39;URL nelle pagine web in cui si desidera che l&#39;immagine appaia sul tuo sito web.
 
-Se guardi di nuovo l&#39;immagine dell&#39;orologio qui sotto, puoi vedere che c&#39;è un `Cart` predefinito per immagini, `Grid` preimpostazione, un `Large` preimpostazione, un `PDP-page` (Pagina dettagli prodotto) e molti altri.
+Se osservi nuovamente l’immagine dell’orologio qui sotto, noterai che è presente un `Cart` predefinito immagine, un `Grid` predefinito, un `Large` predefinito, un `PDP-page` (Product Detail Page) e molti altri.
 
-![Predefiniti immagine statici e dinamici](/help/assets/dynamic-media/assets/dm-image-presets.png)
-_Predefiniti immagine statici e dinamici. L’immagine dell’orologio è stata riprodotta utilizzando l’ `PDP-page` predefinito immagine._
+![Predefiniti per immagini statiche e dinamiche](/help/assets/dynamic-media/assets/dm-image-presets.png)
+_Predefiniti per immagini statiche e dinamiche. L’immagine dell’orologio è stata riprodotta utilizzando `PDP-page` predefinito immagine._
 
-Ma cosa succede se devi cambiare un&#39;immagine sul tuo sito web? Ad esempio, supponi di aver effettuato alcuni test e di aver rilevato che l&#39;immagine di 120 x 120 (il `Cart` immagine preimpostata) non viene ricevuto come si pensava. È necessario ingrandire l’immagine aumentando la larghezza a 175 pixel e aumentando l’altezza a 175 pixel. Tradizionalmente, bisognerebbe andare in Adobe Photoshop e ricreare tutte quelle immagini del carrello. Ma con Dynamic Media, è sufficiente modificare il predefinito immagine aggiornando i valori di Larghezza e Altezza a 175 e salvare il predefinito, come mostrato nell&#39;esempio seguente.
+Ma cosa succede se devi cambiare un&#39;immagine sul tuo sito web? Si supponga, ad esempio, di aver eseguito alcuni test e di aver rilevato che l&#39;immagine di 120 x 120 `Cart` predefinito immagine) non viene ricevuto come pensavi. Per ingrandire l&#39;immagine, aumentate la larghezza a 175 pixel e l&#39;altezza a 175 pixel. In genere, è necessario accedere ad Adobe Photoshop e ricreare tutte le immagini del carrello. Con Dynamic Media, invece, è sufficiente modificare il predefinito immagine aggiornando i valori di Larghezza e Altezza a 175 e salvare il predefinito, come mostrato nell’esempio seguente.
 
-![Modifica di un predefinito per immagini](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
+![Modifica di un predefinito immagine](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _Modifica della larghezza e dell’altezza del `Cart` predefinito immagine._
 
-Dopo aver modificato il predefinito per immagini e aver svuotato la cache, tutte le immagini vengono aggiornate e tutti gli URL utilizzati con quel predefinito, fanno _not_ cambia ovunque. Ciò significa che non sono necessari collegamenti interrotti e nessun reindirizzamento di pagine web.
+Dopo aver modificato il predefinito immagine e aver eliminato la cache, tutte le immagini vengono aggiornate e tutti gli URL utilizzati con tale predefinito, esegui _non_ cambiate ovunque. Ciò significa che non sono necessari collegamenti interrotti e reindirizzamenti alle pagine web.
 
 ## Set di immagini, set 360 gradi e set di file multimediali diversi {#dm-journey-f}
 
-Alcuni degli usi più comuni di Dynamic Media sono la possibilità di creare set di immagini, set 360 gradi e set di file multimediali diversi.
+Alcuni degli utilizzi più comuni di Dynamic Media è la possibilità di creare set di immagini, set 360 gradi e set di file multimediali diversi.
 
-I set di immagini sono in genere costituiti da una serie di risorse di immagini presentate come una singola entità. Questo tipo di set offre agli utenti un’esperienza di visualizzazione integrata, in cui gli utenti possono vedere diverse visualizzazioni di un elemento facendo clic su una miniatura. I set di immagini consentono di presentare viste alternative di qualcosa e il visualizzatore offre strumenti di zoom per esaminare attentamente le immagini. [Visualizzare un set di immagini denominato &quot;In esecuzione&quot; che utilizza il visualizzatore a comparsa](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
+I set di immagini sono in genere costituiti da una serie di risorse di immagini presentate come una singola entità. Questo tipo di set offre agli utenti un’esperienza di visualizzazione integrata, in cui gli utenti possono visualizzare diverse visualizzazioni di un elemento facendo clic su un’immagine di miniatura. I set di immagini consentono di presentare viste alternative di un elemento e il visualizzatore offre strumenti di zoom per esaminare attentamente le immagini. [Visualizzare un set di immagini denominato &quot;In esecuzione&quot; che utilizza il visualizzatore a comparsa](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-Qui in Dynamic Media potete vedere diverse immagini di scarpe da corsa. È una serie di linee di prodotti che le vendite e il marketing desiderano che i clienti visualizzino come una singola presentazione; un set di immagini.
+Qui in Dynamic Media potete vedere diverse immagini di scarpe da corsa. Si tratta di una serie di linee di prodotti che il reparto vendite e marketing desidera che i clienti visualizzino come una singola presentazione, un set di immagini.
 
 ![Creazione di un set di immagini](/help/assets/dynamic-media/assets/dm-create-image-set.png)
-_L&#39;inizio della creazione di un set di immagini._
+_Inizio della creazione di un set di immagini._
 
-Per creare il set di immagini, scegliete **[!UICONTROL Set di immagini]** dal **[!UICONTROL Crea]** menu a discesa. Nel menu sono inoltre disponibili opzioni per creare un **[!UICONTROL Set di file multimediali diversi]**, **[!UICONTROL Set 360 gradi]** e **[!UICONTROL Set carosello]**. I set vengono creati nello stesso modo di un set di immagini.
+Per creare il set di immagini, scegli **[!UICONTROL Set immagini]** dal **[!UICONTROL Crea]** menu a discesa. Si noti che sono disponibili anche opzioni per la creazione di un **[!UICONTROL Set di file multimediali diversi]**, a **[!UICONTROL Set 360 gradi]**, e un **[!UICONTROL Set carosello]**. Questi set vengono creati in modo analogo a un set di immagini.
 
-Un set di file multimediali diversi può contenere immagini, set di campioni, set 360 gradi, video e set di video adattivi. [Provate](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Un set 360 gradi simula l’atto reale di trasformare un oggetto per esaminarlo. I set 360 gradi consentono di visualizzare i dettagli visivi principali da qualsiasi angolo. [Provate](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target=&quot;_blank&quot;}.
+Un set di file multimediali diversi può contenere immagini, set di campioni, set 360 gradi, video e set di video adattivi. [Prova](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Un set 360 gradi simula l&#39;atto reale di girare un oggetto per esaminarlo. I set 360 gradi consentono di visualizzare i dettagli visivi chiave da qualsiasi angolazione. [Prova](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target="_blank"}.
 
 La creazione di un set di immagini è semplice. È sufficiente aggiungere le risorse immagine da includere nel set.
 
 ![Creazione di un set di immagini](/help/assets/dynamic-media/assets/dm-create-image-set-add-assets.png)
-_L’Editor set di immagini consente di aggiungere risorse immagine e riordinarne l’aspetto nel set._
+_L’Editor set di immagini consente di aggiungere risorse immagine e di riordinarne l’aspetto nel set._
 
-È necessario assegnare un nome al set. Scegli attentamente il nome perché non potrai modificarlo in un secondo momento! Nell’esempio precedente, il set è chiamato `Running`. Al termine, salva il set.
+È necessario assegnare un nome al set. Scegli il nome attentamente, poiché non potrai modificarlo in un secondo momento. Nell’esempio precedente, il set è denominato `Running`. Al termine, salvate il set.
 
-Ed ecco la `Running` Set di immagini in Experience Manager Assets.
+Ed ecco il `Running` Set di immagini in Experience Manager Assets.
 
-![Set di immagini in esecuzione in Experience Manager Assets, Vista a schede](/help/assets/dynamic-media/assets/dm-image-set.png)
-_La `Running` Set di immagini in Experience Manager Assets, Vista a schede._
+![Immagine in esecuzione impostata in Experience Manager Assets, Vista a schede](/help/assets/dynamic-media/assets/dm-image-set.png)
+_Il `Running` Immagine impostata in Experience Manager Assets, Vista a schede._
 
-Dopo aver creato un set di immagini, un set di file multimediali diversi, un set 360 gradi o qualsiasi altro supporto interattivo, è necessario vedere come appare e si comporta per un cliente. Dynamic Media dispone di numerosi visualizzatori integrati che consentono di farlo.
+Dopo aver creato un set di immagini, un set di file multimediali diversi, un set 360 gradi o qualsiasi altro file multimediale interattivo, vuoi vedere come si presenta e si comporta per un cliente. Dynamic Media dispone di numerosi visualizzatori incorporati che permettono di fare proprio questo.
 
-Per iniziare, seleziona il set di immagini generato per aprirlo in un’anteprima, come illustrato nell’esempio seguente.
+Si inizia selezionando il set di immagini generato per aprirlo in un&#39;anteprima, come illustrato nell&#39;esempio seguente.
 
-![Il set di immagini in esecuzione nell’anteprima con l’opzione Visualizzatori selezionata](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
-_La `Running` Set di immagini in anteprima con l’opzione Visualizzatori selezionata._
+![Immagine in esecuzione impostata in anteprima con l&#39;opzione Visualizzatori selezionata](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
+_Il `Running` Immagine impostata in anteprima con l&#39;opzione Visualizzatori selezionata._
 
-Nell’anteprima è possibile selezionare i campioni delle scarpe da corsa e ingrandire e ridurre le scarpe. Per applicare un visualizzatore al set, seleziona **[!UICONTROL Visualizzatori]** dal menu a discesa.
+Nell’anteprima puoi selezionare i campioni di scarpe da corsa e ingrandire e ridurre le scarpe. Per applicare un visualizzatore al set, seleziona **[!UICONTROL Visualizzatori]** dal menu a discesa.
 
-![Set di immagini in esecuzione con il visualizzatore a comparsa applicato](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
-_La `Running` Set di immagini con il visualizzatore a comparsa applicato._
+![Set di immagini in esecuzione a cui è applicato il visualizzatore a comparsa](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
+_Il `Running` Set di immagini con il visualizzatore a comparsa applicato._
 
-In questo caso, il `Flyout` visualizzatore selezionato. A questo punto, puoi visualizzare in anteprima il set di immagini nel visualizzatore. Ma è meglio visualizzarlo nel browser, come lo vede un cliente. Seleziona **[!UICONTROL URL]** in basso a sinistra, quindi copia l’URL e incollalo nel browser. [Provate](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target=&quot;_blank&quot;}.
+In questo caso, il `Flyout` visualizzatore selezionato. A questo punto, puoi visualizzare in anteprima il set di immagini nel visualizzatore. Tuttavia, è meglio visualizzarlo nel browser, esattamente come lo vede un cliente. Selezione effettuata **[!UICONTROL URL]** in basso a sinistra, copia l’URL e incollalo nel browser. [Prova](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}.
 
-L’URL singolo consente di utilizzare il set di immagini e il visualizzatore in cui sono necessari sul sito web. Nell&#39;esempio precedente si può notare che **[!UICONTROL Incorpora]** è a destra del pulsante URL. Selezionando **[!UICONTROL Incorpora]**, puoi copiare il codice per questo set di immagini/visualizzatore e aggiungerlo a una pagina web o a un componente Experience Manager Sites.
+Il singolo URL consente di utilizzare il set di immagini e il visualizzatore nel punto desiderato sul sito web. Nell’esempio precedente, potresti aver notato che **[!UICONTROL Incorpora]** si trova a destra del pulsante URL. Selezionando **[!UICONTROL Incorpora]**, è possibile copiare il codice per questo set di immagini/visualizzatore e aggiungerlo a una pagina web o a un componente Experience Manager Sites.
 
-Il visualizzatore a comparsa è un visualizzatore predefinito predefinito di cui è possibile modificare le proprietà. Oppure, proprio come per la creazione di un predefinito per immagini, puoi creare un visualizzatore personalizzato.
+Il visualizzatore a comparsa è un visualizzatore predefinito le cui proprietà possono essere modificate. Oppure, come per la creazione di un predefinito immagine, puoi creare un visualizzatore personalizzato.
 
-Ora, supponendo che al tuo team di vendita e marketing non piaccia il visualizzatore a comparsa. Gli piace la funzione di zoom, ma i clienti vogliono vedere l&#39;effetto di zoom direttamente sulle scarpe. In questo caso, è sufficiente applicare il visualizzatore InlineZoom al set di immagini e copiare e incollare il suo URL nel browser per vedere come si comporta. [Provate](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target=&quot;_blank&quot;}.
+Ora, supponiamo che al tuo team di vendita e marketing non piaccia il visualizzatore a comparsa. Gli piace la funzione di zoom, ma vogliono che i clienti vedano l&#39;effetto zoom direttamente sopra le scarpe. In questo caso, è sufficiente applicare il visualizzatore InlineZoom al set di immagini e copiarne e incollarne l’URL nel browser per vedere come si comporta. [Prova](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
 
-Quando si sposta il puntatore del mouse sulla scarpa, si ingrandisce l&#39;immagine e si possono vedere più dettagli mentre si sposta il puntatore. E il motivo è semplicemente la dimensione dell&#39;immagine che è stata inizialmente caricata in Dynamic Media.
+Spostando il puntatore del mouse sulla scarpa, si ingrandisce l&#39;immagine e si visualizzano maggiori dettagli quando si sposta il puntatore. E il motivo è semplicemente la dimensione dell&#39;immagine che è stata caricata inizialmente in Dynamic Media.
 
-Quando consideri di vivere come un consumatore, o come lavori nel tuo ruolo quotidiano, e mentre vai su siti web diversi, vedi cose come questa. Pensa a come si sta facendo e a come puoi usare la potenza di Dynamic Media nel tuo lavoro e sul sito web della tua azienda.
+Se consideriamo la vita come un consumatore, o come lavori nel tuo ruolo quotidiano, e vai su siti web diversi, vedi cose come questa. Pensate a come viene fatto, e come potete usare la potenza di Dynamic Media nel vostro lavoro e sul sito web della vostra azienda.
 
-Leggete un po&#39; i set di immagini e i visualizzatori. Diamo un&#39;occhiata ad un paio di altri visualizzatori e proviamoli su singole risorse. Per reimpostare il visualizzatore, fai clic sul pulsante **[!UICONTROL Aggiorna]** nell&#39;angolo in basso a sinistra.
+Leggi solo un po&#39; di set di immagini e visualizzatori. Osserviamo un paio di altri visualizzatori e proviamoli con risorse singole. Per reimpostare il visualizzatore, fare clic su **[!UICONTROL Aggiorna]** nell&#39;angolo inferiore sinistro.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* `ZoomVertical_dark` visualizzatore applicato a una risorsa immagine. [Provate](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target=&quot;_blank&quot;}.
-* `Zoom_light` visualizzatore applicato a un’immagine. [Provate](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target=&quot;_blank&quot;}.
+* `ZoomVertical_dark` visualizzatore applicato a una risorsa immagine. [Prova](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target="_blank"}.
+* `Zoom_light` visualizzatore applicato a un&#39;immagine. [Prova](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target="_blank"}.
 
 ## Facoltativo - Ulteriori informazioni
 
-Per saperne di più su ciò che hai appena letto, utilizza i materiali qui sotto per esplorare i concetti in modo più dettagliato. Altrimenti, il Percorso Dynamic Media è completo!
+Per saperne di più su ciò che hai appena letto, usa i materiali qui sotto per approfondire i concetti. In caso contrario, il Percorso Dynamic Media è completo.
 
-_Argomenti dell’Aiuto di Dynamic Media_
+_Argomenti della Guida di Dynamic Media_
 
-* [Come creare i predefiniti per immagini](/help/assets/dynamic-media/image-presets.md)
-* Un elenco di [parametri di elaborazione delle immagini](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) che puoi utilizzare nel campo modificatore immagine quando crei un predefinito per immagini
-* [Come visualizzare in anteprima le risorse](/help/assets/dynamic-media/previewing-assets.md)
-* [Come visualizzare in anteprima le risorse 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Come creare i set di immagini](/help/assets/dynamic-media/image-sets.md)
-* [Come creare set 360 gradi](/help/assets/dynamic-media/spin-sets.md)
+* [Creare predefiniti immagine](/help/assets/dynamic-media/image-presets.md)
+* Un elenco di [parametri di elaborazione delle immagini](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) che potete utilizzare nel campo Modificatore immagine quando create un predefinito immagine
+* [Visualizzare in anteprima le risorse](/help/assets/dynamic-media/previewing-assets.md)
+* [Visualizzare in anteprima le risorse 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Come creare set di immagini](/help/assets/dynamic-media/image-sets.md)
+* [Come creare i set 360 gradi](/help/assets/dynamic-media/spin-sets.md)
 * [Come creare set di file multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Tutorial su Dynamic Media_
 
 * [Utilizzare Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=it)
-* [Libreria dei contenuti di Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (ricerca su _Dynamic Media_)
+* [Libreria di contenuti Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (ricerca il _Dynamic Media_)
 
 _Visualizzatori Dynamic Media_
 
-* [Demo live](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) di ciascun visualizzatore
+* [Demo live](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) di ogni visualizzatore
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

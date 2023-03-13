@@ -1,8 +1,8 @@
 ---
 title: Configurare le restrizioni di caricamento delle risorse
-description: Configura risorse Adobe Experience Manager per limitare il tipo di risorse che gli utenti possono caricare in base al tipo MIME. Consente di evitare caricamenti accidentali di formati indesiderati e file dannosi.
+description: Configura Adobe Experience Manager Assets in modo da limitare il tipo di risorse che gli utenti possono caricare in base al tipo MIME. Aiuta a prevenire caricamenti accidentali di formato indesiderato e file dannosi.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: d2d0d8b0d484d2e5cd2bf44449e7d71d3da98eea
+source-git-commit: 37de66c2b359018c76e7e76c58b1a5700ba7215e
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 4%
@@ -11,48 +11,48 @@ ht-degree: 4%
 
 # Configurare le restrizioni di caricamento delle risorse {#configure-asset-upload-restrictions}
 
-Puoi configurare Risorse Adobe Experience Manager per limitare il tipo di risorse che gli utenti possono caricare in base al tipo MIME.
+Puoi configurare Adobe Experience Manager Assets in modo da limitare il tipo di risorse che gli utenti possono caricare in base al tipo MIME.
 
 >[!IMPORTANT]
 >
->Per impostazione predefinita, Experience Manager Assets consente agli utenti di caricare risorse di tutti i tipi MIME. Tuttavia, puoi configurare le impostazioni per limitare gli utenti a caricare solo file di tipi MIME specifici.
+>Per impostazione predefinita, Experience Manager Assets consente agli utenti di caricare risorse di tutti i tipi MIME. Tuttavia, puoi configurare le impostazioni in modo da limitare gli utenti al caricamento solo di file di tipi MIME specifici.
 
 ## Prerequisiti {#prerequisites-asset-upload-restrictions}
 
-Per configurare le restrizioni di caricamento delle risorse, devi disporre dei privilegi di amministratore.
+Per configurare le restrizioni di caricamento delle risorse è necessario disporre dei privilegi di amministratore.
 
-## Applica restrizioni per il caricamento delle risorse {#apply-restrictions-asset-uploadsssssss}
+## Applicare restrizioni per il caricamento delle risorse {#apply-restrictions-asset-uploadsssssss}
 
 Per configurare [!DNL Experience Manager] per limitare gli utenti al caricamento di file di tipi MIME specifici:
 
-1. Passa a **[!UICONTROL Strumenti > Risorse > Configurazioni risorse]**.
+1. Accedi a **[!UICONTROL Strumenti > Risorse > Configurazioni risorse]**.
 
-1. Fai clic su **[!UICONTROL Restrizioni al caricamento]**.
+1. Clic **[!UICONTROL Limitazioni di caricamento]**.
 
-1. Fai clic su **[!UICONTROL Aggiungi]** per definire i tipi MIME consentiti.
+1. Clic **[!UICONTROL Aggiungi]** per definire i tipi MIME consentiti.
 
-1. Specifica il tipo MIME nella casella di testo. Puoi fare clic su **[!UICONTROL Aggiungi]** per specificare altri tipi MIME consentiti. Puoi anche fare clic su ![icona Elimina](assets/delete-icon.svg) per eliminare qualsiasi tipo MIME dall’elenco.
+1. Specificare il tipo MIME nella casella di testo. Puoi fare clic su **[!UICONTROL Aggiungi]** per specificare altri tipi MIME consentiti. Puoi anche fare clic su ![icona elimina](assets/delete-icon.svg) per eliminare qualsiasi tipo MIME dall&#39;elenco.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
-**Esempio 1: Consenti il caricamento di tutte le immagini e dei file PDF in Experience Manager Assets**
+**Esempio 1: consenti il caricamento di tutte le immagini e dei file PDF in Experience Manager Assets**
 
-Per consentire il caricamento di immagini in tutti i formati e file PDF in Experience Manager Assets, effettua le seguenti impostazioni:
+Per consentire il caricamento di immagini in tutti i formati e file PDF in Experience Manager Assets, effettuare le seguenti operazioni:
 
 ![Restrizioni al caricamento delle risorse](assets/asset-upload-restrictions.png)
 
-`image/*` come il tipo MIME consente il caricamento di immagini in tutti i formati. `application/pdf` poiché il tipo MIME consente il caricamento di file PDF in Experience Manager Assets.
+`image/*` in quanto il tipo MIME consente il caricamento di immagini in tutti i formati. `application/pdf` in quanto il tipo MIME consente il caricamento di file PDF in Experience Manager Assets.
 
 Se tenti di caricare un file non incluso nell’elenco dei tipi MIME consentiti, Experience Manager Assets visualizza il seguente messaggio di errore:
 
-![File limitati](assets/asset-upload-restricted-files.png)
+![File con restrizioni](assets/asset-upload-restricted-files.png)
 
 `Screen Recording 2022-08-31 at 3.36.09 PM.mov` fa riferimento a un nome di file non incluso nei tipi MIME consentiti.
 
-**Esempio 2: Consenti caricamento di formati immagine specifici in Experience Manager Assets**
+**Esempio 2: consenti il caricamento di formati immagine specifici in Experience Manager Assets**
 
-Per aggiungere formati immagine specifici ai tipi MIME consentiti e per limitare il caricamento di tutti gli altri formati di risorse, procedi come segue:
+Per aggiungere formati immagine specifici ai tipi MIME consentiti e limitare il caricamento di tutti gli altri formati di risorse, effettua le seguenti impostazioni:
 
-![Restrizioni alle risorse](assets/asset-restrictions.png)
+![Limitazioni per le risorse](assets/asset-restrictions.png)
 
-In base alle impostazioni illustrate nell’immagine, puoi caricare le immagini nei formati .JPG, .PNG e .GIF in Experience Manager Assets.
+In base alle impostazioni illustrate nell’immagine, puoi caricare in Experience Manager Assets immagini nei formati .JPG, .PNG e .GIF.

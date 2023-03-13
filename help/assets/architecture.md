@@ -1,5 +1,5 @@
 ---
-title: Architettura [!DNL Assets]
+title: Architettura di [!DNL Assets]
 description: Architettura di Adobe Experience Manager Assets as a [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management,Asset Compute Microservices
@@ -12,15 +12,15 @@ ht-degree: 9%
 
 ---
 
-# Architettura delle risorse come [!DNL Cloud Service] soluzione {#assets-architecture}
+# Architettura di Assets as a [!DNL Cloud Service] soluzione {#assets-architecture}
 
-[!DNL Experience Manager Assets] come [!DNL Cloud Service] è basato su [!DNL Adobe Experience Manager] e si confronta bene con l&#39;offerta più recente [!DNL Experience Manager] 6.5. Il [!DNL Cloud Service] offre un&#39;architettura e funzionalità adeguate che offrono un servizio nativo per il cloud. Le modifiche nell’architettura sottostante non consentono che tutte le funzionalità di Experience Manager 6.5 facciano parte del [!DNL Cloud Service].
+[!DNL Experience Manager Assets] as a [!DNL Cloud Service] si basa su [!DNL Adobe Experience Manager] e offre un buon confronto con le offerte più recenti [!DNL Experience Manager] 6.5. Il [!DNL Cloud Service] offre un’architettura e funzionalità adattate per essere un servizio nativo per il cloud. Le modifiche apportate all’architettura sottostante non consentono che tutte le funzionalità di cui all’Experience Manager 6, paragrafo 5, facciano parte del [!DNL Cloud Service].
 
-Per visualizzare una panoramica dell’architettura dei microservizi per le risorse, consulta questo [panoramica dei microservizi per le risorse](asset-microservices-overview.md#asset-microservices-architecture).
+Per una panoramica dell’architettura dei microservizi per le risorse, consulta questa pagina [panoramica dei microservizi per le risorse](asset-microservices-overview.md#asset-microservices-architecture).
 
 >[!MORELIKETHIS]
 >
 >* [Panoramica e novità](/help/assets/overview.md)
->* [Formati di file e tipi MIME supportati](file-format-support.md)
+>* [Formati di file supportati e tipi MIME](file-format-support.md)
 >* [Panoramica dei microservizi per le risorse](asset-microservices-overview.md)
 

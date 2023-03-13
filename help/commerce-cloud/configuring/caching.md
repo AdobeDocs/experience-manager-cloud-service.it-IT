@@ -1,6 +1,6 @@
 ---
 title: Memorizzazione in cache e prestazioni
-description: Scopri le diverse configurazioni disponibili per abilitare GraphQL e la memorizzazione in cache dei contenuti per ottimizzare le prestazioni dell’implementazione commerce.
+description: Scopri le diverse configurazioni disponibili per abilitare GraphQL e il caching dei contenuti per ottimizzare le prestazioni dell’implementazione di e-commerce.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 84%
 
 # Memorizzazione in cache e prestazioni {#caching}
 
-## Memorizzazione in cache di componenti e risposte GraphQL {#graphql}
+## Memorizzazione in cache di risposta di componenti e GraphQL {#graphql}
 
 I componenti core CIF di AEM dispongono già del supporto integrato necessario per memorizzare nella cache le risposte GraphQL per i singoli componenti. Questa funzione può essere utilizzata per ridurre notevolmente il numero di chiamate back-end di GraphQL. È possibile ottenere una memorizzazione efficace nella cache, in particolare per query ripetute come il recupero della struttura delle categorie per un componente di navigazione o il recupero di tutti i valori aggregati/facet disponibili visualizzati sulle pagine di ricerca di prodotto e categoria.
 
@@ -23,7 +23,7 @@ Una volta configurata per un determinato componente, la cache inizia a memorizza
 
 Quando si configura la memorizzazione in cache per i componenti, il nome della cache deve corrispondere al nome dei componenti **proxy** definiti nel progetto.
 
-Prima che il client invii una richiesta GraphQL, verificherà se la **stessa** richiesta GraphQL è già stata memorizzata nella cache e potrebbe restituire la risposta nella cache. Per trovare una corrispondenza, la richiesta GraphQL DEVE corrispondere esattamente, ovvero la query, il nome dell’operazione (se presente), le variabili (se presenti) DEVONO essere tutte uguali alla richiesta memorizzata nella cache. Anche tutte le intestazioni HTTP personalizzate che potrebbero essere impostate DEVONO essere uguali. Ad esempio, Adobe Commerce `Store` L&#39;intestazione DEVE corrispondere.
+Prima che il client invii una richiesta GraphQL, verificherà se la **stessa** richiesta GraphQL è già stata memorizzata nella cache e potrebbe restituire la risposta nella cache. Per trovare una corrispondenza, la richiesta GraphQL DEVE corrispondere esattamente, ovvero la query, il nome dell’operazione (se presente), le variabili (se presenti) DEVONO essere tutte uguali alla richiesta memorizzata nella cache. Anche tutte le intestazioni HTTP personalizzate che potrebbero essere impostate DEVONO essere uguali. Ad esempio, Adobe Commerce `Store` l’intestazione DEVE corrispondere.
 
 ### Esempi {#examples}
 
@@ -41,15 +41,15 @@ Un altro scenario esemplificativo in cui si consiglia di utilizzare la funzione 
 venia/components/structure/navigation:true:10:600
 ```
 
-Quando consideri [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) viene utilizzato. Si noti l’uso del nome proxy del componente `venia/components/structure/navigation` e **non** del nome del componente di navigazione CIF (`core/cif/components/structure/navigation/v1/navigation`).
+Quando si considera [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) viene utilizzato. Si noti l’uso del nome proxy del componente `venia/components/structure/navigation` e **non** del nome del componente di navigazione CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
 La memorizzazione nella cache per altri componenti deve essere definita in base al progetto, in genere in coordinamento con la memorizzazione nella cache configurata a livello di Dispatcher. Non è prevista l’invalidazione attiva di queste cache, pertanto la durata di memorizzazione nella cache deve essere impostata con attenzione. Non esiste un valore universale che vada bene per tutti i possibili progetti e casi di utilizzo. Occorre definire una strategia di caching a livello di progetto che corrisponda meglio ai requisiti del progetto.
 
-## Memorizzazione in cache del dispatcher {#dispatcher}
+## Memorizzazione in cache di Dispatcher {#dispatcher}
 
 La memorizzazione nella cache di pagine o frammenti AEM in [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) è una best practice per qualsiasi progetto AEM. In genere, si basa su tecniche di invalidazione che garantiscono che qualsiasi contenuto modificato in AEM venga aggiornato correttamente in Dispatcher. Si tratta di una funzione fondamentale della strategia di caching di AEM Dispatcher.
 
-Oltre al contenuto CIF puro AEM gestito, in genere una pagina può visualizzare i dati di e-commerce recuperati dinamicamente da Adobe Commerce tramite GraphQL. Anche se la struttura della pagina stessa potrebbe non cambiare mai, il contenuto commerciale potrebbe cambiare, ad esempio, se alcuni dati di prodotto (nome, prezzo, ecc.) modifiche in Adobe Commerce.
+Oltre al contenuto CIF puro gestito dall’AEM, una pagina può in genere visualizzare dati di e-commerce recuperati dinamicamente da Adobe Commerce tramite GraphQL. Anche se la struttura della pagina stessa potrebbe non cambiare mai, il contenuto commerciale potrebbe cambiare, ad esempio, se alcuni dati di prodotto (nome, prezzo, ecc.) modifiche in Adobe Commerce.
 
 Per garantire che le pagine CIF possano essere memorizzate nella cache per un periodo di tempo limitato in AEM Dispatcher, si consiglia quindi di utilizzare [l’invalidazione della cache basata sul tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (o memorizzazione in cache basata su TTL) durante il caching delle pagine CIF in AEM Dispatcher. Questa funzione può essere configurata in AEM utilizzando il pacchetto [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) aggiuntivo.
 
@@ -63,4 +63,4 @@ Con il caching basato su TTL, uno sviluppatore definisce in genere una o più du
 
 - [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Configurazione della cache per GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)

@@ -2,8 +2,8 @@
 title: Variabili di ambiente di Cloud Manager
 description: È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager e fornirle all’ambiente di runtime per l’utilizzo nella configurazione OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
-workflow-type: ht
+source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
+workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 100%
 

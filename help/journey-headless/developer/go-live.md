@@ -3,7 +3,7 @@ title: Come pubblicare con la tua applicazione headless
 description: In questa parte del Percorso per sviluppatori AEM Headless, scopri come distribuire un’applicazione headless in tempo reale prendendo il codice locale nel Git e spostandolo nel Git di Cloud Manager per la pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 100%
 

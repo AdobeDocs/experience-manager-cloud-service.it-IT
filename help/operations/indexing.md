@@ -49,7 +49,7 @@ Una definizione di indice può essere:
 
 1. Un indice preconfigurato. Un esempio è `/oak:index/cqPageLucene-2`.
 1. Una personalizzazione di un indice preconfigurato. Tali personalizzazioni sono definite dal cliente. Un esempio è `/oak:index/cqPageLucene-2-custom-1`.
-1. Un indice completamente personalizzato. Un esempio è `/oak:index/acme.product-1-custom-2`. Per evitare conflitti di denominazione, è necessario che gli indici completamente personalizzati abbiano un prefisso, ad esempio `acme.`
+1. Un indice completamente personalizzato. Un esempio è `/oak:index/acme.product-1-custom-2`. Per evitare conflitti di denominazione, è necessario che gli indici completamente personalizzati abbiano un prefisso, ad esempio, `acme.`
 
 Tieni presente che sia la personalizzazione di un indice predefinito sia gli indici completamente personalizzati devono contenere `-custom-`. Solo gli indici completamente personalizzati devono iniziare con un prefisso.
 
@@ -83,7 +83,7 @@ Le definizioni degli indici sono ora contrassegnate con “custom” e con il nu
 
 * La definizione stessa dell’indice (ad esempio `/oak:index/ntBaseLucene-custom-1`)
 
-Per distribuire un indice personalizzato, la definizione dell’indice (`/oak:index/definitionname`) deve essere consegnata tramite `ui.apps` da Git e il processo di implementazione di Cloud Manager. Nel filtro FileVault, ad esempio: `ui.apps/src/main/content/META-INF/vault/filter.xml`, elencare singolarmente ogni indice personalizzato e personalizzato, ad esempio `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definizione di indice personalizzato verrà quindi memorizzata nel file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, come segue:
+Per distribuire un indice personalizzato, la definizione dell’indice (`/oak:index/definitionname`) deve essere consegnata tramite `ui.apps` da Git e il processo di implementazione di Cloud Manager. Nel filtro FileVault, ad esempio, `ui.apps/src/main/content/META-INF/vault/filter.xml`, elenca singolarmente ogni indice personalizzato, ad esempio `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definizione di indice personalizzato verrà quindi memorizzata nel file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, come segue:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -147,16 +147,16 @@ Una volta aggiunta la nuova definizione dell’indice, la nuova applicazione dev
 
 ### NOTA
 
-Nel caso in cui si osservi il seguente errore nella convalida filevault <br>
+Nel caso in cui si osservi il seguente errore nella convalida di filevault <br>
 `[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
-Quindi puoi seguire uno dei seguenti passaggi per risolvere il problema: <br>
-1. Esegui il downgrade dell&#39;archivio alla versione 1.0.4 e aggiungi quanto segue all&#39;archivio dei file principale :
+A questo punto, puoi seguire uno dei seguenti passaggi per risolvere il problema: <br>
+1. Effettua il downgrade di filevault alla versione 1.0.4 e aggiungi quanto segue al pom di livello principale:
 
 ```xml
 <allowIndexDefinitions>true</allowIndexDefinitions>
 ```
 
-Di seguito è riportato un esempio di dove collocare la configurazione di cui sopra nel riquadro principale.
+Di seguito è riportato un esempio di dove posizionare la configurazione precedente nel pom.
 
 ```xml
 <plugin>
@@ -178,13 +178,13 @@ Di seguito è riportato un esempio di dove collocare la configurazione di cui so
 </plugin>
 ```
 
-1. Disattiva la convalida del tipo di nodo. Imposta la seguente proprietà nella sezione jackrabbit-nodetypes della configurazione del plugin filevault:
+1. Disattiva convalida tipo di nodo. Imposta la seguente proprietà nella sezione jackrabbit-nodetypes della configurazione del plug-in filevault:
 
 ```xml
 <isDisabled>true</isDisabled>
 ```
 
-Di seguito è riportato un esempio di dove collocare la configurazione di cui sopra nel riquadro principale.
+Di seguito è riportato un esempio di dove posizionare la configurazione precedente nel pom.
 
 ```xml
 <plugin>
@@ -272,11 +272,11 @@ Quando Adobe cambia un indice predefinito come “damAssetLucene” o “cqPageL
 
 ### Limitazioni attuali {#current-limitations}
 
-La gestione degli indici è attualmente supportata solo per gli indici di tipo `lucene`con `compatVersion` impostato su `2`. Internamente, altri indici possono essere configurati e utilizzati per le query, ad Elasticsearch indici. Query scritte contro `damAssetLucene` l&#39;indice potrebbe, su AEM as a Cloud Service, infatti essere eseguito su una versione Elasticsearch di questo indice. Questa differenza è invisibile all&#39;utente finale dell&#39;applicazione, tuttavia alcuni strumenti come `explain` report di un indice diverso. Per le differenze tra gli indici Lucene e Elasticsearch, vedi [la documentazione relativa all’Elasticsearch in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non possono e non devono configurare direttamente gli indici Elasticsearch.
+La gestione degli indici è attualmente supportata solo per gli indici di tipo `lucene`, con `compatVersion` imposta su `2`. Internamente, possono essere configurati e utilizzati per le query altri indici, ad esempio gli indici Elasticsearch. Query scritte rispetto al `damAssetLucene` su AEM as a Cloud Service, l&#39;indice potrebbe infatti essere eseguito su una versione Elasticsearch di questo indice. Questa differenza è invisibile all&#39;utente finale dell&#39;applicazione, tuttavia alcuni strumenti come `explain` La funzionalità riporterà un indice diverso. Per le differenze tra gli indici Lucene e Elasticsearch, consulta [la documentazione relativa agli Elasticsearch in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non possono e non devono configurare direttamente gli indici Elasticsearch.
 
-Sono supportati solo gli analizzatori integrati (ovvero quelli forniti con il prodotto). Gli analizzatori personalizzati non sono supportati.
+Sono supportati solo gli analizzatori incorporati (ovvero quelli forniti con il prodotto). Gli analizzatori personalizzati non sono supportati.
 
-Per le migliori prestazioni operative, gli indici non devono essere eccessivamente grandi. La dimensione totale di tutti gli indici può essere utilizzata come guida: Se questo aumenta di oltre il 100% dopo l’aggiunta degli indici personalizzati e dopo la modifica degli indici standard in un ambiente di sviluppo, le definizioni degli indici personalizzati devono essere corrette. AEM as a Cloud Service può impedire la distribuzione di indici che avrebbero un impatto negativo sulla stabilità e sulle prestazioni del sistema.
+Per ottenere le migliori prestazioni operative, gli indici non dovrebbero essere eccessivamente grandi. La dimensione totale di tutti gli indici può essere utilizzata come guida: se aumenta di oltre il 100% dopo l’aggiunta degli indici personalizzati e la regolazione degli indici standard in un ambiente di sviluppo, è necessario regolare le definizioni degli indici personalizzati. AEM as a Cloud Service può impedire la distribuzione di indici che influirebbero negativamente sulla stabilità e sulle prestazioni del sistema.
 
 ### Aggiunta di un indice {#adding-an-index}
 

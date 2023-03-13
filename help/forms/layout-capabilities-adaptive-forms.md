@@ -1,7 +1,7 @@
 ---
 title: Funzionalità di layout di Adaptive Forms
 seo-title: Layout capabilities of Adaptive Forms
-description: Il layout e l'aspetto di Adaptive Forms su vari dispositivi sono regolati dalle impostazioni di layout. Comprendere i vari layout e come applicarli.
+description: Il layout e l’aspetto di Adaptive Forms su vari dispositivi sono regolati dalle impostazioni di layout. Comprendere i vari layout e come applicarli.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Funzionalità di layout di Adaptive Forms {#layout-capabilities-of-adaptive-forms}
 
-[!DNL Adobe Experience Manager] consente di creare un Forms adattivo di facile utilizzo che offre esperienze dinamiche agli utenti finali. Il layout del modulo controlla il modo in cui gli elementi o i componenti vengono visualizzati in un modulo adattivo.
+[!DNL Adobe Experience Manager] consente di creare Forms adattivo di facile utilizzo che offre esperienze dinamiche agli utenti finali. Il layout del modulo controlla il modo in cui gli elementi o i componenti vengono visualizzati in un modulo adattivo.
 
 <!-- ## Prerequisite knowledge {#prerequisite-knowledge}
 
@@ -20,93 +20,93 @@ Before learning about the different layout capabilities of Adaptive Forms, read 
 
 ## Tipi di layout {#types-of-layouts}
 
-Un Modulo adattivo fornisce i seguenti tipi di layout:
+Un modulo adattivo offre i seguenti tipi di layout:
 
-**[!UICONTROL Layout del pannello]** Controlla la modalità di visualizzazione degli elementi o dei componenti all’interno di un pannello su un dispositivo.
+**[!UICONTROL Layout pannello]** Controlla il modo in cui gli elementi o i componenti all&#39;interno di un pannello vengono visualizzati su un dispositivo.
 
-**[!UICONTROL Layout mobile]** Controlla la navigazione di un modulo su un dispositivo mobile. Se la larghezza del dispositivo è pari o superiore a 768 pixel, il layout viene considerato un layout mobile e ottimizzato per un dispositivo mobile.
+**[!UICONTROL Layout dispositivo mobile]** Controlla la navigazione di un modulo su un dispositivo mobile. Se la larghezza del dispositivo è di 768 pixel o più, il layout viene considerato un layout Mobile e ottimizzato per un dispositivo mobile.
 
-**[!UICONTROL Layout barra degli strumenti]** Controlla la posizione dei pulsanti di azione nella barra degli strumenti o nel pannello di un modulo.
+**[!UICONTROL Layout barra degli strumenti]** Controlla il posizionamento dei pulsanti di azione nella barra degli strumenti o nel pannello di un modulo.
 
-Tutti i layout di questi pannelli sono definiti nella `/libs/fd/af/layouts` posizione.
+Tutti questi layout di pannello sono definiti nella `/libs/fd/af/layouts` posizione.
 
-Per modificare il layout di un modulo adattivo, utilizzare la modalità di creazione in [!DNL Experience Manager].
+Per modificare il layout di un modulo adattivo, utilizza la modalità Creazione in [!DNL Experience Manager].
 
 ## [!UICONTROL Layout pannello] {#panel-layout}
 
 Un autore di moduli può associare un layout a ciascun pannello di un modulo adattivo, incluso il pannello principale.
 
-I layout dei pannelli sono disponibili in `/libs/fd/af/layouts/panel` posizione. Tocca il pannello e seleziona ![cmppr1](assets/configure-icon.svg) per visualizzare le proprietà del pannello.
+I layout del pannello sono disponibili all&#39;indirizzo `/libs/fd/af/layouts/panel` posizione. Tocca il pannello e seleziona ![cmppr1](assets/configure-icon.svg) per visualizzare le proprietà del pannello.
 
-![Elenco dei layout dei pannelli per il pannello principale di un modulo adattivo](assets/layouts.png)
+![Elenco dei layout del pannello per il pannello principale di un modulo adattivo](assets/layouts.png)
 
-### [!UICONTROL Reattivo : tutto su una pagina senza navigazione] {#responsive-everything-on-one-page-without-navigation-br}
+### [!UICONTROL Reattivo - tutto su una pagina senza navigazione] {#responsive-everything-on-one-page-without-navigation-br}
 
-Utilizza questo layout del pannello per creare un layout reattivo che si adatta alle dimensioni dello schermo del dispositivo senza necessità di una navigazione specializzata.
+Utilizza questo layout di pannello per creare un layout reattivo che si adatta alle dimensioni dello schermo del dispositivo senza alcuna necessità di navigazione specializzata.
 
-Utilizzando questo layout, è possibile inserire più **[!UICONTROL Modulo adattivo del pannello]** componenti uno dopo l’altro all’interno del pannello.
+Utilizzando questo layout, è possibile inserire più **[!UICONTROL Modulo adattivo pannello]** componenti uno dopo l’altro all’interno del pannello.
 
-![Un modulo con layout reattivo come visualizzato su un piccolo schermo](assets/responsive-layout.png)
+![Un modulo che utilizza il layout dinamico come visualizzato su un piccolo schermo](assets/responsive-layout.png)
 
 ### [!UICONTROL Wizard] {#wizard}
 
-Utilizzare questo layout del pannello per fornire la navigazione guidata all’interno di un modulo. Ad esempio, utilizzare questo layout quando si desidera acquisire informazioni obbligatorie in un modulo mentre gli utenti sono guidati passo dopo passo.
+Utilizza questo layout di pannello per fornire una navigazione guidata all’interno di un modulo. Utilizzare ad esempio questo layout per acquisire informazioni obbligatorie in un modulo guidando gli utenti passo dopo passo.
 
-Utilizza la **[!UICONTROL Modulo adattivo del pannello]** per fornire una navigazione dettagliata all’interno di un pannello. Quando si utilizza questo layout, un utente passa al passaggio successivo solo al completamento del passaggio corrente
+Utilizza il **[!UICONTROL Modulo adattivo pannello]** per una navigazione dettagliata all’interno di un pannello. Quando utilizzi questo layout, un utente passa al passaggio successivo solo dopo aver completato il passaggio corrente
 
 ```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 
-![Un modulo con layout guidato](assets/wizard-layout2.png)
+![Un modulo che utilizza il layout della procedura guidata](assets/wizard-layout2.png)
 
 ### [!UICONTROL Pannello a soffietto] {#layout-for-accordion-design}
 
-Utilizzando questo layout, è possibile inserire il **[!UICONTROL Modulo adattivo del pannello]** in un pannello con navigazione a soffietto. Utilizzando questo layout è possibile creare anche pannelli ripetibili. I pannelli ripetibili consentono di aggiungere o rimuovere dinamicamente i pannelli in base alle esigenze. Puoi definire il numero minimo e il numero massimo di ripetizioni di un pannello. Inoltre, il titolo del pannello può essere determinato dinamicamente, in base alle informazioni fornite negli elementi del pannello.
+Utilizzando questo layout, è possibile inserire **[!UICONTROL Modulo adattivo pannello]** componente in un pannello con navigazione in stile Pannello a soffietto. Utilizzando questo layout, puoi anche creare pannelli ripetibili. I pannelli ripetibili consentono di aggiungere o rimuovere in modo dinamico i pannelli in base alle esigenze. Puoi definire il numero minimo e massimo di ripetizioni di un pannello. Inoltre, il titolo del pannello può essere determinato dinamicamente, in base alle informazioni fornite negli elementi del pannello.
 
-L’espressione Summary può essere utilizzata per mostrare i valori forniti dall’utente finale nel titolo del pannello minimizzato.
+L’espressione di riepilogo può essere utilizzata per mostrare i valori forniti dall’utente finale nel titolo del pannello ridotto a icona.
 
 ![Pannelli ripetibili con layout a soffietto in Forms adattivo](assets/accordion-layout.png)
 
-### [!UICONTROL Layout a schede - le schede vengono visualizzate a sinistra ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Layout a schede: le schede vengono visualizzate a sinistra ]{#tabbed-layout-tabs-appear-on-the-left}
 
-Utilizzando questo layout, è possibile inserire il **[!UICONTROL Modulo adattivo del pannello]** in un pannello con navigazione a schede. Le schede vengono posizionate a sinistra del contenuto del pannello.
+Utilizzando questo layout, è possibile inserire **[!UICONTROL Modulo adattivo pannello]** componente in un pannello con navigazione tramite schede. Le schede vengono posizionate a sinistra del contenuto del pannello.
 
-![Nel layout a schede, le schede vengono visualizzate a sinistra](assets/tabs-on-left.png)
+![Nel layout con schede, le schede vengono visualizzate a sinistra](assets/tabs-on-left.png)
 
 Schede visualizzate a sinistra di un pannello
 
-### [!UICONTROL Layout a schede - le schede vengono visualizzate nella parte superiore] {#tabbed-layout-tabs-appear-on-the-top}
+### [!UICONTROL Layout a schede: le schede vengono visualizzate nella parte superiore] {#tabbed-layout-tabs-appear-on-the-top}
 
-Utilizzando questo layout, è possibile inserire il **[!UICONTROL Modulo adattivo del pannello]** Componente in un pannello con navigazione a schede. Le schede vengono posizionate sopra il contenuto del pannello.
+Utilizzando questo layout, è possibile inserire **[!UICONTROL Modulo adattivo pannello]** Componente in un pannello con navigazione tramite schede. Le schede vengono posizionate sopra il contenuto del pannello.
 
-![Layout a schede in Forms adattivo con schede nella parte superiore](assets/tabs-on-top.png)
+![Layout a schede in Forms adattivo con schede in alto](assets/tabs-on-top.png)
 
-## Layout dei dispositivi mobili {#mobile-layouts}
+## Layout dispositivi mobili {#mobile-layouts}
 
-I layout per dispositivi mobili consentono una navigazione agevole sui dispositivi mobili con schermi relativamente più piccoli. I layout per dispositivi mobili utilizzano stili a schede o a procedura guidata per la navigazione nei moduli. L’applicazione di un layout mobile fornisce un singolo layout per l’intero modulo.
+I layout mobili consentono una navigazione semplice sui dispositivi mobili con schermi relativamente più piccoli. I layout mobili utilizzano gli stili a schede o della procedura guidata per la navigazione dei moduli. L’applicazione di un layout mobile fornisce un unico layout per l’intero modulo.
 
-Questo layout controlla la navigazione tramite una barra di navigazione e un menu di navigazione. Viene visualizzata la barra di navigazione **&lt;** e **>** icona per indicare **[!UICONTROL next]** e **[!UICONTROL precedente]** passaggi di navigazione nel modulo.
+Questo layout controlla la navigazione tramite una barra di navigazione e un menu di navigazione. La barra di navigazione mostra **&lt;** e **>** icona per indicare **[!UICONTROL avanti]** e **[!UICONTROL precedente]** passaggi di navigazione nel modulo.
 
-I layout per dispositivi mobili sono disponibili in `/libs/fd/af/layouts/mobile/` posizione. Per impostazione predefinita, i seguenti layout per dispositivi mobili sono disponibili in Adaptive Forms.
+I layout per dispositivi mobili sono disponibili all’indirizzo `/libs/fd/af/layouts/mobile/` posizione. Per impostazione predefinita, in Adaptive Forms sono disponibili i seguenti layout per dispositivi mobili.
 
-![Elenco dei layout per dispositivi mobili in Adaptive Forms](assets/mobile-navigation.png)
+![Elenco dei layout mobili in Forms adattivo](assets/mobile-navigation.png)
 
-Seleziona la **[!UICONTROL Aggiungi elementi navigabili con layout reattivo al menu mobile]** per visualizzare le opzioni navigabili disponibili per un pannello nel layout Mobile. Le opzioni navigabili sono visibili solo se si seleziona **[!UICONTROL Reattivo]** layout per un pannello.
+Seleziona la **[!UICONTROL Aggiungi elementi navigabili del layout reattivo al menu per dispositivi mobili]** per visualizzare le opzioni navigabili disponibili per un pannello nel layout Mobile. Le opzioni navigabili sono visibili solo se si seleziona **[!UICONTROL Reattivo]** layout di un pannello.
 
-Quando si utilizza un layout mobile, per accedere ai vari pannelli dei moduli è disponibile il menu del modulo. ![aem6forms_form_menu](assets/rail-icon.svg) icona.
+Quando si utilizza un layout Mobile, per accedere ai vari pannelli del modulo tocca il menu del modulo ![aem6forms_form_menu](assets/rail-icon.svg) icona.
 
 ### [!UICONTROL Layout con titoli dei pannelli nell’intestazione del modulo] {#layout-with-panel-titles-in-the-form-header}
 
-Questo layout, come suggerisce il nome, mostra i titoli dei pannelli insieme al menu di navigazione e alla barra di navigazione. Questo layout include anche le icone Successivo e Precedente per la navigazione.
+Questo layout, come suggerisce il nome, mostra i titoli dei pannelli insieme al menu di navigazione e alla barra di navigazione. Questo layout fornisce anche le icone Successivo e Precedente per la navigazione.
 
-![Layout dei dispositivi mobili con titoli dei pannelli nelle intestazioni dei moduli](assets/mobile-layout1.png)
+![Layout mobili con titoli dei pannelli nelle intestazioni dei moduli](assets/mobile-layout1.png)
 
-### [!UICONTROL Layout senza titoli del pannello nell’intestazione del modulo ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Layout senza titoli dei pannelli nell’intestazione del modulo ]{#layout-without-panel-titles-in-the-form-header}
 
-Questo layout, come suggerisce il nome, mostra solo il menu di navigazione e la barra di navigazione senza titoli del pannello. Questo layout include anche le icone Successivo e Precedente per la navigazione.
+Come suggerisce il nome, questo layout mostra solo il menu di navigazione e la barra di navigazione senza i titoli dei pannelli. Questo layout fornisce anche le icone Successivo e Precedente per la navigazione.
 
-![Layout dei dispositivi mobili senza titoli dei pannelli nelle intestazioni dei moduli](assets/mobile-layout2.png)
+![Layout mobili senza titoli dei pannelli nelle intestazioni dei moduli](assets/mobile-layout2.png)
 
 <!-- ## Toolbar layouts {#toolbar-layouts}
 

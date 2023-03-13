@@ -1,11 +1,11 @@
 ---
 title: Note sulla versione 2020.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] Note sulla versione as a Cloud Service per 2020.7.0."
+description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.7.0 as a Cloud Service."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -33,7 +33,7 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 ### Novità in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Gli amministratori possono configurare [!DNL Experience Manager] per richiamare applicazioni personalizzate create utilizzando [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate per casi d’uso complessi. Questo servizio web può generare miniature per diversi tipi di file, rendering di immagini di alta qualità da formati di file di Adobe, codificare video (in futuro), estrarre metadati, estrarre testo completo come precursore dell&#39;indicizzazione ed eseguire una risorsa attraverso tutti i disponibili [!DNL Sensei] servizi. vedere [utilizzare i microservizi per le risorse e i profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Gli amministratori possono configurare [!DNL Experience Manager] per richiamare le applicazioni personalizzate create utilizzando [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate per casi d’uso complessi. Questo servizio web può generare miniature per diversi tipi di file, eseguire il rendering di immagini di alta qualità da formati di file Adobe, codificare video (in futuro), estrarre metadati, estrarre testo completo come precursore per l’indicizzazione ed eseguire una risorsa in tutti i tipi di file disponibili [!DNL Sensei] servizi. vedi [utilizzare i microservizi delle risorse e i profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).
 
 * La configurazione iniziale di [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service è stata migliorata ed è ora più robusta. Fornisce agli amministratori indicazioni sull’avanzamento dei processi.
 
@@ -43,11 +43,11 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 * I modelli di flussi di lavoro creati dai clienti che vengono distribuiti in `/conf/global`[!DNL Cloud Manager] nel progetto Git associato all’ambiente in vengono automaticamente distribuiti in `/var` e sono quindi disponibili in [!DNL Experience Manager]. I modelli di flusso di lavoro dei prodotti in `/libs` che sono stati modificati dai clienti non vengono distribuiti automaticamente in `/var`.
 
-### Bug fissi {#assets-bugs-fixed}
+### Bug corretti {#assets-bugs-fixed}
 
-* La procedura guidata Sposta risorsa non viene caricata come previsto per le risorse incluse nelle raccolte. (CQ-4296756)
-* I valori di `dam:size` e `dam:sha1` sono esclusi dal XMP di ritorno. (CQ-4237355)
-* Quando si annulla la pubblicazione in blocco delle risorse, [!DNL Brand Portal] genera un errore che indica che l’URI della richiesta è troppo lungo. (CQ-4299474)
+* La procedura guidata Sposta risorsa non si carica come previsto per le risorse incluse nelle raccolte. (CQ-4296756)
+* I valori di `dam:size` e `dam:sha1` sono esclusi dal writeback XMP. (CQ-4237355)
+* Quando si annullano in blocco le risorse, [!DNL Brand Portal] genera un errore che suggerisce che l’URI della richiesta è troppo lungo. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -68,7 +68,7 @@ La versione 2.11.0 dei [Componenti core di AEM](https://experienceleague.adobe.c
 * È ora disponibile il supporto di AMP (Accelerated Mobile Pages) per i componenti core. Consente di creare esperienze cliente più veloci, con transizioni di pagina istantanee quando si accede al sito da un risultato di ricerca Google mobile, migliorando il coinvolgimento degli utenti e la SEO (Search Engine Optimization).
 Per ulteriori informazioni, consulta [Supporto AMP per i componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html).
 
-* Compatibilità con la versione 1.0.2 del [Livello dati client di Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html).
+* Compatibilità con la versione 1.0.2 del [Livello dati client di Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it).
 
 * Correzioni di bug e miglioramenti nella qualità del codice.
 
@@ -80,26 +80,26 @@ La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.7.0 è il 9 lugl
 
 ### Novità {#what-is-new-cloud-manager}
 
-* La pagina degli ambienti è stata riprogettata.
+* La pagina Ambienti è stata riprogettata.
 
-* Ora in Cloud Manager gli ambienti che sono stati sospesi presentano uno stato discreto.
+* Ora gli ambienti che sono stati sospesi presentano uno stato discreto in Cloud Manager.
 
-* In ogni ambiente, il numero di variabili dell’ambiente è stato aumentato a 200.
+* Il numero di variabili per ambiente è stato aumentato a 200.
 
 * Le pipeline di Cloud Manager ora supportano variabili e segreti impostati dal cliente.
 
    Per ulteriori informazioni, consulta Variabili delle pipeline.
 
-* Gli archivi Maven privati con associazione a autenticazione sono ora supportati.
+* Ora gli archivi Maven privati vincolati all’autenticazione sono supportati.
 
-* Il contenitore di build di Cloud Manager ora supporta sia Java 8 che Java 11.
-Per ulteriori informazioni, consulta Utilizzo del supporto Java 11 .
+* Ora il contenitore della build di Cloud Manager supporta sia Java 8 sia Java 11.
+Per ulteriori informazioni, consulta Utilizzo del supporto Java 11.
 
 ### Correzioni di bug {#bug-fixes-cm}
 
-* Il collegamento tra Cloud Manager e Developer Console era erroneamente attivo prima che gli ambienti fossero completamente creati.
+* Il collegamento tra Cloud Manager e Console sviluppatori era erroneamente attivo prima che gli ambienti fossero completamente creati.
 
-* Il collegamento diretto da Cloud Manager a Developer Console non mostrava l’opzione per sospendere/riattivare l’ambiente di un programma sandbox.
+* Il collegamento diretto da Cloud Manager a Console sviluppatori non mostrava l’opzione per sospendere/riattivare l’ambiente di un programma sandbox.
 
 * Le opzioni **Annulla** e **Salva** nella pagina di modifica della pipeline non di produzione non erano sempre visibili.
 
@@ -115,7 +115,7 @@ Per ulteriori informazioni, consulta Utilizzo del supporto Java 11 .
 
 ### Problemi noti {#known-issues}
 
-* A causa di una modifica nel modo in cui viene calcolata la copertura del codice, la versione *minima* del plugin Jacoco è ora 0.7.5.201505241946 (rilasciata a maggio 2015). I clienti che si riferiscono esplicitamente a una versione precedente ricevono un messaggio di errore nel processo di qualità del codice.
+* A causa di una modifica nel modo in cui viene calcolata la copertura del codice, la versione *minima* del plugin Jacoco è ora 0.7.5.201505241946 (pubblicata a maggio 2015). I clienti che si riferiscono esplicitamente a una versione precedente ricevono un messaggio di errore nel processo di qualità del codice.
 
 ## Fondamenti di Adobe Experience Manager as a Cloud Service {#cloud-foundation}
 

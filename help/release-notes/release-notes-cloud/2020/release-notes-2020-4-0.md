@@ -49,7 +49,7 @@ Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Ma
 >
 >* [Informazioni su Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Configurazione di Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [Configurazione di Experience Manager per l’utilizzo con Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Configurazione di Experience Manager per l’utilizzo con Asset Link](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Creare un flusso di lavoro in Experience Manager utilizzando i microservizi per le risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
@@ -62,13 +62,13 @@ Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Ma
 * Sono stati introdotti miglioramenti nella pagina di esecuzione della pipeline, che ne facilitano la comprensione. Questi includono la visualizzazione del nome della pipeline (solo per pipeline non di produzione) e del tipo, oltre all’indicazione dello stato della pipeline (In corso, Annullato, Non riuscito).
 * Sono state aggiunte descrizioni per migliorare l’esperienza utente e spiegare perché il pulsante Aggiungi programma/ambiente è disattivato.
 * Gli ambienti con errore possono ora essere eliminati tramite l’interfaccia utente e l’API.
-* Il processo utilizzato per generare password git è stato reso più flessibile per affrontare eventuali problemi nel livello di servizio sottostante.
+* Il processo utilizzato per generare password Git è stato reso più flessibile per affrontare eventuali problemi nel livello di servizio sottostante.
 
 ### Correzioni di bug {#bug-fixes-cloud-manager}
 
-* I collegamenti all’ambiente Stage nella pagina dei dettagli di esecuzione della pipeline non passavano alla posizione corretta in modo regolare.
+* I collegamenti all’ambiente di staging nella pagina dei dettagli di esecuzione della pipeline non passavano alla posizione corretta in modo regolare.
 * Singoli passaggi del processo di creazione dell’ambiente venivano interrotti per timeout prima del necessario, causando errori del processo.
 * La configurazione Maven utilizzata nel contenitore di build è stata aggiornata per evitare deadlock durante il download dei metadati dell’artefatto.
-* In alcuni casi, il passaggio di generazione dell’immagine non eseguiva il download dei pacchetti dei clienti.
+* In alcuni casi, la fase di generazione dell’immagine non eseguiva il download dei pacchetti dei clienti.
 * Alcune condizioni poco frequenti impedivano l’eliminazione degli ambienti.
 * Le notifiche di Experience Cloud non venivano ricevute in modo costante.

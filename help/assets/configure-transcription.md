@@ -69,26 +69,26 @@ Nella scheda **[!UICONTROL IA per la gestione dei contenuti]**, fai clic sul pul
 
 Abilita **[!UICONTROL Creare una trascrizione VTT nella stessa directory]** per creare e memorizzare la rappresentazione della trascrizione (file .vtt) nella stessa cartella in cui si trova la risorsa originale. Le altre rappresentazioni vengono generate anche dal flusso di lavoro di elaborazione delle risorse DAM predefinito, indipendentemente da questa impostazione.
 
-![configurare-servizio di trascrizione](assets/configure-transcription-profile.png)
+![configure-transcription-service](assets/configure-transcription-profile.png)
 
 La figura seguente descrive un profilo video personalizzato creato in Experience Manager Assets.
 
-![configurare-servizio di trascrizione](assets/video-processing-profile.png)
+![configure-transcription-service](assets/video-processing-profile.png)
 
 Il profilo video contiene anche le seguenti configurazioni personalizzate. Consulta la [documentazione del profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md) per informazioni dettagliate su come creare un profilo di elaborazione personalizzato.
 
-![configurare-servizio di trascrizione](assets/video-processing-profile2.png)
+![configure-transcription-service](assets/video-processing-profile2.png)
 
 Ora configuriamo la trascrizione in questo profilo video. Passa alla scheda **[!UICONTROL IA per la gestione dei contenuti]** e fai clic sul pulsante **[!UICONTROL Aggiungi nuovo]**. Includi tutti i file audio e video ed escludi i file di immagine e di applicazione. Abilita **[!UICONTROL Creare una trascrizione VTT nella stessa directory]** e salva la configurazione.
 
-![configurare-servizio di trascrizione](assets/video-processing-profile1.png)
+![configure-transcription-service](assets/video-processing-profile1.png)
 
 Una volta configurato il profilo di elaborazione per la trascrizione di file audio e video, puoi applicarlo alle cartelle utilizzando uno dei seguenti metodi:
 
 * Seleziona una definizione di profilo di elaborazione in **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili di elaborazione]** e utilizza l’azione **[!UICONTROL Applica profilo a cartelle]**. Il browser del contenuto ti consente di passare a una cartella specifica, selezionarla e confermare l’applicazione del profilo.
 * Seleziona una cartella nell’interfaccia utente di Assets e fai clic su **[!UICONTROL Proprietà]** per aprire le proprietà della cartella. Fai clic sulla scheda **[!UICONTROL Elaborazione delle risorse]** e seleziona il profilo di elaborazione appropriato per la cartella dall’elenco **[!UICONTROL Profilo di elaborazione]**. Per salvare le modifiche, fai clic su **[!UICONTROL Salva e chiudi]**.
 
-   ![configurare-servizio di trascrizione](assets/video-processing-profile3.png)
+   ![configure-transcription-service](assets/video-processing-profile3.png)
 
 * Per applicare un profilo di elaborazione, gli utenti possono selezionare cartelle o risorse specifiche nell’interfaccia utente di Assets, quindi selezionare **[!UICONTROL Rielabora risorse]** tra le opzioni disponibili nella parte superiore.
 
@@ -108,17 +108,17 @@ Una volta configurato il profilo di elaborazione per la trascrizione di file aud
 
 Quando si elabora una risorsa video, il [Profilo di elaborazione basato sull’intelligenza artificiale](#configure-processing-profile-for-transcription) genera automaticamente la trascrizione (file .vtt) come rappresentazione insieme alla risorsa originale nella stessa cartella.
 
-![configurare-servizio di trascrizione](assets/transcript1.png)
+![configure-transcription-service](assets/transcript1.png)
 
 Puoi anche vedere la rappresentazione della trascrizione accedendo alle rappresentazioni della risorsa video originale. Per accedere al pannello **[!UICONTROL Rappresentazioni]** seleziona la risorsa video originale e apri la barra a sinistra. È possibile vedere che la rappresentazione della trascrizione (file .vtt) è visibile sotto l’intestazione **[!UICONTROL TRANSCRIPTVTT]**.
 
-![configurare-servizio di trascrizione](assets/transcript.png)
+![configure-transcription-service](assets/transcript.png)
 
 Puoi scaricare la trascrizione (file di testo .vtt) direttamente dalla cartella come una rappresentazione separata della risorsa o dall’interno del pannello **[!UICONTROL Rappresentazioni]** della risorsa originale scaricando tutte le rappresentazioni della risorsa.
 
 Attualmente, Experience Manager non supporta l’anteprima full-text o la modifica nativa di file VTT. Tuttavia, puoi scaricare la rappresentazione della trascrizione e utilizzare qualsiasi editor di testo per modificarla o verificarla. La trascrizione riflette la lingua parlata come un testo in una marca temporale determinata nel video con il punteggio di affidabilità (precisione) della trascrizione.
 
-![configurare-servizio di trascrizione](assets/transcript-text.png)
+![configure-transcription-service](assets/transcript-text.png)
 
 ## Utilizzo della trascrizione in Dynamic Media {#using-transcription-in-dynamic-media}
 
@@ -131,7 +131,7 @@ Consulta anche:
 
 Nell’illustrazione seguente, la parte “caption” nell’URL fa riferimento alla trascrizione (file .vtt). Nel video, il testo parlato (testo trascritto) compare come **[!UICONTROL sottotitolo codificato]** in corrispondenza del tempo appropriato nel video. L’utente può abilitare o disabilitare i sottotitoli mediante il pulsante **[!UICONTROL CC]**.
 
-![configurare-servizio di trascrizione](assets/transcript-example.png)
+![configure-transcription-service](assets/transcript-example.png)
 
 ## Formati di file supportati per la trascrizione {#supported-file-format}
 

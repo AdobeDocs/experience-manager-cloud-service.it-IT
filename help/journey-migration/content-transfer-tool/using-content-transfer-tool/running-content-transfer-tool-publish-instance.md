@@ -13,23 +13,23 @@ ht-degree: 11%
 
 ## Introduzione {#introduction}
 
-Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferire il contenuto dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione di contenuto in un ambiente di pubblicazione. Qualsiasi contenuto sia specificato nel set di migrazione verrà acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author o Publish o in entrambe.
+Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferirlo dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione del contenuto in un ambiente di pubblicazione. Qualsiasi contenuto specificato nel set di migrazione verrà acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author, Publish o entrambe.
 
 >[!NOTE]
->Si consiglia di installare lo strumento Content Transfer (Trasferimento contenuti) durante lo spostamento del contenuto in un’istanza di produzione nell’istanza di authoring di origine per spostare il contenuto nell’istanza di authoring di destinazione e, analogamente, di installare lo strumento Content Transfer (Trasferimento contenuti) nell’istanza di pubblicazione di origine per spostare il contenuto nell’istanza di pubblicazione di destinazione. Vedi [Approccio consigliato](#recommended-approach) per ulteriori informazioni, consulta la sezione seguente.
+>Durante lo spostamento del contenuto in un’istanza di produzione, si consiglia di installare lo strumento Content Transfer (Trasferimento contenuti) nell’istanza di authoring di origine per spostare il contenuto nell’istanza di authoring di destinazione e, analogamente, di installare lo strumento Content Transfer (Trasferimento contenuti) nell’istanza di pubblicazione di origine per spostare il contenuto nell’istanza di pubblicazione di destinazione. Consulta [Approccio consigliato](#recommended-approach) per ulteriori dettagli.
 
 ## Approccio consigliato {#recommended-approach}
 
-Segui l’approccio consigliato come descritto di seguito:
+Segui l’approccio raccomandato come descritto di seguito:
 
-* Utilizza la stessa versione dello strumento Content Transfer (Trasferimento contenuti) utilizzato nell’istanza di authoring.
+* Utilizza la stessa versione dello strumento Content Transfer (Trasferimento contenuti) utilizzata nell’istanza di authoring.
 
 * È necessario migrare un solo nodo di pubblicazione. Deve essere rimosso dal load balancer prima di iniziare l’estrazione.
 
-* Durante l’acquisizione per la pubblicazione, il livello di pubblicazione non viene ridimensionato (a differenza dell’autore).
+* Durante l’acquisizione per la pubblicazione, il livello di pubblicazione non verrà ridotto (a differenza dell’authoring).
 
    >[!IMPORTANT]
-   >Per precauzione, evitare operazioni di scrittura avviate dall’utente, ad esempio:
-   > * Distribuzione dei contenuti da AEM Author as a Cloud Service a Publish in tale ambiente
-   > * Sincronizzazione utente tra istanze di pubblicazione
+   >Come precauzione, evita operazioni di scrittura avviate dall&#39;utente, ad esempio:
+   > * Distribuzione dei contenuti dall’autore as a Cloud Service dell’AEM alla pubblicazione in tale ambiente
+   > * Sincronizzazione utenti tra istanze di pubblicazione
 

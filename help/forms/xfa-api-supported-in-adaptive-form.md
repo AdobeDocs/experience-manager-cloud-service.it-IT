@@ -1,7 +1,7 @@
 ---
-title: Supporto XFA in Forms adattivo basato su XDP
+title: Supporto XFA in Adaptive Forms basato su XDP
 seo-title: XFA support in XDP-based Adaptive Forms
-description: Elenca eventi, proprietà, script e convalida XFA supportati in Forms adattivo.
+description: Elenca gli eventi, le proprietà e gli script XFA supportati e la convalida in Adaptive Forms.
 seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -16,31 +16,31 @@ ht-degree: 7%
 ---
 
 
-# Supporto XFA in Forms adattivo basato su XDP{#xfa-support-in-xdp-based-adaptive-forms}
+# Supporto XFA in Adaptive Forms basato su XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Introduzione {#introduction}
 
-Adaptive Forms supporta vari eventi XFA, proprietà, script e convalide definiti in un file XDP, tra cui:
+Forms adattivo fornisce supporto per vari eventi, proprietà, script e convalide XFA definiti in un file XDP, tra cui:
 
-* Esecuzione di script definiti su eventi nel file XDP.
-* Acquisizione dei valori predefiniti e delle proprietà comportamentali per i campi nel file XDP.
+* Esecuzione degli script definiti sugli eventi nel file XDP.
+* Acquisizione dei valori predefiniti e delle proprietà comportamentali per i campi del file XDP.
 * Esecuzione degli script di convalida definiti nel file XDP.
 
-Quando si crea un modulo adattivo basato su un file XDP, le proprietà, gli eventi e le convalide vengono compilati automaticamente nell’interfaccia utente di creazione del modulo. Tuttavia, gli autori dei moduli possono ignorare alcuni di questi elementi per creare un’esperienza alternativa.
+Quando un modulo adattivo viene creato in base a un file XDP, le proprietà, gli eventi e le convalide vengono compilati automaticamente nell’interfaccia utente per l’authoring dei moduli. Tuttavia, gli autori di moduli possono ignorare alcuni di questi elementi per creare un’esperienza alternativa.
 
-Questo articolo elenca gli eventi XFA supportati, le proprietà e le convalide onorate in Forms adattivo e spiega come sostituirli in Forms adattivo.
+In questo articolo vengono elencati gli eventi, le proprietà e le convalide XFA supportati e premiati in Adaptive Forms e viene spiegato come sostituirli in Adaptive Forms.
 
-## Elementi XFA supportati e loro mappatura in Forms adattivo {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
+## Elementi XFA supportati e relativa mappatura in Adaptive Forms {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### Campi {#fields}
 
-Quando si crea un modulo adattivo utilizzando un file XDP, è possibile trascinare un campo XFA nel modulo adattivo. La tabella seguente elenca il modo in cui i campi XFA vengono mappati ai campi Modulo adattivo.
+Quando un modulo adattivo viene creato utilizzando un file XDP, puoi trascinare un campo XFA sul modulo adattivo. Nella tabella seguente è riportato il mapping dei campi XFA ai campi del modulo adattivo.
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>Campo o contenitore XFA</strong></p> </td>
-   <td><p><strong>Componente Modulo adattivo corrispondente</strong></p> </td>
+   <td><p><strong>Componente modulo adattivo corrispondente</strong></p> </td>
   </tr>
   <tr>
    <td><p>Pulsante </p> </td>
@@ -59,7 +59,7 @@ Quando si crea un modulo adattivo utilizzando un file XDP, è possibile trascina
    <td><p>Selettore data</p> </td>
   </tr>
   <tr>
-   <td><p>Firma</p> </td>
+   <td><p>Disegno a mano</p> </td>
    <td><p>Firma a mano</p> </td>
   </tr>
   <tr>
@@ -95,7 +95,7 @@ Quando si crea un modulo adattivo utilizzando un file XDP, è possibile trascina
    <td><p>Pannello</p> </td>
   </tr>
   <tr>
-   <td><p>Set sottomodulo </p> </td>
+   <td><p>Set di sottomoduli </p> </td>
    <td><p>Pannello</p> </td>
   </tr>
  </tbody>
@@ -103,133 +103,133 @@ Quando si crea un modulo adattivo utilizzando un file XDP, è possibile trascina
 
 ### Proprietà {#properties}
 
-La tabella seguente acquisisce il comportamento dei vari script XFA definiti nei file XDP in Adaptive Forms.
+La tabella seguente acquisisce il comportamento di vari script XFA definiti nei file XDP in Adaptive Forms.
 
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Proprietà dei componenti XFA</strong></p> </td>
-   <td><p><strong>Comportamento corrispondente in Forms adattivo</strong></p> </td>
+   <td><p><strong>Proprietà del componente XFA</strong></p> </td>
+   <td><p><strong>Comportamento corrispondente in Adaptive Forms</strong></p> </td>
   </tr>
   <tr>
    <td><p>somExpression </p> </td>
-   <td><p>Mappata alla proprietà di riferimento Bind (bindRef) in Modulo adattivo.</p> </td>
+   <td><p>Mappato alla proprietà Bind reference (bindRef) in Adaptive Form.</p> </td>
   </tr>
   <tr>
    <td><p>presence (presenza) </p> </td>
-   <td><p>Mappata alla proprietà visibile in Modulo adattivo. È possibile sostituirlo utilizzando l’espressione Visibility.</p> </td>
+   <td><p>Mappato alla proprietà visibile in Modulo adattivo. È possibile sostituirlo utilizzando l'espressione Visibilità.</p> </td>
   </tr>
   <tr>
    <td><p>access </p> </td>
-   <td><p>Mappata alla proprietà abilitata in Modulo adattivo. È possibile sostituirlo utilizzando l'espressione Access.</p> </td>
+   <td><p>Mappato alla proprietà abilitata in Modulo adattivo. È possibile sostituirlo utilizzando l'espressione di Access.</p> </td>
   </tr>
   <tr>
    <td><p>Accessibilità: ruolo </p> </td>
-   <td><p>Mappata alla proprietà role in Modulo adattivo.</p> </td>
+   <td><p>Mappato alla proprietà del ruolo in Modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>Accessibilità: speakPriority </p> </td>
-   <td><p>Mappata alla proprietà speakPriority in Adaptive Form.</p> </td>
+   <td><p>Accessibilità: talkPriority </p> </td>
+   <td><p>Mappato alla proprietà talkPriority in Modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>Accessibilità: speakText</p> </td>
-   <td><p>Mappata al testo di accessibilità personalizzato in Modulo adattivo.</p> </td>
+   <td><p>Accessibilità: talkText</p> </td>
+   <td><p>Mappato al testo personalizzato per l’accessibilità nel modulo adattivo.</p> </td>
   </tr>
   <tr>
    <td><p>Accessibilità: toolTip </p> </td>
-   <td><p>Mappata alla proprietà della descrizione breve in Modulo adattivo.</p> </td>
+   <td><p>Mappato alla proprietà di descrizione breve in Modulo adattivo.</p> </td>
   </tr>
   <tr>
    <td><p>didascalia<em> (tutti i tipi di campo)</em></p> </td>
-   <td><p>Mappata alla proprietà Titolo in Modulo adattivo.</p> </td>
+   <td><p>Mappato alla proprietà Title in Adaptive Form.</p> </td>
   </tr>
   <tr>
    <td><p>displayFormat<em> (tutti i tipi di campo)</em></p> </td>
-   <td><p>Mappata al pattern di visualizzazione in forma adattiva.</p> </td>
+   <td><p>Mappato al pattern di visualizzazione nel modulo adattivo.</p> </td>
   </tr>
   <tr>
    <td><p>rawValue<em> (tutti i tipi di campo)</em></p> </td>
-   <td><p>Mappata alla proprietà value in Modulo adattivo.</p> </td>
+   <td><p>Mappato alla proprietà value in Modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (Casella Di Riepilogo, Casella Di Controllo)</em></p> </td>
-   <td><p>Mappata alla proprietà options in Modulo adattivo. È possibile sostituirlo utilizzando l'espressione Options.</p> </td>
+   <td><p>elementi<em> (Casella di riepilogo, Casella di controllo)</em></p> </td>
+   <td><p>Mappata alla proprietà options in Adaptive Form. È possibile sostituirlo utilizzando l'espressione Opzioni.</p> </td>
   </tr>
   <tr>
    <td><p>maxChar<em> (Campo di testo)</em></p> </td>
-   <td><p>Mappata alla proprietà Numero massimo di caratteri consentiti in Modulo adattivo.</p> </td>
+   <td><p>Mappato alla proprietà Numero massimo di caratteri consentiti in Modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>multilingue<em> (Campo di testo)</em></p> </td>
-   <td><p>Mappata alla proprietà Consenti righe multiple in Modulo adattivo.</p> </td>
+   <td><p>multiriga<em> (Campo di testo)</em></p> </td>
+   <td><p>Mappato alla proprietà Allow multiple lines (Consenti più righe) in Adaptive Form (Modulo adattivo).</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (Campo numerico, Campo decimale)</em></p> </td>
-   <td><p>Mappata alla proprietà Frac cifre in Modulo adattivo.</p> </td>
+   <td><p>fracDigit<em> (Campo Numerico, Campo Decimale)</em></p> </td>
+   <td><p>Mappato alla proprietà Frac digits in Adaptive Form.</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em> (Campo numerico, Campo decimale)</em></p> </td>
-   <td><p>Mappata alla proprietà Cifre lead in Modulo adattivo.</p> </td>
+   <td><p>leadDigit<em> (Campo Numerico, Campo Decimale)</em></p> </td>
+   <td><p>Mappato alla proprietà Cifre lead in Modulo adattivo.</p> </td>
   </tr>
   <tr>
    <td><p>multiSelect<em> (Casella di riepilogo)</em></p> </td>
-   <td><p>Mappata alla proprietà Permette più selezioni in Modulo adattivo.</p> </td>
+   <td><p>Mappato su Consente la selezione di più proprietà in Modulo adattivo.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Script {#scripts}
 
-La tabella seguente acquisisce il comportamento dei vari script XFA definiti nel file XDP in Adaptive Forms.
+La tabella seguente acquisisce il comportamento di vari script XFA definiti nel file XDP in Adaptive Forms.
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>Eventi script XFA</strong></p> </td>
-   <td><p><strong>Comportamento corrispondente in Forms adattivo</strong></p> </td>
+   <td><p><strong>Comportamento corrispondente in Adaptive Forms</strong></p> </td>
   </tr>
   <tr>
    <td><p>initialize </p> </td>
-   <td><p>Questo script viene eseguito in fase di runtime e non può essere ignorato in Modulo adattivo.</p> </td>
+   <td><p>Questo script viene eseguito in fase di runtime e non può essere sostituito in un modulo adattivo.</p> </td>
   </tr>
   <tr>
    <td><p>calculate</p> </td>
-   <td><p>Mappata all’espressione Calculate in Modulo adattivo.</p> </td>
+   <td><p>Mappato all’espressione Calculate in Adaptive Form.</p> </td>
   </tr>
   <tr>
    <td><p>validate </p> </td>
-   <td><p>Mappata all'espressione Validation in Modulo adattivo.</p> </td>
+   <td><p>Mappato all’espressione di convalida nel modulo adattivo.</p> </td>
   </tr>
   <tr>
    <td><p>validationState </p> </td>
-   <td><p>Questo script viene eseguito in fase di runtime e non può essere ignorato in Modulo adattivo.<br /> </p> </td>
+   <td><p>Questo script viene eseguito in fase di runtime e non può essere sostituito in un modulo adattivo.<br /> </p> </td>
   </tr>
   <tr>
    <td><p>exit </p> </td>
-   <td><p>Questo script viene eseguito in fase di runtime e non può essere ignorato in Modulo adattivo.</p> </td>
+   <td><p>Questo script viene eseguito in fase di runtime e non può essere sostituito in un modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>fai clic su (campi pulsante)</p> </td>
-   <td><p>Mappata all’espressione Click del pulsante.</p> </td>
+   <td><p>clic (campi pulsante)</p> </td>
+   <td><p>Mappato all'espressione Click del pulsante.</p> </td>
   </tr>
   <tr>
-   <td><p>Supporto per script sul lato server</p> </td>
-   <td><p>Questo script viene eseguito in fase di runtime e non può essere ignorato in Modulo adattivo.</p> </td>
+   <td><p>Supporto per script lato server</p> </td>
+   <td><p>Questo script viene eseguito in fase di runtime e non può essere sostituito in un modulo adattivo.</p> </td>
   </tr>
   <tr>
    <td><p>Supporto per i servizi web</p> </td>
-   <td><p>Questo script viene eseguito in fase di runtime e non può essere ignorato in Modulo adattivo.</p> </td>
+   <td><p>Questo script viene eseguito in fase di runtime e non può essere sostituito in un modulo adattivo.</p> </td>
   </tr>
   <tr>
    <td><p>Modifica (campo scarabocchio, pulsante di scelta, casella di controllo)</p> </td>
-   <td><p>Questo script viene eseguito in fase di runtime e non può essere ignorato in Modulo adattivo.</p> </td>
+   <td><p>Questo script viene eseguito in fase di runtime e non può essere sostituito in un modulo adattivo.</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Convalida {#validations}
+### Convalide {#validations}
 
-Nella tabella seguente viene illustrato come le convalide XFA vengono associate alle convalide in Forms adattivo.
+La tabella seguente acquisisce il mapping delle convalide XFA alle convalide in Adaptive Forms.
 
 <table>
  <tbody>
@@ -242,7 +242,7 @@ Nella tabella seguente viene illustrato come le convalide XFA vengono associate 
    <td><p>validatePictureClause</p> </td>
   </tr>
   <tr>
-   <td><p>Messaggio pattern convalida (formatTestMessage)</p> </td>
+   <td><p>Messaggio modello di convalida (formatTestMessage)</p> </td>
    <td><p>validatePictureMessage</p> </td>
   </tr>
   <tr>
@@ -258,7 +258,7 @@ Nella tabella seguente viene illustrato come le convalide XFA vengono associate 
    <td><p>validateExp</p> </td>
   </tr>
   <tr>
-   <td><p>Messaggio script convalida (scriptTestMessage)</p> </td>
+   <td><p>Messaggio script di convalida (scriptTestMessage)</p> </td>
    <td><p>validateMessage</p> </td>
   </tr>
  </tbody>
@@ -266,5 +266,5 @@ Nella tabella seguente viene illustrato come le convalide XFA vengono associate 
 
 >[!NOTE]
 >
->Non è possibile ignorare la proprietà obbligatoria per i pulsanti di scelta Modulo adattivo e il gruppo di caselle di controllo associati ai pulsanti di controllo XFA.
+>Non è possibile ignorare la proprietà obbligatoria per il pulsante di opzione e il gruppo di caselle di controllo Moduli adattivi associati a pulsanti di controllo XFA.
 

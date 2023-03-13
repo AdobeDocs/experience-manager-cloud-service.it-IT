@@ -2,7 +2,7 @@
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redigere e utilizzare contenuti indipendenti dalla pagina.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 97%
@@ -20,7 +20,7 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 >[!NOTE]
 >
 >I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sono funzioni diverse in AEM:
->* **Frammenti di contenuto** sono contenuti editoriali, con definizione e struttura, ma senza design e/o layout visivi aggiuntivi. Possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date.
+>* **Frammenti di contenuto** sono contenuti editoriali, con definizione e struttura, ma senza progettazione visiva e/o layout aggiuntivi. Possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.

@@ -2,7 +2,7 @@
 title: Regole per la qualità del codice personalizzato
 description: Questa pagina descrive le regole per la qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice dei team tecnici di Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 2935338b847f7e852dfd31c93a61e737e8a3ec80
+source-git-commit: 0b71e15c956cd39907440be319347bd1a749eb0b
 workflow-type: tm+mt
 source-wordcount: '3485'
 ht-degree: 100%

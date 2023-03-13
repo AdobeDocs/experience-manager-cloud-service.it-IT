@@ -1,6 +1,6 @@
 ---
-title: Incorporato [!DNL AEM Forms] Gruppi as a Cloud Service
-description: Elenco dei gruppi di utenti predefiniti e delle autorizzazioni assegnate a ciascun gruppo
+title: Integrato [!DNL AEM Forms] Gruppi as a Cloud Service
+description: Elenco dei gruppi di utenti e delle autorizzazioni predefiniti assegnati a ciascun gruppo
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 5%
 
 # Gruppi e autorizzazioni {#aem-forms-on-osgi-groups-and-privileges}
 
-È possibile [creare gruppi](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) e assegna politiche e [utenti](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) ai gruppi. Questi criteri controllano le autorizzazioni degli utenti che fanno parte del gruppo.
+È possibile [creare gruppi](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) e assegnare criteri e [utenti](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) ai gruppi. Questi criteri controllano le autorizzazioni degli utenti che fanno parte del gruppo.
 
-Una volta effettuata la configurazione [!DNL AEM Forms] as a Cloud Service, i gruppi elencati nella tabella seguente, come [!DNL forms-users] e forms-power-user sono automaticamente disponibili per l&#39;assegnazione:
+Una volta effettuata la configurazione [!DNL AEM Forms] as a Cloud Service, i gruppi elencati nella tabella seguente, ad esempio [!DNL forms-users] e forms-power-user, sono automaticamente disponibili per l&#39;assegnazione:
 
 <table>
  <tbody>
@@ -25,9 +25,9 @@ Una volta effettuata la configurazione [!DNL AEM Forms] as a Cloud Service, i gr
    <td>[!DNL forms-users] <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>Creare, visualizzare in anteprima, pubblicare e inviare Adaptive Forms</li> 
+     <li>Creare, visualizzare in anteprima, pubblicare e inviare Forms adattivo</li> 
     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> -->
-     <li>Caricare le risorse in un’istanza AEM</li> 
+     <li>Caricare risorse in un’istanza AEM</li> 
      <li>Creare temi</li> 
     </ul> </td> 
   </tr>
@@ -35,12 +35,12 @@ Una volta effettuata la configurazione [!DNL AEM Forms] as a Cloud Service, i gr
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
-     <li>Creare, visualizzare in anteprima, pubblicare e inviare Adaptive Forms</li> 
+     <li>Creare, visualizzare in anteprima, pubblicare e inviare Forms adattivo</li> 
      <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
      <li>Create scripts for Adaptive Forms using code editor</li> -->
-     <li>Caricare le risorse inclusi gli script</li> 
+     <li>Caricare risorse, inclusi script</li> 
      <li>Creare temi</li> 
-     <li>Importa pacchetti contenenti XDP</li> 
+     <li>Importare pacchetti contenenti XDP</li> 
     </ul> </td> 
   </tr>
   <!-- <tr>
@@ -55,7 +55,7 @@ Una volta effettuata la configurazione [!DNL AEM Forms] as a Cloud Service, i gr
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>Creare e visualizzare in anteprima Adaptive Forms <!-- or interactive communications --> modelli</li> 
+     <li>Creazione e anteprima di Adaptive Forms <!-- or interactive communications --> modelli</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -95,7 +95,7 @@ Una volta effettuata la configurazione [!DNL AEM Forms] as a Cloud Service, i gr
     <ul> 
      <!-- <li>Configure PDF Generator</li> --> 
      <!-- <li>Configure Watched folder</li> -->
-     <li>Gestione delle applicazioni del flusso di lavoro</li> 
+     <li>Gestire le applicazioni del flusso di lavoro</li> 
     </ul> </td> 
   </tr>
  </tbody>

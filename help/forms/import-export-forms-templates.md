@@ -1,7 +1,7 @@
 ---
 title: Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse
 seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
-description: Stai cercando di migrare da e verso le istanze di AEM risorse e Forms adattivi? Scopri come importare ed esportare Forms adattivo, PDF forms, temi e altre risorse di supporto da un’ [!DNL AEM Forms] istanza.
+description: Desideri migrare risorse e Forms adattivi da e verso istanze AEM? Scopri come importare ed esportare Forms adattivo, PDF forms, temi e altre risorse di supporto da un [!DNL AEM Forms] dell'istanza.
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
@@ -14,24 +14,24 @@ ht-degree: 2%
 
 # Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse{#importing-and-exporting-assets-to-aem-forms}
 
-È possibile spostare Forms adattivo e le risorse correlate, come i temi dei moduli adattivi, i modelli di dati dei moduli adattivi, i frammenti di documento e i PDF forms tra [!DNL AEM Forms] istanze. Puoi importare ed esportare le risorse in un pacchetto CRX o in formati di file binari.
+È possibile spostare Forms adattivo e le risorse correlate, ad esempio i temi dei moduli adattivi, i modelli di dati dei moduli, i modelli di moduli adattivi, i frammenti di documento e i PDF forms tra [!DNL AEM Forms] istanze. Potete importare ed esportare le risorse in formato pacchetto CRX o file binario.
 
-Quando si esporta un modulo adattivo, i criteri dei contenuti e i modelli non vengono esportati. Utilizzo [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) per esportare tali beni.
+Quando si esporta un modulo adattivo, i criteri e i modelli di contenuto non vengono esportati. Utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) per esportare tali risorse.
 
 ## Scaricare Forms adattivo, PDF forms o risorse correlate {#download-forms-amp-documents-assets}
 
-Per scaricare moduli o risorse correlate:
+Per scaricare i moduli o le risorse correlate:
 
-1. Accedi al tuo [!DNL AEM Forms] istanza.
+1. Accedi al tuo [!DNL AEM Forms] dell&#39;istanza.
 1. Tocca **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > **[!UICONTROL Navigazione]** ![bussola](assets/Smock_Compass_18_N.svg) icona > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona le risorse e tocca il **[!UICONTROL Scarica]** icona.
-1. In Scarica risorse , scegli una delle seguenti opzioni e tocca **[!UICONTROL Scarica]**.
+1. In Scarica risorse, scegli una delle seguenti opzioni e tocca **[!UICONTROL Scarica]**.
 
-   * **Scarica come pacchetto CRX:** Utilizza l’opzione per scaricare e spostare tutte le risorse selezionate e le dipendenze correlate da un [!DNL AEM Forms] istanza a un&#39;altra. Scarica tutte le risorse e le cartelle come pacchetto CRX, inclusi i moduli creati in AEM (Forms adattivo e frammenti di modulo adattivo), i set di moduli, il modello di dati del modulo, i modelli di moduli, i documenti PDF e le risorse di riferimento (XSD e immagini).
-Il vantaggio di scaricare le risorse come pacchetto è che scarica anche i riferimenti dalle risorse selezionate. Ad esempio, se si dispone di un Modulo adattivo che utilizza un modello di modulo, XSD e un’immagine. Quando si seleziona questo modulo adattivo e lo si scarica come pacchetto, il pacchetto scaricato contiene anche il modello di modulo, XSD e l’immagine. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa.
+   * **Scarica come pacchetto CRX:** Utilizza l’opzione per scaricare e spostare tutte le risorse selezionate e le relative dipendenze da un [!DNL AEM Forms] a un&#39;altra. Scarica tutte le risorse e le cartelle come pacchetto CRX, inclusi i moduli creati in AEM (Forms adattivo e frammenti di moduli adattivi), i set di moduli, il modello di dati del modulo, i modelli di modulo, i documenti PDF e le risorse di riferimento (XSD e immagini).
+Il vantaggio di scaricare le risorse come pacchetto è che viene scaricato anche il riferimento dalle risorse selezionate. Ad esempio, se disponi di un modulo adattivo che utilizza un modello di modulo, XSD e un’immagine. Quando selezioni questo modulo adattivo e lo scarichi come pacchetto, il pacchetto scaricato contiene anche il modello del modulo, XSD e l’immagine. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa.
 
-   * **Scarica le risorse come file binari:** Utilizzare l’opzione per scaricare solo i modelli di modulo (XDP), i PDF forms (PDF), il documento (PDF) e le risorse (immagini, schemi, fogli di stile). Puoi modificare queste risorse con applicazioni esterne. Scarica come file zip le risorse che hanno binari, come immagini, PDF e altri formati supportati.
-Non è possibile scaricare Forms adattivo, frammenti di modulo adattivi, temi e set di moduli con **[!UICONTROL Scaricare le risorse come file binari]** opzione . Per scaricare queste risorse, utilizza **[!UICONTROL Scarica come pacchetto CRX]** opzione .
+   * **Scaricate le risorse come file binari:** Utilizza l’opzione per scaricare solo modelli di modulo (XDP), PDF forms (PDF), documento (PDF) e risorse (immagini, schemi, fogli di stile). Puoi modificare queste risorse con applicazioni esterne. Scarica come file .zip le risorse con file binari, come immagini, PDF e altri formati supportati.
+Non è possibile scaricare Forms adattivo, frammenti di moduli adattivi, temi e set di moduli con **[!UICONTROL Scarica risorse come file binari]** opzione. Per scaricare queste risorse, utilizza **[!UICONTROL Scarica come pacchetto CRX]** opzione.
 
    Le risorse selezionate vengono scaricate come archivio (file .zip).
 
@@ -41,22 +41,22 @@ Non è possibile scaricare Forms adattivo, frammenti di modulo adattivi, temi e 
 
 ## Caricare Forms adattivo, PDF forms o risorse correlate {#upload-forms-amp-documents-assets}
 
-Puoi caricare i tipi di risorse supportati singolarmente o come archivio ZIP. Per un file ZIP, vengono visualizzati i percorsi relativi di tutte le risorse supportate. Le risorse non supportate all&#39;interno dello ZIP vengono ignorate e non elencate. Tuttavia, se l’archivio ZIP contiene solo le risorse non supportate, viene visualizzato un messaggio di errore invece della finestra di dialogo a comparsa.
+Puoi caricare i tipi di risorse supportati singolarmente o come archivio ZIP. Per un file ZIP, vengono visualizzati i percorsi relativi di tutte le risorse supportate. Le risorse non supportate nel file ZIP vengono ignorate e non elencate. Tuttavia, se l’archivio ZIP contiene solo le risorse non supportate, viene visualizzato un messaggio di errore al posto della finestra di dialogo a comparsa.
 Per caricare un modulo o una risorsa correlata:
 
-1. Accedi al tuo [!DNL AEM Forms] istanza.
+1. Accedi al tuo [!DNL AEM Forms] dell&#39;istanza.
 1. Tocca **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > **[!UICONTROL Navigazione]** ![bussola](assets/Smock_Compass_18_N.svg) icona > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Tocca **[!UICONTROL Crea]** > **[!UICONTROL Caricamento file]**. Viene visualizzata una finestra di dialogo.
-1. Nella finestra di dialogo, sfoglia e seleziona il pacchetto o l’archivio da importare. È inoltre possibile selezionare altri tipi di file supportati. Tocca **[!UICONTROL Apri]**. La cartella o il nome del file selezionato non deve includere caratteri speciali.
+1. Nella finestra di dialogo, sfoglia e seleziona il pacchetto o l’archivio da importare. Puoi anche selezionare altri tipi di file supportati. Tocca **[!UICONTROL Apri]**. La cartella o il nome del file selezionato non deve contenere caratteri speciali.
 
    Nella finestra di dialogo, verifica i dettagli delle risorse caricate e tocca **[!UICONTROL Carica]**.
 
-   Se carichi una risorsa di moduli esistente, la risorsa viene aggiornata.
+   Se carichi una risorsa Forms esistente, la risorsa viene aggiornata.
 
    >[!NOTE]
    >
-   > * Quando un nome è in conflitto con tipi di risorse diversi, il caricamento di un pacchetto non sostituisce la gerarchia di cartelle esistente. Ad esempio, se disponi di un modulo adattivo denominato &quot;Training&quot; in posizione /content/dam/formsanddocuments su un server. Scarica il modulo adattivo e caricalo su un altro server. Il secondo server ha anche una cartella denominata &#39;Training&#39; nella stessa posizione /content/dam/formsanddocuments. Il caricamento non riesce.
-   > * Solo un membro del `form-power-user` gruppo può caricare file XDP.
+   > * Quando un nome è in conflitto con tipi di risorse diversi, il caricamento di un pacchetto non sostituisce la gerarchia di cartelle esistente. Ad esempio, se disponi di un modulo adattivo denominato &quot;Training&quot; nella posizione /content/dam/formsanddocuments su un server. Scarica il modulo adattivo e carica il modulo su un altro server. Il secondo server dispone inoltre di una cartella denominata Training nella stessa posizione /content/dam/formsanddocuments. Caricamento non riuscito.
+   > * Solo un membro del `form-power-user` Il gruppo può caricare file XDP.
 
 
 
@@ -66,17 +66,17 @@ Puoi esportare i temi in [!DNL AEM Forms] che puoi utilizzare in altri progetti 
 
 Per scaricare un tema:
 
-1. Accedi al tuo [!DNL AEM Forms] istanza.
+1. Accedi al tuo [!DNL AEM Forms] dell&#39;istanza.
 1. Tocca **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > **[!UICONTROL Navigazione]** ![bussola](assets/Smock_Compass_18_N.svg) icona > **[!UICONTROL Forms]** > **[!UICONTROL Temi]**.
 1. Seleziona il tema e tocca **[!UICONTROL Scarica]**. Il tema viene scaricato come archivio (file .zip).
 
-## Caricare un tema {#uploading-a-theme}
+## Carica un tema {#uploading-a-theme}
 
-È possibile caricare e utilizzare i temi creati da altri nei moduli. Per caricare un tema:
+È possibile caricare e utilizzare i temi creati da altri utenti nei moduli. Per caricare un tema:
 
 1. Ad Experience Manager, passa a **[!UICONTROL Forms]** > **[!UICONTROL Temi]**.
 1. Nella pagina Temi fare clic su **[!UICONTROL Crea]** > **[!UICONTROL Caricamento file]**.
-1. Nel prompt Caricamento file, sfoglia e seleziona un pacchetto tema sul computer e fai clic su **[!UICONTROL Carica]**. Il tema caricato è disponibile nella pagina dei temi.
+1. Nella richiesta di caricamento file, individua e seleziona un pacchetto di temi sul computer e fai clic su **[!UICONTROL Carica]**. Il tema caricato è disponibile nella pagina dei temi.
 
 <!-- ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
 
@@ -148,47 +148,47 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
    >
    >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. -->
 
-## Esportare un’applicazione di flusso di lavoro {#export-a-workflow-application}
+## Esportare un’applicazione del flusso di lavoro {#export-a-workflow-application}
 
-Puoi utilizzare il gestore dei pacchetti per esportare le applicazioni del flusso di lavoro. La procedura è la seguente:
+È possibile utilizzare Gestione pacchetti per esportare applicazioni flusso di lavoro. La procedura è descritta di seguito:
 
-1. Apri [!DNL AEM Forms] gestore dei pacchetti. L&#39;URL del gestore dei pacchetti è `https://[server]:[port]/crx/packmgr`.
-1. Fai clic su **[!UICONTROL Crea pacchetto]**. La **[!UICONTROL Nuovo pacchetto]** viene visualizzata la finestra di dialogo.
-1. Specifica il nome, la versione e il gruppo del pacchetto. Fai clic su **[!UICONTROL OK]**.
-1. Fai clic su **[!UICONTROL Modifica]** e aprire **[!UICONTROL Filtri]** scheda . Fai clic su **[!UICONTROL Aggiungi filtro]**. Specifica il percorso dell’applicazione del flusso di lavoro. Ad esempio, /etc/fd/dashboard/startpoints/homemortgage. Fai clic su **[!UICONTROL Aggiungi regola]**.
+1. Apri [!DNL AEM Forms] gestione pacchetti. L’URL del gestore pacchetti è `https://[server]:[port]/crx/packmgr`.
+1. Clic **[!UICONTROL Crea pacchetto]**. Il **[!UICONTROL Nuovo pacchetto]** viene visualizzata.
+1. Specificare il nome, la versione e il gruppo del pacchetto. Fai clic su **[!UICONTROL OK]**.
+1. Clic **[!UICONTROL Modifica]** e apri **[!UICONTROL Filtri]** scheda. Clic **[!UICONTROL Aggiungi filtro]**. Specifica il percorso dell’applicazione del flusso di lavoro. Ad esempio, /etc/fd/dashboard/startpoints/homemortgage. Clic **[!UICONTROL Aggiungi regola]**.
 
-1. Apri la scheda **[!UICONTROL Avanzate.]** Seleziona **[!UICONTROL Unisci]** o **[!UICONTROL Sovrascrittura]** nel campo Gestione ACL. Fai clic su **[!UICONTROL Salva]**.
-1. Fai clic su **[!UICONTROL Crea]** per creare il pacchetto.
+1. Apri la scheda **[!UICONTROL Avanzate.]** Seleziona **[!UICONTROL Unisci]** o **[!UICONTROL Sovrascrivere]** nel campo Gestione ACL. Fai clic su **[!UICONTROL Salva]**.
+1. Clic **[!UICONTROL Genera]** per creare il pacchetto.
 
-   Una volta generato il pacchetto, puoi scaricarlo e importarlo nell’altro server. L&#39;applicazione del flusso di lavoro viene visualizzata sul server in cui viene caricato il pacchetto.
+   Una volta creato il pacchetto, è possibile scaricarlo e importarlo nell&#39;altro server. L’applicazione del flusso di lavoro viene visualizzata sul server in cui viene caricato il pacchetto.
 
    >[!NOTE]
    >
-   >Affinché l’applicazione del flusso di lavoro funzioni correttamente, esporta anche il corrispondente modello di modulo adattivo e di flusso di lavoro con l’applicazione di lavoro.
+   >Affinché l’applicazione del flusso di lavoro funzioni correttamente, esporta anche il modulo adattivo e il modello di flusso di lavoro corrispondenti con l’applicazione di lavoro.
 
 ## Utilizzare le cartelle per organizzare Forms adattivo, PDF forms e risorse correlate  {#folders-and-organizing-assets}
 
-È possibile utilizzare le cartelle per disporre e organizzare le risorse. L’organizzazione di documenti e risorse in una cartella consente di raggruppare i file per facilitarne la gestione. È possibile selezionare una cartella e scegliere di scaricarla o eliminarla. Per creare una cartella, completa i passaggi seguenti:
+Puoi utilizzare le cartelle per organizzare e disporre le risorse. L’organizzazione di documenti e risorse in una cartella consente di raggruppare i file per semplificarne la gestione. Puoi selezionare una cartella e scegliere se scaricarla o eliminarla. La procedura seguente illustra come creare una cartella:
 
 ### Crea una cartella . {#create-a-folder}
 
-1. Accedi al tuo [!DNL AEM Forms] istanza.
-1. Tocca Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > navigazione ![bussola](assets/Smock_Compass_18_N.svg) icon> **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Accedi al tuo [!DNL AEM Forms] dell&#39;istanza.
+1. Experience Manager tocco ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > navigazione ![bussola](assets/Smock_Compass_18_N.svg) icon> **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Tocca **[!UICONTROL Crea]** > **[!UICONTROL Cartella]**.
 1. Immetti i seguenti dettagli:
 
-   * **[!UICONTROL Titolo]**: Nome visualizzato della cartella
-   * **[!UICONTROL Nome]**: *(Obbligatorio)* Nome del nodo in cui si desidera memorizzare la cartella nel repository
+   * **[!UICONTROL Titolo]**: nome visualizzato per la cartella
+   * **[!UICONTROL Nome]**: *(Obbligatorio)* Nome del nodo in cui si desidera archiviare la cartella nell&#39;archivio
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, il valore del campo nome viene compilato automaticamente a partire dal titolo. Il nome può contenere solo caratteri alfanumerici oppure i trattini (-) e i caratteri speciali carattere di sottolineatura (_). Tutti gli altri caratteri speciali immessi nel titolo vengono automaticamente sostituiti con un trattino e viene richiesto di confermare il nuovo nome. Puoi scegliere di continuare con il nome suggerito o modificarlo ulteriormente.
+   >Per impostazione predefinita, il valore del campo del nome viene compilato automaticamente dal titolo. Il nome può contenere solo caratteri alfanumerici o trattini (-) e trattini bassi (_) caratteri speciali. Tutti gli altri caratteri speciali immessi nel titolo vengono automaticamente sostituiti da un trattino e viene richiesto di confermare il nuovo nome. Puoi scegliere di continuare con il nome suggerito o modificarlo ulteriormente.
 
-1. Nella posizione corrente nell’elenco delle risorse viene visualizzata una nuova cartella con il titolo definito.
+1. Nell’elenco delle risorse, nella posizione corrente viene visualizzata una nuova cartella con il titolo definito.
 
-   Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Puoi visualizzare il messaggio di errore passando il cursore sopra l’errore ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) accanto al campo nome.
+   Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Puoi visualizzare il messaggio di errore passando il cursore sopra l’errore ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) accanto al campo del nome.
 
-   Tocca la cartella appena creata per entrare nella cartella e creare risorse o cartelle all’interno della cartella. Inoltre, puoi selezionare una cartella e scegliere di accodarla per il download, eliminarla o modificarne il nome.
+   Tocca la cartella appena creata per entrarvi e creare risorse o cartelle al suo interno. Inoltre, puoi selezionare una cartella e scegliere di metterla in coda per il download, eliminarla o modificarne il nome.
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

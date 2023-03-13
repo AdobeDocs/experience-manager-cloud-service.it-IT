@@ -1,11 +1,11 @@
 ---
 title: Creare pop-up personalizzati utilizzando Quickview
-description: Scopri come viene utilizzata la visualizzazione rapida predefinita nelle esperienze di e-commerce in cui viene visualizzata una finestra a comparsa con informazioni sul prodotto per promuovere un acquisto. È possibile attivare il contenuto personalizzato da visualizzare nella finestra a comparsa.
+description: Scopri come viene utilizzato il Quickview predefinito nelle esperienze di e-commerce, in cui viene visualizzata una finestra pop-up con le informazioni sul prodotto per stimolare un acquisto. È possibile attivare la visualizzazione del contenuto personalizzato nella finestra popup.
 contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 2%
@@ -14,27 +14,27 @@ ht-degree: 2%
 
 # Creare pop-up personalizzati utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore utilizzato, i clienti possono selezionare un punto attivo, un&#39;immagine in miniatura o una mappa immagine per visualizzare le informazioni o il contenuto correlato.
+Il Quickview predefinito viene utilizzato nelle esperienze di e-commerce, in cui viene visualizzato un pop-up con le informazioni di prodotto per stimolare un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore utilizzato, i clienti possono selezionare un hotspot, un&#39;immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
 
 Quickview è supportato dai seguenti visualizzatori in Dynamic Media:
 
 * Immagini interattive (hotspot selezionabili)
-* Video interattivo (immagini in miniatura selezionabili durante la riproduzione del video)
-* Banner a carosello (punti attivi selezionabili o mappe immagine)
+* Video interattivo (miniature selezionabili durante la riproduzione video)
+* Banner a carosello (hotspot selezionabili o mappe immagine)
 
-Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di creazione di una visualizzazione rapida è lo stesso in tutti e tre i visualizzatori supportati.
+Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di creazione di una visualizzazione rapida è lo stesso per tutti e tre i visualizzatori supportati.
 
 **Per creare pop-up personalizzati utilizzando Quickview:**
 
 1. Crea una visualizzazione rapida per una risorsa caricata.
 
-   In genere, quando si modifica una risorsa da utilizzare con il visualizzatore in uso, viene creata una visualizzazione rapida.
+   In genere, la creazione di una visualizzazione rapida avviene quando si modifica una risorsa per l’utilizzo con il visualizzatore in uso.
 
    <table>
     <tbody>
     <tr>
     <td><strong>Visualizzatore in uso</strong></td>
-    <td><strong>Per creare la visualizzazione rapida, completa questi passaggi</strong></td>
+    <td><strong>Per creare Quickview, completare la procedura seguente</strong></td>
     </tr>
     <tr>
     <td>Immagini interattive</td>
@@ -51,13 +51,13 @@ Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di
     </tbody>
    </table>
 
-1. Ottieni il codice di incorporamento del visualizzatore per integrare il visualizzatore all’interno del tuo sito web.
+1. Ottieni il codice da incorporare per integrare il visualizzatore nel tuo sito web.
 
    <table>
     <tbody>
     <tr>
     <td><strong>Visualizzatore in uso</strong><br /> </td>
-    <td><strong>Per integrare il visualizzatore con il sito web, completa questi passaggi</strong></td>
+    <td><strong>Per integrare il visualizzatore con il sito Web, completa questi passaggi</strong></td>
     </tr>
     <tr>
     <td>Immagine interattiva</td>
@@ -65,21 +65,21 @@ Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di
     </tr>
     <tr>
     <td>Video interattivo<br /> </td>
-    <td><a href="/help/assets/dynamic-media/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Integrazione di un video interattivo con il sito web</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Integrazione di un video interattivo con il sito Web</a>.<br /> </td>
     </tr>
     <tr>
     <td>Banner a carosello</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Aggiunta di un banner carosello alla pagina del sito web</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Aggiunta di un banner a carosello alla pagina del sito Web</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
 
-1. Il visualizzatore utilizzato deve sapere come utilizzare la visualizzazione rapida.
+1. Il visualizzatore utilizzato deve sapere come utilizzare Quickview.
 
-   Il visualizzatore utilizza un gestore chiamato `QuickViewActive`.
+   Il visualizzatore utilizza un gestore denominato `QuickViewActive`.
 
    **Esempio**
-Supponiamo che tu stia utilizzando il seguente codice di incorporamento sulla tua pagina web per un&#39;immagine interattiva:
+Supponiamo di utilizzare il seguente codice di incorporamento di esempio nella pagina web per un’immagine interattiva:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -87,7 +87,7 @@ Supponiamo che tu stia utilizzando il seguente codice di incorporamento sulla tu
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **Utilizzando l&#39;esempio di codice di incorporamento di esempio riportato sopra, si dispone del seguente codice:**
+   **Utilizzando l’esempio di codice di incorporamento riportato sopra, si dispone del seguente codice:**
 
    ```xml {.line-numbers}
    s7interactiveimageviewer.setHandlers({
@@ -100,14 +100,14 @@ Supponiamo che tu stia utilizzando il seguente codice di incorporamento sulla tu
    })
    ```
 
-   Ulteriori informazioni `setHandlers()` metodo nel modo seguente:
+   Ulteriori informazioni su `setHandlers()` metodo a:
 
-   * Visualizzatore immagini interattivo - [armatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * Visualizzatore video interattivo - [armatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * Visualizzatore immagini interattivo - [sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Visualizzatore video interattivo - [sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Ora configura la `quickViewActivate` handler.
+1. Ora configura il `quickViewActivate` handler.
 
-   La `quickViewActivate` Il gestore controlla la visualizzazione rapida nel visualizzatore. Il gestore contiene l&#39;elenco di variabili e le chiamate di funzioni da utilizzare con Quickview. Il codice di incorporamento fornisce la mappatura per la variabile SKU impostata in Quickview. Fa anche un campione `loadQuickView` chiamata della funzione.
+   Il `quickViewActivate` Il gestore controlla Quickview nel visualizzatore. Il gestore contiene l&#39;elenco delle variabili e le chiamate di funzione da utilizzare con Quickview. Il codice di incorporamento fornisce la mappatura per la variabile SKU impostata in Quickview. Crea anche un campione `loadQuickView` chiamata di funzione.
 
    **Mappatura variabile**
 Mappa le variabili da utilizzare nella pagina web al valore SKU e alle variabili generiche contenute in Quickview:
@@ -118,35 +118,35 @@ Mappa le variabili da utilizzare nella pagina web al valore SKU e alle variabili
 
    `var sku=inData.sku`
 
-   Mappa anche altre variabili dalla visualizzazione rapida, come illustrato di seguito:
+   Mappa altre variabili anche da Quickview, come nei seguenti casi:
 
    ```xml {.line-numbers}
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Chiamata funzione**
-Il gestore richiede anche una chiamata di funzione per il funzionamento di Quickview. Si presume che la funzione sia accessibile dalla pagina host. Il codice di incorporamento fornisce un esempio di chiamata della funzione :
+   **Chiamata di funzione**
+Il gestore richiede anche una chiamata di funzione per il funzionamento di Quickview. Si presume che la funzione sia accessibile dalla pagina host. Il codice di incorporamento fornisce una chiamata di funzione di esempio:
 
    `loadQuickView(sku)`
 
-   La chiamata della funzione di esempio presuppone che la funzione `loadQuickView()` esiste ed è accessibile.
+   La chiamata della funzione di esempio presuppone la funzione `loadQuickView()` esiste ed è accessibile.
 
-   Ulteriori informazioni `quickViewActivate` metodo nel modo seguente:
+   Ulteriori informazioni su `quickViewActivate` metodo a:
 
-   * Visualizzatore immagini interattivo - [Callback degli eventi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
-   * Visualizzatore video interattivo - [Callback degli eventi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
-   * Supporto dei dati interattivi nel visualizzatore video interattivo - [Supporto dei dati interattivi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
+   * Visualizzatore immagini interattivo - [Callback di eventi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * Visualizzatore video interattivo - [Callback di eventi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * Supporto per dati interattivi nel visualizzatore video interattivo - [Supporto dati interattivi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. Effettua le seguenti operazioni:
 
-   * Rimuovi il commento alla sezione setHandlers del codice di incorporamento.
-   * Mappa eventuali variabili aggiuntive contenute nella visualizzazione rapida.
+   * Rimuovi il commento dalla sezione setHandlers del codice da incorporare.
+   * Mappa eventuali variabili aggiuntive contenute in Quickview.
 
-      * Aggiorna `loadQuickView(sku,*var1*,*var2*)` chiama se aggiungi altre variabili.
-   * Crea un semplice `loadQuickView` () funziona a pagina, all’esterno del visualizzatore.
+      * Aggiornare il `loadQuickView(sku,*var1*,*var2*)` effettua la chiamata se aggiungi altre variabili.
+   * Creare un semplice `loadQuickView` () sulla pagina, all&#39;esterno del visualizzatore.
 
-      Ad esempio, il seguente scrive il valore di SKU nella console del browser:
+      Ad esempio, il valore SKU viene scritto nella console del browser come segue:
 
    ```xml {.line-numbers}
    function loadQuickView(sku){
@@ -154,14 +154,14 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    }
    ```
 
-   * Carica una pagina HTML di test su un server web e apri.
+   * Carica una pagina di test HTML in un server web e apri.
 
-      Le variabili della visualizzazione rapida sono mappate. La chiamata della funzione è attiva. E la console del browser scrive il valore della variabile nella console del browser. Lo fa utilizzando la funzione di esempio fornita.
+      Le variabili di Quickview vengono mappate. La chiamata di funzione è attiva. E la console del browser scrive il valore della variabile nella console del browser. Questa operazione viene eseguita utilizzando la funzione di esempio fornita.
 
 
 
-1. È ora possibile utilizzare una funzione per richiamare un semplice pop-up in Quickview. Nell&#39;esempio seguente viene utilizzato un `DIV` per una finestra a comparsa.
-1. Personalizzare lo stile della finestra a comparsa `DIV` nel modo seguente. Aggiungi lo stile extra desiderato.
+1. È ora possibile utilizzare una funzione per richiamare una semplice finestra a comparsa in Quickview. L’esempio che segue utilizza un `DIV` per un popup.
+1. Personalizzare lo stile della finestra a comparsa `DIV` nel modo seguente. Aggiungete ulteriore stile come desiderato.
 
    ```xml {.line-numbers}
    <style type="text/css">
@@ -173,9 +173,9 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    </style>
    ```
 
-1. Posiziona la finestra a comparsa `DIV` nel corpo della pagina HTML.
+1. Posizionare il pop-up `DIV` nel corpo della pagina HTML.
 
-   Uno degli elementi viene impostato con un ID aggiornato con il valore SKU quando l’utente richiama un Quickview. L’esempio include anche un semplice pulsante per nascondere nuovamente la finestra a comparsa quando diventa visibile.
+   Uno degli elementi viene impostato con un ID che viene aggiornato con un valore SKU quando l’utente richiama una Quickview. L&#39;esempio include anche un semplice pulsante per nascondere nuovamente il popup quando diventa visibile.
 
    ```xml {.line-numbers}
    <div id="quickview_div" >
@@ -186,7 +186,7 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    </div>
    ```
 
-1. Per aggiornare il valore SKU nella finestra a comparsa, aggiungi una funzione. Rendere visibile la finestra a comparsa sostituendo la funzione semplice creata al punto 5 con la seguente:
+1. Per aggiornare il valore SKU nella finestra pop-up, aggiungete una funzione. Rendere visibile la finestra popup sostituendo la semplice funzione creata al punto 5 con quanto segue:
 
    ```xml {.line-numbers}
    <script type="text/javascript">
@@ -197,25 +197,25 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    </script>
    ```
 
-1. Carica una pagina HTML di test sul server web e apri. Il visualizzatore visualizza la finestra a comparsa `DIV` quando un utente richiama un Quickview.
-1. **Come visualizzare la finestra pop-up personalizzata in modalità a schermo intero**
+1. Carica una pagina di test HTML sul server web e apri. Il visualizzatore visualizza il pop-up `DIV` quando un utente richiama una visualizzazione rapida.
+1. **Come visualizzare la finestra a comparsa personalizzata in modalità a schermo intero**
 
-   Alcuni visualizzatori, come il visualizzatore video interattivo, supportano la visualizzazione in modalità a schermo intero. Tuttavia, se si utilizza il pop-up come descritto nei passaggi precedenti, questo viene visualizzato dietro il visualizzatore in modalità a schermo intero.
+   Alcuni visualizzatori, come il visualizzatore video interattivo, supportano la visualizzazione a schermo intero. Tuttavia, se si utilizza il pop-up come descritto nei passaggi precedenti, questo viene visualizzato dietro al visualizzatore in modalità a schermo intero.
 
-   Per visualizzare la finestra a comparsa nelle modalità standard e a schermo intero, allegare la finestra a comparsa al contenitore del visualizzatore. In questo caso, utilizza un secondo metodo handler, `initComplete`.
+   Per visualizzare la finestra popup in modalità standard e a schermo intero, collegare la finestra popup al contenitore del visualizzatore. In questo caso, utilizza un secondo metodo di gestione, `initComplete`.
 
-   La `initComplete` viene richiamato dopo l&#39;inizializzazione del visualizzatore.
+   Il `initComplete` il gestore viene richiamato dopo l&#39;inizializzazione del visualizzatore.
 
    ```xml {.line-numbers}
    "initComplete":function() { code block }
    ```
 
-   Ulteriori informazioni `init()` metodo nel modo seguente:
+   Ulteriori informazioni su `init()` metodo a:
 
    * Visualizzatore immagini interattivo - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
    * Visualizzatore video interattivo - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
-1. Per allegare al visualizzatore il pop-up (descritto nei passaggi precedenti), utilizza il seguente codice:
+1. Per associare il popup al visualizzatore, descritto nei passaggi precedenti, utilizzare il codice seguente:
 
    ```xml {.line-numbers}
    "initComplete":function() {
@@ -227,12 +227,12 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    }
    ```
 
-   Nel codice precedente, hai fatto quanto segue:
+   Nel codice precedente, hai eseguito le seguenti operazioni:
 
-   * Identificata la finestra pop-up personalizzata.
-   * È stato rimosso dal DOM.
+   * È stata identificata la finestra popup personalizzata.
+   * Rimosso dal DOM.
    * Identificato il contenitore del visualizzatore.
-   * È stato allegato il pop-up al contenitore del visualizzatore.
+   * Il pop-up è stato allegato al contenitore del visualizzatore.
 
 1. L’intero codice setHandlers è simile al seguente (è stato utilizzato il visualizzatore video interattivo):
 
@@ -253,7 +253,7 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    });
    ```
 
-1. Dopo il caricamento dei gestori, inizializza il visualizzatore:
+1. Dopo aver caricato i gestori, inizializza il visualizzatore:
 
    `*viewerInstance.*init()`
 
@@ -262,4 +262,4 @@ In questo esempio viene utilizzato il visualizzatore di immagini interattivo.
 
    `s7interactiveimageviewer.init()`
 
-   Dopo aver incorporato il visualizzatore nella pagina host, assicurati che l’istanza del visualizzatore sia stata creata. Inoltre, assicurati che i gestori vengano caricati prima che il visualizzatore venga richiamato utilizzando `init()`.
+   Dopo aver incorporato il visualizzatore nella pagina host, accertati che l’istanza del visualizzatore sia stata creata. Inoltre, assicurati che gli handler vengano caricati prima che il visualizzatore venga richiamato utilizzando `init()`.

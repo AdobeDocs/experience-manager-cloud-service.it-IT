@@ -5,7 +5,7 @@ exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
 source-git-commit: 7a11ce1ce5862068b3087848065b661b13bed1e0
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,7 @@ Il primo passaggio nell’implementazione di un nuovo progetto in Screens as a C
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come creare un nuovo progetto AEM Screens in Screens Content Provider. Dopo aver letto , dovresti essere in grado di creare il tuo progetto AEM Screens in termini di ambito.
+Questo documento spiega come creare un nuovo progetto AEM Screens nel provider di contenuti Screens. Dopo la lettura dovresti essere in grado di creare il progetto AEM Screens in termini di ambito.
 
 ## Creazione di un nuovo progetto {#create-new-project}
 
@@ -24,28 +24,28 @@ Per creare un nuovo progetto in Screens as a Cloud Service, effettua le seguenti
 1. Passa a Provider di contenuti Screens.
 
    >[!NOTE]
-   >Fai riferimento a [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) per scoprire come accedere a Screens Content Provider per la creazione del progetto.
+   >Fai riferimento a [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=it) per scoprire come accedere a Screens Content Provider per la creazione del progetto.
 
-1. Fai clic su **Crea progetto Screens** dall’angolo in alto a destra della barra delle azioni.
+1. Fai clic su **Crea progetto Screens** dall&#39;angolo superiore destro della barra delle azioni.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
-1. Inserisci il **Titolo** del progetto in **Crea progetto Screens** ad esempio, *FirstDigitalExperience*.
+1. Inserisci il **Titolo** del progetto in **Crea progetto Screens** , ad esempio, *FirstDigitalExperience*.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
-   >La **Nome** viene compilato automaticamente nel campo **Crea progetto Screens** in base al titolo scelto.
+   >Il **Nome** viene compilato automaticamente nel **Crea progetto Screens** in base al titolo scelto.
 
-1. Fai clic su **Salva**. Il progetto Screens verrà visualizzato con il titolo *FirstDigitalExperience* nel provider di contenuti Screens. Il progetto verrà visualizzato in Screens Content Provider, con due cartelle intitolate, **Posizioni** e **Canali**.
+1. Fai clic su **Salva**. Vedrai il tuo progetto Screens, intitolato come *FirstDigitalExperience* nel provider di contenuti Screens. Il progetto viene visualizzato in Provider di contenuti Screens, con due cartelle denominate, **Posizioni** e **Canali**.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
-   Ora che hai impostato un progetto AEM Screens, puoi iniziare ad aggiungere canali e posizioni al progetto.
+   Dopo aver configurato un progetto AEM Screens, puoi iniziare ad aggiungere canali e posizioni al progetto.
 
 ### Eliminazione di un progetto esistente {#deleting-project}
 
-Puoi eliminare un progetto as a Cloud Service Screens esistente.
+Puoi eliminare un progetto Screens as a Cloud Service esistente.
 Per eliminare un progetto esistente dal provider di contenuti Screens, effettua le seguenti operazioni:
 
 1. Passa a Provider di contenuti Screens.
@@ -57,8 +57,8 @@ Per eliminare un progetto esistente dal provider di contenuti Screens, effettua 
 1. Fai clic su **Elimina** per confermare l’eliminazione del progetto.
 
    >[!NOTE]
-   >È possibile selezionare più progetti ed eliminare quindi più progetti in un unico passaggio.
+   >Puoi selezionare più progetti e quindi eliminare più progetti in un singolo passaggio.
 
-## Novità {#whats-next}
+## Passaggio successivo {#whats-next}
 
-Ora che hai configurato un progetto AEM Screens, puoi creare un nuovo canale e aggiungere contenuto ai canali. Fai riferimento a [Creazione e gestione di un canale](creating-channels-screens-cloud.md) per scoprire come creare e gestire i contenuti nei canali.
+Ora che hai configurato un progetto AEM Screens, puoi creare un nuovo canale e aggiungere contenuti ai canali. Fai riferimento a [Creazione e gestione di un canale](creating-channels-screens-cloud.md) per scoprire come creare e gestire i contenuti in Canali.

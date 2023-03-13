@@ -11,61 +11,61 @@ ht-degree: 4%
 
 # Creazione di esperienze di prodotto {#building-experiences}
 
-Scopri come gestire le esperienze dei prodotti.
+Scopri come gestire le esperienze di prodotto.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso Contenuto AEM e Commercio, [Gestire le esperienze catalogo prodotti in fase di staging](staged-catalog.md), hai imparato a gestire le esperienze di catalogo dei prodotti in staging.
+Nel documento precedente del percorso sui contenuti e il commercio dell&#39;AEM, [Gestire le esperienze del catalogo dei prodotti in staging](staged-catalog.md), hai imparato a gestire le esperienze del catalogo dei prodotti in staging.
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come creare contenuti ed esperienze dei prodotti.
+Questo documento spiega come creare contenuti ed esperienze di prodotto.
 
-## Gestione dell&#39;esperienza del prodotto {#management}
+## Gestione dell’esperienza del prodotto {#management}
 
-Product Experience Management è la disciplina per decorare i dati di prodotto (di proprietà di una soluzione PIM o commerce) con i contenuti di marketing in AEM. Questi dati di prodotto arricchiti con contenuti possono quindi essere utilizzati in vari canali per creare un&#39;esperienza di acquisto coinvolgente.
+La gestione dell’esperienza del prodotto è la disciplina adottata per decorare i dati di un prodotto (di proprietà di una soluzione PIM o commerce) con contenuti di marketing in AEM. Questi dati di prodotto arricchiti con i contenuti possono quindi essere utilizzati in vari canali per creare un’esperienza di acquisto coinvolgente.
 
-In AEM puoi creare vari tipi di contenuti e collegarli al catalogo dei prodotti. I contenuti associati possono essere facilmente scoperti e utilizzati, il che porta a un&#39;elevata produttività.
+In AEM puoi creare vari tipi di contenuti e collegarli al catalogo dei prodotti. I contenuti associati possono essere individuati e utilizzati facilmente, con conseguente aumento della produttività.
 
-### Assets {#assets}
+### Risorse {#assets}
 
-Ad alto livello, esistono due tipi di attività correlate ai prodotti: prodotto e marketing. Le risorse dei prodotti sono solitamente gestite dai commercianti e si concentrano sulla visualizzazione del prodotto (principalmente davanti a uno sfondo neutro). Le risorse sono gestite nella soluzione commerce o in AEM Assets (con un’integrazione di Assets nella soluzione commerce/pim).
+Ad alto livello, esistono due tipi di risorse correlate ai prodotti: prodotto e marketing. Le risorse di prodotto sono solitamente gestite dai commercianti e si concentrano sulla visualizzazione del prodotto (per lo più davanti a uno sfondo neutro). Le risorse vengono gestite nella soluzione commerce o in AEM Assets (con un’integrazione di Assets alla soluzione commerce/pim).
 
-Le risorse di marketing sono correlate alla promozione e all’utilizzo del prodotto di solito di proprietà di marketing. Esempi sono la visualizzazione di più prodotti (&quot;shop the look&quot;), in un contesto specifico (&quot;outdoor fall collection&quot;), o come-to pdfs. CIF consente di collegare facilmente qualsiasi risorsa AEM con un oggetto catalogo di prodotto.
+Le risorse di marketing sono correlate alla promozione e all’utilizzo del prodotto, che di solito è di proprietà del marketing. Ad esempio, vengono mostrati più prodotti (&quot;shop the look&quot;), in un contesto specifico (&quot;outdoor fall collection&quot;) o come utilizzare i pdf. CIF permette di collegare facilmente qualunque risorsa AEM con un oggetto del catalogo dei prodotti.
 
-Apri le proprietà della risorsa e passa alla **Commerce** scheda . Questa scheda ti consente di gestire l’associazione con i prodotti. La tabella sotto il selettore fornisce informazioni aggiuntive per gli oggetti collegati (visibili solo con una selezione). Fai clic sull’icona dei dettagli per ottenere una visualizzazione completa nella cabina di pilotaggio del prodotto. Per associare un nuovo oggetto, fai clic sull’icona del selettore prodotto (icona della cartella), seleziona un oggetto e chiudi il selettore.
+Apri le proprietà della risorsa e passa alla **Commerce** scheda. Questa scheda ti consente di gestire l’associazione con i prodotti. La tabella sotto il selettore fornisce informazioni aggiuntive per gli oggetti collegati (visibili solo con una selezione). Fai clic sull’icona dei dettagli per ottenere una visualizzazione completa nella cabina di pilotaggio del prodotto. Per associare un nuovo oggetto, fai clic sull’icona del selettore prodotti (icona della cartella), seleziona un oggetto e chiudi il selettore.
 
-![risorse pem](assets/pem-assets.png)
+![pem assets](assets/pem-assets.png)
 
 ### Frammenti di esperienza {#experience-fragments}
 
-I frammenti esperienza sono un ottimo modo per creare contenuti di prodotto riutilizzabili o individuali su larga scala. L’associazione funziona in modo simile a una risorsa. Apri le proprietà e passa alla **Commerce** scheda . Questa scheda ti consente di gestire l’associazione con prodotti e categorie. Le tabelle sotto i selettori forniscono informazioni aggiuntive per gli oggetti collegati (visibili solo con una selezione). Fai clic sull’icona dei dettagli per ottenere una visualizzazione completa nella cabina di pilotaggio del prodotto. Per associare un nuovo oggetto, fai clic sull’icona del selettore prodotto (icona della cartella), seleziona un oggetto e chiudi il selettore.
+I frammenti di esperienza sono un ottimo modo per creare contenuti riutilizzabili o singoli prodotti su larga scala. L’associazione funziona in modo simile a una risorsa. Apri le proprietà e passa a **Commerce** scheda. Questa scheda ti consente di gestire l’associazione con prodotti e categorie. Le tabelle sotto i selettori forniscono informazioni aggiuntive per gli oggetti collegati (visibili solo con una selezione). Fai clic sull’icona dei dettagli per ottenere una visualizzazione completa nella cabina di pilotaggio del prodotto. Per associare un nuovo oggetto, fai clic sull’icona del selettore prodotti (icona della cartella), seleziona un oggetto e chiudi il selettore.
 
 ![pem xf](assets/pem-xf.png)
 
 ### Frammenti di contenuto {#content-fragments}
 
-I frammenti di contenuto sono il tipo di contenuto migliore per qualsiasi contenuto strutturato. Può essere utilizzato per migliorare i dati dei prodotti esterni con dati di marketing aggiuntivi o per creare contenuti in modo headless. L’associazione di un frammento di contenuto a un oggetto catalogo di prodotto avviene tramite i tipi di riferimento di prodotto o categoria nell’Editor modello frammento di contenuto. Trascina e rilascia il tipo di riferimento destro sul modello e configura il campo . Questi tipi supportano selezioni singole o multiple.
+I frammenti di contenuto sono il tipo di contenuto migliore per qualsiasi contenuto strutturato. Può essere utilizzato per incrementare i dati di prodotto esterni con dati di marketing aggiuntivi o per creare contenuti in modo headless. L’associazione di un frammento di contenuto a un oggetto del catalogo dei prodotti si verifica tramite i tipi di riferimento di prodotto o categoria nell’Editor modello per frammenti di contenuto. Trascina e rilascia il tipo di riferimento corretto sul modello e configura il campo. Questi tipi supportano la selezione singola o multipla.
 
-![modello pem cf](assets/pem-cf-model.png)
+![pem cf model](assets/pem-cf-model.png)
 
-Se crei un nuovo frammento di contenuto basato su questo modello, questi tipi di riferimento consentono di selezionare facilmente l’oggetto corretto utilizzando il rispettivo selettore.
+Se crei un nuovo Frammento di contenuto basato su questo modello, questi tipi di riferimento ti consentono di selezionare facilmente l’oggetto giusto utilizzando il rispettivo selettore.
 
 ![pem cf](assets/pem-cf.png)
 
 ### Cockpit prodotto {#product-cockpit}
 
-Abbiamo introdotto il cockpit (o console) del prodotto in uno dei moduli precedenti. L&#39;abitacolo è un modo semplice non solo per navigare nel catalogo dei prodotti, ma anche per vedere tutti i contenuti AEM associati in un&#39;unica posizione. Vai alla console del prodotto e apri le proprietà di un prodotto a cui è associato del contenuto. Passa alla relativa scheda per visualizzare il contenuto associato.
+Abbiamo introdotto la cabina di comando del prodotto (o console) in uno dei moduli precedenti. Il cockpit è un modo semplice non solo per sfogliare il catalogo dei prodotti, ma anche per visualizzare tutti i contenuti AEM associati in un’unica posizione. Vai alla console del prodotto e apri le proprietà di un prodotto a cui è associato del contenuto. Passa alla rispettiva scheda per visualizzare il contenuto associato.
 
-![cockpit](assets/pem-cockpit.png)
+![cabina di pilotaggio pem](assets/pem-cockpit.png)
 
-Facendo clic sull’icona dell’azione si aprirà tale contenuto in una nuova scheda del browser.
+Facendo clic sull’icona dell’azione, questo contenuto verrà aperto in una nuova scheda del browser.
 
-## Arricchimento delle pagine dei singoli prodotti e categorie {#enrich}
+## Arricchimento di singole pagine di prodotti e categorie {#enrich}
 
-Nei moduli precedenti hai imparato a lavorare con più modelli di catalogo dei prodotti. I modelli multipli sono un ottimo modo per creare diversi modelli, ma non sono necessari in molti casi. In molti casi, lo stesso modello può essere utilizzato insieme ai segnaposto per i singoli contenuti. CIF supporta i segnaposto per frammenti di contenuto e frammenti esperienza.
+Nei moduli precedenti hai imparato a utilizzare più modelli di catalogo prodotti. La presenza di più modelli rappresenta un ottimo modo per creare modelli diversi, ma in molti casi non è necessaria. In molti casi, lo stesso modello può essere utilizzato in combinazione con segnaposto per singoli contenuti. CIF supporta i segnaposto per Frammenti di contenuto e Frammenti di esperienza.
 
-Cominciamo con il segnaposto Frammento esperienza. Apri un modello di prodotto nell’editor AEM. Trascina e rilascia la **Frammento esperienza Commerce** sul modello, quindi apri la finestra di dialogo di configurazione.
+Iniziamo con il segnaposto Frammento esperienza. Apri un modello di prodotto nell’editor AEM. Trascina la **Frammento di esperienza Commerce** sul modello, quindi apri la finestra di dialogo config.
 
 ![segnaposto pem](assets/pem-placeholder.png)
 
@@ -73,46 +73,46 @@ Apri la finestra di dialogo del componente e immetti un nome per questo segnapos
 
 ![finestra di dialogo pem XF](assets/pem-dialog-xf.png)
 
-Apri il frammento esperienza associato a un prodotto nel passaggio precedente. Apri le proprietà e passa alla scheda commercio. Immettere lo stesso nome segnaposto sotto **Posizione segnaposto del catalogo**.
+Apri il frammento di esperienza associato a un prodotto nel passaggio precedente. Apri le proprietà e passa alla scheda Commerce. Inserisci lo stesso nome segnaposto in **Posizione segnaposto catalogo**.
 
 ![pem xf](assets/pem-xf.png)
 
-Ora trascina e rilascia la **Frammento di contenuto Commerce** sul modello e apri la finestra di dialogo di configurazione.
+Ora trascina e rilascia la **Frammento di contenuto Commerce** sul modello e apri la finestra di dialogo config.
 
 ![finestra di dialogo pem CF](assets/pem-dialog-cf.png)
 
-Questa finestra di dialogo riutilizza la finestra di dialogo Frammento di contenuto del componente core. Per ulteriori informazioni, consulta le risorse aggiuntive. L&#39;unica differenza è la **Elemento di collegamento** che configura il campo identificatore (SKU prodotto o UID categoria) nel modello Frammento di contenuto.
+Questa finestra di dialogo riutilizza la finestra di dialogo Frammento di contenuto del componente core. Per ulteriori informazioni, consulta Risorse aggiuntive. L&#39;unica differenza è **Elemento collegamento** proprietà che configura il campo dell’identificatore (SKU prodotto o UID categoria) nel modello Frammento di contenuto.
 
-Anteprima una pagina di prodotto a cui sono associati frammenti di contenuto e/o frammenti esperienza. Quando AEM esegue il rendering di una pagina, eseguirà una ricerca per ogni segnaposto in base al tipo (Contenuto o Frammento esperienza), all’identificatore e al nome del segnaposto per Frammenti esperienza. AEM utilizza un risolutore URL per ottenere l’identificatore (SKU per i prodotti, UID per le categorie). Se viene restituita un’esperienza o un frammento di contenuto, questo viene rappresentato nel segnaposto, altrimenti il segnaposto viene ignorato.
+Visualizza l’anteprima di una pagina di prodotto a cui sono associati un frammento di contenuto e/o un frammento di esperienza. Quando AEM esegue il rendering di una pagina, esegue una ricerca per ogni segnaposto in base al tipo (Contenuto o Frammento esperienza), all’identificatore e al nome del segnaposto per Frammenti esperienza. L’AEM utilizza un risolutore URL per ottenere l’identificatore (SKU per prodotti, UID per categorie). Se viene restituito un’esperienza o un frammento di contenuto, questo verrà rappresentato nella posizione del segnaposto, altrimenti il segnaposto viene ignorato.
 
-![risultato del pem](assets/pem-result.png)
+![risultato pem](assets/pem-result.png)
 
-## Come rendere i contenuti acquistabili {#making-shoppable}
+## Rendere i contenuti acquistabili {#making-shoppable}
 
-È inoltre possibile rendere acquistabile una pagina AEM regolare aggiungendo componenti commerce. Crea una nuova pagina di contenuto in AEM e apri la pagina vuota nell’editor.
+È inoltre possibile rendere acquistabile una pagina AEM regolare aggiungendo componenti commerce. Crea una nuova pagina di contenuti in AEM e apri la pagina vuota nell’editor.
 
 ![pagina vuota pem](assets/pem-page-empty.png)
 
-Innanzitutto, trascina e rilascia un componente di dettaglio del prodotto sulla pagina. Quindi passa alla barra laterale Risorse, passa ai prodotti e seleziona un prodotto. Trascina e rilascia il prodotto sul componente del prodotto. Questo mostrerà un normale componente di prodotto in una pagina di contenuto.
+Innanzitutto, trascina e rilascia un componente di dettaglio prodotto sulla pagina. Quindi passa alla barra laterale Risorse, passa ai prodotti e seleziona un prodotto. Trascina e rilascia il prodotto sul componente del prodotto. Questo mostrerà un componente prodotto normale su una pagina di contenuto.
 
-![pagina di prodotto pem](assets/pem-page-product.png)
+![pagina prodotto pem](assets/pem-page-product.png)
 
-Se per quel prodotto è stato creato del contenuto associato, passa alla barra laterale Risorse per **Contenuto commerciale associato**. In questa scheda vengono visualizzati tutti i contenuti AEM associati al prodotto. Ora è possibile incorporare rapidamente le pagine con qualsiasi contenuto associato.
+Se hai creato contenuti associati per quel prodotto, passa nella barra laterale di Assets a **Contenuto Commerce associato**. Questa scheda mostra tutti i contenuti AEM associati a questo prodotto. Questo consente ora di abbellire rapidamente le pagine con qualsiasi contenuto associato.
 
-![pagina arricchita da pem](assets/pem-page-enriched.png)
+![pagina arricchita pem](assets/pem-page-enriched.png)
 
 ## Fine del percorso? {#end-of-journey}
 
-Congratulazioni! Hai completato il percorso AEM Content and Commerce Developer! Ora dovresti:
+Congratulazioni. Hai completato il percorso per sviluppatori di contenuti e commercio dell’AEM. Ora dovresti:
 
-* informazioni su come associare qualsiasi contenuto AEM a oggetti catalogo prodotti
+* come associare qualsiasi contenuto AEM agli oggetti del catalogo dei prodotti
 * utilizzare i segnaposto per arricchire singolarmente le pagine di prodotti e categorie
-* Scopri come rendere il contenuto acquistabile e utilizzare la scheda contenuto associata
+* sapere come rendere il contenuto acquistabile e utilizzare la scheda contenuto associata
 
-Ora puoi gestire le esperienze dei prodotti utilizzando AEM Contenuto e Commerce. Tuttavia, AEM Contenuto e Commerce dispongono di molte opzioni aggiuntive. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
+Ora puoi gestire le esperienze dei prodotti utilizzando AEM Content and Commerce. Tuttavia, AEM Content and Commerce dispone di molte opzioni aggiuntive. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Creazione di esperienze Commerce](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [Authoring di esperienze Commerce](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [Cockpit prodotto](/help/commerce-cloud/authoring/product-cockpit.md)
 * [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)

@@ -3,7 +3,7 @@ title: Panoramica dell’editor di SPA
 description: Questo articolo offre una panoramica completa dell’editor di SPA e del suo funzionamento, inclusi flussi di lavoro dettagliati relativi all’interazione dell’editor di SPA in AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 100%
 

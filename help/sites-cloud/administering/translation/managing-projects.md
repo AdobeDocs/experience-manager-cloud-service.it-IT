@@ -4,7 +4,7 @@ description: Scopri come creare e gestire progetti di traduzione automatica e um
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: c9d901db6873965643f5ababe544be3aa635a8e4
+source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
 workflow-type: tm+mt
 source-wordcount: '4086'
 ht-degree: 97%
@@ -448,13 +448,13 @@ Per confrontare le copie per lingua con il master:
 
 ## Spostamento o ridenominazione di una pagina sorgente {#move-source}
 
-Se una pagina sorgente già tradotta deve essere [rinominato o spostato](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), se la pagina viene nuovamente tradotta dopo lo spostamento, verrà creata una nuova copia in lingua in base al nome o alla posizione della nuova pagina. La copia in lingua precedente basata sul nome/posizione precedente sarà ancora presente.
+Se una pagina sorgente già tradotta deve essere [rinominato o spostato](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), la traduzione della pagina di nuovo dopo lo spostamento creerà una nuova copia per lingua in base al nuovo nome/posizione della pagina. La vecchia copia per lingua basata sul nome/posizione precedente sarà ancora presente.
 
-La migliore pratica in questo scenario è seguire questa procedura:
-1. Annulla la pubblicazione delle copie della lingua associate alla pagina sorgente da spostare.
+La best practice per questo scenario prevede di seguire questa procedura:
+1. Annulla la pubblicazione delle copie per lingua associate alla pagina sorgente che desideri spostare.
 1. Le elimini.
-1. Crea nuove copie in lingua dalla pagina sorgente appena spostata.
-1. Pubblica le nuove copie della lingua create.
+1. Crea nuove copie per lingua dalla pagina sorgente appena spostata.
+1. Pubblica le nuove copie per lingua create.
 
 ## Importazione ed esportazione di processi di traduzione {#import-export}
 

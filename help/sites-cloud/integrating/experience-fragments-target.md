@@ -2,8 +2,8 @@
 title: Esportazione di frammenti di esperienza in Adobe Target
 description: Esportazione di frammenti di esperienza in Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
-workflow-type: ht
+source-git-commit: 6127d86ad174979506f36bb345129e4a130d35c8
+workflow-type: tm+mt
 source-wordcount: '2249'
 ht-degree: 100%
 
@@ -209,6 +209,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
       >* Maggiore sicurezza
       >* Migliori opzioni di implementazione per le applicazioni a pagina singola
       >* AT.js contiene i componenti inclusi in target.js, quindi non effettua più chiamate a target.js
+
       >
       >Puoi selezionare AT.js o mbox.js nel menu a discesa **Libreria client**.
 

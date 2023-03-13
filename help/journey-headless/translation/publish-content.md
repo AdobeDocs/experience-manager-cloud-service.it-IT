@@ -3,7 +3,7 @@ title: Pubblicare contenuti headless tradotti
 description: Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 100%
 

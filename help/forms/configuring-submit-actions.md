@@ -2,7 +2,7 @@
 title: Configurare un’azione di invio per un modulo adattivo
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 7a608304dc93e53815b488de4087f26e346be4b5
+source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
 workflow-type: tm+mt
 source-wordcount: '3133'
 ht-degree: 1%

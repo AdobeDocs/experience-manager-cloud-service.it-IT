@@ -3,7 +3,7 @@ title: Scopri i contenuti headless e come tradurli in AEM
 description: Imparare i concetti headless, come si mappano su AEM e la teoria della traduzione in AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Tuttavia, la complessità delle dipendenze all’interno dello stack diventa sub
 
 La “testa” di qualsiasi sistema è generalmente il renderer di output di quel sistema, tipicamente un&#39;interfaccia utente grafica o un altro tipo di output grafico.
 
-Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, distribuendo il **contenuto** solo in modo standardizzato, un CMS headless omette il rendering finale dell’output, lasciando la **presentazione** del contenuto al servizio che consuma.
+Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, consegnando solo il **contenuto** in modo standardizzato, un CMS headless omette il rendering finale dell’output, lasciando la **presentazione** del contenuto al servizio utilizzato.
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 

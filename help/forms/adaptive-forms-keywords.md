@@ -1,5 +1,5 @@
 ---
-title: Parole chiave adattive Forms
+title: Parole chiave di Forms adattivo
 seo-title: Adaptive Forms keywords
 description: Non è possibile utilizzare queste parole riservate come identificatori nel Forms adattivo.
 seo-description: You cannnot use these reserved words as identifiers in your Adaptive Forms.
@@ -15,14 +15,14 @@ ht-degree: 16%
 ---
 
 
-# Parole chiave adattive Forms {#adaptive-forms-keywords}
+# Parole chiave di Forms adattivo {#adaptive-forms-keywords}
 
-Le parole chiave adattative Forms sono identificatori predefiniti riservati che hanno un significato speciale per Adaptive Forms. Non è possibile utilizzare queste parole chiave come identificatori nel Forms adattivo. Nella tabella seguente sono elencate tutte le parole chiave riservate agli identificatori per Adaptive Forms.
+Le parole chiave di Adaptive Forms sono identificatori predefiniti e riservati che hanno un significato speciale per Adaptive Forms. Non è possibile utilizzare queste parole chiave come identificatori nel Forms adattivo. Nella tabella seguente sono elencate tutte le parole chiave che sono identificatori riservati per Adaptive Forms.
 
 <table>
  <tbody>
   <tr>
-   <td><p>intiualizzare</p> </td>
+   <td><p>inizializzare</p> </td>
    <td><p>getOnOffValues</p> </td>
    <td><p>minOccur</p> </td>
   </tr>
@@ -72,7 +72,7 @@ Le parole chiave adattative Forms sono identificatori predefiniti riservati che 
    <td><p>getElement</p> </td>
   </tr>
   <tr>
-   <td><p>segnapostoTesto</p> </td>
+   <td><p>placeholderText</p> </td>
    <td><p>autoSaveStartExpression</p> </td>
    <td><p>elementi figlio</p> </td>
   </tr>
@@ -187,33 +187,33 @@ Le parole chiave adattative Forms sono identificatori predefiniti riservati che 
    <td><p>setFocus</p> </td>
   </tr>
   <tr>
-   <td><p>completeExp</p> </td>
+   <td><p>completionExp</p> </td>
    <td><p>sectionTitle</p> </td>
    <td><p>activeInstance</p> </td>
   </tr>
   <tr>
-   <td><p>completeExpReq</p> </td>
-   <td><p>completeScript</p> </td>
+   <td><p>completionExpReq</p> </td>
+   <td><p>completionScript</p> </td>
    <td><p>activePart</p> </td>
   </tr>
   <tr>
    <td><p>toolbar</p> </td>
-   <td><p>completeBeforeMessage</p> </td>
+   <td><p>completionBeforeMessage</p> </td>
    <td><p>isLastPart</p> </td>
   </tr>
   <tr>
    <td><p>instanceManager</p> </td>
-   <td><p>completeAfterMessage</p> </td>
+   <td><p>completionAfterMessage</p> </td>
    <td><p>isFirstPart</p> </td>
   </tr>
   <tr>
    <td><p>instanceIndex</p> </td>
-   <td><p>completeSuccessScript</p> </td>
+   <td><p>completionSuccessScript</p> </td>
    <td><p>currentActivePart</p> </td>
   </tr>
   <tr>
-   <td><p>sommario</p> </td>
-   <td><p>completeFailureScript</p> </td>
+   <td><p>riepilogo</p> </td>
+   <td><p>completionFailureScript</p> </td>
    <td><p>sectionName</p> </td>
   </tr>
   <tr>
@@ -223,11 +223,11 @@ Le parole chiave adattative Forms sono identificatori predefiniti riservati che 
   </tr>
   <tr>
    <td><p>fetchedFromService</p> </td>
-   <td><p>repeatPanelId</p> </td>
+   <td><p>RepeablePanelId</p> </td>
    <td><p>getSelectedIndex</p> </td>
   </tr>
   <tr>
-   <td><p>repeatPanelPath</p> </td>
+   <td><p>RepeablePanelPath</p> </td>
    <td><p>getItemIdentifier</p> </td>
    <td><p>mobileLayout</p> </td>
   </tr>
@@ -239,4 +239,4 @@ Le parole chiave adattative Forms sono identificatori predefiniti riservati che 
  </tbody>
 </table>
 
-Oltre alle parole chiave elencate sopra, evita di utilizzare nomi simili a [API JavaScript adattabili di Forms](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Oltre alle parole chiave elencate in precedenza, evita di utilizzare nomi simili a [API JavaScript di Forms adattivi](https://adobe.com/go/learn_aemforms_javascript_api_63).

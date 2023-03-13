@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Per la documentazione dettagliata sul Dispatcher consulta la sezione [Guida a Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+>Per la documentazione dettagliata sul Dispatcher consulta la sezione [Guida a Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
 
 Come parte di un progetto AEM è incluso un modulo dispatcher che contiene configurazioni per il dispatcher. Progetti generati di recente da [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype) include automaticamente [filtri](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#defining-a-filter) che abilita gli endpoint GraphQL.
 

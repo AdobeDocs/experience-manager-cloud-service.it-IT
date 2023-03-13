@@ -1,6 +1,6 @@
 ---
 title: Progettazione di uno schema JSON per un modulo adattivo
-description: Scopri come creare Adaptive Forms utilizzando lo schema JSON come modello di modulo. Puoi utilizzare schemi JSON esistenti per creare Forms adattivo. Approfondisci un esempio di schema JSON, preconfigura i campi nella definizione dello schema JSON, limita i valori accettabili per un componente Modulo adattivo e scopri i costrutti non supportati.
+description: Scopri come creare Forms adattivo utilizzando lo schema JSON come modello di modulo. Puoi utilizzare gli schemi JSON esistenti per creare Forms adattivo. Approfondisci un esempio di schema JSON, preconfigura i campi nella definizione dello schema JSON, limita i valori accettabili per un componente Modulo adattivo e scopri i costrutti non supportati.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
@@ -16,24 +16,24 @@ ht-degree: 5%
 
 ## Prerequisiti {#prerequisites}
 
-Per creare un modulo adattivo utilizzando uno schema JSON come modello di modulo, è necessario conoscere di base lo schema JSON. Prima di questo articolo, è consigliabile consultare il contenuto seguente.
+Per creare un modulo adattivo utilizzando uno schema JSON come modello di modulo è necessario conoscere a fondo lo schema JSON. Si consiglia di leggere attentamente il seguente contenuto prima di questo articolo.
 
 * [Creazione di un modulo adattivo](creating-adaptive-form.md)
 * [Schema JSON](https://json-schema.org/)
 
 ## Utilizzo di uno schema JSON come modello di modulo  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager Forms supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme a [Specifiche v4](https://json-schema.org/draft-04/schema).
+I moduli Adobe Experience Manager supportano la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell’organizzazione. Lo schema JSON utilizzato deve essere conforme a [specifiche v4](https://json-schema.org/draft-04/schema).
 
-Le caratteristiche principali dell’utilizzo di uno schema JSON sono le seguenti:
+Le funzioni chiave dell’utilizzo di uno schema JSON sono:
 
-* La struttura del JSON viene visualizzata come una struttura nella scheda Content Finder nella modalità di creazione per un modulo adattivo. Puoi trascinare e aggiungere un elemento dalla gerarchia JSON al Modulo adattivo.
-* È possibile precompilare il modulo utilizzando JSON conforme allo schema associato.
-* Al momento dell’invio, i dati immessi dall’utente vengono inviati come JSON in linea con lo schema associato.
+* La struttura del JSON viene visualizzata come struttura nella scheda Content Finder nella modalità di authoring di un modulo adattivo. Puoi trascinare e aggiungere un elemento dalla gerarchia JSON al modulo adattivo.
+* Puoi precompilare il modulo utilizzando un JSON conforme allo schema associato.
+* All’invio, i dati immessi dall’utente vengono inviati come JSON, in linea con lo schema associato.
 
-Uno schema JSON è costituito da tipi di elementi semplici e complessi. Gli elementi dispongono di attributi che aggiungono regole all’elemento. Quando questi elementi e attributi vengono trascinati in un modulo adattivo, vengono mappati automaticamente sul componente Modulo adattivo corrispondente.
+Uno schema JSON è costituito da tipi di elementi semplici e complessi. Gli elementi dispongono di attributi che aggiungono regole all’elemento. Quando questi elementi e attributi vengono trascinati in un modulo adattivo, vengono mappati automaticamente al corrispondente componente Modulo adattivo.
 
-Questa mappatura degli elementi JSON con componenti per moduli adattivi è la seguente:
+La mappatura degli elementi JSON con i componenti del modulo adattivo è la seguente:
 
 ```json
 "birthDate": {
@@ -57,23 +57,23 @@ Questa mappatura degli elementi JSON con componenti per moduli adattivi è la se
 <table>
  <tbody>
   <tr>
-   <th><strong>Elemento, proprietà o attributi JSON</strong></th>
-   <th><strong>Componente Modulo adattivo</strong></th>
+   <th><strong>Elemento JSON, proprietà o attributi</strong></th>
+   <th><strong>Componente modulo adattivo</strong></th>
   </tr>
   <tr>
-   <td><p>Proprietà stringa con vincolo enum e enumNames.</p> <p>Sintassi,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>Proprietà stringa con vincolo enum ed enumNames.</p> <p>Sintassi,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
    <td><p>Componente a discesa:</p>
     <ul>
-     <li>I valori elencati in enumNames vengono visualizzati nella casella a discesa.</li>
-     <li>I valori elencati nell'enum sono utilizzati per il calcolo.</li>
+     <li>I valori elencati in enumNames vengono visualizzati nella casella di riepilogo.</li>
+     <li>I valori elencati nell'enum vengono utilizzati per il calcolo.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Proprietà stringa con vincolo di formato. Ad esempio, e-mail e data.</p> <p>Sintassi,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>Proprietà stringa con vincolo di formato. Ad esempio e-mail e data.</p> <p>Sintassi,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
    <td>
     <ul>
      <li>Il componente E-mail viene mappato quando il tipo è stringa e il formato è e-mail.</li>
-     <li>Il componente Textbox con convalida viene mappato quando il tipo è stringa e il formato è hostname.</li>
+     <li>Il componente Textbox con convalida viene mappato quando il tipo è string (stringa) e il formato è hostname (nome host).</li>
     </ul> </td>
   </tr>
   <tr>
@@ -82,7 +82,7 @@ Questa mappatura degli elementi JSON con componenti per moduli adattivi è la se
   </tr>
   <tr>
    <td>proprietà number<br /> </td>
-   <td>Campo numerico con sottotipo impostato come mobile<br /> </td>
+   <td>Campo numerico con sottotipo impostato su float<br /> </td>
   </tr>
   <tr>
    <td>proprietà integer<br /> </td>
@@ -90,7 +90,7 @@ Questa mappatura degli elementi JSON con componenti per moduli adattivi è la se
   </tr>
   <tr>
    <td>proprietà booleana<br /> </td>
-   <td>Scambia<br /> </td>
+   <td>Interruttore<br /> </td>
   </tr>
   <tr>
    <td>proprietà oggetto<br /> </td>
@@ -98,30 +98,30 @@ Questa mappatura degli elementi JSON con componenti per moduli adattivi è la se
   </tr>
   <tr>
    <td>proprietà array</td>
-   <td>Pannello ripetibile con minimo e massimo uguale rispettivamente a minItems e maxItems. Sono supportati solo gli array omogenei. Pertanto, il vincolo elementi deve essere un oggetto e non un array.<br /> </td>
+   <td>Pannello ripetibile con min e max uguali rispettivamente a minItems e maxItems. Sono supportati solo array omogenei. Pertanto, il vincolo items deve essere un oggetto e non un array.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Proprietà dello schema comuni {#common-schema-properties}
+### Proprietà comuni dello schema {#common-schema-properties}
 
 Il modulo adattivo utilizza le informazioni disponibili nello schema JSON per mappare ogni campo generato. In particolare:
 
-* La `title` funge da etichetta per i componenti Modulo adattivo.
-* La `description` viene impostata come descrizione lunga per un componente Modulo adattivo.
-* La `default` funge da valore iniziale di un campo Modulo adattivo.
-* La `maxLength` è impostato come `maxlength` attributo del componente campo di testo.
-* La `minimum`, `maximum`, `exclusiveMinimum`e `exclusiveMaximum` vengono utilizzate per il componente Casella numerica .
-* Per supportare la gamma di `DatePicker component` proprietà aggiuntive dello schema JSON `minDate` e `maxDate` sono forniti.
-* La `minItems` e `maxItems` vengono utilizzate per limitare il numero di elementi/campi che possono essere aggiunti o rimossi da un componente pannello.
-* La `readOnly` imposta la proprietà `readonly` di un componente Modulo adattivo.
-* La `required` La proprietà contrassegna il campo Modulo adattivo come obbligatorio, mentre nel pannello (in cui il tipo è oggetto), i dati JSON inviati finali hanno campi con valore vuoto corrispondente a tale oggetto.
-* La `pattern` viene impostata come pattern di convalida (espressione regolare) in Modulo adattivo.
+* Il `title` funge da etichetta per i componenti Modulo adattivo.
+* Il `description` viene impostata come descrizione lunga per un componente Modulo adattivo.
+* Il `default` funge da valore iniziale di un campo Modulo adattivo.
+* Il `maxLength` la proprietà è impostata come `maxlength` attributo del componente campo di testo.
+* Il `minimum`, `maximum`, `exclusiveMinimum`, e `exclusiveMaximum` Le proprietà vengono utilizzate per il componente Casella numerica.
+* Per supportare l&#39;intervallo per `DatePicker component` proprietà aggiuntive dello schema JSON `minDate` e `maxDate` vengono fornite.
+* Il `minItems` e `maxItems` Le proprietà vengono utilizzate per limitare il numero di elementi/campi che possono essere aggiunti o rimossi da un componente del pannello.
+* Il `readOnly` imposta la proprietà `readonly` di un componente Modulo adattivo.
+* Il `required` La proprietà contrassegna il campo Modulo adattivo come obbligatorio, mentre nel pannello (dove tipo è oggetto), i dati JSON finali inviati contengono campi con valore vuoto corrispondente a tale oggetto.
+* Il `pattern` viene impostata come pattern di convalida (espressione regolare) in Adaptive Form.
 * L’estensione del file di schema JSON deve essere mantenuta .schema.json. Ad esempio: &lt;filename>.schema.json.
 
 ## Schema JSON di esempio {#sample-json-schema}
 
-Ecco un esempio di uno schema JSON.
+Di seguito è riportato un esempio di schema JSON.
 
 ```json
 {
@@ -301,9 +301,9 @@ Ecco un esempio di uno schema JSON.
 }
 ```
 
-### Definizioni dello schema riutilizzabili {#reusable-schema-definitions}
+### Definizioni di schema riutilizzabili {#reusable-schema-definitions}
 
-Le chiavi di definizione vengono utilizzate per identificare gli schemi riutilizzabili. Le definizioni dello schema riutilizzabile vengono utilizzate per creare i frammenti. <!-- It is similar to identifying complex types in XSD.--> Di seguito è riportato un esempio di schema JSON con definizioni:
+Le chiavi di definizione vengono utilizzate per identificare gli schemi riutilizzabili. Per creare frammenti vengono utilizzate le definizioni di schema riutilizzabili. <!-- It is similar to identifying complex types in XSD.--> Di seguito è riportato un esempio di schema JSON con definizioni:
 
 ```json
 {
@@ -330,11 +330,11 @@ Le chiavi di definizione vengono utilizzate per identificare gli schemi riutiliz
 }
 ```
 
-L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia un indirizzo di spedizione che un indirizzo di fatturazione. La struttura di entrambi gli indirizzi è la stessa - gli indirizzi hanno un indirizzo di strada, una città e uno stato - quindi è una buona idea non duplicare gli indirizzi. Permette inoltre di aggiungere ed eliminare facilmente i campi per eventuali modifiche future.
+L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia un indirizzo di spedizione che un indirizzo di fatturazione. La struttura di entrambi gli indirizzi è la stessa: gli indirizzi hanno un indirizzo stradale, una città e uno stato, quindi è consigliabile non duplicare gli indirizzi. Inoltre, agevola l’aggiunta e l’eliminazione dei campi per eventuali modifiche future.
 
 ## Preconfigurazione dei campi nella definizione dello schema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-È possibile utilizzare **aem:afProperties** per preconfigurare il campo Schema JSON in modo che venga eseguito il mapping a un componente Modulo adattivo personalizzato. Di seguito è riportato un esempio:
+È possibile utilizzare **aem:afProperties** per preconfigurare il campo Schema JSON da mappare a un componente modulo adattivo personalizzato. Di seguito è riportato un esempio:
 
 ```json
 {
@@ -625,9 +625,9 @@ Here is the sample JSON code for previously mentioned examples.
 ```
 -->
 
-## Limitare i valori accettabili per un componente Modulo adattivo {#limit-acceptable-values-for-an-adaptive-form-component}
+## Limitare valori accettabili per un componente Modulo adattivo {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON per limitare i valori accettabili per un componente Modulo adattivo:
+Per limitare i valori accettabili per un componente Modulo adattivo, puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON:
 
 <table>
  <tbody>
@@ -640,7 +640,7 @@ Puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON per limi
   <tr>
    <td><p><code>maximum</code></p> </td>
    <td><p>Stringa</p> </td>
-   <td><p>Specifica il limite superiore per i valori numerici e le date. Per impostazione predefinita, è incluso il valore massimo.</p> </td>
+   <td><p>Specifica il limite superiore per valori numerici e date. Per impostazione predefinita, il valore massimo è incluso.</p> </td>
    <td>
     <ul>
      <li>Casella numerica</li>
@@ -662,7 +662,7 @@ Puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON per limi
   <tr>
    <td><p><code>exclusiveMaximum</code></p> </td>
    <td><p>Booleano</p> </td>
-   <td><p>Se true, il valore numerico o la data specificati nel componente del modulo devono essere inferiori al valore numerico o alla data specificati per la proprietà maximum.</p> <p>Se false, il valore numerico o la data specificati nel componente del modulo deve essere minore o uguale al valore numerico o alla data specificata per la proprietà maximum.</p> </td>
+   <td><p>Se true, il valore numerico o la data specificati nel componente del modulo devono essere inferiori al valore numerico o alla data specificati per la proprietà maximum.</p> <p>Se false, il valore numerico o la data specificati nel componente del modulo deve essere minore o uguale al valore numerico o alla data specificati per la proprietà maximum.</p> </td>
    <td>
     <ul>
      <li>Casella numerica</li>
@@ -673,7 +673,7 @@ Puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON per limi
   <tr>
    <td><p><code>exclusiveMinimum</code></p> </td>
    <td><p>Booleano</p> </td>
-   <td><p>Se true, il valore numerico o la data specificati nel componente del modulo devono essere maggiori del valore numerico o della data specificati per la proprietà minima.</p> <p>Se false, il valore numerico o la data specificati nel componente del modulo devono essere maggiori o uguali al valore numerico o alla data specificata per la proprietà minima.</p> </td>
+   <td><p>Se true, il valore numerico o la data specificati nel componente del modulo devono essere maggiori del valore numerico o della data specificati per la proprietà minimum.</p> <p>Se false, il valore numerico o la data specificati nel componente del modulo devono essere maggiori o uguali al valore numerico o alla data specificati per la proprietà minimum.</p> </td>
    <td>
     <ul>
      <li>Casella numerica</li>
@@ -684,7 +684,7 @@ Puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON per limi
   <tr>
    <td><p><code>minLength</code></p> </td>
    <td><p>Stringa</p> </td>
-   <td><p>Specifica il numero minimo di caratteri consentiti in un componente. La lunghezza minima deve essere uguale o maggiore di zero.</p> </td>
+   <td><p>Specifica il numero minimo di caratteri consentito in un componente. La lunghezza minima deve essere uguale o maggiore di zero.</p> </td>
    <td>
     <ul>
      <li>Casella di testo</li>
@@ -702,7 +702,7 @@ Puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON per limi
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>Stringa</p> </td>
-   <td><p>Specifica la sequenza dei caratteri. Un componente accetta i caratteri se questi sono conformi al pattern specificato.</p> <p>La proprietà pattern è associata al pattern di convalida del componente Modulo adattivo corrispondente.</p> </td>
+   <td><p>Specifica la sequenza dei caratteri. Un componente accetta i caratteri se questi sono conformi al modello specificato.</p> <p>La proprietà pattern viene mappata sul pattern di convalida del componente Modulo adattivo corrispondente.</p> </td>
    <td>
     <ul>
      <li>Tutti i componenti Forms adattivi mappati su uno schema XSD </li>
@@ -711,40 +711,40 @@ Puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON per limi
   <tr>
    <td><code>maxItems</code></td>
    <td>Stringa</td>
-   <td>Specifica il numero massimo di elementi in una matrice. Gli elementi massimi devono essere uguali o maggiori di zero.</td>
+   <td>Specifica il numero massimo di elementi in un array. Il numero massimo di elementi deve essere uguale o maggiore di zero.</td>
    <td> </td>
   </tr>
   <tr>
    <td><code>minItems</code></td>
    <td>Stringa</td>
-   <td>Specifica il numero minimo di elementi in una matrice. Gli elementi minimi devono essere uguali o maggiori di zero.</td>
+   <td>Specifica il numero minimo di elementi in un array. Gli elementi minimi devono essere uguali o maggiori di zero.</td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-## costrutti non supportati  {#non-supported-constructs}
+## Costrutti non supportati  {#non-supported-constructs}
 
-L&#39;Adaptive Forms non supporta i seguenti costrutti dello schema JSON:
+Forms adattivo non supporta i seguenti costrutti dello schema JSON:
 
-* Tipo Null
-* tipi dell&#39;Unione, quali eventuali, e
-* Uno, AnyOf, AllOf e NOT
-* Sono supportati solo gli array omogenei. Pertanto, il vincolo elementi deve essere un oggetto e non un array.
+* Tipo nullo
+* tipi di unione, come eventuali, e
+* Uno di, uno di, tutti e NON
+* Sono supportati solo array omogenei. Pertanto, il vincolo items deve essere un oggetto e non un array.
 
 ## Domande frequenti {#frequently-asked-questions}
 
-**Perché non è possibile trascinare singoli elementi di un sottomodulo (struttura generata da qualsiasi tipo complesso) per sottomoduli ripetibili (i valori minOccours o maxOccours sono maggiori di 1)?**
+**Perché non è possibile trascinare singoli elementi di una sottomaschera (struttura generata da qualsiasi tipo complesso) per sottomaschere ripetibili (i valori minOccours o maxOccurs sono maggiori di 1)?**
 
-In un sottomodulo ripetibile, è necessario utilizzare il sottomodulo completo. Se desideri solo campi selettivi, utilizza l’intera struttura ed elimina quelli indesiderati.
+In una sottomaschera ripetibile, è necessario utilizzare la sottomaschera completa. Se desideri solo campi selettivi, utilizza l’intera struttura ed elimina quelli indesiderati.
 
-**Ho una lunga struttura complessa in Content Finder. Come posso trovare un elemento specifico?**
+**In Content Finder ho una struttura lunga e complessa. Come posso trovare un elemento specifico?**
 
 Sono disponibili due opzioni:
 
-* Scorrere la struttura ad albero
-* Utilizza la casella Ricerca per trovare un elemento
+* Scorri nella struttura ad albero
+* Utilizzare la casella di ricerca per trovare un elemento
 
-**Quale dovrebbe essere l&#39;estensione del file di schema JSON?**
+**Quale deve essere l’estensione del file di schema JSON?**
 
-L’estensione del file di schema JSON deve essere .schema.json. Ad esempio: &lt;filename>.schema.json.
+L’estensione del file dello schema JSON deve essere .schema.json. Ad esempio: &lt;filename>.schema.json.

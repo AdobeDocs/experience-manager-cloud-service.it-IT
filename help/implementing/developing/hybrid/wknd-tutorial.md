@@ -1,23 +1,23 @@
 ---
-title: Progetto SPA WKND
-description: Immergiti nello sviluppo SPA con questa esercitazione in più parti che ti guida attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni per implementare il tuo SPA utilizzando sia React che Angular.
+title: Progetto WKND SPA
+description: Immergiti nello sviluppo dell’SPA con questo tutorial in più parti che ti guida attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni per implementare il tuo SPA utilizzando sia React che Angular.
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
-source-git-commit: 173f6cd2c07ddc3a3a343696b166af88bc2631ed
+source-git-commit: f9ebd60892ae2cdaf844b7978f53a76b6e5cb137
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
 
 ---
 
-# Progetto SPA WKND {#wknd-spa-project}
+# Progetto WKND SPA {#wknd-spa-project}
 
-Immergiti nello sviluppo SPA con questa esercitazione in più parti che ti guida attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni per implementare il tuo SPA.
+Immergiti nello sviluppo dell’SPA con questa esercitazione in più parti che ti guida attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni per implementare il tuo SPA.
 
-![Progetto SPA WKND](assets/wknd-spa-project.png)
+![Progetto WKND SPA](assets/wknd-spa-project.png)
 
-Simile al tutorial WKND AEM, questa controparte incentrata sul SPA offre un esempio end-to-end di creazione di un&#39;applicazione a pagina singola modificabile con AEM che inizia con la configurazione del progetto attraverso il routing dell&#39;applicazione.
+Simile all’esercitazione WKND dell’AEM, questa controparte incentrata sull’SPA offre un esempio end-to-end di creazione di un’applicazione a pagina singola modificabile con AEM a partire dalla configurazione del progetto fino al routing dell’applicazione.
 
-* [Crea il tuo primo SPA Angular in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
-* [Crea il tuo primo SPA React in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
+* [Creazione del primo SPA Angular in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
+* [Creare il primo SPA React nell’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 
-Prima di iniziare il progetto di SPA per AEM, tuttavia, è anche possibile rivedere il [Sviluppo di SPA per AEM](developing.md) documento.
+Tuttavia, prima di iniziare il progetto SPA per l’AEM, potrebbe essere utile rivedere [Sviluppo dell&#39;SPA per l&#39;AEM](developing.md) documento.

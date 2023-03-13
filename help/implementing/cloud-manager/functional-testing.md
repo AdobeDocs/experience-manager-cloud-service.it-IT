@@ -2,7 +2,7 @@
 title: Test funzionali
 description: Scopri i tre diversi tipi di test funzionali integrati nel processo di distribuzione di AEM as a Cloud Service per garantire la qualità e l’affidabilità del codice.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 73a73f2f6c56386f3058d89e66b036e8f5e5a17b
+source-git-commit: 1e75a9a8ba4eff030d079d4b7adf7fc8588b8cc1
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 72%
@@ -39,33 +39,33 @@ I test funzionali del prodotto sono una serie di test stabili di integrazione HT
 
 I test funzionali del prodotto vengono eseguiti automaticamente ogni volta che si distribuisce un nuovo codice in Cloud Manager e non possono essere ignorati.
 
-I test funzionali del prodotto vengono mantenuti come progetto open-source. Per ulteriori informazioni, consulta i [test funzionali del prodotto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) su GitHub.
+I test funzionali del prodotto vengono gestiti come progetto open-source. Per ulteriori informazioni, consulta i [test funzionali del prodotto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) su GitHub.
 
 ### Test funzionali personalizzati {#custom-functional-testing}
 
 Anche se i test funzionali del prodotto sono definiti da Adobe, puoi creare test di qualità personalizzati per la tua applicazione. Verranno eseguiti come test funzionali personalizzati come parte della pipeline di produzione per garantire la qualità dell’applicazione.
 
-Il test funzionale personalizzato viene eseguito sia per le distribuzioni del codice personalizzato che per gli aggiornamenti push, il che rende particolarmente importante scrivere buoni test funzionali che impediscano AEM modifiche del codice di interrompere il codice dell&#39;applicazione. Il passaggio dei test funzionali personalizzati è sempre presente e non può essere ignorato.
+I test funzionali personalizzati vengono eseguiti sia per le distribuzioni del codice personalizzato che per gli aggiornamenti push, il che rende particolarmente importante scrivere test funzionali che impediscano alle modifiche apportate al codice AEM di interrompere il codice dell’applicazione. Il passaggio dei test funzionali personalizzati è sempre presente e non può essere ignorato.
 
 ### Test dell’interfaccia utente personalizzati {#custom-ui-testing}
 
-I test dell’interfaccia utente personalizzati sono una funzione facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni. I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta di lingue e framework come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium.
+I test dell’interfaccia utente personalizzati sono una funzione facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni. I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta di linguaggi e framework come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium.
 
 Per ulteriori informazioni, consulta il documento [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
 ## Guida introduttiva ai test funzionali {#getting-started-functional-tests}
 
-Dopo la creazione di un nuovo archivio di codice in Cloud Manager, un `it.tests` viene creata automaticamente con casi di test di esempio.
+Al momento della creazione di un nuovo archivio di codice in Cloud Manager, `it.tests` viene creata automaticamente con casi di test di esempio.
 
 >[!NOTE]
 >
->Se l’archivio è stato creato prima della creazione automatica di Cloud Manager `it.tests` cartelle, puoi anche generare la versione più recente utilizzando [AEM Archetipo di progetto.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Se l’archivio è stato creato prima della creazione automatica di Cloud Manager `it.tests` cartelle, puoi anche generare la versione più recente utilizzando [Archetipo progetto AEM.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
-Una volta ottenuto il contenuto del `it.tests` È possibile utilizzarlo come base per i propri test e quindi:
+Una volta ottenuto il contenuto di `it.tests` cartella, puoi utilizzarla come base per i test e quindi:
 
-1. [Sviluppa i tuoi casi di test.](#writing-functional-tests)
-1. [Esegui i test localmente.](#local-test-execution)
-1. Invia il codice all’archivio di Cloud Manager ed esegui una pipeline di Cloud Manager.
+1. [Sviluppa i test case.](#writing-functional-tests)
+1. [Eseguire i test localmente.](#local-test-execution)
+1. Esegui il commit del codice nell’archivio di Cloud Manager ed esegui una pipeline di Cloud Manager.
 
 ## Scrittura di test funzionali personalizzati {#writing-functional-tests}
 
@@ -130,7 +130,7 @@ Per ulteriori informazioni, consulta l’[`aem-testing-clients` archivio di GitH
 
 ### Esecuzione locale dei test {#local-test-execution}
 
-Prima di attivare i test funzionali in una pipeline di Cloud Manager, si consiglia di eseguire i test funzionali localmente utilizzando l’ [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) o un&#39;istanza effettiva AEM as a Cloud Service.
+Prima di attivare i test funzionali in una pipeline di Cloud Manager, si consiglia di eseguirli localmente utilizzando [SDK AS A CLOUD SERVICE AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) o un&#39;istanza effettiva as a Cloud Service dell&#39;AEM.
 
 #### Prerequisiti {#prerequisites}
 
@@ -156,11 +156,11 @@ Le proprietà del sistema sono indicate di seguito.
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
 
-#### Esecuzione di tutti i test utilizzando Maven {#using-maven}
+#### Esecuzione di tutti i test con Maven {#using-maven}
 
-1. Apri una shell e passa alla `it.tests` nella directory archivio.
+1. Aprite una shell e passate alla `it.tests` nell&#39;archivio.
 
-1. Esegui il seguente comando fornendo i parametri necessari per avviare i test utilizzando Maven.
+1. Esegui il comando seguente fornendo i parametri necessari per avviare i test utilizzando Maven.
 
 ```shell
 mvn verify -Plocal \

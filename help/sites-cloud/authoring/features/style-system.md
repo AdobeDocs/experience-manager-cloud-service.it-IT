@@ -155,6 +155,7 @@ Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 >1. HTL ha la precedenza su tutto: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Poi, tra più stili attivi, viene considerato il primo nell’elenco degli stili configurati nel criterio del componente.
 >1. Infine, il `cq:tagName`/ `cq:htmlTag` del componente sarà considerato un valore di fallback.
+
 >
 
 

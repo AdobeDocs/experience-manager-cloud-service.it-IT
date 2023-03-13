@@ -1,8 +1,8 @@
 ---
 title: Navigazione al provider di servizi Screens
-description: Questa pagina descrive come passare a Screens Services Provider.
+description: Questa pagina descrive come accedere a Screens Services Provider.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 6%
@@ -13,9 +13,9 @@ ht-degree: 6%
 
 ## Introduzione {#introduction}
 
-**Provider servizi Screens**, consente all’autore, agli sviluppatori e agli amministratori di gestire gli schermi e i lettori per la riproduzione di contenuti una volta aggiunti i contenuti ai canali. Una volta che gli utenti avranno accesso ad AEM Cloud Service, dovrebbero essere in grado di accedere a Screens Services Provider.
+**Provider servizi Screens**, consente all’autore di contenuti, agli sviluppatori e agli amministratori di gestire le visualizzazioni e i lettori per la riproduzione dei contenuti una volta aggiunti ai canali. Una volta dato l’accesso ad AEM Cloud Service, gli utenti dovrebbero poter accedere a Screens Services Provider.
 
-Questa sezione descrive come impostare Screens Services Provider.
+Questa sezione descrive come impostare il provider di servizi Screens.
 
 
 ## Obiettivo {#objective}
@@ -24,33 +24,33 @@ Nella sezione seguente viene illustrato come configurare e configurare il provid
 
 ## Passaggi per configurare il provider di servizi Screens {#screens-services-provider}
 
-Segui i passaggi seguenti per configurare Screens Services Provider:
+Per configurare il provider di servizi Screens, effettuare le seguenti operazioni:
 
-1. Passa a Provider di servizi Screens da [qui](https://experience.adobe.com/screens).
+1. Passa a Screens Services Provider da [qui](https://experience.adobe.com/screens).
 
    >[!CAUTION]
-   >Se hai accesso a più organizzazioni, assicurati di aver effettuato l&#39;accesso all&#39;organizzazione corretta. Per modificare l’organizzazione, fai clic sul nome dell’organizzazione nell’angolo in alto a destra della schermata e scegli l’organizzazione a cui devi accedere.
+   >Se hai accesso a più organizzazioni, assicurati di aver effettuato l’accesso a quella corretta. Per cambiare organizzazione, fai clic sul nome dell’organizzazione nell’angolo in alto a destra della schermata e scegli l’organizzazione a cui desideri accedere.
 
-2. Fai clic sull’icona a forma di ingranaggio accanto a Progetto (nell’angolo in alto a sinistra)
+2. Fai clic sull’icona a forma di ingranaggio accanto a Progetto (angolo in alto a sinistra)
 
    ![immagine](/help/screens-cloud/assets/configure/configure-screens0.png)
 
-3. Immetti i seguenti dettagli nella finestra di dialogo Modifica impostazioni .
-   * **Pubblica Url** - AEM URL di pubblicazione (ad esempio, `https://publish-p12345-e12345.adobeaemcloud.com`)
-   * **Url Autore** - URL AEM autore (ad esempio, `https://author-p12345-e12345.adobeaemcloud.com`)
+3. Immettete i dettagli riportati di seguito nella finestra di dialogo Modifica impostazioni.
+   * **URL di pubblicazione** - URL di pubblicazione AEM (ad esempio, `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **URL autore** : URL dell’autore AEM (ad esempio, `https://author-p12345-e12345.adobeaemcloud.com`)
 
    ![immagine](/help/screens-cloud/assets/configure/configure-screens4.png)
 
 4. Fai clic su **Salva** per connettersi al provider di contenuti Screens
 
-5. Seleziona **Canali** dalla barra di navigazione a sinistra e fai clic su **aperto nel provider di contenuti**.
+5. Seleziona **Canali** dalla barra di navigazione a sinistra e fai clic su **apri nel provider di contenuti**.
 
    ![immagine](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. Il Content Provider di Screens si apre in un’altra scheda che consente di creare il contenuto.
+6. Il provider di contenuti Screens si apre in un’altra scheda che consente di creare il contenuto.
 
    ![immagine](/help/screens-cloud/assets/configure/configure-screens2.png)
 
-## Novità {#whats-next}
+## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come impostare Screens Services Provider, puoi passare a [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) per ulteriori dettagli.
+Dopo aver appreso come impostare il provider di servizi Screens, è possibile passare a [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) per ulteriori dettagli.

@@ -1,6 +1,6 @@
 ---
 title: Come si crea il modello dati del modulo?
-description: L’integrazione dei dati di Experience Manager Forms offre un’interfaccia utente intuitiva per la creazione e l’utilizzo dei modelli di dati dei moduli. Scopri come creare modelli di dati modulo con o senza origini dati configurate.
+description: L’integrazione dei dati di Experience Manager Forms fornisce un’interfaccia utente intuitiva per la creazione e l’utilizzo dei modelli di dati dei moduli. Scopri come creare modelli di dati per moduli con o senza origini dati configurate.
 feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
@@ -16,122 +16,122 @@ ht-degree: 0%
 
 ![Integrazione dei dati](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] l’integrazione dei dati fornisce un’interfaccia utente intuitiva per creare e utilizzare modelli di dati modulo. Un modello dati modulo si basa su origini dati per lo scambio di dati; tuttavia, è possibile creare un modello dati modulo con o senza un’origine dati. Esistono due approcci per creare un modello dati da a seconda che siano state configurate origini dati:
+[!DNL Experience Manager Forms] l’integrazione dei dati fornisce un’interfaccia utente intuitiva per creare e utilizzare i modelli di dati dei moduli. Un modello dati modulo si basa su origini dati per lo scambio di dati; tuttavia, è possibile creare un modello dati modulo con o senza un&#39;origine dati. Esistono due approcci per creare un modello dati da a seconda che siano state configurate o meno le origini dati:
 
-* **Utilizzo di origini dati preconfigurate**: Se hai configurato origini dati come descritto in [Configurare origini dati](configure-data-sources.md), è possibile selezionarli durante la creazione di un modello dati del modulo. Porta tutti gli oggetti, le proprietà e i servizi del modello dati dalle origini dati selezionate disponibili per l’uso nel modello dati del modulo.
+* **Utilizzo di origini dati preconfigurate**: se hai configurato le origini dati come descritto in [Configurare le origini dati](configure-data-sources.md), è possibile selezionarli durante la creazione di un modello di dati del modulo. Raccoglie tutti gli oggetti, le proprietà e i servizi del modello dati dalle origini dati selezionate disponibili per l’utilizzo nel modello dati del modulo.
 
-* **Senza origini dati**: Se non sono state configurate origini dati per il modello dati del modulo, è comunque possibile crearlo senza origini dati. È possibile utilizzare il modello dati modulo per creare un Forms adattivo <!--and interactive communication--> e testarli utilizzando dati campione. Quando sono disponibili origini dati, è possibile eseguire un binding del modello dati del modulo con origini dati, che si riflettono automaticamente nel Forms adattivo associato<!--and interactive communications-->.
+* **Senza origini dati**: se non hai configurato le origini dati per il modello dati del modulo, puoi comunque crearlo senza origini dati. Puoi utilizzare il modello dati del modulo per creare Forms adattivo <!--and interactive communication--> e testarli utilizzando dati di esempio. Quando le origini dati sono disponibili, è possibile associare il modello dati del modulo alle origini dati, che si riflettono automaticamente nel Forms adattivo associato<!--and interactive communications-->.
 
 >[!NOTE]
 >
->Devi essere membro di entrambi **fdm-author** e **form-user** gruppi per poter creare e utilizzare il modello dati del modulo. Contatta il tuo [!DNL Experience Manager] amministratore per diventare membro dei gruppi.
+>Devi essere membro di entrambi **fdm-author** e **forms-user** gruppi per creare e utilizzare il modello dati del modulo. Contatta il tuo [!DNL Experience Manager] per diventare un membro dei gruppi.
 
 ## Crea modello dati modulo {#data-sources}
 
-Verificare di aver configurato le origini dati che si desidera utilizzare nel modello dati modulo come descritto in [Configurare origini dati](configure-data-sources.md). Per creare un modello dati modulo basato su origini dati configurate, effettuare le seguenti operazioni:
+Verifica di aver configurato le origini dati che intendi utilizzare nel modello dati del modulo come descritto in [Configurare le origini dati](configure-data-sources.md). Per creare un modello dati modulo basato su origini dati configurate, effettuare le seguenti operazioni:
 
-1. In [!DNL Experience Manager] istanza autore, passa a **[!UICONTROL Forms > Integrazioni dati]**.
+1. In entrata [!DNL Experience Manager] istanza di authoring, passa a **[!UICONTROL Forms > Integrazioni dati]**.
 1. Tocca **[!UICONTROL Crea > Modello dati modulo]**.
-1. Nella finestra di dialogo Crea modello dati modulo :
+1. Nella finestra di dialogo Crea modello dati modulo:
 
-   * Specificare un nome per il modello dati del modulo.
-   * (**Facoltativo**) Specifica titolo, descrizione e tag per il modello dati del modulo.
-   * (**Facoltativo e applicabile solo se le origini dati sono configurate**) Tocca l’icona di spunta accanto a **[!UICONTROL Configurazione origine dati]** e seleziona il nodo di configurazione in cui risiedono i servizi cloud per le origini dati che desideri utilizzare. Limita l’elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, [!DNL Experience Manager] le origini dati del profilo utente sono elencate per impostazione predefinita. Se non selezioni un nodo di configurazione, vengono elencate le origini dati da tutti i nodi di configurazione.
+   * Specifica un nome per il modello dati del modulo.
+   * (**Facoltativo**) Specifica titolo, descrizione e tag per il modello di dati del modulo.
+   * (**Facoltativo e applicabile solo se le origini dati sono configurate** a) Toccare l&#39;icona di spunta accanto al **[!UICONTROL Configurazione origine dati]** e seleziona il nodo di configurazione in cui risiedono i servizi cloud per le origini dati che desideri utilizzare. Limita l’elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, qualsiasi [!DNL Experience Manager] le origini dati del profilo utente sono elencate per impostazione predefinita. Se non si seleziona un nodo di configurazione, vengono elencate le origini dati di tutti i nodi di configurazione.
 
 1. Tocca **[!UICONTROL Successivo]**.
 
-1. (**Applicabile solo se le origini dati sono configurate**) **[!UICONTROL Seleziona origine dati]** in questa schermata sono elencate le eventuali origini dati disponibili. Selezionare le origini dati da utilizzare nel modello dati del modulo.
-1. Tocca **[!UICONTROL Crea]** e nella finestra di dialogo di conferma, tocca **[!UICONTROL Apri]** per aprire l’editor per modelli dati modulo.
+1. (**Applicabile solo se le origini dati sono configurate**) La **[!UICONTROL Seleziona origine dati]** nella schermata sono elencate le origini dati disponibili, se presenti. Selezionare le origini dati da utilizzare nel modello dati del modulo.
+1. Tocca **[!UICONTROL Crea]** e nella finestra di dialogo di conferma tocca **[!UICONTROL Apri]** per aprire l’editor modello dati modulo.
 
-   Esaminiamo i diversi componenti dell’interfaccia utente dell’Editor modelli dati per moduli.
+   Esaminiamo i diversi componenti dell’interfaccia utente dell’editor del modello dati modulo.
 
-   ![Un modello dati modulo con tre origini dati: un servizio RESTful, [!DNL Experience Manager] profilo utente e un RDBMS](assets/fdm-ui.png)
+   ![Un modello di dati modulo con tre origini dati: un servizio RESTful, [!DNL Experience Manager] e un RDBMS](assets/fdm-ui.png)
 
-   A. **[!UICONTROL Origini dati]** Elenca le origini dati in un modello dati modulo. Espandere un’origine dati per visualizzare gli oggetti e i servizi del modello dati corrispondente.
+   R. **[!UICONTROL Origini dati]** Elenca le origini dati in un modello dati modulo. Espandere un&#39;origine dati per visualizzare i relativi servizi e oggetti modello dati.
 
-   B. **[!UICONTROL Aggiorna definizioni origine dati]** Recupera eventuali modifiche nelle definizioni dell’origine dati da origini dati configurate e le aggiorna nella scheda Origini dati dell’Editor modello dati modulo.
+   B. **[!UICONTROL Aggiorna definizioni origine dati]** Recupera eventuali modifiche nelle definizioni dell’origine dati dalle origini dati configurate e le aggiorna nella scheda Origini dati dell’editor modelli dati modulo.
 
-   C. **[!UICONTROL Modello]** Area contenuto in cui vengono visualizzati gli oggetti del modello dati aggiunti.
+   C. **[!UICONTROL Modello]** Area contenuto in cui vengono visualizzati gli oggetti modello dati aggiunti.
 
-   D. **[!UICONTROL Servizi]** Area contenuto in cui vengono visualizzate operazioni o servizi di origine dati aggiunti.
+   D. **[!UICONTROL Servizi]** Area del contenuto in cui vengono visualizzati operazioni o servizi dell&#39;origine dati aggiunti.
 
-   E. **[!UICONTROL Barra degli strumenti]** Strumenti per l’utilizzo del modello dati del modulo. La barra degli strumenti mostra più opzioni a seconda dell’oggetto selezionato nel modello dati del modulo.
+   E. **[!UICONTROL Barra degli strumenti]** Strumenti per utilizzare il modello dati del modulo. La barra degli strumenti mostra più opzioni a seconda dell’oggetto selezionato nel modello dati del modulo.
 
-   F. **[!UICONTROL Aggiungi selezionati]** Aggiunge oggetti e servizi del modello dati selezionati al modello dati del modulo.
+   F. **[!UICONTROL Aggiungi selezionati]** Aggiunge al modello dati del modulo gli oggetti e i servizi modello dati selezionati.
 
-Per ulteriori informazioni sull’editor di modelli dati modulo e su come utilizzarlo per modificare e configurare il modello dati modulo, consulta [Utilizzare il modello dati del modulo](work-with-form-data-model.md).
+Per ulteriori informazioni sull’editor del modello dati modulo e su come utilizzarlo per modificare e configurare il modello dati modulo, consulta [Utilizzare il modello dati del modulo](work-with-form-data-model.md).
 
-## Aggiorna origini dati {#update}
+## Aggiornare le origini dati {#update}
 
-Per aggiungere o aggiornare origini dati a un modello dati modulo esistente, procedere come segue.
+Per aggiungere o aggiornare origini dati a un modello dati modulo esistente, eseguire le operazioni seguenti.
 
-1. Vai a **[!UICONTROL Forms > Integrazioni dati]**, selezionare il Modello dati modulo in cui si desidera aggiungere o aggiornare le origini dati, quindi toccare **[!UICONTROL Proprietà]**.
-1. Nelle proprietà del modello dati modulo, passare alla **[!UICONTROL Aggiorna origine]** scheda .
+1. Vai a **[!UICONTROL Forms > Integrazioni dati]**, seleziona il modello dati modulo in cui desideri aggiungere o aggiornare le origini dati e tocca **[!UICONTROL Proprietà]**.
+1. Nelle proprietà del modello dati modulo, vai al **[!UICONTROL Aggiorna origine]** scheda.
 
    In **[!UICONTROL Aggiorna origine]** scheda:
 
-   * Tocca l’icona Sfoglia in **[!UICONTROL Configurazione in base al contesto]** e selezionare un nodo di configurazione in cui risiede la configurazione cloud per l&#39;origine dati che si desidera aggiungere. Se non selezioni un nodo, le configurazioni cloud risiedono solo nel `global` quando tocchi , vengono elencati i nodi **[!UICONTROL Aggiungi origini]**.
+   * Tocca l’icona Sfoglia in **[!UICONTROL Configurazione in base al contesto]** e selezionare un nodo di configurazione in cui risiede la configurazione cloud per l&#39;origine dati che si desidera aggiungere. Se non selezioni un nodo, le configurazioni cloud che risiedono solo nel `global` Il nodo viene elencato quando tocchi **[!UICONTROL Aggiungi origini]**.
 
-   * Per aggiungere una nuova origine dati, tocca **[!UICONTROL Aggiungi origini]** e selezionare le origini dati da aggiungere al modello dati del modulo. Tutte le origini dati configurate in `global` e viene visualizzato l&#39;eventuale nodo di configurazione selezionato.
+   * Per aggiungere una nuova origine dati, tocca **[!UICONTROL Aggiungi origini]** e seleziona le origini dati da aggiungere al modello dati del modulo. Tutte le origini dati configurate in `global` e viene visualizzato il nodo di configurazione selezionato, se presente.
 
-   * Per sostituire un’origine dati esistente con un’altra origine dati dello stesso tipo, tocca **[!UICONTROL Modifica]** per l’origine dati e seleziona dall’elenco delle origini dati disponibili.
-   * Per eliminare un’origine dati esistente, tocca **[!UICONTROL Elimina]** per l’origine dati. L’icona Elimina è disabilitata se un oggetto modello dati nell’origine dati viene aggiunto nel modello dati del modulo.
+   * Per sostituire un’origine dati esistente con un’altra origine dati dello stesso tipo, tocca il **[!UICONTROL Modifica]** per l&#39;origine dati e selezionarla dall&#39;elenco delle origini dati disponibili.
+   * Per eliminare un’origine dati esistente, tocca il **[!UICONTROL Elimina]** per l&#39;origine dati. L’icona Elimina è disabilitata se nel modello dati del modulo viene aggiunto un oggetto modello dati nell’origine dati.
 
-      ![proprietà fdm](assets/fdm-properties.png)
+      ![fdm-properties](assets/fdm-properties.png)
 
 1. Tocca **[!UICONTROL Salva e chiudi]** per salvare gli aggiornamenti.
 
 >[!NOTE]
 >
->Dopo aver aggiunto nuove origini dati o aggiornato le origini dati esistenti in un modello dati del modulo, assicurarsi di aggiornare i riferimenti di binding, come appropriato, in Forms adattivo<!--and interactive communications--> che utilizzano il modello dati del modulo aggiornato.
+>Dopo aver aggiunto nuove origini dati o aggiornato le origini dati esistenti in un modello dati del modulo, assicurati di aggiornare i riferimenti di associazione, a seconda delle necessità, in Adaptive Forms<!--and interactive communications--> che utilizzano il modello dati del modulo aggiornato.
 
 ## Configurazioni in base al contesto per modalità di esecuzione specifiche {#runmode-specific-context-aware-config}
 
-[!UICONTROL Modello dati modulo] utilizza [Configurazioni basate sul contesto Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) per supportare diversi parametri dell’origine dati per la connessione con origini dati diverse [!DNL Experience Manager] modalità di esecuzione.
+[!UICONTROL Modello dati modulo] utilizza [Configurazioni in base al contesto di Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) per supportare diversi parametri di origine dati per la connessione con origini dati per diversi [!DNL Experience Manager] modalità di esecuzione.
 
-Quando [!UICONTROL Modello dati modulo] utilizza le configurazioni cloud per memorizzare i parametri, che quando vengono archiviati e distribuiti tramite il controllo del codice sorgente (archivio GIT di Cloud-Manager) crea una configurazione cloud con gli stessi parametri per tutte le modalità di esecuzione (Sviluppo, Stage e Produzione). Tuttavia, per i casi d’uso in cui è necessario disporre di set di dati diversi per gli ambienti di test e produzione, utilizziamo i parametri dell’origine dati (ad esempio l’URL dell’origine dati) per diversi [!DNL Experience Manager] modalità di esecuzione.
+Quando [!UICONTROL Modello dati modulo] utilizza le configurazioni cloud per memorizzare i parametri, che quando vengono archiviati e distribuiti tramite il controllo del codice sorgente (archivio GIT di Cloud-Manager) creano una configurazione cloud con gli stessi parametri per tutte le modalità di esecuzione (Sviluppo, Stage e Produzione). Tuttavia, per i casi di utilizzo in cui è necessario disporre di set di dati diversi per ambienti di test e di produzione, utilizziamo i parametri dell’origine dati (ad esempio, URL dell’origine dati) per diversi [!DNL Experience Manager] modalità di esecuzione.
 
-A questo scopo, devi creare una configurazione OSGi che contenga coppie parametri-valore dell’origine dati. Questo sostituisce la stessa coppia da [!UICONTROL Modello dati modulo] configurazione cloud in fase di esecuzione. Poiché le configurazioni OSGi supportano queste modalità di esecuzione per impostazione predefinita, è possibile sostituire un parametro di origine dati con valori diversi in base alla modalità di esecuzione.
+A questo scopo, devi creare una configurazione OSGi che contenga coppie parametri-valore dell’origine dati. Questo sostituisce la stessa coppia da [!UICONTROL Modello dati modulo] configurazione cloud in fase di esecuzione. Poiché le configurazioni OSGi supportano queste modalità di esecuzione per impostazione predefinita, puoi sostituire un parametro dell’origine dati con valori diversi in base alla modalità di esecuzione.
 
-Per abilitare configurazioni cloud specifiche per la distribuzione in [!UICONTROL Modello dati modulo]:
+Per abilitare le configurazioni cloud specifiche per l’implementazione in [!UICONTROL Modello dati modulo]:
 
-1. Crea la configurazione cloud nell’istanza di sviluppo locale. Per i passaggi dettagliati vedi [Come configurare le origini dati](/help/forms/configure-data-sources.md).
+1. Crea la configurazione cloud nell’istanza di sviluppo locale. Per i passaggi dettagliati, consulta [Come configurare le origini dati](/help/forms/configure-data-sources.md).
 
-1. Archivia la configurazione cloud nel file system.
-   1. Crea pacchetto con filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Usa lo stesso `{foldername}` come al punto 1. E sostituiscono `fdm` con `azurestorage` per la configurazione di archiviazione di Azure.
-   1. Crea e scarica il pacchetto. Per maggiori dettagli, vedi [azioni pacchetto](/help/implementing/developing/tools/package-manager.md).
+1. Memorizza la configurazione cloud nel file system.
+   1. Crea pacchetto con filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Usa lo stesso `{foldername}` come nel passaggio 1. E sostituisci `fdm` con `azurestorage` per la configurazione dell’archiviazione Azure.
+   1. Creare e scaricare il pacchetto. Per ulteriori informazioni, consulta [azioni del pacchetto](/help/implementing/developing/tools/package-manager.md).
 
-1. Integrare la configurazione cloud in [!DNL Experience Manager] Progetto Archetype.
+1. Integrare la configurazione cloud in [!DNL Experience Manager] Progetto Archetipo.
    1. Decomprimi il pacchetto scaricato.
-   1. Copia `jcr_root` e inseriscila nella cartella `ui.content` > `src` > `main` > `content`.
-   1. Aggiorna `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` per contenere il filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Per maggiori dettagli, vedi [modulo ui.content di AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Quando questo progetto archetipo viene distribuito tramite la pipeline CM, la stessa configurazione cloud viene installata su tutti gli ambienti (o modalità runmode). Per modificare il valore dei campi (come URL) delle configurazioni cloud basate sull’ambiente, utilizza la configurazione OSGi descritta nel passaggio seguente.
+   1. Copia `jcr_root` e inseriscilo nella tua cartella `ui.content` > `src` > `main` > `content`.
+   1. Aggiorna `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` per contenere il filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Per ulteriori informazioni, consulta [Modulo ui.content di Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Quando questo progetto di archetipo viene distribuito tramite la pipeline CM, la stessa configurazione cloud viene installata in tutti gli ambienti (o modalità di esecuzione). Per modificare il valore dei campi (come URL) delle configurazioni cloud basate sull’ambiente, utilizza la configurazione OSGi descritta nel passaggio seguente.
 
-1. Crea una configurazione in base al contesto Apache Sling. Per creare la configurazione OSGi:
-   1. **Configurare i file di configurazione OSGi in [!DNL Experience Manager] Progetto Archetype.**
-Creare file di configurazione OSGi Factory con PID 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Crea un file con lo stesso nome in ciascuna cartella della modalità di esecuzione in cui i valori devono essere modificati in base alla modalità di esecuzione. Per maggiori dettagli, vedi [Configurazione di OSGi per [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+1. Crea una configurazione in base al contesto di Apache Sling. Per creare la configurazione OSGi:
+   1. **Configurare i file di configurazione OSGi in [!DNL Experience Manager] Progetto Archetipo.**
+Creare file di configurazione di fabbrica OSGi con PID 
+`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Creare un file con lo stesso nome in ogni cartella della modalità di esecuzione in cui è necessario modificare i valori per ogni modalità di esecuzione. Per ulteriori informazioni, consulta [Configurazione di OSGi per [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
-   1. **Imposta il json di configurazione OSGI.** Per utilizzare il provider di sostituzione della configurazione in base al contesto Apache Sling:
-      1. Su un&#39;istanza di sviluppo locale `/system/console/configMgr`, seleziona la configurazione OSGi di fabbrica con il nome **[!UICONTROL Provider di sostituzione della configurazione in base al contesto Apache Sling: Configurazione OSGi]**.
+   1. **Imposta il codice JSON di configurazione OSGI.** Per utilizzare il provider di override della configurazione in base al contesto di Apache Sling:
+      1. Sull’istanza di sviluppo locale `/system/console/configMgr`, seleziona factory OSGi configuration (Configurazione OSGi in fabbrica) con il nome **[!UICONTROL Provider di sostituzione configurazione in base al contesto Apache Sling: configurazione OSGi]**.
       1. Fornisci una descrizione.
       1. Seleziona **[!UICONTROL abilitato]**.
-      1. In Sostituzioni, fornisci i campi che devono essere modificati in base all’ambiente nella sintassi di sostituzione sling. Per maggiori dettagli, vedi [Configurazione in base al contesto Apache Sling - Ignora](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Esempio: `cloudconfigs/fdm/{configName}/url="newURL"`.
+      1. In sostituzioni, fornisci i campi che devono essere modificati in base all’ambiente nella sintassi di sostituzione Sling. Per ulteriori informazioni, consulta [Configurazione in base al contesto di Apache Sling - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Esempio, `cloudconfigs/fdm/{configName}/url="newURL"`.
 È possibile aggiungere più sostituzioni selezionando **[!UICONTROL +]**.
       1. Seleziona **[!UICONTROL Salva]**.
-      1. Per ottenere il JSON di configurazione OSGi, segui i passaggi in [Generazione di configurazioni OSGi tramite l’SDK Quickstart AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
-      1. Posiziona JSON nei file di configurazione di fabbrica OSGi creati nel passaggio precedente.
-      1. Modifica il valore di `newURL` in base all&#39;ambiente (o modalità runmode).
-      1. Per modificare il valore segreto in base alla modalità di esecuzione, è possibile creare una variabile segreta utilizzando [API di cloud manager](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e successivamente possono essere referenziati nel [Configurazione OSGi](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
-Quando questo progetto archetipo viene distribuito tramite la pipeline CM, override fornisce valori diversi in ambienti diversi (o modalità di esecuzione).
+      1. Per ottenere il JSON di configurazione OSGi, segui i passaggi descritti in [Generazione di configurazioni OSGi tramite QuickStart per SDK AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
+      1. Inserisci JSON nei file di configurazione di fabbrica OSGi creati nel passaggio precedente.
+      1. Modifica il valore di `newURL` in base all’ambiente (o in modalità di esecuzione).
+      1. Per modificare il valore segreto in base alla modalità di esecuzione, è possibile creare una variabile segreta utilizzando [API di cloud manager](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e versioni successive possono essere utilizzate nella [Configurazione OSGi](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
+Quando questo progetto di archetipo viene distribuito tramite pipeline CM, l’override fornirà valori diversi in ambienti diversi (o in modalità di esecuzione).
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] gli utenti possono crittografare i valori segreti utilizzando il supporto di crypto (per ulteriori informazioni, consulta [supporto per la crittografia delle proprietà di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) e inserire testo crittografato nel valore dopo [le configurazioni in base al contesto sono disponibili in service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
+      >[!DNL Adobe Managed Service] gli utenti possono crittografare i valori segreti utilizzando il supporto di crittografia (per i dettagli, vedi [supporto della crittografia per le proprietà di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) e inserisci il testo crittografato nel valore dopo [configurazioni in base al contesto disponibili in service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
 
-1. Aggiornare le definizioni delle origini dati utilizzando l’opzione per aggiornare le definizioni delle origini dati in [Editor modelli dati modulo](#data-sources) per aggiornare la cache FDM tramite l’interfaccia utente FDM e ottenere la configurazione più recente.
+1. Aggiornare le definizioni dell&#39;origine dati utilizzando l&#39;opzione per aggiornare le definizioni dell&#39;origine dati in [Editor modello dati modulo](#data-sources) per aggiornare la cache FDM tramite l’interfaccia utente di FDM e ottenere la configurazione più recente.
 
 ## Passaggi successivi {#next-steps}
 
-È ora disponibile un modello dati modulo con origini dati aggiunte. È quindi possibile modificare il modello dati modulo per aggiungere e configurare oggetti e servizi del modello dati, aggiungere associazioni tra oggetti del modello dati, modificare le proprietà, aggiungere oggetti e proprietà del modello dati personalizzato, generare dati di esempio e così via.
+Ora disponi di un modello dati modulo con origini dati aggiunte. È quindi possibile modificare il modello dati modulo per aggiungere e configurare oggetti e servizi del modello dati, aggiungere associazioni tra oggetti del modello dati, modificare proprietà, aggiungere oggetti e proprietà del modello dati personalizzato, generare dati di esempio e così via.
 
 Per ulteriori informazioni, consulta [Utilizzare il modello dati del modulo](work-with-form-data-model.md).
