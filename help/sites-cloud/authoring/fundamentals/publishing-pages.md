@@ -140,6 +140,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
       >[!NOTE]
       >
       >Per annullare un’attività di pubblicazione, anche programmata per un momento successivo, accedete alla [console Flusso di lavoro](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) e interrompete il flusso di lavoro corrispondente.
+
    ![Opzioni di Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Fai clic su **Avanti** per continuare.
