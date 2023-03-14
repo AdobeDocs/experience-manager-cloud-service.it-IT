@@ -3,9 +3,9 @@ title: Introduzione a [!DNL AEM Forms] as a Cloud Service
 description: Scopri AEM Forms e come ti consente di produrre moduli e documenti pronti per l’azienda. Scopri Platform-as-a-Service (PaaS) e come gestire moduli digitali e processi aziendali di classe enterprise, nonché come collegare Forms ad Adobe Sign e alle origini dati correnti.
 landing-page-description: Scopri come utilizzare i moduli in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: fa8629fefe3ad29f70213b15bb31623a2f7d5420
+source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1092'
 ht-degree: 4%
 
 ---
@@ -25,9 +25,6 @@ Puoi utilizzare il servizio per creare e distribuire moduli digitali interattivi
 
 L’organizzazione può utilizzare [!DNL AEM Forms] as a Cloud Service per la creazione di moduli digitali, la connessione di moduli a origini dati esistenti e l&#39;integrazione di moduli con [!DNL Adobe Sign] aggiungere firme elettroniche ai moduli e generare documenti di record (DoR) per archiviare i moduli inviati come file PDF. L’organizzazione può inoltre utilizzare il servizio per convertire i PDF forms esistenti in moduli digitali.
 
-![Progettazione modulo reattivo](/help/forms/assets/data-collection.jpeg "Esperienze Forms adattive per più dispositivi"){width="70%" align="center"}
-
-
 Nelle grandi aziende, i moduli vengono spesso creati una volta e riutilizzati copiandoli in un sistema di gestione dei contenuti. Mantenere aggiornato un ampio database di moduli e renderli individuabili può essere una sfida considerevole. AEM fornisce un portale Forms personalizzabile che consente ai clienti di trovare e accedere ai moduli necessari sia sui canali web che mobili. Puoi personalizzare l’aspetto, il marchio e i logo di Forms Portal in base ai requisiti specifici della tua organizzazione.
 
 ## Distribuire comunicazioni personalizzate
@@ -36,16 +33,13 @@ Un componente importante di un’esperienza digitale self-service efficiente è 
 
 Utilizzando AEM Forms, gli utenti aziendali possono creare esperienze utente personalizzate e coinvolgenti personalizzando i modelli di documento e incorporando informazioni dai processi back-end ai modelli. Un set di API intuitive consente alle aziende di impostare regole che decidono quando generare una comunicazione basata su un’interrogazione o a intervalli regolari in batch.
 
-![Fattura personalizzata](/help/forms/assets/personalized-communication.jpeg "Fatture PDF personalizzate generate su richiesta"){width="70%" align="center"}
 
 È possibile generare facilmente documenti personalizzati come ricevute, kit di benvenuto e rendiconti. Le organizzazioni possono indirizzare il traffico verso portali web personalizzati, con conseguente registrazione o acquisto di servizi aggiuntivi.
 
 
 ## Automatizzare i flussi di lavoro back-office
 
-Utilizzare flussi di lavoro incentrati sui moduli per automatizzare l&#39;elaborazione e l&#39;instradamento dei dati dei moduli a varie parti interessate, ad esempio responsabili o reparti, per la revisione, l&#39;approvazione o l&#39;ulteriore elaborazione.
-
-Questi flussi di lavoro consentono all&#39;organizzazione di ridurre al minimo i rischi e di mantenere la conformità garantendo un&#39;elaborazione coerente e verificabile dei dati dei moduli, automatizzando le attività manuali, fornendo un controllo dell&#39;accesso basato sui ruoli e aiutando a rispettare i requisiti normativi.
+Utilizzare flussi di lavoro incentrati sui moduli per automatizzare l&#39;elaborazione e l&#39;instradamento dei dati dei moduli a varie parti interessate, ad esempio responsabili o reparti, per la revisione, l&#39;approvazione o l&#39;ulteriore elaborazione. Questi flussi di lavoro consentono all&#39;organizzazione di ridurre al minimo i rischi e di mantenere la conformità garantendo un&#39;elaborazione coerente e verificabile dei dati dei moduli, automatizzando le attività manuali, fornendo un controllo dell&#39;accesso basato sui ruoli e aiutando a rispettare i requisiti normativi.
 
 
 ## Ottimizzare le prestazioni dei moduli
