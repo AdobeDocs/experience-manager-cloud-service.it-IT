@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4c5c5eed984dcc9361ae2316ce466b4a73c0bf19
+source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
 workflow-type: tm+mt
-source-wordcount: '3969'
+source-wordcount: '3971'
 ht-degree: 94%
 
 ---
@@ -539,6 +539,7 @@ ht-degree: 94%
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
             + [Genera documento di record per Forms adattivo](/help/forms/generate-document-of-record-core-components.md)
+            + [Cartella di lavoro Summit](/help/forms/summit-2023-workbook.md)
       + Authoring di Forms adattivi - Componenti di base {#authoring-adaptive-forms-foundation-components}
          + Conversione dei PDF forms in Forms adattivo {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
