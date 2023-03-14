@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 614d15838665306d01140048e35fc265b9f7b5e1
+source-git-commit: 8cacd31d6db387b3525b17649a93047acad81ee3
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 8%
@@ -66,8 +66,9 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 | SGI | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
+| WebP | ✓ | ✓ | ✓ | ✓ |
 
-## 3Formati D {#support-3d-formats}
+## Formati 3D {#support-3d-formats}
 
 Sono supportati i seguenti formati 3D.
 
