@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d6d7fefce814063476aae8cdafc9cc6b084361a3
+source-git-commit: 4c5c5eed984dcc9361ae2316ce466b4a73c0bf19
 workflow-type: tm+mt
-source-wordcount: '3967'
+source-wordcount: '3969'
 ht-degree: 94%
 
 ---
@@ -941,6 +941,7 @@ ht-degree: 94%
    + [Manutenzione di un connettore AEM](/help/connectors/maintain.md)
 + Operazioni {#operations}
    + [Operazioni e manutenzione in AEM as a Cloud Service](/help/operations/home.md)
+   + [Centro notifiche](/help/operations/notification-center.md)
    + [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md)
    + [Servizio di replica dei contenuti](/help/operations/replication.md)
    + [Monitoraggio dell’infrastruttura e dei servizi in AEM as a Cloud Service](/help/operations/monitoring.md)
