@@ -3,10 +3,10 @@ title: Pipeline CI/CD
 description: Scopri le pipeline CI/CD di Cloud Manager e come utilizzarle per distribuire il codice in modo efficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 100%
+source-wordcount: '1367'
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ Le pipeline full stack possono essere di qualità del codice o di distribuzione.
 
 ## Pipeline front-end {#front-end}
 
-Per codice front-end si intende qualsiasi codice utilizzato come file statico. È separato dal codice dell’interfaccia utente fornito da AEM e può includere temi del sito, applicazioni SPA definite dal cliente, Firefly SPA e altre soluzioni.
+Per codice front-end si intende qualsiasi codice utilizzato come file statico. È separato dal codice dell’interfaccia utente gestito da AEM e può includere temi del sito, SPA definiti dal cliente, SPA e altre soluzioni.
 
 Grazie alle pipeline front-end i team possono semplificare il processo di progettazione e sviluppo con una distribuzione più rapida del codice front-end in modo asincrono rispetto allo sviluppo back-end. Questa pipeline dedicata distribuisce JavaScript e CSS al livello di distribuzione AEM come tema, dando luogo a una nuova versione del tema a cui è possibile fare riferimento dalle pagine di AEM.
 
