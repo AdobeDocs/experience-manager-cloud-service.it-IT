@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
+source-git-commit: 5c4248d520cb0f956206d76692041ef980099002
 workflow-type: tm+mt
-source-wordcount: '3971'
+source-wordcount: '3975'
 ht-degree: 94%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 94%
    + Note sulla versione di manutenzione di AEMaaCS {#maintenance}
       + [Note sulla versione di manutenzione più recente](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [Note sulla versione di manutenzione 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [Note sulla versione di manutenzione per 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Note sulla versione per Cloud Manager {#cloud-manager}
       + [Note sulla versione corrente](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
@@ -201,7 +201,7 @@ ht-degree: 94%
          + [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Convalida dei trasferimenti di contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [Mappatura utente e migrazione principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [Estrazione del contenuto dall’origine](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Inserimento di contenuto in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Visualizzazione dei registri di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
@@ -505,7 +505,7 @@ ht-degree: 94%
 + Forms {#forms}
    + Panoramica {#forms-overview}
       + [Introduzione](/help/forms/home.md)
-      + [Ultime innovazioni](/help/forms/latest-innovations.md)
+      + [Innovazioni principali di Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
       + [Modifiche di rilievo](/help/forms/notable-changes.md)
       + [Architettura](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Domande frequenti](/help/forms/faq.md)
@@ -514,7 +514,7 @@ ht-degree: 94%
       + [Ambiente integrato a Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configurare un ambiente di sviluppo locale](/help/forms/setup-local-development-environment.md)
       + [Configura connettore di archiviazione unificata](/help/forms/configure-unified-storage-connector.md)
-      + [Migra da [!DNL AEM 6.5 Forms] o prima di [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [Esegui migrazione da [!DNL AEM 6.5 Forms] o prima di [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppi e autorizzazioni](/help/forms/forms-groups-privileges-tasks.md)
       + [Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse](/help/forms/import-export-forms-templates.md)
    + Integrare {#integrate}
@@ -534,14 +534,14 @@ ht-degree: 94%
          + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
    + Moduli adattivi {#adaptive-forms-authoring}
-      + Authoring di Forms adattivi: componenti core {#authoring-adaptive-forms-core-components}
+      + Authoring di Forms adattivo - Componenti core {#authoring-adaptive-forms-core-components}
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
-            + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
+            + [Creare temi per un modulo adattivo - Componenti core](/help/forms/using-themes-in-core-components.md)
             + [Genera documento di record per Forms adattivo](/help/forms/generate-document-of-record-core-components.md)
-            + [Cartella di lavoro Summit](/help/forms/summit-2023-workbook.md)
-      + Authoring di Forms adattivi - Componenti di base {#authoring-adaptive-forms-foundation-components}
-         + Conversione dei PDF forms in Forms adattivo {#afcs}
+            + [Cartella di lavoro del vertice](/help/forms/summit-2023-workbook.md)
+      + Authoring di Forms adattivo - Componenti di base {#authoring-adaptive-forms-foundation-components}
+         + Conversione di PDF forms in Forms adattivo {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
             + [Convertire un modulo PDF esistente in un modulo adattivo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=it)
             + [Revisione dei moduli convertiti](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=it#welcome-to-review-and-correct-editor)
@@ -575,15 +575,15 @@ ht-degree: 94%
             + [Creare un’azione di invio personalizzata](/help/forms/custom-submit-action-form.md)
          + [Precompilare i campi di un modulo adattivo](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Genera documento di record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-         + [Aggiunta del supporto per nuove lingue a un modulo adattivo](/help/forms/supporting-new-language-localization.md)
+         + [Aggiunta del supporto per nuove impostazioni internazionali a un modulo adattivo](/help/forms/supporting-new-language-localization.md)
          + Aggiungere o migliorare i metadati {#manage-metadata}
             + [Aggiungere, rimuovere o modificare i metadati di un modulo adattivo](/help/forms/manage-form-metadata.md)
             + [Riutilizzare le proprietà dei metadati di un modulo adattivo](/help/forms/reusing-adaptive-forms.md)
          + Migliorare l’accessibilità di un modulo adattivo {#accessible-adaptive-forms}
             + [Creare un modulo adattivo accessibile](/help/forms/creating-accessible-adaptive-forms.md)
          + [Configurare Forms Portal](/help/forms/configure-forms-portal.md)
-         + [Creare e gestire le recensioni](/help/forms/create-reviews-forms.md)
-   + Flussi di lavoro incentrati su Forms {#create-form-centric-workflows}
+         + [Creazione e gestione delle revisioni](/help/forms/create-reviews-forms.md)
+   + Flussi di lavoro centrati su Forms {#create-form-centric-workflows}
       + [Utilizzare passaggi incentrati su Forms in un flusso di lavoro + riferimento a passaggi](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilizzare le variabili in un flusso di lavoro incentrato su Forms](/help/forms/variable-in-aem-workflows.md)
       + [Utilizzare l&#39;opzione Fuori sede](/help/forms/configure-out-of-office-settings.md)
@@ -597,7 +597,7 @@ ht-degree: 94%
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)
    + Riferimento API per sviluppatori {#aem-forms-developer-api-reference}
       + [Riferimento API per le comunicazioni di Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [Riferimento API per JavaScript di Cloud Service AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [Riferimento API JavaScript di AEM Forms Cloud Service](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [Riferimento API Java di AEM Forms Cloud Service](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + Risoluzione dei problemi {#troubleshooting-aem-forms-cloud-service}
       + [Installazione e configurazione](/help/forms/troubleshooting-installation-and-configuration.md)
@@ -704,7 +704,7 @@ ht-degree: 94%
       + [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
       + [Query GraphQL persistenti](/help/headless/graphql-api/persisted-queries.md)
       + [Ottimizzazione delle query GraphQL](/help/headless/graphql-api/graphql-optimization.md)
-      + [Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+      + [Aggiornamento dei frammenti di contenuto per filtri GraphQL ottimizzati](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Query di esempio GraphQL](/help/headless/graphql-api/sample-queries.md)
    + [API REST per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=it)
    + Sicurezza {#security}
@@ -818,7 +818,7 @@ ht-degree: 94%
       + [Fondamenti tecnici AEM](/help/implementing/developing/introduction/aem-technologies.md)
       + [Materiali di riferimento API](/help/implementing/developing/reference-materials.md)
       + [Generazione dei token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + [Generazione dei token di accesso per le API lato server (legacy)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
+      + [Generazione di token di accesso per API lato server (legacy)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [Creazione rapida di siti e personalizzazione front-end](/help/implementing/developing/introduction/quick-site-creation.md)
       + [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [Personalizzazione di modelli e temi del sito](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
