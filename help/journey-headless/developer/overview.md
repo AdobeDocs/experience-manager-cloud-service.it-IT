@@ -18,9 +18,9 @@ Scopri le funzioni headless potenti e flessibili, le loro funzionalità e come s
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
->title="Risorse per sviluppatori headless AEM e documentazione avanzata"
->abstract="Tutto il necessario per scoprire il CMS headless dell’AEM e creare e distribuire applicazioni migliori ed esperienze più veloci."
->additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it" text="Risorse per sviluppatori headless AEM"
+>title="Risorse per sviluppatori AEM Headless e documentazione avanzata"
+>abstract="Tutto ciò che ti serve per scoprire AEM CMS headless e creare e distribuire applicazioni migliori ed esperienze più veloci."
+>additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it" text="Risorse per sviluppatori AEM Headless"
 
 ## Introduzione {#introduction}
 
