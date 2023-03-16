@@ -2,10 +2,10 @@
 title: Panoramica dei test di Cloud Manager
 description: Ottieni una panoramica dei tre tipi di test eseguiti automaticamente da Cloud Manager per garantire la qualità del codice personalizzato.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: 94f818b7622e0f878d15ba30e2f07a169bd114c3
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 100%
+source-wordcount: '164'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Manager supporta tre categorie di test per le pipeline di Cloud Service.
 
 1. [Test funzionali](/help/implementing/cloud-manager/functional-testing.md)
 
-   * I test funzionali costituiscono una parte della fase di test dell’ambiente di staging di una pipeline di produzione.
+   * La prova funzionale fa parte della fase di prova di fase di un [conduttura di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ed eventualmente parte della fase di prova di un [pipeline non di produzione.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
 1. [Test dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
 

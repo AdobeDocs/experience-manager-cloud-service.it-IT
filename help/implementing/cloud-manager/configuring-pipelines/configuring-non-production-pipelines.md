@@ -3,10 +3,10 @@ title: Configurazione delle pipeline non di produzione
 description: Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 100%
+source-wordcount: '1369'
+ht-degree: 90%
 
 ---
 
@@ -38,7 +38,10 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
 
    ![Aggiungi pipeline non di produzione](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Dalla scheda **Configurazione** della finestra di dialogo **Aggiungi pipeline non di produzione**, seleziona il tipo di pipeline non di produzione che desideri aggiungere tra **Pipeline di qualità del codice** o **Pipeline di distribuzione**.
+1. Dalla scheda **Configurazione** della finestra di dialogo **Aggiungi pipeline non di produzione**, seleziona il tipo di pipeline non di produzione che desideri aggiungere.
+
+   * **Pipeline di qualità del codice** - Crea una pipeline che genera il codice, esegue unit test e valuta la qualità del codice, ma NON la distribuisce.
+   * **Pipeline di distribuzione** - Crea una pipeline che genera il codice, esegue unit test, valuta la qualità del codice e distribuisce in un ambiente.
 
    ![Finestra di dialogo Aggiungi pipeline non di produzione](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -48,6 +51,12 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
 
       * **Manuale**: per avviare la pipeline manualmente.
       * **Alla modifica Git**: per avviare la pipeline CI/CD ogni volta che vengono aggiunti dei commit al ramo Git configurato. Con questa opzione è comunque possibile avviare la pipeline manualmente secondo necessità.
+
+1. Se scegli di creare un **Pipeline di distribuzione** dovrai inoltre definire le **Comportamento di errori di metrica importanti**.
+
+   * **Chiedi ogni volta**: impostazione predefinita che richiede l’intervento manuale per tutti gli errori importanti.
+   * **Interrompi subito**: selezionando questa opzione, la pipeline viene annullata ogni volta che si verifica un errore importante. In sostanza, quest’opzione simula un utente che rifiuta manualmente ogni errore.
+   * **Continua immediatamente**: selezionando questa opzione, la pipeline avanza automaticamente ogni volta che si verifica un errore importante. In sostanza, quest’opzione simula un utente che approva manualmente ogni errore.
 
 1. Fai clic su **Continua**.
 
@@ -106,6 +115,12 @@ Per completare la configurazione della pipeline non di produzione del codice ful
    * **Ramo Git**: definisce il ramo della pipeline selezionata dal quale recuperare il codice.
       * Digitando i primi caratteri del nome del ramo, la funzione di completamento automatico del campo troverà i rami corrispondenti per supportare nella selezione.
    * **Ignora configurazione a livello web**: se l’opzione è selezionata, la pipeline non distribuisce la configurazione a livello web.
+
+   * **Pipeline** - Se la pipeline è una pipeline di distribuzione, puoi scegliere di eseguire una fase di test. Controlla le opzioni che desideri abilitare in questa fase. Se non è selezionata alcuna delle opzioni, la fase di test non verrà visualizzata durante l’esecuzione della pipeline.
+
+      * **Test funzionale del prodotto** - Esegui [test funzionali del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) contro l&#39;ambiente di sviluppo.
+      * **Test funzionale personalizzato** - Esegui [test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) contro l&#39;ambiente di sviluppo.
+      * **Test personalizzati dell&#39;interfaccia utente** - Esegui [test personalizzati dell&#39;interfaccia utente](/help/implementing/cloud-manager/ui-testing.md) per applicazioni personalizzate.
 
    ![Pipeline full stack](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
