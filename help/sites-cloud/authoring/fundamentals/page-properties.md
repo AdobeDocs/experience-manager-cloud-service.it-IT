@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: d0a698a8f8685b1e5957a9d93d805ca3f825354a
+source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 100%
+source-wordcount: '2428'
+ht-degree: 82%
 
 ---
 
@@ -37,10 +37,12 @@ Le proprietà sono distribuite su più schede.
 
    Applica un’identità del brand coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l’utilizzo del Componente Pagina dalla versione 2.14.0 o successiva di [Componenti Core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 
-   * **Override**: selezionalo per definire il marchio su questa pagina.
-      * Il valore viene ereditato da tutte le pagine figlie a meno che non abbiano impostati anche i loro valori **Override**.
-   * **Valore di override**: testo del marchio da aggiungere al titolo della pagina.
-      * Il valore viene aggiunto al titolo della pagina dopo un carattere di barra come &quot;Cycling Tuscany | Always ready for the WKND&quot;
+   * **Brand Slug**
+
+      * **Override**: selezionalo per definire il marchio su questa pagina.
+         * Il valore viene ereditato da tutte le pagine figlie a meno che non abbiano impostati anche i loro valori **Override**.
+      * **Valore di override**: testo del marchio da aggiungere al titolo della pagina.
+         * Il valore viene aggiunto al titolo della pagina dopo un carattere di barra come &quot;Cycling Tuscany | Always ready for the WKND&quot;
 
 * **ID HTML**
 
@@ -105,14 +107,13 @@ Le proprietà sono distribuite su più schede.
       * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
       * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
       * Le pagine a cui si accede tramite alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
-
-   <!--
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-  -->
+      * Per maggiori dettagli vedi [Nomi di pagina localizzati nelle best practice SEO (Search Engine Optimization) e Gestione URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configurazione**
 
-   * **Configurazione cloud**: il percorso della configurazione
+   * **Ereditato da &lt;path>** - abilitare/disabilitare l&#39;ereditarietà; alternanza della disponibilità di **Configurazione cloud** per la selezione
+
+   * **Configurazione cloud** - Il percorso della configurazione selezionata
 
 * **Impostazioni modello**
 
@@ -132,14 +133,40 @@ Le proprietà sono distribuite su più schede.
 
    * **Configurazione di esportazione**: specifica una configurazione di esportazione
 
-### Miniatura  {#thumbnail}
+* **SEO**
 
-Configurare la miniatura della pagina
+   * **Url Canonico** - può essere utilizzato per sovrascrivere l’URL canonico della pagina; se lasciato vuoto, l’URL della pagina sarà il relativo URL canonico
 
-* **Genera anteprima**: genera un’anteprima della pagina da usare come miniatura
-* **Carica immagine**: consente di caricare un’immagine da usare come miniatura
-* **Seleziona immagine**: seleziona una risorsa esistente da usare come miniatura
-* **Annulla**: questa opzione diventa disponibile dopo aver apportato una modifica alla miniatura. Se non desideri mantenere la modifica, puoi ripristinarla prima di salvare.
+   * **Tag robot** - selezionare i tag robot per controllare il comportamento dei crawler dei motori di ricerca.
+
+      >[!NOTE]
+      >
+      >Alcune delle opzioni sono in conflitto tra loro. In caso di conflitto, l&#39;opzione più permissiva ha la precedenza.
+
+   * **Genera mappa del sito** - se selezionato, per questa pagina verrà generato un sitemap.xml e i relativi discendenti
+
+### Immagini {#images}
+
+* **Immagine in primo piano**
+
+   Seleziona e configura l’immagine da presentare. Viene utilizzato nei componenti che fanno riferimento alla pagina; ad esempio teaser, elenchi di pagine e così via
+
+   * **Immagine**
+
+      È possibile **Selezione** una risorsa, oppure cerca un file da caricare, quindi **Modifica** oppure **Cancella**.
+
+   * **Testo alternativo** - un testo utilizzato per rappresentare il significato e/o la funzione dell&#39;immagine; ad esempio, per gli assistenti vocali.
+
+   * **Eredita - Valore tratto dalla risorsa DAM** - se questa opzione è selezionata, il testo alternativo verrà compilato con il valore `dc:description`metadati in DAM
+
+* **Miniatura**
+
+   Configurare la miniatura della pagina
+
+   * **Genera anteprima**: genera un’anteprima della pagina da usare come miniatura
+   * **Carica immagine**: consente di caricare un’immagine da usare come miniatura
+   * **Seleziona immagine**: seleziona una risorsa esistente da usare come miniatura
+   * **Annulla**: questa opzione diventa disponibile dopo aver apportato una modifica alla miniatura. Se non desideri mantenere la modifica, puoi ripristinarla prima di salvare.
 
 ### Social media {#social-media}
 
@@ -156,12 +183,11 @@ Configurare la miniatura della pagina
 
 * **Configurazioni Servizi cloud**: definizione delle proprietà per i servizi cloud
 
-   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
-  -->
-
 ### Personalizzazione {#personalization}
 
 * **Configurazioni ContextHub**
+
+   * **Ereditato da &lt;path>** - abilitare/disabilitare l&#39;ereditarietà; alternanza della disponibilità di **Percorso ContextHub** e **Percorso segmenti** per la selezione
 
    * **Percorso ContextHub**: definizione della [Configurazione ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **Percorso segmenti**: definizione dell [Percorso dei segmenti](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -176,15 +202,9 @@ Configurare la miniatura della pagina
 
 * **Autorizzazioni**
 
-   * Aggiungere autorizzazioni
-   * Modificare un gruppo utenti chiuso
-   * Visualizzare le autorizzazioni effettive
-
-   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-
-   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-
-   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * **Aggiungere autorizzazioni**
+   * **Modificare un gruppo utenti chiuso**
+   * Visualizzare le **Autorizzazioni effettive**
 
 ### Blueprint {#blueprint}
 
@@ -195,6 +215,8 @@ Questa scheda è visibile solo per le pagine che fungono da blueprint. Le bluepr
 * **Configurazioni di Rollout**: controlla le circostanze in cui le modifiche verranno propagate alla Live Copy
 
 ### Live Copy  {#live-copy}
+
+Questa scheda è visibile solo per le pagine configurate come Live Copy.
 
 * **Sincronizza**: sincronizza le Live Copy con blueprint, mantenendo le modifiche locali
 * **Ripristina**: ripristina le Live Copy allo stato di blueprint, rimuovendo le modifiche locali
@@ -220,6 +242,33 @@ Questa scheda è visibile solo per le pagine che fungono da blueprint. Le bluepr
 Quando un ambiente di anteprima è abilitato, vengono visualizzati i seguenti elementi:
 
 * URL anteprima: URL utilizzato per accedere al contenuto nell’ambiente di anteprima
+
+### App web progressiva {#progressive-web-app}
+
+Grazie a una configurazione semplice, un autore di contenuti può ora abilitare le funzioni dell’app web progressiva (progressive web app, PWA) per le esperienze create in AEM Sites.
+
+>[!NOTE]
+>
+>Per maggiori dettagli vedi [Abilitazione delle funzioni progressive delle app web](/help/sites-cloud/authoring/features/enable-pwa.md).
+
+* **Configura esperienza installabile**
+
+   * **Abilita PWA** - attivare/disattivare la funzione; consente agli utenti di installare il sito come PWA
+   * **StartupURL** - URL di avvio preferito
+   * **Modalità di visualizzazione** - come il browser deve essere nascosto o altrimenti presentato all&#39;utente sul dispositivo locale
+   * **Orientamento dello schermo** - come PWA gestirà gli orientamenti del dispositivo
+   * **Colore tema** - il colore dell’app che influisce sul modo in cui il sistema operativo dell’utente locale visualizza la barra degli strumenti dell’interfaccia utente nativa e i controlli di navigazione
+   * **Colore di sfondo** - il colore di sfondo dell’app, visualizzato durante il caricamento dell’app
+   * **Icona** - l’icona che rappresenta l’app sul dispositivo dell’utente
+
+* **Gestione della cache (avanzata)**
+
+   * **Strategia di memorizzazione in cache e frequenza di aggiornamento dei contenuti** - definisce il modello di caching per PWA
+   * **File da memorizzare nella cache per uso offline**
+      * **Pre-memorizzazione in cache dei file (anteprima tecnica)** - i file in hosting su AEM verranno salvati nella cache del browser locale quando il service worker sta installando e prima di utilizzarli
+      * **Librerie lato client** - librerie lato client per memorizzare in cache l’esperienza offline
+      * **inclusioni di percorso** - le richieste di rete per i percorsi definiti vengono intercettate e il contenuto nella cache viene restituito in conformità alla strategia di caching configurata e alla frequenza di aggiornamento del contenuto
+      * **Esclusioni di percorso** - questi file non verranno mai memorizzati nella cache indipendentemente dalle impostazioni in File pre-caching e Percorsi inclusioni
 
 ## Modifica delle proprietà di una pagina {#editing-page-properties-1}
 
