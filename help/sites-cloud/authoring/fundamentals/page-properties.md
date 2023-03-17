@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 82%
+source-wordcount: '2387'
+ht-degree: 81%
 
 ---
 
@@ -168,17 +168,6 @@ Le proprietà sono distribuite su più schede.
    * **Seleziona immagine**: seleziona una risorsa esistente da usare come miniatura
    * **Annulla**: questa opzione diventa disponibile dopo aver apportato una modifica alla miniatura. Se non desideri mantenere la modifica, puoi ripristinarla prima di salvare.
 
-### Social media {#social-media}
-
-* **Condivisione social media**
-
-   Definisce le opzioni di condivisione disponibili sulla pagina. Rende disponibili le opzioni per la [Condivisione dei componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=it).
-
-   * **Abilita condivisione da parte degli utenti su Facebook**
-   * **Abilita condivisione da parte degli utenti su Pinterest**
-   * **Variante XF preferita**
-      * Consente di definire la variante del frammento esperienza utilizzato per generare i metadati della pagina.
-
 ### Servizi cloud {#cloud-services}
 
 * **Configurazioni Servizi cloud**: definizione delle proprietà per i servizi cloud
@@ -208,7 +197,7 @@ Le proprietà sono distribuite su più schede.
 
 ### Blueprint {#blueprint}
 
-Questa scheda è visibile solo per le pagine che fungono da blueprint. Le blueprint fungono da base per le Live Copy e fanno parte della [Gestione multisito.](/help/sites-cloud/administering/msm/overview.md)
+Questa scheda è visibile solo per le pagine che fungono da blueprint. Le blueprint fungono da base per le Live Copy e fanno parte di [Gestione multisito.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Live Copy attuali**: elenca le pagine basate su (ad esempio, Live Copy di) questa pagina blueprint
 
@@ -216,7 +205,7 @@ Questa scheda è visibile solo per le pagine che fungono da blueprint. Le bluepr
 
 ### Live Copy  {#live-copy}
 
-Questa scheda è visibile solo per le pagine configurate come Live Copy.
+Questa scheda è visibile solo per le pagine configurate come Live Copy. Come per le blueprint, le Live Copy fanno parte di [Gestione multisito.](/help/sites-cloud/administering/msm/overview.md).
 
 * **Sincronizza**: sincronizza le Live Copy con blueprint, mantenendo le modifiche locali
 * **Ripristina**: ripristina le Live Copy allo stato di blueprint, rimuovendo le modifiche locali
