@@ -3,10 +3,10 @@ title: Implementazione in AEM as a Cloud Service
 description: Implementazione in AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 0d586bf7e9ad6653f9a45c2fe9f0f8a156de5133
+source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
-source-wordcount: '3497'
-ht-degree: 92%
+source-wordcount: '3509'
+ht-degree: 91%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 ## Introduzione {#introduction}
 
-Le basi dello sviluppo del codice sono simili in AEM as a Cloud Service rispetto alle soluzioni AEM On Premise e Managed Services. Gli sviluppatori scrivono e testano localmente il codice, che viene quindi inviato agli ambienti AEM as a Cloud Service remoti. Cloud Manager, che era uno strumento opzionale per la distribuzione dei contenuti per Managed Services, è necessario. Questo è ora l’unico meccanismo per distribuire il codice negli ambienti di sviluppo, stage e produzione as a Cloud Service dell’AEM. Per la convalida rapida delle funzioni e il debug prima della distribuzione di tali ambienti, il codice può essere sincronizzato da un ambiente locale a un [Ambiente di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md).
+Le basi dello sviluppo del codice sono simili in AEM as a Cloud Service rispetto alle soluzioni AEM On Premise e Managed Services. Gli sviluppatori scrivono e testano localmente il codice, che viene quindi inviato agli ambienti AEM as a Cloud Service remoti. Cloud Manager, che era uno strumento opzionale per la distribuzione dei contenuti per Managed Services, è necessario. Questo è ora l’unico meccanismo per distribuire il codice AEM ambienti as a Cloud Service di sviluppo, stage e produzione. Per eseguire rapidamente la convalida e il debug delle funzioni prima della distribuzione di tali ambienti, il codice può essere sincronizzato da un ambiente locale a un [Ambiente di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 L’aggiornamento della [Versione AEM](/help/implementing/deploying/aem-version-updates.md) è sempre un evento di distribuzione separato dal push del [codice personalizzato](#customer-releases). Considerando un’altra angolazione, le versioni del codice personalizzato devono essere testate rispetto alla versione AEM in produzione, in quanto è quella su cui alla fine verranno implementate. Gli aggiornamenti di versione di AEM successivi saranno frequenti e verranno applicati automaticamente. È previsto che siano compatibili con le versioni precedenti del codice cliente già distribuito.
 
@@ -104,7 +104,7 @@ Dopo il passaggio alla nuova versione dell’applicazione:
    * Cartelle (aggiungi, modifica, rimuovi)
    * Modelli modificabili (aggiungi, modifica, rimuovi)
    * Configurazione in base al contesto (qualsiasi cosa in `/conf`) (aggiungi, modifica, rimuovi)
-   * Script (i pacchetti possono attivare gli hook di installazione in varie fasi del processo di installazione del pacchetto. <!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. --> Nota che AEM CS utilizza attualmente Filevault versione 3.4.0, che limita gli hook di installazione agli utenti amministratori, agli utenti di sistema e al membro del gruppo di amministratori).
+   * Script (i pacchetti possono attivare gli hook di installazione in varie fasi del processo di installazione del pacchetto. Consulta la sezione [Documentazione di Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) informazioni sugli hook di installazione.  Nota che AEM CS utilizza attualmente Filevault versione 3.4.0, che limita gli hook di installazione agli utenti amministratori, agli utenti di sistema e al membro del gruppo di amministratori).
 
 È possibile limitare l’installazione di contenuti mutabili all’authoring o alla pubblicazione incorporando i pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per rispecchiare tale separazione è stata effettuata in AEM 6.5, e i dettagli relativi alla ristrutturazione del progetto raccomandata si trovano nella [Documentazione AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=it)
 
@@ -170,7 +170,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Gestione pacchetti - Migrazione dei pacchetti di contenuto mutabile"
->abstract="Esplora l’utilizzo di Gestione pacchetti per i casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;, che include l’importazione di contenuti specifici dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, trasferire un piccolo pacchetto di contenuti dall’ambiente on-premise agli ambienti AEM Cloud e altro ancora."
+>abstract="Esplora l’utilizzo di package manager per i casi d’uso in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;, che include l’importazione di contenuti specifici dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, il trasferimento di piccoli pacchetti di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it#cloud-migration" text="Strumento trasferimento contenuti"
 
 Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come “una tantum”. Ad esempio, per eseguire il debug di un problema di produzione, è necessario importare contenuto specifico dalla produzione allo staging. Per questi scenari, [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) può essere utilizzato in ambienti AEM as a Cloud Service.
@@ -281,36 +281,36 @@ Se viene segnalato o rilevato un errore dopo la distribuzione, è possibile che 
 
 ## Ambienti di sviluppo rapido (RDE) {#rde}
 
-[Ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md) (o RDE in breve) consentono agli sviluppatori di implementare e rivedere rapidamente le modifiche, riducendo al minimo il tempo necessario per testare le funzionalità che sono già collaudate per funzionare in un ambiente di sviluppo locale.
+[Ambienti di sviluppo rapidi](/help/implementing/developing/introduction/rapid-development-environments.md) (o RDE in breve) consentono agli sviluppatori di implementare e rivedere rapidamente le modifiche, riducendo al minimo il tempo necessario per testare le funzioni che sono già collaudate in un ambiente di sviluppo locale.
 
-A differenza degli ambienti di sviluppo regolari, che distribuiscono il codice tramite la pipeline di Cloud Manager, gli sviluppatori utilizzano strumenti della riga di comando per sincronizzare il codice da un ambiente di sviluppo locale all’RDE. Una volta testate correttamente in un RDE, le modifiche devono essere distribuite in un ambiente di sviluppo cloud regolare tramite la pipeline di Cloud Manager, che inserirà il codice attraverso i gate di qualità appropriati.
+A differenza dei normali ambienti di sviluppo, che distribuiscono il codice tramite la pipeline di Cloud Manager, gli sviluppatori utilizzano strumenti a riga di comando per sincronizzare il codice da un ambiente di sviluppo locale all’RDE. Una volta testate con successo le modifiche in un RDE, queste devono essere distribuite in un ambiente di sviluppo cloud regolare tramite la pipeline di Cloud Manager, che inserirà il codice attraverso i gate di qualità appropriati.
 
 ## Modalità di esecuzione {#runmodes}
 
-Nelle soluzioni AEM esistenti, i clienti possono scegliere di eseguire istanze con modalità di esecuzione arbitrarie e applicare la configurazione OSGI o installare i bundle OSGI a quelle istanze specifiche. Le modalità di esecuzione definite in genere includono *servizio* (authoring e pubblicazione) e l’ambiente (rde, dev, stage, prod).
+Nelle soluzioni AEM esistenti, i clienti possono scegliere di eseguire istanze con modalità di esecuzione arbitrarie e applicare la configurazione OSGI o installare i bundle OSGI a quelle istanze specifiche. Le modalità di esecuzione definite includono in genere i *servizio* (autore e pubblicazione) e l’ambiente (rde, dev, stage, prod).
 
 AEM as a Cloud Service d’altra parte è più rigoroso su quali modalità di esecuzione sono disponibili e come i bundle OSGI e la configurazione OSGI possono essere mappati su di esse:
 
-* Le modalità di esecuzione della configurazione OSGI devono fare riferimento a RDE, dev, stage, prod per l’ambiente o author, publish per il servizio. È supportata una combinazione di `<service>.<environment_type>`, che devono essere utilizzati in questo particolare ordine (ad esempio `author.dev` o `publish.prod`). I token OSGI devono essere referenziati direttamente dal codice anziché utilizzando il metodo `getRunModes`, che non includerà più `environment_type` in fase di esecuzione. Per ulteriori informazioni, consulta [Configurazione OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
-* Le modalità di esecuzione dei bundle OSGI sono limitate al servizio (authoring, pubblicazione). I bundle OSGI per modalità di esecuzione devono essere installati nel pacchetto di contenuti in `install/author` o `install/publish`.
+* Le modalità di esecuzione della configurazione OSGI devono fare riferimento a RDE, dev, stage, prod per l’ambiente o l’autore, publish per il servizio. È supportata una combinazione di `<service>.<environment_type>`, che devono essere utilizzati in questo particolare ordine (ad esempio `author.dev` o `publish.prod`). I token OSGI devono essere referenziati direttamente dal codice anziché utilizzando il metodo `getRunModes`, che non includerà più `environment_type` in fase di esecuzione. Per ulteriori informazioni, consulta [Configurazione OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* Le modalità di esecuzione dei bundle OSGI sono limitate al servizio (authoring, pubblicazione). I bundle OSGI per modalità di esecuzione devono essere installati nel pacchetto di contenuti in `install.author` o `install.publish`.
 
-Come le soluzioni AEM esistenti, non c&#39;è modo di utilizzare le modalità di esecuzione per installare solo contenuti per ambienti o servizi specifici. Se si desidera impostare un ambiente di sviluppo con dati o HTML che non sono in staging o in produzione, è possibile utilizzare Gestione pacchetti.
+AEM as a Cloud Service non consente di utilizzare le modalità di esecuzione per installare il contenuto per ambienti o servizi specifici. Se è necessario impostare un ambiente di sviluppo con dati o HTML che non si trovano negli ambienti di staging o produzione, è possibile utilizzare il gestore dei pacchetti.
 
 Le configurazioni supportate per la modalità di esecuzione sono:
 
-* **config** (*L’impostazione predefinita si applica a tutti i servizi AEM*)
+* **config** (*Il valore predefinito si applica a tutti i servizi AEM*)
 * **config.author** (*si applica a tutti i servizi di authoring AEM*)
 * **config.author.dev** (*si applica al servizio di authoring di sviluppo AEM*)
-* **config.author.rde** (*Si applica al servizio di authoring AEM RDE*)
+* **config.author.rde** (*Si applica AEM servizio Author RDE*)
 * **config.author.stage** (*si applica al servizio di authoring di staging AEM*)
 * **config.author.prod** (*si applica al servizio di authoring di produzione AEM*)
 * **config.publish** (*si applica al servizio di pubblicazione AEM*)
 * **config.publish.dev** (*si applica al servizio di pubblicazione di sviluppo AEM*)
-* **config.publish.rde** (*Si applica al servizio di pubblicazione AEM RDE*)
+* **config.publish.rde** (*Si applica AEM servizio RDE Publish*)
 * **config.publish.stage** (*si applica al servizio di pubblicazione di staging AEM*)
 * **config.publish.prod** (*si applica al servizio di pubblicazione di produzione AEM*)
 * **config.dev** (*si applica ai servizi di sviluppo AEM*)
-* **config.rde** (*Applicabile ai servizi RDE*)
+* **config.rde** (*Si applica ai servizi RDE*)
 * **config.stage** (*si applica ai servizi di staging AEM*)
 * **config.prod** (*si applica ai servizi di produzione AEM*)
 
