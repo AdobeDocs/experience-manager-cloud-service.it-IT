@@ -1,17 +1,17 @@
 ---
-title: Introduzione all’editor universale
-description: Scopri come l’Editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, velocizzare i contenuti e fornire un’esperienza di sviluppo all’avanguardia.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+title: Introduzione all’editor visivo universale
+description: Scopri in che modo l’Editor visivo universale (anche editor universale) consente la modifica WYSIWYG (What-you-see-is-what-you-get) di qualsiasi esperienza headless e headful. Scopri in che modo può aiutare gli autori di contenuti a fornire esperienze eccezionali, velocizzare i contenuti e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
+source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
 
 
-# Introduzione all’editor universale {#introduction}
+# Introduzione all’editor visivo universale {#introduction}
 
-Scopri come l’Editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, velocizzare i contenuti e fornire un’esperienza di sviluppo all’avanguardia.
+Scopri in che modo l’Editor visivo universale (anche editor universale) consente la modifica WYSIWYG (What-you-see-is-what-you-get) di qualsiasi esperienza headless e headful. Scopri in che modo può aiutare gli autori di contenuti a fornire esperienze eccezionali, velocizzare i contenuti e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
 
 ## Informazioni di base {#background}
 
@@ -42,17 +42,14 @@ I requisiti per un’implementazione che sfrutta l’Editor universale sono molt
 Un autore di contenuti deve avere la stessa potente esperienza di modifica precedentemente offerta dall’editor di pagine AEM. Tuttavia, l’editor universale consente agli autori di contenuti di modificare **qualsiasi** contenuto visivo e contestuale e supporta:
 
 * **AEM strutture di pagina** - Nidificato `cq:Components` di `cq:Pages`, compresi i frammenti esperienza
-* **Frammenti di contenuto AEM** - Modifica il contenuto dei frammenti di contenuto visualizzato nel contesto dell’esperienza
-* **Documenti** - Word, Excel, Google Docs, Markdown o persino HTML normale persistono, ad esempio, su GitHub
-* **Contenuto di terze parti** - Un sistema plug-in consente di modificare qualsiasi origine di contenuto esterna.
+* **Frammenti di contenuto AEM** - Modifica il contenuto dei frammenti di contenuto visualizzato nel contesto dell’esperienza.
+* **Documenti** - La prova dei concetti ha mostrato che anche i documenti Word, Excel, Google Docs o Markdown possono essere modificati nello stesso modo (questo è WIP).
 
 ### Qualsiasi aspetto {#any-aspect}
 
 Per un autore di contenuti, il contenuto non riguarda solo le informazioni contenute, ma anche il rendering e la ricezione. Il contenuto viene fornito con metadati aggiuntivi e regole di strumentazione, che l’Editor universale può comprendere e modificare, tra cui:
 
-* **Applicazione di layout e stile** - Utilizzando un sistema di stili, il professionista del marketing e l’autore di contenuti possono applicare stili diversi ai loro contenuti e creare layout diversi, come colonne, caroselli, schede, pannello a soffietto, ecc.
-* **Esecuzione della sperimentazione** - Mediante la pubblicazione di una nuova versione dei contenuti che mette in discussione i contenuti esistenti, i professionisti del marketing possono sperimentare miglioramenti dei contenuti e misurarne l’impatto.
-* **Personalizzazione delle varianti** - Creando e gestendo varianti di contenuto specifiche per un determinato pubblico, i professionisti del marketing possono personalizzare il contenuto consegnato.
+* **Applicazione di layout e stile** - Utilizzando un sistema di stili, il professionista del marketing e l’autore di contenuti possono applicare stili diversi ai loro contenuti e creare layout diversi per i contenuti, come colonne, caroselli, schede, pannello a soffietto, ecc.
 
 ## Valore {#value}
 
@@ -64,9 +61,9 @@ Separando l’esperienza di modifica dei contenuti da qualsiasi sistema di distr
 * **Aumento della velocità dei contenuti** - Per semplificare il flusso di lavoro di gestione dei professionisti, l’editor universale consente di modificare i contenuti nell’anteprima per guidare i professionisti, mostrando solo le opzioni pertinenti a tale contesto e rende il flusso di lavoro indipendente dalle origini di contenuto.
 * **Esperienza per sviluppatori all’avanguardia** - Per supportare un panorama delle applicazioni eterogeneo nel mondo reale, Universal Editor è completamente disaccoppiato e non si basa sulla tecnologia, consentendo agli sviluppatori di utilizzare il proprio stack di tecnologia preferito per implementare l&#39;esperienza.
 
-## Editor universale e Editor frammento di contenuto {#universal-editor-content-fragment-editor}
+## Editor visivo universale e Editor frammento di contenuto {#universal-editor-content-fragment-editor}
 
-A prima vista, potrebbe sembrare che l’Editor universale e l’Editor frammento di contenuto forniscano funzionalità di modifica simili. Tuttavia, questi editor offrono funzionalità molto diverse e svolgono diversi lavori del professionista del marketing.
+A prima vista, potrebbe sembrare che l’Editor visivo universale e l’Editor frammento di contenuto forniscano funzionalità di modifica simili. Tuttavia, questi editor offrono funzionalità molto diverse e svolgono diversi lavori del professionista del marketing.
 
 ### Editor frammento di contenuto {#content-fragment-editor}
 
@@ -74,7 +71,7 @@ Un professionista del marketing desidera creare contenuti senza doversi preoccup
 
 * Il lavoro sottostante da eseguire è quello di scalare la strategia dei contenuti.
 
-### Editor universale {#universal-editor}
+### Editor visivo universale {#universal-editor}
 
 Un professionista del marketing desidera creare contenuti personalizzati in base al layout di un determinato contesto per offrire un’esperienza eccezionale.
 
@@ -82,9 +79,9 @@ Un professionista del marketing desidera creare contenuti personalizzati in base
 
 ## Mappa stradale {#road-map}
 
-È importante notare che l’editor universale è un lavoro in corso e che le capacità esposte in questo documento sono una visione dell’editor finale e non necessariamente delle sue attuali capacità.
+È importante notare che l’editor universale è un lavoro in corso e che alcune delle funzionalità descritte in questo documento sono una visione dell’editor finale e non necessariamente rappresentative delle sue attuali capacità.
 
-Contatta il tuo contatto Adobe per maggiori informazioni sulle prossime funzionalità previste per l&#39;editor universale
+Contatta il tuo contatto Adobe per maggiori informazioni sulle prossime funzionalità previste per l’Editor Universale.
 
 ## Risorse aggiuntive {#additional-resources}
 
