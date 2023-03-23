@@ -5,7 +5,7 @@ exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
 source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 0%
+ht-degree: 34%
 
 ---
 
@@ -14,29 +14,29 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_benefits"
 >title="Vantaggi dell’utilizzo di Cloud Acceleration Manager"
->abstract="Cloud Acceleration Manager (CAM) offre ai team un’esperienza guidata con best practice e metodologia consigliate dagli Adobi, per aiutarli a pianificare, implementare e partecipare in modo affidabile."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html" text="Introduzione a Cloud Acceleration Manager"
+>abstract="Cloud Acceleration Manager (CAM) offre ai team un’esperienza guidata con best practice e metodologia consigliate da Adobe, per aiutarli a pianificare, implementare e andare in diretta con sicurezza."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=it" text="Introduzione a Cloud Acceleration Manager"
 
-Con un&#39;ampia gamma di requisiti e personalizzazioni di business, il passaggio al cloud può essere un progetto coinvolto. Cloud Acceleration Manager (CAM) offre ai team un’esperienza guidata con best practice e metodologia consigliate dagli Adobi, per aiutarli a pianificare, implementare e partecipare in modo affidabile.
+Con una vasta gamma di requisiti e personalizzazioni aziendali, il passaggio al cloud può essere un progetto coinvolto. Cloud Acceleration Manager (CAM) offre ai team un’esperienza guidata con best practice e metodologia consigliate da Adobe, per aiutarli a pianificare, implementare e andare in diretta con sicurezza.
 
-I vantaggi principali dell’utilizzo di Cloud Acceleration Manager sono:
+I vantaggi principali dell’utilizzo di Cloud Acceleration Manager sono i seguenti:
 
-1. Pianifica meglio e in modo più intelligente:
+1. Pianificazione migliore e più intelligente:
 
    * Semplifica la valutazione dell’istanza corrente tramite una rappresentazione visiva dei risultati di facile lettura.
 
-   * Valuta e comprendi la complessità stimata del passaggio a AEM as a Cloud Service con un rapporto personalizzato dettagliato.
+   * Valutare e comprendere la complessità stimata del passaggio a AEM as a Cloud Service con un rapporto personalizzato dettagliato.
 
 1. Semplifica lo spostamento con indicazioni end-to-end:
 
-   * Gestisci il percorso di migrazione con informazioni integrate che forniscono assistenza contestuale lungo il percorso.
+   * Gestisci il percorso di migrazione con funzionalità intelligenti incorporate che forniscono aiuto contestuale lungo il percorso.
 
-   * Rivedi e individua le aree che non sono supportate nell’AEM as a Cloud Service o che richiedono il refactoring per garantire la compatibilità.
+   * Rivedi e identifica le aree non supportate in AEM as a Cloud Service o che richiedono un refactoring per garantire la compatibilità.
 
 1. Ottimizza gli sforzi:
 
-   Accedi alle best practice consigliate dagli Adobi e agli strumenti di automazione per accelerare le attività di migrazione e accedere agli strumenti per ridurre al minimo i tempi di migrazione.
+   Accedi alle best practice e agli strumenti di automazione consigliati dagli Adobi per accelerare le operazioni di migrazione e l’accesso agli strumenti per ridurre al minimo i tempi di migrazione.
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso cos’è Cloud Acceleration Manager, ora puoi utilizzare e [Introduzione a Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Dopo aver appreso cos’è Cloud Acceleration Manager, ora puoi utilizzare e [Guida introduttiva di Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).

@@ -15,30 +15,30 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Backup e ripristino"
->abstract="AEM as a Cloud Service può ripristinare l’applicazione completa di un cliente (codice e contenuto) in tempi specifici e predeterminati negli ultimi sette giorni, sostituendo ciò che era in produzione. Questa funzione deve essere utilizzata solo in caso di problemi gravi relativi al codice o al contenuto. I dati recenti tra l&#39;ora del backup ripristinato e quella attuale andranno persi. Anche la gestione temporanea verrà ripristinata alla versione precedente."
+>abstract="AEM as a Cloud Service può ripristinare l&#39;applicazione completa (codice e contenuto) di un cliente a orari specifici e predeterminati negli ultimi sette giorni, sostituendo ciò che era in produzione. Questa funzione deve essere utilizzata solo in caso di gravi problemi con il codice o il contenuto. I dati recenti tra il momento del backup ripristinato e il presente andranno persi. Lo staging verrà ripristinato anche alla vecchia versione."
 
-In caso di danneggiamento dei contenuti o dei dati, AEM as a Cloud Service può ripristinare l’applicazione completa di un cliente (codice e contenuto) in tempi specifici e predeterminati negli ultimi sette giorni, sostituendo ciò che era in produzione.
-Se la distribuzione di un cliente, ovvero il codice dell&#39;applicazione distribuito è danneggiato o in stato di bug, è preferibile correggerla e passare a una nuova versione anziché ripristinarla dal backup. Il backup viene eseguito in modo da non influire sulle prestazioni di esecuzione di un&#39;applicazione.
+In caso di danneggiamento del contenuto o dei dati, AEM as a Cloud Service può ripristinare l&#39;applicazione completa (codice e contenuto) di un cliente a orari specifici e predeterminati negli ultimi sette giorni, sostituendo ciò che era in produzione.
+Se la distribuzione di un cliente, ovvero il codice dell&#39;applicazione distribuito è danneggiato o non è compatibile, è preferibile correggerla e passare a una nuova versione anziché ripristinarla dal backup. Il backup viene eseguito in un modo che non ha alcun impatto sulle prestazioni di runtime di un&#39;applicazione.
 
 >[!CAUTION]
 >
->Questa funzione deve essere utilizzata solo in caso di problemi gravi relativi al codice o al contenuto. I dati recenti tra l&#39;ora del backup ripristinato e quella attuale andranno persi. Anche la gestione temporanea verrà ripristinata alla versione precedente.
+>Questa funzione deve essere utilizzata solo in caso di gravi problemi con il codice o il contenuto. I dati recenti tra il momento del backup ripristinato e il presente andranno persi. Lo staging verrà ripristinato anche alla vecchia versione.
 
 ## Guida all’uso {#how-to-use}
 
-I clienti devono inviare un ticket di supporto, descrivendo il problema riscontrato. Ciò comporterà un&#39;indagine da parte del supporto Adobe che determinerà se è necessario un ripristino.
+I clienti devono presentare una richiesta di supporto per descrivere il problema riscontrato. Ciò porterà ad un&#39;indagine da parte del supporto Adobe, che determinerà se è necessario un ripristino.
 
-AEM as a Cloud Service supporta:
+AEM supporto as a Cloud Service:
 
-* Backup e ripristino per ambienti di staging, produzione e sviluppo.
-* Ripristino point-in-time di 24 ore, il che significa che il sistema può essere ripristinato a qualsiasi punto nelle ultime 24 ore.
-* Ripristina da una marca temporale specifica definita dall’Adobe rilevata due volte al giorno per gli ultimi 7 giorni.  Tutti i messaggi di replica (eliminazioni, aggiornamenti, creazioni) verranno mantenuti.
+* Backup e ripristino per ambienti di stage, produzione e sviluppo.
+* 24 ore di recupero nel tempo, il che significa che il sistema può essere ripristinato in qualsiasi punto nelle ultime 24 ore.
+* Ripristina da una marca temporale specifica definita in Adobe eseguita due volte al giorno per gli ultimi 7 giorni.  Eventuali messaggi di replica (eliminazione, aggiornamenti, creazione) verranno mantenuti.
 
-In tutti i casi, la versione del codice personalizzato sarà quella presa dall’ultima distribuzione riuscita prima del punto di ripristino.
+In tutti i casi, la versione del codice personalizzato verrà presa dall&#39;ultima distribuzione riuscita prima del punto di ripristino.
 
-L&#39;obiettivo del tempo di ripristino (RTO, Recovery Time Objective) può variare, ma come linea guida generale, la sequenza di ripristino richiede in media tra 60 e 90 minuti a seconda di diversi fattori, come la dimensione dell&#39;archivio. Gli ambienti di anteprima e gli editori con più aree geografiche possono estendere l’obiettivo del tempo di ripristino.
+L&#39;obiettivo RTO (Recovery Time Objective) può variare, ma come linea guida generale, la sequenza di ripristino richiede in media tra 60 e 90 minuti a seconda di diversi fattori, come la dimensione dell&#39;archivio. Gli ambienti di anteprima e gli editori con più aree possono estendere l’obiettivo del tempo di ripristino.
 
-Dopo il ripristino, la versione dell’AEM sarà aggiornata alla più recente.
+Dopo un ripristino, la versione AEM verrà aggiornata alla versione più recente.
 
 >[!CAUTION]
 >
@@ -46,6 +46,6 @@ Dopo il ripristino, la versione dell’AEM sarà aggiornata alla più recente.
 
 ## Backup fuori sede {#offsite-backup}
 
-Anche se i backup regolari coprono il rischio di eliminazioni accidentali o di errori tecnici in AEM Cloud Services, è necessario coprire anche i rischi che possono sorgere dal fallimento di un’area. Oltre alla disponibilità, il rischio maggiore in tali interruzioni dell’area dati è principalmente la perdita di dati.
-AEM as a Cloud Service copre questo rischio come standard per tutti gli ambienti di produzione AEM copiando continuamente l&#39;intero contenuto AEM in una regione remota e rendendolo disponibile per il ripristino per un periodo di 3 mesi. Questa funzionalità viene chiamata backup fuori sede.
-Il ripristino di AEM Cloud Services per gli ambienti di staging e produzione viene eseguito da AEM Service Reliability Engineering in caso di interruzioni dell’area dati.
+Anche se i backup regolari coprono il rischio di eliminazioni accidentali o errori tecnici in AEM Cloud Services, devono essere coperti anche i rischi che possono derivare dal guasto di una regione. Oltre alla disponibilità, il rischio maggiore in tali interruzioni dell&#39;area dati è principalmente la perdita di dati.
+AEM as a Cloud Service copre questo rischio come standard per tutti gli ambienti di produzione AEM copiando continuamente l&#39;intero contenuto AEM in una regione remota e rendendolo disponibile per il ripristino per un periodo di 3 mesi. Questa funzionalità viene chiamata Offsite Backup.
+Il ripristino di AEM Cloud Services per ambienti di stage e produzione viene eseguito da AEM Service Reliability Engineering in caso di interruzioni dell’area dati.

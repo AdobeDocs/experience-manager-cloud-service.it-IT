@@ -60,7 +60,7 @@ In questa sezione sono elencate le funzionalità che sono state rimosse da [!DNL
 | [!DNL Foundation] | Supporto per le origini dati Apache Sling (OSGi bundle org.apache.sling.datasource) | N/D | Rimosso |
 | [!DNL Foundation] | Supporto per i modelli di script JST (OSGi bundle org.apache.sling.scripting.jst) | N/D | Rimosso |
 | [!DNL Foundation] | Supporto per Apache Felix Http Whiteboard | OSGi Http Whiteboard | Marzo 2022 |
-| [!DNL Foundation] | Supporto per com.adobe.granite.oauth.server | Integrazione Adobe IMS | Marzo 2023 |
+| [!DNL Foundation] | Supporto per com.adobe.granite.oauth.server | Integrazione di Adobe IMS | Marzo 2023 |
 
 
 ## API Java {#java-api}

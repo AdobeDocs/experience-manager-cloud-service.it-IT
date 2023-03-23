@@ -32,7 +32,7 @@ ht-degree: 93%
 
 ## Creare un modello {#create-model}
 
-La console del modello Frammento di contenuto viene visualizzata in una nuova scheda. Considera la console dei modelli Frammento di contenuto come una libreria di modelli in cui puoi creare nuovi modelli e gestire quelli esistenti.
+La console del modello Frammento di contenuto si apre in una nuova scheda. Considera la console del modello Frammento di contenuto come una libreria di modelli, in cui puoi creare nuovi modelli e gestire quelli esistenti.
 
 1. Fai clic sul pulsante **Crea** in alto a destra dello schermo per iniziare a creare un modello di frammento di contenuto.
 

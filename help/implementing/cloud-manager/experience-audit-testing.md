@@ -35,7 +35,7 @@ L’audit dell’esperienza è basato su Google Lighthouse, uno strumento open s
 
 >[!TIP]
 >
->Puoi configurare le pagine incluse nell’audit dell’esperienza quando [configurare la pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>Puoi configurare quali pagine vengono incluse in Experience Audit quando [imposta la pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 
 ## Lettura dei risultati dell’audit dell’esperienza {#understanding-experience-audit-results}
 
