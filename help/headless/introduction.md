@@ -1,19 +1,19 @@
 ---
 title: Introduzione a Headless per AEM
-description: Scopri i contenuti headless in Adobe Experience Manager (AEM) con documentazione dettagliata e percorsi headless. Scopri come funzionalità quali i Modelli di contenuto, i Frammenti di contenuto e un'API GraphQL vengono utilizzate per attivare esperienze headless.
+description: Scopri i contenuti headless in Adobe Experience Manager (AEM) con documentazione dettagliata e percorsi headless. Scopri come le funzioni come Modelli per frammenti di contenuto, Frammenti di contenuto e un’API GraphQL vengono utilizzate per sviluppare esperienze headless.
 landing-page-description: Scopri come utilizzare e amministrare i contenuti headless in Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 597bb3b92159c685d3692f11359e13f8642a0857
+source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 98%
+source-wordcount: '699'
+ht-degree: 75%
 
 ---
 
 
 # Introduzione ad Adobe Experience Manager come CMS headless {#introduction-aem-headless}
 
-Scopri come utilizzare Adobe Experience Manager (AEM) come CMS headless, con funzioni quali Modelli di contenuto, Frammenti di contenuto e API GraphQL che potenziano le esperienze headless su larga scala.
+Scopri come utilizzare Adobe Experience Manager (AEM) come CMS headless (sistema di gestione dei contenuti), con funzioni quali Modelli per frammenti di contenuto, Frammenti di contenuto e un’API GraphQL che insieme alimentano esperienze headless su larga scala.
 
 Leggi la documentazione dettagliata delle varie funzioni coinvolte e/o segui la selezione di [percorsi headless per una panoramica dei primi passi](#first-steps).
 
@@ -25,7 +25,7 @@ Leggi la documentazione dettagliata delle varie funzioni coinvolte e/o segui la 
 
 AEM Headless è una soluzione CMS di Experience Manager che consente di utilizzare contenuti strutturati (frammenti di contenuto) in AEM da qualsiasi app con HTTP tramite GraphQL. Le implementazioni headless consentono la distribuzione di esperienze su piattaforme e canali su larga scala.
 
-L’implementazione headless ignora la gestione di pagine e componenti come avviene nelle soluzioni complete e ibride e si concentra sulla creazione di frammenti di contenuto riutilizzabili e indipendenti dal canale, che possono essere distribuiti in modalità cross-channel. Si tratta di un modello di sviluppo moderno e dinamico per l’implementazione di esperienze web.
+L’implementazione headless dimentica la gestione di pagine e componenti, come avviene nelle soluzioni complete stack e ibride. Si concentra invece sulla creazione di frammenti di contenuto riutilizzabili e neutri per i canali e sulla loro distribuzione cross-channel. Si tratta di un modello di sviluppo moderno e dinamico per l’implementazione di esperienze web.
 
 ![Modelli di implementazione di AEM](assets/aem-implementation-models.png)
 
@@ -33,14 +33,14 @@ L’implementazione headless ignora la gestione di pagine e componenti come avvi
 
 AEM as a Cloud Service è uno strumento flessibile per il modello di implementazione headless che offre tre potenti caratteristiche:
 
-1. **Modelli di contenuto**
-   * I modelli di contenuto sono rappresentazioni strutturate di contenuti.
-   * I modelli di contenuto sono definiti dagli architetti di dati nell’editor di modelli per frammenti di contenuto di AEM.
-   * I modelli di contenuto fungono da base per i frammenti di contenuto.
+1. **Modelli per frammenti di contenuto**
+   * I modelli per frammenti di contenuto sono rappresentazioni strutturate di contenuto.
+   * I modelli per frammenti di contenuto sono definiti dagli architetti di informazioni nell’editor AEM modello per frammenti di contenuto .
+   * I modelli per frammenti di contenuto fungono da base per i frammenti di contenuto.
 1. **Frammenti di contenuto**
-   * I frammenti di contenuto vengono creati in base a un modello di contenuto.
-   * Vengono creati dagli autori di contenuti tramite l’editor di frammenti di contenuto di AEM.
-   * I frammenti di contenuto sono memorizzati in AEM Assets e gestiti nell’interfaccia di amministrazione di Assets.
+   * Un frammento di contenuto viene creato in base a un modello di frammento di contenuto.
+   * I frammenti di contenuto vengono creati dagli autori dei contenuti tramite l’editor frammento di contenuto AEM.
+   * I frammenti di contenuto sono memorizzati come AEM Assets, ma possono essere gestiti tramite la console Risorse o la [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
 1. **API per la distribuzione dei contenuti**
    * L’API GraphQL di AEM supporta la distribuzione di frammenti di contenuto.
    * L’API REST di AEM Assets supporta le operazioni CRUD relative ai frammenti di contenuto.
