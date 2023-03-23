@@ -1,9 +1,9 @@
 ---
 title: Architettura dell’editor universale
 description: Scopri l’architettura dell’Editor universale e il flusso di dati tra i suoi servizi e livelli.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '662'
 ht-degree: 1%
 
 ---
@@ -79,6 +79,7 @@ Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
 * [Introduzione all’editor universale](introduction.md) - Scopri come l’editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, velocizzare i contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 * [Creazione di contenuti con l’editor universale](authoring.md) - Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’Editor universale.
+* [Pubblicazione di contenuti con l’editor universale](publishing.md) - Scopri in che modo Universal Visual Editor pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
 * [Guida introduttiva all’Editor universale in AEM](getting-started.md) - Scopri come accedere all’editor universale e come iniziare a strumentalizzare la tua prima app AEM per utilizzarla.
 * [Attributi e tipi](attributes-types.md) - Scopri gli attributi e i tipi di dati richiesti dall’Editor universale.
 * [Autenticazione dell’editor universale](authentication.md) - Scopri come l’editor universale si autentica.

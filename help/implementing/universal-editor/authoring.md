@@ -1,10 +1,10 @@
 ---
 title: Creazione di contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’Editor universale.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 2%
+source-wordcount: '1152'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ A questo scopo, offre agli autori dei contenuti un’interfaccia utente intuitiv
 
 >[!NOTE]
 >
->L’editor universale è ancora in fase di sviluppo e al momento può creare solo testo.
+>L’editor universale è ancora in fase di sviluppo e al momento non può modificare tutti i tipi di contenuto.
 
 ## Preparare l’app {#prepare-app}
 
@@ -106,11 +106,11 @@ Il menu hamburger non è ancora implementato.
 
 ![Menu Hambuger](assets/hamburger-menu.png)
 
-#### Barra degli indirizzi {#address-bar}
+#### Barra della posizione {#Location-bar}
 
-La barra degli indirizzi mostra il percorso della pagina che si sta modificando. Tocca o fai clic per inserire l’indirizzo di un’altra pagina da modificare.
+La barra del percorso mostra l’indirizzo della pagina che si sta modificando. Tocca o fai clic per inserire l’indirizzo di un’altra pagina da modificare.
 
-![Barra degli indirizzi](assets/address-bar.png)
+![Barra della posizione](assets/address-bar.png)
 
 >[!TIP]
 >
@@ -119,12 +119,6 @@ La barra degli indirizzi mostra il percorso della pagina che si sta modificando.
 >[!NOTE]
 >
 >Qualsiasi pagina da modificare con l’Editor universale deve essere [è stato progettato per supportare l’editor universale.](getting-started.md)
-
-#### Indicatore di collaborazione {#collaboration}
-
-Se nell’editor universale sono presenti altri autori con la stessa pagina caricata, verranno mostrate le immagini di tali autori. Passa il puntatore del mouse su un&#39;immagine per visualizzare il nome utente completo
-
-![Indicatore di collaborazione](assets/collaboration.png)
 
 #### Apri anteprima app {#open-app-preview}
 
@@ -141,6 +135,10 @@ Tocca o fai clic sull’icona di anteprima dell’app aperta per aprire la pagin
 Tocca o fai clic sul pulsante di pubblicazione per pubblicare le modifiche al contenuto in tempo reale da utilizzare per i lettori.
 
 ![Pulsante Pubblica](assets/publish.png)
+
+>[!TIP]
+>
+>Vedere il documento [Pubblicazione di contenuti con l’Editor visivo universale](publishing.md) per ulteriori informazioni sulla pubblicazione con Universal Editor.
 
 ### La barra {#rail}
 
@@ -195,6 +193,7 @@ In modalità anteprima, il tocco o il clic sul contenuto reagisce come se si tra
 Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
 * [Introduzione all’editor universale](introduction.md) - Scopri come l’editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, velocizzare i contenuti e fornire un’esperienza di sviluppo all’avanguardia.
+* [Pubblicazione di contenuti con l’editor universale](publishing.md) - Scopri in che modo Universal Visual Editor pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
 * [Guida introduttiva all’Editor universale in AEM](getting-started.md) - Scopri come accedere all’editor universale e come iniziare a strumentalizzare la tua prima app AEM per utilizzarla.
 * [Architettura dell’editor universale](architecture.md) - Scopri l’architettura dell’Editor universale e il flusso di dati tra i suoi servizi e livelli.
 * [Attributi e tipi](attributes-types.md) - Scopri gli attributi e i tipi di dati richiesti dall’Editor universale.

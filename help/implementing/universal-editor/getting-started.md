@@ -1,9 +1,9 @@
 ---
 title: Guida introduttiva all’Editor universale in AEM
 description: Scopri come accedere all’editor universale e come iniziare a strumentalizzare la tua prima app AEM per utilizzarla.
-source-git-commit: acafa752c354781e41b11e46ac31a59feb8d94e7
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternativa per le app non React {#alternative}
 
-Se non stai implementando un’app React e/o hai bisogno del rendering lato server, il metodo alternativo consiste nell’includere quanto segue nel corpo del documento.
+Se non stai implementando un’app React e/o hai bisogno di eseguire il rendering lato server, un metodo alternativo consiste nell’includere quanto segue nel corpo del documento.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -157,50 +157,6 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-### Servizio di traduzione dell&#39;editor universale {#translation}
-
-L’editor universale esegue la traduzione in base ai metadati della strumentazione.
-
-#### Principio di traduzione di base {#principle}
-
-Considera la seguente selezione dell&#39;esempio precedente.
-
-```html
-<meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-```
-
-L’editor eseguirà le sostituzioni e internamente il `itemid` viene riscritto come segue.
-
-```html
-itemid="urn:aem:https://localhost:4502/content/example/list"
-```
-
-Ciò si traduce nel termine `aemconnection` sostituito dal contenuto del `<meta>` tag .
-
-#### Selettore query {#query-selector}
-
-Questa sostituzione darà luogo alla seguente stringa di query per John Smith.
-
-```html
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-  <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="urn:fcs:type/fragment">.  
-    <p itemprop="name" itemtype="text">John Smith</p>
-    <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-    <img itemprop="avatar" src="urn:fcs:missing" itemtype="image" alt="avatar"/>
-  </li>
-```
-
-`[itemid="urn:fcs:https://example.franklin.adobe.com/345fcdd/content/example/list][itemprop="name"]`
-
-Se desideri modificare la tessera di John Smith, il selettore sarà il seguente.
-
-`[itemid="urn:aem:https://localhost:4502/content/example/another-source"][itemprop="title"]`
-
-Invece dell’ereditarietà di `itemid`s e resources, Universal Editor funziona con gli ambiti. Un ambito può essere definito a livello di nodo ed essere ereditato dall’intera sottostruttura.
-
-Nel caso in cui sia necessario un ambito di applicazione diverso per una sottostruttura all&#39;interno della struttura o un congedo definito, un altro `itemid` può essere definito.
-
 ## Sei pronto per l’utilizzo dell’editor universale {#youre-ready}
 
 L’app è ora strumentalizzata per l’utilizzo dell’editor universale.
@@ -213,6 +169,7 @@ Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
 * [Introduzione all’editor universale](introduction.md) - Scopri come l’editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, velocizzare i contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 * [Creazione di contenuti con l’editor universale](authoring.md) - Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’Editor universale.
+* [Pubblicazione di contenuti con l’editor universale](publishing.md) - Scopri in che modo Universal Visual Editor pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
 * [Architettura dell’editor universale](architecture.md) - Scopri l’architettura dell’Editor universale e il flusso di dati tra i suoi servizi e livelli.
 * [Attributi e tipi](attributes-types.md) - Scopri gli attributi e i tipi di dati richiesti dall’Editor universale.
 * [Autenticazione dell’editor universale](authentication.md) - Scopri come l’editor universale si autentica.

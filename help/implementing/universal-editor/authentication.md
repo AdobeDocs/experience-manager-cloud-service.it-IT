@@ -1,9 +1,9 @@
 ---
 title: Autenticazione dell’editor universale
 description: Scopri come l’editor universale si autentica.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,6 @@ Scopri come l’editor universale si autentica.
 L’editor universale utilizza l’autenticazione Identity Management System (IMS) di Adobe, fornita tramite la shell unificata.
 
 Tutte le applicazioni/pagine remote sono responsabili dell&#39;autenticazione ai sistemi back-end richiesti. Il servizio Universal Editor richiede questa autenticazione ai sistemi di back-end per eseguire operazioni CRUD in quanto si tratta di un servizio indipendente.
-
-A seconda di come utilizzi l’Editor universale, sono disponibili diverse opzioni di implementazione.
-
-* [Flusso standard](#standard-flow) - Per AEM as a Cloud Service o AMS utilizzando IMS
-* [Flusso di terze parti](#third-party-flow) - Per AEM on-premise o AMS senza IMS
 
 ## Flusso standard {#standard-flow}
 
@@ -40,6 +35,7 @@ Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
 * [Introduzione all’editor universale](introduction.md) - Scopri come l’editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, velocizzare i contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 * [Creazione di contenuti con l’editor universale](authoring.md) - Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’Editor universale.
+* [Pubblicazione di contenuti con l’editor universale](publishing.md) - Scopri in che modo Universal Visual Editor pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
 * [Guida introduttiva all’Editor universale in AEM](getting-started.md) - Scopri come accedere all’editor universale e come iniziare a strumentalizzare la tua prima app AEM per utilizzarla.
 * [Architettura dell’editor universale](architecture.md) - Scopri l’architettura dell’Editor universale e il flusso di dati tra i suoi servizi e livelli.
 * [Attributi e tipi](attributes-types.md) - Scopri gli attributi e i tipi di dati richiesti dall’Editor universale.
