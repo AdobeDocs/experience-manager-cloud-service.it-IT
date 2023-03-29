@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
 workflow-type: tm+mt
 source-wordcount: '2147'
-ht-degree: 55%
+ht-degree: 98%
 
 ---
 
@@ -21,9 +21,9 @@ I test dell’interfaccia utente personalizzati sono una funzione facoltativa ch
 
 ## Panoramica {#custom-ui-testing}
 
-AEM fornisce una suite integrata di [gate di qualità di Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) per garantire una fluida esperienza di aggiornamento delle applicazioni personalizzate. In particolare, i gate di test IT supportano già la creazione e l’automazione di test personalizzati utilizzando API AEM.
+AEM fornisce una suite integrata di [gate di qualità di Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) per garantire una fluida esperienza di aggiornamento delle applicazioni personalizzate. In particolare, i gate di test IT supportano già la creazione e automazione dei test personalizzati utilizzando le API di AEM.
 
-I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in termini di linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium). Inoltre, un progetto di test dell’interfaccia utente può essere facilmente generato utilizzando [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
+I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in termini di linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium). Inoltre, è possibile generare facilmente un progetto di test dell’interfaccia utente con l’[archetipo di progetto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
 
 I test dell’interfaccia utente vengono eseguiti come parte di un gate di qualità specifico per ogni pipeline di Cloud Manager con un [**Test personalizzati dell&#39;interfaccia utente** step](/help/implementing/cloud-manager/deploy-code.md) in [gasdotti di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) o facoltativamente [gasdotti non di produzione.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Tutti i test dell’interfaccia utente, compresi la regressione e le nuove funzionalità, consentono di rilevare e segnalare gli errori.
 
@@ -33,39 +33,39 @@ A differenza dei test funzionali personalizzati, che rappresentano test HTTP scr
 >
 >Adobe consiglia di seguire la struttura e il linguaggio (JavaScript e WDIO) forniti nell’[archetipo del progetto AEM.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
 >
->Adobe fornisce anche un esempio di modulo di test dell’interfaccia utente basato su Java e WebDriver. Fai riferimento alla [Archivio dei campioni di AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) per i dettagli.
+>Adobe fornisce anche un esempio di modulo di test dell’interfaccia utente basato su Java e WebDriver. Consulta la sezione [Archivio dei test di prova di AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) per i dettagli.
 
 ## Introduzione ai test dell’interfaccia utente {#get-started-ui-tests}
 
-Questa sezione descrive i passaggi necessari per configurare i test dell’interfaccia utente per l’esecuzione in Cloud Manager.
+In questa sezione vengono descritti i passaggi necessari per configurare i test dell’interfaccia utente per l’esecuzione in Cloud Manager.
 
-1. Decidere il linguaggio di programmazione che si desidera utilizzare.
+1. Scegli il linguaggio di programmazione che desideri utilizzare.
 
-   * Per JavaScript e WDIO, utilizza il codice di esempio generato automaticamente nel `ui.tests` della cartella dell’archivio Cloud Manager.
+   * Per JavaScript e WDIO, utilizza il codice di esempio generato automaticamente nella cartella `ui.tests` dell’archivio di Cloud Manager.
 
       >[!NOTE]
       >
-      >Se l’archivio è stato creato prima della creazione automatica di Cloud Manager `it.tests` cartelle, puoi anche generare la versione più recente utilizzando [AEM Archetipo di progetto.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+      >Se l’archivio è stato creato prima della creazione automatica delle cartelle `it.tests` di Cloud Manager, puoi anche generare la versione più recente utilizzando l’[archetipo di progetto AEM.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
-   * Per Java e WebDriver, utilizza il codice di esempio dal [AEM Archivio di campioni di test.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
+   * Per Java e WebDriver, utilizza il codice di esempio dell’[archivio dei test di prova di AEM.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
 
-   * Per gli altri linguaggi di programmazione, fare riferimento alla sezione [Creazione di test dell’interfaccia utente](#building-ui-tests) in questo documento per impostare il progetto di test.
+   * Per altri linguaggi di programmazione, consulta la sezione [Creazione dei test dell’interfaccia utente](#building-ui-tests) di questo documento per configurare il progetto di test.
 
-1. Verifica che i test dell’interfaccia utente siano attivati come indicato nella sezione . [Consenso del cliente](#customer-opt-in) in questo documento.
+1. Assicurati che i test dell’interfaccia utente siano attivati come da sezione [Consenso del cliente](#customer-opt-in) di questo documento.
 
-1. Sviluppa i tuoi casi di test e [esegui i test localmente.](#run-ui-tests-locally)
+1. Sviluppa gli esempi di test e [eseguili in locale.](#run-ui-tests-locally)
 
-1. Invia il codice all’archivio di Cloud Manager ed esegui una pipeline di Cloud Manager.
+1. Salvare il codice nell’archivio di Cloud Manager ed eseguire una pipeline di Cloud Manager.
 
 ## Creazione dei test dell’interfaccia utente {#building-ui-tests}
 
-Un progetto Maven genera un contesto di build Docker. Questo contesto della build Docker descrive come creare un’immagine Docker contenente i test dell’interfaccia utente, utilizzata da Cloud Manager per generare un’immagine Docker contenente i test dell’interfaccia utente effettivi.
+Un progetto Maven genera un contesto di build Docker. Questo contesto build di Docker descrive come creare un’immagine Docker contenente i test dell’interfaccia utente che Cloud Manager utilizza per generare un’immagine Docker contenente i test effettivi dell’interfaccia utente.
 
 In questa sezione vengono descritti i passaggi necessari per aggiungere un progetto di test dell’interfaccia utente all’archivio.
 
 >[!TIP]
 >
->La [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype) può generare un progetto di test dell’interfaccia utente, conforme alla seguente descrizione, se non sono presenti requisiti speciali per il linguaggio di programmazione.
+>L’[archetipo progetto AEM](https://github.com/adobe/aem-project-archetype), se non hai requisiti speciali per il linguaggio di programmazione, può generare un progetto di test dell’interfaccia utente che è conforme alla seguente descrizione.
 
 ### Generare un contesto di build Docker {#generate-docker-build-context}
 
@@ -156,11 +156,11 @@ La generazione deve produrre zero archivi o un unico archivio. Se non produce ar
 
 ### Consenso del cliente {#customer-opt-in}
 
-Affinché Cloud Manager possa generare ed eseguire i test dell’interfaccia utente, devi optare per questa funzione aggiungendo un file all’archivio.
+Affinché Cloud Manager possa generare ed eseguire i test dell’interfaccia utente, devi fornire il consenso esplicito alla funzione aggiungendo un file all’archivio.
 
 * Il nome file deve essere `testing.properties`.
 * Il contenuto del file deve essere `ui-tests.version=1`.
-* Il file deve trovarsi sotto il sottomodulo maven per i test dell’interfaccia utente accanto al `pom.xml` file del sottomodulo di test dell’interfaccia utente.
+* Il file deve trovarsi nel modulo secondario Maven per i test dell’interfaccia utente accanto al file `pom.xml` del modulo secondario dei test dell’interfaccia utente.
 * Il file deve trovarsi nella radice del file `tar.gz` integrato.
 
 Se il file non è presente, la build e le esecuzioni dei test dell’interfaccia utente verranno ignorate.
@@ -183,9 +183,9 @@ Per includere un file `testing.properties` nell’artefatto della build, aggiung
 >
 >Il file può contenere una riga che consiglia di non modificarla. Questo è dovuto all’aver introdotto la riga nel progetto prima che fosse stato introdotto il consenso per i test dell’interfaccia utente; i client non dovevano modificare il file. Puoi tranquillamente ignorarla.
 
-Se utilizzi i campioni forniti dall’Adobe:
+Se utilizzi gli esempi forniti da Adobe:
 
-* Per basati su JavaScript `ui.tests` cartella generata in base al [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests), puoi eseguire il comando sottostante per aggiungere la configurazione richiesta.
+* Per la cartella `ui.tests` basata su JavaScript generata in base all’[archetipo progetto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests), puoi eseguire il comando seguente per aggiungere la configurazione richiesta.
 
    ```shell
    echo "ui-tests.version=1" > testing.properties
@@ -195,7 +195,7 @@ Se utilizzi i campioni forniti dall’Adobe:
    fi
    ```
 
-* Gli esempi di test Java forniti dispongono già del flag di consenso impostato.
+* Per gli esempi di test Java forniti è già impostato il flag di consenso.
 
 ## Scrittura dei test dell’interfaccia utente {#writing-ui-tests}
 
@@ -210,18 +210,18 @@ In fase di runtime, vengono passate all’immagine Docker le seguenti variabili 
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | URL del server Selenium |
 | `SELENIUM_BROWSER` | `chrome` | Implementazione del browser utilizzata dal server Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | URL dell’istanza di AEM Author |
-| `AEM_AUTHOR_USERNAME` | `admin` | Nome utente per accedere all&#39;istanza di authoring AEM |
-| `AEM_AUTHOR_PASSWORD` | `admin` | Password per accedere all&#39;istanza di authoring AEM |
+| `AEM_AUTHOR_USERNAME` | `admin` | Nome utente per accedere all’istanza di AEM Author |
+| `AEM_AUTHOR_PASSWORD` | `admin` | Password per accedere all’istanza di authoring di AEM |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | URL dell’istanza di AEM Publish |
-| `AEM_PUBLISH_USERNAME` | `admin` | Nome utente da accedere all&#39;istanza di pubblicazione AEM |
-| `AEM_PUBLISH_PASSWORD` | `admin` | Password per accedere all&#39;istanza di pubblicazione AEM |
+| `AEM_PUBLISH_USERNAME` | `admin` | Nome utente per accedere all’istanza di pubblicazione di AEM |
+| `AEM_PUBLISH_PASSWORD` | `admin` | Password per accedere all’istanza di pubblicazione di AEM |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Percorso in cui salvare il rapporto XML con i risultati del test |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | URL in cui caricare i file per renderli accessibili a Selenium |
 
 Gli esempi di test di Adobe forniscono funzioni di supporto per accedere ai parametri di configurazione:
 
-* JavaScript: Consulta la sezione [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) modulo
-* Java: Consulta la sezione [Configurazione](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) Classe
+* JavaScript: vedi il modulo [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js)
+* Java: vedi la classe [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java)
 
 ### Attesa del servizio Selenium {#waiting-for-selenium}
 
@@ -232,7 +232,7 @@ Prima dell’avvio dei test, l’immagine Docker verifica che il server Selenium
 
 Dopo aver ricevuto una risposta positiva dall’endpoint di stato di Selenium è possibile avviare i test.
 
-Gli esempi di test dell’interfaccia utente di Adobe gestiscono questo problema con lo script `wait-for-grid.sh`, che viene eseguito all’avvio di Docker e avvia l’esecuzione effettiva del test solo una volta che la griglia è pronta.
+Gli esempi di test dell’interfaccia utente di Adobe eseguono questa funzione con lo script `wait-for-grid.sh`, che viene eseguito all’avvio di Docker e lancia l’esecuzione effettiva del test solo quando la griglia è pronta.
 
 ### Generazione dei rapporti sui test {#generate-test-reports}
 
@@ -242,22 +242,22 @@ Se implementi l’immagine Docker con altri linguaggi di programmazione o esecuz
 
 >[!NOTE]
 >
->Il risultato della fase di test dell’interfaccia utente viene valutato solo in base ai rapporti di test. Assicurati di generare il rapporto di conseguenza per l’esecuzione del test.
+>Il risultato della fase di test dell’interfaccia utente viene valutato solo in base ai rapporti dei test. Assicurati di generare un rapporto conforme all’esecuzione del test.
 >
->Utilizza le asserzioni invece di registrare un errore su STDERR o di restituire un codice di uscita diverso da zero, altrimenti la pipeline di distribuzione potrebbe procedere normalmente.
+>Utilizza le asserzioni invece di registrare un errore in STDERR o di restituire un codice di uscita diverso da zero; in caso contrario, la pipeline di distribuzione potrebbe procedere normalmente.
 
 ### Acquisire schermate e video {#capture-screenshots}
 
-L’immagine Docker può generare un output di test aggiuntivo (ad esempio, schermate o video) e salvarli nel percorso specificato dalla variabile di ambiente `REPORTS_PATH`. Qualsiasi file trovato sotto `REPORTS_PATH` è incluso nell’archivio dei risultati del test.
+L’immagine Docker può generare un output di test aggiuntivo (ad esempio screenshot o video) e salvarlo nel percorso specificato dalla variabile di ambiente `REPORTS_PATH`. Qualsiasi file trovato sotto `REPORTS_PATH` è incluso nell’archivio dei risultati del test.
 
-I campioni di test forniti dall’Adobe per impostazione predefinita creano schermate per qualsiasi test non riuscito.
+Gli esempi di test forniti da Adobe per impostazione predefinita creano screenshot per tutti i test non riusciti.
 
-Puoi utilizzare le funzioni di supporto per creare schermate attraverso i test.
+Puoi utilizzare le funzioni di assistenza per creare screenshot tramite i test.
 
-* JavaScript: [takeScreenshot, comando](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
+* JavaScript: [comando takeScreenshot](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Comandi](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Se durante un’esecuzione di un test dell’interfaccia utente viene creato un archivio dei risultati del test, puoi scaricarlo da Cloud Manager utilizzando `Download Details` sotto [**Test personalizzati dell&#39;interfaccia utente** passo.](/help/implementing/cloud-manager/deploy-code.md)
+Se durante l’esecuzione di un test dell’interfaccia utente viene creato un archivio dei risultati del test, puoi scaricarlo da Cloud Manager utilizzando il pulsante `Download Details` sotto il passaggio [**Test interfaccia utente personalizzato**.](/help/implementing/cloud-manager/deploy-code.md)
 
 ### Caricamento dei file {#upload-files}
 
@@ -269,25 +269,25 @@ I test a volte richiedono il caricamento di file nell’applicazione sottoposta 
    * Questo equivale a `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
    * Per informazioni su come eseguire una tale richiesta HTTP, consulta la documentazione e le librerie del linguaggio di programmazione utilizzato nell’immagine Docker.
    * Gli esempi di test di Adobe forniscono funzioni di supporto per il caricamento dei file:
-      * JavaScript: Consulta la sezione [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) comando.
-      * Java: Consulta la sezione [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) classe.
+      * JavaScript: vedi il comando [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js).
+      * Java: vedi la classe [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java).
 1. Se il caricamento ha esito positivo, la richiesta restituisce una risposta `200 OK` di tipo `text/plain`.
    * Il contenuto della risposta è un handle di file opaco.
    * È possibile utilizzare questo handle al posto del percorso file in un elemento `<input>` per i test del caricamento dei file nell’applicazione.
 
-## Esecuzione di test dell’interfaccia utente localmente {#run-ui-tests-locally}
+## Esecuzione locale dei test dell’interfaccia utente {#run-ui-tests-locally}
 
-Prima di attivare i test dell’interfaccia utente in una pipeline di Cloud Manager, si consiglia di eseguire localmente i test dell’interfaccia utente verso il [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) o in un&#39;istanza effettiva AEM as a Cloud Service.
+Prima di attivare i test dell’interfaccia utente in una pipeline di Cloud Manager, si consiglia di eseguire i test dell’interfaccia utente localmente verso l’[SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) o in un&#39;istanza AEM as a Cloud Service.
 
 ### Prerequisiti {#prerequisites}
 
 I test in Cloud Manager verranno eseguiti utilizzando un utente amministratore tecnico.
 
-Per eseguire i test di interfaccia utente dal computer locale, crea un utente con autorizzazioni di tipo amministratore per ottenere lo stesso comportamento.
+Per eseguire i test dell’interfaccia utente dal computer locale, crea un utente con autorizzazioni di tipo amministratore per ottenere lo stesso comportamento.
 
 ### Esempio di test JavaScript {#javascript-sample}
 
-1. Apri una shell e passa alla `ui.tests` cartella nel repository
+1. Apri una shell e passa alla cartella `ui.tests` nell’archivio
 
 1. Esegui il comando seguente per avviare i test utilizzando Maven
 
@@ -305,15 +305,15 @@ Per eseguire i test di interfaccia utente dal computer locale, crea un utente co
 
 >[!NOTE]
 >
->* Viene avviata un&#39;istanza di selenio indipendente ed eseguita la verifica.
->* I file di registro sono memorizzati nel `target/reports` cartella dell&#39;archivio
->* È necessario assicurarsi di essere sulla versione più recente di Chrome in quanto il test scarica automaticamente la versione più recente di ChromeDriver per il test.
+>* Viene avviata un’istanza autonoma di Selenium e si eseguono i test in base a essa.
+>* I file di registro vengono archiviati nella cartella `target/reports` dell’archivio
+>* È necessario assicurarsi di utilizzare la versione più recente di Chrome perché il test scarica automaticamente l’ultima versione di ChromeDriver per eseguire il test.
 >
->Per ulteriori informazioni, consulta la [AEM archivio Project Archetype.](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)
+>Per maggiori informazioni, consulta l’[archivio dell’archetipo progetto AEM.](https://github.com/adobe/aem-project-archetype/blob/master/src/main/archetype/ui.frontend.general/README.md)
 
 ### Esempio di test Java {#java-sample}
 
-1. Apri una shell e passa alla `ui.tests/test-module` cartella nel repository
+1. Apri una shell e passa alla cartella `ui.tests/test-module` nell’archivio.
 
 1. Esegui il comando seguente per avviare i test utilizzando Maven
 
@@ -330,6 +330,6 @@ Per eseguire i test di interfaccia utente dal computer locale, crea un utente co
 
 >[!NOTE]
 >
->* I file di registro saranno memorizzati nella `target/reports` della cartella dell&#39;archivio.
+>* I file di registro verranno archiviati nella cartella `target/reports` dell’archivio.
 >
->Per ulteriori informazioni, consulta la [AEM Archivio di campioni di test.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
+>Per maggiori informazioni, consulta l’[archivio degli esempi di test AEM.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)

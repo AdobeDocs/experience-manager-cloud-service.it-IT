@@ -5,7 +5,7 @@ exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 source-git-commit: 33d587baba27ad54b1c9e34a36fadbd1dc56e3f5
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,8 +49,8 @@ Puoi accedere alla pagina Programmi e prodotti di Cloud Manager anche dalla pagi
 | Eliminazione delle pipeline | Autorizzazione all’eliminazione delle pipeline |  | x |  |  |
 | Annullamento dell’esecuzione | Annullamento dell’esecuzione corrente |  | x |  |  |
 | Generazione del token di accesso personale | Accesso a Git |  | x |  | x |
-| Crea RDE | Creare un ambiente di sviluppo rapido | x |  |  | x |
-| Reimposta RDE | Ripristinare un ambiente di sviluppo rapido | x |  |  | x |
+| Crea un RDE | Crea un ambiente di sviluppo rapido | x |  |  | x |
+| Reimposta un RDE | Ripristina un ambiente di sviluppo rapido | x |  |  | x |
 
 >[!NOTE]
 >

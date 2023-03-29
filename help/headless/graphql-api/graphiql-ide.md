@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 68b16052bd050d881e82be4ef57b9623f6021a89
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -102,9 +102,9 @@ Le [query persistenti](/help/headless/graphql-api/persisted-queries.md) sono con
 
 >[!NOTE]
 >
->Le regole di riscrittura personalizzate in Dispatcher potrebbero ignorare i valori predefiniti di pubblicazione AEM.
+>Le regole di riscrittura personalizzate in Dispatcher potrebbero sovrascrivere le impostazioni predefinite di AEM Publish.
 >
->Nel caso in cui invii intestazioni di controllo cache basate su TTL da Dispatcher, in base a un pattern di corrispondenza della posizione, potresti voler escludere `/graphql/execute.json/*` dai match.
+>Se invii intestazioni di controllo cache basate su TTL da Dispatcher, in base a un pattern di corrispondenza della posizione, potresti voler escludere `/graphql/execute.json/*` dai match.
 
 Utilizzando GraphQL è possibile configurare le intestazioni cache HTTP per controllare questi parametri per la singola query persistente.
 

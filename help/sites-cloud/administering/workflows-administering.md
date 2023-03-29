@@ -7,7 +7,7 @@ exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 source-git-commit: 0a87842923298be1a801a85519ac85fae5ef7933
 workflow-type: tm+mt
 source-wordcount: '1165'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
    >[!NOTE]
    >
    >
-   >Per terminare o interrompere un flusso di lavoro, è necessario che si trovi in uno stato di attesa dell&#39;intervento dell&#39;utente, ad esempio in un Passaggio partecipante. Il tentativo di interrompere un flusso di lavoro in esecuzione di processi (thread attivi in esecuzione) potrebbe non produrre i risultati previsti.
+   >Per terminare o interrompere un flusso di lavoro, è necessario che si trovi in uno stato di attesa dell’intervento dell’utente, come Passaggio partecipante. Il tentativo di interrompere un flusso di lavoro che ha processi in esecuzione (thread attivi in esecuzione) potrebbe non produrre i risultati previsti.
 
 
 ## Visualizzazione dei flussi di lavoro archiviati {#viewing-archived-workflows}

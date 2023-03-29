@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
 workflow-type: tm+mt
 source-wordcount: '1200'
-ht-degree: 97%
+ht-degree: 66%
 
 ---
 
@@ -13,14 +13,14 @@ ht-degree: 97%
 
 I frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/sites-cloud/administering/content-fragments/content-fragments.md).
 
-Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
+Consentono di creare contenuti neutri per il canale, insieme a varianti (eventualmente specifiche per il canale). Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
 Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite Content Services a canali diversi dalle pagine AEM.
 
 >[!NOTE]
 >
->I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sono funzioni diverse in AEM:
->* **Frammenti di contenuto** sono contenuti editoriali, con definizione e struttura, ma senza progettazione visiva e/o layout aggiuntivi. Possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date.
+>I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sono funzioni diverse in AEM:
+>* I **frammenti di contenuto** sono contenuti editoriali, con definizione e struttura, ma senza elementi visivi aggiuntivi di design e/o layout. Possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
@@ -31,31 +31,31 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 >
 >Questa pagina deve essere letta insieme a [Utilizzo dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) (e pagine correlate), in quanto introduce la terminologia e i concetti di base e spiega come creare e gestire i frammenti.
 
-I frammenti di contenuto si prestano alle seguenti applicazioni:
+I frammenti di contenuto consentono:
 
 * **Strategia di marketing e campagne**
    * Revisione dei contenuti tramite frammenti di contenuto gestiti a livello centrale.
-* **Creativi professionisti**
-   * Monitoraggio delle risorse creative tramite raccolte associate a frammenti di contenuto.
-* **Copywriter**
+* **Creative Pro**
+   * Tracciamento delle risorse creative tramite raccolte associate ai frammenti di contenuto.
+* **Scrittori copia**
    * Creazione di contenuti nell’editor frammento di contenuto di AEM.
-   * Creazione di varianti del contenuto.
-   * Associazione di contenuti rilevanti ai frammenti di contenuto.
-   * Uso delle funzioni di gestione versioni/flusso di lavoro.
-   * Condivisione dei frammenti di contenuto.
-   * Gestione delle traduzioni a livello centrale.
-* **Produttori e responsabili viaggi**
-   * Scelta di frammenti predefiniti ed elaborazione di varianti con l’authoring in AEM.
-   * Garanzia che il frammento e il contenuto associato ad esso sono sempre aggiornati, con tutte le modifiche apportate dai copywriter e i creativi a frammenti e risorse gestiti a livello centrale.
-   * Garanzia che i contenuti multimediali associati sono sempre vagliati e selezionati in base alla loro rilevanza.
-   * Possibilità di creare al volo varianti di contenuto ad hoc, con la garanzia che queste restano comunque gestite a livello centrale nel frammento.
+   * Può creare varianti di contenuto.
+   * Può associare contenuti rilevanti al frammento di contenuto.
+   * Può utilizzare il controllo delle versioni/flusso di lavoro.
+   * Può condividere frammento di contenuto.
+   * Gestione centralizzata delle traduzioni.
+* **Produttori e Percorsi**
+   * Selezione di frammenti e varianti predefiniti con authoring in AEM.
+   * Può contare sul fatto che frammenti e contenuti associati siano sempre aggiornati, in quanto autori e creativi di copie possono eseguire gli aggiornamenti in frammenti e risorse gestiti a livello centrale.
+   * Può contare sul fatto che i contenuti multimediali associati siano curati per la loro rilevanza.
+   * È in grado di creare al volo varianti di contenuto ad hoc, garantendo al contempo che tali varianti rimangano gestite a livello centrale nel frammento.
 
 ## Aggiunta di un frammento di contenuto alla pagina  {#adding-a-content-fragment-to-your-page}
 
 1. Apri la pagina per la modifica.
 2. Aggiungi il componente **Frammento di contenuto** dal browser **Componenti** o mediante il comando **Inserisci nuovo componente**.
 3. Puoi effettuare le seguenti operazioni:
-   * Apri il browser **Risorse** e applica il filtro **Frammenti di contenuto** (l’impostazione predefinita è Immagini). Quindi, trascina il frammento desiderato sull’istanza di componente.
+   * Apri il browser **Risorse** e applica il filtro **Frammenti di contenuto** (l’impostazione predefinita è Immagini). Quindi trascina il frammento desiderato sull’istanza del componente.
    * Seleziona il componente del frammento di contenuto, quindi **Configura** dalla barra degli strumenti. Nella finestra di dialogo, apri la finestra di dialogo di selezione per individuare e selezionare il **frammento di contenuto** richiesto.
 
    >[!NOTE]
@@ -68,7 +68,7 @@ I frammenti di contenuto si prestano alle seguenti applicazioni:
 
    >[!NOTE]
    >
-   >Per informazioni su ulteriori funzionalità di modifica, vedi anche:
+   >Per ulteriori informazioni su ulteriori funzionalità di modifica, consulta anche:
    >
    >* [Layout dinamico](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md)
@@ -98,7 +98,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
 * **Variazione**
    * Il **Master** predefinito sarà sempre disponibile.
-   * Una selezione è disponibile se per il frammento sono state create delle varianti.
+   * Se per il frammento sono state create delle varianti, sarà disponibile una selezione.
 
 * **ID**
 
@@ -114,25 +114,25 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 
 ### Aggiunta di contenuto intermedio  {#adding-in-between-content}
 
-Quando si aggiunge alla pagina un frammento di contenuto specifico, è disponibile un segnaposto **Trascina qui i componenti** fra ciascun paragrafo HTML (nonché all’inizio e alla fine) del frammento.
+Quando un frammento di contenuto specifico viene aggiunto alla pagina, è disponibile un **Trascina qui i componenti** segnaposto tra ciascun paragrafo di HTML (e in alto/in basso) del frammento.
 
-Questo consente di aggiungere ulteriori contenuti [intermedi (ad esempio, contenuti intermedi)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) all’interno del contenuto del frammento (nei punti disponibili), senza dover modificare il frammento principale.
+Questo consente di aggiungere ulteriori contenuti [intermedio (ovvero contenuto intermedio)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) il contenuto del frammento (nei punti disponibili), senza dover modificare il frammento principale.
 
-Per il contenuto intermedio puoi effettuare le seguenti operazioni:
+Per il contenuto intermedio è possibile:
 
-* Aggiungere componenti dal [browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
-* Aggiungere risorse dal [browser Risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
+* Aggiungi componenti dal [Browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
+* Aggiungi risorse da [Browser risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
 * Usare [Contenuto associato](#using-associated-content) come origine per il contenuto intermedio.
 
 >[!CAUTION]
 >
->Il contenuto intermedio è contento di pagina. Non viene memorizzato nel frammento di contenuto.
+>Il contenuto intermedio è contenuto di pagina. Non viene memorizzato nel frammento di contenuto.
 
 ![Inserisci componente](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
 >[!NOTE]
 >
->Puoi anche [inserire risorse visive (immagini) nel frammento stesso](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>È inoltre possibile [inserire risorse visive (immagini) nel frammento stesso](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
 >Le risorse visive inserite nel frammento stesso sono associate al paragrafo precedente nel frammento. Non è pertanto possibile inserire contenuto intermedio tra una risorsa visiva e il paragrafo precedente. Qualora ti occorra questo livello di connessione, puoi aggiungere l’immagine al frammento (come [frammento con file multimediali diversi](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
@@ -142,7 +142,7 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 >
 >In questi casi, il contenuto intermedio rimane inalterato:
 >
->* I componenti intermedi hanno una posizione assoluta all’interno della sequenza di componenti nel flusso del frammento. Questa posizione resta invariata, anche quando cambia il contenuto dei paragrafi nel frammento.
+>* I componenti intermedi hanno una posizione assoluta all’interno della sequenza di componenti nel flusso del frammento. Questa posizione non cambia, anche quando cambia il contenuto dei paragrafi nel frammento.
 >
 >  Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
 >* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
@@ -158,7 +158,7 @@ Se hai [associato del contenuto](/help/sites-cloud/administering/content-fragmen
 
 >[!NOTE]
 >
->Se sulla stessa pagina sono presenti più frammenti di contenuto, la scheda **Contenuto associato** visualizza le risorse appropriate per tutti i frammenti.
+>Se sulla stessa pagina sono presenti più frammenti di contenuto, la funzione **Contenuto associato** vengono visualizzate le risorse appropriate per tutti i frammenti.
 
 Una volta aggiunto alla pagina un frammento con contenuto associato, nel pannello laterale viene aperta una nuova scheda (**Contenuto associato**).
 
@@ -172,12 +172,12 @@ Se sono state inserite delle risorse (ad esempio immagini) nel frammento stesso 
 
 Ad esempio, per un’immagine è possibile:
 
-* Ritagliare, ruotare o capovolgere l’immagine.
-* Aggiungere un titolo o testo alternativo.
-* Specificare una dimensione.
+* Ritaglia, ruota o capovolgi l’immagine.
+* Aggiungi un titolo o un testo alternativo.
+* Specifica una dimensione.
 * Puoi anche configurare il layout.
 
-Altre modifiche, come spostamento, copia, eliminazione devono essere eseguite nell’editor frammento.
+Altre modifiche, ad esempio spostamento, copia, eliminazione, devono essere effettuate nell’editor frammenti.
 
 ### Pubblicazione {#publishing}
 

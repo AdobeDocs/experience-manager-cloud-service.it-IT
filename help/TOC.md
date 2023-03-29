@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: c5395c9c844744655054bb15e1b9b2178792b8b5
 workflow-type: tm+mt
 source-wordcount: '4011'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 93%
    + Note sulla versione di manutenzione di AEMaaCS {#maintenance}
       + [Note sulla versione di manutenzione più recente](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [Note sulla versione di manutenzione per 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [Note sulla versione di manutenzione 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Note sulla versione per Cloud Manager {#cloud-manager}
       + [Note sulla versione corrente](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
@@ -202,14 +202,14 @@ ht-degree: 93%
          + [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Convalida dei trasferimenti di contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [Mappatura utente e migrazione principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [Mappatura utenti e migrazione delle entità principali](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [Estrazione del contenuto dall’origine](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Inserimento di contenuto in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Visualizzazione dei registri di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Eliminazione di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Risoluzione dei problemi dello strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + Strumento di mappatura utenti legacy (legacy){#legacy-user-mapping-tool}
+         + Strumento di mappatura utenti precedenti (legacy){#legacy-user-mapping-tool}
             + [Panoramica](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Considerazioni importanti](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Utilizzo dello strumento di mappatura utente](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -511,11 +511,11 @@ ht-degree: 93%
       + [Architettura](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Domande frequenti](/help/forms/faq.md)
       + [Problemi noti](/help/forms/known-issues.md)
-   + Configurazione e migrazione {#setup-configure-migrate}
+   + Configurare e migrare {#setup-configure-migrate}
       + [Ambiente integrato a Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configurare un ambiente di sviluppo locale](/help/forms/setup-local-development-environment.md)
-      + [Configura connettore di archiviazione unificata](/help/forms/configure-unified-storage-connector.md)
-      + [Esegui migrazione da [!DNL AEM 6.5 Forms] o prima di [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [Configurare connettore di archiviazione unificata](/help/forms/configure-unified-storage-connector.md)
+      + [Migrare da  [!DNL AEM 6.5 Forms]  o precedenti verso  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppi e autorizzazioni](/help/forms/forms-groups-privileges-tasks.md)
       + [Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse](/help/forms/import-export-forms-templates.md)
    + Integrare {#integrate}
@@ -524,7 +524,7 @@ ht-degree: 93%
          + [Integrare AEM Forms as a Cloud Service con DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
          + [Integrare AEM Forms as a Cloud Service con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-         + [Incorporare un Forms adattivo in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [Incorporare un modulo adattivo in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
       + Modello dati modulo {#use-form-data-model}
          + [Collegare le origini dati al Cloud Service](/help/forms/data-integration.md)
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
@@ -535,14 +535,14 @@ ht-degree: 93%
          + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
    + Moduli adattivi {#adaptive-forms-authoring}
-      + Authoring di Forms adattivo - Componenti core {#authoring-adaptive-forms-core-components}
+      + Authoring di moduli adattivi: componenti core {#authoring-adaptive-forms-core-components}
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
-            + [Creare temi per un modulo adattivo - Componenti core](/help/forms/using-themes-in-core-components.md)
-            + [Genera documento di record per Forms adattivo](/help/forms/generate-document-of-record-core-components.md)
+            + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
+            + [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-core-components.md)
             + [Cartella di lavoro del vertice](/help/forms/summit-2023-workbook.md)
-      + Authoring di Forms adattivo - Componenti di base {#authoring-adaptive-forms-foundation-components}
-         + Conversione di PDF forms in Forms adattivo {#afcs}
+      + Authoring di moduli adattivi: componenti di base {#authoring-adaptive-forms-foundation-components}
+         + Convertire moduli PDF in moduli adattivi {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
             + [Convertire un modulo PDF esistente in un modulo adattivo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=it)
             + [Revisione dei moduli convertiti](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=it#welcome-to-review-and-correct-editor)
@@ -559,7 +559,7 @@ ht-degree: 93%
             + [Utilizza componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
             + [Applicare una firma scarabocchio](/help/forms/signing-forms-using-scribble.md)
             + [Aggiungere una tabella a un modulo adattivo](/help/forms/adaptive-forms-tables.md)
-            + [Aggiunta del supporto per le note a piè di pagina a un modulo adattivo](/help/forms/footnotes-richtextsupport.md)
+            + [Aggiungere il supporto per le note a piè di pagina a un modulo adattivo](/help/forms/footnotes-richtextsupport.md)
          + Configurare il layout e applicare lo stile a un modulo adattivo {#configure-layout-of-an-adaptive-form}
             + [Impostare il layout di un modulo adattivo](/help/forms/layout-capabilities-adaptive-forms.md)
             + [Utilizzare la modalità Layout per ridimensionare i componenti](/help/forms/resize-using-layout-mode.md)
@@ -576,15 +576,15 @@ ht-degree: 93%
             + [Creare un’azione di invio personalizzata](/help/forms/custom-submit-action-form.md)
          + [Precompilare i campi di un modulo adattivo](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Genera documento di record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-         + [Aggiunta del supporto per nuove impostazioni internazionali a un modulo adattivo](/help/forms/supporting-new-language-localization.md)
+         + [Aggiungere il supporto per nuove lingue a un modulo adattivo](/help/forms/supporting-new-language-localization.md)
          + Aggiungere o migliorare i metadati {#manage-metadata}
             + [Aggiungere, rimuovere o modificare i metadati di un modulo adattivo](/help/forms/manage-form-metadata.md)
             + [Riutilizzare le proprietà dei metadati di un modulo adattivo](/help/forms/reusing-adaptive-forms.md)
          + Migliorare l’accessibilità di un modulo adattivo {#accessible-adaptive-forms}
             + [Creare un modulo adattivo accessibile](/help/forms/creating-accessible-adaptive-forms.md)
          + [Configurare Forms Portal](/help/forms/configure-forms-portal.md)
-         + [Creazione e gestione delle revisioni](/help/forms/create-reviews-forms.md)
-   + Flussi di lavoro centrati su Forms {#create-form-centric-workflows}
+         + [Creare e gestire le revisioni](/help/forms/create-reviews-forms.md)
+   + Flussi di lavoro incentrati sui moduli {#create-form-centric-workflows}
       + [Utilizzare passaggi incentrati su Forms in un flusso di lavoro + riferimento a passaggi](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilizzare le variabili in un flusso di lavoro incentrato su Forms](/help/forms/variable-in-aem-workflows.md)
       + [Utilizzare l&#39;opzione Fuori sede](/help/forms/configure-out-of-office-settings.md)
@@ -597,9 +597,9 @@ ht-degree: 93%
       + [Utilizzo di font personalizzati nei documenti PDF](/help/forms/use-custom-fonts.md)
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)
    + Riferimento API per sviluppatori {#aem-forms-developer-api-reference}
-      + [Riferimento API per le comunicazioni di Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [Riferimento API JavaScript di AEM Forms Cloud Service](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [Riferimento API Java di AEM Forms Cloud Service](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [Riferimento API per le comunicazioni del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [Riferimento API per JavaScript del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html?lang=it)
+      + [Riferimento API per Java del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html?lang=it)
    + Risoluzione dei problemi {#troubleshooting-aem-forms-cloud-service}
       + [Installazione e configurazione](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Memorizzazione in cache di Dispatcher e CDN](/help/forms/troubleshooting-caching-performance.md)
@@ -705,7 +705,7 @@ ht-degree: 93%
       + [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
       + [Query GraphQL persistenti](/help/headless/graphql-api/persisted-queries.md)
       + [Ottimizzazione delle query GraphQL](/help/headless/graphql-api/graphql-optimization.md)
-      + [Aggiornamento dei frammenti di contenuto per filtri GraphQL ottimizzati](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+      + [Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Query di esempio GraphQL](/help/headless/graphql-api/sample-queries.md)
    + [API REST per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=it)
    + Sicurezza {#security}
@@ -819,7 +819,7 @@ ht-degree: 93%
       + [Fondamenti tecnici AEM](/help/implementing/developing/introduction/aem-technologies.md)
       + [Materiali di riferimento API](/help/implementing/developing/reference-materials.md)
       + [Generazione dei token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + [Generazione di token di accesso per API lato server (legacy)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
+      + [Generazione dei token di accesso per le API lato server (legacy)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [Creazione rapida di siti e personalizzazione front-end](/help/implementing/developing/introduction/quick-site-creation.md)
       + [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [Personalizzazione di modelli e temi del sito](/help/implementing/developing/introduction/customizing-site-templates-themes.md)

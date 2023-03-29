@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
 workflow-type: tm+mt
 source-wordcount: '2064'
-ht-degree: 98%
+ht-degree: 88%
 
 ---
 
@@ -18,14 +18,14 @@ In Adobe Experience Manager as a Cloud Service, un frammento esperienza:
 * può essere aggiunto come riferimento nelle pagine;
 * può contenere qualsiasi componente.
 
-Caratteristiche di un Frammento esperienza:
+Un Frammento Esperienza:
 
-* È parte di un’esperienza (pagina).
+* Fa parte di un’esperienza (pagina).
 * Può essere utilizzato su più pagine.
-* Si basa su un modello (solo modificabile) per la definizione di struttura e componenti.
+* Si basa su un modello (solo modificabile) per definire struttura e componenti.
 * Questo modello viene utilizzato per creare la *pagina root* del frammento di esperienza.
-* È composto da uno o più componenti, con layout, in un sistema di paragrafo.
-* Può contenere altri frammenti esperienza.
+* È costituito da uno o più componenti, con layout, in un sistema paragrafo.
+* Può contenere altri frammenti di esperienza.
 * Può essere combinato con altri componenti (inclusi altri frammenti esperienza) per formare una pagina completa (esperienza).
 * Puoi creare una o più varianti in base alla pagina root.
 * Queste varianti possono condividere contenuti e/o componenti.
@@ -41,8 +41,8 @@ Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distri
 
 >[!NOTE]
 >
->I **[frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** e i **frammenti di esperienza** sono funzioni diverse in AEM:
->* **Frammenti di contenuto** sono contenuti editoriali, con definizione e struttura, ma senza progettazione visiva e/o layout aggiuntivi. Possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date.
+>I **[frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** e i **frammenti di esperienza** sono funzioni diverse in AEM:
+>* I **frammenti di contenuto** sono contenuti editoriali, con definizione e struttura, ma senza elementi visivi aggiuntivi di design e/o layout. Possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
@@ -55,11 +55,11 @@ Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distri
 >
 >* `experience-fragments-editors`
 >
->Per qualsiasi problema riscontrato, contatta l’amministratore del sistema.
+>In caso di problemi, contatta l’amministratore di sistema.
 
 ## Quando utilizzare i frammenti esperienza?   {#when-should-you-use-experience-fragments}
 
-I frammenti esperienza devono essere utilizzati:
+I frammenti esperienza sono indicati nei seguenti casi:
 
 * Quando desideri riutilizzare le esperienze.
    * Per esperienze che riutilizzerai con contenuti simili o uguali. .
@@ -184,7 +184,7 @@ Per creare un frammento esperienza:
 
 1. Inserisci le **proprietà** per il **frammento esperienza**.
 
-   Il campo **Titolo** è obbligatorio. Se il campo **Nome** è lasciato vuoto, verrà derivato dal **Titolo**.
+   A **Titolo** è obbligatorio. Se la **Nome** viene lasciato vuoto e viene derivato da **Titolo**.
 
    ![Proprietà dei frammenti esperienza](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -196,7 +196,7 @@ Per creare un frammento esperienza:
 
 1. Fai clic su **Crea**.
 
-   Viene visualizzato un messaggio. Seleziona:
+   Verrà visualizzato un messaggio. Seleziona:
 
    * **Fine** per tornare alla console
    * **Apri** per aprire l’editor frammenti
@@ -207,7 +207,7 @@ L’editor dei frammenti esperienza offre funzionalità simili al normale editor
 
 >[!NOTE]
 >
->Consulta [Modifica del contenuto di pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md) per ulteriori informazioni su come usare questo strumento.
+>Vedi [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md) per ulteriori informazioni su come utilizzare l’editor di pagine.
 
 L’esempio seguente illustra come creare un teaser per un prodotto:
 
@@ -225,14 +225,14 @@ Esempio: `http://<host>:<port>/editor.html/content/experience-fragments/wknd/lan
 
 ## Creazione di una variante del frammento esperienza {#creating-an-experience-fragment-variation}
 
-Puoi creare diverse varianti per un Frammento esperienza a seconda delle tue esigenze:
+Puoi creare varianti del frammento esperienza, a seconda delle tue esigenze:
 
-1. Apri la pagina per la [modifica](#editing-your-experience-fragment).
+1. Apri il frammento per [modifica](#editing-your-experience-fragment).
 1. Apri la scheda **Varianti**.
 
    ![Creazione di una variante del frammento esperienza](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Crea** ti consente di creare:
+1. **Crea** consente di creare:
 
    * **Variazione**
    * **Variante come Live Copy**.
@@ -254,9 +254,9 @@ Puoi creare diverse varianti per un Frammento esperienza a seconda delle tue esi
 
 ## Utilizzo del frammento esperienza {#using-your-experience-fragment}
 
-A questo punto puoi utilizzare il frammento esperienza durante l’authoring delle pagine:
+È ora possibile utilizzare il Frammento esperienza durante la creazione delle pagine:
 
-1. Apri la pagina da modificare.
+1. Apri una pagina qualsiasi per la modifica.
 
 1. Crea un’istanza del componente Frammento esperienza, all’interno del sistema di paragrafi della pagina:
 
@@ -299,7 +299,7 @@ Per creare un nuovo blocco predefinito:
 
 #### Gestione di un blocco predefinito {#managing-a-building-block}
 
-Il blocco predefinito è visibile nella scheda **Blocchi predefiniti**. Per ogni blocco sono disponibili le azioni seguenti:
+Il blocco predefinito è visibile nel **Blocchi predefiniti** scheda . Per ogni blocco sono disponibili le seguenti azioni:
 
 * **Vai a master**: apri la variante della pagina root in una nuova scheda
 * **Rinomina**
@@ -403,7 +403,7 @@ I dettagli vengono visualizzati in tutte le viste della console **Frammenti espe
       * **Numero totale di varianti** - solo informativo
       * **Numero di varianti web** - solo informativo
       * **Numero di varianti non web** - solo informativo
-      * **Numero di pagine con questo frammento** - solo informativo
+      * **Numero di pagine che utilizzano il frammento** - solo informativo
    * **Servizi cloud**
       * **Configurazione cloud**
       * **Configurazioni Cloud Service**
@@ -431,9 +431,9 @@ In alternativa è possibile [pubblicare in anteprima](/help/sites-cloud/authorin
 
 ## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
 
-Per impostazione predefinita, i frammenti esperienza vengono forniti nel formato HTML che può essere utilizzati sia da AEM che da canali di terze parti.
+Per impostazione predefinita, i frammenti esperienza vengono consegnati nel formato HTML. Può essere utilizzato sia da canali AEM che di terze parti.
 
-Per l’esportazione in Adobe Target, è possibile utilizzare anche il formato JSON. Consulta:
+Per l’esportazione in Adobe Target, è possibile utilizzare anche JSON. Consulta:
 
 * [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)

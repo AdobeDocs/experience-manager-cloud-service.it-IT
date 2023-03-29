@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 6464b90e607d3de87d103c744b8e7c0ba9ed2178
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 93%
 
 ## Creare un modello {#create-model}
 
-La console del modello Frammento di contenuto si apre in una nuova scheda. Considera la console del modello Frammento di contenuto come una libreria di modelli, in cui puoi creare nuovi modelli e gestire quelli esistenti.
+La console Modelli per frammenti di contenuto si apre in una nuova scheda. Considera la console Modelli per frammenti di contenuto come una libreria di modelli, in cui puoi crearne di nuovi e gestire quelli esistenti.
 
 1. Fai clic sul pulsante **Crea** in alto a destra dello schermo per iniziare a creare un modello di frammento di contenuto.
 

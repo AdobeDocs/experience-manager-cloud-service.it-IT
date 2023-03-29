@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: 13e75e8b0f08463f5fd941263497f5cf0a31129c
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Nella console puoi osservare tre aree principali:
             * Mostrare informazioni sui riferimenti
             * Mostrare informazioni sulle versioni linguistiche del frammento
          * È possibile [selezionare uno o più frammenti di contenuto per visualizzare le azioni disponibili](#actions-selected-content-fragment).
-      * Puoi selezionare un’intestazione di colonna per ordinare la tabella in base a tale colonna; selezionala ancora per passare da ordine crescente a decrescente. Attualmente, l’ordinamento è supportato sulla **Titolo**, **Modificato**, e **Modificato da** colonne.
+      * Puoi selezionare un’intestazione di colonna per ordinare la tabella in base a tale colonna; selezionala ancora per passare da ordine crescente a decrescente. Attualmente, l’ordinamento è supportato nelle colonne **Titolo**, **Modificato**, e **Modificato da**.
    * **[Creare](#creating-new-content-fragment)** un nuovo frammento di contenuto
    * [Filtrare](#filtering-fragments) i frammenti di contenuto in base a una selezione di predicati e salvare il filtro per utilizzi futuri
    * [Ricercare](#searching-fragments) i frammenti di contenuto

@@ -1,11 +1,11 @@
 ---
 title: Scelte rapide da tastiera per le console
-description: Risparmia tempo durante l’authoring utilizzando le scelte rapide da tastiera
+description: Risparmia tempo durante l’authoring utilizzando queste scelte rapide da tastiera
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 96%
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,7 @@ Le seguenti scelte rapide sono disponibili per le console Sites, Assets, Utenti,
 |  | `Left Arrow` | Consente di spostarsi verso l’alto nella struttura ad albero o di comprimere un nodo |
 |  | `Down Arrow` | Consente di spostarsi verso il basso in un elenco di pagine sullo stesso livello |
 |  | `Up Arrow` | Consente di spostarsi verso l’alto in un elenco di pagine sullo stesso livello |
-| Console: vista a colonne | `Shift-Up/Down Arrow` | Sposta su/giù e seleziona un elenco di pagine allo stesso livello |
+| Console - Vista a colonne | `Shift-Up/Down Arrow` | Spostare verso l’alto o verso il basso e selezionare un elenco di pagine allo stesso livello |
 |  | `Esc` | Consente di spostarsi verso l’alto in un elenco di pagine sullo stesso livello |
 | Console | `?` | Aiuto per scelte rapide da tastiera |
 |  | `/` | Avvia la [ricerca](/help/sites-cloud/authoring/getting-started/search.md) |
@@ -47,19 +47,19 @@ I tasti modificatori utilizzati per le scelte rapide da tastiera dipendono dal s
 
 ## Browser e scelte rapide da tastiera {#browsers-and-keyboard-shortcuts}
 
-AEM evita le scelte rapide comuni già utilizzate dai browser più diffusi, tuttavia il comportamento predefinito del browser non viene sostituito dalle scelte rapide di AEM.
+AEM evita le scelte rapide comuni già utilizzate dai browser più diffusi, tuttavia il comportamento predefinito del browser non viene ignorato dalle scelte rapide AEM.
 
-Inoltre, le scelte rapide da tastiera sono le stesse per tutte le lingue e i layout di tastiera.
+Inoltre, le scelte rapide da tastiera sono le stesse per tutte le impostazioni internazionali e i layout di tastiera.
 
 >[!NOTE]
 >
->Le scelte rapide di AEM non sostituiscono il comportamento predefinito del browser.
+>AEM scelte rapide non sovrascrivono il comportamento predefinito del browser.
 >
->Nel caso in cui si verifichino conflitti tra le scelte rapide di AEM e quelle del browser, le scelte rapide di AEM non funzioneranno, rispettando le funzionalità del browser.
+>Nel caso in cui si verifichino conflitti tra le scelte rapide AEM e del browser, AEM scelte rapide non funzioneranno, a causa delle funzionalità del browser.
 
 >[!CAUTION]
 >
->Le scelte rapide da tastiera di AEM potrebbero interferire con i lettori per schermo, alcune funzioni del browser e altri strumenti di accessibilità.
+>AEM scelte rapide da tastiera potrebbero interferire con gli assistenti vocali, alcune funzioni del browser e altri strumenti di accessibilità.
 >
 >Adobe consiglia di [disattivare le scelte rapide da tastiera di AEM](#deactivating-keyboard-shortcuts) quando si utilizza un lettore per schermo.
 
@@ -67,7 +67,7 @@ Inoltre, le scelte rapide da tastiera sono le stesse per tutte le lingue e i lay
 
 AEM fornisce scelte rapide da tastiera per alcune delle funzioni di uso comune (modifica, proprietà, copia/incolla, visualizzazione dei menu delle barre laterali e così via).
 
-Per gli utenti che non utilizzano scelte rapide da tastiera o che hanno determinati requisiti di accessibilità, tutte le scelte rapide da tastiera possono essere disabilitate.
+Per gli utenti che non utilizzano scelte rapide da tastiera o che hanno determinati requisiti di accessibilità, tutte le scelte rapide da tastiera possono essere disattivate.
 
 È possibile disattivare le scelte rapide da tastiera in due posizioni:
 

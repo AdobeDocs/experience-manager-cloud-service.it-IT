@@ -7,7 +7,7 @@ exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
 workflow-type: tm+mt
 source-wordcount: '4086'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -443,18 +443,18 @@ Per confrontare le copie per lingua con il master:
 
    ![Confronta copie per lingua](../assets/language-copy-compare.png)
 
-1. Le due pagine (di lancio e di origine) verranno aperte una accanto all&#39;altra.
-   * Per informazioni complete sull&#39;utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-cloud/authoring/features/page-diff.md).
+1. Le due pagine (lancio e sorgente) verranno aperte una accanto all’altra.
+   * Per informazioni complete sull’utilizzo di questa funzione, consulta [Differenze tra pagine](/help/sites-cloud/authoring/features/page-diff.md).
 
-## Spostamento o ridenominazione di una pagina sorgente {#move-source}
+## Spostamento o ridenominazione di una pagina di origine {#move-source}
 
-Se una pagina sorgente già tradotta deve essere [rinominato o spostato](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), la traduzione della pagina di nuovo dopo lo spostamento creerà una nuova copia per lingua in base al nuovo nome/posizione della pagina. La vecchia copia per lingua basata sul nome/posizione precedente sarà ancora presente.
+Se una pagina di origine già tradotta deve essere [rinominata o spostata](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), e viene ritradotta dopo lo spostamento, verrà creato un nuovo testo in lingua in base al nuovo nome/posizione della pagina. Il testo in lingua precedente basato sul nome/posizione precedente sarà ancora presente.
 
 La best practice per questo scenario prevede di seguire questa procedura:
-1. Annulla la pubblicazione delle copie per lingua associate alla pagina sorgente che desideri spostare.
-1. Le elimini.
-1. Crea nuove copie per lingua dalla pagina sorgente appena spostata.
-1. Pubblica le nuove copie per lingua create.
+1. Annulla la pubblicazione dei testi in lingua associati alla pagina sorgente che desideri spostare.
+1. Eliminali.
+1. Crea nuovi testi in lingua dalla pagina sorgente appena spostata.
+1. Pubblica i nuovi testi in lingua.
 
 ## Importazione ed esportazione di processi di traduzione {#import-export}
 
