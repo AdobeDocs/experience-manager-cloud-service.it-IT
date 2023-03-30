@@ -3,7 +3,7 @@ title: Query GraphQL persistenti
 description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 872fe7a96f58df0e1e9cce29367cc71778fedb78
+source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 73%
@@ -272,6 +272,8 @@ Per impostazione predefinita, AEM la cache viene annullata in base alla definizi
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
+{style="table-layout:auto"}
+
 ### Istanze di authoring {#author-instances}
 
 Per le istanze dell’autore, i valori predefiniti sono:
@@ -345,6 +347,8 @@ curl -u admin:admin -X POST \
 | `graphqlStaleIfError` | 86400 | *se del caso* | *se del caso* |
 | `graphqlSurrogateControl` | 600 | *se del caso* | *se del caso* |
 
+{style="table-layout:auto"}
+
 ### Gestione della cache con una configurazione OSGi {#cache-osgi-configration}
 
 Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](/help/implementing/deploying/configuring-osgi.md) per **Configurazione del servizio query permanente**.
@@ -363,6 +367,8 @@ Configurazione OSGi predefinita per le istanze di pubblicazione:
    | `surrogateControlMaxAge` | letture | `graphqlSurrogateControl` |
    | `surrogateControlStaleWhileRevalidate` | letture | `graphqlStaleWhileRevalidate` |
    | `surrogateControlStaleIfError` | letture | `graphqlStaleIfError` |
+
+   {style="table-layout:auto"}
 
 * e, se non disponibile, la configurazione OSGi utilizza il [valori predefiniti per le istanze di pubblicazione](#publish-instances).
 
