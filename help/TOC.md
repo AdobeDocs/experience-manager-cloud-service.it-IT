@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 48ec92d559f9d1ead096316e77e04f2e1e02526d
+source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
 workflow-type: tm+mt
-source-wordcount: '4009'
+source-wordcount: '4015'
 ht-degree: 98%
 
 ---
@@ -517,6 +517,7 @@ ht-degree: 98%
       + [Migrare da  [!DNL AEM 6.5 Forms]  o precedenti verso  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppi e autorizzazioni](/help/forms/forms-groups-privileges-tasks.md)
       + [Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse](/help/forms/import-export-forms-templates.md)
+      + [Temi di riferimento, modelli e modelli di dati](/help/forms/reference-themes-templates-data-models.md)
    + Integrare {#integrate}
       + Servizi {#services}
          + [Integrare AEM Forms as a Cloud Service con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
