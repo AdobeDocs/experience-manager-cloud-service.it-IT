@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
+source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '4013'
 ht-degree: 98%
 
 ---
@@ -517,7 +517,6 @@ ht-degree: 98%
       + [Migrare da  [!DNL AEM 6.5 Forms]  o precedenti verso  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppi e autorizzazioni](/help/forms/forms-groups-privileges-tasks.md)
       + [Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse](/help/forms/import-export-forms-templates.md)
-      + [Temi di riferimento, modelli e modelli di dati](/help/forms/reference-themes-templates-data-models.md)
    + Integrare {#integrate}
       + Servizi {#services}
          + [Integrare AEM Forms as a Cloud Service con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -549,9 +548,9 @@ ht-degree: 98%
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Introduzione all’authoring di moduli adattivi](/help/forms/introduction-forms-authoring.md)
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form.md)
+            + [Temi di riferimento, modelli e modelli di dati](/help/forms/reference-themes-templates-data-models.md)
             + [Creare un modello](/help/forms/template-editor.md)
             + [Creare un tema](/help/forms/themes.md)
-            + [Risorse di riferimento](/help/forms/reference-assets.md)
             + [Progettazione di uno schema JSON per un modulo adattivo](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Miglioramento delle prestazioni dei moduli di grandi dimensioni con caricamento lento](/help/forms/lazy-loading-adaptive-forms.md)
          + Aggiungere componenti a un modulo adattivo {#add-components-to-an-adaptive-form}
