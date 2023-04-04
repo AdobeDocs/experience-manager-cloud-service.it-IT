@@ -1,9 +1,9 @@
 ---
 title: Guida introduttiva all’Editor universale in AEM
 description: Scopri come accedere all’editor universale e come iniziare a strumentalizzare la tua prima app AEM per utilizzarla.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+source-git-commit: 7389e20ba73e84c2320ea8a834b381f415ad3983
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,13 @@ Questo documento ti guiderà attraverso questi passaggi.
 
 ## Richiedere l’accesso all’editor universale {#request-access}
 
-È innanzitutto necessario richiedere l’accesso all’Editor universale. Per favore, vai a [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) e verifica se hai accesso all’Editor universale.
+È innanzitutto necessario richiedere l’accesso all’Editor universale. Per favore, vai a [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) accedi e convalida se hai accesso all’Editor universale.
 
 Se non disponi di accesso, può essere richiesto tramite un modulo collegato sulla stessa pagina.
+
+![Richiedere l’accesso all’editor universale](assets/request-access.png)
+
+Fai clic su **Richiesta di accesso** e un rappresentante Adobe esaminerà la tua richiesta e contatterà per discutere del tuo caso d&#39;uso.
 
 ## Includere la libreria core dell’editor universale {#core-library}
 
