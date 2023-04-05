@@ -4,10 +4,10 @@ description: Scopri come utilizzare Frammenti di contenuto e l’API GraphQL com
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 30fca14949e379fb427252f43d9f31d062e7e445
+source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,10 @@ ht-degree: 100%
 Inizia da GraphQL Explorer in una nuova scheda. Qui puoi creare e convalidare le query rispetto al contenuto headless prima di utilizzarle per alimentare il contenuto dell’app o del sito web.
 
 1. La versione di prova AEM headless viene fornita con un endpoint precaricato con frammenti di contenuto da cui è possibile estrarre contenuto a scopo di test. Assicurati che l’endpoint **AEM Demo Assets** sia selezionato nel menu a discesa **Endpoint** nell’angolo in alto a destra dell’editor.
+
+1. Problema noto: se **AEM Demo Assets** l’endpoint non è presente nel menu a discesa, passa a Gestione pacchetti (`/crx/packmgr` nel tuo ambiente AEM) e reinstalla `aem-demo-assets.ui.content-{VERSION}.zip` pacchetto:
+
+   ![Reinstalla pacchetto](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. Copia il seguente frammento di codice per una query di elenco dell’endopoint **AEM Demo Assets** precaricato. Una query a elenco restituisce un elenco di tutto il contenuto che utilizza un modello specifico di frammento di contenuto. Le pagine di inventario e categoria in genere utilizzano questo formato di query.
 
