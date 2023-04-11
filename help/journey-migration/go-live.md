@@ -2,7 +2,7 @@
 title: Pubblicazione
 description: Scopri come eseguire la migrazione quando il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
+source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 2%
@@ -63,7 +63,7 @@ Per rispondere alla prima domanda, è necessario considerare il tempo necessario
 
 Inoltre, è necessario pianificare il blocco dei contenuti quando l’integrazione del contenuto finale è pianificata.
 
-## Best practice   {#best-practices}
+## Best practice {#best-practices}
 
 Quando pianifichi o esegui la migrazione, prendi in considerazione le seguenti linee guida:
 
@@ -107,7 +107,7 @@ Tieni presente che l’intera acquisizione non riesce se nel set di migrazione e
 Rispetto alla sezione precedente l’acquisizione **non** fallire a causa dei seguenti problemi di asset. Tuttavia, si consiglia vivamente di adottare le misure appropriate in questi scenari:
 
 * Qualsiasi risorsa con rendering originale mancante
-* Qualsiasi cartella che presenta una cartella mancante `jcr:content` nodo
+* Qualsiasi cartella che presenta una cartella mancante `jcr:content` nodo.
 
 Entrambi gli elementi di cui sopra saranno identificati e segnalati nella [Best practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) rapporto.
 
