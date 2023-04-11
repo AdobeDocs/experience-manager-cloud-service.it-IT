@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0ba6ce129322df9ad108822e86e5acfdbf99e613
+source-git-commit: 57666d474cd2ae41048e2d30eb27b0719a447005
 workflow-type: tm+mt
-source-wordcount: '5892'
+source-wordcount: '5899'
 ht-degree: 2%
 
 ---
@@ -427,7 +427,7 @@ Alcuni vantaggi principali dell’abilitazione di DASH sul tuo account includono
 
    >[!IMPORTANT]
    >
-   >L’abilitazione di DASH sul tuo account è attualmente disponibile solo in Nord America.
+   >L’abilitazione di DASH sul tuo account è attualmente disponibile solo in Asia-Pacifico e Nord America; presto in Europa-Medio Oriente-Africa.
 
 Avvii una richiesta per utilizzare DASH; non viene attivato automaticamente sul tuo account.
 
