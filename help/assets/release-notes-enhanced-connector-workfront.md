@@ -2,9 +2,9 @@
 title: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 description: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: a65f736f922bcb58c09773ff9c6d6f7104b6157d
+source-git-commit: 2fb929cae03fa9ac0bf6d18d5eb3cf19bb35fa37
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1090'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Data di rilascio dell’ultima versione 1.9.9 di [!DNL Workfront for Experience 
 
 ## Funzioni principali {#release-highlights}
 
-La versione più recente del [!DNL Workfront for Experience Manager enhanced connector] include gli aggiornamenti:
+La versione più recente del [!DNL Workfront for Experience Manager enhanced connector] include i seguenti aggiornamenti:
 
 * Experience Manager visualizza un `DateTimeParseException` eccezione quando riceve l’ultima data di modifica da Workfront durante la creazione della cartella collegata.
 
