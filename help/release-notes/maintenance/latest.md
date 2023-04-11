@@ -1,10 +1,10 @@
 ---
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: c56ed1878b89a1f31c5b7b44696511d51cfa5351
+source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 29%
+source-wordcount: '402'
+ht-degree: 24%
 
 ---
 
@@ -22,6 +22,8 @@ L’abilitazione delle funzioni per questa versione di manutenzione ti darà acc
 ### Problemi noti {#known-issues-11382}
 
 - SITES-12573 - Le query GraphQL che utilizzano variabili all&#39;interno di un filtro avranno esito negativo se non viene specificata una variabile. Non effettuare l&#39;aggiornamento a questa versione utilizza GraphQL con AEM as a Cloud Service.
+- SKYOPS-51970 - È stata identificata la regressione della versione FACT utilizzata nel passaggio buildImage, che porta a una mappatura utente non corrispondente.
+- GRANITE-44542 - Sono stati segnalati problemi per i clienti che non hanno specificato un tipo di nodo del pacchetto (fornendo un .content.xml con jcr:primaryType) per le cartelle incluse nel filtro del pacchetto. Questo ha causato la gestione di queste cartelle come nt:folder, creando problemi in vari casi.
 
 ### Problemi risolti {#fixed-issues-11382}
 
