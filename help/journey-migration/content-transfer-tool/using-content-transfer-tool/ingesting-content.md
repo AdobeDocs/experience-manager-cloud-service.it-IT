@@ -2,10 +2,10 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 12%
+source-wordcount: '1722'
+ht-degree: 11%
 
 ---
 
@@ -39,7 +39,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 
    * Seleziona il set di migrazione che contiene i dati estratti come Origine.
       * I set di migrazione scadranno dopo un periodo prolungato di inattività, quindi ci si aspetta che l’acquisizione avvenga relativamente presto dopo l’esecuzione dell’estrazione. Revisione [Scadenza set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) per i dettagli.
-   * Seleziona l’ambiente di destinazione. In questo punto verrà acquisito il contenuto del set di migrazione. Selezionare il livello. (Autore/pubblicazione).
+   * Seleziona l’ambiente di destinazione. In questo punto verrà acquisito il contenuto del set di migrazione. Selezionare il livello. (Autore/pubblicazione). Gli ambienti di sviluppo rapido non sono supportati.
 
    >[!NOTE]
    >
@@ -55,9 +55,13 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
    > 
    >Se si utilizza l’acquisizione con la pre-copia (per S3 o Azure Data Store), è consigliabile eseguire prima l’acquisizione da parte dell’autore. Questa operazione velocizza l’acquisizione di Publish quando questa viene eseguita in un secondo momento.
 
+   >[!NOTE]
+   >
+   >Le gestioni non supportano una destinazione RDE (Rapid Development Environment). Non verranno visualizzati come una possibile scelta di destinazione, anche se l’utente ha accesso ad essa.
+
    >[!IMPORTANT]
    >
-   >Potrai avviare un’acquisizione nell’ambiente di destinazione solo se appartieni alla pagina locale **Amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non riesci a avviare un’acquisizione, consulta [Impossibile avviare l&#39;acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
+   >Potrai avviare un’acquisizione nell’ambiente di destinazione solo se appartieni al **Amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non riesci a avviare un’acquisizione, consulta [Impossibile avviare l&#39;acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
 
    >[!IMPORTANT]
    >
@@ -103,7 +107,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 >id="aemcloud_ctt_ingestion_topup"
 >title="Acquisizione integrativa"
 >abstract="Utilizza la funzione top-up per spostare il contenuto modificato dall’ultima attività di trasferimento dei contenuti. Al termine dell’acquisizione, verifica i registri per la presenza di eventuali errori/avvisi. Eventuali errori devono essere affrontati immediatamente risolvendo i problemi segnalati o contattando l’Assistenza clienti di Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=it" text="Visualizzazione dei registri"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Visualizzazione dei registri"
 
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’*integrazione* di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
 
@@ -132,7 +136,7 @@ Sarà necessario recuperare manualmente il token di migrazione facendo clic sul 
 
 ### Impossibile avviare l&#39;acquisizione {#unable-to-start-ingestion}
 
-Potrai avviare un’acquisizione nell’ambiente di destinazione solo se appartieni alla pagina locale **Amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non appartieni al gruppo di amministratori AEM, quando tenti di avviare un’acquisizione verrà visualizzato un errore come mostrato di seguito. Puoi chiedere all’amministratore di aggiungerti al **Amministratori AEM** oppure chiedi il token stesso, che puoi quindi incollare nel **Input token di migrazione** campo .
+Potrai avviare un’acquisizione nell’ambiente di destinazione solo se appartieni al **Amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non appartieni al gruppo di amministratori AEM, quando tenti di avviare un’acquisizione verrà visualizzato un errore come mostrato di seguito. Puoi chiedere all’amministratore di aggiungerti al **Amministratori AEM** oppure chiedi il token stesso, che puoi quindi incollare nel **Input token di migrazione** campo .
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -175,4 +179,4 @@ Questo conflitto deve essere risolto manualmente. Un utente che abbia familiarit
 
 ## Passaggio successivo {#whats-next}
 
-Una volta completato l’inserimento di contenuto in Target, puoi visualizzare i registri di ogni passaggio (estrazione e acquisizione) e cercare gli errori. Vedi [Visualizzazione dei registri di un set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) per saperne di più.
+Una volta completato l’inserimento di contenuto in Target, puoi visualizzare i registri di ogni passaggio (estrazione e acquisizione) e cercare gli errori. Vedi [Visualizzazione dei registri di un set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) per saperne di più.

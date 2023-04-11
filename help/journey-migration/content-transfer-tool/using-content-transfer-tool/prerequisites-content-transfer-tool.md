@@ -2,10 +2,10 @@
 title: Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)
 description: Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 15%
+source-wordcount: '547'
+ht-degree: 11%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 15%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="Considerazioni importanti sull’utilizzo dello strumento di trasferimento dei contenuti"
->abstract="Esamina le considerazioni importanti per l’utilizzo dello strumento di trasferimento contenuti, tra cui le versioni Java e AEM, i tipi di archivio dati supportati, le considerazioni sui gruppi di utenti e altro ancora."
+>abstract="Esamina considerazioni importanti per utilizzare lo strumento Content Transfer (Trasferimento contenuti) tra cui versioni Java e AEM, tipi di datastore supportati, considerazioni sui gruppi di utenti e altro ancora."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=it#pre-reqs" text="Valutazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti) "
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it#best-practices" text="Best practice e linee guida"
 
@@ -23,7 +23,7 @@ Nella tabella seguente sono riepilogati i prerequisiti per l’utilizzo dello st
 Rivedi tutte le considerazioni elencate di seguito:
 
 | Considerazioni | Cosa è attualmente supportato |
-|--- |--- |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versione di AEM | Lo strumento Content Transfer (Trasferimento contenuti) può essere eseguito solo nelle versioni AEM 6.3 o successive. |
 | Dimensione dell’archivio segmenti | Un archivio esistente con meno di 55 milioni di nodi JCR e fino a 250 GB (dimensione compatta online) su *Autore* e 50 GB su *Pubblica* sono attualmente supportate. Crea un ticket di supporto con l’Assistenza clienti di Adobe per discutere le opzioni per la dimensione dell’archivio segmenti al di sopra di questi limiti. |
 | Dimensione totale dell’archivio dei contenuti <br>*(archivio segmenti + archivio dati)* | Lo strumento Content Transfer (Trasferimento contenuti) è progettato per trasferire contenuti fino a 20 TB per il tipo di archivio dati file. Attualmente non è supportato alcun valore superiore a 20 TB. Crea un ticket di assistenza con l’Assistenza clienti Adobe per discutere le opzioni per contenuti di dimensioni superiori a 20 TB. <br>Per accelerare notevolmente il processo di trasferimento dei contenuti per archivi di grandi dimensioni, è possibile [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=it#setting-up-pre-copy-step) è possibile utilizzare il passaggio . Questo vale per i tipi di archivio dati file, Amazon S3 e Azure Data Store dell’archivio dati. Per Amazon S3 e Azure Data Store, è supportato un archivio con dimensioni superiori a 20 TB. |
@@ -34,4 +34,4 @@ Rivedi tutte le considerazioni elencate di seguito:
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver esaminato i prerequisiti e aver determinato se è possibile utilizzare lo strumento Content Transfer (Trasferimento contenuti) nel progetto di migrazione, consulta [Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).
+Dopo aver esaminato i prerequisiti e aver determinato se è possibile utilizzare lo strumento Content Transfer (Trasferimento contenuti) nel progetto di migrazione, consulta [Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html).
