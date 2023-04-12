@@ -4,10 +4,10 @@ description: Integrazione con Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: c69f0b838638b4a2c2ea9f54836954f72710594f
+source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 100%
+source-wordcount: '1047'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,9 @@ Come parte di Adobe Marketing Cloud, Adobe Target ti consente di aumentare la ri
 * utilizzo dell’interfaccia utente touch per creare una configurazione Target in AEM as a Cloud Service (è richiesta la configurazione IMS).
 * aggiunta e configurazione di Adobe Target come estensione in [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=it).
 
-Adobe Launch è necessario per gestire le proprietà lato client sia per Analytics sia per Target nelle pagine AEM (librerie/tag JS). Detto questo, l’integrazione con Launch è necessaria per il &quot;targeting dell&#39;esperienza&quot;. Per l’esportazione dei frammenti di esperienza in Target, sono necessarie solo la configurazione Adobe Target e IMS.
+Adobe Launch è necessario per gestire le proprietà lato client sia per Analytics sia per Target nelle pagine AEM (librerie/tag JS). Detto questo, l’integrazione con Launch è necessaria per il &quot;targeting dell&#39;esperienza&quot;.
+
+Per l’esportazione di frammenti di esperienza e/o frammenti di contenuto in Target, è sufficiente l’ [Configurazione Adobe Target e IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >

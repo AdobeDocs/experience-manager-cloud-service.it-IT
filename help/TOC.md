@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
+source-git-commit: af3b5950a36bbd4a8d1e0de9591d31c50fa774c8
 workflow-type: tm+mt
-source-wordcount: '4013'
+source-wordcount: '4023'
 ht-degree: 98%
 
 ---
@@ -34,6 +34,8 @@ ht-degree: 98%
    + [Informazioni sulla versione](/help/release-notes/home.md)
    + Note sulla versione delle funzioni di AEMaaCS {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2023 {#2023}
+         + [Note sulla versione 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
       + 2022 {#2022}
          + [Note sulla versione 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [Note sulla versione 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -367,6 +369,7 @@ ht-degree: 98%
       + [Integrazione con Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Configurazione IMS da utilizzare per l’integrazione con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+      + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign ](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}

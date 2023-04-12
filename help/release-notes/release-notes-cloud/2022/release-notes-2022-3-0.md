@@ -2,16 +2,16 @@
 title: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 9a08514f11c86b783ae68940a0c3c58fcada3dc2
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 97%
+source-wordcount: '1150'
+ht-degree: 95%
 
 ---
 
-# Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione 2022.3.0 per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note generali sulla versione per la versione corrente (più recente) di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note sulla versione della funzione per la versione 2022.3.0 di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* Le credenziali utilizzate per autenticare le chiamate API da server a server (ad esempio, per le richieste API di GraphQL) ora possono essere aggiornate prima della scadenza in modo autonomo dalla Console per sviluppatori. Consulta la [documentazione](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) per ulteriori informazioni.
+* Le credenziali utilizzate per autenticare le chiamate API da server a server (ad esempio, per le richieste API di GraphQL) ora possono essere aggiornate prima della scadenza in modo self-service dalla Console per sviluppatori. Consulta la [documentazione](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) per ulteriori informazioni.
 
 * Le attività di manutenzione dell’eliminazione della versione e del registro di controllo, che non erano state precedentemente abilitate, verranno abilitate per i nuovi ambienti. Vedi i valori associati nell’articolo [Attività di manutenzione](/help/operations/maintenance.md).
 

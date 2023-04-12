@@ -2,16 +2,16 @@
 title: Note sulla versione 2022.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 9a08514f11c86b783ae68940a0c3c58fcada3dc2
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 97%
+source-wordcount: '639'
+ht-degree: 94%
 
 ---
 
-# Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione 2022.6.0 per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note generali sulla versione per la versione corrente (più recente) di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note sulla versione della funzione per la versione 2022.6.0 di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [dist
 
 * Compatibilità e robustezza migliorate per i connettori di terze parti su I/O Runtime
 
-* È stato migliorato il supporto per le sovrascritture della configurazione client GQL (ad esempio, impostare un comportamento di caching personalizzato)
+* Supporto migliorato per le sovrascritture della configurazione client GQL (ad esempio, impostazione di un comportamento di memorizzazione in cache personalizzato)
 
 * Ora per impostazione predefinita sono supportati più endpoint commerce che possono essere configurati tramite Cloud Manager. Puoi trovare i dettagli nel blog CIF, disponibile [qui](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
 
