@@ -2,10 +2,10 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 11%
+source-wordcount: '1687'
+ht-degree: 12%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 11%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=it#top-up-ingestion-process" text="Acquisizione integrativa"
 
 Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
->[!NOTE]
->Puoi eseguire il passaggio di pre-copia opzionale per velocizzare in modo significativo la fase di acquisizione. Il passaggio di pre-copia è più efficace per la prima estrazione e acquisizione completa. Fai riferimento a [Acquisizione con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) per ulteriori dettagli.
 
 >[!NOTE]
 >Ti sei ricordato di registrare un ticket di supporto per questa acquisizione? Vedi [Considerazioni importanti prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) per questo e altre considerazioni per rendere l’acquisizione efficace.
@@ -29,7 +27,6 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 1. Vai a Cloud Acceleration Manager. Fai clic sulla scheda del progetto e sulla scheda Content Transfer (Trasferimento contenuti). Passa a **Processi di acquisizione** e fai clic su **Nuovo inserimento**
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
-
 
 1. Rivedi la lista di controllo per l’acquisizione e assicurati che tutti i passaggi siano stati completati. Si tratta di misure necessarie per garantire il successo dell’acquisizione. Potrai procedere alla **Successivo** solo se la checklist è stata completata.
 
