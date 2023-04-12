@@ -5,10 +5,10 @@ landing-page-description: Scopri come gestire i frammenti di contenuto dalla con
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '952'
+ht-degree: 91%
 
 ---
 
@@ -56,6 +56,7 @@ Nella console puoi osservare tre aree principali:
 * Pannello a sinistra
    * Qui puoi nascondere o visualizzare la struttura delle cartelle
    * Puoi selezionare un ramo specifico della struttura
+   * Può essere ridimensionato per mostrare le cartelle nidificate
 * Pannello principale/destro; da qui puoi:
    * Visualizzare l’elenco di tutti i frammenti di contenuto nel ramo selezionato della struttura:
       * La posizione è indicata dalle breadcrumb; puoi utilizzarle anche per modificare la posizione
@@ -64,8 +65,10 @@ Nella console puoi osservare tre aree principali:
             * Aprire il frammento appropriato nell’editor
             * Mostrare informazioni sui riferimenti
             * Mostrare informazioni sulle versioni linguistiche del frammento
-         * È possibile [selezionare uno o più frammenti di contenuto per visualizzare le azioni disponibili](#actions-selected-content-fragment).
-      * Puoi selezionare un’intestazione di colonna per ordinare la tabella in base a tale colonna; selezionala ancora per passare da ordine crescente a decrescente. Attualmente, l’ordinamento è supportato nelle colonne **Titolo**, **Modificato**, e **Modificato da**.
+      * Se si utilizza il mouse sulle intestazioni di colonna, verrà visualizzato un selettore di azioni a discesa e un cursore di larghezza. che consentono di:
+         * Ordina: seleziona l’azione appropriata per crescente o decrescente. In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ordinamento è disponibile solo nelle colonne appropriate.
+         * Ridimensionare la colonna utilizzando i cursori dell’azione o della larghezza
+      * È possibile [selezionare uno o più frammenti di contenuto per visualizzare le azioni disponibili](#actions-selected-content-fragment).
    * **[Creare](#creating-new-content-fragment)** un nuovo frammento di contenuto
    * [Filtrare](#filtering-fragments) i frammenti di contenuto in base a una selezione di predicati e salvare il filtro per utilizzi futuri
    * [Ricercare](#searching-fragments) i frammenti di contenuto
@@ -154,7 +157,7 @@ Selezionando **Crea** consente di aprire la compatta finestra di dialogo **Nuovo
 
 Il pannello Filtro offre:
 
-* una selezione di predicati che possono essere selezionati e combinati;
+* una selezione di predicati; è possibile selezionare uno o più predicati e combinarli per creare il filtro
 * l’opportunità di salvare la configurazione mediante il comando **Salva**.
 * l’opzione di recuperare un filtro di ricerca salvato per il riutilizzo.
 
