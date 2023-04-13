@@ -2,9 +2,9 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
+source-git-commit: b0723faa23d77ac6b747f189e0643db59ddb2802
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1702'
 ht-degree: 12%
 
 ---
@@ -39,30 +39,19 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
    * Seleziona l’ambiente di destinazione. In questo punto verrà acquisito il contenuto del set di migrazione. Selezionare il livello. (Autore/pubblicazione). Gli ambienti di sviluppo rapido non sono supportati.
 
    >[!NOTE]
-   >
-   >Se l’origine era Autore, è consigliabile inserirla nel livello Autore nella destinazione. Analogamente, se l’origine era Pubblica, anche target dovrebbe essere Pubblica.
-
-   >[!NOTE]
-   >
-   >Se il livello di destinazione è `Author`, l’istanza di authoring verrà chiusa durante la durata dell’acquisizione e non sarà disponibile per gli utenti (ad esempio, autori o chiunque esegua la manutenzione, ecc.). In questo modo si protegge il sistema e si evita qualsiasi modifica che possa essere persa o causare un conflitto di acquisizione. Assicurati che il tuo team sia a conoscenza di questo fatto. Inoltre, l’ambiente apparirà in ibernazione durante l’acquisizione dell’autore.
-
-   >[!NOTE]
-   >
-   >Puoi eseguire il passaggio di pre-copia opzionale per velocizzare in modo significativo la fase di acquisizione. Fai riferimento a [Acquisizione con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) per ulteriori dettagli.
-   > 
-   >Se si utilizza l’acquisizione con la pre-copia (per S3 o Azure Data Store), è consigliabile eseguire prima l’acquisizione da parte dell’autore. Questa operazione velocizza l’acquisizione di Publish quando questa viene eseguita in un secondo momento.
-
-   >[!NOTE]
-   >
-   >Le gestioni non supportano una destinazione RDE (Rapid Development Environment). Non verranno visualizzati come una possibile scelta di destinazione, anche se l’utente ha accesso ad essa.
+   >Le seguenti note si applicano all’acquisizione del contenuto:
+   * Se l’origine era Autore, è consigliabile inserirla nel livello Autore nella destinazione. Analogamente, se l’origine era Pubblica, anche target dovrebbe essere Pubblica.
+   * Se il livello di destinazione è `Author`, l’istanza di authoring verrà chiusa durante la durata dell’acquisizione e non sarà disponibile per gli utenti (ad esempio, autori o chiunque esegua la manutenzione, ecc.). In questo modo si protegge il sistema e si evita qualsiasi modifica che possa essere persa o causare un conflitto di acquisizione. Assicurati che il tuo team sia a conoscenza di questo fatto. Inoltre, l’ambiente apparirà in ibernazione durante l’acquisizione dell’autore.
+   * Puoi eseguire il passaggio di pre-copia opzionale per velocizzare in modo significativo la fase di acquisizione. Fai riferimento a [Acquisizione con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) per ulteriori dettagli.
+   * Se si utilizza l’acquisizione con la pre-copia (per S3 o Azure Data Store), è consigliabile eseguire prima l’acquisizione da parte dell’autore. Questa operazione velocizza l’acquisizione di Publish quando questa viene eseguita in un secondo momento.
+   * Le gestioni non supportano una destinazione RDE (Rapid Development Environment). Non verranno visualizzati come una possibile scelta di destinazione, anche se l’utente ha accesso ad essa.
 
    >[!IMPORTANT]
-   >
-   >Potrai avviare un’acquisizione nell’ambiente di destinazione solo se appartieni al **Amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non riesci a avviare un’acquisizione, consulta [Impossibile avviare l&#39;acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
+   > Le seguenti note importanti si applicano all’acquisizione dei contenuti:
+   * Potrai avviare un’acquisizione nell’ambiente di destinazione solo se appartieni al **Amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non riesci a avviare un’acquisizione, consulta [Impossibile avviare l&#39;acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
+   * Se l’impostazione **Wipe** viene attivato prima dell’acquisizione, elimina l’intero archivio esistente e crea un nuovo archivio in cui inserire i contenuti. Questo significa che reimposta tutte le impostazioni, comprese le autorizzazioni sull&#39;istanza del Cloud Service di destinazione. Questo vale anche per un utente amministratore aggiunto al **amministratori** gruppo. Per avviare un’acquisizione, dovrai essere aggiunto nuovamente al gruppo di amministratori .
 
-   >[!IMPORTANT]
-   >
-   >Se l’impostazione **Wipe** viene attivato prima dell’acquisizione, elimina l’intero archivio esistente e crea un nuovo archivio in cui inserire i contenuti. Questo significa che reimposta tutte le impostazioni, comprese le autorizzazioni sull&#39;istanza del Cloud Service di destinazione. Questo vale anche per un utente amministratore aggiunto al **amministratori** gruppo. Per avviare un’acquisizione, dovrai essere aggiunto nuovamente al gruppo di amministratori .
+
 
 1. Fai clic su **Acquisisci**
 
