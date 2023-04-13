@@ -1,10 +1,10 @@
 ---
 title: Esportazione di frammenti di contenuto in Adobe Target
 description: Esportazione di frammenti di contenuto in Adobe Target
-source-git-commit: 78840c83d91d6e4f35ec7ca8d14f52024d3535ff
+source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 66%
+source-wordcount: '2228'
+ht-degree: 65%
 
 ---
 
@@ -321,7 +321,7 @@ Per esportare un frammento di contenuto da AEM a Target (dopo aver specificato l
 1. Passa al frammento di contenuto nel **Risorse** console.
 1. Seleziona il frammento di contenuto da esportare nella destinazione.
 
-1. Tocca o fai clic su **Esporta in Adobe Target**.
+1. Tocca o fai clic su **Esportazione in offerte Adobe Target**.
 
    ![Esporta in Adobe Target](assets/cfm-export-target-01.png)
 
@@ -336,6 +336,12 @@ Per esportare un frammento di contenuto da AEM a Target (dopo aver specificato l
    -->
 
 1. Tocca o fai clic su **Esporta senza pubblicare** o **Pubblica** se necessario.
+
+   >[!NOTE]
+   >
+   >Le azioni effettive visualizzate dipendono dallo stato del frammento e delle risorse correlate.
+   >
+   >Se tutto è già stato pubblicato e da allora non è stato modificato nulla, questo passaggio verrà trasmesso.
 
    >[!NOTE]
    >
