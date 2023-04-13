@@ -1,19 +1,19 @@
 ---
-title: Note sulla versione 2023.3.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
-description: Queste sono le note sulla versione 2023.3.0 di Cloud Manager in AEM as a Cloud Service.
+title: Note sulla versione 2023.4.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
+description: Queste sono le note sulla versione 2023.4.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: bfd2cbd574cac8de226903f923e774875a54ca4b
+source-git-commit: be39b09b609cccff916db462af9a84149d23a698
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 64%
+source-wordcount: '186'
+ht-degree: 50%
 
 ---
 
 
-# Note sulla versione 2023.3.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Note sulla versione 2023.4.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2023.3.0 di Cloud Manager in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2023.4.0 di Cloud Manager in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,9 +21,14 @@ Questa pagina illustra le note sulla versione 2023.3.0 di Cloud Manager in AEM a
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione 2023.3.0 di Cloud Manager in AEM as a Cloud Service è il 16 marzo 2023. La prossima versione è prevista per il 13 aprile 2023.
+La data di rilascio della versione 2023.4.0 di Cloud Manager in AEM as a Cloud Service è il 13 aprile 2023. La prossima versione è prevista per il 11 maggio 2023.
+
+## Novità {#what-is-new}
+
+* [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) è stato aggiornato alla versione 41.
 
 ## Correzioni di bug {#bug-fixes}
 
-* È stato risolto un problema a causa del quale il widget go-live impostava erroneamente la data impostata in precedenza.
-* La tessera commerciale sul **Scopri** In Cloud Manager l’utente ora passa alla pagina corretta.
+* Quando un [certificato](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) scade, [nomi di dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md) e [ELENCHI CONSENTITI IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) associato al certificato non verrà più rimosso dalla rete CDN.  In questi casi, il sito continuerà ad essere raggiungibile.
+* L’interfaccia utente di Cloud Manager fornisce avvisi anticipati più visibili relativi al [Certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) sta per scadere.
+* È stata corretta una situazione rara in cui i clienti non potevano creare un nuovo ambiente o eliminare un ambiente.
