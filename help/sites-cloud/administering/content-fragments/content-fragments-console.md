@@ -5,10 +5,10 @@ landing-page-description: Scopri come gestire i frammenti di contenuto dalla con
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
+source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 91%
+source-wordcount: '1028'
+ht-degree: 85%
 
 ---
 
@@ -162,6 +162,22 @@ Il pannello Filtro offre:
 * l’opzione di recuperare un filtro di ricerca salvato per il riutilizzo.
 
 ![Console Frammenti di contenuto - Filtro](assets/cfc-console-filter.png)
+
+### Filtro rapido {#fast-filtering}
+
+Puoi anche selezionare un predicato facendo clic su un valore di colonna specifico nell’elenco. Puoi selezionare uno o più valori da combinare predicati.
+
+Ad esempio, seleziona **Pubblicato** in **Stato** colonna:
+
+>[!NOTE]
+>
+>Il filtro rapido è supportato solo per **Modello**, **Stato**, **Modificato da** e **Pubblicato da** colonne.
+
+![Console Frammenti di contenuto - Filtro](assets/cfc-console-fast-filter-01.png)
+
+Una volta selezionato, questo verrà visualizzato come un predicato filtro e l’elenco verrà filtrato di conseguenza:
+
+![Console Frammenti di contenuto - Filtro](assets/cfc-console-fast-filter-02.png)
 
 ## Ricerca di frammenti {#searching-fragments}
 
