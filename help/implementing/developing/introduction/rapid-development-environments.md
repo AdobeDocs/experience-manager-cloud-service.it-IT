@@ -1,19 +1,15 @@
 ---
 title: Ambienti di sviluppo rapidi
 description: Scopri come sfruttare gli ambienti di sviluppo rapido per iterazioni di sviluppo rapide in un ambiente cloud.
-source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
+source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3304'
 ht-degree: 5%
 
 ---
 
 
 # Ambienti di sviluppo rapidi {#rapid-development-environments}
-
->[!AVAILABILITY]
->
->Questa funzione è pianificata per l’implementazione graduale ai clienti.
 
 Per implementare le modifiche, gli ambienti di Cloud Development correnti richiedono l’utilizzo di un processo che utilizzi un’ampia protezione del codice e regole di qualità denominate pipeline CI/CD. Per le situazioni in cui sono necessari cambiamenti rapidi e iterativi, Adobe ha introdotto gli RDE (Rapid Development Environments, RDE in breve).
 
