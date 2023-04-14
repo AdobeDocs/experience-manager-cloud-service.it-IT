@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 18549d90d9e326e30c5835a97c2c446dff616ee7
+source-git-commit: ca28ed2b9d566015bd62e54d27e69629650f9e82
 workflow-type: tm+mt
-source-wordcount: '4031'
+source-wordcount: '4038'
 ht-degree: 98%
 
 ---
@@ -146,6 +146,7 @@ ht-degree: 98%
    + [Supporto IMS per AEM as a Cloud Service](/help/security/ims-support.md)
    + [Supporto per i cookie dello stesso sito per AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Supporto OAuth2 per il servizio di posta](/help/security/oauth2-support-for-mail-service.md)
+   + [Considerazioni AEM sulla sicurezza as a Cloud Service](/help/security/security-considerations.md)
 + Onboarding {#onboarding}
    + [Inizia qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=it)
    + Percorso di onboarding {#journey}
