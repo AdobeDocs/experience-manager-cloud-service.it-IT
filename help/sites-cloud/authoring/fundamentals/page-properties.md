@@ -1,17 +1,17 @@
 ---
 title: Modifica delle proprietà di una pagina
-description: Puoi impostare le proprietà richieste per una pagina.
+description: Imposta le proprietà richieste per una pagina
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2387'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Modifica delle proprietà di una pagina   {#editing-page-properties}
 
-Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
+Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine potrebbero essere collegate a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno rese disponibili a seconda delle necessità.
 
 ## Proprietà pagina   {#page-properties}
 
@@ -23,15 +23,15 @@ Le proprietà sono distribuite su più schede.
 
    * **Titolo**: il titolo della pagina viene visualizzato in diverse aree. Ad esempio, nell’elenco della scheda **Siti Web** e nelle viste a elenco/scheda di **Sites**.
       * Questo campo è obbligatorio.
-   * **Tag** - Qui puoi aggiungere o rimuovere i tag nella pagina modificando l’elenco nella casella di selezione.
-      * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. Per rimuovere un tag dall’elenco, utilizza l’icona x.
-      * Per aggiungere un tag nuovo, digita il nome in una casella di selezione vuota.
+   * **Tag**: qui puoi aggiungere o rimuovere i tag dalla pagina aggiornando l’elenco nella casella di selezione.
+      * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
+      * Per aggiungere un tag completamente nuovo, digitane il nome in una casella di selezione vuota.
          * Il nuovo tag viene creato quando premi Invio.
-         * Un asterisco a destra del nome lo identifica come nuovo tag.
-      * L’elenco a discesa consente di selezionare uno dei tag esistenti.
-      * Quando sposti il mouse su un tag nella casella di selezione viene visualizzata una x, che consente di rimuovere il tag dalla pagina in questione.
+         * Il nuovo tag viene quindi mostrato con un asterisco a destra che lo identifica come nuovo tag.
+      * Con l’elenco a discesa puoi selezionare uno dei tag esistenti.
+      * Quando passi il mouse su uno dei tag nella casella di selezione, viene visualizzata una x, che può essere utilizzata per rimuovere quel tag per quella pagina.
       * Per ulteriori informazioni sui tag, consulta [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md).
-   * **Nascondi in navigazione** - Indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito finale.
+   * **Nascondi nella navigazione**: indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito risultante.
 
 * **Marchio**
 
@@ -50,7 +50,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Altri titoli e descrizioni**
 
-   * **Titolo pagina**: titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se questo campo è vuoto, viene utilizzato il **Titolo**.
+   * **Titolo pagina**: titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se viene lasciato vuoto, sarà utilizzato il **Titolo**.
    * **Titolo navigazione**: puoi specificare un diverso titolo da usare per la navigazione (ad esempio un titolo più conciso). Se questo campo viene lasciato vuoto, verrà utilizzato il **Titolo**.
    * **Sottotitolo**: sottotitolo da utilizzare nella pagina.
    * **Descrizione**: descrizione della pagina, il suo ruolo o altri dettagli.
@@ -76,7 +76,7 @@ Le proprietà sono distribuite su più schede.
 
 * **URL personalizzato**
 
-   * Consente di immettere un URL personalizzato per questa pagina, se desideri inserire un URL più breve e/o più significativo.
+   * Permette di inserire un URL personalizzato per questa pagina, che può consentirti di avere un URL più breve e/o più significativo.
    * Ad esempio, se l’URL personalizzato è impostato su `welcome` per la pagina identificata dal percorso `/v1.0/startpage` del sito web `http://example.com`, `http://example.com/welcome` sarà l’URL personalizzato di `http://example.com/content/v1.0/startpage`.
 
    >[!CAUTION]
@@ -107,13 +107,13 @@ Le proprietà sono distribuite su più schede.
       * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
       * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
       * Le pagine a cui si accede tramite alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
-      * Per maggiori dettagli vedi [Nomi di pagina localizzati nelle best practice SEO (Search Engine Optimization) e Gestione URL](/help/overview/seo-and-url-management.md#localized-page-names).
+      * Per maggiori dettagli, consulta [Nomi di pagina localizzati nelle best practice per la gestione di SEO e URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configurazione**
 
-   * **Ereditato da &lt;path>** - abilitare/disabilitare l&#39;ereditarietà; alternanza della disponibilità di **Configurazione cloud** per la selezione
+   * **Ereditata da &lt;path>**: abilitare/disabilitare l’ereditarietà; attivare/disattivare la disponibilità di **Configurazione cloud** con la selezione
 
-   * **Configurazione cloud** - Il percorso della configurazione selezionata
+   * **Configurazione cloud**: il percorso per la configurazione selezionata
 
 * **Impostazioni modello**
 
@@ -135,29 +135,29 @@ Le proprietà sono distribuite su più schede.
 
 * **SEO**
 
-   * **Url Canonico** - può essere utilizzato per sovrascrivere l’URL canonico della pagina; se lasciato vuoto, l’URL della pagina sarà il relativo URL canonico
+   * **Url canonico**: può essere utilizzato per sovrascrivere l’URL canonico della pagina; se lasciato vuoto, l’URL della pagina sarà il relativo URL canonico
 
-   * **Tag robot** - selezionare i tag robot per controllare il comportamento dei crawler dei motori di ricerca.
+   * **Tag robot**: seleziona i tag robot per controllare il comportamento dei crawler dei motori di ricerca.
 
       >[!NOTE]
       >
-      >Alcune delle opzioni sono in conflitto tra loro. In caso di conflitto, l&#39;opzione più permissiva ha la precedenza.
+      >Alcune delle opzioni sono in conflitto tra loro. In caso di conflitto, l’opzione più permissiva ha la precedenza.
 
-   * **Genera mappa del sito** - se selezionato, per questa pagina verrà generato un sitemap.xml e i relativi discendenti
+   * **Genera mappa del sito**: se selezionata, per questa pagina verrà generato un file sitemap.xml con i relativi discendenti
 
 ### Immagini {#images}
 
 * **Immagine in primo piano**
 
-   Seleziona e configura l’immagine da presentare. Viene utilizzato nei componenti che fanno riferimento alla pagina; ad esempio teaser, elenchi di pagine e così via
+   Seleziona e configura l’immagine da presentare. Viene utilizzata nei componenti che fanno riferimento alla pagina; ad esempio teaser, elenchi di pagine e così via.
 
    * **Immagine**
 
-      È possibile **Selezione** una risorsa, oppure cerca un file da caricare, quindi **Modifica** oppure **Cancella**.
+      Si può scegliere **Seleziona** una risorsa oppure cerca un file da caricare, quindi **Modifica** oppure **Cancella**.
 
-   * **Testo alternativo** - un testo utilizzato per rappresentare il significato e/o la funzione dell&#39;immagine; ad esempio, per gli assistenti vocali.
+   * **Testo alternativo**: un testo utilizzato per esprimere il significato e/o la funzione dell’immagine; ad esempio, per essere utilizzato dalle utilità per la lettura dello schermo.
 
-   * **Eredita - Valore tratto dalla risorsa DAM** - se questa opzione è selezionata, il testo alternativo verrà compilato con il valore `dc:description`metadati in DAM
+   * **Eredita - Valore tratto dalla risorsa DAM**: se questa opzione è selezionata, il testo alternativo verrà compilato con il valore dei metadati`dc:description` in DAM
 
 * **Miniatura**
 
@@ -166,7 +166,7 @@ Le proprietà sono distribuite su più schede.
    * **Genera anteprima**: genera un’anteprima della pagina da usare come miniatura
    * **Carica immagine**: consente di caricare un’immagine da usare come miniatura
    * **Seleziona immagine**: seleziona una risorsa esistente da usare come miniatura
-   * **Annulla**: questa opzione diventa disponibile dopo aver apportato una modifica alla miniatura. Se non desideri mantenere la modifica, puoi ripristinarla prima di salvare.
+   * **Annulla**: questa opzione diventa disponibile dopo aver apportato una modifica alla miniatura. Se non desideri mantenere la modifica, puoi annullarla prima di salvare.
 
 ### Servizi cloud {#cloud-services}
 
@@ -176,7 +176,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Configurazioni ContextHub**
 
-   * **Ereditato da &lt;path>** - abilitare/disabilitare l&#39;ereditarietà; alternanza della disponibilità di **Percorso ContextHub** e **Percorso segmenti** per la selezione
+   * **Ereditato da &lt;path>**: abilita/disabilita l’ereditarietà; alternanza della disponibilità di **Percorso ContextHub** e **Percorso segmenti** per la selezione
 
    * **Percorso ContextHub**: definizione della [Configurazione ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **Percorso segmenti**: definizione dell [Percorso dei segmenti](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -192,12 +192,12 @@ Le proprietà sono distribuite su più schede.
 * **Autorizzazioni**
 
    * **Aggiungere autorizzazioni**
-   * **Modificare un gruppo utenti chiuso**
-   * Visualizzare le **Autorizzazioni effettive**
+   * **Modifica un gruppo utenti chiuso**
+   * Visualizza le **autorizzazioni effettive**
 
 ### Blueprint {#blueprint}
 
-Questa scheda è visibile solo per le pagine che fungono da blueprint. Le blueprint fungono da base per le Live Copy e fanno parte di [Gestione multisito.](/help/sites-cloud/administering/msm/overview.md)
+Questa scheda è visibile solo per le pagine che fungono da blueprint. Le blueprint fungono da base per le Live Copy e fanno parte della [Gestione multisito.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Live Copy attuali**: elenca le pagine basate su (ad esempio, Live Copy di) questa pagina blueprint
 
@@ -205,7 +205,7 @@ Questa scheda è visibile solo per le pagine che fungono da blueprint. Le bluepr
 
 ### Live Copy  {#live-copy}
 
-Questa scheda è visibile solo per le pagine configurate come Live Copy. Come per le blueprint, le Live Copy fanno parte di [Gestione multisito.](/help/sites-cloud/administering/msm/overview.md).
+Questa scheda è visibile solo per le pagine configurate come Live Copy. Come per le blueprint, le Live Copy fanno parte della [Gestione multisito](/help/sites-cloud/administering/msm/overview.md).
 
 * **Sincronizza**: sincronizza le Live Copy con blueprint, mantenendo le modifiche locali
 * **Ripristina**: ripristina le Live Copy allo stato di blueprint, rimuovendo le modifiche locali
@@ -234,30 +234,30 @@ Quando un ambiente di anteprima è abilitato, vengono visualizzati i seguenti el
 
 ### App web progressiva {#progressive-web-app}
 
-Grazie a una configurazione semplice, un autore di contenuti può ora abilitare le funzioni dell’app web progressiva (progressive web app, PWA) per le esperienze create in AEM Sites.
+Grazie a una configurazione semplice, un autore di contenuti può ora abilitare le funzioni delle web app progressive (progressive web app, PWA) per le esperienze create in AEM Sites.
 
 >[!NOTE]
 >
->Per maggiori dettagli vedi [Abilitazione delle funzioni progressive delle app web](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Per maggiori dettagli, consulta [Abilitazione delle funzioni progressive delle web app](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Configura esperienza installabile**
 
-   * **Abilita PWA** - attivare/disattivare la funzione; consente agli utenti di installare il sito come PWA
-   * **StartupURL** - URL di avvio preferito
-   * **Modalità di visualizzazione** - come il browser deve essere nascosto o altrimenti presentato all&#39;utente sul dispositivo locale
-   * **Orientamento dello schermo** - come PWA gestirà gli orientamenti del dispositivo
-   * **Colore tema** - il colore dell’app che influisce sul modo in cui il sistema operativo dell’utente locale visualizza la barra degli strumenti dell’interfaccia utente nativa e i controlli di navigazione
-   * **Colore di sfondo** - il colore di sfondo dell’app, visualizzato durante il caricamento dell’app
-   * **Icona** - l’icona che rappresenta l’app sul dispositivo dell’utente
+   * **Abilita PWA**: abilita/disabilita la funzione; consente agli utenti di installare il sito come PWA
+   * **URL di avvio**: URL di avvio preferito
+   * **Modalità di visualizzazione**: definiscono come il browser deve essere nascosto o altrimenti presentato all’utente sul dispositivo locale
+   * **Orientamento dello schermo**: come PWA gestirà gli orientamenti del dispositivo
+   * **Colore tema**: il colore dell’app che influisce sul modo in cui il sistema operativo dell’utente locale visualizza la barra degli strumenti dell’interfaccia utente nativa e i controlli di navigazione
+   * **Colore di sfondo**: il colore di sfondo dell’app, che viene visualizzato durante il caricamento dell’app
+   * **Icona**: l’icona che rappresenta l’app sul dispositivo dell’utente
 
 * **Gestione della cache (avanzata)**
 
-   * **Strategia di memorizzazione in cache e frequenza di aggiornamento dei contenuti** - definisce il modello di caching per PWA
+   * **Strategia di memorizzazione in cache e frequenza di aggiornamento dei contenuti**: definisce il modello di memorizzazione in cache per PWA
    * **File da memorizzare nella cache per uso offline**
-      * **Pre-memorizzazione in cache dei file (anteprima tecnica)** - i file in hosting su AEM verranno salvati nella cache del browser locale quando il service worker sta installando e prima di utilizzarli
-      * **Librerie lato client** - librerie lato client per memorizzare in cache l’esperienza offline
-      * **inclusioni di percorso** - le richieste di rete per i percorsi definiti vengono intercettate e il contenuto nella cache viene restituito in conformità alla strategia di caching configurata e alla frequenza di aggiornamento del contenuto
-      * **Esclusioni di percorso** - questi file non verranno mai memorizzati nella cache indipendentemente dalle impostazioni in File pre-caching e Percorsi inclusioni
+      * **Pre-memorizzazione in cache dei file (anteprima tecnica)**: i file ospitati su AEM verranno salvati nella cache del browser locale quando il service worker si sta installando e prima di essere utilizzato
+      * **Librerie lato client**: le librerie lato client per memorizzare in cache l’esperienza offline
+      * **Inclusioni dei percorsi**: le richieste di rete per i percorsi definiti vengono intercettate e il contenuto memorizzato nella cache viene restituito in conformità alla configurazione della strategia di memorizzazione in cache e alla frequenza di aggiornamento dei contenuti
+      * **Esclusioni di percorsi**: questi file non verranno mai memorizzati nella cache indipendentemente dalle impostazioni in Pre-memorizzazione in cache dei file e Inclusioni dei percorsi
 
 ## Modifica delle proprietà di una pagina {#editing-page-properties-1}
 
@@ -265,7 +265,7 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
    * [Crea una nuova pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) (un sottoinsieme delle proprietà)
    * Tocca o fai clic su **Proprietà**
       * Per una singola pagina
-      * Per più pagine (solo un sottoinsieme di proprietà è disponibile per la modifica in blocco)
+      * Per più pagine (solo un sottoinsieme delle proprietà è disponibile per la modifica in blocco)
 * Dall’editor di pagine:
    * Tramite **Informazioni pagina** (quindi **Apri proprietà**)
 
@@ -310,8 +310,8 @@ Dalla console **Sites** è possibile selezionare più pagine e quindi utilizzare
 
 Puoi selezionare più pagine per la modifica in serie utilizzando diversi metodi, tra i quali:
 
-* Utilizzare la console **Sites**.
-* Dopo aver utilizzato **Cerca** per individuare un insieme di pagine.
+* Quando esplori la console **Sites**
+* Dopo l’utilizzo di **Ricerca** per individuare un set di pagine
 
 Dopo aver selezionato le pagine e aver toccato o fatto clic sull’opzione **Proprietà**, vengono visualizzate le proprietà per la modifica in serie:
 
@@ -327,11 +327,11 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
 
 * **Visualizza**
 
-   * Un elenco delle pagine interessate.
-      * Puoi selezionarle/deselezionarle se necessario.
+   * Un elenco delle pagine interessate
+      * Se necessario, seleziona o deseleziona
       * Schede
-         * Come per la visualizzazione delle proprietà di una pagina singola, le proprietà sono ordinate in schede.
-   * Un sottoinsieme di proprietà.
+         * Come per la visualizzazione delle proprietà di una singola pagina, le proprietà sono ordinate in schede.
+   * Un sottoinsieme di proprietà
       * Puoi vedere le proprietà che sono disponibili su tutte le pagine selezionate e che sono state esplicitamente definite come disponibili per la modifica in serie.
       * Se la tua selezione include una sola pagina, tutte le proprietà sono visibili.
    * Proprietà condivise con un valore comune
@@ -342,8 +342,8 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
 * **Modifica**
 
    * Puoi aggiornare i valori nei campi disponibili.
-      * I nuovi valori saranno applicati a tutte le pagine selezionate quando fai clic su **Fine**.
-      * Quando il campo ha valori multipli (ad esempio i Tag), puoi aggiungere un nuovo valore o rimuovere un valore comune.
+      * I nuovi valori verranno applicati a tutte le pagine selezionate quando si seleziona **Fine**.
+      * Quando il campo è multivalore (ad esempio Tag), è possibile aggiungere un nuovo valore o rimuovere un valore comune.
    * I campi in comune ma con valori diversi nelle varie pagine saranno contraddistinti da uno speciale valore, ad esempio `<Mixed Entries>`.
 
 >[!NOTE]
