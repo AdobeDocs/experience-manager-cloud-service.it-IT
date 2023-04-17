@@ -3,9 +3,9 @@ title: Supporto OAuth2 per il servizio di posta
 description: Supporto Oauth2 per il servizio di posta in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: fb6fd4a86f94ae282d95c73ecb702a372d7c1f86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '691'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ Prima di procedere alla configurazione di OAuth sul lato AEM, assicurati di conv
 >
 > Puoi ottenere la raccolta API Postman da [questa posizione](https://docs.microsoft.com/it-it/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 >
-> Controlla la documentazione di MSFT OAuth [qui](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) per ulteriori dettagli.
+> Controlla la documentazione di MSFT OAuth [qui](https://learn.microsoft.com/it-it/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) per ulteriori dettagli.
 
 ### Integrazione con AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
