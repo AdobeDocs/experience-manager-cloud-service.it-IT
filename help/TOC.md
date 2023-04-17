@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ca28ed2b9d566015bd62e54d27e69629650f9e82
+source-git-commit: 968cf51b3c13ecba7230a222edf695fdef69450d
 workflow-type: tm+mt
-source-wordcount: '4038'
+source-wordcount: '4047'
 ht-degree: 99%
 
 ---
@@ -933,6 +933,8 @@ ht-degree: 99%
    + Livello di authoring {#author-tier}
       + [Accesso al livello di authoring](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Protezione del livello di authoring](/help/implementing/author-tier/securing-the-author-tier.md)
+   + Livello anteprima {#preview-tier}
+      + [Configurazione delle impostazioni OSGi per il livello di anteprima](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Panoramica della distribuzione dei contenuti {#content-delivery}
       + [Flusso di distribuzione dei contenuti](/help/implementing/dispatcher/overview.md)
       + [Dispatcher nel cloud](/help/implementing/dispatcher/disp-overview.md)

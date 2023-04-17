@@ -2,9 +2,9 @@
 title: Anteprima del contenuto
 description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima i contenuti prima della pubblicazione.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: dc55bd43641c03dd022a891c8b85569d9be28ebe
+source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '277'
 ht-degree: 100%
 
 ---
@@ -17,10 +17,6 @@ AEM offre un servizio di anteprima Sites che consente agli sviluppatori e agli a
 Semplifica la visualizzazione in anteprima delle esperienze di pagina che non sarebbero altrimenti visibili dall’ambiente di authoring, come le transizioni di pagina e altri contenuti solo lato pubblicazione.
 
 Per ulteriori dettagli sugli ambienti di anteprima, consulta il documento [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
-
->[!NOTE]
->
->La pubblicazione di un frammento di esperienza in Anteprima segue sostanzialmente la stessa procedura applicata a una pagina, ma viene eseguita dalla console o dall’editor Frammenti di esperienza.
 
 ## Pubblicazione del contenuto in anteprima {#publishing-content-to-preview}
 
@@ -52,27 +48,10 @@ Per annullare la pubblicazione di contenuti dall’ambiente di **Anteprima** si 
 
 L’unica differenza è che puoi impostare la **Destinazione** su **Anteprima**.
 
-## Configurazione delle impostazioni OSGi per il livello di anteprima {#configuring-osgi-settings-for-the-preview-tier}
+## Ulteriori informazioni {#further-information}
 
-I valori delle proprietà OSGi del livello di anteprima vengono ereditati dal livello di pubblicazione. Tuttavia, i valori del livello di anteprima possono essere distinti dal livello di pubblicazione impostando il parametro `service` al valore `preview`. L’esempio seguente di una proprietà OSGi determina l’URL di un endpoint di integrazione.
+Consulta anche:
 
-```
-[
-{
-"name":"INTEGRATION_URL",
-"type":"string",
-"value":"http://s2.integrationvendor.com",
-"service": "preview"
-}
-]
-```
+* [Configurazione delle impostazioni OSGi per il livello di anteprima](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
-Per ulteriori informazioni, consulta [questa sezione](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) della documentazione di configurazione OSGi.
-
-## Eseguire il debug dell’anteprima tramite la Console per sviluppatori {#debugging-preview-using-the-developer-console}
-
-Segui questi passaggi per eseguire il debug del livello di anteprima utilizzando la Console per sviluppatori:
-
-* Nella [Console per sviluppatori](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), seleziona **-- Tutte le anteprime --** oppure un ambiente di produzione che includa **prev** nel nome
-* Genera le informazioni rilevanti per l’istanza di anteprima 
-Per ulteriori informazioni su come ottenere gli URL per i tuoi ambienti, consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md).
+* [Eseguire il debug dell’anteprima tramite la Console per sviluppatori](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
