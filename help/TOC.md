@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: ca28ed2b9d566015bd62e54d27e69629650f9e82
 workflow-type: tm+mt
 source-wordcount: '4038'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -545,7 +545,7 @@ ht-degree: 98%
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
             + [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-core-components.md)
-            + [Cartella di lavoro del vertice](/help/forms/summit-2023-workbook.md)
+            + [Cartella di lavoro Summit](/help/forms/summit-2023-workbook.md)
       + Authoring di moduli adattivi: componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
@@ -968,9 +968,9 @@ ht-degree: 98%
       + [Guida rapida alle linee guida WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Editor universale {#universal-editor}
    + [Introduzione all’editor universale](/help/implementing/universal-editor/introduction.md)
-   + [Creazione di contenuti con l’editor universale](/help/implementing/universal-editor/authoring.md)
+   + [Authoring dei contenuti con l’editor universale](/help/implementing/universal-editor/authoring.md)
    + [Pubblicazione di contenuti con l’editor universale](/help/implementing/universal-editor/publishing.md)
-   + [Guida introduttiva all’Editor universale in AEM](/help/implementing/universal-editor/getting-started.md)
+   + [Guida introduttiva all’editor universale in AEM](/help/implementing/universal-editor/getting-started.md)
    + [Architettura dell’editor universale](/help/implementing/universal-editor/architecture.md)
    + [Attributi e tipi](/help/implementing/universal-editor/attributes-types.md)
    + [Autenticazione dell’editor universale](/help/implementing/universal-editor/authentication.md)

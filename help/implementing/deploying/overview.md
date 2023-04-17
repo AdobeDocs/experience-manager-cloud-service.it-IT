@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
 source-wordcount: '3509'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ Dopo il passaggio alla nuova versione dell’applicazione:
    * Cartelle (aggiungi, modifica, rimuovi)
    * Modelli modificabili (aggiungi, modifica, rimuovi)
    * Configurazione in base al contesto (qualsiasi cosa in `/conf`) (aggiungi, modifica, rimuovi)
-   * Script (i pacchetti possono attivare gli hook di installazione in varie fasi del processo di installazione del pacchetto. Consulta la sezione [Documentazione di Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) informazioni sugli hook di installazione.  Nota che AEM CS utilizza attualmente Filevault versione 3.4.0, che limita gli hook di installazione agli utenti amministratori, agli utenti di sistema e al membro del gruppo di amministratori).
+   * Script (i pacchetti possono attivare gli hook di installazione in varie fasi del processo di installazione del pacchetto. Consulta la [documentazione di Jackrabbit Filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sugli hook di installazione. Tieni presente che AEM CS utilizza attualmente Filevault versione 3.4.0, che limita gli hook di installazione agli utenti amministratori, agli utenti di sistema e ai membri del gruppo di amministratori).
 
 È possibile limitare l’installazione di contenuti mutabili all’authoring o alla pubblicazione incorporando i pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per rispecchiare tale separazione è stata effettuata in AEM 6.5, e i dettagli relativi alla ristrutturazione del progetto raccomandata si trovano nella [Documentazione AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=it)
 
@@ -294,7 +294,7 @@ AEM as a Cloud Service d’altra parte è più rigoroso su quali modalità di es
 * Le modalità di esecuzione della configurazione OSGI devono fare riferimento ad ambienti RDE, di sviluppo, di staging o di produzione oppure a servizi di authoring o pubblicazione. È supportata una combinazione di `<service>.<environment_type>`, che devono essere utilizzati in questo particolare ordine (ad esempio `author.dev` o `publish.prod`). I token OSGI devono essere referenziati direttamente dal codice anziché utilizzando il metodo `getRunModes`, che non includerà più `environment_type` in fase di esecuzione. Per ulteriori informazioni, consulta [Configurazione OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Le modalità di esecuzione dei bundle OSGI sono limitate al servizio (authoring, pubblicazione). I bundle OSGI per modalità di esecuzione devono essere installati nel pacchetto di contenuti in `install.author` o `install.publish`.
 
-AEM as a Cloud Service non consente di utilizzare le modalità di esecuzione per installare il contenuto per ambienti o servizi specifici. Se è necessario impostare un ambiente di sviluppo con dati o HTML che non si trovano negli ambienti di staging o produzione, è possibile utilizzare il gestore dei pacchetti.
+AEM as a Cloud Service non consente di utilizzare le modalità di esecuzione per installare contenuti per ambienti o servizi specifici. Se è necessario impostare un ambiente di sviluppo con dati o HTML che non si trovano negli ambienti di staging o produzione, è possibile utilizzare Gestione pacchetti.
 
 Le configurazioni supportate per la modalità di esecuzione sono:
 
