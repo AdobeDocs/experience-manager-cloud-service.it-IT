@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 57666d474cd2ae41048e2d30eb27b0719a447005
+source-git-commit: 13a1915e9aca812024e8eb27c131500cdc8e01b2
 workflow-type: tm+mt
-source-wordcount: '5899'
+source-wordcount: '5887'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,6 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
       * Integra i video utilizzando il codice di incorporamento sulla pagina web:
          [Incorporare il visualizzatore video in una pagina web](/help/assets/dynamic-media/embed-code.md).
-   * [Pubblicare video in YouTube](#publishing-videos-to-youtube).
    * [Generare report video](#viewing-video-reports).
 
    * [Aggiungere sottotitoli al video](#adding-captions-to-video).
@@ -273,7 +272,7 @@ L’immagine seguente mostra il flusso di lavoro di authoring complessivo dei vi
 
 ## Best practice per la codifica dei video {#best-practices-for-encoding-videos}
 
-La **Codifica video Dynamic Media** se hai abilitato Dynamic Media e hai impostato Cloud Services video, il flusso di lavoro codifica i video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Vedi [Monitorare la codifica video e lo stato di pubblicazione di YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Se hai abilitato Dynamic Media e hai impostato Cloud Services video, la **[!UICONTROL Codifica video Dynamic Media]** il flusso di lavoro ha effetto automaticamente al momento del caricamento di un video. Se non utilizzi Dynamic Media, la **[!UICONTROL Risorsa di aggiornamento DAM]** il flusso di lavoro ha effetto).
+La **Codifica video Dynamic Media** se hai abilitato Dynamic Media e hai impostato Cloud Services video, il flusso di lavoro codifica i video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Se hai abilitato Dynamic Media e hai impostato Cloud Services video, la **[!UICONTROL Codifica video Dynamic Media]** il flusso di lavoro ha effetto automaticamente al momento del caricamento di un video. Se non utilizzi Dynamic Media, la **[!UICONTROL Risorsa di aggiornamento DAM]** il flusso di lavoro ha effetto).
 
 Di seguito sono riportati alcuni suggerimenti utili per la codifica dei file video di origine.
 
