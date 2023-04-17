@@ -2,9 +2,9 @@
 title: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 description: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: dea6c266e5c10135a320f923dc77d0fd2050988e
+source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
 workflow-type: tm+mt
-source-wordcount: '2960'
+source-wordcount: '3020'
 ht-degree: 2%
 
 ---
@@ -333,7 +333,7 @@ Il tuo ambiente di sviluppo locale è pronto.
 
 ## Abilitare i componenti core di Forms adattivi per un progetto basato su Archetype AEM esistente {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
 
-Se utilizzi AEM programma basato su Archetype versione 40 o successiva per AEM Forms as a Cloud Service, i componenti core vengono abilitati automaticamente per il tuo ambiente.
+Se utilizzi AEM programma basato su Archetype versione 40 o successiva per AEM Forms as a Cloud Service, i componenti core vengono abilitati automaticamente per il tuo ambiente. Quando abiliti i componenti core per il tuo ambiente, **Forms adattivo (componente core)** il tema modello e canvas viene aggiunto all’ambiente. Se la tua versione SDK AEM precedente alla 2023.02.0, [assicurati di `prerelease` flag abilitato nell’ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) in quanto i componenti core di Forms adattivi facevano parte della versione pre-release precedente alla versione 2023.02.0.
 
 Per abilitare i componenti core Forms adattivi per l’ambiente as a Cloud Service AEM Forms in base alle versioni precedenti di Archetype, incorpora nel progetto gli artefatti relativi agli esempi di componenti core WCM e gli artefatti dei componenti core Forms (inclusi gli esempi):
 
