@@ -2,9 +2,9 @@
 title: Introduzione ai nomi di dominio personalizzati
 description: Tramite l’interfaccia utente di Cloud Manager è possibile aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 5649f083c55cd84296f38acbff3f395e77a7e422
+source-git-commit: cc6910bad0d0a62232bd66e0080b6802b9a1110b
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 82%
 
 ---
