@@ -5,10 +5,10 @@ landing-page-description: Scopri come gestire i frammenti di contenuto dalla con
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
+source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 85%
+source-wordcount: '1051'
+ht-degree: 80%
 
 ---
 
@@ -68,22 +68,33 @@ Nella console puoi osservare tre aree principali:
       * Se si utilizza il mouse sulle intestazioni di colonna, verrà visualizzato un selettore di azioni a discesa e un cursore di larghezza. che consentono di:
          * Ordina: seleziona l’azione appropriata per crescente o decrescente. In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ordinamento è disponibile solo nelle colonne appropriate.
          * Ridimensionare la colonna utilizzando i cursori dell’azione o della larghezza
-      * È possibile [selezionare uno o più frammenti di contenuto per visualizzare le azioni disponibili](#actions-selected-content-fragment).
-   * **[Creare](#creating-new-content-fragment)** un nuovo frammento di contenuto
-   * [Filtrare](#filtering-fragments) i frammenti di contenuto in base a una selezione di predicati e salvare il filtro per utilizzi futuri
-   * [Ricercare](#searching-fragments) i frammenti di contenuto
-   * [Personalizzare la vista tabella per mostrare le colonne di informazioni selezionate](#select-available-columns)
-   * Utilizzare **Apri in Assets** per aprire direttamente la posizione corrente nella console **Assets**
 
-      >[!NOTE]
-      >
-      >La console **Assets** viene utilizzata per accedere alle risorse, ad esempio immagini, video e così via.  È possibile accedere a questa console:
-      >
-      >* utilizzando il collegamento **Apri in Assets** (nella console Frammenti di contenuto);
-      >* direttamente dal riquadro di navigazione globale.
+## Azioni {#actions}
+
+Nella console sono disponibili diverse azioni utilizzabili direttamente o dopo aver selezionato un frammento specifico:
+
+* Varie azioni sono direttamente disponibili [disponibile dalla console](#available-actions)
+* È possibile [seleziona uno o più frammenti di contenuto per visualizzare le azioni appropriate](#actions-selected-content-fragment)
+
+### Azioni (non selezionate) {#actions-unselected}
+
+Alcune azioni sono disponibili dalla console senza selezionare un frammento di contenuto specifico:
+
+* **[Creare](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** un nuovo frammento di contenuto
+* [Filtrare](#filtering-fragments) i frammenti di contenuto in base a una selezione di predicati e salvare il filtro per utilizzi futuri
+* [Ricercare](#searching-fragments) i frammenti di contenuto
+* [Personalizzare la vista tabella per mostrare le colonne di informazioni selezionate](#select-available-columns)
+* Utilizzare **Apri in Assets** per aprire direttamente la posizione corrente nella console **Assets**
+
+   >[!NOTE]
+   >
+   >La console **Assets** viene utilizzata per accedere alle risorse, ad esempio immagini, video e così via.  È possibile accedere a questa console:
+   >
+   >* utilizzando il collegamento **Apri in Assets** (nella console Frammenti di contenuto);
+   >* direttamente dal riquadro di navigazione globale.
 
 
-## Azioni per un frammento di contenuto (selezionato) {#actions-selected-content-fragment}
+### Azioni per un frammento di contenuto (selezionato) {#actions-selected-content-fragment}
 
 Quando si seleziona un frammento specifico, viene aperta una barra degli strumenti incentrata sulle azioni disponibili per tale frammento. Puoi inoltre selezionare più frammenti; la selezione delle azioni verrà regolata di conseguenza.
 
@@ -146,12 +157,6 @@ Come per altre console, puoi configurare le colonne visibili e disponibili da ut
 Presenta un elenco di colonne che puoi nascondere o mostrare:
 
 ![Console Frammenti di contenuto - Configurazione delle colonne](assets/cfc-console-column-selection.png)
-
-## Creazione di un nuovo frammento di contenuto {#creating-new-content-fragment}
-
-Selezionando **Crea** consente di aprire la compatta finestra di dialogo **Nuovo frammento di contenuto**:
-
-![Console Frammenti di contenuto - Creazione di un nuovo frammento](assets/cfc-console-create.png)
 
 ## Filtrare i frammenti {#filtering-fragments}
 
