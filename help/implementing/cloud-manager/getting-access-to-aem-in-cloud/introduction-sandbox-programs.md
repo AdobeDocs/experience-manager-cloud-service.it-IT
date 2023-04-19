@@ -2,10 +2,10 @@
 title: Introduzione ai programmi sandbox
 description: Scopri che cosa sono i programmi sandbox e in cosa differiscono dai programmi di produzione.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
+source-git-commit: e43dd379169b4048347ecce6d10652e9f8835333
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 88%
+source-wordcount: '514'
+ht-degree: 81%
 
 ---
 
@@ -64,9 +64,13 @@ Per ulteriori informazioni su come aggiornare un ambiente, consulta il documento
 
 ### Sospensione ed eliminazione {#hibernation}
 
-Gli ambienti in un programma sandbox vengono automaticamente sospesi dopo 8 ore di inattività. Una volta sospesi, possono essere riattivati manualmente.
+Gli ambienti in un programma sandbox vengono automaticamente sospesi dopo otto ore di inattività. Una volta sospesi, possono essere riattivati manualmente.
 
-I programmi sandbox vengono eliminati dopo 6 mesi di sospensione continua. Al termine di questo periodo, possono essere ricreati.
+Gli ambienti sandbox vengono eliminati dopo sei mesi continui di ibernazione, dopodiché possono essere ricreati.
+
+>[!NOTE]
+>
+>Solo gli ambienti sandbox vengono eliminati automaticamente dopo sei mesi di ibernazione continua. Il programma sandbox con il relativo archivio e codice viene mantenuto.
 
 Per ulteriori informazioni, consulta [Sospensione e riattivazione degli ambienti sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md).
 
