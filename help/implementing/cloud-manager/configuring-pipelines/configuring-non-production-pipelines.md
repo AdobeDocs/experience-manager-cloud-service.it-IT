@@ -3,10 +3,10 @@ title: Configurazione delle pipeline non di produzione
 description: Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
-workflow-type: ht
-source-wordcount: '1369'
-ht-degree: 100%
+source-git-commit: 0dd1cfba81eb8dfab3e002333868ec79ebc5e96c
+workflow-type: tm+mt
+source-wordcount: '1403'
+ht-degree: 97%
 
 ---
 
@@ -94,6 +94,12 @@ Per completare la configurazione della pipeline non di produzione del codice fro
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
 
 ### Codice full stack {#full-stack-code}
+
+>[!NOTE]
+>
+>* Questa funzione non è ancora disponibile al pubblico. Il suo lancio è previsto per giugno 2023.
+>* Se desideri provare la funzione e fornire un feedback per il miglioramento, contatta il tuo rappresentante di Adobe.
+
 
 Una pipeline del codice full stack distribuisce simultaneamente le build del codice back-end e front-end contenenti una o più applicazioni server di AEM con la configurazione HTTPD/Dispatcher. Per ulteriori informazioni su questo tipo di pipeline, consulta il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline).
 
