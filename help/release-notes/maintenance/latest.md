@@ -1,10 +1,10 @@
 ---
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 3378322c16f12c5ec4a741b912bbe0833f68d8e4
+source-git-commit: 4aa4954f214545dcd768fdf955f1fc2f776da939
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 21%
+source-wordcount: '275'
+ht-degree: 34%
 
 ---
 
@@ -13,52 +13,20 @@ ht-degree: 21%
 
 La sezione seguente illustra le note tecniche sulla versione per la versione di manutenzione corrente dell’Experience Manager as a Cloud Service.
 
-## Versione 11382 {#release-11382}
+## Versione 11835 {#release-11835}
 
-Di seguito sono riepilogati i continui miglioramenti della versione di manutenzione 11382, rilasciata pubblicamente il 28 marzo 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 11289.
+Di seguito sono riepilogati i continui miglioramenti della versione di manutenzione 11835, rilasciata pubblicamente il 19 aprile 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 11382.
 
 L’abilitazione delle funzioni per questa versione di manutenzione ti darà accesso al set di funzioni completo. Consulta le [note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md) per ottenere informazioni dettagliate.
 
->[!IMPORTANT]
->
-> È possibile rilevare una discrepanza nell’interfaccia utente di Cloud Manager, che mostra &quot;2023.3.11382&quot;, mentre la versione ufficiale è &quot;2023.02&quot;. Ciò è dovuto al ritardo nell’attivazione delle funzioni 2023.02.
-> Stiamo lavorando alla soluzione di questo problema per le prossime versioni.
-
-### Problemi noti {#known-issues-11382}
+### Problemi risolti {#fixed-issues-11835}
 
 - SITES-12573 - Le query GraphQL che utilizzano variabili all&#39;interno di un filtro avranno esito negativo se non viene specificata una variabile. Non effettuare l&#39;aggiornamento a questa versione utilizza GraphQL con AEM as a Cloud Service.
 - SKYOPS-51970 - È stata identificata la regressione della versione FACT utilizzata nel passaggio buildImage, che porta a una mappatura utente non corrispondente.
 - GRANITE-44542 - Sono stati segnalati problemi per i clienti che non hanno specificato un tipo di nodo del pacchetto (fornendo un .content.xml con jcr:primaryType) per le cartelle incluse nel filtro del pacchetto. Questo ha causato la gestione di queste cartelle come nt:folder, creando problemi in vari casi.
 - SKYOPS-56928 - La regressione HTTPD di Apache potrebbe causare errori 404. Se si verificano tali problemi, per motivi di sicurezza, si consiglia di eseguire il rollback alla versione precedente ed evitare l’esecuzione di una pipeline durante tale periodo di tempo.
 
-### Problemi risolti {#fixed-issues-11382}
-
-- ASSETS-21023 - È stato corretto il rendering di ritaglio avanzato, che consentiva ai clienti di osservare un&#39;eccezione Null Pointer nell&#39;istanza di Publisher di tutti gli ambienti AEM quando tentavano di accedere a tali rappresentazioni tramite l&#39;API.
-- SKYOPS-49280 - Quando si installa una configurazione o un aggiornamento del bundle utilizzando RDE in Pubblica, il risultato potrebbe non essere visibile perché la cache del dispatcher di pubblicazione non viene invalidata
-
-#### Sites {#sites-issues-11382}
-
-- SITES-7796 - Possibilità per l’autore dei contenuti di pubblicare il frammento di contenuto principale e le rispettive varianti durante l’esportazione in target
-- SITES-97 - GraphQL: Paginazione e ordinamento, filtro ibrido
-
->[!NOTE]
->
-> In SITES-97 sono stati apportati alcuni miglioramenti all&#39;implementazione GraphQL che potrebbero causare un comportamento imprevisto. Vedi [Modifiche AEM GraphQL relative alla gestione dei valori nulli](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html) per ulteriori informazioni.
-
-#### Risorse {#assets-issues-11382}
-
-- ASSETS-20076 - Aggiungi il supporto per la filigrana video che corrisponde al supporto per la filigrana delle immagini corrente
-- ASSETS-21428 - Aggiunte esclusioni per le modifiche CSS
-
-#### Forms {#forms-issues-11382}
-
-- CQ-4351502 - Aggiornamento della mappatura utente del servizio per consentire l&#39;accesso in lettura in Sites
-
-#### Platform {#platform-issues-11382}
-
-- SITES-11040 - Abilitazione condizionale del caching delle query persistenti GraphQL nel dispatcher
-
-### Tecnologie incorporate {#embedded-tech-11382}
+### Tecnologie incorporate {#embedded-tech-11835}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
