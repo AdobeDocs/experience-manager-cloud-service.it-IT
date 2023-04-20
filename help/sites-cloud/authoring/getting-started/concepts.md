@@ -2,10 +2,10 @@
 title: Concetti relativi all’authoring
 description: Concetti relativi all’authoring in AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 100%
+source-wordcount: '385'
+ht-degree: 81%
 
 ---
 
@@ -33,9 +33,9 @@ L’autore utilizza il cosiddetto **ambiente di authoring**, che fornisce un’i
 
 >[!NOTE]
 >
->Per creare, modificare o pubblicare le risorse, è necessario utilizzare un account con diritti di accesso appropriati.
+>Per creare, modificare o pubblicare contenuti, il tuo account deve disporre dei diritti di accesso appropriati.
 
-A seconda della configurazione dell’istanza in uso e dei diritti di accesso personali, è possibile eseguire varie attività sui contenuti, ad esempio:
+A seconda della configurazione dell’istanza e dei diritti di accesso personali, puoi eseguire molte attività sul contenuto, tra cui (tra le altre):
 
 * Generazione di nuovi contenuti o modifica dei contenuti esistenti in una pagina
 * Utilizzo di modelli predefiniti per creare nuove pagine di contenuti
@@ -51,6 +51,12 @@ Sono inoltre disponibili attività amministrative per la gestione dei contenuti:
 >[!NOTE]
 >
 >Nell’ambiente di authoring è anche possibile effettuare attività di amministrazione di AEM.
+
+## Anteprima del contenuto {#previewing-content}
+
+AEM offre anche un servizio di anteprima Siti che consente agli sviluppatori e agli autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione ed sia disponibile pubblicamente.
+
+Vedi [Anteprima del contenuto](/help/sites-cloud/authoring/fundamentals/previewing-content.md) per ulteriori dettagli.
 
 ## Ambiente di pubblicazione {#publish-environment}
 
