@@ -2,10 +2,10 @@
 title: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service
 description: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,11 +56,11 @@ Tale comportamento:
 
 * consente ad AEM as a Cloud Service di adattarsi agli schemi di traffico mano a mano che cambiano.
 
-La scalabilità delle istanze per tenant del servizio può avvenire in modo automatico o manuale sui due assi:
+La scalabilità delle istanze per tenant del servizio si applica ai due assi:
 
-* Verticale: la memoria e la capacità di CPU allocate possono essere potenziate o ridotte per un numero fisso di nodi.
+* Orizzontale: il numero di nodi per un determinato servizio viene aumentato o diminuito automaticamente, consentendo comunque configurazioni predefinite individuali.
 
-* Orizzontale: il numero di nodi di un determinato servizio può essere incrementato o ridotto.
+* Verticale: la memoria e la capacità della CPU allocate possono essere potenziate o ridotte tramite la configurazione di un numero fisso di nodi per soddisfare i singoli requisiti in base alle esigenze.
 
 ## Ambienti {#environments}
 
