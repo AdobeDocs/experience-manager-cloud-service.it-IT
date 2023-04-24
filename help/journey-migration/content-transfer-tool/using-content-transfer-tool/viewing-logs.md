@@ -15,11 +15,11 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_logs"
 >title="Visualizzazione dei registri"
->abstract="Al termine dell’estrazione dell’acquisizione, verifica i registri per la presenza di eventuali errori/avvisi. Eventuali errori devono essere affrontati immediatamente risolvendo i problemi segnalati o contattando il supporto Adobe."
+>abstract="Al termine dell’estrazione dell’acquisizione, verifica la presenza di eventuali errori o avvisi nei registri. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando il supporto Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=it#troubleshooting" text="Risoluzione dei problemi"
 >additional-url="https://helpx.adobe.com/it/enterprise/admin-guide.html/it/enterprise/using/support-for-experience-cloud.ug.html" text="Contattare il supporto Adobe"
 
-Al completamento di ogni passaggio (estrazione e acquisizione) controlla i registri e cerca gli errori.  Eventuali errori devono essere affrontati immediatamente risolvendo i problemi segnalati o contattando il supporto Adobe.
+Al completamento di ogni passaggio (estrazione e acquisizione) controlla i registri e cerca gli errori.  Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando il supporto Adobe.
 
 ## Passaggi per la visualizzazione dei registri {#viewing-logs}
 

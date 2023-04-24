@@ -1,7 +1,8 @@
 ---
 title: Mappatura utenti e migrazione delle entità principali
 description: Panoramica della mappatura degli utenti e della migrazione principale
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 22%
@@ -12,8 +13,8 @@ ht-degree: 22%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
->title="Mappatura utenti"
->abstract="Lo strumento Content Transfer (Trasferimento contenuti) consente di spostare gli utenti e i gruppi dal sistema AEM esistente ad AEM as a Cloud Service. Gli utenti esistenti devono essere mappati secondo i loro ID IMS per evitare di esssere duplicati nell’istanza di authoring del Cloud Service."
+>title="Mappatura degli utenti"
+>abstract="Lo strumento Content Transfer (Trasferimento contenuti) consente di spostare gli utenti e i gruppi dal sistema AEM esistente ad AEM as a Cloud Service. Gli utenti esistenti devono essere mappati sui rispettivi ID IMS per evitare duplicati nell’istanza di authoring del Cloud Service."
 
 >[!NOTE]
 >Per le versioni precedenti dello strumento User Mapping (Mappatura utente), consulta la sezione [documentazione legacy](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
@@ -31,7 +32,7 @@ Lo strumento Content Transfer (Trasferimento contenuti) e Cloud Acceleration Man
 * Se il sistema di origine è un&#39;istanza dell&#39;autore, per impostazione predefinita la scelta per eseguire la mappatura è _su_, poiché si tratta del processo consigliato.
 * Se il sistema di origine è un&#39;istanza di pubblicazione, per impostazione predefinita la scelta per eseguire la mappatura è _off_, poiché normalmente gli utenti non vengono migrati o utilizzati nelle istanze di pubblicazione.
 
-## Considerazioni importanti per la mappatura e la migrazione di utenti {#important-considerations}
+## Considerazioni importanti sulla mappatura e la migrazione degli utenti {#important-considerations}
 
 
 ### Casi eccezionali {#exceptional-cases}

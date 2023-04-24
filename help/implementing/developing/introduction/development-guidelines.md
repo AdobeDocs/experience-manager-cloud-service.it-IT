@@ -1,11 +1,11 @@
 ---
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
-description: Scopri le linee guida per lo sviluppo su AEM modalità as a Cloud Service e su importanti modi in cui differisce da AEM nei locali e AEM in AMS.
+description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="Linee guida per lo sviluppo in AEM as a Cloud Service"
->abstract="Scopri le linee guida per lo sviluppo su AEM modalità as a Cloud Service e su importanti modi in cui differisce da AEM nei locali e AEM in AMS."
->additional-url="https://video.tv.adobe.com/v/330555/?captions=ita/" text="Demo della struttura del pacchetto"
+>abstract="Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS."
+>additional-url="https://video.tv.adobe.com/v/330555/?captions=ita/" text="Dimostrazione della struttura del pacchetto"
 
 Questo documento presenta le linee guida per lo sviluppo su AEM modalità as a Cloud Service e su importanti modi in cui differisce da AEM nei locali e AEM in AMS.
 
@@ -126,11 +126,11 @@ Ad esempio, imposta `/apps/<example>/config/org.apache.sling.commons.log.LogMana
 
 Non lasciare il registro a livello di registro DEBUG più a lungo del necessario, in quanto questo genera molte voci.
 
-È possibile impostare livelli di registro discreti per i diversi ambienti AEM utilizzando il targeting di configurazione OSGi basato sulla modalità di esecuzione, se è opportuno effettuare sempre l&#39;accesso `DEBUG` durante lo sviluppo. Esempio:
+È possibile impostare livelli di registro discreti per i diversi ambienti AEM utilizzando il targeting di configurazione OSGi basato sulla modalità di esecuzione, se è opportuno effettuare sempre l&#39;accesso `DEBUG` durante lo sviluppo. Ad esempio:
 
 | Ambiente | Posizione di configurazione OSGi in modalità di esecuzione | `org.apache.sling.commons.log.level` valore della proprietà | | - | - | - | | Sviluppo | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | | Stage | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | AVVERTENZA | | Produzione | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERRORE |
 
-Una riga nel file di debug solitamente inizia con DEBUG, e quindi fornisce il livello di log, l&#39;azione di installazione e il messaggio di log. Esempio:
+Una riga nel file di debug solitamente inizia con DEBUG, e quindi fornisce il livello di log, l&#39;azione di installazione e il messaggio di log. Ad esempio:
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -156,7 +156,7 @@ Per lo sviluppo locale, gli sviluppatori hanno pieno accesso ad CRXDE Lite (`/cr
 
 Tieni presente che nello sviluppo locale (utilizzando l’SDK), `/apps` e `/libs` può essere scritto direttamente in , che è diverso dagli ambienti Cloud in cui tali cartelle di livello superiore non sono modificabili.
 
-### AEM strumenti di sviluppo as a Cloud Service {#aem-as-a-cloud-service-development-tools}
+### Strumenti di sviluppo in AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 I clienti possono accedere a CRXDE lite nell’ambiente di sviluppo del livello di authoring, ma non in quello di stage o produzione. Archivio immutabile (`/libs`, `/apps`) non può essere scritto in fase di runtime, pertanto il tentativo di eseguire questa operazione genera errori.
 

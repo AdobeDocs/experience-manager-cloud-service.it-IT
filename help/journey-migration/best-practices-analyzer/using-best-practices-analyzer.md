@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
-ht-degree: 41%
+ht-degree: 48%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 41%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
 >title="Utilizzo di Best Practices Analyzer"
->abstract="Esamina la documentazione relativa all’utilizzo di Best Practices Analyzer (precedentemente Cloud Readiness Analyzer) e il rapporto generato. Il rapporto di Best Practices Analyzer (Analisi di best practice) viene utilizzato per acquisire una comprensione di alto livello della preparazione generale all’aggiornamento."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introduzione di strumenti per accelerare il Percorso ad Adobe Experience Manager as a Cloud Service"
+>abstract="Consulta la documentazione relativa all’utilizzo di Best Practices Analyzer (precedentemente Cloud Readiness Analyzer) ed esamina il rapporto generato. Il rapporto di Best Practices Analyzer viene utilizzato per acquisire una comprensione di alto livello dello stato di preparazione generale all’aggiornamento."
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Strumenti che consentono di accelerare il percorso verso Adobe Experience Manager as a Cloud Service"
 
 ## Considerazioni importanti sull’utilizzo di Best Practices Analyzer {#imp-considerations}
 
@@ -43,10 +43,10 @@ Leggi la sezione seguente per comprendere le considerazioni importanti sull’es
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_download"
->title="Scarica Best Practices Analyzer"
->abstract="È possibile scaricare Best Practices Analyzer come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM)."
+>title="Scaricare Best Practices Analyzer"
+>abstract="Best Practices Analyzer può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM)."
 
-È possibile scaricare Best Practices Analyzer come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) sull’istanza Adobe Experience Manager (AEM) sorgente.
+Best Practices Analyzer può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) sull’istanza Adobe Experience Manager (AEM) sorgente.
 
 >[!NOTE]
 >Scarica Best practice Analyzer da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) portale.
@@ -125,9 +125,9 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
 >title="Interpretazione del rapporto di Best Practices Analyzer"
->abstract="Sono disponibili due opzioni per visualizzare gli output dei rapporti BPA: Interfaccia utente e CSV. Quando lo strumento Best Practices Analyzer viene eseguito nell&#39;istanza AEM, il rapporto dell&#39;interfaccia utente viene visualizzato come risultato nella finestra dello strumento. Il formato CSV del rapporto include informazioni generate dall’output del rilevatore pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Analisi del rapporto sulle best practice"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Categorie di rapporti di Best Practices Analyzer"
+>abstract="Sono disponibili due opzioni per visualizzare gli output del rapporto di BPA: interfaccia utente e CSV. Quando lo strumento Best Practices Analyzer viene eseguito nell’istanza di AEM, il rapporto per l’interfaccia utente viene visualizzato sotto forma di risultati nella finestra dello strumento. Il formato CSV del rapporto include informazioni generate dall’output del rilevatore pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=it#analysis-report" text="Analisi del rapporto di Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=it" text="Categorie del rapporto di Best Practices Analyzer"
 
 Quando lo strumento Best Practices Analyzer viene eseguito nell&#39;istanza AEM, il rapporto viene visualizzato come risultato nella finestra dello strumento.
 

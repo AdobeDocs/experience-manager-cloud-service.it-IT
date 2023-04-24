@@ -69,7 +69,7 @@ Nella fase di acquisizione, per applicare il contenuto delta sul contenuto corre
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
 >title="Scadenza di un set di migrazione"
->abstract="Scopri la scadenza di un set di migrazione."
+>abstract="Ottieni informazioni sulla scadenza di un set di migrazione."
 
 Tutti i set di migrazione scadranno dopo un periodo prolungato di inattività di circa 90 giorni. Una volta visualizzati gli indicatori sulla scheda del progetto e le righe della tabella dei processi di migrazione per un periodo di tempo, il set di migrazione scadrà e i relativi dati non saranno più disponibili. Il termine di scadenza può essere facilmente prorogato agendo al momento della migrazione stabilito da:
 

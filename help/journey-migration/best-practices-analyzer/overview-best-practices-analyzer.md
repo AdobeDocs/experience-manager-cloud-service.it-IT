@@ -5,7 +5,7 @@ exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 29%
+ht-degree: 68%
 
 ---
 
@@ -14,15 +14,15 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="Panoramica di Best Practices Analyzer"
->abstract="Best Practices Analyzer fornisce una valutazione dell&#39;implementazione AEM corrente indicando le aree che non seguono AEM best practice. Esso fornisce inoltre indicazioni sui prossimi passi da compiere per adottare AEM best practice. Inoltre, aiuta ad accelerare i processi di valutazione della preparazione al passaggio da un’implementazione Adobe Experience Manager (AEM) esistente a AEM as a Cloud Service."
+>abstract="Best Practices Analyzer fornisce una valutazione dell’attuale implementazione di AEM indicando le aree che non seguono le best practice di AEM. Fornisce inoltre indicazioni sui prossimi passi da compiere per adottare le best practice di AEM. Inoltre, consente di accelerare i processi di valutazione dello stato di preparazione al passaggio da un’implementazione Adobe Experience Manager (AEM) esistente ad AEM as a Cloud Service."
 
-Best Practices Analyzer fornisce una valutazione dell&#39;implementazione AEM corrente indicando le aree che non seguono AEM best practice. Esso fornisce inoltre indicazioni sui prossimi passi da compiere per adottare AEM best practice. Inoltre, aiuta ad accelerare i processi di valutazione della preparazione al passaggio da un’implementazione Adobe Experience Manager (AEM) esistente a AEM as a Cloud Service.
+Best Practices Analyzer fornisce una valutazione dell’attuale implementazione di AEM indicando le aree che non seguono le best practice di AEM. Fornisce inoltre indicazioni sui prossimi passi da compiere per adottare le best practice di AEM. Inoltre, consente di accelerare i processi di valutazione dello stato di preparazione al passaggio da un’implementazione Adobe Experience Manager (AEM) esistente ad AEM as a Cloud Service.
 
 Questo strumento genera un rapporto che identifica le aree di potenziale refactoring, che rappresenta il primo passo del percorso di transizione verso AEM as a Cloud Service.
 
 ## Rapporto di Best Practices Analyzer {#bpa-report}
 
-Il rapporto di Best Practices Analyzer (Analisi di best practice) viene utilizzato per acquisire una comprensione di alto livello della preparazione generale all’aggiornamento. Il rapporto presenta i risultati per diverse categorie di problemi che devono essere risolti prima di un’implementazione corretta in AEM as a Cloud Service.
+Il rapporto di Best Practices Analyzer viene utilizzato per acquisire una comprensione di alto livello dello stato di preparazione generale all’aggiornamento. Il rapporto presenta i risultati per diverse categorie di problemi che devono essere risolti prima di un’implementazione corretta in AEM as a Cloud Service.
 
 Il rapporto di Best Practices Analyzer (Analisi di best practice) include le seguenti categorie:
 
