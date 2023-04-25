@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
+source-git-commit: 1d7cbec55c5f3fcfbc217bf53d006a56bdf37f4e
 workflow-type: tm+mt
-source-wordcount: '4768'
-ht-degree: 88%
+source-wordcount: '4746'
+ht-degree: 87%
 
 ---
 
@@ -909,6 +909,9 @@ Esistono le seguenti limitazioni:
 
 Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifiche standard di GraphQL. Per le query GraphQL con AEM sono disponibili alcune estensioni:
 
+* Se necessiti di un singolo risultato:
+   * utilizza il nome del modello; ad es. città
+
 * Se prevedi un elenco di risultati:
    * aggiungi `List` al nome del modello; ad esempio, `cityList`
    * Vedi [Query di esempio: informazioni su tutte le città](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
@@ -926,13 +929,6 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
    * Vedi [Query di esempio: informazioni su tutte le città](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 
-
-* Se necessiti di un singolo risultato:
-   * utilizza il nome del modello; ad es. città
-
-* Se prevedi un elenco di risultati:
-   * aggiungi `List` al nome del modello; ad esempio, `cityList`
-   * Vedi [Query di esempio: informazioni su tutte le città](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * Se vuoi utilizzare un operatore OR logico:
    * utilizza ` _logOp: OR`
