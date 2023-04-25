@@ -1,85 +1,85 @@
 ---
-title: Utilizzo dello strumento di mappatura utenti (legacy)
-description: Utilizzo dello strumento di mappatura utenti (legacy)
+title: Utilizzo dello strumento di mappatura utente (legacy)
+description: Utilizzo dello strumento di mappatura utente (legacy)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: fb961ee6c369f5488deb794892caf9785d6b3068
+source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '819'
 ht-degree: 3%
 
 ---
 
-# Utilizzo dello strumento di mappatura utenti {#using-user-mapping-tool}
+# Utilizzo dello strumento di mappatura utente (legacy) {#using-user-mapping-tool}
 
-Lo strumento di mappatura utenti utilizza un’API che consente di cercare gli utenti Adobe Identity Management System (IMS) tramite e-mail e restituire i loro ID IMS. Questa API richiede che l’utente crei un ID client per la propria organizzazione, un segreto client e un token di accesso o Bearer.
+Lo strumento di mappatura utenti utilizza un’API che consente di cercare gli utenti di Adobe Identity Management System (IMS) tramite e-mail e restituire i loro ID IMS. Questa API richiede all’utente di creare un ID client per la propria organizzazione, un segreto client e un token di accesso o portatore.
 
-## Impostazione dello strumento di mappatura utenti {#setting-up-user-mapping}
+## Impostazione dello strumento di mappatura utente {#setting-up-user-mapping}
 
-**Prerequisito:** La mappatura utente richiede che ogni utente da mappare sul suo ID IMS abbia un indirizzo e-mail nel suo profilo in AEM e in IMS.  Tieni presente che anche se l’utente utilizza un indirizzo e-mail come ID utente per l’accesso, la mappatura non funzionerà per tale utente a meno che l’indirizzo e-mail non sia presente anche nel profilo e in IMS.
+**Prerequisito:** La mappatura utente richiede che ogni utente sia mappato al suo ID IMS abbia un indirizzo e-mail nel suo profilo in AEM e in IMS.  Tieni presente che anche se l’utente utilizza un indirizzo e-mail come ID utente per l’accesso, la mappatura non funzionerà per tale utente, a meno che l’indirizzo e-mail non sia anche nel profilo e anche in IMS.
 
-Per configurare questa configurazione, segui i passaggi seguenti:
+Segui i passaggi riportati di seguito per configurare questa impostazione:
 
-1. Accedi a [Console Adobe Developer](https://console.adobe.io) utilizzando il tuo Adobe ID.
+1. Passa a [Console Adobe Developer](https://console.adobe.io) utilizzando il tuo Adobe ID.
 1. Crea un nuovo progetto o apri un progetto esistente.
-1. Aggiungi un’API - Fai clic su **Aggiungi al progetto** e seleziona **API**
-1. Scegli API User Management.  Per rendere disponibile questa opzione è necessario disporre delle autorizzazioni di amministratore di sistema.
+1. Aggiungi un’API - Fai clic su **Aggiungi a progetto** e seleziona **API**
+1. Scegli API User Management.  Per rendere disponibile questa opzione, è necessario disporre delle autorizzazioni di amministratore di sistema.
 1. Crea una credenziale JWT.
-1. Genera una coppia di chiavi o carica una chiave pubblica (rsa non è un buon metodo).  C&#39;è un pulsante, **Genera una coppia di chiavi pubblica/privata**, che farà questo per te.  Assicurati di salvare sia le chiavi pubbliche che quelle private.
+1. Genera una coppia di chiavi o carica una chiave pubblica (rsa non è buona).  C&#39;è un pulsante, **Generare una coppia di chiavi pubblica/privata**, che farà questo per te.  Assicurati di salvare le chiavi pubblica e privata.
 1. Passa all’API User Management.
-1. Generare un token di accesso (o un token Bearer) incollando il contenuto della chiave privata nella casella di testo e facendo clic su **Genera token**.
-1. Salva tutte queste informazioni come **ID client**, **Segreto client**, **ID account tecnico**, **E-mail account tecnico**, **ID organizzazione**, e **Token di accesso** in modo sicuro.
+1. Genera un token di accesso (o un token portatore) incollando il contenuto della chiave privata nella casella di testo e facendo clic su **Genera token**.
+1. Salva tutte queste informazioni, ad esempio **ID client**, **Segreto client**, **ID account tecnico**, **E-mail account tecnico**, **ID organizzazione** e **Token di accesso** sicuro.
 
-## Accesso all&#39;interfaccia utente per lo strumento di mappatura utenti {#user-interface}
+## Accesso all’interfaccia utente per lo strumento di mappatura degli utenti {#user-interface}
 
-Lo strumento di mappatura utenti è integrato nello strumento Content Transfer (Trasferimento contenuti). Puoi scaricare lo strumento Content Transfer (Trasferimento contenuti) da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html). Per ulteriori dettagli sull’ultima versione, consulta [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md).
+Lo strumento di mappatura utente è integrato nello strumento Content Transfer (Trasferimento contenuti). Puoi scaricare lo strumento Content Transfer (Trasferimento contenuti) da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html). Per ulteriori informazioni sull’ultima versione, consulta la [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Migrazione dei contenuti**.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 
-1. Fai clic su **Mappatura utenti** Card.
+1. Fai clic su **Mappatura utente** il Card.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
 
-1. Fai clic su **Crea configurazione mappatura utenti**.
+1. Fai clic su **Creare una configurazione di mappatura utente**.
 
    >[!NOTE]
    >Se salti questo passaggio, la mappatura di utenti e gruppi verrà ignorata durante la fase di estrazione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
-   Compila i campi in **Configurazione API gestione utenti**, come descritto di seguito.
+   Compila i campi in **Configurazione API di gestione utenti**, come descritto di seguito.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
 
 
-   * **ID organizzazione**: immetti l’ID dell’organizzazione Adobe Identity Management System (IMS) per l’organizzazione di cui vengono migrati gli utenti.
+   * **ID organizzazione**: Immetti l’ID organizzazione Adobe Identity Management System (IMS) per l’organizzazione di migrazione degli utenti.
 
       >[!NOTE]
-      >Per ottenere l’ID organizzazione, accedi a [Admin Console](https://adminconsole.adobe.com/) e scegli la tua organizzazione (in alto a destra) se appartieni a più di una. L’ID organizzazione si trova nell’URL della pagina, nel formato seguente: `xx@AdobeOrg`, dove xx è l’ID dell’organizzazione IMS.  In alternativa, puoi trovare l’ID organizzazione nel [Console Adobe Developer](https://console.adobe.io) in cui viene generato il token di accesso.
+      >Per ottenere l&#39;ID organizzazione, accedi al [Admin Console](https://adminconsole.adobe.com/) e scegli la tua organizzazione (in alto a destra) se appartieni a più di una. L&#39;ID organizzazione sarà nell&#39;URL della pagina, nel formato come `xx@AdobeOrg`, dove xx è l’ID organizzazione IMS.  In alternativa, puoi trovare l’ID organizzazione nel [Console Adobe Developer](https://console.adobe.io) pagina in cui viene generato il token di accesso.
 
-   * **ID client**: immetti l’ID client salvato dal passaggio Configurazione.
+   * **ID client**: Immetti l’ID client salvato dal passaggio Configurazione.
 
-   * **Token di accesso**: immetti il token di accesso salvato dal passaggio Configurazione.
+   * **Token di accesso**: Immetti il token di accesso salvato dal passaggio Configurazione.
 
       >[!NOTE]
-      >Il token di accesso scade ogni 24 ore ed è necessario crearne uno nuovo. Per creare un nuovo token, torna a [Console Adobe Developer](https://console.adobe.io), scegli il tuo progetto, fai clic su **API User Management** e incolla la stessa chiave privata nella casella.
+      >Il token di accesso scade ogni 24 ore ed è necessario crearne uno nuovo. Per creare un nuovo token, torna a [Console Adobe Developer](https://console.adobe.io), scegli il progetto e fai clic su **API di gestione utenti** e incolla la stessa chiave privata nella casella.
 
-1. Dopo aver popolato i campi, fai clic su **Prova configurazione** per verificare la connessione al servizio API User Management. Se la connessione ha esito positivo, potrai fare clic su **Salva** per salvare la configurazione.
+1. Dopo aver compilato i campi, fai clic su **Configurazione del test** per verificare la connessione al servizio API User Management. Se la connessione ha esito positivo, potrai fare clic su **Salva** per salvare la configurazione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
-1. Dopo aver salvato la configurazione, selezionala e fai clic su **Avvia mappatura utenti**.
+1. Dopo aver salvato la configurazione, seleziona la configurazione e fai clic su **Avvia mappatura utente**.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
-1. Fai clic su **Inizio** dalla finestra di dialogo per avviare il processo di mappatura utenti.
+1. Fai clic su **Inizio** dalla finestra di dialogo per avviare il processo di mappatura utente.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   Viene visualizzato il **Stato** as **IN ESECUZIONE**.
+   Visualizza la **Stato** come **IN ESECUZIONE**.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
@@ -89,37 +89,37 @@ Lo strumento di mappatura utenti è integrato nello strumento Content Transfer (
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >* Una volta completata la mappatura utente, puoi tornare alla pagina di migrazione dei contenuti utilizzando la breadcrumb. La scheda Mappatura utente visualizza lo stato e la marca temporale. Fai clic su **Trasferimento dei contenuti** per creare un set di migrazione per eseguire l’estrazione. Fai riferimento a [Esecuzione dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) per ulteriori dettagli.
+   >* Una volta completata la mappatura utente, puoi tornare alla pagina di migrazione dei contenuti utilizzando la breadcrumb. La scheda User Mapping (Mappatura utente) visualizza lo stato e la marca temporale. Fai clic su **Trasferimento dei contenuti** per creare un set di migrazione per eseguire l’estrazione. Fai riferimento a [Esecuzione dello strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) per ulteriori dettagli.
 
 
-### Ripresa del processo di mappatura utenti {#resume-user-mapping-process}
+### Ripresa del processo di mappatura utente {#resume-user-mapping-process}
 
-Se il processo di mappatura utenti viene interrotto per uno dei motivi seguenti:
+Se il processo di mappatura utente viene interrotto a causa di uno dei motivi seguenti:
 
-* L&#39;utente selezionato **Interrompi mappatura utenti**
-* il token di accesso è scaduto durante il processo oppure
-* qualche altro motivo
+* Utente selezionato **Interrompi mappatura utente**
+* il token di accesso è scaduto durante il processo o,
+* qualche altra ragione
 
    >[!NOTE]
-   >L’avanzamento viene salvato dal punto in cui è stato interrotto il processo.
+   >L&#39;avanzamento viene salvato dal punto in cui il processo si è interrotto.
 
-Per riprendere il processo di mappatura utenti, effettua le seguenti operazioni:
+Segui i passaggi riportati di seguito per riprendere il processo di mappatura utente:
 
-1. Fai clic su **Visualizza registro** per rivedere il registro di mappatura utenti e controllare l’avanzamento salvato.
+1. Fai clic su **Visualizza registro** per controllare l&#39;avanzamento salvato, controlla il registro di mappatura utente.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
-1. Fai clic sul pulsante **Avvia mappatura utenti** per riprendere dal punto in cui era stato interrotto.
+1. Fai clic sul pulsante **Avvia mappatura utente** per riprendere da dove è stato disattivato.
 
    >[!NOTE]
-   >Prima di riavviare il computer, verifica che il token di accesso sia ancora valido o che sia stato aggiornato.
+   >Prima di riavviare, verificare che il token di accesso sia ancora valido o sia stato aggiornato.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
 
-1. Fai clic su **Inizio** dalla finestra di dialogo per riprendere il processo di mappatura utenti.
+1. Fai clic su **Inizio** dalla finestra di dialogo per riprendere il processo di mappatura utente.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   Al termine del processo di mappatura utente, verrà visualizzato **Stato** as **COMPLETATO** per quella specifica configurazione.
+   Una volta completato il processo di mappatura utente, visualizzerai il **Stato** come **COMPLETATO** per la configurazione specifica.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
