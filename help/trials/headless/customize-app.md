@@ -4,10 +4,10 @@ description: Utilizza un’app React di esempio per scoprire come personalizzare
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ L’editor frammenti di contenuto mostra il layout di base dell’app come framm
 
 Come vedi, è davvero semplice aggiornare i contenuti all&#39;interno di un&#39;app React integrata nel CMS AEM headless.
 
-## Cambiare un’immagine nell’app {#change-image}
+## Scambio di un’immagine nell’app {#change-image}
 
 Ora che hai modificato un titolo nell’app, prova a cambiare un’immagine.
 
@@ -91,7 +91,7 @@ Ora che hai modificato un titolo nell’app, prova a cambiare un’immagine.
 
 Come vedi, è davvero facile aggiornare immagini e risorse nelle app con il CMS AEM headless.
 
-## Aggiungere all’app un riferimento a un nuovo frammento di contenuto {#create-moment}
+## Aggiungere un riferimento a un nuovo frammento di contenuto nell’app {#create-moment}
 
 Ora che hai aggiornato l’immagine del biker, vediamo come aggiungere nuovi contenuti a un’app creando e facendo riferimento a un nuovo frammento di contenuto. Aggiungi una chiamata al prodotto gestita da un frammento di contenuto “opportunità di acquisto” al secondo pannello dell’app.
 

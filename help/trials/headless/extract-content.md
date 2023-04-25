@@ -4,10 +4,10 @@ description: Scopri come utilizzare Frammenti di contenuto e l’API GraphQL com
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 96%
+source-wordcount: '1092'
+ht-degree: 71%
 
 ---
 
@@ -34,10 +34,6 @@ ht-degree: 96%
 Inizia da GraphQL Explorer in una nuova scheda. Qui puoi creare e convalidare le query rispetto al contenuto headless prima di utilizzarle per alimentare il contenuto dell’app o del sito web.
 
 1. La versione di prova AEM headless viene fornita con un endpoint precaricato con frammenti di contenuto da cui è possibile estrarre contenuto a scopo di test. Assicurati che l’endpoint **AEM Demo Assets** sia selezionato nel menu a discesa **Endpoint** nell’angolo in alto a destra dell’editor.
-
-1. Problema noto: se **AEM Demo Assets** l’endpoint non è presente nel menu a discesa, passa a Gestione pacchetti (`/crx/packmgr` nel tuo ambiente AEM) e reinstalla `aem-demo-assets.ui.content-{VERSION}.zip` pacchetto:
-
-   ![Reinstalla pacchetto](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. Copia il seguente frammento di codice per una query di elenco dell’endopoint **AEM Demo Assets** precaricato. Una query a elenco restituisce un elenco di tutto il contenuto che utilizza un modello specifico di frammento di contenuto. Le pagine di inventario e categoria in genere utilizzano questo formato di query.
 
@@ -71,6 +67,10 @@ Inizia da GraphQL Explorer in una nuova scheda. Qui puoi creare e convalidare le
    ![Query elenco](assets/do-not-localize/list-query-1-3-4-5.png)
 
 Hai appena convalidato una query di elenco per un elenco completo di tutti i frammenti di contenuto. Questo processo consente di garantire che la risposta sia ciò che l’app si aspetta, con risultati che illustrano come le app e i siti web recupereranno il contenuto creato in AEM.
+
+>[!NOTE]
+>
+>Se non sei in grado di selezionare il **AEM Demo Assets** dall’elenco a discesa, contatta l’Assistenza clienti Adobe o contatta l’ [Canale di Slack AEM Trials.](https://adobe-dx-support.slack.com/)
 
 ## Query per un contenuto specifico di esempio {#bypath-query}
 
@@ -132,3 +132,64 @@ Dopo aver eseguito i due tipi principali di query, puoi eseguire una query sul c
    ![Esegui query personalizzata](assets/do-not-localize/custom-query-3-4-5-6.png)
 
 In questo modo i contenuti possono essere inviati a esperienze digitali omnicanale.
+
+## Query persistenti {#persisted-queries}
+
+Le query persistenti sono il meccanismo preferito per l’esposizione dell’API GraphQL alle applicazioni client. Una volta che una query è persistente, può essere richiesta utilizzando una richiesta GET e memorizzata nella cache per un recupero rapido.
+
+Verrà creata una query persistente che include i dati che si desidera utilizzare dall&#39;applicazione client.
+
+1. I dati creati come frammento di contenuto vengono utilizzati in precedenza, quindi assicurati che la **Il progetto** l&#39;endpoint è selezionato nella **Endpoint** menu a discesa nell’angolo in alto a destra dell’editor.
+
+1. Copia il seguente frammento di codice.
+
+   ```text
+      {
+      adventureList {
+       items {
+         title
+         description {
+           plaintext
+         }
+         title
+         price
+         image {
+           ... on ImageRef {
+             _publishUrl
+             mimeType
+           }
+         }
+       }
+     }
+   }
+   ```
+
+1. Sostituisci il contenuto esistente nell’editor delle query incollando il codice copiato.
+
+   >[!NOTE]
+   >
+   >Se non hai utilizzato le stesse descrizioni dei campi descritte nei moduli precedenti, dovrai aggiornare i nomi dei campi in questa query.
+   >
+   >Utilizza la funzione di completamento automatico di GraphQL (Ctrl+Spazio o Opzione+Spazio) come descritto in precedenza per identificare le proprietà disponibili.
+
+1. Una volta incollato, fai clic sul pulsante **Riproduzione** in alto a sinistra dell’editor delle query per eseguire la query.
+
+1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor delle query. Se la query non è corretta, viene visualizzato un errore nel pannello di destra.
+
+   ![Crea query personalizzata](assets/do-not-localize/own-query.png)
+
+1. Quando la query è soddisfatta, fai clic sul pulsante **Salva con nome** nella parte superiore dell’editor delle query per mantenere la query.
+
+1. In **Nome query** a comparsa, assegna il nome alla query `adventure-list`.
+
+1. Tocca o fai clic su **Salva con nome**.
+
+   ![Query permanente](assets/do-not-localize/persist-query.png)
+
+1. La query viene persistita come confermato da un messaggio del banner nella parte inferiore dello schermo. La query viene ora visualizzata anche nel pannello a sinistra delle query persistenti nella finestra.
+
+1. Affinché la query persistente sia disponibile pubblicamente, deve essere pubblicata, in modo analogo a come i frammenti di contenuto devono essere pubblicati. Fai clic sul pulsante **Pubblica** in alto a destra dell’editor delle query per pubblicare la query.
+
+1. La pubblicazione viene confermata da una notifica del banner.
+
+È ora disponibile una nuova query persistente che conterrà solo le proprietà e i formati specifici definiti.
