@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1d7cbec55c5f3fcfbc217bf53d006a56bdf37f4e
+source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
 workflow-type: tm+mt
-source-wordcount: '4746'
-ht-degree: 87%
+source-wordcount: '4769'
+ht-degree: 86%
 
 ---
 
@@ -241,15 +241,17 @@ GraphQL per AEM supporta un elenco di tipi. Vengono rappresentati tutti i tipi d
 
 | Modello di Frammento di contenuto: tipo di dati | Tipo GraphQL | Descrizione |
 |--- |--- |--- |
-| Testo su riga singola | Stringa, [Stringa] | Utilizzato per stringhe semplici come nomi di autore, nomi di posizione, ecc. |
-| Testo su più righe | Stringa, [Stringa] | Utilizzato per l’output di testo, ad esempio il corpo di un articolo |
-| Numero | Mobile, [Mobile] | Utilizzato per visualizzare il numero a virgola mobile e i numeri regolari |
-| Booleano | Booleano | Utilizzato per visualizzare le caselle di controllo → semplici istruzioni true/false |
-| Data e ora | Calendario | Utilizzato per visualizzare la data e l’ora in formato ISO 8601. A seconda del tipo selezionato, sono disponibili tre versioni da utilizzare in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
-| Enumerazione | Stringa | Utilizzato per visualizzare un’opzione da un elenco di opzioni definito durante la creazione del modello |
-| Tag | [Stringa] | Utilizzato per visualizzare un elenco di stringhe che rappresentano tag utilizzati in AEM |
-| Riferimento contenuto | Stringa, [Stringa] | Utilizzato per visualizzare il percorso per un’altra risorsa in AEM |
-| Riferimento frammento | *Un tipo di modello* | Utilizzato per fare riferimento ad altri frammenti di contenuto di un determinato tipo di modello, definito al momento della creazione del modello |
+| Testo su riga singola | `String`, `[String]` | Utilizzato per stringhe semplici come nomi di autore, nomi di posizione, ecc. |
+| Testo su più righe | `String`, `[String]` | Utilizzato per l’output di testo, ad esempio il corpo di un articolo |
+| Numero | `Float`, `[Float]` | Utilizzato per visualizzare il numero a virgola mobile e i numeri regolari |
+| Booleano | `Boolean` | Utilizzato per visualizzare le caselle di controllo → semplici istruzioni true/false |
+| Data e ora | `Calendar` | Utilizzato per visualizzare la data e l’ora in formato ISO 8601. A seconda del tipo selezionato, sono disponibili tre versioni da utilizzare in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
+| Enumerazione | `String` | Utilizzato per visualizzare un’opzione da un elenco di opzioni definito durante la creazione del modello |
+| Tag | `[String]` | Utilizzato per visualizzare un elenco di stringhe che rappresentano tag utilizzati in AEM |
+| Riferimento contenuto | `String`, `[String]` | Utilizzato per visualizzare il percorso per un’altra risorsa in AEM |
+| Riferimento frammento |  *Un tipo di modello* <br><br>Campo singolo: `Model` - Tipo di modello, a cui si fa riferimento direttamente <br><br>Multifield, con un tipo di riferimento: `[Model]` - Array di tipo `Model`, a cui si fa riferimento direttamente dall&#39;array <br><br>Multicampo, con più tipi di riferimento: `[AllFragmentModels]` - Array di tutti i tipi di modello, a cui si fa riferimento da array con tipo di unione |  Utilizzato per fare riferimento a uno o più frammenti di contenuto di alcuni tipi di modelli, definiti al momento della creazione del modello |
+
+{style="table-layout:auto"}
 
 ### Campi di supporto {#helper-fields}
 
