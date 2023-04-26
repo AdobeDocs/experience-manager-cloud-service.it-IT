@@ -4,10 +4,10 @@ description: Scopri come utilizzare Frammenti di contenuto e l’API GraphQL com
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 71%
+source-wordcount: '1114'
+ht-degree: 69%
 
 ---
 
@@ -117,19 +117,19 @@ Dopo aver eseguito i due tipi principali di query, puoi eseguire una query sul c
 
 1. Per eseguire query con frammenti di contenuto personalizzati, modifica l’endpoint dalla cartella **AEM Demo Assets** alla cartella **Progetto**.
 
-1. Elimina tutto il contenuto esistente nell’editor delle query. Quindi digita parentesi graffa aperta `{` e premi Ctrl+Spazio o Opzione+Spazio per un elenco completo automatico dei modelli definiti nell’endpoint. Seleziona il modello creato che termina in `List` dalle opzioni.
+1. Elimina tutto il contenuto esistente nell’editor delle query. Quindi digita parentesi graffa aperta `{` e premi Ctrl+Spazio o Opzione+Spazio per un elenco completo automatico dei modelli definiti nell’endpoint. Seleziona il modello creato che termina in `List` dalle opzioni. Se hai seguito gli esempi nei moduli precedenti, dovresti trovare `adventureList` nell&#39;elenco di completamento automatico.
 
-   ![Avvia query personalizzata](assets/do-not-localize/custom-query-1-2.png)
+   ![Avvia query personalizzata](assets/do-not-localize/custom-query-1.png)
 
 1. Definisci gli elementi che la query deve contenere per il modello Frammento di contenuto selezionato. Di nuovo, digita la parentesi aperta `{`, quindi premi Ctrl+Spazio o Opzione+Spazio per un elenco di completamento automatico. Seleziona `items` dalle opzioni.
 
 1. Tocca o fai clic sul pulsante **Migliora** per formattare automaticamente il codice in modo da facilitarne la lettura.
 
-1. Al termine, tocca o fai clic sul pulsante **Riproduzione** in alto a sinistra dell’editor per eseguire la query. L’editor completa automaticamente il `items` e la query viene eseguita.
+1. Al termine, tocca o fai clic sul pulsante **Riproduzione** in alto a sinistra dell’editor per eseguire la query. L’editor completa automaticamente il `items`, che vengono brevemente evidenziati in giallo e la query viene eseguita.
 
 1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor delle query.
 
-   ![Esegui query personalizzata](assets/do-not-localize/custom-query-3-4-5-6.png)
+   ![Esegui query personalizzata](assets/do-not-localize/custom-query-2.png)
 
 In questo modo i contenuti possono essere inviati a esperienze digitali omnicanale.
 
@@ -151,7 +151,6 @@ Verrà creata una query persistente che include i dati che si desidera utilizzar
          description {
            plaintext
          }
-         title
          price
          image {
            ... on ImageRef {

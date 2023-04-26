@@ -4,9 +4,9 @@ description: Scopri come utilizzare AEM modelli di frammenti di contenuto per cr
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 49301c21e3b97b4bdf29fdccc53339149ac5a63b
+source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1062'
 ht-degree: 37%
 
 ---
@@ -68,11 +68,9 @@ Nell’editor modelli di frammento di contenuto è possibile configurare i tipi 
 
 1. Una volta definite le proprietà del campo, puoi tornare alla **Tipi di dati** nel pannello a destra e aggiungi altri campi trascinando e rilasciando.
 
-1. Tocca o fai clic su **Salva** per salvare il modello.
-
 In questo modo, puoi aggiungere al modello tutti i campi necessari per supportare qualsiasi tipo di struttura dati necessaria. I tipi di campi dati variano, ma il processo di aggiunta al modello rimane lo stesso.
 
-Procedi alla sezione successiva per aggiungere i campi necessari per completare il **Avventura** modello.
+Procedi alla sezione successiva per aggiungere i campi necessari per completare e salvare il **Avventura** model
 
 ![Passaggi uno, due e tre per aggiungere campi al modello](assets/do-not-localize/define-model-fields.png)
 
@@ -104,4 +102,3 @@ Segui gli stessi passaggi indicati sopra per aggiungere questi campi aggiuntivi.
 1. Dopo aver aggiunto tutti i campi necessari per il modello Frammento di contenuto, fai clic su **Salva** in alto a destra nella finestra.
 
 1. Il modello viene salvato e si torna alla console del modello di frammento di contenuto.
-
