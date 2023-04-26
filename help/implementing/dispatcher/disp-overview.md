@@ -3,10 +3,10 @@ title: Dispatcher nel cloud
 description: Dispatcher nel cloud
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 6ea869b3067d168c661ea925e112857c4bbd70e9
+source-git-commit: c61cd92acd416b1c463f5359f66be8199acf08c3
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Gli strumenti di Dispatcher fanno parte dell’SDK globale di AEM as a Cloud Ser
 
 Strumenti di Dispatcher, parte del [SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), può essere scaricato da un file zip al portale di [Distribuzione di software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Qualsiasi nuova configurazione disponibile in quella nuova versione di strumenti di Dispatcher può essere utilizzata per distribuire agli ambienti Cloud che eseguono tale versione di AEM nel Cloud o nella versione successiva.
 
-Decomprimi l’SDK, che crea i bundle degli strumenti di Dispatcher per macOS, Linux e Windows.
+Decomprimi l’SDK, che include i bundle di Dispatcher Tools per macOS, Linux e Windows.
 
 **Per macOS/Linux**, rendi eseguibile l’artefatto dello strumento di Dispatcher ed eseguilo. Estrae automaticamente i file degli strumenti di Dispatcher sotto la directory in cui è stato memorizzato (dove `version` è la versione degli strumenti di Dispatcher).
 
