@@ -4,15 +4,18 @@ description: Panoramica dello strumento di mappatura utente (legacy)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
-source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
+source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 95%
+source-wordcount: '306'
+ht-degree: 88%
 
 ---
 
 # Panoramica dello strumento di mappatura utente (legacy) {#overview-user-mapping-tool}
 
+>[!INFO]
+>
+>Questa documentazione fa riferimento a una versione obsoleta di questo strumento. Per ulteriori informazioni sull’ultima versione, consulta [Mappatura utente e migrazione principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 <!-- Alexandru: drafting this for now
 
