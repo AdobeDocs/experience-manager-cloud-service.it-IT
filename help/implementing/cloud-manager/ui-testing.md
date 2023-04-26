@@ -2,10 +2,10 @@
 title: Test dell’interfaccia utente
 description: I test personalizzati dell’interfaccia utente sono una funzionalità facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni personalizzate.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
+source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 98%
+source-wordcount: '2238'
+ht-degree: 93%
 
 ---
 
@@ -275,15 +275,32 @@ I test a volte richiedono il caricamento di file nell’applicazione sottoposta 
    * Il contenuto della risposta è un handle di file opaco.
    * È possibile utilizzare questo handle al posto del percorso file in un elemento `<input>` per i test del caricamento dei file nell’applicazione.
 
-## Esecuzione locale dei test dell’interfaccia utente {#run-ui-tests-locally}
-
-Prima di attivare i test dell’interfaccia utente in una pipeline di Cloud Manager, si consiglia di eseguire i test dell’interfaccia utente localmente verso l’[SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) o in un&#39;istanza AEM as a Cloud Service.
-
 ### Prerequisiti {#prerequisites}
 
-I test in Cloud Manager verranno eseguiti utilizzando un utente amministratore tecnico.
+1. I test in Cloud Manager verranno eseguiti utilizzando un utente amministratore tecnico.
 
-Per eseguire i test dell’interfaccia utente dal computer locale, crea un utente con autorizzazioni di tipo amministratore per ottenere lo stesso comportamento.
+>[!NOTE]
+>
+>Per eseguire i test funzionali dal computer locale, crea un utente con autorizzazioni di tipo amministratore per ottenere lo stesso comportamento.
+
+1. L&#39;infrastruttura containerizzata per il test funzionale è limitata dai seguenti limiti:
+
+| Tipo | Valore | Descrizione |
+|----------------------|-------|--------------------------------------------------------------------|
+| CPU | 2.0 | Quantità di tempo CPU riservato per esecuzione del test |
+| Memoria | 1Gi | Quantità di memoria allocata al test, valore in gibibiti |
+| Timeout | 30m | La durata dopo la quale il test verrà terminato. |
+| Durata consigliata | 15m | Si consiglia di scrivere i test in modo che non richiedano più tempo di questo tempo. |
+
+>[!NOTE]
+>
+> Se hai bisogno di più risorse, crea un caso per l’Assistenza clienti e descrivi il tuo caso d’uso; il nostro team esaminerà la tua richiesta e fornirà l&#39;assistenza appropriata.
+
+
+## Esecuzione locale dei test dell’interfaccia utente {#run-ui-tests-locally}
+
+Prima di attivare i test dell’interfaccia utente in una pipeline di Cloud Manager, si consiglia di eseguire localmente i test dell’interfaccia utente rispetto al [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+o rispetto a un&#39;istanza effettiva AEM as a Cloud Service.
 
 ### Esempio di test JavaScript {#javascript-sample}
 
