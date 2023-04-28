@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 0ba6ce129322df9ad108822e86e5acfdbf99e613
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4886'
+source-wordcount: '4916'
 ht-degree: 6%
 
 ---
@@ -117,7 +117,7 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
 
    `https://<servername.domain>:<port_number>`
 
-   Esempio, `https://1a2b3c.mycompany.com:4321`
+   Ad esempio `https://1a2b3c.mycompany.com:4321`
 
    >[!NOTE]
    >
@@ -128,7 +128,7 @@ Google cambia periodicamente la propria interfaccia utente. Di conseguenza, i pa
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   Esempio, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   Ad esempio `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    >[!NOTE]
    >
@@ -590,6 +590,20 @@ Il formato video MXF non è ancora supportato con le annotazioni delle risorse v
       * 8 GB per transcodifica 720p.
    * La dimensione massima del file che è possibile transcodificare in risoluzione 4k è un file MP4 da 2,55 GB con risoluzione 4k, bitrate da 12 Mbps e 23 fps.
 
+   **Consulta anche**
+
+* [Traduci risorse](translate-assets.md)
+* [API HTTP di Assets](mac-api-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cercare risorse](search-assets.md)
+* [Risorse collegate](use-assets-across-connected-assets-instances.md)
+* [Rapporti sulle risorse](asset-reports.md)
+* [Schemi di metadati](metadata-schemas.md)
+* [Scaricare le risorse](download-assets-from-aem.md)
+* [Gestire i metadati](manage-metadata.md)
+* [Facet di ricerca](search-facets.md)
+* [Gestire le raccolte](manage-collections.md)
+* [Importazione in blocco di metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 * [Documentazione video Dynamic Media](/help/assets/dynamic-media/video.md).

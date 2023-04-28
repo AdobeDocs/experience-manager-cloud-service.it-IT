@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 13ea0161771776f23d3789adfb8487df06a7e4b1
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 98%
+source-wordcount: '1183'
+ht-degree: 97%
 
 ---
 
@@ -244,3 +244,18 @@ Per ulteriori informazioni, consulta la [documentazione di Brand Portal](https:/
 
    <li>Step text</li>
    -->
+
+**Consulta anche**
+
+* [Traduci risorse](translate-assets.md)
+* [API HTTP di Assets](mac-api-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cercare risorse](search-assets.md)
+* [Risorse collegate](use-assets-across-connected-assets-instances.md)
+* [Rapporti sulle risorse](asset-reports.md)
+* [Schemi di metadati](metadata-schemas.md)
+* [Scaricare le risorse](download-assets-from-aem.md)
+* [Gestire i metadati](manage-metadata.md)
+* [Facet di ricerca](search-facets.md)
+* [Gestire le raccolte](manage-collections.md)
+* [Importazione in blocco di metadati](metadata-import-export.md)

@@ -1,14 +1,14 @@
 ---
 title: API HTTP di Assets
-description: Creare, leggere, aggiornare, eliminare e gestire le risorse digitali tramite API HTTP in [!DNL Experience Manager Assets].
+description: Crea, leggi, aggiorna, elimina, gestisci risorse digitali utilizzando l’API HTTP in [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1515'
-ht-degree: 1%
+source-wordcount: '1542'
+ht-degree: 2%
 
 ---
 
@@ -16,86 +16,86 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-Il [!DNL Assets] API HTTP consente di eseguire operazioni CRUD (create-read-update-delete) su risorse digitali, inclusi metadati, rappresentazioni e commenti, insieme a contenuti strutturati tramite [!DNL Experience Manager] Frammenti di contenuto. Viene esposto in corrispondenza di `/api/assets` e viene implementato come API REST. Include [Supporto per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md).
+La [!DNL Assets] L’API HTTP consente operazioni di creazione-lettura-aggiornamento-eliminazione (CRUD) sulle risorse digitali, compresi i metadati, le rappresentazioni e i commenti, nonché contenuti strutturati mediante l’utilizzo di [!DNL Experience Manager] Frammenti di contenuto. È esposto a `/api/assets` e viene implementato come API REST. Include [Supporto per i frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 Per accedere all’API:
 
 1. Apri il documento del servizio API in `https://[hostname]:[port]/api.json`.
-1. Segui le [!DNL Assets] collegamento del servizio che porta a `https://[hostname]:[server]/api/assets.json`.
+1. Segui [!DNL Assets] collegamento al servizio che porta a `https://[hostname]:[server]/api/assets.json`.
 
-La risposta API è un file JSON per alcuni tipi MIME e un codice di risposta per tutti i tipi MIME. La risposta JSON è facoltativa e potrebbe non essere disponibile, ad esempio per i file PDF. Utilizza il codice di risposta per ulteriori analisi o azioni.
+La risposta API è un file JSON per alcuni tipi MIME e un codice di risposta per tutti i tipi MIME. La risposta JSON è facoltativa e potrebbe non essere disponibile, ad esempio per i file PDF. Per ulteriori analisi o azioni, fai riferimento al codice di risposta.
 
 >[!NOTE]
 >
->Tutte le chiamate API relative al caricamento o all’aggiornamento di risorse o dati binari in generale (come le rappresentazioni) sono obsolete per [!DNL Experience Manager] as a [!DNL Cloud Service] distribuzione. Per caricare i file binari, utilizza [API di caricamento binario diretto](developer-reference-material-apis.md#asset-upload) invece.
+>Tutte le chiamate API relative al caricamento o all’aggiornamento di risorse o binari in generale (come le rappresentazioni) sono obsolete per [!DNL Experience Manager] come [!DNL Cloud Service] distribuzione. Per caricare i binari, utilizza [API di caricamento binario diretto](developer-reference-material-apis.md#asset-upload) invece.
 
 ## Frammenti di contenuto {#content-fragments}
 
-A [Frammento di contenuto](/help/assets/content-fragments/content-fragments.md) è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, ad esempio testi, numeri, date e così via. Poiché esistono diverse differenze `standard` risorse (come immagini o documenti), si applicano alcune regole aggiuntive alla gestione dei frammenti di contenuto.
+A [Frammento di contenuto](/help/assets/content-fragments/content-fragments.md) è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, quali testi, numeri, date, tra gli altri. Poiché esistono diverse differenze tra `standard` risorse (come immagini o documenti), alcune regole aggiuntive si applicano alla gestione dei frammenti di contenuto.
 
-Per ulteriori informazioni, consulta [Supporto dei frammenti di contenuto in [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
+Per ulteriori informazioni, consulta [Supporto dei frammenti di contenuto nel [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
 
-## Dati, modello {#data-model}
+## Modello dati {#data-model}
 
-Il [!DNL Assets] L’API HTTP espone due elementi principali, cartelle e risorse (per le risorse standard). Inoltre, espone elementi più dettagliati per i modelli di dati personalizzati che descrivono i contenuti strutturati nei frammenti di contenuto. Consulta [Modelli di dati per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) per ulteriori informazioni.
+La [!DNL Assets] L’API HTTP espone due elementi principali, cartelle e risorse (per le risorse standard). Inoltre, espone elementi più dettagliati per i modelli di dati personalizzati che descrivono contenuti strutturati in Frammenti di contenuto. Vedi [Modelli di dati per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) per ulteriori informazioni.
 
 ### Cartelle {#folders}
 
-Le cartelle sono simili alle directory dei file system tradizionali. La cartella può contenere solo risorse, solo cartelle o cartelle e risorse. Le cartelle hanno i seguenti componenti:
+Le cartelle sono simili alle directory dei file system tradizionali. Le cartelle possono contenere solo risorse, solo cartelle o cartelle e risorse. Le cartelle hanno i seguenti componenti:
 
-**Entità**: le entità di una cartella sono i relativi elementi secondari, che possono essere cartelle e risorse.
+**Entità**: Le entità di una cartella sono i relativi elementi secondari, che possono essere cartelle e risorse.
 
 **Proprietà**:
 
 * `name` è il nome della cartella. È lo stesso dell’ultimo segmento nel percorso URL senza estensione.
-* `title` è un titolo facoltativo della cartella che può essere visualizzato al posto del nome.
+* `title` è un titolo facoltativo della cartella che può essere visualizzato al posto del suo nome.
 
 >[!NOTE]
 >
->Alcune proprietà della cartella o della risorsa sono mappate a un prefisso diverso. Il `jcr` prefisso di `jcr:title`, `jcr:description`, e `jcr:language` sono sostituiti con `dc` prefisso. Quindi nel JSON restituito, `dc:title` e `dc:description` contengono i valori di `jcr:title` e `jcr:description`, rispettivamente.
+>Alcune proprietà della cartella o della risorsa sono mappate a un prefisso diverso. La `jcr` prefisso `jcr:title`, `jcr:description`e `jcr:language` sono sostituiti con `dc` Prefisso. Quindi nel JSON restituito, `dc:title` e `dc:description` contengono i valori di `jcr:title` e `jcr:description`, rispettivamente.
 
-**Collegamenti** Le cartelle espongono tre collegamenti:
+**Collegamenti** Le cartelle mostrano tre collegamenti:
 
-* `self`: collegamento a se stesso.
-* `parent`: collegamento alla cartella principale.
-* `thumbnail`: (facoltativo) collegamento a un’immagine di miniatura della cartella.
+* `self`: Collega a se stesso.
+* `parent`: Collega alla cartella principale.
+* `thumbnail`: (Facoltativo) collega a un&#39;immagine miniatura della cartella.
 
 ### Risorse {#assets}
 
-In entrata [!DNL Experience Manager] una risorsa contiene i seguenti elementi:
+In [!DNL Experience Manager] una risorsa contiene i seguenti elementi:
 
 * Proprietà e metadati della risorsa.
 * File binario della risorsa caricato originariamente.
-* Più rappresentazioni configurate. Queste possono essere immagini di diverse dimensioni, video di diverse codifiche o pagine estratte da PDF o [!DNL Adobe InDesign] file.
+* Più rappresentazioni configurate. Possono essere immagini di dimensioni diverse, video di codifiche diverse o pagine estratte da PDF o [!DNL Adobe InDesign] file.
 * Commenti facoltativi.
 
 Per informazioni sugli elementi nei frammenti di contenuto, consulta [Supporto dei frammenti di contenuto nell’API HTTP di Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
 
-In entrata [!DNL Experience Manager] una cartella contiene i seguenti componenti:
+In [!DNL Experience Manager] una cartella presenta i seguenti componenti:
 
-* Entità: i figli delle risorse ne sono le rappresentazioni.
+* Entità: Gli elementi secondari delle risorse sono le relative rappresentazioni.
 * Proprietà.
 * Collegamenti.
 
 ## Funzioni disponibili {#available-features}
 
-Il [!DNL Assets] L’API HTTP include le seguenti funzionalità:
+La [!DNL Assets] L’API HTTP include le seguenti funzionalità:
 
-* [Recuperare un elenco di cartelle](#retrieve-a-folder-listing).
+* [Recupera elenco cartelle](#retrieve-a-folder-listing).
 * [Creare una cartella](#create-a-folder).
 * [Creare una risorsa (obsoleto)](#create-an-asset)
 * [Aggiorna binario risorsa (obsoleto)](#update-asset-binary).
 * [Aggiornare i metadati delle risorse](#update-asset-metadata).
-* [Creare una rappresentazione di una risorsa](#create-an-asset-rendition).
-* [Aggiornare il rendering di una risorsa](#update-an-asset-rendition).
-* [Creare un commento della risorsa](#create-an-asset-comment).
+* [Creare un rendering delle risorse](#create-an-asset-rendition).
+* [Aggiornare un rendering di una risorsa](#update-an-asset-rendition).
+* [Creare un commento sulla risorsa](#create-an-asset-comment).
 * [Copiare una cartella o una risorsa](#copy-a-folder-or-asset).
 * [Spostare una cartella o una risorsa](#move-a-folder-or-asset).
-* [Eliminare una cartella, una risorsa o una rappresentazione](#delete-a-folder-asset-or-rendition).
+* [Eliminare una cartella, una risorsa o un rendering](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
->Per maggiore leggibilità, gli esempi seguenti omettono le notazioni cURL complete. La notazione è correlata a [Riposa](https://github.com/micha/resty) che è un wrapper di script per cURL.
+>Per semplificare la leggibilità, gli esempi seguenti omettono le notazioni cURL complete. La notazione è correlata con [Riposato](https://github.com/micha/resty) che è un wrapper di script per cURL.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -106,30 +106,30 @@ Il [!DNL Assets] L’API HTTP include le seguenti funzionalità:
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 -->
 
-## Recuperare un elenco di cartelle {#retrieve-a-folder-listing}
+## Recupera elenco cartelle {#retrieve-a-folder-listing}
 
 Recupera una rappresentazione Siren di una cartella esistente e delle relative entità secondarie (sottocartelle o risorse).
 
 **Richiesta**: `GET /api/assets/myFolder.json`
 
-**Codici di risposta**: i codici di risposta sono:
+**Codici di risposta**: I codici di risposta sono:
 
-* 200 - OK - operazione riuscita.
+* 200 - OK - successo.
 * 404 - NON TROVATO - la cartella non esiste o non è accessibile.
-* 500 - ERRORE INTERNO DEL SERVER - se si verificano altri errori.
+* 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro non funziona.
 
-**Risposta**: la classe dell’entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;insieme completo di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell’entità, i clienti devono recuperare il contenuto dell’URL a cui fa riferimento il collegamento con un `rel` di `self`.
+**Risposta**: La classe dell’entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;intero insieme di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell’entità, i clienti devono recuperare il contenuto dell’URL indicato dal collegamento con un `rel` di `self`.
 
 ## Crea una cartella . {#create-a-folder}
 
-Crea un `sling`: `OrderedFolder` nel percorso specificato. Se `*` viene fornito al posto del nome di un nodo, il servlet utilizza il nome del parametro come nome di nodo. La richiesta accetta uno dei seguenti elementi:
+Crea un `sling`: `OrderedFolder` nel percorso indicato. Se `*` viene fornito al posto del nome di un nodo, il servlet utilizza il nome del parametro come nome del nodo. La richiesta accetta uno dei seguenti elementi:
 
 * Una rappresentazione Siren della nuova cartella
-* Un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`. Questi sono utili per creare una cartella direttamente da un modulo HTML.
+* Un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`. Sono utili per creare una cartella direttamente da un modulo HTML.
 
 Inoltre, le proprietà della cartella possono essere specificate come parametri di query URL.
 
-Una chiamata API non riesce e viene visualizzato un messaggio `500` codice di risposta se il nodo principale del percorso specificato non esiste. Una chiamata restituisce un codice di risposta `409` se la cartella esiste.
+Una chiamata API non riesce con un `500` codice di risposta se il nodo principale del percorso fornito non esiste. Una chiamata restituisce un codice di risposta `409` se la cartella esiste.
 
 **Parametri**: `name` è il nome della cartella.
 
@@ -138,39 +138,39 @@ Una chiamata API non riesce e viene visualizzato un messaggio `500` codice di ri
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
 
-**Codici di risposta**: i codici di risposta sono:
+**Codici di risposta**: I codici di risposta sono:
 
-* 201 - CREATO - su creazione riuscita.
-* 409 - CONFLITTO - se la cartella esiste.
+* 201 - CREATO - sulla creazione di successo.
+* 409 - CONFLICT - se la cartella esiste.
 * 412 - PRECONDIZIONE NON RIUSCITA - se non è possibile trovare o accedere alla raccolta radice.
-* 500 - ERRORE INTERNO DEL SERVER - se si verificano altri errori.
+* 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro non funziona.
 
 ## Creare una risorsa {#create-an-asset}
 
-Consulta [caricamento risorse](developer-reference-material-apis.md) per informazioni su come creare una risorsa. Non è possibile creare una risorsa utilizzando l’API HTTP.
+Vedi [caricamento risorsa](developer-reference-material-apis.md) per informazioni su come creare una risorsa. Non puoi creare una risorsa utilizzando l’API HTTP.
 
 ## Aggiornare un binario di risorse {#update-asset-binary}
 
-Consulta [caricamento risorse](developer-reference-material-apis.md) per informazioni su come aggiornare i dati binari delle risorse. Non è possibile aggiornare un binario di risorse utilizzando l’API HTTP.
+Vedi [caricamento risorsa](developer-reference-material-apis.md) per informazioni su come aggiornare i binari delle risorse. Non è possibile aggiornare un binario di risorse utilizzando l’API HTTP.
 
 ## Aggiornare i metadati di una risorsa {#update-asset-metadata}
 
-Aggiorna le proprietà dei metadati della risorsa. Se aggiorni una proprietà in `dc:` , l&#39;API aggiorna la stessa proprietà nella sezione `jcr` spazio dei nomi. L’API non sincronizza le proprietà nei due spazi dei nomi.
+Aggiorna le proprietà dei metadati della risorsa. Se aggiorni una proprietà in `dc:` namespace, l’API aggiorna la stessa proprietà nel `jcr` spazio dei nomi. L’API non sincronizza le proprietà sotto i due namespace.
 
 **Richiesta**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
-**Codici di risposta**: i codici di risposta sono:
+**Codici di risposta**: I codici di risposta sono:
 
-* 200 - OK - se la risorsa è stata aggiornata correttamente.
-* 404 - NON TROVATO - se la risorsa non è stata trovata o non è stato possibile accedervi all’URI specificato.
+* 200 - OK - Se Asset è stato aggiornato correttamente.
+* 404 - NON TROVATO - se non è stato possibile trovare o accedere a Asset nell’URI fornito.
 * 412 - PRECONDIZIONE NON RIUSCITA - se non è possibile trovare o accedere alla raccolta radice.
-* 500 - ERRORE INTERNO DEL SERVER - se si verificano altri errori.
+* 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro non funziona.
 
-## Creare una rappresentazione di una risorsa {#create-an-asset-rendition}
+## Creare un rendering delle risorse {#create-an-asset-rendition}
 
-Crea una rappresentazione per una risorsa. Se non viene fornito il nome del parametro della richiesta, il nome del file viene utilizzato come nome della rappresentazione.
+Crea un rendering per una risorsa. Se il nome del parametro della richiesta non viene fornito, il nome del file viene utilizzato come nome di rendering.
 
-**Parametri**: i parametri sono `name` per il nome della rappresentazione e `file` come riferimento di file.
+**Parametri**: I parametri sono `name` nome del rendering e `file` come riferimento di file.
 
 **Richiesta**
 
@@ -180,75 +180,75 @@ Crea una rappresentazione per una risorsa. Se non viene fornito il nome del para
 **Codici di risposta**
 
 * 201 - CREATO - se la rappresentazione è stata creata correttamente.
-* 404 - NON TROVATO - se la risorsa non è stata trovata o non è stato possibile accedervi all’URI specificato.
+* 404 - NON TROVATO - se non è stato possibile trovare o accedere a Asset nell’URI fornito.
 * 412 - PRECONDIZIONE NON RIUSCITA - se non è possibile trovare o accedere alla raccolta radice.
-* 500 - ERRORE INTERNO DEL SERVER - se si verificano altri errori.
+* 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro non funziona.
 
-## Aggiornare il rendering di una risorsa {#update-an-asset-rendition}
+## Aggiornare un rendering di una risorsa {#update-an-asset-rendition}
 
-Gli aggiornamenti sostituiscono rispettivamente una rappresentazione di una risorsa con i nuovi dati binari.
+Gli aggiornamenti sostituiscono rispettivamente il rendering di una risorsa con i nuovi dati binari.
 
 **Richiesta**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**Codici di risposta**: i codici di risposta sono:
+**Codici di risposta**: I codici di risposta sono:
 
-* 200 - OK - se la rappresentazione è stata aggiornata correttamente.
-* 404 - NON TROVATO - se la risorsa non è stata trovata o non è stato possibile accedervi all’URI specificato.
+* 200 - OK - se Rendering è stato aggiornato correttamente.
+* 404 - NON TROVATO - se non è stato possibile trovare o accedere a Asset nell’URI fornito.
 * 412 - PRECONDIZIONE NON RIUSCITA - se non è possibile trovare o accedere alla raccolta radice.
-* 500 - ERRORE INTERNO DEL SERVER - se si verificano altri errori.
+* 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro non funziona.
 
 ## Aggiungere un commento a una risorsa {#create-an-asset-comment}
 
-**Parametri**: i parametri sono `message` per il corpo del messaggio del commento e `annotationData` per i dati di Annotation in formato JSON.
+**Parametri**: I parametri sono `message` per il corpo del messaggio del commento e `annotationData` per i dati Annotation in formato JSON.
 
 **Richiesta**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
-**Codici di risposta**: i codici di risposta sono:
+**Codici di risposta**: I codici di risposta sono:
 
-* 201 - CREATO - se il commento è stato creato correttamente.
-* 404 - NON TROVATO - se la risorsa non è stata trovata o non è stato possibile accedervi all’URI specificato.
+* 201 - CREATO - se il Commento è stato creato correttamente.
+* 404 - NON TROVATO - se non è stato possibile trovare o accedere a Asset nell’URI fornito.
 * 412 - PRECONDIZIONE NON RIUSCITA - se non è possibile trovare o accedere alla raccolta radice.
-* 500 - ERRORE INTERNO DEL SERVER - se si verificano altri errori.
+* 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro non funziona.
 
 ## Copiare una cartella o una risorsa {#copy-a-folder-or-asset}
 
-Copia in una nuova destinazione una cartella o una risorsa disponibile nel percorso specificato.
+Copia una cartella o una risorsa disponibile nel percorso specificato in una nuova destinazione.
 
-**Intestazioni richiesta**: i parametri sono:
+**Intestazioni richieste**: I parametri sono:
 
-* `X-Destination` : nuovo URI di destinazione nell’ambito della soluzione API in cui copiare la risorsa.
-* `X-Depth` - oppure `infinity` o `0`. Utilizzo di `0` copia solo la risorsa e le relative proprietà e non i relativi elementi figlio.
+* `X-Destination` - un nuovo URI di destinazione nell’ambito della soluzione API in cui copiare la risorsa.
+* `X-Depth` - o `infinity` o `0`. Utilizzo `0` copia solo la risorsa e le relative proprietà e non i relativi elementi secondari.
 * `X-Overwrite` - Utilizzo `F` per evitare la sovrascrittura di una risorsa nella destinazione esistente.
 
 **Richiesta**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
-**Codici di risposta**: i codici di risposta sono:
+**Codici di risposta**: I codici di risposta sono:
 
 * 201 - CREATO - se la cartella/risorsa è stata copiata in una destinazione non esistente.
-* 204 - NESSUN CONTENUTO - se la cartella/risorsa è stata copiata in una destinazione esistente.
-* 412 - PRECONDIZIONE NON RIUSCITA - se manca un’intestazione di richiesta.
-* 500 - ERRORE INTERNO DEL SERVER - se si verificano altri errori.
+* 204 - NO CONTENT - Se la cartella o la risorsa è stata copiata in una destinazione esistente.
+* 412 - PRECONDIZIONE NON RIUSCITA - se manca un&#39;intestazione di richiesta.
+* 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro non funziona.
 
 ## Spostare una cartella o una risorsa {#move-a-folder-or-asset}
 
 Sposta una cartella o una risorsa nel percorso specificato in una nuova destinazione.
 
-**Intestazioni richiesta**: i parametri sono:
+**Intestazioni richieste**: I parametri sono:
 
-* `X-Destination` : nuovo URI di destinazione nell’ambito della soluzione API in cui copiare la risorsa.
-* `X-Depth` - oppure `infinity` o `0`. Utilizzo di `0` copia solo la risorsa e le relative proprietà e non i relativi elementi figlio.
+* `X-Destination` - un nuovo URI di destinazione nell’ambito della soluzione API in cui copiare la risorsa.
+* `X-Depth` - o `infinity` o `0`. Utilizzo `0` copia solo la risorsa e le relative proprietà e non i relativi elementi secondari.
 * `X-Overwrite` - Utilizzare `T` per eliminare forzatamente una risorsa esistente o `F` per evitare la sovrascrittura di una risorsa esistente.
 
 **Richiesta**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-**Codici di risposta**: i codici di risposta sono:
+**Codici di risposta**: I codici di risposta sono:
 
 * 201 - CREATO - se la cartella/risorsa è stata copiata in una destinazione non esistente.
-* 204 - NESSUN CONTENUTO - se la cartella/risorsa è stata copiata in una destinazione esistente.
-* 412 - PRECONDIZIONE NON RIUSCITA - se manca un’intestazione di richiesta.
-* 500 - ERRORE INTERNO DEL SERVER - se si verificano altri errori.
+* 204 - NO CONTENT - Se la cartella o la risorsa è stata copiata in una destinazione esistente.
+* 412 - PRECONDIZIONE NON RIUSCITA - se manca un&#39;intestazione di richiesta.
+* 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro non funziona.
 
-## Eliminare una cartella, una risorsa o una rappresentazione {#delete-a-folder-asset-or-rendition}
+## Eliminare una cartella, una risorsa o un rendering {#delete-a-folder-asset-or-rendition}
 
 Elimina una risorsa (-tree) nel percorso specificato.
 
@@ -258,21 +258,35 @@ Elimina una risorsa (-tree) nel percorso specificato.
 * `DELETE /api/assets/myFolder/myAsset.png`
 * `DELETE /api/assets/myFolder/myAsset.png/renditions/original`
 
-**Codici di risposta**: i codici di risposta sono:
+**Codici di risposta**: I codici di risposta sono:
 
-* 200 - OK - se la cartella è stata eliminata correttamente.
+* 200 - OK - Se la cartella è stata eliminata correttamente.
 * 412 - PRECONDIZIONE NON RIUSCITA - se non è possibile trovare o accedere alla raccolta radice.
-* 500 - ERRORE INTERNO DEL SERVER - se si verificano altri errori.
+* 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro non funziona.
 
 ## Suggerimenti, best practice e limitazioni {#tips-limitations}
 
-* Dopo il [!UICONTROL Ora di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite [!DNL Assets] tramite l’interfaccia web e l’API HTTP. L’API restituisce il messaggio di errore 404 se [!UICONTROL Ora di attivazione] è nel futuro o [!UICONTROL Ora di disattivazione] è nel passato.
+* Dopo la [!UICONTROL Ora di disattivazione], una risorsa e i relativi rendering non sono disponibili tramite il [!DNL Assets] interfaccia web e tramite l’API HTTP. L&#39;API restituisce un messaggio di errore 404 se la [!UICONTROL Ora di attivazione] è in futuro o [!UICONTROL Ora di disattivazione] è nel passato.
 
-* L’API HTTP delle risorse non restituisce i metadati completi. Gli spazi dei nomi sono hardcoded e vengono restituiti solo tali spazi dei nomi. Per i metadati completi, vedi il percorso della risorsa `/jcr_content/metadata.json`.
+* L’API HTTP di Assets non restituisce i metadati completi. Gli spazi dei nomi sono codificati e vengono restituiti solo questi spazi dei nomi. Per metadati completi, vedi il percorso della risorsa `/jcr_content/metadata.json`.
 
-* Alcune proprietà della cartella o della risorsa sono mappate a un prefisso diverso quando vengono aggiornate utilizzando le API. Il `jcr` prefisso di `jcr:title`, `jcr:description`, e `jcr:language` sono sostituiti con `dc` prefisso. Quindi nel JSON restituito, `dc:title` e `dc:description` contengono i valori di `jcr:title` e `jcr:description`, rispettivamente.
+* Alcune proprietà della cartella o della risorsa vengono mappate su un prefisso diverso quando vengono aggiornate utilizzando le API. La `jcr` prefisso `jcr:title`, `jcr:description`e `jcr:language` sono sostituiti con `dc` Prefisso. Quindi nel JSON restituito, `dc:title` e `dc:description` contengono i valori di `jcr:title` e `jcr:description`, rispettivamente.
+
+**Consulta anche**
+
+* [Traduci risorse](translate-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cercare risorse](search-assets.md)
+* [Risorse collegate](use-assets-across-connected-assets-instances.md)
+* [Rapporti sulle risorse](asset-reports.md)
+* [Schemi di metadati](metadata-schemas.md)
+* [Scaricare le risorse](download-assets-from-aem.md)
+* [Gestire i metadati](manage-metadata.md)
+* [Facet di ricerca](search-facets.md)
+* [Gestire le raccolte](manage-collections.md)
+* [Importazione in blocco di metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
->* [Documentazione di riferimento per sviluppatori per [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+>* [Documenti di riferimento per sviluppatori per [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
 

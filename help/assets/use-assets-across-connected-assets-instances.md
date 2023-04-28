@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a7545f0f2143983a052f272992d5e27b78f271a1
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3768'
+source-wordcount: '3796'
 ht-degree: 16%
 
 ---
@@ -355,3 +355,17 @@ Per risolvere eventuali errori comuni, procedi come segue:
 * Se i riferimenti remoti non vengono recuperati e si verifica un messaggio di errore, controlla se [!DNL Sites] la distribuzione è disponibile e verifica la presenza di problemi di connettività di rete. Riprova più tardi per controllare. [!DNL Assets] la distribuzione tenta due volte di stabilire una connessione con [!DNL Sites] e quindi segnala un errore.
 
    ![impossibile recuperare i riferimenti remoti delle risorse](assets/reference-report-failure.png)
+
+**Consulta anche**
+
+* [Traduci risorse](translate-assets.md)
+* [API HTTP di Assets](mac-api-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cercare risorse](search-assets.md)
+* [Rapporti sulle risorse](asset-reports.md)
+* [Schemi di metadati](metadata-schemas.md)
+* [Scaricare le risorse](download-assets-from-aem.md)
+* [Gestire i metadati](manage-metadata.md)
+* [Facet di ricerca](search-facets.md)
+* [Gestire le raccolte](manage-collections.md)
+* [Importazione in blocco di metadati](metadata-import-export.md)

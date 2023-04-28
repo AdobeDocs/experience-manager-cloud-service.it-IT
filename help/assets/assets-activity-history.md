@@ -1,22 +1,22 @@
 ---
 title: Flusso di attività nella timeline
-description: Questo articolo descrive come visualizzare i registri attività per le risorse sulla timeline.
+description: Questo articolo descrive come visualizzare i registri attività per le risorse nella timeline.
 contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 24%
+source-wordcount: '237'
+ht-degree: 29%
 
 ---
 
-# Visualizzare i registri di operazione delle risorse nel flusso di attività {#activity-stream-in-timeline}
+# Visualizza i registri delle operazioni delle risorse nel flusso di attività {#activity-stream-in-timeline}
 
-Questa funzione visualizza i registri attività per le risorse sulla timeline. Se esegui una delle seguenti operazioni relative alle risorse in [!DNL Experience Manager Assets], la funzione di flusso Attività aggiorna la timeline in modo che rifletta l’attività.
+Questa funzione visualizza i registri attività per le risorse nella timeline. Se esegui una delle seguenti operazioni relative alle risorse in [!DNL Experience Manager Assets], la funzione Flusso di attività aggiorna la timeline per riflettere l’attività.
 
-Nel flusso di attività vengono registrate le seguenti operazioni:
+Le seguenti operazioni vengono registrate nel flusso di attività:
 
 * Creare
 * Eliminare
@@ -27,13 +27,13 @@ Nel flusso di attività vengono registrate le seguenti operazioni:
 * Rifiuta
 * Spostare
 
-I registri attività da visualizzare nella timeline vengono recuperati dalla posizione `/var/audit/com.day.cq.dam/content/dam` di CRX, dove vengono memorizzati i file di registro.  Inoltre, l’attività timeline viene registrata al caricamento di nuove risorse o quando le risorse esistenti vengono modificate e archiviate [!DNL Experience Manager] tramite [Adobe collegamento risorsa](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) o [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+I registri attività da visualizzare nella timeline vengono recuperati dalla posizione `/var/audit/com.day.cq.dam/content/dam` di CRX, dove vengono memorizzati i file di registro.  Inoltre, l’attività timeline viene registrata al caricamento di nuove risorse o quando le risorse esistenti vengono modificate e archiviate [!DNL Experience Manager] tramite [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) o [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >
->I flussi di lavoro transitori non vengono visualizzati nella timeline perché per tali flussi di lavoro non vengono salvate informazioni sulla cronologia.
+>I flussi di lavoro transitori non vengono visualizzati nella timeline, perché per questi flussi di lavoro non vengono salvate informazioni sulla cronologia.
 
-Per visualizzare il flusso di attività, esegui una o più operazioni sulla risorsa, selezionala e scegli **[!UICONTROL Timeline]** dall&#39;elenco GlobalNav.
+Per visualizzare il flusso di attività, esegui una o più operazioni sulla risorsa, seleziona la risorsa, quindi scegli **[!UICONTROL Timeline]** dalla lista GlobalNav.
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
@@ -44,3 +44,18 @@ La timeline mostra il flusso di attività per le operazioni eseguite sulle risor
 >[!NOTE]
 >
 >La posizione predefinita dell’archivio del registro per le attività di tipo **[!UICONTROL Pubblica]** e **[!UICONTROL Annulla pubblicazione]** è `/var/audit/com.day.cq.replication/content`. Per le attività di tipo **[!UICONTROL Sposta]**, la posizione predefinita è `/var/audit/com.day.cq.wcm.core.page`.
+
+**Consulta anche**
+
+* [Traduci risorse](translate-assets.md)
+* [API HTTP di Assets](mac-api-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cercare risorse](search-assets.md)
+* [Risorse collegate](use-assets-across-connected-assets-instances.md)
+* [Rapporti sulle risorse](asset-reports.md)
+* [Schemi di metadati](metadata-schemas.md)
+* [Scaricare le risorse](download-assets-from-aem.md)
+* [Gestire i metadati](manage-metadata.md)
+* [Facet di ricerca](search-facets.md)
+* [Gestire le raccolte](manage-collections.md)
+* [Importazione in blocco di metadati](metadata-import-export.md)
