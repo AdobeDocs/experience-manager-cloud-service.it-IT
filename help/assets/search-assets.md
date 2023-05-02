@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
+source-git-commit: 33baeea93c1fa2b74946699e53d2f428e77aee77
 workflow-type: tm+mt
-source-wordcount: '4931'
+source-wordcount: '4934'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 [!DNL Adobe Experience Manager Assets] fornisce solidi metodi di ricerca delle risorse che consentono di raggiungere una maggiore velocità dei contenuti. I team possono ridurre i tempi di commercializzazione grazie a un’esperienza di ricerca delle risorse intelligente e continua, utilizzando funzionalità pronte all’uso e metodi personalizzati. La funzionalità di ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e dei professionisti del marketing, sia per l’amministrazione da parte degli amministratori DAM. Ricerche semplici, avanzate e personalizzate che puoi eseguire tramite [!DNL Assets] l&#39;interfaccia utente o altre app e superfici aiutano a soddisfare questi casi d&#39;uso.
 
-[!DNL Experience Manager Assets] supporta i seguenti casi d’uso per cercare le risorse e questo articolo descrive l’utilizzo, i concetti, le configurazioni, le limitazioni e la risoluzione dei problemi relativi a questi casi d’uso.
+La ricerca delle risorse in AEM supporta i seguenti casi d’uso e questo articolo descrive l’utilizzo, i concetti, le configurazioni, le limitazioni e la risoluzione dei problemi relativi a questi casi d’uso.
 
 | Cercare risorse | Configurare e amministrare la funzionalità di ricerca | Utilizzare i risultati di ricerca delle risorse |
 |---|---|---|
@@ -38,9 +38,9 @@ Utilizza la **[!UICONTROL Filtri]** per cercare risorse, cartelle, tag e metadat
 
 [!DNL Experience Manager] La funzionalità di ricerca supporta la ricerca di raccolte e la ricerca di risorse all’interno di una raccolta. Vedi [raccolte di ricerca](/help/assets/manage-collections.md).
 
-## Comprendere l’interfaccia di ricerca {#searchui}
+## Comprendere l’interfaccia di ricerca delle risorse {#searchui}
 
-Acquisisci familiarità con l’interfaccia di ricerca e le azioni disponibili.
+Acquisisci familiarità con l’interfaccia di ricerca delle risorse e le azioni disponibili.
 
 ![Interfaccia dei risultati di ricerca Experience Manager Assets](assets/aem_search_results.png)
 
