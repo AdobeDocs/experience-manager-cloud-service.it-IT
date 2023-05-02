@@ -2,10 +2,10 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: cab182a7998be6a569cf16e4000184f7235082da
+source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 12%
+source-wordcount: '1722'
+ht-degree: 11%
 
 ---
 
@@ -146,6 +146,10 @@ Questo indica che Cloud Acceleration Manager non è stato in grado di raggiunger
 Release Orchestrator mantiene automaticamente gli ambienti aggiornati applicando automaticamente gli aggiornamenti. Se l’aggiornamento viene attivato durante l’esecuzione di un’acquisizione, possono verificarsi risultati imprevedibili, tra cui la corruzione dell’ambiente. Questo è uno dei motivi per cui è necessario registrare un ticket di supporto prima di avviare un’acquisizione (vedi &quot;Nota&quot; sopra), in modo che sia possibile pianificare la disattivazione temporanea di Release Orchestrator.
 
 Se Release Orchestrator è ancora in esecuzione all&#39;avvio di un&#39;acquisizione, l&#39;interfaccia utente presenta questo messaggio. È possibile scegliere di continuare comunque, accettando il rischio, controllando il campo e premendo nuovamente il pulsante.
+
+>[!NOTE]
+>
+> Release Orchestrator viene ora implementato negli ambienti di sviluppo, pertanto è necessario mettere in pausa anche gli aggiornamenti su tali ambienti.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
