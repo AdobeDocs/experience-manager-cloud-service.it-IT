@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: c419da88ccfe97cf8b80e68ddd402196c2ec58e3
+source-git-commit: 49ffc9ff848a5cca960263d6bcce5c4b6383a6d0
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 27%
+source-wordcount: '1101'
+ht-degree: 25%
 
 ---
 
@@ -29,10 +29,6 @@ Segui le sezioni seguenti per utilizzare l’interfaccia utente self-service di 
 
 1. [Gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-
->[!NOTE]
->
->I domini personalizzati sono supportati in Cloud Manager **solo** se utilizzi la rete CDN gestita AEM. Se utilizzi una tua CDN e [la indirizzi alla CDN gestita da AEM](#point-to-point-CDN), per gestire i domini non Cloud Manager dovrai usare quella specifica CDN.
 
 **Limitazione del traffico**
 

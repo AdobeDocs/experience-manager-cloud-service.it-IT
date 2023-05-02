@@ -2,10 +2,10 @@
 title: Introduzione ai nomi di dominio personalizzati
 description: Tramite l’interfaccia utente di Cloud Manager è possibile aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: cc6910bad0d0a62232bd66e0080b6802b9a1110b
+source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 82%
+source-wordcount: '770'
+ht-degree: 66%
 
 ---
 
@@ -33,21 +33,16 @@ Il nome di dominio può essere acquistato da un registrar di nomi di dominio o d
 >
 >Cloud Manager non è un registrar di nomi di dominio e non fornisce servizi DNS.
 
-## Limitazioni {#limitations}
+## Nomi di dominio personalizzati e CDN BYO {#byo-cdn}
 
-L’utilizzo di nomi di dominio personalizzati con AEMaaCS presenta diverse limitazioni.
+AEM as a Cloud Service offre un servizio CDN (Content Delivery Network) integrato, ma consente anche di portare la propria CDN (BYO) da utilizzare con AEM. I domini personalizzati possono essere installati nella rete CDN AEM gestita o in una rete CDN gestita dall&#39;utente.
 
-* I nomi di dominio personalizzati sono supportati in Cloud Manager sia per i servizi di pubblicazione che per quelli di anteprima per i programmi Sites. I domini personalizzati per i servizi di authoring non sono supportati.
-* Ogni ambiente Cloud Manager può ospitare fino a un massimo di 500 domini personalizzati per ambiente.
-* Impossibile aggiungere i nomi di dominio agli ambienti mentre è presente una pipeline in esecuzione corrente collegata a tali ambienti.
-* Lo stesso nome di dominio non può essere utilizzato in più di un ambiente.
-* È possibile aggiungere un solo nome di dominio alla volta.
-* AEM as a Cloud Service non supporta domini con caratteri jolly come `*.example.com`.
-* Prima di aggiungere un nome di dominio personalizzato, è necessario installare per il programma un certificato SSL valido contenente il nome di dominio personalizzato (i certificati con caratteri jolly sono validi). Fai riferimento a [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) per saperne di più.
+* I nomi di dominio personalizzati (e i certificati) installati nel CDN gestito da AEM vengono gestiti tramite Cloud Manager.
+* I nomi di dominio personalizzati (e i certificati) installati nel tuo CDN sono gestiti in quel CDN specifico.
 
->[!NOTE]
->
->I domini personalizzati sono supportati in Cloud Manager **solo** se utilizzi la rete CDN gestita AEM. Se utilizzi una tua CDN e [la indirizzi alla CDN gestita da AEM](/help/implementing/dispatcher/cdn.md), per gestire i domini non Cloud Manager dovrai usare quella specifica CDN.
+I domini gestiti nel tuo CDN non devono essere installati tramite Cloud Manager. Saranno resi disponibili per AEM tramite X-Forwarded-Host e corrisponderanno ai vhosts definiti nel dispatcher. [Per ulteriori informazioni, consulta la documentazione CDN .](/help/implementing/dispatcher/cdn.md)
+
+In un ambiente è possibile installare entrambi i domini nel CDN AEM gestito e installarli nel proprio CDN.
 
 ## Flusso di lavoro {#workflow}
 
@@ -68,3 +63,15 @@ L’aggiunta di un nome di dominio personalizzato richiede l’interazione tra i
 >[!TIP]
 >
 >L’impostazione di nomi di dominio personalizzati con AEM as a Cloud Service è in genere un processo semplice. Tuttavia, a volte possono verificarsi problemi di delega del dominio la cui risoluzione può richiedere 1-2 giorni lavorativi. Per questo motivo, si consiglia vivamente di installare i domini con grande anticipo rispetto alla data di Go Live prevista. Per ulteriori informazioni, consulta il documento [Verifica dello stato del nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+
+## Limitazioni {#limitations}
+
+L’utilizzo di nomi di dominio personalizzati con AEMaaCS presenta diverse limitazioni.
+
+* I nomi di dominio personalizzati sono supportati in Cloud Manager sia per i servizi di pubblicazione che per quelli di anteprima per i programmi Sites. I domini personalizzati per i servizi di authoring non sono supportati.
+* Ogni ambiente Cloud Manager può ospitare fino a un massimo di 500 domini personalizzati per ambiente.
+* Impossibile aggiungere i nomi di dominio agli ambienti mentre è presente una pipeline in esecuzione corrente collegata a tali ambienti.
+* Lo stesso nome di dominio non può essere utilizzato in più di un ambiente.
+* È possibile aggiungere un solo nome di dominio alla volta.
+* AEM as a Cloud Service non supporta domini con caratteri jolly come `*.example.com`.
+* Prima di aggiungere un nome di dominio personalizzato, è necessario installare per il programma un certificato SSL valido contenente il nome di dominio personalizzato (i certificati con caratteri jolly sono validi). Fai riferimento a [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) per saperne di più.
