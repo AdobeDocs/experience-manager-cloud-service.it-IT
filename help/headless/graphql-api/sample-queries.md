@@ -3,10 +3,10 @@ title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 100%
+source-wordcount: '1596'
+ht-degree: 97%
 
 ---
 
@@ -1291,16 +1291,40 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 ### Query di esempio per un frammento di contenuto nidificato: più tipi di modello {#sample-wknd-nested-fragment-multiple-model}
 
+#### Tipo di modello a riferimento singolo
+
 Questa query rappresenta un’interrogazione per ottenere:
 
 * più frammenti di contenuto di tipo `bookmark`
-   * con riferimenti ai frammenti per altri frammenti di tipi di modello specifici `article` e `adventure`
+   * con i riferimenti al frammento ad un altro frammento del tipo di modello specifico `article`
 
 >[!NOTE]
 >
->Il campo `fragments` include il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionati.
+>Il campo `fragments` ha il tipo di dati `fragment-reference`, con il modello `Article` selezionato. Consegna query `fragments` come array di `[Article]`
 
-<!-- need replacement query -->
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Più tipi di modelli di riferimento
+
+Questa query rappresenta un’interrogazione per ottenere:
+
+* più frammenti di contenuto di tipo `bookmark`
+   * con riferimenti ai frammenti per altri frammenti di tipi di modello specifici `Article` e `Adventure`
+
+>[!NOTE]
+>
+>Il campo `fragments` include il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionati. Invio query `fragments` come array di `[AllFragmentModels]` che viene fatto riferimento al tipo di unione.
 
 ```graphql
 {
