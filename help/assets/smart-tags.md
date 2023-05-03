@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 9abafe051672de65f042332314445b239f95852b
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2423'
 ht-degree: 5%
 
 ---
@@ -236,7 +236,7 @@ L’assegnazione tag avanzati è basata su modelli di apprendimento delle immagi
 
 * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie slim-fit contro le magliette normali.
 * Impossibile identificare i tag in base a pattern o parti di un’immagine di dimensioni ridotte. Ad esempio, i loghi sulle camicie.
-* L’assegnazione tag è supportata nelle lingue che [!DNL Experience Manager] supporta. Per un elenco delle lingue, vedi [Note sulla versione del Servizio di contenuti avanzati](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* L’assegnazione tag è supportata nelle lingue che [!DNL Experience Manager] supporta.
 * I tag non gestiti si riferiscono a:
 
    * Aspetti non visivi e astratti. Ad esempio, l&#39;anno o la stagione di rilascio di un prodotto, l&#39;umore o le emozioni evocate da un&#39;immagine e una connotazione soggettiva di un video.

@@ -2,9 +2,9 @@
 title: Regole per la qualità del codice personalizzato
 description: Questa pagina descrive le regole per la qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice dei team tecnici di Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 0b71e15c956cd39907440be319347bd1a749eb0b
+source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3473'
 ht-degree: 100%
 
 ---
@@ -757,7 +757,7 @@ Similmente alla [regola I pacchetti non devono contenere duplicati delle configu
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
-La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definisce la modalità di authoring predefinita in Experience Manager. Poiché [l’interfaccia classica è diventata obsoleta a partire dalla versione 6.4 di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=it), ora viene segnalato un problema se la modalità di authoring predefinita è configurata sull’interfaccia utente classica.
+La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definisce la modalità di authoring predefinita in Experience Manager. Poiché l’interfaccia classica è diventata obsoleta a partire dalla versione 6.4 di Experience Manager, ora viene segnalato un problema se la modalità di authoring predefinita è configurata sull’interfaccia utente classica.
 
 ### I componenti con finestre di dialogo devono avere finestre di dialogo dell’interfaccia utente touch {#oakpal-components-dialogs}
 
@@ -860,7 +860,7 @@ La migrazione da modelli statici a modificabili può essere in gran parte automa
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
-I componenti Foundation legacy (ovvero i componenti in `/libs/foundation`) sono ora [obsoleti per diverse versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=it), in favore dei componenti core. L’utilizzo dei componenti Foundation come base per i componenti personalizzati (tramite sovrapposizione o ereditarietà) viene scoraggiato; si consiglia di optare per la conversione nei corrispondenti componenti core.
+I componenti Foundation legacy (ovvero i componenti in `/libs/foundation`) sono ora obsoleti per diverse versioni di Experience Manager, in favore dei componenti core. L’utilizzo dei componenti Foundation come base per i componenti personalizzati (tramite sovrapposizione o ereditarietà) viene scoraggiato; si consiglia di optare per la conversione nei corrispondenti componenti core.
 
 Tale conversione può essere agevolata dall’uso degli [strumenti di modernizzazione di Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
 
