@@ -2,7 +2,7 @@
 title: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 description: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 2a2becb12b7724720821f895b0631d8d82e4cd79
+source-git-commit: a1b186fec2d6de0934ffebc96967d36a967c044e
 workflow-type: tm+mt
 source-wordcount: '3042'
 ht-degree: 4%
@@ -523,7 +523,7 @@ Per abilitare i componenti core Forms adattivi per l’ambiente as a Cloud Servi
    `<artifactId>core-forms-components-core</artifactId>`
    `</dependency>`
 
-1. [Eseguire la pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it). Dopo l’esecuzione corretta della pipeline, i componenti core di Forms adattivi sono abilitati per l’ambiente. Inoltre, il modello di Forms adattivo (componenti core) e il tema Canvas vengono aggiunti all’ambiente as a Cloud Service Forms.
+1. [Eseguire la pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it). Dopo l’esecuzione corretta della pipeline, i componenti core di Forms adattivi sono abilitati per l’ambiente. Inoltre, i modelli Adattivo Forms (Componenti core) e il tema Canvas vengono aggiunti all’ambiente as a Cloud Service Forms.
 
 
 ## Aggiornare l’ambiente di sviluppo locale {#upgrade-your-local-development-environment}
