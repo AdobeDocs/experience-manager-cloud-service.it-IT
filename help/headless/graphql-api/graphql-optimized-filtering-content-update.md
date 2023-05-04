@@ -2,10 +2,10 @@
 title: Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato
 description: Scopri come aggiornare i frammenti di contenuto per il filtro GraphQL ottimizzato in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: e18a60197aab3866b839ff7b923f1aa135c594cc
+source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 100%
+source-wordcount: '925'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +20,13 @@ Per ottimizzare le prestazioni dei filtri GraphQL, è necessario eseguire una pr
 
 ## Prerequisiti {#prerequisites}
 
-Assicurati di disporre almeno della versione 2023.1.0 di AEM as a Cloud Service.
+Sono presenti prerequisiti per questa attività:
+
+1. Assicurati di disporre almeno della versione 2023.1.0 di AEM as a Cloud Service.
+
+1. Assicurati che l’utente che esegue l’attività disponga delle autorizzazioni necessarie:
+
+   * almeno `Deployment Manager` In Cloud Manager è richiesto il ruolo .
 
 ## Aggiornamento dei frammenti di contenuto {#updating-content-fragments}
 
@@ -119,7 +125,8 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60 (sec)
    >* Tempo approssimativo necessario per completare la migrazione = 60 + (20.000/1000 * 60) = 1260 sec = 21 minuti
-   >  I “60” secondi aggiuntivi aggiunti all’avvio sono dovuti al ritardo iniziale all’avvio del processo.
+      >  I “60” secondi aggiuntivi aggiunti all’avvio sono dovuti al ritardo iniziale all’avvio del processo.
+
    >
    >Tieni anche presente che questo è solo il tempo *minimo* necessario per completare il processo e non include il tempo di I/O. Il tempo effettivamente impiegato potrebbe essere notevolmente superiore a questa stima.
 
@@ -148,6 +155,44 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
          ...
          23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
+   I clienti che hanno abilitato l’accesso ai registri dell’ambiente utilizzando Splunk, possono utilizzare la query di esempio riportata di seguito per monitorare il processo di aggiornamento. Per informazioni dettagliate sull&#39;abilitazione della registrazione di Splunk, consulta [Debug di fase e produzione](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) pagina.
+
+   ```splunk
+   index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
+   (aem_tier=golden-publish OR aem_tier=author) | table _time aem_tier pod_name msg | sort -_time desc
+   ```
+
+   Dove:
+
+   * `environmentId` - un identificatore dell&#39;ambiente del cliente; ad esempio, `e1234`
+   * `indexName` - un nome di indice del cliente, raccolta `aemerror` events
+
+   Esempio di output:
+
+   <table style="table-layout:auto">
+     <thead>
+       <tr>
+       <th>_volta</th>
+       <th>aem_tier</th>
+       <th>pod_name</th>
+       <th>msg</th>
+       </tr>
+     </thead> 
+     <tbody>
+       <tr>
+         <td>2023-04-21 06:00:35.723</td>
+         <td>creazione</td>
+         <td>cm-p1234-e1234-aem-author-76d6dc4b79-8lsb5</td>
+         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.Upgrade Aggiornamento dei frammenti di contenuto processo completato in 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, stato: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Aggiornamento alla versione '1' completato.', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
+       </tr>
+       <tr>
+         <td>2023-04-21 06:05:48.207</td>
+         <td>golden-publish</td>
+         <td>cm-p1234-e1234-aem-golden-publish-644487c9c5-lvkv2</td>
+         <td>[sling-threadpool-284b9a-8454-461e-9bdb-44866c6dfb1-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade Aggiornamento dei frammenti di contenuto completato in 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f3394dfc_0, stato: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Aggiornamento alla versione '1' completato.', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
+       </tr>
+     </tbody>
+   <table>
 
 1. Disattiva la procedura di aggiornamento.
 
