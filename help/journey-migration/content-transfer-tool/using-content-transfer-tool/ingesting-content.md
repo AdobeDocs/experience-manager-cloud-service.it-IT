@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
 workflow-type: tm+mt
 source-wordcount: '1722'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -91,7 +91,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 >id="aemcloud_ctt_ingestion_topup"
 >title="Acquisizione integrativa"
 >abstract="Utilizza la funzione integrativa per spostare solo i contenuti modificati rispetto alla precedente attività di trasferimento dei contenuti. Al termine dell’acquisizione, verifica la presenza di eventuali errori o avvisi nei registri. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’Assistenza clienti di Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Visualizzazione dei registri"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=it" text="Visualizzazione dei registri"
 
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’*integrazione* di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
 

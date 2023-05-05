@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
->title="Avvia l&#39;app di esempio CodePen"
+>title="Avvia l’app di esempio CodePen"
 >abstract="Questa guida descrive come eseguire query sui dati JSON dall’ambiente di prova in un’app web JavaScript di base. Useremo i frammenti di contenuto che hai modellato e creato nei moduli di apprendimento precedenti, quindi ti preghiamo di consultare prima queste guide prima di passare a questo."
 
 >[!CONTEXTUALHELP]
