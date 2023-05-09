@@ -5,7 +5,7 @@ description: La revisione è un meccanismo che consente al revisore di eseguire 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 4%
@@ -29,8 +29,8 @@ Utilizzo della [Assegna passaggio](https://experienceleague.adobe.com/docs/exper
 1. Tocca ![settings_icon](assets/settings_icon.png) sulla barra delle azioni. La **[!UICONTROL Assegna attività]** viene visualizzata la finestra di dialogo .
 1. Apri [!UICONTROL Modulo e documento] scheda e apri [!UICONTROL Prepopolato] e specifica:
 
-* Seleziona file di dati di input tramite
-* Seleziona allegati di input tramite
+   * Seleziona file di dati di input tramite
+   * Seleziona allegati di input tramite
 
    ![Passaggio di revisione](/help/forms/assets/assigntask-review1.gif)
 

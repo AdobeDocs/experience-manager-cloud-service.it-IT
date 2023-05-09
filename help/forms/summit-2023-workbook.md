@@ -6,13 +6,13 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
 hidefromtoc: true
-source-git-commit: f65c5241e1e61e5a0bd9981778939caa313de76a
-workflow-type: ht
-source-wordcount: '3412'
+exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+workflow-type: tm+mt
+source-wordcount: '3360'
 ht-degree: 100%
 
 ---
-
 
 # Creare moduli efficaci utilizzando i componenti core e headless
 
@@ -60,8 +60,7 @@ In questa lezione imparerai a conoscere l’ambiente di AEM Forms as a Cloud Ser
 
 ### Esercizio
 
-1. Apri il browser e immetti l’URL dell’ambiente di authoring di Cloud Service. Ad esempio:
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. Apri il browser e immetti l’URL dell’ambiente di authoring di Cloud Service.
 
 1. Accedi all’ambiente di authoring di Cloud Service. Le credenziali di accesso per l’ambiente di authoring verranno condivise con te durante il laboratorio.
 
@@ -408,8 +407,8 @@ Verifichiamo l’esecuzione delle regole in questo modulo headless:
 
 Apporta le modifiche al modulo sul server come utente aziendale e visualizza le modifiche riprodotte automaticamente nel modulo headless.
 
-1. Apri l’interfaccia di gestione di AEM Forms nel browser. Ad esempio: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
-
+1. Apri l’interfaccia di gestione di AEM Forms nel browser.
+\
 1. Seleziona il modulo di **registrazione** e fai clic su **Modifica.** Il modulo viene aperto nell’editor di moduli adattivi.
 
    ![](/help/forms/assets/screenshot2028118529.png)
@@ -515,7 +514,7 @@ Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione d
 
 1. Imposta i seguenti valori per le variabili nel file .env. Dopo aver aggiornato le variabili, salva il file. Utilizza la combinazione di tasti **CTRL+S** per salvare il file.
 
-   * **AEM_URL**: specifica l’URL dell’ambiente di pubblicazione del cloud service. Ad esempio: [https://publish-p105303-e986623.adobeaemcloud.com](https://publish-p105303-e986623.adobeaemcloud.com/)
+   * **AEM_URL**: specifica l’URL dell’ambiente di pubblicazione del cloud service.
 
    * **AEM_FORM_PATH**: specifica il percorso del modulo adattivo creato nella lezione precedente. Ad esempio, /content/forms/af/registration/
 
@@ -642,12 +641,10 @@ Ora che hai imparato a creare i moduli adattivi e a distribuirli su più canali 
 
 * [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it)
 
-* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
+* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
 
 * [Aggiornare lo stile per moduli adattivi basati su componenti core](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=it)
 
 * [Moduli adattivi headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=it)
 
 * [Utilizzo dello starter kit Headless React](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=it)
-
-

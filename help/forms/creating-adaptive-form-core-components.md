@@ -1,20 +1,20 @@
 ---
-title: Come si crea un modulo adattivo?
+title: Come creare un modulo adattivo
 description: Scopri come creare un modulo adattivo utilizzando [!DNL Experience Manager Forms]. Adaptive Forms sono moduli HTML5 reattivi che semplificano la raccolta e l'elaborazione delle informazioni. Scopri come creare un modulo adattivo basato su un modello di dati modulo e su uno schema XML o JSON.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
+exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 2%
+source-wordcount: '1495'
+ht-degree: 7%
 
 ---
 
-
 # Creare un modulo adattivo (componenti core) {#creating-an-adaptive-form-core-components}
 
-I moduli adattivi consentono di creare moduli coinvolgenti e reattivi, che si rivelano, inoltre, dinamici e adattivi. AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. La procedura guidata consente di navigare a schede rapide per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per creare un modulo adattivo.
+La funzione Forms adattiva consente di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. La procedura guidata consente di navigare a schede rapide per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per creare un modulo adattivo.
 
 Prima di iniziare, scopri il tipo di componenti Forms disponibili:
 
@@ -29,7 +29,7 @@ Prima di iniziare, scopri il tipo di componenti Forms disponibili:
 
 Per creare un modulo adattivo è necessario quanto segue:
 
-* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: Quando crei un nuovo programma, i componenti core Forms adattivi sono già abilitati per il tuo ambiente. Se disponi di un ambiente as a Cloud Service Forms basato su Archetype 39 o versioni precedenti, [Abilitare i componenti core Forms adattivi per il tuo ambiente](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Quando abiliti i componenti core per il tuo ambiente, **Forms adattivo (componente core)** il tema modello e canvas viene aggiunto all’ambiente. Se la tua versione SDK AEM precedente alla 2023.02.0, [assicurati di `prerelease` flag abilitato nell’ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) in quanto i componenti core di Forms adattivi facevano parte della versione pre-release precedente alla versione 2023.02.0.
+* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: Quando crei un nuovo programma, i componenti core Forms adattivi sono già abilitati per il tuo ambiente. Se disponi di un ambiente Forms as a Cloud Service basato sull&#39;Archtipo 39 o versioni precedenti, vedi [Abilitare i componenti core dei moduli adattivi per il tuo ambiente](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Quando abiliti i componenti core per il tuo ambiente, vengono aggiunti il modello e l&#39;area di lavoro del **componente core moduli adattivi**. Se la tua versione dell’SDK di AEM è precedente alla 2023.02.0, [assicurati di aver abilitato il flag `prerelease` nel tuo ambiente ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features), poiché i componenti core dei moduli adattivi facevano parte della versione prerelease precedente alla versione 2023.02.0.
 
 * **Un modello di modulo adattivo**: Un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Dispone di componenti preformattati contenenti determinate proprietà e struttura del contenuto. Offre inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto e l’aspetto dell’azione di invio definisce l’azione da intraprendere in seguito all’invio di un Modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Il servizio cloud fornisce un modello OOTB denominato vuoto:
 

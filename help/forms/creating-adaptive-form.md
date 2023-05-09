@@ -1,21 +1,21 @@
 ---
-title: Come si crea un modulo adattivo?
+title: Come creare un Forms adattivo
 description: Scopri come creare un modulo adattivo utilizzando [!DNL Experience Manager Forms]. Adaptive Forms sono moduli HTML5 reattivi che semplificano la raccolta e l'elaborazione delle informazioni. Scopri come creare un modulo adattivo basato su un modello di dati modulo e su uno schema XML o JSON.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 4%
+source-wordcount: '1498'
+ht-degree: 3%
 
 ---
 
 # Creare un modulo adattivo (componenti di base) {#creating-an-adaptive-form}
 
 
-I moduli adattivi consentono di creare moduli coinvolgenti e reattivi, che si rivelano, inoltre, dinamici e adattivi. AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. La procedura guidata consente di navigare a schede rapide per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per creare un modulo adattivo.
+La funzione Forms adattiva consente di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce una procedura guidata aziendale intuitiva per creare rapidamente Adaptive Forms. La procedura guidata consente di navigare a schede rapide per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per creare un modulo adattivo.
 
 Prima di iniziare, scopri il tipo di componenti Forms disponibili:
 

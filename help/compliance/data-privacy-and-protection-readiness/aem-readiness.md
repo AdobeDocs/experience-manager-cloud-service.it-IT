@@ -2,10 +2,10 @@
 title: Normative sulla protezione dei dati e la privacy dei dati - Preparazione di Adobe Experience Manager as a Cloud Service
 description: Scopri il supporto di Adobe Experience Manager as a Cloud Service per le varie normative su privacy e protezione dei dati, incluso il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi all’implementazione di un nuovo progetto as a Cloud Service AEM.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 100%
+source-wordcount: '729'
+ht-degree: 98%
 
 ---
 
@@ -94,6 +94,6 @@ Consulta [Preparazione di AEM Sites per le normative su privacy e protezione dei
 Queste integrazioni di Adobe Experience Manager as a Cloud Service si riferiscono ai servizi di protezione dei dati e privacy pronti (ad esempio, GDPR). Nessun dato personale da Adobe Target o Adobe Analytics viene memorizzato in AEM in relazione alle integrazioni.
 Per ulteriori informazioni, consulta:
 
-* [Adobe Target - Panoramica sulla privacy](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html?lang=it)
+* [Adobe Target - Panoramica sulla privacy](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
 
 * [Flusso di lavoro sulla privacy dei dati di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=it)
