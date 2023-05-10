@@ -3,9 +3,9 @@ title: Introduzione ai programmi di produzione
 description: Scopri che cosa sono i programmi di produzione e suggerimenti su come configurarli.
 exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 source-git-commit: d1b6ef646dd41ce48da37dc1fa99c374d3d231b1
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '446'
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ Nella tabella seguente sono descritti gli scenari comuni delle soluzioni disponi
 
 | Soluzioni disponibili | Opzioni del programma | Contenuto | Applicazione consigliata | Esempi |
 |---------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1 soluzione Sites | Creazione di 1 programma solo Sites | 1 ambiente produzione + 1 ambiente di staging, 1 ambiente di sviluppo, 1 Sviluppo rapido | N/D | N/D |
-| 1 soluzione Assets | Creazione di 1 programma solo Assets | 1 ambiente produzione + 1 ambiente di staging, 1 ambiente di sviluppo, 1 Sviluppo rapido | N/D | N/D |
+| 1 Soluzione Sites | Creazione di 1 programma solo Sites | 1 ambiente produzione + 1 ambiente di staging, 1 ambiente di sviluppo, 1 Sviluppo rapido | N/D | N/D |
+| 1 Soluzione Assets | Creazione di 1 programma solo Assets | 1 ambiente produzione + 1 ambiente di staging, 1 ambiente di sviluppo, 1 Sviluppo rapido | N/D | N/D |
 | 1 Sites + 1 Assets | Creazione di un solo programma: <br>1 programma Sites &amp; Assets | 1 ambiente produzione + 1 ambiente di staging, 2 ambienti di sviluppo, 2 Sviluppo rapido | Quando la maggior parte delle risorse digitali viene utilizzata per supportare l’implementazione di Sites.<br>In questi casi, la maggior parte delle risorse digitali è in uno stato completato, pronta per essere utilizzata nelle esperienze cross-channel tramite Sites.<br>In genere la responsabilità della gestione dei contenuti per Sites e per Assets è affidata a un unico team. | Immagini utilizzate principalmente per un sito web.<br>PDF che verranno distribuiti tramite un portale interno integrato in AEM Sites. |
 | 1 Sites + 1 Assets | Creazione di programmi separati:<br>1 programma solo Sites e 1 programma solo Assets | 1 Produzione + 1 fase, 1 sviluppo, 1 sviluppo rapido<br>1 Produzione + 1 fase, 1 sviluppo, 1 sviluppo rapido | Quando molte risorse digitali non supportano direttamente l’implementazione di Sites.<br> In questi casi le risorse presentano diversi stati, compresi i tipi di file RAW e i processi in corso.<br>Un team creativo dedicato gestisce le risorse digitali durante il loro ciclo di vita e prevede flussi di lavoro e cicli di rilascio separati rispetto al team di gestione dei contenuti di Sites. | Le immagini RAW di un servizio fotografico vengono archiviate nel programma Assets e solo poche selezionate verranno utilizzate nell’implementazione di Sites.<br>Molti tipi di file di Creative Cloud, come i file di Photoshop e Illustrator, vengono gestiti in AEM Assets e seguono un proprio flusso di lavoro di approvazione prima della generazione di una risorsa completata.<br>In questi casi, considera l’utilizzo delle [risorse collegate](/help/assets/use-assets-across-connected-assets-instances.md#overview-of-connected-assets). |
 | 1 Sites + 1 Sites | Creazione di programmi separati:<br>1 programma solo Sites e 1 programma solo Sites | 1 Produzione + 1 fase, 1 sviluppo, 1 sviluppo rapido<br>1 Produzione + 1 fase, 1 sviluppo, 1 sviluppo rapido | Per le implementazioni di Sites multi-tenant.<br>In questi casi, è necessario gestire più soluzioni Sites con una propria pianificazione delle versioni e team dedicati di sviluppo e contenuti. | Due marchi di vendita al dettaglio con siti web dedicati e team di sviluppo separati |
