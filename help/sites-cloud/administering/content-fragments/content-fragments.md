@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2058'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -261,7 +261,7 @@ Contenuto intermedio:
 
 >[!CAUTION]
 >
->Il contenuto intermedio è contenuto di pagina. Non viene memorizzato nel frammento di contenuto.
+>Il contenuto intermedio è il contenuto della pagina. Non viene memorizzato nel frammento di contenuto.
 
 ### Elementi necessari per i frammenti {#required-by-fragments}
 
