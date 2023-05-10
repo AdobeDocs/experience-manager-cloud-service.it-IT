@@ -1,36 +1,36 @@
 ---
-title: Considerazioni AEM sulla sicurezza as a Cloud Service
-description: Scopri importanti considerazioni sulla sicurezza quando utilizzi AEM as a Cloud Service
+title: Considerazioni sulla sicurezza di AEM as a Cloud Service
+description: Informazioni sulle considerazioni importanti relative alla sicurezza durante l’utilizzo di AEM as a Cloud Service
 hidefromtoc: true
 hide: true
 source-git-commit: 39ffd826f5d1e9cea2e6a03a74f39c16647b45fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Considerazioni AEM sulla sicurezza as a Cloud Service {#security-considerations}
+# Considerazioni sulla sicurezza di AEM as a Cloud Service {#security-considerations}
 
-## AEM Trust Store {#aem-trust-store}
+## TrustStore in AEM {#aem-trust-store}
 
-Per supportare operazioni di crittografia asimmetriche, AEM memorizza i certificati all’interno dell’archivio dei contenuti in un trust-store globale. I contenuti sono pubblici e, per impostazione predefinita, sono accessibili in modo anonimo da tutti gli utenti delle istanze degli editori.
+Per supportare operazioni di crittografia asimmetriche, AEM memorizza i certificati all’interno dell’archivio dei contenuti in un TrustStore globale. I contenuti sono pubblici e, per impostazione predefinita, accessibili in modo anonimo da tutti gli utenti delle istanze degli editori.
 
-### Caratteristiche del Trust Store {#truststore-characteristics}
+### Caratteristiche del TrustStore {#truststore-characteristics}
 
-* Il trust-store si trova qui sotto `/etc/truststore` è costituito da un file keystore Java, la password del keystore e i metadati del repository. Tieni presente che sia la password che l’archivio chiavi sono crittografati per motivi tecnici, anche se i certificati contenuti sono accessibili a tutti per impostazione predefinita tramite l’API
-* I certificati vengono utilizzati solo per il supporto HTTPS e SAML e l’archivio deve essere creato manualmente per primo
-* I clienti possono utilizzarli nel proprio codice tramite [API keystore](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
-* L’archivio dati attendibili può essere gestito tramite l’interfaccia utente di **Strumenti** - **Sicurezza** - **Archiviazione attendibile** o tramite l&#39;accesso *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, come illustrato di seguito:
+* Il TrustStore si trova sotto `/etc/truststore` ed è costituito da un file Java KeyStore, dalla password dell’archivio chiavi e dai metadati dell’archivio. Tieni presente che sia la password che l’archivio chiavi sono crittografati per motivi tecnici, anche se i certificati contenuti sono accessibili a tutti per impostazione predefinita tramite l’API
+* I certificati preconfigurati vengono utilizzati solo per il supporto HTTPS e SAML e l’archivio deve essere creato manualmente prima
+* I clienti possono utilizzarlo nel proprio codice tramite l’[API dell’archivio chiavi](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
+* Il TrustStore può essere gestito tramite l’interfaccia utente in **Strumenti** - **Sicurezza** - **TrustStore** o tramite l’accesso a *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, come illustrato di seguito:
 
-   ![Gestione dell&#39;archivio fonti attendibili](/help/security/assets/global-trust-store-modified.png)
+   ![Gestione del TrustStore](/help/security/assets/global-trust-store-modified.png)
 
-* L&#39;accesso all&#39;archivio dati attendibili può essere ulteriormente limitato dal controllo dell&#39;accesso all&#39;archivio, a seconda del caso d&#39;uso.
+* L’accesso al TrustStore può essere ulteriormente limitato dal controllo dell’accesso all’archivio, a seconda del caso d’uso.
 
 >[!NOTE]
 >
->L&#39;Adobe consiglia di utilizzare i controlli di accesso predefiniti per l&#39;archivio fonti attendibili, il che significa che l&#39;accesso rimane accessibile al pubblico. Per la configurazione più sicura, puoi utilizzare un criterio di negazione jcr:all per tutti.
+>Adobe consiglia di utilizzare i controlli di accesso predefiniti per il TrustStore, il che significa che rimane pubblicamente accessibile. Per ottenere la configurazione più sicura, puoi utilizzare un criterio di rifiuto jcr:all per tutti.
 
 <!--
 Commenting out section for now as requested by Lars
