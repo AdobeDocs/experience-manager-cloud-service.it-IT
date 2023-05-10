@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
 workflow-type: tm+mt
 source-wordcount: '2238'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -47,7 +47,7 @@ In questa sezione vengono descritti i passaggi necessari per configurare i test 
       >
       >Se l’archivio è stato creato prima della creazione automatica delle cartelle `it.tests` di Cloud Manager, puoi anche generare la versione più recente utilizzando l’[archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
-   * Per Java e WebDriver, utilizza il codice di esempio dell’[archivio dei test di prova di AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * Per Java e WebDriver, utilizza il codice di esempio dell’[Archivio dei test di prova di AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Per altri linguaggi di programmazione, consulta la sezione [Creazione dei test dell’interfaccia utente](#building-ui-tests) di questo documento per configurare il progetto di test.
 
@@ -257,7 +257,7 @@ Puoi utilizzare le funzioni di assistenza per creare screenshot tramite i test.
 * JavaScript: [comando takeScreenshot](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Comandi](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Se durante un’esecuzione di un test dell’interfaccia utente viene creato un archivio dei risultati del test, puoi scaricarlo da Cloud Manager utilizzando `Download Details` sotto [**Test personalizzati dell&#39;interfaccia utente** step](/help/implementing/cloud-manager/deploy-code.md).
+Se durante l’esecuzione di un test dell’interfaccia utente viene creato un archivio dei risultati del test, puoi scaricarlo da Cloud Manager utilizzando il pulsante `Download Details` sotto il passaggio ](/help/implementing/cloud-manager/deploy-code.md) [**Test interfaccia utente personalizzato**.
 
 ### Caricamento dei file {#upload-files}
 

@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -65,9 +65,10 @@ Nella console puoi osservare tre aree principali:
             * Aprire il frammento appropriato nell’editor
             * Mostrare informazioni sui riferimenti
             * Mostrare informazioni sulle versioni linguistiche del frammento
-      * Se si utilizza il mouse sulle intestazioni di colonna, verrà visualizzato un selettore di azioni a discesa e un cursore di larghezza. che consentono di:
-         * Ordina: seleziona l’azione appropriata per crescente o decrescente. In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ordinamento è disponibile solo nelle colonne appropriate.
-         * Ridimensionare la colonna utilizzando i cursori dell’azione o della larghezza
+      * Se utilizzi il passaggio del mouse sulle intestazioni della colonna, verranno visualizzati un selettore di azioni a discesa e cursori di larghezza che ti consentono di:
+         * Ordinare: selezionando l’azione appropriata per ordine crescente o decrescente. 
+In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ordinamento è disponibile solo nelle colonne appropriate.
+         * Ridimensiona la colonna: utilizzando i cursori di azione o di larghezza
 
 ## Azioni {#actions}
 
@@ -170,17 +171,17 @@ Il pannello Filtro offre:
 
 ### Filtro rapido {#fast-filtering}
 
-Puoi anche selezionare un predicato facendo clic su un valore di colonna specifico nell’elenco. Puoi selezionare uno o più valori da combinare predicati.
+Puoi anche selezionare un predicato facendo clic su un valore di colonna specifico nell’elenco. Puoi selezionare uno o più valori per combinare i predicati.
 
-Ad esempio, seleziona **Pubblicato** in **Stato** colonna:
+Ad esempio, seleziona **Pubblicato** nella colonna **Stato**:
 
 >[!NOTE]
 >
->Il filtro rapido è supportato solo per **Modello**, **Stato**, **Modificato da** e **Pubblicato da** colonne.
+>Il filtro rapido è supportato solo per le colonne **Modello**, **Stato**, **Modificato da** e **Pubblicato da**.
 
 ![Console Frammenti di contenuto - Filtro](assets/cfc-console-fast-filter-01.png)
 
-Una volta selezionato, questo verrà visualizzato come un predicato filtro e l’elenco verrà filtrato di conseguenza:
+Una volta selezionato, questo verrà visualizzato come un predicato del filtro e l’elenco verrà filtrato di conseguenza:
 
 ![Console Frammenti di contenuto - Filtro](assets/cfc-console-fast-filter-02.png)
 

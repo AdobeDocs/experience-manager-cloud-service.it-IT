@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
 workflow-type: tm+mt
 source-wordcount: '4066'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -147,7 +147,7 @@ ht-degree: 98%
    + [Supporto IMS per AEM as a Cloud Service](/help/security/ims-support.md)
    + [Supporto per i cookie dello stesso sito per AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Supporto OAuth2 per il servizio di posta](/help/security/oauth2-support-for-mail-service.md)
-   + [Considerazioni AEM sulla sicurezza as a Cloud Service](/help/security/security-considerations.md)
+   + [Considerazioni sulla sicurezza di AEM as a Cloud Service](/help/security/security-considerations.md)
 + Onboarding {#onboarding}
    + [Inizia qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=it)
    + Percorso di onboarding {#journey}
@@ -179,7 +179,7 @@ ht-degree: 98%
       + [Creare la struttura del contenuto per l’app](/help/trials/headless/content-structure.md)
       + [Creare contenuti headless](/help/trials/headless/create-content.md)
       + [Estrarre contenuti utilizzando l’API GraphQL](/help/trials/headless/extract-content.md)
-      + [Recuperare il contenuto JSON con JavaScript](/help/trials/headless/code-playground.md)
+      + [Recuperare contenuti JSON con JavaScript](/help/trials/headless/code-playground.md)
 + Percorso di migrazione ad AEM as a Cloud Service {#migration-journey}
    + [Guida introduttiva di AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase di preparazione](/help/journey-migration/readiness.md)
@@ -556,7 +556,7 @@ ht-degree: 98%
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Introduzione all’authoring di moduli adattivi](/help/forms/introduction-forms-authoring.md)
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form.md)
-            + [Temi di riferimento, modelli e modelli di dati](/help/forms/reference-themes-templates-data-models.md)
+            + [Temi, modelli e modelli di dati di riferimento](/help/forms/reference-themes-templates-data-models.md)
             + [Creare un modello](/help/forms/template-editor.md)
             + [Creare un tema](/help/forms/themes.md)
             + [Progettazione di uno schema JSON per un modulo adattivo](/help/forms/adaptive-form-json-schema-form-model.md)
