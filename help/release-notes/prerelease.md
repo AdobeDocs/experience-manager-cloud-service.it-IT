@@ -3,9 +3,9 @@ title: Canale prerelease Adobe Experience Manager as a Cloud Service
 description: Scopri come utilizzare il canale prerelease per ottenere un’anteprima delle prossime funzionalità su AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1311'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,22 +16,22 @@ Scopri come utilizzare il canale prerelease per ottenere un’anteprima delle pr
 
 ## Introduzione {#introduction}
 
-Adobe Experience Manager as a Cloud Service offre nuove funzionalità su cadenza regolare, secondo [Roadmap dei rilasci di Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it#aem-as-cloud-service)
+Adobe Experience Manager as a Cloud Service offre nuove funzionalità su cadenza mensile, secondo la [road map di versioni di Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it#aem-as-cloud-service)
 
-Per acquisire familiarità con le funzioni pianificate per la pubblicazione della seguente versione delle funzioni, puoi abbonarti al canale prerelease, accessibile configurando gli ambienti di sviluppo o qualsiasi ambiente sandbox. Puoi visualizzare in anteprima le modifiche accessibili tramite l’interfaccia utente AEM e generare codice rispetto a qualsiasi nuova API prerelease.
+Per acquisire familiarità con le funzioni programmate per andare in diretta la versione funzionale successiva, i clienti possono abbonarsi al canale prerelease, che è accessibile configurando gli ambienti di sviluppo o qualsiasi ambiente sandbox. Puoi visualizzare in anteprima le modifiche accessibili tramite l’interfaccia utente AEM e generare il codice rispetto a qualsiasi nuova API prerelease.
 
-L’elenco delle funzioni prerelease per una determinata versione di funzioni è pubblicato all’interno di [note sulla versione.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+L’elenco delle funzioni prerelease per una data funzione è pubblicato all’interno di [note sulla versione.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## Versioni di AEM as a Cloud Service {#releases}
 
 AEM as a Cloud Service dispone di due tipi di versioni.
 
-* **Versioni future** aggiungi funzionalità e funzionalità a AEM as a Cloud Service, al momento dell&#39;attivazione
-* **Versioni di manutenzione** aggiungi aggiornamenti di sicurezza, miglioramenti delle prestazioni e correzioni di bug e vengono applicati su base regolare e frequente.
+* Una volta attivate, le **versioni funzionali** aggiungono funzionalità ad AEM as a Cloud Service
+* Le **versioni di manutenzione** aggiungono aggiornamenti di sicurezza, miglioramenti delle prestazioni e correzioni di bug e vengono applicate su base periodica e frequente.
 
 Questo modello garantisce versioni continue senza interruzioni del servizio.
 
-Il canale prerelease consente di visualizzare in anteprima le funzioni pianificate per la prossima versione delle funzioni, al fine di valutare le funzionalità in arrivo e pianificare la sua eventuale implementazione per i progetti personalizzati. Consente di pianificare in anticipo la prossima versione delle funzioni.
+Il canale prerelease consente di visualizzare in anteprima le funzioni pianificate per la prossima versione funzionale, al fine di valutare le funzionalità in arrivo e pianificare la loro eventuale implementazione per i progetti. Consente di pianificare in anticipo la prossima versione funzionale.
 
 Ad esempio, se è maggio e sei abbonato al canale prerelease, puoi valutare le funzioni della prossima versione di giugno.
 
@@ -48,7 +48,7 @@ Sfruttare efficacemente il canale prerelease richiede quattro passaggi.
 
 ## Contrassegnare i calendari {#mark-calendars}
 
-Le versioni con funzioni sono pianificate con largo anticipo e le date di attivazione della funzione vengono pubblicate il giorno [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it#aem-as-cloud-service)
+Le versioni funzionali sono pianificate con largo anticipo e le rispettive date di attivazione sono pubblicate su [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it#aem-as-cloud-service)
 
 Prendi nota delle date di rilascio per pianificare il tempo necessario per rivedere e testare le prossime funzioni.
 
