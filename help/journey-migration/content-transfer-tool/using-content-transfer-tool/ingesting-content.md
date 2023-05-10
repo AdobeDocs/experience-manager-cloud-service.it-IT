@@ -2,9 +2,9 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
+source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1753'
 ht-degree: 12%
 
 ---
@@ -59,7 +59,9 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Una volta completata l’acquisizione, fai clic sul pulsante (i) nell’angolo in alto a destra dello schermo per ottenere ulteriori informazioni sul processo di acquisizione.
+1. Fai clic su **i)** pulsante nella riga per ottenere ulteriori informazioni sul processo di acquisizione. Puoi visualizzare la durata di ogni passaggio dell’acquisizione quando viene eseguito o completato facendo clic su **...** e poi **Visualizza durate**. Le informazioni provenienti dall’estrazione vengono anche mostrate per comprendere cosa viene acquisito.
+
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 

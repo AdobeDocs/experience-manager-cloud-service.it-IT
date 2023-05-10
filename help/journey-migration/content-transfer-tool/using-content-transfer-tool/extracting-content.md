@@ -2,10 +2,10 @@
 title: Estrazione del contenuto dall’origine
 description: Estrazione del contenuto dall’origine
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 29%
+source-wordcount: '701'
+ht-degree: 27%
 
 ---
 
@@ -49,13 +49,13 @@ Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferiment
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   Puoi anche monitorare lo stato di avanzamento della fase di estrazione da Cloud Acceleration Manager visitando la pagina Content Transfer (Trasferimento contenuti).
+   Puoi anche monitorare lo stato di avanzamento della fase di estrazione da Cloud Acceleration Manager visitando la pagina Content Transfer (Trasferimento contenuti) e visualizzarla più dettagliatamente facendo clic su **...** e poi **Visualizza dettagli**.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. Una volta completata l’estrazione, controlla le altre colonne come **Origine** e **Percorsi** per i dettagli del set di migrazione compilato facendo clic su **...** e poi **Visualizza dettagli**.
+1. Una volta completata l’estrazione, controlla le altre colonne come **Origine** e **Percorsi** per i dettagli del set di migrazione compilato facendo clic su **...** e poi **Visualizza dettagli** per visualizzare i dettagli, inclusa la durata di ciascuna fase dell’estrazione. Visualizza questa finestra di dialogo durante l’estrazione per vedere come procedono i passaggi.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
 ## Estrazione integrativa {#top-up-extraction-process}

@@ -2,9 +2,9 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1406'
 ht-degree: 22%
 
 ---
@@ -91,6 +91,10 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
    Verrà visualizzata la seguente finestra di dialogo. Un set di migrazione scadrà dopo un periodo prolungato di inattività. Dopo aver visualizzato gli avvisi sulla scheda del progetto e sulle righe della tabella dei processi di migrazione per un periodo di tempo, il set di migrazione scadrà e i relativi dati non saranno più disponibili. Revisione [Scadenza set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) per i dettagli.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+
+   >[!NOTE]
+   >
+   >Il nome deve seguire le stesse convenzioni di un nodo AEM, pertanto non può contenere nessuno dei seguenti caratteri: . / : [ ] | *
 
 1. Ora puoi visualizzare l’elenco delle migrazioni nella vista a elenco. Fai clic sul simbolo dei tre punti (**...**) per aprire il menu a discesa e fare clic su **Copia chiave di estrazione**. Questa chiave sarà necessaria durante la fase di estrazione. Copia questa chiave di estrazione.
 
