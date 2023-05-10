@@ -3,9 +3,9 @@ title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redigere e utilizzare contenuti indipendenti dalla pagina.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 7ce05d282d553c5552cd828d08aaf6b7b5fb4e05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1227'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 65%
 
 I frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/sites-cloud/administering/content-fragments/content-fragments.md).
 
-Consentono di creare contenuti neutri per il canale, insieme a varianti (eventualmente specifiche per il canale). Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
+I frammenti di contenuto consentono di creare contenuto utilizzabile in qualsiasi canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
 Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite Content Services a canali diversi dalle pagine AEM.
 
@@ -33,29 +33,29 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 
 I frammenti di contenuto consentono:
 
-* **Strategia di marketing e campagne**
-   * Revisione dei contenuti tramite frammenti di contenuto gestiti a livello centrale.
+* La **Strategia di marketing e campagne**
+   * La revisione dei contenuti tramite frammenti di contenuto gestiti a livello centrale.
 * **Creative Pro**
-   * Tracciamento delle risorse creative tramite raccolte associate ai frammenti di contenuto.
-* **Scrittori copia**
+   * Il tracciamento delle risorse creative tramite raccolte associate a frammenti di contenuto.
+* **Copywriter**
    * Creazione di contenuti nell’editor frammento di contenuto di AEM.
-   * Può creare varianti di contenuto.
-   * Può associare contenuti rilevanti al frammento di contenuto.
-   * Può utilizzare il controllo delle versioni/flusso di lavoro.
-   * Può condividere frammento di contenuto.
-   * Gestione centralizzata delle traduzioni.
-* **Produttori e Percorsi**
-   * Selezione di frammenti e varianti predefiniti con authoring in AEM.
-   * Può contare sul fatto che frammenti e contenuti associati siano sempre aggiornati, in quanto autori e creativi di copie possono eseguire gli aggiornamenti in frammenti e risorse gestiti a livello centrale.
-   * Può contare sul fatto che i contenuti multimediali associati siano curati per la loro rilevanza.
-   * È in grado di creare al volo varianti di contenuto ad hoc, garantendo al contempo che tali varianti rimangano gestite a livello centrale nel frammento.
+   * Possono creare varianti del contenuto.
+   * Possono associare contenuti rilevanti ai frammenti di contenuto.
+   * Possono utilizzare il controllo delle versioni/flusso di lavoro.
+   * Possono condividere dei frammenti di contenuto.
+   * Possono gestire le traduzioni a livello centrale.
+* **Produttori e responsabili dei percorsi**
+   * Scelta di frammenti e varianti predefiniti con l’authoring in AEM.
+   * Possono contare sul fatto che il frammento e il contenuto associato ad esso sono sempre aggiornati, poiché i copywriter e i creativi effettuano gli aggiornamenti su frammenti e risorse gestiti a livello centrale.
+   * Possono contare sul fatto che i contenuti multimediali associati sono sempre curati in base alla rilevanza.
+   * Possono creare all’istante varianti di contenuto ad hoc garantendo che queste restino comunque gestite a livello centrale nel frammento.
 
 ## Aggiunta di un frammento di contenuto alla pagina  {#adding-a-content-fragment-to-your-page}
 
 1. Apri la pagina per la modifica.
 2. Aggiungi il componente **Frammento di contenuto** dal browser **Componenti** o mediante il comando **Inserisci nuovo componente**.
 3. Puoi effettuare le seguenti operazioni:
-   * Apri il browser **Risorse** e applica il filtro **Frammenti di contenuto** (l’impostazione predefinita è Immagini). Quindi trascina il frammento desiderato sull’istanza del componente.
+   * Apri il browser **Risorse** e applica il filtro **Frammenti di contenuto** (l’impostazione predefinita è Immagini). Poi trascina il frammento desiderato sull’istanza del componente.
    * Seleziona il componente del frammento di contenuto, quindi **Configura** dalla barra degli strumenti. Nella finestra di dialogo, apri la finestra di dialogo di selezione per individuare e selezionare il **frammento di contenuto** richiesto.
 
    >[!NOTE]
@@ -68,7 +68,7 @@ I frammenti di contenuto consentono:
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni su ulteriori funzionalità di modifica, consulta anche:
+   >Per informazioni su ulteriori funzionalità di modifica, consulta anche:
    >
    >* [Layout dinamico](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md)
@@ -114,19 +114,19 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 
 ### Aggiunta di contenuto intermedio  {#adding-in-between-content}
 
-Quando un frammento di contenuto specifico viene aggiunto alla pagina, è disponibile un **Trascina qui i componenti** segnaposto tra ciascun paragrafo di HTML (e in alto/in basso) del frammento.
+Quando un frammento di contenuto specifico viene aggiunto alla pagina, è disponibile un segnaposto **Trascina qui i componenti** tra ciascun paragrafo HTML (e nella parte superiore/inferiore) del frammento.
 
-Questo consente di aggiungere ulteriori contenuti [intermedio (ovvero contenuto intermedio)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) il contenuto del frammento (nei punti disponibili), senza dover modificare il frammento principale.
+Questo consente di aggiungere ulteriori contenuti [in mezzo (ovvero contenuto intermedio)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) al contenuto del frammento (nei punti disponibili), senza dover modificare il frammento principale.
 
 Per il contenuto intermedio è possibile:
 
-* Aggiungi componenti dal [Browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
-* Aggiungi risorse da [Browser risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
-* Usare [Contenuto associato](#using-associated-content) come origine per il contenuto intermedio.
+* aggiungere componenti dal [browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
+* aggiungere risorse dal [bowser Risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
+* usare [Contenuto associato](#using-associated-content) come origine per il contenuto intermedio.
 
 >[!CAUTION]
 >
->Il contenuto intermedio è contenuto di pagina. Non viene memorizzato nel frammento di contenuto.
+>Il contenuto intermedio è il contenuto della pagina. Non viene memorizzato nel frammento di contenuto.
 
 ![Inserisci componente](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
@@ -158,7 +158,7 @@ Se hai [associato del contenuto](/help/sites-cloud/administering/content-fragmen
 
 >[!NOTE]
 >
->Se sulla stessa pagina sono presenti più frammenti di contenuto, la funzione **Contenuto associato** vengono visualizzate le risorse appropriate per tutti i frammenti.
+>Se sulla stessa pagina sono presenti più frammenti di contenuto, la scheda **Contenuto associato** mostrerà le risorse appropriate per tutti i frammenti.
 
 Una volta aggiunto alla pagina un frammento con contenuto associato, nel pannello laterale viene aperta una nuova scheda (**Contenuto associato**).
 
@@ -177,7 +177,7 @@ Ad esempio, per un’immagine è possibile:
 * Specifica una dimensione.
 * Puoi anche configurare il layout.
 
-Altre modifiche, ad esempio spostamento, copia, eliminazione, devono essere effettuate nell’editor frammenti.
+Altre modifiche, ad esempio sposta, copia ed elimina devono essere effettuate nell’editor frammenti.
 
 ### Pubblicazione {#publishing}
 
