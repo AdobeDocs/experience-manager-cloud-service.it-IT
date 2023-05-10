@@ -3,9 +3,9 @@ title: Differenze e novità - Adobe Experience Manager as a Cloud Service
 description: Differenze e novità - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1903'
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Questo approccio consente la scalabilità automatica in base alle esigenze di di
 
 ## Aggiornamenti AEM {#aem-updates}
 
-AEM as a Cloud Service ora utilizza un approccio CI/CD (Continuous Integration/Continuous Delivery, integrazione continua e distribuzione continua), affinché tu possa lavorare sempre sui tuoi progetti con la versione più recente di AEM. Ciò significa che le istanze di produzione e di staging vengono aggiornate alla versione più recente AEM senza alcuna interruzione del servizio per gli utenti.
+AEM as a Cloud Service ora utilizza un approccio CI/CD (Continuous Integration/Continuous Delivery, integrazione continua e distribuzione continua), affinché tu possa lavorare sempre sui tuoi progetti con la versione più recente di AEM. Ciò significa che le istanze di produzione e staging vengono aggiornate alla versione più recente di AEM senza alcuna interruzione del servizio per gli utenti.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ L’avvio e la gestione di un progetto AEM è semplice quando si utilizza AEM as
 
 È anche molto diverso in quanto ora esiste:
 
-* una fase di valutazione per garantire il rispetto di tutti i requisiti preliminari, compresi, ad esempio:
+* Una fase di valutazione per garantire il rispetto di tutti i requisiti preliminari, compresi, ad esempio:
 
    * Requisiti legali
 
@@ -232,7 +232,7 @@ A tal fine è necessario utilizzare [Adobe Admin Console](https://helpx.adobe.co
 
 Questo combina i vantaggi dell’
 
-* utilizzo di Adobe Identity Management System (IMS) per fornire l’accesso singolo per tutte le applicazioni cloud di Adobe.
+* Utilizzo di Adobe Identity Management System (IMS) per fornire l’accesso singolo per tutte le applicazioni cloud di Adobe.
 
 * Preferenze utente che rimangono locali per ogni particolare istanza di AEM as a Cloud Service.
 
