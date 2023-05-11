@@ -3,10 +3,10 @@ title: Centro notifiche
 description: Sfruttare il Centro notifiche per intervenire opportunamente su problemi e altre informazioni importanti
 hidefromtoc: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: b72d22e8788c04ab4faa3616a4a0ce5e6d8ce991
+source-git-commit: 283493187142e1aeaaf272818bb9b7921841ed67
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 36%
+source-wordcount: '810'
+ht-degree: 35%
 
 ---
 
@@ -37,7 +37,9 @@ Dal Centro notifiche è possibile selezionare un programma e un ambiente specifi
 Per configurare la ricezione delle notifiche, effettua le seguenti operazioni:
 
 1. Crea i seguenti profili di prodotto, come descritto [nel presente articolo](/help/journey-onboarding/notification-profiles.md), inoltre assegna a tali profili gli ID Adobe appropriati dalla tua organizzazione. Questo consente all’amministratore di determinare quali utenti si qualificano per ricevere queste notifiche.
-1. Ogni utente assegnato assegnato nel passaggio precedente può configurare come desidera ricevere le notifiche. Sulla [Pagina delle preferenze di Experience Cloud](https://experience.adobe.com/preferences/notification-section), assicurati che l’abbonamento Experience Manager sia abilitato e che l’ **Incidenti operativi** e **Raccomandazioni proattive** le caselle di controllo sono selezionate. Inoltre, si consiglia di impostare la sezione E-mail su **Notifiche istantanee** pertanto, le notifiche vengono ricevute immediatamente quando si verifica un incidente.
+1. Ogni utente assegnato assegnato nel passaggio precedente può configurare come desidera ricevere le notifiche. Sulla [Pagina delle preferenze di Experience Cloud](https://experience.adobe.com/preferences/notification-section), assicurati che l’abbonamento Experience Manager sia abilitato e che l’ **Incidenti operativi** e **Raccomandazioni proattive** le caselle di controllo sono selezionate per le colonne in-app e e-mail (vedi immagine qui sotto). Inoltre, si consiglia di impostare la sezione E-mail su **Notifiche istantanee** pertanto, le notifiche vengono ricevute immediatamente quando si verifica un incidente.
+
+![Configurazione sottoscrizioni](/help/operations/assets/configure-subscriptions.png)
 
 >[!NOTE]
 >Le notifiche funzionano a livello di organizzazione, in modo che gli abbonati ricevano notifiche per tutti i programmi e gli ambienti all’interno di tali programmi.
