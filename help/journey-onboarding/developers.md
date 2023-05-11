@@ -4,10 +4,10 @@ description: Quando l’amministratore di sistema ha configurato le risorse clou
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 100%
+source-wordcount: '1419'
+ht-degree: 98%
 
 ---
 
@@ -143,6 +143,8 @@ Se ti interessa scoprire come accedere e utilizzare AEM as a Cloud Service come 
 >Ora che hai completato l’onboarding, [scopri come aggiungere facilmente il componente aggiuntivo AEM Reference Demos](/help/journey-sites/demos-add-on/overview.md) a un ambiente sandbox con una configurazione di AEM minima e come testare le potenti funzioni di AEM con esempi dettagliati basati sulle best practice.
 
 ## Risorse aggiuntive {#additional-resources}
+
+Di seguito sono riportate ulteriori risorse facoltative, se desideri andare oltre il contenuto del percorso di onboarding.
 
 * [Accesso agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md): scopri come accedere e gestire l’archivio Git con la gestione self-service dell’account Git di Cloud Manager.
 * [Utilizzo di Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md): scopri come utilizzare gli archivi Git di Cloud Manager e come integrare un archivio Git personalizzato e gestito dal cliente on-premise con Cloud Manager.

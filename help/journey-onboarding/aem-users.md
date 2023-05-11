@@ -4,10 +4,10 @@ description: Dopo che l’amministratore di sistema ha configurato le risorse cl
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 96%
 
 ---
 
@@ -80,6 +80,8 @@ Se ti interessa scoprire in che modo sviluppatori e responsabili dell’implemen
 >Ora che hai completato l’onboarding, [scopri come aggiungere facilmente il componente aggiuntivo AEM Reference Demos](/help/journey-sites/demos-add-on/overview.md) a un ambiente sandbox con una configurazione di AEM minima e come testare le potenti funzioni di AEM con esempi dettagliati basati sulle best practice.
 
 ## Risorse aggiuntive {#additional-resources}
+
+Di seguito sono riportate ulteriori risorse facoltative, se desideri andare oltre il contenuto del percorso di onboarding.
 
 [Guida rapida alle pagine di authoring](/help/sites-cloud/authoring/getting-started/quick-start.md): inizia qui per accedere a una breve panoramica sui concetti fondamentali dell’authoring dei contenuti in AEM.
 [Percorso di authoring dei contenuti headless](/help/journey-headless/author/overview.md): segui questa introduzione guidata per l’authoring dei contenuti headless.

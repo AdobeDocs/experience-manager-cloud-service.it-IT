@@ -2,10 +2,10 @@
 title: Introduzione al percorso di onboarding di AEM as a Cloud Service
 description: Inizia qui per una panoramica del percorso guidato nel processo di onboarding di AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1228'
+ht-degree: 95%
 
 ---
 
@@ -95,3 +95,9 @@ Ora puoi iniziare il percorso di onboarding di AEM as a Cloud Service. Ti inviti
 I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti dei clienti.
 
 Se desideri conoscere i consigli di Adobe su come procedere all’onboarding del team nella nuova applicazione AEM as a Cloud Service, inizia da qui.
+
+## Risorse aggiuntive {#additional-resources}
+
+Di seguito sono riportate ulteriori risorse facoltative, se desideri andare oltre il contenuto del percorso di onboarding.
+
+* [Suggerimenti e trucchi per AEM Champion - Playbook di Onboarding di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Guarda questo video per imparare i suggerimenti di onboarding di Cloud Manager e il trucco da un campione AEM.

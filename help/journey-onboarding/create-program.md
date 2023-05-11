@@ -3,10 +3,10 @@ title: Creazione di un programma
 description: Scopri come creare il tuo primo programma con Cloud Manager.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 100%
+source-wordcount: '638'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Ora che hai creato il primo programma, puoi creare degli ambienti da aggiungere.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Segui le risorse aggiuntive per ulteriori informazioni su:
+Di seguito sono riportate ulteriori risorse facoltative, se desideri andare oltre il contenuto del percorso di onboarding.
 
 * [Programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): scopri la gerarchia di Cloud Manager, le differenze tra i diversi tipi di programmi e come si adattano alla struttura gerarchica.
 * [Creazione di programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md): scopri come creare un programma sandbox personalizzato da utilizzare per formazione, demo, POC o altre finalità non di produzione con Cloud Manager.
