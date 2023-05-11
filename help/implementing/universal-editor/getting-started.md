@@ -2,7 +2,7 @@
 title: Guida introduttiva all’editor universale in AEM
 description: Scopri come accedere all’editor universale e come iniziare a preparare la tua prima app AEM per utilizzarla.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: a933073346e6b7c3b4256269f5796a64a6dfbfa8
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 100%
@@ -109,7 +109,7 @@ Gli attributi della preparazione aggiunti alla pagina sono costituiti per lo pi�
 Le connessioni utilizzate nell’app vengono memorizzate come `<meta>` tag nella pagina `<head>`.
 
 ```html
-<meta name="urn:auecon:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>`: questo è un nome breve che viene utilizzato nuovamente nel documento per identificare la connessione. Ad esempio, `aemconnection`.
