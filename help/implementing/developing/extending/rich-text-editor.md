@@ -1,55 +1,55 @@
 ---
-title: Configurare l’Editor Rich Text per l’authoring dei contenuti in [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Configurare l’Editor Rich Text per l’authoring dei contenuti in [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Configurare l’editor Rich Text per creare contenuti in [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Configurare l’editor Rich Text per creare contenuti in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
 workflow-type: tm+mt
-source-wordcount: '1964'
-ht-degree: 1%
+source-wordcount: '1876'
+ht-degree: 0%
 
 ---
 
 # Configurare l’editor Rich Text {#configure-the-rich-text-editor}
 
-L’editor Rich Text offre agli autori un’ampia gamma di funzionalità per modificare il contenuto di testo. Sono disponibili icone, caselle di selezione, barre degli strumenti e menu per un&#39;esperienza di modifica del testo WYSIWYG. Gli amministratori configurano l’editor Rich Text per abilitare, disabilitare ed estendere le funzioni disponibili nei componenti di authoring. Scopri come gli autori [utilizzare l’editor Rich Text per l’authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) contenuto web.
+L’Editor Rich Text offre agli autori numerose funzionalità per modificare il contenuto del testo. Icone, caselle di selezione, barra degli strumenti e menu sono disponibili per un’esperienza di modifica del testo WYSIWYG. Gli amministratori configurano l’editor Rich Text per abilitare, disabilitare ed estendere le funzioni disponibili nei componenti di authoring. Scopri in che modo gli autori [utilizzare l’editor Rich Text per l’authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) contenuto web.
 
 Di seguito sono elencati i concetti e i passaggi necessari per la configurazione dell’editor Rich Text.
 
-| Comprendere i concetti dell’editor Rich Text | Abilita funzioni richieste | Configurare singole funzionalità |
+| Comprendere i concetti dell’editor Rich Text | Abilitare le funzioni richieste | Configurare singole funzionalità |
 |---|---|---|
-| [Interfaccia](#understand-rte-ui) | [Comprendere e impostare le posizioni di configurazione](#understand-the-configuration-paths-and-locations) | [Configurare i plug-in](#enable-rte-functionalities-by-activating-plug-ins) |
-| [Tipi di modalità di modifica](#editingmodes) | [Attiva plug-in](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [Impostare le proprietà della funzionalità](#aboutplugins) |
+| [Comprendere l’interfaccia](#understand-rte-ui) | [Comprendere e impostare le posizioni di configurazione](#understand-the-configuration-paths-and-locations) | [Configurare i plug-in](#enable-rte-functionalities-by-activating-plug-ins) |
+| [Tipi di modalità di modifica](#editingmodes) | [Attivare i plug-in](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [Impostare le proprietà delle feature](#aboutplugins) |
 | [Informazioni sui plug-in](#aboutplugins) | [Configurare le barre degli strumenti dell’Editor Rich Text](#dialogfullscreen) | [Configurare le modalità Incolla](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
 
-## Interfaccia utente disponibile per gli autori {#understand-rte-ui}
+## Comprendere l’interfaccia utente disponibile per gli autori {#understand-rte-ui}
 
-L’interfaccia RTE offre [design responsive](/help/sites-cloud/authoring/features/responsive-layout.md) per l’ambiente di authoring. L&#39;interfaccia è progettata per essere utilizzata su dispositivi touch e desktop.
+L’interfaccia RTE offre [design dinamico](/help/sites-cloud/authoring/features/responsive-layout.md) per ambiente di authoring. L’interfaccia è progettata per l’utilizzo su dispositivi touch e desktop.
 
 ![Barra degli strumenti dell’Editor Rich Text](assets/rte-toolbar-full-screen-mode.png)
 
 *Figura: Barra degli strumenti dell’Editor Rich Text con tutte le opzioni disponibili abilitate.*
 
-La barra degli strumenti fornisce le opzioni per l’esperienza di authoring WYSIWYG. [!DNL Experience Manager] gli amministratori possono configurare le opzioni disponibili nella barra degli strumenti dell’interfaccia di. Per impostazione predefinita, in è disponibile un set completo di opzioni di modifica [!DNL Experience Manager]. Gli sviluppatori possono personalizzare [!DNL Experience Manager] per aggiungere altre opzioni di modifica.
+La barra degli strumenti fornisce le opzioni per l’esperienza di authoring WYSIWYG. [!DNL Experience Manager] gli amministratori possono configurare le opzioni disponibili nella barra degli strumenti dell’interfaccia. Per impostazione predefinita, è disponibile un set completo di opzioni di modifica in [!DNL Experience Manager]. Gli sviluppatori possono personalizzare [!DNL Experience Manager] per aggiungere altre opzioni di modifica.
 
 ## Varie modalità di editing {#editingmodes}
 
-Gli autori possono creare e modificare contenuti testuali in [!DNL Experience Manager] utilizzare le diverse modalità dei componenti. Le opzioni della barra degli strumenti per l’authoring e la formattazione dei contenuti e l’esperienza utente dei componenti abilitati per l’editor Rich Text in diverse modalità di modifica variano in base alle configurazioni dell’editor Rich Text.
+Gli autori possono creare e modificare contenuti di testo in [!DNL Experience Manager] utilizzando le diverse modalità dei componenti. Le opzioni della barra degli strumenti per l’authoring e la formattazione dei contenuti e l’esperienza utente dei componenti abilitati per l’editor Rich Text in diverse modalità di modifica variano a seconda delle configurazioni dell’editor Rich Text.
 
-| Modalità di modifica | Area di modifica | Funzioni consigliate da abilitare |
+| Modalità di modifica | Area di editing | Funzioni consigliate da abilitare |
 |--- |--- |--- |
-| In linea | Modifica diretta per modifiche rapide e minori; Formatta senza aprire una finestra di dialogo. | Funzioni minime dell’editor Rich Text |
-| Editor Rich Text a schermo intero | Copre l&#39;intera pagina. | Tutte le funzionalità richieste dell&#39;editor Rich Text. |
-| Finestra di dialogo | Finestra di dialogo sopra il contenuto della pagina, ma non copre l’intera pagina. | Abilitare le funzionalità in modo giudizioso. |
-| Finestra di dialogo a schermo intero | Come modalità a schermo intero; contiene campi della finestra di dialogo insieme all’editor Rich Text. | Tutte le funzionalità richieste dell&#39;editor Rich Text. |
+| In linea | Modifica diretta per modifiche rapide e minori; Formattare senza aprire una finestra di dialogo. | Funzioni RTE minime. |
+| Schermo intero dell’Editor Rich Text | Copre l’intera pagina. | Tutte le funzioni RTE richieste. |
+| Finestra di dialogo | La finestra di dialogo si trova sopra il contenuto della pagina, ma non copre l’intera pagina. | Abilitare le funzionalità in modo giudizioso. |
+| Finestra di dialogo a schermo intero | come la modalità a schermo intero; contiene i campi della finestra di dialogo accanto a RTE. | Tutte le funzioni RTE richieste. |
 
 >[!NOTE]
 >
->La funzione di modifica dell’origine non è disponibile in modalità di modifica in linea. Non è possibile trascinare le immagini in modalità a schermo intero. Tutte le altre funzioni funzionano in tutte le modalità.
+>La funzione di modifica sorgente non è disponibile in modalità di modifica in linea. Non è possibile trascinare immagini in modalità a schermo intero. Tutte le altre funzioni funzionano in tutte le modalità.
 
 ### Modifica in linea {#inline-editing}
 
-Per modificare il contenuto di una pagina, apri il contenuto con un doppio clic lento . Viene visualizzata una barra degli strumenti compatta con opzioni di base.
+Per modificare il contenuto di una pagina, apri il contenuto con un doppio clic lento . Viene presentata una barra degli strumenti compatta con le opzioni di base.
 
 ![Modifica in linea con le opzioni di base nella barra degli strumenti](assets/inline-editing-mode-basic-options.png)
 
@@ -57,75 +57,75 @@ Per modificare il contenuto di una pagina, apri il contenuto con un doppio clic 
 
 ### Modifica a tutto schermo {#full-screen-editing}
 
-[!DNL Experience Manager] i componenti possono essere aperti in visualizzazione a schermo intero che nasconde il contenuto della pagina e occupa lo schermo disponibile. Prendi in considerazione la modifica a schermo intero di una versione dettagliata della modifica in linea, in quanto offre le opzioni di modifica più avanzate. Per aprirlo, fai clic su ![Icona per aprire l’editor Rich Text a schermo intero](assets/rte_fullscreen.png), dalla barra degli strumenti compatta quando si utilizza la modalità di modifica in linea.
+[!DNL Experience Manager] i componenti possono essere aperti nella visualizzazione a schermo intero che nasconde il contenuto della pagina e occupa la schermata disponibile. Considera la modifica a schermo intero una versione dettagliata della modifica in linea in quanto offre il maggior numero di opzioni di modifica. Può essere aperto facendo clic su ![Icona per aprire l’Editor Rich Text a schermo intero](assets/rte_fullscreen.png), dalla barra degli strumenti compatta quando si utilizza la modalità di editing in linea.
 
-Nella finestra di dialogo in modalità a tutto schermo, oltre a una barra degli strumenti dettagliata dell’editor Rich Text, sono disponibili anche le opzioni e i componenti disponibili in una finestra di dialogo. È applicabile solo a una finestra di dialogo che contiene l’editor Rich Text insieme ad altri componenti.
+Nella finestra di dialogo a schermo intero, insieme a una barra degli strumenti dettagliata dell’Editor Rich Text, sono disponibili anche le opzioni e i componenti disponibili in una finestra di dialogo. È applicabile solo per una finestra di dialogo che contiene l’editor Rich Text e altri componenti.
 
-![Barra degli strumenti dettagliata dell’editor Rich Text in modalità a schermo intero](assets/rte-toolbar-full-screen-mode.png)
+![Barra degli strumenti dettagliata dell’editor Rich Text durante la modifica in modalità a schermo intero](assets/rte-toolbar-full-screen-mode.png)
 
-*Figura: Barra degli strumenti dettagliata dell’editor Rich Text in modalità a schermo intero.*
+*Figura: Barra degli strumenti dettagliata dell’Editor Rich Text durante la modifica in modalità a schermo intero.*
 
-### Modifica finestre di dialogo {#dialog-editing}
+### Modifica finestra di dialogo {#dialog-editing}
 
-Quando si fa doppio clic su un componente, viene visualizzata una finestra di dialogo per la modifica del contenuto. La finestra di dialogo viene visualizzata sopra la pagina esistente. In alcuni scenari specifici, la finestra di dialogo si apre come finestra pop-up. Ad esempio, quando un componente Testo fa parte di una colonna in un layout di pagina a più colonne e l’area disponibile per la finestra di dialogo è inferiore.
+Quando si fa doppio clic su un componente, viene visualizzata una finestra di dialogo per la modifica del contenuto. Viene visualizzata la finestra di dialogo sopra la pagina esistente. In alcuni scenari specifici, la finestra di dialogo si apre come finestra a comparsa. Ad esempio, quando un componente Testo fa parte di una colonna in un layout di pagina a più colonne e l’area disponibile per la finestra di dialogo è inferiore.
 
 ![Modalità di modifica finestra di dialogo](assets/dialog_editing_modetouchui.png)
 
-*Figura: Modalità di modifica delle finestre di dialogo.*
+*Figura: Modalità di modifica della finestra di dialogo.*
 
-## Informazioni sui plug-in dell’editor Rich Text e sulle funzioni associate {#aboutplugins}
+## Informazioni sui plug-in RTE e sulle funzioni associate {#aboutplugins}
 
-Questa funzionalità è disponibile tramite una serie di plug-in, ciascuno con:
+La funzionalità è resa disponibile tramite una serie di plug-in, ciascuno con:
 
-* A `features` proprietà che è,
+* A `features` proprietà,
 
-   * Utilizzato per attivare o disattivare le funzionalità di base di quel plug-in.
-   * Configurato utilizzando una procedura standard.
+   * Utilizzato per attivare o disattivare le funzionalità di base del plug-in.
+   * Configurata utilizzando una procedura standard.
 
 * Se appropriato, più proprietà e opzioni che richiedono una configurazione specializzata.
 
 Le funzioni di base dell’editor Rich Text vengono attivate o disattivate dal valore `features` su un nodo specifico del plug-in appropriato.
 
-Nella tabella seguente sono elencati i plug-in correnti:
+Nella tabella seguente sono elencati i plug-in correnti, che mostrano:
 
-* ID plug-in con collegamento alla documentazione API. ID viene utilizzato come nome del nodo quando [attivazione di un plug-in](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin).
+* ID dei plug-in con un collegamento alla documentazione API. L&#39;ID viene utilizzato come nome del nodo quando [attivazione di un plug-in](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin).
 * Valori consentiti per `features` proprietà.
-* Descrizione delle funzionalità fornite dal plug-in.
+* Una descrizione delle funzionalità fornite dal plug-in.
 
-| ID plug-in | funzioni | Descrizione |
+| ID plug-in | caratteristiche | Descrizione |
 |--- |--- |--- |
-| modifica | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [Taglia, copia e, le tre modalità Incolla](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`, `replace` | Trova e sostituisci. |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [Formattazione testo di base](configure-rich-text-editor-plug-ins.md#textstyles). |
-| [immagine](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | Supporto immagini di base (trascinamento dal contenuto o da Content Finder). A seconda del browser, il supporto presenta comportamenti diversi per gli autori |
-| [tasti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | Per definire questo valore, consulta [dimensione scheda](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | Allineamento paragrafo. |
-| [collegamenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [Collegamenti ipertestuali e ancoraggi](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [elenchi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | Questo plug-in controlla entrambi [rientro ed elenchi](configure-rich-text-editor-plug-ins.md#indentmargin), inclusi gli elenchi nidificati. |
-| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | Strumenti vari consentono agli autori di immettere [caratteri speciali](configure-rich-text-editor-plug-ins.md#spchar) o modificare il codice sorgente di HTML. Inoltre, puoi aggiungere una [intervallo di caratteri speciali](configure-rich-text-editor-plug-ins.md#definerangechar) se desideri definire un elenco personalizzato. |
-| Paraformat | `paraformat` | I formati di paragrafo predefiniti sono Paragrafo, Titolo 1, Titolo 2 e Titolo 3 (`<p>`, `<h1>`, `<h2>`, e `<h3>`). È possibile [aggiungi altri formati di paragrafo](configure-rich-text-editor-plug-ins.md#paraformats) o estendere l&#39;elenco. |
-| controllo ortografico | `checktext` | [Controllo ortografico in base alla lingua](configure-rich-text-editor-plug-ins.md#adddict). |
-| stili | `styles` | Supporto per lo stile tramite una classe CSS. [Aggiungere nuovi stili di testo](configure-rich-text-editor-plug-ins.md#textstyles) se si desidera aggiungere o estendere un intervallo personalizzato di stili da utilizzare con il testo. |
-| pedice | `subscript`, `superscript` | Estensioni ai formati di base, con l’aggiunta di pedice e pedice. |
-| tabella | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | Consulta [configurare gli stili di tabella](configure-rich-text-editor-plug-ins.md#tablestyles) per aggiungere stili personalizzati per intere tabelle o singole celle. |
-| annulla | `undo`, `redo` | Dimensione cronologia di [annulla e ripristina](configure-rich-text-editor-plug-ins.md#undohistory) operazioni. |
+| modifica | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [Taglia, copia e incolla le tre modalità](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
+| punto di arrivo | `find`, `replace` | Trova e sostituisci. |
+| format | `bold`, `italic`, `underline` | [Formattazione testo di base](configure-rich-text-editor-plug-ins.md#textstyles). |
+| immagine | `image` | Supporto immagini di base (trascinamento da contenuto o Content Finder). A seconda del browser, il supporto offre diversi comportamenti per gli autori |
+| chiavi | - | Per definire questo valore, vedi [dimensione della scheda](configure-rich-text-editor-plug-ins.md#tabsize). |
+| giustificare | `justifyleft`, `justifycenter`, `justifyright` | Allineamento paragrafo. |
+| collegamenti | `modifylink`, `unlink`, `anchor` | [Collegamenti ipertestuali e ancoraggi](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| elenchi | `ordered`, `unordered`, `indent`, `outdent` | Questo plug-in controlla entrambi [rientri ed elenchi](configure-rich-text-editor-plug-ins.md#indentmargin); inclusi gli elenchi nidificati. |
+| strumenti cattivi | `specialchars`, `sourceedit` | Gli strumenti vari permettono agli autori di entrare [caratteri speciali](configure-rich-text-editor-plug-ins.md#spchar) o modificare l&#39;origine di HTML. Inoltre, puoi aggiungere una [intervallo di caratteri speciali](configure-rich-text-editor-plug-ins.md#definerangechar) per definire un proprio elenco. |
+| Paraformato | `paraformat` | I formati di paragrafo predefiniti sono Paragrafo, Intestazione 1, Intestazione 2 e Intestazione 3 (`<p>`, `<h1>`, `<h2>`e `<h3>`). È possibile [aggiungere altri formati paragrafo](configure-rich-text-editor-plug-ins.md#paraformats) o estendere l’elenco. |
+| controllo ortografico | `checktext` | [Controllo ortografico basato sulla lingua](configure-rich-text-editor-plug-ins.md#adddict). |
+| stili | `styles` | Supporto per lo stile utilizzando una classe CSS. [Aggiungi nuovi stili di testo](configure-rich-text-editor-plug-ins.md#textstyles) per aggiungere (o estendere) un proprio intervallo di stili da utilizzare con il testo. |
+| pedice | `subscript`, `superscript` | Estensioni ai formati di base, aggiunta di script secondari e di script super. |
+| tabella | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | Vedi [configurare gli stili di tabella](configure-rich-text-editor-plug-ins.md#tablestyles) per aggiungere stili personalizzati per intere tabelle o singole celle. |
+| annulla | `undo`, `redo` | Dimensione della cronologia [annullare e ripristinare](configure-rich-text-editor-plug-ins.md#undohistory) operazioni. |
 
 >[!NOTE]
 >
->Il plug-in a schermo intero non è supportato nella modalità finestra di dialogo. Uso del `dialogFullScreen` impostazione per configurare la barra degli strumenti per la modalità a schermo intero.
+>Il plug-in a schermo intero non è supportato in modalità finestra di dialogo. Uso del `dialogFullScreen` impostazione per configurare la barra degli strumenti per la modalità a schermo intero.
 
 ## Comprendere i percorsi e le posizioni di configurazione {#understand-the-configuration-paths-and-locations}
 
-Il [modalità di modifica dell’editor Rich Text e interfaccia](#editingmodes) che fornisci agli autori per decidere la posizione dei dettagli di configurazione quando sei [attivazione dei plug-in dell’editor Rich Text](configure-rich-text-editor-plug-ins.md#activateplugin). Le posizioni sono:
+La [modalità di modifica dell’editor Rich Text e dell’interfaccia](#editingmodes) che vengono forniti agli autori e che determinano la posizione dei dettagli di configurazione quando [attivazione dei plug-in RTE](configure-rich-text-editor-plug-ins.md#activateplugin). Le posizioni sono:
 
 * Modalità in linea: `cq:editConfig/cq:inplaceEditing`.
-* Modalità schermo intero: `cq:editConfig/cq:inplaceEditing`.
-* Modalità finestra di dialogo `cq:dialog`.
+* Modalità a tutto schermo: `cq:editConfig/cq:inplaceEditing`.
+* Modalità finestra di dialogo: `cq:dialog`.
 * Modalità finestra di dialogo a schermo intero: `cq:dialog`.
 
 >[!NOTE]
 >
->Non denominare il nodo sotto `cq:inplaceEditing` as `config`. On `cq:inplaceEditing` , definire le seguenti proprietà:
+>Non denominare il nodo sotto `cq:inplaceEditing` come `config`. On `cq:inplaceEditing` , definire le seguenti proprietà:
 >
 >* **Nome**: `configPath`
 >* **Tipo**: `String`
@@ -133,37 +133,37 @@ Il [modalità di modifica dell’editor Rich Text e interfaccia](#editingmodes) 
 >
 >Non denominare il nodo di configurazione dell’editor Rich Text come `config`. In caso contrario, le configurazioni dell’editor Rich Text hanno effetto solo per gli amministratori e non per gli utenti del gruppo `content-author`.
 
-Configura le seguenti proprietà applicabili in modalità di modifica Finestra di dialogo:
+Configura le seguenti proprietà da applicare in modalità di modifica della finestra di dialogo:
 
-* `useFixedInlineToolbar`: la barra degli strumenti dell’editor Rich Text può essere corretta invece di essere mobile. Imposta questa proprietà booleana definita sul nodo dell’editor Rich Text con sling:resourceType= `cq/gui/components/authoring/dialog/richtext` a `True`. Quando questa proprietà è impostata su `True`, la modifica in formato Rich Text viene avviata il `foundation-contentloaded` evento. Per evitare questo problema, imposta la proprietà `customStart` a `True` e attiva il `rte-start` per avviare la modifica dell’editor Rich Text. Quando questa proprietà è `true`, l’editor Rich Text non inizia quando si fa clic su e questo è il comportamento predefinito.
+* `useFixedInlineToolbar`: È possibile impostare la barra degli strumenti dell’Editor Rich Text in modo che sia fissa invece di fluttuare. Imposta questa proprietà booleana definita sul nodo RTE con sling:resourceType= `cq/gui/components/authoring/dialog/richtext` a `True`. Quando questa proprietà è impostata su `True`, la modifica avanzata del testo viene avviata sulla `foundation-contentloaded` evento. Per evitare questo problema, impostare la proprietà `customStart` a `True` e attivano `rte-start` per avviare la modifica dell’editor Rich Text. Quando questa proprietà è `true`, l’editor Rich Text non inizia a fare clic su e questo è il comportamento predefinito.
 
-* `customStart`: imposta questa proprietà booleana definita nel nodo dell’editor Rich Text su `True`, per controllare quando avviare l’editor Rich Text attivando l’evento `rte-start`.
+* `customStart`: Imposta questa proprietà booleana definita sul nodo dell’editor Rich Text su `True`, per controllare quando avviare l’editor Rich Text attivando l’evento `rte-start`.
 
-* `rte-start`: attiva questo evento sul `contenteditable-div` dell’editor Rich Text, quando iniziare a modificare l’editor Rich Text. Funziona solo se `customStart` è stato impostato su `true`.
+* `rte-start`: Attiva questo evento nella `contenteditable-div` dell’editor Rich Text, quando iniziare a modificare l’editor Rich Text. Funziona solo se `customStart` è impostato su `true`.
 
-Quando si utilizza l’editor Rich Text nella finestra di dialogo touch, imposta la proprietà `useFixedInlineToolbar` a `true` per evitare problemi.
+Quando l’editor Rich Text viene utilizzato nella finestra di dialogo touch, imposta la proprietà `useFixedInlineToolbar` a `true` per evitare problemi.
 
-## Abilitare le funzionalità dell’editor Rich Text attivando i plug-in {#enable-rte-functionalities-by-activating-plug-ins}
+## Abilitare le funzionalità RTE attivando i plug-in {#enable-rte-functionalities-by-activating-plug-ins}
 
-Le funzionalità dell’editor Rich Text sono disponibili tramite una serie di plug-in, ciascuno con la proprietà Features. Puoi configurare la proprietà features per abilitare o disabilitare le varie funzioni di ciascun plug-in.
+Le funzionalità dell’editor Rich Text sono disponibili tramite una serie di plug-in, ciascuno con proprietà features . Puoi configurare la proprietà features per attivare o disattivare le varie funzioni di ciascun plug-in.
 
-Per configurazioni dettagliate dei plug-in dell’editor Rich Text, consulta [come attivare e configurare i plug-in dell’editor Rich Text](configure-rich-text-editor-plug-ins.md).
+Per configurazioni dettagliate dei plug-in RTE, consulta [come attivare e configurare i plug-in RTE](configure-rich-text-editor-plug-ins.md).
 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-Il [Componente testo Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in dell’editor Rich Text utilizzando l’interfaccia utente come criteri per contenuti, eliminando la necessità di configurazione tecnica. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento. Per ulteriori informazioni, consulta [creare modelli di pagina](/help/sites-cloud/authoring/features/templates.md) e [Documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+La [Componente testo Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) consente agli editor modelli di configurare molti plug-in RTE utilizzando l’interfaccia utente come criteri di contenuto, eliminando la necessità di configurazioni tecniche. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente RTE come descritto in questo documento. Per ulteriori informazioni, consulta [creare modelli di pagina](/help/sites-cloud/authoring/features/templates.md) e [Documentazione per gli sviluppatori dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
->A scopo di riferimento, i componenti di testo predefiniti (forniti come parte di un’installazione standard) sono disponibili all’indirizzo:
+>A scopo di riferimento, i componenti Testo predefiniti (forniti nell’ambito di un’installazione standard) sono disponibili all’indirizzo:
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
 >
->Per creare un componente testo personalizzato, copia il componente precedente invece di modificare questi componenti.
+>Per creare un componente di testo personalizzato, copia il componente di cui sopra invece di modificare questi componenti.
 
-## Configurare la barra degli strumenti dell’editor Rich Text {#dialogfullscreen}
+## Configura RTE, barra degli strumenti {#dialogfullscreen}
 
-[!DNL Experience Manager] consente di configurare l’interfaccia per l’Editor Rich Text in modo diverso a seconda delle diverse modalità di modifica. Di seguito sono riportate le impostazioni predefinite. Puoi modificare questi valori predefiniti in base alle tue esigenze. Puoi personalizzare solo le funzioni della barra degli strumenti che desideri fornire agli autori. Non è necessario specificare tutte le configurazioni della barra degli strumenti.
+[!DNL Experience Manager] consente di configurare l’interfaccia per l’Editor Rich Text in modo diverso per le diverse modalità di modifica. Le impostazioni predefinite sono fornite di seguito. Puoi ignorare queste impostazioni predefinite in base alle tue esigenze. È possibile personalizzare solo le funzioni della barra degli strumenti che si desidera fornire agli autori. Non è necessario specificare tutte le configurazioni della barra degli strumenti.
 
 Per configurare la barra degli strumenti per `dialogFullScreen`, utilizza la seguente configurazione di esempio.
 
@@ -206,36 +206,36 @@ Per configurare la barra degli strumenti per `dialogFullScreen`, utilizza la seg
 </uiSettings>
 ```
 
-Per le modalità in linea e a schermo intero vengono utilizzate diverse impostazioni dell’interfaccia utente. La proprietà toolbar specifica l’opzione della barra degli strumenti.
+Per la modalità in linea e la modalità a schermo intero vengono utilizzate diverse impostazioni dell’interfaccia utente. La proprietà della barra degli strumenti specifica l&#39;opzione della barra degli strumenti.
 
-Ad esempio, se l&#39;opzione è essa stessa una feature (ad esempio, `Bold`), è specificato come `PluginName#FeatureName` (ad esempio, `links#modifylink`).
+Ad esempio, se l’opzione è essa stessa una funzione (ad esempio, `Bold`), viene specificato come `PluginName#FeatureName` (ad esempio, `links#modifylink`).
 
-Se l&#39;opzione è a comparsa (contenente alcune caratteristiche di un plug-in), viene specificata come `#PluginName` (ad esempio, `#format`).
+Se l&#39;opzione è un pop-over (contenente alcune caratteristiche di un plug-in), viene specificata come `#PluginName` (ad esempio, `#format`).
 
 Separatori (`|`) tra un gruppo di opzioni può essere specificato con `-`.
 
-Il nodo pop-up in modalità in linea o a schermo intero contiene un elenco dei pop-up utilizzati. Ogni nodo figlio sotto `popovers` Il nome del nodo deriva dal plug-in (ad esempio, formato). La proprietà &#39;items&#39; contiene un elenco di caratteristiche del plug-in (ad esempio, format#bold).
+Il nodo a comparsa in modalità in linea o a schermo intero contiene un elenco dei pop-up in uso. Ogni nodo figlio sotto il `popovers` viene denominato in seguito al plug-in (ad esempio, format). Ha una proprietà &quot;items&quot; contenente un elenco delle funzioni del plug-in (ad esempio, format#bold).
 
-## Impostazioni dell’interfaccia utente e criteri dei contenuti dell’Editor Rich Text {#rtecontentpolicies}
+## Impostazioni dell’interfaccia utente e criteri del contenuto dell’editor Rich Text {#rtecontentpolicies}
 
-Gli amministratori possono controllare le opzioni dell’editor Rich Text utilizzando i criteri del contenuto, ad esempio anziché eseguire la configurazione come descritto in precedenza. I criteri del contenuto definiscono le proprietà di progettazione di un componente quando viene utilizzato come parte di un [modello modificabile](/help/sites-cloud/authoring/features/templates.md). Ad esempio, se un componente testo che utilizza l’editor Rich Text viene utilizzato con un modello modificabile, il criterio del contenuto può definire che l’opzione grassetto sia disponibile e che siano disponibili alcune opzioni di formattazione di paragrafo. I criteri per i contenuti sono riutilizzabili e possono essere applicati a più modelli.
+Gli amministratori possono controllare le opzioni dell’editor Rich Text utilizzando i criteri dei contenuti, ad esempio anziché eseguire la configurazione come descritto in precedenza. I criteri dei contenuti definiscono le proprietà di progettazione di un componente quando viene utilizzato come parte di un [modello modificabile](/help/sites-cloud/authoring/features/templates.md). Ad esempio, se un componente di testo che utilizza l’editor Rich Text viene utilizzato con un modello modificabile, i criteri per i contenuti possono definire che l’opzione in grassetto è disponibile e che sono disponibili alcune opzioni di formattazione dei paragrafi. I criteri del contenuto sono riutilizzabili e possono essere applicati a più modelli.
 
 Le opzioni disponibili nell’editor Rich Text scorrono a valle dalle configurazioni dell’interfaccia utente ai criteri dei contenuti.
 
-* Le impostazioni di configurazione dell’interfaccia utente definiscono le opzioni disponibili per i criteri dei contenuti.
-* Se la configurazione dell&#39;interfaccia utente dell&#39;editor Rich Text è stata rimossa o non è stata abilitata per un elemento, il criterio del contenuto non è in grado di configurarlo.
+* Le impostazioni di configurazione dell’interfaccia utente definiscono quali opzioni sono disponibili per i criteri dei contenuti.
+* Se la configurazione dell’interfaccia utente dell’editor Rich Text è stata rimossa o non abilita un elemento, il criterio del contenuto non è in grado di configurarlo.
 * Un autore ha accesso solo alle funzionalità rese disponibili dalle configurazioni dell’interfaccia utente e dai criteri dei contenuti.
 
-Ad esempio, è possibile visualizzare [Documentazione dei componenti core testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+Ad esempio, puoi visualizzare il [Documentazione sui componenti core di testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizzare la mappatura tra icone e comandi della barra degli strumenti {#iconstoolbar}
 
-È possibile personalizzare la mappatura tra le icone Coral visualizzate sulla barra degli strumenti dell&#39;editor Rich Text e i comandi disponibili. Oltre alle icone Coral, non è possibile utilizzare altre icone.
+Puoi personalizzare la mappatura tra le icone Coral visualizzate sulla barra degli strumenti dell’Editor Rich Text e i comandi disponibili. Non è possibile utilizzare altre icone oltre alle icone Coral.
 
-1. Crea un nodo denominato `icons` in `uiSettings/cui`.
+1. Crea un nodo denominato `icons` sotto `uiSettings/cui`.
 
-1. Crea nodi per le singole icone al di sotto di esso.
-1. Su ciascuno dei singoli nodi delle icone, specificate un&#39;icona Coral e un comando da mappare sull&#39;icona.
+1. Crea nodi per singole icone sotto di esso.
+1. Su ciascuno dei singoli nodi icona, specifica un’icona Coral e un comando da mappare sull’icona.
 
 Di seguito è riportato uno snippet di esempio per mappare il comando `Bold` all’icona Coral denominata `textItalic`.
 
@@ -263,23 +263,23 @@ Di seguito è riportato uno snippet di esempio per mappare il comando `Bold` all
 
 [!DNL Experience Manager] La funzionalità RTE presenta le seguenti limitazioni:
 
-* Le funzionalità dell’editor Rich Text sono supportate solo in [!DNL Experience Manager] finestre di dialogo dei componenti. L’editor Rich Text non è supportato nelle procedure guidate o nei moduli Foundation.
+* Le funzionalità RTE sono supportate solo in [!DNL Experience Manager] finestre di dialogo dei componenti. L’editor Rich Text non è supportato nelle procedure guidate o nei moduli di Foundation.
 
-* [!DNL Experience Manager] non funziona sui dispositivi ibridi. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
+* [!DNL Experience Manager] non funziona su dispositivi ibridi. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
 
-* Non denominare il nodo di configurazione dell’editor Rich Text `config`. In caso contrario, la configurazione dell’editor Rich Text avrà effetto solo per gli amministratori e non per gli utenti del gruppo `content-author`.
+* Non denominare il nodo di configurazione dell’editor Rich Text `config`. In caso contrario, la configurazione dell’editor Rich Text ha effetto solo per gli amministratori e non per gli utenti del gruppo `content-author`.
 
-* L’editor Rich Text non supporta l’incorporamento di contenuto in un frame in linea o in un iframe.
+* L’editor Rich Text non supporta l’incorporazione di contenuto in un frame in linea o in un iframe.
 
 ## Best practice e suggerimenti {#best-practices-and-tips}
 
-* Per una finestra di dialogo mobile, abilita solo i plug-in senza una finestra di dialogo a comparsa. I plug-in senza pop-up sono di dimensioni ridotte e sono più adatti per una finestra di dialogo mobile.
-* Abilita i plug-in con pop-up più grandi, ad esempio `Paste` plug-in, solo nella modalità di dialogo a schermo intero o in modalità a schermo intero. I plug-in con un pop-up di grandi dimensioni richiedono più spazio sullo schermo per fornire una buona esperienza di authoring.
-* Se utilizzi plug-in personalizzati per CoralUI3 RTE, utilizza `rte.coralui3` libreria.
+* Per una finestra di dialogo mobile, abilita solo i plug-in senza una finestra di dialogo a comparsa. I plug-in senza pop-up sono di dimensioni più piccole e sono più adatti per una finestra di dialogo mobile.
+* Abilita i plug-in con pop-up più grandi, ad esempio `Paste` plug-in, solo in modalità a schermo intero o a schermo intero. I plug-in con grandi pop-up necessitano di più spazio disponibile sullo schermo per fornire una buona esperienza di authoring.
+* Se utilizzi plug-in personalizzati per l’editor Rich Text CoralUI3, utilizza `rte.coralui3` libreria.
 
 >[!MORELIKETHIS]
 >
->* [Configurare i plug-in dell’editor Rich Text](configure-rich-text-editor-plug-ins.md)
+>* [Configurare i plug-in RTE](configure-rich-text-editor-plug-ins.md)
 >* [Utilizza l’editor Rich Text per l’authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [Configurare l’editor Rich Text per i siti accessibili](rte-accessible-content.md)
 
