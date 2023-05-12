@@ -1,17 +1,17 @@
 ---
-title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
+source-git-commit: 3823b9369c612058998e265346b3f727001aef4b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 47%
+source-wordcount: '238'
+ht-degree: 56%
 
 ---
 
 # Note sulla versione di manutenzione {#maintenance-release-notes}
 
-La sezione seguente illustra le note tecniche sulla versione per la versione di manutenzione corrente dell’Experience Manager as a Cloud Service.
+La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
 ## Versione 11873 {#release-11873}
 
@@ -26,7 +26,10 @@ L’abilitazione delle funzioni per questa versione di manutenzione ti darà acc
 
 ### Problemi noti {#known-issues-11873}
 
-Nessuno.
+- SITES-13253 - RecursionTooDeepException in Core Components v2.22.6
+- SITES-13256 - Core WCM Teaser configurato con URL speciale interrompe il rendering della pagina
+- GRANITE-45462 - Configurazione di più aree geografiche client di messaggistica
+- GRANITE-45562 - Problemi con la combinazione di immagini che restituiscono 200 invece di 404
 
 ### Problemi risolti {#fixed-issues-11873}
 
