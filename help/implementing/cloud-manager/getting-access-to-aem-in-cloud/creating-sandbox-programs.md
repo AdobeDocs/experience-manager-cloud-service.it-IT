@@ -2,10 +2,10 @@
 title: Creazione di programmi sandbox
 description: Scopri come creare un programma sandbox personalizzato da usare per formazione, demo, POC o altre finalità non di produzione con Cloud Manager.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '464'
+ht-degree: 67%
 
 ---
 
@@ -23,17 +23,31 @@ Per creare un programma sandbox, segui la procedura riportata di seguito.
 
 1. Dalla pagina di destinazione di Cloud Manager, fai clic su **Aggiungi programma** nell’angolo in alto a destra della schermata.
 
-   ![Pagina di destinazione di Cloud Manager](assets/first_timelogin1.png)
+   ![Pagina di destinazione di Cloud Manager](assets/cloud-manager-my-programs.png)
 
-1. Dalla procedura guidata Crea programma, seleziona **Configura programma sandbox**, assegna un nome al programma, quindi fai clic su **Crea**.
+1. Dalla procedura guidata Crea programma, seleziona **Configurare una sandbox** e specificare un nome di programma.
 
    ![Creazione dei tipi di programmi](assets/create-sandbox.png)
 
+1. Facoltativamente, puoi aggiungere un&#39;immagine al programma trascinando e rilasciando un file di immagine nel **Aggiungi un&#39;immagine del programma** eseguire il targeting o fare clic su di esso per selezionare un&#39;immagine da un browser di file. Tocca o fai clic su **Continua**.
+
+   * L&#39;immagine funge solo da riquadro nella finestra di panoramica del programma e aiuta a identificare il programma.
+
+1. In **Configurare la sandbox** scegli le soluzioni che desideri abilitare nel tuo programma sandbox selezionando le opzioni in **Soluzioni e componenti aggiuntivi** tabella.
+
+   * Utilizza i chevron accanto ai nomi delle soluzioni per visualizzare i componenti aggiuntivi facoltativi aggiuntivi per le soluzioni.
+
+   * La **Sites** e **Risorse** le soluzioni sono sempre incluse nei programmi sandbox e non possono essere deselezionate.
+
+   ![Selezione di soluzioni e componenti aggiuntivi per una sandbox](assets/sandbox-solutions-add-ons.png)
+
+1. Dopo aver selezionato le soluzioni e i componenti aggiuntivi per il programma sandbox, tocca fai clic su **Crea**.
+
 Nella pagina di destinazione viene visualizzata una nuova scheda del programma sandbox e un indicatore di stato che mostra l’avanzamento del processo di configurazione.
 
-![Creazione di un programma sandbox dalla pagina Panoramica](assets/program-create-setupdemo2.png)
+![Creazione di un programma sandbox dalla pagina Panoramica](assets/sandbox-setup.png)
 
-## Accesso al programma sandbox {#access}
+## Accesso sandbox {#access}
 
 Visualizzando la pagina di panoramica del programma, è possibile visualizzare i dettagli della configurazione sandbox e accedere all’ambiente (non appena disponibile).
 
