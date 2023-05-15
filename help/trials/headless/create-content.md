@@ -4,7 +4,7 @@ description: Utilizza il modello Frammento di contenuto creato in precedenza per
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 73ff4edc591e64e797e14d00d6f87759e3f1301a
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 65%
@@ -57,7 +57,7 @@ Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento
 
 1. L’editor Frammento di contenuto mostra i campi definiti nel modello selezionato. Qui puoi aggiungere contenuto a ogni campo per completare il frammento di contenuto. L’avanzamento viene salvato automaticamente.
 
-1. Fornisci un **Titolo** per il frammento immettendo `Tuscan adventure`.
+1. Fornisci un **Titolo** per il frammento immettendo `Tuscan Adventure`.
 
 1. Fornisci un **Descrizione** per il frammento incollando il testo seguente.
 

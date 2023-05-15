@@ -4,9 +4,9 @@ description: Utilizza un’app React di esempio per scoprire come personalizzare
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1036'
 ht-degree: 97%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Avviare l’editor dei frammenti di contenuto"
->abstract="La tua versione di prova AEM headless dispone di un’app React di esempio, utile per capire quanto è facile gestire i contenuti in modo indipendente e veloce, senza i tempi solitamente associati allo sviluppo di app.<br><br>Per avviare questo modulo in una nuova scheda, fai clic qui sotto, quindi segui questa guida."
+>abstract="Ora esploriamo come funziona l’authoring dei contenuti headless. La tua versione di prova AEM headless dispone di un’app React di esempio, utile per capire quanto è facile gestire i contenuti in modo indipendente e veloce, senza i tempi solitamente associati allo sviluppo di app.<br><br>Per avviare questo modulo in una nuova scheda, fai clic qui sotto, quindi segui questa guida."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
