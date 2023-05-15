@@ -2,10 +2,10 @@
 title: Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato
 description: Scopri come aggiornare i frammenti di contenuto per il filtro GraphQL ottimizzato in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
+source-git-commit: a18742abdd4693ab1e97d7db3ed6854b735bc0f9
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 80%
+source-wordcount: '913'
+ht-degree: 79%
 
 ---
 
@@ -50,18 +50,9 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
       <th>Tipo</th>
       <th>Note</th>
      </tr>
-     <tr>
+
+   <tr>
       <td>1</td>
-      <td>“AEM_RELEASE_CHANNEL” </td>
-      <td>“Prerelease” </td>
-      <td> </td>
-      <td>Tutti i bundle  </td>
-      <td> </td>
-      <td>Variabile </td>
-      <td>Necessario per abilitare la funzione. </td>
-     </tr>
-     <tr>
-      <td>2</td>
       <td>“CF_MIGRATION_ENABLED” </td>
       <td>“1” </td>
       <td>“0” </td>
@@ -71,7 +62,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
       <td>Abilita (!=0) o disabilita (0) l’attivazione del processo di migrazione dei frammenti di contenuto. </td>
      </tr>
      <tr>
-      <td>3</td>
+      <td>2</td>
       <td>“CF_MIGRATION_ENFORCE” </td>
       <td>“1” </td>
       <td>“0” </td>
@@ -81,7 +72,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
       <td>Applica (!=0) una nuova migrazione dei frammenti di contenuto.<br>Se si imposta questo contrassegno su 0, verrà eseguita una migrazione incrementale dei CF. Ciò significa che se il processo viene terminato per qualsiasi motivo, la successiva esecuzione del processo inizierà la migrazione dal punto in cui è stato terminato. Tieni presente che si consiglia di applicare la prima migrazione (valore=1). </td>
      </tr>
      <tr>
-      <td>4</td>
+      <td>3</td>
       <td>“CF_MIGRATION_BATCH” </td>
       <td>“50” </td>
       <td>“50” </td>
@@ -91,7 +82,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
       <td>Dimensione del batch per il salvataggio del numero di frammenti di contenuto dopo la migrazione.<br>Questo è relativo a quanti frammenti di contenuto verranno salvati nell’archivio in un batch e può servire a ottimizzare il numero di scritture nell’archivio. </td>
      </tr>
      <tr>
-      <td>5</td>
+      <td>4</td>
       <td>“CF_MIGRATION_LIMIT” </td>
       <td>“1000” </td>
       <td>“1000” </td>
@@ -101,7 +92,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
       <td>Numero massimo di frammenti di contenuto da elaborare alla volta.<br>Vedi anche le note per “CF_MIGRATION_INTERVAL”. </td>
      </tr>
      <tr>
-      <td>6</td>
+      <td>5</td>
       <td>“CF_MIGRATION_INTERVAL” </td>
       <td>“60” </td>
       <td>“600” </td>
