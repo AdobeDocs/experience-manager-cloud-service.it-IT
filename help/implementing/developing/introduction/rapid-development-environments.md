@@ -1,13 +1,13 @@
 ---
 title: Ambienti di sviluppo rapidi
 description: Scopri come sfruttare gli ambienti di sviluppo rapido per iterazioni di sviluppo rapide in un ambiente cloud.
-source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
+exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
+source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
 workflow-type: tm+mt
-source-wordcount: '3304'
+source-wordcount: '3325'
 ht-degree: 5%
 
 ---
-
 
 # Ambienti di sviluppo rapidi {#rapid-development-environments}
 
@@ -451,6 +451,8 @@ Quando un RDE viene reimpostato, tutti i contenuti vengono rimossi e quindi, se 
 
 1. Posiziona e esegui il commit del contenuto di esempio in git all’interno di una cartella install.rde in /apps, quindi sincronizza il pacchetto di contenuto complessivo con l’RDE utilizzando gli strumenti della riga di comando.
 
+1. Utilizza la [strumento copia contenuto](/help/implementing/developing/tools/content-copy.md) per copiare un set di contenuti definito da ambienti prod, stage o dev o da un altro RDE.
+
 1. Utilizzo di Gestione pacchetti
 
 Tieni presente che la sincronizzazione dei pacchetti di contenuti è limitata a 1 GB.
@@ -499,4 +501,3 @@ Gli sviluppatori Forms possono utilizzare AEM Forms Cloud Service Rapid Developm
 ## Esercitazione RDE
 
 Per informazioni sull’RDE in AEM as a Cloud Service, consulta [tutorial video che illustra come configurarlo, come utilizzarlo e il ciclo di vita dello sviluppo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
-
