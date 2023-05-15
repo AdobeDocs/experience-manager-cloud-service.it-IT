@@ -2,7 +2,7 @@
 title: Guida introduttiva all’editor universale in AEM
 description: Scopri come accedere all’editor universale e come iniziare a preparare la tua prima app AEM per utilizzarla.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: e62ddc2a72d12ad356decc0e2a933d8c7d308469
+source-git-commit: de33ea3efed87170b081ea467f12a997e0d41a83
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 98%
@@ -109,14 +109,14 @@ Gli attributi della preparazione aggiunti alla pagina sono costituiti per lo pi�
 Le connessioni utilizzate nell’app vengono memorizzate come `<meta>` tag nella pagina `<head>`.
 
 ```html
-<meta name="urn:adobe:aem:editor:aemconnection:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>`: questo è un nome breve che viene utilizzato nuovamente nel documento per identificare la connessione. Ad esempio, `aemconnection`.
 * `<protocol>`: indica il plug-in di persistenza del servizio di persistenza dell’editor universale da utilizzare. Ad esempio, `aem`
 * `<url>`: questo è l’URL del sistema in cui le modifiche devono essere mantenute. Ad esempio, `http://localhost:4502`
 
-Identificatore `adobe:aem:editor:aemconnection` rappresenta la connessione per l’editor universale Adobe.
+Identificatore `adobe:aem:editor` rappresenta la connessione per l’editor universale Adobe.
 
 Negli identificatori `itemid` verrà utilizzato il prefisso `urn` per accorciare l’identificatore.
 
@@ -136,8 +136,8 @@ itemid="urn:<referenceName>:<resource>"
 ```html
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:aemconnection:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
