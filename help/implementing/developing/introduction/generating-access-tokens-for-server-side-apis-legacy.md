@@ -1,43 +1,45 @@
 ---
-title: Generazione dei token di accesso per le API lato server (legacy)
-description: Scopri come facilitare la comunicazione tra un server di terze parti e AEM as a Cloud Service generando un token JWT sicuro
+title: Generazione di token di accesso per API lato server (legacy)
+description: Scopri come facilitare la comunicazione tra un server di terze parti e AEM as a Cloud Service generando un token JWT protetto
 hidefromtoc: true
-source-git-commit: 75eb7919c437fe21ceeba934f264c653597aace5
+exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
+source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
 
-# Generazione dei token di accesso per le API lato server (legacy) {#generating-access-tokens-for-server-side-apis-legacy}
+# Generazione di token di accesso per API lato server (legacy) {#generating-access-tokens-for-server-side-apis-legacy}
 
-Alcune architetture si basano sull&#39;effettuare chiamate all&#39;AEM as a Cloud Service da un&#39;applicazione ospitata su un server al di fuori dell&#39;infrastruttura AEM. Ad esempio, un’app mobile che chiama un server e che quindi rende as a Cloud Service le richieste API all’AEM.
+Alcune architetture si basano sull&#39;effettuazione di chiamate a AEM as a Cloud Service da un&#39;applicazione ospitata su un server al di fuori dell&#39;infrastruttura AEM. Ad esempio, un’app mobile che chiama un server e quindi invia richieste API a AEM as a Cloud Service.
 
-Il flusso server-to-server è descritto di seguito, insieme a un flusso semplificato per lo sviluppo. L&#39;AEM as a Cloud Service [Console per sviluppatori](development-guidelines.md#crxde-lite-and-developer-console) viene utilizzato per generare i token necessari per il processo di autenticazione.
+Il flusso server-to-server è descritto di seguito, insieme a un flusso semplificato per lo sviluppo. Il AEM as a Cloud Service [Console per sviluppatori](development-guidelines.md#crxde-lite-and-developer-console) viene utilizzato per generare token necessari per il processo di autenticazione.
 
+<!-- ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->Oltre a questa documentazione, puoi consultare i tutorial su [Autenticazione basata su token per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) e [Ottenere un token di accesso per le integrazioni](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## Flusso server-to-server {#the-server-to-server-flow}
 
-Un utente con ruolo di amministratore dell’organizzazione IMS e che è anche membro del profilo di prodotto Utenti AEM o Amministratori AEM in AEM Author può generare una credenziale AEM as a Cloud Service. Tali credenziali possono essere successivamente recuperate da un utente con il ruolo di amministratore dell’ambiente as a Cloud Service dell’AEM e devono essere installate sul server e trattate con attenzione come chiave segreta. Questo file in formato JSON contiene tutti i dati necessari per l’integrazione con un’API as a Cloud Service per AEM. I dati vengono utilizzati per creare un token JWT firmato, che viene scambiato con IMS per un token di accesso IMS. Questo token di accesso può quindi essere utilizzato come token di autenticazione Bearer per rendere as a Cloud Service le richieste all’AEM. Le credenziali scadono dopo un anno per impostazione predefinita, ma possono essere aggiornate quando necessario, come descritto [qui](#refresh-credentials).
+Un utente con un ruolo di amministratore organizzazione IMS e che è anche membro del profilo di prodotto Utenti AEM o Amministratori AEM su AEM Author può generare una credenziale as a Cloud Service AEM. Tale credenziale può essere successivamente recuperata da un utente con il ruolo di amministratore dell’ambiente as a Cloud Service AEM e deve essere installata sul server e deve essere trattata con attenzione come una chiave segreta. Questo file in formato JSON contiene tutti i dati necessari per l’integrazione con un’API as a Cloud Service AEM. I dati vengono utilizzati per creare un token JWT firmato, che viene scambiato con IMS per un token di accesso IMS. Questo token di accesso può quindi essere utilizzato come token di autenticazione portatore per effettuare richieste a AEM as a Cloud Service. Le credenziali scadono dopo un anno per impostazione predefinita, ma possono essere aggiornate quando necessario, come descritto [qui](#refresh-credentials).
 
 Il flusso server-to-server prevede i seguenti passaggi:
 
-* Recupera le credenziali as a Cloud Service dell’AEM da Console sviluppatori
-* Installare le credenziali as a Cloud Service AEM su un server non AEM che effettua chiamate all’AEM
-* Generare un token JWT e scambiarlo con un token di accesso utilizzando le API IMS di Adobe
-* Chiamata dell&#39;API AEM con il token di accesso come token di autenticazione Bearer
+* Recupera le credenziali per AEM as a Cloud Service da Developer Console
+* Installa le credenziali per AEM as a Cloud Service su un server non AEM che effettua chiamate a AEM
+* Genera un token JWT e scambia tale token per un token di accesso utilizzando le API IMS di Adobe
+* Chiamata dell’API AEM con il token di accesso come token di autenticazione portatore
 * Impostare le autorizzazioni appropriate per l’utente dell’account tecnico nell’ambiente AEM
 
-### Recupera le credenziali as a Cloud Service dell’AEM {#fetch-the-aem-as-a-cloud-service-credentials}
+### Recupera le credenziali as a Cloud Service AEM {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Gli utenti con accesso alla Console per sviluppatori as a Cloud Service all’AEM visualizzeranno la scheda integrazioni nella Console per sviluppatori per un determinato ambiente, oltre a due pulsanti. L’utente con il ruolo di amministratore dell’ambiente as a Cloud Service dell’AEM può fare clic sul pulsante **Genera credenziali servizio** per generare e visualizzare il codice json delle credenziali del servizio, che conterrà tutte le informazioni necessarie per il server non AEM, inclusi id client, segreto client, chiave privata, certificato e configurazione per i livelli di authoring e pubblicazione dell’ambiente, indipendentemente dalla selezione del pod.
+Gli utenti con accesso alla AEM console per sviluppatori as a Cloud Service visualizzano la scheda integrazioni nella Console per sviluppatori per un determinato ambiente e due pulsanti. Un utente con il AEM ruolo di amministratore dell’ambiente as a Cloud Service può fare clic sul pulsante **Genera credenziali del servizio** per generare e visualizzare il json delle credenziali del servizio. Il json contiene tutte le informazioni necessarie per il server non AEM, inclusi ID client, segreto client, chiave privata, certificato e configurazione per i livelli di authoring e pubblicazione dell’ambiente, indipendentemente dalla selezione del pod.
 
 ![Generazione JWT](assets/JWTtoken3.png)
 
-L’output sarà simile al seguente:
+L&#39;output è simile al seguente:
 
 ```
 {
@@ -59,21 +61,21 @@ L’output sarà simile al seguente:
 }
 ```
 
-Dopo la generazione, le credenziali possono essere recuperate in un secondo momento premendo il tasto **Ottieni credenziali servizio** nella stessa posizione.
+Dopo la generazione, è possibile recuperare le credenziali in un secondo momento premendo il pulsante **Ottieni credenziali servizio** nella stessa posizione.
 
 >[!IMPORTANT]
 >
->Un amministratore dell’organizzazione IMS (in genere lo stesso utente che ha eseguito il provisioning dell’ambiente tramite Cloud Manager), che deve anche essere membro del profilo di prodotto Utenti AEM o Amministratori AEM su AEM Author, deve prima accedere a Console sviluppatori e fare clic su **Genera credenziali servizio** affinché le credenziali possano essere generate e successivamente recuperate da un utente con autorizzazioni di amministratore per l’ambiente AEM as a Cloud Service. Se l’amministratore dell’organizzazione IMS non lo ha fatto, viene visualizzato un messaggio per informare che è necessario il ruolo di amministratore dell’organizzazione IMS.
+>Un amministratore organizzazione IMS, in genere l’utente che ha eseguito il provisioning dell’ambiente tramite Cloud Manager, che deve anche essere membro del profilo di prodotto Utenti AEM o Amministratori su AEM Author, accede alla Console per sviluppatori. Quindi devono fare clic sul pulsante **Genera credenziali del servizio** in modo che le credenziali vengano generate e successivamente recuperate da un utente con autorizzazioni di amministratore per l’ambiente AEM as a Cloud Service. Se l’amministratore organizzazione IMS non ha eseguito questa operazione, un messaggio li informa che è necessario il ruolo Amministratore organizzazione IMS.
 
-### Installare le credenziali del servizio AEM in un server non AEM {#install-the-aem-service-credentials-on-a-non-aem-server}
+### Installare le credenziali del servizio AEM su un server non AEM {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-L&#39;applicazione non AEM che effettua chiamate all&#39;AEM dovrebbe essere in grado di accedere alle credenziali as a Cloud Service dell&#39;AEM, trattandole come un segreto.
+L&#39;applicazione non AEM che effettua chiamate a AEM dovrebbe essere in grado di accedere alle credenziali di AEM as a Cloud Service, trattandole come un segreto.
 
-### Generare un token JWT e scambiarlo con un token di accesso {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
+### Generare un token JWT e sostituirlo con un token di accesso {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
 Utilizza le credenziali per creare un token JWT in una chiamata al servizio IMS di Adobe per recuperare un token di accesso, valido per 24 ore.
 
-Le credenziali del servizio CS AEM possono essere scambiate con un token di accesso utilizzando le librerie client progettate a questo scopo. Le librerie client sono disponibili da [Archivio GitHub pubblico di Adobe](https://github.com/adobe/aemcs-api-client-lib), che contiene orientamenti più dettagliati e informazioni aggiornate.
+Le credenziali AEM del servizio CS possono essere scambiate per un token di accesso utilizzando le librerie client progettate a tal fine. Le librerie client sono disponibili da [Archivio GitHub pubblico di Adobe](https://github.com/adobe/aemcs-api-client-lib), che contiene informazioni più dettagliate e informazioni più aggiornate.
 
 ```
 /*jshint node:true */
@@ -93,74 +95,70 @@ exchange(config).then(accessToken => {
 });
 ```
 
-Lo stesso scambio può essere eseguito in qualsiasi lingua in grado di generare un token JWT firmato con il formato corretto e di chiamare le API di scambio di token IMS.
+Lo stesso scambio può essere eseguito in qualsiasi lingua in grado di generare un token JWT firmato con il formato corretto e di chiamare le API di scambio token IMS.
 
-Il token di accesso definisce il momento della scadenza, che in genere è di 24 ore. Nell’archivio Git è presente un codice di esempio per gestire un token di accesso e aggiornarlo prima della scadenza.
+Il token di accesso definisce quando scade, che in genere dura 24 ore. Nell’archivio Git è presente un codice di esempio per gestire un token di accesso e aggiornarlo prima della scadenza.
 
 ### Chiamata dell&#39;API AEM {#calling-the-aem-api}
 
-Effettua le chiamate API server-to-server appropriate a un ambiente as a Cloud Service AEM, incluso il token di accesso nell’intestazione. Quindi, per l’intestazione &quot;Authorization&quot;, utilizza il valore `"Bearer <access_token>"`. Ad esempio, utilizzando `curl`:
+Effettua le chiamate API da server a server appropriate a un ambiente as a Cloud Service AEM, incluso il token di accesso nell’intestazione . Quindi, per l’intestazione &quot;Autorizzazione&quot;, utilizza il valore `"Bearer <access_token>"`. Ad esempio, utilizzando `curl`:
 
 ```curlc
 curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
 ```
 
-### Impostare le autorizzazioni appropriate per l’utente dell’account tecnico in AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
+### Imposta le autorizzazioni appropriate per l’utente dell’account tecnico in AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
-Una volta creato l’utente dell’account tecnico in AEM (dopo la prima richiesta con il token di accesso corrispondente), deve disporre delle autorizzazioni appropriate **in** AEM.
+Dopo che l’utente dell’account tecnico è stato creato in AEM (si verifica dopo la prima richiesta con il token di accesso corrispondente), l’utente dell’account tecnico deve essere autorizzato correttamente **in** AEM.
 
-Per impostazione predefinita, nel servizio AEM Author l’utente dell’account tecnico viene aggiunto al gruppo di utenti Collaboratori, che fornisce accesso in lettura all’AEM.
+Per impostazione predefinita, nel servizio AEM Author, l’utente dell’account tecnico viene aggiunto al gruppo di utenti Collaboratori , che fornisce AEM di accesso in lettura.
 
-Questo utente account tecnico in AEM può essere ulteriormente fornito con autorizzazioni utilizzando i metodi usuali.
+Questo utente tecnico dell’account in AEM può essere ulteriormente dotato di autorizzazioni utilizzando i metodi consueti.
 
-## Flusso per sviluppatori {#developer-flow}
+## Flusso degli sviluppatori {#developer-flow}
 
-È probabile che gli sviluppatori desiderino testare utilizzando un’istanza di sviluppo della loro applicazione non AEM (in esecuzione sul loro laptop o ospitata) che effettua richieste a un ambiente di sviluppo as a Cloud Service AEM di sviluppo. Tuttavia, poiché gli sviluppatori non dispongono necessariamente delle autorizzazioni per il ruolo di amministratore IMS, non si può presumere che possano generare il Bearer JWT descritto nel normale flusso server-to-server. Pertanto, forniamo a uno sviluppatore un meccanismo che consente di generare direttamente un token di accesso che può essere utilizzato nelle richieste agli ambienti AEM as a Cloud Service a cui ha accesso.
+Gli sviluppatori devono eseguire il test utilizzando un&#39;istanza di sviluppo della propria applicazione non AEM (in esecuzione sul proprio laptop o in hosting) che effettua richieste a un ambiente di sviluppo AEM ambiente di sviluppo as a Cloud Service. Tuttavia, poiché gli sviluppatori non dispongono necessariamente delle autorizzazioni per il ruolo di amministratore IMS, l’Adobe non può presumere che possano generare il portatore JWT descritto nel flusso regolare da server a server. Pertanto, Adobe fornisce a uno sviluppatore un meccanismo per generare direttamente un token di accesso che può essere utilizzato nelle richieste a un ambiente as a Cloud Service AEM a cui ha accesso.
 
-Consulta la [Documentazione sulle linee guida per sviluppatori](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) per informazioni sulle autorizzazioni necessarie per utilizzare la console per sviluppatori AEM as a Cloud Service.
+Consulta la sezione [Documentazione sulle linee guida per gli sviluppatori](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) per informazioni sulle autorizzazioni necessarie per utilizzare la AEM console per sviluppatori as a Cloud Service.
 
 >[!NOTE]
->
->Il token di accesso per lo sviluppo locale è valido per un massimo di 24 ore, al termine delle quali deve essere rigenerato con lo stesso metodo.
+Il token di accesso allo sviluppo locale è valido per un massimo di 24 ore dopo il quale deve essere rigenerato utilizzando lo stesso metodo.
 
-Gli sviluppatori possono utilizzare questo token per effettuare chiamate dall’applicazione di test non AEM a un ambiente as a Cloud Service AEM. In genere, lo sviluppatore utilizza questo token con l’applicazione non AEM sul proprio laptop. Inoltre, AEM as a Cloud è in genere un ambiente non di produzione.
+Gli sviluppatori possono utilizzare questo token per effettuare chiamate dalla propria applicazione di test non AEM a un ambiente as a Cloud Service AEM. In genere, lo sviluppatore utilizza questo token con l’applicazione non AEM sul proprio laptop. Inoltre, il AEM as a Cloud è in genere un ambiente non di produzione.
 
-Il flusso per sviluppatori prevede i seguenti passaggi:
+Il flusso per gli sviluppatori prevede i seguenti passaggi:
 
-* Generare un token di accesso da Developer Console
-* Chiama l’applicazione AEM con il token di accesso.
+* Generare un token di accesso dalla Console per sviluppatori
+* Chiama l&#39;applicazione AEM con il token di accesso.
 
-Gli sviluppatori possono anche effettuare chiamate API a un progetto AEM in esecuzione sul proprio computer locale, nel qual caso non è necessario un token di accesso.
+Gli sviluppatori possono anche effettuare chiamate API a un progetto AEM in esecuzione sul computer locale, nel qual caso non è necessario un token di accesso.
 
 ### Generazione del token di accesso {#generating-the-access-token}
 
-Fai clic su **Ottieni token di sviluppo locale** nella Console per sviluppatori per generare un token di accesso.
+Per generare un token di accesso, nella Console per sviluppatori, fai clic su **Ottieni token di sviluppo locale**.
 
-### Chiama l’applicazione AEM con un token di accesso {#call-the-aem-application-with-an-access-token}
+### Chiama quindi AEM applicazione con un token di accesso {#call-the-aem-application-with-an-access-token}
 
-Effettuare le chiamate API server-to-server appropriate dall’applicazione non AEM a un ambiente as a Cloud Service AEM, incluso il token di accesso nell’intestazione. Quindi, per l’intestazione &quot;Authorization&quot;, utilizza il valore `"Bearer <access_token>"`.
+Effettua le chiamate API da server a server appropriate dall’applicazione non AEM a un ambiente as a Cloud Service AEM, incluso il token di accesso nell’intestazione. Quindi, per l’intestazione &quot;Autorizzazione&quot;, utilizza il valore `"Bearer <access_token>"`.
 
 ## Aggiorna credenziali {#refresh-credentials}
 
-Per impostazione predefinita, le credenziali as a Cloud Service dell&#39;AEM scadono dopo un anno. Per garantire la continuità del servizio, gli sviluppatori possono aggiornare le credenziali ed estenderne la disponibilità per un altro anno.
-
-A questo scopo, puoi utilizzare **Aggiorna credenziali servizio** dal pulsante **Integrazioni** nella Console per sviluppatori, come illustrato di seguito.
+Per impostazione predefinita, le credenziali in AEM as a Cloud Service scadono dopo un anno. Per garantire la continuità del servizio, gli sviluppatori hanno la possibilità di aggiornare le credenziali, estendendone la disponibilità per un ulteriore anno. Utilizzo **Aggiorna credenziali del servizio** dal **Integrazioni** in Developer Console, come illustrato di seguito.
 
 ![Aggiornamento credenziali](assets/credential-refresh.png)
 
-Dopo aver premuto il pulsante, verrà generato un nuovo set di credenziali. Puoi aggiornare l’archiviazione segreta con le nuove credenziali e verificare che funzionino correttamente.
+Dopo aver premuto il pulsante, verrà generato un nuovo set di credenziali. È possibile aggiornare l&#39;archiviazione segreta con le nuove credenziali e verificare che funzionino come dovrebbero.
 
 >[!NOTE]
->
-> Dopo aver fatto clic su **Aggiorna credenziali servizio** , le vecchie credenziali rimangono registrate fino alla scadenza, ma solo il set più recente è disponibile per essere visualizzato da Console sviluppatori in qualsiasi momento.
+Dopo aver fatto clic sul pulsante **Aggiorna credenziali del servizio** le vecchie credenziali rimangono registrate fino alla scadenza, ma è disponibile solo il set più recente da visualizzare in qualsiasi momento dalla Console per sviluppatori.
 
-## Revoca credenziali del servizio {#service-credentials-revocation}
+## Revoca delle credenziali del servizio {#service-credentials-revocation}
 
-Se è necessario revocare le credenziali, è necessario inviare una richiesta all’assistenza clienti seguendo la procedura riportata di seguito:
+Se le credenziali devono essere revocate, è necessario inviare una richiesta all’assistenza clienti seguendo questi passaggi:
 
-1. Disattiva l’utente dell’account tecnico per Adobe Admin Console nell’interfaccia utente:
-   * In Cloud Manager, premi **...** accanto all’ambiente. Si aprirà la pagina dei profili di prodotto
+1. Disattiva l&#39;utente dell&#39;account tecnico per Adobe Admin Console nell&#39;interfaccia utente:
+   * In Cloud Manager, premi il pulsante **...** accanto all’ambiente. Questa azione apre la pagina dei profili di prodotto
    * Ora fai clic sul pulsante **Utenti AEM** per visualizzare un elenco degli utenti
-   * Fai clic su **Credenziali API** , quindi individuare l&#39;utente dell&#39;account tecnico appropriato ed eliminarlo
-2. Contatta l’Assistenza clienti e richiedi l’eliminazione delle credenziali del servizio per tale ambiente specifico
-3. Infine, puoi generare nuovamente le credenziali, come descritto in questa documentazione. Inoltre, accertati che il nuovo utente dell’account tecnico creato disponga delle autorizzazioni appropriate.
+   * Fai clic sul pulsante **Credenziali API** , quindi trova l’utente dell’account tecnico appropriato ed eliminalo
+2. Contatta l’assistenza clienti e richiedi l’eliminazione delle credenziali del servizio per l’ambiente specifico
+3. Infine, puoi generare nuovamente le credenziali, come descritto in questa documentazione. Assicurati anche che il nuovo utente dell’account tecnico creato disponga delle autorizzazioni appropriate.
