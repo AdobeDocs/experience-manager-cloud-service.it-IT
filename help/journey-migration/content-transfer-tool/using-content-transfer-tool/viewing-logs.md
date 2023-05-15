@@ -4,8 +4,8 @@ description: Visualizzazione dei registri di un set di migrazione nello strument
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '246'
+ht-degree: 39%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 >title="Visualizzazione dei registri"
 >abstract="Al termine dell’estrazione dell’acquisizione, verifica la presenza di eventuali errori o avvisi nei registri. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando il supporto Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=it#troubleshooting" text="Risoluzione dei problemi"
->additional-url="https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html" text="Contattare il supporto Adobe"
+>additional-url="https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html" text="Contattare il supporto Adobe"
 
 Al completamento di ogni passaggio (estrazione e acquisizione) controlla i registri e cerca gli errori.  Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando il supporto Adobe.
 
