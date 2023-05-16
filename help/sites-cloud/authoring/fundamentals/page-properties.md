@@ -2,9 +2,9 @@
 title: Modifica delle proprietà di una pagina
 description: Imposta le proprietà richieste per una pagina
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
-workflow-type: ht
-source-wordcount: '2387'
+source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
+workflow-type: tm+mt
+source-wordcount: '2363'
 ht-degree: 100%
 
 ---
@@ -345,11 +345,3 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
       * I nuovi valori verranno applicati a tutte le pagine selezionate quando si seleziona **Fine**.
       * Quando il campo è multivalore (ad esempio Tag), è possibile aggiungere un nuovo valore o rimuovere un valore comune.
    * I campi in comune ma con valori diversi nelle varie pagine saranno contraddistinti da uno speciale valore, ad esempio `<Mixed Entries>`.
-
->[!NOTE]
->
->Il componente di pagina può essere configurato in modo da specificare i campi disponibili per la modifica in serie. Consulta Configurazione della pagina per la modifica in serie delle proprietà di pagina.
-
-<!--
->The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
--->
