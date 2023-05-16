@@ -5,9 +5,10 @@ description: È possibile utilizzare il modulo adattivo (componenti core) in una
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
+source-git-commit: 0d21b4ba2e7ce7592e3f2c57e4d320adc0af1008
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2207'
 ht-degree: 2%
 
 ---
@@ -22,22 +23,16 @@ Per creare o incorporare un modulo adattivo in una pagina AEM Sites, puoi scegli
 
 * **Creare un modulo adattivo trascinando e rilasciando i componenti del modulo sul componente contenitore di Forms adattivo**: Utilizza la [Contenitore Forms adattivo](#af-container-component) per creare uno spazio all’interno della pagina web in cui è memorizzato il modulo adattivo. È possibile trascinare e rilasciare il componente Modulo adattivo in questo spazio per creare un modulo. Ad esempio, guarda il video seguente per scoprire come creare un modulo adattivo utilizzando [!UICONTROL Contenitore Forms adattivo] componente:
 
->[!VIDEO](/help/forms/assets/formcreationbyadaptiveformcontainer.mp4)
-
 La [Contenitore di moduli adattivi](#af-container-component) Il componente ti consente di creare esperienze di iscrizione digitale utilizzando i componenti Forms adattivi direttamente nell’editor AEM Sites. Questa integrazione offre un’esperienza diretta agli autori di AEM Sites che desiderano creare e gestire moduli all’interno delle proprie pagine AEM Sites.
 
-* **Incorporare un modulo adattivo esistente**: La [Forms adattivo - Incorporamento](#embed-existing-af) consente di incorporare facilmente un modulo adattivo preesistente in una pagina di AEM Sites. Ad esempio, incorporare un modulo adattivo utilizzando [!UICONTROL Forms adattivo - Incorporamento] nella pagina del sito come illustrato nel video seguente:
-
->[!VIDEO](/help/forms/assets/embednewform_embed.mp4)
+* **Incorporare un modulo adattivo esistente**: La [Forms adattivo - Incorporamento (V2)](#embed-existing-af) consente di incorporare facilmente un modulo adattivo preesistente in una pagina di AEM Sites. Ad esempio, incorporare un modulo adattivo utilizzando [!UICONTROL Forms adattivo - Incorporamento] nella pagina del sito come illustrato nel video seguente:
 
 Questa funzione migliora l&#39;adattabilità e la riutilizzabilità di Adaptive Forms. Questa integrazione offre ai clienti un modo pratico per riutilizzare l&#39;Adaptive Forms già creato.
 
 * **Creazione guidata Forms adattiva per creare un modulo**:
 
-   Utilizza la [Forms adattivo - Incorporamento](#embed-new-af) per creare un modulo adattivo dall’interno dell’editor AEM Sites utilizzando la procedura guidata Creazione modulo. Il modulo viene salvato come entità esterna. È possibile riutilizzare il modulo anche in altre pagine di Sites e moduli indipendenti.
+   Utilizza la [Forms adattivo - Incorporamento (v2)](#embed-new-af) per creare un modulo adattivo dall’interno dell’editor AEM Sites utilizzando la procedura guidata Creazione modulo. Il modulo viene salvato come entità esterna. È possibile riutilizzare il modulo anche in altre pagine di Sites e moduli indipendenti.
 Ad esempio, guarda il video seguente per scoprire come creare e incorporare un nuovo modulo adattivo utilizzando [!UICONTROL Forms adattivo - Incorporamento] nella pagina del sito.
-
->[!VIDEO](/help/forms/assets/createnewform_embed.mp4)
 
 ### Considerazione {#considerations}
 
@@ -52,11 +47,12 @@ La [!UICONTROL Contenitore di moduli adattivi] Il componente consente di creare 
 +++ Abilita **[!UICONTROL Contenitore Forms adattivo]** nel criterio del modello associato.
 
 Per abilitare [!UICONTROL Contenitore Forms adattivo] nel criterio del modello, esegui i seguenti passaggi:
-1. Vai a [!UICONTROL Informazioni pagina] > [!UICONTROL Modifica modello]
-1. Fai clic sul pulsante [!UICONTROL Criterio] e seleziona la **Esempi di componenti core - Modulo adattivo** casella di controllo.
-1. Fai clic su [!UICONTROL Fine].
 
->[!VIDEO](/help/forms/assets/adaptiveformcontainer.mp4)
+1. Vai a [!UICONTROL Informazioni pagina] > [!UICONTROL Modifica modello]
+1. Fai clic sul pulsante [!UICONTROL Criterio] e seleziona la **[!UICONTROL Contenitore Forms adattivo]**  sotto la casella di controllo **[Nome progetto Archetype AEM] - Modulo adattivo**.
+1. Fai clic su **[!UICONTROL Fine]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 
@@ -104,7 +100,7 @@ Per creare un modulo adattivo utilizzando [!UICONTROL Contenitore Forms adattivo
 1. Crea un modulo adattivo utilizzando i componenti Forms adattivi.
 1. Salva le impostazioni.
 
->[!VIDEO](/help/forms/assets/af-container.mp4)
+>[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 Il modulo è pronto. Quando pubblichi la pagina AEM Sites, pubblica automaticamente un Modulo adattivo e le relative risorse di riferimento associate.
 
@@ -148,11 +144,11 @@ In [!UICONTROL Modifica contenitore Forms adattivo] è possibile specificare qua
 * **Mostra messaggio**
    * **Contenuto del messaggio**: Scrivere un messaggio utilizzando l’editor Rich Text da visualizzare durante l’invio del modulo. Questa opzione è disponibile solo quando scegli di mostrare un messaggio di ringraziamento.
 
-## Incorporare un modulo adattivo esistente  {#aem-container-component}
+## Incorporare un modulo adattivo  {#aem-container-component}
 
-Utilizzo **[!UICONTROL Forms adattivo - Incorporamento]** È possibile incorporare un nuovo modulo adattivo o un modulo adattivo esistente nella pagina del sito. La [!UICONTROL Forms adattivo - Incorporamento] component consente di:
+Utilizzo **[!UICONTROL Forms adattivo - Incorporamento (V2)]** È possibile incorporare un nuovo modulo adattivo o un modulo adattivo esistente nella pagina del sito. La [!UICONTROL Forms adattivo - Incorporamento] component consente di:
 
-* [Incorpora un modulo adattivo esistente](#embed-new-af)
+* [Incorporare un modulo adattivo esistente](#embed-new-af)
 
 * [Creare e incorporare un nuovo modulo adattivo](#embed-existing-af)
 
@@ -160,12 +156,14 @@ Utilizzo **[!UICONTROL Forms adattivo - Incorporamento]** È possibile incorpora
 
 +++ Abilita la **Forms adattivo - Incorporamento** nel criterio del modello associato.
 
-Per abilitare [!UICONTROL Forms adattivo - Incorporamento] nel criterio del modello, esegui i seguenti passaggi:
-1. Vai a [!UICONTROL Informazioni pagina] > [!UICONTROL Modifica modello]
-1. Fai clic sul pulsante [!UICONTROL Criterio] e seleziona la **Contenuto core** casella di controllo.
-1. Fai clic su [!UICONTROL Fine].
+Per abilitare [!UICONTROL Forms adattivo - Incorporamento (v2)] nel criterio del modello, esegui i seguenti passaggi:
 
->[!VIDEO](/help/forms/assets/enableadaptiveform-embedtemplate.mp4)
+1. Vai a [!UICONTROL Informazioni pagina] > [!UICONTROL Modifica modello]
+
+1. Fai clic sul pulsante [!UICONTROL Criterio] e seleziona la **[!UICONTROL Modulo adattivo - Incorporamento (v2)]** sotto la casella di controllo **[!UICONTROL [Nome progetto Archetype AEM] - Forms]** gruppo .
+1. Fai clic su **[!UICONTROL Fine]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 +++
 
@@ -212,7 +210,7 @@ Per utilizzare i componenti Forms adattivi in una pagina AEM Sites, includi le l
 ### Incorpora nuovo modulo adattivo {#embed-new-af}
 
 1. Apri la pagina AEM Sites in modalità di modifica.
-1. Dal pannello del browser Componenti, trascina [!UICONTROL Forms adattivo - Incorporamento] nella pagina.
+1. Dal pannello del browser Componenti, trascina [!UICONTROL Forms adattivo - Incorporamento (v2)] nella pagina.
 1. Fai clic sul pulsante **Plus** e si viene reindirizzati alla procedura guidata di creazione del modulo.
 
    ![Forms adattivo - Componente da incorporare](/help/forms/assets/aemformcontainer.png)
@@ -220,6 +218,8 @@ Per utilizzare i componenti Forms adattivi in una pagina AEM Sites, includi le l
 1. Creare un nuovo modulo adattivo da [!UICONTROL Creazione di moduli] procedura guidata.
 1. La [!UICONTROL Percorso risorsa] include già il percorso di un modulo adattivo creato
 1. Salva le impostazioni. Il modulo adattivo è ora incorporato nella pagina .
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
 ### Incorpora modulo adattivo esistente {#embed-existing-af}
 
@@ -229,9 +229,12 @@ Per utilizzare i componenti Forms adattivi in una pagina AEM Sites, includi le l
 1. Sfoglia e seleziona il modulo adattivo da incorporare nel [!UICONTROL Percorso risorsa].
 1. Salva le impostazioni. Il modulo adattivo è ora incorporato nella pagina .
 
+>[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+
 #### Configurare le proprietà di incorporamento _ del modulo adattivo
 
-Puoi personalizzare le impostazioni avanzate della [!UICONTROL Modulo adattivo - Incorporato] componente. In [!UICONTROL Modifica Forms adattivo - Incorpora] è possibile specificare quanto segue.
+Puoi personalizzare le impostazioni avanzate della [!UICONTROL Modulo adattivo - Incorporamento (v2)] componente. In [!UICONTROL Modifica Forms adattivo - Incorpora (v2)] è possibile specificare quanto segue.
+
 * **Percorso risorsa**: Sfoglia e seleziona il modulo adattivo da incorporare. Viene compilato automaticamente se viene rilasciato dal browser Risorse.
 * **Invia invio** : Selezionare l’azione da attivare all’invio del modulo. Puoi scegliere di mostrare un messaggio di ringraziamento o una pagina di ringraziamento.
    * **Mostra messaggio di ringraziamento**: Scrivere un messaggio utilizzando l’editor Rich Text da visualizzare durante l’invio del modulo. Questa opzione è disponibile solo quando scegli di mostrare un messaggio di ringraziamento.
@@ -272,4 +275,3 @@ Per modificare una configurazione o una proprietà del modulo adattivo incorpora
 ![Supporto di layout AF](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM pagina siti mantiene un riferimento al modulo adattivo. Quando traduci una pagina AEM Sites, traduce automaticamente un Modulo adattivo e le relative risorse di riferimento associate utilizzando [progetti di traduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) in altre lingue.
-
