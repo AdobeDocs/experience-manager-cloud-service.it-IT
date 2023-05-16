@@ -3,7 +3,7 @@ title: Aggiornamenti della versione di AEM
 description: Scopri come AEM as a Cloud Service utilizza l’integrazione continua e la consegna (CI/CD) per mantenere i progetti sulla versione più recente.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 58ad2e4dec1c55426846f16918b3de13846ac03d
+source-git-commit: 59bc2b5af22ef23775195f098517cec40d98d66b
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 23%
@@ -51,6 +51,6 @@ Se l’aggiornamento dell’ambiente di produzione non riesce, Cloud Manager rip
 
 Nella maggior parte dei casi, gli aggiornamenti non genereranno tempi di inattività, anche per l’istanza di authoring, che è un cluster di nodi. Gli aggiornamenti continui sono possibili a causa di [la funzione di archiviazione dei nodi compositi in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Questa funzione consente AEM fare riferimento contemporaneamente a più archivi. In caso di rotolamento [distribuzione blu-verde,](/help/operations/indexing.md#what-is-blue-green-deployment) la nuova versione AEM verde contiene la propria `/libs` (archivio immutabile basato su TarMK), diverso dalla vecchia versione di AEM blu, anche se entrambi fanno riferimento a un archivio mutabile basato su DocumentMK condiviso che contiene aree come `/content` , `/conf` , `/etc` e altri.
+Questa funzione consente AEM fare riferimento contemporaneamente a più archivi. In caso di rotolamento [distribuzione blu-verde,](/help/implementing/deploying/overview.md#index-management-using-blue-green-deployments) la nuova versione AEM verde contiene la propria `/libs` (archivio immutabile basato su TarMK), diverso dalla vecchia versione di AEM blu, anche se entrambi fanno riferimento a un archivio mutabile basato su DocumentMK condiviso che contiene aree come `/content` , `/conf` , `/etc` e altri.
 
 Perché sia il blu che il verde hanno le loro versioni di `/libs`, possono essere entrambi attivi durante l’aggiornamento continuo, sia assumendo traffico fino a quando il blu non viene completamente sostituito dal verde.
