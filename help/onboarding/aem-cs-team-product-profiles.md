@@ -2,10 +2,10 @@
 title: Team e profili di prodotto di AEM as a Cloud Service
 description: Scopri come usare i team e i profili di prodotto di AEM as a Cloud Service per consentire e limitare l’accesso alle soluzioni Adobe con licenza.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 225b34f081a942d67dfc1f6faeb09763ea9fde03
+source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 100%
+source-wordcount: '778'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,10 @@ Durante l’onboarding, i membri del gruppo di AEM as a Cloud Service vengono ag
 >Ogni utente assegnato a un profilo di prodotto di AEM as a Cloud Service ha accesso in sola lettura a Cloud Manager tramite il ruolo **Utente di Cloud Manager**.
 >
 >Gli utenti con il solo ruolo di **Utente di Cloud Manager** possono accedere a Cloud Manager e passare agli ambienti di authoring di AEM (se esistono) utilizzando le opzioni del menu **Programmi**. Il ruolo **Utente di Cloud Manager** non è sufficiente per accedere ai dettagli dei programmi. Se tale accesso è necessario, l’amministratore di sistema deve assegnare agli utenti ruoli aggiuntivi.
+
+>[!WARNING]
+>
+>La **Amministratori AEM** il nome del profilo di prodotto non deve essere modificato. Modifica del nome della **Amministratori AEM** il profilo di prodotto rimuoverà i diritti di amministratore da tutti gli utenti assegnati a tale profilo.
 
 >[!TIP]
 >
