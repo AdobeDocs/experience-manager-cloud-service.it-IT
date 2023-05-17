@@ -4,10 +4,10 @@ description: Integrazione con Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
-workflow-type: ht
+source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
+workflow-type: tm+mt
 source-wordcount: '1047'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ Per modificare la configurazione di Target, segui questi passaggi:
 
 Per applicare una configurazione dell&#39;interfaccia utente touch a un sito, vai a: **Sites** → **Seleziona una pagina del sito** → **Proprietà** → **Avanzate** → **Configurazione** → Seleziona il tenant di configurazione.
 
-## Integrazione di Adobe Target sui siti AEM utilizzando Adobe Launch {#integrate-target-launch}
+## Integrazione di Adobe Target in AEM Sites utilizzando Adobe Launch {#integrate-target-launch}
 
 AEM offre un’integrazione standard con Experience Platform Launch. Aggiungendo l’estensione Adobe Target a Experience Platform Launch, puoi utilizzare le funzioni di Adobe Target sulle pagine web AEM. Il rendering delle librerie di Target verrà eseguito solo utilizzando Launch.
 
@@ -150,7 +150,7 @@ Per informazioni su come costruire e pubblicare, consulta questa [pagina](https:
   <tr>
     <td>Posizione della configurazione Target.</td>
     <td>/etc/cloudservices/testandtarget/</td>
-    <td>/conf/tenant/settings/cloudservices/target/</td>
+    <td>/conf/tenant/settings/cloudconfigs/target/</td>
     <td> In precedenza erano presenti più configurazioni presso /etc/cloudservices/testandtarget, ma ora è presente una singola configurazione con un tenant.</td>
   </tr>
 </table>
