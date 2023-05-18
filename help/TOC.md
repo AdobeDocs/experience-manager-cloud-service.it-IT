@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a29ef2aa19d37a56e521524b931818a08cf0cb75
+source-git-commit: cf927f5cc1fca3720716349b1758a47c7b395218
 workflow-type: tm+mt
-source-wordcount: '4071'
+source-wordcount: '4074'
 ht-degree: 99%
 
 ---
@@ -386,6 +386,7 @@ ht-degree: 99%
    + [Panoramica dei microservizi per le risorse](/help/assets/asset-microservices-overview.md)
    + [Accessibilità in [!DNL Assets]](/help/assets/accessibility.md)
    + Consente di gestire i contenuti digitali {#manage}
+      + [Selettore risorsa microfrontale](/help/assets/asset-selector.md)
       + [Condividere le risorse](/help/assets/share-assets.md)
       + [Monitorare attività e attività DAM](/help/assets/assets-activity-history.md)
       + [Introduzione all’utilizzo dei microservizi per le risorse](/help/assets/asset-microservices-configure-and-use.md)
