@@ -2,7 +2,7 @@
 title: Ambienti di sviluppo rapidi
 description: Scopri come sfruttare gli ambienti di sviluppo rapido per iterazioni di sviluppo rapide in un ambiente cloud.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
+source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
 workflow-type: tm+mt
 source-wordcount: '3325'
 ht-degree: 5%
@@ -118,13 +118,7 @@ Dopo aver aggiunto un RDE per il programma utilizzando Cloud Manager, puoi inter
    3. Workspace: <no workspace selected>
    ```
 
-1. Verifica che l&#39;accesso sia stato completato correttamente eseguendo
-
-   `aio cloudmanager:list-programs`
-
-   Questo dovrebbe elencare tutti i programmi nell&#39;organizzazione configurata.
-
-   Tieni presente che quanto sopra richiede di essere membro di Cloud Manager **Sviluppatore - Cloud Service** Profilo prodotto. Vedi [questa pagina](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) per ulteriori dettagli.
+   Tieni presente che questo passaggio ti richiede di essere membro di Cloud Manager **Sviluppatore - Cloud Service** Profilo prodotto. Vedi [questa pagina](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) per ulteriori dettagli.
 
    In alternativa, puoi confermare di disporre di questo ruolo di sviluppatore se puoi accedere alla console di sviluppo eseguendo questo comando:
 
@@ -138,6 +132,13 @@ Dopo aver aggiunto un RDE per il programma utilizzando Cloud Manager, puoi inter
    ```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
+
+1. Verifica che l&#39;accesso sia stato completato correttamente eseguendo
+
+   `aio cloudmanager:list-programs`
+
+   Questo dovrebbe elencare tutti i programmi nell&#39;organizzazione configurata.
+
 
 Per ulteriori informazioni e dimostrazioni, consulta la sezione [come impostare un RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) esercitazione video.
 
