@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
+source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
 workflow-type: tm+mt
-source-wordcount: '5887'
+source-wordcount: '5868'
 ht-degree: 2%
 
 ---
@@ -424,10 +424,6 @@ Alcuni vantaggi principali dell’abilitazione di DASH sul tuo account includono
 * Consente di rendere la distribuzione video più accessibile ai clienti.
 * Ottieni anche l’URL in streaming tramite API.
 
-   >[!IMPORTANT]
-   >
-   >L’abilitazione di DASH sul tuo account è attualmente disponibile solo in Asia-Pacifico e Nord America; presto in Europa-Medio Oriente-Africa.
-
 Avvii una richiesta per utilizzare DASH; non viene attivato automaticamente sul tuo account.
 
 Per abilitare DASH sul tuo account, crea un caso di assistenza clienti come descritto di seguito. Nel tuo caso di assistenza, specifica di abilitare DASH sul tuo account Dynamic Media e ad Experience Manager.
@@ -435,7 +431,7 @@ Per abilitare DASH sul tuo account, crea un caso di assistenza clienti come desc
 **Per abilitare DASH sul tuo account:**
 
 1. [Utilizza l’Admin Console per avviare la creazione di un nuovo caso di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
-1. Segui le istruzioni per creare un caso di assistenza e assicurati di fornire le seguenti informazioni:
+1. Per creare un caso di assistenza, segui le istruzioni e assicurati di fornire le seguenti informazioni:
 
    * Nome contatto principale, e-mail, telefono.
    * Nome del tuo account Dynamic Media.
