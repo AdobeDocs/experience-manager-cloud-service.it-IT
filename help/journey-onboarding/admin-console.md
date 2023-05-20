@@ -105,7 +105,7 @@ Ora puoi continuare il percorso di onboarding scoprendo come [assegnare i membri
 
 ## Risorse aggiuntive {#additional-resources}
 
-Di seguito sono riportate ulteriori risorse facoltative, se desideri andare oltre il contenuto del percorso di onboarding.
+Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
 * [Panoramica di Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html): una panoramica completa di Admin Console
 * [Creazione o aggiornamento dell’Adobe ID](https://helpx.adobe.com/it/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID/): scopri come creare un Adobe ID, come modificarlo e gestirne più di uno.

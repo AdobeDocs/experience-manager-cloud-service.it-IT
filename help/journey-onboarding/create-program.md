@@ -53,11 +53,11 @@ Per creare un programma sandbox, segui la procedura riportata di seguito.
 
    ![Pagina di destinazione di Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. Dalla procedura guidata Crea programma, seleziona **Configurare una sandbox** e fornisci il nome del programma e tocca o fai clic su **Continua**.
+1. Dalla procedura guidata Crea programma, seleziona **Configurare una sandbox** e specifica il nome del programma, quindi tocca o fai clic su **Continua**.
 
    ![Creazione dei tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. In **Configurare la sandbox** è possibile scegliere le soluzioni da attivare nel programma sandbox. La **Sites** e **Risorse** le soluzioni sono sempre incluse nei programmi sandbox e vengono selezionate automaticamente. Questo è sufficiente per il nostro esempio di onboarding. Fai clic su **Crea**.
+1. In **Configurare la sandbox** , puoi scegliere le soluzioni da abilitare nel programma sandbox. Il **Sites** e **Risorse** le soluzioni sono sempre incluse nei programmi sandbox e vengono selezionate automaticamente. Questo è sufficiente per il nostro esempio di onboarding. Fai clic su **Crea**.
 
    ![Selezione della soluzione](assets/set-up-sandbox-onboarding.png)
 
@@ -73,7 +73,7 @@ Ora che hai creato il primo programma, puoi creare degli ambienti da aggiungere.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Di seguito sono riportate ulteriori risorse facoltative, se desideri andare oltre il contenuto del percorso di onboarding.
+Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
 * [Programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): scopri la gerarchia di Cloud Manager, le differenze tra i diversi tipi di programmi e come si adattano alla struttura gerarchica.
 * [Creazione di programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md): scopri come creare un programma sandbox personalizzato da utilizzare per formazione, demo, POC o altre finalità non di produzione con Cloud Manager.

@@ -101,7 +101,7 @@ Tuttavia, se desideri comprendere meglio l’utilizzo del sistema dalla prospett
 
 ## Risorse aggiuntive {#additional-resources}
 
-Di seguito sono riportate ulteriori risorse facoltative, se desideri andare oltre il contenuto del percorso di onboarding.
+Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
 * [Gestione di prodotti e accesso degli utenti in Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console): scopri come gestire l’accesso degli utenti con Admin Console.
 * [Procedura guidata per la configurazione dell’accesso a AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=it): una procedura guidata semplificata per scoprire come configurare utenti Adobe IMS, gruppi di utenti e profili di prodotto in Admin Console.

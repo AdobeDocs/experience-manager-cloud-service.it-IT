@@ -10,7 +10,7 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 16%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ Le parole chiave di Adaptive Forms sono identificatori predefiniti e riservati c
    <td><p>minOccur</p> </td>
   </tr>
   <tr>
-   <td><p>validate</p> </td>
+   <td><p>convalida</p> </td>
    <td><p>setGuideState</p> </td>
    <td><p>maxOccur</p> </td>
   </tr>
@@ -38,7 +38,7 @@ Le parole chiave di Adaptive Forms sono identificatori predefiniti e riservati c
   </tr>
   <tr>
    <td><p>checkIfNull</p> </td>
-   <td><p>initialize</p> </td>
+   <td><p>inizializzare</p> </td>
    <td><p>instanceTemplateId</p> </td>
   </tr>
   <tr>
@@ -102,7 +102,7 @@ Le parole chiave di Adaptive Forms sono identificatori predefiniti e riservati c
    <td><p>name</p> </td>
   </tr>
   <tr>
-   <td><p>mandatory</p> </td>
+   <td><p>obbligatorio</p> </td>
    <td><p>pannello</p> </td>
    <td><p>templateId</p> </td>
   </tr>
@@ -118,7 +118,7 @@ Le parole chiave di Adaptive Forms sono identificatori predefiniti e riservati c
   </tr>
   <tr>
    <td><p>validatePictureClauseMessage</p> </td>
-   <td><p>items</p> </td>
+   <td><p>elementi</p> </td>
    <td><p>nonLocalizedTitle</p> </td>
   </tr>
   <tr>
@@ -197,7 +197,7 @@ Le parole chiave di Adaptive Forms sono identificatori predefiniti e riservati c
    <td><p>activePart</p> </td>
   </tr>
   <tr>
-   <td><p>toolbar</p> </td>
+   <td><p>barra strumenti</p> </td>
    <td><p>completionBeforeMessage</p> </td>
    <td><p>isLastPart</p> </td>
   </tr>

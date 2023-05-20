@@ -198,7 +198,7 @@ Quando è selezionato, l’editor elementi dati esegue il rendering di un modulo
 
 Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) per l’elenco degli eventi supportati da ciascun tipo di visualizzatore; passa a sezione visualizzatore specifica, quindi seleziona Supporto per il tracciamento di Adobe Analytics sottosezione. Attualmente, la guida di riferimento per i visualizzatori Dynamic Media non documenta gli argomenti dell’evento.
 
-Consideriamo ora il ciclo di vita dei visualizzatori Dynamic Media *Elemento dati*. Il valore di tale elemento dati viene popolato dopo che l’evento visualizzatore Dynamic Media corrispondente si verifica sulla pagina. Ad esempio, supponiamo che l’elemento dati punti al **[!UICONTROL CARICA]** e il relativo argomento &quot;asset&quot;. Il valore di tale elemento dati riceve dati validi dopo che il visualizzatore ha eseguito l&#39;evento LOAD per la prima volta. Se l’elemento dati punta al **[!UICONTROL ZOOM]** e il relativo argomento &quot;scale&quot;, il valore di tale elemento dati rimane vuoto fino a quando il visualizzatore non invia un **[!UICONTROL ZOOM]** per la prima volta.
+Consideriamo ora il ciclo di vita dei visualizzatori Dynamic Media *Elemento dati*. Il valore di tale elemento dati viene popolato dopo che l’evento visualizzatore Dynamic Media corrispondente si verifica sulla pagina. Ad esempio, supponiamo che l’elemento dati punti al **[!UICONTROL CARICA]** e il relativo argomento &quot;asset&quot;. Il valore di tale elemento dati riceve dati validi dopo che il visualizzatore ha eseguito l&#39;evento LOAD per la prima volta. Se l’elemento dati punta al **[!UICONTROL ZOOM]** e il relativo argomento &quot;scale&quot;, il valore di tale elemento dati rimane vuoto finché il visualizzatore non invia un **[!UICONTROL ZOOM]** per la prima volta.
 
 Allo stesso modo, i valori di Elementi dati vengono aggiornati automaticamente quando il visualizzatore invia un evento corrispondente sulla pagina. L’aggiornamento del valore si verifica anche se l’evento specifico non è indicato nella configurazione Regola. Supponiamo ad esempio un elemento dati **[!UICONTROL ZoomScale]** è definito per il parametro &quot;scale&quot; dell’evento ZOOM. Tuttavia, l’unica regola presente nella configurazione Regola viene attivata da **[!UICONTROL CARICA]** evento. Il valore di **[!UICONTROL ZoomScale]** viene comunque aggiornato ogni volta che un utente esegue lo zoom all’interno del visualizzatore.
 
@@ -511,7 +511,7 @@ Vedi anche [Configurare una proprietà di tocco](https://experienceleague.adobe.
 **Per creare una proprietà in Experience Platform Tags:**
 
 1. In Tag Experience Platform, seleziona **[!UICONTROL Nuova proprietà]**.
-1. Nella finestra di dialogo **[!UICONTROL Crea proprietà]**, digita un nome descrittivo nel campo **[!UICONTROL Nome]**, ad esempio il titolo del tuo sito web. Esempio, `DynamicMediaViewersProp.`
+1. Nella finestra di dialogo **[!UICONTROL Crea proprietà]**, digita un nome descrittivo nel campo **[!UICONTROL Nome]**, ad esempio il titolo del tuo sito web. Ad esempio `DynamicMediaViewersProp.`
 1. In **[!UICONTROL Domini]** , immetti il dominio del tuo sito web.
 1. Se l’estensione da utilizzare, in questo caso **[!UICONTROL Dynamic Media Viewers]**, non è ancora stata rilasciata, abilita **[!UICONTROL Configure for extension development (Configura per lo sviluppo dell’estensione) (l’opzione non può essere modificata in seguito)]** nel menu a discesa *Opzioni avanzate*.
 
@@ -591,7 +591,7 @@ Per modificare la configurazione dei tag Experience Platform (comprese le impost
 
 I tag di Experience Platform possono potenzialmente avere più ambienti di sviluppo, un ambiente di staging e un ambiente di produzione. Per impostazione predefinita, l’Experience Platform Configurazione cloud dei tag in Experience Manager punta il nodo dell’autore dell’Experience Manager all’ambiente di stage dei tag della piattaforma. Il nodo Publish di Experience Manager punta all’ambiente di produzione dei tag di Experience Platform. Ciò significa che con le impostazioni di Experience Manager predefinite, è necessario pubblicare la libreria dei tag di Experience Platform nell’ambiente di staging. In questo modo puoi utilizzarlo in Experience Manager Author. Puoi quindi pubblicarlo nell’ambiente di produzione in modo che possa essere utilizzato in Experience Manager Publish.
 
-Consulta [Ambienti](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) per ulteriori informazioni sugli ambienti Tag di Experience Platform.
+Consulta [Ambienti](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=it) per ulteriori informazioni sugli ambienti Tag di Experience Platform.
 
 La pubblicazione di una libreria prevede i due passaggi seguenti:
 

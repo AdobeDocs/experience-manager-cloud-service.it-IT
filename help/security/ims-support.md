@@ -142,7 +142,7 @@ Verrà visualizzato un elenco delle istanze esistenti:
 
 In ogni istanza del contesto di prodotto, ci saranno istanze che si estendono sui servizi di authoring o pubblicazione in ambienti di produzione, stage o sviluppo. Ogni istanza sarà associata ai ruoli di Product Profiles o Cloud Manager. che vengono utilizzati per assegnare a utenti e gruppi l’accesso con il privilegio richiesto.
 
-La **Amministratori AEM_xxx** verrà utilizzato per concedere privilegi di amministratore nell’istanza AEM associata mentre il **Utenti AEM_xxx** viene utilizzato per aggiungere utenti normali.
+Il **Amministratori AEM_xxx** verrà utilizzato per concedere privilegi di amministratore nell’istanza AEM associata mentre **Utenti AEM_xxx** Il profilo viene utilizzato per aggiungere utenti normali.
 
 Tutti gli utenti e i gruppi aggiunti in questo profilo di prodotto potranno accedere a questa particolare istanza come mostrato nell’esempio seguente:
 
@@ -150,7 +150,7 @@ Tutti gli utenti e i gruppi aggiunti in questo profilo di prodotto potranno acce
 
 >[!WARNING]
 >
->La **Amministratori AEM** il nome del profilo di prodotto non deve essere modificato. Modifica del nome della **Amministratori AEM** il profilo di prodotto rimuoverà i diritti di amministratore da tutti gli utenti assegnati a tale profilo.
+>Il **Amministratori AEM** il nome del profilo di prodotto non deve essere modificato. Modifica del nome del **Amministratori AEM** Il profilo di prodotto rimuoverà i diritti di amministratore da tutti gli utenti assegnati a quel profilo.
 
 ### Accesso ad Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 

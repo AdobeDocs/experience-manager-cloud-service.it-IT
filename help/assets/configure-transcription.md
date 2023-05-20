@@ -25,7 +25,7 @@ La trascrizione è il processo di traduzione dell’audio da un file audio o vid
 
 Le trascrizioni sono versioni testuali del contenuto parlato; un esempio è un filmato che visualizzi su qualsiasi piattaforma OTT e che spesso include didascalie o sottotitoli per facilitarne l’accessibilità o per consumarne il contenuto in altre lingue. Oppure qualsiasi file audio o video utilizzato per scopi di marketing, apprendimento o intrattenimento. Queste esperienze iniziano con una trascrizione che viene poi formattata o tradotta come appropriato. La trascrizione di audio o video è un processo che richiede molto tempo ed è soggetto a errori quando viene eseguito manualmente. Il processo manuale rende difficile anche la scalabilità, necessaria data la crescente necessità di contenuti audio-video. [!DNL Experience Manager Assets] utilizza la trascrizione basata sull’intelligenza artificiale di Azure che consente l’elaborazione su larga scala delle risorse audio e video e genera le trascrizioni di testo (file .vtt) insieme ai dettagli delle marche temporali. Oltre ad Assets, la funzione di trascrizione è supportata anche da Dynamic Media.
 
-La funzione di trascrizione è disponibile senza alcun costo in [!DNL Experience Manager Assets]. Tuttavia, gli amministratori richiedono le credenziali di Azure dell’utente per configurare il servizio di trascrizione in [!DNL Experience Manager Assets]. È inoltre possibile [ottenere le credenziali di prova](https://azure.microsoft.com/en-us/pricing/details/media-services/) direttamente da Microsoft® per scoprire la funzione di trascrizione audio o video in Assets.
+La funzione di trascrizione è disponibile senza alcun costo in [!DNL Experience Manager Assets]. Tuttavia, per configurare il servizio di trascrizione in gli amministratori hanno bisogno delle credenziali di Azure dell’utente [!DNL Experience Manager Assets]. È inoltre possibile [ottenere le credenziali di prova](https://azure.microsoft.com/en-us/pricing/details/media-services/) direttamente da Microsoft® per scoprire la funzione di trascrizione audio o video in Assets.
 
 ## Prerequisiti per la trascrizione {#prerequisites}
 
@@ -171,7 +171,7 @@ Accedi al tuo account [!DNL Azure Media Services] con le stesse credenziali (que
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Formati di file supportati da Assets](file-format-support.md)
 * [Cercare risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)

@@ -565,4 +565,4 @@ I pacchetti AEM possono essere utilizzati per creare e condividere contenuti tra
 
 [Distribuzione di software](https://downloads.experiencecloud.adobe.com) fornisce pacchetti AEM da utilizzare sull’SDK per AEM per lo sviluppo locale. I pacchetti AEM forniti nella Distribuzione di software non devono essere installati in ambienti cloud AEMaaCS a meno che non siano espressamente approvati dal Supporto Adobe.
 
-Per ulteriori informazioni, consulta [Documentazione di Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+Per ulteriori informazioni, consulta [Documentazione di Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).

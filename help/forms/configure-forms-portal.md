@@ -132,7 +132,7 @@ Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/
 
 Il componente collegamento consente di fornire nella pagina i collegamenti a un modulo adattivo. Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/configure_icon.png). Il [!UICONTROL Modifica componente collegamento] viene visualizzata una finestra di dialogo.
 
-1. In [!UICONTROL Visualizzazione] , fornire la didascalia del collegamento e la descrizione comando per facilitare l&#39;identificazione dei moduli rappresentati dal collegamento.
+1. In [!UICONTROL Visualizzazione] , fornisci la didascalia del collegamento e la descrizione comando per facilitare l&#39;identificazione dei moduli rappresentati dal collegamento.
 1. In [!UICONTROL Info risorsa] , specifica il percorso dell’archivio in cui è memorizzata la risorsa.
 1. In [!UICONTROL Parametri query] , specificare i parametri aggiuntivi nel formato coppia chiave-valore. Quando fai clic sul collegamento, questi parametri aggiuntivi vengono trasmessi insieme al modulo.
 
@@ -169,6 +169,6 @@ Puoi configurare la funzione di salvataggio automatico per un modulo adattivo co
 
 1. Nell’istanza di authoring, apri un modulo adattivo in modalità di modifica.
 1. Dal riquadro a sinistra, tocca il ![Icona Proprietà](assets/configure_icon.png) ed espandi [!UICONTROL SALVATAGGIO AUTOMATICO] opzione.
-1. Seleziona la **[!UICONTROL Abilita]** per abilitare il salvataggio automatico del modulo. Puoi configurare le seguenti operazioni:
+1. Seleziona la **[!UICONTROL Abilita]** per abilitare il salvataggio automatico del modulo. Puoi configurare quanto segue:
 * Per impostazione predefinita, il [!UICONTROL Evento modulo adattivo] è impostato su &quot;true&quot;, il che implica che il modulo viene salvato automaticamente dopo ogni evento.
 * In entrata [!UICONTROL Trigger], configura per attivare il salvataggio automatico in base al verificarsi di un evento o dopo un intervallo di tempo specifico.

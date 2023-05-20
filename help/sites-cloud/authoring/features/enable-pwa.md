@@ -26,7 +26,7 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
 
 ## Introduzione {#introduction}
 
-[Le app web progressive (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) abilitano esperienze simili alle applicazioni immersive per AEM siti, consentendo loro di memorizzarle localmente sul computer di un utente e di essere accessibili offline. Un utente può navigare su un sito mentre è in movimento anche se perde una connessione a Internet. Le PWA consentono esperienze senza soluzione di continuità anche in caso di perdita o instabilità della rete.
+Le [app web progressive (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) abilitano esperienze simili alle applicazioni immersive per siti di AEM Sites, che possono essere memorizzate localmente sul computer di un utente ed essere accessibili offline. Un utente può navigare su un sito mentre è in movimento anche se perde una connessione a Internet. Le PWA consentono esperienze senza soluzione di continuità anche in caso di perdita o instabilità della rete.
 
 Invece di richiedere una nuova codifica del sito, un autore di contenuti può configurare le proprietà di PWA come scheda aggiuntiva nella sezione [proprietà della pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) di un sito.
 
@@ -50,7 +50,7 @@ Questi sono i passaggi tecnici che l’autore dovrà coordinare con il team di s
 
 ### Utilizzare componenti core {#adjust-components}
 
-La versione 2.15.0 e successive dei componenti core supporta completamente le funzioni PWA dei siti AEM. Poiché AEMaaCS include sempre la versione più recente dei componenti core, puoi sfruttare le funzionalità di PWA predefinite. Il progetto AEMaaCS soddisfa automaticamente questo requisito.
+La versione 2.15.0 o successiva dei componenti core supporta completamente le funzioni PWA di AEM Sites. Poiché AEMaaCS include sempre la versione più recente dei componenti core, puoi sfruttare le funzionalità di PWA predefinite. Il progetto AEMaaCS soddisfa automaticamente questo requisito.
 
 >[!NOTE]
 >

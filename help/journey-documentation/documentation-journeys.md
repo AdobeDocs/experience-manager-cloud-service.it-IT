@@ -92,7 +92,7 @@ Sono già disponibili diversi Percorsi di documentazione. Poiché ogni percorso 
 | [Percorso di traduzione headless](/help/journey-headless/translation/overview.md) | Inizia qui per scoprire come impostare e gestire i tuoi progetti di traduzione headless in AEM. |
 | [Percorso di onboarding AEM](/help/journey-onboarding/overview.md) | Inizia qui per cominciare a lavorare rapidamente con il tuo nuovo ambiente AEM as a Cloud Service. |
 | [Percorso di creazione di siti rapidi AEM](/help/journey-sites/quick-site/overview.md) | Inizia qui per un percorso guidato attraverso lo strumento di creazione rapida del sito AEM per semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza alcuna conoscenza del back-end di AEM. |
-| Percorso Commerce AEM | In arrivo. |
+| Percorso AEM Commerce | In arrivo. |
 | [Percorso di migrazione ad AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Inizia qui per un percorso passo passo su come migrare dall’installazione di AEM on-premise o gestito da Adobe ad AEM as a Cloud Service completamente basato sul cloud e approfittare dei numerosi vantaggi che ne derivano. |
 
 Torna a controllare i nuovi contenuti, man mano che sono disponibili nuovi percorsi.

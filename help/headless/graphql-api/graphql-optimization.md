@@ -1,13 +1,13 @@
 ---
 title: Ottimizzazione delle query GraphQL
 description: Scopri come ottimizzare le query GraphQL per il filtro, il paging e l’ordinamento dei frammenti di contenuto in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
-source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
+exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 100%
 
 ---
-
 
 # Ottimizzazione delle query GraphQL {#optimizing-graphql-queries}
 

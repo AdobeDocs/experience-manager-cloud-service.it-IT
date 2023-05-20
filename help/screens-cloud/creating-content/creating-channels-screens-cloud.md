@@ -5,7 +5,7 @@ exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 5%
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ Segui i passaggi seguenti per creare un nuovo canale di sequenza in Screens as a
 
 ## Gestione di un canale {#managing-channels}
 
-Puoi modificare, visualizzare le proprietà e il dashboard, copiare, visualizzare in anteprima e eliminare un canale.
+Puoi modificare, visualizzare proprietà e dashboard, copiare, visualizzare in anteprima ed eliminare un canale.
 
 Passa al canale dal progetto e seleziona il canale, come illustrato nella figura riportata di seguito. È ora possibile selezionare le opzioni, ad esempio modificare il canale, visualizzare le proprietà, visualizzare l’anteprima del contenuto, gestire la pubblicazione o eliminare il canale dalla barra delle azioni.
 
@@ -62,7 +62,7 @@ Passa al canale dal progetto e seleziona il canale, come illustrato nella figura
 
 ### Aggiunta di contenuto a un canale {#add-content}
 
-Per aggiungere o modificare il contenuto di un canale, segui i passaggi riportati di seguito:
+Per aggiungere o modificare il contenuto di un canale, effettua le seguenti operazioni:
 
 1. Selezionate il canale da modificare, come illustrato nella figura riportata di seguito. Fai clic su **Modifica** dall’angolo in alto a sinistra della barra delle azioni per aprire l’editor.
 
@@ -84,7 +84,7 @@ Sono disponibili i seguenti modelli quando si utilizza **Crea** procedura guidat
 
 | Modelli disponibili | Descrizione |
 |--- |--- |
-| Cartella canali | Consente di creare una cartella per memorizzare la raccolta dei canali. |
+| Cartella canali | Consente di creare una cartella per archiviare la raccolta di canali. |
 | Canale per sequenza | Consente di creare un canale che riproduce i componenti in sequenza (uno per uno in una presentazione). |
 | Canale schermo diviso barra a L sinistra o destra | Consente agli autori di contenuto di visualizzare diversi tipi di risorse in aree di dimensioni appropriate. |
 

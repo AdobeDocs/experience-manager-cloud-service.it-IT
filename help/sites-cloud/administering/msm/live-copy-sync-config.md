@@ -7,7 +7,7 @@ exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -21,15 +21,15 @@ Adobe Experience Manager fornisce diverse configurazioni di sincronizzazione pro
 
 ## Configurazioni di rollout installate e personalizzate {#installed-and-custom-rollout-configurations}
 
-Questa sezione fornisce informazioni sulle configurazioni di rollout installate e sulle azioni di sincronizzazione che utilizzano, nonché su come creare configurazioni personalizzate, se richiesto.
+Questa sezione fornisce informazioni sulle configurazioni di rollout installate e sulle azioni di sincronizzazione da esse utilizzate, nonché su come creare configurazioni personalizzate, se necessario.
 
 >[!CAUTION]
 >
 >L’aggiornamento o la modifica di una configurazione di rollout preconfigurata **non** è consigliato. Se è necessaria un’azione live personalizzata, questa deve essere aggiunta in una configurazione di rollout personalizzata.
 
-### Attivatori di rollout {#rollout-triggers}
+### Attivatori rollout {#rollout-triggers}
 
-Ogni configurazione di rollout utilizza un attivatore (o trigger) di rollout che determina l’esecuzione dell’implementazione. Le configurazioni di rollout possono utilizzare uno dei seguenti attivatori:
+Ogni configurazione di rollout utilizza un attivatore (o trigger) di rollout che determina l’esecuzione dell’implementazione. Le configurazioni di rollout possono utilizzare uno dei seguenti trigger:
 
 * **Al momento del rollout**: quando viene utilizzato il comando **Rollout** nella pagina blueprint oppure il comando **Sincronizza** nella pagina Live Copy.
 * **In caso di modifica**: quando la pagina sorgente viene modificata.
@@ -100,7 +100,7 @@ Puoi configurare diversi servizi OSGi che supportano le azioni di sincronizzazio
 
 Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per ulteriori dettagli e procedure consigliate, consulta [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md).
 
-Nella tabella seguente sono elencate le azioni di sincronizzazione per le quali è possibile specificare i nodi da escludere. La tabella fornisce i nomi dei servizi da configurare mediante la Console web e il PID per la configurazione mediante un nodo di archivio.
+Nella tabella seguente sono elencate le azioni di sincronizzazione per le quali è possibile specificare i nodi da escludere. La tabella fornisce i nomi dei servizi da configurare utilizzando la console web e il PID per la configurazione utilizzando un nodo dell’archivio.
 
 | Azione di sincronizzazione | Nome del servizio nella console Web | Servizio PID |
 |---|---|---|
@@ -119,11 +119,11 @@ La tabella seguente descrive le proprietà che puoi configurare:
 | Proprietà pagina escluse | `cq.wcm.msm.action.excludedprops` | Un’espressione regolare che corrisponde alle proprietà della pagina da escludere dall’azione di sincronizzazione |
 | Tipi di nodi Mixin ignorati | `cq.wcm.msm.action.ignoredMixin` | Un’espressione regolare che corrisponde ai tipi di nodo mixin che devono essere esclusi dall’azione di sincronizzazione (disponibile solo per l&#39;azione `contentUpdate`) |
 
-#### Azione di aggiornamento dei contenuti di CQ MSM - Esclusioni {#cq-msm-content-update-action-exclusions}
+#### CQ MSM Content Update Action - Esclusioni {#cq-msm-content-update-action-exclusions}
 
-Diverse proprietà e tipi di nodo sono esclusi per impostazione predefinita; essi sono definiti nella configurazione OSGi dell’**Azione di aggiornamento dei contenuti di CQ MSM**, in **Proprietà pagina escluse**.
+Per impostazione predefinita, sono escluse diverse proprietà e tipi di nodo, definiti nella configurazione OSGi di **CQ MSM Content Update Action**, in **Proprietà pagina esclusa**.
 
-Per impostazione predefinita, le proprietà che corrispondono alle seguenti espressioni regolari vengono escluse (ovvero non aggiornate) durante il rollout:
+Per impostazione predefinita, le proprietà che corrispondono alle seguenti espressioni regolari sono escluse (ovvero non aggiornate) al momento del rollout:
 
 ![Regex di esclusione Live Copy](../assets/live-copy-exclude.png)
 
@@ -139,7 +139,7 @@ Puoi configurare diversi servizi OSGi che supportano le azioni di sincronizzazio
 
 Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per ulteriori dettagli e procedure consigliate, consulta [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md).
 
-Nella tabella seguente sono elencate le azioni di sincronizzazione per cui è possibile specificare l’aggiornamento dei riferimenti. La tabella fornisce i nomi dei servizi da configurare mediante la Console web e il PID per la configurazione mediante un nodo di archivio.
+Nella tabella seguente sono elencate le azioni di sincronizzazione per cui è possibile specificare l’aggiornamento dei riferimenti. La tabella fornisce i nomi dei servizi da configurare utilizzando la console web e il PID per la configurazione utilizzando un nodo dell’archivio.
 
 | Proprietà della console Web | Proprietà OSGi | Descrizione |
 |---|---|---|
@@ -157,7 +157,7 @@ Il seguente elenco di posizioni, in cui puoi specificare le configurazioni di ro
 * **Proprietà della pagina genitore della Live copy:** quando né la pagina Live Copy né la pagina sorgente blueprint presentano una configurazione di rollout, viene utilizzata la configurazione di rollout che si applica alla pagina genitore della Live Copy.
 * **[Impostazione predefinita del sistema](live-copy-sync-config.md#setting-the-system-default-rollout-configuration):** quando la configurazione di rollout della pagina genitore della Live Copy non può essere determinata, viene utilizzata la configurazione predefinita del sistema.
 
-Ad esempio, una blueprint utilizza il sito [WKND tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) come contenuto sorgente. Un sito viene creato dalla blueprint. Ogni voce dell’elenco seguente descrive uno scenario diverso rispetto all’uso delle configurazioni di rollout:
+Ad esempio, una blueprint utilizza il sito [WKND tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) come contenuto sorgente. Un sito viene creato dalla blueprint. Ogni elemento nel seguente elenco descrive uno scenario diverso relativo all’utilizzo delle configurazioni di rollout:
 
 * Nessuna delle pagine blueprint o delle Live Copy è impostata per l’utilizzo di una configurazione di rollout. MSM utilizza la configurazione di rollout predefinita del sistema per tutte le pagine Live Copy.
 * La pagina root del sito di riferimento WKND ha impostate diverse configurazioni di rollout. MSM utilizza queste configurazioni di rollout per tutte le pagine Live Copy.
@@ -179,9 +179,9 @@ Puoi anche impostare le configurazioni di rollout per una pagina Live Copy quand
 
 1. Se necessario, regola il flag **Ereditarietà Live Copy**. Se selezionato, la configurazione Live Copy ha effetto su tutte le pagine figlie.
 
-1. Deseleziona la proprietà **Eredita configurazione rollout da padre**, quindi seleziona una o più configurazioni di rollout dall’elenco.
+1. Cancella **Eredita configurazione rollout da padre** , quindi seleziona una o più configurazioni di rollout dall&#39;elenco.
 
-   Le configurazioni di rollout selezionate vengono visualizzate nell’elenco a discesa.
+   Le configurazioni di rollout selezionate vengono visualizzate sotto l’elenco a discesa.
 
    ![Ignorare l’ereditarietà della configurazione di Live Copy](../assets/live-copy-inherit-override.png)
 
@@ -189,9 +189,9 @@ Puoi anche impostare le configurazioni di rollout per una pagina Live Copy quand
 
 ### Impostazione della configurazione di rollout per una pagina blueprint {#setting-the-rollout-configuration-for-a-blueprint-page}
 
-Configura una pagina blueprint con le configurazioni di rollout da utilizzare quando la pagina blueprint è soggetta a rollout.
+Configura una pagina blueprint con le configurazioni di rollout da utilizzare quando viene eseguito il rollout della pagina blueprint.
 
-Considera che le pagine secondarie della pagina blueprint ereditano la configurazione. Quando imposti la configurazione di rollout da utilizzare, potresti sovrascrivere la configurazione che la pagina eredita dal sua pagina padre.
+Le pagine figlie della pagina blueprint ereditano la configurazione. Quando configuri la configurazione di rollout da utilizzare, potresti ignorare la configurazione che la pagina eredita dal suo elemento padre.
 
 1. Utilizza la console **Sites** per selezionare la pagina principale della blueprint.
 1. Seleziona **Proprietà** nella barra degli strumenti.

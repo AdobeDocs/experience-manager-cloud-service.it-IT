@@ -174,7 +174,7 @@ Si tratta di un predicato di solo filtro e non può sfruttare un indice di ricer
 
 * **`hasPermission`** : privilegi JCR separati da virgole che la sessione utente corrente deve TUTTI avere per il nodo in questione; ad esempio `jcr:write`, `jcr:modifyAccessControl`
 
-### language {#language}
+### lingua {#language}
 
 Questo predicato trova le pagine AEM in una lingua specifica. Vengono esaminate sia la proprietà lingua della pagina che il percorso della pagina, che spesso include la lingua o le impostazioni locali in una struttura del sito principale.
 
@@ -233,7 +233,7 @@ Supporta l’estrazione delle sfaccettature allo stesso modo della [`daterange`]
 * **`notexpired`** - booleano, `true` per non ancora scaduto (data futura o uguale), `false` per scaduto (data nel passato) (obbligatorio)
 * **`property`** : percorso relativo del `DATE` proprietà da verificare (obbligatoria)
 
-### path {#path}
+### percorso {#path}
 
 Questo predicato esegue ricerche all’interno di un determinato percorso.
 
@@ -294,7 +294,7 @@ Non supporta l’estrazione dei facet.
 
 Questo predicato corrisponde a `JCR DATE` proprietà rispetto a un intervallo di data/ora utilizzando gli offset temporali relativi all&#39;ora corrente del server. È possibile specificare `lowerBound` e `upperBound` utilizzando un valore in millisecondi o la sintassi Bugzilla `1s 2m 3h 4d 5w 6M 7y` (un secondo, due minuti, tre ore, quattro giorni, cinque settimane, sei mesi, sette anni) Prefisso con `-` per indicare un offset negativo prima dell&#39;ora corrente. Se si specifica solo `lowerBound` o `upperBound`, l&#39;altro verrà impostato automaticamente su `0`, che rappresenta l&#39;ora corrente.
 
-Esempio:
+Ad esempio:
 
 * `upperBound=1h` (e no `lowerBound`a) seleziona qualsiasi elemento nell&#39;ora successiva
 * `lowerBound=-1d` (e no `upperBound`a) seleziona qualsiasi elemento nelle ultime 24 ore

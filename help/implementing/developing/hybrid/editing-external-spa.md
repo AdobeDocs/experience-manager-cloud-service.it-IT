@@ -153,7 +153,7 @@ In questo esempio, la proprietà `ModelManager` è inizializzato e un valore vuo
 
 Una volta creati i componenti React personalizzabili, possiamo utilizzarli in tutta l’applicazione.
 
-Prendiamo una pagina di esempio in cui dobbiamo aggiungere un testo dal progetto WKND SPA. Per questo esempio, si desidera visualizzare il testo &quot;Hello World!&quot; su `/content/wknd-spa-react/us/en/home.html`.
+Prendiamo una pagina di esempio in cui dobbiamo aggiungere un testo dal progetto WKND SPA. Per questo esempio, si desidera visualizzare il testo &quot;Hello World!&quot; il `/content/wknd-spa-react/us/en/home.html`.
 
 1. Determina il percorso del nodo da visualizzare.
 
@@ -169,7 +169,7 @@ Prendiamo una pagina di esempio in cui dobbiamo aggiungere un testo dal progetto
 
    Il `AEMText` Il componente può essere aggiunto nella posizione desiderata all’interno della pagina con `pagePath` e `itemPath` valori impostati come proprietà. `pagePath` è una proprietà obbligatoria.
 
-#### Verificare la modifica del contenuto di testo su AEM {#verify-text-edit}
+#### Verifica della modifica del contenuto di testo su AEM {#verify-text-edit}
 
 Ora possiamo testare il componente sull’istanza AEM in esecuzione.
 

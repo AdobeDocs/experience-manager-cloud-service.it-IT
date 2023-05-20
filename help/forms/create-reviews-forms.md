@@ -4,7 +4,8 @@ seo-title: Creating and managing reviews in forms
 description: Una revisione è un meccanismo che consente a uno o più revisori di aggiungere commenti su una risorsa disponibile in un modulo.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 topic-tags: forms-manager
-source-git-commit: 659484f80d1f31794512af5e4d190b04a9f3e4e8
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
@@ -21,7 +22,7 @@ Una revisione è un meccanismo che consente a uno o più revisori di aggiungere 
 
 1. Passa alla scheda Forms e seleziona un modulo.
 1. Se per il modulo non è in corso una revisione, viene avviata una revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) nella barra delle azioni. Fai clic sull’icona Start Review (Avvia revisione) ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icona.
-1. Inserite le seguenti informazioni:
+1. Immettere le seguenti informazioni:
 
    * Titolo: obbligatorio, può contenere caratteri alfanumerici, trattini o trattini bassi.
    * Descrizione: facoltativo, descrizione dello scopo/contenuto da rivedere.
@@ -112,5 +113,3 @@ Questa sezione descrive cosa accade in Review Update/End (Aggiornamento/Fine rev
    1. **Iniziatore**: l&#39;attività assegnata all&#39;iniziatore di revisione è contrassegnata come completata. L&#39;attività viene rimossa dalla sezione Notifica dell&#39;iniziatore di revisione.
    1. **Tutti**: la revisione viene visualizzata nella sezione Revisioni precedenti. Non è possibile aggiungere altri commenti.
       ![revisione completata](assets/review-complete-imgg.png)
-
-

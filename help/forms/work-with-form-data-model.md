@@ -446,7 +446,7 @@ Nella tabella seguente sono elencati i vincoli per i dati di input basati sull&#
    <td>Input origine dati</td> 
   </tr> 
   <tr> 
-   <td>required</td> 
+   <td>obbligatorio</td> 
    <td>Se true, il parametro deve essere incluso nei dati di input.</td> 
    <td>Swagger, WSDL e database</td> 
   </tr> 

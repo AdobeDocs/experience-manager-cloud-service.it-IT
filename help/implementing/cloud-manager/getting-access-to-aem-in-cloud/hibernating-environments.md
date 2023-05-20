@@ -114,9 +114,9 @@ Negli ambienti sospesi è ancora possibile eseguire distribuzioni e aggiornament
 
 * Gli ambienti in un programma sandbox vengono automaticamente sospesi dopo otto ore di inattività.
    * L’inattività è definita dall’assenza di richieste ricevute dal servizio di Author, Anteprima e Publish.
-   * Una volta ibernati, possono essere [disiberato manualmente.](#de-hibernation-introduction)
+   * Una volta sospesi, possono essere [riattivazione manuale.](#de-hibernation-introduction)
 * I programmi sandbox vengono eliminati dopo sei mesi di sospensione continua. Al termine di questo periodo, possono essere ricreati.
 
 >[!NOTE]
 >
->Solo gli ambienti sandbox vengono eliminati automaticamente dopo sei mesi di ibernazione continua. Il programma sandbox con il relativo archivio e codice viene mantenuto.
+>Solo gli ambienti sandbox vengono eliminati automaticamente dopo sei mesi di sospensione continua. Viene mantenuto il programma sandbox con il relativo archivio e codice.

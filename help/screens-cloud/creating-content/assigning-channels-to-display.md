@@ -5,7 +5,7 @@ exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 19%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Prima di eseguire i passaggi seguenti per assegnare un canale a una visualizzazi
 
 ## Passaggi per assegnare un canale a una visualizzazione {#assign-channel-to-display}
 
-Segui la procedura seguente per assegnare un canale a una visualizzazione:
+Per assegnare un canale a una visualizzazione, segui i passaggi seguenti:
 
 1. Passa a Screens Services Provider e seleziona **Display** dal pannello di navigazione a sinistra.
 
@@ -42,7 +42,7 @@ Segui la procedura seguente per assegnare un canale a una visualizzazione:
    1. Scegli la priorità.
 
       >[!NOTE]
-      >La priorità viene usata per ordinare le assegnazioni nel caso in cui più utenti corrispondano ai criteri di riproduzione. Quella con il valore più alto avrà sempre la precedenza su quella con i valori più bassi. Ad esempio, se ci sono due canali A e B, A ha una priorità di 1 e B ha una priorità di 2, viene quindi visualizzato il canale B, che ha una priorità maggiore di A.
+      >La priorità viene utilizzata per ordinare le assegnazioni nel caso in cui più corrispondano ai criteri di riproduzione. Quello con il valore più alto avrà sempre la precedenza sui valori più bassi. Ad esempio, se sono presenti due canali A e B. A ha una priorità di 1 e B ha una priorità di 2, quindi viene visualizzato il canale B, in quanto ha una priorità più alta di A.
    1. Seleziona la data di inizio e la data di fine da **Attivazione**.
 
 1. Fai clic su **+ Aggiungi ricorrenza** per aggiungere una pianificazione di ricorrenza per il canale.

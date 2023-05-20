@@ -198,7 +198,7 @@ Per creare una proprietà con CRXDE Lite:
 1. Apri CRXDE Lite nel browser.
 1. In [**Riquadro Exploerer**,](#explorer-pane) seleziona il nodo in cui desideri aggiungere la nuova proprietà.
 1. In [**Scheda Proprietà**](#properties-tab) nel riquadro inferiore, immettere **Nome**, il **Tipo** e **Valore**.
-1. Fate clic su **Aggiungi**.
+1. Clic **Aggiungi**.
 1. Fai clic su [**Pulsante Salva tutto**](#save-all-button) per salvare le modifiche sul server.
 
 ## Creazione di un file {#creating-a-file}
@@ -232,7 +232,7 @@ Per importare una definizione di tipo di nodo:
 1. Viene visualizzata una nuova scheda in [**Modifica riquadro**](#edit-pane) etichettato **Importa tipo di nodo**.
 1. Immetti la notazione CND per la definizione nella casella di testo della **Importa tipo di nodo** scheda.
 1. Verifica **Consenti aggiornamento** se stai aggiornando una definizione esistente.
-1. Fai clic su **Importa**.
+1. Clic **Importa**.
 
 ## Registrazione {#logging}
 

@@ -664,13 +664,13 @@ L’esempio seguente (per eseguire ricerche in base al modello utilizzato per cr
 
    * **Nome proprietà**
 
-      Specifica la proprietà del nodo da cercare sui nodi di destinazione. Esempio:
+      Specifica la proprietà del nodo da cercare sui nodi di destinazione. Ad esempio:
 
       `jcr:content/cq:template`
 
    * **Percorso nodo opzione**
 
-      Seleziona il percorso in cui si trovano le opzioni. Esempio:
+      Seleziona il percorso in cui si trovano le opzioni. Ad esempio:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![Predicati opzione](assets/csf-options-predicate-02.png)

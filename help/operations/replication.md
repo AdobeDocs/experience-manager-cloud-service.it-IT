@@ -4,8 +4,8 @@ description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: 6b2ce7a4fb355e9ce78fbd7e0efee65c09fed932
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1381'
+ht-degree: 90%
 
 ---
 
@@ -21,11 +21,11 @@ Adobe Experience Manager as a Cloud Service utilizza la funzionalità di [Distri
 
 >[!NOTE]
 >
->Se sei interessato alla pubblicazione in blocco dei contenuti, utilizza la [Flusso di lavoro della struttura del contenuto di Pubblica](#publish-content-tree-workflow).
->Questo passaggio del flusso di lavoro è stato creato appositamente per il Cloud Service e può gestire in modo efficiente payload di grandi dimensioni.
->Non è consigliabile creare un codice personalizzato per la pubblicazione in blocco.
->Se devi personalizzare per qualsiasi motivo, puoi attivare questo passaggio di flusso di lavoro o flusso di lavoro utilizzando le API esistenti del flusso di lavoro.
->È sempre buona norma pubblicare solo i contenuti che devono essere pubblicati e, per essere prudenti, non tentare di pubblicare un gran numero di contenuti se non necessario, non ci sono limiti alla quantità di contenuto che puoi inviare tramite il Flusso di lavoro della struttura dei contenuti pubblicati.
+>Se ti interessa pubblicare contenuti in blocco, utilizza [Flusso di lavoro per pubblicazione struttura contenuto](#publish-content-tree-workflow).
+>Questo passaggio di flusso di lavoro è stato creato appositamente per il Cloud Service e può gestire in modo efficiente payload di grandi dimensioni.
+>Si sconsiglia di creare un codice personalizzato per la pubblicazione in blocco.
+>Se hai bisogno di personalizzare per qualsiasi motivo, puoi attivare questo passaggio di flusso di lavoro o flusso di lavoro utilizzando le API di flusso di lavoro esistenti.
+>Anche se è sempre buona prassi pubblicare solo i contenuti da pubblicare ed essere prudenti nel non cercare di pubblicare un numero elevato di contenuti se non necessario, non ci sono limiti alla quantità di contenuti che puoi inviare tramite il flusso di lavoro Pubblica struttura dei contenuti.
 
 ### Annullamento/pubblicazione rapida - Annullamento/pubblicazione pianificata {#publish-unpublish}
 
@@ -70,7 +70,7 @@ In alternativa, è possibile ottenere questo risultato creando un modello di flu
    ![Passaggio processo](/help/operations/assets/processstep.png)
 
 1. Fai clic sul Passaggio del processo nel flusso e seleziona **Configura** premendo l’icona a forma di chiave inglese
-1. Fai clic sulla scheda **Processo** e seleziona `Publish Content Tree` dall’elenco a discesa, quindi controlla il **Avanzamento gestore** casella di controllo
+1. Fai clic sulla scheda **Processo** e seleziona `Publish Content Tree` dall’elenco a discesa, quindi controlla **Avanzamento gestore** casella di controllo
 
    ![Attivazione struttura](/help/operations/assets/newstep.png)
 
@@ -92,7 +92,7 @@ In alternativa, è possibile ottenere questo risultato creando un modello di flu
 * `enableVersion` (valore booleano, predefinito: `true`). Questo parametro determina se viene creata una nuova versione al momento della replica.
 * `agentId` (valore stringa, “default” indica che vengono utilizzati solo gli agenti per la pubblicazione). Si consiglia di impostare un valore esplicito per agentId; ad esempio: publish. Se si imposta l’agente su `preview`, verrà eseguita la pubblicazione nel servizio di anteprima.
 * `filters` (valore stringa, “default” significa che tutti i percorsi sono attivati). I valori disponibili sono:
-   * `onlyActivated` - attiva solo le pagine che sono (già) state attivate. Agisce come una forma di riattivazione.
+   * `onlyActivated` : attiva solo le pagine che sono state (già) attivate. Agisce come una forma di riattivazione.
    * `onlyModified`: verranno attivati solo i percorsi già attivati e la cui data di modifica è successiva alla data di attivazione.
    * Quanto sopra può essere impostato con OR inserendo il simbolo “|”. Esempio: `onlyActivated|onlyModified`.
 

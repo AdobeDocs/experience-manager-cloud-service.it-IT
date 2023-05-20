@@ -111,7 +111,7 @@ Per identificare e accedere ai dati utente memorizzati per un’istanza del flus
 
 1. Passare alle posizioni per le bozze e la cronologia per l&#39;istanza del flusso di lavoro.
 
-   Esempio:
+   Ad esempio:
 
    `/var/fd/dashboard/instances/server0/2018-04-09/_var_workflow_instances_server0_2018-04-09_basicmodel_54/draft/`
 

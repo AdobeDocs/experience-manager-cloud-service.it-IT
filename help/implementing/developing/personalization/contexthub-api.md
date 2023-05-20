@@ -5,7 +5,7 @@ exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '4622'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -74,7 +74,7 @@ Restituisce tutti gli archivi ContextHub registrati.
 
 Questa funzione non ha parametri.
 
-##### Valore restituito {#returns-}
+##### Restituisce {#returns-}
 
 Oggetto che contiene tutti gli archivi ContextHub. Ogni archivio è un oggetto che utilizza lo stesso nome dell&#39;archivio.
 
@@ -95,7 +95,7 @@ Recupera un archivio come oggetto JavaScript.
 
 * **`name`:** Il nome con cui è stato registrato l’archivio.
 
-##### Valore restituito {#returns-getstore-name}
+##### Restituisce {#returns-getstore-name}
 
 Oggetto che rappresenta l’archivio.
 
@@ -131,7 +131,7 @@ Fornisce accesso ai segmenti ContextHub.
 
 Restituisce i segmenti risolti nel contesto corrente. Questa funzione non ha parametri.
 
-##### Valore restituito {#returns-getresolvedsegments}
+##### Restituisce {#returns-getresolvedsegments}
 
 Un array di `ContextHub.SegmentEngine.Segment` oggetti.
 
@@ -169,7 +169,7 @@ I valori possono essere oggetti.
 * **`tree`:** (Oggetto o array) I dati da aggiungere all&#39;archivio.
 * **`options`:** (Oggetto) Oggetto facoltativo di opzioni passato alla funzione setItem. Per informazioni, vedere `options` parametro di [`setItem(key,value,options)`](#setitem-key-value-options).
 
-##### Valore restituito {#returns-addallitems}
+##### Restituisce {#returns-addallitems}
 
 A `boolean` valore:
 
@@ -186,7 +186,7 @@ Crea un riferimento da una chiave a un&#39;altra chiave. Una chiave non può far
 
 * **`anotherkey`:** Chiave a cui fa riferimento `key`.
 
-##### Valore restituito {#returns-addreference}
+##### Restituisce {#returns-addreference}
 
 A `boolean` valore:
 
@@ -209,7 +209,7 @@ Restituisce il valore associato a una chiave.
 
 * **`key`:** (Stringa) Chiave per la quale restituire il valore.
 
-##### Valore restituito {#returns-getitem}
+##### Restituisce {#returns-getitem}
 
 Oggetto che rappresenta il valore della chiave.
 
@@ -221,7 +221,7 @@ Recupera le chiavi dall’archivio. Facoltativamente, puoi recuperare le chiavi 
 
 * **`includeInternals`:** Un valore di `true` include nei risultati le chiavi utilizzate internamente. Questi tasti iniziano con il carattere di sottolineatura (`_`). Il valore predefinito è `false`.
 
-##### Valore restituito {#returns-getkeys}
+##### Restituisce {#returns-getkeys}
 
 Matrice di nomi chiave ( `string` valori).
 
@@ -229,7 +229,7 @@ Matrice di nomi chiave ( `string` valori).
 
 Recupera i riferimenti dall’archivio.
 
-##### Valore restituito {#returns-getreferences}
+##### Restituisce {#returns-getreferences}
 
 Matrice che utilizza le chiavi di riferimento come indici per le chiavi di riferimento:
 
@@ -244,7 +244,7 @@ Recupera la struttura dati dall&#39;archivio. Facoltativamente, puoi includere l
 
 * `includeInternals:` Un valore di `true` include nei risultati le coppie chiave/valore utilizzate internamente. Le chiavi di questi dati iniziano con il carattere di sottolineatura (`_`). Il valore predefinito è `false`.
 
-##### Valore restituito {#returns-gettree}
+##### Restituisce {#returns-gettree}
 
 Oggetto che rappresenta la struttura dati. Le chiavi sono i nomi delle proprietà dell&#39;oggetto.
 
@@ -269,7 +269,7 @@ Inizializza l’archivio.
 
 Determina se l&#39;evento viene sospeso per questo archivio.
 
-##### Valore restituito {#returns-iseventingpaused}
+##### Restituisce {#returns-iseventingpaused}
 
 Un valore booleano:
 
@@ -294,7 +294,7 @@ Facoltativamente, puoi impedire l&#39;attivazione di `data` evento.
 * **`options`:** (Oggetto) Oggetto di opzioni. Le seguenti proprietà dell&#39;oggetto sono valide:
    * silenzioso: un valore di `true` impedisce l&#39;attivazione della `data` evento. Il valore predefinito è `false`.
 
-##### Valore restituito {#returns-removeitem}
+##### Restituisce {#returns-removeitem}
 
 A `boolean` valore:
 
@@ -309,7 +309,7 @@ Rimuove un riferimento dall&#39;archivio.
 
 * **`key`:** Riferimento chiave da rimuovere. Questo parametro corrisponde al `key` parametro di `addReference` funzione.
 
-##### Valore restituito {#returns-removereference}
+##### Restituisce {#returns-removereference}
 
 A `boolean` valore:
 
@@ -335,7 +335,7 @@ Recupera una chiave di riferimento. Facoltativamente, puoi specificare il numero
 * **`key`:** (Stringa) Chiave per la quale risolvere il riferimento. Questo `key` il parametro corrisponde al `key` parametro di `addReference` funzione.
 * **`retry`:** (Numero) Il numero di iterazioni da utilizzare.
 
-##### Valore restituito {#returns-resolvereference}
+##### Restituisce {#returns-resolvereference}
 
 A `string` valore che rappresenta la chiave di riferimento. Se non viene risolto alcun riferimento, il valore di `key` viene restituito il parametro.
 
@@ -358,7 +358,7 @@ I dati dell’evento includono il nome dell’archivio, la chiave, il valore pre
    * `silent`: valore di `true` impedisce l&#39;attivazione della `data` evento. Il valore predefinito è `false`.
 * **`value`:** (Oggetto) Valore da associare alla chiave.
 
-##### Valore restituito {#returns-setitem}
+##### Restituisce {#returns-setitem}
 
 A `boolean` valore:
 
@@ -390,14 +390,14 @@ Configura i dettagli per la connessione al servizio JSONP utilizzato da questo o
    * `secure`: (stringa o booleano) determina il protocollo da utilizzare per l’URL del servizio:
       * `auto`: //
       * `true`: https://
-      * `false`: Http://
+      * `false`: http://
 * **sostituisci:** (Booleano). Un valore di `true` fa sì che la configurazione del servizio esistente venga sostituita dalle proprietà di `serviceConfig`. Un valore di `false` determina l&#39;unione delle proprietà di configurazione del servizio esistenti con le proprietà di `serviceConfig`.
 
 #### getRawResponse() {#getrawresponse}
 
 Restituisce la risposta non elaborata memorizzata nella cache dall&#39;ultima chiamata al servizio JSONP. La funzione non richiede parametri.
 
-##### Valore restituito {#returns-getrawresponse}
+##### Restituisce {#returns-getrawresponse}
 
 Oggetto che rappresenta la risposta raw.
 
@@ -405,7 +405,7 @@ Oggetto che rappresenta la risposta raw.
 
 Recupera l&#39;oggetto servizio per l&#39;oggetto ContextHub.Store.JSONPStore. L&#39;oggetto servizio contiene tutte le informazioni necessarie per creare l&#39;URL del servizio.
 
-##### Valore restituito {#returns-getservicedetails}
+##### Restituisce {#returns-getservicedetails}
 
 Oggetto con le seguenti proprietà:
 
@@ -417,7 +417,7 @@ Oggetto con le seguenti proprietà:
 * **`secure`:** (Stringa o booleano) Determina il protocollo da utilizzare per l&#39;URL del servizio:
    * `auto`: //
    * `true`: https://
-   * `false`: Http://
+   * `false`: http://
 
 #### getServiceURL(resolve) {#getserviceurl-resolve}
 
@@ -427,7 +427,7 @@ Recupera l’URL del servizio JSONP.
 
 * **`resolve`:** (Booleano) Determina se includere i parametri risolti nell’URL. Un valore di `true` risolve i parametri e `false` non lo fa.
 
-##### Valore restituito {#returns-getserviceurl}
+##### Restituisce {#returns-getserviceurl}
 
 A `string` valore che rappresenta l’URL del servizio.
 
@@ -451,7 +451,7 @@ inizializza `ContextHub.Store.JSONPStore` oggetto.
       * `secure`: (stringa o booleano) determina il protocollo da utilizzare per l’URL del servizio:
          * `auto`: //
          * `true`: https://
-         * `false`: Http://
+         * `false`: http://
       * `timeout`: (Numero) il tempo di attesa della risposta del servizio JSONP prima del timeout, in millisecondi.
          * `ttl`: tempo minimo in millisecondi che trascorre tra le chiamate al servizio JSONP. (consultare la [queryService](#queryservice-reload) funzione ).
 
@@ -465,7 +465,7 @@ Attiva l&#39;evento ready al termine della query. Se l&#39;URL del servizio JSON
 
 * **`reload`:** (Booleano) Il valore true rimuove la risposta dalla cache e forza la chiamata al servizio JSONP.
 
-#### reset {#reset}
+#### ripristina {#reset}
 
 Reimposta i valori iniziali dei dati persistenti dell&#39;archivio, quindi chiama il servizio JSONP. Facoltativamente, puoi rimuovere tutti gli altri dati dall’archivio. L&#39;evento viene messo in pausa per questo archivio mentre i valori iniziali vengono reimpostati. Questa funzione non restituisce alcun valore.
 
@@ -529,7 +529,7 @@ Determina se esiste un cookie.
 
 * **`key`:** A `String` che contiene la chiave del cookie per il quale stai eseguendo il test.
 
-##### Valore restituito {#returns-exists}
+##### Restituisce {#returns-exists}
 
 A `boolean` il valore true indica che il cookie esiste.
 
@@ -553,7 +553,7 @@ Restituisce tutti i cookie con chiavi che corrispondono a un filtro.
    * Un oggetto RegExp: la funzione di test dell’oggetto viene utilizzata per far corrispondere le chiavi dei cookie.
    * Una funzione: funzione che verifica una chiave cookie per rilevare una corrispondenza. La funzione deve accettare la chiave del cookie come parametro e restituire true se il test conferma una corrispondenza.
 
-##### Valore restituito {#returns-getallitems}
+##### Restituisce {#returns-getallitems}
 
 Oggetto dei cookie. Le proprietà dell’oggetto sono chiavi di cookie e i valori chiave sono valori di cookie.
 
@@ -571,7 +571,7 @@ Restituisce un valore di cookie.
 
 * **`key`:** Chiave del cookie di cui desideri il valore.
 
-##### Valore restituito {#returns-getitem-1}
+##### Restituisce {#returns-getitem-1}
 
 Il valore del cookie, oppure `null` se non è stato trovato alcun cookie per la chiave.
 
@@ -593,7 +593,7 @@ Restituisce una matrice delle chiavi dei cookie esistenti che corrispondono a un
    * Un oggetto RegExp: la funzione di test dell’oggetto viene utilizzata per far corrispondere le chiavi dei cookie.
    * Una funzione: funzione che verifica una chiave cookie per rilevare una corrispondenza. La funzione deve accettare la chiave del cookie come parametro e restituire `true` se il test conferma una corrispondenza.
 
-##### Valore restituito {#returns-getkeys-1}
+##### Restituisce {#returns-getkeys-1}
 
 Matrice di stringhe in cui ogni stringa è la chiave di un cookie che corrisponde al filtro.
 
@@ -612,7 +612,7 @@ Rimuovi un cookie. Per rimuovere il cookie, il valore viene impostato su una str
 * **`key`:** A `String` valore che rappresenta la chiave del cookie da rimuovere.
 * **`options`:** Oggetto contenente i valori delle proprietà per la configurazione degli attributi dei cookie. Consulta la [`setItem`](#setitem-key-value-options) per informazioni. Il `expires` non ha alcun effetto.
 
-##### Valore restituito {#returns-removeitem-1}
+##### Restituisce {#returns-removeitem-1}
 
 Questa funzione non restituisce un valore.
 
@@ -635,7 +635,7 @@ Crea un cookie della chiave e del valore specificati e aggiunge il cookie al doc
    * `secure`: A `boolean` valore che specifica `Secure` attributo del cookie. Il valore predefinito è `false`.
    * `path`: A `String` valore da utilizzare come `Path` attributo del cookie. Il valore predefinito è `undefined`.
 
-##### Valore restituito {#returns-setitem-1}
+##### Restituisce {#returns-setitem-1}
 
 Cookie con il valore impostato.
 
@@ -659,7 +659,7 @@ Rimuove tutti i cookie che corrispondono a un determinato filtro. I cookie vengo
 * **`filter`:** Il `filter` argomento da utilizzare nella chiamata al [`getKeys`](#getkeys-filter) funzione.
 * **`options`:** Il `options` argomento da utilizzare nella chiamata al [`removeItem`](#removeitem-key-options) funzione.
 
-##### Valore restituito {#returns-vanish}
+##### Restituisce {#returns-vanish}
 
 Questa funzione non restituisce un valore.
 
@@ -678,7 +678,7 @@ Scollega una funzione da un evento.
 * **`name`:** Il [nome dell’evento](#contexthub-utils-eventing) per cui si sta annullando l’associazione della funzione.
 * **`selector`:** Selettore che identifica l&#39;associazione. (consultare la `selector` parametro per [`on`](#on-name-handler-selector-triggerforpastevents) e [`once`](#once-name-handler-selector-triggerforpastevents) funzioni ).
 
-##### Valore restituito {#returns-off}
+##### Restituisce {#returns-off}
 
 Questa funzione non restituisce alcun valore.
 
@@ -693,7 +693,7 @@ Associazione una funzione a un evento. La funzione viene chiamata ogni volta che
 * **`selector`:** (Stringa) Identificatore univoco del binding. È necessario il selettore per identificare l&#39;associazione se si desidera utilizzare `off` per rimuovere l&#39;associazione.
 * **`triggerForPastEvents`:** (Booleano) Indica se il gestore deve essere eseguito per eventi che si sono verificati in passato. Un valore di `true` chiama il gestore per gli eventi passati. Un valore di `false` chiama il gestore per gli eventi futuri. Il valore predefinito è `true`.
 
-##### Valore restituito {#returns-on}
+##### Restituisce {#returns-on}
 
 Quando `triggerForPastEvents` argomento è `true`, questa funzione restituisce un `boolean` valore che indica se l’evento si è verificato in passato:
 
@@ -733,7 +733,7 @@ Associazione una funzione a un evento. La funzione viene chiamata una sola volta
 * **`selector`:** (Stringa) Identificatore univoco del binding. È necessario il selettore per identificare l&#39;associazione se si desidera utilizzare `off` per rimuovere l&#39;associazione.
 * **`triggerForPastEvents`:** (Booleano) Indica se il gestore deve essere eseguito per eventi che si sono verificati in passato. Un valore di `true` chiama il gestore per gli eventi passati. Un valore di `false` chiama il gestore per gli eventi futuri. Il valore predefinito è `true`.
 
-##### Valore restituito {#returns-once}
+##### Restituisce {#returns-once}
 
 Quando `triggerForPastEvents` argomento è `true`, questa funzione restituisce un `boolean` valore che indica se l’evento si è verificato in passato:
 
@@ -771,7 +771,7 @@ Analizza un valore stringa come JSON e lo converte in un oggetto JavaScript.
 
 * **`data`:** Valore stringa in formato JSON.
 
-##### Valore restituito {#returns-parse}
+##### Restituisce {#returns-parse}
 
 Un oggetto JavaScript.
 
@@ -801,7 +801,7 @@ Serializza i valori e gli oggetti JavaScript in valori stringa in formato JSON.
 
 * **`data`:** Valore o oggetto da serializzare. Questa funzione supporta valori booleani, di matrice, numerici, stringa e di data.
 
-##### Valore restituito {#returns-stringify}
+##### Restituisce {#returns-stringify}
 
 Valore stringa serializzato. Quando `data` è una R `egExp` questa funzione restituisce un oggetto vuoto. Quando `data` è una funzione, restituisce `undefined`.
 
@@ -817,7 +817,7 @@ ContextHub.Utils.JSON.stringify({
 });
 ```
 
-Valore restituito:
+Restituisce:
 
 ```javascript
 "{'city':'Basel','country':'Switzerland','population':'173330'}":
@@ -838,7 +838,7 @@ Crea una copia di un oggetto dati e vi aggiunge la struttura dati da un secondo 
 * **`tree`:** Oggetto copiato.
 * **`secondTree`:** Oggetto che viene unito alla copia del `tree` oggetto.
 
-##### Valore restituito {#returns-addallitems-1}
+##### Restituisce {#returns-addallitems-1}
 
 Oggetto contenente i dati uniti.
 
@@ -850,7 +850,7 @@ Crea una copia di un oggetto, trova e rimuove elementi nella struttura dati che 
 
 * **`tree`:** Oggetto da pulire.
 
-##### Valore restituito {#returns-cleanup}
+##### Restituisce {#returns-cleanup}
 
 Copia dell&#39;albero pulita.
 
@@ -863,7 +863,7 @@ Recupera il valore da un oggetto per la chiave a.
 * **`tree`:** L’oggetto dati.
 * **`key`:** Chiave del valore che si desidera recuperare.
 
-##### Valore restituito {#returns-getitem-2}
+##### Restituisce {#returns-getitem-2}
 
 Valore corrispondente alla chiave. Quando la chiave ha chiavi secondarie, questa funzione restituisce un oggetto complesso. Quando il tipo di valore per la chiave è `undefined`, `null` viene restituito.
 
@@ -921,7 +921,7 @@ Recupera tutte le chiavi dalla struttura dati di un oggetto. Facoltativamente, p
 * **`parent`:** (Facoltativo) Chiave di un elemento nella struttura dati per il quale si desidera recuperare le chiavi degli elementi figlio.
 * **`order`:** (Facoltativo) Funzione che determina l&#39;ordinamento delle chiavi restituite. (vedere [`Array.prototype.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) su Mozilla Developer Network.)
 
-##### Valore restituito {#returns-getkeys-2}
+##### Restituisce {#returns-getkeys-2}
 
 Matrice di chiavi.
 
@@ -961,7 +961,7 @@ Crea una copia di un determinato oggetto, rimuove il ramo specificato dalla stru
 * **`tree`:** Un oggetto dati.
 * **`key`:** Chiave da rimuovere.
 
-##### Valore restituito {#returns-removeitem-2}
+##### Restituisce {#returns-removeitem-2}
 
 Copia dell&#39;oggetto dati originale con la chiave rimossa.
 
@@ -1015,7 +1015,7 @@ Utilizza l’array risultante per creare una chiave utilizzabile.
 
 * **`key`:** Il `string` per bonificare.
 
-##### Valore restituito {#returns-sanitizekey}
+##### Restituisce {#returns-sanitizekey}
 
 Un array di `string` valori in cui ogni stringa è la porzione della `key` che era delimitata da barre. rappresenta la chiave bonificata. Se la lunghezza dell’array bonificato è zero, questa funzione restituisce `null`.
 
@@ -1039,7 +1039,7 @@ Aggiunge una coppia chiave/valore alla struttura dati di una copia di un oggetto
 * **`key`:** Chiave da associare al valore che si sta aggiungendo. La chiave è il percorso dell&#39;elemento nella struttura dati. Questa funzione chiama `ContextHub.Utils.JSON.tree.sanitize` per bonificare la chiave prima di aggiungerla.
 * **`value`:** Valore da aggiungere alla struttura dati.
 
-##### Valore restituito {#returns-setitem-2}
+##### Restituisce {#returns-setitem-2}
 
 Una copia della `tree` oggetto che include `key`/ `value` coppia.
 
@@ -1080,7 +1080,7 @@ Restituisce i tipi di punto vendita registrati come candidati. Recupera i candid
 
 * **`storeType`:** (Stringa) Nome del tipo di archivio. Consulta la `storeType` parametro di [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) funzione.
 
-##### Valore restituito {#returns-getregisteredcandidates}
+##### Restituisce {#returns-getregisteredcandidates}
 
 Oggetto di tipo store. Le proprietà dell&#39;oggetto sono i nomi dei tipi di archivio e i valori delle proprietà sono una matrice dei candidati di archivio registrati.
 
@@ -1092,7 +1092,7 @@ Restituisce un tipo di archivio dai candidati registrati. Se sono registrati pi�
 
 * `storeType`: (Stringa) nome del candidato dell’archivio. Consulta la `storeType` parametro di [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#registerstorecandidate-store-storetype-priority-applies) funzione.
 
-##### Valore restituito {#returns-getstorefromcandidates}
+##### Restituisce {#returns-getstorefromcandidates}
 
 Oggetto che rappresenta il candidato dell&#39;archivio registrato. Se il tipo di archivio richiesto non è registrato, viene generato un errore.
 
@@ -1100,7 +1100,7 @@ Oggetto che rappresenta il candidato dell&#39;archivio registrato. Se il tipo di
 
 Restituisce i nomi dei tipi di punto vendita registrati come candidati. Questa funzione non richiede parametri.
 
-##### Valore restituito {#returns-getsupportedstoretypes}
+##### Restituisce {#returns-getsupportedstoretypes}
 
 Matrice di valori stringa, in cui ogni stringa è lo storetype con cui è stato registrato il candidato dell&#39;archivio. Consulta la `storeType` parametro di [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) funzione.
 

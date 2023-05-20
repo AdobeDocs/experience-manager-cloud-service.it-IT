@@ -1,21 +1,21 @@
 ---
 title: Creazione dei lanci
-description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro.
+description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione delle pagine web esistenti per l’attivazione futura.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 100%
+ht-degree: 60%
 
 ---
 
 # Creazione dei lanci {#creating-launches}
 
-Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
+Crea un lancio per abilitare l’aggiornamento di una nuova versione delle pagine web esistenti per l’attivazione futura. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
 
 * Il titolo viene visualizzato nella barra [Riferimenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references), dalla quale gli autori potranno accedere per lavorarci.
-* Per impostazione predefinita nel lancio vengono incluse le pagine figlie della pagina di origine. Se necessario, potete comunque usare anche solo la pagina sorgente.
-* Per impostazione predefinita, [Live Copy](/help/sites-cloud/administering/msm/overview.md) aggiorna automaticamente le pagine di lancio mano a mano che vengono modificate le pagine sorgente. Per evitare che vengano apportate tali modifiche automatiche, puoi specificare che venga creata una copia statica.
+* Per impostazione predefinita, le pagine figlie della pagina sorgente sono incluse nel lancio. Se necessario, puoi utilizzare solo la pagina sorgente.
+* Per impostazione predefinita, [Live Copy](/help/sites-cloud/administering/msm/overview.md) aggiorna automaticamente le pagine del lancio quando cambiano le pagine sorgente. È possibile specificare di creare una copia statica per impedire modifiche automatiche.
 
 Facoltativamente, puoi specificare la **Data lancio** (e l’ora) per definire quando promuovere e attivare le pagine del lancio. Tuttavia, la **Data lancio** funziona solo in combinazione con il flag **Production Ready** (vedi la sezione [Modifica di una configurazione di lancio](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)). Affinché le azioni vengano effettivamente eseguite in automatico, è necessario impostare entrambe.
 
@@ -32,20 +32,20 @@ Facoltativamente, puoi specificare la **Data lancio** (e l’ora) per definire q
 
 ## Creazione di un lancio {#creating-a-launch}
 
-Puoi creare un lancio da Sites o dalla console Lanci:
+Puoi creare un lancio dalla console Sites o Launches:
 
 1. Apri la console **Sites** o **Lanci**.
 
    >[!NOTE]
    >
-   >Quando usi la console **Sites** solitamente si accede alla posizione della pagina sorgente, ma non è obbligatorio, perché puoi accedervi quando selezioni l’**Origine del lancio** nella procedura guidata.
+   >Quando si utilizza **Sites** console solitamente si passa alla posizione della pagina sorgente, ma questo non è obbligatorio in quanto si può navigare quando si seleziona la **Origine lancio** nella procedura guidata.
 
-1. A seconda della console utilizzata:
+1. A seconda della console in uso:
    * **Lanci**:
       1. Seleziona **Crea lancio** dalla barra degli strumenti per aprire la procedura guidata.
    * **Sites**:
       1. Seleziona **Crea** nella barra degli strumenti per aprire la casella di selezione.
-      1. Da qui seleziona **Crea lancio** per aprire la procedura guidata.
+      1. Da questo seleziona **Crea lancio** per aprire la procedura guidata.
 
    >[!NOTE]
    >
@@ -63,11 +63,11 @@ Puoi creare un lancio da Sites o dalla console Lanci:
 
    >[!NOTE]
    >
-   >Per aggiungere pagine e/o rami a un lancio, questi devono essere all’interno di un sito; in altre parole, in una directory comune di primo livello.
+   >Per aggiungere pagine e/o rami a un lancio, devono trovarsi all’interno di un sito, ovvero al di sotto di una directory principale di livello principale comune.
    >
-   >Se un sito contiene directory principali per lingue inferiori al primo livello, le pagine e i rami di un lancio devono essere in una directory principale per lingua comune.
+   >Se un sito contiene directory principali della lingua al di sotto del livello principale, le pagine e i rami di un lancio devono trovarsi al di sotto di una directory principale della lingua comune.
 
-1. Per ogni voce puoi specificare le seguenti opzioni:
+1. Per ogni voce è possibile specificare se:
 
    * **Includi le pagine secondarie**:
 
@@ -79,7 +79,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
 
 1. Nel passaggio **Proprietà** della procedura guidata puoi specificare:
 
-   * **Titolo lancio**: nome del lancio. Scegli un nome che possa essere facilmente riconosciuto dagli autori.
+   * **Titolo lancio**: nome del lancio. Il nome deve essere significativo per gli autori.
    * **con contenuto esistente**: il contenuto originale verrà utilizzato per creare il lancio.
    * **con un nuovo modello per sostituire la pagina**: per ulteriori dettagli, vedi [Creare un lancio con un nuovo modello](#create-launch-with-new-template).
    * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Con questa opzione il lancio diventa una [Live Copy](/help/sites-cloud/administering/msm/overview.md). Per impostazione predefinita, questa opzione è selezionata.-->
@@ -87,9 +87,9 @@ Puoi creare un lancio da Sites o dalla console Lanci:
 
    ![Proprietà lancio](/help/sites-cloud/authoring/assets/launches-properties.png)
 
-1. Tocca o fai clic su **Crea** per completare il processo e creare il nuovo lancio. La finestra di dialogo di conferma chiederà se desideri aprire il lancio immediatamente.
+1. Utilizzare **Crea** per completare il processo e creare il nuovo lancio. Viene visualizzata una finestra di dialogo di conferma in cui viene richiesto se desideri aprire immediatamente il lancio.
 
-   Se torni alla console (con **Fine**), puoi visualizzare il lancio (e accedervi) in uno dei due modi seguenti:
+   Se restituisci la console (con **Fine**) puoi visualizzare (e accedere) al lancio da:
 
    * Console [**Lanci**](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
    * [**Riferimenti** nella console **Sites**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
@@ -113,13 +113,13 @@ Quando selezioni questa opzione:
 
 >[!CAUTION]
 >
->Quando utilizzi un modello diverso, la nuova pagina sarà vuota. A causa della diversa struttura della pagina, non verrà copiato alcun contenuto.
+>Quando si utilizza un modello diverso, la nuova pagina sarà vuota. A causa della diversa struttura della pagina, nessun contenuto verrà copiato.
 >
->Questo metodo può essere utilizzato per modificare il modello di una [pagina esistente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page); tuttavia, deve essere tenuta in considerazione la perdita di contenuto.
+>Questo meccanismo può essere utilizzato per modificare il modello di un’ [pagina esistente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) - anche se la perdita di contenuto deve essere considerata.
 
 ### Creazione di un lancio nidificato {#creating-a-nested-launch}
 
-Un lancio nidificato (lancio all’interno di un altro lancio) dà la possibilità di creare un lancio da un lancio esistente in modo che gli autori possano sfruttare le modifiche già apportate, anziché doverle apportare più volte per ogni lancio.
+La creazione di un lancio nidificato (lancio all’interno di un lancio) consente di creare un lancio da un lancio esistente in modo che gli autori possano sfruttare le modifiche già apportate, anziché dover apportare le stesse modifiche più volte per ogni lancio.
 
 >[!NOTE]
 >
@@ -147,16 +147,16 @@ Per creare un lancio nidificato dalla console **Sites**, basato su un lancio esi
 1. Accedi a [Lancio da Riferimenti (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) per visualizzare le azioni disponibili.
 1. Seleziona **Crea lancio** per aprire la procedura guidata (poiché l’origine è già stata selezionata, ignorerà il passaggio **Seleziona origine**).
 1. Immetti il **Titolo lancio** e tutti gli altri dettagli richiesti (come con un normale lancio).
-1. Tocca o fai clic su **Crea** per completare il processo e creare il nuovo lancio. La finestra di dialogo di conferma chiederà se desideri aprire il lancio immediatamente.
+1. Utilizzare **Crea** per completare il processo e creare il nuovo lancio. Viene visualizzata una finestra di dialogo di conferma in cui viene richiesto se desideri aprire immediatamente il lancio.
 
 Se fai clic su **Fine**, vieni riportato alla barra **Riferimenti** della console **Sites**, se selezioni la pagina appropriata viene visualizzato il tuo nuovo lancio.
 
 ### Eliminazione di un lancio {#deleting-a-launch}
 
-Puoi eliminare un lancio dalla [console Lanci](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+Puoi eliminare un lancio da [console Launches](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
 
-* Seleziona il lancio, toccando o facendo clic sulla miniatura.
-* Viene visualizzata la barra degli strumenti: scegli Elimina.
+* Seleziona il lancio, toccando/facendo clic sulla miniatura.
+* Viene visualizzata la barra degli strumenti. Seleziona Elimina.
 * Conferma l’azione.
 
 >[!CAUTION]

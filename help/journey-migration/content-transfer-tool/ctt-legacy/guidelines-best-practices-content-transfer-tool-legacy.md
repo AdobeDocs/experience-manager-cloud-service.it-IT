@@ -7,7 +7,7 @@ exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
 source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
 source-wordcount: '1476'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 Leggi la sezione seguente per comprendere le linee guida e le best practice per utilizzare lo strumento Content Transfer (Trasferimento contenuti):
 
-* Esegui [Pulizia revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e [controlli di coerenza dell’archivio dati](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=en) il **sorgente** per identificare potenziali problemi e ridurre le dimensioni dell’archivio.
+* Esegui [Pulizia revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e [controlli di coerenza dell’archivio dati](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=it) il **sorgente** per identificare potenziali problemi e ridurre le dimensioni dell’archivio.
 
 * Se la rete CDN (Content Delivery Network) di creazione del contenuto di AEM Cloud è configurata per avere un elenco Consentiti di IP di, assicurati che anche gli IP dell’ambiente sorgente vengano aggiunti al elenco Consentiti di. In questo modo l’ambiente sorgente e l’ambiente AEM Cloud possono comunicare tra loro.
 

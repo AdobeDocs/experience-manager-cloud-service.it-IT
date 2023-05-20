@@ -1,13 +1,13 @@
 ---
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
-workflow-type: ht
+exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
 
 ---
-
 
 # Authoring dei contenuti con l’editor universale {#authoring}
 
@@ -194,7 +194,7 @@ Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
 * [Introduzione all’editor universale](introduction.md): scopri come l’editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per offrire esperienze eccezionali, aumentare la velocità del contenuto e fornire un’esperienza di sviluppo all’avanguardia.
 * [Pubblicazione del contenuto con l’editor universale](publishing.md): scopri in che modo l’editor visivo universale pubblica il contenuto e come le app possono gestire il contenuto pubblicato.
-* [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a strumentalizzare la prima app AEM per utilizzarlo.
-* [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e come avviene il flusso di dati tra i suoi servizi e livelli.
-* [Attributi e tipi](attributes-types.md): scopri gli attributi e i tipi dei dati richiesti dall’editor universale.
+* [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.
+* [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
+* [Attributi e tipi](attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 * [Autenticazione dell’editor universale](authentication.md): scopri come l’editor universale effettua l’autenticazione.

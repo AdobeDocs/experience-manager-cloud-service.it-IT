@@ -16,31 +16,31 @@ ht-degree: 35%
 >[!NOTE]
 >Questa funzione non è stata rilasciata.
 
-AEM come Cloud Service invia notifiche quando si verificano incidenti critici che richiedono un&#39;azione immediata, nonché raccomandazioni proattive per le ottimizzazioni. Gli esempi includono una coda bloccata o un set di credenziali in scadenza; l’insieme completo dei tipi di notifica può essere visualizzato nella [tabella seguente](#supported-notification-types), che si espanderà nel tempo.
+AEM come Cloud Service invia notifiche quando si verificano incidenti critici che richiedono un’azione immediata, nonché raccomandazioni proattive per le ottimizzazioni. Alcuni esempi includono una coda bloccata o un set di credenziali in scadenza; l’intero set di tipi di notifica può essere visualizzato nel [tabella seguente](#supported-notification-types), che si espanderà nel tempo.
 
-Queste notifiche possono essere configurate per essere ricevute sia via e-mail che sotto il widget di notifica, a cui si accede facendo clic sull&#39;icona della campana nell&#39;angolo in alto a destra in tutto il Adobe Experience Cloud.
+Queste notifiche possono essere configurate per essere ricevute sia tramite e-mail che sotto il widget di notifica, a cui si accede facendo clic sull’icona a forma di campana nell’angolo in alto a destra in tutto Adobe Experience Cloud.
 
-Quando viene ricevuta una notifica, è possibile fare clic per aprire AEM Centro notifiche di as a Cloud Service con una finestra a comparsa che mostra il contesto aggiuntivo che spiega l&#39;azione da intraprendere per un cliente.
+Quando viene ricevuta una notifica, è possibile fare clic su di essa per aprire il Centro notifiche dell’as a Cloud Service AEM con una finestra a comparsa in cui viene visualizzato un contesto aggiuntivo che spiega l’azione che un cliente deve intraprendere.
 
-Oltre a visualizzare informazioni sulla notifica appena selezionata, il Centro notifiche funge da hub dove è possibile visualizzare e gestire il set di notifiche correnti e precedenti. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+Oltre a visualizzare informazioni sulla notifica con clic, il Centro notifiche funge da hub in cui è possibile visualizzare e gestire il set di notifiche corrente e precedenti. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
 
-Nel Centro notifiche sono visualizzate due categorie di notifiche di alto livello:
+Nel Centro notifiche sono disponibili due categorie di notifiche di alto livello:
 
-1. Incidenti operativi: si è verificato un evento, che in genere richiede una rapida risoluzione. Ad esempio, la risoluzione di una coda bloccata.
-1. Raccomandazioni proattive : l’Adobe presenta una raccomandazione per un’azione che un cliente dovrebbe intraprendere nel prossimo futuro. Ad esempio, per interrompere il riferimento a un’interfaccia utente obsoleta.
+1. Incidenti operativi: si è verificato un evento che in genere richiede una rapida risoluzione. Ad esempio, la risoluzione di una coda bloccata.
+1. Raccomandazioni proattive: l’Adobe ha una raccomandazione per un’azione che il cliente dovrebbe intraprendere nel prossimo futuro. Ad esempio, per interrompere il riferimento a un’interfaccia utente obsoleta.
 
 Consulta la [tabella seguente](#supported-notification-types) per le notifiche attualmente supportate.
 
-Dal Centro notifiche è possibile selezionare un programma e un ambiente specifici, che hanno l&#39;effetto di filtrare tale ambito.
+Dal Centro notifiche, è possibile selezionare un programma e un ambiente specifici, che ha l&#39;effetto di filtrare per tale ambito.
 
 ## Configurazione {#configuration}
 
-Per configurare la ricezione delle notifiche, effettua le seguenti operazioni:
+Per configurare le notifiche di ricezione, segui i passaggi seguenti:
 
-1. Crea i seguenti profili di prodotto, come descritto [nel presente articolo](/help/journey-onboarding/notification-profiles.md), inoltre assegna a tali profili gli ID Adobe appropriati dalla tua organizzazione. Questo consente all’amministratore di determinare quali utenti si qualificano per ricevere queste notifiche.
-1. Ogni utente assegnato assegnato nel passaggio precedente può configurare come desidera ricevere le notifiche. Sulla [Pagina delle preferenze di Experience Cloud](https://experience.adobe.com/preferences/notification-section), assicurati che l’abbonamento Experience Manager sia abilitato e che l’ **Incidenti operativi** e **Raccomandazioni proattive** le caselle di controllo sono selezionate per le colonne in-app e e-mail (vedi immagine qui sotto). Inoltre, si consiglia di impostare la sezione E-mail su **Notifiche istantanee** pertanto, le notifiche vengono ricevute immediatamente quando si verifica un incidente.
+1. Crea i seguenti profili di prodotto, come descritto [in questo articolo](/help/journey-onboarding/notification-profiles.md), assegnando anche gli ID Adobe appropriati dalla tua organizzazione a tali profili. Questo consente a un amministratore di determinare quali utenti sono idonei a ricevere queste notifiche.
+1. Ogni utente assegnato nel passaggio precedente può configurare il modo in cui desidera ricevere le notifiche. Il giorno [Pagina Preferenze Experience Cloud](https://experience.adobe.com/preferences/notification-section), assicurati che la sottoscrizione Experience Manager sia abilitata e che **Incidenti operativi** e **Consigli proattivi** le caselle di controllo sono selezionate sia per le colonne in-app che per quelle e-mail (vedi immagine qui sotto). Inoltre, si consiglia di impostare la sezione E-mail su **Notifiche istantanee** in modo che le notifiche vengano ricevute immediatamente quando si verifica un incidente.
 
-![Configurazione sottoscrizioni](/help/operations/assets/configure-subscriptions.png)
+![Configurare le sottoscrizioni](/help/operations/assets/configure-subscriptions.png)
 
 >[!NOTE]
 >Le notifiche funzionano a livello di organizzazione, in modo che gli abbonati ricevano notifiche per tutti i programmi e gli ambienti all’interno di tali programmi.
@@ -57,7 +57,7 @@ Nel centro notifiche è disponibile un elenco di altre notifiche recenti. È con
 
 ![Elenco notifiche](/help/operations/assets/notification-list.png)
 
-Nella maggior parte dei casi, la notifica dovrebbe fornire tutto il contesto necessario per risolvere il problema. Tuttavia, se hai bisogno di porre domande al supporto Adobe, puoi fare clic sul collegamento **Contatta supporto** nel popup di notifica. Viene visualizzato un modulo dal quale è possibile descrivere la domanda e inviarla per creare il ticket di assistenza, che includerà anche un riferimento alla notifica specifica in modo che un tecnico del supporto Adobe abbia il contesto pertinente.
+Nella maggior parte dei casi, la notifica dovrebbe fornire tutto il contesto necessario per risolvere il problema. Tuttavia, se hai bisogno di porre domande al supporto Adobe, puoi fare clic sul collegamento **Contatta supporto** nel popup di notifica. Verrà visualizzato un modulo in cui è possibile descrivere la domanda e inviarla per creare il ticket di supporto, che includerà anche un riferimento alla notifica specifica in modo che un Adobe di tecnici del supporto possa avere il contesto appropriato.
 
 ![Contatta supporto 1](/help/operations/assets/contact-support1.png)
 
@@ -67,15 +67,15 @@ Come tutti i ticket di supporto, questo verrà visualizzato nella [scheda Casi d
 
 ![Supporto Admin Console](/help/operations/assets/admin-console-support.png)
 
-## Quali Notifiche Appaiono? {#which-notification}
+## Quali Notifiche Vengono Visualizzate? {#which-notification}
 
-AEM as a Cloud Service dispone di diversi tipi di notifiche, ma nel Centro notifiche viene visualizzato solo un sottoinsieme, come illustrato nella tabella seguente.
+AEM as a Cloud Service ha diversi tipi di notifiche, ma solo un sottoinsieme viene visualizzato nel Centro notifiche, come illustrato nella tabella seguente.
 
-| Tipo di notifica | Descrizione | Come configurare | Visualizzazioni in Centro notifiche |
+| Tipo di notifica | Descrizione | Come configurare | Appare nel Centro notifiche |
 |---|---|---|---|
-| Incidenti operativi | Incidenti critici che richiedono un intervento immediato | Utente assegnato al profilo di prodotto &quot;Notifica incidente - Cloud Service&quot;, casella di controllo &quot;Incidenti operativi&quot; selezionata in [Preferenze Experience Cloud](https://experience.adobe.com/preferences) | X |
-| Raccomandazioni proattive | Ottimizzazioni da pianificare | Utente assegnato al profilo di prodotto &quot;Notifica proattiva - Cloud Service&quot;, casella di controllo &quot;Raccomandazioni proattive&quot; selezionata in [Preferenze Experience Cloud](https://experience.adobe.com/preferences) | X |
-| Stati della pipeline di Cloud Manager | Informazioni sullo stato delle tubazioni | Utente con ruoli Proprietario business, Gestore programma o Gestore distribuzione, casella di controllo &quot;Altri&quot; selezionata in [Preferenze Experience Cloud](https://experience.adobe.com/preferences) |  |
+| Incidenti operativi | Incidenti critici che richiedono un’azione immediata | Utente assegnato al profilo di prodotto &quot;Notifica per incidente - Cloud Service&quot;, casella di controllo &quot;Incidenti operativi&quot; selezionata in [Preferenze Experience Cloud](https://experience.adobe.com/preferences) | X |
+| Consigli proattivi | Ottimizzazioni da pianificare | Utente assegnato al profilo di prodotto &quot;Notifica proattiva - Cloud Service&quot;, casella di controllo &quot;Consigli proattivi&quot; selezionata in [Preferenze Experience Cloud](https://experience.adobe.com/preferences) | X |
+| Stati della pipeline di Cloud Manager | Informazioni sullo stato delle pipeline | Utente con i ruoli Proprietario business, Responsabile del programma o Responsabile dell’implementazione, casella di controllo &quot;Altri&quot; selezionata in [Preferenze Experience Cloud](https://experience.adobe.com/preferences) |  |
 
 ## Tipi di notifica supportati {#supported-notification-types}
 

@@ -226,7 +226,7 @@ Per inizializzare i componenti core Peregrine e CIF basati su React, crea la con
 
    >[!IMPORTANT]
    >
-   >Anche se forse conosci già le [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) file da __Guide AEM - Progetto CIF Venia__, è necessario apportare alcune modifiche a questo file. Prima di tutto, rivedi qualsiasi __ATTIVITÀ__ commenti. Quindi, all’interno del `eventsCollector` , trova il `eventsCollector > aed` e aggiornare `orgId` e `datastreamId` ai valori corretti. [Per saperne di più](./aep.md#add-aep-values-to-aem).
+   >Anche se forse conosci già le [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) file da __Guide AEM - Progetto CIF Venia__, è necessario apportare alcune modifiche a questo file. Prima di tutto, rivedi qualsiasi __ATTIVITÀ__ commenti. Quindi, all’interno del `eventsCollector` , trova il `eventsCollector > aed` e aggiornare `orgId` e `datastreamId` ai valori corretti. [Ulteriori informazioni](./aep.md#add-aep-values-to-aem).
 
 1. Creare un `App.js` file con il seguente contenuto. Questo file è simile a un tipico file del punto di avvio dell’applicazione React e contiene gli hook React e personalizzati e l’utilizzo di React Context per facilitare l’integrazione Experience Platform.
 

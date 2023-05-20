@@ -23,9 +23,9 @@ I test dell’interfaccia utente personalizzati sono una funzione facoltativa ch
 
 AEM fornisce una suite integrata di [gate di qualità di Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) per garantire una fluida esperienza di aggiornamento delle applicazioni personalizzate. In particolare, i gate di test IT supportano già la creazione e automazione dei test personalizzati utilizzando le API di AEM.
 
-I test dell’interfaccia utente sono assemblati in un’immagine Docker per consentire un’ampia scelta in lingue e framework (come Cypress.IO, Selenium, Java e Maven e Javascript). Inoltre, è possibile generare facilmente un progetto di test dell’interfaccia utente con l’[archetipo di progetto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
+I test dell’interfaccia utente sono inclusi in un’immagine Docker per consentire un’ampia scelta in termini di linguaggio e framework (come Cypress.IO, Selenium, Java e Maven e Javascript). Inoltre, è possibile generare facilmente un progetto di test dell’interfaccia utente con l’[archetipo di progetto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
 
-L&#39;Adobe incoraggia l&#39;utilizzo di Cypress.IO, in quanto offre il ricaricamento in tempo reale e l&#39;attesa automatica, che aiuta a risparmiare tempo e migliora la produttività durante i test. Cypress.IO fornisce anche una sintassi semplice e intuitiva, facilitando l&#39;apprendimento e l&#39;uso, anche per coloro che sono nuovi a testare.
+Adobe incoraggia l’utilizzo di Cypress.IO, in quanto offre il ricaricamento in tempo reale e l’attesa automatica, che consente di risparmiare tempo e migliora la produttività durante il test. Cypress.IO offre inoltre una sintassi semplice e intuitiva, che semplifica l&#39;apprendimento e l&#39;utilizzo, anche per chi non ha familiarità con i test.
 
 I test dell’interfaccia utente vengono eseguiti come parte di un gate di qualità specifico per ogni pipeline di Cloud Manager tramite [**test personalizzati dell’interfaccia utente** ](/help/implementing/cloud-manager/deploy-code.md) nella [pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) o facoltativamente, nella [pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Tutti i test dell’interfaccia utente, compresi la regressione e le nuove funzionalità, consentono di rilevare e segnalare gli errori.
 
@@ -207,7 +207,7 @@ Questa sezione descrive le convenzioni da seguire per l’immagine Docker conten
 
 Le seguenti variabili di ambiente verranno passate all’immagine Docker in fase di esecuzione, a seconda del framework.
 
-| Variabile | Esempi | Descrizione | Framework di test |
+| Variabile | Esempi | Descrizione | Framework di prova |
 |---|---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | URL del server Selenium | Solo selenio |
 | `SELENIUM_BROWSER` | `chrome` | Implementazione del browser utilizzata dal server Selenium | Solo selenio |
@@ -218,7 +218,7 @@ Le seguenti variabili di ambiente verranno passate all’immagine Docker in fase
 | `AEM_PUBLISH_USERNAME` | `admin` | Nome utente per accedere all’istanza di pubblicazione di AEM | Tutti i bundle  |
 | `AEM_PUBLISH_PASSWORD` | `admin` | Password per accedere all’istanza di pubblicazione di AEM | Tutti i bundle  |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Percorso in cui salvare il rapporto XML con i risultati del test | Tutti i bundle  |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | URL a cui deve essere caricato il file per renderlo accessibile al framework di test | Tutti i bundle  |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | URL in cui caricare i file per renderli accessibili al framework di test | Tutti i bundle  |
 
 Gli esempi di test di Adobe forniscono funzioni di supporto per accedere ai parametri di configurazione:
 
@@ -229,7 +229,7 @@ Gli esempi di test di Adobe forniscono funzioni di supporto per accedere ai para
 
 >[!NOTE]
 >
->Questa sezione si applica solo quando Selenium è l&#39;infrastruttura di prova scelta.
+>Questa sezione si applica solo quando Selenium è l’infrastruttura di test scelta.
 
 Prima dell’avvio dei test, l’immagine Docker verifica che il server Selenium sia in esecuzione. L’attesa del servizio Selenium è un processo a due fasi.
 
@@ -289,24 +289,24 @@ I test a volte richiedono il caricamento di file nell’applicazione sottoposta 
 >
 >Per eseguire i test funzionali dal computer locale, crea un utente con autorizzazioni di tipo amministratore per ottenere lo stesso comportamento.
 
-1. L&#39;infrastruttura containerizzata per il test funzionale è limitata dai seguenti limiti:
+1. L’infrastruttura containerizzata che ha l’ambito per i test funzionali è limitata dai seguenti limiti:
 
 | Tipo | Valore | Descrizione |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 2.0 | Quantità di tempo CPU riservato per esecuzione del test |
-| Memoria | 1Gi | Quantità di memoria allocata al test, valore in gibibiti |
+| Memoria | 1Gi | Quantità di memoria allocata al test, valore in gibibyte |
 | Timeout | 30m | La durata dopo la quale il test verrà terminato. |
-| Durata consigliata | 15m | Si consiglia di scrivere i test in modo che non richiedano più tempo di questo tempo. |
+| Durata consigliata | 15m | È consigliabile scrivere i test in modo che non richiedano più tempo. |
 
 >[!NOTE]
 >
-> Se hai bisogno di più risorse, crea un caso per l’Assistenza clienti e descrivi il tuo caso d’uso; il nostro team esaminerà la tua richiesta e fornirà l&#39;assistenza appropriata.
+> Se hai bisogno di più risorse, crea un caso di assistenza clienti e descrivi il tuo caso d’uso; il nostro team rivedrà la tua richiesta e fornirà l’assistenza appropriata.
 
 
 ## Esecuzione locale dei test dell’interfaccia utente {#run-ui-tests-locally}
 
-Prima di attivare i test dell’interfaccia utente in una pipeline di Cloud Manager, si consiglia di eseguire localmente i test dell’interfaccia utente rispetto al [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-o rispetto a un&#39;istanza effettiva AEM as a Cloud Service.
+Prima di attivare i test dell’interfaccia utente in una pipeline di Cloud Manager, si consiglia di eseguire i test dell’interfaccia utente a livello locale in base a [SDK AS A CLOUD SERVICE AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+o contro un&#39;istanza effettiva as a Cloud Service dell&#39;AEM.
 
 ### Esempio di test JavaScript {#javascript-sample}
 

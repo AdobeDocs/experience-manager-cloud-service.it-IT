@@ -5,13 +5,13 @@ exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 10%
+ht-degree: 1%
 
 ---
 
 # Convenzioni di denominazione{#naming-conventions}
 
-I nodi nell&#39;archivio sono soggetti a denominazioni convenzionali del Java Content Repository. Tuttavia, l’AEM impone ulteriori convenzioni per il nome dei nodi della pagina.
+I nodi nell’archivio sono soggetti alle convenzioni di denominazione dell’archivio dei contenuti Java. Tuttavia, l’AEM impone ulteriori convenzioni per il nome dei nodi della pagina.
 
 ## Convenzioni di denominazione per le pagine {#naming-conventions-for-pages}
 

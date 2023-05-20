@@ -61,7 +61,7 @@ Osserva la modifica dello stile della casella di testo come mostrato nell’imma
   </tr>
   <tr>
    <td><p>Campo</p> </td>
-   <td><p>border</p> </td>
+   <td><p>bordo</p> </td>
    <td><p>Larghezza bordo = 2 px</p> <p>Stile bordo=solido</p> <p>Colore bordo=#1111</p> </td>
    <td><p>Crea un bordo nero largo 2 pixel attorno al campo</p> </td>
   </tr>
@@ -86,7 +86,7 @@ Osserva la modifica dello stile della casella di testo come mostrato nell’imma
   <tr>
    <td><p>Descrizione lunga</p> </td>
    <td><p>text-align</p> </td>
-   <td><p>center</p> </td>
+   <td><p>centro</p> </td>
    <td><p>Allinea al centro la descrizione lunga della guida</p> </td>
   </tr>
  </tbody>

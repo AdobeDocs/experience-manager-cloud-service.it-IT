@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '2157'
-ht-degree: 100%
+ht-degree: 62%
 
 ---
 
@@ -23,7 +23,7 @@ Ad esempio, nella vista a colonne:
 
 ## Modifica del contenuto di una pagina {#editing-page-content}
 
-Puoi modificare una pagina con l’editor di pagina. Esempio:
+Puoi modificare una pagina con l’editor pagina. Esempio:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -31,9 +31,9 @@ Puoi modificare una pagina con l’editor di pagina. Esempio:
 
 >[!NOTE]
 >
->La prima volta che apri una pagina per la modifica, una serie di diapositive illustra le funzioni disponibili.
+>La prima volta che apri una pagina per la modifica, una serie di diapositive ti forniranno una panoramica delle funzioni.
 >
->Puoi saltare questa presentazione introduttiva e richiamarla in qualsiasi momento dal menu **Informazioni pagina**.
+>Se necessario, puoi saltare la presentazione e ripeterla in qualsiasi momento selezionando una delle seguenti opzioni **Informazioni pagina** menu.
 
 ## Accedere all’Aiuto   {#accessing-help}
 
@@ -42,33 +42,33 @@ Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti a
 * Il selettore [**Informazioni pagina**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties), che mostra le diapositive introduttive (così come visualizzate al primo accesso all’editor)
 * La finestra di dialogo di [configurazione](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) per i componenti specifici (utilizzando l’icona ? presente nella barra degli strumenti della finestra di dialogo), che mostra la guida sensibile al contesto
 
-Ulteriori [risorse di aiuto sono disponibili dalle console](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
+Ulteriori informazioni [le risorse relative alla guida sono disponibili nelle console](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
 ## Browser Componenti   {#components-browser}
 
 I componenti sono gli elementi costitutivi dei contenuti AEM. Per creare la pagina dei contenuti con AEM, posiziona più componenti su una pagina e configurane le relative opzioni.
 
-Il browser Componenti mostra tutti i componenti disponibili per la pagina corrente. Puoi trascinarli nella posizione desiderata, quindi modificarli per aggiungere i contenuti richiesti.
+Il browser Componenti mostra tutti i componenti disponibili per la pagina corrente. Questi possono essere trascinati nella posizione appropriata, quindi modificati per aggiungere il contenuto.
 
 Il browser Componenti è una scheda che si trova nel pannello laterale, insieme al [browser Risorse](#assets-browser) e alla [struttura dei contenuti](#content-tree). Per aprire (o chiudere) il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 
 ![Icona del pannello laterale](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-All’apertura, il pannello laterale scivolerà in posizione da sinistra (se necessario seleziona la scheda **Componenti**). Quando la scheda è aperta, puoi passare ai componenti disponibili per la pagina.
+Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro (seleziona la **Componenti** (se necessario). Una volta aperta, è possibile sfogliare tutti i componenti disponibili per la pagina.
 
-L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in uso:
+L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
 * **Dispositivo mobile (ad esempio iPad)**
 
-   Il browser Componenti copre completamente la pagina in corso di modifica.
+   Il browser Componenti copre completamente la pagina in fase di modifica.
 
-   Per aggiungere un componente alla pagina, tocca e tieni premuto il componente richiesto e spostalo verso destra: il browser Componenti si chiude e torna a essere visibile la pagina, dove potrai posizionare il componente.
+   Per aggiungere un componente alla pagina, tocca e tieni premuto il componente richiesto e spostalo verso destra (il browser componenti si chiude per mostrare nuovamente la pagina), dove puoi posizionare il componente.
 
    ![Browser componenti per dispositivi mobili](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **Dispositivo desktop**
 
-   Il browser Componenti si apre nella parte sinistra della finestra.
+   Il browser Componenti viene aperto sul lato sinistro della finestra.
 
    Per aggiungere un componente alla pagina, fai clic sul componente richiesto e trascinalo nella posizione desiderata.
 
@@ -95,11 +95,11 @@ L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in us
 
 >[!NOTE]
 >
->Un dispositivo viene rilevato come mobile se la larghezza è inferiore a 1024 px. Ciò può applicarsi anche a una piccola finestra desktop.
+>Un dispositivo viene rilevato come mobile se la larghezza è inferiore a 1024 px. Questo può essere anche il caso di una piccola finestra del desktop.
 
 ## Browser Risorse {#assets-browser}
 
-Il browser Risorse mostra tutte le [risorse](/help/assets/home.md) disponibili per la pagina corrente.
+Il browser Risorse mostra tutto [risorse](/help/assets/home.md) che sono disponibili per l’uso diretto nella pagina corrente.
 
 Il browser Risorse è una scheda che si trova nel pannello laterale, insieme al [browser Componenti](#components-browser) e alla [struttura dei contenuti](#content-tree). Per aprire o chiudere il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 
@@ -109,11 +109,11 @@ All’apertura, il pannello laterale scivolerà in posizione da sinistra. Se nec
 
 ![Pulsante Browser risorse](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
-Quando il browser Risorse è aperto, puoi sfogliare tutte le risorse disponibili per la pagina. Per espandere l’elenco, scorri in base alle necessità.
+Quando il browser Risorse è aperto, puoi sfogliare tutte le risorse disponibili per la pagina. Se necessario, per espandere l&#39;elenco viene utilizzato lo scorrimento infinito.
 
 ![Browser Risorse](/help/sites-cloud/authoring/assets/assets-browser.png)
 
-Per aggiungere una risorsa alla pagina, selezionala e trascinala nella posizione desiderata. Questa può essere:
+Per aggiungere una risorsa alla pagina, selezionala e trascinala nella posizione desiderata. Può trattarsi di:
 
 * Un componente esistente del tipo appropriato.
    * Ad esempio, puoi trascinare una risorsa di tipo immagine su un componente Immagine.
@@ -122,31 +122,31 @@ Per aggiungere una risorsa alla pagina, selezionala e trascinala nella posizione
 
 >[!NOTE]
 >
->Questo è disponibile per risorse e tipi di componenti specifici. Per ulteriori informazioni, consulta [Inserimento di un componente utilizzando il browser Risorse](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser).
+>Questa funzione è disponibile per risorse e tipi di componenti specifici. Consulta [Inserimento di un componente tramite il browser Risorse](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) per ulteriori dettagli.
 
-Dalla barra degli strumenti nella parte superiore del browser Risorse è possibile filtrare le risorse in base ai seguenti criteri:
+Dalla barra degli strumenti nella parte superiore del browser Risorse puoi filtrare le risorse in base a:
 
 * Nome
 * Percorso
 * Tipo di risorsa come: immagini, video, documenti, paragrafi, frammenti di contenuto e frammenti esperienza
 * Caratteristiche della risorsa, ad esempio orientamento e stile
-   * Disponibile solo per alcuni tipi di risorsa
+   * Disponibile solo per alcuni tipi di risorse
 
-L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in uso:
+L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
 * **Dispositivo mobile**
 
-   Il browser Risorse occupa completamente la pagina in corso di modifica.
+   Il browser Risorse copre completamente la pagina in fase di modifica.
 
-   Per aggiungere una risorsa alla pagina, tocca e tieni premuto sulla risorsa richiesta e spostala verso destra: il browser Risorse si chiude e torna a essere visibile la pagina, dove potrai aggiungere la risorsa al componente richiesto.
+   Per aggiungere una risorsa alla pagina, tocca e tieni premuto sulla risorsa richiesta, quindi spostala verso destra: il browser Risorse si chiude per mostrare di nuovo la pagina, dove puoi aggiungere la risorsa al componente richiesto.
 
    ![Browser risorse per dispositivi mobili](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **Dispositivo desktop**
 
-   Il browser Risorse si apre nella parte sinistra della finestra.
+   Il browser Risorse viene aperto sul lato sinistro della finestra.
 
-   Per aggiungere una risorsa alla pagina, fai clic sulla risorsa richiesta e trascinala sul componente o nella posizione desiderata.
+   Per aggiungere una risorsa alla pagina, fai clic sulla risorsa richiesta e trascinala sul componente o sulla posizione desiderata.
 
    ![Browser risorse sul desktop](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
@@ -160,33 +160,33 @@ Se devi apportare rapidamente una modifica a una risorsa, puoi avviare [l’edit
 
 ## Struttura contenuto {#content-tree}
 
-La scheda **Struttura contenuto** offre una panoramica di tutti i componenti nella pagina sotto forma di struttura gerarchica ad albero, che permette di vedere subito come è composta la pagina.
+Il **Struttura contenuto** offre una panoramica di tutti i componenti della pagina in una gerarchia, per consentirti di visualizzare rapidamente come viene composta la pagina.
 
 Struttura contenuto è una scheda che si trova nel pannello laterale, insieme ai browser Componenti e Risorse. Per aprire (o chiudere) il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 
 ![Pulsante Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro. Se necessario, seleziona la scheda **Struttura contenuto**. Una volta aperta è possibile visualizzare una struttura ad albero della pagina o del modello, che permette di capire come il contenuto è strutturato gerarchicamente. Inoltre, in una pagina complessa rende più facile passare tra i vari componenti della pagina.
+Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro. Se necessario, seleziona la scheda **Struttura contenuto**. Una volta aperta è possibile visualizzare una struttura ad albero della pagina o del modello, che permette di capire come il contenuto è strutturato gerarchicamente. Inoltre, in una pagina complessa, consente di spostarsi più facilmente tra i componenti della pagina.
 
 ![Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
-Poiché una pagina può essere composta da numerosi componenti dello stesso tipo, la struttura del contenuto (componente) presenta un testo descrittivo (in grigio) dopo il nome del tipo di componente (in nero). Il testo descrittivo è composto dalle proprietà comuni del componente, come ad esempio il titolo o il testo.
+Poiché una pagina può essere composta da numerosi componenti dello stesso tipo, la struttura del contenuto (componente) presenta un testo descrittivo (in grigio) dopo il nome del tipo di componente (in nero). Il testo descrittivo proviene da proprietà comuni del componente, ad esempio titolo o testo.
 
-I tipi di componente sono indicati nella lingua preferita dall&#39;utente, mentre il testo descrittivo del componente nella lingua della pagina.
+I tipi di componente vengono visualizzati nella lingua dell’utente, mentre il testo della descrizione del componente proviene dalla lingua della pagina.
 
-Fai clic sulla freccia accanto a un componente per comprimere o espandere il livello.
+Facendo clic sulla freccia accanto a un componente, questo livello viene compresso o espanso.
 
 ![Freccia di espansione Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree-chevron.png)
 
-Fai clic sul componente per evidenziarlo nell’editor di pagine. Le azioni disponibili dipendono dallo stato della pagina:
+Facendo clic sul componente, questo viene evidenziato nell’editor pagina. Le azioni disponibili dipendono dallo stato della pagina:
 
-* Ad esempio, una pagina base:
+* Ad esempio, una pagina di base:
 
    ![Struttura contenuto evidenziata](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
    I componenti di una pagina di base avranno le consuete opzioni.
 
-   Se il componente su cui fai clic nella struttura ad albero è modificabile, a destra del nome compare un’icona a forma di chiave inglese. Fai clic su questa icona per avviare direttamente la finestra di dialogo di modifica del componente.
+   Se il componente su cui fai clic nella struttura ad albero è modificabile, a destra del nome compare un’icona a forma di chiave inglese. Facendo clic su questa icona si avvia direttamente la finestra di dialogo di modifica del componente.
 
    ![Pulsante modifica Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -202,7 +202,7 @@ Se la pagina contiene frammenti di contenuto, avrai accesso anche al [browser Co
 
 ## Riferimenti {#references}
 
-I **riferimenti** mostrano i collegamenti alla pagina selezionata:
+**Riferimenti** mostra le connessioni alla pagina selezionata:
 
 * Blueprint
 * Lanci
@@ -258,17 +258,17 @@ Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dett
 * [Aiuto](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 * [Promuovi lancio:](/help/sites-cloud/authoring/launches/promoting.md) (solo se la pagina è un lancio)
 
-Inoltre, da **Informazioni pagina** è possibile accedere ad analisi e consigli.
+Inoltre, **Informazioni pagina** può fornire accesso ad analytics e alle raccomandazioni, quando appropriato.
 
 ## Modalità pagina   {#page-modes}
 
-Quando si modifica una pagina sono disponibili varie modalità che consentono di configurare diverse azioni:
+Esistono diverse modalità di modifica di una pagina che consentono di eseguire azioni diverse:
 
-* [Modifica](/help/sites-cloud/authoring/fundamentals/editing-content.md): modalità da utilizzare per modificare il contenuto della pagina.
+* [Modifica](/help/sites-cloud/authoring/fundamentals/editing-content.md) : modalità da utilizzare per la modifica del contenuto della pagina.
 * [Layout](/help/sites-cloud/authoring/features/responsive-layout.md): consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout).
-* [Impostazione destinazione](/help/sites-cloud/authoring/personalization/targeted-content.md): consente di incrementare la rilevanza dei contenuti tramite il targeting e la misurazione su tutti i canali.
-* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp): consente di visualizzare lo stato delle pagine in un particolare momento.
-* [Stato Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status): consente di visualizzare una panoramica rapida dello stato della live copy e dei componenti ereditati e non.
+* [Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) - aumentare la rilevanza dei contenuti attraverso il targeting e la misurazione su tutti i canali.
+* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - consente di visualizzare lo stato di una pagina in un determinato momento.
+* [Stato Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : consente di ottenere una rapida panoramica dello stato della live copy e dei componenti che non vengono ereditati.
 * [Modalità Sviluppatore](/help/implementing/developing/tools/developer-mode.md)
 * [Anteprima](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): utilizzato per visualizzare l’aspetto che la pagina avrà nell’ambiente di pubblicazione o per spostarsi utilizzando i collegamenti presenti nel contenuto.
 * [Annota](/help/sites-cloud/authoring/fundamentals/annotations.md): utilizzato per aggiungere o visualizzare annotazioni nella pagina.
@@ -279,20 +279,20 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 
 >[!NOTE]
 >
->* A seconda delle caratteristiche della pagina, alcune modalità possono non essere disponibili.
->* L’accesso ad alcune modalità richiede autorizzazioni o privilegi adeguati.
->* La modalità Sviluppatore non è disponibile su dispositivi mobili a causa di limitazioni di spazio.
+>* A seconda delle caratteristiche della pagina, alcune modalità potrebbero non essere disponibili.
+>* L’accesso ad alcune modalità richiede le autorizzazioni/i privilegi appropriati.
+>* La modalità Sviluppatore non è disponibile sui dispositivi mobili a causa di restrizioni di spazio.
 >* La [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
 >
 
 
 ## Selezione del percorso {#path-selection}
 
-Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso, i [campi percorso](#path-fields) offrono una funzione di auto-completamento e il [browser Percorsi](#path-browser) consente una selezione più affidabile.
+Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso: [campi percorso](#path-fields) offerta di completamento automatico e il [browser percorsi](#path-browser) consente una selezione più solida.
 
 ### Campi percorso   {#path-fields}
 
-L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull’utilizzo e la modifica dei componenti consulta [Componenti per l’authoring di pagine](/help/sites-cloud/authoring/fundamentals/components.md).
+L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull&#39;utilizzo e la modifica dei componenti, consulta [Componenti per l’authoring delle pagine](/help/sites-cloud/authoring/fundamentals/components.md).
 
 I campi percorso dispongono della funzione di completamento automatico e di look-ahead per rendere più facile individuare una risorsa.
 
@@ -310,10 +310,10 @@ Il browser Percorsi è organizzato come la [vista a colonne](/help/sites-cloud/a
 
 ![Browser Percorsi](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Una volta che la risorsa è selezionata, il pulsante **Seleziona** in alto a destra nella finestra di dialogo diventa attivo. Tocca o fai clic su questo pulsante per confermare la selezione oppure su **Annulla** per annullare l’operazione.
+* Una volta selezionata una risorsa, **Seleziona** in alto a destra nella finestra di dialogo diventa attivo. Tocca o fai clic per confermare la selezione oppure **Annulla** per interrompere.
 * Se il contesto consente la selezione di più risorse, la scelta di una risorsa attiva anche il pulsante **Seleziona**, ma aggiunge anche un conteggio del numero di risorse selezionate nella parte superiore destra della finestra. Per deselezionare tutti gli elementi, fai clic sulla **X** accanto al numero.
-* Quando navighi attraverso la struttura ad albero, la posizione viene riportata nelle breadcrumb nella parte superiore della finestra di dialogo. Le breadcrumb possono anche essere utilizzate per passare rapidamente alla gerarchia delle risorse.
-* In qualsiasi momento puoi usare il campo di ricerca nella parte superiore della finestra di dialogo. Fai clic sulla **X** nel campo di ricerca per cancellare la ricerca.
+* Quando ti sposti nella struttura, la posizione si riflette nelle breadcrumb nella parte superiore della finestra di dialogo. Queste breadcrumb possono essere utilizzate anche per passare rapidamente all’interno della gerarchia delle risorse.
+* In qualsiasi momento puoi utilizzare il campo di ricerca nella parte superiore della finestra di dialogo. Fai clic su **X** nel campo di ricerca per cancellare la ricerca.
 * Per limitare l’ambito della ricerca, puoi visualizzare le opzioni filtro e filtrare il risultato in base a un determinato percorso.
 
    ![Opzione Filtri](/help/sites-cloud/authoring/assets/filters-option.png)

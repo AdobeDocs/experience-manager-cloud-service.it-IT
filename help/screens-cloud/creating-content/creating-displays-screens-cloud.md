@@ -5,7 +5,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 8%
+ht-degree: 3%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 Dopo aver pubblicato il canale, è ora possibile creare la visualizzazione nel provider di servizi Screens.
 
-Un display è un raggruppamento virtuale di schermi che sono generalmente posizionati uno accanto all’altro. La visualizzazione è solitamente permanente per quanto riguarda l’installazione. Questo sarà l’oggetto con il quale gli autori di contenuti lavoreranno e al quale faranno sempre riferimento come visualizzazione logica piuttosto che le controparti fisiche.
+Un display è un raggruppamento virtuale di schermi che sono generalmente posizionati uno accanto all’altro. Il display è di solito permanente rispetto a un&#39;installazione. Questo sarà l’oggetto con cui gli autori di contenuto lavoreranno e a cui faranno sempre riferimento come visualizzazione logica piuttosto che le loro parti contatore fisiche.
 
 ## Obiettivo {#objective}
 

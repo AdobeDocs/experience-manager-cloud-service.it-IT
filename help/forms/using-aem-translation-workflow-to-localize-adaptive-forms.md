@@ -28,7 +28,7 @@ Il servizio di traduzione automatica traduce immediatamente il contenuto in modu
 
 1. Il giorno [!DNL AEM Forms] , seleziona un modulo e tocca il **Aggiungi dizionario** opzione.
 1. In entrata **Aggiungi dizionario a progetto di traduzione** , seleziona la **Crea un nuovo progetto di traduzione** o **Aggiungi a un progetto di traduzione esistente** opzione.
-1. In **Titolo progetto** , specificare il titolo. Esempio, `Government Reference Site - German locale.`
+1. In **Titolo progetto** , specificare il titolo. Ad esempio `Government Reference Site - German locale.`
 1. In **Lingue di destinazione** , specificare una lingua (ad esempio, `German(de)`) e fai clic su **Fine**. È possibile specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le lingue specificate in **Lingue di destinazione** campo.
 1. Nella finestra di dialogo Dizionario aggiunto fare clic su **Progetti aperti**. Nella schermata Progetti, apri il progetto appena creato.
 1. Fai clic su **ellissi** nella parte inferiore della sezione **Riepilogo traduzione** affiancare. Viene visualizzata la schermata Riepilogo traduzione.

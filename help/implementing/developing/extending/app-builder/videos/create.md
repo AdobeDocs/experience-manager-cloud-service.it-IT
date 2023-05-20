@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Creare un’applicazione App Builder
 
-## Imposta il primo progetto
+## Configurare il primo progetto
 
-Scopri le basi della creazione del primo progetto App Builder.
+Scopri i fondamenti della creazione del tuo primo progetto App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339168/?quality=12&learn=on)
 
@@ -30,13 +30,13 @@ Scopri come configurare l’ambiente locale per lo sviluppo di App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
 
-## Inizializza il primo progetto
+## Inizializzare il primo progetto
 
 Scopri come inizializzare un progetto App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
 
-## Creare, eseguire e testare l&#39;applicazione
+## Creare, eseguire e testare l’applicazione
 
 Scopri come generare, eseguire e testare l’applicazione App Builder.
 

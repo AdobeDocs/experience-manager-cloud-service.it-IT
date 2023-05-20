@@ -127,7 +127,7 @@ Per visualizzare i rapporti dall’opzione della linea di tendenza, segui i pass
    >![immagine](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
-### Analisi delle best practice {#analysis-report}
+### Analisi del rapporto di Best Practices Analyzer {#analysis-report}
 
 Scopri le seguenti schede disponibili nella pagina Report di analisi delle best practice:
 

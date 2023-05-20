@@ -17,26 +17,26 @@ ht-degree: 34%
 >abstract="Cloud Acceleration Manager (CAM) offre ai team un’esperienza guidata per le best practice e la metodologia consigliate da Adobe per aiutare i team a pianificare, implementare e pubblicare con sicurezza."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=it" text="Introduzione a Cloud Acceleration Manager"
 
-Con una vasta gamma di requisiti e personalizzazioni aziendali, il passaggio al cloud può essere un progetto coinvolto. Cloud Acceleration Manager (CAM) offre ai team un’esperienza guidata per le best practice e la metodologia consigliate da Adobe per aiutare i team a pianificare, implementare e pubblicare con sicurezza.
+Con un&#39;ampia gamma di requisiti e personalizzazioni di business, il passaggio al cloud può essere un progetto coinvolto. Cloud Acceleration Manager (CAM) offre ai team un’esperienza guidata per le best practice e la metodologia consigliate da Adobe per aiutare i team a pianificare, implementare e pubblicare con sicurezza.
 
-I vantaggi principali dell’utilizzo di Cloud Acceleration Manager sono i seguenti:
+I vantaggi principali dell’utilizzo di Cloud Acceleration Manager sono:
 
-1. Pianificazione migliore e più intelligente:
+1. Pianifica meglio e in modo più intelligente:
 
    * Semplifica la valutazione dell’istanza corrente tramite una rappresentazione visiva dei risultati di facile lettura.
 
-   * Valutare e comprendere la complessità stimata del passaggio a AEM as a Cloud Service con un rapporto personalizzato dettagliato.
+   * Valuta e comprendi la complessità stimata del passaggio a AEM as a Cloud Service con un rapporto personalizzato dettagliato.
 
 1. Semplifica lo spostamento con indicazioni end-to-end:
 
-   * Gestisci il percorso di migrazione con funzionalità intelligenti incorporate che forniscono aiuto contestuale lungo il percorso.
+   * Gestisci il percorso di migrazione con informazioni integrate che forniscono assistenza contestuale lungo il percorso.
 
-   * Rivedi e identifica le aree non supportate in AEM as a Cloud Service o che richiedono un refactoring per garantire la compatibilità.
+   * Rivedi e individua le aree che non sono supportate nell’AEM as a Cloud Service o che richiedono il refactoring per garantire la compatibilità.
 
 1. Ottimizza gli sforzi:
 
-   Accedi alle best practice e agli strumenti di automazione consigliati dagli Adobi per accelerare le operazioni di migrazione e l’accesso agli strumenti per ridurre al minimo i tempi di migrazione.
+   Accedi alle best practice consigliate dagli Adobi e agli strumenti di automazione per accelerare le attività di migrazione e accedere agli strumenti per ridurre al minimo i tempi di migrazione.
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso cos’è Cloud Acceleration Manager, ora puoi utilizzare e [Guida introduttiva di Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Dopo aver appreso cos’è Cloud Acceleration Manager, ora puoi utilizzare e [Introduzione a Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).

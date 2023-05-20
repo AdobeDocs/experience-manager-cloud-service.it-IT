@@ -169,7 +169,7 @@ La tabella seguente specifica le opzioni XCI.
 
 
 
-## Best practice  
+## Best practice
 
 * L’Adobe consiglia di ospitare l’archivio dei contenitori blob dei file di dati nell’area cloud utilizzata da AEM Cloud Service.
 

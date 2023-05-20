@@ -225,7 +225,7 @@ Utilizzare [l&#39;IDE di tua scelta](https://experienceleague.adobe.com/docs/exp
    private ProductTeaser productTeaser;
    ```
 
-   Per tutti i metodi che non dovranno essere ignorati o modificati, possiamo semplicemente restituire il valore che `ProductTeaser` restituisce. Esempio:
+   Per tutti i metodi che non dovranno essere ignorati o modificati, possiamo semplicemente restituire il valore che `ProductTeaser` restituisce. Ad esempio:
 
    ```java
    @Override
@@ -354,7 +354,7 @@ Nel nostro caso, vogliamo applicare un banner sopra il teaser per indicare che i
 
    Questa è la definizione del componente Product Teaser usato nel nostro progetto. Osserva la proprietà `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Questo è un esempio di creazione di un [componente Proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). Invece di copiare e incollare tutti gli script HTL di Product Teaser dai componenti core CIF di AEM, possiamo utilizzare `sling:resourceSuperType` per ereditare tutte le funzionalità.
 
-1. Aprire il file `productteaser.html`. Questa è una copia di `productteaser.html` file da [CIF Product Teaser](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
+1. Apri il file `productteaser.html`. Questa è una copia di `productteaser.html` file da [CIF Product Teaser](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
    ```html
    <!--/* productteaser.html */-->
@@ -484,7 +484,7 @@ A questo punto, la logica per la visualizzazione del **Rispettoso dell&#39;ambie
 
    ![Implementazione finale del badge eco-compatibile](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## Complimenti {#congratulations}
+## Congratulazioni {#congratulations}
 
 Hai appena personalizzato il tuo primo componente CIF di AEM. Scarica il file [file di soluzione completati qui](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 

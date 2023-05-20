@@ -8,7 +8,7 @@ exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
 workflow-type: tm+mt
 source-wordcount: '4384'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -331,7 +331,7 @@ La tabella seguente identifica i movimenti del visualizzatore mobile supportati 
    <td><p>Pannelli</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Toccare</strong></p> </td>
+   <td><p><strong>Tocca</strong></p> </td>
    <td><p>Mostra la finestra a comparsa</p> </td>
    <td><p>Mostra o nasconde l'interfaccia utente</p> </td>
    <td><p>Mostra o nasconde l'interfaccia utente</p> </td>

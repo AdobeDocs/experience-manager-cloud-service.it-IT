@@ -1,5 +1,5 @@
 ---
-title: Scopri i contenuti di Sites e come tradurre in AEM
+title: Scopri i contenuti di AEM Sites e come tradurli in AEM
 description: Scopri i concetti di AEM Sites e la teoria della traduzione in AEM.
 index: true
 hide: false
@@ -60,7 +60,7 @@ Approfondisci questo argomento e continua il tuo percorso di traduzione in AEM S
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del processo di traduzione dei siti consultando il documento [Introduzione alla traduzione dei siti in AEM,](getting-started.md) di seguito troverai alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
+Sebbene sia consigliabile passare alla parte successiva del processo di traduzione dei siti consultando il documento [Introduzione alla traduzione in AEM Sites](getting-started.md), di seguito troverai alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
 
 * [Guida rapida all’authoring delle pagine](/help/sites-cloud/authoring/getting-started/quick-start.md): panoramica rapida dei concetti più importanti per la creazione di contenuti con AEM Sites
 * [MSM e traduzione](/help/sites-cloud/administering/msm-and-translation.md): dettagli di AEM Multi-Site Manager e come funzionano i suoi strumenti di traduzione

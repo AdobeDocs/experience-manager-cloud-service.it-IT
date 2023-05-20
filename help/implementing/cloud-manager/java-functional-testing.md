@@ -1,14 +1,15 @@
 ---
 title: Test funzionali Java
 description: Scopri come scrivere test funzionali Java per AEM as a Cloud Service
-source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
+exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
+source-git-commit: cda1f51c89a98cfb75d63f8bd9b54e76ee745aa7
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 77%
 
 ---
 
-# Test funzionale Java
+# Test funzionali Java
 
 Scopri come scrivere test funzionali Java per AEM as a Cloud Service
 
@@ -96,19 +97,19 @@ Per ulteriori informazioni, consulta l’[`aem-testing-clients` archivio di GitH
 >
 >Per eseguire i test funzionali dal computer locale, crea un utente con autorizzazioni di tipo amministratore per ottenere lo stesso comportamento.
 
-1. L&#39;infrastruttura containerizzata per il test funzionale è limitata dai seguenti limiti:
+1. L’infrastruttura containerizzata che ha l’ambito per i test funzionali è limitata dai seguenti limiti:
 
 
 | Tipo | Valore | Descrizione |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | Quantità di tempo CPU riservato per esecuzione del test |
-| Memoria | 0.5Gi | Quantità di memoria allocata al test, valore in gibibiti |
+| Memoria | 0.5Gi | Quantità di memoria allocata al test, valore in gibibyte |
 | Timeout | 30m | La durata dopo la quale il test verrà terminato. |
-| Durata consigliata | 15m | Si consiglia di scrivere i test in modo che non richiedano più tempo di questo tempo. |
+| Durata consigliata | 15m | È consigliabile scrivere i test in modo che non richiedano più tempo. |
 
 >[!NOTE]
 >
-> Se hai bisogno di più risorse, crea un caso per l’Assistenza clienti e descrivi il tuo caso d’uso; il nostro team esaminerà la tua richiesta e fornirà l&#39;assistenza appropriata.
+> Se hai bisogno di più risorse, crea un caso di assistenza clienti e descrivi il tuo caso d’uso; il nostro team rivedrà la tua richiesta e fornirà l’assistenza appropriata.
 
 
 ### Esecuzione locale dei test {#local-test-execution}
@@ -125,15 +126,15 @@ Le proprietà del sistema sono indicate di seguito.
 
 | Proprietà | Descrizione | Esempio |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | la quantità di istanze, per far corrispondere cloud service, deve essere impostata su `2` | `2` |
-| `sling.it.instance.url.1` | deve essere impostato sull&#39;URL dell&#39;autore | `http://localhost:4502` |
-| `sling.it.instance.runmode.1` | la modalità runmode della prima istanza deve essere impostata su `author` | `author` |
-| `sling.it.instance.adminUser.1` | deve essere impostato sull&#39;utente amministratore dell&#39;autore. | `admin` |
-| `sling.it.instance.adminPassword.1` | deve essere impostato sulla password dell&#39;amministratore dell&#39;autore. |  |
-| `sling.it.instance.url.2` | deve essere impostato sull&#39;URL di pubblicazione | `http://localhost:4503` |
-| `sling.it.instance.runmode.2` | la modalità runmode della seconda istanza deve essere impostata su `publish` | `publish` |
-| `sling.it.instance.adminUser.2` | deve essere impostato sull&#39;utente amministratore di pubblicazione. | `admin` |
-| `sling.it.instance.adminPassword.2` | deve essere impostato sulla password dell&#39;amministratore di pubblicazione. |  |
+| `sling.it.instances` | la quantità di istanze da associare al servizio cloud deve essere impostata su `2` | `2` |
+| `sling.it.instance.url.1` | deve essere impostato sull’URL dell’autore | `http://localhost:4502` |
+| `sling.it.instance.runmode.1` | runmode della prima istanza, deve essere impostato su `author` | `author` |
+| `sling.it.instance.adminUser.1` | deve essere impostato sull’utente amministratore di Author. | `admin` |
+| `sling.it.instance.adminPassword.1` | deve essere impostato sulla password dell&#39;amministratore di authoring. |  |
+| `sling.it.instance.url.2` | deve essere impostato sull’URL di pubblicazione | `http://localhost:4503` |
+| `sling.it.instance.runmode.2` | runmode della seconda istanza, deve essere impostato su `publish` | `publish` |
+| `sling.it.instance.adminUser.2` | deve essere impostato sull’utente amministratore di pubblicazione. | `admin` |
+| `sling.it.instance.adminPassword.2` | deve essere impostato sulla password amministratore di pubblicazione. |  |
 
 
 

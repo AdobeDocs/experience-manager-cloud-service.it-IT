@@ -1,6 +1,6 @@
 ---
 title: Panoramica sullo strumento di mappatura utente (Legacy)
-description: Panoramica dello strumento di mappatura utente (legacy)
+description: Panoramica sullo strumento di mappatura utenti (legacy)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
@@ -11,11 +11,11 @@ ht-degree: 88%
 
 ---
 
-# Panoramica dello strumento di mappatura utente (legacy) {#overview-user-mapping-tool}
+# Panoramica sullo strumento di mappatura utenti (legacy) {#overview-user-mapping-tool}
 
 >[!INFO]
 >
->Questa documentazione fa riferimento a una versione obsoleta dello strumento. Per ulteriori informazioni sull’ultima versione, consulta [Mappatura utente e migrazione principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Questa documentazione fa riferimento a una versione obsoleta dello strumento. Per ulteriori informazioni sull’ultima versione, consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 <!-- Alexandru: drafting this for now
 

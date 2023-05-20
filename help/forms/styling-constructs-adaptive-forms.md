@@ -47,7 +47,7 @@ In base al bootstrap, il seguente insieme di proprietà CSS definisce il tema di
 * Bordo (tipo, colore, spessore)
 * Colore font
 * Riempimento
-* immagine
+* Margine
 * Dimensione font
 * LineHeight
 

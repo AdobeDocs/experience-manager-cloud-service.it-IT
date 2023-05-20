@@ -1,6 +1,6 @@
 ---
 title: Mappatura utenti e migrazione delle entità principali
-description: Panoramica della mappatura degli utenti e della migrazione principale
+description: Panoramica sulla mappatura degli utenti e sulla migrazione delle entità
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
@@ -17,20 +17,20 @@ ht-degree: 22%
 >abstract="Lo strumento Content Transfer (Trasferimento contenuti) consente di spostare gli utenti e i gruppi dal sistema AEM esistente ad AEM as a Cloud Service. Gli utenti esistenti devono essere mappati sui rispettivi ID IMS per evitare duplicati nell’istanza di authoring del Cloud Service."
 
 >[!NOTE]
->Per le versioni precedenti dello strumento User Mapping (Mappatura utente), consulta la sezione [documentazione legacy](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
+>Per le versioni precedenti dello strumento di mappatura utente, vedere [documentazione legacy](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
 
 ## Introduzione {#introduction}
 
 Come parte del percorso di transizione ad Adobe Experience Manager (AEM) as a Cloud Service, devi spostare gli utenti e i gruppi dal sistema AEM esistente ad AEM as a Cloud Service. Questa operazione viene eseguita dallo strumento Content Transfer (Trasferimento contenuti).
 
-Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente integrato degli Adobe ID per accedere al livello di authoring. A tal fine è necessario utilizzare [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate in Adobe Identity Management System (IMS), che fornisce un accesso singolo a tutte le applicazioni cloud di Adobe. Per ulteriori informazioni, consultare [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html#identity-management). A causa di questa modifica, gli utenti esistenti devono essere mappati ai loro ID IMS per evitare di duplicare gli utenti nell’istanza di authoring del Cloud Service. Poiché i gruppi nelle AEM tradizionali sono fondamentalmente diversi dai gruppi in IMS, i gruppi non vengono mappati, ma i due gruppi devono essere riconciliati al termine della migrazione.
+Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente integrato degli Adobe ID per accedere al livello di authoring. A tal fine è necessario utilizzare [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate in Adobe Identity Management System (IMS), che fornisce un accesso singolo a tutte le applicazioni cloud di Adobe. Per ulteriori informazioni, consultare [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html#identity-management). A causa di questa modifica, gli utenti esistenti devono essere mappati sui loro ID IMS per evitare utenti duplicati nell’istanza Autore Cloud Service. Poiché i gruppi nell’AEM tradizionale sono fondamentalmente diversi dai gruppi nell’IMS, i gruppi non sono mappati, ma devono essere riconciliati dopo il completamento della migrazione.
 
-## Mappatura degli utenti e dettagli sulla migrazione {#user-mapping-detail}
+## Dettagli di mappatura utenti e migrazione {#user-mapping-detail}
 
-Lo strumento Content Transfer (Trasferimento contenuti) e Cloud Acceleration Manager eseguiranno la migrazione degli utenti associati al contenuto in corso di migrazione. Questa mappatura viene eseguita automaticamente e se viene eseguito può essere controllato da un interruttore prima dell’avvio dell’estrazione. L’utente può ignorare l’impostazione predefinita dell’interruttore quando avvia l’estrazione.
+Lo strumento Content Transfer (Trasferimento contenuti) e Cloud Acceleration Manager eseguiranno la migrazione di tutti gli utenti associati al contenuto da migrare. Questa mappatura viene eseguita automaticamente e, se viene eseguita, può essere controllata da un interruttore prima dell’avvio dell’estrazione. L’impostazione predefinita dell’interruttore può essere ignorata dall’utente all’avvio dell’estrazione.
 
-* Se il sistema di origine è un&#39;istanza dell&#39;autore, per impostazione predefinita la scelta per eseguire la mappatura è _su_, poiché si tratta del processo consigliato.
-* Se il sistema di origine è un&#39;istanza di pubblicazione, per impostazione predefinita la scelta per eseguire la mappatura è _off_, poiché normalmente gli utenti non vengono migrati o utilizzati nelle istanze di pubblicazione.
+* Se il sistema di origine è un’istanza di authoring, per impostazione predefinita la scelta per eseguire la mappatura è _il_, in quanto si tratta del processo consigliato.
+* Se il sistema di origine è un’istanza Publish, per impostazione predefinita la scelta per eseguire la mappatura è _disattivato_, poiché di norma gli utenti non vengono migrati o utilizzati nelle istanze di pubblicazione.
 
 ## Considerazioni importanti sulla mappatura e la migrazione degli utenti {#important-considerations}
 
@@ -39,17 +39,17 @@ Lo strumento Content Transfer (Trasferimento contenuti) e Cloud Acceleration Man
 
 Vengono registrati i seguenti casi specifici:
 
-1. Se un utente non dispone di un indirizzo e-mail nel `profile/email` campo di applicazione *jcr* il nodo dell&#39;utente o del gruppo in questione può essere migrato ma non verrà mappato. Ciò vale anche se l’indirizzo e-mail viene utilizzato come nome utente per l’accesso.
+1. Se un utente non ha un indirizzo e-mail nel `profile/email` campo di loro *jcr* nodo di cui è possibile eseguire la migrazione dell&#39;utente o del gruppo, ma non verrà mappato. Questo vale anche se l’indirizzo e-mail viene utilizzato come nome utente per l’accesso.
 
-1. Se l’utente è disabilitato, viene trattato come se non fosse disabilitato. Viene mappata e migrata come normale e rimane disabilitata sull’istanza cloud.
+1. Se l’utente è disabilitato, viene trattato come se non lo fosse. Viene mappato e migrato come normale e rimane disabilitato nell’istanza cloud.
 
-1. Se un utente esiste nell’istanza AEM Cloud Service di destinazione con lo stesso nome utente (rep:principalName) di uno degli utenti nell’istanza AEM di origine, l’utente o il gruppo in questione non verrà migrato.
+1. Se nell’istanza AEM Cloud Service di destinazione è presente un utente con lo stesso nome utente (rep:principalName) di uno degli utenti nell’istanza AEM di origine, la migrazione dell’utente o del gruppo in questione non verrà eseguita.
 
-1. Se un utente viene migrato senza prima essere mappato tramite User Mapping, o se il suo indirizzo e-mail non corrisponde all’indirizzo e-mail utilizzato per accedere a IMS, sul sistema cloud di destinazione non sarà in grado di accedere utilizzando il proprio IMS ID. Potrebbero essere in grado di accedere utilizzando il metodo tradizionale AEM, ma tenete presente che questo non è normalmente ciò che si vuole o si aspetta.
+1. Se un utente viene migrato senza prima essere mappato tramite Mappatura utenti, o se il suo indirizzo e-mail non corrisponde a quello utilizzato per accedere a IMS, sul sistema cloud di destinazione non potrà accedere con il suo ID IMS. Potrebbero essere in grado di accedere utilizzando il metodo tradizionale dell’AEM, ma tieni presente che normalmente non è ciò che si desidera o si aspetta.
 
 
 ## Considerazioni aggiuntive {#additional-considerations}
 
-* Se l’impostazione **Cancella il contenuto esistente sull’istanza Cloud prima dell’acquisizione** è impostato, gli utenti già trasferiti nell’istanza di Cloud Service verranno eliminati insieme all’intero archivio esistente e verrà creato un nuovo archivio per acquisire il contenuto in. Questo ripristina anche tutte le impostazioni, comprese le autorizzazioni sull&#39;istanza del Cloud Service di destinazione ed è true per un utente amministratore aggiunto al **amministratori** gruppo. L’utente amministratore deve essere aggiunto nuovamente al **amministratori** gruppo per recuperare il token di accesso per CTT.
-* Quando si eseguono operazioni di integrazione dei contenuti, se il contenuto non viene trasferito perché non è stato modificato dal trasferimento precedente, gli utenti e i gruppi associati a tale contenuto non vengono trasferiti, anche se nel frattempo gli utenti e i gruppi sono cambiati. Questo perché gli utenti e i gruppi vengono migrati insieme al contenuto a cui sono associati.
-* Se l’istanza AEM Cloud Service di destinazione ha un utente con un nome utente diverso ma lo stesso indirizzo e-mail di uno degli utenti nell’istanza AEM di origine e la mappatura utente è abilitata, nei registri viene scritto un messaggio di errore e l’utente AEM di origine non viene trasferito, in quanto sul sistema di destinazione è consentito un solo utente con un dato indirizzo e-mail.
+* Se l&#39;impostazione **Cancella i contenuti esistenti nell’istanza Cloud prima dell’acquisizione** è impostato, gli utenti già trasferiti nell’istanza di Cloud Service verranno eliminati insieme all’intero archivio esistente e verrà creato un nuovo archivio in cui acquisire il contenuto. Questa opzione reimposta anche tutte le impostazioni, incluse le autorizzazioni sull’istanza del Cloud Service target ed è true per un utente amministratore aggiunto al **amministratori** gruppo. L&#39;utente amministratore deve essere aggiunto di nuovo al **amministratori** gruppo per recuperare il token di accesso per CTT.
+* Quando si esegue l’integrazione del contenuto, se il contenuto non viene trasferito perché non è stato modificato rispetto al trasferimento precedente, non vengono trasferiti né gli utenti né i gruppi associati a tale contenuto, anche se nel frattempo gli utenti e i gruppi sono cambiati. Questo perché gli utenti e i gruppi vengono migrati insieme al contenuto a cui sono associati.
+* Se l’istanza AEM Cloud Service di destinazione ha un utente con un nome utente diverso ma lo stesso indirizzo e-mail di uno degli utenti nell’istanza AEM di origine e la mappatura degli utenti è abilitata, nei registri viene scritto un messaggio di errore e l’utente AEM di origine non viene trasferito, poiché nel sistema di destinazione è consentito un solo utente con un determinato indirizzo e-mail.

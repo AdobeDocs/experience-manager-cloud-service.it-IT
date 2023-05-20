@@ -1,6 +1,6 @@
 ---
 title: Lo strumento Copia contenuto
-description: Lo strumento di copia del contenuto consente agli utenti di copiare contenuti mutabili on demand dai loro ambienti di produzione as a Cloud Service AEM agli ambienti di produzione più bassi a scopo di test.
+description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai propri ambienti di produzione as a Cloud Service per l’AEM in ambienti più bassi a scopo di test.
 source-git-commit: 4a5470ae8fe5a8e7f615009bf5f6b180aee4669b
 workflow-type: tm+mt
 source-wordcount: '1212'
@@ -11,11 +11,11 @@ ht-degree: 64%
 
 # Lo strumento Copia contenuto {#content-copy}
 
-Lo strumento di copia del contenuto consente agli utenti di copiare contenuti mutabili on demand dai loro ambienti di produzione as a Cloud Service AEM agli ambienti di produzione più bassi a scopo di test.
+Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai propri ambienti di produzione as a Cloud Service per l’AEM in ambienti più bassi a scopo di test.
 
 ## Introduzione {#introduction}
 
-I dati attuali e reali sono utili a scopo di test, convalida e accettazione da parte degli utenti. Lo strumento di copia del contenuto consente di copiare il contenuto da un ambiente di produzione AEM a uno staging, sviluppo o [Ambiente di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) ambiente per tali test.
+I dati attuali e reali sono utili a scopo di test, convalida e accettazione da parte degli utenti. Lo strumento Content Copy consente di copiare il contenuto da un ambiente AEM di produzione a uno di staging, sviluppo o [Ambiente di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) ambiente per tali test.
 
 Il contenuto da copiare è definito da un set di contenuti. Un set di contenuti è costituito da un elenco di percorsi JCR che contengono il contenuto mutabile da copiare da un ambiente del servizio di authoring sorgente a un ambiente del servizio di authoring di destinazione all’interno dello stesso programma Cloud Manager. I percorsi seguenti sono consentiti in un set di contenuti.
 
@@ -43,7 +43,7 @@ Per utilizzare lo strumento Copia contenuto, sono necessarie alcune autorizzazio
 
 ## Creazione di un set di contenuti {#create-content-set}
 
-Prima di copiare qualsiasi contenuto, è necessario definire un set di contenuti. Una volta definiti, i set di contenuti possono essere riutilizzati per copiare il contenuto. Per creare un set di contenuti, effettua le seguenti operazioni.
+Prima di poter copiare un contenuto, è necessario definire un set di contenuti. Una volta definiti, i set di contenuti possono essere riutilizzati per copiare il contenuto. Per creare un set di contenuti, effettua le seguenti operazioni.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
@@ -55,7 +55,7 @@ Prima di copiare qualsiasi contenuto, è necessario definire un set di contenuti
 
    ![Set di contenuti](assets/content-sets.png)
 
-1. Sulla **Dettagli** scheda della procedura guidata, specifica un nome e una descrizione per il set di contenuti e tocca o fai clic su **Continua**.
+1. Il giorno **Dettagli** della procedura guidata, fornisci un nome e una descrizione per il set di contenuti e tocca o fai clic su **Continua**.
 
    ![Dettagli dei set di contenuti](assets/add-content-set-details.png)
 
@@ -96,7 +96,7 @@ Segui passaggi simili a quelli impiegati per la creazione del contenuto. Invece 
 
 ![Modifica set di contenuti](assets/edit-content-set.png)
 
-Quando modifichi il set di contenuti, potrebbe essere necessario espandere i percorsi configurati per visualizzare i percorsi secondari esclusi.
+Tieni presente che quando modifichi il set di contenuti, potrebbe essere necessario espandere i percorsi configurati per visualizzare i percorsi secondari esclusi.
 
 ## Copia del contenuto {#copy-content}
 
@@ -118,19 +118,19 @@ Una volta creato un set di contenuti, puoi utilizzarlo per copiare il contenuto.
    >
    >* L’utente non dispone delle autorizzazioni appropriate.
    >* L’ambiente dispone di una pipeline in esecuzione o di un’operazione di copia del contenuto in corso.
-   >* L&#39;ambiente è in ibernazione o in fase di avvio.
+   >* L’ambiente è in stato di sospensione o in fase di avvio.
 
 
 1. Nella finestra di dialogo **Copia contenuto**, specifica l’origine e la destinazione dell’azione di copia del contenuto.
 
    ![Copia del contenuto](assets/copying-content.png)
 
-   * Il contenuto può essere copiato solo da un ambiente superiore a un ambiente inferiore o tra ambienti di sviluppo/RDE in cui la gerarchia degli ambienti è la seguente (dal più alto al più basso):
+   * Il contenuto può essere copiato solo da un ambiente superiore a un ambiente inferiore o tra ambienti di sviluppo/RDE in cui la gerarchia degli ambienti è la seguente (dal livello più alto a quello più basso):
       * Produzione
       * Staging
       * Sviluppo/RDE
 
-1. Se necessario, puoi anche selezionare **Includi elenchi di controllo di accesso** nel processo di copia.
+1. Se necessario, puoi anche scegliere di **Includi elenchi di controllo di accesso** nel processo di copia.
 
 1. Tocca o fai clic su **Copia**.
 
@@ -157,21 +157,21 @@ Una volta iniziata la copia del contenuto, il processo può trovarsi in uno dei 
 | In corso | Operazione di copia del contenuto in corso |
 | Non riuscito | Operazione di copia del contenuto non riuscita |
 | Completato | Operazione di copia del contenuto completata |
-| Annullato | L&#39;utente annulla un&#39;operazione di copia del contenuto dopo averlo avviato |
+| Annullato | L’utente annulla un’operazione di copia del contenuto dopo averlo avviato |
 
 ### Annullamento di un processo di copia {#cancelling}
 
-Se è necessario interrompere un’operazione di copia del contenuto dopo averlo avviato, è possibile annullarla.
+Se è necessario interrompere un&#39;operazione di copia del contenuto dopo averla avviata, è possibile annullarla.
 
-Per farlo, nella **Copia attività contenuto** , seleziona la **Annulla** dal menu dei puntini di sospensione del processo di copia avviato in precedenza.
+A tale scopo, il **Attività copia contenuto** , seleziona la **Annulla** dal menu con i puntini di sospensione del processo di copia avviato in precedenza.
 
 ![Annulla copia contenuto](assets/content-copy-cancel.png)
 
 >[!NOTE]
 >
->Quando si annulla un’operazione di copia del contenuto, è possibile ottenere una copia parziale del contenuto nell’ambiente di destinazione. Questo può rendere inutilizzabile l’ambiente di destinazione.
+>Quando annulli un’operazione di copia del contenuto, questa può tradursi in una copia parziale del contenuto nell’ambiente di destinazione. Questo può lasciare l’ambiente di destinazione inutilizzabile.
 >
->Se il tuo ambiente si trova in tale stato a causa della cancellazione, contatta l’Assistenza clienti di Adobe.
+>Se l’ambiente è in tale stato a causa della cancellazione, contatta l’Assistenza clienti di Adobe.
 
 ## Limitazioni {#limitations}
 
@@ -184,5 +184,5 @@ Lo strumento Copia contenuto presenta le seguenti limitazioni.
 * È possibile specificare fino a cinquanta percorsi per set di contenuti. Non ci sono limitazioni per i percorsi esclusi.
 * Lo strumento Copia contenuto non deve essere utilizzato come strumento di duplicazione o mirroring perché non può tenere traccia del contenuto spostato o eliminato nell’origine.
 * Lo strumento Copia contenuto non dispone di funzionalità di controllo delle versioni e non è in grado di rilevare automaticamente il contenuto modificato o appena creato nell’ambiente di origine in un set di contenuti dall’ultima operazione di copia di contenuto.
-   * Se desideri aggiornare l’ambiente di destinazione con modifiche al contenuto solo a partire dall’ultima operazione di copia del contenuto, devi creare un set di contenuti e specificare i percorsi nell’istanza sorgente in cui sono state apportate modifiche dopo l’ultima operazione di copia del contenuto.
+   * Se desideri aggiornare l’ambiente di destinazione con le modifiche apportate al contenuto solo dall’ultima operazione di copia del contenuto, devi creare un set di contenuti e specificare i percorsi nell’istanza di origine in cui sono state apportate le modifiche dall’ultima operazione di copia del contenuto.
 * Le informazioni sulla versione non sono incluse in una copia del contenuto.

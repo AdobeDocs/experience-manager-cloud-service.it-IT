@@ -33,7 +33,7 @@ Il contenuto Pagina zero viene visualizzato per impostazione predefinita quando 
 1. In [!UICONTROL Proprietà modulo] , fai clic su ![più](assets/plus.png) (Icona Più) per aggiungere una proprietà personalizzata.
 
 1. Specifica **_pagezerocontent** come nome della proprietà.
-1. Aggiungi come valore il nuovo messaggio Pagina zero, in formato Testo formattato. Esempio:
+1. Aggiungi come valore il nuovo messaggio Pagina zero, in formato Testo formattato. Ad esempio:
 
 
    `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader.</p></body>`

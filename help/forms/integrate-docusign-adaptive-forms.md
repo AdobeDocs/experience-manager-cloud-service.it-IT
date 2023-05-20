@@ -178,7 +178,7 @@ Per creare un modulo adattivo abilitato alla firma:
 
 1. In **[!UICONTROL Modello modulo]** , selezionare una delle opzioni seguenti:
 
-   - Se si dispone di un modello di modulo personalizzato e si richiede un documento di record basato sul modello di modulo, selezionare **[!UICONTROL Associa modello modulo come modello del documento record]** e selezionare un modello di documento record. Quando si utilizza l&#39;opzione, nei documenti inviati per la firma vengono visualizzati solo i campi basati sul modello di modulo associato. Non visualizza tutti i campi del modulo adattivo.
+   - Se si dispone di un modello di modulo personalizzato e si richiede un documento di record basato sul modello di modulo, selezionare **[!UICONTROL Associa modello modulo come modello del documento record]** e selezionare un modello di documento record. Quando si utilizza l&#39;opzione, i documenti inviati per la firma visualizzano solo i campi basati sul modello di modulo associato. Non visualizza tutti i campi del modulo adattivo.
 
    - Se non si dispone di un modello di modulo personalizzato, selezionare **[!UICONTROL Genera documento di record]** opzione. Quando utilizzi l’opzione, nel documento inviato per la firma vengono visualizzati tutti i campi del modulo adattivo.
 

@@ -20,7 +20,7 @@ Questa pagina descrive le regole per la qualità del codice personalizzato esegu
 
 >[!NOTE]
 >
->Le regole SonarQube complete non sono disponibili per il download a causa di informazioni proprietarie Adobi. È possibile scaricare l’elenco completo delle regole [utilizzando questo collegamento.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continua a leggere questo documento per descrizioni ed esempi delle regole.
+>Le regole complete di SonarQube non sono disponibili per il download a causa di informazioni proprietarie di Adobe. È possibile scaricare l’elenco completo delle regole [utilizzando questo collegamento.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continua a leggere questo documento per le descrizioni e gli esempi delle regole.
 
 >[!NOTE]
 >

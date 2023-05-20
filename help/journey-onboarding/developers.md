@@ -144,7 +144,7 @@ Se ti interessa scoprire come accedere e utilizzare AEM as a Cloud Service come 
 
 ## Risorse aggiuntive {#additional-resources}
 
-Di seguito sono riportate ulteriori risorse facoltative, se desideri andare oltre il contenuto del percorso di onboarding.
+Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
 * [Accesso agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md): scopri come accedere e gestire l’archivio Git con la gestione self-service dell’account Git di Cloud Manager.
 * [Utilizzo di Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md): scopri come utilizzare gli archivi Git di Cloud Manager e come integrare un archivio Git personalizzato e gestito dal cliente on-premise con Cloud Manager.

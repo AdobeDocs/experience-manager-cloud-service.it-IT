@@ -72,14 +72,14 @@ In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ord
 
 ## Azioni {#actions}
 
-Nella console sono disponibili diverse azioni utilizzabili direttamente o dopo aver selezionato un frammento specifico:
+All’interno della console è disponibile una serie di azioni che puoi utilizzare, direttamente o dopo aver selezionato un frammento specifico:
 
-* Varie azioni sono direttamente disponibili [disponibile dalla console](#available-actions)
+* Varie azioni sono direttamente [disponibile dalla console](#available-actions)
 * È possibile [seleziona uno o più frammenti di contenuto per visualizzare le azioni appropriate](#actions-selected-content-fragment)
 
-### Azioni (non selezionate) {#actions-unselected}
+### Azioni (non selezionata) {#actions-unselected}
 
-Alcune azioni sono disponibili dalla console senza selezionare un frammento di contenuto specifico:
+Alcune azioni sono disponibili dalla console, senza selezionare un frammento di contenuto specifico:
 
 * **[Creare](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** un nuovo frammento di contenuto
 * [Filtrare](#filtering-fragments) i frammenti di contenuto in base a una selezione di predicati e salvare il filtro per utilizzi futuri

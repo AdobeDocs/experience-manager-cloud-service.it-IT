@@ -80,7 +80,7 @@ I flussi di lavoro di post-elaborazione sono regolari [!DNL Experience Manager] 
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Formati di file supportati da Assets](file-format-support.md)
 * [Cercare risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)

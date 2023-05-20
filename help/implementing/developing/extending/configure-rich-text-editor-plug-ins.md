@@ -191,7 +191,7 @@ Un esempio di valida `htmlPasteRules` La struttura è la seguente:
 
 ## Configurare gli stili di testo {#textstyles}
 
-Gli autori possono applicare gli stili per modificare l&#39;aspetto di una parte di testo. Gli stili sono basati su classi CSS predefinite nel foglio di stile CSS. Il contenuto stilizzato è racchiuso in `span` tag che utilizzano `class` attributo per fare riferimento alla classe CSS. Esempio:
+Gli autori possono applicare gli stili per modificare l&#39;aspetto di una parte di testo. Gli stili sono basati su classi CSS predefinite nel foglio di stile CSS. Il contenuto stilizzato è racchiuso in `span` tag che utilizzano `class` attributo per fare riferimento alla classe CSS. Ad esempio:
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
@@ -583,7 +583,7 @@ Se si incorporano le modifiche suggerite dal correttore ortografico, lo stato de
 
 ## Configurare la dimensione della cronologia per le azioni Annulla e Ripristina {#undohistory}
 
-L’editor Rich Text consente agli autori di annullare o ripristinare alcune delle ultime modifiche. Per impostazione predefinita, nella cronologia vengono memorizzate 50 modifiche. Puoi configurare questo valore come richiesto.
+L’editor Rich Text consente agli autori di annullare o ripristinare alcune delle ultime modifiche. Per impostazione predefinita, nella cronologia sono memorizzate 50 modifiche. Puoi configurare questo valore come richiesto.
 
 1. All’interno del componente passa al nodo `<rtePlugins-node>/undo`. Crea questi nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
 1. Il giorno `undo` nodo creare la proprietà:

@@ -5,7 +5,7 @@ exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 100%
+ht-degree: 57%
 
 ---
 
@@ -13,14 +13,14 @@ ht-degree: 100%
 
 Durante l’authoring, è possibile ricorrere ai flussi di lavoro per intraprendere azioni sulle pagine; è inoltre possibile applicare più di un flusso di lavoro.
 
-Quando si applica il flusso di lavoro, è necessario specificare le seguenti informazioni:
+Quando si applica il flusso di lavoro, è necessario specificare le informazioni seguenti:
 
 * Flusso di lavoro da applicare.
    * Puoi utilizzare qualsiasi flusso di lavoro a cui hai accesso, secondo quanto assegnato dall’amministratore AEM.
-* Facoltativamente, un titolo che aiuti a identificare l&#39;istanza di flusso di lavoro nella casella in entrata di un utente.
-* Il payload del flusso di lavoro; può trattarsi di una o più pagine.
+* Facoltativamente, titolo che consente di identificare l’istanza del flusso di lavoro nella casella in entrata di un utente.
+* Il payload del flusso di lavoro; può essere costituito da una o più pagine.
 
-Puoi avviare i flussi di lavoro a partire da:
+I flussi di lavoro possono essere avviati da:
 
 * [La console Sites](#starting-a-workflow-from-the-sites-console);
 * [durante la modifica di una pagina, da Informazioni pagina](#starting-a-workflow-from-the-page-editor).
@@ -46,18 +46,18 @@ Puoi avviare i flussi di lavoro a partire da:
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
 -->
 
-## Avviare un flusso di lavoro dalla console Sites {#starting-a-workflow-from-the-sites-console}
+## Avvio di un flusso di lavoro dalla console Sites {#starting-a-workflow-from-the-sites-console}
 
-Puoi avviare un flusso di lavoro in uno dei due modi seguenti:
+Puoi avviare un flusso di lavoro da:
 
 * [con l’opzione Crea della barra degli strumenti di Sites](#starting-a-workflow-from-the-sites-toolbar);
 * [dalla barra Timeline della console Sites](#starting-a-workflow-from-the-timeline).
 
-In entrambi i casi, è necessario:
+In entrambi i casi sarà necessario:
 
-* [Specificare i Dettagli del flusso di lavoro nella Procedura guidata Crea flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
+* [Specificare i dettagli del flusso di lavoro nella procedura guidata Crea flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Avviare un flusso di lavoro dalla barra degli strumenti di Sites {#starting-a-workflow-from-the-sites-toolbar}
+### Avvio di un flusso di lavoro dalla barra degli strumenti Sites {#starting-a-workflow-from-the-sites-toolbar}
 
 Puoi avviare un flusso di lavoro dalla barra degli strumenti della console **Sites**:
 
@@ -67,43 +67,43 @@ Puoi avviare un flusso di lavoro dalla barra degli strumenti della console **Sit
 
    ![Creare un flusso di lavoro dalla barra degli strumenti](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
-1. La procedura guidata **Crea flusso di lavoro** consente di [specificare i dettagli del flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. Il **Crea flusso di lavoro** ti aiuterà [specificare i dettagli del flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Avviare un flusso di lavoro dalla Timeline {#starting-a-workflow-from-the-timeline}
+### Avvio di un flusso di lavoro dalla timeline {#starting-a-workflow-from-the-timeline}
 
-Puoi avviare un flusso di lavoro da applicare alla risorsa selezionata dalla **Timeline** 
+Dalla sezione **Timeline** puoi avviare un flusso di lavoro da applicare alla risorsa selezionata.
 
 1. [Seleziona la risorsa](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) e apri [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (o apri Timeline, quindi seleziona la risorsa).
 1. Puoi utilizzare la freccia dal campo commento per visualizzare **Avvia flusso di lavoro**:
 
    ![Creare un flusso di lavoro dalla timeline](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
-1. La procedura guidata **Crea flusso di lavoro** consente di [specificare i dettagli del flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. Il **Crea flusso di lavoro** ti aiuterà [specificare i dettagli del flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Specificazione dei Dettagli del flusso di lavoro nella procedura guidata Crea flusso di lavoro {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Specifica dei dettagli del flusso di lavoro nella procedura guidata Crea flusso di lavoro {#specifying-workflow-details-in-the-create-workflow-wizard}
 
-La procedura guidata **Crea flusso di lavoro** consente di selezionare il flusso di lavoro e specificare i dettagli necessari.
+Il **Crea flusso di lavoro** procedura guidata consente di selezionare il flusso di lavoro e di specificare i dettagli richiesti.
 
-Dopo aver aperto la procedura guidata **Crea flusso di lavoro** in uno dei due modi seguenti:
+Dopo l’apertura della **Crea flusso di lavoro** procedura guidata da:
 
 * [con l’opzione Crea della barra degli strumenti di Sites](#starting-a-workflow-from-the-sites-toolbar);
 * [dalla barra Timeline della console Sites](#starting-a-workflow-from-the-timeline).
 
 Puoi specificare i dettagli:
 
-1. Nel passaggio **Proprietà**, che definisce le opzioni di base del flusso di lavoro:
+1. In **Proprietà** fase, vengono definite le opzioni di base del flusso di lavoro:
 
-   * **modello flusso di lavoro**;
-   * **titolo flusso di lavoro**.
+   * **Modello flusso di lavoro**
+   * **Titolo flusso di lavoro**
 
-      * Per questa istanza, puoi specificare un titolo che aiuti a identificarla in una fase successiva.
+      * Puoi specificare un titolo per questa istanza, per facilitarne l’identificazione in una fase successiva.
 
-   A seconda del modello di flusso di lavoro, sono disponibili anche le seguenti opzioni. Queste consentono di conservare il pacchetto creato come payload, dopo il completamento del flusso di lavoro.
+   A seconda del modello di flusso di lavoro, sono disponibili anche le seguenti opzioni. Questi consentono di mantenere il pacchetto creato come payload al termine del flusso di lavoro.
 
    * **Mantieni pacchetto flusso di lavoro**
    * **Titolo pacchetto**
 
-      * Puoi specificare un titolo da attribuire al pacchetto, per facilitarne l&#39;identificazione.
+      * Puoi specificare un titolo per il pacchetto, per facilitare l’identificazione.
    >[!NOTE]
    >
    >L’opzione **Mantieni pacchetto flusso di lavoro** è disponibile quando il flusso di lavoro è stato configurato per Supporto risorse multiple e sono state selezionate più risorse.
@@ -129,9 +129,9 @@ Una finestra di dialogo si apre per permettere di perfezionare la selezione incl
          * Solo pagine modificate.
          * Solo pagine già pubblicate.
 
-         Tutti gli elementi secondari specificati vengono aggiunti all&#39;elenco di risorse al quale verrà applicato il flusso di lavoro.
+         Eventuali elementi figlio specificati vengono aggiunti all’elenco delle risorse a cui verrà applicato il flusso di lavoro.
 
-      * **Rimuovi selezione** per rimuovere una determinata risorsa dal flusso di lavoro.
+      * **Rimuovi selezione** per rimuovere tale risorsa dal flusso di lavoro.
 
    ![Definire l’ambito del flusso di lavoro](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
@@ -139,10 +139,10 @@ Una finestra di dialogo si apre per permettere di perfezionare la selezione incl
    >
    >Se aggiungi ulteriori risorse, puoi selezionare **Indietro** per regolare l’impostazione di **Mantieni pacchetto flusso di lavoro** nel passaggio **Proprietà**.
 
-1. Usa **Crea** per chiudere la procedura guidata e creare l’istanza di flusso di lavoro. Una notifica appare nella console Sites.
+1. Usa **Crea** per chiudere la procedura guidata e creare l’istanza di flusso di lavoro. Nella console Sites viene visualizzata una notifica.
 
-## Avviare un flusso di lavoro dall&#39;editor pagina {#starting-a-workflow-from-the-page-editor}
+## Avvio di un flusso di lavoro dall’Editor pagina {#starting-a-workflow-from-the-page-editor}
 
-Quando modifichi una pagina, puoi selezionare **Informazioni pagina** nella barra degli strumenti. Il menu a discesa contiene l&#39;opzione **Avvia nel flusso di lavoro**. Questa apre una finestra di dialogo nella quale puoi specificare il flusso di lavoro obbligatorio, insieme a un titolo richiesto:
+Quando modifichi una pagina puoi selezionare **Informazioni pagina** dalla barra degli strumenti. Il menu a discesa contiene l’opzione **Inizia nel flusso di lavoro**. Questa apre una finestra di dialogo nella quale puoi specificare il flusso di lavoro obbligatorio, insieme a un titolo richiesto:
 
 ![Avviare un flusso di lavoro dall’editor pagina](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

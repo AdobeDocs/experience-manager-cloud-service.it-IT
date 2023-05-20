@@ -211,7 +211,7 @@ Oltre a `UrlProvider`, è anche possibile configurare [mappature Sling](https://
 
 Le riscritture URL possono essere ottenute anche utilizzando il server HTTP di Dispatcher dell’AEM con `mod_rewrite` modulo. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) fornisce una configurazione di AEM Dispatcher di riferimento che include [regole di riscrittura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) di base per la dimensione generata.
 
-## Best practice   {#best-practices}
+## Best practice {#best-practices}
 
 ### Scegli il formato URL migliore {#choose-url-format}
 

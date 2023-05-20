@@ -8,7 +8,7 @@ exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ![integrazione dei dati](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] l’integrazione dei dati consente di utilizzare diverse origini dati di back-end per creare un modello dati modulo da utilizzare come schema in vari Forms adattivi <!--and interactive communications--> flussi di lavoro. Richiede la configurazione delle origini dati e la creazione di un modello dati modulo basato su oggetti e servizi del modello dati disponibili nelle origini dati. Per ulteriori informazioni, consulta gli argomenti di seguito:
+[!DNL Experience Manager Forms] l’integrazione dei dati consente di utilizzare diverse origini dati di back-end per creare un modello dati modulo da utilizzare come schema in vari Forms adattivi <!--and interactive communications--> flussi di lavoro. Richiede la configurazione delle origini dati e la creazione di un modello dati modulo basato su oggetti e servizi del modello dati disponibili nelle origini dati. Per ulteriori informazioni, vedi:
 
 * [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md)
 * [Configurare origini dati](configure-data-sources.md)

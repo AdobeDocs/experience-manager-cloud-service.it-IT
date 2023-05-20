@@ -83,7 +83,7 @@ Quando un utente invia il modulo, viene inviata un’e-mail all’ID e-mail inse
 
 I segnaposto variabili possono essere utilizzati anche nel **[!UICONTROL Oggetto]** e **[!UICONTROL Modello e-mail]** campi.
 
-Esempio:
+Ad esempio:
 
 `Hi ${first_name} ${last_name},`
 

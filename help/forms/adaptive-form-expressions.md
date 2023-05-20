@@ -18,7 +18,7 @@ JavaScript™ è il linguaggio di espressione di Adaptive Forms. Tutte le espres
 
 ## Best practice per la scrittura di espressioni {#best-practices-for-writing-expressions}
 
-* Durante la scrittura di espressioni, per accedere a campi e pannelli è possibile utilizzare il nome del campo o del pannello. Per accedere al valore di un campo, utilizzare la proprietà value. Esempio, `field1.value`
+* Durante la scrittura di espressioni, per accedere a campi e pannelli è possibile utilizzare il nome del campo o del pannello. Per accedere al valore di un campo, utilizzare la proprietà value. Ad esempio `field1.value`
 * Utilizza nomi univoci per campi e pannelli nel modulo. Consente di evitare possibili conflitti con i nomi dei campi utilizzati durante la scrittura delle espressioni.
 * Durante la scrittura di espressioni su più righe, utilizzare un punto e virgola per terminare un&#39;istruzione.
 
@@ -64,7 +64,7 @@ In Forms adattivo, puoi scrivere espressioni per aggiungere comportamenti quali 
 
 ### Calcola espressione {#calculate-expression}
 
-L’espressione di calcolo viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un’espressione. In genere, tali espressioni utilizzano la proprietà value di altri campi. Esempio, `field2.value + field3.value`. Ogni volta che il valore `field2`o `field3`, l&#39;espressione viene riattivata e il valore viene ricalcolato.
+L’espressione di calcolo viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un’espressione. In genere, tali espressioni utilizzano la proprietà value di altri campi. Ad esempio, `field2.value + field3.value`. Ogni volta che il valore `field2`o `field3`, l&#39;espressione viene riattivata e il valore viene ricalcolato.
 
 **Applicabile a**: campi
 
@@ -139,7 +139,7 @@ Nell’esempio precedente, se il valore non vuoto non corrisponde al modello, l�
 
 >[!NOTE]
 >
->Se scrivi un’espressione di convalida per un campo non obbligatorio o obbligatorio, l’espressione viene valutata indipendentemente dallo stato di visibilità del campo. Per interrompere la convalida dei campi nascosti, impostare la proprietà validationsDisabled nello script di inizializzazione o di conferma del valore su true. Esempio, `this.validationsDisabled=true`
+>Se scrivi un’espressione di convalida per un campo non obbligatorio o obbligatorio, l’espressione viene valutata indipendentemente dallo stato di visibilità del campo. Per interrompere la convalida dei campi nascosti, impostare la proprietà validationsDisabled nello script di inizializzazione o di conferma del valore su true. Ad esempio `this.validationsDisabled=true`
 
 ### Script per conferma del valore {#value-commit-script}
 

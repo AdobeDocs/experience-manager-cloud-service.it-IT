@@ -70,7 +70,7 @@ Per aggiungere caratteri personalizzati all&#39;ambiente di Cloud Service:
    </plugin>
    ```
 
-1. Aggiungi la cartella font a `<modules>` elencate nel file pom. Esempio:
+1. Aggiungi la cartella font a `<modules>` elencate nel file pom. Ad esempio:
 
    ```xml
    <modules>

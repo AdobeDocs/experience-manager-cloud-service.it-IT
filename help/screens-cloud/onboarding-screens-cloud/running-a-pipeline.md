@@ -5,7 +5,7 @@ exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 Questa sezione descrive come eseguire la pipeline e distribuire il codice per il programma in Cloud Manager.
 
 >[!NOTE]
->Fai riferimento a [Configurazione della pipeline CD-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) e [Implementare il codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en) per scoprire come eseguire la pipeline per il programma in Cloud Manager.
+>Fai riferimento a [Configurazione della pipeline CD-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=it) e [Implementare il codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en) per scoprire come eseguire la pipeline per il programma in Cloud Manager.
 
 ## Obiettivo {#objective}
 
@@ -35,7 +35,7 @@ La sezione seguente descrive come configurare la pipeline CI/CD e distribuire il
 1. Seleziona le opzioni dalla **Configurare la pipeline** procedura guidata. Fai clic su **Salva**.
 
    >[!NOTE]
-   >Per informazioni sulle opzioni della procedura guidata Configura pipeline, consulta [Configurazione delle impostazioni della pipeline da Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) per ulteriori dettagli.
+   >Per informazioni sulle opzioni della procedura guidata Configura pipeline, consulta [Configurazione delle impostazioni della pipeline da Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=it) per ulteriori dettagli.
 
    ![immagine](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 

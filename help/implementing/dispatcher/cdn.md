@@ -19,58 +19,58 @@ ht-degree: 15%
 
 AEM as a Cloud Service viene fornito con una rete CDN integrata. Il suo scopo principale è ridurre la latenza distribuendo contenuti memorizzabili nella cache dai nodi della CDN al perimetro, vicino al browser. È completamente gestita e configurata per garantire prestazioni ottimali alle applicazioni AEM.
 
-La rete CDN gestita AEM soddisfa la maggior parte dei requisiti di prestazioni e sicurezza dei clienti. Per il livello di pubblicazione, i clienti possono facoltativamente indicarlo dal proprio CDN, che devono gestire. Questo scenario è consentito caso per caso, in base al soddisfacimento di alcuni prerequisiti, tra cui, ma non solo, il cliente con un’integrazione legacy con il proprio fornitore CDN che è difficile abbandonare.
+La rete CDN gestita dall&#39;AEM soddisfa i requisiti di prestazioni e sicurezza della maggior parte dei clienti. Per il livello di pubblicazione, i clienti possono opzionalmente puntarlo dalla propria rete CDN, che devono gestire. Questo scenario è consentito caso per caso, in base al rispetto di alcuni prerequisiti, tra cui, ma non solo, la possibilità per il cliente di avere un’integrazione legacy con il fornitore CDN, difficile da abbandonare.
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## CDN gestito da AEM  {#aem-managed-cdn}
+## CDN gestita da AEM  {#aem-managed-cdn}
 
-Segui le sezioni seguenti per utilizzare l’interfaccia utente self-service di Cloud Manager per prepararsi alla distribuzione dei contenuti utilizzando AEM CDN preconfigurato:
+Segui le sezioni riportate di seguito per utilizzare l’interfaccia utente self-service di Cloud Manager in preparazione alla distribuzione dei contenuti tramite CDN preconfigurata AEM:
 
 1. [Gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **Limitazione del traffico**
 
-Per impostazione predefinita, per una configurazione CDN gestita da AEM, tutto il traffico pubblico può indirizzarsi al servizio di pubblicazione, sia per gli ambienti di produzione che per quelli non di produzione (sviluppo e stage). Puoi limitare il traffico al servizio di pubblicazione per un dato ambiente (ad esempio, limitando la gestione temporanea per un intervallo di indirizzi IP) tramite l’interfaccia utente di Cloud Manager.
+Per impostazione predefinita, per una configurazione CDN gestita dall’AEM tutto il traffico pubblico può indirizzarsi al servizio di pubblicazione, sia per gli ambienti di produzione che per quelli non di produzione (sviluppo e stage). Puoi limitare il traffico verso il servizio di pubblicazione per un dato ambiente (ad esempio, limitando la gestione temporanea da un intervallo di indirizzi IP) tramite l’interfaccia utente di Cloud Manager.
 
 Per ulteriori informazioni, consulta [Gestione degli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!CAUTION]
 >
->Solo le richieste dagli IP consentiti vengono servite da AEM CDN gestito. Se punti la tua CDN alla CDN gestita da AEM, assicurati che gli IP della tua CDN siano inclusi nell&#39;inserire nell&#39;elenco Consentiti.
+>Solo le richieste provenienti dagli IP consentiti vengono gestite da CDN gestita dall’AEM. Se punti la tua rete CDN alla rete CDN gestita dall’AEM, assicurati che gli IP della tua rete CDN siano inclusi nel inserisco nell&#39;elenco Consentiti di.
 
-## CDN del cliente punta a CDN gestito da AEM {#point-to-point-CDN}
+## La rete CDN del cliente punta alla rete CDN gestita dall’AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="CDN del cliente punta alla CDN gestita di AEM"
->abstract="AEM as a Cloud Service offre ai clienti un’opzione per utilizzare la sua rete CDN esistente. Per il livello di pubblicazione, i clienti possono facoltativamente indicarlo dal proprio CDN, che devono gestire. Questo scenario è consentito caso per caso, in base al soddisfacimento di alcuni prerequisiti, tra cui, ma non solo, il cliente con un’integrazione legacy con il proprio fornitore CDN che è difficile abbandonare."
+>abstract="AEM as a Cloud Service offre ai clienti un’opzione per utilizzare la sua rete CDN esistente. Per il livello di pubblicazione, i clienti possono opzionalmente puntarlo dalla propria rete CDN, che devono gestire. Questo scenario è consentito caso per caso, in base al rispetto di alcuni prerequisiti, tra cui, ma non solo, la possibilità per il cliente di avere un’integrazione legacy con il fornitore CDN, difficile da abbandonare."
 
-Se un cliente deve utilizzare il proprio CDN esistente, può gestirlo e indirizzarlo al CDN gestito da AEM, purché siano soddisfatte le seguenti condizioni:
+Se un cliente deve utilizzare la propria rete CDN esistente, può gestirla e puntarla alla rete CDN gestita dall’AEM, purché siano soddisfatte le seguenti condizioni:
 
-* Il cliente deve disporre di un CDN esistente che sarebbe oneroso da sostituire.
+* Il cliente deve disporre di una rete CDN esistente che potrebbe essere onerosa da sostituire.
 * Il cliente deve gestirlo.
-* Il cliente deve essere in grado di configurare la CDN in modo che funzioni con AEM as a Cloud Service - vedi le istruzioni di configurazione riportate di seguito.
-* Il cliente deve avere esperti CDN tecnici che sono in chiamata in caso di problemi relativi al caso si presentano.
+* Il cliente deve essere in grado di configurare la rete CDN in modo che funzioni con AEM as a Cloud Service; consulta le istruzioni di configurazione riportate di seguito.
+* Il cliente deve disporre di esperti CDN tecnici che siano di guardia in caso di problemi correlati.
 * Il cliente deve eseguire e superare con successo un test di carico prima di passare alla produzione.
 
 Istruzioni di configurazione:
 
-1. Posiziona il CDN nell’ingresso della CDN di Adobe come dominio di origine. Esempio: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. Impostare SNI sull&#39;ingresso della CDN di Adobe.
+1. Puntare la rete CDN all’ingresso della rete CDN Adobe come dominio di origine. Esempio: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Impostare SNI sull&#39;ingresso della rete CDN in Adobe.
 1. Imposta l’intestazione Host sul dominio di origine. Esempio: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. Imposta la `X-Forwarded-Host` intestazione con il nome di dominio in modo AEM determinare l&#39;intestazione host. Esempio: `X-Forwarded-Host:example.com`.
-1. Imposta `X-AEM-Edge-Key`. Il valore deve provenire dall&#39;Adobe.
+1. Imposta il `X-Forwarded-Host` con il nome di dominio in modo che l’AEM possa determinare l’intestazione dell’host. Esempio: `X-Forwarded-Host:example.com`.
+1. Imposta `X-AEM-Edge-Key`. Il valore deve provenire da Adobe.
 
-   * Necessario in modo che l’Adobe CDN possa convalidare l’origine delle richieste e passare il `X-Forwarded-*` le intestazioni dell&#39;applicazione AEM. Ad esempio:`X-Forwarded-For` viene utilizzato per determinare l&#39;IP client. Quindi, diventa responsabilità del chiamante affidabile (cioè, il CDN gestito dal cliente) per garantire la correttezza del `X-Forwarded-*` intestazioni (vedi la nota qui sotto).
-   * Facoltativamente, l&#39;accesso all&#39;ingresso della rete CDN di Adobe può essere bloccato quando un `X-AEM-Edge-Key` non è presente. Informare l&#39;Adobe se hai bisogno dell&#39;accesso diretto all&#39;ingresso della rete CDN di Adobe (da bloccare).
+   * Necessario affinché il CDN Adobe possa convalidare l’origine delle richieste e trasmettere `X-Forwarded-*` intestazioni per l’applicazione AEM. Ad esempio:`X-Forwarded-For` viene utilizzato per determinare l’IP del client. Pertanto, è responsabilità del chiamante fidato (ovvero, la rete CDN gestita dal cliente) garantire la correttezza del `X-Forwarded-*` intestazioni (vedi la nota seguente).
+   * Facoltativamente, l’accesso alla rete CDN Adobe può essere bloccato quando un utente `X-AEM-Edge-Key` non è presente. Informa l’Adobe se hai bisogno di accedere direttamente all’ingresso della rete CDN di Adobe (da bloccare).
 
-Consulta la sezione [Configurazioni fornitore CDN di esempio](#sample-configurations) sezione per esempi di configurazione da parte dei principali fornitori CDN.
+Consulta la [Esempio di configurazioni fornitore CDN](#sample-configurations) sezione per esempi di configurazione dei principali fornitori CDN.
 
-Prima di accettare il traffico live, è necessario verificare con il supporto clienti di Adobe che il indirizzamento del traffico end-to-end funziona correttamente.
+Prima di accettare il traffico in tempo reale, è necessario verificare con l’Assistenza clienti di Adobe che il routing del traffico end-to-end funzioni correttamente.
 
-Dopo aver ottenuto `X-AEM-Edge-Key`, puoi verificare che la richiesta sia instradata correttamente come segue.
+Dopo aver ottenuto il `X-AEM-Edge-Key`, puoi verificare che la richiesta sia indirizzata correttamente come segue.
 
 In Linux®:
 
@@ -86,24 +86,24 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Quando utilizzi una tua CDN, non devi installare domini e certificati in Cloud Manager. Il routing nella rete CDN di Adobe viene eseguito utilizzando il dominio predefinito `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` da inviare nella richiesta `Host` intestazione. Sovrascrittura della richiesta `Host` intestazione con un nome di dominio personalizzato può causare l’instradamento errato della richiesta da parte della CDN di Adobe.
+>Quando utilizzi una tua rete CDN, non è necessario installare domini e certificati in Cloud Manager. Il routing nella rete CDN Adobe viene eseguito utilizzando il dominio predefinito `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` da inviare nella richiesta `Host` intestazione. Sovrascrittura della richiesta `Host` Se l’intestazione presenta un nome di dominio personalizzato, la richiesta potrebbe essere instradata in modo errato dal CDN Adobe.
 
 
 >[!NOTE]
 >
->I clienti che gestiscono il proprio CDN devono garantire l’integrità delle intestazioni inviate a AEM CDN. Ad esempio, si consiglia ai clienti di cancellare tutto `X-Forwarded-*` e impostale su valori noti e controllati. Ad esempio: `X-Forwarded-For` deve contenere l&#39;indirizzo IP del cliente, mentre `X-Forwarded-Host` deve contenere l&#39;host del sito.
+>I clienti che gestiscono la propria rete CDN devono garantire l’integrità delle intestazioni inviate tramite la rete CDN dell’AEM. Ad esempio, si consiglia ai clienti di cancellare tutto `X-Forwarded-*` e impostarle su valori noti e controllati. Ad esempio: `X-Forwarded-For` deve contenere l’indirizzo IP del client, mentre `X-Forwarded-Host` deve contenere l’host del sito.
 
 >[!NOTE]
 >
->Gli ambienti di programma sandbox non supportano una rete CDN fornita dal cliente.
+>Gli ambienti dei programmi sandbox non supportano una rete CDN fornita dal cliente.
 
-L’hop aggiuntivo tra la CDN del cliente e la CDN AEM è necessario solo in presenza di una perdita di cache. Utilizzando le strategie di ottimizzazione della cache descritte in questo articolo, l’aggiunta di un CDN cliente dovrebbe introdurre solo una latenza trascurabile.
+L’hop aggiuntivo tra la rete CDN del cliente e la rete CDN dell’AEM è necessario solo in caso di errore della cache. Utilizzando le strategie di ottimizzazione della cache descritte in questo articolo, l’aggiunta di una rete CDN del cliente dovrebbe introdurre solo una latenza trascurabile.
 
-Questa configurazione CDN del cliente è supportata per il livello di pubblicazione, ma non davanti al livello di authoring.
+Questa configurazione CDN del cliente è supportata per il livello di pubblicazione, ma non prima del livello di authoring.
 
-### Configurazioni fornitore CDN di esempio {#sample-configurations}
+### Esempio di configurazioni fornitore CDN {#sample-configurations}
 
-Di seguito sono riportati diversi esempi di configurazione forniti da diversi importanti fornitori CDN.
+Di seguito sono riportati diversi esempi di configurazione di diversi fornitori CDN leader.
 
 **Akamai**
 
@@ -115,21 +115,21 @@ Di seguito sono riportati diversi esempi di configurazione forniti da diversi im
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-**Cloudflare**
+**Nuvola**
 
-![Cloudflare1](assets/cloudflare1.png "Cloudflare")
-![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+![Cloudflare1](assets/cloudflare1.png "Nuvola")
+![Cloudflare2](assets/cloudflare2.png "Nuvola")
 
 ## Intestazioni di geolocalizzazione {#geo-headers}
 
-La rete CDN gestita AEM aggiunge intestazioni a ogni richiesta con:
+Il CDN gestito da AEM aggiunge intestazioni a ogni richiesta con:
 
-* codice del paese: `x-aem-client-country`
+* codice paese: `x-aem-client-country`
 * Codice continente: `x-aem-client-continent`
 
 >[!NOTE]
 >
->Se è presente una rete CDN gestita dal cliente, queste intestazioni riflettono la posizione del server proxy CDN dei clienti anziché il client effettivo. Pertanto, per la CDN gestita dal cliente, le intestazioni di geolocalizzazione devono essere gestite dalla CDN dei clienti.
+>Se è presente una rete CDN gestita dal cliente, queste intestazioni riflettono la posizione del server proxy CDN del cliente anziché il client effettivo. Pertanto, per la rete CDN gestita dal cliente, le intestazioni di geolocalizzazione devono essere gestite dalla rete CDN del cliente.
 
 I valori per i codici paese sono i codici alfa-2 descritti [qui](https://en.wikipedia.org/wiki/ISO_3166-1).
 
@@ -138,9 +138,9 @@ I valori per i codici continente sono:
 * AF Africa
 * AN Antartide
 * AS Asia
-* Europa
-* NA America del Nord
+* Europa UE
+* NA Nord America
 * OC Oceania
 * SA Sud America
 
-Queste informazioni possono essere utili per i casi d’uso, ad esempio per reindirizzare a un URL diverso in base all’origine (paese) della richiesta. Utilizza l’intestazione Vary per memorizzare nella cache le risposte che dipendono dalle informazioni geografiche. Ad esempio, i reindirizzamenti a una pagina di destinazione specifica di un paese devono sempre contenere `Vary: x-aem-client-country`. Se necessario, puoi utilizzare `Cache-Control: private` per evitare la memorizzazione in cache. Vedi anche [Memorizzazione in cache](/help/implementing/dispatcher/caching.md#html-text).
+Queste informazioni possono essere utili per casi d’uso come il reindirizzamento a un URL diverso in base all’origine (paese) della richiesta. Utilizza l’intestazione Vary per memorizzare nella cache le risposte che dipendono dalle informazioni geografiche. Ad esempio, i reindirizzamenti a una pagina di destinazione di un paese specifico devono sempre contenere `Vary: x-aem-client-country`. Se necessario, puoi utilizzare `Cache-Control: private` per impedire il caching. Vedi anche [Memorizzazione in cache](/help/implementing/dispatcher/caching.md#html-text).

@@ -22,7 +22,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Avviare l’editor dei frammenti di contenuto"
->abstract="Ora esploriamo come funziona l’authoring dei contenuti headless. La tua versione di prova AEM headless dispone di un’app React di esempio, utile per capire quanto è facile gestire i contenuti in modo indipendente e veloce, senza i tempi solitamente associati allo sviluppo di app.<br><br>Per avviare questo modulo in una nuova scheda, fai clic qui sotto, quindi segui questa guida."
+>abstract="Ora vediamo come funziona l’authoring di contenuti headless. La tua versione di prova AEM headless dispone di un’app React di esempio, utile per capire quanto è facile gestire i contenuti in modo indipendente e veloce, senza i tempi solitamente associati allo sviluppo di app.<br><br>Per avviare questo modulo in una nuova scheda, fai clic qui sotto, quindi segui questa guida."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
@@ -63,7 +63,7 @@ L’editor frammenti di contenuto mostra il layout di base dell’app come framm
 
 Come vedi, è davvero semplice aggiornare i contenuti all&#39;interno di un&#39;app React integrata nel CMS AEM headless.
 
-## Scambio di un’immagine nell’app {#change-image}
+## Scambio di un&#39;immagine nell&#39;app {#change-image}
 
 Ora che hai modificato un titolo nell’app, prova a cambiare un’immagine.
 

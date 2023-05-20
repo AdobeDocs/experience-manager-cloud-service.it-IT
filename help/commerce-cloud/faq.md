@@ -5,7 +5,7 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
@@ -47,7 +47,7 @@ I dati dinamici come prezzo o inventario non vengono memorizzati nella cache di 
 
 ## 9. Come funziona l’invalidazione della cache per il Dispatcher AEM con l’AEM e il Commerce?
 
-È consigliabile impostare l’invalidazione della cache basata su TTL per le pagine memorizzate nella cache di Dispatcher. Per informazioni dinamiche come prezzo o azioni, si consiglia di eseguire il rendering dei dati lato client. Per ulteriori informazioni sull’invalidazione della cache basata su TTL, consulta [Ottimizzazione della cache di Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) e [Ottimizzazione delle prestazioni AEM](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
+È consigliabile impostare l’invalidazione della cache basata su TTL per le pagine memorizzate nella cache di Dispatcher. Per informazioni dinamiche come prezzo o azioni, si consiglia di eseguire il rendering dei dati lato client. Per ulteriori informazioni sull’invalidazione della cache basata su TTL, consulta [Ottimizzazione della cache di Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=it) e [Ottimizzazione delle prestazioni AEM](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
 ## 10. Vi sono consigli sulla ricerca unificata nei contenuti AEM con Commerce?
 

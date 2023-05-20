@@ -1296,11 +1296,11 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * più frammenti di contenuto di tipo `bookmark`
-   * con i riferimenti a frammenti ad altri frammenti del tipo di modello specifico `Article`
+   * con riferimenti ai frammenti per altri frammenti del tipo di modello specifico `Article`
 
 >[!NOTE]
 >
->Il campo `fragments` ha il tipo di dati `fragment-reference`, con il modello `Article` selezionato. Consegna query `fragments` come array di `[Article]`.
+>Il campo `fragments` ha il tipo di dati `fragment-reference`, con il modello `Article` selezionato. Consegne di query `fragments` come array di `[Article]`.
 
 ```graphql
 {
@@ -1315,7 +1315,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 }
 ```
 
-#### Più tipi di modelli di riferimento
+#### Più tipi di modello a cui si fa riferimento
 
 Questa query rappresenta un’interrogazione per ottenere:
 
@@ -1324,7 +1324,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 >[!NOTE]
 >
->Il campo `fragments` include il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionati. Consegna query `fragments` come array di `[AllFragmentModels]`, che viene fatto riferimento al tipo di unione.
+>Il campo `fragments` include il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionati. Consegne di query `fragments` come array di `[AllFragmentModels]`, a cui viene fatto riferimento con il tipo di unione.
 
 ```graphql
 {

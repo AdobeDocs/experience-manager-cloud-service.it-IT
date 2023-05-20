@@ -5,7 +5,7 @@ exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 100%
+ht-degree: 71%
 
 ---
 
@@ -19,7 +19,7 @@ Per prima cosa, accedi all’opzione [Utente](#user-settings) nell’intestazion
 
 ## Impostazioni utente {#user-settings}
 
-La finestra di dialogo **Impostazioni utente** consente di accedere alle seguenti funzioni:
+Il **Utente** La finestra di dialogo delle impostazioni consente di accedere a:
 
 * Impersona
    * La funzionalità Impersona permette a un utente di lavorare a nome di un altro utente. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -40,18 +40,18 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Lingua**
 
-   Consente di definire la lingua da usare nell’interfaccia dell’ambiente di authoring. Seleziona la lingua desiderata dall’elenco delle opzioni disponibili.
+   Consente di definire la lingua da usare nell’interfaccia dell’ambiente di authoring. Seleziona la lingua desiderata dall’elenco disponibile.
 
 * **Gestione finestre**
 
-   Consente di definire il comportamento o l’apertura delle finestre. Puoi selezionare:
+   Definisce il comportamento o l&#39;apertura delle finestre. Puoi selezionare:
 
-   * **Finestre multiple** (predefinito)
+   * **Finestre multiple** (Predefinito)
 
-      * Le pagine si apriranno in una nuova finestra.
+      * Le pagine verranno aperte in una nuova finestra.
    * **Finestra singola**
 
-      * Le pagine si apriranno nella finestra corrente.
+      * Le pagine verranno aperte nella finestra corrente.
 
 
 * **Mostra azioni desktop per Assets**
@@ -60,9 +60,9 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Colore annotazione**
 
-   Consente di definire il colore predefinito utilizzato per le annotazioni.
+   Definisce il colore predefinito utilizzato per le annotazioni.
 
-   * Fai clic sul blocco dei colori per aprire il selettore di campioni e selezionare un colore.
+   * Fai clic sul blocco di colori per aprire il selettore di campioni e selezionare un colore.
    * In alternativa, immetti nel campo il codice esadecimale del colore desiderato.
 
 * **Presentazione data relativa**
@@ -85,12 +85,12 @@ Ogni utente può impostare autonomamente determinate proprietà.
    * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-   Questa opzione abilita le scelte rapide da tastiera. Queste sono abilitate per impostazione predefinita, ma possono essere disabilitate se, ad esempio, un utente presenta determinati requisiti di accessibilità.
+   Questa opzione abilita le scelte rapide da tastiera. Per impostazione predefinita sono abilitate, ma possono essere disabilitate, ad esempio se un utente ha determinati requisiti di accessibilità.
 
 * **Abilita pagina iniziale di Assets**
 
-   Questa opzione è disponibile solo se l’amministratore del sistema ha abilitato l’esperienza Home page di Assets per l’intera organizzazione.
+   Questa opzione è disponibile solo se l’amministratore di sistema ha abilitato l’esperienza Pagina iniziale di Assets per l’intera organizzazione.
 
 * **Configurazione Stock**
 
-   Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l’amministratore di sistema ha abilitato l’[integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+   Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l’amministratore di sistema ha abilitato [Integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

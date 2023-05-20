@@ -48,7 +48,7 @@ Utilizzando questo layout, è possibile inserire più **[!UICONTROL Modulo adatt
 
 ![Un modulo che utilizza il layout dinamico come visualizzato su un piccolo schermo](assets/responsive-layout.png)
 
-### [!UICONTROL Wizard] {#wizard}
+### [!UICONTROL Procedura guidata] {#wizard}
 
 Utilizza questo layout di pannello per fornire una navigazione guidata all’interno di un modulo. Utilizzare ad esempio questo layout per acquisire informazioni obbligatorie in un modulo guidando gli utenti passo dopo passo.
 

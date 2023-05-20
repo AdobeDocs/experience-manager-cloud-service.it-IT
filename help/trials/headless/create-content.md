@@ -33,15 +33,15 @@ ht-degree: 65%
 
 I frammenti di contenuto rappresentano il contenuto headless dell’utente e si basano su strutture predefinite, denominate modelli di frammenti di contenuto. Hai già creato un modello in un modulo precedente.
 
-In questo modulo verrà creato un nuovo frammento di contenuto basato su tale modello utilizzando la console Frammento di contenuto . Considera la console Frammenti di contenuto come una libreria di contenuti headless. Utilizzala per creare nuovi frammenti di contenuto e gestire i frammenti esistenti.
+In questo modulo creerai un nuovo frammento di contenuto basato su tale modello utilizzando la console Frammento di contenuto. Considera la console Frammenti di contenuto come una libreria di contenuti headless. Utilizzala per creare nuovi frammenti di contenuto e gestire i frammenti esistenti.
 
 1. Tocca o fai clic sul pulsante **Crea** in alto a destra nella console.
 
 1. La finestra di dialogo **Nuovo frammento di contenuto** si apre e lì puoi iniziare a creare un nuovo frammento di contenuto. **Posizione** viene compilata automaticamente con le posizioni in cui verranno salvati i nuovi contenuti.
 
-1. In **Modello a frammento di contenuto** a discesa, seleziona il **Avventura** Modello frammento di contenuto creato in precedenza.
+1. In **Modello per frammenti di contenuto** a discesa, seleziona la **Avventura** Modello per frammenti di contenuto creato in precedenza.
 
-1. Aggiungi `Tuscany` come descrittivo **Titolo** per il frammento di contenuto. In questo modo è possibile identificare il frammento nella console.
+1. Aggiungi `Tuscany` come descrittivo **Titolo** frammento di contenuto. Questo consente di identificare il frammento nella console.
 
 1. Tocca o fai clic su **Crea e apri**.
 
@@ -49,7 +49,7 @@ In questo modulo verrà creato un nuovo frammento di contenuto basato su tale mo
 
 >[!TIP]
 >
->A seconda delle impostazioni del browser, la nuova scheda del browser potrebbe essere soppressa da un blocco dei popup. Se il nuovo frammento non si apre dopo aver fatto clic su **Crea e apri**, controlla le impostazioni del browser.
+>A seconda delle impostazioni del browser, la nuova scheda del browser potrebbe essere soppressa da un blocco popup. Se il nuovo frammento non si apre dopo aver fatto clic su **Crea e apri**, verifica le impostazioni del browser.
 
 ## Aggiungere contenuto al frammento di contenuto {#add-content}
 
@@ -59,21 +59,21 @@ Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento
 
 1. Fornisci un **Titolo** per il frammento immettendo `Tuscan Adventure`.
 
-1. Fornisci un **Descrizione** per il frammento incollando il testo seguente.
+1. Fornisci un **Descrizione** per il frammento incollandolo nel testo seguente.
 
    ```text
    Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
-1. Fornisci un **Prezzo** per il frammento inserendo `$700`.
+1. Fornisci un **Prezzo** per il frammento immettendo in `$700`.
 
-1. Fornisci un **Immagine** che è rappresentativo del viaggio toccando o facendo clic **Aggiungi risorsa** in **Immagine** campo .
+1. Fornisci un **Immagine** rappresentativo del viaggio toccando o facendo clic su **Aggiungi risorsa** nel **Immagine** campo.
 
-1. Nella finestra a comparsa della risorsa, tocca o fai clic su **Sfoglia risorse** per selezionare una risorsa esistente nella libreria delle risorse.
+1. Nel pop-up della risorsa, tocca o fai clic su **Sfoglia risorse** per selezionare una risorsa esistente nella libreria delle risorse.
 
    ![Aggiungi risorsa](assets/do-not-localize/add-asset.png)
 
-1. La **Seleziona risorsa** viene visualizzata la finestra di dialogo . Utilizzando il navigatore ad albero nel pannello a sinistra, individuate **Tutte le risorse** > **aem-demo-assets** > **en** > **avventure** > **ciclismo-toscana**.
+1. Il **Seleziona risorsa** viene visualizzata una finestra di dialogo. Utilizzando il navigatore ad albero nel pannello a sinistra, passa a **Tutte le risorse** > **aem-demo-assets** > **it** > **avventure** > **ciclismo-toscana**.
 
 1. Contenuto della **ciclismo-toscana** a destra. Seleziona l’immagine `ADOBESTOCK_141786166.JPEG`.
 
@@ -85,7 +85,7 @@ Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento
 
 1. Al termine dell’aggiunta di contenuto, tocca o fai clic sul pulsante **Pubblica** in alto a destra dell’editor. Questo rende il frammento di contenuto disponibile per il consumo da parte di app esterne. Quindi seleziona **Ora** dal menu a discesa. Puoi anche pianificarlo per la pubblicazione in un secondo momento.
 
-   ![Pubblicare il contenuto](assets/do-not-localize/publish.png)
+   ![Pubblicare contenuti](assets/do-not-localize/publish.png)
 
 1. Viene visualizzata la finestra di dialogo **Pubblica frammenti di contenuto**. AEM esegue automaticamente un controllo di riferimento per verificare che tutte le risorse necessarie siano pubblicate per il frammento di contenuto. In questo caso, dovrai anche pubblicare il modello creato. Tocca o fai clic su **Pubblica**.
 

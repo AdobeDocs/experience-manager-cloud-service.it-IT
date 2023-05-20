@@ -5,23 +5,23 @@ exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 100%
+ht-degree: 49%
 
 ---
 
 # Gestione dei progetti {#managing-projects}
 
-La funzione Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità.
+Progetti consente di organizzare il progetto raggruppando le risorse in un’unica entità.
 
-La console **Progetti** consente di accedere ai progetti e di eseguire azioni su di essi:
+In **Progetti** , puoi accedere ai tuoi progetti e intervenire su di essi:
 
 ![Console Progetti](/help/sites-cloud/authoring/assets/projects-console.png)
 
-Tramite Progetti è possibile creare un progetto e associarvi risorse, ma anche eliminarlo o eliminare i collegamenti alle risorse. È possibile aprire una porzione per visualizzarne il contenuto e aggiungere elementi. In questo argomento vengono descritte le procedure.
+In Progetti puoi creare un progetto, associare risorse al progetto ed eliminare anche un progetto o collegamenti a risorse. È possibile aprire una tessera per visualizzarne il contenuto e aggiungere elementi a una tessera. In questo argomento vengono descritte tali procedure.
 
 ## Creazione di un progetto {#creating-a-project}
 
-Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di un progetto:
+Per impostazione predefinita, AEM fornisce questi modelli tra cui scegliere quando si crea un progetto:
 
 * Progetto semplice
 * Progetto multimediale
@@ -38,20 +38,20 @@ La procedura di creazione di un progetto è la stessa per ciascun progetto. La d
 
    ![Creazione di un progetto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Definisci un **titolo** e una **descrizione**; se necessario, aggiungi un’immagine di **miniatura**. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
+1. Definisci un **titolo** e una **descrizione**; se necessario, aggiungi un’immagine di **miniatura**. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono. Inoltre, fai clic su **Avanzate** per aggiungere un nome utilizzato nell&#39;URL.
 
    ![Aggiunta di dettagli al progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Tocca o fai clic su **Crea**. Ti viene richiesto se desideri aprire il nuovo progetto o tornare alla console.
+1. Tocca o fai clic su **Crea**. La conferma chiede se desideri aprire il nuovo progetto o tornare alla console.
 
-### Associazione di risorse a un progetto {#associating-resources-with-your-project}
+### Associazione delle risorse al progetto {#associating-resources-with-your-project}
 
-Poiché i progetti consentono di raggruppare risorse in un’unica entità, è possibile associare delle risorse a un progetto. Tali risorse sono denominate **porzioni**. I tipi di risorse che è possibile aggiungere sono descritti nella sezione [Porzioni di progetto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
+Poiché i progetti consentono di raggruppare le risorse in un’unica entità, è necessario associare le risorse al progetto. Queste risorse vengono chiamate **Riquadri**. I tipi di risorse che è possibile aggiungere sono descritti in [Riquadri progetto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
-Per associare risorse a un progetto:
+Per associare le risorse al progetto:
 
-1. Apri il progetto dalla console **Progetti**.
-1. Tocca o fai clic su **Aggiungi sezione**, quindi seleziona la porzione che desideri collegare al progetto. È possibile selezionare tra più tipi di riquadri.
+1. Apri il progetto da **Progetti** console.
+1. Tocca o fai clic **Aggiungi sezione** e seleziona il riquadro da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
 
    ![Aggiunta di un riquadro a un progetto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
@@ -67,41 +67,41 @@ Per eliminare un progetto dalla console o una risorsa collegata dal progetto si 
 
 1. Passa alla posizione appropriata:
 
-   * Per eliminare un progetto, spostati nella parte superiore della console **Progetti**.
+   * Per eliminare un progetto, vai al livello superiore della sezione **Progetti** console.
    * Per eliminare un collegamento di risorsa all’interno di un progetto, apri il progetto nella console **Progetti**.
 
 1. Entra nella modalità di selezione facendo clic su **Seleziona** e scegli il progetto o collegamento di risorsa.
 1. Tocca o fai clic su **Elimina**.
 
-1. È necessario confermare l’eliminazione in una finestra di dialogo. Se procedi, il progetto o collegamento di risorsa viene eliminato. Per uscire dalla modalità di selezione, tocca o fai clic su **Deseleziona**.
+1. È necessario confermare l’eliminazione in una finestra di dialogo. Se confermato, il progetto o il collegamento di risorsa viene eliminato. Per uscire dalla modalità di selezione, tocca o fai clic su **Deseleziona**.
 
 >[!NOTE]
 >
 >Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. Un amministratore deve eliminare manualmente i gruppi da **Strumenti** > **Protezione** > **Gruppi**.
 
-### Aggiungere elementi a una porzione {#adding-items-to-a-tile}
+### Aggiunta di elementi a una sezione {#adding-items-to-a-tile}
 
-Per alcune porzioni è possibile aggiungere più di un oggetto. Ad esempio, è possibile avere più flussi di lavoro o esperienze in esecuzione allo stesso tempo.
+In alcuni riquadri, potrebbe essere necessario aggiungere più elementi. Ad esempio, puoi avere più di un flusso di lavoro in esecuzione alla volta o più di un’esperienza.
 
-Per aggiungere elementi a una porzione:
+Per aggiungere elementi a un riquadro:
 
 1. In **Progetti**, individua quello di tuo interesse e fai clic sulle freccette in basso del riquadro in cui desideri aggiungere un elemento.
 
    ![Aggiungere un elemento a un riquadro](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Aggiungi un elemento alla porzione con la stessa procedura che usi quando crei una nuova porzione. Le porzioni di progetto sono descritte [qui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In questo esempio è stato aggiunto un altro flusso di lavoro.
+1. Aggiungi un elemento alla sezione come faresti quando crei una nuova sezione. Sono descritte le tessere del progetto [qui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In questo esempio è stato aggiunto un altro flusso di lavoro.
 
-### Aprire una porzione {#opening-a-tile}
+### Apertura di una sezione {#opening-a-tile}
 
-È possibile visualizzare gli elementi inclusi nella porzione selezionata, modificarli o eliminarli.
+Puoi visualizzare gli elementi inclusi in una sezione corrente oppure modificare o eliminare gli elementi nella sezione.
 
-Per aprire una porzione e visualizzare o modificare gli elementi:
+Per aprire una tessera in modo da poter visualizzare o modificare gli elementi:
 
-1. Dalla console Progetti, tocca o fai clic sui puntini di sospensione (...) nella parte inferiore della scheda.
+1. Nella console Progetti, tocca o fai clic sull’icona con i puntini di sospensione (...) nella parte inferiore della scheda.
 
    ![Apertura di un riquadro](/help/sites-cloud/authoring/assets/project-links.png)
 
-1. AEM mostra l’elenco degli elementi inclusi nella porzione. Per modificarli o eliminarli, entra nella modalità di selezione.
+1. L&#39;AEM elenca gli elementi di quella sezione. È possibile attivare la modalità di selezione per modificare o eliminare gli elementi.
 
    ![Riquadro aperto](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -109,9 +109,9 @@ Per aprire una porzione e visualizzare o modificare gli elementi:
 
 È possibile visualizzare le statistiche del progetto nella console **Progetti**.
 
-### Visualizzazione della cronologia di un progetto {#viewing-a-project-timeline}
+### Visualizzazione della sequenza temporale di un progetto {#viewing-a-project-timeline}
 
-La cronologia di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse associate. Per visualizzare la timeline di un progetto, tocca o fai clic su **Timeline**, quindi entra nella modalità di selezione e scegli il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Per tornare alla console **Progetti**, tocca o fai clic su **Timeline**.
+La timeline del progetto fornisce informazioni sull’ultimo utilizzo delle risorse del progetto. Per visualizzare la timeline di un progetto, tocca o fai clic su **Timeline**, quindi entra nella modalità di selezione e scegli il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Per tornare alla console **Progetti**, tocca o fai clic su **Timeline**.
 
 ![Timeline del progetto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
@@ -125,16 +125,16 @@ Se l’icona è affiancata da una x, stai visualizzando i progetti inattivi.
 
 ![Pulsante Mostra/nascondi progetti non attivi](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
-## Rendere un progetto attivo o inattivo {#making-projects-inactive-or-active}
+## Rendere i progetti inattivi o attivi {#making-projects-inactive-or-active}
 
-Se hai completato un progetto ma desideri mantenere le informazioni ad esso associate, puoi renderlo inattivo.
+Potrebbe essere utile disattivare un progetto dopo averlo completato, ma si desidera comunque mantenere le informazioni relative al progetto.
 
-Per rendere un progetto attivo o inattivo:
+Per rendere un progetto inattivo (o attivo):
 
-1. Dalla console **Progetti**, apri il progetto e seleziona la porzione **Informazioni progetto**.
+1. In **Progetti** , apri il progetto e quindi individua **Informazioni progetto** affiancare.
 
    >[!NOTE]
-   >È necessario aggiungere questa porzione nel caso in cui non sia già presente nel progetto. Consulta [Aggiunta di una porzione](#adding-items-to-a-tile).
+   Potrebbe essere necessario aggiungere questo riquadro, se non è già presente nel progetto. Consulta [Aggiunta di riquadri](#adding-items-to-a-tile).
 
 1. Tocca o fai clic su **Modifica**.
 1. Modifica il selettore passando da **Attivo** a **Inattivo** (o viceversa).

@@ -83,7 +83,7 @@ Ora che conosci alcuni concetti fondamentali di Cloud Manager, l’installazione
 1. Accedi a Cloud Manager.
 1. Crea un nuovo programma di AEM sandbox, attivando il componente aggiuntivo Demo di riferimento AEM come opzione per il programma.
 1. Il contenuto e la configurazione demo vengono distribuiti nel programma. Il contenuto demo contiene:
-   * Modelli di sito utilizzati per creare vari siti AEM utilizzando le funzioni di AEM, precompilati con esempi di best practice.
+   * Modelli di sito utilizzati per creare vari siti di AEM Sites utilizzando le funzioni di AEM, precompilati con esempi di best practice.
    * Strumenti di configurazione per gestire il contenuto demo.
 1. Accedi ad AEM nel nuovo programma sandbox, utilizza lo strumento di creazione rapida del sito e crea siti demo in base ai modelli.
 1. Utilizza gli strumenti di configurazione per gestire tali siti e modelli demo, inclusa la loro eliminazione quando non sono più necessari.

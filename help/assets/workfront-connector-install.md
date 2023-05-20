@@ -1,6 +1,6 @@
 ---
-title: Installare la versione [!DNL Workfront for Experience Manager enhanced connector]
-description: Installare la versione [!DNL Workfront for Experience Manager enhanced connector]
+title: Installa [!DNL Workfront for Experience Manager enhanced connector]
+description: Installa [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 ---
 
-# Installare la versione [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+# Installa [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 Un utente con accesso amministratore in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] installa il connettore avanzato. Prima dell’installazione, controlla il supporto della piattaforma e altro ancora [prerequisiti per il connettore](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 

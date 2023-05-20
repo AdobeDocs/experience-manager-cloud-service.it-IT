@@ -89,7 +89,7 @@ Quindi, apporta una piccola modifica allo stile Teaser per vedere come `ui.front
 
    Si noti che sono presenti più istanze Sass (`.scss`) sotto la cartella. Si tratta degli stili specifici di Commerce per ciascuno dei componenti di Commerce.
 
-1. Aprire il file `_productteaser.scss`.
+1. Apri il file `_productteaser.scss`.
 
 1. Aggiornare il `.item__image` e modificare la regola di bordo:
 
@@ -467,7 +467,7 @@ Quando si distribuiscono nuovi file CSS e/o JavaScript, è importante anche assi
 
 AEM inoltre tenta di memorizzare nella cache le librerie client per migliorare le prestazioni. A volte, dopo la distribuzione del codice, vengono distribuiti i file meno recenti. Puoi annullare manualmente la validità della cache della libreria client di AEM utilizzando lo strumento [Rigenera librerie client](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Se si sospetta che AEM abbia memorizzato nella cache una versione precedente di una libreria client, è meglio annullare la validità della cache. La rigenerazione delle librerie è infatti inefficiente e richiede molto tempo.*
 
-## Complimenti {#congratulations}
+## Congratulazioni {#congratulations}
 
 Hai appena creato il primo componente core CIF dell’AEM e hai utilizzato un server di sviluppo Webpack.
 

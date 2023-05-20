@@ -191,7 +191,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono altre riso
 
 1. Copia il percorso completo della risorsa video in Experience Manager, in base a quanto elaborato da Dynamic Media. Questo percorso di risorsa video copiato è necessario nei passaggi seguenti.
 
-   Esempio:
+   Ad esempio:
 
    `/content/dam/marketing/MyVideo.mp4`
 

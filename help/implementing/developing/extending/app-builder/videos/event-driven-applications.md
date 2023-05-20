@@ -1,5 +1,5 @@
 ---
-title: Applicazioni di App Builder basate su eventi
+title: Applicazioni App Builder basate su eventi
 description: Scopri come creare applicazioni App Builder basate su eventi.
 version: Cloud Service
 feature: App Builder
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ---
 
-# Applicazioni di App Builder basate su eventi
+# Applicazioni App Builder basate su eventi
 
 ## Introduzione alle applicazioni App Builder basate su eventi
 
-Scopri l’architettura basata su eventi, gli eventi di Adobe I/O e gli eventi personalizzati.
+Scopri l’architettura basata sugli eventi, gli eventi di Adobe I/O e gli eventi personalizzati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
 
@@ -28,4 +28,4 @@ Scopri l’architettura basata su eventi, gli eventi di Adobe I/O e gli eventi p
 
 >[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
-Scopri come generare la pubblicazione può utilizzare gli eventi in un’applicazione App Builder.
+Scopri come generare e pubblicare eventi utilizzando eventi in un’applicazione App Builder.

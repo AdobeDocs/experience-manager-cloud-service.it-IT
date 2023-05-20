@@ -1,11 +1,11 @@
 ---
 title: Risoluzione di problemi AEM nell’ambiente di authoring
-description: Alcuni problemi che potrebbero verificarsi durante l’utilizzo di AEM
+description: Alcuni problemi che potresti riscontrare durante l’utilizzo dell’AEM
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 100%
+ht-degree: 73%
 
 ---
 
@@ -18,9 +18,9 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 * **Problema**:
    * Hai apportato delle modifiche a una pagina e l’hai replicata sul sito pubblicato, ma nel sito pubblicato viene ancora visualizzata la *vecchia* versione della pagina.
 * **Motivo**:
-   * Questo può dipendere da diverse cause. In genere si tratta di un problema di cache (del browser locale o del Dispatcher), ma a volte può dipendere da un problema relativo alla coda di replica.
+   * Questo può avere diverse cause, nella maggior parte dei casi la cache (nel browser locale o in Dispatcher), anche se a volte può essere un problema con la coda di replica.
 * **Soluzioni**:
-   * Esistono diverse possibilità:
+   * Esistono varie possibilità:
    * Verifica che la pagina sia stata replicata correttamente. Controlla lo stato della pagina e, se necessario, lo stato della coda di replica.
    * Cancella la cache del browser locale e accedi di nuovo alla pagina.
    * Aggiungi `?` alla fine dell’URL della pagina, ad esempio:
@@ -33,6 +33,6 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 * **Problema**:
    * Non tutte le azioni disponibili per i componenti sono visibili quando si modifica il contenuto di una pagina nell’ambiente di authoring.
 * **Motivo**:
-   * In rari casi, un’azione precedente potrebbe pregiudicare il funzionamento della barra degli strumenti.
+   * In rari casi, un’azione precedente potrebbe influire sulla barra degli strumenti.
 * **Soluzione**:
    * Aggiorna la pagina.

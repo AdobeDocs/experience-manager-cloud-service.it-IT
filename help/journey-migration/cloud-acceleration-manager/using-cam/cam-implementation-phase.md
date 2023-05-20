@@ -5,7 +5,7 @@ exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 source-git-commit: cba5dccd3b66220bbcd6d3b4dd5298702902b0e5
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -105,9 +105,9 @@ Leggi questa sezione per esplorare la scheda delle attività di Content Transfer
    >Un set di migrazione scadrà dopo un periodo prolungato di inattività. Rivedi [Scadenza set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) per i dettagli.
 
    >[!NOTE]
-   >Rivedi il [prerequisiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) e [best practice e linee guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+   >Rivedi il [prerequisiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) e [best practice e linee guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it) prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-1. Per compilare il set di migrazione e completare la fase di estrazione del trasferimento dei contenuti, è necessario scaricare e installare lo strumento Content Transfer (Trasferimento contenuti). Revisione [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+1. Per compilare il set di migrazione e completare la fase di estrazione del trasferimento dei contenuti, è necessario scaricare e installare lo strumento Content Transfer (Trasferimento contenuti). Revisione [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it) per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
 1. Per acquisire i contenuti dal set di migrazione in un ambiente su AEM as a Cloud Service, è necessario avviare un’acquisizione. Accedi a **Processi di acquisizione** e fai clic su **Nuova acquisizione**. Revisione [Acquisizione di contenuti in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) per scoprire come completare la fase di acquisizione del trasferimento dei contenuti.
 

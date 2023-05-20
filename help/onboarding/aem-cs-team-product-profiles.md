@@ -37,7 +37,7 @@ Durante l’onboarding, i membri del gruppo di AEM as a Cloud Service vengono ag
 
 >[!WARNING]
 >
->La **Amministratori AEM** il nome del profilo di prodotto non deve essere modificato. Modifica del nome della **Amministratori AEM** il profilo di prodotto rimuoverà i diritti di amministratore da tutti gli utenti assegnati a tale profilo.
+>Il **Amministratori AEM** il nome del profilo di prodotto non deve essere modificato. Modifica del nome del **Amministratori AEM** Il profilo di prodotto rimuoverà i diritti di amministratore da tutti gli utenti assegnati a quel profilo.
 
 >[!TIP]
 >

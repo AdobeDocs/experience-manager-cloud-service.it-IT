@@ -6,7 +6,7 @@ exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 74%
 Questa pagina ti aiuta a capire meglio AEM Screens e come funziona questa soluzione di digital signage. Trova risorse di supporto e scopri le novità.
 
 >[!NOTE]
->Per AEM Screens con AEM 6.5, vedi [Guida utente di AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
+>Per AEM Screens con AEM 6.5, vedi [Guida utente di AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it).
 
 
 ## Contenuto chiave e articoli as a Cloud Service di AEM Screens {#key-articles}

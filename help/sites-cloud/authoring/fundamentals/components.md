@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -17,13 +17,13 @@ AEM include diversi componenti predefiniti che offrono funzionalità complete pe
 
 >[!NOTE]
 >
->Questa sezione illustra unicamente i componenti disponibili pronti all’uso in un’installazione AEM standard.
+>In questa sezione vengono descritti solo i componenti disponibili come predefiniti in un’installazione standard per AEM.
 >
->A seconda dell’istanza corrente è possibile che siano presenti componenti personalizzati sviluppati esplicitamente per le tue esigenze. Questi possono anche avere lo stesso nome di alcuni dei componenti qui descritti.
+>A seconda dell’istanza, è possibile che siano stati sviluppati in modo esplicito componenti personalizzati in base alle proprie esigenze. Questi possono anche avere lo stesso nome di alcuni dei componenti discussi qui.
 
 ## Utilizzo generale   {#general-usage}
 
-I componenti sono disponibili nella scheda **Componenti** del pannello laterale dell’editor di pagine durante la [modifica di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+I componenti sono disponibili nel **Componenti** del pannello laterale dell’editor di pagine quando [modifica di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pagina. Puoi quindi modificarlo utilizzando:
 

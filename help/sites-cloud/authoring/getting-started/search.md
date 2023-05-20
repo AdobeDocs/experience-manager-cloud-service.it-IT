@@ -1,11 +1,11 @@
 ---
 title: Ricerca
-description: Individua il contenuto più velocemente con funzionalità complete di ricerca
+description: Ricerca completa per trovare più rapidamente i contenuti
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 63%
 
 ---
 
@@ -33,7 +33,7 @@ La barra di ricerca consente di effettuare le seguenti operazioni:
 
 Per cercare e filtrare le risorse:
 
-1. Apri la **Ricerca** (con la lente di ingrandimento nella barra degli strumenti) e immetti il termine da cercare. I suggerimenti verranno visualizzati e possono essere selezionati:
+1. Apri **Ricerca** (con la lente di ingrandimento nella barra degli strumenti) e immettere il termine di ricerca. Saranno presentati dei suggerimenti che potranno essere selezionati:
 
    ![Ricerca termine](/help/sites-cloud/authoring/assets/search-term.png)
 
@@ -41,8 +41,8 @@ Per cercare e filtrare le risorse:
 
    ![Ricerca per posizione](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Se necessario, è possibile rimuovere il filtro posizione (seleziona la **X** sul filtro da rimuovere) per eseguire la ricerca in tutte le console e i tipi di risorse.
-1. I risultati visualizzati saranno raggruppati in base alla console e al tipo di risorsa corrispondente.
+1. Se necessario, puoi rimuovere il filtro di posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire ricerche su tutte le console/i tipi di risorse.
+1. Verranno visualizzati i risultati, raggruppati in base alla console e al tipo di risorsa correlato.
 
    Puoi selezionare una risorsa specifica (sulla quale eseguire ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio **Visualizza tutti i siti**:
 
@@ -65,7 +65,7 @@ Per cercare e filtrare le risorse:
    >
    >I criteri di ricerca possono variare:
    >
-   >* A seconda del tipo di risorsa selezionato; ad esempio, i criteri Risorse e Community sono comprensibilmente specifici.
+   >* A seconda del tipo di risorsa selezionato; ad esempio, i criteri di Assets e Communities sono comprensibilmente specializzati.
    >* La tua istanza, nonché i moduli di ricerca, possono essere personalizzati (in base alla posizione all’interno di AEM).
 
 
@@ -81,13 +81,13 @@ Per cercare e filtrare le risorse:
 
 >[!NOTE]
 >
->I criteri di ricerca vengono mantenuti quando selezioni un oggetto nei risultati di ricerca.
+>I criteri di ricerca vengono mantenuti quando si seleziona un elemento nei risultati di ricerca.
 >
 >Quando selezioni un elemento nella pagina dei risultati, e quindi torni alla pagina di ricerca dopo avere utilizzato il pulsante indietro del browser, i criteri di ricerca rimangono.
 
 ## Ricerche salvate {#saved-searches}
 
-Oltre ad eseguire ricerche per un’ampia gamma di facet, è possibile salvare una specifica configurazione di ricerca per riutilizzarla in un secondo momento.
+Oltre a eseguire ricerche in base a un&#39;ampia gamma di facet, è possibile salvare una particolare configurazione di ricerca per recuperarla e utilizzarla in una fase successiva:
 
 1. Definisci i criteri di ricerca e seleziona **Salva**.
 
@@ -101,10 +101,10 @@ Oltre ad eseguire ricerche per un’ampia gamma di facet, è possibile salvare u
 
    ![Ricerche salvate](/help/sites-cloud/authoring/assets/saved-searches.png)
 
-1. Dopo aver salvato una ricerca, puoi:
+1. Una volta salvato, è possibile:
 
-   * Utilizzare la **x** (in corrispondenza del nome di una ricerca salvata) per avviare una nuova ricerca (la ricerca salvata non verrà eliminata).
-   * Seleziona **Modifica ricerca salvata**, modifica le condizioni di ricerca e seleziona nuovamente **Salva**.
+   * Utilizzare **x** (rispetto al nome della ricerca salvata) per avviare una nuova query (la ricerca salvata stessa non verrà eliminata).
+   * **Modifica ricerca salvata**, modifica le condizioni di ricerca, quindi **Salva** di nuovo.
 
 Per modificare le ricerche salvate, seleziona una ricerca e fai clic sull’opzione **Modifica ricerca salvata** nella parte inferiore del pannello di ricerca.
 

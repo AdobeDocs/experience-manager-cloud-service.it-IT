@@ -1,6 +1,6 @@
 ---
 title: Consente di gestire i contenuti digitali
-description: Scopri vari metodi di gestione e modifica delle risorse
+description: Scopri i vari metodi di gestione e modifica delle risorse
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
@@ -24,42 +24,42 @@ Questo articolo descrive come gestire e modificare le risorse in [!DNL Adobe Exp
 
 ## Creare cartelle {#creating-folders}
 
-Quando si organizza una raccolta di risorse, ad esempio, tutte le `Nature` immagini, puoi creare cartelle per mantenerle unite. Puoi utilizzare le cartelle per suddividere in categorie e organizzare le risorse. [!DNL Experience Manager Assets] non richiede di organizzare meglio le risorse nelle cartelle.
+Quando si organizza una raccolta di risorse, ad esempio, tutti `Nature` immagini, puoi creare cartelle per mantenerle unite. Puoi utilizzare le cartelle per categorizzare e organizzare le risorse. [!DNL Experience Manager Assets] non richiede di organizzare le risorse in cartelle per funzionare meglio.
 
 >[!NOTE]
 >
->* Condivisione di una cartella di risorse del tipo `sling:OrderedFolder`, non è supportato quando si condivide con Experience Cloud. Se desideri condividere una cartella, non selezionare [!UICONTROL Ordinato] durante la creazione di una cartella.
->* L&#39;Experience Manager non consente di utilizzare `subassets` parola come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte
+>* Condivisione di una cartella di risorse di tipo `sling:OrderedFolder`, non è supportato quando si condivide con Experience Cloud. Se desideri condividere una cartella, non selezionare [!UICONTROL Ordinato] durante la creazione di una cartella.
+>* L’Experience Manager non consente l’utilizzo di `subassets` word come nome di una cartella. È una parola chiave riservata ai nodi che contengono risorse secondarie per le risorse composte
 
 
-1. Passa alla posizione nella cartella delle risorse digitali in cui desideri creare una nuova cartella. Nel menu , fai clic su **[!UICONTROL Crea]**. Seleziona **[!UICONTROL Nuova cartella]**.
-1. In **[!UICONTROL Titolo]** specificare un nome di cartella. Per impostazione predefinita, DAM utilizza il titolo fornito come nome della cartella. Una volta creata la cartella, è possibile sostituire l’impostazione predefinita e specificare un altro nome di cartella.
+1. Passa alla posizione nella cartella delle risorse digitali in cui desideri creare una nuova cartella. Nel menu, fai clic su **[!UICONTROL Crea]**. Seleziona **[!UICONTROL Nuova cartella]**.
+1. In **[!UICONTROL Titolo]** , inserisci un nome per la cartella. Per impostazione predefinita, DAM utilizza il titolo fornito come nome della cartella. Una volta creata la cartella, puoi sovrascrivere l’impostazione predefinita e specificare un altro nome di cartella.
 1. Fai clic su **[!UICONTROL Crea]**. La cartella viene visualizzata nella cartella delle risorse digitali.
 
-I seguenti caratteri (elenco separato da spazi) non sono supportati:
+I seguenti caratteri (separati da spazi) non sono supportati:
 
-* Il nome di un file di risorsa non può contenere i seguenti caratteri: `* / : [ \\ ] | # % { } ? &`
+* Il nome di un file di risorse non può contenere i seguenti caratteri: `* / : [ \\ ] | # % { } ? &`
 * Il nome di una cartella di risorse non può contenere i seguenti caratteri: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Caricare le risorse {#uploading-assets}
 
-Vedi [aggiungere risorse digitali ad Experience Manager](add-assets.md).
+Consulta [aggiungere risorse digitali all’Experience Manager](add-assets.md).
 
-## Rileva risorse duplicate {#detect-duplicate-assets}
+## Rilevare risorse duplicate {#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Se un utente DAM carica una o più risorse già esistenti nell’archivio, [!DNL Experience Manager] rileva la duplicazione e notifica l’utente. Il rilevamento dei duplicati è disattivato per impostazione predefinita in quanto può avere un impatto sulle prestazioni a seconda delle dimensioni dell’archivio e del numero di risorse caricate.
+Se un utente DAM carica una o più risorse già esistenti nell’archivio, [!DNL Experience Manager] rileva la duplicazione e avvisa l’utente. Il rilevamento duplicati è disabilitato per impostazione predefinita in quanto può avere un impatto sulle prestazioni a seconda delle dimensioni dell’archivio e del numero di risorse caricate.
 
-Per abilitare la funzione:
+Per attivare la funzione:
 
-1. Passa a **[!UICONTROL Strumenti > Risorse > Configurazioni risorse]**.
+1. Accedi a **[!UICONTROL Strumenti > Risorse > Configurazioni risorse]**.
 
-1. Fai clic su **[!UICONTROL Rilevatore di duplicazione delle risorse]**.
+1. Clic **[!UICONTROL Rilevamento duplicazione risorse]**.
 
-1. Sulla [!UICONTROL Pagina del rilevatore della duplicazione delle risorse], fai clic su **[!UICONTROL Abilitato]**.
+1. Il giorno [!UICONTROL Pagina Rilevamento duplicazione risorse], fai clic su **[!UICONTROL Abilitato]**.
 
-   `dam:sha1` Il valore per il campo Rileva metadati garantisce che le risorse duplicate vengano rilevate anche se i nomi dei file sono diversi.
+   `dam:sha1` Il valore del campo Rileva metadati garantisce che vengano rilevate risorse duplicate anche se i nomi dei file sono diversi.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
@@ -67,63 +67,63 @@ Per abilitare la funzione:
 
 >[!NOTE]
 >
->Se hai configurato il rilevatore di duplicazione utilizzando `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` file di configurazione (configurazione OSGi), è possibile continuare a utilizzarlo, tuttavia, Adobe consiglia di utilizzare il nuovo metodo.
+>Se hai configurato il rilevatore di duplicazione utilizzando `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` file di configurazione di (configurazione OSGi), puoi continuare a utilizzarlo, tuttavia, l’Adobe consiglia di utilizzare il nuovo metodo.
 
 
-Una volta attivato, Experience Manager invia le notifiche delle risorse duplicate alla casella in entrata dell’Experience Manager. È un risultato aggregato per più duplicati. Gli utenti possono scegliere di rimuovere le risorse in base ai risultati.
+Una volta abilitata, Experience Manager invia le notifiche delle risorse duplicate alla casella in entrata di Experience Manager. È un risultato aggregato per più duplicati. Gli utenti possono scegliere di rimuovere le risorse in base ai risultati.
 
-![Notifica della casella in entrata per le risorse duplicate](assets/duplicate-detect-inbox-notification.png)
+![Notifica nella casella in entrata per le risorse duplicate](assets/duplicate-detect-inbox-notification.png)
 
 >[!NOTE]
 >
->Quando carichi le risorse nell’archivio, Experience Manager rileva le duplicazioni e notifica le prime 100 risorse duplicate.
+>Quando carichi le risorse nell’archivio, Experience Manager rileva la duplicazione e notifica le prime 100 risorse duplicate.
 
 ## Visualizzare l’anteprima delle risorse {#previewing-assets}
 
-Per visualizzare l’anteprima di una risorsa, effettua le seguenti operazioni.
+Per visualizzare in anteprima una risorsa, segui la procedura riportata di seguito.
 
-1. Dall’interfaccia utente Assets, individua il percorso della risorsa da visualizzare in anteprima.
+1. Dall’interfaccia utente Assets, individua il percorso della risorsa di cui vuoi visualizzare l’anteprima.
 1. Tocca la risorsa desiderata per aprirla.
 
-1. Nella modalità di anteprima sono disponibili le opzioni di zoom per [Tipi di immagini supportati](/help/assets/file-format-support.md) (con modifica interattiva).
+1. Nella modalità anteprima, sono disponibili le opzioni di zoom per [Tipi di immagini supportati](/help/assets/file-format-support.md) (con modifica interattiva).
 
-   Per ingrandire una risorsa, tocca o fai clic su `+` oppure tocca o fai clic sulla lente di ingrandimento sulla risorsa. Per ridurre lo zoom, tocca o fai clic su `-`. Quando ingrandisci, puoi osservare da vicino qualsiasi area dell&#39;immagine tramite panoramica. La freccia di reimpostazione dello zoom consente di tornare alla visualizzazione originale.
+   Per ingrandire una risorsa, tocca o fai clic su `+` (oppure tocca o fai clic sulla lente di ingrandimento della risorsa). Per ridurre, tocca o fai clic su `-`. Quando si esegue lo zoom avanti, è possibile esaminare attentamente qualsiasi area dell&#39;immagine eseguendo una panoramica. La freccia di ripristino consente di tornare alla visualizzazione originale.
 
-   Tocca **[!UICONTROL Reimposta]** per ripristinare le dimensioni originali della visualizzazione.
+   Tocca **[!UICONTROL Reimposta]** per ripristinare le dimensioni originali della vista.
 
 ## Modifica delle proprietà {#editing-properties}
 
-1. Andate alla posizione della risorsa di cui desiderate modificare i metadati.
+1. Passa alla posizione della risorsa di cui desideri modificare i metadati.
 
-1. Seleziona la risorsa e tocca o fai clic su **[!UICONTROL Proprietà]** dalla barra degli strumenti per visualizzare le proprietà della risorsa. In alternativa, scegli la **[!UICONTROL Proprietà]** azione rapida sulla scheda delle risorse.
+1. Seleziona la risorsa e tocca o fai clic su **[!UICONTROL Proprietà]** dalla barra degli strumenti per visualizzare le proprietà della risorsa. In alternativa, scegliete **[!UICONTROL Proprietà]** azione rapida sulla scheda delle risorse.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. In [!UICONTROL Proprietà] , modifica le proprietà dei metadati in varie schede. Ad esempio, sotto il **[!UICONTROL Base]** , modifica il titolo, la descrizione e così via.
+1. In [!UICONTROL Proprietà] , modificare le proprietà dei metadati in varie schede. Ad esempio, sotto **[!UICONTROL Base]** , modificare il titolo, la descrizione e così via.
 
    >[!NOTE]
    >
-   >Il layout del [!UICONTROL Proprietà] le proprietà di pagina e metadati disponibili dipendono dallo schema di metadati sottostante. Per scoprire come modificare il layout del [!UICONTROL Proprietà] pagina, vedi [Schemi metadati](/help/assets/metadata-schemas.md).
+   >Il layout del [!UICONTROL Proprietà] pagina e le proprietà dei metadati disponibili dipendono dallo schema di metadati sottostante. Per informazioni su come modificare il layout del [!UICONTROL Proprietà] pagina, vedi [Schemi metadati](/help/assets/metadata-schemas.md).
 
 1. Per pianificare una data/ora specifica per l’attivazione della risorsa, utilizza il selettore data posto accanto al campo **[!UICONTROL On Time (All’ora)]**.
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Per disattivare la risorsa dopo una determinata durata, scegli la data/ora di disattivazione dal selettore data accanto al **[!UICONTROL Ora di disattivazione]** campo . La data di disattivazione deve essere successiva alla data di attivazione di una risorsa. Dopo la [!UICONTROL Ora di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili né tramite l’interfaccia web Assets né tramite l’API HTTP.
+1. Per disattivare la risorsa dopo una determinata durata, scegli la data/ora di disattivazione dal selettore data posto accanto a **[!UICONTROL Ora di disattivazione]** campo. La data di disattivazione deve essere successiva alla data di attivazione di una risorsa. Dopo il [!UICONTROL Ora di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili né tramite l’interfaccia web di Assets né tramite l’API HTTP.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. In **[!UICONTROL Tag]** selezionare uno o più tag. Per aggiungere un tag personalizzato, digita il nome del tag nella casella e seleziona la `Enter` chiave. Il nuovo tag viene salvato in [!DNL Experience Manager].
+1. In **[!UICONTROL Tag]** , selezionare uno o più tag. Per aggiungere un tag personalizzato, digita il nome del tag nella casella e seleziona il `Enter` chiave. Il nuovo tag viene salvato in [!DNL Experience Manager].
 
-   YouTube richiede la pubblicazione dei tag e dispone di un collegamento ad YouTube (se è possibile trovare un collegamento adatto).
+   YouTube richiede che i tag siano pubblicati e che sia presente un collegamento ad YouTube (se disponibile).
 
    >[!NOTE]
    >
-   >Per creare i tag, è necessario disporre dell’autorizzazione di scrittura in `/content/cq:tags/default` nel repository CRX.
+   >Per creare i tag, devi disporre dell’autorizzazione di scrittura su `/content/cq:tags/default` percorso nell’archivio CRX.
 
-1. Tocca o fai clic su **[!UICONTROL Salva e chiudi]**.
+1. Tocca o fai clic **[!UICONTROL Salva e chiudi]**.
 
-1. Passa all’interfaccia utente Assets. Le proprietà dei metadati modificate, inclusi titolo, descrizione e tag, vengono visualizzate sulla scheda delle risorse nella vista Scheda e nelle relative colonne nella vista Elenco.
+1. Passa all’interfaccia utente di Assets. Le proprietà dei metadati modificate, tra cui titolo, descrizione e tag, vengono visualizzate nella scheda delle risorse nella vista a schede e nelle colonne pertinenti nella vista a elenco.
 
 <!-- TBD: Uncomment after verification for Dec release.
 
@@ -143,101 +143,101 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## Copiare le risorse {#copying-assets}
 
-Quando copi una risorsa o una cartella, viene copiata l’intera risorsa o la cartella insieme alla relativa struttura del contenuto. Una risorsa o una cartella copiata viene duplicata nel percorso di destinazione. La risorsa nella posizione di origine non viene modificata.
+Quando copi una risorsa o una cartella, viene copiata l’intera risorsa o cartella, insieme alla relativa struttura del contenuto. Una risorsa o una cartella copiata viene duplicata nel percorso di destinazione. La risorsa nel percorso di origine non viene modificata.
 
-Alcuni attributi univoci per una particolare copia di una risorsa non vengono riportati in avanti. Alcuni esempi sono:
+Alcuni attributi univoci di una particolare copia di una risorsa non vengono riportati. Alcuni esempi sono:
 
-* ID risorsa, data e ora di creazione, versioni e cronologia delle versioni. Alcune di queste proprietà sono indicate dalle proprietà `jcr:uuid`, `jcr:created`e `cq:name`.
+* ID risorsa, data e ora di creazione, versioni e cronologia delle versioni. Alcune di queste proprietà sono indicate dalle proprietà `jcr:uuid`, `jcr:created`, e `cq:name`.
 
-* L’ora di creazione e i percorsi di riferimento sono univoci per ogni risorsa e per ogni suo rendering.
+* Il tempo di creazione e i percorsi di riferimento sono univoci per ogni risorsa e per ogni relativa rappresentazione.
 
-Le altre proprietà e informazioni sui metadati vengono mantenute. Non viene creata una copia parziale durante la copia di una risorsa.
+Le altre proprietà e le informazioni sui metadati vengono conservate. Una copia parziale non viene creata durante la copia di una risorsa.
 
 1. Dall’interfaccia utente Assets, seleziona una o più risorse, quindi tocca o fai clic sul pulsante **[!UICONTROL Copia]** dalla barra degli strumenti. In alternativa, seleziona la **[!UICONTROL Copia]** ![copy_icon](assets/copy_icon.png) azione rapida dalla scheda delle risorse.
 
    >[!NOTE]
    >
-   >Se utilizzi [!UICONTROL Copia] azione rapida, puoi copiare una sola risorsa alla volta.
+   >Se si utilizza [!UICONTROL Copia] azione rapida, puoi copiare una sola risorsa alla volta.
 
-1. Andate alla posizione in cui desiderate copiare le risorse.
+1. Passa alla posizione in cui desideri copiare le risorse.
 
    >[!NOTE]
    >
    >Se copi una risorsa nella stessa posizione, [!DNL Experience Manager] genera automaticamente una variante del nome. Ad esempio, se copi una risorsa con titolo `Square`, [!DNL Experience Manager] genera automaticamente il titolo per la relativa copia come `Square1`.
 
-1. Fai clic sul pulsante **[!UICONTROL Incolla]** icona della risorsa dalla barra degli strumenti. Le risorse vengono copiate in questa posizione.
+1. Fai clic su **[!UICONTROL Incolla]** nella barra degli strumenti. Le risorse vengono copiate in questa posizione.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
    >[!NOTE]
    >
-   >La **[!UICONTROL Incolla]** l’icona è disponibile nella barra degli strumenti fino al completamento dell’operazione Incolla .
+   >Il **[!UICONTROL Incolla]** L’icona è disponibile nella barra degli strumenti fino a quando l’operazione Incolla non è completata.
 
 ### Spostare o rinominare le risorse {#moving-or-renaming-assets}
 
-1. Andate alla posizione della risorsa da spostare.
+1. Passa alla posizione della risorsa da spostare.
 
 1. Seleziona la risorsa e tocca o fai clic sul pulsante **[!UICONTROL Sposta]** icona ![move_icon](assets/move_icon.png) dalla barra degli strumenti.
 
-1. Nella procedura guidata Sposta risorse , effettua una delle seguenti operazioni:
+1. Nella procedura guidata Sposta risorse, effettua una delle seguenti operazioni:
 
-   * Specifica il nome della risorsa dopo averlo spostata. Quindi tocca o fai clic su **[!UICONTROL Successivo]** per procedere.
+   * Specifica il nome della risorsa dopo lo spostamento. Quindi tocca o fai clic su **[!UICONTROL Successivo]** per procedere.
 
-   * Tocca o fai clic su **[!UICONTROL Annulla]** per interrompere il processo.
+   * Tocca o fai clic **[!UICONTROL Annulla]** per interrompere il processo.
    >[!NOTE]
    >
-   >* Potete specificare lo stesso nome per la risorsa se nella nuova posizione non è presente alcuna risorsa con tale nome. Tuttavia, se sposti la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, utilizza un nome diverso. Se utilizzi lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa ha il nome Square, il sistema genera il nome Square1 per la relativa copia.
-   >* Durante la ridenominazione, lo spazio vuoto non è consentito nel nome del file.
+   >* Se nella nuova posizione non è presente alcuna risorsa con lo stesso nome, è possibile specificare lo stesso nome per la risorsa. Tuttavia, se sposti la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, utilizza un nome diverso. Se utilizzate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa è denominata Square, il sistema genera il nome Square1 per la relativa copia.
+   >* Durante la ridenominazione, il nome del file non può contenere spazi.
 
 
-1. Sulla **[!UICONTROL Seleziona destinazione]** eseguire una delle operazioni seguenti:
+1. Il giorno **[!UICONTROL Seleziona destinazione]** eseguire una delle operazioni seguenti:
 
-   * Passa alla nuova posizione delle risorse, quindi tocca o fai clic su **[!UICONTROL Successivo]** per procedere.
+   * Passa alla nuova posizione per le risorse, quindi tocca o fai clic su **[!UICONTROL Successivo]** per procedere.
 
-   * Tocca o fai clic su **[!UICONTROL Indietro]** per tornare al **[!UICONTROL Rinomina]** schermo.
+   * Tocca o fai clic **[!UICONTROL Indietro]** per tornare al **[!UICONTROL Rinomina]** schermo.
 
-1. Se le risorse che stai spostando dispongono di pagine, risorse o raccolte di riferimento, la **[!UICONTROL Regolare i riferimenti]** accanto alla scheda **[!UICONTROL Seleziona destinazione]** scheda .
+1. Se le risorse da spostare hanno pagine, risorse o raccolte di riferimento, il **[!UICONTROL Regola riferimenti]** accanto alla scheda **[!UICONTROL Seleziona destinazione]** scheda.
 
-   Effettua una delle seguenti operazioni nel **[!UICONTROL Regolare i riferimenti]** schermo:
+   Effettua una delle seguenti operazioni in **[!UICONTROL Regola riferimenti]** schermata:
 
    * Specifica i riferimenti da regolare in base ai nuovi dettagli, quindi tocca o fai clic su **[!UICONTROL Sposta]** per procedere.
 
-   * Da **[!UICONTROL Regola]** , seleziona o deseleziona i riferimenti alle risorse.
-   * Tocca o fai clic su **[!UICONTROL Indietro]** per tornare al **[!UICONTROL Seleziona destinazione]** schermo.
+   * Dalla sezione **[!UICONTROL Regola]** , seleziona/deseleziona i riferimenti alle risorse.
+   * Tocca o fai clic **[!UICONTROL Indietro]** per tornare al **[!UICONTROL Seleziona destinazione]** schermo.
 
-   * Tocca o fai clic su **[!UICONTROL Annulla]** per interrompere l&#39;operazione di spostamento.
+   * Tocca o fai clic **[!UICONTROL Annulla]** per interrompere l&#39;operazione di spostamento.
 
-   Se non aggiorni i riferimenti, continuano a indicare il percorso precedente della risorsa. Se regoli i riferimenti, vengono aggiornati al nuovo percorso della risorsa.
+   Se non aggiorni i riferimenti, questi continuano a puntare al percorso precedente della risorsa. Se regoli i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
 
 ### Gestire le rappresentazioni {#managing-renditions}
 
-1. Puoi aggiungere o rimuovere rappresentazioni per una risorsa, tranne l’originale. Passa alla posizione della risorsa per la quale desideri aggiungere o rimuovere rappresentazioni.
+1. Puoi aggiungere o rimuovere rappresentazioni per una risorsa, ad eccezione dell’originale. Passa alla posizione della risorsa per la quale desideri aggiungere o rimuovere rappresentazioni.
 
-1. Tocca o fai clic sulla risorsa per aprire la relativa pagina di risorse.
+1. Tocca o fai clic sulla risorsa per aprirne la pagina.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. Tocca o fai clic sull’icona di Navigazione globale e seleziona **[!UICONTROL Rendering]** dall&#39;elenco.
+1. Tocca o fai clic sull’icona GlobalNav e seleziona **[!UICONTROL Rappresentazioni]** dall&#39;elenco.
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. In **[!UICONTROL Rendering]** Visualizza l’elenco delle rappresentazioni generate per la risorsa.
+1. In **[!UICONTROL Rappresentazioni]** visualizzare l’elenco delle rappresentazioni generate per la risorsa.
 
    ![renditions_panel](assets/renditions_panel.png)
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, [!DNL Experience Manager Assets] non visualizza il rendering originale della risorsa in modalità anteprima. Gli amministratori possono utilizzare le sovrapposizioni per configurare [!DNL Assets] per visualizzare le rappresentazioni originali in modalità anteprima.
+   >Per impostazione predefinita, [!DNL Experience Manager Assets] non visualizza la rappresentazione originale della risorsa nella modalità di anteprima. Gli amministratori possono utilizzare le sovrapposizioni per configurare [!DNL Assets] per visualizzare le rappresentazioni originali in modalità anteprima.
 
-1. Selezionare un rendering per visualizzare o eliminare il rendering.
+1. Selezionare una copia trasformata per visualizzarla o eliminarla.
 
-   **Eliminazione di un rendering**
+   **Eliminazione di una rappresentazione**
 
-   Selezionare un rendering dal **[!UICONTROL Rendering]** , quindi tocca o fai clic sul **[!UICONTROL Elimina rappresentazione]** dalla barra degli strumenti. Le rappresentazioni non possono essere eliminate in blocco al termine dell’elaborazione delle risorse. Per le singole risorse, puoi rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, puoi personalizzare [!DNL Experience Manager] per eliminare rappresentazioni specifiche o eliminare le risorse e ricaricare le risorse eliminate.
+   Selezionare una rappresentazione dal **[!UICONTROL Rappresentazioni]** , quindi tocca o fai clic sul pulsante **[!UICONTROL Elimina rappresentazione]** dalla barra degli strumenti. Non è possibile eliminare le rappresentazioni in blocco al termine dell’elaborazione delle risorse. Per le singole risorse, puoi rimuovere manualmente le rappresentazioni dall’interfaccia utente. Per più risorse, puoi personalizzare [!DNL Experience Manager] per eliminare rappresentazioni specifiche o per eliminare le risorse e ricaricare quelle eliminate.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
-   **Caricamento di un nuovo rendering**
+   **Caricamento di una nuova rappresentazione**
 
    Vai alla pagina dei dettagli della risorsa, quindi tocca o fai clic sull’icona **[!UICONTROL Aggiungi rappresentazione]** della barra degli strumenti per caricare una nuova rappresentazione della risorsa.
 
@@ -247,27 +247,27 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Non viene cre
    >
    >Se selezioni un rendering dal pannello **[!UICONTROL Rendering]**, la barra degli strumenti cambia contesto, visualizzando solo le azioni del rendering specifico. Le opzioni non sono visualizzate, ad esempio l’icona Carica rappresentazione. Per visualizzare queste opzioni nella barra degli strumenti, vai alla pagina dei dettagli della risorsa.
 
-   Puoi configurare le dimensioni per il rendering da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate, Assets visualizza il rendering con le dimensioni esatte o più vicine.
+   Puoi configurare le dimensioni per la rappresentazione da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate, Assets visualizza la rappresentazione con le dimensioni esatte o più vicine.
 
    Per configurare le dimensioni di rendering di un’immagine a livello di dettaglio della risorsa, sovrapponi il nodo `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configura il valore della proprietà larghezza.  Per personalizzare il rendering sulla pagina dei dettagli della risorsa in base alle dimensioni dell’immagine, configura la proprietà **[!UICONTROL size (Long) in KB (dimensione (lunga) in KB)]** al posto della larghezza. Per la personalizzazione basata sulle dimensioni, la proprietà `preferOriginal` assegna le preferenze all’originale se la dimensione del rendering corrispondente è maggiore.
 
-   Allo stesso modo, è possibile personalizzare l&#39;immagine della pagina Annotazione sovrapponendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
+   Allo stesso modo, potete personalizzare l&#39;immagine della pagina Annotazione sovrapponendola `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   Per configurare le dimensioni di rendering per una risorsa video, passa alla `videopicker` nodo nell&#39;archivio CRX nella posizione `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, sovrapponi il nodo e quindi modifica la proprietà appropriata.
+   Per configurare le dimensioni di rendering per una risorsa video, passa alla `videopicker` nodo nell’archivio CRX nel percorso `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, sovrapporre il nodo e quindi modificare la proprietà appropriata.
 
    >[!NOTE]
    >
-   >Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. Inoltre, a seconda del browser, sono supportati diversi formati video. Tuttavia, il formato video MXF non è ancora supportato con le annotazioni video.
+   >Le annotazioni video sono supportate solo nei browser con formati video compatibili con HTML5. Inoltre, a seconda del browser, sono supportati diversi formati video. Tuttavia, il formato video MXF non è ancora supportato con le annotazioni video.
 
-## Eliminare le risorse {#delete-assets}
+## Eliminare risorse {#delete-assets}
 
 Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiorna i riferimenti rilevanti prima di eliminare una risorsa.
 
-Inoltre, disattiva il pulsante force delete utilizzando una sovrapposizione, per impedire agli utenti di eliminare le risorse di riferimento e di lasciare i collegamenti interrotti.
+Inoltre, disattiva il pulsante Forza eliminazione utilizzando una sovrapposizione, per impedire agli utenti di eliminare le risorse di riferimento e lasciare i collegamenti interrotti.
 
-1. Andate alla posizione delle risorse da eliminare.
+1. Passa alla posizione delle risorse da eliminare.
 
 1. Seleziona la risorsa e fai clic su **[!UICONTROL Elimina]** ![delete_icon](assets/do-not-localize/delete-icon.png) dalla barra degli strumenti.
 
@@ -277,78 +277,78 @@ Inoltre, disattiva il pulsante force delete utilizzando una sovrapposizione, per
    * **[!UICONTROL Elimina]** per confermare l’azione:
 
       * Se la risorsa non ha riferimenti, viene eliminata.
-      * Se la risorsa dispone di riferimenti, un messaggio di errore segnala che **[!UICONTROL Riferimento a una o più risorse]**. È possibile selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+      * Se la risorsa contiene riferimenti, un messaggio di errore informa che **[!UICONTROL Si fa riferimento a una o più risorse]**. Puoi selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
 
    >[!NOTE]
    >
-   >Per poter eliminare una risorsa è necessario disporre delle autorizzazioni di eliminazione per dam/asset. Se disponi solo di autorizzazioni di modifica, puoi modificare solo i metadati della risorsa e aggiungere annotazioni alla risorsa. Tuttavia, non puoi eliminare la risorsa o i relativi metadati.
+   >Per eliminare una risorsa è necessario disporre delle autorizzazioni di eliminazione per DAM/risorsa. Se disponi solo delle autorizzazioni di modifica, puoi modificare solo i metadati della risorsa e aggiungere annotazioni alla risorsa. Tuttavia, non puoi eliminare la risorsa o i relativi metadati.
 
    >[!NOTE]
    >
-   >Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiorna i riferimenti rilevanti prima di eliminare una risorsa. È possibile impedire l’eliminazione delle risorse di riferimento in quanto causa collegamenti interrotti. Disattiva il pulsante di eliminazione forzata utilizzando una sovrapposizione.
+   >Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiorna i riferimenti rilevanti prima di eliminare una risorsa. Puoi impedire l’eliminazione delle risorse di riferimento in quanto causa collegamenti interrotti. Disattiva il pulsante Forza eliminazione utilizzando una sovrapposizione.
 
 ## Scaricare le risorse {#download-assets}
 
-Vedi [scaricare risorse da [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+Consulta [scarica risorse da [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Pubblicare o annullare la pubblicazione delle risorse {#publish-assets}
 
-1. Passa alla posizione della risorsa o della cartella di risorse che desideri pubblicare o che desideri rimuovere dall’ambiente di pubblicazione (Annulla pubblicazione).
+1. Passa alla posizione della risorsa o della cartella di risorse da pubblicare o da rimuovere dall’ambiente di pubblicazione (annulla pubblicazione).
 
-1. Seleziona la risorsa o la cartella da pubblicare o di cui annullare la pubblicazione e seleziona **[!UICONTROL Gestisci pubblicazione]** ![opzione gestione pubblicazione](assets/do-not-localize/globe-publication.png) dalla barra degli strumenti. In alternativa, per pubblicare rapidamente, seleziona la **[!UICONTROL Pubblicazione rapida]** dalla barra degli strumenti. Se la cartella da pubblicare include una cartella vuota, questa non verrà pubblicata.
+1. Seleziona la risorsa o la cartella da pubblicare o di cui annullare la pubblicazione e seleziona **[!UICONTROL Gestisci pubblicazione]** ![opzione gestisci pubblicazione](assets/do-not-localize/globe-publication.png) dalla barra degli strumenti. In alternativa, per pubblicare rapidamente, seleziona la **[!UICONTROL Pubblicazione rapida]** dalla barra degli strumenti. Se la cartella da pubblicare include una cartella vuota, questa non viene pubblicata.
 
-1. Seleziona la **[!UICONTROL Pubblica]** o **[!UICONTROL Annulla pubblicazione]** se necessario.
+1. Seleziona la **[!UICONTROL Pubblica]** o **[!UICONTROL Annulla pubblicazione]** in base alle esigenze.
 
-   ![Annulla pubblicazione azione](assets/unpublish_action.png)
+   ![Annulla pubblicazione](assets/unpublish_action.png)
    *Figura: Opzioni di pubblicazione e annullamento della pubblicazione e opzione di pianificazione.*
 
-1. Seleziona **[!UICONTROL Ora]** per agire immediatamente sulla risorsa o seleziona **[!UICONTROL Più tardi]** per pianificare l’azione. Seleziona una data e un’ora se scegli la **[!UICONTROL Più tardi]** opzione . Fai clic su **[!UICONTROL Avanti]**.
+1. Seleziona **[!UICONTROL Ora]** per agire subito sulla risorsa o selezionare **[!UICONTROL Più tardi]** per pianificare l&#39;azione. Seleziona una data e un’ora se scegli **[!UICONTROL Più tardi]** opzione. Fai clic su **[!UICONTROL Avanti]**.
 
-1. Durante la pubblicazione, se una risorsa fa riferimento ad altre risorse, i relativi riferimenti sono elencati nella procedura guidata. Vengono visualizzati solo i riferimenti, che vengono annullati o modificati dall’ultima pubblicazione. Scegli i riferimenti da pubblicare.
+1. Durante la pubblicazione, se una risorsa fa riferimento ad altre risorse, i relativi riferimenti sono elencati nella procedura guidata. Vengono visualizzati solo i riferimenti non pubblicati o modificati dall&#39;ultima pubblicazione. Scegliete i riferimenti da pubblicare.
 
-1. Quando si annulla la pubblicazione, se una risorsa fa riferimento ad altre risorse, scegliete i riferimenti di cui desiderate annullare la pubblicazione. Fai clic su **[!UICONTROL Annulla pubblicazione]**. Nella finestra di dialogo di conferma, fai clic su **[!UICONTROL Annulla]** per interrompere l’azione o fare clic su **[!UICONTROL Annulla pubblicazione]** per confermare l’annullamento della pubblicazione delle risorse alla data specificata.
+1. Quando annulli la pubblicazione, se una risorsa fa riferimento ad altre risorse, scegli i riferimenti da annullare la pubblicazione. Fai clic su **[!UICONTROL Annulla pubblicazione]**. Nella finestra di dialogo di conferma, fai clic su **[!UICONTROL Annulla]** per interrompere l’azione o fai clic su **[!UICONTROL Annulla pubblicazione]** per confermare che la pubblicazione delle risorse verrà annullata alla data specificata.
 
-Scopri i seguenti limiti e suggerimenti relativi alla pubblicazione o all’annullamento della pubblicazione di risorse o cartelle:
+Scopri le limitazioni e i suggerimenti seguenti relativi alla pubblicazione o all’annullamento della pubblicazione di risorse o cartelle:
 
-* L’opzione [!UICONTROL Gestisci pubblicazione] è disponibile solo per gli account utente che dispongono di autorizzazioni di replica.
-* Quando si annulla la pubblicazione di una risorsa complessa, è necessario annullare la pubblicazione solo della risorsa. Evita di annullare la pubblicazione dei riferimenti, poiché altri contenuti pubblicati potrebbero farvi riferimento.
+* Opzione per [!UICONTROL Gestisci pubblicazione] è disponibile solo per gli account utente con autorizzazioni di replica.
+* Durante l’annullamento della pubblicazione di una risorsa complessa, annulla solo la pubblicazione della risorsa. Evita di annullare la pubblicazione dei riferimenti, poiché altre risorse pubblicate potrebbero farvi riferimento.
 * Le cartelle vuote non vengono pubblicate.
-* Se pubblichi una risorsa in fase di elaborazione, viene pubblicato solo il contenuto originale. Mancano i rendering. Attendi il completamento dell’elaborazione, quindi pubblica o ripubblica la risorsa al termine dell’elaborazione.
+* Se pubblichi una risorsa in fase di elaborazione, viene pubblicato solo il contenuto originale. Mancano le rappresentazioni. Attendi il completamento dell’elaborazione, quindi pubblica o ripubblica la risorsa al termine dell’elaborazione.
 
 ## Gruppo utenti chiuso {#closed-user-group}
 
-Un gruppo utenti chiuso (CUG) viene utilizzato per limitare l’accesso a specifiche cartelle di risorse pubblicate da [!DNL Experience Manager]. Se si crea un CUG per una cartella, l’accesso alla cartella (incluse le risorse della cartella e le sottocartelle) è limitato solo ai membri o ai gruppi assegnati. Per accedere alla cartella, è necessario che accedano utilizzando le proprie credenziali di sicurezza.
+Un gruppo utenti chiuso viene utilizzato per limitare l’accesso a cartelle di risorse specifiche pubblicate da [!DNL Experience Manager]. Se si crea un gruppo utenti chiusi (CUG) per una cartella, l&#39;accesso alla cartella (incluse le risorse e le sottocartelle della cartella) è limitato solo ai membri o ai gruppi assegnati. Per accedere alla cartella, devono accedere utilizzando le credenziali di sicurezza.
 
-I gruppi di utenti chiusi rappresentano un modo aggiuntivo per limitare l’accesso alle risorse. Puoi anche configurare una pagina di accesso per la cartella.
+I CUG sono un modo aggiuntivo per limitare l’accesso alle risorse. Puoi anche configurare una pagina di accesso per la cartella.
 
 1. Seleziona una cartella dall’interfaccia utente Assets, quindi tocca o fai clic sull’icona Proprietà nella barra degli strumenti per visualizzare la pagina delle proprietà.
-1. Da **[!UICONTROL Autorizzazioni]** scheda aggiungi membri o gruppi in **[!UICONTROL Gruppo utenti chiuso]**.
+1. Dalla sezione **[!UICONTROL Autorizzazioni]** , aggiungere membri o gruppi in **[!UICONTROL Gruppo utenti chiuso]**.
 
    ![add_user](assets/add_user.png)
 
-1. Per visualizzare una schermata di accesso quando gli utenti accedono alla cartella, seleziona la **[!UICONTROL Abilita]** opzione . Quindi, seleziona il percorso di una pagina di accesso in [!DNL Experience Manager]e salva le modifiche.
+1. Per visualizzare una schermata di accesso quando gli utenti accedono alla cartella, selezionare **[!UICONTROL Abilita]** opzione. Quindi, seleziona il percorso di una pagina di accesso in [!DNL Experience Manager]e salva le modifiche.
 
-   ![login_page](assets/login_page.png)
+   ![pagina_di_accesso](assets/login_page.png)
 
    >[!NOTE]
    >
    >Se non si specifica il percorso di una pagina di accesso, [!DNL Experience Manager] visualizza la pagina di accesso predefinita nell’istanza di pubblicazione.
 
-1. Pubblica la cartella e prova ad accedervi dall&#39;istanza di pubblicazione. Viene visualizzata una schermata di accesso.
-1. Se sei un membro CUG, immetti le tue credenziali di sicurezza. La cartella viene visualizzata dopo [!DNL Experience Manager] ti autentica.
+1. Pubblica la cartella, quindi prova ad accedervi dall’istanza di pubblicazione. Viene visualizzata una schermata di accesso.
+1. Se si è un membro del gruppo utenti chiusi, immettere le credenziali di sicurezza. La cartella viene visualizzata dopo [!DNL Experience Manager] ti autentica.
 
 ## Cercare risorse {#search-assets}
 
-La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e dei professionisti del marketing, sia per l’amministrazione da parte degli amministratori DAM.
+La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, che sia destinato a un ulteriore utilizzo da parte dei creativi, per la gestione affidabile delle risorse da parte degli utenti aziendali e dei professionisti del marketing o per l’amministrazione da parte degli amministratori DAM.
 
-Per ricerche semplici, avanzate e personalizzate per scoprire e utilizzare le risorse più appropriate, consulta [cercare risorse in [!DNL Experience Manager]](/help/assets/search-assets.md).
+Per ricerche semplici, avanzate e personalizzate per individuare e utilizzare le risorse più appropriate, consulta [cercare risorse in [!DNL Experience Manager]](/help/assets/search-assets.md).
 
 ## Azioni rapide {#quick-actions}
 
-Le icone delle azioni rapide sono disponibili per una singola risorsa alla volta. A seconda del dispositivo, esegui le seguenti azioni per visualizzare le icone delle azioni rapide:
+Le icone di azione rapida sono disponibili per una singola risorsa alla volta. A seconda del dispositivo in uso, eseguire le azioni seguenti per visualizzare le icone delle azioni rapide:
 
-* Dispositivi touch: Toccare e tenere premuto. Ad esempio, in un iPad, puoi toccare e tenere premuto una risorsa per visualizzare le azioni rapide.
-* Dispositivi non touch: Puntatore al passaggio del mouse. Ad esempio, su un dispositivo desktop, se passi il puntatore sulla miniatura della risorsa viene visualizzata la barra delle azioni rapide.
+* Dispositivi touch: toccare e tenere premuto. Ad esempio, su un’iPad, puoi toccare e tenere premuto un tasto di una risorsa in modo che vengano visualizzate le azioni rapide.
+* Dispositivi non touch: puntatore del mouse. Ad esempio, su un dispositivo desktop, se passi il puntatore del mouse sulla miniatura della risorsa, viene visualizzata la barra di azione rapida.
 
 <!-- Hiding this topic via cqdoc-18707
 
@@ -410,12 +410,12 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 La timeline consente di visualizzare vari eventi per un elemento selezionato, ad esempio flussi di lavoro attivi per una risorsa, commenti/annotazioni, registri attività e versioni.
 
-![Ordinare le voci della timeline per una risorsa](assets/sort_timeline.gif)
+![Ordinare le voci della sequenza temporale per una risorsa](assets/sort_timeline.gif)
 *Figura: Ordinare le voci della timeline per una risorsa*
 
 >[!NOTE]
 >
->In [Console Raccolte](/help/assets/manage-collections.md#navigate-the-collections-console), **[!UICONTROL Mostra tutto]** fornisce opzioni per visualizzare solo i commenti e i flussi di lavoro. Inoltre, la timeline viene visualizzata solo per le raccolte di primo livello elencate nella console. Non viene visualizzato se vi spostate all’interno di una qualsiasi delle raccolte.
+>In [Console Raccolte](/help/assets/manage-collections.md#navigate-the-collections-console), il **[!UICONTROL Mostra tutto]** fornisce opzioni per visualizzare solo i commenti e i flussi di lavoro. Inoltre, la timeline viene visualizzata solo per le raccolte di livello superiore elencate nella console. Non viene visualizzato se ti sposti all’interno di una delle raccolte.
 
 >[!NOTE]
 >
@@ -423,19 +423,19 @@ La timeline consente di visualizzare vari eventi per un elemento selezionato, ad
 
 ## Annotare risorse {#annotating}
 
-Le annotazioni sono commenti o note esplicative aggiunte a immagini o video. Le annotazioni consentono agli addetti al marketing di collaborare e lasciare un feedback sulle risorse.
+Le annotazioni sono commenti o note esplicative aggiunti a immagini o video. Le annotazioni consentono agli addetti al marketing di collaborare e lasciare un feedback sulle risorse.
 
-Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. I formati video supportati da Assets dipendono dal browser. Tuttavia, il formato video MXF non è ancora supportato con le annotazioni video.
+Le annotazioni video sono supportate solo nei browser con formati video compatibili con HTML5. I formati video supportati da Assets dipendono dal browser. Tuttavia, il formato video MXF non è ancora supportato con le annotazioni video.
 
 >[!NOTE]
 >
->Per i frammenti di contenuto, [le annotazioni vengono create nell’editor frammenti](content-fragments/content-fragments.md).
+>Per Frammenti Di Contenuto, [le annotazioni vengono create nell’editor frammenti](content-fragments/content-fragments.md).
 
-1. Andate alla posizione della risorsa alla quale desiderate aggiungere annotazioni.
-1. Tocca o fai clic sul pulsante **[!UICONTROL Annota]** da una delle seguenti icone:
+1. Passa alla posizione della risorsa a cui desideri aggiungere annotazioni.
+1. Tocca o fai clic sul pulsante **[!UICONTROL Annota]** da una delle seguenti:
 
    * [Azioni rapide](#quick-actions)
-   * Dalla barra degli strumenti dopo aver selezionato la risorsa o essere passato alla pagina della risorsa
+   * Dalla barra degli strumenti, dopo aver selezionato la risorsa o essere passato alla pagina della risorsa
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
@@ -453,7 +453,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. Dopo aver aggiunto l’annotazione, fai clic su **[!UICONTROL Aggiungi]** per salvarlo. Ad Aaron viene inviata una notifica relativa all’annotazione.
+1. Dopo aver aggiunto l’annotazione, fai clic su **[!UICONTROL Aggiungi]** per salvarlo. Viene inviata una notifica per l’annotazione ad Aaron.
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -461,14 +461,14 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
    >
    >È possibile aggiungere più annotazioni prima di salvarle.
 
-1. Tocca o fai clic su **[!UICONTROL Chiudi]** per uscire dalla modalità Annotazione.
-1. Per visualizzare la notifica, accedi a Assets con le credenziali di Aaron MacDonald e fai clic sul **[!UICONTROL Notifiche]** per visualizzare la notifica.
+1. Tocca o fai clic **[!UICONTROL Chiudi]** per uscire dalla modalità Annotation.
+1. Per visualizzare la notifica, accedi ad Assets con le credenziali di Aaron MacDonald e fai clic su **[!UICONTROL Notifiche]** per visualizzare la notifica.
 
    >[!NOTE]
    >
-   >Le annotazioni possono essere aggiunte anche alle risorse video. Durante l&#39;annotazione dei video, il lettore si mette in pausa per consentirvi di annotare un fotogramma. Per maggiori dettagli, vedi [gestione delle risorse video](manage-video-assets.md). Tuttavia, il formato video MXF non è ancora supportato con le annotazioni video.
+   >È inoltre possibile aggiungere annotazioni alle risorse video. Durante l’annotazione dei video, il lettore si interrompe per consentire l’annotazione su un fotogramma. Per ulteriori informazioni, consulta [gestione delle risorse video](manage-video-assets.md). Tuttavia, il formato video MXF non è ancora supportato con le annotazioni video.
 
-1. Per scegliere un colore diverso per differenziare gli utenti, tocca o fai clic sull’icona Profilo e tocca o fai clic su **[!UICONTROL Preferenze]**.
+1. Per scegliere un colore diverso in modo da poter distinguere tra gli utenti, tocca o fai clic sull’icona Profilo e tocca o fai clic su **[!UICONTROL Le mie preferenze]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
@@ -478,7 +478,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 >[!NOTE]
 >
->È inoltre possibile aggiungere annotazioni a una raccolta. Tuttavia, se una raccolta contiene raccolte figlie, è possibile aggiungere annotazioni/commenti solo alla raccolta principale. L’opzione Annota non è disponibile per le raccolte figlio.
+>Puoi anche aggiungere annotazioni a una raccolta. Tuttavia, se una raccolta contiene raccolte secondarie, è possibile aggiungere annotazioni o commenti solo alla raccolta principale. L’opzione Annota non è disponibile per le raccolte secondarie.
 
 ### Visualizzare le annotazioni salvate {#viewing-saved-annotations}
 
@@ -486,13 +486,13 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 >[!NOTE]
 >
->Se selezioni più annotazioni, l’ultima sarà visibile nell’interfaccia utente.
+>Se selezioni più annotazioni, nell’interfaccia utente sarà visibile l’annotazione più recente.
 >
 >La selezione multipla è supportata solo per la stampa della risorsa annotata come PDF.
 
-1. Per visualizzare le annotazioni salvate per una risorsa, accedi alla posizione della risorsa e apri la pagina della risorsa.
+1. Per visualizzare le annotazioni salvate per una risorsa, passa alla posizione della risorsa e apri la relativa pagina.
 
-1. Tocca o fai clic sull’icona di Navigazione globale e scegli **[!UICONTROL Timeline]** dall&#39;elenco.
+1. Tocca o fai clic sull’icona GlobalNav e scegli **[!UICONTROL Timeline]** dall&#39;elenco.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -500,15 +500,15 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   Tocca o fai clic su un commento nel **[!UICONTROL Timeline]** per visualizzare l’annotazione corrispondente sull’immagine.
+   Tocca o fai clic su un commento nella **[!UICONTROL Timeline]** per visualizzare l’annotazione corrispondente sull’immagine.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   Tocca o fai clic su **[!UICONTROL Elimina]**, per eliminare un particolare commento.
+   Tocca o fai clic **[!UICONTROL Elimina]**, per eliminare un particolare commento.
 
 ### Stampa annotazioni {#printing-annotations}
 
-Se una risorsa dispone di annotazioni o è stata sottoposta a un flusso di lavoro di revisione, puoi stampare la risorsa insieme a annotazioni e rivederne lo stato come file PDF per la revisione offline.
+Se una risorsa contiene annotazioni o è stata soggetta a un flusso di lavoro di revisione, puoi stampare la risorsa insieme alle annotazioni e rivederne lo stato come file PDF per la revisione offline.
 
 È inoltre possibile scegliere di stampare solo le annotazioni o lo stato di revisione.
 
@@ -516,15 +516,15 @@ Se una risorsa dispone di annotazioni o è stata sottoposta a un flusso di lavor
 >
 >È possibile selezionare più annotazioni durante la stampa della risorsa annotata come PDF.
 
-Per stampare le annotazioni e controllare lo stato, tocca o fai clic sul pulsante **[!UICONTROL Stampa]** e segui le istruzioni della procedura guidata. La **[!UICONTROL Stampa]** l’icona viene visualizzata nella barra degli strumenti solo quando alla risorsa è assegnata almeno un’annotazione o uno stato di revisione.
+Per stampare le annotazioni e controllare lo stato, tocca o fai clic sul pulsante **[!UICONTROL Stampa]** e seguire le istruzioni della procedura guidata. Il **[!UICONTROL Stampa]** viene visualizzata nella barra degli strumenti solo quando alla risorsa è assegnato almeno uno stato di annotazione o revisione.
 
-1. Dall’interfaccia utente Assets, apri la pagina di anteprima per una risorsa.
+1. Dall’interfaccia utente Assets, apri la pagina di anteprima di una risorsa.
 1. Effettua una delle operazioni seguenti:
 
    * Per stampare tutte le annotazioni e lo stato di revisione, saltare il passaggio 3 e passare direttamente al passaggio 4.
-   * Per stampare annotazioni specifiche e controllare lo stato, aprire [timeline](/help/assets/manage-digital-assets.md#timeline) e poi andare al punto 3.
+   * Per stampare annotazioni specifiche e rivedere lo stato, aprire [timeline](/help/assets/manage-digital-assets.md#timeline) quindi andare al punto 3.
 
-1. Per stampare annotazioni specifiche, selezionate le annotazioni nella timeline.
+1. Per stampare annotazioni specifiche, selezionarle dalla timeline.
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
@@ -536,13 +536,13 @@ Per stampare le annotazioni e controllare lo stato, tocca o fai clic sul pulsant
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. Nella finestra di dialogo Stampa, scegliere la posizione in cui visualizzare le annotazioni o lo stato di revisione in PDF. Ad esempio, se desideri che le annotazioni o lo stato vengano stampati in alto a destra della pagina contenente l’immagine stampata, utilizza l’ **In alto a sinistra** impostazione. È selezionata per impostazione predefinita.
+1. Nella finestra di dialogo Stampa, scegliere la posizione in cui si desidera visualizzare lo stato di annotazioni/revisioni sul PDF. Ad esempio, se desideri stampare le annotazioni/stato in alto a destra della pagina che contiene l’immagine stampata, utilizza **In alto a sinistra** impostazione. È selezionata per impostazione predefinita.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
    È possibile scegliere altre impostazioni, a seconda della posizione in cui si desidera visualizzare le annotazioni o lo stato nel PDF stampato. Se vuoi che le annotazioni o lo stato vengano visualizzati in una pagina separata dalla risorsa stampata, scegli **[!UICONTROL Pagina successiva]**.
 
-1. Fai clic su **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, il PDF generato visualizza annotazioni/stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **In alto a sinistra**, l’output generato sarà simile al file PDF qui riportato.
+1. Clic **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, il PDF generato visualizza annotazioni/stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **In alto a sinistra**, l’output generato sarà simile al file PDF qui riportato.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -550,80 +550,80 @@ Per stampare le annotazioni e controllare lo stato, tocca o fai clic sul pulsant
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   Per modificare l’aspetto del file PDF renderizzato, ad esempio il colore, la dimensione e lo stile del font, il colore di sfondo dei commenti e degli stati, aprire il **[!UICONTROL Configurazione di Annotation PDF]** da Configuration Manager e modifica le opzioni desiderate. Ad esempio, per modificare il colore di visualizzazione dello stato approvato, modificare il codice del colore nel campo corrispondente. Per informazioni sulla modifica del colore del font delle annotazioni, consultare [Annotazione](/help/assets/manage-digital-assets.md#annotating).
+   Per modificare l&#39;aspetto del file PDF sottoposto a rendering, ad esempio il colore, la dimensione e lo stile del carattere e il colore di sfondo dei commenti e degli stati, aprire **[!UICONTROL Configurazione di Annotation PDF]** da Configuration Manager e modificare le opzioni desiderate. Ad esempio, per modificare il colore di visualizzazione dello stato approvato, modifica il codice del colore nel campo corrispondente. Per informazioni sulla modifica del colore del carattere delle annotazioni, vedere [Annotazione](/help/assets/manage-digital-assets.md#annotating).
 
-   Torna al file PDF renderizzato e aggiornalo. Il PDF aggiornato riflette le modifiche apportate.
+   Tornate al file PDF sottoposto a rendering e aggiornatelo. Il PDF aggiornato riflette le modifiche apportate.
 
 ## Controllo delle versioni di una risorsa {#asset-versioning}
 
-Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento specifico. Il controllo delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, per annullare una modifica apportata a una risorsa, ripristina la versione non modificata della risorsa.
+Il controllo delle versioni crea un’istantanea delle risorse digitali in un determinato momento. Il controllo delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, per annullare una modifica apportata a una risorsa, ripristina la versione non modificata della risorsa.
 
-Di seguito sono riportati gli scenari in cui si creano versioni:
+Di seguito sono riportati gli scenari in cui si creano le versioni:
 
-* Puoi modificare un’immagine in un’altra applicazione e caricarla in Assets. Viene creata una versione dell’immagine in modo che l’immagine originale non venga sovrascritta.
+* Puoi modificare un’immagine in un’altra applicazione e caricarla in Assets. Viene creata una versione dell&#39;immagine in modo che l&#39;immagine originale non venga sovrascritta.
 * Puoi modificare i metadati di una risorsa.
-* Utilizzate [!DNL Experience Manager] app desktop per estrarre una risorsa esistente e salvare le modifiche. A ogni salvataggio della risorsa viene creata una nuova versione.
+* Utilizzi [!DNL Experience Manager] app desktop per estrarre una risorsa esistente e salvare le modifiche. A ogni salvataggio della risorsa viene creata una nuova versione.
 
-È inoltre possibile abilitare il controllo delle versioni automatico tramite un flusso di lavoro. Quando crei una versione per una risorsa, i metadati e le rappresentazioni vengono salvati insieme alla versione. Le rappresentazioni sono alternative di rendering delle stesse immagini, ad esempio, una rappresentazione PNG di un file JPEG caricato.
+È inoltre possibile abilitare il controllo automatico delle versioni tramite un flusso di lavoro. Quando crei una versione per una risorsa, i metadati e le rappresentazioni vengono salvati insieme alla versione. Le rappresentazioni sono rappresentazioni alternative delle stesse immagini, ad esempio una rappresentazione PNG di un file JPEG caricato.
 
 La funzionalità di controllo delle versioni consente di effettuare le seguenti operazioni:
 
 * Crea una versione di una risorsa.
-* Visualizza la revisione corrente per una risorsa.
+* Visualizzare la revisione corrente di una risorsa.
 * Ripristina una versione precedente della risorsa.
 
-1. Andate alla posizione della risorsa per la quale desiderate creare una versione e toccatela o fate clic per aprire la relativa pagina delle risorse.
+1. Passa alla posizione della risorsa per la quale desideri creare una versione e tocca o fai clic su di essa per aprire la relativa pagina della risorsa.
 
-1. Tocca o fai clic sull’icona di Navigazione globale e scegli **[!UICONTROL Timeline]** dal menu.
+1. Tocca o fai clic sull’icona GlobalNav e scegli **[!UICONTROL Timeline]** dal menu.
 
    ![timeline](assets/timeline.png)
 
-1. Tocca o fai clic sul pulsante **[!UICONTROL Azioni]** Icona (freccia) nella parte inferiore per visualizzare le azioni disponibili sulla risorsa.
+1. Tocca o fai clic sul pulsante **[!UICONTROL Azioni]** (freccia) in basso per visualizzare le azioni disponibili che puoi eseguire sulla risorsa.
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. Tocca o fai clic su **[!UICONTROL Salva come versione]** per creare una versione della risorsa.
+1. Tocca o fai clic **[!UICONTROL Salva come versione]** per creare una versione della risorsa.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Aggiungi un&#39;etichetta e un commento, quindi fai clic su **[!UICONTROL Crea]** per creare una versione. In alternativa, tocca o fai clic su **Annulla** per uscire dall&#39;operazione.
+1. Aggiungere un&#39;etichetta e un commento, quindi fare clic su **[!UICONTROL Crea]** per creare una versione. In alternativa, tocca o fai clic su **Annulla** per uscire dall&#39;operazione.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
 1. Per visualizzare la nuova versione, apri l’elenco **[!UICONTROL Mostra tutti]** nella timeline dalla pagina dei dettagli della risorsa o dall’interfaccia utente Assets, quindi scegli **[!UICONTROL Versioni]**. Tutte le versioni create per una risorsa sono elencate nella scheda della timeline. Puoi filtrare l’elenco Versioni, facendo clic sulla freccia rivolta verso il basso e selezionando **[!UICONTROL Versioni]** dall’elenco.
 
-   ![version_option](assets/versions_option.png)
+   ![versions_option](assets/versions_option.png)
 
-1. Seleziona una versione specifica per la risorsa da visualizzare in anteprima o abilitare per visualizzarla nell’interfaccia utente di Assets.
+1. Seleziona una versione specifica per la risorsa per visualizzarla in anteprima o per consentirne la visualizzazione nell&#39;interfaccia utente Assets.
 
    ![select_version](assets/select_version.png)
 
-1. Aggiungi un’etichetta e un commento per la versione da ripristinare alla versione specifica nell’interfaccia utente di Assets.
+1. Aggiungi un’etichetta e un commento per la versione per ripristinare una versione specifica nell’interfaccia utente Assets.
 
    ![save_version](assets/save_version.png)
 
 1. Per generare un’anteprima per la versione, tocca o fai clic su **[!UICONTROL Anteprima versione]**.
-1. Per visualizzare questa versione nell’interfaccia utente di Assets, seleziona **[!UICONTROL Ripristina questa versione]**.
-1. Per confrontare tra due versioni, vai alla pagina della risorsa e tocca o fai clic sulla versione da confrontare con la versione corrente.
+1. Per visualizzare questa versione nell’interfaccia utente Assets, seleziona **[!UICONTROL Ripristina questa versione]**.
+1. Per confrontare due versioni, vai alla pagina della risorsa e tocca o fai clic sulla versione da confrontare con la versione corrente.
 
-   ![select_version_tocompare](assets/select_version_tocompare.png)
+   ![select_version_to_compare](assets/select_version_tocompare.png)
 
-1. Dalla timeline, seleziona la versione da confrontare e trascina il cursore a sinistra per sovrapporre questa versione alla versione corrente e confrontare.
+1. Dalla timeline, seleziona la versione da confrontare e trascina il cursore verso sinistra per sovrapporre questa versione alla versione corrente e confrontare.
 
-   ![confrontare_versioni](assets/compare_versions.png)
+   ![compare_versions](assets/compare_versions.png)
 
 ### Avviare un flusso di lavoro su una risorsa {#starting-a-workflow-on-an-asset}
 
-1. Andate alla posizione della risorsa per la quale desiderate avviare un flusso di lavoro, quindi toccate o fate clic sulla risorsa per aprire la pagina della risorsa.
-1. Tocca o fai clic sull’icona di Navigazione globale e scegli **[!UICONTROL Timeline]** dal menu per visualizzare la timeline.
+1. Passa alla posizione della risorsa per la quale desideri avviare un flusso di lavoro, quindi tocca o fai clic sulla risorsa per aprire la pagina della risorsa.
+1. Tocca o fai clic sull’icona GlobalNav e scegli **[!UICONTROL Timeline]** per visualizzare la timeline.
 
    ![timeline-1](assets/timeline-1.png)
 
-1. Tocca o fai clic sul pulsante **[!UICONTROL Azioni]** Icona (freccia) in basso per aprire l’elenco delle azioni disponibili per la risorsa.
+1. Tocca o fai clic sul pulsante **[!UICONTROL Azioni]** (freccia) in basso per aprire l’elenco delle azioni disponibili per la risorsa.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. Tocca o fai clic su **[!UICONTROL Avvia flusso di lavoro]** dall&#39;elenco.
+1. Tocca o fai clic **[!UICONTROL Avvia flusso di lavoro]** dall&#39;elenco.
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
@@ -643,18 +643,18 @@ La funzionalità di controllo delle versioni consente di effettuare le seguenti 
 
 Una raccolta è un set ordinato di risorse. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti.
 
-* Una raccolta può includere risorse provenienti da posizioni diverse, poiché contiene solo riferimenti a tali risorse. Ogni raccolta mantiene l’integrità referenziale delle risorse.
-* Puoi condividere raccolte con più utenti con diversi livelli di privilegi, ad esempio per la modifica, la visualizzazione e così via.
+* Una raccolta può includere risorse da posizioni diverse, perché contengono solo riferimenti a tali risorse. Ogni raccolta mantiene l’integrità referenziale delle risorse.
+* Puoi condividere raccolte con più utenti con diversi livelli di privilegi, ad esempio per modificare, visualizzare e così via.
 
-Per informazioni dettagliate sulla gestione delle raccolte, consulta [gestire le raccolte](/help/assets/manage-collections.md).
+Per informazioni dettagliate sulla gestione della raccolta, consulta [gestisci raccolte](/help/assets/manage-collections.md).
 
-## Nascondere le risorse scadute durante la visualizzazione delle risorse nell’app desktop o in Adobe Asset Link {#hide-expired-assets-via-acp-api}
+## Nascondere le risorse scadute durante la visualizzazione delle risorse nell’app desktop o nel collegamento di risorse Adobe {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] l’app desktop consente l’accesso all’archivio DAM da desktop Windows o Mac. Adobe Asset Link consente di accedere alle risorse dall’interno del supporto [!DNL Creative Cloud] applicazioni desktop.
+[!DNL Experience Manager] L’app desktop consente di accedere all’archivio DAM da Windows o dal desktop Mac. Adobe Asset Link consente di accedere alle risorse dall’interno del [!DNL Creative Cloud] applicazioni desktop.
 
-Quando esplori risorse da [!DNL Experience Manager] interfaccia utente, le risorse scadute non vengono visualizzate. Per impedire la visualizzazione, la ricerca e il recupero delle risorse scadute durante la navigazione dalle app desktop e da Asset Link, gli amministratori possono effettuare le seguenti operazioni di configurazione. La configurazione funziona per tutti gli utenti, indipendentemente dal privilegio di amministratore.
+Quando esplori le risorse da [!DNL Experience Manager] nell’interfaccia utente, le risorse scadute non vengono visualizzate. Per evitare di visualizzare, cercare e recuperare le risorse scadute durante la navigazione dall’app desktop e da Asset Link, gli amministratori possono effettuare la seguente configurazione. La configurazione funziona per tutti gli utenti, indipendentemente dal privilegio di amministratore.
 
-Esegui il seguente comando CURL. Accesso in lettura attivato `/conf/global/settings/dam/acpapi/` per gli utenti che accedono alle risorse. Utenti che fanno parte di `dam-user` per impostazione predefinita, il gruppo dispone dell&#39;autorizzazione .
+Eseguite il seguente comando CURL. Assicurare l&#39;accesso in lettura su `/conf/global/settings/dam/acpapi/` per gli utenti che accedono alle risorse. Utenti che fanno parte di `dam-user` dispongono dell&#39;autorizzazione per impostazione predefinita.
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
@@ -666,13 +666,13 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Per saperne di più, vedi come [sfogliare le risorse DAM utilizzando l’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [come utilizzare Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Per ulteriori informazioni, vedere come [Sfogliare le risorse DAM tramite l’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [come utilizzare Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **Consulta anche**
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Formati di file supportati da Assets](file-format-support.md)
 * [Cercare risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)

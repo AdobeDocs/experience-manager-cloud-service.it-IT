@@ -69,7 +69,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta d
 
 1. Apri la console Modelli di flusso di lavoro. L’URL predefinito è `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleziona **Crea**, quindi **Crea modello**. Viene visualizzata la finestra di dialogo Aggiungi modello flusso di lavoro.
-1. Inserisci il **Titolo** e **Nome** (facoltativo). Ad esempio, una richiesta di ipoteca. Toccate **Chiudi**.
+1. Inserisci il **Titolo** e **Nome** (facoltativo). Ad esempio, una richiesta di ipoteca. Tocca **Fine**.
 1. Seleziona il modello di flusso di lavoro appena creato e tocca **Modifica**. Ora è possibile aggiungere passaggi del flusso di lavoro per creare una logica di business. La prima volta che crei un modello di flusso di lavoro, contiene:
 
    * I passaggi: Inizio flusso e Fine flusso. Questi passaggi rappresentano l’inizio e la fine del flusso di lavoro. Questi passaggi sono necessari e non possono essere modificati o rimossi.

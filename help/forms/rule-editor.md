@@ -487,7 +487,7 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
    La regola viene infine visualizzata come segue nell’editor di regole.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
-1. Toccate **[!UICONTROL Chiudi]**. Salva la regola.
+1. Tocca **[!UICONTROL Fine]**. Salva la regola.
 
 1. Ripetere i passaggi da 7 a 14 per definire un&#39;altra regola per calcolare l&#39;idoneità al prestito se lo stato civile è Single. La regola viene visualizzata come segue nell’editor di regole.
 
@@ -559,7 +559,7 @@ Mostra i parametri utilizzati dalla funzione. Una funzione può avere più tag d
    1. stringa
    1. numero
    1. booleano
-   1. scope
+   1. ambito
 
    L’ambito fa riferimento ai campi di un modulo adattivo. Quando un modulo utilizza il caricamento lento, è possibile utilizzare `scope` per accedere ai relativi campi. È possibile accedere ai campi quando sono caricati o se sono contrassegnati come globali.
 
@@ -630,7 +630,7 @@ Per aprire un modulo in modalità di modifica, seleziona un modulo e tocca **[!U
 
    [![Utilizzo di funzioni personalizzate per creare una regola](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
-1. Toccate **[!UICONTROL Chiudi]**. Viene aggiunta la funzione personalizzata.
+1. Tocca **[!UICONTROL Fine]**. Viene aggiunta la funzione personalizzata.
 
 #### Tipi supportati da dichiarazione di funzione {#function-declaration-supported-types}
 

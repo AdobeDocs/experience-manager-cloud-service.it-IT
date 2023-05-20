@@ -1,17 +1,17 @@
 ---
-title: Note sulla versione 2022.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2022.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
 source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
-# Note sulla versione 2022.8.0 per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note sulla versione della funzione per la versione 2022.8.0 di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note sulla versione 2022.8.0 di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -23,12 +23,12 @@ La sezione seguente illustra le note sulla versione della funzione per la versio
 
 ## Data di pubblicazione {#release-date}
 
-Data di rilascio di [!DNL Adobe Experience Manager] come [!DNL Cloud Service] la versione corrente (2022.8.0) è il 1° settembre 2022.
+La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2022.8.0) è il 1° settembre 2022.
 La prossima versione (2022.10.0) è prevista per il 10 novembre 2022.
 
 ## Video sulla versione {#release-video}
 
-Guarda il video Panoramica sulla versione di agosto 2022 per un riepilogo delle funzioni aggiunte nella versione 2022.8.0:
+Dai un’occhiata al video Panoramica sulla versione di agosto 2022 per un riepilogo delle funzioni aggiunte alla versione 2022.8.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/346608/?quality=12)
 
@@ -36,16 +36,16 @@ Guarda il video Panoramica sulla versione di agosto 2022 per un riepilogo delle 
 
 ### Nuove funzioni in [!DNL Sites] {#sites-features}
 
-* Il componente E-mail consente di creare contenuti in AEM che vengono quindi inviati come e-mail tramite Campaign Classic. Il componente e-mail di base:
+* Il componente E-mail consente di creare in AEM contenuti da consegnare poi come messaggi e-mail tramite Campaign Classic. Il Componente E-mail principale:
    * è basato su [Componente WCM core](https://github.com/adobe/aem-core-wcm-components) che supporta i modelli modificabili e il sistema di stili.
-   * fornisce 10 componenti pronti per la produzione ottimizzati per e-mail (Pagina, Contenitore, Titolo, Testo, Immagine, Pulsante, Teaser, Frammento esperienza, Frammento di contenuto, Segmentazione).
-   * offre personalizzazione e segmentazione avanzate, grazie alla funzione [Inserimento di variabili di Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) nella maggior parte dei campi di dialogo e nella flessibilità [Componente Segmentation](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * fornisce un output HTML di facile utilizzo e-mail ottimale, grazie alla [Inliner stili CSS](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), [Inliner attributi di HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)e [Sanitari HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
-   * consente la creazione delle e-mail ovunque.
+   * fornisce 10 componenti pronti per la produzione e ottimizzati per e-mail (Pagina, Contenitore, Titolo, Testo, Immagine, Pulsante, Teaser, Frammento di esperienza, Frammento di contenuto, Segmentazione).
+   * offre funzioni avanzate di personalizzazione e segmentazione, grazie alla [inserimento di variabili di Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) nella maggior parte dei campi della finestra di dialogo e al [Componente segmentazione](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+   * fornisce un output HTML ottimale e compatibile con le e-mail, grazie alla [Stili CSS in linea](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), il [Inline attributo HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)e [bonificante HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * consente di creare le e-mail ovunque.
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Sites] {#prerelease-features-sites}
 
-* La [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) fornisce agli utenti un’opzione per visualizzare il numero totale di copie della lingua associate a un frammento di contenuto. Inoltre, è possibile accedere con 1 solo clic per visualizzare tutte le copie delle varie lingue. Gli utenti possono anche filtrare la visualizzazione a tabella in base alla lingua che desiderano.
+* Il [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) offre agli utenti un’opzione per visualizzare il numero totale di copie per lingua associate a un frammento di contenuto. Inoltre, è possibile accedere con 1 solo clic per visualizzare tutte le copie delle varie lingue. Gli utenti possono anche filtrare la visualizzazione a tabella in base alla lingua che desiderano.
 
 ![Lingue dei frammenti di contenuto](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -73,8 +73,8 @@ Guarda il video Panoramica sulla versione di agosto 2022 per un riepilogo delle 
 
 ### Novità {#what-is-new-cif}
 
-* Associazione di pagine AEM a prodotti e categorie tramite le proprietà di pagina AEM più panoramica in cockpit prodotto
-   ![associazione pagina cockpit prodotto](/help/assets/CIF/product_cockpit_page_association.png)
+* Associazione di pagine AEM a prodotti e categorie tramite le proprietà della pagina AEM e panoramica nella cabina di comando del prodotto
+   ![associazione pagina pannello di comando del prodotto](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 

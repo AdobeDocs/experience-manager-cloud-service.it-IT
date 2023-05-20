@@ -338,7 +338,7 @@ Puoi utilizzare il servizio di preriempimento personalizzato per gli scenari in 
 
 Il servizio di precompilazione è un servizio OSGi ed è fornito tramite bundle OSGi. Puoi creare il bundle OSGi, caricarlo e installarlo in [!DNL AEM Forms] bundle. Prima di iniziare a creare il bundle:
 
-- [Scarica il file [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
+- [Scarica il file [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 - Scarica il pacchetto boilerplate
 
 - Inserisci il file di dati (dati di precompilazione) nel crx-repository. È possibile inserire il file in qualsiasi posizione nella cartella \content del repository crx.

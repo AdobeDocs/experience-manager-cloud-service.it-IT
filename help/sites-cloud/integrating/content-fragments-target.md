@@ -5,7 +5,7 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
 source-wordcount: '2229'
-ht-degree: 65%
+ht-degree: 99%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 65%
 
 >[!CAUTION]
 >
->* I frammenti di contenuto AEM vengono esportati nell’area di lavoro predefinita di Adobe Target.
+>* I frammenti di contenuto di AEM vengono esportati nell’area di lavoro predefinita di Adobe Target.
 >* AEM deve essere integrato con Adobe Target secondo le istruzioni contenute in [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 
-Puoi esportare [Frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md), creato in Adobe Experience Manager as a Cloud Service (AEM), in Adobe Target (Target). Puoi quindi utilizzarli come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
+Puoi esportare i [frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md) creati in Adobe Experience Manager as a Cloud Service (AEM) in Adobe Target (Target). Puoi quindi utilizzarli come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
 
 È disponibile l’opzione per esportare un frammento di contenuto in Adobe Target:
 
@@ -25,7 +25,7 @@ Puoi esportare [Frammenti di contenuto](/help/sites-cloud/authoring/fundamentals
 
 <!-- * GraphQL query ??? -->
 
-Per preparare la tua istanza all’esportazione di frammenti di contenuto AEM in Adobe Target, devi:
+Per preparare l’istanza per l’esportazione di frammenti di contenuto AEM in Adobe Target, è necessario:
 
 * [Procedi all’integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Aggiungere la configurazione cloud](#add-the-cloud-configuration)
@@ -37,7 +37,7 @@ Dopo di che puoi:
 * [Utilizzare i frammenti di contenuto in Adobe Target](#using-your-content-fragments-in-adobe-target)
 * E anche [Eliminare un frammento di contenuto già esportato in Adobe Target](#deleting-a-content-fragment-already-exported-to-adobe-target)
 
-I frammenti di contenuto possono essere esportati nell’area di lavoro predefinita in Adobe Target o in aree di lavoro definite dall’utente per Adobe Target.
+I frammenti di contenuto possono essere esportati nell’area di lavoro predefinita o in aree di lavoro definite dall’utente in Adobe Target.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ I frammenti di contenuto possono essere esportati nell’area di lavoro predefin
 
 È necessaria l’azione seguente:
 
-1. Devi [integrare AEM con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+1. È necessario [integrare AEM con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 <!-- link rewriter - targets in content-fragments-customizing don't exist yet
 
@@ -68,17 +68,17 @@ Prima di esportare un frammento è necessario aggiungere la **Configurazione clo
 
 * specificare le opzioni di formato da utilizzare per l’esportazione
 * selezionare un’area di lavoro di Target come destinazione
-* seleziona un dominio esternalizzatore per riscrivere i riferimenti nel frammento di contenuto (facoltativo)
+* seleziona un dominio di Externalizer per riscrivere i riferimenti nel frammento di contenuto (facoltativo)
 
 Le opzioni richieste possono essere selezionate in **Proprietà pagina** della cartella e/o del frammento richiesti; la specifica viene ereditata in base alle necessità.
 
-1. Passa a **Risorse** console.
+1. Passa alla console **Assets**.
 
 1. Apri **Proprietà pagina** per la cartella o il frammento appropriato.
 
    >[!NOTE]
    >
-   >Se aggiungi la configurazione cloud alla cartella principale Frammento di contenuto, questa viene ereditata da tutti gli elementi secondari.
+   >Se aggiungi la configurazione cloud alla cartella principale del frammento di contenuto, questa viene ereditata da tutti gli elementi secondari.
    >
    >Se aggiungi la configurazione cloud al frammento di contenuto stesso, questa viene ereditata da tutte le varianti.
 
@@ -90,9 +90,9 @@ Le opzioni richieste possono essere selezionate in **Proprietà pagina** della c
 
    >[!NOTE]
    >
-   >È possibile personalizzare il formato JSON di un’offerta Frammento di contenuto. A questo scopo, definisci un componente Frammento di contenuto del cliente e poi annota come esportare le sue proprietà nel modello Sling del componente.
+   >È possibile personalizzare il formato JSON di un’offerta in un frammento di contenuto. A questo scopo, definisci un componente di frammento di contenuto del cliente e poi annota come esportarne le proprietà nel modello Sling del componente.
    >
-   >Consulta il componente core : [Componenti core - Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+   >Consulta il componente core: [Componenti core - Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it)
 
 1. Sotto **Adobe Target** seleziona:
 
@@ -107,7 +107,7 @@ Le opzioni richieste possono essere selezionate in **Proprietà pagina** della c
    >
    > Un esternalizzatore AEM è configurato quando desideri che il contenuto esportato punti a uno specifico dominio di *pubblicazione*. Per ulteriori dettagli vedi [Configurazione di AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer).
    >
-   > Inoltre, i domini esternalizzatori sono rilevanti solo per il contenuto del frammento di contenuto inviato a Target, e non per i metadati come Visualizza contenuto offerta.
+   > Inoltre, i domini di Externalizer sono rilevanti solo per il contenuto del frammento di contenuto inviato a Target, e non per i metadati come Visualizza contenuto offerta.
 
    Ad esempio, per una cartella:
 
@@ -123,7 +123,7 @@ Le opzioni richieste possono essere selezionate in **Proprietà pagina** della c
 
 >[!IMPORTANT]
 >
->L’aggiunta di una nuova configurazione legacy è uno scenario speciale supportato solo per l’esportazione di frammenti di contenuto.
+>L’aggiunta di una nuova configurazione legacy è lo scenario di un caso speciale supportato solo per l’esportazione di frammenti di contenuto.
 
 Dopo l’[aggiunta della configurazione cloud](#add-the-cloud-configuration) per utilizzare Experience Platform Launch, per l’integrare iniziale di AEM con Adobe Target, è inoltre necessario eseguire l’integrazione manuale con Adobe Target utilizzando una configurazione precedente.
 
@@ -315,14 +315,14 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >Per le risorse multimediali, come le immagini, viene esportato solo un riferimento in Target. La risorsa stessa rimane memorizzata in AEM Assets e viene distribuita dall’istanza di pubblicazione AEM.
 >
->Per questo motivo è necessario pubblicare il frammento di contenuto e tutte le relative risorse prima di esportare in Target.
+>Per questo motivo è necessario pubblicare il frammento di contenuto con tutte le relative risorse prima di esportarlo in Target.
 
-Per esportare un frammento di contenuto da AEM a Target (dopo aver specificato la configurazione cloud):
+Per esportare un frammento di contenuto da AEM in Target (dopo aver specificato la configurazione cloud):
 
-1. Passa al frammento di contenuto nel **Risorse** console.
-1. Seleziona il frammento di contenuto da esportare nella destinazione.
+1. Passa al frammento di contenuto nella console **Assets**.
+1. Seleziona il frammento di contenuto che desideri esportare in Target.
 
-1. Tocca o fai clic su **Esportazione in offerte Adobe Target**.
+1. Tocca o fai clic su **Esporta nelle offerte Adobe Target**.
 
    ![Esporta in Adobe Target](assets/cfm-export-target-01.png)
 
@@ -336,29 +336,29 @@ Per esportare un frammento di contenuto da AEM a Target (dopo aver specificato l
    
    -->
 
-1. Tocca o fai clic su **Esporta senza pubblicare** o **Pubblica** se necessario.
+1. Tocca o fai clic su **Esporta senza pubblicare** o **Pubblica** in base alle esigenze.
 
    >[!NOTE]
    >
-   >Le azioni effettive visualizzate dipendono dallo stato del frammento e delle risorse correlate.
+   >Le azioni effettive visualizzate dipenderanno dallo stato del frammento e delle risorse correlate.
    >
-   >Se tutto è già stato pubblicato e da allora non è stato modificato nulla, questo passaggio verrà trasmesso.
+   >Se tutto è già stato pubblicato e da allora non è stato modificato nulla, questo passaggio verrà ignorato.
 
    >[!NOTE]
    >
-   >Selezione **Pubblica** pubblicherà immediatamente il frammento di contenuto e lo invierà a Target.
+   >Selezionando **Pubblica**, il frammento di contenuto verrà pubblicato immediatamente e verrà inviato a Target.
 
 1. Nella finestra di conferma tocca o fai clic su **OK**.
 
-   Il frammento di contenuto deve ora essere in Target.
+   Il frammento di contenuto ora dovrebbe trovarsi in Target.
 
    >[!NOTE]
    >
-   >[Vari dettagli](/help/sites-cloud/authoring/fundamentals/content-fragments.md#details-of-your-content-fragment) dell&#39;esportazione sono visibili in **Vista a elenco** della console e **Proprietà**.
+   >[Vari dettagli](/help/sites-cloud/authoring/fundamentals/content-fragments.md#details-of-your-content-fragment) dell’esportazione possono essere visualizzati nella **Vista a elenco** della console e nelle **Proprietà**.
 
    >[!NOTE]
    >
-   >Quando visualizzi un frammento di contenuto in Adobe Target, la funzione *ultima modifica* La data visualizzata è la data dell’ultima modifica apportata al frammento in AEM, non la data dell’ultima esportazione del frammento in Adobe Target.
+   >Quando visualizzi un frammento di contenuto in Adobe Target, la data dell’*ultima modifica* visualizzata corrisponde alla data dell’ultima modifica apportata al frammento in AEM, non alla data dell’ultima esportazione del frammento in Adobe Target.
 
 >[!NOTE]
 >
@@ -366,34 +366,34 @@ Per esportare un frammento di contenuto da AEM a Target (dopo aver specificato l
 
 ## Utilizzo dei frammenti di contenuto in Adobe Target {#using-your-content-fragments-in-adobe-target}
 
-Dopo aver eseguito le attività precedenti, il frammento di contenuto viene visualizzato nella pagina Offerte di Target. Dai un&#39;occhiata alla [documentazione specifica di Target](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) per scoprire cosa puoi ottenere.
+Dopo aver eseguito le attività precedenti, il frammento di contenuto viene visualizzato nella pagina Offerte di Target. Dai un&#39;occhiata alla [documentazione specifica di Target](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=it) per scoprire cosa puoi ottenere.
 
 >[!NOTE]
 >
->Quando visualizzi un frammento di contenuto in Adobe Target, la funzione *ultima modifica* La data visualizzata è la data dell’ultima modifica apportata al frammento in AEM, non la data dell’ultima esportazione del frammento in Adobe Target.
+>Quando visualizzi un frammento di contenuto in Adobe Target, la data dell’*ultima modifica* visualizzata corrisponde alla data dell’ultima modifica del frammento in AEM, non alla data dell’ultima esportazione del frammento in Adobe Target.
 
 ## Eliminazione di un frammento di contenuto già esportato in Adobe Target {#deleting-a-content-fragment-already-exported-to-adobe-target}
 
-Come per l’esportazione, anche l’eliminazione di un frammento di contenuto da Adobe Target può essere selezionata dalla barra degli strumenti superiore di **Risorse** una volta selezionato il frammento:
+Come nel caso dell’esportazione, anche l’eliminazione di un frammento di contenuto da Adobe Target può essere selezionata dalla barra degli strumenti superiore della console **Assets** una volta selezionato il frammento:
 
 ![Elimina in Adobe Target](assets/cfm-export-target-02.png)
 
-L’eliminazione di un frammento di contenuto già esportato in Target potrebbe causare problemi se il frammento è già utilizzato in un’offerta in Target. L’eliminazione del frammento renderebbe l’offerta inutilizzabile mentre il contenuto del frammento è distribuito da AEM.
+L’eliminazione di un frammento di contenuto già esportato in Target potrebbe causare problemi se il frammento è già utilizzato in un’offerta di Target. L’eliminazione del frammento renderebbe l’offerta inutilizzabile mentre il contenuto del frammento è distribuito da AEM.
 
 <!-- if the information about deleting-if-used correct, or is it not allowed at all? -->
 
 Per evitare tali situazioni:
 
-* Se il frammento di contenuto non è attualmente utilizzato in un’attività, AEM consente all’utente di eliminare il frammento senza un messaggio di avviso.
+* Se il frammento di contenuto non è attualmente utilizzato in un’attività, AEM consente all’utente di eliminarlo senza alcun messaggio di avviso.
 * Se il frammento di contenuto è attualmente utilizzato da un’attività in Target, un messaggio di errore avvisa l’utente AEM delle possibili conseguenze che l’eliminazione del frammento avrà sull’attività.
 
-   Il messaggio di errore in AEM non impedisce all’utente di (forzare-)eliminare il frammento di contenuto. Se il frammento di contenuto viene eliminato:
+   Il messaggio di errore in AEM non impedisce all’utente di eliminare (anche forzatamente) il frammento di contenuto. Se il frammento di contenuto viene eliminato:
 
-   * L’offerta Target con frammento di contenuto AEM può mostrare un comportamento indesiderato
+   * L’offerta Target con il frammento di contenuto di AEM potrebbe mostrare un comportamento indesiderato
 
-      * È probabile che l’offerta venga comunque riprodotta in seguito al push del frammento di contenuto a Target
-      * Eventuali riferimenti nel frammento di contenuto potrebbero non funzionare correttamente se le risorse di riferimento sono state eliminate anche in AEM.
-   * Naturalmente, qualsiasi ulteriore modifica al frammento di contenuto è impossibile in quanto il frammento di contenuto non esiste più in AEM.
+      * L’offerta continuerà ad essere renderizzata, poiché il frammento di contenuto è stato inviato a Target
+      * Eventuali riferimenti nel frammento di contenuto potrebbero non funzionare correttamente se le risorse a cui si fa riferimento sono state eliminate anche in AEM.
+   * Naturalmente, non è possibile apportare eventuali ulteriori modifiche al frammento di contenuto in quanto questo non esiste più in AEM.
 
 
 ## Ulteriori risorse {#further-resources}
@@ -404,10 +404,10 @@ Per ulteriori informazioni, consulta:
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [Componenti core - Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [Componenti core - Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it)
 
 * [Sviluppo Adobe Target](https://developers.adobetarget.com/)
 
-* [Adobe Target - Utilizzo di frammenti di contenuto AEM nelle attività di Target per facilitare l’ottimizzazione o la personalizzazione](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
+* [Adobe Target - Utilizzo di frammenti di contenuto di AEM nelle attività di Target per facilitare l’ottimizzazione o la personalizzazione](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=it)
 
-* [Adobe Target - Panoramica AEM frammenti esperienza e frammenti di contenuto](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
+* [Adobe Target - Panoramica dei frammenti di esperienza e dei frammenti di contenuto di AEM](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=it)

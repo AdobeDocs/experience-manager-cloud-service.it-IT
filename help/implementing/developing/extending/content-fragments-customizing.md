@@ -148,7 +148,7 @@ I frammenti di contenuto possono essere integrati con:
    >* Come risiedono i modelli per frammenti di contenuto `/conf`, questi non sono inclusi in tali traduzioni. Puoi internazionalizzare le stringhe dell’interfaccia utente.
 
 
-* **Schemi metadati**
+* **Schemi di metadati**
 
    * I frammenti di contenuto (ri)utilizzano [schemi di metadati](/help/assets/metadata-schemas.md), che può essere definito con le risorse standard.
 
@@ -299,7 +299,7 @@ A questo scopo, puoi adattare la risorsa che rappresenta l’API a:
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-Esempio:
+Ad esempio:
 
 ```java
 // first, get the resource
@@ -316,7 +316,7 @@ if (fragmentResource != null) {
 Per creare un nuovo frammento di contenuto a livello di programmazione, è necessario utilizzare una
 `FragmentTemplate` adattato da una risorsa modello.
 
-Esempio:
+Ad esempio:
 
 ```java
 Resource modelRsc = resourceResolver.getResource("...");

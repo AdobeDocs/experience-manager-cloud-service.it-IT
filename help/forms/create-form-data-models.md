@@ -115,7 +115,7 @@ Creare file di configurazione di fabbrica OSGi con PID
       1. Sull’istanza di sviluppo locale `/system/console/configMgr`, seleziona factory OSGi configuration (Configurazione OSGi in fabbrica) con il nome **[!UICONTROL Provider di sostituzione configurazione in base al contesto Apache Sling: configurazione OSGi]**.
       1. Fornisci una descrizione.
       1. Seleziona **[!UICONTROL abilitato]**.
-      1. In sostituzioni, fornisci i campi che devono essere modificati in base all’ambiente nella sintassi di sostituzione Sling. Per ulteriori informazioni, consulta [Configurazione in base al contesto di Apache Sling - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Esempio, `cloudconfigs/fdm/{configName}/url="newURL"`.
+      1. In sostituzioni, fornisci i campi che devono essere modificati in base all’ambiente nella sintassi di sostituzione Sling. Per ulteriori informazioni, consulta [Configurazione in base al contesto di Apache Sling - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Ad esempio, `cloudconfigs/fdm/{configName}/url="newURL"`.
 È possibile aggiungere più sostituzioni selezionando **[!UICONTROL +]**.
       1. Seleziona **[!UICONTROL Salva]**.
       1. Per ottenere il JSON di configurazione OSGi, segui i passaggi descritti in [Generazione di configurazioni OSGi tramite QuickStart per SDK AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).

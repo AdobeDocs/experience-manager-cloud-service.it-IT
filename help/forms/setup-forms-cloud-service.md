@@ -64,7 +64,7 @@ Puoi utilizzare Forms as a Cloud Service per creare un modulo adattivo (iscrizio
 
 ## Configurare gli utenti {#config-users}
 
-Dopo aver completato l’onboarding nel servizio, accedi al tuo [!DNL AEM Forms] ambiente as a Cloud Service, apri le istanze Author e Publish e aggiungi gli utenti alle istanze specifiche di Forms [Gruppi AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing), in base al loro tipo di utente. Nella tabella seguente sono elencati i gruppi AEM specifici di Forms, disponibili con le opzioni pronte all’uso, e i tipi di utente corrispondenti. La tabella fornisce anche il tipo di istanza AEM per ciascun tipo di utente:
+Dopo aver completato l’onboarding nel servizio, accedi al tuo [!DNL AEM Forms] ambiente as a Cloud Service, apri le istanze Author e Publish e aggiungi gli utenti alle istanze specifiche di Forms [Gruppi AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing), in base al loro tipo di utente. Nella tabella seguente sono elencati i gruppi AEM specifici di Forms, disponibili con le opzioni predefinite, e i tipi di utente corrispondenti. La tabella fornisce anche il tipo di istanza AEM per ciascun tipo di utente:
 
 | Tipi di utenti (utenti tipo) | Gruppi di utenti | Istanza AEM |
 |---|---|---|

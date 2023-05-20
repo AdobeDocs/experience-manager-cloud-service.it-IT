@@ -205,7 +205,7 @@ Il super tipo di risorsa di una risorsa può essere definito in due modi:
 * da `sling:resourceSuperType` della risorsa.
 * da `sling:resourceSuperType` proprietà del nodo a cui è associato `sling:resourceType` punti.
 
-Esempio:
+Ad esempio:
 
 * `/`
    * `a`
@@ -272,7 +272,7 @@ Questa architettura consente di estendere Sling con moduli specifici per le appl
 
 Questo consente di eseguire le azioni seguenti su uno qualsiasi dei pacchetti all’interno dell’installazione:
 
-* Installare la versione
+* Installa
 * Avvia
 * Arresta
 * Aggiornare

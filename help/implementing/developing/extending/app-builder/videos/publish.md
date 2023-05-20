@@ -1,5 +1,5 @@
 ---
-title: Pubblicazione delle applicazioni di App Builder
+title: Pubblicazione delle applicazioni App Builder
 description: Scopri come pubblicare ed eseguire un’applicazione App Builder.
 version: Cloud Service
 feature: App Builder
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Pubblicazione delle applicazioni di App Builder
+# Pubblicazione delle applicazioni App Builder
 
-Scopri come inviare l’applicazione App Builder per la revisione e l’approvazione e come eseguire un’applicazione appena pubblicata.
+Scopri come inviare l’applicazione App Builder per la revisione e l’approvazione e come eseguire un’applicazione pubblicata di recente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)

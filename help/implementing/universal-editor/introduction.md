@@ -1,13 +1,13 @@
 ---
 title: Introduzione all’Editor visivo universale
 description: Scopri in che modo l’Editor visivo universale (meglio conosciuto come Editor universale) consente la modifica WYSIWYG (What you see is what you get) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
-workflow-type: ht
+exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 100%
 
 ---
-
 
 # Introduzione all’Editor visivo universale {#introduction}
 
@@ -88,8 +88,8 @@ Rivolgiti al tuo contatto Adobe per maggiori informazioni sulle prossime funzion
 Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
 * [Authoring del contenuto con l’Editor universale](authoring.md) - Scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’Editor universale.
-* [Pubblicazione di contenuti con l’editor universale](publishing.md): scopri in che modo l’editor visivo universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
-* [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a preparare la tua prima app AEM per utilizzarla.
+* [Pubblicazione di contenuto con l’editor universale](publishing.md): scopri in che modo l’editor visivo universale pubblica il contenuto e come le app possono gestire il contenuto pubblicato.
+* [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.
 * [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 * [Attributi e tipi](attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.
-* [Autenticazione dell’editor universale](authentication.md): scopri come l’editor universale si autentica.
+* [Autenticazione dell’editor universale](authentication.md): scopri come l’editor universale effettua l’autenticazione.

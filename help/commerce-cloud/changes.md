@@ -5,7 +5,7 @@ exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
 source-git-commit: 6c9a44940ea9e52bd27a233c7aa24e320a24076c
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -43,7 +43,7 @@ Progetto disponibile in [Archivio Git di Cloud Manager](https://experienceleague
 **Versioni CIF precedenti**
 
 * CIF Classic: tramite l’installazione del pacchetto AEM
-* CIF Open-source: Via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* CIF Open-source: Via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it)
 
 ## Dati catalogo prodotti
 

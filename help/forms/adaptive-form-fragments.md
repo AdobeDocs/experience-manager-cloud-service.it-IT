@@ -22,7 +22,7 @@ Anche se ogni modulo è progettato per uno scopo specifico, nella maggior parte 
 
 L’Adaptive Forms fornisce un comodo meccanismo per creare segmenti di modulo una sola volta, ad esempio un pannello o un gruppo di campi, e riutilizzarli in Adaptive Forms. Questi segmenti riutilizzabili e autonomi sono denominati Frammenti di modulo adattivi.
 
-## Creazione di un frammento {#create-a-fragment}
+## Creare un frammento {#create-a-fragment}
 
 Puoi creare un frammento di modulo adattivo da zero o salvare un pannello in un modulo adattivo esistente come frammento.
 

@@ -78,7 +78,7 @@ Ciò può essere utile, ad esempio, quando la logica di business richiede la reg
    >Gli altri metodi, tra cui [progetto dispatcher-ttl AEM ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), non eseguirà correttamente l&#39;override dei valori.
 
    >[!NOTE]
-   >Tieni presente che Dispatcher potrebbe comunque memorizzare in cache il contenuto in base al proprio [regole di caching](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Per rendere il contenuto veramente privato, assicurati che non venga memorizzato in cache da Dispatcher.
+   >Tieni presente che Dispatcher potrebbe comunque memorizzare in cache il contenuto in base al proprio [regole di caching](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=it). Per rendere il contenuto veramente privato, assicurati che non venga memorizzato in cache da Dispatcher.
 
 ### Librerie lato client (js,css) {#client-side-libraries}
 

@@ -8,7 +8,7 @@ exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -39,7 +39,7 @@ Potete applicare un predefinito immagine a un&#39;immagine in qualsiasi momento.
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
 
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * Per visualizzare in anteprima il predefinito immagine, seleziona una rappresentazione dinamica.
    * Per visualizzare la finestra popup, selezionare **[!UICONTROL URL]**, **[!UICONTROL Incorpora]**, o **[!UICONTROL RESS]**.

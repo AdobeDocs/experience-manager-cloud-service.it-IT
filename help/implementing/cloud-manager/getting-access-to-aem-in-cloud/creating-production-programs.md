@@ -26,11 +26,11 @@ Per creare un programma di produzione, segui la procedura riportata di seguito.
 
    ![Pagina di destinazione di Cloud Manager](assets/log-in.png)
 
-1. Seleziona **Configurazione per la produzione** nella procedura guidata Crea programma per creare un programma di produzione e specificare un nome di programma.
+1. Seleziona **Configurazione per la produzione** nella procedura guidata Crea programma per creare un programma di produzione e fornire un nome per il programma.
 
    ![Procedura guidata per la creazione di un programma](assets/create-production-program.png)
 
-1. Facoltativamente, puoi aggiungere un&#39;immagine al programma trascinando e rilasciando un file di immagine nel **Aggiungi un&#39;immagine del programma** eseguire il targeting o fare clic su di esso per selezionare un&#39;immagine da un browser di file. Tocca o fai clic su **Continua**.
+1. In alternativa, è possibile aggiungere un’immagine al programma trascinando e rilasciando un file di immagine sul **Aggiungi un&#39;immagine del programma** per selezionare un&#39;immagine da un browser di file. Tocca o fai clic su **Continua**.
 
 1. Se disponi di diritti per la sicurezza migliorati, la scheda **Protezione avanzata** fornisce l’opzione per **Abilitare la protezione avanzata** per il programma di produzione. Se necessario, seleziona l’opzione per abilitare la protezione avanzata e tocca o fai clic su **Continua**.
 
@@ -41,7 +41,7 @@ Per creare un programma di produzione, segui la procedura riportata di seguito.
 
 1. Dalla scheda **Soluzioni e componenti aggiuntivi**, seleziona le soluzioni da includere nel programma.
 
-   * Se non sei sicuro di aver bisogno di uno o più programmi per le varie soluzioni disponibili, seleziona quella che ti interessa di più. Puoi attivare soluzioni aggiuntive tramite [modifica del programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) più tardi. Consulta la sezione [Documentazione sui programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) per ulteriori raccomandazioni sulla configurazione del programma.
+   * Se non si è sicuri di aver bisogno di uno o più programmi per le varie soluzioni disponibili, selezionare quello che più ti interessa. Per attivare altre soluzioni: [modifica del programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) più tardi. Consulta la [Introduzione al documento Programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) per ulteriori raccomandazioni sulla configurazione del programma.
    * Se hai selezionato **Abilita protezione avanzata** in precedenza, potrai selezionare solo il numero di soluzioni per le quali sono disponibili adesioni HIPAA.
 
    ![Selezione delle soluzioni](assets/setup-prod-select.png)

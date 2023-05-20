@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: b351582a405f5c419f3aa386faddccd6ecef3a43
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 100%
 
@@ -241,8 +241,8 @@ Puoi visualizzare e modificare le proprietà di un frammento utilizzando la sche
 ## Pubblicazione e riferimento a un frammento {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
->Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
+Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
 
 I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione.
 
@@ -260,17 +260,17 @@ I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambien
 Inoltre, quando [pubblichi una pagina che utilizza il frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), il frammento verrà elencato nei riferimenti di pagina.
 
 >[!CAUTION]
->Dopo la pubblicazione e/o il riferimento a un frammento, AEM mostra un avviso quando un autore riapre il frammento per la modifica. L’avviso informa l’utente che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
+Dopo la pubblicazione e/o il riferimento a un frammento, AEM mostra un avviso quando un autore riapre il frammento per la modifica. L’avviso informa l’utente che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
 
 ## Annullamento della pubblicazione di un frammento {#unpublishing-a-fragment}
 
 Per annullare la pubblicazione dei frammenti di contenuto, seleziona uno o più frammenti, quindi **Annulla pubblicazione**.
 
 >[!NOTE]
->L’azione **Annulla pubblicazione** sarà visibile quando sono disponibili i frammenti pubblicati.
+L’azione **Annulla pubblicazione** sarà visibile quando sono disponibili i frammenti pubblicati.
 
 >[!CAUTION]
->Se il frammento è già oggetto di riferimento da un altro frammento o da una pagina, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera continuare.
+Se il frammento è già oggetto di riferimento da un altro frammento o da una pagina, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera continuare.
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
@@ -280,13 +280,13 @@ Per eliminare un frammento:
 2. Seleziona il frammento.
 
    >[!NOTE]
-   >L’azione **Elimina** non è disponibile come azione rapida.
+   L’azione **Elimina** non è disponibile come azione rapida.
 
 3. Seleziona **Elimina** dalla barra degli strumenti.
 4. Conferma l’azione **Elimina**.
 
    >[!CAUTION]
-   >Se il frammento è già oggetto di riferimento da un altro frammento o da una pagina, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con il comando **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.
+   Se il frammento è già oggetto di riferimento da un altro frammento o da una pagina, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con il comando **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.
 
 ## Individuare i riferimenti principali di un frammento {#parent-references-fragment}
 
@@ -299,7 +299,7 @@ I dettagli delle copie per lingua sono accessibili dalla colonna **Lingua** dell
 ## Timeline per i frammenti di contenuto {#timeline-for-content-fragments}
 
 >[!NOTE]
->Questa funzionalità è disponibile solo nella console **Assets**
+Questa funzionalità è disponibile solo nella console **Assets**
 
 Oltre alle opzioni standard, [Timeline](/help/assets/manage-digital-assets.md#timeline) fornisce sia informazioni che azioni specifiche relative ai frammenti di contenuto:
 
@@ -319,13 +319,14 @@ Oltre alle opzioni standard, [Timeline](/help/assets/manage-digital-assets.md#ti
    * **Eliminare**
 
 >[!NOTE]
->I commenti sono:
->* Funzionalità standard per tutte le risorse
->* Effettuati nella timeline
->* Correlati alla risorsa frammento
->Le annotazioni (per i frammenti di contenuto) sono:
->* Inserite nell’editor frammenti
->* Specifiche per un segmento di testo selezionato all’interno del frammento
+I commenti sono:
+* Funzionalità standard per tutte le risorse
+* Effettuati nella timeline
+* Correlati alla risorsa frammento
+>
+Le annotazioni (per i frammenti di contenuto) sono:
+* Inserite nell’editor frammenti
+* Specifiche per un segmento di testo selezionato all’interno del frammento
 >
 
 
@@ -336,7 +337,7 @@ Esempio:
 ## Confronto delle versioni dei frammenti {#comparing-fragment-versions}
 
 >[!NOTE]
->Questa funzionalità è disponibile solo nella console **Risorse**
+Questa funzionalità è disponibile solo nella console **Risorse**
 
 L’azione **Confronta con corrente** è disponibile nella [Timeline](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) dopo aver selezionato una versione specifica.
 
@@ -359,14 +360,14 @@ Le versioni vengono visualizzate affiancate e:
 * **Fine** riporta alla console
 
 >[!NOTE]
->Non è possibile modificare il contenuto del frammento nella modalità di confronto.
+Non è possibile modificare il contenuto del frammento nella modalità di confronto.
 
 ![confronto](assets/cfm-managing-06.png)
 
 ## Ripristino di una versione  {#reverting-to-a-version}
 
 >[!NOTE]
->Questa funzionalità è disponibile solo nella console **Risorse**
+Questa funzionalità è disponibile solo nella console **Risorse**
 
 È possibile ripristinare una versione specifica del frammento:
 

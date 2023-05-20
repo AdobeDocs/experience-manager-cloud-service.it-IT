@@ -64,12 +64,12 @@ Per ulteriori informazioni su come aggiornare un ambiente, consulta il documento
 
 ### Sospensione ed eliminazione {#hibernation}
 
-Gli ambienti in un programma sandbox vengono automaticamente sospesi dopo otto ore di inattività. Gli ambienti sandbox vengono eliminati dopo sei mesi continui di ibernazione.
+Gli ambienti in un programma sandbox vengono automaticamente sospesi dopo otto ore di inattività. Gli ambienti sandbox vengono eliminati dopo sei mesi continui di sospensione.
 
-Fai riferimento a [Ambienti Sandbox sospensione e disattivazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) per ulteriori informazioni su come disattivare gli ambienti e eliminare automaticamente le sandbox.
+Fare riferimento a [Sospensione e riattivazione degli ambienti sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) per ulteriori dettagli su come riattivare gli ambienti e l’eliminazione automatica delle sandbox.
 
 ### Nessun supporto tecnico {#no-support}
 
-Poiché in genere viene creato un programma sandbox per scopi di formazione, demo in esecuzione, abilitazione o prova di concetti (POC), il supporto tecnico non è disponibile per problemi riscontrati in un programma sandbox.
+Poiché un programma sandbox viene generalmente creato a scopi di formazione, esecuzione di demo, abilitazione o proof of concepts (POC), il supporto tecnico non è disponibile per i problemi riscontrati in un programma sandbox.
 
-In caso di problemi durante la creazione e la gestione dei programmi sandbox, l’ambito del supporto tecnico rimane invariato.
+In caso di problemi durante la creazione e la gestione dei programmi sandbox, l’assistenza tecnica è ancora disponibile.

@@ -7,7 +7,7 @@ exl-id: 19021f40-d0a5-4e0c-a213-c421338cedeb
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '1638'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 ## Panoramica {#overview}
 
 La copia di un numero elevato di BLOB con lo strumento Content Transfer (CTT) può richiedere diversi giorni.
-Per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti e spostare i contenuti in AEM as a Cloud Service, la tecnologia CTT può sfruttare [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) come passaggio pre-copia facoltativo. Questo passaggio di pre-copia può essere utilizzato quando l’istanza AEM di origine è configurata per utilizzare un archivio dati di Amazon S3, Azure Blob Storage o File Data Store. Una volta configurato questo passaggio preliminare, nella fase di estrazione, AzCopy copia i BLOB dall’archivio dati di Amazon S3, Azure Blob Storage o File nell’archivio BLOB del set di migrazione. Nella fase di acquisizione, AzCopy copia i BLOB dall’archivio BLOB del set di migrazione all’archivio BLOB di destinazione as a Cloud Service per AEM.
+Per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti e spostare i contenuti in AEM as a Cloud Service, la tecnologia CTT può sfruttare [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) come passaggio pre-copia facoltativo. Questo passaggio di pre-copia può essere utilizzato quando l’istanza AEM di origine è configurata per utilizzare un archivio dati di Amazon S3, Azure Blob Storage o File Data Store. Una volta configurato questo passaggio preliminare, nella fase di estrazione, AzCopy copia i BLOB dall’archivio dati di Amazon S3, Azure Blob Storage o File nell’archivio BLOB del set di migrazione. Nella fase di acquisizione AzCopy copia i BLOB dall’archivio BLOB del set di migrazione all’archivio BLOB di AEM as a Cloud Service di destinazione.
 
 >[!NOTE]
 > Questa funzionalità è stata introdotta con la versione CTT 1.5.4.
@@ -64,13 +64,13 @@ Segui questa sezione per scoprire come configurare l’utilizzo di AzCopy come p
 
 #### Archivio dati archiviazione BLOB di Azure {#azure-blob-storage}
 
-Dalla pagina delle proprietà del contenitore nel portale di Azure, utilizza **Calcola dimensione** per determinare le dimensioni di tutto il contenuto nel contenitore. Esempio:
+Dalla pagina delle proprietà del contenitore nel portale di Azure, utilizza **Calcola dimensione** per determinare le dimensioni di tutto il contenuto nel contenitore. Ad esempio:
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Archivio dati Amazon S3 {#amazon-data}
 
-Puoi utilizzare la scheda Metriche del contenitore per determinare le dimensioni di tutto il contenuto al suo interno. Esempio:
+Puoi utilizzare la scheda Metriche del contenitore per determinare le dimensioni di tutto il contenuto al suo interno. Ad esempio:
 
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)

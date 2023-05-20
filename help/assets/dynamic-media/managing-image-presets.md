@@ -99,8 +99,8 @@ Argomenti per rasterizzare il flusso di lavoro di PDF o AI
 | Argomento processo | Impostazione predefinita | Descrizione |
 |---|---|---|
 | Tipi mime | application/pdf<br>application/postscript<br>application/illustrator | Elenco di tipi MIME di documenti considerati documenti PDF o Illustrator. |
-| Larghezza max. | 2048 | Larghezza massima in pixel del rendering di anteprima generato. |
-| Altezza max. | 2048 | Altezza massima in pixel del rendering di anteprima generato. |
+| Larghezza massima | 2048 | Larghezza massima in pixel del rendering di anteprima generato. |
+| Altezza massima | 2048 | Altezza massima in pixel del rendering di anteprima generato. |
 | Risoluzione | 72 | Risoluzione per la rasterizzazione della prima pagina, in pixel per pollice. |
 
 Utilizzando gli argomenti predefiniti, la prima pagina di un documento PDF/AI viene rasterizzata a 72 ppi e l&#39;immagine di anteprima generata viene ridimensionata a 2048 x 2048 pixel. Per una distribuzione tipica, è possibile aumentare la risoluzione a un minimo di 150 ppi o più. Ad esempio, un documento con dimensioni lettera USA di 300 ppi richiede rispettivamente una larghezza e un&#39;altezza massime di 2550 x 3300 pixel.

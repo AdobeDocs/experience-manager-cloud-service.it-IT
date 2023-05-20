@@ -139,7 +139,7 @@ Per creare una Live Copy:
 
    >[!NOTE]
    >
-   >È possibile che venga visualizzata una finestra di dialogo di errore con il messaggio &quot;Impossibile inviare il modulo&quot;. Ciò si verifica a causa di un timeout della rete. Tuttavia, il processo di creazione della Live Copy è in esecuzione in background. Attendi alcuni minuti e controlla che le pagine della Live Copy siano state create correttamente.
+   >Potrebbe essere visualizzata una finestra di dialogo di errore con il messaggio &quot;Impossibile inviare il modulo&quot;. Ciò si verifica a causa di un timeout della rete. Tuttavia, il processo per creare la Live Copy viene eseguito in background. Attendi alcuni minuti e controlla che le pagine della Live Copy siano state create correttamente.
 
 ### Creazione di una Live Copy di un sito da una configurazione Blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 

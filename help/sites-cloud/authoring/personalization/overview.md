@@ -5,7 +5,7 @@ exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
 workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -117,8 +117,8 @@ AEM fornisce il motore di targeting integrato [ContextHub](/help/implementing/de
 
 Il motore di targeting di [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) permette di tenere traccia delle informazioni raccolte dalle visite della pagina in Adobe Target.
 
-* Con questo motore di destinazione, si utilizzano i segmenti importati da Adobe Target per definire il pubblico delle esperienze.
-* Le attività che sfruttano Adobe Target vengono [sincronizzate con Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* Quando utilizzi questo motore di targeting, puoi utilizzare i segmenti importati da Adobe Target per definire i tipi di pubblico per le esperienze.
+* Le attività che utilizzano il motore di Adobe Target sono [sincronizzato con Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 Puoi usare questo motore di targeting dopo averlo [integrato con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 

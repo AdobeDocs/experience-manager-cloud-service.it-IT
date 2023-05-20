@@ -127,11 +127,11 @@ Per utilizzare un’API batch, crea una configurazione batch ed esegui un’esec
 
 Per creare un batch, utilizza `POST /config` API. Includi le seguenti proprietà obbligatorie nel corpo della richiesta HTTP:
 
-* **configName**: specifica un nome univoco per il batch. Esempio, `wknd-job`
+* **configName**: specifica un nome univoco per il batch. Ad esempio `wknd-job`
 * **dataSourceConfigUri**: specifica il percorso della configurazione dell’archivio dati batch. Può essere un percorso relativo o assoluto della configurazione. Esempio: `/conf/global/settings/forms/usc/batch/wknd-batch`
 * **outputTypes**: specifica i formati di output: PDF e PRINT. Se si utilizza il tipo di output PRINT, in `printedOutputOptionsList` , specificare almeno un&#39;opzione di stampa. Le opzioni di stampa sono identificate dal relativo tipo di rendering, pertanto al momento non sono consentite più opzioni di stampa con lo stesso tipo di rendering. I formati supportati sono PS, PCL, DPL, IPL e ZPL.
 
-* **modello**: specifica il percorso assoluto o relativo del modello. Esempio, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
+* **modello**: specifica il percorso assoluto o relativo del modello. Ad esempio `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
 Se specifichi un percorso relativo, specifica anche una directory principale del contenuto. Consulta la documentazione API per informazioni dettagliate sulla directory principale dei contenuti.
 

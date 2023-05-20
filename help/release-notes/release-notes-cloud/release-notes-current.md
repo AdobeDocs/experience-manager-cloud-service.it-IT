@@ -50,7 +50,7 @@ Dai un’occhiata al video Panoramica sulla versione di febbraio 2023 per un rie
    * DASH è il protocollo standard internazionale per lo streaming video adattivo ed è ampiamente adottato nel settore
    * Disponibile in NA, si abilita tramite ticket di supporto, disponibile a breve nella regione APAC (Asia-Pacifico) e nella regione EMEA (Europa, Medio Oriente, Africa)
 
-* È stato aggiunto il supporto per le immagini WebP per estrarre automaticamente i metadati, generare miniature e rappresentazioni personalizzate. Per questi file è ora supportata anche la funzionalità Tag avanzati.
+* È stato aggiunto il supporto per le immagini WebP per estrarre automaticamente i metadati, generare miniature e rappresentazioni personalizzate. Per questi file è ora supportata anche la funzionalità di tag avanzati.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

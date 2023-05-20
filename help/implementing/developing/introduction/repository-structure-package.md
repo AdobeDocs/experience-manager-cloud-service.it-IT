@@ -157,12 +157,12 @@ In `ui.apps/pom.xml`, e qualsiasi altro pacchetto di codice `pom.xml`Quindi, agg
 
 Un caso d’uso meno comune e più complesso supporta la distribuzione di più pacchetti di codice che vengono installati nelle stesse aree dell’archivio JCR.
 
-Esempio:
+Ad esempio:
 
 + Il pacchetto di codice A viene distribuito in `/apps/a`
 + Il pacchetto di codice B viene distribuito in `/apps/a/b`
 
-Se non viene stabilita una dipendenza a livello di pacchetto dal pacchetto di codice B nel pacchetto di codice A, il pacchetto di codice B può essere distribuito prima in `/apps/a`, seguito dal pacchetto di codice B, che distribuisce in `/apps/a`, che comporta la rimozione dei `/apps/a/b`.
+Se non viene stabilita una dipendenza a livello di pacchetto dal pacchetto di codice B nel pacchetto di codice A, il pacchetto di codice B può essere distribuito prima in `/apps/a`, seguito dal pacchetto di codice B, che distribuisce in `/apps/a`, con conseguente rimozione dei `/apps/a/b`.
 
 In questo caso:
 

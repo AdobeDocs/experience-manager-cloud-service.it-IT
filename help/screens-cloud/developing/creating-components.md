@@ -19,7 +19,7 @@ Il canale è l&#39;oggetto principale dei contenuti inviati a un insieme di disp
 
 Tuttavia, poiché i componenti di un canale vengono in genere visualizzati a schermo intero, l’esperienza di authoring ne risentirà quando si tenta di modificare singoli componenti o di comporre nuovi ordini. Pertanto, il canale si basa sui selettori per eseguire il rendering di diverse viste dei componenti. L’ambiente di authoring sfrutta il selettore di modifica per attivare il rendering del canale personalizzato.
 
-Esempio, `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
+Ad esempio `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
 L’utente non deve preoccuparsi di aggiungere il selettore all’URL durante la modifica. Una logica lato client è in ascolto dell’evento di switch di livello e aggiunge il selettore se un canale ha il tipo di risorsa dedicato *screens/core/components/channel.*
 

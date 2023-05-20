@@ -388,7 +388,7 @@ Dopo aver salvato il video interattivo, questo viene aperto immediatamente in An
         </tr>
         <tr>
         <td>Per rimuovere una miniatura dal segmento della timeline selezionato</td>
-        <td><p>Effettua una delle operazioni seguenti:</p>
+        <td><p>Effettua una delle seguenti operazioni:</p>
           <ul>
           <li>Nel pannello del selettore delle risorse, seleziona un’immagine con un segno di spunta per deselezionarla. La risorsa immagine viene rimossa dal segmento della timeline.<br /> </li>
           <li>Nel segmento della timeline selezionato, seleziona un’immagine, quindi nella barra degli strumenti seleziona <strong>Elimina prodotto</strong>.</li>
@@ -402,7 +402,7 @@ Dopo aver salvato il video interattivo, questo viene aperto immediatamente in An
    Selezionando un’immagine nel pannello di selezione delle risorse, questa viene aggiunta al segmento della timeline selezionato.
 
 1. Seleziona una singola miniatura all’interno di uno dei segmenti della timeline, quindi fai clic su **[!UICONTROL Azioni]** scheda.
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
    <table> 
     <tbody> 
       <tr> 

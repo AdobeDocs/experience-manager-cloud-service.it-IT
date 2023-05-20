@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
 workflow-type: tm+mt
 source-wordcount: '4769'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -195,7 +195,7 @@ Il servizio GraphQL di Sites ascolta (in background) le modifiche apportate a un
 
 Ad esempio, se:
 
-1. installi un pacchetto contenente `Content-Fragment-Model-1` e `Content-Fragment-Model-2`:
+1. Installi un pacchetto contenente `Content-Fragment-Model-1` e `Content-Fragment-Model-2`:
 
    1. vengono generati dei tipi GraphQL per `Model-1` e `Model-2`.
 
@@ -203,7 +203,7 @@ Ad esempio, se:
 
    1. verrà aggiornato solo il tipo GraphQL `Model-2`.
 
-   1. Mentre `Model-1` rimarrà lo stesso.
+   1. mentre `Model-1` rimarrà lo stesso.
 
 >[!NOTE]
 >
@@ -249,7 +249,7 @@ GraphQL per AEM supporta un elenco di tipi. Vengono rappresentati tutti i tipi d
 | Enumerazione | `String` | Utilizzato per visualizzare un’opzione da un elenco di opzioni definito durante la creazione del modello |
 | Tag | `[String]` | Utilizzato per visualizzare un elenco di stringhe che rappresentano tag utilizzati in AEM |
 | Riferimento contenuto | `String`, `[String]` | Utilizzato per visualizzare il percorso per un’altra risorsa in AEM |
-| Riferimento frammento |  *Un tipo di modello* <br><br>Campo singolo: `Model` - Tipo di modello, a cui si fa riferimento direttamente <br><br>Multifield, con un tipo di riferimento: `[Model]` - Array di tipo `Model`, a cui si fa riferimento direttamente dall&#39;array <br><br>Multicampo, con più tipi di riferimento: `[AllFragmentModels]` - Array di tutti i tipi di modello, a cui si fa riferimento da array con tipo di unione |  Utilizzato per fare riferimento a uno o più frammenti di contenuto di alcuni tipi di modelli, definiti al momento della creazione del modello |
+| Riferimento frammento |  *Un tipo di modello* <br><br>Campo singolo: `Model` - Tipo di modello, con riferimento diretto <br><br>Multifield, con un tipo di riferimento: `[Model]` - Array di tipo `Model`, a cui si fa riferimento direttamente dall’array <br><br>Multifield, con più tipi di riferimento: `[AllFragmentModels]` - Array di tutti i tipi di modello, con riferimento da array con tipo di unione |  Utilizzato per fare riferimento a uno o più frammenti di contenuto di determinati tipi di modello, definiti al momento della creazione del modello |
 
 {style="table-layout:auto"}
 
@@ -700,64 +700,64 @@ query {
 
 >[!NOTE]
 >
->* Per impostazione predefinita, il paging utilizza l’UUID del nodo dell’archivio che rappresenta il frammento per l’ordinamento in modo che l’ordine dei risultati sia sempre lo stesso. Quando viene utilizzato `sort`, l’UUID viene utilizzato implicitamente per garantire un ordinamento univoco; anche per due elementi con chiavi di ordinamento identiche.
+>* Per impostazione predefinita, il paging utilizza l’UUID del nodo dell’archivio che rappresenta il frammento per l’ordinamento, in modo da garantire che l’ordine dei risultati sia sempre lo stesso. Quando viene utilizzato `sort`, l’UUID viene utilizzato implicitamente per garantire un ordinamento univoco; anche per due elementi con chiavi di ordinamento identiche.
 >
 >* A causa di vincoli tecnici interni, le prestazioni peggioreranno se l’ordinamento e il filtro vengono applicati ai campi nidificati. Si consiglia pertanto di utilizzare i campi di filtro/ordinamento memorizzati a livello di radice. Questo è anche il modo consigliato per eseguire query su set di risultati impaginati di grandi dimensioni.
 
 
 ## Distribuzione di immagini ottimizzate per il web nelle query GraphQL {#web-optimized-image-delivery-in-graphql-queries}
 
-La distribuzione di immagini ottimizzata per il web consente di utilizzare una query Graphql per:
+La distribuzione di immagini ottimizzate per il web consente di utilizzare una query GraphQL per:
 
-* Richiedere un URL a un’immagine AEM della risorsa
+* Richiedere un URL per un’immagine risorsa di AEM
 
-* Passa i parametri con la query in modo che venga generato e restituito automaticamente un rendering specifico dell’immagine
+* Passa i parametri con la query in modo che venga generata e restituita automaticamente una rappresentazione specifica dell’immagine
 
    >[!NOTE]
    >
-   >Il rendering specificato non viene memorizzato in AEM Assets. Il rendering viene generato e tenuto in cache per un breve periodo.
+   >La rappresentazione specificata non viene memorizzata in AEM Assets. La rappresentazione viene generata e mantenuta nella cache per un breve periodo.
 
-* Restituisce l’URL come parte della consegna JSON
+* Restituisce l’URL come parte della distribuzione JSON
 
 Puoi utilizzare AEM per:
 
-* Pass [Distribuzione delle immagini ottimizzata per il web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=it) nelle query GraphQL.
+* Passare la [Distribuzione delle immagini ottimizzate per il web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=it) nelle query GraphQL.
 
-Ciò significa che i comandi vengono applicati durante l’esecuzione della query, allo stesso modo dei parametri URL sulle richieste di GET per quelle immagini.
+Ciò significa che i comandi vengono applicati durante l’esecuzione della query, allo stesso modo dei parametri URL sulle richieste GET per quelle immagini.
 
 Questo consente di creare in modo dinamico rappresentazioni di immagini per la distribuzione JSON, evitando di dover creare e archiviare manualmente tali rappresentazioni nell’archivio.
 
 La soluzione GraphQL consente di:
 
-* use `_dynamicUrl` sulla `ImageRef` riferimento
+* utilizzare `_dynamicUrl` sul riferimento `ImageRef`
 
-* add `_assetTransform` all’intestazione dell’elenco in cui sono definiti i filtri
+* aggiungere `_assetTransform` all’intestazione dell’elenco in cui sono definiti i filtri
 
 ### Struttura della richiesta di trasformazione {#structure-transformation-request}
 
-`AssetTransform` (`_assetTransform`) viene utilizzata per effettuare le richieste di trasformazione URL.
+`AssetTransform` (`_assetTransform`) viene utilizzato per effettuare le richieste di trasformazione URL.
 
 La struttura e la sintassi sono:
 
-* `format`: enumerazione con tutti i formati supportati dalla relativa estensione: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL o WEBPLL
+* `format`: un&#39;enumerazione con tutti i formati supportati dalla relativa estensione: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL o WEBPLY
 * `seoName`: una stringa che verrà utilizzata come nome file invece del nome nodo
-* `crop`: una sottostruttura della cornice, se larghezza o altezza viene omessa, l&#39;altezza o la larghezza vengono utilizzate come lo stesso valore
-   * `xOrigin`: l&#39;origine x del telaio ed è obbligatoria
-   * `yOrigin`: l&#39;origine y del telaio ed è obbligatoria
-   * `width`: la larghezza del telaio
-   * `height`: l&#39;altezza del telaio
-* `size`: una sottostruttura della dimensione, se larghezza o altezza viene omessa, l’altezza o la larghezza vengono utilizzate come lo stesso valore
-   * `width`: larghezza della dimensione
-   * `height`: altezza della dimensione
-* `rotation`: enumerazione di tutte le rotazioni supportate: R90, R180, R270
-* `flip`: enumerazione di ORIZZONTALE, VERTICALE, ORIZZONTALE_AND_VERTICAL
-* `quality`: un numero intero compreso tra 1 e 100 che rileva la percentuale di qualità dell&#39;immagine
-* `width`: un numero intero che definisce la larghezza dell&#39;immagine di output ma che verrà ignorato dal generatore di immagini
-* `preferWebp`: booleano che indica se webp è preferito (il valore predefinito è false)
+* `crop`: una sottostruttura del frame, se la larghezza o l’altezza sono omesse, vengono utilizzate come lo stesso valore
+   * `xOrigin`: l&#39;origine x del frame ed è obbligatoria
+   * `yOrigin`: l&#39;origine y del frame ed è obbligatoria
+   * `width`: la larghezza del frame
+   * `height`: l’altezza del frame
+* `size`: una sottostruttura della dimensione, se la larghezza o l’altezza sono omesse, vengono utilizzate come lo stesso valore
+   * `width`: la larghezza della dimensione
+   * `height`: l’altezza della dimensione
+* `rotation`: un’enumerazione di tutte le rotazioni supportate: R90, R180, R270
+* `flip`: un’enumerazione di HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
+* `quality`: un numero intero compreso tra 1 e 100 che rileva la percentuale di qualità dell’immagine
+* `width`: un numero intero che definisce la larghezza dell’immagine di output ma che verrà ignorato dal generatore di immagini
+* `preferWebp`: un valore booleano che indica se webp è preferito (il valore predefinito è false)
 
-La trasformazione URL è disponibile per tutti i tipi di query: per percorso, elenco o impaginato.
+La trasformazione URL è disponibile per tutti i tipi di query: per percorso, elenco o impaginata.
 
-### Distribuzione di immagini ottimizzata per il web con parametri completi {#web-optimized-image-delivery-full-parameters}
+### Distribuzione di immagini ottimizzate per il web con parametri completi {#web-optimized-image-delivery-full-parameters}
 
 Di seguito è riportato un esempio di query con un set completo di parametri:
 
@@ -796,7 +796,7 @@ Di seguito è riportato un esempio di query con un set completo di parametri:
 }
 ```
 
-### Distribuzione di immagini ottimizzata per il web con una singola variabile di query {#web-optimized-image-delivery-single-query-variable}
+### Distribuzione di immagini ottimizzate per il web con una singola variabile di query {#web-optimized-image-delivery-single-query-variable}
 
 L’esempio seguente mostra l’utilizzo di una singola variabile di query:
 
@@ -874,9 +874,9 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 }
 ```
 
-### Richiesta di consegna immagini ottimizzata per il web tramite URL {#web-optimized-image-delivery-request-url}
+### Richiesta di distribuzione immagini ottimizzate per il web tramite URL {#web-optimized-image-delivery-request-url}
 
-Se salvi la query come query persistente (ad esempio, con il nome `dynamic-url-x`) è quindi possibile [eseguire direttamente la query persistente](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+Se salvi la query come query persistente (ad esempio, con il nome `dynamic-url-x`) è possibile [eseguire direttamente la query persistente](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
 
 Ad esempio, per eseguire direttamente gli esempi precedenti (salvati come query persistenti), utilizza i seguenti URL:
 
@@ -886,7 +886,7 @@ Ad esempio, per eseguire direttamente gli esempi precedenti (salvati come query 
 
       La risposta sarà simile a:
 
-      ![Consegna delle immagini tramite parametri](assets/cfm-graphiql-sample-image-delivery.png "Consegna delle immagini tramite parametri")
+      ![Distribuzione delle immagini tramite parametri](assets/cfm-graphiql-sample-image-delivery.png "Distribuzione delle immagini tramite parametri")
 
 * [Parametri multipli](#dynamic-image-delivery-multiple-specified-parameters); Query persistente con nome `dynamic`
 
@@ -894,7 +894,7 @@ Ad esempio, per eseguire direttamente gli esempi precedenti (salvati come query 
 
       >[!CAUTION]
       >
-      >Il trailing `;`è obbligatorio per terminare in modo pulito l’elenco dei parametri.
+      >Il finale `;`è obbligatorio per terminare in modo pulito l’elenco dei parametri.
 
 ### Limitazioni della distribuzione delle immagini {#image-delivery-limitations}
 
@@ -902,10 +902,10 @@ Esistono le seguenti limitazioni:
 
 * Modificatori applicati a tutte le immagini parte della query (parametri globali)
 
-* Intestazioni di memorizzazione nella cache
+* Intestazioni di memorizzazione in cache
 
-   * Nessuna memorizzazione in cache sull&#39;autore
-   * Memorizzazione in cache al momento della pubblicazione - età massima di 10 minuti (non può essere modificata dal client)
+   * Nessuna memorizzazione in cache sull&#39;authoring
+   * Memorizzazione in cache al momento della pubblicazione - tempo massimo di 10 minuti (non può essere modificato dal client)
 
 ## GraphQL per AEM: riepilogo delle estensioni {#graphql-extensions}
 
@@ -961,10 +961,10 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
          >
          >Se per un frammento di contenuto non esiste la variante determinata, la variante principale verrà restituita come impostazione predefinita (fallback).
 
-         * Vedi [Query di esempio: tutte le città con una variante denominata](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+         * Consulta [Query di esempio: tutte le città con una variante denominata](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
    * Per [distribuzione delle immagini](#image-delivery):
 
-      * `_dynamicUrl`: sulla `ImageRef` riferimento
+      * `_dynamicUrl`: sul riferimento `ImageRef`
 
       * `_assetTransform`: nell’intestazione dell’elenco in cui sono definiti i filtri
 

@@ -223,7 +223,7 @@ Da utilizzare [!DNL Adobe Launch] configurazione in un modulo adattivo esistente
 1. Seleziona il modulo adattivo e tocca **[!UICONTROL Proprietà]**.
 1. In **[!UICONTROL Base]** , seleziona la scheda [Contenitore configurazione](#create-adobe-launch-configuration) utilizzato durante la creazione della configurazione di Adobe Launch.
 1. Tocca **[!UICONTROL Salva e chiudi]**. Il modulo adattivo è abilitato per [!DNL Adobe Analytics].
-1. Pubblicare il modulo.
+1. Pubblica il modulo.
 
 Dopo aver abilitato [!DNL Adobe Analytics] per un modulo adattivo è possibile: [convalida](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) se esiste un flusso di eventi di dati appropriato tra AEM Forms e [!DNL Adobe Analytics]. L’integrazione di AEM Forms con Adobe Analytics è completa. Ora puoi [configurare e visualizzare i rapporti in Adobe Analytics](#view-reports-adobe-analytics).
 

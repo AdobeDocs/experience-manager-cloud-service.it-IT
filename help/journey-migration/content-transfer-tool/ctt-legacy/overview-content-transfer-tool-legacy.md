@@ -7,7 +7,7 @@ exl-id: dd031580-e9d7-461e-8689-9bc3dbb2121b
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 68%
+ht-degree: 70%
 
 ---
 
@@ -23,7 +23,7 @@ Il trasferimento dei contenuti prevede due fasi:
 
 1. **Estrazione**: per estrazione si intende l’estrazione dei contenuti dall’istanza AEM di origine in un’area temporanea denominata *set di migrazione*. Un *set di migrazione* è un’area di archiviazione cloud fornita da Adobe in cui vengono archiviati temporaneamente i contenuti trasferiti tra l’istanza AEM di origine e l’istanza AEM di Cloud Service.
 
-   Per ulteriori informazioni, consulta [Processo di estrazione nel trasferimento dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html).
+   Per ulteriori informazioni, consulta [Processo di estrazione nel trasferimento dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=it).
 
    >[!NOTE]
    >Eseguite lo strumento di mappatura utente durante la fase di estrazione. Vedi [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en) per ulteriori dettagli.

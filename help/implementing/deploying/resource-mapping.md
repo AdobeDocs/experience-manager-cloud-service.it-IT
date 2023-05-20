@@ -66,7 +66,7 @@ Ad esempio:
 
 attiverà:
 
-**Sostituzione** `/libs/cq/core/content/welcome.html`.
+**Sostituto** `/libs/cq/core/content/welcome.html`.
 
 per reindirizzare una richiesta:
 

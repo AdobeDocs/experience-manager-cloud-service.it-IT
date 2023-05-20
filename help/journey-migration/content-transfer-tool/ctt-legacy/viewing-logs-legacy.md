@@ -7,13 +7,13 @@ exl-id: 01c8afd3-c594-4a41-b905-8c3a2d74db6f
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '181'
-ht-degree: 64%
+ht-degree: 74%
 
 ---
 
 # Visualizzazione dei registri di un set di migrazione (legacy) {#view-logs-content-transfer-tool}
 
-Al completamento di ogni passaggio (estrazione e acquisizione), controlla i registri e cerca gli errori.  Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’assistenza di Adobi.
+Al completamento di ogni passaggio (estrazione e acquisizione), controlla i registri e cerca gli errori.  Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando il supporto Adobe.
 
 ## Passaggi per visualizzare i registri {#viewing-logs}
 

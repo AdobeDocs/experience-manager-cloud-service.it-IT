@@ -21,7 +21,7 @@ La funzione di authoring dell’SPA offre una soluzione completa per il supporto
 
 ## Introduzione {#introduction}
 
-Questo articolo riassume il funzionamento di base di un SPA semplice e il minimo che è necessario sapere per rendere il vostro funzionamento.
+Questo articolo riassume il funzionamento di base di un semplice SPA e il minimo che è necessario sapere per rendere il vostro funzionamento.
 
 Per maggiori dettagli sul funzionamento dell’SPA nell’AEM, consulta i seguenti documenti:
 

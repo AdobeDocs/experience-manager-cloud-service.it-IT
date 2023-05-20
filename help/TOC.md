@@ -386,7 +386,7 @@ ht-degree: 99%
    + [Panoramica dei microservizi per le risorse](/help/assets/asset-microservices-overview.md)
    + [Accessibilità in [!DNL Assets]](/help/assets/accessibility.md)
    + Consente di gestire i contenuti digitali {#manage}
-      + [Selettore risorsa microfrontale](/help/assets/asset-selector.md)
+      + [Selettore risorse micro-front-end](/help/assets/asset-selector.md)
       + [Condividere le risorse](/help/assets/share-assets.md)
       + [Monitorare attività e attività DAM](/help/assets/assets-activity-history.md)
       + [Introduzione all’utilizzo dei microservizi per le risorse](/help/assets/asset-microservices-configure-and-use.md)
@@ -548,7 +548,7 @@ ht-degree: 99%
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
             + [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-core-components.md)
-            + [Creare un Forms adattivo - Componenti core in una pagina AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Creare un Forms adattivo: componenti core in una pagina AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Cartella di lavoro Summit](/help/forms/summit-2023-workbook.md)
       + Authoring di moduli adattivi: componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
@@ -792,8 +792,8 @@ ht-degree: 99%
          + [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Test funzionale {#functional-testing}
-            + [Panoramica del test funzionale](/help/implementing/cloud-manager/functional-testing.md)
-            + [Test funzionale Java](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [Panoramica sui test funzionali](/help/implementing/cloud-manager/functional-testing.md)
+            + [Test funzionali Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Test dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md)
          + [Test dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md)
@@ -940,7 +940,7 @@ ht-degree: 99%
    + Livello di authoring {#author-tier}
       + [Accesso al livello di authoring](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Protezione del livello di authoring](/help/implementing/author-tier/securing-the-author-tier.md)
-   + Livello anteprima {#preview-tier}
+   + Anteprima livello {#preview-tier}
       + [Configurazione delle impostazioni OSGi per il livello di anteprima](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Panoramica della distribuzione dei contenuti {#content-delivery}
       + [Flusso di distribuzione dei contenuti](/help/implementing/dispatcher/overview.md)

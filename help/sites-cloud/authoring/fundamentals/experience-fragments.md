@@ -18,14 +18,14 @@ In Adobe Experience Manager as a Cloud Service, un frammento esperienza:
 * può essere aggiunto come riferimento nelle pagine;
 * può contenere qualsiasi componente.
 
-Un Frammento Esperienza:
+Un frammento esperienza:
 
 * Fa parte di un’esperienza (pagina).
 * Può essere utilizzato su più pagine.
-* Si basa su un modello (solo modificabile) per definire struttura e componenti.
+* È basato su un modello (solo modificabile) per definire la struttura e i componenti.
 * Questo modello viene utilizzato per creare la *pagina root* del frammento di esperienza.
-* È costituito da uno o più componenti, con layout, in un sistema paragrafo.
-* Può contenere altri frammenti di esperienza.
+* è costituito da uno o più componenti, con layout, in un sistema paragrafo.
+* Può contenere altri frammenti esperienza.
 * Può essere combinato con altri componenti (inclusi altri frammenti esperienza) per formare una pagina completa (esperienza).
 * Puoi creare una o più varianti in base alla pagina root.
 * Queste varianti possono condividere contenuti e/o componenti.
@@ -184,7 +184,7 @@ Per creare un frammento esperienza:
 
 1. Inserisci le **proprietà** per il **frammento esperienza**.
 
-   A **Titolo** è obbligatorio. Se la **Nome** viene lasciato vuoto e viene derivato da **Titolo**.
+   A **Titolo** è obbligatorio. Se il **Nome** viene lasciato vuoto, verrà derivato dal valore **Titolo**.
 
    ![Proprietà dei frammenti esperienza](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -207,9 +207,9 @@ L’editor dei frammenti esperienza offre funzionalità simili al normale editor
 
 >[!NOTE]
 >
->Vedi [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md) per ulteriori informazioni su come utilizzare l’editor di pagine.
+>Consulta [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md) per ulteriori informazioni su come utilizzare l’editor pagina.
 
-L’esempio seguente illustra come creare un teaser per un prodotto:
+La procedura di esempio seguente illustra come creare un teaser per un prodotto:
 
 1. Trascina il componente richiesto dal [browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
@@ -225,7 +225,7 @@ Esempio: `http://<host>:<port>/editor.html/content/experience-fragments/wknd/lan
 
 ## Creazione di una variante del frammento esperienza {#creating-an-experience-fragment-variation}
 
-Puoi creare varianti del frammento esperienza, a seconda delle tue esigenze:
+Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 
 1. Apri il frammento per [modifica](#editing-your-experience-fragment).
 1. Apri la scheda **Varianti**.
@@ -254,9 +254,9 @@ Puoi creare varianti del frammento esperienza, a seconda delle tue esigenze:
 
 ## Utilizzo del frammento esperienza {#using-your-experience-fragment}
 
-È ora possibile utilizzare il Frammento esperienza durante la creazione delle pagine:
+Ora puoi utilizzare il frammento di esperienza durante l’authoring delle pagine:
 
-1. Apri una pagina qualsiasi per la modifica.
+1. Apri qualsiasi pagina per la modifica.
 
 1. Crea un’istanza del componente Frammento esperienza, all’interno del sistema di paragrafi della pagina:
 
@@ -281,7 +281,7 @@ Puoi selezionare uno o più componenti per creare un blocco predefinito da riuti
 
 Per creare un nuovo blocco predefinito:
 
-1. Nell’editor Frammento esperienza, seleziona i componenti che desideri riutilizzare:
+1. Nell’editor frammento di esperienza, seleziona i componenti da riutilizzare:
 
    ![Selezione del componente per il blocco predefinito](/help/sites-cloud/authoring/assets/xf-09.png)
 
@@ -299,7 +299,7 @@ Per creare un nuovo blocco predefinito:
 
 #### Gestione di un blocco predefinito {#managing-a-building-block}
 
-Il blocco predefinito è visibile nel **Blocchi predefiniti** scheda . Per ogni blocco sono disponibili le seguenti azioni:
+Il blocco predefinito è visibile in **Blocchi predefiniti** scheda. Per ciascun blocco sono disponibili le seguenti azioni:
 
 * **Vai a master**: apri la variante della pagina root in una nuova scheda
 * **Rinomina**
@@ -403,7 +403,7 @@ I dettagli vengono visualizzati in tutte le viste della console **Frammenti espe
       * **Numero totale di varianti** - solo informativo
       * **Numero di varianti web** - solo informativo
       * **Numero di varianti non web** - solo informativo
-      * **Numero di pagine che utilizzano il frammento** - solo informativo
+      * **Numero di pagine che utilizzano questo frammento** - solo informativo
    * **Servizi cloud**
       * **Configurazione cloud**
       * **Configurazioni Cloud Service**
@@ -431,7 +431,7 @@ In alternativa è possibile [pubblicare in anteprima](/help/sites-cloud/authorin
 
 ## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
 
-Per impostazione predefinita, i frammenti esperienza vengono consegnati nel formato HTML. Può essere utilizzato sia da canali AEM che di terze parti.
+Per impostazione predefinita, i frammenti di esperienza vengono consegnati in formato HTML. Può essere utilizzato sia dall’AEM che da canali di terze parti.
 
 Per l’esportazione in Adobe Target, è possibile utilizzare anche JSON. Consulta:
 

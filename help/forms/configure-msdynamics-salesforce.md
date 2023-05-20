@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Configurazione [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud {#configure-azure-storage}
 
-[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud per integrare moduli adattivi con modelli di dati per moduli pronti all’uso. Il Forms adattivo può quindi interagire con [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] per abilitare i flussi di lavoro aziendali. Esempio:
+[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud per integrare moduli adattivi con modelli di dati per moduli pronti all’uso. Il Forms adattivo può quindi interagire con [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] per abilitare i flussi di lavoro aziendali. Ad esempio:
 
 * Scrivi dati in [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] all’invio di un modulo adattivo.
 * Scrivi dati in [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] tramite entità personalizzate definite nel modello dati modulo e viceversa.
@@ -79,7 +79,7 @@ Per configurare il [!DNL Microsoft Dynamics 365] servizio cloud:
 1. On [!DNL AEM Forms] istanza di authoring, passa a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Origini dati]**. L&#39;elenco delle cartelle wrapper disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 1. Tocca il nome della cartella, seleziona **[!UICONTROL Configurazione cloud Microsoft Dynamics 365]**, e tocca **[!UICONTROL Proprietà]**.
 1. In **[!UICONTROL Impostazioni di autenticazione]** scheda:
-   1. Immetti il valore per **[!UICONTROL Directory principale servizio]** campo. Vai all’istanza Dynamics e passa a [Risorse per sviluppatori](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) per visualizzare il valore del campo Service Root. Esempio, `https://<tenant-name>.dynamics.com/api/data/v9.1/`
+   1. Immetti il valore per **[!UICONTROL Directory principale servizio]** campo. Vai all’istanza Dynamics e passa a [Risorse per sviluppatori](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) per visualizzare il valore del campo Service Root. Ad esempio `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. Specificare l&#39;ID client (definito ID applicazione) e il segreto client per l&#39;applicazione connessa.
    1. Sostituisci `{tenant}` con un ID tenant in **[!UICONTROL URL OAuth]**, **[!UICONTROL Aggiorna URL token]**, e **[!UICONTROL URL token di accesso]** campi.
    1. Specifica l’URL dell’istanza di Dynamics nel **[!UICONTROL Risorsa]** campo da configurare [!UICONTROL Microsoft Dynamics] con un modello dati modulo. Utilizza l’URL principale del servizio per derivare l’URL dell’istanza di Dynamics. Esempio: `https://<tenant-name>.dynamics.com`.

@@ -100,7 +100,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Nella barra degli strumenti, seleziona **[!UICONTROL Modifica]**. Una nuova scheda del browser apre la pagina del modello di flusso di lavoro Scene7: Rielabora risorse.
 1. Nella pagina del flusso di lavoro Scene7: Rielabora risorse, nell’angolo superiore destro, seleziona **[!UICONTROL Modifica]** per sbloccare il flusso di lavoro.
-1. Nel flusso di lavoro, seleziona il componente Caricamento batch Scene7 per aprire la barra degli strumenti, quindi fai clic su **[!UICONTROL Configura]** nella barra degli strumenti.
+1. Nel flusso di lavoro, seleziona il componente Caricamento batch Scene7 per aprire la barra degli strumenti, quindi seleziona **[!UICONTROL Configura]** nella barra degli strumenti.
 
    ![Schermata del componente &quot;Caricamento batch Scene7&quot; nella pagina &quot;Scene7: Rielabora risorse&quot;, con il puntatore del mouse che passa sull&#39;icona &quot;Configura&quot;.](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 

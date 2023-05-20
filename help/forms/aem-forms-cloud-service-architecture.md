@@ -5,7 +5,7 @@ exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -58,11 +58,11 @@ La replica inversa non è disponibile su AEM as a Cloud Service per inviare cont
 
 #### Dispatcher
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) è lo strumento di caching e/o bilanciamento del carico di Adobe Experience Manager che può essere utilizzato con un server web di classe enterprise.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=it) è lo strumento di caching e/o bilanciamento del carico di Adobe Experience Manager che può essere utilizzato con un server web di classe enterprise.
 
 ### Servizi Adobe
 
-**Servizio automated forms conversion**
+**Servizio di conversione automatica dei moduli**
 
 [servizio automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it) converte automaticamente i moduli PDF e XFA in moduli adattivi basati su HTML5, reattivi e facili da usare sui dispositivi.
 
@@ -91,7 +91,7 @@ I servizi di documentazione sono i seguenti:
 
 ### Cloud Manager
 
-Cloud Manager è un componente essenziale per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). È il punto di ingresso singolo per le operazioni e gli sviluppatori dei nostri clienti. È il luogo da cui possono essere gestiti i programmi e gli ambienti dell’AEM. Cloud Manager si è evoluto come portale self-service in cui è possibile creare e configurare i componenti principali dell’as a Cloud Service AEM:
+Cloud Manager è un componente essenziale per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=it). È il punto di ingresso singolo per le operazioni e gli sviluppatori dei nostri clienti. È il luogo da cui possono essere gestiti i programmi e gli ambienti dell’AEM. Cloud Manager si è evoluto come portale self-service in cui è possibile creare e configurare i componenti principali dell’as a Cloud Service AEM:
 
 * Creazione e gestione di programmi
 * Creazione e gestione degli ambienti AEM all’interno dei programmi

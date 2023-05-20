@@ -11,7 +11,7 @@ ht-degree: 94%
 
 # Utilizzo di frammenti di contenuto {#working-with-content-fragments}
 
-Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Consentono di preparare i contenuti pronti per l’uso in più posizioni/su più canali, ideale per la distribuzione headless.
+Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless.
 
 I frammenti di contenuto contengono contenuto strutturato:
 
@@ -34,7 +34,7 @@ I frammenti di contenuto possono essere consegnati anche in formato JSON, utiliz
 
 >[!NOTE]
 >
->I frammenti di contenuto sono memorizzati come **Risorse**. Ora sono gestite principalmente con il **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** , anche se possono ancora essere gestiti dalla **Risorse** console. Questa sezione riguarda la gestione da **Risorse** console.
+>I frammenti di contenuto sono memorizzati come **Risorse**. Ora sono gestite principalmente con **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** , anche se possono ancora essere gestite dalla **Risorse** console. Questa sezione riguarda la gestione da **Risorse** console.
 
 Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, configurazione, manutenzione e utilizzo dei frammenti di contenuto:
 
@@ -45,7 +45,7 @@ Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, c
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md): come utilizzare la sintassi markdown per il frammento
 * [Utilizzo di contenuti associati](/help/assets/content-fragments/content-fragments-assoc-content.md): come aggiungere contenuti associati
 * [Metadati: proprietà dei frammenti](/help/assets/content-fragments/content-fragments-metadata.md): come visualizzare e modificare le proprietà dei frammenti
-* Utilizzo [Frammenti di contenuto e GraphQL per la distribuzione dei contenuti](/help/assets/content-fragments/content-fragments-graphql.md) da utilizzare nelle applicazioni. Per facilitare questa fase, puoi visualizzare un’anteprima [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+* Utilizzare [Frammenti di contenuto, insieme a GraphQL, per distribuire i contenuti](/help/assets/content-fragments/content-fragments-graphql.md) da utilizzare nelle applicazioni. Per facilitare questa fase, puoi visualizzare un’anteprima [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ I frammenti di contenuto sono:
 
 * Memorizzati come **Risorse**:
 
-   * I frammenti di contenuto (e le relative varianti) possono essere creati e mantenuti dal **Risorse** console.
+   * I frammenti di contenuto (e le relative varianti) possono essere creati e manutenuti dalla sezione **Risorse** console.
    * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
 * Utilizzati nell’[editor pagina tramite il componente Frammento di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (componente di riferimento):
@@ -256,7 +256,7 @@ Contenuto intermedio:
 
 >[!CAUTION]
 >
->Il contenuto intermedio è contenuto di pagina. Non viene memorizzato nel frammento di contenuto.
+>Il contenuto intermedio è il contenuto della pagina. Non viene memorizzato nel frammento di contenuto.
 
 ### Elementi necessari per i frammenti {#required-by-fragments}
 

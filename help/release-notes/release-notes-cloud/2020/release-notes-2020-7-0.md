@@ -57,7 +57,7 @@ AEM Commerce è ora disponibile su Cloud Service.
 
 Per ulteriori informazioni, consulta la [Guida introduttiva ad AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html).
 
-## Componenti core  {#core-components}
+## Componenti core {#core-components}
 
 ### Novità {#what-is-new-core-components}
 

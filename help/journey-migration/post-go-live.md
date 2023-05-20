@@ -18,15 +18,15 @@ ht-degree: 39%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=it" text="Accesso e gestione dei registri"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=it#aem-as-a-cloud-service-development-tools" text="Strumenti di sviluppo in AEM as a Cloud Service"
 
-Questa è l’ultima parte del percorso e imparerai come monitorare i problemi e migliorare le prestazioni una volta completata la migrazione. È necessario garantire la pulizia dei file temporanei, esaminare le best practice per lo sviluppo continuo e gestire i registri.
+Questa è l’ultima parte del percorso, dove imparerai a monitorare i problemi e a migliorare le prestazioni una volta completata la migrazione. Assicurati che i file temporanei vengano eliminati, rivedi le best practice per lo sviluppo continuo e gestisci i registri.
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel passaggio precedente del percorso, hai imparato a eseguire la migrazione e [Vai in diretta](/help/journey-migration/go-live.md) una volta che il codice e il contenuto erano pronti per essere spostati in AEM as a Cloud Service.
+Nel passaggio precedente del percorso, hai imparato a eseguire la migrazione e [Go-live](/help/journey-migration/go-live.md) una volta che il codice e il contenuto erano pronti per essere trasferiti all’AEM as a Cloud Service.
 
 ## Obiettivo {#objective}
 
-Questo documento descrive gli strumenti disponibili per la risoluzione dei problemi AEM ambienti as a Cloud Service:
+Questo documento descrive gli strumenti disponibili per la risoluzione dei problemi relativi agli ambienti AEM as a Cloud Service:
 
 * **Console per sviluppatori**
 * **CRXDE Lite**
@@ -34,7 +34,7 @@ Questo documento descrive gli strumenti disponibili per la risoluzione dei probl
 
 ## Console per sviluppatori {#developer-console}
 
-Il debug AEM ambienti di sviluppatori as a Cloud Service è disponibile in Developer Console per ambienti di sviluppo, stage e produzione.
+Il debug degli ambienti per sviluppatori as a Cloud Service all’AEM è disponibile nella Console per sviluppatori per ambienti di sviluppo, stage e produzione.
 
 Per ulteriori informazioni sugli strumenti di sviluppo, consulta [Implementazione per AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools).
 
@@ -43,7 +43,7 @@ Per ulteriori informazioni sugli strumenti di sviluppo, consulta [Implementazion
 Come utente, puoi accedere a CRXDE Lite nell’ambiente di sviluppo ma non in quello di stage o produzione.
 
 >[!IMPORTANT]
->Scrittura in archivi immutabili quali `/libs` e `/apps` in fase di runtime genera errori. Inoltre, non puoi accedere agli strumenti per sviluppatori per gli ambienti di staging e produzione.
+>Scrittura in archivi immutabili come `/libs` e `/apps` in fase di runtime genera errori. Inoltre, non hai accesso agli strumenti per sviluppatori per gli ambienti di staging e produzione.
 
 Per informazioni su come sviluppare l’applicazione AEM utilizzando CRXDE Lite, consulta l’articolo sullo [sviluppo con CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
@@ -53,7 +53,7 @@ Gli utenti possono accedere a un elenco dei file di registro disponibili per l�
 
 Per informazioni su come accedere ai registri e gestirli attraverso l’interfaccia o l’API tramite Cloud Manager, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md).
 
-## Contattare il supporto {#contacting-support}
+## Contattare il supporto tecnico {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
@@ -61,24 +61,24 @@ Per informazioni su come accedere ai registri e gestirli attraverso l’interfac
 >abstract="Per eventuali domande o dubbi, contatta il Team di supporto AEM."
 >additional-url="https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html" text="Supporto per Experience Cloud"
 
-Per domande sull&#39;accesso al Cloud Service, contatta il tuo rappresentante Adobe o [Supporto per Experience Cloud](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per ulteriori dettagli.
+Se hai domande sull’accesso al Cloud Service, contatta il rappresentante del tuo Adobe o [Supporto per Experience Cloud](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per ulteriori dettagli.
 
-## Imparazioni dei documenti {#document-learnings}
+## Apprendimenti documento {#document-learnings}
 
 Una volta completata la migrazione, devi documentare le conoscenze acquisite durante questo processo. Alcune domande che potrebbero essere utili per il processo di documentazione sono:
 
-* Cosa ha funzionato bene e cosa non ha funzionato?
-* Quali erano i punti dolenti principali?
+* Cosa ha funzionato bene e cosa no?
+* Quali erano i punti dolenti maggiori?
 * Recommendations in caso di migrazione futura.
 
-A questo punto, condividi questi insegnamenti post-migrazione con le parti interessate e i team all’interno della tua organizzazione.
+Dovresti quindi condividere questi insegnamenti post-migrazione con le parti interessate e i team all’interno della tua organizzazione.
 
 ## Il percorso è terminato - Davvero? {#journey-ends}
 
-Congratulazioni. Hai completato il AEM Percorso di migrazione as a Cloud Service! Devi comprendere come:
+Congratulazioni. Hai completato il Percorso di migrazione as a Cloud Service dell’AEM. Devi sapere come:
 
-* Guida introduttiva al passaggio a AEM as a Cloud Service
-* Determina se la distribuzione è pronta per essere spostata in AEM as a Cloud Service
-* Preparare il codice e il cloud dei contenuti
+* Introduzione al passaggio a AEM as a Cloud Service
+* Determinare se l’implementazione è pronta per essere spostata su AEM as a Cloud Service
+* Prepara il codice e il contenuto cloud
 * Eseguire la migrazione
-* Monitoraggio dei problemi e miglioramento delle prestazioni
+* Monitora i problemi e migliora le prestazioni

@@ -48,10 +48,10 @@ Quando hai soddisfatto il [requisiti](#requirements) sopra, è possibile install
 
 1. In Eclipse, apri il file **Aiuto** menu.
 1. Clic **Installare un nuovo software**.
-1. Fate clic su **Aggiungi...**.
+1. Clic **Aggiungi...**.
 1. In **Nome** campo, immetti `AEM Developer Tools`.
 1. In **Posizione** , copiare l&#39;URL di installazione.
-1. Fate clic su **Aggiungi**.
+1. Clic **Aggiungi**.
 1. Controlla entrambi **AEM** e **Sling** plug-in.
 1. Fai clic su **Avanti**.
 1. In **Dettagli di installazione** finestra, fai clic su **Successivo** di nuovo.
@@ -89,7 +89,7 @@ Per creare il progetto di esempio, segui la procedura riportata di seguito.
 
    ![Seleziona la versione dell’archetipo](assets/select-archetype.png)
 
-1. Fornisci i seguenti campi per il progetto di esempio:
+1. Fornisci i campi seguenti per il progetto di esempio:
 
    * **Nome**
    * **ID gruppo**
@@ -163,7 +163,7 @@ Per creare il progetto di esempio, segui la procedura riportata di seguito.
 
    1. In Eclipse, apri `PROJECT.ui.apps/src/main/content/META-INF/filter.xml`.
    1. Sostituisci il contenuto della `<workspaceFilter>` con le regole del pacchetto che iniziano con `/apps` e `/etc`
-      * Esempio:
+      * Ad esempio:
 
          ```xml
          <?xml version="1.0" encoding="UTF-8"?>
@@ -175,7 +175,7 @@ Per creare il progetto di esempio, segui la procedura riportata di seguito.
          ```
    1. Quindi apri `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
    1. Sostituisci le regole con quelle del pacchetto che iniziano con `/content`.
-      * Esempio:
+      * Ad esempio:
 
          ```xml
          <?xml version="1.0" encoding="UTF-8"?>

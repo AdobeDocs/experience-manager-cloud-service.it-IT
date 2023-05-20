@@ -7,7 +7,7 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -113,7 +113,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
   </tr> 
   <tr> 
    <td>Invia URL</td> 
-   <td><p>Modello di modulo</p> <p>modulo PDF</p> </td> 
+   <td><p>Modello di modulo</p> <p>Modulo PDF</p> </td> 
    <td><p>Per configurare un URL specificato dall'utente per l'invio dei dati del modulo a un servlet.</p> <p>L’URL di invio può essere configurato utilizzando uno dei seguenti metodi, elencati in ordine di precedenza:</p> 
     <ul> 
      <li>Specifica un URL di invio direttamente in un modello di modulo utilizzando il pulsante HTTP Invia durante la creazione di un modulo XFA in AEM Forms Designer.</li> 
@@ -133,7 +133,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
     <ul> 
      <li>HTML</li> 
      <li>PDF</li> 
-     <li>Entrambe</li> 
+     <li>Entrambi</li> 
     </ul> <p>Questa opzione viene utilizzata per limitare il formato di rendering dei moduli solo nel portale dei moduli in cui sono visibili all'utente finale.</p> </td> 
   </tr> 
   <tr> 

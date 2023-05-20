@@ -11,7 +11,7 @@ exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 source-git-commit: 347da5edf4c8ad2ae72284f4e1a4003493596194
 workflow-type: tm+mt
 source-wordcount: '2260'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
@@ -70,7 +70,7 @@ Consulta [Configurare Cloud Services Dynamic Media](/help/assets/dynamic-media/c
    * Utilizzare i metadati delle risorse 3D
 
       * [Gestire i metadati per le risorse digitali](/help/assets/manage-digital-assets.md#editing-properties)
-      * [Schemi metadati](/help/assets/metadata-schemas.md)
+      * [Schemi di metadati](/help/assets/metadata-schemas.md)
 
 
 
@@ -85,13 +85,13 @@ Questa sezione descrive come visualizzare e interagire con le risorse 3D in due 
 
 Il visualizzatore 3D interattivo include, tra le altre cose, una raccolta di controlli interattivi della fotocamera che consentono di ruotare, ingrandire ed eseguire la panoramica della risorsa 3D.
 
-Il tempo necessario per aprire una risorsa 3D nella visualizzazione della pagina Dettagli risorsa dipende da diversi fattori. quali:
+Il tempo necessario per aprire una risorsa 3D nella visualizzazione della pagina Dettagli risorsa dipende da diversi fattori. Questi fattori includono ad esempio:
 
 * Larghezza di banda al server.
 * Latenze al server
 * Complessità dell’immagine.
 
-Inoltre, le funzionalità del computer client, ad esempio una workstation, un notebook o un dispositivo touch mobile, sono anch&#39;esse importanti da considerare quando si manipola la fotocamera in modo interattivo. Un sistema ragionevolmente potente con buone capacità grafiche può rendere l’esperienza di visualizzazione 3D interattiva più fluida e favorevole.
+Inoltre, le funzionalità del computer client, ad esempio una workstation, un notebook o un dispositivo touch mobile, sono anch&#39;esse importanti da considerare quando si manipola la fotocamera in modo interattivo. Un sistema ragionevolmente potente con buone capacità grafiche può rendere l&#39;esperienza di visualizzazione 3D interattiva più fluida e più favorevole.
 
 >[!TIP]
 >
@@ -105,13 +105,13 @@ Vedi anche [Visualizzare l’anteprima delle risorse tramite l’interfaccia sof
 
 **Per visualizzare e interagire con una risorsa 3D dalla pagina dei dettagli della risorsa:**
 
-1. Assicurati di aver caricato le risorse 3D in [!DNL Experience Manager].
+1. Assicurati di aver caricato risorse 3D in [!DNL Experience Manager].
 
    Consulta [Carica le risorse 3D da utilizzare in Dynamic Media](/help/assets/add-assets.md#upload-assets).
 
 1. Da [!DNL Experience Manager], sulla **[!UICONTROL Navigazione]** pagina, seleziona **[!UICONTROL Risorse > File]**.
 1. Nell&#39;angolo superiore destro della pagina, da **[!UICONTROL Visualizza]** elenco a discesa, seleziona **[!UICONTROL Vista a schede]**.
-1. Accedi alla risorsa 3D da visualizzare.
+1. Passa a una risorsa 3D che desideri visualizzare.
 1. Per aprire la risorsa nella pagina Dettagli, seleziona la scheda della risorsa 3D.
 1. Nella pagina Dettagli della risorsa 3D, effettua una delle seguenti operazioni:
 
@@ -120,7 +120,7 @@ Vedi anche [Visualizzare l’anteprima delle risorse tramite l’interfaccia sof
    | **Girare la fotocamera** | Ruota la vista attorno agli oggetti e alla scena 3D. | Fai clic con il pulsante sinistro del mouse e trascina. | Premete un solo dito e trascinate. |
    | **Sposta la fotocamera** | Spostare la vista verso sinistra, destra, l&#39;alto o il basso. | Fai clic con il pulsante destro del mouse e trascina con il mouse. | Premete due dita + trascinate. |
    | **Zoom fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Rotellina di scorrimento. | Pizzico a due dita. |
-   | **Ricentro fotocamera** | Centra di nuovo la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic. | Tocca due volte. |
+   | **Ricentro fotocamera** | Centra di nuovo la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic su. | Tocca due volte. |
    | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |  |  |
    | **Modalità a tutto schermo** | Per accedere alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
 
@@ -153,7 +153,7 @@ Una risorsa 3D completamente interattiva come visualizzata in **[!UICONTROL Ante
    | **Girare la fotocamera** | Ruota la vista attorno agli oggetti e alla scena 3D. | Fai clic con il pulsante sinistro del mouse e trascina. | Premete un solo dito e trascinate. |
    | **Sposta la fotocamera** | Spostare la vista verso sinistra, destra, l&#39;alto o il basso. | Fai clic con il pulsante destro del mouse e trascina con il mouse. | Premete due dita + trascinate. |
    | **Zoom fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Rotellina di scorrimento. | Pizzico a due dita. |
-   | **Ricentro fotocamera** | Centra di nuovo la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic. | Tocca due volte. |
+   | **Ricentro fotocamera** | Centra di nuovo la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic su. | Tocca due volte. |
    | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |  |  |
    | **Modalità a tutto schermo** | Per accedere alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
 

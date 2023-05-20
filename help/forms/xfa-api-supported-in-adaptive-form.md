@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
@@ -51,7 +51,7 @@ Quando un modulo adattivo viene creato utilizzando un file XDP, puoi trascinare 
    <td><p>Casella di controllo</p> </td>
   </tr>
   <tr>
-   <td><p>List Box </p> </td>
+   <td><p>Casella di riepilogo </p> </td>
    <td><p>Elenco a discesa</p> </td>
   </tr>
   <tr>
@@ -116,11 +116,11 @@ La tabella seguente acquisisce il comportamento di vari script XFA definiti nei 
    <td><p>Mappato alla proprietà Bind reference (bindRef) in Adaptive Form.</p> </td>
   </tr>
   <tr>
-   <td><p>presence (presenza) </p> </td>
+   <td><p>presenza </p> </td>
    <td><p>Mappato alla proprietà visibile in Modulo adattivo. È possibile sostituirlo utilizzando l'espressione Visibilità.</p> </td>
   </tr>
   <tr>
-   <td><p>access </p> </td>
+   <td><p>accesso </p> </td>
    <td><p>Mappato alla proprietà abilitata in Modulo adattivo. È possibile sostituirlo utilizzando l'espressione di Access.</p> </td>
   </tr>
   <tr>
@@ -189,15 +189,15 @@ La tabella seguente acquisisce il comportamento di vari script XFA definiti nel 
    <td><p><strong>Comportamento corrispondente in Adaptive Forms</strong></p> </td>
   </tr>
   <tr>
-   <td><p>initialize </p> </td>
+   <td><p>inizializzare </p> </td>
    <td><p>Questo script viene eseguito in fase di runtime e non può essere sostituito in un modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>calculate</p> </td>
+   <td><p>calcola</p> </td>
    <td><p>Mappato all’espressione Calculate in Adaptive Form.</p> </td>
   </tr>
   <tr>
-   <td><p>validate </p> </td>
+   <td><p>convalida </p> </td>
    <td><p>Mappato all’espressione di convalida nel modulo adattivo.</p> </td>
   </tr>
   <tr>
@@ -205,7 +205,7 @@ La tabella seguente acquisisce il comportamento di vari script XFA definiti nel 
    <td><p>Questo script viene eseguito in fase di runtime e non può essere sostituito in un modulo adattivo.<br /> </p> </td>
   </tr>
   <tr>
-   <td><p>exit </p> </td>
+   <td><p>uscire </p> </td>
    <td><p>Questo script viene eseguito in fase di runtime e non può essere sostituito in un modulo adattivo.</p> </td>
   </tr>
   <tr>
@@ -247,7 +247,7 @@ La tabella seguente acquisisce il mapping delle convalide XFA alle convalide in 
   </tr>
   <tr>
    <td><p>Obbligatorio (nullTest )</p> </td>
-   <td><p>mandatory </p> </td>
+   <td><p>obbligatorio </p> </td>
   </tr>
   <tr>
    <td><p>Messaggio vuoto (nullTestMessage) </p> </td>

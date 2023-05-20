@@ -5,7 +5,7 @@ exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -29,7 +29,7 @@ L’icona **Solo contenuto** (in alto a sinistra) permette di aprire il pannello
 
 ### Dettagli dei componenti {#component-details}
 
-Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic sulla risorsa desiderata. Sono disponibili tre schede:
+Per visualizzare i dettagli di un componente specifico, tocca o fai clic sulla risorsa richiesta. Tre schede forniscono:
 
 * **Proprietà**
 
@@ -39,9 +39,9 @@ Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic s
 
    * Visualizzare le proprietà generali del componente.
       * Visualizzare come è stata definita l’icona o l’abbreviazione per il componente. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
-      * Facendo clic sull’origine dell’icona passerai al relativo componente.
-   * Visualizzare il **tipo di risorsa** e il **Super Type della risorsa** (se definito) per il componente.
-      * Facendo clic su Super Type della risorsa passerai al relativo componente.
+      * Facendo clic sull’origine dell’icona si aprirà quel componente.
+   * Visualizza **Tipo di risorsa** e **Super Type risorsa** (se definito) per il componente.
+      * Facendo clic sul Super Type della risorsa si aprirà quel componente.
 
    >[!NOTE]
    >

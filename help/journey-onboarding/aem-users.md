@@ -81,7 +81,7 @@ Se ti interessa scoprire in che modo sviluppatori e responsabili dell’implemen
 
 ## Risorse aggiuntive {#additional-resources}
 
-Di seguito sono riportate ulteriori risorse facoltative, se desideri andare oltre il contenuto del percorso di onboarding.
+Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
 [Guida rapida alle pagine di authoring](/help/sites-cloud/authoring/getting-started/quick-start.md): inizia qui per accedere a una breve panoramica sui concetti fondamentali dell’authoring dei contenuti in AEM.
 [Percorso di authoring dei contenuti headless](/help/journey-headless/author/overview.md): segui questa introduzione guidata per l’authoring dei contenuti headless.

@@ -5,7 +5,7 @@ exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -21,20 +21,20 @@ Puoi ricevere notifiche da diverse aree di AEM, inclusi flussi di lavoro e proge
       * Sono il prodotto dei passaggi **Partecipante** di un flusso di lavoro.
    * Elementi con errori, per consentire agli amministratori di ripetere il passaggio non riuscito
 
-Queste notifiche arrivano nella casella in entrata, dove puoi visualizzarle e intraprendere le azioni necessarie.
+Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visualizzarle e intervenire.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui tipi di elementi vedi anche:
+>Per ulteriori informazioni sui tipi di elemento, vedi anche:
 >
 >* [Progetti](/help/sites-cloud/authoring/projects/overview.md)
->* [Progetti: lavorare con le attività](/help/sites-cloud/authoring/projects/tasks.md) 
+>* [Progetti - Utilizzo delle attività](/help/sites-cloud/authoring/projects/tasks.md)
 >* [Flussi di lavoro](/help/sites-cloud/authoring/workflows/overview.md)
 
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
 
-Per le varie console, il numero corrente di elementi nella casella in entrata è riportato nell’intestazione. Mediante questo indicatore è possibile accedere rapidamente alle pagine che richiedono interventi o alla casella in entrata:
+Da una qualsiasi delle console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può anche essere aperto per fornire un accesso rapido alle pagine che richiedono azioni o accesso alla casella in entrata:
 
 ![Panoramica della casella in entrata nell’intestazione](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -82,11 +82,11 @@ Operazioni disponibili:
 
 ### Casella in entrata - Impostazioni vista {#inbox-view-settings}
 
-Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
+Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
 * **Vista calendario**
 
-   Per la **Vista calendario** puoi configurare:
+   Per **Vista calendario** puoi configurare:
 
    * **Raggruppa per**
    * **Pianificazione** o **Nessuna**
@@ -96,7 +96,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
 * **Vista a elenco**
 
-   Per la **Vista a elenco** puoi configurare il metodo di ordinamento:
+   Per **Vista a elenco** puoi configurare il meccanismo di ordinamento:
 
    * **Ordina per**
    * **Ordinamento**
@@ -113,7 +113,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 >
 >Sebbene sia possibile selezionare più elementi, le azioni possono essere eseguite solo su un elemento alla volta.
 
-1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili per l’elemento in questione sono disponibili nella barra degli strumenti:
+1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Nella barra degli strumenti verranno visualizzate le icone per le azioni applicabili a tale elemento:
 
    ![Selezione dell’elemento della casella in entrata](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -134,7 +134,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
    >
    >Per ulteriori informazioni, consulta:
    >
-   >* Elementi di flussi di lavoro - [Partecipazione ai flussi di lavoro](/help/sites-cloud/authoring/workflows/participating.md)
+   >* Elementi del flusso di lavoro - [Partecipazione ai flussi di lavoro](/help/sites-cloud/authoring/workflows/participating.md)
 
 
 2. A seconda dell’elemento selezionato, verrà avviata un’azione, ad esempio:
@@ -169,7 +169,7 @@ Dalla casella in entrata è possibile creare le attività:
       * **Contenuto**: simile al payload, è un riferimento dall’attività a una posizione nell’archivio.
       * **Descrizione**
       * **Priorità attività**
-      * **Data iniziale**
+      * **Data inizio**
       * **Data di scadenza**
 
    ![Casella in entrata - Aggiunta di un’attività](/help/sites-cloud/authoring/assets/inbox-create-task.png)
@@ -184,9 +184,9 @@ Dalla casella in entrata è possibile creare le attività:
 
 ## Creazione di un progetto  {#creating-a-project}
 
-Per determinate attività, puoi creare un [Progetto](/help/sites-cloud/authoring/projects/overview.md) basato su tale attività:
+Per alcune attività puoi creare un [Progetto](/help/sites-cloud/authoring/projects/overview.md) in base a tale attività:
 
-1. Seleziona l’attività appropriata toccando o facendo clic sulla miniatura.
+1. Seleziona l’attività appropriata, toccando/facendo clic sulla miniatura.
 
    >[!NOTE]
    >
@@ -195,14 +195,14 @@ Per determinate attività, puoi creare un [Progetto](/help/sites-cloud/authoring
    >Gli elementi di lavoro (di un flusso di lavoro) non possono essere utilizzati per creare un progetto.
 
 1. Dalla barra degli strumenti, seleziona **Crea progetto** per aprire la procedura guidata.
-1. Seleziona il modello appropriato, quindi **Avanti**.
+1. Seleziona il modello appropriato, quindi **Successivo**.
 1. Specifica le proprietà richieste:
 
    * **Base**
 
       * **Titolo**
       * **Descrizione**
-      * **Data iniziale**
+      * **Data inizio**
       * **Data di scadenza**
       * **Utente** e ruolo
    * **Avanzate**
@@ -210,7 +210,7 @@ Per determinate attività, puoi creare un [Progetto](/help/sites-cloud/authoring
       * **Nome**
    >[!NOTE]
    >
-   >Per maggiori informazioni, consulta [Creazione di un progetto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project).
+   >Consulta [Creazione di un progetto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) per informazioni complete.
 
 1. Seleziona **Crea** per confermare l’azione.
 

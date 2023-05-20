@@ -78,7 +78,7 @@ Queste proprietà influiscono sul modo in cui le risorse/proprietà originali/co
 
 ### Creazione della struttura {#creating-the-structure}
 
-Per creare una sovrapposizione o una sostituzione è necessario ricreare il nodo originale, con la struttura equivalente, sotto la destinazione (in genere `/apps`). Esempio:
+Per creare una sovrapposizione o una sostituzione è necessario ricreare il nodo originale, con la struttura equivalente, sotto la destinazione (in genere `/apps`). Ad esempio:
 
 * Sovrapposizione
 
@@ -168,7 +168,7 @@ Queste funzionalità, insieme a quelle standard, consentono di:
    La proprietà è definita in `/libs`, ma non richiesto nella `/apps` sovrapposizione/sostituzione.
 
    1. Crea il nodo corrispondente in `/apps`
-   1. Creare una proprietà `sling:hideProperties` di tipo `String` o `String[]`. Utilizzare questa opzione per specificare le proprietà da nascondere/ignorare. È inoltre possibile utilizzare i caratteri jolly. Esempio:
+   1. Creare una proprietà `sling:hideProperties` di tipo `String` o `String[]`. Utilizzare questa opzione per specificare le proprietà da nascondere/ignorare. È inoltre possibile utilizzare i caratteri jolly. Ad esempio:
 
       * `*`
       * `["*"]`
@@ -226,7 +226,7 @@ Sling Resource Merger include due provider di risorse personalizzati: uno per le
 
    * finalità: unire le risorse in base al relativo percorso di ricerca
    * punto di montaggio: `/mnt/overlay`
-   * usage: `mount point + relative path`
+   * utilizzo: `mount point + relative path`
    * esempio:
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
@@ -235,7 +235,7 @@ Sling Resource Merger include due provider di risorse personalizzati: uno per le
 
    * finalità: unire le risorse in base al loro super tipo
    * punto di montaggio: `/mnt/overide`
-   * usage: `mount point + absolute path`
+   * utilizzo: `mount point + absolute path`
    * esempio:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`

@@ -10,7 +10,7 @@ discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1117'
-ht-degree: 17%
+ht-degree: 0%
 
 ---
 
@@ -108,14 +108,14 @@ Un pannello dispone di varie opzioni di layout. L’opzione Layout per pannello 
 
 La sottomaschera ripetibile è simile ai pannelli ripetibili in Adaptive Forms. In entrata [!DNL AEM Forms] Per creare una sottomaschera ripetuta, effettuare le seguenti operazioni:
 
-1. Nella palette Gerarchia, selezionare il sottomodulo principale del sottomodulo che si desidera ripetere.
-1. Nella palette Oggetto, fare clic sulla scheda Sottomodulo e selezionare Flusso dall’elenco Contenuto.
-1. Selezionare il sottomodulo da ripetere.
-1. Nella palette Oggetto fare clic sulla scheda Sottomodulo e selezionare Posizionato o Flusso dall’elenco Contenuto.
-1. Fare clic sulla scheda Binding e selezionare Ripeti sottomodulo per ogni elemento dati.
-1. Per specificare il numero minimo di ripetizioni, selezionare Conteggio min e digitare un numero nella casella associata. Se questa opzione viene impostata a 0 e al momento dell’unione di dati non vi sono dati per gli oggetti del sottomodulo, il sottomodulo non sarà posizionato per il rendering del modulo.
-1. Per specificare il numero massimo di ripetizioni, selezionare Massimo e digitare un numero nella casella associata. Se non si specifica un valore nella casella Max, il numero di ripetizioni della sottomaschera è illimitato.
-1. Per specificare un numero prefissato per le ripetizioni del sottomodulo indipendentemente dalla quantità di dati, selezionare l’opzione Conteggio iniziale, quindi digitare il numero di ripetizioni desiderato nella casella associata. Se l’opzione è impostata e non è disponibile alcun dato o sono disponibili dati inferiori al valore di Conteggio iniziale, le istanze vuote del sottomodulo saranno ancora presenti nel modulo.
+1. Nella tavolozza Gerarchia selezionare la sottomaschera padre della sottomaschera che si desidera ripetere.
+1. Nella tavolozza Oggetto fare clic sulla scheda Sottomodulo e nell&#39;elenco Contenuto selezionare Flussi.
+1. Selezionare la sottomaschera da ripetere.
+1. Nella tavolozza Oggetto, fare clic sulla scheda Sottomodulo e selezionare Posizionato o Flusso nell&#39;elenco Contenuto.
+1. Fare clic sulla scheda Associazione e selezionare Ripeti sottomaschera per ogni elemento dati.
+1. Per specificare il numero minimo di ripetizioni, selezionare Conteggio minimo e digitare un numero nella casella associata. Se questa opzione è impostata su 0 e non vengono forniti dati per gli oggetti nel sottomodulo al momento dell&#39;unione dei dati, il sottomodulo non viene posizionato al momento del rendering del modulo.
+1. Per specificare il numero massimo di ripetizioni di sottomaschera, selezionare Max e digitare un numero nella casella associata. Se non si specifica un valore nella casella Max, il numero di ripetizioni della sottomaschera è illimitato.
+1. Per specificare un numero impostato di ripetizioni di sottomaschera, indipendentemente dalla quantità di dati, selezionare Conteggio iniziale e digitare un numero nella casella associata. Se si seleziona questa opzione e non sono disponibili dati o sono presenti meno voci di dati rispetto al valore Conteggio iniziale specificato, le istanze vuote del sottomodulo verranno comunque inserite nel modulo.
 1. Aggiungere due pulsanti nella sottomaschera padre: uno per aggiungere un&#39;istanza e un altro per eliminare un&#39;istanza di una sottomaschera ripetibile. Per i passaggi dettagliati, consulta [Creare un’azione](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Collega ora il modello al modulo adattivo. Per i passaggi dettagliati, consulta [Creare un modulo adattivo basato su un modello](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Utilizzare i pulsanti creati nel passaggio 9 per aggiungere e rimuovere sottomaschere.

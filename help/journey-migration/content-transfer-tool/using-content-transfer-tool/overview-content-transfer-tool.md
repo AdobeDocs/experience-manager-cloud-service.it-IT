@@ -42,7 +42,7 @@ Il trasferimento dei contenuti prevede due fasi:
    Per ulteriori informazioni, consulta [Processo di estrazione nel trasferimento dei contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
    >[!NOTE]
-   >La mappatura utente viene ora eseguita automaticamente nell’ambito della fase di estrazione sull’autore (ma può anche essere disabilitata sull’autore o abilitata al momento della pubblicazione). Vedi [Mappatura utente e migrazione principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) per ulteriori dettagli.
+   >La mappatura degli utenti viene ora eseguita automaticamente come parte della fase di estrazione sull’autore (ma può essere facoltativamente disabilitata sull’autore o abilitata sulla pubblicazione). Consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) per ulteriori dettagli.
 
 1. **Acquisizione**: per acquisizione si intende l’acquisizione dei contenuti dal *set di migrazione* nell’istanza Cloud Service di destinazione.
 
@@ -71,14 +71,14 @@ Nella fase di acquisizione, per applicare il contenuto delta sul contenuto corre
 >title="Scadenza di un set di migrazione"
 >abstract="Ottieni informazioni sulla scadenza di un set di migrazione."
 
-Tutti i set di migrazione scadranno dopo un periodo prolungato di inattività di circa 90 giorni. Una volta visualizzati gli indicatori sulla scheda del progetto e le righe della tabella dei processi di migrazione per un periodo di tempo, il set di migrazione scadrà e i relativi dati non saranno più disponibili. Il termine di scadenza può essere facilmente prorogato agendo al momento della migrazione stabilito da:
+Tutti i set di migrazione scadranno dopo un periodo prolungato di inattività di circa 90 giorni. Una volta visualizzati gli indicatori sulla scheda del progetto e sulle righe della tabella del processo di migrazione per un periodo di tempo, il set di migrazione scadrà e i relativi dati non saranno più disponibili. Il termine di scadenza può essere facilmente prorogato agendo sulla migrazione impostata da:
 
 * modifica della descrizione
 * ottenimento della chiave di estrazione
 * esecuzione di un’estrazione
-* esecuzione di un’acquisizione
+* esecuzione di un’acquisizione da esso
 
-La scadenza di un set di migrazione può essere monitorata nella riga Set di migrazione . Un utile indicatore visivo che indica che un set di migrazione si sta avvicinando alla data di scadenza ha aggiunto anche la scheda del progetto.
+La scadenza di un set di migrazione può essere monitorata nella riga Set di migrazione. Un utile indicatore visivo che un set di migrazione si sta avvicinando alla data di scadenza ha aggiunto anche la scheda del progetto.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 

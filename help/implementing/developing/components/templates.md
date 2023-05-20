@@ -5,7 +5,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
 source-wordcount: '3300'
-ht-degree: 10%
+ht-degree: 5%
 
 ---
 
@@ -40,7 +40,7 @@ Questo documento:
 
 La creazione di modelli di pagina viene eseguita principalmente con [console modelli ed editor modelli](/help/sites-cloud/authoring/features/templates.md) da un autore di modelli. Questa sezione offre una panoramica di questo processo e segue con una descrizione di ciò che accade a livello tecnico.
 
-Durante la creazione di un nuovo modello modificabile:
+Quando crei un nuovo modello modificabile:
 
 1. Creare un [cartella per i modelli](#template-folders). Questo non è obbligatorio, ma è una best practice consigliata.
 1. Seleziona un [tipo di modello](#template-type). Viene copiato per creare [definizione modello](#template-definitions).
@@ -54,8 +54,8 @@ Durante la creazione di un nuovo modello modificabile:
    **Struttura**
 
    * La struttura ti consente di definire componenti e contenuti per il modello.
-   * I componenti definiti nella struttura del modello non possono essere spostati su una pagina risultante, né eliminati da alcuna pagina risultante.
-   * Se desideri che gli autori delle pagine siano in grado di aggiungere e rimuovere componenti, aggiungi un sistema di paragrafi al modello.
+   * I componenti definiti nella struttura del modello non possono essere spostati in una pagina risultante né eliminati dalle pagine risultanti.
+   * Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema paragrafo al modello.
    * I componenti possono essere sbloccati e bloccati di nuovo per consentire di definire il contenuto iniziale.
 
    Per informazioni dettagliate su come un autore di modelli definisce la struttura, consulta [Creazione di modelli di pagina](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -66,8 +66,8 @@ Durante la creazione di un nuovo modello modificabile:
 
    * I criteri per contenuto definiscono le proprietà di progettazione di un componente.
 
-      * Ad esempio, i componenti disponibili o le dimensioni minime e massime.
-   * Questi sono applicabili al modello (e alle pagine create con tale modello).
+      * Ad esempio, i componenti disponibili o le dimensioni minima/massima.
+   * Sono applicabili al modello (e alle pagine create con il modello).
 
    Per informazioni dettagliate su come un autore di modelli definisce i criteri, consulta [Creazione di modelli di pagina](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
@@ -102,7 +102,7 @@ Durante la creazione di un nuovo modello modificabile:
 
 1. Utilizzala per creare pagine di contenuto.
 
-   * Quando si utilizza un modello per creare una nuova pagina, non vi è alcuna differenza visibile e nessuna indicazione tra modelli statici e modificabili.
+   * Quando si utilizza un modello per creare una nuova pagina, non vi è alcuna differenza visibile né indicazione tra modelli statici e modificabili.
    * Per l’autore della pagina, il processo è trasparente.
 
    Per informazioni dettagliate su come un autore di pagine utilizza i modelli per creare una pagina, consulta [Creazione e organizzazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -246,7 +246,7 @@ La tabella seguente descrive le autorizzazioni necessarie per la modifica dei mo
   </tr>
   <tr>
    <td>Utente Web anonimo</td>
-   <td>read</td>
+   <td>letto</td>
    <td>L’utente web anonimo deve leggere i modelli durante il rendering di una pagina</td>
   </tr>
   <tr>
@@ -262,7 +262,7 @@ La tabella seguente descrive le autorizzazioni necessarie per la modifica dei mo
   </tr>
   <tr>
    <td>Utente Web anonimo</td>
-   <td>read</td>
+   <td>letto</td>
    <td>L’utente web anonimo deve leggere i criteri durante il rendering di una pagina</td>
   </tr>
   <tr>
@@ -273,7 +273,7 @@ La tabella seguente descrive le autorizzazioni necessarie per la modifica dei mo
   <tr>
    <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td>
    <td>Autore del modello</td>
-   <td>read</td>
+   <td>letto</td>
    <td>L’autore del modello crea un nuovo modello basato su uno dei tipi di modello predefiniti.</td>
   </tr>
   <tr>
@@ -319,7 +319,7 @@ I tipi di modello specifici per il sito devono essere memorizzati nella posizion
 
 * `/apps/settings/wcm/template-types`
 
-Le definizioni per i tipi di modelli personalizzati devono essere memorizzate in cartelle definite dall&#39;utente (scelta consigliata) o in alternativa in `global`. Esempio:
+Le definizioni per i tipi di modelli personalizzati devono essere memorizzate in cartelle definite dall&#39;utente (scelta consigliata) o in alternativa in `global`. Ad esempio:
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -370,7 +370,7 @@ Puoi trovare il codice di questa pagina su GitHub
 
 ## Definizioni dei modelli {#template-definitions}
 
-Vengono memorizzate le definizioni per i modelli modificabili [cartelle definite dall&#39;utente](#template-folders) (consigliato) o in alternativa in `global`. Esempio:
+Vengono memorizzate le definizioni per i modelli modificabili [cartelle definite dall&#39;utente](#template-folders) (consigliato) o in alternativa in `global`. Ad esempio:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
@@ -458,7 +458,7 @@ Quando [modifica di un modello è possibile definire il layout](/help/sites-clou
 
 ### Criteri per contenuto {#content-policies}
 
-I criteri per contenuto definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minime e massime. Questi sono applicabili al modello (e alle pagine create con tale modello). I criteri per i contenuti possono essere creati e selezionati nell’editor modelli.
+I criteri per contenuto definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello). I criteri per i contenuti possono essere creati e selezionati nell’editor modelli.
 
 * La proprietà `cq:policy`, sulla `root` nodo
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`

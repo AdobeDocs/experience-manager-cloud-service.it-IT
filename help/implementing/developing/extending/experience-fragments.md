@@ -5,7 +5,7 @@ exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
 workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 ## Nozioni di base {#the-basics}
 
-Un [Frammento esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) è un gruppo di uno o più componenti, che include contenuto e layout, a cui è possibile fare riferimento tra le pagine.
+Un [Frammento esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) è un gruppo di uno o più componenti, inclusi il contenuto e il layout, a cui è possibile fare riferimento all’interno delle pagine.
 
 Un elemento Principale e/o Variante del frammento esperienza utilizza:
 
@@ -35,7 +35,7 @@ La rappresentazione HTML semplice aggiunge il protocollo, l’host e il percorso
 
 * oppure termina con: `-src`, o `-href`
 
-Esempio:
+Ad esempio:
 
 `.../brooklyn-coat/master.plain.html`
 
@@ -78,7 +78,7 @@ Quando sviluppi un nuovo modello per Frammenti esperienza, puoi seguire le proce
 
 Per creare un modello di frammento esperienza rilevato da **Crea frammento esperienza** procedura guidata, è necessario seguire uno dei seguenti set di regole:
 
-1. Entrambe:
+1. Entrambi:
 
    1. Il tipo di risorsa del modello (nodo iniziale) deve ereditare da:
       `cq/experience-fragments/components/xfpage`
@@ -113,7 +113,7 @@ The only additional configuration is to ensure that the components are [allowed 
 
 ## Experience Fragment Link Rewriter Provider - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
-In AEM hai la possibilità di creare Frammenti esperienza. Caratteristiche di un Frammento esperienza:
+In AEM hai la possibilità di creare Frammenti esperienza. Un frammento esperienza:
 
 * è costituito da un gruppo di componenti con un layout,
 * può esistere indipendentemente da una pagina AEM.
@@ -203,7 +203,7 @@ Per utilizzare l’interfaccia è innanzitutto necessario creare un bundle conte
 
 Questo servizio verrà utilizzato per collegarsi alla riscrittura del file Esportazione frammento di esperienza in Target al fine di avere accesso ai vari collegamenti.
 
-Esempio, `ComponentService`:
+Ad esempio, `ComponentService`:
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;
@@ -248,7 +248,7 @@ Devi indicare al sistema se è necessario riscrivere i collegamenti quando viene
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
-Esempio:
+Ad esempio:
 
 ```java
 @Override

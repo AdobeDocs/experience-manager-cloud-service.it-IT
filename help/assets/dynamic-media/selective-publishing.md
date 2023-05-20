@@ -229,7 +229,7 @@ In alternativa, è possibile utilizzare queste caselle di controllo con **[!UICO
 
 1. Sotto **[!UICONTROL Pianificazione]**, imposta la tempistica della disattivazione.
 
-   | Pianificazione selezionata | Cosa accade |
+   | Pianificazione selezionata | Cosa succede |
    | --- | --- |
    | Ora | L&#39;azione selezionata viene eseguita immediatamente. |
    | Più tardi | L&#39;azione selezionata viene eseguita nella data e ora specifiche selezionate. |

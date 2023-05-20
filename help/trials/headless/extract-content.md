@@ -70,7 +70,7 @@ Hai appena convalidato una query di elenco per un elenco completo di tutti i fra
 
 >[!NOTE]
 >
->Se non sei in grado di selezionare il **AEM Demo Assets** dall’elenco a discesa, contatta l’Assistenza clienti Adobe o contatta l’ [Canale di Slack AEM Trials.](https://adobe-dx-support.slack.com/)
+>Se non è possibile selezionare **Risorse dimostrative AEM** dall&#39;elenco a discesa, contatta l&#39;Assistenza clienti Adobe o contatta il [Canale di Slack degli studi AEM.](https://adobe-dx-support.slack.com/)
 
 ## Query per un contenuto specifico di esempio {#bypath-query}
 
@@ -117,7 +117,7 @@ Dopo aver eseguito i due tipi principali di query, puoi eseguire una query sul c
 
 1. Per eseguire query con frammenti di contenuto personalizzati, modifica l’endpoint dalla cartella **AEM Demo Assets** alla cartella **Progetto**.
 
-1. Elimina tutto il contenuto esistente nell’editor delle query. Quindi digita parentesi graffa aperta `{` e premi Ctrl+Spazio o Opzione+Spazio per un elenco completo automatico dei modelli definiti nell’endpoint. Seleziona il modello creato che termina in `List` dalle opzioni. Se hai seguito gli esempi nei moduli precedenti, dovresti trovare `adventureList` nell&#39;elenco di completamento automatico.
+1. Elimina tutto il contenuto esistente nell’editor delle query. Quindi digita parentesi graffa aperta `{` e premi Ctrl+Spazio o Opzione+Spazio per un elenco completo automatico dei modelli definiti nell’endpoint. Seleziona il modello creato che termina in `List` dalle opzioni. Se hai seguito gli esempi dei moduli precedenti, dovresti trovare `adventureList` nell&#39;elenco di completamento automatico.
 
    ![Avvia query personalizzata](assets/do-not-localize/custom-query-1.png)
 
@@ -125,7 +125,7 @@ Dopo aver eseguito i due tipi principali di query, puoi eseguire una query sul c
 
 1. Tocca o fai clic sul pulsante **Migliora** per formattare automaticamente il codice in modo da facilitarne la lettura.
 
-1. Al termine, tocca o fai clic sul pulsante **Riproduzione** in alto a sinistra dell’editor per eseguire la query. L’editor completa automaticamente il `items`, che vengono brevemente evidenziati in giallo e la query viene eseguita.
+1. Al termine, tocca o fai clic sul pulsante **Riproduzione** in alto a sinistra dell’editor per eseguire la query. L’editor completa automaticamente `items`, che vengono brevemente evidenziate in giallo, e la query viene eseguita.
 
 1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor delle query.
 
@@ -135,11 +135,11 @@ In questo modo i contenuti possono essere inviati a esperienze digitali omnicana
 
 ## Query persistenti {#persisted-queries}
 
-Le query persistenti sono il meccanismo preferito per l’esposizione dell’API GraphQL alle applicazioni client. Una volta che una query è persistente, può essere richiesta utilizzando una richiesta GET e memorizzata nella cache per un recupero rapido.
+Le query persistenti sono il meccanismo preferito per esporre l’API GraphQL alle applicazioni client. Una volta che una query è stata resa persistente, può essere richiesta utilizzando una richiesta GET e memorizzata nella cache per un recupero rapido.
 
 Verrà creata una query persistente che include i dati che si desidera utilizzare dall&#39;applicazione client.
 
-1. I dati creati come frammento di contenuto vengono utilizzati in precedenza, quindi assicurati che la **Il progetto** l&#39;endpoint è selezionato nella **Endpoint** menu a discesa nell’angolo in alto a destra dell’editor.
+1. Potrai utilizzare i dati creati in precedenza come frammento di contenuto, quindi assicurati che il **Progetto** l&#39;endpoint è selezionato in **Endpoint** menu a discesa nell’angolo in alto a destra dell’editor.
 
 1. Copia il seguente frammento di codice.
 
@@ -175,20 +175,20 @@ Verrà creata una query persistente che include i dati che si desidera utilizzar
 
 1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor delle query. Se la query non è corretta, viene visualizzato un errore nel pannello di destra.
 
-   ![Crea query personalizzata](assets/do-not-localize/own-query.png)
+   ![Crea una query personalizzata](assets/do-not-localize/own-query.png)
 
-1. Quando la query è soddisfatta, fai clic sul pulsante **Salva con nome** nella parte superiore dell’editor delle query per mantenere la query.
+1. Una volta soddisfatta la query, fai clic su **Salva con nome** nella parte superiore dell’editor delle query per rendere persistente la query.
 
-1. In **Nome query** a comparsa, assegna il nome alla query `adventure-list`.
+1. In **Nome query** pop-up, assegna alla query il nome `adventure-list`.
 
 1. Tocca o fai clic su **Salva con nome**.
 
-   ![Query permanente](assets/do-not-localize/persist-query.png)
+   ![Query persistente](assets/do-not-localize/persist-query.png)
 
-1. La query viene persistita come confermato da un messaggio del banner nella parte inferiore dello schermo. La query viene ora visualizzata anche nel pannello a sinistra delle query persistenti nella finestra.
+1. La query viene resa persistente come confermato da un messaggio del banner nella parte inferiore della schermata. La query viene ora visualizzata anche nel pannello a sinistra delle query persistenti nella finestra.
 
-1. Affinché la query persistente sia disponibile pubblicamente, deve essere pubblicata, in modo analogo a come i frammenti di contenuto devono essere pubblicati. Fai clic sul pulsante **Pubblica** in alto a destra dell’editor delle query per pubblicare la query.
+1. Affinché la query persistente sia disponibile pubblicamente, sarà necessario pubblicarla, proprio come avviene per la pubblicazione dei frammenti di contenuto. Fai clic su **Pubblica** in alto a destra nell’editor delle query per pubblicare la query.
 
-1. La pubblicazione viene confermata da una notifica del banner.
+1. La pubblicazione è confermata da una notifica tramite banner.
 
-È ora disponibile una nuova query persistente che conterrà solo le proprietà e i formati specifici definiti.
+Ora disponi di una nuova query persistente che conterrà solo le proprietà e i formati specifici definiti.

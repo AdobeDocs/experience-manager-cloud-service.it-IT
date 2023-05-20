@@ -1,11 +1,11 @@
 ---
 title: Esportazione in formato CSV
-description: Esporta informazioni sulle pagine in un file CSV sul sistema locale
+description: Esportare le informazioni sulle pagine in un file CSV nel sistema locale
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -56,6 +56,6 @@ Per creare un’esportazione CSV:
 
    ![Opzioni di esportazione CSV](/help/sites-cloud/authoring/assets/csv-options.png)
 
-1. Seleziona le proprietà da esportare.
+1. Seleziona le proprietà richieste da esportare.
 1. Seleziona **Crea**.
    ![Esportazione CSV risultante in Excel](/help/sites-cloud/authoring/assets/csv-example.png)

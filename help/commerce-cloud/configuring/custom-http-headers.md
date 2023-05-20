@@ -33,7 +33,7 @@ I componenti che utilizzano la configurazione del servizio cloud precedente invi
 
 ## Restrizioni {#restrictions}
 
-Anche se il servizio consente di definire qualsiasi nome di intestazione, inclusi quelli standard, non saranno disponibili per la configurazione. In altre parole, non puoi sovrascrivere le intestazioni HTTP standard con questa funzione. È possibile trovare un elenco di nomi di intestazione con restrizioni [qui](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Oltre a queste, ci sono altre due intestazioni che non possono essere utilizzate:
+Anche se il servizio consente di definire qualsiasi nome di intestazione, inclusi quelli standard, non saranno disponibili per la configurazione. In altre parole, non puoi sovrascrivere le intestazioni HTTP standard con questa funzione. È possibile trovare un elenco di nomi di intestazione con restrizioni [qui](https://developer.mozilla.org/it-IT/docs/Web/HTTP/Headers). Oltre a queste, ci sono altre due intestazioni che non possono essere utilizzate:
 
 * &quot;Store&quot;: utilizzato da CIF per identificare lo store di Adobe Commerce
 * &quot;Preview-Version&quot;: utilizzato da CIF per recuperare i prodotti in staging

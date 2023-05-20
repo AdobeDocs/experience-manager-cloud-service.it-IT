@@ -35,14 +35,14 @@ Il nome di dominio può essere acquistato da un registrar di nomi di dominio o d
 
 ## Nomi di dominio personalizzati e CDN BYO {#byo-cdn}
 
-AEM as a Cloud Service offre un servizio CDN (Content Delivery Network) integrato, ma consente anche di portare la propria CDN (BYO) da utilizzare con AEM. I domini personalizzati possono essere installati nella rete CDN AEM gestita o in una rete CDN gestita dall&#39;utente.
+AEM as a Cloud Service offre un servizio integrato di rete per la distribuzione di contenuti (CDN), ma consente anche di usare una rete CDN autonoma (BYO) con AEM. I domini personalizzati possono essere installati nella rete CDN gestita dall’AEM o in una rete CDN gestita dall’utente.
 
-* I nomi di dominio personalizzati (e i certificati) installati nel CDN gestito da AEM vengono gestiti tramite Cloud Manager.
-* I nomi di dominio personalizzati (e i certificati) installati nel tuo CDN sono gestiti in quel CDN specifico.
+* I nomi di dominio (e i certificati) personalizzati installati nella rete CDN gestita dall’AEM vengono gestiti tramite Cloud Manager.
+* I nomi di dominio (e i certificati) personalizzati installati nella rete CDN personalizzata vengono gestiti in tale rete CDN specifica.
 
-I domini gestiti nel tuo CDN non devono essere installati tramite Cloud Manager. Saranno resi disponibili per AEM tramite X-Forwarded-Host e corrisponderanno ai vhosts definiti nel dispatcher. [Per ulteriori informazioni, consulta la documentazione CDN .](/help/implementing/dispatcher/cdn.md)
+I domini gestiti nella tua rete CDN non devono essere installati tramite Cloud Manager. Saranno messi a disposizione dell’AEM tramite X-Forwarded-Host e corrisponderanno agli host definiti nel dispatcher. [Per ulteriori informazioni, consulta la documentazione CDN.](/help/implementing/dispatcher/cdn.md)
 
-In un ambiente è possibile installare entrambi i domini nel CDN AEM gestito e installarli nel proprio CDN.
+In un ambiente è possibile installare entrambi i domini nella rete CDN gestita dall’AEM e nella propria rete CDN.
 
 ## Flusso di lavoro {#workflow}
 
@@ -69,9 +69,9 @@ L’aggiunta di un nome di dominio personalizzato richiede l’interazione tra i
 L’utilizzo di nomi di dominio personalizzati con AEMaaCS presenta diverse limitazioni.
 
 * I nomi di dominio personalizzati sono supportati in Cloud Manager sia per i servizi di pubblicazione che per quelli di anteprima per i programmi Sites. I domini personalizzati per i servizi di authoring non sono supportati.
-* Ogni ambiente Cloud Manager può ospitare fino a un massimo di 500 domini personalizzati per ambiente.
-* Impossibile aggiungere i nomi di dominio agli ambienti mentre è presente una pipeline in esecuzione corrente collegata a tali ambienti.
-* Lo stesso nome di dominio non può essere utilizzato in più di un ambiente.
+* Ogni ambiente di Cloud Manager può ospitare fino a un massimo di 500 domini personalizzati.
+* Non è possibile aggiungere nomi di dominio agli ambienti se a essi è collegata una pipeline attualmente in esecuzione.
+* Impossibile utilizzare lo stesso nome di dominio in più ambienti.
 * È possibile aggiungere un solo nome di dominio alla volta.
-* AEM as a Cloud Service non supporta domini con caratteri jolly come `*.example.com`.
-* Prima di aggiungere un nome di dominio personalizzato, è necessario installare per il programma un certificato SSL valido contenente il nome di dominio personalizzato (i certificati con caratteri jolly sono validi). Fai riferimento a [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) per saperne di più.
+* AEM as a Cloud Service non supporta domini con caratteri jolly quali `*.example.com`.
+* Prima di aggiungere un nome di dominio personalizzato, è necessario installare un certificato SSL valido contenente il nome di dominio personalizzato (i certificati con caratteri jolly sono validi). Fare riferimento a [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) per ulteriori informazioni.

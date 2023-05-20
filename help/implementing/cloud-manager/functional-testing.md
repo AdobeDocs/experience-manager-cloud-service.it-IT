@@ -21,11 +21,11 @@ Scopri i tre diversi tipi di test funzionali integrati nel [processo di distribu
 
 ## Ambito
 
-Lo scopo dei passaggi di test funzionali nella pipeline di Cloud Manager è garantire che la funzionalità essenziale dell’applicazione funzioni come previsto.
+I passaggi dei test funzionali nella pipeline di Cloud Manager hanno lo scopo di garantire che le funzionalità essenziali dell’applicazione funzionino come previsto.
 
-Questa fase di test è l&#39;ultimo livello di test automatizzato prima di distribuire il codice in produzione.
+Questa fase di test è l’ultimo livello di test automatizzato prima della distribuzione del codice in produzione.
 
-I test funzionali non devono sostituire, ma devono invece integrare ed estendere altre strategie di test quali unit test, test di integrazione o test funzionali eseguiti al di fuori dell’esecuzione della pipeline in Cloud Manager.
+I test funzionali non devono sostituire, ma piuttosto integrare ed estendere altre strategie di test, come gli unit test, i test di integrazione o i test funzionali eseguiti al di fuori dell’esecuzione della pipeline in Cloud Manager.
 
 ## Panoramica {#overview}
 
@@ -56,12 +56,12 @@ Anche se i test funzionali del prodotto sono definiti da Adobe, puoi creare test
 
 I test funzionali personalizzati vengono eseguiti sia per le distribuzioni del codice personalizzato sia per gli aggiornamenti push, per questo è particolarmente importante scrivere test funzionali che impediscano alle modifiche apportate al codice AEM di interrompere il codice dell’applicazione. Il passaggio dei test funzionali personalizzati è sempre presente e non può essere ignorato.
 
-Fai riferimento a [Test funzionali Java](/help/implementing/cloud-manager/java-functional-testing.md) per ulteriori informazioni.
+Fare riferimento a [Test funzionali Java](/help/implementing/cloud-manager/java-functional-testing.md) per ulteriori informazioni.
 
 
 ### Test dell’interfaccia utente personalizzati {#custom-ui-testing}
 
 I test dell’interfaccia utente personalizzati sono una funzione facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni. I test dell’interfaccia utente sono test basati su Selenium assemblati in un’immagine Docker per consentire un’ampia scelta in termini di linguaggio e framework come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium.
 
-Fai riferimento a [Test personalizzati dell&#39;interfaccia utente](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) per ulteriori informazioni.
+Fare riferimento a [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) per ulteriori informazioni.
 

@@ -414,7 +414,7 @@ Viene visualizzato un indicatore di elaborazione (o barra di avanzamento) che co
 
 Quando rimuovi un profilo video da una cartella, tutte le sottocartelle ereditano automaticamente la rimozione del profilo dalla relativa cartella principale. Tuttavia, qualsiasi elaborazione dei file che si è verificata all’interno delle cartelle rimane intatta.
 
-È possibile rimuovere un profilo video da una cartella dall’interno di **[!UICONTROL Strumenti]** o se ti trovi nella cartella, dal menu **[!UICONTROL Impostazioni cartella]**. Questa sezione descrive come rimuovere i profili video dalle cartelle con entrambe le soluzioni.
+È possibile rimuovere un profilo video da una cartella direttamente dal **[!UICONTROL Strumenti]** o se ti trovi nella cartella, dal menu **[!UICONTROL Impostazioni cartella]**. Questa sezione descrive come rimuovere i profili video dalle cartelle con entrambe le soluzioni.
 
 ### Rimuovere un profilo video dalle cartelle tramite l’interfaccia utente Profili {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 

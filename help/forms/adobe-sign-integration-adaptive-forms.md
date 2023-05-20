@@ -52,7 +52,7 @@ Dopo aver impostato i prerequisiti, effettua le seguenti operazioni per configur
 
    `https://<shard>/public/oAuth/v2`
 
-   Esempio:
+   Ad esempio:
    `https://secure.na1.echosign.com/public/oauth/v2`
 
    Dove:

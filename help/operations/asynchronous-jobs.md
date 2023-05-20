@@ -1,6 +1,6 @@
 ---
 title: Processi asincroni
-description: Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività ad uso intensivo di risorse come operazioni in background.
+description: Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a uso intensivo di risorse come operazioni in background.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 70%
 
 # Operazioni asincrone {#asynchronous-operations}
 
-Per ridurre l’impatto negativo sulle prestazioni, Adobe Experience Manager elabora in modo asincrono alcune operazioni a lungo termine e ad uso intensivo di risorse come operazioni in background. L’elaborazione asincrona comporta l’accodamento di più processi e la loro esecuzione in modo seriale, in base alla disponibilità delle risorse di sistema.
+Per ridurre l’impatto negativo sulle prestazioni, Adobe Experience Manager elabora in modo asincrono alcune operazioni che richiedono tempo e risorse, come operazioni in background. L’elaborazione asincrona comporta l’accodamento di più processi e la loro esecuzione in modo seriale, in base alla disponibilità delle risorse di sistema.
 
 Alcune di queste operazioni sono:
 
@@ -22,7 +22,7 @@ Alcune di queste operazioni sono:
 * Spostamento di pagine
 * Rollout di Live Copy
 
-Puoi visualizzare lo stato dei processi asincroni dal **[!UICONTROL Operazioni in background]** dashboard **Navigazione globale** -> **Strumenti** -> **Generale** -> **Processi**.
+È possibile visualizzare lo stato dei processi asincroni da **[!UICONTROL Operazioni in background]** dashboard in **Navigazione globale** -> **Strumenti** -> **Generale** -> **Processi**.
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ Puoi visualizzare lo stato dei processi asincroni dal **[!UICONTROL Operazioni i
 
 Ogni volta che AEM elabora un’operazione in modo asincrono, ricevi una notifica nella tua [casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md) e tramite e-mail (se abilitata).
 
-Per visualizzare in dettaglio lo stato delle operazioni asincrone, passa alla **[!UICONTROL Operazioni in background]** pagina.
+Per visualizzare in dettaglio lo stato delle operazioni asincrone, passare alla **[!UICONTROL Operazioni in background]** pagina.
 
-1. Nell’interfaccia di Experience Manager, seleziona **Navigazione globale** -> **Strumenti** -> **Generale** -> **Processi**.
+1. Nell’interfaccia Experience Manager seleziona **Navigazione globale** -> **Strumenti** -> **Generale** -> **Processi**.
 
-1. In **[!UICONTROL Operazioni in background]** esaminare i dettagli delle operazioni.
+1. In **[!UICONTROL Operazioni in background]** , rivedere i dettagli delle operazioni.
 
    ![Stato e dettagli delle operazioni asincrone](assets/async-operation-status.png)
 
@@ -72,11 +72,11 @@ Per visualizzare in dettaglio lo stato delle operazioni asincrone, passa alla **
 
 ## Configurazione delle opzioni di elaborazione del processo asincrono {#configure}
 
-È possibile configurare diversi processi asincroni. Gli esempi seguenti mostrano come eseguire questa operazione utilizzando il gestore di configurazione in un sistema di sviluppo locale.
+È possibile configurare diverse opzioni relative ai processi asincroni. Gli esempi seguenti mostrano come eseguire questa operazione utilizzando la gestione della configurazione su un sistema di sviluppo locale.
 
 >[!NOTE]
 >
->[Configurazioni OSGi](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) sono considerati contenuti mutabili e tutte le configurazioni devono essere distribuite come pacchetto di contenuto per un ambiente di produzione.
+>[Configurazioni OSGi](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) sono considerati contenuti mutabili e tali configurazioni devono essere distribuite come pacchetto di contenuti per un ambiente di produzione.
 
 ### Eliminare i processi completati {#purging-completed-jobs}
 
@@ -84,8 +84,8 @@ AEM esegue un processo di eliminazione ogni giorno alle 01:00 per eliminare i pr
 
 Puoi modificare la pianificazione per il processo di eliminazione e il periodo per il quale i dettagli dei processi completati vengono conservati prima di essere eliminati. Puoi anche configurare il numero massimo di processi completati per i quali i dettagli devono essere conservati.
 
-1. Accedi alla console Web AEM di Jar dell&#39;SDK AEM Quickstart all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
-1. Passa a **OSGi** > **Configurazione**
+1. Accedi alla console web AEM di Quickstart Jar per l’SDK dell’AEM all’indirizzo `https://<host>:<port>/system/console` come utente amministratore.
+1. Accedi a **OSGi** > **Configurazione**
 1. Apri il lavoro **[!UICONTROL Adobe Granite Async Jobs Purge Scheduled Job]** (Processo pianificato di rimozione dei processi asincroni di Adobe Granite).
 1. Specifica:
    * Il numero limite di giorni oltre i quali i processi completati vengono eliminati.
@@ -100,50 +100,50 @@ Puoi modificare la pianificazione per il processo di eliminazione e il periodo p
 
 Quando il numero di risorse o cartelle da eliminare supera la soglia, l’operazione di eliminazione viene eseguita in modo asincrono.
 
-1. Accedi alla console Web AEM di Jar dell&#39;SDK AEM Quickstart all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
-1. Passa a **OSGi** > **Configurazione**
+1. Accedi alla console web AEM di Quickstart Jar per l’SDK dell’AEM all’indirizzo `https://<host>:<port>/system/console` come utente amministratore.
+1. Accedi a **OSGi** > **Configurazione**
 1. Dalla console Web, apri la **[!UICONTROL configurazione della coda predefinita del processo asincrono]**.
 1. Nella casella **[!UICONTROL Threshold number of assets]** (Soglia risorse), specifica il limite di risorse o cartelle per l’elaborazione asincrona delle operazioni di eliminazione.
 
    ![Soglia per l’eliminazione delle risorse](assets/async-delete-threshold.png)
 
-1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. ad esempio, riuscito, non riuscito.
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. ad esempio, success, failed.
 1. Salva le modifiche.
 
 ### Configurare le operazioni di spostamento delle risorse asincrone {#configuring-asynchronous-move-operations}
 
 Quando il numero di risorse, cartelle o riferimenti da spostare supera la soglia, l’operazione di spostamento viene eseguita in modo asincrono.
 
-1. Accedi alla console Web AEM di Jar dell&#39;SDK AEM Quickstart all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
-1. Passa a **OSGi** > **Configurazione**
+1. Accedi alla console web AEM di Quickstart Jar per l’SDK dell’AEM all’indirizzo `https://<host>:<port>/system/console` come utente amministratore.
+1. Accedi a **OSGi** > **Configurazione**
 1. Dalla console Web, apri la **[!UICONTROL configurazione dell’elaborazione asincrona del processo di spostamento.]**
 1. Nella casella **[!UICONTROL Threshold number of assets/references]** (Soglia risorse/riferimenti), specifica il numero limite di risorse, cartelle o riferimenti per l’elaborazione asincrona delle operazioni di spostamento.
 
    ![Soglia per lo spostamento delle risorse](assets/async-move-threshold.png)
 
-1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio, riuscito, non riuscito.
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio, success, failed.
 1. Salva le modifiche.
 
 ### Configurare le operazioni di spostamento delle pagine asincrone {#configuring-asynchronous-page-move-operations}
 
 Quando il numero di riferimenti o pagine da spostare supera la soglia impostata, l’operazione di spostamento viene eseguita in modo asincrono.
 
-1. Accedi alla console Web AEM di Jar dell&#39;SDK AEM Quickstart all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
-1. Passa a **OSGi** > **Configurazione**
+1. Accedi alla console web AEM di Quickstart Jar per l’SDK dell’AEM all’indirizzo `https://<host>:<port>/system/console` come utente amministratore.
+1. Accedi a **OSGi** > **Configurazione**
 1. Dalla console Web, apri la **[!UICONTROL configurazione dell’elaborazione asincrona del processo di spostamento.]**
 1. Nel campo **[!UICONTROL Threshold number of references]** (Soglia riferimenti), specifica il numero limite di riferimenti per l’elaborazione asincrona delle operazioni di spostamento.
 
    ![Soglia per lo spostamento delle pagine ](assets/async-page-move.png)
 
-1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio, riuscito, non riuscito.
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio, success, failed.
 1. Salva le modifiche.
 
 ### Configurare le operazioni MSM asincrone {#configuring-asynchronous-msm-operations}
 
-1. Accedi alla console Web AEM di Jar dell&#39;SDK AEM Quickstart all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
-1. Passa a **OSGi** > **Configurazione**
+1. Accedi alla console web AEM di Quickstart Jar per l’SDK dell’AEM all’indirizzo `https://<host>:<port>/system/console` come utente amministratore.
+1. Accedi a **OSGi** > **Configurazione**
 1. Dalla console Web, apri la **[!UICONTROL configurazione dell’elaborazione asincrona del processo di spostamento.]**
-1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio, riuscito, non riuscito.
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio, success, failed.
 
    ![Configurazione MSM](assets/async-msm.png)
 

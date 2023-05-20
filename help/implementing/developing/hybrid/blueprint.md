@@ -144,7 +144,7 @@ Il contenitore ottiene dinamicamente i componenti figlio dall’archivio della [
 
 Il `Page` il componente estende `Container` componente. Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti figlio, incluse le pagine figlie. A questo scopo, il contenitore scorre la `:itemsOrder`, `:items`, e `:children` proprietà del relativo modello. Il `Page` componente ottiene dinamicamente i componenti figlio dall&#39;archivio del [`ComponentMapping`](#componentmapping) libreria. Il `Page` è responsabile della creazione di un&#39;istanza dei componenti figlio.
 
-### Griglia reattiva {#responsive-grid}
+### Griglia dinamica {#responsive-grid}
 
 Il componente Griglia reattiva è un contenitore. Contiene una variante specifica del provider di modelli che rappresenta le relative colonne. La griglia reattiva e le sue colonne sono responsabili della decorazione dell’elemento HTML esterno del componente del progetto con i nomi di classi specifici contenuti nel modello.
 
@@ -161,7 +161,7 @@ Vedi anche la risorsa npm [@adobe/aem-react-editable-components](https://www.npm
 
 Il componente SPA è mappato a un contenitore grafico come la griglia reattiva e deve aggiungere un segnaposto figlio virtuale durante la creazione del contenuto. Quando il contenuto dell’SPA viene creato dall’Editor pagina, viene incorporato nell’editor utilizzando un iframe e il `data-cq-editor` viene aggiunto al nodo del documento del contenuto. Quando `data-cq-editor` è presente, il contenitore deve includere un elemento HTMLElement per rappresentare l’area con cui l’autore interagisce quando inserisce un nuovo componente nella pagina.
 
-Esempio:
+Ad esempio:
 
 ```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>

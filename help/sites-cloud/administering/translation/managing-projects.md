@@ -444,7 +444,7 @@ Per confrontare le copie per lingua con il master:
    ![Confronta copie per lingua](../assets/language-copy-compare.png)
 
 1. Le due pagine (lancio e sorgente) verranno aperte una accanto all’altra.
-   * Per informazioni complete sull’utilizzo di questa funzione, consulta [Differenze tra pagine](/help/sites-cloud/authoring/features/page-diff.md).
+   * Per informazioni complete sull’utilizzo di questa funzione, consulta [Differenza di pagina](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Spostamento o ridenominazione di una pagina di origine {#move-source}
 

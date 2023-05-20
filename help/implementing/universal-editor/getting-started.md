@@ -116,7 +116,7 @@ Le connessioni utilizzate nell’app vengono memorizzate come `<meta>` tag nella
 * `<protocol>`: indica il plug-in di persistenza del servizio di persistenza dell’editor universale da utilizzare. Ad esempio, `aem`
 * `<url>`: questo è l’URL del sistema in cui le modifiche devono essere mantenute. Ad esempio, `http://localhost:4502`
 
-Identificatore `adobe:aem:editor` rappresenta la connessione per l’editor universale Adobe.
+L’identificatore `adobe:aem:editor` rappresenta la connessione per Adobe Universal Editor.
 
 Negli identificatori `itemid` verrà utilizzato il prefisso `urn` per accorciare l’identificatore.
 

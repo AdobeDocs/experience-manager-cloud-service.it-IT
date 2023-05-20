@@ -5,7 +5,7 @@ exl-id: 03c08616-2203-4b90-bed6-4836266e2507
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 11%
+ht-degree: 5%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 ## Panoramica delle funzioni {#feature-overview}
 
-La creazione di contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. L’autore vuole poter confrontare la pagina corrente con una versione precedente, evidenziando le differenze.
+La creazione dei contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. Visualizzare una versione di pagina e l’altra è inefficiente e soggetto a errori. L’autore vuole poter confrontare la pagina corrente con una versione precedente, evidenziando le differenze.
 
 La differenza di pagina consente a un utente di confrontare la pagina corrente con lanci, versioni precedenti, ecc. Per informazioni dettagliate su questa funzione utente, consulta [Differenza di pagina](/help/sites-cloud/authoring/features/page-diff.md).
 

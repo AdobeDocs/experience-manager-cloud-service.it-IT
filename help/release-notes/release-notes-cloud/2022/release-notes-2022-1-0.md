@@ -5,13 +5,13 @@ exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
 source-git-commit: a66215277ca83c011f2f4df621d055049c4c93a7
 workflow-type: tm+mt
 source-wordcount: '1082'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
-# Note sulla versione 2022.1.0 per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione 2022.1.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note sulla versione della funzione per la versione 2022.1.0 di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note sulla versione 2022.1.0 di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
