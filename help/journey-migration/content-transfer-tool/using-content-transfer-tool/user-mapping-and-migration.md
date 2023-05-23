@@ -2,10 +2,10 @@
 title: Mappatura utenti e migrazione delle entità principali
 description: Panoramica sulla mappatura degli utenti e sulla migrazione delle entità
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 22%
+source-wordcount: '788'
+ht-degree: 21%
 
 ---
 
@@ -53,3 +53,7 @@ Vengono registrati i seguenti casi specifici:
 * Se l&#39;impostazione **Cancella i contenuti esistenti nell’istanza Cloud prima dell’acquisizione** è impostato, gli utenti già trasferiti nell’istanza di Cloud Service verranno eliminati insieme all’intero archivio esistente e verrà creato un nuovo archivio in cui acquisire il contenuto. Questa opzione reimposta anche tutte le impostazioni, incluse le autorizzazioni sull’istanza del Cloud Service target ed è true per un utente amministratore aggiunto al **amministratori** gruppo. L&#39;utente amministratore deve essere aggiunto di nuovo al **amministratori** gruppo per recuperare il token di accesso per CTT.
 * Quando si esegue l’integrazione del contenuto, se il contenuto non viene trasferito perché non è stato modificato rispetto al trasferimento precedente, non vengono trasferiti né gli utenti né i gruppi associati a tale contenuto, anche se nel frattempo gli utenti e i gruppi sono cambiati. Questo perché gli utenti e i gruppi vengono migrati insieme al contenuto a cui sono associati.
 * Se l’istanza AEM Cloud Service di destinazione ha un utente con un nome utente diverso ma lo stesso indirizzo e-mail di uno degli utenti nell’istanza AEM di origine e la mappatura degli utenti è abilitata, nei registri viene scritto un messaggio di errore e l’utente AEM di origine non viene trasferito, poiché nel sistema di destinazione è consentito un solo utente con un determinato indirizzo e-mail.
+
+## Riepilogo finale e relazione {#final-report}
+
+Una volta completate correttamente l’estrazione e l’acquisizione, viene generato un rapporto che mostra i dettagli della migrazione principale. Consulta [Convalidare la migrazione dell’entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-principal-migration) per i dettagli.

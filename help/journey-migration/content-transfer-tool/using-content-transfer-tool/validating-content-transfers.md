@@ -2,9 +2,9 @@
 title: Convalida dei trasferimenti di contenuto
 description: Utilizzare lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuti
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
+source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '1070'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ La parte superiore del registro di acquisizione conterrà una voce simile a `aem
 Una volta completata l’acquisizione e avviata la convalida, nel registro di acquisizione verrà annotata la seguente voce di registro:
 
 ```
-Gathering artifacts for migration validation...  
+Gathering artifacts for migration validation...
 ```
 
 I dettagli della convalida seguiranno questa voce. Di seguito è riportato un esempio tratto da una migrazione di grandi dimensioni:
@@ -131,6 +131,24 @@ Oltre a essere incluso nel registro di acquisizione, il rapporto di convalida è
 
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+
+## Convalidare la migrazione dell’entità {#how-to-validate-principal-migration}
+
+Consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) per leggere i dettagli delle migrazioni principali e i motivi della necessità.
+
+Una volta completate correttamente l’estrazione e l’acquisizione, saranno disponibili un riepilogo e un rapporto della migrazione principale. Queste informazioni possono essere utilizzate per verificare quali utenti e gruppi sono stati migrati correttamente e, forse, per determinare perché alcuni non lo sono stati.
+
+Per visualizzare queste informazioni, vai a Cloud Acceleration Manager. Fai clic sulla scheda del progetto e poi sulla scheda Content Transfer (Trasferimento contenuti). Accedi a **Processi di acquisizione** e individua l’acquisizione da verificare. Fai clic sui tre punti (**...**) per tale acquisizione, quindi fai clic su **Visualizza riepilogo entità** nel menu a discesa.
+
+![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
+
+Verrà visualizzata una finestra di dialogo con le informazioni di riepilogo. Utilizzare le icone della guida per una descrizione più completa. Fai clic su **Scarica rapporto** per scaricare il rapporto CSV (Virgole Separated) completo.
+
+![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
+
+>[!NOTE]
+>
+>Se la mappatura utente è disattivata, verrà visualizzata un’altra variante di questa finestra di dialogo. Indica che la mappatura utente è stata disabilitata e non mostra i 3 campi che forniscono i valori di mappatura utente.
 
 ## Risoluzione dei problemi {#troubleshooting}
 
