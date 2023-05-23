@@ -1,19 +1,19 @@
 ---
-title: Assegnare tag automatici alle risorse con [!DNL Adobe Sensei] servizio intelligente
-description: Assegna tag alle risorse con un servizio artificialmente intelligente che applica tag aziendali contestuali e descrittivi.
+title: Come si aggiungono tag avanzati alle risorse in AEM?
+description: Aggiungi tag avanzati alle risorse in AEM con un servizio artificialmente intelligente che applica tag aziendali contestuali e descrittivi.
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2462'
 ht-degree: 6%
 
 ---
 
 
-# Aggiungere tag avanzati alle risorse e migliorare l’esperienza di ricerca {#smart-tag-assets-for-faster-search}
+# Aggiungere tag avanzati alle risorse in AEM {#smart-tags-assets-aem}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -24,13 +24,13 @@ Le organizzazioni che si occupano di risorse digitali utilizzano sempre più spe
 
 Rispetto ai vocabolari del linguaggio naturale, l’assegnazione di tag basati sulla tassonomia aziendale consente di allineare le risorse con le attività aziendali di un’azienda e assicura che le risorse più rilevanti vengano visualizzate nelle ricerche. Ad esempio, un produttore di automobili può taggare le immagini dell’auto con i nomi dei modelli in modo da visualizzare solo le immagini pertinenti quando viene effettuata la ricerca per progettare una campagna promozionale.
 
-In background, la funzionalità utilizza il framework artificialmente intelligente [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) per addestrare l’algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] applica automaticamente dei tag avanzati alle risorse caricate, per impostazione predefinita.
+In background, la funzionalità utilizza il framework artificialmente intelligente [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) per addestrare l’algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Per impostazione predefinita, l’AEM applica automaticamente i tag avanzati alle risorse caricate.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## Tipi di risorse supportate {#smart-tags-supported-file-formats}
+## Tipi di risorse supportati per i tag avanzati in AEM {#smart-tags-supported-file-formats}
 
 Puoi assegnare i tag ai seguenti tipi di risorse:
 
@@ -59,7 +59,7 @@ Puoi assegnare i tag ai seguenti tipi di risorse:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-[!DNL Experience Manager] per impostazione predefinita, aggiunge automaticamente i tag avanzati alle risorse basate su testo e ai video. Per aggiungere automaticamente tag avanzati alle immagini, completa le seguenti attività.
+Per impostazione predefinita, i tag avanzati vengono aggiunti automaticamente alle risorse basate su testo e ai video da AEM. Per aggiungere automaticamente tag avanzati alle immagini, completa le seguenti attività.
 
 * [Comprendere modelli e linee guida per i tag](#understand-tag-models-guidelines).
 * [Addestra il modello](#train-model).
@@ -189,9 +189,9 @@ Per verificare se il servizio Tag avanzati è stato addestrato sui tag nel set d
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Assegnare tag alle risorse con tag avanzati {#tag-assets}
+## Assegnare tag avanzati alle risorse in AEM {#tag-assets}
 
-Tutti i tipi di risorse supportate vengono automaticamente taggati da [!DNL Experience Manager Assets] quando viene caricato. Per impostazione predefinita, l’assegnazione tag è attivata e funziona. [!DNL Experience Manager] applica i tag appropriati in tempo quasi reale. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Tutti i tipi di risorse supportate vengono automaticamente taggati da [!DNL Experience Manager Assets] quando viene caricato. Per impostazione predefinita, l’assegnazione tag è attivata e funziona. L’AEM applica i tag avanzati appropriati quasi in tempo reale. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * Per immagini e video, i tag avanzati si basano su alcuni aspetti visivi.
 
