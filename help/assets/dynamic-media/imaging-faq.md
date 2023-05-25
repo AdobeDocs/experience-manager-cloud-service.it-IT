@@ -1,21 +1,21 @@
 ---
-title: Imaging avanzato
+title: Domande frequenti sulla tecnologia Smart Imaging
 description: Scopri in che modo l’imaging intelligente con intelligenza artificiale di Adobe Sensei applica le caratteristiche di visualizzazione uniche di ogni utente per fornire automaticamente le immagini giuste ottimizzate per la propria esperienza, con conseguente miglioramento delle prestazioni e del coinvolgimento.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
 mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 2b1030a32733154491aa178f390038ef7d552151
+source-git-commit: b5c887d6a6ad1db5094609a8bc1b738c9ba5e8d6
 workflow-type: tm+mt
-source-wordcount: '3630'
+source-wordcount: '3541'
 ht-degree: 1%
 
 ---
 
-# Imaging avanzato {#smart-imaging}
+# Domande frequenti sulla tecnologia Smart Imaging {#smart-imaging}
 
-+++**Che cos&#39;è l&#39;imaging avanzato?** {#what-is-smart-imaging}
++++**Che cos&#39;è l&#39;imaging avanzato?**
 
 La tecnologia di imaging intelligente applica le funzionalità di intelligenza artificiale di Adobe Sensei e funziona con i &quot;predefiniti immagine&quot; esistenti. Funziona per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
@@ -62,7 +62,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 +++
 
-+++## Quali sono i vantaggi principali della tecnologia Smart Imaging più recente? {#what-are-the-key-benefits-of-smart-imaging}
++++**Quali sono i vantaggi principali della tecnologia Smart Imaging di ultima generazione?**
 
 La tecnologia Smart Imaging migliora le prestazioni di consegna delle immagini ottimizzando automaticamente le dimensioni dei file immagine in base al browser client in uso, alla visualizzazione del dispositivo e alle condizioni di rete. Poiché le immagini rappresentano la maggior parte del tempo di caricamento di una pagina, qualsiasi miglioramento delle prestazioni può avere un impatto profondo sui KPI aziendali, ad esempio tassi di conversione più elevati, tempo trascorso su un sito e tassi di mancato recapito del sito più bassi.
 
@@ -74,9 +74,7 @@ I vantaggi più recenti della tecnologia Smart Imaging includono:
 * Proporzioni pixel dispositivo (`dpr`)
 * Larghezza di banda di rete (`network`)
 
-+++
-
-**Informazioni sulla conversione formato browser (bfc)** {#bfc}
+**Informazioni sulla conversione formato browser (bfc)**
 
 Attivare la conversione del formato del browser aggiungendo `bfc=on` all’URL dell’immagine converte automaticamente JPEG e PNG in AVIF con perdita di dati, WebP con perdita di dati, JPEGXR con perdita di dati, JPEG 2000 con perdita di dati per browser diversi. Per i browser che non supportano tali formati, la tecnologia Smart Imaging continua a essere utilizzata come JPEG o PNG. Insieme al formato, la qualità del nuovo formato viene ricalcolata da Smart Imaging.
 
@@ -84,7 +82,7 @@ Attivare la conversione del formato del browser aggiungendo `bfc=on` all’URL d
 
 Vedi anche [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) nell’API di server e rendering immagini di Dynamic Media.
 
-**Informazioni sulle proporzioni pixel del dispositivo (dpr)** ottimizzazione {#dpr}
+**Informazioni sulle proporzioni pixel del dispositivo (dpr)** ottimizzazione
 
 Il rapporto pixel del dispositivo (DPR, Device Pixel Ratio), noto anche come rapporto pixel CSS, è la relazione tra i pixel fisici e i pixel logici di un dispositivo. Soprattutto con l&#39;avvento degli schermi retina, la risoluzione pixel dei dispositivi mobili moderni sta crescendo a un ritmo veloce.
 
@@ -110,7 +108,7 @@ Attualmente, la densità di pixel della visualizzazione proviene dai valori di i
 
 Vedi anche [Utilizzo delle immagini](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) e [Quando si lavora con Ritaglio avanzato](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-**Informazioni sull&#39;ottimizzazione della larghezza di banda di rete** {#network}
+**Informazioni sull&#39;ottimizzazione della larghezza di banda di rete**
 
 L&#39;attivazione della larghezza di banda consente di regolare automaticamente la qualità dell&#39;immagine trasmessa in base all&#39;effettiva larghezza di banda della rete. In caso di larghezza di banda insufficiente, l&#39;ottimizzazione DPR (Device Pixel Ratio) viene automaticamente disattivata, anche se è già attiva.
 
@@ -133,17 +131,17 @@ I valori di DPR e larghezza di banda di rete si basano sui valori lato client ri
 
 +++
 
-+++**Esistono costi di licenza associati all&#39;imaging avanzato?** {#are-there-any-licensing-costs-associated-with-smart-imaging}
++++**L&#39;imaging intelligente comporta costi di licenza?**
 
 No. Smart Imaging è incluso nella licenza esistente. Questa regola è valida per Dynamic Media Classic o Experience Manager - Dynamic Media (on-prem, AMS e Experience Manager as a Cloud Service).
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Smart Imaging non è disponibile per i clienti Dynamic Media - Hybrid.
 
 +++
 
-+++**Come funziona l&#39;imaging avanzato?** {#how-does-smart-imaging-work}
++++**Come funziona l&#39;imaging avanzato?**
 
 Quando un’immagine viene richiesta da un utente, Smart Imaging controlla le caratteristiche dell’utente e la converte nel formato appropriato in base al browser in uso. Queste conversioni di formato vengono eseguite in modo da non compromettere la fedeltà visiva. La tecnologia Smart Imaging converte automaticamente le immagini in diversi formati in base alla funzionalità del browser, nel modo seguente.
 
@@ -158,7 +156,7 @@ Se la dimensione dell&#39;immagine originale è inferiore a quella prodotta da S
 
 +++
 
-## Quali formati di immagine sono supportati? {#what-image-formats-are-supported}
++++**Quali formati di immagine sono supportati?**
 
 Per la creazione di immagini avanzate sono supportati i seguenti formati di immagine:
 
@@ -169,13 +167,17 @@ Per il formato di file immagine JPEG, la qualità del nuovo formato viene ricalc
 
 Per i formati di file di immagine che supportano la trasparenza come PNG, puoi configurare Smart Imaging per fornire file AVIF e WebP con perdita di dati. Per la conversione di formato con perdita di dati, Smart Imaging utilizza la qualità indicata nell’URL dell’immagine oppure la qualità configurata nell’account aziendale di Dynamic Media.
 
-## Come funziona la tecnologia Smart Imaging con i predefiniti immagine esistenti già in uso? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
++++
 
-Smart Imaging funziona con i predefiniti immagine esistenti e osserva tutte le impostazioni immagine. Ciò che cambia è il formato dell’immagine, o l’impostazione della qualità, o entrambi. Per la conversione del formato, Smart Imaging mantiene la piena fedeltà visiva come definita dalle impostazioni predefinite dell&#39;immagine, ma con dimensioni di file inferiori.
++++**Smart Imaging funziona con i miei predefiniti immagine esistenti?**
+
+Sì. Smart Imaging funziona con i predefiniti immagine esistenti e osserva tutte le impostazioni immagine. Ciò che cambia è il formato dell’immagine, o l’impostazione della qualità, o entrambi. Per la conversione del formato, Smart Imaging mantiene la piena fedeltà visiva come definita dalle impostazioni predefinite dell&#39;immagine, ma con dimensioni di file inferiori.
 
 Supponiamo ad esempio che un predefinito immagine sia definito con formato JPEG, dimensioni 500 x 500, qualità=85 e maschera di contrasto=0.1,1,5. Quando Smart Imaging rileva che un utente si trova su un browser Chrome, l’immagine viene convertita in formato WebP, con dimensioni 500 x 500. E, unsharp mask=0.1,1,5 è a una qualità WebP che corrisponde a una qualità JPEG di 85 il più vicino possibile. L’ingombro di tale conversione WebP viene confrontato con il JPEG e viene restituito il più piccolo dei due.
 
-## È necessario modificare URL, predefiniti immagine o distribuire nuovo codice sul sito per Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
++++
+
++++**È necessario modificare URL, predefiniti immagine o distribuire nuovo codice sul sito?**
 
 No. La tecnologia Smart Imaging funziona perfettamente con gli URL immagine e i predefiniti immagine esistenti. Inoltre, Smart Imaging non richiede di aggiungere codice al sito web per rilevare il browser di un utente. Tutte queste funzionalità vengono gestite automaticamente.
 
@@ -187,13 +189,17 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 <!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-## Smart Imaging funziona con HTTPS? E HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
++++
 
-La tecnologia Smart Imaging funziona con le immagini distribuite tramite HTTP o HTTPS. Inoltre, funziona anche su HTTP/2.
++++**Smart Imaging funziona con HTTPS? E HTTP/2?**
 
-## Posso utilizzare Smart Imaging? {#am-i-eligible-to-use-smart-imaging}
+Sì, a entrambe le domande. La tecnologia Smart Imaging funziona con le immagini distribuite tramite HTTP o HTTPS. Inoltre, funziona anche su HTTP/2.
 
-Per utilizzare Smart Imaging, l’account Dynamic Media Classic o Dynamic Media dell’azienda su Experience Manager deve soddisfare i seguenti requisiti:
++++
+
++++**Posso utilizzare Smart Imaging?**
+
+Dipende. Per utilizzare Smart Imaging, l’account Dynamic Media Classic o Dynamic Media dell’azienda su Experience Manager deve soddisfare i seguenti requisiti:
 
 * Utilizza la rete CDN (Content Delivery Network) fornita dall’Adobe come parte della licenza.
 * Utilizza un dominio dedicato (ad esempio, `images.company.com` o `mycompany.scene7.com`), non un dominio generico (ad esempio, `s7d1.scene7.com`, `s7d2.scene7.com`, o `s7d13.scene7.com`).
@@ -204,9 +210,11 @@ Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]
 
 Il primo dominio personalizzato non comporta costi aggiuntivi con una licenza Dynamic Media.
 
-## Qual è il processo per abilitare Smart Imaging per il mio account? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
++++
 
-Viene avviata una richiesta di utilizzo di Smart Imaging, che non viene abilitata automaticamente.
++++**Posso abilitare Smart Imaging per il mio account?**
+
+No. Viene avviata una richiesta di utilizzo di Smart Imaging, che non viene abilitata automaticamente.
 
 Crea un caso di supporto come descritto di seguito. Nel tuo caso di supporto, assicurati di indicare quali delle seguenti funzionalità di Smart Imaging (una o più) desideri abilitare sul tuo account:
 
@@ -259,7 +267,9 @@ Se si dispone già di Smart Imaging abilitato con WebP, ma si desiderano altre n
    1. Se utilizzi Dynamic Media Classic, vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazione pubblicazione]** > **[!UICONTROL Server immagini]**. Imposta il **[!UICONTROL Durata predefinita cache client]** a 24 o più.
    1. Se utilizzi Dynamic Media, segui [queste istruzioni](config-dm.md). Imposta il **[!UICONTROL Scade]** 24 ore o più.
 
-## Quando posso aspettarmi che il mio account sia abilitato con Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
++++
+
++++**Quando il mio account è abilitato con Smart Imaging?**
 
 Le richieste vengono elaborate nell’ordine in cui vengono ricevute dall’Assistenza clienti, in base alla Lista d’attesa.
 
@@ -267,13 +277,19 @@ Le richieste vengono elaborate nell’ordine in cui vengono ricevute dall’Assi
 >
 >Il lead time può essere lungo perché l’abilitazione di Smart Imaging richiede la cancellazione della cache da parte di un Adobe. Pertanto, è possibile gestire solo poche transizioni cliente in un dato momento.
 
-## Quali rischi comporta il passaggio all&#39;uso di Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
++++
+
++++**L&#39;uso di Smart Imaging comporta dei rischi?**
 
 Non esiste alcun rischio per una pagina web del cliente. Tuttavia, la transizione a Smart Imaging elimina la cache CDN. Questa operazione comporta il passaggio a una nuova configurazione di Dynamic Media Classic o Dynamic Media su Experience Manager.
 
-Durante la transizione iniziale, le immagini non memorizzate in cache hanno colpito direttamente i server di origine di Adobe fino a quando la cache non viene nuovamente generata. Adobe prevede quindi di gestire alcune transizioni cliente alla volta in modo da mantenere prestazioni accettabili durante il richiamo delle richieste dall’origine. Per la maggior parte dei clienti, la cache è completamente integrata di nuovo nella rete CDN entro circa 1-2 giorni.
+Durante la transizione iniziale, le immagini non memorizzate in cache hanno colpito direttamente i server di origine di Adobe fino a quando la cache non viene nuovamente generata. Adobe prevede quindi di gestire alcune transizioni cliente alla volta in modo da mantenere prestazioni accettabili durante il richiamo delle richieste dall’origine. Per la maggior parte dei clienti, la cache viene di nuovo completamente creata sulla rete CDN entro circa uno o due giorni.
 
-## Come posso verificare se Smart Imaging funziona come previsto?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
++++
+
++++**Posso verificare se Smart Imaging funziona?**
+
+Sì. È possibile effettuare le seguenti operazioni:
 
 1. Dopo aver configurato l’account con Smart Imaging, carica un URL immagine Dynamic Media Classic o Adobe Experience Manager - Dynamic Media sul browser.
 1. Apri il riquadro per sviluppatori di Chrome andando su **[!UICONTROL Visualizza]** > **[!UICONTROL Sviluppatore]** > **[!UICONTROL Strumenti per sviluppatori]** nel browser. In alternativa, scegli uno degli strumenti di sviluppo del browser desiderato.
@@ -292,9 +308,11 @@ Durante la transizione iniziale, le immagini non memorizzate in cache hanno colp
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
-## Come posso conoscere il miglioramento delle prestazioni? Esiste un modo per conoscere i vantaggi della tecnologia Smart Imaging? {#benefits}
++++
 
-L’intestazione Smart Imaging determina i vantaggi della tecnologia Smart Imaging. Quando Smart Imaging è abilitato, dopo aver richiesto un&#39;immagine, sotto **[!UICONTROL Intestazioni di risposta]** intestazione, puoi vedere `-X-Adobe-Smart-Imaging` come nell’esempio evidenziato seguente:
++++**Esiste un modo per conoscere i vantaggi della tecnologia Smart Imaging?**
+
+Sì. L’intestazione Smart Imaging determina i vantaggi della tecnologia Smart Imaging. Quando Smart Imaging è abilitato, dopo aver richiesto un&#39;immagine, sotto **[!UICONTROL Intestazioni di risposta]** intestazione, puoi vedere `-X-Adobe-Smart-Imaging` come nell’esempio evidenziato seguente:
 
 ![Intestazione Smart Imaging](/help/assets/dynamic-media/assets/smartimagingheader.png)
 
@@ -315,11 +333,15 @@ Questa intestazione indica quanto segue:
 >`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 >Per invalidare l’intera cache, è necessario creare un caso di supporto.
 
-## Come posso disattivare l’ottimizzazione AVIF in Smart Imaging?{#disable-avif}
++++
 
-Se si desidera tornare al WebP in servizio per impostazione predefinita, creare un caso di supporto per lo stesso. Come sempre, è possibile disattivare Smart Imaging aggiungendo il parametro `bfc=off` all&#39;URL dell&#39;immagine. Tuttavia, non è possibile selezionare WebP o AVIF nel modificatore URL per Smart Imaging. Questa funzionalità viene mantenuta a livello di account aziendale.
++++**È possibile disattivare l’ottimizzazione AVIF in Smart Imaging?**
 
-## È possibile disattivare Smart Imaging per qualsiasi richiesta?{#turning-off-smart-imaging}
+Sì. Se si desidera tornare al WebP in servizio per impostazione predefinita, creare un caso di supporto per lo stesso. Come sempre, è possibile disattivare Smart Imaging aggiungendo il parametro `bfc=off` all&#39;URL dell&#39;immagine. Tuttavia, non è possibile selezionare WebP o AVIF nel modificatore URL per Smart Imaging. Questa funzionalità viene mantenuta a livello di account aziendale.
+
++++
+
++++**È possibile disattivare Smart Imaging per qualsiasi richiesta?**
 
 Sì. È possibile disattivare Smart Imaging aggiungendo uno dei seguenti modificatori:
 
@@ -327,15 +349,19 @@ Sì. È possibile disattivare Smart Imaging aggiungendo uno dei seguenti modific
 * `dpr=off` per disattivare Proporzioni pixel dispositivo. Vedi anche [Proporzioni pixel dispositivo](#dpr).
 * `network=off` per disattivare la larghezza di banda della rete. Vedi anche [Larghezza di banda di rete](#network).
 
-## Quale &quot;messa a punto&quot; è disponibile? È possibile definire impostazioni o comportamenti? {#tuning-settings}
++++
 
-Smart Imaging dispone di tre opzioni che è possibile abilitare o disabilitare.
++++**È possibile &quot;regolare&quot; la tecnologia Smart Imaging?**
+
+Sì. Smart Imaging dispone di tre opzioni che è possibile abilitare o disabilitare.
 
 * [Conversione formato browser](#bfc)
 * [Proporzioni pixel dispositivo](#dpr)
 * [Larghezza di banda di rete](#network)
 
-## Ho un URL con fmt=tif sul browser web Chrome. Tuttavia, la richiesta non riesce e viene restituito un errore ImageServer. Perché? {#fmt-tif}
++++
+
++++**Perché la mia richiesta non riesce se dispongo di un URL con fmt=tif sul browser web Chrome?**
 
 Questo errore non si verifica se Smart Imaging non è abilitato sul tuo account. Smart Imaging funziona solo con i formati JPEG o PNG.
 
@@ -345,39 +371,57 @@ Per evitare questo errore, puoi effettuare le seguenti operazioni:
 * Non utilizzare il `fmt` un modificatore, oppure
 * Utilizza un formato preferito dal browser e definito da Smart Imaging. Ad esempio, puoi utilizzare WebP per il browser web Chrome.
 
-## Desidero scaricare un’immagine TIFF dall’URL di un’immagine. Come lo faccio? {#download-tif}
++++
 
-Aggiungi `fmt=tif` e `bfc=off` al percorso URL dell&#39;immagine.
++++**Posso scaricare un&#39;immagine TIFF dall&#39;URL di un&#39;immagine?**
 
-## Smart Imaging gestisce solo il formato dell&#39;immagine o le impostazioni di qualità dell&#39;immagine per ottenere risultati ottimali?
+Sì. Aggiungi `fmt=tif` e `bfc=off` al percorso URL dell&#39;immagine.
 
-La tecnologia Smart Imaging utilizza sia il formato che la qualità. Gli altri parametri rimangono invariati, se richiesto nell’URL dell’immagine.
++++
 
-## Se Smart Imaging gestisce le impostazioni di qualità, è possibile impostare valori minimi e massimi? In altre parole, una qualità non inferiore a 60 e non superiore a 80? {#quality-setting}
++++**Smart Imaging gestisce le impostazioni relative al formato e alla qualità delle immagini?**
 
-Attualmente non esiste un provisioning di questo tipo.
+Sì. La tecnologia Smart Imaging utilizza sia il formato che la qualità. Gli altri parametri rimangono invariati, se richiesto nell’URL dell’immagine.
 
-## Smart Imaging regola automaticamente l&#39;impostazione di qualità percentuale o è un&#39;impostazione che viene regolata manualmente e si applica a tutte le immagini? Entro quale intervallo? {#percent-quality}
++++
 
-La tecnologia Smart Imaging regola automaticamente la percentuale di qualità. Questa percentuale di qualità è determinata utilizzando un algoritmo di apprendimento automatico sviluppato da Adobe. Questa percentuale non è specifica per l&#39;intervallo.
++++**È possibile impostare una qualità minima e massima?**
 
-## Con Smart Imaging, quali comandi di server immagini sono supportati o ignorati? {#support-ignore}
+No. Attualmente non esiste un provisioning di questo tipo.
+
++++
+
++++**Smart Imaging regola l&#39;impostazione di qualità percentuale dell&#39;output?**
+
+Sì. La tecnologia Smart Imaging regola automaticamente la percentuale di qualità. Questa percentuale di qualità è determinata utilizzando un algoritmo di apprendimento automatico sviluppato da Adobe. Questa percentuale non è specifica per l&#39;intervallo.
+
++++
+
++++**Quali comandi di Image Server sono supportati o ignorati?**
 
 Gli unici comandi ignorati sono `fmt` e `qlt`. Sono supportati tutti i comandi rimanenti.
 
-## Solo le immagini JPEG vengono sostituite da Smart Imaging? Cosa succede se si richiede un WebP, un PNG o altro? {#replace-request}
++++
 
-Questa funzionalità funziona solo per JPEG e PNG.
++++**Solo JPEG e PNG vengono sostituiti da Smart Imaging?**
 
-## Perché un’immagine JPEG a volte viene restituita a Chrome invece che a WebP? {#jpeg-returned}
+Sì. Questa funzionalità funziona solo per JPEG e PNG.
+
++++
+
++++**Perché JPEG a volte viene restituito a Chrome invece di WebP?**
 
 La tecnologia Smart Imaging determina se la conversione è utile o meno. Restituisce la nuova immagine solo se la conversione è utile.
 
-## Perché la funzionalità Device Pixel Ratio (dpr) non funziona come previsto con le immagini composite? {#composite-images}
++++
+
++++**Perché Device Pixel Ratio (dpr) non funziona con le immagini composite?**
 
 Se un&#39;immagine composita coinvolge troppi livelli, la funzionalità dpr potrebbe essere interessata durante l&#39;utilizzo di un modificatore di posizione. Questo problema è noto e verrà risolto nelle versioni future di Smart Imaging. Se altre funzionalità di Smart Imaging non funzionano come previsto, puoi creare un caso di supporto per segnalare il problema.
 
-## Perché Smart Imaging PNG viene ancora convertito in WebP/AVIF senza perdite? {#convert-to-lossless}
++++
+
++++**Perché Smart Imaging PNG viene convertito in WebP/AVIF senza perdita di dati?**
 
 Poiché il PNG è un formato senza perdita di dati, le versioni precedenti di WebP e AVIF consegnate erano prive di perdita e quindi di dimensioni maggiori del previsto. La tecnologia Smart Imaging ora supporta la conversione con perdita di dati. È possibile utilizzare il modificatore `cache=update` (una sola volta) in una richiesta di immagine per risolvere il problema. Esempio di utilizzo del modificatore:
 
@@ -385,9 +429,13 @@ Poiché il PNG è un formato senza perdita di dati, le versioni precedenti di We
 
 Per invalidare l’intera cache, devi creare un caso di supporto che richieda tale impegno.
 
-## Come posso continuare a utilizzare il PNG per una conversione senza perdite in Smart Imaging? {#continue-using}
++++
 
-La tecnologia Smart Imaging ora supporta la conversione con perdita di dati in base al livello di qualità. Per continuare a utilizzare la conversione senza perdita di dati, puoi utilizzare la qualità 100 impostata tramite l’impostazione della tua azienda oppure tramite l’URL dell’immagine utilizzando `qlt=100` nel percorso.
++++**Posso continuare a utilizzare il PNG per una conversione senza perdite in Smart Imaging?**
+
+Sì. La tecnologia Smart Imaging ora supporta la conversione con perdita di dati in base al livello di qualità. Per continuare a utilizzare la conversione senza perdita di dati, puoi utilizzare la qualità 100 impostata tramite l’impostazione della tua azienda oppure tramite l’URL dell’immagine utilizzando `qlt=100` nel percorso.
+
++++
 
 
 
