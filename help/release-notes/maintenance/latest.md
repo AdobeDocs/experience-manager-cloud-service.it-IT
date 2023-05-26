@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 56eaacc1ad78b47ef90f9c04fa09a4b751bff78d
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 68%
+ht-degree: 76%
 
 ---
 
@@ -15,7 +15,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 11983 {#release-11983}
 
-Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 11983, rilasciata pubblicamente il 17 maggio 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 11873.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 11983, rilasciata pubblicamente il 17 maggio 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 11873.
 
 L’abilitazione delle funzioni per questa versione di manutenzione ti darà accesso al set di funzioni completo. Consulta le [note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md) per ottenere informazioni dettagliate.
 

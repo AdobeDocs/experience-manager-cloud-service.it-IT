@@ -5,7 +5,7 @@ exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -33,9 +33,9 @@ L’autore utilizza il cosiddetto **ambiente di authoring**, che fornisce un’i
 
 >[!NOTE]
 >
->Il tuo account necessita dei diritti di accesso appropriati per creare, modificare o pubblicare contenuti.
+>Per creare, modificare o pubblicare contenuti, il tuo account deve disporre dei diritti di accesso appropriati.
 
-A seconda della configurazione dell’istanza e dei diritti di accesso personali, puoi eseguire molte attività sul contenuto, tra cui:
+A seconda della configurazione dell’istanza e dei diritti di accesso personali, puoi eseguire molte attività sul contenuto, tra cui (tra le altre):
 
 * Generazione di nuovi contenuti o modifica dei contenuti esistenti in una pagina
 * Utilizzo di modelli predefiniti per creare nuove pagine di contenuti
@@ -54,9 +54,9 @@ Sono inoltre disponibili attività amministrative per la gestione dei contenuti:
 
 ## Anteprima del contenuto {#previewing-content}
 
-AEM offre anche un servizio di anteprima Sites che consente agli sviluppatori e agli autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione e sia disponibile pubblicamente.
+AEM offre anche un servizio di anteprima di Sites che consente a sviluppatori e autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che venga inserito in un ambiente di pubblicazione e divenga disponibile.
 
-Consulta [Anteprima del contenuto](/help/sites-cloud/authoring/fundamentals/previewing-content.md) per ulteriori dettagli.
+Ulteriori dettagli in [Anteprima del contenuto](/help/sites-cloud/authoring/fundamentals/previewing-content.md).
 
 ## Ambiente di pubblicazione {#publish-environment}
 

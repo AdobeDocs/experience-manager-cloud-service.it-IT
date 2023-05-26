@@ -5,7 +5,7 @@ exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
 source-wordcount: '2250'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -197,7 +197,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
 
       >[!NOTE]
       >
-      >Il file della libreria di Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), è una nuova libreria di implementazione di Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola.
+      >Il file della libreria di Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=it), è una nuova libreria di implementazione di Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola.
       >
       >mbox.js è stato dichiarato obsoleto e verrà rimosso in una fase successiva.
       >

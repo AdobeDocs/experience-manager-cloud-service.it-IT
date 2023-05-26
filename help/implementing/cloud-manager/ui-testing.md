@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
 workflow-type: tm+mt
 source-wordcount: '2411'
-ht-degree: 75%
+ht-degree: 77%
 
 ---
 
@@ -248,14 +248,14 @@ Se implementi l’immagine Docker con altri linguaggi di programmazione o esecuz
 >
 >Per eseguire i test funzionali dal computer locale, crea un utente con autorizzazioni di tipo amministratore per ottenere lo stesso comportamento.
 
-* L’infrastruttura containerizzata che ha l’ambito per i test funzionali è limitata dai seguenti limiti:
+* L&#39;infrastruttura a contenitori per il test funzionale è limitata dai seguenti vincoli:
 
 | Tipo | Valore | Descrizione |
 |----------------------|-------|-----------------------------------------------------------------------|
-| CPU | 2.0 | Quantità di tempo CPU riservato per esecuzione del test |
+| CPU | 2.0 | Quantità di tempo CPU riservato per ogni esecuzione di test |
 | Memoria | 1Gi | Quantità di memoria allocata al test, valore in gibibyte |
-| Timeout | 30m | La durata dopo la quale il test verrà terminato. |
-| Durata consigliata | 15m | L’Adobe consiglia di non richiedere più tempo per la scrittura dei test. |
+| Timeout | 30 min | Durata dopo la quale il test verrà terminato. |
+| Durata consigliata | 15 min | L’Adobe consiglia di non richiedere più tempo per la scrittura dei test. |
 
 >[!NOTE]
 >
@@ -289,7 +289,7 @@ Puoi utilizzare le funzioni di assistenza per creare screenshot tramite i test.
 * JavaScript: [comando takeScreenshot](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Comandi](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Se durante l’esecuzione di un test dell’interfaccia utente viene creato un archivio dei risultati del test, puoi scaricarlo da Cloud Manager utilizzando il pulsante `Download Details` sotto il passaggio ](/help/implementing/cloud-manager/deploy-code.md) [**Test interfaccia utente personalizzato**.
+Se durante l’esecuzione di un test dell’interfaccia utente viene creato un archivio dei risultati del test, puoi scaricarlo da Cloud Manager utilizzando il pulsante `Download Details` sotto il passaggio [**Test interfaccia utente personalizzato** ](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Caricamento dei file {#upload-files}
 
@@ -309,7 +309,9 @@ I test a volte richiedono il caricamento di file nell’applicazione sottoposta 
 
 ## Esecuzione locale dei test dell’interfaccia utente {#run-ui-tests-locally}
 
-Prima di attivare i test dell’interfaccia utente in una pipeline di Cloud Manager, si consiglia di eseguire i test dell’interfaccia utente a livello locale in base a [SDK AS A CLOUD SERVICE AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) o contro un&#39;istanza effettiva as a Cloud Service dell&#39;AEM.
+Prima di attivare i test dell’interfaccia utente in una pipeline di Cloud Manager, si consiglia di eseguire i test dell’interfaccia utente localmente per
+l’[SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) o
+per un’istanza reale di AEM as a Cloud Service.
 
 ### Esempio di prova Cypress {#cypress-sample}
 

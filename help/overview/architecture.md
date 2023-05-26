@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
 workflow-type: tm+mt
 source-wordcount: '1807'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -58,9 +58,9 @@ Tale comportamento:
 
 La scalabilità delle istanze per tenant del servizio si applica ai due assi:
 
-* Orizzontale: il numero di nodi per un determinato servizio viene aumentato o diminuito automaticamente, consentendo comunque singole configurazioni predefinite.
+* Orizzontale: il numero di nodi per un determinato servizio viene aumentato o diminuito automaticamente, consentendo comunque configurazioni predefinite individuali.
 
-* Verticale: la memoria e la capacità della CPU allocate possono essere aumentate o ridotte tramite la configurazione per un numero fisso di nodi per soddisfare i singoli requisiti in base alle esigenze.
+* Verticale: la memoria e la capacità della CPU allocate possono essere potenziate o ridotte tramite la configurazione di un numero fisso di nodi per soddisfare i singoli requisiti in base alle esigenze.
 
 ## Ambienti {#environments}
 

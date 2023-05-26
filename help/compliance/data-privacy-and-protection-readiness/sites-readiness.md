@@ -5,7 +5,7 @@ exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
 source-wordcount: '1031'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessa
 
 AEM Sites include un’integrazione opzionale con Personalization Foundation by Target che utilizza funzionalità interne al servizio Adobe Target On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati (RGPD)](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati (RGPD)](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=it).
 
 ## ContextHub {#contexthub}
 

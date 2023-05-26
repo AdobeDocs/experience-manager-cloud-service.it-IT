@@ -1,17 +1,17 @@
 ---
 title: Configurazione delle impostazioni OSGi per il livello di anteprima
-description: Scopri come configurare il servizio di anteprima AEM per visualizzare in anteprima i contenuti prima della pubblicazione.
+description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima i contenuti prima della pubblicazione.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # Configurazione delle impostazioni OSGi per il livello di anteprima {#configure-osgi-preview-tier}
 
-AEM offre un servizio di anteprima Sites che consente a sviluppatori e autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione e sia disponibile pubblicamente.
+AEM offre un servizio di anteprima Sites che consente agli sviluppatori e agli autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione e sia disponibile pubblicamente.
 
 Consente di visualizzare in anteprima una serie di esperienze che non sarebbero altrimenti visibili dall’ambiente di authoring. Ad esempio, transizioni di pagina, frammenti di esperienza e altro contenuto solo lato pubblicazione.
 

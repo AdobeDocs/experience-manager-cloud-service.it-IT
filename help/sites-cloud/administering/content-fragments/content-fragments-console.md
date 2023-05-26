@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -72,14 +72,14 @@ In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ord
 
 ## Azioni {#actions}
 
-All’interno della console è disponibile una serie di azioni che puoi utilizzare, direttamente o dopo aver selezionato un frammento specifico:
+Nella console sono disponibili diverse azioni utilizzabili direttamente o dopo aver selezionato un frammento specifico:
 
-* Varie azioni sono direttamente [disponibile dalla console](#available-actions)
-* È possibile [seleziona uno o più frammenti di contenuto per visualizzare le azioni appropriate](#actions-selected-content-fragment)
+* Varie azioni sono [disponibili direttamente dalla console](#available-actions)
+* È possibile [selezionare uno o più frammenti di contenuto per visualizzare le azioni disponibili](#actions-selected-content-fragment).
 
-### Azioni (non selezionata) {#actions-unselected}
+### Azioni (non selezionate) {#actions-unselected}
 
-Alcune azioni sono disponibili dalla console, senza selezionare un frammento di contenuto specifico:
+Alcune azioni sono disponibili dalla console senza selezionare un frammento di contenuto specifico:
 
 * **[Creare](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** un nuovo frammento di contenuto
 * [Filtrare](#filtering-fragments) i frammenti di contenuto in base a una selezione di predicati e salvare il filtro per utilizzi futuri

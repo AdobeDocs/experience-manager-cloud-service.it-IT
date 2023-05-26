@@ -5,7 +5,7 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -114,9 +114,9 @@ Negli ambienti sospesi è ancora possibile eseguire distribuzioni e aggiornament
 
 * Gli ambienti in un programma sandbox vengono automaticamente sospesi dopo otto ore di inattività.
    * L’inattività è definita dall’assenza di richieste ricevute dal servizio di Author, Anteprima e Publish.
-   * Una volta sospesi, possono essere [riattivazione manuale.](#de-hibernation-introduction)
+   * Una volta ibernati, possono essere [riattivati manualmente.](#de-hibernation-introduction)
 * I programmi sandbox vengono eliminati dopo sei mesi di sospensione continua. Al termine di questo periodo, possono essere ricreati.
 
 >[!NOTE]
 >
->Solo gli ambienti sandbox vengono eliminati automaticamente dopo sei mesi di sospensione continua. Viene mantenuto il programma sandbox con il relativo archivio e codice.
+>Solo gli ambienti sandbox vengono eliminati automaticamente dopo sei mesi di ibernazione continua. Il programma sandbox con il relativo archivio e codice viene mantenuto.

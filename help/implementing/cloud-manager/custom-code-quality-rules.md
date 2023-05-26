@@ -5,7 +5,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
 workflow-type: tm+mt
 source-wordcount: '3508'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Questa pagina descrive le regole per la qualità del codice personalizzato esegu
 
 >[!NOTE]
 >
->Le regole complete di SonarQube non sono disponibili per il download a causa di informazioni proprietarie di Adobe. È possibile scaricare l’elenco completo delle regole [utilizzando questo collegamento.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continua a leggere questo documento per le descrizioni e gli esempi delle regole.
+>Le regole SonarQube complete non sono disponibili per il download a causa di informazioni proprietarie Adobe. È possibile scaricare l’elenco completo delle regole [utilizzando questo collegamento.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continua a leggere questo documento per descrizioni ed esempi delle regole.
 
 >[!NOTE]
 >
