@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1036'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Inizia nell’editor frammenti di contenuto con l’app di esempio fornita con l
 
 ![Anteprima dell’app](assets/do-not-localize/preview-app-1.png)
 
-## Modificare un’intestazione nell’app {#edit-app}
+## Modifica un’intestazione nell’app {#edit-app}
 
 L’editor frammenti di contenuto mostra il layout di base dell’app come frammento di contenuto di una pagina. I **pannelli** rappresentano le varie pagine dell’app, ciascuna delle quali è costituita da un proprio frammento di contenuto. Modificando questi frammenti, puoi modificare il contenuto dell’app.
 
@@ -63,7 +63,7 @@ L’editor frammenti di contenuto mostra il layout di base dell’app come framm
 
 Come vedi, è davvero semplice aggiornare i contenuti all&#39;interno di un&#39;app React integrata nel CMS AEM headless.
 
-## Scambio di un&#39;immagine nell&#39;app {#change-image}
+## Cambia un’immagine nell’app {#change-image}
 
 Ora che hai modificato un titolo nell’app, prova a cambiare un’immagine.
 
@@ -91,7 +91,7 @@ Ora che hai modificato un titolo nell’app, prova a cambiare un’immagine.
 
 Come vedi, è davvero facile aggiornare immagini e risorse nelle app con il CMS AEM headless.
 
-## Aggiungere un riferimento a un nuovo frammento di contenuto nell’app {#create-moment}
+## Aggiungi all’app un riferimento a un nuovo frammento di contenuto {#create-moment}
 
 Ora che hai aggiornato l’immagine del biker, vediamo come aggiungere nuovi contenuti a un’app creando e facendo riferimento a un nuovo frammento di contenuto. Aggiungi una chiamata al prodotto gestita da un frammento di contenuto “opportunità di acquisto” al secondo pannello dell’app.
 
