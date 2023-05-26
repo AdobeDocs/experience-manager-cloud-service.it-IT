@@ -1,21 +1,21 @@
 ---
-title: Domande frequenti sulla tecnologia Smart Imaging
+title: Imaging avanzato
 description: Scopri in che modo l’imaging intelligente con intelligenza artificiale di Adobe Sensei applica le caratteristiche di visualizzazione uniche di ogni utente per fornire automaticamente le immagini giuste ottimizzate per la propria esperienza, con conseguente miglioramento delle prestazioni e del coinvolgimento.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
 mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: b5c887d6a6ad1db5094609a8bc1b738c9ba5e8d6
+source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
 workflow-type: tm+mt
-source-wordcount: '3541'
+source-wordcount: '3531'
 ht-degree: 1%
 
 ---
 
 # Domande frequenti sulla tecnologia Smart Imaging {#smart-imaging}
 
-+++**Che cos&#39;è l&#39;imaging avanzato?**
+## Informazioni sulla tecnologia Smart Imaging
 
 La tecnologia di imaging intelligente applica le funzionalità di intelligenza artificiale di Adobe Sensei e funziona con i &quot;predefiniti immagine&quot; esistenti. Funziona per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
@@ -60,9 +60,7 @@ Vedi anche [Ottimizzazione delle immagini con formati immagine di nuova generazi
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-+++
-
-+++**Quali sono i vantaggi principali della tecnologia Smart Imaging di ultima generazione?**
+**Vantaggi della tecnologia Smart Imaging**
 
 La tecnologia Smart Imaging migliora le prestazioni di consegna delle immagini ottimizzando automaticamente le dimensioni dei file immagine in base al browser client in uso, alla visualizzazione del dispositivo e alle condizioni di rete. Poiché le immagini rappresentano la maggior parte del tempo di caricamento di una pagina, qualsiasi miglioramento delle prestazioni può avere un impatto profondo sui KPI aziendali, ad esempio tassi di conversione più elevati, tempo trascorso su un sito e tassi di mancato recapito del sito più bassi.
 
@@ -70,11 +68,11 @@ I vantaggi più recenti della tecnologia Smart Imaging includono:
 
 * Ora supporta il formato AVIF di nuova generazione.
 * PNG in WebP e AVIF ora supporta la conversione con perdita di dati. Poiché PNG è un formato senza perdita di dati, le versioni precedenti di WebP e AVIF distribuite non avevano perdite.
-* Conversione formato browser (`bfc`)
-* Proporzioni pixel dispositivo (`dpr`)
-* Larghezza di banda di rete (`network`)
+* [Conversione formato browser](#bfc)
+* [Proporzioni pixel dispositivo](#dpr)
+* [Larghezza di banda di rete](#bandwidth)
 
-**Informazioni sulla conversione formato browser (bfc)**
+### Informazioni sulla conversione del formato del browser {#bfc}
 
 Attivare la conversione del formato del browser aggiungendo `bfc=on` all’URL dell’immagine converte automaticamente JPEG e PNG in AVIF con perdita di dati, WebP con perdita di dati, JPEGXR con perdita di dati, JPEG 2000 con perdita di dati per browser diversi. Per i browser che non supportano tali formati, la tecnologia Smart Imaging continua a essere utilizzata come JPEG o PNG. Insieme al formato, la qualità del nuovo formato viene ricalcolata da Smart Imaging.
 
@@ -82,7 +80,7 @@ Attivare la conversione del formato del browser aggiungendo `bfc=on` all’URL d
 
 Vedi anche [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) nell’API di server e rendering immagini di Dynamic Media.
 
-**Informazioni sulle proporzioni pixel del dispositivo (dpr)** ottimizzazione
+### Informazioni sull&#39;ottimizzazione delle proporzioni pixel del dispositivo** {#dpr}
 
 Il rapporto pixel del dispositivo (DPR, Device Pixel Ratio), noto anche come rapporto pixel CSS, è la relazione tra i pixel fisici e i pixel logici di un dispositivo. Soprattutto con l&#39;avvento degli schermi retina, la risoluzione pixel dei dispositivi mobili moderni sta crescendo a un ritmo veloce.
 
@@ -108,7 +106,7 @@ Attualmente, la densità di pixel della visualizzazione proviene dai valori di i
 
 Vedi anche [Utilizzo delle immagini](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) e [Quando si lavora con Ritaglio avanzato](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-**Informazioni sull&#39;ottimizzazione della larghezza di banda di rete**
+### Informazioni sull&#39;ottimizzazione della larghezza di banda di rete {#bandwidth}
 
 L&#39;attivazione della larghezza di banda consente di regolare automaticamente la qualità dell&#39;immagine trasmessa in base all&#39;effettiva larghezza di banda della rete. In caso di larghezza di banda insufficiente, l&#39;ottimizzazione DPR (Device Pixel Ratio) viene automaticamente disattivata, anche se è già attiva.
 
@@ -128,8 +126,6 @@ I valori di DPR e larghezza di banda di rete si basano sui valori lato client ri
 * TTL (Time To Live) indipendente. In precedenza, era obbligatorio un TTL minimo di 12 ore affinché l’imaging intelligente potesse funzionare.
 * In precedenza, le immagini originali e derivate venivano memorizzate nella cache ed era un processo in due fasi per invalidare la cache. Nella tecnologia Smart Imaging più recente, vengono memorizzati nella cache solo i derivati, consentendo un processo di invalidamento della cache in un unico passaggio.
 * I clienti che utilizzano intestazioni personalizzate nei propri set di regole beneficiano della tecnologia Smart Imaging più recente, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart Imaging. Ad esempio, &quot;Intervallo Consenti origine&quot;, &quot;X-Robot&quot; come suggerito in [Aggiungere un valore di intestazione personalizzato alle risposte immagine|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
-
-+++
 
 +++**L&#39;imaging intelligente comporta costi di licenza?**
 
@@ -153,6 +149,26 @@ Quando un’immagine viene richiesta da un utente, Smart Imaging controlla le ca
 * Per i browser che non supportano questi formati, viene fornito il formato immagine richiesto originariamente.
 
 Se la dimensione dell&#39;immagine originale è inferiore a quella prodotta da Smart Imaging, viene distribuita l&#39;immagine originale.
+
++++
+
++++**È possibile disattivare Smart Imaging per qualsiasi richiesta?**
+
+Sì. È possibile disattivare Smart Imaging aggiungendo uno dei seguenti modificatori:
+
+* `bfc=off` per disattivare Conversione formato browser. Vedi anche [Conversione formato browser](#bfc).
+* `dpr=off` per disattivare Proporzioni pixel dispositivo. Vedi anche [Proporzioni pixel dispositivo](#dpr).
+* `network=off` per disattivare la larghezza di banda della rete. Vedi anche [Larghezza di banda di rete](#network).
+
++++
+
++++**È possibile &quot;regolare&quot; la tecnologia Smart Imaging?**
+
+Sì. Smart Imaging dispone di tre opzioni che è possibile abilitare o disabilitare.
+
+* [Conversione formato browser](#bfc)
+* [Proporzioni pixel dispositivo](#dpr)
+* [Larghezza di banda di rete](#network)
 
 +++
 
@@ -338,26 +354,6 @@ Questa intestazione indica quanto segue:
 +++**È possibile disattivare l’ottimizzazione AVIF in Smart Imaging?**
 
 Sì. Se si desidera tornare al WebP in servizio per impostazione predefinita, creare un caso di supporto per lo stesso. Come sempre, è possibile disattivare Smart Imaging aggiungendo il parametro `bfc=off` all&#39;URL dell&#39;immagine. Tuttavia, non è possibile selezionare WebP o AVIF nel modificatore URL per Smart Imaging. Questa funzionalità viene mantenuta a livello di account aziendale.
-
-+++
-
-+++**È possibile disattivare Smart Imaging per qualsiasi richiesta?**
-
-Sì. È possibile disattivare Smart Imaging aggiungendo uno dei seguenti modificatori:
-
-* `bfc=off` per disattivare Conversione formato browser. Vedi anche [Conversione formato browser](#bfc).
-* `dpr=off` per disattivare Proporzioni pixel dispositivo. Vedi anche [Proporzioni pixel dispositivo](#dpr).
-* `network=off` per disattivare la larghezza di banda della rete. Vedi anche [Larghezza di banda di rete](#network).
-
-+++
-
-+++**È possibile &quot;regolare&quot; la tecnologia Smart Imaging?**
-
-Sì. Smart Imaging dispone di tre opzioni che è possibile abilitare o disabilitare.
-
-* [Conversione formato browser](#bfc)
-* [Proporzioni pixel dispositivo](#dpr)
-* [Larghezza di banda di rete](#network)
 
 +++
 
