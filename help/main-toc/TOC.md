@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b4aa3495538eebc2e87383e1490bc60403025fb0
+source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4011'
 ht-degree: 99%
 
 ---
@@ -409,7 +409,7 @@ ht-degree: 99%
       + [Schema metadati per cartelle](/help/assets/folder-metadata-schema.md)
       + [Utilizzare profili immagine e video](/help/assets/dynamic-media/about-image-video-profiles.md)
       + [Configurare la trascrizione per le risorse audio e video](/help/assets/configure-transcription.md)
-      + [Tradurre le risorse](/help/assets/translate-assets.md)
+      + [Traduci risorse](/help/assets/translate-assets.md)
       + [Facet di ricerca](/help/assets/search-facets.md)
       + [API HTTP di Assets](/help/assets/mac-api-assets.md)
       + [Supporto dei frammenti di contenuto nell’API HTTP delle risorse](/help/assets/content-fragments/assets-api-content-fragments.md)
@@ -462,7 +462,7 @@ ht-degree: 99%
       + [Predefiniti set di batch](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [Invalidare la cache CDN tramite Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Invalidare la cache CDN tramite Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-      + [Imaging avanzato Domande frequenti](/help/assets/dynamic-media/imaging-faq.md)
+      + [Imaging avanzato](/help/assets/dynamic-media/imaging-faq.md)
       + [Imaging avanzato con proporzioni pixel del dispositivo lato client](/help/assets/dynamic-media/client-side-dpr.md)
       + [Distribuire elementi multimediali dinamici](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Attivazione della protezione hotlinking in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
@@ -535,7 +535,7 @@ ht-degree: 99%
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
             + [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-core-components.md)
-            + [Creare un Forms adattivo: componenti core in una pagina AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Crea un Componente core dei moduli adattivi in una pagina AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Cartella di lavoro Summit](/help/forms/summit-2023-workbook.md)
       + Authoring di moduli adattivi: componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
@@ -779,8 +779,8 @@ ht-degree: 99%
          + [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Test funzionale {#functional-testing}
-            + [Panoramica sui test funzionali](/help/implementing/cloud-manager/functional-testing.md)
-            + [Test funzionali Java](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [Panoramica del test funzionale](/help/implementing/cloud-manager/functional-testing.md)
+            + [Test funzionale Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Test dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md)
          + [Test dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md)
@@ -927,7 +927,7 @@ ht-degree: 99%
    + Livello di authoring {#author-tier}
       + [Accesso al livello di authoring](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Protezione del livello di authoring](/help/implementing/author-tier/securing-the-author-tier.md)
-   + Anteprima livello {#preview-tier}
+   + Livello anteprima {#preview-tier}
       + [Configurazione delle impostazioni OSGi per il livello di anteprima](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Panoramica della distribuzione dei contenuti {#content-delivery}
       + [Flusso di distribuzione dei contenuti](/help/implementing/dispatcher/overview.md)
