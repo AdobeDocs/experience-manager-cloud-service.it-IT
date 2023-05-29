@@ -6,20 +6,25 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 33baeea93c1fa2b74946699e53d2f428e77aee77
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '4934'
-ht-degree: 6%
+source-wordcount: '4954'
+ht-degree: 7%
 
 ---
 
 # Cercare risorse in AEM {#search-assets-in-aem}
 
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
+| AEM as a Cloud Service | Questo articolo |
+
 [!DNL Adobe Experience Manager Assets] fornisce solidi metodi di ricerca delle risorse che consentono di velocizzare i contenuti. I team possono ridurre i tempi di lancio sul mercato con un’esperienza di ricerca delle risorse intelligente e fluida, utilizzando funzionalità pronte all’uso e metodi personalizzati. La funzionalità di ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia che venga utilizzato ulteriormente dai creativi, che le risorse vengano gestite in modo affidabile dagli utenti aziendali e dai professionisti del marketing o che venga amministrato dagli amministratori DAM. Ricerche semplici, avanzate e personalizzate eseguibili tramite [!DNL Assets] L&#39;interfaccia utente o altre app e superfici consentono di soddisfare questi casi d&#39;uso.
 
 La ricerca di risorse in AEM supporta i seguenti casi d’uso e questo articolo descrive l’utilizzo, i concetti, le configurazioni, le limitazioni e la risoluzione dei problemi per tali casi d’uso.
 
-| Cercare risorse | Configurare e amministrare la funzionalità di ricerca | Utilizzare i risultati della ricerca delle risorse |
+| Cerca risorse | Configurare e amministrare la funzionalità di ricerca | Utilizzare i risultati della ricerca delle risorse |
 |---|---|---|
 | [Ricerche di base](#searchbasics) | [Indice ricerca](#searchindex) | [Ordinare i risultati](#sort) |
 | [Interfaccia utente di ricerca](#searchui) | [Estrazione testo](#extracttextupload) | [Controllare le proprietà e i metadati di una risorsa](#checkinfo) |
@@ -468,15 +473,15 @@ Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UI
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

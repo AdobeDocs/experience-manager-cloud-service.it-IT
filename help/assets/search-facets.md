@@ -4,14 +4,19 @@ description: In questo articolo viene descritto come creare, modificare e utiliz
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 21%
+source-wordcount: '2445'
+ht-degree: 22%
 
 ---
 
 # Facet di ricerca {#search-facets}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 Un’implementazione a livello aziendale di Adobe Experience Manager Assets consente di memorizzare molte risorse. Talvolta, trovare la risorsa giusta può essere difficile e richiedere tempo se utilizzi solo le funzionalità di ricerca generiche di Experience Manager.
 
@@ -327,15 +332,15 @@ Se non ti è stato assegnato un ruolo di amministratore, ecco un elenco di autor
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

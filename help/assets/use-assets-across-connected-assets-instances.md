@@ -6,15 +6,20 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3816'
 ht-degree: 16%
 
 ---
 
 
 # Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 Nelle grandi aziende l’infrastruttura necessaria per la creazione di siti web può essere dislocata in luoghi diversi. A volte, le funzionalità per la creazione di siti web e le risorse digitali utilizzate per creare i siti possono trovarsi in implementazioni diverse. Uno dei motivi può essere la distribuzione geografica delle implementazioni esistenti necessarie per la collaborazione. Un altro motivo può essere costituito dalle acquisizioni che portano a infrastrutture eterogenee, tra cui diverse [!DNL Experience Manager] versioni, che la società madre desidera utilizzare insieme.
 
@@ -58,7 +63,7 @@ Di seguito sono descritti i vari ruoli coinvolti nella configurazione e la funzi
 |------|--------|-----------|----------|
 | [!DNL Sites] administrator | Locale | [!DNL Experience Manager] `administrators` | Configurazione [!DNL Experience Manager] e configurare l&#39;integrazione con il [!DNL Assets] distribuzione. |
 | Utente DAM | Locale | `Authors` | Utilizzato per visualizzare e duplicare le risorse recuperate in `/content/DAM/connectedassets/`. |
-| [!DNL Sites] creazione | Locale | <ul><li>`Authors` (con accesso in lettura in DAM remoto e accesso di authoring in locale) [!DNL Sites]) </li> <li>`dam-users` su locale [!DNL Sites]</li></ul> | Gli utenti finali sono [!DNL Sites] autori che utilizzano questa integrazione per velocizzare le attività relative ai contenuti. Gli autori possono cercare e sfogliare le risorse in DAM remoto utilizzando [!UICONTROL Content Finder] e utilizzando le immagini richieste nelle pagine web locali. |
+| [!DNL Sites] author | Locale | <ul><li>`Authors` (con accesso in lettura in DAM remoto e accesso di authoring in locale) [!DNL Sites]) </li> <li>`dam-users` su locale [!DNL Sites]</li></ul> | Gli utenti finali sono [!DNL Sites] autori che utilizzano questa integrazione per velocizzare le attività relative ai contenuti. Gli autori possono cercare e sfogliare le risorse in DAM remoto utilizzando [!UICONTROL Content Finder] e utilizzando le immagini richieste nelle pagine web locali. |
 | [!DNL Assets] administrator | Remoto | [!DNL Experience Manager] `administrators` | Configurare la condivisione risorse tra le origini (CORS, Cross-Origin Resource Sharing). |
 | Utente DAM | Remoto | `Authors` | Autore ruolo sul remoto [!DNL Experience Manager] distribuzione. Cercare e sfogliare le risorse in Risorse collegate utilizzando [!UICONTROL Content Finder]. |
 | Distributore DAM (utente tecnico) | Remoto | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | Questo utente presente nell’implementazione remota viene utilizzato da [!DNL Experience Manager] server locale (non il [!DNL Sites] per recuperare le risorse remote, per conto di [!DNL Sites] Autore. |
@@ -360,12 +365,12 @@ Per risolvere gli errori più comuni, effettuare le seguenti operazioni:
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
