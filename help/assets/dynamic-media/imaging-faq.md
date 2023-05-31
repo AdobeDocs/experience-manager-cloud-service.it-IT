@@ -6,16 +6,16 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: c48885dc11b0162f0288962a53e1d95574a3d406
+source-git-commit: 6f9ddcf31a1869bb8bebb566d05c371e996fe354
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3535'
 ht-degree: 1%
 
 ---
 
-# Domande frequenti sulla tecnologia Smart Imaging {#smart-imaging}
+# Imaging avanzato {#smart-imaging}
 
-## Informazioni sulla tecnologia Smart Imaging
+## Informazioni sulla tecnologia Smart Imaging{#about-smart-imaging}
 
 La tecnologia di imaging intelligente applica le funzionalità di intelligenza artificiale di Adobe Sensei e funziona con i &quot;predefiniti immagine&quot; esistenti. Funziona per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
@@ -127,7 +127,7 @@ I valori di DPR e larghezza di banda di rete si basano sui valori lato client ri
 * In precedenza, le immagini originali e derivate venivano memorizzate nella cache ed era un processo in due fasi per invalidare la cache. Nella tecnologia Smart Imaging più recente, vengono memorizzati nella cache solo i derivati, consentendo un processo di invalidamento della cache in un unico passaggio.
 * I clienti che utilizzano intestazioni personalizzate nei propri set di regole beneficiano della tecnologia Smart Imaging più recente, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart Imaging. Ad esempio, &quot;Intervallo Consenti origine&quot;, &quot;X-Robot&quot; come suggerito in [Aggiungere un valore di intestazione personalizzato alle risposte immagine|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Come funziona l&#39;imaging intelligente
+## Come funziona l&#39;imaging intelligente{#how-smart-imaging-works}
 
 Quando un’immagine viene richiesta da un utente, Smart Imaging controlla le caratteristiche dell’utente e la converte nel formato appropriato in base al browser in uso. Queste conversioni di formato vengono eseguite in modo da non compromettere la fedeltà visiva. La tecnologia Smart Imaging converte automaticamente le immagini in diversi formati in base alla funzionalità del browser, nel modo seguente.
 
@@ -140,7 +140,7 @@ Quando un’immagine viene richiesta da un utente, Smart Imaging controlla le ca
 
 Se la dimensione dell&#39;immagine originale è inferiore a quella prodotta da Smart Imaging, viene distribuita l&#39;immagine originale.
 
-## Supporto del formato immagine nella tecnologia Smart Imaging
+## Supporto del formato immagine nella tecnologia Smart Imaging{#image-format-support}
 
 Per la creazione di immagini avanzate sono supportati i seguenti formati di immagine:
 
@@ -151,11 +151,11 @@ Per il formato di file immagine JPEG, la qualità del nuovo formato viene ricalc
 
 Per i formati di file di immagine che supportano la trasparenza come PNG, puoi configurare Smart Imaging per fornire file AVIF e WebP con perdita di dati. Per la conversione di formato con perdita di dati, Smart Imaging utilizza la qualità indicata nell’URL dell’immagine oppure la qualità configurata nell’account aziendale di Dynamic Media.
 
-## Supporto dei comandi Image Server in Smart Imaging
+## Supporto dei comandi Image Server in Smart Imaging{#imaging-serving-command-support}
 
 Comandi Image Server `fmt` e `qlt` non sono supportati; sono supportati tutti i comandi rimanenti.
 
-## Domande frequenti sull&#39;imaging avanzato
+## Domande frequenti sull&#39;imaging avanzato{#smart-imaging-faq}
 
 +++**L&#39;imaging intelligente comporta costi di licenza?**
 
