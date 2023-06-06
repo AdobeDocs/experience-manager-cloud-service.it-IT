@@ -3,7 +3,7 @@ title: Aggiornamenti della versione di AEM
 description: Scopri in che modo AEM as a Cloud Service utilizza Continuous Integration and Delivery (CI/CD) per mantenere i progetti sull’ultima versione.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
+source-git-commit: dd1560aa4d260320f565ad993a8b3650c3ee5288
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 23%
@@ -51,6 +51,6 @@ Se l’aggiornamento dell’ambiente di produzione non riesce, Cloud Manager rip
 
 Nella maggior parte dei casi, gli aggiornamenti non comportano tempi di inattività, incluso per l’istanza di authoring, che è un cluster di nodi. Gli aggiornamenti continui sono possibili a causa di [la funzione archivio nodi compositi in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Questa funzione consente all’AEM di fare riferimento simultaneamente a più archivi. In sequenza [distribuzione blu-verde,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) la nuova versione verde dell’AEM contiene il proprio `/libs` (l’archivio immutabile basato su TarMK), diverso dalla versione blu precedente dell’AEM, anche se entrambi fanno riferimento a un archivio mutabile basato su DocumentMK condiviso che contiene aree come `/content` , `/conf` , `/etc` e altri.
+Questa funzione consente all’AEM di fare riferimento simultaneamente a più archivi. In un [distribuzione continua,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) la nuova versione dell’AEM contiene `/libs` (l’archivio immutabile basato su TarMK), distinto dalla versione precedente dell’AEM, anche se entrambi fanno riferimento a un archivio mutabile basato su DocumentMK condiviso che contiene aree come `/content` , `/conf` , `/etc` e altri.
 
-Perché sia il blu che il verde hanno le loro versioni di `/libs`, possono essere entrambi attivi durante l’aggiornamento continuo, entrambi assumono il traffico fino a quando il blu non viene completamente sostituito dal verde.
+Poiché sia la vecchia che la nuova versione hanno la propria versione di `/libs`, possono essere entrambi attivi durante l’aggiornamento continuo e possono assumere il traffico fino a quando il vecchio non viene completamente sostituito dal nuovo.

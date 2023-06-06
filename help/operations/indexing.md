@@ -2,10 +2,10 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6fd5f8e7a9699f60457e232bb3cfa011f34880e9
+source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
 workflow-type: tm+mt
-source-wordcount: '2498'
-ht-degree: 88%
+source-wordcount: '2491'
+ht-degree: 78%
 
 ---
 
@@ -24,7 +24,7 @@ Di seguito è riportato un elenco delle modifiche principali rispetto ad AEM 6.5
 1. I clienti potranno impostare gli avvisi in base alle proprie esigenze.
 1. Gli SRE monitorano lo stato di integrità del sistema 24/7 e intraprendono le azioni necessarie il più presto possibile.
 1. La configurazione dell’indice viene modificata tramite le distribuzioni. Le modifiche alla definizione dell’indice sono configurate come altre modifiche al contenuto.
-1. A un livello elevato, su AEM as a Cloud Service, con l’introduzione del [Modello di distribuzione Blue-Green](#index-management-using-blue-green-deployments), esistono due serie di indici: un set per la versione precedente (blue) e uno per la nuova versione (green).
+1. Ad alto livello sull&#39;AEM as a Cloud Service, con l&#39;introduzione della [modello di distribuzione continua](#index-management-using-rolling-deployments) esistono due set di indici: uno per la versione precedente e uno per la nuova versione.
 1. I clienti possono vedere se il processo di indicizzazione è completo nella pagina di compilazione di Cloud Manager e ricevono una notifica quando la nuova versione è pronta per il traffico.
 
 Limiti:
@@ -143,7 +143,7 @@ In `ui.apps.structure/pom.xml`, la sezione `filters` per questo plug-in deve con
 <filter><root>/oak:index</root></filter>
 ```
 
-Una volta aggiunta la nuova definizione dell’indice, la nuova applicazione deve essere distribuita tramite Cloud Manager. Al momento della distribuzione vengono avviati due processi, responsabili dell’aggiunta (e dell’unione, se necessario) delle definizioni dell’indice a MongoDB e Azure Segment Store rispettivamente per l’authoring e la pubblicazione. Gli archivi sottostanti vengono reindicizzati con le nuove definizioni dell’indice, prima che si verifichi lo switch Blue-Green.
+Una volta aggiunta la nuova definizione dell’indice, la nuova applicazione deve essere distribuita tramite Cloud Manager. Al momento della distribuzione, vengono avviati due processi responsabili dell’aggiunta (e dell’unione, se necessario) delle definizioni dell’indice a MongoDB e Azure Segment Store rispettivamente per l’authoring e la pubblicazione. Gli archivi sottostanti vengono reindicizzati con le nuove definizioni dell’indice, prima che lo switch venga implementato.
 
 ### NOTA
 
@@ -207,19 +207,19 @@ Di seguito è riportato un esempio di dove posizionare la configurazione precede
 >
 >Per ulteriori dettagli sulla struttura del pacchetto richiesta per AEM as a Cloud Service, vedi il documento [struttura del progetto AEM.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
-## Gestione dell’indice utilizzando le implementazioni Blue-Green {#index-management-using-blue-green-deployments}
+## Gestione dell’indice tramite distribuzioni continue {#index-management-using-rolling-deployments}
 
 ### Gestione dell’indice {#what-is-index-management}
 
 La gestione degli indici riguarda l’aggiunta, la rimozione e la modifica degli indici. La modifica della *definizione* di un indice è veloce, ma la sua applicazione (spesso chiamata “creazione di un indice”, o, per gli indici esistenti, “reindicizzazione”) richiede tempo. Non è istantaneo: l’archivio deve essere analizzato per individuare i dati da indicizzare.
 
-### Distribuzione Blue-Green {#what-is-blue-green-deployment}
+### Cosa sono le distribuzioni continue {#what-are-rolling-deployments}
 
-La distribuzione Blue-Green può ridurre i tempi di inattività. Consente inoltre di eseguire senza tempi di inattività gli aggiornamenti e offre rapidi rollback. La vecchia versione dell’applicazione (blue) viene eseguita contemporaneamente alla nuova versione dell’applicazione (green).
+Una distribuzione continua può ridurre i tempi di inattività. Consente inoltre di eseguire senza tempi di inattività gli aggiornamenti e offre rapidi rollback. La vecchia versione dell&#39;applicazione viene eseguita contemporaneamente alla nuova versione dell&#39;applicazione.
 
 ### Aree di sola lettura e di lettura/scrittura {#read-only-and-read-write-areas}
 
-Alcune aree dell’archivio (parti di sola lettura dell’archivio) possono essere diverse nella vecchia versione (blue) e nella nuova versione (green) dell’applicazione. Le aree di sola lettura dell’archivio sono tipicamente “`/app`” e “`/libs`”. Nell’esempio seguente, il corsivo viene utilizzato per contrassegnare le aree di sola lettura, mentre il grassetto viene utilizzato per le aree di lettura/scrittura.
+Alcune aree dell’archivio (parti di sola lettura dell’archivio) possono essere diverse nella vecchia e nella nuova versione dell’applicazione. Le aree di sola lettura dell’archivio sono in genere `/app` e `/libs`. Nell’esempio seguente, il corsivo viene utilizzato per contrassegnare le aree di sola lettura, mentre il grassetto viene utilizzato per le aree di lettura/scrittura.
 
 * **/**
 * */apps (sola lettura)*
@@ -233,13 +233,13 @@ Alcune aree dell’archivio (parti di sola lettura dell’archivio) possono esse
 
 Le aree di lettura-scrittura dell’archivio sono condivise tra tutte le versioni dell’applicazione, mentre per ogni versione dell’applicazione, esiste un set specifico di `/apps` e `/libs`.
 
-### Gestione degli indici senza distribuzione Blue-Green {#index-management-without-blue-green-deployment}
+### Gestione degli indici senza distribuzioni continue {#index-management-without-rolling-deployments}
 
 Durante lo sviluppo o quando si utilizzano installazioni locali, gli indici possono essere aggiunti, rimossi o modificati in fase di runtime. Gli indici vengono utilizzati non appena sono disponibili. Se un indice non deve ancora essere utilizzato nella vecchia versione dell’applicazione, viene generalmente generato durante un downtime pianificato. Lo stesso si verifica quando si rimuove un indice o si modifica un indice esistente. Quando si rimuove un indice, questo diventa non disponibile non appena viene rimosso.
 
-### Gestione dell’indice con distribuzione Blue-Green {#index-management-with-blue-green-deployment}
+### Gestione degli indici con distribuzioni continue {#index-management-with-rolling-deployments}
 
-Con le distribuzioni Blue-Green, non si verificano tempi di inattività. Durante un aggiornamento, per un certo periodo di tempo, sia la vecchia versione (ad esempio, la versione 1) dell’applicazione che quella nuova (versione 2) vengono eseguite contemporaneamente sullo stesso archivio. Se la versione 1 richiede la disponibilità di un determinato indice, questo non deve essere rimosso nella versione 2: l’indice deve essere rimosso in un secondo momento, ad esempio nella versione 3, che garantisce che la versione 1 dell’applicazione non è più in esecuzione. Inoltre, le applicazioni devono essere scritte in modo che la versione 1 funzioni bene, anche se la versione 2 è in esecuzione, e se sono disponibili indici della versione 2.
+Con le distribuzioni continue, non si verificano tempi di inattività. Per un certo periodo di tempo durante un aggiornamento, sia la vecchia versione (ad esempio, la versione 1) dell’applicazione che la nuova versione (versione 2) vengono eseguite contemporaneamente sullo stesso archivio. Se la versione 1 richiede la disponibilità di un determinato indice, questo non deve essere rimosso nella versione 2. L’indice deve essere rimosso in un secondo momento, ad esempio nella versione 3, che garantisce che la versione 1 dell’applicazione non è più in esecuzione. Inoltre, le applicazioni devono essere scritte in modo che la versione 1 funzioni bene, anche se la versione 2 è in esecuzione, e se sono disponibili indici della versione 2.
 
 Al termine dell’aggiornamento alla nuova versione, i vecchi indici possono essere raccolti come rifiuti dal sistema. I vecchi indici potrebbero restare ancora per un po’ di tempo, al fine di velocizzare i rollback (se dovesse essere necessario un rollback).
 
