@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
 workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 9%
+ht-degree: 12%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="Mappatura degli utenti"
->abstract="Lo strumento Content Transfer (Trasferimento contenuti) consente di spostare utenti e gruppi dal sistema Adobe Experience Manager (AEM) esistente all’as a Cloud Service AEM. Gli utenti esistenti devono essere mappati sui rispettivi ID IMS per evitare duplicati nell’istanza di authoring del Cloud Service."
+>abstract="Lo strumento Content Transfer (Trasferimento contenuti) consente di spostare utenti e gruppi dal sistema Adobe Experience Manager (AEM) esistente ad AEM as a Cloud Service. Gli utenti esistenti devono essere mappati sui rispettivi ID IMS per evitare duplicati nell’istanza di authoring del Cloud Service."
 
 >[!NOTE]
 >Per le versioni precedenti dello strumento di mappatura utente, vedere [documentazione legacy](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).

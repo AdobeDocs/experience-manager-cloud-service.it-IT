@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 58%
+ht-degree: 63%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Panoramica"
->abstract="Lo strumento Content Transfer (Trasferimento contenuti) è uno strumento sviluppato da Adobe che può essere utilizzato per avviare la migrazione dei contenuti esistenti da un’istanza AEM di origine (on-premise o AMS) all’istanza AEM Cloud Service di destinazione. Questo strumento trasferisce automaticamente anche entità principali (utenti o gruppi)."
+>abstract="Lo strumento Content Transfer (Trasferimento contenuti) è stato sviluppato da Adobe e può essere utilizzato per spostare i contenuti esistenti da un’istanza AEM di origine (on-Premise o AMS) all’istanza di destinazione AEM Cloud Service. Questo strumento trasferisce automaticamente anche entità principali (utenti o gruppi)."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=it" text="Linee guida e best practice"
 
 Lo strumento Content Transfer (Trasferimento contenuti) è uno strumento sviluppato da Adobe che può essere utilizzato per avviare la migrazione dei contenuti esistenti da un’istanza AEM di origine (on-premise o AMS) all’istanza AEM Cloud Service di destinazione.
