@@ -3,10 +3,10 @@ title: Implementazione in AEM as a Cloud Service
 description: Implementazione in AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
+source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
 workflow-type: tm+mt
-source-wordcount: '3509'
-ht-degree: 100%
+source-wordcount: '3541'
+ht-degree: 89%
 
 ---
 
@@ -51,6 +51,10 @@ Il video seguente fornisce una panoramica di alto livello su come distribuire il
 
 ### Distribuzioni tramite Cloud Manager {#deployments-via-cloud-manager}
 
+<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+
 I clienti distribuiscono il codice personalizzato agli ambienti cloud tramite Cloud Manager. È opportuno notare che Cloud Manager trasforma i pacchetti di contenuto assemblati localmente in un artefatto conforme al modello di funzioni Sling. Questo è il modo in cui viene descritta un’applicazione AEM as a Cloud Service quando viene eseguita in un ambiente cloud. Di conseguenza, quando si esaminano i pacchetti in [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) negli ambienti cloud, il nome includerà “cp2fm” e nei pacchetti trasformati saranno rimossi tutti i metadati. Non è possibile interagire con questi elementi, ovvero non è possibile scaricarli, replicarli o aprirli. La documentazione dettagliata sul convertitore può essere [trovata qui](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 I pacchetti di contenuto scritti per le applicazioni AEM as a Cloud Service devono avere una separazione netta tra contenuto immutabile e contenuto mutabile; Cloud Manager installerà solo il contenuto mutabile, producendo anche un messaggio come:
@@ -63,7 +67,7 @@ Il resto di questa sezione descriverà la composizione e le implicazioni dei pac
 
 Tutti i contenuti e il codice mantenuti nell’archivio immutabile devono essere controllati in git e distribuiti tramite Cloud Manager. In altre parole, a differenza delle soluzioni AEM correnti, il codice non viene mai distribuito direttamente in un’istanza AEM in esecuzione. Questo assicura che il codice in esecuzione per una determinata versione in qualsiasi ambiente Cloud sia identico, eliminando il rischio di variazione involontaria del codice in produzione. Ad esempio, la configurazione OSGI deve essere impegnata nel controllo del codice sorgente anziché gestita in fase di esecuzione tramite il gestore di configurazione della console web AEM.
 
-Poiché le modifiche dell’applicazione dovute al pattern di distribuzione Blue-Green sono abilitate da un interruttore, non possono dipendere dalle modifiche nell’archivio mutabile con l’eccezione degli utenti del servizio, le loro ACL, i tipi di nodo e le modifiche della definizione dell’indice.
+Poiché le modifiche dell’applicazione dovute al modello di distribuzione vengono abilitate da un commutatore, non possono dipendere dalle modifiche nell’archivio mutabile ad eccezione degli utenti del servizio, dei loro ACL, dei tipi di nodo e delle modifiche alla definizione dell’indice.
 
 Per i clienti con basi di codice esistenti, è fondamentale seguire l’esercizio di ristrutturazione dell’archivio descritto nella documentazione di AEM per garantire che il contenuto che si trovava in /etc venga spostato nella posizione giusta.
 
@@ -235,23 +239,23 @@ Il seguente `POM.xml` snippet Maven mostra come incorporare i pacchetti di terze
 
 ## Funzionamento delle implementazioni continue {#how-rolling-deployments-work}
 
-Come per gli aggiornamenti AEM, le versioni dei clienti e delle clienti vengono distribuite utilizzando una strategia di distribuzione continua per eliminare i tempi di inattività dei cluster di authoring nelle giuste circostanze. Di seguito è descritta la sequenza generale degli eventi, dove **Blu** è la vecchia versione del codice cliente e **Verde** è la nuova versione. Sia blu che verde eseguono la stessa versione del codice AEM.
+Come per gli aggiornamenti AEM, le versioni dei clienti e delle clienti vengono distribuite utilizzando una strategia di distribuzione continua per eliminare i tempi di inattività dei cluster di authoring nelle giuste circostanze. La sequenza generale di eventi è descritta di seguito, dove i nodi con la vecchia e la nuova versione del codice del cliente eseguono la stessa versione del codice AEM.
 
-* La versione blu è attiva e viene creato e reso disponibile un candidato per la verde
-* In presenza di definizioni di indice nuove o aggiornate, gli indici corrispondenti vengono elaborati. La distribuzione blu utilizzerà sempre i vecchi indici, mentre quella verde utilizzerà sempre i nuovi.
-* La verde sta iniziando mentre la blu è ancora in funzione
-* La blu è in esecuzione e in funzione mentre la verde viene sottoposta a controlli di integrità per testarne la preparazione
-* Nodi verdi che sono pronti ad accettare il traffico e sostituire i nodi blu, i quali vengono ridotti
-* Nel tempo, i nodi blu vengono sostituiti dai nodi verdi fino a quando rimangono solo i verdi, completando così la distribuzione
-* Vengono distribuiti eventuali contenuti mutabili nuovi o modificati
+* I nodi con la versione precedente sono attivi e viene creato e reso disponibile un candidato per la nuova versione.
+* In presenza di definizioni di indice nuove o aggiornate, gli indici corrispondenti vengono elaborati. I nodi con la versione precedente utilizzeranno sempre i vecchi indici, mentre i nodi con la nuova versione utilizzeranno sempre i nuovi indici.
+* I nodi con la nuova versione si avviano mentre le versioni precedenti gestiscono ancora il traffico.
+* I nodi con la versione precedente sono in esecuzione e continuano a funzionare mentre i nodi con la nuova versione vengono controllati per verificarne la disponibilità tramite controlli di integrità.
+* I nodi con la nuova versione pronti accetteranno il traffico e sostituiranno i nodi con la versione precedente, che viene disattivata.
+* Nel tempo, i nodi con la versione precedente vengono sostituiti da nodi con la nuova versione fino a quando rimangono solo i nodi con le nuove versioni, completando in tal modo la distribuzione.
+* Viene quindi distribuito qualsiasi contenuto modificabile nuovo o modificato.
 
 ## Indici {#indexes}
 
-Gli indici nuovi o modificati causeranno un ulteriore passaggio di indicizzazione o reindicizzazione prima che la nuova versione (verde) possa assumere traffico. I dettagli sulla gestione degli indici in AEM as a Cloud Service si trovano in questo [articolo](/help/operations/indexing.md). È possibile vedere lo stato del processo di indicizzazione nella pagina di compilazione di Cloud Manager e si riceve una notifica quando la nuova versione è pronta per il traffico.
+Gli indici nuovi o modificati causeranno un ulteriore passaggio di indicizzazione o reindicizzazione prima che la nuova versione possa occuparsi del traffico. I dettagli sulla gestione degli indici in AEM as a Cloud Service si trovano in questo [articolo](/help/operations/indexing.md). È possibile vedere lo stato del processo di indicizzazione nella pagina di compilazione di Cloud Manager e si riceve una notifica quando la nuova versione è pronta per il traffico.
 
 >[!NOTE]
 >
->Il tempo necessario per una distribuzione continua varia a seconda delle dimensioni dell’indice, poiché la versione verde non può accettare il traffico fino a quando non viene generato il nuovo indice.
+>Il tempo necessario per una distribuzione continua varia a seconda delle dimensioni dell’indice, poiché la nuova versione non può accettare il traffico fino alla generazione del nuovo indice.
 
 Al momento, AEM as a Cloud Service non funziona con strumenti di gestione degli indici come lo strumento indice Oak di ACS Commons Ensure.
 
@@ -269,15 +273,15 @@ Inoltre, la vecchia versione deve essere testata per verificare la compatibilit�
 
 ### Utenti del servizio e modifiche ACL {#service-users-and-acl-changes}
 
-La modifica degli utenti del servizio o delle ACL necessarie per accedere al contenuto o al codice potrebbe causare errori nelle versioni precedenti di AEM e causare l’accesso a tale contenuto o codice con utenti del servizio obsoleti. Per risolvere questo problema, una raccomandazione consiste nell’apportare modifiche distribuite su almeno 2 versioni, con la prima versione che funge da ponte prima di essere ripulita nella versione successiva.
+La modifica degli utenti del servizio o delle ACL necessarie per accedere al contenuto o al codice potrebbe causare errori nelle versioni precedenti di AEM e causare l’accesso a tale contenuto o codice con utenti del servizio obsoleti. Per risolvere questo problema, si consiglia di apportare modifiche distribuite su almeno due versioni, con la prima versione che funge da ponte prima di eseguire la pulizia nella versione successiva.
 
 ### Modifiche all’indice {#index-changes}
 
-Se vengono apportate modifiche agli indici, è importante che la versione blu continui a utilizzare i suoi indici fino alla sua chiusura, mentre la versione verde utilizza il proprio set modificato di indici. Lo sviluppatore deve seguire le tecniche di gestione degli indici descritte [nel presente articolo](/help/operations/indexing.md).
+Se vengono apportate modifiche agli indici, è importante che la nuova versione continui a utilizzare i suoi indici fino a quando non viene terminata, mentre la vecchia versione utilizza il proprio set modificato di indici. Lo sviluppatore deve seguire le tecniche di gestione degli indici descritte [nel presente articolo](/help/operations/indexing.md).
 
 ### Codifica conservativa per i ripristini {#conservative-coding-for-rollbacks}
 
-Se viene segnalato o rilevato un errore dopo la distribuzione, è possibile che sia necessario eseguire il ripristino della versione blu. Sarebbe opportuno garantire che il codice blu sia compatibile con tutte le nuove strutture create dalla versione verde, in quanto le nuove strutture (qualsiasi contenuto mutabile) non subiranno ripristini. Se il codice precedente non è compatibile, le correzioni dovranno essere applicate nelle versioni successive del cliente.
+Se dopo la distribuzione viene segnalato o rilevato un errore, è possibile che sia necessario eseguire un rollback alla versione precedente. Si consiglia di assicurarsi che il nuovo codice sia compatibile con le nuove strutture create dalla nuova versione, in quanto non verrà eseguito il rollback delle nuove strutture (eventuali contenuti mutabili). Se il codice precedente non è compatibile, le correzioni dovranno essere applicate nelle versioni successive del cliente.
 
 ## Ambienti di sviluppo rapido (RDE) {#rde}
 
