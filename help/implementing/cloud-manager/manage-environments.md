@@ -2,12 +2,13 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4631ab86ae1b4405e31d8bb8eae8edbbe2272c2c
+source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 100%
+source-wordcount: '2302'
+ht-degree: 78%
 
 ---
+
 
 # Gestione degli ambienti {#managing-environments}
 
@@ -56,14 +57,67 @@ Le funzionalità dei singoli ambienti dipendono dalle soluzioni abilitate nel [p
       * Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
    * Specifica il **nome** dell’ambiente.
    * Inserisci la **descrizione** dell’ambiente.
+   * Se stai aggiungendo una **Produzione e staging** ambiente, è necessario fornire un nome e una descrizione dell’ambiente sia per gli ambienti di produzione che per quelli di staging.
    * Seleziona un’**area geografica primaria** dal menu a discesa.
       * Tieni presente che questa operazione non può essere modificata una volta creata.
-   * Se stai aggiungendo un ambiente di **produzione e staging**, è necessario fornire un nome e una descrizione dell’ambiente sia per l’ambiente di produzione che per quello di staging.
-      ![Finestra di dialogo Aggiungi ambiente](assets/add-environment2.png)
+      * A seconda dei diritti disponibili, è possibile configurare [più aree geografiche.](#multiple-regions)
+
+   ![Finestra di dialogo Aggiungi ambiente](assets/add-environment2.png)
 
 1. Per aggiungere l’ambiente specificato, fai clic su **Salva**.
 
 Ora il nuovo ambiente viene visualizzato nella schermata **Panoramica** della scheda **Ambienti**. Ora puoi configurare le pipeline per il nuovo ambiente.
+
+## Più aree geografiche di pubblicazione {#multiple-regions}
+
+Un utente con **Proprietario business** Il ruolo può configurare gli ambienti di produzione e di staging in modo da includere fino a tre aree di pubblicazione aggiuntive oltre all’area primaria. Ulteriori aree geografiche di pubblicazione possono migliorare la disponibilità. Consulta la [Documentazione aggiuntiva sulle aree geografiche di pubblicazione](/help/operations/additional-publish-regions.md) per ulteriori dettagli.
+
+>[!TIP]
+>
+>È possibile utilizzare [API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) per eseguire una query su un elenco corrente di aree disponibili.
+
+### Aggiunta di più aree di pubblicazione a un nuovo ambiente {#add-regions}
+
+Quando aggiungi un nuovo ambiente, puoi scegliere di configurare altre aree oltre all’area principale.
+
+1. Seleziona la **Area geografica primaria**.
+   * Tieni presente che questo non può essere modificato dopo la creazione dell’ambiente.
+1. Seleziona l’opzione **Aggiungi altre aree geografiche di pubblicazione** e un nuovo **Aree geografiche di pubblicazione aggiuntive** viene visualizzato un elenco a discesa.
+1. In **Aree geografiche di pubblicazione aggiuntive** , selezionare un&#39;area aggiuntiva.
+1. L’area selezionata viene aggiunta sotto il menu a discesa per indicarne la selezione.
+   * Tocca o fai clic sulla X accanto all’area selezionata per deselezionarla.
+1. Seleziona un’altra regione dal menu **Aree geografiche di pubblicazione aggiuntive** per aggiungere un’altra area geografica.
+1. Tocca o fai clic su **Salva** quando sei pronto per creare l’ambiente.
+
+![Selezione di più aree geografiche](assets/select-multiple-regions.png)
+
+Le aree selezionate verranno applicate agli ambienti di produzione e di staging.
+
+Se non si specifica alcuna area aggiuntiva, [puoi farlo in un secondo momento dopo la creazione degli ambienti.](#edit-regions)
+
+Se desideri effettuare il provisioning [rete avanzata](/help/security/configuring-advanced-networking.md) Per il programma, si consiglia di eseguire questa operazione prima di aggiungere ulteriori aree di pubblicazione agli ambienti utilizzando l’API di Cloud Manager. In caso contrario, il traffico aggiuntivo delle aree di pubblicazione passerà attraverso il proxy dell’area primaria.
+
+### Modifica di più aree di pubblicazione {#edit-regions}
+
+Se inizialmente non hai specificato altre aree, puoi farlo dopo la creazione degli ambienti, se disponi dei diritti necessari.
+
+Puoi anche rimuovere altre aree geografiche di pubblicazione. Tuttavia, è possibile aggiungere o rimuovere solo aree in una transazione. Se è necessario aggiungere una regione e rimuoverla, aggiungere, salvare la modifica e quindi rimuovere (o viceversa).
+
+1. Dalla console Panoramica programma del programma, fai clic sul pulsante con i puntini di sospensione corrispondente all’ambiente di produzione e seleziona **Modifica** dal menu.
+
+   ![Modifica ambiente](assets/select-edit-environment.png)
+
+1. In **Modifica ambiente di produzione** , apportare le modifiche necessarie alle aree di pubblicazione aggiuntive.
+   * Utilizza il **Aree geografiche di pubblicazione aggiuntive** per selezionare altre aree geografiche.
+   * Fai clic sulla X accanto alle aree di pubblicazione aggiuntive selezionate per deselezionarle.
+
+   ![Modifica ambiente](assets/edit-environment.png)
+
+1. Tocca o fai clic su **Salva** per salvare le modifiche.
+
+Le modifiche apportate all’ambiente di produzione verranno applicate sia agli ambienti di produzione che a quelli di staging. Le modifiche apportate a più aree di pubblicazione possono essere modificate solo nell’ambiente di produzione.
+
+Se desideri effettuare il provisioning [rete avanzata](/help/security/configuring-advanced-networking.md) per il programma, si consiglia di eseguire questa operazione prima di aggiungere ulteriori aree di pubblicazione agli ambienti. In caso contrario, il traffico aggiuntivo delle aree di pubblicazione passerà attraverso il proxy dell’area primaria.
 
 ## Dettagli dell’ambiente {#viewing-environment}
 
