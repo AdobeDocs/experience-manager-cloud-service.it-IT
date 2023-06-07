@@ -4,7 +4,7 @@ description: Scopri come visualizzare facilmente in anteprima la rappresentazion
 feature: Content Fragments
 role: User
 exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 0d7d89e0d8343e7e00fdecb91a20dd7d4a736851
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 100%
@@ -22,3 +22,7 @@ Utilizzo dell’icona **Anteprima**:
 Puoi visualizzare la rappresentazione JSON del frammento corrente. Esempio:
 
 ![Editor frammenti di contenuto: anteprima di un frammento](assets/cfm-preview-02.png)
+
+<!--
+**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+-->

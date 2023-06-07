@@ -2,10 +2,10 @@
 title: Varianti - Authoring dei contenuti di frammenti  (Risorse - Frammenti di contenuto)
 description: Scopri come le varianti possono rendere ancora più flessibili i contenuti headless in AEM consentendoti di creare contenuti per il frammento e quindi creare varianti di tali contenuti in base allo scopo.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
-source-wordcount: '2288'
-ht-degree: 96%
+source-wordcount: '2455'
+ht-degree: 90%
 
 ---
 
@@ -43,19 +43,32 @@ Quando apri il frammento di contenuto per la modifica, la scheda **Varianti** vi
 Esempio:
 
 ![editor a schermo intero](assets/cfm-variations-02.png)
-Puoi eseguire le seguenti operazioni:
 
-* Apportare modifiche direttamente nella scheda **Varianti**
+Operazioni disponibili:
 
-   * Ogni tipo di dati offre specifiche opzioni di modifica.
+* Apportare modifiche al contenuto direttamente in **Varianti** scheda; ogni tipo di dati fornisce diverse opzioni di modifica, ad esempio:
 
-* Per i campi di **Testo su più righe** è inoltre possibile aprire l’[editor a schermo intero](#full-screen-editor) per:
+   * Per i campi di **Testo su più righe** è inoltre possibile aprire l’[editor a schermo intero](#full-screen-editor) per:
 
-   * Selezionare il [Formato](#formats)
-   * Accedere a ulteriori opzioni di modifica (per il formato [Testo formattato](#rich-text))
-   * Accedere a una serie di [azioni](#actions)
+      * Selezionare il [Formato](#formats)
+      * Accedere a ulteriori opzioni di modifica (per il formato [Testo formattato](#rich-text))
+      * Accedere a una serie di [azioni](#actions)
+   * Per i campi **Riferimento frammento** può essere disponibile l’opzione [Modifica frammento di contenuto](#fragment-references-edit-content-fragment), a seconda della definizione del modello.
 
-* Per i campi **Riferimento frammento** può essere disponibile l’opzione **[Modifica frammento di contenuto](#fragment-references-edit-content-fragment)**, a seconda della definizione del modello.
+
+* Assegna **Tag** alla variante corrente; i tag possono essere aggiunti, aggiornati e rimossi
+
+   * I [tag](/help/sites-cloud/authoring/features/tags.md) sono particolarmente utili per organizzare i frammenti, in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
+
+      * La ricerca di un tag restituisce il frammento ed evidenzia la variante con tag.
+      * I tag di variante possono essere utilizzati anche per raggruppare le varianti per un profilo CDN (Content Delivery Network) specifico (per il caching CDN), invece di utilizzare il nome della variante.
+
+      Ad esempio, puoi assegnare ai frammenti rilevanti il tag &quot;Lancio di Natale&quot; per consentire la navigazione solo come sottoinsieme oppure per copiarli e utilizzarli per un altro lancio futuro in una nuova cartella.
+   >[!NOTE]
+   >
+   >**Tag** può essere aggiunto (al **Principale** (variazione) come parte del [Metadati](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Creare e gestire le varianti](#managing-variations) del **Principale** contenuto.
 
 ### Editor a schermo intero {#full-screen-editor}
 
@@ -383,6 +396,9 @@ Per creare una nuova variante:
    >[!NOTE]
    Quando crei una nuova variante, viene sempre copiato l’elemento **Principale**, non la variante attualmente aperta.
 
+   >[!NOTE]
+   Quando crei una nuova variante, tutti **Tag** attualmente assegnato al **Principale** La variante viene copiata nella nuova variante.
+
 ### Modifica di una variante {#editing-a-variation}
 
 Puoi apportare modifiche al contenuto della variante dopo:
@@ -452,4 +468,4 @@ Il trasferimento delle modifiche *da una variante all’elemento **Principale***
 
    ![sincronizzazione con l’elemento principale](assets/cfm-variations-11c.png)
 
-1. Seleziona **Sincronizza**; la variante viene aggiornata e visualizzata.
+1. Seleziona **Sincronizza**, la variante viene aggiornata e visualizzata.

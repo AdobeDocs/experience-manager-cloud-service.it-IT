@@ -3,10 +3,10 @@ title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
+source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 100%
+source-wordcount: '1760'
+ht-degree: 92%
 
 ---
 
@@ -356,6 +356,58 @@ Se crei una nuova variante, denominata “Berlino centro” (`berlin_centre`), r
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Query di esempio: nomi di tutte le città Taggato come City Breaks {#sample-names-all-cities-tagged-city-breaks}
+
+Se:
+
+* creare diversi tag, denominati `Tourism` : `Business`, `City Break`, `Holiday`
+* e assegnarli alla variante principale di vari `City` istanze
+
+Quindi puoi utilizzare una query per restituire i dettagli del `name` e `tags`di tutte le voci contrassegnate come interruzioni di città nel `city`schema.
+
+**Query di esempio**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**Risultati di esempio**
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
           ]
         }
       ]
@@ -1533,6 +1585,62 @@ Questa query rappresenta un’interrogazione per ottenere:
 }
 ```
 
+### Query di esempio per più frammenti di contenuto e relative varianti di un determinato modello {#sample-wknd-multiple-fragment-variations-given-model}
+
+Questa query rappresenta un’interrogazione:
+
+* frammenti di contenuto di tipo `article` e tutte le varianti
+
+**Query di esempio**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### Query di esempio per le varianti di frammenti di contenuto di un determinato modello a cui è associato un tag specifico{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+Questa query rappresenta un’interrogazione:
+
+* frammenti di contenuto di tipo `article` con una o più varianti contrassegnate dal tag `WKND : Activity / Hiking`
+
+**Query di esempio**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
 ### Query di esempio per più frammenti di contenuto di una determinata lingua {#sample-wknd-multiple-fragments-given-locale}
 
 Questa query rappresenta un’interrogazione per ottenere:
@@ -1610,6 +1718,84 @@ Questa query rappresenta un’interrogazione:
         }
     }
 }
+```
+
+### Query di esempio con filtro per ID _tags ed escluse le varianti {#sample-filtering-tag-not-variations}
+
+Questa query rappresenta un’interrogazione:
+
+* frammenti di contenuto di tipo `vehicle` con il tag `big-block`
+* escludendo le varianti
+
+**Query di esempio**
+
+```graphql
+query {
+  vehicleList(
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    items {
+      _variation
+      _path
+      type
+      name
+      model
+      fuel
+      _tags
+    }
+  }
+} 
+```
+
+### Query di esempio con filtro per ID _tags e varianti incluse {#sample-filtering-tag-with-variations}
+
+Questa query rappresenta un’interrogazione:
+
+* frammenti di contenuto di tipo `vehicle` con il tag `big-block`
+* incluse le varianti
+
+**Query di esempio**
+
+```graphql
+{
+  enginePaginated(after: "SjkKNmVkODFmMGQtNTQyYy00NmQ4LTljMzktMjhlNzQwZTY1YWI2Cmo5", first: 9 ,includeVariations:true, sort: "name",
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    edges{
+    node {
+        _variation
+        _path
+        name
+        type
+        size
+        _tags
+        _metadata {
+          stringArrayMetadata {
+            name
+            value
+          }
+        }
+    }
+      cursor
+    }
+  }
+} 
 ```
 
 ## Struttura di esempio dei frammenti di contenuto (utilizzata con GraphQL) {#content-fragment-structure-graphql}

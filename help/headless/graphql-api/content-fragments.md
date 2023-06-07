@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fa178192d74dfa9eb44835e31a111daf00f6d7d1
+source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
 workflow-type: tm+mt
-source-wordcount: '4789'
-ht-degree: 99%
+source-wordcount: '4934'
+ht-degree: 96%
 
 ---
 
@@ -936,6 +936,13 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
 
 
+
+* Il filtro `includeVariations` è incluso in `List` e `Paginated` tipi di query.  Per recuperare le varianti di frammenti di contenuto nei risultati della query, `includeVariations` il filtro deve essere impostato su `true`.
+
+   * Consulta [Query di esempio per più frammenti di contenuto e relative varianti di un determinato modello](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   >[!CAUTION]
+   >Il filtro `includeVariations` e il campo generato dal sistema `_variation` non può essere utilizzato insieme nella stessa definizione di query.
+
 * Se vuoi utilizzare un operatore OR logico:
    * utilizza ` _logOp: OR`
    * Vedi [Query di esempio: tutti gli utenti denominati “Jobs” o “Smith”](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
@@ -965,6 +972,10 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
          >
          >Se per un frammento di contenuto non esiste la variante determinata, la variante principale verrà restituita come impostazione predefinita (fallback).
 
+         >[!CAUTION]
+         >
+         >Campo generato dal sistema `_variation` non può essere utilizzato insieme al filtro `includeVariations`.
+
          * Consulta [Query di esempio: tutte le città con una variante denominata](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
    * Per [distribuzione delle immagini](#image-delivery):
 
@@ -977,6 +988,17 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
          * [Query di esempio per la distribuzione delle immagini con parametri completi](#image-delivery-full-parameters)
 
          * [Query di esempio per la distribuzione delle immagini con un singolo parametro specificato](#image-delivery-single-specified-parameter)
+   * `_tags` : per visualizzare gli ID dei frammenti di contenuto o delle varianti che contengono tag; si tratta di un array di `cq:tags` identificatori.
+
+      * Consulta [Query di esempio: nomi di tutte le città con tag City Breaks](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * Consulta [Query di esempio per le varianti di frammenti di contenuto di un determinato modello a cui è associato un tag specifico](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * Consulta [Query di esempio con filtro per ID _tags ed escluse le varianti](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * Consulta [Query di esempio con filtro per ID _tags e varianti incluse](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+      >[!NOTE]
+      >
+      >È inoltre possibile eseguire query sui tag elencando i metadati di un frammento di contenuto.
+
    * E operazioni:
 
       * `_operator`: applica operatori specifici; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -986,6 +1008,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
          * Vedi [Query di esempio: applica filtro su un array con un elemento che deve verificarsi almeno una volta](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`: per ignorare il caso durante la query
          * Vedi [Query di esempio: tutte le città che contengono SAN nel nome, indipendentemente da maiuscole/minuscole](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+
 
 
 
