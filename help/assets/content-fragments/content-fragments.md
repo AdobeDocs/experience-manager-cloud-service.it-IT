@@ -2,10 +2,10 @@
 title: Utilizzo di frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri in che modo i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring e la distribuzione headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: ca41657057211cb0736a866771253b166fa139b4
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 94%
+source-wordcount: '2135'
+ht-degree: 91%
 
 ---
 
@@ -46,6 +46,7 @@ Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, c
 * [Utilizzo di contenuti associati](/help/assets/content-fragments/content-fragments-assoc-content.md): come aggiungere contenuti associati
 * [Metadati: proprietà dei frammenti](/help/assets/content-fragments/content-fragments-metadata.md): come visualizzare e modificare le proprietà dei frammenti
 * Utilizzare [Frammenti di contenuto, insieme a GraphQL, per distribuire i contenuti](/help/assets/content-fragments/content-fragments-graphql.md) da utilizzare nelle applicazioni. Per facilitare questa fase, puoi visualizzare un’anteprima [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [Riutilizzare i frammenti di contenuto con MSM per le risorse](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
 >
@@ -109,6 +110,16 @@ Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, tali
 >[!NOTE]
 >
 >AEM supporta anche la traduzione del contenuto dei frammenti. Per ulteriori informazioni, consulta [Traduzione ddelle risorse](/help/assets/translate-assets.md).
+
+## Riutilizzo dei frammenti di contenuto con MSM per le risorse {#reusing-content-fragments-with-msm-assets}
+
+Quando si accede tramite il **Risorse** console puoi utilizzare MSM e creare Live Copy per i tuoi frammenti.
+
+Per maggiori dettagli vedi [Riutilizzare i frammenti di contenuto con MSM per le risorse](/help/assets/reuse-assets-using-msm.md).
+
+>[!CAUTION]
+>
+>Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), qualsiasi **Univoco** I vincoli devono essere rimossi da tutti i tipi di dati utilizzati nel rispettivo [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md).
 
 ## Tipo di contenuto {#content-type}
 

@@ -4,10 +4,10 @@ description: Scopri in che modo i frammenti di contenuto in Adobe Experience Man
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2058'
-ht-degree: 100%
+source-wordcount: '2127'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +59,7 @@ Per facilitare questa fase, puoi visualizzare un’anteprima della [Struttura ad
 >* [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API GraphQL di AEM per l’utilizzo con Frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
+>* [Riutilizzare i frammenti di contenuto con MSM per le risorse](/help/assets/reuse-assets-using-msm.md) (disponibile solo tramite **Risorse** console)
 
 
 Il numero di canali di comunicazione aumenta ogni anno. In genere i canali si distinguono in base al meccanismo di consegna, come segue:
@@ -112,6 +113,16 @@ Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, tali
 >[!NOTE]
 >
 >AEM supporta anche la traduzione del contenuto dei frammenti. Per ulteriori informazioni, consulta [Traduzione ddelle risorse](/help/assets/translate-assets.md).
+
+## Pubblicazione e anteprima {#publish-and-preview}
+
+Come per tutti i contenuti, in futuro vorrai pubblicare i frammenti di contenuto in **[Servizio di pubblicazione](/help/overview/architecture.md#runtime-architecture)**.
+
+Prima di ciò, puoi anche visualizzare in anteprima un’esperienza consegnata utilizzando frammenti di contenuto, [pubblicazione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) all&#39;AEM **[Servizio di anteprima](/help/overview/architecture.md#runtime-architecture)**.
+
+>[!CAUTION]
+>
+>Pubblicazione in **Servizio di anteprima** è disponibile solo da **Frammenti di contenuto** console.
 
 ## Tipo di contenuto {#content-type}
 

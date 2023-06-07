@@ -2,10 +2,10 @@
 title: Guida introduttiva ad AEM headless as a Cloud Service
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
 workflow-type: tm+mt
-source-wordcount: '3058'
-ht-degree: 100%
+source-wordcount: '3090'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,10 @@ Il contenuto inizia nell’istanza di authoring. Ed è qui che gli autori dei co
 ### Istanza di pubblicazione {#publish}
 
 Una volta creato il contenuto nell’istanza di authoring, deve essere pubblicato per essere disponibile e utilizzabile da altri servizi. Un’istanza di pubblicazione contiene tutti i contenuti già pubblicati.
+
+### Servizio di anteprima {#preview}
+
+Prima di pubblicare nell’istanza Publish, puoi anche pubblicare il frammento di contenuto in **Servizio di anteprima** per test e revisione. Questa operazione viene eseguita dal **Frammenti di contenuto** console.
 
 ### Replica {#replication}
 

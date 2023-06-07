@@ -3,10 +3,10 @@ title: Utilizzo dell’IDE GraphiQL in AEM
 description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,6 @@ Un’implementazione dell’IDE [GraphiQL](https://graphql.org/learn/serving-ove
 >[!NOTE]
 >Prima di utilizzare l’IDE GraphiQL, devi avere [configurato gli endpoint](/help/headless/graphql-api/graphql-endpoint.md) nel [browser delle configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
 
-
 Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query GraphQL consentendoti di:
 * selezionare l’**Endpoint** appropriato per la configurazione Sites da utilizzare per le query;
 * inserire direttamente nuove query;
@@ -31,7 +30,7 @@ Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query G
 * eseguire le query per visualizzare immediatamente i risultati;
 * gestire **variabili di query**;
 * salvare e gestire **query persistenti**;
-* pubblicare o annullare la pubblicazione di **query persistenti** (ad esempio, a/da `dev-publish`);
+* pubblicare o annullare la pubblicazione, **Query persistenti**, al tuo **Pubblica** o **Anteprima** servizio; ad esempio, a/da `dev-publish`
 * vedere la **cronologia** delle query precedenti;
 * utilizzare **Esplora documentazione** per accedere alla documentazione, per scoprire e comprendere i metodi disponibili.
 
@@ -132,13 +131,27 @@ Le cache possono continuare a fornire una risposta dalla cache in caso di errore
 
 1. Seleziona **Salva** per mantenere le modifiche persistenti.
 
-## Pubblicazione di query persistenti {#publishing-persisted-queries}
+## Pubblicazione e anteprima delle query persistenti {#publishing-previewing-persisted-queries}
 
-Dopo aver selezionato la query persistente dall’elenco (pannello a sinistra), puoi utilizzare le azioni **Pubblica** e **Annulla pubblicazione**. Queste consentono di attivarle nell’ambiente di pubblicazione (ad esempio, `dev-publish`) per renderle facilmente accessibili dalle applicazioni in fase di test.
+Dopo aver selezionato la query persistente dall’elenco (pannello a sinistra), puoi utilizzare **Pubblica** azione.
+
+La query verrà attivata nell’ambiente selezionato. È possibile scegliere **Pubblica** ambiente (ad esempio, `dev-publish`) o **Anteprima** per un facile accesso da parte delle applicazioni durante il test.
+
+![GraphiQL - Query persistente pubblicata](assets/cfm-graphiql-publish.png "GraphiQL - Pubblica query persistente")
 
 >[!NOTE]
 >
 >La definizione della cache della query persistente `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} ha un valore predefinito di 2 ore (7200 secondi).
+
+## Annullamento della pubblicazione delle query persistenti {#unpublishing-persisted-queries}
+
+Come per la pubblicazione, dopo aver selezionato la query persistente dall’elenco (pannello a sinistra) puoi utilizzare **Annulla pubblicazione** azione.
+
+In questo modo la query verrà disattivata dall’ambiente selezionato, **Pubblica** o il tuo **Anteprima** ambiente.
+
+>[!NOTE]
+>
+>È inoltre necessario assicurarsi di aver apportato le modifiche necessarie all&#39;applicazione client per evitare potenziali problemi.
 
 ## Copiare l’URL per accedere direttamente alla query {#copy-url}
 

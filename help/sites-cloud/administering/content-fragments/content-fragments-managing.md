@@ -4,10 +4,10 @@ description: Scopri come utilizzare la console Frammenti di contenuto per gestir
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: b351582a405f5c419f3aa386faddccd6ecef3a43
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 100%
+source-wordcount: '2071'
+ht-degree: 87%
 
 ---
 
@@ -37,7 +37,7 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 
 >[!NOTE]
 >
->I frammenti di contenuto sono memorizzati come **Risorse**. Sono gestite principalmente dalla console **Frammenti di contenuto**, ma la gestione è possibile anche dalla console **Assets**.
+>I frammenti di contenuto sono memorizzati come **Risorse**. Sono gestite principalmente dalla console **Frammenti di contenuto**, ma la gestione è possibile anche dalla console [Assets](/help/assets/content-fragments/content-fragments-managing.md).
 
 ## Console Frammenti di contenuto {#content-fragments-console}
 
@@ -166,8 +166,8 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
 * Il menu a discesa tre punti (**...**) fornisce accesso alle azioni aggiuntive:
    * **Aggiorna i riferimenti di pagina**
       * Questo aggiorna tutti i riferimenti di pagina.
-   * **[Pubblicazione rapida](#publishing-and-referencing-a-fragment)**
-   * **[Gestisci pubblicazione](#publishing-and-referencing-a-fragment)**
+   * **[Pubblicazione rapida](/help/assets/manage-publication.md#quick-publish)**
+   * **[Gestisci pubblicazione](/help/assets/manage-publication.md#manage-publication)**
 
 <!--
 This updates any page references and ensures that the Dispatcher is flushed as required. -->
@@ -238,39 +238,65 @@ Dopo aver creato il contenuto primario, puoi creare e gestire le [Varianti](/hel
 
 Puoi visualizzare e modificare le proprietà di un frammento utilizzando la scheda [Metadati](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md).
 
-## Pubblicazione e riferimento a un frammento {#publishing-and-referencing-a-fragment}
+## Pubblicazione e anteprima di un frammento {#publishing-and-previewing-a-fragment}
+
+Puoi pubblicare i frammenti di contenuto in:
+
+* il **[Servizio di pubblicazione](/help/overview/architecture.md#runtime-architecture)** - per l&#39;accesso pubblico completo
+
+* il **[Servizio di anteprima](/help/overview/architecture.md#runtime-architecture)** - per visualizzare l&#39;anteprima dei contenuti prima della loro completa disponibilità
+
+   >[!CAUTION]
+   Pubblicazione di frammenti di contenuto in **Servizio di anteprima** è disponibile solo da [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); utilizzo di **Pubblica** azione.
+
+   >[!NOTE]
+   Per ulteriori dettagli sugli ambienti di anteprima, consulta:
+   * [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+   * [Configurazione delle impostazioni OSGi per il livello di anteprima](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+   * [Eseguire il debug dell’ambiente di anteprima tramite Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+
+
+Per pubblicare i frammenti di contenuto utilizzando **Pubblica** nella barra degli strumenti del [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
->Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
->Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
+Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
 
-I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione.
+1. Seleziona uno o più frammenti dall’elenco.
 
-* Dall’opzione **Pubblicazione** nella barra degli strumenti della [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
-   * **Ora** - dopo la conferma, il frammento viene pubblicato immediatamente
-   * **Pianificazione** - puoi selezionare la data e l’ora in cui verrà pubblicato il frammento
+1. Dalla barra degli strumenti, seleziona **Pubblica** e quindi una delle seguenti opzioni per aprire la finestra di dialogo appropriata:
 
-   Se necessario, verrà richiesto di specificare la **data di attivazione** e i riferimenti da pubblicare. Esempio:
+   * **Ora** - selezionare una delle seguenti opzioni **Servizio di pubblicazione** o **Servizio di anteprima**; dopo la conferma, il frammento viene pubblicato immediatamente
+   * **Pianificazione** : oltre al servizio richiesto, puoi anche selezionare la data e l’ora in cui verrà pubblicato il frammento
+
+   Se necessario, verrà richiesto di specificare i riferimenti da pubblicare. Per impostazione predefinita, i riferimenti vengono pubblicati anche nel servizio di anteprima per garantire che non vi siano interruzioni nel contenuto.
+Ad esempio, per una richiesta di pubblicazione pianificata:
    ![Finestra di dialogo Pubblica](assets/cfm-publish-01.png)
 
-* Dall’[editor frammento di contenuto](#toolbar-actions-in-the-content-fragment-editor)
-   * [**Pubblicazione rapida**](/help/assets/manage-publication.md#quick-publish)
-   * [**Gestisci pubblicazione**](/help/assets/manage-publication.md#manage-publication)
+1. Conferma l’azione di pubblicazione.
 
-Inoltre, quando [pubblichi una pagina che utilizza il frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), il frammento verrà elencato nei riferimenti di pagina.
+Puoi anche pubblicare in **Servizio di pubblicazione** dal [Editor frammento di contenuto](#toolbar-actions-in-the-content-fragment-editor) utilizzando:
+* **Pubblicazione rapida**
+* **Gestisci pubblicazione**
+
+>[!NOTE]
+Dopo di te [pubblicare una pagina che utilizza il frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); il frammento verrà elencato nei riferimenti di pagina.
 
 >[!CAUTION]
->Dopo la pubblicazione e/o il riferimento a un frammento, AEM mostra un avviso quando un autore riapre il frammento per la modifica. L’avviso informa l’utente che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
+Dopo la pubblicazione e/o il riferimento a un frammento, AEM mostra un avviso quando un autore riapre il frammento per la modifica. L’avviso informa l’utente che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
 
 ## Annullamento della pubblicazione di un frammento {#unpublishing-a-fragment}
 
-Per annullare la pubblicazione dei frammenti di contenuto, seleziona uno o più frammenti, quindi **Annulla pubblicazione**.
+Per annullare la pubblicazione dei frammenti di contenuto, seleziona uno o più frammenti, quindi **Annulla pubblicazione** nella barra degli strumenti del [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). Puoi selezionare **Ora** o **Pianificato**.
+
+Quando viene visualizzata la relativa finestra di dialogo, è possibile selezionare il servizio appropriato:
+![Finestra di dialogo Annulla pubblicazione](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
->L’azione **Annulla pubblicazione** sarà visibile quando sono disponibili i frammenti pubblicati.
+Il **Annulla pubblicazione** L’azione sarà visibile solo quando sono disponibili i frammenti pubblicati.
 
 >[!CAUTION]
->Se il frammento è già oggetto di riferimento da un altro frammento o da una pagina, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera continuare.
+Se il frammento è già oggetto di riferimento da un altro frammento o da una pagina, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera continuare.
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
@@ -280,13 +306,13 @@ Per eliminare un frammento:
 2. Seleziona il frammento.
 
    >[!NOTE]
-   >L’azione **Elimina** non è disponibile come azione rapida.
+   L’azione **Elimina** non è disponibile come azione rapida.
 
 3. Seleziona **Elimina** dalla barra degli strumenti.
 4. Conferma l’azione **Elimina**.
 
    >[!CAUTION]
-   >Se il frammento è già oggetto di riferimento da un altro frammento o da una pagina, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con il comando **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.
+   Se il frammento è già oggetto di riferimento da un altro frammento o da una pagina, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con il comando **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.
 
 ## Individuare i riferimenti principali di un frammento {#parent-references-fragment}
 
@@ -299,7 +325,7 @@ I dettagli delle copie per lingua sono accessibili dalla colonna **Lingua** dell
 ## Timeline per i frammenti di contenuto {#timeline-for-content-fragments}
 
 >[!NOTE]
->Questa funzionalità è disponibile solo nella console **Assets**
+Questa funzionalità è disponibile solo nella console **Assets**
 
 Oltre alle opzioni standard, [Timeline](/help/assets/manage-digital-assets.md#timeline) fornisce sia informazioni che azioni specifiche relative ai frammenti di contenuto:
 
@@ -319,13 +345,14 @@ Oltre alle opzioni standard, [Timeline](/help/assets/manage-digital-assets.md#ti
    * **Eliminare**
 
 >[!NOTE]
->I commenti sono:
->* Funzionalità standard per tutte le risorse
->* Effettuati nella timeline
->* Correlati alla risorsa frammento
->Le annotazioni (per i frammenti di contenuto) sono:
->* Inserite nell’editor frammenti
->* Specifiche per un segmento di testo selezionato all’interno del frammento
+I commenti sono:
+* Funzionalità standard per tutte le risorse
+* Effettuati nella timeline
+* Correlati alla risorsa frammento
+>
+Le annotazioni (per i frammenti di contenuto) sono:
+* Inserite nell’editor frammenti
+* Specifiche per un segmento di testo selezionato all’interno del frammento
 >
 
 
@@ -336,7 +363,7 @@ Esempio:
 ## Confronto delle versioni dei frammenti {#comparing-fragment-versions}
 
 >[!NOTE]
->Questa funzionalità è disponibile solo nella console **Risorse**
+Questa funzionalità è disponibile solo nella console **Risorse**
 
 L’azione **Confronta con corrente** è disponibile nella [Timeline](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) dopo aver selezionato una versione specifica.
 
@@ -359,14 +386,14 @@ Le versioni vengono visualizzate affiancate e:
 * **Fine** riporta alla console
 
 >[!NOTE]
->Non è possibile modificare il contenuto del frammento nella modalità di confronto.
+Non è possibile modificare il contenuto del frammento nella modalità di confronto.
 
 ![confronto](assets/cfm-managing-06.png)
 
 ## Ripristino di una versione  {#reverting-to-a-version}
 
 >[!NOTE]
->Questa funzionalità è disponibile solo nella console **Risorse**
+Questa funzionalità è disponibile solo nella console **Risorse**
 
 È possibile ripristinare una versione specifica del frammento:
 

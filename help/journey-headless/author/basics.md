@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
+source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 100%
+source-wordcount: '1711'
+ht-degree: 95%
 
 ---
 
@@ -28,16 +28,19 @@ Questo articolo si basa su questi elementi per comprendere come creare contenuti
 
 Prima di iniziare a gestire i frammenti di contenuto, ecco un’introduzione (molto) rapida all’utilizzo di AEM...ma niente sostituisce l’esperienza di accesso e di utilizzo del sistema.
 
-### Creazione e pubblicazione {#author-preview-publish}
+### Authoring, Anteprima e Pubblicazione {#author-preview-publish}
 
-Un’installazione di AEM è in genere costituita da almeno due ambienti:
+Un’installazione AEM è generalmente costituita da tre ambienti:
 
 * Autore
 * Pubblicazione
+* Anteprima
 
 Accedi e utilizza l’ambiente di authoring per generare i contenuti. Quando è tutto pronto, pubblica il contenuto in modo che diventi disponibile. Per gli headless sarà disponibile in altre applicazioni, per le pagine web sarà disponibile ai lettori sul web.
 
 Per ulteriori dettagli, consulta i concetti di authoring.
+
+Dalla sezione **Frammenti di contenuto** , puoi anche pubblicare in **Servizio di anteprima**, per il test e la visualizzazione in anteprima, prima della pubblicazione. Consulta Pubblicazione e anteprima di un frammento.
 
 ### Accesso {#signing-in}
 
@@ -263,9 +266,13 @@ I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di con
 
 Una volta completato il frammento, puoi **Pubblicare** in modo che sia disponibile per le applicazioni headless.
 
-Le azioni di pubblicazione sono disponibili nell’editor (o dalla barra degli strumenti della console **Frammenti di contenuto** o **Risorse**):
+Le azioni di pubblicazione sono disponibili nell’editor:
 
 ![Editor frammento di contenuto - Frammento personale](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+
+>[!NOTE]
+>
+>Puoi anche pubblicare il frammento da **Risorse** o **Frammenti di contenuto** console.
 
 ## Passaggio successivo {#whats-next}
 
@@ -289,21 +296,26 @@ Ora che hai imparato le nozioni di base, il passo successivo è [Scopri come uti
 
    * [Selettore della barra](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-   * Pubblicazione
-
-      * [Pubblicazione rapida](/help/assets/manage-publication.md#quick-publish)
-
-      * [Gestisci pubblicazione](/help/assets/manage-publication.md#manage-publication)
-
 * [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
    * [Gestione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [Applica la configurazione alla cartella Risorse](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [Applica la configurazione alla cartella Risorse](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Creazione di un frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Creazione di un frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Varianti - Authoring di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
+   * Pubblicazione
+
+      * Dall’editor, oppure **Risorse** console
+
+         * [Pubblicazione rapida](/help/assets/manage-publication.md#quick-publish)
+
+         * [Gestisci pubblicazione](/help/assets/manage-publication.md#manage-publication)
+      * Dalla sezione **Frammenti di contenuto** Console
+
+         * [Pubblicazione e anteprima di un frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
    * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [Modelli per frammenti di contenuto - Tipi di dati](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
@@ -311,6 +323,7 @@ Ora che hai imparato le nozioni di base, il passo successivo è [Scopri come uti
       * [Modelli per frammenti di contenuto - Proprietà](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
       * [Modelli per frammenti di contenuto - Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+
 
 
 * Guide introduttive

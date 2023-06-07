@@ -5,10 +5,10 @@ landing-page-description: Scopri come gestire i frammenti di contenuto dalla con
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
+source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 100%
+source-wordcount: '1106'
+ht-degree: 95%
 
 ---
 
@@ -102,11 +102,11 @@ Quando si seleziona un frammento specifico, viene aperta una barra degli strumen
 ![Console Frammenti di contenuto; barra degli strumenti per un frammento selezionato](assets/cfc-fragment-toolbar.png)
 
 * **Apri**
-* **Pubblica** (e **Annulla pubblicazione**)
+* **[Pubblica](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)** (e **[Annulla pubblicazione](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**)
 * **Copia**
 * **Sposta**
 * **Rinomina**
-* **Elimina**
+* **[Elimina](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
 
 >[!NOTE]
 >
@@ -125,6 +125,11 @@ Il pannello principale (vista tabella) della console, a destra, fornisce una ser
 Passando il puntatore del mouse sul nome della cartella verrà visualizzato il percorso JCR.
 * **Stato**
    * Solo informazioni
+* **Anteprima**
+   * Solo informazioni:
+      * **In sincronia**: frammento di contenuto sincronizzato in **Autore** e **Anteprima** servizi.
+      * **Fuori sincronizzazione**: frammento di contenuto non sincronizzato sulla **Autore** e ****Anteprima** servizi. È necessario **Pubblica** a **Anteprima** per garantire che le due istanze tornino ad essere sincronizzate.
+      * vuoto: il frammento di contenuto non esiste nel **Anteprima** servizio.
 * **Modificato**
    * Solo informazioni
 * **Modificato da**

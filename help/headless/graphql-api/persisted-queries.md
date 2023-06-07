@@ -3,10 +3,10 @@ title: Query GraphQL persistenti
 description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
+source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 90%
 
 ---
 
@@ -355,7 +355,11 @@ Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](
 
 >[!NOTE]
 >
->La configurazione OSGi è appropriata solo per le istanze di pubblicazione. La configurazione esiste sulle istanze di authoring, ma viene ignorata.
+>Per il controllo della cache, la configurazione OSGi è appropriata solo per le istanze di pubblicazione. La configurazione esiste sulle istanze di authoring, ma viene ignorata.
+
+>[!NOTE]
+>
+>Il **Configurazione servizio query persistenti** viene utilizzato anche per [configurazione del codice di risposta della query](#configuring-query-response-code).
 
 La configurazione OSGi predefinita per le istanze di pubblicazione:
 
@@ -371,6 +375,26 @@ La configurazione OSGi predefinita per le istanze di pubblicazione:
    {style="table-layout:auto"}
 
 * e, se non disponibile, la configurazione OSGi utilizza i [valori predefiniti per le istanze di pubblicazione](#publish-instances).
+
+## Configurazione del codice di risposta della query {#configuring-query-response-code}
+
+Per impostazione predefinita, il `PersistedQueryServlet` invia un `200` quando esegue una query, indipendentemente dal risultato effettivo.
+
+È possibile [configurare le impostazioni OSGi](/help/implementing/deploying/configuring-osgi.md) per **Configurazione servizio query persistenti** per controllare quale codice di stato viene restituito da `/execute.json/persisted-query` endpoint, quando si verifica un errore nella query persistente.
+
+>[!NOTE]
+>
+>Il **Configurazione servizio query persistenti** viene utilizzato anche per [gestione della cache](#cache-osgi-configration).
+
+Il campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) può essere definito come richiesto:
+
+* `false` (valore predefinito): non importa se la query persistente ha esito positivo o negativo. Il `/execute.json/persisted-query` restituirà il codice di stato `200` e `Content-Type` l&#39;intestazione restituita sarà `application/json`.
+
+* `true`: l’endpoint restituirà `400` o `500` quando si verifica una forma di errore durante l’esecuzione della query persistente. Anche il restituito `Content-Type` sarà `application/graphql-response+json`.
+
+   >[!NOTE]
+   >
+   >Per maggiori dettagli, visitare il sito https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Codifica dell’URL della query per l’utilizzo da parte di un’app {#encoding-query-url}
 

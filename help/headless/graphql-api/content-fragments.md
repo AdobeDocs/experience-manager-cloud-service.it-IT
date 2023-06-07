@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
+source-git-commit: fa178192d74dfa9eb44835e31a111daf00f6d7d1
 workflow-type: tm+mt
-source-wordcount: '4769'
-ht-degree: 100%
+source-wordcount: '4789'
+ht-degree: 99%
 
 ---
 
@@ -134,12 +134,16 @@ GraphQL supporta anche le richieste GET, ma queste devono sottostare a limiti (a
 
 Puoi testare ed eseguire il debug delle query GraphQL utilizzando [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md).
 
-## Casi di utilizzo per ambienti di authoring e pubblicazione {#use-cases-author-publish-environments}
+## Casi d’uso per l’authoring, l’anteprima e la pubblicazione {#use-cases-author-preview-publish}
 
 I casi di utilizzo possono dipendere dal tipo di ambiente AEM as a Cloud Service:
 
 * ambiente di pubblicazione; utilizzato per:
    * effettuare query sui dati per l’applicazione JS (caso di utilizzo standard)
+
+* Ambiente di anteprima; utilizzato per:
+   * Anteprima delle query prima della distribuzione nell’ambiente di pubblicazione
+      * effettuare query sui dati per l’applicazione JS (caso di utilizzo standard)
 
 * ambiente di authoring; utilizzato per:
    * effettuare query sui dati a “scopo di gestione dei contenuti”:

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '3271'
-ht-degree: 11%
+source-wordcount: '3404'
+ht-degree: 12%
 
 ---
 
@@ -25,6 +25,16 @@ Funzionalità Multi Site Manager (MSM) in [!DNL Adobe Experience Manager] consen
 * Crea una volta le risorse, quindi copiale per riutilizzarle in altre aree del sito.
 * Mantieni più copie sincronizzate e aggiorna la copia principale originale una sola volta per inviare le modifiche alle copie secondarie.
 * Apporta modifiche locali sospendendo temporaneamente o definitivamente il collegamento tra le risorse principali e secondarie.
+
+>[!NOTE]
+>
+>MSM per [!DNL Assets] include Frammenti di contenuto memorizzati come [!DNL Assets] (anche se considerata una funzione di Sites).
+
+>[!CAUTION]
+>
+>MSM per frammenti di contenuto è disponibile solo quando si utilizzano frammenti di contenuto tramite **[!UICONTROL Risorse]** console.
+>
+>La funzionalità MSM è *non* disponibile quando si utilizza **[!UICONTROL Frammenti di contenuto]** console.
 
 ## Comprendere i vantaggi e i concetti di MSM {#concepts}
 
@@ -43,7 +53,7 @@ MSM mantiene una relazione live tra la risorsa sorgente e le relative Live Copy 
 
 **Live Copy:** Copia delle risorse/cartelle di origine sincronizzate con la relativa origine. Le Live Copy possono essere una fonte di ulteriori Live Copy. Scopri come creare LC.
 
-**Ereditarietà:** Un collegamento/riferimento tra una risorsa/cartella Live Copy e la relativa origine che il sistema utilizza per ricordare dove inviare gli aggiornamenti. L’ereditarietà esiste a livello granulare per i campi di metadati. È possibile rimuovere l’ereditarietà per i campi di metadati selettivi mantenendo la relazione live tra l’origine e la relativa Live Copy.
+**Ereditarietà:** Un collegamento/riferimento tra una risorsa/cartella Live Copy e la relativa origine che il sistema utilizza per ricordare dove inviare gli aggiornamenti. L’ereditarietà esiste a un livello granulare per i campi di metadati, ma anche per le varianti e i campi di frammenti di contenuto. È possibile rimuovere l’ereditarietà per gli elementi selezionati mantenendo la relazione live tra l’origine e la relativa Live Copy.
 
 **Rollout:** Azione che invia le modifiche apportate all’origine a valle alle relative Live Copy. È possibile aggiornare una o più Live Copy in una sola volta utilizzando l’azione di rollout. Consulta Rollout.
 
@@ -66,7 +76,7 @@ Per creare una Live Copy da una o più risorse o cartelle di origine, effettua u
 * Metodo 1: seleziona le risorse di origine e fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Live Copy]** dalla barra degli strumenti nella parte superiore.
 * Metodo 2: In [!DNL Experience Manager] interfaccia utente, fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Live Copy]** dall’angolo superiore destro dell’interfaccia.
 
-Puoi creare live copy di una risorsa o cartella una alla volta. Puoi creare Live Copy derivate da una risorsa o da una cartella che è essa stessa una Live Copy. I frammenti di contenuto (CF) non sono supportati per il caso d’uso. Quando si tenta di creare le proprie Live Copy, le CF vengono copiate così come sono senza alcuna relazione. I CF copiati sono uno snapshot nel tempo e non si aggiornano quando i CF originali vengono aggiornati.
+Puoi creare live copy di una risorsa o cartella una alla volta. Puoi creare Live Copy derivate da una risorsa o da una cartella che è essa stessa una Live Copy.
 
 Per creare Live Copy utilizzando il primo metodo, effettua le seguenti operazioni:
 
@@ -233,6 +243,38 @@ Per visualizzare gli stati e le informazioni relativi a un’azione di sincroniz
 >
 >Se la relazione è sospesa, l’azione di sincronizzazione non è disponibile nella barra degli strumenti. Anche se l’azione di sincronizzazione è disponibile nella barra Riferimenti, le modifiche non vengono propagate anche in caso di rollout riuscito.
 
+## Annullamento e riattivazione dell&#39;ereditarietà per singoli elementi {#canceling-reenabling-inheritance-individual-items}
+
+Puoi annullare l’ereditarietà della Live Copy per:
+
+* campo metadati
+* Variante del frammento di contenuto
+* Campo dati Frammento di contenuto
+
+Ciò significa che l’elemento non è più sincronizzato con il componente di origine. Se necessario, puoi abilitare l’ereditarietà in un momento successivo.
+
+### Annulla ereditarietà {#cancel-inheritance}
+
+Per annullare l&#39;ereditarietà:
+
+1. Seleziona la **Annulla ereditarietà** accanto all&#39;elemento richiesto:
+
+   ![L&#39;azione Sincronizza richiama le modifiche apportate all&#39;origine](assets/cancel-inheritance-icon.png)
+
+1. Nella finestra di dialogo Annulla ereditarietà conferma l’azione tramite Sì.
+
+### Riattiva ereditarietà {#reenable-inheritance}
+
+Per riabilitare l&#39;ereditarietà:
+
+1. Per abilitare l&#39;ereditarietà per un elemento, selezionare **Riabilita ereditarietà** accanto all&#39;elemento richiesto:
+
+   ![L&#39;azione Sincronizza richiama le modifiche apportate all&#39;origine](assets/re-enable-inheritance-icon.png)
+
+   >[!NOTE]
+   >
+   >Quando riattivi l’ereditarietà, l’elemento non viene sincronizzato automaticamente con l’origine. Se necessario, è possibile richiedere manualmente una sincronizzazione.
+
 ## Sospendi e riprendi relazione {#suspend-resume}
 
 Puoi sospendere temporaneamente la relazione per impedire a una Live Copy di ricevere le modifiche apportate alla risorsa o alla cartella di origine. È inoltre possibile riprendere la relazione affinché la Live Copy inizi a ricevere le modifiche dall’origine.
@@ -319,11 +361,13 @@ In più scenari, MSM per [!DNL Assets] corrisponde al comportamento di MSM per l
 * La configurazione dei blocchi MSM nelle proprietà della pagina non è supportata in MSM per [!DNL Assets].
 * Per MSM per [!DNL Assets], utilizza solo **[!UICONTROL Configurazione rollout standard]**. Le altre configurazioni di rollout non sono disponibili per MSM per [!DNL Assets].
 
+>[!NOTE]
+>
+>Ricorda che MSM per i frammenti di contenuto (a cui si accede tramite il **[!UICONTROL Risorse]** ) utilizza la funzionalità Assets, in quanto sono memorizzate come Assets (sebbene siano considerate una funzione di Sites ).
+
 ## Limitazioni e problemi noti di MSM per [!DNL Assets] {#limitations}
 
 Di seguito sono riportate le limitazioni di MSM per [!DNL Assets].
-
-* I frammenti di contenuto non sono supportati. Quando si tenta di creare le Live Copy, i frammenti di contenuto vengono copiati così come sono senza alcuna relazione. I frammenti di contenuto copiati sono uno snapshot nel tempo e non vengono aggiornati quando si aggiornano i frammenti di contenuto originali.
 
 * MSM non funziona con il writeback dei metadati abilitato. Al writeback, l&#39;ereditarietà si interrompe.
 
@@ -341,3 +385,4 @@ Di seguito sono riportate le limitazioni di MSM per [!DNL Assets].
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)

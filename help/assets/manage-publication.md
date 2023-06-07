@@ -1,21 +1,20 @@
 ---
 title: Gestisci pubblicazione
 description: Pubblicare o annullare la pubblicazione delle risorse in Experience Manager Assets, Dynamic Media e Brand Portal
-contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 9%
+source-wordcount: '1630'
+ht-degree: 6%
 
 ---
 
 # Gestire la pubblicazione in Experience Manager Assets {#manage-publication-in-aem}
 
-Come un [!DNL Adobe Experience Manager Assets] amministratore, puoi pubblicare su risorse e cartelle contenenti risorse dall’istanza di authoring [!DNL Experience Manager Assets], [!DNL Dynamic Media], e [!DNL Brand Portal]. Puoi anche pianificare il flusso di lavoro di una risorsa o di una cartella in modo che venga pubblicata in una data o in un’ora successiva. Dopo la pubblicazione, gli utenti possono accedere e distribuire ulteriormente le risorse ad altri utenti. Per impostazione predefinita, puoi pubblicare risorse e cartelle in [!DNL Experience Manager Assets]. Tuttavia, puoi configurare [!DNL Experience Manager Assets] per abilitare la pubblicazione su [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) e [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+Come un [!DNL Adobe Experience Manager Assets] amministratore, puoi pubblicare su risorse e cartelle contenenti risorse dall’istanza di authoring [!DNL Experience Manager Assets], [!DNL Dynamic Media], e [!DNL Brand Portal]. Inoltre, puoi pianificare la pubblicazione di una risorsa o cartella in una data o in un’ora successiva. Dopo la pubblicazione, gli utenti possono accedere e distribuire ulteriormente le risorse ad altri utenti. Per impostazione predefinita, puoi pubblicare risorse e cartelle in [!DNL Experience Manager Assets]. Tuttavia, puoi configurare [!DNL Experience Manager Assets] per abilitare la pubblicazione su [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) e [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 Puoi pubblicare o annullare la pubblicazione delle risorse a livello di risorsa o cartella utilizzando **[!UICONTROL Pubblicazione rapida]** o **[!UICONTROL Gestisci pubblicazione]** opzione disponibile in [!DNL Experience Manager Assets] di rete. Se apporti successive modifiche alla risorsa o alla cartella originale in [!DNL Experience Manager Assets], le modifiche non vengono applicate nell’istanza di pubblicazione fino a quando non si ripubblica da [!DNL Experience Manager Assets]. In questo modo le modifiche in corso di lavorazione non sono disponibili nell’istanza di pubblicazione. Nell’istanza di pubblicazione sono disponibili solo le modifiche approvate pubblicate da un amministratore.
 
@@ -24,6 +23,7 @@ Puoi pubblicare o annullare la pubblicazione delle risorse a livello di risorsa 
 * [Pubblicare le risorse in un secondo momento](#publish-assets-later)
 * [Pubblicare risorse in Dynamic Media](#publish-assets-to-dynamic-media)
 * [Pubblicare risorse su Brand Portal](#publish-assets-to-brand-portal)
+* [Richiedi pubblicazione](#request-publication)
 * [Limitazioni e suggerimenti](#limitations-and-tips)
 
 ## Pubblicare le risorse tramite la pubblicazione rapida {#quick-publish}
@@ -61,7 +61,7 @@ Per continuare, fai clic su **[!UICONTROL Successivo]**. In base alla selezione,
 
 ### Aggiungi contenuto {#add-content}
 
-Pubblicazione in [!DNL Experience Manager Assets] consente di aggiungere ulteriore contenuto (risorse e cartelle) all’elenco di pubblicazione. Puoi aggiungere più risorse o cartelle all’elenco negli archivi DAM. Fai clic su **[!UICONTROL Aggiungi contenuto]** per aggiungere altri contenuti.
+Pubblicazione in [!DNL Experience Manager Assets] consente di aggiungere ulteriore contenuto (risorse e cartelle) all’elenco di pubblicazione. Puoi aggiungere più risorse o cartelle all’elenco negli archivi DAM. Clic **[!UICONTROL Aggiungi contenuto]** per aggiungere altri contenuti.
 
 Puoi aggiungere più risorse da una cartella o più cartelle alla volta. Tuttavia, non è possibile aggiungere risorse da più cartelle alla volta.
 
@@ -177,24 +177,27 @@ Puoi pubblicare risorse, cartelle e raccolte in [!DNL Experience Manager Assets 
 * [Pubblicare cartelle su Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
 * [Pubblicare raccolte su Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
 
+## Richiedi pubblicazione {#request-publication}
+
+Il `Request Publication` consente di autenticare il flusso di lavoro delle risorse prima di pubblicarle in [!DNL AEM] Ambiente risorse. [!DNL AEM] fornisce un diverso livello di autorizzazioni a vari utenti. Puoi essere un *collaboratore* che sta caricando le risorse, ma non può pubblicarle finché non vengono verificati i caricamenti. Inoltre, essendo un *Amministratore* puoi gestire la lettura e la scrittura dei flussi di lavoro di Assets.
+
+L’opzione Richiedi pubblicazione è disponibile per i seguenti utenti:
+* **Collaboratore:** Se sei un utente che può contribuire a [!DNL AEM] Assets, quindi hai accesso limitato al [!DNL AEM] Flusso di lavoro delle risorse. `Manage publication` Il pulsante è nascosto per te. In qualità di collaboratore, puoi contribuire solo aggiungendo risorse, ma non puoi pubblicarle o avere accesso in lettura al flusso di lavoro.
+
+* **Utente flusso di lavoro:** Questo utente non può pubblicare le risorse, ma ha accesso in lettura al flusso di lavoro. In qualità di utente del flusso di lavoro, puoi:
+   * richiedi pubblicazione
+   * visualizza `Manage publication` pulsante
+   * pianificare il flusso di lavoro e visualizzare le opzioni `schedule now` e `schedule later`
+
+* **Amministratore:** In qualità di utente amministratore, puoi gestire i passaggi generali del flusso di lavoro per Assets. `Manage publication` è visibile. Se la destinazione `publish` , puoi pianificare una risorsa in un secondo momento per il passaggio del flusso di lavoro.
+
+>[!NOTE]
+>
+>Se [!DNL Dynamic Media] è selezionato come destinazione, quindi il passaggio del flusso di lavoro è disabilitato per **utente del flusso di lavoro** e **admin** utenti.
+
 ## Limitazioni e suggerimenti {#limitations-and-tips}
 
-* Opzione per [!UICONTROL Gestisci pubblicazione] è disponibile solo per gli account utente con autorizzazioni di replica.
+* `Manage publication` è disponibile per gli utenti che dispongono almeno delle autorizzazioni di lettura per il flusso di lavoro.
 * Le cartelle vuote non vengono pubblicate.
 * Se pubblichi una risorsa in fase di elaborazione, viene pubblicato solo il contenuto originale. Mancano le rappresentazioni. Attendi il completamento dell’elaborazione, quindi pubblica o ripubblica la risorsa al termine dell’elaborazione.
 * Durante l’annullamento della pubblicazione di una risorsa complessa, annulla solo la pubblicazione della risorsa. Evita di annullare la pubblicazione dei riferimenti, poiché altre risorse pubblicate potrebbero farvi riferimento.
-
-**Consulta anche**
-
-* [Traduci risorse](translate-assets.md)
-* [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
-* [Risorse collegate](use-assets-across-connected-assets-instances.md)
-* [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
-* [Scaricare le risorse](download-assets-from-aem.md)
-* [Gestire i metadati](manage-metadata.md)
-* [Facet di ricerca](search-facets.md)
-* [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
