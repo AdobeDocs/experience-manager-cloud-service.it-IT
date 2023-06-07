@@ -4,7 +4,7 @@ description: Sfruttare il Centro azioni per intervenire in modo comodo sugli inc
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: ca7cad567a5f83cd1edc14def6d961b8ba3b7f1f
+source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 32%
@@ -40,7 +40,7 @@ Per configurare la ricezione delle notifiche e-mail del Centro operativo, crea i
 
 ## Flusso utente dettagliato {#detailed-user-flow}
 
-Facendo clic sull’e-mail si accede al Centro avvisi, con un pop-up che mostra il contesto della notifica su cui si è fatto clic e, in alcuni casi, collegamenti a informazioni aggiuntive che descrivono come intraprendere azioni correttive.
+Facendo clic sull’e-mail si accede al Centro azioni, con un pop-up che mostra il contesto della notifica su cui si è fatto clic e, in alcuni casi, collegamenti a informazioni aggiuntive che descrivono come intraprendere azioni correttive.
 
 ![Dettagli problema](/help/operations/assets/incident-details.png)
 
@@ -64,7 +64,7 @@ Come tutti i ticket di supporto, questo verrà visualizzato nella [scheda Casi d
 
 L’AEM as a Cloud Service ha diversi tipi di notifiche, ma nel Centro azioni viene visualizzato solo un sottoinsieme, come illustrato nella tabella seguente.
 
-| Tipo di notifica | Descrizione | Come configurare | Viene visualizzato nel Centro avvisi |
+| Tipo di notifica | Descrizione | Come configurare | Viene visualizzato nel Centro azioni |
 |---|---|---|---|
 | Problemi operativi | Problemi critici che richiedono un intervento immediato | Utente assegnato al profilo di prodotto &quot;Notifica per incidente - Cloud Service&quot; | X |
 | Consigli proattivi | Ottimizzazioni da pianificare | Utente assegnato al profilo di prodotto &quot;Notifica proattiva - Cloud Service&quot; | X |
