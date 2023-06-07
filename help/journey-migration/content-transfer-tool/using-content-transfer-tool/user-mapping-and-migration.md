@@ -2,10 +2,10 @@
 title: Mappatura utenti e migrazione delle entità principali
 description: Panoramica sulla mappatura degli utenti e sulla migrazione delle entità
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: caa04391077d594a828a42a1a5a6a03daa107168
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 12%
+source-wordcount: '832'
+ht-degree: 11%
 
 ---
 
@@ -25,9 +25,13 @@ Come parte del percorso di transizione verso Adobe Experience Manager (AEM) as a
 
 Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente integrato degli Adobe ID per accedere al livello di authoring. Questo processo richiede l&#39;utilizzo di [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per gestire utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate nell’Adobe Identity Management System (IMS) che fornisce il single sign-on in tutte le applicazioni cloud Adobe. Per ulteriori informazioni, consultare [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). A causa di questa modifica, gli utenti esistenti devono essere mappati ai loro ID IMS per evitare utenti duplicati nell’istanza Autore Cloud Service. Poiché i gruppi nell’AEM tradizionale sono fondamentalmente diversi dai gruppi nell’IMS, i gruppi non sono mappati, ma devono essere riconciliati dopo il completamento della migrazione.
 
-## Dettagli di mappatura utenti e migrazione {#user-mapping-detail}
+## Dettagli della migrazione utente {#user-migration-detail}
 
-Lo strumento Content Transfer (Trasferimento contenuti) e Cloud Acceleration Manager eseguono la migrazione di tutti gli utenti associati al contenuto da migrare. Questa mappatura viene eseguita automaticamente e, se viene eseguita, può essere controllata da un interruttore prima dell’avvio dell’estrazione. L’impostazione predefinita dell’interruttore può essere ignorata dall’utente all’avvio dell’estrazione.
+Lo strumento Content Transfer (Trasferimento contenuti) e Cloud Acceleration Manager eseguiranno la migrazione al sistema cloud di tutti gli utenti associati al contenuto da migrare.
+
+## Dettagli mappatura utenti {#user-mapping-detail}
+
+Gli utenti AEM possono essere mappati sugli utenti Adobe IMS corrispondenti con lo stesso indirizzo e-mail.  Questa mappatura può essere eseguita automaticamente in CTT e, se viene eseguita, può essere controllata da un interruttore prima di avviare l’estrazione. L’impostazione predefinita dell’interruttore può essere ignorata dall’utente all’avvio dell’estrazione.
 
 * Se il sistema di origine è un’istanza di authoring, per impostazione predefinita la scelta per eseguire la mappatura è _il_, perché è il processo consigliato.
 * Se il sistema di origine è un’istanza Publish, per impostazione predefinita la scelta per eseguire la mappatura è _disattivato_, perché normalmente gli utenti non vengono migrati o utilizzati nelle istanze di pubblicazione.
