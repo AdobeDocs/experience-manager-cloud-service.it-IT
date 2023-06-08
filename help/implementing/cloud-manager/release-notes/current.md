@@ -1,19 +1,19 @@
 ---
-title: Note sulla versione 2023.5.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
-description: Queste sono le note sulla versione 2023.5.0 di Cloud Manager in AEM as a Cloud Service.
+title: Note sulla versione 2023.6.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
+description: Queste sono le note sulla versione 2023.6.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4340b957cea86452f916ab615b383aabacc21676
+source-git-commit: 80a5f58119dc304161d324491cd65c50e981ccd4
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 41%
+source-wordcount: '210'
+ht-degree: 37%
 
 ---
 
 
-# Note sulla versione 2023.5.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Note sulla versione 2023.6.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2023.5.0 di Cloud Manager in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2023.6.0 di Cloud Manager in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,15 +21,16 @@ Questa pagina illustra le note sulla versione 2023.5.0 di Cloud Manager in AEM a
 
 ## Data di pubblicazione {#release-date}
 
-La data di pubblicazione di Cloud Manager versione 2023.5.0 in AEM as a Cloud Service è l’11 maggio 2023. La prossima versione è prevista per il 8 giugno 2023.
+La data di pubblicazione di Cloud Manager versione 2023.6.0 in AEM as a Cloud Service è l’8 giugno 2023. La prossima versione è pianificata per il 6 luglio 2023.
 
 ## Novità {#what-is-new}
 
-* Il supporto per i test di prodotto, funzionali e interfaccia utente è stato esteso a [test della pipeline non di produzione.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-* Oltre ad abilitare i test a monte, [Il supporto per i test dell’interfaccia utente è stato esteso ai test Cypress.](/help/implementing/cloud-manager/ui-testing.md)
-* [Copia self-service dei contenuti](/help/implementing/developing/tools/content-copy.md) è ora disponibile da un ambiente superiore a uno inferiore tramite l’interfaccia utente di Cloud Manager.
-* Il passaggio di convalida dell’esecuzione della pipeline è stato migliorato per convalidare lo stato delle code di replica nelle prime fasi del processo di esecuzione. In questo modo i passaggi di distribuzione non vengono influenzati dalle code bloccate che devono essere gestite dagli utenti amministratori dell’AEM direttamente nell’ambiente di authoring.
+* Durante la creazione di un nuovo [programma o ambiente,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) il nome ora può contenere solo caratteri alfanumerici e un set limitato di caratteri speciali.
+* Quando si riprende una [pipeline di produzione,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) al passaggio di approvazione viene ora visualizzata una finestra di dialogo di conferma.
+* Per **[Test funzionali del cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** e **[Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/ui-testing.md)** passaggi della pipeline, un nuovo `INCOMPLETE` Lo stato è ora possibile, il che indica che tali test non erano presenti e quindi non sono stati eseguiti.
+   * In questi casi, la pipeline non ha esito negativo e procede al passaggio successivo.
 
 ## Correzioni di bug {#bug-fixes}
 
-* La creazione dell’ambiente non ha più esito negativo quando si utilizzano caratteri multibyte nel nome dell’ambiente.
+* Il [pipeline di configurazione a livello web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) non sono più abilitati in modo errato per i programmi solo Assets.
+* È stata aggiunta una convalida più solida per evitare alcuni tipi di errori durante il provisioning dell’ambiente.
