@@ -4,7 +4,7 @@ description: Scopri come creare e gestire progetti di traduzione automatica e um
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
+source-git-commit: d3194e646b326009dc204838ac74fc880952f286
 workflow-type: tm+mt
 source-wordcount: '4086'
 ht-degree: 99%
@@ -311,7 +311,7 @@ La tabella seguente descrive ogni stato di un processo o di un elemento del proc
 
 | Stato | Descrizione |
 |---|---|
-| **Bozza** | Il processo di traduzione non è stato avviato. I processi di traduzione sono in stato **Bozza**** al momento della creazione. |
+| **Bozza** | Il processo di traduzione non è stato avviato. I processi di traduzione sono in **Bozza** stato al momento della creazione. |
 | **Inviato** | I file nel processo di traduzione sono in questo stato quando risultano inviati correttamente al servizio di traduzione. Questo stato può verificarsi dopo l’esecuzione del comando **Richiedi valutazione** o **Avvia**. |
 | **Valutazione richiesta** | Per il flusso di lavoro di traduzione umana, i file nel processo sono stati inviati al fornitore di traduzione per una valutazione. Questo stato viene visualizzato l’emissione del comando **Richiedi valutazione**. |
 | **Valutazione completata** | Il fornitore ha valutato il processo di traduzione. |
