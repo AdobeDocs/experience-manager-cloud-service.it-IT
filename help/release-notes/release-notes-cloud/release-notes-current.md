@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a17f02b6544669e07adabfd4f50905eb6afd51e
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1049'
 ht-degree: 41%
 
 ---
@@ -74,26 +74,23 @@ Dai un’occhiata al video Panoramica sulla versione di aprile 2023 per un riepi
 
 * **[Invio di moduli adattivi a Microsoft SharePoint e Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: migliora l’agilità degli utenti aziendali per inviare rapidamente nuovi moduli e archiviare i dati inviati in strumenti di uso quotidiano, ad esempio il sito Microsoft SharePoint o la cartella OneDrive.
 
-![Invio di moduli adattivi a Microsoft SharePoint e Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
-
-
 ### Funzioni nella versione prerelease di [!DNL Forms] {#prerelease-features-forms}
 
-* Integrazione e conformità migliorate di Adobe Acrobat Sign: AEM Forms ora si integra con Adobe Acrobat Sign for Government, fornendo un livello avanzato di conformità e sicurezza per le firme elettroniche con l’invio di moduli adattivi per gli account associati alla pubblica amministrazione (dipartimenti e agenzie governative).
+* [Integrazione e conformità migliorate di Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ora si integra con Adobe Acrobat Sign for Government, fornendo un livello avanzato di conformità e sicurezza per le firme elettroniche con l’invio di moduli adattivi per gli account associati alle amministrazioni pubbliche (dipartimenti e agenzie governative).
 
-L’integrazione con Adobe Acrobat Sign for Government consente ai nostri partner e ai clienti governativi di utilizzare le firme elettroniche in Adaptive Forms per alcune delle linee di business più critiche e sensibili. Questo ulteriore livello di sicurezza assicura che tutte le firme elettroniche siano pienamente conformi alla conformità FedRAMP Moderate, garantendo ai nostri clienti governativi la massima tranquillità.
+   L’integrazione con Adobe Acrobat Sign for Government consente ai nostri partner e ai clienti governativi di utilizzare le firme elettroniche in Adaptive Forms per alcune delle linee di business più critiche e sensibili. Questo ulteriore livello di sicurezza assicura che tutte le firme elettroniche siano pienamente conformi alla conformità FedRAMP Moderate, garantendo ai nostri clienti governativi la massima tranquillità.
 
-* Forms adattivo nell’editor di AEM Sites: ora puoi utilizzare l’editor di AEM Sites per creare e aggiungere rapidamente più moduli alle pagine dei siti. Questa funzionalità consente agli autori di contenuti di creare esperienze di acquisizione dati fluide all’interno delle pagine Sites utilizzando la potenza dei componenti per moduli adattivi, tra cui comportamento dinamico, convalide, integrazione dei dati, generazione di documenti di record e automazione dei processi aziendali. Operazioni disponibili:
+* [Forms adattivo nell’editor di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): ora puoi utilizzare l’editor di AEM Sites per creare e aggiungere rapidamente più moduli alle pagine dei siti. Questa funzionalità consente agli autori di contenuti di creare esperienze di acquisizione dati fluide all’interno delle pagine Sites utilizzando la potenza dei componenti per moduli adattivi, tra cui comportamento dinamico, convalide, integrazione dei dati, generazione di documenti di record e automazione dei processi aziendali. Operazioni disponibili:
 
-   * Crea un modulo adattivo trascinando i componenti del modulo nel componente Contenitore adattivo Forms nell’editor di AEM Sites.
+   * Crea un modulo adattivo trascinando i componenti del modulo nel componente Contenitore adattivo Forms nell’editor di AEM Sites o nei Frammenti di esperienza.
    * Utilizza l’Adaptive Forms Wizard (procedura guidata adattiva) nell’editor di AEM Sites per creare moduli indipendenti da qualsiasi pagina Sites, consentendoti di riutilizzare tali moduli su più pagine.
    * Aggiungere più moduli a una pagina Sites per semplificare l’esperienza utente e fornire maggiore flessibilità.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * Migliorare la gestione degli errori con gestori degli errori personalizzati nell’editor delle regole: ora puoi richiamare una funzione personalizzata (utilizzando la libreria client) in risposta a un errore restituito da un servizio esterno e fornire una risposta personalizzata agli utenti finali o eseguire azioni specifiche per gli errori restituiti da un servizio. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel backend per codici di errore specifici o informare il cliente che il servizio non è disponibile.
 
-Questo consente di migliorare la capacità complessiva di gestione degli errori introducendo risposte di errore basate su standard, compatibili con le versioni precedenti dei gestori degli errori OOTB, con maggiore flessibilità e controllo.
+   Questo consente di migliorare la capacità complessiva di gestione degli errori introducendo risposte di errore basate su standard, compatibili con le versioni precedenti dei gestori degli errori OOTB, con maggiore flessibilità e controllo.
 
 ## Programma dei moduli adattivi headless per i primi utilizzatori {#forms-early-adopter}
 

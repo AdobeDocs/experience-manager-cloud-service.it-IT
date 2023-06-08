@@ -4,9 +4,9 @@ description: Scopri come creare o aggiungere facilmente un modulo adattivo alla 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3182'
 ht-degree: 0%
 
 ---
@@ -277,4 +277,4 @@ All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altr
 * [Personalizzare lo stile dei Componenti core basati su Adaptive Forms](using-themes-in-core-components.md)
 * [Utilizza l’editor di regole per aggiungere un comportamento dinamico a Forms adattivo](rule-editor.md)
 * [Modificare il layout di un modulo adattivo](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [Genera documento di record](generate-document-of-record-core-components.md)
+

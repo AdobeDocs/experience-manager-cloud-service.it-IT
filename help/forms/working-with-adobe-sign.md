@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3073'
+source-wordcount: '3097'
 ht-degree: 0%
 
 ---
@@ -194,11 +194,7 @@ Puoi avere uno o più destinatari per un accordo Adobe Sign. Quando aggiungi un 
       >
       >Assicurati che l’indirizzo e-mail del primo destinatario o dell’unico destinatario (se esiste un solo destinatario) non sia identico a [!DNL Adobe Sign] account utilizzato per configurare AEM Cloud Services.
 
-   * **[!UICONTROL Metodo di autenticazione destinatario]:** Specifica il metodo per autenticare un destinatario prima di aprire l’accordo Adobe Sign. Puoi scegliere tra telefono, knowledge base, autenticazione basata su identità social e [Documento ufficiale](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) per [!DNL Adobe Acrobat Sign].
-
-      <!-- 
-      For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
-      -->
+   * **[!UICONTROL Metodo di autenticazione destinatario]:** Specifica il metodo per autenticare un destinatario prima di aprire l’accordo Adobe Sign. Puoi scegliere tra telefono, knowledge base, autenticazione basata su identità social e [Documento ufficiale](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) per [!DNL Adobe Acrobat Sign]. Per [!DNL Adobe Acrobat Sign for Government] puoi scegliere tra l’autenticazione tramite telefono e basata su knowledge base.
    >[!NOTE]
    >
    >    * Per impostazione predefinita, l’autenticazione basata su identità social fornisce un’opzione per eseguire l’autenticazione utilizzando Facebook, Google e LinkedIn. Puoi contattare [!DNL Adobe Sign] supporto per abilitare altri provider di autenticazione social.
@@ -314,11 +310,9 @@ Dopo [modifica delle proprietà di un modulo adattivo per Adobe Sign](working-wi
    * Firme cloud: firma con un [ID digitale](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) ospitato da un provider di servizi di trust.
    * Adobe Acrobat o Reader: scarica e apri il documento con Adobe Acrobat o Reader per firmare utilizzando una smart card, un token USB o un ID digitale basato su file.
 
-      <!-- 
       >[!NOTE]
       >
-      > * [!DNL Adobe Acrobat Sign for Government] can use Digitial Signature but can not use Cloud Signatures in the current version.
-      -->
+      > La firma digitale è applicabile anche a [!DNL Adobe Acrobat Sign for Government] ma non puoi applicarlo utilizzando le firme cloud.
    Dopo aver aggiunto il campo della firma cloud al modulo adattivo, esegui i seguenti passaggi per completare il processo di configurazione:
 
    * [Abilitare Adobe Sign per un modulo adattivo](#enableadobsignforanadaptiveform)
