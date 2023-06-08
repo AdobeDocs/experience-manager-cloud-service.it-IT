@@ -2,7 +2,7 @@
 title: Come creare un portale Forms su una pagina Experience Manager Sites
 description: Scopri come creare un portale Forms e utilizzare i componenti core predefiniti in una pagina di AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: a243664302c75fcb3125d68838353bd87cf24de3
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 1%
@@ -39,8 +39,11 @@ AEM Forms fornisce i seguenti componenti portale pronti all’uso:
 * Collegamento: questo componente consente di creare un collegamento a un modulo in un punto qualsiasi della pagina.
 
 È possibile [importare i componenti predefiniti di Forms Portal](#import-forms-portal-components-aem-archetype) dall’archetipo del progetto AEM. Dopo l’importazione, esegui le seguenti configurazioni:
+
 * [Configurare un’archiviazione esterna](#configure-azure-storage-adaptive-forms)
+
 * [Abilitare i componenti di Forms Portal](#enable-forms-portal-components)
+
 * [Configurare i componenti di Forms Portal](#configure-forms-portal-components)
 
 ## Importare componenti di Forms Portal {#import-forms-portal-components-aem-archetype}

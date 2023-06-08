@@ -2,7 +2,7 @@
 title: Creazione e utilizzo di temi
 description: Puoi utilizzare i temi per formattare e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 5%
@@ -49,6 +49,7 @@ Per personalizzare un tema:
 * Dovresti avere un [conoscenza di base di Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git) e archivi Git di Cloud Service.
 
 Per personalizzare un tema Area di lavoro:
+
 1. [Clonare il tema Canvas](#1-download-canvas-theme-download-canvas-theme)
 1. [Comprendere la struttura del tema](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [Modificare il nome in package.json e package_lock.json](#changename-packagelock-packagelockjson)
