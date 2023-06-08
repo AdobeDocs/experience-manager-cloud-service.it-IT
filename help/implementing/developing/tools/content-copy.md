@@ -1,13 +1,13 @@
 ---
 title: Lo strumento Copia contenuto
 description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai propri ambienti di produzione as a Cloud Service per l’AEM in ambienti più bassi a scopo di test.
-source-git-commit: 4a5470ae8fe5a8e7f615009bf5f6b180aee4669b
+exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
+source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 64%
+source-wordcount: '1227'
+ht-degree: 60%
 
 ---
-
 
 # Lo strumento Copia contenuto {#content-copy}
 
@@ -55,7 +55,7 @@ Prima di poter copiare un contenuto, è necessario definire un set di contenuti.
 
    ![Set di contenuti](assets/content-sets.png)
 
-1. Il giorno **Dettagli** della procedura guidata, fornisci un nome e una descrizione per il set di contenuti e tocca o fai clic su **Continua**.
+1. Nella scheda **Dettagli** della procedura guidata, assegna un nome e una descrizione per il set di contenuti e tocca o fai clic su **Continua**.
 
    ![Dettagli dei set di contenuti](assets/add-content-set-details.png)
 
@@ -101,6 +101,9 @@ Tieni presente che quando modifichi il set di contenuti, potrebbe essere necessa
 ## Copia del contenuto {#copy-content}
 
 Una volta creato un set di contenuti, puoi utilizzarlo per copiare il contenuto. Per copiare il contenuto, effettua le seguenti operazioni.
+
+>[!NOTE]
+> La copia del contenuto non deve essere avviata in un ambiente mentre un [trasferimento dei contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) è in esecuzione in tale ambiente.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
@@ -159,7 +162,7 @@ Una volta iniziata la copia del contenuto, il processo può trovarsi in uno dei 
 | Completato | Operazione di copia del contenuto completata |
 | Annullato | L’utente annulla un’operazione di copia del contenuto dopo averlo avviato |
 
-### Annullamento di un processo di copia {#cancelling}
+### Annullamento di un processo di copia {#canceling}
 
 Se è necessario interrompere un&#39;operazione di copia del contenuto dopo averla avviata, è possibile annullarla.
 
@@ -182,7 +185,7 @@ Lo strumento Copia contenuto presenta le seguenti limitazioni.
 * Non è possibile copiare il contenuto tra più programmi.
 * Non è possibile eseguire operazioni simultanee di copia del contenuto nello stesso ambiente.
 * È possibile specificare fino a cinquanta percorsi per set di contenuti. Non ci sono limitazioni per i percorsi esclusi.
-* Lo strumento Copia contenuto non deve essere utilizzato come strumento di duplicazione o mirroring perché non può tenere traccia del contenuto spostato o eliminato nell’origine.
-* Lo strumento Copia contenuto non dispone di funzionalità di controllo delle versioni e non è in grado di rilevare automaticamente il contenuto modificato o appena creato nell’ambiente di origine in un set di contenuti dall’ultima operazione di copia di contenuto.
+* Lo strumento di copia del contenuto non deve essere utilizzato come strumento di duplicazione o mirroring perché non può tenere traccia del contenuto spostato o eliminato nell’origine.
+* Lo strumento di copia del contenuto non dispone di funzionalità di controllo delle versioni e non è in grado di rilevare automaticamente il contenuto modificato o appena creato nell&#39;ambiente di origine di un set di contenuti dall&#39;ultima operazione di copia del contenuto.
    * Se desideri aggiornare l’ambiente di destinazione con le modifiche apportate al contenuto solo dall’ultima operazione di copia del contenuto, devi creare un set di contenuti e specificare i percorsi nell’istanza di origine in cui sono state apportate le modifiche dall’ultima operazione di copia del contenuto.
 * Le informazioni sulla versione non sono incluse in una copia del contenuto.
