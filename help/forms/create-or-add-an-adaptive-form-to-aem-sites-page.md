@@ -4,15 +4,18 @@ description: Scopri come creare o aggiungere facilmente un modulo adattivo alla 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3196'
 ht-degree: 0%
 
 ---
 
 
 # Creare o aggiungere un modulo adattivo alla pagina di AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+|Attenzione|[!BADGE documentazione preliminare]{type=Caution tooltip="Stato giallo"}
+<span class="preview"> Questa è la documentazione pre-release e soggetta a modifiche.</span>
 
 Con AEM Forms puoi incorporare facilmente i moduli adattivi nelle pagine web. Questo consente ai visitatori di compilare e inviare i moduli in modo comodo, senza mai uscire dalla pagina in cui si trovano. In questo modo, possono rimanere coinvolti senza difficoltà con altri elementi del sito web interagendo attivamente con il modulo.
 
@@ -122,7 +125,7 @@ Per abilitare la funzionalità completa del componente Contenitore Forms adattiv
 
 +++
 
-+++ Abilita **[!UICONTROL Contenitore Forms adattivo]
++++ Abilita contenitore Forms adattivo
 
 Per abilitare [!UICONTROL Contenitore Forms adattivo] nel criterio del modello, effettuare le seguenti operazioni:
 
@@ -246,7 +249,7 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 
 ### Utilizza il servizio di precompilazione delle bozze di Forms Portal {#forms-portal-prefill-service}
 
-È possibile utilizzare il servizio Forms Portal Draft Prefill per precompilare i campi di un modulo utilizzando una bozza del modulo adattivo salvato. Prima di utilizzare il servizio Forms Portal Draft Prefill, assicurati [I componenti adattivi di Forms Portal sono abilitati e configurati ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) per il tuo ambiente.
+È possibile utilizzare il servizio Forms Portal Draft Prefill per precompilare i campi di un modulo utilizzando una bozza del modulo adattivo salvato. Prima di utilizzare il servizio Forms Portal Draft Prefill, assicurati che [I componenti adattivi di Forms Portal sono abilitati e configurati](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) per il tuo ambiente.
 
 1. Apri l’editor di pagine AEM Sites o il frammento di esperienza che contiene il modulo adattivo.
 1. Apri le proprietà della pagina e configura la configurazione cloud.
