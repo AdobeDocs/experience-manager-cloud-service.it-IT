@@ -5,7 +5,7 @@ landing-page-description: Scopri come gestire i frammenti di contenuto dalla con
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
+source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 95%
@@ -128,7 +128,7 @@ Passando il puntatore del mouse sul nome della cartella verrà visualizzato il p
 * **Anteprima**
    * Solo informazioni:
       * **In sincronia**: frammento di contenuto sincronizzato in **Autore** e **Anteprima** servizi.
-      * **Fuori sincronizzazione**: frammento di contenuto non sincronizzato sulla **Autore** e ****Anteprima** servizi. È necessario **Pubblica** a **Anteprima** per garantire che le due istanze tornino ad essere sincronizzate.
+      * **Fuori sincronizzazione**: frammento di contenuto non sincronizzato sulla **Autore** e **Anteprima** servizi. È necessario **Pubblica** a **Anteprima** per garantire che le due istanze tornino ad essere sincronizzate.
       * vuoto: il frammento di contenuto non esiste nel **Anteprima** servizio.
 * **Modificato**
    * Solo informazioni
