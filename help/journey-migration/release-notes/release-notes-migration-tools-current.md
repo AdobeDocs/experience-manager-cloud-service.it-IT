@@ -1,46 +1,29 @@
 ---
-title: Note sulla versione 2023.03.0 degli strumenti di migrazione nell’AEM as a Cloud Service
-description: Note sulla versione 2022.03.0 degli strumenti di migrazione nell’AEM as a Cloud Service
+title: Note sulla versione 2023.06.0 degli strumenti di migrazione nell’AEM as a Cloud Service
+description: Note sulla versione 2022.06.0 degli strumenti di migrazione nell’AEM as a Cloud Service
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 586fbc136b866be149db1d4fcdd6ea2ef18a97b1
+source-git-commit: a1597e4102589dfc9b5bdb8c2a54e8e9ec3392b7
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 9%
+source-wordcount: '237'
+ht-degree: 2%
 
 ---
 
-# Note sulla versione 2023.03.0 degli strumenti di migrazione nell’AEM as a Cloud Service {#release-notes}
+# Note sulla versione 2023.06.0 degli strumenti di migrazione nell’AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2022.03.0 degli strumenti di migrazione in AEM as a Cloud Service.
-
-## Analisi delle best practice {#bpa-release}
-
-### Data di pubblicazione {#release-date-bpa}
-
-La data di rilascio di Best Practices Analyzer v2.1.40 è il 03 marzo 2023.
-
-### Novità {#what-is-new-bpa}
-
-* BPA è ora in grado di rilevare e segnalare i nodi in conflitto, ovvero i nodi con lo stesso `jcr:uuid`. Tali risultati sono contrassegnati come critici in quanto possono causare errori di acquisizione dei contenuti durante lo spostamento dei contenuti a AEM as a Cloud Service.
-* BPA è ora in grado di rilevare e creare rapporti sull’utilizzo dei listener di eventi. Si consiglia di rieseguire il factoring di questo tipo di meccanismo di gestione degli eventi sui processi sling durante il passaggio a AEM as a Cloud Service.
-
-### Correzioni di bug {#bug-fixes-bpa}
-
-* BPA segnalava falsi positivi per `grouprendercondition`. Questo problema è stato risolto.
+Questa pagina illustra le note sulla versione 2022.06.0 degli strumenti di migrazione in AEM as a Cloud Service.
 
 ## Strumento Trasferimento contenuti {#ctt-release}
 
 ### Data di pubblicazione {#release-date-ctt}
 
-La data di pubblicazione dello strumento Content Transfer v2.0.16 è il 8 marzo 2022.
+La data di pubblicazione dello strumento Content Transfer v2.0.20 è il 8 giugno 2023.
 
 ### Novità {#what-is-new-ctt}
 
-* La mappatura utente è stata semplificata e integrata nel passaggio di estrazione dei contenuti. Non è necessaria alcuna configurazione e, per impostazione predefinita, la mappatura utente viene eseguita automaticamente quando l’utente avvia l’estrazione del contenuto. L’utente ha la possibilità di disabilitare la mappatura utente, se necessario. Ulteriori informazioni [qui.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
-* Il passaggio di precopia tramite [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) è stato integrato con lo strumento Content Transfer (Trasferimento contenuti) per velocizzare notevolmente le estrazioni di contenuti. La precopia viene configurata e installata automaticamente quando questa versione del CTT viene installata. Per impostazione predefinita, quando viene avviata l’estrazione, la precopia viene eseguita automaticamente per set di migrazione di dimensioni superiori a 200 GB. L’utente ha la possibilità di disattivarla, se necessario. Ulteriori informazioni [qui.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)
-* CTT può ora essere utilizzato sui server Windows.
-
-### Correzioni di bug {#bug-fixes-ctt}
-
-* Sono state apportate diverse correzioni di bug per migliorare la resilienza dell’estrazione dei contenuti.
+* Con questa versione è stato integrato un nuovo strumento di migrazione, Content Transformer (CT), con lo strumento Content Transfer (CTT). Il Content Transformer può rilevare e risolvere automaticamente i problemi relativi al contenuto segnalati da [Best Practices Analyzer (BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en) prima della migrazione dei contenuti dall’implementazione AEM corrente (on-premise o Managed Services) all’AEM as a Cloud Service.
+I vantaggi offerti da Content Transformer sono:
+   * Fail-safe: un pacchetto viene creato da Content Transformer ogni volta che apporta modifiche all’archivio per risolvere i problemi. Se necessario, puoi ripristinare lo stato precedente installando il pacchetto.
+   * Facile da usare: Content Transformer è stato integrato con lo strumento Content Transfer ed è dotato di una semplice interfaccia utente intuitiva.
+   * Risparmio di tempo: quando si dispone di un numero elevato di problemi di contenuto che rientrano in una categoria di pattern, è possibile risolverli tutti con solo un paio di clic utilizzando Content Transformer, riducendo in modo significativo i tempi e la complessità della migrazione.
