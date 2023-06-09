@@ -3,9 +3,9 @@ title: Configurazione di OSGi per Adobe Experience Manager as a Cloud Service
 description: Configurazione OSGi con valori segreti e valori specifici dell’ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3323'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ Esistono tre varietà di valori di configurazione OSGi che possono essere utiliz
 
 Nel caso comune di OSGi, vengono utilizzati i valori di configurazione OSGi in linea. Le configurazioni specifiche dell’ambiente vengono utilizzate solo per casi d’uso specifici in cui un valore differisce tra ambienti di sviluppo.
 
-![](assets/choose-configuration-value-type_res1.png)
+![Struttura decisionale per l’utilizzo del tipo di valore di configurazione appropriato](assets/choose-configuration-value-type_res1.png)
 
 Le configurazioni specifiche dell’ambiente estendono le configurazioni OSGi tradizionali definite in modo statico che contengono valori in linea, consentendo di gestire i valori di configurazione OSGi esternamente tramite l’API di Cloud Manager. È importante capire quando deve essere utilizzato l’approccio comune e tradizionale per definire i valori in linea e memorizzarli in Git, anziché astrarre i valori in configurazioni specifiche per l’ambiente.
 
@@ -265,8 +265,7 @@ I valori per le variabili non devono superare i 2048 caratteri.
 >1. I clienti non devono fare riferimento a variabili con prefisso `INTERNAL_` o `ADOBE_` o.
 >
 >1. Variabili di ambiente con prefisso `AEM_` sono definite dal prodotto come API pubbliche che devono essere utilizzate e impostate dai clienti.
-   >   I clienti possono utilizzare e impostare le variabili di ambiente a partire dal prefisso `AEM_` con questo prefisso non devono definire le proprie variabili.
-
+>   I clienti possono utilizzare e impostare le variabili di ambiente a partire dal prefisso `AEM_` con questo prefisso non devono definire le proprie variabili.
 
 ### Valori predefiniti {#default-values}
 
@@ -317,7 +316,7 @@ Se una proprietà OSGi richiede valori diversi per Author e Publish:
 * Separa `config.author` e `config.publish` Utilizza le cartelle OSGi come descritto in [Sezione Risoluzione runmode](#runmode-resolution).
 * Sono disponibili due opzioni per la creazione dei nomi di variabili indipendenti da utilizzare:
    * la prima opzione, consigliata: in tutte le cartelle OSGi (come `config.author` e `config.publish`) dichiarata per definire valori diversi, utilizza lo stesso nome di variabile. Per esempio
-      `$[env:ENV_VAR_NAME;default=<value>]`, dove il valore predefinito corrisponde al valore predefinito per quel livello (di authoring o pubblicazione). Quando si imposta la variabile di ambiente tramite [API di Cloud Manager](#cloud-manager-api-format-for-setting-properties) o tramite un client, differenziare tra i livelli utilizzando il parametro &quot;service&quot; come descritto in questo [Documentazione di riferimento API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). Il parametro &quot;service&quot; associa il valore della variabile al livello OSGi appropriato. Può essere &quot;author&quot; o &quot;publish&quot; o &quot;preview&quot;.
+     `$[env:ENV_VAR_NAME;default=<value>]`, dove il valore predefinito corrisponde al valore predefinito per quel livello (di authoring o pubblicazione). Quando si imposta la variabile di ambiente tramite [API di Cloud Manager](#cloud-manager-api-format-for-setting-properties) o tramite un client, differenziare tra i livelli utilizzando il parametro &quot;service&quot; come descritto in questo [Documentazione di riferimento API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). Il parametro &quot;service&quot; associa il valore della variabile al livello OSGi appropriato. Può essere &quot;author&quot; o &quot;publish&quot; o &quot;preview&quot;.
    * la seconda opzione, che consiste nel dichiarare variabili distinte utilizzando un prefisso come `author_<samevariablename>` e `publish_<samevariablename>`
 
 ### Esempi di configurazione {#configuration-examples}

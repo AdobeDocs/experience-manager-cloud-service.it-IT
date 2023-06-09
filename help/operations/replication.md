@@ -2,9 +2,9 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1341'
 ht-degree: 46%
 
 ---
@@ -53,7 +53,7 @@ Puoi trovare informazioni più dettagliate su Gestisci pubblicazione nella sezio
 
 È possibile attivare una replica della struttura scegliendo **Strumenti - Flusso di lavoro - Modelli** e copiando il modello di flusso di lavoro preconfigurato **Pubblica struttura contenuto**, come mostrato di seguito:
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![Scheda Flusso Di Lavoro Pubblica Struttura Contenuto](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Non modificare o richiamare il modello originale. Assicurati invece di fare prima la copia del modello e quindi modificare o richiamare tale copia.
 
