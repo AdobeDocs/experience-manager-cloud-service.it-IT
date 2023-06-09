@@ -4,9 +4,9 @@ description: Scopri come creare o aggiungere facilmente un modulo adattivo alla 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
-source-wordcount: '3061'
+source-wordcount: '3073'
 ht-degree: 0%
 
 ---
@@ -136,14 +136,15 @@ Per abilitare [!UICONTROL Contenitore Forms adattivo] nel criterio del modello, 
 
 ## Creare un modulo adattivo {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
-Puoi creare un nuovo modulo da zero, adattandolo in modo specifico alle tue esigenze e preferenze di progettazione, direttamente in una pagina di siti AEM o in Frammento di esperienza. Per i moduli monouso, si consiglia di eseguire l’authoring diretto in una pagina dei siti AEM, mentre i frammenti di esperienza sono ideali per i moduli che devono essere riutilizzati in più pagine del sito web.
+Puoi creare un nuovo modulo da zero, adattandolo in modo specifico ai tuoi requisiti e alle preferenze di progettazione, direttamente in una pagina di AEM Sites o in Frammento esperienza. Per i moduli monouso, si consiglia di creare direttamente una pagina di AEM Sites, mentre i frammenti di esperienza sono ideali per i moduli che devono essere riutilizzati in più pagine del sito web.
 
 * [Creare un modulo in una pagina di AEM Sites](#create-an-adaptive-form-in-sites-editor)
 * [Creare un modulo in un frammento esperienza](#create-an-adaptive-form-in-experience-fragment)
+* [Convertire un modulo adattivo in una pagina di AEM Sites in un frammento di esperienza](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
 
 ### Creare un modulo in una pagina di AEM Sites {#create-an-adaptive-form-in-sites-editor}
 
-Puoi utilizzare il componente Contenitore modulo adattivo nell’editor di AEM Sites per creare un modulo personalizzato. Il componente consente di creare un modulo trascinandone e rilasciandone i componenti. I componenti del modulo sono basati su Componenti core. Puoi personalizzarli facilmente in base alle esigenze della tua organizzazione.
+Puoi utilizzare il componente Contenitore modulo adattivo nell’Editor pagina AEM per creare un modulo personalizzato. Il componente consente di creare un modulo trascinandone e rilasciandone i componenti. I componenti del modulo sono basati su Componenti core. Puoi personalizzarli facilmente in base alle esigenze della tua organizzazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -169,7 +170,7 @@ Per creare un modulo adattivo in un frammento di esperienza:
 
 Poi, tu [impostare l&#39;azione di invio](#configure-submit-action-for-form) e proprietà avanzate.
 
-### Convertire un modulo adattivo in una pagina di AEM Sites in un frammento di esperienza
+### Convertire un modulo adattivo in una pagina di AEM Sites in un frammento di esperienza {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 È possibile convertire un modulo adattivo esistente in un editor di pagine Sites in un frammento di esperienza per riutilizzare il modulo in più pagine o siti.
 
