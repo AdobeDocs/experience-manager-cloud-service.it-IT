@@ -2,10 +2,10 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -71,9 +71,11 @@ Oltre a fornire timeout, è necessario implementare anche una corretta gestione 
 
 AEM as a Cloud Service supporta solo l’interfaccia utente touch per il codice cliente di terze parti. L’interfaccia classica non è disponibile per la personalizzazione.
 
-## Evita dati binari nativi {#avoid-native-binaries}
+## Nessuna libreria nativa o binaria nativa {#avoid-native-binaries}
 
-Il codice non sarà in grado di scaricare i file binari in fase di esecuzione né di modificarli. Ad esempio, non sarà in grado di decomprimere `jar` o `tar` file.
+Le librerie e i file binari nativi non devono essere distribuiti o installati in ambienti cloud.
+
+Inoltre, il codice non deve tentare di scaricare file binari nativi o estensioni Java native (ad esempio, JNI) in fase di esecuzione.
 
 ## Nessun file binario di streaming tramite AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -128,7 +130,11 @@ Non lasciare il registro a livello di registro DEBUG più a lungo del necessario
 
 È possibile impostare livelli di registro discreti per i diversi ambienti AEM utilizzando il targeting di configurazione OSGi basato sulla modalità di esecuzione, se è consigliabile effettuare l’accesso sempre a `DEBUG` durante lo sviluppo. Ad esempio:
 
-| Ambiente | Percorso di configurazione OSGi per modalità di esecuzione | `org.apache.sling.commons.log.level` valore proprietà | | - | - | - | | Sviluppo | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | | Fase | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | AVVISO | | Produzione | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERRORE |
+| Ambiente | Percorso di configurazione OSGi per modalità di esecuzione | `org.apache.sling.commons.log.level` valore proprietà |
+| - | - | - |
+| Ambiente di sviluppo | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
+| Ambiente di staging | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | AVVISO |
+| Produzione | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERRORE |
 
 Una riga nel file di debug in genere inizia con DEBUG e quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Ad esempio:
 
