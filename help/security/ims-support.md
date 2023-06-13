@@ -3,9 +3,9 @@ title: Supporto IMS per Adobe Experience Manager as a Cloud Service
 description: Supporto IMS per Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2054'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ Verrà visualizzato un elenco delle istanze esistenti:
 
 In ogni istanza del contesto di prodotto, ci saranno istanze che si estendono sui servizi di authoring o pubblicazione in ambienti di produzione, stage o sviluppo. Ogni istanza sarà associata ai ruoli di Product Profiles o Cloud Manager. che vengono utilizzati per assegnare a utenti e gruppi l’accesso con il privilegio richiesto.
 
-Il **Amministratori AEM_xxx** verrà utilizzato per concedere privilegi di amministratore nell’istanza AEM associata mentre **Utenti AEM_xxx** Il profilo viene utilizzato per aggiungere utenti normali.
+Il profilo **Amministratori AEM_xxx** verrà utilizzato per concedere privilegi di amministratore all’istanza AEM associata, mentre il profilo **Utenti AEM_xxx** verrà usato per aggiungere utenti standard.
 
 Tutti gli utenti e i gruppi aggiunti in questo profilo di prodotto potranno accedere a questa particolare istanza come mostrato nell’esempio seguente:
 
@@ -150,7 +150,7 @@ Tutti gli utenti e i gruppi aggiunti in questo profilo di prodotto potranno acce
 
 >[!WARNING]
 >
->Il **Amministratori AEM** il nome del profilo di prodotto non deve essere modificato. Modifica del nome del **Amministratori AEM** Il profilo di prodotto rimuoverà i diritti di amministratore da tutti gli utenti assegnati a quel profilo.
+>Il nome del profilo di prodotto **Amministratori AEM** non deve essere modificato. La modifica del nome del profilo di prodotto **Amministratori AEM** rimuoverà i diritti di amministratore da tutti gli utenti assegnati a quel profilo.
 
 ### Accesso ad Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
