@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4322'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Per creare una configurazione blueprint:
 1. Seleziona la pagina sorgente da utilizzare come blueprint; poi **Successivo** per continuare.
 1. Definisci:
 
-   * **Titolo**: titolo obbligatorio per la blueprint
+   * **Titolo**: titolo obbligatorio per la blueprint.
    * **Descrizione**: una descrizione facoltativa per fornire ulteriori dettagli.
 
 1. **Crea** creerà la configurazione blueprint in base alle tue specifiche.
@@ -139,7 +139,7 @@ Per creare una Live Copy:
 
    >[!NOTE]
    >
-   >Potrebbe essere visualizzata una finestra di dialogo di errore con il messaggio &quot;Impossibile inviare il modulo&quot;. Ciò si verifica a causa di un timeout della rete. Tuttavia, il processo per creare la Live Copy viene eseguito in background. Attendi alcuni minuti e controlla che le pagine della Live Copy siano state create correttamente.
+   >Potrebbe essere visualizzata una finestra di dialogo di errore con il messaggio “Impossibile inviare il modulo”. Ciò si verifica a causa di un timeout di rete. Tuttavia, il processo per creare la Live Copy viene eseguito in background. Attendi alcuni minuti e controlla che le pagine della Live Copy siano state create correttamente.
 
 ### Creazione di una Live Copy di un sito da una configurazione Blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -153,12 +153,12 @@ Se ometti alcuni rami di lingua dalla Live Copy, puoi aggiungerli in un secondo 
 
 Quando crei il sito, fornisci valori per le seguenti proprietà:
 
-* **Lingue iniziali**: i rami della lingua della sorgente blueprint da includere nella Live Copy
-* **Capitoli iniziali**: le pagine figlie dei rami di lingua blueprint da includere nella Live Copy
-* **Percorso di Destinazione**: posizione della pagina root del sito Live Copy
-* **Titolo**: titolo della pagina root del sito Live Copy
-* **Nome**: (facoltativo) il nome del nodo JCR che memorizza la pagina root della Live Copy (il valore predefinito è basato sul titolo)
-* **Proprietario sito**: (facoltativo) informazioni sul responsabile della Live Copy
+* **Lingue iniziali**: i rami della lingua della sorgente blueprint da includere nella Live Copy.
+* **Capitoli iniziali**: le pagine figlie dei rami di lingua blueprint da includere nella Live Copy.
+* **Percorso di Destinazione**: posizione della pagina root del sito Live Copy.
+* **Titolo**: titolo della pagina root del sito Live Copy.
+* **Nome**: (facoltativo) il nome del nodo JCR che memorizza la pagina root della Live Copy (il valore predefinito è basato sul titolo).
+* **Proprietario sito**: (facoltativo) informazioni sul responsabile della Live Copy.
 * **Live Copy**: seleziona questa opzione per stabilire una relazione live con il sito sorgente. Se non selezioni questa opzione, viene creata una copia della blueprint ma non viene successivamente sincronizzata con il sorgente.
 * **Configurazioni di rollout**: (facoltativo) seleziona una o più configurazioni di rollout da utilizzare per la sincronizzazione della Live Copy. Per impostazione predefinita, le configurazioni di rollout vengono ereditate dalla blueprint. Vedi [Specifica delle configurazioni di rollout da utilizzare](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) per ulteriori dettagli.
 
