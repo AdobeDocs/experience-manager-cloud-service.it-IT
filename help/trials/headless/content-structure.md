@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
 source-wordcount: '1019'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 90%
 
 La console Modelli per frammenti di contenuto si apre in una nuova scheda. Considera la console Modelli per frammenti di contenuto come una libreria di modelli, in cui puoi crearne di nuovi e gestire quelli esistenti.
 
-Per il nostro esempio, creeremo un modello che rappresenta la struttura dati di un viaggio presentato su un sito web di viaggi. Si farà riferimento a un viaggio utilizzando questo modello come **Avventura**.
+Per il nostro esempio, creeremo un modello che rappresenta la struttura dati di un viaggio presentato su un sito web di viaggi. In questo modello ci riferiremo a un viaggio come **Avventura**.
 
 1. Fai clic sul pulsante **Crea** in alto a destra dello schermo per iniziare a creare un modello di frammento di contenuto.
 
 1. Viene avviata la procedura guidata Crea modello, che ti guida attraverso la creazione del modello. Fornisci le seguenti informazioni obbligatorie.
 
-   * **Titolo modello** - Questa è una breve etichetta del modello e in genere indica lo scopo del modello. Chiameremo il nostro nuovo modello `Adventure`.
+   * **Titolo modello**: questa è una breve etichetta del modello e in genere ne indica lo scopo. Chiameremo il nostro nuovo modello `Adventure`.
    * **Abilita modello** - Questa opzione è selezionata per impostazione predefinita e deve essere selezionata per poter creare frammenti di contenuto in base a questo modello.
 
 1. Una volta compilati i campi obbligatori, fai clic su **Crea** in alto a sinistra per creare il modello.
@@ -51,13 +51,13 @@ Per il nostro esempio, creeremo un modello che rappresenta la struttura dati di 
 
 ## Utilizzo dell’Editor modelli {#configure-model}
 
-Ora abbiamo un modello chiamato **Avventura**, ma non ha dettagli come durata, destinazione, attività, ecc. Prima di poter utilizzare il modello, è necessario definire la struttura dei relativi dati.
+Ora abbiamo un modello chiamato **Avventura**, ma non dispone di dettagli come durata, destinazione, attività, ecc. Prima di poter utilizzare il modello, è necessario definire la struttura dei relativi dati.
 
 Nell’editor modelli di frammento di contenuto è possibile configurare i tipi di dati e le proprietà che definiscono il contenuto del modello.
 
 >[!TIP]
 >
->È importante seguire gli schemi di denominazione nelle istruzioni seguenti, poiché questi nomi specifici verranno menzionati in moduli successivi.
+>È importante seguire gli schemi di denominazione nelle istruzioni seguenti, poiché questi nomi specifici verranno menzionati nei moduli successivi.
 
 1. Trascina un campo **Testo su riga singola** dal pannello **Tipi di dati** a destra dell’editor e rilascialo sul modello per frammenti di contenuto.
 
@@ -76,11 +76,11 @@ Procedi alla sezione successiva per aggiungere i campi necessari per completare 
 
 ## Aggiungi campi al modello {#additional-fields}
 
-Hai già un campo per il titolo dell&#39;avventura. Ora è necessario aggiungere campi per acquisire la descrizione, il prezzo e un&#39;immagine rappresentativa dell&#39;avventura.
+Hai già un campo per il titolo dell&#39;avventura. Ora devi aggiungere dei campi per acquisire la descrizione, il prezzo e un’immagine rappresentativa dell’avventura.
 
 >[!TIP]
 >
->Il modello di **Avventura** si basa sul sito di esempio WKND per AEM. È possibile [visita il sito qui](https://wknd.site/us/en/adventures/yosemite-backpacking.html) per visualizzare il contenuto che utilizza **Avventura** modello.
+>Il modello di **Avventura** si basa sul sito di esempio WKND per AEM. Puoi [visitare il sito qui](https://wknd.site/us/en/adventures/yosemite-backpacking.html) per visualizzare il contenuto che utilizza il modello **Avventura**.
 
 Segui gli stessi passaggi indicati sopra per aggiungere questi ulteriori campi. L’unica differenza sono le proprietà da impostare.
 
