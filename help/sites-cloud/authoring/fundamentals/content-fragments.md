@@ -3,7 +3,7 @@ title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redigere e utilizzare contenuti indipendenti dalla pagina.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1227'
 ht-degree: 100%
 
@@ -73,7 +73,6 @@ I frammenti di contenuto consentono:
    >* [Layout dinamico](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
-
 ### Selezione dell’elemento o della variante {#selecting-the-element-or-variation}
 
 Apri la finestra di dialogo **Configurazione** del frammento per configurare il frammento per la pagina corrente. La finestra di dialogo può dipendere dal componente utilizzato.
@@ -92,9 +91,9 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 * **Elemento**
    * A seconda del modello utilizzato sarà disponibile una selezione.
 
-   >[!NOTE]
-   >
-   >Gli elementi disponibili dipendono dal modello utilizzato.
+  >[!NOTE]
+  >
+  >Gli elementi disponibili dipendono dal modello utilizzato.
 
 * **Variazione**
    * Il **Master** predefinito sarà sempre disponibile.
@@ -146,7 +145,6 @@ Per il contenuto intermedio è possibile:
 >
 >  Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
 >* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
-
 
 ### Uso di contenuti associati  {#using-associated-content}
 
