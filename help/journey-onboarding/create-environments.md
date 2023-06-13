@@ -4,15 +4,15 @@ description: Scopri come creare i primi ambienti con Cloud Manager.
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '732'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
 # Creazione di ambienti {#create-environments}
 
-In questa parte del [percorso di onboarding,](overview.md) scopri come creare i primi ambienti con Cloud Manager.
+In questa sezione del [percorso di onboarding](overview.md) scoprirai come creare i primi ambienti con Cloud Manager.
 
 ## Obiettivo {#objective}
 
@@ -28,15 +28,15 @@ Dopo aver letto questo documento:
 
 Nella gerarchia di Cloud Manager, gli ambienti si trovano al di sotto dei programmi. Mentre i programmi consentono di organizzare la soluzione e concedere l’accesso a determinati membri del gruppo, gli ambienti appartengono a programmi specifici e rappresentano istanze individuali delle soluzioni Adobe all’interno di tali programmi. Gli ambienti si utilizzano per uno scopo specifico, ad esempio per l’authoring dei contenuti o i test di nuovi sviluppi. Le pipeline CI/CD di Cloud Manager facilitano la distribuzione del codice in questi ambienti dagli archivi Git.
 
-Se ricordi l’esempio teorico di WKND Travel and Adventure Enterprises, un tenant che si occupa di media legati ai viaggi, potrebbe avere due programmi. ovvero un programma Sites per la divisione WKND Magazine e un programma Assets per la divisione WKND Media. In ogni programma sono spesso presenti due ambienti, ad esempio un ambiente di produzione per il traffico effettivo del sito e un ambiente di sviluppo per i test del nuovo codice dell’applicazione.
+Se ricordi l’esempio teorico di WKND Travel and Adventure Enterprises, un tenant che si occupa di media legati ai viaggi, potrebbe avere due programmi. Ovvero, un programma Sites per la divisione WKND Magazine e un programma Assets per la divisione WKND Media. In ogni programma sono spesso presenti due ambienti, ad esempio un ambiente di produzione per il traffico effettivo del sito e un ambiente di sviluppo per i test del nuovo codice dell’applicazione.
 
 Esistono quattro diversi tipi di ambienti:
 
 * **Produzione e staging**: gli ambienti di produzione e staging sono disponibili in coppia e vengono utilizzati rispettivamente a scopi di produzione e test.
-* **Sviluppo** - È possibile creare un ambiente di sviluppo per scopi di sviluppo e test e associarlo solo a pipeline non di produzione.
-* **Sviluppo rapido** - Un ambiente di sviluppo rapido (RDE, rapid development environment) consente allo sviluppatore di implementare e rivedere rapidamente le modifiche, riducendo al minimo il tempo necessario per testare le funzioni che si sono dimostrate efficaci in un ambiente di sviluppo locale.
+* **Sviluppo**: è possibile creare un ambiente di sviluppo sia per scopi di sviluppo che per scopi di test, che può essere associato solo a pipeline non destinate alla produzione.
+* **Sviluppo rapido**: un ambiente di sviluppo rapido (RDE, Rapid Development Environment) consente allo sviluppatore di implementare e rivedere rapidamente le modifiche, riducendo al minimo il tempo necessario per testare le funzioni che hanno dimostrato di funzionare in un ambiente di sviluppo locale.
 
-Ai fini di questo percorso di onboarding, per iniziare in modo minimo puoi creare un ambiente di sviluppo da utilizzare per esplorare le funzionalità di AEM as a Cloud Service.
+Ai fini di questo percorso di onboarding, per iniziare in modo basilare puoi creare un ambiente di sviluppo da utilizzare per esplorare le funzionalità di AEM as a Cloud Service.
 
 ## Creazione di ambienti {#creating-environments}
 
@@ -44,7 +44,7 @@ Ai fini di questo percorso di onboarding, per iniziare in modo minimo puoi crear
 
 1. Seleziona il programma al quale desideri aggiungere un ambiente.
 
-1. Per aggiungere un ambiente, dalla sezione **Panoramica del programma** pagina, nella **Ambienti** , seleziona **Aggiungi ambiente**.
+1. Per aggiungere un ambiente, dalla pagina **Panoramica del programma**, nella scheda **Ambienti**, seleziona **Aggiungi ambiente**.
 
    ![Scheda Ambienti](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -76,17 +76,17 @@ Dopo aver letto questa sezione del percorso di onboarding, dovresti:
 * Conoscerai la differenza tra i diversi ambienti.
 * Sarai in grado di creare un ambiente personalizzato.
 
-Ora che le risorse cloud sono state create, il team è pronto per accedervi. In qualità di amministratore di sistema, devi innanzitutto assegnare i membri del gruppo ai profili di prodotto in AEM as a Cloud Service da Adobe Admin Console in modo che possano accedere a tali risorse.
+Ora che le risorse cloud sono state create, il team è pronto per accedervi. In qualità di amministratore di sistema, devi innanzitutto assegnare i membri del team ai profili di prodotto in AEM as a Cloud Service da Adobe Admin Console in modo che possano accedere a tali risorse.
 
-Pertanto, prima di continuare il percorso di onboarding, rivedi il documento [Assegnazione dei membri del gruppo ai profili di prodotto di AEM as a Cloud Service](assign-profiles-aem.md). In questo documento imparerai a concedere ai membri del gruppo i diritti di accesso ai nuovi ambienti.
+Pertanto, prima di continuare il percorso di onboarding, rivedi il documento [Assegnazione dei membri del team ai profili di prodotto di AEM as a Cloud Service](assign-profiles-aem.md). Nel documento vengono fornite informazioni su come concedere ai membri del team i diritti necessari per accedere ai nuovi ambienti.
 
 ## Risorse aggiuntive {#additional-resources}
 
 Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
-* [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md) - Scopri i tipi di ambienti che è possibile creare e come crearli per il progetto Cloud Manager
-* [Utilizzo di Adobe Cloud Manager - Ambienti](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=it) : gli ambienti di Cloud Manager sono composti dai servizi di authoring, pubblicazione e Dispatcher di AEM. Scopri in che modo i diversi ambienti supportano i ruoli e come utilizzarli con diverse pipeline CI/CD.
-* [Ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md) - Consulta la documentazione per informazioni dettagliate sull’utilizzo di un RDE
+* [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md): scopri di più sui tipi di ambiente che è possibile creare e come crearli per un progetto di Cloud Manager.
+* [Utilizzo degli ambienti di Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=it): gli ambienti di Cloud Manager sono composti dai servizi di authoring, pubblicazione e Dispatcher di AEM. Scopri in che modo i diversi ambienti supportano i ruoli e come utilizzarli con diverse pipeline CI/CD.
+* [Ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md): consulta la documentazione per informazioni dettagliate sull’utilizzo di un RDE.
 
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
 
