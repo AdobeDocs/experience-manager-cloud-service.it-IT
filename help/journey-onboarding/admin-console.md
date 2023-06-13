@@ -3,9 +3,9 @@ title: Accesso a Admin Console
 description: Una volta comprese le operazioni preliminari all’onboarding e le nozioni di base della struttura di AEMaaCS, puoi effettuare il primo accesso a Admin Console.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1111'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Ora puoi continuare il percorso di onboarding scoprendo come [assegnare i membri
 
 Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
-* [Panoramica di Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html): una panoramica completa di Admin Console
+* [Panoramica di Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html): una panoramica completa di Admin Console.
 * [Creazione o aggiornamento dell’Adobe ID](https://helpx.adobe.com/it/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID/): scopri come creare un Adobe ID, come modificarlo e gestirne più di uno.
 * [Gestore autenticazione SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=it): AEM viene fornito con un gestore per l’autenticazione SAML. Questo gestore fornisce il supporto per il protocollo di richiesta di autenticazione SAML 2.0 (profilo Web-SSO) utilizzando l’associazione HTTP POST.
 * [Ruoli amministrativi](https://helpx.adobe.com/it/enterprise/using/admin-roles.ug.html): con Adobe Admin Console le organizzazioni possono definire una gerarchia amministrativa flessibile per una gestione dettagliata dell’accesso e dell’utilizzo dei prodotti Adobe.
