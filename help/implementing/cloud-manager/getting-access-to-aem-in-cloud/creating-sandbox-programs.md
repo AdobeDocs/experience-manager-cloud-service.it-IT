@@ -3,9 +3,9 @@ title: Creazione di programmi sandbox
 description: Scopri come creare un programma sandbox personalizzato da usare per formazione, demo, POC o altre finalità non di produzione con Cloud Manager.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '464'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -25,19 +25,19 @@ Per creare un programma sandbox, segui la procedura riportata di seguito.
 
    ![Pagina di destinazione di Cloud Manager](assets/cloud-manager-my-programs.png)
 
-1. Dalla procedura guidata Crea programma, seleziona **Configurare una sandbox** e fornisci un nome per il programma.
+1. Dalla procedura guidata Crea programma, seleziona **Configura una sandbox** e assegna un nome al programma.
 
-   ![Creazione dei tipi di programmi](assets/create-sandbox.png)
+   ![Creazione del tipo di programmi](assets/create-sandbox.png)
 
-1. In alternativa, è possibile aggiungere un’immagine al programma trascinando e rilasciando un file di immagine sul **Aggiungi un&#39;immagine del programma** per selezionare un&#39;immagine da un browser di file. Tocca o fai clic su **Continua**.
+1. Facoltativamente, puoi aggiungere un’immagine al programma trascinando un file di immagine sul target **Aggiungi un’immagine del programma** o facendo clic su di esso per aggiungere un’immagine da un browser del file. Tocca o fai clic su **Continua**.
 
-   * L’immagine funge solo da sezione nella finestra di panoramica del programma e aiuta a identificare il programma.
+   * L’immagine funge solo da titolo nella finestra di panoramica del programma e aiuta a identificarlo.
 
-1. In **Configurare la sandbox** selezionare le soluzioni da abilitare nel programma sandbox selezionando le opzioni nella finestra di dialogo **Soluzioni e componenti aggiuntivi** tabella.
+1. Nella finestra di dialogo **Configura una sandbox**, seleziona le soluzioni da abilitare nel programma sandbox selezionando le opzioni nella tabella **Soluzioni e componenti aggiuntivi**.
 
-   * Utilizza le virgolette acute accanto ai nomi delle soluzioni per mostrare componenti aggiuntivi aggiuntivi aggiuntivi aggiuntivi facoltativi per le soluzioni.
+   * Utilizza le frecce accanto ai nomi delle soluzioni per mostrare ulteriori componenti aggiuntivi facoltativi per le soluzioni.
 
-   * Il **Sites** e **Risorse** le soluzioni sono sempre incluse nei programmi sandbox e non possono essere deselezionate.
+   * Le soluzioni **Sites** e **Assets** sono sempre incluse nei programmi sandbox e non possono essere deselezionate.
 
    ![Selezionare soluzioni e componenti aggiuntivi per una sandbox](assets/sandbox-solutions-add-ons.png)
 
