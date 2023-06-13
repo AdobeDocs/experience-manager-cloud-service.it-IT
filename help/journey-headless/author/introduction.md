@@ -3,8 +3,8 @@ title: Authoring in AEM utilizzato come CMS headless - Introduzione
 description: Introduzione all’utilizzo delle funzioni di Adobe Experience Manager as a Cloud Service come CMS headless per la creazione di contenuti per il tuo progetto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
-workflow-type: tm+mt
-source-wordcount: '665'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
