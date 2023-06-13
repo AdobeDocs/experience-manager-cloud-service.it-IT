@@ -4,8 +4,8 @@ description: Scopri lo sviluppo headless utilizzando Adobe Experience Manager (A
 landing-page-description: Scopri la distribuzione e l’implementazione headless dei contenuti. Ulteriori informazioni sullo sviluppo della strategia all’interno dell’azienda.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: e86f28afbd45270a89e43de0d42540ac5dd296cb
-workflow-type: tm+mt
-source-wordcount: '1083'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
