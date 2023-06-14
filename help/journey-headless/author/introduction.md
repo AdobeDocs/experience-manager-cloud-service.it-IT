@@ -4,7 +4,7 @@ description: Introduzione all’utilizzo delle funzioni di Adobe Experience Mana
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: ht
-source-wordcount: '0'
+source-wordcount: '665'
 ht-degree: 100%
 
 ---
