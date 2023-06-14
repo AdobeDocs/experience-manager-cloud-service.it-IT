@@ -2,10 +2,10 @@
 title: Configurazione del team di sviluppo Enterprise
 description: Scopri come configurare e scalare il team di sviluppo Enterprise e come supportare il processo di sviluppo con AEM as a Cloud Service.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
+source-git-commit: f19c4c71cf3b70331b9ccc56adf0bfd31e7edb2c
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 100%
+source-wordcount: '1445'
+ht-degree: 97%
 
 ---
 
@@ -98,7 +98,7 @@ Con l’archivio Git e la pipeline di produzione di Cloud Manager, l’intero co
 
 In assenza di un tale sistema, poiché ogni team può eseguire la distribuzione separatamente, c’è il rischio che l’aggiornamento apportato da un singolo team possa portare a problemi di stabilità della produzione. Inoltre, per distribuire gli aggiornamenti è necessario essere coordinati e pianificare i tempi di inattività. Con il costante aumento del numero dei team, coordinarsi diventa molto più complesso e rapidamente ingestibile.
 
-Se viene rilevato un problema al livello dei gate di qualità, la produzione non viene influenzata e il problema può essere rilevato e risolto senza necessità di intervento del personale Adobe. Se non si integra Cloud Service e non si eseguono test continui dell’intera distribuzione, le distribuzioni parziali possono causare interruzioni che richiedono il ripristino dello stato precedente di una richiesta o persino un ripristino completo da un backup. Anche l’esecuzione parziale dei test può far sorgere altri problemi che dovranno essere risolti richiedendo nuovamente il coordinamento e il supporto del personale Adobe.
+Se viene rilevato un problema al livello dei gate di qualità, la produzione non viene influenzata e il problema può essere rilevato e risolto senza necessità di intervento del personale Adobe. Se non si esegue il Cloud Service e non si esegue sempre il test dell&#39;intera distribuzione, le distribuzioni parziali possono causare interruzioni che richiedono il rollback di una richiesta o persino un ripristino completo da un backup. Anche l’esecuzione parziale dei test può far sorgere altri problemi che dovranno essere risolti richiedendo nuovamente il coordinamento e il supporto del personale Adobe.
 
 >[!TIP]
 >

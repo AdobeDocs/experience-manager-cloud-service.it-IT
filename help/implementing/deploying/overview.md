@@ -3,10 +3,10 @@ title: Implementazione in AEM as a Cloud Service
 description: Implementazione in AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
+source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
 workflow-type: tm+mt
-source-wordcount: '3541'
-ht-degree: 89%
+source-wordcount: '3542'
+ht-degree: 88%
 
 ---
 
@@ -115,7 +115,7 @@ Dopo il passaggio alla nuova versione dell’applicazione:
 >[!NOTE]
 >I pacchetti di contenuto vengono distribuiti in tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Questa limitazione è presente per garantire la possibilità di effettuare un test di esecuzione automatica. Il contenuto specifico di un ambiente richiede l’installazione manuale tramite [Gestione pacchetti.](/help/implementing/developing/tools/package-manager.md)
 
-Inoltre, non esiste un meccanismo per ripristinare le modifiche al pacchetto di contenuti mutabili dopo la loro applicazione. Se i clienti rilevano un problema, possono scegliere di correggerlo nella versione successiva del codice o, come ultima risorsa, ripristinare l’intero sistema in un punto temporale prima della distribuzione.
+Inoltre, non esiste alcun meccanismo per eseguire il rollback delle modifiche del pacchetto di contenuti mutabili dopo la loro applicazione. Se i clienti rilevano un problema, possono scegliere di correggerlo nella versione successiva del codice o, come ultima risorsa, ripristinare l’intero sistema in un punto temporale prima della distribuzione.
 
 Eventuali pacchetti di terze parti inclusi devono essere convalidati come un servizio compatibile con AEM as a Cloud Service, altrimenti la loro inclusione provocherà un errore di distribuzione.
 
@@ -130,9 +130,9 @@ Per i casi seguenti, è preferibile adottare l’approccio della creazione di co
 * Creare/eliminare utenti
 * Aggiungere ACL
 
-   >[!NOTE]
-   >
-   >La definizione degli ACL richiede che le strutture dei nodi siano già presenti. Pertanto, potrebbe essere necessario creare in anticipo delle istruzioni di percorso.
+  >[!NOTE]
+  >
+  >La definizione degli ACL richiede che le strutture dei nodi siano già presenti. Pertanto, potrebbe essere necessario creare in anticipo delle istruzioni di percorso.
 
 * Aggiungere percorso (ad esempio per le strutture delle cartelle principali)
 * Aggiungere CND (definizioni dei tipi di nodo)

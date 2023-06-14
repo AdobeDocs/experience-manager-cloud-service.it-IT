@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
+source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
 workflow-type: tm+mt
-source-wordcount: '4064'
+source-wordcount: '4079'
 ht-degree: 98%
 
 ---
@@ -73,6 +73,7 @@ ht-degree: 98%
    + Note sulla versione di manutenzione di AEMaaCS {#maintenance}
       + [Note sulla versione di manutenzione corrente](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [Note sulla versione di manutenzione 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [Note sulla versione di manutenzione 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [Note sulla versione di manutenzione 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Note sulla versione per Cloud Manager {#cloud-manager}
@@ -546,6 +547,7 @@ ht-degree: 98%
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
             + [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-core-components.md)
             + [Crea un Componente core dei moduli adattivi in una pagina AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurazione della pagina di reindirizzamento o del messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + Authoring di moduli adattivi: componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
