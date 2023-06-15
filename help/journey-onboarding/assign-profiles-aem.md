@@ -4,10 +4,10 @@ description: Dopo aver configurato le risorse cloud, devi fornire al team l’ac
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
-workflow-type: ht
-source-wordcount: '805'
-ht-degree: 100%
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+workflow-type: tm+mt
+source-wordcount: '899'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,12 @@ Per utilizzare AEM, i membri del gruppo devono essere assegnati ad almeno un pro
 * `AEM Users`: questo gruppo include gli utenti normali che eseguono attività quotidiane di authoring dei contenuti.
 * `AEM Administrators`: questo gruppo include gli utenti responsabili delle funzioni avanzate o AEM.
 
-Tutti gli utenti assegnati a un profilo di prodotto AEM hanno accesso in sola lettura a Cloud Manager. L’accesso in scrittura a Cloud Manager può essere concesso tramite altri profili di prodotto.
+>[!NOTE]
+>
+>Ogni utente assegnato a un profilo di prodotto di AEM as a Cloud Service ha accesso in sola lettura a Cloud Manager tramite il ruolo **Utente di Cloud Manager**.
+>
+>Utenti con **Cloud Manager** Solo il ruolo utente può accedere a Cloud Manager e passare agli ambienti di authoring dell’AEM (se esistono) utilizzando le opzioni del menu Programmi. Il ruolo **Utente di Cloud Manager** non è sufficiente per accedere ai dettagli dei programmi. Se tale accesso è necessario, l’amministratore di sistema deve assegnare agli utenti ruoli aggiuntivi.
+>Consulta la [Sezione Risorse aggiuntive di seguito](#additional-resources) per ulteriori informazioni sui ruoli utente di Cloud Manager.
 
 >[!CAUTION]
 >
@@ -108,6 +113,7 @@ Tuttavia, se desideri comprendere meglio l’utilizzo del sistema dalla prospett
 
 Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
+* [Team e profili di prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) - Scopri come usare i team e i profili di prodotto di AEM as a Cloud Service per concedere e limitare l’accesso alle soluzioni di Adobe con licenza.
 * [Gestione di prodotti e accesso degli utenti in Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console): scopri come gestire l’accesso degli utenti con Admin Console.
-* [Procedura guidata per la configurazione dell’accesso a AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=it): una procedura guidata semplificata per scoprire come configurare utenti Adobe IMS, gruppi di utenti e profili di prodotto in Admin Console.
+* [Procedura guidata per la configurazione dell’accesso a AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html): una procedura guidata semplificata per scoprire come configurare utenti Adobe IMS, gruppi di utenti e profili di prodotto in Admin Console.
 

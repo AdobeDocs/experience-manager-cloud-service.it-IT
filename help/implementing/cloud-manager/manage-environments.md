@@ -2,10 +2,10 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 78%
+source-wordcount: '2336'
+ht-degree: 77%
 
 ---
 
@@ -47,7 +47,7 @@ Le funzionalità dei singoli ambienti dipendono dalle soluzioni abilitate nel [p
 
    * L’opzione **Aggiungi ambiente** è disponibile anche nella scheda **Ambienti**.
 
-      ![Scheda Ambienti](assets/environments-tab.png)
+     ![Scheda Ambienti](assets/environments-tab.png)
 
    * L’opzione **Aggiungi ambiente** potrebbe essere disattivata per mancanza di autorizzazioni o a seconda delle risorse concesse in licenza.
 
@@ -129,7 +129,7 @@ La scheda **Ambienti** nella pagina della panoramica consente di accedere ai det
 
    * In alternativa, per passare direttamente alla scheda **Ambienti**, fai clic sul pulsante **Mostra tutto** nella scheda **Ambienti**.
 
-      ![Opzione Mostra tutto](assets/environment-showall.png)
+     ![Opzione Mostra tutto](assets/environment-showall.png)
 
 1. La scheda **Ambienti** apre ed elenca tutti gli ambienti del programma.
 
@@ -231,12 +231,15 @@ L’opzione Elimina è disponibile anche dalla scheda **Ambienti** della finestr
 >* Non è possibile eliminare gli ambienti di produzione e di staging creati in un programma di produzione.
 >* È possibile eliminare gli ambienti di produzione e di staging contenuti in un programma sandbox.
 
-
 ## Gestione dell’accesso {#managing-access}
 
 Dal menu con i puntini di sospensione dell’ambiente nella scheda **Ambienti**, seleziona **Gestisci accesso**. Puoi accedere direttamente all’istanza di authoring e gestire l’accesso all’ambiente.
 
 ![Opzione Gestisci accesso](assets/environ-access.png)
+
+>[!TIP]
+>
+>Consulta il documento [Profili di prodotto e team as a Cloud Service AEM](/help/onboarding/aem-cs-team-product-profiles.md) per scoprire come i profili di prodotto e team as a Cloud Service per l’AEM possono concedere e limitare l’accesso alle soluzioni Adobe con licenza.
 
 ## Accesso a Console sviluppatori {#accessing-developer-console}
 
