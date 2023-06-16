@@ -4,9 +4,9 @@ description: Scopri le nozioni di base di AE; gestione dei pacchetti con Gestion
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3788'
 ht-degree: 4%
 
 ---
@@ -44,6 +44,37 @@ I pacchetti di contenuti creati per le applicazioni AEM as a Cloud Service devon
 >Non ripetere l’installazione se viene visualizzato un errore di questo tipo. L’installazione sta procedendo correttamente in background. Se si riavvia l’installazione, potrebbero essere introdotti alcuni conflitti da più processi di importazione simultanei.
 
 Per ulteriori dettagli su come gestire i pacchetti per AEMaaCS, consulta il documento [Distribuzione a AEM as a Cloud Service](/help/implementing/deploying/overview.md) nella guida utente distribuzione.
+
+## Dimensione pacchetto {#package-size}
+
+L’Adobe consiglia di non creare pacchetti di grandi dimensioni. In questo modo si evitano problemi di timeout durante il caricamento e il download dei pacchetti.
+
+Come regola generale, un pacchetto deve essere trasmesso per intero entro 60 secondi. In questo modo viene fornita la formula seguente come guida.
+
+```text
+MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
+```
+
+Poiché il traffico di rete è variabile ed è sempre inferiore al valore teorico massimo annunciato, provare a utilizzare uno strumento di prova della velocità della connessione Internet in linea.
+
+La velocità di Internet è quasi sempre diversa per caricamenti e download. Supponendo che sia necessario caricare e scaricare i pacchetti, nel calcolo devi utilizzare il valore più basso (solitamente la velocità di caricamento).
+
+### Esempio {#example}
+
+Utilizzando uno strumento di test della velocità Internet, vedo che la mia attuale velocità di caricamento è di circa 100 Mbps.
+
+```text
+100 Mbps = 12.5 MB/s
+12.5 MB/s * 60 s = 750 MB
+```
+
+Quindi tutti i pacchetti che creo dovrebbero essere più piccoli di 750 MB.
+
+>[!NOTE]
+>
+>La velocità della rete è soggetta alle condizioni locali attuali. Anche con un test di velocità recente, la velocità effettiva può variare.
+>
+>Pertanto, la formula fornita è solo una linea guida e la dimensione massima effettiva consigliata del pacchetto può variare.
 
 ## Gestione pacchetti {#package-manager}
 
@@ -237,6 +268,10 @@ Puoi allegare più schermate al pacchetto per fornire una rappresentazione visiv
 
 Non è obbligatorio costruire immediatamente il pacchetto dopo averlo creato. Un pacchetto non generato non contiene alcun contenuto ed è costituito solo dai dati del filtro e da altri metadati del pacchetto.
 
+>[!TIP]
+>
+>Per evitare timeout, Adobe consiglia [per non creare pacchetti di grandi dimensioni.](#package-size)
+
 ### Creazione di un pacchetto {#building-a-package}
 
 Un pacchetto viene spesso creato contemporaneamente a [creare il pacchetto](#creating-a-new-package), ma puoi tornare in un secondo momento a generare o ricreare il pacchetto. Questo può essere utile se il contenuto all’interno dell’archivio è stato modificato o i filtri del pacchetto sono stati modificati.
@@ -248,6 +283,10 @@ Un pacchetto viene spesso creato contemporaneamente a [creare il pacchetto](#cre
 1. Clic **Genera**. Una finestra di dialogo richiede la conferma che desideri creare il pacchetto poiché tutti i contenuti del pacchetto esistenti verranno sovrascritti.
 
 1. Fai clic su **OK**. L’AEM crea il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come fanno nell’elenco delle attività. Una volta completato AEM, viene visualizzata una conferma che il pacchetto è stato creato e, quando si chiude la finestra di dialogo, vengono aggiornate le informazioni sull’elenco dei pacchetti.
+
+>[!TIP]
+>
+>Per evitare timeout, Adobe consiglia [per non creare pacchetti di grandi dimensioni.](#package-size)
 
 ### Modifica di un pacchetto {#edit-package}
 
@@ -313,6 +352,10 @@ Dopo aver generato un pacchetto, puoi visualizzarne il contenuto.
 
 1. AEM scarica il pacchetto sul computer.
 
+>[!TIP]
+>
+>Per evitare timeout, Adobe consiglia [per non creare pacchetti di grandi dimensioni.](#package-size)
+
 ### Caricamento di pacchetti dal file system {#uploading-packages-from-your-file-system}
 
 1. [Accedere a Gestione pacchetti.](#accessing)
@@ -331,6 +374,10 @@ Dopo aver generato un pacchetto, puoi visualizzarne il contenuto.
 1. Clic **OK** e il pacchetto selezionato viene caricato e l’elenco dei pacchetti viene aggiornato di conseguenza.
 
 Il contenuto del pacchetto ora esiste sull’AEM, ma per renderlo disponibile all’uso, assicurati di [installare il pacchetto](#installing-packages).
+
+>[!TIP]
+>
+>Per evitare timeout, Adobe consiglia [per non creare pacchetti di grandi dimensioni.](#package-size)
 
 ### Convalida dei pacchetti {#validating-packages}
 
