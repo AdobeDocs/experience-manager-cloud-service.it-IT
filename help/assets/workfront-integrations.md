@@ -4,10 +4,10 @@ description: Introduzione all’integrazione tra [!DNL Assets] e [!DNL Workfront
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: e8607f5dfc9ad5fd5ababec47b4933bee131e566
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,6 +40,8 @@ Consulta Supporto della piattaforma e [prerequisiti per il connettore avanzato](
 
 >[!IMPORTANT]
 >
+>* A giugno 2022, Adobe ha rilasciato una nuova integrazione nativa per la connessione di Workfront con Adobe Experience Manager Assets as a Cloud Service. Questa integrazione è diventata il metodo richiesto per collegare queste due soluzioni. Qualsiasi nuova implementazione futura del connettore avanzato (versione 1.9.8 e successive) per collegare Workfront ad AEM Assets as a Cloud Service è bloccata. Per ulteriori informazioni su come impostare questa integrazione, consulta [Configurare l’integrazione di Experience Manager Assets as a Cloud Service](workfront-connector-configure.md).
+>
 >* L’Adobe richiede l’implementazione e la configurazione del [!DNL Adobe Workfront for Experience Manager enhanced connector] solo tramite partner certificati o [!DNL Adobe Professional Services]. Se implementato e configurato senza un partner certificato o [!DNL Adobe Professional Services], non è supportato da Adobe.
 >
 >* Adobe può rilasciare aggiornamenti a [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] che rendono questo connettore ridondante; in tal caso, i clienti potrebbero dover passare dall’utilizzo di questo connettore.
@@ -47,7 +49,6 @@ Consulta Supporto della piattaforma e [prerequisiti per il connettore avanzato](
 >* Adobe supporta le versioni migliorate del connettore 1.7.4 e successive. Le versioni precedenti prerelease e personalizzate non sono supportate. Per verificare la versione del connettore avanzato, vedere il punto 5(a) di [istruzioni per l&#39;installazione del connettore avanzato](workfront-connector-install.md).
 >
 >* Consulta [Connettore avanzato per la certificazione dei partner per Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Per informazioni sull&#39;esame, vedere [Guida all’esame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
-
 
 ## Confrontare diverse integrazioni tra [!DNL Assets] e [!DNL Workfront] {#feature-parity-matrix}
 
