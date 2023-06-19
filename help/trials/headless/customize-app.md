@@ -4,10 +4,10 @@ description: Utilizza un’app React di esempio per scoprire come personalizzare
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1038'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Inizia nell’editor frammenti di contenuto con l’app di esempio fornita con l
 
 1. Tocca o fai clic sul pulsante **Anteprima** in alto a destra nella schermata dell’editor.
 
-1. L’app di dimostrazione si apre in una nuova scheda. L’app è per il brand fittizio WKND outdoor lifestyle. Fai clic per navigare nel contenuto di esempio.
+1. L’app di dimostrazione si apre in una nuova scheda. L’app è per il brand fittizio WKND outdoor lifestyle. Scorri verso il basso la pagina per navigare nel contenuto di esempio.
 
 1. Torna alla scheda del browser dell’editor frammenti di contenuto per continuare.
 
