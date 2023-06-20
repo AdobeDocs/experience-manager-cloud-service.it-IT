@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: beb6ac3dbb036559510e6a2e2700b28c433ef98d
+source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 38%
+source-wordcount: '372'
+ht-degree: 37%
 
 ---
 
@@ -27,6 +27,7 @@ Nessuno.
 
 - ASSETS-25729 - Il menu dello switcher di visualizzazione è disattivato
 - ASSETS-25728 - Opzione Rielabora risorsa non disponibile nella vista di ricerca
+- ASSETS-22603 - Alcune colonne del rapporto Asset di tipo Download visualizzano valori &quot;null&quot; nell’interfaccia utente. Il file CSV scaricabile non subisce modifiche.
 
 ### Problemi risolti {#fixed-issues-12255}
 
