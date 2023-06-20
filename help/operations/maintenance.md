@@ -49,7 +49,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
        <li>Le versioni precedenti a 30 giorni vengono rimosse</li>
        <li>Le ultime 5 versioni degli ultimi 30 giorni vengono conservate</li>
        <li>Indipendentemente dalle regole di cui sopra, viene conservata la versione più recente.</li>
-       <br>Si consiglia ai clienti con requisiti normativi di eseguire il rendering delle pagine del sito esattamente come sono apparse in una data specifica di integrarsi con servizi esterni specializzati.
+       <br>Si consiglia ai clienti con requisiti normativi di eseguire il rendering delle pagine del sito esattamente come sono apparse in una data specifica, di integrarsi con servizi esterni specializzati.
      </ol></td>
   </td>
   </tr>
