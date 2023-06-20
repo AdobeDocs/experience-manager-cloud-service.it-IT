@@ -2,10 +2,10 @@
 title: Promozione dei lanci
 description: È necessario promuovere le pagine di lancio per spostare nuovamente il contenuto nell’origine (produzione) prima di pubblicarlo.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 46%
+source-wordcount: '814'
+ht-degree: 43%
 
 ---
 
@@ -50,7 +50,7 @@ Puoi promuovere i lanci da **Sites** console o **Lanci** console:
       1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
    * La console **Sites** durante la navigazione nelle pagine di lancio:
       1. Seleziona la pagina di lancio desiderata utilizzando [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md).
-      1. L&#39;azione **Promuovi** è disponibile nella barra degli strumenti.
+      1. Il **Promuovi** L&#39;azione è disponibile nella barra degli strumenti.
    * La console **Launches**:
       1. Seleziona il lancio (tocca o fai clic sulla miniatura).
       1. Seleziona **Promuovi**.
@@ -99,7 +99,7 @@ Dopo aver creato un lancio nidificato, puoi promuoverlo nuovamente in qualsiasi 
 1. Immetti i dettagli necessari:
    * **Destinazione**
       * **Destinazione della promozione**: puoi promuovere su qualsiasi sorgente.
-      * **Elimina lancio dopo la promozione**: dopo la promozione del lancio selezionato e dei lanci nidificati al suo interno, esso verrà eliminato.
+      * **Elimina lancio dopo la promozione** - Dopo la promozione, il lancio selezionato e tutti i lanci nidificati al suo interno vengono eliminati.
    * **Ambito**: puoi scegliere se promuovere l’intero lancio o solo le pagine che sono state modificate. In quest’ultimo caso, puoi selezionare di includere/escludere le sottopagine. La configurazione predefinita prevede di promuovere solo le modifiche alla pagina corrente:
       * **Promuovi tutto il lancio**
       * **Promuovi pagine modificate**

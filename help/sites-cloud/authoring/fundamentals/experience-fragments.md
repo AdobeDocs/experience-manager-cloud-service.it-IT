@@ -2,10 +2,10 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2064'
-ht-degree: 88%
+source-wordcount: '2052'
+ht-degree: 81%
 
 ---
 
@@ -62,7 +62,7 @@ Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distri
 I frammenti esperienza sono indicati nei seguenti casi:
 
 * Quando desideri riutilizzare le esperienze.
-   * Per esperienze che riutilizzerai con contenuti simili o uguali. .
+   * Esperienze riutilizzate con contenuti uguali o simili.
 * Quando utilizzi AEM come piattaforma di distribuzione di contenuti per terze parti.
    * Per qualsiasi soluzione che utilizza AEM come piattaforma di distribuzione di contenuti. .
    * Per incorporare contenuti nei punti di contatto di terze parti.
@@ -83,15 +83,15 @@ La creazione di cartelle consente di:
 
 * creare una struttura significativa per i frammenti esperienza, ad esempio, in base alla classificazione
 
-   >[!NOTE]
-   >
-   >Non è necessario allineare la struttura dei frammenti esperienza alla struttura delle pagine del sito.
+  >[!NOTE]
+  >
+  >Non è necessario allineare la struttura dei frammenti esperienza alla struttura delle pagine del sito.
 
 * [allocare i modelli consentiti a livello di cartella](#configure-allowed-templates-folder)
 
-   >[!NOTE]
-   >
-   >Per creare un modello personalizzato, puoi utilizzare [l’editor modelli](/help/sites-cloud/authoring/features/templates.md).
+  >[!NOTE]
+  >
+  >Per creare un modello personalizzato, puoi utilizzare [l’editor modelli](/help/sites-cloud/authoring/features/templates.md).
 
 Nel progetto WKND alcuni frammenti esperienza vengono strutturati in base a `Contributors`. La struttura utilizzata illustra anche come utilizzare altre funzioni, come la gestione multisito (incluse le copie per lingua).
 
@@ -184,7 +184,7 @@ Per creare un frammento esperienza:
 
 1. Inserisci le **proprietà** per il **frammento esperienza**.
 
-   A **Titolo** è obbligatorio. Se il **Nome** viene lasciato vuoto, verrà derivato dal valore **Titolo**.
+   A **Titolo** è obbligatorio. Se il **Nome** è lasciato vuoto è derivato dal valore **Titolo**.
 
    ![Proprietà dei frammenti esperienza](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -196,7 +196,7 @@ Per creare un frammento esperienza:
 
 1. Fai clic su **Crea**.
 
-   Verrà visualizzato un messaggio. Seleziona:
+   Viene visualizzato un messaggio. Seleziona:
 
    * **Fine** per tornare alla console
    * **Apri** per aprire l’editor frammenti
@@ -241,7 +241,7 @@ Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 
    * **Modello**
    * **Titolo**
-   * **Nome**: se è lasciato vuoto, verrà derivato dal campo Titolo.
+   * **Nome** - se non specificato, deriva dal campo Titolo
    * **Descrizione**
    * **Tag varianti**
 
@@ -250,7 +250,7 @@ Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
    ![Proprietà della variante](/help/sites-cloud/authoring/assets/xf-07.png)
 
 
-1. Conferma con **Fine**; la nuova variante viene visualizzata nel pannello.
+1. Conferma con **Fine**, la nuova variante viene visualizzata nel pannello.
 
 ## Utilizzo del frammento esperienza {#using-your-experience-fragment}
 
@@ -293,7 +293,7 @@ Per creare un nuovo blocco predefinito:
 
    ![Assegnazione di un nome al blocco predefinito](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. Il **blocco predefinito** verrà visualizzato nella scheda a sinistra (**Locale**) e può essere selezionato per ulteriori azioni:
+1. Il **Blocco predefinito** viene visualizzato nella scheda sinistra (**Locale**) e può essere selezionato per ulteriori azioni:
 
    ![Blocco predefinito nella barra](/help/sites-cloud/authoring/assets/xf-12.png)
 
@@ -341,7 +341,7 @@ Per personalizzare il frammento:
 
    >[!NOTE]
    >
-   >Le proprietà di personalizzazione definite in una cartella vengono ereditate da tutte le cartelle secondarie nella sotto-struttura, mentre i frammenti di esperienza (e le varianti) all’interno di questa sotto-struttura. È possibile sostituirli interrompendo l’ereditarietà.
+   >Le proprietà di personalizzazione definite in una cartella vengono ereditate da tutte le cartelle secondarie nella sottostruttura, mentre i frammenti di esperienza (e le varianti) all’interno di tale sottostruttura. È possibile sostituirli interrompendo l’ereditarietà.
 
 1. Apri la scheda **Personalizzazione** per definire e salvare le impostazioni. Ad esempio, su una cartella:
 
@@ -349,27 +349,25 @@ Per personalizzare il frammento:
 
    >[!CAUTION]
    >
-   >Quando un frammento è incorporato in una pagina Sites e la **Personalizzazione** è stata configurata, al momento del rendering della pagina verrà utilizzata solo la versione di personalizzazione della pagina.
+   >Quando un frammento è incorporato in una pagina Sites e **Personalizzazione** è stata configurata, al momento del rendering della pagina viene utilizzata solo la versione di personalizzazione della pagina.
    >
    >Affinché il targeting eseguito sui componenti di un frammento funzioni correttamente nel rendering della pagina, è necessario soddisfare le seguenti condizioni:
    >
    >Il **Percorso ContextHub** selezionato nella scheda **Personalizzazione** deve essere:
    >
-   >* lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento
-      >Oppure:
+   >* lo stesso percorso configurato per la pagina in cui viene eseguito il rendering del frammento
+   >Oppure:
    >* un percorso che contiene un sottoinsieme degli archivi definiti in ContextHub configurati per la pagina
-
    >
    > 
 Il **Percorso segmenti** selezionato nella scheda **Personalizzazione** deve essere:
-   * lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento 
-oppure
+   >
+   * lo stesso percorso configurato per la pagina in cui viene eseguito il rendering del frammento Oppure
    * un percorso che contiene un sottoinsieme dei segmenti configurati per la pagina
-
 
 ### Definizione del targeting per il frammento di esperienza {#defining-targeting-experience-fragment}
 
-Una volta configurate le proprietà di personalizzazione, la modalità Targeting sarà disponibile quando il frammento viene aperto per la modifica.
+Una volta configurate le proprietà di personalizzazione, la modalità Targeting è disponibile quando il frammento viene aperto per la modifica.
 
 ![Editor frammento di esperienza - Modalità di targeting](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
@@ -391,7 +389,9 @@ I dettagli vengono visualizzati in tutte le viste della console **Frammenti espe
    Le proprietà sono disponibili in diverse schede:
 
    >[!CAUTION]
+   >
    Queste schede vengono visualizzate quando apri **Proprietà** dalla console Frammenti esperienza.
+   >
    Se scegli **Apri proprietà** durante la modifica di un frammento esperienza, vengono visualizzate le [proprietà di pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriate.
 
    ![Proprietà dei frammenti esperienza](/help/sites-cloud/authoring/assets/xf-17.png)
@@ -421,6 +421,7 @@ I dettagli vengono visualizzati in tutte le viste della console **Frammenti espe
 Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML semplice dal browser.
 
 >[!NOTE]
+>
 Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere ai contenuti del frammento esperienza direttamente dall’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Pubblicazione di frammenti di esperienza {#publishing-experience-fragments}

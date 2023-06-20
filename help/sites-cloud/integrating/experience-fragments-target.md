@@ -2,10 +2,10 @@
 title: Esportazione di frammenti di esperienza in Adobe Target
 description: Esportazione di frammenti di esperienza in Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '2250'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,6 @@ ht-degree: 100%
 >
 >* I Frammenti di esperienza AEM vengono esportati nell’area di lavoro predefinita di Adobe Target.
 >* AEM deve essere integrato con Adobe Target secondo le istruzioni contenute in [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
-
 
 Puoi esportare i [Frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) creati in Adobe Experience Manager as a Cloud Service (AEM) in Adobe Target (Target). Puoi quindi utilizzarli come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
 
@@ -56,7 +55,6 @@ I Frammenti di esperienza possono essere esportati nell’area di lavoro predefi
 >* [Adobe Target: come si utilizzano i Frammenti di esperienza Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=it)
 >* [AEM 6.5: configurazione manuale dell’integrazione con Adobe Target; creazione di una configurazione cloud di Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=it#creating-a-target-cloud-configuration)
 
-
 ## Prerequisiti {#prerequisites}
 
 Sono necessarie diverse azioni:
@@ -77,7 +75,7 @@ Prima di esportare un frammento è necessario aggiungere la **Configurazione clo
 * selezionare un’area di lavoro di Target come destinazione
 * selezionare un dominio esternalizzatore per riscrivere i riferimenti nel Frammento di esperienza (facoltativo)
 
-Le opzioni richieste possono essere selezionate in **Proprietà pagina** della cartella e/o del frammento richiesti; la specifica viene ereditata in base alle necessità.
+Le opzioni richieste possono essere selezionate in **Proprietà pagina** della cartella, del frammento o di entrambi i tipi richiesti; la specifica viene ereditata in base alle necessità.
 
 1. Passa alla console **Frammenti di esperienza**.
 
@@ -185,7 +183,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
 
    * **Configurazione A4T Analytics Cloud**: seleziona la configurazione cloud di Analytics utilizzata per gli obiettivi e le metriche delle attività di destinazione. È necessario se utilizzi Adobe Analytics come origine per la generazione di rapporti durante il targeting del contenuto.
 
-      <!-- Is this needed?
+     <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
@@ -195,36 +193,36 @@ Ora puoi selezionare la nuova configurazione da modificare.
 
    * **Libreria client:** questo valore predefinito è AT.js (mbox.js è obsoleto)
 
-      >[!NOTE]
-      >
-      >Il file della libreria di Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=it), è una nuova libreria di implementazione di Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola.
-      >
-      >mbox.js è stato dichiarato obsoleto e verrà rimosso in una fase successiva.
-      >
-      >Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
-      >
-      >AT.js offre diversi miglioramenti rispetto alla libreria mbox.js:
-      >
-      >* Tempi di caricamento delle pagine migliorati per le implementazioni web
-      >* Maggiore sicurezza
-      >* Migliori opzioni di implementazione per le applicazioni a pagina singola
-      >* AT.js contiene i componenti inclusi in target.js, quindi non effettua più chiamate a target.js
-      >
-      >Puoi selezionare AT.js o mbox.js nel menu a discesa **Libreria client**.
+     >[!NOTE]
+     >
+     >Il file della libreria di Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=it), è una nuova libreria di implementazione di Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola.
+     >
+     >mbox.js è stato dichiarato obsoleto e verrà rimosso in una fase successiva.
+     >
+     >Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
+     >
+     >AT.js offre diversi miglioramenti rispetto alla libreria mbox.js:
+     >
+     >* Tempi di caricamento delle pagine migliorati per le implementazioni web
+     >* Maggiore sicurezza
+     >* Migliori opzioni di implementazione per le applicazioni a pagina singola
+     >* AT.js contiene i componenti inclusi in target.js, quindi non effettua più chiamate a target.js
+     >
+     >Puoi selezionare AT.js o mbox.js nel menu a discesa **Libreria client**.
 
    * **Utilizza Tag Management System per distribuire la libreria client**: seleziona questa opzione per utilizzare la libreria client da Adobe Launch o da un altro sistema di gestione tag (o DTM, che è obsoleto).
 
    * **AT.js personalizzato**: sfoglia per caricare il tuo AT.js personalizzato. Lascia vuoto per utilizzare la libreria predefinita.
 
-      >[!NOTE]
-      >
-      >Per impostazione predefinita, quando scegli di accedere alla procedura guidata di configurazione di Adobe Target, il targeting accurato è abilitato.
-      >
-      >Il targeting accurato significa che la configurazione del servizio cloud attende il caricamento del contesto prima di caricare il contenuto. Di conseguenza, in termini di prestazioni, un targeting accurato può creare un ritardo di alcuni millisecondi prima del caricamento del contenuto.
-      >
-      >Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell’istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
-      >
-      >Se hai ***già*** creato i componenti di destinazione e modificato questa impostazione, le modifiche non influiscono su tali componenti. Devi apportare le modifiche direttamente a tali componenti.
+     >[!NOTE]
+     >
+     >Per impostazione predefinita, quando scegli di accedere alla procedura guidata di configurazione di Adobe Target, il targeting accurato è abilitato.
+     >
+     >Il targeting accurato significa che la configurazione del servizio cloud attende il caricamento del contesto prima di caricare il contenuto. Di conseguenza, in termini di prestazioni, un targeting accurato può creare un ritardo di alcuni millisecondi prima del caricamento del contenuto.
+     >
+     >Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell’istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
+     >
+     >Se hai ***già*** creato i componenti di destinazione e modificato questa impostazione, le modifiche non influiscono su tali componenti. Devi apportare le modifiche direttamente a tali componenti.
 
 1. Fai clic su **Connetti ad Adobe Target** per inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio **Connessione riuscita**. Fai clic su **OK** sul messaggio e quindi **OK** nella finestra di dialogo.
 
@@ -373,10 +371,11 @@ Per evitare tali situazioni:
 * Se il frammento di esperienza non è attualmente utilizzato in un’attività, AEM consente all’utente di eliminarlo senza un messaggio di avviso.
 * Se il frammento di esperienza è attualmente utilizzato da un’attività in Target, un messaggio di errore avvisa l’utente AEM delle possibili conseguenze che l’eliminazione del frammento avrà sull’attività.
 
-   Il messaggio di errore in AEM non impedisce all’utente di (forzare) eliminare il frammento di esperienza. Se il frammento di esperienza viene eliminato:
+  Il messaggio di errore in AEM non impedisce all’utente di (forzare) eliminare il frammento di esperienza. Se il frammento di esperienza viene eliminato:
 
    * L’offerta Target con il frammento di esperienza AEM può mostrare un comportamento indesiderato
 
       * L&#39;offerta sarà probabilmente ancora visualizzata, poiché l&#39;HTML del frammento di esperienza è stato inviato su Target
       * Eventuali riferimenti nel frammento di esperienza potrebbero non funzionare correttamente se le risorse di riferimento sono state eliminate anche in AEM.
+
    * Naturalmente, eventuali ulteriori modifiche al frammento di esperienza sono impossibili in quanto questo non esiste più in AEM.

@@ -2,10 +2,10 @@
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redigere e utilizzare contenuti indipendenti dalla pagina.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1222'
+ht-degree: 92%
 
 ---
 
@@ -62,7 +62,7 @@ I frammenti di contenuto consentono:
    >
    >In alternativa, puoi trascinare un frammento di contenuto specifico direttamente nella pagina. In questo modo verrà creato automaticamente il componente associato (Frammento di contenuto).
 
-4. Inizialmente verrà visualizzato il contenuto dell’**elemento principale** e la **pagina mastro** (variante). Puoi [selezionare altri elementi e/o varianti](#selecting-the-element-or-variation), secondo necessità.
+4. Inizialmente, il contenuto di **Principale** Elemento e **Principale** (variante). Puoi [selezionare altri elementi e/o varianti](#selecting-the-element-or-variation), secondo necessità.
 
    ![Frammenti di contenuto nel browser Risorse](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -89,15 +89,15 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
    * **Elemento di testo singolo**
    * **Più elementi**
 * **Elemento**
-   * A seconda del modello utilizzato sarà disponibile una selezione.
+   * A seconda del modello utilizzato, è disponibile una selezione.
 
   >[!NOTE]
   >
   >Gli elementi disponibili dipendono dal modello utilizzato.
 
 * **Variazione**
-   * Il **Master** predefinito sarà sempre disponibile.
-   * Se per il frammento sono state create delle varianti, sarà disponibile una selezione.
+   * Il valore predefinito **Principale** è sempre disponibile.
+   * Se sono state create varianti per il frammento, è disponibile una selezione.
 
 * **ID**
 
@@ -160,7 +160,7 @@ Se è stato [contenuto associato](/help/sites-cloud/administering/content-fragme
 
 Una volta aggiunto alla pagina un frammento con contenuto associato, nel pannello laterale viene aperta una nuova scheda (**Contenuto associato**).
 
-Da qui puoi trascinare le risorse nella posizione richiesta (su un componente esistente o nella posizione in cui sarà creato il componente appropriato):
+Da qui puoi trascinare le risorse nella posizione desiderata (su un componente esistente o nella posizione in cui è stato creato il componente appropriato):
 
 ![Inserimento di un’immagine](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

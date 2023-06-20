@@ -2,10 +2,10 @@
 title: Ricerca
 description: Ricerca completa per trovare più rapidamente i contenuti
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 60%
+source-wordcount: '491'
+ht-degree: 57%
 
 ---
 
@@ -96,7 +96,7 @@ Oltre a eseguire ricerche in base a un&#39;ampia gamma di facet, è possibile sa
 
    ![Salvataggio di una ricerca con un nome](/help/sites-cloud/authoring/assets/search-save-name.png)
 
-1. La ricerca salvata sarà disponibile nel selettore alla successiva apertura del pannello di ricerca:
+1. La ricerca salvata sarà disponibile dal selettore al successivo accesso al pannello di ricerca:
 
    ![Ricerche salvate](/help/sites-cloud/authoring/assets/saved-searches.png)
 

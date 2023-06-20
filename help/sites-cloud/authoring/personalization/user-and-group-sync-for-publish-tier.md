@@ -2,10 +2,10 @@
 title: Registrazione, accesso e profilo utente
 description: Scopri di più su Registrazione, Accesso, Dati utente e Sincronizzazione dei gruppi per AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 95%
+source-wordcount: '1168'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Le applicazioni Web spesso forniscono funzioni di gestione dell&#39;account per 
 
 >[!IMPORTANT]
 >
->Affinché la funzionalità descritta in questo articolo funzioni, è necessario abilitare la funzione Sincronizzazione dati utente, che al momento necessita di una richiesta all&#39;Assistenza clienti per indicare il programma e gli ambienti appropriati. Se non è abilitata, le informazioni utente verranno mantenute per un breve periodo (da 1 a 24 ore) prima di scomparire.
+>Affinché la funzionalità descritta in questo articolo funzioni, è necessario abilitare la funzione Sincronizzazione dati utente, che al momento necessita di una richiesta all&#39;Assistenza clienti per indicare il programma e gli ambienti appropriati. Se non è abilitata, le informazioni utente vengono mantenute per un breve periodo (da 1 a 24 ore) prima di scomparire.
 
 ## Registrazione {#registration}
 
@@ -83,7 +83,7 @@ L’interfaccia`com.adobe.granite.auth.oauth.provider` può essere integrata con
 
 ### Sessioni permanenti e token incapsulati {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service dispone di sessioni permanenti basate su cookie abilitate, che garantiscono che un utente finale venga indirizzato allo stesso nodo di pubblicazione a ogni richiesta. Per migliorare le prestazioni, la funzione del token incapsulato è abilitata per impostazione predefinita, pertanto non è necessario fare riferimento al record utente nell’archivio a ogni richiesta. Se viene sostituito il nodo di pubblicazione con cui un utente finale ha un&#39;affinità, il record del relativo ID utente sarà disponibile sul nuovo nodo di pubblicazione, come descritto nella sezione di sincronizzazione dei dati seguente.
+AEM as a Cloud Service dispone di sessioni permanenti basate su cookie abilitate, che garantiscono che un utente finale venga indirizzato allo stesso nodo di pubblicazione a ogni richiesta. Per migliorare le prestazioni, la funzione del token incapsulato è abilitata per impostazione predefinita, pertanto non è necessario fare riferimento al record utente nell’archivio a ogni richiesta. Se viene sostituito il nodo di pubblicazione a cui un utente finale ha un’affinità, il record del relativo ID utente è disponibile sul nuovo nodo di pubblicazione, come descritto nella sezione di sincronizzazione dei dati seguente.
 
 ## Profilo utente {#user-profile}
 

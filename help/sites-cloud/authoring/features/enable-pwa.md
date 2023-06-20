@@ -2,10 +2,10 @@
 title: Abilitazione delle funzioni progressive delle web app
 description: AEM Sites consente all’autore dei contenuti di abilitare le funzionalità progressive delle app web a qualsiasi sito tramite una configurazione semplice invece che tramite la codifica.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 97%
+source-wordcount: '2000'
+ht-degree: 94%
 
 ---
 
@@ -135,7 +135,7 @@ Ora che hai [configurato il sito per supportare PWA,](#enabling-pwa-for-your-sit
 1. Nella barra degli indirizzi del browser viene visualizzata una nuova icona che indica che il sito può essere installato come app locale.
    * A seconda del browser, l’icona può variare e il browser può anche visualizzare una notifica (ad esempio un banner o una finestra di dialogo) che indica che è possibile installare come app locale.
 1. Installa l’app.
-1. L’app verrà installata nella schermata iniziale del dispositivo.
+1. L’app viene installata nella schermata iniziale del dispositivo.
 1. Apri l’app, sfoglia un po’ e osserva che le pagine sono disponibili offline.
 
 ## Opzioni dettagliate {#detailed-options}
@@ -181,12 +181,12 @@ Queste impostazioni rendono alcune parti del sito disponibili offline e localmen
 
 * **Strategia di memorizzazione in cache e frequenza di aggiornamento dei contenuti** - Questa impostazione definisce il modello di memorizzazione in cache per PWA.
    * **Moderatamente** - [Questa impostazione](https://web.dev/stale-while-revalidate/) è il caso della maggior parte dei siti ed è il valore predefinito.
-      * Con questa impostazione, il contenuto visualizzato per la prima volta dall’utente viene caricato dalla cache e mentre l’utente sta utilizzando quel contenuto, il resto del contenuto nella cache verrà riconvalidato.
+      * Con questa impostazione, il contenuto visualizzato per la prima volta dall’utente viene caricato dalla cache e mentre l’utente sta utilizzando quel contenuto, il resto del contenuto nella cache viene riconvalidato.
    * **Frequentemente** - Questo è il caso dei siti che necessitano di aggiornamenti per essere molto veloci come le case d’asta.
       * Con questa impostazione, l’app cercherà prima il contenuto più recente tramite la rete e, se non è disponibile, tornerà alla cache locale.
    * **Raramente** - Questo è il caso dei siti quasi statici, come le pagine di riferimento.
       * Con questa impostazione, l’app cercherà prima il contenuto nella cache e, se non disponibile, tornerà sulla rete per recuperarlo.
-* **Pre-memorizzazione in cache dei file** - Questi file in hosting su AEM verranno salvati nella cache del browser locale quando il service worker si sta installando e prima di essere utilizzato. Ciò garantisce che l’app web sia completamente funzionante quando è offline.
+* **Pre-caching dei file** - Questi file in hosting su AEM vengono salvati nella cache del browser locale quando il service worker si sta installando e prima di essere utilizzato. Ciò garantisce che l’app web sia completamente funzionante quando è offline.
 * **Inclusioni dei percorsi** - Le richieste di rete per i percorsi definiti vengono intercettate e il contenuto nella cache viene restituito in conformità alla configurazione della **Strategia di memorizzazione in cache e frequenza di aggiornamento dei contenuti**.
 * **Esclusioni di cache**: questi file non verranno mai memorizzati nella cache indipendentemente dalle impostazioni in **Pre-memorizzazione in cache dei file** e **Inclusioni dei percorsi**.
 

@@ -2,10 +2,10 @@
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 62%
+source-wordcount: '2153'
+ht-degree: 60%
 
 ---
 
@@ -270,7 +270,7 @@ Esistono diverse modalità di modifica di una pagina che consentono di eseguire 
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - consente di visualizzare lo stato di una pagina in un determinato momento.
 * [Stato Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : consente di ottenere una rapida panoramica dello stato della live copy e dei componenti che non vengono ereditati.
 * [Modalità Sviluppatore](/help/implementing/developing/tools/developer-mode.md)
-* [Anteprima](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): utilizzato per visualizzare l’aspetto che la pagina avrà nell’ambiente di pubblicazione o per spostarsi utilizzando i collegamenti presenti nel contenuto.
+* [Anteprima](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) : utilizzato per visualizzare l’aspetto che la pagina ha nell’ambiente di pubblicazione o per spostarsi utilizzando i collegamenti presenti nel contenuto.
 * [Annota](/help/sites-cloud/authoring/fundamentals/annotations.md): utilizzato per aggiungere o visualizzare annotazioni nella pagina.
 
 Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destra, il cui aspetto dipende dalla modalità attualmente in uso:

@@ -2,10 +2,10 @@
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 74%
+source-wordcount: '2542'
+ht-degree: 69%
 
 ---
 
@@ -133,7 +133,7 @@ Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [con
 
 ### Modelli {#templates}
 
-In AEM, un modello specifica un tipo di pagina specifico. Un modello verrà utilizzato come base per qualsiasi nuova pagina creata.
+In AEM, un modello specifica un tipo di pagina specifico. Un modello viene utilizzato come base per qualsiasi nuova pagina creata.
 
 Il modello definisce la struttura di una pagina, incluse una miniatura e altre proprietà. Ad esempio, puoi avere modelli separati per pagine di prodotti, sitemap e informazioni di contatto. I modelli sono costituiti da [componenti](#components).
 
@@ -220,7 +220,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
 
    >[!NOTE]
    >
-   >Se per la pagina creata hai specificato un nome già esistente nello stesso percorso, viene automaticamente generata una variante del nome aggiungendo un numero. Se, ad esempio, esiste già `beach`, la nuova pagina diventa `beach1`.
+   >Se per la pagina creata hai specificato un nome già esistente nello stesso percorso, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina diventa `beach1`.
 
 1. Torna alla console per visualizzare la nuova pagina:
 
@@ -245,7 +245,7 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 
    Pulsante ![Modifica](/help/sites-cloud/authoring/assets/edit.png)
 
-1. La pagina verrà visualizzata e potrai [modificarla](/help/sites-cloud/authoring/fundamentals/editing-content.md) come necessario.
+1. La pagina viene aperta e puoi [modificare la pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md) secondo necessità.
 
 >[!NOTE]
 >
@@ -280,7 +280,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
 >[!NOTE]
 >
->Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventerà `beach1`.
+>Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventa `beach1`.
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ AEM offre la funzionalità di aggiornare eventuali collegamenti interni che si r
 
    >[!NOTE]
    >
-   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventerà `beach1`.
+   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventa `beach1`.
 
 1. Dalla sezione **Seleziona destinazione** fase della procedura guidata:
 
@@ -332,13 +332,13 @@ AEM offre la funzionalità di aggiornare eventuali collegamenti interni che si r
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, come destinazione viene selezionata la pagina padre della pagina da spostare/rinominare.
+   >Per impostazione predefinita, come destinazione viene selezionata la pagina padre della pagina da spostare o rinominare.
 
    ![Selezionare la destinazione di spostamento della pagina](/help/sites-cloud/authoring/assets/move-page-destination.png)
 
    >[!NOTE]
    >
-   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
+   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventa `winter1`.
 
 1. Se la pagina è collegata o utilizzata in un riferimento, oppure se è stata pubblicata, i dettagli sono elencati in **Regola/Ripubblica** passaggio.
 
@@ -354,11 +354,11 @@ AEM offre la funzionalità di aggiornare eventuali collegamenti interni che si r
 
 >[!NOTE]
 >
->Se la pagina è già stata pubblicata, lo spostamento ne determina automaticamente l’annullamento della pubblicazione. Per impostazione predefinita, la pagina verrà pubblicata nuovamente al termine dello spostamento, ma tale comportamento può essere modificato deselezionando il campo **Ripubblica** nel passaggio **Regola/Ripubblica**.
+>Se la pagina è già stata pubblicata, lo spostamento ne comporta automaticamente l’annullamento della pubblicazione. Per impostazione predefinita, viene ripubblicata al termine dello spostamento, ma questo comportamento può essere modificato deselezionando la casella di controllo **Ripubblica** campo in **Regola/Ripubblica** passaggio.
 
 >[!NOTE]
 >
->Se non è presente alcun riferimento alla pagina, il passaggio **Regola/Ripubblica** non verrà visualizzato.
+>Se non è presente alcun riferimento alla pagina, il **Regola/Ripubblica** passaggio ignorato.
 
 >[!NOTE]
 >
@@ -372,7 +372,7 @@ AEM offre la funzionalità di aggiornare eventuali collegamenti interni che si r
 
 Generalmente, un’azione di spostamento o ridenominazione di una pagina viene eseguita immediatamente. Si tratta quindi di elaborazione sincrona e, finché non viene completata, ulteriori azioni risultano bloccate nell’interfaccia utente.
 
-Tuttavia, se il numero di pagine interessate è superiore a un limite definito, l’elaborazione avviene in modo asincrono. L’utente può quindi continuare a creare contenuti nell’interfaccia utente, senza dover attendere che la pagina sia stata spostata o rinominata.
+Tuttavia, se il numero di pagine interessate è superiore a un limite definito, l’elaborazione avviene in modo asincrono, consentendo all’utente di continuare a creare nell’interfaccia utente senza essere ostacolato dall’azione di spostamento o ridenominazione della pagina.
 
 * Nel momento in cui si seleziona **Sposta** nell’ultimo passaggio precedente, AEM verifica il limite configurato.
 * Se il numero di pagine interessate è inferiore al limite, l’operazione viene eseguita in modalità sincrona.
@@ -404,13 +404,13 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 
    ![Finestra di dialogo Elimina](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **Intendi archiviare le pagine prima di eliminarle?** - Se questa opzione è selezionata, al momento dell’eliminazione verranno create versioni delle pagine selezionate da eliminare.
+   * **Intendi archiviare le pagine prima di eliminarle?** - Se questa opzione è selezionata, al momento dell’eliminazione vengono create versioni delle pagine selezionate da eliminare.
       * [Le versioni possono essere ripristinate in un momento successivo.](/help/sites-cloud/authoring/features/page-versions.md)
       * Le pagine eliminate senza versioni precedenti non possono essere ripristinate.
    * **Annulla** per interrompere l&#39;azione
    * **Elimina** per confermare l’azione:
 
-      * Se la pagina non ha riferimenti, verrà eliminata.
+      * Se la pagina non contiene riferimenti, viene eliminata.
       * Se la pagina include riferimenti, viene visualizzata una finestra con il messaggio **Si fa riferimento a una o più pagine.** È possibile selezionare **Forza eliminazione** o **Annulla**.
 
 >[!NOTE]

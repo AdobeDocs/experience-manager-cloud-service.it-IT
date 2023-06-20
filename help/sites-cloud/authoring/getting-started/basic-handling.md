@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con la navigazione in AEM e il suo utilizzo di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 71%
+source-wordcount: '2986'
+ht-degree: 69%
 
 ---
 
@@ -15,7 +15,7 @@ Questo documento offre una panoramica delle operazioni di base nell’ambiente d
 
 >[!NOTE]
 >
->* Alcune funzionalità non sono disponibili in tutte le console, mentre altre potrebbero essere disponibili in alcune console. Informazioni specifiche sulle singole console e sulle relative funzionalità saranno descritte più dettagliatamente in altre pagine.
+>* Alcune funzionalità non sono disponibili in tutte le console, mentre altre potrebbero essere disponibili in alcune console. Informazioni specifiche sulle singole console e sulle relative funzionalità sono descritte più dettagliatamente in altre pagine.
 >* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 ## Interfaccia touch {#a-touch-enabled-ui}
@@ -110,7 +110,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   ![Pulsante Notifiche](/help/sites-cloud/authoring/assets/notifications.png)
 
-  Questa icona viene contrassegnata con il numero di notifiche incomplete attualmente assegnate.
+  Questa icona è contrassegnata con il numero di notifiche incomplete attualmente assegnate.
 
 * [Proprietà utente](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
@@ -299,13 +299,13 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
 * Per spostarti verso l’alto o il basso nella struttura, tocca o fai clic sul nome della risorsa o sulla freccia a destra del nome della risorsa.
 
-   * Il nome della risorsa e la freccia vengono evidenziati quando tocca o fai clic su di essa.
+   * Il nome della risorsa e la freccia sono evidenziati quando tocca o fai clic su di essa.
    * Gli elementi secondari della risorsa su cui è stato fatto clic o su cui è stato effettuato il tocco vengono visualizzati nella colonna a destra della risorsa.
    * Se tocchi o fai clic su un nome di risorsa senza elementi secondari, i relativi dettagli vengono visualizzati nella colonna finale.
 
 * Tocca o fai clic sulla miniatura per selezionare la risorsa.
 
-   * Quando una risorsa è selezionata, compare un segno di spunta sulla miniatura e il nome della risorsa viene evidenziato.
+   * Se questa opzione è selezionata, sulla miniatura viene visualizzato un segno di spunta e viene evidenziato anche il nome della risorsa.
    * I dettagli della risorsa selezionata sono visualizzati nella colonna finale.
    * La barra degli strumenti delle azioni diventa disponibile.
 

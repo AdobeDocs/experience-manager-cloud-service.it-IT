@@ -2,10 +2,10 @@
 title: Guida rapida all’authoring delle pagine
 description: Guida rapida di alto livello per iniziare a creare i contenuti di una pagina
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 68%
+source-wordcount: '1572'
+ht-degree: 63%
 
 ---
 
@@ -90,11 +90,11 @@ La modalità di selezione di una pagina dipende dalla visualizzazione utilizzata
 
 1. Vista a colonne:
 
-   * Tocca/fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
+   * Tocca o fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
 
 1. Vista a elenco:
 
-   * Tocca/fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
+   * Tocca o fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
 
 1. Vista a schede:
 
@@ -103,7 +103,7 @@ La modalità di selezione di una pagina dipende dalla visualizzazione utilizzata
       * Su un dispositivo mobile: tocca e tieni premuto sulla scheda
       * Su un dispositivo desktop: utilizza l’[azione rapida](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) rappresentata dall’icona di spunta:
 
-   * Sulla scheda compare un segno di spunta per indicare che è stata selezionata la pagina.
+   * Sulla scheda compare un segno di spunta per indicare che la pagina è stata selezionata.
 
    ![Esempio di scheda](/help/sites-cloud/authoring/assets/card.png)
 
@@ -259,7 +259,7 @@ Queste azioni possono essere tutte attivate da:
 
    * [Elimina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
-      * Viene richiesto di confermare l’operazione.
+      * Ti viene chiesto di confermare l’azione.
 
    >[!NOTE]
    >
@@ -319,8 +319,8 @@ Lo stesso meccanismo di base viene utilizzato per il ripristino e/o il confronto
 
    * **Ripristina questa versione**
 
-      * La versione sarà ripristinata.
+      * La versione viene ripristinata.
 
    * **Mostra differenze**
 
-      * La pagina verrà aperta evidenziando le differenze (tra le due versioni).
+      * La pagina viene aperta evidenziando le differenze (tra le due versioni).

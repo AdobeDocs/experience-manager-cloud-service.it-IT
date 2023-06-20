@@ -4,10 +4,10 @@ description: Scopri come recuperare i contenuti JSON dall’ambiente di prova co
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 100%
+source-wordcount: '986'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Infine, la funzione `fetchJsonFromGraphQL()` viene utilizzata per eseguire la ri
 
 ## Recuperare i dati dalla query persistente {#use-persisted-query}
 
-Alla riga 25, viene indicato da quale query GraphQL persistente l’app deve recuperare i dati. Il nome della query persistente è una combinazione del nome dell’endpoint (ad es. `your-project` o `aem-demo-assets`), seguito da una barra e quindi dal nome della query. Se hai seguito esattamente le istruzioni del modulo precedente, la query persistente creata sarà nell’endpoint `your-project`.
+Alla riga 25, viene indicato da quale query GraphQL persistente l’app deve recuperare i dati. Il nome della query persistente è una combinazione del nome dell’endpoint (ad es. `your-project` o `aem-demo-assets`), seguito da una barra e quindi dal nome della query. Se hai seguito esattamente le istruzioni del modulo precedente, la query persistente creata si trova nel `your-project` endpoint.
 
 1. Aggiorna la variabile `persistedQueryName` per utilizzare la query persistente creata nel modulo precedente. Se hai seguito esattamente il suggerimento per la denominazione, dovresti aver creato una query persistente denominata `adventure-list` nell’endpoint `your-project` e impostato la variabile `persistedQueryName` su `your-project/adventure-list`:
 

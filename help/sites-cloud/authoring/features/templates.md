@@ -2,16 +2,16 @@
 title: Creazione di modelli di pagina
 description: Il modello definisce la struttura della pagina risultante e, con l’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '4595'
-ht-degree: 61%
+source-wordcount: '4579'
+ht-degree: 57%
 
 ---
 
 # Creazione di modelli di pagina   {#creating-page-templates}
 
-Durante la creazione di una pagina è necessario selezionare un modello che verrà utilizzato come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, tutto il contenuto iniziale e i componenti che possono essere utilizzati.
+Quando crei una pagina, devi selezionare un modello, che viene utilizzato come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, tutto il contenuto iniziale e i componenti che possono essere utilizzati.
 
 Con l’**Editor modelli**, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori. Può essere coinvolto anche un tipo di “power user”, detto **autore dimodelli**. Gli sviluppatori devono comunque occuparsi di configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che questi elementi di base sono implementati, l’**autore del modello** avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
 
@@ -120,7 +120,7 @@ Quando crei un nuovo modello modificabile:
    * **Nome modello**
    * **Descrizione**
 
-1. Seleziona **Crea**. Viene visualizzata una conferma; seleziona **Apri** per iniziare a modificare il modello o **Fine** per tornare alla console dei modelli.
+1. Seleziona **Crea**. Viene visualizzata una conferma, seleziona **Apri** per iniziare a modificare il modello o **Fine** per tornare alla console dei modelli.
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ Un modello può essere abilitato o disabilitato per renderlo disponibile o non d
 
 >[!CAUTION]
 >
->Una volta abilitato un modello, viene visualizzato un avviso quando un autore inizia ad aggiornare ulteriormente il modello. Questo messaggio informa l’utente che è possibile fare riferimento al modello, pertanto eventuali modifiche potrebbero interessare le pagine che fanno riferimento al modello.
+>Dopo l’abilitazione di un modello, viene visualizzato un avviso quando un autore di modelli inizia ad aggiornare ulteriormente il modello. Questo messaggio informa l’utente che è possibile fare riferimento al modello, pertanto eventuali modifiche potrebbero interessare le pagine che fanno riferimento al modello.
 
 1. Nella **console Modelli**, seleziona il modello.
 1. Seleziona **Abilita** o **Disabilita** nella barra degli strumenti e di nuovo nella finestra di dialogo di conferma.
@@ -206,7 +206,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 
    >[!NOTE]
    >
-   >Se il **Modelli consentiti** L’elenco viene lasciato vuoto, quindi la struttura viene incrementata finché non viene trovato un valore o un elenco.
+   >Se il **Modelli consentiti** L’elenco viene lasciato vuoto, quindi la struttura viene incrementata fino a quando non viene trovato un valore/elenco.
    >
    >
    >Consulta [Disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability): i principi per i modelli consentiti rimangono gli stessi.
@@ -262,7 +262,7 @@ Quando i componenti sono bloccati, è possibile aggiungere contenuti che non pos
 
 #### Contenuto iniziale {#template-initial-content}
 
-Quando un componente è stato sbloccato, è possibile definire il [contenuto iniziale](#editing-a-template-initial-content-author) che verrà copiato nelle pagine risultanti, create dal modello. I componenti sbloccati possono essere modificati nella pagina o nelle pagine risultanti.
+Quando un componente è stato sbloccato, è possibile definire [contenuto iniziale](#editing-a-template-initial-content-author) copiato nelle pagine risultanti, create dal modello. I componenti sbloccati possono essere modificati nella pagina o nelle pagine risultanti.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ Una volta aggiunto, ogni componente viene contrassegnato con:
 >
 >Quando si aggiunge al modello un componente **Titolo** pronto per l’uso, questo conterrà la **struttura** di testo predefinita.
 >
->Se si modifica questa impostazione e si aggiunge un proprio testo, questo testo aggiornato verrà utilizzato quando si crea una pagina dal modello.
+>Se si modifica questa impostazione e si aggiunge testo personalizzato, questo testo aggiornato viene utilizzato quando si crea una pagina dal modello.
 >
 >Se si lascia il testo (struttura) predefinito, il titolo predefinito corrisponde al nome della pagina risultante.
 
@@ -368,7 +368,7 @@ Puoi aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto a
 
 ![Pulsante Aggiungi criterio](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
+Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato ha il titolo **Copia di X**, dove X è il titolo del criterio copiato.
 
 ![Pulsante Copia criterio](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -427,7 +427,7 @@ Le impostazioni dei criteri e delle proprietà di un contenitore di layout sono 
 
 >[!NOTE]
 >
->La configurazione di un criterio è obbligatoria per i componenti contenitore in quanto consente di definire i componenti che saranno disponibili nel contenitore.
+>La configurazione di un criterio è obbligatoria per i componenti contenitore in quanto consente di definire i componenti disponibili nel contenitore.
 
 La finestra di configurazione è divisa in due parti, come nell’utilizzo generale della finestra.
 
@@ -478,14 +478,14 @@ Puoi sbloccare/bloccare i componenti per definire se il contenuto è disponibile
 Quando un componente è stato sbloccato:
 
 * Nel bordo viene visualizzato un indicatore di lucchetto aperto.
-* La barra degli strumenti del componente verrà regolata di conseguenza.
+* La barra degli strumenti del componente viene regolata di conseguenza.
 * Tutti i contenuti già immessi non saranno più visualizzati in **Struttura** modalità.
    * Il contenuto già inserito è considerato contenuto iniziale ed è visibile solo nella modalità **Contenuto iniziale**.
 * L’elemento padre di un componente sbloccato non può essere spostato, tagliato o cancellato.
 
 ![Pulsante Blocca componente](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Ciò include lo sblocco di componenti contenitore in modo che possano essere aggiunti altri componenti, sia in modalità **Contenuto iniziale** che sulle pagine risultanti. Se hai già aggiunto componenti/contenuti al contenitore prima di sbloccarlo, questi non saranno più visualizzati in modalità **Struttura** ma saranno presenti in modalità **Contenuto iniziale**. In **Modalità struttura**, verrà mostrato solo il componente del contenitore stesso con il suo elenco di **Componenti consentiti**.
+Ciò include lo sblocco di componenti contenitore in modo che possano essere aggiunti altri componenti, sia in modalità **Contenuto iniziale** che sulle pagine risultanti. Se hai già aggiunto componenti/contenuti al contenitore prima di sbloccarlo, questi non vengono più visualizzati in **Struttura** ma sono visualizzate in **Contenuto iniziale** modalità. In entrata **Modalità Struttura**, viene visualizzato solo il componente contenitore stesso con il relativo elenco di **Componenti consentiti**.
 
 ![Componenti consentiti](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
@@ -540,7 +540,7 @@ Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **
 
 >[!NOTE]
 >
->Le modifiche al layout verranno applicate in modalità **Contenuto iniziale**, ma non in modalità **Struttura**.
+>Le modifiche al layout si riflettono in **Contenuto iniziale** ma non viene visualizzata alcuna modifica in **Struttura** modalità.
 
 ![Modifica il layout del modello](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
@@ -572,7 +572,7 @@ Per accedere alla finestra di dialogo **Criterio pagina**:
 
   ![Pulsante Aggiungi criterio](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
+  Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato ha il titolo **Copia di X**, dove X è il titolo del criterio copiato.
 
   ![Pulsante Copia criterio](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -653,7 +653,7 @@ Quando crei dei modelli, prendi in considerazione quanto segue:
    * Blocco o sblocco di componenti su modelli abilitati.
    * Questo può avere effetti collaterali, in quanto le pagine esistenti possono già utilizzarlo. In genere:
 
-      * Lo sblocco dei componenti (che erano bloccati) risulterà mancante nelle pagine esistenti.
+      * I componenti sbloccati risultano mancanti nelle pagine esistenti.
       * Il blocco dei componenti (che potevano essere modificati) nasconde la visualizzazione del contenuto sulle pagine.
 
    >[!NOTE]

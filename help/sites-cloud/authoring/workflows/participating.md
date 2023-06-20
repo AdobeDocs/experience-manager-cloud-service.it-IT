@@ -2,9 +2,9 @@
 title: Partecipazione ai flussi di lavoro
 description: I flussi di lavoro in genere includono passaggi che richiedono a una persona di eseguire un’attività su una pagina o una risorsa.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1542'
 ht-degree: 40%
 
 ---
@@ -24,13 +24,13 @@ I flussi di lavoro in genere includono passaggi che richiedono a una persona di 
 
 Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto**) vengono visualizzati diversi avvisi e/o notifiche:
 
-* Il tuo [notifica](/help/sites-cloud/authoring/getting-started/inbox.md) (barra degli strumenti) verrà incrementato:
+* Il tuo [notifica](/help/sites-cloud/authoring/getting-started/inbox.md) indicatore (barra degli strumenti) incrementato:
 
-   ![Barra degli strumenti delle notifiche](/help/sites-cloud/authoring/assets/workflows-notifications.png)
+  ![Barra degli strumenti delle notifiche](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* L&#39;oggetto viene inserito nelle notifiche della [Casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md):
+* L&#39;oggetto è elencato nella notifica [Casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md):
 
-   ![Notifiche nella casella in entrata](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+  ![Notifiche nella casella in entrata](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Quando utilizzi l’editor pagina, la barra di stato mostra quanto segue:
    * Il nome dei flussi di lavoro applicati alla pagina, ad esempio Richiesta di attivazione.
@@ -39,18 +39,18 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
       * utilizza le frecce sinistra/destra per spostarti tra le informazioni sullo stato dei vari flussi di lavoro.
       * tocca o fai clic sul numero effettivo per aprire un elenco a discesa di tutti i flussi di lavoro applicabili, quindi seleziona il flusso di lavoro da visualizzare nella barra di stato.
 
-   ![Pagina con più flussi di lavoro](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![Pagina con più flussi di lavoro](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
-   >[!NOTE]
-   >
-   >La barra di stato è visibile solo agli utenti con i privilegi del flusso di lavoro, per esempio, i membri del gruppo `workflow-users`.
-   >
-   >
-   >Le azioni vengono visualizzate quando l’utente corrente è direttamente coinvolto nel passaggio corrente del flusso di lavoro.
+  >[!NOTE]
+  >
+  >La barra di stato è visibile solo agli utenti con i privilegi del flusso di lavoro, per esempio, i membri del gruppo `workflow-users`.
+  >
+  >
+  >Le azioni vengono visualizzate quando l’utente corrente è direttamente coinvolto nel passaggio corrente del flusso di lavoro.
 
-* Quando **Timeline** è aperto per la risorsa, verrà visualizzato il passaggio del flusso di lavoro. Quando tocchi o fai clic sul banner dell’avviso, vengono visualizzate anche le azioni disponibili:
+* Quando **Timeline** è aperto per la risorsa, viene visualizzato il passaggio del flusso di lavoro. Quando tocchi o fai clic sul banner dell’avviso, vengono visualizzate anche le azioni disponibili:
 
-   ![Flusso di lavoro nella timeline](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+  ![Flusso di lavoro nella timeline](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### Completamento di un passaggio partecipante {#completing-a-participant-step}
 
@@ -219,19 +219,19 @@ I dettagli del flusso di lavoro sono visualizzati in schede e le azioni appropri
 
 * Scheda **ELEMENTO DI LAVORO:**
 
-   Scheda ![ELEMENTO DI LAVORO](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+  Scheda ![ELEMENTO DI LAVORO](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
 * Scheda **INFORMAZIONI SUL FLUSSO DI LAVORO**:
 
-   ![Scheda FLUSSO DI LAVORO](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+  ![Scheda FLUSSO DI LAVORO](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   Se per il modello sono stati configurati gli Stadi del Flusso di lavoro, è possibile visualizzare lo stato di avanzamento in base a questi: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+  Se per il modello sono stati configurati gli Stadi del Flusso di lavoro, è possibile visualizzare lo stato di avanzamento in base a questi: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-   ![Fasi del flusso di lavoro](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+  ![Fasi del flusso di lavoro](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
 * Scheda **COMMENTI**:
 
-   ![Scheda COMMENTI](/help/sites-cloud/authoring/assets/workflows-comments.png)
+  ![Scheda COMMENTI](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 È possibile aprire i dettagli dell&#39;elemento di lavoro in uno a partire da:
 

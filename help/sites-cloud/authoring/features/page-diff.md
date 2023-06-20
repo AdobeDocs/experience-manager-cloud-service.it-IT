@@ -2,10 +2,10 @@
 title: Differenze tra pagine
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 45%
+source-wordcount: '616'
+ht-degree: 40%
 
 ---
 
@@ -75,7 +75,7 @@ Il lato selezionato occupa l’intera finestra, ma nella parte superiore rimane 
 
 >[!NOTE]
 >
->Se la finestra del browser è sufficientemente ampia da contenere entrambi i nomi di pagina nella visualizzazione a schermo intero, verrà visualizzato solo il nome della pagina visualizzata. Per visualizzare il nome dell’altra pagina, basta fare clic sui puntini di sospensione.
+>Se la larghezza del browser non può contenere entrambi i nomi di pagina nella visualizzazione a schermo intero, viene visualizzato solo il nome della pagina visualizzata e l’altro è disponibile dietro i puntini di sospensione.
 
 Per chiudere la visualizzazione a schermo intero, fai clic sull’icona per uscire dalla modalità a tutto schermo.
 

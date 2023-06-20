@@ -2,10 +2,10 @@
 title: Casella in entrata
 description: Gestione delle attività con la casella in entrata
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 77%
+source-wordcount: '905'
+ht-degree: 74%
 
 ---
 
@@ -112,7 +112,7 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 >
 >Sebbene sia possibile selezionare più elementi, le azioni possono essere eseguite solo su un elemento alla volta.
 
-1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Nella barra degli strumenti verranno visualizzate le icone per le azioni applicabili a tale elemento:
+1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili a tale elemento sono visualizzate nella barra degli strumenti:
 
    ![Selezione dell’elemento della casella in entrata](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -136,11 +136,11 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
    >
    >* Elementi del flusso di lavoro - [Partecipazione ai flussi di lavoro](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. A seconda dell’elemento selezionato, verrà avviata un’azione, ad esempio:
+2. A seconda dell’elemento selezionato, viene avviata un’azione, ad esempio:
 
-   * Verrà aperta la finestra di dialogo relativa all’azione
-   * Verrà avviata una Action Wizard
-   * Verrà aperta una pagina della documentazione
+   * Viene aperta una finestra di dialogo appropriata per l&#39;azione
+   * Viene avviata una Action Wizard
+   * Viene aperta una pagina della documentazione
 
    Ad esempio, selezionando **Delega** viene aperta una finestra di dialogo:
 

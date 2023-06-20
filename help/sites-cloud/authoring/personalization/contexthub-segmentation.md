@@ -2,10 +2,10 @@
 title: Configurazione della segmentazione con ContextHub
 description: Scopri come configurare la segmentazione utilizzando ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 100%
+source-wordcount: '1694'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ Per valutare le proprietà dei segmenti sono disponibili i seguenti confronti di
 >
 >Pertanto quando procedi alla [creazione di un segmento](#creating-a-new-segment) devi selezionare un **tipo di dati** ogni volta che sono noti i tipi di valori confrontati. Esempio:
 >
->Quando confronti la proprietà `profile/age`, sai già che il tipo confrontato sarà un **numero**, perciò anche se `profile/age` non è impostato, un confronto `profile/age` minore di 30 restituirà **False (Falso)**, come è logico.
+>Quando si confronta la proprietà `profile/age`, sai già che il tipo confrontato è un **numero**, quindi anche se `profile/age` non è impostato, un confronto `profile/age` viene restituito less-than 30 **false**, come ti aspetteresti.
 
 ### Riferimenti {#references}
 
@@ -96,7 +96,7 @@ Per definire il nuovo segmento:
 
    ![Nuovo segmento](../assets/contexthub-new-segment.png)
 
-   Ogni segmento ha un parametro di incremento utilizzato come fattore di ponderazione. Un valore più elevato determina la selezione del segmento, preferendolo a un segmento con un valore inferiore nelle istanze in cui sono validi più segmenti.
+   Ogni segmento ha un parametro di incremento utilizzato come fattore di ponderazione. Un numero più alto indica che il segmento è selezionato al posto di un segmento con un numero più basso nelle istanze in cui sono validi più segmenti.
 
    * Valore minimo: `0`
    * Valore massimo: `1000000`
@@ -199,8 +199,8 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.
-   * Il **nome** diventerà il nome del nodo nell’archivio.
-      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   * Il **Nome** diventa il nome del nodo nell’archivio.
+      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM.](/help/implementing/developing/introduction/naming-conventions.md)
       * Se necessario è possibile modificarlo.
 
    ![Crea cartella](../assets/contexthub-create-folder.png)
@@ -212,7 +212,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 1. La cartella verrà visualizzata nell’elenco dei segmenti.
    * L’ordinamento delle colonne incide sulla posizione di visualizzazione della nuova cartella nell’elenco.
    * Per regolare l’ordinamento, tocca o fai clic sulle intestazioni di colonna.
-      ![La nuova cartella](../assets/contexthub-folder.png)
+     ![La nuova cartella](../assets/contexthub-folder.png)
 
 ### Modificare le cartelle esistenti {#modify-folders}
 

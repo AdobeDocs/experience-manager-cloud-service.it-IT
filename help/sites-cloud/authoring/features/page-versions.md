@@ -2,10 +2,10 @@
 title: Utilizzo delle versioni di una pagina
 description: Creare, confrontare e ripristinare le versioni di una pagina
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 68%
+source-wordcount: '1502'
+ht-degree: 62%
 
 ---
 
@@ -56,7 +56,7 @@ Puoi creare una versione della risorsa da:
 1. Viene aperta la stessa finestra di dialogo. Puoi immettere un’**etichetta** e un **commento**, se necessario.
 1. Conferma la nuova versione selezionando **Crea**.
 
-Viene aperta la timeline con le informazioni aggiornate per indicare che si tratta di una nuova versione.
+La timeline viene aperta con le informazioni aggiornate per indicare che si tratta di una nuova versione.
 
 ## Ripristino delle versioni {#reinstating-versions}
 
@@ -78,7 +78,7 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 
 >[!NOTE]
 >
->Durante il ripristino di una pagina, la versione creata sarà parte di un nuovo ramo.
+>Quando si ripristina una pagina, la versione creata fa parte di un nuovo ramo.
 >
 >Per maggiore chiarezza:
 >
@@ -99,7 +99,7 @@ Per **ripristinare** la pagina selezionata in una versione precedente:
 
    ![Ripristina questa versione](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Seleziona **Ripristina questa versione**. La versione selezionata verrà ripristinata e le informazioni nella timeline verranno aggiornate.
+1. Seleziona **Ripristina questa versione**. La versione selezionata viene ripristinata e le informazioni nella timeline vengono aggiornate.
 
 ### Ripristina versione {#restore-version}
 
@@ -112,10 +112,11 @@ Questo metodo può essere utilizzato per ripristinare versioni di pagine specifi
    >[!NOTE]
    >
    >Se:
+   >
    >* hai selezionato una singola pagina che non ha mai avuto pagine figlie,
    >* o nessuna delle pagine della cartella dispone di versioni,
    >
-   >Il display sarà quindi vuoto in quanto non sono disponibili versioni applicabili.
+   >La visualizzazione diventa vuota perché non sono presenti versioni applicabili.
 
 1. Sono elencate le versioni disponibili:
 
@@ -166,7 +167,7 @@ Puoi visualizzare in anteprima una versione specifica:
 
    ![Anteprima versione](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Seleziona **Anteprima**. La pagina verrà visualizzata in una nuova scheda.
+1. Seleziona **Anteprima**. La pagina viene visualizzata in una nuova scheda.
 
    >[!CAUTION]
    >
@@ -225,7 +226,7 @@ Timewarp è un [modalità](/help/sites-cloud/authoring/fundamentals/environment-
 Timewarp semplifica al massimo la riproduzione di una pagina in un determinato momento. Tuttavia, a causa delle complessità dell’authoring continuo di contenuti in AEM, questo non è sempre possibile. Tieni presenti queste limitazioni quando utilizzi Timewarp.
 
 * **Timewarp funziona in base alle pagine pubblicate**: Timewarp funziona correttamente solo se la pagina è stata già pubblicata. In caso contrario viene mostrata la pagina corrente nell’ambiente di authoring.
-* **Timewarp utilizza le versioni di pagina**: se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa verrà riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
+* **Timewarp utilizza le versioni di pagina** - Se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa viene riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
 * **Le versioni rimosse influiscono su Timewarp**: se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta.
 * **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](#revert-to-a-version).
 * **Timewarp si basa solo sul contenuto della pagina**: se sono stati modificati alcuni elementi (come codice, css, risorse/immagini ecc.) per il rendering del sito web, la visualizzazione sarà diversa da come era all’origine, poiché per tali elementi non vengono conservate precedenti versioni nell’archivio.

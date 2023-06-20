@@ -2,10 +2,10 @@
 title: Creazione dei lanci
 description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione delle pagine web esistenti per l’attivazione futura.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 60%
+source-wordcount: '1042'
+ht-degree: 59%
 
 ---
 
@@ -28,7 +28,6 @@ Facoltativamente, puoi specificare la **Data lancio** (e l’ora) per definire q
 >Non è possibile modificare queste pagine. Viene visualizzato il messaggio:
 >
 >* **Questa pagina non fa parte del lancio. Passa alla pagina di produzione**
-
 
 ## Creazione di un lancio {#creating-a-launch}
 
@@ -80,7 +79,7 @@ Puoi creare un lancio dalla console Sites o Launches:
 1. Nel passaggio **Proprietà** della procedura guidata puoi specificare:
 
    * **Titolo lancio**: nome del lancio. Il nome deve essere significativo per gli autori.
-   * **con contenuto esistente**: il contenuto originale verrà utilizzato per creare il lancio.
+   * **con contenuto esistente**: il contenuto originale viene utilizzato per creare il lancio.
    * **con un nuovo modello per sostituire la pagina**: per ulteriori dettagli, vedi [Creare un lancio con un nuovo modello](#create-launch-with-new-template).
    * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Con questa opzione il lancio diventa una [Live Copy](/help/sites-cloud/administering/msm/overview.md). Per impostazione predefinita, questa opzione è selezionata.-->
    * **Data lancio**: la data e l&#39;ora in cui la copia del lancio deve essere attivata (in base alla segnalazione **Produzione pronta**; consulta [Lanci: l&#39;ordine degli eventi](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
@@ -113,7 +112,7 @@ Quando selezioni questa opzione:
 
 >[!CAUTION]
 >
->Quando si utilizza un modello diverso, la nuova pagina sarà vuota. A causa della diversa struttura della pagina, nessun contenuto verrà copiato.
+>Quando si utilizza un modello diverso, la nuova pagina è vuota. A causa della diversa struttura della pagina, non viene copiato alcun contenuto.
 >
 >Questo meccanismo può essere utilizzato per modificare il modello di un’ [pagina esistente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) - anche se la perdita di contenuto deve essere considerata.
 

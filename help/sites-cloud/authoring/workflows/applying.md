@@ -2,10 +2,10 @@
 title: Applicazione dei flussi di lavoro alle pagine
 description: Durante l’authoring, è possibile ricorrere ai flussi di lavoro per intraprendere azioni sulle pagine; è inoltre possibile applicare più di un flusso di lavoro..
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 57%
+source-wordcount: '661'
+ht-degree: 55%
 
 ---
 
@@ -31,7 +31,6 @@ I flussi di lavoro possono essere avviati da:
 >
 >* Come applicare i flussi di lavoro alle risorse DAM.
 >* [Utilizzo dei flussi di lavoro per i progetti](/help/sites-cloud/authoring/projects/workflows.md).
-
 
 <!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
@@ -104,6 +103,7 @@ Puoi specificare i dettagli:
    * **Titolo pacchetto**
 
       * Puoi specificare un titolo per il pacchetto, per facilitare l’identificazione.
+
    >[!NOTE]
    >
    >L’opzione **Mantieni pacchetto flusso di lavoro** è disponibile quando il flusso di lavoro è stato configurato per Supporto risorse multiple e sono state selezionate più risorse.
@@ -122,14 +122,14 @@ Puoi specificare i dettagli:
 
    * Una risorsa esistente per visualizzare le seguenti azioni:
 
-      * **Includi elementi figlio** per specificare gli elementi secondari di tale risorsa che verranno inclusi nel flusso di lavoro.
+      * **Includi elementi figlio** per specificare che gli elementi secondari di tale risorsa sono inclusi nel flusso di lavoro.
 Una finestra di dialogo si apre per permettere di perfezionare la selezione includendo:
 
          * Solo gli elementi figli di primo livello.
          * Solo pagine modificate.
          * Solo pagine già pubblicate.
 
-         Eventuali elementi figlio specificati vengono aggiunti all’elenco delle risorse a cui verrà applicato il flusso di lavoro.
+        Eventuali elementi figlio specificati vengono aggiunti all’elenco delle risorse a cui verrà applicato il flusso di lavoro.
 
       * **Rimuovi selezione** per rimuovere tale risorsa dal flusso di lavoro.
 

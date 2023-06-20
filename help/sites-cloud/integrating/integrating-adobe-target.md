@@ -4,10 +4,10 @@ description: Integrazione con Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 98%
+source-wordcount: '1042'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ In entrambi i casi, tieni presente che:
 
 * Per impostazione predefinita, anche il codice client (se aggiunto per primo) viene copiato automaticamente nel campo ID tenant.
 * Hai la possibilità di modificare il set di ID tenant predefinito.
-* Di conseguenza, le chiamate di backend a Target saranno basate sull’ID tenant e le chiamate lato client a Target saranno basate sul codice client.
+* Di conseguenza, le chiamate di backend a Target sono basate sull’ID tenant e le chiamate lato client a Target sono basate sul codice client.
 
 Come indicato in precedenza, il primo caso è il più comune per AEM as a Cloud Service. In entrambi i casi, assicurati che **entrambi** i campi contengano le informazioni corrette a seconda dei requisiti.
 
@@ -112,7 +112,7 @@ Una proprietà è un contenitore con estensioni, regole ed elementi dati.
 3. Seleziona il pulsante **Configura**. Osserva la finestra di configurazione con le credenziali dell’account Target importate e la versione at.js per questa estensione.
 4. Seleziona **Salva** per aggiungere l’estensione Target alla proprietà Launch. Dovresti essere in grado di visualizzare l’estensione Target elencata nell’elenco **Estensioni installate**.
    ![Salva estensione](assets/configure_extension1.png "Salva estensione")
-5. Ripeti i passaggi precedenti per cercare l’estensione **Adobe ContextHub** e installarla (è necessaria per l’integrazione con i parametri contexthub, in base al target da eseguire).
+5. Ripeti i passaggi precedenti per cercare **ContextHub Adobe** estenderlo e installarlo (è necessario per l’integrazione con i parametri contexthub, in base al target da eseguire).
 
 ### Creare un elemento dati {#data-element}
 
@@ -130,7 +130,7 @@ In **Regola** viene definita e ordinata una sequenza di azioni, che vengono eseg
 
 1. Aggiungi una serie di azioni come esemplificato nella schermata acquisita.
    ![Azioni](assets/rules1.png "Azioni")
-2. In Aggiungi parametri a tutte le Mbox aggiungi l’elemento dati configurato in precedenza (vedi l’elemento dati sopra) al parametro che verrà inviato nella chiamata mbox.
+2. In Aggiungi parametri a tutte le mbox, aggiungi l’elemento dati configurato in precedenza (vedi l’elemento dati sopra) al parametro inviato nella chiamata mbox.
    ![Azioni](assets/map_data1.png "Mbox")
 
 ### Costruire e pubblicare {#build-publish}

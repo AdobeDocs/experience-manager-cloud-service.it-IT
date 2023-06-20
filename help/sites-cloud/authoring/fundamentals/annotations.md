@@ -2,10 +2,10 @@
 title: Aggiunta di annotazioni di pagina
 description: La modalità di annotazione consente di lasciare annotazioni e schizzi sulle pagine, in modo da facilitare il processo di revisione dei contenuti
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 64d801b108229866394e993811a67f983be5df6c
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 100%
+source-wordcount: '698'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 1. Tocca o fai clic sull’icona Aggiungi annotazione (simbolo + a sinistra della barra degli strumenti) per iniziare ad aggiungere annotazioni.
 
-1. Tocca o fai clic sul componente richiesto (i componenti ai quali è possibile aggiungere annotazioni saranno evidenziati da un bordo blu) per aggiungere l’annotazione e aprire la relativa finestra di dialogo:
+1. Tocca o fai clic sul componente richiesto (i componenti ai quali è possibile aggiungere annotazioni sono evidenziati da un bordo blu) per aggiungere l’annotazione e aprire la relativa finestra di dialogo:
 
    ![Aggiunta di un’annotazione](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -66,13 +66,13 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
    * Inserisci il testo dell’annotazione.
    * Crea uno schizzo (linee e forme) per evidenziare un’area del componente.
 
-      ![Pulsante Schizzo per l’annotazione](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![Pulsante Schizzo per l’annotazione](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      Quando crei uno schizzo, il cursore si trasforma in un puntatore a croce. Puoi disegnare più linee distinte. La linea dello schizzo ha lo stesso colore dell’annotazione e può essere una freccia, un cerchio o un ovale.
+     Quando crei uno schizzo, il cursore si trasforma in un puntatore a croce. Puoi disegnare più linee distinte. La linea dello schizzo ha lo stesso colore dell’annotazione e può essere una freccia, un cerchio o un ovale.
 
    * Scegli o modifica il colore:
 
-      ![Pulsante Campione colore per l’annotazione](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+     ![Pulsante Campione colore per l’annotazione](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
 1. Per chiudere la finestra di dialogo dell’annotazione, tocca o fai clic all’esterno della finestra di dialogo. Di seguito viene illustrata un’annotazione troncata con relativi schizzi:
 

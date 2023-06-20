@@ -2,10 +2,10 @@
 title: Layout reattivo
 description: AEM consente di realizzare un layout dinamico per le pagine
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 66%
+source-wordcount: '1745'
+ht-degree: 59%
 
 ---
 
@@ -22,7 +22,7 @@ Il contenitore layout:
    * Ad esempio, puoi personalizzare la dimensione del componente o specificare se può essere visualizzato su dispositivi specifici.
 * Può essere nidificato per consentire il controllo delle colonne.
 
-L’utente può quindi vedere come verrà eseguito il rendering del contenuto per dispositivi specifici utilizzando l’emulatore.
+L’utente può quindi vedere come viene eseguito il rendering del contenuto per dispositivi specifici utilizzando l’emulatore.
 
 AEM consente di realizzare il layout dinamico per le pagine utilizzando una combinazione di meccanismi:
 
@@ -35,7 +35,7 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
   Una volta che il Contenitore di layout è collocato nella pagina, è possibile utilizzare la modalità di **Layout** per posizionare i contenuti all’interno della griglia dinamica.
 
 * [**Emulatore**](#selecting-a-device-to-emulate)
-Consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
+Questo consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare come viene eseguito il rendering del contenuto utilizzando l’emulatore.
 
 Con questi meccanismi di griglia reattiva è possibile:
 
@@ -74,9 +74,9 @@ Il dispositivo **Desktop** è privo di una larghezza specifica e fa riferimento 
 >
 >È teoricamente possibile definire punti di interruzione per ogni singolo dispositivo, ma questo rende decisamente più macchinose la definizione e la manutenzione dei layout.
 
-Quando utilizzi l’emulatore, selezioni un dispositivo specifico per l’emulazione e la definizione del layout; verrà evidenziato anche il relativo punto di interruzione. Qualsiasi modifica apportata al layout sarà applicabile ad altri dispositivi a cui si applica il punto di interruzione, ovvero qualsiasi dispositivo posizionato a sinistra del marcatore del punto di interruzione attivo, ma prima del marcatore del punto di interruzione successivo.
+Quando utilizzi l’emulatore, selezioni un dispositivo specifico per l’emulazione e la definizione del layout e viene evidenziato anche il relativo punto di interruzione. Tutte le modifiche apportate al layout sono applicabili ad altri dispositivi a cui si applica il punto di interruzione. Ovvero, qualsiasi dispositivo posizionato a sinistra del marcatore del punto di interruzione attivo, ma prima del marcatore del punto di interruzione successivo.
 
-Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con una larghezza di 540 pixel) per l’emulazione e il layout, il punto di interruzione **Telefono** (definiti come 768 pixel). Qualsiasi modifica apportata al layout per **IPHONE 6** sarà applicabile ad altri dispositivi nell&#39;ambito del **Telefoni** punto di interruzione, ad esempio **IPHONE 5** (definiti come 320 pixel).
+Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con una larghezza di 540 pixel) per l’emulazione e il layout, il punto di interruzione **Telefono** (768 pixel). Qualsiasi modifica apportata al layout per **IPHONE 6** sono applicabili ad altri dispositivi nell&#39;ambito del **Telefoni** punto di interruzione, ad esempio **IPHONE 5** (definiti come 320 pixel).
 
 ![Emulatori](/help/sites-cloud/authoring/assets/responsive-layout-emulators.png)
 
@@ -157,16 +157,16 @@ Come con altri componenti, puoi selezionare e quindi intervenire (opzioni Copia,
 
    ![Pulsante Elemento padre](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-1. Se il componente layout è nidificato, seleziona la **Elemento padre** Questa opzione presenta una selezione a discesa che consente di selezionare il contenitore di layout nidificato o i relativi elementi principali.
+1. Se il componente layout è nidificato, seleziona la **Elemento padre** questa opzione presenta una selezione a discesa che consente di selezionare il contenitore di layout nidificato o i relativi elementi padre.
 
    Quando passi il cursore del mouse sui nomi dei contenitori nel menu a discesa, i relativi profili vengono visualizzati nella pagina.
 
-   * Il contenitore di layout nidificato inferiore presenta un contorno blu.
-   * Ogni contenitore successivo viene visualizzato in una tonalità di blu più chiara.
+   * Il contenitore di layout nidificato più basso è evidenziato in blu.
+   * Ogni contenitore successivo è caratterizzato da una tonalità di blu più chiara.
 
    ![Contenitori nidificati](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-1. In questo modo viene messa evidenziata l’intera griglia con il relativo contenuto. Viene visualizzata la barra degli strumenti delle azioni, da cui è possibile selezionare un’azione, ad esempio **Elimina**.
+1. L&#39;intera griglia viene evidenziata con il relativo contenuto. Viene visualizzata la barra degli strumenti delle azioni, da cui è possibile selezionare un’azione, ad esempio **Elimina.**
 
 ## Definire un layout (modalità Layout) {#defining-layouts-layout-mode}
 
@@ -187,7 +187,7 @@ La modalità **Layout** può essere avviata in due modi.
 
 In modalità layout è possibile eseguire varie azioni su una griglia:
 
-* Ridimensiona i componenti di contenuto utilizzando i punti blu. Il ridimensionamento viene sempre eseguito con snap-to-grid. Quando si ridimensiona la griglia di sfondo, viene mostrato come facilitare l’allineamento:
+* Ridimensiona i componenti di contenuto utilizzando i punti blu. Il ridimensionamento viene sempre eseguito con snap-to-grid. Durante il ridimensionamento, viene visualizzata la griglia di sfondo per facilitare l’allineamento:
 
   ![Ridimensiona i componenti](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
@@ -197,14 +197,14 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
 
 * Facendo clic/toccando un componente di contenuti la barra degli strumenti consente di:
    * **Elemento padre:** consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
-   * **Mobile in nuova riga:** il componente viene spostato su una nuova riga, in base allo spazio disponibile all’interno della griglia.
-   * **Nascondi componente:** il componente viene reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
+   * **Mobile in nuova riga** : il componente viene spostato su una nuova riga, a seconda dello spazio disponibile all’interno della griglia.
+   * **Nascondi componente** : il componente viene reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
 
   ![Nascondi componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Verrà visualizzata la barra degli strumenti per questa modalità.
+* In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Per questa modalità viene visualizzata la barra degli strumenti.
 
-  La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente layout e dei componenti ad esso appartenenti. Esempio:
+  La barra degli strumenti dispone di opzioni diverse a seconda dello stato del componente layout e dei componenti ad esso appartenenti. Esempio:
 
    * **Elemento padre:** consente di selezionare il componente principale.
 
@@ -214,7 +214,7 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
 
      ![Pulsante Mostra componenti nascosti](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
-   * **Ripristina layout punto di interruzione**: consente di tornare al layout predefinito e non verrà quindi applicato alcun layout personalizzato.
+   * **Ripristina layout punto di interruzione** - Ripristina il layout predefinito. Nessun layout personalizzato imposto.
 
      ![Pulsante Ripristina layout punto di interruzione](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 

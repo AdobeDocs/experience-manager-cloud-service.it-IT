@@ -2,10 +2,10 @@
 title: Lanci
 description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di apportare modifiche pronte per la pubblicazione futura, mantenendo le pagine correnti
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 50%
+source-wordcount: '903'
+ht-degree: 49%
 
 ---
 
@@ -64,7 +64,7 @@ I lanci consentono di:
    * Automaticamente - questo implica le seguenti attività:
       * Il campo **Data** **lancio**(**Live**): può essere impostato durante la creazione o la modifica di un lancio.
       * Il **Produzione pronta** flag: può essere impostato solo durante la modifica di un lancio.
-      * Se il **Produzione pronta** è impostato, il lancio verrà promosso automaticamente alle pagine di produzione nella **Launch**(**Live**) **data**. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
+      * Se il **Produzione pronta** viene impostato, il lancio viene promosso automaticamente alle pagine di produzione nella **Launch**(**Live**) **data**. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
         Se la data non è stata impostata, il flag non ha alcun effetto.
 * Aggiorna parallelamente la pagina sorgente e la pagina di lancio:
    * Le modifiche apportate alle pagine sorgenti vengono automaticamente implementate nella copia lancio (se impostate con ereditarietà; ovvero come Live Copy).
@@ -92,7 +92,7 @@ I lanci consentono di:
 
 1. In **Sites** , passa all&#39;origine dei lanci.
 1. Apri **Riferimenti** e seleziona la pagina sorgente.
-1. Seleziona **Launches**, verranno elencati i lanci esistenti e l&#39;accesso alla **Console Launches**:
+1. Seleziona **Lanci**, vengono elencati i lanci esistenti e l&#39;accesso al **Console Launches**:
 
    ![Riferimenti di Launches nella console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
