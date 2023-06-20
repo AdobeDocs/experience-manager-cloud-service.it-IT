@@ -2,10 +2,10 @@
 title: Architettura dell’editor universale
 description: Scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -15,7 +15,7 @@ Scopri l’architettura dell’editor universale e il flusso di dati tra i suoi 
 
 ## Blocchi predefiniti di architettura {#building-blocks}
 
-L’editor universale è costituito da quattro blocchi predefiniti essenziali che interagiscono tra loro e consentono agli autori di contenuti di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione, per offrire esperienze eccezionali, velocizzare i contenuti e fornire un’esperienza di sviluppo all’avanguardia. 
+L’Editor universale è costituito da quattro elementi di base essenziali che interagiscono tra loro consentendo agli autori di contenuti di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione, per offrire esperienze eccezionali, velocizzare la realizzazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 
 1. [Editor](#editors)
 1. [App remota](#remote-app)
@@ -77,7 +77,7 @@ L’editor universale invia tutte le modifiche al contenuto in un servizio centr
 
 Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
-* [Introduzione all’editor universale](introduction.md): scopri come l’editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire un’esperienza di sviluppo all’avanguardia.
+* [Introduzione all’editor universale](introduction.md) - Scopri come Universal Editor consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione, per offrire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 * [Authoring dei contenuti con l’editor universale](authoring.md): scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’editor universale.
 * [Pubblicazione di contenuto con l’editor universale](publishing.md): scopri in che modo l’editor visivo universale pubblica il contenuto e come le app possono gestire il contenuto pubblicato.
 * [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la tua prima app AEM da utilizzare.

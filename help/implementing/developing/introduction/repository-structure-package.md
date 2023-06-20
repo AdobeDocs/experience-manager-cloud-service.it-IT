@@ -2,9 +2,9 @@
 title: Pacchetto per la struttura dell’archivio dei progetti AEM
 description: I progetti Maven di Adobe Experience Manager as a Cloud Service richiedono una definizione di pacchetto secondario della struttura dell’archivio il cui unico scopo è quello di definire le directory principali dell’archivio JCR in cui vengono distribuiti i pacchetti secondari del codice del progetto.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 9%
 
 ---
@@ -69,12 +69,12 @@ Assicurati di aggiungere questo nuovo sottoprogetto Maven ai progetti principali
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                     <cloudManagerTarget>none</cloudManagerTarget>
                 </properties>
                 <configuration>
                     <properties>
-                        <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                        <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
                     <filters>

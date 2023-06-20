@@ -2,9 +2,9 @@
 title: Strumenti AEM Developer per Eclipse
 description: Strumenti AEM Developer per Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1184'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Prima di utilizzare gli strumenti per sviluppatori di AEM, è necessario:
 
 >[!NOTE]
 >
->In macOS, è necessario fare clic con il pulsante destro del mouse su **Eclipse.app** e quindi seleziona **Mostra contenuto pacchetto** per trovare il tuo `eclipse.ini`**.**
+>In macOS, è necessario fare clic con il pulsante destro del mouse su **Eclipse.app**, quindi selezionare **Mostra contenuto pacchetto** per trovare `eclipse.ini`**.**
 
 ## Come installare gli strumenti per sviluppatori AEM per Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -89,7 +89,7 @@ Per creare il progetto di esempio, segui la procedura riportata di seguito.
 
    ![Seleziona la versione dell’archetipo](assets/select-archetype.png)
 
-1. Fornisci i campi seguenti per il progetto di esempio:
+1. Fornisci i seguenti campi per il progetto di esempio:
 
    * **Nome**
    * **ID gruppo**
@@ -165,27 +165,27 @@ Per creare il progetto di esempio, segui la procedura riportata di seguito.
    1. Sostituisci il contenuto della `<workspaceFilter>` con le regole del pacchetto che iniziano con `/apps` e `/etc`
       * Ad esempio:
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/apps/foo"/>
-            <filter root="/apps/foundation/components/bar"/>
-            <filter root="/etc/designs/foo"/>
-         </workspaceFilter>
-         ```
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/apps/foo"/>
+           <filter root="/apps/foundation/components/bar"/>
+           <filter root="/etc/designs/foo"/>
+        </workspaceFilter>
+        ```
+
    1. Quindi apri `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
    1. Sostituisci le regole con quelle del pacchetto che iniziano con `/content`.
       * Ad esempio:
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/content/foo"/>
-            <filter root="/content/dam/foo"/>
-            <filter root="/content/usergenerated/content/foo"/>
-         </workspaceFilter>
-         ```
-
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/content/foo"/>
+           <filter root="/content/dam/foo"/>
+           <filter root="/content/usergenerated/content/foo"/>
+        </workspaceFilter>
+        ```
 
 1. Assicurati di salvare tutte le modifiche. Ora puoi sincronizzare il nuovo contenuto con l’istanza AEM.
 

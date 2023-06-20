@@ -4,10 +4,10 @@ description: Scopri in che modo la funzione di contenuto associato per Frammenti
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 100%
+source-wordcount: '240'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ Per creare l’associazione, devi prima [aggiungere le risorse multimediali a un
 
 1. A seconda che siano già state associate o meno delle raccolte, seleziona una delle seguenti opzioni:
 
-   * **Associa contenuto**: questa sarà la prima raccolta associata
+   * **Associa contenuto** - la prima raccolta associata
    * **Associa raccolta**: raccolte associate già configurate
 
 1. Seleziona la raccolta richiesta.
@@ -38,7 +38,7 @@ Per creare l’associazione, devi prima [aggiungere le risorse multimediali a un
 
    ![Seleziona la raccolta](assets/cfm-assoc-content-02.png)
 
-1. Conferma (con **Seleziona**). La raccolta verrà elencata come associata.
+1. Conferma (con **Seleziona**). La raccolta è elencata come associata.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 

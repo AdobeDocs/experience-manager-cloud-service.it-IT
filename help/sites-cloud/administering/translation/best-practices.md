@@ -4,10 +4,10 @@ description: Scopri le best practice compilate dai team tecnici e di consulenza 
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, fai riferimento al [Percorso di traduzione dei siti,](/help/journey-sites/translation/overview.md) per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta la [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti AEM Sites utilizzando potenti strumenti di traduzione AEM, ideale per chi non ha esperienza di AEM o traduzione.
 
 ## Generale {#general}
 
@@ -24,7 +24,7 @@ La creazione o l’espansione di una presenza web globale può essere un process
 * **Pianifica l’espansione globale** prima di implementare il primo sito. Adattare un sito esistente a una copertura globale quando il sito è stato implementato con breve preavviso è tipicamente più difficile del pianificare l’espansione globale all’inizio:
    * Valuta lo stato attuale della maturità di localizzazione della tua organizzazione. Determina se disponi di **strumenti**, **processi** e **risorse** per supportare l’espansione globale.
    * Presta attenzione a **regolamenti globali** e **preferenze linguistiche regionali**. Progetta strutture e processi di contenuto flessibili in grado di adattarsi a un ambiente aziendale globale in continua evoluzione.
-* Determina un modello di **governance** che supporta il tuo business globale e utilizza i meccanismi AEM come MSM e autorizzazioni utente per applicare il modello scelto. Ad esempio, puoi determinare se il contenuto verrà creato a livello centrale e “inviato” o “trascinato” alle aree geografiche o ai Paesi. Determina i contenuti che possono essere sbloccati e modificati nelle aree geografiche. Determina chi è responsabile dell’avvio e della gestione delle traduzioni.
+* Determina un modello di **governance** che supporta il tuo business globale e utilizza i meccanismi AEM come MSM e autorizzazioni utente per applicare il modello scelto. Ad esempio, puoi determinare se il contenuto viene creato a livello centrale e &quot;inviato&quot; o &quot;trascinato&quot; alle aree geografiche o ai paesi. Determina i contenuti che possono essere sbloccati e modificati nelle aree geografiche. Determina chi è responsabile dell’avvio e della gestione delle traduzioni.
 * Se le risorse lo consentono, è meglio gestire l’attività di traduzione con un team centrale che può sviluppare competenze negli strumenti, nei processi e nelle relazioni con i fornitori necessari.
 * **Pianifica**, **crea un prototipo** e **testa** la struttura e i processi globali per assicurarti che supportino l’attività e che tu disponga del supporto richiesto dalle parti interessate nelle aree geografiche.
 

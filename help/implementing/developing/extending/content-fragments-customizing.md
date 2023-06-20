@@ -2,9 +2,9 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1808'
 ht-degree: 3%
 
 ---
@@ -32,13 +32,13 @@ I singoli frammenti di contenuto sono basati su modelli per frammenti di contenu
 * I modelli sono costituiti da tipi di dati.
 * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
 
-   >[!NOTE]
-   >
-   >Per visualizzare/eseguire il rendering di un frammento di contenuto, il tuo account deve avere `read` autorizzazioni per il modello.
+  >[!NOTE]
+  >
+  >Per visualizzare/eseguire il rendering di un frammento di contenuto, il tuo account deve avere `read` autorizzazioni per il modello.
 
-   >[!CAUTION]
-   >
-   >Eventuali modifiche apportate a un modello per frammenti di contenuto esistente possono influire sui frammenti dipendenti, con conseguenti proprietà orfane.
+  >[!CAUTION]
+  >
+  >Eventuali modifiche apportate a un modello per frammenti di contenuto esistente possono influire sui frammenti dipendenti, con conseguenti proprietà orfane.
 
 ### Integrazione di Sites con Assets {#integration-of-sites-with-assets}
 
@@ -61,15 +61,14 @@ I frammenti di contenuto, basati su un modello per frammenti di contenuto, sono 
 * Tutto il contenuto viene archiviato in `jcr:content/data` nodo della risorsa:
 
    * I dati dell’elemento vengono memorizzati nel sottonodo principale:
-      `jcr:content/data/master`
+     `jcr:content/data/master`
 
    * Le varianti vengono memorizzate in un sottonodo che porta il nome della variante: ad esempio, `jcr:content/data/myvariation`
 
    * I dati di ciascun elemento vengono memorizzati nel rispettivo sottonodo come una proprietà con il nome dell’elemento: ad esempio, il contenuto dell’elemento `text` viene memorizzato come proprietà `text` il `jcr:content/data/master`
 
 * I metadati e il contenuto associato sono memorizzati di seguito `jcr:content/metadata`
-Ad eccezione del titolo e della descrizione, che non sono considerati metadati tradizionali e memorizzati in 
-`jcr:content`
+Ad eccezione del titolo e della descrizione, che non sono considerati metadati tradizionali e memorizzati in `jcr:content`
 
 #### Posizione risorsa {#asset-location}
 
@@ -121,7 +120,7 @@ Per l’integrazione con Assets Core:
 >
 >Quando un frammento di contenuto viene utilizzato in una pagina, viene fatto riferimento al modello per frammenti di contenuto su cui si basa.
 >
->Ciò significa che se il modello non è stato pubblicato al momento della pubblicazione della pagina, verrà contrassegnato e il modello verrà aggiunto alle risorse da pubblicare con la pagina.
+>Ciò significa che se il modello non è stato pubblicato al momento della pubblicazione della pagina, viene contrassegnato e il modello viene aggiunto alle risorse da pubblicare con la pagina.
 
 ### Integrazione con altri framework {#integration-with-other-frameworks}
 
@@ -129,34 +128,35 @@ I frammenti di contenuto possono essere integrati con:
 
 * **Traduzioni**
 
-   I frammenti di contenuto sono completamente integrati con [Flusso di lavoro di traduzione AEM](/help/sites-cloud/administering/translation/overview.md). A livello architettonico, ciò significa:
+  I frammenti di contenuto sono completamente integrati con [Flusso di lavoro di traduzione AEM](/help/sites-cloud/administering/translation/overview.md). A livello architettonico, ciò significa:
 
    * Le singole traduzioni di un frammento di contenuto sono in realtà frammenti separati; ad esempio:
 
       * si trovano in diverse directory principali della lingua, ma condividono esattamente lo stesso percorso relativo sotto la directory principale della lingua pertinente:
 
-         `/content/dam/<path>/en/<to>/<fragment>`
+        `/content/dam/<path>/en/<to>/<fragment>`
 
-         rispetto a
+        rispetto a
 
-         `/content/dam/<path>/de/<to>/<fragment>`
+        `/content/dam/<path>/de/<to>/<fragment>`
+
    * Oltre ai percorsi basati su regole, non esiste un’ulteriore connessione tra le diverse versioni linguistiche di un frammento di contenuto; vengono gestiti come due frammenti separati, anche se l’interfaccia utente fornisce i mezzi per navigare tra le varianti di lingua.
-   >[!NOTE]
-   >
-   >Il flusso di lavoro di traduzione dell’AEM funziona con `/content`:
-   >
-   >* Come risiedono i modelli per frammenti di contenuto `/conf`, questi non sono inclusi in tali traduzioni. Puoi internazionalizzare le stringhe dell’interfaccia utente.
 
+  >[!NOTE]
+  >
+  >Il flusso di lavoro di traduzione dell’AEM funziona con `/content`:
+  >
+  >* Come risiedono i modelli per frammenti di contenuto `/conf`, questi non sono inclusi in tali traduzioni. Puoi internazionalizzare le stringhe dell’interfaccia utente.
 
-* **Schemi di metadati**
+* **Schemi metadati**
 
    * I frammenti di contenuto (ri)utilizzano [schemi di metadati](/help/assets/metadata-schemas.md), che può essere definito con le risorse standard.
 
    * CFM fornisce uno schema specifico:
 
-      `/libs/dam/content/schemaeditors/forms/contentfragment`
+     `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      se necessario, questa funzione può essere estesa.
+     se necessario, questa funzione può essere estesa.
 
    * Il rispettivo modulo schema è integrato con l’editor di frammenti.
 
@@ -176,9 +176,9 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
 * **Frammento di contenuto** ([Frammento di contenuto](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-   Questa interfaccia consente di lavorare con un frammento di contenuto in modo astratto.
+  Questa interfaccia consente di lavorare con un frammento di contenuto in modo astratto.
 
-   L’interfaccia consente di:
+  L’interfaccia consente di:
 
    * Gestisci dati di base (ad esempio, nome, titolo/descrizione get/set)
    * Accedere ai metadati
@@ -189,6 +189,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
       * Creare nuovi elementi (consulta [Avvertenze](#caveats))
 
       * Accedere ai dati degli elementi (vedere `ContentElement`)
+
    * Elenca le varianti definite per il frammento
    * Creare nuove varianti a livello globale
    * Gestisci contenuto associato:
@@ -196,9 +197,10 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
       * Elencare raccolte
       * Aggiungere raccolte
       * Rimuovi raccolte
+
    * Accedere al modello del frammento
 
-   Le interfacce che rappresentano gli elementi principali di un frammento sono:
+  Le interfacce che rappresentano gli elementi principali di un frammento sono:
 
    * **Elemento contenuto** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
@@ -211,24 +213,20 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
          * Crea nuove varianti (consulta [Avvertenze](#caveats))
          * Rimuovi varianti (consulta [Avvertenze](#caveats))
          * Accedere ai dati delle varianti (vedere `ContentVariation`)
+
       * Scelta rapida per la risoluzione delle varianti (applicazione di alcune logiche di fallback aggiuntive specifiche per l’implementazione se la variante specificata non è disponibile per un elemento)
+
    * **Variante contenuto** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Ottenere dati di base (nome, titolo, descrizione)
       * Ottieni/Imposta contenuto
       * Sincronizzazione semplice, basata sulle informazioni modificate più di recente
 
-   Tutte e tre le interfacce ( `ContentFragment`, `ContentElement`, `ContentVariation`a) estendere `Versionable` Interfaccia di, che aggiunge funzionalità di controllo delle versioni, necessaria per i frammenti di contenuto:
+  Tutte e tre le interfacce ( `ContentFragment`, `ContentElement`, `ContentVariation`a) estendere `Versionable` Interfaccia di, che aggiunge funzionalità di controllo delle versioni, necessaria per i frammenti di contenuto:
 
    * Crea una nuova versione dell’elemento
    * Elencare le versioni dell’elemento
    * Ottenere il contenuto di una versione specifica dell&#39;elemento con versione
-
-
-
-
-
-
 
 ### Adattamento - Utilizzo di adaptTo() {#adapting-using-adaptto}
 
@@ -258,7 +256,7 @@ Si noti che:
 
 * Attività che potrebbero richiedere un ulteriore impegno:
 
-   * Si consiglia vivamente di creare nuove varianti da `ContentFragment`. In questo modo tutti gli elementi condivideranno questa variante e le strutture di dati globali appropriate verranno aggiornate in base alle esigenze, per riflettere la variante appena creata nella struttura del contenuto.
+   * Si consiglia vivamente di creare nuove varianti da `ContentFragment`. In questo modo tutti gli elementi condividono questa variante e le strutture globali di dati appropriate vengono aggiornate secondo necessità per riflettere la variante appena creata nella struttura del contenuto.
 
    * Rimozione delle varianti esistenti tramite un elemento, utilizzando `ContentElement.removeVariation()`, non aggiorna le strutture di dati globali assegnate alla variante. Per garantire la sincronizzazione di queste strutture di dati, utilizza `ContentFragment.removeVariation()` rimuove invece una variante a livello globale.
 
@@ -274,7 +272,7 @@ Consulta le seguenti risorse:
 
 * `filter.xml`
 
-   Il `filter.xml` per la gestione dei frammenti di contenuto è configurato in modo da non sovrapporsi al pacchetto di contenuti core Assets.
+  Il `filter.xml` per la gestione dei frammenti di contenuto è configurato in modo da non sovrapporsi al pacchetto di contenuti core Assets.
 
 ## Modifica sessioni {#edit-sessions}
 

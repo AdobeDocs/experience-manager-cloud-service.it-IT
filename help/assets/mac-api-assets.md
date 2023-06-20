@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1562'
 ht-degree: 3%
 
 ---
@@ -123,7 +123,7 @@ Recupera una rappresentazione Siren di una cartella esistente e delle relative e
 * 404 - NON TROVATO - la cartella non esiste o non è accessibile.
 * 500 - ERRORE INTERNO DEL SERVER - se si verificano altri errori.
 
-**Risposta**: la classe dell’entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;insieme completo di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell’entità, i clienti devono recuperare il contenuto dell’URL a cui fa riferimento il collegamento con un `rel` di `self`.
+**Risposta**: la classe dell’entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;insieme completo di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell’entità, i clienti devono recuperare il contenuto dell’URL a cui punta il collegamento con un `rel` di `self`.
 
 ## Crea una cartella . {#create-a-folder}
 
@@ -280,18 +280,17 @@ Elimina una risorsa (-tree) nel percorso specificato.
 **Consulta anche**
 
 * [Traduci risorse](translate-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
 >* [Documentazione di riferimento per sviluppatori per [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
-

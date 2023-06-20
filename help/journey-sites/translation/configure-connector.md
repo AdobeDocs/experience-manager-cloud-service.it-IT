@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 100%
+source-wordcount: '1166'
+ht-degree: 96%
 
 ---
 
@@ -61,7 +61,7 @@ Se scegli un altro fornitore, l’amministratore deve installare il pacchetto de
 >
 >Se scegli di utilizzare il connettore Microsoft Translator a scopo di test, non è necessario eseguire i passaggi descritti nelle due sezioni successive: [Creazione di una configurazione dell’integrazione di traduzione](#create-config) e [Associare la configurazione al contenuto.](#associate) Si consiglia tuttavia di leggerli in modo da conoscere i passaggi necessari per configurare il connettore preferito.
 >
->La licenza di prova del connettore Microsoft Translator non è destinata alla produzione. Se si decide di concedere la licenza, l’amministratore di sistema deve seguire i passaggi descritti nella sezione [Risorse aggiuntive](#additional-resources) alla fine del presente documento per configurare tale licenza.
+>La licenza di prova del connettore Microsoft Translator non è destinata alla produzione. Se si decide di concedere la licenza, l’amministratore di sistema deve seguire i passaggi descritti nella [Risorse aggiuntive](#additional-resources) alla fine del presente documento per configurare tale licenza.
 
 ## Creazione di una configurazione dell’integrazione di traduzione {#create-config}
 

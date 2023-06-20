@@ -3,10 +3,10 @@ title: Configurazione del Dispatcher con AEM Headless
 description: Dispatcher è un livello di memorizzazione in cache e sicurezza davanti agli ambienti di pubblicazione Adobe Experience Manager. Diverse configurazioni vengono utilizzate per aprire gli endpoint GraphQL alle applicazioni headless.
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ Come parte dei filtri predefiniti, [Endpoint GraphQL](/help/headless/graphql-api
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-Il carattere jolly `*` apre più endpoint sull’istanza AEM. La query tramite un endpoint GraphQL verrà eseguita utilizzando `POST` e la risposta **non** sarà memorizzata nella cache.
+Il carattere jolly `*` apre più endpoint sull’istanza AEM. La query tramite un endpoint GraphQL viene eseguita utilizzando `POST` e la risposta **non** essere memorizzate nella cache.
 
 ## Query persistenti GraphQL
 

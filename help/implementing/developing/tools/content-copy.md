@@ -2,10 +2,10 @@
 title: Lo strumento Copia contenuto
 description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai propri ambienti di produzione as a Cloud Service per l’AEM in ambienti più bassi a scopo di test.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 60%
+source-wordcount: '1223'
+ht-degree: 56%
 
 ---
 
@@ -29,12 +29,12 @@ Il contenuto da copiare è definito da un set di contenuti. Un set di contenuti 
 
 Durante la copia del contenuto, l’ambiente sorgente è l’origine di riferimento.
 
-* Se il contenuto è stato modificato nell’ambiente di destinazione e i percorsi sono gli stessi, verrà sovrascritto dal contenuto nell’origine.
-* Se i percorsi sono diversi, il contenuto dell’origine verrà unito al contenuto della destinazione.
+* Se il contenuto è stato modificato nell’ambiente di destinazione, viene sovrascritto dal contenuto nell’origine, se i percorsi sono gli stessi.
+* Se i percorsi sono diversi, il contenuto dell’origine viene unito al contenuto della destinazione.
 
 ## Autorizzazioni {#permissions}
 
-Per utilizzare lo strumento Copia contenuto, sono necessarie alcune autorizzazioni sia nell’ambiente sorgente che in quello di destinazione.
+Per utilizzare lo strumento di copia del contenuto, sono necessarie determinate autorizzazioni sia nell’ambiente di origine che in quello di destinazione.
 
 | Funzione Copia contenuto | Gruppo di amministratori AEM | Ruolo Responsabile della distribuzione |
 |---|---|---|
@@ -122,7 +122,6 @@ Una volta creato un set di contenuti, puoi utilizzarlo per copiare il contenuto.
    >* L’utente non dispone delle autorizzazioni appropriate.
    >* L’ambiente dispone di una pipeline in esecuzione o di un’operazione di copia del contenuto in corso.
    >* L’ambiente è in stato di sospensione o in fase di avvio.
-
 
 1. Nella finestra di dialogo **Copia contenuto**, specifica l’origine e la destinazione dell’azione di copia del contenuto.
 

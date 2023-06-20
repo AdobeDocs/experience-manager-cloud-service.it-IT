@@ -2,10 +2,10 @@
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2561'
-ht-degree: 77%
+source-wordcount: '2556'
+ht-degree: 74%
 
 ---
 
@@ -83,7 +83,7 @@ Durante la creazione di una nuova pagina sono disponibili due campi chiave:
 
 Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma sono correlati:
 
-* Durante la creazione di una pagina, solo il **Titolo** è obbligatorio. In caso negativo **Nome** viene fornito al momento della creazione della pagina, l’AEM genererà un nome a partire dai primi 64 caratteri del titolo (osservando la convalida stabilita di seguito). Vengono utilizzati solo i primi 64 caratteri, per rispettare la best practice sui nomi di pagina brevi.
+* Durante la creazione di una pagina, solo il **Titolo** è obbligatorio. In caso negativo **Nome** viene fornito al momento della creazione della pagina, l’AEM genererà un nome a partire dai primi 64 caratteri del titolo (osservando la convalida stabilita di seguito). Solo i primi 64 caratteri vengono utilizzati per supportare la best practice per i nomi di pagina brevi.
 * Se un nome di una pagina è specificato manualmente dall’autore, il limite di 64 caratteri non è applicabile; tuttavia, potrebbero esserci altre limitazioni tecniche sulla lunghezza del nome della pagina.
 
 >[!TIP]
@@ -112,7 +112,7 @@ Per informazioni complete su tutti i caratteri consentiti, consulta le [convenzi
 
 Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome** [da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR.](/help/implementing/developing/introduction/naming-conventions.md)
 
-Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
+A **Titolo** il campo contenente caratteri non validi viene accettato, ma al nome derivato vengono sostituiti i caratteri non validi. Ad esempio:
 
 | Titolo | Nome derivato |
 |---|---|
@@ -160,7 +160,7 @@ I componenti sono gli elementi forniti da AEM che consentono di aggiungere speci
 * Immagine
 * Titolo
 * Carosello
-* E molte altre ancora
+* E molti altri
 
 Dopo aver creato e aperto una pagina è possibile: [aggiungi contenuto utilizzando i componenti](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), disponibili da [browser componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
@@ -199,6 +199,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
    * **Titolo**:
 
       * Questo viene presentato all’utente ed è obbligatorio.
+
    * **Nome**:
 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome deriva dal titolo.
@@ -326,6 +327,7 @@ AEM offre la funzionalità di aggiornare eventuali collegamenti interni che si r
 
       * Seleziona la destinazione facendo clic sulla miniatura della destinazione.
       * Fai clic su **Avanti** per continuare.
+
    * Utilizzare **Indietro** per tornare alla specifica del nome della pagina.
 
    >[!NOTE]
@@ -338,7 +340,7 @@ AEM offre la funzionalità di aggiornare eventuali collegamenti interni che si r
    >
    >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
 
-1. Se la pagina è collegata o utilizzata in un riferimento, oppure se è stata pubblicata, i dettagli saranno elencati nel passaggio **Regola/Ripubblica**.
+1. Se la pagina è collegata o utilizzata in un riferimento, oppure se è stata pubblicata, i dettagli sono elencati in **Regola/Ripubblica** passaggio.
 
    Puoi quindi indicare cosa deve essere regolato e/o ripubblicato in base alle necessità.
 
@@ -379,7 +381,7 @@ Tuttavia, se il numero di pagine interessate è superiore a un limite definito, 
       * **Ora** inizia subito l’esecuzione del processo asincrono.
       * **In seguito** consente di definire quando verrà avviato il processo asincrono.
 
-         ![Spostamento asincrono delle pagine](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+        ![Spostamento asincrono delle pagine](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
 Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato processi asincroni** in](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) **Navigazione globale** -> **Strumenti** -> **Operazioni** -> **Processi**.
 
@@ -443,4 +445,3 @@ Puoi creare cartelle per organizzare file e pagine.
 >* Le cartelle possono essere create solo direttamente in **Sites** o in altre cartelle. Non possono essere create sotto una pagina.
 >* Le azioni standard Sposta, Copia, Incolla, Elimina, Modifica, Pubblica, Annulla pubblicazione e Visualizza/Modifica proprietà possono essere eseguite in una cartella.
 >* Le cartelle non sono disponibili per la selezione all’interno di una Live Copy.
-

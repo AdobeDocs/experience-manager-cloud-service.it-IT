@@ -4,10 +4,10 @@ description: Integrazione con Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
-workflow-type: ht
-source-wordcount: '1047'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1046'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,6 @@ Come indicato in precedenza, il primo caso è il più comune per AEM as a Cloud 
 > 1. Immetti nuovamente l&#39;ID tenant.
 > 2. Riconnetti a Target.
 > 3. Salva la configurazione.
-
 
 ### Modifica la configurazione di Target {#edit-target-configuration}
 
@@ -157,4 +156,4 @@ Per informazioni su come costruire e pubblicare, consulta questa [pagina](https:
 
 >[!NOTE]
 >
->Le configurazioni legacy sono ancora supportate per i clienti esistenti (senza la possibilità di modificarle o crearne di nuove). Le configurazioni legacy faranno parte di pacchetti di contenuti caricati dai clienti che utilizzano VSTS.
+>Le configurazioni legacy sono ancora supportate per i clienti esistenti (senza la possibilità di modificarle o crearne di nuove). Le configurazioni legacy fanno parte di pacchetti di contenuti caricati dai clienti che utilizzano VSTS.

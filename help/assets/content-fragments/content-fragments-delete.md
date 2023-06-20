@@ -2,10 +2,10 @@
 title: Frammenti di contenuto - Considerazioni sull’eliminazione (risorse - Frammenti di contenuto)
 description: Esamina queste considerazioni importanti prima di definire i criteri di eliminazione dei frammenti di contenuto in AEM. I frammenti di contenuto sono uno strumento potente per la distribuzione di contenuti headless e occorre considerare attentamente le implicazioni relative all’eliminazione di tali contenuti.
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 98%
+source-wordcount: '472'
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,7 @@ Ad esempio, quando si manipolano le varianti, ma anche durante la modifica dei m
 >
 >Le autorizzazioni di eliminazione, necessarie per modificare o aggiornare un frammento di contenuto, sono incluse nell’autorizzazione Elimina assegnata tramite la gestione degli utenti e/o dei gruppi. <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-Le autorizzazioni necessarie per modificare o aggiornare un frammento devono essere applicate al nodo contenente il frammento di contenuto o a un nodo principale appropriato (a qualsiasi livello in `/content/dam`). Le autorizzazioni assegnate a un nodo principale vengono applicate a tutti i nodi al suo interno.
+Le autorizzazioni necessarie per modificare o aggiornare un frammento devono essere applicate al nodo contenente il frammento di contenuto o a un nodo principale appropriato (a qualsiasi livello in `/content/dam`). Quando vengono assegnate a tale nodo principale, le autorizzazioni vengono applicate a tutti i nodi all’interno di tale ramo.
 
 Ad esempio, una cartella contenente tutti i frammenti di contenuto, come:
 

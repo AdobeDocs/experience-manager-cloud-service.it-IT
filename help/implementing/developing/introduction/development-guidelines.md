@@ -2,10 +2,10 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2591'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ Il presente documento presenta le linee guida per sviluppare su AEM as a Cloud S
 
 Il codice in esecuzione in AEM as a Cloud Service deve tenere presente che è sempre in esecuzione in un cluster. Ciò significa che ci sono sempre in esecuzione più di un’istanza. Il codice deve essere resiliente, in particolare in quanto un’istanza potrebbe essere arrestata in qualsiasi momento.
 
-Durante l’aggiornamento di AEM as a Cloud Service, ci saranno istanze con il vecchio e il nuovo codice in esecuzione in parallelo. Pertanto, il vecchio codice non deve interrompere il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il contenuto vecchio.
+Durante l’aggiornamento di AEM as a Cloud Service, sono presenti istanze con codice vecchio e nuovo in esecuzione in parallelo. Pertanto, il vecchio codice non deve interrompere il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il contenuto vecchio.
 
 Se è necessario identificare l’elemento primario nel cluster, è possibile utilizzare l’API di individuazione Apache Sling per rilevarlo.
 
@@ -33,13 +33,13 @@ Lo stato non deve essere mantenuto in memoria, ma deve essere mantenuto nell’a
 
 ## Stato nel file system {#state-on-the-filesystem}
 
-Il file system dell’istanza non deve essere utilizzato in AEM as a Cloud Service. Il disco è temporaneo e verrà eliminato quando le istanze vengono riciclate. È possibile un uso limitato del file system per la memorizzazione temporanea in relazione al trattamento di singole richieste, ma non dovrebbe essere utilizzato impropriamente per file di grandi dimensioni. Questo perché potrebbe avere un impatto negativo sulla quota di utilizzo delle risorse ed essere soggetto a limitazioni del disco.
+Il file system dell’istanza non deve essere utilizzato in AEM as a Cloud Service. Il disco è temporaneo e viene eliminato quando le istanze vengono riciclate. È possibile un uso limitato del file system per la memorizzazione temporanea in relazione al trattamento di singole richieste, ma non dovrebbe essere utilizzato impropriamente per file di grandi dimensioni. Questo perché potrebbe avere un impatto negativo sulla quota di utilizzo delle risorse ed essere soggetto a limitazioni del disco.
 
 Ad esempio, se l’utilizzo del file system non è supportato, il livello di pubblicazione deve garantire che tutti i dati che devono essere mantenuti vengano inviati a un servizio esterno per l’archiviazione a lungo termine.
 
 ## Osservazione {#observation}
 
-Allo stesso modo, con tutto ciò che accade in modo asincrono come agire su eventi di osservazione, non si può garantire che venga eseguito localmente e quindi deve essere utilizzato con cautela. Questo vale sia per gli eventi JCR che per gli eventi della risorsa Sling. Nel momento in cui si verifica una modifica, l’istanza può essere rimossa e sostituita da un’istanza diversa. Altre istanze della topologia attive in quel momento saranno in grado di reagire a quell&#39;evento. In questo caso, tuttavia, non si tratterà di un evento locale e potrebbe addirittura non esserci un leader attivo nel caso in cui, al momento dell&#39;evento, si proceda alle elezioni per il leader.
+Allo stesso modo, con tutto ciò che accade in modo asincrono come agire su eventi di osservazione, non si può garantire che venga eseguito localmente e quindi deve essere utilizzato con cautela. Questo vale sia per gli eventi JCR che per gli eventi della risorsa Sling. Nel momento in cui si verifica una modifica, l’istanza può essere rimossa e sostituita da un’istanza diversa. Altre istanze della topologia attive in quel momento sono in grado di reagire a quell&#39;evento. In questo caso, tuttavia, non si tratterà di un evento locale e potrebbe addirittura non esserci un leader attivo nel caso in cui, al momento dell&#39;evento, si proceda alle elezioni per il leader.
 
 ## Attività in background e processi con esecuzione prolungata {#background-tasks-and-long-running-jobs}
 
@@ -47,7 +47,7 @@ Il codice eseguito come attività in background deve presupporre che l’istanza
 
 Per ridurre al minimo i problemi, è necessario evitare, se possibile, processi con tempi di esecuzione lunghi, che dovrebbero essere almeno ripristinabili. Per eseguire tali processi, utilizza Sling Jobs, che dispongono di una garanzia almeno una volta e quindi, se vengono interrotti, verranno rieseguiti il prima possibile. Ma probabilmente non dovrebbero ricominciare dall&#39;inizio. Per la pianificazione di tali processi, è consigliabile utilizzare [Processi Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) di pianificazione, in quanto ciò assicura di nuovo l’esecuzione di almeno una volta.
 
-Il modulo di pianificazione Sling Commons non deve essere utilizzato per la pianificazione in quanto l’esecuzione non può essere garantita. È solo più probabile che sarà programmato.
+Il modulo di pianificazione Sling Commons non deve essere utilizzato per la pianificazione in quanto l’esecuzione non può essere garantita. È solo più probabile che sia programmato.
 
 Allo stesso modo, con tutto ciò che accade in modo asincrono, come agire su eventi di osservazione (che si tratti di eventi JCR o di eventi di risorse Sling), non può essere garantito che venga eseguito e pertanto deve essere utilizzato con cautela. Questo è già vero per le implementazioni AEM nel presente.
 
@@ -101,11 +101,11 @@ Negli ambienti Cloud, gli sviluppatori possono scaricare i registri tramite Clou
 
 **Impostazione del livello di registro**
 
-Per modificare i livelli di registro per gli ambienti Cloud, è necessario modificare la configurazione OSGI Sling Logging, seguita da una ridistribuzione completa. Poiché questa operazione non è istantanea, presta attenzione quando abiliti registri dettagliati in ambienti di produzione che ricevono molto traffico. In futuro, è possibile che esistano meccanismi per cambiare più rapidamente il livello del registro.
+Per modificare i livelli di registro per gli ambienti Cloud, è necessario modificare la configurazione OSGI Sling Logging, seguita da una ridistribuzione completa. Poiché questa operazione non è istantanea, presta attenzione quando abiliti registri dettagliati in ambienti di produzione che ricevono molto traffico. In futuro, è possibile che esistano meccanismi per cambiare più rapidamente il livello di registro.
 
 >[!NOTE]
 >
->Per eseguire le modifiche alla configurazione elencate di seguito, è necessario crearle in un ambiente di sviluppo locale e quindi inviarle a un’istanza AEM as a Cloud Service. Per ulteriori informazioni su come eseguire questa operazione, vedi [Distribuzione a AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+>Per eseguire le modifiche alla configurazione elencate di seguito, è necessario crearle in un ambiente di sviluppo locale e quindi inviarle a un&#39;istanza AEM as a Cloud Service. Per ulteriori informazioni su come eseguire questa operazione, vedi [Distribuzione a AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Attivazione del livello di registro DEBUG**
 

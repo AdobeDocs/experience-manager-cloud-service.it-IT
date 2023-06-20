@@ -2,9 +2,9 @@
 title: Guida introduttiva all’authoring CIF
 description: Guida introduttiva all’authoring CIF
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '804'
 ht-degree: 2%
 
 ---
@@ -89,7 +89,7 @@ Le restanti schede mostrano tutto il contenuto AEM associato al prodotto. Queste
 Omnisearch consente di trovare facilmente i contenuti AEM mediante la ricerca full-text. CIF estende Omnisearch con la ricerca full-text di cataloghi di prodotti e del relativo contenuto AEM associato.
 ![voce di menu commerce](assets/omnisearch.png)
 
-Omnisearch eseguirà una ricerca full-text nel backend di Commerce per trovare tutti i prodotti correlati. Il risultato è elencato in **Visualizza tutti i prodotti**. Omnisearch cercherà inoltre nell’AEM i contenuti associati al prodotto ricercato. I risultati saranno elencati nelle rispettive categorie AEM. In questo esempio, un frammento di contenuto è correlato al prodotto.
+Omnisearch eseguirà una ricerca full-text nel backend di Commerce per trovare tutti i prodotti correlati. Il risultato è elencato in **Visualizza tutti i prodotti**. Omnisearch cercherà inoltre nell’AEM i contenuti associati al prodotto ricercato. I risultati sono elencati nelle rispettive categorie AEM. In questo esempio, un frammento di contenuto è correlato al prodotto.
 
 ## Passaggio successivo {#what-is-next}
 

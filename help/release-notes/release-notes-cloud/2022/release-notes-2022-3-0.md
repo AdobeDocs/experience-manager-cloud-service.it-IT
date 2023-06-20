@@ -2,10 +2,10 @@
 title: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 96%
+ht-degree: 88%
 
 ---
 
@@ -91,13 +91,13 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
 ### Novità {#what-is-new-foundation}
 
-* Per una risoluzione più efficiente ed efficace dei problemi relativi alle funzioni personalizzate negli ambienti Cloud, abbiamo rilasciato un nuovo strumento per sviluppatori: [Browser dell’archivio](/help/implementing/developing/tools/repository-browser.md). È un browser HTML leggero e di sola lettura che può essere avviato da Developer Console. Ottieni visibilità nell’archivio dei contenuti sui livelli di pubblicazione, authoring e anteprima, e in tutti gli ambienti, compresi produzione, staging e sviluppo. Sfoglia la struttura del contenuto, visualizza le proprietà e visualizza in anteprima e scarica i dati binari.
+* Per una risoluzione più efficiente ed efficace dei problemi relativi alle funzioni personalizzate negli ambienti Cloud, abbiamo rilasciato un nuovo strumento per sviluppatori: [Browser dell’archivio](/help/implementing/developing/tools/repository-browser.md). È un browser HTML leggero e di sola lettura che puoi avviare da Developer Console. Ottieni visibilità nell’archivio dei contenuti sui livelli di pubblicazione, authoring e anteprima, e in tutti gli ambienti, compresi produzione, staging e sviluppo. Sfoglia la struttura del contenuto, visualizza le proprietà e visualizza in anteprima e scarica i dati binari.
 
-   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
 * Le credenziali utilizzate per autenticare le chiamate API da server a server (ad esempio, per le richieste API di GraphQL) ora possono essere aggiornate prima della scadenza in modo autonomo dalla Console per sviluppatori. Consulta la [documentazione](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) per ulteriori informazioni.
 
-* Le attività di manutenzione dell’eliminazione della versione e del registro di controllo, che non erano state precedentemente abilitate, verranno abilitate per i nuovi ambienti. Vedi i valori associati nell’articolo [Attività di manutenzione](/help/operations/maintenance.md).
+* Le attività di manutenzione dell’eliminazione della versione e del registro di controllo, che non erano state precedentemente abilitate, ora sono abilitate per i nuovi ambienti. Vedi i valori associati nell’articolo [Attività di manutenzione](/help/operations/maintenance.md).
 
 * Gli strumenti di Dispatcher SDK in AEM as a Cloud Service ora supportano i computer Mac con il chip M1.
 
@@ -113,7 +113,7 @@ La data di pubblicazione dello strumento Content Transfer v1.9.0 è il 28 febbra
 
 ### Novità {#what-is-new-ctt}
 
-* Controllo dei limiti di dimensione: la funzione di controllo dimensioni dello strumento Content Transfer consente di ridurre i trasferimenti non riusciti. Con la funzione di controllo dimensioni, gli utenti possono 1) determinare se hanno spazio su disco sufficiente nella sottodirectory `crx-quickstart` prima dell’estrazione e 2) stimare le dimensioni del set di migrazione e verificare se è supportato. Se uno o entrambi questi controlli vengono violati, verrà visualizzato un avviso nell’interfaccia utente dello strumento Content Transfer. Con questo controllo puoi evitare errori di trasferimento dei contenuti e verificare in modo proattivo con l’Assistenza clienti di Adobe le opzioni di migrazione disponibili. Per ulteriori dettagli, consulta [Determinazione delle dimensioni del set di migrazione e dello spazio su disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it#migration-set-size).
+* Controllo dei limiti di dimensione: la funzione di controllo dimensioni dello strumento Content Transfer consente di ridurre i trasferimenti non riusciti. Con la funzione di controllo dimensioni, gli utenti possono 1) determinare se hanno spazio su disco sufficiente nel `crx-quickstart` sottodirectory prima dell’estrazione, e 2) stimare le dimensioni del set di migrazione e verificare se è supportato. Se uno o entrambi questi controlli vengono violati, verrà visualizzato un avviso nell’interfaccia utente dello strumento Content Transfer. Con questo controllo puoi evitare errori di trasferimento dei contenuti e verificare in modo proattivo con l’Assistenza clienti di Adobe le opzioni di migrazione disponibili. Per ulteriori dettagli, consulta [Determinazione delle dimensioni del set di migrazione e dello spazio su disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it#migration-set-size).
 
 ## Analisi delle best practice {#bpa-release}
 

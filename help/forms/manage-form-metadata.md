@@ -4,9 +4,9 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: I metadati semplificano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1658'
 ht-degree: 2%
 
 ---
@@ -70,12 +70,12 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
   </tr> 
   <tr> 
    <td>Creato</td> 
-   <td>Tutti i bundle </td> 
+   <td>Tutti</td> 
    <td>Valore di sola lettura che specifica l’ora di creazione della risorsa.</td> 
   </tr> 
   <tr> 
    <td>Data ultima modifica</td> 
-   <td>Tutti i bundle </td> 
+   <td>Tutti</td> 
    <td>Valore di sola lettura che specifica l’ora dell’ultima modifica apportata alla risorsa.</td> 
   </tr> 
   <tr> 
@@ -178,9 +178,9 @@ Le risorse presentano valori di proprietà esistenti che possono essere visualiz
 
    * Fai clic su **[!UICONTROL Proprietà]** ![Proprietà](assets/Smock_Info_18_N.svg) da Azioni rapide.
 
-      >[!NOTE]
-      >
-      >Le Azioni rapide sono le azioni che vengono visualizzate su una miniatura al passaggio del mouse.
+     >[!NOTE]
+     >
+     >Le Azioni rapide sono le azioni che vengono visualizzate su una miniatura al passaggio del mouse.
 
    * Seleziona il modulo e fai clic su **[!UICONTROL Proprietà]** ![Proprietà](assets/Smock_Info_18_N.svg) nella barra degli strumenti.
    * Passare alla pagina dei dettagli del modulo facendo clic sulla miniatura del modulo quando non è attiva la modalità di selezione. A questo punto, fai clic su ![Proprietà](assets/Smock_Info_18_N.svg) icona a forma di occhio in alto a destra, quindi fare clic su Proprietà nell&#39;elenco sottostante.
@@ -234,7 +234,6 @@ Per l’Adaptive Forms è disponibile una funzionalità aggiuntiva che consente 
 >* Una volta caricata o generata una nuova immagine, la miniatura viene sostituita da questa immagine e non può essere ripristinata all&#39;immagine precedente.
 >
 
-
 ## Aggiungere metadati personalizzati {#add-custom-metadata}
 
 A parte i metadati forniti come predefiniti, [!DNL AEM Forms] supporta nuovi metadati personalizzati.
@@ -284,12 +283,12 @@ Viene fornito uno strumento (Editor schema metadati) per definire lo schema per 
 
 1. Fai clic su un componente appena trascinato. Nella scheda Impostazioni visualizzata nel pannello di destra, inserisci le informazioni per i campi seguenti:
 
-   1. Specifica un’Etichetta campo da utilizzare come nome visualizzato sopra il campo inserito nello schema (ad esempio: Reparto)
-   1. Nel campo Mappa su proprietà puoi visualizzare un valore precompilato **&quot;./jcr:content/metadata/default&#39;**. Modificare il ‘**predefinito**&quot; al nome di proprietà desiderato, utilizzato per memorizzare la proprietà nell’archivio crx (ad esempio: &quot;./jcr:content/metadata/department&#39;)
+   1. Specifica un&#39;etichetta campo da utilizzare come nome visualizzato sopra il campo inserito nello schema (ad esempio: Reparto)
+   1. Nel campo Mappa su proprietà puoi visualizzare un valore precompilato **&quot;./jcr:content/metadata/default&#39;**. Cambia &#39;**predefinito**&#39; a un nome di proprietà desiderato, utilizzato per memorizzare la proprietà nell&#39;archivio crx (ad esempio: &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >Non modificare il prefisso ‘./jcr:content/metadata/’, che definisce il percorso in cui è memorizzata la proprietà.
+      >Non modificare il prefisso &#39;./jcr:content/metadata/&#39; definisce il percorso in cui è memorizzata la proprietà.
       >
       >Inoltre, il nome della proprietà deve essere univoco per evitare di scrivere valori per due o più proprietà nella stessa posizione nell’archivio. Pertanto, si consiglia di modificare il valore &quot;default&quot;.
 

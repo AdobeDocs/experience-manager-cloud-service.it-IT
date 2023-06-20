@@ -1,10 +1,10 @@
 ---
 title: Registrazione per AEM as a Cloud Service
-description: Scopri come utilizzare la registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
+description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2376'
 ht-degree: 3%
 
 ---
@@ -94,7 +94,7 @@ Quando la registrazione degli errori è attiva, vengono registrate solo le istru
 
 Mentre la registrazione Java supporta diversi altri livelli di granularità della registrazione, AEM as a Cloud Service consiglia di utilizzare i tre livelli descritti in precedenza.
 
-I livelli di registro AEM sono impostati per tipo di ambiente tramite la configurazione OSGi, che a sua volta viene impegnata in Git e implementata tramite Cloud Manager in AEM as a Cloud Service. Per questo motivo, è consigliabile mantenere le istruzioni di registro coerenti e ben note per i tipi di ambiente, al fine di garantire che i registri disponibili tramite AEM come Cloud Service siano disponibili al livello di registro ottimale senza richiedere la ridistribuzione dell’applicazione con la configurazione a livello di registro aggiornata.
+I livelli di registro AEM sono impostati per tipo di ambiente tramite la configurazione OSGi, che a sua volta viene impegnata in Git e implementata tramite Cloud Manager in AEM as a Cloud Service. Per questo motivo, è consigliabile mantenere le istruzioni di registro coerenti e ben note per i tipi di ambiente per garantire che i registri disponibili tramite AEM come Cloud Service siano disponibili al livello di registro ottimale senza richiedere la redistribuzione dell’applicazione con la configurazione a livello di registro aggiornata.
 
 **Esempio di output del registro**
 
@@ -545,7 +545,7 @@ A seconda del traffico e della quantità di istruzioni di registro scritte da De
 
 ## Registri Splunk {#splunk-logs}
 
-I clienti con account Splunk possono richiedere tramite ticket di assistenza clienti che i loro registri di AEM Cloud Service vengano inoltrati all’indice appropriato. I dati di registrazione sono equivalenti a quelli disponibili nei download dei registri di Cloud Manager, ma i clienti potrebbero trovare conveniente sfruttare le funzioni di query disponibili nel prodotto Splunk.
+I clienti con account Splunk possono richiedere tramite ticket di assistenza clienti che i loro registri di AEM Cloud Service vengano inoltrati all’indice appropriato. I dati di registrazione sono equivalenti a quelli disponibili nei download dei registri di Cloud Manager, ma i clienti potrebbero trovare conveniente utilizzare le funzioni di query disponibili nel prodotto Splunk.
 
 La larghezza di banda di rete associata ai registri inviati a Splunk è considerata parte dell&#39;utilizzo di I/O di rete del cliente.
 

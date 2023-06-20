@@ -2,10 +2,10 @@
 title: Configura il connettore di traduzione per il contenuto headless
 description: Scopri come connettere AEM a un servizio di traduzione.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 100%
+source-wordcount: '1233'
+ht-degree: 95%
 
 ---
 
@@ -58,7 +58,7 @@ Se scegli un altro fornitore, l’amministratore deve installare il pacchetto de
 >
 >Se scegli di utilizzare il connettore Microsoft Translator a scopo di test, non è necessario eseguire i passaggi descritti nelle due sezioni successive: [Creazione di una configurazione dell’integrazione di traduzione](#create-config) e [Associare la configurazione al contenuto.](#associate) Si consiglia tuttavia di leggerli in modo da conoscere i passaggi necessari per configurare il connettore preferito.
 >
->La licenza di prova del connettore Microsoft Translator non è destinata alla produzione. Se si decide di concedere la licenza, l’amministratore di sistema deve seguire i passaggi descritti nella sezione [Risorse aggiuntive](#additional-resources) alla fine del presente documento per configurare tale licenza.
+>La licenza di prova del connettore Microsoft Translator non è destinata alla produzione. Se si decide di concedere la licenza, l’amministratore di sistema deve seguire i passaggi descritti nella [Risorse aggiuntive](#additional-resources) alla fine del documento per configurare la licenza.
 
 ## Creazione di una configurazione dell’integrazione di traduzione {#create-config}
 
@@ -99,7 +99,7 @@ Per creare una nuova configurazione di traduzione:
    1. **Traduci metadati**: seleziona questa opzione per tradurre i metadati delle risorse.
    1. **Traduci tag**: seleziona questa opzione per tradurre i tag associati alle risorse.
    1. **Esegui automaticamente la traduzione** - Seleziona questa proprietà se vuoi che le traduzioni vengano inviate automaticamente al tuo servizio di traduzione.
-   1. **Disattiva la traduzione di solo aggiornamento**: quando questa opzione è selezionata, l’aggiornamento del progetto di traduzione invierà in traduzione tutti i campi traducibili, non solo quelli modificati dall’ultima traduzione. L’aggiornamento del progetto di traduzione verrà discusso più avanti nel percorso.
+   1. **Disattiva la traduzione di solo aggiornamento**: quando questa opzione è selezionata, l’aggiornamento del progetto di traduzione invierà in traduzione tutti i campi traducibili, non solo quelli modificati dall’ultima traduzione. L’aggiornamento del progetto di traduzione viene discusso più avanti nel percorso.
    1. **Abilita campi del modello di contenuto per la traduzione**: seleziona questa opzione in modo che la configurazione di traduzione riconosca automaticamente i campi nei Modelli di contenuto in base al flag **Traducibile**.
 
 1. Tocca o fai clic su **Salva e chiudi**.

@@ -2,10 +2,10 @@
 title: Come strutturare i vari elementi - La tua app e il tuo contenuto in AEM headless
 description: In questa parte del Percorso per sviluppatori AEM Headless, scoprirai come realizzare il tuo progetto AEM utilizzando i frammenti di contenuto, le chiamate GraphQL, le chiamate REST API e la tua applicazione, e prepararlo per la pubblicazione.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 100%
+source-wordcount: '1065'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Questo articolo ha lo scopo di aiutarti a capire come strutturare la tua applica
 
 ## L’SDK di AEM {#the-aem-sdk}
 
-L’SDK di AEM viene utilizzato per generare e distribuire il codice personalizzato. È lo strumento principale di cui hai bisogno per sviluppare e testare la tua applicazione headless prima della pubblicazione. Contiene i seguenti artefatti:
+L’SDK di AEM viene utilizzato per generare e distribuire il codice personalizzato. È lo strumento principale necessario per sviluppare e testare l’applicazione headless prima della pubblicazione. Contiene i seguenti artefatti:
 
 * Il file jar Quickstart: un file jar eseguibile che può essere utilizzato per impostare sia un’istanza di authoring che di pubblicazione
 * Strumenti di Dispatcher: il modulo Dispatcher e le sue dipendenze per i sistemi basati su Windows e UNIX®
@@ -64,7 +64,7 @@ Node.js è un ambiente di esecuzione di codice JavaScript utilizzato per lavorar
 
 Ora, osserviamo le parti costitutive di un ambiente AEM.
 
-Un ambiente AEM completo è costituito da authoring, pubblicazione e Dispatcher. Questi stessi componenti sono resi disponibili nel runtime di sviluppo locale per facilitare l’anteprima del codice e del contenuto prima della pubblicazione.
+Un ambiente AEM completo è costituito da authoring, pubblicazione e Dispatcher. Questi stessi componenti sono resi disponibili nel runtime di sviluppo locale, in modo da poter visualizzare più facilmente l’anteprima del codice e del contenuto prima della pubblicazione.
 
 * Il **servizio di authoring** è il luogo in cui gli utenti interni creano, gestiscono e visualizzano in anteprima i contenuti.
 
@@ -74,7 +74,7 @@ Un ambiente AEM completo è costituito da authoring, pubblicazione e Dispatcher.
 
 ## Flusso di lavoro di sviluppo locale {#the-local-development-workflow}
 
-Il progetto di sviluppo locale è basato su Apache Maven e utilizza Git per il controllo del codice sorgente. Per aggiornare il progetto, gli sviluppatori possono utilizzare, tra gli altri, il proprio ambiente di sviluppo integrato preferito, ad esempio Eclipse, Visual Studio Code o IntelliJ.
+Il progetto di sviluppo locale è basato su Apache Maven e utilizza Git per il controllo del codice sorgente. Per aggiornare il progetto, gli sviluppatori possono utilizzare l&#39;ambiente di sviluppo integrato preferito, ad esempio Eclipse, Visual Studio Code o IntelliJ.
 
 Per testare gli aggiornamenti di codice o contenuto acquisiti dall’applicazione headless, devi distribuire gli aggiornamenti al runtime AEM locale, che include le istanze locali dei servizi di authoring e pubblicazione AEM.
 
@@ -84,7 +84,7 @@ In un sistema di produzione, un Dispatcher e un server http Apache saranno sempr
 
 ## Anteprima del codice e del contenuto localmente con l’ambiente di sviluppo locale {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-Per preparare il progetto headless di AEM per il lancio, è necessario assicurarsi che tutte le sue parti costitutive funzionino bene.
+Per preparare il progetto AEM headless per il lancio, è necessario assicurarsi che tutte le parti costitutive del progetto funzionino correttamente.
 
 Per farlo, devi mettere tutto insieme: codice, contenuto e configurazione e testarlo in un ambiente di sviluppo locale per renderlo disponibile dal vivo.
 

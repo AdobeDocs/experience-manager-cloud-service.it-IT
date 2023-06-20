@@ -2,9 +2,9 @@
 title: Programmi e tipi di programmi
 description: Scopri la gerarchia di Cloud Manager, le differenze tra i diversi tipi di programmi e come si adattano alla struttura gerarchica.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 100%
 
 ---
@@ -59,5 +59,5 @@ L’utente può creare un programma di **produzione** o un programma **sandbox**
    * Per ulteriori informazioni, consulta il documento [Introduzione ai programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 * I **programmi sandbox** vengono generalmente creati a scopi di formazione, esecuzione di demo, abilitazione, POC o documentazione.
    * Gli ambienti sandbox non sono concepiti per il traffico in tempo reale e presentano delle limitazioni non riscontrate nei programmi di produzione.
-   * Gli ambienti sandbox includono Sites e Assets e vengono forniti automaticamente con un ramo Git che include il codice di esempio, un ambiente di sviluppo e una pipeline non di produzione.
+   * Un programma sandbox include Sites e Assets e viene fornito automaticamente con un ramo Git che include il codice di esempio, un ambiente di sviluppo e una pipeline non di produzione.
    * Per ulteriori informazioni, consulta il documento [Introduzione ai programmi Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).

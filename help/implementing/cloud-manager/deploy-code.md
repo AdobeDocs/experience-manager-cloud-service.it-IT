@@ -2,10 +2,10 @@
 title: Distribuzione del codice
 description: Scopri come distribuire il codice con le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 63e38485e2f15c6947c7fba1848d47eda4cc900e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 100%
+source-wordcount: '1215'
+ht-degree: 94%
 
 ---
 
@@ -82,14 +82,14 @@ La fase di **test nell’ambiente di staging** prevede i seguenti passaggi.
 * **Audit dell’esperienza**: questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Quando si esegue una pipeline di produzione, viene incluso un passaggio di audit dell’esperienza dopo i test funzionali personalizzati che eseguiranno i controlli.
    * Le pagine configurate vengono inviate al servizio e valutate.
    * I risultati sono informativi e mostrano i punteggi e cosa è cambiato tra il punteggio corrente e quello precedente.
-   * Questa informazione è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.
+   * Questa informazione è utile per determinare se c’è una regressione introdotta con la distribuzione corrente.
    * Per ulteriori informazioni, consulta la sezione dedicata alla [lettura dei risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 ![Test nell’ambiente di staging](assets/stage-testing.png)
 
 ## Fase di implementazione nell’ambiente di produzione {#deployment-production}
 
-Il processo di implementazione nelle topologie di produzione è leggermente diverso per ridurre l’impatto sui visitatori di un sito AEM.
+Il processo di distribuzione nelle topologie di produzione è leggermente diverso per ridurre al minimo l’impatto sui visitatori di un sito AEM.
 
 Le implementazioni nell’ambiente di produzione seguono generalmente la stessa procedura descritta in precedenza, ma in modo continuo.
 
@@ -149,7 +149,7 @@ Limiti:
 
 ### Identificazione di un’esecuzione rieseguita
 
-Per identificare se un’esecuzione è stata rieseguita, verifica il campo trigger. Il valore sarà *RE_EXECUTE*.
+Per identificare se un’esecuzione è stata rieseguita, verifica il campo trigger. Il suo valore è *RI_ESEGUI*.
 
 ### Attivazione di una nuova esecuzione
 
@@ -193,4 +193,4 @@ Per attivare una nuova esecuzione è necessario effettuare una richiesta PUT al 
 
 La sintassi del valore _href_ del collegamento HAL di cui sopra non è concepita per essere utilizzata come punto di riferimento. Il valore effettivo deve sempre essere letto dal collegamento HAL e non generato.
 
-L’invio di una richiesta *PUT* a questo endpoint genera una risposta *201* in caso di esito positivo; il corpo della risposta è la rappresentazione della nuova esecuzione. È simile all’avvio di un’esecuzione normale tramite l’API.
+Invio di un *PUT* la richiesta a questo endpoint restituisce un *201* response if success (risposta in caso di esito positivo); il corpo della risposta è la rappresentazione della nuova esecuzione. È simile all’avvio di un’esecuzione normale tramite l’API.

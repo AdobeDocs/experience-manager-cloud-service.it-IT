@@ -2,10 +2,10 @@
 title: Creazione di programmi di produzione
 description: Scopri come creare un programma di produzione per ospitare il traffico in tempo reale con Cloud Manager.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: ht
-source-wordcount: '582'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Per creare un programma di produzione, segui la procedura riportata di seguito.
 1. Dalla scheda **Soluzioni e componenti aggiuntivi**, seleziona le soluzioni da includere nel programma.
 
    * Se non sai per certo se ti servono uno o più programmi per le varie soluzioni disponibili, seleziona quella che più ti interessa. Potrai attivare altre soluzioni in un secondo tempo [modificando il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md). Per ulteriori consigli sulla configurazione del programma, consulta [Introduzione ai programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
-   * Se hai selezionato **Abilita protezione avanzata** in precedenza, potrai selezionare solo il numero di soluzioni per le quali sono disponibili adesioni HIPAA.
+   * Se hai selezionato **Abilita sicurezza avanzata** in precedenza, era possibile selezionare solo tutte le soluzioni per le quali erano disponibili i diritti HIPAA.
 
    ![Selezione delle soluzioni](assets/setup-prod-select.png)
 

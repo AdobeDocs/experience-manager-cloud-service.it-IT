@@ -2,9 +2,9 @@
 title: Tag di decorazione
 description: Quando viene eseguito il rendering di un componente in una pagina web, è possibile generare un elemento HTML che racchiude all’interno il componente renderizzato. AEM offre agli sviluppatori una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti.
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '787'
 ht-degree: 10%
 
 ---
@@ -39,7 +39,7 @@ Per controllare il comportamento del tag di decorazione, è possibile applicare 
 * **`cq:htmlTag`nodo :** Questo nodo può essere aggiunto sotto un componente e può avere le seguenti proprietà:
    * **`cq:tagName {String}`:** Questa può essere utilizzata per specificare un tag HTML personalizzato da utilizzare per il wrapping dei componenti invece dell’elemento DIV predefinito.
    * **`class {String}`:** Può essere utilizzato per specificare i nomi delle classi CSS da aggiungere al wrapper.
-   * Altri nomi di proprietà verranno aggiunti come attributi HTML con lo stesso valore String fornito.
+   * Altri nomi di proprietà vengono aggiunti come attributi HTML con lo stesso valore String fornito.
 
 ## Controlli script {#script-controls}
 
@@ -89,7 +89,7 @@ Tutti gli esempi seguenti presuppongono la seguente struttura di contenuto e i s
 
 #### Caso d&#39;uso 1: inclusione di un componente per il riutilizzo del codice {#use-case-include-a-component-for-code-reuse}
 
-Il caso d’uso più tipico è quando un componente include un altro componente per motivi di riutilizzo del codice. In tal caso, non si desidera che il componente incluso sia modificabile con la propria barra degli strumenti e la propria finestra di dialogo, pertanto non è necessario alcun wrapper, e il `cq:htmlTag` verrà ignorato. Questo può essere considerato il comportamento predefinito.
+Il caso d’uso più tipico è quando un componente include un altro componente per motivi di riutilizzo del codice. In tal caso, non si desidera che il componente incluso sia modificabile con la propria barra degli strumenti e la propria finestra di dialogo, pertanto non è necessario alcun wrapper, e il `cq:htmlTag` viene ignorato. Questo può essere considerato il comportamento predefinito.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 

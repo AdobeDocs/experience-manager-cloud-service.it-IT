@@ -2,10 +2,10 @@
 title: Configurazione headless
 description: Questa guida rapida ti permette di scoprire informazioni fondamentali sulle potenti funzionalità headless di AEM as a Cloud Service, tra cui modelli di contenuto, frammenti di contenuto e API di GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 94%
 
 ---
 
@@ -30,12 +30,11 @@ Di seguito è riportato un semplice percorso in cinque passaggi per creare, gest
 >* [Percorso di authoring di contenuti headless](/help/journey-headless/author/overview.md)
 >* [Percorso di traduzione headless](/help/journey-headless/translation/overview.md).
 
-
 ## Pubblico {#audience}
 
 Per una dimostrazione di base completa delle funzionalità headless di AEM, sono necessarie le attività specificate. Chiunque abbia accesso come amministratore a un’istanza di prova di AEM può seguire queste istruzioni per comprendere la distribuzione headless in AEM. Tuttavia, è consigliabile avere esperienza come sviluppatore.
 
-In situazioni di produzione, le attività sono eseguite da diversi utenti per un numero variabile di volte. Ad esempio:
+Tuttavia, in una situazione di produzione, le attività vengono eseguite da utenti tipo diversi un numero variabile di volte. Ad esempio:
 
 * Gli **amministratori** devono impostare la configurazione iniziale e la struttura delle cartelle per il contenuto, di solito una sola volta o occasionalmente.
 * Gli **architetti dell’informazione** in genere aggiungono nuovi modelli man mano che le esigenze dell’organizzazione aumentano.

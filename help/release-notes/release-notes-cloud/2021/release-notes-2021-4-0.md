@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: a2c844d6f72c22ed085690ff98572a52e97de40d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 26%
+source-wordcount: '1533'
+ht-degree: 25%
 
 ---
 
@@ -41,7 +41,7 @@ La seguente versione (2021.5.0) sarà del 27 maggio 2021.
 
 * Modelli di contenuto, tipo di dati Tag migliorato: ora puoi configurare il tipo di dati Tag per consentire l’authoring di uno o più tag.
 
-* Modelli di contenuto, nuovo tipo di dati Segnaposto scheda . Il nuovo tipo di dati Segnaposto scheda consente di raggruppare i tipi di dati in sezioni da visualizzare nelle schede dell’editor dei frammenti di contenuto.
+* Modelli di contenuto, nuovo tipo di dati Segnaposto scheda . Il nuovo tipo di dati Segnaposto scheda consente di raggruppare i tipi di dati in sezioni visualizzate all’interno di schede nell’editor dei frammenti di contenuto.
 
 ### Correzioni di bug in [!DNL Sites] {#bug-fixes-sites}
 
@@ -95,25 +95,25 @@ La seguente versione (2021.5.0) sarà del 27 maggio 2021.
 
 * **Utilizzare il metodo di autenticazione tramite documento ufficiale in Adaptive Forms abilitato per Adobe Sign**
 
-   Basato su algoritmi avanzati di apprendimento automatico, il processo tramite documento ufficiale di Adobe Sign consente alle aziende di tutto il mondo di garantire un’autenticazione di alta qualità dell’identità del destinatario. Ora puoi utilizzare il metodo di autenticazione tramite documento ufficiale in Adaptive Forms abilitato per Adobe Sign.
+  Basato su algoritmi avanzati di apprendimento automatico, il processo tramite documento ufficiale di Adobe Sign consente alle aziende di tutto il mondo di garantire un’autenticazione di alta qualità dell’identità del destinatario. Ora puoi utilizzare il metodo di autenticazione tramite documento ufficiale in Adaptive Forms abilitato per Adobe Sign.
 
-   Il Government ID è un metodo di autenticazione dell’identità avanzato che indica al destinatario di [caricare l’immagine di un documento di identità ufficiale (patente di guida, carta d’identità, passaporto)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)e quindi valuta il documento per assicurarne l&#39;autenticità.
+  Il Government ID è un metodo di autenticazione dell’identità avanzato che indica al destinatario di [caricare l&#39;immagine di un documento di identità ufficiale (patente di guida, carta d&#39;identità, passaporto)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)e quindi valuta il documento per assicurarne l&#39;autenticità.
 
 * **Supporto all’utilizzo dell’esperienza di firma interna ai moduli per l’invio asincrono dei moduli adattivi**
 
-   È ora possibile utilizzare l’esperienza di firma interna ai moduli per l’invio asincrono di moduli adattivi. È inoltre possibile incorporare un modulo adattivo in un [!DNL Experience Manager Sites] e utilizza l’esperienza di firma interna ai moduli per inviare moduli adattivi.
+  È ora possibile utilizzare l’esperienza di firma interna ai moduli per l’invio asincrono di moduli adattivi. È inoltre possibile incorporare un modulo adattivo in un [!DNL Experience Manager Sites] e utilizza l’esperienza di firma interna ai moduli per inviare moduli adattivi.
 
 * **Supporto per l’utilizzo di una variabile per specificare un allegato durante la precompilazione di un Modulo adattivo per una fase Assegna attività**
 
-   Durante la precompilazione di un modulo adattivo per una fase Assegna attività, è ora possibile utilizzare una variabile relativa al tipo di documento per selezionare un allegato di input per il modulo adattivo.
+  Durante la precompilazione di un modulo adattivo per una fase Assegna attività, è ora possibile utilizzare una variabile relativa al tipo di documento per selezionare un allegato di input per il modulo adattivo.
 
 * **Supporto per l’utilizzo dell’opzione letterale per impostare il valore per una variabile di tipo JSON**
 
-   È possibile utilizzare l’opzione letterale per impostare il valore di una variabile di tipo JSON nel passaggio Imposta variabile di un flusso di lavoro AEM. L’opzione letterale ti consente di specificare un JSON sotto forma di stringa.
+  È possibile utilizzare l’opzione letterale per impostare il valore di una variabile di tipo JSON nel passaggio Imposta variabile di un flusso di lavoro AEM. L’opzione letterale ti consente di specificare un JSON sotto forma di stringa.
 
 * **Utilizzare l’ambiente di sviluppo locale per creare un documento di record (DoR)**
 
-   Puoi utilizzare un XDP come modello per un documento di record nelle istanze di Cloud Service e nell’SDK as a Cloud Service di AEM Forms (ambiente di sviluppo locale). In precedenza, il supporto era limitato solo alle istanze di Cloud Service.
+  Puoi utilizzare un XDP come modello per un documento di record nelle istanze di Cloud Service e nell’SDK as a Cloud Service di AEM Forms (ambiente di sviluppo locale). In precedenza, il supporto era limitato solo alle istanze di Cloud Service.
 
 ### Correzioni di bug in [!DNL Forms] {#bug-fixes-forms}
 
@@ -165,7 +165,7 @@ La prossima versione è pianificata per il 6 maggio 2021.
 
 * Ora non è più possibile modificare o eliminare accidentalmente i progetti nella Console per sviluppatori di Adobe I/O creata da Cloud Manager.
 
-* Quando l’utente aggiunge un nuovo ambiente viene informato che, dopo la sua creazione, l’ambiente non può essere spostato in un’area geografica diversa.
+* Quando un utente aggiunge un nuovo ambiente viene informato che, dopo la creazione, l’ambiente non può essere spostato in un’area diversa.
 
 * Ora le variabili di ambiente possono avere l’ambito di un servizio specifico tra Author o Publish. Richiede AEM versione 2021.03.5104.20210328T185548Z o superiore.
 

@@ -2,10 +2,10 @@
 title: Introduzione alla gestione dei certificati SSL
 description: Scopri gli strumenti self-service offerti da Cloud Manager per l’installazione dei certificati SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 79%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Gestione dei certificati SSL"
->abstract="Scopri gli strumenti self-service offerti da Cloud Manager per l’installazione e la gestione dei certificati SSL al fine di proteggere il sito per gli utenti. Cloud Manager si avvale di un servizio di piattaforma TLS per gestire i certificati SSL e le chiavi private di proprietà dei clienti ottenuti da autorità di certificazione terze."
+>abstract="Scopri gli strumenti self-service offerti da Cloud Manager per installare e gestire i certificati SSL al fine di proteggere il sito per gli utenti. Cloud Manager si avvale di un servizio di piattaforma TLS per gestire i certificati SSL e le chiavi private di proprietà dei clienti ottenuti da autorità di certificazione terze."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=it" text="Visualizzazione, aggiornamento e sostituzione di un certificato SSL"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=it" text="Controllo dello stato di un certificato SSL"
 
-Cloud Manager offre strumenti self-service per installare e gestire i certificati SSL al fine di proteggere il sito per gli utenti. Cloud Manager si avvale di un servizio di piattaforma TLS per gestire i certificati SSL e le chiavi private di proprietà dei clienti ottenuti da autorità di certificazione terze come Let’s Encrypt.
+Cloud Manager offre strumenti self-service per installare e gestire i certificati SSL in modo da proteggere il sito per gli utenti. Cloud Manager utilizza un servizio di piattaforma TLS per gestire i certificati SSL e le chiavi private di proprietà dei clienti ottenuti da autorità di certificazione terze come Let’s Encrypt.
 
 ## Introduzione ai certificati {#certificates}
 
 Le aziende utilizzano i certificati SSL per proteggere i siti web e guadagnare la fiducia della clientela. Per utilizzare il protocollo SSL, un server web richiede l’utilizzo di un certificato SSL.
 
-Quando un’entità richiede un certificato da un’autorità di certificazione, quest’ultima svolge un processo di verifica. Tale processo può includere la verifica del controllo dei nomi di dominio e la raccolta dei documenti di registrazione dell’azienda e degli accordi di sottoscrizione. Dopo aver verificato le informazioni di un’entità, l’autorità di certificazione firma la chiave pubblica mediante la propria chiave privata. Poiché tutte le principali autorità di certificazione dispongono di certificati radice nei browser web, il certificato dell’entità verrà collegato tramite una *catena di affidabilità* e verrà riconosciuto dal browser web come attendibile.
+Quando un’entità richiede un certificato da un’autorità di certificazione, quest’ultima svolge un processo di verifica. Tale processo può includere la verifica del controllo dei nomi di dominio e la raccolta dei documenti di registrazione dell’azienda e degli accordi di sottoscrizione. Dopo aver verificato le informazioni di un’entità, l’autorità di certificazione firma la chiave pubblica mediante la propria chiave privata. Poiché tutte le principali autorità di certificazione dispongono di certificati radice nei browser web, il certificato dell’entità viene collegato tramite un *catena di fiducia* e il browser web lo riconoscerà come certificato attendibile.
 
 >[!IMPORTANT]
 >
@@ -47,7 +47,7 @@ Cloud Manager supporta le seguenti opzioni di utilizzo dei certificati SSL perso
 AEM as a Cloud Service supporta solo siti `https` sicuri.
 
 * I clienti con più domini personalizzati non devono caricare un certificato ogni volta che aggiungono un dominio.
-* Per questi clienti è vantaggioso disporre di un solo certificato con più domini.
+* Tali clienti traggono vantaggio dall’ottenere un certificato con più domini.
 
 ## Requisiti {#requirements}
 

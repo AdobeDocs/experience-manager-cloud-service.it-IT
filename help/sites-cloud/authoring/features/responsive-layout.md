@@ -2,10 +2,10 @@
 title: Layout reattivo
 description: AEM consente di realizzare un layout dinamico per le pagine
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 67%
+source-wordcount: '1764'
+ht-degree: 66%
 
 ---
 
@@ -28,11 +28,11 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 
 * Componente [**Contenitore di layout**](#adding-a-layout-container-and-its-content-edit-mode)
 
-   Questo componente è disponibile nel [browser dei componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) e fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia dinamica. Può essere impostato anche come sistema paragrafo predefinito sulla tua pagina.
+  Questo componente è disponibile nel [browser dei componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) e fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia dinamica. Può essere impostato anche come sistema paragrafo predefinito sulla tua pagina.
 
 * [**Modalità Layout**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
-   Una volta che il Contenitore di layout è collocato nella pagina, è possibile utilizzare la modalità di **Layout** per posizionare i contenuti all’interno della griglia dinamica.
+  Una volta che il Contenitore di layout è collocato nella pagina, è possibile utilizzare la modalità di **Layout** per posizionare i contenuti all’interno della griglia dinamica.
 
 * [**Emulatore**](#selecting-a-device-to-emulate)
 Consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
@@ -124,7 +124,6 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
    * La linea per la piega non viene visualizzata se l&#39;altezza del dispositivo emulato è superiore alle dimensioni dello schermo.
    * La piega è indicata per comodità dell’autore e non viene visualizzata nella pagina pubblicata.
 
-
 ## Aggiunta di un contenitore di layout e del relativo contenuto (modalità di modifica) {#adding-a-layout-container-and-its-content-edit-mode}
 
 Un **Contenitore di layout** è un sistema paragrafo che:
@@ -190,53 +189,54 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
 
 * Ridimensiona i componenti di contenuto utilizzando i punti blu. Il ridimensionamento viene sempre eseguito con snap-to-grid. Quando si ridimensiona la griglia di sfondo, viene mostrato come facilitare l’allineamento:
 
-   ![Ridimensiona i componenti](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+  ![Ridimensiona i componenti](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
-   >[!NOTE]
-   >
-   >Proporzioni e rapporti relativi saranno mantenuti al ridimensionamento di componenti come le **immagini**.
+  >[!NOTE]
+  >
+  >Proporzioni e rapporti vengono mantenuti quando componenti come **Immagini** sono ridimensionati.
 
 * Facendo clic/toccando un componente di contenuti la barra degli strumenti consente di:
    * **Elemento padre:** consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
    * **Mobile in nuova riga:** il componente viene spostato su una nuova riga, in base allo spazio disponibile all’interno della griglia.
    * **Nascondi componente:** il componente viene reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
 
-   ![Nascondi componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
+  ![Nascondi componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
 * In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Verrà visualizzata la barra degli strumenti per questa modalità.
 
-   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente layout e dei componenti ad esso appartenenti. Esempio:
+  La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente layout e dei componenti ad esso appartenenti. Esempio:
 
    * **Elemento padre:** consente di selezionare il componente principale.
 
-      ![Pulsante Elemento padre](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+     ![Pulsante Elemento padre](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
    * **Mostra componenti nascosti**: rende visibili tutti i componenti o singoli componenti. Il numero indica quanti sono componenti attualmente nascosti. Il contatore mostra il numero di componenti nascosti.
 
-      ![Pulsante Mostra componenti nascosti](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
+     ![Pulsante Mostra componenti nascosti](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
    * **Ripristina layout punto di interruzione**: consente di tornare al layout predefinito e non verrà quindi applicato alcun layout personalizzato.
 
-      ![Pulsante Ripristina layout punto di interruzione](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+     ![Pulsante Ripristina layout punto di interruzione](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
    * **Mobile in nuova riga:** consente di alzare il componente di una posizione, se lo spazio è sufficiente.
 
-      ![Pulsante Mobile in una nuova riga](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+     ![Pulsante Mobile in una nuova riga](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
    * **Nascondi componente:** consente di nascondere il componente corrente.
 
-      ![Pulsante Nascondi componente](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-   >[!NOTE]
-   >
-   >Nell’esempio in alto le azioni Mobile e Nascondi sono disponibili, perché questo Contenitore di layout è nidificato all’interno di un Contenitore di layout principale.
+     ![Pulsante Nascondi componente](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
 
-   * **Rivela componenti**
-Seleziona i componenti principali per visualizzare la barra degli strumenti delle azioni con 
-l’opzione **Mostra componenti nascosti**. In questo esempio, due componenti sono nascosti.
+  >[!NOTE]
+  >
+  >Nell’esempio in alto le azioni Mobile e Nascondi sono disponibili, perché questo Contenitore di layout è nidificato all’interno di un Contenitore di layout principale.
 
-      ![Mostra componenti](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-   Selezionando l’opzione **Mostra componenti nascosti**, i componenti che sono attualmente nascosti nelle posizioni originali vengono visualizzati in blu.
+   * **Mostra componenti**
+Seleziona i componenti principali per visualizzare la barra degli strumenti delle azioni con l’opzione **Mostra componenti nascosti**. In questo esempio, due componenti sono nascosti.
 
-   ![Pulsante Ripristina tutto](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+     ![Mostra componenti](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 
-   Selezionando **Ripristina tutto**, tutti i componenti nascosti diventano visibili.
+  Selezionando l’opzione **Mostra componenti nascosti**, i componenti che sono attualmente nascosti nelle posizioni originali vengono visualizzati in blu.
+
+  ![Pulsante Ripristina tutto](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+
+  Selezionando **Ripristina tutto**, tutti i componenti nascosti diventano visibili.

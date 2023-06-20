@@ -2,10 +2,10 @@
 title: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 description: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3714'
-ht-degree: 100%
+source-wordcount: '3709'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Negli URL sono presenti alcune best practice accettate.
 
 Durante la valutazione degli URL nel progetto AEM, considera le seguenti domande:
 
-*“Potendo vedere solo questo URL e non i contenuti della pagina, un utente sarebbe in grado di descrivere la pagina?”*
+*&quot;Potendo vedere solo questo URL e non i contenuti della pagina, un utente sarebbe in grado di descrivere la pagina?&quot;*
 
 Se la risposta è affermativa, è probabile che l’URL funzioni correttamente per un motore di ricerca.
 
@@ -46,9 +46,8 @@ Ecco alcuni suggerimenti di carattere generale su come creare URL per l’ottimi
    * Se utilizzi selettori in una pagina, scegli quelli che forniscono valori semantici.
    * Se un utente non riesce a interpretare l’URL, non può farlo nemmeno un motore di ricerca.
    * Ad esempio:
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-è da preferirsi a 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+è da preferirsi a `mybrand.com/products/product-detail.1234.html`
 
 * Se possibile, evita i sottodomini perché i motori di ricerca li considereranno come entità diverse, frammentando il valore SEO del sito.
 
@@ -78,9 +77,9 @@ Ecco alcuni suggerimenti di carattere generale su come creare URL per l’ottimi
 
 * Assicurati che ogni pagina sia gestita da un solo protocollo.
 
-   * A volte i siti vengono gestiti tramite `http` fino a quando l’utente non raggiunge una pagina contenente, ad esempio, un modulo di pagamento o di accesso, che viene gestito tramite `https`. Quando il collegamento viene effettuato da questa pagina, se l’utente può tornare alle pagine `http` e accedervi tramite `https`, il motore di ricerca ne tiene traccia come se fossero due pagine separate.
+   * A volte i siti vengono gestiti tramite `http` fino a quando un utente non raggiunge una pagina contenente, ad esempio, un modulo di pagamento o di accesso, che viene quindi impostato su `https`. Quando il collegamento viene effettuato da questa pagina, se l’utente può tornare alle pagine `http` e accedervi tramite `https`, il motore di ricerca ne tiene traccia come se fossero due pagine separate.
 
-   * Google attualmente preferisce le pagine `https` a quelle `http`. Per questo motivo è spesso preferibile gestire l’intero sito tramite `https`.
+   * Google attualmente preferisce le pagine `https` a quelle `http`. Per questo motivo è spesso preferibile gestire l&#39;intero sito tramite `https`.
 
 ### Configurazione del server {#server-configuration}
 
@@ -151,7 +150,7 @@ I servlet **Sling** permettono di registrare il servlet in modo opposto. Invece 
 L’annotazione SCR per questo tipo di servlet sarà simile al seguente:
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
 In questo caso, la risorsa gestita dall’URL (un’istanza della risorsa `myPageType`) è accessibile automaticamente nel servlet. Per accedervi, chiama:
@@ -186,20 +185,20 @@ Se un autore vuole che una pagina sia accessibile da una seconda posizione a sco
 Può essere necessario visualizzare i nomi delle pagine localizzate agli utenti del contenuto tradotto. Ad esempio:
 
 * L’URL visualizzato da un utente di lingua spagnola non dovrebbe essere:
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * Ma sarebbe meglio che fosse:
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
-Il problema correlato alla localizzazione del nome della pagina è che molti degli strumenti di localizzazione disponibili sulla piattaforma AEM dipendono dalla corrispondenza dei nomi delle pagine tra diverse lingue per garantire la sincronizzazione del contenuto.
+Il problema legato alla localizzazione del nome della pagina è che molti degli strumenti di localizzazione disponibili sulla piattaforma AEM dipendono dalla corrispondenza dei nomi delle pagine tra diverse lingue per mantenere sincronizzato il contenuto.
 
 Per risolvere questo problema, puoi utilizzare la proprietà `sling:alias`. Puoi aggiungere `sling:alias` come proprietà a qualsiasi risorsa per consentire l’utilizzo di un nome di alias della risorsa. Nell’esempio precedente, avrai:
 
 * Una pagina nel JCR in:
-   `…/es/home`
+  `…/es/home`
 
 * Una proprietà aggiunta a tale pagina:
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 In questo modo gli strumenti di traduzione di AEM, come l’utilità di gestione di più siti, continueranno a mantenere una relazione tra:
 
@@ -218,12 +217,11 @@ Allo stesso tempo gli utenti finali potranno interagire con il nome della pagina
 In un’installazione standard di AEM:
 
 * per la configurazione OSGi
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * la proprietà
-   **Mapping Location** (Posizione mappatura) ( `resource.resolver.map.location`)
+  **Mapping Location** (Posizione mappatura) ( `resource.resolver.map.location`)
 
 * viene impostata sul valore predefinito `/etc/map`.
 
@@ -252,8 +250,8 @@ Esiste però anche una soluzione più semplice per gestire questo problema:
    Utilizzando la console web, ad esempio localhost:4502/system/console/configMgr, puoi configurare Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    È consigliabile creare le mappature necessarie per ridurre gli URL come espressioni regolari, quindi definire queste configurazioni in un nodo OsgiConfignode, `config.publish`, incluso nella build.
 
    Invece di definire le mappature in `/etc/map`, puoi assegnarle direttamente alla proprietà **URL Mappings** (Mappature URL) ( `resource.resolver.mapping`):
@@ -315,7 +313,7 @@ Esempi:
 Per entrambi viene applicato il seguente tag all’intestazione della pagina:
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 ```
 
 Il valore `href` può essere relativo o assoluto. Per determinare l’URL canonico per la pagina e generare questo tag, il codice deve essere incluso nel markup della pagina.
@@ -373,7 +371,7 @@ Ad esempio, considera un sito in cui la directory principale della mappa del sit
 
 Nella configurazione predefinita, la finestra di dialogo Proprietà pagina consente di contrassegnare una pagina come radice di una sitemap e quindi, come descritto in precedenza, di generare una sitemap di se stessa e dei suoi discendenti. Questo comportamento è implementato dalle implementazioni dell’interfaccia `SitemapGenerator` e può essere esteso aggiungendo implementazioni alternative. Tuttavia, dato che la frequenza con cui rigenerare sitemap XML dipende fortemente dai flussi di lavoro e dai carichi di lavoro per l’authoring dei contenuti, il prodotto non presenta configurazioni `SitemapScheduler`. In questo modo la funzione può essere effettivamente opt-in.
 
-Al fine di abilitare il processo in background che genera sitemap XML, `SitemapScheduler` deve essere configurato. Per farlo, crea una configurazione OSGI per il PID `org.apache.sling.sitemap.impl.SitemapScheduler`. Espressione di pianificazione `0 0 0 * * ?` può essere utilizzato come punto di partenza per rigenerare tutte le sitemap XML una volta al giorno a mezzanotte.
+Per abilitare il processo in background che genera sitemap XML, `SitemapScheduler` deve essere configurato. Per farlo, crea una configurazione OSGI per il PID `org.apache.sling.sitemap.impl.SitemapScheduler`. Espressione di pianificazione `0 0 0 * * ?` può essere utilizzato come punto di partenza per rigenerare tutte le sitemap XML una volta al giorno a mezzanotte.
 
 ![Sitemap Apache Sling - Pianificazione](assets/sling-sitemap-scheduler.png)
 

@@ -2,10 +2,10 @@
 title: Comprendere l’installazione del componente aggiuntivo Demo di riferimento
 description: Scopri Cloud Manager e come viene utilizzato per installare il componente aggiuntivo.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 98%
 
 ---
 
@@ -70,7 +70,7 @@ I programmi possono essere programmi di produzione o programmi sandbox.
 * **Un programma di produzione** viene creato per consentire il traffico live quando il programma è pronto per essere live.
 * **Un programma sandbox** viene creato per la formazione, le demo in esecuzione, l’abilitazione, i POC, ecc. e non è destinato al traffico live.
 
-Per installare il componente aggiuntivo Demos di riferimento AEM, è necessario creare un nuovo programma sandbox.
+Per installare il componente aggiuntivo Demo di riferimento AEM, crea un programma sandbox.
 
 >[!NOTE]
 >

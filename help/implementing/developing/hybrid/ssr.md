@@ -2,9 +2,9 @@
 title: Rendering lato server e SPA
 description: L’utilizzo del rendering lato server (SSR) nell’SPA può accelerare il caricamento iniziale della pagina e quindi passare un ulteriore rendering al client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: a9eb03d4db478a4db8e6d2436bd06dcde70a3eeb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Questa operazione viene eseguita tramite **RemoteContentRenderer - Servizio OSGi
 
 Per la configurazione sono disponibili i seguenti campi:
 
-* **Schema percorso contenuto** - Espressione regolare per far corrispondere una parte del contenuto, se necessario
+* **Schema percorso contenuto** : espressione regolare che corrisponde a una parte del contenuto, se necessario
 * **URL endpoint remoto** : URL dell’endpoint responsabile della generazione del contenuto
    * Utilizza il protocollo HTTPS protetto se non si trova nella rete locale.
 * **Intestazioni di richiesta aggiuntive** - Intestazioni aggiuntive da aggiungere alla richiesta inviata all’endpoint remoto
@@ -72,7 +72,7 @@ Per la configurazione sono disponibili i seguenti campi:
 
 >[!NOTE]
 >
->Questa configurazione sfrutta [Rendering contenuto remoto,](#remote-content-renderer) che dispone di opzioni di estensione e personalizzazione aggiuntive.
+>Questa configurazione utilizza [Rendering contenuto remoto,](#remote-content-renderer) che dispone di opzioni di estensione e personalizzazione aggiuntive.
 
 ## Flusso di comunicazione basato sull’AEM {#aem-driven-communication-flow}
 
@@ -130,15 +130,15 @@ Entrambi i modelli sono validi e supportati dall’AEM. Tuttavia, si dovrebbero 
 
 ## Pianificazione per SSR {#planning-for-ssr}
 
-In genere è necessario eseguire il rendering lato server solo di una parte dell’applicazione. L’esempio comune è il contenuto che verrà visualizzato sopra la piega al caricamento iniziale della pagina, eseguito sul lato server. In questo modo si risparmia tempo distribuendo al client contenuti già sottoposti a rendering. Quando l’utente interagisce con l’SPA, il contenuto aggiuntivo viene riprodotto dal client.
+In genere, è necessario eseguire il rendering lato server solo di una parte dell’applicazione. L’esempio comune è il contenuto visualizzato sopra la piega al caricamento iniziale della pagina, di cui viene eseguito il rendering sul lato server. In questo modo si risparmia tempo distribuendo al client contenuti già sottoposti a rendering. Quando l’utente interagisce con l’SPA, il contenuto aggiuntivo viene riprodotto dal client.
 
-Se stai valutando l’implementazione del rendering lato server per l’SPA, devi verificare quali parti dell’app saranno necessarie.
+Se stai valutando l’implementazione del rendering lato server per l’SPA, devi verificare quali parti dell’app sono necessarie.
 
 ## Sviluppo di un SPA utilizzando la SSR {#developing-an-spa-using-ssr}
 
-Il rendering dei componenti SPA poteva essere eseguito dal client (nel browser) o dal lato server. Quando viene eseguito il rendering lato server, le proprietà del browser come le dimensioni della finestra e la posizione non sono presenti. Pertanto, i componenti dell’SPA devono essere isomorfi, senza presupporre dove saranno resi.
+Il rendering dei componenti SPA poteva essere eseguito dal client (nel browser) o dal lato server. Quando viene eseguito il rendering lato server, le proprietà del browser come le dimensioni della finestra e la posizione non sono presenti. Pertanto, i componenti dell’SPA devono essere isomorfi, senza supporre dove vengono resi.
 
-Per sfruttare SSR, devi distribuire il codice in AEM e su Adobe I/O Runtime, che è responsabile del rendering lato server. La maggior parte del codice sarà lo stesso, ma le attività specifiche del server saranno diverse.
+Per utilizzare SSR, devi distribuire il codice in AEM e su Adobe I/O Runtime, che è responsabile del rendering lato server. La maggior parte del codice è lo stesso, tuttavia le attività specifiche del server differiscono.
 
 ## SSR per l’SPA nell’AEM {#ssr-for-spas-in-aem}
 
@@ -160,7 +160,7 @@ Questo servizio è utilizzato internamente da [RemoteContentRendererRequestHandl
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-Il `RemoteContentRendererRequestHandlerServlet` può essere utilizzato per impostare a livello di programmazione la configurazione della richiesta. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implementazione predefinita del gestore di richieste fornita, ti consente di creare più configurazioni OSGi per mappare una posizione nella struttura del contenuto a un endpoint remoto.
+Il `RemoteContentRendererRequestHandlerServlet` può essere utilizzato per impostare a livello di programmazione la configurazione della richiesta. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implementazione predefinita del gestore di richieste fornita, ti consente di creare più configurazioni OSGi in modo da poter mappare una posizione nella struttura del contenuto a un endpoint remoto.
 
 Per aggiungere un gestore di richieste personalizzato, implementa `RemoteContentRendererRequestHandler` di rete. Assicurarsi di impostare `Constants.SERVICE_RANKING` proprietà del componente a un numero intero maggiore di 100, che corrisponde alla classificazione `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -194,4 +194,4 @@ Di solito, il modello HTL di un componente pagina è il destinatario principale 
 
 ### Requisiti {#requirements}
 
-I servlet sfruttano Sling Model Exporter per serializzare i dati del componente. Per impostazione predefinita, entrambe le opzioni `com.adobe.cq.export.json.ContainerExporter` e `com.adobe.cq.export.json.ComponentExporter` sono supportati come adattatori del modello Sling. Se necessario, puoi aggiungere le classi a cui la richiesta deve essere adattata utilizzando `RemoteContentRendererServlet` e l&#39;implementazione `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. Le classi aggiuntive devono estendere `ComponentExporter`.
+I servlet utilizzano Sling Model Exporter per serializzare i dati del componente. Per impostazione predefinita, entrambe le opzioni `com.adobe.cq.export.json.ContainerExporter` e `com.adobe.cq.export.json.ComponentExporter` sono supportati come adattatori del modello Sling. Se necessario, puoi aggiungere le classi a cui la richiesta deve essere adattata utilizzando `RemoteContentRendererServlet` e l&#39;implementazione `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. Le classi aggiuntive devono estendere `ComponentExporter`.

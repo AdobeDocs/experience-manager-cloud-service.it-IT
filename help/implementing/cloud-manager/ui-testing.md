@@ -2,10 +2,10 @@
 title: Test dell’interfaccia utente
 description: I test personalizzati dell’interfaccia utente sono una funzionalità facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni personalizzate.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2411'
-ht-degree: 99%
+source-wordcount: '2401'
+ht-degree: 95%
 
 ---
 
@@ -167,7 +167,7 @@ Affinché a Cloud Manager possa generare ed eseguire i test dell’interfaccia u
 * Il file deve trovarsi nel modulo secondario Maven per i test dell’interfaccia utente accanto al file `pom.xml` del modulo secondario dei test dell’interfaccia utente.
 * Il file deve trovarsi nella radice del file `tar.gz` integrato.
 
-Se il file non è presente, la build e le esecuzioni dei test dell’interfaccia utente verranno ignorate.
+Se il file non è presente, la build e le esecuzioni dei test dell’interfaccia utente vengono ignorate.
 
 Per includere un file `testing.properties` nell’artefatto della build, aggiungi un’istruzione `include` nel file `assembly-ui-test-docker-context.xml`.
 
@@ -207,7 +207,7 @@ Questa sezione descrive le convenzioni da seguire per l’immagine Docker conten
 
 ### Variabili di ambiente {#environment-variables}
 
-In fase di esecuzione, all’immagine Docker vengono passate le seguenti variabili di ambiente a seconda del framework.
+Le seguenti variabili di ambiente vengono passate all’immagine Docker in fase di esecuzione, a seconda del framework.
 
 | Variabile | Esempi | Descrizione | Test del framework |
 |---|---|---|---|
@@ -220,7 +220,7 @@ In fase di esecuzione, all’immagine Docker vengono passate le seguenti variabi
 | `AEM_PUBLISH_USERNAME` | `admin` | Nome utente per accedere all’istanza di pubblicazione di AEM | Tutti |
 | `AEM_PUBLISH_PASSWORD` | `admin` | Password per accedere all’istanza di pubblicazione di AEM | Tutti |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Percorso in cui salvare il rapporto XML con i risultati del test | Tutti |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | URL in cui è necessario caricare i file per renderli accessibili al test del framework | Tutti |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | URL in cui caricare il file per renderli accessibili al framework di test | Tutti |
 
 Gli esempi di test di Adobe forniscono funzioni di supporto per accedere ai parametri di configurazione:
 
@@ -242,7 +242,7 @@ Se implementi l’immagine Docker con altri linguaggi di programmazione o esecuz
 
 ### Prerequisiti {#prerequisites}
 
-* I test in Cloud Manager verranno eseguiti utilizzando un utente amministratore tecnico.
+* I test in Cloud Manager vengono eseguiti utilizzando un utente amministratore tecnico.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Se implementi l’immagine Docker con altri linguaggi di programmazione o esecuz
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | Quantità di tempo CPU riservato per ogni esecuzione di test. |
 | Memoria | 1Gi | Quantità di memoria allocata al test, valore in gibibyte. |
-| Timeout | 30 min | Durata dopo la quale il test verrà terminato. |
+| Timeout | 30 min | La durata dopo la quale il test viene terminato. |
 | Durata consigliata | 15 min | Adobe consiglia che la scrittura dei test non richieda più tempo di questo valore. |
 
 >[!NOTE]
@@ -343,7 +343,7 @@ Prima di attivare i test dell’interfaccia utente in una pipeline di Cloud Mana
 
 >[!NOTE]
 >
->I file di registro verranno archiviati nella cartella `target/` dell’archivio.
+>I file di registro vengono archiviati nella cartella `target/` dell’archivio.
 >
 >Per maggiori informazioni, consulta [l’archivio degli esempi di test AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
@@ -390,6 +390,6 @@ Prima di attivare i test dell’interfaccia utente in una pipeline di Cloud Mana
 
 >[!NOTE]
 >
->I file di registro verranno archiviati nella cartella `target/reports` dell’archivio.
+>I file di registro vengono archiviati nella cartella `target/reports` dell’archivio.
 >
->Per maggiori informazioni, consulta l’[Archivio degli esempi di test AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>Per maggiori informazioni, consulta [l’archivio degli esempi di test AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

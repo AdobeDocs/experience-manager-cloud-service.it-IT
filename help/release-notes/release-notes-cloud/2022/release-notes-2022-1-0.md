@@ -2,10 +2,10 @@
 title: Note sulla versione 2022.1.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2022.1.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a66215277ca83c011f2f4df621d055049c4c93a7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 98%
+source-wordcount: '1081'
+ht-degree: 97%
 
 ---
 
@@ -106,7 +106,7 @@ La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2022.01.0 è
 * Cloud Manager [evita di ricostruire la base di codice quando rileva che viene utilizzato lo stesso commit Git](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in più esecuzioni di pipeline full-stack.
 * L’accesso al registro dell’ambiente AEM ora richiede il profilo di prodotto **Responsabile dell’implementazione**. Gli utenti senza questo profilo visualizzeranno un pulsante disabilitato nell’interfaccia utente.
 * L’interfaccia utente non consente la configurazione della pipeline front-end per un programma in cui Sites non è abilitato come soluzione.
-* Al momento della generazione di una password Git, verrà visualizzata la data di scadenza.
+* Durante la generazione di una password Git, viene visualizzata la data di scadenza.
 
 ### Correzioni di bug {#bug-fixes-cm}
 

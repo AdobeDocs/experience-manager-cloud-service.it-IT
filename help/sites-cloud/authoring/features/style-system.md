@@ -2,10 +2,10 @@
 title: Sistema di stili
 description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 65%
+source-wordcount: '1320'
+ht-degree: 61%
 
 ---
 
@@ -24,7 +24,7 @@ Allo stesso modo, gli autori dei contenuti devono poter non solo strutturare e d
 Il sistema di stili offre una soluzione unificata alle esigenze degli autori di modelli e di contenuti:
 
 * Gli autori dei modelli possono definire le classi di stile nel criterio del contenuto dei componenti.
-* Gli autori dei contenuti possono quindi selezionare queste classi da un elenco a discesa durante la modifica del componente in una pagina per applicare gli stili corrispondenti.
+* Gli autori dei contenuti possono quindi selezionare queste classi da un elenco a discesa durante la modifica del componente in una pagina, in modo da poter applicare gli stili corrispondenti.
 
 La classe di stile viene quindi inserita nell’elemento wrapper di decorazione del componente, in modo che lo sviluppatore del componente non debba preoccuparsi di gestire gli stili oltre a fornire le relative regole CSS.
 
@@ -104,7 +104,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 >[!CAUTION]
 >
->Le classi CSS (nonché eventuale codice Javascript) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come [librerie client](/help/implementing/developing/introduction/clientlibs.md) per poter funzionare.
+>Le classi CSS e l&#39;eventuale codice JavaScript configurato come proprietà di stile di un criterio di un componente devono essere distribuiti come [Librerie client](/help/implementing/developing/introduction/clientlibs.md) al lavoro.
 
 ## Configurazione {#setup}
 
@@ -120,9 +120,9 @@ Affinché un componente possa funzionare con il sistema di stili di AEM e visual
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->In questo modo si sfruttano [le sovrapposizioni](/help/implementing/developing/introduction/overlays.md) tramite [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+In questo modo si sfruttano [le sovrapposizioni](/help/implementing/developing/introduction/overlays.md) tramite [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
-Con il componente configurato, gli stili configurati dagli autori della pagina verranno automaticamente inseriti dall’AEM sull’elemento decorativo che l’AEM racchiude automaticamente in ogni componente modificabile. Il componente stesso non deve fare altro per far sì che ciò accada.
+Con il componente configurato, gli stili configurati dagli autori delle pagine vengono automaticamente inseriti dall’AEM sull’elemento decorativo che l’AEM racchiude automaticamente in ogni componente modificabile. Il componente stesso non deve fare altro per far sì che ciò accada.
 
 ### Abilitare la scheda Stili nella finestra di dialogo Modifica {#enable-styles-tab-edit}
 
@@ -134,11 +134,11 @@ La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->In questo modo si sfruttano [le sovrapposizioni](/help/implementing/developing/introduction/overlays.md) tramite [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+In questo modo si sfruttano [le sovrapposizioni](/help/implementing/developing/introduction/overlays.md) tramite [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
->Per impostazione predefinita, la scheda Stili nella finestra di dialogo Modifica non è abilitata.
+Per impostazione predefinita, la scheda Stili nella finestra di dialogo Modifica non è abilitata.
 
 ### Stili con nomi di elementi  {#styles-with-element-names}
 
@@ -150,15 +150,13 @@ Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 
 >[!CAUTION]
 >
->Evita di definire i nomi degli elementi per gli stili che possono essere combinati. Quando sono definiti più nomi di elementi, l’ordine di priorità è:
+Evita di definire i nomi degli elementi per gli stili che possono essere combinati. Quando sono definiti più nomi di elementi, l’ordine di priorità è:
 >
->1. HTL ha la precedenza su tutto: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
->1. Poi, tra più stili attivi, viene considerato il primo nell’elenco degli stili configurati nel criterio del componente.
->1. Infine, il `cq:tagName`/ `cq:htmlTag` del componente sarà considerato un valore di fallback.
-
+1. HTL ha la precedenza su tutto: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+1. Poi, tra più stili attivi, viene considerato il primo nell’elenco degli stili configurati nel criterio del componente.
+1. Infine, il `cq:tagName`/ `cq:htmlTag` del componente sarà considerato un valore di fallback.
 >
 
-
-Questa capacità di definire i nomi degli stili è utile per i componenti molto generici, come Contenitore di layout, o il componente Frammento di contenuto, al fine di attribuire loro un significato aggiuntivo.
+Questa capacità di definire i nomi degli stili è utile per i componenti generici, come Contenitore di layout, o il componente Frammento di contenuto, per attribuire loro un significato aggiuntivo.
 
 Ad esempio, consente di attribuire a un Contenitore di layout semantiche come `<main>`, `<aside>`, `<nav>` e così via.

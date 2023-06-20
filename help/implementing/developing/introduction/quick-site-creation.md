@@ -2,9 +2,9 @@
 title: Creazione rapida di siti e personalizzazione front-end
 description: Scopri in che modo lo strumento Creazione Rapida dei Siti utilizza modelli di sito, temi e la pipeline front-end per consentire una rapida distribuzione di nuovi siti e separare lo sviluppo front-end.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '328'
 ht-degree: 5%
 
 ---
@@ -29,8 +29,8 @@ Per una panoramica completa del funzionamento dello strumento Creazione Rapida d
 
 ## Risorse aggiuntive {#additional-resources}
 
-Poiché lo strumento Creazione Rapida dei Siti sfrutta molte funzioni dell’AEM, queste risorse aggiuntive possono essere utili.
+Poiché lo strumento Creazione Rapida dei Siti utilizza molte funzioni AEM, queste risorse aggiuntive potrebbero essere utili.
 
 * [Modelli del sito](/help/sites-cloud/administering/site-creation/site-templates.md) - Scopri come utilizzare i modelli di sito AEM per predefinire la struttura del sito e i contenuti iniziali per creare rapidamente nuovi siti.
 * [Temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) - Scopri come utilizzare i temi del sito AEM per personalizzare lo stile e la progettazione del sito.
-* [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Con la pipeline front-end, viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può guadagnare una notevole velocità. In questo documento vengono descritte alcune considerazioni di cui tenere conto per sfruttare appieno questo processo.
+* [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Con la pipeline front-end, viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può guadagnare una notevole velocità. Questo documento descrive alcune considerazioni di cui tenere conto per sfruttare appieno questo processo.

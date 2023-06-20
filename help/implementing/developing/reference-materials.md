@@ -1,8 +1,8 @@
 ---
 title: Materiali di riferimento API
-description: L’AEM dispone di API estese e potenti che puoi sfruttare per il tuo progetto di esperienza digitale.
+description: L’AEM dispone di API estese e potenti che puoi utilizzare per il tuo progetto di esperienza digitale.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 9%

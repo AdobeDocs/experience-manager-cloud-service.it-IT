@@ -2,10 +2,10 @@
 title: Panoramica dell’editor di SPA
 description: Questo articolo offre una panoramica completa dell’editor di SPA e del suo funzionamento, inclusi flussi di lavoro dettagliati relativi all’interazione dell’editor di SPA in AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 100%
+source-wordcount: '1630'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Il componente pagina per una SPA non fornisce gli elementi HTML dei suoi compone
 
 ### Gestione dei modelli di pagina {#page-model-management}
 
-La risoluzione e la gestione del modello di pagina sono delegate a una libreria `PageModel`. La SPA deve utilizzare la libreria Modello di pagina per essere inizializzata e creata dall’editor di SPA. La libreria Modello di pagina fornita indirettamente al componente Pagina AEM tramite l’npm `aem-react-editable-components`. Il Modello di pagina è un interprete tra AEM e SPA e quindi deve essere sempre presente. Quando si crea la pagina, deve essere aggiunta una libreria addizionale `cq.authoring.pagemodel.messaging` per abilitare la comunicazione con l’editor pagina.
+La risoluzione e la gestione del modello di pagina sono delegate a una libreria `PageModel`. L’SPA deve utilizzare la libreria Modello pagina in modo che possa essere inizializzata e creata dall’Editor SPA. La libreria Modello di pagina fornita indirettamente al componente Pagina AEM tramite l’npm `aem-react-editable-components`. Il Modello di pagina è un interprete tra AEM e SPA e quindi deve essere sempre presente. Quando viene creata la pagina, viene aggiunta una libreria `cq.authoring.pagemodel.messaging` per abilitare la comunicazione con l’editor pagina.
 
 Se il componente pagina SPA eredita dal componente core della pagina, sono disponibili due opzioni per rendere la categoria libreria client `cq.authoring.pagemodel.messaging` disponibile:
 
@@ -78,7 +78,7 @@ Tenendo presenti gli elementi chiave dell’editor di SPA, il flusso di lavoro d
 1. SPA viene caricato in un frame separato.
 1. SPA richiede contenuti JSON ed esegue il rendering dei componenti lato client.
 1. L’editor di SPA rileva i componenti renderizzati e genera sovrapposizioni.
-1. L’autore fa clic su sovrapponi e visualizza la barra degli strumenti di modifica del componente.
+1. L’autore fa clic su Sovrapposizione, visualizzando la barra degli strumenti di modifica del componente.
 1. L’Editor SPA mantiene le modifiche con una richiesta POST al server.
 1. L’editor SPA richiede JSON aggiornato all’editor SPA, che viene inviato alla SPA con un evento DOM.
 1. La SPA riesegue il rendering del componente interessato, aggiornandone il DOM.
@@ -90,7 +90,6 @@ Tenendo presenti gli elementi chiave dell’editor di SPA, il flusso di lavoro d
 >* Alla SPA è sempre affidata la sua visualizzazione.
 >* L’Editor SPA è isolato dalla SPA stessa.
 >* Nella produzione (pubblicazione), l’editor SPA non viene mai caricato.
-
 
 ### Flusso di lavoro client-server di modifica delle pagine {#client-server-page-editing-workflow}
 
@@ -161,7 +160,7 @@ Le versioni precedenti di questi framework possono funzionare con l’SDK dell�
 
 ### Framework aggiuntivi {#additional-frameworks}
 
-Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Vedi il documento [Blueprint SPA](blueprint.md) per i requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi per lavorare con l’editor di SPA di AEM.
+Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Consulta la sezione [Blueprint SPA](blueprint.md) Documento sui requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi per lavorare con l&#39;AEM SPA Editor.
 
 ### Utilizzo di più selettori {#multiple-selectors}
 

@@ -2,10 +2,10 @@
 title: Authoring in AEM utilizzato come CMS headless - Introduzione
 description: Introduzione all’utilizzo delle funzioni di Adobe Experience Manager as a Cloud Service come CMS headless per la creazione di contenuti per il tuo progetto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
-workflow-type: ht
-source-wordcount: '665'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Ciò significa che i contenuti possono essere fruiti su una vasta gamma di dispo
 (E se ciò non bastasse, questi frammenti possono essere utilizzati anche per la creazione di pagine web AEM, se lo si desidera.)
 
 * CMS “tradizionale”
-   * Il contenuto viene creato per le pagine web utilizzando una serie di componenti che definiscono il modo in cui verrà eseguito il rendering del contenuto sul sito web. Anche in questo caso, AEM è estremamente flessibile in quanto il team di progetto può sviluppare componenti personalizzati.
+   * Il contenuto viene creato per le pagine web, utilizzando una serie di componenti che definiscono come viene eseguito il rendering del contenuto sul sito web. Anche in questo caso, AEM è estremamente flessibile in quanto il team di progetto può sviluppare componenti personalizzati.
 
 ## Modellazione dei contenuti {#content-modeling}
 

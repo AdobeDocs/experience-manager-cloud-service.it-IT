@@ -2,9 +2,9 @@
 title: Implementazione di un valutatore del predicato personalizzato per Query Builder
 description: Query Builder in AEM offre un modo semplice e personalizzabile per eseguire query sull’archivio dei contenuti
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,6 @@ Un predicato personalizzato potrebbe inoltre eseguire altre operazioni non diret
 >
 >* [Apri progetto aem-search-custom-predicate-valutator su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 >* Scarica il progetto come [un file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
-
 
 >[!NOTE]
 >
@@ -106,7 +105,7 @@ Innanzitutto devi aggiornare le dipendenze Maven del progetto. Il `PredicateEval
 
 >[!NOTE]
 >
->Ambito di applicazione `cq-search` dipendenza impostata su `provided` perché `cq-search` verrà fornito da `OSGi` contenitore.
+>Ambito di applicazione `cq-search` dipendenza impostata su `provided` perché `cq-search` è fornito da `OSGi` contenitore.
 
 Lo snippet seguente mostra le differenze nelle `pom.xml` file, in [formato diff unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
 

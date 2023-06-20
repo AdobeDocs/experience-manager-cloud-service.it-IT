@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.2.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.2.0 as a Cloud Service."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 35%
+source-wordcount: '1234'
+ht-degree: 34%
 
 ---
 
@@ -57,7 +57,7 @@ La seguente versione (2021.3.0) sarà del 25 marzo 2021.
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] ha il diritto di disporre di un [!DNL Brand Portal] dell&#39;istanza. Il [!DNL Cloud Manager] l&#39;utente può attivare [!DNL Brand Portal] il [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Consulta [attivare Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=it).
 
-* Ora le aziende possono reperire le risorse tramite [!DNL Brand Portal]. La funzione Asset sourcing sfrutta [!DNL Brand Portal] per aiutare i clienti a interagire con gli utenti dell’agenzia e reperire risorse per nuove campagne di marketing, servizi fotografici e progetti. Consulta [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=it).
+* Ora le aziende possono reperire le risorse tramite [!DNL Brand Portal]. La funzione Asset sourcing utilizza [!DNL Brand Portal] per aiutare i clienti a interagire con gli utenti dell’agenzia e reperire risorse per nuove campagne di marketing, servizi fotografici e progetti. Consulta [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=it).
 
 * Il [!DNL Brand Portal] il rapporto di utilizzo ora visualizza solo gli utenti attivi. Gli utenti inattivi non vengono più visualizzati. Gli utenti attivi sono quelli il cui account è assegnato a un profilo di prodotto in [!DNL Admin Console]. Consulta [[!DNL Brand Portal] rapporti](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -101,7 +101,7 @@ La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.2.0 è 
 
 * Ora l’interfaccia utente di Cloud Manager informa l’utente che temporaneamente potrebbe non essere possibile aggiungere/aggiornare il nome di dominio in quanto all’ambiente associato è collegata una pipeline in esecuzione o attualmente in attesa del passaggio di approvazione.
 
-* Ora le proprietà impostate nei file `pom.xml` del cliente con prefisso sonar vengono rimosse dinamicamente per evitare errori di build e del controllo di qualità.
+* Proprietà impostate nel cliente `pom.xml` i file con prefisso sonar vengono ora rimossi in modo dinamico per evitare errori di build e di controllo della qualità.
 
 * Ora l’interfaccia utente di Cloud Manager informa l’utente che temporaneamente potrebbe non essere possibile selezionare un certificato SSL se questo è in uso da un nome di dominio attualmente in fase di distribuzione.
 

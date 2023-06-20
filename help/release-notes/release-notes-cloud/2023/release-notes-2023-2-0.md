@@ -1,10 +1,10 @@
 ---
 title: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 937921e0310a659f52803de3d6895db8fcac4d2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -86,7 +86,7 @@ Utilizza i moduli adattivi headless per consentire agli sviluppatori di creare, 
 * creare moduli multi-canale di alta qualità nel linguaggio di programmazione desiderato
 * integrare in modo nativo i moduli nelle app desktop e per dispositivi mobili, nei siti web e nelle applicazioni chat
 * riutilizzare i componenti proprietari dell’interfaccia utente con le applicazioni di Forms
-* sfruttare la potenza di Adobe Experience Manager Forms
+* sfrutta la potenza di Adobe Experience Manager Forms
 
 È possibile inviare un’e-mail all’indirizzo aem-forms-headless@adobe.com dal proprio ID e-mail ufficiale per aderire al programma per i primi utilizzatori.
 

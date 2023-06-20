@@ -2,10 +2,10 @@
 title: Percorso della tua prima esperienza con AEM Headless
 description: In questa parte del Percorso per sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2014'
-ht-degree: 100%
+source-wordcount: '2013'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Separato da AEM, assicurati anche di disporre di una configurazione dell’ambie
 
 ### Definizione di modelli di contenuto e API {#defining-models}
 
-Vuoi creare un’esperienza coerente e gestire campagne personalizzate tra i canali, in modo da poter esaminare ogni singolo canale e superficie come una propria struttura di contenuti distinta a cui distribuire. Tuttavia, un modello di contenuto a disposizione per ogni canale sarà difficile da mantenere.
+Vuoi creare un’esperienza coerente e gestire campagne personalizzate tra i canali, in modo da poter esaminare ogni singolo canale e superficie come una propria struttura di contenuti distinta a cui distribuire. Tuttavia, mantenere un proprio modello di contenuto per ogni canale è difficile.
 
 È invece necessario considerare il modo in cui il contenuto su superfici diverse è correlato in base a principi di organizzazione quali gerarchie di marchi e prodotti, categorie di beni o superfici o passaggi nel percorso del cliente. Ad esempio, se disponi di un insieme di superfici che supportano un marchio specifico di auto prodotte, potresti voler iniziare con un modello di contenuto per informazioni generali che sarebbe vero per l’intera auto e poi avere elementi più specifici come il contenuto necessario da quando l’auto si avvia a quando ci sono problemi di servizio. Un modello di questo tipo applicherà l’ereditarietà del contenuto generale del marchio automobilistico, consentendo al tempo stesso turni in base al contesto specifico necessario. Aiuta anche nella gestione futura degli aggiornamenti di questo contenuto in quanto puoi applicare il controllo in base a ruoli come l’addetto marketing o il responsabile prodotto per l’intero marchio automobilistico rispetto a un autore responsabile dell’esperienza di “avvio automobile”.
 
@@ -86,7 +86,7 @@ Facoltativamente, puoi anche fare riferimento alle [risorse aggiuntive](#additio
 
 ## Implementazione della prima app AEM headless
 
-Questa è una panoramica di ciò che è necessario per implementare la prima app headless utilizzando AEM per distribuire i contenuti. Come eseguire questi passaggi sarà descritto in dettaglio nelle parti successive del Percorso per Sviluppatori Headless.
+Questa è una panoramica di ciò che è necessario per implementare la prima app headless utilizzando AEM per distribuire i contenuti. Le modalità di esecuzione di questi passaggi saranno descritte in dettaglio nelle parti successive del Percorso per sviluppatori headless.
 
 1. Creare modelli di frammenti di contenuto
 1. Creare frammenti di contenuto

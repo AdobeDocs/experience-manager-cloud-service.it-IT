@@ -1,24 +1,24 @@
 ---
 title: Percorsi di documentazione AEM
-description: I Percorsi di documentazione forniscono una struttura narrativa all’interno della documentazione AEM, mediante l'unione di funzioni complesse e disparate al fine di risolvere un obiettivo di business in modo da costituire una best practice. Progettati pensando agli inesperti di AEM, i percorsi introducono i concetti e le funzionalità che consentono di raggiungere un obiettivo da A a Z.
+description: I Percorsi di documentazione forniscono una struttura narrativa all’interno della documentazione AEM, mediante l’unione di funzioni complesse e disparate che consentono di risolvere un obiettivo di business in modo da seguire le best practice. Progettati pensando agli inesperti di AEM, i percorsi introducono i concetti e le funzionalità che consentono di raggiungere un obiettivo da A a Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1352'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
 # Percorsi di documentazione AEM {#aem-documentation-journeys}
 
-I Percorsi di documentazione forniscono una struttura narrativa all’interno della documentazione AEM, mediante l&#39;unione di funzioni complesse e disparate al fine di risolvere un obiettivo di business in modo da costituire una best practice. Progettati pensando agli inesperti di AEM, i percorsi introducono i concetti e le funzionalità che consentono di raggiungere un obiettivo da A a Z.
+I Percorsi di documentazione forniscono una struttura narrativa all’interno della documentazione AEM, mediante l’unione di funzioni complesse e disparate che consentono di risolvere un obiettivo di business in modo da seguire le best practice. Progettati pensando agli inesperti di AEM, i percorsi introducono i concetti e le funzionalità che consentono di raggiungere un obiettivo da A a Z.
 
 ## Cos’è un Percorso di documentazione? {#what-is}
 
 Un percorso di documentazione unisce molti argomenti e caratteristiche diversi e complessi, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente di AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
 
-I Percorsi di documentazione sono molto diversi dai documenti tecnici AEM esistenti, che si concentrano principalmente su un’unica funzione e documentazione delle attività, supponendo la conoscenza di AEM. Concentrandosi sui concetti e rinviando i dettagli approfonditi alla documentazione tecnica esistente, i Percorsi di documentazione offrono ai lettori che non conoscono AEM un punto da cui iniziare a comprendere come sfruttare la piattaforma utilizzando le best practice per rispondere a esigenze e flussi di lavoro di business comuni. Per questo motivo, i Percorsi di documentazione fungono da complemento e non da sostituzione della [Documentazione tecnica AEM esistente.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it)
+I Percorsi di documentazione sono molto diversi dai documenti tecnici AEM esistenti, che si concentrano principalmente su un’unica funzione e documentazione delle attività, supponendo la conoscenza di AEM. Concentrandosi sui concetti e rinviando i dettagli approfonditi alla documentazione tecnica esistente, i Percorsi di documentazione offrono ai lettori che non conoscono l’AEM un punto da cui iniziare a comprendere come la piattaforma può essere utilizzata utilizzando le best practice per rispondere a esigenze e flussi di lavoro di business comuni. Per questo motivo, i Percorsi di documentazione fungono da complemento e non da sostituzione della [Documentazione tecnica AEM esistente.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it)
 
 ### Apprendimento per narrazione {#narrative}
 
@@ -82,7 +82,7 @@ I Percorsi di documentazione sono intesi come complemento alla documentazione te
 
 ## Che percorsi ci sono? {#journeys}
 
-Sono già disponibili diversi Percorsi di documentazione. Poiché ogni percorso è progettato in modalità narrativa, consigliamo di iniziare con l’introduzione e leggere tutto il percorso per ottenere una piena comprensione dell’argomento nel contesto di AEM.
+Sono già disponibili diversi Percorsi di documentazione. Dato che ogni percorso è progettato come narrazione, si prega di iniziare con l&#39;introduzione e leggere tutto il percorso in modo da poter ottenere una piena comprensione dell&#39;argomento nel contesto dell&#39;AEM.
 
 | Percorso | Descrizione |
 |---|---|

@@ -2,10 +2,10 @@
 title: Gestione degli elenchi IP consentiti
 description: Scopri come visualizzare, modificare, eliminare e controllare lo stato degli elenchi IP consentiti in Cloud Manager.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
+source-wordcount: '818'
+ht-degree: 92%
 
 ---
 
@@ -69,8 +69,8 @@ Per controllare lo stato degli elenchi IP consentiti, segui la procedura riporta
 * **Eliminazione non riuscita**: durante un’operazione di eliminazione, una o più rimozioni non sono riuscite.
 
    * Ogni rimozione viene elencata con il relativo stato tra **Completo** o **Non riuscito**.
-   * Se una rimozione non riesce, lo stato visualizzato è **Eliminazione non riuscita**.
-   * Lo stato rimane **Eliminazione non riuscita** fino alla risoluzione di tutti gli errori.
+   * Lo stato diventa **Eliminazione non riuscita** se una rimozione non riesce.
+   * Lo stato rimane come **Eliminazione non riuscita** fino alla risoluzione di tutti gli errori.
       * Per risolvere gli errori, seleziona **Elimina** dal menu con i puntini di sospensione all’estrema destra della riga della tabella.
    * Non è possibile aggiornare un elenco IP consentiti con stato **Non riuscito**.
 
@@ -90,7 +90,7 @@ L’eliminazione di un elenco IP consentiti comporta la rimozione automatica del
 
 ## Configurazioni CDN preesistenti {#pre-existing-cdn}
 
-Se disponi di una configurazione CDN preesistente per l’elenco IP consentiti, viene visualizzato un messaggio informativo sulla pagina **Elenco IP consentiti** che ti invita ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
+Se disponi di una configurazione CDN preesistente per gli elenchi consentiti IP, viene visualizzato un messaggio informativo sulla **ELENCO CONSENTITI IP** , per invitarti ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
 
 Il messaggio non viene più visualizzato dopo aver eseguito la migrazione di tutte le configurazioni dell’ambiente preesistenti tramite l’interfaccia utente. Potrebbero essere necessari 1-2 giorni lavorativi affinché il messaggio non venga più visualizzato.
 

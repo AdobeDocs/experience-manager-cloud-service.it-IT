@@ -2,10 +2,10 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2491'
-ht-degree: 78%
+source-wordcount: '2481'
+ht-degree: 74%
 
 ---
 
@@ -20,8 +20,8 @@ Di seguito è riportato un elenco delle modifiche principali rispetto ad AEM 6.5
 1. Gli utenti non avranno più accesso al gestore degli indici di una singola istanza AEM per eseguire il debug, configurare o mantenere l’indicizzazione. Viene utilizzato solo per lo sviluppo locale e le distribuzioni on-premise.
 1. Gli utenti non cambieranno gli indici su una singola istanza AEM né dovranno più preoccuparsi dei controlli di coerenza o della reindicizzazione.
 1. In generale, le modifiche dell’indice vengono avviate prima di passare alla produzione per non aggirare i gateway di qualità nelle pipeline CI/CD di Cloud Manager e non influire sui KPI aziendali in produzione.
-1. Tutte le metriche correlate, comprese le prestazioni di ricerca in produzione, saranno disponibili per i clienti in fase di runtime al fine di fornire una visione olistica sugli argomenti di ricerca e indicizzazione.
-1. I clienti potranno impostare gli avvisi in base alle proprie esigenze.
+1. Tutte le metriche correlate, comprese le prestazioni di ricerca in produzione, sono disponibili per i clienti in fase di runtime per fornire una visione olistica degli argomenti di ricerca e indicizzazione.
+1. I clienti possono impostare gli avvisi in base alle proprie esigenze.
 1. Gli SRE monitorano lo stato di integrità del sistema 24/7 e intraprendono le azioni necessarie il più presto possibile.
 1. La configurazione dell’indice viene modificata tramite le distribuzioni. Le modifiche alla definizione dell’indice sono configurate come altre modifiche al contenuto.
 1. Ad alto livello sull&#39;AEM as a Cloud Service, con l&#39;introduzione della [modello di distribuzione continua](#index-management-using-rolling-deployments) esistono due set di indici: uno per la versione precedente e uno per la nuova versione.
@@ -241,7 +241,7 @@ Durante lo sviluppo o quando si utilizzano installazioni locali, gli indici poss
 
 Con le distribuzioni continue, non si verificano tempi di inattività. Per un certo periodo di tempo durante un aggiornamento, sia la vecchia versione (ad esempio, la versione 1) dell’applicazione che la nuova versione (versione 2) vengono eseguite contemporaneamente sullo stesso archivio. Se la versione 1 richiede la disponibilità di un determinato indice, questo non deve essere rimosso nella versione 2. L’indice deve essere rimosso in un secondo momento, ad esempio nella versione 3, che garantisce che la versione 1 dell’applicazione non è più in esecuzione. Inoltre, le applicazioni devono essere scritte in modo che la versione 1 funzioni bene, anche se la versione 2 è in esecuzione, e se sono disponibili indici della versione 2.
 
-Al termine dell’aggiornamento alla nuova versione, i vecchi indici possono essere raccolti come rifiuti dal sistema. I vecchi indici potrebbero restare ancora per un po’ di tempo, al fine di velocizzare i rollback (se dovesse essere necessario un rollback).
+Al termine dell’aggiornamento alla nuova versione, i vecchi indici possono essere raccolti come rifiuti dal sistema. I vecchi indici potrebbero rimanere ancora per un po’ di tempo, per velocizzare i rollback (se dovesse essere necessario un rollback).
 
 La tabella seguente mostra cinque definizioni di indice: l’indice `cqPageLucene` viene utilizzato in entrambe le versioni mentre l’indice `damAssetLucene-custom-1` viene utilizzato solo nella versione 2.
 

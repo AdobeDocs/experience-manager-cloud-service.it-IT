@@ -4,10 +4,10 @@ description: Experience Manager aggiunge automaticamente tag avanzati contestual
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1213'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ L’assegnazione tag video è attivata per impostazione predefinita in [!DNL Ado
 
 ## Applicazione di tag avanzati ai video al caricamento {#smart-tag-assets-on-ingestion}
 
-Quando [caricare risorse video](add-assets.md#upload-assets) a [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], i video vengono elaborati. Una volta completata l’elaborazione, consulta la sezione [!UICONTROL Base] scheda della risorsa [!UICONTROL Proprietà] pagina. Gli smart tag vengono aggiunti automaticamente al video in [!UICONTROL Tag avanzati]. I microservizi per le risorse sfruttano [!DNL Adobe Sensei] per creare questi tag avanzati.
+Quando [caricare risorse video](add-assets.md#upload-assets) a [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], i video vengono elaborati. Una volta completata l’elaborazione, consulta la sezione [!UICONTROL Base] scheda della risorsa [!UICONTROL Proprietà] pagina. Gli smart tag vengono aggiunti automaticamente al video in [!UICONTROL Tag avanzati]. Utilizzo dei microservizi per le risorse [!DNL Adobe Sensei] per creare questi tag avanzati.
 
 ![I tag avanzati vengono aggiunti ai video e visualizzati nella scheda Base delle Proprietà della risorsa](assets/smart-tags-added-to-videos.png)
 
@@ -138,19 +138,18 @@ Aggiungere la configurazione OSGI del punteggio di affidabilità al progetto dis
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
 >* [Gestire tag avanzati e ricerche di risorse](smart-tags.md#manage-smart-tags-and-searches)
 >* [Addestra il servizio di tag avanzati e assegna tag alle immagini](smart-tags.md)
-

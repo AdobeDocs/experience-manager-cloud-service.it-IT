@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2932'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -143,7 +143,7 @@ Le applicazioni personalizzate sono headless [Generatore di app di Project](http
 
 ### Esempio di profilo personalizzato {#custom-profile-example}
 
-Per illustrare l’utilizzo del profilo personalizzato, consideriamo un caso d’uso per applicare del testo personalizzato alle immagini della campagna. Puoi creare un profilo di elaborazione che sfrutta l’API Photoshop per modificare le immagini.
+Per illustrare l’utilizzo del profilo personalizzato, consideriamo un caso d’uso per applicare del testo personalizzato alle immagini della campagna. Puoi creare un profilo di elaborazione che utilizza l’API Photoshop per modificare le immagini.
 
 L’integrazione del servizio Asset compute consente ad Experience Manager di trasmettere questi parametri all’applicazione personalizzata utilizzando [!UICONTROL Parametri del servizio] campo. L’applicazione personalizzata chiama quindi l’API di Photoshop e trasmette questi valori all’API. Ad esempio, puoi passare il nome del font, il colore del testo, lo spessore e la dimensione del testo per aggiungere il testo personalizzato alle immagini della campagna.
 
@@ -161,7 +161,7 @@ Applica i profili di elaborazione alle cartelle utilizzando uno dei metodi segue
 
 * Gli amministratori possono selezionare una definizione di profilo di elaborazione in **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili elaborazione]**, e utilizzare **[!UICONTROL Applica profilo a cartelle]** azione. Viene aperto un browser dei contenuti che consente di passare a cartelle specifiche, selezionarle e confermare l’applicazione del profilo.
 * Gli utenti possono selezionare una cartella nell’interfaccia utente di Assets, utilizzare **[!UICONTROL Proprietà]** per aprire la schermata delle proprietà della cartella, fare clic sul pulsante **[!UICONTROL Elaborazione risorse]** e nella scheda [!UICONTROL Profilo di elaborazione] selezionare il profilo di elaborazione appropriato per la cartella. Per salvare le modifiche, fai clic su **[!UICONTROL Salva e chiudi]**.
-   ![Applicare il profilo di elaborazione a una cartella dalla scheda Proprietà risorsa](assets/folder-properties-processing-profile.png)
+  ![Applicare il profilo di elaborazione a una cartella dalla scheda Proprietà risorsa](assets/folder-properties-processing-profile.png)
 
 * Per applicare un profilo di elaborazione, gli utenti possono selezionare cartelle o risorse specifiche nell’interfaccia utente di Assets, quindi selezionare ![icona rielabora risorse](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Rielabora risorse]** tra le opzioni disponibili nella parte superiore.
 
@@ -270,16 +270,16 @@ Segui i passaggi descritti in [applicare un modello di flusso di lavoro a una ca
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
@@ -287,7 +287,6 @@ Segui i passaggi descritti in [applicare un modello di flusso di lavoro a una ca
 >* [Comprendere l’estensibilità e quando utilizzarla](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 >* [Come creare applicazioni personalizzate](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
 >* [Tipi MIME supportati per vari casi d’uso](/help/assets/file-format-support.md).
-
 
 <!-- TBD: 
 * How/where can admins check what's already configured and provisioned.

@@ -7,10 +7,10 @@ topic-tags: develop
 hide: true
 hidefromtoc: true
 exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
+source-wordcount: '3359'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ In questa lezione imparerai a conoscere l’ambiente di AEM Forms as a Cloud Ser
 
 1. Apri il browser e immetti l’URL dell’ambiente di authoring di Cloud Service.
 
-1. Accedi all’ambiente di authoring di Cloud Service. Le credenziali di accesso per l’ambiente di authoring verranno condivise con te durante il laboratorio.
+1. Accedi all’ambiente di authoring di Cloud Service. Le credenziali di accesso per l’ambiente di authoring vengono condivise con te durante il lab.
 
 1. Dopo aver effettuato l’accesso, passa all’interfaccia utente di AEM Forms. Fai clic su **Moduli**.
 
@@ -268,7 +268,6 @@ Configurazione dell’archivio locale del tema:
    > * Se ricevi un messaggio che chiede di aggiornare npm tramite il comando `npm notice Run npm nstall -g npm@9.6.0`, ignora il messaggio.
    > * Non eseguire altri comandi npm a meno che non sia indicato nella cartella di lavoro.
 
-
 1. Ora, per visualizzare l’anteprima del modulo, esegui il comando seguente.
 
    ```Shell
@@ -367,7 +366,7 @@ Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione d
 
    * **AEM_FORM_PATH**: specifica il percorso del modulo adattivo creato nella lezione precedente. Ad esempio `/content/forms/af/registration/`
 
-      ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
+     ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
 1. Apri la finestra dei comandi, assicurati di essere nella directory react-starter-kit-aem-headless-forms ed esegui il seguente comando:
 
@@ -518,7 +517,7 @@ Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione d
 
    * **AEM_FORM_PATH**: specifica il percorso del modulo adattivo creato nella lezione precedente. Ad esempio, /content/forms/af/registration/
 
-      ![](/help/forms/assets/screenshot2028126929.png)
+     ![](/help/forms/assets/screenshot2028126929.png)
 
 1. Apri la finestra dei comandi, assicurati di essere nella directory **react-starter-kit-aem-headless forms** ed esegui il comando seguente:
 

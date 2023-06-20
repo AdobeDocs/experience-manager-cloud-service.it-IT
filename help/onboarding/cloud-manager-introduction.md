@@ -2,10 +2,10 @@
 title: Introduzione a Cloud Manager
 description: Scopri in che modo Cloud Manager supporta il progetto AEM tramite programmi, ambienti e pipeline.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 33d587baba27ad54b1c9e34a36fadbd1dc56e3f5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 100%
+source-wordcount: '851'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ L’utente può creare un programma **sandbox** o un programma **di produzione**
 
 ## Ambienti di Cloud Manager {#cloud-manager-environments}
 
-Gli ambienti cloud vengono creati, aperti e visualizzati tramite Cloud Manager. Questi ambienti possono essere di produzione, staging o sviluppo. Ambienti diversi hanno scopi diversi e possono essere utilizzati con diverse pipeline CI/CD. Gli ambienti sono composti di servizi quali:
+Gli ambienti cloud vengono creati, accessibili e visualizzati tramite Cloud Manager. Questi ambienti possono essere di produzione, staging o sviluppo. Ambienti diversi hanno scopi diversi e possono essere utilizzati con diverse pipeline CI/CD. Gli ambienti sono composti di servizi quali:
 
 * [Servizi di authoring di AEM](#author-services)
 * [Servizi di pubblicazione AEM](#publish-services)

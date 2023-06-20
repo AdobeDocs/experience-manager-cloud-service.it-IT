@@ -2,10 +2,10 @@
 title: Ricerca
 description: Ricerca completa per trovare più rapidamente i contenuti
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 63%
+source-wordcount: '492'
+ht-degree: 60%
 
 ---
 
@@ -33,16 +33,16 @@ La barra di ricerca consente di effettuare le seguenti operazioni:
 
 Per cercare e filtrare le risorse:
 
-1. Apri **Ricerca** (con la lente di ingrandimento nella barra degli strumenti) e immettere il termine di ricerca. Saranno presentati dei suggerimenti che potranno essere selezionati:
+1. Apri **Ricerca** (con la lente di ingrandimento nella barra degli strumenti) e immettere il termine di ricerca. Vengono forniti suggerimenti che è possibile selezionare:
 
    ![Ricerca termine](/help/sites-cloud/authoring/assets/search-term.png)
 
-   Per impostazione predefinita, i risultati della ricerca sono limitati alla posizione corrente (ovvero alla console e al tipo di risorsa corrispondente):
+   Per impostazione predefinita, i risultati della ricerca sono limitati alla posizione corrente (ovvero alla console e al tipo di risorsa correlato):
 
    ![Ricerca per posizione](/help/sites-cloud/authoring/assets/search-term-location.png)
 
 1. Se necessario, puoi rimuovere il filtro di posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire ricerche su tutte le console/i tipi di risorse.
-1. Verranno visualizzati i risultati, raggruppati in base alla console e al tipo di risorsa correlato.
+1. Vengono visualizzati i risultati, raggruppati in base alla console e al tipo di risorsa correlato.
 
    Puoi selezionare una risorsa specifica (sulla quale eseguire ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio **Visualizza tutti i siti**:
 
@@ -67,7 +67,6 @@ Per cercare e filtrare le risorse:
    >
    >* A seconda del tipo di risorsa selezionato; ad esempio, i criteri di Assets e Communities sono comprensibilmente specializzati.
    >* La tua istanza, nonché i moduli di ricerca, possono essere personalizzati (in base alla posizione all’interno di AEM).
-
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).

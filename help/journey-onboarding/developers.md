@@ -4,10 +4,10 @@ description: Quando l’amministratore di sistema ha configurato le risorse clou
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
-workflow-type: ht
-source-wordcount: '1419'
-ht-degree: 100%
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+workflow-type: tm+mt
+source-wordcount: '1417'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ A seconda delle esigenze dell’organizzazione, gli stessi utenti possono avere 
 Prima di iniziare le attività descritte in questo documento come utente con ruolo Sviluppatore o Responsabile dell’implementazione, assicurati che l’amministratore di sistema abbia completato tutti i passaggi di questo percorso di onboarding. Ciò significa che:
 
 * L’amministratore di sistema ha assegnato sviluppatori e responsabili dell’implementazione ai rispettivi profili di prodotto.
-* Gli sviluppatori sono stati inoltre assegnati ai profili di prodotto **Utenti AEM** o **Amministratori AEM** per poter utilizzare AEM.
+* Gli sviluppatori devono inoltre essere assegnati a **Utenti AEM** o **Amministratori AEM** anche i profili di prodotto utilizzano l’AEM.
 * Le risorse cloud sono state configurate.
 
 ## Accesso a Git {#accessing-git}

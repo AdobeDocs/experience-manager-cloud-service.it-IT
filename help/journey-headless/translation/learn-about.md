@@ -2,10 +2,10 @@
 title: Scopri i contenuti headless e come tradurli in AEM
 description: Imparare i concetti headless, come si mappano su AEM e la teoria della traduzione in AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Questo documento ti aiuta a comprendere la distribuzione headless dei contenuti,
 
 ## Distribuzione contenuti full-stack {#full-stack}
 
-Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da usare e su larga scala, le aziende li hanno sfruttati come punto centrale per gestire messaggi, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
+Fin dall&#39;introduzione dei sistemi CMS (Content Management System) su larga scala e facili da utilizzare, le aziende hanno utilizzato questi sistemi come posizione centrale per gestire messaggi, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
 
 ![CMS full-stack classico](/help/journey-headless/developer/assets/full-stack.png)
 

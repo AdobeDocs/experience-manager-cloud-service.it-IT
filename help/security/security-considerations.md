@@ -4,10 +4,10 @@ description: Informazioni sulle considerazioni importanti relative alla sicurezz
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '229'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## TrustStore in AEM {#aem-trust-store}
 
-Per supportare operazioni di crittografia asimmetriche, AEM memorizza i certificati all’interno dell’archivio dei contenuti in un TrustStore globale. I contenuti sono pubblici e, per impostazione predefinita, accessibili in modo anonimo da tutti gli utenti delle istanze degli editori.
+Per supportare operazioni di crittografia asimmetriche, i certificati vengono memorizzati dall&#39;AEM all&#39;interno dell&#39;archivio dei contenuti in un archivio attendibile globale. I contenuti sono pubblici e, per impostazione predefinita, accessibili in modo anonimo da tutti gli utenti delle istanze degli editori.
 
 ### Caratteristiche del TrustStore {#truststore-characteristics}
 
@@ -24,7 +24,7 @@ Per supportare operazioni di crittografia asimmetriche, AEM memorizza i certific
 * I clienti possono utilizzarlo nel proprio codice tramite l’[API dell’archivio chiavi](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * Il TrustStore può essere gestito tramite l’interfaccia utente in **Strumenti** - **Sicurezza** - **TrustStore** o tramite l’accesso a *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, come illustrato di seguito:
 
-   ![Gestione del TrustStore](/help/security/assets/global-trust-store-modified.png)
+  ![Gestione del TrustStore](/help/security/assets/global-trust-store-modified.png)
 
 * L’accesso al TrustStore può essere ulteriormente limitato dal controllo dell’accesso all’archivio, a seconda del caso d’uso.
 

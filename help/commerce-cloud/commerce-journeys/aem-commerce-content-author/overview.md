@@ -2,10 +2,10 @@
 title: Percorso di authoring dei contenuti in AEM Commerce
 description: Inizia qui un percorso guidato di authoring in AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 100%
+source-wordcount: '457'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Se desideri sapere come Adobe consiglia di risolvere i casi aziendali relativi a
 
 Questo percorso è progettato per l’authoring di contenuti in AEM Commerce. Questo percorso descrive i requisiti, le fasi e l’approccio per iniziare a gestire le pagine di catalogo, i modelli e le esperienze dei prodotti complete.
 
-Le informazioni di questo percorso possono essere utili per altri utenti tipo, ma alcune informazioni potrebbero essere superflue per certi ruoli. Rimani sintonizzato per i prossimi percorsi che includeranno ruoli aggiuntivi.
+Le informazioni in questo percorso possono ovviamente essere utili ad altri utenti, ma alcune sono superflue per alcuni ruoli. Rimani sintonizzato per i prossimi percorsi che includeranno ruoli aggiuntivi.
 
 ## Il percorso {#the-journey}
 

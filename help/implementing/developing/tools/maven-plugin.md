@@ -2,9 +2,9 @@
 title: Plug-in Maven pacchetto di contenuti Adobe
 description: Utilizza il plug-in Maven Content Package per distribuire le applicazioni AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1847'
 ht-degree: 6%
 
 ---
@@ -28,7 +28,6 @@ Questo documento descrive come utilizzare Maven per gestire queste attività. Tu
 >Pacchetto **creazione** è ora di proprietà di [Plug-in Maven pacchetto Apache Jackrabbit FileVault.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
 >* Il `content-package-maven-plugin` non supporta più la creazione di pacchetti dalla versione 1.0.2.
 >* Questo articolo descrive **distribuzione** dei pacchetti costruiti per l’AEM viene eseguito dal plug-in Maven per il pacchetto di contenuti Adobe.
-
 
 ## Pacchetti e struttura del progetto AEM {#aem-project-structure}
 
@@ -95,7 +94,7 @@ I parametri riportati nella tabella seguente sono comuni a tutti gli obiettivi, 
 | `serverId` | `String` | No | ID server da cui recuperare il nome utente e la password per l&#39;autenticazione | Tutti gli obiettivi tranne `package` |
 | `targetURL` | `String` | Sì | `http://localhost:4502/crx/packmgr/service.jsp` | URL dell’API del servizio HTTP del gestore di pacchetti AEM | Tutti gli obiettivi tranne `package` |
 | `timeout` | `int` | No | `5` | Timeout di connessione per la comunicazione con il servizio Gestione pacchetti, in secondi | Tutti gli obiettivi tranne `package` |
-| `useProxy` | `boolean` | No | `true` | Un valore di `true` fa in modo che Maven utilizzi la prima configurazione proxy attiva trovata per inoltrare le richieste al gestore di pacchetti. | Tutti gli obiettivi tranne `package` |
+| `useProxy` | `boolean` | No | `true` | Un valore di `true` fa in modo che Maven utilizzi la prima configurazione proxy attiva trovata per le richieste proxy al Gestione pacchetti. | Tutti gli obiettivi tranne `package` |
 | `userId` | `String` | Sì | `admin` | Nome utente da autenticare con AEM | Tutti gli obiettivi tranne `package` |
 | `verbose` | `boolean` | No | `false` | Abilita o disabilita la registrazione dettagliata | Tutti gli obiettivi tranne `package` |
 
@@ -182,7 +181,7 @@ Oltre ai seguenti parametri, consulta la descrizione della `name` parametro in [
 | `prefix` | `java.lang.String` | No | Nessuno |  |
 | `project` | `org.apache.maven.project.MavenProject` | Sì | Nessuno | Il progetto Maven |
 | `properties` | `java.util.Map` | No | Nessuno | Questi parametri definiscono proprietà aggiuntive che è possibile impostare in `properties.xml` file. Queste proprietà non possono sovrascrivere le seguenti proprietà predefinite: `group` (utilizzare `group` parametro da impostare), `name` (utilizzare `name` parametro da impostare), `version` (utilizzare `version` parametro da impostare), `description` (ricavato dalla descrizione del progetto), `groupId` (`groupId` del descrittore di progetto Maven), `artifactId` (`artifactId` del descrittore di progetto Maven), `dependencies` (utilizzare `dependencies` parametro da impostare), `createdBy` (il valore del `user.name` proprietà di sistema), `created` (l&#39;ora di sistema corrente), `requiresRoot` (utilizzare `requiresRoot` parametro da impostare), `packagePath` (generato automaticamente dal nome del gruppo e del pacchetto) |
-| `requiresRoot` | `boolean` | Sì | false | Definisce se il pacchetto richiede la radice. Questo diventerà il `requiresRoot` proprietà del `properties.xml` file. |
+| `requiresRoot` | `boolean` | Sì | false | Definisce se il pacchetto richiede la radice. Diventa il `requiresRoot` proprietà del `properties.xml` file. |
 | `subPackages` | `java.util.List` | No | Nessuno |  |
 | `version` | `java.lang.String` | Sì | Versione definita nel progetto Maven | Versione del pacchetto di contenuti |
 | `workDirectory` | `java.io.File` | Sì | La directory definita nel progetto Maven (fase di build) | Directory contenente il contenuto da includere nel pacchetto |

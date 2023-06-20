@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.11.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.11.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 100%
+source-wordcount: '1054'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ Dai un’occhiata al video [Panoramica sulla versione di dicembre 2021](https://
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* Il ritaglio e il campione avanzato dell’immagine di Dynamic Media è ora basato sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali verranno mantenute al momento della rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
+* Il ritaglio e il campione avanzato dell’immagine di Dynamic Media è ora basato sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali vengono mantenute durante la rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
 
 ### Nuove funzioni nel [!DNL Assets] canale prerelease {#assets-prerelease-features}
 
@@ -84,10 +84,10 @@ La prossima versione è prevista per il 9 dicembre 2021.
 
 ### Novità {#what-is-new-cm-nov}
 
-* Gli utenti possono ora sfruttare le nuove pipeline Front End per distribuire esclusivamente il codice front-end in modo accelerato. Consulta [Pipeline front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per ulteriori informazioni.
+* Gli utenti possono ora utilizzare le nuove pipeline front-end per distribuire esclusivamente il codice front-end in modo accelerato. Consulta [Pipeline front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per ulteriori informazioni.
 
-   >[!IMPORTANT]
-   >È necessario utilizzare la versione AEM `2021.10.5933.20211012T154732Z` o superiore per sfruttare nuove pipeline front-end.
+  >[!IMPORTANT]
+  >Devi usare la versione AEM `2021.10.5933.20211012T154732Z` o superiore per utilizzare le nuove pipeline front-end.
 
 * La durata della pipeline di qualità del codice viene notevolmente ridotta, eseguendo l’analisi del codice in modo più efficiente senza la necessità di creare un’immagine intera AEM. Questa modifica verrà implementata progressivamente nelle settimane successive al rilascio.
 

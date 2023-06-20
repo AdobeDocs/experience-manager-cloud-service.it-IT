@@ -2,10 +2,10 @@
 title: Guida rapida alle linee guida WCAG 2.1
 description: Guida rapida alle linee guida WCAG 2.1
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1776'
-ht-degree: 100%
+source-wordcount: '1774'
+ht-degree: 94%
 
 ---
 
@@ -42,8 +42,7 @@ in altre parole, si tratta di linee guida che possono essere applicate a diversi
 ogni istruzione è redatta in modo da poter essere testata in modo oggettivo affinché un gruppo di esperti di accessibilità possa concordare in linea generale sul fatto che la linea guida sia stata rispettata. Una delle problematiche correlate all’accessibilità, infatti, consiste nel fatto che alcune linee guida possono essere tecnicamente testabili, mentre altre richiedono una valutazione umana per verificare se siano state rispettate o meno.
 
 * Supporto dell’**implementazione contestuale e basata su priorità**:
-alle linee guida WCAG 2.1 vengono assegnate priorità basate sull’impatto probabile del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere decisioni informate sulle linee guida più importanti per una situazione specifica. Inoltre, è stato introdotto il concetto di 
-*accessibilità supportata*. Questo consente agli autori di decidere come utilizzare al meglio le tecnologie web che potrebbero non prevedere il supporto completo per l’accessibilità oppure che, per beneficiare delle funzioni di accessibilità, potrebbero richiedere l’accesso a particolari browser e/o tecnologie per l’accessibilità.
+alle linee guida WCAG 2.1 vengono assegnate priorità basate sull’impatto probabile del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere decisioni informate sulle linee guida più importanti per una situazione specifica. Viene inoltre introdotto il concetto di *supporto dell’accessibilità*. Questo consente agli autori di decidere come utilizzare al meglio le tecnologie web che potrebbero non essere supportate completamente dall’accessibilità, o che potrebbero richiedere l’uso di specifiche tecnologie per l’accessibilità, e i browser, o entrambi, per beneficiare delle funzioni di accessibilità.
 
 Tali obiettivi hanno influenzato in modo significativo la struttura delle linee guida WCAG 2.1.
 
@@ -115,7 +114,7 @@ Ogni tecnica ha un numero univoco, relativo alla raccolta corrispondente. Ad ese
 
 Le tecniche possono essere sufficienti, consigliate o di errore.
 
-* Una *tecnica sufficiente*, se seguita, sarà sufficiente per soddisfare un particolare criterio di successo.
+* A *Tecnica sufficiente* è uno, che se seguito è sufficiente per soddisfare un particolare criterio di successo.
 * Una *tecnica consigliata*, se seguita, avrà un impatto positivo sull’accessibilità, ma potrebbe non essere sufficiente da sola per garantire il rispetto di un particolare criterio di successo.
 * Un *tecnica di errore* descrive un esempio specifico in cui i criteri di successo non sono stati soddisfatti.
 
@@ -127,13 +126,13 @@ L’elenco delle tecniche non è statico: WAI lo aggiorna costantemente con nuov
 
 Si tratta di una serie di documenti che forniscono consigli ai lettori per approfondire lo scopo di linee guida e criteri di successo specifici. È possibile [scaricare un’introduzione con collegamenti a informazioni più dettagliate](https://www.w3.org/WAI/WCAG21/Understanding/).
 
-Per ogni linea guida e criterio di successo è disponibile anche un breve documento esplicativo con informazioni su:
+Per ogni linea guida e criterio di successo è disponibile anche una pagina dedicata alla comprensione di, che fornisce informazioni su:
 
 * Intento della linea guida
 * Criteri di successo specifici
 * Tecniche consigliate, che contribuiscono a soddisfare i requisiti della linea guida, ma che non rientrano in alcun criterio di successo specifico.
 
-Il documento esplicativo per ogni criterio di successo fornisce informazioni su:
+La pagina &quot;Comprensione&quot; di ogni criterio di successo fornisce informazioni su:
 
 * Intento del criterio di successo
 * Esempi generali di come può essere soddisfatto il criterio di successo
@@ -145,7 +144,7 @@ Nella sezione per la [comprensione del criterio di successo 1.1.1 (“Contenuti 
 
 ### Come soddisfare le linee guida WCAG 2.1 {#how-to-meet-wcag}
 
-Nella pagina dedicata a [come soddisfare le linee guida WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) sono disponibili indicazioni sulla conformità alle linee guida. Viene fornita una presentazione alternativa delle linee guida WCAG, che consente ai lettori di ottenere i contenuti delle linee guida pertinenti in base ai propri interessi e/o obiettivi. È possibile filtrare le tecniche relative ai criteri di successo da visualizzare specificando particolari tecnologie di contenuti web, ad esempio Cascading Style Sheets o script oppure specificando un particolare livello di priorità.
+La sezione &quot;Come soddisfare il criterio&quot; è disponibile sul sito [Come soddisfare le linee guida WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) pagina. Viene fornita una presentazione alternativa delle linee guida WCAG, che consente ai lettori di ottenere i contenuti delle linee guida pertinenti in base ai propri interessi e/o obiettivi. È possibile filtrare le tecniche relative ai criteri di successo da visualizzare specificando particolari tecnologie di contenuti web, ad esempio Cascading Style Sheets o script oppure specificando un particolare livello di priorità.
 
 Se non viene applicato alcun filtro, vengono presentati tutti i criteri di successo raggruppati per linea guida. Per ciascun criterio di successo, vengono fornite le seguenti informazioni:
 

@@ -2,10 +2,10 @@
 title: Abilitare AEM Screens per il tuo sito demo
 description: Scopri i passaggi per abilitare l’esperienza completa di AEM Screens as a Cloud Service sul tuo sito demo.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2699'
-ht-degree: 98%
+source-wordcount: '2696'
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ Anche sull’ultima immagine sui canali dell’ingresso viene eseguito il target
 
 ## Distribuire un progetto Screens demo {#deploy-project}
 
-Per utilizzare il contenuto demo nella sandbox creata nel passaggio [Crea programma](create-program.md), un sito deve essere creato in base a un modello.
+Per utilizzare il contenuto demo nella sandbox creata in [Crea programma](create-program.md) passaggio, un sito deve essere creato in base a un modello.
 
 Se non hai già creato un sito demo We.Cafe, segui semplicemente gli stessi passaggi della sezione [Crea un sito demo](create-site.md). Quando selezioni il modello, scegli semplicemente il **Modello del sito web We.Cafe**.
 
@@ -207,7 +207,7 @@ Dopo aver creato l’origine dati come foglio di calcolo Google Sheets e aver ab
    }
    ```
 
-AEM Screens può utilizzare lo stesso servizio per accedere ai dati meteo simulati. Questo verrà configurato nel passaggio successivo.
+AEM Screens può utilizzare lo stesso servizio per accedere ai dati meteo simulati configurati nel passaggio successivo.
 
 ### Configurare ContextHub {#configure-contexthub}
 

@@ -5,10 +5,10 @@ landing-page-description: Scopri come gestire i frammenti di contenuto dalla con
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 95%
+source-wordcount: '1103'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,6 @@ La console Frammenti di contenuto è dedicata a gestione, ricerca e creazione di
 >
 >* la presente console di **Frammenti di contenuto**;
 >* la console **Assets** - vedi [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md).
-
 
 >[!NOTE]
 >
@@ -60,12 +59,12 @@ Nella console puoi osservare tre aree principali:
 * Pannello principale/destro; da qui puoi:
    * Visualizzare l’elenco di tutti i frammenti di contenuto nel ramo selezionato della struttura:
       * La posizione è indicata dalle breadcrumb; puoi utilizzarle anche per modificare la posizione
-      * Verranno visualizzati i frammenti di contenuto della cartella selezionata e tutte le cartelle secondarie:
+      * Vengono visualizzati i frammenti di contenuto della cartella selezionata e tutte le cartelle secondarie:
          * [Vari campi di informazioni](#selectuse-available-columns) su un frammento di contenuto forniscono collegamenti con cui, a seconda del campo, è possibile:
             * Aprire il frammento appropriato nell’editor
             * Mostrare informazioni sui riferimenti
             * Mostrare informazioni sulle versioni linguistiche del frammento
-      * Se utilizzi il passaggio del mouse sulle intestazioni della colonna, verranno visualizzati un selettore di azioni a discesa e cursori di larghezza che ti consentono di:
+      * Posizionando il cursore del mouse sulle intestazioni di colonna, viene visualizzato un selettore di azioni a discesa e dei cursori di larghezza. Queste ti consentono di effettuare le seguenti operazioni:
          * Ordinare: selezionando l’azione appropriata per ordine crescente o decrescente. 
 In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ordinamento è disponibile solo nelle colonne appropriate.
          * Ridimensiona la colonna: utilizzando i cursori di azione o di larghezza
@@ -87,17 +86,16 @@ Alcune azioni sono disponibili dalla console senza selezionare un frammento di c
 * [Personalizzare la vista tabella per mostrare le colonne di informazioni selezionate](#select-available-columns)
 * Utilizzare **Apri in Assets** per aprire direttamente la posizione corrente nella console **Assets**
 
-   >[!NOTE]
-   >
-   >La console **Assets** viene utilizzata per accedere alle risorse, ad esempio immagini, video e così via.  È possibile accedere a questa console:
-   >
-   >* utilizzando il collegamento **Apri in Assets** (nella console Frammenti di contenuto);
-   >* direttamente dal riquadro di navigazione globale.
-
+  >[!NOTE]
+  >
+  >La console **Assets** viene utilizzata per accedere alle risorse, ad esempio immagini, video e così via.  È possibile accedere a questa console:
+  >
+  >* utilizzando il collegamento **Apri in Assets** (nella console Frammenti di contenuto);
+  >* direttamente dal riquadro di navigazione globale.
 
 ### Azioni per un frammento di contenuto (selezionato) {#actions-selected-content-fragment}
 
-Quando si seleziona un frammento specifico, viene aperta una barra degli strumenti incentrata sulle azioni disponibili per tale frammento. Puoi inoltre selezionare più frammenti; la selezione delle azioni verrà regolata di conseguenza.
+Quando si seleziona un frammento specifico, viene aperta una barra degli strumenti incentrata sulle azioni disponibili per tale frammento. Puoi anche selezionare più frammenti; la selezione delle azioni viene regolata di conseguenza.
 
 ![Console Frammenti di contenuto; barra degli strumenti per un frammento selezionato](assets/cfc-fragment-toolbar.png)
 
@@ -142,17 +140,17 @@ Passando il puntatore del mouse sul nome della cartella verrà visualizzato il p
 
    * Fornisce un collegamento che apre una finestra di dialogo in cui sono elencati tutti i riferimenti principali di quel frammento, compresi i frammenti di contenuto, frammenti di esperienza e pagine. Per aprire un riferimento specifico, fai clic sul **Titolo** nella finestra di dialogo.
 
-      ![Console Frammenti di contenuto - Finestra di dialogo Riferimenti](assets/cfc-console-references-dialog.png)
+     ![Console Frammenti di contenuto - Finestra di dialogo Riferimenti](assets/cfc-console-references-dialog.png)
 
 * **Lingua**
 
    * Indica la lingua del frammento di contenuto e il numero totale di copie per lingua associate al frammento di contenuto.
 
-      ![Console Frammenti di contenuto - Indicatore della lingua](assets/cfc-console-language-indicator.png)
+     ![Console Frammenti di contenuto - Indicatore della lingua](assets/cfc-console-language-indicator.png)
 
       * Tocca o fai clic sul numero per aprire una finestra di dialogo in cui sono visualizzate tutte le copie per altre lingue. Per aprire una copia di una specifica lingua, fai clic sul **Titolo** nella finestra di dialogo.
 
-         ![Console Frammenti di contenuto - Finestra di dialogo Lingua](assets/cfc-console-languages-dialog.png)
+        ![Console Frammenti di contenuto - Finestra di dialogo Lingua](assets/cfc-console-languages-dialog.png)
 
 ## Selezionare le colonne disponibili {#select-available-columns}
 
@@ -186,7 +184,7 @@ Ad esempio, seleziona **Pubblicato** nella colonna **Stato**:
 
 ![Console Frammenti di contenuto - Filtro](assets/cfc-console-fast-filter-01.png)
 
-Una volta selezionato, questo verrà visualizzato come un predicato del filtro e l’elenco verrà filtrato di conseguenza:
+Dopo la selezione, viene visualizzato come predicato di filtro e l’elenco viene filtrato di conseguenza:
 
 ![Console Frammenti di contenuto - Filtro](assets/cfc-console-fast-filter-02.png)
 

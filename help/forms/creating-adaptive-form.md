@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 3%
@@ -44,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns. 
 
 * **Using an XML Schema Definition (XSD) or a JSON Schema**
-   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
+   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
    Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
@@ -61,7 +61,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 
    * **Modello modificabile**: puoi [crea un nuovo](template-editor.md) o [importa un modello modificabile esistente](migrate-to-forms-as-a-cloud-service.md). Puoi anche distribuire [archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20sono%20basati su Java%20integration%20tests.) per ottenere alcuni modelli modificabili di esempio.
 
-   * **Modello statico**: si tratta di modelli legacy e sono consigliati solo per i clienti che eseguono la migrazione dalle installazioni di Adobe Managed Services (AMS) e AEM Forms on-premise (AEM 6.5 Forms o versioni precedenti). Questi consentono di continuare a sfruttare l’investimento esistente in modelli statici. Quando crei un nuovo modulo adattivo, si consiglia di utilizzare un modello modificabile.
+   * **Modello statico**: si tratta di modelli legacy e sono consigliati solo per i clienti che eseguono la migrazione dalle installazioni di Adobe Managed Services (AMS) e AEM Forms on-premise (AEM 6.5 Forms o versioni precedenti). Questi consentono di continuare a utilizzare l’investimento esistente nei modelli statici. Quando crei un nuovo modulo adattivo, si consiglia di utilizzare un modello modificabile.
 
 
 
@@ -78,9 +78,9 @@ Per creare un modulo adattivo è necessario quanto segue:
 
    * Quando selezioni un modello modificabile, viene selezionato automaticamente un tema e un’azione di invio specificati nel modello, e il **[!UICONTROL Crea]** è attivato. È possibile passare al **[!UICONTROL Stile]** o **[!UICONTROL Invio]** per selezionare un tema diverso o un’azione di invio diversa. Se il modello modificabile selezionato non specifica un tema, il pulsante Crea rimane disattivato. È possibile passare al **[!UICONTROL Stili]** per selezionare manualmente un tema.
 
-      >[!NOTE]
-      >
-      > Puoi anche creare [!UICONTROL Documento record] mediante un editor di Forms adattivo. Per ulteriori informazioni, consulta [Supporto per documenti di record nell’editor di moduli adattivi](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+     >[!NOTE]
+     >
+     > Puoi anche creare [!UICONTROL Documento record] mediante un editor di Forms adattivo. Per ulteriori informazioni, consulta [Supporto per documenti di record nell’editor di moduli adattivi](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * Quando selezioni un modello statico, le opzioni di dati, stile, invio, consegna e anteprima non sono disponibili. Quando crei un nuovo modulo adattivo, si consiglia di utilizzare un modello modificabile.
 

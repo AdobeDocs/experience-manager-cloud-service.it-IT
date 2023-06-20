@@ -2,10 +2,10 @@
 title: Note sulla versione 2020.9.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.9.0 as a Cloud Service."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 21%
+source-wordcount: '723'
+ht-degree: 19%
 
 ---
 
@@ -74,7 +74,7 @@ La data di rilascio per [!UICONTROL Cloud Manager] La versione 2020.9.0 di è il
 
 * Audit del contenuto è stato rinominato in Audit dell’esperienza.
 * Il processo di build è stato diviso in tre diversi comandi Maven.
-* Se la clonazione dell’archivio Git genera errori, verranno eseguiti fino a tre nuovi tentativi.
+* Se la clonazione dell’archivio Git non riesce, vengono eseguiti fino a tre tentativi.
 
 ### Correzioni di bug {#bug-fixes-cm}
 
@@ -118,8 +118,8 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Strumenti di
 
 * Il plug-in AIO-CLI supporta Repository Modernizer e consente agli utenti di eseguire lo strumento utilizzando il plug-in.
 
-   Fai riferimento a [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) per ulteriori dettagli.
+  Fai riferimento a [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) per ulteriori dettagli.
 
 * L’utility Repository Modernizer può essere utilizzata per ristrutturare i pacchetti di progetto esistenti in pacchetti compatibili con la struttura di progetto definita per AEM as a Cloud Service.
 
-   Fai riferimento a [Risorsa Git: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per ulteriori dettagli.
+  Fai riferimento a [Risorsa Git: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per ulteriori dettagli.

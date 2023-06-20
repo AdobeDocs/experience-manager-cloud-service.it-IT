@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2594'
 ht-degree: 24%
 
 ---
@@ -28,7 +28,7 @@ Il [Progetto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) è una ba
 
 ## Cosa verrà creato
 
-Il marchio Venia ha recentemente iniziato a produrre alcuni prodotti utilizzando materiali sostenibili e l&#39;azienda desidera mostrare un **Rispettoso dell&#39;ambiente** come parte del Product Teaser. In Adobe Commerce verrà creato un nuovo attributo personalizzato per indicare se un prodotto utilizza **Rispettoso dell&#39;ambiente** materiale. Questo attributo personalizzato viene quindi aggiunto come parte della query GraphQL e visualizzato nel Product Teaser per i prodotti specificati.
+Il marchio Venia ha recentemente iniziato a produrre alcuni prodotti utilizzando materiali sostenibili e l&#39;azienda desidera mostrare un **Rispettoso dell&#39;ambiente** come parte del Product Teaser. In Adobe Commerce viene creato un nuovo attributo personalizzato per indicare se un prodotto utilizza **Rispettoso dell&#39;ambiente** materiale. Questo attributo personalizzato viene quindi aggiunto come parte della query GraphQL e visualizzato nel Product Teaser per i prodotti specificati.
 
 ![Implementazione finale del badge eco-compatibile](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -69,7 +69,7 @@ Cloneremo il [Progetto Venia](https://github.com/adobe/aem-cif-guides-venia) e q
 
 ## Creare il Product Teaser {#author-product-teaser}
 
-Il componente Product Teaser verrà esteso in tutta questa esercitazione. Come primo passo, aggiungi una nuova istanza del Product Teaser alla home page per comprenderne la funzionalità di base.
+Il componente Product Teaser viene esteso in tutta questa esercitazione. Come primo passo, aggiungi una nuova istanza del Product Teaser alla home page per comprenderne la funzionalità di base.
 
 1. Passa alla **home page** del sito: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
@@ -178,7 +178,7 @@ Quindi, utilizza un IDE di GraphQL per verificare che `eco_friendly` L&#39;attri
 
    ![Risposta GraphQL di esempio](../assets/customize-cif-components/sample-graphql-query.png)
 
-   Il valore di **Sì** è un numero intero di **1**. Questo sarà utile quando scriviamo la query GraphQL in Java.
+   Il valore di **Sì** è un numero intero di **1**. Questa funzione è utile quando si scrive la query GraphQL in Java.
 
    >[!TIP]
    >
@@ -436,7 +436,7 @@ Nel nostro caso, vogliamo applicare un banner sopra il teaser per indicare che i
 
 A questo punto, la logica per la visualizzazione del **Rispettoso dell&#39;ambiente** Il badge funziona, tuttavia il testo normale potrebbe utilizzare alcuni stili. Quindi aggiungi un’icona e degli stili al `ui.frontend` per completare l&#39;implementazione.
 
-1. Scarica il file [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) file. Verrà utilizzato come **Rispettoso dell&#39;ambiente** distintivo.
+1. Scarica il file [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) file. Viene utilizzato come **Rispettoso dell&#39;ambiente** distintivo.
 1. Torna all’IDE e passa a `ui.frontend` cartella.
 1. Aggiungi il `eco_friendly.svg` file in `ui.frontend/src/main/resources/images` cartella:
 

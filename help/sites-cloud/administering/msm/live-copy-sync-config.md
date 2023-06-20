@@ -4,9 +4,9 @@ description: Scopri le potenti opzioni di sincronizzazione Live Copy disponibili
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2335'
 ht-degree: 88%
 
 ---
@@ -69,7 +69,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione che vengono i
 | `contentDelete` | Questa azione elimina i nodi della Live Copy che non esistono nel sorgente. [Configura il **servizio** CQ MSM Content Delete Action](#excluding-properties-and-node-types-from-synchronization) per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. |  |
 | `contentUpdate` | Questa azione aggiorna il contenuto della Live Copy con le modifiche apportate dal sorgente. [Configura il **servizio** CQ MSM Content Update Action](#excluding-properties-and-node-types-from-synchronization) per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. |  |
 | `editProperties` | Questa azione modifica le proprietà della Live Copy. La proprietà `editMap` determina quali proprietà vengono modificate e il loro valore. Il valore della proprietà `editMap` deve utilizzare il formato seguente:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` e `new_value` sono espressioni regolari e `n` è un numero intero incrementato.<br>Ad esempio, considera il seguente valore per `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Questo valore modifica le proprietà dei nodi Live Copy come segue:<br>le `sling:resourceType` proprietà impostate su `contentpage` o `homepage` sono impostate su `mobilecontentpage`.<br>Le proprietà `cq:template` impostate su `contentpage` vengono impostate su `mobilecontentpage`. | `editMap: (String)` identifica la proprietà, il valore corrente e il nuovo valore. Per informazioni, consulta la descrizione. |
-| `notify` | Questa azione invia un evento di pagina segnalando che è stata soggetta a rollout. Per ricevere una notifica, è necessario innanzitutto iscriversi a eventi di rollout. |  |
+| `notify` | Questa azione invia un evento di pagina segnalando che è stata soggetta a rollout. Per ricevere una notifica, è necessario innanzitutto iscriversi agli eventi di rollout. |  |
 | `orderChildren` | Questa azione ordina i nodi figli in base all’ordine della blueprint. |  |
 | `referencesUpdate` | Questa azione di sincronizzazione aggiorna i riferimenti sulla Live Copy.<br>Cerca i percorsi nelle pagine Live Copy che puntano a una risorsa all’interno della blueprint. Quando viene trovato un percorso, lo aggiorna per indicare il punto in cui si trova la risorsa correlata all’interno della Live Copy. I riferimenti che hanno destinazioni esterne alla blueprint non vengono modificati. <br>[Configure il **servizio** CQ MSM References Update Action](#excluding-properties-and-node-types-from-synchronization) per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. |  |
 | `targetVersion` | Crea una versione della pagina Live Copy.<br>Questa deve essere l’unica azione di sincronizzazione inclusa in una configurazione di rollout. |  |

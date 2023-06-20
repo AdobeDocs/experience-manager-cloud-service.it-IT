@@ -4,10 +4,10 @@ description: Scopri come risolvere i problemi più comuni relativi a MSM e ottie
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 7c0be1a7bdc9ccb788ba41eb6ee83b89df94f500
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 88%
 
 ---
 
@@ -27,12 +27,12 @@ MSM registra diversi servlet che possono essere richiesti con i selettori sugli 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Utilizza questo su una pagina blueprint per recuperare l’elenco di tutte le Live Copy ad essa collegate, con informazioni sullo stato di Live Copy aggiuntive.
    * ad esempio:
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Utilizza questo nelle pagine Live Copy per recuperare informazioni avanzate sulla loro connessione con le loro pagine blueprint. Se la pagina non è una Live Copy, non viene restituito nulla.
    * ad esempio:
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Questi servlet generano messaggi del registro DEBUG attraverso il logger `com.day.cq.wcm.msm` che può anche essere utile.
 
@@ -55,7 +55,7 @@ I servlet precedenti restituivano informazioni calcolate in base ai nodi e ai mi
 
 Le informazioni presenti in queste proprietà devono essere riportare nell’interfaccia utente, tuttavia durante la risoluzione dei problemi può essere utile osservare il comportamento di MSM direttamente nell’archivio mentre si verificano le azioni MSM.
 
-Conoscere queste proprietà può essere utile anche per eseguire query sull’archivio e trovare set di pagine che si trovano in determinati stati. Esempio:
+Conoscere queste proprietà può essere utile anche per poter eseguire query sull’archivio e individuare set di pagine che si trovano in determinati stati. Esempio:
 
 * `select * from cq:LiveSync` restituisce tutte le pagine principali di Live Copy.
 
@@ -82,9 +82,9 @@ In alternativa, puoi effettuare le seguenti operazioni:
 
 Se viene eseguito il rollout di una pagina blueprint, la pagina Live Copy verrà aggiornata oppure, se non esiste ancora, ne verrà creata una nuova (ad esempio, quando viene eseguito il rollout per la prima volta, oppure la pagina Live Copy è stata eliminata manualmente).
 
-In quest’ultimo caso, tuttavia, se esiste una pagina senza una proprietà `cq:LiveRelationship` con lo stesso nome, la pagina verrà rinominata di conseguenza prima che venga creata la pagina Live Copy.
+In quest’ultimo caso, tuttavia, se una pagina senza un `cq:LiveRelationship` esiste con lo stesso nome. Questa pagina viene rinominata di conseguenza prima che venga creata la pagina Live Copy.
 
-Per impostazione predefinita, al momento della creazione di una pagina Live Copy, il rollout prevede una pagina Live Copy collegata, sulla quale verrà effettuato il rollout degli aggiornamenti dei blueprint, oppure nessuna pagina.
+Per impostazione predefinita, al momento della creazione di una pagina Live Copy, il rollout prevede una pagina Live Copy collegata, sulla quale viene eseguito il rollout degli aggiornamenti dei blueprint, oppure nessuna pagina.
 
 Se viene trovata una pagina “indipendente“, MSM sceglie di rinominare questa pagina e di creare una pagina Live Copy separata collegata.
 

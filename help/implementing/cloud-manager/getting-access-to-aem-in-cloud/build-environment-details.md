@@ -2,10 +2,10 @@
 title: Ambiente di build
 description: Scopri l’ambiente di build di Cloud Manager e come genera e verifica il codice.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '994'
+ht-degree: 95%
 
 ---
 
@@ -94,7 +94,7 @@ Questa tabella si riferisce ai numeri di versione del prodotto. I numeri di buil
 
 >[!NOTE]
 >
->A partire da aprile 2022, Oracle JDK sarà il JDK predefinito per lo sviluppo e il funzionamento delle applicazioni AEM. Il processo di build di Cloud Manager passa automaticamente all’uso di Oracle JDK, anche se nella toolchain Maven è selezionata esplicitamente un’opzione alternativa. Per ulteriori informazioni, consulta le note sulla versione di aprile pubblicata.
+>A partire da aprile 2022, Oracle JDK diventa il JDK predefinito per lo sviluppo e il funzionamento delle applicazioni AEM. Il processo di build di Cloud Manager passa automaticamente all’utilizzo di JDK di Oracle, anche se nella toolchain Maven è selezionata esplicitamente un’opzione alternativa. Consulta le note sulla versione di aprile 2022.
 
 #### Versione JDK alternativa per l’esecuzione Maven {#alternate-maven-jdk-version}
 

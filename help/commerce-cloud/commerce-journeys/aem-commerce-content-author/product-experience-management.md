@@ -2,9 +2,9 @@
 title: Creazione di esperienze di prodotto
 description: Scopri come creare esperienze di prodotto.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1154'
 ht-degree: 4%
 
 ---
@@ -83,7 +83,7 @@ Ora trascina e rilascia la **Frammento di contenuto Commerce** sul modello e apr
 
 Questa finestra di dialogo riutilizza la finestra di dialogo Frammento di contenuto del componente core. Per ulteriori informazioni, consulta Risorse aggiuntive. L&#39;unica differenza è **Elemento collegamento** proprietà che configura il campo dell’identificatore (SKU prodotto o UID categoria) nel modello Frammento di contenuto.
 
-Visualizza l’anteprima di una pagina di prodotto a cui sono associati un frammento di contenuto e/o un frammento di esperienza. Quando AEM esegue il rendering di una pagina, esegue una ricerca per ogni segnaposto in base al tipo (Contenuto o Frammento esperienza), all’identificatore e al nome del segnaposto per Frammenti esperienza. L’AEM utilizza un risolutore URL per ottenere l’identificatore (SKU per prodotti, UID per categorie). Se viene restituito un’esperienza o un frammento di contenuto, questo verrà rappresentato nella posizione del segnaposto, altrimenti il segnaposto viene ignorato.
+Visualizza l’anteprima di una pagina di prodotto a cui sono associati un frammento di contenuto e/o un frammento di esperienza. Quando AEM esegue il rendering di una pagina, esegue una ricerca per ogni segnaposto in base al tipo (Contenuto o Frammento esperienza), all’identificatore e al nome del segnaposto per Frammenti esperienza. L’AEM utilizza un risolutore URL per ottenere l’identificatore (SKU per prodotti, UID per categorie). Se viene restituito un’esperienza o un frammento di contenuto, questo viene rappresentato nella posizione del segnaposto, altrimenti il segnaposto viene ignorato.
 
 ![risultato pem](assets/pem-result.png)
 

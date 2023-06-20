@@ -2,10 +2,10 @@
 title: Creazione di contenuti accessibili per Adobe Experience Manager as a Cloud Service (conformità WCAG 2.1)
 description: Utilizzare AEM as a Cloud Service per rendere il contenuto web accessibile e fruibile per le persone con disabilità
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '13870'
-ht-degree: 100%
+source-wordcount: '13864'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,6 @@ Nella sezione seguente sono illustrate le [basi delle linee guida WCAG 2.1](http
 >* I [nomi brevi per le linee guida WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* La [numerazione utilizzata nelle linee guida WCAG 2.1](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) per facilitare i riferimenti incrociati al sito web WCAG.
 
-
 ## Principio 1: Percepibile  {#principle-perceivable}
 
 [Principio 1: Percepibile - Informazioni e componenti dell’interfaccia utente devono essere presentati agli utenti con modalità da loro percepibili.](https://www.w3.org/TR/WCAG/#perceivable)
@@ -73,7 +72,8 @@ Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire
 >[!NOTE]
 >
 >Alcuni componenti core predefiniti, come il **[carosello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=it)**, non forniscono un campo **Testo alternativo** per l’aggiunta di descrizioni testuali alternative alle singole immagini, anche se è presente il campo **Etichetta** (scheda **[accessibilità](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=it#accessibility-tab)**) per l’intero componente.
->Dopo aver implementato le versioni di questi componenti per l’istanza AEM, il team di sviluppo dovrà configurarli per supportare l’attributo `alt`. In questo modo gli autori potranno aggiungerlo al contenuto (vedi [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>
+Dopo aver implementato le versioni di questi componenti per l’istanza AEM, il team di sviluppo dovrà configurarli per supportare l’attributo `alt`. In questo modo gli autori potranno aggiungerlo al contenuto (vedi [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 In AEM il campo **Testo alternativo** deve essere compilato per impostazione predefinita. Se l’immagine è puramente decorativa e un testo alternativo sarebbe superfluo, seleziona l’opzione **L’immagine è decorativa**.
 
@@ -100,7 +100,7 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 * Icone: si tratta di piccoli pittogrammi (immagini) che veicolano informazioni specifiche. Devono essere utilizzati in modo coerente all’interno di una pagina e del sito. Tutte le istanze dell’icona in una pagina o in un sito devono avere lo stesso testo alternativo, breve e sintetico, a meno che questo determini inutili duplicazioni di testo adiacente.
 * Grafici e diagrammi: solitamente rappresentano dati numerici. Di conseguenza, un possibile testo alternativo potrebbe consistere in una breve sintesi delle principali tendenze indicate nel grafico o diagramma. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando il campo **Descrizione** nella scheda **Avanzate** delle proprietà dell’immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
 * Mappe, diagrammi, diagrammi di flusso: per gli elementi grafici che forniscono dati spaziali (ad esempio, per la descrizione di relazioni tra oggetti o un processo), assicurati che il messaggio principale venga comunicato in formato testuale e che tali informazioni testuali vengano posizionate in prossimità di ciascun punto di dati associato. Per le mappe, potrebbe non risultare pratico fornire un equivalente di testo completo. Se la mappa ha lo scopo di aiutare le persone a individuare una posizione particolare, il testo alternativo dell’immagine della mappa può indicare brevemente *Mappa di X*, fornendo poi le indicazioni per tale posizione in un altro testo della pagina o attraverso il campo **Descrizione**, disponibile nella scheda **Avanzate** del componente **Immagine**.
-* CAPTCHA: un CAPTCHA è un *test di Turing pubblico completamente automatizzato per distinguere fra computer ed esseri umani*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani da software dannosi, ma che può creare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che visualizzano per poter superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche. Il W3C fornisce diversi suggerimenti. Ognuno di questi approcci presenta pro e contro.
+* CAPTCHA: un CAPTCHA è un *test di Turing pubblico completamente automatizzato per distinguere fra computer ed esseri umani*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani da software dannosi, ma che può creare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che vedono per superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche. Il W3C fornisce diversi suggerimenti. Ognuno di questi approcci presenta pro e contro.
 
    * Rompicapi logici
    * L&#39;uso dell&#39;output sonoro invece delle immagini
@@ -109,7 +109,8 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 * Immagini di sfondo: sono ottenute utilizzando i CSS (Cascading Style Sheets, fogli di stile a cascata) anziché in HTML, e non è quindi possibile specificare un valore di testo alternativo. Pertanto le immagini di sfondo non dovrebbero includere informazioni testuali importanti, a meno che non siano incluse anche nel testo della pagina. Tuttavia, è importante utilizzare uno sfondo alternativo per i casi in cui l’immagine non possa essere visualizzata.
 
 >[!NOTE]
->Dovrebbe essere previsto un livello adeguato di contrasto tra lo sfondo e il testo in primo piano; questo elemento viene discusso più dettagliatamente in [Contrasto (minimo) (1.4.3)](#contrast-minimum).
+>
+Dovrebbe essere previsto un livello adeguato di contrasto tra lo sfondo e il testo in primo piano; questo elemento viene discusso più dettagliatamente in [Contrasto (minimo) (1.4.3)](#contrast-minimum).
 
 #### Ulteriori informazioni - Contenuto non testuale (1.1.1) {#more-information-non-text-content}
 
@@ -156,13 +157,16 @@ Fornire queste informazioni in un formato diverso, ad esempio testo (o audio per
    * oppure una descrizione audio equivalente in un formato audio comunemente utilizzato come MP3.
 
 >[!NOTE]
->Se il contenuto audio o video è fornito come alternativa a un contenuto già esistente in un altro formato nella stessa pagina web, potrebbe non essere necessario fornire un’ulteriore alternativa.
->Le linee guida [Comprendere WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html) forniscono ulteriori informazioni.
+>
+Se il contenuto audio o video è fornito come alternativa a un contenuto già esistente in un altro formato nella stessa pagina web, potrebbe non essere necessario fornire un’ulteriore alternativa.
+>
+Le linee guida [Comprendere WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html) forniscono ulteriori informazioni.
 
 L’inserimento di contenuti multimediali nelle pagine web AEM è simile a quello di un’immagine. Tuttavia, dato che i contenuti multimediali sono molto più di un&#39;immagine statica, esistono differenti impostazioni e opzioni per controllarne la riproduzione.
 
 >[!NOTE]
->Quando utilizzi elementi multimediali con contenuti informativi, è necessario creare anche collegamenti a contenuti alternativi. Ad esempio, per includere una trascrizione testuale, crea una pagina HTML per visualizzare la trascrizione e quindi aggiungi un collegamento accanto o sotto al contenuto audio.
+>
+Quando utilizzi elementi multimediali con contenuti informativi, è necessario creare anche collegamenti a contenuti alternativi. Ad esempio, per includere una trascrizione testuale, crea una pagina HTML per visualizzare la trascrizione e quindi aggiungi un collegamento accanto o sotto al contenuto audio.
 
 #### Ulteriori informazioni - Solo audio e solo video (preregistrati) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
@@ -221,7 +225,7 @@ Per soddisfare questo criterio di successo è possibile adottare due approcci. E
    * Fornisci una nuova traccia audio, aggiuntiva e facoltativa, contenente l’audio originale, ma anche informazioni audio ulteriori sui cambiamenti nella scena.
       * Questo consente agli utenti di passare dalla traccia audio esistente (che *non* contiene una descrizione audio) alla nuova traccia audio (che *contiene* una descrizione audio), e viceversa.
       * in questo modo si evitano interruzioni per gli utenti che non necessitano di desscrizione aggiuntiva.
-   * Creare una seconda versione dei contenuti video per consentire descrizioni audio estese. Questo riduce le difficoltà associate alla fornitura di descrizioni audio dettagliate all’interno degli spazi tra la finestra di dialogo esistente, mettendo temporaneamente in pausa l’audio e il video nei punti opportuni. Di conseguenza, è possibile fornire una descrizione audio molto più lunga prima che l’azione ricominci. Come nell’esempio precedente, questa funzione è fornita come traccia audio aggiuntiva opzionale per evitare interruzioni agli utenti che non necessitano della descrizione aggiuntiva.
+   * Creare una seconda versione dei contenuti video per consentire descrizioni audio estese. Questo riduce le difficoltà associate alla fornitura di descrizioni audio dettagliate all’interno degli spazi tra la finestra di dialogo esistente, mettendo temporaneamente in pausa l’audio e il video nei punti opportuni. Di conseguenza, è possibile fornire una descrizione audio molto più lunga prima che l’azione ricominci. Come nell’esempio precedente, questa è meglio fornita come traccia audio aggiuntiva opzionale per evitare interruzioni per gli utenti che non hanno bisogno della descrizione aggiuntiva.
 1. Fornisci una trascrizione testuale che rappresenti un equivalente testuale adatto per gli elementi sonori e visivi del video o dell’animazione. Queste dovrebbero includere, a seconda del caso, l’indicazione di chi sta parlando, una descrizione dell’ambientazione, eventuali eventi o informazioni presentate visivamente e le espressioni vocali. A seconda della lunghezza, è possibile inserire la trascrizione nella stessa pagina del video o dell’animazione oppure in una pagina separata. Se scegli la seconda opzione, includi un collegamento alla trascrizione accanto al video o all’animazione.
 
 La descrizione dettagliata delle modalità di creazione di video con descrizione audio esula dallo scopo di questa guida. La creazione di video e descrizioni audio può richiedere parecchio tempo, ma puoi ricorrere ad altri prodotti Adobe per facilitare l’esecuzione di tali attività.
@@ -297,7 +301,7 @@ Questa linea guida copre i requisiti necessari per supportare le persone che:
 
 #### Finalità - Informazioni e correlazioni (1.3.1)  {#purpose-info-and-relationships}
 
-Molte tecnologie per l’accessibilità utilizzate da persone con disabilità si basano su informazioni strutturali per visualizzare o *comprendere* i contenuti in modo efficace. Queste possono assumere la forma di titoli, intestazioni di righe e colonne di tabella, e tipi di elenchi. Ad esempio, un’utilità di lettura dello schermo potrebbe consentire a un utente di spostarsi all’interno di una pagina passando da un’intestazione a un’altra. Tuttavia, quando la struttura del contenuto della pagina dipende esclusivamente da uno stile visivo, anziché dal codice HTML sottostante, non sono presenti informazioni strutturali utilizzabili dalle tecnologie per l’accessibilità, il che ne limita la capacità di supportare la navigazione facilitata.
+Molte tecnologie per l’accessibilità utilizzate da persone con disabilità si basano su informazioni strutturali per visualizzare o *comprendere* contenuto. Queste possono assumere la forma di titoli, intestazioni di righe e colonne di tabella, e tipi di elenchi. Ad esempio, un’utilità di lettura dello schermo potrebbe consentire a un utente di spostarsi all’interno di una pagina passando da un’intestazione a un’altra. Tuttavia, quando la struttura del contenuto della pagina dipende esclusivamente da uno stile visivo, anziché dal codice HTML sottostante, non sono presenti informazioni strutturali utilizzabili dalle tecnologie per l’accessibilità, il che ne limita la capacità di supportare la navigazione facilitata.
 
 Questo criterio di successo esiste affinché tali informazioni strutturali vengano fornite a livello di programmazione tramite HTML o con altre tecniche di scrittura del codice, in modo che i browser e le tecnologie per l’accessibilità possano accedervi e sfruttarle.
 
@@ -313,9 +317,9 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
    * L’elemento `<ul>` viene utilizzato per gli elenchi *non ordinati* (puntati). Le singole voci dell’elenco sono identificate dall’elemento `<li>`. Nell’editor Rich Text, utilizza l’icona **Elenco puntato**.
    * L’elemento `<ol>`viene utilizzato per gli elenchi *numerati*. Le singole voci dell’elenco sono identificate dall’elemento `<li>`. Nell’editor Rich Text, utilizza l’icona **Elenco numerato**.
 
-   Per modificare il contenuto esistente in un tipo di elenco specifico, evidenzia il testo appropriato e seleziona il tipo di elenco pertinente. Come nell’esempio precedente che mostra come inserire il testo paragrafo, gli elementi elenco appropriati vengono aggiunti automaticamente all’HTML.
+  Per modificare il contenuto esistente in un tipo di elenco specifico, evidenzia il testo appropriato e seleziona il tipo di elenco pertinente. Come nell’esempio precedente che mostra come inserire il testo paragrafo, gli elementi elenco appropriati vengono aggiunti automaticamente all’HTML.
 
-   In modalità a tutto schermo, sono visibili le singole icone **Elenco puntato** ed **Elenco numerato**. Se non è attiva la modalità a tutto schermo, le due opzioni sono disponibili dietro la singola icona **Elenchi**.
+  In modalità a tutto schermo, sono visibili le singole icone **Elenco puntato** ed **Elenco numerato**. Se non è attiva la modalità a tutto schermo, le due opzioni sono disponibili dietro la singola icona **Elenchi**.
 
 * **Tabelle**: le tabelle di dati devono essere identificate utilizzando gli elementi di tabella HTML:
    * un elemento `<table>`
@@ -323,71 +327,76 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
    * un elemento `<th>` per ogni intestazione di riga e colonna
    * un elemento `<td>` per ogni cella di dati
 
-   Inoltre, le tabelle accessibili utilizzano gli elementi e gli attributi seguenti:
+  Inoltre, le tabelle accessibili utilizzano gli elementi e gli attributi seguenti:
 
    * L’elemento `<caption>` viene utilizzato per fornire una didascalia visibile per la tabella. Per impostazione predefinita, i sottotitoli vengono visualizzati centrati sopra la tabella, ma possono essere posizionati in modo appropriato utilizzando le CSS. La didascalia è associata alla tabella a livello di programmazione, pertanto è un metodo utile per fornire un’introduzione al contenuto.
    * L’elemento `<summary>` aiuta gli utenti non vedenti a comprendere più facilmente le informazioni presentate all’interno di una tabella, fornendo una sintesi di ciò che un utente vedente può vedere. Questo flusso di lavoro risulta particolarmente utile quando si utilizzano layout di tabella complessi o non convenzionali (l’attributo non viene visualizzato nel browser, ma solo letto dalle tecnologie per l’accessibilità).
    * L’attributo `scope` dell’elemento `<th>` viene utilizzato per indicare se una cella rappresenta un’intestazione per una particolare riga o colonna. Un approccio simile consiste nell’utilizzare gli attributi header e id in tabelle complesse, dove le celle di dati possono essere associate a una o più intestazioni.
 
-   >[!NOTE]
-   >Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+  >[!NOTE]
+  >
+  Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
-   Per aprire la **Tabella** in cui è possibile selezionare la scheda **Proprietà tabella**:
+  Per aprire la **Tabella** in cui è possibile selezionare la scheda **Proprietà tabella**:
 
    * definisci una **Didascalia** appropriata.
    * È consigliabile rimuovere eventuali valori predefiniti per **Larghezza**, **Altezza**, **Bordo**, **Margine celle**, **Spaziatura celle**. dato che queste proprietà possono essere impostate in un foglio di stile globale.
 
-   Puoi quindi utilizzare le **Proprietà cella** per scegliere se la cella contiene dati o intestazione:
+  Puoi quindi utilizzare le **Proprietà cella** per scegliere se la cella contiene dati o intestazione:
 
 * **Enfasi**: utilizza l’elemento `<strong>` o `<em>` per indicare l’enfasi. Non utilizzare le intestazioni per evidenziare il testo all’interno dei paragrafi.
    * Evidenzia il testo che desideri mettere in evidenza.
    * Fai clic sull’icona **B** (per `<strong>`) oppure **I** (per `<em>`) nel pannello **Proprietà**, assicurandoti che sia selezionato HTML.
 
-      >[!NOTE]
-      >L’editor Rich Text in un’installazione standard di AEM è configurato per utilizzare:
-      >* `<b>` per `<strong>`
-      >* `<i>` per `<em>`
-
-      L’efficacia è la medesima, ma `<strong>` e `<em>` sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il tuo team di sviluppo può configurare l’editor Rich Text in modo che utilizzi `<strong>` e `<em>` (anziché `<b>` e `<i>`) durante lo sviluppo dell’istanza di progetto.
+     >[!NOTE]
+     >
+     L’editor Rich Text in un’installazione standard di AEM è configurato per utilizzare:
+     >
+     * `<b>` per `<strong>`
+     * `<i>` per `<em>`
+     >
+     L’efficacia è la medesima, ma `<strong>` e `<em>` sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il tuo team di sviluppo può configurare l’editor Rich Text in modo che utilizzi `<strong>` e `<em>` (anziché `<b>` e `<i>`) durante lo sviluppo dell’istanza di progetto.
 
 * **Tabelle dati complesse**: in alcuni casi, in presenza di tabelle complesse con due o più livelli di titoli, le proprietà della tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate mediante gli attributi **header** e **id**.
 
-   >[!NOTE]
-   >L’attributo id non è disponibile in un’installazione standard. Può essere attivato configurando regole HTML e il serializzatore nell’editor Rich Text.
+  >[!NOTE]
+  >
+  L’attributo id non è disponibile in un’installazione standard. Può essere attivato configurando regole HTML e il serializzatore nell’editor Rich Text.
 
-   Ad esempio, nella tabella seguente le intestazioni e gli ID vengono abbinati per creare un’associazione programmatica per gli utenti di tecnologie per l’accessibilità.
+  Ad esempio, nella tabella seguente le intestazioni e gli ID vengono abbinati per creare un’associazione programmatica per gli utenti di tecnologie per l’accessibilità.
 
-   ```xml
-     <table>
-       <tr>
-         <th rowspan="2" id="h">Homework</th>
-         <th colspan="3" id="e">Exams</th>
-         <th colspan="3" id="p">Projects</th>
-       </tr>
-       <tr>
-         <th id="e1" headers="e">1</th>
-         <th id="e2" headers="e">2</th>
-         <th id="ef" headers="e">Final</th>
-         <th id="p1" headers="p">1</th>
-         <th id="p2" headers="p">2</th>
-         <th id="pf" headers="p">Final</th>
-       </tr>
-       <tr>
-         <td headers="h">15%</td>
-         <td headers="e e1">15%</td>
-         <td headers="e e2">15%</td>
-         <td headers="e ef">20%</td>
-         <td headers="p p1">10%</td>
-         <td headers="p p2">10%</td>
-         <td headers="p pf">15%</td>
-       </tr>
-     </table>
-   ```
+  ```xml
+    <table>
+      <tr>
+        <th rowspan="2" id="h">Homework</th>
+        <th colspan="3" id="e">Exams</th>
+        <th colspan="3" id="p">Projects</th>
+      </tr>
+      <tr>
+        <th id="e1" headers="e">1</th>
+        <th id="e2" headers="e">2</th>
+        <th id="ef" headers="e">Final</th>
+        <th id="p1" headers="p">1</th>
+        <th id="p2" headers="p">2</th>
+        <th id="pf" headers="p">Final</th>
+      </tr>
+      <tr>
+        <td headers="h">15%</td>
+        <td headers="e e1">15%</td>
+        <td headers="e e2">15%</td>
+        <td headers="e ef">20%</td>
+        <td headers="p p1">10%</td>
+        <td headers="p p2">10%</td>
+        <td headers="p pf">15%</td>
+      </tr>
+    </table>
+  ```
 
-   A questo scopo, è necessario aggiungere il markup in AEM utilizzando direttamente la modalità di modifica sorgente.
+  A questo scopo, è necessario aggiungere il markup in AEM utilizzando direttamente la modalità di modifica sorgente.
 
-   >[!NOTE]
-   >Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor RTF, delle regole HTML e del serializzatore.
+  >[!NOTE]
+  >
+  Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor RTF, delle regole HTML e del serializzatore.
 
 #### Ulteriori informazioni - Informazioni e correlazioni (1.3.1)  {#more-information-info-and-relationships}
 
@@ -426,7 +435,8 @@ Nel presentare le informazioni, i designer spesso si concentrano sulle caratteri
 Allo stesso modo, le informazioni che richiedono di distinguere suoni diversi (ad esempio contenuti verbali con voci di sesso maschile o femminile) presenteranno problemi di accessibilità per le persone con disabilità uditive se non appaiono in un testo alternativo al contenuto audio.
 
 >[!NOTE]
->Per i requisiti relativi alle alternative al colore, consulta [Uso del colore](#use-of-color).
+>
+Per i requisiti relativi alle alternative al colore, consulta [Uso del colore](#use-of-color).
 
 #### Come soddisfare il criterio - Caratteristiche sensoriali (1.3.3)  {#how-to-meet-sensory-characteristics}
 
@@ -436,7 +446,8 @@ Assicurati che anche tutte le informazioni che si basano sulle caratteristiche v
 * Non fare affidamento sullo stile del testo (ad esempio, testo in grassetto o in corsivo) come unico modo per trasmettere le informazioni.
 
 >[!NOTE]
->L’uso di termini descrittivi è accettabile se si ritiene che abbiano un significato in un contesto non visivo. Ad esempio, l’uso di *sopra* e *sotto* è generalmente accettabile, in quanto i due termini implicano rispettivamente un contenuto prima e dopo un particolare elemento di contenuto e risulterebbero comprensibili anche per contenuti espressi oralmente.
+>
+L’uso di termini descrittivi è accettabile se si ritiene che abbiano un significato in un contesto non visivo. Ad esempio, l’uso di *sopra* e *sotto* è generalmente accettabile, in quanto i due termini implicano rispettivamente un contenuto prima e dopo un particolare elemento di contenuto e risulterebbero comprensibili anche per contenuti espressi oralmente.
 
 #### Ulteriori informazioni - Caratteristiche sensoriali (1.3.3) {#more-information-sensory-characteristics}
 
@@ -454,7 +465,8 @@ Assicurati che anche tutte le informazioni che si basano sulle caratteristiche v
 * Uso del colore: il colore non è utilizzato come unica modalità visiva per rappresentare le informazioni, indicare un’azione, richiedere una risposta o distinguere un elemento visivo.
 
 >[!NOTE]
->Questo criterio di successo riguarda in particolare la percezione del colore. Altre forme di percezione sono trattate in [Adattabilità (1.3)](#adaptable), incluso l’accesso programmatico al colore e ad altre codifiche di presentazione visiva.
+>
+Questo criterio di successo riguarda in particolare la percezione del colore. Altre forme di percezione sono trattate in [Adattabilità (1.3)](#adaptable), incluso l’accesso programmatico al colore e ad altre codifiche di presentazione visiva.
 
 #### Finalità - Uso del colore (1.4.1)  {#purpose-use-of-color}
 
@@ -492,7 +504,8 @@ Se contemporaneamente al sonoro del software per la lettura dello schermo è pre
 Pertanto, è importante che l’utente abbia la possibilità di disattivare l’audio di sottofondo.
 
 >[!NOTE]
->Nel controllo del volume è inclusa la possibilità di ridurre il livello a zero.
+>
+Nel controllo del volume è inclusa la possibilità di ridurre il livello a zero.
 
 #### Come soddisfare il criterio - Controllo del sonoro (1.4.2) {#how-to-meet-audio-control}
 
@@ -512,8 +525,9 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 1.4.
    * Incidentale: per il testo o per le immagini di testo che fanno parte di un componente dell’interfaccia inattivo, che sono [puramente decorative](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), non visibili o che fanno parte di un’immagine che contiene altri contenuti visuali significativi, non è previsto alcun requisito di contrasto.
    * Logotipi: per il testo che fa parte di un logo o di un marchio non è previsto alcun requisito minimo di contrasto.
 
-   >[!NOTE]
-   >Per ulteriori informazioni, consulta [Comprensione del contrasto in contenuti non testuali](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) per assicurarti che le persone che creano contenuti comprendano i requisiti aggiuntivi relativi agli elementi non testuali, tra cui le icone e gli elementi dell’interfaccia.
+  >[!NOTE]
+  >
+  Per ulteriori informazioni, consulta [Comprensione del contrasto in contenuti non testuali](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) per assicurarti che le persone che creano contenuti comprendano i requisiti aggiuntivi relativi agli elementi non testuali, tra cui le icone e gli elementi dell’interfaccia.
 
 #### Finalità - Contrasto (minimo) (1.4.3)  {#purpose-contrast-minimum}
 
@@ -523,7 +537,8 @@ Le persone con determinate disabilità visive possono non essere in grado di dis
 * La codifica a colori del testo (ad esempio, per differenziare il testo normale dal testo dei collegamenti) è importante per distinguere i diversi tipi di informazioni.
 
 >[!NOTE]
->Il testo utilizzato esclusivamente a scopo decorativo è escluso da questo criterio di successo.
+>
+Il testo utilizzato esclusivamente a scopo decorativo è escluso da questo criterio di successo.
 
 #### Come soddisfare il criterio - Contrasto (minimo) (1.4.3)  {#how-to-meet-contrast-minimum}
 
@@ -534,15 +549,18 @@ Assicurati che il testo contrasti a sufficienza con il relativo sfondo. I rappor
 * Se lo sfondo include una texture, lo sfondo intorno al testo dovrà essere ombreggiato in modo da mantenere il rapporto di 4,5:1 o 3:1.
 
 >[!NOTE]
->Ricorda che il rendering dei font varia a seconda delle dimensioni PT/PX/EM equivalenti.
->Ti consigliamo di seguire il buon senso e di privilegiare la leggibilità e l’usabilità nella scelta di font e dimensioni appropriati per i contenuti web.
+>
+Ricorda che il rendering dei font varia a seconda delle dimensioni PT/PX/EM equivalenti.
+>
+Ti consigliamo di seguire il buon senso e di privilegiare la leggibilità e l’usabilità nella scelta di font e dimensioni appropriati per i contenuti web.
 
 >[!NOTE]
->Esegui una ricerca web sulle seguenti frasi per trovare strumenti che possono aiutarti a convertire in altre unità:
->* Calcolatore da Px a Em <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
->* Conversione dimensione font: pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
->* Convertitore da pixel a EM <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
-
+>
+Esegui una ricerca web sulle seguenti frasi per trovare strumenti che possono aiutarti a convertire in altre unità:
+>
+* Calcolatore da Px a Em <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+* Conversione dimensione font: pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+* Convertitore da pixel a EM <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 Per controllare i rapporti di contrasto, utilizza uno strumento di contrasto del colore, ad esempio [Color Contrast Analyzer di The Paciello Group](https://www.tpgi.com/resources/contrast-analyser.html) o [Color Contrast Checker di WebAIM](https://webaim.org/resources/contrastchecker/). Questi strumenti consentono di controllare coppie di colori e rilevare eventuali problemi di contrasto.
 
@@ -583,7 +601,8 @@ Oltre a seguire le linee guida in [Come soddisfare i criteri di successo 1.4.4](
    * Essenziale: una presentazione del testo specifica è essenziale per le informazioni trasmesse.
 
 >[!NOTE]
->I logotipi (testo che fa parte di un logo o di un marchio) sono considerati essenziali.
+>
+I logotipi (testo che fa parte di un logo o di un marchio) sono considerati essenziali.
 
 #### Finalità - Immagini di testo (1.4.5)  {#purpose-images-of-text}
 
@@ -718,7 +737,8 @@ In base alla natura del contenuto, è possibile applicare uno o più dei seguent
 * Tre lampeggiamenti o al di sotto della soglia: le pagine web non devono contenere alcun elemento che lampeggi per più di tre volte al secondo, oppure il lampeggiamento deve essere inferiore alle soglie di lampeggiamento generale e rosso.
 
 >[!NOTE]
->Dal momento che qualsiasi contenuto che non soddisfi questo criterio di successo può interferire con la capacità di un utente di utilizzare l’intera pagina, tutto il contenuto della pagina web (che sia utilizzato per soddisfare altri criteri di successo o meno) deve rispondere a questo criterio. Consulta [Requisito di conformità 5: non interferenza](https://www.w3.org/TR/WCAG/#cc5).
+>
+Dal momento che qualsiasi contenuto che non soddisfi questo criterio di successo può interferire con la capacità di un utente di utilizzare l’intera pagina, tutto il contenuto della pagina web (che sia utilizzato per soddisfare altri criteri di successo o meno) deve rispondere a questo criterio. Consulta [Requisito di conformità 5: non interferenza](https://www.w3.org/TR/WCAG/#cc5).
 
 #### Finalità - Tre lampeggiamenti o inferiore alla soglia (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -844,7 +864,8 @@ John Smith's publications
 ```
 
 >[!NOTE]
->Lo snippet di cui sopra è un&#39;illustrazione, si consiglia di utilizzare il componente **Immagine**.
+>
+Lo snippet di cui sopra è un&#39;illustrazione, si consiglia di utilizzare il componente **Immagine**.
 
 Benché sia consigliabile fornire un testo di collegamento che identifichi lo scopo del collegamento senza necessità di ulteriore contesto, questo effettivamente non è sempre possibile. I collegamenti senza contesto possono essere utilizzati nei seguenti casi, di cui è possibile trovare alcuni esempi HTML in [Come soddisfare il criterio di successo 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
@@ -953,15 +974,16 @@ Lo scopo di questo criterio è fare in modo che il testo e gli altri contenuti l
 Per soddisfare questo criterio di successo, la lingua predefinita di una pagina web può essere identificata mediante l’attributo `lang` all’interno dell’elemento `<html>` nella parte superiore della pagina. Esempio:
 
 * Se una pagina è scritta in inglese, l’elemento `<html>` dovrebbe riportare:
-   `<html lang = "en">`
+  `<html lang = "en">`
 
 * Una pagina che deve essere resa in spagnolo dovrebbe invece adottare il seguente standard:
-   `<html lang = "es">`
+  `<html lang = "es">`
 
 In AEM, la lingua predefinita della pagina viene impostata durante la creazione, ma può anche essere cambiata durante la modifica di [Proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md).
 
 >[!NOTE]
->AEM offre un’ulteriore ottimizzazione per le varianti di una lingua principale, ad esempio en-us per l’inglese americano, en-gb per inglese britannico e en-ca per l’inglese canadese. Questo livello di dettaglio è spesso superfluo nel caso delle tecnologie per l’accessibilità, ma può essere utilizzato per varianti regionali nel contenuto delle pagine.
+>
+AEM offre un’ulteriore ottimizzazione per le varianti di una lingua principale, ad esempio en-us per l’inglese americano, en-gb per inglese britannico e en-ca per l’inglese canadese. Questo livello di dettaglio è spesso superfluo nel caso delle tecnologie per l’accessibilità, ma può essere utilizzato per varianti regionali nel contenuto delle pagine.
 
 #### Ulteriori informazioni - Lingua della pagina (3.1.1) {#more-information-language-of-page}
 
@@ -996,7 +1018,8 @@ L’attributo `lang` può essere utilizzato per identificare le modifiche nella 
 ```
 
 >[!NOTE]
->Gli elementi blockquote non sono supportati in un’istanza standard. Un componente personalizzato può essere sviluppato per supportare la funzione.
+>
+Gli elementi blockquote non sono supportati in un’istanza standard. Un componente personalizzato può essere sviluppato per supportare la funzione.
 
 Analogamente, il browser può rappresentare correttamente un prestito lessicale non comune o una frase se l’elemento `span` viene utilizzato come segue:
 
@@ -1005,7 +1028,8 @@ Analogamente, il browser può rappresentare correttamente un prestito lessicale 
 ```
 
 >[!NOTE]
->Non è necessario seguire questo criterio di successo per nomi o città in lingue diverse, o quando si utilizzano prestiti lessicali o frasi diventati comuni nella lingua predefinita (come *schadenfreude* in inglese).
+>
+Non è necessario seguire questo criterio di successo per nomi o città in lingue diverse, o quando si utilizzano prestiti lessicali o frasi diventati comuni nella lingua predefinita (come *schadenfreude* in inglese).
 
 Per aggiungere l’elemento span con una lingua appropriata, è possibile modificare manualmente il codice HTML nella modalità di modifica sorgente dell’editor Rich Text, affinché venga letto come sopra indicato. In alternativa, l’attributo `lang` può essere incluso nell’editor Rich Text da un amministratore di sistema (consulta [ Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 

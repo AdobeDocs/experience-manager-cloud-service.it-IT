@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2308'
 ht-degree: 3%
@@ -24,7 +24,7 @@ Conoscenza del CSS e del framework LESS.
 
 ## Cosa può essere personalizzato {#what-can-be-customized}
 
-Nell’articolo sono elencate le classi css di Adaptive Forms disponibili al pubblico. Puoi sfruttare queste classi per assegnare uno stile a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, come le finestre di dialogo e le barre di stato che visualizzano gli avvisi, esula dall’ambito di questo articolo. Utilizza questi costrutti di stile per creare stili (utilizzando CSS o meno) solo quando non sei in grado di assegnare stili ai componenti utilizzando [editor temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+Nell’articolo sono elencate le classi css di Adaptive Forms disponibili al pubblico. È possibile utilizzare queste classi per assegnare uno stile a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, come le finestre di dialogo e le barre di stato che visualizzano gli avvisi, esula dall’ambito di questo articolo. Utilizza questi costrutti di stile per creare stili (utilizzando CSS o meno) solo quando non sei in grado di assegnare stili ai componenti utilizzando [editor temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalizzazione degli stili in Adaptive Forms {#customizing-styles-in-adaptive-forms}
 

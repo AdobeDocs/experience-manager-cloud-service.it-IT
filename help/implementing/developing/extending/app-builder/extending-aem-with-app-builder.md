@@ -2,9 +2,9 @@
 title: Estensione [!DNL Adobe Experience Manager] as a Cloud Service utilizzando Adobe Developer App Builder.
 description: Estensione [!DNL Adobe Experience Manager] as a Cloud Service utilizzando Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ App Builder fornisce un framework unificato di estensibilità di terze parti per
 
 App Builder consente ai clienti di estendere facilmente Adobe Experience Manager in vari casi d’uso:
 
-* Estensibilità middleware: possibilità di collegare i sistemi esterni con applicazioni Adobe per la creazione di connettori personalizzati o per l&#39;utilizzo di una suite di integrazioni predefinite.
+* Estensibilità middleware: possibilità di collegare sistemi esterni ad applicazioni Adobi per la creazione di connettori personalizzati o per l&#39;utilizzo di una suite di integrazioni predefinite.
 * Estensibilità dei servizi di base: estende le funzionalità delle applicazioni di base estendendo il comportamento predefinito con funzioni personalizzate e logica di business.
 * Estensibilità dell’esperienza utente: estendere l’esperienza di base per supportare i requisiti aziendali o creare proprietà digitali, vetrine e app di back-office specifiche per il cliente.
 
@@ -27,18 +27,18 @@ App Builder è disponibile per i clienti e i partner aziendali tramite la nostra
 
 >[!NOTE]
 >
-> Per i clienti AEM 6.5 che desiderano sfruttare App Builder, visita [Estensione di Adobe Experience Manager 6.5 con Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+> Per i clienti di AEM 6.5 che desiderano usare App Builder, consulta [Estensione di Adobe Experience Manager 6.5 con Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## Architettura {#architecture}
 
 Invece di una soluzione preconfigurata, Adobe Developer App Builder fornisce una piattaforma di sviluppo comune, coerente e standardizzata per estendere le soluzioni Adobe Cloud come AEM, tra cui:
 
 * Console Adobe Developer: per lo sviluppo di estensioni e microservizi personalizzati, consente agli sviluppatori di creare e gestire progetti e al contempo di accedere a tutti gli strumenti e le API necessari per creare plug-in e integrazioni.
-* Strumenti per sviluppatori: strumenti open-source, SDK e librerie per consentire agli sviluppatori di creare facilmente estensioni e integrazioni personalizzate. Utilizza React Spectrum (il toolkit dell’interfaccia utente di Adobe) per avere un’unica interfaccia utente comune per tutte le app di Adobe.
+* Strumenti per sviluppatori: strumenti open-source, SDK e librerie per consentire agli sviluppatori di creare facilmente estensioni e integrazioni personalizzate. Utilizza React Spectrum (toolkit dell’interfaccia utente di Adobe) per avere un’unica interfaccia utente comune per tutte le app di Adobe.
 * Servizi: I/O Runtime per l&#39;hosting dell&#39;infrastruttura sulla nostra piattaforma senza server ed Eventi di I/O per le integrazioni basate su eventi. Dell fornisce inoltre il supporto predefinito per l&#39;archiviazione di dati e file.
 * Adobe Experience Cloud: gli sviluppatori possono inviare estensioni e integrazioni da pubblicare nella propria organizzazione Experience Cloud. Gli amministratori di sistema possono quindi rivedere, gestire e approvare tali estensioni. Dopo la pubblicazione, le estensioni e gli strumenti personalizzati di App Builder sono disponibili insieme ad altre app Adobe Experience Cloud.
 
-Il diagramma seguente illustra come un’applicazione standard basata su App Builder sfrutta queste funzionalità:
+Il diagramma seguente illustra come un’applicazione standard basata su App Builder utilizza queste funzionalità:
 
 ![Architettura](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 

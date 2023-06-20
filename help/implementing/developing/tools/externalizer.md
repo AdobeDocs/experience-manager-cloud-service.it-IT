@@ -2,9 +2,9 @@
 title: Esternalizzazione degli URL
 description: Externalizer è un servizio OSGi che consente di trasformare in modo programmatico un percorso di risorsa in un URL esterno e assoluto.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,8 @@ Per definire un mapping di dominio per il servizio Externalizer:
    * **`scheme`** è solitamente http o https, ma può essere un altro protocollo.
 
       * Si consiglia di utilizzare https per applicare i collegamenti https.
-      * Verrà utilizzato se il codice client non sostituisce lo schema quando viene richiesta l’esternalizzazione di un URL.
+      * Viene utilizzato se il codice client non sostituisce lo schema quando viene richiesta l’esternalizzazione di un URL.
+
    * **`server`** è il nome host (un nome di dominio o un indirizzo ip).
    * **`port`** (facoltativo) è il numero della porta.
    * **`contextpath`** (facoltativo) è impostato solo se AEM è installato come app web in un percorso di contesto diverso.
@@ -102,11 +103,11 @@ Questa sezione mostra alcuni esempi di utilizzo del servizio Externalizer.
 
 * **Per esternalizzare un percorso con il dominio &quot;publish&quot;:**
 
-   ```java
-   String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
+  ```
 
-   Supponendo il mapping del dominio:
+  Supponendo il mapping del dominio:
 
    * `publish https://www.website.com`
 
@@ -116,11 +117,11 @@ Questa sezione mostra alcuni esempi di utilizzo del servizio Externalizer.
 
 * **Per esternalizzare un percorso con il dominio &quot;author&quot;:**
 
-   ```java
-   String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
+  ```
 
-   Supponendo il mapping del dominio:
+  Supponendo il mapping del dominio:
 
    * `author https://author.website.com`
 
@@ -130,11 +131,11 @@ Questa sezione mostra alcuni esempi di utilizzo del servizio Externalizer.
 
 * **Per esternalizzare un percorso con il dominio &quot;locale&quot;:**
 
-   ```java
-   String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
+  ```
 
-   Supponendo il mapping del dominio:
+  Supponendo il mapping del dominio:
 
    * `local https://publish-3.internal`
 

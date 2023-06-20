@@ -1,19 +1,19 @@
 ---
 title: Abilitazione della pipeline front-end
-description: Scopri come abilitare la pipeline front-end per i siti esistenti per sfruttare i temi per personalizzare più rapidamente il tuo sito.
+description: Scopri come abilitare la pipeline front-end per i siti esistenti per utilizzare i temi del sito per personalizzarlo più rapidamente.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 87%
 
 ---
 
 # Abilitazione della pipeline front-end {#enable-front-end-pipeline}
 
-Scopri come abilitare la pipeline front-end per i siti esistenti per sfruttare i temi per personalizzare più rapidamente il tuo sito.
+Scopri come abilitare la pipeline front-end per i siti esistenti per utilizzare i temi del sito per personalizzarlo più rapidamente.
 
 ## Panoramica {#overview}
 
@@ -21,7 +21,7 @@ La pipeline front-end è un meccanismo che può distribuire rapidamente solo il 
 
 Invece di distribuire l’intero stack, questa pipeline gestisce solo il codice front-end, rendendo il processo più veloce e consentendo agli sviluppatori di personalizzare facilmente e rapidamente il sito senza conoscere AEM.
 
-Per impostazione predefinita, i siti basati sui modelli del sito possono sfruttare la pipeline front-end. Questo documento descrive come adattare i siti esistenti per sfruttare la pipeline front-end.
+Per impostazione predefinita, i siti basati sui modelli del sito possono utilizzare la pipeline front-end. Questo documento descrive come adattare i siti esistenti per sfruttare la pipeline front-end.
 
 >[!TIP]
 >
@@ -56,7 +56,7 @@ L’abilitazione del sito viene eseguita dalla console Sites utilizzando la [Bar
 
    ![Abilita pipeline front-end](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
 
-1. AEM ti chiederà di confermare una panoramica delle modifiche che verranno apportate. Una volta confermato, il tuo sito viene adattato.
+1. L’AEM ti chiede di confermare con una panoramica delle modifiche che verranno apportate. Una volta confermato, il tuo sito viene adattato.
 
 Ora il tuo sito è pronto per utilizzare la pipeline front-end. Per ulteriori informazioni sulla pipeline front-end e sulla gestione del tema del sito, consulta:
 

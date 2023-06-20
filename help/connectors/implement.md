@@ -2,10 +2,10 @@
 title: Implementazione di un connettore AEM
 description: Implementazione di un connettore AEM
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 100%
+source-wordcount: '966'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ AEM è una soluzione di gestione dell’esperienza web all’avanguardia e offre
 * Configurazione e rendering di un componente dell’interfaccia utente personalizzato. Ad esempio, puoi consentire all’autore di trascinare e rilasciare un componente video e configurare un video specifico da riprodurre sul sito live.
 * Intervento su una risorsa con un servizio partner. Ad esempio, l’invio di una risorsa a una piattaforma video quando viene pubblicata una pagina.
 * Analisi di un sito, di una pagina o di una risorsa in AEM Admin Console. Ad esempio, l’elaborazione di consigli SEO per una pagina esistente o non pubblicata.
-* Accesso a livello di pagina ai dati utente gestito da un servizio esterno. Ad esempio, sfrutta le informazioni demografiche per personalizzare l’esperienza del sito. Scopri ContextHub, un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali.
+* Accesso a livello di pagina ai dati utente gestito da un servizio esterno. Ad esempio, utilizza le informazioni demografiche per personalizzare l’esperienza del sito. Scopri ContextHub, un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali.
 * Traduzione della copia del sito o dei metadati della risorsa. Consulta la sezione [Connettore Bootstrap di AEM Translation Framework](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) per il codice di esempio che utilizza l&#39;AEM Translation Framework, che è l’implementazione preferita dei connettori di traduzione.
 
 
@@ -52,7 +52,7 @@ Oltre alla documentazione statica di cui sopra, Adobe e la comunità AEM offrono
 Regole della struttura del pacchetto
 -----------------------
 
-Per supportare le distribuzioni continue, i pacchetti AEM as a Cloud Service, di cui i connettori sono esempi, hanno una netta separazione tra contenuti &quot;immutabili&quot; e contenuti &quot;mutabili&quot;. I pacchetti devono essere separati in modo pulito tra quelli che includono:
+Per supportare le distribuzioni continue, i pacchetti as a Cloud Service AEM, di cui i connettori sono esempi, hanno una netta separazione tra contenuti &quot;immutabili&quot; e contenuti &quot;mutabili&quot;. I pacchetti devono essere separati in modo pulito tra quelli che includono:
 
 * `/apps`
 * `/content` e `/conf`
@@ -74,7 +74,7 @@ Un aspetto dell’implementazione del connettore è il codice che ne supporta la
 Configurazioni in base al contesto
 -----------------------------
 
-[Configurazioni in base al contesto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) consente la configurazione dei livelli in diverse cartelle, tra cui `/libs`, `/apps`, `/conf` e sottocartelle in `/conf`. Supporta l’ereditarietà in modo che un cliente possa impostare la configurazione globale mentre apporta modifiche specifiche a ciascun microsito. Poiché è possibile sfruttare questa funzione per le configurazioni dei Servizi cloud, il codice del connettore dovrebbe fare riferimento alla configurazione utilizzando l’API di configurazione in base al contesto, invece di fare riferimento a un nodo di configurazione specifico.
+[Configurazioni in base al contesto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) consente la configurazione dei livelli in diverse cartelle, tra cui `/libs`, `/apps`, `/conf` e sottocartelle in `/conf`. Supporta l’ereditarietà in modo che un cliente possa impostare la configurazione globale mentre apporta modifiche specifiche a ciascun microsito. Poiché è possibile utilizzare questa funzione per le configurazioni di Cloud Services, il codice del connettore deve fare riferimento alla configurazione utilizzando l’API di configurazione in base al contesto, invece di fare riferimento a un nodo di configurazione specifico.
 
 Se le configurazioni modificate sono usate nel connettore, occorre architettare il connettore in modo da gestire l&#39;inclusione/unione di qualsiasi aggiornamento futuro delle configurazioni predefinite fornite dal connettore con le configurazioni del cliente. Ricordate che la modifica di contenuti o configurazioni personalizzate (cioè modificate dal cliente) senza l&#39;avviso e il consenso del cliente può interrompere (o creare un comportamento imprevisto) con il connettore.
 

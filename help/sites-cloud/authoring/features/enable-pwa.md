@@ -2,10 +2,10 @@
 title: Abilitazione delle funzioni progressive delle web app
 description: AEM Sites consente all’autore dei contenuti di abilitare le funzionalità progressive delle app web a qualsiasi sito tramite una configurazione semplice invece che tramite la codifica.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
 >* Informazioni sulle strategie di caching
 >* Supporto dal team di sviluppo
 >
->Prima di utilizzare questa funzione è consigliabile parlarne con il team di sviluppo per definire il modo migliore per sfruttarla al meglio per il progetto.
+>Prima di utilizzare questa funzione è consigliabile parlarne con il team di sviluppo per definire il modo migliore per utilizzarla per il progetto.
 
 ## Introduzione {#introduction}
 
@@ -50,7 +50,7 @@ Questi sono i passaggi tecnici che l’autore dovrà coordinare con il team di s
 
 ### Utilizzare componenti core {#adjust-components}
 
-La versione 2.15.0 o successiva dei componenti core supporta completamente le funzioni PWA di AEM Sites. Poiché AEMaaCS include sempre la versione più recente dei componenti core, puoi sfruttare le funzionalità di PWA predefinite. Il progetto AEMaaCS soddisfa automaticamente questo requisito.
+La versione 2.15.0 o successiva dei componenti core supporta completamente le funzioni PWA di AEM Sites. Poiché AEMaaCS include sempre la versione più recente dei Componenti core, puoi utilizzare le funzioni PWA pronte all’uso. Il progetto AEMaaCS soddisfa automaticamente questo requisito.
 
 >[!NOTE]
 >
@@ -122,7 +122,6 @@ Rispettando [i prerequisiti](#prerequisites), per un autore di contenuti è molt
       * `/etc/clientlibs/<sitename>`
 
       ![Definire i percorsi offline di PWA](../assets/pwa-offline.png)
-
 
 1. Toccare o fare clic su **Salva e chiudi**.
 

@@ -3,9 +3,9 @@ title: Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail e u
 description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti tramite e-sign, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '7190'
+source-wordcount: '7189'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 
 
 * **[!UICONTROL Usa modulo adattivo]**: specifica il metodo per individuare il modulo adattivo di input. Questa opzione è disponibile se si seleziona Modulo adattivo o Modulo adattivo di sola lettura dall’elenco a discesa Tipo. Puoi utilizzare il modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto o disponibile in un percorso in una variabile. È possibile utilizzare una variabile di tipo String per specificare il percorso.\
-   È possibile associare più Forms adattivi a un flusso di lavoro. Di conseguenza, puoi specificare un modulo adattivo in fase di esecuzione utilizzando i metodi di input disponibili.
+  È possibile associare più Forms adattivi a un flusso di lavoro. Di conseguenza, puoi specificare un modulo adattivo in fase di esecuzione utilizzando i metodi di input disponibili.
 
 <!-- 
 
@@ -80,7 +80,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
    * **[!UICONTROL Seleziona file di dati di input tramite]**: percorso del file di dati di input (.json, .xml, .doc o modello dati modulo). Puoi recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile di tipo Documento, XML o JSON. Ad esempio, il file contiene i dati inviati per il modulo tramite un&#39;applicazione Casella in entrata AEM. Un esempio di percorso è [Payload_Directory]/workflow/data.
    * **[!UICONTROL Seleziona allegati di input tramite]**: gli allegati disponibili nel percorso vengono allegati al modulo associato all’attività. Il percorso può essere relativo al payload o recuperare l’allegato memorizzato in una variabile di un documento. Un esempio di percorso è [Payload_Directory]/attachments/. È possibile specificare gli allegati posizionati rispetto al payload o utilizzare una variabile di tipo documento (Elenco array > Documento) per specificare un allegato di input per il modulo adattivo.
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -92,7 +92,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 
    * **[!UICONTROL Mappatura attributi richiesta]**: utilizza la sezione Mappatura attributi della richiesta per definire [nome e valore dell’attributo di richiesta](work-with-form-data-model.md#bindargument). Recupera i dettagli dall’origine dati in base al nome e al valore dell’attributo specificati nella richiesta. È possibile definire un valore di attributo della richiesta utilizzando un valore letterale o una variabile di tipo di dati String.
 
-   <!--  
+  <!--  
      
      The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
      
@@ -104,7 +104,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
    * **[!UICONTROL Salva allegati tramite]**: salva gli allegati del modulo forniti in un’attività. È possibile salvare gli allegati utilizzando un percorso relativo al payload o memorizzarlo in una variabile dell’elenco di matrici del tipo di dati Documento.
    * **[!UICONTROL Salva documento di record tramite]**: percorso per salvare un file del documento record. Ad esempio: [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puoi salvare il documento record utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Dati documento. Se si seleziona **[!UICONTROL Relativo al payload]** , il documento di record non viene generato se il campo percorso viene lasciato vuoto. Questa opzione è disponibile solo se si seleziona Modulo adattivo dall’elenco a discesa Tipo.
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
@@ -122,7 +122,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 * **[!UICONTROL Argomenti]**: il campo è disponibile quando nel campo Selettore partecipante è selezionato uno script diverso da RandomParticipantChoose. Il campo consente di fornire un elenco di argomenti separati da virgole per lo script selezionato nel campo Selettore partecipanti.
 
 * **[!UICONTROL Utente o gruppo]**: l’attività viene assegnata all’utente o al gruppo selezionato. L’opzione è disponibile quando **[!UICONTROL A un utente o gruppo specifico, opzione]** è selezionato in **[!UICONTROL Assegna opzioni]** campo. Il campo elenca tutti gli utenti e i gruppi del [!DNL workflow-users] gruppo.\
-   Il **[!UICONTROL Utente o gruppo]** Il menu a discesa elenca gli utenti e i gruppi a cui l&#39;utente connesso ha accesso. La visualizzazione del nome utente dipende dalla disponibilità delle autorizzazioni di accesso per **[!UICONTROL utenti]** in crx-repository per quel particolare utente.
+  Il **[!UICONTROL Utente o gruppo]** Il menu a discesa elenca gli utenti e i gruppi a cui l&#39;utente connesso ha accesso. La visualizzazione del nome utente dipende dalla disponibilità delle autorizzazioni di accesso per **[!UICONTROL utenti]** in crx-repository per quel particolare utente.
 
 * **[!UICONTROL Invia e-mail di notifica]**: seleziona questa opzione per inviare notifiche e-mail all’assegnatario. Queste notifiche vengono inviate quando un’attività viene assegnata a un utente o a un gruppo. È possibile utilizzare **[!UICONTROL Indirizzo e-mail destinatario]** per specificare il meccanismo di recupero dell’indirizzo e-mail.
 
@@ -135,7 +135,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
    * Quando **[!UICONTROL Consenti all’assegnatario di condividere tramite la casella in entrata]** L&#39;opzione è selezionata e gli utenti condividono i propri elementi casella in entrata o consentono ad altri utenti di accedere ai propri elementi casella in entrata. Solo le attività per le quali è stata precedentemente attivata l&#39;opzione sono condivise con altri utenti.
    * Quando **[!UICONTROL Consenti all’assegnatario di delegare utilizzando le impostazioni &quot;Fuori sede&quot;]** è selezionato. L’assegnatario può abilitare l’opzione per delegare l’attività ad altri utenti insieme ad altre opzioni Fuori sede. Tutte le nuove attività assegnate all&#39;utente fuori sede vengono automaticamente delegate (assegnate) agli utenti indicati nelle impostazioni fuori sede.
 
-   Consente ad altri utenti di scegliere le attività assegnate mentre è fuori sede e non può lavorare sulle attività assegnate.
+  Consente ad altri utenti di scegliere le attività assegnate mentre è fuori sede e non può lavorare sulle attività assegnate.
 
 * **[!UICONTROL Azioni]** > **[!UICONTROL Azioni predefinite]**: sono disponibili le azioni Invio, Salva e Reimposta pronte all’uso. Per impostazione predefinita, sono attivate tutte le azioni predefinite.
 * **[!UICONTROL Variabile percorso]**: nome della variabile di route. La variabile di route acquisisce le azioni personalizzate selezionate da un utente nella casella in entrata AEM.
@@ -354,7 +354,7 @@ Il passaggio Richiama servizio modello dati modulo presenta i campi elencati di 
 
    * **[!UICONTROL Relativo al payload]**: utilizza l’opzione per recuperare il file allegato salvato in un percorso relativo al payload. Selezionare l&#39;opzione e specificare il nome della cartella che include il file allegato oppure specificare il nome del file allegato nella casella di testo.
 
-      Ad esempio, se la cartella relativa al payload nell’archivio CRX include un file allegato in corrispondenza di `attachment\attachment-folder` posizione, specificare `attachment\attachment-folder` nella casella di testo dopo aver selezionato **[!UICONTROL Relativo al payload]** opzione.
+     Ad esempio, se la cartella relativa al payload nell’archivio CRX include un file allegato in corrispondenza di `attachment\attachment-folder` posizione, specificare `attachment\attachment-folder` nella casella di testo dopo aver selezionato **[!UICONTROL Relativo al payload]** opzione.
 
    * **[!UICONTROL Notazione in punti JSON]**: utilizza l’opzione quando il valore da utilizzare si trova in un file JSON. Ad esempio, insurance.customerDetails.emailAddress. L’opzione JSON Dot Notation è disponibile solo se è selezionata l’opzione Mappa campi di input da JSON di input.
    * **[!UICONTROL Mappa i campi di input da JSON di input]**: specifica il percorso di un file JSON per ottenere il valore di input di alcuni argomenti del servizio dal file JSON. Il percorso del file JSON può essere relativo al payload, un percorso assoluto oppure puoi selezionare un documento JSON di input utilizzando una variabile di tipo JSON o Modello dati modulo.
@@ -387,7 +387,7 @@ Il passaggio Firma documento presenta le seguenti proprietà:
 * **[!UICONTROL Frequenza e-mail promemoria]**: puoi inviare un’e-mail di promemoria a intervalli giornalieri o settimanali. La settimana viene conteggiata dal giorno in cui il documento viene assegnato a un utente per la firma.
 * **[!UICONTROL Processo di firma]**: puoi scegliere di firmare un documento in ordine sequenziale o parallelo. In ordine sequenziale, un firmatario riceve il documento alla volta per la firma. Dopo che il primo firmatario ha completato la firma del documento, quest&#39;ultimo viene inviato al secondo firmatario e così via. In ordine parallelo, più firmatari possono firmare un documento alla volta.
 * **[!UICONTROL URL di reindirizzamento]**: specifica un URL di reindirizzamento. Dopo aver firmato il documento, puoi reindirizzare l’assegnatario a un URL. Di solito, questo URL contiene un messaggio di ringraziamento o ulteriori istruzioni.
-* **[!UICONTROL Fase flusso di lavoro]**: un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello ( **[!UICONTROL Barra laterale]** > **[!UICONTROL Pagina]** > **[!UICONTROL Proprietà pagina]** > **[!UICONTROL Fasi]**).
+* **[!UICONTROL Fase flusso di lavoro]**: un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello ( **[!UICONTROL Sidekick]** > **[!UICONTROL Pagina]** > **[!UICONTROL Proprietà pagina]** > **[!UICONTROL Fasi]**).
 * **[!UICONTROL Seleziona firmatari]**: specifica il metodo di selezione dei firmatari per il documento. Puoi assegnare dinamicamente il flusso di lavoro a un utente o a un gruppo oppure aggiungere manualmente i dettagli di un firmatario.
 * **[!UICONTROL Script o servizio per selezionare i firmatari]**: l’opzione è disponibile solo se l’opzione Dinamicamente è selezionata nel campo Seleziona firmatari. È possibile specificare un codice ECMAScript o un servizio per scegliere i firmatari e le opzioni di verifica per un documento.
 * **[!UICONTROL Dettagli firmatario]**: l’opzione è disponibile solo se l’opzione Manualmente è selezionata nel campo Seleziona firmatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, assicurati che l’opzione di verifica corrispondente sia abilitata per il [!DNL Adobe Sign] account. Puoi utilizzare una variabile di tipo stringa per definire i valori per i campi E-mail, Codice paese e Numero di telefono. I campi Codice paese e Numero di telefono vengono visualizzati solo se si seleziona Verifica telefono dall&#39;elenco a discesa Verifica in due passaggi.
@@ -526,7 +526,7 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 
 * **[!UICONTROL Seleziona posizione principale contenuto tramite]**: radice del contenuto è un valore stringa che specifica l’URI, il riferimento assoluto o la posizione nell’archivio per recuperare le risorse relative utilizzate dalla progettazione del modulo. Ad esempio, se la progettazione del modulo fa riferimento a un’immagine relativamente, ad esempio `../myImage.gif`, `myImage.gif` deve essere in `repository://`. Il valore predefinito è `repository://`, che punta al livello principale dell’archivio.
 
-   Quando scegli una risorsa dall’applicazione, il percorso URI della directory principale del contenuto deve avere la struttura corretta. Ad esempio, se un modulo viene selezionato da un’applicazione denominata SampleApp e viene posizionato in `SampleApp/1.0/forms/Test.xdp`, l&#39;URI radice del contenuto deve essere specificato come `repository://administrator@password/Applications/SampleApp/1.0/forms/`, o `repository:/Applications/SampleApp/1.0/forms/` (quando l&#39;autorità è nulla). Quando l’URI della directory principale del contenuto viene specificato in questo modo, i percorsi di tutte le risorse a cui si fa riferimento nel modulo verranno risolti in base a questo URI.
+  Quando scegli una risorsa dall’applicazione, il percorso URI della directory principale del contenuto deve avere la struttura corretta. Ad esempio, se un modulo viene selezionato da un’applicazione denominata SampleApp e viene posizionato in `SampleApp/1.0/forms/Test.xdp`, l&#39;URI radice del contenuto deve essere specificato come `repository://administrator@password/Applications/SampleApp/1.0/forms/`, o `repository:/Applications/SampleApp/1.0/forms/` (quando l&#39;autorità è nulla). Quando l’URI della directory principale del contenuto viene specificato in questo modo, i percorsi di tutte le risorse a cui si fa riferimento nel modulo vengono risolti in base a questo URI.
 
 * **[!UICONTROL Seleziona file XCI tramite]**: i file XCI vengono utilizzati per descrivere i font e altre proprietà utilizzati per gli elementi di progettazione dei moduli. È possibile mantenere un file XCI relativo al payload, in un percorso assoluto o utilizzando una variabile di tipo dati Documento.
 
@@ -544,7 +544,7 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 
 ## Genera passaggio di output PDF non interattivo   {#generatePDFdocuments}
 
-1. Trascina il flusso di lavoro Genera output PDF non interattivo nella scheda Forms Workflow nella barra laterale.
+1. Trascina il flusso di lavoro Genera output PDF non interattivo nella scheda Forms Workflow in Sidekick.
 1. Fai doppio clic sul passaggio del flusso di lavoro aggiunto per modificare il componente.
 1. Nella finestra di dialogo Modifica componente configura i documenti di input, i documenti di output e i parametri aggiuntivi, quindi fai clic su **[!UICONTROL OK]**.
 

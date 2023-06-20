@@ -2,10 +2,10 @@
 title: Differenze e novità - Adobe Experience Manager as a Cloud Service
 description: Differenze e novità - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 100%
+source-wordcount: '1899'
+ht-degree: 97%
 
 ---
 
@@ -192,7 +192,7 @@ A causa della netta separazione di codice e contenuto, gli sviluppatori possono 
 
 ### Sviluppo locale {#aem-as-a-cloud-service-developing-local-development}
 
-Al fine di supportare le iterazioni e lo sviluppo rapidi, è anche possibile sviluppare applicazioni AEM al di fuori del contesto di AEM as a Cloud Service. A questo scopo, gli sviluppatori possono accedere ai seguenti artefatti:
+Per favorire la rapidità delle iterazioni e dello sviluppo è inoltre possibile sviluppare applicazioni AEM al di fuori del contesto as a Cloud Service dall&#39;AEM. A questo scopo, gli sviluppatori possono accedere ai seguenti artefatti:
 
 * QuickStart AEM as a Cloud Service: un’installazione indipendente basata su `.jar` della base di codice AEM più recente, con la stessa superficie funzionale e API.
 
@@ -242,7 +242,7 @@ Questo combina i vantaggi dell’
 >
 >Per maggiori dettagli, [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) è un buon punto di partenza.
 
-I principi di base dell’interfaccia utente di authoring, sia per Sites che per Assets, saranno familiari per tutti coloro che hanno utilizzato AEM in passato.
+I principi di base dell’interfaccia utente di authoring, sia per Sites che per Assets, saranno familiari per tutti coloro che hanno utilizzato l’AEM in passato.
 
 La differenza principale consiste nel fatto che l’interfaccia utente è puramente touch, l’interfaccia classica non è più disponibile. In caso contrario, le nozioni di base rimangono invariate, con solo piccole modifiche apparenti.
 

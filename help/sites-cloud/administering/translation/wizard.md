@@ -4,10 +4,10 @@ description: Informazioni sull'utilizzo della Creazione guidata copia in lingua 
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ Per accedere alla creazione guidata:
 
    >[!NOTE]
    >
-   >Se hai selezionato più lingue nel passaggio precedente, verranno creati più progetti di traduzione.
+   >Se hai selezionato più lingue nel passaggio precedente, vengono creati più progetti di traduzione.
 
    ![Passaggio di traduzione della creazione guidata](../assets/language-copy-wizard-translate.png)
 

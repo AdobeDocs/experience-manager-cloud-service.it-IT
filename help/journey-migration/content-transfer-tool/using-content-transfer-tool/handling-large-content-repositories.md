@@ -2,10 +2,10 @@
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione di archivi di contenuti di grandi dimensioni
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 8%
+source-wordcount: '1837'
+ht-degree: 6%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
 >title="Gestione di archivi di contenuti di grandi dimensioni"
->abstract="Per accelerare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM as a Cloud Service, lo strumento Content Transfer può sfruttare AzCopy come passaggio opzionale di pre-copia. Una volta configurato questo passaggio preliminare, nella fase di estrazione AzCopy copia i BLOB da Amazon S3 o dall’archiviazione BLOB di Azure nell’archivio BLOB del set di migrazione. Nella fase di acquisizione AzCopy copia i BLOB dall’archivio BLOB del set di migrazione all’archivio BLOB di AEM as a Cloud Service di destinazione."
+>abstract="Per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti e spostare i contenuti in AEM as a Cloud Service, CTT può utilizzare AzCopy come fase di pre-copia opzionale. Una volta configurato questo passaggio preliminare, nella fase di estrazione AzCopy copia i BLOB da Amazon S3 o dall’archiviazione BLOB di Azure nell’archivio BLOB del set di migrazione. Nella fase di acquisizione AzCopy copia i BLOB dall’archivio BLOB del set di migrazione all’archivio BLOB di AEM as a Cloud Service di destinazione."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=it#setting-up-pre-copy-step" text="Guida introduttiva ad AzCopy come passaggio di pre-copia"
 
 La copia di un numero elevato di BLOB con lo strumento Content Transfer (CTT) può richiedere diversi giorni.
-Per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti e spostare i contenuti in AEM as a Cloud Service, la tecnologia CTT può sfruttare [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) come passaggio pre-copia facoltativo. Questo passaggio di pre-copia può essere utilizzato quando l’istanza AEM di origine è configurata per utilizzare un archivio dati di Amazon S3, Azure Blob Storage o File Data Store. Il passaggio di pre-copia è più efficace per la prima estrazione e acquisizione complete. Tuttavia, l’utilizzo della pre-copia per i successivi integratori non è consigliato (se la dimensione dell’integratore è inferiore a 200 GB) perché potrebbe aggiungere tempo all’intero processo. Una volta configurato questo passaggio preliminare, nella fase di estrazione, AzCopy copia i BLOB dall’archivio dati di Amazon S3, Azure Blob Storage o File nell’archivio BLOB del set di migrazione. Nella fase di acquisizione AzCopy copia i BLOB dall’archivio BLOB del set di migrazione all’archivio BLOB di AEM as a Cloud Service di destinazione.
+Per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti e spostare i contenuti su as a Cloud Service AEM, la CTT può utilizzare [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) come passaggio pre-copia facoltativo. Questo passaggio di pre-copia può essere utilizzato quando l’istanza AEM di origine è configurata per utilizzare un archivio dati di Amazon S3, Azure Blob Storage o File Data Store. Il passaggio di pre-copia è più efficace per la prima estrazione e acquisizione complete. Tuttavia, l’utilizzo della pre-copia per i successivi integratori non è consigliato (se la dimensione dell’integratore è inferiore a 200 GB) perché potrebbe aggiungere tempo all’intero processo. Una volta configurato questo passaggio preliminare, nella fase di estrazione, AzCopy copia i BLOB dall’archivio dati di Amazon S3, Azure Blob Storage o File nell’archivio BLOB del set di migrazione. Nella fase di acquisizione AzCopy copia i BLOB dall’archivio BLOB del set di migrazione all’archivio BLOB di AEM as a Cloud Service di destinazione.
 
 ## Considerazioni importanti prima di iniziare {#important-considerations}
 
 Prima di iniziare, segui la sezione seguente per comprendere le considerazioni importanti:
 
-* A partire dalla versione 2.0.16 di CTT, la configurazione della precopia viene eseguita automaticamente quando il bundle viene installato. Inoltre, se la dimensione del set di migrazione è maggiore di 200 GB, il processo di estrazione utilizzerà automaticamente la funzione di precopia. Il file azcopy.config viene creato nella directory crx-quickstart/cloud-migration/. Non è necessario eseguire manualmente la precopia se si utilizza CTT versione 2.0.16 o successiva.
+* A partire dalla versione 2.0.16 di CTT, la precopia viene impostata automaticamente quando il bundle viene installato. Inoltre, se la dimensione del set di migrazione è maggiore di 200 GB, il processo di estrazione utilizzerà automaticamente la funzione di precopia. Il file azcopy.config viene creato nella directory crx-quickstart/cloud-migration/. Non è necessario eseguire manualmente la precopia se si utilizza CTT versione 2.0.16 o successiva.
 
 * La versione dell’AEM di origine deve essere 6.3 - 6.5.
 
@@ -40,7 +40,7 @@ Prima di iniziare, segui la sezione seguente per comprendere le considerazioni i
 
 ### Considerazioni aggiuntive se l’istanza AEM di origine è configurata per utilizzare un archivio dati di archiviazione Amazon S3 o Azure Blob {#additional-considerations-amazons3-azure}
 
-* Poiché esiste un costo associato al trasferimento dei dati da Amazon S3 e Azure Blob Storage, il costo del trasferimento sarà relativo alla quantità totale di dati nel contenitore di archiviazione esistente (a prescindere dal fatto che vi si faccia riferimento o meno nell’AEM). Fai riferimento a [Amazon S3](https://aws.amazon.com/s3/pricing/) e [Archiviazione BLOB di Azure](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) per ulteriori dettagli.
+* Poiché esiste un costo associato al trasferimento dei dati da Amazon S3 e Azure Blob Storage, il costo del trasferimento è relativo alla quantità totale di dati nel contenitore di archiviazione esistente (a prescindere dal fatto che vi si faccia riferimento o meno nell’AEM). Fai riferimento a [Amazon S3](https://aws.amazon.com/s3/pricing/) e [Archiviazione BLOB di Azure](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) per ulteriori dettagli.
 
 * Sarà necessaria una coppia chiave di accesso e chiave segreta per il bucket Amazon S3 di origine esistente oppure un URI SAS per il contenitore Archiviazione BLOB di Azure di origine esistente (l’accesso in sola lettura va bene).
 
@@ -55,7 +55,7 @@ Prima di iniziare, segui la sezione seguente per comprendere le considerazioni i
 ## Impostazione dell’utilizzo di AzCopy come passaggio di pre-copia {#setting-up-pre-copy-step}
 
 >[!NOTE]
->A partire dalla versione 2.0.16 di CTT, la configurazione della precopia viene eseguita automaticamente quando il bundle viene installato. Inoltre, se la dimensione del set di migrazione è maggiore di 200 GB, il processo di estrazione utilizzerà automaticamente la funzione di precopia. Il file azcopy.config viene creato nella directory crx-quickstart/cloud-migration/. Se desideri aggiornare manualmente la configurazione del file, consulta le sezioni seguenti.
+>A partire dalla versione 2.0.16 di CTT, la precopia viene impostata automaticamente quando il bundle viene installato. Inoltre, se la dimensione del set di migrazione è maggiore di 200 GB, il processo di estrazione utilizzerà automaticamente la funzione di precopia. Il file azcopy.config viene creato nella directory crx-quickstart/cloud-migration/. Se desideri aggiornare manualmente la configurazione del file, consulta le sezioni seguenti.
 
 Segui questa sezione per scoprire come configurare l’utilizzo di AzCopy come passaggio pre-copia con lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti a AEM as a Cloud Service:
 
@@ -81,10 +81,10 @@ Puoi utilizzare la scheda Metriche del contenitore per determinare le dimensioni
 #### Archivio file di dati {#file-data-store-determine-size}
 
 * Per i sistemi mac, UNIX, eseguire il comando du sulla directory del datastore per ottenere le dimensioni:
-   `du -sh [path to datastore on the instance]`. Ad esempio, se l’archivio dati si trova in `/mnt/author/crx-quickstart/repository/datastore`, il comando seguente ti consente di visualizzarne le dimensioni: `du -sh /mnt/author/crx-quickstart/repository/datastore`.
+  `du -sh [path to datastore on the instance]`. Ad esempio, se l’archivio dati si trova in `/mnt/author/crx-quickstart/repository/datastore`, il comando seguente ti consente di visualizzarne le dimensioni: `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
 * Per Windows, utilizza il comando dir nella directory dell’archivio dati per ottenerne le dimensioni:
-   `dir /a/s [location of datastore]`.
+  `dir /a/s [location of datastore]`.
 
 ### 1. Installare AzCopy {#install-azcopy}
 
@@ -102,14 +102,14 @@ In breve, è molto probabile che si desidera scaricare il binario Linux x86-64 d
 
 Il supporto di AzCopy per Amazon S3, Azure Blob Storage e File Data Store è incluso nell’ultima versione CTT.
 Puoi scaricare l’ultima versione di CTT da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) portale.
-Si noti che saranno supportate solo le versioni 2.0.0 e successive e si consiglia di utilizzare la versione più recente.
+È opportuno notare che sono supportate solo le versioni 2.0.0 e successive ed è consigliabile utilizzare la versione più recente.
 
 ### 3. Configurare un file azcopy.config {#configure-azcopy-config-file}
 
 Sull’istanza AEM di origine, in `crx-quickstart/cloud-migration`, crea un nuovo file denominato `azcopy.config`.
 
 >[!NOTE]
->Il contenuto di questo file di configurazione sarà diverso a seconda che l’istanza AEM di origine utilizzi un archivio dati di Azure o Amazon S3 o un archivio dati di file.
+>Il contenuto di questo file di configurazione varia a seconda che l’istanza AEM di origine utilizzi un archivio dati di Azure o Amazon S3 o un archivio dati di file.
 
 #### Archivio dati archiviazione BLOB di Azure {#azure-blob-storage-data}
 
@@ -152,7 +152,7 @@ repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
 
 La proprietà azCopyPath deve contenere il percorso completo del percorso in cui è installato lo strumento della riga di comando azCopy nell&#39;istanza AEM di origine. Se manca la proprietà azCopyPath, il passaggio di precopia BLOB non verrà eseguito.
 
-Se `repository.home` proprietà mancante in azcopy.config, quindi nel percorso predefinito dell&#39;archivio dati `/mnt/crx/author/crx-quickstart/repository/datastore` per eseguire la precopia.
+Se `repository.home` proprietà mancante in azcopy.config, quindi nel percorso predefinito dell&#39;archivio dati `/mnt/crx/author/crx-quickstart/repository/datastore` viene utilizzato per eseguire la precopia.
 
 ### 4. Estrazione con AzCopy {#extracting-azcopy}
 
@@ -172,7 +172,7 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 Congratulazioni. Questa voce di registro indica che la configurazione è stata considerata valida e che AzCopy sta attualmente copiando tutti i BLOB dal contenitore di origine al contenitore di migrazione.
 
-Le voci di registro da AzCopy verranno visualizzate nel registro di estrazione e avranno il prefisso c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [Pre-copia AzCopy]
+Le voci di registro da AzCopy vengono visualizzate nel registro di estrazione con il prefisso c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [Pre-copia AzCopy]
 
 >[!CAUTION]
 >
@@ -189,7 +189,7 @@ Le voci di registro da AzCopy verranno visualizzate nel registro di estrazione e
 
 In caso di un problema con AzCopy, l’estrazione non riuscirà immediatamente e i registri di estrazione conterranno i dettagli dell’errore.
 
-Eventuali BLOB copiati prima dell’errore verranno ignorati automaticamente da AzCopy nelle esecuzioni successive e non sarà necessario copiarli nuovamente.
+Eventuali BLOB copiati prima dell’errore vengono ignorati automaticamente da AzCopy nelle esecuzioni successive e non è necessario copiarli nuovamente.
 
 #### Per archivio dati file {#file-data-store-extract}
 

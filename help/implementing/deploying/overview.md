@@ -3,10 +3,10 @@ title: Implementazione in AEM as a Cloud Service
 description: Implementazione in AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3542'
-ht-degree: 88%
+source-wordcount: '3523'
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 
 Le basi dello sviluppo del codice sono simili in AEM as a Cloud Service rispetto alle soluzioni AEM On Premise e Managed Services. Gli sviluppatori scrivono e testano localmente il codice, che viene quindi inviato agli ambienti AEM as a Cloud Service remoti. Cloud Manager, che era uno strumento opzionale per la distribuzione dei contenuti per Managed Services, è necessario. Questo è ora l’unico meccanismo per distribuire il codice negli ambienti di produzione, staging e sviluppo di AEM as a Cloud Service. Per la convalida rapida delle funzionalità e il debug prima della distribuzione di tali ambienti, il codice può essere sincronizzato da un ambiente locale a un [ambiente di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-L’aggiornamento della [Versione AEM](/help/implementing/deploying/aem-version-updates.md) è sempre un evento di distribuzione separato dal push del [codice personalizzato](#customer-releases). Considerando un’altra angolazione, le versioni del codice personalizzato devono essere testate rispetto alla versione AEM in produzione, in quanto è quella su cui alla fine verranno implementate. Gli aggiornamenti di versione di AEM successivi saranno frequenti e verranno applicati automaticamente. È previsto che siano compatibili con le versioni precedenti del codice cliente già distribuito.
+L’aggiornamento della [Versione AEM](/help/implementing/deploying/aem-version-updates.md) è sempre un evento di distribuzione separato dal push del [codice personalizzato](#customer-releases). In un altro modo, le versioni del codice personalizzato devono essere testate rispetto alla versione dell’AEM in produzione, perché è ciò che viene distribuito nella parte superiore. Gli aggiornamenti delle versioni dell’AEM che si verificano dopo di che, sono frequenti e vengono applicati automaticamente. È previsto che siano compatibili con le versioni precedenti del codice cliente già distribuito.
 
 Il resto di questo documento descriverà come gli sviluppatori devono adattare le proprie pratiche in modo che funzionino con gli aggiornamenti della versione di AEM as a Cloud Service e con gli aggiornamenti dei clienti.
 
@@ -31,12 +31,12 @@ Il resto di questo documento descriverà come gli sviluppatori devono adattare l
 
 Per le soluzioni AEM precedenti, la versione AEM più recente veniva cambiata raramente (circa una volta all’anno con service pack trimestrali) e i clienti aggiornavano le istanze di produzione all’ultimo quickstart quando ne avevano l’occasione, facendo riferimento al jar API. Tuttavia, le applicazioni AEM as a Cloud Service vengono aggiornate automaticamente alla versione più recente di AEM più spesso, pertanto il codice personalizzato per le versioni interne deve essere generato in base alla versione AEM più recente.
 
-Come per le versioni AEM non cloud esistenti, nella maggior parte dei casi sarà supportato uno sviluppo locale e offline basato su un quickstart specifico e dovrebbe essere lo strumento preferito per il debug.
+Come per le versioni AEM non cloud esistenti, è supportato uno sviluppo locale offline basato su un avvio rapido specifico, che dovrebbe essere lo strumento di scelta per il debug nella maggior parte dei casi.
 
 >[!NOTE]
 >Esistono sottili differenze operative tra il comportamento dell’applicazione su un computer locale e su Adobe Cloud. Queste differenze architettoniche devono essere rispettate durante lo sviluppo locale e possono portare a un comportamento diverso durante l’implementazione nell’infrastruttura cloud. A causa di queste differenze, è importante eseguire test esaustivi sugli ambienti di sviluppo e stage prima di implementare un nuovo codice personalizzato in produzione.
 
-Al fine di sviluppare un codice personalizzato per una versione interna, deve essere scaricata e installata la versione pertinente di [SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md). Per ulteriori informazioni sull’utilizzo degli strumenti di Dispatcher di AEM as a Cloud Service, consulta [questa pagina](/help/implementing/dispatcher/disp-overview.md).
+Per sviluppare un codice personalizzato per una versione interna, è necessario disporre della versione [SDK AS A CLOUD SERVICE AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) devono essere scaricati e installati. Per ulteriori informazioni sull’utilizzo degli strumenti di Dispatcher di AEM as a Cloud Service, consulta [questa pagina](/help/implementing/dispatcher/disp-overview.md).
 
 Il video seguente fornisce una panoramica di alto livello su come distribuire il codice in AEM as a Cloud Service:
 
@@ -86,7 +86,7 @@ Ulteriori informazioni sulla configurazione OSGI in [Configurazione OSGi per AEM
 
 In alcuni casi potrebbe essere utile preparare le modifiche al contenuto nel controllo della sorgente in modo che possa essere distribuito da Cloud Manager ogni volta che un ambiente viene aggiornato. Ad esempio, potrebbe essere ragionevole impostare alcune strutture di cartelle principali o allineare le modifiche nei modelli modificabili per abilitare i criteri in quelli per i componenti aggiornati dalla distribuzione dell’applicazione.
 
-Esistono due strategie per descrivere il contenuto che verrà distribuito da Cloud Manager nell’archivio mutabile, nei pacchetti di contenuto mutabile e nelle istruzioni repoinit.
+Esistono due strategie per descrivere il contenuto distribuito da Cloud Manager nell’archivio mutabile: pacchetti di contenuti mutabili e istruzioni di repoinit.
 
 ### Pacchetti di contenuto mutabile {#mutable-content-packages}
 
@@ -140,9 +140,9 @@ Per i casi seguenti, è preferibile adottare l’approccio della creazione di co
 Repoinit è preferibile per questi casi d’uso di modifica del contenuto supportati grazie ai seguenti vantaggi:
 
 * Repoinit crea risorse all’avvio in modo che la logica possa dare per scontata l’esistenza di tali risorse. Nell’approccio a pacchetti di contenuti mutabili, le risorse vengono create dopo l’avvio, pertanto il codice dell’applicazione che si basa su di esse potrebbe non riuscire.
-* Repoinit è un set di istruzioni relativamente sicuro in quanto si controlla esplicitamente l’azione da intraprendere. Inoltre, le uniche operazioni supportate sono di aggiunta, ad eccezione di alcuni casi relativi alla sicurezza che consentono la rimozione di utenti, utenti dei servizi e gruppi. Al contrario, è esplicita la rimozione di qualcosa nell’approccio a pacchetti di contenuti mutabili: quando definisci un filtro, tutto ciò che è presente ed è coperto da un filtro verrà eliminato. Tuttavia, è necessario prestare attenzione, in quanto con qualsiasi contenuto ci sono scenari in cui la presenza di nuovi contenuti può alterare il comportamento dell’applicazione.
+* Repoinit è un set di istruzioni relativamente sicuro in quanto si controlla esplicitamente l’azione da intraprendere. Inoltre, le uniche operazioni supportate sono di aggiunta, ad eccezione di alcuni casi relativi alla sicurezza che consentono la rimozione di utenti, utenti dei servizi e gruppi. Al contrario, la rimozione di un elemento nell’approccio del pacchetto di contenuti mutabili è esplicita; quando definisci un filtro, viene eliminato tutto ciò che è presente in un filtro. Tuttavia, è necessario prestare attenzione, in quanto con qualsiasi contenuto ci sono scenari in cui la presenza di nuovi contenuti può alterare il comportamento dell’applicazione.
 * Repoinit esegue operazioni rapide e atomiche. I pacchetti di contenuti mutabili, al contrario, possono dipendere in modo molto efficiente dalle prestazioni delle strutture coperte da un filtro. Anche se si aggiorna un singolo nodo, è possibile creare un’istantanea di una struttura di grandi dimensioni.
-* È possibile convalidare le istruzioni di repoinit in un ambiente di sviluppo locale in fase di esecuzione, poiché verranno eseguite quando la configurazione OSGi sarà registrata.
+* È possibile convalidare le istruzioni di repoinit in un ambiente di sviluppo locale in fase di runtime perché vengono eseguite al momento della registrazione della configurazione OSGi.
 * Le istruzioni repoinit sono atomiche ed esplicite e ignorano se lo stato è già corrispondente.
 
 Quando Cloud Manager distribuisce l’applicazione, esegue queste istruzioni, indipendentemente dall’installazione di qualsiasi pacchetto di contenuto.
@@ -174,12 +174,12 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Gestione pacchetti - Migrazione dei pacchetti di contenuto mutabile"
->abstract="Esplora come sfruttare la gestione pacchetti per i casi d’uso in cui un pacchetto di contenuti deve essere installato “una tantum”, che include l’importazione di contenuti specifici dalla produzione allo staging per eseguire il debug di un problema di produzione, il trasferimento di piccoli pacchetti di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
+>abstract="Esplora l’utilizzo di Gestione pacchetti per i casi di utilizzo in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;, che include l’importazione di contenuti specifici dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, trasferire un piccolo pacchetto di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it#cloud-migration" text="Strumento trasferimento contenuti"
 
-Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come “una tantum”. Ad esempio, per eseguire il debug di un problema di produzione, è necessario importare contenuto specifico dalla produzione allo staging. Per questi scenari, [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) può essere utilizzato in ambienti AEM as a Cloud Service.
+Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come “una tantum”. Ad esempio, l’importazione di contenuto specifico dalla produzione alla gestione temporanea per il debug di un problema di produzione. Per questi scenari, [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) può essere utilizzato in ambienti AEM as a Cloud Service.
 
-Poiché Gestione pacchetti è un concetto di esecuzione, non è possibile installare contenuto o codice nell’archivio immutabile, quindi questi pacchetti di contenuto devono essere costituiti solo da contenuto mutabile (principalmente `/content` o `/conf`). Se il pacchetto di contenuti include contenuti misti (con contenuto mutabile e immutabile), verrà installato solo il contenuto mutabile.
+Poiché Gestione pacchetti è un concetto di esecuzione, non è possibile installare contenuto o codice nell’archivio immutabile, quindi questi pacchetti di contenuto devono essere costituiti solo da contenuto mutabile (principalmente `/content` o `/conf`). Se il pacchetto di contenuti include contenuti misti (sia contenuti mutabili che immutabili), viene installato solo il contenuto mutabile.
 
 >[!IMPORTANT]
 >
@@ -239,7 +239,7 @@ Il seguente `POM.xml` snippet Maven mostra come incorporare i pacchetti di terze
 
 ## Funzionamento delle implementazioni continue {#how-rolling-deployments-work}
 
-Come per gli aggiornamenti AEM, le versioni dei clienti e delle clienti vengono distribuite utilizzando una strategia di distribuzione continua per eliminare i tempi di inattività dei cluster di authoring nelle giuste circostanze. La sequenza generale di eventi è descritta di seguito, dove i nodi con la vecchia e la nuova versione del codice del cliente eseguono la stessa versione del codice AEM.
+Analogamente agli aggiornamenti AEM, le versioni dei clienti vengono distribuite utilizzando una strategia di distribuzione continua per eliminare i tempi di inattività del cluster di authoring nelle circostanze appropriate. La sequenza generale di eventi è descritta di seguito, dove i nodi con la vecchia e la nuova versione del codice del cliente eseguono la stessa versione del codice AEM.
 
 * I nodi con la versione precedente sono attivi e viene creato e reso disponibile un candidato per la nuova versione.
 * In presenza di definizioni di indice nuove o aggiornate, gli indici corrispondenti vengono elaborati. I nodi con la versione precedente utilizzeranno sempre i vecchi indici, mentre i nodi con la nuova versione utilizzeranno sempre i nuovi indici.
@@ -263,7 +263,7 @@ Al momento, AEM as a Cloud Service non funziona con strumenti di gestione degli 
 
 Il meccanismo di pubblicazione è retrocompatibile con [API Java di replica di AEM](https://helpx.adobe.com/it/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
 
-Per sviluppare e testare tramite la replica con l’avvio rapido di AEM cloud ready, le funzionalità di replica classica devono essere utilizzate con un’impostazione di Authoring/Pubblicazione. Nel caso in cui il punto di ingresso dell’interfaccia utente nell’authoring di AEM sia stato rimosso per il cloud, gli utenti accederebbero a `http://localhost:4502/etc/replication` per la configurazione.
+Per sviluppare e testare la replica con l’avvio rapido dell’AEM pronto per il cloud, è necessario utilizzare le funzionalità di replica classiche con una configurazione Author/Publish. Nel caso in cui il punto di ingresso dell’interfaccia utente nell’authoring di AEM sia stato rimosso per il cloud, gli utenti accederebbero a `http://localhost:4502/etc/replication` per la configurazione.
 
 ## Codice compatibile con versioni precedenti per implementazioni continue {#backwards-compatible-code-for-rolling-deployments}
 

@@ -2,10 +2,10 @@
 title: Gestione delle versioni dei progetti Maven
 description: Per le distribuzioni negli ambienti di staging e produzione di AEM as a Cloud Service, Cloud Manager genera una versione univoca e incrementale.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
-source-git-commit: 21607fadf33dac038c7f794b933b92f60b8e20a9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 100%
+source-wordcount: '266'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ Se la versione del progetto originale soddisfa determinati criteri, la versione 
 >
 >Il valore della versione originale di questo progetto deve essere impostato in modo statico nell’elemento `<version>` del file `pom.xml` di livello superiore nel ramo dell’archivio Git.
 
-Se la versione originale soddisfa questi criteri, la versione generata verrà aggiunta alla versione originale come nuovo segmento di versione. Anche la versione generata verrà leggermente modificata per includere l’ordinamento e la gestione delle versioni corrette. Ad esempio, presupponendo la versione generata `2019.926.121356.0000020490`, si otterrebbero i seguenti risultati.
+Se la versione originale soddisfa questi criteri, la versione generata viene aggiunta alla versione originale come segmento di nuova versione. Anche la versione generata verrà leggermente modificata per includere l’ordinamento e la gestione delle versioni corrette. Ad esempio, presupponendo la versione generata `2019.926.121356.0000020490`, si otterrebbero i seguenti risultati.
 
 | Versione | Versione in `pom.xml` | Commenti |
 |---|---|---|

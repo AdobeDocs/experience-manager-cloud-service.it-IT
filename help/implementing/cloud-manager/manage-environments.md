@@ -2,10 +2,10 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 77%
+source-wordcount: '2325'
+ht-degree: 72%
 
 ---
 
@@ -153,11 +153,11 @@ Cloud Manager fornisce un servizio di anteprima (fornito come servizio di pubbli
 
 Con il servizio puoi visualizzare in anteprima l’esperienza finale di un sito web prima di aggiungerla all’ambiente di pubblicazione effettivo e renderla disponibile agli utenti.
 
-Al momento della creazione, al servizio di anteprima viene applicato un elenco IP consentiti predefinito, denominato `Preview Default [<envId>]`, che blocca tutto il traffico verso il servizio. Per abilitare l’accesso, rimuovi l’elenco IP consentiti predefinito dal servizio di anteprima.
+Al momento della creazione, al servizio di anteprima viene applicato un elenco IP consentiti predefinito, denominato `Preview Default [<envId>]`, che blocca tutto il traffico verso il servizio. Per abilitare l’accesso, rimuovi l’elenco consentiti IP predefinito dal servizio di anteprima.
 
 ![Servizio di anteprima e relativo elenco Consentiti](assets/preview-ip-allow.png)
 
-Per garantire l’accesso al servizio di anteprima, l’utente con le autorizzazioni necessarie deve completare i passaggi seguenti prima di condividere l’URL del servizio.
+Per garantire l’accesso, prima di condividere l’URL del servizio di anteprima, l’utente con le autorizzazioni necessarie deve completare i passaggi seguenti.
 
 1. Crea un elenco IP consentiti appropriato, applicalo al servizio di anteprima e rimuovi immediatamente l’elenco Consentiti `Preview Default [<envId>]`.
 
@@ -216,7 +216,7 @@ Il comportamento dell’opzione **Aggiorna** varia a seconda della configurazion
 
 ## Eliminazione degli ambienti di sviluppo {#deleting-environment}
 
-L’utente con le autorizzazioni necessarie può eliminare un ambiente di sviluppo.
+L’utente con l’autorizzazione necessaria è in grado di eliminare un ambiente di sviluppo.
 
 Dalla schermata **Panoramica** del programma, accedi alla scheda **Ambienti** e fai clic sul pulsante con i puntini di sospensione corrispondente all’ambiente che desideri eliminare.
 
@@ -290,9 +290,9 @@ Per gestire gli elenchi IP consentiti, accedi alla scheda **Ambienti** della pag
 
 ### Applicazione di un elenco IP consentiti {#apply-ip-allow-list}
 
-Applicando un elenco IP consentiti, tutti gli intervalli IP inclusi nella definizione dell’elenco vengono associati a un servizio Author o Publish in un ambiente. Per applicare un elenco IP consentiti, l’utente con il ruolo **Proprietario business** o **Responsabile dell’implementazione** deve aver effettuato l’accesso.
+Applicando un elenco IP consentiti, tutti gli intervalli IP inclusi nella definizione dell’elenco vengono associati a un servizio Author o Publish in un ambiente. Un utente in **Proprietario business** o **Responsabile dell’implementazione** Per applicare un elenco consentiti IP, il ruolo deve aver effettuato l’accesso.
 
-Per poter applicare l’elenco IP consentiti a un ambiente, l’elenco deve esistere in Cloud Manager. Per ulteriori informazioni sugli elenchi IP consentiti in Cloud Manager, consulta il documento [Introduzione agli elenchi IP consentiti in Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+L’elenco consentiti IP deve esistere in Cloud Manager per applicarlo a un ambiente. Per ulteriori informazioni sugli elenchi IP consentiti in Cloud Manager, consulta il documento [Introduzione agli elenchi IP consentiti in Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
 Per applicare un elenco IP consentiti, segui la procedura riportata di seguito.
 
@@ -302,7 +302,7 @@ Per applicare un elenco IP consentiti, segui la procedura riportata di seguito.
 
 ### Rimozione di un elenco IP consentiti {#unapply-ip-allow-list}
 
-Rimuovendo un elenco IP consentiti, tutti gli intervalli IP inclusi nella definizione dell’elenco vengono rimossi da un servizio Author o Publish in un ambiente. Per rimuovere un elenco IP consentiti, l’utente con il ruolo **Proprietario business** o **Responsabile dell’implementazione** deve aver effettuato l’accesso.
+Rimuovendo un elenco IP consentiti, tutti gli intervalli IP inclusi nella definizione dell’elenco vengono rimossi da un servizio Author o Publish in un ambiente. Un utente in **Proprietario business** o **Responsabile dell’implementazione** Per rimuovere un elenco consentiti IP, è necessario che il ruolo abbia eseguito l’accesso.
 
 Per rimuovere un elenco IP consentiti, segui la procedura riportata di seguito.
 

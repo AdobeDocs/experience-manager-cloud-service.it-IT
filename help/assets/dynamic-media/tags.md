@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6679'
+source-wordcount: '6666'
 ht-degree: 7%
 
 ---
@@ -198,7 +198,7 @@ Quando è selezionato, l’editor elementi dati esegue il rendering di un modulo
 
 Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) per l’elenco degli eventi supportati da ciascun tipo di visualizzatore; passa a sezione visualizzatore specifica, quindi seleziona Supporto per il tracciamento di Adobe Analytics sottosezione. Attualmente, la guida di riferimento per i visualizzatori Dynamic Media non documenta gli argomenti dell’evento.
 
-Consideriamo ora il ciclo di vita dei visualizzatori Dynamic Media *Elemento dati*. Il valore di tale elemento dati viene popolato dopo che l’evento visualizzatore Dynamic Media corrispondente si verifica sulla pagina. Ad esempio, supponiamo che l’elemento dati punti al **[!UICONTROL CARICA]** e il relativo argomento &quot;asset&quot;. Il valore di tale elemento dati riceve dati validi dopo che il visualizzatore ha eseguito l&#39;evento LOAD per la prima volta. Se l’elemento dati punta al **[!UICONTROL ZOOM]** e il relativo argomento &quot;scale&quot;, il valore di tale elemento dati rimane vuoto finché il visualizzatore non invia un **[!UICONTROL ZOOM]** per la prima volta.
+Consideriamo ora il ciclo di vita dei visualizzatori Dynamic Media *Elemento dati*. Il valore di tale elemento dati viene popolato dopo che l’evento visualizzatore Dynamic Media corrispondente si verifica sulla pagina. Ad esempio, supponiamo che l’elemento dati punti al **[!UICONTROL CARICA]** e il relativo argomento &quot;asset&quot;. Il valore di tale elemento dati riceve dati validi dopo che il visualizzatore ha eseguito l&#39;evento LOAD per la prima volta. Se l’elemento dati punta al **[!UICONTROL ZOOM]** e il relativo argomento &quot;scale&quot;, il valore di tale elemento dati rimane vuoto fino a quando il visualizzatore non invia un **[!UICONTROL ZOOM]** per la prima volta.
 
 Allo stesso modo, i valori di Elementi dati vengono aggiornati automaticamente quando il visualizzatore invia un evento corrispondente sulla pagina. L’aggiornamento del valore si verifica anche se l’evento specifico non è indicato nella configurazione Regola. Supponiamo ad esempio un elemento dati **[!UICONTROL ZoomScale]** è definito per il parametro &quot;scale&quot; dell’evento ZOOM. Tuttavia, l’unica regola presente nella configurazione Regola viene attivata da **[!UICONTROL CARICA]** evento. Il valore di **[!UICONTROL ZoomScale]** viene comunque aggiornato ogni volta che un utente esegue lo zoom all’interno del visualizzatore.
 
@@ -292,7 +292,7 @@ Nella tabella seguente sono elencati gli eventi di Dynamic Media Viewer e i rela
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -420,7 +420,7 @@ Come parte della configurazione, accertati di avere accesso a una società in Ad
 
 ## Configurare Adobe Analytics per l’integrazione {#configuring-adobe-analytics-for-the-integration}
 
-Dopo aver configurato Adobe Analytics, per l’integrazione verrà impostato quanto segue:
+Dopo aver configurato Adobe Analytics, per l’integrazione viene configurato quanto segue:
 
 * Una suite di rapporti è attiva e selezionata.
 * Le variabili di Analytics sono disponibili per ricevere i dati di tracciamento.
@@ -460,7 +460,7 @@ Vedi anche [Guida all’implementazione di Analytics](https://experienceleague.a
 
    Consulta [Panoramica di prop ed eVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
 
-   Ai fini di questa documentazione, verrà utilizzata solo una variabile Traffico personalizzato (prop) perché diventano disponibili in un rapporto di Analytics entro pochi minuti dopo che si è verificata un’azione su una pagina web.
+   Ai fini di questa documentazione, viene utilizzata solo una variabile Traffico personalizzato (prop) perché diventano disponibili in un rapporto di Analytics entro pochi minuti dopo che si è verificata un’azione su una pagina web.
 
    Per abilitare una nuova variabile di traffico personalizzata, in Adobe Analytics, nella barra degli strumenti, vai a **[!UICONTROL Amministratore]** > **[!UICONTROL Suite di rapporti]**.
 
@@ -487,7 +487,7 @@ Vedi anche [Guida all’implementazione di Analytics](https://experienceleague.a
 
 ## Configurare i tag di Experience Platform per l’integrazione {#configuring-adobe-launch-for-the-integration}
 
-Dopo aver configurato i Tag di Experience Platform, per l’integrazione verrà impostato quanto segue:
+Dopo aver configurato i Tag di Experience Platform, per l’integrazione viene configurato quanto segue:
 
 * La creazione di una nuova Proprietà per mantenere unite tutte le configurazioni.
 * Installazione e configurazione delle estensioni. Il codice lato client di tutte le estensioni installate nella proprietà viene compilato insieme in una libreria. Questa libreria viene utilizzata dalla pagina web in un secondo momento.
@@ -748,7 +748,7 @@ La configurazione di Experience Manager è costituita dai due passaggi principal
    * **[!UICONTROL Titolo]** - Immettere un titolo di account descrittivo.
    * **[!UICONTROL Server autorizzazioni]** : torna alla pagina dei dettagli di integrazione aperta in precedenza. Seleziona la **[!UICONTROL JWT]** scheda. Copia il nome del server, senza il percorso, come evidenziato di seguito.
 
-(il nome del server di esempio è solo a scopo illustrativo)   Torna alla pagina **[!UICONTROL Account]**, quindi incolla il nome nel rispettivo campo.
+   Torna alla pagina **[!UICONTROL Account]**, quindi incolla il nome nel rispettivo campo.
 Ad esempio: `https://ims-na1.adobelogin.com/`
 (il nome del server di esempio è solo a scopo illustrativo)
 

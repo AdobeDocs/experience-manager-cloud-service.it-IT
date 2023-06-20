@@ -2,10 +2,10 @@
 title: DevOps aziendale
 description: Scopri i processi, i metodi e la comunicazione necessari per semplificare l’implementazione e la collaborazione.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 100%
+source-wordcount: '1000'
+ht-degree: 96%
 
 ---
 
@@ -86,7 +86,7 @@ Le istanze di authoring si trovano in genere dietro il firewall interno. Questo 
 
 I contenuti attivati vengono inseriti in un pacchetto e posizionati nella coda di replica dell’ambiente di authoring. Il processo di replica trasferisce quindi tali contenuti all’ambiente di pubblicazione.
 
-Per effettuare la replica inversa nell’ambiente di authoring dei dati generati in un ambiente di pubblicazione, un listener di replica nell’ambiente di authoring esegue il polling dell’ambiente di pubblicazione e i contenuti dalla casella in uscita della replica inversa dell’ambiente di pubblicazione.
+Per eseguire nuovamente la replica inversa nell’ambiente di authoring dei dati generati in un ambiente di pubblicazione, un listener di replica nell’ambiente di authoring esegue il polling dell’ambiente di pubblicazione e recupera tali contenuti dalla casella in uscita della replica inversa dell’ambiente di pubblicazione.
 
 #### Pubblicazione {#publish}
 

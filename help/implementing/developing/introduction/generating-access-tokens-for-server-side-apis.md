@@ -2,9 +2,9 @@
 title: Generazione dei token di accesso per le API lato server
 description: Scopri come facilitare la comunicazione tra un server di terze parti e AEM as a Cloud Service generando un token JWT sicuro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: dd869397feca593f93ee8ed5030828e01cc45c4d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2123'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Il flusso server-to-server prevede i seguenti passaggi:
 
 Gli utenti con accesso alla Console per sviluppatori as a Cloud Service all’AEM visualizzeranno la scheda integrazioni nella Console per sviluppatori per un determinato ambiente. L’utente con il ruolo di amministratore dell’ambiente as a Cloud Service dall’AEM può creare, visualizzare o gestire le credenziali.
 
-Facendo clic su **Crea nuovo account tecnico** , verrà creato un nuovo set di credenziali che include id client, segreto client, chiave privata, certificato e configurazione per i livelli Author e Publish dell’ambiente, indipendentemente dalla selezione del pod.
+Facendo clic su **Crea nuovo account tecnico** , viene creato un nuovo set di credenziali che include id client, segreto client, chiave privata, certificato e configurazione per i livelli Author e Publish dell’ambiente, indipendentemente dalla selezione del pod.
 
 ![Creazione di un nuovo account tecnico](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -162,7 +162,7 @@ In alternativa, puoi anche verificare che l’account tecnico venga visualizzato
 
 <u>**Impostare le autorizzazioni del gruppo appropriato**</u>
 
-Infine, configura il gruppo con le autorizzazioni appropriate necessarie a per richiamare o bloccare le API in modo appropriato. Per farlo, segui questi passaggi:
+Infine, configura il gruppo con le autorizzazioni appropriate necessarie per richiamare o bloccare le API in modo appropriato. Per farlo, segui questi passaggi:
 
 1. Accesso all’istanza di authoring appropriata e accesso a **Impostazioni** - **Sicurezza** - **Autorizzazioni**
 1. Cerca il nome del gruppo corrispondente al profilo di prodotto nel riquadro a sinistra (in questo caso API di sola lettura) e fai clic su di esso:
@@ -217,9 +217,9 @@ A questo scopo, puoi:
 
 * Utilizza il **Aggiungi certificato** pulsante sotto **Integrazioni** - **Account tecnici** nella Console per sviluppatori, come illustrato di seguito
 
-   ![Aggiornamento credenziali](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
+  ![Aggiornamento credenziali](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* Dopo aver premuto il pulsante, verrà generato un set di credenziali contenente un nuovo certificato. Installa le nuove credenziali sul server off-AEM e assicurati che la connettività sia come previsto, senza rimuovere le vecchie credenziali 
+* Dopo aver premuto il pulsante, viene generato un set di credenziali che include un nuovo certificato. Installa le nuove credenziali sul server off-AEM e assicurati che la connettività sia come previsto, senza rimuovere le vecchie credenziali 
 * Assicurati di utilizzare le nuove credenziali invece di quelle precedenti durante la generazione del token di accesso
 * Facoltativamente, revocare (e quindi eliminare) il certificato precedente in modo che non possa più essere utilizzato per l’autenticazione con AEM as a Cloud Service.
 
@@ -229,7 +229,7 @@ Se la chiave privata è compromessa, devi creare le credenziali con un nuovo cer
 
 Puoi eseguire questa operazione seguendo questi passaggi:
 
-1. Aggiungi innanzitutto la nuova chiave. Verranno generate le credenziali con una nuova chiave privata e un nuovo certificato. La nuova chiave privata verrà contrassegnata nell’interfaccia utente come **corrente** e verranno quindi utilizzate per tutte le nuove credenziali di questo account tecnico in futuro. Le credenziali associate alle chiavi private precedenti rimarranno valide fino alla revoca. Per ottenere questo risultato, premere i tre punti (**...**) con il tuo account tecnico corrente e premi **Aggiungi nuova chiave privata**:
+1. Aggiungi innanzitutto la nuova chiave. Questa chiave genera le credenziali con una nuova chiave privata e un nuovo certificato. La nuova chiave privata è contrassegnata nell’interfaccia utente come **corrente** e verranno quindi utilizzate per tutte le nuove credenziali di questo account tecnico in futuro. Le credenziali associate alle chiavi private precedenti rimarranno valide fino alla revoca. Per ottenere questo risultato, premere i tre punti (**...**) con il tuo account tecnico corrente e premi **Aggiungi nuova chiave privata**:
 
    ![Aggiungi nuova chiave privata](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
@@ -237,7 +237,7 @@ Puoi eseguire questa operazione seguendo questi passaggi:
 
    ![Conferma aggiunta nuova chiave privata](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   Verrà aperta una nuova scheda Sfoglia con le nuove credenziali e l’interfaccia utente verrà aggiornata per mostrare entrambe le chiavi private, con la nuova contrassegnata come **corrente**:
+   Viene visualizzata una nuova scheda Sfoglia con le nuove credenziali e l’interfaccia utente viene aggiornata per mostrare entrambe le chiavi private con la nuova contrassegnata come **corrente**:
 
    ![Chiavi private nell’interfaccia utente](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 

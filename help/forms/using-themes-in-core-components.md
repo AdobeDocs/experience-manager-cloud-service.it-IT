@@ -2,9 +2,9 @@
 title: Creazione e utilizzo di temi
 description: Puoi utilizzare i temi per formattare e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1664'
 ht-degree: 5%
 
 ---
@@ -131,7 +131,6 @@ AEM_PROXY_PORT=7000
    > * Crea un utente locale per l&#39;accesso locale. Fornisci il ruolo di collaboratore per il designer del tema.
    > * Se specifichi l’URL AEM come `http://localhost:[port]/` nel `.env` file del tema Canvas, verrai reindirizzato direttamente al browser.
 
-
 1. Una volta effettuato l’accesso, modifica l’URL nel browser in modo che indirizzi al percorso del contenuto di esempio fornito dall’amministratore AEM.
 
    * Ad esempio, se il percorso fornito è stato `/content/formname.html?wcmmode=disabled`, modifica l’URL in `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
@@ -200,8 +199,7 @@ Prima di eseguire il commit delle modifiche nell’archivio Git del Cloud Servic
 
 1. Sposta i file dell’archivio dei temi che stai modificando nell’archivio cloud con un comando simile a
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
-Ad esempio, utilizzare questo comando 
-`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+Ad esempio, utilizzare questo comando `cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
 1. Nella directory dell’archivio cloud, esegui il commit dei file dei temi spostati in con i seguenti comandi.
 
    ```text
@@ -246,15 +244,15 @@ Una volta eseguita la pipeline, il tema è disponibile nella scheda Stile.
 
 * **Evitare risorse da un altro tema**
 
-   Quando modifichi un tema, puoi sfogliare e aggiungere risorse (come immagini) da altri temi. Ad esempio, stai modificando lo sfondo di una pagina. Ad esempio, quando selezioni **[!UICONTROL Pagina]** ![edit-button](assets/edit-button.png)> **[!UICONTROL Sfondo]** > **[!UICONTROL Aggiungi]** > **[!UICONTROL Immagine]**, viene visualizzata una finestra di dialogo che consente di sfogliare e aggiungere immagini in un altro tema.
+  Quando modifichi un tema, puoi sfogliare e aggiungere risorse (come immagini) da altri temi. Ad esempio, stai modificando lo sfondo di una pagina. Ad esempio, quando selezioni **[!UICONTROL Pagina]** ![edit-button](assets/edit-button.png)> **[!UICONTROL Sfondo]** > **[!UICONTROL Aggiungi]** > **[!UICONTROL Immagine]**, viene visualizzata una finestra di dialogo che consente di sfogliare e aggiungere immagini in un altro tema.
 
-   Se una risorsa viene aggiunta da un altro tema e l’altro tema viene spostato o eliminato, puoi riscontrare dei problemi con il tema corrente. Si consiglia di evitare di sfogliare e aggiungere risorse da altri temi.
+  Se una risorsa viene aggiunta da un altro tema e l’altro tema viene spostato o eliminato, puoi riscontrare dei problemi con il tema corrente. Si consiglia di evitare di sfogliare e aggiungere risorse da altri temi.
 
 * **Modifica della larghezza del layout del pannello contenitore**
 
-   La modifica della larghezza del layout del pannello contenitore non è consigliata. Quando si specifica la larghezza di un pannello contenitore, questo diventa statico e non si adatta a visualizzazioni diverse.
+  La modifica della larghezza del layout del pannello contenitore non è consigliata. Quando si specifica la larghezza di un pannello contenitore, questo diventa statico e non si adatta a visualizzazioni diverse.
 
 * **Utilizzo dell’editor di moduli o dell’editor temi per l’utilizzo di intestazione e piè di pagina**
 
-   Utilizzare l&#39;editor tema se si desidera applicare uno stile a intestazione e piè di pagina utilizzando opzioni di stile quali stile, sfondo e trasparenza del carattere.
+  Utilizzare l&#39;editor tema se si desidera applicare uno stile a intestazione e piè di pagina utilizzando opzioni di stile quali stile, sfondo e trasparenza del carattere.
 Se si desidera fornire informazioni quali un&#39;immagine del logo, il nome della società nell&#39;intestazione e le informazioni sul copyright nel piè di pagina, utilizzare le opzioni dell&#39;editor di moduli.

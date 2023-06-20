@@ -4,10 +4,10 @@ description: Scopri come creare e gestire progetti di traduzione automatica e um
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: d3194e646b326009dc204838ac74fc880952f286
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4086'
-ht-degree: 99%
+source-wordcount: '4085'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ I progetti di traduzione consentono di gestire la traduzione dei contenuti AEM. 
 
 >[!TIP]
 >
->Se non hai ancora tradotto contenuti, consulta il nostro [Percorso di traduzione Sites,](/help/journey-sites/translation/overview.md) per una guida sulla traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta la [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti AEM Sites utilizzando potenti strumenti di traduzione AEM, ideale per chi non ha esperienza di AEM o traduzione.
 
 Quando si aggiungono risorse a un progetto di traduzione, viene creato un processo di traduzione apposito. I processi forniscono i comandi e le informazioni sullo stato, utili per gestire i flussi di lavoro di traduzione umana e automatica che vengono eseguiti sulle risorse.
 
@@ -374,7 +374,7 @@ Puoi anche avviare tutti i processi di traduzione per un progetto.
 
 1. Nella console del progetto, seleziona il progetto di traduzione.
 1. Nella barra degli strumenti tocca o fai clic su **Avvia processi di traduzione**.
-1. Nella finestra di dialogo, controlla l’elenco dei processi che verranno avviati e quindi conferma con **Avvia** o interrompi con **Annulla**.
+1. Nella finestra di dialogo, controlla l’elenco dei processi avviati e quindi conferma con **Inizio** o interrompere con **Annulla**.
 
 ### Annullamento di un processo di traduzione {#canceling-a-translation-job}
 
@@ -390,7 +390,7 @@ Quando il contenuto torna dopo la traduzione ed è in stato **Pronto per la revi
 
 Se selezioni **Rifiuta traduzione**, puoi aggiungere un commento.
 
-Il contenuto rifiutato viene inviato nuovamente al fornitore di traduzione, che potrà visualizzare il commento.
+Il contenuto rifiutato viene inviato nuovamente al fornitore di traduzione, che può visualizzare il commento.
 
 ### Completamento e archiviazione dei processi di traduzione {#completing-and-archiving-translation-jobs}
 
@@ -443,7 +443,7 @@ Per confrontare le copie per lingua con il master:
 
    ![Confronta copie per lingua](../assets/language-copy-compare.png)
 
-1. Le due pagine (lancio e sorgente) verranno aperte una accanto all’altra.
+1. Le due pagine (lancio e sorgente) vengono aperte una accanto all’altra.
    * Per informazioni complete sull’utilizzo di questa funzione, consulta [Differenza di pagina](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Spostamento o ridenominazione di una pagina di origine {#move-source}

@@ -3,10 +3,10 @@ title: Amministrazione delle istanze dei flussi di lavoro
 description: Scopri come amministrare le istanze dei flussi di lavoro
 feature: Administering
 role: Admin
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 77%
+source-wordcount: '1279'
+ht-degree: 75%
 
 ---
 
@@ -33,7 +33,6 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
    ![non integro](/help/sites-cloud/administering/assets/status-unhealthy.png)
 1. Per **Dettagli stato** delle istanze del flusso di lavoro, fai clic su **Dettagli**, per visualizzare **numero di istanze di flussi di lavoro in esecuzione**, **istanze di flusso di lavoro completate**, **istanze di flusso di lavoro interrotte**, **istanze di flusso di lavoro non riuscite** e così via. ad esempio, di seguito sono riportate le immagini che mostrano **Dettagli stato** con **Stato: integro** e **Stato: non integro**.
    ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-
    ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -93,7 +92,6 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
    >* utilizzo dell’azione **Termina**
    >* quando una pagina soggetta a un flusso di lavoro viene eliminata (forzatamente), il flusso di lavoro viene terminato.
 
-
 1. Seleziona un elemento specifico, quindi **Cronologia elementi aperti** per ulteriori dettagli:
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
@@ -103,8 +101,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 Quando un flusso di lavoro non riesce, AEM mette a disposizione la console **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
 * **Dettagli errore**
-Apre una finestra per visualizzare 
-**Messaggio di errore**, **Passaggio e **Stack errori**.
+Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio e **Stack errori**.
 
 * **Cronologia elementi aperti**
 Mostra i dettagli della cronologia del flusso di lavoro.
@@ -192,7 +189,7 @@ I dati elaborati dai flussi di lavoro vengono memorizzati nell’archiviazione f
 
 Viene fornito un flag a livello di modello di flusso di lavoro per indicare che tale modello (e le sue istanze di runtime) dispone di archiviazione esterna dei metadati. Le variabili del flusso di lavoro non saranno rese persistenti in JCR per quelle istanze dei modelli contrassegnati per l’archiviazione esterna.
 
-La proprietà *userMetadataPersistenceEnabled* verrà memorizzata nel *nodo jcr:content* del modello di flusso di lavoro. Questo flag verrà reso persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
+La proprietà *userMetadataPersistenceEnabled* è memorizzato su *jcr:content, nodo* del modello di flusso di lavoro. Questo flag viene reso persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustrazione seguente mostra come configurare il flag su un flusso di lavoro.
 

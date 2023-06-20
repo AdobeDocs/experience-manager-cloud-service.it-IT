@@ -2,10 +2,10 @@
 title: Ottimizzazione delle query GraphQL
 description: Scopri come ottimizzare le query GraphQL per il filtro, il paging e l’ordinamento dei frammenti di contenuto in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 100%
+source-wordcount: '1193'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Un filtro JCR viene applicato (sotto forma di vincolo di query) prima di caricar
 
 >[!NOTE]
 >
->Per motivi tecnici (ad esempio flessibilità, nidificazione di frammenti), AEM non può delegare l’intera operazione di filtro a JCR.
+>Per motivi tecnici (ad esempio, flessibilità, nidificazione di frammenti), l’AEM non può delegare l’intero filtro al JCR.
 
 Questa tecnica mantiene la flessibilità fornita dai filtri GraphQL, delegando la maggior parte del filtro possibile a JCR.
 
@@ -49,21 +49,20 @@ Questa tecnica mantiene la flessibilità fornita dai filtri GraphQL, delegando l
 GraphQL in AEM supporta due tipi di impaginazione:
 
 * [paginazione basata su limite/offset](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-Viene utilizzata per le query elenco; queste terminano con 
-`List`; per esempio, `articleList`.
+Viene utilizzata per le query elenco; queste terminano con `List`; per esempio, `articleList`.
 Per utilizzarlo, devi fornire la posizione del primo elemento da restituire (il `offset`) e il numero di elementi da restituire (il `limit`, o dimensioni della pagina).
 
 * [paginazione basata su cursore](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (rappresentato da `first` e `after`)
 Fornisce un ID univoco per ciascun elemento, noto anche come cursore.
 Nella query, si specifica il cursore dell’ultimo elemento della pagina precedente, più le dimensioni della pagina (il numero massimo di elementi da restituire).
 
-   Poiché l’impaginazione basata su cursore non si adatta alle strutture di dati delle query basate su elenco, AEM ha introdotto il tipo di query `Paginated`; ad esempio, `articlePaginated`. Le strutture di dati e i parametri utilizzati seguono i [Specifica di connessione cursore GraphQL](https://relay.dev/graphql/connections.htm).
+  Poiché l’impaginazione basata su cursore non si adatta alle strutture di dati delle query basate su elenco, AEM ha introdotto il tipo di query `Paginated`; ad esempio, `articlePaginated`. Le strutture di dati e i parametri utilizzati seguono i [Specifica di connessione cursore GraphQL](https://relay.dev/graphql/connections.htm).
 
-   >[!NOTE]
-   >
-   >AEM attualmente supporta il paging in avanti (utilizzando i parametri `after`/`first`).
-   >
-   >Il paging all’indietro (utilizzando `before`/`last`) non è supportato.
+  >[!NOTE]
+  >
+  >AEM attualmente supporta il paging in avanti (utilizzando i parametri `after`/`first`).
+  >
+  >Il paging all’indietro (utilizzando `before`/`last`) non è supportato.
 
 ## Ordinamento {#sorting}
 
@@ -130,7 +129,7 @@ Se sei principalmente interessato a recuperare solo le prime pagine, non vi è a
 
 ### Operazioni logiche nelle espressioni di filtro {#logical-operations-in-filter-expressions}
 
-Se esegui il filtro su frammenti nidificati, puoi comunque sfruttare il filtro JCR fornendone uno correlato su un campo di livello principale combinato utilizzando l’operatore `AND`.
+Se esegui il filtro su frammenti nidificati, puoi comunque applicare il filtro JCR fornendo un filtro correlato su un campo di livello principale combinato utilizzando `AND` operatore.
 
 Un caso d’uso tipico è quello di limitare l’ambito della query utilizzando un filtro sul campo `_path` del frammento di livello principale, per poi applicare un filtro ai campi aggiuntivi che potrebbero trovarsi nel livello principale o in un frammento nidificato.
 

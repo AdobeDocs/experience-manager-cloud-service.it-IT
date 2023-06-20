@@ -2,9 +2,9 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con la navigazione in AEM e il suo utilizzo di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2994'
+source-wordcount: '2993'
 ht-degree: 71%
 
 ---
@@ -17,7 +17,6 @@ Questo documento offre una panoramica delle operazioni di base nell’ambiente d
 >
 >* Alcune funzionalità non sono disponibili in tutte le console, mentre altre potrebbero essere disponibili in alcune console. Informazioni specifiche sulle singole console e sulle relative funzionalità saranno descritte più dettagliatamente in altre pagine.
 >* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
-
 
 ## Interfaccia touch {#a-touch-enabled-ui}
 
@@ -89,79 +88,79 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
 * [Navigazione globale](#global-navigation)
 
-   Seleziona il collegamento **Adobe Experience Manager** per spostarti tra le diverse console.
+  Seleziona il collegamento **Adobe Experience Manager** per spostarti tra le diverse console.
 
-   ![Navigazione globale](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Navigazione globale](/help/sites-cloud/authoring/assets/global-navigation.png)
 
 * [Ricerca](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Icona Ricerca](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Icona Ricerca](/help/sites-cloud/authoring/assets/search-icon.png)
 
-   È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
+  È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
 
 * [Soluzioni](https://www.adobe.com/it/experience-cloud.html)
 
-   ![Pulsante Soluzioni](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Pulsante Soluzioni](/help/sites-cloud/authoring/assets/solutions.png)
 
 * [Aiuto](#accessing-help)
 
-   ![Pulsante Aiuto](/help/sites-cloud/authoring/assets/help.png)
+  ![Pulsante Aiuto](/help/sites-cloud/authoring/assets/help.png)
 
 * [Notifiche](/help/sites-cloud/authoring/getting-started/inbox.md)
 
-   ![Pulsante Notifiche](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Pulsante Notifiche](/help/sites-cloud/authoring/assets/notifications.png)
 
-   Questa icona viene contrassegnata con il numero di notifiche incomplete attualmente assegnate.
+  Questa icona viene contrassegnata con il numero di notifiche incomplete attualmente assegnate.
 
 * [Proprietà utente](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
-   ![Pulsante Proprietà utente](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![Pulsante Proprietà utente](/help/sites-cloud/authoring/assets/user-properties.png)
 
 * [Selettore della barra](#rail-selector)
 
-   ![Pulsante del selettore della barra](/help/sites-cloud/authoring/assets/rail-selector.png)
+  ![Pulsante del selettore della barra](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-   Le opzioni visualizzate dipendono dalla console corrente. Ad esempio, in **Sites** puoi selezionare solo il contenuto (opzione predefinita), la timeline, i riferimenti o il pannello laterale del filtro.
+  Le opzioni visualizzate dipendono dalla console corrente. Ad esempio, in **Sites** puoi selezionare solo il contenuto (opzione predefinita), la timeline, i riferimenti o il pannello laterale del filtro.
 
-   ![Esempio di selettore della barra](/help/sites-cloud/authoring/assets/rail-selector-example.png)
+  ![Esempio di selettore della barra](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
 * Breadcrumb
 
-   ![Breadcrumb nella barra di navigazione](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
+  ![Breadcrumb nella barra di navigazione](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-   Situate al centro della barra, le breadcrumb mostrano sempre la descrizione dell’elemento attualmente selezionato e consentono di spostarsi all’interno di una console specifica. Nella console **Sites** puoi spostarti tra i vari livelli del sito web.
+  Situate al centro della barra, le breadcrumb mostrano sempre la descrizione dell’elemento attualmente selezionato e consentono di spostarsi all’interno di una console specifica. Nella console **Sites** puoi spostarti tra i vari livelli del sito web.
 
-   Fai clic sul testo della breadcrumb per visualizzare un elenco a discesa con i livelli della gerarchia dell’elemento attualmente selezionato. Fai clic su una voce per passare alla posizione desiderata.
+  Fai clic sul testo della breadcrumb per visualizzare un elenco a discesa con i livelli della gerarchia dell’elemento attualmente selezionato. Fai clic su una voce per passare alla posizione desiderata.
 
-   ![Esempio di breadcrumb espanso](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
+  ![Esempio di breadcrumb espanso](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
 * Pulsante **Crea**
 
-   ![Pulsante Crea](/help/sites-cloud/authoring/assets/create.png)
+  ![Pulsante Crea](/help/sites-cloud/authoring/assets/create.png)
 
-   Dopo che hai fatto clic, le opzioni visualizzate sono adatte alla console/al contesto.
+  Dopo che hai fatto clic, le opzioni visualizzate sono adatte alla console/al contesto.
 
 * [Viste](#viewing-and-selecting-resources)
 
-   L’icona Visualizza si trova all’estrema destra della barra degli strumenti dell’AEM. Poiché indica anche la visualizzazione corrente, questa cambia. Ad esempio, la visualizzazione predefinita **Vista a colonne** presenta questa icona:
+  L’icona Visualizza si trova all’estrema destra della barra degli strumenti dell’AEM. Poiché indica anche la visualizzazione corrente, questa cambia. Ad esempio, la visualizzazione predefinita **Vista a colonne** presenta questa icona:
 
-   ![Pulsante Viste](/help/sites-cloud/authoring/assets/views-button.png)
+  ![Pulsante Viste](/help/sites-cloud/authoring/assets/views-button.png)
 
-   Puoi alternare tra le viste a colonne, a schede e a elenco. La vista a elenco mostra anche le impostazioni di visualizzazione.
+  Puoi alternare tra le viste a colonne, a schede e a elenco. La vista a elenco mostra anche le impostazioni di visualizzazione.
 
-   ![Viste](/help/sites-cloud/authoring/assets/view.png)
+  ![Viste](/help/sites-cloud/authoring/assets/view.png)
 
-   >[!NOTE]
-   >
-   >L’opzione **Impostazioni vista** è disponibile solo in modalità **Vista a elenco**.
+  >[!NOTE]
+  >
+  >L’opzione **Impostazioni vista** è disponibile solo in modalità **Vista a elenco**.
 
 * Navigazione tramite tastiera
 
-   Potete navigare in un sito web utilizzando solo la tastiera. In questa modalità, si utilizza la funzionalità standard del browser per il tasto **TAB** (o **OPZ+TAB**) per spostarsi tra gli elementi della pagina che possono essere attivati.
+  Potete navigare in un sito web utilizzando solo la tastiera. In questa modalità, si utilizza la funzionalità standard del browser per il tasto **TAB** (o **OPZ+TAB**) per spostarsi tra gli elementi della pagina che possono essere attivati.
 
-   Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. L’opzione diventa visibile quando ci si sposta tra le opzioni di intestazione, la navigazione diventa più veloce e consente di saltare gli elementi standard nella barra degli strumenti (prodotto) per passare direttamente al contenuto principale.
+  Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. L’opzione diventa visibile quando ci si sposta tra le opzioni di intestazione, la navigazione diventa più veloce e consente di saltare gli elementi standard nella barra degli strumenti (prodotto) per passare direttamente al contenuto principale.
 
-   ![Passa al contenuto principale](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+  ![Passa al contenuto principale](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
 ## Accedere all’Aiuto   {#accessing-help}
 
@@ -169,42 +168,41 @@ Sono disponibili diverse risorse di Aiuto:
 
 * **Barra degli strumenti della console**
 
-   A seconda della tua posizione, **Aiuto** apre le risorse appropriate:
+  A seconda della tua posizione, **Aiuto** apre le risorse appropriate:
 
-   ![Icona Aiuto](/help/sites-cloud/authoring/assets/help-console.png)
+  ![Icona Aiuto](/help/sites-cloud/authoring/assets/help-console.png)
 
 * **Navigazione**
 
-   La prima volta che accedi al sistema, compare [una serie di diapositive introduttive su come navigare in AEM](#product-navigation).
+  La prima volta che accedi al sistema, compare [una serie di diapositive introduttive su come navigare in AEM](#product-navigation).
 
-   ![Esercitazione](/help/sites-cloud/authoring/assets/tutorial.png)
+  ![Esercitazione](/help/sites-cloud/authoring/assets/tutorial.png)
 
 * **Editor pagina**
 
-   La prima volta che modifichi una pagina, compare una serie di diapositive che introducono l’editor di pagine.
+  La prima volta che modifichi una pagina, compare una serie di diapositive che introducono l’editor di pagine.
 
-   ![Esercitazione sull’editor](/help/sites-cloud/authoring/assets/editor-tutorial.png)
+  ![Esercitazione sull’editor](/help/sites-cloud/authoring/assets/editor-tutorial.png)
 
-   Esamina questa panoramica come faresti con la [panoramica di navigazione del prodotto](#product-navigation) la prima volta che accedi a una console.
+  Esamina questa panoramica come faresti con la [panoramica di navigazione del prodotto](#product-navigation) la prima volta che accedi a una console.
 
-   Dal menu [**Informazioni sulle pagine** puoi selezionare **Aiuto**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) per accedervi di nuovo in un secondo tempo.
+  Dal menu [**Informazioni sulle pagine** puoi selezionare **Aiuto**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) per accedervi di nuovo in un secondo tempo.
 
 * **Console Strumenti**
 
-   Dalla sezione **Strumenti** console è inoltre possibile accedere al **Risorse**:
+  Dalla sezione **Strumenti** console è inoltre possibile accedere al **Risorse**:
 
    * **Documentazione:** visualizza la documentazione per la gestione esperienza web
    * **Risorse per sviluppatori:** risorse per sviluppatori e download
 
-   >[!NOTE]
-   >
-   >Puoi accedere in qualsiasi momento ai tasti di scelta rapida, semplicemente utilizzando il tasto di scelta rapida `?` (punto interrogativo) all’interno della console.
-   >
-   >Per una panoramica di tutte le scelte rapide da tastiera, consulta la seguente documentazione:
-   >
-   >* [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
+  >[!NOTE]
+  >
+  >Puoi accedere in qualsiasi momento ai tasti di scelta rapida, semplicemente utilizzando il tasto di scelta rapida `?` (punto interrogativo) all’interno della console.
+  >
+  >Per una panoramica di tutte le scelte rapide da tastiera, consulta la seguente documentazione:
+  >
+  >* [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+  >* [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 ## Barra delle azioni  {#actions-toolbar}
 
@@ -303,7 +301,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
    * Il nome della risorsa e la freccia vengono evidenziati quando tocca o fai clic su di essa.
    * Gli elementi secondari della risorsa su cui è stato fatto clic o su cui è stato effettuato il tocco vengono visualizzati nella colonna a destra della risorsa.
-   * Se tocchi o fai clic su un nome di risorsa senza elementi secondari, i relativi dettagli verranno visualizzati nella colonna finale.
+   * Se tocchi o fai clic su un nome di risorsa senza elementi secondari, i relativi dettagli vengono visualizzati nella colonna finale.
 
 * Tocca o fai clic sulla miniatura per selezionare la risorsa.
 
@@ -311,7 +309,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
    * I dettagli della risorsa selezionata sono visualizzati nella colonna finale.
    * La barra degli strumenti delle azioni diventa disponibile.
 
-   Quando una pagina viene selezionata nella vista a colonne, la pagina selezionata viene visualizzata nella colonna finale insieme ai seguenti dettagli:
+  Quando una pagina viene selezionata nella vista a colonne, la pagina selezionata viene visualizzata nella colonna finale insieme ai seguenti dettagli:
 
    * Titolo pagina
    * Nome pagina (parte dell’URL della pagina)
@@ -319,7 +317,6 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
    * Dettagli modifica
    * Lingua della pagina
    * Dettagli di pubblicazione e anteprima
-
 
 ### Vista a schede {#card-view}
 
@@ -336,7 +333,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
 * [Azioni rapide](#quick-actions) sono inoltre disponibili in questa visualizzazione, ad esempio la selezione e le azioni più comuni, come la modifica.
 
-   ![Azioni rapide](/help/sites-cloud/authoring/assets/quick-actions.png)
+  ![Azioni rapide](/help/sites-cloud/authoring/assets/quick-actions.png)
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](#the-header).
 
@@ -348,16 +345,16 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 * Per spostarti verso il basso nella struttura, tocca o fai clic sul nome delle risorse; per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](#the-header).
 * Per selezionare tutti gli elementi nell’elenco, utilizza la casella di selezione in alto a sinistra nell’elenco.
 
-   ![Vista a elenco seleziona tutto](/help/sites-cloud/authoring/assets/list-view-select-all.png)
+  ![Vista a elenco seleziona tutto](/help/sites-cloud/authoring/assets/list-view-select-all.png)
 
    * Quando tutti gli elementi dell&#39;elenco sono selezionati, questa casella di controllo appare selezionata.
 
       * Tocca o fai clic sulla casella di controllo per deselezionare tutto.
+
    * Quando sono selezionati solo alcuni elementi, viene visualizzato un segno meno.
 
       * Tocca o fai clic sulla casella di controllo per selezionare tutto.
       * Tocca o fai di nuovo clic sulla casella di controllo per deselezionare tutto.
-
 
 * Per seleziona le colonne da visualizzare utilizza l’opzione **Impostazioni vista** sotto il pulsante Viste. Sono disponibili le seguenti colonne da visualizzare:
 
@@ -371,20 +368,21 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
    * **Visitatori univoci**
    * **Tempo sulla pagina**
 
-      ![Seleziona colonne](/help/sites-cloud/authoring/assets/select-columns.png)
-   Per impostazione predefinita, la colonna **Nome** è visualizzata e costituisce una porzione dell’URL della pagina. In alcuni casi, l’autore potrebbe dover accedere a pagine in una lingua diversa; poiché il nome della pagina di solito non cambia, può essere di grande aiuto se si tratta di una lingua che l’autore non conosce.
+     ![Seleziona colonne](/help/sites-cloud/authoring/assets/select-columns.png)
+
+  Per impostazione predefinita, la colonna **Nome** è visualizzata e costituisce una porzione dell’URL della pagina. In alcuni casi, l’autore potrebbe dover accedere a pagine in una lingua diversa; poiché il nome della pagina di solito non cambia, può essere di grande aiuto se si tratta di una lingua che l’autore non conosce.
 
 * Cambia l’ordine degli elementi utilizzando la barra verticale punteggiata all’estrema destra di ciascun elemento dell’elenco.
 
-   >[!NOTE]
-   >
-   >La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
+  >[!NOTE]
+  >
+  >La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
 
-   ![Ordine delle colonne](/help/sites-cloud/authoring/assets/column-order.png)
+  ![Ordine delle colonne](/help/sites-cloud/authoring/assets/column-order.png)
 
-   Tocca o fai clic sulla barra di selezione verticale e trascina l’elemento in una nuova posizione nell’elenco.
+  Tocca o fai clic sulla barra di selezione verticale e trascina l’elemento in una nuova posizione nell’elenco.
 
-   ![Ordinare un elenco](/help/sites-cloud/authoring/assets/order-list.png)
+  ![Ordinare un elenco](/help/sites-cloud/authoring/assets/order-list.png)
 
 ## Selettore della barra {#rail-selector}
 

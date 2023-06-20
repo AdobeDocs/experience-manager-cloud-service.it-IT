@@ -2,9 +2,9 @@
 title: Panoramica dei frammenti esperienza
 description: Estendi i frammenti esperienza Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1648'
 ht-degree: 1%
 
 ---
@@ -85,8 +85,7 @@ Per creare un modello di frammento esperienza rilevato da **Crea frammento esper
 
    1. Il nome del modello deve iniziare con:
       `experience-fragments`
-Questo consente agli utenti di creare frammenti di esperienza in /content/experience-fragments come 
-`cq:allowedTemplates` Questa proprietà della cartella include tutti i modelli i cui nomi iniziano con `experience-fragment`. I clienti possono aggiornare questa proprietà per includere il proprio schema di denominazione o le posizioni dei modelli.
+Questo consente agli utenti di creare frammenti di esperienza in /content/experience-fragments come `cq:allowedTemplates` Questa proprietà della cartella include tutti i modelli i cui nomi iniziano con `experience-fragment`. I clienti possono aggiornare questa proprietà per includere il proprio schema di denominazione o le posizioni dei modelli.
 
 1. [Modelli consentiti](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) può essere configurato nella console Frammenti di esperienza.
 
@@ -201,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Per utilizzare l’interfaccia è innanzitutto necessario creare un bundle contenente un nuovo componente di servizio che implementi l’interfaccia Link Rewriter Provider.
 
-Questo servizio verrà utilizzato per collegarsi alla riscrittura del file Esportazione frammento di esperienza in Target al fine di avere accesso ai vari collegamenti.
+Questo servizio viene utilizzato per collegarsi alla riscrittura del file Esportazione frammento di esperienza in Target in modo da poter accedere ai vari collegamenti.
 
 Ad esempio, `ComponentService`:
 
@@ -266,7 +265,7 @@ Nell’esempio precedente, vorremmo riscrivere:
 * `href` solo attributi
 
 * per un frammento di esperienza specifico:
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Qualsiasi altro frammento di esperienza che passa attraverso il sistema di esportazione in Target viene ignorato e non è interessato dalle modifiche implementate in questo Servizio.
 
@@ -279,8 +278,7 @@ Per la variante del frammento di esperienza interessata dal processo di riscritt
 Come input, il metodo riceve i parametri:
 
 * `link`
-Le azioni 
-`String` rappresentazione del collegamento attualmente in fase di elaborazione. In genere si tratta di un URL relativo che punta alla risorsa nell’istanza di authoring.
+Il `String` rappresentazione del collegamento attualmente in fase di elaborazione. In genere si tratta di un URL relativo che punta alla risorsa nell’istanza di authoring.
 
 * `tag`
 Nome dell&#39;elemento HTML attualmente in fase di elaborazione.

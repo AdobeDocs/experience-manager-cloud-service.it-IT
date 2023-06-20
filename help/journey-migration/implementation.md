@@ -2,9 +2,9 @@
 title: Fase di implementazione
 description: Assicurarsi che il codice e il contenuto siano pronti per la migrazione al cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2337'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,7 @@ Il presente documento si prefigge di:
 
 * Scopri Cloud Manager, il framework di integrazione e consegna continue dell’AEM utilizzato per distribuire il codice su AEM as a Cloud Service
 * Scopri come usare lo strumento per il trasferimento dei contenuti
-* Descrivi gli strumenti di refactoring del codice da utilizzare per modernizzare il codice per AEM as a Cloud Service
+* Descrivi gli strumenti di refactoring del codice da utilizzare per modernizzare il codice per gli as a Cloud Service AEM
 
 ## Utilizzo di Cloud Manager {#using-cloud-manager}
 
@@ -49,7 +49,7 @@ La figura seguente mostra i passaggi principali della fase che comporta la conve
 
 ![immagine](/help/journey-migration/assets/exec-image1.png)
 
-Nei capitoli seguenti verranno descritti in dettaglio gli strumenti da utilizzare per ottenere questo risultato.
+Inizieremo a specificare gli strumenti da utilizzare per ottenere questo risultato nei capitoli seguenti.
 
 ## Migrazione dei contenuti {#content-migration}
 
@@ -67,10 +67,10 @@ Per informazioni dettagliate su come funziona lo strumento e su come consigliamo
 
 È ora di iniziare a rieseguire il factoring delle funzioni esistenti per renderle compatibili con i Cloud Services.
 
-A questo scopo, consulta la documentazione che descrive gli strumenti di base necessari per avviare il refactoring del codice:
+Per prima cosa, consulta la documentazione che descrive gli strumenti di base e inizia a rieseguire il factoring del codice:
 
 
-* Durante la pianificazione, è opportuno disporre di un elenco di aree che devono essere riadattate per essere compatibili con gli as a Cloud Service AEM. Puoi rivedere [Linee guida per lo sviluppo](/help/implementing/developing/introduction/development-guidelines.md) per ulteriori dettagli su come effettuare il refactoring del codice per il Cloud Service e ottimizzarlo.
+* Durante la pianificazione, è consigliabile disporre di un elenco di aree che devono essere riadattate per essere compatibili con gli as a Cloud Service AEM. Puoi rivedere [Linee guida per lo sviluppo](/help/implementing/developing/introduction/development-guidelines.md) per ulteriori dettagli su come effettuare il refactoring del codice per il Cloud Service e ottimizzarlo.
 * Scopri come [Gestione configurazioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) nell’AEM as a Cloud Service.
 * Scopri come impostare un ambiente di sviluppo locale scaricando il [SDK AS A CLOUD SERVICE AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
 * Infine, impara a conoscere [API Java as a Cloud Service AEM](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
@@ -79,11 +79,11 @@ Inoltre, puoi anche:
 
 * Guarda questo video per comprendere come installare localmente l’SDK di Dispatcher:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+  >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * Guarda questo video per comprendere come configurare l’SDK di Dispatcher:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### Un cambio di mentalità {#a-change-in-mindset}
 
@@ -163,7 +163,7 @@ La raccolta dei dati può essere utile per pianificare le attività di migrazion
 
 <!-- Alexandru: hiding this for now
 
-One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 
 -->
 
@@ -177,8 +177,8 @@ Nella tabella seguente viene illustrato un tipico piano di migrazione:
 
 | Iterazione di migrazione | Data iniziale | Data di fine stimata | Dipendenze | Durata stimata (in giorni) | Dettagli aggiuntivi/Azioni |
 |---|---|---|---|---|---|
-| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |  |  |  |  |  |
-| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |  |  |  |  |  |
+| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
+| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |
 
 Come puoi vedere nella tabella precedente, è utile seguire un formato di denominazione specifico per identificare le iterazioni di migrazione, ad esempio: **PRDCLONE** per l&#39;ambiente AEM di origine , **AUTORE/PUBBLICAZIONE** per l&#39;ambiente as a Cloud Service dell&#39;AEM, **CSSTAGE-AUTHOR** per l&#39;istanza AEM as a Cloud Service e così via.
 
@@ -209,7 +209,7 @@ La tabella seguente illustra un tracker di migrazione funzionale:
 
 | Origine (ambiente/istanza/URL) | Destinazione (ambiente/istanza/URL) | Nome e tipo del set di migrazione (iniziale o superiore) | Dimensioni set di migrazione (MB) | Mappatura utenti (sì/no) | Durata estrazione (inizio, fine, tempo impiegato) | Durata acquisizione (inizio, fine, tempo impiegato) | Problemi / Risoluzioni / Dettagli |
 |---|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |  |
+|   |   |   |   |   |   |   |   |
 
 ## Strategia e tempistica di migrazione dei contenuti {#content-strategyand-timeline}
 

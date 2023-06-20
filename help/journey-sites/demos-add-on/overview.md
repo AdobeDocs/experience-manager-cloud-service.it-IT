@@ -2,10 +2,10 @@
 title: Percorso AEM Reference Demos Add-On
 description: Inizia qui per un percorso guidato su come aggiungere facilmente il componente aggiuntivo Demos di riferimento di AEM a un ambiente sandbox con una configurazione di AEM minima ed essere in grado di testare le potenti funzionalità di AEM con esempi ricchi basati sulle best practice.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 100%
+source-wordcount: '852'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +15,7 @@ Inizia qui per un percorso guidato su come aggiungere facilmente AEM Reference D
 
 ## Introduzione {#introduction}
 
-AEM è un potente set di strumenti per la creazione e la gestione di esperienze digitali. Gli autori dei contenuti possono creare esperienze digitali facilmente tramite l’editor dei siti e organizzare i contenuti mediante la console Sites, visualizzando allo stesso tempo i contenuti live così come saranno distribuiti da AEM ai tipi di pubblico attraverso i canali.
+AEM è un potente set di strumenti per la creazione e la gestione di esperienze digitali. Gli autori dei contenuti possono creare esperienze digitali facilmente tramite l’editor dei siti e organizzare i contenuti tramite la console Sites, visualizzando allo stesso tempo i contenuti live così come vengono distribuiti dall’AEM al pubblico attraverso i canali.
 
 Senza contenuti e configurazioni di esempio, può essere difficile testare le potenti funzionalità di AEM per clienti nuovi ed esperti. AEM Reference Demos Add-On consente di creare facilmente ambienti sandbox precaricati con contenuti di esempio e preconfigurati utilizzando le linee guida più recenti sulle best practice per Adobe. Con il componente aggiuntivo è possibile valutare facilmente le funzionalità di AEM Sites e AEM Screens nel contesto e senza quasi alcuna configurazione.
 
@@ -34,7 +34,7 @@ Se desideri sapere come Adobe consiglia di risolvere i casi aziendali relativi a
 
 ## Pubblico {#audience}
 
-Questo percorso definisce i requisiti, i passaggi e l’approccio necessari per creare un nuovo programma e impostare una sandbox AEM con AEM Reference Demos Add-On includendo il contenuto demo Sites e/o Screens. Il pubblico principale è l’**amministratore di sistema** a cui viene assegnato il ruolo di **Titolare dell’attività** in Cloud Manager. Di solito si tratta della stessa persona responsabile della gestione dell’ambiente. Tuttavia, una volta installato Reference Demos Add-On, tale amministratore può concedere l’accesso all’ambiente AEM ad altri utenti per testare le funzioni abilitate dal componente aggiuntivo.
+Questo percorso definisce i requisiti, i passaggi e l’approccio necessari per creare un nuovo programma e impostare una sandbox AEM con AEM Reference Demos Add-On includendo il contenuto demo Sites e/o Screens. Il pubblico principale è l’**amministratore di sistema** a cui viene assegnato il ruolo di **Titolare dell’attività** in Cloud Manager. Di solito si tratta della stessa persona responsabile della gestione dell’ambiente. Tuttavia, dopo l’installazione di Reference Demos Add-On, tale amministratore può concedere ad altri utenti l’accesso all’ambiente AEM per testare le funzioni abilitate dal componente aggiuntivo.
 
 ## Percorso AEM Reference Demo Add-On {#the-journey}
 

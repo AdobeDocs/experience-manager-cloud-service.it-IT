@@ -2,9 +2,9 @@
 title: Diagnostica ContextHub
 description: ContextHub fornisce una pagina di diagnostica in cui puoi visualizzare una panoramica del framework ContextHub
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ La pagina Diagnostica ContextHub fornisce informazioni sugli archivi e i moduli 
 
 >[!NOTE]
 >
->Per restituire le informazioni di diagnostica, è necessario attivare la modalità di debug. In caso contrario, la pagina di diagnostica sarà vuota. Consulta [questo documento](configuring-contexthub.md#debugging-contexthub) per informazioni dettagliate su come abilitare la modalità di debug.
+>Per restituire le informazioni di diagnostica, è necessario attivare la modalità di debug. In caso contrario, la pagina di diagnostica è vuota. Consulta [questo documento](configuring-contexthub.md#debugging-contexthub) per informazioni dettagliate su come abilitare la modalità di debug.
 
 ## Negozi {#stores}
 

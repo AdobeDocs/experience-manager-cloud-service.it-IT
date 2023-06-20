@@ -2,10 +2,10 @@
 title: Modelli per frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuti strutturati.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2917'
-ht-degree: 97%
+source-wordcount: '2903'
+ht-degree: 90%
 
 ---
 
@@ -56,7 +56,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
    >[!NOTE]
    >
-   >Quando un campo è **obbligatorio**, l’**Etichetta** indicata nel riquadro a sinistra sarà contrassegnata con un asterisco (**&#42;**).
+   >Quando un campo come **Obbligatorio**, il **Etichetta** indicato nel riquadro a sinistra è contrassegnato con un asterisco (**&#42;**).
 
 ![proprietà](assets/cfm-models-03.png)
 
@@ -64,26 +64,26 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
    * Trascina un tipo di dati obbligatorio nella posizione desiderata per un campo:
 
-      ![tipo di dati per il campo](assets/cfm-models-04.png)
+     ![tipo di dati per il campo](assets/cfm-models-04.png)
 
    * Una volta aggiunto un campo al modello, il pannello di destra visualizza le **Proprietà** che possono essere definite per quel particolare tipo di dati. Qui puoi definire ciò che è necessario per quel campo.
 
       * Molte proprietà sono auto-esplicative, per ulteriori dettagli vedi [Proprietà](#properties).
       * La digitazione di un’**Etichetta campo** completerà automaticamente il **Nome proprietà**. Se vuoto, può essere aggiornato manualmente in seguito.
 
-         >[!CAUTION]
-         >
-         >Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, tieni presente che i nomi devono contenere solo caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_”.
-         >
-         >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
-      Esempio:
+        >[!CAUTION]
+        >
+        >Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, tieni presente che i nomi devono contenere solo caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_”.
+        >
+        >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
-      ![proprietà del campo](assets/cfm-models-05.png)
+     Esempio:
 
+     ![proprietà del campo](assets/cfm-models-05.png)
 
 1. **Per rimuovere un campo**
 
-   Seleziona il campo richiesto, quindi tocca o fai clic sull’icona del cestino. Viene richiesto di confermare l’operazione.
+   Seleziona il campo richiesto, quindi tocca o fai clic sull’icona del cestino. Ti viene chiesto di confermare l’azione.
 
    ![rimuovere](assets/cfm-models-06.png)
 
@@ -122,16 +122,15 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 * **Oggetto JSON**
    * Consente all’autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
       * Questo fa sì che AEM possa memorizzare direttamente JSON con copia e incolla da un altro servizio.
-      * Il JSON verrà trasmesso e risulterà come JSON in GraphQL.
+      * Il JSON viene trasmesso e prodotto come JSON in GraphQL.
       * Include l’evidenziazione della sintassi JSON, il completamento automatico e l’evidenziazione degli errori nell’editor dei frammenti di contenuto.
 * **Segnaposto scheda**
    * Consente l’introduzione di schede da utilizzare per la modifica del contenuto dei frammenti di contenuto.
-Nell’editor modelli verrà mostrato come divisore che separa le sezioni dell’elenco dei tipi di dati di contenuto. Ogni istanza rappresenta l’inizio di una nuova scheda.
+Nell’editor modelli viene mostrato come divisore che separa le sezioni dell’elenco dei tipi di dati di contenuto. Ogni istanza rappresenta l’inizio di una nuova scheda.
 Nell’editor frammenti ogni istanza viene visualizzata come una scheda.
-
-      >[!NOTE]
-      >
-      >Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
+     >[!NOTE]
+     >
+     >Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
 
 ## Proprietà {#properties}
 
@@ -139,18 +138,17 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 
 * **Nome proprietà**
 
-   Quando aggiorni manualmente questa proprietà per un tipo di dati, tieni presente che i nomi **devono** contenere *solo* caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_“.
+  Quando aggiorni manualmente questa proprietà per un tipo di dati, tieni presente che i nomi **devono** contenere *solo* caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_“.
 
-   >[!CAUTION]
-   >
-   >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+  >[!CAUTION]
+  >
+  >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering come** 
-Consente varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore può visualizzare una singola istanza del campo o se può creare più istanze.
+Consente varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questa proprietà ti consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze.
 
-* **Etichetta campo** 
-L’inserimento di 
-**Etichetta campo** genererà automaticamente un **Nome proprietà** che, se necessario, può essere aggiornato manualmente in seguito.
+* **Etichetta campo**
+Inserimento di un **Etichetta campo** genererà automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente se necessario.
 
 * **Convalida**
 La convalida di base è disponibile tramite meccanismi quali la proprietà **Obbligatorio**. Alcuni tipi di dati dispongono di campi di convalida aggiuntivi. Vedi [Convalida](#validation) per ulteriori dettagli.
@@ -161,28 +159,28 @@ La convalida di base è disponibile tramite meccanismi quali la proprietà **Obb
    * **Markdown**
    * **Testo normale**
 
-   Se non viene specificato diversamente, per questo campo viene utilizzato il valore predefinito **Rich Text**.
+  Se non viene specificato diversamente, per questo campo viene utilizzato il valore predefinito **Rich Text**.
 
-   La modifica del **Tipo predefinito** in un modello per frammenti di contenuto avrà effetto solo su un frammento esistente correlato, una volta che il frammento è stato aperto nell’editor e successivamente salvato.
+  La modifica del **Tipo predefinito** in un modello per frammenti di contenuto avrà effetto solo su un frammento esistente correlato, una volta che il frammento è stato aperto nell’editor e successivamente salvato.
 
 * **Univoco**
 Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti di contenuto creati dal modello corrente.
 
-   Questo viene utilizzato per impedire agli autori di contenuti di ripetere contenuti già aggiunti in un altro frammento dello stesso modello.
+  Questo viene utilizzato per impedire agli autori di contenuti di ripetere contenuti già aggiunti in un altro frammento dello stesso modello.
 
-   Ad esempio, un campo **Testo a riga singola** denominato `Country` nel modello per frammenti di contenuto non può avere il valore `Japan` in due frammenti di contenuto dipendenti. Viene visualizzato un avviso quando si tenta di eseguire la seconda istanza.
+  Ad esempio, un campo **Testo a riga singola** denominato `Country` nel modello per frammenti di contenuto non può avere il valore `Japan` in due frammenti di contenuto dipendenti. Viene visualizzato un avviso quando si tenta di eseguire la seconda istanza.
 
-   >[!NOTE]
-   >
-   >L’unicità è assicurata da directory principale lingua.
+  >[!NOTE]
+  >
+  >L’unicità è assicurata da directory principale lingua.
 
-   >[!NOTE]
-   >
-   >Le varianti possono avere lo stesso valore *unico* come varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
+  >[!NOTE]
+  >
+  >Le varianti possono avere lo stesso valore *unico* come varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
 
-   >[!CAUTION]
-   >
-   >Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), qualsiasi **Univoco** I vincoli devono essere rimossi da tutti i tipi di dati utilizzati nei rispettivi modelli per frammenti di contenuto.
+  >[!CAUTION]
+  >
+  >Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), qualsiasi **Univoco** I vincoli devono essere rimossi da tutti i tipi di dati utilizzati nei rispettivi modelli per frammenti di contenuto.
 
 * Vedi **[Riferimento contenuto](#content-reference)** per ulteriori dettagli su quel tipo di dati specifico e sulle relative proprietà.
 
@@ -190,7 +188,7 @@ Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti d
 
 * **Traducibile**
 
-   Selezionando la casella di controllo **Traducibile** in un campo dell’editor modelli di frammenti di contenuto:
+  Selezionando la casella di controllo **Traducibile** in un campo dell’editor modelli di frammenti di contenuto:
 
    * Fa sì che il nome della proprietà del campo sia aggiunto alla configurazione di traduzione, al contesto `/content/dam/<sites-configuration>`, se non già presente.
    * Per GraphQL: impostare una proprietà `<translatable>` nel campo Frammento di contenuto su `yes`, per consentire al filtro query GraphQL di restituire output JSON con solo contenuto traducibile.
@@ -221,10 +219,9 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 * **[Riferimento frammento](#fragment-reference-nested-fragments)** (frammenti nidificati)
    * Fa riferimento ad altri frammenti, a seconda dei modelli specifici indicati.
    * Consente di includere/recuperare dati strutturati.
-
-      >[!NOTE]
-      >
-      >Questo metodo è particolarmente interessante in relazione alla [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     >[!NOTE]
+     >
+     >Questo metodo è particolarmente interessante in relazione alla [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
 >[!NOTE]
@@ -232,11 +229,10 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 >AEM ha una protezione periodica per:
 >
 >* Riferimenti contenuto
-   >  Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
+>  Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
 >
 >* Riferimenti frammento in GraphQL
-   >  Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituirà null.
-
+>  Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituirà null.
 
 ### Riferimento contenuto {#content-reference}
 
@@ -297,11 +293,11 @@ Specifica un percorso radice per tutti i frammenti a cui si fa riferimento.
 
 * **Consenti creazione di frammenti**
 
-   In questo modo l’autore del frammento potrà creare un nuovo frammento basato sul modello appropriato.
+  In questo modo l’autore del frammento potrà creare un nuovo frammento basato sul modello appropriato.
 
    * **fragmentreferencecomposite**: consente all’autore del frammento di creare un elemento composito selezionando più frammenti
 
-   ![Riferimento frammento](assets/cfm-fragment-reference.png)
+  ![Riferimento frammento](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
 >
@@ -376,15 +372,16 @@ Per configurare i **Criteri** dei **Modelli per frammenti di contenuto consentit
 
    * **Ereditato da`<folder>`**
 
-      I criteri vengono ereditati automaticamente durante la creazione di nuove cartelle secondarie; il criterio può essere riconfigurato (interrompendo l’ereditarietà) se le sottocartelle devono consentire modelli diversi dalla cartella principale.
+     I criteri vengono ereditati automaticamente durante la creazione di nuove cartelle secondarie; il criterio può essere riconfigurato (interrompendo l’ereditarietà) se le sottocartelle devono consentire modelli diversi dalla cartella principale.
 
    * **Modelli per frammenti di contenuto consentiti per percorso**
 
-      Possono essere consentiti più modelli.
+     Possono essere consentiti più modelli.
 
    * **Modelli per frammenti di contenuto consentiti per tag**
 
-      Possono essere consentiti più modelli.
+     Possono essere consentiti più modelli.
+
    ![Criterio del modello per frammento di contenuto](assets/cfm-model-policy-assets-folder.png)
 
 1. **Salva** eventuali modifiche.
@@ -410,7 +407,7 @@ Per eliminare un modello per frammenti di contenuto:
 
    >[!NOTE]
    >
-   >Se ci sono riferimenti al modello, viene visualizzato un avviso. Agisci di conseguenza.
+   >Se si fa riferimento al modello, viene visualizzato un avviso. Agisci di conseguenza.
 
 ## Pubblicazione di un modello per frammenti di contenuto {#publishing-a-content-fragment-model}
 
@@ -422,11 +419,11 @@ Per pubblicare un modello per frammenti di contenuto:
 
 1. Passa alla cartella contenente il modello per frammenti di contenuto.
 1. Seleziona il modello e poi **Pubblica** dalla barra degli strumenti.
-Lo stato di pubblicazione sarà indicato nella console.
+Lo stato di pubblicazione è indicato nella console.
 
    >[!NOTE]
    >
-   >Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
+   >Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, un elenco di selezione lo indica e il modello viene pubblicato con il frammento.
 
 ## Annullamento della pubblicazione di un modello per frammenti di contenuto {#unpublishing-a-content-fragment-model}
 
@@ -438,7 +435,7 @@ Per annullare la pubblicazione di un modello per frammenti di contenuto:
 
 1. Passa alla cartella contenente il modello per frammenti di contenuto.
 1. Seleziona il modello e poi **Annulla pubblicazione** dalla barra degli strumenti.
-Lo stato di pubblicazione sarà indicato nella console.
+Lo stato di pubblicazione è indicato nella console.
 
 Se tenti di annullare la pubblicazione di un modello attualmente utilizzato da uno o più frammenti, un avviso di errore segnala quanto segue:
 
@@ -484,36 +481,36 @@ Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
 
 * Console
 
-   Dalla console, è possibile gestire la modalità SOLA LETTURA con le azioni **Sblocca** e **Blocca** nella barra degli strumenti:
+  Dalla console, è possibile gestire la modalità SOLA LETTURA con le azioni **Sblocca** e **Blocca** nella barra degli strumenti:
 
-   ![Barra degli strumenti del modello per frammenti di contenuto bloccato](assets/cfm-model-locked.png)
+  ![Barra degli strumenti del modello per frammenti di contenuto bloccato](assets/cfm-model-locked.png)
 
    * È possibile **Sbloccare** un modello per abilitare le modifiche.
 
-      Se selezioni **Sblocca** viene mostrato un avviso che chiede di confermare l’azione **Sblocca**:
-      ![Messaggio relativo allo sblocco del modello per frammenti di contenuto](assets/cfm-model-unlock-message.png)
+     Se si seleziona **Sblocca**, viene visualizzato un avviso ed è necessario confermare **Sblocca** azione:
+     ![Messaggio relativo allo sblocco del modello per frammenti di contenuto](assets/cfm-model-unlock-message.png)
 
-      Puoi quindi aprire il modello per la modifica.
+     Puoi quindi aprire il modello per la modifica.
 
    * Puoi anche **Bloccare** successivamente il modello.
    * La ripubblicazione del modello lo rimette immediatamente in modalità **Bloccato** (SOLA LETTURA).
 
 * Editor modelli
 
-   * Quando apri un modello bloccato, viene visualizzato un avviso e vengono presentate tre azioni: **Annulla**, **Visualizza sola lettura**, **Modifica**:
+   * Quando aprite un modello bloccato, viene visualizzato un avviso e vengono visualizzate tre azioni: **Annulla**, **Visualizza sola lettura**, **Modifica**:
 
-      ![Messaggio relativo alla visualizzazione di un modello per frammenti di contenuto bloccato](assets/cfm-model-editor-lock-message.png)
+     ![Messaggio relativo alla visualizzazione di un modello per frammenti di contenuto bloccato](assets/cfm-model-editor-lock-message.png)
 
    * Se selezioni **Visualizza sola lettura** puoi visualizzare il contenuto e la struttura del modello:
 
-      ![Visualizza solo lettura: modello per frammenti di contenuto bloccato](assets/cfm-model-editor-locked-view-only.png)
+     ![Visualizza solo lettura: modello per frammenti di contenuto bloccato](assets/cfm-model-editor-locked-view-only.png)
 
    * Se selezioni **Modifica** puoi modificare e salvare gli aggiornamenti:
 
-      ![Modifica: modello per frammenti di contenuto bloccato](assets/cfm-model-editor-locked-edit.png)
+     ![Modifica: modello per frammenti di contenuto bloccato](assets/cfm-model-editor-locked-edit.png)
 
-      >[!NOTE]
-      >
-      >Potrebbe ancora essere presente un avviso nella parte superiore, ma si verifica quando il modello è già utilizzato da frammenti di contenuto esistenti.
+     >[!NOTE]
+     >
+     >Potrebbe ancora essere presente un avviso nella parte superiore, ma si verifica quando il modello è già utilizzato da frammenti di contenuto esistenti.
 
    * **Annulla** ti riporterà alla console.

@@ -2,10 +2,10 @@
 title: 'Creazione di una cartella di risorse: configurazione headless'
 description: Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 93%
 
 ---
 
@@ -29,15 +29,14 @@ Di solito, un amministratore deve creare cartelle solo occasionalmente, per orga
 1. Tocca o fai clic su **Crea -> Cartella**.
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.
-   * Il **nome** diventerà il nome del nodo nell’archivio.
-      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   * Il **Nome** diventa il nome del nodo nell’archivio.
+      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM.](/help/implementing/developing/introduction/naming-conventions.md)
       * Se necessario è possibile modificarlo.
 
    ![Crea cartella](../assets/assets-folder-create.png)
 1. Seleziona la cartella appena creata: passa il puntatore su di essa, quindi tocca il segno di spunta. Dalla barra degli strumenti, seleziona **Proprietà** (oppure utilizza le `p` [scelte rapide da tastiera.](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))
 1. In **Proprietà**, seleziona la scheda **Servizi cloud**.
 1. In **Configurazione cloud** seleziona la [configurazione creata in precedenza.](create-configuration.md)
-
    ![Configurare la cartella delle risorse](../assets/assets-folder-configure.png)
 1. Tocca o fai clic su **Salva e chiudi**.
 1. Nella finestra di conferma tocca o fai clic su **OK**.

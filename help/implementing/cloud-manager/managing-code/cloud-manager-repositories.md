@@ -2,10 +2,10 @@
 title: Archivi di Cloud Manager
 description: Scopri come creare, visualizzare ed eliminare gli archivi Git in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '580'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Esiste un singolo archivio principale o ramo per ogni pipeline. Grazie al [suppo
 L’eliminazione di un archivio:
 
 * Rende il nome dell’archivio eliminato inutilizzabile per i nuovi archivi che possono essere creati in futuro.
-   * In tali casi viene visualizzato il messaggio di errore `Repository name should be unique within organization.`.
+   * Messaggio di errore `Repository name should be unique within organization.` in tali casi.
 * Rende l’archivio eliminato non disponibile in Cloud Manager e non disponibile per il collegamento a una pipeline.
 
 Per eliminare un archivio in Cloud Manager, segui la procedura riportata di seguito.

@@ -2,9 +2,9 @@
 title: Sviluppo di un componente personalizzato per Screens as a Cloud Service
 description: Il seguente tutorial illustra i passaggi necessari per creare un componente personalizzato per AEM Screens. AEM Screens riutilizza molti modelli di progettazione e tecnologie esistenti di altri prodotti AEM. Il tutorial evidenzia differenze e considerazioni speciali durante lo sviluppo per AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2106'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ Il codice sorgente di un progetto Screens viene in genere gestito come progetto 
 
    Rappresentazione del codice ui.apps in CRXDE Lite
 
-   Il **helloworld** Il componente è attualmente solo un segnaposto. Nel corso dell’esercitazione, verrà aggiunta una funzionalità che consente all’autore di aggiornare il messaggio visualizzato dal componente.
+   Il **helloworld** Il componente è attualmente solo un segnaposto. Nel corso dell’esercitazione, viene aggiunta una funzionalità che consente all’autore di aggiornare il messaggio visualizzato dal componente.
 
 1. Il **screens-weretail-run.ui.content** il pacchetto installa il codice sotto:
 
@@ -242,7 +242,7 @@ AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente va
                                    jcr:primaryType="nt:unstructured"
                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
                                    defaultValue=""
-                                   fieldDescription="Amount of time the image will be shown in the sequence, in milliseconds"
+                                   fieldDescription="Amount of time the image is shown in the sequence, in milliseconds"
                                    fieldLabel="Duration (ms)"
                                    min="0"
                                    name="./duration"/>
@@ -255,7 +255,7 @@ AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente va
    </jcr:root>
    ```
 
-   Il campo di testo per il messaggio verrà salvato in una proprietà denominata `message` e che il campo numerico per la Durata venga salvato in una proprietà denominata `duration`. Entrambe queste proprietà sono indicate in `/apps/weretail-run/components/content/helloworld/production.html` da HTL come `${properties.message}` e `${properties.duration}`.
+   Il campo di testo per il messaggio viene salvato in una proprietà denominata `message` e che il campo numerico della Durata venga salvato in una proprietà denominata `duration`. Entrambe queste proprietà sono indicate in `/apps/weretail-run/components/content/helloworld/production.html` da HTL come `${properties.message}` e `${properties.duration}`.
 
    ![Hello World - finestra di dialogo completata](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
@@ -265,7 +265,7 @@ AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente va
 
 Le librerie lato client forniscono un meccanismo per organizzare e gestire i file CSS e JavaScript necessari per un’implementazione AEM.
 
-Il rendering dei componenti di AEM Screens varia in modalità Modifica rispetto alla modalità Anteprima/Produzione. Verranno create due librerie client, una per la modalità di modifica e una per l’anteprima/produzione.
+I componenti AEM Screens vengono riprodotti in modo diverso nelle modalità Modifica e Anteprima/Produzione. Vengono create due librerie client: una per la modalità di modifica e una per l’anteprima/produzione.
 
 1. Crea una cartella per le librerie lato client per il componente Hello World.
 
@@ -281,7 +281,7 @@ Il rendering dei componenti di AEM Screens varia in modalità Modifica rispetto 
 
    * `allowProxy` | Booleano | `true`
 
-   * `categories`| Stringa[] | `cq.screens.components`
+   * `categories`Stringa |[] | `cq.screens.components`
 
    ![Proprietà per /apps/weretail-run/components/content/helloworld/clientlibs/shared](/help/screens-cloud/developing/assets/2018-05-03_at_1026pm.png)
 
@@ -411,6 +411,7 @@ Il componente Hello World deve essere utilizzato su un canale di sequenza. Per t
 1. Passaggio modello - scegli **Canale sequenza**
 
    1. Passaggio proprietà
+
    * Scheda Base > Titolo = **Canale inattivo**
    * Scheda Canale > spunta **Rendi il canale online**
 
@@ -446,7 +447,7 @@ Il componente Hello World deve essere utilizzato su un canale di sequenza. Per t
 
 Se il componente personalizzato utilizza risorse esterne come risorse (immagini, video, font, icone, ecc.), rappresentazioni di risorse specifiche o librerie lato client (css, js, ecc.), queste non vengono aggiunte automaticamente alla configurazione offline in quanto per impostazione predefinita il markup HTML viene raggruppato solo.
 
-Per personalizzare e ottimizzare le risorse esatte scaricate sul lettore, offriamo un meccanismo di estensione per i componenti personalizzati che consente di esporre le loro dipendenze alla logica di caching offline in Screens.
+Per personalizzare e ottimizzare le risorse esatte scaricate sul lettore, offriamo un meccanismo di estensione per i componenti personalizzati in modo da esporre le loro dipendenze alla logica di caching offline in Screens.
 
 La sezione seguente presenta il modello per i gestori di risorse offline personalizzati e i requisiti minimi in `pom.xml` per quel progetto specifico.
 

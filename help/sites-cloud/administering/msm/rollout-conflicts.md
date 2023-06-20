@@ -4,10 +4,10 @@ description: Scopri come gestire e risolvere i conflitti di rollout di Multi Sit
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ Quando esistono delle pagine in conflitto (nei rami blueprint e Live Copy), MSM 
 Per garantire che il rollout non sia bloccato, le definizioni possibili possono includere:
 
 * Quale pagina (blueprint o Live Copy) avrà priorità durante il rollout
-* Quali pagine verranno rinominate (e come)
+* Quali pagine vengono rinominate e come
 * Come questo influenzerà eventuali contenuti pubblicati
 
 Il comportamento predefinito di AEM è che il contenuto pubblicato non sarà interessato. Quindi, se una pagina creata manualmente nel ramo Live Copy è stata pubblicata, il contenuto verrà comunque pubblicato dopo la gestione e il rollout dei conflitti.
@@ -35,11 +35,11 @@ Nelle sezioni seguenti viene utilizzato l’esempio di una nuova pagina `b`, cre
 
 * blueprint: `/b`
 
-   Una pagina master con 1 pagina figlio, `bp-level-1`
+  Una pagina master con 1 pagina figlio, `bp-level-1`
 
 * Live Copy: `/b`
 
-   Una pagina creata manualmente nel ramo Live Copy con 1 pagina figlio, `lc-level-1`
+  Una pagina creata manualmente nel ramo Live Copy con 1 pagina figlio, `lc-level-1`
 
    * Attivato al momento della pubblicazione come `/b`, insieme alla pagina figlio
 
@@ -83,13 +83,13 @@ Questo gestore di conflitti ha la precedenza sulla blueprint. Ad esempio, la pag
 
 * Live Copy: `/b`
 
-   Viene spostato all’interno della Live Copy in `/b_msm_moved`. Questo funge da backup e assicura che non venga perso alcun contenuto.
+  Viene spostato all’interno della Live Copy in `/b_msm_moved`. Questo funge da backup e assicura che non venga perso alcun contenuto.
 
    * `lc-level-1` non viene spostato.
 
 * Blueprint: `/b`
 
-   Viene distribuito alla pagina Live Copy `/b`.
+  Viene distribuito alla pagina Live Copy `/b`.
 
    * `bp-level-1` viene distribuito nella Live Copy.
 
@@ -127,11 +127,11 @@ In questo caso Live Copy ha effettivamente la precedenza. La pagina blueprint `/
 
 * Blueprint: `/b`
 
-   Non viene copiata, ma viene ignorata.
+  Non viene copiata, ma viene ignorata.
 
 * Live Copy: `/b`
 
-   Rimane la stessa.
+  Rimane la stessa.
 
 #### Dopo il rollout {#after-rollout-no-conflict}
 

@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 32%
+source-wordcount: '1352'
+ht-degree: 31%
 
 ---
 
@@ -47,19 +47,19 @@ La seguente versione (2021.6.0) sarà del 28 giugno 2021.
 
 * Puoi scaricare le risorse condivise utilizzando la funzionalità Condivisione collegamenti. Questo download utilizza ora un servizio asincrono che offre download più veloci e ininterrotti, anche per download di dimensioni molto grandi. Consulta [scaricare le risorse](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![Casella in entrata download](/help/assets/assets/download-inbox.png)
+  ![Casella in entrata download](/help/assets/assets/download-inbox.png)
 
 ### Nuove funzioni disponibili nel canale prerelease di {#what-is-new-assets-prerelease}
 
 * Gli schemi di metadati possono essere applicati direttamente alle proprietà della cartella.
 
-   ![Aggiungi schema metadati dalle proprietà della cartella](/help/assets/assets/metadata-schema-folder-properties.png)
+  ![Aggiungi schema metadati dalle proprietà della cartella](/help/assets/assets/metadata-schema-folder-properties.png)
 
 * Lo strumento Asset Bulk Ingestor consente di aggiungere metadati durante un’acquisizione in blocco.
 
 * I miglioramenti dell’esperienza utente consentono di visualizzare il numero di risorse presenti in una cartella. Per più di 1000 risorse in una cartella, [!DNL Assets] visualizza 1000+.
 
-   ![Nell’interfaccia viene visualizzato il numero di risorse presenti in una cartella](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![Nell’interfaccia viene visualizzato il numero di risorse presenti in una cartella](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### Bug corretti in [!DNL Assets] {#assets-bugs-fixed}
 
@@ -110,7 +110,7 @@ La prossima versione è pianificata per il 03 giugno 2021.
 
 * L’endpoint dell’archivio nell’API pubblica ora include l’URL di Git.
 
-* Ora il registro di distribuzione scaricato dall’utente di Cloud Manager è più dettagliato e include dettagli sugli scenari di errore e di completamento corretto.
+* I registri di distribuzione scaricati da un utente di Cloud Manager sono più dettagliati e includono dettagli sugli errori e sugli scenari di successo.
 
 * Sono stati risolti gli errori intermittenti che si verificavano durante il push del codice nell’archivio Git di Adobe.
 
@@ -148,7 +148,7 @@ La data di pubblicazione dello strumento Content Transfer v1.4.6 è il 27 maggio
 
 * Se l&#39;utente non dispone dell&#39;autorizzazione di esecuzione per l&#39;eseguibile Java, è stata aggiunta una nuova istruzione di registrazione al registro degli errori dell&#39;avvio rapido.
 
-* Quando un utente elimina un set di migrazione dall’interfaccia utente CTT, dove è stata eseguita un’estrazione, il `tmp` per risparmiare spazio, verrà eliminata la cartella associata a tale set di migrazione.
+* Quando un utente elimina un set di migrazione dall’interfaccia utente CTT, dove è stata eseguita un’estrazione, il `tmp` per risparmiare spazio, viene eliminata la cartella associata a tale set di migrazione.
 
 ### Correzioni di bug {#bug-fixes-ctt-latest}
 

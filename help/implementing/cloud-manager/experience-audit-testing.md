@@ -2,10 +2,10 @@
 title: Test dell’audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 100%
+source-wordcount: '551'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ L’audit dell’esperienza è una funzione disponibile nelle pipeline di produz
 
 L’audit dell’esperienza in Cloud Manager assicura i più elevati standard di esperienza utente sul sito.
 
-I risultati dell’audit sono informativi e consentono agli utenti con ruolo Responsabile dell’implementazione di visualizzare i punteggi e cosa è cambiato tra i punteggi correnti e precedenti. Questa informazione è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.
+I risultati dell’audit sono informativi e consentono agli utenti con ruolo Responsabile dell’implementazione di visualizzare i punteggi e cosa è cambiato tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se c’è una regressione introdotta con la distribuzione corrente.
 
 L’audit dell’esperienza è basato su Google Lighthouse, uno strumento open source di Google abilitato in tutte le pipeline di produzione di Cloud Manager.
 

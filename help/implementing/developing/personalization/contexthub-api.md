@@ -2,9 +2,9 @@
 title: Riferimento API di ContextHub Javascript
 description: L’API JavaScript ContextHub è disponibile per gli script quando il componente ContextHub è stato aggiunto alla pagina
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4620'
 ht-degree: 2%
 
 ---
@@ -697,7 +697,7 @@ Associazione una funzione a un evento. La funzione viene chiamata ogni volta che
 
 Quando `triggerForPastEvents` argomento è `true`, questa funzione restituisce un `boolean` valore che indica se l’evento si è verificato in passato:
 
-* `true`: l’evento si è verificato in passato e il gestore verrà chiamato.
+* `true`: l’evento si è verificato in passato e il gestore viene chiamato.
 * `false`: l’evento non si è verificato in passato.
 
 Se `triggerForPastEvents` è `false`, questa funzione non restituisce alcun valore.
@@ -737,7 +737,7 @@ Associazione una funzione a un evento. La funzione viene chiamata una sola volta
 
 Quando `triggerForPastEvents` argomento è `true`, questa funzione restituisce un `boolean` valore che indica se l’evento si è verificato in passato:
 
-* `true`: l’evento si è verificato in passato e il gestore verrà chiamato.
+* `true`: l’evento si è verificato in passato e il gestore viene chiamato.
 * `false`: l’evento non si è verificato in passato.
 
 Se `triggerForPastEvents` è `false`, questa funzione non restituisce alcun valore.

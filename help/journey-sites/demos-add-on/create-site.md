@@ -2,10 +2,10 @@
 title: Crea sito demo
 description: Crea un sito demo in AEM basato su una libreria di modelli preconfigurati.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 100%
+source-wordcount: '842'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Una volta implementato AEM Reference Demos Add-On, la pipeline può accedere all
 
    ![Creazione guidata sito](assets/site-creation-wizard.png)
 
-1. Nella schermata successiva, specifica un titolo per il sito o il progetto Screens. Puoi specificare un nome per il sito o generarlo dal titolo. Tocca o fai clic su **Crea**.
+1. Nella schermata successiva, specifica un titolo per il sito o il progetto Screens. Se omesso, è possibile specificare o generare un nome di sito dal titolo. Tocca o fai clic su **Crea**.
 
    * Il titolo del sito viene visualizzato nella barra del titolo del browser.
    * Il nome del sito diventa parte dell’URL.

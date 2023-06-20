@@ -2,9 +2,9 @@
 title: Note sulla versione 2021.7.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.7.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1315'
 ht-degree: 36%
 
 ---
@@ -34,7 +34,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di luglio 2021](https://video.
 
 ### Novità {#what-is-new-foundation}
 
-* Configurazione più flessibile del dispatcher: i progetti possono essere organizzati più facilmente. Ad esempio, ora puoi includere più file di regole di riscrittura che riflettono la struttura del sito. [Informazioni su](/help/implementing/dispatcher/disp-overview.md#validation-debug) questa modalità flessibile, tra cui come strutturare la configurazione del dispatcher per sfruttarla.
+* Configurazione più flessibile del dispatcher: i progetti possono essere organizzati più facilmente. Ad esempio, ora puoi includere più file di regole di riscrittura che riflettono la struttura del sito. [Informazioni su](/help/implementing/dispatcher/disp-overview.md#validation-debug) questa modalità flessibile, tra cui come strutturare la configurazione del dispatcher in modo da poterne trarre vantaggio.
 * L’interfaccia utente di replica ad albero nella scheda &quot;Distribuisci&quot; dell’agente di replica deve essere considerata obsoleta e verrà rimossa dopo il 30 settembre. [Informazioni su](/help/operations/replication.md#tree-activation) strategie di replica alternative.
 * Bundle `org.apache.sling.datasource-1.0.4.jar` per l’origine dati Sling, il supporto è stato rimosso perché presenta funzionalità obsolete e non è più utilizzato dai clienti.
 
@@ -42,23 +42,23 @@ Dai un&#39;occhiata al [Panoramica sulla versione di luglio 2021](https://video.
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* La funzionalità di automazione dei contenuti consente [!DNL Experience Manager Assets] sfruttare [!DNL Adobe Creative Cloud] API per automatizzare la produzione delle risorse su larga scala. Migliora la velocità dei contenuti riducendo notevolmente il tempo impiegato e le iterazioni necessarie per creare varianti della stessa risorsa. La funzionalità non richiede alcuna programmazione e funziona dall’interno di DAM. Consulta [generare varianti di risorse tramite l’integrazione Creative Cloud](/help/assets/cc-api-integration.md).
+* La funzionalità di automazione dei contenuti consente [!DNL Experience Manager Assets] utilizzare il [!DNL Adobe Creative Cloud] API per automatizzare la produzione delle risorse su larga scala. Migliora la velocità dei contenuti riducendo notevolmente il tempo impiegato e le iterazioni necessarie per creare varianti della stessa risorsa. La funzionalità non richiede alcuna programmazione e funziona dall’interno di DAM. Consulta [generare varianti di risorse tramite l’integrazione Creative Cloud](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] include [!DNL Document Cloud] Visualizzatore PDF per visualizzare in anteprima i documenti PDF in modo nativo. Questa funzione consente agli utenti di visualizzare in anteprima i file di PDF con più pagine senza alcuna elaborazione o conversione di file. Questa funzione migliora la parità con [!DNL Experience Manager] 6.5. I controlli disponibili nel visualizzatore includono lo zoom, la navigazione alle pagine, la disancora dei controlli e la visualizzazione a schermo intero. Gli utenti possono inoltre visualizzare in anteprima e passare a pagine e segnalibri. Sono supportati i commenti sul file stesso e in una versione futura verranno aggiunti commenti e annotazioni sul contenuto del file PDF.
+* [!DNL Experience Manager Assets] include [!DNL Document Cloud] Visualizzatore PDF per visualizzare in anteprima i documenti PDF in modo nativo. Questa funzione consente agli utenti di visualizzare in anteprima i file di PDF con più pagine senza alcuna elaborazione o conversione di file. Questa funzione migliora la parità con [!DNL Experience Manager] 6.5. I controlli disponibili nel visualizzatore includono lo zoom, la navigazione alle pagine, la disancora dei controlli e la visualizzazione a schermo intero. Gli utenti possono inoltre visualizzare in anteprima e passare a pagine e segnalibri. Sono supportati i commenti sul file stesso. In una versione futura verranno aggiunti commenti e annotazioni sul contenuto del file PDF.
 
-   ![Anteprima dei file PDF in [!DNL Experience Manager] utilizzo di PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
+  ![Anteprima dei file PDF in [!DNL Experience Manager] utilizzo di PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
 
 * La funzionalità di download tramite condivisione di collegamenti utilizza download asincroni, più veloci. Consulta [Scaricare le risorse condivise tramite la condivisione di collegamenti](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![Casella in entrata download](/help/assets/assets/download-inbox.png)
+  ![Casella in entrata download](/help/assets/assets/download-inbox.png)
 
 * Le impostazioni di visualizzazione sono migliorate e consentono agli utenti di scegliere una vista e un parametro di ordinamento predefiniti.
 
-   ![Impostare la visualizzazione predefinita in [!UICONTROL Impostazioni vista]](/help/assets/assets/view-settings-for-defaults.png)
+  ![Impostare la visualizzazione predefinita in [!UICONTROL Impostazioni vista]](/help/assets/assets/view-settings-for-defaults.png)
 
 * Gli utenti possono cercare e filtrare le cartelle in base ai predicati delle proprietà.
 
-   ![Filtrare le cartelle di ricerca utilizzando i predicati di ricerca](/help/assets/assets/search-folders-via-predicates.png)
+  ![Filtrare le cartelle di ricerca utilizzando i predicati di ricerca](/help/assets/assets/search-folders-via-predicates.png)
 
 ### Nuove funzioni disponibili in [!DNL Assets] canale prerelease {#assets-prerelease-features}
 

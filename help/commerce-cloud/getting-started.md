@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 29%
+source-wordcount: '1092'
+ht-degree: 28%
 
 ---
 
@@ -28,7 +28,7 @@ L’onboarding per AEM Commerce as a Cloud Service è un processo in due fasi:
 
 Il primo passaggio di onboarding è effettuato per Adobe. Per maggiori informazioni su prezzi e provisioning, contatta il tuo rappresentante commerciale.
 
-Una volta effettuato il provisioning con il componente aggiuntivo CIF, questo verrà applicato a tutti i programmi Cloud Manager esistenti. Se non disponi di un programma Cloud Manager, dovrai crearne uno nuovo. Per ulteriori informazioni, consulta [Configurare il programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
+Dopo il provisioning con il componente aggiuntivo CIF, questo viene applicato a tutti i programmi Cloud Manager esistenti. Se non disponi di un programma Cloud Manager, dovrai crearne uno nuovo. Per ulteriori informazioni, consulta [Configurare il programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
 Il secondo passaggio è autonomo per ogni ambiente AEM as a Cloud Service. Dopo il provisioning iniziale del componente aggiuntivo CIF, è necessario effettuare alcune configurazioni aggiuntive.
 
@@ -118,19 +118,19 @@ Questa configurazione può essere regolata per il progetto tramite la configuraz
 È possibile configurare le seguenti proprietà:
 
 - Client GraphQL: seleziona il client GraphQL configurato per la comunicazione back-end commerce. In genere, questa impostazione deve rimanere quella predefinita.
-- Visualizzazione store: l&#39;identificatore della visualizzazione store. Se vuota, verrà utilizzata la vista archivio predefinita.
+- Visualizzazione store: l&#39;identificatore della visualizzazione store. Se vuota, viene utilizzata la visualizzazione predefinita dello store.
 - Percorso proxy GraphQL: il percorso URL che il proxy GraphQL dell’AEM utilizza per inoltrare le richieste all’endpoint GraphQL backend di Commerce.
-   >[!NOTE]
-   >
-   > Nella maggior parte delle impostazioni il valore predefinito `/api/graphql` non deve essere modificato. Questa impostazione può essere modificata solo da una configurazione avanzata che non utilizza il proxy GraphQL fornito.
+  >[!NOTE]
+  >
+  > Nella maggior parte delle impostazioni il valore predefinito `/api/graphql` non deve essere modificato. Questa impostazione può essere modificata solo da una configurazione avanzata che non utilizza il proxy GraphQL fornito.
 - Abilita supporto UID catalogo: abilita il supporto per UID invece dell’ID nelle chiamate GraphQL di back-end per e-commerce.
-   >[!NOTE]
-   >
-   > Il supporto per gli UID è stato introdotto in Adobe Commerce 2.4.2. Abilita questa opzione solo se il backend di e-commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
+  >[!NOTE]
+  >
+  > Il supporto per gli UID è stato introdotto in Adobe Commerce 2.4.2. Abilita questa opzione solo se il backend di e-commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
 - Identificatore categoria radice catalogo: l’identificatore (UID o ID) della radice del catalogo dell’archivio
-   >[!CAUTION]
-   >
-   > A partire dalla versione 2.0.0 dei componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Se il progetto utilizza i componenti core CIF versione 2.0.0, devi abilitare il supporto UID del catalogo e utilizzare un UID di categoria valido come &quot;Identificatore della categoria principale del catalogo&quot;.
+  >[!CAUTION]
+  >
+  > A partire dalla versione 2.0.0 dei componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Se il progetto utilizza i componenti core CIF versione 2.0.0, devi abilitare il supporto UID del catalogo e utilizzare un UID di categoria valido come &quot;Identificatore della categoria principale del catalogo&quot;.
 
 La configurazione mostrata sopra è a scopo di riferimento. I progetti devono fornire le proprie configurazioni.
 

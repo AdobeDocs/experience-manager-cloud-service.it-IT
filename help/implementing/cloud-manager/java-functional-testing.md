@@ -2,10 +2,10 @@
 title: Test funzionali Java
 description: Scopri come scrivere test funzionali Java per AEM as a Cloud Service
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: cda1f51c89a98cfb75d63f8bd9b54e76ee745aa7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 100%
+source-wordcount: '848'
+ht-degree: 94%
 
 ---
 
@@ -91,7 +91,7 @@ Per ulteriori informazioni, consulta l’[`aem-testing-clients` archivio di GitH
 
 ### Prerequisiti {#prerequisites}
 
-1. I test in Cloud Manager verranno eseguiti utilizzando un utente amministratore tecnico.
+1. I test in Cloud Manager vengono eseguiti utilizzando un utente amministratore tecnico.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Per ulteriori informazioni, consulta l’[`aem-testing-clients` archivio di GitH
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | Quantità di tempo CPU riservato per ogni esecuzione di test |
 | Memoria | 0,5 Gi | Quantità di memoria allocata al test, valore in gibibyte |
-| Timeout | 30 min | Durata dopo la quale il test verrà terminato. |
+| Timeout | 30 min | La durata dopo la quale il test viene terminato. |
 | Durata consigliata | 15 min | Si consiglia di scrivere i test in modo che non richiedano più tempo di questo valore. |
 
 >[!NOTE]
@@ -120,7 +120,7 @@ Prima di attivare i test funzionali in una pipeline di Cloud Manager, si consigl
 
 Poiché le classi di test sono test JUnit, possono essere eseguite da IDE Java principali come Eclipse, IntelliJ e NetBeans. Poiché i test funzionali del prodotto e i test funzionali personalizzati sono basati sulla stessa tecnologia, entrambi possono essere eseguiti a livello locale copiando i test del prodotto nei test personalizzati.
 
-Tuttavia, durante l’esecuzione di questi test, è necessario impostare diverse proprietà di sistema previste dalla libreria `aem-testing-clients` (e dalla libreria sottostante Sling Testing Client).
+Tuttavia, durante l’esecuzione di questi test, è necessario impostare diverse proprietà di sistema previste da `aem-testing-clients` (e la libreria sottostante Sling Testing Client).
 
 Le proprietà del sistema sono indicate di seguito.
 
@@ -130,11 +130,11 @@ Le proprietà del sistema sono indicate di seguito.
 | `sling.it.instance.url.1` | Deve essere impostato sull’URL dell’ambiente Author | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | Modalità di esecuzione della prima istanza; deve essere impostata su `author` | `author` |
 | `sling.it.instance.adminUser.1` | Deve essere impostata sull’utente amministratore dell’ambiente Author. | `admin` |
-| `sling.it.instance.adminPassword.1` | Deve essere impostata sulla password dell’amministratore dell’ambiente Author. |  |
+| `sling.it.instance.adminPassword.1` | Deve essere impostata sulla password dell’amministratore dell’ambiente Author. |                         |
 | `sling.it.instance.url.2` | Deve essere impostata sull’URL dell’ambiente Publish | `http://localhost:4503` |
 | `sling.it.instance.runmode.2` | Modalità di esecuzione della seconda istanza; deve essere impostata su `publish` | `publish` |
 | `sling.it.instance.adminUser.2` | Deve essere impostata sull’utente amministratore dell’ambiente Publish. | `admin` |
-| `sling.it.instance.adminPassword.2` | Deve essere impostata sulla password dell’amministratore dell’ambiente Publish. |  |
+| `sling.it.instance.adminPassword.2` | Deve essere impostata sulla password dell’amministratore dell’ambiente Publish. |                         |
 
 
 

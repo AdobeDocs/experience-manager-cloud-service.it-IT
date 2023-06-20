@@ -4,10 +4,10 @@ description: Scopri le best practice compilate dai team di progettazione e consu
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 100%
+source-wordcount: '1429'
+ht-degree: 95%
 
 ---
 
@@ -29,8 +29,8 @@ Tieni presente che una Live Copy può essere creata utilizzando [pagine normali]
 
 I vantaggi aggiuntivi dell’utilizzo di una configurazione blueprint sono i seguenti:
 
-* Consente all&#39;autore di utilizzare il **Rollout** su una blueprint al fine di inviare in modo esplicito le modifiche alle Live Copy che la ereditano.
-* Consente all&#39;autore di utilizzare **Crea sito** per selezionare facilmente le lingue e configurare la struttura della Live Copy.
+* Consenti all&#39;autore di utilizzare **Rollout** su una blueprint per inviare in modo esplicito le modifiche alle Live Copy che ereditano da questa blueprint.
+* Consenti all’autore di utilizzare **Crea sito** per selezionare facilmente le lingue e configurare la struttura della Live Copy.
 * Definisci una configurazione di rollout predefinita per le Live Copy che hanno una relazione con la blueprint.
 
 Nel caso in cui non venga fatto riferimento a una configurazione blueprint, i rollout possono essere avviati solo dalle Live Copy stesse, essenzialmente richiamando il contenuto dal sorgente.
@@ -48,7 +48,7 @@ In generale, la regola di rollout in MSM per quanto riguarda la sincronizzazione
 * I componenti vengono implementati per sincronizzare tutte le risorse contenute nella blueprint.
 * I contenitori sincronizzano solo la risorsa corrente.
 
-Ciò significa che i componenti sono trattati come un aggregato e in un rollout il componente stesso e tutti i suoi figli vengono sostituiti con quelli nei progetti. Ciò significa che se una risorsa viene aggiunta localmente a tale componente, andrà persa per il contenuto della blueprint al momento del rollout.
+Ciò significa che i componenti sono trattati come un aggregato e in un rollout il componente stesso e tutti i suoi figli vengono sostituiti con quelli nei progetti. Ciò significa che se una risorsa viene aggiunta localmente a tale componente, viene persa per il contenuto della blueprint al momento del rollout.
 
 Per supportare la nidificazione dei componenti in modo che i componenti aggiunti localmente siano mantenuti in un rollout, il componente deve essere dichiarato come contenitore.
 

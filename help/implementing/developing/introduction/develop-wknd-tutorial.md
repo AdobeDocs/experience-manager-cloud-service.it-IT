@@ -2,10 +2,10 @@
 title: Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND
 description: Nessuna esperienza nello sviluppo in AEM? Hai bisogno di un aggiornamento sulle best practice? Puoi cominciare da qui! L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno sviluppatore che non conosce AEM come implementare un sito web in AEM utilizzando gli standard e le tecnologie più recenti.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 100%
+source-wordcount: '241'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno
 
 ## Concetti di base {#core-concepts}
 
-L’implementazione dell&#39;esercitazione sfrutta molte funzioni avanzate di AEM. Il sito verrà implementato utilizzando:
+L’implementazione del tutorial utilizza molte potenti funzioni dell’AEM. Il sito viene implementato utilizzando:
 
 * [Archetipo di progetto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
 * [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)

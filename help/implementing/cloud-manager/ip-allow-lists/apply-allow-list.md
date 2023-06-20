@@ -2,10 +2,10 @@
 title: Applicazione e rimozione degli elenchi IP consentiti
 description: Scopri come applicare e rimuovere gli elenchi IP consentiti dagli ambienti.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 100%
+source-wordcount: '269'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ L’utente con il ruolo **Proprietario business** o **Responsabile dell’implem
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 1. Dalla schermata **Ambienti**, accedi alla pagina dei dettagli dell’ambiente specifico, quindi accedi alla tabella **Elenco IP consentiti**.
 1. Seleziona l’elenco IP consentiti e il servizio Author o Publish che desideri applicare con i campi nella parte superiore della tabella.
-   * Per poter applicare l’elenco IP consentiti, l’elenco deve esistere in Cloud Manager.
+   * Per applicarlo, l’Elenco consentiti IP deve esistere in Cloud Manager.
 1. Fai clic su **Applica** e conferma quanto inserito.
 
 ## Rimozione degli elenchi Consentiti {#un-applying}

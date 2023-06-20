@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina
 description: Imposta le proprietà richieste per una pagina
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
-workflow-type: ht
-source-wordcount: '2363'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '2357'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Marchio**
 
-   Applica un’identità del brand coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l’utilizzo del Componente Pagina dalla versione 2.14.0 o successiva di [Componenti Core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+  Applica un’identità del brand coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l’utilizzo del Componente Pagina dalla versione 2.14.0 o successiva di [Componenti Core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 
    * **Brand Slug**
 
@@ -57,42 +57,40 @@ Le proprietà sono distribuite su più schede.
 
 * **Ora di attivazione/disattivazione**
 
-   >[!NOTE]
-   >
-   > Vedi [Tempi di attivazione e disattivazione - Configurazione del trigger](/help/operations/replication.md#on-and-off-times-trigger-configuration) per informazioni dettagliate su come configurare la replica automatica correlata.
+  >[!NOTE]
+  >
+  > Vedi [Tempi di attivazione e disattivazione - Configurazione del trigger](/help/operations/replication.md#on-and-off-times-trigger-configuration) per informazioni dettagliate su come configurare la replica automatica correlata.
 
-   >[!NOTE]
-   >Se l&#39;**Ora di attivazione** o l&#39;**Ora di disattivazione** è nel passato e la replica automatica è configurata, l&#39;azione pertinente verrà attivata immediatamente.
+  >[!NOTE]
+  >Se l&#39;**Ora di attivazione** o l&#39;**Ora di disattivazione** è nel passato e la replica automatica è configurata, l&#39;azione pertinente verrà attivata immediatamente.
 
    * **Ora di attivazione**: la data e l’ora in cui la pagina pubblicata verrà resa visibile (renderizzata) nell’ambiente di pubblicazione. La pagina deve essere pubblicata, manualmente o tramite replica automatica preconfigurata.
 
       * Se già [pubblicata (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) questa pagina rimarrà inattiva (nascosta) fino al rendering alla data e all’ora specificate.
       * Se non è pubblicata, ma è configurata per la replica automatica, la pagina verrà pubblicata automaticamente e quindi sottoposta a rendering al momento specificato.
       * Se non è pubblicata e non è configurata per la replica automatica, la pagina non verrà pubblicata automaticamente, quindi viene visualizzato un errore 404 quando si tenta di accedere alla pagina.
+
    * **Ora di disattivazione**: simile e spesso utilizzata in combinazione con l&#39;**Ora di attivazione**, definisce l’ora in cui la pagina pubblicata verrà nascosta nell’ambiente di pubblicazione.
 
    * Lascia questi campi (**Ora di attivazione** e **Ora di disattivazione**) vuoti per le pagine da pubblicare immediatamente e disponibili nell’ambiente di pubblicazione fino a quando non vengono disattivate (lo scenario più consueto).
-
 
 * **URL personalizzato**
 
    * Permette di inserire un URL personalizzato per questa pagina, che può consentirti di avere un URL più breve e/o più significativo.
    * Ad esempio, se l’URL personalizzato è impostato su `welcome` per la pagina identificata dal percorso `/v1.0/startpage` del sito web `http://example.com`, `http://example.com/welcome` sarà l’URL personalizzato di `http://example.com/content/v1.0/startpage`.
 
-   >[!CAUTION]
-   >
-   >Gli URL personalizzati:
-   >
-   >* devono essere univoci, quindi accertati che il valore scelto non sia già utilizzato per un’altra pagina;
-   >* non supportano le espressioni regolari;
-   >* non devono essere impostati su una pagina esistente.
-
+  >[!CAUTION]
+  >
+  >Gli URL personalizzati:
+  >
+  >* devono essere univoci, quindi accertati che il valore scelto non sia già utilizzato per un’altra pagina;
+  >* non supportano le espressioni regolari;
+  >* non devono essere impostati su una pagina esistente.
 
    * **Aggiungi**: tocca o fai clic per visualizzare un campo e definire un URL personalizzato per la pagina.
       * Tocca o fai di nuovo clic per aggiungere più elementi.
       * Tocca o fai clic sull&#39;icona **Rimuovi** per eliminare il Vanity URL.
    * **Reindirizza Vanity URL**: specifica se la pagina deve utilizzare il Vanity URL.
-
 
 ### Avanzate  {#advanced}
 
@@ -123,9 +121,9 @@ Le proprietà sono distribuite su più schede.
 
    * **Attiva**: attiva l’uso dell’autenticazione per accedere alla pagina
 
-      >[!NOTE]
-      >
-      >Nella scheda **[Autorizzazioni](#permissions)** è possibile definire gruppi utenti chiusi per la pagina.
+     >[!NOTE]
+     >
+     >Nella scheda **[Autorizzazioni](#permissions)** è possibile definire gruppi utenti chiusi per la pagina.
 
    * **Pagina di accesso**: indica la pagina da utilizzare per l’accesso
 
@@ -139,9 +137,9 @@ Le proprietà sono distribuite su più schede.
 
    * **Tag robot**: seleziona i tag robot per controllare il comportamento dei crawler dei motori di ricerca.
 
-      >[!NOTE]
-      >
-      >Alcune delle opzioni sono in conflitto tra loro. In caso di conflitto, l’opzione più permissiva ha la precedenza.
+     >[!NOTE]
+     >
+     >Alcune delle opzioni sono in conflitto tra loro. In caso di conflitto, l’opzione più permissiva ha la precedenza.
 
    * **Genera mappa del sito**: se selezionata, per questa pagina verrà generato un file sitemap.xml con i relativi discendenti
 
@@ -149,11 +147,11 @@ Le proprietà sono distribuite su più schede.
 
 * **Immagine in primo piano**
 
-   Seleziona e configura l’immagine da presentare. Viene utilizzata nei componenti che fanno riferimento alla pagina; ad esempio teaser, elenchi di pagine e così via.
+  Seleziona e configura l’immagine da presentare. Viene utilizzata nei componenti che fanno riferimento alla pagina; ad esempio teaser, elenchi di pagine e così via.
 
    * **Immagine**
 
-      Si può scegliere **Seleziona** una risorsa oppure cerca un file da caricare, quindi **Modifica** oppure **Cancella**.
+     Si può scegliere **Seleziona** una risorsa oppure cerca un file da caricare, quindi **Modifica** oppure **Cancella**.
 
    * **Testo alternativo**: un testo utilizzato per esprimere il significato e/o la funzione dell’immagine; ad esempio, per essere utilizzato dalle utilità per la lettura dello schermo.
 
@@ -161,7 +159,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Miniatura**
 
-   Configurare la miniatura della pagina
+  Configurare la miniatura della pagina
 
    * **Genera anteprima**: genera un’anteprima della pagina da usare come miniatura
    * **Carica immagine**: consente di caricare un’immagine da usare come miniatura
@@ -184,8 +182,9 @@ Le proprietà sono distribuite su più schede.
 * **Configurazione targeting**
 
    * **Marchio**: seleziona un [marchio per specificare l’ambito del targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).
-   >[!NOTE]
-   >Questa opzione richiede che l’account utente appartenga al gruppo `Target Administrators`.
+
+  >[!NOTE]
+  >Questa opzione richiede che l’account utente appartenga al gruppo `Target Administrators`.
 
 ### Autorizzazioni  {#permissions}
 
@@ -201,7 +200,7 @@ Questa scheda è visibile solo per le pagine che fungono da blueprint. Le bluepr
 
 * **Live Copy attuali**: elenca le pagine basate su (ad esempio, Live Copy di) questa pagina blueprint
 
-* **Configurazioni di Rollout**: controlla le circostanze in cui le modifiche verranno propagate alla Live Copy
+* **Configurazioni rollout** - Controlla le circostanze in cui le modifiche vengono propagate alla Live Copy
 
 ### Live Copy  {#live-copy}
 
@@ -224,7 +223,7 @@ Questa scheda è visibile solo per le pagine configurate come Live Copy. Come pe
 
    * **Ereditarietà della Live Copy**: se selezionato, la configurazione Live Copy ha effetto su tutti gli elementi figli
    * **Eredita configurazioni di rollout dal genitore**: se selezionato, la configurazione di rollout viene ereditata dalla pagina genitore
-   * **Scegli configurazione di rollout**: definisce le circostanze in cui le modifiche verranno propagate dalla Blueprint e disponibili solo quando **Eredita configurazioni di rollout dal genitore** non è selezionato
+   * **Scegli configurazione di rollout** - Definisce le circostanze in cui le modifiche vengono propagate dalla Blueprint e sono disponibili solo quando **Eredita configurazioni di rollout dal genitore** non è selezionato
 
 ### Anteprima {#preview}
 
@@ -277,7 +276,7 @@ Tocca o fai clic su **Proprietà** per definire le proprietà di pagina:
 1. Seleziona l’opzione **Proprietà** per la pagina desiderata, utilizzando:
    * [Azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * Le proprietà di pagina vengono visualizzate utilizzando le relative schede.
+   * Le proprietà di pagina vengono visualizzate utilizzando le schede appropriate.
 1. Visualizza o modifica le proprietà a seconda delle esigenze.
 1. Quindi, seleziona **Salva** per salvare le modifiche e **Chiudi** per tornare alla console.
 
@@ -313,7 +312,7 @@ Puoi selezionare più pagine per la modifica in serie utilizzando diversi metodi
 * Quando esplori la console **Sites**
 * Dopo l’utilizzo di **Ricerca** per individuare un set di pagine
 
-Dopo aver selezionato le pagine e aver toccato o fatto clic sull’opzione **Proprietà**, vengono visualizzate le proprietà per la modifica in serie:
+Dopo aver selezionato le pagine e aver toccato o fatto clic su **Opzione Proprietà**, vengono visualizzate le proprietà per la modifica in serie:
 
 ![Modifica in serie delle proprietà di pagina](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -342,6 +341,6 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
 * **Modifica**
 
    * Puoi aggiornare i valori nei campi disponibili.
-      * I nuovi valori verranno applicati a tutte le pagine selezionate quando si seleziona **Fine**.
+      * I nuovi valori vengono applicati a tutte le pagine selezionate quando si seleziona **Fine**.
       * Quando il campo è multivalore (ad esempio Tag), è possibile aggiungere un nuovo valore o rimuovere un valore comune.
-   * I campi in comune ma con valori diversi nelle varie pagine saranno contraddistinti da uno speciale valore, ad esempio `<Mixed Entries>`.
+   * I campi in comune ma con valori diversi nelle varie pagine sono contrassegnati da un valore speciale, ad esempio il testo `<Mixed Entries>`.

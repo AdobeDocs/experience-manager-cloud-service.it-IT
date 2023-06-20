@@ -2,9 +2,9 @@
 title: Limitazioni per l’editor
 description: L’editor nell’interfaccia touch utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell’utilizzo dell’editor che per gli sviluppatori.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 10%
 
 ---

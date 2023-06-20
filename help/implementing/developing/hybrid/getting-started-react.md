@@ -2,10 +2,10 @@
 title: Guida introduttiva alle SPA in AEM usando React
 description: Questo articolo presenta un esempio di applicazione per l’SPA, spiega come viene creata e come iniziare a utilizzare il proprio SPA in modo rapido utilizzando il framework React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 10%
+source-wordcount: '1142'
+ht-degree: 8%
 
 ---
 
@@ -39,7 +39,7 @@ Questo documento illustra la struttura di un SPA semplificato creato utilizzando
 
 ## Dipendenze, configurazione e generazione {#dependencies-configuration-and-building}
 
-Oltre alla prevista dipendenza da React, l&#39;SPA campione può sfruttare librerie aggiuntive per rendere più efficiente la creazione dell&#39;SPA.
+Oltre alla prevista dipendenza da React, l&#39;SPA di esempio può utilizzare librerie aggiuntive per rendere più efficiente la creazione dell&#39;SPA.
 
 ### Dipendenze {#dependencies}
 
@@ -97,7 +97,7 @@ module.exports = {
 
 ### Creazione di {#building}
 
-Effettivamente la creazione dell’app sfrutta [Webpack](https://webpack.js.org/) oltre ad aem-clientlib-generator per la creazione automatica di librerie client. Pertanto, il comando build sarà simile al seguente:
+La creazione dell’app utilizza [Webpack](https://webpack.js.org/) oltre ad aem-clientlib-generator per la creazione automatica di librerie client. Pertanto, il comando build sarà simile al seguente:
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -105,7 +105,7 @@ Una volta generato, il pacchetto può essere caricato in un’istanza AEM.
 
 ### Archetipo progetto AEM {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+Qualsiasi progetto AEM deve utilizzare [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta i progetti SPA utilizzando React o Angular e utilizza l’SDK dell’SPA.
 
 ## Struttura dell&#39;applicazione {#application-structure}
 
@@ -134,7 +134,7 @@ ReactDOM.render(
 });
 ```
 
-La funzione principale di `index.js` è sfruttare `ReactDOM.render` per determinare la posizione nel DOM in cui inserire l’applicazione.
+La funzione principale di `index.js` è utilizzare il `ReactDOM.render` per determinare la posizione nel DOM in cui inserire l’applicazione.
 
 Si tratta di un utilizzo standard di questa funzione, non specifico di questa app di esempio.
 

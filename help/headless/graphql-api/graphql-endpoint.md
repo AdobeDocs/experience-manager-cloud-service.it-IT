@@ -3,10 +3,10 @@ title: Gestire gli endpoint GraphQL in AEM
 description: Scopri come gestire gli endpoint GraphQL in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Esistono due tipi di endpoint in AEM:
 >
 >L’Editor frammento di contenuto può consentire a un frammento di contenuto di una configurazione Sites di fare riferimento a un frammento di contenuto di un’altra configurazione Sites (tramite criteri).
 >
->In questo caso non tutti i contenuti saranno recuperabili utilizzando un endpoint specifico per la configurazione Sites.
+>In questo caso, non tutto il contenuto è recuperabile utilizzando un endpoint specifico per la configurazione di Sites.
 >
 >L’autore del contenuto deve controllare questo scenario; ad esempio, potrebbe essere utile inserire modelli per frammenti di contenuto condivisi nella configurazione globale di Sites.
 
@@ -71,7 +71,6 @@ Per abilitare l’endpoint corrispondente:
    >Nella finestra di dialogo viene visualizzato la seguente avvertenza:
    >
    >* *Se non vengono gestiti correttamente, gli endpoint GraphQL possono causare problemi di prestazioni e sicurezza dei dati. Dopo aver creato un endpoint, assicurati di impostare le autorizzazioni appropriate.*
-
 
 1. Per confermare, fai clic su **Crea**.
 1. La finestra di dialogo **Passaggi successivi** fornisce un collegamento diretto alla console Sicurezza per verificare che l’endpoint appena creato disponga delle autorizzazioni appropriate.

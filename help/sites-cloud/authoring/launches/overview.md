@@ -2,10 +2,10 @@
 title: Lanci
 description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di apportare modifiche pronte per la pubblicazione futura, mantenendo le pagine correnti
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 52%
+source-wordcount: '906'
+ht-degree: 50%
 
 ---
 
@@ -51,7 +51,7 @@ I lanci consentono di:
    * Le pagine sorgente di primo livello sono note come **Produzione**.
       * Le pagine sorgente possono essere ricavate da più rami (separati).
 
-   ![Ordine di esercizio dei lanci](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![Ordine di esercizio dei lanci](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * Modifica la configurazione del lancio:
    * Aggiungi o rimuovi pagine e/o rami da/verso il lancio.
@@ -65,22 +65,22 @@ I lanci consentono di:
       * Il campo **Data** **lancio**(**Live**): può essere impostato durante la creazione o la modifica di un lancio.
       * Il **Produzione pronta** flag: può essere impostato solo durante la modifica di un lancio.
       * Se il **Produzione pronta** è impostato, il lancio verrà promosso automaticamente alle pagine di produzione nella **Launch**(**Live**) **data**. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
-         Se la data non è stata impostata, il flag non ha alcun effetto.
+        Se la data non è stata impostata, il flag non ha alcun effetto.
 * Aggiorna parallelamente la pagina sorgente e la pagina di lancio:
    * Le modifiche apportate alle pagine sorgenti vengono automaticamente implementate nella copia lancio (se impostate con ereditarietà; ovvero come Live Copy).
    * Le modifiche apportate alla copia di lancio possono essere effettuate senza interrompere gli aggiornamenti automatici o le pagine sorgenti.
 
-   ![Azioni parallele](/help/sites-cloud/authoring/assets/launches-parallel.png)
+  ![Azioni parallele](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [Creare un lancio nidificato](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - un lancio all’interno di un lancio:
    * L’origine è un lancio esistente.
    * È possibile [promuovere un lancio nidificato](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) a qualsiasi destinazione; può trattarsi di un lancio principale o delle pagine sorgente di livello superiore (Produzione).
 
-   ![Un lancio nidificato](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![Un lancio nidificato](/help/sites-cloud/authoring/assets/launches-nested.png)
 
-   >[!CAUTION]
-   >
-   >L’eliminazione del lancio rimuove il lancio stesso e tutti i lanci nidificati discendenti.
+  >[!CAUTION]
+  >
+  >L’eliminazione del lancio rimuove il lancio stesso e tutti i lanci nidificati discendenti.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ I lanci consentono di:
 
    ![Riferimenti di Launches nella console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Tocca o fai clic sul lancio appropriato per visualizzare l&#39;elenco delle azioni possibili:
+1. Tocca o fai clic sul lancio appropriato per visualizzare l’elenco delle azioni possibili:
 
    ![Azioni da intraprendere su Launches nella console Sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
@@ -108,11 +108,11 @@ La console Lanci fornisce una panoramica dei lanci e consente di eseguire azioni
 
 * **Console Launches** nella parte inferiore della sezione **Launches** della barra **Riferimenti** quando navighi nel contenuto sorgente nella console Sites.
 
-   ![Console Launches in Riferimenti dei lanci nella console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![Console Launches in Riferimenti dei lanci nella console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * Il pulsante **Launches** in alto a destra, quando navighi nel contenuto di un lancio nella console Sites:
 
-   ![Opzione Launches nella console Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![Opzione Launches nella console Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * O direttamente; ad esempio, con:
-   `https://<host>:<port>/libs/launches/content/launches.html`
+  `https://<host>:<port>/libs/launches/content/launches.html`

@@ -2,9 +2,9 @@
 title: Utilizzo di librerie lato client su AEM as a Cloud Service
 description: AEM fornisce cartelle di librerie lato client, che consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2562'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Le cartelle delle librerie client contengono i seguenti elementi:
 
 ## Creazione di cartelle di librerie lato client {#creating-clientlib-folders}
 
-Le librerie client devono trovarsi in `/apps`. Questo al fine di isolare meglio il codice dal contenuto e dalla configurazione.
+Le librerie client devono trovarsi in `/apps`. Questa regola è necessaria per isolare meglio il codice dal contenuto e dalla configurazione.
 
 Per le librerie client in `/apps` per essere accessibile, viene utilizzato un servlet proxy. Gli ACL vengono ancora applicati nella cartella della libreria client, ma il servlet consente la lettura del contenuto tramite `/etc.clientlibs/` se `allowProxy` proprietà impostata su `true`.
 
@@ -135,7 +135,7 @@ This is possible. Still need detail.
 
 ## Confronto tra le librerie client di Author e Publish {#clientlibs-author-publish}
 
-La maggior parte delle clientlibs sarà richiesta nell’istanza AEM Publish. In altre parole, lo scopo della maggior parte delle clientlibs è quello di produrre l’esperienza dell’utente finale del contenuto. Per clientlibs sulle istanze di pubblicazione, [strumenti di sviluppo front-end](#fed-for-aemaacs) utilizzabile e implementabile tramite [cartelle della libreria client come descritto in precedenza.](#creating-clientlib-folders)
+La maggior parte delle clientlibs è richiesta nell’istanza di pubblicazione dell’AEM. In altre parole, lo scopo della maggior parte delle clientlibs è quello di produrre l’esperienza dell’utente finale del contenuto. Per clientlibs sulle istanze di pubblicazione, [strumenti di sviluppo front-end](#fed-for-aemaacs) utilizzabile e implementabile tramite [cartelle della libreria client come descritto in precedenza.](#creating-clientlib-folders)
 
 Tuttavia, in alcuni casi le librerie client possono essere necessarie per personalizzare l’esperienza di authoring. Ad esempio, per personalizzare una finestra di dialogo potrebbe essere necessario distribuire piccoli bit di CSS o JS nell’istanza di authoring dell’AEM.
 
@@ -185,7 +185,7 @@ Esistono diverse altre funzioni supportate dalle cartelle delle librerie client 
 Altre proprietà della cartella includono consentono il controllo delle dipendenze e degli incorporamenti, ma in genere non sono più necessari e il loro utilizzo è sconsigliato:
 
 * `dependencies`: questo è un elenco di altre categorie di librerie client da cui dipende la cartella della libreria. Ad esempio, dato due `cq:ClientLibraryFolder` nodi `F` e `G`, se un file in `F` richiede un altro file in `G` per funzionare correttamente, almeno uno dei `categories` di `G` deve essere tra i `dependencies` di `F`.
-* `embed`: utilizzato per incorporare il codice da altre librerie. Se nodo `F` incorpora nodi `G` e `H`, il HTML risultante sarà una concatenazione di contenuto dai nodi `G` e `H`.
+* `embed`: utilizzato per incorporare il codice da altre librerie. Se nodo `F` incorpora nodi `G` e `H`, il HTML risultante è una concatenazione di contenuto dai nodi `G` e `H`.
 
 ### Collegamento alle dipendenze {#linking-to-dependencies}
 

@@ -2,10 +2,10 @@
 title: Utilizzo di Git con Cloud Manager
 description: Scopri come utilizzare gli archivi Git di Cloud Manager e come integrare un archivio Git personalizzato e gestito dal cliente on-premise con Cloud Manager.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 100%
+source-wordcount: '316'
+ht-degree: 73%
 
 ---
 
@@ -45,7 +45,7 @@ In questo video scoprirai le strategie di base per la ramificazione.
 
 ## Sviluppo dei rami delle funzioni {#feature-development}
 
-Un ramo della funzione serve per isolare le modifiche apportate al codice in un archivio Git gestito dal cliente e sincronizzarle con l’archivio Git di Cloud Manager per utilizzare una pipeline non di produzione a scopi di test di qualità del codice e di convalida.
+Utilizza un ramo della funzione per isolare le modifiche al codice in un archivio Git gestito dal cliente e sincronizzalo con l’archivio Git di Cloud Manager per utilizzare una pipeline non di produzione per i test di qualità del codice e convalida.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 

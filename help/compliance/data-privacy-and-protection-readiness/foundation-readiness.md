@@ -2,10 +2,10 @@
 title: Normative sulla protezione dei dati e la privacy dei dati - Preparazione di Adobe Experience Manager as a Cloud Service Foundation
 description: Scopri il supporto di Adobe Experience Manager as a Cloud Service Foundation per le varie normative su privacy e protezione dei dati, incluso il Regolamento generale sulla protezione dei dati (GDPR) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi all’implementazione di un nuovo progetto AEM as a Cloud Service.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 100%
+source-wordcount: '504'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ A livello di AEM Foundation, i dati personali memorizzati vengono mantenuti nel 
 
 ### API HTTP {#http-api}
 
-Come accennato, Adobe fornisce API per l’accesso ai dati utente, al fine di facilitare l’automazione. Esistono diversi tipi di API che puoi utilizzare:
+Come accennato, Adobe fornisce API per accedere ai dati utente, per facilitare l’automazione. Esistono diversi tipi di API che puoi utilizzare:
 
 **API UserProperties**
 

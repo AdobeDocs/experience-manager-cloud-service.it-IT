@@ -3,9 +3,9 @@ title: Generazione dei token di accesso per le API lato server (legacy)
 description: Scopri come facilitare la comunicazione tra un server di terze parti e AEM as a Cloud Service generando un token JWT sicuro
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,7 @@ Gli sviluppatori devono testare utilizzando un’istanza di sviluppo della loro 
 Consulta la [Documentazione sulle linee guida per sviluppatori](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) per informazioni sulle autorizzazioni necessarie per utilizzare la console per sviluppatori AEM as a Cloud Service.
 
 >[!NOTE]
+>
 Il token di accesso per lo sviluppo locale è valido per un massimo di 24 ore, al termine delle quali deve essere rigenerato con lo stesso metodo.
 
 Gli sviluppatori possono utilizzare questo token per effettuare chiamate dall’applicazione di test non AEM a un ambiente as a Cloud Service AEM. In genere, lo sviluppatore utilizza questo token con l’applicazione non AEM sul proprio laptop. Inoltre, AEM as a Cloud è in genere un ambiente non di produzione.
@@ -147,9 +148,10 @@ Per impostazione predefinita, le credenziali sull&#39;as a Cloud Service AEM sca
 
 ![Aggiornamento credenziali](assets/credential-refresh.png)
 
-Dopo aver premuto il pulsante, verrà generato un nuovo set di credenziali. Puoi aggiornare l’archiviazione segreta con le nuove credenziali e verificare che funzionino correttamente.
+Dopo aver premuto il pulsante, viene generato un nuovo set di credenziali. Puoi aggiornare l’archiviazione segreta con le nuove credenziali e verificare che funzionino correttamente.
 
 >[!NOTE]
+>
 Dopo aver fatto clic su **Aggiorna credenziali servizio** , le vecchie credenziali rimangono registrate fino alla scadenza, ma solo il set più recente è disponibile per essere visualizzato da Console sviluppatori in qualsiasi momento.
 
 ## Revoca credenziali del servizio {#service-credentials-revocation}

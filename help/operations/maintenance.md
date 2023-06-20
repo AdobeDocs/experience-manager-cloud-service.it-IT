@@ -2,10 +2,10 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Attività di manutenzione in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: d4d1e97df58f8bd0951f0d5b0bf46e118b163457
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 65%
+source-wordcount: '1105'
+ht-degree: 60%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 65%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="Attività di manutenzione"
->abstract="Le attività di manutenzione sono processi eseguiti secondo una pianificazione al fine di ottimizzare l’archivio. Con AEM as a Cloud Service, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando ad Adobe le operazioni di infrastruttura."
+>abstract="Le attività di manutenzione sono processi eseguiti secondo una pianificazione per ottimizzare l’archivio. Con AEM as a Cloud Service, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando ad Adobe le operazioni di infrastruttura."
 
-Le attività di manutenzione sono processi eseguiti secondo una pianificazione al fine di ottimizzare l’archivio. Con AEM as a Cloud Service, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando ad Adobe le operazioni di infrastruttura.
+Le attività di manutenzione sono processi eseguiti secondo una pianificazione per ottimizzare l’archivio. Con AEM as a Cloud Service, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando ad Adobe le operazioni di infrastruttura.
 
 ## Configurazione delle attività di manutenzione {#maintenance-tasks-configuring}
 

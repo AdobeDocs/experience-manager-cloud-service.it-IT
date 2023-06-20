@@ -6,9 +6,9 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2418'
+source-wordcount: '2415'
 ht-degree: 0%
 
 ---
@@ -299,7 +299,7 @@ Per unire questi dati alla tabella in fase di esecuzione, è necessario puntare 
 
 Se hai creato un modulo adattivo basato su un modello di modulo XFA, gli elementi XFA sono disponibili nella scheda Modello dati di AEM Content Finder. Puoi trascinare e rilasciare questi elementi XFA, comprese le tabelle, nel modulo adattivo.
 
-L’elemento della tabella XFA è mappato al componente Table e funziona come preconfigurato nei moduli adattivi. Tutte le proprietà e le funzionalità della tabella XDP vengono mantenute quando viene spostata in un modulo adattivo e puoi eseguirvi qualsiasi operazione proprio come con la tabella nativa del modulo adattivo. Ad esempio, se una riga in una tabella XDP è contrassegnata come ripetibile, verrà ripetuta quando viene rilasciata anche nei moduli adattivi.
+L’elemento della tabella XFA è mappato al componente Table e funziona come preconfigurato nei moduli adattivi. Tutte le proprietà e le funzionalità della tabella XDP vengono mantenute quando viene spostata in un modulo adattivo e puoi eseguirvi qualsiasi operazione proprio come con la tabella nativa del modulo adattivo. Ad esempio, se una riga in una tabella XDP è contrassegnata come ripetibile, viene ripetuta anche quando viene rilasciata in moduli adattivi.
 
 Inoltre, puoi trascinare la sottomaschera XDP per aggiungere una nuova riga nella tabella. Si noti tuttavia che l&#39;eliminazione di una sottomaschera nidificata non funziona.
 
@@ -313,11 +313,11 @@ Inoltre, puoi trascinare un gruppo di elementi di tipo complesso XSD per creare 
 >
 >Il numero di elementi in un componente di tabella XDP, una sottomaschera o un tipo complesso XSD non può superare il numero di celle di una riga. Ad esempio, non è possibile rilasciare quattro elementi su una riga contenente solo tre celle. Si verificherà un errore.
 >
->Se il numero di elementi è inferiore al numero di celle di una riga, la nuova riga aggiunge prima le celle in base agli elementi e quindi le celle predefinite vengono aggiunte per riempire le celle rimanenti nella riga. Ad esempio, se si rilascia un gruppo di tre elementi in una riga contenente quattro celle, le prime tre celle si basano sugli elementi eliminati e la restante cella sarà la cella di tabella predefinita.
+>Se il numero di elementi è inferiore al numero di celle di una riga, la nuova riga aggiunge prima le celle in base agli elementi e quindi le celle predefinite vengono aggiunte per riempire le celle rimanenti nella riga. Ad esempio, se si rilascia un gruppo di tre elementi in una riga contenente quattro celle, le prime tre celle si basano sugli elementi eliminati e la cella rimanente è la cella di tabella predefinita.
 
 ## Considerazioni chiave {#key-considerations}
 
 * Se si spostano le righe verso l&#39;alto o verso il basso durante la creazione di una tabella basata su XSD, nell&#39;XML dati generato all&#39;invio del modulo viene visualizzata una perdita di dati dalle righe della tabella.
 * A ogni cella body di una tabella predefinita è associato un nome elemento predefinito. Se aggiungi un’altra tabella nel modulo adattivo, le celle del corpo predefinite nella nuova tabella avranno lo stesso nome elemento della prima tabella. In questo caso, i dati generati durante l&#39;invio del modulo includeranno i dati nelle celle predefinite del corpo di una sola tabella. Assicurati pertanto di rinominare i nomi degli elementi per le celle del corpo predefinite per mantenerli univoci nelle tabelle ed evitare la perdita di dati.
 
-   Si noti che questo è applicabile solo alle celle del corpo di default. Se si aggiungono più righe o colonne a una tabella, verranno generati automaticamente nomi di elementi univoci per le celle del corpo non predefinite.
+  Si noti che questo è applicabile solo alle celle del corpo di default. Se si aggiungono più righe o colonne a una tabella, verranno generati automaticamente nomi di elementi univoci per le celle del corpo non predefinite.

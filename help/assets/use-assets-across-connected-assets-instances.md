@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3829'
 ht-degree: 16%
@@ -31,7 +31,7 @@ La funzionalità Risorse collegate supporta i casi d’uso precedenti tramite l�
 
 ## Panoramica della funzione Risorse collegate {#overview-of-connected-assets}
 
-Durante la modifica delle pagine in [!UICONTROL Editor pagina] come destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di un’altra [!DNL Assets] che funge da origine di risorse. Gli amministratori creano un’integrazione una tantum di una distribuzione di [!DNL Experience Manager] con [!DNL Sites] con un&#39;altra implementazione di [!DNL Experience Manager] con [!DNL Assets] funzionalità. Puoi anche utilizzare le immagini Dynamic Media nelle pagine web del sito tramite Risorse collegate e sfruttare le funzionalità di Dynamic Media, come il ritaglio avanzato e i predefiniti per immagini.
+Durante la modifica delle pagine in [!UICONTROL Editor pagina] come destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di un’altra [!DNL Assets] che funge da origine di risorse. Gli amministratori creano un’integrazione una tantum di una distribuzione di [!DNL Experience Manager] con [!DNL Sites] con un&#39;altra implementazione di [!DNL Experience Manager] con [!DNL Assets] funzionalità. Puoi anche utilizzare le immagini Dynamic Media nelle pagine web del sito tramite Risorse collegate e utilizzare le funzionalità di Dynamic Media, ad esempio i predefiniti per ritaglio avanzato e le immagini.
 
 Per [!DNL Sites] autori, le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l’accesso diretti alle risorse remote nell’Editor sito. Per qualsiasi altro caso d’uso che richieda la disponibilità su Sites del corpus completo di risorse, valuta la possibilità di migrare le risorse in blocco invece di sfruttare le risorse collegate.
 
@@ -42,11 +42,11 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ogni distribuzione.
 * Per [!DNL Adobe Experience Manager] tipi di distribuzione, è soddisfatto uno dei criteri supportati. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] funziona con [!DNL Experience Manager] 6.5. Per ulteriori informazioni su come funziona questa funzionalità in [!DNL Experience Manager] 6.5, cfr. [Risorse collegate in [!DNL Experience Manager] 6,5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6,5 [!DNL Sites] su AMS | [!DNL Experience Manager] 6,5 [!DNL Sites] on-premise |
-   |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Supportato | Supportato | Supportato |
-   | **[!DNL Experience Manager]6,5 [!DNL Assets] su AMS** | Supportato | Supportato | Supportato |
-   | **[!DNL Experience Manager]6,5 [!DNL Assets] on-premise** | Non supportato | Non supportato | Non supportato |
+  | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6,5 [!DNL Sites] su AMS | [!DNL Experience Manager] 6,5 [!DNL Sites] on-premise |
+  |---|---|---|---|
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Supportato | Supportato | Supportato |
+  | **[!DNL Experience Manager]6,5 [!DNL Assets] su AMS** | Supportato | Supportato | Supportato |
+  | **[!DNL Experience Manager]6,5 [!DNL Assets] on-premise** | Non supportato | Non supportato | Non supportato |
 
 ### Formati di file supportati {#mimetypes}
 
@@ -144,7 +144,7 @@ Puoi controllare la connettività tra le [!DNL Sites] implementazioni e [!DNL As
 ## Utilizzare le risorse di Dynamic Media {#dynamic-media-assets}
 
 
-Con Risorse collegate, puoi utilizzare le risorse immagine elaborate da [!DNL Dynamic Media] dall’implementazione remota di DAM nelle pagine Sites e sfrutta le funzionalità di Dynamic Media, come i predefiniti per ritaglio avanzato e immagini.
+Con Risorse collegate, puoi utilizzare le risorse immagine elaborate da [!DNL Dynamic Media] dalla distribuzione remota di DAM nelle pagine Sites e utilizza le funzionalità di Dynamic Media, ad esempio i predefiniti per ritaglio avanzato e immagini.
 
 Da utilizzare [!DNL Dynamic Media] con risorse collegate:
 
@@ -356,11 +356,11 @@ Per risolvere gli errori più comuni, effettuare le seguenti operazioni:
 
 * Se non riesci ad accedere all’implementazione remota di DAM dal server locale [!DNL Sites] , assicurati che i cookie tra siti siano consentiti e [supporto per cookie dello stesso sito](/help/security/same-site-cookie-support.md) è configurato. Se i cookie cross-site sono bloccati, le distribuzioni di [!DNL Experience Manager] non può autenticare. Ad esempio: [!DNL Google Chrome] in modalità di navigazione in incognito può bloccare i cookie di terze parti. Per consentire i cookie in [!DNL Chrome] , fare clic sull&#39;icona &#39;occhio&#39; nella barra degli indirizzi e passare a **Sito non funzionante** > **Bloccato**, seleziona l’URL DAM remoto e consenti il cookie token di accesso. In alternativa, vedere [come abilitare i cookie di terze parti](https://support.google.com/chrome/answer/95647).
 
-   ![Errore di cookie nel browser Chrome in modalità di navigazione in incognito](assets/chrome-cookies-incognito-dialog.png)
+  ![Errore di cookie nel browser Chrome in modalità di navigazione in incognito](assets/chrome-cookies-incognito-dialog.png)
 
 * Se i riferimenti remoti non vengono recuperati e generano un messaggio di errore, verifica se [!DNL Sites] la distribuzione è disponibile e verifica la presenza di problemi di connettività di rete. Riprova più tardi per controllare. [!DNL Assets] l’implementazione tenta di stabilire la connessione due volte [!DNL Sites] e quindi segnala un errore.
 
-   ![impossibile recuperare i riferimenti remoti delle risorse](assets/reference-report-failure.png)
+  ![impossibile recuperare i riferimenti remoti delle risorse](assets/reference-report-failure.png)
 
 **Consulta anche**
 

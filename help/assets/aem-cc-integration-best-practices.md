@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 16%
@@ -140,7 +140,7 @@ Per progettare un flusso di lavoro efficiente tra i team creativi e di marketing
 
 ### Perché le risorse vengono memorizzate in DAM {#why-assets-are-stored-in-dam}
 
-L’archiviazione delle risorse in DAM ne semplifica l’accesso e la ricerca. In questo modo le risorse possono essere utilizzate da numerosi utenti dell’organizzazione o dell’ecosistema, inclusi partner, clienti e così via.
+L’archiviazione delle risorse in DAM ne semplifica l’accesso e la ricerca. In questo modo le risorse possono essere utilizzate da numerosi utenti nell’organizzazione o nell’ecosistema, inclusi partner, clienti e così via.
 
 La maggior parte delle organizzazioni sceglie di memorizzare solo le risorse rilevanti per i processi di marketing/LOB a valle (pubblicazione su canali come il canale web tramite Experience Manager Sites o altri canali gestiti da Adobe Experience Cloud, come Marketing Cloud, Advertising Cloud e misurati da Analytics Cloud, fornitura a utenti/partner e così via). Inoltre, le organizzazioni memorizzano in DAM le risorse che possono essere soggette a un processo di revisione/approvazione. In questo modo, DAM archivia principalmente le risorse che hanno elevate probabilità di essere utilizzate ed evita di archiviare le risorse inattive.
 
@@ -222,7 +222,7 @@ In alcuni casi potrebbe essere necessario caricare simultaneamente un numero mag
 
 Questa descrizione si riferisce al caricamento operativo dei file (ad esempio, ogni settimana o con ogni servizio fotografico ), come parte normale del flusso di lavoro dell’utente desktop. Le migrazioni di risorse di grandi dimensioni non sono trattate qui.
 
-Puoi sfruttare le seguenti funzionalità di caricamento:
+Puoi utilizzare le seguenti funzionalità di caricamento:
 
 * Per caricare in blocco cartelle di grandi dimensioni o gerarchiche, utilizza l’app desktop Experience Manager che fornisce [caricamento cartella](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets) funzionalità. Puoi anche caricare strutture di cartelle gerarchiche. Le risorse vengono caricate in background e, pertanto, non sono collegate a una sessione del browser web
 * Per caricare alcuni file da una singola cartella, trascina i file direttamente sull’interfaccia web o utilizza l’opzione Crea nell’interfaccia web di Experience Manager Assets.
@@ -238,13 +238,13 @@ Evita di utilizzare l’app desktop Experience Manager per gestire le risorse di
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

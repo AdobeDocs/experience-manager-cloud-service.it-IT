@@ -2,10 +2,10 @@
 title: Casella in entrata
 description: Gestione delle attività con la casella in entrata
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 79%
+source-wordcount: '909'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +30,6 @@ Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visual
 >* [Progetti](/help/sites-cloud/authoring/projects/overview.md)
 >* [Progetti - Utilizzo delle attività](/help/sites-cloud/authoring/projects/tasks.md)
 >* [Flussi di lavoro](/help/sites-cloud/authoring/workflows/overview.md)
-
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
 
@@ -86,26 +85,26 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
 * **Vista calendario**
 
-   Per **Vista calendario** puoi configurare:
+  Per **Vista calendario** puoi configurare:
 
    * **Raggruppa per**
    * **Pianificazione** o **Nessuna**
    * **Dimensioni scheda**
 
-   ![Casella in entrata - Impostazioni della vista calendario](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+  ![Casella in entrata - Impostazioni della vista calendario](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Vista a elenco**
 
-   Per **Vista a elenco** puoi configurare il meccanismo di ordinamento:
+  Per **Vista a elenco** puoi configurare il meccanismo di ordinamento:
 
    * **Ordina per**
    * **Ordinamento**
 
-   ![Casella in entrata - Impostazioni della vista a elenco](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+  ![Casella in entrata - Impostazioni della vista a elenco](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   Puoi anche delegare il calendario ad altri utenti, nonché richiedere la delega ad altri utenti e gestire le tue deleghe.
+  Puoi anche delegare il calendario ad altri utenti, nonché richiedere la delega ad altri utenti e gestire le tue deleghe.
 
-   ![Casella in entrata - Impostazioni di delega della vista a elenco](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![Casella in entrata - Impostazioni di delega della vista a elenco](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## Intervenire su un elemento {#taking-action-on-an-item}
 
@@ -126,6 +125,7 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
       * Mostrare le proprietà dell’elemento
       * Aprire un dashboard o una procedura guidata per eseguire ulteriori azioni
       * Aprire la documentazione correlata
+
    * **Indietro** per tornare a un passaggio precedente
    * Visualizzazione del payload di un flusso di lavoro
    * Creazione di un progetto dall’elemento
@@ -135,7 +135,6 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
    >Per ulteriori informazioni, consulta:
    >
    >* Elementi del flusso di lavoro - [Partecipazione ai flussi di lavoro](/help/sites-cloud/authoring/workflows/participating.md)
-
 
 2. A seconda dell’elemento selezionato, verrà avviata un’azione, ad esempio:
 
@@ -152,7 +151,6 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
    * Confermare l’azione appropriata, ad esempio Riassegna.
    * Annullare l’azione.
    * Selezionare la freccia indietro per tornare alla casella in entrata. Ad esempio, se è stata aperta una Action Wizard o una pagina della documentazione, puoi tornare alla casella in entrata.
-
 
 ## Creazione di un’attività {#creating-a-task}
 
@@ -176,7 +174,7 @@ Dalla casella in entrata è possibile creare le attività:
 
    * **Avanzate**
 
-      * **Nome**: viene utilizzato per formare l’URL; se questo campo viene lasciato vuoto, verrà basato sul valore del campo **Titolo**.
+      * **Nome**: utilizzato per formare l’URL; se vuoto, si basa sul valore **Titolo**.
 
    ![Casella in entrata - Opzioni avanzate per l’aggiunta di un’attività](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -205,9 +203,11 @@ Per alcune attività puoi creare un [Progetto](/help/sites-cloud/authoring/proje
       * **Data inizio**
       * **Data di scadenza**
       * **Utente** e ruolo
+
    * **Avanzate**
 
       * **Nome**
+
    >[!NOTE]
    >
    >Consulta [Creazione di un progetto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) per informazioni complete.

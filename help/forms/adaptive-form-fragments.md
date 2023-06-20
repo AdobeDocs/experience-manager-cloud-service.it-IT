@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '2000'
 ht-degree: 1%
 
 ---
@@ -75,9 +75,9 @@ Inoltre, se hai selezionato uno schema XML o un modello di modulo XDP come model
 1. Nella finestra di dialogo Creazione frammento, specifica le seguenti informazioni:
 
    * **Nome**: nome del frammento. Il valore predefinito è il nome dell’elemento del pannello. È un campo obbligatorio.
-      >[!NOTE]
-      >
-      >Assicurati di specificare un nome univoco per il frammento. Se esiste già un altro frammento con lo stesso nome, la creazione del frammento non riesce.
+     >[!NOTE]
+     >
+     >Assicurati di specificare un nome univoco per il frammento. Se esiste già un altro frammento con lo stesso nome, la creazione del frammento non riesce.
 
    * **Titolo**: titolo del frammento. Il valore predefinito è il titolo del pannello.
 
@@ -85,7 +85,7 @@ Inoltre, se hai selezionato uno schema XML o un modello di modulo XDP come model
 
    * **Tag**: assegna i tag ai metadati del frammento.
 
-   * **Percorso di destinazione**: percorso dell’archivio in cui verrà salvato il frammento. Se non specifichi un percorso, viene creato un nodo con lo stesso nome del frammento accanto al nodo contenente il modulo adattivo. Il frammento viene salvato in questo nodo.
+   * **Percorso di destinazione**: percorso dell’archivio in cui viene salvato il frammento. Se non specifichi un percorso, viene creato un nodo con lo stesso nome del frammento accanto al nodo contenente il modulo adattivo. Il frammento viene salvato in questo nodo.
 
    * **Modello modulo**: a seconda del modello del modulo adattivo, questo campo mostra il **Schema XML**, **Modello modulo**, o **Nessuno**. È un campo non modificabile.
 
@@ -230,7 +230,7 @@ Per localizzare un modulo adattivo che contiene frammenti di modulo adattivo, è
 ## Punti chiave da ricordare quando si lavora con i frammenti {#key-points-to-remember-when-working-with-fragments}
 
 * Assicurati che il nome del frammento sia univoco. Il frammento non viene creato se è presente un frammento con lo stesso nome.
-* In un modulo adattivo basato su XDP, se salvi un pannello come frammento che include un altro frammento XDP, il frammento risultante verrà associato automaticamente al frammento XDP secondario. Nel caso di un modulo adattivo basato su XSD, il frammento risultante sarà associato alla directory principale dello schema.
+* In un modulo adattivo basato su XDP, se salvi un pannello come frammento che include un altro frammento XDP, il frammento risultante viene associato automaticamente al frammento XDP secondario. Nel caso di un modulo adattivo basato su XSD, il frammento risultante è associato alla directory principale dello schema.
 * Quando crei un frammento di modulo adattivo, viene creato un nodo di frammento simile al nodo guideContainer per un modulo adattivo in CRXDe Lite.
 * Un frammento in un modulo adattivo che utilizza un modello dati del modulo diverso non è supportato. Ad esempio, un frammento basato su XDP non è supportato in un modulo adattivo basato su XSD e viceversa.
 * I Frammenti di moduli adattivi sono disponibili per l’utilizzo tramite la scheda Frammenti di moduli adattivi nel Finder di contenuti AEM.
@@ -240,7 +240,7 @@ Per localizzare un modulo adattivo che contiene frammenti di modulo adattivo, è
 * Quando ripubblichi un frammento di modulo adattivo aggiornato, le modifiche si riflettono nelle istanze pubblicate del modulo adattivo in cui viene utilizzato il frammento.
 * Il modulo adattivo contenente il componente Verifica non supporta gli utenti anonimi. Inoltre, non è consigliabile utilizzare il componente Verifica in un frammento di modulo adattivo.
 * (**Solo Mac**) Per garantire che la funzionalità dei frammenti di modulo funzioni perfettamente in tutti gli scenari, aggiungi la seguente voce al file /private/etc/hosts:
-   `127.0.0.1 <Host machine>` **Computer host**: il computer Mac di Apple su cui [!DNL AEM Forms] è implementato.
+  `127.0.0.1 <Host machine>` **Computer host**: il computer Mac di Apple su cui [!DNL AEM Forms] è implementato.
 
 ## Frammenti di riferimento {#reference-fragments}
 

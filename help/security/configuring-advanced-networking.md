@@ -2,10 +2,10 @@
 title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3595'
-ht-degree: 84%
+source-wordcount: '3579'
+ht-degree: 82%
 
 ---
 
@@ -71,7 +71,7 @@ L’API dovrebbe rispondere in pochi secondi, indicando lo stato di aggiornament
 
 ### Disabilitazione dell’uscita con porta flessibile {#disabling-flexible-port-egress-provision}
 
-Al fine di **disabilitare** l’uscita con porta flessibile da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+A **disable** uscita di porta flessibile da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 Per ulteriori informazioni sulle API, consulta la [documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -196,7 +196,7 @@ Se la funzione di indirizzo IP dedicato non è abilitata, il traffico provenient
 
 La configurazione dell’indirizzo IP in uscita dedicato è identica all’[uscita da porta flessibile](#configuring-flexible-port-egress-provision).
 
-La differenza principale è che il traffico sarà sempre in uscita da un IP dedicato e univoco. Per trovare tale IP, utilizza un risolutore DNS per identificare l’indirizzo IP associato a `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’indirizzo IP non dovrebbe cambiare, ma se deve cambiare in futuro, verrà fornita una notifica avanzata.
+La differenza principale è che il traffico sarà sempre in uscita da un IP dedicato e univoco. Per trovare tale IP, utilizza un risolutore DNS per identificare l’indirizzo IP associato a `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’indirizzo IP non dovrebbe cambiare, ma se deve cambiare in futuro, viene fornita una notifica avanzata.
 
 Oltre alle regole di routing supportate dall’uscita da porta flessibile nell’endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, l’indirizzo IP in uscita dedicato supporta un parametro `nonProxyHosts`. Questo consente di dichiarare un gruppo di host che devono indirizzare attraverso un intervallo di indirizzi IP condivisi anziché l’indirizzo IP dedicato, il che può essere utile in quanto il traffico in uscita attraverso gli IP condivisi può essere ulteriormente ottimizzato. Gli URL `nonProxyHost` possono seguire i pattern di `example.com` o `*.example.com`, in cui il carattere jolly è supportato solo all’inizio del dominio.
 
@@ -204,7 +204,7 @@ Quando si decide tra uscita da porta flessibile e indirizzo IP in uscita dedicat
 
 ### Disabilitazione indirizzo IP di uscita dedicato {#disabling-dedicated-egress-IP-address}
 
-Per **disabilitare** l’indirizzo IP di uscita dedicato da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+A **disable** Indirizzo IP di uscita dedicato da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 Per ulteriori informazioni sulle API, consulta la [documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -421,7 +421,7 @@ La tabella seguente descrive il routing del traffico.
     <td>Se l’IP rientra nell’intervallo di spazio <i>Indirizzo gateway VPN</i> e tramite la configurazione proxy http (configurata per impostazione predefinita per il traffico http/s utilizzando la libreria client Java HTTP standard)</td>
     <td>Qualsiasi</td>
     <td>Tramite la VPN</td>
-    <td><code>10.0.0.1:443</code>Può essere anche un nome host.</td>
+    <td><code>10.0.0.1:443</code><br>Può essere anche un nome host.</td>
   </tr>
   <tr>
     <td></td>
@@ -450,7 +450,7 @@ La tabella seguente descrive il routing del traffico.
     <td>Se l’IP rientra nell’intervallo <i>Spazio degli indirizzi gateway VPN</i> e il client si connette a <code>AEM_PROXY_HOST</code> variabile env che utilizza un <code>portOrig</code> dichiarato nel parametro di API <code>portForwards</code> </td>
     <td>Qualsiasi</td>
     <td>Tramite la VPN</td>
-    <td><code>10.0.0.1:3306</code>Può essere anche un nome host.</td>
+    <td><code>10.0.0.1:3306</code><br>Può essere anche un nome host.</td>
   </tr>
   <tr>
     <td></td>
@@ -524,6 +524,7 @@ Per **eliminare** l’infrastruttura di rete per un programma, richiama `DELETE 
 >[!NOTE]
 >
 > Il comando Elimina eliminerà l’infrastruttura solo se tutte le reti avanzate sono disabilitate.
+> 
 
 ## Transizione tra tipi di rete avanzati {#transitioning-between-advanced-networking-types}
 
@@ -537,12 +538,13 @@ Per **eliminare** l’infrastruttura di rete per un programma, richiama `DELETE 
 >[!WARNING]
 >
 > Questa procedura comporterà un downtime dei servizi di rete avanzata tra eliminazione e ricreazione.
+> 
 
 Se i tempi di inattività dovessero avere un impatto significativo sulle attività aziendali, contatta l’Assistenza clienti e descrivi cosa è già stato creato e il motivo del cambiamento.
 
 ## Configurazione di rete avanzata per aree di pubblicazione aggiuntive {#advanced-networking-configuration-for-additional-publish-regions}
 
-Quando si aggiunge un’area aggiuntiva a un ambiente in cui è già configurata la rete avanzata, per impostazione predefinita il traffico dell’area di pubblicazione aggiuntiva corrispondente alle regole di rete avanzate passerà all’area primaria. Tuttavia, se l’area primaria non è più disponibile, il traffico di rete avanzato verrà eliminato se la rete avanzata non è stata abilitata nell’area aggiuntiva. Se desideri ottimizzare la latenza e aumentare la disponibilità nel caso in cui una delle aree geografiche subisca un’interruzione, è necessario abilitare la rete avanzata per le aree geografiche di pubblicazione aggiuntive. Nelle sezioni seguenti sono descritti due scenari diversi.
+Quando si aggiunge un’area aggiuntiva a un ambiente in cui è già configurata la rete avanzata, per impostazione predefinita il traffico dell’area di pubblicazione aggiuntiva corrispondente alle regole di rete avanzate passerà all’area primaria. Tuttavia, se l’area primaria non è più disponibile, il traffico di rete avanzato viene eliminato se la rete avanzata non è stata abilitata nell’area aggiuntiva. Se desideri ottimizzare la latenza e aumentare la disponibilità nel caso in cui una delle aree geografiche subisca un’interruzione, è necessario abilitare la rete avanzata per le aree geografiche di pubblicazione aggiuntive. Nelle sezioni seguenti sono descritti due scenari diversi.
 
 >[!NOTE]
 >
@@ -554,15 +556,15 @@ Quando si aggiunge un’area aggiuntiva a un ambiente in cui è già configurata
 
 Se nell&#39;area principale è già abilitata una configurazione di rete avanzata, eseguire la procedura seguente:
 
-1. Se hai bloccato l’infrastruttura in modo che l’indirizzo IP AEM dedicato sia inserito nell’elenco Consentiti, si consiglia di disabilitare temporaneamente eventuali regole di negazione in tale infrastruttura. In caso contrario, trascorrerà un breve periodo in cui le richieste provenienti dagli indirizzi IP della nuova regione verranno negate dalla tua infrastruttura. Nota che ciò non è necessario se l’infrastruttura è stata bloccata tramite il nome di dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`, ad esempio), dal momento che tutte le aree dell’AEM ricevono traffico di rete avanzato dallo stesso FQDN
-1. Crea l’infrastruttura di rete con ambito di programma per l’area secondaria tramite una chiamata POST all’API Create Network Infrastructure di Cloud Manager, come descritto nella documentazione di rete avanzata. L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria sarà la proprietà region
+1. Se hai bloccato l’infrastruttura in modo che l’indirizzo IP AEM dedicato sia inserito nell’elenco Consentiti, si consiglia di disabilitare temporaneamente eventuali regole di negazione in tale infrastruttura. In caso contrario, si verifica un breve periodo in cui le richieste provenienti dagli indirizzi IP della nuova regione vengono negate dalla propria infrastruttura. Nota che ciò non è necessario se l’infrastruttura è stata bloccata tramite il nome di dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`, ad esempio), perché tutte le aree dell’AEM ricevono il traffico di rete avanzato dallo stesso FQDN
+1. Crea l’infrastruttura di rete con ambito di programma per l’area secondaria tramite una chiamata POST all’API Create Network Infrastructure di Cloud Manager, come descritto nella documentazione di rete avanzata. L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà region
 1. Se l’infrastruttura deve essere bloccata da IP per consentire il traffico AEM, aggiungi gli IP corrispondenti `p1234.external.adobeaemcloud.com`. Dovrebbe esserci uno per regione.
 
 #### Rete avanzata non ancora configurata in nessuna area geografica {#not-yet-configured}
 
 La procedura è per lo più simile alle istruzioni precedenti. Tuttavia, se l’ambiente di produzione non è ancora stato abilitato per la rete avanzata, è possibile testare la configurazione abilitandola prima in un ambiente di staging:
 
-1. Creare un’infrastruttura di rete per tutte le aree geografiche tramite chiamata POST al [Cloud Manager - Creare l’API dell’infrastruttura di rete](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria sarà la proprietà region.
+1. Creare un’infrastruttura di rete per tutte le aree geografiche tramite chiamata POST al [Cloud Manager - Creare l’API dell’infrastruttura di rete](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà region.
 1. Per l’ambiente di pre-produzione, abilita e configura l’ambiente con ambito di rete avanzato eseguendo il comando `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Per ulteriori informazioni, consulta la documentazione API [qui](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. Se necessario, bloccare l&#39;infrastruttura esterna, preferibilmente tramite FQDN (ad esempio `p1234.external.adobeaemcloud.com`). In caso contrario, puoi farlo per indirizzo IP
 1. Se l’ambiente di staging funziona come previsto, abilita e configura la configurazione di rete avanzata con ambito di ambiente per la produzione.

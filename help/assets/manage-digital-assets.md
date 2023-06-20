@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4378'
-ht-degree: 11%
+source-wordcount: '4377'
+ht-degree: 12%
 
 ---
 
@@ -30,7 +30,6 @@ Quando si organizza una raccolta di risorse, ad esempio, tutti `Nature` immagini
 >
 >* Condivisione di una cartella di risorse di tipo `sling:OrderedFolder`, non è supportato quando si condivide con Experience Cloud. Se desideri condividere una cartella, non selezionare [!UICONTROL Ordinato] durante la creazione di una cartella.
 >* L’Experience Manager non consente l’utilizzo di `subassets` word come nome di una cartella. È una parola chiave riservata ai nodi che contengono risorse secondarie per le risorse composte
-
 
 1. Passa alla posizione nella cartella delle risorse digitali in cui desideri creare una nuova cartella. Nel menu, fai clic su **[!UICONTROL Crea]**. Seleziona **[!UICONTROL Nuova cartella]**.
 1. In **[!UICONTROL Titolo]** , inserisci un nome per la cartella. Per impostazione predefinita, DAM utilizza il titolo fornito come nome della cartella. Una volta creata la cartella, puoi sovrascrivere l’impostazione predefinita e specificare un altro nome di cartella.
@@ -184,11 +183,11 @@ Le altre proprietà e le informazioni sui metadati vengono conservate. Una copia
    * Specifica il nome della risorsa dopo lo spostamento. Quindi tocca o fai clic su **[!UICONTROL Successivo]** per procedere.
 
    * Tocca o fai clic **[!UICONTROL Annulla]** per interrompere il processo.
+
    >[!NOTE]
    >
    >* Se nella nuova posizione non è presente alcuna risorsa con lo stesso nome, è possibile specificare lo stesso nome per la risorsa. Tuttavia, se sposti la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, utilizza un nome diverso. Se utilizzate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa è denominata Square, il sistema genera il nome Square1 per la relativa copia.
    >* Durante la ridenominazione, il nome del file non può contenere spazi.
-
 
 1. Il giorno **[!UICONTROL Seleziona destinazione]** eseguire una delle operazioni seguenti:
 
@@ -337,7 +336,7 @@ I CUG sono un modo aggiuntivo per limitare l’accesso alle risorse. Puoi anche 
 1. Pubblica la cartella, quindi prova ad accedervi dall’istanza di pubblicazione. Viene visualizzata una schermata di accesso.
 1. Se si è un membro del gruppo utenti chiusi, immettere le credenziali di sicurezza. La cartella viene visualizzata dopo [!DNL Experience Manager] ti autentica.
 
-## Cercare risorse {#search-assets}
+## Cerca risorse {#search-assets}
 
 La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, che sia destinato a un ulteriore utilizzo da parte dei creativi, per la gestione affidabile delle risorse da parte degli utenti aziendali e dei professionisti del marketing o per l’amministrazione da parte degli amministratori DAM.
 
@@ -486,7 +485,7 @@ Le annotazioni video sono supportate solo nei browser con formati video compatib
 
 >[!NOTE]
 >
->Se selezioni più annotazioni, nell’interfaccia utente sarà visibile l’annotazione più recente.
+>Se selezioni più annotazioni, l’ultima annotazione è visibile nell’interfaccia utente.
 >
 >La selezione multipla è supportata solo per la stampa della risorsa annotata come PDF.
 
@@ -672,13 +671,13 @@ Per ulteriori informazioni, vedere come [Sfogliare le risorse DAM tramite l’ap
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

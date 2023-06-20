@@ -2,9 +2,9 @@
 title: SDK di AEM as a Cloud Service
 description: Panoramica di AEM as a Cloud Service Software Development Kit
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1176'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ Quando è consigliabile aggiornare il progetto locale con un nuovo SDK?
 
 È *consigliato* per aggiornarla almeno dopo una versione di manutenzione mensile.
 
-È *facoltativo* per aggiornarla dopo qualsiasi versione di manutenzione giornaliera. I clienti verranno informati quando la loro istanza di produzione verrà aggiornata correttamente a una nuova versione AEM. Per le versioni di manutenzione giornaliere, non ci si aspetta che il nuovo SDK sia cambiato in modo significativo, se non del tutto. Tuttavia, si consiglia di aggiornare occasionalmente l’ambiente di sviluppo AEM locale con l’SDK più recente, quindi di ricreare e testare l’applicazione personalizzata. La versione di manutenzione mensile in genere include modifiche di maggiore impatto e pertanto gli sviluppatori devono immediatamente aggiornare, ricreare e testare.
+È *facoltativo* per aggiornarla dopo qualsiasi versione di manutenzione giornaliera. I clienti vengono informati quando la loro istanza di produzione viene aggiornata correttamente a una nuova versione AEM. Per le versioni di manutenzione giornaliere, non ci si aspetta che il nuovo SDK sia cambiato in modo significativo, se non del tutto. Tuttavia, si consiglia di aggiornare occasionalmente l’ambiente di sviluppo AEM locale con l’SDK più recente, quindi di ricreare e testare l’applicazione personalizzata. La versione di manutenzione mensile in genere include modifiche di maggiore impatto e pertanto gli sviluppatori devono immediatamente aggiornare, ricreare e testare.
 
 Di seguito è riportata la procedura consigliata per l’aggiornamento di un ambiente locale:
 
@@ -69,7 +69,7 @@ Di seguito è riportata la procedura consigliata per l’aggiornamento di un amb
 1. Il contenuto dei test di sviluppo locale deve essere archiviato separatamente in modo che non venga distribuito come parte della build della pipeline di Cloud Manager. Questo perché deve essere utilizzato solo per lo sviluppo locale
 1. Arresta avvio rapido in esecuzione
 1. Sposta il `crx-quickstart` cartella in un&#39;altra cartella per la conservazione sicura
-1. Nota la nuova versione dell’AEM, riportata in Cloud Manager (verrà utilizzata per identificare la nuova versione di QuickStart Jar per scaricarla ulteriormente in)
+1. Nota la nuova versione dell’AEM, riportata in Cloud Manager (viene utilizzata per identificare la nuova versione di QuickStart Jar per scaricarla ulteriormente in)
 1. Scarica il file JAR QuickStart la cui versione corrisponde alla versione Production AEM dal portale di distribuzione software
 1. Crea una nuova cartella e inserisci il nuovo file JAR QuickStart
 1. Avviare il nuovo QuickStart con le modalità di esecuzione desiderate (rinominando il file o passando in modalità di esecuzione tramite `-r`).
@@ -83,7 +83,7 @@ Se è necessario installare un contenuto con ogni nuova versione di avvio rapido
 
 Si consiglia di aggiornare frequentemente l’SDK (ad esempio ogni due settimane) ed eliminare tutti i giorni lo stato locale in modo che non dipenda accidentalmente dai dati di stato nell’applicazione.
 
-Nel caso in cui si dipenda da CryptoSupport ([configurando le credenziali di Cloud Services o del servizio di posta SMTP in AEM oppure utilizzando l’API CryptoSupport nell’applicazione](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), le proprietà crittografate verranno crittografate da una chiave generata automaticamente al primo avvio di un ambiente AEM. Mentre cloudsetup si occupa di riutilizzare automaticamente la CryptoKey specifica per l’ambiente, è necessario inserire la crittografia nell’ambiente di sviluppo locale.
+Nel caso in cui si dipenda da CryptoSupport ([configurando le credenziali di Cloud Services o del servizio di posta SMTP in AEM oppure utilizzando l’API CryptoSupport nell’applicazione](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), le proprietà crittografate sono crittografate da una chiave generata automaticamente al primo avvio di un ambiente AEM. Mentre cloudsetup si occupa di riutilizzare automaticamente la CryptoKey specifica per l’ambiente, è necessario inserire la crittografia nell’ambiente di sviluppo locale.
 
 Per impostazione predefinita, l’AEM è configurato per memorizzare i dati chiave nella cartella dati di una cartella, ma per facilitare il riutilizzo in fase di sviluppo, il processo AEM può essere inizializzato al primo avvio con &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. I dati di crittografia verranno generati in &quot;`/etc/key`&quot;.
 
@@ -91,5 +91,5 @@ Per poter riutilizzare i pacchetti di contenuto contenenti i valori crittografat
 
 * Quando avvii inizialmente il file quickstart.jar locale, assicurati di aggiungere il seguente parametro: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Si consiglia, ma facoltativo, di aggiungerlo sempre.
 * La prima volta che hai avviato un’istanza, crea un pacchetto contenente un filtro per la radice &quot;`/etc/key`&quot;. Questo conterrà il segreto da riutilizzare in tutti gli ambienti per i quali desideri che vengano riutilizzati
-* Esporta eventuali contenuti modificabili contenenti segreti o cerca i valori crittografati tramite `/crx/de` per aggiungerlo al pacchetto che verrà riutilizzato nelle diverse installazioni
-* Ogni volta che crei una nuova istanza (per sostituirla con una nuova versione o poiché più ambienti di sviluppo devono condividere le credenziali per il test), installa il pacchetto prodotto nei passaggi 2 e 3 per poter riutilizzare il contenuto senza dover riconfigurare manualmente. Questo perché ora la crittografia è sincronizzata.
+* Esporta qualsiasi contenuto mutabile contenente segreti o cerca i valori crittografati tramite `/crx/de` per aggiungerlo al pacchetto riutilizzato in più installazioni
+* Ogni volta che crei una nuova istanza (per sostituirla con una nuova versione o poiché più ambienti di sviluppo devono condividere le credenziali per il test), installa il pacchetto prodotto nei passaggi 2 e 3 per poter riutilizzare il contenuto senza dover riconfigurare manualmente. Questo motivo è perché ora la crittografia è sincronizzata.

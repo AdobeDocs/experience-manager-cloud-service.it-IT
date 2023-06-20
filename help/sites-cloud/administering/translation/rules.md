@@ -4,10 +4,10 @@ description: Scopri come le regole di traduzione identificano il contenuto da tr
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 100%
+source-wordcount: '1294'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ Le regole di traduzione identificano il contenuto da tradurre per le pagine, i c
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, fai riferimento al [Percorso di traduzione dei siti,](/help/journey-sites/translation/overview.md) per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta la [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti AEM Sites utilizzando potenti strumenti di traduzione AEM, ideale per chi non ha esperienza di AEM o traduzione.
 
 ## Frammenti di contenuto e regole di traduzione {#content-fragments}
 
@@ -125,11 +125,11 @@ Il file `translation_rules.xml` è costituito da un elemento `nodelist` con dive
 
 ```xml
 <nodelist>
-     <node path="/content”>
+     <node path="/content">
            <property name="text" />
      </node>
-     <node path=“/content/mysite/en”>
-          <property name=“text” translate=“false" />
+     <node path="/content/mysite/en">
+          <property name="text" translate="false" />
      </node>
 <nodelist>
 ```
@@ -142,7 +142,7 @@ Ad esempio, le seguenti regole causano la traduzione di tutto il contenuto in pr
 
 ```xml
 <nodelist>
-    <node path="/content”>
+    <node path="/content">
      <filter>
    <node containsProperty="draft" propertyValue="true" />
      </filter>
@@ -163,7 +163,7 @@ Per accedervi:
 
 Nell’interfaccia utente delle regole di traduzione puoi:
 
-1. **Aggiungi contesto**, che ti consente di aggiungere un percorso.
+1. **Aggiungi contesto**, che consente di aggiungere un percorso.
 
    ![Aggiungi contesto di traduzione](../assets/add-translation-context.png)
 
@@ -186,7 +186,7 @@ Puoi modificare quattro attributi tramite l’interfaccia utente:
 
 **`isDeep`**  è applicabile nei filtri dei nodi ed è true per impostazione predefinita. Controlla se il nodo (o i suoi predecessori) contiene tale proprietà con il valore della proprietà specificato nel filtro. Se false, controlla solo il nodo corrente.
 
-Ad esempio, i nodi secondari vengono aggiunti a un processo di traduzione anche quando il nodo principale ha la proprietà `draftOnly` impostata su true per contrassegnare il contenuto in formato bozza. Qui `isDeep` entra in gioco e controlla se i nodi principali hanno proprietà `draftOnly` come true ed esclude tali nodi secondari.
+Ad esempio, i nodi secondari vengono aggiunti a un processo di traduzione anche quando il nodo principale ha la proprietà `draftOnly` imposta su true per contrassegnare il contenuto della bozza. Qui `isDeep` entra in gioco e controlla se i nodi principali hanno proprietà `draftOnly` come true ed esclude tali nodi secondari.
 
 Nell&#39;editor, puoi selezionare/deselezionare **Deep** nella scheda **Filtri**.
 

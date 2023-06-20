@@ -3,9 +3,9 @@ title: Migrazione della configurazione Dispatcher da AMS a AEM as a Cloud Servic
 description: Migrazione della configurazione Dispatcher da AMS a AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1445'
 ht-degree: 17%
 
 ---
@@ -18,7 +18,7 @@ La configurazione di Apache e Dispatcher in AEM as a Cloud Service è abbastanza
 
 * In AEM as a Cloud Service, alcune direttive Apache non possono essere utilizzate (ad esempio `Listen` o `LogLevel`)
 * In AEM as a Cloud Service, solo alcune parti della configurazione di Dispatcher possono essere inserite in file di inclusione e la loro denominazione è importante. Ad esempio, le regole di filtro che desideri riutilizzare tra host diversi devono essere inserite in un file denominato `filters/filters.any`. Per ulteriori informazioni, consulta la pagina di riferimento.
-* In AEM as a Cloud Service è disponibile una convalida aggiuntiva per non consentire la scrittura di regole di filtro tramite `/glob` per evitare problemi di sicurezza. Da `deny *` verrà utilizzato anziché `allow *` (che non può essere utilizzato), i clienti trarranno vantaggio dall’esecuzione locale di Dispatcher e dall’esecuzione di tentativi ed errori, esaminando i registri per sapere esattamente quali percorsi i filtri di Dispatcher stanno bloccando per poter essere aggiunti.
+* In AEM as a Cloud Service è disponibile una convalida aggiuntiva per non consentire la scrittura di regole di filtro tramite `/glob` per evitare problemi di sicurezza. Perché `deny *` viene utilizzato anziché `allow *` (che non può essere utilizzato), i clienti traggono vantaggio dall’esecuzione locale di Dispatcher e dall’esecuzione di tentativi ed errori, esaminando i registri per sapere esattamente quali percorsi i filtri di Dispatcher stanno bloccando per poter essere aggiunti.
 
 ## Linee guida per la migrazione della configurazione del dispatcher da AMS a AEM as a Cloud Service
 

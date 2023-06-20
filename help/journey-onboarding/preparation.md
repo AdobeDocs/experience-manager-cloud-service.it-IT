@@ -2,10 +2,10 @@
 title: Preparazione all’onboarding
 description: Prima dell’inizio del processo di onboarding e di effettuare l’accesso al sistema è necessario che l’amministratore comprenda una serie di passaggi preparatori.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Dopo aver letto questo documento saprai:
 * In che modo il contratto influisce sul processo di onboarding.
 * Come prepararti per la chiamata di onboarding.
 
-Non preoccuparti se non conosci tutti i termini utilizzati in questa pagina. Ti verranno spiegati nella prossima sezione del percorso.
+Non preoccuparti se non conosci tutti i termini utilizzati in questa pagina. I termini sono illustrati nella parte successiva del percorso.
 
 ## Video {#video}
 
@@ -48,7 +48,7 @@ Dopo aver sottoscritto il contratto, Adobe esegue il provisioning degli ambienti
 
 ## Provisioning del sistema {#provisioning}
 
-Dopo aver sottoscritto il contratto, Adobe esegue automaticamente il provisioning di tutti gli ambienti cloud di AEM coperti dal contratto. Anche questi ambienti saranno collegati ai programmi in Cloud Manager (ulteriori informazioni su questo argomento sono riportate più avanti nel percorso). Questi ambienti cloud di AEM sono inclusi in ogni abbonamento a AEM as a Cloud Service e sono in genere costituiti da almeno un ambiente di produzione, un ambiente di staging e, facoltativamente, uno o più ambienti di sviluppo o di test.
+Dopo la firma del contratto, tutti gli ambienti cloud AEM coperti dal contratto vengono automaticamente predisposti da Adobe. Anche questi ambienti saranno collegati ai programmi in Cloud Manager (ulteriori informazioni su questo argomento sono riportate più avanti nel percorso). Questi ambienti cloud di AEM sono inclusi in ogni abbonamento a AEM as a Cloud Service e sono in genere costituiti da almeno un ambiente di produzione, un ambiente di staging e, facoltativamente, uno o più ambienti di sviluppo o di test.
 
 ## Chiamata di onboarding {#onboarding-call}
 
@@ -60,7 +60,7 @@ Devono partecipare le seguenti figure dell’organizzazione:
 * Team tecnico
 * Partner di implementazione
 
-Adobe sarà rappresentato da:
+Adobe è rappresentato da:
 
 * Specialista dell’onboarding
 * Account manager tecnico (come applicabile)

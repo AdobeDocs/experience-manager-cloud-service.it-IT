@@ -2,10 +2,10 @@
 title: Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato
 description: Scopri come aggiornare i frammenti di contenuto per il filtro GraphQL ottimizzato in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: a18742abdd4693ab1e97d7db3ed6854b735bc0f9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '912'
+ht-degree: 97%
 
 ---
 
@@ -79,7 +79,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
       <td>Tutti i bundle  </td>
       <td> </td>
       <td>Variabile </td>
-      <td>Dimensione del batch per il salvataggio del numero di frammenti di contenuto dopo la migrazione.<br>Questo è relativo a quanti frammenti di contenuto verranno salvati nell’archivio in un batch e può servire a ottimizzare il numero di scritture nell’archivio. </td>
+      <td>Dimensione del batch per il salvataggio del numero di frammenti di contenuto dopo la migrazione.<br>Questo è rilevante per il numero di CF salvati nell’archivio in un batch e può essere utilizzato per ottimizzare il numero di scritture nell’archivio. </td>
      </tr>
      <tr>
       <td>4</td>

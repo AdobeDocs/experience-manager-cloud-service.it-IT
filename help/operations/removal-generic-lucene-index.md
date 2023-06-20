@@ -2,9 +2,9 @@
 title: Rimozione indice Lucene generico
 description: Scopri la rimozione pianificata degli indici Lucene generici e come potrebbe esserne interessato.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ In AEM, per query full-text si intendono quelle che utilizzano le seguenti funzi
 
 Tali query non possono restituire risultati senza utilizzare un indice. A differenza di una query contenente solo restrizioni di percorso o proprietà, una query contenente una restrizione di testo completo per la quale non è possibile trovare alcun indice (e quindi viene eseguito un attraversamento) restituirà sempre zero risultati.
 
-L&#39;indice Lucene generico (`/oak:index/lucene-*`) esiste da AEM 6.0 / Oak 1.0 per fornire una ricerca testuale completa nella maggior parte della gerarchia dell’archivio, anche se alcuni percorsi, come `/jcr:system` e `/var` sono sempre stati esclusi da questo. Tuttavia, questo indice è stato in gran parte sostituito da indici su tipi di nodo più specifici (ad esempio `damAssetLucene-*` per `dam:Asset` tipo di nodo), che supportano sia le ricerche full-text che quelle di proprietà.
+L&#39;indice Lucene generico (`/oak:index/lucene-*`) esiste da AEM 6.0 / Oak 1.0 per fornire una ricerca di testo completa nella maggior parte della gerarchia dell’archivio, anche se alcuni percorsi, come `/jcr:system` e `/var` sono sempre stati esclusi da questo. Tuttavia, questo indice è stato in gran parte sostituito da indici su tipi di nodo più specifici (ad esempio `damAssetLucene-*` per `dam:Asset` tipo di nodo), che supportano sia le ricerche full-text che quelle di proprietà.
 
 In AEM 6.5 l&#39;indice Lucene generico è stato contrassegnato come obsoleto, indicando che sarebbe stato rimosso nelle versioni future. Da allora, è stato registrato un WARN quando l’indice è stato utilizzato come illustrato dal seguente snippet di registro:
 
@@ -38,30 +38,30 @@ Ad esempio, le query di ricerca di riferimento, come nell’esempio seguente, or
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Al fine di supportare volumi di dati dei clienti più grandi, Adobe non creerà più l’indice Lucene generico sui nuovi ambienti AEM as a Cloud Service. Inoltre, Adobe inizierà a rimuovere l’indice dagli archivi esistenti. [Visualizza la timeline](#timeline) alla fine del presente documento per ulteriori dettagli.
+Per supportare volumi di dati cliente più grandi, Adobe non crea più l’indice Lucene generico nei nuovi ambienti AEM as a Cloud Service. Inoltre, Adobe rimuove l’indice dagli archivi esistenti. [Visualizza la timeline](#timeline) alla fine del presente documento per ulteriori dettagli.
 
 L&#39;Adobe ha già adeguato i costi dell&#39;indice tramite `costPerEntry` e `costPerExecution` per garantire che altri indici come `/oak:index/pathreference` vengono utilizzati di preferenza, ove possibile.
 
-Le applicazioni dei clienti che utilizzano query che dipendono ancora da questo indice devono essere aggiornate immediatamente per sfruttare altri indici esistenti che possono essere personalizzati, se necessario. In alternativa, è possibile aggiungere nuovi indici personalizzati all’applicazione del cliente. Le istruzioni complete per la gestione dell’indice in AEM as a Cloud Service sono reperibili nella sezione [documentazione sull’indicizzazione.](/help/operations/indexing.md)
+Le applicazioni dei clienti che utilizzano query che dipendono ancora da questo indice devono essere aggiornate immediatamente per utilizzare altri indici esistenti che possono essere personalizzati, se necessario. In alternativa, è possibile aggiungere nuovi indici personalizzati all’applicazione del cliente. Le istruzioni complete per la gestione dell’indice in AEM as a Cloud Service sono reperibili nella sezione [documentazione sull’indicizzazione.](/help/operations/indexing.md)
 
 ## Siete Colpite? {#are-you-affected}
 
-L’indice Lucene generico viene attualmente utilizzato come fallback se nessun altro indice full-text è in grado di servire una query. Quando si utilizza questo indice obsoleto, un messaggio come questo verrà registrato a livello WARN:
+L’indice Lucene generico viene attualmente utilizzato come fallback se nessun altro indice full-text è in grado di servire una query. Quando si utilizza questo indice obsoleto, a livello di WARN viene registrato un messaggio simile al seguente:
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
 ```
 
-In alcune circostanze, Oak potrebbe tentare di utilizzare un altro indice full-text (ad esempio `/oak:index/pathreference`) per supportare la query full-text, ma se la stringa di query non corrisponde all&#39;espressione regolare nella definizione dell&#39;indice, verrà registrato un messaggio a livello WARN e la query probabilmente non restituirà risultati.
+In alcune circostanze, Oak potrebbe tentare di utilizzare un altro indice full-text (ad esempio `/oak:index/pathreference`) per supportare la query full-text, ma se la stringa di query non corrisponde all&#39;espressione regolare nella definizione dell&#39;indice, viene registrato un messaggio a livello WARN e la query probabilmente non restituirà risultati.
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
 ```
 
-Una volta rimosso l’indice Lucene generico, se una query full-text non è in grado di individuare una definizione di indice adatta, verrà registrato a livello di WARN un messaggio come mostrato di seguito:
+Una volta rimosso l’indice Lucene generico, viene registrato un messaggio come mostrato di seguito a livello WARN se una query full-text non è in grado di individuare alcuna definizione di indice adatta:
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -80,7 +80,7 @@ In diverse aree le applicazioni e le installazioni AEM possono dipendere da indi
 
 #### Query personalizzate dell’applicazione {#custom-application-queries}
 
-L’origine più comune delle query che utilizzano l’indice Lucene generico su un’istanza di pubblicazione saranno le query personalizzate dell’applicazione.
+L’origine più comune delle query che utilizzano l’indice Lucene generico su un’istanza di pubblicazione sono le query personalizzate dell’applicazione.
 
 Nei casi più semplici, si potrebbe trattare di query prive di un tipo di nodo, il che implica `nt:base` o `nt:base` specificati esplicitamente, ad esempio:
 
@@ -117,7 +117,7 @@ Di conseguenza, la query torna all’indice full-text generico in cui tutte le p
 >
 >**Azione cliente richiesta**
 >
->Contrassegno del `jcr:content/metadata/@cq:tags` come analizzato in una versione personalizzata di `damAssetLucene` L&#39;indice provocherà la gestione di questa query da parte di questo indice e non verrà registrato alcun WARN.
+>Contrassegno del `jcr:content/metadata/@cq:tags` come analizzato in una versione personalizzata di `damAssetLucene` L&#39;indice determina la gestione di questa query da parte di questo indice e non viene registrato alcun avviso.
 
 ### Istanza di authoring {#author-instance}
 
@@ -157,7 +157,6 @@ Prima della rimozione dell’indice Lucene generico, il `pathfield` il component
 > * Al momento queste query eseguono query senza tipi di nodo specificati, con conseguente registrazione di un avviso a causa dell’utilizzo dell’indice Lucene generico.
 > * Le istanze di questi componenti presto verranno impostate per impostazione predefinita su utilizzando `cq:Page` e `dam:Asset` tipi di nodo senza ulteriori azioni del cliente.
 > * Il `nodeTypes` per ignorare questi tipi di nodo predefiniti.
-
 
 ## Timeline per la rimozione di Lucene generica {#timeline}
 

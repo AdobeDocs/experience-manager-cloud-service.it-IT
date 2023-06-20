@@ -2,9 +2,9 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1396'
 ht-degree: 22%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 22%
 
 Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. È possibile installare il pacchetto tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) nell’istanza Adobe Experience Manager (AEM) di origine. Assicurati di scaricare la versione più recente. Per ulteriori dettagli sull’ultima versione, consulta [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
-Sarà supportata solo la versione 2.0.0 o successiva ed è consigliabile utilizzare la versione più recente.
+È supportata solo la versione 2.0.0 o successiva ed è consigliabile utilizzare la versione più recente.
 
 >[!NOTE]
 >Scarica lo strumento Content Transfer (Trasferimento contenuti) dal portale di [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
@@ -120,7 +120,7 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, devi ins
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Incolla la chiave di estrazione copiata in precedenza da CAM nel campo di immissione chiave di estrazione di **Crea set di migrazione** modulo. Dopo aver eseguito questa operazione, i campi Nome set di migrazione e Nome progetto Cloud Acceleration Manager (CAM) verranno compilati automaticamente. Questi devono corrispondere al nome del Set di migrazione in CAM e al nome del progetto CAM creato. Ora puoi aggiungere percorsi di contenuto. Dopo aver aggiunto i percorsi dei contenuti, potrai salvare il set di migrazione. Puoi eseguire l’estrazione con le versioni incluse o escluse.
+1. Incolla la chiave di estrazione copiata in precedenza da CAM nel campo di immissione chiave di estrazione di **Crea set di migrazione** modulo. Dopo aver eseguito questa operazione, i campi Nome set di migrazione e Nome progetto Cloud Acceleration Manager (CAM) vengono compilati automaticamente. Questi devono corrispondere al nome del Set di migrazione in CAM e al nome del progetto CAM creato. Ora puoi aggiungere percorsi di contenuto. Dopo aver aggiunto i percorsi dei contenuti, salva il set di migrazione. Puoi eseguire l’estrazione con le versioni incluse o escluse.
 
    >[!NOTE]
    >
@@ -147,7 +147,6 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, devi ins
       >* `/home`
       >* `/etc` (alcuni `/etc` I percorsi possono essere selezionati in CTT)
 
-
 1. Fai clic su **Salva** dopo aver compilato tutti i campi nel **Crea set di migrazione** nella schermata dei dettagli.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
@@ -167,7 +166,8 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, devi ins
 ### Determinazione delle dimensioni del set di migrazione {#migration-set-size}
 
 Dopo aver creato un set di migrazione, si consiglia vivamente di eseguire un controllo delle dimensioni del set di migrazione prima di avviare un processo di estrazione.
-Eseguendo un controllo delle dimensioni sul set di migrazione, sarà possibile:
+Eseguendo un controllo delle dimensioni sul set di migrazione, è possibile:
+
 * Determinare se lo spazio su disco è sufficiente nel `crx-quickstart` sottodirectory per completare correttamente l’estrazione.
 * Determina se le dimensioni del set di migrazione rientrano nei limiti dei prodotti supportati ed evita l’acquisizione di contenuti non riuscita.
 
@@ -185,11 +185,11 @@ Per eseguire un controllo delle dimensioni, attenersi alla procedura descritta d
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Una volta **Verifica dimensione** processo è completato, lo stato cambierà in **COMPLETATO**. Seleziona lo stesso set di migrazione e fai clic su **Verifica dimensione** per visualizzare i risultati. Ecco un esempio di **Verifica dimensione** risultati senza avvisi.
+1. Dopo **Verifica dimensione** processo è completato, lo stato cambia in **COMPLETATO**. Seleziona lo stesso set di migrazione e fai clic su **Verifica dimensione** per visualizzare i risultati. Ecco un esempio di **Verifica dimensione** risultati senza avvisi.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Se il **Verifica dimensione** i risultati indicano che lo spazio su disco è insufficiente e/o che il set di migrazione supera i limiti del prodotto, **AVVISO** verrà visualizzato lo stato.
+1. Se il **Verifica dimensione** i risultati indicano che lo spazio su disco è insufficiente o che il set di migrazione supera i limiti del prodotto, o entrambi, un **AVVISO** viene visualizzato lo stato.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

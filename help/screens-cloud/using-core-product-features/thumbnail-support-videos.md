@@ -3,9 +3,9 @@ title: Supporto delle miniature per video in Screens as a Cloud Service
 description: Questa pagina descrive come aggiungere il supporto miniature per video in Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -62,13 +62,13 @@ Per usare la miniatura nei video, segui la procedura indicata di seguito:
 
 1. Fai clic su **Anteprima**.
 
-1. Se un video è impostato sul componente, il video verrà riprodotto. In caso contrario, e la miniatura è impostata, verrà riprodotta. In caso contrario, il componente viene considerato non configurato e verrà ignorato.
+1. Se un video è impostato sul componente, viene riprodotto. In caso contrario, e la miniatura è impostata, la miniatura viene riprodotta. In caso contrario, il componente viene considerato non configurato e viene saltato.
 
 ## Casi d’uso supportati durante l’utilizzo della miniatura nei video {#understand-use-case}
 
 La miniatura nei video supporta i seguenti casi d’uso:
 
-* Un componente video senza alcuna configurazione verrà ignorato.
+* Un componente video non configurato viene saltato.
 
 * La miniatura viene riprodotta da un componente video contenente solo la serie di miniature.
 

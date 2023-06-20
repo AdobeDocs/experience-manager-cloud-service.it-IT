@@ -2,10 +2,10 @@
 title: Regole per la qualità del codice personalizzato
 description: Questa pagina descrive le regole per la qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice dei team tecnici di Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '3508'
-ht-degree: 100%
+source-wordcount: '3504'
+ht-degree: 98%
 
 ---
 
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Gravità**: critico
 * **Da**: versione 2018.6.0
 
-Durante l’esecuzione di richieste HTTP dall’interno di un’applicazione Experience Manager, è fondamentale assicurarsi che siano configurati timeout appropriati al fine di evitare un consumo di thread inutile. Sfortunatamente, i comportamenti predefiniti di entrambi i client HTTP predefiniti di Java™ (`java.net.HttpUrlConnection`) e il client Apache HTTP Components comunemente utilizzato non si interrompe mai, peranto i timeout devono pertanto essere impostati in modo esplicito. Inoltre, come best practice, questi timeout non devono superare i 60 secondi.
+Durante l’esecuzione di richieste HTTP dall’interno di un’applicazione Experience Manager, è fondamentale assicurarsi che siano configurati timeout appropriati per evitare un inutile consumo di thread. Sfortunatamente, i comportamenti predefiniti di entrambi i client HTTP predefiniti di Java™ (`java.net.HttpUrlConnection`) e il client Apache HTTP Components comunemente utilizzato non si interrompe mai, peranto i timeout devono pertanto essere impostati in modo esplicito. Inoltre, come best practice, questi timeout non devono superare i 60 secondi.
 
 #### Codice non conforme {#non-compliant-code-2}
 
@@ -811,7 +811,7 @@ Se utilizzi la replica inversa, contatta Adobe per scoprire le soluzioni alterna
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
-Le librerie client Experience Manager possono contenere risorse statiche come immagini e font. Come descritto nel documento [Utilizzo dei preprocessori,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) quando si usano le librerie client abilitate al proxy le risorse statiche devono essere contenute in una cartella secondaria denominata `resources` affinché sia possibile farvi riferimento nelle istanze pubbliche.
+Le librerie client Experience Manager possono contenere risorse statiche come immagini e font. Come descritto nel documento [Utilizzo dei preprocessori](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) quando si utilizzano le librerie client abilitate al proxy, le risorse statiche devono essere contenute in una cartella secondaria denominata `resources` nelle istanze di pubblicazione.
 
 #### Codice non conforme {#non-compliant-proxy-enabled}
 

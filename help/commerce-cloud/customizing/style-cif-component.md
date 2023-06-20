@@ -10,11 +10,11 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 29%
+source-wordcount: '2544'
+ht-degree: 27%
 
 ---
 
@@ -28,7 +28,7 @@ Il [Progetto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) è una ba
 
 ## Cosa verrà creato
 
-In questo tutorial verrà implementato un nuovo stile per il componente Product Teaser, che assomiglia a una scheda. Le lezioni apprese nell’esercitazione possono essere applicate ad altri componenti CIF di base.
+In questo tutorial, viene implementato un nuovo stile per il componente Product Teaser, che assomiglia a una scheda. Le lezioni apprese nell’esercitazione possono essere applicate ad altri componenti CIF di base.
 
 ![Cosa verrà creato](../assets/style-cif-component/what-you-will-build.png)
 
@@ -192,7 +192,7 @@ Quindi, apporta una piccola modifica allo stile Teaser per vedere come `ui.front
 
    >[!NOTE]
    >
-   > Solo le librerie di base sono &quot;hardcoded&quot; come parte degli script di pagina. `venia.site` non è incluso in questi file, ma come parte del modello della pagina per una maggiore flessibilità. Questo verrà ispezionato in seguito.
+   > Solo le librerie di base sono &quot;hardcoded&quot; come parte degli script di pagina. `venia.site` non è incluso in questi file, ma come parte del modello della pagina per una maggiore flessibilità. Questo processo viene esaminato successivamente.
 
 1. Dal terminale, crea e implementa l’intero progetto in un’istanza locale dell’AEM:
 
@@ -277,14 +277,14 @@ Sono disponibili diverse opzioni per includere una libreria lato client. Success
 
    ![Criterio pagina - pagina di destinazione](../assets/style-cif-component/page-policy-properties.png)
 
-   Sul lato destro è disponibile un elenco delle **categorie** di librerie client che verranno incluse in tutte le pagine che utilizzano questo modello.
+   Sul lato destro è disponibile un elenco delle librerie client **categorie** inclusi in tutte le pagine che utilizzano questo modello.
 
    * `venia.dependencies` : fornisce librerie di fornitori che `venia.site` dipende da.
    * `venia.site` - Categoria per `clientlib-site` che il `ui.frontend` generata dal modulo.
 
    Altri modelli utilizzano lo stesso criterio: **Pagina di contenuto**, **Pagina di destinazione** e così via. Riutilizzando lo stesso criterio, possiamo essere certi che le stesse librerie client verranno incluse in tutte le pagine.
 
-   Quando si gestisce l’inclusione delle librerie client mediante l’uso di modelli e criteri di pagina, si può modificare il criterio a livello di modello. Ad esempio, supponiamo di dover gestire due marchi diversi nella stessa istanza di AEM. Ogni marchio avrà un proprio stile o un proprio *tema*, ma le librerie e il codice di base saranno gli stessi. Un altro esempio, nel caso di una libreria client più grande che si voglia visualizzare solo su determinate pagine, si può creare un criterio di pagina univoco solo per quel modello.
+   Quando si gestisce l’inclusione delle librerie client mediante l’uso di modelli e criteri di pagina, si può modificare il criterio a livello di modello. Ad esempio, supponiamo di dover gestire due marchi diversi nella stessa istanza di AEM. Ogni marchio ha un proprio stile o *tema* ma le librerie e il codice di base sono gli stessi. Un altro esempio, nel caso di una libreria client più grande che si voglia visualizzare solo su determinate pagine, si può creare un criterio di pagina univoco solo per quel modello.
 
 ## Sviluppo Webpack locale {#local-webpack-development}
 
@@ -317,7 +317,7 @@ Il webpack-dev-server proxy le immagini e alcuni file CSS/JavaScript dell’ista
    </body>
    ```
 
-   Questi vengono rimossi perché rappresentano la versione compilata dei CSS e JavaScript generati dai `ui.frontend` modulo. Lascia le altre librerie client così come verranno proxy dall’istanza AEM in esecuzione.
+   Questi vengono rimossi perché rappresentano la versione compilata dei CSS e JavaScript generati dai `ui.frontend` modulo. Lascia le altre librerie client così come verranno abilitate al proxy dall’istanza AEM in esecuzione.
 
 1. Apri una nuova finestra del terminale e accedi al `ui.frontend` cartella. Esegui il comando `npm start`:
 
@@ -336,11 +336,11 @@ Il webpack-dev-server proxy le immagini e alcuni file CSS/JavaScript dell’ista
 
    ![Server di sviluppo Webpack sulla porta 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
-   Lascia web pack-dev-server in esecuzione. Verrà utilizzato nel prossimo esercizio.
+   Lascia web pack-dev-server in esecuzione. Viene utilizzato nell&#39;esercizio successivo.
 
 ## Implementare lo stile della scheda per Product Teaser {#update-css-product-teaser}
 
-Modificare i file Sass in `ui.frontend` per implementare uno stile di tipo scheda per il Product Teaser. Per visualizzare rapidamente le modifiche verrà utilizzato Webpack-dev-server.
+Modificare i file Sass in `ui.frontend` per implementare uno stile di tipo scheda per il Product Teaser. Webpack-dev-server viene utilizzato per visualizzare rapidamente le modifiche.
 
 Torna all’IDE e al progetto generato.
 

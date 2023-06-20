@@ -2,10 +2,10 @@
 title: Configurazione del progetto
 description: Scopri come creare progetti AEM con Maven e gli standard da osservare durante la creazione di un progetto personalizzato.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 100%
+source-wordcount: '1404'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ Scopri come creare progetti AEM con Maven e gli standard da osservare durante la
 
 ## Dettagli della configurazione del progetto {#project-setup-details}
 
-Per poter essere generati e distribuiti correttamente con Cloud Manager, i progetti AEM devono rispettare le seguenti linee guida:
+Per generare e distribuire correttamente con Cloud Manager, i progetti AEM devono rispettare le seguenti linee guida:
 
 * I progetti devono essere generati con [Apache Maven.](https://maven.apache.org)
 * Nella radice dell’archivio Git deve essere presente un file `pom.xml`. Il file `pom.xml` può fare riferimento a tutti i moduli secondari (che a loro volta possono prevedere altri moduli secondari e così via) secondo necessità.
@@ -119,7 +119,7 @@ Per utilizzare un archivio Maven protetto da password in Cloud Manager:
 
 All’avvio del processo di build di Cloud Manager:
 
-* L’elemento `<servers>` in questo file viene unito al file `settings.xml` predefinito fornito da Cloud Manager.
+* Il `<servers>` elemento in questo file viene unito al valore predefinito `settings.xml` file fornito da Cloud Manager.
    * Gli ID server che iniziano con `adobe` e `cloud-manager` sono considerati riservati e non devono essere utilizzati per i server personalizzati.
    * Per gli ID server che non corrispondono a uno di questi prefissi o all’ID predefinito `central`, il mirroring non viene mai eseguito da Cloud Manager.
 * Quando questo file è presente, si fa riferimento all’ID server da un `<repository>` e/o da un elemento del `<pluginRepository>` contenuto nel file `pom.xml`.
@@ -240,9 +240,9 @@ Per eseguire l’operazione, configura il plug-in maven-assembly nel progetto.
 
 ## Ignorare i pacchetti di contenuti {#skipping-content-packages}
 
-In Cloud Manager le build possono produrre qualsiasi numero di pacchetti di contenuti. Per diversi motivi può essere utile produrre un pacchetto di contenuti ma non distribuirlo. Un esempio potrebbe essere la creazione di pacchetti di contenuti utilizzati solo a scopi di test o che verranno ricompilati da un altro passaggio del processo di build, ovvero come pacchetti secondari di un altro pacchetto.
+In Cloud Manager le build possono produrre qualsiasi numero di pacchetti di contenuti. Per diversi motivi può essere utile produrre un pacchetto di contenuti ma non distribuirlo. Un esempio potrebbe essere la creazione di pacchetti di contenuti utilizzati solo a scopo di test o che vengono ricompilati da un altro passaggio del processo di build. ovvero un pacchetto secondario di un altro pacchetto.
 
-Per soddisfare questi scenari, Cloud Manager cercherà una proprietà denominata `cloudManagerTarget` tra le proprietà dei pacchetti di contenuti generati. Se questa proprietà è impostata su `none`, il pacchetto verrà ignorato e non distribuito.
+Per soddisfare questi scenari, Cloud Manager cerca una proprietà denominata `cloudManagerTarget` nelle proprietà dei pacchetti di contenuto generati. Se questa proprietà è impostata su `none`, il pacchetto viene ignorato e non distribuito.
 
 Il meccanismo per impostare questa proprietà dipende dal modo in cui la build produce il pacchetto di contenuti. Ad esempio, con `filevault-maven-plugin` è possibile configurare il plug-in come indicato di seguito.
 
@@ -322,11 +322,11 @@ Entrambi i rami presentano lo stesso ID commit.
 1. Una pipeline di sviluppo genera ed esegue `foo`.
 1. Successivamente una pipeline di produzione genera ed esegue `bar`.
 
-In questo caso, l’artefatto di `foo` viene riutilizzato per la pipeline di produzione poiché è stato identificato lo stesso hash di commit.
+In questo caso, l’artefatto da `foo` viene riutilizzato per la pipeline di produzione poiché è stato identificato lo stesso hash di commit.
 
 ### Disattivazione {#opting-out}
 
-Se lo desideri, puoi disattivare il comportamento di riutilizzo per specifiche pipeline impostando la variabile di pipeline `CM_DISABLE_BUILD_REUSE` su `true`. Configurando questa variabile, l’hash di commit viene comunque estratto e gli artefatti risultanti vengono archiviati per un uso successivo. Tuttavia, gli eventuali artefatti archiviati in precedenza non vengono riutilizzati. Per comprendere questo comportamento, considera lo scenario seguente.
+Se lo desideri, puoi disattivare il comportamento di riutilizzo per specifiche pipeline impostando la variabile di pipeline `CM_DISABLE_BUILD_REUSE` su `true`. Se questa variabile è impostata, l’hash del commit viene ancora estratto e gli artefatti risultanti vengono archiviati per un utilizzo successivo, ma gli eventuali artefatti archiviati in precedenza non verranno riutilizzati. Per comprendere questo comportamento, considera lo scenario seguente.
 
 1. Viene creata una nuova pipeline.
 1. La pipeline viene eseguita (esecuzione n. 1) e il commit HEAD corrente è `becdddb`. L’esecuzione ha esito positivo e gli artefatti risultanti vengono archiviati.
@@ -340,6 +340,6 @@ Se lo desideri, puoi disattivare il comportamento di riutilizzo per specifiche p
 
 * Gli artefatti di generazione non vengono riutilizzati in diversi programmi, indipendentemente dal fatto che l’hash di commit sia identico.
 * Gli artefatti di generazione vengono riutilizzati all’interno dello stesso programma anche se il ramo e/o la pipeline sono diversi.
-* La [gestione delle versioni Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) sostituisce la versione del progetto esclusivamente nelle pipeline di produzione. Pertanto, se si utilizza lo stesso commit su una pipeline di distribuzione nell’ambiente di sviluppo e su una pipeline di produzione e la prima viene eseguita per prima, le versioni verranno distribuite nell’ambiente di staging e produzione senza essere modificate. Tuttavia, anche in questo caso verrà creato un tag.
+* La [gestione delle versioni Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) sostituisce la versione del progetto esclusivamente nelle pipeline di produzione. Pertanto, se lo stesso commit viene utilizzato sia su un’esecuzione di distribuzione nell’ambiente di sviluppo che su un’esecuzione di pipeline di produzione e la pipeline di distribuzione nell’ambiente di sviluppo viene eseguita per prima, le versioni vengono distribuite nell’ambiente di staging e produzione senza essere modificate. Tuttavia, anche in questo caso verrà creato un tag.
 * Se il recupero degli artefatti archiviati non ha esito positivo, la fase di build viene eseguita come se non fossero stati archiviati artefatti.
 * Le variabili di pipeline diverse da `CM_DISABLE_BUILD_REUSE` non vengono considerate quando Cloud Manager opta per riutilizzare gli artefatti di generazione creati in precedenza.

@@ -2,10 +2,10 @@
 title: Scopri di più sullo sviluppo di CMS headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri la tecnologia headless e perché utilizzarla.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 7ded4f891f5ab5c1562044772ea3304fc07b173e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Questo documento è utile per comprendere la distribuzione dei contenuti headles
 
 ## Distribuzione contenuti full-stack {#full-stack}
 
-Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da usare e su larga scala, le aziende li hanno sfruttati come punto centrale per gestire messaggi, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
+Fin dall&#39;introduzione dei sistemi CMS (Content Management System) su larga scala e facili da utilizzare, le aziende hanno utilizzato questi sistemi come posizione centrale per gestire messaggi, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
 
 ![Il classico CMS full-stack](assets/full-stack.png)
 
@@ -84,7 +84,7 @@ C&#39;è ancora bisogno di disporre di API REST affidabili. Tuttavia le richiest
 
 La distribuzione di contenuti headless utilizza spesso le API GraphQL. GraphQL consente un trasferimento senza stato simile, ma consente query più mirate, riducendo il numero totale di query necessarie e migliorando le prestazioni. È comune vedere le soluzioni utilizzare un mix di REST e GraphQL, essenzialmente scegliendo lo strumento migliore per il lavoro in corso.
 
-Qualunque sia l’API scelta, definendo un sistema headless basato su API comuni, puoi sfruttare il browser più recente e altre tecnologie web come le app web progressive (PWA). Le API creano un’interfaccia standard facilmente estensibile e adattabile.
+Indipendentemente dall’API scelta, definendo un sistema headless basato su API comuni, puoi utilizzare il browser più recente e altre tecnologie web, come le app web progressive (PWA). Le API creano un’interfaccia standard facilmente estensibile e adattabile.
 
 In genere, il rendering del contenuto viene eseguito sul lato client. Normalmente, ciò significa che il contenuto viene richiamato da un utente su un dispositivo mobile, il CMS lo distribuisce e il dispositivo mobile (il client) è responsabile del rendering del contenuto servito. Se il dispositivo è vecchio o altrimenti lento, anche l’esperienza digitale è lenta.
 
@@ -110,7 +110,7 @@ Continuando a utilizzare questo percorso per sviluppatori, scoprirai come AEM su
 
 In qualità di leader di settore nella gestione dell&#39;esperienza digitale, Adobe si rende conto che la soluzione ideale per le sfide del mondo reale che i creatori di esperienze affrontano raramente è una scelta binaria. Questo è il motivo per cui AEM non solo supporta entrambi i modelli, ma consente anche di creare una combinazione unica perfetta che unisce i vantaggi di uno stack headless e completo, per aiutarti a servire al meglio i consumatori dei contenuti, ovunque si trovino.
 
-Questo percorso si concentra sul modello di distribuzione dei contenuti unicamente headless. Tuttavia, una volta appresi questi concetti fondamentali, è possibile continuare ad esplorare le possibilità di entrambi i modelli.
+Questo percorso si concentra sul modello di distribuzione dei contenuti unicamente headless. Tuttavia, una volta acquisite queste conoscenze fondamentali, puoi scoprire come utilizzare la potenza di entrambi i modelli.
 
 ## Passaggio successivo {#what-is-next}
 

@@ -2,9 +2,9 @@
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2154'
 ht-degree: 62%
 
 ---
@@ -46,7 +46,7 @@ Ulteriori informazioni [le risorse relative alla guida sono disponibili nelle co
 
 ## Browser Componenti   {#components-browser}
 
-I componenti sono gli elementi costitutivi dei contenuti AEM. Per creare la pagina dei contenuti con AEM, posiziona più componenti su una pagina e configurane le relative opzioni.
+I componenti sono gli elementi costitutivi dei contenuti AEM. Posiziona più componenti su una pagina e configurane le opzioni per creare la pagina dei contenuti con AEM.
 
 Il browser Componenti mostra tutti i componenti disponibili per la pagina corrente. Questi possono essere trascinati nella posizione appropriata, quindi modificati per aggiungere il contenuto.
 
@@ -60,21 +60,21 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
 * **Dispositivo mobile (ad esempio iPad)**
 
-   Il browser Componenti copre completamente la pagina in fase di modifica.
+  Il browser Componenti copre completamente la pagina in fase di modifica.
 
-   Per aggiungere un componente alla pagina, tocca e tieni premuto il componente richiesto e spostalo verso destra (il browser componenti si chiude per mostrare nuovamente la pagina), dove puoi posizionare il componente.
+  Per aggiungere un componente alla pagina, tocca e tieni premuto il componente richiesto e spostalo verso destra (il browser componenti si chiude per mostrare nuovamente la pagina), dove puoi posizionare il componente.
 
-   ![Browser componenti per dispositivi mobili](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
+  ![Browser componenti per dispositivi mobili](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **Dispositivo desktop**
 
-   Il browser Componenti viene aperto sul lato sinistro della finestra.
+  Il browser Componenti viene aperto sul lato sinistro della finestra.
 
-   Per aggiungere un componente alla pagina, fai clic sul componente richiesto e trascinalo nella posizione desiderata.
+  Per aggiungere un componente alla pagina, fai clic sul componente richiesto e trascinalo nella posizione desiderata.
 
-   ![Browser componenti per desktop](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+  ![Browser componenti per desktop](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-   I componenti sono rappresentati da
+  I componenti sono rappresentati da
 
    * Nome componente
    * Gruppo di componenti (in grigio)
@@ -82,16 +82,16 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
       * Le icone dei componenti standard sono monocromatiche.
       * Le abbreviazioni sono sempre i primi due caratteri del nome del componente.
 
-   Dalla barra degli strumenti nella parte superiore del browser **Componenti**, puoi effettuare le seguenti operazioni:
+  Dalla barra degli strumenti nella parte superiore del browser **Componenti**, puoi effettuare le seguenti operazioni:
 
    * Filtrare i componenti per nome
    * Limitare la visualizzazione a uno specifico gruppo selezionandolo dall’elenco a discesa
 
-   Per una descrizione più dettagliata del componente, tocca o fai clic sull’icona delle informazioni posta accanto al componente nel browser **Componenti** (se disponibile). Ad esempio, per il **frammento di contenuto**:
+  Per una descrizione più dettagliata del componente, tocca o fai clic sull’icona delle informazioni posta accanto al componente nel browser **Componenti** (se disponibile). Ad esempio, per il **frammento di contenuto**:
 
-   ![Informazioni sul browser Componenti](/help/sites-cloud/authoring/assets/component-browser-information.png)
+  ![Informazioni sul browser Componenti](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
-   Per ulteriori informazioni sui componenti disponibili, consulta la sezione sulla [console Componenti](/help/sites-cloud/authoring/features/components-console.md).
+  Per ulteriori informazioni sui componenti disponibili, consulta la sezione sulla [console Componenti](/help/sites-cloud/authoring/features/components-console.md).
 
 >[!NOTE]
 >
@@ -136,19 +136,19 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
 * **Dispositivo mobile**
 
-   Il browser Risorse copre completamente la pagina in fase di modifica.
+  Il browser Risorse copre completamente la pagina in fase di modifica.
 
-   Per aggiungere una risorsa alla pagina, tocca e tieni premuto sulla risorsa richiesta, quindi spostala verso destra: il browser Risorse si chiude per mostrare di nuovo la pagina, dove puoi aggiungere la risorsa al componente richiesto.
+  Per aggiungere una risorsa alla pagina, tocca e tieni premuto sulla risorsa richiesta, quindi spostala verso destra: il browser Risorse si chiude per mostrare di nuovo la pagina, dove puoi aggiungere la risorsa al componente richiesto.
 
-   ![Browser risorse per dispositivi mobili](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
+  ![Browser risorse per dispositivi mobili](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **Dispositivo desktop**
 
-   Il browser Risorse viene aperto sul lato sinistro della finestra.
+  Il browser Risorse viene aperto sul lato sinistro della finestra.
 
-   Per aggiungere una risorsa alla pagina, fai clic sulla risorsa richiesta e trascinala sul componente o sulla posizione desiderata.
+  Per aggiungere una risorsa alla pagina, fai clic sulla risorsa richiesta e trascinala sul componente o sulla posizione desiderata.
 
-   ![Browser risorse sul desktop](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
+  ![Browser risorse sul desktop](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
@@ -182,13 +182,13 @@ Facendo clic sul componente, questo viene evidenziato nell’editor pagina. Le a
 
 * Ad esempio, una pagina di base:
 
-   ![Struttura contenuto evidenziata](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
+  ![Struttura contenuto evidenziata](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
-   I componenti di una pagina di base avranno le consuete opzioni.
+  I componenti di una pagina di base avranno le consuete opzioni.
 
-   Se il componente su cui fai clic nella struttura ad albero è modificabile, a destra del nome compare un’icona a forma di chiave inglese. Facendo clic su questa icona si avvia direttamente la finestra di dialogo di modifica del componente.
+  Se il componente su cui fai clic nella struttura ad albero è modificabile, a destra del nome compare un’icona a forma di chiave inglese. Facendo clic su questa icona si avvia direttamente la finestra di dialogo di modifica del componente.
 
-   ![Pulsante modifica Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+  ![Pulsante modifica Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
 * Oppure una pagina che fa parte di una [live copy](/help/sites-cloud/administering/msm/overview.md), dove i componenti vengono ereditati da un’altra pagina, ad esempio.
 
@@ -285,7 +285,6 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* La [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
 >
 
-
 ## Selezione del percorso {#path-selection}
 
 Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso: [campi percorso](#path-fields) offerta di completamento automatico e il [browser percorsi](#path-browser) consente una selezione più solida.
@@ -316,7 +315,7 @@ Il browser Percorsi è organizzato come la [vista a colonne](/help/sites-cloud/a
 * In qualsiasi momento puoi utilizzare il campo di ricerca nella parte superiore della finestra di dialogo. Fai clic su **X** nel campo di ricerca per cancellare la ricerca.
 * Per limitare l’ambito della ricerca, puoi visualizzare le opzioni filtro e filtrare il risultato in base a un determinato percorso.
 
-   ![Opzione Filtri](/help/sites-cloud/authoring/assets/filters-option.png)
+  ![Opzione Filtri](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## Scelte rapide da tastiera {#keyboard-shortcuts}
 

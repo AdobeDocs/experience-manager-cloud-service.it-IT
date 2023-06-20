@@ -2,10 +2,10 @@
 title: Guida introduttiva ad AEM headless as a Cloud Service
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3090'
-ht-degree: 98%
+source-wordcount: '3087'
+ht-degree: 94%
 
 ---
 
@@ -91,9 +91,9 @@ Scoprirai di più su queste API e come utilizzarle in una parte successiva del p
 
 AEM supporta sia i modelli di CMS full headless che quelli tradizionali full stack o headful. Tuttavia AEM offre non solo queste due opzioni esclusive, ma anche la possibilità di supportare modelli ibridi che combinano i vantaggi di entrambi, offrendo una flessibilità unica per il vostro progetto headless.
 
-Al fine di garantire la comprensione dei concetti headless, questo Percorso per sviluppatori headless di AEM si concentra sul modello headless puro per consentirti di iniziare a lavorare il prima possibile senza conoscere il codice in AEM.
+Per garantire la tua comprensione dei concetti headless, questo Percorso per sviluppatori AEM headless si concentra sul modello headless puro per farti iniziare il prima possibile senza codifica in AEM.
 
-Tuttavia, è necessario essere consapevoli delle possibilità ibride aggiuntive disponibili una volta comprese le caratteristiche di AEM headless. Questi casi sono indicati di seguito perché possiate prenderne visione. Al termine del percorso, riceverai informazioni più dettagliate su questi concetti nel caso in cui sia necessaria tale flessibilità per il tuo progetto.
+Tuttavia, è necessario essere consapevoli delle possibilità ibride aggiuntive disponibili una volta comprese le caratteristiche di AEM headless. Questi casi sono indicati di seguito perché possiate prenderne visione. Al termine del percorso, riceverai informazioni più dettagliate su questi concetti, nel caso in cui il progetto richieda tale flessibilità.
 
 ### È possibile già un utilizzo esterno del contenuto headless, ad esempio un’applicazione a pagina singola (SPA). {#already-have-a-spa}
 
@@ -145,7 +145,7 @@ Per ogni progetto riuscito è importante definire chiaramente non solo i requisi
 
 È importante disporre di un ambito chiaramente definito per il progetto. L’ambito segnala i criteri di accettazione e consente di stabilire una definizione di operazione completata.
 
-La prima domanda che dovete porre è “Cosa sto cercando di fare con AEM headless?” In generale, la risposta dovrebbe essere che disponi o in futuro disporrai di un’applicazione di esperienza che hai creato con i tuoi strumenti di sviluppo e non con AEM. Questa applicazione di esperienza potrebbe essere un’app mobile, un sito web o qualsiasi altra applicazione di esperienza rivolta ai clienti e alle clienti finali. L’obiettivo nell’utilizzo di AEM headless è alimentare l’applicazione di esperienza con contenuti creati, memorizzati e gestiti in AEM con API all’avanguardia che richiamerebbero AEM headless per recuperare contenuti o persino contenuti completamente CRUD direttamente dall’applicazione di esperienza. Se questo non è quello che stai cercando di fare, probabilmente vorrai [tornare indietro per consultare la documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) e trovare la sezione che meglio si adatta a ciò che desideri realizzare.
+La prima domanda che dovete porre è “Cosa sto cercando di fare con AEM headless?” In generale, la risposta dovrebbe essere che in futuro si dispone o si disporrà di un’applicazione Experience creata con i propri strumenti di sviluppo e non con l’AEM. Questa applicazione di esperienza potrebbe essere un’app mobile, un sito web o qualsiasi altra applicazione di esperienza rivolta ai clienti e alle clienti finali. L’obiettivo nell’utilizzo di AEM headless è alimentare l’applicazione di esperienza con contenuti creati, memorizzati e gestiti in AEM con API all’avanguardia che richiamerebbero AEM headless per recuperare contenuti o persino contenuti completamente CRUD direttamente dall’applicazione di esperienza. Se questo non è quello che stai cercando di fare, probabilmente vorrai [tornare indietro per consultare la documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) e trovare la sezione che meglio si adatta a ciò che desideri realizzare.
 
 ### Ruoli e responsabilità {#roles-responsibilities}
 
@@ -179,9 +179,9 @@ Creare un piano su quali contenuti devono essere tradotti.
 * Hai bisogno di lingue diverse o anche di una lingua da adottare per caratteristiche regionali specifiche?
 * È necessario che contenuti multimediali complessi come immagini o video siano diversi per impostazioni internazionali diverse?
 
-Procedere con sicurezza sul flusso di lavoro di aggiornamento dei contenuti. Quale processo di approvazione deve supportare il sistema? È possibile utilizzare i flussi di lavoro AEM per automatizzare questo processo?
+Procedere con sicurezza sul flusso di lavoro di aggiornamento dei contenuti. Quale processo di approvazione deve supportare il sistema? È possibile utilizzare i flussi di lavoro dell’AEM per automatizzare questo processo?
 
-Tieni presente che la [gerarchia dei contenuti](#content-hierarchy) può essere sfruttata per semplificare la traduzione.
+Tieni presente che [gerarchia dei contenuti](#content-hierarchy) può essere utilizzato per semplificare la traduzione.
 
 Consulta la sezione [risorse aggiuntive](#additional-resources) per ulteriore documentazione sui flussi di lavoro AEM e gli strumenti di traduzione, compresi i collegamenti al Percorso di traduzione headless di AEM.
 
@@ -199,7 +199,7 @@ Le cartelle possono anche essere limitate per consentire solo alcuni tipi di con
 * Impedisce agli autori di contenuti di creare contenuti che non appartengono alla cartella.
 * Ottimizza il processo di creazione dei contenuti filtrando i tipi di contenuto consentiti nella cartella durante la creazione per mostrare solo i tipi di contenuto validi.
 
-La creazione di una struttura di contenuto appropriata rende più facile coordinare l’authoring di contenuti headless tra i diversi canali al fine di ottimizzare il riutilizzo dei contenuti. L’utilizzo dei contenuti su più canali migliora notevolmente l’efficienza della produzione dei contenuti e la gestione delle modifiche.
+Creando una struttura di contenuto appropriata, diventa più semplice coordinare l’authoring dei contenuti headless tra i canali in modo da massimizzare il riutilizzo dei contenuti. L’utilizzo dei contenuti su più canali migliora notevolmente l’efficienza della produzione dei contenuti e la gestione delle modifiche.
 
 ##### Stabilire buone convenzioni di denominazione {#naming-conventions}
 

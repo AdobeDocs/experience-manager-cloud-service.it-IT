@@ -2,9 +2,9 @@
 title: Pubblicazione di un canale in Screens as a Cloud Service
 description: Questa pagina descrive come pubblicare un canale in Screens as a Cloud Service.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '300'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 Puoi pubblicare contenuti da AEM Screens. La funzione Gestisci pubblicazione consente di distribuire aggiornamenti di contenuto dall’ambiente di authoring a quello di pubblicazione. Puoi pubblicare o annullare la pubblicazione dei contenuti per l’intero progetto AEM Screens o solo per uno dei tuoi canali, posizione, lettore o applicazione.
 
 >[!IMPORTANT]
->Dopo aver creato il canale o i canali nel progetto, è necessario pubblicarli per visualizzarli nella vista a elenco inventario di AEM Screens Services Provider.
+>Dopo aver creato il canale o i canali nel progetto, è necessario pubblicare i canali per visualizzarli nella vista a elenco inventario del provider di servizi AEM Screens.
 
 ## Obiettivo {#objective}
 
@@ -40,7 +40,7 @@ Per pubblicare il canale, segui i passaggi seguenti:
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >Clic **+ Includi elementi figlio** dalla barra delle azioni, deseleziona tutte le opzioni per pubblicare tutti i moduli del progetto, quindi fai clic su Aggiungi per pubblicare. Per impostazione predefinita, tutte le caselle sono selezionate e dovrai deselezionarle manualmente per pubblicare tutti i moduli del progetto.
+   >Clic **Includi elementi figlio** dalla barra delle azioni, deseleziona tutte le opzioni per pubblicare tutti i moduli del progetto, quindi fai clic su Aggiungi per pubblicare. Per impostazione predefinita, tutte le caselle sono selezionate e devi deselezionarle manualmente per pubblicare tutti i moduli del progetto.
 
 1. Dopo aver selezionato il canale da **Gestisci pubblicazione** procedura guidata, fai clic su **Pubblica** per pubblicare il canale.
 

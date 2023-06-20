@@ -1,13 +1,13 @@
 ---
 title: Panoramica Live Copy
-description: Scopri le nozioni di base della console Panoramica Live Copy per comprendere rapidamente lo stato delle Live Copy al fine di sincronizzare i contenuti.
+description: Scopri le nozioni di base della console Panoramica Live Copy per comprendere rapidamente lo stato delle Live Copy per la sincronizzazione dei contenuti.
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ La **Panoramica Live Copy** può essere aperto dal pannello laterale **Riferimen
 La **Panoramica Live Copy** può essere aperta quando si visualizzano le proprietà di una pagina blueprint:
 
 1. Apri **Proprietà** per la pagina blueprint appropriata.
-1. Apri la scheda **Blueprint**: l’opzione **Panoramica Live Copy** è disponibile nella barra degli strumenti superiore:
+1. Apri **Blueprint** tab: la scheda **Panoramica Live Copy** nella barra degli strumenti superiore è visualizzata l’opzione:
 
    ![Scheda Proprietà blueprint](../assets/live-copy-blueprint-tab.png)
 
@@ -72,7 +72,7 @@ Ad esempio, una configurazione di rollout è definita come `targetActivate`. Per
 La **Panoramica Live Copy** può essere utilizzata anche per eseguire azioni sulla Live Copy:
 
 1. Apri **Panoramica Live Copy**.
-1. Seleziona la pagina blueprint o Live Copy richiesta e la barra degli strumenti verrà aggiornata per mostrare le azioni disponibili. La [azioni](overview.md#terms-used) disponibile a seconda che sia stata selezionata una pagina [blueprint](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page).
+1. Seleziona la pagina blueprint o Live Copy richiesta e la barra degli strumenti viene aggiornata per mostrare le azioni disponibili. La [azioni](overview.md#terms-used) disponibile a seconda che sia stata selezionata una pagina [blueprint](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page).
 
 ### Azioni per una pagina blueprint {#actions-for-a-blueprint-page}
 

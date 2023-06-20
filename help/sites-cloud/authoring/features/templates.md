@@ -2,9 +2,9 @@
 title: Creazione di modelli di pagina
 description: Il modello definisce la struttura della pagina risultante e, con l’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4595'
 ht-degree: 61%
 
 ---
@@ -91,7 +91,7 @@ Quando crei un nuovo modello modificabile:
 >
 >Non inserire mai informazioni che devono essere internazionalizzate in un modello. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Per gli elementi modello che devono essere localizzati, come intestazioni e piè di pagina, utilizza le funzioni di [localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it).
+>Per gli elementi modello che devono essere localizzati, ad esempio intestazioni e piè di pagina, utilizzare [funzioni di localizzazione dei Componenti core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it)
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
@@ -202,7 +202,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-   L’ordine dei percorsi è irrilevante, tutti i percorsi verranno analizzati e tutti i modelli recuperati.
+   L’ordine dei percorsi è irrilevante. Vengono analizzati tutti i percorsi e recuperati tutti i modelli.
 
    >[!NOTE]
    >
@@ -513,18 +513,18 @@ Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **
 
 * I componenti sbloccati disponibili per la modifica vengono contrassegnati. Quando sono selezionati, presentano un bordo blu:
 
-   ![Modalità contenuto iniziale](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
+  ![Modalità contenuto iniziale](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
 
 * I componenti sbloccati dispongono di una barra degli strumenti che consente di modificare e configurare il contenuto:
 
-   ![Componente sbloccato](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
+  ![Componente sbloccato](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
 * Se un componente del contenitore è stato sbloccato (in modalità **Struttura**), è possibile aggiungervi nuovi componenti (in modalità **Contenuto iniziale**). I componenti aggiunti in modalità **Contenuto iniziale** possono essere spostati o eliminati dalle pagine risultanti.
 
-   È possibile aggiungere un componente utilizzando l’area **Trascina qui i componenti** o l’opzione **Inserisci nuovo componente** dalla barra degli strumenti del contenitore appropriato.
+  È possibile aggiungere un componente utilizzando l’area **Trascina qui i componenti** o l’opzione **Inserisci nuovo componente** dalla barra degli strumenti del contenitore appropriato.
 
-   ![Aggiungi componente](/help/sites-cloud/authoring/assets/templates-add-component.png)
-   ![Aggiungi componente](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
+  ![Aggiungi componente](/help/sites-cloud/authoring/assets/templates-add-component.png)
+  ![Aggiungi componente](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
 
 * Se il contenuto iniziale del modello viene aggiornato dopo la creazione delle pagine basate sul modello, tali pagine non saranno influenzate dalle modifiche apportate al contenuto iniziale del modello.
 
@@ -566,24 +566,24 @@ Per accedere alla finestra di dialogo **Criterio pagina**:
 
 * Puoi selezionare un criterio esistente per la pagina dal menu a discesa **Seleziona criterio**.
 
-   ![Selettore criteri](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+  ![Selettore criteri](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   Puoi aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto al menu a discesa **Seleziona criterio**. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**.
+  Puoi aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto al menu a discesa **Seleziona criterio**. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**.
 
-   ![Pulsante Aggiungi criterio](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+  ![Pulsante Aggiungi criterio](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
+  Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
 
-   ![Pulsante Copia criterio](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+  ![Pulsante Copia criterio](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 * Aggiungi un titolo al criterio nel campo **Titolo criterio**. Un criterio deve avere un titolo che permetta di riconoscerlo facilmente nel menu a discesa **Seleziona criterio**.
 
-   ![Titolo criterio](/help/sites-cloud/authoring/assets/templates-policy-title.png)
+  ![Titolo criterio](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * La descrizione del criterio nel campo **Descrizione criterio** è facoltativa.
 * Nella sezione **Altri modelli che utilizzano il criterio selezionato**, è possibile vedere facilmente quali altri modelli utilizzano i criteri selezionati nell’elenco a discesa **Seleziona criterio**.
 
-   ![Utilizzo dei criteri](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+  ![Utilizzo dei criteri](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### Proprietà pagina {#page-properties}
 
@@ -593,17 +593,17 @@ Con le proprietà della pagina è possibile definire le librerie lato client ric
 
 * Specifica le librerie lato client da applicare alle pagine create con questo modello. Immissione del nome di una libreria nel campo di testo della **Librerie lato client** sezione.
 
-   ![Librerie lato client](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+  ![Librerie lato client](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * Se sono necessarie più librerie, fai clic sul pulsante Aggiungi per aggiungere un ulteriore campo di testo al nome della libreria.
 
-   ![Pulsante Aggiungi](/help/sites-cloud/authoring/assets/templates-add-button.png)
+  ![Pulsante Aggiungi](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-   Aggiungi tutti i campi di testo necessari per le librerie lato client.
+  Aggiungi tutti i campi di testo necessari per le librerie lato client.
 
 * Se necessario, definisci la posizione relativa delle librerie trascinando i campi con la maniglia di trascinamento.
 
-   ![Maniglia di trascinamento](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
+  ![Maniglia di trascinamento](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
 
 >[!NOTE]
 >
@@ -633,13 +633,16 @@ Quando crei dei modelli, prendi in considerazione quanto segue:
 
       * Queste vengono applicate immediatamente alle pagine risultanti.
       * La pubblicazione del modello modificato è ancora necessaria per consentire ai visitatori di visualizzare le modifiche.
+
    * Modifiche ai criteri di contenuto e alle configurazioni di progettazione:
 
       * Questi si applicano immediatamente alle pagine risultanti.
       * La pubblicazione delle modifiche è necessaria per consentire ai visitatori di visualizzarle.
+
    * Modifiche al contenuto iniziale:
 
       * Si applicano solo alle pagine create dopo le modifiche al modello.
+
    * Le modifiche al layout dipendono dall’appartenenza o meno del componente modificato:
 
       * Solo struttura - applicato immediatamente

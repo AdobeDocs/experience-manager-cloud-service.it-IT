@@ -2,7 +2,7 @@
 title: Come si crea un modello di modulo adattivo?
 description: Crea modelli per moduli adattivi per definire la struttura di base e il contenuto iniziale tramite l’Editor modelli.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: c101ed97388b06dc71edfc9e13fac8a3e889c249
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Contiene le seguenti opzioni:
 
    * **Attiva/Disattiva pannello laterale**: consente di mostrare o nascondere la barra laterale.
    * **Informazioni pagina**: consente di specificare informazioni quali l’ora di pubblicazione/annullamento della pubblicazione, le miniature, le librerie lato client, i criteri di pagina e la libreria lato client della progettazione della pagina.
-      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
+     <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **Selettore modalità:** Consente di modificare la modalità.È possibile scegliere **[!UICONTROL Struttura]** modalità, **[!UICONTROL Contenuto iniziale]**, **[!UICONTROL Controllo layout]** modalità. La modalità Struttura consente di aggiungere e personalizzare intestazione e piè di pagina. La modalità Contenuto iniziale consente di personalizzare il contenuto del modulo.
    * **Anteprima:** Consente di visualizzare in anteprima l’aspetto del modello quando lo si pubblica. Potete utilizzare Selettore livello (Layer Selector) e Anteprima (Preview) per attivare o disattivare le modalità di modifica e anteprima.
 * **Barra laterale:** Fornisce i browser Contenuto, Proprietà, Risorse e Componenti.
@@ -156,7 +156,6 @@ Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo
 > * Puoi anche configurare il [!UICONTROL Documento record] direttamente dall’editor di moduli adattivi o dall’editor di modelli di moduli adattivi. Per ulteriori informazioni, consulta [Genera documento di record per Forms adattivo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
-
 ## Associare uno schema modello dati modulo a un modello {#associating-form-data-model-schema-in-template}
 
 Gli autori possono associare una [!UICONTROL Schema modello dati modulo] a un modello di modulo adattivo nell’editor di modelli. Consente agli autori di selezionare uno schema dall’editor modelli. Quando si associa uno schema a un modello e un autore di moduli crea un modulo basato su tale modello, lo schema viene preselezionato per il modulo. Consente agli autori di moduli di regolare l’utilizzo dello schema e consente di risparmiare tempo anche per l’autore di moduli. Per selezionare uno schema di modello dati modulo nell’editor modelli:
@@ -191,7 +190,7 @@ Perform the following steps to show and hide templates:
 1. Locate and open the **FormsManager Configuration** settings:
 
     * To show or hide out of the box Adaptive Forms template, check or uncheck the **Include Out of the box AF and AD Templates** option.
-    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
+    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, and you want it to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
 

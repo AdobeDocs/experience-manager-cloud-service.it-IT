@@ -2,10 +2,10 @@
 title: Utilizzo delle versioni di una pagina
 description: Creare, confrontare e ripristinare le versioni di una pagina
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 74%
+source-wordcount: '1512'
+ht-degree: 68%
 
 ---
 
@@ -64,17 +64,17 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 
 * L&#39;opzione **Ripristina questa versione** dalla barra [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
-   Ripristinare una versione precedente di una pagina selezionata.
+  Ripristinare una versione precedente di una pagina selezionata.
 
 * L&#39;opzione **Ripristina** dalla [barra delle azioni](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar) in alto
 
    * **Ripristina versione**
 
-      Ripristina le versioni delle pagine specificate nella cartella attualmente selezionata; questo può anche includere il ripristino di pagine precedentemente eliminate.
+     Ripristina le versioni delle pagine specificate nella cartella attualmente selezionata; questo può anche includere il ripristino di pagine precedentemente eliminate.
 
    * **Ripristina albero**
 
-      Ripristinare la versione dell&#39;intera struttura così come appariva a una data e un&#39;ora specificate può includere pagine precedentemente eliminate.
+     Ripristinare la versione dell&#39;intera struttura così come appariva a una data e un&#39;ora specificate può includere pagine precedentemente eliminate.
 
 >[!NOTE]
 >
@@ -83,11 +83,10 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 >Per maggiore chiarezza:
 >
 >1. Crea versioni di qualsiasi pagina.
->1. Le etichette iniziali e i nomi dei nodi di versione saranno 1.0, 1.1, 1.2 e così via.
+>1. Le etichette iniziali e i nomi dei nodi di versione sono 1.0, 1.1, 1.2 e così via.
 >1. Ripristina la prima versione, ovvero 1.0.
 >1. Crea di nuovo le nuove versioni.
->1. Le etichette e i nomi dei nodi generati saranno ora 1.0.0, 1.0.1, 1.0.2, ecc.
-
+>1. Le etichette e i nomi dei nodi generati sono ora 1.0.0, 1.0.1, 1.0.2 e così via.
 
 ### Ripristina una versione {#revert-to-a-version}
 
@@ -95,7 +94,7 @@ Per **ripristinare** la pagina selezionata in una versione precedente:
 
 1. Passa alla pagina in cui desideri ripristinare una versione precedente.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**. Vengono elencate le versioni disponibili per la pagina selezionata.
+1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**. Vengono elencate le versioni della pagina selezionata.
 1. Seleziona la versione da ripristinare. Vengono visualizzate le opzioni possibili:
 
    ![Ripristina questa versione](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -115,11 +114,10 @@ Questo metodo può essere utilizzato per ripristinare versioni di pagine specifi
    >Se:
    >* hai selezionato una singola pagina che non ha mai avuto pagine figlie,
    >* o nessuna delle pagine della cartella dispone di versioni,
-
    >
    >Il display sarà quindi vuoto in quanto non sono disponibili versioni applicabili.
 
-1. Vengono elencate le versioni disponibili:
+1. Sono elencate le versioni disponibili:
 
    ![Ripristina versione - Elenco di tutte le pagine della cartella](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
@@ -151,9 +149,9 @@ Questo metodo può essere utilizzato per ripristinare una versione di una strutt
 
 1. Imposta il contrassegno **Pagine non versionate salvate** se necessario:
 
-   * Se è attiva (selezionata), tutte le pagine senza versione verranno mantenute e non saranno interessate dal ripristino.
+   * Se è attiva (selezionata), tutte le pagine senza versione vengono mantenute e non sono interessate dal ripristino.
 
-   * Se non è attiva (deselezionata), tutte le pagine non versionate verranno rimosse in quanto non esistevano nella struttura versionata.
+   * Se non è attiva (deselezionata), tutte le pagine senza versione vengono rimosse in quanto non esistevano nella struttura con versione.
 
 1. Seleziona **Ripristina** per la versione selezionata della struttura da ripristinare come versione *attuale*.
 
@@ -164,7 +162,7 @@ Puoi visualizzare in anteprima una versione specifica:
 1. Passare alla pagina che si desidera confrontare.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
-1. Verranno elencate le versioni della pagina. Seleziona la versione da visualizzare in anteprima:
+1. Vengono elencate le versioni della pagina. Seleziona la versione da visualizzare in anteprima:
 
    ![Anteprima versione](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -183,7 +181,7 @@ Per confrontare una versione precedente con la pagina corrente:
 1. Passare alla pagina che si desidera confrontare.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
-1. Verranno elencate le versioni della pagina. Seleziona la versione da confrontare:
+1. Vengono elencate le versioni della pagina. Seleziona la versione da confrontare:
 
    ![Confronto delle versioni](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -197,7 +195,7 @@ Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di 
 >
 >[Timewarp può essere utilizzato anche con Launches per visualizzare anteprime.](/help/sites-cloud/authoring/launches/preview.md)
 
-Poiché la creazione di contenuti è un processo continuo e collaborativo, lo scopo di Timewarp è di consentire agli autori di tenere traccia del sito web pubblicato nel tempo, in modo da comprendere in che modo è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione.
+Poiché la creazione di contenuti è un processo continuo e collaborativo, lo scopo di Timewarp è quello di consentire agli autori di tenere traccia del sito web pubblicato nel tempo, in modo che possano capire come è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione.
 
 Per effettuare questo collegamento:
 

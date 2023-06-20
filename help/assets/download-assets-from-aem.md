@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1239'
-ht-degree: 6%
+source-wordcount: '1238'
+ht-degree: 7%
 
 ---
 
@@ -79,7 +79,7 @@ Per scaricare le risorse, effettua le seguenti operazioni:
 
    | Opzione di download | Descrizione |
    |---|---|
-   | **[!UICONTROL Crea una cartella separata per ogni risorsa]** | Seleziona questa opzione per creare una cartella per ogni risorsa contenente tutte le relative rappresentazioni scaricate. Se non è selezionata, ogni risorsa (e le relative rappresentazioni se sono selezionate per il download) sarà contenuta nella cartella principale dell’archivio generato. |
+   | **[!UICONTROL Crea una cartella separata per ogni risorsa]** | Seleziona questa opzione per creare una cartella per ogni risorsa contenente tutte le relative rappresentazioni scaricate. Se non è selezionata, ogni risorsa (e le relative rappresentazioni se sono selezionate per il download) è contenuta nella cartella principale dell’archivio generato. |
    | **[!UICONTROL E-mail]** | Seleziona questa opzione per inviare una notifica e-mail (contenente un collegamento al download) a un altro utente. L&#39;utente destinatario deve essere membro di `dam-users` gruppo. I modelli di e-mail standard sono disponibili nelle seguenti posizioni:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> I modelli personalizzati durante la distribuzione sono disponibili nelle posizioni seguenti: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Puoi memorizzare modelli personalizzati specifici del tenant nelle seguenti posizioni:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Risorsa/e]** | Seleziona questa opzione per scaricare la risorsa nella sua forma originale.<br>L’opzione Risorse secondarie è disponibile se la risorsa originale contiene risorse secondarie. |
    | **[!UICONTROL Rappresentazione/i]** | Una rappresentazione è la rappresentazione binaria di una risorsa. Le risorse hanno una rappresentazione primaria, quella del file caricato. Possono avere un numero qualsiasi di rappresentazioni. <br> Con questa opzione, puoi selezionare le rappresentazioni da scaricare. Le rappresentazioni disponibili dipendono dalla risorsa selezionata. |
@@ -140,19 +140,18 @@ Se non hai bisogno della funzionalità di download, disattiva il servlet per evi
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
 >* [Scaricare risorse protette DRM](drm.md)
 >* [Scaricare risorse utilizzando l’app desktop Experience Manager su desktop Win o Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [Scaricare risorse tramite Adobe Assets Link dalle app Adobe Creative Cloud supportate](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)
-

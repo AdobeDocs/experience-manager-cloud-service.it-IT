@@ -2,10 +2,10 @@
 title: Scopri come creare modelli per frammenti di contenuto in AEM
 description: Scopri i concetti e la meccanica della modellazione dei contenuti per i CMS headless utilizzando Modelli per frammenti di contenuto.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 Dopo aver selezionato questa opzione, passa alla posizione del modello e seleziona **Crea**. Qui puoi inserire vari dettagli chiave.
 
-L’opzione **Abilita modello** è attivata per impostazione predefinita. Ciò significa che il modello sarà disponibile per l’uso (nella creazione di frammenti di contenuto) non appena lo avrai salvato. Se lo desideri, puoi disattivarlo; in seguito potrai abilitare (o disabilitare) un modello esistente.
+L’opzione **Abilita modello** è attivata per impostazione predefinita. Questo significa che il modello è disponibile per l’uso (nella creazione di frammenti di contenuto) non appena lo hai salvato. Se lo desideri, puoi disattivarlo; in seguito potrai abilitare (o disabilitare) un modello esistente.
 
 ![Crea modello per frammento di contenuto](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -96,7 +96,7 @@ I modelli per frammenti di contenuto devono essere pubblicati quando/prima che v
 
 >[!NOTE]
 >
->Se un autore cerca di pubblicare un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
+>Se un autore tenta di pubblicare un frammento di contenuto per il quale il modello non è ancora stato pubblicato, un elenco di selezione lo indica e il modello viene pubblicato con il frammento.
 
 Non appena un modello viene pubblicato, viene *bloccato* in modalità SOLA LETTURA sull’autore. Questo serve a evitare modifiche che potrebbero causare errori agli schemi e alle query GraphQL esistenti, soprattutto nell’ambiente di pubblicazione. È indicato nella console come **Bloccato**.
 

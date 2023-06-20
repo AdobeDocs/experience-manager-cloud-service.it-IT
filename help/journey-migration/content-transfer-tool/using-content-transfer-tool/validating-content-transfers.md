@@ -2,9 +2,9 @@
 title: Convalida dei trasferimenti di contenuto
 description: Utilizzare lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuti
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1062'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Gli utenti possono determinare in modo affidabile se tutti i contenuti estratti 
 >
 >Questa funzione sarà disponibile a partire dalla versione 1.8.x dello strumento Content Transfer (CTT). L’ambiente di destinazione AEM Cloud Service deve eseguire almeno la versione 6158 o successiva. Richiede anche che l’ambiente di origine sia configurato per essere eseguito [pre-copia](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La funzionalità di convalida cerca il file azcopy.config nell&#39;origine. Se il file non viene trovato, la convalida non verrà eseguita. Per ulteriori informazioni su come configurare un file azcopy.config, vedere [questa pagina](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-La convalida di un trasferimento di contenuto è una funzione facoltativa. L’abilitazione di questa funzione aumenta sia il tempo necessario per eseguire un’estrazione che l’acquisizione. Per utilizzare la funzione, abilitala nella console di sistema dell’ambiente AEM sorgente seguendo questi passaggi:
+La convalida di un trasferimento di contenuto è una funzione facoltativa. L’abilitazione di questa funzione aumenta sia il tempo necessario per eseguire un’estrazione che l’acquisizione. Per utilizzare la funzione, abilitala nella Console di sistema dell’ambiente AEM sorgente seguendo questi passaggi:
 
 1. Passa alla console web di Adobe Experience Manager nell’istanza sorgente, da **Strumenti - Operazioni - Console web** o direttamente all’URL in *https://serveraddress:serverport/system/console/configMgr*
 1. Cerca **Configurazione del servizio di estrazione dello strumento Content Transfer**
@@ -36,7 +36,7 @@ Per ulteriori informazioni su come installare lo strumento Content Transfer (Tra
 
 Con la convalida della migrazione abilitata nell’ambiente AEM di origine, inizia un’estrazione.
 
-Se **Sovrascrivi contenitore staging durante l’estrazione** è abilitato, tutti i nodi coinvolti nell’estrazione verranno registrati nel riepilogo del percorso di estrazione. Quando si utilizza questa impostazione, è importante abilitare **Cancella i contenuti esistenti nell’istanza Cloud prima dell’acquisizione** durante l’acquisizione, altrimenti potrebbero mancare dei nodi dal digest di acquisizione. Si tratta dei nodi già presenti sul target dalle acquisizioni precedenti.
+Se **Sovrascrivi contenitore staging durante l’estrazione** è abilitato, tutti i nodi coinvolti nell’estrazione vengono registrati nel riepilogo del percorso di estrazione. Quando si utilizza questa impostazione, è importante abilitare **Cancella i contenuti esistenti nell’istanza Cloud prima dell’acquisizione** durante l’acquisizione, altrimenti potrebbero mancare dei nodi dal digest di acquisizione. Si tratta dei nodi già presenti sul target dalle acquisizioni precedenti.
 
 Per un’illustrazione grafica, consulta gli esempi seguenti:
 
@@ -44,37 +44,37 @@ Per un’illustrazione grafica, consulta gli esempi seguenti:
 
 * **Estrazione (sovrascrittura)**
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **Acquisizione (Wipe)**
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+  ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **Note**
 
-   Questa combinazione di &quot;Sovrascrivi&quot; e &quot;Cancella&quot; darà risultati di convalida coerenti, anche per acquisizioni ripetute.
+  Questa combinazione di &quot;Sovrascrivi&quot; e &quot;Cancella&quot; darà risultati di convalida coerenti, anche per acquisizioni ripetute.
 
 ### Esempio 2 {#example-2}
 
 * **Estrazione**
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **Acquisizione**
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+  ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **Note**
 
-   Questa combinazione di &quot;Sovrascrivi&quot; e &quot;Cancella&quot; genera risultati di convalida coerenti per l’acquisizione iniziale.
+  Questa combinazione di &quot;Sovrascrivi&quot; e &quot;Cancella&quot; genera risultati di convalida coerenti per l’acquisizione iniziale.
 
-   Se l’acquisizione viene ripetuta, il riepilogo dell’acquisizione sarà vuoto e la convalida non riuscirà. Il digest di acquisizione sarà vuoto perché tutti i nodi di questa estrazione saranno già presenti nella destinazione.
+  Se l’acquisizione viene ripetuta, il digest di acquisizione è vuoto e la convalida non è riuscita. Il digest di acquisizione è vuoto perché tutti i nodi di questa estrazione saranno già presenti nella destinazione.
 
 Una volta completata l’estrazione, inizia l’acquisizione.
 
 La parte superiore del registro di acquisizione conterrà una voce simile a `aem-ethos/tools:1.2.438`. Verifica che il numero di versione sia **1,2,438** o superiore, altrimenti la convalida non è supportata dal rilascio di AEM as a Cloud Service che si sta utilizzando.
 
-Una volta completata l’acquisizione e avviata la convalida, nel registro di acquisizione verrà annotata la seguente voce di registro:
+Una volta completata l’acquisizione e avviata la convalida, nel registro di acquisizione viene annotata la seguente voce di registro:
 
 ```
 Gathering artifacts for migration validation...
@@ -136,7 +136,7 @@ Oltre a essere incluso nel registro di acquisizione, il rapporto di convalida è
 
 Consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) per leggere i dettagli delle migrazioni principali e i motivi della necessità.
 
-Una volta completate correttamente l’estrazione e l’acquisizione, saranno disponibili un riepilogo e un rapporto della migrazione principale. Queste informazioni possono essere utilizzate per verificare quali utenti e gruppi sono stati migrati correttamente e, forse, per determinare perché alcuni non lo sono stati.
+Una volta completata correttamente l’estrazione e l’acquisizione, sono disponibili un riepilogo e un rapporto della migrazione principale. Queste informazioni possono essere utilizzate per verificare quali utenti e gruppi sono stati migrati correttamente e, forse, per determinare perché alcuni non lo sono stati.
 
 Per visualizzare queste informazioni, vai a Cloud Acceleration Manager. Fai clic sulla scheda del progetto e poi sulla scheda Content Transfer (Trasferimento contenuti). Accedi a **Processi di acquisizione** e individua l’acquisizione da verificare. Fai clic sui tre punti (**...**) per tale acquisizione, quindi fai clic su **Visualizza riepilogo entità** nel menu a discesa.
 
@@ -148,7 +148,7 @@ Verrà visualizzata una finestra di dialogo con le informazioni di riepilogo. Ut
 
 >[!NOTE]
 >
->Se la mappatura utente è disattivata, verrà visualizzata un’altra variante di questa finestra di dialogo. Indica che la mappatura utente è stata disabilitata e non mostra i 3 campi che forniscono i valori di mappatura utente.
+>Se la mappatura utente è disattivata, viene visualizzata un&#39;altra variante di questa finestra di dialogo. Indica che la mappatura utente è stata disabilitata e non mostra i 3 campi che forniscono i valori di mappatura utente.
 
 ## Risoluzione dei problemi {#troubleshooting}
 

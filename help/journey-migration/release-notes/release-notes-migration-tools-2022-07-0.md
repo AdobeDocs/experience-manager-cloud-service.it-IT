@@ -3,9 +3,9 @@ title: Note sulla versione 2022.7.0 degli strumenti di migrazione in AEM as a Cl
 description: Note sulla versione 2022.7.0 degli strumenti di migrazione in AEM as a Cloud Service
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: cc52dfac1e7495d6a792bc7525720695022db8eb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '429'
 ht-degree: 9%
 
 ---
@@ -42,7 +42,7 @@ La data di pubblicazione dello strumento Content Transfer v2.0.12 è il 19 lugli
 * Per facilitare il debug dei problemi di connessione SSL/TLS durante le estrazioni, gli utenti ora possono abilitare la registrazione SSL.
 * Per facilitare il debug dei problemi di connettività di origine, i nomi dei sottodomini vengono ora stampati nei registri quando la connessione ad Azure non riesce.
 * Per facilitare il debug dei problemi durante la pre-copia, i registri AzCopy ora vengono aggiunti ai registri di estrazione quando la pre-copia non riesce.
-* Per evitare di ottenere risultati non aggiornati per il controllo dimensioni, gli utenti potranno rieseguire il controllo dimensioni solo dopo aver completato un controllo dimensioni precedente.
+* Per evitare di ottenere risultati non aggiornati in Dimensioni di controllo, gli utenti possono rieseguire Dimensioni di controllo solo dopo aver completato un controllo precedente.
 
 ### Correzioni di bug {#bug-fixes-ctt}
 

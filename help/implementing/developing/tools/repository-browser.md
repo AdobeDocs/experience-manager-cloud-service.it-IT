@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: Il browser dell’archivio fornisce una vista in sola lettura dell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 43429562ea4292f38d3459e03185270ec950a58a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '885'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Introduzione {#introduction}
 
-Il browser dell’archivio è uno strumento per sviluppatori che fornisce una visualizzazione di sola lettura nell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima. È progettato per facilitare la visualizzazione della struttura del contenuto al fine di semplificare la visualizzazione o il debug del contenuto.
+Il browser dell’archivio è uno strumento per sviluppatori che fornisce una visualizzazione di sola lettura nell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima. È progettato per facilitare la visualizzazione della struttura del contenuto e semplificare la visualizzazione o il debug del contenuto.
 
 Accessibile dalla Console per sviluppatori, può essere utilizzato per sfogliare l’archivio di un’istanza di authoring o pubblicazione per un ambiente selezionato.
 
@@ -76,7 +76,7 @@ Inoltre, quando fai clic su una cartella, l’URL viene modificato dinamicamente
 
 Per la pubblicazione, per impostazione predefinita, il Browser dell’archivio mostrerà solo il contenuto pubblico, quindi alcune cartelle come `/conf` o `/home` non sarà visibile.
 
-Per rendere visibili tali posizioni, devi seguire la procedura seguente.
+Per rendere visibili tali posizioni, effettuare le seguenti operazioni.
 
 1. Fai clic sui tre punti accanto all’ambiente desiderato e seleziona **Gestisci accesso**
 

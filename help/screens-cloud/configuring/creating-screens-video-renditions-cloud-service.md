@@ -2,9 +2,9 @@
 title: Creazione di rappresentazioni video in Screens as a Cloud Service
 description: Questa pagina descrive come creare rappresentazioni video in Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ Per creare rappresentazioni video in Screens as a Cloud Service dal provider di 
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Assicurati di utilizzare il nome della codifica che inizia con &quot;screens-&quot;, solo queste rappresentazioni video verranno considerate per riprodurre l’esperienza video in Screens as a Cloud Service. Immetti il bitrate che funziona con i video (2500 kbps per i video a 720 px e 5000 kbps per i video a 1080 px).
+   >Assicurati di utilizzare il nome della codifica che inizia con &quot;screens-&quot;, solo queste rappresentazioni video sono considerate per riprodurre l’esperienza video in Screens as a Cloud Service. Immetti il bitrate che funziona con i video (2500 kbps per i video a 720 px e 5000 kbps per i video a 1080 px).
 
    >[!NOTE]
-   >Per lavorare con i video è possibile aggiungere più rappresentazioni video con larghezza/altezza/bitrate variabile. Ricorda che tutte le rappresentazioni degli schermi verranno scaricate dai dispositivi Screens, anche se il dispositivo riproduce solo la rappresentazione video.
+   >Per lavorare con i video è possibile aggiungere più rappresentazioni video con larghezza/altezza/bitrate variabile. Tutti gli schermi e i rendering vengono scaricati dai dispositivi Screens, anche se il dispositivo riproduce solo il rendering video.
 
 1. Fai clic su **Salva**.
 
@@ -66,4 +66,3 @@ Per creare rappresentazioni video in Screens as a Cloud Service dal provider di 
    >[!NOTE]
    >* Puoi creare più profili di elaborazione e applicarli alle cartelle corrispondenti, in modo che i video in tali cartelle ottengano le rappresentazioni video specifiche.
    >* Quando carichi dei video nella cartella in cui viene applicato il profilo di elaborazione, vengono elaborati i video e creati i rendering configurati, ulteriormente utilizzati dai dispositivi Screens per riprodurre i video.
-

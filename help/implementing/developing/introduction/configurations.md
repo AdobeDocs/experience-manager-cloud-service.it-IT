@@ -2,10 +2,10 @@
 title: Configurazioni e browser di configurazione
 description: Scopri le configurazioni dell’AEM e come gestiscono le impostazioni dell’area di lavoro nell’AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 3be936be09f205a73dd053ac28df936d58e50919
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 6%
+source-wordcount: '1492'
+ht-degree: 4%
 
 ---
 
@@ -62,7 +62,7 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
 
 >[!NOTE]
 >
->È possibile creare configurazioni utilizzando il Browser configurazioni solo se l’utente ha `admin` diritti. `admin` sono necessari anche diritti per assegnare diritti di accesso alla configurazione o per modificare in altro modo una configurazione.
+>È possibile creare configurazioni utilizzando il Browser configurazioni solo se l’utente ha `admin` diritti. `admin` I diritti sono necessari anche per assegnare i diritti di accesso alla configurazione o per modificare in altro modo una configurazione.
 
 #### Creazione di una configurazione  {#creating-a-configuration}
 
@@ -75,8 +75,8 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
    ![Creare la configurazione](assets/configuration-create.png)
 
    * Il **titolo** deve essere descrittivo.
-   * Il **nome** diventerà il nome del nodo nell’archivio.
-      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](naming-conventions.md)
+   * Il **Nome** diventa il nome del nodo nell’archivio.
+      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM.](naming-conventions.md)
       * Se necessario è possibile modificarlo.
 1. Controlla il tipo di configurazioni che desideri consentire.
    * [Segmenti Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -91,7 +91,7 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
 
 #### Modifica delle configurazioni e dei relativi diritti di accesso {#access-rights}
 
-Se consideri le configurazioni come aree di lavoro, puoi impostare i diritti di accesso su tali configurazioni al fine di stabilire chi può o meno accedere a tali aree di lavoro.
+Se consideri le configurazioni come aree di lavoro, puoi impostare i diritti di accesso su tali configurazioni per imporre a chi può o meno accedere a tali aree di lavoro.
 
 1. Accedi a AEM as a Cloud Service e dal menu principale seleziona **Strumenti** -> **Generale** -> **Browser configurazioni**.
 1. Seleziona la configurazione da modificare, quindi tocca o fai clic su **Proprietà** nella barra degli strumenti.

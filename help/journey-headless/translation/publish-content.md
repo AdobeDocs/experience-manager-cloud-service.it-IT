@@ -2,10 +2,10 @@
 title: Pubblicare contenuti headless tradotti
 description: Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1392'
+ht-degree: 98%
 
 ---
 
@@ -78,7 +78,7 @@ Il contenuto headless tradotto è ora pubblicato. È ora possibile accedervi e u
 
 >[!TIP]
 >
->Per pubblicare più traduzioni contemporaneamente, è possibile selezionare più elementi (ad esempio cartelle multilingue) durante la pubblicazione.
+>Durante la pubblicazione puoi selezionare più elementi (ovvero cartelle multilingue) in modo da poter pubblicare più traduzioni contemporaneamente.
 
 Quando si pubblicano i contenuti, sono disponibili opzioni aggiuntive, ad esempio per pianificare un’ora di pubblicazione, che vanno oltre l’ambito di questo percorso. Per ulteriori informazioni, consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine del documento.
 

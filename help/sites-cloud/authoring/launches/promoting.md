@@ -2,10 +2,10 @@
 title: Promozione dei lanci
 description: È necessario promuovere le pagine di lancio per spostare nuovamente il contenuto nell’origine (produzione) prima di pubblicarlo.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 47%
+source-wordcount: '816'
+ht-degree: 46%
 
 ---
 
@@ -40,12 +40,11 @@ ht-degree: 47%
 >* [Lanci: l’ordine degli eventi](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) per maggiori dettagli sulla promozione e la pubblicazione automatiche.
 >
 
-
 Puoi promuovere i lanci da **Sites** console o **Lanci** console:
 
 1. Apri:
    * La console **Sites** durante la navigazione nelle pagine sorgente:
-      1. Apri la [barra dei riferimenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) e seleziona la pagina sorgente desiderata utilizzando la [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md) (oppure seleziona e apri la barra dei riferimenti, l’ordine non è importante). Verranno visualizzati tutti i riferimenti.
+      1. Apri la [barra dei riferimenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) e seleziona la pagina sorgente desiderata utilizzando la [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md) (oppure seleziona e apri la barra dei riferimenti, l’ordine non è importante). Vengono visualizzati tutti i riferimenti.
       1. Seleziona **Lanci** (ad esempio Lanci (1)) per visualizzare un elenco dei lanci specifici.
       1. Seleziona il lancio specifico per visualizzare le azioni disponibili.
       1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
@@ -65,13 +64,13 @@ Puoi promuovere i lanci da **Sites** console o **Lanci** console:
       * **Promuovi la pagina corrente**
       * **Promuovi la pagina corrente e le sottopagine**
 
-      Ad esempio, quando selezioni solo la promozione delle pagine modificate:
+     Ad esempio, quando selezioni solo la promozione delle pagine modificate:
 
-      ![Promozione di un lancio](/help/sites-cloud/authoring/assets/launches-promote.png)
+     ![Promozione di un lancio](/help/sites-cloud/authoring/assets/launches-promote.png)
 
-      >[!NOTE]
-      >
-      >In questo modo viene coperto un singolo lancio. Se hai dei lanci nidificati, vedi [Promozione di un lancio nidificato](#promoting-a-nested-launch).
+     >[!NOTE]
+     >
+     >In questo modo viene coperto un singolo lancio. Se hai dei lanci nidificati, vedi [Promozione di un lancio nidificato](#promoting-a-nested-launch).
 1. Seleziona **Successivo** per procedere.
 1. Puoi rivedere le pagine da promuovere, a seconda dell’intervallo di pagine scelto:
 
@@ -119,7 +118,7 @@ Dopo aver creato un lancio nidificato, puoi promuoverlo nuovamente in qualsiasi 
    >
    >Le pagine elencate dipendono dal **Ambito** definite ed eventualmente le pagine che sono state modificate.
 
-1. Le modifiche verranno promosse e riflesse in **Lanci** console:
+1. Le modifiche vengono promosse e riflesse in **Lanci** console:
 
    ![Nella console Launches](/help/sites-cloud/authoring/assets/launches-console.png)
 

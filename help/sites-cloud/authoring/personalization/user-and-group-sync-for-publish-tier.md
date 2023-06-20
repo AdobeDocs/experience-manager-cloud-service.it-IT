@@ -2,10 +2,10 @@
 title: Registrazione, accesso e profilo utente
 description: Scopri di più su Registrazione, Accesso, Dati utente e Sincronizzazione dei gruppi per AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1170'
+ht-degree: 95%
 
 ---
 
@@ -104,7 +104,7 @@ I dati dell’utente finale possono essere inviati a fornitori di terze parti co
 
 ## Autorizzazioni (gruppi di utenti chiusi) {#permissions-closed-user-groups}
 
-I criteri di accesso al livello di pubblicazione, denominati anche gruppi di utenti chiusi, sono definiti nell’autore AEM come [qui descritto](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=it#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito Web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
+I criteri di accesso al livello di pubblicazione, denominati anche gruppi di utenti chiusi, sono definiti nell’autore AEM come [qui descritto](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=it#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
 
 * Se gli utenti effettuano l&#39;accesso autenticandosi con un provider di identità (IdP) utilizzando SAML, il gestore di autenticazione identificherà l&#39;appartenenza al gruppo degli utenti (che devono corrispondere ai CUG sul livello di pubblicazione) e manterrà l&#39;associazione tra l&#39;utente e il gruppo attraverso un record dell&#39;archivio
 * Se l&#39;accesso viene eseguito senza l&#39;integrazione IdP, il codice personalizzato può applicare le stesse relazioni di struttura dell&#39;archivio.

@@ -2,10 +2,10 @@
 title: Variabili di ambiente di Cloud Manager
 description: È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager e fornirle all’ambiente di runtime per l’utilizzo nella configurazione OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 100%
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ Tra i casi d’uso tipici per l’utilizzo delle variabili di ambiente vi sono:
 
 >[!NOTE]
 >
->Per poter aggiungere o modificare le variabili di ambiente è necessario avere il ruolo [**Responsabile dell’implementazione**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
+>Devi essere membro di [**Responsabile dell’implementazione** ruolo](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) per aggiungere o modificare variabili di ambiente.
 
 1. Accedi a Adobe Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager elenca i vari programmi disponibili. Seleziona il programma che desideri gestire.
@@ -59,7 +59,7 @@ Tra i casi d’uso tipici per l’utilizzo delle variabili di ambiente vi sono:
 
 1. Per salvare le variabili in modo permanente, seleziona **Salva**.
 
-Nella parte superiore della tabella, a fianco della variabile appena aggiunta, viene visualizzato un indicatore con lo stato **Aggiornamento in corso** per indicare che l’ambiente è in fase di aggiornamento con la configurazione. Al termine dell’operazione, la nuova variabile di ambiente sarà visibile nella tabella.
+Nella parte superiore della tabella, a fianco della variabile appena aggiunta, viene visualizzato un indicatore con lo stato **Aggiornamento in corso** per indicare che l’ambiente è in fase di aggiornamento con la configurazione. Al termine dell’operazione, la nuova variabile di ambiente è visibile nella tabella.
 
 ![Aggiornamento delle variabili](assets/updating-variables.png)
 
@@ -90,7 +90,7 @@ Dopo aver creato le variabili di ambiente, è possibile aggiornarle con il pulsa
 
 1. Dopo aver apportato tutte le modifiche di configurazione richieste, seleziona **Salva**.
 
-[Come per l’aggiunta delle variabili,](#add-variables) a fianco delle variabili appena aggiornate viene visualizzato un indicatore con lo stato **Aggiornamento in corso** per indicare che è in corso l’aggiornamento dell’ambiente con la configurazione. Al termine dell’operazione, le variabili di ambiente aggiornate saranno visibili nella tabella.
+[Come per l’aggiunta delle variabili,](#add-variables) a fianco delle variabili appena aggiornate viene visualizzato un indicatore con lo stato **Aggiornamento in corso** per indicare che è in corso l’aggiornamento dell’ambiente con la configurazione. Al termine dell’operazione, le variabili di ambiente aggiornate sono visibili nella tabella.
 
 >[!TIP]
 >

@@ -2,9 +2,9 @@
 title: Creazione e gestione dei canali in Screens as a Cloud Service
 description: Questa pagina descrive come creare e gestire i canali in Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ In questa sezione vengono visualizzate le seguenti informazioni:
 
 ### Utilizza i dettagli di assegnazione predefiniti per l’assegnazione a una visualizzazione {#default-display}
 
-I canali a cui sono assegnati dettagli di assegnazione predefiniti possono essere assegnati come di consueto; è stata aggiunta l’opzione per sfruttare i dettagli di assegnazione predefiniti, invece di definire manualmente ogni volta quelli personalizzati.
+I canali a cui sono assegnati dettagli di assegnazione predefiniti possono essere assegnati come di consueto; è stata aggiunta l’opzione per utilizzare i dettagli di assegnazione predefiniti invece di definire manualmente quelli personalizzati ogni volta.
 
 1. Passa alla pagina dei dettagli di visualizzazione a cui desideri assegnare il canale e fai clic su **Assegna canale**.
 in alternativa, seleziona la visualizzazione desiderata nella vista inventario e fai clic sul pulsante **Assegna canale**.
@@ -141,7 +141,7 @@ in alternativa, seleziona la visualizzazione desiderata nella vista inventario e
 
    ![immagine](/help/screens-cloud/assets/display/Assignments8.png)
 
-**Nota:** Un’assegnazione di canale che sfrutta i dettagli di assegnazione predefiniti non sarà modificabile nel contesto della visualizzazione.
+**Nota:** Un&#39;assegnazione di canale che utilizza i dettagli di assegnazione predefiniti non sarà modificabile nel contesto della visualizzazione.
 
 * Se è necessario modificarla in un&#39;assegnazione personalizzata, è necessario innanzitutto rimuoverla e quindi aggiungerla nuovamente utilizzando **Imposta dettagli assegnazione personalizzata** opzione.
 * Se è necessario modificare le proprietà dei dettagli di assegnazione predefiniti, è necessario farlo direttamente dalla pagina dei dettagli del canale.

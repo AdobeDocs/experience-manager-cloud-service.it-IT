@@ -2,10 +2,10 @@
 title: Creare un sito da un modello
 description: Scopri come creare rapidamente un nuovo sito AEM utilizzando un modello di sito.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 100%
+source-wordcount: '1485'
+ht-degree: 99%
 
 ---
 
@@ -85,7 +85,7 @@ L’utilizzo di un modello per creare un nuovo sito è molto semplice.
 
    ![Seleziona un modello](assets/select-site-template.png)
 
-1. Immetti un titolo per il sito. È possibile fornire il nome di un sito o verrà generato dal titolo, se omesso.
+1. Immetti un titolo per il sito. Se omesso, è possibile specificare o generare un nome di sito dal titolo.
 
    * Il titolo del sito viene visualizzato nella barra del titolo del browser.
    * Il nome del sito diventa parte dell’URL.

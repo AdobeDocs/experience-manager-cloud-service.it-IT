@@ -2,10 +2,10 @@
 title: Configurazione delle impostazioni OSGi per il livello di anteprima
 description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima i contenuti prima della pubblicazione.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 

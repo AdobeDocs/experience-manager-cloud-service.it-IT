@@ -3,9 +3,9 @@ title: Configurazione di OSGi per Adobe Experience Manager as a Cloud Service
 description: Configurazione OSGi con valori segreti e valori specifici dell’ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3318'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ Ad esempio, se l’AEM utilizza le modalità di esecuzione author e dev, i nodi 
 
 Se sono applicabili più configurazioni per lo stesso PID, viene applicata la configurazione con il maggior numero di modalità di esecuzione corrispondenti.
 
-La granularità di questa regola è a livello PID. Ciò significa che non è possibile definire alcune proprietà per lo stesso PID in `/apps/example/config.author/` e più specifici in `/apps/example/config.author.dev/` per lo stesso PID. La configurazione con il maggior numero di modalità di esecuzione corrispondenti avrà effetto per l’intero PID.
+La granularità di questa regola è a livello PID. Ciò significa che non è possibile definire alcune proprietà per lo stesso PID in `/apps/example/config.author/` e più specifici in `/apps/example/config.author.dev/` per lo stesso PID. La configurazione con il maggior numero di modalità di esecuzione corrispondenti è efficace per l’intero PID.
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ La console web AEM di Quickstart Jar per AEM SDK può essere utilizzata per conf
 
 >[!NOTE]
 >
->L’interfaccia utente di configurazione della console web dell’AEM scrive `.cfg.json` file nel repository. Pertanto, tieni presente questo al fine di evitare potenziali comportamenti imprevisti durante lo sviluppo locale, quando le configurazioni OSGi definite dal progetto AEM possono differire dalle configurazioni generate.
+>L’interfaccia utente di configurazione della console web dell’AEM scrive `.cfg.json` file nel repository. Pertanto, tieni presente questo flusso di lavoro per evitare potenziali comportamenti imprevisti durante lo sviluppo locale, quando le configurazioni OSGi definite dal progetto AEM possono differire dalle configurazioni generate.
 
 1. Accedi alla console web AEM di Quickstart Jar per l’SDK dell’AEM all’indirizzo `https://<host>:<port>/system/console` come utente amministratore
 1. Accedi a **OSGi** > **Configurazione**
@@ -260,7 +260,7 @@ I valori per le variabili non devono superare i 2048 caratteri.
 >
 >Esistono regole relative all’utilizzo di alcuni prefissi per i nomi delle variabili:
 >
->1. Nomi di variabili con prefisso `INTERNAL_`, `ADOBE_`, o `CONST_` sono riservati per Adobe. Tutte le variabili impostate dal cliente che iniziano con questi prefissi verranno ignorate.
+>1. Nomi di variabili con prefisso `INTERNAL_`, `ADOBE_`, o `CONST_` sono riservati per Adobe. Tutte le variabili impostate dal cliente che iniziano con questi prefissi vengono ignorate.
 >
 >1. I clienti non devono fare riferimento a variabili con prefisso `INTERNAL_` o `ADOBE_` o.
 >
@@ -480,7 +480,7 @@ Consulta [questa pagina](https://developer.adobe.com/experience-cloud/cloud-mana
 
 ### Impostazione dei valori tramite API {#setting-values-via-api}
 
-Una chiamata all’API distribuisce le nuove variabili e i nuovi valori in un ambiente Cloud, in modo simile a una tipica pipeline di distribuzione del codice del cliente. I servizi di authoring e pubblicazione verranno riavviati e faranno riferimento ai nuovi valori, in genere dopo alcuni minuti.
+Una chiamata all’API distribuisce le nuove variabili e i nuovi valori in un ambiente Cloud, in modo simile a una tipica pipeline di distribuzione del codice del cliente. I servizi di authoring e pubblicazione vengono riavviati e fanno riferimento ai nuovi valori, in genere dopo alcuni minuti.
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -558,7 +558,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 Poiché i valori di configurazione segreti e specifici dell’ambiente si trovano al di fuori di Git e pertanto non fanno parte dei meccanismi formali di distribuzione di Adobe Experience Manager as a Cloud Service, il cliente deve gestire, gestire e integrare nel processo di distribuzione di Adobe Experience Manager as a Cloud Service.
 
-Come accennato in precedenza, la chiamata all’API distribuisce le nuove variabili e i nuovi valori negli ambienti Cloud, in modo simile a una tipica pipeline di distribuzione del codice del cliente. I servizi di authoring e pubblicazione verranno riavviati e faranno riferimento ai nuovi valori, in genere dopo alcuni minuti. Tieni presente che i gate e i test di qualità eseguiti da Cloud Manager durante una distribuzione regolare del codice non vengono eseguiti durante questo processo.
+Come accennato in precedenza, la chiamata all’API distribuisce le nuove variabili e i nuovi valori negli ambienti Cloud, in modo simile a una tipica pipeline di distribuzione del codice del cliente. I servizi di authoring e pubblicazione vengono riavviati e fanno riferimento ai nuovi valori, in genere dopo alcuni minuti. Tieni presente che i gate e i test di qualità eseguiti da Cloud Manager durante una distribuzione regolare del codice non vengono eseguiti durante questo processo.
 
 In genere, i clienti chiamano l’API per impostare le variabili di ambiente prima di distribuire il codice che si basa su di esse in Cloud Manager. In alcune situazioni, potrebbe essere utile modificare una variabile esistente dopo la distribuzione del codice.
 

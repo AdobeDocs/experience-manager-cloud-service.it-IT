@@ -2,10 +2,10 @@
 title: Utilizzo di Best Practices Analyzer
 description: Utilizzo di Best Practices Analyzer
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: df1fdbe0f3590708e1da44864b6e08075a521b51
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 48%
+source-wordcount: '2479'
+ht-degree: 46%
 
 ---
 
@@ -27,13 +27,13 @@ La sezione seguente per contiene considerazioni importanti sull’esecuzione di 
 
 * BPA è supportato sulle istanze AEM con versione 6.1 e successive.
 
-   >[!NOTE]
-   >Consulta [Installazione su AEM 6.1](#installing-on-aem61) per requisiti speciali per l’installazione di BPA su AEM 6.1.
+  >[!NOTE]
+  >Consulta [Installazione su AEM 6.1](#installing-on-aem61) per requisiti speciali per l’installazione di BPA su AEM 6.1.
 
 * BPA può essere eseguito in qualsiasi ambiente, ma è preferibile eseguirlo su un *Fase* ambiente.
 
-   >[!NOTE]
-   >Per evitare un impatto sulle istanze aziendali critiche, si consiglia di eseguire BPA su un *Autore* ambiente il più vicino possibile al *Produzione* nelle aree di personalizzazioni, configurazioni, contenuti e applicazioni utente. In alternativa, può essere eseguito su un clone dell’ambiente di *authoring* di produzione.
+  >[!NOTE]
+  >Per evitare un impatto sulle istanze aziendali critiche, si consiglia di eseguire BPA su un *Autore* ambiente il più vicino possibile al *Produzione* nelle aree di personalizzazioni, configurazioni, contenuti e applicazioni utente. In alternativa, può essere eseguito su un clone dell’ambiente di *authoring* di produzione.
 
 * La generazione del contenuto del rapporto BPA può richiedere molto tempo, da alcuni minuti ad alcune ore. Il tempo richiesto dipende in larga misura dalle dimensioni e dalla natura del contenuto dell’archivio AEM, dalla versione di AEM e da altri fattori.
 
@@ -157,9 +157,9 @@ La tabella seguente descrive i livelli di importanza:
 
 ## Interpretazione del rapporto CSV di Best Practices Analyzer {#cra-csv-report}
 
-Quando fai clic su **CSV** dall’istanza dell’AEM, il rapporto Best Practices Analyzer in formato CSV viene creato dalla cache del contenuto e restituito al browser. A seconda delle impostazioni del browser, è possibile che venga scaricato automaticamente come file con il nome predefinito `results.csv`.
+Quando fai clic su **CSV** dall’istanza dell’AEM, il rapporto Best Practices Analyzer in formato CSV viene creato dalla cache del contenuto e restituito al browser. A seconda delle impostazioni del browser, questo report viene scaricato automaticamente come file con il nome predefinito `results.csv`.
 
-Se la cache è scaduta, il rapporto verrà generato nuovamente prima che il file CSV venga creato e scaricato.
+Se la cache è scaduta, il rapporto viene rigenerato prima che il file CSV venga generato e scaricato.
 
 Il formato CSV del rapporto include informazioni generate dall’output del rilevatore pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza. Il formato è adatto alla visualizzazione e la modifica in un’applicazione come Microsoft Excel. È stato progettato per fornire tutte le informazioni sui risultati in un formato ripetibile che può essere utile quando si confrontano i rapporti nel tempo per misurare l’avanzamento.
 
@@ -207,11 +207,11 @@ Le seguenti intestazioni HTTP sono utilizzate da questa interfaccia:
 
 I seguenti parametri di query HTTP sono disponibili per comodità nei casi in cui le intestazioni HTTP potrebbero non essere facilmente utilizzate:
 
-* `max-age` (numero, facoltativo): specifica l’intervallo di aggiornamento della cache in secondi. Questo numero deve essere maggiore o uguale a 0. L&#39;intervallo di aggiornamento predefinito è di 86400 secondi. Senza questo parametro o l’intestazione corrispondente verrà utilizzata una nuova cache per distribuire le richieste per 24 ore, momento in cui la cache deve essere rigenerata. Utilizzo di `max-age=0` forza la cancellazione della cache e avvia la rigenerazione del rapporto, utilizzando l’intervallo di aggiornamento precedente diverso da zero per la cache appena generata.
+* `max-age` (numero, facoltativo): specifica l’intervallo di aggiornamento della cache in secondi. Questo numero deve essere maggiore o uguale a 0. L&#39;intervallo di aggiornamento predefinito è di 86400 secondi. Senza questo parametro o l’intestazione corrispondente, viene utilizzata una nuova cache per distribuire le richieste per 24 ore, momento in cui la cache deve essere rigenerata. Utilizzo di `max-age=0` forza la cancellazione della cache e avvia la rigenerazione del rapporto, utilizzando l’intervallo di aggiornamento precedente diverso da zero per la cache appena generata.
 * `respond-async` (booleano, facoltativo): specifica che la risposta deve essere fornita in modo asincrono. Utilizzo di `respond-async=true` quando la cache non è aggiornata, il server restituirà una risposta di `202 Accepted` senza attendere l’aggiornamento della cache e la generazione del rapporto. Se la cache è aggiornata, questo parametro non ha alcun effetto. Il valore predefinito è `false`. Senza questo parametro o l’intestazione corrispondente, il server risponderà in modo sincrono, il che potrebbe richiedere molto tempo e un adeguamento del tempo di risposta massimo per il client HTTP.
-* `may-refresh-cache` (booleano, facoltativo): specifica che il server può aggiornare la cache in risposta a una richiesta se la cache corrente è vuota, non aggiornata o non aggiornata. Se `may-refresh-cache=true`oppure, se non è specificato, il server potrebbe avviare un&#39;attività in background che richiamerà il rilevatore pattern e aggiornerà la cache. Se `may-refresh-cache=false` il server non avvierà quindi alcuna attività di aggiornamento che altrimenti sarebbe stata eseguita se la cache fosse stata vuota o non aggiornata, nel qual caso il report sarà vuoto. Questo parametro non influisce su eventuali attività di aggiornamento già in corso.
-* `return-minimal` (booleano, facoltativo): specifica che la risposta dal server deve includere solo lo stato contenente l’indicazione di avanzamento e lo stato della cache in formato JSON. Se `return-minimal=true`, il corpo della risposta sarà limitato all&#39;oggetto stato. Se `return-minimal=false`, o se non è specificato, verrà fornita una risposta completa.
-* `log-findings` (booleano, facoltativo): specifica che il server deve registrare il contenuto della cache quando viene generato o aggiornato per la prima volta. Ogni risultato dalla cache verrà registrato come stringa JSON. Questa registrazione verrà eseguita solo se `log-findings=true` e la richiesta genera una nuova cache.
+* `may-refresh-cache` (booleano, facoltativo): specifica che il server può aggiornare la cache in risposta a una richiesta se la cache corrente è vuota, non aggiornata o non aggiornata. Se `may-refresh-cache=true`oppure, se non è specificato, il server potrebbe avviare un&#39;attività in background che richiamerà il rilevatore pattern e aggiornerà la cache. Se `may-refresh-cache=false` il server non avvierà quindi alcuna attività di aggiornamento che altrimenti sarebbe stata eseguita se la cache fosse stata vuota o non aggiornata, nel qual caso il report è vuoto. Questo parametro non influisce su eventuali attività di aggiornamento già in corso.
+* `return-minimal` (booleano, facoltativo): specifica che la risposta dal server deve includere solo lo stato contenente l’indicazione di avanzamento e lo stato della cache in formato JSON. Se `return-minimal=true`, il corpo della risposta è limitato all’oggetto stato. Se `return-minimal=false`, o se non è specificato, viene fornita una risposta completa.
+* `log-findings` (booleano, facoltativo): specifica che il server deve registrare il contenuto della cache quando viene generato o aggiornato per la prima volta. Ogni risultato dalla cache viene registrato come stringa JSON. Questa registrazione verrà eseguita solo se `log-findings=true` e la richiesta genera una nuova cache.
 
 Se sono presenti sia un’intestazione HTTP che il parametro di query corrispondente, il parametro di query avrà la priorità.
 
@@ -235,7 +235,7 @@ Sono possibili i seguenti valori di risposta:
 
 ### Regolazione della durata della cache {#cache-adjustment}
 
-La durata predefinita della cache BPA è di 24 ore. Con l’opzione per aggiornare un rapporto e rigenerare la cache, sia nell’istanza AEM che nell’interfaccia HTTP, questo valore predefinito è probabilmente appropriato per la maggior parte degli usi del BPA. Se la generazione del rapporto richiede tempi particolarmente lunghi per la tua istanza di AEM, puoi regolare la durata della cache al fine di ridurre al minimo la rigenerazione del rapporto.
+La durata predefinita della cache BPA è di 24 ore. Con l’opzione per aggiornare un rapporto e rigenerare la cache, sia nell’istanza AEM che nell’interfaccia HTTP, questo valore predefinito è probabilmente appropriato per la maggior parte degli usi del BPA. Se il tempo di generazione del rapporto è particolarmente lungo per la tua istanza AEM, puoi regolare la durata della cache per ridurre al minimo la rigenerazione del rapporto.
 
 Il valore della durata della cache viene memorizzato come la proprietà `maxCacheAge` nel seguente nodo di archivio:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`

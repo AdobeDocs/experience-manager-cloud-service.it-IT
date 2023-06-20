@@ -2,9 +2,9 @@
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti da implementare nel Cloud Service Adobe Experience Manager.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2927'
 ht-degree: 12%
 
 ---
@@ -74,7 +74,7 @@ La struttura consigliata per la distribuzione delle applicazioni è la seguente:
 
 >[!NOTE]
 >
->Lo stesso codice deve essere distribuito in tutti gli ambienti. Ciò è necessario per garantire un livello di affidabilità delle convalide anche nell’ambiente stage in produzione. Per ulteriori informazioni, consulta la sezione su [Modalità di esecuzione](/help/implementing/deploying/overview.md#runmodes).
+>Lo stesso codice deve essere distribuito in tutti gli ambienti. Questo codice è necessario per garantire un livello di affidabilità delle convalide anche nell’ambiente stage in produzione. Per ulteriori informazioni, consulta la sezione su [Modalità di esecuzione](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Pacchetti di contenuti
@@ -93,11 +93,11 @@ La struttura consigliata per la distribuzione delle applicazioni è la seguente:
 
 + Il `all` è un pacchetto contenitore che include SOLO artefatti distribuibili, il file JAR del bundle OSGI, `ui.apps`, `ui.config` e `ui.content` pacchetti come incorporamenti. Il `all` il pacchetto non deve avere **qualsiasi contenuto o codice** di propria iniziativa, ma delega l’intera distribuzione all’archivio ai relativi pacchetti secondari o file Jar del bundle OSGi.
 
-   I pacchetti sono ora inclusi utilizzando Maven [Configurazione incorporata del plug-in FileVault Package Maven](#embeddeds), anziché `<subPackages>` configurazione.
+  I pacchetti sono ora inclusi utilizzando Maven [Configurazione incorporata del plug-in FileVault Package Maven](#embeddeds), anziché `<subPackages>` configurazione.
 
-   Per implementazioni di Experienci Manager complesse, può essere opportuno creare più `ui.apps`, `ui.config` e `ui.content` progetti/pacchetti che rappresentano siti o tenant specifici in AEM. In tal caso, assicurati che venga rispettata la suddivisione tra contenuto mutabile e immutabile e che i pacchetti di contenuti richiesti e i file Jar del bundle OSGi siano incorporati come pacchetti secondari nel `all` pacchetto di contenuti del contenitore.
+  Per implementazioni di Experienci Manager complesse, può essere opportuno creare più `ui.apps`, `ui.config` e `ui.content` progetti/pacchetti che rappresentano siti o tenant specifici in AEM. In tal caso, assicurati che venga rispettata la suddivisione tra contenuto mutabile e immutabile e che i pacchetti di contenuti richiesti e i file Jar del bundle OSGi siano incorporati come pacchetti secondari nel `all` pacchetto di contenuti del contenitore.
 
-   Ad esempio, una struttura complessa del pacchetto di contenuti di distribuzione potrebbe essere simile alla seguente:
+  Ad esempio, una struttura complessa del pacchetto di contenuti di distribuzione potrebbe essere simile alla seguente:
 
    + `all` il pacchetto di contenuto incorpora i seguenti pacchetti, per creare un singolo artefatto di distribuzione
       + `common.ui.apps` distribuisce il codice richiesto da **entrambi** sito A e sito B
@@ -231,12 +231,12 @@ Suddivisione di questa struttura di cartelle:
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
 
-   >[!WARNING]
-   >
-   >Per convenzione, le cartelle incorporate in un pacchetto secondario sono denominate con il suffisso `-packages`. In questo modo, il codice di distribuzione e i pacchetti di contenuto **non** vengono distribuiti nelle cartelle di destinazione di qualsiasi pacchetto secondario `/apps/<app-name>/...`, il che provoca un comportamento di installazione distruttivo e ciclico.
+  >[!WARNING]
+  >
+  >Per convenzione, le cartelle incorporate in un pacchetto secondario sono denominate con il suffisso `-packages`. In questo modo, il codice di distribuzione e i pacchetti di contenuto **non** vengono distribuiti nelle cartelle di destinazione di qualsiasi pacchetto secondario `/apps/<app-name>/...`, il che provoca un comportamento di installazione distruttivo e ciclico.
 
 + La cartella di terzo livello deve essere
-   `application`, `content` oppure `container`
+  `application`, `content` oppure `container`
    + Il `application` la cartella contiene pacchetti di codice
    + Il `content` la cartella contiene i pacchetti di contenuti
    + Il `container` cartella contiene qualsiasi [pacchetti applicativi aggiuntivi](#extra-application-packages) che potrebbero essere incluse nella domanda AEM.
@@ -549,7 +549,7 @@ Se più `/apps/*-packages` sono utilizzati nelle destinazioni incorporate, quind
 
 >[!WARNING]
 >
->L’aggiunta di più archivi Maven può estendere i tempi di generazione Maven, in quanto verranno verificati eventuali dipendenze da altri archivi Maven.
+>L’aggiunta di più archivi Maven può estendere i tempi di build Maven man mano che vengono verificati ulteriori archivi Maven per le dipendenze.
 
 Nel progetto del reattore `pom.xml`, aggiungi eventuali direttive dell’archivio Maven pubblico di terze parti necessarie. Il valore completo `<repository>` La configurazione di deve essere disponibile dal provider dell’archivio di terze parti.
 

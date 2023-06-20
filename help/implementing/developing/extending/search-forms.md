@@ -2,9 +2,9 @@
 title: Configurazione dei moduli di ricerca
 description: Configurazione di Search Forms per Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2037'
 ht-degree: 17%
 
 ---
@@ -37,7 +37,7 @@ Il **Cerca in Forms** fornisci una selezione preconfigurata di [predicati](#pred
 
 ## Forms predefinito {#default-forms}
 
-La prima volta che accedi a **Cerca in Forms** console è possibile vedere che tutte le configurazioni hanno un simbolo lucchetto. Ciò indica che la configurazione corrispondente è quella predefinita (predefinita) e non può essere eliminata. Una volta personalizzato e salvato, il blocco scompare. Riapparirà quando [elimina la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default), nel qual caso vengono ripristinati il valore predefinito (e l’indicatore del lucchetto).
+La prima volta che accedi a **Cerca in Forms** console è possibile vedere che tutte le configurazioni hanno un simbolo lucchetto. Ciò indica che la configurazione corrispondente è quella predefinita (predefinita) e non può essere eliminata. Dopo aver personalizzato e salvato una configurazione, il blocco scompare. Riapparirà quando [elimina la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default), nel qual caso viene ripristinato il valore predefinito (e l’indicatore del lucchetto).
 
 ![panoramica sulla configurazione dei moduli di ricerca](assets/csf-overview.png)
 
@@ -495,47 +495,46 @@ A seconda del predicato, è disponibile una selezione di impostazioni per la con
 
 * **Etichetta campo**
 
-   L’etichetta che verrà visualizzata come intestazione comprimibile o come etichetta del campo del predicato.
+  L’etichetta che verrà visualizzata come intestazione comprimibile o come etichetta del campo del predicato.
 
 * **Descrizione**
 
-   Dettagli descrittivi per l’utente.
+  Dettagli descrittivi per l’utente.
 
 * **Segnaposto**
 
-   Testo vuoto o il segnaposto del predicato se non viene immesso testo filtrante.
+  Testo vuoto o il segnaposto del predicato se non viene immesso testo filtrante.
 
 * **Nome proprietà**
 
-   Proprietà su cui eseguire la ricerca. Utilizza un percorso relativo e i caratteri jolly `*/*/*` specifica la profondità della proprietà relativa al `jcr:content` (ogni asterisco rappresenta un livello di nodo).
+  Proprietà su cui eseguire la ricerca. Utilizza un percorso relativo e i caratteri jolly `*/*/*` specifica la profondità della proprietà relativa al `jcr:content` (ogni asterisco rappresenta un livello di nodo).
 
-   Se desideri eseguire la ricerca solo su un nodo figlio di primo livello della risorsa che ha `x` proprietà sul `jcr:content` utilizzo del nodo `*/jcr:content/x`
+  Se desideri eseguire la ricerca solo su un nodo figlio di primo livello della risorsa che ha `x` proprietà sul `jcr:content` utilizzo del nodo `*/jcr:content/x`
 
 * **Profondità proprietà**
 
-   Profondità massima per la ricerca di tale proprietà nelle risorse. Quindi una ricerca su quella proprietà può essere eseguita su una risorsa e su elementi figlio ricorsivi fino a quando il livello degli elementi figlio non è uguale alla profondità specificata.
+  Profondità massima per la ricerca di tale proprietà nelle risorse. Quindi una ricerca su quella proprietà può essere eseguita su una risorsa e su elementi figlio ricorsivi fino a quando il livello degli elementi figlio non è uguale alla profondità specificata.
 
 * **Valore proprietà**
 
-   Il valore della proprietà come stringa assoluta o come linguaggio di espressione; ad esempio, `cq:Page` o
+  Il valore della proprietà come stringa assoluta o come linguaggio di espressione; ad esempio, `cq:Page` o
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Testo intervallo**
 
-   Etichetta del campo intervallo nel **Intervallo date** predicato.
+  Etichetta del campo intervallo nel **Intervallo date** predicato.
 
 * **Percorso opzione**
 
-   L’utente può selezionare il percorso utilizzando Browser percorsi nella scheda Impostazione predicati. Dopo aver selezionato **+** viene utilizzata per aggiungere la selezione all’elenco delle opzioni valide (quindi **-** da rimuovere se necessario).
+  L’utente può selezionare il percorso utilizzando Browser percorsi nella scheda Impostazione predicati. Dopo aver selezionato **+** viene utilizzata per aggiungere la selezione all’elenco delle opzioni valide (quindi **-** da rimuovere se necessario).
 
-   Le opzioni sono nodi di contenuto creati dall’utente con la seguente struttura:
+  Le opzioni sono nodi di contenuto creati dall’utente con la seguente struttura:
 
-   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
+  `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Percorso nodo opzioni**
-Effettivamente uguale al 
-**Percorso opzioni**, solo questo campo si trova nel predicato comune, l’altro è specifico per le risorse.
+Effettivamente uguale al **Percorso opzioni**, solo questo campo si trova nel predicato comune, l’altro è specifico per le risorse.
 
 * **Selezione singola**
 Se questa opzione è selezionata, le opzioni vengono visualizzate come caselle di controllo che consentono una sola selezione. Se selezionata per errore, è possibile deselezionare una casella di controllo.
@@ -563,7 +562,6 @@ Le etichette per le caselle di controllo di pubblicazione e Live Copy per il pre
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
-
 ### Aggiungere/modificare un campo predicato e definire le impostazioni dei campi {#add-edit-a-predicate-field-and-define-field-settings}
 
 Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
@@ -577,11 +575,12 @@ Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 
    * Stai aggiungendo un nuovo campo:
 
-      Dopo l’aggiunta del predicato, **Impostazioni** viene aperta e vengono visualizzate le proprietà che possono essere definite.
+     Dopo l’aggiunta del predicato, **Impostazioni** viene aperta e vengono visualizzate le proprietà che possono essere definite.
 
    * Desideri aggiornare un predicato esistente:
 
-      Seleziona il campo predicato (a destra), quindi apri il **Impostazioni** scheda.
+     Seleziona il campo predicato (a destra), quindi apri il **Impostazioni** scheda.
+
    Ad esempio, le impostazioni per **Predicato intervallo di date**:
 
    ![modifica predicato](assets/csf-modify-predicate.png)
@@ -594,7 +593,7 @@ Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 
    ![icona anteprima](assets/csf-preview-icon.png)
 
-1. In questo modo i moduli di ricerca verranno visualizzati così come saranno visualizzati (completamente espansi) nella colonna Ricerca della console appropriata.
+1. Visualizza i moduli di ricerca così come sono visualizzati (completamente espansi) nella colonna Ricerca della console appropriata.
 
    ![modulo di anteprima](assets/csf-preview-form.png)
 
@@ -625,7 +624,7 @@ L’eliminazione di una configurazione personalizzata viene eseguita dalla conso
 
    ![ripristina predefinito](assets/csf-restore-default.png)
 
-1. La configurazione personalizzata verrà eliminata e verrà ripristinata la configurazione predefinita (indicata dalla ricomparsa del simbolo del lucchetto nella console).
+1. La configurazione personalizzata viene eliminata e il valore predefinito viene ripristinato (questo viene indicato dalla ricomparsa del simbolo del lucchetto nella console).
 
 ### Aggiunta di predicati di opzioni {#adding-options-predicates}
 
@@ -656,7 +655,6 @@ L’esempio seguente (per eseguire ricerche in base al modello utilizzato per cr
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Apporta le modifiche in `/apps.`
 
-
 1. Apri **Cerca in Forms** e selezionare la configurazione da aggiornare. Ad esempio: **Barra di ricerca amministrazione siti**. Quindi seleziona **Modifica**.
 
 1. A seconda della configurazione, aggiungi un **Opzioni** o **Proprietà Options** alla configurazione.
@@ -664,19 +662,20 @@ L’esempio seguente (per eseguire ricerche in base al modello utilizzato per cr
 
    * **Nome proprietà**
 
-      Specifica la proprietà del nodo da cercare sui nodi di destinazione. Ad esempio:
+     Specifica la proprietà del nodo da cercare sui nodi di destinazione. Ad esempio:
 
-      `jcr:content/cq:template`
+     `jcr:content/cq:template`
 
    * **Percorso nodo opzione**
 
-      Seleziona il percorso in cui si trovano le opzioni. Ad esempio:
+     Seleziona il percorso in cui si trovano le opzioni. Ad esempio:
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
+     `/apps/cq/gui/content/common/options/predicates/templatetype`
+
    ![Predicati opzione](assets/csf-options-predicate-02.png)
 
 1. Seleziona **Fine** per salvare la configurazione.
-1. Passa alla console appropriata (in questo esempio, **Sites**) e aprire la **Ricerca - Filtri** barra. Saranno visibili i nuovi moduli di ricerca definiti e le varie opzioni. Seleziona l’opzione desiderata per visualizzare i risultati della ricerca.
+1. Passa alla console appropriata (in questo esempio, **Sites**) e aprire la **Ricerca - Filtri** barra. Sono visibili i nuovi moduli di ricerca definiti e le varie opzioni. Seleziona l’opzione desiderata per visualizzare i risultati della ricerca.
 
    ![opzioni in uso](assets/csf-options-usage.png)
 

@@ -2,10 +2,10 @@
 title: Come pubblicare con la tua applicazione headless
 description: In questa parte del Percorso per sviluppatori AEM Headless, scopri come distribuire un’applicazione headless in tempo reale prendendo il codice locale nel Git e spostandolo nel Git di Cloud Manager per la pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 100%
+source-wordcount: '1067'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ Per preparare l’applicazione AEM headless per il lancio, segui le best practic
    * Utilizza le query persistenti quando possibile.
    * Fornisci a CDN un TTL di oltre 600 secondi per consentire alla CDN di memorizzarli nella cache.
    * AEM può calcolare l’impatto di una modifica del modello sulle query esistenti.
-* Dividi i file JSON/le query GraphQL tra la frequenza di variazione del contenuto bassa e alta al fine di ridurre il traffico client verso CDN e assegnare un TTL più alto. Questo riduce al minimo la riconvalida da parte della CDN di JSON con il server di origine.
+* Suddividi le query JSON su file/GraphQL tra il tasso di modifica del contenuto basso e alto in modo da ridurre il traffico client su CDN e assegnare un TTL più alto. Questo riduce al minimo la riconvalida da parte della CDN di JSON con il server di origine.
 * Per invalidare attivamente il contenuto dalla rete CDN, utilizza la rimozione temporanea. Questo consente alla rete CDN di scaricare nuovamente il contenuto senza causare una perdita della cache.
 
 ## Migliora il tempo di download dei contenuti headless {#improve-download-time}
@@ -101,7 +101,7 @@ Segui queste best practice come approccio generale al debug:
 
 ### Registrazione di un bug con Support {#logging-a-bug-with-support}
 
-Per registrare in modo efficiente un bug con Support nel caso in cui ti occorra ulteriore assistenza, segui i passaggi successivi:
+Per segnalare in modo efficiente un bug con il supporto nel caso sia necessaria ulteriore assistenza, effettuare le seguenti operazioni:
 
 * Se necessario, acquisisci le schermate del problema
 * Documenta un modo per riprodurre il problema

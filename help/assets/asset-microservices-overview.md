@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Panoramica dell’acquisizione e dell’elaborazione delle risorse con i microservizi relativi {#asset-microservices-overview}
 
-Adobe Experience Manager as a [!DNL Cloud Service] fornisce un metodo nativo per il cloud per sfruttare le applicazioni e le funzionalità di Experience Manager. Uno degli elementi chiave di questa nuova architettura è l’assimilazione e l’elaborazione delle risorse, basate sui microservizi per le risorse. I microservizi per le risorse forniscono un’elaborazione scalabile e flessibile delle risorse utilizzando servizi cloud. Adobe gestisce i servizi cloud per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione. I vantaggi principali dei microservizi per le risorse native per il cloud sono:
+Adobe Experience Manager as a [!DNL Cloud Service] fornisce un metodo nativo per il cloud per utilizzare le applicazioni e le funzionalità Experience Manager. Uno degli elementi chiave di questa nuova architettura è l’assimilazione e l’elaborazione delle risorse, basate sui microservizi per le risorse. I microservizi per le risorse forniscono un’elaborazione scalabile e flessibile delle risorse utilizzando servizi cloud. Adobe gestisce i servizi cloud per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione. I vantaggi principali dei microservizi per le risorse native per il cloud sono:
 
 * Architettura scalabile che consente un’elaborazione perfetta per le operazioni ad alta intensità di risorse.
 * Indicizzazione ed estrazione del testo efficienti che non influiscono sulle prestazioni degli ambienti di Experience Manager.
@@ -98,4 +98,3 @@ I flussi di lavoro di post-elaborazione sono regolari [!DNL Experience Manager] 
 >* [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
 >* [[!DNL Experience Manager] App desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it)
 >* [Documentazione Apache Oak sull’accesso binario diretto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
-

@@ -4,10 +4,10 @@ description: Scopri come utilizzare i modelli per sito AEM per predefinire la st
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ I modelli sono uno strumento efficace perché sono riutilizzabili e personalizza
 >
 >I modelli di sito AEM non devono essere confusi con i [modelli di pagina.](/help/sites-cloud/authoring/features/templates.md) I modelli di sito definiscono la struttura complessiva di un sito. Un modello di pagina definisce la struttura e il contenuto iniziale di una singola pagina.
 >
->I modelli di sito AEM non devono essere confusi con i [temi del sito AEM.](site-themes.md) I temi del sito AEM contengono solo le informazioni sullo stile di un sito AEM. I modelli di sito AEM definiscono la struttura del sito e il contenuto iniziale e contengono inoltre un tema del sito AEM per consentire una [creazione rapida dello stesso.](create-site.md)
+>I modelli di sito AEM non devono essere confusi con i [temi del sito AEM.](site-themes.md) I temi del sito AEM contengono solo le informazioni sullo stile di un sito AEM. I modelli di sito AEM definiscono la struttura del sito e il contenuto iniziale e contengono un tema del sito AEM che consente [creazione rapida di siti.](create-site.md)
 
 ## Aggiunta di un modello di sito a AEM {#adding}
 

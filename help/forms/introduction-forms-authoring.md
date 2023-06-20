@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2409'
-ht-degree: 100%
+source-wordcount: '2408'
+ht-degree: 97%
 
 ---
 
@@ -24,20 +24,20 @@ ht-degree: 100%
 I moduli adattivi consentono di creare moduli coinvolgenti e reattivi, che si rivelano, inoltre, dinamici e adattivi. [!DNL AEM Forms] fornisce un’interfaccia utente intuitiva e componenti pronti all’uso per la creazione e l’utilizzo dei moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello o schema di modulo o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo, che deve risultare adatto non solo alle proprie esigenze, ma deve consentire di accrescere gli investimenti e le risorse infrastrutturali esistenti. Per creare un modulo adattivo, è possibile scegliere tra le seguenti opzioni:
 
 * **Seleziona un modello dati del modulo**
-   [Integrazione dei dati](data-integration.md) consente di integrare entità e servizi da diverse origini dati in un modello dati del modulo da utilizzare per creare moduli adattivi. Scegli Modello dati modulo se il modulo adattivo che si sta creando prevede il recupero e la scrittura di dati da e verso più origini dati.
+  [Integrazione dei dati](data-integration.md) consente di integrare entità e servizi da diverse origini dati in un modello dati del modulo da utilizzare per creare moduli adattivi. Scegli Modello dati modulo se il modulo adattivo che si sta creando prevede il recupero e la scrittura di dati da e verso più origini dati.
 
 * **Utilizzo di un modello di modulo XDP**
 Si tratta di un modello di modulo ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e pattern.
 
 * **Utilizzo di una definizione di schema XML (XSD) o di uno schema JSON**
-Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema saranno disponibili per l’uso nella scheda Oggetti modello dati del browser Contenuto durante la creazione di moduli adattivi.
+Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili per l’utilizzo nella scheda Oggetti modello dati del browser Contenuto durante l’authoring di Forms adattivo.
 
 * **Non utilizzare nessun modello di modulo ossia creare senza un modello di modulo**
 I moduli adattivi creati con questa opzione non utilizzano alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.
 
-   >[!NOTE]
-   >
-   > È possibile modificare le proprietà del modello di modulo dall’editor di moduli adattivi o dall’editor di modelli di moduli adattivi. Per ulteriori informazioni, consulta [Modificare le proprietà del modello di modulo di un modulo adattivo](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  >[!NOTE]
+  >
+  > È possibile modificare le proprietà del modello di modulo dall’editor di moduli adattivi o dall’editor di modelli di moduli adattivi. Per ulteriori informazioni, consulta [Modificare le proprietà del modello di modulo di un modulo adattivo](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Per creare un modulo adattivo, consulta [Creazione di un modulo adattivo](creating-adaptive-form.md).
 
@@ -91,17 +91,17 @@ Consente di trascinare gli elementi del modello di modulo sul modulo adattivo. G
 
 * **Browser proprietà**
 
-   Consente di modificare le proprietà di un componente. Le proprietà cambiano in base a un componente. Per visualizzare le proprietà del contenitore Modulo adattivo:
+  Consente di modificare le proprietà di un componente. Le proprietà cambiano in base a un componente. Per visualizzare le proprietà del contenitore Modulo adattivo:
 
-   Seleziona un componente, quindi tocca ![livello di campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contenitore di moduli adattivi]**, quindi tocca ![proprietà](assets/Smock_Wrench_18_N.svg).
+  Seleziona un componente, quindi tocca ![livello di campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contenitore di moduli adattivi]**, quindi tocca ![proprietà](assets/Smock_Wrench_18_N.svg).
 
 * **Browser risorse**
 
-   Separa contenuti di tipi diversi come immagini, documenti, pagine, filmati e così via.
+  Separa contenuti di tipi diversi come immagini, documenti, pagine, filmati e così via.
 
 * **Browser componenti**
 
-   Include i componenti che è possibile utilizzare per creare un modulo adattivo. È possibile trascinare i componenti dal modulo adattivo per aggiungere elementi al modulo e configurare gli elementi aggiunti in base ai requisiti. La tabella seguente descrive i componenti elencati nel browser Componenti.
+  Include i componenti che è possibile utilizzare per creare un modulo adattivo. È possibile trascinare i componenti dal modulo adattivo per aggiungere elementi al modulo e configurare gli elementi aggiunti in base ai requisiti. La tabella seguente descrive i componenti elencati nel browser Componenti.
 
 <table>
  <tbody>
@@ -151,7 +151,7 @@ Consente di trascinare gli elementi del modello di modulo sul modulo adattivo. G
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Allegato file</td>
@@ -191,7 +191,7 @@ Consente di trascinare gli elementi del modello di modulo sul modulo adattivo. G
   </tr>
   <tr>
    <td>Pannello</td>
-   <td><p>Aggiunge un pannello o un sottopannello.</p> <p>Puoi anche aggiungere un componente pannello dalla barra degli strumenti del pannello principale utilizzando il pulsante <span class="uicontrol">Aggiungi pannello figlio</code>. Allo stesso modo, puoi aggiungere una barra degli strumenti specifica per il pannello utilizzando il pulsante <span class="uicontrol">Aggiungi barra degli strumenti del pannello</code>. È possibile configurare la posizione della barra degli strumenti del pannello utilizzando la finestra di dialogo Modifica pannello.</code></code></p> </td>
+   <td><p>Aggiunge un pannello o un sottopannello.</p> <p>Puoi anche aggiungere un componente pannello dalla barra degli strumenti del pannello principale utilizzando <span class="uicontrol">Aggiungi pannello secondario</code> pulsante. Allo stesso modo, puoi aggiungere una barra degli strumenti specifica per il pannello utilizzando <span class="uicontrol">Barra degli strumenti Aggiungi pannello</code> pulsante. È possibile configurare la posizione della barra degli strumenti del pannello utilizzando la finestra di dialogo Modifica pannello.</p> </td>
   </tr>
   <tr>
    <td>Casella password</td>

@@ -4,10 +4,10 @@ description: Scopri come utilizzare i temi del sito AEM per personalizzare lo st
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: a77c31ebfce01834325bfdb806793dcd8ba169d4
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '353'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ I siti creati con modelli AEM consentono di scaricare, personalizzare e applicar
 
 >[!NOTE]
 >
->I temi del sito AEM non devono essere confusi con i [modelli del sito AEM.](site-templates.md)I temi del sito AEM contengono solo le informazioni sullo stile di un sito AEM. I modelli del sito AEM definiscono la struttura del sito e il contenuto iniziale e contengono un tema del sito AEM per consentirne la [creazione rapida.](create-site.md)
+>I temi del sito AEM non devono essere confusi con i [modelli del sito AEM.](site-templates.md)I temi del sito AEM contengono solo le informazioni sullo stile di un sito AEM. I modelli di sito AEM definiscono la struttura del sito e il contenuto iniziale e contengono un tema del sito AEM che consente [creazione rapida di siti.](create-site.md)
 
 ## Utilizzo dei temi del sito {#using-themes}
 

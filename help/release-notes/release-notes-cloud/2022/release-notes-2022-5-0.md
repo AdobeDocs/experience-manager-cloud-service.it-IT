@@ -2,10 +2,10 @@
 title: Note sulla versione 2022.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 98%
+source-wordcount: '795'
+ht-degree: 87%
 
 ---
 
@@ -60,7 +60,7 @@ Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [dist
 
 * **Creazione guidata di un modulo adattivo**: puoi utilizzare la procedura guidata per utenti aziendali per creare moduli adattivi in modo facile e veloce. La procedura guidata fornisce una navigazione rapida a schede per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati e creare un modulo adattivo.
 
-   ![Creazione guidata di un modulo adattivo](/help/release-notes/assets/wizard.png)
+  ![Creazione guidata di un modulo adattivo](/help/release-notes/assets/wizard.png)
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 
@@ -68,30 +68,30 @@ Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [dist
 
 * Accesso rapido alla cabina di comando del prodotto: accesso semplice e dettagliato alle informazioni di prodotto con un solo clic nell’editor di Sites
 
-   ![Abilitare la lista dei desideri](/help/assets/CIF/enable-wishlist.png)
+  ![Abilitare la lista dei desideri](/help/assets/CIF/enable-wishlist.png)
 
 * Supporto per componenti di marketing commerce aggiuntivi: i componenti possono essere configurati per mostrare un’invito all’azione di aggiunta al carrello e aggiunta alla lista dei desideri
 
-   ![Collegamento all’editor di Sites per la cabina di comando del prodotto](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![Collegamento all’editor di Sites per la cabina di comando del prodotto](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Novità {#what-is-new-foundation}
 
-* L’opzione “Aggiungi struttura” nella **scheda Distribuzione** nella schermata di amministrazione dell’agente di replica, precedentemente dichiarata obsoleta, verrà rimossa il 20 giugno 2022 o poco dopo. I pacchetti con una gerarchia di struttura dei contenuti devono essere replicati utilizzando [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro Pubblica struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow).
+* L’opzione &quot;Aggiungi albero&quot; nella schermata di amministrazione dell’agente di replica **Scheda Distribuisci**, precedentemente dichiarato obsoleto, è stato rimosso il 20 giugno 2022 o poco dopo. I pacchetti con una gerarchia di struttura dei contenuti devono essere replicati utilizzando [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro Pubblica struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow).
 
-* L’utilizzo della schermata di amministrazione dell’agente di replica o dell’API di replica per la distribuzione di pacchetti di contenuto di dimensioni superiori a 10 MB (nodi con proprietà, esclusi i dati binari) è ora obsoleto e non sarà più consentito a partire dal 12 settembre 2022 circa. Per replicare pacchetti di contenuti di grandi dimensioni, è necessario utilizzare [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro Pubblica struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow). A luglio verrà visualizzato un messaggio di avvertenza se si tenta di replicare pacchetti di contenuti di grandi dimensioni nella **Scheda Distribuisci** della schermata di amministrazione dell’agente di replica, nonché nel registro di errore AEM ogni volta che l’API di replica viene utilizzata a tale scopo. A settembre, le avvertenze saranno sostituite da errori. Assicurati di adeguare i processi in uso di conseguenza.
+* L’utilizzo della schermata di amministrazione dell’agente di replica o dell’API di replica per la distribuzione di pacchetti di contenuti di dimensioni superiori a 10 MB (nodi con proprietà, esclusi i binari) è diventato obsoleto e applicato il 12 settembre 2022 o poco dopo. Per replicare pacchetti di contenuti di grandi dimensioni, è necessario utilizzare [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro Pubblica struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow). A luglio verrà visualizzato un messaggio di avvertenza se si tenta di replicare pacchetti di contenuti di grandi dimensioni nella **Scheda Distribuisci** della schermata di amministrazione dell’agente di replica, nonché nel registro di errore AEM ogni volta che l’API di replica viene utilizzata a tale scopo. A settembre, le avvertenze sono state sostituite da errori. Regola i processi di conseguenza.
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Experience Manager] {#prerelease-features-foundation}
 
-* AEM as a Cloud Service è ora integrato con Unified Shell per migliorare l’esperienza utente e per coerenza con tutte le altre applicazioni di Experience Cloud. Per ulteriori dettagli, consulta [AEM as a Cloud Service su Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md).
+* AEM as a Cloud Service è ora integrato con Unified Shell per migliorare l’esperienza utente e per coerenza con tutte le altre applicazioni di Experience Cloud. Consulta [AEM as a Cloud Service su Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) per ulteriori dettagli.
 
 ## Elementi di base per la sicurezza di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation-security}
 
 ### Obsolescenza di TLS 1.0, 1.1
 
-A partire dal 30 giugno 2022, Experience Manager as a Cloud Service richiederà una comunicazione di rete e uno scambio di dati più sicuri con i sistemi degli utenti. AEM utilizzerà esclusivamente il protocollo TLS (Transport Layer Security) 1.2. Le versioni precedenti, TLS 1.0 e 1.1, diventeranno obsolete.
+A partire dal 30 giugno 2022, Experience Manager as a Cloud Service richiederà una comunicazione di rete e uno scambio di dati più sicuri con i sistemi degli utenti. AEM utilizzerà esclusivamente il protocollo TLS (Transport Layer Security) 1.2. Le versioni precedenti di TLS 1.0 e 1.1 ora sono obsolete.
 
 Se continui a utilizzare versioni precedenti di TLS come 1.0 o 1.1, potresti perdere l’accesso ad Experience Manager as a Cloud Service.
 

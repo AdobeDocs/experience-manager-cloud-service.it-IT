@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.10.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.10.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 71%
+source-wordcount: '1438'
+ht-degree: 68%
 
 ---
 
@@ -44,7 +44,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di ottobre 2021](https://video
 
 ### Nuova funzione in [!DNL Assets] canale prerelease {#assets-prerelease-features}
 
-* [!DNL Dynamic Media]Il ritaglio e il campione avanzato dell’immagine di è ora basato sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali verranno mantenute al momento della rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
+* [!DNL Dynamic Media]Il ritaglio e il campione avanzato dell’immagine di è ora basato sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali vengono mantenute durante la rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
 
 * I tag avanzati vengono applicati automaticamente alle risorse utilizzando i microservizi per le risorse, anziché Smart Content Services. Il modello sottostante viene aggiornato per migliorare i risultati dei tag e ridurre i pregiudizi. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -98,10 +98,10 @@ La prossima versione è prevista per il 9 dicembre 2021.
 
 ### Novità {#what-is-new-cm-nov}
 
-* Gli utenti possono ora sfruttare le nuove pipeline Front End per distribuire esclusivamente il codice front-end in modo accelerato. Consulta [Pipeline front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per ulteriori informazioni.
+* Gli utenti possono ora utilizzare le nuove pipeline front-end per distribuire esclusivamente il codice front-end in modo accelerato. Consulta [Pipeline front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per ulteriori informazioni.
 
-   >[!IMPORTANT]
-   >Per utilizzare le nuove pipeline front-end è necessaria la versione `2021.10.5933.20211012T154732Z` di AEM.
+  >[!IMPORTANT]
+  >Devi usare la versione AEM `2021.10.5933.20211012T154732Z` per utilizzare le nuove pipeline front-end.
 
 * La durata della pipeline di qualità del codice viene notevolmente ridotta, eseguendo l’analisi del codice in modo più efficiente senza la necessità di creare un’immagine intera AEM. Questa modifica verrà implementata progressivamente nelle settimane successive al rilascio.
 

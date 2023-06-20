@@ -3,10 +3,10 @@ title: Configurazione delle pipeline non di produzione
 description: Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 100%
+source-wordcount: '1362'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
 1. Se scegli di creare una **pipeline di distribuzione** dovrai inoltre definire il **comportamento degli errori di metriche importanti**.
 
    * **Chiedi ogni volta**: impostazione predefinita che richiede l’intervento manuale per tutti gli errori importanti.
-   * **Interrompi subito**: selezionando questa opzione, la pipeline viene annullata ogni volta che si verifica un errore importante. In sostanza, quest’opzione simula un utente che rifiuta manualmente ogni errore.
+   * **Interrompi subito** - Se selezionata, la pipeline viene annullata ogni volta che si verifica un errore importante. In sostanza, quest’opzione simula un utente che rifiuta manualmente ogni errore.
    * **Continua immediatamente**: selezionando questa opzione, la pipeline avanza automaticamente ogni volta che si verifica un errore importante. In sostanza, quest’opzione simula un utente che approva manualmente ogni errore.
 
 1. Fai clic su **Continua**.
@@ -99,7 +99,7 @@ Una pipeline del codice full stack distribuisce simultaneamente le build del cod
 
 >[!NOTE]
 >
->Se per l’ambiente selezionato esiste già una pipeline del codice full stack, la selezione viene disabilitata.
+>Se per l’ambiente selezionato esiste già una pipeline del codice full stack, questa selezione viene disabilitata.
 
 Per completare la configurazione della pipeline non di produzione del codice full stack, segui la procedura riportata di seguito.
 
@@ -134,7 +134,7 @@ Una pipeline di configurazione a livello web distribuisce configurazioni HTTPD/D
 
 >[!NOTE]
 >
->Se per l’ambiente selezionato esiste già una pipeline del codice a livello web, la selezione viene disabilitata.
+>Se per l’ambiente selezionato esiste già una pipeline del codice a livello web, questa selezione viene disabilitata.
 
 Per completare la configurazione della pipeline non di produzione del codice a livello web, segui la procedura riportata di seguito.
 
@@ -166,7 +166,7 @@ Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.m
 
 Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore indipendenza e il processo di sviluppo può essere accelerato.
 
-Per informazioni sul funzionamento di questo processo e alcune considerazioni per sfruttare al massimo il suo potenziale, consulta il documento [Sviluppo di Sites con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+Consulta il documento [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) il funzionamento di questo processo e alcune considerazioni di cui tenere conto per sfruttare appieno il suo potenziale.
 
 ## Ignorare i pacchetti Dispatcher {#skip-dispatcher-packages}
 

@@ -2,9 +2,9 @@
 title: Fase di preparazione
 description: Scopri i passaggi da eseguire per assicurarti che l’installazione dell’AEM sia pronta per essere spostata sul cloud
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2074'
 ht-degree: 8%
 
 ---
@@ -21,11 +21,11 @@ In questa fase del Percorso di migrazione as a Cloud Service dell’AEM, imparer
 
 ## Percorso affrontato finora {#story-so-far}
 
-Il documento precedente, [Guida introduttiva al passaggio a AEM as a Cloud Service](/help/journey-migration/getting-started.md), delinea un elenco delle fasi da superare per migrare all&#39;AEM as a Cloud Service e i vantaggi che ne derivano.
+Il documento precedente, [Guida introduttiva al passaggio a AEM as a Cloud Service](/help/journey-migration/getting-started.md), delinea un elenco di fasi da superare per la migrazione a AEM as a Cloud Service e i vantaggi che ne derivano.
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a capire quali fattori devi considerare per assicurarti che l’installazione dell’AEM sia pronta per essere spostata sul cloud:
+Questo documento consente di comprendere quali fattori è necessario considerare per assicurarsi che l’installazione dell’AEM sia pronta per essere spostata sul cloud:
 
 * Scopri le modifiche di rilievo e le funzioni obsolete
 * Come pianificare la migrazione a AEM as a Cloud Service
@@ -90,7 +90,7 @@ L’elenco delle voci nella tabella seguente è il sottoinsieme delle modifiche 
   <tr>
     <td>Passa a operazioni asincrone</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">Configurazione delle operazioni asincrone</a></td>
-    <td>Per migliorare le prestazioni complessive degli ambienti, alcune operazioni vengono eseguite in modalità asincrona. I processi asincroni verranno messi in coda ed eseguiti quando le risorse di sistema sono disponibili.</td>
+    <td>Per migliorare le prestazioni complessive degli ambienti, alcune operazioni vengono eseguite in modalità asincrona. I processi asincroni vengono messi in coda ed eseguiti quando sono disponibili risorse di sistema.</td>
   </tr>
   <tr>
     <td>Strategie di autenticazione e integrazione basate su token</td>
@@ -150,7 +150,7 @@ L’elenco delle voci nella tabella seguente è il sottoinsieme delle modifiche 
   <tr>
     <td>Modifiche all’autenticazione</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=it">Supporto IMS per AEM as a Cloud Service</td>
-    <td>Se in precedenza utilizzavi l’integrazione SAML 2.0 sia per l’authoring che per la pubblicazione prima di passare al Cloud Service, la modifica principale è che AEM as a Cloud Service Author si integra solo con Adobe IMS. Tuttavia, il livello di pubblicazione as a Cloud Service dall’AEM può ancora sfruttare SAML o altre integrazioni di autenticazione. AEM as a Cloud Service offre il supporto per l’autenticazione IMS solo per gli utenti con privilegi di autore, amministratore e sviluppatore, L’autenticazione IMS non offre supporto per gli utenti finali esterni dei siti dei clienti, come i visitatori del sito.</td>
+    <td>Se in precedenza utilizzavi l’integrazione SAML 2.0 sia per l’authoring che per la pubblicazione prima di passare al Cloud Service, la modifica principale è che AEM as a Cloud Service Author si integra solo con Adobe IMS. Tuttavia, il livello di pubblicazione as a Cloud Service dall’AEM può ancora utilizzare SAML o altre integrazioni di autenticazione. AEM as a Cloud Service offre il supporto per l’autenticazione IMS solo per gli utenti con privilegi di autore, amministratore e sviluppatore, L’autenticazione IMS non offre supporto per gli utenti finali esterni dei siti dei clienti, come i visitatori del sito.</td>
   </tr>
 </tbody>
 </table>
@@ -163,7 +163,7 @@ Adobe valuta costantemente le funzionalità dei prodotti per reinventare o sosti
 
 ## Pianifica una revisione dell’installazione dell’AEM {#review-planning}
 
-Dopo aver apportato le modifiche introdotte con AEM as a Cloud Service, è ora di iniziare a pianificare una revisione dell’installazione esistente, al fine di misurare il livello di modifiche necessarie per spostarla nel cloud.
+Dopo aver appreso le modifiche introdotte con AEM as a Cloud Service, è ora di iniziare a pianificare una revisione dell’installazione esistente. In questo modo è possibile misurare il livello di modifiche necessarie per spostarlo nel cloud.
 
 La figura seguente mostra i passaggi chiave della fase di revisione:
 
@@ -173,7 +173,7 @@ Ora esamineremo in dettaglio il significato di ciascuno di questi passaggi.
 
 ### Valutazione della preparazione a Cloud Service {#assess-cloud-readiness}
 
-Il primo passaggio consiste nel valutare se sei pronto a passare dalla versione esistente di AEM al Cloud Service e nel determinare le aree che richiederanno il refactoring per essere compatibile con AEM as a Cloud Service.
+Il primo passaggio consiste nel valutare se sei pronto a passare dalla versione esistente di AEM al Cloud Service e nel determinare le aree che richiedono il refactoring per essere compatibili con AEM as a Cloud Service.
 
 Dovrai effettuare una valutazione completa del codice sorgente AEM attuale rispetto alle modifiche di rilievo e alle funzioni obsolete, per determinare il livello di impegno previsto nel percorso di transizione.
 
@@ -198,7 +198,7 @@ Un report tipico deve contenere i seguenti input:
 
 **Socializzare il rapporto**
 
-Una volta completati i rapporti di Best Practices Analyzer, condividili con i team pertinenti per confermare i risultati e pianificare i passaggi successivi. A seconda delle preferenze, è inoltre possibile distribuire una versione stampata del report utilizzando [Anteprima di stampa](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
+Una volta completati i rapporti di Best Practices Analyzer, condividili con i team pertinenti in modo da poter confermare i risultati e pianificare i passaggi successivi. A seconda delle preferenze, è inoltre possibile distribuire una versione stampata del report utilizzando [Anteprima di stampa](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
 
 ### Esame della pianificazione delle risorse {#review-resource-planning}
 

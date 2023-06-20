@@ -2,10 +2,10 @@
 title: Guida introduttiva all’editor universale in AEM
 description: Scopri come accedere all’editor universale e come iniziare a preparare la tua prima app AEM per utilizzarla.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: de33ea3efed87170b081ea467f12a997e0d41a83
-workflow-type: ht
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -171,7 +171,7 @@ Consulta [Authoring dei contenuti con l’editor universale](authoring.md) per s
 
 Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
-* [Introduzione all’editor universale](introduction.md): scopri come l’editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire un’esperienza di sviluppo all’avanguardia.
+* [Introduzione all’editor universale](introduction.md) - Scopri come Universal Editor consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione, per offrire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 * [Authoring dei contenuti con l’editor universale](authoring.md): scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’editor universale.
 * [Pubblicazione di contenuti con l’editor universale](publishing.md): scopri in che modo l&#39;editor visivo universale pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
 * [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e come avviene il flusso di dati tra i suoi servizi e livelli.

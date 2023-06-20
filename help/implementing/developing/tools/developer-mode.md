@@ -4,9 +4,9 @@ seo-title: Developer Mode
 description: Modalità sviluppatore apre un pannello laterale con diverse schede che forniscono a uno sviluppatore informazioni sulla pagina corrente
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,6 @@ Questi aiutano uno sviluppatore a:
 >* Non è disponibile su dispositivi mobili o piccole finestre sul desktop (a causa di limitazioni di spazio).
 >  * Ciò si verifica quando la larghezza è inferiore a 1024 px.
 >* È disponibile solo per gli utenti che sono membri di `administrators` gruppo.
-
 
 ## Apertura modalità sviluppatore {#opening-developer-mode}
 
@@ -73,7 +72,7 @@ Ciascuna voce di componente può avere le seguenti opzioni:
    * Tutti gli script dei componenti utilizzati per eseguire il rendering del componente.
    * Percorso del contenuto dell’archivio per questo componente specifico.
 
-      ![Visualizza dettagli](assets/developer-mode-view-details.png)
+     ![Visualizza dettagli](assets/developer-mode-view-details.png)
 
 * **Modifica script:** Un collegamento che apre lo script del componente in CRXDE Lite.
 
@@ -93,4 +92,4 @@ Si spera che **Errori** La scheda sarà sempre vuota (come sopra), ma in caso di
 * Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli dell’errore e collegamenti diretti al codice appropriato all’interno di CRXDE Lite.
 * Un avviso se il componente apre una sessione di amministrazione.
 
-Ad esempio, se si chiama un metodo non definito, l&#39;errore risultante verrà visualizzato nel **Errori** e la voce del componente nella struttura ad albero del **Componenti** verrà inoltre contrassegnata con un indicatore quando si verifica un errore.
+Ad esempio, se viene chiamato un metodo non definito, l&#39;errore risultante viene visualizzato nel **Errori** e la voce del componente nella struttura ad albero del **Componenti** verrà inoltre contrassegnata con un indicatore quando si verifica un errore.

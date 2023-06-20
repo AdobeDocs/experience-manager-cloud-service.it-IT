@@ -3,13 +3,13 @@ title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud 
 description: Utilizza il Selettore risorse per cercare, trovare e recuperare i metadati e le rappresentazioni delle risorse all’interno dell’applicazione.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
-workflow-type: ht
-source-wordcount: '2378'
-ht-degree: 100%
+exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '2376'
+ht-degree: 99%
 
 ---
-
 
 # Selettore risorse micro front-end {#Overview}
 
@@ -76,7 +76,6 @@ Definisci i prerequisiti in un file `index.html` o simile nell’implementazione
 * imsOrg
 * imsToken
 * apikey
-
 <!--
 The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
 
@@ -361,28 +360,28 @@ Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rende
 
 | Proprietà | Tipo | Obbligatorio | Predefiniti | Descrizione |
 |---|---|---|---|---|
-| *barra* | booleano | No | false | Se contrassegnato `true`, il rendering del Selettore risorse verrà eseguito in una vista della barra a sinistra. Se è contrassegnato `false`, il rendering del Selettore risorse verrà eseguito nella vista modale. |
-| *imsOrg* | stringa | Sì |  | L’ID di Adobe Identity Management System (IMS) assegnato durante il provisioning di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] per l’organizzazione. La chiave `imsOrg` è necessaria per autenticare se l’organizzazione a cui stai accedendo è in Adobe IMS o meno. |
-| *imsToken* | stringa | No |  | Token di connessione IMS utilizzato per l’autenticazione. `imsToken` è obbligatorio se si utilizza un flusso non SUSI. |
-| *apiKey* | stringa | No |  | Chiave API utilizzata per accedere al servizio di individuazione AEM. `apiKey` è obbligatorio se si utilizza un flusso non SUSI. |
+| *barra* | booleano | No | false | Se contrassegnato `true`, il rendering del selettore risorse viene eseguito nella barra a sinistra. Se è contrassegnato `false`, il selettore delle risorse viene renderizzato nella vista modale. |
+| *imsOrg* | stringa | Sì | | L’ID di Adobe Identity Management System (IMS) assegnato durante il provisioning di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] per l’organizzazione. La chiave `imsOrg` è necessaria per autenticare se l’organizzazione a cui stai accedendo è in Adobe IMS o meno. |
+| *imsToken* | stringa | No | | Token di connessione IMS utilizzato per l’autenticazione. `imsToken` è obbligatorio se si utilizza un flusso non SUSI. |
+| *apiKey* | stringa | No | | Chiave API utilizzata per accedere al servizio di individuazione AEM. `apiKey` è obbligatorio se si utilizza un flusso non SUSI. |
 | *rootPath* | stringa | No | /content/dam/ | Percorso della cartella da cui il selettore risorse visualizza le risorse. `rootPath` può essere utilizzato anche sotto forma di incapsulamento. Ad esempio, dato il seguente percorso, `/content/dam/marketing/subfolder/`, il Selettore risorse non consente di spostarsi all’interno di alcuna cartella principale, ma mostra solo le cartelle secondarie. |
-| *percorso* | stringa | No |  | Percorso utilizzato per passare a una directory specifica di risorse durante il rendering del Selettore risorse. |
-| *filterSchema* | array | No |  | Modello utilizzato per configurare le proprietà del filtro. Questa funzione è utile quando desideri limitare determinate opzioni di filtro nel Selettore risorse. |
-| *filterFormProps* | Oggetto | No |  | Specifica le proprietà del filtro da utilizzare per perfezionare la ricerca. Ad esempio, tipo MIME JPG, PNG, GIF. |
-| *selectedAssets* | Array `<Object>` | No |  | Specifica le risorse selezionate quando viene eseguito il rendering del Selettore risorse. È necessario un array di oggetti che contenga una proprietà ID delle risorse. Ad esempio, `[{id: 'urn:234}, {id: 'urn:555'}]` Deve essere disponibile una risorsa nella directory corrente. Se devi utilizzare una directory diversa, specifica anche un valore per la proprietà `path`. |
-| *acvConfig* | Oggetto | No |  | La proprietà Visualizzazione della raccolta risorse che contiene un oggetto con una configurazione personalizzata per sostituire le impostazioni predefinite. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |  | Se le traduzioni OOTB non sono sufficienti per le esigenze dell’applicazione, puoi esporre un’interfaccia tramite la quale puoi trasmettere valori localizzati personalizzati tramite la proprietà `i18nSymbols`. Il passaggio di un valore tramite questa interfaccia sostituisce le traduzioni predefinite fornite e utilizza le tue.  Per eseguire la sostituzione, è necessario passare un oggetto valido del [Descrittore del messaggio](https://formatjs.io/docs/react-intl/api/#message-descriptor) alla chiave di `i18nSymbols` che desideri sostituire. |
-| *intl* | Oggetto | No |  | Il selettore risorse fornisce le traduzioni predefinite OOTB. È possibile selezionare la lingua di traduzione fornendo una stringa di lingua valida attraverso la proprietà `intl.locale`. Ad esempio: `intl={{ locale: "es-es" }}` </br></br> Le stringhe di lingua supportate seguono i [Codici - ISO 639](https://www.iso.org/iso-639-language-codes.html) per la rappresentazione di nomi di lingue standard. </br></br> Elenco delle lingue supportate: Inglese - ‘en-us’ (impostazione predefinita) Spagnolo - ‘es-es’ Tedesco - ‘de-de’ Francese - ‘fr-fr’ Italiano - ‘it-it’ Giapponese - ‘ja-jp’ Coreano - ‘ko-kr’ Portoghese - ‘pt-br’ cinese (tradizionale) - ‘zh-cn’ Cinese (Taiwan) - ‘zh-tw’ |
+| *percorso* | stringa | No | | Percorso utilizzato per passare a una directory specifica di risorse durante il rendering del Selettore risorse. |
+| *filterSchema* | array | No | | Modello utilizzato per configurare le proprietà del filtro. Questa funzione è utile quando desideri limitare determinate opzioni di filtro nel Selettore risorse. |
+| *filterFormProps* | Oggetto | No | | Specifica le proprietà del filtro da utilizzare per perfezionare la ricerca. Ad esempio, tipo MIME JPG, PNG, GIF. |
+| *selectedAssets* | Array `<Object>` | No |                 | Specifica le risorse selezionate quando viene eseguito il rendering del Selettore risorse. È necessario un array di oggetti che contenga una proprietà ID delle risorse. Ad esempio, `[{id: 'urn:234}, {id: 'urn:555'}]` Deve essere disponibile una risorsa nella directory corrente. Se devi utilizzare una directory diversa, specifica anche un valore per la proprietà `path`. |
+| *acvConfig* | Oggetto | No | | La proprietà Visualizzazione della raccolta risorse che contiene un oggetto con una configurazione personalizzata per sostituire le impostazioni predefinite. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |                 | Se le traduzioni OOTB non sono sufficienti per le esigenze dell’applicazione, puoi esporre un’interfaccia tramite la quale puoi trasmettere valori localizzati personalizzati tramite la proprietà `i18nSymbols`. Il passaggio di un valore tramite questa interfaccia sostituisce le traduzioni predefinite fornite e utilizza le tue.  Per eseguire la sostituzione, è necessario passare un oggetto valido del [Descrittore del messaggio](https://formatjs.io/docs/react-intl/api/#message-descriptor) alla chiave di `i18nSymbols` che desideri sostituire. |
+| *intl* | Oggetto | No | | Il selettore risorse fornisce le traduzioni predefinite OOTB. È possibile selezionare la lingua di traduzione fornendo una stringa di lingua valida attraverso la proprietà `intl.locale`. Ad esempio: `intl={{ locale: "es-es" }}` </br></br> Le stringhe di lingua supportate seguono i [Codici - ISO 639](https://www.iso.org/iso-639-language-codes.html) per la rappresentazione di nomi di lingue standard. </br></br> Elenco delle lingue supportate: Inglese - ‘en-us’ (impostazione predefinita) Spagnolo - ‘es-es’ Tedesco - ‘de-de’ Francese - ‘fr-fr’ Italiano - ‘it-it’ Giapponese - ‘ja-jp’ Coreano - ‘ko-kr’ Portoghese - ‘pt-br’ cinese (tradizionale) - ‘zh-cn’ Cinese (Taiwan) - ‘zh-tw’ |
 | *repositoryId* | stringa | No | &#39;&#39; | Archivio da cui il Selettore risorse carica il contenuto. |
 | *additionalAemSolutions* | `Array<string>` | No | [ ] | Consente di aggiungere un elenco di archivi AEM aggiuntivi. Se non vengono fornite informazioni in questa proprietà, vengono considerati solo la libreria di file multimediali o gli archivi di AEM Assets. |
 | *hideTreeNav* | booleano | No |  | Specifica se mostrare o nascondere la barra laterale di navigazione della struttura delle risorse. Viene utilizzata solo nella vista modale e quindi questa proprietà non influisce sulla visualizzazione della barra. |
-| *onDrop* | Funzione | No |  | La proprietà consente la funzionalità di rilascio di una risorsa. |
-| *dropOptions* | `{allowList?: Object}` | No |  | Configura le opzioni di rilascio utilizzando un “elenco consentiti”. |
-| *colorScheme* | stringa | No |  | Configura il tema (`light` o `dark`) per il Selettore risorse. |
-| *handleSelection* | Funzione | No |  | Richiamata con un array di elementi di risorse quando queste sono selezionate e si fa clic sul pulsante `Select` nel modale. Questa funzione viene richiamata solo nella vista modale. Per la visualizzazione della barra, utilizza le funzioni `handleAssetSelection` o `onDrop`. Esempio: <pre>handleSelection=(risorse: risorsa[])=> {...}</pre> Per maggiori dettagli, consulta [Tipo di risorsa selezionato](#selected-asset-type). |
-| *handleAssetSelection* | Funzione | No |  | Richiamata con un array di elementi durante la selezione o la deselezione delle risorse. Questa funzione è utile quando si desidera ascoltare le risorse selezionate dall’utente. Esempio: <pre>handleSelection=(risorse: risorsa[])=> {...}</pre> Per maggiori dettagli, consulta [Tipo di risorsa selezionato](#selected-asset-type). |
-| *onClose* | Funzione | No |  | Richiamata quando viene premuto il pulsante `Close` nella vista modale. Questa è chiamata solo nella vista `modal` e ignorata nella vista `rail`. |
-| *onFilterSubmit* | Funzione | No |  | Richiamata con gli elementi filtro poiché l’utente modifica criteri di filtro diversi. |
+| *onDrop* | Funzione | No | | La proprietà consente la funzionalità di rilascio di una risorsa. |
+| *dropOptions* | `{allowList?: Object}` | No | | Configura le opzioni di rilascio utilizzando un “elenco consentiti”. |
+| *colorScheme* | stringa | No | | Configura il tema (`light` o `dark`) per il Selettore risorse. |
+| *handleSelection* | Funzione | No | | Richiamata con un array di elementi di risorse quando queste sono selezionate e si fa clic sul pulsante `Select` nel modale. Questa funzione viene richiamata solo nella vista modale. Per la visualizzazione della barra, utilizza le funzioni `handleAssetSelection` o `onDrop`. Esempio: <pre>handleSelection=(risorse: risorsa[])=> {...}</pre> Per maggiori dettagli, consulta [Tipo di risorsa selezionato](#selected-asset-type). |
+| *handleAssetSelection* | Funzione | No | | Richiamata con un array di elementi durante la selezione o la deselezione delle risorse. Questa funzione è utile quando si desidera ascoltare le risorse selezionate dall’utente. Esempio: <pre>handleSelection=(risorse: risorsa[])=> {...}</pre> Per maggiori dettagli, consulta [Tipo di risorsa selezionato](#selected-asset-type). |
+| *onClose* | Funzione | No | | Richiamata quando viene premuto il pulsante `Close` nella vista modale. Questa è chiamata solo nella vista `modal` e ignorata nella vista `rail`. |
+| *onFilterSubmit* | Funzione | No | | Richiamata con gli elementi filtro poiché l’utente modifica criteri di filtro diversi. |
 | *selectionType* | stringa | No | singolo | Configurazione per la selezione `single` o `multiple` di risorse alla volta. |
 
 ## Esempi per utilizzare le proprietà del Selettore risorse {#usage-examples}

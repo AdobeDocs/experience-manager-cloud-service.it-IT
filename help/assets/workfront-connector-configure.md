@@ -4,9 +4,9 @@ description: Configurare [!DNL Workfront for Experience Manager enhanced connect
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,6 @@ Un utente con accesso amministratore in [!DNL Adobe Experience Manager] as a [!D
 >
 >* Consulta [Connettore avanzato per la certificazione dei partner per Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Per informazioni sull&#39;esame, vedere [Guida all’esame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 ## Configurare le sottoscrizioni di eventi {#event-subscriptions}
 
 Gli abbonamenti agli eventi vengono utilizzati per notificare all’AEM gli eventi che si verificano in [!DNL Adobe Workfront]. Sono tre [!DNL Workfront for Experience Manager enhanced connector] funzionalità che richiedono abbonamenti agli eventi per funzionare, sono:
@@ -45,7 +44,7 @@ Per utilizzare queste funzioni, abilita sottoscrizioni eventi.
 * Seleziona la [!UICONTROL Integrazione personalizzata Workfront] creato nella sezione 6.
 * Clic [!UICONTROL Abilita sottoscrizioni eventi Workfront].
 
-   ![Abbonamento evento](/help/assets/assets/event-subs.png)
+  ![Abbonamento evento](/help/assets/assets/event-subs.png)
 
 ## Configurare le cartelle collegate {#linked-folders}
 
@@ -60,11 +59,11 @@ Per iscriverti agli eventi, segui questi passaggi:
 1. Vai alla scheda Cartelle collegate al progetto nei servizi cloud.
 1. Percorso principale della cartella collegata: seleziona una cartella in DAM in cui desideri creare le cartelle collegate. Se lasciato vuoto, per impostazione predefinita viene impostato su /content/dam. Verificare che lo schema metadati Strumenti di Workfront e lo schema metadati cartelle collegate a Workfront siano stati applicati alla cartella selezionata.
 1. Struttura delle cartelle collegate: immetti valori separati da virgole. Ogni valore deve essere `DE:<some-project-custom-form-field>`, Portfolio, Programma, Anno, Nome o un &quot;valore stringa letterale&quot; (quest&#39;ultimo con virgolette). Attualmente è impostato su Portfolio,Programma,Anno,DE:Tipo di progetto,Nome.
-1. Se il titolo della cartella in Workfront deve includere tutte le cartelle della struttura, seleziona la casella di controllo Crea titolo della cartella collegata in Workfront utilizzando i nomi della struttura di cartelle. In caso contrario, sarà il titolo dell’ultima cartella.
+1. Se il titolo della cartella in Workfront deve includere tutte le cartelle della struttura, seleziona la casella di controllo Crea titolo della cartella collegata in Workfront utilizzando i nomi della struttura di cartelle. In caso contrario, si tratta del titolo dell&#39;ultima cartella.
 1. Sottocartelle con più campi consente di specificare un elenco di cartelle da creare come cartella secondaria della cartella collegata.
-1. Stato progetto: seleziona lo stato a cui deve essere impostato il progetto per creare la cartella collegata.
-1. Creazione di una cartella collegata in progetti con portfolio: elenco di Portfoli a cui il progetto deve appartenere per creare la cartella collegata. Lascia vuoto questo elenco per creare la cartella collegata per tutto il portfolio di progetti.
-1. Creare una cartella collegata nei progetti con campo modulo personalizzato: campo modulo personalizzato e il valore corrispondente che il progetto deve avere per creare la cartella collegata. Se questa configurazione viene lasciata vuota, verrà ignorata. Seleziona `CUSTOM FORMS: Create DAM Linked Folder` per il campo e l’input `Yes` per il valore.
+1. Stato progetto: seleziona lo stato per il quale il progetto deve essere impostato per creare la cartella collegata.
+1. Creazione di una cartella collegata in progetti con portfolio: elenco di Portfoli a cui deve appartenere il progetto per poter creare la cartella collegata. Lascia vuoto questo elenco per creare la cartella collegata per tutto il portfolio di progetti.
+1. Creare una cartella collegata nei progetti con campo modulo personalizzato: campo modulo personalizzato e il valore corrispondente che il progetto deve avere per poter creare la cartella collegata. Questa configurazione viene ignorata se viene lasciata vuota. Seleziona `CUSTOM FORMS: Create DAM Linked Folder` per il campo e l’input `Yes` per il valore.
 1. Fai clic su Abilita creazione automatica di cartelle collegate. Se torni alla scheda Sottoscrizioni evento, vedrai che ora è presente un evento di creazione.
 
 ![configurazione cartella collegata](/help/assets/assets/wf-linked-folder-config.png)
@@ -104,7 +103,7 @@ Per configurare le mappature, effettua le seguenti operazioni:
    * Campi modulo personalizzato attività
    * Campi Panoramica progetto (ID, Nome, Descrizione o Numero di riferimento)
 
-1. Nel caso in cui [!DNL Workfront] campo selezionato in [!UICONTROL Campo modulo personalizzato Workfront] è un campo di completamento automatico di tipo utente di Workfront, sarà necessario specificare quale campo utente di Workfront si desidera mappare. A tale scopo, selezionare Ottieni valore dal campo oggetto di riferimento Workfront e quindi specificare il nome dell&#39; [!UICONTROL Campo modulo personalizzato utente Workfront] da cui recuperare il valore da mappare.
+1. Nel caso in cui [!DNL Workfront] campo selezionato in [!UICONTROL Campo modulo personalizzato Workfront] è un campo di completamento automatico di tipo utente di Workfront, è necessario specificare quale campo utente di Workfront si desidera mappare. A tale scopo, selezionare Ottieni valore dal campo oggetto di riferimento Workfront e quindi specificare il nome dell&#39; [!UICONTROL Campo modulo personalizzato utente Workfront] da cui recuperare il valore da mappare.
 
    ![configurazione mappatura metadati](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -170,7 +169,7 @@ Per mantenere la cronologia delle versioni delle risorse in AEM, configura il co
 
 1. Ad Experience Manager, l’accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione strumenti Workfront]** e aprire **[!UICONTROL Avanzate]** scheda.
 
-1. Seleziona opzione **[!UICONTROL Memorizza le risorse con lo stesso nome delle versioni della risorsa esistente]**. Se selezionata, questa opzione consente di memorizzare le risorse caricate con lo stesso nome e nella stessa posizione della versione della risorsa esistente. Se questa opzione non è selezionata, verrà creata una nuova risorsa con un nome diverso (ad esempio, `asset-name.pdf` e `asset-name-1.pdf`).
+1. Seleziona opzione **[!UICONTROL Memorizza le risorse con lo stesso nome delle versioni della risorsa esistente]**. Se selezionata, questa opzione consente di memorizzare le risorse caricate con lo stesso nome e nella stessa posizione della versione della risorsa esistente. Se questa opzione non è selezionata, viene creata una nuova risorsa con un nome diverso (ad esempio, `asset-name.pdf` e `asset-name-1.pdf`).
 
 1. Seleziona opzione **[!UICONTROL Aggiornare i metadati della risorsa durante la creazione di una nuova versione]**. Se selezionata, questa opzione aggiorna i metadati della risorsa ogni volta che ne viene creata una nuova versione. Se questa opzione è deselezionata, la risorsa manterrà i metadati che aveva prima di creare la nuova versione.
 
@@ -182,7 +181,7 @@ Per mantenere la cronologia delle versioni delle risorse in AEM, configura il co
 
 ## Allegare moduli personalizzati {#attach-custom-forms}
 
-Questo passaggio di flusso di lavoro consente agli utenti di allegare un modulo personalizzato a un [!DNL Workfront] artefatto. Questo passaggio di flusso di lavoro può essere aggiunto a qualsiasi modello di flusso di lavoro. Il [!DNL Workfront] artefatto che questo passaggio influisce verrà cercato utilizzando un percorso relativo dal payload.
+Questo passaggio di flusso di lavoro consente agli utenti di allegare un modulo personalizzato a un [!DNL Workfront] artefatto. Questo passaggio di flusso di lavoro può essere aggiunto a qualsiasi modello di flusso di lavoro. Il [!DNL Workfront] artefatto che questo passaggio influisce viene cercato utilizzando un percorso relativo dal payload.
 
 Nell’editor del flusso di lavoro di Experience Manager, modifica le proprietà della [!UICONTROL Workfront - Allega modulo personalizzato] passaggio di workflow.
 
@@ -192,7 +191,7 @@ Nell’editor del flusso di lavoro di Experience Manager, modifica le proprietà
 
 1. Ad Experience Manager, l’accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione strumenti Workfront]** e aprire **[!UICONTROL Avanzate]** scheda.
 
-1. Seleziona **[!UICONTROL Pubblica automaticamente le risorse quando inviate da Workfront]**. Questa opzione consente la pubblicazione automatica delle risorse quando vengono inviate da Workfront all’AEM. Questa funzione può essere abilitata in modo condizionale specificando un campo modulo personalizzato Workfront e il valore su cui deve essere impostata. Ogni volta che un documento viene inviato al AEM, se soddisfa la condizione, la risorsa verrà pubblicata automaticamente.
+1. Seleziona **[!UICONTROL Pubblica automaticamente le risorse quando inviate da Workfront]**. Questa opzione consente la pubblicazione automatica delle risorse quando vengono inviate da Workfront all’AEM. Questa funzione può essere abilitata in modo condizionale specificando un campo modulo personalizzato Workfront e il valore su cui deve essere impostata. Ogni volta che un documento viene inviato al AEM, se soddisfa la condizione, la risorsa viene pubblicata automaticamente.
 
 1. Seleziona **[!UICONTROL Pubblica tutte le risorse del progetto in Brand Portal al completamento del progetto]**. Questa opzione consente la pubblicazione automatica delle risorse in [!DNL Brand Portal] quando lo stato del progetto Workfront a cui appartengono viene modificato in `Complete`.
 

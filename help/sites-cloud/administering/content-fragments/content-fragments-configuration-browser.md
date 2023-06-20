@@ -1,13 +1,13 @@
 ---
 title: Frammenti di contenuto - Browser configurazioni
-description: Scopri come abilitare le funzionalità Frammento di contenuto e GraphQL nel Browser configurazioni per sfruttare le funzionalità di distribuzione headless di AEM.
+description: Scopri come abilitare le funzionalità Frammento di contenuto e GraphQL nel Browser configurazioni per utilizzare le funzioni di consegna headless AEM.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,6 @@ Prima di utilizzare i frammenti di contenuto, è necessario utilizzare la funzio
 >
 >* l’opzione **Crea** non sarà disponibile per la creazione di nuovi modelli.
 >* non potrai [selezionare la configurazione Sites per creare il relativo endpoint](/help/headless/graphql-api/graphql-endpoint.md).
-
 
 Per abilitare la funzionalità dei frammenti di contenuto è necessario:
 
@@ -57,21 +56,19 @@ Per [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-con
 >* Le query persistenti verranno (ancora) salvate in base alla configurazione principale (root).
 
 
-
 1. Accedi a **Strumenti**, **Generali**, quindi apri **Browser configurazioni**.
 
 1. Utilizza **Crea** per aprire la finestra di dialogo, in cui:
 
    1. Specificare un **Titolo**.
-   1. Il **nome** diventerà il nome del nodo nell’archivio.
-      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   1. Il **Nome** diventa il nome del nodo nell’archivio.
+      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM.](/help/implementing/developing/introduction/naming-conventions.md)
       * Se necessario è possibile regolarlo.
    1. Per attivarne l’uso, seleziona
       * **Modelli per frammenti di contenuto**
       * **Query persistenti GraphQL**
 
       ![Definire la configurazione](assets/cfm-conf-01.png)
-
 
 1. Seleziona **Crea** per salvare la definizione.
 

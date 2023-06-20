@@ -2,16 +2,16 @@
 title: Percorso Architect di contenuti AEM headless
 description: Inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come modellare i contenuti sul tuo primo progetto headless.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 86%
 
 ---
 
 # Percorso Architect di contenuti AEM headless {#aem-headless-content-architect-journey}
 
-Inizia qui un percorso guidato per scoprire le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come sfruttarle per creare il tuo primo progetto headless.
+Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità headless dell’AEM, le loro caratteristiche e come utilizzarle nel tuo primo progetto headless.
 
 {{headless-trials-promotion}}
 
@@ -37,11 +37,11 @@ Se desideri sapere come Adobe consiglia di risolvere dei casi di business headle
 
 ## Pubblico {#audience}
 
-Questo percorso è progettato per l’utente tipo architetto di contenuti. In qualità di architetto di contenuti, definirai la struttura del contenuto. Queste definizioni verranno quindi utilizzate dagli autori dei contenuti quando creano il contenuto effettivo.
+Questo percorso è progettato per l’utente tipo architetto di contenuti. In qualità di architetto dei contenuti, stai definendo la struttura del contenuto. Queste definizioni vengono quindi utilizzate dagli autori dei contenuti, quando creano il contenuto effettivo.
 
 Il percorso descrive i requisiti, i passaggi e l’approccio di un progetto headless di AEM dal punto di vista di un architetto di contenuti. Il percorso definirà gli utenti tipo aggiuntivi con cui l’architetto dei contenuti deve interagire per un progetto di successo, ma il punto di vista del percorso è quello dell’architetto di contenuti.
 
-Le informazioni di questo percorso possono essere utili per altri utenti tipo, ma alcune informazioni potrebbero essere superflue per certi ruoli. Rimani sintonizzato per i prossimi percorsi che includeranno ruoli aggiuntivi.
+Le informazioni in questo percorso possono ovviamente essere utili ad altri utenti, ma alcune sono superflue per alcuni ruoli. Rimani sintonizzato per i prossimi percorsi che includeranno ruoli aggiuntivi.
 
 ## Percorso dell’architetto di contenuti headless {#the-journey}
 
@@ -68,6 +68,6 @@ Poiché tali percorsi sono progettati per essere indipendenti l’uno dall’alt
 
 * [Percorso di traduzione headless di AEM](/help/journey-headless/translation/overview.md): questo percorso di documentazione ti farà comprendere la tecnologia headless, come AEM gestisce i contenuti headless e in che modo sia possibile tradurli.
 * [Percorso di authoring headless](/help/journey-headless/author/overview.md): inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le potenzialità e i modi in cui modellare i contenuti sul tuo primo progetto headless.
-* [Percorso sviluppatore AEM Headless](/help/journey-headless/developer/overview.md): inizia qui un percorso guidato per scoprire le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come sfruttarle nei tuoi progetti.
+* [Percorso di sviluppatori AEM headless](/help/journey-headless/developer/overview.md) - Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità headless dell’AEM, le loro caratteristiche e come utilizzarle nel tuo primo progetto di sviluppo.
 * [Documentazione tecnica AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it): se hai già una solida conoscenza delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
 * [Tutorial AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): se preferisci imparare facendo e hai capacità tecniche, segui i nostri tutorial pratici organizzati per API e framework, che esplorano la creazione e l’utilizzo di applicazioni create su AEM Headless.

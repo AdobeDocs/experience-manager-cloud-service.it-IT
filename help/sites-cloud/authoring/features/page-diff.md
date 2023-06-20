@@ -2,10 +2,10 @@
 title: Differenze tra pagine
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 53%
+source-wordcount: '618'
+ht-degree: 45%
 
 ---
 
@@ -19,7 +19,7 @@ La creazione dei contenuti è un processo iterativo. Per un authoring efficace, 
 
 >[!NOTE]
 >
->Per utilizzare questa funzione, l’utente deve disporre dell’autorizzazione **Modifica/Crea/Elimina** sul nodo `/content/versionhistory`.
+>L’utente deve disporre di **Modifica/Crea/Elimina** autorizzazione sul nodo `/content/versionhistory` per utilizzare la funzione.
 >
 >Per ulteriori informazioni tecniche su questa funzione, consulta [Sviluppo e differenze tra pagine](/help/implementing/developing/introduction/page-diff.md#operation-details).
 
@@ -65,7 +65,7 @@ La differenza rileva le modifiche a livello di componente e HTML. Gli elementi c
 
 ### Modalità a schermo intero e Uscita   {#fullscreen-and-exiting}
 
-Per concentrarti su un contenuto particolare, fai clic sull’icona schermo intero di entrambi i “lati” a confronto, per ingrandire il contenuto nella finestra del browser a schermo intero.
+Per concentrarti su un contenuto particolare, puoi fare clic sull’icona a schermo intero di entrambi i &quot;lati&quot; di side-by-side diff (differenze affiancate) per ingrandirla fino alla finestra del browser completa.
 
 ![Pulsante Schermo intero](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 

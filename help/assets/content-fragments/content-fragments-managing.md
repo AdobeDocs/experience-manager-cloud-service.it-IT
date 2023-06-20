@@ -2,10 +2,10 @@
 title: Gestione dei frammenti di contenuto (risorse - frammenti di contenuto)
 description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 81%
+source-wordcount: '1754'
+ht-degree: 76%
 
 ---
 
@@ -31,7 +31,6 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 >
 >* quando si esegue l’authoring delle pagine; consulta [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* per la [distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-
 
 >[!NOTE]
 >
@@ -65,21 +64,21 @@ Il metodo per creare un frammento di contenuto è:
 
       * **Titolo**
 
-         Titolo del frammento.
+        Titolo del frammento.
 
-         Obbligatorio.
+        Obbligatorio.
 
       * **Descrizione**
 
       * **Tag**
+
    * **Avanzate**
 
       * **Nome**
 
-         Il nome; verrà utilizzato per formare l’URL.
+        Il nome; viene utilizzato per formare l’URL.
 
-         Obbligatorio; deriverà automaticamente dal titolo, ma può essere aggiornato.
-
+        Obbligatorio; deriva automaticamente dal titolo, ma può essere aggiornato.
 
 1. Seleziona **Crea** per completare l’azione, quindi **Apri** il frammento per la modifica oppure tornare alla console facendo clic su **Fine**.
 
@@ -176,7 +175,7 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
 
 ![modalità](assets/cfm-managing-top-toolbar.png)
 
-* Se in una pagina di contenuto è già presente un riferimento al frammento, viene visualizzato un messaggio. È possibile **chiudere** il messaggio.
+* Viene visualizzato un messaggio quando in una pagina di contenuto è già presente un riferimento al frammento. È possibile **chiudere** il messaggio.
 
 * Il pannello laterale può essere nascosto o visualizzato utilizzando l’icona **Attiva/Disattiva pannello laterale**.
 
@@ -216,23 +215,23 @@ L’editor dispone di diverse opzioni:
    * **Salva** salva le modifiche più recenti e rimane nell’editor.
    * **Salva e chiudi** salva le modifiche più recenti e chiude l’editor.
 
-   >[!CAUTION]
-   >
-   >Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
+  >[!CAUTION]
+  >
+  >Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
 
-   >[!NOTE]
-   >
-   >È possibile rimanere nell’editor, apportando una serie di modifiche, prima di salvare.
+  >[!NOTE]
+  >
+  >È possibile rimanere nell’editor, apportando una serie di modifiche, prima di salvare.
 
-   >[!CAUTION]
-   >
-   >Oltre al semplice salvataggio delle modifiche, le azioni aggiornano anche i riferimenti e garantiscono che il Dispatcher venga svuotato come richiesto. L’elaborazione di queste modifiche può richiedere del tempo. Per questo motivo, può esserci un impatto sulle prestazioni su un sistema di grandi dimensioni, complesso o con un carico elevato.
-   >
-   >Tieni presente questo aspetto se utilizzi **Salva e chiudi** per poi riaprire immediatamente l’editor frammento per apportare e salvare ulteriori modifiche.
+  >[!CAUTION]
+  >
+  >Oltre al semplice salvataggio delle modifiche, le azioni aggiornano anche i riferimenti e garantiscono che il Dispatcher venga svuotato come richiesto. L’elaborazione di queste modifiche può richiedere del tempo. Per questo motivo, può esserci un impatto sulle prestazioni su un sistema di grandi dimensioni, complesso o con un carico elevato.
+  >
+  >Tieni presente questo aspetto se utilizzi **Salva e chiudi** per poi riaprire immediatamente l’editor frammento per apportare e salvare ulteriori modifiche.
 
 * **Chiudi**
 
-   Chiude l’editor senza salvare le modifiche più recenti, ovvero apportate dall’ultimo comando **Salva**.
+  Chiude l’editor senza salvare le modifiche più recenti, ovvero apportate dall’ultimo comando **Salva**.
 
 Durante la modifica del frammento di contenuto, AEM crea automaticamente alcune versioni per garantire che il contenuto precedente possa essere ripristinato se si annullano le modifiche (utilizzando **Chiudi** senza salvare):
 
@@ -289,16 +288,18 @@ Oltre alle opzioni standard, [Timeline](/help/assets/manage-digital-assets.md#ti
    * **Eliminare**
 
 >[!NOTE]
+>
 I commenti sono:
+>
 * Funzionalità standard per tutte le risorse
 * Effettuati nella timeline
 * Correlati alla risorsa frammento
 >
 Le annotazioni (per i frammenti di contenuto) sono:
+>
 * Inserite nell’editor frammenti
 * Specifiche per un segmento di testo selezionato all’interno del frammento
 >
-
 
 Esempio:
 
@@ -314,7 +315,7 @@ Si aprirà:
 
 * la versione selezionata **v&lt;*x.y*>** (a destra)
 
-Le versioni vengono visualizzate affiancate e:
+Vengono visualizzati affiancati, dove:
 
 * Eventuali differenze sono evidenziate
 
@@ -327,6 +328,7 @@ Le versioni vengono visualizzate affiancate e:
 * **Fine** riporta alla console
 
 >[!NOTE]
+>
 Non è possibile modificare il contenuto del frammento nella modalità di confronto.
 
 ![confronto](assets/cfm-managing-06.png)
@@ -337,15 +339,17 @@ Non è possibile modificare il contenuto del frammento nella modalità di confro
 
 * Direttamente dalla [timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-   Seleziona la versione richiesta, quindi l’azione **Ripristina questa versione**.
+  Seleziona la versione richiesta, quindi l’azione **Ripristina questa versione**.
 
 * Durante il [confronto di una versione con la versione corrente](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) è possibile **ritornare** alla versione selezionata.
 
 ## Pubblicazione e riferimento a un frammento {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
+>
 Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
-Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
+>
+Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, ciò viene indicato in un elenco di selezione e il modello viene pubblicato con il frammento.
 
 I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione. Questa operazione viene eseguita utilizzando la funzionalità standard di Assets:
 
@@ -357,9 +361,10 @@ I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambien
 * Dopo la creazione; utilizzo [azioni disponibili nella console Assets](#actions-for-a-content-fragment-assets-console).
 * Dall’[editor frammento di contenuto](#toolbar-actions-in-the-content-fragment-editor).
 
-Inoltre, quando [pubblichi una pagina che utilizza il frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), il frammento verrà elencato nei riferimenti di pagina.
+Inoltre, quando [pubblicare una pagina che utilizza il frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); il frammento è elencato nei riferimenti di pagina.
 
 >[!CAUTION]
+>
 Dopo la pubblicazione e/o il riferimento a un frammento, AEM mostra un avviso quando un autore riapre il frammento per la modifica. L’avviso informa l’utente che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
@@ -370,10 +375,12 @@ Per eliminare un frammento:
 2. Seleziona il frammento.
 
    >[!NOTE]
+   >
    L’azione **Elimina** non è disponibile come azione rapida.
 
 3. Seleziona **Elimina** dalla barra degli strumenti.
 4. Conferma l’azione **Elimina**.
 
    >[!CAUTION]
-   Se in una pagina è già presente un riferimento al frammento, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.
+   >
+   Se in una pagina è già presente un riferimento al frammento, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con **Forza eliminazione**. Il frammento, insieme al relativo componente Frammento di contenuto, viene eliminato da tutte le pagine di contenuto.

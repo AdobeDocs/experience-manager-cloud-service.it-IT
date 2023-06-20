@@ -2,10 +2,10 @@
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.6.0'
 description: 'Experience Manager: note sulla versione 2020.6.0 di'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 98%
+source-wordcount: '1939'
+ht-degree: 92%
 
 ---
 
@@ -48,9 +48,9 @@ La versione 2.9.0 dei [Componenti core](https://experienceleague.adobe.com/docs/
 
 ## Novità negli elementi di base di AEM as a Cloud Service {#foundations}
 
-La creazione dei progetti AEM risulterà più rapida grazie alla rimozione di tutti i riferimenti all’archivio remoto `https://downloads.experiencecloud.adobe.com/content/maven/public` nel file pom.xml del progetto AEM.
+I tempi di creazione dei progetti AEM miglioreranno rimuovendo tutti i riferimenti all’archivio remoto nel file pom.xml del progetto AEM `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-Il Jar dell’API SDK di AEM as a Cloud Service, in precedenza ospitato in tale percorso, ora si trova in Maven Central, l’archivio degli artefatti predefinito di Maven.
+Il Jar dell’API SDK dell’AEM as a Cloud Service, precedentemente ospitato in tale posizione, ora si trova in Maven Central, l’archivio di artefatti predefinito di Maven.
 
 ## Novità di Cloud Manager {#cloud-manager}
 
@@ -60,11 +60,11 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * Ora l’utente con il ruolo *Proprietario business* in Cloud Manager può eliminare un programma sandbox dalla pagina di destinazione (tramite il pulsante di azione rapida nella scheda Programma) o dall’interno del programma.
 
-   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=it).
+  Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=it).
 
 * Ora l’utente del programma sandbox con il ruolo di *Proprietario business* o *Responsabile dell’implementazione* in Cloud Manager può eliminare il set di ambienti di produzione e di staging impostato tramite l’interfaccia utente di Cloud Manager. L’opzione di eliminazione è ora disponibile sia nella scheda Ambiente nella pagina **Panoramica dei programmi**, sia nella pagina **Ambienti**. Selezionando l’opzione di eliminazione nell’ambiente di produzione o staging, viene eliminato anche l’altro nel set.
 
-   Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=it).
+  Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=it).
 
 * Delle descrizioni sulla pagina di destinazione forniscono all’utente istruzioni di base sulla navigazione.
 
@@ -72,15 +72,15 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * Cloud Manager ora presenta una pagina **SCOPRI**, accessibile tramite la navigazione superiore. Questa pagina include risorse per aiutare gli utenti a conoscere i flussi di lavoro più utilizzati in base ai loro ruoli assegnati in Cloud Manager.
 
-* I programmi sandbox ora sono identificati da un contrassegno **Sandbox** visualizzato sulla scheda del programma nella pagina di destinazione e accanto al nome del programma nella pagina **Panoramica del programma**.
+* I programmi sandbox ora sono identificati da un **Sandbox** che viene visualizzato sulla scheda del programma nella pagina di destinazione e accanto al nome del programma nella sezione **Panoramica del programma** pagina.
 
 * Un utente con il ruolo SysAdmin ora ha accesso con un solo clic alla posizione in Admin Console da cui è possibile gestire i ruoli o le autorizzazioni degli utenti per Cloud Manager. Nella pagina di destinazione è ora disponibile un pulsante **Gestisci accesso** accanto al pulsante **Aggiungi programma**.
 
-   Per ulteriori informazioni, consulta [Attività SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#sysadmin-tasks).
+  Per ulteriori informazioni, consulta [Attività SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#sysadmin-tasks).
 
 * Un utente con il ruolo SysAdmin ora dispone dell’accesso con un solo clic all’istanza di authoring direttamente da Cloud Manager.
 
-   Per ulteriori informazioni, consulta [Gestione dell’accesso all’istanza di authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#manage-access-aem).
+  Per ulteriori informazioni, consulta [Gestione dell’accesso all’istanza di authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#manage-access-aem).
 
 * Il registro Build ora include l’elenco degli artefatti individuati, inclusi i pacchetti di contenuti saltati.
 
@@ -98,7 +98,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 ### Problemi noti {#known-issues-cm}
 
-* Gli ambienti di un programma sandbox vengono ibernati se non viene rilevata alcuna attività per un certo periodo di tempo. Questo stato non sarà osservato in Cloud Manager. Tuttavia, lo stato può essere osservato tramite la Console per sviluppatori. Questo problema sarà risolto in una versione successiva.
+* Gli ambienti all’interno di un programma sandbox vengono sospesi quando non viene rilevata alcuna attività per un certo periodo di tempo. Questo stato non sarà osservato in Cloud Manager. Tuttavia, lo stato può essere osservato tramite la Console per sviluppatori. Questo problema sarà risolto in una versione successiva.
 
 * Il collegamento alla Console per sviluppatori direttamente da Cloud Manager non mostra l’opzione per ibernare/riattivare l’ambiente di un programma sandbox. Per risolvere questo problema, una volta nella Console per sviluppatori, aggiungi il pattern `#release-cm-p1234-e5678` alla fine dell’URL, dove *1234* è l’ID del programma e *5678* è l’ID dell’ambiente. Questo problema sarà risolto in una versione successiva.
 
@@ -176,7 +176,7 @@ La versione include i seguenti ulteriori miglioramenti:
 * Possibilità di rielaborare le risorse con profili di elaborazione delle risorse, offrendo così agli utenti il controllo completo del processo (elaborazione completa delle risorse, applicazione di un profilo di elaborazione specifico ed eventuale esecuzione di un flusso di lavoro di post-elaborazione).
 * Le query di ricerca ora restituiscono i risultati più rapidamente quando l’istanza del cluster sottostante viene riavviata dietro le quinte (in un caso simile, l’esecuzione della ricerca iniziale poteva durare più a lungo prima).
 * È possibile ordinare per “Nome” le risorse nella vista a elenco nell’interfaccia di Assets e nei risultati di ricerca. Consulta [Cercare le risorse](/help/assets/search-assets.md#sort).
-* È possibile ordinare per “Creato” (data) le risorse nella vista a elenco nell’interfaccia di Assets e nei risultati di ricerca. Consulta [Cercare le risorse](/help/assets/search-assets.md#sort).
+* È possibile ordinare per &quot;Creato&quot; (data) le risorse nella vista a elenco nell’interfaccia di Assets e nei risultati di ricerca. Consulta [Cercare le risorse](/help/assets/search-assets.md#sort).
 * Supporto per la conversione di file EPS in immagini tramite i microservizi delle risorse.
 
 ### Correzioni di bug {#assets-bug-fixes}

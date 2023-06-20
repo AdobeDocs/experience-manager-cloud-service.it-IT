@@ -2,9 +2,9 @@
 title: Sviluppo di Sites con la pipeline front-end
 description: Con la pipeline front-end, viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può guadagnare una notevole velocità. Questo documento descrive alcune considerazioni particolari del processo di sviluppo front-end che devono essere fornite.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: a6b228023d7bd2a40e4db3a1d2c3900a5c24031c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1154'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Sviluppo di Sites con la pipeline front-end {#developing-site-with-front-end-pipeline}
 
-[Con la pipeline front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può guadagnare una notevole velocità. Questo documento descrive il funzionamento di questo processo e alcune considerazioni di cui tenere conto per sfruttare appieno il potenziale.
+[Con la pipeline front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può guadagnare una notevole velocità. Questo documento descrive il funzionamento di questo processo e contiene alcune considerazioni di cui tenere conto per sfruttare appieno il potenziale.
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Simile a [ambiente di build full stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) la pipeline front-end ha un proprio ambiente. Gli sviluppatori hanno una certa flessibilità in questa pipeline purché venga rispettato il seguente contratto di sviluppo front-end.
 
-La pipeline front-end richiede che il progetto Node.js front-end utilizzi il `build` direttiva script per generare la build che verrà distribuita dalla pipeline front-end. Ad esempio, Cloud Manager utilizza il comando `npm run build` per generare il progetto distribuibile in `dist` cartella.
+La pipeline front-end richiede che il progetto Node.js front-end utilizzi il `build` direttiva script per generare la build distribuita dalla pipeline front-end. Ad esempio, Cloud Manager utilizza il comando `npm run build` per generare il progetto distribuibile in `dist` cartella.
 
 Il contenuto della `dist` Cartella è ciò che viene distribuito in AEM as a Cloud Service dalla pipeline di Cloud Manager.
 

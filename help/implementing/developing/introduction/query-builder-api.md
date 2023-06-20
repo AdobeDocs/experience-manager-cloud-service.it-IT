@@ -2,9 +2,9 @@
 title: API Query Builder
 description: La funzionalità di Asset Share Query Builder è esposta tramite un’API Java e un’API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Ad esempio, l’interfaccia utente può adattare il seguente approccio:
    * `total=43`, `more=false` - Indica che il numero totale di hit è 43. L’interfaccia utente può visualizzare fino a dieci risultati come parte della prima pagina e fornire l’impaginazione per le tre pagine successive. Puoi inoltre utilizzare questa implementazione per visualizzare un testo descrittivo come **&quot;43 risultati trovati&quot;**.
    * `total=100`, `more=true` - Indica che il numero totale di hit è maggiore di 100 e il conteggio esatto non è noto. L’interfaccia utente può visualizzare fino a dieci pagine come parte della prima pagina e fornire l’impaginazione per le dieci pagine successive. Puoi anche utilizzarlo per visualizzare un testo come **&quot;trovati più di 100 risultati&quot;**. Quando l’utente passa alle pagine successive, le chiamate effettuate al Query Builder aumentano il limite di `guessTotal` e anche del `offset` e `limit` parametri.
 
-`guessTotal` deve essere utilizzato anche nei casi in cui l’interfaccia utente deve utilizzare uno scorrimento infinito, al fine di evitare che Query Builder determini il conteggio esatto degli hit.
+`guessTotal` deve essere utilizzato anche nei casi in cui l’interfaccia utente deve utilizzare uno scorrimento infinito per evitare che Query Builder determini il conteggio esatto degli hit.
 
 ### Trova i file jar e ordinali, a partire dal più recente {#find-jar-files-and-order-them-newest-first}
 
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Ottimizzazione di ciò che viene restituito {#refining-what-is-returned}
 
-Per impostazione predefinita, il servlet JSON QueryBuilder restituisce un set predefinito di proprietà per ciascun nodo del risultato della ricerca (ad esempio, percorso, nome, titolo e così via). Per controllare quali proprietà vengono restituite, è possibile effettuare una delle seguenti operazioni:
+Per impostazione predefinita, il servlet JSON QueryBuilder restituisce un set predefinito di proprietà per ogni nodo del risultato della ricerca (ad esempio, percorso, nome e titolo). Per ottenere il controllo sulle proprietà restituite, effettuare una delle seguenti operazioni:
 
 Specifica
 
@@ -287,7 +287,7 @@ Specifica
 p.hits=full
 ```
 
-in questo caso, tutte le proprietà verranno incluse per ciascun nodo:
+In questo caso, tutte le proprietà sono incluse per ciascun nodo:
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
@@ -320,7 +320,7 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-È inoltre possibile includere nodi figlio nella risposta di Query Builder. A questo scopo è necessario specificare
+È inoltre possibile includere nodi figlio nella risposta di Query Builder. A tale scopo, è necessario specificare
 
 ```xml
 p.nodedepth=n

@@ -2,9 +2,9 @@
 title: Come creare un portale Forms su una pagina Experience Manager Sites
 description: Scopri come creare un portale Forms e utilizzare i componenti core predefiniti in una pagina di AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1762'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ Per aggiungere un componente, trascina e rilascia il componente dal riquadro Com
 
 ### Configura componente Bozze e invii {#configure-drafts-submissions-component}
 
-Il componente Bozze e invii visualizza i moduli salvati come bozze per il completamento successivo e i moduli inviati. Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/configure_icon.png). In [!UICONTROL Bozze e invii] , specificare il titolo per indicare l&#39;elenco dei moduli come bozza o inviati. Seleziona anche se il componente deve elencare le bozze di moduli o i moduli inviati in formato scheda o elenco.
+Il componente Bozze e invii visualizza i moduli salvati come bozze da compilare in un secondo momento e quelli inviati. Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/configure_icon.png). In [!UICONTROL Bozze e invii] , specificare il titolo per indicare l&#39;elenco dei moduli come bozza o inviati. Seleziona anche se il componente deve elencare le bozze di moduli o i moduli inviati in formato scheda o elenco.
 
 ![Icona Bozze](assets/drafts-component.png)
 
@@ -135,7 +135,7 @@ Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/
 
 Il componente collegamento consente di fornire nella pagina i collegamenti a un modulo adattivo. Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/configure_icon.png). Il [!UICONTROL Modifica componente collegamento] viene visualizzata una finestra di dialogo.
 
-1. In [!UICONTROL Visualizzazione] , fornisci la didascalia del collegamento e la descrizione comando per facilitare l&#39;identificazione dei moduli rappresentati dal collegamento.
+1. In [!UICONTROL Visualizzazione] , fornire la didascalia del collegamento e la descrizione comando per facilitare l&#39;identificazione dei moduli rappresentati dal collegamento.
 1. In [!UICONTROL Info risorsa] , specifica il percorso dell’archivio in cui è memorizzata la risorsa.
 1. In [!UICONTROL Parametri query] , specificare i parametri aggiuntivi nel formato coppia chiave-valore. Quando fai clic sul collegamento, questi parametri aggiuntivi vengono trasmessi insieme al modulo.
 

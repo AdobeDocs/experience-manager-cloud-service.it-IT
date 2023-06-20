@@ -2,9 +2,9 @@
 title: Utilizzo dei contenuti di destinazione in più siti
 description: Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito integrato dell’AEM per contenuti mirati
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2891'
 ht-degree: 31%
 
 ---
@@ -49,7 +49,6 @@ Un sito o una Live Copy si collega a un’area contenente le attività che devon
 >* Quando utilizzi i rollout o le Live Copy, è necessaria una licenza MSM.
 >* Quando si utilizza la sincronizzazione con Adobe Target, è necessaria una licenza di Adobe Target.
 >
-
 
 ## Casi d’uso {#use-cases}
 
@@ -235,7 +234,6 @@ Un’attività che eredita da un altro sito è contrassegnata in verde accanto a
 >* Puoi solo sospendere o scollegare le Live Copy in un’attività.
 >* Non è necessario sospendere o scollegare le Live Copy per estendere un’attività ereditata. Puoi sempre creare **nuovo** esperienze e offerte locali per quell’attività. Se desideri modificare un’attività esistente, devi sospendere l’ereditarietà.
 >
-
 
 ### Sospensione dell’ereditarietà {#suspending-inheritance}
 

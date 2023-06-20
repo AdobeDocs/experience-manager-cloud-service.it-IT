@@ -4,9 +4,9 @@ description: Scopri le nozioni di base di AE; gestione dei pacchetti con Gestion
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3782'
 ht-degree: 4%
 
 ---
@@ -280,7 +280,7 @@ Un pacchetto viene spesso creato contemporaneamente a [creare il pacchetto](#cre
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
-1. Clic **Genera**. Una finestra di dialogo richiede la conferma che desideri creare il pacchetto poiché tutti i contenuti del pacchetto esistenti verranno sovrascritti.
+1. Clic **Genera**. Viene visualizzata una finestra di dialogo in cui viene richiesto di confermare che si desidera creare il pacchetto perché il contenuto esistente verrà sovrascritto.
 
 1. Fai clic su **OK**. L’AEM crea il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come fanno nell’elenco delle attività. Una volta completato AEM, viene visualizzata una conferma che il pacchetto è stato creato e, quando si chiude la finestra di dialogo, vengono aggiornate le informazioni sull’elenco dei pacchetti.
 
@@ -445,7 +445,7 @@ Per risolvere questo problema, il gestore del file di sovrapposizione in `/apps`
 
 **Elementi controllati**
 
-Questa convalida controlla quali autorizzazioni vengono aggiunte, come verranno gestite (unione/sostituzione) e se le autorizzazioni correnti saranno interessate.
+Questa convalida controlla quali autorizzazioni vengono aggiunte, come vengono gestite (unione/sostituzione) e se sono interessate le autorizzazioni correnti.
 
 **Come viene segnalato**
 
@@ -453,7 +453,7 @@ Le autorizzazioni sono descritte nel registro attività di Gestione pacchetti.
 
 **Stati di errore**
 
-Non è possibile fornire errori espliciti. La convalida indica semplicemente se l’installazione del pacchetto interesserà o aggiungerà nuove autorizzazioni ACL.
+Non è possibile fornire errori espliciti. La convalida indica semplicemente se l’installazione del pacchetto comporta l’aggiunta o l’impatto di nuove autorizzazioni ACL.
 
 **Risoluzione degli errori**
 
@@ -522,13 +522,13 @@ I pacchetti sono definiti dai relativi filtri. In Gestione pacchetti puoi applic
 
 ### Installazione dei pacchetti {#installing-packages}
 
-Il caricamento di un pacchetto aggiunge solo il contenuto del pacchetto all’archivio, ma non è accessibile. Per utilizzare il contenuto del pacchetto, devi installare il pacchetto caricato.
+Il caricamento di un pacchetto aggiunge solo il contenuto del pacchetto all’archivio, ma non è accessibile. Per utilizzare il contenuto del pacchetto è necessario installare il pacchetto caricato.
 
 >[!CAUTION]
 >
 >L’installazione di un pacchetto può sovrascrivere o eliminare il contenuto esistente. Carica un pacchetto solo se sei sicuro che non elimini o sovrascriva il contenuto necessario.
 
-Prima dell’installazione del pacchetto, Gestione pacchetti crea automaticamente un pacchetto di istantanee contenente il contenuto che verrà sovrascritto. Questa istantanea verrà reinstallata se disinstalli il pacchetto.
+Prima dell’installazione del pacchetto, Gestione pacchetti crea automaticamente un pacchetto di istantanee contenente il contenuto sovrascritto. Questa istantanea viene reinstallata se si disinstalla il pacchetto.
 
 1. [Accedere a Gestione pacchetti.](#accessing)
 

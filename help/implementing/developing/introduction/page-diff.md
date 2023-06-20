@@ -2,9 +2,9 @@
 title: Sviluppo e differenze tra pagine
 description: Scopri come funziona la funzione Page Diff e come può influire su uno sviluppatore
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '334'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ La differenza di pagina consente a un utente di confrontare la pagina corrente c
 
 ## Dettagli operazione {#operation-details}
 
-Quando si confrontano le versioni di una pagina, la versione precedente che l’utente desidera confrontare viene ricreata dall’AEM in background per facilitare la differenza. Questo è necessario per poter eseguire il rendering del contenuto [per il confronto affiancato](/help/sites-cloud/authoring/features/page-diff.md).
+Quando si confrontano le versioni di una pagina, la versione precedente che l’utente desidera confrontare viene ricreata dall’AEM in background per facilitare la differenze. Questo è necessario per poter eseguire il rendering del contenuto [per il confronto affiancato](/help/sites-cloud/authoring/features/page-diff.md).
 
 Questa operazione di ricreazione viene eseguita internamente dall&#39;AEM, è trasparente per l&#39;utente e non richiede alcun intervento. Tuttavia, un amministratore che visualizza l’archivio, ad esempio in CRX DE Lite, vedrebbe queste versioni ricreate all’interno della struttura del contenuto.
 

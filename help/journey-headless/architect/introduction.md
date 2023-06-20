@@ -2,10 +2,10 @@
 title: Modellazione dei contenuti per AEM come CMS headless - Introduzione
 description: Introduzione all’utilizzo delle funzioni di Adobe Experience Manager as a Cloud Service come CMS headless per la modellazione dei contenuti del tuo progetto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Questo documento ti aiuta a comprendere cos’è la distribuzione headless dei c
 
 ## Distribuzione contenuti full-stack {#full-stack}
 
-Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da usare e su larga scala, le aziende li hanno sfruttati come punto centrale per gestire messaggi, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
+Fin dall&#39;introduzione dei sistemi CMS (Content Management System) su larga scala e facili da utilizzare, le aziende hanno utilizzato questi sistemi come posizione centrale per gestire messaggi, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
 
 ![CMS full-stack classico](/help/journey-headless/developer/assets/full-stack.png)
 

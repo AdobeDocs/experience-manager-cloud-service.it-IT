@@ -2,7 +2,7 @@
 title: Domande frequenti su Screens as a Cloud Service
 description: Questa pagina descrive le domande frequenti as a Cloud Service relative a Screens.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Le immagini nel formato `*.tif` (Formato file immagine tag) non sono supportati 
 
 ## Cosa devo fare se un canale in modalità Sviluppatore (online) non esegue il rendering su AEM Screens Player?{#screens-cloud-online-channel-blank-iframe}
 
-Si consiglia di sfruttare le funzionalità di caching di AEM Screens, ma se devi eseguire il canale in modalità Sviluppatore e AEM Screens Player mostra una schermata vuota, controlla gli strumenti di sviluppo del lettore e cerca `X-Frame-Options` o `frame-ancestors` errori. La risoluzione consiste nel configurare il dispatcher in modo da consentire l’esecuzione di contenuto in iFrame. Di solito funziona la seguente configurazione:
+Si consiglia di utilizzare le funzionalità di caching di AEM Screens, ma se devi eseguire il canale in modalità Sviluppatore e AEM Screens Player mostra una schermata vuota, controlla gli strumenti di sviluppo del lettore e cerca `X-Frame-Options` o `frame-ancestors` errori. La risoluzione consiste nel configurare il dispatcher in modo da consentire l’esecuzione di contenuto in iFrame. Di solito funziona la seguente configurazione:
 
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"

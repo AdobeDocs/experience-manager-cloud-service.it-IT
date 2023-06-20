@@ -1,10 +1,10 @@
 ---
 title: Modelli di pagina
-description: I Modelli di pagina vengono utilizzati durante la creazione di una pagina che verrà utilizzata come base per la nuova pagina
+description: I Modelli di pagina vengono utilizzati durante la creazione di una pagina utilizzata come base per la nuova pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3293'
 ht-degree: 5%
 
 ---
@@ -67,6 +67,7 @@ Quando crei un nuovo modello modificabile:
    * I criteri per contenuto definiscono le proprietà di progettazione di un componente.
 
       * Ad esempio, i componenti disponibili o le dimensioni minima/massima.
+
    * Sono applicabili al modello (e alle pagine create con il modello).
 
    Per informazioni dettagliate su come un autore di modelli definisce i criteri, consulta [Creazione di modelli di pagina](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -424,7 +425,7 @@ Questo nodo contiene le proprietà per il modello:
 
 * **Nome**: `jcr:title`
 * **Nome**: `status`
-   * ``**Tipo**: `String`
+   * &quot;**Tipo**: `String`
    * **Valore**: `draft`, `enabled` o `disabled`
 
 ### Struttura {#structure}
@@ -432,11 +433,11 @@ Questo nodo contiene le proprietà per il modello:
 Definisce la struttura della pagina risultante:
 
 * Viene unito al contenuto iniziale ( `/initial`) durante la creazione di una nuova pagina.
-* Le modifiche apportate alla struttura verranno applicate a tutte le pagine create con il modello.
-* Il `root` ( `structure/jcr:content/root`) definisce l’elenco dei componenti che saranno disponibili nella pagina risultante.
+* Le modifiche apportate alla struttura vengono applicate a tutte le pagine create con il modello.
+* Il `root` ( `structure/jcr:content/root`) definisce l’elenco dei componenti disponibili nella pagina risultante.
    * I componenti definiti nella struttura del modello non possono essere spostati o eliminati dalle pagine risultanti.
-   * Una volta sbloccato un componente, `editable` proprietà impostata su `true`.
-   * Quando un componente che contiene già del contenuto viene sbloccato, questo contenuto verrà spostato in `initial` filiale.
+   * Dopo aver sbloccato un componente, `editable` proprietà impostata su `true`.
+   * Dopo aver sbloccato un componente che contiene già contenuto, questo viene spostato nel `initial` filiale.
 
 * Il `cq:responsive` Il nodo contiene le definizioni per il layout reattivo.
 
@@ -447,7 +448,7 @@ Definisce il contenuto iniziale di una nuova pagina al momento della creazione:
 * Contiene un `jcr:content` che viene copiato in qualsiasi nuova pagina.
 * Viene unito alla struttura ( `/structure`) durante la creazione di una nuova pagina.
 * Le pagine esistenti non verranno aggiornate se il contenuto iniziale viene modificato dopo la creazione.
-* Il `root` node contiene un elenco di componenti per definire cosa sarà disponibile nella pagina risultante.
+* Il `root` node contiene un elenco di componenti per definire ciò che è disponibile nella pagina risultante.
 * Se il contenuto viene aggiunto a un componente in modalità struttura e successivamente viene sbloccato (o viceversa), tale contenuto viene utilizzato come contenuto iniziale.
 
 ### Layout {#layout}
@@ -461,13 +462,13 @@ Quando [modifica di un modello è possibile definire il layout](/help/sites-clou
 I criteri per contenuto definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello). I criteri per i contenuti possono essere creati e selezionati nell’editor modelli.
 
 * La proprietà `cq:policy`, sulla `root` nodo
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Fornisce un riferimento relativo al criterio del contenuto per il sistema paragrafo della pagina.
 
 * La proprietà `cq:policy`, sui nodi espliciti dei componenti in `root`, fornisce collegamenti ai criteri per i singoli componenti.
 
 * Le definizioni effettive dei criteri sono memorizzate in:
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ I criteri di pagina ti consentono di definire [criterio contenuto](#content-poli
    * Impostazione della proprietà status su `jcr:content` nodo.
 
       * Ad esempio, su:
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definisci la proprietà:
 
@@ -500,9 +501,9 @@ I criteri di pagina ti consentono di definire [criterio contenuto](#content-poli
 
    * [Definisci i percorsi dei modelli consentiti in **Proprietà pagina**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) della pagina o della pagina principale appropriata di un ramo secondario.
    * Imposta la proprietà:
-      `cq:allowedTemplates`
-Il giorno 
-`jcr:content` nodo del ramo richiesto.
+     `cq:allowedTemplates`
+Il giorno `jcr:content` nodo del ramo richiesto.
+
    Ad esempio, con un valore di:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -532,7 +533,7 @@ Durante il rendering di una pagina:
 
 * **Modelli**:
 
-   * Il `cq:template` proprietà del suo `jcr:content` Per accedere al modello corrispondente alla pagina verrà fatto riferimento al nodo.
+   * Il `cq:template` proprietà del suo `jcr:content` Per accedere al modello corrispondente alla pagina, viene fatto riferimento al nodo.
 
 * **Componenti**:
 

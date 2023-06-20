@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.3.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.3.0 as a Cloud Service."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 41%
+source-wordcount: '1295'
+ht-degree: 37%
 
 ---
 
@@ -90,7 +90,7 @@ La prossima versione è pianificata per il 08 aprile 2021.
 
 ### Novità {#what-is-new-march}
 
-* Ora i clienti con ambienti con configurazioni preesistenti dei nomi di dominio personalizzati per [Elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizzano un messaggio relativo alle precedenti configurazioni esistenti e possono intraprendere azioni in modalità self-service tramite l’interfaccia utente.
+* Clienti con ambienti con configurazioni di nomi di dominio personalizzati preesistenti per [ELENCHI CONSENTITI IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizza un messaggio sulle configurazioni esistenti in precedenza e può eseguire autonomamente l’operazione tramite l’interfaccia utente.
 
 * Ora gli utenti con le autorizzazioni necessarie possono modificare un programma ed effettuare le seguenti operazioni in modalità self-service:
 
@@ -128,7 +128,7 @@ La prossima versione è pianificata per il 08 aprile 2021.
 
 * In alcuni casi, l’utente visualizzava uno stato verde “attivo” a fianco dell’elenco IP consentiti anche quando tale configurazione non era stata distribuita.
 
-* Ora tutte le pipeline di produzione esistenti sono abilitate automaticamente con il passaggio Audit dell’esperienza.
+* Tutte le pipeline di produzione esistenti vengono abilitate automaticamente con il passaggio Audit dell’esperienza.
 
 ## Strumento Trasferimento contenuti {#content-transfer-tool}
 

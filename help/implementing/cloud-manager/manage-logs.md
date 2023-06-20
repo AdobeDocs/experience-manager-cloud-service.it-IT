@@ -2,10 +2,10 @@
 title: Accesso e gestione dei registri
 description: Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 100%
+source-wordcount: '270'
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Per ottenere l’ID dell’ambiente (1884 in questo esempio) e le opzioni del servizio o del nome di registro disponibili, utilizza i seguenti comandi.
+Per ottenere l’ID dell’ambiente (1884 in questo esempio) e le opzioni del servizio o del nome di registro disponibili, puoi utilizzare i seguenti comandi.
 
 ```shell
 $ aio cloudmanager:list-environments

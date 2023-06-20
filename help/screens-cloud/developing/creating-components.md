@@ -2,9 +2,9 @@
 title: Creazione di componenti
 description: I componenti AEM vengono utilizzati per memorizzare, formattare ed eseguire il rendering dei contenuti resi disponibili sulle pagine web. Segui questa pagina per scoprire come creare canali e componenti di rendering.
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ I componenti AEM vengono utilizzati per memorizzare, formattare ed eseguire il r
 
 Il canale è l&#39;oggetto principale dei contenuti inviati a un insieme di display. Pertanto, un autore di contenuti in genere apre un canale nell’editor per aggiungere o modificare contenuti. Poiché il canale è un ***cq:Page*** seguirà lo stesso pattern UX tradizionale per aggiungere e modificare componenti sul canale.
 
-Tuttavia, poiché i componenti di un canale vengono in genere visualizzati a schermo intero, l’esperienza di authoring ne risentirà quando si tenta di modificare singoli componenti o di comporre nuovi ordini. Pertanto, il canale si basa sui selettori per eseguire il rendering di diverse viste dei componenti. L’ambiente di authoring sfrutta il selettore di modifica per attivare il rendering del canale personalizzato.
+Tuttavia, poiché i componenti di un canale vengono in genere visualizzati a schermo intero, l’esperienza di authoring ne risentirà quando si tenta di modificare singoli componenti o di comporre nuovi ordini. Pertanto, il canale si basa sui selettori per eseguire il rendering di diverse viste dei componenti. L’ambiente di authoring utilizza il selettore di modifica per attivare il rendering del canale personalizzato.
 
 Ad esempio `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
@@ -32,7 +32,7 @@ Per abilitare l’authoring corretto, i componenti devono fornire i due renderin
 | *my-component/my-component.html* | rendering di produzione |
 | *my-component/edit.html* | modifica del rendering in una vista più piccola |
 
-I componenti incorporati sfruttano le seguenti categorie di librerie client:
+I componenti incorporati utilizzano le seguenti categorie di librerie client:
 
 | **Component** | **Libreria client** |
 |---|---|

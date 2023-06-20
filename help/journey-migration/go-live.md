@@ -2,9 +2,9 @@
 title: Pubblicazione
 description: Scopri come eseguire la migrazione una volta che il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1720'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ Come accennato in precedenza, dovrai pianificare un periodo di blocco del codice
 * Quanto tempo è necessario per bloccare le attività di authoring dei contenuti?
 * Per quanto tempo devo chiedere al mio team di consegna di interrompere l’aggiunta di nuove funzioni?
 
-Per rispondere alla prima domanda, è necessario considerare il tempo necessario per eseguire le esecuzioni di prova in ambienti non di produzione. Per rispondere alla seconda domanda, è necessaria una stretta collaborazione tra il team che aggiunge nuove funzionalità e il team che refactoring del codice. L’obiettivo dovrebbe essere garantire che tutto il codice aggiunto alla distribuzione esistente venga aggiunto, testato e distribuito anche nel ramo dei servizi cloud. In generale, ciò significa che la quantità di codice bloccato sarà inferiore.
+Per rispondere alla prima domanda, è necessario considerare il tempo necessario per eseguire le esecuzioni di prova in ambienti non di produzione. Per rispondere alla seconda domanda, è necessaria una stretta collaborazione tra il team che aggiunge nuove funzionalità e il team che refactoring del codice. L’obiettivo è garantire che tutto il codice aggiunto alla distribuzione esistente venga aggiunto, testato e distribuito anche nel ramo dei servizi cloud. In genere, ciò significa che la quantità di codice bloccato è inferiore.
 
 Inoltre, è necessario pianificare un blocco dei contenuti quando è pianificato l’aggiornamento finale dei contenuti.
 
@@ -81,12 +81,12 @@ Assicurati di eseguire la migrazione dei contenuti in produzione invece di clona
 
 Durante l’esecuzione della migrazione di produzione, è necessario evitare di eseguire lo strumento Content Transfer (Trasferimento contenuti) da un clone perché:
 
-* Se un cliente richiede la migrazione delle versioni dei contenuti durante le migrazioni integrative, l’esecuzione dello strumento Content Transfer (Trasferimento contenuti) da un clone non esegue la migrazione delle versioni. Anche se il clone viene ricreato frequentemente dall’autore live, ogni volta che viene creato un clone vengono ripristinati i punti di controllo che verranno utilizzati dallo strumento Content Transfer (Trasferimento contenuti) per calcolare i delta.
+* Se un cliente richiede la migrazione delle versioni dei contenuti durante le migrazioni integrative, l’esecuzione dello strumento Content Transfer (Trasferimento contenuti) da un clone non esegue la migrazione delle versioni. Anche se il clone viene ricreato frequentemente dall’autore live, ogni volta che viene creato un clone vengono ripristinati i punti di controllo utilizzati dallo strumento Content Transfer (Trasferimento contenuti) per calcolare i delta.
 * Poiché un clone non può essere aggiornato nel suo insieme, il pacchetto di query ACL deve essere utilizzato per creare un pacchetto e installare il contenuto aggiunto o modificato dalla produzione al clone. Il problema di questo approccio è che qualsiasi contenuto eliminato nell’istanza sorgente non arriverà mai al clone a meno che non venga eliminato manualmente sia dall’origine che dal clone. Questo introduce la possibilità che i contenuti eliminati in produzione non vengano eliminati sul clone e sull’AEM as a Cloud Service.
 
 **Ottimizzazione del carico sull’origine AEM durante l’esecuzione della migrazione dei contenuti**
 
-Ricorda che il carico sulla sorgente dell’AEM sarà maggiore durante la fase di estrazione. Tieni presente che:
+Ricorda che il carico sulla sorgente dell’AEM è maggiore durante la fase di estrazione. Tieni presente che:
 
 * Lo strumento Content Transfer (Trasferimento contenuti) è un processo Java esterno che utilizza un heap JVM di 4 GB
 * La versione non AzCopy scarica i file binari, li memorizza in uno spazio temporaneo nell’autore AEM di origine, consumando I/O del disco, quindi carica nel contenitore Azure che consuma la larghezza di banda della rete
@@ -109,7 +109,7 @@ Rispetto alla sezione precedente l’acquisizione **non** non riesce a causa dei
 * Qualsiasi risorsa con la rappresentazione originale mancante
 * Qualsiasi cartella con un `jcr:content` nodo.
 
-Entrambi gli elementi di cui sopra saranno identificati e segnalati nella [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) rapporto.
+Entrambe le voci di cui sopra sono identificate e segnalate nella [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) rapporto.
 
 ## Elenco di controllo per la pubblicazione {#Go-Live-Checklist}
 

@@ -2,9 +2,9 @@
 title: Utilizzo di CRXDE Lite
 description: CRXDE Lite fa parte del modulo quickstart dell’AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1689'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ Il filtro di navigazione ad albero (icona binocolo) consente di filtrare i nodi 
 
 ### Modifica riquadro {#edit-pane}
 
-Il **Modifica riquadro** consente di visualizzare il contenuto del file attualmente selezionato nel repository. Ogni file aperto verrà rappresentato come la relativa scheda nel riquadro.
+Il **Modifica riquadro** consente di visualizzare il contenuto del file attualmente selezionato nell’archivio. Ogni file aperto viene rappresentato come la relativa scheda nel riquadro.
 
 Il **Home** Questa scheda ti consente di cercare contenuti e/o documentazione e di accedere alla documentazione per gli sviluppatori e al supporto per gli Adobi.
 
@@ -88,6 +88,7 @@ Le autorizzazioni sono suddivise nelle seguenti categorie.
 * **Criteri di controllo dell&#39;accesso effettivi** - I criteri correnti applicati per la selezione corrente, che possono essere impostati localmente o ereditati dai nodi padre
 
 >[!NOTE]
+>
 Per poter visualizzare le informazioni sul controllo di accesso, l’utente connesso a CRXDE Lite deve disporre dei diritti per la lettura delle voci ACL.
 
 ### Scheda Replica {#replication-tab}
@@ -108,7 +109,7 @@ Il **Pulsante Aggiorna** aggiorna la selezione corrente. Le modifiche apportate 
 
 ### Pulsante Salva tutto {#save-all-button}
 
-Il **Pulsante Salva tutto** salva tutte le modifiche apportate. Fino a quando non scegli di salvare, le modifiche sono temporanee e andranno perse quando esci dalla console.
+Il **Pulsante Salva tutto** salva tutte le modifiche apportate. Fino a quando non scegli di salvare, le modifiche sono temporanee e vengono perse quando esci dalla console.
 
 * **Ripristina** - Elimina tutte le modifiche apportate al nodo selezionato dall&#39;ultima azione di salvataggio, quindi ricarica lo stato corrente dell&#39;archivio per il nodo selezionato
 * **Ripristina tutto** : ignora tutte le modifiche apportate in tutto l’archivio dall’ultima azione di salvataggio, quindi ricarica lo stato corrente dell’archivio.
@@ -188,7 +189,9 @@ Per creare un nodo con CRXDE Lite:
 Ora puoi adattare il nodo alle tue esigenze modificando le proprietà o creando nuovi nodi.
 
 >[!NOTE]
+>
 La maggior parte delle operazioni di modifica, tra cui **Crea nodo**, conserva tutte le modifiche in memoria e le archivia nell&#39;archivio solo al momento del salvataggio (utilizzando [**Pulsante Salva tutto**](#save-all-button)). Tuttavia, alcune operazioni, come lo spostamento, vengono mantenute automaticamente.
+>
 La convalida relativa alla possibilità che il nodo appena creato sia consentito dal tipo di nodo del nodo principale viene eseguita anche dall’archivio durante il salvataggio delle modifiche. Se ricevi un messaggio di errore durante il salvataggio di un nodo, controlla se la struttura del contenuto è valida (ad esempio, non è possibile creare un nodo). `nt:unstructured` nodo come elemento secondario di `nt:folder` nodo ).
 
 ## Creazione di una proprietà {#creating-a-property}
@@ -222,7 +225,7 @@ Per esportare la definizione di un tipo di nodo in CRXDE Lite:
 1. Apri CRXDE Lite nel browser.
 1. Seleziona il nodo richiesto.
 1. Seleziona **Strumenti** allora **Esporta tipo di nodo**.
-1. La definizione verrà visualizzata in notazione CND in una nuova scheda nel browser.
+1. La definizione viene visualizzata in notazione CND in una nuova scheda nel browser.
 1. Se necessario, salva le informazioni.
 
 Per importare una definizione di tipo di nodo:

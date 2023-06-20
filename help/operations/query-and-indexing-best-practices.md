@@ -3,10 +3,10 @@ title: Best practice per query e indicizzazione
 description: Scopri come ottimizzare indici e query in base alle linee guida sulle best practice di Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 100%
+source-wordcount: '1558'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Poiché le query possono essere una delle operazioni più gravose su un sistema 
 
 ### Navigazione dei nodi {#traversing-nodes}
 
-Se l’archivio è progettato in modo tale da consentire una conoscenza preventiva della posizione dei dati richiesti, il codice che recupera tali dati dai percorsi necessari può essere utilizzato senza dover eseguire query per trovarli.
+Se l’archivio è progettato in modo da consentire una conoscenza preventiva della posizione dei dati richiesti, il codice che recupera tali dati dai percorsi necessari può essere distribuito senza dover eseguire query per trovarli.
 
 Un esempio potrebbe essere il rendering di contenuti che rientrano a una determinata categoria. Un approccio consiste nell’organizzare i contenuti con una proprietà di categoria su cui è possibile eseguire una query per compilare un componente che mostra gli elementi in una categoria.
 
@@ -77,7 +77,7 @@ Questo grafico illustra il flusso generale da utilizzare per ottimizzare le quer
 
 Per fornire prestazioni ottimali, ogni query deve utilizzare un indice. Nella maggior parte dei casi, gli indici predefiniti esistenti dovrebbero essere sufficienti per gestire le query.
 
-A volte è necessario aggiungere proprietà personalizzate a un indice esistente, in modo che sia possibile eseguire query sui vincoli aggiuntivi utilizzando l’indice. Per ulteriori dettagli, consulta il documento [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md#changing-an-index). La sezione [Scheda di riferimento rapido per le query JCR](#jcr-query-cheatsheet) in questo documento descrive come deve essere visualizzata una definizione di proprietà in un indice per supportare un tipo di query specifico.
+A volte è necessario aggiungere proprietà personalizzate a un indice esistente, in modo che sia possibile eseguire query sui vincoli aggiuntivi utilizzando l’indice. Per ulteriori dettagli, consulta il documento [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md#changing-an-index). Il [Scheda di riferimento rapido per le query JCR](#jcr-query-cheatsheet) sezione di questo documento descrive come deve essere visualizzata una definizione di proprietà in un indice per supportare un tipo di query specifico.
 
 ### Utilizzare i criteri giusti {#use-the-right-criteria}
 

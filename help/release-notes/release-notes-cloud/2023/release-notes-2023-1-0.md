@@ -2,10 +2,10 @@
 title: Note sulla versione 2023.1.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.1.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ Dai un’occhiata al video Panoramica sulla versione di gennaio 2023 per un riep
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* I rapporti sulle risorse ora consentono agli amministratori di [generare rapporti sul download delle risorse](/help/assets/asset-reports.md) dalla distribuzione as a Cloud Service di Experience Manager Assets. Questi dati consentono inoltre agli amministratori di derivare informazioni da metriche di successo chiave per misurare il livello di adozione delle risorse all’interno dell’azienda e da parte dei clienti.
+* I rapporti sulle risorse ora consentono agli amministratori di [generare rapporti sul download delle risorse](/help/assets/asset-reports.md) dalla distribuzione as a Cloud Service di Experience Manager Assets. Questi dati consentono inoltre agli amministratori di derivare informazioni da metriche di successo chiave per misurare il livello di adozione di Assets all’interno della tua azienda e da parte dei clienti.
 
-   ![Rendering di PDF per altri formati](/help/release-notes/assets/choose_report.png)
+  ![Rendering di PDF per altri formati](/help/release-notes/assets/choose_report.png)
 
 * Experience Manager Assets adesso [supporta il token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) oltre alla chiave di accesso per l’autenticazione durante la connessione all’origine dati Archiviazione BLOB di Azure per l’acquisizione delle risorse tramite lo strumento Importazione in blocco.
 
@@ -82,17 +82,17 @@ Dai un’occhiata al video Panoramica sulla versione di gennaio 2023 per un riep
 
 * [Ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md) - Gli RDE consentono agli sviluppatori di risolvere i problemi rapidamente e di implementare nuove funzioni su AEM as a Cloud Service.
 
-   Gli ambienti di sviluppo rapido sono un nuovo tipo di ambiente cloud concepito come un modo rapido, coerente ed estensibile di assicurarsi che un codice che funziona localmente funzioni anche come previsto nel cloud. Grazie agli strumenti della riga di comando, puoi “sincronizzare” rapidamente pacchetti di contenuti, bundle, file di contenuti, configurazione OSGI o configurazione del dispatcher con RDE. Per una dimostrazione pratica, guarda il video seguente:
+  Gli ambienti di sviluppo rapido sono un nuovo tipo di ambiente cloud concepito come un modo rapido, coerente ed estensibile di assicurarsi che un codice che funziona localmente funzioni anche come previsto nel cloud. Grazie agli strumenti della riga di comando, puoi “sincronizzare” rapidamente pacchetti di contenuti, bundle, file di contenuti, configurazione OSGI o configurazione del dispatcher con RDE. Per una dimostrazione pratica, guarda il video seguente:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   Dopo aver convalidato correttamente il codice nell’RDE, si consiglia di distribuirlo in un ambiente di sviluppo cloud per sfruttare i gate di qualità di Cloud Manager, prima di distribuirlo agli ambienti di staging e produzione tramite la pipeline di produzione.
+  Dopo aver convalidato correttamente il codice nell’RDE, si consiglia di distribuirlo in un ambiente di sviluppo cloud per sfruttare i gate di qualità di Cloud Manager, prima di distribuirlo agli ambienti di staging e produzione tramite la pipeline di produzione.
 
-   Ogni programma include un RDE e, facoltativamente, è possibile concedere in licenza più programmi.
+  Ogni programma include un RDE e, facoltativamente, è possibile concedere in licenza più programmi.
 
-   >[!NOTE]
-   >
-   >Gli RDE verranno implementati gradualmente nelle prossime settimane; puoi inviare un’e-mail a aemcs-rde-support@adobe.com per posizionarti in cima alla lista.
+  >[!NOTE]
+  >
+  >Gli RDE verranno implementati gradualmente nelle prossime settimane; puoi inviare un’e-mail a aemcs-rde-support@adobe.com per posizionarti in cima alla lista.
 
 * [Supporto esteso per i token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md): è ora possibile generare più credenziali, che ti saranno d’aiuto negli scenari in cui le API hanno caratteristiche diverse. Ora è inoltre possibile revocare le credenziali in modo autonomo.
 

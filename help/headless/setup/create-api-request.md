@@ -2,10 +2,10 @@
 title: Creare una richiesta API - Configurazione headless
 description: Scopri come utilizzare l’API GraphQL per la distribuzione headless di contenuti con frammenti di contenuto e API REST di Assets di AEM per gestire i frammenti di contenuto.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Ulteriori dettagli sull’abilitazione degli [endpoint GraphQL si trovano qui](/
 
 ## Query del contenuto tramite GraphQL con GraphiQL
 
-Gli architetti di informazioni dovranno progettare query per i loro endpoint di canale per distribuire contenuti. In genere queste query devono essere considerate solo una volta per endpoint per modello. Ai fini di questa guida introduttiva, è sufficiente crearne una.
+Gli architetti dell’informazione devono progettare query per gli endpoint di canale per distribuire i contenuti. In genere queste query devono essere considerate solo una volta per endpoint per modello. Ai fini di questa guida introduttiva, è sufficiente crearne una.
 
 GraphiQL è un IDE, incluso nel tuo ambiente AEM e accessibile/visibile dopo aver [configurato gli endpoint](#enable-graphql-endpoint).
 

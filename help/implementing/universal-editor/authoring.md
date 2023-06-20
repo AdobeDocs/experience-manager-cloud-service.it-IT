@@ -2,10 +2,10 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 84%
 
 ---
 
@@ -15,7 +15,7 @@ Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenu
 
 ## Introduzione {#introduction}
 
-L’editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per offrire esperienze eccezionali, velocizzare i contenuti e fornire un’esperienza di sviluppo all’avanguardia.
+Universal Editor consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione, in modo da poter fornire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 
 A questo scopo, offre agli autori dei contenuti un’interfaccia utente intuitiva che richiede una formazione minima per poter entrare e iniziare a modificare i contenuti.
 
@@ -29,7 +29,7 @@ A questo scopo, offre agli autori dei contenuti un’interfaccia utente intuitiv
 
 ## Preparare l’app {#prepare-app}
 
-Per creare contenuti per un’app utilizzando l’editor universale, l’app deve essere preparata da uno sviluppatore per supportare l’editor.
+Per creare contenuti per un’app tramite l’editor universale, l’app deve essere dotata di strumenti che consentano a uno sviluppatore di supportare l’editor.
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Per creare contenuti per un’app utilizzando l’editor universale, l’app dev
 
 Una volta che l’app è stata preparata per funzionare con l’editor universale, dovrai accedere all’editor universale. Sarà necessario un Adobe ID per accedere e [avere accesso all’editor universale.](getting-started.md#request-access)
 
-Dopo aver effettuato l’accesso, immetti l’URL della pagina da modificare nella [barra degli indirizzi](#address-bar) per iniziare [a modificare il contenuto.](#edit-content)
+Dopo aver effettuato l’accesso, immetti l’URL della pagina da modificare in [barra degli indirizzi.](#address-bar) per iniziare [la modifica del contenuto.](#edit-content)
 
 ## Comprendere l’interfaccia utente {#ui}
 
@@ -84,13 +84,13 @@ L’icona dell’aiuto fornisce un accesso rapido alle risorse di apprendimento 
 
 #### Notifiche {#notifications}
 
-Questa icona viene contrassegnata con il numero di [notifiche](/help/implementing/cloud-manager/notifications.md) incomplete attualmente assegnate.
+Questa icona è contrassegnata con il numero di incompleti attualmente assegnati [notifiche.](/help/implementing/cloud-manager/notifications.md)
 
 ![Notifiche](assets/notifications.png)
 
 #### Proprietà utente {#user-properties}
 
-Tocca o fai clic sull’icona che rappresenta l’utente per accedere alle impostazioni utente. Se non hai configurato un’immagine utente, verrà assegnata un’icona in modo casuale.
+Tocca o fai clic sull’icona che rappresenta l’utente per accedere alle impostazioni utente. Se non hai configurato un’immagine utente, viene assegnata un’icona in modo casuale.
 
 ![Proprietà utente](assets/user-properties.png)
 
@@ -132,7 +132,7 @@ Tocca o fai clic sull’icona di anteprima dell’app aperta per aprire la pagin
 
 #### Pubblicazione {#publish}
 
-Tocca o fai clic sul pulsante pubblica per pubblicare le modifiche al contenuto utilizzabile dai lettori in tempo reale.
+Tocca o fai clic sul pulsante Pubblica per pubblicare le modifiche al contenuto live per consentirne l’utilizzo da parte dei lettori.
 
 ![Pulsante pubblica](assets/publish.png)
 
@@ -172,7 +172,7 @@ A seconda che l’editor sia in [modalità di modifica](#edit-mode) o [modalità
 
 ## Modifica del contenuto {#editing-content}
 
-La modifica del contenuto è semplice e intuitiva. In [modalità modifica,](#edit-mode) quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato da una casella blu.
+La modifica del contenuto è semplice e intuitiva. In entrata [modalità di modifica,](#edit-mode) quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato con una casella blu.
 
 ![Il contenuto modificabile viene evidenziato da una casella blu](assets/editable-content.png)
 
@@ -192,8 +192,8 @@ In modalità anteprima, toccando o facendo clic sul contenuto questo appare cos�
 
 Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
-* [Introduzione all’editor universale](introduction.md): scopri come l’editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per offrire esperienze eccezionali, aumentare la velocità del contenuto e fornire un’esperienza di sviluppo all’avanguardia.
-* [Pubblicazione del contenuto con l’editor universale](publishing.md): scopri in che modo l’editor visivo universale pubblica il contenuto e come le app possono gestire il contenuto pubblicato.
+* [Introduzione all’editor universale](introduction.md) - Scopri come Universal Editor consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione, per offrire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
+* [Pubblicazione di contenuto con l’editor universale](publishing.md): scopri in che modo l’editor visivo universale pubblica il contenuto e come le app possono gestire il contenuto pubblicato.
 * [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.
 * [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 * [Attributi e tipi](attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.

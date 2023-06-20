@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 42927eec458553121f70b74a54f0f26eb616a13e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 12%
+source-wordcount: '2529'
+ht-degree: 13%
 
 ---
 
@@ -61,7 +61,7 @@ Per attivare Brand Portal su Experience Manager Assets as a sono necessari i seg
 >
 >Brand Portal deve essere attivato sulla stessa organizzazione IMS di Experience Manager Assets as a [!DNL Cloud Service] dell&#39;istanza.
 >
->Se disponi di una configurazione cloud di Brand Portal esistente ([configurato manualmente tramite la console Adobe Developer](#manual-configuration)) per un’organizzazione IMS (org1-existing) e per il tuo Experience Manager Assets as a [!DNL Cloud Service] l’istanza è configurata per un’altra organizzazione IMS (org2-new), l’attivazione di Brand Portal da Cloud Manager reimposta l’organizzazione IMS di Brand Portal su `org2-new`. Anche se la configurazione cloud configurata manualmente in `org1-existing` sarà visibile nell’istanza di authoring di Experience Manager Assets, ma non sarà più in uso dopo l’attivazione di Brand Portal da Cloud Manager.
+>Se disponi di una configurazione cloud di Brand Portal esistente ([configurato manualmente tramite la console Adobe Developer](#manual-configuration)) per un’organizzazione IMS (org1-existing) e per il tuo Experience Manager Assets as a [!DNL Cloud Service] l’istanza è configurata per un’altra organizzazione IMS (org2-new), l’attivazione di Brand Portal da Cloud Manager reimposta l’organizzazione IMS di Brand Portal su `org2-new`. Anche se la configurazione cloud configurata manualmente in `org1-existing` è visibile nell’istanza di authoring di Experience Manager Assets, ma non sarà più in uso dopo l’attivazione di Brand Portal da Cloud Manager.
 >
 >Se la configurazione cloud di Brand Portal e Experience Manager Assets as a [!DNL Cloud Service] Se l’istanza di utilizza la stessa organizzazione IMS (org1), devi attivare Brand Portal solo da Cloud Manager.
 >
@@ -116,6 +116,7 @@ Per convalidare la connessione tra Experience Manager Assets as a, effettua le s
    * **Coda di elaborazione**: per la distribuzione delle risorse in Brand Portal.
 
    * **Coda di errore**: per le risorse per le quali la distribuzione non è riuscita.
+
    >[!NOTE]
    >
    >È consigliabile esaminare gli errori e cancellare periodicamente la **coda di errore**.
@@ -339,7 +340,7 @@ Ora puoi utilizzare l’ID client (chiave API), il segreto client e il payload J
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information is used to create IMS account configuration.
 
 -->
 
@@ -534,13 +535,13 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

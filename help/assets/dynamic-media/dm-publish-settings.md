@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 26f697dab03e0a3387669304b7f7f14dc2182a6d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3481'
 ht-degree: 3%
 
 ---
@@ -89,7 +89,7 @@ Queste impostazioni si riferiscono all&#39;aspetto predefinito delle immagini.
 | **[!UICONTROL Limite dimensioni immagine di risposta]** | Obbligatorio.<br>Solo per i nuovi account Dynamic Media, il limite di dimensione predefinito viene impostato automaticamente su Larghezza: `3000` e Altezza: `3000` per entrambi **[!UICONTROL Image Server]** e **[!UICONTROL Image Server di prova]**.<br>Specifica la larghezza e l&#39;altezza massima dell&#39;immagine di risposta restituita al client. Il server restituisce un errore se una richiesta causa un’immagine di risposta con larghezza, altezza o entrambi i valori maggiori di questa impostazione.<br>Vedi anche [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) nella Guida di riferimento dei visualizzatori di Dynamic Media. |
 | **[!UICONTROL Modalità di offuscamento richiesta]** | Attiva se desideri applicare la codifica base64 alle richieste valide.<br>Vedi anche [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) nella Guida di riferimento dei visualizzatori di Dynamic Media. |
 | **[!UICONTROL Modalità di blocco richieste]** | Attiva se desideri includere un blocco hash semplice nelle richieste.<br>Vedi anche [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) nella Guida di riferimento dei visualizzatori di Dynamic Media. |
-| **[!UICONTROL Attributi richiesta predefiniti]** |  |
+| **[!UICONTROL Attributi richiesta predefiniti]** | |
 | **[!UICONTROL Suffisso file immagine predefinito]** | Obbligatorio.<br>Estensione predefinita del file di dati che viene aggiunta ai valori dei campi Percorso e Percorso maschera del catalogo se il percorso non include un suffisso di file.<br>Vedi anche [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) nella Guida di riferimento dei visualizzatori di Dynamic Media. |
 | **[!UICONTROL Nome tipo di font predefinito]** | Specifica quale font utilizzare se non viene fornito alcun font in una richiesta di livello di testo. Se specificato, deve corrispondere a un valore valido per il nome del carattere nella mappa dei caratteri di questo catalogo immagini o nella mappa dei caratteri del catalogo predefinito.<br>Vedi anche [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) nella Guida di riferimento dei visualizzatori di Dynamic Media. |
 | **[!UICONTROL Immagine predefinita]** | Specifica un&#39;immagine predefinita da restituire in risposta a una richiesta che fa riferimento a un&#39;immagine non trovata.<br>Vedi anche [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) nella Guida di riferimento dei visualizzatori di Dynamic Media.<br>**NOTA**: se il tuo account Dynamic Media Classic dispone già di un **[!UICONTROL Immagine predefinita]** selezionato (come impostato in **[!UICONTROL Configurazione]** > **[!UICONTROL Applicazione]** > **[!UICONTROL Impostazione pubblicazione]**, in **[!UICONTROL Attributi di richiesta predefiniti]** ), il tuo account Dynamic Media su Experience Manager recupera il file da Dynamic Media Classic. Il file viene quindi archiviato e reso disponibile in questo campo quando apri il file **[!UICONTROL Impostazione pubblicazione Dynamic Media]** per la prima volta. |
@@ -195,13 +195,13 @@ I seguenti tipi di risorse e funzionalità non sono attualmente supportati:
 * Da web a stampa
 * Servizi UGC (User-Generated Content)
 
-   >[!IMPORTANT]
-   >
-   >A partire dal 1° maggio 2023, le risorse UGC in Dynamic Media saranno disponibili per l’uso fino a 60 giorni dalla data di caricamento. Dopo 60 giorni, le risorse verranno rimosse.
+  >[!IMPORTANT]
+  >
+  >A partire dal 1° maggio 2023, le risorse UGC in Dynamic Media sono disponibili per l’uso fino a 60 giorni dalla data di caricamento. Dopo 60 giorni, le risorse vengono rimosse.
 
-   >[!NOTE]
-   >
-   >Il supporto per risorse di immagini vettoriali UGC nuove o esistenti in Adobe Dynamic Media è terminato il 30 settembre 2021.
+  >[!NOTE]
+  >
+  >Il supporto per risorse di immagini vettoriali UGC nuove o esistenti in Adobe Dynamic Media è terminato il 30 settembre 2021.
 
 ### Test del servizio di test protetto {#test-secure-testing-service}
 

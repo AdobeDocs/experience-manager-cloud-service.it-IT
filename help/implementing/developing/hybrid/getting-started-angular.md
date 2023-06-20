@@ -2,10 +2,10 @@
 title: Guida introduttiva alle SPA in AEM che usano Angular
 description: Questo articolo presenta un esempio di applicazione per l’SPA, spiega come viene creata e come iniziare subito a utilizzare il proprio SPA utilizzando il framework Angular.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 12%
+source-wordcount: '991'
+ht-degree: 9%
 
 ---
 
@@ -39,7 +39,7 @@ Questo documento illustra la struttura di un SPA semplificato e il suo funzionam
 
 ## Dipendenze, configurazione e generazione {#dependencies-configuration-and-building}
 
-Oltre alla prevista dipendenza degli Angular, l&#39;SPA di esempio può sfruttare librerie aggiuntive per rendere più efficiente la creazione dell&#39;SPA.
+Oltre alla prevista dipendenza degli Angular, l&#39;SPA di esempio può utilizzare librerie aggiuntive per rendere più efficiente la creazione dell&#39;SPA.
 
 ### Dipendenze {#dependencies}
 
@@ -90,7 +90,7 @@ module.exports = {
 
 ### Creazione di {#building}
 
-Effettivamente la creazione dell’app sfrutta [Webpack](https://webpack.js.org/) oltre ad aem-clientlib-generator per la creazione automatica di librerie client. Pertanto, il comando build sarà simile al seguente:
+La creazione dell’app utilizza [Webpack](https://webpack.js.org/) oltre ad aem-clientlib-generator per la creazione automatica di librerie client. Pertanto, il comando build sarà simile al seguente:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -98,7 +98,7 @@ Una volta generato, il pacchetto può essere caricato in un’istanza AEM.
 
 ### Archetipo progetto AEM {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+Qualsiasi progetto AEM deve utilizzare [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta i progetti SPA utilizzando React o Angular e utilizza l’SDK dell’SPA.
 
 ## Struttura dell&#39;applicazione {#application-structure}
 

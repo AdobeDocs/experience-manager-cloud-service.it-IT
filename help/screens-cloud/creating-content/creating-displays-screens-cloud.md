@@ -2,9 +2,9 @@
 title: Creazione e gestione di visualizzazioni in Schermi as a Cloud Service
 description: Questa pagina descrive come creare e gestire le visualizzazioni in Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '663'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 Dopo aver pubblicato il canale, è ora possibile creare la visualizzazione nel provider di servizi Screens.
 
-Un display è un raggruppamento virtuale di schermi che sono generalmente posizionati uno accanto all’altro. Il display è di solito permanente rispetto a un&#39;installazione. Questo sarà l’oggetto con cui gli autori di contenuto lavoreranno e a cui faranno sempre riferimento come visualizzazione logica piuttosto che le loro parti contatore fisiche.
+Un display è un raggruppamento virtuale di schermi che sono generalmente posizionati uno accanto all’altro. Il display è di solito permanente rispetto a un&#39;installazione. Il contenuto di questo oggetto è ciò con cui gli autori lavorano e a cui fanno sempre riferimento come visualizzazione logica piuttosto che come controparti fisiche.
 
 ## Obiettivo {#objective}
 
@@ -128,7 +128,7 @@ Tutte le operazioni della cartella sono accessibili tramite la barra delle azion
 
 1. Nella vista inventario, seleziona la cartella secondaria che desideri eliminare e assicurati che sia vuota.
 
-1. Fai clic su **Elimina** nella barra delle azioni di selezione. L’azione verrà disabilitata se la cartella non è vuota.
+1. Clic **Elimina** nella barra delle azioni di selezione. L’azione è disabilitata se la cartella non è vuota.
 
 
 ## Passaggio successivo {#whats-next}

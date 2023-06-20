@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 14%
@@ -42,7 +42,7 @@ Per configurare [!DNL Experience Manager] per applicare una filigrana alle risor
    >Se hai configurato il profilo Filigrana di sistema utilizzando `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` file di configurazione di (configurazione OSGi), puoi continuare a utilizzarlo, tuttavia, l’Adobe consiglia di utilizzare il nuovo metodo.
 
 
-1. [Creare un profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) per applicare la filigrana sfruttando i microservizi per risorse.
+1. [Creare un profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) utilizzare i microservizi per le risorse per applicare la filigrana.
 
    ![Profilo di elaborazione risorsa per la creazione della filigrana](assets/watermark-processing-profile.png)
 
@@ -75,4 +75,3 @@ Per configurare [!DNL Experience Manager] per applicare una filigrana alle risor
 >
 >* [Panoramica dei microservizi per le risorse](/help/assets/asset-microservices-overview.md).
 >* [Utilizzare i microservizi per le risorse con i profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).
-

@@ -1,18 +1,18 @@
 ---
 title: Autenticazione per query GraphQL AEM remote su frammenti di contenuto
-description: Comprendere l’autenticazione necessaria per le query GraphQL AEM remote al fine di proteggere la distribuzione di contenuti headless.
+description: Comprendi l’autenticazione necessaria per le query remote su GraphQL AEM per proteggere la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 100%
+source-wordcount: '235'
+ht-degree: 88%
 
 ---
 
 # Autenticazione per query GraphQL AEM remote su frammenti di contenuto {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Un caso d’uso principale per [API GraphQL di Adobe Experience Manager as a Cloud Service (AEM) per la distribuzione di frammenti di contenuto](/help/headless/graphql-api/content-fragments.md) accetta query remote da applicazioni o servizi di terze parti. Queste query remote possono richiedere l’accesso alle API autenticate per garantire la distribuzione di contenuti headless.
+Un caso d’uso principale per [API GraphQL di Adobe Experience Manager as a Cloud Service (AEM) per la distribuzione di frammenti di contenuto](/help/headless/graphql-api/content-fragments.md) accetta query remote da applicazioni o servizi di terze parti. Queste query remote possono richiedere l’accesso alle API autenticate per garantire la distribuzione sicura dei contenuti headless.
 
 >[!NOTE]
 >

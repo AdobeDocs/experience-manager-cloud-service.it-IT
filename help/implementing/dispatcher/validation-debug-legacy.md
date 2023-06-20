@@ -4,9 +4,9 @@ description: Convalida e debug con gli strumenti di Dispatcher (legacy)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2337'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ I seguenti file sono personalizzabili e verranno trasferiti nell’istanza Cloud
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Puoi avere uno o più di questi file. Contengono `<VirtualHost>` voci che corrispondono ai nomi host e consentono ad Apache di gestire ogni traffico di dominio con regole diverse. I file vengono creati in `available_vhosts` e abilitati con un collegamento simbolico nel `enabled_vhosts` directory. Dalla sezione `.vhost` saranno inclusi file, altri file come riscritture e variabili.
+Puoi avere uno o più di questi file. Contengono `<VirtualHost>` voci che corrispondono ai nomi host e consentono ad Apache di gestire ogni traffico di dominio con regole diverse. I file vengono creati in `available_vhosts` e abilitati con un collegamento simbolico nel `enabled_vhosts` directory. Dalla sezione `.vhost` sono inclusi file, altri file come riscritture e variabili.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -101,7 +101,7 @@ Questo file è incluso dall’interno di `dispatcher_vhost.conf` file. Puoi modi
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Puoi avere uno o più di questi file, che contengono farm con nomi host corrispondenti e consentono al modulo Dispatcher di gestire ogni farm con regole diverse. I file vengono creati in `available_farms` e abilitati con un collegamento simbolico nel `enabled_farms` directory. Dalla sezione `.farm` saranno inclusi file, altri file come filtri, regole di cache e altri.
+Puoi avere uno o più di questi file, che contengono farm con nomi host corrispondenti e consentono al modulo Dispatcher di gestire ogni farm con regole diverse. I file vengono creati in `available_farms` e abilitati con un collegamento simbolico nel `enabled_farms` directory. Dalla sezione `.farm` sono inclusi file, altri file come filtri, regole di cache e altri.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -125,7 +125,7 @@ I file di cui sopra fanno riferimento ai file di configurazione immutabili elenc
 
 Questi file fanno parte del framework di base e applicano standard e best practice. I file sono considerati immutabili perché la loro modifica o eliminazione locale non avrà alcun impatto sulla distribuzione, in quanto non verranno trasferiti nell’istanza Cloud.
 
-Si consiglia che i file di cui sopra facciano riferimento ai file immutabili elencati di seguito, seguiti da eventuali istruzioni o sostituzioni aggiuntive. Quando la configurazione di Dispatcher viene distribuita in un ambiente cloud, verrà utilizzata la versione più recente dei file immutabili, indipendentemente dalla versione utilizzata nello sviluppo locale.
+Si consiglia che i file di cui sopra facciano riferimento ai file immutabili elencati di seguito, seguiti da eventuali istruzioni o sostituzioni aggiuntive. Quando la configurazione di Dispatcher viene distribuita in un ambiente cloud, viene utilizzata la versione più recente dei file immutabili, indipendentemente dalla versione utilizzata nello sviluppo locale.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -221,7 +221,7 @@ Lo script esegue le operazioni seguenti:
 2. Esegue il `httpd -t` comando per verificare se la sintassi è corretta in modo che apache httpd possa avviarsi. In caso di esito positivo, la configurazione deve essere pronta per la distribuzione.
 3. Verifica che il sottoinsieme dei file di configurazione dell’SDK di Dispatcher, destinati a essere immutabili come descritto in [Sezione struttura file](##legacy-mode-file-structure), non è stato modificato. Si tratta di un nuovo controllo, introdotto con la versione v2021.1.4738 dell’SDK per AEM che include anche gli strumenti di Dispatcher versione 2.0.36. Prima di questo aggiornamento, i clienti potevano erroneamente supporre che eventuali modifiche SDK locali di tali file immutabili sarebbero state applicate anche all’ambiente Cloud.
 
-Durante l’implementazione di Cloud Manager, il `httpd -t` Verrà eseguito anche il controllo della sintassi e tutti gli errori verranno inclusi in Cloud Manager `Build Images step failure` log.
+Durante l’implementazione di Cloud Manager, il `httpd -t` viene eseguito anche il controllo della sintassi e gli eventuali errori vengono inclusi in Cloud Manager `Build Images step failure` log.
 
 ### Fase 1 {#first-phase}
 
@@ -356,7 +356,7 @@ Questa fase controlla la sintassi Apache avviando Docker in un’immagine. Docke
 
 Questa fase può anche essere eseguita in modo indipendente tramite `validator full -d out src/dispatcher`, che genera una directory out, necessaria per il comando successivo `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
-Durante l’implementazione di Cloud Manager, il `httpd -t` Verrà inoltre eseguito il controllo della sintassi e tutti gli errori verranno inclusi nel registro degli errori del passaggio Immagini build di Cloud Manager.
+Durante l’implementazione di Cloud Manager, il `httpd -t` viene eseguito il controllo della sintassi e tutti gli errori vengono inclusi nel registro degli errori del passaggio Immagini build di Cloud Manager.
 
 ### Fase 3 {#third-phase}
 

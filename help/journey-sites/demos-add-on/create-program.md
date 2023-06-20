@@ -2,10 +2,10 @@
 title: Crea programma
 description: Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 100%
+source-wordcount: '713'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Dopo aver effettuato l’accesso a Cloud Manager, puoi creare un nuovo programma
 
 >[!NOTE]
 >
->L&#39;utente deve avere il ruolo di **Proprietario dell&#39;azienda** in Cloud Manager nella tua organizzazione per creare programmi.
+>L&#39;utente deve essere membro di **Proprietario business** ruolo in Cloud Manager nella tua organizzazione per creare programmi.
 
 1. Accedi ad Adobe Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 

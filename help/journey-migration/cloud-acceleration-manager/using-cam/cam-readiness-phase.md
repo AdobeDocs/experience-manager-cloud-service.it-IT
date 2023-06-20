@@ -2,9 +2,9 @@
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica sulla fase di preparazione in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1055'
 ht-degree: 5%
 
 ---
@@ -83,7 +83,6 @@ Effettua le seguenti operazioni:
    >* Opzione **Salva come PDF** è consigliato e supportato per la funzionalità precedente.
    >* Se si utilizza il pulsante Stampa del browser, verrà stampata una sola pagina.
 
-
    ![immagine](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Utilizzo della linea di tendenza della vista {#trendline-view-cam}
@@ -121,7 +120,6 @@ Per visualizzare i rapporti dall’opzione della linea di tendenza, segui i pass
    >Sono disponibili due grafici che mostrano la tendenza del:
    >1. **Tendenza dei risultati del rapporto**
    >1. **Tendenza modelli e componenti personalizzati**
-
    >
    >È possibile aggiungere o modificare la visualizzazione grafica tramite il menu a discesa, come illustrato nella figura seguente:
    >![immagine](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
@@ -138,7 +136,6 @@ Scopri le seguenti schede disponibili nella pagina Report di analisi delle best 
 >* fai clic su ogni scheda per aprirne la scheda associata
 >* applica un segnalibro a tutte le schede dei rapporti (incluso il filtro) per la condivisione o il recupero futuro
 >* utilizza l’icona dettagli per visualizzare i dettagli di ciascun risultato del rapporto
-
 
 #### Proprietà rapporto {#report-properties}
 
@@ -183,7 +180,7 @@ Da questa scheda è possibile esaminare le informazioni riportate di seguito.
 * Valutazione
 * Considerazioni sulla migrazione dei contenuti
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Utilizzo della scheda Pianificazione e configurazione {#planning-setup}
 

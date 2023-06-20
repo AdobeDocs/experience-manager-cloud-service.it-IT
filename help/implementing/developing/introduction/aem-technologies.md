@@ -2,9 +2,9 @@
 title: Fondamenti tecnici AEM
 description: Una panoramica delle basi tecniche dell’AEM, compreso il modo in cui l’AEM è strutturato e le tecnologie fondamentali come JCR, Sling e OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2180'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ Utilizzo dei principi di decomposizione degli URL:
 * La mappatura utilizza il percorso del contenuto estratto dalla richiesta per individuare la risorsa.
 * Quando si trova la risorsa appropriata, il tipo di risorsa sling viene estratto e utilizzato per individuare lo script da utilizzare per il rendering del contenuto.
 
-La figura riportata di seguito illustra il meccanismo utilizzato, che verrà descritto più dettagliatamente nelle sezioni seguenti.
+La figura riportata di seguito illustra il meccanismo utilizzato, descritto più dettagliatamente nelle sezioni seguenti.
 
 ![Meccanismo di mappatura URL](assets/url-mapping.png)
 
@@ -142,11 +142,11 @@ Percorso specificato da `sling:resourceType` può essere:
 >
 >I percorsi relativi sono consigliati da Adobe in quanto aumentano la portabilità.
 
-Tutti gli script Sling vengono memorizzati nelle sottocartelle di `/apps` (mutable, user scripts) o `/libs` (immutabile, script di sistema), che verranno cercati in questo ordine.
+Tutti gli script Sling vengono memorizzati nelle sottocartelle di `/apps` (mutable, user scripts) o `/libs` (immutabile, script di sistema), che viene ricercato in questo ordine.
 
 Altri punti da notare sono:
 
-* Quando è necessario il metodo (GET, POST), questo verrà specificato in maiuscolo, ad esempio in base alla specifica HTTP. `jobs.POST.esp`
+* Quando il metodo (GET, POST) è obbligatorio, viene specificato in maiuscolo, ad esempio in base alla specifica HTTP. `jobs.POST.esp`
 * Sono supportati vari motori di script, ma gli script comuni e consigliati sono HTL e JavaScript.
 
 L&#39;elenco dei motori di script supportati dall&#39;istanza di AEM specificata è elencato nella console di gestione Felix ( `http://<host>:<port>/system/console/slingscripting`).
@@ -154,22 +154,22 @@ L&#39;elenco dei motori di script supportati dall&#39;istanza di AEM specificata
 Utilizzando l&#39;esempio precedente, se `sling:resourceType` è `hr/jobs` quindi per:
 
 * Richieste GET/HEAD e URL che terminano con `.html` (tipi di richiesta predefiniti, formato predefinito)
-   * Lo script sarà `/apps/hr/jobs/jobs.esp`; l&#39;ultima sezione del `sling:resourceType` forma il nome del file.
+   * Lo script è `/apps/hr/jobs/jobs.esp`; l&#39;ultima sezione del `sling:resourceType` forma il nome del file.
 * Richieste POST (tutti i tipi di richiesta tranne GET/HEAD, il nome del metodo deve essere in maiuscolo)
-   * POST verrà utilizzato nel nome dello script.
-   * Lo script sarà `/apps/hr/jobs/jobs.POST.esp`.
+   * POST viene utilizzato nel nome dello script.
+   * Lo script è `/apps/hr/jobs/jobs.POST.esp`.
 * URL in altri formati, che non terminano con `.html`
    * Esempio `../content/corporate/jobs/developer.pdf`
-   * Lo script sarà `/apps/hr/jobs/jobs.pdf.esp`; il suffisso viene aggiunto al nome dello script.
+   * Lo script è `/apps/hr/jobs/jobs.pdf.esp`; il suffisso viene aggiunto al nome dello script.
 * URL con selettori
    * I selettori possono essere utilizzati per visualizzare lo stesso contenuto in un formato alternativo. Ad esempio una versione stampabile, un feed rss o un riepilogo.
    * Se si considera una versione della stampante in cui il selettore potrebbe essere `print`; come in `../content/corporate/jobs/developer.print.html`
-   * Lo script sarà `/apps/hr/jobs/jobs.print.esp`; il selettore viene aggiunto al nome dello script.
+   * Lo script è `/apps/hr/jobs/jobs.print.esp`; il selettore viene aggiunto al nome dello script.
 * In caso negativo `sling:resourceType` è stato quindi definito:
-   * Il percorso del contenuto verrà utilizzato per cercare uno script appropriato (se basato sul percorso `ResourceTypeProvider` è attivo).
+   * Il percorso del contenuto viene utilizzato per cercare uno script appropriato (se basato sul percorso `ResourceTypeProvider` è attivo).
    * Ad esempio, lo script per `../content/corporate/jobs/developer.html` genera una ricerca in `/apps/content/corporate/jobs/`.
-   * Verrà utilizzato il tipo di nodo principale.
-* Se non viene trovato alcuno script, verrà utilizzato lo script predefinito.
+   * Viene utilizzato il tipo di nodo principale.
+* Se non viene trovato alcuno script, viene utilizzato lo script predefinito.
    * La rappresentazione predefinita è attualmente supportata come testo normale (`.txt`), HTML (`.html`) e JSON (`.json`), che elencheranno tutte le proprietà del nodo (formattate in modo appropriato). Rendering predefinito per l’estensione `.res`, o richieste senza estensione di richiesta, consiste nello spool della risorsa (ove possibile).
 * Per la gestione degli errori http (codici 403 o 404), Sling cercherà uno script in:
    * La posizione `/apps/sling/servlet/errorhandler` per script personalizzati

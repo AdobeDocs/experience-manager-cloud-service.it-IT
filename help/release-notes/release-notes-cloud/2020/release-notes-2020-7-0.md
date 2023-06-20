@@ -2,10 +2,10 @@
 title: Note sulla versione 2020.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.7.0 as a Cloud Service."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -88,7 +88,7 @@ La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.7.0 è il 9 lugl
 
 * Le pipeline di Cloud Manager ora supportano variabili e segreti impostati dal cliente.
 
-   Per ulteriori informazioni, consulta Variabili delle pipeline.
+  Per ulteriori informazioni, consulta Variabili delle pipeline.
 
 * Ora gli archivi Maven privati vincolati all’autenticazione sono supportati.
 
@@ -121,7 +121,7 @@ Per ulteriori informazioni, consulta Utilizzo del supporto Java 11.
 
 ### Novità {#what-is-new-foundations}
 
-* [I registri possono essere inoltrati agli account Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs), il che consente alle organizzazioni di sfruttare il loro investimento su Splunk.
+* [I registri possono essere inoltrati agli account Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs), che consente alle organizzazioni di utilizzare il proprio investimento Splunk.
 
 * È possibile assegnare un [indirizzo IP di uscita statico e dedicato](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) al traffico in uscita programmato nel codice Java, utile per alcune integrazioni.
 
@@ -137,7 +137,7 @@ Leggi questa sezione per saperne di più sulle novità e sugli aggiornamenti di 
 
 * La versione precedente di Cloud Readiness Analyzer non poteva girare su Adobe Experience Manager (AEM) 6.1. È stato aggiunto il supporto esplicito per gli utenti del gruppo di amministratori.
 
-   Per ulteriori informazioni, consulta [Installazione di Cloud Readiness Analyzer in AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61).
+  Per ulteriori informazioni, consulta [Installazione di Cloud Readiness Analyzer in AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61).
 
 * Nel rapporto di riepilogo veniva visualizzata una marca temporale di scadenza errata.
 

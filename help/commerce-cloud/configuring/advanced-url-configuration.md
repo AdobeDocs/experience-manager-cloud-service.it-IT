@@ -9,10 +9,10 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2197'
 ht-degree: 15%
 
 ---
@@ -49,11 +49,11 @@ Questo configura gli URL delle pagine dei prodotti e supporta le seguenti opzion
 
 Nel caso di [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` sarà sostituito da `/content/venia/us/en/products/product-page`
-* `{{sku}}` verrà sostituito dallo SKU del prodotto, ad esempio, `VP09`
-* `{{url_key}}` verrà sostituito da quello del `url_key` proprietà, ad esempio `lenora-crochet-shorts`
-* `{{url_path}}` verrà sostituito da quello del `url_path`ad esempio: `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` verrà sostituito dalla variante attualmente selezionata, ad esempio, `VP09-KH-S`
+* `{{page}}` è sostituito da `/content/venia/us/en/products/product-page`
+* `{{sku}}` è sostituito dallo SKU del prodotto, ad esempio `VP09`
+* `{{url_key}}` è sostituito da `url_key` proprietà, ad esempio `lenora-crochet-shorts`
+* `{{url_path}}` è sostituito da `url_path`ad esempio: `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` viene sostituito dalla variante attualmente selezionata, ad esempio, `VP09-KH-S`
 
 Poiché il `url_path` diventati obsoleti, i formati URL di prodotto predefiniti utilizzano i `url_rewrites` e scegliete quello con il maggior numero di segmenti di tracciato come alternativa se `url_path` non è disponibile.
 
@@ -68,9 +68,9 @@ In questo modo vengono configurati gli URL delle pagine delle categorie o degli 
 
 Nel caso di [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` sarà sostituito da `/content/venia/us/en/products/category-page`
-* `{{url_key}}` verranno sostituite da quelle della categoria `url_key` proprietà
-* `{{url_path}}` verranno sostituite da quelle della categoria `url_path`
+* `{{page}}` è sostituito da `/content/venia/us/en/products/category-page`
+* `{{url_key}}` è sostituito da quello della categoria `url_key` proprietà
+* `{{url_path}}` è sostituito da quello della categoria `url_path`
 
 Con i dati dell’esempio precedente, l’URL di una pagina categoria formattato con il formato URL predefinito avrà l’aspetto di `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
@@ -205,7 +205,7 @@ Le implementazioni del formato URL personalizzato devono implementare una coppia
 
 ### Combinare con mappature Sling {#sling-mapping}
 
-Oltre a `UrlProvider`, è anche possibile configurare [mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per riscrivere ed elaborare gli URL. Il progetto AEM Archetype fornisce anche una [configurazione esemplificativa](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) per configurare mappature Sling per le porte 4503 (pubblicazione) e 80 (dispatcher).
+Oltre al `UrlProvider`, è anche possibile configurare [Mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per riscrivere ed elaborare gli URL. Il progetto AEM Archetype fornisce anche una [configurazione esemplificativa](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) per configurare mappature Sling per le porte 4503 (pubblicazione) e 80 (dispatcher).
 
 ### Combinare con AEM Dispatcher {#dispatcher}
 

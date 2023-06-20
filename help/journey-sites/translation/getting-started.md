@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 100%
+source-wordcount: '1406'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Ci sono diversi requisiti prima di iniziare a tradurre il tuo contenuto AEM.
 
 ## Come AEM archivia i contenuti {#content-in-aem}
 
-Per lo specialista della traduzione, non è importante comprendere in modo approfondito come AEM gestisce i contenuti. Tuttavia, conoscere i concetti e la terminologia di base sarà utile in seguito all’utilizzo di strumenti di traduzione AEM. È importante comprendere il proprio contenuto e la sua struttura per tradurlo in modo efficace.
+Per lo specialista della traduzione, non è importante comprendere in modo approfondito come AEM gestisce i contenuti. Tuttavia, è utile avere familiarità con i concetti e la terminologia di base in quanto in seguito utilizzerai gli strumenti di traduzione dell’AEM. Ma soprattutto, devi comprendere i contenuti e come sono strutturati per tradurli in modo efficace.
 
 ### Console Sites {#sites-console}
 
@@ -97,7 +97,7 @@ La console Sites consente di navigare nel contenuto e fornisce una panoramica de
 
 Per modificare la pagina:
 
-1. Utilizza la console Sites per individuare e selezionare una pagina. Per selezionarla, è necessario toccare o fare clic sulla casella di spunta di una singola pagina.
+1. Utilizza la console Sites per individuare e selezionare una pagina. Tieni presente che devi toccare o fare clic sulla casella di controllo di una singola pagina per selezionarla.
 
    ![Selezione di una pagina da modificare](assets/sites-editor-select-page.png)
 
@@ -175,7 +175,7 @@ La struttura finale può avere un aspetto simile al seguente.
     |- ...
 ```
 
-È necessario prendere nota del percorso specifico del contenuto, in quanto sarà necessario in seguito per configurare la traduzione.
+Devi prendere nota del percorso specifico del contenuto, in quanto è necessario in un secondo momento per configurare la traduzione.
 
 >[!NOTE]
 >

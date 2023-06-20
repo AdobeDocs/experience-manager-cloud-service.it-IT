@@ -2,9 +2,9 @@
 title: Riferimento predicato di Query Builder
 description: Riferimento predicato per l’API Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 14aafcb6c4acc798b0f0e0c51ecb0726f8d567aa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2280'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Il nome &quot;root&quot; non viene mai utilizzato in una query, è implicito.
 * **`p.hits`** - (solo per il servlet JSON) seleziona il modo in cui gli hit vengono scritti come JSON, con questi standard (estensibili tramite il servizio ResultHitWriter):
    * **`simple`** - elementi minimi come `path`, `title`, `lastmodified`, `excerpt` (se impostato)
    * **`full`** : rendering JSON sling del nodo, con `jcr:path` che indica il percorso dell’hit: per impostazione predefinita elenca solo le proprietà dirette del nodo, include una struttura ad albero più profonda con `p.nodedepth=N`, dove 0 indica l&#39;intero sottoalbero infinito; aggiungere `p.acls=true` per includere le autorizzazioni JCR della sessione corrente sull’elemento risultato specificato (mappature: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
-   * **`selective`** - solo le proprietà specificate in `p.properties`, che è uno spazio separato (utilizzare `+` nell’elenco degli URL dei percorsi relativi; se il percorso relativo ha una profondità `>1` saranno rappresentati come oggetti figlio; lo speciale `jcr:path` la proprietà include il percorso dell’hit
+   * **`selective`** - solo le proprietà specificate in `p.properties`, che è uno spazio separato (utilizzare `+` nell’elenco degli URL dei percorsi relativi; se il percorso relativo ha una profondità `>1` sono rappresentati come oggetti figlio; gli oggetti speciali `jcr:path` la proprietà include il percorso dell’hit
 
 ### gruppo {#group}
 
@@ -108,7 +108,7 @@ Questo predicato limita il risultato ai frammenti di contenuto.
 
 Questo predicato confronta due proprietà di data JCR tra loro. Può verificare se sono uguali, ineguali, maggiori o maggiori o uguali.
 
-Si tratta di un predicato di solo filtro e non può sfruttare un indice di ricerca.
+Questo è un predicato di solo filtro e non può utilizzare un indice di ricerca.
 
 #### Proprietà {#properties-2}
 
@@ -143,7 +143,7 @@ Non supporta il filtro.
 
 Questo predicato esclude i nodi dal risultato in cui il loro percorso corrisponde a un’espressione regolare.
 
-Si tratta di un predicato di solo filtro e non può sfruttare un indice di ricerca.
+Questo è un predicato di solo filtro e non può utilizzare un indice di ricerca.
 
 Non supporta l’estrazione dei facet.
 
@@ -168,7 +168,7 @@ Non supporta l’estrazione dei facet.
 
 Questo predicato limita il risultato agli elementi in cui la sessione corrente ha il [Privilegi JCR.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
-Si tratta di un predicato di solo filtro e non può sfruttare un indice di ricerca. Non supporta l’estrazione dei facet.
+Questo è un predicato di solo filtro e non può utilizzare un indice di ricerca. Non supporta l’estrazione dei facet.
 
 #### Proprietà {#properties-7}
 
@@ -178,7 +178,7 @@ Si tratta di un predicato di solo filtro e non può sfruttare un indice di ricer
 
 Questo predicato trova le pagine AEM in una lingua specifica. Vengono esaminate sia la proprietà lingua della pagina che il percorso della pagina, che spesso include la lingua o le impostazioni locali in una struttura del sito principale.
 
-Si tratta di un predicato di solo filtro e non può sfruttare un indice di ricerca.
+Questo è un predicato di solo filtro e non può utilizzare un indice di ricerca.
 
 Supporta l’estrazione facet e fornisce bucket per ogni codice lingua univoco.
 
@@ -190,7 +190,7 @@ Supporta l’estrazione facet e fornisce bucket per ogni codice lingua univoco.
 
 Questo predicato controlla se un nodo è una risorsa principale DAM e non una risorsa secondaria. In pratica, si tratta di ogni nodo non incluso in un nodo di risorse secondarie. Tieni presente che questa operazione non verifica la presenza di `dam:Asset` tipo di nodo. Per utilizzare questo predicato, imposta semplicemente `mainasset=true` o `mainasset=false`. Non sono presenti ulteriori proprietà.
 
-Si tratta di un predicato di solo filtro e non può sfruttare un indice di ricerca.
+Questo è un predicato di solo filtro e non può utilizzare un indice di ricerca.
 
 Supporta l’estrazione facet e fornisce due bucket per le risorse principali e secondarie.
 
@@ -202,7 +202,7 @@ Supporta l’estrazione facet e fornisce due bucket per le risorse principali e 
 
 Questo predicato trova elementi che sono membri di un [raccolta di risorse sling](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
-Si tratta di un predicato di solo filtro e non può sfruttare un indice di ricerca.
+Questo è un predicato di solo filtro e non può utilizzare un indice di ricerca.
 
 Non supporta l’estrazione dei facet.
 
@@ -244,8 +244,7 @@ Non supporta l’estrazione dei facet.
 * **`path`** - Definisce il pattern del percorso.
    * A seconda della `exact` , l&#39;intera sottostruttura corrisponderà (ad esempio, aggiungendo `//*` in xpath, ma tieni presente che non include il percorso di base) o solo un percorso esatto corrisponde, che può includere caratteri jolly (`*`).
       * Impostazione predefinita `true`
-&lt;!— * Se il 
-`self`viene impostata, verrà eseguita la ricerca nell&#39;intera sottostruttura, incluso il nodo di base.—>
+&lt;!— * Se il `self`viene eseguita la ricerca nell&#39;intera sottostruttura, incluso il nodo di base.—>
 * **`exact`** - se `exact` è `true`, il percorso esatto deve corrispondere, ma può contenere caratteri jolly semplici (`*`), che corrispondono ai nomi, ma non `/`; se è `false` (impostazione predefinita) sono inclusi tutti i discendenti (facoltativo)
 * **`flat`** - cerca solo gli elementi secondari diretti (ad esempio, aggiungendo `/*` in xpath) (utilizzato solo se `exact` non è true, facoltativo)
 * **`self`** : esegue la ricerca nella sottostruttura ma include il nodo di base indicato come percorso (nessun carattere jolly).
@@ -267,7 +266,7 @@ Supporta l’estrazione dei facet e fornisce bucket per ogni valore di propriet�
    * `equals` per corrispondenza esatta (impostazione predefinita)
    * `unequals` per confronto disuguaglianza
    * `like` per utilizzare `jcr:like` funzione xpath (opzionale)
-   * `not` in caso di mancata corrispondenza (ad esempio, `not(@prop)` in xpath, il parametro value verrà ignorato)
+   * `not` in caso di mancata corrispondenza (ad esempio, `not(@prop)` in xpath, il parametro value viene ignorato)
    * `exists` per verifica esistenza
       * `true` la proprietà deve esistere
       * `false` è uguale a `not` ed è il valore predefinito
