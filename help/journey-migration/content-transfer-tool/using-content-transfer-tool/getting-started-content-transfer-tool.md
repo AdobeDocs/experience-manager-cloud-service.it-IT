@@ -2,10 +2,10 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 22%
+source-wordcount: '1439'
+ht-degree: 21%
 
 ---
 
@@ -52,6 +52,8 @@ Talvolta può essere difficile comprendere i problemi di connessione SSL/TLS. Pe
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
+>[!NOTE]
+>Questo flag è solo per il debug di problemi SSL. Assicurati che il flag sia disabilitato prima di eseguire l’estrazione, in quanto potrebbe richiedere una grande quantità di spazio su disco. Questo potrebbe potenzialmente riempire la capacità dell’unità e causare un errore nel processo di estrazione.
 
 ## Esecuzione dello strumento Content Transfer (Trasferimento contenuti)  {#running-tool}
 
