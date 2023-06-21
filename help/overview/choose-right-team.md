@@ -2,9 +2,9 @@
 title: Persone giuste, ruoli giusti
 description: Persone giuste, ruoli giusti
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '829'
 ht-degree: 97%
 
 ---
@@ -47,7 +47,7 @@ Ora che sai quali ruoli sono richiesti, osserva il grafico seguente per vedere q
 
 <br>
 
-![](assets/team_involvement.png)
+![Ruoli di revisione per l’implementazione](assets/team_involvement.png)
 
 **Rivedi questo elenco con il tuo team di implementazione** e assicurati di avere persone con le qualifiche pertinenti per ogni ruolo. I membri del team che hanno meno familiarità con Adobe Experience Cloud possono utilizzare la risorse di apprendimento [Experience League](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager) per ottenere la certificazione tramite [Adobe Digital Learning](https://learning.adobe.com/certification.html).
 

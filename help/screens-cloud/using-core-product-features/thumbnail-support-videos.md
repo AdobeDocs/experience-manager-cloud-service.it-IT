@@ -3,9 +3,9 @@ title: Supporto delle miniature per video in Screens as a Cloud Service
 description: Questa pagina descrive come aggiungere il supporto miniature per video in Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '503'
 ht-degree: 1%
 
 ---
@@ -42,19 +42,19 @@ Per usare la miniatura nei video, segui la procedura indicata di seguito:
 
 1. Seleziona il canale e fai clic su **Modifica** dalla barra delle azioni per aprire l’editor.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![Apri l’editor](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. Aggiungi o modifica un componente video esistente, come illustrato nella figura riportata di seguito.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Modificare il componente](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
 1. Seleziona il video e fai clic sul pulsante *chiave inglese* per aprire le proprietà del video.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![Fai clic sulla chiave inglese](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
 1. Il **Video** viene visualizzata la finestra di dialogo in cui è possibile visualizzare **Miniatura** zona di rilascio.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![Visualizza la miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
 1. Trascina e rilascia un’immagine dal selettore risorse al **Miniatura** rilascia la zona e fai clic su **Fine**.
 

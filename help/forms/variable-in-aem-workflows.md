@@ -2,9 +2,9 @@
 title: Come si aggiungono le variabili nei passaggi del flusso di lavoro AEM?
 description: Scopri come creare una variabile, impostarne un valore e utilizzarla in [!DNL AEM Forms] Passaggi del flusso di lavoro.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Utilizzare il tipo di dati ArrayList per creare raccolte di variabili. È possib
 
 Per creare una variabile:
 
-1. In un’istanza AEM, passa a Strumenti ![](assets/hammer-icon.svg) > Workflow > Modelli.
+1. In un’istanza AEM, passa a Strumenti ![Icona martello](assets/hammer-icon.svg) > Workflow > Modelli.
 1. Tocca **[!UICONTROL Crea]** e specifica il titolo e un nome facoltativo per il modello di flusso di lavoro. Seleziona il modello e tocca **[!UICONTROL Modifica]**.
 1. Tocca l’icona delle variabili disponibile nella barra laterale del modello di flusso di lavoro, quindi tocca **[!UICONTROL Aggiungi variabile]**.
 

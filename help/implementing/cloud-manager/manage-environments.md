@@ -2,9 +2,9 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che è possibile creare e come crearli per il progetto Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2276'
 ht-degree: 37%
 
 ---
@@ -245,7 +245,7 @@ Dal menu con i puntini di sospensione dell’ambiente nella scheda **Ambienti**,
 
 Dal menu con i puntini di sospensione dell’ambiente nella scheda **Ambienti**, seleziona **Console sviluppatori**. Nel browser viene aperta una nuova scheda con la pagina di accesso al **Console per sviluppatori**.
 
-![](assets/environ-devconsole.png)
+![Accedi a Console sviluppatori](assets/environ-devconsole.png)
 
 Solo un utente con **Sviluppatore** il ruolo ha accesso al **Console per sviluppatori**. Tuttavia, per i programmi sandbox, tutti gli utenti con accesso al programma sandbox hanno accesso a **Console per sviluppatori**.
 

@@ -2,9 +2,9 @@
 title: Creazione di rappresentazioni video in Screens as a Cloud Service
 description: Questa pagina descrive come creare rappresentazioni video in Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Per creare rappresentazioni video in Screens as a Cloud Service dal provider di 
 
 1. Fai clic sulla sezione Strumenti nella barra di navigazione a sinistra, quindi fai clic su **Risorse** e quindi fare clic su **Profili elaborazione**.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![Fai clic sui profili di elaborazione](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Fai clic su **Crea** per creare un nuovo profilo di elaborazione.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![Fai clic su Crea](/help/screens-cloud/assets/configure/screens-video-2.png)
 
 1. Inserisci il **Nome**, ad esempio **ScreensProcessingProfile**.
 
@@ -57,11 +57,11 @@ Per creare rappresentazioni video in Screens as a Cloud Service dal provider di 
 
 1. Seleziona il profilo di elaborazione e fai clic su **Applica profilo a cartelle**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
+   ![Applica profilo a cartella](/help/screens-cloud/assets/configure/screens-video-5.png)
 
 1. Seleziona le cartelle in cui vengono conservati i video Screens e fai clic su **Applica**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![Fai clic su Applica.](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
    >* Puoi creare più profili di elaborazione e applicarli alle cartelle corrispondenti, in modo che i video in tali cartelle ottengano le rappresentazioni video specifiche.
