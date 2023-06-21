@@ -3,9 +3,9 @@ title: Supporto delle miniature per video in Screens as a Cloud Service
 description: Questa pagina descrive come aggiungere il supporto miniature per video in Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: f5af37bf39ecd5a964a8c94a731111c561c2934e
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '557'
 ht-degree: 1%
 
 ---
@@ -14,14 +14,14 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Un autore di contenuti può definire una miniatura per video in modo che l’immagine possa essere utilizzata come segnaposto e testare correttamente la riproduzione e il targeting del contenuto, mentre il video effettivo è in fase di finalizzazione da parte del team appropriato. L’immagine può essere utilizzata anche nel caso in cui la riproduzione del video non riesca.
+Un autore di contenuti può definire una miniatura per video in modo che l’immagine venga utilizzata come segnaposto e possa testare correttamente la riproduzione e il targeting del contenuto, mentre il video effettivo viene finalizzato dal team appropriato. L’immagine può essere utilizzata anche nel caso in cui la riproduzione del video non riesca.
 
-L’aggiunta di supporto per un’immagine miniatura sul componente video consente al cliente di aggiungere correttamente un componente valido nel canale, con il contenuto effettivo ed eseguire eventuali configurazioni di targeting prima che il video venga effettivamente distribuito.
+L’aggiunta di supporto per un’immagine miniatura sul componente video consente al cliente di aggiungere correttamente un componente valido nel canale, con il contenuto effettivo ed eseguire eventuali configurazioni di targeting prima che il video venga consegnato.
 
 >[!NOTE]
->L’immagine miniatura, se impostata sul componente video, viene riprodotta in caso di errore di riproduzione video sul lettore. Questo consente di inviare al pubblico il messaggio desiderato (riproducendo il contenuto) invece di saltarlo completamente.
+>L’immagine miniatura, se impostata sul componente video, viene riprodotta in caso di errore di riproduzione video sul lettore. Questo flusso di lavoro ti consente di inviare il messaggio desiderato al pubblico (riproducendo il contenuto) invece di saltarlo completamente.
 
-Il supporto delle miniature consente di:
+Il Supporto miniature consente di effettuare le seguenti operazioni:
 
 * Prepara un’esperienza di canale quando i video non sono ancora pronti o quando non desideri necessariamente testare il download di una risorsa di grandi dimensioni sui lettori
 
@@ -31,36 +31,39 @@ Il supporto delle miniature consente di:
 
 >[!IMPORTANT]
 >**Prerequisiti**
->Prima di imparare a utilizzare le miniature per i video, assicurati di imparare a creare rappresentazioni video per i canali nel progetto Screens as a Cloud Service. Consulta [qui](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) per ulteriori dettagli.
+>Prima di imparare a utilizzare le miniature per i video, assicurati di imparare a creare rappresentazioni video per i canali nel progetto Screens as a Cloud Service. Consulta [Creazione di rappresentazioni video in Screens as a Cloud Service](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
 
 Per usare la miniatura nei video, segui la procedura indicata di seguito:
 
-1. Passa a un canale Screens esistente o creane uno nuovo.
+1. Passa a un canale Screens esistente o creane uno.
 
    >[!NOTE]
-   >Per informazioni su come creare un canale e aggiungere contenuti a un canale, consulta [Creazione e gestione di un canale in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
+   >Per informazioni su come creare un canale e aggiungere contenuti a un canale, consulta [Creazione e gestione di un canale in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
 
-1. Seleziona il canale e fai clic su **Modifica** dalla barra delle azioni per aprire l’editor.
+1. Seleziona il canale. Sulla barra delle azioni, fai clic su **Modifica** per aprire l’editor.
 
-   ![Apri l’editor](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+
+   ![Pulsante Modifica sulla barra delle azioni.](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. Aggiungi o modifica un componente video esistente, come illustrato nella figura riportata di seguito.
 
-   ![Modificare il componente](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Immagine evidenziata di una risorsa video.](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Seleziona il video e fai clic sul pulsante *chiave inglese* per aprire le proprietà del video.
+1. Aggiungi o modifica un componente video esistente, come illustrato nella figura riportata di seguito.
 
-   ![Fai clic sulla chiave inglese](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+1. Seleziona il video e fai clic su Configura (*chiave inglese*) per aprire le proprietà del video.
+
+   ![Immagine della risorsa video selezionata, con freccia rivolta verso l’icona Configura, rappresentata come una chiave inglese. sulla barra degli strumenti.](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
 1. Il **Video** viene visualizzata la finestra di dialogo in cui è possibile visualizzare **Miniatura** zona di rilascio.
 
-   ![Visualizza la miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![Finestra di dialogo Video con l’immagine della risorsa video e la casella di riepilogo Miniatura.](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
 1. Trascina e rilascia un’immagine dal selettore risorse al **Miniatura** rilascia la zona e fai clic su **Fine**.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+   ![Selettore immagine risorsa visualizzato dietro la finestra di dialogo Video con la risorsa immagine visualizzata nella casella a discesa Miniatura.](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
 
-1. Fai clic su **Anteprima**.
+1. Clic **Anteprima**.
 
 1. Se un video è impostato sul componente, viene riprodotto. In caso contrario, e la miniatura è impostata, la miniatura viene riprodotta. In caso contrario, il componente viene considerato non configurato e viene saltato.
 
@@ -68,10 +71,10 @@ Per usare la miniatura nei video, segui la procedura indicata di seguito:
 
 La miniatura nei video supporta i seguenti casi d’uso:
 
-* Un componente video non configurato viene saltato.
+* Viene saltato un componente video senza alcuna configurazione.
 
-* La miniatura viene riprodotta da un componente video contenente solo la serie di miniature.
+* Un componente video con solo la miniatura impostata riproduce la miniatura.
 
-* Il video verrà riprodotto da un componente video con il video (se il video ha una rappresentazione corretta) e la miniatura impostata.
+* Un componente video con il video (se il video ha una rappresentazione corretta) e il set di miniature riproduce il video.
 
-* Un componente video con il set di video riprodurrà la miniatura, in caso di errore di riproduzione, o passerà all’elemento successivo nel caso in cui la miniatura non sia configurata.
+* Un componente video con il set di video riproduce la miniatura, se si verifica un errore di riproduzione, o passa all’elemento successivo nel caso in cui la miniatura non sia configurata.
