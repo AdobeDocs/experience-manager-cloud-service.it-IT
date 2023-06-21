@@ -3,10 +3,10 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
+source-git-commit: ca4046a94301cebae9e7a46e055977419fedd14e
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -41,7 +41,7 @@ Dai un’occhiata al video Panoramica sulla versione di aprile 2023 per un riepi
 * Esporta frammenti di contenuto da AEM as a Cloud Service in Adobe Target come offerte JSON.
 * Il supporto per la paginazione e l’ordinamento di GraphQL, insieme ai miglioramenti apportati alla memorizzazione nella cache interna, ora consente di migliorare le prestazioni delle applicazioni client separate quando si recuperano set di contenuti di grandi dimensioni da AEM utilizzando query e filtri GraphQL complessi.
 
-### Nuove funzioni in [!DNL Experience Manager Sites] prelease {#prerelease-sites}
+### Nuove funzioni nella versione prerelease di [!DNL Experience Manager Sites] {#prerelease-sites}
 
 * Ora è possibile pubblicare i frammenti di contenuto e i relativi riferimenti in [Servizio di anteprima AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) utilizzando [Console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), che consente agli utenti di visualizzare in anteprima l’esperienza finale su un’applicazione di anteprima separata prima della pubblicazione.
 
