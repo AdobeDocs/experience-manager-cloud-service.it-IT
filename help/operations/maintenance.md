@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1105'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 60%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="Attività di manutenzione"
->abstract="Le attività di manutenzione sono processi eseguiti secondo una pianificazione per ottimizzare l’archivio. Con AEM as a Cloud Service, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando ad Adobe le operazioni di infrastruttura."
+>abstract="Le attività di manutenzione sono processi eseguiti secondo una pianificazione al fine di ottimizzare l’archivio. Con AEM as a Cloud Service, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando ad Adobe le operazioni di infrastruttura."
 
-Le attività di manutenzione sono processi eseguiti secondo una pianificazione per ottimizzare l’archivio. Con AEM as a Cloud Service, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando ad Adobe le operazioni di infrastruttura.
+Le attività di manutenzione sono processi eseguiti secondo una pianificazione al fine di ottimizzare l’archivio. Con AEM as a Cloud Service, la necessità per i clienti di configurare le proprietà operative delle attività di manutenzione è minima. I clienti possono concentrare le proprie risorse sui problemi a livello di applicazione, lasciando ad Adobe le operazioni di infrastruttura.
 
 ## Configurazione delle attività di manutenzione {#maintenance-tasks-configuring}
 
@@ -49,7 +49,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
        <li>Le versioni precedenti a 30 giorni vengono rimosse</li>
        <li>Le ultime 5 versioni degli ultimi 30 giorni vengono conservate</li>
        <li>Indipendentemente dalle regole di cui sopra, viene conservata la versione più recente.</li>
-       <br>Si consiglia ai clienti con requisiti normativi di eseguire il rendering delle pagine del sito esattamente come sono apparse in una data specifica, di integrarsi con servizi esterni specializzati.
+       <br>Si consiglia ai clienti con requisiti normativi di eseguire il rendering delle pagine del sito esattamente come sono apparse in una data specifica di integrarsi con servizi esterni specializzati.
      </ol></td>
   </td>
   </tr>

@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3523'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -174,7 +174,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Gestione pacchetti - Migrazione dei pacchetti di contenuto mutabile"
->abstract="Esplora l’utilizzo di Gestione pacchetti per i casi di utilizzo in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;, che include l’importazione di contenuti specifici dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, trasferire un piccolo pacchetto di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
+>abstract="Scopri come usare Gestione pacchetti per i casi d’uso in cui un pacchetto di contenuti deve essere installato “una tantum”, ad esempio: importazione di contenuti specifici dall’ambiente di produzione a quello di staging per eseguire il debug di un problema di produzione; trasferimento di piccoli pacchetti di contenuti dall’ambiente locale agli ambienti AEM Cloud; e altri ancora."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it#cloud-migration" text="Strumento trasferimento contenuti"
 
 Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come “una tantum”. Ad esempio, l’importazione di contenuto specifico dalla produzione alla gestione temporanea per il debug di un problema di produzione. Per questi scenari, [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) può essere utilizzato in ambienti AEM as a Cloud Service.
