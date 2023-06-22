@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
+source-git-commit: 46f0f8ba51b328bef1061d574b0d378a510fcf38
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 37%
+source-wordcount: '382'
+ht-degree: 31%
 
 ---
 
@@ -17,17 +17,11 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 12255, rilasciata pubblicamente il 13 giugno 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 12142.
 
-L’abilitazione delle funzioni per questa versione di manutenzione ti darà accesso al set di funzioni completo. Consulta le [note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md) per ottenere informazioni dettagliate.
+L’abilitazione delle funzioni per questa versione di manutenzione fornirà il set completo di funzioni con attivazione della funzione 2023.6.0. Consulta la [Roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it) per ulteriori informazioni.
 
 ### Miglioramenti {#enhancements-12255}
 
 Nessuno.
-
-### Problemi noti {#known-issues-12255}
-
-- ASSETS-25729 - Il menu dello switcher di visualizzazione è disattivato
-- ASSETS-25728 - Opzione Rielabora risorsa non disponibile nella vista di ricerca
-- ASSETS-22603 - Alcune colonne del rapporto Asset di tipo Download visualizzano valori &quot;null&quot; nell’interfaccia utente. Il file CSV scaricabile non subisce modifiche.
 
 ### Problemi risolti {#fixed-issues-12255}
 
@@ -49,6 +43,12 @@ Nessuno.
 - ASSETS-23981 - Funzione di ordinamento per i titoli che non funzionano nei collegamenti della raccolta
 - ASSETS-24723 - Le risorse pubblicate sono state rielaborate senza l’intervento dell’utente
 - GRANITE-45385 - Migra attivazione struttura per utilizzare il processo sling invece del flusso di lavoro
+
+### Problemi noti {#known-issues-12255}
+
+- ASSETS-25729 - Il menu dello switcher di visualizzazione è disattivato
+- ASSETS-25728 - Opzione Rielabora risorsa non disponibile nella vista di ricerca
+- ASSETS-22603 - Alcune colonne del rapporto Asset di tipo Download visualizzano valori &quot;null&quot; nell’interfaccia utente. Il file CSV scaricabile non subisce modifiche.
 
 ### Tecnologie incorporate {#embedded-tech-12255}
 
