@@ -98,7 +98,6 @@ Consulta le risorse di supporto autonomo su come configurare e distribuire in am
 >1. [Contatta il team di supporto Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
 >2. Esplora [Community e forum Experienci Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
-
 <br>
 
 ## Passare ad Adobe Experience Manager as a Cloud Service {#move-to-cloud}
@@ -191,7 +190,6 @@ Nella fase di post-pubblicazione, devi assicurarti che i file temporanei vengano
 >2. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=en)
 >3. [Gestione dei registri](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=en)
 
-
 <br>
 
 ### Strumenti e risorse
@@ -204,4 +202,3 @@ Nella fase di post-pubblicazione, devi assicurarti che i file temporanei vengano
 > Per ulteriori informazioni, è possibile:
 >1. [Contatta il team di supporto Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
 >2. Esplora [Community e forum Experienci Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
-
