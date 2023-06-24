@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: Il browser dell’archivio fornisce una vista in sola lettura dell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Per accedere al Browser dell’archivio:
 * Gli utenti devono disporre di **Cloud Manager - Sviluppatore** Ruolo nell’Admin Console per visualizzare le istanze Author e Publish.
 * Inoltre, per l’autore, gli utenti con il profilo di prodotto Utenti AEM possono visualizzare il browser dell’archivio con un accesso in lettura minimo; le autorizzazioni dell’utente vengono rispettate durante la navigazione nell’archivio. Gli utenti con il profilo di prodotto per amministratori dell’AEM possono visualizzare il browser dell’archivio con accesso in lettura completo.
 
-Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### Avvio del Browser dell’archivio {#launching-the-repository-browser}
 
@@ -56,25 +56,25 @@ Puoi avviare il browser dell’archivio seguendo la procedura riportata di segui
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. Avvia il browser dell’archivio facendo clic sul pulsante **Apri Browser Archivio** collegamento più in basso. Verrà avviato il browser corrispondente a un’istanza rappresentativa (pod) per il livello scelto. Verrà avviato il browser corrispondente a un’istanza rappresentativa (pod) per il livello scelto. Non è possibile controllare il pod specifico per il livello avviato.
+1. Avvia il browser dell’archivio facendo clic sul pulsante **Apri Browser Archivio** collegamento più in basso. Viene avviato il browser corrispondente a un’istanza rappresentativa (pod) per il livello scelto. Non è possibile controllare il pod specifico per il livello avviato.
 
 ## Funzioni {#features}
 
 ### Spostarsi nella gerarchia {#navigate-the-hierarchy}
 
-Puoi utilizzare il riquadro di navigazione a sinistra per navigare attraverso la gerarchia dei contenuti. Facendo clic su ogni cartella o nodo, verranno visualizzati i relativi elementi secondari. La struttura delle cartelle riflette la struttura Sling Resource, un super-set della struttura ad albero dei nodi JCR.
+È possibile utilizzare il riquadro di navigazione a sinistra per spostarsi nella gerarchia dei contenuti. Facendo clic su ogni cartella o nodo, vengono visualizzati i relativi elementi secondari. La struttura delle cartelle riflette la struttura Sling Resource, un super-set della struttura ad albero dei nodi JCR.
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-In alternativa, potete passare direttamente a un tracciato immettendolo nella **Percorso** come mostrato di seguito. Questo ne espanderà anche la posizione nella vista della gerarchia del contenuto a sinistra.
+In alternativa, potete passare direttamente a un tracciato immettendolo nella **Percorso** come mostrato di seguito. Questo percorso espande anche la sua posizione nella vista della gerarchia dei contenuti a sinistra.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-Ogni volta che fai clic su una cartella a sinistra, il campo Percorso si popola automaticamente con la relativa posizione. Questo è utile per copiare e incollare il valore per un utilizzo successivo.
+Quando fai clic su una cartella a sinistra, il campo Percorso si popola automaticamente con la relativa posizione. Questa funzionalità è utile per copiare e incollare il valore per un utilizzo successivo.
 
-Inoltre, quando fai clic su una cartella, l’URL viene modificato dinamicamente per includere il percorso di tale cartella. Questo consente l’utilizzo di URL con segnalibro.
+Inoltre, quando fai clic su una cartella, l’URL viene modificato dinamicamente per includere il percorso di tale cartella. Questa funzionalità consente l’utilizzo di URL con segnalibro.
 
-Per la pubblicazione, per impostazione predefinita, il Browser dell’archivio mostrerà solo il contenuto pubblico, quindi alcune cartelle come `/conf` o `/home` non sarà visibile.
+Per la pubblicazione, per impostazione predefinita, il Browser dell’archivio mostra solo il contenuto pubblico, pertanto alcune cartelle come `/conf` o `/home` non sono visibili.
 
 Per rendere visibili tali posizioni, effettuare le seguenti operazioni.
 
@@ -86,7 +86,7 @@ Per rendere visibili tali posizioni, effettuare le seguenti operazioni.
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Crea un nuovo profilo di prodotto per gli amministratori di pubblicazione. Nell’esempio seguente, viene chiamato **DEV - Pubblicazione per amministratori AEM**
+1. Crea un profilo di prodotto per gli amministratori di pubblicazione. Nell’esempio seguente, viene chiamato **DEV - Pubblicazione per amministratori AEM**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
@@ -95,7 +95,7 @@ Per rendere visibili tali posizioni, effettuare le seguenti operazioni.
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
 1. Attendere alcuni minuti, quindi aprire **Autore AEM** console
-1. Aggiungi il gruppo corrispondente al nuovo profilo di prodotto come membro del gruppo Administrators. Per farlo, fai clic su **Strumenti - Sicurezza - Gruppi sull’autore**, quindi facendo clic sul pulsante **amministratori** gruppo. Quindi, aggiungete il gruppo come mostrato di seguito
+1. Aggiungi il gruppo corrispondente al nuovo profilo di prodotto come membro del gruppo dell’amministratore facendo clic su **Strumenti - Sicurezza - Gruppi sull’autore**, quindi facendo clic su **amministratori** gruppo. Quindi, aggiungete il gruppo come mostrato di seguito
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
@@ -103,7 +103,7 @@ Per rendere visibili tali posizioni, effettuare le seguenti operazioni.
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Per motivi di sicurezza, è consigliabile rimuovere il nuovo **DEV - Pubblicazione per amministratori AEM** gruppo amministratori su **autore** in modo che il nuovo gruppo sia isolato per la pubblicazione
+1. Per motivi di sicurezza, è consigliabile rimuovere il nuovo **DEV - Pubblicazione per amministratori AEM** gruppo dal gruppo dell&#39;amministratore il **autore** in modo che il nuovo gruppo sia isolato per la pubblicazione
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
@@ -117,11 +117,11 @@ Facendo clic su un nodo, le relative proprietà JCR vengono visualizzate nel riq
 
 ### Visualizza contenuto {#view-content}
 
-Puoi utilizzare il browser del repository per visualizzare il contenuto facendo clic su una risorsa nel riquadro di navigazione. Verrà aperta un’anteprima sul lato destro del browser, sotto una scheda denominata in base alla rispettiva risorsa.
+Puoi utilizzare il browser dell’archivio per visualizzare il contenuto. Fai clic su una risorsa nel riquadro di navigazione per aprire un’anteprima sul lato destro del browser, sotto una scheda denominata dopo la rispettiva risorsa.
 
 ![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
-L’anteprima è attualmente disponibile per i tipi di immagine elencati di seguito:
+L’anteprima è disponibile per i seguenti tipi di immagini:
 
 * apng
 * avif

@@ -2,10 +2,10 @@
 title: Accesso e gestione dei registri
 description: Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 91%
+source-wordcount: '266'
+ht-degree: 69%
 
 ---
 
@@ -18,7 +18,7 @@ Dalla scheda **Ambienti** della pagina **Panoramica** o dalla pagina Dettagli de
 
 ## Download dei registri {#download-logs}
 
-Per scaricare i registri, segui la procedura riportata di seguito.
+Per scaricare i registri, effettua le seguenti operazioni.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
@@ -40,7 +40,7 @@ Per scaricare i registri, segui la procedura riportata di seguito.
 
 ## Registri tramite API {#logs-through-api}
 
-Oltre che dall’interfaccia utente, i registri possono essere scaricati tramite l’API e l’interfaccia della riga di comando.
+Oltre a scaricare i registri tramite l’interfaccia utente, i registri sono disponibili tramite l’API e l’interfaccia della riga di comando.
 
 Per scaricare i file di registro di un ambiente specifico, il comando è simile al seguente.
 
@@ -48,7 +48,7 @@ Per scaricare i file di registro di un ambiente specifico, il comando è simile 
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-È inoltre possibile visualizzare i registri tramite l’interfaccia della riga di comando.
+Inoltre, puoi visualizzare i registri tramite l’interfaccia della riga di comando.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### Risorse aggiuntive {#resources}
 
-Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia della riga di comando Adobe I/O, consulta le seguenti risorse aggiuntive:
+Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia della riga di comando di Adobe Developer, consulta le seguenti risorse aggiuntive:
 
-* [Documentazione API di Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Interfaccia della riga di comando Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [ADOBE DEVELOPER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)

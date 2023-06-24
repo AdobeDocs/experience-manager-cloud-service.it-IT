@@ -2,9 +2,9 @@
 title: Estensione [!DNL Adobe Experience Manager] as a Cloud Service utilizzando Adobe Developer App Builder.
 description: Estensione [!DNL Adobe Experience Manager] as a Cloud Service utilizzando Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Cos’è App Builder per AEM as a Cloud Service {#project-appbuilder}
 
-Il nuovo Adobe Developer App Builder fornisce un framework di estensibilità per uno sviluppatore per estendere facilmente le funzionalità as a Cloud Service dell’AEM.
+Il nuovo Adobe Developer App Builder fornisce un framework di estensibilità per uno sviluppatore per estendere facilmente le funzionalità in AEM as a Cloud Service.
 
 App Builder fornisce un framework unificato di estensibilità di terze parti per l’integrazione e la creazione di esperienze personalizzate che estendono Adobe Experience Manager. Con questo framework di estensibilità completo, basato sull’infrastruttura Adobe, gli sviluppatori possono creare microservizi personalizzati, estendere e integrare Adobe Experience Manager tra le soluzioni Adobe e il resto dello stack IT.
 
@@ -23,7 +23,7 @@ App Builder consente ai clienti di estendere facilmente Adobe Experience Manager
 * Estensibilità dei servizi di base: estende le funzionalità delle applicazioni di base estendendo il comportamento predefinito con funzioni personalizzate e logica di business.
 * Estensibilità dell’esperienza utente: estendere l’esperienza di base per supportare i requisiti aziendali o creare proprietà digitali, vetrine e app di back-office specifiche per il cliente.
 
-App Builder è disponibile per i clienti e i partner aziendali tramite la nostra anteprima per sviluppatori dall’estate 2020. La disponibilità generale (GA) di App Builder è pianificata per dicembre 2021. Accogliamo con favore gli sviluppatori per provare App Builder attraverso il nostro [Programma di prova](https://adobe.ly/appbuilder-trial).
+App Builder è disponibile per i clienti e i partner aziendali tramite Adobe Developer Preview dall’estate 2020. La disponibilità generale (GA) di App Builder è pianificata per dicembre 2021. L’Adobe dà il benvenuto agli sviluppatori per provare App Builder tramite [Programma di prova](https://developer.adobe.com/app-builder/trial/).
 
 >[!NOTE]
 >
@@ -33,32 +33,32 @@ App Builder è disponibile per i clienti e i partner aziendali tramite la nostra
 
 Invece di una soluzione preconfigurata, Adobe Developer App Builder fornisce una piattaforma di sviluppo comune, coerente e standardizzata per estendere le soluzioni Adobe Cloud come AEM, tra cui:
 
-* Console Adobe Developer: per lo sviluppo di estensioni e microservizi personalizzati, consente agli sviluppatori di creare e gestire progetti e al contempo di accedere a tutti gli strumenti e le API necessari per creare plug-in e integrazioni.
-* Strumenti per sviluppatori: strumenti open-source, SDK e librerie per consentire agli sviluppatori di creare facilmente estensioni e integrazioni personalizzate. Utilizza React Spectrum (toolkit dell’interfaccia utente di Adobe) per avere un’unica interfaccia utente comune per tutte le app di Adobe.
-* Servizi: I/O Runtime per l&#39;hosting dell&#39;infrastruttura sulla nostra piattaforma senza server ed Eventi di I/O per le integrazioni basate su eventi. Dell fornisce inoltre il supporto predefinito per l&#39;archiviazione di dati e file.
+* Console Adobe Developer: per lo sviluppo di estensioni e microservizi personalizzati, consente agli sviluppatori di creare e gestire progetti e al tempo stesso di accedere a tutti gli strumenti e le API necessari per creare plug-in e integrazioni.
+* Strumenti per sviluppatori: strumenti open-source, SDK e librerie per consentire agli sviluppatori di creare facilmente estensioni e integrazioni personalizzate. Utilizza React Spectrum (Adobe UI toolkit) per avere un’unica interfaccia utente comune per tutte le app di Adobe.
+* Servizi: I/O Runtime per l&#39;hosting dell&#39;infrastruttura sulla piattaforma Adobe senza server e I/O Events per le integrazioni basate su eventi. Adobe fornisce inoltre supporto predefinito per l’archiviazione di dati e file.
 * Adobe Experience Cloud: gli sviluppatori possono inviare estensioni e integrazioni da pubblicare nella propria organizzazione Experience Cloud. Gli amministratori di sistema possono quindi rivedere, gestire e approvare tali estensioni. Dopo la pubblicazione, le estensioni e gli strumenti personalizzati di App Builder sono disponibili insieme ad altre app Adobe Experience Cloud.
 
 Il diagramma seguente illustra come un’applicazione standard basata su App Builder utilizza queste funzionalità:
 
 ![Architettura](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
-Per ulteriori dettagli sull’architettura di App Builder, consulta [Panoramica dell’architettura](https://www.adobe.io/app-builder/docs/guides/).
+Per ulteriori dettagli sull’architettura di App Builder, consulta [Panoramica dell’architettura](https://developer.adobe.com/app-builder/docs/guides/).
 
 ## Introduzione ad App Builder {#additional-resources}
 
-Per aiutarti a iniziare a utilizzare App Builder, abbiamo creato una serie di documenti per aiutarti a iniziare:
+Adobe di creazione della documentazione introduttiva per iniziare a utilizzare App Builder:
 
-* [Guida introduttiva di App Builder](https://www.adobe.io/app-builder/docs/getting_started/)
+* [Guida introduttiva di App Builder](https://developer.adobe.com/app-builder/docs/getting_started/)
 
 ## Continua l’apprendimento con la documentazione {#appbuilder-documentation}
 
 App Builder fornisce video e documentazione per gli sviluppatori, incluse guide e documentazione di riferimento per aiutarti a iniziare a sviluppare applicazioni personalizzate:
 
-* [Documentazione di App Builder](https://www.adobe.io/app-builder/docs/overview/)
+* [Documentazione di App Builder](https://developer.adobe.com/app-builder/docs/overview/)
 * [Video di App Builder](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## Prova una delle applicazioni di esempio {#appbuilder-codesamples}
 
-Sei pronto a iniziare a sviluppare? Abbiamo un sacco di applicazioni di esempio per aiutarti a passare rapidamente:
+Sei pronto a iniziare a sviluppare? Adobe dispone di numerose applicazioni di esempio per aiutarti a passare rapidamente all’azione:
 
-* [Laboratori di codice di App Builder sul sito web di Adobe Developer](https://www.adobe.io/app-builder/docs/resources/)
+* [Laboratori di codice di App Builder sul sito web di Adobe Developer](https://developer.adobe.com/app-builder/docs/resources/)

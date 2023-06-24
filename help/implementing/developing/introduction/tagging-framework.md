@@ -2,9 +2,9 @@
 title: Framework di assegnazione tag AEM
 description: Assegna tag ai contenuti e utilizza l’infrastruttura di tag AEM per suddividerli in categorie e organizzarli.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1569'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 L’assegnazione tag consente di categorizzare e organizzare i contenuti. I tag possono essere classificati in base a uno spazio dei nomi e a una tassonomia. Per informazioni dettagliate sull’utilizzo dei tag:
 
 * Consulta [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md) per informazioni sull’assegnazione tag ai contenuti come autore di contenuti.
-* Per informazioni sulla creazione e la gestione dei tag, nonché sulla modalità di applicazione dei tag di contenuto, consulta Gestione dei tag .
+* Per informazioni sulla creazione e la gestione dei tag e sulla modalità di applicazione dei tag di contenuto, consulta Amministrazione dei tag .
 
 Questo articolo si concentra sul framework sottostante che supporta l’assegnazione tag in AEM e su come utilizzarlo come sviluppatore.
 
@@ -34,7 +34,7 @@ La dichiarazione di un tag viene acquisita nell’archivio in un nodo di tipo `c
 * I tag sono identificati da un `TagID`.
 * Un tag include metadati facoltativi, ad esempio un titolo, titoli localizzati e una descrizione. Il titolo deve essere visualizzato nelle interfacce utente anziché nel `TagID`, se presente.
 
-Il framework dei tag consente inoltre di limitare l’uso di specifici tag predefiniti da parte di autori e visitatori del sito.
+Il framework dei tag limita inoltre l’utilizzo da parte di autori e visitatori del sito di soli tag specifici e predefiniti.
 
 ### Caratteristiche tag {#tag-characteristics}
 
@@ -68,13 +68,13 @@ Gli spazi dei nomi consentono di raggruppare gli elementi. Il caso d’uso più 
 
 Lo spazio dei nomi del tag è il primo livello della sottostruttura della tassonomia, che è il nodo immediatamente sotto il [nodo principale della tassonomia.](#taxonomy-root-node) Uno spazio dei nomi è un nodo di tipo `cq:Tag` il cui elemento padre non è un `cq:Tag` tipo di nodo.
 
-Tutti i tag hanno uno spazio dei nomi. Se non viene specificato alcuno spazio dei nomi, il tag viene assegnato allo spazio dei nomi predefinito, che è `TagID` `default`, ovvero `/content/cq:tags/default`.  Il titolo predefinito è `Standard Tags`in tali casi.
+Tutti i tag hanno uno spazio dei nomi. Se non viene specificato alcuno spazio dei nomi, il tag viene assegnato allo spazio dei nomi predefinito, che è `TagID` `default`, ovvero `/content/cq:tags/default`. Il titolo predefinito è `Standard Tags`in tali casi.
 
 ### Tag contenitore {#container-tags}
 
 Un tag contenitore è un nodo di tipo `cq:Tag` contenente qualsiasi numero e tipo di nodi secondari, che consente di migliorare il modello di tag con metadati personalizzati.
 
-Inoltre, i tag contenitore (o super-tag) in una tassonomia fungono da sommatoria secondaria di tutti i tag secondari: ad esempio il contenuto taggato con `fruit/apple` è considerato come contrassegnato con `fruit` anche, ovvero la ricerca di contenuti con cui sono appena stati taggati `fruit` troverebbe anche il contenuto taggato con `fruit/apple`.
+Inoltre, i tag contenitore (o super-tag) in una tassonomia fungono da sommatoria di tutti i tag secondari. Ad esempio, contenuto con tag `fruit/apple` è considerato taggato con `fruit`Anche. In altre parole, la ricerca di contenuto con tag `fruit` troverebbe anche il contenuto taggato con `fruit/apple`.
 
 ### Risoluzione di TagID {#resolving-tagids}
 
@@ -98,16 +98,16 @@ Nella tabella seguente sono riportati alcuni esempi `TagID`s, i relativi element
 
 Quando il tag include la stringa opzionale del titolo `jcr:title`, è possibile localizzare il titolo da visualizzare aggiungendo la proprietà `jcr:title.<locale>`.
 
-Per ulteriori dettagli, consulta:
+Per ulteriori dettagli, vedi:
 
-* [Tag in lingue diverse,](tagging-applications.md#tags-in-different-languages) che descrive l’utilizzo delle API come sviluppatore
-* Gestione dei tag in lingue diverse, che descrive l’utilizzo della console Assegnazione tag come amministratore
+* [Tag in lingue diverse](tagging-applications.md#tags-in-different-languages) descrivere l’utilizzo delle API come sviluppatore
+* Gestione dei tag in lingue diverse, per descrivere l’utilizzo della console Assegnazione tag come amministratore
 
 ### Controllo accesso {#access-control}
 
 I tag esistono come nodi nell’archivio sotto [nodo principale della tassonomia.](#taxonomy-root-node) È possibile consentire o negare agli autori e ai visitatori del sito la creazione di tag in un determinato spazio dei nomi impostando ACL appropriati nell’archivio.
 
-Se si negano le autorizzazioni di lettura per alcuni tag o spazi dei nomi, sarà possibile applicare i tag a un contenuto specifico.
+Il rifiuto delle autorizzazioni di lettura per alcuni tag o spazi dei nomi controlla la possibilità di applicare tag a contenuto specifico.
 
 Una pratica tipica include:
 
@@ -117,7 +117,7 @@ Una pratica tipica include:
 
 ## Contenuto assegnabile : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
-Per consentire agli sviluppatori di applicazioni di associare i tag a un tipo di contenuto, la registrazione del nodo ([CND](https://jackrabbit.apache.org/node-type-notation.html)) deve includere `cq:Taggable` mixin o `cq:OwnerTaggable` mixin.
+Per consentire agli sviluppatori di applicazioni di associare i tag a un tipo di contenuto, la registrazione del nodo ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) deve includere `cq:Taggable` mixin o `cq:OwnerTaggable` mixin.
 
 Il `cq:OwnerTaggable` mixin, che eredita da `cq:Taggable`, ha lo scopo di indicare che il contenuto può essere classificato dal proprietario/autore. Nel AEM, è solo un attributo del `cq:PageContent` nodo. Il `cq:OwnerTaggable` Il mixin non è richiesto dal framework di assegnazione tag.
 
@@ -130,7 +130,7 @@ Il `cq:OwnerTaggable` mixin, che eredita da `cq:Taggable`, ha lo scopo di indica
 
 ### Notazione del tipo di nodo (CND) {#node-type-notation-cnd}
 
-Le definizioni dei tipi di nodo esistono nell’archivio come file CND. La notazione CND è definita come parte della [Documentazione JCR.](https://jackrabbit.apache.org/node-type-notation.html).
+Le definizioni dei tipi di nodo esistono nell’archivio come file CND. La notazione CND è definita come parte della [Documentazione JCR](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Le definizioni essenziali per i tipi di nodo inclusi nell’AEM sono le seguenti:
 
@@ -166,10 +166,11 @@ Quando il tag A viene spostato o unito al tag B in `/content/cq:tags`:
 * Il tag A non viene eliminato e riceve un `cq:movedTo` proprietà.
    * `cq:movedTo` punta al tag B.
    * Questa proprietà indica che il tag A è stato spostato o unito al tag B.
-   * Lo spostamento del tag B aggiornerà di conseguenza questa proprietà.
-   * Il tag A è quindi nascosto ed è mantenuto solo nell’archivio per risolvere gli ID tag nei nodi di contenuto che puntano al tag A.
+   * Lo spostamento del tag B aggiorna di conseguenza questa proprietà.
+   * Il tag A è quindi nascosto ed è mantenuto solo nell’archivio in modo da poter risolvere gli ID tag nei nodi di contenuto che puntano al tag A.
    * Il garbage collector dei tag rimuove tag come tag A una volta che nessun altro nodo di contenuto vi punta.
    * Un valore speciale per `cq:movedTo` la proprietà è `nirvana`, applicato quando il tag viene eliminato ma non può essere rimosso dall’archivio perché sono presenti tag secondari con `cq:movedTo` questo deve essere mantenuto.
+
      >[!NOTE]
      >
      >Il `cq:movedTo` viene aggiunta al tag spostato o unito solo se viene soddisfatta una delle seguenti condizioni:
@@ -177,14 +178,15 @@ Quando il tag A viene spostato o unito al tag B in `/content/cq:tags`:
      > 1. Il tag viene utilizzato nel contenuto (ovvero ha un riferimento). OPPURE
      > 1. Il tag include elementi figlio già spostati.
      >
-* Il tag B viene creato (in caso di spostamento) e riceve un `cq:backlinks` proprietà.
-   * `cq:backlinks` mantiene i riferimenti nella direzione opposta, ovvero mantiene un elenco di tutti i tag che sono stati spostati o uniti con il tag B.
-   * Questo è principalmente necessario per mantenere `cq:movedTo` proprietà aggiornate quando il tag B viene anche spostato/unito/eliminato o quando il tag B viene attivato, nel qual caso devono essere attivati anche tutti i relativi tag di backlink.
+* Il tag B viene creato (in caso di spostamento) e riceve `cq:backlinks` proprietà.
+   * `cq:backlinks` mantiene i riferimenti nella direzione opposta. In altre parole, mantiene un elenco di tutti i tag che sono stati spostati o uniti con il tag B.
+   * Questa funzionalità è richiesta principalmente per mantenere `cq:movedTo` proprietà aggiornate quando il tag B viene anche spostato/unito/eliminato o quando il tag B viene attivato, nel qual caso devono essere attivati anche tutti i relativi tag di backlink.
+
      >[!NOTE]
      >
      >Il `cq:backlinks` viene aggiunta al tag spostato o unito solo se viene soddisfatta una delle seguenti condizioni:
      >
-     > 1. Il tag viene utilizzato nel contenuto (ovvero ha un riferimento). OPPURE
+     > 1. Il tag viene utilizzato nel contenuto (ovvero ha un riferimento), oppure
      > 1. Il tag include elementi figlio già spostati.
 
 Lettura di un `cq:tags` La proprietà di un nodo di contenuto prevede la seguente risoluzione:
@@ -194,6 +196,6 @@ Lettura di un `cq:tags` La proprietà di un nodo di contenuto prevede la seguent
    * Questo passaggio viene ripetuto purché il tag seguito abbia `cq:movedTo` proprietà.
 1. Se il tag seguito non ha un `cq:movedTo` , il tag viene letto.
 
-Per pubblicare la modifica quando un tag è stato spostato o unito, la `cq:Tag` e tutti i relativi backlink devono essere replicati. Questa operazione viene eseguita automaticamente quando il tag viene attivato nella console di amministrazione dei tag.
+Per pubblicare la modifica quando un tag è stato spostato o unito, la `cq:Tag` e tutti i relativi backlink devono essere replicati. Questa replica viene eseguita automaticamente quando il tag viene attivato nella console di amministrazione dei tag.
 
-Aggiornamenti successivi al `cq:tags` pulisci automaticamente i riferimenti precedenti. Questo viene attivato perché la risoluzione di un tag spostato tramite l’API restituisce il tag di destinazione, fornendo così l’ID del tag di destinazione.
+Aggiornamenti successivi al `cq:tags` pulisci automaticamente i riferimenti precedenti. La pulizia viene attivata perché la risoluzione di un tag spostato tramite l’API restituisce il tag di destinazione, fornendo così l’ID del tag di destinazione.
