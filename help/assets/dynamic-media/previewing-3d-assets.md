@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 10%
+source-wordcount: '631'
+ht-degree: 6%
 
 ---
 
@@ -19,15 +19,27 @@ ht-degree: 10%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
-Experience Manager supporta il caricamento, la consegna e l’anteprima interattiva di risorse 3D come parte del processo di authoring.
+Experience Manager Assets supporta l’acquisizione, la gestione, l’anteprima e la distribuzione di risorse 3D.
 
-Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli della risorsa in Experience Manager. Il visualizzatore include, tra le altre, una raccolta di controlli interattivi della videocamera che consentono di eseguire zoom, rotazione e scorrimento della risorsa 3D.
+Puoi visualizzare in anteprima le risorse 3D con le rappresentazioni delle miniature generate automaticamente o con il visualizzatore 3D interattivo. Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli della risorsa in Experience Manager. Il visualizzatore include, tra le altre cose, una raccolta di controlli interattivi della fotocamera che consentono di ruotare, ingrandire ed eseguire una panoramica intorno alla scena 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formati supportati per l’anteprima 3D in Experience Manager{#supported-3d-previewing-assets}
+## Formati supportati per l’anteprima delle miniature nell’Experience Manager{#supported-thumbnail-previewing-assets}
 
-L&#39;anteprima 3D interattiva in Experience Manager supporta i seguenti formati di file:
+L&#39;Experience Manager genera le miniature per i seguenti formati di file per impostazione predefinita:
+
+| Estensione file 3D | Formato file | Tipo MIME | Note |
+|---|---|---|---|
+| GLB | Trasmissione GL binaria | model/gltf-binary |  |
+| FBX | Autodesk FBX | application/octet-stream |  |
+| OBJ | File oggetto WaveFront 3D | application/x-tgif |  |
+| 3DS | Modello 3D Studio | application/x-3ds |  |
+| USDz | Descrizione scena universale | model/vnd.usdz+zip |  |
+
+## Formati supportati per l’anteprima 3D interattiva in Experience Manager{#supported-3d-previewing-assets}
+
+L&#39;Experience Manager supporta l&#39;anteprima 3D interattiva per i seguenti formati di file in modalità nativa:
 
 | Estensione file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
@@ -35,8 +47,7 @@ L&#39;anteprima 3D interattiva in Experience Manager supporta i seguenti formati
 | GLTF | Formato di trasmissione GL | model/gltf+json | Consulta la **Nota** di seguito. |
 | OBJ | File oggetto WaveFront 3D | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | Supporto solo per l’acquisizione; anteprima non disponibile. |
-| USDZ | Universal Scene Description Archivio zip | model/vnd.usdz+zip | Supporto solo per l’acquisizione; anteprima non disponibile. |
+
 
 >[!NOTE]
 >
@@ -80,7 +91,7 @@ Consulta [Formati supportati per l’anteprima 3D](#supported-3d-previewing-asse
    | **Sposta la fotocamera** | Spostare la vista verso sinistra, destra, l&#39;alto o il basso. | Fai clic con il pulsante destro del mouse e trascina con il mouse. | Premete due dita + trascinate. |
    | **Zoom fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Rotellina di scorrimento. | Pizzico a due dita. |
    | **Ricentro fotocamera** | Centra di nuovo la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic su. | Tocca due volte. |
-   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |  |  |
-   | **Modalità a tutto schermo** | Per accedere alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
+   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |   |   |
+   | **Modalità a tutto schermo** | Per accedere alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |   |   |
 
 1. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Chiudi]**.
