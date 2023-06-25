@@ -2,10 +2,10 @@
 title: Percorso AEM Reference Demos Add-On
 description: Inizia qui per un percorso guidato su come aggiungere facilmente il componente aggiuntivo Demos di riferimento di AEM a un ambiente sandbox con una configurazione di AEM minima ed essere in grado di testare le potenti funzionalità di AEM con esempi ricchi basati sulle best practice.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 91%
+source-wordcount: '853'
+ht-degree: 83%
 
 ---
 
@@ -19,7 +19,7 @@ AEM è un potente set di strumenti per la creazione e la gestione di esperienze 
 
 Senza contenuti e configurazioni di esempio, può essere difficile testare le potenti funzionalità di AEM per clienti nuovi ed esperti. AEM Reference Demos Add-On consente di creare facilmente ambienti sandbox precaricati con contenuti di esempio e preconfigurati utilizzando le linee guida più recenti sulle best practice per Adobe. Con il componente aggiuntivo è possibile valutare facilmente le funzionalità di AEM Sites e AEM Screens nel contesto e senza quasi alcuna configurazione.
 
-* **Se sei un nuovo utente di AEM**, seguire questo percorso è il modo più semplice per iniziare a utilizzare contenuti reali in un ambiente AEM effettivo e perfettamente funzionante, per consentirti di testare e scoprire le funzionalità di AEM.
+* **Se non ha mai usato AEM**, seguire questo percorso è il modo più semplice per iniziare a utilizzare contenuti reali in un ambiente AEM effettivo e perfettamente funzionante, per consentirti di testare le funzionalità e conoscere le funzionalità dell’AEM.
 * **Se sei un utente AEM esperto**, seguire questo percorso è il modo più semplice per impostare un ambiente demo separato a scopo di test oppure per creare un POC utilizzando nuove funzionalità.
 
 Indipendentemente dalle tue esigenze specifiche, se hai bisogno di un ambiente AEM ricco di contenuti di esempio realistici e perfettamente funzionanti, impostare una sandbox con AEM Reference Demo Add-On è quello che fa per te. Continua a leggere!

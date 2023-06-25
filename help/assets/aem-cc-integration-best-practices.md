@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3496'
 ht-degree: 16%
 
 ---
@@ -208,7 +208,7 @@ Adobe Asset Link offre un buon supporto per questo caso d’uso:
 * Inoltre, poiché la risorsa si trova nell’account di Creative Cloud, è disponibile anche su altri dispositivi di cui l’utente potrebbe disporre (ad esempio, può essere aperta o modificata in un’app mobile Creative Cloud dedicata) e può essere condivisa con altri utenti Creative Cloud a scopo di collaborazione.
 * Una volta apportate le modifiche, l&#39;utente creativo può eseguire un&#39;operazione di check-in su tale file nell&#39;applicazione Creative Cloud, con un commento facoltativo. La risorsa corrispondente in Experience Manager viene sottoposta a controllo delle versioni e aggiornata con il nuovo binario. Gli utenti di Experience Manager, come gli addetti al marketing o gli utenti LOB, hanno accesso alle principali modifiche alle risorse o ai milestone tramite l’interfaccia utente della timeline delle risorse di Experience Manager.
 
-L’app desktop Experience Manager fornisce una condivisione di rete per le risorse aperte nell’app nativa. Per impostazione predefinita, tutte le modifiche apportate localmente vengono caricate in Experience Manager automaticamente dopo un breve periodo di tempo. Con una tale configurazione, i salvataggi frequenti durante la fase di work-in-progress verrebbero tutti caricati in Experience Manager e ne verserebbero le versioni, creando molto traffico di rete e potenziali problemi di scalabilità - per non parlare delle versioni non necessarie in Experience Manager.
+L’app desktop Experience Manager fornisce una condivisione di rete per le risorse aperte nell’app nativa. Per impostazione predefinita, tutte le modifiche apportate localmente vengono caricate in Experience Manager automaticamente dopo un breve periodo di tempo. Con una tale configurazione, i salvataggi frequenti durante la fase di work-in-progress verrebbero tutti caricati in Experience Manager e ne verserebbero le versioni, creando una grande quantità di traffico di rete e potenziali problemi di scalabilità - per non parlare delle versioni non necessarie in Experience Manager.
 
 L’approccio consigliato in questo caso è quello di utilizzare un’opzione nell’app desktop Experience Manager per disattivare gli aggiornamenti automatici e caricare manualmente le modifiche apportate alle risorse in Experience Manager, sfruttando l’azione carica modifiche nell’interfaccia utente Stato risorse dell’app.
 

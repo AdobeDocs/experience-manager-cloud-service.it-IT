@@ -2,10 +2,10 @@
 title: Abilitare AEM Screens per il tuo sito demo
 description: Scopri i passaggi per abilitare l’esperienza completa di AEM Screens as a Cloud Service sul tuo sito demo.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2696'
-ht-degree: 97%
+source-wordcount: '2694'
+ht-degree: 96%
 
 ---
 
@@ -63,7 +63,7 @@ La caffetteria We.Cafe è composta da tre negozi che si trovano in tre sedi negl
 >
 >Nella versione corrente della demo il chiosco non è incluso. Sarà incluso in una versione futura.
 
-Si suppone che la sede di New York sia in un negozio più piccolo che non ha molto spazio a disposizione, e come tale:
+Si presume che la sede di New York sia in un negozio più piccolo che non ha molto spazio, e come tale:
 
 * La bacheca del menu ha solo due pannelli verticali invece di tre come per San Francisco e San Jose
 * L’espositore all’ingresso è posizionato verticalmente anziché orizzontalmente

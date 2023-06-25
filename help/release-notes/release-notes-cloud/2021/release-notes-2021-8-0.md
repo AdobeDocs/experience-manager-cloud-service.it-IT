@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.8.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.8.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 33%
+source-wordcount: '1028'
+ht-degree: 34%
 
 ---
 
@@ -36,24 +36,24 @@ Dai un&#39;occhiata al [Panoramica sulla versione di agosto 2021](https://video.
 
 * Quando si condividono risorse digitali come collegamento, gli utenti possono copiare immediatamente l’URL negli Appunti. Questo miglioramento consente di condividere le risorse in modo più rapido e conveniente. Questa funzionalità consente una condivisione delle risorse più rapida e conveniente.
 
-   ![Opzione Copia URL quando si condivide una risorsa come collegamento](/help/assets/assets/link-share-copy-URL-option.png)
-   *Figura: Quando condividi una risorsa come collegamento, ora puoi copiare l’URL per condividerlo separatamente.*
+  ![Opzione Copia URL quando si condivide una risorsa come collegamento](/help/assets/assets/link-share-copy-URL-option.png)
+  *Figura: Quando condividi una risorsa come collegamento, ora puoi copiare l’URL per condividerlo separatamente.*
 
 * Quando carichi i file TXT, i microservizi per le risorse generano automaticamente una miniatura. La miniatura PNG è una rappresentazione del file TXT che aiuta gli utenti a identificare il contenuto o i file in una certa misura, senza aprire i file. Questa funzionalità non richiede alcuna configurazione e funziona per impostazione predefinita.
 
-   ![Una rappresentazione di un file TXT viene generata automaticamente da [!DNL Assets] in formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
-   *Figura: Viene generata automaticamente una rappresentazione di un file TXT per aiutarti a identificare il file senza aprirlo.*
+  ![Una rappresentazione di un file TXT viene generata automaticamente da [!DNL Assets] in formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  *Figura: Viene generata automaticamente una rappresentazione di un file TXT per aiutarti a identificare il file senza aprirlo.*
 
 ### Nuova funzione in [!DNL Assets] canale prerelease {#assets-prerelease-features}
 
 * Ora gli utenti possono ordinare le risorse visualizzate nei risultati di ricerca nelle viste Colonna e Scheda. L’ordinamento funziona sulle colonne Nome, Creato, Modificato o Nessuno.
 
-   ![Ordinare i risultati della ricerca in [!DNL Assets] nelle viste Colonna e Scheda](/help/assets/assets/sort-searched-assets.png)
-   *Figura: Ordinare i risultati della ricerca in [!DNL Assets] nelle viste Colonna e Scheda.*
+  ![Ordinare i risultati della ricerca in [!DNL Assets] nelle viste Colonna e Scheda](/help/assets/assets/sort-searched-assets.png)
+  *Figura: Ordinare i risultati della ricerca in [!DNL Assets] nelle viste Colonna e Scheda.*
 
 ### Bug corretti in [!DNL Assets] {#assets-bugs-fixed}
 
-* Quando un membro del gruppo di collaboratori passa al [!DNL Assets] Console, un altro `POST` viene generata una richiesta per provare a creare una raccolta. Questa richiesta non è necessaria, ha esito negativo a causa di problemi di autorizzazioni e crea molti errori nei registri. (CQ-4328856)
+* Quando un membro del gruppo di collaboratori passa al [!DNL Assets] Console, un altro `POST` viene generata una richiesta per creare una raccolta. Questa richiesta non è necessaria; non riesce a causa di problemi di autorizzazioni e crea molti errori nei registri. (CQ-4328856)
 * Quando gli utenti visualizzano una risorsa e selezionano [!UICONTROL Timeline] dal menu a comparsa nel pannello a sinistra, viene visualizzato un errore. Nei registri vengono registrati molti avvisi a causa di una query non valida. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -80,7 +80,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di agosto 2021](https://video.
 
 * Nuova interfaccia utente per il selettore delle categorie per migliorare l’esperienza utente, l’efficienza e il supporto per cataloghi di prodotti complessi
 
-   ![Nuovo selettore categorie](/help/assets/CIF/category-picker.png)
+  ![Nuovo selettore categorie](/help/assets/CIF/category-picker.png)
 
 * Migliore supporto A11Y per i componenti core CIF
 

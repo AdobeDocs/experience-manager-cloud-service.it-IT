@@ -2,7 +2,7 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2591'
 ht-degree: 5%
@@ -101,7 +101,7 @@ Negli ambienti Cloud, gli sviluppatori possono scaricare i registri tramite Clou
 
 **Impostazione del livello di registro**
 
-Per modificare i livelli di registro per gli ambienti Cloud, è necessario modificare la configurazione OSGI Sling Logging, seguita da una ridistribuzione completa. Poiché questa operazione non è istantanea, presta attenzione quando abiliti registri dettagliati in ambienti di produzione che ricevono molto traffico. In futuro, è possibile che esistano meccanismi per cambiare più rapidamente il livello di registro.
+Per modificare i livelli di registro per gli ambienti Cloud, è necessario modificare la configurazione OSGI Sling Logging, seguita da una ridistribuzione completa. Poiché non è istantaneo, presta attenzione quando abiliti registri dettagliati in ambienti di produzione che ricevono molto traffico. In futuro, è possibile che esistano meccanismi per modificare più rapidamente il livello del registro.
 
 >[!NOTE]
 >

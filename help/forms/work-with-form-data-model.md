@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4121'
+source-wordcount: '4120'
 ht-degree: 0%
 
 ---
@@ -195,10 +195,9 @@ Utilizza l’attributo request per recuperare le proprietà associate dall’ori
    >[!NOTE]
    >
    > * Se utilizzi un modello statico, sovrapponi head.jsp in:
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Se utilizzi un modello modificabile, sovrapponi aftemplatedpage.jsp in:
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. Imposta [!DNL paramMap] per l’attributo di richiesta. Ad esempio, includi il seguente codice nel file .jsp nella cartella delle app:
 
@@ -292,7 +291,8 @@ Per modificare le proprietà:
    * **[!UICONTROL Proprietà]**: specifica il tipo, il sottotipo e il formato per la proprietà. È inoltre possibile specificare se la proprietà selezionata è la chiave primaria per l&#39;oggetto modello dati.
    * **[!UICONTROL Servizio]**: specifica l’oggetto modello di input, il tipo di output e gli argomenti per il servizio. Per un servizio Get, è possibile specificare se deve restituire un array.
 
-      ![edit-properties-service](assets/edit-properties-service.png)
+     ![edit-properties-service](assets/edit-properties-service.png)
+
    Finestra di dialogo Modifica proprietà per un servizio di recupero
 
 1. Tocca **[!UICONTROL Fine]** per salvare le proprietà e quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
@@ -419,7 +419,7 @@ Il flag può essere impostato su uno qualsiasi dei seguenti valori:
 
 * **COMPLETO**: FDM esegue la convalida in base a tutti i vincoli
 * **DISATTIVATO**: nessuna convalida
-* **BASE**: FDM esegue la convalida sulla base dei vincoli &quot;obbligatorio&quot; e &quot;nullable&quot;
+* **BASE**: FDM esegue la convalida in base ai vincoli &quot;required&quot; e &quot;nullable&quot;
 
 Se non viene impostato alcun valore per `ValidationOptions`bandiera, **BASE** la convalida viene eseguita sui dati di input.
 

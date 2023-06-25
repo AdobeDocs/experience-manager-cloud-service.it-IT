@@ -2,10 +2,10 @@
 title: Lo strumento Copia contenuto
 description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai propri ambienti di produzione as a Cloud Service per l’AEM in ambienti più bassi a scopo di test.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 56%
+source-wordcount: '1221'
+ht-degree: 55%
 
 ---
 
@@ -64,7 +64,7 @@ Prima di poter copiare un contenuto, è necessario definire un set di contenuti.
    1. Immetti il percorso nel campo **Aggiungi percorso di inclusione**.
    1. Tocca o fai clic sul pulsante **Aggiungi percorso** per aggiungere il percorso al set di contenuti.
    1. Se necessario, tocca o fai clic di nuovo sul pulsante **Aggiungi percorso**.
-      * Sono consentiti fino a cinquanta percorsi.
+      * Sono consentiti fino a 50 percorsi.
 
    ![Aggiungi percorsi al set di contenuti](assets/add-content-set-paths.png)
 
@@ -183,7 +183,7 @@ Lo strumento Copia contenuto presenta le seguenti limitazioni.
 * Il contenuto può essere copiato solo da e verso i servizi di authoring.
 * Non è possibile copiare il contenuto tra più programmi.
 * Non è possibile eseguire operazioni simultanee di copia del contenuto nello stesso ambiente.
-* È possibile specificare fino a cinquanta percorsi per set di contenuti. Non ci sono limitazioni per i percorsi esclusi.
+* È possibile specificare fino a 50 percorsi per set di contenuti. Non ci sono limitazioni per i percorsi esclusi.
 * Lo strumento di copia del contenuto non deve essere utilizzato come strumento di duplicazione o mirroring perché non può tenere traccia del contenuto spostato o eliminato nell’origine.
 * Lo strumento di copia del contenuto non dispone di funzionalità di controllo delle versioni e non è in grado di rilevare automaticamente il contenuto modificato o appena creato nell&#39;ambiente di origine di un set di contenuti dall&#39;ultima operazione di copia del contenuto.
    * Se desideri aggiornare l’ambiente di destinazione con le modifiche apportate al contenuto solo dall’ultima operazione di copia del contenuto, devi creare un set di contenuti e specificare i percorsi nell’istanza di origine in cui sono state apportate le modifiche dall’ultima operazione di copia del contenuto.

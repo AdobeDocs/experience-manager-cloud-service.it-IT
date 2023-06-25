@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2933'
 ht-degree: 4%
 
 ---
@@ -75,7 +75,7 @@ Per creare un profilo di elaborazione standard, effettuare le seguenti operazion
 
 1. Accesso degli amministratori **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili elaborazione]**. Fai clic su **[!UICONTROL Crea]**.
 1. Specifica un nome che ti aiuti a identificare in modo univoco il profilo quando applichi a una cartella.
-1. Per generare rappresentazioni FPO, nella **[!UICONTROL Immagine]** , abilita **[!UICONTROL Crea rappresentazione FPO]**. Input a **[!UICONTROL Qualità]** tra 1 e 100.
+1. Per generare rappresentazioni FPO, nella **[!UICONTROL Immagine]** , abilita **[!UICONTROL Crea rappresentazione FPO]**. Input a **[!UICONTROL Qualità]** valore da 1 a 100.
 1. Per generare altre rappresentazioni, fai clic su **[!UICONTROL Aggiungi nuovo]** e fornisci le seguenti informazioni:
 
    * Nome file di ciascuna rappresentazione.
@@ -101,7 +101,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Profilo personalizzato e casi d’uso {#custom-config}
 
-Il [!DNL Asset Compute Service] supporta diversi casi d’uso, ad esempio elaborazione predefinita, elaborazione di formati specifici degli Adobi come i file Photoshop e implementazione di un’elaborazione personalizzata o specifica per l’organizzazione. La personalizzazione del flusso di lavoro Risorsa di aggiornamento DAM richiesta in passato viene gestita automaticamente o tramite la configurazione dei profili di elaborazione. Se queste opzioni di elaborazione non soddisfano le esigenze aziendali, Adobe consiglia di sviluppare e utilizzare [!DNL Asset Compute Service] per estendere le funzionalità predefinite. Per una panoramica, vedi [comprendere l’estensibilità e quando utilizzarla](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
+Il [!DNL Asset Compute Service] supporta diversi casi d’uso, ad esempio elaborazione predefinita, elaborazione di formati specifici degli Adobi come i file Photoshop e implementazione di un’elaborazione personalizzata o specifica per l’organizzazione. La personalizzazione del flusso di lavoro Risorsa di aggiornamento DAM richiesta in passato viene gestita automaticamente o tramite l’elaborazione della configurazione dei profili. Se queste opzioni di elaborazione non soddisfano le esigenze aziendali, Adobe consiglia di sviluppare e utilizzare [!DNL Asset Compute Service] per estendere le funzionalità predefinite. Per una panoramica, vedi [comprendere l’estensibilità e quando utilizzarla](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ Segui i passaggi descritti in [applicare un modello di flusso di lavoro a una ca
 
 ## Best practice e limitazioni {#best-practices-limitations-tips}
 
-* Durante la progettazione dei flussi di lavoro, considera le tue esigenze per tutti i tipi di rendering. Se non prevedi la necessità di una rappresentazione in futuro, rimuovi il relativo passaggio di creazione dal flusso di lavoro. Non è possibile eliminare le rappresentazioni in blocco in un secondo momento. Le rappresentazioni indesiderate possono occupare molto spazio di archiviazione dopo un uso prolungato di [!DNL Experience Manager]. Per le singole risorse, puoi rimuovere manualmente le rappresentazioni dall’interfaccia utente. Per più risorse, puoi personalizzare [!DNL Experience Manager] per eliminare rappresentazioni specifiche o eliminare le risorse e caricarle nuovamente.
+* Durante la progettazione dei flussi di lavoro, considera le tue esigenze per tutti i tipi di rendering. Se non prevedi la necessità di una rappresentazione in futuro, rimuovi il relativo passaggio di creazione dal flusso di lavoro. Non è possibile eliminare le rappresentazioni in blocco in un secondo momento. Le rappresentazioni indesiderate possono occupare grandi quantità di spazio di archiviazione dopo l’uso prolungato di [!DNL Experience Manager]. Per le singole risorse, puoi rimuovere manualmente le rappresentazioni dall’interfaccia utente. Per più risorse, puoi personalizzare [!DNL Experience Manager] per eliminare rappresentazioni specifiche o eliminare le risorse e caricarle nuovamente.
 * Attualmente, il supporto è limitato alla generazione di rappresentazioni. La generazione di una nuova risorsa non è supportata.
 * Attualmente, il limite di dimensione del file per l’estrazione dei metadati è di circa 15 GB. Quando si caricano risorse di grandi dimensioni, a volte l’estrazione dei metadati non riesce.
 

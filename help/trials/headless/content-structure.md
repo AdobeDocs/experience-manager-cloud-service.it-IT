@@ -4,10 +4,10 @@ description: Scopri come utilizzare modelli per frammenti di contenuto AEM per c
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 100%
+source-wordcount: '993'
+ht-degree: 34%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Creare la struttura del contenuto per l’app"
->abstract="Seguendo questa serie di guide interattive imparerai a creare la struttura (nota anche come modello per frammenti di contenuto) che funge da base per tutti i contenuti headless."
+>abstract="Seguendo questa serie di guide interattive, imparerai a creare una struttura (nota come modello per frammenti di contenuto) che funge da struttura fondamentale per i contenuti headless."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Avviare la console del modello"
->abstract="Scopriamo come creare uno schema riutilizzabile, denominato modello per frammenti di contenuto, per il contenuto in Adobe Experience Manager as a Cloud Service. Guarda il video per capire perché questo è un passo importante. <br><br>In questo modulo di apprendimento utilizzeremo un sito di viaggi come nostro esempio e percorreremo la creazione di un modello che rappresenta un viaggio.<br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante e quindi segui questa guida."
+>abstract="Scopriamo come creare uno schema riutilizzabile, denominato modello per frammenti di contenuto, per il contenuto in Adobe Experience Manager as a Cloud Service. Guarda il video per comprendere perché questo passaggio è importante. <br><br>In questo modulo di apprendimento, utilizzi un sito di viaggio come esempio e segui la creazione di un modello che rappresenta un viaggio.<br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante e quindi segui questa guida."
 >additional-url="https://video.tv.adobe.com/v/3413261?captions=ita" text="Video introduttivo sulla struttura dei contenuti"
 
 >[!CONTEXTUALHELP]
@@ -32,73 +32,73 @@ ht-degree: 100%
 
 ## Creare un modello {#create-model}
 
-La console Modelli per frammenti di contenuto si apre in una nuova scheda. Considera la console Modelli per frammenti di contenuto come una libreria di modelli, in cui puoi crearne di nuovi e gestire quelli esistenti.
+La console Modelli per frammenti di contenuto si apre in una nuova scheda. Considera la console dei modelli Frammento di contenuto come una libreria di modelli in cui puoi creare modelli e gestire quelli esistenti.
 
-Per il nostro esempio, creeremo un modello che rappresenta la struttura dati di un viaggio presentato su un sito web di viaggi. In questo modello ci riferiremo a un viaggio come **Avventura**.
+Ad esempio, puoi creare un modello che rappresenta la struttura dati di un viaggio presente in un sito web di viaggi. Un viaggio che utilizza questo modello viene definito **Avventura**.
 
-1. Fai clic sul pulsante **Crea** in alto a destra dello schermo per iniziare a creare un modello di frammento di contenuto.
+1. Nell’angolo superiore destro dello schermo, fai clic su **Crea** per iniziare a creare un modello per frammenti di contenuto.
 
-1. Viene avviata la procedura guidata Crea modello, che ti guida attraverso la creazione del modello. Fornisci le seguenti informazioni obbligatorie.
+1. La procedura guidata Crea modello assiste l&#39;utente durante la creazione del modello. Fornisci le seguenti informazioni obbligatorie.
 
-   * **Titolo modello**: questa è una breve etichetta del modello e in genere ne indica lo scopo. Chiameremo il nostro nuovo modello `Adventure`.
+   * **Titolo modello** - Breve etichetta del modello che in genere indica lo scopo del modello. È possibile chiamare il nuovo modello `Adventure`.
    * **Abilita modello** - Questa opzione è selezionata per impostazione predefinita e deve essere selezionata per poter creare frammenti di contenuto in base a questo modello.
 
-1. Una volta compilati i campi obbligatori, fai clic su **Crea** in alto a sinistra per creare il modello.
+1. Dopo aver compilato i campi obbligatori, fai clic su **Crea** in alto a sinistra per creare il modello.
 
-1. La finestra di dialogo **Completato** conferma che il modello è stato creato. Fai clic su **Apri** nella finestra di dialogo per aprire il nuovo modello di frammento di contenuto nell’editor in una nuova scheda. Quindi passa al passaggio successivo per aggiungere campi di dati al modello.
+1. Il **Completato** conferma la creazione del modello. Clic **Apri** nella finestra di dialogo, in modo da poter aprire il nuovo Modello per frammenti di contenuto nell’editor in una nuova scheda. Quindi procedi al passaggio successivo per aggiungere campi dati al modello.
 
 ![Passaggi due e tre della creazione di un modello di frammento di contenuto](assets/do-not-localize/create-model.png)
 
 ## Utilizzo dell’Editor modelli {#configure-model}
 
-Ora abbiamo un modello chiamato **Avventura**, ma non dispone di dettagli come durata, destinazione, attività, ecc. Prima di poter utilizzare il modello, è necessario definire la struttura dei relativi dati.
+Ora disponi di un modello denominato **Avventura**, ma non contiene dettagli come durata, destinazione e attività. Prima di poter utilizzare il modello, è necessario definire la struttura dei dati.
 
 Nell’editor modelli di frammento di contenuto è possibile configurare i tipi di dati e le proprietà che definiscono il contenuto del modello.
 
 >[!TIP]
 >
->È importante seguire gli schemi di denominazione nelle istruzioni seguenti, poiché questi nomi specifici verranno menzionati nei moduli successivi.
+>È importante seguire gli schemi di denominazione nelle istruzioni seguenti perché a questi nomi specifici si fa riferimento nei moduli successivi.
 
 1. Trascina un campo **Testo su riga singola** dal pannello **Tipi di dati** a destra dell’editor e rilascialo sul modello per frammenti di contenuto.
 
-1. Una volta inserito un tipo di dati, la colonna **Tipi di dati** viene automaticamente modificata nella scheda **Proprietà**, che ti consente di definire i dettagli del tipo di dati appena inserito. Per questo primo campo, vogliamo memorizzare il titolo del viaggio o dell’avventura. Immetti le seguenti proprietà.
+1. Una volta inserito un tipo di dati, il **Tipi di dati** viene modificata automaticamente in **Proprietà** , in cui è possibile definire i dettagli del tipo di dati inserito. Per questo primo campo, vuoi memorizzare il titolo del viaggio o dell’avventura. Immetti le seguenti proprietà.
 
-   * **Rendering come:** **campo di testo** - Quando si crea un’avventura, questo campo ne memorizza il titolo.
-   * **Etichetta campo:** `Title` - Questa è l’etichetta che viene visualizzata per questo campo quando si crea una nuova avventura.
+   * **Rendering come:** **Campo di testo** - Quando crei un’avventura, in questo campo viene memorizzato il titolo dell’avventura.
+   * **Etichetta campo:** `Title` : l’etichetta visualizzata per questo campo durante la creazione di un’avventura.
 
-1. Una volta definite le proprietà del campo, puoi tornare alla scheda **Tipi di dati** nel pannello a destra e aggiungi altri campi trascinando e rilasciando.
+1. Dopo aver definito le proprietà del campo, puoi tornare al **Tipi di dati** nel pannello di destra e aggiungi altri campi trascinandoli.
 
-In questo modo, puoi aggiungere al modello tutti i campi necessari per supportare qualsiasi tipo di struttura dati necessaria. I tipi di campi dati variano, ma il processo di aggiunta al modello rimane lo stesso.
+In questo modo, puoi aggiungere al modello tutti i campi necessari per supportare qualsiasi struttura di dati ti serva. I tipi di campi dati variano, ma il processo di aggiunta al modello rimane lo stesso.
 
-Procedi alla sezione successiva per aggiungere i campi necessari per completare e salvare il modello **Avventura**
+Procedi alla sezione successiva per aggiungere i campi necessari per completare e salvare **Avventura** modello
 
 ![Passaggi uno, due e tre per aggiungere campi al modello](assets/do-not-localize/define-model-fields.png)
 
 ## Aggiungi campi al modello {#additional-fields}
 
-Hai già un campo per il titolo dell&#39;avventura. Ora devi aggiungere dei campi per acquisire la descrizione, il prezzo e un’immagine rappresentativa dell’avventura.
+Hai già un campo per il titolo dell&#39;avventura. Ora è necessario aggiungere campi per acquisire la descrizione, il prezzo e un&#39;immagine rappresentativa dell&#39;avventura.
 
 >[!TIP]
 >
 >Il modello di **Avventura** si basa sul sito di esempio WKND per AEM. Puoi [visitare il sito qui](https://wknd.site/us/en/adventures/yosemite-backpacking.html) per visualizzare il contenuto che utilizza il modello **Avventura**.
 
-Segui gli stessi passaggi indicati sopra per aggiungere questi ulteriori campi. L’unica differenza sono le proprietà da impostare.
+Segui gli stessi passaggi indicati sopra per aggiungere questi ulteriori campi. L&#39;unica differenza consiste nelle proprietà che dovete impostare.
 
-1. Aggiungi un campo per memorizzare la descrizione dell’avventura trascinando e rilasciando un **Testo a più righe** e immetti le seguenti proprietà:
+1. Aggiungi un campo in modo da poter memorizzare la descrizione dell’avventura trascinando e rilasciando una **Testo su più righe** e immetti le seguenti proprietà:
 
-   * **Rendering come:** **area di testo** - Quando si crea un’avventura, in questo campo si può memorizzare una breve descrizione del viaggio.
-   * **Etichetta campo:** `Description` - Questa è l’etichetta che viene visualizzata per questo campo quando si crea una nuova avventura.
+   * **Rendering come:** **Area di testo** - Quando crei un’avventura, questo campo memorizza una breve descrizione del viaggio.
+   * **Etichetta campo:** `Description` : l’etichetta visualizzata per questo campo durante la creazione di un’avventura.
 
-1. Aggiungi un campo per memorizzare il prezzo dell’avventura trascinando e rilasciando un **Testo a riga singola** e immetti le seguenti proprietà:
+1. Aggiungi un campo in modo da poter archiviare il prezzo dell’avventura trascinando e rilasciando un **Testo su riga singola** e immetti le seguenti proprietà:
 
-   * **Rendering come:** **campo di testo** - Quando si crea un’avventura, questo campo memorizzerà il prezzo del viaggio.
-   * **Etichetta campo:** `Price` - Questa è l’etichetta che viene visualizzata per questo campo quando si crea una nuova avventura.
+   * **Rendering come:** **Campo di testo** - Quando crei un’avventura, questo campo memorizza il prezzo del viaggio.
+   * **Etichetta campo:** `Price` : l’etichetta visualizzata per questo campo durante la creazione di un’avventura.
 
-1. Aggiungi un campo per memorizzare un’immagine che rappresenta il viaggio. Le immagini in AEM vengono memorizzate come un altro tipo di contenuto denominato **Risorse**. Per creare un campo apposito devi trascinare e rilasciare un campo **Riferimento contenuto** che farà riferimento alla risorsa dell’immagine.
+1. Aggiungi un campo in modo da poter memorizzare un’immagine che rappresenta il viaggio. Le immagini in AEM vengono memorizzate come un altro tipo di contenuto denominato **Risorse**. Per creare un campo per loro, trascina e rilascia una **Riferimento contenuto** campo che fa riferimento alla risorsa dell’immagine.
 
-   * **Rendering come:** **riferimento contenuto** - Quando crei un’avventura, questo campo punta alla risorsa immagine che rappresenta questo viaggio.
-   * **Etichetta campo:** `Image` - Questa è l’etichetta che viene visualizzata per questo campo quando si crea una nuova avventura.
+   * **Rendering come:** **Riferimento contenuto** - Quando crei un’avventura, questo campo punta alla risorsa immagine che rappresenta il viaggio.
+   * **Etichetta campo:** `Image` : l’etichetta visualizzata per questo campo durante la creazione di un’avventura.
 
-1. Dopo aver aggiunto tutti i campi necessari per il modello Frammento di contenuto, fai clic su **Salva** in alto a destra nella finestra.
+1. Dopo aver aggiunto i campi necessari per il modello Frammento di contenuto, in alto a destra della finestra, fai clic su **Salva**.
 
 1. Il modello viene salvato e si torna alla console del modello di frammento di contenuto.

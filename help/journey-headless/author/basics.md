@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 93%
+source-wordcount: '1709'
+ht-degree: 91%
 
 ---
 
@@ -141,7 +141,7 @@ Viene visualizzata una finestra di dialogo in cui puoi inserire i dettagli, quin
 
 #### Utilizzo di percorsi e tag per limitare i modelli per frammenti di contenuto disponibili nella cartella {#tags-paths-for-models-in-folder}
 
-Questa sezione è leggermente più avanzata. Non ne hai bisogno se stai cominciando ora a provare le cose, ma è *molto* utile quando si hanno molti frammenti. Quindi è bene conoscerlo, anche se non lo usi ancora abbastanza.
+Questa sezione è leggermente più avanzata. Non ne hai veramente bisogno se stai solo iniziando e provando le cose, ma è *molto* utile quando hai molti frammenti. Quindi è bene sapere su - anche se non lo si utilizza ancora abbastanza.
 
 L’architect di contenuti avrà creato tutti i modelli di frammento di contenuto necessari per il progetto corrente e forse anche altri progetti. Per semplificare le cose a te stesso e agli altri autori, puoi limitare l’elenco dei modelli disponibili per una cartella specifica.
 

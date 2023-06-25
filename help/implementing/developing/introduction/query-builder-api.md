@@ -2,7 +2,7 @@
 title: API Query Builder
 description: La funzionalità di Asset Share Query Builder è esposta tramite un’API Java e un’API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 0%
@@ -254,7 +254,7 @@ type=cq:Page
 
 ### Ricerca di più valori di proprietà {#search-for-multiple-property-values}
 
-Per evitare gruppi numerosi quando si desidera cercare più valori di una proprietà (`"A" or "B" or "C"`), è possibile fornire più valori al `property` predicato:
+Per evitare gruppi di grandi dimensioni quando si desidera cercare più valori di una proprietà (`"A" or "B" or "C"`), è possibile fornire più valori al `property` predicato:
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 

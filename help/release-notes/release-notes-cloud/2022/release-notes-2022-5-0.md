@@ -2,10 +2,10 @@
 title: Note sulla versione 2022.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 87%
+source-wordcount: '791'
+ht-degree: 75%
 
 ---
 
@@ -45,11 +45,11 @@ Dai un’occhiata al video Panoramica della versione di maggio 2022 per un riepi
 
 * [Imaging avanzato Dynamic Media](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) ora supporta il formato di file AVIF; migliora ulteriormente Google Core Web Vital (Largest Contentful Paint), con AVIF che fornisce una riduzione delle dimensioni del 20% in più rispetto a WebP. In totale, AVIF fornisce una riduzione media delle dimensioni fino al 41% rispetto a JPEG (in alcune immagini anche fino al 76%).
 
-* [!UICONTROL Experience Manager Assets Brand Portal] ora esegue processi automatici ogni dodici ore per eliminare tutte le risorse Brand Portal pubblicate in AEM. Di conseguenza, non è necessario eliminare manualmente le risorse nella cartella Contributo per mantenere la dimensione della cartella al di sotto del limite di soglia. Consulta [Novità di Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it).
+* [!UICONTROL Experience Manager Assets Brand Portal] ora esegue processi automatici ogni 12 ore per eliminare tutte le risorse Brand Portal pubblicate nell’AEM. Di conseguenza, non è necessario eliminare manualmente le risorse nella cartella Contributo per mantenere la dimensione della cartella al di sotto del limite di soglia. Consulta [Novità di Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it).
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Assets] {#prerelease-features-assets}
 
-Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’acquisizione](/help/assets/color-tag-images.md). Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine. È possibile configurare il numero di colori (da 1 a 40) che vengono assegnati come tag in modo da poter cercare, in un secondo momento, le immagini in base a tali colori.
+Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’acquisizione](/help/assets/color-tag-images.md). Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine. È possibile configurare il numero di colori, compresi tra uno e 40, con cui un&#39;immagine viene taggata in modo da poter cercare le immagini in base a tali colori in un secondo momento.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -58,7 +58,7 @@ Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [dist
 
 * **Integrare moduli adattivi con Microsoft® Power Automate**: ora è possibile configurare un modulo adattivo per eseguire un flusso cloud Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record al flusso cloud Power Automate per l’elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche di business sulla base dei dati acquisiti e automatizzare i flussi di lavoro dei clienti.
 
-* **Creazione guidata di un modulo adattivo**: puoi utilizzare la procedura guidata per utenti aziendali per creare moduli adattivi in modo facile e veloce. La procedura guidata fornisce una navigazione rapida a schede per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati e creare un modulo adattivo.
+* **Creazione guidata di un modulo adattivo**: puoi utilizzare la procedura guidata di facile utilizzo per gli utenti aziendali per creare rapidamente Adaptive Forms. La procedura guidata fornisce una navigazione rapida a schede per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati e creare un modulo adattivo.
 
   ![Creazione guidata di un modulo adattivo](/help/release-notes/assets/wizard.png)
 

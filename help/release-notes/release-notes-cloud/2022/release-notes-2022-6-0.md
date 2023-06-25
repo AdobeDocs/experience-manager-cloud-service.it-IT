@@ -2,10 +2,10 @@
 title: Note sulla versione 2022.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 95%
+source-wordcount: '638'
+ht-degree: 87%
 
 ---
 
@@ -39,7 +39,7 @@ Dai un’occhiata al video Panoramica sulla versione di giugno 2022 per un riepi
 
 * Una nuova [interfaccia utente](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) è ora disponibile per gli amministratori e gli autori di contenuti per gestire in modo efficiente (eseguire azioni quali pubblicare, annullare la pubblicazione, copiare, spostare ecc.), cercare/filtrare e creare frammenti di contenuto per casi d’uso headless.
 
-   ![Console Frammenti di contenuto](/help/release-notes/assets/cf-ui.png)
+  ![Console Frammenti di contenuto](/help/release-notes/assets/cf-ui.png)
 
 * Il nuovo [Componente Sommario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=it) funziona non solo con i componenti core, ma con tutti i componenti, riproducendo automaticamente il sommario sulle pagine dei contenuti. Inoltre, poiché è gestito lato server e completamente memorizzato nella cache dal dispatcher, viene anche caricato in modo efficiente.
 
@@ -47,7 +47,7 @@ Dai un’occhiata al video Panoramica sulla versione di giugno 2022 per un riepi
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’acquisizione](/help/assets/color-tag-images.md). Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine. È possibile configurare il numero di colori (da 1 a 40) che vengono assegnati come tag in modo da poter cercare, in un secondo momento, le immagini in base a tali colori.
+Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’acquisizione](/help/assets/color-tag-images.md). Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine. È possibile configurare il numero di colori, compresi tra uno e 40, con cui un&#39;immagine viene taggata in modo da poter cercare le immagini in base a tali colori in un secondo momento.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -57,7 +57,7 @@ Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [dist
 
 * **Creazione guidata di un modulo adattivo**: puoi utilizzare la procedura guidata per utenti aziendali per creare moduli adattivi in modo facile e veloce. La procedura guidata fornisce una navigazione rapida a schede per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati e creare un modulo adattivo.
 
-   ![Creazione guidata di un modulo adattivo](/help/release-notes/assets/wizard.png)
+  ![Creazione guidata di un modulo adattivo](/help/release-notes/assets/wizard.png)
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 
@@ -94,7 +94,7 @@ Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [dist
 
 ### Novità {#what-is-new-foundation}
 
-* Come indicato nelle note sulla versione di maggio (2022.5.0), l’opzione “Aggiungi struttura” nella scheda della schermata di amministrazione dell’agente di replica **Distribuisci** è stata rimossa. I pacchetti con una struttura gerarchica del contenuto devono essere replicati utilizzando il flusso di lavoro [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Pubblica struttura contenuto](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
+* Come indicato nelle note sulla versione di maggio (2022.5.0), l’opzione &quot;Aggiungi struttura&quot; nella schermata di amministrazione dell’agente di replica **Distribuisci** La scheda è stata rimossa. I pacchetti con una struttura gerarchica del contenuto devono essere replicati utilizzando il flusso di lavoro [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Pubblica struttura contenuto](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
 
 ## Cloud Manager {#cloud-manager}
 

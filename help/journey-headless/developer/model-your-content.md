@@ -2,10 +2,10 @@
 title: Come modellare il contenuto
 description: In questa parte del Percorso per sviluppatori di AEM headless, scopri come modellare i contenuti per la distribuzione AEM headless utilizzando la modellazione dei contenuti con modelli di frammenti di contenuto e frammenti di contenuto.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Questo articolo si basa su questi fondamentali in modo da capire come preparare 
 
 *Il mondo là fuori è grande e brutto*.
 
-Forse sì, forse no, ma certamente è grande e ***complicato*** e la modellazione dei dati viene utilizzata per definire una rappresentazione semplificata di una sottosezione molto (molto) piccola, utilizzando le informazioni specifiche necessarie per un determinato scopo.
+Forse, ma forse no. È certamente un ***complicato*** world out there e la modellazione dei dati viene utilizzata per definire una rappresentazione semplificata di una sottosezione molto piccola, utilizzando le informazioni specifiche necessarie per un determinato scopo.
 
 >[!NOTE]
 >

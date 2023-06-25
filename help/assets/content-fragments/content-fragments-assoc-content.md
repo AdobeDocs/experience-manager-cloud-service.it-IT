@@ -2,10 +2,10 @@
 title: Contenuto associato (Risorse - Frammenti di contenuto)
 description: Scopri in che modo la funzione di contenuto associato all’AEM fornisce la connessione in modo che le risorse possano essere facoltativamente utilizzate con il frammento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 56%
+source-wordcount: '230'
+ht-degree: 53%
 
 ---
 
@@ -28,7 +28,7 @@ Per creare l’associazione, devi prima [aggiungere le risorse multimediali a un
 1. A seconda che siano già state associate o meno delle raccolte, seleziona una delle seguenti opzioni:
 
    * **Associa contenuto** - questa è la prima raccolta associata
-   * **Associa raccolta**: raccolte associate già configurate
+   * **Associa raccolta** - raccolte associate già configurate
 
 1. Seleziona la raccolta richiesta.
 

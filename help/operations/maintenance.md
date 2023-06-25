@@ -2,9 +2,9 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Attività di manutenzione in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1107'
 ht-degree: 63%
 
 ---
@@ -126,7 +126,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
     <p><strong>windowStartTime=HH:MM</strong> utilizzando un orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono iniziare l’esecuzione.</p>
     <p><strong>windowEndTime=HH:MM</strong> utilizzando un orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono interrompere l’esecuzione se non sono già state completate.</p>
     <p>Un'attività di manutenzione non può essere eseguita più di una volta in questo intervallo di tempo.</p>
-    <p><strong>windowScheduleWeekdays= Array di 2 valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell’array è il giorno iniziale in cui il processo è pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
+    <p><strong>windowScheduleWeekdays= Array di due valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell’array è il giorno iniziale in cui il processo è pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
     </td>
   </tr>
   <tr>
@@ -138,7 +138,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
     <p><strong>windowStartTime=HH:MM</strong> utilizzando un orologio da 24 ore.  Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono iniziare l’esecuzione.</p>
     <p><strong>windowEndTime=HH:MM</strong> utilizzando un orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono interrompere l’esecuzione se non sono già state completate.</p>
     <p>Un'attività di manutenzione non può essere eseguita più di una volta in questo intervallo di tempo.</p>
-    <p><strong>windowScheduleWeekdays=Array di 2 valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell’array è il giorno iniziale in cui il processo è pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
+    <p><strong>windowScheduleWeekdays=Array di due valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell’array è il giorno iniziale in cui il processo è pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 per pianificare la prima settimana del mese o 1 per pianificare l’ultima settimana del mese. L'assenza di un valore consente di pianificare in modo efficace i processi nel giorno gestito da windowScheduleWeekdays (ogni mese).</p>
     </td>
     </tr>

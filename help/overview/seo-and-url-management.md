@@ -2,10 +2,10 @@
 title: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 description: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '3709'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -286,7 +286,7 @@ Esiste però anche una soluzione più semplice per gestire questo problema:
 
 Finora, hai implementato le mappature unitamente alla logica presente nei tuoi componenti per utilizzarle durante la creazione dell’output degli URL nelle pagine.
 
-Non resta che definire come gestire questi URL abbreviati quando arrivano al Dispatcher ed è qui che entra in gioco `mod_rewrite`. Il principale vantaggio associato all’uso di `mod_rewrite` è che gli URL vengono mappati sulla relativa forma estesa *prima* di essere inviati al modulo del Dispatcher. Questo significa che il Dispatcher richiederà l’URL esteso al server di pubblicazione e lo memorizzerà nella cache come al solito. Di conseguenza, qualsiasi richiesta di eliminazione del Dispatcher proveniente dal server di pubblicazione potrà annullare la validità di questo contenuto.
+Non resta che definire come gestire questi URL abbreviati quando arrivano al Dispatcher ed è qui che entra in gioco `mod_rewrite`. Il massimo vantaggio nell&#39;utilizzo di `mod_rewrite` è che gli URL vengono mappati sulla relativa forma estesa *prima di* vengono inviati al modulo di Dispatcher. Questo significa che il Dispatcher richiederà l’URL esteso al server di pubblicazione e lo memorizzerà nella cache come al solito. Di conseguenza, qualsiasi richiesta di eliminazione del Dispatcher proveniente dal server di pubblicazione potrà annullare la validità di questo contenuto.
 
 Per implementare queste regole, puoi aggiungere elementi `RewriteRule` nell’host virtuale della configurazione di Apache HTTP Server. Se vuoi espandere gli URL abbreviati dell’esempio precedente, puoi implementare una regola simile alla seguente:
 
@@ -349,7 +349,7 @@ Disallow: /
 
 In alternativa, in un ambiente live, puoi scegliere di non consentire l’indicizzazione di determinati percorsi.
 
-Bisogna però prestare attenzione quando si inserisce il file `robots.txt` nella directory principale del sito. Le richieste di sviotamento del Dispatcher, infatti, potrebbero cancellare questo file ed è possibile che le mappature URL posizionino la directory principale del sito in un percorso diverso da `DOCROOT` come definito nella configurazione di Apache HTTP Server. Per questo motivo, questo file viene in genere inserito nell’istanza di authoring nella directory principale del sito e replicato nell’istanza di pubblicazione.
+Avvertenza per il posizionamento di `robots.txt` nella directory principale del sito è che le richieste di svuotamento del Dispatcher potrebbero cancellare questo file e le mappature URL probabilmente posizionano la directory principale del sito in un punto diverso dal `DOCROOT` come definito nella configurazione di Apache HTTP Server. Per questo motivo, questo file viene in genere inserito nell’istanza di authoring nella directory principale del sito e replicato nell’istanza di pubblicazione.
 
 ### Creazione di una mappa del sito XML in AEM {#building-an-xml-sitemap-on-aem}
 

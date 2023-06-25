@@ -2,10 +2,10 @@
 title: Memorizzazione in cache e prestazioni
 description: Scopri le diverse configurazioni disponibili per abilitare GraphQL e il caching dei contenuti per ottimizzare le prestazioni dell’implementazione di e-commerce.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: afbcd1e50a12a9b0642c586d7d81bb90ea91a58d
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 82%
+source-wordcount: '838'
+ht-degree: 44%
 
 ---
 
@@ -19,48 +19,53 @@ Per i componenti core CIF di AEM, la memorizzazione in cache è configurata in b
 
 ### Configurazione {#configuration}
 
-Una volta configurata per un determinato componente, la cache inizia a memorizzare le query e le risposte GraphQL in base a quanto definito da ciascuna voce per la configurazione della cache. Le dimensioni della cache e la durata della memorizzazione nella cache di ciascuna voce devono essere definite in base al progetto, a seconda, ad esempio, della frequenza con cui i dati del catalogo possono cambiare, di quanto sia importante che un componente visualizzi sempre i dati più recenti, ecc. Non è prevista alcuna invalidazione della cache, quindi occorre prestare attenzione quando si impostano le durate della cache.
+Una volta configurata per un determinato componente, la cache inizia a memorizzare le query e le risposte GraphQL in base a quanto definito da ciascuna voce per la configurazione della cache. La dimensione della cache e la durata della memorizzazione nella cache di ciascuna voce vengono definite in base al progetto, a seconda, ad esempio, dei seguenti elementi:
+
+* Frequenza con cui i dati del catalogo possono cambiare.
+* Quanto è importante che un componente visualizzi sempre i dati più recenti e così via.
+
+Non è prevista alcuna invalidazione della cache, quindi occorre prestare attenzione quando si impostano le durate della cache.
 
 Quando si configura la memorizzazione in cache per i componenti, il nome della cache deve corrispondere al nome dei componenti **proxy** definiti nel progetto.
 
-Prima che il client invii una richiesta GraphQL, verificherà se la **stessa** richiesta GraphQL è già stata memorizzata nella cache e potrebbe restituire la risposta nella cache. Per trovare una corrispondenza, la richiesta GraphQL DEVE corrispondere esattamente, ovvero la query, il nome dell’operazione (se presente), le variabili (se presenti) DEVONO essere tutte uguali alla richiesta memorizzata nella cache. Anche tutte le intestazioni HTTP personalizzate che potrebbero essere impostate DEVONO essere uguali. Ad esempio, Adobe Commerce `Store` l’intestazione DEVE corrispondere.
+Prima che il client invii una richiesta GraphQL, verifica se **esatto** la stessa richiesta GraphQL è già stata memorizzata nella cache ed è possibile che restituisca la risposta nella cache. Per trovare una corrispondenza, devi trovare la richiesta GraphQL _deve_ corrisponde esattamente. Ossia query, nome dell’operazione (se presente), variabili (se presenti) _deve_ essere tutti uguali alla richiesta memorizzata nella cache. E, tutte le intestazioni HTTP personalizzate che potrebbero essere impostate _deve_ anche essere lo stesso. Ad esempio, Adobe Commerce `Store` intestazione _deve_ corrisponde a.
 
 ### Esempi {#examples}
 
-È consigliabile configurare la memorizzazione in cache per il servizio di ricerca che recupera tutti i valori aggregati/facet disponibili visualizzati nelle pagine di ricerca e categoria del prodotto. Questi valori generalmente cambiano solo quando un nuovo attributo viene ad esempio aggiunto ai prodotti, pertanto la durata di questa voce della cache può essere “lunga” se il set di attributi di prodotto non cambia spesso. Anche se si tratta di un progetto specifico, consigliamo valori di alcuni minuti nelle fasi di sviluppo del progetto e di alcune ore per i sistemi di produzione stabili.
+L’Adobe consiglia di configurare il caching per il servizio di ricerca che recupera tutti i valori aggregati/facet disponibili visualizzati nelle pagine di ricerca e categoria del prodotto. Questi valori in genere cambiano solo quando un nuovo attributo viene aggiunto ai prodotti, ad esempio. Pertanto, la durata di questa voce della cache può essere &quot;lunga&quot; se il set di attributi di prodotto non cambia spesso. Anche se questa voce è specifica per il progetto, Adobe consiglia valori di alcuni minuti nelle fasi di sviluppo del progetto e di alcune ore nei sistemi di produzione stabili.
 
-Questa configurazione è in genere configurata con la seguente voce cache:
+Questa impostazione è in genere configurata con la seguente voce della cache:
 
 ```
 com.adobe.cq.commerce.core.search.services.SearchFilterService:true:10:3600
 ```
 
-Un altro scenario esemplificativo in cui si consiglia di utilizzare la funzione di caching GraphQl è il componente di navigazione, perché invia la stessa query GraphQL su tutte le pagine. In questo caso, la voce cache viene generalmente impostata su:
+Un altro scenario esemplificativo in cui si consiglia l’utilizzo della funzione di caching GraphQl è il componente di navigazione. Il motivo è che invia la stessa query GraphQL su tutte le pagine. In questo caso, la voce cache viene generalmente impostata su:
 
 ```
 venia/components/structure/navigation:true:10:600
 ```
 
-Quando si considera [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) viene utilizzato. Si noti l’uso del nome proxy del componente `venia/components/structure/navigation` e **non** del nome del componente di navigazione CIF (`core/cif/components/structure/navigation/v1/navigation`).
+Considerando che il [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) viene utilizzato. Si noti l’uso del nome proxy del componente `venia/components/structure/navigation` e **non** del nome del componente di navigazione CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
 La memorizzazione nella cache per altri componenti deve essere definita in base al progetto, in genere in coordinamento con la memorizzazione nella cache configurata a livello di Dispatcher. Non è prevista l’invalidazione attiva di queste cache, pertanto la durata di memorizzazione nella cache deve essere impostata con attenzione. Non esiste un valore universale che vada bene per tutti i possibili progetti e casi di utilizzo. Occorre definire una strategia di caching a livello di progetto che corrisponda meglio ai requisiti del progetto.
 
 ## Memorizzazione in cache di Dispatcher {#dispatcher}
 
-La memorizzazione nella cache di pagine o frammenti AEM in [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) è una best practice per qualsiasi progetto AEM. In genere, si basa su tecniche di invalidazione che garantiscono che qualsiasi contenuto modificato in AEM venga aggiornato correttamente in Dispatcher. Si tratta di una funzione fondamentale della strategia di caching di AEM Dispatcher.
+La memorizzazione nella cache di pagine o frammenti AEM in [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) è una best practice per qualsiasi progetto AEM. In genere, si basa su tecniche di invalidazione che garantiscono che qualsiasi contenuto modificato in AEM venga aggiornato correttamente in Dispatcher. Questa funzione è fondamentale per la strategia di caching del Dispatcher AEM.
 
-Oltre al contenuto CIF puro gestito dall’AEM, una pagina può in genere visualizzare dati di e-commerce recuperati dinamicamente da Adobe Commerce tramite GraphQL. Anche se la struttura della pagina stessa potrebbe non cambiare mai, il contenuto commerciale potrebbe cambiare, ad esempio, se alcuni dati di prodotto (nome, prezzo, ecc.) modifiche in Adobe Commerce.
+Oltre al contenuto CIF puro gestito dall’AEM, una pagina può in genere visualizzare dati di e-commerce recuperati dinamicamente da Adobe Commerce tramite GraphQL. Anche se la struttura di pagina stessa potrebbe non cambiare mai, il contenuto dell’e-commerce potrebbe cambiare. Ad esempio, se i dati di prodotto, come nome e prezzo, cambiano in Adobe Commerce.
 
-Per garantire che le pagine CIF possano essere memorizzate nella cache per un periodo di tempo limitato in AEM Dispatcher, si consiglia quindi di utilizzare [l’invalidazione della cache basata sul tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (o memorizzazione in cache basata su TTL) durante il caching delle pagine CIF in AEM Dispatcher. Questa funzione può essere configurata in AEM utilizzando il pacchetto [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) aggiuntivo.
+Per garantire che le pagine CIF siano memorizzate nella cache per un periodo di tempo limitato in AEM Dispatcher, l’Adobe consiglia di utilizzare [Annullamento della validità della cache in base al tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (nota come memorizzazione in cache basata su TTL) quando si memorizzano nella cache le pagine CIF in AEM Dispatcher. Questa funzione può essere configurata in AEM utilizzando il pacchetto [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) aggiuntivo.
 
-Con il caching basato su TTL, uno sviluppatore definisce in genere una o più durate di memorizzazione nella cache per le pagine AEM selezionate. In questo modo le pagine CIF vengono memorizzate nella cache solo nel dispatcher AEM fino alla durata configurata e il contenuto viene aggiornato di frequente.
+Con il caching basato su TTL, uno sviluppatore definisce in genere una o più durate di memorizzazione nella cache per le pagine AEM selezionate. Questa durata garantisce che le pagine CIF vengano memorizzate nella cache solo nel Dispatcher AEM fino alla durata configurata e che il contenuto venga aggiornato di frequente.
 
 >[!NOTE]
 >
->Anche se i dati lato server possono essere memorizzati nella cache da AEM Dispatcher, alcuni componenti CIF come `product`, `productlist` e `searchresults` in genere recuperano sempre i prezzi dei prodotti in una richiesta browser lato client quando la pagina viene caricata. In questo modo, al caricamento della pagina vengono sempre recuperati i contenuti dinamici fondamentali.
+>Anche se i dati lato server possono essere memorizzati nella cache da Dispatcher AEM, alcuni componenti CIF come `product`, `productlist`, e `searchresults` i componenti in genere recuperano sempre i prezzi dei prodotti in una richiesta browser lato client quando la pagina viene caricata. In questo modo, al caricamento della pagina verranno sempre recuperati i contenuti dinamici fondamentali.
 
 ## Risorse aggiuntive {#additional}
 
-- [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Configurazione della cache per GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
+* [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
+* [Configurazione della cache per GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
+* [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)

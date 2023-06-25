@@ -2,10 +2,10 @@
 title: Variabili di ambiente di Cloud Manager
 description: È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager e fornirle all’ambiente di runtime per l’utilizzo nella configurazione OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 96%
+source-wordcount: '1017'
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ Tra i casi d’uso tipici per l’utilizzo delle variabili di ambiente vi sono:
 1. Cloud Manager elenca i vari programmi disponibili. Seleziona il programma che desideri gestire.
 1. Seleziona la scheda **Ambienti** per il programma scelto, quindi dal pannello di navigazione a sinistra seleziona l’ambiente per il quale desideri creare una variabile di ambiente.
 1. Nel dettaglio dell’ambiente seleziona la scheda **Configurazione**, quindi seleziona **Aggiungi** per aprire la finestra di dialogo **Configurazione ambiente**.
-   * Se stai aggiungendo una variabile di ambiente per la prima volta, viene visualizzato un pulsante **Aggiungi configurazione** al centro della pagina. Apri la finestra di dialogo **Configurazione ambiente** con questo pulsante o con **Aggiungi**.
+   * Se stai aggiungendo una variabile di ambiente per la prima volta, viene visualizzata una **Aggiungi configurazione** al centro della pagina. Apri la finestra di dialogo **Configurazione ambiente** con questo pulsante o con **Aggiungi**.
 
    ![Scheda Configurazione](assets/configuration-tab.png)
 

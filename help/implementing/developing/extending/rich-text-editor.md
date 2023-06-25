@@ -3,9 +3,9 @@ title: Configurare l’Editor Rich Text per l’authoring dei contenuti in [!DNL
 description: Configurare l’Editor Rich Text per l’authoring dei contenuti in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1875'
 ht-degree: 0%
 
 ---
@@ -282,4 +282,3 @@ Di seguito è riportato uno snippet di esempio per mappare il comando `Bold` all
 >* [Configurare i plug-in dell’editor Rich Text](configure-rich-text-editor-plug-ins.md)
 >* [Utilizza l’editor Rich Text per l’authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [Configurare l’editor Rich Text per i siti accessibili](rte-accessible-content.md)
-

@@ -2,10 +2,10 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, puoi modificarne il contenuto per apportare gli aggiornamenti necessari
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3004'
-ht-degree: 60%
+source-wordcount: '3002'
+ht-degree: 59%
 
 ---
 
@@ -443,7 +443,7 @@ L’opzione **Visualizza come pubblicato**, è disponibile nel menu [Informazion
 
 ## Blocco di una pagina   {#locking-a-page}
 
-AEM consente di bloccare una pagina in modo da impedire che i contenuti possano essere modificati. Questa funzione è utile quando si devono apportare numerose modifiche a una pagina oppure se occorre bloccarla per un breve periodo di tempo.
+AEM consente di bloccare una pagina in modo che nessun altro possa modificarne il contenuto. Questo blocco è utile quando si apportano numerose modifiche a una pagina specifica o quando è necessario bloccare una pagina per un breve periodo.
 
 Una pagina può essere bloccata da:
 

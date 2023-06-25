@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2463'
 ht-degree: 6%
 
 ---
@@ -51,8 +51,8 @@ Puoi assegnare i tag ai seguenti tipi di risorse:
 | image/x-portable-graymap | SRT |  |
 | image/x-portable-pixmap | TXT |  |
 | image/x-rgb | VTT |  |
-| image/x-xbitmap |  |  |
-| image/x-xpixmap |  |  |
+| image/x-xbitmap | |  |
+| image/x-xpixmap | |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -262,19 +262,18 @@ Per cercare file con tag avanzati (regolari o migliorati), utilizzare [!DNL Asse
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
 >* [Scopri in che modo i tag avanzati aiutano a gestire i file digitali](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [Utilizzare tag avanzati per i video](smart-tags-video-assets.md)
-

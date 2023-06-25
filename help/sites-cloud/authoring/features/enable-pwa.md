@@ -2,10 +2,10 @@
 title: Abilitazione delle funzioni progressive delle web app
 description: AEM Sites consente all’autore dei contenuti di abilitare le funzionalità progressive delle app web a qualsiasi sito tramite una configurazione semplice invece che tramite la codifica.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 94%
+source-wordcount: '1998'
+ht-degree: 93%
 
 ---
 
@@ -217,7 +217,7 @@ Le librerie client vengono distribuite con l’aggiunta di un selettore di cache
 
 Il componente Immagine dei componenti core AEM determina il front-end della migliore resa da recuperare. Questo meccanismo include anche una marca temporale corrispondente all’ora dell’ultima modifica apportata alla risorsa. Questo meccanismo complica la configurazione della pre-memorizzazione della cache di PWA.
 
-Durante la configurazione della pre-memorizzazione della cache, l’utente deve elencare tutte le varianti di percorso che possono essere recuperate. Queste varianti sono composte da parametri come la qualità e la larghezza. Si consiglia vivamente di ridurre il numero di queste variazioni a un massimo di tre: piccolo, medio, grande. Puoi farlo tramite la finestra di dialogo dei criteri per i contenuti del [Componente immagine.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it)
+Durante la configurazione della pre-memorizzazione della cache, l’utente deve elencare tutte le varianti di percorso che possono essere recuperate. Queste varianti sono composte da parametri come la qualità e la larghezza. Si consiglia di ridurre il numero di tali variazioni a un massimo di tre: piccolo, medio, grande. Puoi farlo tramite la finestra di dialogo dei criteri per i contenuti del [Componente immagine.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it)
 
 Se non viene configurato con attenzione, il consumo di memoria e rete può influire notevolmente sulle prestazioni di PWA. Inoltre, se si intende prememorizzare in cache, ad esempio, 50 immagini e avere 3 larghezze per immagine, l’utente che gestisce il sito dovrà mantenere un elenco che comprende fino a 150 voci nella sezione di pre-memorizzazione della cache di PWA delle proprietà di pagina.
 

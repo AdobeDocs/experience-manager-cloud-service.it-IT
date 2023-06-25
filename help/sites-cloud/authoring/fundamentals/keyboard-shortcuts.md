@@ -2,10 +2,10 @@
 title: Scelte rapide da tastiera per la modifica delle pagine
 description: In tutte le aree di AEM sono disponibili varie scelte rapide da tastiera, comprese quelle per la modifica delle pagine
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 99%
+source-wordcount: '237'
+ht-degree: 91%
 
 ---
 
@@ -25,8 +25,8 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune 
 | Modalità **Modifica** | `Ctrl-z` | [Annulla l’ultima modifica](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Ripristina l’ultima modifica](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleziona più paragrafi |
-|  | `Ctrl-c` | Copia i paragrafi selezionati |
-|  | `Ctrl-x` | Taglia i paragrafi selezionati (i paragrafi tagliati scompaiono dall’interfaccia solo dopo essere stati) |
+|  | `Ctrl-c` | Copia paragrafi selezionati |
+|  | `Ctrl-x` | Taglia i paragrafi selezionati (i paragrafi tagliati non scompaiono nell’interfaccia utente finché non vengono incollati) |
 |  | `Ctrl-v` | Incolla i paragrafi precedentemente tagliati o copiati |
 |  | `Ctrl-Backspace` | Elimina i paragrafi selezionati |
 | Modalità **Modifica** - Editor Rich Text | `Ctrl-b` | Grassetto |

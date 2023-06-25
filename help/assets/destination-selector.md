@@ -3,10 +3,10 @@ title: Selettore di destinazione per AEM as a Cloud Service
 description: Utilizza il selettore di destinazione AEM per mostrare e selezionare le risorse da utilizzare come copia della risorsa originale.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 3%
+source-wordcount: '1909'
+ht-degree: 36%
 
 ---
 
@@ -27,7 +27,7 @@ Il selettore delle destinazioni offre molti vantaggi, ad esempio:
 * Ricerca testuale per passare rapidamente alle cartelle e caricare le risorse dall’applicazione.
 * Possibilità di creare cartelle, ordinare le cartelle in ordine crescente o decrescente e visualizzarle in visualizzazione Elenco, Griglia, Raccolta o Cascata.
 
-Lo scopo di questo articolo è quello di dimostrare come utilizzare il Selettore di destinazione con un [!DNL Adobe] in Unified Shell o quando disponi già di un imsToken generato per l’autenticazione. In questo articolo, questi flussi di lavoro sono denominati flussi non SUSI.
+Lo scopo di questo articolo è quello di dimostrare come utilizzare il Selettore di destinazione con un [!DNL Adobe] in Unified Shell o quando disponi già di un imsToken generato per l’autenticazione. In questo articolo, questi flussi di lavoro sono denominati flussi non-SUSI.
 
 Per integrare e utilizzare il Selettore di destinazione con il [!DNL Experience Manager Assets as a Cloud Service] archivio:
 
@@ -37,7 +37,7 @@ Per integrare e utilizzare il Selettore di destinazione con il [!DNL Experience 
 
 ## Integrare il selettore di destinazione utilizzando Vanilla JS {#integration-with-vanilla-js}
 
-È possibile integrare qualsiasi [!DNL Adobe] o non Adobe con [!DNL Experience Manager Assets] as a [!DNL Cloud Service] e selezionare le risorse dall’interno dell’applicazione.
+È possibile integrare qualsiasi [!DNL Adobe] o applicazioni non Adobe nell’archivio [!DNL Experience Manager Assets] as a [!DNL Cloud Service] e selezionare le risorse dall’interno dell’applicazione.
 
 L’integrazione viene eseguita importando il pacchetto Selettore di destinazione e collegandosi alle risorse as a Cloud Service tramite la libreria JavaScript di Vanilla. È necessario modificare un `index.html` o qualsiasi file appropriato all&#39;interno dell&#39;applicazione a -
 * Definire i dettagli di autenticazione
@@ -46,13 +46,13 @@ L’integrazione viene eseguita importando il pacchetto Selettore di destinazion
 
 Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 
-* Stai integrando un [!DNL Adobe] applicazione su [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* Stai integrando un’applicazione [!DNL Adobe] su [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=it).
 * Hai già generato un token IMS per l’autenticazione.
 
 ## Prerequisiti {#prerequisites}
 
-Definire i prerequisiti in `index.html` o un file simile nell’implementazione dell’applicazione per definire i dettagli di autenticazione per accedere al [!DNL Experience Manager Assets] as a [!DNL Cloud Service] archivio. I prerequisiti includono:
-* organizzazione ims
+Definisci i prerequisiti in un file `index.html` o simile nell’implementazione dell’applicazione per definire i dettagli di autenticazione per accedere all’archivio di [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. I prerequisiti includono:
+* imsOrg
 * imsToken
 * apikey
 
@@ -60,7 +60,7 @@ Definire i prerequisiti in `index.html` o un file simile nell’implementazione 
 
 Il selettore delle destinazioni è disponibile tramite CDN ESM (ad esempio, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) e [UMD](https://github.com/umdjs/umd) versione.
 
-Nei browser che utilizzano **Versione UMD** (scelta consigliata):
+Nei browser che utilizzano la **versione UMD** (scelta consigliata):
 
 ```
 <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
@@ -70,7 +70,7 @@ Nei browser che utilizzano **Versione UMD** (scelta consigliata):
 </script>
 ```
 
-Nei browser con `import maps` supporto tramite **Versione CDN ESM**:
+Nei browser con supporto di `import maps` che utilizzano la **versione ESM CDN**:
 
 ```
 <script type="module">
@@ -78,7 +78,7 @@ Nei browser con `import maps` supporto tramite **Versione CDN ESM**:
 </script>
 ```
 
-Nella federazione di moduli Deno/Webpack tramite **Versione CDN ESM**:
+Nella federazione di moduli Deno/Webpack utilizzando la **versione ESM CDN**:
 
 ```
 import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
@@ -126,25 +126,25 @@ Nella tabella seguente vengono descritte alcune delle proprietà importanti dell
 | *repo:repositoryId* | stringa | Identificatore univoco dell’archivio in cui è memorizzata la risorsa. |
 | *repo:id* | stringa | Identificatore univoco della risorsa. |
 | *repo:assetClass* | stringa | La classificazione della risorsa (ad esempio immagine o video, documento). |
-| *repository:nome* | stringa | Nome della risorsa, inclusa l’estensione del file. |
-| *repository:dimensione* | numero | Dimensione della risorsa in byte. |
-| *repository:percorso* | stringa | Posizione della risorsa all’interno dell’archivio. |
-| *repository:predecessori* | `Array<string>` | Array di elementi precedenti per la risorsa nell’archivio. |
-| *repo:stato* | stringa | Stato corrente della risorsa nell’archivio (ad esempio attiva, eliminata e così via). |
-| *archivio:createdBy* | stringa | Utente o sistema che ha creato la risorsa. |
-| *repository:createDate* | stringa | La data e l’ora in cui è stata creata la risorsa. |
-| *archivio:modifiedBy* | stringa | Utente o sistema che ha modificato per ultimo la risorsa. |
-| *repository:modifyDate* | stringa | La data e l’ora dell’ultima modifica apportata alla risorsa. |
+| *repo:name* | stringa | Nome della risorsa, inclusa l’estensione del file. |
+| *repo:size* | numero | Dimensione della risorsa in byte. |
+| *repo:path* | stringa | Posizione della risorsa all’interno dell’archivio. |
+| *repo:ancestors* | `Array<string>` | Array di elementi predecessori per la risorsa nell’archivio. |
+| *repo:state* | stringa | Stato corrente della risorsa nell’archivio (ad esempio attiva, eliminata e così via). |
+| *repo:createdBy* | stringa | Utente o sistema che ha creato la risorsa. |
+| *repo:createDate* | stringa | La data e l’ora in cui è stata creata la risorsa. |
+| *repo:modifiedBy* | stringa | Utente o sistema che ha modificato per ultimo la risorsa. |
+| *repo:modifyDate* | stringa | La data e l’ora dell’ultima modifica apportata alla risorsa. |
 | *dc:format* | stringa | Formato della risorsa. |
 | *_pagina* | orderBy: string; count: number; | Include il numero di pagina del documento. |
 
 Per un elenco completo delle proprietà e un esempio dettagliato, visita [Esempio di codice del selettore di destinazione](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
-### Esempio di flusso non SUSI {#non-ims-vanilla}
+### Esempio di flusso non-SUSI {#non-ims-vanilla}
 
 In questo esempio viene illustrato come utilizzare il selettore di destinazione con un flusso non SUSI durante l&#39;esecuzione di un [!DNL Adobe] in Unified Shell o quando disponi già di `imsToken` generato per l’autenticazione.
 
-Includi il pacchetto del selettore di destinazione nel codice utilizzando `script` come mostrato nella _righe da 6 a 15_ dell’esempio seguente. Una volta caricato lo script, `PureJSSelectors` variabile globale disponibile per l’uso. Definire il selettore di destinazione [proprietà](#destination-selector-properties) come mostrato nella _righe da 16 a 23_. Il `imsOrg` e `imsToken` entrambe le proprietà sono necessarie per l&#39;autenticazione in un flusso non SUSI. Il `handleSelection` per gestire le risorse selezionate. Per eseguire il rendering del selettore di destinazione, chiama il `renderDestinationSelector` funzione come indicato in _riga 17_. Il selettore di destinazione viene visualizzato nel `<div>` elemento contenitore, come mostrato _righe 21 e 22_.
+Includi il pacchetto del selettore di destinazione nel codice utilizzando `script` come mostrato nella _righe 6-15_ dell’esempio seguente. Una volta caricato lo script, `PureJSSelectors` variabile globale disponibile per l’uso. Definire il selettore di destinazione [proprietà](#destination-selector-properties) come mostrato nella _righe 16-23_. In un flusso non-SUSI, entrambe le proprietà `imsOrg` e `imsToken` sono necessarie per l’autenticazione. La proprietà `handleSelection` è utilizzata per gestire le risorse selezionate. Per eseguire il rendering del selettore di destinazione, chiama il `renderDestinationSelector` funzione come indicato in _riga 17_. Il selettore di destinazione viene visualizzato nel `<div>` elemento contenitore, come mostrato _righe 21 e 22_.
 
 Seguendo questi passaggi, puoi utilizzare il Selettore di destinazione con un flusso non SUSI nel tuo [!DNL Adobe] applicazione.
 
@@ -185,22 +185,22 @@ Puoi utilizzare le proprietà del Selettore di destinazione per personalizzare i
 
 | Proprietà | Tipo | Obbligatorio | Predefiniti | Descrizione |
 |---|---|---|---|---|
-| *organizzazione ims* | stringa | Sì |  | Adobe ID del sistema Identity Management (IMS) assegnato durante il provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] per la tua organizzazione. Il `imsOrg` È necessaria una chiave per autenticare se l’organizzazione a cui stai accedendo è in Adobe IMS o meno. |
-| *imsToken* | stringa | No |  | Token BEARER IMS utilizzato per l’autenticazione. `imsToken` non è richiesto se si utilizza il flusso SUSI. Tuttavia, è necessario se si utilizza il flusso non SUSI. |
-| *apiKey* | stringa | No |  | Chiave API utilizzata per accedere al servizio di individuazione AEM. `apiKey` non è richiesto se si utilizza il flusso SUSI. Tuttavia, è richiesto nel flusso non SUSI. |
+| *imsOrg* | stringa | Sì | | L’ID di Adobe Identity Management System (IMS) assegnato durante il provisioning di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] per l’organizzazione. Il `imsOrg` È necessario specificare la chiave per autenticare se l’organizzazione a cui stai accedendo è in Adobe IMS o meno. |
+| *imsToken* | stringa | No | | Token di connessione IMS utilizzato per l’autenticazione. `imsToken` non è richiesto se si utilizza il flusso SUSI. Tuttavia, è necessario se si utilizza il flusso non SUSI. |
+| *apiKey* | stringa | No | | Chiave API utilizzata per accedere al servizio di individuazione AEM. `apiKey` non è richiesto se si utilizza il flusso SUSI. Tuttavia, è richiesto nel flusso non SUSI. |
 | *rootPath* | stringa | No | /content/dam/ | Percorso della cartella da cui il Selettore di destinazione visualizza le risorse. `rootPath` può essere utilizzato anche sotto forma di incapsulamento. Ad esempio, dato il seguente percorso: `/content/dam/marketing/subfolder/`, il selettore di destinazione non consente di spostarsi tra le cartelle principali, ma visualizza solo le cartelle secondarie. |
-| *hasMore* | booleano | No |  | Quando l’applicazione ha più contenuto da visualizzare, puoi utilizzare questa proprietà per aggiungere un caricatore che carica il contenuto per renderlo visibile nell’applicazione. È un indicatore che indica che il caricamento del contenuto è in corso. |
-| *orgName* | booleano | No |  | È il nome dell’organizzazione (probabilmente orgID) associata all’AEM |
-| *initRepoID* | stringa | No |  | Si tratta del percorso dell’archivio delle risorse che desideri utilizzare in una visualizzazione iniziale predefinita |
-| *onCreateFolder* | stringa | No |  | Il `onCreateFolder` consente di aggiungere un&#39;icona che aggiunge una nuova cartella nell&#39;applicazione. |
-| *onConfirm* | stringa | No |  | Si tratta di un callback quando si preme il pulsante di conferma. |
-| *confirmDisabled* | stringa | No |  | Questa proprietà controlla l’interruttore del pulsante di conferma. |
-| *viewType* | stringa | No |  | Il `viewType` viene utilizzata per specificare le visualizzazioni utilizzate per visualizzare le risorse. |
-| *viewTypeOptions* | stringa | No |  | Questa proprietà è correlata a `viewType` proprietà. puoi specificare una o più viste per visualizzare le risorse. Sono disponibili le seguenti opzioni viewTypeOptions: List view, Grid view, Gallery view, Waterfall view e Tree view. |
-| *itemNameFormatter* | stringa | No |  | Questa proprietà consente di formattare il nome dell&#39;elemento |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |  | Se le traduzioni OOTB non sono sufficienti per le esigenze dell’applicazione, puoi esporre un’interfaccia tramite la quale puoi trasmettere valori localizzati personalizzati tramite il `i18nSymbols` prop Il passaggio di un valore tramite questa interfaccia sostituisce le traduzioni predefinite fornite e utilizza le tue.  Per eseguire l&#39;override, è necessario superare un [Descrittore del messaggio](https://formatjs.io/docs/react-intl/api/#message-descriptor) oggetto alla chiave di `i18nSymbols` che desideri ignorare. |
-| *inlineAlertSetup* | stringa | No |  | Aggiunge un messaggio di avviso che si desidera trasmettere nell&#39;applicazione. Ad esempio, l&#39;aggiunta di un messaggio di avviso per segnalare che non si dispone dell&#39;autorizzazione per accedere alla cartella. |
-| *intl* | Oggetto | No |  | Il selettore di destinazione fornisce le traduzioni predefinite OOTB. È possibile selezionare la lingua di traduzione fornendo una stringa valida per le impostazioni internazionali attraverso `intl.locale` prop Ad esempio: `intl={{ locale: "es-es" }}` </br></br> Le stringhe locali supportate seguono le [ISO 639 - Codici](https://www.iso.org/iso-639-language-codes.html) per la rappresentazione di nomi di lingue standard. </br></br> Elenco delle lingue supportate: inglese - &#39;en-us&#39; (impostazione predefinita) spagnolo - &#39;es-es&#39; tedesco - &#39;de-de&#39; francese - &#39;fr-fr&#39; italiano - &#39;it-it&#39; giapponese - &#39;ja-jp&#39; coreano - &#39;ko-kr&#39; portoghese - &#39;pt-br&#39; cinese (tradizionale) - &#39;zh-cn&#39; cinese (Taiwan) - &#39;zh-tw&#39; |
+| *hasMore* | booleano | No | | Quando l’applicazione ha più contenuto da visualizzare, puoi utilizzare questa proprietà per aggiungere un caricatore che carica il contenuto per renderlo visibile nell’applicazione. È un indicatore che indica che il caricamento del contenuto è in corso. |
+| *orgName* | booleano | No | | È il nome dell’organizzazione (probabilmente orgID) associata all’AEM |
+| *initRepoID* | stringa | No | | Si tratta del percorso dell’archivio delle risorse che desideri utilizzare in una visualizzazione iniziale predefinita |
+| *onCreateFolder* | stringa | No | | Il `onCreateFolder` consente di aggiungere un&#39;icona che aggiunge una nuova cartella nell&#39;applicazione. |
+| *onConfirm* | stringa | No | | Si tratta di un callback quando si preme il pulsante di conferma. |
+| *confirmDisabled* | stringa | No | | Questa proprietà controlla l’interruttore del pulsante di conferma. |
+| *viewType* | stringa | No | | Il `viewType` viene utilizzata per specificare le visualizzazioni utilizzate per visualizzare le risorse. |
+| *viewTypeOptions* | stringa | No | | Questa proprietà è correlata a `viewType` proprietà. puoi specificare una o più viste per visualizzare le risorse. Sono disponibili le seguenti opzioni viewTypeOptions: List view, Grid view, Gallery view, Waterfall view e Tree view. |
+| *itemNameFormatter* | stringa | No | | Questa proprietà consente di formattare il nome dell&#39;elemento |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |  | Se le traduzioni OOTB non sono sufficienti per le esigenze dell’applicazione, puoi esporre un’interfaccia tramite la quale puoi trasmettere valori localizzati personalizzati tramite la proprietà `i18nSymbols`. Il passaggio di un valore tramite questa interfaccia sostituisce le traduzioni predefinite fornite e utilizza le tue.  Per eseguire la sostituzione, è necessario passare un oggetto valido del [Descrittore del messaggio](https://formatjs.io/docs/react-intl/api/#message-descriptor) alla chiave di `i18nSymbols` che desideri sostituire. |
+| *inlineAlertSetup* | stringa | No | | Aggiunge un messaggio di avviso che si desidera trasmettere nell&#39;applicazione. Ad esempio, l&#39;aggiunta di un messaggio di avviso per segnalare che non si dispone dell&#39;autorizzazione per accedere alla cartella. |
+| *intl* | Oggetto | No | | Il selettore di destinazione fornisce le traduzioni predefinite OOTB. È possibile selezionare la lingua di traduzione fornendo una stringa di lingua valida attraverso la proprietà `intl.locale`. Ad esempio: `intl={{ locale: "es-es" }}` </br></br> Le stringhe di lingua supportate seguono i [Codici - ISO 639](https://www.iso.org/iso-639-language-codes.html) per la rappresentazione di nomi di lingue standard. </br></br> Elenco delle lingue supportate: Inglese - ‘en-us’ (impostazione predefinita) Spagnolo - ‘es-es’ Tedesco - ‘de-de’ Francese - ‘fr-fr’ Italiano - ‘it-it’ Giapponese - ‘ja-jp’ Coreano - ‘ko-kr’ Portoghese - ‘pt-br’ cinese (tradizionale) - ‘zh-cn’ Cinese (Taiwan) - ‘zh-tw’ |
 
 ## Esempi per utilizzare le proprietà del Selettore di destinazione {#usage-examples}
 
@@ -241,7 +241,7 @@ Una volta configurato il Selettore di destinazione, sei autenticato per utilizza
 
 ### Barra di ricerca {#search-bar}
 
-Il selettore delle destinazioni consente di eseguire una ricerca full-text delle risorse all’interno dell’archivio selezionato. Ad esempio, se si digita la parola chiave `wave` nella barra di ricerca, tutte le risorse con `wave` vengono visualizzate le parole chiave menzionate in una qualsiasi delle proprietà dei metadati.
+Il selettore delle destinazioni consente di eseguire una ricerca full-text delle risorse all’interno dell’archivio selezionato. Ad esempio, se digiti la parola chiave `wave` nella barra di ricerca, vengono mostrate tutte le risorse con la parola chiave `wave` menzionata in una qualsiasi delle proprietà dei metadati.
 
 ### Ordinamento {#sorting}
 
@@ -263,10 +263,10 @@ Consente di creare una nuova cartella nella cartella di destinazione del [!DNL A
 
 Il selettore delle destinazioni consente di visualizzare la risorsa in quattro diverse visualizzazioni:
 
-* **![vista a elenco](assets/do-not-localize/list-view.png) [!UICONTROL Vista a elenco]**: la vista a elenco mostra i file e le cartelle scorrevoli in una singola colonna.
-* **![vista griglia](assets/do-not-localize/grid-view.png) [!UICONTROL Vista griglia]**: nella visualizzazione griglia i file e le cartelle scorrevoli vengono visualizzati in una griglia di righe e colonne.
-* **![vista galleria](assets/do-not-localize/gallery-view.png) [!UICONTROL Vista galleria]**: la visualizzazione della raccolta mostra i file o le cartelle in un elenco orizzontale bloccato al centro.
-* **![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista a cascata]**: la vista a cascata mostra file o cartelle sotto forma di un bridge.
+* **![Vista a elenco](assets/do-not-localize/list-view.png) [!UICONTROL Vista a elenco]**: la vista a elenco mostra i file e le cartelle in modo scorrevole in una singola colonna.
+* **![vista griglia](assets/do-not-localize/grid-view.png) [!UICONTROL Vista griglia]**: la vista griglia mostra i file e le cartelle in modo scorrevole in una griglia di righe e colonne.
+* **![vista galleria](assets/do-not-localize/gallery-view.png) [!UICONTROL Vista galleria]**: la vista galleria mostra i file o le cartelle in un elenco orizzontale bloccato al centro.
+* **![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista a cascata]**: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
 
 ### Info {#info}
 

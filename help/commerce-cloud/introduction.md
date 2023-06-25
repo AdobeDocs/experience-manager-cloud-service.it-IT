@@ -2,11 +2,11 @@
 title: Introduzione e panoramica
 description: Introduzione e panoramica di contenuti e commerce. Experience Manager Commerce Integration Framework (CIF) è il modello consigliato di Adobe per integrare ed estendere i servizi commerce da Adobe Commerce e altre soluzioni commerce di terze parti con l’Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
-exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 92%
 
 ---
 
@@ -42,11 +42,11 @@ Questa complessità apre le porte a potenziali punti di errore, aumento del TCO,
 
 ## CIF supporta correttamente i clienti dal 2013 {#support}
 
-Con oltre 200 clienti, CIF si è affermata come un ingrediente di successo per un progetto di content &amp; commerce di successo. Ciò fornisce valore per l’IT e le aziende oggi e in futuro. I recenti progetti personalizzati descrivono CIF come “Un grande acceleratore e un grande risparmio di tempo con molto valore”.
+Con oltre 200 clienti, CIF si è affermata come un ingrediente di successo per un progetto di content &amp; commerce di successo. Ciò fornisce valore per l’IT e le aziende oggi e in futuro. Recenti progetti dei clienti descrivono CIF come un &quot;grande acceleratore e un enorme risparmio di tempo con un sacco di valore&quot;.
 
 ## Vantaggi di CIF {#cif-benefits}
 
-CIF fornisce componenti core di commerce pronti all’uso che riducono la necessità di codice personalizzato, accelerando il tempo di immissione sul mercato per i marchi. Tutti i componenti core sono pronti all’uso e integrati con il livello di dati lato client di Adobe per arricchire i profili dei clienti, ad esempio il profilo unificato. Questo profilo acquisisce in dettaglio il comportamento di un visitatore, che può essere utilizzato per prevedere e personalizzare il percorso del cliente in tempo reale.
+CIF fornisce componenti core di commerce pronti all’uso che riducono la necessità di codice personalizzato, accelerando il tempo di immissione sul mercato per i marchi. Tutti i Componenti core sono integrati preconfigurati con Adobe Client-Side Data Layer per idratare i profili dei clienti, ad esempio il profilo unificato. Questo profilo acquisisce in dettaglio il comportamento di un visitatore, che può essere utilizzato per prevedere e personalizzare il percorso del cliente in tempo reale.
 
 Il componente aggiuntivo CIF porta il contesto del prodotto in Experience Manager e fornisce strumenti di authoring come una console del prodotto e selettori di prodotti/categorie che consentono all’addetto al marketing di creare e distribuire esperienze di acquisto in Experience Manager senza dover dipendere dallo sviluppatore. I vantaggi includono:
 

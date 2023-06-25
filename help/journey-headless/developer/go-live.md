@@ -2,10 +2,10 @@
 title: Come pubblicare con la tua applicazione headless
 description: In questa parte del Percorso per sviluppatori AEM Headless, scopri come distribuire un’applicazione headless in tempo reale prendendo il codice locale nel Git e spostandolo nel Git di Cloud Manager per la pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 96%
+source-wordcount: '1065'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Per preparare l’applicazione AEM headless per il lancio, segui le best practic
 
 * Evita di creare query con output superiore a 15 kb di JSON (gzip compresso). I file JSON lunghi richiedono un uso intensivo delle risorse per l’analisi da parte dell’applicazione client.
 * Evita più di cinque livelli nidificati di gerarchie di frammenti. Livelli aggiuntivi rendono difficile per gli autori dei contenuti valutare l’impatto delle loro modifiche.
-* Utilizza query con più oggetti invece di modellare query con gerarchie di dipendenza all’interno dei modelli. Ciò consente una maggiore flessibilità a lungo termine per ristrutturare l’output JSON senza dover apportare molte modifiche al contenuto.
+* Utilizza query con più oggetti invece di modellare query con gerarchie di dipendenza all’interno dei modelli. Questo consente una flessibilità a lungo termine per ristrutturare l’output JSON senza dover apportare molte modifiche al contenuto.
 
 ## Massimizza il rapporto Hit-cache CDN {#maximize-cdn}
 

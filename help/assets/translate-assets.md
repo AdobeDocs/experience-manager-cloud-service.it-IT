@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: '2646'
 ht-degree: 24%
 
 ---
@@ -147,14 +147,13 @@ Se utilizzi questa opzione, il flusso di lavoro di traduzione viene eseguito per
    >* Se utilizzi la traduzione automatica, i file binari delle risorse non vengono tradotti.
    >* Se la risorsa aggiunta al processo di traduzione include risorse secondarie, selezionale e rimuovile affinché la traduzione possa procedere senza errori.
 
-
 1. Per avviare la traduzione delle risorse, tocca o fai clic sulla freccia del **[!UICONTROL Lavoro di traduzione]** affiancare e selezionare **[!UICONTROL Inizio]** dall&#39;elenco. Un messaggio notifica l’inizio del processo di traduzione.
 1. Per visualizzare lo stato del processo di traduzione, tocca o fai clic sui puntini di sospensione nella parte inferiore della **[!UICONTROL Lavoro di traduzione]** affiancare. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. Al termine della traduzione, lo stato diventa Pronto per la revisione. Passa all’interfaccia utente Assets e apri la pagina Proprietà di ciascuna delle risorse tradotte per visualizzare i metadati tradotti.
 
 ### Aggiorna copie per lingua {#update-language-copies}
 
-Esegui questo flusso di lavoro per tradurre qualsiasi set aggiuntivo di risorse e includerlo in una copia per lingua specifica. In questo caso, le risorse tradotte vengono aggiunte alla cartella di destinazione che contiene già risorse tradotte in precedenza. A seconda della scelta di opzioni, viene creato un progetto di traduzione o viene aggiornato un progetto di traduzione esistente per le nuove risorse. Il flusso di lavoro Aggiorna copie per lingua include le seguenti opzioni:
+Esegui questo flusso di lavoro per tradurre qualsiasi set aggiuntivo di risorse e includerlo in una copia per lingua specifica. In questo caso, le risorse tradotte vengono aggiunte alla cartella di destinazione che contiene già le risorse tradotte in precedenza. A seconda della scelta di opzioni, viene creato un progetto di traduzione o viene aggiornato un progetto di traduzione esistente per le nuove risorse. Il flusso di lavoro Aggiorna copie per lingua include le seguenti opzioni:
 
 * Crea un nuovo progetto di traduzione
 * Aggiungi a progetto di traduzione esistente
@@ -207,7 +206,7 @@ In questo flusso di lavoro, le risorse da tradurre vengono copiate nella directo
 
 **Aggiorna copie per lingua**
 
-Esegui questo flusso di lavoro per tradurre un gruppo aggiuntivo di risorse e includerlo in una copia per lingua specifica. In questo caso, le risorse tradotte vengono aggiunte alla cartella di destinazione che contiene già risorse tradotte in precedenza.
+Esegui questo flusso di lavoro per tradurre un gruppo aggiuntivo di risorse e includerlo in una copia per lingua specifica. In questo caso, le risorse tradotte vengono aggiunte alla cartella di destinazione che contiene già le risorse tradotte in precedenza.
 
 >[!NOTE]
 >
@@ -285,13 +284,13 @@ Se vuoi applicare un connettore personalizzato per i servizi di traduzione che d
 **Consulta anche**
 
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

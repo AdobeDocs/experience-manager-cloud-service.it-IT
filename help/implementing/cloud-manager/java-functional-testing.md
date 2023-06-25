@@ -2,10 +2,10 @@
 title: Test funzionali Java
 description: Scopri come scrivere test funzionali Java per AEM as a Cloud Service
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 94%
+source-wordcount: '847'
+ht-degree: 93%
 
 ---
 
@@ -105,7 +105,7 @@ Per ulteriori informazioni, consulta l’[`aem-testing-clients` archivio di GitH
 | CPU | 0.5 | Quantità di tempo CPU riservato per ogni esecuzione di test |
 | Memoria | 0,5 Gi | Quantità di memoria allocata al test, valore in gibibyte |
 | Timeout | 30 min | La durata dopo la quale il test viene terminato. |
-| Durata consigliata | 15 min | Si consiglia di scrivere i test in modo che non richiedano più tempo di questo valore. |
+| Durata consigliata | 15 min | Adobe consiglia che la scrittura dei test non richieda più tempo di questo valore. |
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Le proprietà del sistema sono indicate di seguito.
 
 | Proprietà | Descrizione | Esempio |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | Quantità di istanze; affinché corrisponda a Cloud Service, deve essere impostata su `2` | `2` |
+| `sling.it.instances` | numero di istanze, per corrispondere al servizio cloud deve essere impostato su `2` | `2` |
 | `sling.it.instance.url.1` | Deve essere impostato sull’URL dell’ambiente Author | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | Modalità di esecuzione della prima istanza; deve essere impostata su `author` | `author` |
 | `sling.it.instance.adminUser.1` | Deve essere impostata sull’utente amministratore dell’ambiente Author. | `admin` |

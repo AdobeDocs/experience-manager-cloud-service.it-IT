@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2024'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Dopo aver applicato un tema accessibile, esegui le correzioni aggiuntive elencat
 
 L’etichetta o il titolo di un componente identifica ciò che il componente modulo rappresenta. Ad esempio, il testo &quot;Nome&quot; indica agli utenti che devono immettere il proprio nome in un campo di testo. Per essere accessibile agli assistenti vocali, l’etichetta è associata a livello di programmazione a un componente modulo. In alternativa, il controllo modulo viene configurato con informazioni aggiuntive sull&#39;accessibilità.
 
-L’etichetta percepita dagli assistenti vocali non deve necessariamente essere la stessa della didascalia visiva. In alcuni casi può essere utile specificare meglio lo scopo del controllo. Per ogni oggetto campo di un modulo, è possibile utilizzare le opzioni di accesso facilitato per specificare ciò che l&#39;assistente vocale annuncia per identificare il campo modulo specifico.
+L’etichetta percepita dagli assistenti vocali non deve necessariamente essere la stessa della didascalia visiva. In alcuni casi può essere necessario specificare meglio lo scopo del controllo. Per ogni oggetto campo di un modulo, è possibile utilizzare le opzioni di accesso facilitato per specificare ciò che l&#39;assistente vocale annuncia per identificare il campo modulo specifico.
 
 Per utilizzare l&#39;opzione Accessibilità, effettuare le seguenti operazioni:
 
@@ -125,7 +125,6 @@ Per utilizzare l&#39;opzione Accessibilità, effettuare le seguenti operazioni:
 >
 >* Il pulsante di opzione e la casella di controllo possono avere solo due opzioni per l&#39;accessibilità, ovvero Testo personalizzato e Titolo.
 >* Per l’Adaptive Forms basato su XFA, l’opzione di accessibilità viene ereditata dalle opzioni di accessibilità impostate in XDP. Le descrizioni comandi da XDP sono mappate a Descrizione breve e la didascalia a Titolo. Le altre opzioni funzionano nello stato corrente.
-
 
 ### 3. Fornire equivalenti testuali per le immagini {#provide-text-equivalents-for-images}
 

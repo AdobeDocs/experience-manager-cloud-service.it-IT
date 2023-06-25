@@ -1,11 +1,11 @@
 ---
 title: Domande frequenti su Cloud Manager
-description: Raccolta di risposte alle domande più frequenti su Cloud Manager in AEM as a Cloud Service.
+description: Trova le risposte alle domande più frequenti su Cloud Manager in AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 100%
+source-wordcount: '991'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ Il processo è documentato [qui](/help/implementing/cloud-manager/getting-access
 
 Ad esempio, consulta il [codice del progetto di esempio WKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-## Dopo il passaggio da Java 8 a Java 11, l’esecuzione della build non riesce e genera un errore relativo a maven-scr-plugin. Cosa posso fare? {#build-fails-maven-scr-plugin}
+## Dopo il passaggio da Java 8 a Java 11, la build restituisce un errore relativo a maven-scr-plugin. Cosa posso fare? {#build-fails-maven-scr-plugin}
 
 La build di AEM Cloud Manager potrebbe non riuscire durante il tentativo di passaggio da Java 8 a 11. Se riscontri il seguente errore, rimuovi `maven-scr-plugin` e converti tutte le annotazioni OSGi in annotazioni OSGi R6.
 
@@ -32,7 +32,7 @@ La build di AEM Cloud Manager potrebbe non riuscire durante il tentativo di pass
 
 Per istruzioni su come rimuovere questo plug-in, vedi [qui.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
 
-## Dopo il passaggio da Java 8 a Java 11, l’esecuzione della build non riesce e genera un errore relativo a RequireJavaVersion. Cosa posso fare? {#build-fails-requirejavaversion}
+## Dopo il passaggio da Java 8 a Java 11, la build restituisce un errore RequireJavaVersion. Cosa posso fare? {#build-fails-requirejavaversion}
 
 Per le build di Cloud Manager è possibile che l’esecuzione di `maven-enforcer-plugin` non riesca e generi questo errore.
 

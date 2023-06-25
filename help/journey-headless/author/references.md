@@ -2,10 +2,10 @@
 title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Imparare a utilizzare i riferimenti in Frammenti di contenuto, per i contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ E siamo solo all’inizio. A seconda della complessità, un premio potrebbe esse
 
 La rappresentazione di queste interrelazioni può essere effettuata con i Riferimenti ai frammenti, in quanto sono compresi sia da te (l’autore) che dalle applicazioni headless.
 
-In qualità di autore, non sei responsabile della definizione di queste relazioni (attività svolta dall’architetto di contenuti durante la creazione del modello di frammento di contenuto), ma devi sapere come riconoscere e modificare i riferimenti.
+In qualità di autore, non sei responsabile della definizione di queste relazioni (operazione che viene eseguita dall’architetto dei contenuti durante la creazione del modello per frammenti di contenuto), ma devi sapere come riconoscere e modificare i riferimenti.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
@@ -117,6 +117,7 @@ Ora che hai imparato i riferimenti e la struttura nei frammenti di contenuto, il
       * [Applica la configurazione alla cartella Risorse](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Creazione di un frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Varianti - Authoring di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
    * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
@@ -124,7 +125,6 @@ Ora che hai imparato i riferimenti e la struttura nei frammenti di contenuto, il
       * [Modelli per frammenti di contenuto - Tipi di dati](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
       * [Modelli per frammenti di contenuto - Proprietà](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
-
 
 * Guide introduttive
    * [Creazione di una cartella di risorse: configurazione headless](/help/headless/setup/create-assets-folder.md)

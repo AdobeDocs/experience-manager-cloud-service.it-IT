@@ -2,7 +2,7 @@
 title: Creazione e gestione dei canali in Screens as a Cloud Service
 description: Questa pagina descrive come creare e gestire i canali in Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 1%
@@ -84,7 +84,7 @@ Sono disponibili i seguenti modelli quando si utilizza **Crea** procedura guidat
 
 | Modelli disponibili | Descrizione |
 |--- |--- |
-| Cartella canali | Consente di creare una cartella per archiviare la raccolta di canali. |
+| Cartella canali | Consente di creare una cartella in cui archiviare la raccolta di canali. |
 | Canale per sequenza | Consente di creare un canale che riproduce i componenti in sequenza (uno per uno in una presentazione). |
 | Canale schermo diviso barra a L sinistra o destra | Consente agli autori di contenuto di visualizzare diversi tipi di risorse in aree di dimensioni appropriate. |
 

@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.2.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.2.0 as a Cloud Service."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 34%
+source-wordcount: '1232'
+ht-degree: 32%
 
 ---
 
@@ -78,7 +78,7 @@ La seguente versione (2021.3.0) sarà del 25 marzo 2021.
 
 * Proprietà estese della console prodotti per visualizzare le risorse collegate e i frammenti di esperienza, con azioni per passare rapidamente al contenuto associato.
 
-* È stato rilasciato il sito di riferimento CIF Venia (24.02.2021), che include la versione più recente dei Componenti Core CIF 1.8.0. Fai riferimento a [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) per ulteriori dettagli.
+* È stato rilasciato il sito di riferimento CIF Venia (24.02.2021), che include la versione più recente dei Componenti Core CIF 1.8.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) per ulteriori dettagli.
 
 * È stata rilasciata la versione 1.8.0 dei componenti core CIF. Fai riferimento a [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) per ulteriori dettagli.
 
@@ -91,7 +91,7 @@ La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.2.0 è 
 ### Novità {#what-is-new-cloud-manager}
 
 
-* Ora i clienti di Assets possono scegliere quando e dove distribuire l’istanza di Brand Portal in modalità self-service tramite l’interfaccia utente di Cloud Manager. Ora per un programma normale (non sandbox) con soluzione Assets è possibile eseguire il provisioning di Brand Portal nell’ambiente di produzione. Il provisioning può essere eseguito una sola volta nell’ambiente di produzione.
+* Ora i clienti di Assets possono scegliere quando e dove distribuire l’istanza di Brand Portal in modalità self-service tramite l’interfaccia utente di Cloud Manager. Ora è possibile eseguire il provisioning di Brand Portal nell’ambiente di produzione per un programma regolare (non sandbox) con soluzione Assets. Il provisioning può essere eseguito una sola volta nell’ambiente di produzione.
 
 * L’archetipo del progetto AEM utilizzato nella creazione di progetti e sandbox è stato aggiornato alla versione 25.
 
