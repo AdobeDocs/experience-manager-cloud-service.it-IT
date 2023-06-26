@@ -3,10 +3,10 @@ title: Amministrazione delle istanze dei flussi di lavoro
 description: Scopri come amministrare le istanze dei flussi di lavoro
 feature: Administering
 role: Admin
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 75%
+source-wordcount: '1284'
+ht-degree: 74%
 
 ---
 
@@ -28,12 +28,21 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
 1. Seleziona **Istanze** per visualizzare l’elenco delle istanze del flusso di lavoro in esecuzione attualmente in corso.
 1. Nella barra superiore, nell’angolo destro, vengono visualizzate le istanze del flusso di lavoro **Flussi di lavoro in esecuzione**, **Stato**, e **Dettagli**.
-1. **Flussi di lavoro in esecuzione** mostra il numero di flussi di lavoro in esecuzione e il relativo stato. ad esempio, nelle immagini specificate, viene mostrato il numero di **Flussi di lavoro in esecuzione** e **Stato** dell&#39;AEM.
-   ![stato-integro](/help/sites-cloud/administering/assets/status-healthy.png)
-   ![non integro](/help/sites-cloud/administering/assets/status-unhealthy.png)
-1. Per **Dettagli stato** delle istanze del flusso di lavoro, fai clic su **Dettagli**, per visualizzare **numero di istanze di flussi di lavoro in esecuzione**, **istanze di flusso di lavoro completate**, **istanze di flusso di lavoro interrotte**, **istanze di flusso di lavoro non riuscite** e così via. ad esempio, di seguito sono riportate le immagini che mostrano **Dettagli stato** con **Stato: integro** e **Stato: non integro**.
-   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-   ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+1. **Flussi di lavoro in esecuzione** mostra il numero di flussi di lavoro in esecuzione e il relativo stato. ad esempio, nelle immagini specificate, viene mostrato il numero di **Flussi di lavoro in esecuzione** e **Stato** dell&#39;AEM:
+
+   * **Stato: integro**
+     ![stato-integro](/help/sites-cloud/administering/assets/status-healthy.png)
+
+   * **Stato: non integro**
+     ![non integro](/help/sites-cloud/administering/assets/status-unhealthy.png)
+
+1. Per **Dettagli stato** delle istanze del flusso di lavoro, fai clic su **Dettagli**, per visualizzare **numero di istanze di flussi di lavoro in esecuzione**, **istanze di flusso di lavoro completate**, **istanze di flusso di lavoro interrotte**, **istanze di flusso di lavoro non riuscite** e così via. ad esempio, di seguito sono riportate le immagini che mostrano **Dettagli stato** con:
+
+   * **Dettagli stato: integro**
+     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
+
+   * **Dettagli stato: Non integro**
+     ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
@@ -191,7 +200,7 @@ Viene fornito un flag a livello di modello di flusso di lavoro per indicare che 
 
 La proprietà *userMetadataPersistenceEnabled* è memorizzato su *jcr:content, nodo* del modello di flusso di lavoro. Questo flag viene reso persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
 
-L’illustrazione seguente mostra come configurare il flag su un flusso di lavoro.
+L’illustrazione seguente mostra come impostare il flag su un flusso di lavoro.
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
