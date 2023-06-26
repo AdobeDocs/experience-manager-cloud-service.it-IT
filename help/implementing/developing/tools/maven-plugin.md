@@ -2,9 +2,9 @@
 title: Plug-in Maven pacchetto di contenuti Adobe
 description: Utilizza il plug-in Maven Content Package per distribuire le applicazioni AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 6%
 
 ---
@@ -212,7 +212,7 @@ Il `mode` definisce il modo in cui il contenuto viene influenzato dall’archivi
 
 * **Unisci:** Vengono aggiunti contenuti nel pacchetto che non sono già presenti nell’archivio. Il contenuto presente sia nel pacchetto che nell’archivio rimane invariato. Nessun contenuto viene rimosso dall’archivio.
 * **Sostituisci:** Il contenuto del pacchetto non presente nell’archivio viene aggiunto all’archivio. Il contenuto nell’archivio viene sostituito con il contenuto corrispondente nel pacchetto. Il contenuto viene rimosso dall’archivio quando non esiste nel pacchetto.
-* **Aggiorna:** Il contenuto del pacchetto non presente nell’archivio viene aggiunto all’archivio. Il contenuto nell’archivio viene sostituito con il contenuto corrispondente nel pacchetto. Il contenuto esistente viene rimosso dall’archivio.
+* **Aggiorna:** Il contenuto del pacchetto non presente nell’archivio viene aggiunto all’archivio. Il contenuto nell’archivio viene sostituito con il contenuto corrispondente nel pacchetto.
 
 Se il filtro non contiene `mode` , il valore predefinito di `replace` viene utilizzato.
 
