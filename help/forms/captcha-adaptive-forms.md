@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
+source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 0%
@@ -70,17 +70,14 @@ Per utilizzare il CAPTCHA in Adaptive Forms:
 
    >[!NOTE]
    >
-   >Assicurati che il contenitore di configurazione selezionato durante la creazione del modulo adattivo contenga il servizio cloud reCAPTCHA. Puoi anche modificare le proprietà del modulo adattivo per cambiare il contenitore di configurazione associato al modulo.
+   > Assicurati che il contenitore di configurazione selezionato durante la creazione del modulo adattivo contenga il servizio cloud reCAPTCHA. Puoi anche modificare le proprietà del modulo adattivo per cambiare il contenitore di configurazione associato al modulo.
 
 1. Dal browser Componenti, trascina **[!UICONTROL Captcha]** nel modulo adattivo.
 
    >[!NOTE]
    >
-   >L’utilizzo di più componenti Captcha in un modulo adattivo non è supportato. Inoltre, si sconsiglia di utilizzare il CAPTCHA in un pannello contrassegnato per il caricamento lento o in un frammento.
-
-   >[!NOTE]
-   >
-   >Il Captcha è sensibile al tempo e scade tra circa un minuto. Pertanto, si consiglia di inserire il componente Captcha subito prima del pulsante Invia nel modulo adattivo.
+   > * L’utilizzo di più componenti Captcha in un modulo adattivo non è supportato. Inoltre, si sconsiglia di utilizzare il CAPTCHA in un pannello contrassegnato per il caricamento lento o in un frammento.
+   > * Il Captcha è sensibile al tempo e scade tra circa un minuto. Pertanto, si consiglia di inserire il componente Captcha subito prima del pulsante Invia nel modulo adattivo.
 
 1. Seleziona il componente Captcha aggiunto e tocca ![cmppr](assets/configure-icon.svg) per modificarne le proprietà.
 1. Specificate un titolo per il widget CAPTCHA. Il valore predefinito è **[!UICONTROL Captcha]**. Seleziona **[!UICONTROL Nascondi titolo]** se non desideri che il titolo venga visualizzato.
@@ -91,7 +88,7 @@ Per utilizzare il CAPTCHA in Adaptive Forms:
 
    >[!NOTE]
    >
-   >* Non selezionare **[!UICONTROL Predefinito]** dall’elenco a discesa del servizio Captcha come servizio CAPTCHA di Experience Manager predefinito è obsoleto.
+   > Non selezionare **[!UICONTROL Predefinito]** dall’elenco a discesa del servizio Captcha come servizio CAPTCHA di Experience Manager predefinito è obsoleto.
 
 1. Salva le proprietà.
 
@@ -109,7 +106,7 @@ Tocca il **[!UICONTROL Valore valuta]** nel modulo e creare le regole seguenti:
 
 >[!NOTE]
 >
->* Se selezioni reCAPTCHA v2 configuration with size as [!UICONTROL Invisibile] l’opzione mostra/nascondi non è applicabile.
+> Se selezioni reCAPTCHA v2 configuration with size as [!UICONTROL Invisibile] l’opzione mostra/nascondi non è applicabile.
 
 ### Convalida CAPTCHA {#validate-captcha}
 
