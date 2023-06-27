@@ -2,9 +2,9 @@
 title: Struttura dell’interfaccia AEM
 description: L’interfaccia utente dell’AEM ha diversi principi di base ed è composta da diversi elementi chiave
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '893'
 ht-degree: 4%
 
 ---
@@ -19,13 +19,13 @@ L’interfaccia utente dell’AEM ha diversi principi di base ed è composta da 
 
 L’interfaccia utente supporta sia i dispositivi mobili che quelli desktop, ma invece di creare due stili, l’AEM utilizza uno stile che funziona per tutti gli schermi e i dispositivi.
 
-Tutti i moduli utilizzano lo stesso layout di base, che nell’AEM può essere visto come:
+Tutti i moduli utilizzano lo stesso layout di base:
 
 ![Console di AEM Sites](assets/ui-sites-console.png)
 
-Il layout rispetta uno stile di progettazione reattivo e si adatta alle dimensioni del dispositivo o della finestra in uso.
+Il layout aderisce a uno stile di progettazione reattivo e si adatta alle dimensioni del dispositivo, della finestra o di entrambi, che si sta utilizzando.
 
-Ad esempio, quando la risoluzione scende al di sotto di 1024 px (come su un dispositivo mobile), il display viene regolato di conseguenza:
+Ad esempio, quando la risoluzione scende al di sotto di 1024 pixel (come su un dispositivo mobile), il display viene regolato di conseguenza:
 
 ![Visualizzazione mobile della console Sites](assets/ui-sites-mobile.png)
 
@@ -35,11 +35,11 @@ Ad esempio, quando la risoluzione scende al di sotto di 1024 px (come su un disp
 
 La barra dell’intestazione mostra gli elementi globali, tra cui:
 
-* Il logo e lo specifico prodotto/soluzione attualmente in uso; per l’AEM questo costituisce anche un collegamento alla navigazione globale
+* Il logo e il prodotto/soluzione specifico attualmente in uso. Per l’AEM, questo elemento costituisce anche un collegamento alla navigazione globale
 * Ricerca
 * Icona per accedere alle risorse della guida
 * Icona per accedere ad altre soluzioni
-* Indicatore (e accesso) di tutti gli avvisi o elementi della casella in entrata che ti aspettano
+* Indicatore e accesso a tutti gli avvisi o gli elementi della casella in entrata che ti aspettano
 * L’icona utente, insieme a un collegamento per la gestione del profilo
 
 ### Barra degli strumenti {#toolbar}
@@ -50,7 +50,7 @@ In qualsiasi posizione, la barra degli strumenti mostra le azioni attualmente di
 
 ![Barra degli strumenti di AEM Sites](assets/ui-sites-toolbar.png)
 
-Dipende anche dal fatto che una risorsa sia attualmente selezionata:
+Dipende anche dalla selezione di una risorsa:
 
 ![Barra degli strumenti di AEM Sites selezionata](assets/ui-sites-toolbar-selected.png)
 
@@ -74,7 +74,7 @@ Quando si creano le pagine, le aree strutturali sono le seguenti.
 
 ### Frame del contenuto {#content-frame}
 
-Il rendering del contenuto della pagina viene eseguito nel frame del contenuto. Il frame del contenuto è completamente indipendente dall’editor, per garantire che non vi siano conflitti dovuti a CSS o JavaScript.
+Il rendering del contenuto della pagina viene eseguito nel frame del contenuto. Il frame del contenuto è indipendente dall’editor, per garantire che non vi siano conflitti dovuti a CSS o JavaScript.
 
 La cornice di contenuto si trova nella sezione destra della finestra, sotto la barra degli strumenti.
 
@@ -95,9 +95,9 @@ Il frame dell’editor è un contenitore (astratto) per tutti gli elementi di au
 
 ### Pannello laterale {#side-panel}
 
-Contiene tre schede predefinite. Il **Risorse** e **Componenti** Le schede consentono di selezionare tali elementi, trascinarli dal pannello e rilasciarli sulla pagina. Il **Struttura contenuto** consente di controllare la gerarchia dei contenuti nella pagina.
+Contiene tre schede predefinite. Il **Risorse** e **Componenti** Le schede consentono di selezionare tali elementi, trascinarli dal pannello e rilasciarli sulla pagina. Il **Struttura contenuto** Questa scheda ti consente di controllare la gerarchia dei contenuti nella pagina.
 
-Il pannello laterale è nascosto per impostazione predefinita. Se questa opzione è selezionata, verrà visualizzata sul lato sinistro oppure scorrerà per coprire l&#39;intera finestra quando la dimensione della finestra è inferiore a 1024 px, come ad esempio in un dispositivo mobile.
+Il pannello laterale è nascosto per impostazione predefinita. Se questa opzione è selezionata, viene visualizzata sul lato sinistro o, se la larghezza della finestra è inferiore a 1024 pixel, scorre in avanti per coprire l’intera finestra come, ad esempio, su un dispositivo mobile.
 
 ![Pannello laterale](assets/ui-side-panel.png)
 
@@ -109,7 +109,7 @@ Nella scheda Risorse puoi selezionare dall’intervallo di risorse. Puoi anche f
 
 ### Pannello laterale - Gruppi di risorse {#side-panel-asset-groups}
 
-Nella scheda Risorse è disponibile un elenco a discesa che puoi utilizzare per selezionare i gruppi di risorse specifici.
+Nella scheda Risorse è disponibile un elenco a discesa che consente di selezionare i gruppi di risorse specifici.
 
 ![Gruppi di risorse](assets/ui-side-panel-asset-groups.png)
 
@@ -121,13 +121,13 @@ Nella scheda Componenti puoi selezionare uno dei componenti disponibili. Puoi an
 
 ### Pannello laterale - Struttura contenuto {#side-panel-content-tree}
 
-Nella scheda Struttura contenuto è possibile visualizzare la gerarchia del contenuto nella pagina. Facendo clic su una voce nella scheda, si passa a e si seleziona l’elemento nella pagina all’interno dell’editor.
+Nella scheda Struttura contenuto è possibile visualizzare la gerarchia del contenuto della pagina. Facendo clic su una voce nella scheda, si passa a e si seleziona l’elemento nella pagina all’interno dell’editor.
 
 ![Struttura contenuto](assets/ui-side-panel-content-tree.png)
 
 ### Sovrapposizioni {#overlays}
 
-Questi si sovrappongono alla cornice del contenuto e vengono utilizzati dal [livelli](#layer) realizzare i meccanismi che consentono di interagire (in modo completamente trasparente) con i componenti e i relativi contenuti.
+Sovrappone la cornice del contenuto e viene utilizzato da [livelli](#layer) realizzare i meccanismi necessari per interagire in modo trasparente con i componenti e i relativi contenuti.
 
 Le sovrapposizioni sono live nel frame dell’editor (con tutti gli altri elementi di authoring della pagina), anche se in realtà sovrappongono i componenti appropriati nel frame del contenuto.
 
@@ -146,7 +146,7 @@ L’AEM include diversi livelli già implementati per l’authoring delle pagine
 
 >[!NOTE]
 >
->I livelli sono un concetto potente che influisce sulla visualizzazione e sull’interazione dell’utente con il contenuto della pagina. Quando sviluppate i vostri livelli dovete assicurarvi che il livello si ripulisca quando viene chiuso.
+>I livelli sono un concetto potente che influisce sulla visualizzazione e sull’interazione dell’utente con il contenuto della pagina. Quando sviluppate i vostri livelli, assicuratevi che il livello si ripulisca quando esce.
 
 ### Switcher livello {#layer-switcher}
 
@@ -158,7 +158,7 @@ Il selettore livelli è disponibile come elenco a discesa dalla barra degli stru
 
 ### Barra degli strumenti del componente {#component-toolbar}
 
-Ogni istanza di un componente mostra la propria barra degli strumenti quando fa clic su di esso (una volta o con un doppio clic lento). La barra degli strumenti contiene le azioni specifiche (ad esempio, copia, incolla, open-editor) disponibili per l’istanza del componente nella pagina.
+Ogni istanza di un componente mostra la propria barra degli strumenti quando viene selezionata (una volta o con un doppio clic lento). La barra degli strumenti contiene le azioni specifiche (ad esempio, copia, incolla, open-editor) disponibili per l’istanza del componente nella pagina.
 
 A seconda dello spazio disponibile, le barre degli strumenti del componente sono posizionate nell’angolo superiore o inferiore destro del componente appropriato.
 
@@ -168,4 +168,4 @@ A seconda dello spazio disponibile, le barre degli strumenti del componente sono
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Per ulteriori informazioni tecniche, vedere [Set di documentazione JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) per l’editor pagina.
+Per ulteriori informazioni tecniche, vedere [Set di documentazione JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) per l’editor pagina.

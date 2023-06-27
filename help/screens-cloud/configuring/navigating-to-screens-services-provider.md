@@ -2,9 +2,9 @@
 title: Navigazione al provider di servizi Screens
 description: Questa pagina descrive come accedere a Screens Services Provider.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '263'
 ht-degree: 6%
 
 ---
@@ -15,23 +15,23 @@ ht-degree: 6%
 
 **Provider servizi Screens**, consente all’autore di contenuti, agli sviluppatori e agli amministratori di gestire le visualizzazioni e i lettori per la riproduzione dei contenuti una volta aggiunti ai canali. Una volta dato l’accesso ad AEM Cloud Service, gli utenti dovrebbero poter accedere a Screens Services Provider.
 
-Questa sezione descrive come impostare il provider di servizi Screens.
+Questa sezione descrive come configurare il provider di servizi Screens.
 
 
 ## Obiettivo {#objective}
 
-Nella sezione seguente viene illustrato come configurare e configurare il provider di servizi Screens.
+Nella sezione seguente viene illustrato come configurare e impostare il provider di servizi Screens.
 
-## Passaggi per configurare il provider di servizi Screens {#screens-services-provider}
+## Procedura per configurare il provider di servizi Screens {#screens-services-provider}
 
-Per configurare il provider di servizi Screens, effettuare le seguenti operazioni:
+Per configurare il provider di servizi Screens, effettua le seguenti operazioni:
 
 1. Passa a Screens Services Provider da [qui](https://experience.adobe.com/screens).
 
    >[!CAUTION]
    >Se hai accesso a più organizzazioni, assicurati di aver effettuato l’accesso a quella corretta. Per cambiare organizzazione, fai clic sul nome dell’organizzazione nell’angolo in alto a destra della schermata e scegli l’organizzazione a cui desideri accedere.
 
-2. Fai clic sull’icona a forma di ingranaggio accanto a Progetto (angolo in alto a sinistra)
+2. Fai clic sull’icona a forma di ingranaggio accanto a Progetto (angolo superiore sinistro)
 
    ![immagine](/help/screens-cloud/assets/configure/configure-screens0.png)
 
@@ -41,7 +41,7 @@ Per configurare il provider di servizi Screens, effettuare le seguenti operazion
 
    ![immagine](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Fai clic su **Salva** per connettersi al provider di contenuti Screens
+4. Clic **Salva** per connettersi al provider di contenuti Screens
 
 5. Seleziona **Canali** dalla barra di navigazione a sinistra e fai clic su **apri nel provider di contenuti**.
 
@@ -53,4 +53,4 @@ Per configurare il provider di servizi Screens, effettuare le seguenti operazion
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come impostare il provider di servizi Screens, è possibile passare a [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) per ulteriori dettagli.
+Dopo aver appreso come impostare il provider di servizi Screens, passa a [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) per ulteriori dettagli.

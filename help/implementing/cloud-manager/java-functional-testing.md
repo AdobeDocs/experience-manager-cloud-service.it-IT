@@ -1,17 +1,17 @@
 ---
-title: Test funzionali Java
-description: Scopri come scrivere test funzionali Java per AEM as a Cloud Service
+title: Java&trade; test funzionali
+description: Scopri come scrivere Java&trade; test funzionali per AEM as a Cloud Service
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 93%
+source-wordcount: '844'
+ht-degree: 69%
 
 ---
 
-# Test funzionale Java
+# Test funzionali Java™
 
-Scopri come scrivere test funzionali Java per AEM as a Cloud Service
+Scopri come scrivere test funzionali Java™ per AEM as a Cloud Service
 
 ## Guida introduttiva ai test funzionali {#getting-started-functional-tests}
 
@@ -31,13 +31,13 @@ Una volta ottenuto il contenuto della cartella `it.tests`, puoi utilizzarla come
 
 Per scrivere test funzionali personalizzati è possibile utilizzare gli stessi strumenti impiegati da Adobe per la scrittura dei test funzionali del prodotto. Per la scrittura dei test, puoi consultare i [test funzionali del prodotto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub come esempio.
 
-Il codice per i test funzionali personalizzati è il codice Java incluso nella cartella `it.tests` del progetto. Deve produrre un unico JAR con tutti i test funzionali. Se la generazione produce più di un JAR di test, quello selezionato non è deterministico. Se non viene prodotto alcun JAR di test, il passaggio di test viene superato per impostazione predefinita. Per dei test di esempio,[consulta la sezione Archetipo del progetto AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests).
+Il codice per i test funzionali personalizzati è il codice Java™ in `it.tests` del progetto. Deve produrre un unico JAR con tutti i test funzionali. Se la generazione produce più di un JAR di test, quello selezionato non è deterministico. Se non viene prodotto alcun JAR di test, il passaggio di test viene superato per impostazione predefinita. Per dei test di esempio,[consulta la sezione Archetipo del progetto AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests).
 
-I test vengono eseguiti su un’infrastruttura di test gestita da Adobe, che prevede almeno due istanze di Author, due istanze di Publisher e una configurazione Dispatcher. Ciò significa che i test funzionali personalizzati vengono eseguiti sull’intero stack di AEM.
+I test vengono eseguiti su un’infrastruttura di test gestita dagli Adobi che include almeno due istanze di authoring, due istanze di pubblicazione e una configurazione di Dispatcher. Questa configurazione significa che i test funzionali personalizzati vengono eseguiti sull’intero stack AEM.
 
 ### Struttura dei test funzionali {#functional-tests-structure}
 
-I test funzionali personalizzati devono essere inclusi come file JAR separati prodotti dalla stessa build Maven degli artefatti da distribuire in AEM. Generalmente si tratta di un modulo Maven separato. Il file JAR risultante deve contenere tutte le dipendenze richieste e generalmente viene creato con il `maven-assembly-plugin` utilizzando il descrittore `jar-with-dependencies`.
+I test funzionali personalizzati devono essere inclusi come file JAR separati prodotti dalla stessa build Maven degli artefatti da distribuire in AEM. In genere, questa build sarebbe un modulo Maven separato. Il file JAR risultante deve contenere tutte le dipendenze richieste e generalmente viene creato con il `maven-assembly-plugin` utilizzando il descrittore `jar-with-dependencies`.
 
 Inoltre, l’intestazione del manifesto `Cloud-Manager-TestType` del file JAR deve essere impostata su `integration-test`.
 
@@ -81,9 +81,9 @@ Ad esempio, una classe denominata `com.myco.tests.aem.it.ExampleIT` verrebbe ese
 
 Inoltre, per escludere il codice di test dal controllo di copertura dell’analisi del codice, il codice di test deve trovarsi all’interno di un pacchetto denominato `it` (il filtro di esclusione della copertura è `**/it/**/*.java`).
 
-Le classi di test devono essere normali test JUnit. L’infrastruttura di test è progettata e configurata per la compatibilità con le convenzioni utilizzate dalla libreria di test `aem-testing-clients`. Si consiglia ai team di sviluppo di utilizzare questa libreria e seguire le relative best practice.
+Le classi di test devono essere normali test JUnit. L’infrastruttura di test è progettata e configurata per la compatibilità con le convenzioni utilizzate dalla libreria di test `aem-testing-clients`. Gli sviluppatori sono invitati a utilizzare questa libreria e a seguire le relative best practice.
 
-Per ulteriori informazioni, consulta l’[`aem-testing-clients` archivio di GitHub](https://github.com/adobe/aem-testing-clients).
+Consulta [`aem-testing-clients` Archivio GitHub](https://github.com/adobe/aem-testing-clients) per ulteriori dettagli.
 
 >[!TIP]
 >
@@ -109,7 +109,7 @@ Per ulteriori informazioni, consulta l’[`aem-testing-clients` archivio di GitH
 
 >[!NOTE]
 >
-> Se hai bisogno di più risorse, crea un caso per l’Assistenza clienti e descrivi il tuo caso d’uso; il nostro team esaminerà la tua richiesta e fornirà l&#39;assistenza appropriata.
+> Se hai bisogno di più risorse, crea un caso di assistenza clienti e descrivi il tuo caso d’uso. Il team di Adobe esamina la tua richiesta e fornisce assistenza adeguata.
 
 
 ### Esecuzione locale dei test {#local-test-execution}
@@ -118,9 +118,9 @@ Prima di attivare i test funzionali in una pipeline di Cloud Manager, si consigl
 
 #### Esecuzione in un IDE {#running-in-an-ide}
 
-Poiché le classi di test sono test JUnit, possono essere eseguite da IDE Java principali come Eclipse, IntelliJ e NetBeans. Poiché i test funzionali del prodotto e i test funzionali personalizzati sono basati sulla stessa tecnologia, entrambi possono essere eseguiti a livello locale copiando i test del prodotto nei test personalizzati.
+Poiché le classi di test sono test JUnit, possono essere eseguite da IDE Java™ principali come Eclipse, IntelliJ e NetBeans. Poiché i test funzionali del prodotto e i test funzionali personalizzati sono basati sulla stessa tecnologia, entrambi possono essere eseguiti a livello locale copiando i test del prodotto nei test personalizzati.
 
-Tuttavia, durante l’esecuzione di questi test, è necessario impostare diverse proprietà di sistema previste da `aem-testing-clients` (e la libreria sottostante Sling Testing Client).
+Tuttavia, durante l’esecuzione di questi test, è necessario impostare diverse proprietà di sistema previste dalla `aem-testing-clients` (e la libreria sottostante Sling Testing Client).
 
 Le proprietà del sistema sono indicate di seguito.
 
@@ -128,11 +128,11 @@ Le proprietà del sistema sono indicate di seguito.
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
 | `sling.it.instances` | numero di istanze, per corrispondere al servizio cloud deve essere impostato su `2` | `2` |
 | `sling.it.instance.url.1` | Deve essere impostato sull’URL dell’ambiente Author | `http://localhost:4502` |
-| `sling.it.instance.runmode.1` | Modalità di esecuzione della prima istanza; deve essere impostata su `author` | `author` |
+| `sling.it.instance.runmode.1` | modalità di esecuzione della prima istanza, deve essere impostata su `author` | `author` |
 | `sling.it.instance.adminUser.1` | Deve essere impostata sull’utente amministratore dell’ambiente Author. | `admin` |
 | `sling.it.instance.adminPassword.1` | Deve essere impostata sulla password dell’amministratore dell’ambiente Author. |                         |
 | `sling.it.instance.url.2` | Deve essere impostata sull’URL dell’ambiente Publish | `http://localhost:4503` |
-| `sling.it.instance.runmode.2` | Modalità di esecuzione della seconda istanza; deve essere impostata su `publish` | `publish` |
+| `sling.it.instance.runmode.2` | la modalità di esecuzione della seconda istanza deve essere impostata su `publish` | `publish` |
 | `sling.it.instance.adminUser.2` | Deve essere impostata sull’utente amministratore dell’ambiente Publish. | `admin` |
 | `sling.it.instance.adminPassword.2` | Deve essere impostata sulla password dell’amministratore dell’ambiente Publish. |                         |
 

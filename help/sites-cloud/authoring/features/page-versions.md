@@ -2,10 +2,10 @@
 title: Utilizzo delle versioni di una pagina
 description: Creare, confrontare e ripristinare le versioni di una pagina
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
 source-wordcount: '1502'
-ht-degree: 62%
+ht-degree: 36%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi creare una versione della risorsa da:
    ![Versioni nella barra Timeline](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
 1. Seleziona **Salva come versione**.
-1. Immetti un **Etichetta** e **Commento** se necessario.
+1. Immetti un **Etichetta** e **Commento**, se necessario.
 
    ![Aggiunta dell’etichetta per una versione](/help/sites-cloud/authoring/assets/versions-add-label.png)
 
@@ -53,7 +53,7 @@ Puoi creare una versione della risorsa da:
 1. Passa alla pagina per la quale desideri creare una versione.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Seleziona la **Crea** dalla barra degli strumenti.
-1. Viene aperta la stessa finestra di dialogo. Puoi immettere un’**etichetta** e un **commento**, se necessario.
+1. Viene visualizzata la stessa finestra di dialogo. È possibile immettere un valore **Etichetta** e un **Commento**, se necessario.
 1. Conferma la nuova versione selezionando **Crea**.
 
 La timeline viene aperta con le informazioni aggiornate per indicare che si tratta di una nuova versione.
@@ -70,11 +70,11 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 
    * **Ripristina versione**
 
-     Ripristina le versioni delle pagine specificate nella cartella attualmente selezionata; questo può anche includere il ripristino di pagine precedentemente eliminate.
+     Ripristina le versioni delle pagine specificate nella cartella attualmente selezionata. Può inoltre includere il ripristino di pagine precedentemente eliminate.
 
    * **Ripristina albero**
 
-     Ripristinare la versione dell&#39;intera struttura così come appariva a una data e un&#39;ora specificate può includere pagine precedentemente eliminate.
+     Ripristinare una versione dell&#39;intera struttura in base a una data e un&#39;ora specificate. Può anche includere pagine precedentemente eliminate.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 >1. Crea versioni di qualsiasi pagina.
 >1. Le etichette iniziali e i nomi dei nodi di versione sono 1.0, 1.1, 1.2 e così via.
 >1. Ripristina la prima versione, ovvero 1.0.
->1. Crea di nuovo le nuove versioni.
+>1. Crea di nuovo le versioni.
 >1. Le etichette e i nomi dei nodi generati sono ora 1.0.0, 1.0.1, 1.0.2 e così via.
 
 ### Ripristina una versione {#revert-to-a-version}
@@ -103,7 +103,7 @@ Per **ripristinare** la pagina selezionata in una versione precedente:
 
 ### Ripristina versione {#restore-version}
 
-Questo metodo può essere utilizzato per ripristinare versioni di pagine specifiche all&#39;interno della cartella corrente; questo può anche includere il ripristino di pagine eliminate precedentemente:
+Questo metodo può essere utilizzato per ripristinare versioni di pagine specifiche all’interno della cartella corrente. Può inoltre includere il ripristino di pagine precedentemente eliminate:
 
 1. Vai alla cartella richiesta e [selezionala](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 
@@ -113,7 +113,7 @@ Questo metodo può essere utilizzato per ripristinare versioni di pagine specifi
    >
    >Se:
    >
-   >* hai selezionato una singola pagina che non ha mai avuto pagine figlie,
+   >* ha selezionato una singola pagina che non ha mai avuto pagine figlie,
    >* o nessuna delle pagine della cartella dispone di versioni,
    >
    >La visualizzazione diventa vuota perché non sono presenti versioni applicabili.
@@ -138,7 +138,7 @@ Questo metodo può essere utilizzato per ripristinare versioni di pagine specifi
 
 ### Ripristina albero {#restore-tree}
 
-Questo metodo può essere utilizzato per ripristinare una versione di una struttura in una data e in un&#39;ora specificate; possono essere incluse le pagine precedentemente eliminate:
+Questo metodo può essere utilizzato per ripristinare una versione di una struttura in una data e in un&#39;ora specificate. Può includere pagine precedentemente eliminate:
 
 1. Vai alla cartella richiesta e [selezionala](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 
@@ -146,7 +146,7 @@ Questo metodo può essere utilizzato per ripristinare una versione di una strutt
 
    ![Ripristina albero](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
-1. Utilizza il selettore data e ora in **Versioni più recenti alla data** per selezionare un&#39;altra versione della struttura, quella da ripristinare.
+1. Utilizza il selettore data e ora in **Ultime versioni alla data** in modo da poter selezionare un&#39;altra versione della struttura, quella da ripristinare.
 
 1. Imposta il contrassegno **Pagine non versionate salvate** se necessario:
 
@@ -198,12 +198,12 @@ Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di 
 
 Poiché la creazione di contenuti è un processo continuo e collaborativo, lo scopo di Timewarp è quello di consentire agli autori di tenere traccia del sito web pubblicato nel tempo, in modo che possano capire come è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione.
 
-Per effettuare questo collegamento:
+Per utilizzare questa funzione:
 
 * Il sistema cerca la versione della pagina che era attiva al momento selezionato.
-* In altre parole, la versione mostrata era stata creata/attivata *prima* del momento temporale selezionato in Timewarp.
-* Quando si passa a una pagina che è stata successivamente eliminata, questa viene riprodotta purché nell’archivio siano ancora disponibili le precedenti versioni di tale pagina.
-* Se non viene individuata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di authoring, in modo da evitare un errore 404 di pagina non trovata, che impedirebbe la navigazione.
+* Significa che la versione mostrata è stata creata/attivata *prima di* il momento selezionato in Timewarp.
+* Quando si passa a una pagina che è stata eliminata, viene eseguito anche il rendering, purché nell’archivio siano ancora disponibili le versioni precedenti della pagina.
+* Se non viene trovata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di authoring, in modo da evitare un errore 404 di pagina non trovata, che impedirebbe la navigazione.
 
 ### Utilizzo di Timewarp {#using-timewarp}
 
@@ -213,7 +213,7 @@ Timewarp è un [modalità](/help/sites-cloud/authoring/fundamentals/environment-
 
    ![Modalità Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. Nella finestra di dialogo, imposta una data e un’ora di destinazione e tocca o fai clic su **Imposta data**. Se non si seleziona un’ora, per impostazione predefinita verrà utilizzata l’ora corrente.
+1. Nella finestra di dialogo, imposta una data e un’ora di destinazione e fai clic su **Imposta data**. Se non si seleziona un&#39;ora, per impostazione predefinita viene utilizzata l&#39;ora corrente.
 
    ![Data di destinazione in Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
@@ -223,13 +223,13 @@ Timewarp è un [modalità](/help/sites-cloud/authoring/fundamentals/environment-
 
 ### Limitazioni di Timewarp {#timewarp-limitations}
 
-Timewarp semplifica al massimo la riproduzione di una pagina in un determinato momento. Tuttavia, a causa delle complessità dell’authoring continuo di contenuti in AEM, questo non è sempre possibile. Tieni presenti queste limitazioni quando utilizzi Timewarp.
+Timewarp semplifica al massimo la riproduzione di una pagina in un determinato momento. Tuttavia, a causa delle complessità dell’authoring continuo dei contenuti in AEM, questa riproduzione non è sempre possibile. Tieni presenti queste limitazioni quando utilizzi Timewarp.
 
-* **Timewarp funziona in base alle pagine pubblicate**: Timewarp funziona correttamente solo se la pagina è stata già pubblicata. In caso contrario viene mostrata la pagina corrente nell’ambiente di authoring.
+* **Timewarp funziona in base alle pagine pubblicate** - Timewarp funziona correttamente solo se la pagina è stata già pubblicata. In caso contrario, Timewarp mostra la pagina corrente nell’ambiente di authoring.
 * **Timewarp utilizza le versioni di pagina** - Se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa viene riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
 * **Le versioni rimosse influiscono su Timewarp**: se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta.
-* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](#revert-to-a-version).
-* **Timewarp si basa solo sul contenuto della pagina**: se sono stati modificati alcuni elementi (come codice, css, risorse/immagini ecc.) per il rendering del sito web, la visualizzazione sarà diversa da come era all’origine, poiché per tali elementi non vengono conservate precedenti versioni nell’archivio.
+* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando [ripristinare](#revert-to-a-version).
+* **Timewarp si basa sul contenuto della pagina** - Se sono stati modificati alcuni elementi per il rendering del sito web, ad esempio codice, css e risorse, la visualizzazione è diversa da quella originale. Per tali elementi non viene creata una versione nell&#39;archivio.
 
 >[!CAUTION]
 >

@@ -1,17 +1,17 @@
 ---
 title: Lo strumento Copia contenuto
-description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai propri ambienti di produzione as a Cloud Service per l’AEM in ambienti più bassi a scopo di test.
+description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service ad ambienti inferiori a scopo di test.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 55%
+source-wordcount: '1199'
+ht-degree: 41%
 
 ---
 
 # Lo strumento Copia contenuto {#content-copy}
 
-Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai propri ambienti di produzione as a Cloud Service per l’AEM in ambienti più bassi a scopo di test.
+Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service ad ambienti inferiori a scopo di test.
 
 ## Introduzione {#introduction}
 
@@ -43,7 +43,7 @@ Per utilizzare lo strumento di copia del contenuto, sono necessarie determinate 
 
 ## Creazione di un set di contenuti {#create-content-set}
 
-Prima di poter copiare un contenuto, è necessario definire un set di contenuti. Una volta definiti, i set di contenuti possono essere riutilizzati per copiare il contenuto. Per creare un set di contenuti, effettua le seguenti operazioni.
+Prima di poter copiare qualsiasi contenuto, è necessario definire un set di contenuti. Una volta definiti, i set di contenuti possono essere riutilizzati per copiare il contenuto. Per creare un set di contenuti, segui la procedura riportata di seguito.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
@@ -51,7 +51,7 @@ Prima di poter copiare un contenuto, è necessario definire un set di contenuti.
 
 1. Dalla schermata **Ambienti**, passa alla pagina **Set di contenuti**.
 
-1. Tocca o fai clic sul pulsante **Aggiungi set di contenuti** in alto a destra dello schermo.
+1. In alto a destra nella schermata, fai clic su **Aggiungi set di contenuti**.
 
    ![Set di contenuti](assets/content-sets.png)
 
@@ -62,16 +62,16 @@ Prima di poter copiare un contenuto, è necessario definire un set di contenuti.
 1. Nella scheda **Percorsi del contenuto** della procedura guidata, specifica i percorsi del contenuto modificabile da includere nel set di contenuti.
 
    1. Immetti il percorso nel campo **Aggiungi percorso di inclusione**.
-   1. Tocca o fai clic sul pulsante **Aggiungi percorso** per aggiungere il percorso al set di contenuti.
-   1. Se necessario, tocca o fai clic di nuovo sul pulsante **Aggiungi percorso**.
+   1. Clic **Aggiungi percorso** per aggiungere il percorso al set di contenuti.
+   1. Clic **Aggiungi percorso** se necessario.
       * Sono consentiti fino a 50 percorsi.
 
    ![Aggiungi percorsi al set di contenuti](assets/add-content-set-paths.png)
 
-1. Se devi perfezionare o limitare il set di contenuti, è possibile escludere i percorsi secondari.
+1. Se devi perfezionare o limitare il set di contenuti, i percorsi secondari possono essere esclusi.
 
-   1. Nell’elenco dei percorsi inclusi, tocca o fai clic sull’icona **Aggiungi percorsi secondari di esclusione** accanto al percorso da limitare.
-   1. Inserisci il percorso secondario da escludere sotto il percorso selezionato.
+   1. Nell’elenco dei percorsi inclusi, fai clic su **Aggiungi percorsi secondari di esclusione** accanto al percorso che si desidera limitare.
+   1. Immettere il percorso secondario da escludere sotto il percorso selezionato.
    1. Tocca o fai clic su **Escludi percorso**.
    1. Tocca o fai clic di nuovo su **Aggiungi percorsi secondari di esclusione** per aggiungere altri percorsi da escludere, se necessario.
       * I percorsi esclusi devono essere relativi al percorso incluso.
@@ -79,10 +79,10 @@ Prima di poter copiare un contenuto, è necessario definire un set di contenuti.
 
    ![Esclusione dei percorsi](assets/add-content-set-paths-excluded.png)
 
-1. Se necessario, è possibile modificare i percorsi specificati.
+1. Se necessario, puoi modificare i percorsi specificati.
 
-   1. Tocca o fai clic sulla X accanto ai percorsi secondari esclusi per eliminarli.
-   1. Tocca o fai clic sul pulsante con i puntini di sospensione accanto ai percorsi per visualizzare le opzioni **Modifica** ed **Elimina**.
+   1. Fai clic sulla X accanto ai percorsi secondari esclusi per eliminarli.
+   1. Fai clic sul pulsante con i puntini di sospensione accanto ai percorsi per visualizzare **Modifica** e **Elimina** opzioni.
 
    ![Modifica dell’elenco dei percorsi](assets/add-content-set-excluded-paths.png)
 
@@ -92,18 +92,18 @@ Il set di contenuti può ora essere utilizzato per copiare il contenuto tra ambi
 
 ## Modifica di un set di contenuti {#edit-content-set}
 
-Segui passaggi simili a quelli impiegati per la creazione del contenuto. Invece di toccare o fare clic su **Aggiungi set di contenuti**, seleziona un set esistente dalla console e quindi **Modifica** dal menu con i puntini di sospensione.
+Segui passaggi simili a quelli impiegati per la creazione del contenuto. Invece di fare clic su **Aggiungi set di contenuti**, seleziona un set esistente dalla console e fai clic su **Modifica** dal menu con i puntini di sospensione.
 
 ![Modifica set di contenuti](assets/edit-content-set.png)
 
-Tieni presente che quando modifichi il set di contenuti, potrebbe essere necessario espandere i percorsi configurati per visualizzare i percorsi secondari esclusi.
+Quando modifichi il set di contenuti, puoi espandere i percorsi configurati per visualizzare i percorsi secondari esclusi.
 
 ## Copia del contenuto {#copy-content}
 
-Una volta creato un set di contenuti, puoi utilizzarlo per copiare il contenuto. Per copiare il contenuto, effettua le seguenti operazioni.
+Dopo aver creato un set di contenuti, puoi utilizzarlo per copiare il contenuto. Segui questi passaggi per copiare il contenuto.
 
 >[!NOTE]
-> La copia del contenuto non deve essere avviata in un ambiente mentre un [trasferimento dei contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) è in esecuzione in tale ambiente.
+> Non utilizzare la copia del contenuto in un ambiente durante un [trasferimento dei contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) è in esecuzione in tale ambiente.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
@@ -171,9 +171,9 @@ A tale scopo, il **Attività copia contenuto** , seleziona la **Annulla** dal me
 
 >[!NOTE]
 >
->Quando annulli un’operazione di copia del contenuto, questa può tradursi in una copia parziale del contenuto nell’ambiente di destinazione. Questo può lasciare l’ambiente di destinazione inutilizzabile.
+>Quando annulli un’operazione di copia del contenuto, questa può tradursi in una copia parziale del contenuto nell’ambiente di destinazione. Questa situazione può lasciare l’ambiente di destinazione inutilizzabile.
 >
->Se l’ambiente è in tale stato a causa della cancellazione, contatta l’Assistenza clienti di Adobe.
+>Se l’ambiente si trova in questo stato a causa di una cancellazione, contatta l’Assistenza clienti Adobe.
 
 ## Limitazioni {#limitations}
 
@@ -186,5 +186,5 @@ Lo strumento Copia contenuto presenta le seguenti limitazioni.
 * È possibile specificare fino a 50 percorsi per set di contenuti. Non ci sono limitazioni per i percorsi esclusi.
 * Lo strumento di copia del contenuto non deve essere utilizzato come strumento di duplicazione o mirroring perché non può tenere traccia del contenuto spostato o eliminato nell’origine.
 * Lo strumento di copia del contenuto non dispone di funzionalità di controllo delle versioni e non è in grado di rilevare automaticamente il contenuto modificato o appena creato nell&#39;ambiente di origine di un set di contenuti dall&#39;ultima operazione di copia del contenuto.
-   * Se desideri aggiornare l’ambiente di destinazione con le modifiche apportate al contenuto solo dall’ultima operazione di copia del contenuto, devi creare un set di contenuti e specificare i percorsi nell’istanza di origine in cui sono state apportate le modifiche dall’ultima operazione di copia del contenuto.
+   * Se desideri aggiornare l’ambiente di destinazione solo con le modifiche apportate al contenuto, dall’ultima operazione di copia del contenuto devi creare un set di contenuti. Quindi, specifica i percorsi nell’istanza sorgente in cui sono state apportate le modifiche dall’ultima operazione di copia del contenuto.
 * Le informazioni sulla versione non sono incluse in una copia del contenuto.
