@@ -4,7 +4,7 @@ description: Scopri come utilizzare modelli per frammenti di contenuto AEM per c
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 34%
@@ -43,7 +43,7 @@ Ad esempio, puoi creare un modello che rappresenta la struttura dati di un viagg
    * **Titolo modello** - Breve etichetta del modello che in genere indica lo scopo del modello. È possibile chiamare il nuovo modello `Adventure`.
    * **Abilita modello** - Questa opzione è selezionata per impostazione predefinita e deve essere selezionata per poter creare frammenti di contenuto in base a questo modello.
 
-1. Dopo aver compilato i campi obbligatori, fai clic su **Crea** in alto a sinistra per creare il modello.
+1. Dopo aver compilato i campi obbligatori, fai clic su **Crea** in alto a destra per creare il modello.
 
 1. Il **Completato** conferma la creazione del modello. Clic **Apri** nella finestra di dialogo, in modo da poter aprire il nuovo Modello per frammenti di contenuto nell’editor in una nuova scheda. Quindi procedi al passaggio successivo per aggiungere campi dati al modello.
 
