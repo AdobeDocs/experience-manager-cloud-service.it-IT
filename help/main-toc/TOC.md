@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '4079'
+source-wordcount: '4081'
 ht-degree: 98%
 
 ---
@@ -530,7 +530,6 @@ ht-degree: 98%
          + [Integrare AEM Forms as a Cloud Service con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporare un modulo adattivo in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [Creare o aggiungere un modulo adattivo alla pagina di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Modello dati modulo {#use-form-data-model}
          + [Collegare le origini dati al Cloud Service](/help/forms/data-integration.md)
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
@@ -541,6 +540,7 @@ ht-degree: 98%
          + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
    + Moduli adattivi {#adaptive-forms-authoring}
+      + [Aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Authoring di moduli adattivi: componenti core {#authoring-adaptive-forms-core-components}
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)

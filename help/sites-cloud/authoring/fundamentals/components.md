@@ -2,10 +2,10 @@
 title: Componenti
 description: I componenti sono elementi costitutivi essenziali per l’authoring delle pagine di contenuto in AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 72%
+source-wordcount: '349'
+ht-degree: 63%
 
 ---
 
@@ -42,6 +42,8 @@ La [console Componenti](/help/sites-cloud/authoring/features/components-console.
 I ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)componenti core[ offrono funzionalità flessibili e avanzate per l’authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
 
 Vengono creati utilizzando le best practice di AEM e sono alla base dell’esperienza di authoring di AEM. I componenti core possono essere facilmente estesi dagli sviluppatori per soddisfare specifiche esigenze di progetto.
+
+Oltre ai componenti core WCM, puoi utilizzare anche [Componenti core Forms adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Questi Componenti core forniscono un metodo standard e più semplice per [creare o aggiungere moduli a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Configurazione dei modelli {#configuring-templates}
 
