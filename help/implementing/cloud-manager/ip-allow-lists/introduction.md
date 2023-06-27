@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 18%
+ht-degree: 44%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
->title="Inserire nell&#39;elenco Consentiti Gestire i IP"
->abstract="AEM as a Cloud Service è accessibile via Internet ed è protetto tramite autenticazione e autorizzazione degli utenti. I inserisce nell&#39;elenco Consentiti di IP di Cloud Manager possono essere utilizzati per limitare e controllare l’accesso solo agli indirizzi IP attendibili. Gli utenti di Cloud Manager con le autorizzazioni appropriate possono creare inserisce nell&#39;elenco Consentiti di indirizzi IP attendibili da cui gli utenti del sito possono accedere ai domini AEM."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html" text="Aggiunta di un elenco IP consentiti"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists.html" text="Visualizzazione e aggiornamento di un elenco IP consentiti"
+>title="Gestione elenco IP Consentiti"
+>abstract="AEM as a Cloud Service è accessibile tramite Internet ed è protetto tramite autenticazione e autorizzazione degli utenti. È possibile utilizzare gli elenchi IP Consentiti di Cloud Manager per controllare l’accesso e limitarlo ai soli indirizzi IP attendibili. Gli utenti di Cloud Manager con le autorizzazioni appropriate possono creare degli elenchi di indirizzi IP consentiti attendibili da cui gli utenti del sito possono accedere ai domini AEM."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=it" text="Aggiunta di un elenco IP consentiti"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists.html?lang=itl" text="Visualizzazione e aggiornamento di un elenco IP consentiti"
 
 Per impostazione predefinita, AEM as a cloud service è accessibile tramite Internet. Mentre la sicurezza viene gestita tramite l’autenticazione e l’autorizzazione degli utenti, l’inserimento nell’elenco Consentiti IP è un modo per limitare l’accesso solo agli indirizzi IP attendibili.
 
