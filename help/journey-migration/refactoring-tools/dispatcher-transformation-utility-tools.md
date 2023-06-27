@@ -2,10 +2,10 @@
 title: Strumento AEM Dispatcher Converter
 description: Strumento AEM Dispatcher Converter
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 61%
+source-wordcount: '341'
+ht-degree: 24%
 
 ---
 
@@ -14,24 +14,24 @@ ht-degree: 61%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispconverter"
 >title="AEM Dispatcher Converter"
->abstract="Adobe Experience Manager Dispatcher Converter converte le configurazioni di AEM Dispatcher esistenti in configurazioni di AEM as a Cloud Service Dispatcher."
+>abstract="Adobe Experience Manager Dispatcher Converter converte le configurazioni esistenti su Dispatcher AEM in configurazioni su Dispatcher as a Cloud Service AEM."
 
-Adobe Experience Manager Dispatcher Converter converte le configurazioni di AEM Dispatcher esistenti in configurazioni di AEM as a Cloud Service Dispatcher.
+Adobe Experience Manager Dispatcher Converter converte le configurazioni esistenti su Dispatcher AEM in configurazioni su Dispatcher as a Cloud Service AEM.
 
 ## Introduzione a Dispatcher {#introduction-dispatcher}
 
-Dispatcher è lo strumento di caching e/o bilanciamento del carico di Adobe Experience Manager. L’utilizzo di AEM Dispatcher consente inoltre di proteggere il server AEM da eventuali attacchi. Di conseguenza, per aumentare la sicurezza della tua istanza di AEM, puoi utilizzare Dispatcher insieme a un server web di classe Enterprise.
+Dispatcher è lo strumento di caching o bilanciamento del carico di Adobe Experience Manager, o entrambi. L’utilizzo di AEM Dispatcher consente inoltre di proteggere il server AEM da eventuali attacchi. Pertanto, puoi aumentare la sicurezza dell’istanza AEM utilizzando Dispatcher con un server web di classe enterprise.
 
 >[!NOTE]
 >Dispatcher viene utilizzato in genere per memorizzare nella cache le risposte di un’**istanza di pubblicazione di AEM** e per aumentare la reattività e la sicurezza del sito web pubblicato per gli utenti esterni.
 
-Consulta la [panoramica di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) per scoprire come il dispatcher esegue la memorizzazione nella cache e il bilanciamento del carico, e come restituisce i documenti.
+Fai riferimento a [Panoramica di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) per scoprire come Dispatcher esegue la memorizzazione nella cache, restituisce i documenti ed esegue il bilanciamento del carico.
 
 ### Configurazione e test di Apache e Dispatcher {#dispatcher-configurations-cloud}
 
-Devi imparare a strutturare le configurazioni di Apache e Dispatcher di AEM as a Cloud Service, nonché a convalidarlo ed eseguirlo localmente prima di implementarlo negli ambienti Cloud.
+Scopri come strutturare le configurazioni di Apache e Dispatcher as a Cloud Service per l’AEM, nonché come convalidarle ed eseguirle localmente prima di distribuirle negli ambienti Cloud.
 
-Per ulteriori informazioni, consulta [Dispatcher nel Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=it).
+Consulta [Dispatcher nel cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=it) per ulteriori informazioni.
 
 ## AEM Dispatcher Converter {#aem-dispatcher-converter}
 
@@ -39,13 +39,13 @@ Il convertitore del Dispatcher AEM fornisce la funzionalità di refactoring dell
 
 ## Utilizzo di AEM Dispatcher Converter {#using-dispatcher-converter}
 
-* Tramite CLI Adobe I/O : si consiglia di utilizzare il convertitore del Dispatcher AEM tramite `aio-cli-plugin-aem-cloud-service-migration` (plug-in per il refactoring del codice as a Cloud Service AEM per Adobe I/O CLI).
+* Tramite Adobe Developer CLI : Adobe consiglia di utilizzare il convertitore del Dispatcher AEM tramite `aio-cli-plugin-aem-cloud-service-migration` (plug-in di refactoring del codice as a Cloud Service AEM per Adobe Developer CLI).
 
-  Fai riferimento a **[Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** per scoprire come installare e utilizzare il plug-in.
+  Consulta **[Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** in questo modo puoi imparare a installare e utilizzare il plug-in.
 
-* Come utility indipendente : Lo strumento AEM Dispatcher Converter può anche essere eseguito come utility indipendente.
+* Come utility indipendente : Lo strumento AEM Dispatcher Converter può essere eseguito anche come utility indipendente.
 
-  Fai riferimento a **[Risorsa Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** per informazioni sull&#39;utilizzo e sulla risoluzione dei problemi di questo strumento.
+  Consulta **[Risorsa Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** per informazioni sull’utilizzo e sulla risoluzione dei problemi di questo strumento.
 
 >[!IMPORTANT]
->AEM Dispatcher Converter è sviluppato utilizzando NodeJS. Si consiglia di installare NodeJS 10.0+.
+>AEM Dispatcher Converter è sviluppato utilizzando NodeJS. L’Adobe consiglia di installare NodeJS 10.0+.
