@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 11%
+source-wordcount: '358'
+ht-degree: 10%
 
 ---
 
@@ -31,8 +31,9 @@ Prima di iniziare a utilizzare [!DNL AEM Forms] as a Cloud Service, esamina i se
 
 * AEM Forms as a Cloud Service non genera miniature per i file di schema XDP e JSON. Al posto delle miniature, vengono visualizzate le icone predefinite.
 
-   ![Problema noto della miniatura del Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
+  ![Problema noto della miniatura del Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
 
+* Quando si utilizza uno schema con elementi ripetibili per creare un modulo adattivo basato su Componenti core, l’opzione di trascinamento degli elementi ripetibili dalla struttura del modello dati nell’editor di Forms adattivo non funziona.
 
 ## Limitazioni {#limitations}
 
