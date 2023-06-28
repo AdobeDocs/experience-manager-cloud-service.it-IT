@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39696141a50bf8204d37341a85a4f4a8acae69db
+source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 32%
+source-wordcount: '297'
+ht-degree: 41%
 
 ---
 
@@ -13,44 +13,36 @@ ht-degree: 32%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 12255 {#release-12255}
+## Versione 12441 {#release-12441}
 
-Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 12255, rilasciata pubblicamente il 13 giugno 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 12142.
+Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 12441, rilasciata pubblicamente il 27 giugno 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 12255.
 
-2023.6.0 Feature Activation fornirà il set completo di funzioni per questa versione di manutenzione. Consulta la [Roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it) per ulteriori informazioni.
+2023.7.0 Feature Activation fornirà il set completo di funzioni per questa versione di manutenzione. Consulta la [Roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it) per ulteriori informazioni.
 
-### Miglioramenti {#enhancements-12255}
+### Miglioramenti {#enhancements-12441}
+
+- SITES-8769: Migliorare le chiamate StyleImpl in ResponsiveGrid
+
+### Problemi risolti {#fixed-issues-12441}
+
+- Vari aggiornamenti relativi all’accessibilità
+- SITES-12688: Editor pagina: operatore logico OR che non funziona correttamente nella ricerca di Asset Finder
+- SITES-4951: Editor pagina: la ricerca dei tag nell’editor pagina non trova i tag secondari
+- SITES-12465: Frammenti esperienza: i tasti freccia non funzionano nella finestra di dialogo del componente Frammento esperienza
+- SITES-12893: Frammenti di esperienza: applicare la convalida circolare dei riferimenti ai frammenti di esperienza
+- SITES-12715: Frammenti di esperienza: le configurazioni del servizio cloud applicate alla cartella Frammenti di esperienza non persistono
+- SITES-13097: Frammenti esperienza: impossibile aggiungere frammenti esperienza a un progetto di traduzione
+- SITES-13165: GraphQL: Ripristina il comportamento predefinito per il filtraggio di valori nulli
+- SITES-12577: Verifica collegamenti: il trasformatore non riscrive i collegamenti in modo intermittente
+- SITES-13559: MSM: eccezione &quot;Non modificabile&quot; generata durante il rollout del componente
+- SITES-11757: MSM: l’ereditarietà della configurazione di rollout dall’elemento padre non viene ripristinata per le pagine figlie
+- SITES-14073: Sites Admin: il rapporto CSV non riesce con 500 quando non si seleziona alcuna proprietà da esportare
+
+### Problemi noti {#known-issues-12441}
 
 Nessuno.
 
-### Problemi risolti {#fixed-issues-12255}
-
-- Vari aggiornamenti relativi all’accessibilità
-- ASSETS-15116 - Opzione &quot;Vai alla posizione&quot; disponibile nella vista di ricerca di Assets
-- ASSETS-17453 - (Dynamic Media) Impossibile selezionare una miniatura personalizzata per i video
-- ASSETS-19279 - Archivio di download delle risorse per file di grandi dimensioni
-- ASSETS-19544 - Ultima modifica apportata dall’utente per gli aggiornamenti delle risorse
-- ASSETS-20146 - (Interfaccia touch) Rapporto Segnalazioni di download di risorse non riuscite a causa di errori di convalida vengono visualizzate sempre nella parte superiore della pagina dell’elenco per i rapporti
-- ASSETS-21056: ottimizzazione delle prestazioni di riferimento delle risorse per ridurre al minimo le operazioni di scrittura
-- ASSETS-21909 - Impossibile visualizzare il ritaglio video automatico quando il download della vtt non riesce
-- ASSETS-22261 - La struttura delle cartelle per il download da Linkshare non è coerente con i download dell’interfaccia utente di Assets
-- ASSETS-22550 - Il pannello dei filtri di ricerca è ora aperto per impostazione predefinita
-- ASSETS-22920 - L’annullamento della pubblicazione della cartella da Brand Portal non contrassegna le risorse in come non pubblicate
-- ASSETS-22922 - I predefiniti visualizzatore disattivati vengono visualizzati nel componente Dynamic Media
-- ASSETS-23461 - Pubblicazione rapida Brand Portal dalla vista di ricerca di Assets
-- ASSETS-23466 - La gestione dei collegamenti non accessibili InDesign Server non risolve i collegamenti AAL contenenti spazi
-- ASSETS-23469 - I filtri risorse predefiniti si scontrano con i filtri personalizzati
-- ASSETS-23981 - Funzione di ordinamento per i titoli che non funzionano nei collegamenti della raccolta
-- ASSETS-24723 - Le risorse pubblicate sono state rielaborate senza l’intervento dell’utente
-- GRANITE-45385 - Migra attivazione struttura per utilizzare il processo sling invece del flusso di lavoro
-
-### Problemi noti {#known-issues-12255}
-
-- ASSETS-25729 - Il menu dello switcher di visualizzazione è disattivato
-- ASSETS-25728 - Opzione Rielabora risorsa non disponibile nella vista di ricerca
-- ASSETS-22603 - Alcune colonne del rapporto Asset di tipo Download visualizzano valori &quot;null&quot; nell’interfaccia utente. Il file CSV scaricabile non subisce modifiche.
-
-### Tecnologie incorporate {#embedded-tech-12255}
+### Tecnologie incorporate {#embedded-tech-12441}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
