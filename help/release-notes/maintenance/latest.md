@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
+source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 41%
+source-wordcount: '604'
+ht-degree: 20%
 
 ---
 
@@ -22,6 +22,7 @@ Di seguito sono riepilogati i continui miglioramenti per la versione di manutenz
 ### Miglioramenti {#enhancements-12441}
 
 - SITES-8769: Migliorare le chiamate StyleImpl in ResponsiveGrid
+- FORMS-5054: è stato aggiunto il supporto per tutte le [statue](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) supportati da Adobe Sign.
 
 ### Problemi risolti {#fixed-issues-12441}
 
@@ -37,6 +38,21 @@ Di seguito sono riepilogati i continui miglioramenti per la versione di manutenz
 - SITES-13559: MSM: eccezione &quot;Non modificabile&quot; generata durante il rollout del componente
 - SITES-11757: MSM: l’ereditarietà della configurazione di rollout dall’elemento padre non viene ripristinata per le pagine figlie
 - SITES-14073: Sites Admin: il rapporto CSV non riesce con 500 quando non si seleziona alcuna proprietà da esportare
+- FORMS-7648: la convalida del numero massimo di cifre archiviate non funziona per il componente Casella numerica.
+- FORMS-8177: quando il servizio Forms è attivo, viene rilevato l’errore &quot;com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Impossibile recuperare le dipendenze delle risorse&quot;.
+- FORMS-8300: quando un utente tenta di delegare un’attività dopo averla aperta, la risposta del delegato ricarica l’attività, anziché aprire l’interfaccia utente della casella in entrata AEM dell’utente.
+- FORMS-8500: nel browser Microsoft® Edge con l’opzione Modalità IE abilitata, l’apertura di HTML5 Forms non riesce.
+- FORMS-8541: durante il rendering di un Forms adattivo, si verifica un’eccezione Null Pointer.
+- FORMS-8964: quando un modulo viene aperto su un dispositivo Android™ su Google Chrome o Mozilla Firefox, il testo immesso nel componente Casella di testo non può essere rimosso.
+- FORMS-9026: quando un utente crea un modulo adattivo basato su uno schema JSON complesso e valido, trascina i campi dello schema JSON correlati nell’editor di Forms adattivo per creare campi di Forms adattivo e aggiorna la finestra dell’editor di Forms adattivo, tutti i campi vengono eliminati e l’editor di Forms adattivo appare vuoto.
+- FORMS-9263: quando il testo visualizzato di un&#39;opzione della casella di controllo contiene un carattere speciale, gli utenti non possono selezionare tali caselle di controllo.
+- FORMS-8668: durante il rendering di un’anteprima PDF di un modulo, nei registri di errore vengono visualizzate alcune immagini stack Java™ non richieste. Tuttavia, il rendering del modulo non presenta problemi.
+- FORMS-8116: quando le regole vengono applicate al componente Contenitore Forms adattivo, le regole applicate non vengono salvate.
+- FORMS-7906: quando si aggiunge un modulo adattivo a un componente Contenitore di AEM Sites, l’editor di regole non si apre.
+- FORMS-8846: la proprietà Bind reference non funziona per il componente Forms adattivo allegati.
+- FORMS-9072: quando esegui una ricerca in uno schema durante la creazione di un frammento di modulo, il risultato della ricerca non restituisce alcuno schema per la selezione.
+- FORMS: sono stati corretti diversi bug relativi all’accessibilità per migliorare l’accessibilità delle funzioni di AEM Forms.
+
 
 ### Problemi noti {#known-issues-12441}
 
