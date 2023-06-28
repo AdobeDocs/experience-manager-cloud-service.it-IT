@@ -3,10 +3,10 @@ title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 92%
+source-wordcount: '1752'
+ht-degree: 74%
 
 ---
 
@@ -16,14 +16,13 @@ Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplor
 
 >[!NOTE]
 >
->Questa pagina deve essere letta insieme a:
+>Leggi questa pagina e quanto segue:
 >
 >* [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 >* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
 
-
-Come introduzione alle query GraphQL e per scoprire come funzionano con i Frammenti di contenuto AEM è utile visualizzare alcuni esempi pratici.
+Per iniziare a utilizzare le query GraphQL e a come funzionano con i frammenti di contenuto AEM, è utile visualizzare alcuni esempi pratici.
 
 Per assistenza, consulta:
 
@@ -42,13 +41,12 @@ Approfondisci queste query di esempio per le illustrazioni di creazione query, i
 
 >[!NOTE]
 >
->A seconda dell’istanza, è possibile accedere direttamente all’[Interfaccia GraphiQL inclusa con API GraphQL AEM](/help/headless/graphql-api/graphiql-ide.md) per l’invio e la verifica delle query.
+>A seconda dell’istanza, puoi accedere direttamente al [Interfaccia GraphiQL inclusa con API GraphQL AEM](/help/headless/graphql-api/graphiql-ide.md) per l’invio e la verifica delle query.
 >
 >Puoi accedere all’editor delle query da:
 >
 >* **Strumenti** -> **Generale** -> **Editor query GraphQL**
 >* direttamente; ad esempio, `http://localhost:4502/aem/graphiql.html`
-
 
 >[!NOTE]
 >
@@ -56,7 +54,7 @@ Approfondisci queste query di esempio per le illustrazioni di creazione query, i
 
 ### Query di esempio: tutti gli schemi e i tipi di dati disponibili {#sample-all-schemes-datatypes}
 
-Il risultato comprende tutti i `types` di tutti gli schemi disponibili.
+Restituisce tutto `types` per tutti gli schemi disponibili.
 
 **Query di esempio**
 
@@ -149,7 +147,7 @@ Il risultato comprende tutti i `types` di tutti gli schemi disponibili.
 
 ### Query di esempio: tutte le informazioni su tutte le città {#sample-all-information-all-cities}
 
-Per recuperare tutte le informazioni su tutte le città, puoi utilizzare la query di base:
+Per recuperare tutte le informazioni su tutte le città, puoi utilizzare la seguente query di base:
 **Query di esempio**
 
 ```graphql
@@ -160,7 +158,7 @@ Per recuperare tutte le informazioni su tutte le città, puoi utilizzare la quer
 }
 ```
 
-Una volta eseguita, il sistema la espanderà automaticamente per includere tutti i campi:
+Quando viene eseguita, il sistema espande automaticamente la query per includere tutti i campi:
 
 ```graphql
 {
@@ -232,7 +230,7 @@ Una volta eseguita, il sistema la espanderà automaticamente per includere tutti
 
 ### Query di esempio: nomi di tutte le città {#sample-names-all-cities}
 
-Questa è una query semplice che restituisce `name` tutte le voci dello `city` schema.
+Una query semplice per restituire `name`di tutte le voci nella `city`schema.
 
 **Query di esempio**
 
@@ -282,7 +280,7 @@ query {
 
 ### Query di esempio: un singolo frammento di città specifico {#sample-single-specific-city-fragment}
 
-Si tratta di una query che restituisce i dettagli di una singola voce di frammento in una posizione specifica nell’archivio.
+Query per restituire i dettagli di una singola voce di frammento in una posizione specifica nell’archivio.
 
 **Query di esempio**
 
@@ -323,7 +321,7 @@ Si tratta di una query che restituisce i dettagli di una singola voce di frammen
 
 ### Query di esempio: tutte le città con una variante denominata {#sample-cities-named-variation}
 
-Se crei una nuova variante, denominata “Berlino centro” (`berlin_centre`), relativa alla `city` Berlino, puoi utilizzare una query per restituire i dettagli della variante.
+Se crei una variante, denominata &quot;Berlino centro&quot; (`berlin_centre`), per `city` Berlino, puoi utilizzare una query per restituire i dettagli della variante.
 
 **Query di esempio**
 
@@ -368,7 +366,7 @@ Se crei una nuova variante, denominata “Berlino centro” (`berlin_centre`), r
 
 Se:
 
-* creare diversi tag, denominati `Tourism` : `Business`, `City Break`, `Holiday`
+* crea vari tag, denominati `Tourism` : `Business`, `City Break`, `Holiday`
 * e assegnarli alla variante principale di vari `City` istanze
 
 Quindi puoi utilizzare una query per restituire i dettagli del `name` e `tags`di tutte le voci contrassegnate come interruzioni di città nel `city`schema.
@@ -546,7 +544,7 @@ query {
 
 ### Query di esempio: tutte le persone con nome “Jobs” o “Smith” {#sample-all-persons-jobs-smith}
 
-Questo filtra tutte le `persons` che hanno il nome `Jobs` o `Smith`.
+Una query che filtra tutto `persons` per qualsiasi che ha il nome `Jobs`o `Smith`.
 
 **Query di esempio**
 
@@ -600,7 +598,7 @@ query {
 
 ### Query di esempio: tutte le persone che non hanno nome “Jobs” {#sample-all-persons-not-jobs}
 
-Questo filtra tutte le `persons` che hanno il nome `Jobs` o `Smith`.
+Una query che filtra tutto `persons` per qualsiasi che ha il nome `Jobs`o `Smith`.
 
 **Query di esempio**
 
@@ -710,9 +708,9 @@ query {
 }
 ```
 
-### Query di esempio: tutte le città situate in Germania o Svizzera con una popolazione compresa tra 400000 e 999999 {#sample-all-cities-d-ch-population}
+### Query di esempio: tutte le città in Germania o Svizzera con una popolazione compresa tra 400000 e 999999 {#sample-all-cities-d-ch-population}
 
-In questo caso il filtro è impostato su una combinazione di campi. Viene utilizzato un `AND` (implicito) per selezionare l’intervallo di `population`, mentre un `OR` (esplicito) viene utilizzato per selezionare le città richieste.
+In questo caso, viene filtrata una combinazione di campi. Viene utilizzato un `AND` (implicito) per selezionare l’intervallo di `population`, mentre un `OR` (esplicito) viene utilizzato per selezionare le città richieste.
 
 **Query di esempio**
 
@@ -1154,15 +1152,14 @@ query {
 
 ## Query di esempio con il progetto WKND {#sample-queries-using-wknd-project}
 
-Queste query di esempio si basano sul progetto WKND. Caratteristiche:
+Queste query di esempio si basano sul progetto WKND. Presenta le seguenti caratteristiche:
 
 * Modelli di Frammento di contenuto disponibili in:
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Frammenti di contenuto (e altro contenuto) disponibili in:
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
-
-   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
 
 >[!NOTE]
 >
@@ -1259,7 +1256,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query di esempio rappresenta un’interrogazione per ottenere:
 
 * per un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all’interno del quale, sono presenti tutti i formati di contenuto:
+   * all’interno del frammento, tutti i formati di contenuto:
       * HTML
       * Markdown
       * Testo normale
@@ -1318,7 +1315,7 @@ Questa query di esempio rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all’interno del quale, è presente il percorso e l’autore del frammento (nidificato) a cui si fa riferimento
+   * all’interno del frammento, il percorso e l’autore del frammento (nidificato) a cui si fa riferimento
 
 >[!NOTE]
 >
@@ -1449,7 +1446,7 @@ La query seguente restituisce tutti i riferimenti di contenuto utilizzando `_ref
 
 #### Query di esempio per più frammenti di contenuto con allegati {#sample-wknd-multiple-fragments-attachments}
 
-La query seguente restituisce tutti gli `attachments`: un campo specifico (gruppo secondario) di tipo `content-reference`:
+La query seguente restituisce tutti `attachments` - un campo specifico (sottogruppo) di tipo `content-reference`:
 
 >[!NOTE]
 >
@@ -1541,7 +1538,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto di tipo `author` in un percorso specifico
-   * all&#39;interno del quale, sono presenti dati relativi alla variante: `another`
+   * all’interno di tale frammento, i dati relativi alla variante: `another`
 
 **Query di esempio**
 
@@ -1567,7 +1564,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 >[!NOTE]
 >
->Questo dimostrerà il fallback per i frammenti di contenuto privi di una [Variazione](/help/headless/graphql-api/content-fragments.md#variations) del nome specificato.
+>Questa query illustra il fallback per i frammenti di contenuto che non hanno un [Variante](/help/headless/graphql-api/content-fragments.md#variations) del nome specificato.
 
 **Query di esempio**
 
@@ -1720,7 +1717,7 @@ Questa query rappresenta un’interrogazione:
 }
 ```
 
-### Query di esempio con filtro per ID _tags ed escluse le varianti {#sample-filtering-tag-not-variations}
+### Query di esempio con filtro per ID _tags ed esclusione di varianti {#sample-filtering-tag-not-variations}
 
 Questa query rappresenta un’interrogazione:
 
@@ -1808,7 +1805,7 @@ Le query di esempio si basano sulla seguente struttura, che utilizza:
 
 ### Modelli per frammenti di contenuto di esempio (schemi) {#sample-content-fragment-models-schemas}
 
-Per le query di esempio, verranno utilizzati i seguenti modelli di contenuto e le relative interrelazioni (riferimenti ->):
+Per le query di esempio vengono utilizzati i seguenti modelli di contenuto e le relative interrelazioni (riferimenti ->):
 
 * [Azienda](#model-company)
 -> [Utente](#model-person)
@@ -1822,7 +1819,7 @@ I campi di base che definiscono l’azienda sono:
 
 | Nome campo | Tipo di dati | Riferimento |
 |--- |--- |--- |
-| Nome dell’azienda | Testo su riga singola |  |
+| Nome dell’azienda | Testo su riga singola | |
 | CEO | Riferimento frammento (singolo) | [Persona](#model-person) |
 | Dipendenti | Riferimento frammento (con più campi) | [Persona](#model-person) |
 
@@ -1832,8 +1829,8 @@ I campi che definiscono un’utente, che può anche essere un dipendente:
 
 | Nome campo | Tipo di dati | Riferimento |
 |--- |--- |--- |
-| Nome | Testo su riga singola |  |
-| Nome | Testo su riga singola |  |
+| Nome | Testo su riga singola | |
+| Nome | Testo su riga singola | |
 | Premi | Riferimento frammento (con più campi) | [Riconoscimento](#model-award) |
 
 #### Riconoscimento {#model-award}
@@ -1842,8 +1839,8 @@ I campi che definiscono un riconoscimento sono:
 
 | Nome campo | Tipo di dati | Riferimento |
 |--- |--- |--- |
-| Scelta rapida/ID | Testo su riga singola |  |
-| Titolo | Testo su riga singola |  |
+| Scelta rapida/ID | Testo su riga singola | |
+| Titolo | Testo su riga singola | |
 
 #### Città {#model-city}
 
@@ -1851,10 +1848,10 @@ I campi per la definizione di una città sono:
 
 | Nome campo | Tipo di dati | Riferimento |
 |--- |--- |--- |
-| Nome | Testo su riga singola |  |
-| Paese | Testo su riga singola |  |
-| Popolazione | Numero |  |
-| Categorie | Tag |  |
+| Nome | Testo su riga singola | |
+| Paese | Testo su riga singola | |
+| Popolazione | Numero | |
+| Categorie | Tag | |
 
 ### Frammenti di contenuto di esempio {#sample-content-fragments}
 
@@ -1872,14 +1869,14 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 
 | Nome | Nome | Premi |
 |--- |--- |--- |
-| Lincoln | Abe |  |
-| Smith | Adam |  |
+| Lincoln | Abe | |
+| Smith | Adam | |
 | Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke |  |
-| Smith | Joe |  |
+| Marsh | Duke | |
+| Smith | Joe | |
 | Croft | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |
-| Jobs | Steve |  |
+| Jobs | Steve | |
 
 #### Riconoscimento {#fragment-award}
 

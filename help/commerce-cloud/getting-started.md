@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 14%
+source-wordcount: '1118'
+ht-degree: 15%
 
 ---
 
@@ -63,15 +63,15 @@ Dopo aver impostato l’endpoint e, facoltativamente, un’intestazione di autor
 
 ![Informazioni sull&#39;ambiente CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### Tramite Adobe Developer CLI  {#adobe-cli}
+### A titolo di Adobe I/O CLI  {#adobe-cli}
 
-Per collegare l’AEM a una soluzione commerce tramite Adobe Developer CLI, segui questi passaggi:
+Per collegare l’AEM a una soluzione commerce tramite Adobe I/O CLI, segui questi passaggi:
 
-1. Ottenere Adobe Developer CLI con il plug-in Cloud Manager
+1. Ottieni Adobe I/O CLI con il plugin Cloud Manager.
 
-   Controlla la [Documentazione di Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it) su come scaricare, configurare e utilizzare [ADOBE DEVELOPER CLI](https://github.com/adobe/aio-cli) con [Plug-in CLI di Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Controlla la [Documentazione di Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it) su come scaricare, configurare e utilizzare [CLI ADOBE I/O](https://github.com/adobe/aio-cli) con [Plug-in CLI di Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-2. Autenticazione di Adobe Developer CLI con il programma as a Cloud Service AEM
+2. Autentica l’interfaccia della riga di comando Adobe I/O con il programma as a Cloud Service AEM
 
 3. Imposta la variabile `COMMERCE_ENDPOINT` in Cloud Manager.
 

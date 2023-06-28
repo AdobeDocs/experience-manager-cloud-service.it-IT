@@ -2,24 +2,24 @@
 title: Rendering lato server e SPA
 description: L’utilizzo del rendering lato server (SSR) nell’SPA può accelerare il caricamento iniziale della pagina e quindi passare un ulteriore rendering al client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1498'
+source-wordcount: '1486'
 ht-degree: 0%
 
 ---
 
 # Rendering lato server e SPA{#spa-and-server-side-rendering}
 
-Le applicazioni a pagina singola (SPA) possono offrire all’utente un’esperienza ricca e dinamica che reagisce e si comporta in modo familiare, spesso come un’applicazione nativa. [Ciò si ottiene affidandosi al client per caricare il contenuto in primo piano e poi fare il pesante sollevamento dell&#39;interazione dell&#39;utente](introduction.md#how-does-a-spa-work) riducendo al minimo la quantità di comunicazione necessaria tra client e server, rendendo l’app più reattiva.
+Le applicazioni a pagina singola (SPA) possono offrire all’utente un’esperienza ricca e dinamica che reagisce e si comporta in modo familiare, spesso come un’applicazione nativa. [Questa funzionalità si ottiene affidandosi al client per caricare il contenuto in primo piano e quindi eseguire il pesante sollevamento dell’interazione dell’utente](introduction.md#how-does-a-spa-work). Questo processo riduce al minimo la quantità di comunicazione necessaria tra il client e il server, rendendo l’app più reattiva.
 
-Tuttavia, questo può portare a tempi di caricamento iniziali più lunghi, soprattutto se l’SPA è grande e ricco di contenuti. Per ottimizzare i tempi di caricamento, è possibile eseguire il rendering di alcuni contenuti lato server. L’utilizzo del rendering lato server (SSR) può accelerare il caricamento iniziale della pagina e quindi trasmettere un ulteriore rendering al client.
+Tuttavia, questo processo può portare a tempi di caricamento iniziali più lunghi, soprattutto se l&#39;SPA è grande e ricco di contenuti. Per ottimizzare i tempi di caricamento, è possibile eseguire il rendering di alcuni contenuti lato server. L’utilizzo del rendering lato server (SSR) può accelerare il caricamento iniziale della pagina e quindi trasmettere un ulteriore rendering al client.
 
 ## Quando utilizzare SSR {#when-to-use-ssr}
 
 SSR non è richiesto per tutti i progetti. Sebbene l’AEM supporti completamente la SSR JS per l’SPA, l’Adobe sconsiglia di attuarla sistematicamente per ogni progetto.
 
-Quando si decide di implementare SSR, è necessario innanzitutto stimare la complessità, l&#39;impegno e i costi aggiuntivi che la SSR rappresenta in modo realistico per il progetto, inclusa la manutenzione a lungo termine. Un’architettura SSR dovrebbe essere scelta solo quando il valore aggiunto supera chiaramente i costi stimati.
+Quando decidi di implementare SSR, devi innanzitutto stimare quali ulteriori complessità, sforzi e costi aggiuntivi SSR rappresentano in modo realistico per il progetto, inclusa la manutenzione a lungo termine. Un’architettura SSR dovrebbe essere scelta solo quando il valore aggiunto supera chiaramente i costi stimati.
 
 In genere, SSR fornisce un valore quando è presente un &quot;sì&quot; chiaro a una delle seguenti domande:
 
@@ -32,7 +32,7 @@ Solo quando ad almeno una di queste due domande viene risposto con un chiaro &qu
 
 Se [sono certi che il tuo progetto richieda l&#39;implementazione di SSR](#when-to-use-ssr), la soluzione consigliata da Adobe è l’utilizzo di Adobe I/O Runtime.
 
-Per ulteriori informazioni su Adobe I/O Runtime, consulta
+Per ulteriori informazioni su Adobe I/O Runtime, vedi:
 
 * [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) : panoramica della funzione Runtime di App Builder
 * [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) - per informazioni dettagliate sul prodotto App Builder completo
@@ -45,15 +45,15 @@ Le sezioni seguenti descrivono come Adobe I/O Runtime può essere utilizzato per
 
 >[!NOTE]
 >
->L’Adobe consiglia un’area di lavoro Adobe I/O Runtime separata per ogni ambiente (stage, prod, test, ecc.). Ciò consente di implementare i modelli SDLC (System Development Life Cycle) tipici con versioni diverse di una singola applicazione distribuite in ambienti diversi.  Consulta il documento [CI/CD per applicazioni App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) per ulteriori informazioni.
+>L’Adobe consiglia un’area di lavoro Adobe I/O Runtime separata per ogni ambiente (stage, prod, test e così via). In questo modo è possibile utilizzare modelli SDLC (System Development Life Cycle) tipici con versioni diverse di una singola applicazione distribuite in ambienti diversi. Consulta [CI/CD per applicazioni App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) per ulteriori informazioni.
 >
 >Un’area di lavoro separata non è necessaria per ogni istanza (Author, Publish) a meno che non vi siano differenze nell’implementazione runtime per tipo di istanza.
 
 ## Configurazione Remote Renderer {#remote-content-renderer-configuration}
 
-L’AEM deve sapere dove è possibile recuperare i contenuti renderizzati in remoto. Indipendentemente da [il modello che si sceglie di implementare per SSR,](#adobe-i-o-runtime) sarà necessario specificare a AEM come accedere a questo servizio di rendering remoto.
+L’AEM deve sapere dove è possibile recuperare il contenuto renderizzato in remoto. Indipendentemente da [il modello che si sceglie di implementare per SSR,](#adobe-i-o-runtime) specificare a AEM come accedere a questo servizio di rendering remoto.
 
-Questa operazione viene eseguita tramite **RemoteContentRenderer - Servizio OSGi di Configuration Factory**. Cerca la stringa &quot;RemoteContentRenderer&quot; nella console di configurazione della console Web all&#39;indirizzo `http://<host>:<port>/system/console/configMgr`.
+Il servizio viene fornito tramite **RemoteContentRenderer - Servizio OSGi di Configuration Factory**. Cerca la stringa &quot;RemoteContentRenderer&quot; nella console di configurazione della console Web all&#39;indirizzo `http://<host>:<port>/system/console/configMgr`.
 
 ![Configurazione rendering](assets/renderer-configuration.png)
 
@@ -87,7 +87,7 @@ Quando si utilizza SSR, il [flusso di lavoro di interazione dei componenti](intr
 
 ## Flusso di comunicazione basato su Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
 
-La sezione precedente descrive l’implementazione standard e consigliata del rendering lato server per quanto riguarda l’SPA nell’AEM, in cui l’AEM esegue il bootstrapping e la trasmissione dei contenuti.
+La sezione precedente descrive l’implementazione standard e consigliata del rendering lato server per quanto riguarda l’SPA nell’AEM, in cui l’AEM esegue il bootstrapping e la distribuzione dei contenuti.
 
 In alternativa, SSR può essere implementato in modo che Adobe I/O Runtime sia responsabile dell&#39;avvio, invertendo efficacemente il flusso di comunicazione.
 
@@ -105,7 +105,7 @@ Entrambi i modelli sono validi e supportati dall’AEM. Tuttavia, si dovrebbero 
    <td>
     <ul>
      <li>L'AEM gestisce le librerie di iniezione dove necessario</li>
-     <li>Le risorse devono essere mantenute solo sull'AEM<br /> </li>
+     <li>Gestisci risorse solo su AEM<br /> </li>
     </ul> </td>
    <td>
     <ul>
@@ -120,7 +120,7 @@ Entrambi i modelli sono validi e supportati dall’AEM. Tuttavia, si dovrebbero 
     </ul> </td>
    <td>
     <ul>
-     <li>Le risorse Clientlib richieste dall’applicazione, come CSS e JavaScript, dovranno essere rese disponibili dallo sviluppatore AEM tramite <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> proprietà<br /> </li>
+     <li>Le risorse Clientlib richieste dall’applicazione, come CSS e JavaScript, devono essere rese disponibili dallo sviluppatore AEM tramite <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> proprietà<br /> </li>
      <li>Le risorse devono essere sincronizzate tra AEM e Adobe I/O Runtime<br /> </li>
      <li>Per abilitare la creazione dell'SPA, potrebbe essere necessario un server proxy per Adobe I/O Runtime</li>
     </ul> </td>
@@ -130,9 +130,9 @@ Entrambi i modelli sono validi e supportati dall’AEM. Tuttavia, si dovrebbero 
 
 ## Pianificazione per SSR {#planning-for-ssr}
 
-In genere, è necessario eseguire il rendering lato server solo di una parte dell’applicazione. L’esempio comune è il contenuto visualizzato sopra la piega al caricamento iniziale della pagina, di cui viene eseguito il rendering sul lato server. In questo modo si risparmia tempo distribuendo al client contenuti già sottoposti a rendering. Quando l’utente interagisce con l’SPA, il contenuto aggiuntivo viene riprodotto dal client.
+In genere, è necessario eseguire il rendering lato server solo di una parte dell’applicazione. L’esempio comune è il contenuto visualizzato sopra la piega al caricamento iniziale della pagina, di cui viene eseguito il rendering sul lato server. Questo processo consente di risparmiare tempo distribuendo al client contenuti già sottoposti a rendering. Quando l’utente interagisce con l’SPA, il contenuto aggiuntivo viene riprodotto dal client.
 
-Se stai valutando l’implementazione del rendering lato server per l’SPA, devi verificare quali parti dell’app sono necessarie.
+Se stai valutando l’implementazione del rendering lato server per l’SPA, controlla quali parti dell’app sono necessarie.
 
 ## Sviluppo di un SPA utilizzando la SSR {#developing-an-spa-using-ssr}
 
@@ -152,15 +152,15 @@ Il [Configurazione rendering contenuto remoto](#remote-content-renderer-configur
 
 ### Servizio RemoteContentRendering {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` è un servizio OSGi per recuperare il contenuto di cui è stato eseguito il rendering su un server remoto, ad esempio da Adobe I/O. Il contenuto inviato al server remoto si basa sul parametro di richiesta passato.
+`RemoteContentRenderingService` Un servizio OSGi per recuperare il contenuto di cui è stato eseguito il rendering su un server remoto, ad esempio da Adobe I/O. Il contenuto inviato al server remoto si basa sul parametro di richiesta passato.
 
-`RemoteContentRenderingService` può essere inserito tramite inversione delle dipendenze in un modello Sling personalizzato o in un servlet quando è necessaria un’ulteriore manipolazione del contenuto.
+`RemoteContentRenderingService` Può essere inserito tramite inversione delle dipendenze in un modello Sling personalizzato o in un servlet quando è necessaria un’ulteriore manipolazione del contenuto.
 
 Questo servizio è utilizzato internamente da [RemoteContentRendererRequestHandlerServlet](#remotecontentrendererrequesthandlerservlet).
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-Il `RemoteContentRendererRequestHandlerServlet` può essere utilizzato per impostare a livello di programmazione la configurazione della richiesta. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implementazione predefinita del gestore di richieste fornita, ti consente di creare più configurazioni OSGi in modo da poter mappare una posizione nella struttura del contenuto a un endpoint remoto.
+Il `RemoteContentRendererRequestHandlerServlet` viene utilizzato per impostare a livello di programmazione la configurazione della richiesta. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implementazione predefinita del gestore di richieste fornita, ti consente di creare più configurazioni OSGi in modo da poter mappare una posizione nella struttura del contenuto a un endpoint remoto.
 
 Per aggiungere un gestore di richieste personalizzato, implementa `RemoteContentRendererRequestHandler` di rete. Assicurarsi di impostare `Constants.SERVICE_RANKING` proprietà del componente a un numero intero maggiore di 100, che corrisponde alla classificazione `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -179,7 +179,7 @@ La configurazione del gestore predefinito deve essere configurata come descritto
 
 ### Utilizzo di Remote Content Renderer {#usage}
 
-Per recuperare un servlet e restituire parte del contenuto che può essere inserito nella pagina:
+Richiedi a un servlet di recuperare e restituire parte del contenuto inserito nella pagina:
 
 1. Verificare che il server remoto sia accessibile.
 1. Aggiungi uno dei seguenti snippet al modello HTL di un componente AEM.

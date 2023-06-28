@@ -2,10 +2,10 @@
 title: Accesso e gestione dei registri
 description: Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 69%
+source-wordcount: '268'
+ht-degree: 77%
 
 ---
 
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### Risorse aggiuntive {#resources}
 
-Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia della riga di comando di Adobe Developer, consulta le seguenti risorse aggiuntive:
+Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia della riga di comando Adobe I/O, consulta le seguenti risorse aggiuntive:
 
 * [Documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
-* [ADOBE DEVELOPER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Interfaccia della riga di comando Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)

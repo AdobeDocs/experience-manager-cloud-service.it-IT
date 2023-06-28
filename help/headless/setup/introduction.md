@@ -2,16 +2,16 @@
 title: Configurazione headless
 description: Questa guida rapida ti permette di scoprire informazioni fondamentali sulle potenti funzionalità headless di AEM as a Cloud Service, tra cui modelli di contenuto, frammenti di contenuto e API di GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 94%
+source-wordcount: '278'
+ht-degree: 56%
 
 ---
 
 # Configurazione headless {#introduction}
 
-Di seguito è riportato un semplice percorso in cinque passaggi per creare, gestire e distribuire esperienze utilizzando AEM as a Cloud Service, destinato agli utenti che hanno già familiarità con la tecnologia AEM e headless. Ogni guida si basa sulla precedente, pertanto si consiglia di esaminarla in modo approfondito e coerente.
+Di seguito è riportato un semplice percorso per la creazione, la gestione e la distribuzione di esperienze utilizzando AEM as a Cloud Service in cinque passaggi per gli utenti che hanno già familiarità con l’AEM e la tecnologia headless. Ogni guida si basa sulla precedente, pertanto si consiglia di esaminarla in modo approfondito e coerente.
 
 1. [Creazione di una configurazione ](create-configuration.md)
 1. [Creazione di un modello di frammento di contenuto](create-content-model.md)
@@ -23,7 +23,7 @@ Di seguito è riportato un semplice percorso in cinque passaggi per creare, gest
 >
 >Questa guida introduttiva presuppone la conoscenza delle tecnologie AEM e headless.
 >
->Se non conosci le tecnologie AEM o headless, consulta i nostri Percorsi di documentazione headless per un’introduzione completa alla tecnologia headless e informazioni su come AEM supporta tale funzionalità.
+>Se hai poca esperienza con AEM o headless, consulta Adobe Percorsi di documentazione headless per un’introduzione completa sia alla tecnologia headless che al supporto fornito da AEM.
 >
 >* [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md)
 >* [Percorso Architect di contenuti headless](/help/journey-headless/architect/overview.md)
@@ -36,9 +36,9 @@ Per una dimostrazione di base completa delle funzionalità headless di AEM, sono
 
 Tuttavia, in una situazione di produzione, le attività vengono eseguite da utenti tipo diversi un numero variabile di volte. Ad esempio:
 
-* Gli **amministratori** devono impostare la configurazione iniziale e la struttura delle cartelle per il contenuto, di solito una sola volta o occasionalmente.
-* Gli **architetti dell’informazione** in genere aggiungono nuovi modelli man mano che le esigenze dell’organizzazione aumentano.
-* Gli **autori di contenuti** creano in modo continuativo nuovi contenuti, come frammenti di contenuto, in base ai modelli definiti dagli architetti.
+* **Amministratori** deve impostare la configurazione iniziale e la struttura delle cartelle per il contenuto, di solito una sola volta o occasionalmente.
+* **Architetti dell&#39;informazione** in genere, aggiungi nuovi modelli man mano che le esigenze dell’organizzazione aumentano.
+* **Autori di contenuti** creare in modo continuo contenuti come frammenti di contenuto in base ai modelli definiti dagli architetti.
 
 ## Passaggio successivo {#next-step}
 

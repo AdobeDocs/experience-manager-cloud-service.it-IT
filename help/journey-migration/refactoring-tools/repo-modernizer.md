@@ -2,9 +2,9 @@
 title: Modernizzatore dell'archivio
 description: Modernizzatore dell'archivio
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '303'
 ht-degree: 6%
 
 ---
@@ -32,7 +32,7 @@ Repository Modernizer crea una struttura di progetto AEM Cloud Service compatibi
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Tramite Adobe Developer CLI : si consiglia di utilizzare Repository Modernizer tramite `aio-cli-plugin-aem-cloud-service-migration` (plug-in di refactoring del codice as a Cloud Service AEM per Adobe Developer CLI).
+* Ad Adobe I/O, CLI : si consiglia di utilizzare il Modernizzatore dell’archivio tramite `aio-cli-plugin-aem-cloud-service-migration` (plug-in per il refactoring del codice as a Cloud Service AEM per Adobe I/O CLI).
 
   Consulta **[Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** in questo modo puoi imparare a installare e utilizzare il plug-in.
 
