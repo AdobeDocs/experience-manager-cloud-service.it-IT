@@ -3,7 +3,7 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '4918'
 ht-degree: 90%
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 Questa query restituirà l’elenco completo degli autori. Autori senza la variazione `another` torneranno ai dati originali (in questo caso `_variation` riferirà `master`).
 
-Se desideri limitare l’elenco agli autori che forniscono la variante specificata (e saltare gli autori che tornerebbero ai dati originali), applica un’ [filter](#filtering):
+Applicare un [filter](#filtering), se desideri limitare l’elenco agli autori che forniscono la variante specificata (e saltare gli autori che tornerebbero ai dati originali):
 
 ```graphql
 query($variation: String!) {

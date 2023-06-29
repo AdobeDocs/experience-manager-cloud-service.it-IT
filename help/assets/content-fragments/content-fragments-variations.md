@@ -2,9 +2,9 @@
 title: Varianti - Authoring dei contenuti di frammenti  (Risorse - Frammenti di contenuto)
 description: Scopri come le varianti possono rendere ancora più flessibili i contenuti headless in AEM consentendoti di creare contenuti per il frammento e quindi creare varianti di tali contenuti in base allo scopo.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2438'
 ht-degree: 83%
 
 ---
@@ -195,8 +195,12 @@ Per creare un nuovo frammento, segui questi passaggi:
 1. Specifica le proprietà; per esempio **Titolo**.
 1. Seleziona **Crea**.
 1. Infine:
-   1. **Fine** ritorna al frammento originale e fa riferimento al nuovo frammento.
-   1. **Apri** fa riferimento al nuovo frammento e apre il nuovo frammento, per la modifica, in una nuova scheda del browser.
+   1. **Fine**:
+      * restituisce (al frammento originale)
+      * fa riferimento al nuovo frammento
+   1. **Apri**:
+      * fa riferimento al nuovo frammento
+      * apre il nuovo frammento per la modifica in una nuova scheda del browser
 
 ### Visualizzazione delle statistiche chiave {#viewing-key-statistics}
 

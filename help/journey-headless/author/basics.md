@@ -2,9 +2,9 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1715'
 ht-degree: 85%
 
 ---
@@ -213,7 +213,7 @@ La prima volta che l’editor viene aperto, viene visualizzato quanto segue:
 
 Come esempi:
 
-* Frammento che richiede solo più informazioni, alcune con un tipo specifico. Per i contenuti headless, i riferimenti sono fondamentali; informazioni su questi sono disponibili più avanti nel percorso.
+* Frammento che richiede solo più informazioni, alcune con un tipo specifico. Per i contenuti headless, i riferimenti sono fondamentali (ne saprai di più avanti nel tuo percorso).
 
   ![Editor frammento di contenuto - Frammento personale](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -235,7 +235,7 @@ Conferma gli aggiornamenti con **Salva** o **Salva e chiudi**.
 
 #### Di cosa non deve (probabilmente) preoccuparsi {#what-you-probably-do-not-need-to-worry-about}
 
-Questa sezione potrebbe sembrare un po’ strana, ma dopo aver aperto l’Editor frammento di contenuto e aver iniziato a esplorare puoi vedere diverse opzioni che (probabilmente) non si applicano al percorso headless come autore di contenuti. Questo è solo un rapido resoconto di ciò che dovresti essere in grado di ignorare nel contesto headless:
+OK, questa sezione potrebbe sembrare un po’ strana, ma non appena apri l’Editor frammento di contenuto e inizi a esplorare puoi vedere diverse opzioni che (probabilmente) non si applicano al tuo percorso headless come Autore di contenuti. Questo è solo un rapido resoconto di ciò che dovresti essere in grado di ignorare nel contesto headless:
 
 * **Modelli per frammenti di contenuto**
 

@@ -4,9 +4,9 @@ description: Scopri come le varianti consentono di creare contenuti per il framm
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 83%
 
 ---
@@ -197,8 +197,12 @@ Per creare un nuovo frammento, segui questi passaggi:
 1. Specifica le proprietà; per esempio **Titolo**.
 1. Seleziona **Crea**.
 1. Infine:
-   1. **Fine** ritorna al frammento originale e fa riferimento al nuovo frammento.
-   1. **Apri** fa riferimento al nuovo frammento e apre il nuovo frammento, per la modifica, in una nuova scheda del browser.
+   1. **Fine**:
+      * restituisce (al frammento originale)
+      * fa riferimento al nuovo frammento
+   1. **Apri**:
+      * fa riferimento al nuovo frammento
+      * apre il nuovo frammento per la modifica in una nuova scheda del browser
 
 ### Visualizzazione delle statistiche chiave {#viewing-key-statistics}
 

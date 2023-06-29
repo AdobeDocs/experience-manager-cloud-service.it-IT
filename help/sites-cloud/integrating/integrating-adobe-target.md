@@ -4,7 +4,7 @@ description: Integrazione con Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 67%
@@ -50,7 +50,7 @@ Quando configuri i campi ID tenant Adobe Target e Codice client Adobe Target, ti
 In entrambi i casi:
 
 * Per impostazione predefinita, anche il codice client (se aggiunto per primo) viene copiato automaticamente nel campo ID tenant.
-* Facoltativamente, puoi modificare il set di ID tenant predefinito.
+* Se necessario, puoi modificare il set di ID tenant predefinito.
 * Le chiamate di back-end a Target si basano sull’ID tenant e le chiamate lato client a Target si basano sul codice client.
 
 Come indicato in precedenza, il primo caso è il più comune per AEM as a Cloud Service. In entrambi i casi, assicurati che **entrambi** i campi contengano le informazioni corrette a seconda dei requisiti.
@@ -156,4 +156,4 @@ Per informazioni su come generare e pubblicare, consulta [pagina](https://experi
 
 >[!NOTE]
 >
->Le configurazioni legacy sono ancora supportate per i clienti esistenti (senza la possibilità di modificarle o crearle). Le configurazioni legacy fanno parte di pacchetti di contenuti caricati dai clienti che utilizzano VSTS.
+>Le configurazioni legacy sono ancora supportate per i clienti esistenti (senza la possibilità di modifica o creazione). Le configurazioni legacy fanno parte di pacchetti di contenuti caricati dai clienti che utilizzano VSTS.

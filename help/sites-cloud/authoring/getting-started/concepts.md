@@ -2,9 +2,9 @@
 title: Concetti relativi all’authoring
 description: Concetti relativi all’authoring in AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 42%
 
 ---
@@ -20,7 +20,7 @@ Questi ambienti interagiscono tra loro e consentono di rendere i contenuti dispo
 
 L’ambiente di authoring fornisce le funzioni necessarie per creare, aggiornare e rivedere i contenuti prima che vengano pubblicati:
 
-* Un autore crea e rivede i contenuti. I contenuti possono essere di diversi tipi, ad esempio pagine, risorse e pubblicazioni.
+* Un autore crea e rivede i contenuti. I contenuti possono essere di diversi tipi, tra cui pagine, risorse e pubblicazioni.
 * e sono destinati a essere pubblicati sul sito web.
 
 ![Diagramma relativo a authoring, pubblicazione e dispatcher](/help/sites-cloud/authoring/assets/author-publish.png)

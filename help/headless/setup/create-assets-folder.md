@@ -2,9 +2,9 @@
 title: 'Creazione di una cartella di risorse: configurazione headless'
 description: Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '383'
 ht-degree: 89%
 
 ---
@@ -19,7 +19,7 @@ Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura d
 
 Tuttavia, è necessario innanzitutto creare una cartella di risorse in cui memorizzarli.
 
-Le cartelle di risorse vengono utilizzate per [organizzare le risorse di contenuti tradizionali](/help/assets/manage-digital-assets.md) come immagini e video e frammenti di contenuto.
+Le cartelle di risorse vengono utilizzate per [organizzare le risorse di contenuti tradizionali](/help/assets/manage-digital-assets.md) come immagini e video, insieme a Frammenti di contenuto.
 
 ## Creare una cartella di risorse {#how-to-create-an-assets-folder}
 

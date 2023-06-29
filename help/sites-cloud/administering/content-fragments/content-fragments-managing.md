@@ -4,9 +4,9 @@ description: Scopri come utilizzare la console Frammenti di contenuto per gestir
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2052'
 ht-degree: 76%
 
 ---
@@ -251,7 +251,7 @@ Puoi pubblicare i frammenti di contenuto in:
 
   >[!NOTE]
   >
-  Per ulteriori dettagli sugli ambienti di anteprima, vedi:
+  Per ulteriori dettagli sugli ambienti di anteprima, consulta:
   >
   * [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [Configurazione delle impostazioni OSGi per il livello di anteprima](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
