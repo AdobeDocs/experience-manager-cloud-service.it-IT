@@ -3,10 +3,10 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 32fb0942b8007aeee8afa6378a9293eecd7d7700
+source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 16%
+source-wordcount: '1427'
+ht-degree: 15%
 
 ---
 
@@ -131,11 +131,13 @@ La vista Risorse ora consente di: [aggiungere componenti di proprietà di testo 
 
 * [Metodi di autenticazione migliorati per il modello dati modulo](/help/forms/configure-data-sources.md): maggiore sicurezza grazie all’introduzione dell’autenticazione basata sulle credenziali client per la connessione di AEM Forms con origini dati compatibili. Questo miglioramento elimina la necessità di rappresentazione o accesso da parte dell’utente, rafforzando la protezione dei dati.
 
-* Rendi ripetibili le sezioni di Adaptive Forms: ora puoi rendere [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), e [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componenti di un modulo adattivo ripetibili.
+* [Forms adattivo con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md): ora puoi effettuare [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), e [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componenti in un modulo adattivo basato su Componenti core per creare sezioni ripetibili.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   Queste sezioni ripetibili consentono di fornire un numero illimitato di voci senza un numero di campi fisso. È utile quando le istanze di dati richieste sono sconosciute in anticipo. Gli utenti di Forms possono aggiungere o rimuovere facilmente sezioni, rendendo i moduli adattabili a scenari di immissione dati diversi e semplificando la raccolta di più occorrenze degli stessi dati.
+
+* **[Invia Forms adattivo a Microsoft® SharePoint e Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: migliora l’agilità degli utenti aziendali per poter avviare rapidamente nuovi moduli e archiviare i dati inviati negli strumenti quotidiani utilizzati, come il sito Microsoft® SharePoint o la cartella OneDrive.
 
 ### Programma dei moduli adattivi headless per i primi utilizzatori {#forms-early-adopter}
 
