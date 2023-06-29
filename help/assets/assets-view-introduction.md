@@ -2,9 +2,9 @@
 title: Quali vantaggi offre Assets?
 description: Ulteriori informazioni sui principali vantaggi della visualizzazione Assets
 mini-toc-levels: 3
-source-git-commit: 4e31a57a6bcbc6783398c205075bb8e1b1a5dc74
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1118'
 ht-degree: 11%
 
 ---
@@ -119,7 +119,12 @@ Oltre a queste funzioni, la vista Risorse consente di eseguire le seguenti funzi
 
 * Carica una nuova versione di una risorsa, con un nome diverso, dal file system locale all’archivio delle risorse. La risorsa caricata è disponibile come nuova versione con lo stesso nome di quella originale.
 
-* Rinomina le risorse e la cartella disponibili nell’archivio.
+* Rinomina le risorse e le cartelle disponibili nell’archivio.
+
+Utilizza questi collegamenti per iniziare rapidamente a utilizzare la vista Risorse:
+
+* [Area di lavoro personale](/help/assets/my-workspace-assets-view.md)
+* [Introduzione all’utilizzo della vista Risorse](/help/assets/get-started-assets-view.md)
 
 ## Conclusione {#conclusion}
 
