@@ -2,9 +2,9 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
+source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '600'
 ht-degree: 20%
 
 ---
@@ -38,8 +38,8 @@ Di seguito sono riepilogati i continui miglioramenti per la versione di manutenz
 - SITES-13559: MSM: eccezione &quot;Non modificabile&quot; generata durante il rollout del componente
 - SITES-11757: MSM: l’ereditarietà della configurazione di rollout dall’elemento padre non viene ripristinata per le pagine figlie
 - SITES-14073: Sites Admin: il rapporto CSV non riesce con 500 quando non si seleziona alcuna proprietà da esportare
-- FORMS-7648: la convalida del numero massimo di cifre archiviate non funziona per il componente Casella numerica.
-- FORMS-8177: quando il servizio Forms è attivo, viene rilevato l’errore &quot;com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Impossibile recuperare le dipendenze delle risorse&quot;.
+- FORMS-7648: impossibile convalidare il numero massimo di cifre in un componente Casella numerica. Lo script di convalida non funziona.
+- FORMS-8177: quando il servizio Forms è attivo, il `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` si verifica un errore.
 - FORMS-8300: quando un utente tenta di delegare un’attività dopo averla aperta, la risposta del delegato ricarica l’attività, anziché aprire l’interfaccia utente della casella in entrata AEM dell’utente.
 - FORMS-8500: nel browser Microsoft® Edge con l’opzione Modalità IE abilitata, l’apertura di HTML5 Forms non riesce.
 - FORMS-8541: durante il rendering di un Forms adattivo, si verifica un’eccezione Null Pointer.
@@ -52,7 +52,6 @@ Di seguito sono riepilogati i continui miglioramenti per la versione di manutenz
 - FORMS-8846: la proprietà Bind reference non funziona per il componente Forms adattivo allegati.
 - FORMS-9072: quando esegui una ricerca in uno schema durante la creazione di un frammento di modulo, il risultato della ricerca non restituisce alcuno schema per la selezione.
 - FORMS: sono stati corretti diversi bug relativi all’accessibilità per migliorare l’accessibilità delle funzioni di AEM Forms.
-
 
 ### Problemi noti {#known-issues-12441}
 
