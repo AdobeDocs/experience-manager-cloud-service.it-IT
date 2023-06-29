@@ -2,10 +2,10 @@
 title: Utilizzo dei tag
 description: I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 86%
+source-wordcount: '563'
+ht-degree: 79%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 86%
 
 I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati come parole chiave o etichette che possono essere allegate a una pagina, una risorsa o altro contenuto per consentire alle ricerche di trovarlo e contenuto correlato.
 
-* Per informazioni sulla creazione e la gestione dei tag, nonché sulla modalità di applicazione dei tag di contenuto, consulta Gestione dei tag. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* Per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag in applicazioni personalizzate, vedi [Tagging per sviluppatori](/help/implementing/developing/introduction/tagging-framework.md).
+* Consulta Amministrazione dei tag per informazioni sulla creazione e la gestione dei tag e su quali tag di contenuto sono stati applicati. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
+* Consulta [Assegnazione di tag per sviluppatori](/help/implementing/developing/introduction/tagging-framework.md) per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag in applicazioni personalizzate.
 
 ## Dieci motivi per utilizzare l’assegnazione tag {#ten-reasons-to-use-tagging}
 
@@ -47,7 +47,7 @@ Analogamente a quanto avviene per la pubblicazione e l’annullamento della pubb
 
 * Consente di attivare singoli tag.
 
-   Come per le pagine, è necessario attivare i nuovi tag creati prima che siano disponibili nell’ambiente di pubblicazione.
+  Come per le pagine, è necessario attivare i nuovi tag creati prima che siano disponibili nell’ambiente di pubblicazione.
 
 >[!NOTE]
 >

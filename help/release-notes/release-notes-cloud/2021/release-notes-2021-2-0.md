@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.2.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.2.0 as a Cloud Service."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 32%
+source-wordcount: '1228'
+ht-degree: 33%
 
 ---
 
@@ -80,7 +80,7 @@ La seguente versione (2021.3.0) sarà del 25 marzo 2021.
 
 * È stato rilasciato il sito di riferimento CIF Venia (24.02.2021), che include la versione più recente dei Componenti Core CIF 1.8.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) per ulteriori dettagli.
 
-* È stata rilasciata la versione 1.8.0 dei componenti core CIF. Fai riferimento a [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) per ulteriori dettagli.
+* È stata rilasciata la versione 1.8.0 dei componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) per ulteriori dettagli.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -136,7 +136,7 @@ La data di pubblicazione dello strumento Content Transfer v1.2.2 è il 01 febbra
 ### Novità dello strumento Content Transfer {#what-is-new-ctt}
 
 * Nuove funzionalità e interfaccia utente aggiunte allo strumento Content Transfer (Trasferimento contenuti) - Strumento di mappatura utenti. Questa funzione mappa automaticamente utenti e gruppi esistenti ai loro ID di sistema Adobe Identity Management come parte dell’attività di migrazione dei contenuti.
-Fai riferimento a [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=it) per ulteriori dettagli.
+Vedi [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=it) per ulteriori dettagli.
 * Lo strumento Content Transfer (Trasferimento contenuti) ora esegue la migrazione di tutti i gruppi e gli utenti a cui si fa riferimento nel set di migrazione, inclusi gli elementi figlio.
 * Gli utenti possono selezionare alcuni percorsi in `/etc` durante la creazione dei set di migrazione.
 
@@ -159,9 +159,9 @@ La data di rilascio di Best Practices Analyzer v2.1.2 è il 18 febbraio 2021.
 ### Novità degli strumenti di refactoring del codice {#what-is-new-crt}
 
 * È stata rilasciata la nuova versione del plug-in AIO-CLI. La versione più recente di questo plug-in include diverse correzioni di bug per Repository Modernizer.
-Fai riferimento a [Esperienza unificata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) per ulteriori informazioni su questo plug-in.
+Consulta [Esperienza unificata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) per ulteriori informazioni su questo plug-in.
 
 ### Correzioni di bug {#bug-fixes-crt}
 
 * Sono state apportate diverse correzioni di bug in Repository Modernizer.
-Fai riferimento a [Risorsa GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per ulteriori dettagli.
+Consulta [Risorsa GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per ulteriori dettagli.

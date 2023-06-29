@@ -2,10 +2,10 @@
 title: Utilizzo di Best Practices Analyzer
 description: Utilizzo di Best Practices Analyzer
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2479'
-ht-degree: 46%
+source-wordcount: '2474'
+ht-degree: 45%
 
 ---
 
@@ -107,7 +107,7 @@ Per filtrare i risultati relativi a [Commons ACS](https://adobe-consulting-servi
    ![immagine](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >I risultati di ACS Commons non devono essere ignorati. Fai riferimento a [documentazione](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) per determinare la compatibilità con AEM as a Cloud Service.
+   >I risultati di ACS Commons non devono essere ignorati. Consulta [documentazione](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) per determinare la compatibilità con AEM as a Cloud Service.
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -144,7 +144,7 @@ Il rapporto si presenta con questo formato:
 A ciascun risultato viene assegnato un livello di importanza per dare un’indicazione approssimativa del grado di priorità dell’intervento richiesto.
 
 >[!NOTE]
->Per ulteriori informazioni su ciascuna categoria di risultati, fare riferimento a [Categorie del rilevatore pattern](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>Per ulteriori informazioni su ciascuna categoria di risultati, consulta [Categorie del rilevatore pattern](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 La tabella seguente descrive i livelli di importanza:
 
@@ -192,7 +192,7 @@ L’interfaccia HTTP può essere utilizzata in diversi modi.
 
 Un modo semplice consiste nell’aprire una scheda del browser nello stesso browser in cui hai già effettuato l’accesso ad AEM come amministratore. Puoi inserire l’URL nella scheda del browser e visualizzare o scaricare i risultati dal browser.
 
-Puoi inoltre utilizzare uno strumento della riga di comando, ad esempio `curl` o `wget`, nonché qualsiasi applicazione client HTTP. Se non utilizzi una scheda del browser con una sessione autenticata, devi fornire nel commento un nome utente e una password amministratore.
+È inoltre possibile utilizzare uno strumento della riga di comando, ad esempio `curl` o `wget` e qualsiasi applicazione client HTTP. Se non utilizzi una scheda del browser con una sessione autenticata, devi fornire nel commento un nome utente e una password amministratore.
 
 Il seguente è un esempio di come eseguire questa operazione:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.

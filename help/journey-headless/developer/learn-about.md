@@ -2,10 +2,10 @@
 title: Scopri di più sullo sviluppo di CMS headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri la tecnologia headless e perché utilizzarla.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 95%
+source-wordcount: '1621'
+ht-degree: 93%
 
 ---
 
@@ -96,7 +96,7 @@ Headless rende la distribuzione delle esperienze digitali ancora più flessibile
 
 Avere molti canali diversi può significare che ciascuno di essi dispone di propri sistemi di presentazione. Anche se tutti utilizzano lo stesso contenuto tramite le stesse API, l’esperienza può essere diversa a causa delle diverse presentazioni. Occorre prestare attenzione e preoccupazione per garantire la coerenza dell’esperienza del cliente.
 
-Implementando sistemi di progettazione attenti, condividendo librerie di pattern e sfruttando componenti di progettazione riutilizzabili e framework dal lato client aperti consolidati, è possibile garantire esperienze coerenti, ma questo deve essere pianificato.
+Implementando sistemi di progettazione attenti, condividendo librerie di modelli e sfruttando componenti di progettazione riutilizzabili e framework lato client aperti e consolidati, è possibile garantire esperienze coerenti, ma questo deve essere pianificato.
 
 ## Il futuro è headless e il futuro è adesso {#future}
 

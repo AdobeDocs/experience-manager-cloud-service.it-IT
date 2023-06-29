@@ -2,7 +2,7 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Attività di manutenzione in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 63%
@@ -44,7 +44,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
   <tr>
     <td>Pulizia delle versioni</td>
     <td>Adobe</td>
-    <td>Per gli ambienti esistenti (creati prima del 1° giugno 2023), la rimozione è disabilitata e non sarà abilitata in futuro a meno che non sia esplicitamente abilitata dal cliente, che potrà anche configurarla con valori personalizzati.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Per impostazione predefinita, per i nuovi ambienti (creati a partire dal 1° giugno 2023) è abilitata l’eliminazione con i valori riportati di seguito, e i clienti possono effettuare la configurazione con valori personalizzati.
+    <td>Per gli ambienti esistenti (creati prima del 1° giugno 2023), la rimozione è disabilitata e non sarà abilitata in futuro a meno che non sia esplicitamente abilitata dal cliente, che potrà anche configurarla con valori personalizzati.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Per impostazione predefinita, per i nuovi ambienti (creati a partire dal 1° giugno 2023) è abilitata l’eliminazione con i valori riportati di seguito, e i clienti possono effettuare la configurazione con valori personalizzati.
      <ol>
        <li>Le versioni precedenti a 30 giorni vengono rimosse</li>
        <li>Le ultime 5 versioni degli ultimi 30 giorni vengono conservate</li>

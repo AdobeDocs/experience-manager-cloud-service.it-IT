@@ -1,10 +1,10 @@
 ---
 title: 'Processo di provisioning: panoramica'
 description: 'Processo di provisioning: panoramica'
-source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Una volta completato il provisioning automatico:
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-Per ulteriori informazioni, visita [Onboarding in Experience Manager as a Cloud Service su Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=it)
+Per ulteriori informazioni, consulta [Onboarding per Experience Manager as a Cloud Service su Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=it).
 
 ### Risorse e collegamenti
 

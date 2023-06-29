@@ -2,9 +2,9 @@
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione di archivi di contenuti di grandi dimensioni
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1813'
 ht-degree: 6%
 
 ---
@@ -30,17 +30,17 @@ Prima di iniziare, segui la sezione seguente per comprendere le considerazioni i
 
 * La versione dell’AEM di origine deve essere 6.3 - 6.5.
 
-* L’archivio dati dell’AEM di origine è configurato per l’utilizzo dell’archiviazione BLOB di Amazon S3 o Azure. Per ulteriori informazioni, consulta [Configurazione degli archivi dei nodi e dei dati in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
+* L’archivio dati dell’AEM di origine è configurato per l’utilizzo dell’archiviazione BLOB di Amazon S3 o Azure. Per ulteriori dettagli, consulta [Configurazione degli archivi dei nodi e dei dati in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
 
 * Ogni set di migrazione copia l’intero archivio dati, pertanto è necessario utilizzare un solo set di migrazione.
 
 * Per installare è necessario disporre dell&#39;accesso [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) sull&#39;istanza (o VM) che esegue l&#39;istanza AEM di origine.
 
-* La raccolta oggetti inattivi dell’archivio dati è stata eseguita nei sette giorni precedenti sull’origine. Per ulteriori informazioni, consulta [Raccolta oggetti inattivi dell’archivio dati](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
+* La raccolta oggetti inattivi dell’archivio dati è stata eseguita nei sette giorni precedenti sull’origine. Per ulteriori dettagli, consulta [Raccolta oggetti inattivi dell’archivio dati](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
 
 ### Considerazioni aggiuntive se l’istanza AEM di origine è configurata per utilizzare un archivio dati di archiviazione Amazon S3 o Azure Blob {#additional-considerations-amazons3-azure}
 
-* Il trasferimento dei dati da Amazon S3 e dall’archiviazione BLOB di Azure comporta un costo. Il costo del trasferimento è relativo alla quantità totale di dati nel contenitore di storage esistente (a prescindere dal fatto che vi si faccia riferimento o meno nell&#39;AEM). Fai riferimento a [Amazon S3](https://aws.amazon.com/s3/pricing/) e [Archiviazione BLOB di Azure](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) per ulteriori dettagli.
+* Il trasferimento dei dati da Amazon S3 e dall’archiviazione BLOB di Azure comporta un costo. Il costo del trasferimento è relativo alla quantità totale di dati nel contenitore di storage esistente (a prescindere dal fatto che vi si faccia riferimento o meno nell&#39;AEM). Consulta [Amazon S3](https://aws.amazon.com/s3/pricing/) e [Archiviazione BLOB di Azure](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) per ulteriori dettagli.
 
 * È necessaria una coppia chiave di accesso e chiave segreta per il bucket Amazon S3 di origine esistente oppure un URI SAS per il contenitore Archiviazione BLOB di Azure di origine esistente (l’accesso in sola lettura va bene).
 
@@ -162,7 +162,7 @@ Con il file di configurazione di cui sopra attivo, la fase di pre-copia di AzCop
 >Se AzCopy non è configurato correttamente, nei registri viene visualizzato il seguente messaggio:
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
-1. Inizia un’estrazione dall’interfaccia utente CTT. Fai riferimento a [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) e [Processo di estrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) per ulteriori dettagli.
+1. Inizia un’estrazione dall’interfaccia utente CTT. Consulta [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) e [Processo di estrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) per ulteriori dettagli.
 
 1. Conferma che nel registro di estrazione sia stampata la seguente riga:
 
@@ -198,7 +198,7 @@ Quando AzCopy è in esecuzione per il file di origine dataStore, nei registri do
 
 ### 5. Acquisizione con AzCopy {#ingesting-azcopy}
 
-Fai riferimento a [Acquisizione di contenuti in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+Consulta [Acquisizione di contenuti in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
 per informazioni generali sull’acquisizione di contenuti nella destinazione da Cloud Acceleration Manager (CAM), incluse istruzioni sull’utilizzo di AzCopy (pre-copia) o meno, nella finestra di dialogo &quot;Nuova acquisizione&quot;.
 
 Per sfruttare AzCopy durante l’acquisizione, Adobe richiede di utilizzare una versione as a Cloud Service dell’AEM che sia almeno la versione 2021.6.5561.
@@ -209,7 +209,7 @@ Consulta l’elenco &quot;Processi di acquisizione&quot; in Cloud Acceleration M
 *************** Beginning AzCopy pre-copy phase ***************
 INFO: Scanning...
 INFO: Failed to create one or more destination container(s). Your transfers may still succeed if the container already exists.
-INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+INFO: Any empty folders will not be processed, because source and/or destination does not have full folder support
 INFO: azcopy: A newer version 10.11.0 is available to download
  
 Job 419d98da-fc05-2a45-70cc-797fee632031 has started

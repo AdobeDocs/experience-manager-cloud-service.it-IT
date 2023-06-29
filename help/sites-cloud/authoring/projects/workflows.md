@@ -2,7 +2,7 @@
 title: Utilizzo dei flussi di lavoro per i progetti
 description: Sono disponibili diversi flussi di lavoro di progetto pronti all’uso.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 46%
@@ -21,18 +21,18 @@ I flussi di lavoro dei progetti disponibili includono:
 
 A seconda del modello di progetto selezionato, sono disponibili alcuni flussi di lavoro:
 
-|  | **Progetto semplice** | **Progetto di traduzione** |
+|   | **Progetto semplice** | **Progetto di traduzione** |
 |---|:-:|:-:|
 | Flusso di lavoro di approvazione progetto | x |  |
 | Richiedi lancio | x |  |
 | Richiedi pagina di destinazione | x |  |
-| Richiedi e-mail | x |  |
+| Richiedi e-mail | x | |
 | Creazione DAM copia in lingua &amp;ast; |  | x |
-| Creazione DAM e traduzione copia in lingua &amp;ast; |  | x |
+| Creazione DAM e traduzione copia in lingua &amp;ast; |   | x |
 
 >[!NOTE]
 >
->&amp;ast Questi flussi di lavoro non si trovano nella sezione **Flusso di lavoro** in Progetti. Consulta [Creazione di copie per lingua per Assets.](/help/sites-cloud/administering/translation/managing-projects.md)
+>&amp;ast Questi flussi di lavoro non si trovano nella sezione **Flusso di lavoro** in Progetti. Consulta [Creazione di copie per lingua per Assets](/help/sites-cloud/administering/translation/managing-projects.md).
 
 I passaggi per avviare e completare i flussi di lavoro sono gli stessi, indipendentemente dal flusso di lavoro scelto. Cambiano solo i passaggi.
 

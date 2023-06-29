@@ -1,10 +1,10 @@
 ---
 title: Conversione di una configurazione AMS in una configurazione Adobe Experience Manager as a Cloud Service Dispatcher
 description: Conversione di una configurazione AMS in una configurazione Adobe Experience Manager as a Cloud Service Dispatcher
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 44%
+source-wordcount: '1278'
+ht-degree: 39%
 
 ---
 
@@ -22,7 +22,7 @@ Questa sezione fornisce istruzioni dettagliate su come convertire una configuraz
 
 1. **Estrarre l’archivio e rimuovere un eventuale prefisso**
 
-   Estrai l’archivio in una cartella e accertati che le sottocartelle immediate inizino con conf, conf.d, conf.dispatcher.d e conf.module.d. Se non lo fanno, spostateli verso l&#39;alto nella gerarchia.
+   Estrai l’archivio in una cartella e accertati che le sottocartelle immediate inizino con conf, conf.d, conf.dispatcher.d e conf.module.d. In caso contrario, spostarli verso l&#39;alto nella gerarchia.
 
 1. **Eliminare le sottocartelle e i file inutilizzati**
 

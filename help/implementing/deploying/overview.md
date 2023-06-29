@@ -3,7 +3,7 @@ title: Implementazione in AEM as a Cloud Service
 description: Implementazione in AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
 ht-degree: 40%
@@ -113,7 +113,7 @@ Dopo il passaggio alla nuova versione dell’applicazione:
 È possibile limitare l’installazione di contenuti mutabili all’authoring o alla pubblicazione incorporando i pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per rispecchiare tale separazione è stata effettuata in AEM 6.5, e i dettagli relativi alla ristrutturazione del progetto raccomandata si trovano nella [Documentazione AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=it)
 
 >[!NOTE]
->I pacchetti di contenuto vengono distribuiti in tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Questa limitazione è presente per garantire la possibilità di effettuare un test di esecuzione automatica. Il contenuto specifico di un ambiente richiede l’installazione manuale tramite [Gestione pacchetti.](/help/implementing/developing/tools/package-manager.md)
+>I pacchetti di contenuto vengono distribuiti in tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Questa limitazione è presente per garantire la possibilità di effettuare un test di esecuzione automatica. Il contenuto specifico di un ambiente richiede l’installazione manuale tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md).
 
 Inoltre, non esiste alcun meccanismo per eseguire il rollback delle modifiche del pacchetto di contenuti mutabili dopo la loro applicazione. Se i clienti rilevano un problema, possono scegliere di correggerlo nella versione successiva del codice o, come ultima risorsa, ripristinare l’intero sistema in un punto temporale prima della distribuzione.
 

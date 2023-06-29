@@ -2,9 +2,9 @@
 title: Esternalizzazione degli URL
 description: Externalizer è un servizio OSGi che consente di trasformare in modo programmatico un percorso di risorsa in un URL esterno e assoluto.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Nell&#39;AEM, la **Esternalizzatore** è un servizio OSGi che consente di trasfo
 
 Poiché un’istanza as a Cloud Service dell’AEM non può conoscere il proprio URL visibile esternamente e poiché a volte è necessario creare un collegamento al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare tali URL esterni e generarli.
 
-Questo articolo spiega come configurare il servizio Externalizer e come utilizzarlo. Per informazioni tecniche dettagliate sul servizio, consultare il [JavaScript](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+Questo articolo spiega come configurare il servizio Externalizer e come utilizzarlo. Per informazioni tecniche sul servizio, vedi [JavaScript](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Comportamento predefinito di Externalizer e Procedura di sostituzione {#default-behavior}
 

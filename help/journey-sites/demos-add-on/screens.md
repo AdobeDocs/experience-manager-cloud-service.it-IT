@@ -1,35 +1,35 @@
 ---
 title: Abilitare AEM Screens per il tuo sito demo
-description: Scopri i passaggi per abilitare l’esperienza completa di AEM Screens as a Cloud Service sul tuo sito demo.
+description: Scopri i passaggi per abilitare l’esperienza as a Cloud Service completa di AEM Screens sul tuo sito demo.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 96%
+source-wordcount: '2666'
+ht-degree: 56%
 
 ---
 
 # Abilitare AEM Screens per il tuo sito demo {#enable-screens}
 
-Scopri i passaggi per abilitare l’esperienza completa di AEM Screens as a Cloud Service sul tuo sito demo.
+Scopri i passaggi per abilitare l’esperienza as a Cloud Service completa di AEM Screens sul tuo sito demo.
 
 >[!NOTE]
 >
 >AEM Screens Demo richiede l’aggiunta del componente aggiuntivo Screens al programma Cloud Manager. Scopri [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) come aggiungerlo.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di AEM Reference Demos Add-On, con [Crea sito demo,](create-site.md) hai creato un nuovo sito demo basato sui modelli di Reference Demo Add-On. Ora dovresti:
+Nel precedente documento del percorso aggiuntivo Demo di riferimento AEM, [Creare un sito demo,](create-site.md) hai creato un sito demo basato sui modelli di Reference Demo Add-on. Ora dovresti:
 
 * Comprendere come accedere all’ambiente di authoring AEM.
 * Conoscere come creare un sito basato su un modello.
 * Comprendere le nozioni di base per navigare nella struttura del sito e modificare una pagina.
 
-Adesso che disponi di un sito demo per esplorare e comprendere gli strumenti disponibili per aiutarti a gestirlo, puoi abilitare l’esperienza completa di AEM Screens as a Cloud Service per i siti demo.
+Ora che disponi di un sito demo da esplorare e che conosci gli strumenti per gestirlo, abilita l’esperienza AEM Screens as a Cloud Service completa per i siti demo.
 
 ## Obiettivo {#objective}
 
-AEM Reference Demos Add-On contiene i contenuti AEM Screens per We.Cafe, una caffetteria verticale. Questo documento spiega come eseguire la configurazione demo di We.Cafe nel contesto di AEM Screens. Dopo la lettura dovresti:
+Il componente aggiuntivo Demo di riferimento AEM contiene contenuti AEM Screens per We.Cafe, una caffetteria verticale. Questo documento spiega come eseguire la configurazione demo di We.Cafe nel contesto di AEM Screens. Dopo la lettura, dovresti:
 
 * Conoscere le nozioni di base di AEM Screens.
 * Comprendere il contenuto demo di We.Cafe.
@@ -47,11 +47,11 @@ AEM Screens as a Cloud Service è una soluzione di segnaletica digitale che cons
 >
 >Per informazioni complete su AEM Screens as a Cloud Service, consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine del presente documento.
 
-Installando AEM Reference Demos Add-On, il contenuto We.Cafe per AEM Screens sarà disponibile automaticamente nell’ambiente di authoring demo. I passaggi descritti in [Distribuzione di un progetto Screens demo](#deploy-project) ti consentono di abilitare l’esperienza AEM Screens completa pubblicando tale contenuto e distribuendolo ai lettori multimediali, ecc.
+Installando il componente aggiuntivo Demo di riferimento AEM, nel tuo ambiente di authoring demo avrai automaticamente a disposizione i contenuti We.Cafe per AEM Screens. I passaggi descritti nel [Distribuire un progetto Screens demo](#deploy-project) ti aiuta ad abilitare l’esperienza AEM Screens completa pubblicando tale contenuto e distribuendolo ai lettori multimediali e così via.
 
 ## Comprendere il contenuto della demo {#demo-content}
 
-La caffetteria We.Cafe è composta da tre negozi che si trovano in tre sedi negli Stati Uniti. I tre negozi hanno tre esperienze simili:
+Il coffee shop We.Cafe è composto da tre negozi in tre località negli Stati Uniti. I tre negozi hanno tre esperienze simili:
 
 * Una bacheca del menu sopra il bancone con due o tre pannelli verticali
 * Un espositore all’ingresso rivolto verso la strada con un pannello orizzontale o verticale che invita i clienti a entrare nel negozio
@@ -70,7 +70,7 @@ Si presume che la sede di New York sia in un negozio più piccolo che non ha mol
 
 >[!NOTE]
 >
->Se decidi di connetterti a Screens Cloud Service nella sezione [Connessione a Screens as a Cloud Service](#connect-screens), crea le sedi come cartelle in visualizzazioni. Per ulteriori informazioni sulle visualizzazioni, consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine del presente documento.
+>Se decidi di collegarti al Cloud Service Screens in [Connetti schermi as a Cloud Service](#connect-screens) , crea le posizioni come cartelle in visualizzazioni. Per ulteriori informazioni sulle visualizzazioni, consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine del presente documento.
 
 ### Layout delle caffetterie {#care-layouts}
 
@@ -84,9 +84,9 @@ Le sedi di We.Cafe hanno i seguenti layout.
 
 ### Ingresso {#entrance}
 
-L’ingresso è suddiviso in base al giorno e la prima immagine verrà cambiata dal mattino al pomeriggio. Su ogni passaggio della sequenza, verrà pubblicizzata anche una preparazione speciale del caffè diversa, utilizzando una sequenza incorporata controllata per riprodurre un elemento diverso ogni volta.
+L&#39;ingresso è suddiviso in base al giorno e cambia la prima immagine dal mattino al pomeriggio. Su ogni passaggio della sequenza, viene pubblicizzata anche una preparazione speciale del caffè diversa, utilizzando una sequenza incorporata controllata per riprodurre ogni volta un elemento diverso.
 
-Anche sull’ultima immagine sui canali dell’ingresso viene eseguito il targeting (cioè viene modificata dinamicamente) in base alla temperatura esterna che può essere simulata nel modo descritto nella [Crea un’origine dati simulata](#data-source).
+Anche sull&#39;ultima immagine sui canali dell&#39;ingresso viene eseguito il targeting (cioè viene modificata dinamicamente) in base alla temperatura esterna che può essere simulata nel modo descritto nel [Crea origine dati simulata](#data-source) sezione.
 
 ## Distribuire un progetto Screens demo {#deploy-project}
 
@@ -107,19 +107,19 @@ Ora che disponi di contenuti dimostrativi We.Cafe, puoi scegliere come testare A
 
 ## Modifica dinamica del contenuto di Screens {#dynamically-change}
 
-Proprio come AEM Sites, AEM Screens può modificare i contenuti in modo dinamico in base al contesto. La demo We.Cafe ha canali configurati per mostrare contenuti diversi a seconda della temperatura corrente. Per simulare ciò, è necessario creare il semplice servizio meteo.
+Proprio come AEM Sites, AEM Screens può modificare i contenuti in modo dinamico in base al contesto. La demo We.Cafe ha canali configurati per mostrare contenuti diversi a seconda della temperatura corrente. Per simulare questa esperienza, devi creare un semplice servizio meteo.
 
 ### Creare origine dati simulata {#data-source}
 
-Dato che è molto difficile cambiare il tempo durante una demo o durante la prova, i cambiamenti di temperatura devono essere simulati. Simuleremo un servizio meteo memorizzando un valore di temperatura in un foglio di calcolo di Google Sheet che ContextHub di AEM chiamerà per recuperare la temperatura.
+Poiché è difficile cambiare il tempo durante una demo o durante la prova, i cambiamenti di temperatura devono essere simulati. Un servizio meteo è simulato memorizzando un valore di temperatura in un foglio di calcolo di Google Sheet che AEM ContextHub chiama per recuperare la temperatura.
 
 #### Creare chiave API Google {#create-api-key}
 
-Innanzitutto, è necessario creare una chiave API Google per facilitare lo scambio di dati.
+Innanzitutto, devi creare una chiave API Google per facilitare lo scambio di dati.
 
 1. Accedi a un account Google.
 1. Apri la Cloud Console con questo collegamento `https://console.cloud.google.com`.
-1. Crea un nuovo progetto facendo clic sul nome del progetto corrente in alto a sinistra nella barra degli strumenti, dopo l’etichetta **Piattaforma Google Cloud**.
+1. Crea un progetto facendo clic sul nome del progetto corrente in alto a sinistra nella barra degli strumenti dopo **Piattaforma Google Cloud** etichetta.
 
    ![Console Google Cloud](assets/google-cloud-console.png)
 
@@ -131,7 +131,7 @@ Innanzitutto, è necessario creare una chiave API Google per facilitare lo scamb
 
    ![Crea progetto](assets/create-project.png)
 
-1. Accertati che il nuovo progetto sia selezionato, quindi seleziona **API e servizi** dal menu hamburger della dashboard di Cloud Console.
+1. Accertati che il nuovo progetto sia selezionato, quindi, utilizzando il menu hamburger nel dashboard di Cloud Console, seleziona **API e servizi**.
 
    ![API e servizi](assets/apis-services.png)
 
@@ -139,21 +139,21 @@ Innanzitutto, è necessario creare una chiave API Google per facilitare lo scamb
 
    ![Credenziali](assets/credentials.png)
 
-1. Nella finestra di dialogo, copia la nuova chiave API e salva per un utilizzo successivo. Fai clic su **CHIUDI** per chiudere la finestra di dialogo.
+1. Nella finestra di dialogo, copia la nuova chiave API e salva per un utilizzo successivo. Clic **CHIUDI** in modo da poter uscire dalla finestra di dialogo.
 
 #### Abilita API dei fogli di Google {#enable-sheets}
 
-Per consentire lo scambio di dati dei fogli Google utilizzando la chiave API, devi abilitare l’API Google Sheets.
+Per consentire lo scambio di dati dei fogli di Google utilizzando la chiave API, devi abilitare l’API dei fogli di Google.
 
 1. Torna alla console Google Cloud all’indirizzo `https://console.cloud.google.com` per il progetto, quindi utilizza il menu hamburger per selezionare **API e servizi -> Libreria**.
 
    ![Libreria API](assets/api-library.png)
 
-1. Nella schermata Libreria API, scorri per trovare la ricerca **API dei fogli di Google**. Fai clic su di esso.
+1. Nella schermata Libreria API, scorri per trovare la ricerca **API dei fogli di Google**, quindi fare clic su di esso.
 
    ![Ricerca nella libreria API](assets/api-library-search.png)
 
-1. Nella finestra **API dei fogli di Google** fai clic su **ABILITA**.
+1. In **API dei fogli di Google** finestra, fai clic su **ABILITA**.
 
    ![API dei fogli di Google](assets/sheets-api.png)
 
@@ -161,9 +161,9 @@ Per consentire lo scambio di dati dei fogli Google utilizzando la chiave API, de
 
 Ora puoi creare un foglio di calcolo Google Sheets per memorizzare i dati meteo.
 
-1. Vai a `https://docs.google.com` e crea un nuovo foglio di calcolo Google Sheets.
+1. Vai a `https://docs.google.com` e creare un foglio di calcolo Google Sheets.
 1. Definire la temperatura immettendo `32` nella cella A2.
-1. Condividi il documento facendo clic su **Condividi** in alto a destra nella finestra e sotto **Ottieni collegamento** fai click su **Modifica**.
+1. Condividere il documento facendo clic su **Condividi** in alto a destra nella finestra e sotto **Ottieni collegamento**, fai clic su **Cambia**.
 
    ![Condividi foglio](assets/share-sheet.png)
 
@@ -173,7 +173,7 @@ Ora puoi creare un foglio di calcolo Google Sheets per memorizzare i dati meteo.
 
 1. Individua l’ID del foglio.
 
-   * L&#39;ID foglio è la stringa casuale di caratteri nel collegamento del foglio copiato dopo `d/` e prima `/edit`.
+   * L’ID foglio è la stringa casuale di caratteri nel collegamento del foglio copiato dopo `d/` e prima di `/edit`.
    * Esempio:
       * Se l’URL è `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0`
       * L’ID del foglio è `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`.
@@ -211,38 +211,38 @@ AEM Screens può utilizzare lo stesso servizio per accedere ai dati meteo simula
 
 ### Configurare ContextHub {#configure-contexthub}
 
-AEM Screens può modificare il contenuto in modo dinamico in base al contesto. La demo We.Cafe dispone di canali configurati per mostrare contenuti diversi a seconda della temperatura corrente sfruttando ContextHub di AEM.
+AEM Screens può modificare il contenuto in modo dinamico in base al contesto. La demo We.Cafe ha canali configurati per mostrare contenuti diversi a seconda della temperatura corrente utilizzando AEM ContextHub.
 
 >[!TIP]
 >
 >Per informazioni complete su ContextHub, consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine del documento.
 
-Quando viene visualizzato il contenuto dello schermo, ContextHub richiamerà il servizio meteo per trovare la temperatura corrente per determinare quale contenuto visualizzare.
+Quando viene visualizzato il contenuto dello schermo, ContextHub chiama il servizio meteo per trovare la temperatura corrente per determinare quale contenuto visualizzare.
 
-A scopo dimostrativo, i valori nel foglio possono essere modificati. ContextHub lo riconoscerà e il contenuto verrà regolato nel canale in base alla temperatura aggiornata.
+A scopo dimostrativo, i valori nel foglio possono essere modificati. ContextHub riconosce questo fatto e il contenuto viene regolato nel canale in base alla temperatura aggiornata.
 
 1. Nell’istanza di authoring di AEMaaCS, vai a **Navigazione globale -> Strumenti -> Siti -> ContextHub**.
 1. Seleziona il contenitore di configurazione con lo stesso nome assegnato al progetto quando hai creato il progetto Screens dal **modello del sito web We.Cafe**.
 1. Seleziona **Configurazione -> Configurazione ContextHub -> Fogli Google** quindi fai clic su **Successivo** in alto a destra.
 1. La configurazione deve avere già dati JSON preconfigurati. È necessario modificare due valori:
-   1. Sostituisci `[your Google Sheets id]` con l’ID foglio [che hai salvato in precedenza.](#create-spreadsheet)
-   1. Sostituisci `[your Google API Key]` con la chiave API [che hai salvato in precedenza.](#create-api-key)
+   1. Sostituisci `[your Google Sheets id]` con l’ID del foglio che [hai salvato in precedenza](#create-spreadsheet).
+   1. Sostituisci `[your Google API Key]` con la chiave API che [hai salvato in precedenza](#create-api-key).
 1. Fai clic su **Salva**.
 
-Ora è possibile modificare il valore della temperatura nel foglio di calcolo di Google Sheet e ContextHub aggiornerà dinamicamente Screens in quanto “vede il cambiamento del tempo”.
+Ora è possibile modificare il valore della temperatura nel foglio di calcolo di Google Sheet e gli aggiornamenti di ContextHub Screens in modo dinamico in quanto &quot;vede il cambiamento del tempo&quot;.
 
 ### Verifica dati dinamici {#test-dynamic}
 
-Ora che AEM Screens e ContextHub sono connessi al servizio meteo, puoi testarlo per vedere come Screens può aggiornare i contenuti in modo dinamico.
+Ora che AEM Screens e ContextHub sono connessi al servizio meteo, puoi testarlo per vedere come Screens può aggiornare il contenuto in modo dinamico.
 
 1. Accedi all’istanza di authoring della sandbox.
 1. Passa alla console Sites tramite **Navigazione globale -> Sites** e seleziona la pagina seguente **Screens -> &lt;nome progetto> -> Canali -> Ingresso Mattina (Verticale)**.
 
    ![Selezionare il contenuto del progetto demo](assets/project-content.png)
 
-1. Fai clic su Modifica nella barra degli strumenti o digita il tasto di scelta rapida `e` per modificare la pagina.
+1. Clic **Modifica** nella barra degli strumenti o digita il tasto di scelta rapida `e` in modo da poter modificare la pagina.
 
-1. Nell’editor, puoi visualizzare il contenuto. Tieni presente che un’immagine è evidenziata in blu con un’icona di targeting nell’angolo.
+1. Nell’editor, puoi visualizzare il contenuto. Un’immagine è evidenziata in blu con un’icona di targeting nell’angolo.
 
    ![Contenuto di Screens nell’editor](assets/screens-content-editor.png)
 
@@ -268,7 +268,7 @@ In alternativa, è possibile visualizzare in anteprima la demo semplicemente nel
 
 ### Configurare AEM Screens as a Cloud Service {#configure-screens}
 
-Innanzitutto devi pubblicare il contenuto demo di Screens in AEM Screens as a Cloud Service e configurare il servizio.
+Innanzitutto, devi pubblicare il contenuto demo di Screens in AEM Screens as a Cloud Service e configurare il servizio.
 
 1. Pubblica il contenuto del progetto Screens demo.
 1. Passa a Screens as a Cloud Service in `https://experience.adobe.com/screens` e accedi.
@@ -276,31 +276,31 @@ Innanzitutto devi pubblicare il contenuto demo di Screens in AEM Screens as a Cl
 
    ![Controlla la tua organizzazione Screens](assets/screens-org.png)
 
-1. In alto a sinistra, fai clic sull’icona a forma di ingranaggio **Modifica impostazioni**.
+1. Nell&#39;angolo superiore sinistro fare clic su **Modifica impostazioni** a forma di ingranaggio.
 
    ![Modifica impostazioni](assets/screens-edit-settings.png)
 
-1. Fornisci gli URL delle istanze di authoring e pubblicazione di AEMaaCS in cui hai creato il tuo sito demo e fai clic su **Salva**.
+1. Specifica gli URL delle istanze di authoring e pubblicazione di AEMaaCS in cui hai creato il sito demo e fai clic su **Salva**.
 
    ![Impostazione di Screens](assets/screens-settings.png)
 
-1. Una volta connessi alle istanze demo, Screens estrae il contenuto del canale. Fai clic su **Canali** nel pannello a sinistra per visualizzare i canali pubblicati. La compilazione delle informazioni potrebbe richiedere del tempo. Puoi fare clic sul pulsante blu **Sincronizzazione** in alto a destra dello schermo per aggiornare le informazioni.
+1. Una volta connesso alle istanze demo, Screens estrae il contenuto del canale. Clic **Canali** nel pannello a sinistra per visualizzare i canali pubblicati. La compilazione delle informazioni potrebbe richiedere del tempo. Puoi fare clic sul pulsante blu **Sincronizzazione** in alto a destra dello schermo per aggiornare le informazioni.
 
    ![Informazioni sul canale demo](assets/screens-channels.png)
 
-1. Fai clic su **Visualizzazioni** nel pannello a sinistra. Al momento non hai ancora creato alcuna visualizzazione per la tua demo. Ciascuna località di We.Cafe verrà simulata creando la rispettiva cartella. Fai clic su **Crea** in alto a destra dello schermo e seleziona **Cartella**.
+1. Clic **Display** nel pannello a sinistra. Al momento non hai ancora creato alcuna visualizzazione per la tua demo. Puoi simulare le posizioni di We.Cafe creando cartelle per ciascuno di essi. Clic **Crea** in alto a destra dello schermo e seleziona **Cartella**.
 
    ![Crea visualizzazione](assets/screens-displays.png)
 
 1. Nella finestra di dialogo, specifica un nome di cartella come **San Jose** e fai clic su **Crea**.
 
-1. Apri la cartella facendo clic su di essa, fai clic su **Crea** in alto a destra e infine seleziona **Visualizzazione**.
+1. Apri la cartella facendo clic su di essa, quindi fai clic su **Crea** in alto a destra e seleziona **Visualizzazione**.
 
 1. Assegna un nome alla visualizzazione e fai clic su **Crea**.
 
    ![Crea visualizzazione](assets/create-display.png)
 
-1. Dopo aver creato la visualizzazione, fai clic sul nome per aprire la schermata dei dettagli della visualizzazione. È necessario assegnare alla visualizzazione un canale sincronizzato dal sito demo. Fai clic su **Assegna canale** in alto a destra dello schermo.
+1. Dopo aver creato la visualizzazione, fare clic sul nome per aprire la schermata dei dettagli della visualizzazione. È necessario assegnare alla visualizzazione un canale sincronizzato dal sito demo. Clic **Assegna canale** in alto a destra.
 
    ![Dettaglio canale](assets/channel-detail.png)
 
@@ -308,24 +308,24 @@ Innanzitutto devi pubblicare il contenuto demo di Screens in AEM Screens as a Cl
 
    ![Assegna canale](assets/assign-channel.png)
 
-Puoi ripetere questi passaggi per le località e le visualizzazioni aggiuntive. Una volta completato, hai collegato il tuo sito demo ad AEM Screens e definito la configurazione necessaria.
+Puoi ripetere questi passaggi per le località e le visualizzazioni aggiuntive. Dopo il completamento, hai collegato il tuo sito demo ad AEM Screens e hai completato la configurazione necessaria.
 
 Puoi visualizzare l’anteprima della demo semplicemente nell’Editor canale su AEMaaCS.
 
 ### Utilizzo di Screens Player {#screens-player}
 
-Per visualizzare il contenuto come su un vero schermo, puoi scaricare il lettore e configurarlo localmente. AEM Screens as a Cloud Service in seguito distribuirà il contenuto al lettore
+Per visualizzare il contenuto come su un vero schermo, puoi scaricare il lettore e configurarlo localmente. AEM Screens as a Cloud Service fornisce il contenuto al lettore
 
 #### Generare un codice di registrazione {#registration-code}
 
-Innanzitutto, devi creare un codice di registrazione per collegare in modo sicuro il lettore ad AEM Screens as a Cloud Service.
+Innanzitutto, devi creare un codice di registrazione per collegare in modo sicuro un lettore ad AEM Screens as a Cloud Service.
 
-1. Passa a Screens as a Cloud Service all’indirizzo `https://experience.adobe.com/screens` ed effettua l’accesso.
+1. Passa a Screens as a Cloud Service in `https://experience.adobe.com/screens` e accedi.
 1. Controlla in alto a destra nella schermata di trovarti nell’organizzazione corretta.
 
    ![Controlla la tua organizzazione Screens](assets/screens-org.png)
 
-1. Nel pannello a sinistra, fai clic su **Gestione lettore -> Codici di registrazione** quindi fai clic su **Crea codice** in alto a destra dello schermo.
+1. Nel pannello a sinistra, fai clic su **Gestione lettore -> Codici di registrazione** e quindi fare clic su **Crea codice** in alto a destra.
 
 ![Codici di registrazione](assets/registration-codes.png)
 
@@ -340,11 +340,12 @@ Innanzitutto, devi creare un codice di registrazione per collegare in modo sicur
 #### Installazione e configurazione lettore {#install-player}
 
 1. Scarica il lettore idoneo per la tua piattaforma da `https://download.macromedia.com/screens/` e installalo.
-1. Esegui il lettore e passa alla scheda **Configurazione**, scorri verso il basso per fare clic e confermare sia **Ripristina impostazioni di fabbrica** che **Cambia in modalità cloud**.
+1. Esegui il lettore, quindi passa al **Configurazione** scheda.
+1. Scorri verso il basso, quindi fai clic su e conferma entrambi **Ripristina impostazioni di fabbrica** e **Passa a modalità cloud** opzioni.
 
    ![Impostazioni lettore](assets/player-configuration.png)
 
-1. Il lettore passa automaticamente alla scheda **Registrazione lettore**. Immetti il codice generato in precedenza e fai clic su **Registra**.
+1. Il lettore passa automaticamente al **Registrazione lettore** scheda. Immetti il codice generato in precedenza e fai clic su **Registrati**.
 
    ![Registrazione lettore](assets/player-registration-code.png)
 
@@ -359,15 +360,15 @@ Innanzitutto, devi creare un codice di registrazione per collegare in modo sicur
 
    ![Controlla la tua organizzazione Screens](assets/screens-org.png)
 
-1. Nel pannello a sinistra, fai clic su **Gestione lettore -> Lettori** e vedrai il lettore installato e registrato in precedenza.
+1. Nel pannello a sinistra, fai clic su **Gestione lettore -> Lettori** e il lettore installato e registrato in precedenza.
 
    ![Lettori](assets/players.png)
 
-1. Fai clic sul nome del lettore per aprirne i dettagli e quindi su **Assegna visualizzazione** in alto a destra dello schermo.
+1. Fai clic sul nome del lettore per aprirne i dettagli. Clic **Assegna a visualizzazione** in alto a destra.
 
    ![Assegnare il lettore alla visualizzazione](assets/assign-to-display.png)
 
-1. Nella finestra di dialogo, seleziona la visualizzazione creata in precedenza e fai clic su **Seleziona**.
+1. Nella finestra di dialogo, selezionare la visualizzazione creata in precedenza e quindi fare clic su **Seleziona**.
 
    ![Assegnare una visualizzazione](assets/assign-a-display.png)
 
@@ -381,7 +382,7 @@ Una volta che hai assegnato una visualizzazione a un lettore, AEM Screens as a C
 
 ## Novità {#what-is-next}
 
-Adesso che hai completato questa parte del percorso di AEM Reference Demo Add-On, dovresti:
+Ora che hai completato questa parte del percorso aggiuntivo Demo di riferimento AEM, dovresti:
 
 * Conoscere le nozioni di base di AEM Screens.
 * Comprendere il contenuto demo di We.Cafe.

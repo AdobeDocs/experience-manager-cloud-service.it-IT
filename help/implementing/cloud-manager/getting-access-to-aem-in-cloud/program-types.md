@@ -2,10 +2,10 @@
 title: Programmi e tipi di programmi
 description: Scopri la gerarchia di Cloud Manager, le differenze tra i diversi tipi di programmi e come si adattano alla struttura gerarchica.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ I programmi di Cloud Manager vengono forniti automaticamente con il relativo arc
 
 Per accedere all’archivio Git di Cloud Manager è necessario utilizzare un client Git con uno strumento da riga di comando, un client Git visivo indipendente o l’IDE scelto dall’utente, ad esempio Eclipse, IntelliJ o NetBeans.
 
-Una volta configurato il client Git, puoi gestire l’archivio Git dall’interfaccia utente di Cloud Manager. Per informazioni su come gestire l’archivio Git con l’interfaccia utente di Cloud Manager, consulta il documento [Accesso a Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+Una volta configurato il client Git, puoi gestire l’archivio Git dall’interfaccia utente di Cloud Manager. Per informazioni su come gestire l’archivio Git con Cloud Manager, consulta [Accesso a Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 Per iniziare a sviluppare l’applicazione AEM Cloud è necessario creare una copia locale del codice dell’applicazione estraendolo dall’archivio di Cloud Manager nel computer locale.
 
@@ -56,8 +56,8 @@ L’unica differenza consiste nel fatto che l’archivio Git remoto fa parte di 
 L’utente può creare un programma di **produzione** o un programma **sandbox**.
 
 * Un **programma di produzione** viene creato per abilitare il traffico in tempo reale per il sito.
-   * Per ulteriori informazioni, consulta il documento [Introduzione ai programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
+   * Consulta [Introduzione ai programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) per ulteriori dettagli.
 * I **programmi sandbox** vengono generalmente creati a scopi di formazione, esecuzione di demo, abilitazione, POC o documentazione.
    * Gli ambienti sandbox non sono concepiti per il traffico in tempo reale e presentano delle limitazioni non riscontrate nei programmi di produzione.
    * Un programma sandbox include Sites e Assets e viene fornito automaticamente con un ramo Git che include il codice di esempio, un ambiente di sviluppo e una pipeline non di produzione.
-   * Per ulteriori informazioni, consulta il documento [Introduzione ai programmi Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+   * Consulta [Introduzione ai programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) per ulteriori dettagli.

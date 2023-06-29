@@ -2,10 +2,10 @@
 title: Percorso di creazione di siti rapidi AEM
 description: Inizia qui per un percorso guidato attraverso lo strumento Creazione rapida sito di AEM facile da usare che permette di semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza alcuna conoscenza del back-end di AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 91%
+source-wordcount: '1034'
+ht-degree: 87%
 
 ---
 
@@ -65,7 +65,7 @@ In questo percorso esplorerai molti argomenti. I seguenti articoli forniscono in
 
 Ora puoi iniziare il percorso di Creazione rapida di siti di Adobe.
 
-* Se sei un amministratore di AEM o di Cloud Manager, o se svolgi entrambi i ruoli di sviluppatore front-end e amministratore, o se desideri semplicemente comprendere il processo end-to-end in AEM, parti all’inizio del percorso con [Comprendere Cloud Manager](cloud-manager.md) come illustrato di seguito.
+* Se sei un amministratore di AEM o Cloud Manager, o se svolgi entrambi i ruoli di sviluppatore front-end e amministratore, o se desideri semplicemente comprendere il processo end-to-end nell’AEM, inizia all’inizio del percorso con [Comprendere Cloud Manager](cloud-manager.md) come illustrato di seguito.
 * Se sei solo responsabile dello sviluppo front-end e interagirai con gli amministratori di AEM e Cloud Manager, puoi passare direttamente a [Recuperare le informazioni di accesso all’archivio Git](retrieve-access.md) per accedere all’archivio Git AEM e iniziare a personalizzarlo.
 * Se sai già che AEM Sites e Cloud Manager lavorano insieme e desideri iniziare direttamente con la configurazione, puoi [passare direttamente alla creazione di un nuovo sito da un modello.](create-site.md)
 

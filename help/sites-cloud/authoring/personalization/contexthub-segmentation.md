@@ -2,10 +2,10 @@
 title: Configurazione della segmentazione con ContextHub
 description: Scopri come configurare la segmentazione utilizzando ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 94%
+source-wordcount: '1691'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +21,7 @@ AEM ti consente di personalizzare facilmente le esperienze degli utenti. Consent
 
 ## Accesso ai segmenti {#accessing-segments}
 
-La console [Tipi di pubblico](audiences.md) viene utilizzata sia per gestire i segmenti per ContextHub, sia i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub.
+Il [Tipi di pubblico](audiences.md) La console viene utilizzata per gestire i segmenti per ContextHub e i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub.
 
 Per accedere ai segmenti, nella navigazione globale seleziona **Navigazione > Personalizzazione > Tipi di pubblico**. Seleziona la configurazione (ad esempio, Sito WKND) per visualizzare i segmenti:
 
@@ -65,7 +65,7 @@ Per valutare le proprietà dei segmenti sono disponibili i seguenti confronti di
 
 >[!NOTE]
 >
->Quando si confrontano i valori, se il tipo di dati del confronto non è impostato (cioè è impostato sul rilevamento automatico), il motore di segmentazione di ContextHub si limiterà a confrontare i valori allo stesso modo di javascript. Non effettua l’assegnazione dei valori ai tipi previsti, il che può portare a risultati fuorvianti. Esempio:
+>Quando si confrontano i valori, se il tipo di dati del confronto non è impostato (ovvero è impostato sul rilevamento automatico), il motore di segmentazione di ContextHub si limiterà a confrontare i valori come farebbe JavaScript. Non effettua l’assegnazione dei valori ai tipi previsti, il che può portare a risultati fuorvianti. Esempio:
 >
 >`null < 30 // will return true`
 >
@@ -92,7 +92,7 @@ Per definire il nuovo segmento:
 
    ![Aggiungi segmento](../assets/contexthub-create-segment.png)
 
-1. In **Nuovo segmento ContextHub**, inserisci un titolo per il segmento e se necessario un valore di incremento, quindi tocca o fai clic su **Crea**.
+1. In **Nuovo segmento ContextHub**, immetti un titolo per il segmento e un valore di incremento, se necessario, quindi tocca o fai clic su **Crea**.
 
    ![Nuovo segmento](../assets/contexthub-new-segment.png)
 
@@ -200,7 +200,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.
    * Il **Nome** diventa il nome del nodo nell’archivio.
-      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Se necessario è possibile modificarlo.
 
    ![Crea cartella](../assets/contexthub-create-folder.png)
@@ -279,7 +279,7 @@ Oppure, se non è risolto:
 
 Tali test possono essere eseguiti anche sulle pagine di contenuto e in combinazione con contenuti mirati e **Attività** ed **Esperienze** correlate.
 
-Se hai impostato un’attività e un’esperienza, puoi testare facilmente il segmento con l’attività. Per informazioni dettagliate sulla configurazione di un’attività, consulta la relativa [documentazione sull’authoring di contenuti di destinazione](targeted-content.md).
+Se hai impostato un’attività e un’esperienza, puoi testare facilmente il segmento con l’attività. Per informazioni dettagliate sulla configurazione di un’attività, consulta [documentazione sull’authoring di contenuti di destinazione](targeted-content.md).
 
 1. In modalità di modifica di una pagina in cui hai impostato il contenuto di destinazione, è possibile vedere che il contenuto è indirizzato tramite l’icona a forma di freccia su di esso.
 1. Passa alla modalità anteprima e utilizza ContextHub, passa a un utente tipo che non corrisponde alla segmentazione configurata per l’esperienza.

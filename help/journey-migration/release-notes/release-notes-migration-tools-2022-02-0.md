@@ -3,10 +3,10 @@ title: Note sulla versione 2022.2.0 degli strumenti di migrazione nell’AEM as 
 description: Note sulla versione 2022.2.0 degli strumenti di migrazione nell’AEM as a Cloud Service
 feature: Release Information
 exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
-source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 79%
+source-wordcount: '249'
+ht-degree: 75%
 
 ---
 
@@ -39,7 +39,7 @@ La data di pubblicazione dello strumento Trasferimento contenuti v1.8.6 è il 3 
 
 ### Novità {#what-is-new-ctt}
 
-* Convalida del contenuto: gli utenti possono determinare in modo affidabile se tutti i contenuti estratti dallo strumento Trasferimento contenuti sono stati correttamente acquisiti nell’istanza di destinazione. Per utilizzare questa funzione, è necessario abilitarla nella `System Console` dell’ambiente AEM sorgente. Fai riferimento a [Guida introduttiva alla convalida dei trasferimenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=it#getting-started) per ulteriori dettagli.
+* Convalida del contenuto: gli utenti possono determinare in modo affidabile se tutti i contenuti estratti dallo strumento Trasferimento contenuti sono stati correttamente acquisiti nell’istanza di destinazione. Per utilizzare questa funzione, è necessario abilitarla nella `System Console` dell’ambiente AEM sorgente. Consulta [Convalida dei trasferimenti di contenuto - Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=it#getting-started) per ulteriori dettagli.
 
 ### Correzioni di bug {#bug-fixes-ctt}
 

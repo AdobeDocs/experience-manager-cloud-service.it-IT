@@ -2,7 +2,7 @@
 title: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 63%
@@ -55,7 +55,7 @@ Dai un’occhiata al video Panoramica sulla versione di agosto 2022 per un riepi
 
 * Ora puoi configurare Adobe Experience Manager Assets in modo da [limitare il tipo di risorse che gli utenti possono caricare in base al tipo MIME](/help/assets/configure-asset-upload-restrictions.md).
 
-   ![Restrizioni al caricamento delle risorse](/help/assets/assets/asset-upload-restrictions.png)
+  ![Restrizioni al caricamento delle risorse](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -74,11 +74,11 @@ Dai un’occhiata al video Panoramica sulla versione di agosto 2022 per un riepi
 ### Novità {#what-is-new-cif}
 
 * Associazione di pagine AEM a prodotti e categorie tramite le proprietà della pagina AEM e panoramica nella cabina di comando del prodotto
-   ![associazione pagina pannello di comando del prodotto](/help/assets/CIF/product_cockpit_page_association.png)
+  ![associazione pagina pannello di comando del prodotto](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 
-L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui.](/help/implementing/cloud-manager/release-notes/current.md)
+L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Strumenti di migrazione {#migration-tools}
 

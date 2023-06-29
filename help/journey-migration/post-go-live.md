@@ -2,10 +2,10 @@
 title: Post-pubblicazione
 description: Scopri come monitorare i problemi e migliorare le prestazioni
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 39%
+source-wordcount: '482'
+ht-degree: 28%
 
 ---
 
@@ -36,7 +36,7 @@ Questo documento descrive gli strumenti disponibili per la risoluzione dei probl
 
 Il debug degli ambienti per sviluppatori as a Cloud Service all’AEM è disponibile nella Console per sviluppatori per ambienti di sviluppo, stage e produzione.
 
-Per ulteriori informazioni sugli strumenti di sviluppo, consulta [Implementazione per AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools).
+Consulta [Implementazione per AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) per ulteriori informazioni sugli strumenti di sviluppo.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -45,13 +45,13 @@ Come utente, puoi accedere a CRXDE Lite nell’ambiente di sviluppo ma non in qu
 >[!IMPORTANT]
 >Scrittura in archivi immutabili come `/libs` e `/apps` in fase di runtime genera errori. Inoltre, non hai accesso agli strumenti per sviluppatori per gli ambienti di staging e produzione.
 
-Per informazioni su come sviluppare l’applicazione AEM utilizzando CRXDE Lite, consulta l’articolo sullo [sviluppo con CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+Consulta [Sviluppo con CRXDE Lite](/help/implementing/developing/tools/crxde.md) per scoprire come sviluppare l’applicazione AEM utilizzando CRXDE Lite.
 
 ## Gestione dei registri {#managing-logs}
 
 Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato.
 
-Per informazioni su come accedere ai registri e gestirli attraverso l’interfaccia o l’API tramite Cloud Manager, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md).
+Consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) per scoprire come accedere e gestire i registri tramite l’interfaccia utente o dall’API tramite Cloud Manager.
 
 ## Contattare il supporto tecnico {#contacting-support}
 

@@ -3,9 +3,9 @@ title: Migrazione della configurazione Dispatcher da AMS a AEM as a Cloud Servic
 description: Migrazione della configurazione Dispatcher da AMS a AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1451'
 ht-degree: 19%
 
 ---
@@ -31,11 +31,11 @@ La sezione seguente fornisce istruzioni dettagliate su come convertire una confi
 ### Estrarre l’archivio e rimuovere un eventuale prefisso
 
 Estrai l’archivio in una cartella e assicurati che le sottocartelle immediate inizino con `conf`, `conf.d`,
-`conf.dispatcher.d` e `conf.modules.d`. Se non lo fanno, spostateli verso l&#39;alto nella gerarchia.
+`conf.dispatcher.d` e `conf.modules.d`. In caso contrario, spostarli verso l&#39;alto nella gerarchia.
 
 ### Eliminare le sottocartelle e i file inutilizzati
 
-Rimuovi sottocartelle `conf` e `conf.modules.d`, nonché i file corrispondenti `conf.d/*.conf`.
+Rimuovi sottocartelle `conf` e `conf.modules.d`, e i file corrispondenti `conf.d/*.conf`.
 
 ### Eliminare tutti gli host virtuali non relativi alla pubblicazione
 

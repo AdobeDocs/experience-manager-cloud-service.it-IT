@@ -2,10 +2,10 @@
 title: Controllo dello stato del nome di dominio
 description: Scopri come determinare se il nome di dominio personalizzato è stato verificato correttamente da Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 93%
+source-wordcount: '650'
+ht-degree: 84%
 
 ---
 
@@ -35,18 +35,18 @@ Cloud Manager verifica la proprietà del dominio tramite il valore TXT e visuali
 
 * **Verificato, distribuzione non riuscita**: la verifica TXT è stata completata correttamente, ma la distribuzione CDN non è riuscita.
 
-   * In questo caso, contatta il rappresentante Adobe.
+   * In questi casi, contatta il rappresentante del tuo Adobe.
 
 * **Dominio verificato e distribuito**: questo stato indica che il nome di dominio personalizzato è pronto all’uso.
 
    * A questo punto, il nome di dominio personalizzato è pronto per la fase di test e per puntare al nome di dominio di Cloud Manager.
-   * Per ulteriori informazioni, consulta il documento [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
+   * Consulta [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) per ulteriori informazioni.
 
 * **Eliminazione in corso**: è in corso l’eliminazione di un nome di dominio personalizzato.
 
 * **Eliminazione non riuscita**: l’eliminazione del nome di dominio personalizzato non è riuscita; è necessario effettuare un nuovo tentativo.
 
-   * Per ulteriori informazioni, consulta il documento [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
+   * Consulta [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) per ulteriori informazioni.
 
 Cloud Manager attiva automaticamente una verifica TXT quando nel passaggio di verifica della procedura guidata **Aggiungi dominio personalizzato** selezioni **Salva**. Per le verifiche successive, devi riselezionare attivamente l’icona di verifica accanto allo stato.
 
@@ -86,4 +86,4 @@ Se disponi di una configurazione CDN preesistente per i nomi di dominio personal
 
 Il messaggio non viene più visualizzato dopo aver eseguito la migrazione di tutte le configurazioni dell’ambiente preesistenti tramite l’interfaccia utente. Potrebbero essere necessari 1-2 giorni lavorativi affinché il messaggio non venga più visualizzato.
 
-Per ulteriori informazioni, consulta il documento [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+Consulta [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) per ulteriori dettagli.

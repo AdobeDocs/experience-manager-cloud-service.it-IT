@@ -2,10 +2,10 @@
 title: Test dell’audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 96%
+source-wordcount: '549'
+ht-degree: 91%
 
 ---
 
@@ -35,11 +35,11 @@ L’audit dell’esperienza è basato su Google Lighthouse, uno strumento open s
 
 >[!TIP]
 >
->Puoi configurare le pagine incluse nell’audit dell’esperienza quando [configuri la pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>Puoi configurare le pagine incluse nell’audit dell’esperienza quando [configuri la pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## Lettura dei risultati dell’audit dell’esperienza {#understanding-experience-audit-results}
 
-L’audit dell’esperienza fornisce risultati di test aggregati e dettagliati a livello di pagina tramite la [pagina di esecuzione della pipeline di produzione.](/help/implementing/cloud-manager/deploy-code.md)
+L’audit dell’esperienza fornisce risultati di test aggregati e dettagliati a livello di pagina tramite la [pagina di esecuzione della pipeline di produzione](/help/implementing/cloud-manager/deploy-code.md).
 
 * Le metriche aggregate calcolano i punteggi medi nelle pagine sottoposte a audit per migliorare le prestazioni, l’accessibilità, le best practice e la SEO (Search Engine Optimization).
 * I singoli punteggi a livello di pagina sono disponibili anche tramite l’analisi in profondità.

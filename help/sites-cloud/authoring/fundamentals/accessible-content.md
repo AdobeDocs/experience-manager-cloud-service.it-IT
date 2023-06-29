@@ -2,9 +2,9 @@
 title: Creazione di contenuti accessibili per Adobe Experience Manager as a Cloud Service (conformità WCAG 2.1)
 description: Utilizzare AEM as a Cloud Service per rendere il contenuto web accessibile e fruibile per le persone con disabilità
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '13864'
+source-wordcount: '13862'
 ht-degree: 99%
 
 ---
@@ -550,7 +550,7 @@ Assicurati che il testo contrasti a sufficienza con il relativo sfondo. I rappor
 
 >[!NOTE]
 >
-Ricorda che il rendering dei font varia a seconda delle dimensioni PT/PX/EM equivalenti.
+Ricordate che i font possono differire nel modo in cui vengono riprodotti le dimensioni PT/PX/EM equivalenti.
 >
 Ti consigliamo di seguire il buon senso e di privilegiare la leggibilità e l’usabilità nella scelta di font e dimensioni appropriati per i contenuti web.
 

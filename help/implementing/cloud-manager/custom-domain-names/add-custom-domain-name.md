@@ -2,10 +2,10 @@
 title: Aggiunta di un nome di dominio personalizzato
 description: Scopri come aggiungere un nome di dominio personalizzato con Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 93%
+source-wordcount: '560'
+ht-degree: 79%
 
 ---
 
@@ -54,17 +54,17 @@ Per aggiungere un nome di dominio personalizzato dalla pagina **Impostazioni dom
 
 La distribuzione CDN richiede un certificato SSL valido e una verifica TXT correttamente riuscita. Viene indicato dallo stato **Verificato e distribuito**.
 
-Per ulteriori informazioni sui vari stati e su come risolvere i potenziali problemi, consulta il documento [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+Consulta [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) per ulteriori informazioni sui vari stati e su come risolvere potenziali problemi.
 
 >[!NOTE]
 >
 >L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS.
 >
->Cloud Manager verificherà la proprietà del dominio e aggiornerà lo stato riportato nella tabella Impostazioni dominio. Per ulteriori informazioni, consulta il documento [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+>Cloud Manager verificherà la proprietà del dominio e aggiornerà lo stato riportato nella tabella Impostazioni dominio. Consulta [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) per ulteriori dettagli.
 
 >[!TIP]
 >
->Per ulteriori informazioni sui record TXT, consulta [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
+>Consulta [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) per ulteriori informazioni sui record TXT.
 
 ## Aggiunta di un nome di dominio personalizzato dalla pagina Ambienti {#adding-cdn-environments}
 
@@ -98,14 +98,14 @@ Per aggiungere un nome di dominio personalizzato dalla pagina **Ambienti**, segu
 
 La distribuzione CDN richiede un certificato SSL valido e una verifica TXT correttamente riuscita. Viene indicato dallo stato **Verificato e distribuito**.
 
-Per ulteriori informazioni sui vari stati e su come risolvere i potenziali problemi, consulta il documento [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+Consulta [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) per ulteriori informazioni sui vari stati e su come risolvere potenziali problemi.
 
 >[!NOTE]
 >
 >L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS.
 >
->Cloud Manager verificherà la proprietà del dominio e aggiornerà lo stato riportato nella tabella Impostazioni dominio. Per ulteriori informazioni, consulta il documento [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+>Cloud Manager verificherà la proprietà del dominio e aggiornerà lo stato riportato nella tabella Impostazioni dominio. Consulta [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) per ulteriori dettagli.
 
 >[!TIP]
 >
->Per ulteriori informazioni sui record TXT, consulta [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
+>Consulta [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) per ulteriori informazioni sui record TXT.

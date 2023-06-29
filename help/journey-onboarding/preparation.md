@@ -2,10 +2,10 @@
 title: Preparazione all’onboarding
 description: Prima dell’inizio del processo di onboarding e di effettuare l’accesso al sistema è necessario che l’amministratore comprenda una serie di passaggi preparatori.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 95%
+source-wordcount: '763'
+ht-degree: 91%
 
 ---
 
@@ -88,4 +88,4 @@ Ora dovresti sapere:
 * In che modo il contratto influisce sul processo di onboarding.
 * Come prepararti per la chiamata di onboarding.
 
-Ora che conosci questi passaggi preparatori, è quasi tutto pronto per accedere al sistema. Prima di tutto dovrai acquisire alcune informazioni generali sulla struttura di AEM as a Cloud Service dal punto di vista dell’amministratore di sistema e conoscere alcuni termini importanti. Continua e passa alla prossima sezione del percorso: [Terminologia di AEM as a Cloud Service.](terminology.md)
+Ora che conosci questi passaggi preparatori, è quasi tutto pronto per accedere al sistema. Prima di tutto dovrai acquisire alcune informazioni generali sulla struttura di AEM as a Cloud Service dal punto di vista dell’amministratore di sistema e conoscere alcuni termini importanti. Passare alla parte successiva del percorso, [Terminologia as a Cloud Service AEM](terminology.md).

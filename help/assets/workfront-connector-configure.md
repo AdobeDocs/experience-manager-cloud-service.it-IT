@@ -4,7 +4,7 @@ description: Configurare [!DNL Workfront for Experience Manager enhanced connect
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: ff36f2dada09d8f46835dc0fbac8d0fe6707fa19
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Per iscriverti agli eventi, segui questi passaggi:
 1. Stato progetto: seleziona lo stato per il quale il progetto deve essere impostato per creare la cartella collegata.
 1. Creazione di una cartella collegata in progetti con portfolio: elenco di Portfoli a cui deve appartenere il progetto per poter creare la cartella collegata. Lascia vuoto questo elenco per creare la cartella collegata per tutto il portfolio di progetti.
 1. Creare una cartella collegata nei progetti con campo modulo personalizzato: campo modulo personalizzato e il valore corrispondente che il progetto deve avere per poter creare la cartella collegata. Questa configurazione viene ignorata se viene lasciata vuota. Seleziona `CUSTOM FORMS: Create DAM Linked Folder` per il campo e l’input `Yes` per il valore.
-1. Fai clic su Abilita creazione automatica di cartelle collegate. Se torni alla scheda Sottoscrizioni evento, vedrai che ora è presente un evento di creazione.
+1. Fai clic su Abilita creazione automatica di cartelle collegate. Se torni alla scheda Sottoscrizioni evento, vedrai che ora esiste un evento di creazione.
 
 ![configurazione cartella collegata](/help/assets/assets/wf-linked-folder-config.png)
 

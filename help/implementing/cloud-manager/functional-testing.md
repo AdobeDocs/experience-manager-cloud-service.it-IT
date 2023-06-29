@@ -2,10 +2,10 @@
 title: Test funzionali
 description: Scopri i tre diversi tipi di test funzionali integrati nel processo di distribuzione di AEM as a Cloud Service per garantire la qualità e l’affidabilità del codice.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 88%
+source-wordcount: '539'
+ht-degree: 76%
 
 ---
 
@@ -36,9 +36,9 @@ AEM as a Cloud Service offre tre diversi tipi di test funzionali.
 * [Test funzionali personalizzati](#custom-functional-testing)
 * [Test dell’interfaccia utente personalizzati](#custom-ui-testing)
 
-Per tutti i test funzionali, è possibile scaricare i risultati dettagliati come file `.zip` utilizzando il pulsante **Scarica registro build** nella schermata di panoramica della build come parte del [processo di distribuzione.](/help/implementing/cloud-manager/deploy-code.md)
+Per tutti i test funzionali, è possibile scaricare i risultati dettagliati come file `.zip` utilizzando il pulsante **Scarica registro build** nella schermata di panoramica della build come parte del [processo di distribuzione](/help/implementing/cloud-manager/deploy-code.md).
 
-Questi registri non includono i registri del processo di runtime effettivo di AEM. Per ulteriori informazioni su come accedere ai registri, consulta il documento [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md).
+Questi registri non includono i registri del processo di runtime effettivo di AEM. Per accedere a tali registri, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) per ulteriori dettagli.
 
 I test funzionali del prodotto e i test funzionali personalizzati di esempio sono basati sui [client di test di AEM.](https://github.com/adobe/aem-testing-clients)
 
@@ -49,20 +49,20 @@ I test funzionali del prodotto sono una serie di test stabili di integrazione HT
 * [Pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): i test funzionali del prodotto vengono eseguiti automaticamente ogni volta che si distribuisce un nuovo codice in Cloud Manager e non possono essere ignorati.
 * [Pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): facoltativamente, è possibile selezionare i test funzionali del prodotto da eseguire ogni volta che si esegue la pipeline non di produzione.
 
-I test vengono gestiti come progetto open source. Per ulteriori informazioni, consulta i [test funzionali del prodotto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) su GitHub.
+I test vengono gestiti come progetto open source. Consulta [test funzionali del prodotto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub per i dettagli.
 
 ### Test funzionali personalizzati {#custom-functional-testing}
 
 Anche se i test funzionali del prodotto sono definiti da Adobe, puoi creare test di qualità personalizzati per la tua applicazione. Viene eseguito come test funzionale personalizzato come parte del [pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) o facoltativamente [pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) per garantire la qualità dell&#39;applicazione.
 
-I test funzionali personalizzati vengono eseguiti sia per le distribuzioni del codice personalizzato sia per gli aggiornamenti push, per questo è particolarmente importante scrivere test funzionali che impediscano alle modifiche apportate al codice AEM di interrompere il codice dell’applicazione. Il passaggio dei test funzionali personalizzati è sempre presente e non può essere ignorato.
+I test funzionali personalizzati vengono eseguiti sia per le distribuzioni del codice personalizzato che per gli aggiornamenti push, il che rende particolarmente importante scrivere test funzionali che impediscano alle modifiche apportate al codice AEM di interrompere il codice dell’applicazione. Il passaggio dei test funzionali personalizzati è sempre presente e non può essere ignorato.
 
-Per ulteriori informazioni, consulta [Test funzionali Java](/help/implementing/cloud-manager/java-functional-testing.md).
+Consulta [Test funzionali Java](/help/implementing/cloud-manager/java-functional-testing.md) per ulteriori informazioni.
 
 
 ### Test dell’interfaccia utente personalizzati {#custom-ui-testing}
 
 I test dell’interfaccia utente personalizzati sono una funzione facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni. I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta di linguaggi e framework come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium.
 
-Per ulteriori informazioni, consulta [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
+Consulta [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) per ulteriori informazioni.
 

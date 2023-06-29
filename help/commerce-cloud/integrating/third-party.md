@@ -3,10 +3,10 @@ title: Integrazione AEM e Commerce di terze parti tramite Commerce Integration F
 description: Le aziende possono richiedere soluzioni commerce di terze parti aggiuntive per potenziare la propria vetrina. Commerce Integration Framework (CIF) può essere utilizzato in tali scenari di integrazione per collegare una soluzione commerce di terze parti ad Adobe Experience Manager utilizzando I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 4%
+source-wordcount: '509'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ L’integrazione di una soluzione non Adobe Commerce è uno scenario comune per 
 
 L’architettura generale è la seguente:
 
-![Panoramica dell’architettura AEM per terze parti/non Magento](../assets//AEM_nonMagento_Architecture.png)
+![Panoramica dell’architettura di terze parti/non di Magento dell’AEM](../assets//AEM_nonMagento_Architecture.png)
 
 Questo livello di integrazione ha lo scopo di mappare API e schemi di terze parti rispetto alle API e agli schemi di Adobe Commerce GraphQL supportati al di fuori dell’Experience Manager. Grazie a questa incapsulazione, la logica di integrazione e i sistemi possono essere aggiornati senza modificare il codice all’interno dell’Experience Manager.
 

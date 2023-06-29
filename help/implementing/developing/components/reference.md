@@ -2,9 +2,9 @@
 title: Guida di riferimento dei componenti
 description: Guida di riferimento per sviluppatori per i dettagli dei componenti e della loro struttura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3649'
+source-wordcount: '3650'
 ht-degree: 2%
 
 ---
@@ -122,7 +122,7 @@ L’icona o l’abbreviazione del componente viene definita tramite le propriet�
 1. `abbreviation` - Proprietà stringa per personalizzare l&#39;abbreviazione del nome del componente nel browser componenti
    * L’abbreviazione deve essere limitata a due caratteri.
    * Specificando una stringa vuota, verrà creata l’abbreviazione a partire dai primi due caratteri della `jcr:title` proprietà.
-      * Ad esempio &quot;Im&quot; per &quot;Immagine&quot;
+      * Ad esempio, &quot;Im&quot; per &quot;Immagine&quot;
       * Il titolo localizzato viene utilizzato per creare l’abbreviazione.
    * L’abbreviazione viene tradotta solo se il componente ha un `abbreviation_commentI18n` , che viene quindi utilizzata come suggerimento di traduzione.
 1. `cq:icon.png` o `cq:icon.svg` : icona per questo componente, che viene visualizzata nel browser Componenti
@@ -166,7 +166,7 @@ Un componente è un nodo di tipo `cq:Component` e ha le seguenti proprietà e no
 | Nome | Tipo | Descrizione |
 |---|---|---|
 | `.` | `cq:Component` | Rappresenta il componente corrente. Un componente è di tipo nodo `cq:Component`. |
-| `componentGroup` | `String` | Rappresenta il gruppo in cui il componente può essere selezionato nella [Browser Componenti.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Un valore che inizia con `.` viene utilizzato per i componenti che non sono disponibili per la selezione dall’interfaccia utente, ad esempio i componenti di base da cui ereditano altri componenti. |
+| `componentGroup` | `String` | Rappresenta il gruppo in cui il componente può essere selezionato nella [Browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Un valore che inizia con `.` viene utilizzato per i componenti che non sono disponibili per la selezione dall’interfaccia utente, ad esempio i componenti di base da cui ereditano altri componenti. |
 | `cq:isContainer` | `Boolean` | Indica se il componente è un componente contenitore e può quindi contenere altri componenti, ad esempio un sistema paragrafo. |
 | `cq:dialog` | `nt:unstructured` | Questa è la definizione della finestra di dialogo per modifica del componente. |
 | `cq:design_dialog` | `nt:unstructured` | Questa è la definizione della finestra di dialogo per progettazione del componente. |
@@ -223,7 +223,7 @@ Nella finestra di dialogo sono definiti i singoli campi:
 
 Le finestre di dialogo per progettazione sono simili alle finestre di dialogo utilizzate per modificare e configurare il contenuto, ma forniscono agli autori di modelli l’interfaccia per la pro-configurazione e i dettagli di progettazione per tale componente su un modello di pagina. I modelli di pagina vengono quindi utilizzati dagli autori dei contenuti per creare pagine di contenuto. Consulta la [documentazione del modello](/help/sites-cloud/authoring/features/templates.md) per informazioni dettagliate sulla creazione dei modelli.
 
-[Le finestre di dialogo per progettazione vengono utilizzate quando si modifica un modello di pagina](/help/sites-cloud/authoring/features/templates.md), anche se non sono necessari per tutti i componenti. Ad esempio, **Titolo** e **Componenti immagine** entrambi dispongono di finestre di dialogo di progettazione, mentre **Componente condivisione social media** non lo fa.
+[Le finestre di dialogo per progettazione vengono utilizzate quando si modifica un modello di pagina](/help/sites-cloud/authoring/features/templates.md), anche se non sono necessari per tutti i componenti. Ad esempio, il **Titolo** e **Componenti immagine** entrambi dispongono di finestre di dialogo di progettazione, mentre **Componente condivisione social media** non lo fa.
 
 ### Coral UI e Granite UI {#coral-and-granite}
 
@@ -321,7 +321,7 @@ Ci sono molte configurazioni esistenti nell&#39;AEM. Puoi cercare facilmente pro
 
 I componenti devono sempre eseguire il rendering di alcuni HTML visibili all’autore, anche quando il componente non ha contenuto. In caso contrario, potrebbe scomparire visivamente dall’interfaccia dell’editor, rendendolo tecnicamente presente ma invisibile nella pagina e nell’editor. In questo caso, gli autori non potranno selezionare e interagire con il componente vuoto.
 
-Per questo motivo, i componenti devono eseguire il rendering di un segnaposto, a condizione che non eseguano il rendering di alcun output visibile quando la pagina viene riprodotta nell’editor di pagine (quando la modalità WCM è `edit` o `preview`).
+Per questo motivo, i componenti devono eseguire il rendering di un segnaposto, a condizione che non eseguano il rendering di alcun output visibile quando si esegue il rendering della pagina nell’editor di pagine (quando la modalità WCM è `edit` o `preview`).
 Il markup HTML tipico per un segnaposto è il seguente:
 
 ```HTML
@@ -383,7 +383,7 @@ La seguente configurazione abilita la modifica diretta del componente e definisc
 
 ### Gestione degli eventi dei campi - cq:listeners {#cq-listeners}
 
-Il metodo di gestione degli eventi sui campi della finestra di dialogo viene eseguito con i listener in un [libreria client.](/help/implementing/developing/introduction/clientlibs.md)
+Il metodo di gestione degli eventi sui campi della finestra di dialogo viene eseguito con i listener in un [libreria client](/help/implementing/developing/introduction/clientlibs.md).
 
 Per inserire la logica nel campo, è necessario:
 
@@ -416,7 +416,7 @@ Il `cq:listeners` nodo (tipo di nodo) `cq:EditListenersConfig`) definisce cosa a
 >* `aftermove`
 >* `aftercopy`
 
-Il gestore eventi può essere implementato con un’implementazione personalizzata. Ad esempio (dove `project.customerAction` è un metodo statico):
+Il gestore eventi può essere implementato con un’implementazione personalizzata. Ad esempio, (dove `project.customerAction` è un metodo statico):
 
 `afteredit = "project.customerAction"`
 
@@ -469,7 +469,7 @@ Per questo motivo, è molto semplice creare qualsiasi markdown della documentazi
 
 ![README.md nella struttura dei componenti](assets/components-documentation.png)
 
-Questo markdown verrà quindi visualizzato nel [Console Componenti.](/help/sites-cloud/authoring/features/components-console.md)
+Questo markdown verrà quindi visualizzato nel [Console Componenti](/help/sites-cloud/authoring/features/components-console.md).
 
 ![README.md visibile nella console Componenti](assets/components-documentation-console.png)
 

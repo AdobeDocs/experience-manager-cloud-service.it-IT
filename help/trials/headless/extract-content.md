@@ -4,10 +4,10 @@ description: Scopri come utilizzare Frammenti di contenuto e l’API GraphQL com
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 100%
+source-wordcount: '1116'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="Ottimo lavoro Hai scoperto i due tipi di query di base e come eseguire query sul tuo contenuto. Ora scopri come utilizzare l’API GraphQL AEM per creare query efficienti che distribuiscono contenuti in un formato previsto dall’app."
+>title="Ottimo lavoro Hai imparato i due tipi di query di base e come eseguire query sul tuo contenuto. Ora scopri come utilizzare l’API GraphQL AEM per creare query efficienti che distribuiscono contenuti in un formato previsto dall’app."
 >abstract=""
 
 ## Query per un elenco di contenuti di esempio {#list-query}
@@ -66,11 +66,11 @@ Inizia da GraphQL Explorer in una nuova scheda. Qui puoi creare e convalidare le
 
    ![Query elenco](assets/do-not-localize/list-query-1-3-4-5.png)
 
-Hai appena convalidato una query di elenco per un elenco completo di tutti i frammenti di contenuto. Questo processo consente di garantire che la risposta sia ciò che l’app si aspetta, con risultati che illustrano come le app e i siti web recupereranno il contenuto creato in AEM.
+Hai appena convalidato una query elenco per un elenco completo di tutti i frammenti di contenuto. Questo processo consente di garantire che la risposta sia ciò che l’app si aspetta, con risultati che illustrano come le app e i siti web recupereranno il contenuto creato in AEM.
 
 >[!NOTE]
 >
->Se non sei in grado di selezionare l’endpoint **AEM Demo Assets** dall’elenco a discesa, contatta l’Assistenza clienti Adobe o il [Canale di Slack AEM Trials.](https://adobe-dx-support.slack.com/)
+>Se non è possibile selezionare **Risorse dimostrative AEM** dall&#39;elenco a discesa, contatta l&#39;assistenza clienti Adobe o contatta il [Canale di Slack degli studi AEM.](https://adobe-dx-support.slack.com/)
 
 ## Query per un contenuto specifico di esempio {#bypath-query}
 
@@ -109,7 +109,7 @@ L’esecuzione di una query byPath consente di recuperare il contenuto per un fr
 
    ![Risultati della query byPath](assets/do-not-localize/bypath-query-2-3-4.png)
 
-Hai appena convalidato una query byPath per recuperare un frammento di contenuto specifico identificato dal percorso di tale frammento.
+È stata appena convalidata una query byPath per recuperare un frammento di contenuto specifico identificato dal percorso di tale frammento.
 
 ## Query del contenuto personale {#own-queries}
 

@@ -2,9 +2,9 @@
 title: Creazione e gestione dei canali in Screens as a Cloud Service
 description: Questa pagina descrive come creare e gestire i canali in Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Questo documento spiega come creare e gestire i canali per il progetto AEM Scree
 
 >[!NOTE]
 >**Prerequisiti**
->Prima di iniziare questa sezione della Guida TV, leggere [Creazione e gestione di progetti in Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+>Prima di iniziare questa sezione della Guida TV, rivedi [Creazione e gestione di progetti in Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 Segui i passaggi seguenti per creare un nuovo canale di sequenza in Screens as a Cloud Service:
 
@@ -42,7 +42,7 @@ Segui i passaggi seguenti per creare un nuovo canale di sequenza in Screens as a
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > Il **Crea** La procedura guidata fornisce diversi tipi di modelli durante la creazione di un canale. Consulta la sezione [Modelli disponibili](#available-templates) in Creazione guidata per ulteriori dettagli.
+   > Il **Crea** La procedura guidata fornisce diversi tipi di modelli durante la creazione di un canale. Consulta [Modelli disponibili](#available-templates) in Creazione guidata per ulteriori dettagli.
 
 1. Immetti il nome del canale della sequenza, ad esempio: **LoopChannelOne** e fai clic su **Crea**.
 
@@ -50,7 +50,7 @@ Segui i passaggi seguenti per creare un nuovo canale di sequenza in Screens as a
 
    Ora visualizzerai un **LoopChannelOne** nella cartella Canali del progetto AEM Screens.
 
-   Dopo aver creato il canale, ora puoi aggiungere contenuti al canale. Fai riferimento a [Aggiunta di contenuto a un canale](#add-content) per scoprire come aggiungere risorse (immagini/video) al tuo canale.
+   Dopo aver creato il canale, ora puoi aggiungere contenuti al canale. Consulta [Aggiunta di contenuto a un canale](#add-content) per scoprire come aggiungere risorse (immagini/video) al tuo canale.
 
 ## Gestione di un canale {#managing-channels}
 
@@ -100,7 +100,7 @@ Questa funzionalità consente di definire una pianificazione di attivazione pred
    ![immagine](/help/screens-cloud/assets/display/Assignment1.png)
 
 1. Clic **Imposta dettagli predefiniti**.
-1. Configurare i dettagli di assegnazione predefiniti, tra cui priorità, date di inizio e fine e criteri di ricorrenza per il canale, quindi fare clic su **Assegna**.
+1. Configurare i dettagli di assegnazione predefiniti, tra cui priorità, date di inizio e fine e pattern di ricorrenza per il canale, quindi fare clic su **Assegna**.
 
    ![immagine](/help/screens-cloud/assets/display/Assignments2.png)
 
@@ -143,8 +143,8 @@ in alternativa, seleziona la visualizzazione desiderata nella vista inventario e
 
 **Nota:** Un&#39;assegnazione di canale che utilizza i dettagli di assegnazione predefiniti non sarà modificabile nel contesto della visualizzazione.
 
-* Se è necessario modificarla in un&#39;assegnazione personalizzata, è necessario innanzitutto rimuoverla e quindi aggiungerla nuovamente utilizzando **Imposta dettagli assegnazione personalizzata** opzione.
-* Se è necessario modificare le proprietà dei dettagli di assegnazione predefiniti, è necessario farlo direttamente dalla pagina dei dettagli del canale.
+* Se è necessario modificarla in un&#39;assegnazione personalizzata, rimuoverla e quindi aggiungerla nuovamente utilizzando **Imposta dettagli assegnazione personalizzata** opzione.
+* Se è necessario modificare le proprietà dei dettagli di assegnazione predefiniti, farlo direttamente dalla pagina dei dettagli del canale.
 
 ### Rimuovere i dettagli di assegnazione predefiniti da un canale {#remove-display}
 
@@ -174,4 +174,4 @@ Di conseguenza, questo può portare alla creazione di schermate vuote se su tali
 
 ## Passaggio successivo {#whats-next}
 
-Ora che hai configurato un canale AEM Screens nel progetto, devi pubblicare il tuo canale. Fai riferimento a [Pubblicazione di canali in Screens as a Cloud Service](manage-publish.md) prima di gestire i lettori da Screens Services Provider.
+Ora che hai configurato un canale AEM Screens nel progetto, devi pubblicare il tuo canale. Consulta [Pubblicazione di canali in Screens as a Cloud Service](manage-publish.md) prima di gestire i lettori da Screens Services Provider.

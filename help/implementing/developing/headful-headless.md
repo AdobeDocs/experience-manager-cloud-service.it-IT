@@ -2,10 +2,10 @@
 title: Headful e headless in AEM
 description: I progetti AEM possono essere implementati in un modello headful e headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 96%
+source-wordcount: '1010'
+ht-degree: 89%
 
 ---
 
@@ -43,7 +43,7 @@ La sezione successiva esplora più dettagliatamente questi livelli di integrazio
 
 >[!NOTE]
 >
->Naturalmente puoi anche reimplementare il web shop SPA AEM come un SPA pienamente funzionante [utilizzando il framework dell’Editor SPA dell’AEM.](/help/implementing/developing/hybrid/introduction.md) Se hai già AEM e desideri creare un nuovo negozio web o un&#39;altra SPA, questo è il metodo consigliato, ma non rientra nell’ambito di questo documento.
+>Naturalmente puoi anche reimplementare il web shop SPA AEM come un SPA pienamente funzionante [utilizzo del framework dell’editor SPA dell’AEM](/help/implementing/developing/hybrid/introduction.md). Se hai già AEM e desideri creare un nuovo negozio web o un&#39;altra SPA, questo è il metodo consigliato, ma non rientra nell’ambito di questo documento.
 
 ## Livelli di integrazione SPA {#integration-levels}
 
@@ -54,18 +54,18 @@ L’integrazione SPA si sviluppa su quattro livelli in AEM.
    * I contenuti vengono creati, gestiti e distribuiti in modo indipendente in due sistemi distinti.
 * **Livello 1: integrazione dei frammenti di contenuto**
    * I [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) vengono utilizzati in AEM per creare e gestire contenuti limitati per la SPA.
-   * La SPA recupera questo contenuto tramite [API GraphQL](/help/headless/graphql-api/content-fragments.md) di AEM.
+   * L&#39;SPA recupera questo contenuto tramite AEM [API GRAPHQL](/help/headless/graphql-api/content-fragments.md).
    * Alcuni contenuti vengono gestiti in AEM e altri in un sistema esterno.
    * Il contenuto può essere visualizzato solo nella SPA.
 * **Livello 2: incorpora la SPA in AEM**
    * I [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) vengono utilizzati in AEM per creare e gestire il contenuto per la SPA.
-   * La SPA recupera questo contenuto tramite [API GraphQL](/help/headless/graphql-api/content-fragments.md) di AEM.
+   * L&#39;SPA recupera questo contenuto tramite AEM [API GRAPHQL](/help/headless/graphql-api/content-fragments.md).
    * Alcuni contenuti vengono gestiti in AEM e altri in un sistema esterno.
    * Il contenuto può essere visualizzato nel contesto in AEM.
    * È possibile modificare contenuto limitato in AEM.
 * **Livello 3: incorpora e abilita completamente SPA in AEM**
    * I [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) vengono utilizzati in AEM per creare e gestire il contenuto per la SPA.
-   * La SPA recupera questo contenuto tramite [API GraphQL](/help/headless/graphql-api/content-fragments.md) di AEM.
+   * L&#39;SPA recupera questo contenuto tramite AEM [API GRAPHQL](/help/headless/graphql-api/content-fragments.md).
    * Il contenuto può essere visualizzato nel contesto in AEM.
    * La maggior parte dei contenuti può essere modificata in AEM.
 
@@ -80,6 +80,6 @@ Sono disponibili diversi strumenti in AEM a seconda del livello di integrazione 
 * **Livello 1:** Frammenti di contenuto e il [framework di AEM headless](/help/headless/introduction.md) possono essere utilizzati per distribuire contenuto AEM alla SPA.
 * **Livello 2:** in aggiunta al livello 1:
    * Il [componente RemotePage](/help/implementing/developing/hybrid/remote-page.md) può essere utilizzato per incorporare la SPA esterna in AEM dove è possibile visualizzare il contenuto AEM contestuale.
-   * Alcuni punti della SPA possono anche essere abilitati per [consentire modifiche limitate in AEM.](/help/implementing/developing/hybrid/editing-external-spa.md)
+   * Alcuni punti della SPA possono anche essere abilitati per [consentire modifiche limitate in AEM](/help/implementing/developing/hybrid/editing-external-spa.md).
 * **Livello 3:** in aggiunta al livello 2:
    * È possibile abilitare intere aree della SPA per consentire una modifica completa in AEM.

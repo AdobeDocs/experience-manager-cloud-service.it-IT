@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1943'
 ht-degree: 3%
@@ -17,9 +17,9 @@ Possible topics to cover in this article are below.
 
 * Compile a list of enhancements done in the last ~1 year.
 * Showcase a few prominent use cases (search?) in a screencast.
-* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, popup dialogs, etc.
+* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, popup dialogs, and so on.
 * List all UIs that are keyboard navigable.
-* Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, etc.
+* Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, and so on.
 * Do we need to add support matrix of user tasks with browser and screen reader combinations. Everything may not work in all browsers and/or using all screen readers.
 * Any exceptions that users should be aware of. It may help to call out (it may be done in ACR) what tasks are NOT supported.
 * CTAs – what's next and more info from the team:
@@ -109,7 +109,7 @@ Le azioni seguenti in [!DNL Assets] utilizzare le scelte rapide da tastiera elen
 
 Gli utenti possono utilizzare la tastiera per passare al campo di accesso e compilarlo per effettuare l’accesso. I messaggi di errore dovuti a combinazioni errate di nome utente e password nella pagina di accesso vengono annunciati dagli assistenti vocali ogni volta che si verifica l’errore.
 
-Dopo aver effettuato l’accesso, gli utenti DAM possono navigare in [!DNL Assets] tramite la tastiera. Gli elementi dell’interfaccia utente, come la barra a sinistra, i menu, il profilo utente, la barra di ricerca, i file e le cartelle e le impostazioni di amministrazione e configurazione sono navigabili da tastiera. L&#39;ordine di navigazione della tastiera è da sinistra a destra e dall&#39;alto al basso. Quando si naviga utilizzando una tastiera, un’opzione actionable, se messa a fuoco, viene evidenziata con un contrasto di colore migliore e narrata da un assistente vocale. Se appropriato, lo stato, ad esempio espanso, compresso e misto, delle opzioni attivate nel menu viene annunciato da un assistente vocale. Inoltre, lo scopo dell’opzione utilizzabile viene annunciato da un assistente vocale anziché, ad esempio, dall’aspetto o dal posizionamento dell’interfaccia utente.
+Dopo aver effettuato l’accesso, gli utenti DAM possono navigare in [!DNL Assets] tramite la tastiera. Gli elementi dell’interfaccia utente, come la barra a sinistra, i menu, il profilo utente, la barra di ricerca, i file e le cartelle e le impostazioni di amministrazione e configurazione sono navigabili da tastiera. L&#39;ordine di navigazione della tastiera è da sinistra a destra e dall&#39;alto al basso. Quando si naviga utilizzando una tastiera, un’opzione actionable, se messa a fuoco, viene evidenziata con un contrasto di colore migliore e narrata da un assistente vocale. Se appropriato, lo stato, ad esempio espanso, compresso e misto, delle opzioni attivate nel menu viene annunciato da un assistente vocale. Inoltre, lo scopo dell’opzione actionable viene annunciato da un assistente vocale anziché, ad esempio, dall’aspetto o dal posizionamento dell’interfaccia utente.
 
 Se un utente espande l’opzione Aiuto o Profilo utente dal menu, l’opzione o lo stato appropriato viene annunciato dall’assistente vocale. Se un utente espande l’opzione del profilo utente, è possibile selezionare le opzioni disponibili utilizzando una tastiera. Ad esempio, un amministratore può rappresentare un altro utente. Se un utente cerca una stringa da [!UICONTROL Aiuto] , un narratore annuncia &quot;Ricerca nella Guida&quot; per indicare che è in corso una ricerca.
 
@@ -133,7 +133,7 @@ In [!DNL Experience Manager] header section, when navigating in browse mode, scr
   * The Searching Help status message that is displayed when user enters a search string in Search for Help field under Help option
   * The error message if incorrect value is entered in Impersonate as field under User option and focus correctly moves to the text field (NPR-33804).
 
-Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessible through keyboard, due to which user cannot trigger close button through keyboard press in version preview dialog. After fix, user can close dialog through close button using keyboard.
+Review CQ-4282133 before adding - Close button in a coral-dialog box was not accessible through keyboard, due to which user cannot trigger close button through keyboard press in version preview dialog. After fix, user can close dialog through close button using keyboard.
 
 * CQ-4273122 - Assets of video/audio type will have aria-label in format "Multimedia player: <Title>" so users relying on screen-reader will get to know that they are video/audio assets.
 -->
@@ -221,16 +221,16 @@ Quando si condividono le risorse, le seguenti funzionalità migliorano l’acces
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 ## Fornisci feedback {#a11y-feedback}
 
@@ -244,4 +244,3 @@ Per fornire un feedback, porre domande e richiedere miglioramenti al prodotto re
 >* [Note sulla versione dei miglioramenti apportati in ogni versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 >* [[!DNL Adobe Experience Manager] guida all’accessibilità](/help/compliance/accessibility/web-accessibility.md).
 >* [Relazioni di conformità (ACR) e elenco VPAT per soluzioni Adobi](https://www.adobe.com/accessibility/compliance.html).
-

@@ -2,10 +2,10 @@
 title: Introduzione all’Editor visivo universale
 description: Scopri in che modo l’Editor visivo universale (meglio conosciuto come Editor universale) consente la modifica WYSIWYG (What you see is what you get) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -81,7 +81,7 @@ Un professionista del marketing desidera creare contenuto personalizzato in base
 
 È importante notare che l’Editor universale è in corso di elaborazione e che alcune delle funzionalità descritte in questo documento sono una visione dell’editor finale e non necessariamente rappresentano le sue attuali capacità.
 
-Rivolgiti al tuo contatto Adobe per maggiori informazioni sulle prossime funzionalità previste per l’Editor universale.
+Rivolgiti al tuo contatto Adobe per informazioni sulle prossime funzioni pianificate per Universal Editor.
 
 ## Risorse aggiuntive {#additional-resources}
 

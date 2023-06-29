@@ -4,9 +4,9 @@ description: Scopri come le regole di traduzione identificano il contenuto da tr
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1291'
 ht-degree: 94%
 
 ---
@@ -17,7 +17,7 @@ Le regole di traduzione identificano il contenuto da tradurre per le pagine, i c
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta la [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti AEM Sites utilizzando potenti strumenti di traduzione AEM, ideale per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti AEM Sites utilizzando potenti strumenti di traduzione AEM, ideale per chi non ha esperienza di AEM o traduzione.
 
 ## Frammenti di contenuto e regole di traduzione {#content-fragments}
 

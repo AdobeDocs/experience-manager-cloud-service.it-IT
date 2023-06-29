@@ -2,10 +2,10 @@
 title: Strumenti di modernizzazione AEM
 description: Strumenti di modernizzazione AEM
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 77%
+source-wordcount: '129'
+ht-degree: 51%
 
 ---
 
@@ -26,8 +26,8 @@ Gli strumenti di modernizzazione AEM consentono di convertire facilmente:
 >[!NOTE]
 >Gli strumenti di modernizzazione AEM sono un’iniziativa della community e non sono supportati o garantiti da Adobe.
 
-Per ulteriori informazioni su pianificazione, configurazione e sviluppo per la suite di strumenti di modernizzazione AEM, consulta l’**[introduzione agli strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/)**.
+Consulta **[Introduzione degli strumenti di modernizzazione dell’AEM](https://opensource.adobe.com/aem-modernize-tools/)** per ulteriori informazioni su pianificazione, configurazione e sviluppo per la suite di strumenti di modernizzazione AEM.
 
 ## Installazione e implementazione della suite di strumenti di modernizzazione AEM {#installing-implementing}
 
-Per informazioni sull’installazione e l’implementazione, consulta la **[risorsa Git sulla suite di strumenti di modernizzazione AEM](https://github.com/adobe/aem-modernize-tools)**.
+Consulta **[Risorsa Git: suite di strumenti per modernizzare l’AEM](https://github.com/adobe/aem-modernize-tools)** informazioni sull&#39;installazione e l&#39;implementazione.

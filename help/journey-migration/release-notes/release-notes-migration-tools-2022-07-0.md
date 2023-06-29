@@ -3,9 +3,9 @@ title: Note sulla versione 2022.7.0 degli strumenti di migrazione in AEM as a Cl
 description: Note sulla versione 2022.7.0 degli strumenti di migrazione in AEM as a Cloud Service
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '428'
 ht-degree: 9%
 
 ---
@@ -59,5 +59,5 @@ La data di pubblicazione di Cloud Acceleration Manager è il 15 luglio 2022.
 
 ### Novità {#what-is-new-cam}
 
-* Cloud Acceleration Manager ora consente agli utenti di recuperare manualmente il token di migrazione per poter avviare un’acquisizione quando il recupero automatico non riesce. Il recupero automatico può non riuscire se i clienti hanno impostato un elenco IP consentiti che blocca CAM o se un utente non amministratore tenta di avviare un’acquisizione. Fai riferimento a [Risoluzione dei problemi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) per ulteriori informazioni.
+* Cloud Acceleration Manager ora consente agli utenti di recuperare manualmente il token di migrazione per poter avviare un’acquisizione quando il recupero automatico non riesce. Il recupero automatico può non riuscire se i clienti hanno impostato un elenco IP consentiti che blocca CAM o se un utente non amministratore tenta di avviare un’acquisizione. Consulta [Risoluzione dei problemi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) per ulteriori informazioni.
 * Le tabelle lunghe nella pagina Complessità di migrazione sono ora comprimibili per semplificare l’utilizzo.

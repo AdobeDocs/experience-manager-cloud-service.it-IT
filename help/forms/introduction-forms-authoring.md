@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2408'
+source-wordcount: '2409'
 ht-degree: 97%
 
 ---
@@ -32,8 +32,8 @@ Si tratta di un modello di modulo ideale per gli investimenti in moduli basati s
 * **Utilizzo di una definizione di schema XML (XSD) o di uno schema JSON**
 Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili per l’utilizzo nella scheda Oggetti modello dati del browser Contenuto durante l’authoring di Forms adattivo.
 
-* **Non utilizzare nessun modello di modulo ossia creare senza un modello di modulo**
-I moduli adattivi creati con questa opzione non utilizzano alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.
+* **Utilizzo di none o senza un modello di modulo**
+Il Forms adattivo creato con questa opzione non utilizza alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.
 
   >[!NOTE]
   >

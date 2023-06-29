@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Non è necessario fare clic sul collegamento nel messaggio di errore per aggiorn
 
 ### Campi eliminati nel file XDP {#deleted-fields-in-xdp-file}
 
-Se un campo precedentemente copiato in un modulo adattivo viene eliminato da un file XDP, nella modalità di authoring viene visualizzato un messaggio di errore in cui si informa che il campo non esiste nel file XDP. In questi casi, elimina manualmente il campo dal modulo adattivo o cancella il `bindRef` nella finestra di dialogo del componente.
+Se un campo copiato in precedenza in un modulo adattivo viene eliminato da un file XDP, nella modalità di creazione viene visualizzato un messaggio di errore che informa che il campo non esiste nel file XDP. In questi casi, elimina manualmente il campo dal modulo adattivo o cancella il `bindRef` nella finestra di dialogo del componente.
 
 I passaggi seguenti illustrano questo flusso di utilizzo per le risorse nell’esempio utilizzato in questo articolo:
 

@@ -4,10 +4,10 @@ description: Scopri come configurare il Translation Integration Framework per in
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 803a7788cde37fb0026f7cc3582efb33c10e1358
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1518'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Per una panoramica delle funzioni di traduzione dei contenuti di AEM, vedi [Trad
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, fai riferimento al [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti AEM Sites utilizzando potenti strumenti di traduzione AEM, ideale per chi non ha esperienza di AEM o traduzione.
 
 ## Connessione a un fornitore di servizi di traduzione {#connecting-to-a-translation-service-provider}
 
@@ -73,7 +73,7 @@ Una singola configurazione del framework controlla come vengono tradotti il cont
 1. Passa alla posizione in cui desideri creare la configurazione nella struttura del contenuto. Questo è spesso basato su un sito specifico o può essere globale.
 1. Fornisci le seguenti informazioni nei campi, quindi tocca o fai clic su **Crea**.
    1. Seleziona **Tipo di configurazione** nel menu a discesa.
-   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione nella console **Servizi cloud** così come nell’elenco a discesa delle proprietà della pagina.
+   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione in **Cloud Services** e negli elenchi a discesa delle proprietà della pagina.
    1. In alternativa, digita un **Nome** da utilizzare per il nodo dell’archivio in cui è memorizzata la configurazione.
 1. Nella finestra di dialogo **Modifica configurazione**, configura le proprietà nelle schede **Sites** e **Assets**, quindi tocca o fai clic su **Salva e chiudi**.
 

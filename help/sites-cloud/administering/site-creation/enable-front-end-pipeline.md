@@ -4,10 +4,10 @@ description: Scopri come abilitare la pipeline front-end per i siti esistenti pe
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 87%
+source-wordcount: '562'
+ht-degree: 82%
 
 ---
 
@@ -25,7 +25,7 @@ Per impostazione predefinita, i siti basati sui modelli del sito possono utilizz
 
 >[!TIP]
 >
->Se non conosci la pipeline front-end e le modalità di distribuzione rapida dei siti che la utilizzano insieme ai modelli, consulta la sezione [Percorso di Creazione Rapida dei Siti](/help/journey-sites/quick-site/overview.md) per una panoramica.
+>Se non conosci la pipeline front-end e le modalità di distribuzione rapida dei siti che la utilizzano insieme ai modelli, consulta [Percorso di Creazione Rapida dei Siti](/help/journey-sites/quick-site/overview.md) per un’introduzione.
 
 Se non hai creato il sito esistente in base a modelli e temi del sito, AEM può configurarlo per caricare i temi distribuiti con la pipeline front-end sopra le librerie client esistenti.
 

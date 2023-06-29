@@ -4,9 +4,9 @@ description: Scopri le nozioni di base di AE; gestione dei pacchetti con Gestion
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3780'
+source-wordcount: '3775'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ I pacchetti di contenuti creati per le applicazioni AEM as a Cloud Service devon
 
 >[!NOTE]
 >
->I pacchetti possono contenere solo contenuto. Qualsiasi funzionalità (ad esempio, contenuto memorizzato in `/apps`) deve essere [implementato utilizzando la pipeline CI/CD in Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
+>I pacchetti possono contenere solo contenuto. Qualsiasi funzionalità (ad esempio, contenuto memorizzato in `/apps`) deve essere [implementato utilizzando la pipeline CI/CD in Cloud Manager](/help/implementing/cloud-manager/deploy-code.md).
 
 >[!IMPORTANT]
 >
@@ -43,7 +43,7 @@ I pacchetti di contenuti creati per le applicazioni AEM as a Cloud Service devon
 >
 >Non ripetere l’installazione se viene visualizzato un errore di questo tipo. L’installazione sta procedendo correttamente in background. Se si riavvia l’installazione, potrebbero essere introdotti alcuni conflitti da più processi di importazione simultanei.
 
-Per ulteriori dettagli su come gestire i pacchetti per AEMaaCS, consulta il documento [Distribuzione a AEM as a Cloud Service](/help/implementing/deploying/overview.md) nella guida utente distribuzione.
+Per ulteriori dettagli su come gestire i pacchetti per AEMaaCS, consulta [Distribuzione a AEM as a Cloud Service](/help/implementing/deploying/overview.md) nella guida utente distribuzione.
 
 ## Dimensione pacchetto {#package-size}
 
@@ -110,7 +110,7 @@ Gestione pacchetti è suddiviso in quattro aree funzionali principali:
 * **Registro attività** : questo pannello viene ridotto a icona in un primo momento ed espande per descrivere nel dettaglio l’attività di Gestione pacchetti, ad esempio quando un pacchetto viene generato o installato. Nella scheda Registro attività sono disponibili pulsanti aggiuntivi per:
    * **Cancella registro**
    * **Mostra/Nascondi**
-* **Barra degli strumenti** - La barra degli strumenti contiene pulsanti di aggiornamento per il pannello di navigazione sinistro e l&#39;elenco dei pacchetti, nonché pulsanti per la ricerca, la creazione e il caricamento di pacchetti.
+* **Barra degli strumenti** - La barra degli strumenti contiene i pulsanti di aggiornamento per il pannello di navigazione sinistro e l&#39;elenco dei pacchetti, nonché i pulsanti per la ricerca, la creazione e il caricamento dei pacchetti.
 
 ![Interfaccia utente di Gestione pacchetti](assets/package-manager-ui.png)
 

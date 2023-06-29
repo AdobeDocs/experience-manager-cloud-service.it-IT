@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3829'
+source-wordcount: '3830'
 ht-degree: 16%
 
 ---
@@ -352,7 +352,7 @@ Per risolvere gli errori più comuni, effettuare le seguenti operazioni:
 
 * Se non riesci a cercare le risorse remote dal [!UICONTROL Content Finder], quindi accertati che siano presenti i ruoli e le autorizzazioni richiesti.
 
-* Una risorsa recuperata da DAM remoto potrebbe non essere pubblicata su una pagina web per uno o più motivi. Non esiste sul server remoto, la mancanza di autorizzazioni appropriate per recuperarlo o un errore di rete possono essere i motivi. Assicurati che la risorsa non venga rimossa da DAM remoto. Assicurati di disporre delle autorizzazioni appropriate e che i prerequisiti siano soddisfatti. Riprova ad aggiungere la risorsa alla pagina e ripubblica. Controlla l’[elenco dei processi asincroni](/help/operations/asynchronous-jobs.md) per verificare la presenza di errori nel recupero delle risorse.
+* Una risorsa recuperata da DAM remoto potrebbe non essere pubblicata su una pagina web per uno o più motivi. Non esiste sul server remoto, la causa può essere la mancanza di autorizzazioni appropriate per recuperarlo o un errore di rete. Assicurati che la risorsa non venga rimossa da DAM remoto. Assicurati di disporre delle autorizzazioni appropriate e che i prerequisiti siano soddisfatti. Riprova ad aggiungere la risorsa alla pagina e ripubblica. Controlla l’[elenco dei processi asincroni](/help/operations/asynchronous-jobs.md) per verificare la presenza di errori nel recupero delle risorse.
 
 * Se non riesci ad accedere all’implementazione remota di DAM dal server locale [!DNL Sites] , assicurati che i cookie tra siti siano consentiti e [supporto per cookie dello stesso sito](/help/security/same-site-cookie-support.md) è configurato. Se i cookie cross-site sono bloccati, le distribuzioni di [!DNL Experience Manager] non può autenticare. Ad esempio: [!DNL Google Chrome] in modalità di navigazione in incognito può bloccare i cookie di terze parti. Per consentire i cookie in [!DNL Chrome] , fare clic sull&#39;icona &#39;occhio&#39; nella barra degli indirizzi e passare a **Sito non funzionante** > **Bloccato**, seleziona l’URL DAM remoto e consenti il cookie token di accesso. In alternativa, vedere [come abilitare i cookie di terze parti](https://support.google.com/chrome/answer/95647).
 

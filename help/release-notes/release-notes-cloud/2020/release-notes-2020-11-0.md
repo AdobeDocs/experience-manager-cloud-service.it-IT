@@ -2,10 +2,10 @@
 title: Note sulla versione 2020.11.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.11.0 as a Cloud Service."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 18%
+source-wordcount: '1261'
+ht-degree: 17%
 
 ---
 
@@ -73,9 +73,9 @@ La seguente versione (2020.12.0) sarà del 17 dicembre 2020
 
 ### Novità {#what-is-new-commerce}
 
-* È stato rilasciato il sito di riferimento CIF Venia (2020.11.05), che include la versione più recente dei Componenti Core CIF v1.5.0. Fai riferimento a [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) per ulteriori dettagli.
+* È stato rilasciato il sito di riferimento CIF Venia (2020.11.05), che include la versione più recente dei Componenti Core CIF v1.5.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) per ulteriori dettagli.
 
-* È stata rilasciata la versione 1.5.0 dei componenti core CIF. Fai riferimento a [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) per ulteriori dettagli.
+* È stata rilasciata la versione 1.5.0 dei componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) per ulteriori dettagli.
 
 ### Correzioni di bug {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2020.11.0 è
 ### Novità in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Una nuova opzione di menu **Accesso locale** è ora disponibile per gli utenti dalle opzioni di menu dell’ambiente sulla **Ambienti** scheda e **Ambienti** pagine di riepilogo.
-Per ulteriori informazioni, consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md#login-locally).
+Consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md#login-locally) per ulteriori dettagli.
 
 * La scheda **Scopri** in Cloud Manager è stata aggiornata aggiungendo nuove immagini nell’interfaccia utente.
 

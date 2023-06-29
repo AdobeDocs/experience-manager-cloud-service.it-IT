@@ -2,10 +2,10 @@
 title: Abilitazione delle funzioni progressive delle web app
 description: AEM Sites consente all’autore dei contenuti di abilitare le funzionalità progressive delle app web a qualsiasi sito tramite una configurazione semplice invece che tramite la codifica.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 93%
+source-wordcount: '1997'
+ht-degree: 92%
 
 ---
 
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Regolare il Dispatcher {#adjust-dispatcher}
 
-La funzione PWA genera e utilizza file `/content/<sitename>/manifest.webmanifest`. Per impostazione predefinita, [dispatcher](/help/implementing/dispatcher/overview.md) non espone tali file. Per esporre questi file, lo sviluppatore deve aggiungere la seguente configurazione al progetto del sito.
+La funzione PWA genera e utilizza file `/content/<sitename>/manifest.webmanifest`. Per impostazione predefinita, [il dispatcher](/help/implementing/dispatcher/overview.md) non espone tali file. Per esporre questi file, lo sviluppatore deve aggiungere la seguente configurazione al progetto del sito.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -160,20 +160,20 @@ Queste impostazioni permettono che il tuo sito si comporti come un’app nativa,
    * **Interfaccia utente minima** - Il browser è principalmente nascosto, come un’app nativa, ma sono esposti i controlli di navigazione di base.
    * **Schermo intero** - Il browser è completamente nascosto, come un’app nativa, ma viene riprodotto in modalità a schermo intero.
       * Con questa opzione, la navigazione nelle app deve essere possibile interamente tramite il contenuto mediante collegamenti e componenti nelle pagine del sito senza utilizzare i controlli di navigazione del browser.
-* **Orientamento dello schermo** - Come app locale, PWA deve sapere come gestire gli [orientamenti del dispositivo.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
+* **Orientamento dello schermo** - Come app locale, PWA deve sapere come gestire gli [orientamenti del dispositivo](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
    * **Qualsiasi** - L’app si adatta all’orientamento del dispositivo dell’utente. Questo è il valore predefinito.
    * **Verticale** - Questo costringe l’app ad aprirsi in layout verticale indipendentemente dall’orientamento del dispositivo dell’utente.
    * **Orizzontale** - Questo costringe l’app ad aprirsi in layout orizzontale indipendentemente dall’orientamento del dispositivo dell’utente.
 * **Colore tema** - Definisce il [colore dell’app](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) che influisce sul modo in cui il sistema operativo dell’utente locale visualizza la barra degli strumenti dell’interfaccia utente nativa e i controlli di navigazione. A seconda del browser, può influenzare altri elementi di presentazione dell’app.
    * Utilizza la finestra a comparsa del colore per selezionare un colore.
    * Il colore può essere definito anche in base al valore esadecimale o RGB.
-* **Colore di sfondo** - Definisce il [colore di sfondo dell’app,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) che viene visualizzato durante il caricamento dell’app.
+* **Colore di sfondo** - Definisce [colore di sfondo dell’app](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), che viene visualizzato durante il caricamento dell’app.
    * Utilizza la finestra a comparsa del colore per selezionare un colore.
    * Il colore può essere definito anche in base al valore esadecimale o RGB.
    * Alcuni browser [creano automaticamente una schermata iniziale](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) dal nome dell’app, dal colore di sfondo e dall’icona.
 * **Icona** - Definisce [l’icona](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) che rappresenta l’app sul dispositivo dell’utente.
    * L’icona deve essere un file png di dimensioni pari a 512x512 pixel.
-   * L’icona deve essere [memorizzata in DAM.](/help/assets/overview.md)
+   * L’icona deve essere [memorizzata in DAM](/help/assets/overview.md).
 
 ### Gestione della cache (avanzate) {#offline-configuration}
 

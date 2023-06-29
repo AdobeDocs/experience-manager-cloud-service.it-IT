@@ -2,7 +2,7 @@
 title: Creazione e utilizzo di temi
 description: Puoi utilizzare i temi per formattare e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 5%
@@ -17,7 +17,7 @@ Quando [creare un modulo adattivo](/help/forms/creating-adaptive-form.md) utiliz
 
 >[!NOTE]
 >
->Un tema per moduli adattivi non deve essere confuso con [Modelli per moduli adattivi.](/help/forms/template-editor.md) I temi per moduli adattivi contengono solo le informazioni sullo stile di un modulo adattivo. I modelli per moduli adattivi definiscono la struttura del modulo e il contenuto iniziale e contengono un tema per consentire la creazione di nuovi [Modulo adattivo.](/help/forms/creating-adaptive-form.md)
+>Un tema per moduli adattivi non deve essere confuso con [Modelli di modulo adattivo](/help/forms/template-editor.md). I temi per moduli adattivi contengono solo le informazioni sullo stile di un modulo adattivo. I modelli per moduli adattivi definiscono la struttura del modulo e il contenuto iniziale e contengono un tema per consentire la creazione di nuovi [Modulo adattivo](/help/forms/creating-adaptive-form.md).
 
 ## Utilizzo del tema Canvas in Adaptive Forms tramite i componenti core {#using-theme-in-adaptive-form}
 

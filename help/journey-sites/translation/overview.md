@@ -5,7 +5,7 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 92%
@@ -47,7 +47,7 @@ Di seguito sono riportati gli utenti tipo che interagiscono in questo percorso.
 | Amministratore | Gestisce l’impostazione e la configurazione di base di AEM | Lo specialista di traduzione collabora con l’amministratore per apportare le modifiche di configurazione necessarie per la traduzione, ad esempio per l’installazione di un connettore di traduzione. |
 | Architetto dei contenuti | Analizza i requisiti dei dati che devono essere consegnati come siti e ne definisce la struttura | Gli esperti di traduzione collaborano con l&#39;architetto dei contenuti per definirne l&#39;organizzazione in modo che possano essere facilmente tradotti. |
 
-Le informazioni in questo percorso possono ovviamente essere utili a tutti gli utenti, ma alcune possono essere superflue per determinati ruoli. Rimani sintonizzato per [i prossimi percorsi che includeranno ruoli aggiuntivi.](/help/journey-documentation/documentation-journeys.md#journeys)
+Le informazioni in questo percorso possono ovviamente essere utili a tutti gli utenti, ma alcune possono essere superflue per determinati ruoli. Rimani sintonizzato per [i prossimi percorsi che includeranno ruoli aggiuntivi](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## Percorso Sites translation {#the-journey}
 

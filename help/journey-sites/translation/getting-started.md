@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 94%
+source-wordcount: '1400'
+ht-degree: 88%
 
 ---
 
@@ -47,7 +47,7 @@ Ci sono diversi requisiti prima di iniziare a tradurre il tuo contenuto AEM.
 
 >[!TIP]
 >
->Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso, quindi torna a questa pagina una volta che l&#39;avrai letta.
+>Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso. Al termine, torna a questa pagina.
 
 ### Strumenti {#tools}
 
@@ -75,7 +75,7 @@ Per accedere alla console Sites:
 
    ![Gerarchia dei contenuti](assets/sites-console-hierarchy.png)
 
-1. Toccando o facendo clic sulla casella di spunta di un elemento in una colonna, l’elemento viene selezionato e ne vengono visualizzati i dettagli nella colonna a destra, oltre a svelarne una serie di azioni disponibili nella barra degli strumenti precedente.
+1. Toccando o facendo clic sulla casella di controllo di un elemento in una colonna, l’elemento viene selezionato e ne vengono visualizzati i dettagli nella colonna a destra, mostrando una serie di azioni disponibili per l’elemento selezionato nella barra degli strumenti precedente.
 
    ![Selezione del contenuto](assets/sites-console-selection.png)
 

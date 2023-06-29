@@ -2,7 +2,7 @@
 title: 'Creazione di una configurazione: configurazione headless'
 description: Crea una configurazione come primo passo per familiarizzare con le funzioni headless in AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 92%
@@ -29,7 +29,7 @@ Un amministratore deve creare una configurazione solo una volta oppure, molto ra
 1. Specifica il **titolo** e il **nome** da assegnare alla configurazione.
    * Il **titolo** deve essere descrittivo.
    * Il **Nome** diventa il nome del nodo nell’archivio.
-      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Se necessario è possibile modificarlo.
 1. Seleziona le seguenti opzioni:
    * **Modelli per frammenti di contenuto**
@@ -51,4 +51,4 @@ Utilizzando questa configurazione, ora puoi passare alla seconda parte della gui
 
 >[!TIP]
 >
->Per informazioni complete sul browser di configurazioni, [consulta la documentazione del browser di configurazioni.](/help/implementing/developing/introduction/configurations.md)
+>Per informazioni complete sul browser di configurazioni, [consulta la documentazione del browser di configurazioni](/help/implementing/developing/introduction/configurations.md).

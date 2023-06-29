@@ -2,9 +2,9 @@
 title: Gestione dei progetti
 description: Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità, accessibile e gestibile nella console dedicata
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '893'
 ht-degree: 49%
 
 ---
@@ -127,13 +127,14 @@ Se l’icona è affiancata da una x, stai visualizzando i progetti inattivi.
 
 ## Rendere i progetti inattivi o attivi {#making-projects-inactive-or-active}
 
-Potrebbe essere utile disattivare un progetto dopo averlo completato, ma si desidera comunque mantenere le informazioni relative al progetto.
+È possibile disattivare un progetto dopo averlo completato, ma si desidera comunque mantenere le informazioni relative al progetto.
 
 Per rendere un progetto inattivo (o attivo):
 
 1. In **Progetti** , apri il progetto e quindi individua **Informazioni progetto** affiancare.
 
    >[!NOTE]
+   >
    Potrebbe essere necessario aggiungere questo riquadro, se non è già presente nel progetto. Consulta [Aggiunta di riquadri](#adding-items-to-a-tile).
 
 1. Tocca o fai clic su **Modifica**.

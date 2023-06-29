@@ -2,7 +2,7 @@
 title: Componente RemotePage
 description: Il componente RemotePage è un componente di pagina personalizzato per la modifica dell’SPA di React remoto all’interno dell’AEM.
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
-source-git-commit: d213dd0788e66015237d241caf0f3b5737ce725c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Vedi l’articolo [Modifica di un SPA esterno all’interno dell’AEM](editing-
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
-      ![esempio di proprietà entrypoints](assets/asset-manifest-entrypoints.png)
+     ![esempio di proprietà entrypoints](assets/asset-manifest-entrypoints.png)
 * L’applicazione deve essere in grado di inizializzare in un `<div id="root"></div>` sotto il `body` elemento. Se è previsto un markup diverso per la creazione dell’istanza da parte dell’app, questo deve essere regolato di conseguenza negli script HTL del componente proxy che ha `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
 ## Limitazioni {#limitations}
@@ -42,4 +42,4 @@ Vedi l’articolo [Modifica di un SPA esterno all’interno dell’AEM](editing-
 
 ## Dettagli tecnici {#technical-details}
 
-Come il resto del progetto SPA dell’AEM, il componente RemotePage è open source. Per informazioni tecniche complete sul componente RemotePage, [consulta l’archivio GitHub.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+Come il resto del progetto SPA dell’AEM, il componente RemotePage è open source. Per informazioni tecniche complete sul componente RemotePage, [vedi l’archivio GitHub.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)

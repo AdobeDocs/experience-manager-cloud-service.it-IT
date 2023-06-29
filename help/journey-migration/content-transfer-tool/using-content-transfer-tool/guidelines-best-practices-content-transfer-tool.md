@@ -2,9 +2,9 @@
 title: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1544'
 ht-degree: 19%
 
 ---
@@ -77,7 +77,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 
-* Dopo aver completato *Estrazione* fase del processo di trasferimento dei contenuti e prima di avviare *Fase di acquisizione* per inserire contenuti nell’AEM as a Cloud Service *Fase* o *Produzione* istanze, dovrai registrare un ticket di supporto per notificare all’Adobe la tua intenzione di eseguire *Acquisizione* in modo che Adobe possa garantire che non si verifichino interruzioni durante *Acquisizione* processo. Dovrai registrare il ticket di supporto 1 settimana prima della pianificazione *Acquisizione* data. Dopo aver inviato il ticket di supporto, il team di supporto fornirà indicazioni sui passaggi successivi. Puoi registrare un ticket di supporto con i seguenti dettagli:
+* Dopo aver completato *Estrazione* fase del processo di trasferimento dei contenuti e prima di avviare *Fase di acquisizione* per inserire contenuti nell’AEM as a Cloud Service *Fase* o *Produzione* istanze, dovrai registrare un ticket di supporto per notificare all’Adobe la tua intenzione di eseguire *Acquisizione* in modo che Adobe possa garantire che non si verifichino interruzioni durante *Acquisizione* processo. Dovrai registrare il ticket di supporto 1 settimana prima della pianificazione *Acquisizione* data. Dopo aver inviato il ticket di supporto, il team di supporto fornisce indicazioni sui passaggi successivi. Puoi registrare un ticket di supporto con i seguenti dettagli:
 
    * Data esatta e ora stimata (con il fuso orario) in cui intendi avviare il *Acquisizione* fase.
    * Tipo di ambiente (stage o produzione) in cui intendi acquisire i dati.
@@ -87,13 +87,13 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Quando si utilizza `Amazon S3` o `Azure` come archivio dati sul sistema AEM di origine, l’archivio dati deve essere configurato in modo che i BLOB memorizzati non possano essere eliminati (garbage collection). In questo modo viene garantita l’integrità dei dati di indice e, se non si configura questa modalità, le estrazioni potrebbero non riuscire a causa della mancanza di integrità dei dati di indice.
 
-* Se utilizzi gli indici personalizzati, assicurati di configurarli con `tika` prima di eseguire lo strumento Content Transfer (Trasferimento contenuti). Fai riferimento a [Preparazione della nuova definizione dell’indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=it#preparing-the-new-index-definition) per ulteriori dettagli.
+* Se utilizzi gli indici personalizzati, assicurati di configurarli con `tika` prima di eseguire lo strumento Content Transfer (Trasferimento contenuti). Consulta [Preparazione della nuova definizione dell’indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=it#preparing-the-new-index-definition) per ulteriori dettagli.
 
-* Se intendi eseguire integrazioni, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui viene effettuata l’estrazione iniziale a quando viene eseguita l’estrazione integrativa. I top-up non possono essere eseguiti su contenuti la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questo valore durante il processo di migrazione.
+* Se intendi eseguire integrazioni, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui viene effettuata l’estrazione iniziale a quando viene eseguita l’estrazione integrativa. I top-up non possono essere eseguiti su contenuti la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questo passaggio durante il processo di migrazione.
 
 * Se desideri includere le versioni come parte di un set di migrazione ed esegui integrazioni con `wipe=false`, devi quindi disabilitare l’eliminazione della versione a causa di una limitazione corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione delle versioni e stai eseguendo integrazioni in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
-* Un set di migrazione scadrà dopo un periodo prolungato di inattività, trascorso il quale i relativi dati non saranno più disponibili. Rivedi [Scadenza set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) per ulteriori dettagli.
+* Un set di migrazione scadrà dopo un periodo prolungato di inattività, trascorso il quale i relativi dati non saranno più disponibili. Revisione [Scadenza set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) per ulteriori dettagli.
 
 ## Passaggio successivo {#whats-next}
 

@@ -3,7 +3,7 @@ title: Supporto delle miniature per video in Screens as a Cloud Service
 description: Questa pagina descrive come aggiungere il supporto miniature per video in Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f5af37bf39ecd5a964a8c94a731111c561c2934e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -43,25 +43,25 @@ Per usare la miniatura nei video, segui la procedura indicata di seguito:
 1. Seleziona il canale. Sulla barra delle azioni, fai clic su **Modifica** per aprire l’editor.
 
 
-   ![Pulsante Modifica sulla barra delle azioni.](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![Pulsante Modifica sulla barra delle azioni](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
 
 1. Aggiungi o modifica un componente video esistente, come illustrato nella figura riportata di seguito.
 
-   ![Immagine evidenziata di una risorsa video.](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Immagine evidenziata di una risorsa video](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
 
 1. Aggiungi o modifica un componente video esistente, come illustrato nella figura riportata di seguito.
 
 1. Seleziona il video e fai clic su Configura (*chiave inglese*) per aprire le proprietà del video.
 
-   ![Immagine della risorsa video selezionata, con freccia rivolta verso l’icona Configura, rappresentata come una chiave inglese. sulla barra degli strumenti.](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![Immagine della risorsa video selezionata, con freccia rivolta verso l’icona Configura, rappresentata come una chiave inglese. sulla barra degli strumenti](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
 1. Il **Video** viene visualizzata la finestra di dialogo in cui è possibile visualizzare **Miniatura** zona di rilascio.
 
-   ![Finestra di dialogo Video con l’immagine della risorsa video e la casella di riepilogo Miniatura.](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![Finestra di dialogo Video con l’immagine della risorsa video e la casella a discesa Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
 1. Trascina e rilascia un’immagine dal selettore risorse al **Miniatura** rilascia la zona e fai clic su **Fine**.
 
-   ![Selettore immagine risorsa visualizzato dietro la finestra di dialogo Video con la risorsa immagine visualizzata nella casella a discesa Miniatura.](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+   ![Selettore immagine risorsa visualizzato dietro la finestra di dialogo Video con la risorsa immagine visualizzata nella casella a discesa Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 
 1. Clic **Anteprima**.
 

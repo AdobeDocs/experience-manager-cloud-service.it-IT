@@ -2,16 +2,16 @@
 title: Assegnazione di un canale a una visualizzazione in Schermi as a Cloud Service
 description: Questa pagina descrive come assegnare un canale a una visualizzazione in Screens as a Cloud Service.
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 1%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
 # Assegnazione di un canale a una visualizzazione in Schermi as a Cloud Service {#assign-channel-displays-screens-cloud}
 
-Una volta completata la configurazione del progetto, devi assegnare il canale a una visualizzazione per visualizzare il contenuto.
+Al termine della configurazione del progetto, devi assegnare il canale a una visualizzazione per visualizzarne il contenuto.
 
 ## Obiettivo {#objective}
 
@@ -30,7 +30,7 @@ Per assegnare un canale a una visualizzazione, segui i passaggi seguenti:
 
 1. Passa a Screens Services Provider e seleziona **Display** dal pannello di navigazione a sinistra.
 
-1. Fai clic su **Assegna canale** sul display.
+1. Clic **Assegna canale** sul display.
 
    ![immagine](/help/screens-cloud/assets/display/assignchannel-1.png)
 
@@ -42,26 +42,27 @@ Per assegnare un canale a una visualizzazione, segui i passaggi seguenti:
    1. Scegli la priorità.
 
       >[!NOTE]
-      >La priorità viene utilizzata per ordinare le assegnazioni nel caso in cui più corrispondano ai criteri di riproduzione. Quello con il valore più alto avrà sempre la precedenza sui valori più bassi. Ad esempio, se sono presenti due canali A e B. A ha una priorità di 1 e B ha una priorità di 2, quindi viene visualizzato il canale B, in quanto ha una priorità più alta di A.
+      >La priorità viene utilizzata per ordinare le assegnazioni nel caso in cui più corrispondano ai criteri di riproduzione. Quello con il valore più alto ha sempre la precedenza sui valori più bassi. Ad esempio, se sono presenti due canali A e B. A ha una priorità di 1 e B ha una priorità di 2, quindi viene visualizzato il canale B, in quanto ha una priorità più alta di A.
+
    1. Seleziona la data di inizio e la data di fine da **Attivazione**.
 
-1. Fai clic su **+ Aggiungi ricorrenza** per aggiungere una pianificazione di ricorrenza per il canale.
+1. Clic **+ Aggiungi ricorrenza** per aggiungere una pianificazione di ricorrenza per il canale.
 
    ![immagine](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
    >[!NOTE]
-   >Puoi aggiungere più pianificazioni ricorrenti al tuo canale. La pianificazione della ricorrenza introduce la funzione DayParting, che consente di impostare una pianificazione globale con più canali in esecuzione in momenti specifici della giornata e di riutilizzare tale configurazione per tutti gli schermi contemporaneamente.
+   >Puoi aggiungere più pianificazioni ricorrenti al tuo canale. Le pianificazioni di ricorrenza introducono il DayParting, che consente di impostare una pianificazione globale con più canali in esecuzione in orari specifici del giorno e di riutilizzare quella configurazione per tutti i display contemporaneamente.
 
    È possibile impostare le seguenti opzioni:
 
    * **Nome**: titolo dello Schedule ricorrente.
    * **Ripeti**: scegli se la pianificazione viene eseguita su base giornaliera, settimanale, mensile o annuale.
    * **Inizio**: ora di inizio della pianificazione.
-   * **Fine**: ora di fine della pianificazione. È possibile impostare l’IT in base all’ora o alla durata.
+   * **Fine**: ora di fine della pianificazione. Puoi impostarla in base all’ora o alla durata.
    * **Ora**: la pianificazione termina a un’ora specificata.
    * **Durata**: la pianificazione viene eseguita per una particolare durata di tempo in ore o minuti.
 
-1. Fai clic su **Crea** e ora vedrete che a quel display è assegnato un canale, come mostrato nella figura seguente.
+1. Fai clic su **Crea**. Potete vedere che a quel display è assegnato un canale, come mostrato nella figura seguente.
 
    ![immagine](/help/screens-cloud/assets/display/assignchannel-3.png)
 

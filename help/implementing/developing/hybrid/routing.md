@@ -2,9 +2,9 @@
 title: Routing modello SPA
 description: Per le applicazioni a pagina singola nell’AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di instradamento, il contratto e le opzioni disponibili.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ L’app è proprietaria del routing e viene quindi implementata dagli sviluppato
 
 ## Architettura {#architecture}
 
-Per una descrizione dettagliata, fare riferimento al [PageModelManager](blueprint.md#pagemodelmanager) sezione del documento Blueprint dell’SPA.
+Per una descrizione dettagliata, vedi [PageModelManager](blueprint.md#pagemodelmanager) sezione del documento Blueprint dell’SPA.
 
 ## ModelRouter {#modelrouter}
 

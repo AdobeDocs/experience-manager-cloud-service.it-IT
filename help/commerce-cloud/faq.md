@@ -2,9 +2,9 @@
 title: Domande frequenti sull’integrazione AEM-Commerce tramite Commerce Integration Framework
 description: Domande frequenti sull’integrazione AEM-Commerce tramite Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '967'
 ht-degree: 29%
 
 ---
@@ -67,7 +67,7 @@ Consigliamo di gestire i dati e i contenuti di marketing in AEM. Decora i dati d
 
 ## 14. Come possiamo garantire la conformità PCI quando si utilizza AEM per l’intero livello di presentazione?
 
-Si consiglia di utilizzare metodi di pagamento astratti. Questo mette il client browser in comunicazione diretta con il provider del gateway dei pagamenti in modo che né l&#39;Adobe né le soluzioni commerce conservino o trasmettano i dati del titolare della carta. Questo approccio richiede solo una conformità PCI di livello 3. Tuttavia, ci sono altri aspetti da considerare per essere pienamente conformi allo standard PCI, come il modo in cui i dipendenti interagiscono con il sistema e i dati. Per ulteriori informazioni sulla conformità PCI di Adobe Commerce, fare riferimento a [Requisiti di conformità PCI](https://business.adobe.com/products/magento/pci-compliance.html).
+Si consiglia di utilizzare metodi di pagamento astratti. Questo mette il client browser in comunicazione diretta con il provider del gateway dei pagamenti in modo che né l&#39;Adobe né le soluzioni commerce conservino o trasmettano i dati del titolare della carta. Questo approccio richiede solo una conformità PCI di livello 3. Tuttavia, ci sono altri aspetti da considerare per essere pienamente conformi allo standard PCI, come il modo in cui i dipendenti interagiscono con il sistema e i dati. Per ulteriori informazioni sulla conformità PCI di Adobe Commerce, consulta [Requisiti di conformità PCI](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## 15. Se utilizzo le versioni cloud AEM e Adobe Commerce, questa soluzione congiunta è compatibile con PCI?
 

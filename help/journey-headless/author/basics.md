@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 91%
+source-wordcount: '1712'
+ht-degree: 85%
 
 ---
 
@@ -121,7 +121,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Authoring dei frammenti di contenuto {#authoring-content-fragments}
 
-Questa è stata una rapida introduzione all’interfaccia utente AEM, ma dovresti aver avuto l’occasione di provarla. Ora passiamo a quello che ti interessa di più: frammenti di contenuto per headless.
+Quindi, questa è stata una rapida introduzione all&#39;Interfaccia Utente (UI) dell&#39;AEM, ma si spera di avere avuto la possibilità di provarlo. Ora passiamo a quello che ti interessa di più: frammenti di contenuto per headless.
 
 Dovremo passare dall’inizio alla fine delle operazioni, ma l’istanza potrebbe avere già cartelle e/o frammenti creati, che potrebbero trovarsi in posizioni diverse. I principi sono gli stessi.
 
@@ -203,7 +203,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 È possibile aprire un frammento subito dopo averlo creato, oppure selezionandolo dalla console Frammenti di contenuto (anche dalla console Risorse).
 
-Quando l’editor si apre per la prima volta, vedrai:
+La prima volta che l’editor viene aperto, viene visualizzato quanto segue:
 
 * Un elenco di icone a sinistra permette di accedere a varie aree di funzionalità. L’editor si apre nella scheda **Variazioni**, in questo punto avviene la maggior parte delle modifiche. Potresti anche essere interessato alle schede **Annotazioni** e **Metadati**.
 
@@ -213,7 +213,7 @@ Quando l’editor si apre per la prima volta, vedrai:
 
 Come esempi:
 
-* Frammento che richiede solo più informazioni, alcune con un tipo specifico. Come scoprirai andando avanti nel tuo percorso, i riferimenti sono fondamentali per i contenuti headless.
+* Frammento che richiede solo più informazioni, alcune con un tipo specifico. Per i contenuti headless, i riferimenti sono fondamentali; informazioni su questi sono disponibili più avanti nel percorso.
 
   ![Editor frammento di contenuto - Frammento personale](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -233,9 +233,9 @@ Conferma gli aggiornamenti con **Salva** o **Salva e chiudi**.
 >
 >Per ulteriori informazioni, consulta Varianti - Authoring di frammenti di contenuto.
 
-#### Quello di cui (probabilmente) non devi preoccuparti {#what-you-probably-do-not-need-to-worry-about}
+#### Di cosa non deve (probabilmente) preoccuparsi {#what-you-probably-do-not-need-to-worry-about}
 
-OK, questa potrebbe sembrare una sezione leggermente ambigua, ma una volta aperto l’Editor frammento di contenuto e iniziato ad esplorarlo, vedrai diverse opzioni che (probabilmente) non si adattano al tuo percorso headless come Autore di contenuto. Questo è solo un rapido resoconto di ciò che dovresti essere in grado di ignorare nel contesto headless:
+Questa sezione potrebbe sembrare un po’ strana, ma dopo aver aperto l’Editor frammento di contenuto e aver iniziato a esplorare puoi vedere diverse opzioni che (probabilmente) non si applicano al percorso headless come autore di contenuti. Questo è solo un rapido resoconto di ciò che dovresti essere in grado di ignorare nel contesto headless:
 
 * **Modelli per frammenti di contenuto**
 
@@ -258,7 +258,7 @@ I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di con
 
 * **Aggiorna i riferimenti di pagina**
 
-  Questa azione è disponibile nel menu a discesa **...** (puntini di sospensione). Non è interessante per gli autori headless in quanto si riferisce all’authoring delle pagine.
+  Questa azione è disponibile dal **...** (puntini di sospensione). Non è interessante per gli autori headless in quanto si riferisce all’authoring delle pagine.
 
 ### Pubblicazione {#publishing}
 

@@ -2,10 +2,10 @@
 title: Come pubblicare con la tua applicazione headless
 description: In questa parte del Percorso per sviluppatori AEM Headless, scopri come distribuire un’applicazione headless in tempo reale prendendo il codice locale nel Git e spostandolo nel Git di Cloud Manager per la pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 94%
+source-wordcount: '1066'
+ht-degree: 93%
 
 ---
 
@@ -124,7 +124,7 @@ Hai già lanciato il tuo primo progetto AEM Headless oppure possiedi ormai tutte
 
 ### Esplora le applicazioni a pagina singola {#explore-spa}
 
-I negozi headless in AEM possono anche non fermarsi qui, però. Potresti ricordare che nella [Guida introduttiva al percorso](getting-started.md#integration-levels) abbiamo discusso brevemente come AEM supporta non solo la distribuzione headless e i modelli tradizionali full-stack, ma anche i modelli ibridi che combinano i vantaggi di entrambi.
+I negozi headless in AEM non hanno bisogno di fermarsi qui, però. Potresti ricordare che nella [Guida introduttiva al percorso](getting-started.md#integration-levels) abbiamo discusso brevemente come AEM supporta non solo la distribuzione headless e i modelli tradizionali full-stack, ma anche i modelli ibridi che combinano i vantaggi di entrambi.
 
 Se questo tipo di flessibilità è un elemento necessario per il tuo progetto, continua con l’ulteriore parte opzionale del percorso, [Come creare applicazioni a pagina singola (SPA) con AEM.](create-spa.md)
 

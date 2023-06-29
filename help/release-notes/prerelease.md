@@ -2,10 +2,10 @@
 title: Canale prerelease Adobe Experience Manager as a Cloud Service
 description: Scopri come utilizzare il canale prerelease per ottenere un’anteprima delle prossime funzionalità su AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 91%
+source-wordcount: '1304'
+ht-degree: 85%
 
 ---
 
@@ -18,9 +18,9 @@ Scopri come utilizzare il canale prerelease per ottenere un’anteprima delle pr
 
 Adobe Experience Manager as a Cloud Service offre nuove funzionalità su cadenza mensile, secondo la [road map di versioni di Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it#aem-as-cloud-service)
 
-Per acquisire familiarità con le funzioni pianificate per la pubblicazione della seguente versione, puoi abbonarti al canale prerelease, accessibile configurando gli ambienti di sviluppo o qualsiasi ambiente sandbox. Puoi visualizzare in anteprima le modifiche accessibili tramite l’interfaccia utente AEM e generare il codice rispetto a qualsiasi nuova API prerelease.
+Per acquisire familiarità con le funzioni pianificate per la pubblicazione della seguente versione, puoi abbonarti al canale prerelease, accessibile configurando gli ambienti di sviluppo o qualsiasi ambiente sandbox. Puoi visualizzare in anteprima le modifiche accessibili tramite l’interfaccia utente dell’AEM e generare il codice rispetto a qualsiasi nuova API prerelease.
 
-L’elenco delle funzioni prerelease per una data funzione è pubblicato all’interno di [note sulla versione.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+L’elenco delle funzioni prerelease per una data funzione è pubblicato all’interno di [note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Versioni di AEM as a Cloud Service {#releases}
 
@@ -33,11 +33,11 @@ Questo modello garantisce versioni continue senza interruzioni del servizio.
 
 Il canale preliminare consente di visualizzare in anteprima le funzioni pianificate per il prossimo rilascio di funzioni, in modo da poter valutare le funzionalità future e pianificare la loro possibile implementazione per i tuoi progetti. Ti consente di pianificare in anticipo il prossimo rilascio di funzioni.
 
-Ad esempio, se è maggio e sei abbonato al canale prerelease, puoi valutare le funzioni della prossima versione di giugno.
+Ad esempio, se è maggio e sei abbonato al canale prerelease, puoi valutare le funzioni nella prossima versione di giugno.
 
 ![Grafico a cadenza prerelease](assets/prerelease-cadence.png)
 
-Prerelease offre una finestra di un mese sulle prossime funzionalità di AEMaaCS, che ti offre il tempo di valutare l’impatto di eventuali nuove funzioni sui tuoi progetti e personalizzazioni, oltre a pianificare l’implementazione di tali funzioni, test e formazione per gli utenti.
+La versione prerelease offre una finestra continua di un mese sulle prossime funzioni di AEMaaCS, consentendoti di valutare l’impatto di eventuali nuove funzioni sui progetti e sulle personalizzazioni e pianificare il rollout di tali funzioni, nonché di eseguire test e corsi di formazione per gli utenti.
 
 Sfruttare efficacemente il canale prerelease richiede quattro passaggi.
 
@@ -122,7 +122,7 @@ Puoi visualizzare le nuove funzioni nella console Sites nell’SDK Quickstart lo
 
 #### Avviare l’SDK di Quickstart in modalità prerelease {#prerelease-mode}
 
-1. Scarica l’SDK dal portale di distribuzione del software e installalo come descritto in [Accesso a SDK AEM as a Cloud Service.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+1. Scarica l’SDK dal portale di distribuzione del software e installalo come descritto in [Accesso a SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 1. Quando avvii l’SDK Quickstart, includi l’argomento `-r prerelease`.
 
 Il valore è permanente quindi può essere selezionato solo al primo avvio. Reinstalla l’SDK per modificare l’opzione della riga di comando.

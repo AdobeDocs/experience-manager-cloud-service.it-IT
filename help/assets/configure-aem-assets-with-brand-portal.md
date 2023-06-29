@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2527'
 ht-degree: 13%
 
 ---
@@ -191,7 +191,7 @@ Insieme al flusso di lavoro di automazione per attivare Brand Portal su Experien
 
 La sezione seguente descrive come configurare manualmente Experience Manager Assets as a [!DNL Cloud Service] con Brand Portal utilizzando la console Adobe Developer.
 
-In precedenza, Experience Manager Assets as a [!DNL Cloud Service] è stato configurato manualmente con Brand Portal tramite la console Adobe Developer, che fornisce un token di account Adobe Identity Management Services (IMS) per l’autorizzazione del tenant Brand Portal. Richiede configurazioni sia in Experience Manager Assets che nella console Adobe Developer.
+In precedenza, Experience Manager Assets as a [!DNL Cloud Service] è stato configurato manualmente con Brand Portal tramite la console Adobe Developer, che fornisce un token di account Adobe Identity Management Services (IMS) per l’autorizzazione del tenant Brand Portal. Richiede configurazioni sia nella console Experience Manager Assets che in quella Adobe Developer.
 
 1. In Experience Manager Assets, crea un account IMS e genera una chiave pubblica (certificato).
 1. Nella console Adobe Developer, crea un progetto per il tenant Brand Portal (organizzazione).

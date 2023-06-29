@@ -2,9 +2,9 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con la navigazione in AEM e il suo utilizzo di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2986'
+source-wordcount: '2978'
 ht-degree: 69%
 
 ---
@@ -42,7 +42,7 @@ Se non visualizzi tutte le diapositive o non selezioni l’opzione **Non mostrar
 
 ## Navigazione globale {#global-navigation}
 
-Puoi spostarti tra le diverse console utilizzando il pannello di navigazione globale. Viene attivato come menu a discesa a schermo intero quando tocchi o fai clic sul collegamento Adobe Experience Manager in alto a sinistra dello schermo.
+Puoi spostarti tra le diverse console utilizzando il pannello di navigazione globale. Viene attivato come elenco a discesa a schermo intero quando tocchi o fai clic sul collegamento Adobe Experience Manager in alto a sinistra dello schermo.
 
 Per chiudere il pannello di navigazione globale e tornare alla posizione precedente, tocca o fai clic su **Chiudi**.
 
@@ -71,7 +71,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
 | Sites | Le console Sites ti permettono di [creare, visualizzare e gestire siti web](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) in esecuzione sull’istanza AEM. Da questa console puoi creare, modificare, copiare, spostare ed eliminare pagine di siti web, avviare flussi di lavoro e pubblicare pagine. |
 | Frammenti esperienza | Un [frammento di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse. |
 | Assets | La console Assets consente di importare e gestire le [risorse digitali quali immagini, video, documenti e file audio](/help/assets/overview.md). Puoi usare queste risorse da qualunque sito web in esecuzione nell’istanza di AEM. Puoi anche creare e gestire [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) dalla console Assets. |
-| Personalizzazione | Questa console fornisce un set di strumenti per la [creazione e modifica di contenuti mirati e la presentazione di esperienze personali.](/help/sites-cloud/authoring/personalization/overview.md) |
+| Personalizzazione | Questa console fornisce un set di strumenti per la [creazione e modifica di contenuti mirati e la presentazione di esperienze personali](/help/sites-cloud/authoring/personalization/overview.md). |
 | Frammenti di contenuto | I [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Consentono di preparare contenuti strutturati pronti per l’uso in più posizioni/su più canali, ideali sia per l’authoring delle pagine che per la distribuzione headless. |
 
 ## Pannello Strumenti {#tools-panel}
@@ -216,7 +216,7 @@ L’azione disponibile nella barra degli strumenti varia per riflettere le azion
 
 La modalità di [selezione di una risorsa](#viewing-and-selecting-resources) dipende dalla vista.
 
-A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso compaiono altre opzioni. Tocca o fai clic sui tre puntini (**...**) per aprire un selettore a discesa contenente tutte le azioni che non rientrano nella barra. Ad esempio, dopo la selezione di una pagina nella console **Sites**:
+A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso compaiono altre opzioni. Tocca o fai clic sui puntini di sospensione (i tre punti o **...**) apre un selettore a discesa contenente tutte le azioni rimanenti. Ad esempio, dopo la selezione di una pagina nella console **Sites**:
 
 ![Opzioni aggiuntive](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -226,7 +226,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 
 ## Azioni rapide  {#quick-actions}
 
-In entrata [Vista a schede](#card-view) alcune azioni sono disponibili come icone di azione rapida e sono disponibili nella barra degli strumenti. Le icone di azione rapida sono disponibili per un singolo elemento alla volta ed eliminano la necessità di preselezionare.
+In entrata [Vista a schede](#card-view) alcune azioni sono disponibili come icone di azione rapida e sono nella barra degli strumenti. Le icone di azione rapida sono disponibili per un singolo elemento alla volta ed eliminano la necessità di preselezionare.
 
 La azioni rapide sono visibili con un tocco prolungato (su dispositivo touch) sulla scheda di una risorsa. Le azioni rapide disponibili possono dipendere dalla console e dal contesto. Ad esempio, ecco le azioni rapide per una pagina nella **Sites** console:
 
@@ -402,7 +402,7 @@ Se selezioni solo il contenuto, appare solo l’icona della barra. Quando selezi
 
 La struttura del contenuto può essere utilizzata per spostarsi rapidamente nella gerarchia del sito all’interno del pannello laterale e visualizzare molte informazioni sulle pagine della cartella corrente.
 
-Utilizzando il pannello laterale della struttura del contenuto insieme a una vista a elenco o a schede, gli utenti possono facilmente vedere la struttura gerarchica del progetto e spostarsi facilmente all’interno della struttura del contenuto con il pannello laterale della struttura del contenuto, nonché visualizzare informazioni di pagina dettagliate nella vista a elenco.
+Utilizzando il pannello laterale della struttura del contenuto insieme a una vista a elenco o a schede, gli utenti possono facilmente vedere la struttura gerarchica del progetto e spostarsi facilmente all’interno della struttura del contenuto con il pannello laterale della struttura del contenuto, e visualizzare informazioni di pagina dettagliate nella vista a elenco.
 
 ![Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree.png)
 
@@ -410,7 +410,7 @@ Utilizzando il pannello laterale della struttura del contenuto insieme a una vis
 >
 >Una volta selezionata una voce nella vista gerarchia, è possibile utilizzare i tasti freccia per spostarsi rapidamente nella gerarchia.
 >
->Consulta la sezione [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) per ulteriori informazioni.
+>Consulta [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) per ulteriori informazioni.
 
 ### Timeline  {#timeline}
 
@@ -460,15 +460,15 @@ Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**
 
 ### Sito {#site}
 
-**Sito** mostra i dettagli dei siti [creati utilizzando un modello del sito.](/help/sites-cloud/administering/site-creation/create-site.md)
+**Sito** mostra i dettagli dei siti [creati utilizzando un modello del sito](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Barra del sito](../assets/site-rail.png)
 
-Vedi il documento [Utilizzo della barra del sito per gestire il tema del sito](/help/sites-cloud/administering/site-creation/site-rail.md) per ulteriori dettagli su come utilizzare la barra per gestire il [tema del sito.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Vedi il documento [Utilizzo della barra del sito per gestire il tema del sito](/help/sites-cloud/administering/site-creation/site-rail.md) per ulteriori dettagli su come utilizzare la barra per gestire il [tema del sito](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 >[!TIP]
 >
->Una descrizione end-to-end del processo di creazione di un nuovo sito da un modello e personalizzazione del relativo tema si trova in [Percorso di Creazione Rapida dei Siti.](/help/journey-sites/quick-site/overview.md)
+>Una descrizione end-to-end del processo di creazione di un nuovo sito da un modello e personalizzazione del relativo tema si trova in [Percorso di Creazione Rapida dei Siti](/help/journey-sites/quick-site/overview.md).
 
 ### Filtro {#filter}
 

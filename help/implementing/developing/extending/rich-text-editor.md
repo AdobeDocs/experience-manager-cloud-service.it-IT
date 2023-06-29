@@ -3,9 +3,9 @@ title: Configurare l’Editor Rich Text per l’authoring dei contenuti in [!DNL
 description: Configurare l’Editor Rich Text per l’authoring dei contenuti in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1875'
+source-wordcount: '1876'
 ht-degree: 0%
 
 ---
@@ -223,7 +223,7 @@ Gli amministratori possono controllare le opzioni dell’editor Rich Text utiliz
 Le opzioni disponibili nell’editor Rich Text scorrono a valle dalle configurazioni dell’interfaccia utente ai criteri dei contenuti.
 
 * Le impostazioni di configurazione dell’interfaccia utente definiscono le opzioni disponibili per i criteri dei contenuti.
-* Se la configurazione dell&#39;interfaccia utente dell&#39;editor Rich Text è stata rimossa o non è stata abilitata per un elemento, il criterio del contenuto non è in grado di configurarlo.
+* Se la configurazione dell&#39;interfaccia utente dell&#39;editor Rich Text è stata rimossa o non consente un elemento, il criterio del contenuto non è in grado di configurarlo.
 * Un autore ha accesso solo alle funzionalità rese disponibili dalle configurazioni dell’interfaccia utente e dai criteri dei contenuti.
 
 Ad esempio, è possibile visualizzare [Documentazione dei componenti core testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).

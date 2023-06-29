@@ -2,10 +2,10 @@
 title: Layout reattivo
 description: AEM consente di realizzare un layout dinamico per le pagine
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 59%
+source-wordcount: '1748'
+ht-degree: 57%
 
 ---
 
@@ -18,7 +18,7 @@ Questo fornisce un sistema paragrafo che consente di posizionare i componenti al
 Il contenitore layout:
 
 * Consente di eseguire lo snap orizzontale alla griglia, oltre alla possibilità di posizionare i componenti affiancati nella griglia e di definire quando devono essere compressi o ridisposti.
-* Utilizza punti di interruzione predefiniti (ad esempio per telefoni, tablet ecc.) per consentirti di definire il comportamento richiesto dei contenuti per i dispositivi o gli orientamenti correlati.
+* Utilizza punti di interruzione predefiniti (ad esempio, per telefono, tablet e così via) per consentire di definire il comportamento richiesto dei contenuti per i dispositivi e l’orientamento correlati.
    * Ad esempio, puoi personalizzare la dimensione del componente o specificare se può essere visualizzato su dispositivi specifici.
 * Può essere nidificato per consentire il controllo delle colonne.
 
@@ -68,7 +68,7 @@ AEM consente di definire layout dipendenti dalla larghezza del dispositivo:
    * La portata di un punto di interruzione si estende a sinistra fino al punto di interruzione successivo.
    * Non è possibile selezionare specificatamente un punto di interruzione: la selezione di un dispositivo e di un orientamento comporterà la selezione automatica del punto di interruzione adeguato.
 
-Il dispositivo **Desktop** è privo di una larghezza specifica e fa riferimento al punto di interruzione predefinito (ovvero tutto quanto si trova oltre l’ultimo punto di interruzione configurato).
+Il dispositivo **Desktop**, che non dispone di una larghezza specifica, fa riferimento al punto di interruzione predefinito, ovvero tutto ciò che si trova al di sopra dell’ultimo punto di interruzione configurato.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ La modalità **Layout** può essere avviata in due modi.
 * Utilizzando il menu [modalità nella barra degli strumenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) e selezionando la modalità **Layout**
    * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Impostazione destinazione**.
    * La modalità **Layout** rimane persistente; si esce dalla modalità **Layout** solo quando si seleziona un’altra modalità mediante il selettore di modalità.
-* Quando [modifica di un singolo componente.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+* Quando [modifica di un singolo componente](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
    * Utilizzando il **Layout** nel menu azione rapida del componente, puoi passare a **Layout** modalità.
    * **Layout** la modalità persiste durante la modifica del componente e ritorna a **Modifica** una volta che lo stato attivo cambia su un altro componente.
 

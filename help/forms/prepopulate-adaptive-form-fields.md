@@ -6,7 +6,7 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Struttura dei dati preriempimento {#the-prefill-structure}
 
-Un modulo adattivo può contenere una combinazione di campi associati e non associati. I campi associati sono campi trascinati dalla scheda Content Finder e che contengono elementi non vuoti `bindRef` valore della proprietà nella finestra di dialogo di modifica del campo. I campi non associati vengono trascinati direttamente dal browser componenti della barra laterale e hanno un `bindRef` valore.
+Un modulo adattivo può contenere una combinazione di campi associati e non associati. I campi associati sono campi trascinati dalla scheda Content Finder e che contengono elementi non vuoti `bindRef` valore della proprietà nella finestra di dialogo di modifica del campo. I campi non associati vengono trascinati direttamente dal browser dei componenti del Sidekick e hanno un `bindRef` valore.
 
 È possibile precompilare sia i campi associati che quelli non associati di un modulo adattivo. I dati di precompilazione contengono le sezioni afBoundData e afUnBoundData per precompilare sia i campi associati che quelli non associati di un modulo adattivo. Il `afBoundData` contiene i dati di precompilazione per i campi e i pannelli associati. Questi dati devono essere conformi allo schema del modello di modulo associato:
 
@@ -200,6 +200,7 @@ Di seguito è riportato un esempio senza `afData/afBoundData` wrapper:
 >[!NOTE]
 >
 > L’utilizzo di campi non associati nei pannelli associati (pannelli con bindRef non vuoto creati trascinando componenti dalla barra laterale o dalla scheda Origini dati) è **non** consigliato in quanto potrebbe causare la perdita di dati dei campi non associati. Si consiglia di avere nomi di campo univoci nel modulo, in particolare per i campi non associati.
+>
 
 ### Modulo adattivo senza modello di modulo {#adaptive-form-with-no-form-model}
 
@@ -247,7 +248,6 @@ Per impostare i valori di una configurazione: [Generare configurazioni OSGi util
 > - Per impostazione predefinita, la precompilazione è consentita tramite file crx per tutti i tipi di Forms adattivo (XSD, XDP, JSON, FDM e non basati su modello modulo). La precompilazione è consentita solo con file JSON e XML.
 > - Il protocollo crx si occupa della sicurezza dei dati precompilati ed è quindi consentito per impostazione predefinita. La precompilazione tramite altri protocolli utilizzando regex generico potrebbe causare vulnerabilità. Nella configurazione, specifica una configurazione URL sicura per proteggere i dati.
 
-
 ## Il curioso caso dei pannelli ripetibili {#the-curious-case-of-repeatable-panels}
 
 In genere, i campi associati (schema modulo) e non associati vengono creati nello stesso modulo adattivo, ma di seguito sono riportate alcune eccezioni nel caso in cui i campi associati siano ripetibili:
@@ -292,7 +292,7 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-- SERVICE_NAME fa riferimento al nome del servizio di precompilazione OSGI. Fai riferimento a [Creare ed eseguire un servizio di precompilazione](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- SERVICE_NAME fa riferimento al nome del servizio di precompilazione OSGI. Consulta [Creare ed eseguire un servizio di precompilazione](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
 - IDENTIFIER rimanda a tutti i metadati richiesti dal servizio di precompilazione OSGI per recuperare i dati di precompilazione. Un identificatore dell’utente connesso è un esempio di metadati che potrebbe essere utilizzato.
 
 >[!NOTE]

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2646'
 ht-degree: 24%
@@ -191,7 +191,7 @@ Quando esegui un flusso di lavoro di traduzione per aggiornare una copia per lin
 
 1. Passa alla console Risorse e apri la pagina Proprietà di ciascuna delle risorse tradotte per visualizzare i metadati tradotti.
 
-<!-- TBD: Possibly this blog wasn't migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+<!-- TBD: Possibly this blog was not migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
 
 For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
 -->
@@ -264,9 +264,9 @@ L’applicazione dei servizi cloud di traduzione direttamente nella cartella del
 
 ### Applica connettore di traduzione personalizzato {#applying-custom-translation-connector}
 
-Se vuoi applicare un connettore personalizzato per i servizi di traduzione che desideri utilizzare nei flussi di lavoro di traduzione, attieniti alla seguente procedura. Per applicare un connettore personalizzato, installalo da [Gestione pacchetti.](/help/implementing/developing/tools/package-manager.md) Quindi, configura il connettore dalla console Cloud Services. Dopo aver configurato il connettore, questo è disponibile nell’elenco dei connettori nella scheda Cloud Services descritta in [Applicazione dei servizi di traduzione](#applying-the-translation-services). Dopo aver applicato il connettore personalizzato e aver eseguito i flussi di lavoro di traduzione, nella sezione **[!UICONTROL Riepilogo di traduzione]** del progetto di traduzione vengono visualizzati i dettagli del connettore, rispettivamente sotto le head **[!UICONTROL Provider]** e **[!UICONTROL Metodo]**.
+Se vuoi applicare un connettore personalizzato per i servizi di traduzione che desideri utilizzare nei flussi di lavoro di traduzione, attieniti alla seguente procedura. Per applicare un connettore personalizzato, installalo da [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md). Quindi, configura il connettore dalla console Cloud Services. Dopo aver configurato il connettore, questo è disponibile nell’elenco dei connettori nella scheda Cloud Services descritta in [Applicazione dei servizi di traduzione](#applying-the-translation-services). Dopo aver applicato il connettore personalizzato e aver eseguito i flussi di lavoro di traduzione, nella sezione **[!UICONTROL Riepilogo di traduzione]** del progetto di traduzione vengono visualizzati i dettagli del connettore, rispettivamente sotto le head **[!UICONTROL Provider]** e **[!UICONTROL Metodo]**.
 
-1. Installare il connettore da [Gestione pacchetti.](/help/implementing/developing/tools/package-manager.md)
+1. Installare il connettore da [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md).
 1. Tocca o fai clic sul logo dell’Experience Manager, quindi passa a **[!UICONTROL Strumenti > Implementazione > Cloud Services]**.
 1. Nella pagina **[!UICONTROL Cloud Services]**, individua il connettore installato in **[!UICONTROL Servizi di terze parti]**.
 

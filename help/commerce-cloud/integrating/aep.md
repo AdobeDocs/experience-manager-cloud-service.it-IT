@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -28,9 +28,9 @@ Ulteriori informazioni su [Raccolta dati di Experience Platform](https://experie
 
 ## Invia `addToCart` dati evento da Experience Platform {#send-addtocart-to-aep}
 
-I passaggi seguenti mostrano come inviare `addToCart` dati dell’evento dalle pagine dei prodotti sottoposte a rendering AEM all’Experience Platform utilizzando il connettore CIF - Experience Platform. Utilizzando l’estensione del browser Adobe Experience Platform Debugger, puoi testare e rivedere i dati inviati.
+I passaggi seguenti mostrano come inviare `addToCart` dati dell’evento dalle pagine dei prodotti sottoposte a rendering AEM all’Experience Platform utilizzando il connettore CIF - Experience Platform. Utilizzando l’estensione del browser Adobe Experience Platform Debugger, puoi verificare e rivedere i dati inviati.
 
-![Rivedere i dati dell’evento addToCart in Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
+![Rivedi i dati dell’evento addToCart in Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
 
 ## Prerequisiti {#prerequisites}
 
@@ -382,7 +382,7 @@ Per memorizzare i dati dell’evento, è necessario creare un set di dati confor
 
 - Nella nuova pagina, __cerca e seleziona__ dello schema creato nel passaggio precedente, quindi fare clic sul pulsante __Successivo__ pulsante.
 
-   ![Crea schema set di dati per selezione AEP](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+  ![Crea schema set di dati per selezione AEP](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
 1. Denomina il set di dati utilizzando __Configura set di dati > Nome__ e fare clic sul pulsante __Fine__ pulsante.
 

@@ -2,16 +2,16 @@
 title: Modifica dei programmi
 description: Scopri come modificare i programmi sandbox e di produzione per apportare modifiche alle opzioni dopo averli creati.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 94%
+source-wordcount: '520'
+ht-degree: 88%
 
 ---
 
 # Modifica dei programmi {#editing-programs}
 
-Gli utenti con le autorizzazioni necessarie possono modificare i [programmi di produzione](creating-production-programs.md) e i [programmi sandbox creati nell’organizzazione.](creating-sandbox-programs.md) Modificando un programma è possibile:
+Gli utenti con le autorizzazioni necessarie possono modificare [programmi di produzione creati nell’organizzazione](creating-production-programs.md) e [programmi sandbox creati nell’organizzazione.](creating-sandbox-programs.md) Modificando un programma è possibile:
 
 * Aggiungere la soluzione Sites a un programma esistente con Assets e viceversa.
 * Rimuovere Sites o Assets da un programma esistente con entrambi Sites e Assets.
@@ -63,7 +63,7 @@ Se nel programma di produzione è stata abilitata la protezione avanzata, verrà
 
 ![Protezione avanzata attiva per un programma](assets/edit-program-enhanced.png)
 
-Questa impostazione non può essere modificata dopo la creazione del programma. Per ulteriori informazioni sull’opzione di protezione avanzata, consulta il documento [Creazione di programmi di produzione](creating-production-programs.md).
+Questa impostazione non può essere modificata dopo la creazione del programma. Per ulteriori informazioni sull&#39;opzione di protezione avanzata, vedere [Creazione di programmi di produzione](creating-production-programs.md) documento.
 
 ## Eliminazione dei programmi sandbox {#delete-sandbox-program}
 

@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1022'
 ht-degree: 25%
 
 ---
@@ -34,7 +34,7 @@ Segui le sezioni riportate di seguito per utilizzare l’interfaccia utente self
 
 Per impostazione predefinita, per una configurazione CDN gestita dall’AEM tutto il traffico pubblico può indirizzarsi al servizio di pubblicazione, sia per gli ambienti di produzione che per quelli non di produzione (sviluppo e stage). Puoi limitare il traffico verso il servizio di pubblicazione per un dato ambiente (ad esempio, limitando la gestione temporanea da un intervallo di indirizzi IP) tramite l’interfaccia utente di Cloud Manager.
 
-Per ulteriori informazioni, consulta [Gestione degli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Consulta [Gestione degli Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) per ulteriori informazioni.
 
 >[!CAUTION]
 >

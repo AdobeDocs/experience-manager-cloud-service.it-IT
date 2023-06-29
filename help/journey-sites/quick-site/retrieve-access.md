@@ -2,10 +2,10 @@
 title: Recuperare le informazioni di accesso all’archivio Git
 description: Scopri in che modo lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell’archivio Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 100%
+source-wordcount: '891'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Scopri in che modo lo sviluppatore front-end utilizza Cloud Manager per accedere
 
 Se sei uno sviluppatore front-end responsabile solo della personalizzazione del tema del sito, puoi anche non sapere come è stato impostato AEM e passare alla sezione [Obiettivo](#objective) di questo documento.
 
-Se hai anche il ruolo di amministratore di Cloud Manager o AEM oltre a sviluppatore front-end, hai appreso nel documento precedente del percorso di creazione rapida siti AEM, [Concedere l’accesso allo sviluppatore front-end,](grant-access.md) come integrare lo sviluppatore front-end in modo che abbia accesso all’archivio Git e ora dovresti essere a conoscenza di:
+Se hai anche il ruolo di amministratore di Cloud Manager o AEM e sviluppatore front-end, hai appreso nel documento precedente del percorso di Creazione Rapida dei Siti AEM, [Concedere l’accesso allo sviluppatore front-end,](grant-access.md) come integrare lo sviluppatore front-end in modo che possa accedere all’archivio git e ora dovresti essere a conoscenza di:
 
 * Come aggiungere uno sviluppatore front-end come utente.
 * Come assegnare i ruoli richiesti allo sviluppatore front-end.
@@ -52,7 +52,7 @@ Lo strumento Creazione rapida del sito consente agli sviluppatori front-end di l
 
 Se manca qualcuno di questi elementi, contatta l’amministratore AEM o l’amministratore di Cloud Manager.
 
-Si presume che lo sviluppatore front-end abbia un’ampia esperienza con i flussi di lavoro di sviluppo front-end e con gli strumenti comuni installati, tra cui:
+Si presume che lo sviluppatore front-end abbia un’ampia esperienza con i flussi di lavoro di sviluppo front-end e gli strumenti comuni installati, tra cui:
 
 * Git
 * npm

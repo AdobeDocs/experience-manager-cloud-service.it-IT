@@ -4,10 +4,10 @@ description: Scopri come le varianti consentono di creare contenuti per il framm
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2469'
-ht-degree: 86%
+source-wordcount: '2463'
+ht-degree: 83%
 
 ---
 
@@ -90,7 +90,7 @@ L’editor di testo a schermo intero fornisce:
 
 ### Azioni {#actions}
 
-Qquando l’editor a schermo intero (ad esempio testo su più righe) è aperto, sono disponibili anche le seguenti azioni (per tutti i [formati](#formats)):
+Sono inoltre disponibili le seguenti azioni (per tutte le [formati](#formats)) quando l’editor a schermo intero (ovvero il testo su più righe) è aperto:
 
 * Selezionare il [formato](#formats) ([Testo formattato](#rich-text), [Testo normale,](#plain-text) [Markdown](#markdown))
 
@@ -197,8 +197,8 @@ Per creare un nuovo frammento, segui questi passaggi:
 1. Specifica le proprietà; per esempio **Titolo**.
 1. Seleziona **Crea**.
 1. Infine:
-   1. Seleziona **Fine** per tornare al frammento originale eimpostare il riferimento al nuovo frammento.
-   1. Seleziona **Apri** per fare riferimento al nuovo frammento e aprirlo per poterlo modificare in una nuova scheda del browser.
+   1. **Fine** ritorna al frammento originale e fa riferimento al nuovo frammento.
+   1. **Apri** fa riferimento al nuovo frammento e apre il nuovo frammento, per la modifica, in una nuova scheda del browser.
 
 ### Visualizzazione delle statistiche chiave {#viewing-key-statistics}
 
@@ -438,7 +438,7 @@ Per modificare il nome di una variante esistente:
 
 1. Apri il frammento e seleziona **Varianti** nel pannello laterale.
 1. Seleziona la variante desiderata.
-1. Seleziona **Rinomina** dal menu a discesa **Azioni**.
+1. Seleziona **Rinomina** dal **Azioni** a discesa.
 
 1. Nella finestra di dialogo che si apre, immetti il nuovo **Titolo** e/o la nuova **Descrizione**.
 
@@ -454,7 +454,7 @@ Per eliminare una variante esistente:
 
 1. Apri il frammento e seleziona **Varianti** nel pannello laterale.
 1. Seleziona la variante desiderata.
-1. Seleziona **Elimina** dal menu a discesa **Azioni**.
+1. Seleziona **Elimina** dal **Azioni** a discesa.
 
 1. Nella finestra di dialogo che si apre, conferma l’azione **Elimina**.
 
@@ -482,7 +482,7 @@ Il trasferimento delle modifiche *da una variante all’elemento **Principale***
 
 1. Seleziona una variante specifica, quindi seleziona l’azione di sincronizzazione appropriata da una delle seguenti aree:
 
-   * Selettore a discesa **Azioni**: **Sincronizza elemento corrente con elemento principale**
+   * il **Azioni** selettore a discesa - **Sincronizza elemento corrente con elemento principale**
 
      ![sincronizzazione con elemento principale](assets/cfm-variations-11a.png)
 

@@ -2,9 +2,9 @@
 title: Esperienza unificata per gli strumenti di refactoring del codice
 description: Esperienza unificata per gli strumenti di refactoring del codice
 exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Il `aio-cli-plugin-aem-cloud-service-migration` Il plug-in è costituito da due 
 
 * **Suite di strumenti di refactoring del codice sottostante**
 
-   Gli strumenti di refactoring del codice eseguono le loro funzionalità tramite:
+  Gli strumenti di refactoring del codice eseguono le loro funzionalità tramite:
 
    * Scansione della rispettiva sezione del codice del cliente e manipolazione del codice (in base all’implementazione del codice per le best practice) per produrre l’output che può quindi essere convalidato e distribuito.
 
@@ -42,7 +42,7 @@ Il `aio-cli-plugin-aem-cloud-service-migration` Il plug-in è costituito da due 
 
 ## Disponibilità {#availability}
 
-Fai riferimento a [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) per informazioni sull’utilizzo di e su come contribuire a questo codice del plug-in open source in GitHub.
+Consulta [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) per informazioni sull’utilizzo di e su come contribuire a questo codice del plug-in open source in GitHub.
 
 >[!NOTE]
 >Attualmente il plug-in è integrato con AEM Dispatcher Converter e Repository Modernizer.

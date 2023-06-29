@@ -2,10 +2,10 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Ricerca e indicizzazione dei contenuti
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 74%
+source-wordcount: '2427'
+ht-degree: 38%
 
 ---
 
@@ -17,31 +17,31 @@ Con AEM as a Cloud Service, Adobe si sta spostando da un modello AEM incentrato 
 
 Di seguito è riportato un elenco delle modifiche principali rispetto ad AEM 6.5 e versioni precedenti:
 
-1. Gli utenti non avranno più accesso al gestore degli indici di una singola istanza AEM per eseguire il debug, configurare o mantenere l’indicizzazione. Viene utilizzato solo per lo sviluppo locale e le distribuzioni on-premise.
-1. Gli utenti non cambieranno gli indici su una singola istanza AEM né dovranno più preoccuparsi dei controlli di coerenza o della reindicizzazione.
+1. Gli utenti non hanno più accesso al Gestore indice di una singola istanza AEM per eseguire il debug, configurare o mantenere l’indicizzazione. Viene utilizzato solo per lo sviluppo locale e le distribuzioni on-premise.
+1. Gli utenti non modificano gli indici su una singola istanza AEM e non devono più preoccuparsi dei controlli di coerenza o della reindicizzazione.
 1. In generale, le modifiche dell’indice vengono avviate prima di passare alla produzione per non aggirare i gateway di qualità nelle pipeline CI/CD di Cloud Manager e non influire sui KPI aziendali in produzione.
 1. Tutte le metriche correlate, comprese le prestazioni di ricerca in produzione, sono disponibili per i clienti in fase di runtime per fornire una visione olistica degli argomenti di ricerca e indicizzazione.
 1. I clienti possono impostare gli avvisi in base alle proprie esigenze.
-1. Gli SRE monitorano lo stato di integrità del sistema 24/7 e intraprendono le azioni necessarie il più presto possibile.
+1. Gli SRE monitorano lo stato di salute del sistema 24 ore su 24, 7 giorni su 7 e intervengono il prima possibile.
 1. La configurazione dell’indice viene modificata tramite le distribuzioni. Le modifiche alla definizione dell’indice sono configurate come altre modifiche al contenuto.
-1. Ad alto livello sull&#39;AEM as a Cloud Service, con l&#39;introduzione della [modello di distribuzione continua](#index-management-using-rolling-deployments) esistono due set di indici: uno per la versione precedente e uno per la nuova versione.
-1. I clienti possono vedere se il processo di indicizzazione è completo nella pagina di compilazione di Cloud Manager e ricevono una notifica quando la nuova versione è pronta per il traffico.
+1. Ad alto livello sull&#39;AEM as a Cloud Service, con l&#39;introduzione della [modello di distribuzione continua](#index-management-using-rolling-deployments), esistono due set di indici: uno per la versione precedente e uno per la nuova versione.
+1. I clienti possono vedere se il processo di indicizzazione è stato completato nella pagina di build di Cloud Manager e ricevono una notifica quando la nuova versione è pronta per il traffico.
 
 Limiti:
 
 * Attualmente, la gestione degli indici su AEM as a Cloud Service è supportata solo per gli indici di tipo `lucene`.
-* Sono supportati solo gli analizzatori standard (ovvero quelli forniti con il prodotto). Gli analizzatori personalizzati non sono supportati.
-* Internamente, possono essere configurati e utilizzati per le query altri indici. Ad esempio, le query scritte rispetto all’indice `damAssetLucene` potrebbero, su Skyline, essere eseguite in base a una versione Elasticsearch di questo indice. Questa differenza generalmente non è visibile all’applicazione e all’utente, tuttavia alcuni strumenti come la funzionalità `explain` riferiranno un indice diverso. Per le differenze tra gli indici Lucene e gli indici Elastic, vedi [la documentazione Elastic in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non devono e non possono configurare direttamente gli indici di Elasticsearch.
+* Sono supportati solo gli analizzatori standard (ovvero gli analizzatori forniti con il prodotto). Gli analizzatori personalizzati non sono supportati.
+* Internamente, possono essere configurati e utilizzati per le query altri indici. Ad esempio, le query scritte rispetto all’indice `damAssetLucene` potrebbero, su Skyline, essere eseguite in base a una versione Elasticsearch di questo indice. Questa differenza generalmente non è visibile all’applicazione e all’utente, tuttavia, alcuni strumenti come `explain` La funzionalità segnala un indice diverso. Per le differenze tra gli indici Lucene e gli indici Elastic, vedi [la documentazione Elastic in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non devono e non possono configurare direttamente gli indici Elasticsearch.
 
 ## Guida all’uso {#how-to-use}
 
 La definizione degli indici può comprendere i tre casi d’uso seguenti:
 
-1. Aggiunta di una nuova definizione dell’indice del cliente.
-1. Aggiornamento di una definizione di indice esistente. Ciò corrisponde effettivamente all’aggiunta di una nuova versione di una definizione di indice esistente.
+1. Aggiunta di una definizione dell’indice del cliente.
+1. Aggiornamento di una definizione di indice esistente. Questo aggiornamento comporta effettivamente l’aggiunta di una nuova versione di una definizione di indice esistente.
 1. Rimozione di un indice esistente ridondante o obsoleto.
 
-Per entrambi i punti 1 e 2 di cui sopra, devi creare una nuova definizione dell’indice come parte della base di codice personalizzato nella rispettiva pianificazione della versione di Cloud Manager. Per ulteriori informazioni, consulta la [documentazione sulla distribuzione di AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+Per entrambi i punti 1 e 2 di cui sopra, devi creare una definizione dell’indice come parte della base di codice personalizzata nella rispettiva pianificazione della versione di Cloud Manager. Per ulteriori informazioni, consulta [Distribuzione alla documentazione as a Cloud Service AEM](/help/implementing/deploying/overview.md).
 
 ## Nomi indice {#index-names}
 
@@ -49,7 +49,7 @@ Una definizione di indice può essere:
 
 1. Un indice preconfigurato. Un esempio è `/oak:index/cqPageLucene-2`.
 1. Una personalizzazione di un indice preconfigurato. Tali personalizzazioni sono definite dal cliente. Un esempio è `/oak:index/cqPageLucene-2-custom-1`.
-1. Un indice completamente personalizzato. Un esempio è `/oak:index/acme.product-1-custom-2`. Per evitare conflitti di denominazione, è necessario che gli indici completamente personalizzati abbiano un prefisso, ad esempio, `acme.`
+1. Un indice completamente personalizzato. Un esempio è `/oak:index/acme.product-1-custom-2`. Per evitare conflitti di denominazione, Adobe richiede che gli indici completamente personalizzati abbiano un prefisso, ad esempio, `acme.`
 
 Tieni presente che sia la personalizzazione di un indice predefinito sia gli indici completamente personalizzati devono contenere `-custom-`. Solo gli indici completamente personalizzati devono iniziare con un prefisso.
 
@@ -57,13 +57,13 @@ Tieni presente che sia la personalizzazione di un indice predefinito sia gli ind
 
 >[!NOTE]
 >
->Per personalizzare un indice preconfigurato, ad esempio `damAssetLucene-6`, copia l’ultima definizione di indice preconfigurato da un *ambiente Cloud Service* utilizzando Gestione pacchetti CRX DE (`/crx/packmgr/`). Quindi rinomina la configurazione, ad esempio `damAssetLucene-6-custom-1`, e aggiungi le tue personalizzazioni in alto. In questo modo le configurazioni richieste non vengono rimosse inavvertitamente. Ad esempio, il nodo `tika` sotto `/oak:index/damAssetLucene-6/tika` è richiesto nell’indice personalizzato del servizio cloud. Non esiste nell’SDK di Cloud.
+>Per personalizzare un indice predefinito, ad esempio `damAssetLucene-6`, copia l’ultima definizione di indice preconfigurata da una *Ambiente Cloud Service* utilizzo di Gestione pacchetti CRX DE (`/crx/packmgr/`). Quindi rinomina la configurazione, ad esempio `damAssetLucene-6-custom-1`, e aggiungi le tue personalizzazioni in alto. Questo processo assicura che le configurazioni richieste non vengano rimosse inavvertitamente. Ad esempio, il nodo `tika` sotto `/oak:index/damAssetLucene-6/tika` è richiesto nell’indice personalizzato del servizio cloud. Non esiste nell’SDK di Cloud.
 
-È necessario preparare un nuovo pacchetto di definizione dell’indice che contiene la definizione effettiva, seguendo questo pattern di denominazione:
+Prepara un pacchetto di definizione dell’indice che contiene la definizione effettiva, seguendo questo pattern di denominazione:
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-che poi deve andare sotto `ui.apps/src/main/content/jcr_root`. Tutte le definizioni di indice personalizzate e rielaborate devono essere memorizzate in `/oak:index`.
+Che poi deve andare sotto `ui.apps/src/main/content/jcr_root`. Tutte le definizioni di indice personalizzate devono essere memorizzate in `/oak:index`.
 
 Il filtro per il pacchetto deve essere impostato in modo da mantenere gli indici esistenti (preconfigurati). Nel file `ui.apps/src/main/content/META-INF/vault/filter.xml`, ogni indice personalizzato deve essere elencato, ad esempio come `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Se la versione dell’indice viene successivamente modificata, è necessario regolare il filtro.
 
@@ -73,7 +73,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->Qualsiasi pacchetto di contenuto con le definizioni degli indici deve avere la seguente proprietà impostata nel file delle proprietà, situato in `/META-INF/vault/properties.xml`:
+>Qualsiasi pacchetto di contenuto contenente le definizioni degli indici deve avere la seguente proprietà impostata nel file delle proprietà, in `/META-INF/vault/properties.xml`:
 >
 >`noIntermediateSaves=true`
 
@@ -83,7 +83,7 @@ Le definizioni degli indici sono ora contrassegnate con “custom” e con il nu
 
 * La definizione stessa dell’indice (ad esempio `/oak:index/ntBaseLucene-custom-1`)
 
-Per distribuire un indice personalizzato, la definizione dell’indice (`/oak:index/definitionname`) deve essere consegnata tramite `ui.apps` da Git e il processo di implementazione di Cloud Manager. Nel filtro FileVault, ad esempio, `ui.apps/src/main/content/META-INF/vault/filter.xml`, elenca singolarmente ogni indice personalizzato, ad esempio `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definizione di indice personalizzato verrà quindi memorizzata nel file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, come segue:
+Per distribuire un indice personalizzato, la definizione dell’indice (`/oak:index/definitionname`) deve essere consegnato mediante `ui.apps` tramite Git e il processo di implementazione di Cloud Manager. Nel filtro FileVault, ad esempio, `ui.apps/src/main/content/META-INF/vault/filter.xml`, elenca singolarmente ogni indice personalizzato, ad esempio `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La definizione di indice personalizzato viene quindi memorizzata nel file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, come segue:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -103,7 +103,7 @@ L’esempio precedente contiene una configurazione per Apache Tika. Il file di c
 
 ### Configurazione del progetto
 
-A seconda della versione del plug-in del pacchetto Maven Jackrabbit Filevault, è necessaria un’ulteriore configurazione del progetto. Quando si utilizza il plug-in del pacchetto Maven Jackrabbit Filevault versione **1.1.6.** o successiva, il file `pom.xml` deve contenere la seguente sezione nella configurazione del plug-in per `filevault-package-maven-plugin`, in `configuration/validatorsSettings` (appena prima di `jackrabbit-nodetypes`):
+A seconda della versione del plug-in del pacchetto Maven Jackrabbit Filevault, è necessaria un’ulteriore configurazione del progetto. Quando si utilizza la versione del plug-in pacchetto Maven Jackrabbit Filevault **1.1.6.** o più recente, il file `pom.xml` deve contenere la seguente sezione nella configurazione del plug-in per `filevault-package-maven-plugin`, in `configuration/validatorsSettings` (appena prima `jackrabbit-nodetypes`):
 
 ```xml
 <jackrabbit-packagetype>
@@ -113,7 +113,7 @@ A seconda della versione del plug-in del pacchetto Maven Jackrabbit Filevault, �
 </jackrabbit-packagetype>
 ```
 
-Inoltre, in questo caso la versione di `vault-validation` deve essere aggiornata a una versione più recente:
+Inoltre, in questo caso, il `vault-validation` La versione deve essere aggiornata a una versione più recente:
 
 ```xml
 <dependency>
@@ -123,7 +123,7 @@ Inoltre, in questo caso la versione di `vault-validation` deve essere aggiornata
 </dependency>
 ```
 
-Quindi, in `ui.apps.structure/pom.xml` e `ui.apps/pom.xml`, nella configurazione di `filevault-package-maven-plugin` devono essere abilitati sia `allowIndexDefinitions` che `noIntermediateSaves`. L’opzione `noIntermediateSaves` assicura che le configurazioni dell’indice vengano aggiunte atomicamente.
+Quindi, in `ui.apps.structure/pom.xml` e `ui.apps/pom.xml`, la configurazione del `filevault-package-maven-plugin` deve avere `allowIndexDefinitions` e `noIntermediateSaves` abilitato. L’opzione `noIntermediateSaves` assicura che le configurazioni dell’indice vengano aggiunte atomicamente.
 
 ```xml
 <groupId>org.apache.jackrabbit</groupId>
@@ -137,19 +137,20 @@ Quindi, in `ui.apps.structure/pom.xml` e `ui.apps/pom.xml`, nella configurazione
     ...
 ```
 
-In `ui.apps.structure/pom.xml`, la sezione `filters` per questo plug-in deve contenere una radice di filtro come segue:
+In entrata `ui.apps.structure/pom.xml`, il `filters` La sezione di questo plug-in deve contenere una radice di filtro come segue:
 
 ```xml
 <filter><root>/oak:index</root></filter>
 ```
 
-Una volta aggiunta la nuova definizione dell’indice, la nuova applicazione deve essere distribuita tramite Cloud Manager. Al momento della distribuzione, vengono avviati due processi responsabili dell’aggiunta (e dell’unione, se necessario) delle definizioni dell’indice a MongoDB e Azure Segment Store rispettivamente per l’authoring e la pubblicazione. Gli archivi sottostanti vengono reindicizzati con le nuove definizioni dell’indice, prima che lo switch venga implementato.
+Dopo l’aggiunta della nuova definizione dell’indice, la nuova applicazione viene distribuita tramite Cloud Manager. Durante la distribuzione, vengono avviati due processi responsabili dell’aggiunta (e dell’unione, se necessario) delle definizioni dell’indice a MongoDB e Azure Segment Store rispettivamente per l’authoring e la pubblicazione. Gli archivi sottostanti vengono reindicizzati con le nuove definizioni dell’indice, prima che lo switch venga implementato.
 
 ### NOTA
 
 Nel caso in cui si osservi il seguente errore nella convalida di filevault <br>
 `[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
 A questo punto, puoi seguire uno dei seguenti passaggi per risolvere il problema: <br>
+
 1. Effettua il downgrade di filevault alla versione 1.0.4 e aggiungi quanto segue al pom di livello principale:
 
 ```xml
@@ -205,7 +206,7 @@ Di seguito è riportato un esempio di dove posizionare la configurazione precede
 
 >[!TIP]
 >
->Per ulteriori dettagli sulla struttura del pacchetto richiesta per AEM as a Cloud Service, vedi il documento [struttura del progetto AEM.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>Per ulteriori dettagli sulla struttura del pacchetto richiesta per AEM as a Cloud Service, vedi il documento [struttura del progetto AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Gestione dell’indice tramite distribuzioni continue {#index-management-using-rolling-deployments}
 
@@ -235,7 +236,7 @@ Le aree di lettura-scrittura dell’archivio sono condivise tra tutte le version
 
 ### Gestione degli indici senza distribuzioni continue {#index-management-without-rolling-deployments}
 
-Durante lo sviluppo o quando si utilizzano installazioni locali, gli indici possono essere aggiunti, rimossi o modificati in fase di runtime. Gli indici vengono utilizzati non appena sono disponibili. Se un indice non deve ancora essere utilizzato nella vecchia versione dell’applicazione, viene generalmente generato durante un downtime pianificato. Lo stesso si verifica quando si rimuove un indice o si modifica un indice esistente. Quando si rimuove un indice, questo diventa non disponibile non appena viene rimosso.
+Durante lo sviluppo o quando si utilizzano installazioni on-premise, gli indici possono essere aggiunti, rimossi o modificati in fase di runtime. Gli indici vengono utilizzati quando sono disponibili. Se un indice non è ancora utilizzato nella vecchia versione dell’applicazione, in genere viene generato durante un periodo di inattività pianificato. Lo stesso si verifica quando si rimuove un indice o si modifica un indice esistente. Quando si rimuove un indice, questo diventa non disponibile.
 
 ### Gestione degli indici con distribuzioni continue {#index-management-with-rolling-deployments}
 
@@ -247,7 +248,7 @@ La tabella seguente mostra cinque definizioni di indice: l’indice `cqPageLucen
 
 >[!NOTE]
 >
->`<indexName>-custom-<customerVersionNumber>` è necessario perché AEM as a Cloud Service possa contrassegnarlo come sostitutivo di un indice esistente.
+>Il `<indexName>-custom-<customerVersionNumber>` è necessario affinché l’AEM as a Cloud Service possa contrassegnarlo come sostitutivo di un indice esistente.
 
 | Indice | Indice predefinito | Uso nella versione 1 | Uso nella versione 2 |
 |---|---|---|---|
@@ -261,7 +262,7 @@ Il numero di versione è incrementato ogni volta che l’indice viene modificato
 
 ### Modifiche agli indici predefiniti {#changes-to-out-of-the-box-indexes}
 
-Quando Adobe cambia un indice predefinito come “damAssetLucene” o “cqPageLucene”, viene creato un nuovo indice denominato `damAssetLucene-2` o `cqPageLucene-2` oppure, se l’indice è già stato personalizzato, la sua definizione viene unita alle modifiche nell’indice predefinito, come mostrato di seguito. L’unione delle modifiche avviene automaticamente. Ciò significa che non è necessario eseguire alcuna operazione se un indice predefinito cambia. Tuttavia, è possibile personalizzare di nuovo l’indice in un secondo momento.
+Dopo un Adobe cambia un indice predefinito come &quot;damAssetLucene&quot; o &quot;cqPageLucene&quot;, un nuovo indice denominato `damAssetLucene-2` o `cqPageLucene-2` viene creato. Oppure, se l’indice è già stato personalizzato, la definizione dell’indice personalizzato viene unita alle modifiche nell’indice predefinito, come mostrato di seguito. L’unione delle modifiche avviene automaticamente. Ciò significa che non è necessario eseguire alcuna operazione se un indice predefinito cambia. Tuttavia, è possibile personalizzare di nuovo l’indice in un secondo momento.
 
 | Indice | Indice predefinito | Uso nella versione 2 | Uso nella versione 3 |
 |---|---|---|---|
@@ -272,21 +273,21 @@ Quando Adobe cambia un indice predefinito come “damAssetLucene” o “cqPageL
 
 ### Limitazioni attuali {#current-limitations}
 
-La gestione degli indici è attualmente supportata solo per gli indici di tipo `lucene`, con `compatVersion` imposta su `2`. Internamente, possono essere configurati e utilizzati per le query altri indici, ad esempio gli indici Elasticsearch. Query scritte rispetto al `damAssetLucene` su AEM as a Cloud Service, l&#39;indice potrebbe infatti essere eseguito su una versione Elasticsearch di questo indice. Questa differenza è invisibile all&#39;utente finale dell&#39;applicazione, tuttavia alcuni strumenti come `explain` La funzionalità riporterà un indice diverso. Per le differenze tra gli indici Lucene e Elasticsearch, consulta [la documentazione relativa agli Elasticsearch in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non possono e non devono configurare direttamente gli indici Elasticsearch.
+La gestione degli indici è supportata solo per gli indici di tipo `lucene`, con `compatVersion` imposta su `2`. Internamente, possono essere configurati e utilizzati per le query altri indici, ad esempio gli indici Elasticsearch. Query scritte rispetto al `damAssetLucene` su AEM as a Cloud Service, l&#39;indice potrebbe infatti essere eseguito su una versione Elasticsearch di questo indice. Questa differenza è invisibile all&#39;utente finale dell&#39;applicazione, tuttavia alcuni strumenti come `explain` la funzione segnala un indice diverso. Per le differenze tra gli indici Lucene e Elasticsearch, consulta [la documentazione relativa agli Elasticsearch in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non possono e non devono configurare direttamente gli indici Elasticsearch.
 
-Sono supportati solo gli analizzatori incorporati (ovvero quelli forniti con il prodotto). Gli analizzatori personalizzati non sono supportati.
+Sono supportati solo gli analizzatori incorporati (ovvero, gli analizzatori forniti con il prodotto). Gli analizzatori personalizzati non sono supportati.
 
-Per ottenere le migliori prestazioni operative, gli indici non dovrebbero essere eccessivamente grandi. La dimensione totale di tutti gli indici può essere utilizzata come guida: se aumenta di oltre il 100% dopo l’aggiunta degli indici personalizzati e la regolazione degli indici standard in un ambiente di sviluppo, è necessario regolare le definizioni degli indici personalizzati. AEM as a Cloud Service può impedire la distribuzione di indici che influirebbero negativamente sulla stabilità e sulle prestazioni del sistema.
+Per ottenere le migliori prestazioni operative, gli indici non dovrebbero essere eccessivamente grandi. La dimensione totale di tutti gli indici può essere utilizzata come guida. Se questa dimensione aumenta di oltre il 100% dopo l’aggiunta degli indici personalizzati e la regolazione degli indici standard in un ambiente di sviluppo, è necessario regolare le definizioni degli indici personalizzati. AEM as a Cloud Service può impedire la distribuzione di indici che influirebbero negativamente sulla stabilità e sulle prestazioni del sistema.
 
 ### Aggiunta di un indice {#adding-an-index}
 
-Per aggiungere un indice completamente personalizzato denominato `/oak:index/acme.product-custom-1` da utilizzare in una nuova versione dell’applicazione e successivamente, deve essere configurato come segue:
+Per aggiungere un indice completamente personalizzato denominato `/oak:index/acme.product-custom-1`, per essere utilizzato in una nuova versione dell’applicazione e successivamente, l’indice deve essere configurato come segue:
 
 `acme.product-1-custom-1`
 
-Questo funziona ponendo un identificatore personalizzato davanti al nome dell’indice, seguito da un punto (**`.`**). La lunghezza dell’identificatore deve essere compresa tra 2 e 5 caratteri.
+Questa configurazione funziona ponendo un identificatore personalizzato davanti al nome dell’indice, seguito da un punto (**`.`**). L’identificatore deve contenere da 2 a 5 caratteri.
 
-Come sopra, questo assicura che l’indice sia utilizzato solo dalla nuova versione dell’applicazione.
+Come sopra, questa configurazione assicura che l’indice sia utilizzato solo dalla nuova versione dell’applicazione.
 
 ### Modifica di un indice {#changing-an-index}
 
@@ -302,17 +303,17 @@ La nuova versione dell’applicazione utilizza la seguente configurazione (modif
 
 >[!NOTE]
 >
->Le definizioni degli indici su AEM as a Cloud Service potrebbero non corrispondere completamente a quelle su un’istanza di sviluppo locale. L’istanza di sviluppo non dispone di una configurazione Tika, mentre istanze di AEM as a Cloud Service ne hanno una. Se si personalizza un indice con una configurazione Tika, si prega di mantenere tale configurazione.
+>Le definizioni degli indici su AEM as a Cloud Service potrebbero non corrispondere completamente a quelle su un’istanza di sviluppo locale. L’istanza di sviluppo non dispone di una configurazione Tika, mentre le istanze di AEM as a Cloud Service ne hanno una. Se personalizzi un indice con una configurazione Tika, mantieni la configurazione Tika.
 
 ### Annullamento di una modifica {#undoing-a-change}
 
-A volte, è necessario ripristinare una modifica nella definizione di un indice. Questo può avvenire perché un cambiamento è stato fatto per errore o non è più necessario. Ad esempio, la definizione dell’indice `damAssetLucene-8-custom-3` è stata creata per errore ed è già distribuita. Per questo motivo, potrebbe essere utile ripristinare la precedente definizione dell’indice `damAssetLucene-8-custom-2`. A questo scopo, devi aggiungere un nuovo indice denominato `damAssetLucene-8-custom-4` che contiene la definizione dell’indice precedente, `damAssetLucene-8-custom-2`.
+A volte, è necessario ripristinare una modifica nella definizione di un indice. Questo può avvenire perché un cambiamento è stato fatto per errore o non è più necessario. Ad esempio, la definizione dell’indice `damAssetLucene-8-custom-3` è stata creata per errore ed è già distribuita. Per questo motivo, potrebbe essere utile ripristinare la precedente definizione dell’indice `damAssetLucene-8-custom-2`. Per farlo, aggiungi un indice denominato `damAssetLucene-8-custom-4` che contiene la definizione dell’indice precedente, `damAssetLucene-8-custom-2`.
 
 ### Rimozione di un indice {#removing-an-index}
 
 Ciò che segue si applica solo agli indici personalizzati. Gli indici di prodotto non possono essere rimossi poiché sono utilizzati da AEM.
 
-Se un indice deve essere rimosso in una versione successiva dell’applicazione, puoi definire un indice vuoto (un indice vuoto che non viene mai utilizzato e non contiene dati) con un nuovo nome. Ai fini di questo esempio, puoi denominarlo `/oak:index/acme.product-custom-3`. Questo sostituisce l’indice `/oak:index/acme.product-custom-2`. Dopo che `/oak:index/acme.product-custom-2` è stato rimosso dal sistema, può essere rimosso anche l’indice vuoto `/oak:index/acme.product-custom-3`. Un esempio di tale indice vuoto è:
+Se un indice viene rimosso in una versione successiva dell’applicazione, puoi definire un indice vuoto (un indice vuoto che non viene mai utilizzato e non contiene dati) con un nuovo nome. Per questo esempio, puoi denominarlo `/oak:index/acme.product-custom-3`. Questo nome sostituisce l’indice `/oak:index/acme.product-custom-2`. Dopo `/oak:index/acme.product-custom-2` viene rimosso dal sistema, l’indice vuoto `/oak:index/acme.product-custom-3` possono quindi essere rimossi. Un esempio di tale indice vuoto è:
 
 ```xml
 <acme.product-custom-3
@@ -339,6 +340,6 @@ Se non è più necessario avere una personalizzazione di un indice predefinito, 
 
 ## Ottimizzazioni di indici e query {#index-query-optimizations}
 
-Apache Jackrabbit Oak consente configurazioni di indice flessibili per gestire in modo efficiente le query di ricerca. Gli indici sono particolarmente importanti per gli archivi più grandi. Assicurati che tutte le query siano supportate da un indice appropriato. Le query senza un indice appropriato possono leggere migliaia di nodi, pertanto viene registrata un’avvertenza.
+Apache Jackrabbit Oak consente configurazioni di indice flessibili per gestire in modo efficiente le query di ricerca. Gli indici sono particolarmente importanti per gli archivi più grandi. Assicurati che tutte le query siano supportate da un indice appropriato. Le query senza un indice appropriato possono leggere migliaia di nodi, che vengono quindi registrati come un avviso.
 
-Per informazioni su come è possibile ottimizzare le query e gli indici, consulta [questo documento](query-and-indexing-best-practices.md).
+Consulta [questo documento](query-and-indexing-best-practices.md) per informazioni su come è possibile ottimizzare le query e gli indici.

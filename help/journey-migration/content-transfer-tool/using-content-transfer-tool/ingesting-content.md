@@ -2,9 +2,9 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1707'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion"
 >title="Acquisizione dei contenuti"
 >abstract="Per acquisizione si intende l’acquisizione dei contenuti dal set di migrazione nell’istanza Cloud Service di destinazione. Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=it#top-up-ingestion-process" text="Acquisizione integrativa"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it" text="Acquisizione integrativa"
 
 Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 
@@ -32,7 +32,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
-1. Fornisci le informazioni necessarie per creare una nuova acquisizione.
+1. Fornisci le informazioni necessarie per creare un’acquisizione.
 
    * Seleziona come Origine il set di migrazione contenente i dati estratti.
       * I set di migrazione scadranno dopo un periodo prolungato di inattività, pertanto si prevede che l’acquisizione avvenga relativamente presto dopo l’esecuzione dell’estrazione. Revisione [Scadenza set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) per i dettagli.
@@ -42,16 +42,16 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
    >Le note seguenti si applicano all’acquisizione del contenuto:
    > Se l’origine era Author, si consiglia di acquisirla nel livello Author sulla destinazione. Analogamente, se l’origine è Pubblica, anche la destinazione deve essere Pubblica.
    > Se il livello di destinazione è `Author`, l’istanza di authoring viene chiusa per tutta la durata dell’acquisizione e diventa non disponibile per gli utenti (ad esempio, autori o chiunque esegua attività di manutenzione). Il motivo è proteggere il sistema ed evitare eventuali modifiche che potrebbero andare perse o causare un conflitto di acquisizione. Assicurati che il tuo team sia a conoscenza di questo fatto. Inoltre, l’ambiente risulta ibernato durante l’acquisizione dell’autore.
-   > Puoi eseguire il passaggio di pre-copia opzionale per velocizzare notevolmente la fase di acquisizione. Fai riferimento a [Acquisizione con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) per ulteriori dettagli.
+   > Puoi eseguire il passaggio di pre-copia opzionale per velocizzare notevolmente la fase di acquisizione. Consulta [Acquisizione con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) per ulteriori dettagli.
    > Se si utilizza l’acquisizione con pre-copia (per S3 o Azure Data Store), si consiglia di eseguire prima l’acquisizione dell’authoring. In questo modo, l’acquisizione Publish diventa più rapida quando viene eseguita in un secondo momento.
    > Le acquisizioni non supportano una destinazione RDE (Rapid Development Environment) e non vengono visualizzate come possibile scelta di destinazione, anche se l’utente ha accesso a tale destinazione.
 
    >[!IMPORTANT]
    > Per l’acquisizione dei contenuti si applicano le seguenti note importanti:
    > Puoi avviare un’acquisizione nell’ambiente di destinazione solo se appartieni al gruppo locale **Amministratori AEM** nel servizio Author del Cloud Service di destinazione. Se non riesci ad avviare un’acquisizione, consulta [Impossibile avviare l’acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
-   > Se l&#39;impostazione **A comparsa** viene abilitato prima dell’acquisizione, elimina l’intero archivio esistente e crea un nuovo archivio in cui acquisire il contenuto. Ciò significa che vengono ripristinate tutte le impostazioni, comprese le autorizzazioni sull’istanza del Cloud Service di destinazione. Questo vale anche per un utente amministratore aggiunto al **amministratori** gruppo. Per avviare un’acquisizione, devi essere aggiunto nuovamente al gruppo degli amministratori.
+   > Se l&#39;impostazione **A comparsa** viene abilitato prima dell’acquisizione, elimina l’intero archivio esistente e crea un archivio in cui puoi acquisire il contenuto. Questo flusso di lavoro comporta il ripristino di tutte le impostazioni, incluse le autorizzazioni, nell’istanza del Cloud Service di destinazione. Questo ripristino è valido anche per un utente amministratore aggiunto al **amministratori** gruppo. Per avviare un’acquisizione, devi essere letto al gruppo degli amministratori.
 
-1. Fai clic su **Acquisisci**
+1. Clic **Acquisisci**.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
@@ -59,7 +59,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Fai clic su **i) IT** nella riga per ottenere ulteriori informazioni sul processo di acquisizione. Puoi visualizzare la durata di ciascun passaggio dell’acquisizione durante l’esecuzione o il completamento facendo clic su **...** e quindi il **Visualizza durate**. Le informazioni provenienti dall’estrazione vengono anche mostrate per realizzare ciò che viene acquisito.
+1. Fai clic su **i) IT** nella riga per ulteriori informazioni sul processo di acquisizione. Puoi visualizzare la durata di ciascun passaggio dell’acquisizione quando è in esecuzione o completata facendo clic su **...** e quindi clic su **Visualizza durate**. Le informazioni provenienti dall’estrazione vengono anche mostrate per realizzare ciò che viene acquisito.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
@@ -81,7 +81,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
    
-   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
+   Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
 
@@ -92,17 +92,17 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Acquisizione integrativa"
->abstract="Utilizza la funzione integrativa per spostare solo i contenuti modificati rispetto alla precedente attività di trasferimento dei contenuti. Al termine dell’acquisizione, verifica la presenza di eventuali errori o avvisi nei registri. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’Assistenza clienti di Adobe."
+>abstract="Utilizza la funzione integrativa per spostare il contenuto modificato dall’ultima attività di trasferimento dei contenuti. Al termine dell’acquisizione, verifica la presenza di eventuali errori o avvisi nei registri. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’Assistenza clienti di Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=it" text="Visualizzazione dei registri"
 
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’*integrazione* di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
 
 >[!NOTE]
->Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service. Se hai utilizzato il passaggio di pre-copia per la prima acquisizione completa, puoi saltare la pre-copia per le successive acquisizioni integrative (se la dimensione del set di migrazione integrativa è inferiore a 200 GB) perché potrebbe aggiungere tempo all’intero processo.
+>Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service. Se hai utilizzato il passaggio di pre-copia per la prima acquisizione completa, puoi saltare la pre-copia per le successive acquisizioni integrative (se la dimensione del set di migrazione integrativo è inferiore a 200 GB). Il motivo è che potrebbe aggiungere tempo all&#39;intero processo.
 
-Una volta completato il processo di acquisizione, per acquisire il contenuto delta dovrai eseguire una [Estrazione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) e quindi utilizza il metodo di acquisizione integrativa.
+Al termine del processo di acquisizione, per acquisire il contenuto delta è necessario eseguire una [Estrazione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process), quindi utilizza il metodo di acquisizione integrativa.
 
-Per farlo, crea un nuovo processo di acquisizione e assicurati che **A comparsa** è disattivato durante la fase di acquisizione, come illustrato di seguito:
+Per prima cosa, crea un processo di acquisizione e assicurati che **A comparsa** è disattivato durante la fase di acquisizione, come illustrato di seguito:
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
@@ -114,7 +114,7 @@ Il recupero automatico del token di migrazione potrebbe non riuscire per diversi
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
-Per recuperare manualmente il token di migrazione, fai clic sul collegamento &quot;Ottieni token&quot; nella finestra di dialogo. Verrà aperta un’altra scheda in cui viene visualizzato il token. Puoi quindi copiare il token e incollarlo nella **Input token di migrazione** campo. Ora, dovresti essere in grado di iniziare l’acquisizione.
+Recupera manualmente il token di migrazione facendo clic sul collegamento &quot;Ottieni token&quot; nella finestra di dialogo. Viene aperta un’altra scheda che mostra il token. Puoi quindi copiare il token e incollarlo nella **Input token di migrazione** campo. Ora, dovresti essere in grado di iniziare l’acquisizione.
 
 >[!NOTE]
 >
@@ -122,30 +122,30 @@ Per recuperare manualmente il token di migrazione, fai clic sul collegamento &qu
 
 ### Impossibile avviare l’acquisizione {#unable-to-start-ingestion}
 
-Puoi avviare un’acquisizione nell’ambiente di destinazione solo se appartieni al gruppo locale **Amministratori AEM** nel servizio Author del Cloud Service di destinazione. Se non appartieni al gruppo di amministratori AEM, all’inizio di un’acquisizione visualizzerai un errore come mostrato di seguito. È possibile chiedere all&#39;amministratore di aggiungerti al **Amministratori AEM** oppure richiedi il token stesso, che potrai incollare nella **Input token di migrazione** campo.
+Puoi avviare un’acquisizione nell’ambiente di destinazione solo se appartieni al gruppo locale **Amministratori AEM** nel servizio Author del Cloud Service di destinazione. Se non appartieni al gruppo di amministratori AEM, quando tenti di avviare un’acquisizione viene visualizzato un errore come mostrato di seguito. È possibile chiedere all&#39;amministratore di aggiungerti al **Amministratori AEM** oppure richiedi il token stesso, che potrai incollare nella **Input token di migrazione** campo.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ### Impossibile raggiungere il servizio di migrazione {#unable-to-reach-migration-service}
 
-Dopo aver richiesto un’acquisizione, è possibile che venga visualizzato all’utente un messaggio simile al seguente: &quot;Il servizio di migrazione nell’ambiente di destinazione non è attualmente raggiungibile. Riprova più tardi o contatta l’assistenza di Adobe.&quot;
+Dopo aver richiesto un’acquisizione, è possibile che venga visualizzato all’utente un messaggio simile al seguente: &quot;Il servizio di migrazione nell’ambiente di destinazione non è raggiungibile. In tal caso, riprova più tardi o contatta il supporto Adobe.&quot;
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
-Questo indica che Cloud Acceleration Manager non è riuscito a raggiungere il servizio di migrazione dell’ambiente di destinazione per avviare l’acquisizione. Questo può accadere per una serie di motivi.
+Questo messaggio indica che Cloud Acceleration Manager non è riuscito a raggiungere il servizio di migrazione dell’ambiente di destinazione per avviare l’acquisizione. Questa situazione può verificarsi per vari motivi.
 
 >[!NOTE]
 > 
 > Viene visualizzato il campo &quot;Token di migrazione&quot; perché in alcuni casi è ciò che non è consentito recuperare il token. Consentendo la trasmissione manuale, può consentire all’utente di avviare l’acquisizione rapidamente, senza alcun aiuto aggiuntivo. Se il token è fornito e il messaggio viene ancora visualizzato, il problema non era il recupero del token.
 
-* AEM as a Cloud Service mantiene lo stato dell’ambiente e occasionalmente può essere necessario riavviare il servizio di migrazione per una serie di motivi normali. Se il servizio viene riavviato, non sarà possibile raggiungerlo, ma in genere sarà disponibile a breve.
+* AEM as a Cloud Service mantiene lo stato dell’ambiente e occasionalmente deve riavviare il servizio di migrazione per vari motivi normali. Se il servizio viene riavviato, non potrà essere raggiunto, ma sarà disponibile alla fine.
 * È possibile che nell’istanza sia in esecuzione un altro processo. Ad esempio, se Release Orchestrator applica un aggiornamento, il sistema potrebbe essere occupato e il servizio di migrazione regolarmente non disponibile. Per questo motivo, e con la possibilità di danneggiare l’istanza di stage o produzione, si consiglia vivamente di sospendere gli aggiornamenti durante un’acquisizione.
-* Se un [È stato applicato il Inserisco nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tramite Cloud Manager, impedirà a Cloud Acceleration Manager di raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché è molto dinamico. Attualmente, l’unica soluzione consiste nel disattivare l’elenco consentiti IP mentre l’acquisizione è in esecuzione.
+* Se un [È stato applicato il Inserisco nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Tramite Cloud Manager, impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è dinamico. Attualmente, l’unica soluzione consiste nel disattivare l’elenco consentiti IP mentre l’acquisizione è in esecuzione.
 * Ci possono essere altri motivi che richiedono un&#39;indagine. Se l’acquisizione continua a non riuscire, contatta l’Assistenza clienti di Adobe.
 
 ### Aggiornamenti automatici tramite Release Orchestrator è ancora abilitato
 
-Release Orchestrator mantiene automaticamente gli ambienti aggiornati applicando automaticamente gli aggiornamenti. Se l’aggiornamento viene attivato durante l’esecuzione di un’acquisizione, possono verificarsi risultati imprevedibili, incluso il danneggiamento dell’ambiente. Questo è uno dei motivi per cui un ticket di supporto deve essere registrato prima di iniziare un’acquisizione (vedi &quot;Nota&quot; sopra), in modo da poter pianificare la disattivazione temporanea di Release Orchestrator.
+Release Orchestrator mantiene automaticamente gli ambienti aggiornati applicando automaticamente gli aggiornamenti. Se l’aggiornamento viene attivato quando viene eseguita un’acquisizione, possono verificarsi risultati imprevedibili, incluso il danneggiamento dell’ambiente. Un buon motivo per registrare un ticket di assistenza clienti prima di iniziare un’acquisizione (vedi &quot;Nota&quot; sopra), in modo da poter pianificare la disattivazione temporanea di Release Orchestrator.
 
 Se Release Orchestrator è ancora in esecuzione all’avvio di un’acquisizione, questo messaggio viene visualizzato nell’interfaccia utente. È possibile scegliere di continuare comunque, accettando il rischio, selezionando il campo e premendo nuovamente il pulsante.
 
@@ -161,12 +161,12 @@ Una causa comune di [Acquisizione integrativa](/help/journey-migration/content-t
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: proprietà violata dal vincolo di unicità [jcr:uuid] con valore a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Ogni nodo in AEM deve avere un UUID univoco. Questo errore indica che un nodo da acquisire ha lo stesso UUID di uno già esistente in un percorso diverso nell’istanza di destinazione.
-Questo può accadere se un nodo viene spostato sull’origine tra un’estrazione e una successiva [Estrazione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+Ogni nodo in AEM deve avere un UUID univoco. Questo errore indica che un nodo che viene acquisito ha lo stesso UUID di uno esistente altrove in un percorso diverso nell’istanza di destinazione.
+Questa situazione può verificarsi se un nodo viene spostato sull’origine tra un’estrazione e una successiva [Estrazione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
 Può anche accadere se un nodo sul target viene spostato tra un’acquisizione e una successiva acquisizione integrativa.
 
 Questo conflitto deve essere risolto manualmente. Chi ha familiarità con il contenuto deve decidere quale dei due nodi deve essere eliminato, tenendo presente gli altri contenuti che vi fanno riferimento. La soluzione può richiedere che l’estrazione integrativa venga eseguita nuovamente senza il nodo problematico.
 
 ## Passaggio successivo {#whats-next}
 
-Una volta completato l’inserimento del contenuto in Target, puoi visualizzare i registri di ciascun passaggio (estrazione e acquisizione) e cercare gli errori. Consulta [Visualizzazione dei registri di un set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) per ulteriori informazioni.
+Una volta completato l’inserimento del contenuto in Target, puoi visualizzare i registri di ciascun passaggio (estrazione e acquisizione) e cercare gli errori. Consulta [Visualizzazione dei registri di un set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=it) per ulteriori informazioni.

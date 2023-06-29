@@ -2,9 +2,9 @@
 title: Note sulla versione 2021.9.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.9.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1569'
 ht-degree: 21%
 
 ---
@@ -111,7 +111,7 @@ Puoi scrivere a [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 ### Novità {#what-is-new-screens}
 
-* Screens as a Cloud Service ora supporta il monitoraggio di base della riproduzione. Ora il lettore riporta diverse metriche di riproduzione per ciascun ping (30 secondi per impostazione predefinita). In base alle metriche, consente di rilevare vari casi limite (esperienza bloccata, schermata vuota, problemi di pianificazione, ecc.). Questa funzione consente al team di monitorare da remoto se un lettore riproduce correttamente i contenuti, migliora la reattività a schermate vuote o esperienze bloccate sul campo e diminuisce il rischio di mostrare all’utente finale un’esperienza non funzionante.
+* Screens as a Cloud Service ora supporta il monitoraggio di base della riproduzione. Ora il lettore riporta diverse metriche di riproduzione per ciascun ping (30 secondi per impostazione predefinita). In base alle metriche, consente di rilevare vari casi limite (esperienza bloccata, schermata vuota, problemi di pianificazione e così via). Questa funzione consente al team di monitorare da remoto se un lettore riproduce correttamente i contenuti, migliora la reattività a schermate vuote o esperienze bloccate sul campo e diminuisce il rischio di mostrare all’utente finale un’esperienza non funzionante.
 Consulta [Monitoraggio della riproduzione di base](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) per ulteriori dettagli.
 
 * Il supporto miniature per video è ora supportato in Screens as a Cloud Service. Un autore di contenuti può definire una miniatura per video in modo che l’immagine possa essere utilizzata come segnaposto e testare correttamente la riproduzione e il targeting del contenuto, mentre il video effettivo è in fase di finalizzazione da parte del team appropriato. L’immagine può essere utilizzata anche nel caso in cui la riproduzione del video non riesca.
@@ -145,7 +145,7 @@ Leggi le [documentazione](/help/security/configuring-advanced-networking.md) per
 
 **Ottimizzazioni degli indici**
 
-Per migliorare le prestazioni delle query di ricerca e dell’indicizzazione, l’indice full-text Lucene-2 non viene più utilizzato come strumento predefinito in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] da questa versione. Per rimuovere questo indice full-text sugli ambienti AEM in conformità con i clienti AEM, Adobe Engineering lavora individualmente e proattivamente con i clienti per una rimozione gentile e sostenibile dell’indice full-text Lucene. Visita il sito [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentazione](/help/operations/indexing.md#index-optimizations) per ulteriori informazioni e in caso di domande, contatta direttamente il nostro supporto.
+Per migliorare le prestazioni delle query di ricerca e dell’indicizzazione, l’indice full-text Lucene-2 non viene più utilizzato come strumento predefinito in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] da questa versione. Per rimuovere questo indice full-text sugli ambienti AEM in conformità con i clienti AEM, Adobe Engineering lavora individualmente e proattivamente con i clienti per una rimozione gentile e sostenibile dell’indice full-text Lucene. Visita il [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentazione](/help/operations/indexing.md#index-optimizations) per ulteriori informazioni e in caso di domande, contatta direttamente il nostro supporto.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -182,7 +182,7 @@ La data di pubblicazione di Cloud Acceleration Manager è il 4 ottobre 2021.
 
 ### Novità {#what-is-new-cam}
 
-* Cloud Acceleration Manager ora consente agli utenti di visualizzare i rapporti BPA in un’anteprima stampabile, che può essere stampata o stampata su PDF per facilitarne la condivisione. Fare riferimento ai punti 6 e 7 in [Utilizzo della scheda Analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Cloud Acceleration Manager ora consente agli utenti di visualizzare i rapporti BPA in un’anteprima stampabile, che può essere stampata o stampata su PDF per facilitarne la condivisione. Vedere i passaggi 6 e 7 in [Utilizzo della scheda Analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 ## Strumento Trasferimento contenuti {#content-transfer-tool}
 
@@ -192,7 +192,7 @@ La data di pubblicazione dello strumento Content Transfer v1.6.0 è il 4 ottobre
 
 ### Novità {#what-is-new-ctt}
 
-* È stata migliorata la mappatura degli utenti con un’esperienza utente semplificata, incluse le seguenti funzioni elencate di seguito. Per ulteriori informazioni, consulta [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=it#using-user-mapping-tool).
+* È stata migliorata la mappatura degli utenti con un’esperienza utente semplificata, incluse le seguenti funzioni elencate di seguito. Per ulteriori dettagli, consulta [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=it#using-user-mapping-tool).
    * Verifica la connessione all’API User Management prima di eseguire la mappatura utente
    * Ignora gli errori e continua con l’attività Mappatura utenti
    * La mappatura degli utenti non ha più esito negativo se il token di accesso scade (dopo 24 ore). La mappatura utenti può essere rieseguita dall’ultima posizione in cui è stata interrotta.

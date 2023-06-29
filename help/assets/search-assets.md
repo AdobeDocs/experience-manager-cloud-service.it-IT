@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '5094'
+source-wordcount: '5096'
 ht-degree: 7%
 
 ---
@@ -31,11 +31,11 @@ La ricerca di risorse in AEM supporta i seguenti casi d’uso e questo articolo 
 | [Suggerimenti di ricerca](#searchsuggestions) | [Metadati vincolanti](#mandatorymetadata) | [Download](#download) |
 | [Comprendere i risultati e il comportamento della ricerca](#searchbehavior) | [Modificare i facet di ricerca](#searchfacets) | [Aggiornamenti in blocco dei metadati](#metadata-updates) |
 | [Ricerca classificazione e potenziamento](#searchrank) | [Predicati personalizzati](#custompredicates) | [Raccolte avanzate](#collections) |
-| [Ricerca avanzata: filtro e ambito della ricerca](#scope) |  | [Comprendere e risolvere i problemi relativi a risultati imprevisti](#unexpected-results) |
-| [Cerca da altre soluzioni e app](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[app desktop Experience Manager](#desktop-app)</li><li>[Immagini di Adobe Stock](#adobe-stock)</li><li>[Risorse Dynamic Media](#search-dynamic-media-assets)</li></ul> |  |  |
-| [Selettore risorse](#asset-picker) |  |  |
-| [Limitazioni](#limitations) e [Suggerimenti](#tips) |  |  |
-| [Esempi illustrati](#samples) |  |  |
+| [Ricerca avanzata: filtro e ambito della ricerca](#scope) | | [Comprendere e risolvere i problemi relativi a risultati imprevisti](#unexpected-results) |
+| [Cerca da altre soluzioni e app](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[app desktop Experience Manager](#desktop-app)</li><li>[Immagini di Adobe Stock](#adobe-stock)</li><li>[Risorse Dynamic Media](#search-dynamic-media-assets)</li></ul> | | |
+| [Selettore risorse](#asset-picker) | | |
+| [Limitazioni](#limitations) e [Suggerimenti](#tips) | | |
+| [Esempi illustrati](#samples) | | |
 
 Cerca le risorse utilizzando il campo Omnisearch nella parte superiore della sezione [!DNL Experience Manager] interfaccia web. Vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]** in [!DNL Experience Manager], fai clic su ![search_icon](assets/do-not-localize/search_icon.png) nella barra superiore, immetti la parola chiave search e seleziona `Return`. In alternativa, utilizzate la scelta rapida da parola chiave `/` (barra) per aprire il campo Omnisearch. `Location:Assets` è preselezionato per limitare le ricerche alle risorse DAM. [!DNL Experience Manager] fornisce suggerimenti quando si inizia a digitare una parola chiave di ricerca.
 
@@ -243,7 +243,7 @@ Passa i seguenti parametri di richiesta in un URL per avviare il selettore risor
 | `mode` | singolo, multiplo | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | In modalità multipla, puoi selezionare più risorse contemporaneamente utilizzando il selettore risorse. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilizza questi parametri per aprire il selettore risorse come finestra di dialogo Granite. Questa opzione è applicabile solo quando avvii il selettore risorse tramite il campo Percorso Granite e lo configuri come URL pickerSrc. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilizza questa opzione per specificare la cartella principale per il selettore risorse. In questo caso, il selettore delle risorse consente di selezionare solo le risorse figlie (dirette/indirette) sotto la cartella principale. |
-| `viewmode` | ricerca |  | Per avviare il selettore risorse in modalità di ricerca, con `assettype` e `mimetype` parametri. |
+| `viewmode` | ricerca | | Per avviare il selettore risorse in modalità di ricerca, con `assettype` e `mimetype` parametri. |
 | `assettype` | Immagini, documenti, multimedia, archivi. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Utilizza l’opzione per filtrare i tipi di risorse in base al valore fornito. |
 | `mimetype` | Tipo MIME (`/jcr:content/metadata/dc:format`) di una risorsa (è supportato anche un carattere jolly). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Utilizzala per filtrare le risorse in base al tipo MIME. |
 
@@ -405,7 +405,7 @@ Puoi cercare le risorse digitali in base a una o più delle seguenti proprietà.
 
 ## Utilizzare i risultati della ricerca delle risorse {#aftersearch}
 
-Puoi effettuare le seguenti operazioni con le risorse in cui hai effettuato la ricerca [!DNL Experience Manager]:
+Puoi effettuare le seguenti operazioni con le risorse trovate in [!DNL Experience Manager]:
 
 * Visualizzare le proprietà dei metadati e altre informazioni.
 * Scarica una o più risorse.
@@ -483,7 +483,7 @@ Collega e rimuovi le risorse visualizzate nei risultati di ricerca. Seleziona le
 | Filtro di ricerca o predicato non disponibile. | <ul><li>Il filtro di ricerca non è configurato.</li><li>Non è disponibile per l’accesso.</li><li>(È meno probabile) Le opzioni di ricerca non vengono personalizzate nella distribuzione in uso.</li></ul> | <ul><li>Contatta l’amministratore per verificare se le personalizzazioni della ricerca sono disponibili o meno.</li><li>Contatta l’amministratore per verificare se il tuo account dispone dei privilegi o delle autorizzazioni per utilizzare la personalizzazione.</li><li>Contatta l’amministratore e controlla le personalizzazioni disponibili per [!DNL Assets] distribuzione in uso.</li></ul> |
 | Quando si cercano immagini visivamente simili, manca un’immagine prevista. | <ul><li>Immagine non disponibile in [!DNL Experience Manager].</li><li>Immagine non indicizzata. In genere, se è stato caricato di recente.</li><li>L’immagine non dispone di tag avanzati.</li></ul> | <ul><li>Aggiungi l&#39;immagine a [!DNL Assets].</li><li>Contatta l’amministratore per reindicizzare l’archivio. Inoltre, assicurati di utilizzare l’indice appropriato.</li><li>Contatta l’amministratore per assegnare tag avanzati alle risorse rilevanti.</li></ul> |
 | Quando si ricercano immagini visivamente simili, viene visualizzata un’immagine irrilevante. | Comportamento di ricerca visiva. | [!DNL Experience Manager] visualizza il maggior numero possibile di risorse potenzialmente rilevanti. Ai risultati vengono aggiunte immagini meno rilevanti, se presenti, ma con una classificazione di ricerca inferiore. La qualità delle corrispondenze e la rilevanza delle risorse trovate diminuiscono con lo scorrimento verso il basso dei risultati di ricerca. |
-| Quando selezioni e operi sui risultati della ricerca, tutte le risorse trovate non vengono utilizzate. | Il [!UICONTROL Seleziona tutto] L&#39;opzione seleziona solo i primi 100 risultati di ricerca nella vista a schede e i primi 200 risultati di ricerca nella vista a elenco. |  |
+| Quando selezioni e operi sui risultati della ricerca, tutte le risorse trovate non vengono utilizzate. | Il [!UICONTROL Seleziona tutto] L&#39;opzione seleziona solo i primi 100 risultati di ricerca nella vista a schede e i primi 200 risultati di ricerca nella vista a elenco. | |
 
 **Consulta anche**
 
@@ -504,4 +504,3 @@ Collega e rimuovi le risorse visualizzate nei risultati di ricerca. Seleziona le
 >* [[!DNL Experience Manager] guida all’implementazione per la ricerca](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configurazione avanzata per migliorare i risultati della ricerca](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Configurare la ricerca di traduzione intelligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
-

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2933'
+source-wordcount: '2931'
 ht-degree: 4%
 
 ---
@@ -204,7 +204,7 @@ Per informazioni dettagliate sul passaggio del flusso di lavoro standard che pu�
 
 I modelli di flusso di lavoro di post-elaborazione sono regolari [!DNL Experience Manager] modelli di workflow. Se hai bisogno di un’elaborazione diversa per posizioni di archivio o tipi di risorse diversi, puoi creare modelli diversi.
 
-I passaggi di elaborazione vengono aggiunti in base alle esigenze. Puoi utilizzare sia i passaggi supportati disponibili, sia tutti i passaggi del flusso di lavoro personalizzati.
+I passaggi di elaborazione vengono aggiunti in base alle esigenze. Puoi utilizzare sia i passaggi supportati disponibili, sia tutti i passaggi del flusso di lavoro implementati in modo personalizzato.
 
 Assicurati che l’ultimo passaggio di ogni flusso di lavoro di post-elaborazione sia `DAM Update Asset Workflow Completed Process`. L’ultimo passaggio consente ad Experience Manager di sapere quando è stata completata l’elaborazione delle risorse.
 

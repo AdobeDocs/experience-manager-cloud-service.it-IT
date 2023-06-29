@@ -2,9 +2,9 @@
 title: Estrazione del contenuto dall’origine
 description: Estrazione del contenuto dall’origine
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '700'
 ht-degree: 27%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 27%
 Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 
 >[!NOTE]
->Se come tipo di archivio dati viene utilizzato Amazon S3, Azure Data Store o File Data Store, puoi eseguire il passaggio di pre-copia facoltativo per velocizzare in modo significativo la fase di estrazione. Il passaggio di pre-copia è più efficace per la prima estrazione e acquisizione complete. Fai riferimento a [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) per ulteriori dettagli.
+>Se come tipo di archivio dati viene utilizzato Amazon S3, Azure Data Store o File Data Store, puoi eseguire il passaggio di pre-copia facoltativo per velocizzare in modo significativo la fase di estrazione. Il passaggio di pre-copia è più efficace per la prima estrazione e acquisizione complete. Consulta [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) per ulteriori dettagli.
 
 1. Seleziona un set di migrazione da **Trasferimento dei contenuti** e fai clic su **Extract** per avviare l’estrazione.
 
@@ -64,7 +64,7 @@ Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione 
 
 >[!NOTE]
 >Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service. Se hai utilizzato il passaggio di pre-copia per la prima estrazione completa, puoi saltare la pre-copia per le successive estrazioni integrative (se la dimensione del set di migrazione integrativa è inferiore a 200 GB) perché potrebbe aggiungere tempo all’intero processo.
->Inoltre, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui viene effettuata l’estrazione iniziale a quello in cui viene eseguita l’estrazione integrativa. I top-up non possono essere eseguiti su contenuti la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questo valore durante il processo di migrazione.
+>Inoltre, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui viene effettuata l’estrazione iniziale a quello in cui viene eseguita l’estrazione integrativa. I top-up non possono essere eseguiti su contenuti la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questo passaggio durante il processo di migrazione.
 
 Una volta completato il processo di estrazione, puoi trasferire il contenuto delta utilizzando il metodo di estrazione integrativa.
 

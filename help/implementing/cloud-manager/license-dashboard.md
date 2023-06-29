@@ -2,10 +2,10 @@
 title: Dashboard delle licenze
 description: Cloud Manager fornisce una dashboard per visualizzare facilmente i diritti dei prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 97%
+source-wordcount: '873'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ In ogni sezione vengono riepilogate le opzioni disponibili e come sono attualmen
 
 >[!TIP]
 >
->Per ulteriori informazioni su come gestire i diritti Adobe in tutta l’organizzazione da Admin Console, consulta [Panoramica di Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html).
+>Consulta [Panoramica Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per scoprire come gestire i diritti Adobe in tutta l’organizzazione da Admin Console.
 
 ## Domande frequenti {#faq}
 
@@ -85,7 +85,7 @@ Le richieste di contenuto presentano delle varianze rispetto agli strumenti di g
 
 ### Come posso ottenere ulteriori informazioni sul volume di richieste di contenuto? {#current-request-volumes}
 
-Se desideri ulteriori informazioni sul volume di richieste di contenuto visualizzato nella dashboard delle licenze, il team di Adobe può fornirti un rapporto che mostra i principali driver di volume delle richieste dei contenuti. Per richiedere un rapporto sulle pricipali voci di utilizzo, rivolgiti al tuo team di Adobe o all’Assistenza clienti Adobe.
+Se desideri ulteriori informazioni sul volume di richieste di contenuto visualizzato nella dashboard delle licenze, il team di Adobe può fornirti un rapporto che mostra i principali driver di volume delle richieste dei contenuti. Rivolgiti al tuo team di Adobi o all’Assistenza clienti di Adobe per richiedere un rapporto sull’utilizzo superiore.
 
 ### Cosa succede se utilizzo una mia rete CDN? {#using-own-cdn}
 

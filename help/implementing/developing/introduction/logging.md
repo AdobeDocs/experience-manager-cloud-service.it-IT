@@ -2,9 +2,9 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2375'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ Ambiente di sviluppo</td>
 DEBUG</td>
 <td>
 Descrive cosa sta accadendo nell’applicazione.<br>
-Quando la registrazione DEBUG è attiva, vengono registrate le istruzioni che forniscono un’immagine chiara delle attività in corso e di eventuali parametri chiave che influiscono sull’elaborazione.</td>
+Quando la registrazione DEBUG è attiva, vengono registrate le istruzioni che forniscono un’immagine chiara delle attività che si verificano ed eventuali parametri chiave che influiscono sull’elaborazione.</td>
 <td>
 <ul>
 <li> Sviluppo locale</li>

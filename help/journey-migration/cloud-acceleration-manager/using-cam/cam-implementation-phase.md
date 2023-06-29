@@ -2,9 +2,9 @@
 title: Fase di implementazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica sulla fase di implementazione in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '662'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Fai clic sulla scheda del progetto per aprire la pagina di destinazione del prog
 ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->Fai riferimento a [Creazione e gestione di un progetto in Cloud Acceleration Manager](getting-started-cam.md#create-project) per ulteriori informazioni.
+>Consulta [Creazione e gestione di un progetto in Cloud Acceleration Manager](getting-started-cam.md#create-project) per ulteriori informazioni.
 
 
 ## Utilizzo della scheda Sviluppo locale {#local-development}
@@ -63,7 +63,7 @@ Segui questa sezione per esplorare la scheda dell’attività Refactoring del co
 >[!NOTE]
 >Rivedi il contenuto di queste schede per comprendere alcune aree aggiuntive non coperte da Best Practices Analyzer.
 
-Il **Dispatcher** Questa scheda fornisce informazioni su come strutturare le configurazioni di Apache e Dispatcher as a Cloud Service per l’AEM, nonché su come convalidarle ed eseguirle localmente prima di distribuirle negli ambienti Cloud. Descrive anche il debug in ambienti Cloud.
+Il **Dispatcher** Questa scheda fornisce informazioni su come strutturare le configurazioni di Apache e Dispatcher as a Cloud Service per l’AEM e su come convalidarle ed eseguirle localmente prima di distribuirle negli ambienti Cloud. Descrive anche il debug in ambienti Cloud.
 
 ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 

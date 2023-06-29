@@ -2,10 +2,10 @@
 title: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 96%
+source-wordcount: '846'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ AEM Cloud Service include molte nuove funzioni e opportunità per gestire i prog
 
 
 >[!NOTE]
->Questo documento illustra le modifiche di rilievo apportate ad AEM a livello generale. Per ulteriori informazioni e modifiche specifiche relative alla soluzione, vedi:
+>Questo documento illustra le modifiche di rilievo apportate ad AEM a livello generale. Per ulteriori informazioni e modifiche specifiche per la soluzione, consulta:
 >
 >* [Introduzione ad Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Novità e differenze](/help/overview/what-is-new-and-different.md) tra Adobe Experience Manager as a Cloud Service e le versioni precedenti
@@ -49,7 +49,7 @@ Le principali differenze riguardano le seguenti aree:
 
 ## /apps e /libs non sono modificabili in fase di esecuzione {#apps-libs-immutable}
 
-Tutti i contenuti e le sottocartelle in `/apps` e `/libs` sono di sola lettura. Non è possibile apportarvi modifiche mediante funzioni o codice personalizzato. Viene restituito un errore che indica che il contenuto è di sola lettura e che l’operazione di scrittura non è stata completata. Questa modifica interessa diverse aree di AEM:
+Tutti i contenuti e le sottocartelle in `/apps` e `/libs` sono di sola lettura. Non è possibile apportarvi modifiche mediante funzioni o codice personalizzato. Viene restituito un errore che indica che il contenuto è di sola lettura e che non è stato possibile completare l&#39;operazione di scrittura. Questa modifica interessa diverse aree di AEM:
 
 * Non sono consentite modifiche in `/libs`.
    * Questa non è una nuova regola, ma non veniva applicata nelle versioni on-premise precedenti di AEM.

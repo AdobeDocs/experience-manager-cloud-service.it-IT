@@ -2,9 +2,9 @@
 title: Creazione di rappresentazioni video in Screens as a Cloud Service
 description: Questa pagina descrive come creare rappresentazioni video in Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '342'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Per creare rappresentazioni video in Screens as a Cloud Service dal provider di 
 1. Passa al tuo canale nel provider di contenuti Screens.
 
    >[!NOTE]
-   >Fai riferimento a [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) per ulteriori dettagli.
+   >Consulta [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) per ulteriori dettagli.
 
 1. Fai clic sulla sezione Strumenti nella barra di navigazione a sinistra e fai clic su **Risorse** e quindi fare clic su **Profili elaborazione**.
 

@@ -2,9 +2,9 @@
 title: Pubblicazione
 description: Scopri come eseguire la migrazione una volta che il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1710'
 ht-degree: 4%
 
 ---
@@ -28,11 +28,11 @@ Nelle fasi precedenti del percorso:
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuterà a capire come eseguire la migrazione a AEM as a Cloud Service una volta acquisite familiarità con i passaggi precedenti del percorso. Scoprirai come eseguire la migrazione di produzione iniziale e le best practice da seguire per la migrazione a AEM as a Cloud Service.
+Questo documento spiega come eseguire la migrazione a AEM as a Cloud Service una volta acquisite familiarità con i passaggi precedenti del percorso. Scopri come eseguire la migrazione di produzione iniziale e le best practice da seguire per la migrazione a AEM as a Cloud Service.
 
 ## Migrazione iniziale alla produzione {#initial-migration}
 
-Prima di eseguire la migrazione di produzione, segui i passaggi di installazione e verifica della migrazione descritti in [Strategia e tempistica di migrazione dei contenuti](/help/journey-migration/implementation.md##strategy-timeline) sezione del [Fase di implementazione](/help/journey-migration/implementation.md).
+Prima di poter eseguire la migrazione di produzione, segui i passaggi di installazione e verifica della migrazione descritti in [Strategia e tempistica di migrazione dei contenuti](/help/journey-migration/implementation.md##strategy-timeline) sezione del [Fase di implementazione](/help/journey-migration/implementation.md).
 
 * Avvia la migrazione dalla produzione in base all’esperienza acquisita durante la fase di migrazione AEM as a Cloud Service eseguita sui cloni:
    * Autore-Autore
@@ -95,11 +95,11 @@ Ricorda che il carico sulla sorgente dell’AEM è maggiore durante la fase di e
 
 ## Limitazioni note {#known-limitations}
 
-Tieni presente che l’intera acquisizione non riesce se una qualsiasi delle seguenti limitazioni viene trovata come parte del set di migrazione estratto:
+Considera che l’intera acquisizione non riesce se una qualsiasi delle seguenti limitazioni viene trovata come parte del set di migrazione estratto:
 
 * Un nodo JCR con un nome che supera i 150 caratteri
 * Un nodo JCR di dimensioni superiori a 16 MB
-* Qualsiasi utente/gruppo con `rep:AuthorizableID` in fase di acquisizione, già presente nell’AEM as a Cloud Service
+* Qualsiasi utente/gruppo con `rep:AuthorizableID` in fase di acquisizione che è già presente nell’AEM as a Cloud Service
 * Se una risorsa estratta e acquisita viene spostata in un percorso diverso nell’origine o nella destinazione prima della successiva iterazione della migrazione.
 
 ## Integrità risorsa {#asset-health}
@@ -120,7 +120,7 @@ Rivedi questo elenco di attività per assicurarti di eseguire una migrazione flu
    * [Test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Test dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md)
 * Migra i contenuti alla produzione e assicurati che un sottoinsieme rilevante sia disponibile nell’area di staging per il test.
-   * Tieni presente che le best practice per DevOps per AEM implicano che il codice passi dallo sviluppo all’ambiente di produzione, mentre il contenuto si sposta dagli ambienti di produzione.
+   * Le best practice per i DevOps per l’AEM implicano che il codice passi dallo sviluppo all’ambiente di produzione, mentre il contenuto scende dagli ambienti di produzione.
 * Pianifica un periodo di blocco del codice e dei contenuti.
    * Vedi anche la sezione [Timeline di blocco del codice e dei contenuti per la migrazione](#code-content-freeze)
 * Eseguire l’integrazione del contenuto finale.

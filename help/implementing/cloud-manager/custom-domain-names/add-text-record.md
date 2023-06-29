@@ -2,16 +2,16 @@
 title: Aggiunta di un record TXT
 description: Scopri come aggiungere un record TXT per l’aggiunta di un nome di dominio personalizzato in Cloud Manager.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 491e710223c5878bfa81c4b0a57d18ec0ec29479
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '329'
+ht-degree: 96%
 
 ---
 
 # Aggiunta di un record TXT {#adding-txt}
 
-Un record TXT DNS fornisce l’autorizzazione per ospitare un dominio in un servizio CDN. Crea il record TXT DNS nella zona che autorizza Cloud Manager a distribuire il servizio CDN con il dominio personalizzato e associalo al servizio back-end. Questa associazione è interamente sotto il tuo controllo e autorizza Cloud Manager a distribuire contenuti dal servizio a un dominio. Tale autorizzazione può essere sia concessa sia revocata. Il record TXT è specifico del dominio e dell’ambiente di Cloud Manager.
+Un record TXT DNS fornisce l’autorizzazione per ospitare un dominio in un servizio CDN. Crea il record TXT DNS nella zona che autorizza Cloud Manager a distribuire il servizio CDN con il dominio personalizzato e associalo al servizio back-end. Questa associazione è interamente sotto il tuo controllo e autorizza Cloud Manager a distribuire contenuti dal servizio a un dominio. Tale autorizzazione può essere concessa e revocata. Il record TXT è specifico del dominio e dell’ambiente di Cloud Manager.
 
 Prima di aggiungere un record TXT è necessario soddisfare i requisiti riportati di seguito.
 
@@ -23,7 +23,7 @@ Quando avvii la verifica del dominio, Cloud Manager indica il nome e il valore T
 1. Accedi all’host del dominio e individua la sezione relativa ai record DNS.
 1. Aggiungi `_aemverification.[yourdomainname]` come valore del **Nome**, quindi aggiungi il valore TXT esattamente come visualizzato.
 
-Fai riferimento agli esempi in questa tabella.
+Vedi gli esempi in questa tabella.
 
 | Dominio | Nome | Valore TXT |
 |--- |--- |---|

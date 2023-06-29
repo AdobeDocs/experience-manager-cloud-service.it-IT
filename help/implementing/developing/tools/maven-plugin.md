@@ -2,9 +2,9 @@
 title: Plug-in Maven pacchetto di contenuti Adobe
 description: Utilizza il plug-in Maven Content Package per distribuire le applicazioni AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1838'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ AEM as a Cloud Service aderisce alle best practice più recenti per la gestione 
 
 >[!TIP]
 >
->Per maggiori dettagli, vedi [Struttura dei progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) nella documentazione as a Cloud Service dell&#39;AEM, nonché [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) documentazione. Entrambi sono pienamente supportati per AEM 6.5.
+>Per maggiori dettagli, vedi [Struttura dei progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) nella documentazione as a Cloud Service dell&#39;AEM e nella [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) documentazione. Entrambi sono pienamente supportati per AEM 6.5.
 
 ## Ottenere il plug-in Maven del pacchetto di contenuti {#obtaining-the-content-package-maven-plugin}
 
@@ -135,7 +135,7 @@ Oltre ai seguenti parametri, consulta le descrizioni in [Parametri comuni](#comm
 
 ### ls {#ls}
 
-Elenca i pacchetti distribuiti in [Gestione pacchetti.](/help/implementing/developing/tools/package-manager.md)
+Elenca i pacchetti distribuiti in [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md).
 
 #### Parametri {#parameters-2}
 
@@ -143,7 +143,7 @@ Tutti i parametri dell’obiettivo ls sono descritti in [Parametri comuni](#comm
 
 ### rm {#rm}
 
-Rimuove un pacchetto da [Gestione pacchetti.](/help/implementing/developing/tools/package-manager.md)
+Rimuove un pacchetto da [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md).
 
 #### Parametri {#parameters-3}
 
@@ -229,7 +229,7 @@ Se il filtro non contiene `mode` , il valore predefinito di `replace` viene util
 
 ## Inclusione di un&#39;immagine di anteprima o di un file delle proprietà nel pacchetto {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-Sostituire i file di configurazione del pacchetto predefiniti per personalizzare le proprietà del pacchetto. Ad esempio, includi una miniatura per distinguere il pacchetto in [Gestione pacchetti.](/help/implementing/developing/tools/package-manager.md)
+Sostituire i file di configurazione del pacchetto predefiniti per personalizzare le proprietà del pacchetto. Ad esempio, includi una miniatura per distinguere il pacchetto in [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md).
 
 I file di origine possono trovarsi in qualsiasi punto del file system. Nel file POM, definisci le risorse di build per copiare i file sorgente in `target/vault-work/META-INF` da includere nel pacchetto.
 
@@ -238,7 +238,7 @@ Il codice POM seguente aggiunge i file nel `META-INF` cartella dell&#39;origine 
 ```xml
 <build>
     <resources>
-        <!-- vault META-INF resources (thumbnail etc.) -->
+        <!-- vault META-INF resources (thumbnail and so on) -->
         <resource>
             <directory>${basedir}/src/main/content/META-INF</directory>
             <targetPath>../vault-work/META-INF</targetPath>
@@ -267,4 +267,4 @@ L’archetipo del progetto AEM più recente implementa la struttura di pacchetti
 
 >[!TIP]
 >
->Per maggiori dettagli, vedi [Struttura dei progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) nella documentazione as a Cloud Service dell&#39;AEM, nonché [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) documentazione. Entrambi sono pienamente supportati per AEM 6.5.
+>Per maggiori dettagli, vedi [Struttura dei progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) nella documentazione as a Cloud Service dell&#39;AEM e nella [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) documentazione. Entrambi sono pienamente supportati per AEM 6.5.

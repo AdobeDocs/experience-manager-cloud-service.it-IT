@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Come pubblicare e annullare la pubblicazione di pagine con AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 77%
+source-wordcount: '1802'
+ht-degree: 73%
 
 ---
 
@@ -81,7 +81,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 >[!NOTE]
 >
->La pubblicazione dall’editor è “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
+>La pubblicazione dall’editor è superficiale, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
 #### Gestisci pubblicazione  {#manage-publication}
 
-**Gestisci pubblicazione** offre più opzioni rispetto alla **Pubblicazione rapida** e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili. Consente inoltre di pubblicare la pagina in un secondo momento.
+**Gestisci pubblicazione** offre più opzioni di **Pubblicazione rapida**, consentendo l’inclusione di pagine figlie, la personalizzazione dei riferimenti e l’avvio di tutti i flussi di lavoro applicabili e offrendo la possibilità di pubblicare in una data successiva.
 
 Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblicazione:
 
@@ -203,7 +203,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    >[!NOTE]
    >
-   >Il **Flussi di lavoro** Il passaggio viene visualizzato in base ai diritti di cui dispone l’utente. Vedi la nota precedente su questa pagina per quanto riguarda i privilegi di pubblicazione, nonché gli argomenti Gestione dell’accesso ai flussi di lavoro e [Applicazione dei flussi di lavoro alle pagine](/help/sites-cloud/authoring/workflows/applying.md) per ulteriori dettagli.
+   >Il **Flussi di lavoro** Il passaggio viene visualizzato in base ai diritti di cui dispone l’utente. Consulta la nota precedente su questa pagina per quanto riguarda i privilegi di pubblicazione e la gestione dell’accesso ai flussi di lavoro e [Applicazione dei flussi di lavoro alle pagine](/help/sites-cloud/authoring/workflows/applying.md) per i dettagli.
 
    Le risorse sono raggruppate in base ai flussi di lavoro attivati e a ciascuna opzione specificata per:
 

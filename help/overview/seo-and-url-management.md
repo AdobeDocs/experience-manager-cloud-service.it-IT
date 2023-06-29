@@ -2,9 +2,9 @@
 title: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 description: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3706'
 ht-degree: 95%
 
 ---
@@ -459,7 +459,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Inoltre, la funzionalità implementata per le sitemap XML può essere utilizzata anche in casi d’uso diversi, ad esempio per aggiungere il collegamento canonico o la lingua nell’intestazione di una pagina. Fai riferimento all’interfaccia [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) per ulteriori informazioni.
+Inoltre, la funzionalità implementata per le sitemap XML può essere utilizzata anche in casi d’uso diversi, ad esempio per aggiungere il collegamento canonico o la lingua nell’intestazione di una pagina. Consulta la [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) per ulteriori informazioni.
 
 ### Creazione di reindirizzamenti 301 per gli URL legacy {#creating-redirects-for-legacy-urls}
 

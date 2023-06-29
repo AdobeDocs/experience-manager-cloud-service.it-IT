@@ -2,10 +2,10 @@
 title: Registrazione, accesso e profilo utente
 description: Scopri di più su Registrazione, Accesso, Dati utente e Sincronizzazione dei gruppi per AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 90%
+source-wordcount: '1167'
+ht-degree: 88%
 
 ---
 
@@ -100,7 +100,7 @@ Le informazioni sul profilo utente possono essere scritte e lette in due modi:
 
 I dati dell’utente finale possono essere inviati a fornitori di terze parti come CRM e recuperati tramite API al momento dell’accesso dell’utente a AEM e memorizzati (o aggiornati) sul nodo del profilo dell’utente AEM, e utilizzati in base alle esigenze.
 
-È possibile accedere in tempo reale a servizi di terze parti per recuperare gli attributi del profilo, tuttavia è importante assicurarsi che questo non influisca materialmente sull’elaborazione delle richieste in AEM.
+È possibile accedere in tempo reale a servizi di terze parti per recuperare gli attributi del profilo, tuttavia è importante assicurarsi che questo non influisca materialmente sull’elaborazione delle richieste nell’AEM.
 
 ## Autorizzazioni (gruppi di utenti chiusi) {#permissions-closed-user-groups}
 

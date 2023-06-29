@@ -2,7 +2,7 @@
 title: Configurare le regole di traduzione per i contenuti headless
 description: Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 98%
@@ -27,7 +27,7 @@ Ora che il connettore è configurato, questo articolo illustra il passaggio succ
 >Questo passaggio del percorso di documentazione è necessario solo se non utilizzi il contrassegno **Traducibile** nei frammenti di contenuto.
 >
 >* Il contrassegno **Traducibile** crea automaticamente le regole di traduzione per te e non richiede alcun intervento.
->* Il contrassegno **Traducibile** viene utilizzato solo se la configurazione del Framework di integrazione della traduzione è impostata su **[Abilita i campi del modello di contenuto per la traduzione.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* Il contrassegno **Traducibile** viene utilizzato solo se la configurazione del Framework di integrazione della traduzione è impostata su **[Abilita i campi del modello di contenuto per la traduzione](/help/sites-cloud/administering/translation/integration-framework.md)**.
 >* L’abilitazione di questa opzione nella configurazione TIF sostituirà eventuali regole di traduzione create manualmente.|
 
 ## Obiettivo {#objective}

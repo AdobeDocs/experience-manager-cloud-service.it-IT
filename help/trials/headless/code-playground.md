@@ -4,10 +4,10 @@ description: Scopri come recuperare i contenuti JSON dall’ambiente di prova co
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 57%
+source-wordcount: '981'
+ht-degree: 55%
 
 ---
 
@@ -120,4 +120,4 @@ Questa query genera una risposta JSON che include immagini e il `resultToDom()` 
 
 ![Risultato della query adventures-all e della funzione di rendering resultToDom](assets/do-not-localize/adventures-all-query-result.png)
 
-Ora che hai creato modelli e query, il tuo team addetto ai contenuti può procedere con il lavoro. Nel modulo successivo viene mostrato il flusso dell’autore di contenuto.
+Ora che hai completato il lavoro per creare modelli e query, il team dei contenuti può sostituirli con facilità. Nel modulo successivo viene mostrato il flusso dell’autore di contenuto.

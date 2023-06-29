@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 33%
+source-wordcount: '1437'
+ht-degree: 29%
 
 ---
 
@@ -48,7 +48,7 @@ La prossima versione è pianificata per il 15 luglio 2021.
 
 ### Novità {#what-is-new-junecm}
 
-* Ora il servizio di anteprima viene distribuito su base continua per tutti i programmi. I clienti ricevono una notifica interna al prodotto quando il programma è abilitato per il servizio Anteprima. Per ulteriori informazioni, consulta [Accedere al servizio di anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+* Ora il servizio di anteprima viene distribuito su base continua per tutti i programmi. I clienti ricevono una notifica interna al prodotto quando il programma è abilitato per il servizio Anteprima. Consulta [Accesso al servizio di anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) per ulteriori dettagli.
 
 * Ora le dipendenze Maven scaricate durante la fase di build vengono memorizzate nella cache tra le esecuzioni della pipeline. La funzione verrà attivata per i clienti nelle prossime settimane.
 
@@ -60,15 +60,15 @@ La prossima versione è pianificata per il 15 luglio 2021.
 
 * La regola di qualità `ImmutableMutableMixCheck` è stata aggiornata per classificare i nodi `/oak:index` come non modificabili.
 
-* Le regole di qualità `CQBP-84` e `CQBP-84--dependencies` sono state consolidate in un’unica regola. Come parte di tale consolidamento, la scansione delle dipendenze identifica più accuratamente i problemi nelle dipendenze di terze parti che vengono distribuiti nel runtime di AEM.
+* Le regole di qualità `CQBP-84` e `CQBP-84--dependencies` sono state consolidate in un’unica regola. Come parte di questo consolidamento, la scansione delle dipendenze identifica più accuratamente i problemi nelle dipendenze di terze parti che vengono distribuiti nel runtime AEM.
 
 * Per evitare confusione, nella pagina Dettagli dell’ambiente sono state consolidate le righe del segmento Pubblica AEM e Pubblica Dispatcher.
 
   ![Ambienti di Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* È stata aggiunta una nuova regola di qualità del codice per convalidare la struttura degli indici `damAssetLucene`. Per ulteriori informazioni, consulta [Indici Oak DAM Asset Lucene personalizzati](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check).
+* È stata aggiunta una nuova regola di qualità del codice per convalidare la struttura degli indici `damAssetLucene`. Consulta [Indici Oak Lucene delle risorse DAM personalizzati](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) per ulteriori dettagli.
 
-* Ora nella pagina Dettagli dell’ambiente vengono visualizzati più nomi di dominio per i servizi Publish e Anteprima (a seconda dei casi). Per ulteriori informazioni, consulta [Dettagli dell’ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
+* Ora nella pagina Dettagli dell’ambiente vengono visualizzati più nomi di dominio per i servizi Publish e Anteprima (a seconda dei casi). Consulta [Dettagli dell’ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) per ulteriori dettagli.
 
 ### Correzioni di bug {#bug-fixes-junecm}
 

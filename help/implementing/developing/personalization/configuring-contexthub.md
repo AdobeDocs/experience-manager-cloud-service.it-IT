@@ -2,9 +2,9 @@
 title: Configurazione di ContextHub
 description: Scopri come configurare Context Hub.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1680'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Le proprietà del modulo UI includono una configurazione dettagliata in cui puoi
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | Un tipo di modulo interfaccia utente generico | Configurato nelle proprietà del modulo interfaccia utente |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | Visualizza informazioni sul browser | `surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | Visualizza informazioni su data e ora | `datetime` |
-| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | Visualizza la latitudine e la longitudine del client, nonché la posizione su una mappa. Consente di modificare la posizione. | `geolocation` |
+| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | Visualizza la latitudine e la longitudine del client e la posizione su una mappa. Consente di modificare la posizione. | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | Visualizza l&#39;orientamento dello schermo del dispositivo (orizzontale o verticale) | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Visualizza le statistiche sui tag pagina | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | Visualizza le informazioni di profilo per l&#39;utente corrente, tra cui `authorizableID`, `displayName` e `familyName`. Puoi modificare il valore di `displayName` e `familyName`. | `profile` |
@@ -159,21 +159,21 @@ Per salvare i dati dal servizio MD5 del sito jsontest.com, attenersi alla proced
 * **Attivato:** Seleziona
 * **Configurazione dettagli (JSON):**
 
-   ```javascript
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```javascript
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### Aggiunta di un modulo interfaccia utente per i dati md5 {#adding-a-ui-module-for-the-md-data}
 
@@ -187,15 +187,15 @@ Utilizza la procedura in [Aggiunta di un modulo interfaccia utente](#adding-a-ui
 * **Tipo modulo:** contexthub.base
 * **Configurazione dettagli (JSON):**
 
-   ```javascript
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Conversion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```javascript
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Conversion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## Debug di ContextHub {#debugging-contexthub}
 

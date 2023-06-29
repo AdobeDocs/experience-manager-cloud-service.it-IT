@@ -2,10 +2,10 @@
 title: Percorsi AEM Sites
 description: Inizia qui per una panoramica dei percorsi guidati disponibili per comprendere le potenti funzionalità di AEM Sites.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 100%
+source-wordcount: '418'
+ht-degree: 89%
 
 ---
 
@@ -43,4 +43,4 @@ Per gli argomenti relativi ad AEM Sites sono disponibili i seguenti Percorsi di 
 | [Percorso del componente aggiuntivo Demos di riferimento](/help/journey-sites/demos-add-on/overview.md) | Inizia qui per un percorso guidato su come aggiungere facilmente il componente aggiuntivo Demos di riferimento di AEM a un ambiente sandbox con una configurazione di AEM minima ed essere in grado di testare le potenti funzionalità di AEM con esempi ricchi basati sulle best practice. | Amministratore di sistema |
 | [Percorso Sites Translation](/help/journey-sites/translation/overview.md) | Scopri le tecnologie di AEM Sites, come utilizzarle nel progetto e come creare e aggiornare progetti di traduzione in AEM dalla A alla Z. | Specialisti della traduzione |
 
-Rimani sintonizzato per [i prossimi percorsi che includeranno ruoli aggiuntivi.](/help/journey-documentation/documentation-journeys.md#journeys)
+Rimani sintonizzato per [i prossimi percorsi che includeranno ruoli aggiuntivi](/help/journey-documentation/documentation-journeys.md#journeys).

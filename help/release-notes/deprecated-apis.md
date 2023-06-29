@@ -2,10 +2,10 @@
 title: API obsolete
 description: Note sulla versione specifiche per le API obsolete e rimosse in  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 9e722de86e925cb8de626dc16624954dfac063cc
-workflow-type: ht
-source-wordcount: '1120'
-ht-degree: 100%
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+workflow-type: tm+mt
+source-wordcount: '1116'
+ht-degree: 96%
 
 ---
 
@@ -111,7 +111,7 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>Il metatipo Apache Felix e le API SCR sono obsoleti.  Utilizza il metatipo OSGi e le API Declarative Service.</td>
+    <td>Il metatipo Apache Felix e le API SCR sono obsoleti.  Utilizza invece il metatipo OSGi e le API Declarative Service.</td>
     <td>27/05/2021</td>
     <td>rimossa</td>
   </tr>
@@ -158,7 +158,7 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http Whiteboard non è più supportato. Esegui la migrazione del codice a OSGi Http Whiteboard.</td>
+    <td>Apache Felix Http Whiteboard non è più supportato. Esegui la migrazione del codice alla lavagna OSGi Http.</td>
     <td>27/01/2022</td>
     <td>24/03/2022</td>
   </tr>

@@ -2,10 +2,10 @@
 title: Creazione di modelli di pagina
 description: Il modello definisce la struttura della pagina risultante e, con l’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4579'
-ht-degree: 57%
+source-wordcount: '4577'
+ht-degree: 56%
 
 ---
 
@@ -28,7 +28,7 @@ Il **Editor modelli** consente agli autori di modelli di:
 
 Questo documento spiega come **autore modello** può utilizzare la console e l’editor modelli per creare e gestire modelli modificabili.
 
-Per informazioni dettagliate su come funzionano i modelli modificabili a livello tecnico, consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md).
+Per informazioni dettagliate su come funzionano i modelli modificabili a livello tecnico, consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md) per ulteriori informazioni.
 
 >[!NOTE]
 >
@@ -266,7 +266,7 @@ Quando un componente è stato sbloccato, è possibile definire [contenuto inizia
 
 >[!NOTE]
 >
->Nella modalità **Contenuto iniziale** e nelle pagine risultanti, tutti i componenti sbloccati che hanno un elemento padre accessibile (ad esempio i componenti all’interno di un contenitore di layout) possono essere eliminati.
+>In entrata **Contenuto iniziale** e nelle pagine risultanti, tutti i componenti sbloccati che hanno un elemento padre accessibile (ovvero i componenti all’interno di un contenitore di layout) possono essere eliminati.
 
 #### Layout {#template-layout}
 

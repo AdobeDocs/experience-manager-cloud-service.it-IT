@@ -2,10 +2,10 @@
 title: Verifica dello stato del record DNS
 description: Scopri come determinare se la risoluzione delle impostazioni DNS avviene in modo corretto con Cloud Manager.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager esegue una ricerca DNS per il nome di dominio e visualizza uno dei
 
 * **Risoluzione DNS errata**: indica che la risoluzione della configurazione dei record DNS non è avvenuta o è errata.
 
-   * Per ulteriori informazioni, consulta il documento [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
+   * Consulta [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) per ulteriori informazioni.
    * Al termine dell’operazione, seleziona l’icona **Nuovo tentativo di risoluzione** accanto allo stato.
 
 * **Risoluzione DNS in corso**: indica che la risoluzione è in corso.

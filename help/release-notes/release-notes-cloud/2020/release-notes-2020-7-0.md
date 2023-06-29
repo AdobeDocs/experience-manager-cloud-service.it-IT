@@ -2,10 +2,10 @@
 title: Note sulla versione 2020.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.7.0 as a Cloud Service."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 82%
+source-wordcount: '1033'
+ht-degree: 78%
 
 ---
 
@@ -55,7 +55,7 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 AEM Commerce è ora disponibile su Cloud Service.
 
-Per ulteriori informazioni, consulta la [Guida introduttiva ad AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html).
+Consulta [Guida introduttiva a AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) per ulteriori dettagli.
 
 ## Componenti core {#core-components}
 
@@ -66,7 +66,7 @@ La versione 2.11.0 dei [Componenti core di AEM](https://experienceleague.adobe.c
 * Introduzione di un nuovo [componente Visualizzatore PDF](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * È ora disponibile il supporto di AMP (Accelerated Mobile Pages) per i componenti core. Consente di creare esperienze cliente più veloci, con transizioni di pagina istantanee quando si accede al sito da un risultato di ricerca Google mobile, migliorando il coinvolgimento degli utenti e la SEO (Search Engine Optimization).
-Per ulteriori informazioni, consulta [Supporto AMP per i componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html).
+Consulta [Supporto AMP per i Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) per ulteriori dettagli.
 
 * Compatibilità con la versione 1.0.2 del [Livello dati client di Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it).
 
@@ -137,7 +137,7 @@ Leggi questa sezione per saperne di più sulle novità e sugli aggiornamenti di 
 
 * La versione precedente di Cloud Readiness Analyzer non poteva girare su Adobe Experience Manager (AEM) 6.1. È stato aggiunto il supporto esplicito per gli utenti del gruppo di amministratori.
 
-  Per ulteriori informazioni, consulta [Installazione di Cloud Readiness Analyzer in AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61).
+  Consulta [Installazione di CRA in AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) per ulteriori dettagli.
 
 * Nel rapporto di riepilogo veniva visualizzata una marca temporale di scadenza errata.
 

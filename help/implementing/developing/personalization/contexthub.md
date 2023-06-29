@@ -2,16 +2,16 @@
 title: ContextHub
 description: ContextHub è un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '289'
 ht-degree: 1%
 
 ---
 
 # ContextHub {#contexthub}
 
-ContextHub è un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali. La sua funzione principale è offrire la possibilità di [visualizzare i dati contestuali durante la simulazione e il passaggio tra diversi utenti tipo.](/help/sites-cloud/authoring/personalization/contexthub.md)
+ContextHub è un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali. La sua funzione principale è offrire la possibilità di [visualizzare i dati contestuali durante la simulazione e il passaggio tra diversi utenti tipo](/help/sites-cloud/authoring/personalization/contexthub.md).
 
 ContextHub consente di:
 

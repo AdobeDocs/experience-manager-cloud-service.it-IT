@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2310'
 ht-degree: 3%
 
 ---
@@ -941,7 +941,7 @@ Un pannello include una barra degli strumenti facoltativa e il relativo contenut
  </tbody>
 </table>
 
-Il nodo del pannello è diviso in navigatori e contenuti. Lì `` `` non è un componente di stile separato per il contenuto. Le variabili descritte vengono applicate sia al navigatore che al contenuto.
+Il nodo del pannello è diviso in navigatori e contenuti. Lì `` `` non è un componente di stile separato per il contenuto. Le variabili descritte vengono applicate al navigatore e al contenuto.
 
 Il pannello più in alto (RootPanel) non ha questa classe.
 

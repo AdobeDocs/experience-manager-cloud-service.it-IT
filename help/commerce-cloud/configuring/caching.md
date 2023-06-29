@@ -2,10 +2,10 @@
 title: Memorizzazione in cache e prestazioni
 description: Scopri le diverse configurazioni disponibili per abilitare GraphQL e il caching dei contenuti per ottimizzare le prestazioni dell’implementazione di e-commerce.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
-source-git-commit: afbcd1e50a12a9b0642c586d7d81bb90ea91a58d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 44%
+source-wordcount: '840'
+ht-degree: 40%
 
 ---
 
@@ -48,7 +48,7 @@ venia/components/structure/navigation:true:10:600
 
 Considerando che il [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) viene utilizzato. Si noti l’uso del nome proxy del componente `venia/components/structure/navigation` e **non** del nome del componente di navigazione CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
-La memorizzazione nella cache per altri componenti deve essere definita in base al progetto, in genere in coordinamento con la memorizzazione nella cache configurata a livello di Dispatcher. Non è prevista l’invalidazione attiva di queste cache, pertanto la durata di memorizzazione nella cache deve essere impostata con attenzione. Non esiste un valore universale che vada bene per tutti i possibili progetti e casi di utilizzo. Occorre definire una strategia di caching a livello di progetto che corrisponda meglio ai requisiti del progetto.
+La memorizzazione nella cache per altri componenti deve essere definita in base al progetto, in genere in coordinamento con la memorizzazione nella cache configurata a livello di Dispatcher. Non è prevista l’invalidazione attiva di queste cache, pertanto la durata della memorizzazione nella cache deve essere impostata con attenzione. Non esiste un valore universale che corrisponda a tutti i possibili progetti e casi d’uso. Occorre definire una strategia di caching a livello di progetto che corrisponda meglio ai requisiti del progetto.
 
 ## Memorizzazione in cache di Dispatcher {#dispatcher}
 

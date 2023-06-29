@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -87,7 +87,7 @@ Per utilizzare la funzionalità Media Library, è possibile utilizzare il [!DNL 
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
-As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
+As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
@@ -102,19 +102,18 @@ Non è possibile utilizzare smart tag, [!DNL Asset] collegamento, [!DNL Asset] s
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
 >* [Funzioni DAM in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=it)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
-

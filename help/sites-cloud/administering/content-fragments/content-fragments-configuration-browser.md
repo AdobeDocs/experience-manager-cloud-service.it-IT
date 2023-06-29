@@ -4,7 +4,7 @@ description: Scopri come abilitare le funzionalità Frammento di contenuto e Gra
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 34%
@@ -62,7 +62,7 @@ Per utilizzare alcuni [Funzionalità Frammento di contenuto](#creating-a-content
 
    1. Specificare un **Titolo**.
    1. Il **Nome** diventa il nome del nodo nell’archivio.
-      * Viene generato automaticamente in base al titolo e regolato secondo [Convenzioni di denominazione AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Viene generato automaticamente in base al titolo e regolato secondo [Convenzioni di denominazione AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Se necessario è possibile regolarlo.
    1. Per attivarne l’uso, seleziona
       * **Modelli per frammenti di contenuto**

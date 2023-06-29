@@ -2,10 +2,10 @@
 title: Creazione e organizzazione delle pagine
 description: Creare e organizzare le pagine con AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 69%
+source-wordcount: '2539'
+ht-degree: 67%
 
 ---
 
@@ -176,7 +176,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
 
 1. Apri la console Sites (ad esempio `https://<host>:<port>/sites.html/content`.
 1. Passa alla posizione in cui desideri creare la nuova pagina.
-1. Apri il selettore a discesa utilizzando l’opzione **Crea** nella barra degli strumenti, quindi seleziona **Pagina** dall’elenco:
+1. Apri il selettore a discesa utilizzando **Crea** nella barra degli strumenti, seleziona **Pagina** dall’elenco:
 
    ![Creazione di una pagina](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -387,7 +387,7 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull’esecuzione asincrona dei processi e su come configurare il limite per le azioni di spostamento o ridenominazione delle pagine, consulta il documento [Processi asincroni](/help/operations/asynchronous-jobs.md) nella guida utente per le operazioni.
+>Per ulteriori informazioni sull’elaborazione asincrona dei processi e su come configurare il limite per le azioni di spostamento o ridenominazione delle pagine, consulta [Processi asincroni](/help/operations/asynchronous-jobs.md) nella guida utente per le operazioni.
 
 ### Eliminazione di una pagina {#deleting-a-page}
 
@@ -405,7 +405,7 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
    ![Finestra di dialogo Elimina](/help/sites-cloud/authoring/assets/delete-page.png)
 
    * **Intendi archiviare le pagine prima di eliminarle?** - Se questa opzione è selezionata, al momento dell’eliminazione vengono create versioni delle pagine selezionate da eliminare.
-      * [Le versioni possono essere ripristinate in un momento successivo.](/help/sites-cloud/authoring/features/page-versions.md)
+      * [Le versioni possono essere ripristinate in un momento successivo](/help/sites-cloud/authoring/features/page-versions.md).
       * Le pagine eliminate senza versioni precedenti non possono essere ripristinate.
    * **Annulla** per interrompere l&#39;azione
    * **Elimina** per confermare l’azione:

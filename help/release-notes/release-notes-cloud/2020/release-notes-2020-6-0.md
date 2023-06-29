@@ -2,10 +2,10 @@
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.6.0'
 description: 'Experience Manager: note sulla versione 2020.6.0 di'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 92%
+source-wordcount: '1931'
+ht-degree: 90%
 
 ---
 
@@ -60,11 +60,11 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * Ora l’utente con il ruolo *Proprietario business* in Cloud Manager può eliminare un programma sandbox dalla pagina di destinazione (tramite il pulsante di azione rapida nella scheda Programma) o dall’interno del programma.
 
-  Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=it).
+  Consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=it) per ulteriori dettagli.
 
-* Ora l’utente del programma sandbox con il ruolo di *Proprietario business* o *Responsabile dell’implementazione* in Cloud Manager può eliminare il set di ambienti di produzione e di staging impostato tramite l’interfaccia utente di Cloud Manager. L’opzione di eliminazione è ora disponibile sia nella scheda Ambiente nella pagina **Panoramica dei programmi**, sia nella pagina **Ambienti**. Selezionando l’opzione di eliminazione nell’ambiente di produzione o staging, viene eliminato anche l’altro nel set.
+* Ora l’utente del programma sandbox con il ruolo di *Proprietario business* o *Responsabile dell’implementazione* in Cloud Manager può eliminare il set di ambienti di produzione e di staging impostato tramite l’interfaccia utente di Cloud Manager. L’opzione di eliminazione è ora disponibile sia nella scheda Ambiente nella **Panoramica dei programmi** pagina e **Ambienti** pagina. Selezionando l’opzione di eliminazione nell’ambiente di produzione o staging, viene eliminato anche l’altro nel set.
 
-  Per ulteriori informazioni, consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=it).
+  Consulta [Eliminazione di un programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=it) per ulteriori dettagli.
 
 * Delle descrizioni sulla pagina di destinazione forniscono all’utente istruzioni di base sulla navigazione.
 
@@ -76,11 +76,11 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * Un utente con il ruolo SysAdmin ora ha accesso con un solo clic alla posizione in Admin Console da cui è possibile gestire i ruoli o le autorizzazioni degli utenti per Cloud Manager. Nella pagina di destinazione è ora disponibile un pulsante **Gestisci accesso** accanto al pulsante **Aggiungi programma**.
 
-  Per ulteriori informazioni, consulta [Attività SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#sysadmin-tasks).
+  Consulta [Attività SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#sysadmin-tasks) per ulteriori dettagli.
 
 * Un utente con il ruolo SysAdmin ora dispone dell’accesso con un solo clic all’istanza di authoring direttamente da Cloud Manager.
 
-  Per ulteriori informazioni, consulta [Gestione dell’accesso all’istanza di authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#manage-access-aem).
+  Consulta [Gestione dell’accesso all’istanza di authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#manage-access-aem) per ulteriori dettagli.
 
 * Il registro Build ora include l’elenco degli artefatti individuati, inclusi i pacchetti di contenuti saltati.
 

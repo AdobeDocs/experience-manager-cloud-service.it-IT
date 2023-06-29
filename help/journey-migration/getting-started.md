@@ -2,9 +2,9 @@
 title: Guida introduttiva del Percorso di migrazione all’AEM as a Cloud Service
 description: Inizia il tuo percorso di migrazione acquisendo familiarità con le nozioni di base sul passaggio ad AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 24%
 
 ---
@@ -15,7 +15,7 @@ In questa sezione del Percorso di migrazione as a Cloud Service dell’AEM scopr
 
 ## Obiettivo {#objective}
 
-Questo documento spiega perché utilizzare una versione cloud nativa dell’AEM, nonché le diverse fasi di migrazione a AEM as a Cloud Service. Dopo la lettura, dovresti:
+Questo documento spiega perché utilizzare una versione cloud nativa dell’AEM e le diverse fasi di migrazione a AEM as a Cloud Service. Dopo la lettura, dovresti:
 
 * Comprendere i vantaggi del movimento dell’AEM as a Cloud Service
 * Acquisisci familiarità con i passaggi generali che devi compiere per poter passare al cloud

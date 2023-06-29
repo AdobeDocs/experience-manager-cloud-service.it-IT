@@ -2,10 +2,10 @@
 title: Archivi di Cloud Manager
 description: Scopri come creare, visualizzare ed eliminare gli archivi Git in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 96%
+source-wordcount: '575'
+ht-degree: 88%
 
 ---
 
@@ -38,7 +38,7 @@ Seleziona l’archivio nella tabella e fai clic sul pulsante con i puntini di so
 
 ![Opzioni dell’archivio](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-Gli archivi creati in Cloud Manager sono disponibili per la selezione anche quando aggiungi o modifichi le pipeline. Per ulteriori informazioni, consulta il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
+Gli archivi creati in Cloud Manager sono disponibili per la selezione anche quando aggiungi o modifichi le pipeline. Consulta [Pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) per ulteriori informazioni.
 
 Esiste un singolo archivio principale o ramo per ogni pipeline. Grazie al [supporto per i moduli Git secondari](#git-submodule-support), molti rami secondari possono essere aggiunti al momento della generazione.
 
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 Questa tecnica rappresenta una potenziale alternativa alla soluzione descritta nel documento [Utilizzo di più archivi Git di origine](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) per le organizzazioni che hanno familiarità con l’utilizzo dei moduli Git secondari e non desiderano gestire un processo di unione esterno.
 
-Supponiamo ad esempio la presenza di tre archivi, ciascuno contenente un singolo ramo denominato `main`. Nell’archivio principale, ovvero quello configurato nelle pipeline, il ramo `main` include un file `pom.xml` dove sono riportati i progetti contenuti negli altri due archivi.
+Supponiamo ad esempio la presenza di tre archivi, ciascuno contenente un singolo ramo denominato `main`. Nell’archivio principale, ovvero quello configurato nelle pipeline, `main` il ramo ha un `pom.xml` file che dichiara i progetti contenuti negli altri due archivi.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

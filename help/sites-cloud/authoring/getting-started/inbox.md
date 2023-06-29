@@ -2,10 +2,10 @@
 title: Casella in entrata
 description: Gestione delle attività con la casella in entrata
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 74%
+source-wordcount: '906'
+ht-degree: 71%
 
 ---
 
@@ -25,7 +25,7 @@ Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visual
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui tipi di elemento, vedi anche:
+>Per ulteriori informazioni sui tipi di elemento, vedere:
 >
 >* [Progetti](/help/sites-cloud/authoring/projects/overview.md)
 >* [Progetti - Utilizzo delle attività](/help/sites-cloud/authoring/projects/tasks.md)
@@ -102,7 +102,7 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
   ![Casella in entrata - Impostazioni della vista a elenco](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  Puoi anche delegare il calendario ad altri utenti, nonché richiedere la delega ad altri utenti e gestire le tue deleghe.
+  Puoi anche delegare il calendario ad altri utenti e richiedere la delega ad altri utenti, nonché gestire le tue deleghe.
 
   ![Casella in entrata - Impostazioni di delega della vista a elenco](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -132,7 +132,7 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni, consulta:
+   >Per ulteriori informazioni, vedi:
    >
    >* Elementi del flusso di lavoro - [Partecipazione ai flussi di lavoro](/help/sites-cloud/authoring/workflows/participating.md)
 

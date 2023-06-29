@@ -2,10 +2,10 @@
 title: Supporto IMS per Adobe Experience Manager as a Cloud Service
 description: Supporto di Image Management System per Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 40%
+source-wordcount: '1993'
+ht-degree: 39%
 
 ---
 
@@ -106,7 +106,7 @@ Ulteriori informazioni sulle nuove funzioni per i gruppi sono disponibili [qui](
 
 **Documentazione di User Sync**
 
-Per ulteriori informazioni, consulta la [documentazione di User Sync](https://adobe-apiplatform.github.io/user-sync.py/en/).
+Consulta [Documentazione di User Sync](https://adobe-apiplatform.github.io/user-sync.py/en/) per ulteriori dettagli.
 
 Lo strumento User Sync deve essere registrato come client UMAPI di Adobe Developer seguendo la procedura [qui](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
@@ -214,7 +214,7 @@ Come mostrato di seguito, il gruppo **AEM-GRP_008** eredita le autorizzazioni e 
 
 Per poter accedere a Cloud Manager o ad ambienti su AEM as a Cloud Service, devi essere assegnato ai Profili del prodotto Cloud Manager.
 
-Per ulteriori informazioni sui ruoli degli utenti che determinano la disponibilità di funzionalità specifiche in Cloud Manager, consulta le definizioni dei ruoli.
+Per ulteriori informazioni sui ruoli degli utenti che determinano la disponibilità di funzionalità specifiche in Cloud Manager, consulta Definizioni dei ruoli.
 
 >[!NOTE]
 >Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. Per informazioni su ciascuno dei ruoli con autorizzazioni specifiche, attività preconfigurate o autorizzazioni associate a ciascun ruolo, consulta [Autorizzazioni basate sul ruolo](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).

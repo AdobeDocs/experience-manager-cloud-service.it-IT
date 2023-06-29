@@ -4,9 +4,9 @@ description: Utilizzo dello strumento di mappatura utenti (legacy)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '829'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Per configurare questa configurazione, segui i passaggi seguenti:
 
 ## Accesso all&#39;interfaccia utente per lo strumento di mappatura utenti {#user-interface}
 
-Lo strumento di mappatura utenti è integrato nello strumento Content Transfer (Trasferimento contenuti). Puoi scaricare lo strumento Content Transfer (Trasferimento contenuti) da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html). Per ulteriori dettagli sull’ultima versione, consulta [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md).
+Lo strumento di mappatura utenti è integrato nello strumento Content Transfer (Trasferimento contenuti). Puoi scaricare lo strumento Content Transfer (Trasferimento contenuti) da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html). Per maggiori dettagli sull’ultima versione, consulta [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Migrazione dei contenuti**.
 

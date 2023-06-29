@@ -4,10 +4,10 @@ description: Scopri come creare e gestire progetti di traduzione automatica e um
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4085'
-ht-degree: 97%
+source-wordcount: '4078'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ I progetti di traduzione consentono di gestire la traduzione dei contenuti AEM. 
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta la [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti AEM Sites utilizzando potenti strumenti di traduzione AEM, ideale per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti AEM Sites utilizzando potenti strumenti di traduzione AEM, ideale per chi non ha esperienza di AEM o traduzione.
 
 Quando si aggiungono risorse a un progetto di traduzione, viene creato un processo di traduzione apposito. I processi forniscono i comandi e le informazioni sullo stato, utili per gestire i flussi di lavoro di traduzione umana e automatica che vengono eseguiti sulle risorse.
 
@@ -196,7 +196,7 @@ Nei casi in cui viene utilizzata una memoria di traduzione proprietaria, gli agg
 
 È possibile selezionare una proprietà nella vista a elenco della console Sites per verificare se una pagina è stata tradotta, è in traduzione o non è ancora stata tradotta.
 
-1. Nella console Sites, passa a [vista a elenco.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. Nella console Sites, passa a [vista a elenco](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Tocca o fai clic su **Visualizza impostazioni** nel menu a discesa.
 1. Nella finestra di dialogo, seleziona la proprietà **Tradotto** e tocca o fai clic su **Aggiorna**.
 
@@ -210,7 +210,7 @@ Nella console Progetti è possibile accedere a numerose attività di traduzione 
 
 ### Informazioni sulla console Progetti
 
-I progetti di traduzione in AEM utilizzano la console standard [Progetti AEM.](/help/sites-cloud/authoring/projects/overview.md) Se non conosci Progetti AEM, consulta la relativa documentazione.
+I progetti di traduzione in AEM utilizzano la console standard [Progetti AEM](/help/sites-cloud/authoring/projects/overview.md). Se non conosci i progetti AEM, consulta la relativa documentazione.
 
 Come qualsiasi altro progetto, un progetto di traduzione è costituito da riquadri che presentano una panoramica delle attività del progetto.
 
@@ -277,7 +277,7 @@ Puoi aggiungere pagine, risorse o tag al processo del progetto di traduzione. Pe
 
 ### Aggiunta di tag a un processo di traduzione {#adding-tags-to-a-translation-job}
 
-Puoi aggiungere tag a un progetto di traduzione in modo analogo a [come aggiungi risorse e pagine a un progetto.](#adding-pages-assets-to-a-translation-job) Seleziona **Tag** nel menu **Aggiungi** quindi segui gli stessi passaggi.
+Puoi aggiungere tag a un progetto di traduzione in modo analogo a [come aggiungi risorse e pagine a un progetto](#adding-pages-assets-to-a-translation-job). Seleziona **Tag** nel menu **Aggiungi** quindi segui gli stessi passaggi.
 
 ### Visualizzazione dei dettagli del progetto di traduzione {#seeing-translation-project-details}
 
@@ -303,7 +303,7 @@ Quando un progetto viene creato utilizzando la barra dei riferimenti di una pagi
 
 ### Monitoraggio dello stato di un processo di traduzione {#monitoring-the-status-of-a-translation-job}
 
-Il riquadro del processo di un progetto di traduzione fornisce lo stato del processo nonché il numero di pagine e risorse che ne fanno parte.
+Il riquadro del processo di un progetto di traduzione fornisce lo stato di un processo di traduzione e il numero di pagine e risorse in esso contenute.
 
 ![Processo di traduzione](../assets/translation-job.png)
 
@@ -344,7 +344,7 @@ Specifica la data prima della quale il fornitore di traduzione deve restituire i
 
 La valutazione di un processo di traduzione serve per ottenere una stima del costo dal fornitore del servizio. Quando si esegue la valutazione di un processo, i file di origine vengono inviati al fornitore di traduzione che confronta il testo con il proprio pool di traduzioni memorizzate (memoria di traduzione). In genere, la valutazione corrisponde al numero di parole che devono essere tradotte.
 
-Per ottenere ulteriori informazioni sui risultati della valutazione, contatta il fornitore della traduzione.
+Per ottenere ulteriori informazioni sui risultati dell’ambito, contatta il fornitore di traduzione.
 
 >[!NOTE]
 >
@@ -437,7 +437,7 @@ Quando il contenuto viene tradotto per una copia per lingua esistente, rivedi le
 Per confrontare le copie per lingua con il master:
 
 1. Nella console Sites individua la copia per lingua da confrontare.
-1. Apri la [Barra dei riferimenti.](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)
+1. Apri la [Barra dei riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
 1. Sotto l’intestazione **Copie** seleziona **Copie per lingua.**
 1. Seleziona la specifica copia per lingua e fai clic su **Confronta con master** o **Confronta con precedente** se del caso.
 

@@ -2,10 +2,10 @@
 title: Creare un sito da un modello
 description: Scopri come creare rapidamente un nuovo sito AEM utilizzando un modello di sito.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 97%
+source-wordcount: '1506'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ Questa parte del percorso vale per l’amministratore AEM.
 
 ## Modelli per siti {#site-templates}
 
-I modelli di sito consentono di combinare i contenuti di base del sito in un pacchetto semplice e riutilizzabile. Per consentire un rapido avvio del nuovo sito, i modelli di sito generalmente contengono il contenuto e la struttura di base del sito, nonché informazioni sullo stile. La struttura effettiva è la seguente:
+I modelli di sito consentono di combinare i contenuti di base del sito in un pacchetto semplice e riutilizzabile. I modelli di sito generalmente contengono il contenuto e le informazioni sulla struttura e sullo stile del sito di base per iniziare rapidamente a creare un nuovo sito. La struttura effettiva è la seguente:
 
 * `files`: cartella con il kit dell’interfaccia utente, file XD ed eventualmente altri file
 * `previews`: cartella con le schermate del modello di sito

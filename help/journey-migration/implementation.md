@@ -2,7 +2,7 @@
 title: Fase di implementazione
 description: Assicurarsi che il codice e il contenuto siano pronti per la migrazione al cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 9%
@@ -15,7 +15,7 @@ Nella fase di implementazione del percorso, esplorerai gli strumenti attraverso 
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nelle parti precedenti del percorso, hai superato [familiarità con i cambiamenti dell’AEM as a Cloud Service](/help/journey-migration/getting-started.md), nonché per determinare se la distribuzione è pronta per essere spostata nel cloud con [fase di preparazione](/help/journey-migration/readiness.md).
+Nelle parti precedenti del percorso, hai superato [familiarità con i cambiamenti dell’AEM as a Cloud Service](/help/journey-migration/getting-started.md)e determina se la distribuzione è pronta per essere spostata nel cloud con il [fase di preparazione](/help/journey-migration/readiness.md).
 
 Questo articolo continua con consigli su come utilizzare gli strumenti forniti da Adobe per assicurarsi che il codice e il contenuto siano pronti per essere spostati nel cloud.
 
@@ -256,4 +256,4 @@ Nella sezione seguente sono illustrati i passaggi importanti e le attività asso
 
 ## Passaggio successivo {#what-is-next}
 
-Una volta compreso appieno come valutare se l’installazione dell’AEM è pronta per essere spostata sul cloud, mentre impariamo a utilizzare gli strumenti necessari per prepararla, è ora di passare al [fase di pubblicazione](/help/journey-migration/go-live.md).
+Dopo aver compreso appieno come valutare se l’installazione dell’AEM è pronta per essere spostata sul cloud, mentre impariamo a utilizzare gli strumenti necessari per prepararla, è ora di passare al [fase di pubblicazione](/help/journey-migration/go-live.md).

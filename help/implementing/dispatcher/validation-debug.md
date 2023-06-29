@@ -3,7 +3,7 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Convalida e debug con gli strumenti di Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 2%
@@ -321,7 +321,7 @@ Oltre alle sei sezioni menzionate nei paragrafi precedenti, non è consentito ut
 
 **I client/rendering consentiti non sono inclusi da: ...**
 
-Questo errore viene generato quando non si specifica un &quot;includi&quot; per `/renders` e `/allowedClients` nel `/cache` sezione. Consulta la
+Questo errore viene generato quando non si specifica un valore di inclusione per `/renders` e `/allowedClients` nel `/cache` sezione. Consulta la
 **il nome del file incluso (...) deve essere: ...** per ulteriori informazioni.
 
 **Il filtro non deve utilizzare il modello glob per consentire le richieste**

@@ -3,10 +3,10 @@ title: Introduzione e panoramica
 description: Introduzione e panoramica di contenuti e commerce. Experience Manager Commerce Integration Framework (CIF) è il modello consigliato di Adobe per integrare ed estendere i servizi commerce da Adobe Commerce e altre soluzioni commerce di terze parti con l’Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 92%
+source-wordcount: '891'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Con i contenuti e il commerce di Adobe Experience Manager, i marchi possono scal
 
 Con le aspettative sempre crescenti della clientela per le esperienze di commerce online, i marchi sono costretti a fornire esperienze differenziate e più contenuti più rapidamente. Tuttavia, l’implementazione di una piattaforma di gestione dei contenuti richiede spesso un forte investimento in termini di tempo e budget per lo sviluppo di elementi fondamentali, come componenti personalizzati e strumenti di authoring, e matura i costi di manutenzione e aggiornamento. Experience Manager Sites offre Content and Commerce come modulo aggiuntivo per Experience Manager as a Cloud Service che fornisce componenti core e strumenti di commerce pronti all’uso e una vetrina di riferimento per accelerare il go-live, consentire una collaborazione fluida tra i team e favorire la conversione.
 
-I marchi possono integrare Experience Manager con Adobe Commerce, parte di Adobe Experience Cloud, nonché qualsiasi motore di commerce scelto. Con Experience Manager Content and Commerce, i marchi possono:
+I brand possono integrare Experience Manager con Adobe Commerce, parte di Adobe Experience Cloud e qualsiasi motore di e-commerce a scelta. Con Experience Manager Content and Commerce, i marchi possono:
 
 * Scalare e innovare più velocemente
 * Personalizzare le esperienze per favorire la conversione
@@ -79,6 +79,6 @@ CIF supporta la clientela con modelli di integrazione standardizzati basati sull
 
 ## Percorso {#journey}
 
-Se segui un Percorso Commerce, vai al passaggio successivo:
+Se stai seguendo un Percorso Commerce, passa al passaggio successivo:
 
 * Il [percorso di authoring dei contenuti AEM](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

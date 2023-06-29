@@ -2,9 +2,9 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che è possibile creare e come crearli per il progetto Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2274'
 ht-degree: 37%
 
 ---
@@ -163,7 +163,7 @@ Per garantire l’accesso, prima di condividere l’URL del servizio di anteprim
 
    * Consulta [Applicazione e rimozione di Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) per ulteriori dettagli.
 
-1. Rimuovi l’IP predefinito e aggiungi gli IP appropriati con il flusso di lavoro per l’aggiornamento dell’**elenco IP consentiti**. Per ulteriori informazioni, consulta [Gestione degli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md).
+1. Rimuovi l’IP predefinito e aggiungi gli IP appropriati con il flusso di lavoro per l’aggiornamento dell’**elenco IP consentiti**. Consulta [Gestione degli Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) per ulteriori informazioni.
 
 Una volta sbloccato l’accesso al servizio di anteprima, l’icona a forma di lucchetto davanti al nome del servizio non viene più visualizzata.
 

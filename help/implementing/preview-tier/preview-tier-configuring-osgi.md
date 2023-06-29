@@ -2,10 +2,10 @@
 title: Configurazione delle impostazioni OSGi per il livello di anteprima
 description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima i contenuti prima della pubblicazione.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 93%
+source-wordcount: '219'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ I valori delle proprietà OSGi del livello di anteprima vengono ereditati dal li
 
 >[!NOTE]
 >
->Per ulteriori dettagli sugli ambienti di anteprima, consulta il documento [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Per ulteriori dettagli sugli ambienti di anteprima, vedi [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Configurazione delle impostazioni OSGi per il livello di anteprima {#configuring-osgi-settings-for-the-preview-tier}
 

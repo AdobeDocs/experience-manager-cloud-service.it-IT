@@ -2,9 +2,9 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1436'
 ht-degree: 21%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 21%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it" text="Note sulla versione"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html" text="Portale di distribuzione software"
 
-Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. È possibile installare il pacchetto tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) nell’istanza Adobe Experience Manager (AEM) di origine. Assicurati di scaricare la versione più recente. Per ulteriori dettagli sull’ultima versione, consulta [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. È possibile installare il pacchetto tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) nell’istanza Adobe Experience Manager (AEM) di origine. Assicurati di scaricare la versione più recente. Per maggiori dettagli sull’ultima versione, consulta [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
 È supportata solo la versione 2.0.0 o successiva ed è consigliabile utilizzare la versione più recente.
 
@@ -102,7 +102,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
    >[!NOTE]
    >
-   >La chiave di estrazione consente all’ambiente AEM di origine di connettersi in modo sicuro al set di migrazione. Tratta questa chiave con la stessa attenzione con cui useresti una password e non condividerla mai su un supporto non sicuro come l’e-mail.
+   >La chiave di estrazione consente all’ambiente AEM di origine di connettersi in modo sicuro al set di migrazione. Tratta questa chiave con la stessa attenzione con cui useresti una password e non condividerla mai tramite un mezzo non sicuro come l’e-mail.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 

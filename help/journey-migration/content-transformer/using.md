@@ -1,9 +1,9 @@
 ---
 title: Utilizzo di Content Transformer
 description: Utilizzo di Content Transformer
-source-git-commit: bc44990c3c2b445f1a3e56467d9dfb56168cd121
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Il Content Transformer è fornito con [Strumento Content Transfer](/help/journey
 1. Di seguito è riportato un esempio di pacchetto di backup creato per l’operazione di spostamento dei percorsi. Fai clic su Installa per ripristinare i percorsi sorgente. Si noti che l&#39;installazione riporterà solo i percorsi sorgente nella posizione originale e non eliminerà i percorsi in cui sono stati spostati durante la trasformazione. Per eliminare i percorsi nella posizione spostata, fate clic su **Aggiungi percorsi** per aggiungere la posizione (ad esempio `/etc/packages/content-transformation/paths`), seleziona il percorso e fai clic su **Rimuovi**.
 
    >[!CAUTION]
-   > Non eliminare `/etc/packages/content-transformation` poiché è la posizione in cui risiedono i pacchetti di backup. Solo quando sei sicuro di non aver più bisogno di questi pacchetti, puoi eliminare questa posizione per ridurre la dimensione dell’archivio.
+   > Non eliminare `/etc/packages/content-transformation` poiché è la posizione in cui risiedono i pacchetti di backup. Solo quando sei sicuro di non aver più bisogno di questi pacchetti, puoi eliminare questa posizione per ridurre le dimensioni dell’archivio.
 
    ![immagine](/help/journey-migration/content-transformer/assets/ct-7.png)
    ![immagine](/help/journey-migration/content-transformer/assets/ct-8.png)

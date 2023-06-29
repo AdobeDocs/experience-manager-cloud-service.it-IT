@@ -3,10 +3,10 @@ title: Configurazione delle pipeline di produzione
 description: Scopri come configurare le pipeline di produzione per generare e distribuire il codice negli ambienti di produzione.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 91%
+source-wordcount: '1509'
+ht-degree: 90%
 
 ---
 
@@ -137,7 +137,7 @@ Per completare la configurazione della pipeline di produzione del codice full st
 
 1. Per salvare la pipeline, fai clic su **Salva**.
 
-I percorsi configurati per l’audit dell’esperienza vengono inviati al servizio e valutati in base a test di prestazioni, accessibilità, SEO (Search Engine Optimization), best practice e PWA (app web progressiva) durante l’esecuzione della pipeline. Per ulteriori informazioni, consulta la sezione dedicata alla [lettura dei risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
+I percorsi configurati per l’audit dell’esperienza vengono inviati al servizio e valutati in base a test di prestazioni, accessibilità, SEO (Search Engine Optimization), best practice e PWA (app web progressiva) durante l’esecuzione della pipeline. Consulta [I risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md) per ulteriori dettagli.
 
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
 
@@ -177,7 +177,7 @@ Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.m
 
 Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore indipendenza e il processo di sviluppo può essere accelerato.
 
-Consulta il documento [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) il funzionamento di questo processo e alcune considerazioni di cui tenere conto per sfruttare appieno il suo potenziale.
+Consulta [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) il funzionamento di questo processo e alcune considerazioni di cui tenere conto per sfruttare appieno il suo potenziale.
 
 ## Ignorare i pacchetti Dispatcher {#skip-dispatcher-packages}
 

@@ -4,10 +4,10 @@ description: Scopri come risolvere i problemi più comuni relativi a MSM e ottie
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 87%
+source-wordcount: '761'
+ht-degree: 80%
 
 ---
 
@@ -67,7 +67,7 @@ Di seguito sono riportate alcune domande frequenti relative a MSM e Live Copy.
 
 Le azioni di sincronizzazione MSM sono altamente configurabili. Quali proprietà o componenti vengono modificati durante il rollout dipendono direttamente dalle proprietà di tali configurazioni.
 
-Consulta [questo articolo](best-practices.md) per ulteriori informazioni relative a questo argomento.
+Consulta [questo articolo](best-practices.md) per ulteriori informazioni su questo argomento.
 
 ### Come posso rimuovere le autorizzazioni di rollout per un gruppo di autori? {#remove-rollout-permissions}
 
@@ -80,7 +80,7 @@ In alternativa, puoi effettuare le seguenti operazioni:
 
 ### Perché vedo le pagine Live Copy con il suffisso “_msm_moved“? {#moved-pages}
 
-Se viene eseguito il rollout di una pagina blueprint, la pagina Live Copy verrà aggiornata oppure, se non esiste ancora, ne verrà creata una nuova (ad esempio, quando viene eseguito il rollout per la prima volta, oppure la pagina Live Copy è stata eliminata manualmente).
+Se viene eseguito il rollout di una pagina blueprint, la pagina Live Copy viene aggiornata oppure, se non esiste ancora, viene creata una pagina Live Copy (ad esempio, quando viene eseguito il rollout per la prima volta oppure la pagina Live Copy è stata eliminata manualmente).
 
 In quest’ultimo caso, tuttavia, se una pagina senza un `cq:LiveRelationship` esiste con lo stesso nome. Questa pagina viene rinominata di conseguenza prima che venga creata la pagina Live Copy.
 

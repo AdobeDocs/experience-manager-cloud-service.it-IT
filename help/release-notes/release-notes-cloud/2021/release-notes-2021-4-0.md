@@ -2,9 +2,9 @@
 title: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1532'
 ht-degree: 25%
 
 ---
@@ -128,7 +128,7 @@ La seguente versione (2021.5.0) sarà del 27 maggio 2021.
 
 ### Novità {#what-is-new-commerce}
 
-* Supporto per la categoria UID: questo consente di sbloccare le integrazioni con soluzioni commerce di terze parti per i sistemi che utilizzano Stringhe per gli ID categoria
+* Supporto per la categoria UID: questo consente di sbloccare le integrazioni con e-commerce di terze parti per i sistemi che utilizzano Stringhe per gli ID categoria
 
 * Estensione AEM per il PWA Studi, incl. integrazione di esempio
 

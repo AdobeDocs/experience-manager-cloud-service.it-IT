@@ -1,35 +1,35 @@
 ---
-title: Comprendere l’installazione del componente aggiuntivo Demo di riferimento
+title: Comprendere l’installazione di Reference Demo Add-on
 description: Scopri Cloud Manager e come viene utilizzato per installare il componente aggiuntivo.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 98%
+source-wordcount: '956'
+ht-degree: 46%
 
 ---
 
-# Comprendere l’installazione del componente aggiuntivo Demo di riferimento {#understand-installation}
+# Comprendere l’installazione di Reference Demo Add-on {#understand-installation}
 
 Scopri Cloud Manager e come viene utilizzato per installare il componente aggiuntivo.
 
 >[!TIP]
 >
->Se hai già esperienza con Cloud Manager o desideri passare direttamente alla configurazione e all’utilizzo del componente aggiuntivo, puoi passare a [Creare un programma e una pipeline](create-program.md)
+>Se hai esperienza con Cloud Manager o desideri passare direttamente alla configurazione e all’utilizzo del componente aggiuntivo, passa a [Creare un programma e una pipeline](create-program.md)
 >
->Per scoprire come Cloud Manager e AEM collaborano per creare ambienti demo e come configurarli e utilizzarli, continua a leggere questo documento.
+>Per scoprire come Cloud Manager e AEM collaborano per creare gli ambienti demo e come configurarli e utilizzarli, continua a leggere il documento corrente.
 
 ## Obiettivo {#objective}
 
-Questo documento consente di comprendere come funziona il processo di installazione del componente aggiuntivo Demo di riferimento, illustrando come funzionano i diversi pezzi insieme. Dopo la lettura dovresti:
+Questo documento spiega come funziona il processo di installazione del componente aggiuntivo Demo di riferimento, illustrando come funzionano i diversi componenti insieme. Dopo la lettura, dovresti:
 
 * Avere una conoscenza di base di Cloud Manager.
 * Scoprire come le pipeline forniscono contenuto e configurazione ad AEM.
-* Scoprire come i modelli possono creare nuovi siti precompilati con contenuti dimostrativi con pochi clic.
+* Scopri come i modelli possono creare siti precompilati con contenuti demo con pochi clic.
 
-Questo documento si concentra sulla comprensione di questi elementi fondamentali del componente aggiuntivo Demo di riferimento AEM prima di passare al passaggio successivo del percorso in cui inizia l’installazione.
+Questo documento si concentra sulla comprensione di questi elementi fondamentali del componente aggiuntivo Demo di riferimento AEM prima di passare alla fase successiva del percorso in cui si inizia l’installazione.
 
-Sebbene sia raccomandabile procedere passo dopo passo in questo percorso, se hai già esperienza con Cloud Manager o desideri passare direttamente alla configurazione e all’utilizzo del componente aggiuntivo, puoi andare a [Creare un programma e una pipeline](create-program.md)
+Sebbene sia consigliabile procedere attraverso questo percorso, se hai esperienza con Cloud Manager o desideri passare direttamente alla configurazione e all’utilizzo del componente aggiuntivo, vai a [Creare un programma e una pipeline](create-program.md).
 
 ## Ruolo responsabile {#responsible-role}
 
@@ -55,11 +55,11 @@ Cloud Manager viene utilizzato per amministrare le risorse cloud che supportano 
 
 >[!TIP]
 >
->Per informazioni approfondite su Cloud Manager, consulta la sezione [Risorse aggiuntive](#additional-resources) di questo articolo per collegamenti a ulteriori informazioni.
+>Per informazioni approfondite su Cloud Manager, consulta [Risorse aggiuntive](#additional-resources) sezione di questo articolo per collegamenti a ulteriori informazioni.
 
 ### Programmi {#programs}
 
-Quando accedi a Cloud Manager hai accesso a uno o più **programmi**. Un programma può essere definito in molti modi diversi, ma è più semplice pensarlo come associato ai siti e alle esperienze legate a un’identità del brand.
+Quando accedi a Cloud Manager, puoi accedere a uno o più **programmi**. Un programma può essere definito in molti modi diversi, ma è più semplice pensarlo come associato ai siti e alle esperienze legate a un’identità del brand.
 
 Se accedi a Cloud Manager come rappresentante **WKND Travel and Adventure Enterprises**, è possibile creare un programma **WKND Nightlife** e un programma **WKND Backyard Projects**. Entrambi questi programmi avrebbero ambienti AEM per la gestione dei siti associati.
 
@@ -68,7 +68,7 @@ Se accedi a Cloud Manager come rappresentante **WKND Travel and Adventure Enterp
 I programmi possono essere programmi di produzione o programmi sandbox.
 
 * **Un programma di produzione** viene creato per consentire il traffico live quando il programma è pronto per essere live.
-* **Un programma sandbox** viene creato per la formazione, le demo in esecuzione, l’abilitazione, i POC, ecc. e non è destinato al traffico live.
+* **Un programma sandbox** viene creato per la formazione, le demo in esecuzione, l’abilitazione, i POC e così via e non è destinato al traffico live.
 
 Per installare il componente aggiuntivo Demo di riferimento AEM, crea un programma sandbox.
 
@@ -81,7 +81,7 @@ Per installare il componente aggiuntivo Demo di riferimento AEM, crea un program
 Ora che conosci alcuni concetti fondamentali di Cloud Manager, l’installazione del componente aggiuntivo Demo di riferimento AEM è concettualmente semplice.
 
 1. Accedi a Cloud Manager.
-1. Crea un nuovo programma di AEM sandbox, attivando il componente aggiuntivo Demo di riferimento AEM come opzione per il programma.
+1. Crea un programma sandbox AEM, attivando l’opzione AEM Reference Demos Add on (Componente aggiuntivo demo di riferimento) come programma.
 1. Il contenuto e la configurazione demo vengono distribuiti nel programma. Il contenuto demo contiene:
    * Modelli di sito utilizzati per creare vari siti di AEM Sites utilizzando le funzioni di AEM, precompilati con esempi di best practice.
    * Strumenti di configurazione per gestire il contenuto demo.
@@ -90,24 +90,24 @@ Ora che conosci alcuni concetti fondamentali di Cloud Manager, l’installazione
 
 ## Modelli di sito AEM {#site-templates}
 
-I modelli di sito AEM sono pacchetti che contengono contenuto e struttura predefiniti per un sito. I modelli di sito possono essere personalizzati per soddisfare le esigenze di progetti specifici, in modo che, quando gli amministratori di AEM creano nuovi siti, possano scegliere tra modelli applicabili ai propri casi aziendali.
+I modelli di sito AEM sono pacchetti che contengono contenuto e struttura predefiniti per un sito. I modelli di sito possono essere personalizzati per soddisfare le esigenze di progetti specifici, in modo che, quando gli amministratori dell’AEM creano dei siti, possano scegliere tra modelli applicabili ai loro casi aziendali.
 
-Il componente aggiuntivo Demos di riferimento AEM include più modelli per varie esigenze di test e dimostrazione. Dopo aver creato il programma e implementato la pipeline per installare il componente aggiuntivo, è possibile accedere ad AEM e creare siti in base a molti modelli demo
+Il componente aggiuntivo Demo di riferimento AEM include più modelli per varie esigenze di test e dimostrazione. Dopo aver creato il programma e implementato la pipeline per installare il componente aggiuntivo, è possibile accedere ad AEM e creare siti in base a molti modelli demo
 
 ## Novità {#what-is-next}
 
-Ora che hai completato questa parte del percorso del componente aggiuntivo Demo di riferimento AEM, è necessario:
+Ora che hai completato questa parte del percorso aggiuntivo Demo di riferimento AEM, dovresti:
 
 * Avere una conoscenza di base di Cloud Manager.
 * Scoprire come le pipeline forniscono contenuto e configurazione ad AEM.
-* Scoprire come i modelli possono creare nuovi siti precompilati con contenuti dimostrativi con pochi clic.
+* Scopri come i modelli possono creare siti precompilati con contenuti demo con pochi clic.
 
-Sviluppare questa conoscenza e continuare il percorso di Creazione rapida siti AEM con la revisione successiva del documento [Creare un programma e una pipeline,](create-program.md) dove verrà illustrato come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
+Approfondisci l&#39;argomento e continua il percorso di Creazione Rapida dei Siti AEM consultando [Creare un programma e una pipeline](create-program.md) dove viene illustrato come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia raccomandato passare alla parte successiva del percorso Creazione rapida siti esaminando il documento [Creare un programma e una pipeline,](create-program.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
+Sebbene sia consigliabile passare alla parte successiva del percorso Creazione rapida sito esaminando [Creare un programma e una pipeline](create-program.md), di seguito sono riportate alcune risorse aggiuntive facoltative. Queste risorse approfondiscono i concetti menzionati in questo documento. Tuttavia, non è loro richiesto di continuare il percorso.
 
-* [Informazioni su programmi e tipi di programmi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=it) - Inizia qui per comprendere le differenze tra i programmi live e sandbox.
+* [Informazioni su programmi e tipi di programmi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) - Inizia qui per comprendere le differenze tra i programmi live e sandbox.
 * [Modelli di sito](/help/sites-cloud/administering/site-creation/site-templates.md) - Per ulteriori informazioni sulla struttura dei modelli di sito e sulla relativa modalità di creazione, consulta questo documento.
-* [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=it) - Per ulteriori informazioni sulle funzioni di Cloud Manager, consulta direttamente i documenti tecnici approfonditi.
+* [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Per ulteriori informazioni sulle funzioni di Cloud Manager, consulta direttamente i documenti tecnici approfonditi.

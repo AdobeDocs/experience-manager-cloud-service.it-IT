@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 31%
+source-wordcount: '1353'
+ht-degree: 29%
 
 ---
 
@@ -106,7 +106,7 @@ La prossima versione è pianificata per il 03 giugno 2021.
 
 ### Novità {#what-is-new-may}
 
-* Ora la regola di qualità PackageOverlaps rileva i casi in cui lo stesso pacchetto viene distribuito più volte, ovvero in più posizioni incorporate, nello stesso set di pacchetti distribuito.
+* La regola di qualità PackageOverlaps ora rileva i casi in cui lo stesso pacchetto è stato distribuito più volte, ovvero in più posizioni incorporate, nello stesso set di pacchetti distribuito.
 
 * L’endpoint dell’archivio nell’API pubblica ora include l’URL di Git.
 

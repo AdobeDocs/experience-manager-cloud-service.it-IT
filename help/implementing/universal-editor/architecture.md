@@ -2,10 +2,10 @@
 title: Architettura dell’editor universale
 description: Scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 88%
+source-wordcount: '649'
+ht-degree: 79%
 
 ---
 
@@ -28,16 +28,16 @@ Questo documento delinea ciascuno di questi blocchi predefiniti e la loro modali
 
 >[!TIP]
 >
->Per visualizzare l’editor universale e la relativa architettura in azione, consulta il documento [Guida introduttiva all’editor universale in AEM](getting-started.md) per scoprire come accedere all’editor universale e come iniziare a instrumentare la tua prima app AEM da utilizzare.
+>Per vedere Universal Editor e la relativa architettura in azione, consulta [Guida introduttiva all’Editor universale in AEM](getting-started.md) per scoprire come accedere a Universal Editor e come iniziare a dotare la tua prima app AEM di strumenti per utilizzarla.
 
 ### Editor {#editors}
 
-* **Editor universale**: l’editor universale utilizza un DOM abilitato per consentire la modifica diretta dei contenuti. Consulta il documento [Attributi e tipi](attributes-types.md) per informazioni dettagliate sui metadati necessari. Consulta il documento [Guida introduttiva all’editor universale in AEM](getting-started.md) per un esempio della strumentazione in AEM.
+* **Editor universale**: l’editor universale utilizza un DOM abilitato per consentire la modifica diretta dei contenuti. Consulta [Attributi e tipi](attributes-types.md) per informazioni dettagliate sui metadati necessari. Consulta il documento [Guida introduttiva all’editor universale in AEM](getting-started.md) per un esempio della strumentazione in AEM.
 * **Barra delle proprietà**: alcune proprietà dei componenti non possono essere modificate nel contesto, come il tempo di rotazione di un carosello o quale scheda a soffietto deve essere sempre aperta o chiusa. Per consentire la modifica di tali informazioni sui componenti, nella barra laterale dell’editor viene fornito un editor basato su moduli.
 
 ### App remota {#remote-app}
 
-Per rendere modificabile un’app in un contesto nell’editor universale, è necessario instrumentare il DOM. L’app remota deve eseguire il rendering di alcuni attributi nel DOM. Consulta il documento [Attributi e tipi](attributes-types.md) per informazioni dettagliate sui metadati necessari. Consulta il documento [Guida introduttiva all’editor universale in AEM](getting-started.md) per un esempio di strumentazione in AEM.
+Per rendere modificabile un’app in un contesto nell’editor universale, è necessario instrumentare il DOM. L’app remota deve eseguire il rendering di alcuni attributi nel DOM. Consulta [Attributi e tipi](attributes-types.md) per informazioni dettagliate sui metadati necessari. Consulta il documento [Guida introduttiva all’editor universale in AEM](getting-started.md) per un esempio di strumentazione in AEM.
 
 L’editor universale richiede un SDK minimo, pertanto la strumentazione rientra nell’implementazione dell’app remota. 
 

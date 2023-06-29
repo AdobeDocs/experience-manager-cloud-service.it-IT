@@ -2,10 +2,10 @@
 title: Note sulla versione 2022.10.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.10.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 91%
+source-wordcount: '838'
+ht-degree: 84%
 
 ---
 
@@ -36,7 +36,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2022 per un r
 
 ### Nuove funzioni in [!DNL Sites] {#sites-features}
 
-* La [scheda Personalizzazione per frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) consente di specificare la segmentazione nell’Editor frammenti di esperienza e offre la flessibilità necessaria per creare frammenti di esperienza nidificati, con cui è possibile creare varianti di intestazioni e piè di pagina per più segmenti. Prima dell’introduzione di questa funzione, la funzionalità di personalizzazione di AEM era disponibile solo per le pagine del sito, ma non per i frammenti esperienza.
+* Il [Scheda Personalizzazione per frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) consente di specificare la segmentazione nell’Editor frammento di esperienza e la flessibilità necessaria per creare frammenti di esperienza nidificati, con cui è possibile creare varianti di intestazioni e piè di pagina per più segmenti. Prima dell’introduzione di questa funzione, la funzionalità di personalizzazione di AEM era disponibile solo per le pagine del sito, ma non per i frammenti esperienza.
 
 * La [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ora consente agli utenti di gestire in modo efficiente i frammenti di contenuto tradotti. Inoltre, è possibile accedere con 1 solo clic per visualizzare tutte le copie delle varie lingue. Gli utenti possono anche filtrare la visualizzazione a tabella in base alla lingua che desiderano.
 
@@ -85,15 +85,15 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2022 per un r
 
 ### Novità {#what-is-new-foundation}
 
-* AEM as a Cloud Service (servizio di authoring) è ora integrato con Unified Shell per migliorare l’esperienza utente e per coerenza con tutte le altre applicazioni di Experience Cloud. Per ulteriori dettagli, consulta [AEM as a Cloud Service su Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md).
+* AEM as a Cloud Service (servizio di authoring) è ora integrato con Unified Shell per migliorare l’esperienza utente e per coerenza con tutte le altre applicazioni di Experience Cloud. Vedi AEM as a [Cloud Service su Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) per ulteriori dettagli.
 
 * Come indicato in precedenza nelle note sulla versione, l’utilizzo della schermata di amministrazione dell’agente di replica o dell’API di replica per la distribuzione di pacchetti di contenuto di dimensioni superiori a 10 MB (nodi con proprietà, esclusi i binari) ora è obsoleto e viene applicato. Consulta [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Flusso di lavoro per la pubblicazione della struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow) per suggerimenti su come replicare questi pacchetti di contenuti di grandi dimensioni.
 
-* La configurazione del Dispatcher ora fa riferimento a un file in cui sono elencati i parametri comuni di query per campagne di marketing. I clienti possono scegliere di rimuovere la notazione di commento dai parametri di cui hanno bisogno, con conseguente miglioramento della memorizzazione in cache. Per ulteriori dettagli, consulta [Parametri per campagne di marketing](/help/implementing/dispatcher/caching.md#marketing-parameters).
+* La configurazione del Dispatcher ora fa riferimento a un file in cui sono elencati i parametri comuni di query per campagne di marketing. I clienti possono scegliere di rimuovere la notazione di commento dai parametri di cui hanno bisogno, con conseguente miglioramento della memorizzazione in cache. Consulta [Parametri della campagna di marketing](/help/implementing/dispatcher/caching.md#marketing-parameters) per ulteriori dettagli.
 
 ## Cloud Manager {#cloud-manager}
 
-L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui.](/help/implementing/cloud-manager/release-notes/current.md)
+L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Strumenti di migrazione {#migration-tools}
 

@@ -2,9 +2,9 @@
 title: Creazione di contenuti di destinazione utilizzando la modalità di targeting
 description: La modalità di targeting e il componente Target forniscono gli strumenti necessari per creare contenuti per le esperienze
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '5412'
+source-wordcount: '5410'
 ht-degree: 45%
 
 ---
@@ -445,7 +445,7 @@ Puoi modificare le percentuali purché la loro somma raggiunga il 100%. Un pubbl
 
 ## Obiettivi e impostazioni: configurazione dell’attività e impostazione degli obiettivi {#goals-settings-configuring-the-activity-and-setting-goals}
 
-La fase Obiettivi e impostazioni del [processo di targeting](#the-targeting-process-create-target-and-goals-settings) comporta la configurazione del comportamento dell’attività del marchio. Specifica quando inizia e termina l’attività, nonché la priorità dell’attività. Inoltre, tieni traccia degli obiettivi. In particolare, puoi decidere cosa misurare con le attività.
+La fase Obiettivi e impostazioni del [processo di targeting](#the-targeting-process-create-target-and-goals-settings) comporta la configurazione del comportamento dell’attività del marchio. Specifica quando inizia e termina l’attività e la priorità dell’attività. Inoltre, tieni traccia degli obiettivi. In particolare, puoi decidere cosa misurare con le attività.
 
 Le metriche obiettivo sono disponibili solo se utilizzi Adobe Target per il motore di targeting. È necessario definire almeno una metrica di obiettivo. Se hai configurato Adobe Analytics e disponi di una configurazione cloud A4T Analytics, puoi scegliere se desideri che l’origine per la generazione di rapporti sia Adobe Target o Adobe Analytics.
 
@@ -549,7 +549,7 @@ Per configurare obiettivi e impostazioni se si utilizza Adobe Target:
 1. Se desideri maggiore controllo sul conteggio delle metriche di successo, tocca o fai clic su **Impostazioni avanzate** per accedere a queste impostazioni.
 1. Fai clic su **Salva**.
 
-Dopo la configurazione, puoi [visualizzare le prestazioni delle attività](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) che utilizzano Adobe Target (targeting esperienza o test A/B). Inoltre, con il targeting di test A/B, puoi [convertire i vincitori.](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)
+Dopo la configurazione, puoi [visualizzare le prestazioni delle attività](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) che utilizzano Adobe Target (targeting esperienza o test A/B). Inoltre, con il targeting di test A/B, puoi [convertire i vincitori](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test).
 
 ## Simulazione di un’esperienza {#simulating-an-experience}
 
@@ -634,4 +634,4 @@ Se hai selezionato Adobe Target come motore:
 >
 >Seleziona **ContextHub** come motore se stai utilizzando ContextHub per il targeting. Per ulteriori informazioni, consulta Configurazione di ContextHub.
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
-<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub.](/help/sites-administering/contexthub-config.md)-->
+<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

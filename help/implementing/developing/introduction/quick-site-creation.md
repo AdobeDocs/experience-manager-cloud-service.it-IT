@@ -2,9 +2,9 @@
 title: Creazione rapida di siti e personalizzazione front-end
 description: Scopri in che modo lo strumento Creazione Rapida dei Siti utilizza modelli di sito, temi e la pipeline front-end per consentire una rapida distribuzione di nuovi siti e separare lo sviluppo front-end.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '325'
 ht-degree: 5%
 
 ---
@@ -19,13 +19,13 @@ Lo strumento Creazione rapida di siti è uno strumento di facile utilizzo che co
 
 A tal fine, lo strumento Creazione Rapida dei Siti utilizza diverse potenti funzioni as a Cloud Service dell’AEM:
 
-1. **Modelli per sito AEM** vengono utilizzati per definire il contenuto e la struttura del sito di base nonché lo stile del sito e vengono selezionati da un amministratore durante la creazione di un nuovo sito.
+1. **Modelli per sito AEM** vengono utilizzati per definire il contenuto, la struttura e lo stile del sito di base e vengono selezionati da un amministratore durante la creazione di un nuovo sito.
 1. Un **Tema del sito AEM** è incluso nel modello e contiene le risorse CSS, JavaScript e statiche che definiscono lo stile del sito.
 1. Il **Pipeline front-end** può essere utilizzato per distribuire personalizzazioni al tema del sito indipendentemente dallo sviluppo back-end.
 
 ## Percorso Creazione rapida sito {#quick-site-creation-journey}
 
-Per una panoramica completa del funzionamento dello strumento Creazione Rapida dei Siti e per iniziare immediatamente a distribuire e personalizzare il tuo sito utilizzando questi potenti strumenti, consulta la [Percorso di Creazione Rapida dei Siti.](/help/journey-sites/quick-site/overview.md)
+Per una panoramica completa del funzionamento dello strumento Creazione Rapida dei Siti e per iniziare immediatamente a distribuire e personalizzare il tuo sito utilizzando questi potenti strumenti, controlla [Percorso di Creazione Rapida dei Siti](/help/journey-sites/quick-site/overview.md).
 
 ## Risorse aggiuntive {#additional-resources}
 

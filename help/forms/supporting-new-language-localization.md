@@ -4,9 +4,9 @@ seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms consente di aggiungere nuove lingue per la localizzazione dei moduli adattivi. Inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-taiwanese (zh-TW) e coreano (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1190'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Crea un nodo denominato come `[locale-name]_xfa` e digita come `cq:ClientLibrary
 
 * **I18N.js** definizione `xfalib.locale.Strings` per `<locale>` come definito in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 * **js.txt** contenente:
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+  */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
 ##### 3.2. Aggiungere la libreria client di Moduli adattivi per una cartella dei nomi delle impostazioni locali
 
@@ -129,9 +129,8 @@ Esistono due metodi per identificare le impostazioni locali di un modulo adattiv
 * Recupero dei seguenti parametri nell&#39;ordine elencato:
 
    * Parametro di richiesta `afAcceptLang`
-Per ignorare le impostazioni locali del browser per gli utenti, puoi trasmettere il 
-`afAcceptLang` per forzare le impostazioni locali. Ad esempio, l’URL seguente forza il rendering del modulo nelle impostazioni locali canadesi-francesi:
-      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
+Per ignorare le impostazioni locali del browser per gli utenti, puoi trasmettere il `afAcceptLang` per forzare le impostazioni locali. Ad esempio, l’URL seguente forza il rendering del modulo nelle impostazioni locali canadesi-francesi:
+     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
 
    * Impostazioni locali del browser impostate per l&#39;utente, specificate nella richiesta utilizzando `Accept-Language` intestazione.
 

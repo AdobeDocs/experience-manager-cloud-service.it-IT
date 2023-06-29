@@ -2,9 +2,9 @@
 title: Note sulla versione 2020.10.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.10.0 as a Cloud Service."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1194'
 ht-degree: 28%
 
 ---
@@ -63,9 +63,9 @@ Puoi scrivere a [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 ### Novità {#what-is-new-commerce}
 
-* È stato rilasciato il sito di riferimento CIF Venia (2020.10.2), che include la versione più recente dei Componenti Core CIF v1.4.0. Fai riferimento a [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) per ulteriori dettagli.
+* È stato rilasciato il sito di riferimento CIF Venia (2020.10.2), che include la versione più recente dei Componenti Core CIF v1.4.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) per ulteriori dettagli.
 
-* È stata rilasciata la versione 1.4.0 dei componenti core CIF. Fai riferimento a [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) per ulteriori dettagli.
+* È stata rilasciata la versione 1.4.0 dei componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) per ulteriori dettagli.
 
 ### Correzioni di bug {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ La data di pubblicazione di Cloud Manager in Experience Manager as a Cloud Servi
 * Il numero di variabili per ambiente è stato aumentato a 200.
 
 * Ora nella scheda Ambiente della pagina Panoramica sono elencati fino a tre ambienti. Gli utenti possono selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo Ambiente e visualizzare una tabella con l’elenco completo degli ambienti.
-Per ulteriori informazioni, consulta [Visualizzazione dell’ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
+Consulta [Ambiente di visualizzazione](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) per ulteriori dettagli.
 
 ### Correzioni di bug {#bug-fixes-cloud-manager}
 

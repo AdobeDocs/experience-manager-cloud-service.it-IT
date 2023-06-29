@@ -2,9 +2,9 @@
 title: Come si crea un modello di modulo adattivo?
 description: Crea modelli per moduli adattivi per definire la struttura di base e il contenuto iniziale tramite l’Editor modelli.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2018'
 ht-degree: 1%
 
 ---

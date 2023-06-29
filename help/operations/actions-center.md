@@ -4,9 +4,9 @@ description: Sfruttare il Centro azioni per intervenire in modo comodo sugli inc
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '701'
 ht-degree: 27%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 27%
 >[!NOTE]
 >Questa funzione non è stata rilasciata.
 
-Il Cloud Service AEM invia notifiche e-mail al Centro operativo quando si verificano incidenti critici che richiedono un’azione immediata, nonché raccomandazioni proattive per le ottimizzazioni. Alcuni esempi includono una coda bloccata o un set di credenziali in scadenza; l&#39;intero set di tipi di notifica Centro operativo può essere visualizzato nel [tabella seguente](#supported-notification-types), che si espanderà nel tempo.
+Il Cloud Service AEM invia notifiche e-mail al Centro operativo quando si verificano incidenti critici che richiedono un’azione immediata e raccomandazioni proattive per le ottimizzazioni. Alcuni esempi includono una coda bloccata o un set di credenziali in scadenza; l&#39;intero set di tipi di notifica Centro operativo può essere visualizzato nel [tabella seguente](#supported-notification-types), che si espanderà nel tempo.
 
 Quando viene ricevuta una notifica e-mail del Centro azioni, è possibile fare clic su di essa per aprire il Centro azioni di AEM as a Cloud Service con un pop-up contenente un contesto aggiuntivo che spiega l’azione che un cliente deve intraprendere.
 
-Oltre a visualizzare informazioni sulla notifica e-mail con clic, il Centro azioni funge da hub in cui è possibile visualizzare e gestire il set di notifiche correnti e precedenti. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+Oltre a visualizzare informazioni sulla notifica e-mail con clic, il Centro azioni funge da hub in cui è possibile visualizzare e gestire il set di notifiche correnti e precedenti. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
 Nel Centro azioni sono disponibili due categorie di notifiche di alto livello:
 

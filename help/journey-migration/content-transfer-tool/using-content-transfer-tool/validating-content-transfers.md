@@ -2,9 +2,9 @@
 title: Convalida dei trasferimenti di contenuto
 description: Utilizzare lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuti
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1055'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Gli utenti possono determinare in modo affidabile se tutti i contenuti estratti 
 >
 >Questa funzione sarà disponibile a partire dalla versione 1.8.x dello strumento Content Transfer (CTT). L’ambiente di destinazione AEM Cloud Service deve eseguire almeno la versione 6158 o successiva. Richiede anche che l’ambiente di origine sia configurato per essere eseguito [pre-copia](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La funzionalità di convalida cerca il file azcopy.config nell&#39;origine. Se il file non viene trovato, la convalida non verrà eseguita. Per ulteriori informazioni su come configurare un file azcopy.config, vedere [questa pagina](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-La convalida di un trasferimento di contenuto è una funzione facoltativa. L’abilitazione di questa funzione aumenta sia il tempo necessario per eseguire un’estrazione che l’acquisizione. Per utilizzare la funzione, abilitala nella Console di sistema dell’ambiente AEM sorgente seguendo questi passaggi:
+La convalida di un trasferimento di contenuto è una funzione facoltativa. L’attivazione di questa funzione aumenta sia il tempo necessario per eseguire un’estrazione che quello necessario per l’acquisizione. Per utilizzare la funzione, abilitala nella Console di sistema dell’ambiente AEM sorgente seguendo questi passaggi:
 
 1. Passa alla console web di Adobe Experience Manager nell’istanza sorgente, da **Strumenti - Operazioni - Console web** o direttamente all’URL in *https://serveraddress:serverport/system/console/configMgr*
 1. Cerca **Configurazione del servizio di estrazione dello strumento Content Transfer**
@@ -38,7 +38,7 @@ Con la convalida della migrazione abilitata nell’ambiente AEM di origine, iniz
 
 Se **Sovrascrivi contenitore staging durante l’estrazione** è abilitato, tutti i nodi coinvolti nell’estrazione vengono registrati nel riepilogo del percorso di estrazione. Quando si utilizza questa impostazione, è importante abilitare **Cancella i contenuti esistenti nell’istanza Cloud prima dell’acquisizione** durante l’acquisizione, altrimenti potrebbero mancare dei nodi dal digest di acquisizione. Si tratta dei nodi già presenti sul target dalle acquisizioni precedenti.
 
-Per un’illustrazione grafica, consulta gli esempi seguenti:
+Per un’illustrazione grafica di questo, vedi gli esempi seguenti:
 
 ### Esempio 1 {#example-1}
 
@@ -115,7 +115,7 @@ EXTRACTION: Number of nodes extracted: 4635
 INGESTION: Number of nodes ingested: 0
 ----------------------------------------------------------
 Validation failed. However, the following nodes may already be present in the target environment.
-Please refer to our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
+See our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
 There are 4635 entries present in the extraction digest that are missing from the ingestion digest.
 /content/dam/bruce
 /content/dam/bruce-assets

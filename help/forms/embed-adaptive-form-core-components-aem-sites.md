@@ -6,7 +6,7 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1d5641dd07cc68dade247fe30bb57663872e5560
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 2%
@@ -112,12 +112,12 @@ In [!UICONTROL Modifica contenitore Forms adattivo] , è possibile specificare q
    * **Servizio preriempimento**: puoi utilizzare il servizio di precompilazione per compilare automaticamente i campi di un modulo adattivo utilizzando dati esistenti. Quando un utente apre un modulo, i valori di tali campi vengono precompilati. Per informazioni sul servizio di precompilazione, consulta [Precompilare i campi del modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **Categoria libreria client**: specifica la [Funzioni JavaScript](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) utilizzati nelle espressioni e supportati da Adaptive Forms.
 * **Modello dati**: un modello dati consente di integrare entità e servizi da diverse origini dati a un modulo adattivo. Scegli **[!UICONTROL Modello dati modulo]** se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
-   * **Modello dati modulo**: un modello dati modulo consente a un modulo adattivo di comunicare con origini dati diverse. Per informazioni sulla configurazione di un’origine dati, consulta [Configurare le origini dati.](/help/forms/configure-data-sources.md)
+   * **Modello dati modulo**: un modello dati modulo consente a un modulo adattivo di comunicare con origini dati diverse. Per informazioni sulla configurazione di un’origine dati, consulta [Configurare le origini dati](/help/forms/configure-data-sources.md).
    * **Schema**: lo schema rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell’organizzazione. È possibile [associare lo schema a un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) e utilizzarne gli elementi per aggiungere contenuto dinamico a un modulo adattivo.
 
-      >[!NOTE]
-      >
-      > Dopo aver configurato il modello dati del modulo, non è possibile modificare il modello modulo associato. Tuttavia, è possibile modificare lo schema associato al modello dati del modulo.
+     >[!NOTE]
+     >
+     > Dopo aver configurato il modello dati del modulo, non è possibile modificare il modello modulo associato. Tuttavia, è possibile modificare lo schema associato al modello dati del modulo.
 
 * **Scheda Invio**
 
@@ -133,7 +133,7 @@ In [!UICONTROL Modifica contenitore Forms adattivo] , è possibile specificare q
          * Invia a OneDrive
          * Invia ad Azure Blob Storage
 
-   È inoltre possibile [estendere le azioni di invio predefinite](custom-submit-action-form.md) per creare un’azione di invio personalizzata.
+  È inoltre possibile [estendere le azioni di invio predefinite](custom-submit-action-form.md) per creare un’azione di invio personalizzata.
 
 * **Mostra messaggio**
    * **Contenuto del messaggio**: scrivi un messaggio utilizzando l’editor Rich Text. Questa opzione è disponibile solo quando si sceglie di visualizzare un messaggio di ringraziamento.

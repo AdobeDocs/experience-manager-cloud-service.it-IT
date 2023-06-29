@@ -2,7 +2,7 @@
 title: Modelli di pagina
 description: I Modelli di pagina vengono utilizzati durante la creazione di una pagina utilizzata come base per la nuova pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3294'
 ht-degree: 5%
@@ -197,7 +197,7 @@ Per creare una nuova cartella, puoi effettuare le seguenti operazioni:
 
 ### Utilizzo del browser configurazioni {#using-the-configuration-browser}
 
-1. Vai a **Navigazione globale** -> **Strumenti** > [**Browser configurazioni**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+1. Vai a **Navigazione globale** -> **Strumenti** > [**Browser configurazioni**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    Le cartelle esistenti sono elencate a sinistra, incluso `global` cartella.
 
@@ -304,7 +304,7 @@ Quando si crea un nuovo modello, è necessario specificare un tipo di modello:
 
 * AEM fornisce una piccola selezione di tipi di modelli predefiniti, ad esempio Pagina di HTML5 e Pagina modulo adattivo.
 
-   * Ulteriori esempi sono forniti come parte del [Esercitazione WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+   * Ulteriori esempi sono forniti come parte del [Esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * I tipi di modello vengono in genere definiti dagli sviluppatori.
 
@@ -328,7 +328,7 @@ Le definizioni per i tipi di modelli personalizzati devono essere memorizzate in
 
 >[!CAUTION]
 >
->I tipi di modello devono rispettare la struttura di cartelle corretta (ad es. `/settings/wcm/...`), altrimenti i tipi di modello non vengono trovati.
+>I tipi di modello devono rispettare la struttura di cartelle corretta, ovvero `/settings/wcm/...`), altrimenti i tipi di modello non vengono trovati.
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -538,9 +538,9 @@ Durante il rendering di una pagina:
 * **Componenti**:
 
    * Il componente Pagina unirà il `structure/jcr:content` struttura del modello con `jcr:content` della pagina.
-      * Il componente Pagina consente all’autore di modificare solo i nodi della struttura del modello che sono stati contrassegnati come modificabili (oltre a eventuali elementi secondari).
+      * Il componente Pagina consente all’autore di modificare solo i nodi della struttura del modello contrassegnati come modificabili (e gli eventuali elementi secondari).
       * Quando si esegue il rendering di un componente su una pagina, il relativo percorso di tale componente viene ricavato da `jcr:content` nodo; lo stesso percorso sotto `policies/jcr:content` Verrà quindi eseguita una ricerca nel nodo del modello.
-         * Il `cq:policy` proprietà di questo nodo punta al criterio del contenuto effettivo (ovvero contiene la configurazione di progettazione per quel componente).
+         * Il `cq:policy` proprietà di questo nodo punta al criterio del contenuto effettivo, ovvero contiene la configurazione di progettazione per quel componente.
             * Ciò consente di disporre di più modelli che riutilizzano le stesse configurazioni dei criteri per i contenuti.
 
 ### Disponibilità dei modelli {#template-availability}

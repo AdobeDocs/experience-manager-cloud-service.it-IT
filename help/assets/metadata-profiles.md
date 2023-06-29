@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1409'
 ht-degree: 20%
 
 ---
@@ -34,13 +34,13 @@ Modifica le seguenti proprietà per **[!UICONTROL Descrizione]** componente:
    * **[!UICONTROL Etichetta campo]** : nome visualizzato della proprietà dei metadati. È solo per riferimento utente.
    * **[!UICONTROL Mappa su proprietà]** : il valore di questa proprietà fornisce il percorso/nome relativo del nodo della risorsa in cui viene salvato nell’archivio. Il valore deve sempre iniziare con `./` perché indica che il percorso si trova sotto il nodo della risorsa.
 
-      Il valore specificato per **[!UICONTROL Mappa su proprietà]** viene memorizzato come proprietà sotto il nodo di metadati della risorsa. Ad esempio, se specifichi: `/jcr:content/metadata/dc:desc` come nome di **[!UICONTROL Mappa su proprietà]**, [!DNL Adobe Experience Manager Assets] memorizza il valore `dc:desc` nel nodo dei metadati della risorsa.
+     Il valore specificato per **[!UICONTROL Mappa su proprietà]** viene memorizzato come proprietà sotto il nodo di metadati della risorsa. Ad esempio, se specifichi: `/jcr:content/metadata/dc:desc` come nome di **[!UICONTROL Mappa su proprietà]**, [!DNL Adobe Experience Manager Assets] memorizza il valore `dc:desc` nel nodo dei metadati della risorsa.
 
    * **[!UICONTROL Valore predefinito]** : utilizza questa proprietà per aggiungere un valore predefinito per il componente metadati. Ad esempio, se specifichi &quot;Descrizione&quot; questo valore viene assegnato alla proprietà `dc:desc` nel nodo dei metadati della risorsa.
 
-      >[!NOTE]
-      >
-      >Aggiunta di un valore predefinito a una nuova proprietà di metadati (che non esiste in `/jcr:content/metadata` node) non mostra la proprietà e il relativo valore nella pagina Proprietà della risorsa per impostazione predefinita. Per visualizzare la nuova proprietà in [!UICONTROL Proprietà] , modificare il modulo schema corrispondente.
+     >[!NOTE]
+     >
+     >Aggiunta di un valore predefinito a una nuova proprietà di metadati (che non esiste in `/jcr:content/metadata` node) non mostra la proprietà e il relativo valore nella pagina Proprietà della risorsa per impostazione predefinita. Per visualizzare la nuova proprietà in [!UICONTROL Proprietà] , modificare il modulo schema corrispondente.
 
 1. (Facoltativo) Aggiungi altri componenti alla scheda Modifica modulo dalla scheda **[!UICONTROL Genera modulo]** e configurane le proprietà nella scheda **[!UICONTROL Impostazioni]**. Le seguenti proprietà sono disponibili dalla scheda **[!UICONTROL Genera modulo]**:
 

@@ -3,10 +3,10 @@ title: Best practice per query e indicizzazione
 description: Scopri come ottimizzare indici e query in base alle linee guida sulle best practice di Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 95%
+source-wordcount: '1556'
+ht-degree: 94%
 
 ---
 
@@ -111,7 +111,7 @@ Se deve essere elaborato completamente un set di risultati potenzialmente di gra
 
 Per supportare la creazione di query JCR e le definizioni degli indici efficienti, la [Scheda di riferimento rapido per le query JCR](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=it#jcrquerycheatsheet) è disponibile per il download e l’utilizzo come riferimento durante lo sviluppo.
 
-Contiene query di esempio per QueryBuilder, XPath e SQL-2 comprendendo scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre consigli su come creare o personalizzare gli indici Oak. Il contenuto di questa Scheda di riferimento rapido si applica a AEM as a Cloud Service e a AEM 6.5.
+Contiene query di esempio per QueryBuilder, XPath e SQL-2 comprendendo scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre consigli su come creare o personalizzare gli indici Oak. Il contenuto della presente Scheda di riferimento rapido si applica all’AEM as a Cloud Service e all’AEM 6.5.
 
 ## Query con set di risultati di grandi dimensioni {#queries-with-large-result-sets}
 

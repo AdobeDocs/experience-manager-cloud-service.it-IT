@@ -2,7 +2,7 @@
 title: Blueprint SPA
 description: Questo documento descrive il contratto generale, indipendente dal framework, che qualsiasi framework SPA deve soddisfare in modo da poter implementare componenti SPA modificabili all'interno dell'AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2056'
 ht-degree: 2%
@@ -49,7 +49,7 @@ Ogni elemento presente nel modello contiene un `:type` che espone un tipo di ris
 
 #### Mappatura di un modello dinamico a un componente {#dynamic-model-to-component-mapping}
 
-Per informazioni dettagliate su come avviene la mappatura del modello dinamico ai componenti nell’SDK per AEM di JavaScript per SPA, consulta l’articolo [Mappatura di un modello dinamico a un componente per SPA](model-to-component-mapping.md).
+Per informazioni dettagliate su come avviene la mappatura da modello dinamico a componente nell’SDK JavaScript per SPA per l’AEM, consulta l’articolo [Mappatura di un modello dinamico a un componente per SPA](model-to-component-mapping.md).
 
 ### Livello specifico del framework {#framework-specific-layer}
 

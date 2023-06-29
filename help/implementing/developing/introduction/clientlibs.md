@@ -2,9 +2,9 @@
 title: Utilizzo di librerie lato client su AEM as a Cloud Service
 description: AEM fornisce cartelle di librerie lato client, che consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2556'
 ht-degree: 1%
 
 ---
@@ -29,9 +29,9 @@ Clientlibs è la soluzione integrata per la distribuzione di CSS e JavaScript da
 
 ## Cosa sono le librerie lato client {#what-are-clientlibs}
 
-I siti richiedono risorse JavaScript e CSS nonché risorse statiche come icone e font web da elaborare lato client. Una clientlib è un meccanismo AEM da utilizzare come riferimento (per categoria, se necessario) e al servizio di tali risorse.
+I siti richiedono risorse JavaScript e CSS e statiche come icone e font web da elaborare lato client. Una clientlib è un meccanismo AEM da utilizzare come riferimento (per categoria, se necessario) e al servizio di tali risorse.
 
-AEM raccoglie i file CSS e JavaScript del sito in un singolo file, in una posizione centrale, per garantire che nell’output HTML venga inclusa una sola copia di qualsiasi risorsa. In questo modo si ottimizza l&#39;efficienza della distribuzione e si consente la gestione centralizzata di tali risorse nell&#39;archivio tramite proxy, mantenendo l&#39;accesso sicuro.
+AEM raccoglie i file CSS e JavaScript del sito in un singolo file, in una posizione centrale, per garantire che nell’output HTML sia inclusa una sola copia di qualsiasi risorsa. In questo modo si ottimizza l&#39;efficienza della distribuzione e si consente la gestione centralizzata di tali risorse nell&#39;archivio tramite proxy, mantenendo l&#39;accesso sicuro.
 
 ## Sviluppo front-end per AEM as a Cloud Service {#fed-for-aemaacs}
 
@@ -189,7 +189,7 @@ Altre proprietà della cartella includono consentono il controllo delle dipenden
 
 ### Collegamento alle dipendenze {#linking-to-dependencies}
 
-Quando il codice nella cartella della libreria client fa riferimento ad altre librerie, identifica le altre librerie come dipendenze. Il `ui:includeClientLib` Se si utilizza un tag che fa riferimento alla cartella della libreria client, nel codice HTML verrà incluso un collegamento al file di libreria generato e alle dipendenze.
+Quando il codice nella cartella della libreria client fa riferimento ad altre librerie, identifica le altre librerie come dipendenze. Il `ui:includeClientLib` Se si utilizza un tag che fa riferimento alla cartella della libreria client, il codice HTML includerà un collegamento al file di libreria generato e alle dipendenze.
 
 Le dipendenze devono essere un&#39;altra `cq:ClientLibraryFolder`. Per identificare le dipendenze, aggiungi una proprietà alla `cq:ClientLibraryFolder` con i seguenti attributi:
 

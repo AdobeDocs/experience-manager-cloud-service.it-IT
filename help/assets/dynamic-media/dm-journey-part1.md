@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3708'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Questo metodo di distribuzione univoco garantisce che esperienze di qualità coe
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media fornisce la stessa immagine primaria a supporti diversi in formati e dimensioni diversi.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media fornisce la stessa immagine primaria a supporti diversi in formati e dimensioni diversi](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _Adobe Dynamic Media garantisce un&#39;esperienza coerente e di qualità su qualsiasi schermo, indipendentemente dalle dimensioni o dalla larghezza di banda._
 
 Continuando a leggere, imparerai di più sul perché questo concetto di &quot;un file di risorse principale, infinite possibilità&quot; è importante.
@@ -88,7 +88,7 @@ Continuando a leggere, imparerai di più sul perché questo concetto di &quot;un
 
 Quando sei pronto per andare live con una risorsa di immagine o una risorsa video, è supportato dalla spina dorsale di Dynamic Media, costituita da una potente rete di consegna di primo livello. La rete serve centinaia di clienti in tutto il mondo ogni giorno. Le risorse sono distribuite sulla rete per la distribuzione dei contenuti (CDN) in hosting presso Akamai. La rete CDN è un sistema di servizi informatici collegati in rete che cooperano in modo trasparente per fornire contenuti, soprattutto rich media di grandi dimensioni, agli utenti finali.
 
-Nel sistema CDN, il contenuto web viene memorizzato nelle cache web su Internet. Quindi viene distribuito dalla cache web agli utenti finali per velocizzare la consegna. Pertanto, la prima volta che qualcuno scarica una pagina web, le risorse visualizzate vengono inviate a una cache CDN. Vengono memorizzati sul server in modo che, la volta successiva che un utente accede alla pagina Web, lo stesso contenuto della cache venga distribuito più rapidamente. Il contenuto viene distribuito più rapidamente perché si trova più vicino all’utente finale. Una rete CDN consente una visualizzazione più rapida delle pagine Web, ma riduce i requisiti di larghezza di banda del server centrale, in quanto i contenuti vengono distribuiti da una rete cache e non da un server centrale in ogni istanza. Questo flusso ottimizzato garantisce una migliore esperienza d&#39;uso, con un conseguente aumento delle vendite.
+Nel sistema CDN, il contenuto web viene memorizzato nelle cache web su Internet. Quindi viene distribuito dalla cache web agli utenti finali per velocizzare la consegna. Pertanto, la prima volta che qualcuno scarica una pagina web, le risorse visualizzate vengono inviate a una cache CDN. Vengono archiviati sul server in modo che, al successivo accesso alla pagina Web da parte di un utente nella stessa area, lo stesso contenuto della cache venga distribuito più rapidamente. Il contenuto viene distribuito più rapidamente perché si trova più vicino all’utente finale. Una rete CDN consente una visualizzazione più rapida delle pagine Web, ma riduce i requisiti di larghezza di banda del server centrale, in quanto i contenuti vengono distribuiti da una rete cache e non da un server centrale in ogni istanza. Questo flusso ottimizzato garantisce una migliore esperienza d&#39;uso, con un conseguente aumento delle vendite.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
@@ -182,7 +182,7 @@ Un altro caso d’uso che Dynamic Media risolve per è il video. Il video è com
 
 I clienti arrivano a Dynamic Media con il seguente problema che sperano di risolvere:
 
-&quot;_Abbiamo preso il video, e abbiamo speso un sacco di soldi per crearlo. Ma abbiamo evitato di metterlo sulle pagine, o distribuirlo, perché dai nostri test, non possiamo davvero garantire la qualità del video, o se è davvero in fase di riproduzione. E in ultima analisi, questo influisce sui nostri marchi e potenzialmente sul nostro ruolo persino nella conversione._&quot;
+&quot;_Abbiamo il video, e abbiamo speso un sacco di soldi per crearlo. Ma ci siamo astenuti dal posizionarlo sulle pagine, o dal distribuirlo, perché dai nostri test, non possiamo garantire la qualità del video, o se è davvero in fase di riproduzione. E in ultima analisi, questo influisce sui nostri marchi e potenzialmente sul nostro ruolo persino nella conversione._&quot;
 
 La soluzione di Dynamic Media è quella di prendere quell&#39;unico file video principale e lasciare che Dynamic Media ne faccia tutte le dimensioni attraverso il suo processo di transcodifica. Quindi, aggiungilo al lettore video intelligente di Dynamic Media. Questo flusso di lavoro garantisce che il video venga utilizzato nella pagina di destinazione principale, in una categoria o in una pagina di dettaglio del prodotto e sia sempre coerente e di alta qualità.
 
@@ -265,7 +265,7 @@ La rappresentazione qui sopra è live! [Prova](https://s7d1.scene7.com/s7viewers
 
 ## Facoltativo - Ulteriori informazioni
 
-La parte I di questo percorso tratta le nozioni di base su una serie di argomenti Dynamic Media. Per saperne di più su ciò che hai appena letto, usa i materiali qui sotto per approfondire i concetti. In caso contrario, è possibile continuare con la Parte II del percorso. Consulta [Novità del Percorso Dynamic Media](#whats-next).
+La parte I di questo percorso tratta le nozioni di base su una serie di argomenti Dynamic Media. Per ulteriori informazioni su ciò che hai appena letto, utilizza i materiali seguenti per esplorare i concetti in modo più dettagliato. In caso contrario, è possibile continuare con la Parte II del percorso. Consulta [Novità del Percorso Dynamic Media](#whats-next).
 
 _Argomenti della Guida di Dynamic Media_
 
@@ -291,7 +291,7 @@ _Visualizzatori Dynamic Media_
 
 ## Novità del Percorso Dynamic Media {#whats-next}
 
-Nella parte II di questo percorso, esaminerai gli URL di Dynamic Media più da vicino per capire meglio cosa succede quando viene consegnata una risorsa. Scoprirai anche come creare predefiniti per immagini per il rendering delle risorse, nonché set di immagini, set 360 gradi e set di file multimediali diversi e come vengono creati.
+Nella parte II di questo percorso, esamini gli URL di Dynamic Media un po’ più da vicino per capire meglio cosa succede quando viene consegnata una risorsa. Scopri anche le nozioni di base sulla creazione di predefiniti immagine per il rendering delle risorse, nonché di set di immagini, set 360 gradi e set di file multimediali diversi e come vengono creati.
 
 Portami a [Percorso Dynamic Media: nozioni di base, parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 

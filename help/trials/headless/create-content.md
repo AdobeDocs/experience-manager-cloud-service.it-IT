@@ -4,10 +4,10 @@ description: Utilizza il modello Frammento di contenuto creato in precedenza per
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 95%
+source-wordcount: '657'
+ht-degree: 83%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Creare nuovi contenuti"
->abstract="Basandoti sui modelli creati nel modulo, imparerai a creare contenuti che possono essere utilizzati per l’authoring delle pagine o come base per contenuti headless."
+>abstract="Utilizzando il modello creato nel modulo precedente, imparerai a creare contenuti che possono essere utilizzati per l’authoring delle pagine o come base per contenuti headless."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
@@ -33,7 +33,7 @@ ht-degree: 95%
 
 I frammenti di contenuto rappresentano il contenuto headless dell’utente e si basano su strutture predefinite, denominate modelli di frammenti di contenuto. Hai già creato un modello in un modulo precedente.
 
-In questo modulo verrà creato un nuovo frammento di contenuto basato su tale modello utilizzando la console Frammenti di contenuto. Considera la console Frammenti di contenuto come una libreria di contenuti headless. Utilizzala per creare nuovi frammenti di contenuto e gestire i frammenti esistenti.
+In questo modulo, puoi creare un nuovo Frammento di contenuto basato su tale modello utilizzando la console Frammento di contenuto. Considera la console Frammenti di contenuto come una libreria di contenuti headless. Utilizzala per creare nuovi frammenti di contenuto e gestire i frammenti esistenti.
 
 1. Tocca o fai clic sul pulsante **Crea** in alto a destra nella console.
 
@@ -49,11 +49,11 @@ In questo modulo verrà creato un nuovo frammento di contenuto basato su tale mo
 
 >[!TIP]
 >
->A seconda delle impostazioni del browser, la nuova scheda del browser potrebbe essere rimossa da un blocco dei pop-up. Se il nuovo frammento non si apre dopo aver fatto clic su **Crea e apri**, verifica le impostazioni del browser.
+>A seconda delle impostazioni del browser, la nuova scheda del browser potrebbe essere rimossa da un blocco dei pop-up. Se il nuovo frammento non si apre dopo aver fatto clic su **Crea e apri**, controlla le impostazioni del browser.
 
 ## Aggiungi contenuti al frammento di contenuto {#add-content}
 
-Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento di contenuto si apre in una nuova scheda. Qui puoi aggiungere il contenuto del nuovo frammento.
+Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento di contenuto viene aperto in una nuova scheda. Qui puoi aggiungere il contenuto del nuovo frammento.
 
 1. L’editor Frammento di contenuto mostra i campi definiti nel modello selezionato. Qui puoi aggiungere contenuto a ogni campo per completare il frammento di contenuto. L’avanzamento viene salvato automaticamente.
 

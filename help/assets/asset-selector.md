@@ -4,10 +4,10 @@ description: Utilizza il Selettore risorse per cercare, trovare e recuperare i m
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2375'
-ht-degree: 97%
+source-wordcount: '2379'
+ht-degree: 94%
 
 ---
 
@@ -85,7 +85,7 @@ The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI
 *   imsToken
 *   apikey
 
-For more information on these properties, refer to [Asset Selector Properties](#asset-selector-properties).
+For more information on these properties, see [Asset Selector Properties](#asset-selector-properties).
 
 **SUSI flow**
 
@@ -95,7 +95,7 @@ For more information on these properties, refer to [Asset Selector Properties](#
 *   imsOrg
 *   apikey
 
-For more information on these properties, refer to [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
+For more information on these properties, see [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
 -->
 
 ## Installazione {#installation}
@@ -176,7 +176,7 @@ Nella tabella seguente vengono descritte alcune delle proprietà importanti dell
 | *repo:createDate* | stringa | La data e l’ora in cui è stata creata la risorsa. |
 | *repo:modifiedBy* | stringa | Utente o sistema che ha modificato per ultimo la risorsa. |
 | *repo:modifyDate* | stringa | La data e l’ora dell’ultima modifica apportata alla risorsa. |
-| *dc:format* | stringa | Il formato della risorsa, quale il tipo di file (ad esempio, JPEG, PNG, ecc.). |
+| *dc:format* | stringa | Il formato della risorsa, ad esempio il tipo di file (ad esempio, JPEG, PNG e così via). |
 | *tiff:imageWidth* | numero | Larghezza di una risorsa. |
 | *tiff:imageLength* | numero | Altezza di una risorsa. |
 | *computedMetadata* | `Record<string, any>` | Oggetto che rappresenta un bucket per tutti i metadati di tutti i tipi di risorsa (archivio, applicazione o metadati incorporati). |
@@ -364,7 +364,7 @@ Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rende
 | *imsOrg* | stringa | Sì | | L’ID di Adobe Identity Management System (IMS) assegnato durante il provisioning di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] per l’organizzazione. Il `imsOrg` È necessario specificare la chiave per autenticare se l’organizzazione a cui stai accedendo è in Adobe IMS o meno. |
 | *imsToken* | stringa | No | | Token di connessione IMS utilizzato per l’autenticazione. `imsToken` è obbligatorio se si utilizza un flusso non SUSI. |
 | *apiKey* | stringa | No | | Chiave API utilizzata per accedere al servizio di individuazione AEM. `apiKey` è obbligatorio se si utilizza un flusso non SUSI. |
-| *rootPath* | stringa | No | /content/dam/ | Percorso della cartella da cui il selettore risorse visualizza le risorse. `rootPath` può essere utilizzato anche sotto forma di incapsulamento. Ad esempio, dato il seguente percorso, `/content/dam/marketing/subfolder/`, il Selettore risorse non consente di spostarsi all’interno di alcuna cartella principale, ma mostra solo le cartelle secondarie. |
+| *rootPath* | stringa | No | /content/dam/ | Percorso della cartella da cui il selettore risorse visualizza le risorse. `rootPath` può essere utilizzato anche sotto forma di incapsulamento. Ad esempio, dato il seguente percorso: `/content/dam/marketing/subfolder/`, il selettore risorse non consente di spostarsi all’interno di alcuna cartella principale, ma visualizza solo le cartelle secondarie. |
 | *percorso* | stringa | No | | Percorso utilizzato per passare a una directory specifica di risorse durante il rendering del Selettore risorse. |
 | *filterSchema* | array | No | | Modello utilizzato per configurare le proprietà del filtro. Questa funzione è utile quando desideri limitare determinate opzioni di filtro nel Selettore risorse. |
 | *filterFormProps* | Oggetto | No | | Specifica le proprietà del filtro da utilizzare per perfezionare la ricerca. Ad esempio, tipo MIME JPG, PNG, GIF. |
@@ -477,7 +477,7 @@ interface SelectedAsset {
 | tiff:imageLength | number | The height of an image type of Asset |
 | repo:state | string | The `Approved`, `Rejected`, or `Expired`state of an Asset |
 | computedMetadata | string | It is an object that represents a bucket for all the Asset's metadata of all kinds (repository, application or embedded metadata) |
-| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, etc.  |
+| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, and so on  |
 
 For the detailed example of Object Schema, click 
 -->

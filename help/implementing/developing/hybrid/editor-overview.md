@@ -2,10 +2,10 @@
 title: Panoramica dell’editor di SPA
 description: Questo articolo offre una panoramica completa dell’editor di SPA e del suo funzionamento, inclusi flussi di lavoro dettagliati relativi all’interazione dell’editor di SPA in AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ Per ulteriori dettagli su SPA in AEM, consulta i seguenti documenti:
 
 ## Design {#design}
 
-Il componente pagina per una SPA non fornisce gli elementi HTML dei suoi componenti figlio tramite il file JSP o HTL. Questa operazione è delegata al framework SPA. La rappresentazione dei componenti o del modello figlio viene recuperata come struttura dati JSON dal JCR. I componenti SPA vengono quindi aggiunti alla pagina in base a tale struttura. Questo comportamento differenzia la composizione iniziale del corpo del componente della pagina dalle controparti non SPA.
+Il componente page di un SPA non fornisce gli elementi HTML dei suoi componenti secondari tramite il file JSP o HTL. Questa operazione è delegata al framework SPA. La rappresentazione dei componenti o del modello figlio viene recuperata come struttura dati JSON dal JCR. I componenti SPA vengono quindi aggiunti alla pagina in base a tale struttura. Questo comportamento differenzia la composizione iniziale del corpo del componente della pagina dalle controparti non SPA.
 
 ### Gestione dei modelli di pagina {#page-model-management}
 
@@ -64,7 +64,7 @@ Quando viene aggiunta la categoria `cq.authoring.pagemodel.messaging` alla pagin
 * La comunicazione tra l’editor di pagine e la SPA viene effettuata utilizzando JSON invece di HTML.
 * L’editor di pagina fornisce alla SPA la versione più recente del modello di pagina tramite l’API iframe e messagistica.
 * Il gestore dei modelli di pagina notifica all’editor che è pronto per essere modificato e trasmette il modello di pagina come struttura JSON.
-* L’editor non modifica né accede nemmeno alla struttura DOM della pagina in fase di creazione, ma fornisce l’ultimo modello di pagina.
+* L’editor non modifica né accede alla struttura DOM della pagina creata, ma fornisce il modello di pagina più recente.
 
 ![Flusso di lavoro SPA](assets/workflow.png)
 
@@ -147,7 +147,7 @@ Questa è una panoramica più dettagliata incentrata sull’esperienza di author
 
 ## Requisiti e limitazioni {#requirements-limitations}
 
-Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di una SPA, la tua applicazione SPA deve essere implementata per interagire con l’SDK dell’editor SPA di AEM. Leggi la documentazione [Guida introduttiva alle SPA in AEM utilizzando React](getting-started-react.md) per apprendere gli elementi essenziali per far funzionare le tue SPA.
+Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di una SPA, la tua applicazione SPA deve essere implementata per interagire con l’SDK dell’editor SPA di AEM. Consulta la [Guida introduttiva dell’SPA nell’AEM con React](getting-started-react.md) documenti che è necessario conoscere almeno per avviare il tuo sistema.
 
 ### Framework supportati {#supported-frameworks}
 
@@ -160,7 +160,7 @@ Le versioni precedenti di questi framework possono funzionare con l’SDK dell�
 
 ### Framework aggiuntivi {#additional-frameworks}
 
-Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Consulta la sezione [Blueprint SPA](blueprint.md) Documento sui requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi per lavorare con l&#39;AEM SPA Editor.
+Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Consulta la [Blueprint SPA](blueprint.md) Documento sui requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi per lavorare con l&#39;AEM SPA Editor.
 
 ### Utilizzo di più selettori {#multiple-selectors}
 
@@ -173,7 +173,7 @@ Se desideri utilizzare l’editor locale di un componente di testo creato in SPA
 1. Imposta un attributo (può essere qualsiasi) sull’elemento wrapper del contenitore contenente il testo HTML. Nel caso del progetto WKND per SPA, è un elemento `<div>` e il selettore utilizzato è `data-rte-editelement`.
 1. Imposta la configurazione `editElementQuery` sul componente di testo AEM corrispondente `cq:InplaceEditingConfig` che punta a tale selettore, ad esempio, `data-rte-editelement`. Questo consente all’editor di sapere quale elemento HTML si applica al testo di HTML.
 
-Per ulteriori informazioni sulla proprietà `editElementQuery` e la configurazione dell’editor Rich Text, vedi [Configura l’editor Rich Text.](/help/implementing/developing/extending/rich-text-editor.md)
+Per ulteriori informazioni sulla proprietà `editElementQuery` e la configurazione dell’editor Rich Text, vedi [Configura l’editor Rich Text](/help/implementing/developing/extending/rich-text-editor.md).
 
 ### Limitazioni {#limitations}
 

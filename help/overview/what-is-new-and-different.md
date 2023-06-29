@@ -2,10 +2,10 @@
 title: Differenze e novità - Adobe Experience Manager as a Cloud Service
 description: Differenze e novità - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 97%
+source-wordcount: '1896'
+ht-degree: 96%
 
 ---
 
@@ -113,11 +113,11 @@ In particolare, il numero e il tipo di programmi AEM che possono essere creati d
 
 Cloud Manager si è evoluto come portale self-service in cui è possibile creare e configurare i componenti principali di AEM as a Cloud Service:
 
-* Creazione e gestione di nuovi programmi. Per ulteriori dettagli, fai riferimento alle [informazioni su programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+* Creazione e gestione di nuovi programmi. Consulta [Informazioni su programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) per ulteriori dettagli.
 
-* Creazione e gestione degli ambienti AEM all’interno di questi programmi. Per ulteriori dettagli, fai riferimento a [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md).
+* Creazione e gestione degli ambienti AEM all’interno di questi programmi. Consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md) per ulteriori dettagli.
 
-* Creazione e gestione delle pipeline per la distribuzione del codice cliente e della relativa configurazione in un ambiente specifico. Per ulteriori dettagli, fai riferimento a [Configurazione della pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
+* Creazione e gestione delle pipeline per la distribuzione del codice cliente e della relativa configurazione in un ambiente specifico. Consulta [Configurazione della pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) per ulteriori dettagli.
 
 * Ricevere notifiche su importanti eventi del ciclo di vita per questi componenti (ad esempio, aggiornamenti dei prodotti).
 
@@ -150,7 +150,7 @@ L’avvio e la gestione di un progetto AEM è semplice quando si utilizza AEM as
 
 >[!TIP]
 >
->Per una panoramica completa del processo di onboarding, consulta [percorso di onboarding.](/help/journey-onboarding/overview.md)
+>Per una panoramica completa del processo di onboarding, consulta [percorso di onboarding](/help/journey-onboarding/overview.md).
 
 ## Sviluppo {#developing}
 

@@ -2,10 +2,10 @@
 title: Guida introduttiva ad AEM headless as a Cloud Service
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3087'
-ht-degree: 94%
+source-wordcount: '3084'
+ht-degree: 93%
 
 ---
 
@@ -85,7 +85,7 @@ Per modificare il contenuto senza problemi, AEM offre due solide API.
 * API GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
 * API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
 
-Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure fai riferimento alla sezione [risorse aggiuntive](#additional-resources) per ulteriore documentazione.
+Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure vedi [risorse aggiuntive](#additional-resources) per ulteriore documentazione, vedere la sezione seguente.
 
 ## Livelli di integrazione headless {#integration-levels}
 
@@ -190,7 +190,7 @@ Consulta la sezione [risorse aggiuntive](#additional-resources) per ulteriore do
 La gerarchia delle cartelle può affrontare due problemi principali relativi alla gestione dei contenuti:
 
 * [Traduzione](#translation): AEM gestisce la traduzione dei contenuti mantenendone delle copie in cartelle specifiche delle impostazioni locali.
-* Organizzazione: le cartelle vengono utilizzate per definire una gerarchia di contenuti necessaria per supportare le esigenze di traduzione e per gestire in modo logico i frammenti di contenuto.
+* Organizzazione: le cartelle vengono utilizzate per definire una gerarchia di contenuti necessaria per supportare le esigenze di traduzione e gestire in modo logico i frammenti di contenuto.
 
 AEM consente una struttura dei contenuti flessibile e una gerarchia può essere arbitrariamente grande. Tuttavia è importante rendersi conto che eventuali modifiche nella struttura delle cartelle possono avere conseguenze indesiderate per le query esistenti che [si basano sul percorso del contenuto.](#developer) Pertanto, una gerarchia ben definita, chiaramente impostata in anticipo, può essere utile per gli autori dei contenuti.
 

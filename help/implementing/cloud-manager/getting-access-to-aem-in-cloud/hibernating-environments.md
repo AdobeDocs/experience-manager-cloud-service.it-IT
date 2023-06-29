@@ -2,10 +2,10 @@
 title: Sospensione e disattivazione degli ambienti sandbox
 description: Scopri in che modo gli ambienti di un programma sandbox entrano automaticamente in modalità di sospensione e come riattivarli.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Per sospendere manualmente gli ambienti di un programma sandbox, segui la proced
 
 1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
 
-   * Per ulteriori informazioni su Console sviluppatori, consulta il documento [Accesso a Console sviluppatori](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
+   * Consulta [Accesso a Console sviluppatori](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) per ulteriori dettagli su Console sviluppatori.
 
    ![Opzione di menu Console sviluppatori](assets/developer-console-menu-option.png)
 
@@ -69,7 +69,7 @@ Puoi sospendere manualmente il programma sandbox da Console sviluppatori.
 
 1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
 
-   * Per ulteriori informazioni su Console sviluppatori, consulta il documento [Accesso a Console sviluppatori](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
+   * Consulta [Accesso a Console sviluppatori](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) per ulteriori dettagli su Console sviluppatori.
 
 1. Fai clic su **Riattiva**.
 

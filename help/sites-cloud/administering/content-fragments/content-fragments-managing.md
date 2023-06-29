@@ -4,10 +4,10 @@ description: Scopri come utilizzare la console Frammenti di contenuto per gestir
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 81%
+source-wordcount: '2054'
+ht-degree: 76%
 
 ---
 
@@ -71,7 +71,7 @@ Per creare un frammento di contenuto:
 1. Viene aperta la finestra di dialogo **Nuovo frammento di contenuto** da dove puoi specificare:
 
    * **Posizione** : completato automaticamente con la posizione corrente, ma se necessario puoi selezionare una posizione diversa
-   * **Modello per frammento di contenuto**: dall’elenco a discesa seleziona il modello da utilizzare come base per il frammento
+   * **Modello per frammenti di contenuto** - seleziona dall’elenco a discesa il modello da utilizzare come base per il frammento
    * **Titolo**
    * **Nome** - completato automaticamente in base al **Titolo**, ma puoi modificarlo se necessario
    * **Descrizione**
@@ -101,7 +101,7 @@ Per aprire la pagina per la modifica:
 
 >[!CAUTION]
 >
->Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
+>Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). In caso di problemi, contatta l’amministratore di sistema.
 
 1. Utilizza la console **Frammenti di contenuto** per passare alla posizione del frammento di contenuto.
 1. Apri il frammento per la modifica selezionandolo e quindi scegli **Apri** dalla barra degli strumenti.
@@ -186,7 +186,7 @@ L’editor dispone di diverse opzioni:
 
   >[!CAUTION]
   >
-  >Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
+  >Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). In caso di problemi, contatta l’amministratore di sistema.
 
   >[!NOTE]
   >
@@ -196,11 +196,11 @@ L’editor dispone di diverse opzioni:
   >
   >Oltre al semplice salvataggio delle modifiche, le azioni aggiornano anche i riferimenti e garantiscono che il Dispatcher venga svuotato come richiesto. L’elaborazione di queste modifiche può richiedere del tempo. Per questo motivo, può esserci un impatto sulle prestazioni su un sistema di grandi dimensioni, complesso o con un carico elevato.
   >
-  >Tieni presente questo aspetto se utilizzi **Salva e chiudi** per poi riaprire immediatamente l’editor frammento per apportare e salvare ulteriori modifiche.
+  >Tieni presente questo tempo di processo quando utilizzi **Salva e chiudi**, quindi reinserisci rapidamente l’editor frammento per apportare e salvare ulteriori modifiche.
 
 * **Chiudi**
 
-  Chiude l’editor senza salvare le modifiche più recenti, ovvero apportate dall’ultimo comando **Salva**.
+  Chiude l’editor senza salvare le modifiche più recenti, ovvero apportate dall’ultima **Salva**).
 
 Durante la modifica del frammento di contenuto, AEM crea automaticamente alcune versioni per garantire che il contenuto precedente possa essere ripristinato se si annullano le modifiche (utilizzando **Chiudi** senza salvare):
 
@@ -231,7 +231,7 @@ Dopo aver creato il contenuto primario, puoi creare e gestire le [Varianti](/hel
 
 ## Associazione di contenuto al frammento {#associating-content-with-your-fragment}
 
-È inoltre possibile [associare il contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) a un frammento. In questo modo si fornisce una connessione in modo che le risorse (ad esempio le immagini) possano essere (facoltativamente) utilizzate con il frammento quando viene aggiunto a una pagina di contenuto.
+È inoltre possibile [associare il contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) a un frammento. Fornisce una connessione in modo che le risorse (ovvero le immagini) possano essere (facoltativamente) utilizzate con il frammento quando viene aggiunto a una pagina di contenuto.
 
 ## Visualizzazione e modifica dei metadati (proprietà) del frammento {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -251,7 +251,7 @@ Puoi pubblicare i frammenti di contenuto in:
 
   >[!NOTE]
   >
-  Per ulteriori dettagli sugli ambienti di anteprima, consulta:
+  Per ulteriori dettagli sugli ambienti di anteprima, vedi:
   >
   * [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [Configurazione delle impostazioni OSGi per il livello di anteprima](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)

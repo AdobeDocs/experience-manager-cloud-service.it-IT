@@ -2,10 +2,10 @@
 title: Come accedere al contenuto tramite API di consegna di AEM
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 99%
+source-wordcount: '1360'
+ht-degree: 97%
 
 ---
 
@@ -30,9 +30,9 @@ Questo articolo si basa su questi elementi fondamentali per comprendere come acc
    * Approfondisci i dettagli dell’API GraphQL di AEM.
    * Osserva alcune query di esempio per vedere come funzionano in pratica.
 
-## Vuoi accedere ai tuoi contenuti? {#so-youd-like-to-access-your-content}
+## Desideri quindi accedere al tuo contenuto? {#so-youd-like-to-access-your-content}
 
-Quindi... hai tutto questo contenuto, ben strutturato (in Frammenti di contenuto) e in attesa di alimentare la tua nuova app. La domanda è: come arrivarci?
+Quindi...hai tutti questi contenuti, sono strutturati in modo ordinato (in Frammenti di contenuto) e stai solo aspettando di alimentare la tua nuova app. La domanda è: come arrivarci?
 
 Ciò di cui hai bisogno è un modo per eseguire il targeting di contenuti specifici, selezionare ciò che ti serve e restituirlo all’app per un’ulteriore elaborazione.
 

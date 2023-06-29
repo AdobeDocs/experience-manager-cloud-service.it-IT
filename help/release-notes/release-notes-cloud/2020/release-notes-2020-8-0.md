@@ -2,10 +2,10 @@
 title: Note sulla versione 2020.8.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.8.0 as a Cloud Service."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 34%
+source-wordcount: '1039'
+ht-degree: 33%
 
 ---
 
@@ -20,7 +20,7 @@ La sezione seguente illustra le note generali sulla versione di Experience Manag
 
 * Possibilità di [ripristinare pagine e sottopagine (strutture ad albero pagina) in una versione precedente](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* Possibilità di [creare lanci](/help/sites-cloud/authoring/launches/overview.md) nell’AEM [Editor SPA.](/help/implementing/developing/hybrid/introduction.md)
+* Possibilità di [creare lanci](/help/sites-cloud/authoring/launches/overview.md) nell’AEM [Editor SPA](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -33,7 +33,7 @@ La sezione seguente illustra le note generali sulla versione di Experience Manag
 
 * Una nuova [esperienza di download delle risorse](/help/assets/download-assets-from-aem.md) consente,
 
-   * Download asincrono per download di grandi dimensioni in modo che gli utenti non debbano attendere.
+   * Il download asincrono per i download di grandi dimensioni in modo che gli utenti non debbano attendere.
    * Una nuova API modulare per l’estensibilità degli sviluppatori.
 
 * L’estrazione dei metadati per i microservizi per le risorse offre prestazioni migliorate. Aumenta la velocità effettiva di acquisizione complessiva delle risorse.
@@ -82,7 +82,7 @@ La data di rilascio per [!UICONTROL Cloud Manager] La versione 2020.8.0 di è de
   >[!NOTE]
   >Audit del contenuto è stato successivamente rinominato in Audit dell’esperienza.
 
-  Per ulteriori informazioni, consulta [Test di audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
+  Consulta [Test di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) per ulteriori dettagli.
 
 * Ora gli ambienti creati di recente nei programmi Assets vengono configurati automaticamente con Smart Content Service.
 
@@ -138,8 +138,8 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Strumenti di
 
 ### Novità {#what-is-new-refactoring}
 
-* Plug-in AIO-CLI rilasciato per unificare gli strumenti di refactoring del codice per consentire agli sviluppatori di richiamare ed eseguire strumenti di refactoring del codice da un’unica posizione. Fai riferimento a [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) per ulteriori dettagli.
+* Plug-in AIO-CLI rilasciato per unificare gli strumenti di refactoring del codice per consentire agli sviluppatori di richiamare ed eseguire strumenti di refactoring del codice da un’unica posizione. Consulta [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) per ulteriori dettagli.
 
-* Il convertitore del Dispatcher AEM è stato esteso per supportare le conversioni delle configurazioni del Dispatcher Managed Services On-Premise e di Adobe in configurazioni del Dispatcher compatibili con AEM as a Cloud Service. Fai riferimento a [Risorsa Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) per ulteriori dettagli.
+* Il convertitore del Dispatcher AEM è stato esteso per supportare le conversioni delle configurazioni del Dispatcher Managed Services On-Premise e di Adobe in configurazioni del Dispatcher compatibili con AEM as a Cloud Service. Consulta [Risorsa Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) per ulteriori dettagli.
 
 * AEM Dispatcher Converter riscritto in ` node.js ` e integrato con il plug-in AIO-CLI.

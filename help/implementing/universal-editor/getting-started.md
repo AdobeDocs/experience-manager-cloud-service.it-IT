@@ -2,10 +2,10 @@
 title: Guida introduttiva all’editor universale in AEM
 description: Scopri come accedere all’editor universale e come iniziare a preparare la tua prima app AEM per utilizzarla.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 95%
+source-wordcount: '805'
+ht-degree: 89%
 
 ---
 
@@ -32,7 +32,7 @@ Questo documento ti guiderà attraverso questi passaggi.
 
 ## Richiedi l’accesso all’editor universale {#request-access}
 
-Innanzitutto, è necessario richiedere l’accesso all’editor universale. Vai all’indirizzo [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), accedi e verifica se hai accesso all’editor universale.
+Innanzitutto, è necessario richiedere l’accesso all’editor universale. Consulta [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), accedi e verifica se hai accesso all’Editor universale.
 
 Se non hai accesso, puoi richiederlo tramite un modulo collegato sulla stessa pagina.
 
@@ -66,7 +66,7 @@ Se non stai implementando un’app React e/o hai bisogno di eseguire il renderin
 
 Per poter modificare il contenuto di AEM con l’app utilizzando l’editor universale, le impostazioni CORS e cookie devono essere eseguiti in AEM.
 
-Le seguenti [configurazioni OSGi devono essere impostate sull’istanza di authoring di AEM.](/help/implementing/deploying/configuring-osgi.md)
+Le seguenti [configurazioni OSGi devono essere impostate sull’istanza di authoring di AEM](/help/implementing/deploying/configuring-osgi.md).
 
 * `SameSite Cookies = None` in `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 * Rimuovi X-FRAME-OPTIONS: intestazione SAMEORIGIN in `org.apache.sling.engine.impl.SlingMainServlet`
@@ -161,11 +161,11 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## Iniziare a utilizzare l’editor universale {#youre-ready}
+## Sei pronto a utilizzare l’editor universale {#youre-ready}
 
 L’app è ora preparata per l’utilizzo dell’editor universale.
 
-Consulta [Authoring dei contenuti con l’editor universale](authoring.md) per scoprire quanto sia semplice e intuitivo per gli autori creare contenuti utilizzando l’editor universale.
+Consulta [Authoring di contenuti con l’Editor universale](authoring.md) per scoprire quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’Editor universale.
 
 ## Risorse aggiuntive {#additional-resources}
 

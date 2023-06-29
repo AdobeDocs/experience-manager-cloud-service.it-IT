@@ -3,10 +3,10 @@ title: Note sulla versione 2023.6.0 di Cloud Manager in Adobe Experience Manager
 description: Queste sono le note sulla versione 2023.6.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: deef27dd90be22669b2328f6e394b8d3df99b4b9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 33%
+source-wordcount: '237'
+ht-degree: 35%
 
 ---
 
@@ -17,11 +17,11 @@ Questa pagina illustra le note sulla versione 2023.6.0 di Cloud Manager in AEM a
 
 >[!NOTE]
 >
->Per le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, consulta [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Consulta [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) per le note sulla versione corrente di Adobe Experience Manager as a Cloud Service.
 
 ## Data di pubblicazione {#release-date}
 
-La data di pubblicazione di Cloud Manager versione 2023.6.0 in AEM as a Cloud Service è l’8 giugno 2023. La prossima versione è pianificata per il 6 luglio 2023.
+La data di pubblicazione di Cloud Manager versione 2023.6.0 in AEM as a Cloud Service è l’8 giugno 2023. La prossima versione è prevista per il 6 luglio 2023.
 
 ## Novità {#what-is-new}
 

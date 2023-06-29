@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '6321'
+source-wordcount: '6324'
 ht-degree: 0%
 
 ---
@@ -277,7 +277,7 @@ Una regola di convalida tipica è strutturata come segue:
 
 >[!NOTE]
 >
->Se il valore specificato non è conforme alla regola di convalida, è possibile visualizzare un messaggio di convalida. Puoi specificare il messaggio nel **[!UICONTROL Messaggio di convalida script]** nelle proprietà del componente nella barra laterale.
+>Se il valore specificato non è conforme alla regola di convalida, è possibile visualizzare un messaggio di convalida per l&#39;utente. Puoi specificare il messaggio nel **[!UICONTROL Messaggio di convalida script]** nelle proprietà del componente nella barra laterale.
 
 ![Convalida script](assets/script-validation.png)
 

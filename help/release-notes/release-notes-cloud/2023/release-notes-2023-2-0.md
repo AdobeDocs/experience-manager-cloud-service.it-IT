@@ -1,7 +1,7 @@
 ---
 title: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 97%
@@ -96,7 +96,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 ## Cloud Manager {#cloud-manager}
 
-L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui.](/help/implementing/cloud-manager/release-notes/current.md)
+L’elenco completo dei rilasci mensili di Cloud Manager è disponibile [qui](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Strumenti di migrazione {#migration-tools}
 

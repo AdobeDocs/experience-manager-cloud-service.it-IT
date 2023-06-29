@@ -2,10 +2,10 @@
 title: Percorso della tua prima esperienza con AEM Headless
 description: In questa parte del Percorso per sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2013'
-ht-degree: 98%
+source-wordcount: '2012'
+ht-degree: 96%
 
 ---
 
@@ -76,7 +76,7 @@ Gli autori e le autrici dei contenuti creano contenuti in base ai modelli di con
 
 Prima di iniziare a utilizzare le funzionalità headless in AEM, assicurati che tutte le funzioni richieste siano abilitate. Questa sezione descrive i requisiti necessari. I passi effettivi per eseguire questi passaggi sono descritti più avanti nel [Percorso per sviluppatori headless di AEM.](#overview.md)
 
-Facoltativamente, puoi anche fare riferimento alle [risorse aggiuntive](#additional-resources) per ulteriori informazioni sui singoli argomenti.
+Facoltativamente puoi anche vedere [risorse aggiuntive](#additional-resources) per ulteriori informazioni sui singoli argomenti.
 
 ### Configurazione {#configuration}
 
@@ -106,7 +106,7 @@ Un progetto headless non solo ha successo grazie alla tecnologia implementata, m
 * Raggruppare contenuti simili in una cartella.
    * È più probabile che un autore o un’autrice di contenuti copi e incolli contenuti esistenti per creare nuovi contenuti. Pertanto, farlo fare nella stessa cartella rende tutto più efficiente.
    * AEM consente di impostare i modelli per cartella in modo che il pulsante **Crea nuovo** mostrerà solo i modelli supportati in tale posizione.
-* La creazione di nuovi frammenti di contenuto nell’editor frammenti di contenuto in linea può essere semplificata se la cartella principale è impostata nel modello. Quindi il professionista o la professionista non deve scegliere una posizione, ma deve solo fornire un nome e può iniziare a modificare il nuovo riferimento.
+* La creazione di nuovi frammenti di contenuto nell’editor frammenti di contenuto in linea può essere semplificata se la cartella principale è impostata nel modello. Il professionista non deve quindi scegliere una posizione, ma deve solo fornire un nome e può iniziare a modificare il nuovo riferimento.
 
 ### Creazione di contenuti {#authoring}
 

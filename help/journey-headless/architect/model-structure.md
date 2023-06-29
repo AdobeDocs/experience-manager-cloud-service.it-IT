@@ -2,10 +2,10 @@
 title: Scopri come creare modelli per frammenti di contenuto in AEM
 description: Scopri i concetti e la meccanica della modellazione dei contenuti per i CMS headless utilizzando Modelli per frammenti di contenuto.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 89%
+source-wordcount: '687'
+ht-degree: 84%
 
 ---
 
@@ -63,7 +63,7 @@ Puoi trascinare le istanze di **Tipi di dati** nello spazio sinistro: stai già 
 
 ![Definizione dei campi](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Dopo aver aggiunto un tipo di dati, dovrai definire le **Proprietà** per quel campo. Dipendono dal tipo utilizzato. Esempio:
+Dopo aver aggiunto un tipo di dati, è necessario definire **Proprietà** per quel campo. Dipendono dal tipo utilizzato. Esempio:
 
 ![Proprietà dati](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ Dopo aver aggiunto un tipo di dati, dovrai definire le **Proprietà** per quel c
 
 ### Gli autori dei contenuti {#your-content-authors}
 
-Gli autori dei contenuti non visualizzano i tipi di dati e le proprietà effettivamente utilizzati per creare i modelli. Ciò significa che potresti dover fornire loro aiuto e informazioni su come completare campi specifici. Per informazioni di base è possibile utilizzare Etichetta campo e Valore predefinito, ma in casi più complessi potrebbe essere necessario prendere in considerazione la documentazione specifica del progetto.
+Gli autori dei contenuti non visualizzano i tipi di dati e le proprietà effettivi utilizzati per creare i modelli. Ciò significa che potresti dover fornire loro aiuto e informazioni su come completare campi specifici. Per informazioni di base è possibile utilizzare Etichetta campo e Valore predefinito, ma in casi più complessi potrebbe essere necessario prendere in considerazione la documentazione specifica del progetto.
 
 >[!NOTE]
 >

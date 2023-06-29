@@ -2,10 +2,10 @@
 title: Progetti
 description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso semplifica la gestione dei progetti
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 54%
+source-wordcount: '1255'
+ht-degree: 51%
 
 ---
 
@@ -95,7 +95,7 @@ Il riquadro Collegamenti consente di associare collegamenti esterni al progetto.
 
 ![Collegamenti](/help/sites-cloud/authoring/assets/project-links.png)
 
-Puoi denominare il collegamento con un nome facile da riconoscere, nonché modificare la miniatura.
+È possibile assegnare al collegamento un nome facile da riconoscere e modificare la miniatura.
 
 ![Aggiungi collegamento](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -105,7 +105,7 @@ Il riquadro Informazioni progetto fornisce informazioni generali sul progetto, t
 
 ![Informazioni progetto](/help/sites-cloud/authoring/assets/project-info.png)
 
-I membri del team possono essere assegnati a questa porzione ed eliminati (oppure è possibile modificare i ruoli), lo stesso vale per la porzione Team.
+I membri del team possono essere assegnati ed eliminati da questa sezione (oppure è possibile modificare i ruoli) e dalla sezione Team.
 
 ![Aggiungi membri del team al progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -137,11 +137,11 @@ Puoi assegnare il progetto in modo che segua determinati flussi di lavoro. Se so
 
 Puoi assegnare il progetto in modo che segua determinati flussi di lavoro. A seconda del progetto scelto, sono disponibili flussi di lavoro diversi.
 
-Questi sono descritti in [Utilizzo dei flussi di lavoro per i progetti.](/help/sites-cloud/authoring/projects/workflows.md)
+Questi sono descritti in [Utilizzo dei flussi di lavoro per i progetti](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### Lanci {#launches}
 
-Il riquadro Lanci mostra tutti i lanci richiesti con un [Richiedi flusso di lavoro di Launch.](/help/sites-cloud/authoring/projects/workflows.md)
+Il riquadro Lanci mostra tutti i lanci richiesti con un [Richiedi flusso di lavoro di Launch](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![Lanci](/help/sites-cloud/authoring/assets/project-launches.png)
 

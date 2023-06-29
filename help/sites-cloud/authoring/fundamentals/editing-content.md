@@ -2,10 +2,10 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, puoi modificarne il contenuto per apportare gli aggiornamenti necessari
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3002'
-ht-degree: 59%
+source-wordcount: '2990'
+ht-degree: 53%
 
 ---
 
@@ -291,7 +291,7 @@ Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti
 
 * Componente immagine - schermo intero
 
-  [L’accesso alla modalità a tutto schermo](#edit-content-full-screen-mode) per il componente immagine consente di avere più spazio per modificare l’immagine oltre che per visualizzare opzioni di modifica aggiuntive, ad esempio **Launch Map (Avvia mappa)** e **Ripristina zoom**. Inoltre, lo schermo intero consente di selezionare i predefiniti di ritaglio.
+  [Entrare in modalità a tutto schermo](#edit-content-full-screen-mode) per il componente immagine consente di avere più spazio per modificare l’immagine e visualizzare opzioni di modifica aggiuntive, ad esempio **Mappa di lancio** e **Ripristina zoom**. Inoltre, lo schermo intero consente di selezionare i predefiniti di ritaglio.
 
   ![Modalità a tutto schermo del componente immagine](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -358,7 +358,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
 >[!TIP]
 >
->L’azione Layout è limitata al componente selezionato. Ad esempio, se stai modificando il layout di un componente e fai clic su un altro componente, per il componente appena selezionato viene visualizzata la barra degli strumenti di modifica standard (non quella di layout), mentre le maniglie di ridimensionamento e la barra degli strumenti dell’emulatore sono nascosti.
+>L’azione Layout è limitata al componente selezionato. Ad esempio, se stai modificando il layout di un componente e fai clic su un altro componente, per il componente appena selezionato viene visualizzata la barra degli strumenti di modifica standard (non quella di layout), mentre i quadratini di ridimensionamento e la barra degli strumenti dell’emulatore scompaiono.
 >
 >Se devi modificare il layout generale della pagina, influenzando più componenti, passa a [modalità di layout](/help/sites-cloud/authoring/features/responsive-layout.md).
 
@@ -469,7 +469,7 @@ Una volta eseguito il blocco le informazioni di visualizzazione della console ve
 >
 >Non è consentito sbloccare le pagine bloccate impersonando l’utente che le ha boccate.
 >
->Se l’utente che ha bloccato la pagina non è disponibile per sbloccare la pagina, contatta l’Assistenza clienti per valutare le opzioni per rimuovere il blocco.
+>Se l’utente che ha bloccato la pagina non è disponibile per sbloccarla, contatta l’Assistenza clienti per valutare le opzioni per rimuovere il blocco.
 
 ## Sblocco di una pagina {#unlocking-a-page}
 
@@ -485,7 +485,7 @@ Nel menu Informazioni pagina è presente l’opzione **Sblocca** e l’icona Blo
 >
 >Non è consentito sbloccare le pagine bloccate impersonando l’utente che le ha boccate.
 >
->Se l’utente che ha bloccato la pagina non è disponibile per sbloccare la pagina, contatta l’Assistenza clienti per valutare le opzioni per rimuovere il blocco.
+>Se l’utente che ha bloccato la pagina non è disponibile per sbloccarla, contatta l’Assistenza clienti per valutare le opzioni per rimuovere il blocco.
 
 <!--
 >[!CAUTION]
@@ -516,7 +516,7 @@ Le icone seguenti consentono di annullare o ripristinare un’azione. Vengono vi
 
 ## Annullamento e ripristino di operazioni di modifica delle pagine - La teoria {#undoing-and-redoing-page-edits-the-theory}
 
-In AEM vengono memorizzate una cronologia delle azioni eseguite e la relativa sequenza, in modo che le varie azioni possano essere annullate nell’ordine di esecuzione; inoltre è possibile utilizzare l’opzione Ripristina per riapplicare una o più azioni annullate.
+AEM memorizza una cronologia delle azioni eseguite e la relativa sequenza in modo che sia possibile annullare più azioni nell&#39;ordine in cui sono state eseguite e rieseguirle per riapplicare una o più azioni, se necessario.
 
 Se è selezionato un elemento nella pagina del contenuto (ad esempio un componente di testo) il comando Annulla o Ripristina si riferisce all’elemento selezionato.
 

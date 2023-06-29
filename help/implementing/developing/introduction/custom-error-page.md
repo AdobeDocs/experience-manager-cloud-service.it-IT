@@ -2,9 +2,9 @@
 title: Pagine di errore personalizzate
 description: AEM viene fornito con un gestore degli errori standard per la gestione degli errori HTTP, che può essere personalizzato.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -77,6 +77,6 @@ Per gestire gli errori 500, il nome file dello script del gestore degli errori d
 >
 >In un’istanza Autore, [Filtro di debug CQ WCM](/help/implementing/deploying/configuring-osgi.md) è attivato per impostazione predefinita. Questo determina sempre il codice di risposta 200. Il gestore degli errori predefinito risponde scrivendo la traccia full stack nella risposta.
 >
->Per un gestore degli errori personalizzato, sono necessarie risposte con codice 500, quindi [È necessario disabilitare il filtro di debug CQ WCM.](/help/implementing/deploying/configuring-osgi.md) In questo modo viene restituito il codice di risposta 500, che a sua volta attiva il gestore di errori Sling corretto.
+>Per un gestore degli errori personalizzato, sono necessarie risposte con codice 500, quindi [È necessario disabilitare il filtro di debug CQ WCM](/help/implementing/deploying/configuring-osgi.md). In questo modo viene restituito il codice di risposta 500, che a sua volta attiva il gestore di errori Sling corretto.
 >
 >In un’istanza di pubblicazione, il filtro di debug CQ WCM è **sempre** disabilitato (anche se configurato come abilitato).

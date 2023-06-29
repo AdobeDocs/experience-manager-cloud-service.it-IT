@@ -2,9 +2,9 @@
 title: Note sulla versione 2021.3.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.3.0 as a Cloud Service."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1290'
 ht-degree: 37%
 
 ---
@@ -74,9 +74,9 @@ Puoi rivolgerti al tuo rappresentante di Adobe per una demo o per registrarti al
 
 * Il componente Dettagli prodotto ora può essere utilizzato e configurato su qualsiasi pagina di contenuto
 
-* È stato rilasciato il sito di riferimento CIF Venia (25.03.2021), che include la versione più recente dei Componenti Core CIF 1.9.0. Fai riferimento a [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) per ulteriori dettagli.
+* È stato rilasciato il sito di riferimento CIF Venia (25.03.2021), che include la versione più recente dei Componenti Core CIF 1.9.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) per ulteriori dettagli.
 
-* È stata rilasciata la versione 1.9.0 dei componenti core CIF. Fai riferimento a [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) per ulteriori dettagli.
+* È stata rilasciata la versione 1.9.0 dei componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) per ulteriori dettagli.
 
 
 ## Cloud Manager {#cloud-manager}
@@ -167,13 +167,13 @@ La data di rilascio di Best Practices Analyzer v2.1.8 è il 22 marzo 2021.
 
 ### Novità degli strumenti di refactoring del codice {#what-is-new-crt}
 
-* Nuove funzioni e miglioramenti per Repository Modernizer. Fai riferimento a [Risorsa GitHub: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per la versione più recente.
+* Nuove funzioni e miglioramenti per Repository Modernizer. Consulta [Risorsa GitHub: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per la versione più recente.
    * Normalizza le configurazioni OSGi (ad eccezione delle configurazioni RepoInit) nel formato .cfg.json preferito.
    * Rinomina le cartelle di configurazione OSGi nel formato specificato.
    * Genera il progetto ui.apps.structure.
    * Crea il modulo di analisi.
 
-* Nuove funzioni e miglioramenti per Dispatcher Converter. Fai riferimento a [Risorsa GitHub: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+* Nuove funzioni e miglioramenti per Dispatcher Converter. Consulta [Risorsa GitHub: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
    * Creazione di file separati per diverse inclusioni invece di allineare il contenuto.
    * Possibilità di gestire sia il percorso della cartella di vhosts che il percorso dei file vhost.
    * Generazione di file farm con configurazioni di clienti di grandi dimensioni in un intervallo di 600 e più.

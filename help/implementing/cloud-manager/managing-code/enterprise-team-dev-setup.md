@@ -2,10 +2,10 @@
 title: Configurazione del team di sviluppo Enterprise
 description: Scopri come configurare e scalare il team di sviluppo Enterprise e come supportare il processo di sviluppo con AEM as a Cloud Service.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 85%
+source-wordcount: '1437'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ Scopri come configurare e scalare il team di sviluppo Enterprise e come supporta
 
 ## Introduzione {#introduction}
 
-Per supportare i clienti con configurazioni di sviluppo di livello Enterprise, AEM as a Cloud Service si integra completamente con Cloud Manager e le relative [pipeline CI/CD appositamente progettate.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Queste pipeline e servizi sono progettati in base alle best practice e garantiscono [test accurati e la qualità più elevata del codice.](/help/implementing/cloud-manager/code-quality-testing.md)
+Per supportare i clienti con configurazioni di sviluppo di livello Enterprise, AEM as a Cloud Service si integra completamente con Cloud Manager e le relative [pipeline CI/CD appositamente progettate](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Queste pipeline e servizi sono progettati in base alle best practice e garantiscono [test accurati e la qualità più elevata del codice](/help/implementing/cloud-manager/code-quality-testing.md).
 
 ## Supporto di Cloud Manager per la configurazione del team di sviluppo Enterprise {#cloud-manager}
 
@@ -70,7 +70,7 @@ La configurazione nell’archivio Git di Cloud Manager presenta due rami.
 * Un ramo della versione stabile contiene il codice di produzione di tutti i team.
 * Un ramo di sviluppo contiene il codice di sviluppo di tutti i team.
 
-Ogni push all’archivio Git di un team nel ramo di sviluppo o nel ramo stabile attiva un [Azione GitHub.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+Ogni push all’archivio Git di un team nel ramo di sviluppo o nel ramo stabile attiva un [Azione GitHub](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
 
 Tutti i progetti presentano la stessa configurazione per il ramo stabile. Un push al ramo stabile di un progetto viene inviato automaticamente al ramo stabile nell’archivio Git di Cloud Manager. La pipeline di produzione in Cloud Manager è configurata per essere attivata da un push al ramo stabile. La pipeline di produzione viene quindi eseguita da ogni push in un ramo stabile eseguito dai team, mentre la distribuzione in produzione viene aggiornata se supera tutti i gate di qualità.
 
@@ -82,7 +82,7 @@ L’esecuzione della pipeline di produzione include il controllo del codice di t
 
 Per lo sviluppo locale, si utilizza l’[SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing). L’SDK consente di configurare un’istanza di Author, Publish e Dispatcher locale. In questo modo lo sviluppo può avvenire offline con tempi di risposta rapidi. A volte per lo sviluppo si utilizza solo l’ambiente di Author, ma configurare rapidamente gli ambienti Dispatcher e Publish consente di eseguire test completi a livello locale prima di eseguire il push nell’archivio Git.
 
-In genere, i membri di ogni team estraggono il codice dall’archivio Git condiviso anche per il codice dei progetti proprietari. Non è necessario estrarre altri progetti, in quanto ognuno è indipendente.
+In genere, i membri di ogni team estraggono il codice dall’archivio Git condiviso per il proprio codice progetto. Non è necessario estrarre altri progetti, in quanto ognuno è indipendente.
 
 ![Ritiro locale e SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
@@ -90,7 +90,7 @@ Questa configurazione reale può essere utilizzata come blueprint e personalizza
 
 >[!TIP]
 >
->Per ulteriori informazioni su questa configurazione, consulta il documento [Utilizzo di più archivi Git di origine](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=it#managing-code).
+>Consulta [Utilizzo di più archivi Git di origine](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=it#managing-code) per ulteriori informazioni su questa configurazione.
 
 ### Considerazioni per una configurazione con più team {#considerations}
 

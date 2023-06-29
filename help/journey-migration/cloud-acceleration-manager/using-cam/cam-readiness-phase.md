@@ -2,9 +2,9 @@
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica sulla fase di preparazione in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1049'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ Per utilizzare la scheda Analisi delle best practice, effettua le seguenti opera
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. Rivedi ed esplora la dashboard Analisi delle best practice in CAM. Consulta la sezione seguente [Analisi delle best practice](#analysis-report) per ulteriori dettagli.
+1. Rivedi ed esplora la dashboard Analisi delle best practice in CAM. Consulta [Analisi delle best practice](#analysis-report) per ulteriori dettagli.
 
    >[!NOTE]
    >Il caricamento di un nuovo rapporto reimposta tutte le valutazioni.
@@ -158,7 +158,7 @@ Puoi filtrare il rapporto in base alla rilevanza, al sottotipo o al conteggio.
 ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Fai riferimento a [Interpretazione del rapporto di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) per informazioni sulle categorie e sui livelli di importanza dei risultati.
+>Consulta [Interpretazione del rapporto di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) per informazioni sulle categorie e sui livelli di importanza dei risultati.
 
 #### Valutazione delle best practice {#best-practices-assessment}
 

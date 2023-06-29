@@ -2,10 +2,10 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 84%
+source-wordcount: '1142'
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ Per creare contenuti per un’app tramite l’editor universale, l’app deve es
 
 >[!TIP]
 >
->Consulta il documento [Guida introduttiva all’editor universale in AEM](getting-started.md) per un esempio su come configurare un’app AEM per lavorare con l’editor universale.
+>Consulta [Guida introduttiva all’Editor universale in AEM](getting-started.md) un esempio di come configurare un’app AEM per l’utilizzo con Universal Editor.
 
 ## Accedi {#sign-in}
 
@@ -84,7 +84,7 @@ L’icona dell’aiuto fornisce un accesso rapido alle risorse di apprendimento 
 
 #### Notifiche {#notifications}
 
-Questa icona è contrassegnata con il numero di incompleti attualmente assegnati [notifiche.](/help/implementing/cloud-manager/notifications.md)
+Questa icona è contrassegnata con il numero di incompleti attualmente assegnati [notifiche](/help/implementing/cloud-manager/notifications.md).
 
 ![Notifiche](assets/notifications.png)
 
@@ -96,7 +96,7 @@ Tocca o fai clic sull’icona che rappresenta l’utente per accedere alle impos
 
 ### Intestazione dell’editor universale {#universal-editor-header}
 
-L’intestazione dell’editor universale è sempre presente nella parte superiore dello schermo immediatamente sotto [l’intestazione di Experience Cloud.](#experience-cloud-header) Consente un accesso rapido per passare a un’altra pagina di modifica e di pubblicazione della pagina corrente.
+L’intestazione dell’editor universale è sempre presente nella parte superiore dello schermo immediatamente sotto [l’intestazione di Experience Cloud.](#experience-cloud-header) Ti consente di accedere rapidamente a un’altra pagina per modificare e pubblicare la pagina corrente.
 
 ![Intestazione dell’editor universale](assets/universal-editor-header.png)
 

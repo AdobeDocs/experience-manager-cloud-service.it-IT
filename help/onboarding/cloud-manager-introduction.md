@@ -2,10 +2,10 @@
 title: Introduzione a Cloud Manager
 description: Scopri in che modo Cloud Manager supporta il progetto AEM tramite programmi, ambienti e pipeline.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 98%
+source-wordcount: '835'
+ht-degree: 82%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 Cloud Manager è un componente essenziale di AEM as a Cloud Service e funge da punto di ingresso singolo per il team. Le pipeline CI/CD appositamente progettate offrono funzionalità di test approfondite e la massima qualità del codice per garantire esperienze eccezionali. Per consentire ai clienti di avviare rapidamente i progetti, Cloud Manager fornisce tutto ciò che serve per iniziare in autonomia, inclusa la possibilità di creare risorse e ambienti cloud e di accedere agli archivi Git. Queste funzioni supportano le configurazioni di sviluppo di livello Enterprise per consentire ai team di confermare modifiche frequenti, offrire rapidamente esperienze digitali eccezionali e accelerare il time to value.
 
-L’amministratore di sistema è responsabile della configurazione del team Cloud Manager, che include le persone che creano le risorse cloud e il team di sviluppo. Per ulteriori informazioni su come impostare e scalare il team di sviluppo Enterprise e scoprire come AEM as a Cloud Service può supportare il processo di sviluppo, consulta il documento [Configurazione del team di sviluppo Enterprise per AEM as a Cloud Service.](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+L’amministratore di sistema è responsabile della configurazione del team Cloud Manager, che include le persone che creano le risorse cloud e il team di sviluppo. Per ulteriori informazioni su come impostare e scalare il team di sviluppo Enterprise e scoprire come AEM as a Cloud Service può supportare il processo di sviluppo, consulta [Configurazione di Enterprise Team Development per AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).
 
 ## Accesso alla pagina Panoramica di Cloud Manager {#navigate-cloud-manager}
 
@@ -23,7 +23,7 @@ Per accedere a Cloud Manager, segui la procedura riportata di seguito.
 
 1. Dalla pagina **Programmi e prodotti** di Cloud Manager, seleziona il programma per aprire la pagina **Panoramica**.
 
-Puoi accedere alla pagina Programmi e prodotti di Cloud Manager anche dalla pagina Home di Adobe Experience Cloud, seguendo la procedura riportata di seguito.
+Puoi accedere alla pagina Programmi e prodotti di Cloud Manager anche dalla home page di Adobe Experience Cloud, seguendo la procedura riportata di seguito.
 
 1. Accedi a Adobe Experience Cloud all’indirizzo [`https://experience.adobe.com`](https://experience.adobe.com), quindi accedi con il tuo Adobe ID.
 
@@ -54,7 +54,7 @@ Puoi accedere alla pagina Programmi e prodotti di Cloud Manager anche dalla pagi
 
 >[!NOTE]
 >
->È possibile assegnare più ruoli a un singolo utente. Ad esempio, assegnando a un utente entrambi i ruoli **Proprietario business** e **Responsabile dell’implementazione**, si assegna la somma delle rispettive autorizzazioni.
+>È possibile assegnare più ruoli a un singolo utente. Ad esempio, assegnando entrambi **Proprietario business** e **Responsabile dell’implementazione** ruoli a un utente assegna la somma di queste autorizzazioni.
 
 ## Programmi di Cloud Manager {#cloud-manager-programs}
 
@@ -66,12 +66,12 @@ Per ulteriori informazioni sull’uso dei programmi di Cloud Manager, guarda que
 L’utente può creare un programma **sandbox** o un programma **di produzione**.
 
 * Un **programma di produzione** viene creato per abilitare il traffico in tempo reale nel momento futuro adeguato.
-   * Per ulteriori informazioni, consulta il documento [Introduzione ai programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
+   * Consulta [Introduzione ai programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) per ulteriori dettagli.
 
 * Un **programma sandbox** viene generalmente creato a scopi di formazione, esecuzione di demo, abilitazione, creazione di POC o documentazione.
    * Non è concepito per trasmettere il traffico in tempo reale e presenta delle limitazioni non riscontrate nei programmi di produzione.
    * Un programma sandbox include Sites e Assets e viene fornito automaticamente con un ramo Git che include il codice di esempio, un ambiente di sviluppo e una pipeline non di produzione.
-   * Per ulteriori informazioni, consulta il documento [Introduzione ai programmi Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+   * Consulta [Introduzione ai programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) per ulteriori dettagli.
 
 ## Ambienti di Cloud Manager {#cloud-manager-environments}
 
@@ -83,9 +83,9 @@ Gli ambienti cloud vengono creati, accessibili e visualizzati tramite Cloud Mana
 
 >[!TIP]
 >
-> Per una panoramica degli ambienti disponibili, fai riferimento al video [Utilizzo degli ambienti di Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=it).
+> Guarda il video [Utilizzo degli ambienti Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=it) una panoramica degli ambienti disponibili.
 >
->Per ulteriori informazioni su quali tipi di ambienti si possono creare e su come farlo, consulta il documento [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md).
+>Consulta [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md) per ulteriori informazioni sui tipi di ambiente che un utente può creare e su come l’utente può creare un ambiente.
 
 ### Servizio di authoring di AEM {#author-services}
 

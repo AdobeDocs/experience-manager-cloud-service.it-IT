@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina
 description: Imposta le proprietà richieste per una pagina
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 82%
+source-wordcount: '2341'
+ht-degree: 81%
 
 ---
 
@@ -196,15 +196,15 @@ Le proprietà sono distribuite su più schede.
 
 ### Blueprint {#blueprint}
 
-Questa scheda è visibile solo per le pagine che fungono da blueprint. Le blueprint fungono da base per le Live Copy e fanno parte della [Gestione multisito.](/help/sites-cloud/administering/msm/overview.md)
+Questa scheda è visibile solo per le pagine che fungono da blueprint. Le blueprint fungono da base per le Live Copy e fanno parte della [Gestione multisito](/help/sites-cloud/administering/msm/overview.md).
 
-* **Live Copy attuali**: elenca le pagine basate su (ad esempio, Live Copy di) questa pagina blueprint
+* **Live Copy correnti** : elenca le pagine basate su (ovvero, Live Copy di) questa pagina blueprint
 
 * **Configurazioni rollout** - Controlla le circostanze in cui le modifiche vengono propagate alla Live Copy
 
 ### Live Copy  {#live-copy}
 
-Questa scheda è visibile solo per le pagine configurate come Live Copy. Come per le blueprint, le Live Copy fanno parte della [Gestione multisito](/help/sites-cloud/administering/msm/overview.md).
+Questa scheda è visibile solo per le pagine configurate come Live Copy. Come per le blueprint, le Live Copy fanno parte di [Gestione multisito](/help/sites-cloud/administering/msm/overview.md).
 
 * **Sincronizza**: sincronizza le Live Copy con blueprint, mantenendo le modifiche locali
 * **Ripristina**: ripristina le Live Copy allo stato di blueprint, rimuovendo le modifiche locali

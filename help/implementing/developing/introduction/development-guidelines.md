@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2586'
 ht-degree: 5%
 
 ---
@@ -65,7 +65,7 @@ Le alternative che sono note per funzionare, ma che possono richiedere di fornir
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (non consigliato in quanto obsoleto e sostituito dalla versione 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Non fornito dall’AEM)
 
-Oltre a fornire timeout, è necessario implementare anche una corretta gestione di tali timeout e codici di stato HTTP imprevisti.
+Oltre a fornire timeout, è necessario anche gestire correttamente tali timeout e inserire codici di stato HTTP imprevisti.
 
 ## Nessuna personalizzazione interfaccia classica {#no-classic-ui-customizations}
 
@@ -282,8 +282,8 @@ Gli MVP di grandi dimensioni possono causare errori dovuti al fatto che il docum
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-Consulta la sezione [Documentazione di Apache Oak](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) per ulteriori dettagli.
+Consulta la [Documentazione di Apache Oak](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) per ulteriori dettagli.
 
 ## [!DNL Assets] linee guida per lo sviluppo e casi di utilizzo {#use-cases-assets}
 
-Per informazioni sui casi di utilizzo per lo sviluppo, le raccomandazioni e il materiale di riferimento per Assets as a Cloud Service, consulta [Riferimenti per sviluppatori per Assets.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+Per informazioni sui casi di utilizzo per lo sviluppo, le raccomandazioni e il materiale di riferimento per Assets as a Cloud Service, consulta [Riferimenti per sviluppatori per Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

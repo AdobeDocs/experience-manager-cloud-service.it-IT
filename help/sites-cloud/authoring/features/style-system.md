@@ -2,10 +2,10 @@
 title: Sistema di stili
 description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 61%
+source-wordcount: '1320'
+ht-degree: 60%
 
 ---
 
@@ -104,7 +104,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 >[!CAUTION]
 >
->Le classi CSS e l&#39;eventuale codice JavaScript configurato come proprietà di stile di un criterio di un componente devono essere distribuiti come [Librerie client](/help/implementing/developing/introduction/clientlibs.md) al lavoro.
+>Le classi CSS e l’eventuale codice JavaScript configurato come proprietà di stile di un criterio di un componente devono essere distribuiti come [Librerie client](/help/implementing/developing/introduction/clientlibs.md) al lavoro.
 
 ## Configurazione {#setup}
 

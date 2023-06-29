@@ -2,10 +2,10 @@
 title: Attributi e tipi
 description: Scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 84%
+source-wordcount: '662'
+ht-degree: 82%
 
 ---
 
@@ -27,7 +27,7 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 |---|---|
 | `itemid` | Per l’URN della risorsa, consulta la sezione [Instrumenta la pagina del documento Guida introduttiva all’editor universale in AEM](getting-started.md#instrument-thepage) |
 | `itemprop` | Per l’attributo della risorsa, consulta la sezione [Instrumenta la pagina del documento Guida introduttiva all’editor universale in AEM](getting-started.md#instrument-thepage) |
-| `itemtype` | Tipo di elemento modificabile (ad esempio testo, immagine, riferimento, ecc.) |
+| `itemtype` | Tipo dell’elemento modificabile (ad esempio testo, immagine e riferimento) |
 | `data-editor-itemfilter` | Definisce quali riferimenti possono essere utilizzati |
 | `data-editor-itemlabel` | Definisce un’etichetta personalizzata per un elemento selezionabile che viene visualizzata nell’editor <br>Nel caso `itemmodel` è impostato, l’etichetta viene recuperata tramite il modello |
 | `data-editor-itemmodel` | Definisce un modello utilizzato per la modifica basata su modulo nella barra delle proprietà |
@@ -41,7 +41,7 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 | `richtext` | Il testo è modificabile utilizzando tutte le funzioni RTF. L’editor Rich Text viene visualizzato nel pannello di destra | Facoltativo | Obbligatorio | n/d | Facoltativo | n/d | Facoltativo |
 | `media` | L’elemento modificabile è una risorsa, ad esempio immagine o video | Facoltativo | Obbligatorio | Facoltativo<br>elenco di criteri di filtro per immagini o video trasmessi al selettore risorse | Facoltativo | n/d | Facoltativo |
 | `container` | L’elemento modificabile si comporta come contenitore per i componenti, cioè come Sistema paragrafo. | Dipende <br>vedi sotto | Dipende <br>vedi sotto | Facoltativo<br>un elenco di componenti consentiti | Facoltativo | n/d | n/d |
-| `component` | L’elemento modificabile è un componente. Non aggiunge funzionalità aggiuntive, è necessario per indicare parti mobili/eliminabili del DOM e per aprire la barra delle proprietà e i relativi campi | Obbligatorio | n/d | n/d | Facoltativo | Facoltativo | n/d |
+| `component` | L’elemento modificabile è un componente. Non aggiunge funzionalità aggiuntive, è richiesto per indicare parti mobili/eliminabili del DOM e per aprire la barra delle proprietà e i relativi campi | Obbligatorio | n/d | n/d | Facoltativo | Facoltativo | n/d |
 | `reference` | L’elemento modificabile è un riferimento, ad esempio frammento di contenuto, frammento di esperienza o prodotto. | Dipende <br>vedi sotto | Dipende <br>vedi sotto | Facoltativo<br>elenco di criteri di filtro per frammento di contenuto, prodotto o frammento di esperienza trasmessi al selettore di riferimento | Facoltativo | Facoltativo | n/d |
 
 A seconda del caso d’uso `itemprop` o `itemid` può essere richiesto o meno. Ad esempio:

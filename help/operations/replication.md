@@ -2,9 +2,9 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1339'
 ht-degree: 46%
 
 ---
@@ -182,7 +182,7 @@ Lo stato `ReplicationStatus` complessivo di una risorsa viene modificato solo se
 
 ### Metodi di invalidazione dei contenuti {#invalidating-content}
 
-Puoi annullare direttamente la validità del contenuto utilizzando l’Invalidazione dei contenuti Sling (SCD) dall’authoring (metodo preferito) o utilizzando l’API di replica per richiamare l’agente di svuotamento del Dispatcher per la pubblicazione. Per ulteriori dettagli, fai riferimento alla pagina [Memorizzazione in cache](/help/implementing/dispatcher/caching.md).
+Puoi annullare direttamente la validità del contenuto utilizzando l’Invalidazione dei contenuti Sling (SCD) dall’authoring (metodo preferito) o utilizzando l’API di replica per richiamare l’agente di svuotamento del Dispatcher per la pubblicazione. Consulta [Memorizzazione in cache](/help/implementing/dispatcher/caching.md) per ulteriori dettagli.
 
 **Limiti di capacità dell’API di replica**
 

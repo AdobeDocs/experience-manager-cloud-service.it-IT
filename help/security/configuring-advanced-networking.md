@@ -2,10 +2,10 @@
 title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3579'
-ht-degree: 82%
+source-wordcount: '3571'
+ht-degree: 77%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service offre diversi tipi di funzionalità di rete avanzate, che
 * [Indirizzo IP in uscita dedicato](#dedicated-egress-IP-address) - configura il traffico da AEM as a Cloud Service per l’origine da un IP univoco
 * [Virtual Private Network (VPN)](#vpn) - traffico sicuro tra l’infrastruttura di un cliente e AEM as a Cloud Service, per i clienti che dispongono di tecnologia VPN
 
-Questo articolo descrive in dettaglio ciascuna di queste opzioni, incluso come configurarle. Come strategia generale di configurazione, l’endpoint API `/networkInfrastructures` viene richiamato a livello di programma per dichiarare il tipo desiderato di rete avanzata, seguito da una chiamata all’endpoint `/advancedNetworking` per ogni ambiente per abilitare l’infrastruttura e configurare parametri specifici dell’ambiente. Fai riferimento agli endpoint appropriati nella documentazione API di Cloud Manager per ogni sintassi formale, oltre a richieste di esempio e risposte.
+Questo articolo descrive in dettaglio ciascuna di queste opzioni, incluso come configurarle. Come strategia generale di configurazione, l’endpoint API `/networkInfrastructures` viene richiamato a livello di programma per dichiarare il tipo desiderato di rete avanzata, seguito da una chiamata all’endpoint `/advancedNetworking` per ogni ambiente per abilitare l’infrastruttura e configurare parametri specifici dell’ambiente. Fai riferimento agli endpoint appropriati nella documentazione API di Cloud Manager per ogni sintassi formale e per richieste e risposte di esempio.
 
 Un programma può fornire un’unica variante di rete avanzata. Quando bisogna decidere tra l’uscita flessibile della porta e l’indirizzo IP in uscita dedicato, si consiglia di scegliere l’uscita flessibile della porta se non è necessario un indirizzo IP specifico perché Adobe può ottimizzare le prestazioni del traffico in uscita flessibile della porta.
 
@@ -44,11 +44,11 @@ Questa funzionalità avanzata di rete consente di configurare AEM as a Cloud Ser
 
 ### Considerazioni {#flexible-port-egress-considerations}
 
-L’uscita dalla porta flessibile è la scelta consigliata se non hai bisogno di VPN e non hai bisogno di un indirizzo IP di uscita dedicato, in quanto il traffico che non si basa su un’uscita dedicata può raggiungere una produttività più elevata.
+L’uscita da porta flessibile è la scelta consigliata se non hai bisogno di VPN e non hai bisogno di un indirizzo IP in uscita dedicato, in quanto il traffico che non si basa su un’uscita dedicata può raggiungere una velocità effettiva più elevata.
 
 ### Configurazione {#configuring-flexible-port-egress-provision}
 
-Una volta per programma, l’endpoint POST `/program/<programId>/networkInfrastructures` viene richiamato, passando semplicemente il valore di `flexiblePortEgress` per il parametro `kind` e area geografica. L’endpoint risponde con `network_id`, nonché altre informazioni, compreso lo stato. Per informazioni sull’intero set di parametri e sulla sintassi esatta, nonché altre informazioni importanti (ad esempio, quali parametri non possono essere modificati in un secondo momento), consulta la [documentazione sulle API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+Una volta per programma, l’endpoint POST `/program/<programId>/networkInfrastructures` viene richiamato, passando semplicemente il valore di `flexiblePortEgress` per il parametro `kind` e area geografica. L’endpoint risponde con `network_id`, e altre informazioni, tra cui lo stato. Il set completo di parametri e la sintassi esatta, oltre a informazioni importanti quali i parametri che non possono essere modificati in un secondo momento, [possono essere consultati nella documentazione delle API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 Una volta effettuata la chiamata, in genere sono necessari circa 15 minuti per il provisioning dell’infrastruttura di rete. Una chiamata all’[endpoint GET per infrastruttura di rete](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) di Cloud Manager mostrerebbe uno stato “ready”.
 
@@ -180,7 +180,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->Se hai effettuato il provisioning con un IP in uscita dedicato prima della versione di settembre 2021 (10/06/21), fai riferimento a [Clienti di indirizzi in uscita dedicati legacy](#legacy-dedicated-egress-address-customers).
+>Se hai effettuato il provisioning con un IP in uscita dedicato prima della versione di settembre 2021 (10/6/21), consulta [Clienti con indirizzi in uscita dedicati legacy](#legacy-dedicated-egress-address-customers).
 
 ### Vantaggi {#benefits}
 
@@ -354,7 +354,7 @@ Sono supportati la maggior parte dei dispositivi VPN con tecnologia IPSec. Consu
 
 ### Creazione {#vpn-creation}
 
-Una volta per programma, viene richiamato l’endpoint POST `/program/<programId>/networkInfrastructures`, passando in un payload di informazioni di configurazione che includono: il valore di “vpn” per il parametro `kind`, l’area geografica, lo spazio indirizzi (elenco di CIDR - nota che questo valore non potrà essere modificato in seguito), i risolutori DNS (per la risoluzione dei nomi nella rete del cliente) e informazioni sulla connessione VPN, ad esempio la configurazione del gateway, la chiave VPN condivisa e i criteri di sicurezza IP. L&#39;endpoint risponde con `network_id`, nonché altre informazioni, tra cui lo stato. Per il set completo di parametri e la sintassi esatta è necessario fare riferimento alla [documentazione dell’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+Una volta per programma, viene richiamato l’endpoint POST `/program/<programId>/networkInfrastructures`, passando in un payload di informazioni di configurazione che includono: il valore di “vpn” per il parametro `kind`, l’area geografica, lo spazio indirizzi (elenco di CIDR - nota che questo valore non potrà essere modificato in seguito), i risolutori DNS (per la risoluzione dei nomi nella rete del cliente) e informazioni sulla connessione VPN, ad esempio la configurazione del gateway, la chiave VPN condivisa e i criteri di sicurezza IP. L’endpoint risponde con `network_id`, e altre informazioni, tra cui lo stato. Per il set completo di parametri e la sintassi esatta è necessario fare riferimento alla [documentazione dell’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 Una volta effettuata la chiamata, in genere il provisioning dell’infrastruttura di rete richiede tra i 45 e i 60 minuti. Il metodo GET dell’API può essere chiamato per restituire lo stato corrente, che alla fine passerà da `creating` a `ready`. Consulta la documentazione dell’API per tutti gli stati.
 
@@ -425,7 +425,7 @@ La tabella seguente descrive il routing del traffico.
   </tr>
   <tr>
     <td></td>
-    <td>Se l’IP non rientra nell’intervallo <i>Spazio degli indirizzi gateway VPN</i> e attraverso la configurazione proxy http (configurata per impostazione predefinita per il traffico http/s utilizzando la libreria client Java HTTP standard)</td>
+    <td>Se il PI non rientra nel <i>Spazio indirizzi gateway VPN</i> e tramite la configurazione proxy http (configurata per impostazione predefinita per il traffico http/s utilizzando la libreria client Java HTTP standard)</td>
     <td>Qualsiasi</td>
     <td>Attraverso l’IP dedicato in uscita</td>
     <td></td>
@@ -454,7 +454,7 @@ La tabella seguente descrive il routing del traffico.
   </tr>
   <tr>
     <td></td>
-    <td>Se l’IP non rientra nell’intervallo <i>Spazio degli indirizzi gateway VPN</i> e il client si connette a <code>AEM_PROXY_HOST</code> variabile env che utilizza un <code>portOrig</code> dichiarato nel parametro di API <code>portForwards</code></td>
+    <td>Se il PI non rientra nel <i>Spazio indirizzi gateway VPN</i> intervallo e client si connette a <code>AEM_PROXY_HOST</code> variabile d’ambiente che utilizza un <code>portOrig</code> dichiarato in <code>portForwards</code> Parametro API</td>
     <td>Qualsiasi</td>
     <td>Attraverso l’IP dedicato in uscita</td>
     <td></td>

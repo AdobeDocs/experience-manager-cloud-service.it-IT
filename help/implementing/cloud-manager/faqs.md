@@ -2,7 +2,7 @@
 title: Domande frequenti su Cloud Manager
 description: Trova le risposte alle domande più frequenti su Cloud Manager in AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 65%
@@ -58,11 +58,11 @@ Questo valore consente di installare la distribuzione successiva anche se la ver
 
 È possibile impostare la versione su `-SNAPSHOT` per le build o le implementazioni negli ambienti di staging e produzione. Cloud Manager imposta automaticamente un numero di versione corretto e crea un tag in Git per l’utente. Se necessario, puoi fare riferimento a questo tag in un secondo momento.
 
-Ulteriori informazioni sulla gestione delle versioni sono consultabili [qui.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+Ulteriori informazioni sulla gestione delle versioni sono consultabili [qui](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Come funziona il controllo delle versioni di pacchetti e bundle per le distribuzioni negli ambienti di staging e produzione? {#snapshot-version}
 
-Per le distribuzioni negli ambienti di staging e produzione viene generata una versione automatica, come [documentato qui.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+Per le distribuzioni negli ambienti di staging e produzione viene generata una versione automatica, come [documentato qui](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Per il controllo delle versioni personalizzato per le distribuzioni negli ambienti di staging e produzione, imposta una versione Maven in tre parti appropriata, come ad esempio `1.0.0`. Aumenta il numero della versione per ogni esecuzione della distribuzione nell’ambiente di produzione.
 

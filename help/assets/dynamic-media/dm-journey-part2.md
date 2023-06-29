@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2875'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -208,7 +208,7 @@ Leggi solo i set di immagini e i visualizzatori. Osserviamo un paio di altri vis
 
 ## Facoltativo - Ulteriori informazioni
 
-Per saperne di più su ciò che hai appena letto, usa i materiali qui sotto per approfondire i concetti. In caso contrario, il Percorso Dynamic Media è completo.
+Per ulteriori informazioni su ciò che hai appena letto, utilizza i materiali riportati di seguito per approfondire i concetti. In caso contrario, il Percorso Dynamic Media è completo.
 
 _Argomenti della Guida di Dynamic Media_
 

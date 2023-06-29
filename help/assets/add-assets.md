@@ -4,9 +4,9 @@ description: Aggiungere le risorse digitali a [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2b597707a26726eec26541c04914ac36e8909fc5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3156'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Oltre al caricamento del browser più comunemente utilizzato, sono disponibili altri metodi per aggiungere risorse alla [!DNL Experience Manager] archivio esistente. Questi altri metodi includono i client desktop, come Adobe Asset Link o [!DNL Experience Manager] l’app desktop, gli script di caricamento e acquisizione che i clienti creerebbero e le integrazioni di acquisizione automatizzata aggiunte come [!DNL Experience Manager] estensioni.
 
-Mentre puoi caricare e gestire qualsiasi file binario in [!DNL Experience Manager], i formati di file più comunemente utilizzati supportano servizi aggiuntivi, come l’estrazione di metadati o la generazione di anteprime/rappresentazioni. Fai riferimento a [formati di file supportati](file-format-support.md) per i dettagli.
+Mentre puoi caricare e gestire qualsiasi file binario in [!DNL Experience Manager], i formati di file più comunemente utilizzati supportano servizi aggiuntivi, come l’estrazione di metadati o la generazione di anteprime/rappresentazioni. Consulta [formati di file supportati](file-format-support.md) per i dettagli.
 
 Puoi anche scegliere di eseguire un’elaborazione aggiuntiva sulle risorse caricate. Sulla cartella è possibile configurare diversi profili di elaborazione delle risorse, in cui vengono caricate le risorse, per aggiungere metadati specifici, rappresentazioni o servizi di elaborazione delle immagini. Consulta [elabora risorse quando caricato](#process-when-uploaded).
 

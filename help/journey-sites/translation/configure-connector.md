@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 96%
+source-wordcount: '1164'
+ht-degree: 94%
 
 ---
 
@@ -82,7 +82,7 @@ Per creare una nuova configurazione di traduzione:
 1. Tocca o fai clic su **Crea** nella barra degli strumenti per creare la nuova configurazione.
 1. Fornisci le seguenti informazioni nei campi, quindi tocca o fai clic su **Crea**.
    1. Seleziona **Tipo di configurazione** nel menu a discesa. Seleziona **Integrazione della traduzione** dall’elenco.
-   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione nella console **Servizi cloud** così come nell’elenco a discesa delle proprietà della pagina.
+   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione in **Cloud Services** e negli elenchi a discesa delle proprietà della pagina.
    1. Facoltativamente, digita un **Nome** da utilizzare per il nodo dell’archivio che memorizza la configurazione.
 
    ![Creare una configurazione di traduzione](assets/create-translation-configuration.png)

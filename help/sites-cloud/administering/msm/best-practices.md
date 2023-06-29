@@ -4,10 +4,10 @@ description: Scopri le best practice compilate dai team di progettazione e consu
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 95%
+source-wordcount: '1425'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ Quando crei un nuovo sito con Live Copy, è vantaggioso creare configurazioni bl
 
 >[!NOTE]
 >
-> Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione delle Live Copy.
+>Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica intorno a questa regola durante la configurazione della Live Copy.
 
 ## Sincronizzazione dei componenti e dei contenitori {#components-and-container-synchronization}
 
@@ -81,13 +81,13 @@ MSM può contribuire alla creazione di siti Web multilingue in due modi:
 
 Quando crei le lingue master, tieni presente quanto segue:
 
-* Sebbene MSM stesso **non fornisca la traduzione del contenuto**, può essere integrato con connettori di traduzione di terze parti che lo fanno. Nota che:
+* Sebbene MSM stesso **non fornisca la traduzione del contenuto**, può essere integrato con connettori di traduzione di terze parti che lo fanno. Tieni presente quanto segue:
    * MSM consente di annullare l’ereditarietà a livello di pagina e/o componente. Questo aiuta a evitare la sovrascrittura dei contenuti tradotti (da una Live Copy, con contenuti non ancora tradotti da una blueprint) al prossimo rollout.
       * Alcuni connettori di traduzione di terze parti automatizzano questa gestione delle ereditarietà MSM.
       * Per ulteriori informazioni, rivolgiti al provider di servizi di traduzione.
       * Un approccio alternativo per la creazione e la traduzione di lingue master consiste nell’utilizzare copie in lingua insieme all&#39;AEM Translation Integration Framework preconfigurato.
 
-Per ulteriori informazioni consulta [Traduzione di contenuti per siti multilingue](/help/sites-cloud/administering/translation/overview.md) e [Best practice per la traduzione.](/help/sites-cloud/administering/translation/best-practices.md)
+Per ulteriori informazioni consulta [Traduzione di contenuti per siti multilingue](/help/sites-cloud/administering/translation/overview.md) e [Best practice per la traduzione](/help/sites-cloud/administering/translation/best-practices.md).
 
 ## Modifiche alla struttura e rollout {#structure-changes-and-rollouts}
 
@@ -144,7 +144,7 @@ Oltre a personalizzare le azioni di rollout, MSM ti consente anche di personaliz
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori informazioni su MSM e Live Copy, consulta i seguenti articoli.
+Consulta i seguenti articoli per ulteriori dettagli su MSM e Live Copy.
 
 * [Creazione e sincronizzazione di Live Copy](creating-live-copies.md)
 * [Panoramica Live Copy](live-copy-overview.md)

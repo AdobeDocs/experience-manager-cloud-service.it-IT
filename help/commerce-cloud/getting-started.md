@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 15%
 
 ---
@@ -28,7 +28,7 @@ L’onboarding per AEM Commerce as a Cloud Service è un processo in due fasi:
 
 Il primo passaggio di onboarding è effettuato per Adobe. Per maggiori dettagli su prezzi e provisioning, contatta il tuo rappresentante commerciale.
 
-Dopo il provisioning con il componente aggiuntivo CIF, questo viene applicato a tutti i programmi Cloud Manager esistenti. Se non disponi di un programma Cloud Manager, devi crearne uno. Per ulteriori informazioni, consulta [Configurare il programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+Dopo il provisioning con il componente aggiuntivo CIF, questo viene applicato a tutti i programmi Cloud Manager esistenti. Se non disponi di un programma Cloud Manager, devi crearne uno. Per ulteriori dettagli, consulta [Configurare il programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
 
 Il secondo passaggio è autonomo per ogni ambiente AEM as a Cloud Service. Dopo il provisioning iniziale del componente aggiuntivo CIF, è necessario eseguire alcune configurazioni aggiuntive.
 

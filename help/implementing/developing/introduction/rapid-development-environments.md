@@ -2,9 +2,9 @@
 title: Ambienti di sviluppo rapidi
 description: Scopri come utilizzare gli ambienti di sviluppo rapido per le iterazioni di sviluppo rapido in un ambiente cloud.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3313'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ Una volta testate in un RDE, le modifiche possono essere distribuite in un ambie
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Ulteriori video dimostrativi [come impostarla](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [come utilizzarlo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)e [ciclo di vita dello sviluppo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) utilizzo di RDE.
+Guarda altri video dimostrativi [come impostarla](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [come utilizzarlo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)e [ciclo di vita dello sviluppo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) utilizzo di RDE.
 
 ## Introduzione {#introduction}
 
@@ -42,7 +42,7 @@ Per creare un RDE per il programma, segui la procedura riportata di seguito.
 
 1. Fare clic sul programma al quale si desidera aggiungere un RDE per visualizzarne i dettagli.
 
-   * Gli RDE possono essere aggiunti a entrambi [programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) e [programmi di produzione.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+   * Gli RDE possono essere aggiunti a entrambi [programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) e [programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
 1. Per aggiungere un programma, dalla pagina **Panoramica del programma**, accedi alla scheda **Ambienti** e fai clic su **Aggiungi ambiente**.
 
@@ -70,7 +70,7 @@ Ora il nuovo ambiente viene visualizzato nella schermata **Panoramica** della sc
 
 Al momento della creazione, gli RDE sono impostati sulla versione AEM più recente disponibile. Un ripristino RDE, che può essere eseguito anche utilizzando Cloud Manager, esegue un ciclo dell’RDE e lo imposta sulla versione dell’AEM più recente disponibile.
 
-Per ulteriori informazioni sull’utilizzo di Cloud Manager per creare ambienti, gestire gli utenti che possono accedervi e assegnare domini personalizzati, consulta [la documentazione di Cloud Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Per ulteriori informazioni sull’utilizzo di Cloud Manager per creare ambienti, gestire gli utenti che possono accedervi e assegnare domini personalizzati, consulta [la documentazione di Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Installazione degli strumenti della riga di comando RDE {#installing-the-rde-command-line-tools}
 
@@ -147,7 +147,7 @@ L’Adobe consiglia il seguente flusso di lavoro per lo sviluppo di una nuova fu
 
 * Quando viene raggiunta una fase cardine intermedia e la sua convalida a livello locale con l’SDK as a Cloud Service dell’AEM, il codice deve essere confermato in un ramo della funzione Git che non fa ancora parte della riga principale, anche se il commit in Git è facoltativo. Ciò che costituisce un &quot;traguardo intermedio&quot; varia in base alle abitudini del team. Alcuni esempi includono nuove righe di codice, mezza giornata di lavoro o il completamento di una sottofunzione.
 
-* Reimpostare l&#39;RDE se è stato utilizzato da un&#39;altra feature e si desidera [ripristina lo stato predefinito](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->L’operazione di ripristino richiederà alcuni minuti e tutto il contenuto e il codice esistenti verrà eliminato. È possibile utilizzare il comando RDE status per confermare che RDE è pronto. L’RDE tornerà alla versione più recente dell’AEM.
+* Reimpostare l&#39;RDE se è stato utilizzato da un&#39;altra feature e si desidera [ripristina lo stato predefinito](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->L’operazione di ripristino richiederà alcuni minuti e tutto il contenuto e il codice esistenti verrà eliminato. È possibile utilizzare il comando RDE status per confermare che RDE è pronto. L’RDE tornerà alla versione più recente dell’AEM.
 
   >[!IMPORTANT]
   >
@@ -276,7 +276,7 @@ quindi distribuisci la configurazione con questo comando:
 
 >[!TIP]
 >
->Il comando precedente presuppone che tu stia distribuendo [WKND](https://github.com/adobe/aem-guides-wknd) configurazioni del dispatcher del progetto. Sostituire il `X.X.X` con il numero di versione del progetto WKND corrispondente o il numero di versione specifico del progetto quando distribuisci la configurazione dispatcher del progetto.
+>Il comando precedente presuppone che tu stia distribuendo [WKND](https://github.com/adobe/aem-guides-wknd) configurazioni del dispatcher del progetto. Assicurati di sostituire il `X.X.X` con il numero di versione del progetto WKND corrispondente o il numero di versione specifico del progetto quando distribuisci la configurazione dispatcher del progetto.
 
 >[!NOTE]
 >
@@ -369,7 +369,7 @@ Se si ripristina la RDE, verranno rimossi dalle istanze di authoring e di pubbli
 
 Una reimpostazione imposta la RDE sulla versione AEM più recente disponibile.
 
-<!-- Alexandru: hiding for now, please don't delete
+<!-- Alexandru: hiding for now, do not delete
 
 Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
@@ -417,7 +417,7 @@ Per ripristinare l’RDE, puoi utilizzare Cloud Manager seguendo i passaggi segu
 
    ![Reimposta notifica banner](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-Una volta avviato il processo di ripristino RDE, in genere sono necessari alcuni minuti per completarlo e ripristinare lo stato predefinito dell’ambiente. Lo stato del processo di ripristino può essere visualizzato in qualsiasi momento nella **Stato** colonna del **Ambienti** o nella scheda **Ambienti** finestra.
+Una volta avviato il processo di ripristino RDE, in genere sono necessari alcuni minuti per completare e ripristinare lo stato predefinito dell’ambiente. Lo stato del processo di ripristino può essere visualizzato in qualsiasi momento nella **Stato** colonna del **Ambienti** o nella scheda **Ambienti** finestra.
 
 ![Stato reimpostazione RDE](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -425,7 +425,7 @@ Una volta avviato il processo di ripristino RDE, in genere sono necessari alcuni
 
 ![Reimposta RDE dalla scheda Ambienti](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Per ulteriori informazioni su come utilizzare Cloud Manager per gestire gli ambienti, consulta [la documentazione di Cloud Manager.](/help/implementing/cloud-manager/manage-environments.md)
+Per ulteriori informazioni su come utilizzare Cloud Manager per gestire gli ambienti, consulta [la documentazione di Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Modalità di esecuzione {#runmodes}
 

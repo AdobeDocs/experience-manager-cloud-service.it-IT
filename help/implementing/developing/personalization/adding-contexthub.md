@@ -2,9 +2,9 @@
 title: Aggiunta di ContextHub alle pagine e accesso agli store
 description: Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub.
 
-L’API JavaScript di ContextHub fornisce accesso ai dati contestuali gestiti da ContextHub. Questa pagina descrive brevemente le funzioni principali dell’API per accedere e manipolare i dati contestuali. Per informazioni dettagliate ed esempi di codice, segui i collegamenti alla documentazione di riferimento delle API.
+L’API JavaScript ContextHub fornisce accesso ai dati contestuali gestiti da ContextHub. Questa pagina descrive brevemente le funzioni principali dell’API per accedere e manipolare i dati contestuali. Per informazioni dettagliate ed esempi di codice, segui i collegamenti alla documentazione di riferimento delle API.
 
 ## Aggiunta di ContextHub a un componente pagina {#adding-contexthub-to-a-page-component}
 
@@ -109,7 +109,7 @@ Tieni presente che i candidati all’archivio personalizzato possono definire fu
 >
 >ContextHub non è a conoscenza, per impostazione predefinita, dell’accesso attualmente utilizzato sui server di pubblicazione e tali utenti sono considerati da ContextHub come &quot;Anonimi&quot;.
 >
->Puoi rendere ContextHub consapevole degli utenti connessi caricando l’archivio profili. Fai riferimento a [codice di esempio su GitHub qui](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Puoi rendere ContextHub consapevole degli utenti connessi caricando l’archivio profili. Consulta [codice di esempio su GitHub qui](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### Evento ContextHub {#contexthub-eventing}
 
@@ -117,7 +117,7 @@ ContextHub include un framework di eventi che ti consente di reagire automaticam
 
 ## Utilizzo di Context Hub per manipolare i cookie {#using-context-hub-to-manipulate-cookies}
 
-L’API JavaScript di Context Hub fornisce supporto tra browser diversi per la gestione dei cookie del browser. Il [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace definisce diverse funzioni per creare, manipolare ed eliminare i cookie.
+L’API JavaScript di Context Hub fornisce supporto cross-browser per la gestione dei cookie del browser. Il [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace definisce diverse funzioni per creare, manipolare ed eliminare i cookie.
 
 ## Determinazione dei segmenti ContextHub risolti {#determining-resolved-contexthub-segments}
 
@@ -127,7 +127,7 @@ Il motore di segmenti ContextHub consente di determinare quali dei segmenti regi
 
 I segmenti ContextHub vengono installati sotto il `/conf/<site>/settings/wcm/segments` nodo.
 
-I seguenti segmenti vengono installati con [Sito tutorial WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+I seguenti segmenti vengono installati con [Sito tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * estate
 * inverno

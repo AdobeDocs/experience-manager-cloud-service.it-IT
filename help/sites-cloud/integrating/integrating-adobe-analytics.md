@@ -4,10 +4,10 @@ description: Integrazione con Adobe Analytics
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 93%
+source-wordcount: '558'
+ht-degree: 88%
 
 ---
 
@@ -42,12 +42,12 @@ I campi presenti nella finestra di configurazione sono i seguenti:
 |---|---|
 | Titolo | Nome della configurazione |
 | Configurazione IMS | Seleziona la configurazione IMS (vedi il capitolo seguente) |
-| Segmento | Opzione per utilizzare un segmento di Analytics definito nella suite di reporting corrente. I rapporti di Analytics vengono filtrati in base al segmento. Fai riferimento a [questa pagina](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=it) per ulteriori dettagli. |
+| Segmento | Opzione per utilizzare un segmento di Analytics definito nella suite di reporting corrente. I rapporti di Analytics vengono filtrati in base al segmento. Consulta [questa pagina](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=it) per ulteriori dettagli. |
 | Suite per report | Un archivio in cui puoi inviare dati e richiamare rapporti. Una suite di reporting definisce il reporting indipendente e completo su un sito Web scelto, su un insieme di siti Web o su un sottoinsieme di pagine Web. Puoi visualizzare i rapporti recuperati da una singola suite e modificare questo campo in una configurazione in qualsiasi momento in base alle tue esigenze. |
 
 ### Adobe Analytics con autenticazione IMS {#configuration-parameters-ims}
 
-È necessaria una configurazione IMS per integrare correttamente Adobe Analytics con AEM as a Cloud Service. Per informazioni su come creare la configurazione IMS di Analytics, consulta questa [pagina](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md).
+È necessaria una configurazione IMS per integrare correttamente Adobe Analytics con AEM as a Cloud Service. Questa configurazione deve essere creata in modo da visualizzare [pagina](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) per scoprire come creare la configurazione IMS di Analytics.
 
 ### Aggiunta di una configurazione a un sito {#add-configuration}
 

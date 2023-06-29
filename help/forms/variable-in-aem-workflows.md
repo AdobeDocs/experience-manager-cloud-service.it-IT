@@ -2,9 +2,9 @@
 title: Come si aggiungono le variabili nei passaggi del flusso di lavoro AEM?
 description: Scopri come creare una variabile, impostarne un valore e utilizzarla in [!DNL AEM Forms] Passaggi del flusso di lavoro.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2060'
 ht-degree: 0%
 
 ---
@@ -278,4 +278,4 @@ Per eliminare una variabile:
 
 ## Riferimenti {#references}
 
-Per ulteriori esempi sull’utilizzo delle variabili in [!DNL AEM Forms] Passaggi del flusso di lavoro, fai riferimento a [Variabili nei flussi di lavoro AEM](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+Per ulteriori esempi sull’utilizzo delle variabili in [!DNL AEM Forms] Passaggi del flusso di lavoro, vedi [Variabili nei flussi di lavoro AEM](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).

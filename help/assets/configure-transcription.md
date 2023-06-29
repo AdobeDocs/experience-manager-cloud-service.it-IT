@@ -2,7 +2,7 @@
 title: Configurare il servizio di trascrizione
 seo-title: Configure transcription service
 description: Adobe Experience Manager Assets è configurato con [!DNL Azure Media Services] che genera automaticamente la trascrizione testuale della lingua parlata in un file audio o video supportato in formato WebVTT (Vtt).
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization.
+seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,17 +11,17 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 95%
+source-wordcount: '1694'
+ht-degree: 94%
 
 ---
 
 # Configurare la trascrizione in [!DNL Experience Manager Assets] {#configure-transcription-service}
 
 La trascrizione è il processo di traduzione dell’audio da un file audio o video in testo (da un discorso al testo) utilizzando la tecnologia di riconoscimento vocale.
-[!DNL Adobe Experience Manager Assets] è configurato con [!DNL Azure Media Services] che genera automaticamente la trascrizione testuale della lingua parlata in un file audio o video supportato in formato WebVTT (.vtt). Quando una risorsa audio o video viene elaborata in [!DNL Experience Manager Assets], il servizio di trascrizione genera automaticamente la rappresentazione trascritta della risorsa audio o video e la memorizza nella stessa posizione all’interno dell’archivio dell risorse in cui risiede la risorsa originale. Il servizio di trascrizione di [!DNL Experience Manager Assets] consente agli addetti al marketing di gestire in modo efficace i contenuti audio e video con in più la possibilità di individuare i contenuti testuali e di aumentare il ritorno sull’investimento di tali risorse, sostenendo l’accessibilità e la localizzazione.
+[!DNL Adobe Experience Manager Assets] è configurato con [!DNL Azure Media Services] che genera automaticamente la trascrizione testuale della lingua parlata in un file audio o video supportato in formato WebVTT (.vtt). Quando una risorsa audio o video viene elaborata in [!DNL Experience Manager Assets], il servizio di trascrizione genera automaticamente la rappresentazione trascritta della risorsa audio o video e la memorizza nella stessa posizione all’interno dell’archivio dell risorse in cui risiede la risorsa originale. Il [!DNL Experience Manager Assets] il servizio di trascrizione di consente agli addetti al marketing di gestire in modo efficace i contenuti audio e video con in più la possibilità di individuare i contenuti testuali e di aumentare il ritorno sull’investimento di tali risorse, sostenendo l’accessibilità e la localizzazione.
 
 Le trascrizioni sono versioni testuali del contenuto parlato; un esempio è un filmato che visualizzi su qualsiasi piattaforma OTT e che spesso include didascalie o sottotitoli per facilitarne l’accessibilità o per consumarne il contenuto in altre lingue. Oppure qualsiasi file audio o video utilizzato per scopi di marketing, apprendimento o intrattenimento. Queste esperienze iniziano con una trascrizione che viene poi formattata o tradotta come appropriato. La trascrizione di audio o video è un processo che richiede molto tempo ed è soggetto a errori quando viene eseguito manualmente. Il processo manuale rende difficile anche la scalabilità, necessaria data la crescente necessità di contenuti audio-video. [!DNL Experience Manager Assets] utilizza la trascrizione basata sull’intelligenza artificiale di Azure che consente l’elaborazione su larga scala delle risorse audio e video e genera le trascrizioni di testo (file .vtt) insieme ai dettagli delle marche temporali. Oltre ad Assets, la funzione di trascrizione è supportata anche da Dynamic Media.
 
@@ -88,7 +88,7 @@ Una volta configurato il profilo di elaborazione per la trascrizione di file aud
 * Seleziona una definizione di profilo di elaborazione in **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili di elaborazione]** e utilizza l’azione **[!UICONTROL Applica profilo a cartelle]**. Il browser del contenuto ti consente di passare a una cartella specifica, selezionarla e confermare l’applicazione del profilo.
 * Seleziona una cartella nell’interfaccia utente di Assets e fai clic su **[!UICONTROL Proprietà]** per aprire le proprietà della cartella. Fai clic sulla scheda **[!UICONTROL Elaborazione delle risorse]** e seleziona il profilo di elaborazione appropriato per la cartella dall’elenco **[!UICONTROL Profilo di elaborazione]**. Per salvare le modifiche, fai clic su **[!UICONTROL Salva e chiudi]**.
 
-   ![configure-transcription-service](assets/video-processing-profile3.png)
+  ![configure-transcription-service](assets/video-processing-profile3.png)
 
 * Per applicare un profilo di elaborazione, gli utenti possono selezionare cartelle o risorse specifiche nell’interfaccia utente di Assets, quindi selezionare **[!UICONTROL Rielabora risorse]** tra le opzioni disponibili nella parte superiore.
 
@@ -171,13 +171,13 @@ Accedi al tuo account [!DNL Azure Media Services] con le stesse credenziali (que
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

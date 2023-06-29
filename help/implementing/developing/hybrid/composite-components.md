@@ -2,7 +2,7 @@
 title: Componenti compositi negli SPA
 description: Scopri come creare componenti compositi personalizzati, composti da altri componenti compatibili con l’editor di applicazioni a pagina singola (SPA) dell’AEM.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -118,7 +118,7 @@ function Home() {
 }
 ```
 
-Nell’editor verrà visualizzato un segnaposto vuoto per un testo e un’immagine. Quando si immettono i valori per questi utilizzando l’editor, essi vengono memorizzati nel percorso di pagina specificato, ovvero `/content/wknd-spa/home`  a livello principale con i nomi specificati in `itemPath`.
+Nell’editor verrà visualizzato un segnaposto vuoto per un testo e un’immagine. Quando immetti i valori per questi utilizzando l’editor, essi vengono memorizzati nel percorso di pagina specificato, ovvero `/content/wknd-spa/home`  a livello principale con i nomi specificati in `itemPath`.
 
 ![Componente scheda composita nell’editor](assets/composite-card.png)
 
@@ -156,7 +156,7 @@ Puoi quindi aggiungerlo all’SPA e recuperarne il contenuto.
     itemPath='root/responsivegrid' />
    ```
 
-1. Aggiungi il creato `wknd-spa/components/imagecard` ai componenti consentiti per il componente contenitore [nel modello della pagina.](/help/sites-cloud/authoring/features/templates.md)
+1. Aggiungi il creato `wknd-spa/components/imagecard` ai componenti consentiti per il componente contenitore [nel modello della pagina](/help/sites-cloud/authoring/features/templates.md).
 
 Ora il `imagecard` Il componente può essere aggiunto direttamente al contenitore nell’editor AEM.
 

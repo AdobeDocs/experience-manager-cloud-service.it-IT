@@ -2,10 +2,10 @@
 title: Accesso ai KPI
 description: Accesso ai KPI
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '536'
+ht-degree: 67%
 
 ---
 
@@ -34,21 +34,21 @@ Nel valutare i KPI, assicurati che:
 1. Il KPI si riferisca in modo specifico alla soluzione (Experience Manager).
 1. L’indicatore KPI sia strettamente legato a un obiettivo che il team esecutivo ritiene critico.
 1. Questo obiettivo supporti direttamente un obiettivo aziendale sostenuto da almeno un dirigente di livello C.
-1. Disponi dei dati della linea di base necessari per confrontare la situazione corrente con i risultati visualizzati dopo l’avvio dell’Experience Manager.
+1. Disponi dei dati della linea di base per confrontare la situazione corrente con i risultati visualizzati dopo l’avvio dell’Experience Manager.
 1. Il KPI tenga traccia di qualcosa che può essere facilmente misurato a intervalli regolari.
 
-Dopo aver confermato di disporre dei giusti KPI, è necessario capire come e quando creare rapporti su ciascun KPI per le parti interessate.
+Dopo aver confermato di disporre dei giusti KPI, è necessario capire come e quando creare rapporti su ogni KPI per le parti interessate.
 
 Nel definire il processo di reporting, considera le seguenti domande:
 
-1. Chi è il pubblico per questo rapporto KPI? Per ogni KPI, assicurati di aver identificato uno sponsor esecutivo, qualcuno che riterrà responsabile te e il resto del team per quella metrica, nonché un elenco più ampio di persone che dovrebbero ricevere report regolari.
+1. Chi è il pubblico per questo rapporto KPI? Per ogni KPI, assicurati di aver identificato uno sponsor esecutivo, qualcuno che può ritenere te e il resto del team responsabili per quella metrica, e un elenco più ampio di persone che dovrebbero ricevere rapporti regolari.
 1. Con quale frequenza eseguirai il rapporto su questo KPI?
 1. Come verrà tracciato questo KPI? Chi estrarrà i dati? Quali origini dati utilizzerà la persona o il team? C&#39;è qualcosa che puoi fare in questo momento per rendere più facile il processo?
 1. Quale sarà il formato del rapporto?
 1. Come verrà consegnato il rapporto?
 
-Dopo il lancio di Experience Manager, un set di KPI (Key Performance Indicator) fornisce rapidamente un’idea del fatto che sei sulla strada giusta. Se non soddisfa uno dei KPI, dovrai apportare le modifiche necessarie per l’utilizzo di Experience Manager da parte dei team. Se superi rapidamente uno degli obiettivi KPI, ricalibra il target per cercare di ottenere un risultato ancora migliore.
+Dopo il lancio dell’Experience Manager, un set di KPI (Key Performance Indicator) potente ti darà rapidamente un’idea del fatto che sei sulla strada giusta. Se non soddisfa uno dei KPI, devi apportare le modifiche necessarie per l’utilizzo di Experience Manager da parte dei team. Se superi rapidamente uno degli obiettivi KPI, è qualcosa da festeggiare — ma poi devi ricalibrare il target per cercare di ottenere un risultato ancora migliore.
 
 >[!TIP]
 >
-> Per ulteriore assistenza sui KPI, contatta [Servizi di consulenza Adobe](https://www.adobe.com/it/experience-cloud/consulting-services.html) o il tuo partner di implementazione.
+> Se hai bisogno di ulteriore assistenza con i KPI, contatta [Servizi di consulenza Adobe](https://www.adobe.com/it/experience-cloud/consulting-services.html) o il tuo partner di implementazione.
