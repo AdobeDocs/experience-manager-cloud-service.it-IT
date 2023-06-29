@@ -7,9 +7,9 @@ keywords: Aggiungi un gestore degli errori personalizzato, aggiungi un gestore d
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1981'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ AEM Forms fornisce gestori predefiniti di successo e di errori per l’invio di 
 
 ![flusso di lavoro del gestore degli errori per informazioni su come aggiungere un gestore degli errori personalizzato nei moduli](/help/forms/assets/error-handler-workflow.png)
 
-Il modulo adattivo convalida gli input forniti nei campi in base a criteri di convalida predefiniti e verifica la presenza di vari errori restituiti dall’endpoint REST configurato per richiamare un servizio esterno. È possibile impostare i criteri di convalida in base all’origine dati utilizzata con il modulo adattivo. Ad esempio, se utilizzi i servizi web RESTful come origine dati, puoi definire i criteri di convalida in un file di definizione Swagger.
+Il modulo adattivo convalida gli input forniti nei campi in base a criteri di convalida predefiniti e verifica la presenza di vari errori restituiti dall’endpoint REST configurato per richiamare un servizio esterno. È possibile impostare i criteri di convalida in base all&#39;origine dati utilizzata con il modulo adattivo. Ad esempio, se utilizzi i servizi web RESTful come origine dati, puoi definire i criteri di convalida in un file di definizione Swagger.
 
 Se i valori di input soddisfano i criteri di convalida, vengono inviati all’origine dati, altrimenti nel modulo adattivo viene visualizzato un messaggio di errore tramite un gestore degli errori. Simile a questo approccio, Forms adattivo si integra con gestori di errori personalizzati per eseguire le convalide dei dati. Se i valori di input non soddisfano i criteri di convalida, i messaggi di errore vengono visualizzati a livello di campo nel modulo adattivo. Ciò si verifica quando il messaggio di errore di convalida restituito dal server è nel formato di messaggio standard.
 
@@ -119,9 +119,7 @@ Dove:
 
 Alcune delle opzioni per visualizzare le risposte di errore sono:
 
-+++
-
-+++  In base al campo Nome modulo adattivo
++++  In base alla proprietà fieldName del modulo adattivo
 
 
 * **`Header:`** `content-type:application/problem+json`
@@ -148,7 +146,7 @@ Alcune delle opzioni per visualizzare le risposte di errore sono:
 +++
 
 
-+++ Basato sul modulo adattivo dataRef
++++ In base alla proprietà dataRef del modulo adattivo
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
@@ -171,8 +169,8 @@ Alcune delle opzioni per visualizzare le risposte di errore sono:
 
 È possibile visualizzare il valore di dataRef in **[!UICONTROL Proprietà]** di un componente modulo.
 
-
 +++
+
 
 ## Aggiungi gestore errori tramite l’Editor regole {#add-error-handler-using-rule-editor}
 

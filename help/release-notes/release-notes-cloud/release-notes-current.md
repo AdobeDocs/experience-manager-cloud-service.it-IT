@@ -3,10 +3,10 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 32fb0942b8007aeee8afa6378a9293eecd7d7700
 workflow-type: tm+mt
-source-wordcount: '1172'
-ht-degree: 28%
+source-wordcount: '1385'
+ht-degree: 16%
 
 ---
 
@@ -26,22 +26,17 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2023.4.0) è il 7 giugno 2023. La prossima versione (2023.6.0) è prevista per il 29 giugno 2023.
+La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2023.6.0) è il 29 giugno 2023. La prossima versione (2023.7.0) è prevista per il 27 luglio 2023.
 
 ## Video sulla versione {#release-video}
 
-Dai un’occhiata al video Panoramica sulla versione di aprile 2023 per un riepilogo delle funzioni aggiunte alla versione 2023.4.0:
+Dai un’occhiata al video Panoramica sulla versione di giugno 2023 per un riepilogo delle funzioni aggiunte alla versione 2023.6.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3418681/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3420971/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nuove funzioni in [!DNL Experience Manager Sites] {#sites-features}
-
-* Esporta frammenti di contenuto da AEM as a Cloud Service ad Adobe Target in formato JSON e crea offerte JSON corrispondenti in Target.
-* Il supporto per la paginazione e l’ordinamento di GraphQL, insieme ai miglioramenti apportati alla memorizzazione nella cache interna, ora consente di migliorare le prestazioni delle applicazioni client separate quando si recuperano set di contenuti di grandi dimensioni da AEM utilizzando query e filtri GraphQL complessi.
-
-### Nuove funzioni nella versione prerelease di [!DNL Experience Manager Sites] {#prerelease-sites}
 
 * Ora è possibile pubblicare i frammenti di contenuto e i relativi riferimenti in [Servizio di anteprima AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) utilizzando [Console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), che consente agli utenti di visualizzare in anteprima l’esperienza finale su un’applicazione di anteprima separata prima della pubblicazione.
 * Le immagini possono ora essere ottimizzate dinamicamente per la distribuzione web in scenari headless utilizzando AEM GraphQL. [Variabili di query](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) può essere definito nelle query GraphQL per consentire alle applicazioni client disaccoppiate di richiedere all’AEM immagini ottimizzate di conseguenza.
@@ -51,36 +46,72 @@ Dai un’occhiata al video Panoramica sulla versione di aprile 2023 per un riepi
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* È stato aggiunto il supporto per le immagini WebP per estrarre automaticamente i metadati, generare miniature e rappresentazioni personalizzate. Per questi file è ora supportata anche la funzionalità Tag avanzati. Le funzionalità di Dynamic Media non sono supportate per WebP come formato di input.
+**Disponibilità della vista Nuove risorse**
 
-* [Miglioramenti all’esperienza di ricerca](/help/assets/search-assets.md#aftersearch) - È ora possibile eseguire rapidamente le seguenti operazioni sulle risorse visualizzate nei risultati di ricerca:
+Il [nuova vista Risorse](/help/assets/assets-view-introduction.md) è ora disponibile in Experience Manager Assets. La visualizzazione Assets offre un’interfaccia utente semplificata che semplifica la gestione, l’individuazione e la distribuzione delle risorse digitali. L’esperienza è destinata ai creativi, ai consumatori di risorse di sola lettura e agli utenti DAM più leggeri.
 
-   * Creare un flusso di lavoro
-   * Crea una versione
-   * Correlare o non correlare le risorse
+![Gestione dei tag](/help/assets/assets/my-workspace.png)
 
-     Per eseguire queste operazioni, non è necessario passare alla posizione della risorsa e visualizzarne le proprietà.
+**Miglioramenti all’esperienza di ricerca**
 
-* Miglioramenti apportati all’usabilità del facet di ricerca colore: il campo di input per i valori dei colori è ora modificabile e i risultati della ricerca vengono aggiornati solo quando esci dal selettore colore.
+Experience Manager Assets ora ti consente di fare di più dall’interfaccia utente dei risultati della ricerca: ora puoi:
 
-* È stato avviato il supporto del nuovo protocollo (DASH - Dynamic Adaptive Streaming over HTTP) per lo streaming adattivo nella distribuzione di video Dynamic Media (con CMAF abilitato):
-   * Lo streaming adattivo (DASH/HLS) garantisce agli utenti finali una migliore esperienza di visualizzazione dei video
-   * DASH è il protocollo standard internazionale per lo streaming video adattivo ed è ampiamente adottato nel settore
-   * Disponibile in tutte le aree geografiche, da attivare tramite ticket di supporto
+* Per impostazione predefinita, è possibile eseguire una ricerca all&#39;interno del percorso corrente del repository anziché cercare la parola chiave nell&#39;intero repository.
 
-* Dynamic Media _Snapshot_ - Sperimentate immagini di test o URL Dynamic Media per vedere l&#39;output di diversi modificatori di immagini e valutare le ottimizzazioni Smart Imaging per le dimensioni dei file (con distribuzione WebP e AVIF), la larghezza di banda della rete e il rapporto pixel del dispositivo. Consulta [Snapshot Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* Passa alla posizione della cartella per le risorse visualizzate nei risultati di ricerca.
 
-### Funzionalità in [!DNL Assets] prerelease {#prerelease-feature-assets}
+**Anteprime miniature per risorse 3D**
 
-* Dynamic Media: l’interfaccia utente di alcuni campi relativi a Ritaglio avanzato in un profilo immagine ora è aggiornata per riflettere le linee guida correnti per la definizione di un Ritaglio avanzato. Consulta [Opzioni di ritaglio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+[!DNL Experience Manager Assets] ora genera [anteprime di miniature per i formati di file 3D più comuni](/help/assets/file-format-support.md) tra cui gLB, USDz, FBX, 3DS, OBJ e SBSAR. Quando questi file vengono caricati, per impostazione predefinita vengono generate automaticamente le miniature.
+
+**Configurazione condivisione collegamenti**
+
+Una nuova esperienza utente migliorata per [creazione di condivisioni di collegamenti](/help/assets/share-assets.md) insieme a un nuovissimo set di configurazioni che consentono agli amministratori di personalizzare il comportamento predefinito di questa funzionalità per i tuoi utenti.
+
+![Gestione dei tag](/help/assets/assets/config-email-service.png)
+
+**Dynamic Media: aggiornamento dei campi relativi al ritaglio avanzato nel profilo immagine**
+
+L’interfaccia utente di alcuni campi relativi a Ritaglio avanzato in un profilo immagine ora è aggiornata per riflettere le linee guida correnti per la definizione di un Ritaglio avanzato. Consulta [Opzioni di ritaglio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+
+### Nuove funzioni nella vista Risorse {#assets-view-features}
+
+**Assegnazione di tag gerarchici alle risorse per velocizzare l’esperienza di ricerca**
+
+Le liste piatte di vocabolari controllati diventano ingestibili nel tempo. La vista Risorse ora supporta [struttura gerarchica dei tag](/help/assets/tagging-management-assets-view.md), che facilita l’applicazione di metadati rilevanti, la classificazione delle risorse, il supporto della ricerca, il riutilizzo dei tag, il miglioramento della reperibilità di informazioni e così via.
+
+![Gestione dei tag](/help/assets/assets/tags-hierarchy.png)
+
+**Aggiungi file, cartelle e raccolte per un accesso rapido**
+
+Ora puoi [fissaggio di file, cartelle e raccolte per un accesso più rapido](/help/assets/my-workspace-assets-view.md) a questi elementi quando ne hai bisogno in un secondo momento. Gli elementi bloccati vengono visualizzati nel **Accesso rapido** sezione di My Workspace. È possibile accedervi utilizzando l&#39;area di lavoro personale anziché passare alla posizione in cui sono stati salvati nel repository.
+
+![Attività nell’area di lavoro](/help/assets/assets/quick-access.png)
+
+**Filtrare le risorse nella cartella Cestino**
+
+La vista Risorse ora consente di: [filtrare le risorse disponibili nella cartella Cestino](/help/assets/navigate-assets-view.md). Puoi applicare filtri standard o personalizzati per cercare le risorse appropriate all’interno della cartella Cestino per ripristinarle o eliminarle definitivamente.
+
+**Anteprime miniature per risorse 3D**
+
+La vista Risorse genera ora anteprime di miniature per i formati di file 3D più comuni, tra cui gLB, USDz, FBX, 3DS, OBJ e SBSAR. Quando questi file vengono caricati nella vista Risorse, per impostazione predefinita il sistema genera automaticamente le miniature.
+
+![Attività nell’area di lavoro](/help/assets/assets/3d-preview.png)
+
+**Visualizza i termini più cercati**
+
+La vista Risorse ora supporta [visualizzazione dei termini più ricercati nell’implementazione](/help/assets/my-workspace-assets-view.md) utilizzando **Approfondimenti** sezione di My Workspace. Puoi anche passare a Insights dettagliato per visualizzare le ricerche principali negli ultimi 30 giorni o 12 mesi.
+
+![Attività nell’area di lavoro](/help/assets/assets/insights-top-searches.png)
+
+**Miglioramenti al modulo metadati**
+
+La vista Risorse ora consente di: [aggiungere componenti di proprietà di testo con più valori e elenco a discesa](/help/assets/metadata-assets-view.md#property-components) ai moduli di metadati.
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nuove funzioni disponibili in [!DNL Forms] {#new-features-available-in-channel}
-
-* **[Invia Forms adattivo a Microsoft® SharePoint e Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: migliora l’agilità degli utenti aziendali per poter avviare rapidamente nuovi moduli e archiviare i dati inviati negli strumenti quotidiani utilizzati, come il sito Microsoft® SharePoint o la cartella OneDrive.
-
-### Funzioni nella versione prerelease di [!DNL Forms] {#prerelease-features-forms}
 
 * [Forms adattivo nell’Editor pagina dell’AEM](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): ora è possibile utilizzare l’Editor pagina AEM per creare e aggiungere rapidamente più moduli alle pagine dei siti. Questa funzionalità consente agli autori di contenuti di creare esperienze di acquisizione dati fluide all’interno delle pagine Sites utilizzando la potenza dei componenti per moduli adattivi, tra cui comportamento dinamico, convalide, integrazione dei dati, generazione di documenti di record e automazione dei processi aziendali. Operazioni disponibili:
 
@@ -92,15 +123,23 @@ Dai un’occhiata al video Panoramica sulla versione di aprile 2023 per un riepi
 
 * [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ora si integra con Adobe Acrobat Sign Solutions for Government. Questa integrazione fornisce un livello avanzato di conformità e sicurezza per le firme elettroniche con l’invio di moduli adattivi per gli account governativi associati (dipartimenti e agenzie governative).
 
-  L’integrazione con Adobe Acrobat Sign for Government consente ai partner e ai clienti governativi di Adobe di utilizzare le firme elettroniche in Adaptive Forms per alcune delle linee di business più critiche e sensibili. Questo ulteriore livello di sicurezza assicura che tutte le firme elettroniche siano pienamente conformi alla conformità FedRAMP Moderate, garantendo ai clienti governativi Adobi la massima tranquillità.
+  L’integrazione con Adobe Acrobat Sign Solutions for Government consente ai partner e ai clienti governativi di Adobe di utilizzare le firme elettroniche in Adaptive Forms per alcune delle linee di business più critiche e sensibili. Questo ulteriore livello di sicurezza assicura che tutte le firme elettroniche siano pienamente conformi alla conformità FedRAMP Moderate, garantendo ai clienti governativi Adobi la massima tranquillità.
 
-* Gestione avanzata degli errori con gestori di errori personalizzati nell’editor di regole: ora puoi richiamare una funzione personalizzata (utilizzando la libreria client) in risposta a un errore restituito da un servizio esterno e fornire una risposta personalizzata agli utenti finali. In alternativa, è possibile eseguire azioni specifiche per gli errori restituiti da un servizio. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel backend per codici di errore specifici o informare il cliente che il servizio non è disponibile.
+* [Gestione avanzata degli errori con gestori di errori personalizzati nell’editor di regole](/help/forms/add-custom-error-handler-adaptive-forms.md): ora puoi richiamare una funzione personalizzata (utilizzando la libreria client) in risposta a un errore restituito da un servizio esterno e fornire una risposta personalizzata agli utenti finali. In alternativa, è possibile eseguire azioni specifiche per gli errori restituiti da un servizio. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel backend per codici di errore specifici o informare il cliente che il servizio non è disponibile.
 
   Questa funzionalità consente di migliorare la capacità complessiva di gestione degli errori introducendo risposte di errore basate su standard compatibili con le versioni precedenti dei gestori degli errori OOTB, con maggiore flessibilità e controllo.
 
+* [Metodi di autenticazione migliorati per il modello dati modulo](/help/forms/configure-data-sources.md): maggiore sicurezza grazie all’introduzione dell’autenticazione basata sulle credenziali client per la connessione di AEM Forms con origini dati compatibili. Questo miglioramento elimina la necessità di rappresentazione o accesso da parte dell’utente, rafforzando la protezione dei dati.
+
+* Rendi ripetibili le sezioni di Adaptive Forms: ora puoi rendere [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), e [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componenti di un modulo adattivo ripetibili.
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
+
+  Queste sezioni ripetibili consentono di fornire un numero illimitato di voci senza un numero di campi fisso. È utile quando le istanze di dati richieste sono sconosciute in anticipo. Gli utenti di Forms possono aggiungere o rimuovere facilmente sezioni, rendendo i moduli adattabili a scenari di immissione dati diversi e semplificando la raccolta di più occorrenze degli stessi dati.
+
 ### Programma dei moduli adattivi headless per i primi utilizzatori {#forms-early-adopter}
 
-Utilizza i moduli adattivi headless per consentire agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e con cui si può interagire tramite API, anziché tramite un’interfaccia utente grafica tradizionale. I moduli adattivi headless consentono di:
+Utilizzare [Forms adattivo headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) per consentire agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e con cui interagire tramite API, anziché tramite un’interfaccia utente grafica tradizionale. I moduli adattivi headless consentono di:
 
 * creare moduli multi-canale di alta qualità nel linguaggio di programmazione desiderato
 * integrare in modo nativo i moduli nelle app desktop e per dispositivi mobili, nei siti web e nelle applicazioni chat
@@ -109,11 +148,6 @@ Utilizza i moduli adattivi headless per consentire agli sviluppatori di creare, 
 
 Puoi inviare un’e-mail a `aem-forms-headless@adobe.com` dal tuo ID e-mail ufficiale per partecipare al programma early adopter.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### Novità {#what-is-new-foundation}
-
-* Aree geografiche di pubblicazione aggiuntive: i clienti di Sites possono concedere in licenza fino a tre aree di pubblicazione, oltre all’area principale. Il traffico viene indirizzato ad altre farm di pubblicazione, il che si traduce in una minore latenza per determinate richieste e in una maggiore resilienza contro interruzioni regionali. Contatta il tuo Adobe Account Manager per informazioni sulle licenze [Aree geografiche di pubblicazione aggiuntive](/help/operations/additional-publish-regions.md) per i programmi.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
