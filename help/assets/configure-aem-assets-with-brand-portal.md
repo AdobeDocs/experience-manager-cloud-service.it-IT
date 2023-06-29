@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2558'
 ht-degree: 13%
 
 ---
@@ -101,11 +101,11 @@ Per convalidare la connessione tra Experience Manager Assets as a, effettua le s
 
 1. Dalla sezione **Strumenti** , passa a **[!UICONTROL Distribuzione]** > **[!UICONTROL Distribuzione]**.
 
-   ![](assets/test-bpconfig1.png)
+   ![Configurare AEM Assets as a Cloud Service con Brand Portal](assets/test-bpconfig1.png)
 
    Un agente di distribuzione Brand Portal (**[!UICONTROL bpdistributionagent0]**) viene creato in **[!UICONTROL Pubblica su Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![Crea agente di distribuzione](assets/test-bpconfig2.png)
 
 
 1. Clic **[!UICONTROL Pubblica su Brand Portal]** per aprire l&#39;agente di distribuzione.
@@ -121,11 +121,11 @@ Per convalidare la connessione tra Experience Manager Assets as a, effettua le s
    >
    >È consigliabile esaminare gli errori e cancellare periodicamente la **coda di errore**.
 
-   ![](assets/test-bpconfig3.png)
+   ![Coda di elaborazione per la distribuzione delle risorse](assets/test-bpconfig3.png)
 
 1. Verificare la connessione tra Experience Manager Assets as a [!DNL Cloud Service] e Brand Portal, fai clic sul pulsante **[!UICONTROL Verifica connessione]** icona.
 
-   ![](assets/test-bpconfig4.png)
+   ![Verificare la connessione tra AEM e Brand Portal](assets/test-bpconfig4.png)
 
    Viene visualizzato un messaggio che informa che *il pacchetto di prova è stato consegnato correttamente*.
 
@@ -156,7 +156,7 @@ Ora pubblichiamo una risorsa da Experience Manager Assets a Brand Portal e visua
 1. Seguire i passaggi (da 1 a 4) come mostrato nella **Verifica connessione** e passare alla pagina dell&#39;agente di distribuzione.
 1. Clic **[!UICONTROL Registri]** per visualizzare i registri di elaborazione e di errore.
 
-   ![](assets/test-bpconfig5.png)
+   ![Elaborazione e registri di errori](assets/test-bpconfig5.png)
 
 L’agente di distribuzione ha generato i seguenti registri:
 
