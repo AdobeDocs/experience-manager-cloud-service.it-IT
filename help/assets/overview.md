@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: f075c6032edb23f9cf52ad53ae2a628915e76ec2
+source-git-commit: d0deca8acbf6049d5be6c27275eedf9b52b27658
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '740'
 ht-degree: 68%
 
 ---
@@ -37,7 +37,7 @@ Di seguito sono riportati i vantaggi principali di Assets as a [!DNL Cloud Servi
 * **Monitoraggio costante**: il monitoraggio del sistema è automatizzato e i controlli e trigger integrati contribuiscono a mantenere le prestazioni, la disponibilità e la robustezza complessiva.
 * **Implementazioni senza problemi**: le operazioni Experience Manager nel Cloud sono completamente automatizzate e non richiedono alcun intervento manuale. Per le distribuzioni automatizzate, il componente Cloud Manager (CM) automatizza la generazione di immagini Docker distribuibili contenenti il codice personalizzato.
 
-## Esperienze disponibili basate su utenti tipo
+## Esperienze disponibili basate su utenti tipo {#persona-based-experiences}
 
 Adobe offre una solida soluzione di gestione delle risorse digitali (DAM) che consente di ottenere il massimo dalle risorse digitali. Adobe Experience Manager Assets dispone di due esperienze separate che utilizzano lo stesso archivio Cloud Services:
 
@@ -51,7 +51,7 @@ Librerie DAM, sviluppatori e utenti con privilegi avanzati possono continuare a 
 
 ![add-tags](assets/newui-overview.svg)
 
-Per informazioni su come accedere alla vista Risorse e su alcune delle semplificazioni offerte rispetto alla vista Amministrazione, consulta Vista Risorse.
+Per informazioni su come accedere alla vista Risorse e su alcune delle semplificazioni offerte rispetto alla vista Amministrazione, consulta [Introduzione alla vista Risorse](/help/assets/assets-view-introduction.md).
 
 ## Nuove funzionalità di Assets {#whats-new-assets}
 
