@@ -2,9 +2,9 @@
 title: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 description: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
+source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1158'
 ht-degree: 1%
 
 ---
@@ -30,13 +30,13 @@ Ultima versione di [!DNL Workfront for Experience Manager enhanced connector] in
 
 >[!IMPORTANT]
 >
->L’Adobe consiglia di: [aggiornamento alla versione più recente del 1.9.11](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
+>L’Adobe consiglia di: [aggiornamento alla versione più recente del 1.9.11](/help/assets/workfront-connector-install.md) del [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemi noti {#known-issues}
 
 * Durante la configurazione di cartelle collegate a un progetto con AEM 6.4, Experience Manager non salva i valori per **[!UICONTROL sottocartelle]** e **[!UICONTROL Creare una cartella collegata in progetti con portfolio]** campi. Il valore per **[!UICONTROL sottocartelle]** aggiornamenti dei campi a **[!UICONTROL non definito]** e il valore per **[!UICONTROL Creare una cartella collegata in progetti con portfolio]** aggiornamenti dei campi a **[!UICONTROL Portfolio predefinito]** dopo il salvataggio della configurazione.
 
-* Quando utilizzi l’esperienza Workfront classica, il **[!UICONTROL Invia a]** opzione disponibile in **[!UICONTROL Altro]** L’elenco a discesa non consente di selezionare la destinazione in Experience Manager. Il **[!UICONTROL Invia a]** funziona correttamente utilizzando **[!UICONTROL Azioni documento]** elenco a discesa. Il **[!UICONTROL Invia a]** funziona correttamente per **[!UICONTROL Altro]** elenco a discesa e **[!UICONTROL Azioni documento]** elenco a discesa disponibile nella nuova esperienza Workfront.
+* Quando utilizzi l’esperienza Workfront classica, il **[!UICONTROL Invia a]** opzione disponibile in **[!UICONTROL Altro]** L’elenco a discesa non consente di selezionare la destinazione in Experience Manager. Il **[!UICONTROL Invia a]** funziona correttamente utilizzando **[!UICONTROL Azioni documento]** elenco a discesa. Il **[!UICONTROL Invia a]** funziona correttamente per **[!UICONTROL Altro]** e la **[!UICONTROL Azioni documento]** disponibile nella nuova esperienza Workfront.
 
 ## Versioni precedenti {#previous-releases}
 
@@ -139,7 +139,7 @@ Ultima versione di [!DNL Workfront for Experience Manager enhanced connector] in
 
 [!DNL Workfront for Experience Manager enhanced connector] La versione 1.9.4, rilasciata il 7 ottobre, include i seguenti aggiornamenti:
 
-* Impossibile visualizzare la scheda Sottoscrizioni eventi nella pagina di configurazione del connettore avanzato a causa di un numero elevato di eventi.
+* Impossibile visualizzare la scheda Sottoscrizioni eventi nella pagina di configurazione del connettore avanzato a causa di molti eventi.
 
 * Workfront non è in grado di recuperare l’elenco delle cartelle esistenti in un progetto, il che si traduce nella creazione di cartelle duplicate.
 
@@ -178,7 +178,7 @@ Ultima versione di [!DNL Workfront for Experience Manager enhanced connector] in
 
 [!DNL Workfront for Experience Manager enhanced connector] ora include i seguenti aggiornamenti:
 
-* Quando effettui il caricamento tramite una cartella collegata o utilizzi `Send To` disponibile in Workfront per caricare le risorse su Experience Manager as a Cloud Service, le risorse risultano danneggiate e non possono essere aperte in Adobe Photoshop.
+* Quando effettui il caricamento tramite una cartella collegata o utilizzi `Send To` disponibile in Workfront per caricare le risorse su Experience Manager as a Cloud Service, le risorse vengono danneggiate e non possono essere aperte in Adobe Photoshop.
 
 ### Versione di marzo 2022 {#march-2022-release}
 
