@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 21%
+ht-degree: 24%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Backup e ripristino"
->abstract="AEM as a Cloud Service può ripristinare l’applicazione completa (codice e contenuto) di un cliente a orari specifici e predeterminati negli ultimi sette giorni, sostituendo ciò che era in produzione. Questa funzione deve essere utilizzata solo in caso di gravi problemi con il codice o il contenuto. I dati recenti tra il momento del backup ripristinato e il momento attuale andranno persi. Anche la gestione temporanea viene ripristinata alla versione precedente."
+>abstract="AEM as a Cloud Service può ripristinare l’applicazione completa (codice e contenuto) di un cliente a orari specifici e predeterminati negli ultimi sette giorni, sostituendo ciò che era in produzione. Questa funzione deve essere utilizzata solo in caso di gravi problemi con il codice o il contenuto. I dati recenti tra il momento del backup ripristinato e il momento attuale andranno persi. Anche lo staging verrà ripristinato alla versione precedente."
 
 In caso di danneggiamento dei contenuti o dei dati, AEM as a Cloud Service può ripristinare l’applicazione completa di un cliente (codice e contenuto). Viene ripristinato in tempi specifici e predeterminati negli ultimi sette giorni, sostituendo ciò che era in produzione.
 Se la distribuzione di un cliente, ovvero il codice dell&#39;applicazione distribuito è danneggiato o in stato di bug, è preferibile correggerla e passare a una nuova versione anziché ripristinarla dal backup. Il backup viene eseguito in modo da non influire sulle prestazioni di esecuzione di un&#39;applicazione.
 
 >[!CAUTION]
 >
->Questa funzione deve essere utilizzata solo in caso di gravi problemi con il codice o il contenuto. I dati recenti tra il momento del backup ripristinato e il momento attuale andranno persi. Anche la gestione temporanea viene ripristinata alla versione precedente.
+>Questa funzione deve essere utilizzata solo in caso di gravi problemi con il codice o il contenuto. I dati recenti tra il momento del backup ripristinato e il momento attuale andranno persi. Anche lo staging verrà ripristinato alla versione precedente.
 
 ## Guida all’uso {#how-to-use}
 

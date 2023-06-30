@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 34%
+ht-degree: 41%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 34%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Creare la struttura del contenuto per l’app"
->abstract="Seguendo questa serie di guide interattive, imparerai a creare una struttura (nota come modello per frammenti di contenuto) che funge da struttura fondamentale per i contenuti headless."
+>abstract="Seguendo questa serie di guide interattive imparerai a creare la struttura (nota anche come modello per frammenti di contenuto) che funge da fondamento per tutti i contenuti headless."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Avviare la console del modello"
->abstract="Scopriamo come creare uno schema riutilizzabile, denominato modello per frammenti di contenuto, per il contenuto in Adobe Experience Manager as a Cloud Service. Guarda il video per comprendere perché questo passaggio è importante. <br><br>In questo modulo di apprendimento, utilizzi un sito di viaggio come esempio e segui la creazione di un modello che rappresenta un viaggio.<br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante e quindi segui questa guida."
+>abstract="Scopriamo come creare uno schema riutilizzabile, denominato modello per frammenti di contenuto, per il contenuto in Adobe Experience Manager as a Cloud Service. Guarda il video per comprendere il motivo per cui questo passaggio è importante. <br><br>In questo modulo di apprendimento utilizzerai come esempio un sito di viaggi e vedrai in dettaglio come creare un modello che rappresenta un viaggio.<br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante e quindi segui questa guida."
 >additional-url="https://video.tv.adobe.com/v/3413261?captions=ita" text="Video introduttivo sulla struttura dei contenuti"
 
 >[!CONTEXTUALHELP]

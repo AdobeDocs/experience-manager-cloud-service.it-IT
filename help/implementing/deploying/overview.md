@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -174,8 +174,8 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Gestione pacchetti - Migrazione dei pacchetti di contenuto mutabile"
->abstract="Esplora l’utilizzo di Gestione pacchetti per i casi di utilizzo in cui un pacchetto di contenuti deve essere installato come &quot;una tantum&quot;. L’installazione include l’importazione di contenuto specifico dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione, il trasferimento di un piccolo pacchetto di contenuti dall’ambiente locale agli ambienti AEM Cloud e altro ancora."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="Strumento trasferimento contenuti"
+>abstract="Scopri l’utilizzo di Gestione pacchetti per i casi di utilizzo in cui un pacchetto di contenuti deve essere installato “una tantum”. L’installazione include l’importazione di contenuto specifico dalla produzione allo staging per eseguire il debug di un problema di produzione, il trasferimento di un piccolo pacchetto di contenuti dall’ambiente on-premise agli ambienti di AEM Cloud e molto altro ancora."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it" text="Strumento trasferimento contenuti"
 
 Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come “una tantum”. Ad esempio, importare contenuto specifico dalla produzione alla gestione temporanea per eseguire il debug di un problema di produzione. Per questi scenari, [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) può essere utilizzato in ambienti su AEM as a Cloud Service.
 
