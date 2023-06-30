@@ -2,10 +2,10 @@
 title: Quali vantaggi offre Assets?
 description: Ulteriori informazioni sui principali vantaggi della visualizzazione Assets
 mini-toc-levels: 3
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: 97b6f66f2d19b85ec0a71eda756aaa334ea5da57
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 11%
+source-wordcount: '1064'
+ht-degree: 12%
 
 ---
 
@@ -121,14 +121,15 @@ Oltre a queste funzioni, la vista Risorse consente di eseguire le seguenti funzi
 
 * Rinomina le risorse e le cartelle disponibili nell’archivio.
 
+La nuova vista Adobe Experience Manager Assets è personalizzata per semplificare i flussi di lavoro, promuovere la collaborazione e accelerare la distribuzione delle risorse. Adottando la velocità dei contenuti, gli esperti di marketing possono sfruttare appieno il potenziale delle loro risorse digitali e stimolare la creatività come mai prima d’ora.
+
+
 Utilizza questi collegamenti per iniziare rapidamente a utilizzare la vista Risorse:
 
 * [Area di lavoro personale](/help/assets/my-workspace-assets-view.md)
 * [Introduzione all’utilizzo della vista Risorse](/help/assets/get-started-assets-view.md)
 
-## Conclusione {#conclusion}
 
-È arrivata l&#39;era del digital-first, ed è ora di trasformare i nostri strumenti di marketing per supportare lo scenario aziendale in evoluzione. La nuova vista Adobe Experience Manager Assets è personalizzata per semplificare i flussi di lavoro, promuovere la collaborazione e accelerare la distribuzione delle risorse. Adottando la velocità dei contenuti, gli esperti di marketing possono sfruttare appieno il potenziale delle loro risorse digitali e stimolare la creatività come mai prima d’ora. Preparati a sfruttare la potenza della nuova esperienza di visualizzazione delle risorse di Adobe e ottenere risultati eccezionali nelle campagne di marketing. È il momento di abbracciare il futuro di DAM e di portare avanti la tua attività.
 
 
 
