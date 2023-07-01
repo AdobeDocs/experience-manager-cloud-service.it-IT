@@ -2,10 +2,10 @@
 title: Gestione dei certificati SSL
 description: Scopri come controllare lo stato dei certificati SSL e come modificarli, sostituirli, aggiornarli ed eliminarli con Cloud Manager.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 81%
+source-wordcount: '626'
+ht-degree: 79%
 
 ---
 
@@ -47,7 +47,7 @@ Quando un certificato scade, i domini in uso con il certificato scaduto smettera
 
 La rimozione dei certificati da Cloud Manager è un’azione permanente che non può essere annullata. Come best practice, Adobe consiglia di salvare localmente i file SSL prima di eliminarli in Cloud Manager.
 
-Cloud Manager non consente di eliminare un certificato SSL associato a uno o più domini. Prima dell’eliminazione del certificato SSL è necessario eliminare tutti i domini associati. Per ulteriori informazioni, consulta il documento [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
+Cloud Manager non consente di eliminare un certificato SSL associato a uno o più domini. Prima dell’eliminazione del certificato SSL è necessario eliminare tutti i domini associati. Consulta [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) per ulteriori informazioni.
 
 Per eliminare un certificato SSL, segui la procedura riportata di seguito.
 
@@ -67,6 +67,6 @@ Se disponi di una configurazione CDN preesistente per il certificato SSL, viene 
 
 Il messaggio non viene più visualizzato dopo aver eseguito la migrazione di tutte le configurazioni dell’ambiente preesistenti tramite l’interfaccia utente. Potrebbero essere necessari 1-2 giorni lavorativi affinché il messaggio non venga più visualizzato.
 
-Per ulteriori informazioni, consulta il documento [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+Consulta [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) per ulteriori dettagli.
 
 Un messaggio simile viene visualizzato anche nelle pagine **Elenco IP consentiti** e **Ambienti** degli ambienti che presentano configurazioni CDN preesistenti per gli elenchi IP consentiti o i nomi di dominio personalizzati.

@@ -2,10 +2,10 @@
 title: Lanci
 description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di apportare modifiche pronte per la pubblicazione futura, mantenendo le pagine correnti
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 49%
+ht-degree: 45%
 
 ---
 
@@ -67,7 +67,7 @@ I lanci consentono di:
       * Se il **Produzione pronta** viene impostato, il lancio viene promosso automaticamente alle pagine di produzione nella **Launch**(**Live**) **data**. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
         Se la data non è stata impostata, il flag non ha alcun effetto.
 * Aggiorna parallelamente la pagina sorgente e la pagina di lancio:
-   * Le modifiche apportate alle pagine sorgenti vengono automaticamente implementate nella copia lancio (se impostate con ereditarietà; ovvero come Live Copy).
+   * Le modifiche alle pagine sorgente vengono implementate automaticamente nella copia lancio (se impostate con ereditarietà; ovvero, come Live Copy).
    * Le modifiche apportate alla copia di lancio possono essere effettuate senza interrompere gli aggiornamenti automatici o le pagine sorgenti.
 
   ![Azioni parallele](/help/sites-cloud/authoring/assets/launches-parallel.png)
@@ -86,7 +86,7 @@ I lanci consentono di:
 >
 >La creazione e la modifica dei lanci richiede diritti di accesso a `/content/launches`- come per il gruppo predefinito `content-authors`.
 >
->Per qualsiasi problema riscontrato, contatta l&#39;amministratore del sistema.
+>In caso di problemi, contatta l’amministratore di sistema.
 
 ## Lanci in Riferimenti (console Sites) {#launches-in-references-sites-console}
 

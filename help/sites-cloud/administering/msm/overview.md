@@ -4,9 +4,9 @@ description: Ottieni un’introduzione al riutilizzo dei contenuti con le potent
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2706'
 ht-degree: 95%
 
 ---
@@ -155,7 +155,7 @@ Come introduzione, la tabella seguente fornisce una panoramica dei termini princ
 | Sorgente | Pagine originali utilizzate come base per le Live Copy | Sinonimo di pagine blueprint e/o blueprint |
 | Live Copy  | La copia (della sorgente), gestita dalle azioni di sincronizzazione definite dalle configurazioni di rollout |  |
 | Configurazione Live Copy | Definizione dei dettagli di configurazione per una Live Copy |  |
-| Relazione Live | Definizione effettiva dell’ereditarietà per una determinata risorsa, ovvero connessioni tra sorgente e Live Copy | Garantisce che le modifiche all’origine possano essere sincronizzate con la Live Copy |
+| Relazione Live | Definizione effettiva dell’ereditarietà per una determinata risorsa, ovvero le connessioni tra sorgente e Live Copy | Garantisce che le modifiche all’origine possano essere sincronizzate con la Live Copy |
 | Blueprint | Sinonimo di Origine | Può essere definito da una configurazione blueprint |
 | Configurazione Blueprint | Configurazione predefinita che specifica un percorso origine | Quando si fa riferimento a una pagina blueprint in una configurazione blueprint, diventa disponibile il comando Rollout |
 | Capitolo | Sezioni della blueprint da includere nella Live Copy | Si tratta in genere di sottopagine della radice |

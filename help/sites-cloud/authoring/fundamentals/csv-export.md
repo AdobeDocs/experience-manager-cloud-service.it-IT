@@ -2,10 +2,10 @@
 title: Esportazione in formato CSV
 description: Esportare le informazioni sulle pagine in un file CSV nel sistema locale
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 90%
+source-wordcount: '198'
+ht-degree: 85%
 
 ---
 
@@ -48,9 +48,9 @@ Per creare un’esportazione CSV:
 
 1. Apri la console **Sites** e passa alla posizione desiderata, se necessario.
    * L’opzione **Crea rapporto CSV** è disponibile nella vista a elenco della console **Sites**.
-   * Si tratta di un’opzione del menu a discesa **Crea**:
+   * È un&#39;opzione del **Crea** menu a discesa:
 
-      ![Opzione Crea CSV](/help/sites-cloud/authoring/assets/csv-create.png)
+     ![Opzione Crea CSV](/help/sites-cloud/authoring/assets/csv-create.png)
 
 1. Dalla barra degli strumenti, seleziona **Crea**, quindi **Rapporto CSV** per aprire la procedura guidata:
 

@@ -2,10 +2,10 @@
 title: Partecipazione ai flussi di lavoro
 description: I flussi di lavoro in genere includono passaggi che richiedono a una persona di eseguire un’attività su una pagina o una risorsa.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 40%
+source-wordcount: '1537'
+ht-degree: 36%
 
 ---
 
@@ -75,7 +75,7 @@ Per completare l&#39;elemento di lavoro, attenersi alla procedura descritta di s
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Completa** dalla barra degli strumenti.
-1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento** se richiesto.
+1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Seleziona la **Passaggio successivo** dal selettore a discesa e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Completamento di un Passaggio Partecipante - Editor pagina {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ Per completare l&#39;elemento di lavoro, attenersi alla procedura descritta di s
 
 1. Apri [pagina per la modifica](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Completa** dalla barra di stato in alto.
-1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento** se richiesto.
+1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Seleziona la **Passaggio successivo** dal selettore a discesa e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Cancel** per interrompere l’azione).
 
 #### Completamento di un passaggio partecipante - Timeline {#completing-a-participant-step-timeline}
@@ -134,7 +134,7 @@ Per delegare un elemento di lavoro, attenersi alla procedura descritta di seguit
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Delega** dalla barra degli strumenti.
-1. Viene aperta una finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se necessario. 
+1. Viene aperta una finestra di dialogo. Specifica la **Utente** dal selettore a discesa (può anche trattarsi di un gruppo) e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un Passaggio Partecipante - Editor pagina {#delegating-a-participant-step-page-editor}
@@ -143,7 +143,7 @@ Per delegare un elemento di lavoro, attenersi alla procedura descritta di seguit
 
 1. Apri [pagina per la modifica](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Delega** dalla barra di stato in alto.
-1. Viene aperta una finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se necessario. 
+1. Viene aperta una finestra di dialogo. Specifica la **Utente** dal selettore a discesa (può anche trattarsi di un gruppo) e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un passaggio partecipante - Timeline {#delegating-a-participant-step-timeline}

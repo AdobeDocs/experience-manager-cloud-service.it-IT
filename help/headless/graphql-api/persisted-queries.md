@@ -3,10 +3,10 @@ title: Query GraphQL persistenti
 description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 88%
+ht-degree: 83%
 
 ---
 
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 dove `PERSISTENT_PATH` è un percorso abbreviato in cui viene salvata la query persistente.
 
-1. Ad esempio `wknd` è il nome della configurazione e `plain-article-query` è il nome della query persistente. Per eseguire la query:
+1. Ad esempio: `wknd` è il nome della configurazione e `plain-article-query` è il nome della query persistente. Per eseguire la query:
 
    ```shell
    $ curl -X GET \
@@ -228,7 +228,7 @@ Il pattern si presenta come segue:
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-Ad esempio, la seguente query contiene una variabile `activity` per filtrare un elenco in base a un valore di attività:
+Ad esempio, la query seguente contiene una variabile `activity` per filtrare un elenco in base a un valore di attività:
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -398,7 +398,7 @@ Il campo `Respond with application/graphql-response+json` (`responseContentTypeG
 
 ## Codifica dell’URL della query per l’utilizzo da parte di un’app {#encoding-query-url}
 
-Per poter essere utilizzati da un’applicazione, eventuali caratteri speciali utilizzati per creare variabili di query (come punto e virgola (`;`), segno di uguale (`=`), barra `/`) deve essere convertito nella codifica UTF-8 corrispondente.
+Per l&#39;utilizzo da parte di un&#39;applicazione, qualsiasi carattere speciale utilizzato per creare variabili di query, ovvero punto e virgola (`;`), segno di uguale (`=`), barre `/`) per utilizzare la codifica UTF-8 corrispondente.
 
 Esempio:
 

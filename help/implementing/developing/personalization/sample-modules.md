@@ -2,7 +2,7 @@
 title: Tipi di modulo interfaccia utente ContextHub di esempio
 description: ContextHub fornisce diversi moduli di interfaccia utente di esempio che puoi utilizzare nelle soluzioni
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Il codice sorgente si trova in `/libs/granite/contexthub/code/ui/container/js/Co
 
 ### Configurazione {#configuration}
 
-Configura il modulo dell’interfaccia utente contexthub.base utilizzando un oggetto Javascript in formato JSON. Includi una delle seguenti proprietà per configurare le funzioni del modulo dell’interfaccia utente:
+Configura il modulo dell’interfaccia utente contexthub.base utilizzando un oggetto JavaScript in formato JSON. Includi una delle seguenti proprietà per configurare le funzioni del modulo dell’interfaccia utente:
 
 * **immagine:** URL di un&#39;immagine da visualizzare come icona.
 * **icona:** Il nome di un [Icona interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) classe. Se specificate un valore sia per la proprietà icona che per quella immagine, viene utilizzata l&#39;immagine.

@@ -2,9 +2,9 @@
 title: Creazione dei lanci
 description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione delle pagine web esistenti per l’attivazione futura.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1043'
 ht-degree: 59%
 
 ---
@@ -62,7 +62,7 @@ Puoi creare un lancio dalla console Sites o Launches:
 
    >[!NOTE]
    >
-   >Per aggiungere pagine e/o rami a un lancio, devono trovarsi all’interno di un sito, ovvero al di sotto di una directory principale di livello principale comune.
+   >Per aggiungere pagine e/o rami a un lancio, è necessario che si trovino all’interno di un sito, ovvero al di sotto di una directory principale di livello principale comune.
    >
    >Se un sito contiene directory principali della lingua al di sotto del livello principale, le pagine e i rami di un lancio devono trovarsi al di sotto di una directory principale della lingua comune.
 

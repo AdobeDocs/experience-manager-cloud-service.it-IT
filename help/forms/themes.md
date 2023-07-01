@@ -2,7 +2,7 @@
 title: Creare e utilizzare i temi per formattare un modulo adattivo
 description: Puoi utilizzare i temi per formattare e fornire un’identità visiva a un modulo adattivo. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '5499'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Temi creati in un&#39;istanza di Cloud Service:
 
 * Prima di caricare un tema creato il [!DNL Experience Manager Forms] 6.5 o versioni precedenti di un’istanza di Cloud Service, assicurati che la posizione della libreria client sia impostata su `etc/clientlibs/fd/themes`. Se la libreria client non esiste in `etc` cartella, aggiorna manualmente il percorso in `etc/clientlibs/fd/themes`.  Puoi apportare la modifica sul tuo [!DNL Experience Manager Forms] 6.5 o versioni precedenti. Dopo aver impostato la posizione della libreria client, un amministratore può caricare i temi nell’istanza di Cloud Service o utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i temi dalla versione 6.5 o dalle istanze della versione precedente all’istanza di Cloud Service.
 
-   Inoltre, modifica il nome della categoria. Se il nome non viene modificato, viene generato un errore `theme with same category name exists` potrebbe verificarsi. La modifica del nome della categoria non influisce sul Forms adattivo che utilizza il tema.
+  Inoltre, modifica il nome della categoria. Se il nome non viene modificato, viene generato un errore `theme with same category name exists` potrebbe verificarsi. La modifica del nome della categoria non influisce sul Forms adattivo che utilizza il tema.
 
 ### Download di un tema {#downloading-a-theme}
 
@@ -205,15 +205,15 @@ L’Editor tema è suddiviso in due pannelli:
 
    * **Selettore:** Mostra il componente selezionato per lo stile e le relative proprietà che è possibile applicare allo stile. Il selettore rappresenta tutti i componenti di un tipo. Se si seleziona un componente casella di testo in un tema per lo stile, tutte le caselle di testo del modulo <!-- or interactive communication --> eredita lo stile. I selettori consentono di selezionare un componente generico o un componente specifico per lo stile. Ad esempio, un componente campo è un componente generico e una casella di testo è un componente specifico.
 
-      **Componente generico di stile:**
+     **Componente generico di stile:**
 Un campo può essere un campo casella numerica, ad esempio età, oppure un campo casella di testo, ad esempio indirizzo.
 Quando si applica uno stile a un campo, lo stile viene applicato a tutti i campi, ad esempio età, nome e indirizzo.
 
-      **Componente specifico per lo stile**: un componente specifico influisce sugli oggetti della categoria specifica. Quando si applica uno stile al componente casella numerica nel tema, solo l&#39;oggetto casella numerica in eredita lo stile.
+     **Componente specifico per lo stile**: un componente specifico influisce sugli oggetti della categoria specifica. Quando si applica uno stile al componente casella numerica nel tema, solo l&#39;oggetto casella numerica in eredita lo stile.
 
-      Ad esempio, un campo casella di testo, ad esempio l&#39;indirizzo, che è più lungo, e un campo casella numerica, ad esempio l&#39;età, sono più brevi. È possibile selezionare un campo casella numerica, ridurne la lunghezza e applicarlo al modulo. La larghezza di tutti i campi casella numerica viene ridotta nel modulo.
+     Ad esempio, un campo casella di testo, ad esempio l&#39;indirizzo, che è più lungo, e un campo casella numerica, ad esempio l&#39;età, sono più brevi. È possibile selezionare un campo casella numerica, ridurne la lunghezza e applicarlo al modulo. La larghezza di tutti i campi casella numerica viene ridotta nel modulo.
 
-      Quando personalizzi tutti i componenti campo con un colore di sfondo specifico, tutti i campi come età, nome e indirizzo ereditano il colore di sfondo. Quando si seleziona una casella numerica, ad esempio età, e se ne riduce la larghezza, la larghezza di tutte le caselle numeriche, ad esempio età, viene ridotto il numero di persone in una famiglia. La larghezza delle caselle di testo non viene modificata.
+     Quando personalizzi tutti i componenti campo con un colore di sfondo specifico, tutti i campi come età, nome e indirizzo ereditano il colore di sfondo. Quando si seleziona una casella numerica, ad esempio età, e se ne riduce la larghezza, la larghezza di tutte le caselle numeriche, ad esempio età, viene ridotto il numero di persone in una famiglia. La larghezza delle caselle di testo non viene modificata.
 
    * **Stato:** Consente di personalizzare gli stili di un oggetto in uno stato specifico. È ad esempio possibile specificare l&#39;aspetto di un oggetto quando si trova nello stato predefinito, attivo, disattivato, al passaggio del mouse o di errore.
    * **Categorie di proprietà:** Le proprietà di stile sono suddivise in varie categorie. Dimension e posizione, testo, sfondo, bordo ed effetti. In ogni categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo è possibile specificare Colore sfondo e Immagine e sfumatura.
@@ -221,9 +221,10 @@ Quando si applica uno stile a un campo, lo stile viene applicato a tutti i campi
    * **Avanzate:** Consente di aggiungere CSS personalizzati a un oggetto, che si sovrappone alle proprietà definite dai controlli visivi in caso di sovrapposizione.
 
    * **Visualizza CSS**: consente di visualizzare il CSS del componente selezionato.
-   Inoltre, nella barra laterale, in basso è presente una freccia. Facendo clic sulla freccia, si ottengono altre due opzioni: **Simula esito positivo** e **Simula errore.** Queste opzioni, insieme a quelle descritte in precedenza, vengono discusse in dettaglio [sotto](themes.md#using-rail).
 
-[ ![Editor temi](assets/themes.png)](assets/themes-1.png) **R.** Barra laterale **B.** Area di lavoro
+  Inoltre, nella barra laterale, in basso è presente una freccia. Facendo clic sulla freccia, si ottengono altre due opzioni: **Simula esito positivo** e **Simula errore.** Queste opzioni, insieme a quelle descritte in precedenza, vengono discusse in dettaglio [sotto](themes.md#using-rail).
+
+[![Editor temi](assets/themes.png)](assets/themes-1.png) **R.** Barra laterale **B.** Area di lavoro
 
 ### Componenti di stile {#styling-components}
 
@@ -620,7 +621,7 @@ Puoi visualizzare il CSS generato utilizzando le seguenti opzioni:
 
 * **Evitare risorse da un altro tema**
 
-   Quando modifichi un tema, puoi sfogliare e aggiungere risorse (come immagini) da altri temi. Ad esempio, stai modificando lo sfondo di una pagina. Ad esempio, quando selezioni **[!UICONTROL Pagina]** ![edit-button](assets/edit-button.png)> **[!UICONTROL Sfondo]** > **[!UICONTROL Aggiungi]** > **[!UICONTROL Immagine]**, viene visualizzata una finestra di dialogo che consente di sfogliare e aggiungere immagini in un altro tema.
+  Quando modifichi un tema, puoi sfogliare e aggiungere risorse (come immagini) da altri temi. Ad esempio, stai modificando lo sfondo di una pagina. Ad esempio, quando selezioni **[!UICONTROL Pagina]** ![edit-button](assets/edit-button.png)> **[!UICONTROL Sfondo]** > **[!UICONTROL Aggiungi]** > **[!UICONTROL Immagine]**, viene visualizzata una finestra di dialogo che consente di sfogliare e aggiungere immagini in un altro tema.
 
 * Se una risorsa viene aggiunta da un altro tema e l’altro tema viene spostato o eliminato, puoi riscontrare dei problemi con il tema corrente. Si consiglia di evitare di sfogliare e aggiungere risorse da altri temi.
 
@@ -654,9 +655,9 @@ Puoi visualizzare il CSS generato utilizzando le seguenti opzioni:
 
 * **Modifica della larghezza del layout del pannello contenitore**
 
-   La modifica della larghezza del layout del pannello contenitore non è consigliata. Quando si specifica la larghezza di un pannello contenitore, questo diventa statico e non si adatta a visualizzazioni diverse.
+  La modifica della larghezza del layout del pannello contenitore non è consigliata. Quando si specifica la larghezza di un pannello contenitore, questo diventa statico e non si adatta a visualizzazioni diverse.
 
 * **Quando utilizzare l’editor moduli o l’editor temi per lavorare con intestazione e piè di pagina**
 
-   Utilizzare l&#39;editor tema se si desidera applicare uno stile a intestazione e piè di pagina utilizzando opzioni di stile quali stile, sfondo e trasparenza del carattere.
+  Utilizzare l&#39;editor tema se si desidera applicare uno stile a intestazione e piè di pagina utilizzando opzioni di stile quali stile, sfondo e trasparenza del carattere.
 Se si desidera fornire informazioni quali un&#39;immagine del logo, il nome della società nell&#39;intestazione e le informazioni sul copyright nel piè di pagina, utilizzare le opzioni dell&#39;editor di moduli.

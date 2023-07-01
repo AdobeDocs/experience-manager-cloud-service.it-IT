@@ -2,10 +2,10 @@
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2153'
-ht-degree: 60%
+ht-degree: 59%
 
 ---
 
@@ -85,7 +85,7 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
   Dalla barra degli strumenti nella parte superiore del browser **Componenti**, puoi effettuare le seguenti operazioni:
 
    * Filtrare i componenti per nome
-   * Limitare la visualizzazione a uno specifico gruppo selezionandolo dall’elenco a discesa
+   * Limita la visualizzazione a un gruppo specifico utilizzando la selezione a discesa.
 
   Per una descrizione più dettagliata del componente, tocca o fai clic sull’icona delle informazioni posta accanto al componente nel browser **Componenti** (se disponibile). Ad esempio, per il **frammento di contenuto**:
 
@@ -152,7 +152,7 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
 >[!NOTE]
 >
->Un dispositivo viene rilevato come mobile se la larghezza è inferiore a 1024 px (quindi anche una piccola finestra desktop).
+>Un dispositivo mobile viene rilevato quando la larghezza è inferiore a 1024 px, ovvero anche su una piccola finestra del desktop.
 
 Se devi apportare rapidamente una modifica a una risorsa, puoi avviare [l’editor risorse](/help/assets/manage-digital-assets.md) direttamente dal browser Risorse facendo clic sull&#39;icona Modifica accanto al nome della risorsa.
 

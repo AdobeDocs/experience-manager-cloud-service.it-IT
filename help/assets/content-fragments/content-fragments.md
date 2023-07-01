@@ -2,10 +2,10 @@
 title: Utilizzo di frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri in che modo i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring e la distribuzione headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2132'
-ht-degree: 91%
+source-wordcount: '2134'
+ht-degree: 89%
 
 ---
 
@@ -84,7 +84,7 @@ I frammenti di contenuto possono quindi essere assemblati per fornire esperienze
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 >
->Per ulteriori informazioni consulta anche [Frammenti di contenuto e frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
+>Per ulteriori informazioni, consulta anche [Frammenti di contenuto e frammenti di esperienza nell’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
 
 ## Frammenti di contenuto e Content Services {#content-fragments-and-content-services}
 
@@ -142,7 +142,7 @@ I frammenti di contenuto sono una struttura di contenuto che:
 * può [contenere immagini o essere connessa ad esse](#fragments-with-visual-assets);
 * può utilizzare [contenuto intermedio](#in-between-content-when-page-authoring-with-content-fragments) se referenziato in una pagina;
 
-* è indipendente dal meccanismo di consegna (ad esempio, pagina, canale).
+* È indipendente dal meccanismo di consegna (ovvero pagina, canale).
 
 ### Frammenti con risorse visive {#fragments-with-visual-assets}
 
@@ -289,7 +289,7 @@ Per utilizzare i frammenti di contenuto nell’authoring delle pagine è inoltre
 
    * Essenziale per la distribuzione del frammento in formato HTML e/o JSON.
    * Obbligatorio per [fare riferimento al frammento in una pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Responsabile del layout e della distribuzione di un frammento, ovvero i canali.
+   * Responsabile del layout e della distribuzione di un frammento, ovvero dei canali.
    * I frammenti devono disporre di uno o più componenti dedicati per definire il layout e fornire alcuni o tutti gli elementi/varianti e i contenuti associati.
    * Quando si trascina un frammento su una pagina in fase di authoring, il componente richiesto viene associato automaticamente.
 

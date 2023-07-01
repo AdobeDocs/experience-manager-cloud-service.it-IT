@@ -2,10 +2,10 @@
 title: Distribuzione del codice
 description: Scopri come distribuire il codice con le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 94%
+source-wordcount: '1189'
+ht-degree: 89%
 
 ---
 
@@ -57,9 +57,9 @@ La fase di **implementazione nell’ambiente di staging** prevede i passaggi rip
 
 * **Convalida**: questo passaggio garantisce che la pipeline sia configurata per utilizzare le risorse attualmente disponibili. Ad esempio, i test per verificare che il ramo configurato esista e che gli ambienti siano disponibili.
 * **Test della build e unit test**: questo passaggio esegue un processo di build in contenitori.
-   * Per ulteriori informazioni sull’ambiente di build, consulta il documento [Dettagli sull’ambiente di build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md).
+   * Consulta [Dettagli dell’ambiente di build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) per informazioni dettagliate sull’ambiente di build.
 * **Controllo del codice**: questo passaggio valuta la qualità del codice dell’applicazione.
-   * Per ulteriori informazioni sul processo di test, consulta il documento [Test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md).
+   * Consulta [Test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md) per informazioni dettagliate sulla procedura di test.
 * **Genera immagini**: questo processo è responsabile della trasformazione in immagini Docker e configurazioni di Kubernetes dei pacchetti di contenuti e dispatcher generati dalla fase di build.
 * **Implementazione nell’ambiente di staging**: l’immagine viene implementata nell’ambiente di staging in preparazione alla [fase di test nell’ambente di staging.](#stage-testing)
 
@@ -70,20 +70,20 @@ La fase di **implementazione nell’ambiente di staging** prevede i passaggi rip
 La fase di **test nell’ambiente di staging** prevede i seguenti passaggi.
 
 * **Test funzionali del prodotto**: la pipeline di Cloud Manager esegue i test per l’ambiente di staging.
-   * Per ulteriori informazioni, consulta il documento [Test funzionali del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing).
+   * Consulta [Test funzionali del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) per ulteriori dettagli.
 
 * **Test funzionali personalizzato**: questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Se la build non produce JAR di test, il test viene superato per impostazione predefinita.
-   * Per ulteriori informazioni, consulta il documento [Test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
+   * Consulta [Test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) per ulteriori dettagli.
 
 * **Test dell’interfaccia utente personalizzati**: questo passaggio è una funzione facoltativa che esegue automaticamente i test dell’interfaccia utente creati per le applicazioni personalizzate.
    * I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in termini di linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium).
-   * Per ulteriori informazioni, consulta il documento [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
+   * Consulta [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) per ulteriori dettagli.
 
 * **Audit dell’esperienza**: questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Quando si esegue una pipeline di produzione, viene incluso un passaggio di audit dell’esperienza dopo i test funzionali personalizzati che eseguiranno i controlli.
    * Le pagine configurate vengono inviate al servizio e valutate.
    * I risultati sono informativi e mostrano i punteggi e cosa è cambiato tra il punteggio corrente e quello precedente.
    * Questa informazione è utile per determinare se c’è una regressione introdotta con la distribuzione corrente.
-   * Per ulteriori informazioni, consulta la sezione dedicata alla [lettura dei risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
+   * Consulta [I risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md) per ulteriori dettagli.
 
 ![Test nell’ambiente di staging](assets/stage-testing.png)
 
@@ -120,7 +120,7 @@ Per i seguenti passaggi è previsto un timeout in caso di attesa del feedback de
 
 ## Processo di distribuzione {#deployment-process}
 
-Tutte le distribuzioni di Cloud Service seguono un processo continuo per garantire l’operatività continua. Per ulteriori informazioni, consulta il documento [Funzionamento delle distribuzioni continue](/help/implementing/deploying/overview.md#how-rolling-deployments-work).
+Tutte le distribuzioni di Cloud Service seguono un processo continuo per garantire l’operatività continua. Consulta [Funzionamento delle distribuzioni continue](/help/implementing/deploying/overview.md#how-rolling-deployments-work) per ulteriori informazioni.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Per identificare se un’esecuzione è stata rieseguita, verifica il campo trigg
 
 Per attivare una nuova esecuzione è necessario effettuare una richiesta PUT al collegamento HAL &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> dello stato del passaggio di distribuzione nell’ambiente di produzione. Se questo collegamento è presente, l’esecuzione può essere riavviata da quel passaggio. Se assente, l’esecuzione non può essere riavviata da quel passaggio. Nella versione iniziale, il collegamento sarà sempre presente solo nel passaggio di distribuzione nell’ambiente di produzione, ma le versioni future potrebbero supportare l’avvio della pipeline da altri passaggi. Esempio:
 
-```Javascript
+```JavaScript
  {
   "_links": {
     "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {

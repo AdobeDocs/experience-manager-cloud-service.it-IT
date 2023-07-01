@@ -2,10 +2,10 @@
 title: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 description: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2818'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -191,15 +191,15 @@ AEM Forms as a Cloud Services fornisce un ambiente SDK basato su docker per semp
    * (Apple macOS) Installazione [Docker Desktop per Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Include Docker Engine, il client CLI Docker, Docker Compose, Docker Content Trust, Kubernetes e Credential Helper.
 
    * (Per Linux®) Installa [Docker Engine](https://docs.docker.com/engine/install/#server) e [Componi Docker](https://docs.docker.com/compose/install/) sul tuo computer.
+
    >[!NOTE]
    >
    > * Per Apple macOS, inserire nell&#39;elenco Consentiti cartelle contenenti le istanze locali di AEM Author.
    >
    > * Docker Desktop per Windows supporta due back-end, Hyper-V
-      > (legacy) e WSL2 (modern). La condivisione dei file avviene automaticamente
-      > gestito da Docker tramite WSL2 (modern). Devi
-      > configurare in modo esplicito la condivisione dei file quando si utilizza Hyper-V (legacy).
-
+   > (legacy) e WSL2 (modern). La condivisione dei file avviene automaticamente
+   > gestito da Docker tramite WSL2 (modern). Devi
+   > configurare in modo esplicito la condivisione dei file quando si utilizza Hyper-V (legacy).
 
 1. Crea una cartella, ad esempio aem-sdk, in parallelo alle istanze di authoring e pubblicazione. Ad esempio, C:\aem-sdk.
 
@@ -234,7 +234,7 @@ Utilizza questo progetto per creare Forms adattivo, distribuire aggiornamenti di
 ---------|----------|---------
 | Area di lavoro 3.0 | Base | Microsoft® Dynamics 365 |
 | Tranquilla | Vuoto | Salesforce |
-| Urbano |  |  |
+| Urbano |   |  |
 | Ultramarina |  |  |
 | Beryl |  |  |
 
@@ -331,7 +331,7 @@ L’ambiente di sviluppo locale è pronto.
 
 ## Abilitare i componenti core Adaptive Forms nell’ambiente di sviluppo as a Cloud Service e locale di AEM Forms
 
-Abilitando i componenti core Adaptive Forms su AEM Forms as a Cloud Service, puoi iniziare a creare, pubblicare e distribuire componenti core basati su Adaptive Forms e Headless Forms utilizzando le istanze del Cloud Service AEM Forms su più canali. Per utilizzare Headless Adaptive Forms è necessario un ambiente abilitato per i Componenti core Forms adattivi.
+Abilitando i componenti core dei moduli adattivi su AEM Forms as a Cloud Service, è possibile iniziare a creare, pubblicare e distribuire componenti core basati su moduli adattivi e moduli headless utilizzando le istanze del Cloud Service di AEM Forms su più canali. Per utilizzare Headless Adaptive Forms è necessario un ambiente abilitato per i Componenti core Forms adattivi.
 
 Per istruzioni, consulta [Abilitare i componenti core Adaptive Forms nell’ambiente di sviluppo as a Cloud Service e locale di AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
 

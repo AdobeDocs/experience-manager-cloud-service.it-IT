@@ -2,9 +2,9 @@
 title: Utilizzo di Sling Resource Merger in Adobe Experience Manager as a Cloud Service
 description: Sling Resource Merger fornisce servizi per accedere e unire le risorse
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1160'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Sling Resource Merger fornisce servizi per accedere e unire le risorse. Fornisce
 
 Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/sostituzione vengono unite alle risorse/proprietà originali:
 
-* Il contenuto della definizione personalizzata ha una priorità più alta rispetto a quella dell’originale (cioè *sovrapposizioni* o *sostituzioni* it).
+* Il contenuto della definizione personalizzata ha una priorità più alta rispetto a quella dell’originale (ovvero *sovrapposizioni* o *sostituzioni* it).
 
 * Se necessario, [proprietà](#properties) definito nella personalizzazione, indica come deve essere utilizzato il contenuto unito dall’originale.
 
@@ -117,7 +117,7 @@ Nell’esempio di sovrapposizione precedente, sono necessari i seguenti nodi:
 
 >[!NOTE]
 >
->Quando si utilizza Sling Resource Merger (ad esempio quando si tratta dell’interfaccia utente standard touch), non è consigliabile copiare l’intera struttura da `/libs` in quanto comporterebbe la memorizzazione di troppe informazioni `/apps`. Questo può causare problemi quando il sistema viene aggiornato in qualsiasi modo.
+>Quando si utilizza Sling Resource Merger (cioè quando si tratta dell’interfaccia utente standard touch), non è consigliabile copiare l’intera struttura da `/libs` in quanto comporterebbe la memorizzazione di troppe informazioni `/apps`. Questo può causare problemi quando il sistema viene aggiornato in qualsiasi modo.
 
 ### Casi d’uso {#use-cases}
 

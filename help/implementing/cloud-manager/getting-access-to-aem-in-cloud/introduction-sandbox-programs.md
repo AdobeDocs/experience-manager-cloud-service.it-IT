@@ -2,10 +2,10 @@
 title: Introduzione ai programmi sandbox
 description: Scopri che cosa sono i programmi sandbox e in cosa differiscono dai programmi di produzione.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 100%
+source-wordcount: '475'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ Scopri che cosa sono i programmi sandbox e in cosa differiscono dai programmi di
 
 Un programma sandbox viene tipicamente creato per scopi di formazione, esecuzione di demo, attivazione o modelli di verifica (POC) e non è quindi destinato a contenere traffico in tempo reale.
 
-Un programma sandbox è uno dei due tipi di programmi disponibili in AEM Cloud Service; l’altro è il [programma di produzione.](introduction-production-programs.md) Per ulteriori informazioni sui tipi di programmi, consulta il documento [Informazioni su programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Un programma sandbox è uno dei due tipi di programmi disponibili in AEM Cloud Service; l’altro è il [programma di produzione.](introduction-production-programs.md) Consulta [Informazioni su programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) per ulteriori informazioni sui tipi di programmi.
 
 ## Creazione automatica {#auto-creation}
 
@@ -49,7 +49,7 @@ I domini personalizzati e gli elenchi IP consentiti non sono disponibili nei pro
 
 ### Funzionalità di rete avanzate non disponibili {#advanced-networking}
 
-[Le funzionalità di rete avanzate](/help/security/configuring-advanced-networking.md) (ad esempio il provisioning self-service di VPN, porte non standard, indirizzi IP in uscita dedicati e così via) non sono disponibili nei programmi sandbox.
+[Funzionalità di rete avanzate](/help/security/configuring-advanced-networking.md) (ad esempio, il provisioning self-service di VPN, porte non standard, indirizzi IP in uscita dedicati e così via) non è disponibile nei programmi sandbox.
 
 ### Aggiornamenti di AEM manuali {#updates}
 
@@ -58,15 +58,15 @@ Gli aggiornamenti di AEM non vengono eseguiti automaticamente per i programmi sa
 * È possibile eseguire un aggiornamento manuale solo se nell’ambiente di destinazione è presente una pipeline configurata correttamente.
 * Apportando un aggiornamento manuale a un ambiente di produzione o di staging si aggiorna automaticamente anche l’altro. Il set di ambienti Produzione + Staging deve avere la stessa versione di AEM.
 
-Per ulteriori informazioni, consulta il documento [Aggiornamenti della versione di AEM](/help/implementing/deploying/aem-version-updates.md).
+Consulta [Aggiornamenti delle versioni AEM](/help/implementing/deploying/aem-version-updates.md) per ulteriori dettagli.
 
-Per ulteriori informazioni su come aggiornare un ambiente, consulta il documento [Aggiornamento dell’ambiente](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
+Consulta [Aggiornamento dell’ambiente](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) per scoprire come aggiornare un ambiente.
 
 ### Sospensione ed eliminazione {#hibernation}
 
 Gli ambienti in un programma sandbox vengono automaticamente sospesi dopo otto ore di inattività. Gli ambienti sandbox vengono eliminati dopo sei mesi continuativi di ibernazione.
 
-Per ulteriori informazioni su come disattivare gli ambienti e sull’eliminazione automatica delle sandbox, consulta [Sospensione e disattivazione degli ambienti sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md).
+Consulta [Sospensione e riattivazione degli ambienti sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) per ulteriori dettagli su come riattivare gli ambienti e l’eliminazione automatica delle sandbox.
 
 ### Nessun supporto tecnico {#no-support}
 

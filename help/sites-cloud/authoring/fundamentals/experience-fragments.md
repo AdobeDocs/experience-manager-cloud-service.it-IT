@@ -2,10 +2,10 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 81%
+source-wordcount: '2046'
+ht-degree: 77%
 
 ---
 
@@ -37,7 +37,7 @@ Puoi utilizzare Frammenti esperienza:
 Senza Frammenti esperienza, l’autore dovrebbe copiare e incollare tale frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente.
 Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
 * Per supportare il caso d’uso del CMS headless.
-Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. Un sistema o punto di contatto di terze parti potrebbe prendere in carico questa particolare esperienza e in seguito trasmetterla all’utente finale.
+Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. Un sistema/punto di contatto di terze parti utilizzerebbe tale esperienza e quindi la consegnerebbe all’utente finale.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distri
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 >
->Per ulteriori informazioni consulta anche [Frammenti di contenuto e frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
+>Per ulteriori informazioni, consulta [Frammenti di contenuto e frammenti di esperienza nell’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ I frammenti esperienza sono indicati nei seguenti casi:
    * Esperienze riutilizzate con contenuti uguali o simili.
 * Quando utilizzi AEM come piattaforma di distribuzione di contenuti per terze parti.
    * Per qualsiasi soluzione che utilizza AEM come piattaforma di distribuzione di contenuti. .
-   * Per incorporare contenuti nei punti di contatto di terze parti.
+   * Incorporazione di contenuti nei punti di contatto di terze parti.
 * Se usi un’esperienza con diverse varianti o rappresentazioni.
    * Varianti per un canale o per un contesto specifico. .
    * Per esperienze che è utile raggruppare; ad esempio una campagna con diverse esperienze per i vari canali.
@@ -145,7 +145,7 @@ Per creare e configurare una cartella per i frammenti esperienza, è consigliabi
 >
 >È consigliabile non utilizzare questo metodo per modificare i **modelli consentiti**, in quanto i modelli specificati possono essere sovrascritti in seguito a un aggiornamento.
 >
->Utilizza questa finestra di dialogo solo a scopo informativo.
+>Utilizzare questa finestra di dialogo solo a scopo informativo.
 
 1. Individua la console **Frammenti esperienza** necessaria.
 
@@ -422,7 +422,7 @@ Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML s
 
 >[!NOTE]
 >
-Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere ai contenuti del frammento esperienza direttamente dall’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Anche se è disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere direttamente al contenuto del frammento di esperienza, utilizzando solo l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Pubblicazione di frammenti di esperienza {#publishing-experience-fragments}
 

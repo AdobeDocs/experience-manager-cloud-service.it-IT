@@ -2,10 +2,10 @@
 title: Esportazione di frammenti di esperienza in Adobe Target
 description: Esportazione di frammenti di esperienza in Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 98%
+source-wordcount: '2245'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ I Frammenti di esperienza possono essere esportati nell’area di lavoro predefi
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta:
+>Per ulteriori informazioni, vedi:
 >
 >* [Sviluppo Adobe Target](https://developers.adobetarget.com/)
 >* [Componenti core: Frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
@@ -177,7 +177,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
 
    * **ID tenant**: ID del tenant
 
-   * **Configurazione IMS**: seleziona la configurazione desiderata dall’elenco a discesa
+   * **Configurazione IMS**: seleziona la configurazione richiesta dall’elenco a discesa
 
    * **Tipo di API**: impostazione predefinita REST (XML è obsoleto)
 
@@ -356,7 +356,7 @@ Per esportare un frammento di esperienza da AEM a Target (dopo aver specificato 
 
 ## Utilizzo dei frammenti di esperienza in Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Dopo aver eseguito le attività precedenti, il frammento di esperienza viene visualizzato nella pagina Offerte di Target. Dai un&#39;occhiata alla [documentazione specifica di Target](https://experiencecloud.adobe.com/resources/help/it_IT/target/target/aem-experience-fragments.html) per scoprire cosa puoi ottenere.
+Dopo aver eseguito le attività precedenti, il frammento di esperienza viene visualizzato nella pagina Offerte di Target. Consulta [documentazione specifica di Target](https://experiencecloud.adobe.com/resources/help/it_IT/target/target/aem-experience-fragments.html) per scoprire cosa puoi ottenere.
 
 >[!NOTE]
 >

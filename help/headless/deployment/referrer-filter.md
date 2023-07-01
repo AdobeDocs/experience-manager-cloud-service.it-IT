@@ -3,10 +3,10 @@ title: Configurazione del filtro Referrer con AEM Headless
 description: Il filtro Referrer di Adobe Experience Manager consente l’accesso da host di terze parti. Per abilitare l’accesso all’endpoint GraphQL per le applicazioni headless è necessaria una configurazione OSGi per il filtro Referrer.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 100%
+source-wordcount: '275'
+ht-degree: 92%
 
 ---
 
@@ -57,7 +57,6 @@ Ad esempio, per concedere l’accesso alle richieste con il Referrer `my.domain`
 >* concedere l’accesso solo ai domini attendibili;
 >* assicurarsi che non siano esposte informazioni sensibili;
 >* non utilizzare una sintassi con carattere jolly [*]; questa infatti comporterebbe la disattivazione dell’accesso autenticato all’endpoint GraphQL, rendendolo accessibile a chiunque.
-
 
 >[!CAUTION]
 >

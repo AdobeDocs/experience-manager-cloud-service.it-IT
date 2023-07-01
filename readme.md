@@ -1,17 +1,16 @@
 ---
-source-git-commit: 3409c713ea1ca033a2835d0070d0da4fec58fd18
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '97'
-ht-degree: 0%
+source-wordcount: '96'
+ht-degree: 59%
 
 ---
-# Adobe Experience Manager come documentazione di Cloud Service
+# Documentazione di Adobe Experience Manager as a Cloud Service
 
-Questo è il repository per Adobe Experience Manager come documentazione di Cloud Service. Questa documentazione descrive l&#39;installazione, l&#39;amministrazione, l&#39;utilizzo dell&#39;authoring e come personalizzare l&#39;uso dell&#39;esperienza come Cloud Service.
+Questo è l’archivio della documentazione di Adobe Experience Manager as a Cloud Service. Questa documentazione descrive come installare, amministrare, utilizzare l’authoring e personalizzare l’esperienza con as a Cloud Service.
 
-I vostri contributi alla documentazione sono i benvenuti. Consulta le risorse seguenti:
+Saremo lieti di accogliere anche il contributo alla documentazione. Consulta le risorse seguenti:
 
-* [contribute.](contributing.md) mdPer una panoramica di come contribuire alla documentazione.
-* [guidelines.](guidelines.md) mdPer una panoramica di quanto ci si aspetta dai contributi e come comporre i contributi della documentazione.
-* [code-of-Conduct.](code-of-conduct.md) mdPer una panoramica degli standard di comportamento che ci aspettiamo nel corso del progetto di documentazione.
+* [contributing.md](contributing.md): panoramica su come contribuire alla documentazione.
+* [guidelines.md](guidelines.md): panoramica su cosa includere nei contributi e come comporre i contributi alla documentazione.
+* [code-of-conduct.md](code-of-conduct.md): panoramica degli standard di comportamento a cui dovrà attenersi chi partecipa al progetto di documentazione.

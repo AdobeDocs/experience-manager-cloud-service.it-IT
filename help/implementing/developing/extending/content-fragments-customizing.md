@@ -2,10 +2,10 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 3%
+source-wordcount: '1811'
+ht-degree: 2%
 
 ---
 
@@ -106,7 +106,7 @@ Per l’integrazione con Assets Core:
 
 * Il componente consente il contenuto intermedio:
 
-   * In questo caso il componente ti consente di inserire altre risorse (immagini, ecc.) tra i paragrafi del frammento a cui si fa riferimento.
+   * In questo caso il componente consente di inserire altre risorse (immagini e così via) tra i paragrafi del frammento di riferimento.
 
    * Per i contenuti intermedi è necessario:
 

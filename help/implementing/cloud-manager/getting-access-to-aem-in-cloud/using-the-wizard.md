@@ -2,10 +2,10 @@
 title: Creazione guidata di un progetto
 description: Scopri la procedura guidata di creazione del progetto per velocizzare la configurazione del tuo progetto dopo aver creato il programma di produzione.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Dopo aver completato la creazione del programma, la scheda **Aggiungi ambiente**
 
 Ora hai aggiunto all’archivio Git un progetto AEM basato sull’archetipo AEM, da utilizzare come base di sviluppo per il tuo progetto. Ora puoi creare ambienti in cui distribuire il codice del progetto.
 
-Per ulteriori informazioni su come aggiungere o gestire gli ambienti, consulta il documento [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md).
+Consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md) per scoprire come aggiungere o gestire gli ambienti.
 
 >[!NOTE]
 >

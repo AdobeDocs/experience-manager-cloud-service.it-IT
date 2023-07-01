@@ -2,10 +2,10 @@
 title: Normative sulla protezione e la privacy dei dati - Preparazione di Adobe Experience Manager as a Cloud Service Sites
 description: Scopri il supporto di Adobe Experience Manager as a Cloud Service Sites per le varie normative su privacy e protezione dei dati, incluso il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi quando si implementa un nuovo progetto AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 93%
+source-wordcount: '1025'
+ht-degree: 86%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 Adobe Experience Manager as a Cloud Service Sites è pronto ad aiutare i clienti a rispettare gli obblighi in materia di privacy e protezione dei dati. Questa pagina guida i clienti attraverso le procedure per gestire tali richieste in AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con codice.
 
-Per ulteriori informazioni, visita il [Centro per la privacy Adobe](https://www.adobe.com/it/privacy.html).
+Per ulteriori informazioni, vedere [Centro per la privacy di Adobe](https://www.adobe.com/it/privacy.html).
 
 >[!NOTE]
 >
@@ -76,13 +76,13 @@ Per rinunciare:
 
 AEM Sites include un’integrazione opzionale con Analytics Foundation che utilizza funzionalità interne al servizio Adobe Analytics On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati in relazione ad Adobe Analytics, consulta [Adobe Analytics e privacy dei dati](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=it).
+Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati in relazione ad Adobe Analytics, consulta [Adobe Analytics e Privacy dei dati](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=it).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites include un’integrazione opzionale con Personalization Foundation by Target che utilizza funzionalità interne al servizio Adobe Target On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati (RGPD)](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=it).
+Per informazioni sulla gestione delle richieste dei soggetti interessati in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati (RGPD)](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=it).
 
 ## ContextHub {#contexthub}
 

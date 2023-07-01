@@ -2,10 +2,10 @@
 title: Guida rapida all’authoring delle pagine
 description: Guida rapida di alto livello per iniziare a creare i contenuti di una pagina
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 63%
+source-wordcount: '1569'
+ht-degree: 61%
 
 ---
 
@@ -57,7 +57,7 @@ Prima di iniziare la lettura della guida rapida, ti offriamo una piccola raccolt
 
 Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseguire ricerche:
 
-1. Apri la console **Sites** (mediante l’opzione **Sites** del pannello [Navigazione globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation), che si apre (a discesa) quando selezioni il collegamento Adobe Experience Manager (in alto a sinistra).
+1. Apri **Sites** console (utilizzando il **Sites** opzione in [Navigazione globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - viene attivato (a discesa) quando selezioni il collegamento Adobe Experience Manager (in alto a sinistra).
 
 1. Spostati verso il basso all’interno della struttura toccando/facendo clic sulla pagina appropriata. La modalità di rappresentazione delle risorse di pagina dipende dalla vista che stai utilizzando, [A schede, Elenco o Colonna](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
@@ -181,7 +181,7 @@ Per modificare la pagina:
 
       * Seleziona **Anteprima** dalla barra degli strumenti.
 
-   * Torna alla modalità di modifica (o seleziona un’altra modalità) utilizzando **Modifica** selettore a discesa.
+   * Torna alla modalità di modifica (o seleziona un’altra modalità) utilizzando **Modifica** a discesa.
 
    >[!NOTE]
    >
@@ -270,7 +270,7 @@ Queste azioni possono essere tutte attivate da:
 [Il blocco di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) non consente ad altri autori di utilizzarla mentre vi lavori. L’icona o il pulsante Blocca (e Sblocca) è disponibile:
 
 * La barra degli strumenti, se la [pagina è stata selezionata](#selecting-your-page-for-further-action).
-* Il [menu a discesa Informazioni pagina](#editing-the-page-properties) durante la modifica di una pagina.
+* Il [Menu a discesa Informazioni pagina](#editing-the-page-properties) durante la modifica di una pagina.
 * La barra degli strumenti della pagina durante la modifica di una pagina (quando la pagina è bloccata)
 
 Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:

@@ -2,10 +2,10 @@
 title: Introduzione ai nomi di dominio personalizzati
 description: Tramite l’interfaccia utente di Cloud Manager è possibile aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 94%
+source-wordcount: '766'
+ht-degree: 93%
 
 ---
 
@@ -74,4 +74,4 @@ L’utilizzo di nomi di dominio personalizzati con AEMaaCS presenta diverse limi
 * Lo stesso nome di dominio non può essere utilizzato in più ambienti.
 * È possibile aggiungere un solo nome di dominio alla volta.
 * AEM as a Cloud Service non supporta i domini con caratteri jolly come `*.example.com`.
-* Prima di aggiungere un nome di dominio personalizzato, è necessario installare un certificato SSL valido contenente il nome di dominio personalizzato del programma (i certificati wildcard sono validi). Per ulteriori informazioni, consulta [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+* Prima di aggiungere un nome di dominio personalizzato, è necessario installare un certificato SSL valido contenente il nome di dominio personalizzato del programma (i certificati wildcard sono validi). Consulta [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) per ulteriori informazioni.

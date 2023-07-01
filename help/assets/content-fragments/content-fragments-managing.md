@@ -2,10 +2,10 @@
 title: Gestione dei frammenti di contenuto (risorse - frammenti di contenuto)
 description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 76%
+source-wordcount: '1755'
+ht-degree: 71%
 
 ---
 
@@ -113,7 +113,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 * **Pubblicazione rapida**
 * **Gestisci pubblicazione**
-* **Gestisci i tag**
+* **Gestisci tag**
 * **Alla raccolta**
 * **Copia** (e **Incolla**)
 * **Sposta**
@@ -129,7 +129,7 @@ Per aprire la pagina per la modifica:
 
 >[!CAUTION]
 >
->Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
+>Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). In caso di problemi, contatta l’amministratore di sistema.
 
 1. Utilizza il **Risorse** per passare alla posizione del frammento di contenuto.
 1. Apri il frammento per la modifica eseguendo una delle seguenti operazioni:
@@ -217,7 +217,7 @@ L’editor dispone di diverse opzioni:
 
   >[!CAUTION]
   >
-  >Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
+  >Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). In caso di problemi, contatta l’amministratore di sistema.
 
   >[!NOTE]
   >
@@ -225,13 +225,13 @@ L’editor dispone di diverse opzioni:
 
   >[!CAUTION]
   >
-  >Oltre al semplice salvataggio delle modifiche, le azioni aggiornano anche i riferimenti e garantiscono che il Dispatcher venga svuotato come richiesto. L’elaborazione di queste modifiche può richiedere del tempo. Per questo motivo, può esserci un impatto sulle prestazioni su un sistema di grandi dimensioni, complesso o con un carico elevato.
+  >Oltre al semplice salvataggio delle modifiche, le azioni aggiornano anche i riferimenti e garantiscono che il Dispatcher venga svuotato come richiesto. L’elaborazione di queste modifiche può richiedere del tempo. A causa di questo tempo, può esserci un impatto sulle prestazioni su un sistema di grandi dimensioni, complesso o con un carico elevato.
   >
-  >Tieni presente questo aspetto se utilizzi **Salva e chiudi** per poi riaprire immediatamente l’editor frammento per apportare e salvare ulteriori modifiche.
+  >Tieni presente questo processo quando utilizzi **Salva e chiudi** e quindi accedere di nuovo rapidamente all’editor frammenti per apportare e salvare altre modifiche.
 
 * **Chiudi**
 
-  Chiude l’editor senza salvare le modifiche più recenti, ovvero apportate dall’ultimo comando **Salva**.
+  Chiude l’editor senza salvare le modifiche più recenti, ovvero apportate dall’ultima **Salva**).
 
 Durante la modifica del frammento di contenuto, AEM crea automaticamente alcune versioni per garantire che il contenuto precedente possa essere ripristinato se si annullano le modifiche (utilizzando **Chiudi** senza salvare):
 
@@ -262,7 +262,7 @@ Dopo aver creato il contenuto primario, puoi creare e gestire le [Varianti](/hel
 
 ## Associazione di contenuto al frammento {#associating-content-with-your-fragment}
 
-È inoltre possibile [associare il contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) a un frammento. In questo modo si fornisce una connessione in modo che le risorse (ad esempio le immagini) possano essere (facoltativamente) utilizzate con il frammento quando viene aggiunto a una pagina di contenuto.
+È inoltre possibile [associare il contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) a un frammento. Fornisce una connessione in modo che le risorse (ovvero le immagini) possano essere (facoltativamente) utilizzate con il frammento quando viene aggiunto a una pagina di contenuto.
 
 ## Visualizzazione e modifica dei metadati (proprietà) del frammento {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 

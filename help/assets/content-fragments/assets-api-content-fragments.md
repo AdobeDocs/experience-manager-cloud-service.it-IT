@@ -3,9 +3,9 @@ title: Supporto dei frammenti di contenuto di Adobe Experience Manager as a Clou
 description: Scopri il supporto per i frammenti di contenuto nell’API Assets HTTP di, un’importante componente della funzione di distribuzione headless dell’AEM.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1785'
 ht-degree: 18%
 
 ---
@@ -74,7 +74,6 @@ Ad esempio, per accedere a `/content/dam/wknd/en/adventures/cycling-tuscany`, ri
 >
 >* `/api/assets` **non è** necessario l’uso del selettore `.model`.
 >* `/content/path/to/page` **richiede** l’uso del selettore `.model`.
-
 
 Il metodo HTTP determina l’operazione da eseguire:
 
@@ -154,7 +153,6 @@ Se l’API REST di Assets viene utilizzata in un ambiente senza requisiti di aut
 >* [Video: sviluppo per CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=it)
 >
 
-
 Negli ambienti con requisiti di autenticazione specifici, si consiglia OAuth.
 
 ## Funzioni disponibili {#available-features}
@@ -177,7 +175,7 @@ La risposta conterrà informazioni di paging come parte del `properties` sezione
 
 >[!NOTE]
 >
->Il paging viene in genere applicato alle entità contenitore (ad esempio cartelle o risorse con rappresentazioni), in quanto si riferisce agli elementi figlio dell’entità richiesta.
+>Il paging viene in genere applicato alle entità contenitore (ovvero cartelle o risorse con rappresentazioni), in quanto si riferisce agli elementi figlio dell’entità richiesta.
 
 #### Esempio: paging {#example-paging}
 
@@ -230,7 +228,7 @@ Frammenti di contenuto:
 * Non esporre dati binari.
 * Sono completamente contenuti nell’output JSON (all’interno del `properties` proprietà ).
 
-* Sono anche considerati atomici, ovvero gli elementi e le varianti vengono esposti come parte delle proprietà del frammento e non come collegamenti o entità secondarie. Questo consente un accesso efficiente al payload di un frammento.
+* Sono anche considerati atomici, ovvero gli elementi e le varianti vengono esposti come parte delle proprietà del frammento e come collegamenti o entità secondarie. Questo consente un accesso efficiente al payload di un frammento.
 
 #### Modelli di contenuto e frammenti di contenuto {#content-models-and-content-fragments}
 
@@ -275,68 +273,71 @@ I seguenti codici di stato possono essere visualizzati nelle circostanze pertine
 
 * **200** (OK)
 
-   Restituito quando:
+  Restituito quando:
 
    * richiesta di un frammento di contenuto tramite `GET`
    * aggiornamento di un frammento di contenuto tramite `PUT`
 
 * **201** (Creato)
 
-   Restituito quando:
+  Restituito quando:
 
    * creazione di un frammento di contenuto tramite `POST`
 
 * **404** (Non trovato)
 
-   Restituito quando:
+  Restituito quando:
 
    * il frammento di contenuto richiesto non esiste
 
 * **500** (Errore interno del server)
 
-   >[!NOTE]
-   >
-   >Questo errore viene restituito:
-   >
-   >* si è verificato un errore che non può essere identificato con un codice specifico
-   >* quando il payload specificato non era valido
+  >[!NOTE]
+  >
+  >Questo errore viene restituito:
+  >
+  >* si è verificato un errore che non può essere identificato con un codice specifico
+  >* quando il payload specificato non era valido
 
-
-   Di seguito sono elencati gli scenari comuni in cui viene restituito questo stato di errore, insieme al messaggio di errore (monospazio) generato:
+  Di seguito sono elencati gli scenari comuni in cui viene restituito questo stato di errore, insieme al messaggio di errore (monospazio) generato:
 
    * La cartella principale non esiste (quando si crea un frammento di contenuto tramite `POST`)
    * Non è stato fornito alcun modello per frammenti di contenuto (cq:model è mancante), non può essere letto (a causa di un percorso non valido o di un problema di autorizzazione) o non è disponibile alcun modello per frammenti valido:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
+
    * Impossibile creare il frammento di contenuto (potrebbe trattarsi di un problema di autorizzazione):
 
       * `Could not create content fragment`
+
    * Impossibile aggiornare il titolo e/o la descrizione:
 
       * `Could not set value on content fragment`
+
    * Impossibile impostare i metadati:
 
       * `Could not set metadata on content fragment`
+
    * Impossibile trovare o aggiornare l’elemento di contenuto
 
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-   I messaggi di errore dettagliati vengono in genere restituiti nel modo seguente:
+  I messaggi di errore dettagliati vengono in genere restituiti nel modo seguente:
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## Riferimento API {#api-reference}
 

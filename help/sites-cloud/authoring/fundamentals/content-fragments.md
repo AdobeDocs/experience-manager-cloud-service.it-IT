@@ -2,10 +2,10 @@
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redigere e utilizzare contenuti indipendenti dalla pagina.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 92%
+source-wordcount: '1223'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,7 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 >
->Per ulteriori informazioni consulta anche [Frammenti di contenuto e frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
+>Per ulteriori informazioni, consulta [Frammenti di contenuto e frammenti di esperienza nell’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
 
 >[!CAUTION]
 >
@@ -115,7 +115,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 
 Quando un frammento di contenuto specifico viene aggiunto alla pagina, è disponibile un segnaposto **Trascina qui i componenti** tra ciascun paragrafo HTML (e nella parte superiore/inferiore) del frammento.
 
-Questo consente di aggiungere ulteriori contenuti [in mezzo (ovvero contenuto intermedio)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) al contenuto del frammento (nei punti disponibili), senza dover modificare il frammento principale.
+Ciò ti consente di aggiungere contenuto aggiuntivo [nel mezzo (ovvero nel contenuto intermedio)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) il contenuto del frammento (in qualsiasi punto disponibile), senza dover modificare il frammento principale.
 
 Per il contenuto intermedio è possibile:
 
@@ -137,7 +137,7 @@ Per il contenuto intermedio è possibile:
 
 >[!CAUTION]
 >
->Dopo aver aggiunto contenuto intermedio a un frammento di contenuto nella pagina, se si modifica la struttura del frammento di contenuto sottostante (ovvero nell’editor frammento di contenuto) si potrebbero verificare risultati erronei o imprevisti.
+>Dopo aver aggiunto contenuto intermedio a un frammento di contenuto nella pagina, la modifica della struttura del frammento di contenuto sottostante (ovvero nell’editor frammento di contenuto) potrebbe causare risultati errati o imprevisti.
 >
 >In questi casi, il contenuto intermedio rimane inalterato:
 >

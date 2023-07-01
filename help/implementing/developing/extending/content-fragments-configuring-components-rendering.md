@@ -2,9 +2,9 @@
 title: Componenti di configurazione dei frammenti di contenuto per il rendering
 description: Componenti di configurazione dei frammenti di contenuto per il rendering
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '524'
 ht-degree: 6%
 
 ---
@@ -93,7 +93,7 @@ La configurazione OSGi è:
  </tbody>
 </table>
 
-Per alcune funzionalità il componente dovrà rispettare convenzioni predefinite. La tabella seguente descrive le proprietà che devono essere definite dal componente per ciascun paragrafo (ad esempio `jcr:paragraph` per ogni istanza di componente) in modo che i servizi possano rilevarli ed elaborarli correttamente.
+Per alcune funzionalità il componente dovrà rispettare convenzioni predefinite. La tabella seguente descrive le proprietà che devono essere definite dal componente per ciascun paragrafo (ovvero `jcr:paragraph` per ogni istanza di componente) in modo che i servizi possano rilevarli ed elaborarli correttamente.
 
 <table>
  <thead>

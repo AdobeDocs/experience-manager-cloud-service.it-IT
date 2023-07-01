@@ -2,10 +2,10 @@
 title: Gestione delle attività
 description: La console Attività consente di creare, organizzare e gestire le attività di marketing dei brand
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2019'
-ht-degree: 48%
+source-wordcount: '2020'
+ht-degree: 47%
 
 ---
 
@@ -29,7 +29,7 @@ Le attività vengono visualizzate con un’etichetta che descrive il tipo di att
 
 * XT - Targeting delle esperienze Adobe Target
 * A/B - Test A/B di Adobe Target
-* Impostazione AEM - Adobe Experience Manager (ossia basato su ContextHub)
+* AEM: targeting Adobe Experience Manager (basato su ContextHub)
 
 ![Tipi di attività](/help/sites-cloud/authoring/assets/activities-types.png)
 
