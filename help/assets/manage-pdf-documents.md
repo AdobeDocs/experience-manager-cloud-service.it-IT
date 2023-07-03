@@ -4,10 +4,10 @@ description: Gestire i documenti PDF in [!DNL Adobe Experience Manager] as a [!D
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 3%
+source-wordcount: '853'
+ht-degree: 4%
 
 ---
 
@@ -22,6 +22,7 @@ Document Cloud PDF Viewer offre i seguenti vantaggi ad AEM Assets:
 
 > Suggerimento
 > Se non riesci a ottenere l’anteprima di più pagine di un documento PDF caricato in precedenza, seleziona il PDF e fai clic su **![Rielabora](/help/assets/assets/Reprocess.svg) Rielabora risorse**.
+>
 
 ## Supporto per i componenti visualizzatore Document Cloud di PDF {#pdf-doc-cloud}
 
@@ -55,6 +56,7 @@ Puoi anche applicare [annotazioni](#pdf-annotations) al documento PDF in un&#39;
 
 > NOTA
 > La dimensione massima di una risorsa che puoi visualizzare in anteprima è di 100 MB.
+>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -110,6 +112,10 @@ Di seguito sono riportate le annotazioni che possono essere applicate a un docum
         </tr>
     </table>
 
+>[!NOTE]
+>
+>Le annotazioni aggiunte al documento PDF sono disponibili in modalità anteprima. Tuttavia, le annotazioni non vengono visualizzate quando si scarica o si stampa il documento PDF.
+
 ## Supporto per l&#39;anteprima di più pagine per documenti in altri formati {#multi-format}
 
 Oltre ai documenti PDF, è possibile visualizzare in anteprima più pagine per i documenti in altri tipi di formato. I tipi di formato di documento supportati sono TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX. Experience Manager Assets converte automaticamente questi formati di documento in un formato PDF e li rende disponibili per l&#39;anteprima.
@@ -127,18 +133,17 @@ Per l&#39;anteprima di più pagine di altri formati di documento supportati, eff
 > * La dimensione massima dei file XLS o XLSX da visualizzare in anteprima è di 20 MB.
 >
 
-
 **Consulta anche**
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

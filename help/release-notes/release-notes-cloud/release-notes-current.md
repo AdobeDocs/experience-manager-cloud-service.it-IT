@@ -3,7 +3,7 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: da5634dfa812268b81b2db783da772b6ecc1d7ce
+source-git-commit: 45004db44af48301f0a9cbd9f574ac34c360275e
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 16%
@@ -56,9 +56,9 @@ Il [nuova vista Risorse](/help/assets/assets-view-introduction.md) è ora dispon
 
 Experience Manager Assets ora ti consente di fare di più dall’interfaccia utente dei risultati della ricerca: ora puoi:
 
-* Per impostazione predefinita, è possibile eseguire una ricerca all&#39;interno del percorso corrente del repository anziché cercare la parola chiave nell&#39;intero repository.
+* [Eseguire ricerche nel percorso del repository corrente](/help/assets/search-assets.md) per impostazione predefinita, anziché cercare la parola chiave nell&#39;intero archivio.
 
-* Passa alla posizione della cartella per le risorse visualizzate nei risultati di ricerca.
+* [Passa alla posizione della cartella](/help/assets/search-assets.md#aftersearch) per le risorse visualizzate nei risultati di ricerca.
 
 **Anteprime miniature per risorse 3D**
 

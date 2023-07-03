@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '5096'
+source-wordcount: '5162'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,7 @@ La ricerca di risorse in AEM supporta i seguenti casi d’uso e questo articolo 
 | [Limitazioni](#limitations) e [Suggerimenti](#tips) | | |
 | [Esempi illustrati](#samples) | | |
 
-Cerca le risorse utilizzando il campo Omnisearch nella parte superiore della sezione [!DNL Experience Manager] interfaccia web. Vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]** in [!DNL Experience Manager], fai clic su ![search_icon](assets/do-not-localize/search_icon.png) nella barra superiore, immetti la parola chiave search e seleziona `Return`. In alternativa, utilizzate la scelta rapida da parola chiave `/` (barra) per aprire il campo Omnisearch. `Location:Assets` è preselezionato per limitare le ricerche alle risorse DAM. [!DNL Experience Manager] fornisce suggerimenti quando si inizia a digitare una parola chiave di ricerca.
+Cerca le risorse utilizzando il campo Omnisearch nella parte superiore della sezione [!DNL Experience Manager] interfaccia web. Vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]** in [!DNL Experience Manager], fai clic su ![search_icon](assets/do-not-localize/search_icon.png) nella barra superiore, immetti la parola chiave search e seleziona `Return`. In alternativa, utilizzate la scelta rapida da parola chiave `/` (barra) per aprire il campo Omnisearch. `Location:Assets` è preselezionato per limitare le ricerche alle risorse DAM. `Path:/content/dam` viene visualizzato anche quando si esegue una ricerca a livello di radice all&#39;interno del **[!UICONTROL File]** cartella. Se passi a un’altra cartella, `Path:/content/dam/<folder name>` viene visualizzato nel campo Omnisearch per limitare l’ambito di ricerca alla cartella corrente. [!DNL Experience Manager] fornisce suggerimenti quando si inizia a digitare una parola chiave di ricerca.
 
 Utilizza il **[!UICONTROL Filtri]** per cercare risorse, cartelle, tag e metadati. Puoi filtrare i risultati della ricerca in base alle varie opzioni (predicati), ad esempio tipo di file, dimensione del file, data dell’ultima modifica, stato della risorsa, dati approfonditi e licenze di Adobe Stock. Puoi personalizzare il pannello Filtri e aggiungere o rimuovere predicati di ricerca utilizzando [facet di ricerca](/help/assets/search-facets.md). Il [!UICONTROL Tipo di file] filtrare in [!UICONTROL Filtri] il pannello dispone di caselle di controllo a stati misti. Pertanto, a meno che non selezioni tutti i predicati nidificati (o formati), le caselle di controllo di primo livello vengono parzialmente selezionate.
 
@@ -415,6 +415,7 @@ Puoi effettuare le seguenti operazioni con le risorse trovate in [!DNL Experienc
 * Avviare un flusso di lavoro
 * Riferisci o rimuovi correlazione tra attività
 * Per limitare i risultati della ricerca, applica i filtri utilizzando il pannello Filtri visualizzato automaticamente dopo aver eseguito la ricerca.
+* Passa alla posizione della risorsa
 
 ### Ordinare i risultati della ricerca {#sort}
 
@@ -466,6 +467,10 @@ Analogamente alla funzionalità di creazione della versione, puoi anche creare u
 ### Correlare e scollegare le risorse {#relate-unrelate-assets}
 
 Collega e rimuovi le risorse visualizzate nei risultati di ricerca. Seleziona le risorse e fai clic su **[!UICONTROL Correlare]** o **[!UICONTROL Scollega]**.
+
+### Passa alla posizione della cartella risorse {#navigate-asset-folder-location}
+
+Passa alla posizione della cartella per le risorse visualizzate nei risultati di ricerca. Seleziona la risorsa e fai clic su **[!UICONTROL Mostra percorso file]**.
 
 ## Risultati e problemi di ricerca imprevisti {#unexpected-results}
 
