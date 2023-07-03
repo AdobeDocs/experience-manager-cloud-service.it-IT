@@ -3,32 +3,32 @@ title: Come si aggiunge un modulo adattivo alla pagina di AEM Sites?
 description: Scopri come creare o aggiungere facilmente un modulo adattivo alla pagina AEM Sites. Scopri tecniche dettagliate e best practice per integrare i moduli nel sito web, ottimizzando le esperienze digitali per il massimo impatto.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bbb01d049083d0aef09bc2365235a7930fb53070
 workflow-type: tm+mt
-source-wordcount: '3245'
-ht-degree: 0%
+source-wordcount: '3264'
+ht-degree: 1%
 
 ---
 
 
-# Creazione di un modulo adattivo in una pagina AEM Sites o in un frammento esperienza AEM {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# Creare un modulo adattivo in una pagina o in un frammento di esperienza di AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=en) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-Con AEM Forms, puoi aggiungere facilmente un modulo adattivo alla pagina AEM Sites. Questo consente ai visitatori di compilare e inviare i moduli in modo comodo, senza mai uscire dalla pagina in cui si trovano. In questo modo, possono rimanere coinvolti senza difficoltà con altri elementi del sito web interagendo attivamente con il modulo.
+Con AEM Forms, puoi aggiungere facilmente un modulo alla pagina di AEM Sites. Questo consente ai visitatori di compilare e inviare i moduli in modo comodo, senza mai uscire dalla pagina in cui si trovano. In questo modo, possono rimanere coinvolti senza difficoltà con altri elementi del sito web interagendo attivamente con il modulo.
 
 È possibile utilizzare l’Editor pagina AEM per creare e aggiungere rapidamente più moduli alle pagine AEM Sites. L’editor di pagine AEM consente agli autori di contenuti di creare esperienze di acquisizione dati fluide all’interno di una pagina Sites, sfruttando la potenza dei componenti per moduli adattivi, tra cui comportamento dinamico, convalide, integrazione dei dati, generazione di documenti di record e automazione dei processi aziendali. Consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito.
 
-AEM Forms fornisce i componenti Contenitore modulo adattivo e Forms adattivo - Incorpora. È possibile utilizzare il Contenitore di moduli adattivi per creare un nuovo modulo in un frammento di esperienza o in una pagina AEM Sites, mentre il componente Incorpora di Forms adattivo consente di aggiungere un modulo adattivo esistente o crearne uno nuovo tramite l’editor di Forms adattivo.
+Il Cloud Service AEM Forms fornisce i componenti Contenitore modulo adattivo e Forms adattivo - Incorpora. È possibile utilizzare il Contenitore di moduli adattivi per creare un nuovo modulo in una pagina o in un frammento di esperienza di AEM Sites, mentre il componente Incorpora di Forms adattivo consente di aggiungere un modulo adattivo esistente o crearne uno nuovo tramite l’editor di Forms adattivo.
 
 ![Esempio di modulo adattivo in una pagina AEM Sites](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-## Perché creare un modulo adattivo in una pagina di AEM Sites o in un frammento di esperienza AEM?
+## Perché utilizzare i componenti core Forms adattivi per creare un modulo adattivo in una pagina o in un frammento di esperienza di AEM Sites?
 
-L’utilizzo di Adaptive Form Container nell’editor di pagine AEM consente di creare esperienze di acquisizione dati fluide all’interno di una pagina Sites, sfruttando la potenza dei componenti di Adaptive Forms, tra cui comportamento dinamico, convalide, integrazione di dati, generazione di documenti di record e automazione dei processi aziendali. Consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito, migliorando l’esperienza complessiva di creazione e gestione dei moduli. Esaminiamo alcune di queste funzioni:
+Se in passato hai creato un componente Forms Foundation adattivo o moduli semplici basati su HTML per i siti, l’Adobe consiglia di utilizzare i componenti core Forms adattivi per creare un modulo adattivo nella pagina o nel frammento di esperienza di AEM Sites. Consente di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito, migliorando l’esperienza complessiva di creazione e gestione dei moduli per Adaptive Forms. Esaminiamo alcune di queste funzioni:
 
 * **Controllo delle versioni:** Offerta pagine AEM Sites [solide funzionalità di controllo delle versioni](/help/sites-cloud/authoring/features/page-versions.md), che consente di tenere traccia e gestire diverse versioni dei moduli. In questo modo è possibile apportare modifiche e miglioramenti ai moduli mantenendo la possibilità di ripristinare le versioni precedenti, se necessario. Il controllo delle versioni garantisce un approccio controllato e organizzato allo sviluppo e all’evoluzione dei moduli.
 * **Targeting (integrazione con Adobe Target):** Con le funzionalità di targeting delle pagine di AEM Sites, puoi anche [personalizzare l’esperienza del modulo per diversi tipi di pubblico](/help/sites-cloud/integrating/integration-adobe-target-ims.md). Sfruttando i segmenti utente e i criteri di targeting, è possibile adattare il contenuto, la progettazione o il comportamento del modulo a specifici gruppi di utenti. Questo ti consente di fornire un’esperienza di modulo personalizzata e rilevante, aumentando i tassi di coinvolgimento e conversione.
@@ -38,7 +38,7 @@ L’utilizzo di Adaptive Form Container nell’editor di pagine AEM consente di 
 * **Assegnazione tag:** Le pagine di AEM Sites consentono di: [assegnare tag o etichette a una pagina, una risorsa o altro contenuto](/help/implementing/developing/introduction/tagging-framework.md). I tag sono parole chiave o etichette di metadati che consentono di categorizzare e organizzare il contenuto in base a criteri specifici. Puoi assegnare uno o più tag a pagine, risorse o qualsiasi altro elemento di contenuto all’interno di AEM per migliorare la ricerca e classificare le risorse.
 * **Blocco e sblocco del contenuto:** AEM Sites consenti agli utenti di [controllare l’accesso e le modifiche alle pagine](/help/sites-cloud/authoring/fundamentals/editing-content.md) nell’ambiente AEM Sites. Quando una pagina viene bloccata, significa che è protetta da modifiche o modifiche non autorizzate da parte di altri utenti. Solo l’utente che ha bloccato il contenuto o un amministratore designato può sbloccarlo per consentire modifiche.
 
-Inoltre, Forms adattivo nell’Editor pagina AEM utilizza [Componenti core Forms adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Questi Componenti core forniscono metodi standard e più semplici per assegnare stili e personalizzare i componenti, identici a [Componenti WCM di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+Inoltre, Forms adattivo nell’Editor pagina AEM utilizza [Componenti core Forms adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Questi Componenti core forniscono metodi standard e più semplici per assegnare stili e personalizzare i componenti, identici a [Componenti WCM di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
 
 
 ## Come si crea o si aggiunge un modulo adattivo nella pagina di AEM Sites o in un frammento di esperienza AEM? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -262,4 +262,9 @@ All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altr
 * [Creare stili o temi per i moduli](using-themes-in-core-components.md)
 * [Aggiungere un comportamento dinamico ai moduli tramite l’editor di regole](rule-editor.md)
 * [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+
+## Articolo correlato {#related-article}
+
+* [Creare un modulo adattivo basato su Componenti core autonomi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
 
