@@ -3,10 +3,10 @@ title: Differenze tra AEM 6.5 Forms e AEM Cloud Services
 description: Sei un utente di Experience Manager Forms e stai cercando di effettuare l’aggiornamento ad Adobe Experience Manager Forms as a Cloud Service? Confronta Forms AEM 6.5 e AEM Cloud Services e scopri le modifiche più importanti prima di eseguire l’aggiornamento o la migrazione al Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 54a1ae1cc030030e44612b502b70c9b567144538
+source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 0%
+source-wordcount: '1405'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di ri
 
 * Gli sviluppatori gestiscono in comune il codice per l’ambiente di sviluppo Cloud Service e locale [archivio Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). Un archivio Git, basato su Archetipo AEM, viene creato automaticamente al momento della creazione di un programma as a Cloud Service AEM.
 
-   ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * Il flusso di sviluppo per Forms as a Cloud Service è allineato con l’archetipo AEM per AEM Cloud Service. Tuttavia, sono necessarie alcune modifiche ai progetti Adobe Experience Manager Maven per renderli compatibili con AEM Cloud Service. Ad alto livello, l&#39;AEM richiede una separazione del contenuto e del codice in subpacchetti distinti per rispettare la ripartizione tra contenuto mutabile e immutabile. Utilizza il [Strumento Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) per ristrutturare i pacchetti di progetto esistenti separando il contenuto e il codice in pacchetti distinti in modo che siano compatibili con la struttura di progetto definita per Adobe Experience Manager as a Cloud Service.
 
@@ -50,7 +50,7 @@ Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di ri
 
 * **Editor regole:** AEM Forms as a Cloud Service offre una [Editor regole](rule-editor.md#visual-rule-editor). L’editor di codice non è disponibile su Forms as a Cloud Service.
 
-   Il [utilità di migrazione](/help/forms/migrate-to-forms-as-a-cloud-service.md) consente di migrare i moduli con regole personalizzate (create nell’editor di codice). L’utility converte tali regole in funzioni personalizzate supportate su Forms as a Cloud Service. È possibile utilizzare le funzioni riutilizzabili con l’editor di regole per continuare a ottenere i risultati ottenuti con gli script di regole. Il `onSubmitError` o `onSubmitSuccess` Le funzioni sono ora disponibili come azioni nell’Editor regole.
+  Il [utilità di migrazione](/help/forms/migrate-to-forms-as-a-cloud-service.md) consente di migrare i moduli con regole personalizzate (create nell’editor di codice). L’utility converte tali regole in funzioni personalizzate supportate su Forms as a Cloud Service. È possibile utilizzare le funzioni riutilizzabili con l’editor di regole per continuare a ottenere i risultati ottenuti con gli script di regole. Il `onSubmitError` o `onSubmitSuccess` Le funzioni sono ora disponibili come azioni nell’Editor regole.
 
 * **Servizio preriempimento:** Per impostazione predefinita, il servizio di precompilazione unisce i dati con un modulo adattivo sul client, invece di unire i dati sul server in Forms con AEM 6.5. Questa funzione consente di migliorare il tempo necessario per la precompilazione di un modulo adattivo. Puoi sempre configurare per eseguire l’azione di unione sul server Adobe Experience Manager Forms.
 
@@ -113,4 +113,13 @@ Forms as a Cloud Service fornisce API RESTful per generazione e manipolazione di
 
 * Puoi utilizzare le API di comunicazione per produrre documenti personalizzati on-demand o in batch su Forms as a Cloud Service. Puoi utilizzare un ambiente Forms AEM 6.5 per comunicazioni interattive e casi d’uso dell’interfaccia utente degli agenti.
 
+## Vedere Successivo
 
+* [Migrazione da un ambiente AEM Forms (on-premise e ambienti AMS) ad AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [Pagina Aggiungi o crea un Forms adattivo ad AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Creare un modulo adattivo (componenti core)](/help/forms/creating-adaptive-form-core-components.md)
+
+## Informazioni aggiuntive
+
+* [Introduzione ad AEM Forms as a Cloud Service](/help/forms/home.md)
+* [Configurare un ambiente di sviluppo locale e un progetto di sviluppo iniziale](/help/forms/setup-local-development-environment.md)

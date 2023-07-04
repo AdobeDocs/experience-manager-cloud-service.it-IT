@@ -1,16 +1,16 @@
 ---
 title: Come migrare da un Forms AEM 6.5 a [!DNL AEM Forms] ambiente as a Cloud Service?
 description: Migra da un [!DNL AEM Forms] (ambienti locali e AMS) per [!DNL AEM Forms] ambiente as a Cloud Service.
-keywords: 6.5 da Forms a Cloud Service, 6.5 da Forms a cs, migrazione da Forms 6.5 a CS, migrazione da Forms 6.5 a Cloud Service, aggiornamento da Forms 6.5 a CS, passaggio da Forms 6.5 a CS, aggiornamento da AEM 6.5 a CS
+keywords: 6.5 Forms a Cloud Service, 6.5 forms a cs, migrazione 6.5 forms a CS, migrazione 6.5 forms a Cloud Service, aggiornamento 6.5 forms a CS, passaggio 6.5 forms a CS, aggiornamento AEM 6.5 a CS, AEM Forms 6.5 a Cloud Service, migrazione AEM form a Cloud Service
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: f6b8ef52ad551be70e665a14ce00c197d1470e84
+source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1590'
 ht-degree: 4%
 
 ---
@@ -120,7 +120,7 @@ Effettua le seguenti operazioni per rendere [!DNL AEM Forms] risorse compatibili
 
    Il Cloud Service non supporta gli script dell&#39;editor di regole. Il **[!UICONTROL Migrazione script editor di codice]** lo strumento converte tutti gli script delle regole nell’ambiente in funzioni riutilizzabili e applica le funzioni riutilizzabili all’editor visivo nella posizione appropriata. Queste funzioni riutilizzabili vengono salvate sotto forma di librerie client e consentono di mantenere intatte le funzionalità esistenti. Lo strumento applica automaticamente le funzioni riutilizzabili generate al Forms adattivo corrispondente.
 
-   Utilizza il [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) per esportare le funzioni riutilizzabili (librerie client) in un pacchetto.
+   Migrazione da AEM al Cloud Service, utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) per esportare le funzioni riutilizzabili (librerie client) in un pacchetto.
 
 1. [Distribuisci](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager) il pacchetto delle funzioni riutilizzabili (librerie client), [codice personalizzato, componenti, configurazioni](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager), le librerie personalizzate specifiche per le impostazioni locali [!DNL AEM] ambiente as a Cloud Service.
 
@@ -152,7 +152,7 @@ Puoi aggiungere i percorsi cartella di livello superiore elencati di seguito o s
 * `/content/forms/af`
 * `/etc/clientlibs/fd/theme`
 
-Per migrare i modelli di flussi di lavoro AEM, specifica i percorsi seguenti:
+Quando esegui la migrazione dei modelli di flussi di lavoro AEM da AEM Forms 6.5 a Cloud Service, specifica i percorsi seguenti:
 
 * `/conf/global/settings/workflow/models/`
 * `/conf/global/settings/workflow/launcher`
@@ -164,7 +164,7 @@ Per migrare i modelli di flussi di lavoro AEM, specifica i percorsi seguenti:
 * [Integrazione con AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html)
 * [Creare il primo modulo adattivo sul Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=it)
 
-## Ulteriori informazioni
+## Informazioni aggiuntive
 
 L’utility di migrazione consente di migrare Forms adattivo in base ai componenti di base. Inoltre, Forms as a Cloud Service supporta i componenti core Adaptive Forms. In questo modo è possibile:
 
