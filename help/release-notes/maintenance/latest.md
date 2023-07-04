@@ -2,9 +2,9 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
+source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '607'
 ht-degree: 20%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 20%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 12441 {#release-12441}
+## Versione 12549 {#release-12549}
 
-Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 12441, rilasciata pubblicamente il 27 giugno 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 12255.
+Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 12549, rilasciata pubblicamente il 4 luglio 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 12255. La versione di manutenzione 12549 sostituisce 12441 per risolvere due problemi.
 
 2023.7.0 Feature Activation fornirà il set completo di funzioni per questa versione di manutenzione. Consulta la [Roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it) per ulteriori informazioni.
 
-### Miglioramenti {#enhancements-12441}
+### Miglioramenti {#enhancements-12549}
 
 - SITES-8769: Migliorare le chiamate StyleImpl in ResponsiveGrid
 - FORMS-5054: è stato aggiunto il supporto per tutte le [statue](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) supportati da Adobe Sign.
 
-### Problemi risolti {#fixed-issues-12441}
+### Problemi risolti {#fixed-issues-12549}
 
 - Vari aggiornamenti relativi all’accessibilità
 - SITES-12688: Editor pagina: operatore logico OR che non funziona correttamente nella ricerca di Asset Finder
@@ -53,11 +53,11 @@ Di seguito sono riepilogati i continui miglioramenti per la versione di manutenz
 - FORMS-9072: quando esegui una ricerca in uno schema durante la creazione di un frammento di modulo, il risultato della ricerca non restituisce alcuno schema per la selezione.
 - FORMS: sono stati corretti diversi bug relativi all’accessibilità per migliorare l’accessibilità delle funzioni di AEM Forms.
 
-### Problemi noti {#known-issues-12441}
+### Problemi noti {#known-issues-12549}
 
 Nessuno.
 
-### Tecnologie incorporate {#embedded-tech-12441}
+### Tecnologie incorporate {#embedded-tech-12549}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
