@@ -2,10 +2,10 @@
 title: Struttura dei frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Utilizza la funzione Struttura dell’Editor frammenti di contenuto in AEM per comprendere meglio i contenuti headless.
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 93%
+source-wordcount: '119'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ Utilizza la funzione Struttura dell’Editor frammenti di contenuto in AEM per c
 
 Nell’Editor frammenti di contenuto è possibile selezionare l’icona Struttura:
 
-![Struttura del frammento di contenuto](assets/cfm-structuretree-01.png)
+![Struttura dei frammenti di contenuto nel pannello laterale](assets/cfm-structuretree-01.png)
 
 Verrà visualizzata una rappresentazione della struttura del frammento nel riquadro a sinistra. Questa consente di navigare tra i frammenti a cui si fa riferimento. Quando si seleziona un riferimento, il frammento viene aperto per la modifica.
 
@@ -23,4 +23,4 @@ Verrà visualizzata una rappresentazione della struttura del frammento nel riqua
 >
 >Utilizzando le breadcrumb nel pannello principale, puoi tornare al punto iniziale.
 
-![Struttura di un frammento di contenuto](assets/cfm-structuretree-02.png)
+![Esempio di struttura ad albero dei frammenti di contenuto](assets/cfm-structuretree-02.png)

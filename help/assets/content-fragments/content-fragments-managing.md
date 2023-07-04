@@ -2,10 +2,10 @@
 title: Gestione dei frammenti di contenuto (risorse - frammenti di contenuto)
 description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 71%
+source-wordcount: '1770'
+ht-degree: 70%
 
 ---
 
@@ -56,7 +56,7 @@ Il metodo per creare un frammento di contenuto è:
 
    Dopo la selezione, utilizza **Successivo** per procedere.
 
-   ![base frammento](assets/cfm-managing-01.png)
+   ![Seleziona modello di Frammento di contenuto](assets/cfm-managing-01.png)
 
 1. Nel passaggio **Proprietà** specifica:
 
@@ -92,7 +92,7 @@ In **Risorse** console è disponibile una serie di azioni per i frammenti di con
 * Dalla barra degli strumenti; dopo aver selezionato il frammento, sono disponibili tutte le azioni appropriate.
 * As [azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); un sottoinsieme di azioni disponibile per le singole schede dei frammenti.
 
-![azioni](assets/cfm-managing-02.png)
+![Azioni nella barra degli strumenti](assets/cfm-managing-02.png)
 
 Seleziona il frammento per visualizzare la barra degli strumenti con le azioni applicabili:
 
@@ -139,7 +139,7 @@ Per aprire la pagina per la modifica:
 
 1. Viene aperto l’editor frammenti. Apporta le modifiche necessarie:
 
-   ![editor frammenti](assets/cfm-managing-03.png)
+   ![Editor frammento](assets/cfm-managing-03.png)
 
 1. Dopo aver apportato le modifiche, utilizza **Salva**, **Salva e chiudi** o **Chiudi** secondo la necessità.
 
@@ -167,13 +167,13 @@ Naviga tra le varie modalità utilizzando le icone nel pannello laterale:
 * [Albero struttura](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Anteprima](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![modalità](assets/cfm-managing-04.png)
+![Modalità nell’editor frammento di contenuto](assets/cfm-managing-04.png)
 
 ### Azioni barra degli strumenti nell’Editor frammento di contenuto {#toolbar-actions-in-the-content-fragment-editor}
 
 Alcune funzioni nella barra degli strumenti superiore sono disponibili in diverse modalità:
 
-![modalità](assets/cfm-managing-top-toolbar.png)
+![Azioni della barra degli strumenti disponibili in varie modalità](assets/cfm-managing-top-toolbar.png)
 
 * Viene visualizzato un messaggio quando in una pagina di contenuto è già presente un riferimento al frammento. È possibile **chiudere** il messaggio.
 
@@ -303,7 +303,7 @@ Le annotazioni (per i frammenti di contenuto) sono:
 
 Esempio:
 
-![timeline](assets/cfm-managing-05.png)
+![Timeline ](assets/cfm-managing-05.png)
 
 ## Confronto delle versioni dei frammenti {#comparing-fragment-versions}
 
@@ -331,7 +331,7 @@ Vengono visualizzati affiancati, dove:
 >
 Non è possibile modificare il contenuto del frammento nella modalità di confronto.
 
-![confronto](assets/cfm-managing-06.png)
+![Confronto delle varianti](assets/cfm-managing-06.png)
 
 ## Ripristino di una versione  {#reverting-to-a-version}
 
