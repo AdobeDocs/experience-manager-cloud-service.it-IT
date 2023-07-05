@@ -2,9 +2,9 @@
 title: Come si scarica e si installa Forms Designer per creare modelli per documenti di record?
 description: È possibile utilizzare Forms Designer per creare modelli di moduli XDP e PDF che fungono da modello per un documento di record. Designer è disponibile con [!DNL AEM Forms] licenza.
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e71dd8a4eb92acbed53fb9384bc40efc3e743761
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '262'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,7 @@ Per installare e configurare Designer sono necessari il software e l&#39;hardwar
 * Accelerazione hardware video (opzionale)
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC.
 * Privilegi amministrativi per installare Designer.
+* Microsoft Visual C++ 2019 (VC 14.28 o versione successiva), runtime a 32 bit
 
 ## Installa Designer {#install-designer}
 
