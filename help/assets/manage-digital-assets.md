@@ -535,7 +535,7 @@ Per stampare le annotazioni e controllare lo stato, tocca o fai clic sul pulsant
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. Nella finestra di dialogo Stampa, scegliere la posizione in cui si desidera visualizzare lo stato di annotazioni/revisioni sul PDF. Ad esempio, se desideri stampare le annotazioni/stato in alto a destra della pagina che contiene l’immagine stampata, utilizza **In alto a sinistra** impostazione. È selezionata per impostazione predefinita.
+1. Nella finestra di dialogo Stampa, scegliere la posizione in cui si desidera visualizzare lo stato di annotazioni/revisioni sul PDF. Ad esempio, se desideri stampare le annotazioni/lo stato in alto a destra della pagina che contiene l’immagine stampata, utilizza **In alto a sinistra** impostazione. È selezionata per impostazione predefinita.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 

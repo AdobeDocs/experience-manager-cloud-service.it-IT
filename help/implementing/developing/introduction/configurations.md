@@ -179,7 +179,7 @@ Per supportare questa funzione, la ricerca della configurazione in AEM ha un mec
    * Modificabile in fase di runtime da utenti con privilegi di configurazione
 1. `/conf/global`
    * Impostazioni globali del sistema
-   * In genere, impostazioni globali predefinite per l&#39;installazione
+   * Di solito impostazioni globali per l&#39;installazione
    * Impostato da un `admin` ruolo
    * Modificabile in fase di runtime da utenti con privilegi di configurazione
 1. `/apps`

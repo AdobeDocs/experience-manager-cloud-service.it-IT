@@ -37,7 +37,7 @@ Il **Cerca in Forms** fornisci una selezione preconfigurata di [predicati](#pred
 
 ## Forms predefinito {#default-forms}
 
-La prima volta che accedi a **Cerca in Forms** console è possibile vedere che tutte le configurazioni hanno un simbolo lucchetto. Ciò indica che la configurazione corrispondente è quella predefinita (predefinita) e non può essere eliminata. Dopo aver personalizzato e salvato una configurazione, il blocco scompare. Riapparirà quando [elimina la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default), nel qual caso viene ripristinato il valore predefinito (e l’indicatore del lucchetto).
+La prima volta che accedi a **Cerca in Forms** console è possibile vedere che tutte le configurazioni hanno un simbolo lucchetto. Ciò indica che la configurazione corrispondente è quella predefinita (predefinita) e non può essere eliminata. Una volta personalizzato e salvato, il blocco scompare. Riapparirà quando [elimina la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default), nel qual caso viene ripristinato il valore predefinito (e l’indicatore del lucchetto).
 
 ![panoramica sulla configurazione dei moduli di ricerca](assets/csf-overview.png)
 
