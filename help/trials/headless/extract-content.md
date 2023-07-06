@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1116'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 92%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="Ottimo lavoro Hai imparato i due tipi di query di base e come eseguire query sul tuo contenuto. Ora scopri come utilizzare l’API GraphQL AEM per creare query efficienti che distribuiscono contenuti in un formato previsto dall’app."
+>title="Ottimo lavoro Hai scoperto i due tipi di query di base e come eseguire query sui tuoi contenuti. Ora scopri come utilizzare l’API GraphQL AEM per creare query efficienti che distribuiscono contenuti in un formato previsto dall’app."
 >abstract=""
 
 ## Query per un elenco di contenuti di esempio {#list-query}

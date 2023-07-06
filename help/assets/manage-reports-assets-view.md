@@ -5,7 +5,7 @@ exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 71%
+ht-degree: 75%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 71%
 >[!CONTEXTUALHELP]
 >id="assets_reports"
 >title="Rapporti"
->abstract="Il reporting delle risorse fornisce agli amministratori visibilità sulle attività dell’ambiente di visualizzazione delle risorse di Adobe Experience Manager. Questi dati forniscono informazioni utili su come gli utenti interagiscono con i contenuti e il prodotto. Tutti gli utenti ai quali viene assegnato il profilo di prodotto per amministratori possono accedere alla dashboard Insight e creare rapporti definiti dagli utenti."
+>abstract="La funzionalità di reporting sulle risorse offre agli amministratori visibilità sulle attività dell’ambiente delle viste di Adobe Experience Manager Assets. Questi dati forniscono informazioni utili su come gli utenti interagiscono con i contenuti e il prodotto. Tutti gli utenti ai quali viene assegnato il profilo di prodotto per amministratori possono accedere alla dashboard Insight e creare rapporti definiti dagli utenti."
 
-Il reporting delle risorse fornisce agli amministratori visibilità sulle attività dell’ambiente di visualizzazione delle risorse di Adobe Experience Manager. Questi dati forniscono informazioni utili su come gli utenti interagiscono con i contenuti e il prodotto.
+La funzionalità di reporting sulle risorse offre agli amministratori visibilità sulle attività dell’ambiente delle viste di Adobe Experience Manager Assets. Questi dati forniscono informazioni utili su come gli utenti interagiscono con i contenuti e il prodotto.
 
 ## Accedere ai rapporti {#access-reports}
 
