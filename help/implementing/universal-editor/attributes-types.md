@@ -2,9 +2,9 @@
 title: Attributi e tipi
 description: Scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '663'
 ht-degree: 82%
 
 ---
@@ -41,7 +41,7 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 | `richtext` | Il testo è modificabile utilizzando tutte le funzioni RTF. L’editor Rich Text viene visualizzato nel pannello di destra | Facoltativo | Obbligatorio | n/d | Facoltativo | n/d | Facoltativo |
 | `media` | L’elemento modificabile è una risorsa, ad esempio immagine o video | Facoltativo | Obbligatorio | Facoltativo<br>elenco di criteri di filtro per immagini o video trasmessi al selettore risorse | Facoltativo | n/d | Facoltativo |
 | `container` | L’elemento modificabile si comporta come contenitore per i componenti, cioè come Sistema paragrafo. | Dipende <br>vedi sotto | Dipende <br>vedi sotto | Facoltativo<br>un elenco di componenti consentiti | Facoltativo | n/d | n/d |
-| `component` | L’elemento modificabile è un componente. Non aggiunge funzionalità aggiuntive, è richiesto per indicare parti mobili/eliminabili del DOM e per aprire la barra delle proprietà e i relativi campi | Obbligatorio | n/d | n/d | Facoltativo | Facoltativo | n/d |
+| `component` | L’elemento modificabile è un componente. Non aggiunge funzionalità aggiuntive. È necessario indicare le parti mobili/eliminabili del DOM e per aprire la barra delle proprietà e i relativi campi | Obbligatorio | n/d | n/d | Facoltativo | Facoltativo | n/d |
 | `reference` | L’elemento modificabile è un riferimento, ad esempio frammento di contenuto, frammento di esperienza o prodotto. | Dipende <br>vedi sotto | Dipende <br>vedi sotto | Facoltativo<br>elenco di criteri di filtro per frammento di contenuto, prodotto o frammento di esperienza trasmessi al selettore di riferimento | Facoltativo | Facoltativo | n/d |
 
 A seconda del caso d’uso `itemprop` o `itemid` può essere richiesto o meno. Ad esempio:

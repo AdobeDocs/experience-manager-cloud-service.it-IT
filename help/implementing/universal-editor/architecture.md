@@ -2,12 +2,13 @@
 title: Architettura dell’editor universale
 description: Scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 79%
+source-wordcount: '652'
+ht-degree: 78%
 
 ---
+
 
 # Architettura dell’editor universale {#architecture}
 
@@ -28,7 +29,7 @@ Questo documento delinea ciascuno di questi blocchi predefiniti e la loro modali
 
 >[!TIP]
 >
->Per vedere Universal Editor e la relativa architettura in azione, consulta [Guida introduttiva all’Editor universale in AEM](getting-started.md) per scoprire come accedere a Universal Editor e come iniziare a dotare la tua prima app AEM di strumenti per utilizzarla.
+>Per vedere Universal Editor e la relativa architettura in azione, consulta il documento [Guida introduttiva all’Editor universale in AEM](getting-started.md) per scoprire come accedere a Universal Editor e come iniziare a dotare la tua prima app AEM di strumenti per utilizzarla.
 
 ### Editor {#editors}
 

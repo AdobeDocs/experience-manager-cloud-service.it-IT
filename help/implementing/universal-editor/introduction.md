@@ -2,12 +2,13 @@
 title: Introduzione all’Editor visivo universale
 description: Scopri in che modo l’Editor visivo universale (meglio conosciuto come Editor universale) consente la modifica WYSIWYG (What you see is what you get) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 88%
 
 ---
+
 
 # Introduzione all’Editor visivo universale {#introduction}
 
@@ -29,7 +30,7 @@ L’Editor universale può essere utilizzato per qualsiasi implementazione, per 
 
 Poiché le esperienze possono essere create in molti modi diversi, qualsiasi implementazione può utilizzare l’Editor universale in modo che gli autori possano eseguire modifiche nel contesto.
 
-Gli utenti spesso pensano che un’implementazione headless limiti gli autori alla modifica di tutti i contenuti in un’interfaccia utente basata su moduli, ma questo non è vero con l’editor universale
+Gli utenti spesso pensano che un’implementazione headless limiti gli autori alla modifica di tutti i contenuti in un’interfaccia utente basata su moduli, ma questo non è il caso con l’editor universale
 
 I requisiti per l’utilizzo dell’Editor universale da parte di un’implementazione sono chiari e supportano quanto segue:
 

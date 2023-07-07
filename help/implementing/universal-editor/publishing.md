@@ -2,12 +2,13 @@
 title: Pubblicazione di contenuti con l’editor visivo universale
 description: Scopri in che modo l’editor visivo universale pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 78%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
+
 
 # Pubblicazione di contenuti con l’editor visivo universale {#publishing}
 
@@ -31,6 +32,6 @@ Un’altra opzione consiste nell’implementare l’app in due ambienti diversi 
 
 ## Riepilogo {#summary}
 
-L’obiettivo del redattore universale è di non imporre alcun modello particolare, in modo che l’implementazione possa raggiungere al meglio i suoi obiettivi in modo completamente disaccoppiato, mantenendo comunque tutto semplice e diretto per l’implementazione.
+L’obiettivo dell’editor universale è di non imporre alcun modello particolare, in modo che l’implementazione possa raggiungere al meglio i suoi obiettivi in una modalità completamente separata, assicurando al tempo stesso che tutto risulti semplice e chiaro per l’implementazione.
 
 Allo stesso modo, l’editor universale non detta i requisiti su come un particolare progetto debba determinare da quale livello distribuire il contenuto. Al contrario, offre una serie di possibilità e permette al progetto di determinare quale soluzione sia la più adatta alle proprie esigenze.
