@@ -1,15 +1,15 @@
 ---
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8d8e5ba548c13d3d908a549f52a8b91946b35361
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 90%
+source-wordcount: '513'
+ht-degree: 55%
 
 ---
 # Contributi alla documentazione di Adobe Experience Manager Cloud Service
 
-Grazie per aver scelto di contribuire alla documentazione di Adobe Experience Manager Cloud Service. Accogliamo con favore i contributi offerti dalla nostra comunità di lettori e dai colleghi che collaborano con Adobe.
+Grazie per aver scelto di contribuire alla documentazione di Adobe Experience Manager Cloud Service. Il team della documentazione accoglie con favore i contributi ai contenuti da parte dell’intera comunità dei lettori e di colleghi Adobi.
 
-Questo file descrive le modalità con cui è possibile apportare il proprio contributo e specifica le linee guida da seguire.
+Questo file descrive come contribuire e indica le linee guida da seguire per apportare i contributi.
 
 ## Codice di condotta per open source Adobe
 
@@ -17,11 +17,11 @@ Questo progetto ha adottato il [Codice di condotta per open source Adobe](code-o
 
 ## Linee guida per contribuire
 
-Pur accogliendo con favore qualsiasi contributo volto a migliorare la documentazione AEM, richiediamo che i partecipanti rispettino, ove possibile, determinati standard e linee guida. Rivedi [Linee guida per contribuire alla documentazione dell’AEM](guidelines.md) per ulteriori informazioni.
+Se da un lato sono benvenuti tutti i contributi per migliorare la documentazione dell’AEM, assicurati che i contributi aderiscano, ove possibile, a determinati standard e linee guida. Rivedi [Linee guida per contribuire alla documentazione dell’AEM](guidelines.md) per ulteriori informazioni.
 
 ## Come contribuire
 
-La procedura per apportare il proprio contributo è molto semplice. È possibile contribuire in due modi:
+Puoi contribuire facilmente in due modi:
 
 * [Segnalare un problema](#create-an-issue)
 * [Creare una richiesta pull](#create-a-pull-request)
@@ -34,13 +34,13 @@ Il metodo scelto dipende dal grado di familiarità con le procedure di modifica 
 
 ### Segnalare un problema {#create-an-issue}
 
-Desideri proporre un suggerimento o un’osservazione sulla documentazione corrente o segnalare un potenziale errore nella descrizione di una funzione? In questo caso puoi segnalare un problema. I problemi sono eccellenti anche se hai qualcosa da contribuire, ma non ti senti a tuo agio a modificare la documentazione o a fare una richiesta.
+Desideri proporre un suggerimento o un’osservazione sulla documentazione corrente o segnalare un potenziale errore nella descrizione di una funzione? In tal caso, crea un problema. I problemi sono eccellenti anche se hai qualcosa da contribuire, ma non ti senti a tuo agio a modificare la documentazione o a fare una richiesta.
 
-La segnalazione di un problema consente di descrivere facilmente la tua proposta per migliorare la documentazione, che verrà esaminata da un membro del team addetto alla documentazione dei AEM. A tale scopo, fai clic sul collegamento **Log an issue** (Registra un problema) in alto nel riquadro di navigazione a destra di qualsiasi pagina.
+La segnalazione di un problema consente di descrivere facilmente la tua proposta per migliorare la documentazione, che verrà esaminata da un membro del team addetto alla documentazione dei AEM. Fai clic su **[!UICONTROL Segnala un problema]** nella parte superiore del pannello di navigazione a destra di qualsiasi pagina per creare un problema.
 
 ### Creare una richiesta pull {#create-a-pull-request}
 
-Se noti un problema e sai esattamente come correggerlo, puoi creare una richiesta. Le richieste consentono di apportare alla documentazione le modifiche desiderate che, prima di essere pubblicate, saranno esaminate da un membro del team addetto alla documentazione di AEM. A tale scopo, fai clic sul collegamento **Edit this page** (Modifica questa pagina) in alto nel riquadro di navigazione a destra di qualsiasi pagina.
+Se noti un problema e sai esattamente come correggerlo, puoi creare una richiesta. Le richieste consentono di apportare alla documentazione le modifiche desiderate che, prima di essere pubblicate, saranno esaminate da un membro del team addetto alla documentazione di AEM. Fai clic su **[!UICONTROL Modifica questa pagina]** collega nella parte superiore del pannello di navigazione a destra di qualsiasi pagina per apportare le modifiche suggerite e creare la richiesta di pull.
 
 Tutte le richieste devono essere accompagnate da un [contratto di licenza per i collaboratori (CLA) firmato.](https://opensource.adobe.com/cla.html) In questo modo si concede ad Adobe il permesso di ridistribuire i contributi come parte del progetto. È sufficiente inviare un CLA di Adobe una sola volta; se lo hai già inviato in passato, non è necessario ripetere questa operazione.
 
@@ -52,9 +52,9 @@ Nel video seguente viene brevemente illustrato come segnalare un problema e crea
 
 ### Contributi da dipendenti Adobe
 
-I dipendenti di Adobe che desiderano fornire un contributo possono utilizzare l’organizzazione `AdobeDocs` nell’archivio git aziendale.
+Se sei un dipendente Adobe e vuoi fornire un contributo, utilizza `AdobeDocs` organizzazione nell’archivio Git aziendale.
 
-Anche se saremo lieti di accogliere ed esaminare qualsiasi contributo presentato tramite l’archivio pubblico, le richieste da parte dei dipendenti Adobe sono più facili da elaborare e possono essere approvate più velocemente nell’archivio aziendale. Assicurati che eventuali informazioni proprietarie vengano discusse solo sull’archivio aziendale.
+Il team di documentazione è soddisfatto di qualsiasi contributo e, se inserito nell’archivio pubblico, lo esaminerà. Tuttavia, le richieste pull dei dipendenti Adobe sono più facili da elaborare e possono essere approvate più rapidamente nell’archivio aziendale. Assicurati che eventuali informazioni proprietarie vengano discusse solo sull’archivio aziendale.
 
 ## Ulteriori informazioni
 
