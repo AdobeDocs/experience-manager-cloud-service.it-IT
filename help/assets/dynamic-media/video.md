@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
+source-git-commit: e0bee5134bea71010cacf4bf16eac0baa3dee725
 workflow-type: tm+mt
-source-wordcount: '5868'
+source-wordcount: '6251'
 ht-degree: 2%
 
 ---
@@ -27,27 +27,26 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 >* Consulta [Configurare Cloud Services Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media e [Risoluzione dei problemi di Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 >
 
-
 1. **Carica i video Dynamic Media** effettuando le seguenti operazioni:
 
    * Crea un tuo profilo di codifica video. Oppure, puoi semplicemente utilizzare il predefinito _Codifica video adattiva_ profilo fornito con Dynamic Media.
 
       * [Creare un profilo di codifica video](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Ulteriori informazioni su [Best practice per la codifica video](#best-practices-for-encoding-videos).
+
    * Associa il profilo di elaborazione video a una o più cartelle in cui stai per caricare i video sorgente principali.
 
       * [Applicare un profilo video alle cartelle](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * Ulteriori informazioni su [Organizzare le risorse digitali](/help/assets/organize-assets.md).
+
    * Carica i video sorgente principali nelle cartelle. Quando aggiungi video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
 
       * Dynamic Media supporta principalmente video in formato breve con una durata massima di 30 minuti e una risoluzione minima superiore a 25 x 25.
       * Puoi caricare file video con una capacità massima di 15 GB ciascuno.
       * [Carica i video](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Ulteriori informazioni su [Formati di file di input supportati](/help/assets/file-format-support.md).
+
    * Monitorare come [codifica video in corso](#monitoring-video-encoding-and-youtube-publishing-progress) dalla vista delle risorse o del flusso di lavoro.
-
-
-
 
 1. **Gestire i video Dynamic Media** effettuando una delle seguenti operazioni:
 
@@ -55,21 +54,24 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
       * [Organizzare le risorse digitali](/help/assets/organize-assets.md)
       * [Cercare risorse video](/help/assets/search-assets.md#custompredicates) o [Ricerca risorse](/help/assets/manage-digital-assets.md#search-assets)
+
    * Visualizzare in anteprima e pubblicare le risorse video
 
       * Visualizza il video sorgente e le relative rappresentazioni codificate, insieme alle miniature associate:
-         [Anteprima video](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) o [Visualizzare in anteprima le risorse](/help/assets/dynamic-media/previewing-assets.md)
-         [Gestire le rappresentazioni video](/help/assets/manage-digital-assets.md#managing-renditions)
+        [Anteprima video](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) o [Visualizzare in anteprima le risorse](/help/assets/dynamic-media/previewing-assets.md)
+        [Gestire le rappresentazioni video](/help/assets/manage-digital-assets.md#managing-renditions)
 
       * [Gestire i predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md)
       * [Pubblicazione delle risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+
    * Utilizzare i metadati video
 
       * Modifica le proprietà del video come il titolo, la descrizione, i tag e i campi di metadati personalizzati:
-         [Modifica delle proprietà video](/help/assets/manage-digital-assets.md#editing-properties)
+        [Modifica delle proprietà video](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Gestione dei metadati per le risorse digitali](/help/assets/manage-metadata.md)
-      * [Schemi di metadati](/help/assets/metadata-schemas.md)
+      * [Schemi metadati](/help/assets/metadata-schemas.md)
+
    * Rivedi, approva e commenta video e mantieni il controllo completo della versione
 
       * [Aggiunta di annotazioni ai video](/help/assets/manage-video-assets.md#annotate-video-assets) o [Aggiunta di annotazioni alle risorse](/help/assets/manage-digital-assets.md#annotating)
@@ -80,26 +82,23 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
       * [Esaminare le risorse della cartella](/help/assets/bulk-approval.md)
       * [Progetti](/help/sites-cloud/authoring/projects/overview.md)
 
-
-
-
 1. **Pubblicare i video Dynamic Media** effettuando una delle seguenti operazioni:
 
    * Se utilizzi Experience Manager come sistema WCM (Web Content Management), puoi aggiungere video direttamente alle pagine web.
 
       * [Aggiungere video alle pagine web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+
    * Se utilizzi un sistema di gestione dei contenuti web di terze parti, puoi collegare o incorporare video nelle pagine web.
 
       * Integra video tramite URL:
-         [Collegamento degli URL all’applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+        [Collegamento degli URL all’applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integra il video utilizzando il codice di incorporamento nella pagina web:
-         [Incorporare il visualizzatore video in una pagina web](/help/assets/dynamic-media/embed-code.md).
+        [Incorporare il visualizzatore video in una pagina web](/help/assets/dynamic-media/embed-code.md).
+
    * [Generare rapporti video](#viewing-video-reports).
 
    * [Aggiungi didascalie al video](#adding-captions-to-video).
-
-
 
 ## Utilizzare i video in Dynamic Media {#working-with-video-in-dynamic-media}
 
@@ -600,15 +599,15 @@ Consulta [Distribuzione di contenuti statici (non di immagine)](https://experien
 
    * Per visualizzare un video a comparsa, seleziona **[!UICONTROL URL]**. Nella finestra di dialogo URL, seleziona e copia l’URL negli Appunti, quindi trascina l’URL in un semplice editor di testo. Aggiungi all’URL copiato del video la seguente sintassi:
 
-      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
+     `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      Osserva `,1` alla fine del percorso della didascalia. Subito dopo l’estensione del nome file VTT nel percorso, puoi facoltativamente abilitare (attivare) o disabilitare (disattivare) il pulsante dei sottotitoli codificati sulla barra del lettore video impostando su `,1` o `,0`, rispettivamente.
+     Osserva `,1` alla fine del percorso della didascalia. Subito dopo l’estensione del nome file VTT nel percorso, puoi facoltativamente abilitare (attivare) o disabilitare (disattivare) il pulsante dei sottotitoli codificati sulla barra del lettore video impostando su `,1` o `,0`, rispettivamente.
 
    * Per un’esperienza di visualizzazione video incorporata, seleziona **[!UICONTROL Codice di incorporamento]**. Nella finestra di dialogo Incorpora codice, seleziona e copia il codice da incorporare negli Appunti, quindi incolla il codice in un semplice editor di testo. Aggiungi il codice da incorporare copiato con la seguente sintassi:
 
-      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
+     `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      Osserva `,1` alla fine del percorso della didascalia. Subito dopo l’estensione del nome file VTT nel percorso, puoi facoltativamente abilitare (attivare) o disabilitare (disattivare) il pulsante dei sottotitoli codificati sulla barra del lettore video impostando su `,1` o `,0`, rispettivamente.
+     Osserva `,1` alla fine del percorso della didascalia. Subito dopo l’estensione del nome file VTT nel percorso, puoi facoltativamente abilitare (attivare) o disabilitare (disattivare) il pulsante dei sottotitoli codificati sulla barra del lettore video impostando su `,1` o `,0`, rispettivamente.
 
 ## Aggiungere marcatori capitolo al video {#adding-chapter-markers-to-video}
 
@@ -688,51 +687,49 @@ Consulta [WebVTT: formato per tracce di testo video Web](https://w3c.github.io/w
      </tbody>
    </table>
 
-<!--
 
-## About video thumbnails {#about-video-thumbnails}
 
-A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to select the video.
+## Informazioni sulle miniature video {#about-video-thumbnails}
 
-All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
+Una miniatura video è una versione di dimensioni ridotte di un fotogramma video o di una risorsa immagine che rappresenta il video per il cliente. La miniatura dovrebbe servire a incoraggiare un cliente a selezionare il video.
 
-Note that a custom video thumbnail image that you select from a video is not extracted and saved in the DAM as a separate and distinct asset. However, a custom video thumbnail that you select from an existing image asset is saved to the JCR. The path of the selected asset gets stored under the video asset's node as in the following example path:
+A tutti i video dell&#39;Experience Manager deve essere associata una miniatura; non è possibile eliminare una miniatura senza sostituirla. Per impostazione predefinita, quando caricate un video in Experience Manager, il primo fotogramma viene utilizzato come miniatura. Tuttavia, puoi personalizzare la miniatura a scopo di branding o di ricerca visiva, ad esempio. Quando personalizzi una miniatura video, puoi riprodurre il video e metterlo in pausa sul fotogramma che desideri utilizzare, oppure selezionare una risorsa immagine che hai già caricato e *pubblicato* nel gestore delle risorse digitali.
 
-`/content/dam/*<folder_name*>/<*video_name*>/jcr:content/manualThumbnail`
+Una volta modificata la miniatura per un video, la generazione della miniatura tramite il servizio di Asset compute durante la rielaborazione del video viene saltata.
 
-The ability to customize a video thumbnail is only available after you have applied a video profile to the folder where the video is located.
+La possibilità di personalizzare una miniatura video è disponibile solo dopo aver applicato un profilo video alla cartella in cui si trova il video.
 
-### Adding a custom video thumbnail {#adding-a-custom-video-thumbnail}
+### Aggiunta di una miniatura video personalizzata {#adding-a-custom-video-thumbnail}
 
-1. Be sure you have already done the following:
+1. Accertati di aver già eseguito le seguenti operazioni:
 
-    * Created a folder for your video assets.
-    * [Applied a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+   * È stata creata una cartella per le risorse video.
+   * [Ha applicato un profilo video alla cartella](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-    * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+   * [Ha caricato i tuoi video nella cartella](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
-1. Navigate to an uploaded video asset whose thumbnail image you want to change.
-1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
-1. On the toolbar, select the **[!UICONTROL Properties** icon (a circle with an "i" in it).
-1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, do one of the following:
+1. Passa a una risorsa video caricata di cui desideri modificare l’immagine in miniatura.
+1. Nella modalità di selezione delle risorse da **[!UICONTROL Vista a elenco]** o **[!UICONTROL Vista a schede]**, seleziona la risorsa video.
+1. Sulla barra degli strumenti, seleziona **[!UICONTROL Proprietà]** (un cerchio contenente una &quot;i&quot;).
+1. Nella pagina Proprietà del video, seleziona **[!UICONTROL Cambia miniatura]**.
+1. Nella pagina Modifica miniatura eseguire una delle operazioni seguenti:
 
-    * To use a frame from the video as the new thumbnail:
+   * Per utilizzare un fotogramma del video come nuova miniatura:
 
-        * On the toolbar, select **[!UICONTROL Select Frame from video]**.
-        * Select the Play button, then select the Pause button on the frame you want to capture as the video's new thumbnail.
+      * Sulla barra degli strumenti, seleziona **[!UICONTROL Seleziona fotogramma da video]**.
+      * Selezionare il pulsante Riproduci, quindi selezionare il pulsante Pausa sul fotogramma che si desidera catturare come nuova miniatura del video.
 
-    * To use an image asset as the new thumbnail:
+   * Per utilizzare una risorsa immagine come nuova miniatura:
 
-        * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
-        * Select **[!UICONTROL Select Thumbnail]**.
-        * Navigate to a previously uploaded and published image asset you want to use. Note that the asset will automatically be resized to serve as a thumbnail image for the video.
-        * Select the image asset, then select **[!UICONTROL Select]**.
+      * Sulla barra degli strumenti, seleziona **[!UICONTROL Seleziona miniatura da risorse]**.
+      * Seleziona **[!UICONTROL Seleziona miniatura]**.
+      * Passa a una risorsa immagine caricata e pubblicata in precedenza che desideri utilizzare. Nota che la risorsa verrà automaticamente ridimensionata per fungere da immagine di miniatura per il video.
+      * Seleziona la risorsa immagine, quindi seleziona **[!UICONTROL Seleziona]**.
 
-1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
-1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. Nella pagina Modifica miniatura, seleziona **[!UICONTROL Salva modifica]**.
+1. Nella pagina Proprietà del video, nell’angolo superiore destro, seleziona **[!UICONTROL Salva e chiudi]**.
 
--->
+
 
 <!--
 
