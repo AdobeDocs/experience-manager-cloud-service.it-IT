@@ -2,10 +2,10 @@
 title: Persone giuste, ruoli giusti
 description: Persone giuste, ruoli giusti
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 80%
+source-wordcount: '847'
+ht-degree: 78%
 
 ---
 
@@ -74,7 +74,7 @@ Ora che sai quali ruoli sono richiesti, osserva il grafico seguente per vedere q
 
 <br>
 
-![](/help/overview/assets/team_involvement2.png)
+![Grafico a barre orizzontale che mostra i ruoli fittizi e il loro livello di coinvolgimento nel team AEM Assets.](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >
