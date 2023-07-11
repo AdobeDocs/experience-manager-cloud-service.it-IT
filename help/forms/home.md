@@ -3,12 +3,13 @@ title: Introduzione a  [!DNL AEM Forms]  as a Cloud Service
 description: Scopri AEM Forms e come ti può aiutare a creare moduli e documenti pronti da usare in azienda. Scopri Platform as a Service (PaaS) e come gestire moduli digitali e processi aziendali di classe enterprise, e collega Forms ad Adobe Sign e alle origini dati correnti.
 landing-page-description: Scopri come utilizzare i moduli in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
+source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 93%
+source-wordcount: '1137'
+ht-degree: 92%
 
 ---
+
 
 # Introduzione ad AEM Forms as a Cloud Service {#introduction}
 
@@ -58,5 +59,12 @@ Il servizio si integra con Adobe Analytics, che consente di acquisire e tenere t
 | Firme elettroniche | Integrazione con Adobe Sign e Adobe Sign Solutions for Government per inviare facilmente Forms e documenti agli utenti per le firme elettroniche: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=it">Applicare una firma elettronica a un modulo adattivo con Adobe Sign </a></li><li></a> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=en#sign-document-step">Firma elettronica di un documento con Adobe Sign e flussi di lavoro AEM</a></li></ul> |
 | Analisi dei moduli | Utilizza Adobe Analytics per ottenere informazioni preziose sul comportamento e sulle preferenze degli utenti: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html?lang=it">Collegare un modulo adattivo ad Adobe Analytics</a></li></ul> |
 | Origini dati | Collega facilmente moduli e documenti con origini dati esterne per recuperare e inviare dati: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=it">Connettersi a un endpoint RDBMS o REST</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=it">Connettersi a Microsoft® Dynamics 365 o Salesforce Cloud Service</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=it">Connessione all’archiviazione BLOB di Microsoft® Azure</a></li></ul> |
+
+
+## Articoli correlati
+
+* [Onboarding in un ambiente di Cloud Service](/help/forms/setup-forms-cloud-service.md)
+* [Configurare un ambiente di sviluppo locale](/help/forms/setup-local-development-environment.md)
+* [Migrazione da AEM 6.5 Forms a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 
 
