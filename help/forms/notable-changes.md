@@ -3,9 +3,9 @@ title: Differenze tra AEM 6.5 Forms e AEM Cloud Services
 description: Sei un utente di Experience Manager Forms e stai cercando di effettuare l’aggiornamento ad Adobe Experience Manager Forms as a Cloud Service? Confronta Forms AEM 6.5 e AEM Cloud Services e scopri le modifiche più importanti prima di eseguire l’aggiornamento o la migrazione al Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1417'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di ri
 
 * Gli sviluppatori gestiscono in comune il codice per l’ambiente di sviluppo Cloud Service e locale [archivio Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). Un archivio Git, basato su Archetipo AEM, viene creato automaticamente al momento della creazione di un programma as a Cloud Service AEM.
 
-  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![creazione automatica dell’archivio Git in AEM as a cloud service](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * Il flusso di sviluppo per Forms as a Cloud Service è allineato con l’archetipo AEM per AEM Cloud Service. Tuttavia, sono necessarie alcune modifiche ai progetti Adobe Experience Manager Maven per renderli compatibili con AEM Cloud Service. Ad alto livello, l&#39;AEM richiede una separazione del contenuto e del codice in subpacchetti distinti per rispettare la ripartizione tra contenuto mutabile e immutabile. Utilizza il [Strumento Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) per ristrutturare i pacchetti di progetto esistenti separando il contenuto e il codice in pacchetti distinti in modo che siano compatibili con la struttura di progetto definita per Adobe Experience Manager as a Cloud Service.
 

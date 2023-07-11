@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 Una volta toccato il pulsante Fine ![aem_forms_save](assets/aem_forms_save.png) nella finestra Firma scarabocchio, non è possibile modificare la firma. Nel caso in cui si desideri modificare la firma, è necessario ignorare la firma corrente e riapporla utilizzando l&#39;opzione Pennello/Tastiera.
 
-Puoi toccare il **Configura** ![](assets/configure.png) per impostare le proporzioni dell’area di lavoro della firma scarabocchio.
+Puoi toccare il **Configura** ![icona configura](assets/configure.png) per impostare le proporzioni dell’area di lavoro della firma scarabocchio.
 * Quando le proporzioni dell’area di lavoro Firma a mano sono inferiori a 1, le informazioni sulla geolocalizzazione vengono aggiunte nella parte inferiore dell’area di lavoro Firma a mano.
 
 
@@ -46,6 +46,7 @@ Puoi toccare il **Configura** ![](assets/configure.png) per impostare le proporz
 >[!NOTE]
 >
 >Le firme vengono sempre salvate in formato PNG.
+>
 
 ## Configurare un modulo adattivo per utilizzare la firma scarabocchio {#configure-an-adaptive-form-to-use-scribble-signature}
 
