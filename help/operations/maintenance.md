@@ -2,7 +2,7 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Attività di manutenzione in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 19a3ebd981a7a62fe78a9ec909547b6a70c55121
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 63%
@@ -44,7 +44,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
   <tr>
     <td>Pulizia delle versioni</td>
     <td>Adobe</td>
-    <td>Per gli ambienti esistenti (creati prima del 1° giugno 2023), la rimozione è disabilitata e non sarà abilitata in futuro a meno che non sia esplicitamente abilitata dal cliente, che potrà anche configurarla con valori personalizzati.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Per impostazione predefinita, per i nuovi ambienti (creati a partire dal 1° giugno 2023) è abilitata l’eliminazione con i valori riportati di seguito, e i clienti possono effettuare la configurazione con valori personalizzati.
+    <td>Per gli ambienti esistenti (creati prima del 1° settembre 2023), la rimozione è disabilitata e non sarà abilitata in futuro a meno che non sia esplicitamente abilitata dal cliente, che potrà anche configurarla con valori personalizzati.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Per impostazione predefinita, per i nuovi ambienti (creati a partire dal 1° settembre 2023) è abilitata l’eliminazione con i valori riportati di seguito, e i clienti possono effettuare la configurazione con valori personalizzati.
      <ol>
        <li>Le versioni precedenti a 30 giorni vengono rimosse</li>
        <li>Le ultime 5 versioni degli ultimi 30 giorni vengono conservate</li>
@@ -56,7 +56,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
   <tr>
     <td>Elimina log di controllo</td>
     <td>Adobe</td>
-    <td>Per gli ambienti esistenti (creati prima del 1° giugno 2023), la rimozione è disabilitata e non sarà abilitata in futuro a meno che non sia esplicitamente abilitata dal cliente, che potrà anche configurarla con valori personalizzati.<br><br> <!-- See above for the two line breaks -->Per impostazione predefinita, nei nuovi ambienti (creati a partire dal 1° giugno 2023) la rimozione è abilitata nella sezione <code>/content</code> nodo dell’archivio in base al seguente comportamento:
+    <td>Per gli ambienti esistenti (creati prima del 1° settembre 2023), la rimozione è disabilitata e non sarà abilitata in futuro a meno che non sia esplicitamente abilitata dal cliente, che potrà anche configurarla con valori personalizzati.<br><br> <!-- See above for the two line breaks -->Per impostazione predefinita, nei nuovi ambienti (creati a partire dal 1° settembre 2023) è abilitata l’eliminazione sotto <code>/content</code> nodo dell’archivio in base al seguente comportamento:
      <ol>
        <li>Per il controllo della replica, i registri di audit precedenti a 3 giorni vengono rimossi</li>
        <li>Per il controllo DAM (Assets), i registri di audit precedenti a 30 giorni vengono rimossi</li>
