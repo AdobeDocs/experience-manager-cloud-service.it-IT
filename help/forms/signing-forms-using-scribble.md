@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
+source-git-commit: 50f5b34fa9453fd6d8e85290f69194622afeb42c
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Puoi toccare il **Configura** ![icona configura](assets/configure.png) per impos
    >
    >Il componente Passaggio di firma occupa l’intera larghezza disponibile per il modulo. Si consiglia di non avere altri componenti nella sezione contenente il componente Passaggio di firma.
 
-1. Nel browser Contenuti, tocca **Contenitore modulo**, e tocca il **Configura** ![](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo. Accedi a **Contenitore modulo adattivo** > **Firma elettronica** e deseleziona la **Abilita Adobe Sign** opzione. Tocca Fine ![aem_forms_save](assets/aem_forms_save.png) per salvare le modifiche.
+1. Nel browser Contenuti, tocca **Contenitore modulo**, e tocca il **Configura** ![icona configura](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo. Accedi a **Contenitore modulo adattivo** > **Firma elettronica** e deseleziona la **Abilita Adobe Sign** opzione. Tocca Fine ![aem_forms_save](assets/aem_forms_save.png) per salvare le modifiche.
 
    >[!NOTE]
    >
