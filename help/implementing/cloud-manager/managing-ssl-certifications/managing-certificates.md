@@ -2,12 +2,13 @@
 title: Gestione dei certificati SSL
 description: Scopri come controllare lo stato dei certificati SSL e come modificarli, sostituirli, aggiornarli ed eliminarli con Cloud Manager.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: aeb407f8971dabb4e86203b3cee82318330638b0
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 79%
+source-wordcount: '646'
+ht-degree: 76%
 
 ---
+
 
 # Gestione dei certificati SSL {#managing-ssl-certificates}
 
@@ -34,6 +35,7 @@ Quando un certificato scade, i domini in uso con il certificato scaduto smettera
 1. Dalla schermata **Ambienti**, accedi alla schermata **Certificati SSL**.
 1. Viene visualizzata una tabella con una riga per ogni certificato SSL installato correttamente nel programma. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga del certificato che desideri aggiornare e seleziona **Visualizza e aggiorna**.
 1. Vengono visualizzati i dettagli del certificato, che possono essere aggiornati.
+1. Esegui la pipeline per distribuire il certificato aggiornato.
 
 >[!NOTE]
 >
@@ -56,6 +58,7 @@ Per eliminare un certificato SSL, segui la procedura riportata di seguito.
 1. Dalla schermata **Ambienti**, accedi alla schermata **Certificati SSL**.
 1. Viene visualizzata una tabella con una riga per ogni certificato SSL installato correttamente nel programma. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga del certificato che desideri eliminare e seleziona **Elimina**.
 1. Conferma l’eliminazione nella finestra di dialogo **Elimina certificato SSL**.
+1. Esegui la pipeline per annullare la distribuzione del certificato eliminato.
 
 >[!NOTE]
 >
