@@ -2,10 +2,10 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6ab2d9b01a3f1abedb06d1d413e7eceb8b1c031
+source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 49%
+source-wordcount: '1682'
+ht-degree: 44%
 
 ---
 
@@ -17,7 +17,7 @@ Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenu
 
 Universal Editor consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione, in modo da poter fornire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 
-A tal fine, l’Editor universale offre agli autori dei contenuti un’interfaccia utente intuitiva che richiede una formazione minima per essere in grado di accedere e iniziare semplicemente a modificare i contenuti.
+A tal fine, l’Editor universale offre agli autori dei contenuti un’interfaccia utente intuitiva che richiede una formazione minima per essere in grado di accedere e iniziare semplicemente a modificare i contenuti. Questo documento descrive l’esperienza di authoring dell’Editor universale.
 
 >[!TIP]
 >
@@ -25,7 +25,7 @@ A tal fine, l’Editor universale offre agli autori dei contenuti un’interfacc
 
 >[!NOTE]
 >
->L’editor universale è ancora in fase di sviluppo e al momento non può modificare tutti i tipi di contenuto.
+>L&#39;editor universale è ancora in fase di sviluppo. Attualmente non può modificare tutti i tipi di contenuto.
 
 ## Preparare l’app {#prepare-app}
 
@@ -201,13 +201,23 @@ In modalità componente, la pagina viene riprodotta nell’editor, ma l’autore
 
 ![Modalità componente](assets/component-mode.png)
 
+Quando selezioni un frammento di contenuto, i relativi dettagli vengono visualizzati nel [barra dei componenti.](#component-rail)
+
 >[!TIP]
 >
 >Utilizza il tasto di scelta rapida `C` per passare alla modalità componente.
 
->[!NOTE]
+#### Modifica {#edit}
+
+In [modalità componente,](#component-mode) Se selezioni un frammento di contenuto, nella barra della modalità viene visualizzata l’opzione di modifica.
+
+![Icona Modifica](assets/edit.png)
+
+Toccando o facendo clic sul pulsante di modifica si apre l’Editor frammento di contenuto in una nuova scheda, che consente di modificare il contenuto di riferimento nonché il testo e i contenuti multimediali dall’interno dell’Editor universale.
+
+>[!TIP]
 >
->La modalità componente è ancora in fase di sviluppo ed è attualmente limitata alla selezione dei componenti.
+>Utilizza il tasto di scelta rapida `E` per modificare un componente selezionato.
 
 ### L’editor {#editor}
 
@@ -230,9 +240,11 @@ In modalità proprietà, la barra mostra le proprietà del componente attualment
 
 ![Modalità Proprietà](assets/properties-mode.png)
 
-I dettagli del componente selezionato sono visualizzati nella barra. Non tutti i componenti hanno dettagli da mostrare.
+I dettagli del componente selezionato sono visualizzati nella barra. Se hai selezionato un frammento di contenuto utilizzando [modalità componente,](#component-mode) puoi modificarne le impostazioni nella barra dei componenti. Le modifiche vengono salvate automaticamente dall&#39;Editor universale.
 
 ![Dettagli componente](assets/component-details.png)
+
+Non tutti i componenti hanno dettagli che possono essere visualizzati.
 
 >[!TIP]
 >
@@ -259,13 +271,17 @@ La modifica del contenuto è semplice e intuitiva. In modalità di modifica ([mo
 
 ![Il contenuto modificabile viene evidenziato da una casella blu](assets/editable-content.png)
 
-Tocca o fai clic sul contenuto nella casella blu per avviare un editor diretto per apportare le modifiche. Premi invio o indietro per salvare le modifiche.
+Tocca o fai clic sul contenuto nella casella blu per avviare un editor diretto per apportare le modifiche. Le modifiche vengono salvate automaticamente.
 
 ![Modifica del contenuto](assets/editing-content.png)
 
 In modalità modifica, toccando o facendo clic sul contenuto lo si seleziona per la modifica. Per navigare nel contenuto tramite i seguenti collegamenti, passa a [modalità anteprima.](#preview-mode)
 
-A seconda della modalità in cui ti trovi e del contenuto selezionato, puoi avere opzioni di modifica locali diverse. Inoltre, puoi rivedere proprietà aggiuntive per il contenuto utilizzando [barra dei componenti.](#component-rail)
+A seconda della [modalità](#mode-rail) in e nel contenuto selezionato, potrebbero essere disponibili opzioni di modifica locali diverse.
+
+Inoltre, puoi rivedere proprietà aggiuntive per il contenuto utilizzando [barra dei componenti.](#component-rail) Ad esempio, se selezioni un componente Rich text, puoi modificare le opzioni di formattazione nella barra dei componenti.
+
+![Modifica di un componente Rich Text](assets/rich-text-editing.png)
 
 ## Anteprima del contenuto {#previewing-content}
 
