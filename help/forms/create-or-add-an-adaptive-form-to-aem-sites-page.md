@@ -3,9 +3,9 @@ title: Come si aggiunge un modulo adattivo alla pagina di AEM Sites?
 description: Scopri come creare o aggiungere facilmente un modulo adattivo alla pagina AEM Sites. Scopri tecniche dettagliate e best practice per integrare i moduli nel sito web, ottimizzando le esperienze digitali per il massimo impatto.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
+source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
 workflow-type: tm+mt
-source-wordcount: '3265'
+source-wordcount: '3232'
 ht-degree: 1%
 
 ---
@@ -200,13 +200,13 @@ Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tr
 1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona la **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Fai clic sulle proprietà Contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo con cui configurare le azioni di invio.
-   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo per configurare modelli di dati per il componente Contenitore modulo adattivo](/help/forms/assets/adaptive-forms-container.png)
+   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare un’azione di invio](/help/forms/assets/adaptive-forms-container.png)
 1. Seleziona e configura un’azione Invia in base alle tue esigenze. Per informazioni dettagliate sulle azioni di invio, vedere [Azione di invio modulo adattivo](/help/forms/configuring-submit-actions.md)
 
 
 ## Configurare uno schema o un modello di dati modulo per un modulo nella pagina o nel frammento di esperienza di AEM Sites {#configure-schema-or-data-model-for-form}
 
-È possibile utilizzare il modello dati modulo per collegare un modulo a un&#39;origine dati per inviare e ricevere dati in base alle azioni degli utenti. Puoi anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. Prima di collegare un modulo a uno schema o a un modello dati del modulo:
+È possibile utilizzare il modello dati modulo per collegare un modulo a un&#39;origine dati per inviare e ricevere dati in base alle azioni degli utenti. Puoi anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo:
 
 * [Creare uno schema JSON e caricarlo nell’ambiente](/help/forms/adaptive-form-json-schema-form-model.md)  oppure
 * [Creare un modello di dati modulo](/help/forms/create-form-data-models.md)
@@ -216,7 +216,7 @@ Per configurare uno schema JSON o un modello dati modulo per il modulo:
 1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona la **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Fai clic sulle proprietà Contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
-   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo per configurare modelli di dati per il componente Contenitore modulo adattivo](/help/forms/assets/form-data-model-adaptive-forms-container.png)
+   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare un modello dati per il modulo adattivo](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. Seleziona e configura uno schema JSON o un modello dati modulo, in base ai requisiti. Per informazioni dettagliate sulle azioni di invio, vedere [Azione di invio modulo adattivo](/help/forms/configuring-submit-actions.md).
 
    * Quando selezioni il **[!UICONTROL Modello modulo]** , utilizza **[!UICONTROL Seleziona modello dati modulo]** per selezionare un modello di dati modulo preconfigurato.
@@ -238,7 +238,7 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona la **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Fai clic sulle proprietà Contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
-   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo per configurare modelli di dati per il componente Contenitore modulo adattivo](/help/forms/assets/adaptive-forms-container.png)
+   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo per configurare il servizio di precompilazione](/help/forms/assets/adaptive-forms-container.png)
 1. Seleziona un modello di dati modulo. Apri **[!UICONTROL Base]** scheda. Nel servizio di preriempimento, seleziona **[!UICONTROL Servizio preriempimento modello dati modulo]**.
 1. Clic **[!UICONTROL Fine]**. Il modulo adattivo è ora configurato per l’utilizzo della precompilazione del modello dati del modulo. Ora puoi utilizzare la [editor di regole](rule-editor.md) per creare regole per precompilare i campi del modulo.
 
@@ -249,13 +249,12 @@ All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altr
 
 1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona la **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
-1. Fai clic sulle proprietà Contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
+
 1. Apri **[!UICONTROL Invio]** scheda.
 
-   * Per configurare un URL di reindirizzamento, per l’opzione Invia seleziona l’opzione Reindirizza all’URL e specifica un indirizzo assoluto o un URL di reindirizzamento o un percorso relativo di una pagina AEM Sites.
+   * Per configurare un URL di reindirizzamento, per l’opzione Invia seleziona la **[!UICONTROL Reindirizza a URL]** e sfoglia e seleziona una pagina AEM Sites oppure specifica l’URL di una pagina esterna.
 
-   * Per configurare un messaggio personalizzato o di ringraziamento, per l’opzione Invia seleziona l’opzione Mostra messaggio e specifica un messaggio nella casella Contenuto messaggio. Si tratta di una casella di testo RTF, è possibile utilizzare l&#39;opzione a schermo intero per visualizzare tutti gli elementi RTF disponibili.
-
+   * Per configurare un messaggio personalizzato o di ringraziamento, per all’opzione Invia, seleziona la **[!UICONTROL Mostra messaggio]** e inserisci un messaggio nella sezione **[!UICONTROL Contenuto del messaggio]** casella. Si tratta di una casella di testo RTF, è possibile utilizzare l&#39;opzione a schermo intero per visualizzare tutti gli elementi RTF disponibili.
 
 ## Vedi successivo
 
