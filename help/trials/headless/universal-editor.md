@@ -6,7 +6,7 @@ index: false
 source-git-commit: 60bcdf042bb27dba49f9e09235899fa85e32285e
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 16%
+ht-degree: 77%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
->title="Avviare l’editor universale"
->abstract="In questa guida verrà descritto Universal Editor e come consente a chiunque di modificare ogni aspetto del contenuto in qualsiasi implementazione, per velocizzare le operazioni.<br><br>Per avviare questo modulo in una nuova scheda, fai clic qui sotto, quindi segui questa guida."
+>title="Avvia l’Editor universale"
+>abstract="Questa guida descrive l’Editor universale e come consente a chiunque di modificare ogni aspetto del contenuto in qualsiasi implementazione, per velocizzare le operazioni.<br><br>Per avviare questo modulo in una nuova scheda, fai clic qui sotto, quindi segui questa guida."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
