@@ -3,9 +3,9 @@ title: Scopri come definire metadati e tag per i frammenti di contenuto
 description: Scopri come definire metadati e tag per i frammenti di contenuto
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 1486a330e7931ab679f37464c3e22a27ea0d5876
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '263'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -30,15 +30,15 @@ Esistono tre metodi per aggiungere metadati e tag:
 
 * Il primo passo per la creazione del frammento (dalla console **Assets**):
 
-   ![Crea frammento di contenuto: specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+  ![Crea frammento di contenuto: specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* Il **Varianti** dell’editor dei frammenti di contenuto ti consente di aggiungere valori predefiniti **Tag** dal progetto:
+* La scheda **Varianti** dell’editor dei frammenti di contenuto ti consente di aggiungere **Tag** predefiniti dal progetto:
 
-   ![Editor frammento di contenuto - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![Editor frammento di contenuto - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 * La scheda **Metadati** dell’editor Frammento di contenuto ti consente di aggiungere sia vari campi di metadati sia **Tag** predefiniti dal progetto:
 
-   ![Editor frammento di contenuto: metadati](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+  ![Editor frammento di contenuto: metadati](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
    * È inoltre direttamente accessibile tramite l’opzione **Proprietà** nella barra degli strumenti della console Assets.
 
