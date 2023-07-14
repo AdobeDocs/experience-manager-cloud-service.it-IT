@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
 source-wordcount: '1752'
-ht-degree: 74%
+ht-degree: 80%
 
 ---
 
@@ -362,14 +362,14 @@ Se crei una variante, denominata &quot;Berlino centro&quot; (`berlin_centre`), p
 }
 ```
 
-### Query di esempio: nomi di tutte le città Taggato come City Breaks {#sample-names-all-cities-tagged-city-breaks}
+### Query di esempio: nomi di tutte le città Classificati come Soggiorni in città {#sample-names-all-cities-tagged-city-breaks}
 
 Se:
 
 * crea vari tag, denominati `Tourism` : `Business`, `City Break`, `Holiday`
 * e assegnarli alla variante principale di vari `City` istanze
 
-Quindi puoi utilizzare una query per restituire i dettagli del `name` e `tags`di tutte le voci contrassegnate come interruzioni di città nel `city`schema.
+allora puoi utilizzare una query per restituire i dettagli di `name` e `tags` di tutte le voci classificate come Soggiorni in città nello schema `city`.
 
 **Query di esempio**
 
@@ -1338,7 +1338,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 }
 ```
 
-### Query di esempio per un frammento di contenuto nidificato: più tipi di modello {#sample-wknd-nested-fragment-multiple-model}
+### Query di esempio per un frammento di contenuto nidificato: più tipi di modello{#sample-wknd-nested-fragment-multiple-model}
 
 #### Tipo di modello di riferimento singolo
 
@@ -1394,7 +1394,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 }
 ```
 
-### Query di esempio per un frammento di contenuto di un modello specifico con riferimenti ai contenuti {#sample-wknd-fragment-specific-model-content-reference}
+### Query di esempio per un frammento di contenuto di un modello specifico con riferimenti ai contenuti{#sample-wknd-fragment-specific-model-content-reference}
 
 Sono disponibili due tipi di questa query:
 
@@ -1582,11 +1582,11 @@ Questa query rappresenta un’interrogazione per ottenere:
 }
 ```
 
-### Query di esempio per più frammenti di contenuto e relative varianti di un determinato modello {#sample-wknd-multiple-fragment-variations-given-model}
+### Query di esempio per più frammenti di contenuto, e relative varianti, di un determinato modello {#sample-wknd-multiple-fragment-variations-given-model}
 
 Questa query rappresenta un’interrogazione:
 
-* frammenti di contenuto di tipo `article` e tutte le varianti
+* per frammenti di contenuto di tipo `article` e tutte le varianti
 
 **Query di esempio**
 
@@ -1613,7 +1613,7 @@ query {
 
 Questa query rappresenta un’interrogazione:
 
-* frammenti di contenuto di tipo `article` con una o più varianti contrassegnate dal tag `WKND : Activity / Hiking`
+* per frammenti di contenuto di tipo `article` con una o più varianti a cui è stato assegnato il tag `WKND : Activity / Hiking`
 
 **Query di esempio**
 
@@ -1721,8 +1721,8 @@ Questa query rappresenta un’interrogazione:
 
 Questa query rappresenta un’interrogazione:
 
-* frammenti di contenuto di tipo `vehicle` con il tag `big-block`
-* escludendo le varianti
+* per frammenti di contenuto di tipo `vehicle` con il tag `big-block`
+* varianti di esclusione
 
 **Query di esempio**
 
@@ -1756,8 +1756,8 @@ query {
 
 Questa query rappresenta un’interrogazione:
 
-* frammenti di contenuto di tipo `vehicle` con il tag `big-block`
-* incluse le varianti
+* per frammenti di contenuto di tipo `vehicle` con il tag `big-block`
+* varianti di inclusione
 
 **Query di esempio**
 

@@ -7,7 +7,7 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -32,14 +32,14 @@ I frammenti di contenuto contengono contenuto strutturato:
 I frammenti di contenuto possono essere consegnati anche in formato JSON, utilizzando le funzionalità di esportazione Sling Model (JSON) dei componenti core di AEM. Questo tipo di consegna:
 
 * consente di utilizzare il componente per gestire gli elementi di un frammento da consegnare;
-* consente la consegna in massa, aggiungendo più componenti core per frammenti di contenuto nella pagina utilizzata per la consegna API.
+* consente la consegna in massa, aggiungendo più componenti core per frammenti di contenuto nella pagina utilizzata per la consegna API
 
 Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, configurazione, manutenzione e utilizzo dei frammenti di contenuto:
 
 * [Abilita funzionalità frammento di contenuto per la tua istanza](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md): come abilitare, creare e definire i modelli
 * [Utilizzare la console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md): come accedere ai frammenti, crearli, modificarli, pubblicarli e farvi riferimento
-* [Gestione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md): come creare frammenti di contenuto, quindi modificarli, pubblicarli e farvi riferimento.
+* [Gestione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md): come creare frammenti di contenuto, quindi modificarli, pubblicarli e farvi riferimento
 * [Varianti: authoring dei contenuti di frammenti](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md): come creare il contenuto di un frammento e quindi varianti del contenuto principale
 * [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md): come utilizzare la sintassi markdown per il frammento
 * [Utilizzo di contenuti associati](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md): come aggiungere contenuti associati
@@ -59,7 +59,7 @@ Per facilitare questa fase, puoi visualizzare un’anteprima della [Struttura ad
 >* [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API GraphQL di AEM per l’utilizzo con Frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
->* [Riutilizzare i frammenti di contenuto con MSM per le risorse](/help/assets/reuse-assets-using-msm.md) (disponibile solo tramite **Risorse** console)
+>* [Riutilizzare i frammenti di contenuto con MSM per Assets](/help/assets/reuse-assets-using-msm.md) (disponibile solo tramite la console **Assets**)
 
 Il numero di canali di comunicazione aumenta ogni anno. In genere i canali si distinguono in base al meccanismo di consegna, come segue:
 
@@ -115,13 +115,13 @@ Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, tali
 
 ## Pubblicazione e anteprima {#publish-and-preview}
 
-Come per tutti i contenuti, in futuro vorrai pubblicare i frammenti di contenuto in **[Servizio di pubblicazione](/help/overview/architecture.md#runtime-architecture)**.
+Come per tutti i contenuti, alla fine desideri pubblicare i frammenti di contenuto nel **[Servizio di pubblicazione](/help/overview/architecture.md#runtime-architecture)**.
 
-Prima di ciò, puoi anche visualizzare in anteprima un’esperienza consegnata utilizzando frammenti di contenuto, [pubblicazione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) all&#39;AEM **[Servizio di anteprima](/help/overview/architecture.md#runtime-architecture)**.
+Prima di ciò, puoi anche visualizzare in anteprima un’esperienza distribuita con frammenti di contenuto, [pubblicando i frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) nel **[Servizio di anteprima](/help/overview/architecture.md#runtime-architecture)** di AEM.
 
 >[!CAUTION]
 >
->Pubblicazione in **Servizio di anteprima** è disponibile solo da **Frammenti di contenuto** console.
+>La pubblicazione nel **Servizio di anteprima** è disponibile solo dalla console **Frammenti di contenuto**.
 
 ## Tipo di contenuto {#content-type}
 
@@ -233,7 +233,7 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
       * oppure in un secondo tempo:
 
          * visualizzando e modificando le **Proprietà** del frammento dalla console;
-         * modificando i **Metadati** nell’editor di frammenti.
+         * modificando i **Metadati** nell’editor di frammenti
 
   >[!CAUTION]
   >

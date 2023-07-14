@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 42%
+ht-degree: 46%
 
 ---
 
@@ -115,7 +115,7 @@ Dopo il passaggio alla nuova versione dell’applicazione:
 >[!NOTE]
 >I pacchetti di contenuto vengono distribuiti in tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Questa limitazione è presente per garantire la possibilità di effettuare un test di esecuzione automatica. Il contenuto specifico di un ambiente richiede l’installazione manuale tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md).
 
-Inoltre, non esiste alcun meccanismo per eseguire il rollback delle modifiche del pacchetto di contenuti mutabili dopo la loro applicazione. Se i clienti rilevano un problema, possono scegliere di correggerlo nella versione successiva del codice o, come ultima risorsa, ripristinare l’intero sistema in un punto temporale prima della distribuzione.
+Inoltre, non esiste un meccanismo per ripristinare le modifiche al pacchetto di contenuti mutabili dopo la loro applicazione. Se i clienti rilevano un problema, possono scegliere di correggerlo nella versione successiva del codice o, come ultima risorsa, ripristinare l’intero sistema in un punto temporale prima della distribuzione.
 
 Eventuali pacchetti di terze parti inclusi devono essere convalidati come compatibili con AEM as a Cloud Service, altrimenti la loro inclusione si traduce in un errore di distribuzione.
 
@@ -239,15 +239,15 @@ Il seguente Maven `POM.xml` snippet mostra come incorporare i pacchetti di terze
 
 ## Funzionamento delle implementazioni continue {#how-rolling-deployments-work}
 
-Analogamente agli aggiornamenti AEM, le versioni dei clienti vengono distribuite utilizzando una strategia di distribuzione continua per eliminare i tempi di inattività del cluster di authoring nelle circostanze appropriate. La sequenza generale di eventi è descritta di seguito, dove i nodi con la vecchia e la nuova versione del codice del cliente eseguono la stessa versione del codice AEM.
+Analogamente agli aggiornamenti AEM, le versioni dei clienti vengono distribuite utilizzando una strategia di distribuzione continua per eliminare i tempi di inattività del cluster di authoring nelle circostanze appropriate. La sequenza generale di eventi è descritta di seguito, dove i nodi con la versione precedente e nuova del codice del cliente eseguono la stessa versione del codice AEM.
 
 * I nodi con la versione precedente sono attivi e viene creato e reso disponibile un candidato per la nuova versione.
 * In presenza di definizioni di indice nuove o aggiornate, gli indici corrispondenti vengono elaborati. I nodi con la versione precedente utilizzano sempre i vecchi indici, mentre i nodi con la nuova versione utilizzano sempre i nuovi indici.
 * I nodi con la nuova versione vengono avviati, mentre le versioni precedenti continuano a gestire il traffico.
 * I nodi con la versione precedente sono in esecuzione e continuano a funzionare mentre i nodi con la nuova versione vengono controllati per verificarne la disponibilità tramite controlli di integrità.
 * I nodi con la nuova versione pronti, accettano il traffico e sostituiscono i nodi con la versione precedente, che viene disattivata.
-* Nel tempo, i nodi con la versione precedente vengono sostituiti da nodi con la nuova versione fino a quando rimangono solo i nodi con le nuove versioni, completando in tal modo la distribuzione.
-* Viene quindi distribuito qualsiasi contenuto modificabile nuovo o modificato.
+* Nel corso del tempo, i nodi con la versione precedente vengono sostituiti dai nodi con la nuova versione, finché non rimarranno solo i nodi con le nuove versioni, completando in tal modo la distribuzione.
+* Vengono così distribuiti eventuali contenuti mutabili nuovi o modificati.
 
 ## Indici {#indexes}
 
@@ -277,7 +277,7 @@ La modifica degli utenti del servizio, o degli ACL che accedono a contenuti o co
 
 ### Modifiche all’indice {#index-changes}
 
-Se vengono apportate modifiche agli indici, è importante che la nuova versione continui a utilizzare i suoi indici fino a quando non viene terminata, mentre la vecchia versione utilizza il proprio set modificato di indici. Lo sviluppatore deve seguire le tecniche di gestione degli indici descritte [nel presente articolo](/help/operations/indexing.md).
+Se vengono apportate modifiche agli indici, è importante che la nuova versione continui a utilizzare i suoi indici fino alla sua chiusura, mentre la versione precedente utilizza il proprio set modificato di indici. Lo sviluppatore deve seguire le tecniche di gestione degli indici descritte [nel presente articolo](/help/operations/indexing.md).
 
 ### Codifica conservativa per i ripristini {#conservative-coding-for-rollbacks}
 

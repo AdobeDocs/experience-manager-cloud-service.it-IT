@@ -1,12 +1,12 @@
 ---
-title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: b738d351a8ec607bef6c82880616061a88968e7f
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 16%
+ht-degree: 33%
 
 ---
 
@@ -26,7 +26,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2023.6.0) è il 29 giugno 2023. La prossima versione (2023.7.0) è prevista per il 27 luglio 2023.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.6.0) è il 29 giugno 2023. La prossima versione (2023.7.0) è prevista per il 27 luglio 2023.
 
 ## Video sulla versione {#release-video}
 
@@ -38,7 +38,7 @@ Dai un’occhiata al video Panoramica sulla versione di giugno 2023 per un riepi
 
 ### Nuove funzioni in [!DNL Experience Manager Sites] {#sites-features}
 
-* Ora è possibile pubblicare i frammenti di contenuto e i relativi riferimenti in [Servizio di anteprima AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) utilizzando [Console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), che consente agli utenti di visualizzare in anteprima l’esperienza finale su un’applicazione di anteprima separata prima della pubblicazione.
+* Ora è possibile pubblicare i frammenti di contenuto e i relativi riferimenti nel [Servizio di anteprima AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it#access-preview-service) utilizzando la [Console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it), che consente agli utenti di visualizzare in anteprima l’esperienza finale su un’applicazione di anteprima separata prima della pubblicazione.
 * Le immagini possono ora essere ottimizzate dinamicamente per la distribuzione web in scenari headless utilizzando AEM GraphQL. [Variabili di query](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) può essere definito nelle query GraphQL per consentire alle applicazioni client disaccoppiate di richiedere all’AEM immagini ottimizzate di conseguenza.
 * Tag su [Varianti dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) ora può essere inviato in formato JSON utilizzando l’API di distribuzione dei contenuti GraphQL dell’AEM.
 
@@ -72,7 +72,7 @@ Una nuova esperienza utente migliorata per [creazione di condivisioni di collega
 
 **Dynamic Media: aggiornamento dei campi relativi al ritaglio avanzato nel profilo immagine**
 
-L’interfaccia utente di alcuni campi relativi a Ritaglio avanzato in un profilo immagine ora è aggiornata per riflettere le linee guida correnti per la definizione di un Ritaglio avanzato. Consulta [Opzioni di ritaglio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+L’interfaccia utente di alcuni campi relativi a Ritaglio avanzato in un profilo immagine ora è aggiornata per riflettere le linee guida correnti per la definizione di un Ritaglio avanzato. Consulta [Opzioni di ritaglio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=it#crop-options).
 
 ### Nuove funzioni nella vista Risorse {#assets-view-features}
 
@@ -117,11 +117,11 @@ La vista Risorse ora consente di: [aggiungere componenti di proprietà di testo 
 
   >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Utilizzare Adobe Acrobat Sign Solutions for Government (reclamo HIPPA) con AEM Forms](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ora si integra con Adobe Acrobat Sign Solutions for Government. Questa integrazione fornisce un livello avanzato di conformità e sicurezza per le firme elettroniche con l’invio di moduli adattivi per gli account governativi associati (dipartimenti e agenzie governative).
+* [Utilizzare Adobe Acrobat Sign Solutions for Government (reclamo HIPPA) con AEM Forms](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ora si integra con Adobe Acrobat Sign Solutions for Government. Questa integrazione fornisce un livello avanzato di conformità e sicurezza per le firme elettroniche con l’invio di moduli adattivi per gli account della pubblica amministrazione associati (dipartimenti e agenzie statali).
 
-  L’integrazione con Adobe Acrobat Sign Solutions for Government consente ai partner e ai clienti governativi di Adobe di utilizzare le firme elettroniche in Adaptive Forms per alcune delle linee di business più critiche e sensibili. Questo ulteriore livello di sicurezza assicura che tutte le firme elettroniche siano pienamente conformi alla conformità FedRAMP Moderate, garantendo ai clienti governativi Adobi la massima tranquillità.
+  L’integrazione con Adobe Acrobat Sign Solutions for Government consente ai partner e ai clienti governativi di Adobe di utilizzare le firme elettroniche in Adaptive Forms per alcune delle linee di business più critiche e sensibili. Questo ulteriore livello di sicurezza garantisce che tutte le firme elettroniche siano pienamente conformi alla conformità FedRAMP Moderate, garantendo ai clienti del settore pubblico di Adobe la massima tranquillità.
 
-* [Gestione avanzata degli errori con gestori di errori personalizzati nell’editor di regole](/help/forms/add-custom-error-handler-adaptive-forms.md): ora puoi richiamare una funzione personalizzata (utilizzando la libreria client) in risposta a un errore restituito da un servizio esterno e fornire una risposta personalizzata agli utenti finali. In alternativa, è possibile eseguire azioni specifiche per gli errori restituiti da un servizio. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel backend per codici di errore specifici o informare il cliente che il servizio non è disponibile.
+* [Gestione avanzata degli errori con gestori di errori personalizzati nell’editor di regole](/help/forms/add-custom-error-handler-adaptive-forms.md): ora puoi richiamare una funzione personalizzata (utilizzando la libreria client) in risposta a un errore restituito da un servizio esterno e fornire una risposta personalizzata agli utenti finali. In alternativa, è possibile eseguire azioni specifiche per gli errori restituiti da un servizio. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel back-end per codici di errore specifici o informare il cliente che il servizio non è disponibile.
 
   Questa funzionalità consente di migliorare la capacità complessiva di gestione degli errori introducendo risposte di errore basate su standard compatibili con le versioni precedenti dei gestori degli errori OOTB, con maggiore flessibilità e controllo.
 
@@ -142,9 +142,9 @@ Utilizzare [Forms adattivo headless](https://experienceleague.adobe.com/docs/exp
 * creare moduli multi-canale di alta qualità nel linguaggio di programmazione desiderato
 * integrare in modo nativo i moduli nelle app desktop e per dispositivi mobili, nei siti web e nelle applicazioni chat
 * riutilizzare i componenti proprietari dell’interfaccia utente con le applicazioni di Forms
-* sfrutta la potenza di Adobe Experience Manager Forms
+* sfruttare la potenza di Adobe Experience Manager Forms
 
-Puoi inviare un’e-mail a `aem-forms-headless@adobe.com` dal tuo ID e-mail ufficiale per partecipare al programma early adopter.
+È possibile inviare un’e-mail a `aem-forms-headless@adobe.com` dal proprio ID e-mail ufficiale per aderire al programma per i primi utilizzatori.
 
 
 ## Note sulla versione di manutenzione {#maintenance}

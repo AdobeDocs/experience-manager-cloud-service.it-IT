@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -86,7 +86,7 @@ Per aggiungere un nome di dominio personalizzato dalla pagina **Ambienti**, segu
 
 1. Verifica i valori selezionati nella finestra di dialogo **Aggiungi nome di dominio** e fai clic su **Continua**.
 
-   ![Finestra Nome dominio](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+   ![Finestra del nome di dominio](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
    >

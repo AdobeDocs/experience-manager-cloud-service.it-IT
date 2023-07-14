@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1715'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -30,7 +30,7 @@ Prima di iniziare a gestire i frammenti di contenuto, ecco un’introduzione (mo
 
 ### Authoring, Anteprima e Pubblicazione {#author-preview-publish}
 
-Un’installazione AEM è generalmente costituita da tre ambienti:
+Generalmente, l’installazione di AEM è costituita da tre ambienti:
 
 * Autore
 * Pubblicazione
@@ -40,7 +40,7 @@ Accedi e utilizza l’ambiente di authoring per generare i contenuti. Quando è 
 
 Per ulteriori dettagli, consulta i concetti di authoring.
 
-Dalla sezione **Frammenti di contenuto** , puoi anche pubblicare in **Servizio di anteprima**, per il test e la visualizzazione in anteprima, prima della pubblicazione. Consulta Pubblicazione e anteprima di un frammento.
+Dalla console **Frammenti di contenuto**, puoi anche pubblicare nel **Servizio di anteprima**, per il test e la visualizzazione in anteprima, prima della pubblicazione. Consulta Pubblicazione e anteprima di un frammento.
 
 ### Accesso {#signing-in}
 
@@ -272,7 +272,7 @@ Le azioni di pubblicazione sono disponibili nell’editor:
 
 >[!NOTE]
 >
->Puoi anche pubblicare il frammento da **Risorse** o **Frammenti di contenuto** console.
+>Puoi anche pubblicare il frammento dalla console **Risorse** o **Frammenti di contenuto**.
 
 ## Passaggio successivo {#whats-next}
 
@@ -308,13 +308,13 @@ Ora che hai imparato le nozioni di base, il passo successivo è [Scopri come uti
 
    * Pubblicazione
 
-      * Dall’editor, oppure **Risorse** console
+      * Dall’editor, oppure dalla console **Risorse**
 
          * [Pubblicazione rapida](/help/assets/manage-publication.md#quick-publish)
 
          * [Gestisci pubblicazione](/help/assets/manage-publication.md#manage-publication)
 
-      * Dalla sezione **Frammenti di contenuto** Console
+      * Dalla console **Frammenti di contenuto**
 
          * [Pubblicazione e anteprima di un frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
 

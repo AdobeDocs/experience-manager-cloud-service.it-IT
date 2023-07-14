@@ -7,11 +7,11 @@ exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '2461'
-ht-degree: 83%
+ht-degree: 92%
 
 ---
 
-# Varianti - Authoring dei contenuti di frammenti {#variations-authoring-fragment-content}
+# Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
 Le [varianti](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una caratteristica importante dei frammenti di contenuto di AEM, in quanto consentono di creare e modificare copie del contenuto principale da utilizzare su canali e/o scenari specifici, rendendo ancora più flessibile sia l’authoring delle pagine che la distribuzione di contenuti headless.
 
@@ -20,7 +20,7 @@ Dalla scheda **Varianti** è possibile:
 * [Inserire il contenuto](#authoring-your-content) del frammento
 * [Creare e gestire le varianti](#managing-variations) del contenuto **principale**
 
-Esegui una serie di altre azioni a seconda del tipo di dati in fase di modifica; ad esempio:
+Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di modifica, ad esempio:
 
 * [Inserire risorse visive nel frammento](#inserting-assets-into-your-fragment) (immagini)
 
@@ -40,7 +40,7 @@ Esegui una serie di altre azioni a seconda del tipo di dati in fase di modifica;
 
 ## Authoring dei contenuti {#authoring-your-content}
 
-Quando apri il frammento di contenuto per la modifica, il **Varianti** viene aperta per impostazione predefinita. Qui puoi creare il contenuto per l’elemento Principale o per una delle varianti disponibili. Il frammento strutturato contiene vari campi, di vari tipi di dati, definiti nel modello di contenuto.
+Quando apri il frammento di contenuto per la modifica, il **Varianti** viene aperta per impostazione predefinita. Qui puoi creare il contenuto per l’elemento Principale o per una delle varianti disponibili. Il frammento strutturato contiene vari campi, per vari tipi di dati, definiti nel modello di contenuto.
 
 Ad esempio:
 
@@ -48,7 +48,7 @@ Ad esempio:
 
 Operazioni disponibili:
 
-* Apportare modifiche al contenuto direttamente in **Varianti** scheda; ogni tipo di dati fornisce diverse opzioni di modifica, ad esempio:
+* Apporta modifiche al contenuto direttamente nella scheda **Varianti**; ogni tipo di dati fornisce diverse opzioni di modifica, ad esempio:
 
    * Per i campi di **Testo su più righe** è inoltre possibile aprire l’[editor a schermo intero](#full-screen-editor) per:
 
@@ -62,16 +62,16 @@ Operazioni disponibili:
 
    * I [tag](/help/sites-cloud/authoring/features/tags.md) sono particolarmente utili per organizzare i frammenti, in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 
-      * La ricerca di un tag restituisce il frammento ed evidenzia la variante con tag.
-      * I tag di variante possono essere utilizzati anche per raggruppare le varianti per un profilo CDN (Content Delivery Network) specifico (per il caching CDN), invece di utilizzare il nome della variante.
+      * La ricerca di un tag restituirà il frammento ed evidenzierà la variante con tag.
+      * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo Content Delivery Network (CDN) specifico (per la memorizzazione in cache di CDN), invece di utilizzare il nome della variante.
 
-     Ad esempio, puoi assegnare ai frammenti rilevanti il tag &quot;Lancio di Natale&quot; per consentire la navigazione solo come sottoinsieme oppure per copiarli e utilizzarli per un altro lancio futuro in una nuova cartella.
+     Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” in modo da poter visualizzare solo tale sottoinsieme di frammenti, oppure per copiarli in una nuova cartella e utilizzarli per un altro lancio futuro.
 
   >[!NOTE]
   >
-  >**Tag** può essere aggiunto (al **Principale** (variazione) come parte del [Metadati](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+  >I **Tag** possono essere aggiunti (alla variante **Principale**) come parte dei [Metadati](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
-* [Creare e gestire le varianti](#managing-variations) del **Principale** contenuto.
+* [Creare e gestire le varianti](#managing-variations) del contenuto **principale**.
 
 ### Editor a schermo intero {#full-screen-editor}
 
@@ -86,7 +86,7 @@ Verrà aperto l’editor di testo a schermo intero:
 L’editor di testo a schermo intero fornisce:
 
 * accesso a varie [azioni](#actions);
-* a seconda del [formato](#formats), opzioni di formattazione aggiuntive ([Testo formattato](#rich-text)).
+* a seconda del [formato](#formats), opzioni di formattazione aggiuntive ([Testo formattato](#rich-text))
 
 ### Azioni {#actions}
 
@@ -393,7 +393,7 @@ Esistono diversi metodi per aggiungere [immagini](/help/sites-cloud/administerin
 
    >[!CAUTION]
    >
-   Se, dopo aver aggiunto un riferimento a un altro frammento, si modifica il formato in:
+   Se, dopo aver aggiunto un riferimento a un altro frammento, modifichi il formato in:
    >
    * **Testo normale**: il riferimento viene perso completamente dal frammento.
    * **Markdown**, il riferimento verrà mantenuto.
@@ -402,7 +402,7 @@ Esistono diversi metodi per aggiungere [immagini](/help/sites-cloud/administerin
 
 [!CONTEXTUALHELP]
 id="aemcloud_sites_contentfragments_variations"
-title="Varianti - Authoring dei contenuti di frammenti "
+title="Varianti - Authoring dei contenuti di frammenti"
 abstract="Scopri come creare varianti di contenuto da utilizzare con canali specifici."
 additional-url="https://video.tv.adobe.com/v/333295/?captions=ita" text="Varianti dei frammenti di contenuto"
 
@@ -425,7 +425,7 @@ Per creare una nuova variante:
 
    >[!NOTE]
    >
-   Quando crei una nuova variante, tutti **Tag** attualmente assegnato al **Principale** La variante viene copiata nella nuova variante.
+   Quando crei una nuova variante, tutti i **Tag** attualmente assegnati alla variante **Principale** vengono copiati nella nuova variante.
 
 ### Modifica di una variante {#editing-a-variation}
 
@@ -478,7 +478,7 @@ La sincronizzazione è disponibile solo per copiare le modifiche *dall’element
 >
 Viene sincronizzato solo l’elemento corrente della variante.
 >
-La sincronizzazione funziona solo sul **Testo su più righe** tipo di dati.
+La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
 >
 Il trasferimento delle modifiche *da una variante all’elemento **Principale*** non è disponibile come opzione.
 
@@ -496,8 +496,8 @@ Il trasferimento delle modifiche *da una variante all’elemento **Principale***
 
 1. L’elemento Principale e la variante vengono visualizzati affiancati:
 
-   * Il contenuto aggiunto alla variante è indicato in verde.
-   * II contenuto rimosso dalla variante è indicato in rosso.
+   * Il contenuto aggiunto alla variante è indicato in verde
+   * II contenuto rimosso dalla variante è indicato in rosso
    * Il testo sostituito è indicato in blu.
 
    ![sincronizzazione con l’elemento principale](assets/cfm-variations-11c.png)

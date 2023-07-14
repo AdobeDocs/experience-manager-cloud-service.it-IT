@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3084'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ Una volta creato il contenuto nell’istanza di authoring, deve essere pubblicat
 
 ### Servizio di anteprima {#preview}
 
-Prima di pubblicare nell’istanza Publish, puoi anche pubblicare il frammento di contenuto in **Servizio di anteprima** per test e revisione. Questa operazione viene eseguita dal **Frammenti di contenuto** console.
+Prima di pubblicare nell’istanza di pubblicazione, puoi anche pubblicare il frammento di contenuto in **Servizio di anteprima** per il test e la revisione. Questa operazione può essere effettuata tramite la console **Frammenti di contenuto**.
 
 ### Replica {#replication}
 
@@ -172,7 +172,7 @@ Gli autori dei contenuti devono tenere presenti le seguenti best practice.
 
 #### Pianificare la traduzione {#translation}
 
-Pianificare la traduzione all’inizio del progetto. Considerare “specialista della traduzione” colui o colei come utente tipo separato a cui spetta definire quale contenuto dovrebbe essere tradotto e quale no, e quale contenuto tradotto potrebbe essere modificato dai produttori di contenuti regionali o locali. 
+Pianificare la traduzione all’inizio del progetto. Considerare “specialista della traduzione” colui o colei come utente tipo separato a cui spetta definire quale contenuto dovrebbe essere tradotto e quale no, e quale contenuto tradotto potrebbe essere modificato dai produttori di contenuti regionali o locali.
 
 Creare un piano su quali contenuti devono essere tradotti.
 

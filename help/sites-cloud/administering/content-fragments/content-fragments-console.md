@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1103'
-ht-degree: 89%
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ La console Frammenti di contenuto è dedicata a gestione, ricerca e creazione di
 >L’accesso ai frammenti di contenuto attualmente è possibile tramite:
 >
 >* la presente console di **Frammenti di contenuto**;
->* la console **Assets** - vedi [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md).
+>* la console **Assets** - vedi [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md)
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ord
 Nella console sono disponibili diverse azioni utilizzabili direttamente o dopo aver selezionato un frammento specifico:
 
 * Varie azioni sono [disponibili direttamente dalla console](#available-actions)
-* È possibile [selezionare uno o più frammenti di contenuto per visualizzare le azioni disponibili](#actions-selected-content-fragment).
+* È possibile [selezionare uno o più frammenti di contenuto per visualizzare le azioni disponibili](#actions-selected-content-fragment)
 
 ### Azioni (non selezionate) {#actions-unselected}
 
@@ -91,7 +91,7 @@ Alcune azioni sono disponibili dalla console senza selezionare un frammento di c
   >La console **Assets** viene utilizzata per accedere alle risorse, ad esempio immagini, video e così via.  È possibile accedere a questa console:
   >
   >* utilizzando il collegamento **Apri in Assets** (nella console Frammenti di contenuto);
-  >* direttamente dal riquadro di navigazione globale.
+  >* direttamente dal riquadro di navigazione globale
 
 ### Azioni per un frammento di contenuto (selezionato) {#actions-selected-content-fragment}
 
@@ -125,9 +125,9 @@ Passando il puntatore del mouse sul nome della cartella verrà visualizzato il p
    * Solo informazioni
 * **Anteprima**
    * Solo informazioni:
-      * **In sincronia**: frammento di contenuto sincronizzato in **Autore** e **Anteprima** servizi.
-      * **Fuori sincronizzazione**: frammento di contenuto non sincronizzato sulla **Autore** e **Anteprima** servizi. È necessario **Pubblica** a **Anteprima** per garantire che le due istanze tornino ad essere sincronizzate.
-      * vuoto: il frammento di contenuto non esiste nel **Anteprima** servizio.
+      * **In sincronizzazione**: il frammento di contenuto è in sincronizzazione nei servizi di **authoring** e **anteprima**.
+      * **Fuori sincronizzazione**: il frammento di contenuto è fuori sincronizzazione nei servizi di **authoring** e **anteprima**. È necessario **Pubblica** in **Anteprima** per garantire che le due istanze tornino ad essere sincronizzate.
+      * vuoto: il frammento di contenuto non esiste nel servizio di **Anteprima**.
 * **Modificato**
    * Solo informazioni
 * **Modificato da**
@@ -167,8 +167,8 @@ Presenta un elenco di colonne che puoi nascondere o mostrare:
 Il pannello Filtro offre:
 
 * una selezione di predicati; è possibile selezionare uno o più predicati e combinarli per creare il filtro
-* l’opportunità di salvare la configurazione mediante il comando **Salva**.
-* l’opzione di recuperare un filtro di ricerca salvato per il riutilizzo.
+* l’opportunità di salvare la configurazione mediante il comando **Salva**
+* l’opzione di recuperare un filtro di ricerca salvato per il riutilizzo
 
 ![Console Frammenti di contenuto - Filtro](assets/cfc-console-filter.png)
 

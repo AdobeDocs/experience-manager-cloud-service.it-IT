@@ -1,10 +1,10 @@
 ---
-title: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ La sezione seguente illustra le note sulla versione funzionale 2023.2.0 di [!DNL
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione corrente della funzione di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.2.0) è il 12 aprile 2023. La prossima versione (2023.4.0) è prevista per il 7 giugno 2023.
+La data di rilascio della versione corrente della funzione di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.2.0) è il 12 aprile 2023. La prossima versione funzionale (2023.4.0) è pianificata per il 7 giugno 2023.
 
 ## Video sulla versione {#release-video}
 
@@ -35,7 +35,7 @@ Dai un’occhiata al video Panoramica sulla versione di febbraio 2023 per un rie
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nuove funzioni in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
+### Nuove funzioni nella versione prerelease di [!DNL Experience Manager Sites] {#prerelease-sites}
 
 * Esporta frammenti di contenuto da AEM as a Cloud Service in Adobe Target come offerte JSON.
 * Il supporto per la paginazione e l’ordinamento di GraphQL, insieme ai miglioramenti apportati alla memorizzazione nella cache interna, ora consente di migliorare le prestazioni delle applicazioni client separate quando si recuperano set di contenuti di grandi dimensioni da AEM utilizzando query e filtri GraphQL complessi.
@@ -86,7 +86,7 @@ Utilizza i moduli adattivi headless per consentire agli sviluppatori di creare, 
 * creare moduli multi-canale di alta qualità nel linguaggio di programmazione desiderato
 * integrare in modo nativo i moduli nelle app desktop e per dispositivi mobili, nei siti web e nelle applicazioni chat
 * riutilizzare i componenti proprietari dell’interfaccia utente con le applicazioni di Forms
-* sfrutta la potenza di Adobe Experience Manager Forms
+* sfruttare la potenza di Adobe Experience Manager Forms
 
 È possibile inviare un’e-mail all’indirizzo aem-forms-headless@adobe.com dal proprio ID e-mail ufficiale per aderire al programma per i primi utilizzatori.
 

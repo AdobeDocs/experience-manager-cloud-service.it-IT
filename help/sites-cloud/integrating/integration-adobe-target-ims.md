@@ -141,7 +141,7 @@ Seleziona **Visualizza** (a destra di una specifica voce progetto) per visualizz
 
 * Panoramica del progetto
 * Approfondimenti
-* Credenziali 
+* Credenziali
    * Account servizio (JWT)
       * Dettagli delle credenziali
       * Genera JWT
@@ -160,7 +160,7 @@ Tornando a AEM puoi completare la configurazione IMS aggiungendo i valori richie
 1. Qui puoi utilizzare i [dettagli dalla configurazione del progetto nella console Adobe Developer](#details-stored-for-the-ims-integration-project):
 
    * **Titolo**: il tuo testo.
-   * **Server di autorizzazione**: copia/incolla dalla riga `aud` della sezione **Payload** qui sotto (in questo esempio: `https://ims-na1.adobelogin.com`).
+   * **Server di autorizzazione**: copia/incolla dalla riga `aud` della sezione **Payload** qui sotto (in questo esempio: `https://ims-na1.adobelogin.com`)
    * **Chiave API**: copiala dalla sezione [Panoramica](#details-stored-for-the-ims-integration-project) del progetto
    * **Segreto client**: generalo nella sezione [Panoramica](#details-stored-for-the-ims-integration-project) del progetto e copialo
    * **Payload**: copialo dalla sezione [Genera JWT](#details-stored-for-the-ims-integration-project)

@@ -6,7 +6,7 @@ exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 83%
+ht-degree: 92%
 
 ---
 
@@ -359,7 +359,7 @@ Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](
 
 >[!NOTE]
 >
->Il **Configurazione servizio query persistenti** viene utilizzato anche per [configurazione del codice di risposta della query](#configuring-query-response-code).
+>La **Configurazione servizio query persistenti** viene utilizzata anche per [configurare il codice di risposta della query](#configuring-query-response-code).
 
 La configurazione OSGi predefinita per le istanze di pubblicazione:
 
@@ -378,23 +378,25 @@ La configurazione OSGi predefinita per le istanze di pubblicazione:
 
 ## Configurazione del codice di risposta della query {#configuring-query-response-code}
 
-Per impostazione predefinita, il `PersistedQueryServlet` invia un `200` quando esegue una query, indipendentemente dal risultato effettivo.
+Per impostazione predefinita, il `PersistedQueryServlet` invia una risposta `200` quando esegue una query, indipendentemente dal risultato effettivo.
 
-È possibile [configurare le impostazioni OSGi](/help/implementing/deploying/configuring-osgi.md) per **Configurazione servizio query persistenti** per controllare quale codice di stato viene restituito da `/execute.json/persisted-query` endpoint, quando si verifica un errore nella query persistente.
+È possibile [configurare le impostazioni OSGi](/help/implementing/deploying/configuring-osgi.md) per la **Configurazione servizio query persistenti** per controllare quale codice di stato viene restituito dall’endpoint `/execute.json/persisted-query`, quando si verifica un errore nella query persistente.
 
 >[!NOTE]
 >
->Il **Configurazione servizio query persistenti** viene utilizzato anche per [gestione della cache](#cache-osgi-configration).
+>La **Configurazione servizio query persistenti** viene utilizzata anche per la [gestione della cache](#cache-osgi-configration).
 
 Il campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) può essere definito come richiesto:
 
-* `false` (valore predefinito): non importa se la query persistente ha esito positivo o negativo. Il `/execute.json/persisted-query` restituisce il codice di stato `200` e `Content-Type` l’intestazione restituita è `application/json`.
+* `false` (valore predefinito): 
+non importa se la query persistente ha esito positivo o negativo. Il `/execute.json/persisted-query` restituisce il codice di stato `200` e `Content-Type` l’intestazione restituita è `application/json`.
 
-* `true`: l’endpoint restituirà `400` o `500` quando si verifica una forma di errore durante l’esecuzione della query persistente. Inoltre, il restituito `Content-Type` è `application/graphql-response+json`.
+* `true`: 
+secondi i casi, l’endpoint restituirà `400` o `500` quando si verifica qualsiasi tipo di errore durante l’esecuzione della query persistente. Inoltre, il restituito `Content-Type` è `application/graphql-response+json`.
 
   >[!NOTE]
   >
-  >Per maggiori dettagli, visitare il sito https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >Per maggiori dettagli, visita il sito https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Codifica dell’URL della query per l’utilizzo da parte di un’app {#encoding-query-url}
 

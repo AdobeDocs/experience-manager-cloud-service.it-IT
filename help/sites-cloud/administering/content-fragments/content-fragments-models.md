@@ -7,7 +7,7 @@ exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2919'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
    Una volta aperto, l’editor modelli mostra:
 
    * a sinistra: campi già definiti
-   * a destra: **Tipi di dati** disponibili per la creazione di campi, oltre alle **Proprietà** da utilizzare dopo la creazione.
+   * a destra: **Tipi di dati** disponibili per la creazione di campi, oltre alle **Proprietà** da utilizzare dopo la creazione
 
    >[!NOTE]
    >
@@ -183,7 +183,7 @@ Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti d
 
   >[!CAUTION]
   >
-  >Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), qualsiasi **Univoco** I vincoli devono essere rimossi da tutti i tipi di dati utilizzati nei rispettivi modelli per frammenti di contenuto. MSM per frammenti di contenuto è disponibile solo dal **Risorse** console.
+  >Se desideri utilizzare MSM (che crea copie di frammenti di contenuto), qualsiasi vincolo **Univoco** deve essere rimosso da tutti i tipi di dati utilizzati nei rispettivi modelli per frammenti di contenuto. MSM per frammenti di contenuto è disponibile solo dalla console **Risorse**.
 
 * Vedi **[Riferimento contenuto](#content-reference)** per ulteriori dettagli su quel tipo di dati specifico e sulle relative proprietà.
 

@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '4918'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -107,7 +107,7 @@ AEM fornisce funzionalità per convertire le query (entrambi i tipi) in [Query p
 Le [Query persistenti](/help/headless/graphql-api/persisted-queries.md) sono il metodo consigliato da utilizzare nelle istanze di pubblicazione come:
 
 * vengono memorizzate nella cache;
-* sono gestite centralmente da AEM as a Cloud Service.
+* sono gestite centralmente da AEM as a Cloud Service
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ GraphQL supporta anche le richieste GET, ma queste devono sottostare a limiti (a
 
 Puoi testare ed eseguire il debug delle query GraphQL utilizzando [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md).
 
-## Casi d’uso per l’authoring, l’anteprima e la pubblicazione {#use-cases-author-preview-publish}
+## Casi d’uso per authoring, anteprima e pubblicazione {#use-cases-author-preview-publish}
 
 I casi di utilizzo possono dipendere dal tipo di ambiente AEM as a Cloud Service:
 
@@ -251,7 +251,7 @@ GraphQL per AEM supporta un elenco di tipi. Vengono rappresentati tutti i tipi d
 | Enumerazione | `String` | Utilizzato per visualizzare un’opzione da un elenco di opzioni definito durante la creazione del modello |
 | Tag | `[String]` | Utilizzato per visualizzare un elenco di stringhe che rappresentano tag utilizzati in AEM |
 | Riferimento contenuto | `String`, `[String]` | Utilizzato per visualizzare il percorso per un’altra risorsa in AEM |
-| Riferimento frammento |  *Un tipo di modello* <br><br>Campo singolo: `Model` - Tipo di modello, a cui si fa riferimento direttamente <br><br>Multicampo, con un tipo di riferimento: `[Model]` - Array di tipo `Model`, a cui si fa riferimento direttamente dall&#39;array <br><br>Multicampo, con più tipi di riferimento: `[AllFragmentModels]` - Array di tutti i tipi di modello, a cui si fa riferimento da array con tipo di unione | Utilizzato per fare riferimento a uno o più frammenti di contenuto di alcuni tipi di modelli, definiti al momento della creazione del modello |
+| Riferimento frammento |  *Un tipo di modello* <br><br>Campo singolo: `Model` - Tipo di modello, a cui si fa riferimento direttamente <br><br>Multicampo, con un tipo di riferimento: `[Model]` - Array di tipo `Model`, a cui si fa riferimento direttamente dall&#39;array <br><br>Multicampo, con più tipi di riferimento: `[AllFragmentModels]` - Array di tutti i tipi di modello, a cui si fa riferimento da array con tipo di unione |  Utilizzato per fare riferimento a uno o più frammenti di contenuto di alcuni tipi di modelli, definiti al momento della creazione del modello |
 
 {style="table-layout:auto"}
 
@@ -932,12 +932,12 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
    * Vedi [Query di esempio: informazioni su tutte le città](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-* Il filtro `includeVariations` è incluso in `List` e `Paginated` tipi di query.  Per recuperare le varianti di frammenti di contenuto nei risultati della query, `includeVariations` il filtro deve essere impostato su `true`.
+* Il filtro `includeVariations` è incluso nei tipi di query `List` e `Paginated`.  Per recuperare le varianti dei frammenti di contenuto nei risultati della query, il filtro `includeVariations` deve essere impostato su `true`.
 
-   * Consulta [Query di esempio per più frammenti di contenuto e relative varianti di un determinato modello](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   * Consulta la query di esempio [per più frammenti di contenuto, e relative varianti, di un determinato modello](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
-  >Il filtro `includeVariations` e il campo generato dal sistema `_variation` non può essere utilizzato insieme nella stessa definizione di query.
+  >Il filtro `includeVariations` e il campo generato dal sistema `_variation` non possono essere utilizzati insieme nella stessa definizione di query.
 
 * Se vuoi utilizzare un operatore OR logico:
    * utilizza ` _logOp: OR`
@@ -975,7 +975,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
         >[!CAUTION]
         >
-        >Campo generato dal sistema `_variation` non può essere utilizzato insieme al filtro `includeVariations`.
+        >Il campo generato dal sistema `_variation` non può essere utilizzato insieme al filtro `includeVariations`.
 
          * Consulta [Query di esempio: tutte le città con una variante denominata](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
@@ -991,12 +991,12 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
          * [Query di esempio per la distribuzione delle immagini con un singolo parametro specificato](#image-delivery-single-specified-parameter)
 
-   * `_tags` : per visualizzare gli ID dei frammenti di contenuto o delle varianti che contengono tag; si tratta di un array di `cq:tags` identificatori.
+   * `_tags` : per visualizzare gli ID dei frammenti di contenuto o delle varianti che contengono tag; si tratta di un array di identificatori `cq:tags`.
 
-      * Consulta [Query di esempio: nomi di tutte le città con tag City Breaks](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
-      * Consulta [Query di esempio per le varianti di frammenti di contenuto di un determinato modello a cui è associato un tag specifico](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
-      * Consulta [Query di esempio con filtro per ID _tags ed escluse le varianti](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
-      * Consulta [Query di esempio con filtro per ID _tags e varianti incluse](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+      * Consulta la [Query di esempio - Nomi di tutte le città classificate come Soggiorni in città](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * Consulta la [Query di esempio per le varianti dei frammenti di contenuto di un determinato modello a cui è assegnato un tag specifico](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * Consulta la [Query di esempio con filtro per ID _tags e varianti di esclusione](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * Consulta la [Query di esempio con filtro per ID _tags e varianti di inclusione](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
 
      >[!NOTE]
      >

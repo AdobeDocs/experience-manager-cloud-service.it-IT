@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1144'
-ht-degree: 83%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query G
 * eseguire le query per visualizzare immediatamente i risultati;
 * gestire **variabili di query**;
 * salvare e gestire **query persistenti**;
-* pubblicare o annullare la pubblicazione, **Query persistenti**, al tuo **Pubblica** o **Anteprima** servizio; ad esempio, a/da `dev-publish`
+* pubblicare o annullare la pubblicazione di **query persistenti** sul servizio **Pubblica** o **Anteprima**; ad esempio, a/da `dev-publish`
 * vedere la **cronologia** delle query precedenti;
 * utilizzare **Esplora documentazione** per accedere alla documentazione, per scoprire e comprendere i metodi disponibili.
 
@@ -60,7 +60,7 @@ Puoi inserire la nuova query nell’editor, che si trova nel pannello centrale a
 A questo punto è sufficiente iniziare a digitare. L’editor, inoltre:
 
 * mostra ulteriori informazioni sugli elementi al passaggio del mouse;
-* fornisce funzioni quali evidenziazione della sintassi, completamento automatico e suggerimento automatico.
+* fornisce funzioni quali evidenziazione della sintassi, completamento automatico e suggerimento automatico
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Puoi eseguire immediatamente una nuova query oppure caricare ed eseguire una que
 In entrambi i casi, la query visualizzata nel pannello dell’editor è quella eseguita quando:
 
 * tocchi o fai clic sull’icona **Esegui query**;
-* utilizzi la scelta rapida di tastiera `Control-Enter`.
+* utilizzi la scelta rapida di tastiera `Control-Enter`
 
 ## Variabili di query {#query-variables}
 
@@ -133,11 +133,11 @@ Le cache possono continuare a fornire una risposta dalla cache in caso di errore
 
 ## Pubblicazione e anteprima delle query persistenti {#publishing-previewing-persisted-queries}
 
-Dopo aver selezionato la query persistente dall’elenco (pannello a sinistra), puoi utilizzare **Pubblica** azione.
+Dopo aver selezionato la query persistente dall’elenco (pannello a sinistra), puoi utilizzare l’azione **Pubblica**.
 
-La query verrà attivata nell’ambiente selezionato. È possibile scegliere **Pubblica** ambiente (ad esempio, `dev-publish`) o **Anteprima** per un facile accesso da parte delle applicazioni durante il test.
+La query verrà attivata nell’ambiente selezionato. È possibile scegliere **Pubblica** ambiente (ad esempio, `dev-publish`) o **Anteprima** ambiente per un facile accesso da parte delle applicazioni durante il test.
 
-![GraphiQL - Query persistente pubblicata](assets/cfm-graphiql-publish.png "GraphiQL - Pubblica query persistente")
+![GraphiQL: query persistente pubblicata](assets/cfm-graphiql-publish.png "GraphiQL: pubblica query persistente")
 
 >[!NOTE]
 >
@@ -145,13 +145,13 @@ La query verrà attivata nell’ambiente selezionato. È possibile scegliere **P
 
 ## Annullamento della pubblicazione delle query persistenti {#unpublishing-persisted-queries}
 
-Come per la pubblicazione, dopo aver selezionato la query persistente dall’elenco (pannello a sinistra) puoi utilizzare **Annulla pubblicazione** azione.
+Come per la pubblicazione, dopo aver selezionato la query persistente dall’elenco (pannello a sinistra) puoi utilizzare l’azione **Annulla pubblicazione**.
 
-In questo modo la query verrà disattivata dall’ambiente selezionato, **Pubblica** o il tuo **Anteprima** ambiente.
+In questo modo la query verrà disattivata dall’ambiente selezionato, sia per l’ambiente **Pubblica** che per quello di **Anteprima**.
 
 >[!NOTE]
 >
->È inoltre necessario assicurarsi di aver apportato le modifiche necessarie all&#39;applicazione client per evitare potenziali problemi.
+>È inoltre necessario assicurarsi di aver apportato le modifiche necessarie all’applicazione client per evitare potenziali problemi.
 
 ## Copiare l’URL per accedere direttamente alla query {#copy-url}
 

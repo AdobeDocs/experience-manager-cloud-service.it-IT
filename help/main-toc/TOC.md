@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: af26c42ddd1594e5622e9b32334ce5508d097582
 workflow-type: tm+mt
 source-wordcount: '4174'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -145,7 +145,7 @@ ht-degree: 97%
          + [Note sulla versione 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Note sulla versione del connettore avanzato Workfront per Experience Manager {#workfront}
       + [Note aggiornate sulla versione del connettore avanzato Workfront per Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + [Novità ](/help/release-notes/what-is-new.md)
+   + [Novità](/help/release-notes/what-is-new.md)
    + [Modifiche di rilievo in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Funzioni obsolete e rimosse](/help/release-notes/deprecated-removed-features.md)
    + [API obsolete](/help/release-notes/deprecated-apis.md)
@@ -211,9 +211,9 @@ ht-degree: 97%
       + Analisi delle best practice {#best-practices-analyzer}
          + [Panoramica](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Utilizzo di Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
-      + Content Transformer {#content-transformer}
+      + Trasformatore di contenuti {#content-transformer}
          + [Panoramica](/help/journey-migration/content-transformer/overview.md)
-         + [Utilizzo di Content Transformer](/help/journey-migration/content-transformer/using.md)
+         + [Utilizzo del trasformatore di contenuti](/help/journey-migration/content-transformer/using.md)
       + Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
          + [Panoramica](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
@@ -236,7 +236,7 @@ ht-degree: 97%
       + [Esperienza unificata](/help/journey-migration/unified-experience.md)
       + [Modernizzatore dell&#39;archivio](/help/journey-migration/refactoring-tools/repo-modernizer.md)
       + [Convertitore indice](/help/journey-migration/refactoring-tools/index-converter.md)
-      + [Asset Workflow Migration (Migrazione flussi di lavoro per risorse) ](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+      + [Asset Workflow Migration (Migrazione flussi di lavoro per risorse)](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [Strumenti di modernizzazione AEM](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
@@ -274,7 +274,7 @@ ht-degree: 97%
          + [Modelli di pagina](/help/sites-cloud/authoring/features/templates.md)
          + [Sistema di stili](/help/sites-cloud/authoring/features/style-system.md)
          + [Versioni di pagina](/help/sites-cloud/authoring/features/page-versions.md)
-         + [Differenze tra pagine ](/help/sites-cloud/authoring/features/page-diff.md)
+         + [Differenze tra pagine](/help/sites-cloud/authoring/features/page-diff.md)
          + [Console Componenti](/help/sites-cloud/authoring/features/components-console.md)
          + [Layout reattivo](/help/sites-cloud/authoring/features/responsive-layout.md)
          + [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md)
@@ -315,7 +315,7 @@ ht-degree: 97%
          + [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
          + [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
          + [Gestione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
-         + [Varianti - Authoring dei contenuti di frammenti ](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+         + [Varianti - Authoring dei contenuti di frammenti](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
          + [Contenuti associati a frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
          + [Metadati - Proprietà dei frammenti](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
          + [Frammenti di contenuto - Considerazioni sull’eliminazione](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
@@ -376,18 +376,18 @@ ht-degree: 97%
       + [Configurazione IMS da utilizzare per l’integrazione con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
-      + [Integrazione con Adobe Campaign ](/help/sites-cloud/integrating/campaign.md)
+      + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [Panoramica e novità](/help/assets/overview.md)
-   + [Modifiche di rilievo apportate a  [!DNL Assets]  as a  [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
+   + [Modifiche di rilievo apportate a [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] architettura](/help/assets/architecture.md)
    + [Formati di file supportati](/help/assets/file-format-support.md)
    + [Panoramica dei microservizi per le risorse](/help/assets/asset-microservices-overview.md)
    + [Accessibilità in [!DNL Assets]](/help/assets/accessibility.md)
    + Consente di gestire i contenuti digitali {#manage}
       + [Selettore risorse micro front-end](/help/assets/asset-selector.md)
-      + [Selettore di destinazione micro-front-end](/help/assets/destination-selector.md)
+      + [Selettore di destinazione micro front-end](/help/assets/destination-selector.md)
       + [Condividere le risorse](/help/assets/share-assets.md)
       + [Monitorare attività e attività DAM](/help/assets/assets-activity-history.md)
       + [Introduzione all’utilizzo dei microservizi per le risorse](/help/assets/asset-microservices-configure-and-use.md)
@@ -415,7 +415,7 @@ ht-degree: 97%
       + [Creazione e condivisione di cartelle private](/help/assets/private-folder.md)
       + [Digital Rights Management per le risorse](/help/assets/drm.md)
       + [Risorse filigrana](/help/assets/watermark-assets.md)
-      + [Elaborare risorse utilizzando  [!DNL Creative Cloud]  API](/help/assets/cc-api-integration.md)
+      + [Elaborare risorse utilizzando [!DNL Creative Cloud] API](/help/assets/cc-api-integration.md)
       + [Tag colore per immagini](/help/assets/color-tag-images.md)
       + [Gestire i documenti PDF](/help/assets/manage-pdf-documents.md)
    + Configurare, amministrare ed estendere [!DNL Assets] {#admin}
@@ -436,16 +436,16 @@ ht-degree: 97%
       + [Importare ed esportare i metadati delle risorse](/help/assets/metadata-import-export.md)
       + [Configurare le restrizioni di caricamento delle risorse](/help/assets/configure-asset-upload-restrictions.md)
    + Condividere e distribuire le risorse {#brand-portal}
-      + [Configurare  [!DNL Assets]  con  [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [Configurare [!DNL Assets] con [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Pubblicare risorse su [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [Pubblicare risorse da  [!DNL Brand Portal]  su  [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=it)
+      + [Pubblicare risorse da [!DNL Brand Portal] su [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=it)
    + Frammenti di contenuto {#content-fragments}
       + [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
       + [Distribuzione headless con frammenti di contenuto e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
       + [Abilita funzionalità frammento di contenuto per la tua istanza](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
       + [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md)
-      + [Varianti - Authoring dei contenuti di frammenti ](/help/assets/content-fragments/content-fragments-variations.md)
+      + [Varianti - Authoring dei contenuti di frammenti](/help/assets/content-fragments/content-fragments-variations.md)
       + [Contenuti associati a frammenti di contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [Metadati - Proprietà dei frammenti](/help/assets/content-fragments/content-fragments-metadata.md)
       + [Frammenti di contenuto - Considerazioni sull’eliminazione](/help/assets/content-fragments/content-fragments-delete.md)
@@ -524,9 +524,9 @@ ht-degree: 97%
    + Integrazione con Adobe Workfront {#integrations}
       + [Integrazioni con [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configurare la mappatura dei metadati delle risorse](/help/assets/configure-asset-metadata-mapping.md)
-      + [Installa  [!DNL enhanced connector]  per  [!DNL Workfront]](/help/assets/workfront-connector-install.md)
+      + [Installa [!DNL enhanced connector] per [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Rimuovere le dipendenze esterne per le installazioni esistenti](/help/assets/remove-external-dependencies.md)
-      + [Configura  [!DNL enhanced connector]  per  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Configura [!DNL enhanced connector] per [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Aggiornare [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
    + Panoramica {#forms-overview}
@@ -539,9 +539,9 @@ ht-degree: 97%
    + Configurare e migrare {#setup-configure-migrate}
       + [Ambiente integrato a Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configurare un ambiente di sviluppo locale](/help/forms/setup-local-development-environment.md)
-      + [Abilitare i componenti core Adaptive Forms nell’ambiente di sviluppo as a Cloud Service e locale di AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+      + [Abilitare i componenti core dei moduli adattivi in AEM Forms as a Cloud Service e nell’ambiente di sviluppo locale](/help/forms/enable-adaptive-forms-core-components.md)
       + [Configurare connettore di archiviazione unificata](/help/forms/configure-unified-storage-connector.md)
-      + [Migrare da  [!DNL AEM 6.5 Forms]  o precedenti verso  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [Migrare da [!DNL AEM 6.5 Forms] o precedenti verso [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppi e autorizzazioni](/help/forms/forms-groups-privileges-tasks.md)
       + [Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse](/help/forms/import-export-forms-templates.md)
    + Integrare {#integrate}
@@ -554,9 +554,9 @@ ht-degree: 97%
       + Modello dati modulo {#use-form-data-model}
          + [Collegare le origini dati al Cloud Service](/help/forms/data-integration.md)
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
-         + [Configurazione  [!DNL Microsoft Dynamics]  OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Configura  [!DNL Azure]  archiviazione](/help/forms/configure-azure-storage.md)
-         + [Configurazione  [!DNL Microsoft Dynamics 365]  e  [!DNL Salesforce]  servizi cloud](/help/forms/configure-msdynamics-salesforce.md)
+         + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+         + [Configura [!DNL Azure] archiviazione](/help/forms/configure-azure-storage.md)
+         + [Configurazione [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud](/help/forms/configure-msdynamics-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
@@ -867,7 +867,7 @@ ht-degree: 97%
          + [Utilizzo di Sling Resource Merger in AEM as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md)
          + [Sovrapposizioni in AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
          + [Utilizzo delle librerie lato client](/help/implementing/developing/introduction/clientlibs.md)
-         + [Differenze tra pagine ](/help/implementing/developing/introduction/page-diff.md)
+         + [Differenze tra pagine](/help/implementing/developing/introduction/page-diff.md)
          + [Limitazioni per l’editor](/help/implementing/developing/introduction/editor-limitations.md)
          + [Convenzioni di denominazione](/help/implementing/developing/introduction/naming-conventions.md)
          + Componenti e modelli {#components-templates}

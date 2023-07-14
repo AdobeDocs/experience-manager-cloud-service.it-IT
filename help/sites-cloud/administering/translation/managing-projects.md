@@ -311,7 +311,7 @@ La tabella seguente descrive ogni stato di un processo o di un elemento del proc
 
 | Stato | Descrizione |
 |---|---|
-| **Bozza** | Il processo di traduzione non è stato avviato. I processi di traduzione sono in **Bozza** stato al momento della creazione. |
+| **Bozza** | Il processo di traduzione non è stato avviato. I processi di traduzione sono in stato **Bozza** al momento della creazione. |
 | **Inviato** | I file nel processo di traduzione sono in questo stato quando risultano inviati correttamente al servizio di traduzione. Questo stato può verificarsi dopo l’esecuzione del comando **Richiedi valutazione** o **Avvia**. |
 | **Valutazione richiesta** | Per il flusso di lavoro di traduzione umana, i file nel processo sono stati inviati al fornitore di traduzione per una valutazione. Questo stato viene visualizzato l’emissione del comando **Richiedi valutazione**. |
 | **Valutazione completata** | Il fornitore ha valutato il processo di traduzione. |
@@ -344,7 +344,7 @@ Specifica la data prima della quale il fornitore di traduzione deve restituire i
 
 La valutazione di un processo di traduzione serve per ottenere una stima del costo dal fornitore del servizio. Quando si esegue la valutazione di un processo, i file di origine vengono inviati al fornitore di traduzione che confronta il testo con il proprio pool di traduzioni memorizzate (memoria di traduzione). In genere, la valutazione corrisponde al numero di parole che devono essere tradotte.
 
-Per ottenere ulteriori informazioni sui risultati dell’ambito, contatta il fornitore di traduzione.
+Per ulteriori informazioni sui risultati dell’ambito, contatta il fornitore di traduzione.
 
 >[!NOTE]
 >
@@ -444,7 +444,7 @@ Per confrontare le copie per lingua con il master:
    ![Confronta copie per lingua](../assets/language-copy-compare.png)
 
 1. Le due pagine (lancio e sorgente) vengono aperte una accanto all’altra.
-   * Per informazioni complete sull’utilizzo di questa funzione, consulta [Differenza di pagina](/help/sites-cloud/authoring/features/page-diff.md).
+   * Per informazioni complete sull’utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Spostamento o ridenominazione di una pagina di origine {#move-source}
 

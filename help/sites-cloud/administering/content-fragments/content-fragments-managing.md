@@ -7,7 +7,7 @@ exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '2052'
-ht-degree: 76%
+ht-degree: 84%
 
 ---
 
@@ -131,7 +131,7 @@ Naviga tra le varie modalità utilizzando le icone nel pannello laterale:
 * Varianti: [Modifica del contenuto](#editing-the-content-of-your-fragment) e [Gestione delle varianti](#creating-and-managing-variations-within-your-fragment)
 
 * [Annotazioni](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [Contenuto associato ](#associating-content-with-your-fragment)
+* [Contenuto associato](#associating-content-with-your-fragment)
 * [Metadati](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 * [Albero struttura](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
 * [Anteprima](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
@@ -241,23 +241,23 @@ Puoi visualizzare e modificare le proprietà di un frammento utilizzando la sche
 
 Puoi pubblicare i frammenti di contenuto in:
 
-* il **[Servizio di pubblicazione](/help/overview/architecture.md#runtime-architecture)** - per l&#39;accesso pubblico completo
+* **[Servizio di pubblicazione](/help/overview/architecture.md#runtime-architecture)**: per l’accesso del pubblico completo
 
-* il **[Servizio di anteprima](/help/overview/architecture.md#runtime-architecture)** - per visualizzare l&#39;anteprima dei contenuti prima della loro completa disponibilità
+* **[Servizio di anteprima](/help/overview/architecture.md#runtime-architecture)**: per visualizzare l’anteprima dei contenuti prima della loro completa disponibilità
 
   >[!CAUTION]
   >
-  Pubblicazione di frammenti di contenuto in **Servizio di anteprima** è disponibile solo da [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); utilizzo di **Pubblica** azione.
+  La pubblicazione di frammenti di contenuto nel **Servizio di anteprima** è disponibile solo dalla [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) utilizzando l’azione **Pubblica**.
 
   >[!NOTE]
   >
   Per ulteriori dettagli sugli ambienti di anteprima, consulta:
   >
-  * [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+  * [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [Configurazione delle impostazioni OSGi per il livello di anteprima](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
   * [Eseguire il debug dell’ambiente di anteprima tramite Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
-Per pubblicare i frammenti di contenuto utilizzando **Pubblica** nella barra degli strumenti del [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
+Per pubblicare i frammenti di contenuto utilizzando l’opzione **Pubblica** nella barra degli strumenti della [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
 >
@@ -267,18 +267,18 @@ Se pubblichi un frammento di contenuto per il quale il modello non è ancora sta
 
 1. Seleziona uno o più frammenti dall’elenco.
 
-1. Dalla barra degli strumenti, seleziona **Pubblica** e quindi una delle seguenti opzioni per aprire la finestra di dialogo appropriata:
+1. Dalla barra degli strumenti, seleziona **Pubblica** e quindi, per aprire la finestra di dialogo appropriata, una delle seguenti opzioni:
 
    * **Ora** - selezionare una delle seguenti opzioni **Servizio di pubblicazione** o **Servizio di anteprima**; dopo la conferma, il frammento viene pubblicato immediatamente
    * **Pianificazione** : oltre al servizio richiesto, puoi anche selezionare la data e l’ora di pubblicazione del frammento
 
-   Se necessario, è necessario specificare i riferimenti da pubblicare. Per impostazione predefinita, i riferimenti vengono pubblicati anche nel servizio di anteprima per garantire che non vi siano interruzioni nel contenuto.
+   Se necessario, è necessario specificare i riferimenti da pubblicare. Per impostazione predefinita, i riferimenti vengono pubblicati anche nel Servizio di anteprima per garantire che non vi siano interruzioni nel contenuto.
 Ad esempio, per una richiesta di pubblicazione pianificata:
    ![Finestra di dialogo Pubblica](assets/cfm-publish-01.png)
 
 1. Conferma l’azione di pubblicazione.
 
-Puoi anche pubblicare in **Servizio di pubblicazione** dal [Editor frammento di contenuto](#toolbar-actions-in-the-content-fragment-editor) utilizzando:
+Puoi anche pubblicare nel **Servizio di pubblicazione** dall’[Editor frammento di contenuto](#toolbar-actions-in-the-content-fragment-editor) utilizzando:
 * **Pubblicazione rapida**
 * **Gestisci pubblicazione**
 
@@ -292,7 +292,7 @@ Dopo la pubblicazione, il riferimento o entrambi i tipi di frammento, AEM visual
 
 ## Annullamento della pubblicazione di un frammento {#unpublishing-a-fragment}
 
-Per annullare la pubblicazione dei frammenti di contenuto, seleziona uno o più frammenti, quindi **Annulla pubblicazione** nella barra degli strumenti del [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). Puoi selezionare **Ora** o **Pianificato**.
+Per annullare la pubblicazione dei frammenti di contenuto, seleziona uno o più frammenti, quindi **Annulla pubblicazione** nella barra degli strumenti della [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). Puoi selezionare **Ora** oppure **Pianificato**.
 
 Quando viene visualizzata la relativa finestra di dialogo, è possibile selezionare il servizio appropriato:
 ![Finestra di dialogo Annulla pubblicazione](assets/cfm-unpublish-01.png)

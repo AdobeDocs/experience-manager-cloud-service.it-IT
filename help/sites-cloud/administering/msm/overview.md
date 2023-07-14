@@ -7,7 +7,7 @@ exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2706'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Questa pagina fornisce una panoramica del riutilizzo dei contenuti con MSM. Nell
 
 >[!NOTE]
 >
->MSM può essere utilizzato anche per le risorse, inclusi i frammenti di contenuto. Per maggiori dettagli vedi [Riutilizzare i frammenti di contenuto con MSM per le risorse](/help/assets/reuse-assets-using-msm.md) (disponibile solo tramite la console Risorse ).
+>MSM può essere utilizzato anche per Assets, inclusi i frammenti di contenuto. Per maggiori dettagli consulta [Riutilizzare i frammenti di contenuto con MSM per Assets](/help/assets/reuse-assets-using-msm.md) (disponibile solo tramite la console Assets).
 
 ## Scenari possibili {#possible-scenarios}
 
