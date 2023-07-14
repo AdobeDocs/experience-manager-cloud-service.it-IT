@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
 source-git-commit: 0d7d89e0d8343e7e00fdecb91a20dd7d4a736851
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -24,6 +24,7 @@ Puoi visualizzare e modificare i metadati (proprietà) dei frammenti di contenut
 
    * Seleziona [**Visualizza proprietà** per aprire le finestre di dialogo](/help/assets/manage-digital-assets.md#editing-properties). Una volta aperte e visualizzate le proprietà, puoi anche modificarle.
    * Apri il frammento di contenuto per la modifica, quindi seleziona **Metadati** dal pannello laterale.
+
    ![metadati](assets/cfm-metadata-01.png)
 
 3. La scheda **Base** fornisce alcune opzioni che è possibile visualizzare o modificare:
@@ -36,9 +37,11 @@ Puoi visualizzare e modificare i metadati (proprietà) dei frammenti di contenut
       * I [tag](/help/sites-cloud/authoring/features/tags.md) sono particolarmente utili per organizzare i frammenti, in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” in modo da poter viualizzare solo tale sottoinsieme di frammenti, oppure per copiarli in una nuova cartella e utilizzarli per un altro lancio futuro.
 
-         >[!NOTE]
-         >
-         >**Tag** può essere aggiunto anche quando [authoring dei contenuti della variante](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e quando [creazione di varianti](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+        >[!NOTE]
+        >
+        >**Tag** possono essere aggiunti anche durante l’[authoring dei contenuti della variante](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e quando [vengono create varianti](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+
    * **Creato** (solo visualizzazione)
+
    Ad esempio:
    ![metadati](assets/cfm-metadata-02.png)
