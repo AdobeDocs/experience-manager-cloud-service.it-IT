@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 241dcc75e9f2c840be85c34800d8145457baa58d
+source-git-commit: eca0903050bb178f13d37073f8d65354f4bf36d3
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 43%
+source-wordcount: '283'
+ht-degree: 41%
 
 ---
 
@@ -34,6 +34,7 @@ Di seguito sono riepilogati i continui miglioramenti per la versione di manutenz
 - Guide AEM: vari miglioramenti e correzioni di stabilità per Native PDF
 - SKYOPS-53130: migliorare il supporto dello strumento CA in RDE
 - SKYOPS-57146: Correggere il deadlock di Sling all’avvio dell’AEM
+- SKYOPS-61646: la data dell’ultima replica non viene aggiornata dopo l’aggiornamento alle 12585 sulla versione
 
 ### Problemi noti {#known-issues-12697}
 
