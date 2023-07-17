@@ -2,10 +2,10 @@
 title: Inserimento di contenuto in Target
 description: Inserimento di contenuto in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 12%
+source-wordcount: '1925'
+ht-degree: 11%
 
 ---
 
@@ -155,7 +155,7 @@ Se Release Orchestrator è ancora in esecuzione all’avvio di un’acquisizione
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### Acquisizione integrativa non riuscita
+### Errore di acquisizione integrativa a causa di violazione del vincolo di unicità
 
 Una causa comune di [Acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) errore è un conflitto negli id dei nodi. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come quella seguente:
 
@@ -166,6 +166,18 @@ Questa situazione può verificarsi se un nodo viene spostato sull’origine tra 
 Può anche accadere se un nodo sul target viene spostato tra un’acquisizione e una successiva acquisizione integrativa.
 
 Questo conflitto deve essere risolto manualmente. Chi ha familiarità con il contenuto deve decidere quale dei due nodi deve essere eliminato, tenendo presente gli altri contenuti che vi fanno riferimento. La soluzione può richiedere che l’estrazione integrativa venga eseguita nuovamente senza il nodo problematico.
+
+### Acquisizione integrativa non riuscita a causa dell’impossibilità di eliminare il nodo di riferimento
+
+Un’altra causa comune di [Acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) errore è un conflitto di versione per un particolare nodo nell’istanza di destinazione. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come quella seguente:
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity001: impossibile eliminare il nodo a cui si fa riferimento: 8a2289f4-b904-4bd0-8410-15e41e0976a8
+
+Questo può accadere se un nodo sulla destinazione viene modificato tra un’acquisizione e una successiva acquisizione integrativa in modo che sia stata creata una nuova versione. Se per l’acquisizione sono abilitate le &quot;versioni di inclusione&quot;, potrebbe verificarsi un conflitto in quanto la destinazione dispone ora di una versione più recente a cui fa riferimento la cronologia delle versioni e altro contenuto. Il processo di acquisizione non sarà in grado di eliminare il nodo della versione che genera l’infrazione perché vi si fa riferimento.
+
+La soluzione può richiedere che l’estrazione integrativa venga eseguita nuovamente senza il nodo problematico. Oppure, creando un piccolo set di migrazione del nodo problematico, ma con &quot;include versions&quot; disabilitato.
+
+Le best practice indicano che, se un’acquisizione deve essere eseguita con wipe=false e &quot;include versions&quot;=true, è fondamentale che il contenuto della destinazione venga modificato il meno possibile, fino al completamento del percorso di migrazione. In caso contrario, possono verificarsi tali conflitti.
+
 
 ## Passaggio successivo {#whats-next}
 
