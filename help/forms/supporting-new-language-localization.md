@@ -4,14 +4,19 @@ seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms consente di aggiungere nuove lingue per la localizzazione dei moduli adattivi. Inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-taiwanese (zh-TW) e coreano (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 0%
+source-wordcount: '1210'
+ht-degree: 1%
 
 ---
 
 # Supporto di nuove lingue per la localizzazione di Forms adattivi {#supporting-new-locales-for-adaptive-forms-localization}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 AEM Forms fornisce supporto predefinito per le lingue inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR). È possibile aggiungere il supporto anche per altre impostazioni internazionali, come Hindi(hi_IN).
 

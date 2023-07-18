@@ -2,14 +2,19 @@
 title: Generare un documento di record per Adaptive Forms
 description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4086'
 ht-degree: 2%
 
 ---
 
 # Generare un documento di record per moduli adattivi
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 ## Panoramica {#overview}
 
@@ -359,6 +364,7 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
       * **Testo liberatoria**: testo della liberatoria.
 
       ![Proprietà pagina mastro](/help/forms/assets/masterpagepropertiesdor.png)
+
    >[!NOTE]
    >
    >Se utilizzi un modello di modulo adattivo creato con una versione di Designer precedente alla 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, accertati che nel modello di modulo adattivo nel sottomodulo principale sia presente quanto segue:

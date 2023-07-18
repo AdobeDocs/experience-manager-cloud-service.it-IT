@@ -2,7 +2,7 @@
 title: Ripetibilità in modulo adattivo (componenti core)
 description: Utilizzate la funzione di ripetibilità dei componenti del pannello per ripetere sezioni simili in un modulo adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 1%
@@ -97,6 +97,7 @@ L’elemento padre del pannello deve contenere un pulsante Elimina per eliminare
    * Per creare un pulsante Elimina pannello, specifica `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
    Clic **Fine**.
+>[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >

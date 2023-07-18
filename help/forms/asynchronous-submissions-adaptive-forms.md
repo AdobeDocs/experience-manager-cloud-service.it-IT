@@ -5,14 +5,21 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 0%
+source-wordcount: '748'
+ht-degree: 1%
 
 ---
 
 # Invio asincrono di Adaptive Forms {#asynchronous-submission-of-adaptive-forms}
+
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html) |
+| AEM as a Cloud Service | Questo articolo |
+
 
 In genere, i moduli web sono configurati per l’invio sincrono. Nell’invio sincrono, quando gli utenti inviano un modulo vengono reindirizzati a una pagina di conferma, a una pagina di ringraziamento oppure, in caso di invio non riuscito, a una pagina di errore. Tuttavia, le moderne esperienze web come le applicazioni a pagina singola stanno guadagnando popolarità, dove la pagina web rimane statica mentre l’interazione client-server avviene in background. Puoi configurare l’invio asincrono per fornire questa esperienza con Adaptive Forms.
 

@@ -2,14 +2,19 @@
 title: Come si aggiungono le variabili nei passaggi del flusso di lavoro AEM?
 description: Scopri come creare una variabile, impostarne un valore e utilizzarla in [!DNL AEM Forms] Passaggi del flusso di lavoro.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2060'
-ht-degree: 0%
+source-wordcount: '2080'
+ht-degree: 1%
 
 ---
 
 # Variabili nei flussi di lavoro AEM incentrati su Forms {#variables-in-aem-forms-workflows}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al relativo tipo di dati. Puoi utilizzare il nome della variabile in qualsiasi passaggio del flusso di lavoro per recuperare il valore memorizzato nella variabile. È inoltre possibile utilizzare i nomi delle variabili per definire le espressioni per l&#39;adozione delle decisioni di instradamento.
 

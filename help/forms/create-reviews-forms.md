@@ -4,14 +4,20 @@ seo-title: Creating and managing reviews in forms
 description: Una revisione è un meccanismo che consente a uno o più revisori di aggiungere commenti a un modulo.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
-source-git-commit: 3efd7d81424369ce6430802373129ab91b7356ab
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 0%
+source-wordcount: '672'
+ht-degree: 1%
 
 ---
 
 # Creazione e gestione delle revisioni ai moduli{#creating-and-managing-reviews-to-forms}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 ## Recensione {#review}
 
@@ -35,7 +41,6 @@ Una revisione è un meccanismo che consente a uno o più revisori di aggiungere 
    >* L’amministratore può accedere a tutti i gruppi associati agli utenti del modulo.
    >* Il gruppo Utenti del servizio non è disponibile per la selezione per la revisione.
 
-
 ### Azioni che si verificano quando viene impostata una revisione {#actions-that-occur-when-a-review-is-set-up}
 
 Questa sezione descrive cosa accade quando si crea o si configura una revisione.
@@ -55,7 +60,6 @@ Questa sezione descrive cosa accade quando si crea o si configura una revisione.
 >
 >* È possibile modificare solo le revisioni in corso.
 >* Le recensioni completate non possono essere modificate.
-
 
 1. Passare alla scheda Moduli e selezionare un modulo.
 
@@ -107,4 +111,5 @@ Questa sezione descrive cosa accade il **Revisione aggiornamento/fine**:
    1. **Revisori**: per ogni revisore, l’attività incompleta correlata alla revisione viene terminata. L’attività non viene più visualizzata come &quot;In sospeso&quot; nella sezione Notifiche del revisore.
    1. **Iniziatore**: l&#39;attività assegnata all&#39;iniziatore di revisione è contrassegnata come completata. L&#39;attività viene rimossa dalla sezione Notifica dell&#39;iniziatore di revisione.
    1. **Tutti**: la revisione viene visualizzata nella sezione Revisioni precedenti. Non è possibile aggiungere altri commenti.
+
    ![revisione completata](assets/review-complete-imgg.png)

@@ -5,15 +5,21 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3097'
-ht-degree: 0%
+source-wordcount: '3117'
+ht-degree: 1%
 
 ---
 
 
 # Utilizzo di [!DNL Adobe Sign] in un modulo adattivo {#using-adobe-sign-in-an-adaptive-form}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM as a Cloud Service | Questo articolo |
+
 
 [!DNL Adobe Sign] abilita i flussi di lavoro di firma elettronica per Adaptive Forms. Le firme elettroniche migliorano i flussi di lavoro per l&#39;elaborazione di documenti per questioni legali, vendite, retribuzioni, gestione delle risorse umane e altre aree.
 
@@ -73,6 +79,7 @@ Per creare un modulo adattivo abilitato alla firma:
    1. Specifica la **[!UICONTROL Nome]** e **[!UICONTROL Titolo]** per il modulo adattivo.
 
    1. Seleziona la [Contenitore configurazione](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creato durante [integrazione [!DNL Adobe Sign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+
    Il contenitore di configurazione contiene [!DNL Adobe Sign] Cloud Services configurati per l’ambiente. Questi servizi sono disponibili per la selezione nell’editor di moduli adattivi.
 
 1. In **[!UICONTROL Modello modulo]** , selezionare una delle opzioni seguenti:
@@ -114,7 +121,6 @@ Per aggiungere campi a un modulo adattivo e personalizzare varie opzioni relativ
    >
    >  * Utilizzo di [!DNL Adobe Sign] il blocco non è obbligatorio [!DNL Adobe Sign] in un modulo adattivo. Se non usa [!DNL Adobe Sign] blocca e aggiungi i campi per i destinatari, quindi il campo firma predefinito viene visualizzato nella parte inferiore dei documenti di firma.
    >  * Utilizzare [!DNL Adobe Sign] solo per i Forms adattivi che generano automaticamente documenti di record. Se utilizzi un XDP personalizzato per generare un documento di record o un modulo adattivo basato su modello di modulo, [!DNL Adobe Sign] blocco non supportato.
-
 
 
 1. Seleziona la **[!UICONTROL Blocco Adobe Sign]** e tocca il pulsante **[!UICONTROL Modifica]** ![Modifica](assets/Smock_Edit_18_N.svg) icona. Vengono visualizzate le opzioni per aggiungere campi e formattare l&#39;aspetto di un campo.
@@ -190,15 +196,16 @@ Puoi avere uno o più destinatari per un accordo Adobe Sign. Quando aggiungi un 
 
    * **[!UICONTROL Indirizzo e-mail destinatario]:** Specifica l’indirizzo e-mail del destinatario. Il destinatario riceve il contratto Adobe Sign relativo all’indirizzo e-mail specificato. Puoi scegliere di utilizzare un indirizzo e-mail fornito in un campo del modulo, nel profilo utente di Experience Manager dell’utente connesso, oppure immettere manualmente un indirizzo e-mail. È un passaggio obbligatorio.
 
-      >[!NOTE]
-      >
-      >Assicurati che l’indirizzo e-mail del primo destinatario o dell’unico destinatario (se esiste un solo destinatario) non sia identico a [!DNL Adobe Sign] account utilizzato per configurare AEM Cloud Services.
+     >[!NOTE]
+     >
+     >Assicurati che l’indirizzo e-mail del primo destinatario o dell’unico destinatario (se esiste un solo destinatario) non sia identico a [!DNL Adobe Sign] account utilizzato per configurare AEM Cloud Services.
 
    * **[!UICONTROL Metodo di autenticazione destinatario]:** Specifica il metodo per autenticare un destinatario prima di aprire l’accordo Adobe Sign. Puoi scegliere tra telefono, knowledge base, autenticazione basata su identità social e [Documento ufficiale](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) per [!DNL Adobe Acrobat Sign]. Per [!DNL Adobe Acrobat Sign for Government] puoi scegliere tra l’autenticazione tramite telefono e basata su knowledge base.
+
    >[!NOTE]
    >
    >    * Per impostazione predefinita, l’autenticazione basata su identità social fornisce un’opzione per eseguire l’autenticazione utilizzando Facebook, Google e LinkedIn. Puoi contattare [!DNL Adobe Sign] supporto per abilitare altri provider di autenticazione social.
-
+   >
 
    * **[!DNL Adobe Sign]campi da compilare o firmare:** Seleziona [!DNL Adobe Sign] campi per il destinatario. Un modulo adattivo può avere più [!DNL Adobe Sign] campi. Puoi scegliere di abilitare campi specifici per un destinatario. Nel campo vengono visualizzati tutti i [!DNL Adobe Sign] Blocchi. Quando selezioni un blocco, vengono selezionati tutti i campi del blocco. Puoi utilizzare l’icona X per deselezionare un campo.
 
@@ -310,16 +317,16 @@ Dopo [modifica delle proprietà di un modulo adattivo per Adobe Sign](working-wi
    * Firme cloud: firma con un [ID digitale](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) ospitato da un provider di servizi di trust.
    * Adobe Acrobat o Reader: scarica e apri il documento con Adobe Acrobat o Reader per firmare utilizzando una smart card, un token USB o un ID digitale basato su file.
 
-      >[!NOTE]
-      >
-      > La firma digitale è applicabile anche a [!DNL Adobe Acrobat Sign for Government] ma non puoi applicarlo utilizzando le firme cloud.
+     >[!NOTE]
+     >
+     > La firma digitale è applicabile anche a [!DNL Adobe Acrobat Sign for Government] ma non puoi applicarlo utilizzando le firme cloud.
+
    Dopo aver aggiunto il campo della firma cloud al modulo adattivo, esegui i seguenti passaggi per completare il processo di configurazione:
 
    * [Abilitare Adobe Sign per un modulo adattivo](#enableadobsignforanadaptiveform)
    * [Seleziona Adobe Sign Cloud Service per un modulo adattivo](#selectadobesigncloudserviceforanadaptiveform)
    * [Aggiungere destinatari a un modulo adattivo](#addsignerstoanadaptiveform)
    * [Seleziona Azione di invio per un modulo adattivo](#selectsubmitactionforanadaptiveform)
-
 
 ### Configurare il componente per la pagina di ringraziamento o il passaggio di riepilogo {#configure-the-thank-you-page-or-summary-step-component}
 

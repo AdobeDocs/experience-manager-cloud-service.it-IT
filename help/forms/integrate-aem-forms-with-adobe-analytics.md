@@ -2,14 +2,19 @@
 title: Come integrare AEM Forms con Adobe Analytics?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 0%
+source-wordcount: '1707'
+ht-degree: 1%
 
 ---
 
 # Integrare con [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 AEM Forms si integra con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati. L’obiettivo dell’analisi di queste metriche è consentire agli utenti aziendali di ottenere informazioni sul comportamento degli utenti finali e ottimizzare l’esperienza di acquisizione dei dati. Puoi acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms.
 
@@ -140,7 +145,7 @@ Per creare regole basate su **[!UICONTROL Adobe Experience Manager Forms]** este
 
    * **[!UICONTROL Cancella variabili]**: utilizza questo tipo di azione per cancellare la traccia dati in modo che l’evento si registri una sola volta in [!DNL Adobe Analytics].
 
-      L&#39;approccio consigliato è quello di utilizzare **[!UICONTROL Imposta variabili]** tipo di azione per configurare l’evento e gli elementi dati, quindi utilizza **[!UICONTROL Invia beacon]** per inviare dati e quindi utilizzare **[!UICONTROL Cancella variabili]** per cancellare la traccia dati.
+     L&#39;approccio consigliato è quello di utilizzare **[!UICONTROL Imposta variabili]** tipo di azione per configurare l’evento e gli elementi dati, quindi utilizza **[!UICONTROL Invia beacon]** per inviare dati e quindi utilizzare **[!UICONTROL Cancella variabili]** per cancellare la traccia dati.
 
 1. In **[!UICONTROL Proprietà]** , mappa le opzioni della suite di rapporti disponibili nell’elenco a discesa con gli elementi dati definiti utilizzando [Configurare gli elementi dati](#configure-data-elements).
 

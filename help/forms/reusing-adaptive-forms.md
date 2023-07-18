@@ -4,14 +4,19 @@ seo-title: Reuse metadata properties of an Adaptive Form
 description: Puoi riutilizzare un modulo adattivo esistente per creare un nuovo Forms adattivo.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 2%
+source-wordcount: '554'
+ht-degree: 4%
 
 ---
 
 # Riutilizzare le proprietà dei metadati di un modulo adattivo {#reusing-adaptive-forms}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 Se desideri utilizzare alcune delle proprietà di un modulo adattivo esistente per generarne uno nuovo, puoi semplicemente utilizzare la funzionalità di copia e incolla. Inoltre, puoi incollare il nuovo modulo adattivo nel percorso di cartella desiderato. Tutte le proprietà dei metadati vengono replicate e vengono copiati anche XFA e XSD per Forms adattivo basato su XFA e XSD.
 

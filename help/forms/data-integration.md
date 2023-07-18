@@ -3,14 +3,20 @@ title: Come connettere un database a [!DNL AEM Forms] as a Cloud Service?
 seo-title: AEM Forms Data Integration
 description: È possibile recuperare e salvare dati in servizi Web RESTful, servizi Web basati su SOAP e servizi OData da [!DNL AEM Forms] as a Cloud Service. Il servizio fornisce uno strumento dedicato per recuperare, testare, convalidare e inviare dati a vari tipi di origini dati.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 1%
+source-wordcount: '577'
+ht-degree: 3%
 
 ---
 
 # Collegare le origini dati al Cloud Service {#aem-forms-data-integration}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
+| AEM as a Cloud Service | Questo articolo |
+
 
 ![Integrazione dei dati](do-not-localize/data-integeration.png)
 

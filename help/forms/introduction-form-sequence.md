@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 100%
+source-wordcount: '506'
+ht-degree: 97%
 
 ---
 
 # Introduzione alla sequenza di moduli a più passaggi {#introduction-to-multi-step-form-sequence}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 La funzione Forms adattiva consente agli autori di moduli di creare con grande facilità un’esperienza di acquisizione dati in più passaggi. Offre supporto integrato per la creazione di più pannelli e l’associazione di ciascun pannello a diversi pattern di navigazione. Gli autori dei moduli possono raggruppare i campi modulo in sezioni logiche e rappresentare un gruppo come pannello. La navigazione tra i pannelli viene controllata mediante il layout del pannello. Gli autori possono scegliere di disporre i pannelli in layout diversi, ad esempio per posizionarli in sequenza utilizzando il layout della procedura guidata o in modo ad hoc utilizzando il layout a schede. Per informazioni sui layout dei pannelli, consulta [Funzionalità di layout di Adaptive Forms](layout-capabilities-adaptive-forms.md).
 
@@ -37,9 +42,8 @@ Prendiamo un caso d’uso in cui è necessario creare una sequenza per compilare
 
       * Servizi di firma elettronica di Adobe Document Cloud
       * Firma scarabocchio
+
    * **[!UICONTROL Conferma]**: contiene il componente **[!UICONTROL Riepilogo]** che visualizza un messaggio di conferma dell’invio del modulo dopo che un utente firma il modulo e raggiunge il passaggio Conferma (riepilogo) nella sequenza. Gli autori possono configurare il testo del componente [!UICONTROL Riepilogo] con un messaggio di ringraziamento, un collegamento al PDF generato e così via.
-
-
 
 1. Seleziona il layout del pannello principale come **[!UICONTROL Procedura guidata]**.
 1. Completare i passaggi successivi per creare il modello di modulo. <!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->

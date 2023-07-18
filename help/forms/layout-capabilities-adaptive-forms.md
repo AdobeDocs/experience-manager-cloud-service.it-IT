@@ -3,14 +3,19 @@ title: Funzionalità di layout di Adaptive Forms
 seo-title: Layout capabilities of Adaptive Forms
 description: Il layout e l’aspetto di Adaptive Forms su vari dispositivi sono regolati dalle impostazioni di layout. Comprendere i vari layout e come applicarli.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 0%
+source-wordcount: '799'
+ht-degree: 1%
 
 ---
 
 # Funzionalità di layout di Adaptive Forms {#layout-capabilities-of-adaptive-forms}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 [!DNL Adobe Experience Manager] consente di creare Forms adattivo di facile utilizzo che offre esperienze dinamiche agli utenti finali. Il layout del modulo controlla il modo in cui gli elementi o i componenti vengono visualizzati in un modulo adattivo.
 
@@ -68,7 +73,7 @@ L’espressione di riepilogo può essere utilizzata per mostrare i valori fornit
 
 ![Pannelli ripetibili con layout a soffietto in Forms adattivo](assets/accordion-layout.png)
 
-### [!UICONTROL Layout a schede: le schede vengono visualizzate a sinistra ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Layout a schede: le schede vengono visualizzate a sinistra]{#tabbed-layout-tabs-appear-on-the-left}
 
 Utilizzando questo layout, è possibile inserire **[!UICONTROL Modulo adattivo pannello]** componente in un pannello con navigazione tramite schede. Le schede vengono posizionate a sinistra del contenuto del pannello.
 
@@ -102,7 +107,7 @@ Questo layout, come suggerisce il nome, mostra i titoli dei pannelli insieme al 
 
 ![Layout mobili con titoli dei pannelli nelle intestazioni dei moduli](assets/mobile-layout1.png)
 
-### [!UICONTROL Layout senza titoli dei pannelli nell’intestazione del modulo ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Layout senza titoli dei pannelli nell’intestazione del modulo]{#layout-without-panel-titles-in-the-form-header}
 
 Come suggerisce il nome, questo layout mostra solo il menu di navigazione e la barra di navigazione senza i titoli dei pannelli. Questo layout fornisce anche le icone Successivo e Precedente per la navigazione.
 

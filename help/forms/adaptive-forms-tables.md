@@ -6,14 +6,21 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2415'
+source-wordcount: '2435'
 ht-degree: 0%
 
 ---
 
 # Tabelle in modulo adattivo {#tables-in-adaptive-forms}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html) |
+| AEM as a Cloud Service | Questo articolo |
+
+
 
 L’utilizzo delle tabelle è un modo efficace, semplificato e organizzato di presentare dati complessi. Consente agli utenti di identificare facilmente le informazioni e di fornire input in una disposizione ordinata di righe e colonne. La maggior parte dei moduli di organizzazioni governative e di servizi finanziari richiede tabelle di dati di grandi dimensioni per inserire numeri ed eseguire calcoli.
 

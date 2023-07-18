@@ -2,14 +2,17 @@
 title: Come si configura l’archiviazione Azure?
 description: Scopri come integrare i moduli con il server di archiviazione Azure.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---
 
-# Configura [!DNL Azure] archiviazione {#configure-azure-storage}
+# Configura[!DNL Azure]archiviazione {#configure-azure-storage}
+
+
+![integrazione dei dati](assets/data-integeration.png)
 
 [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce un [!DNL Azure] configurazione di archiviazione per integrare forms con [!DNL Azure] servizi di storage. Il modello dati modulo può essere utilizzato per creare Forms adattivo che interagisce con [!DNL Azure] per abilitare i flussi di lavoro aziendali. Ad esempio:
 

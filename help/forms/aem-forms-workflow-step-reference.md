@@ -3,14 +3,19 @@ title: Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail e u
 description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti tramite e-sign, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '7189'
-ht-degree: 0%
+source-wordcount: '7209'
+ht-degree: 1%
 
 ---
 
 # Flussi di lavoro AEM incentrati su Forms - Riferimento per la fase {#forms-centric-workflow-on-osgi-step-reference}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 I modelli di workflow consentono di convertire una regola business in un processo ripetitivo automatizzato. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. È possibile [includere vari passaggi del flusso di lavoro AEM in un modello per raggiungere la logica di business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
@@ -45,7 +50,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 * **[!UICONTROL Descrizione]**: Spiegazione delle operazioni eseguite nell’attività. Queste informazioni sono utili per altri sviluppatori di processi quando si lavora in un ambiente di sviluppo condiviso.
 
 * **[!UICONTROL Percorso miniatura]**: percorso della miniatura dell’attività. Se non viene specificato alcun percorso, viene visualizzata la miniatura predefinita di un modulo adattivo e per il documento di record viene visualizzata un’icona predefinita.
-* **[!UICONTROL Fase flusso di lavoro]**: un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello (barra laterale > Pagina > Proprietà pagina > Stadi).
+* **[!UICONTROL Fase flusso di lavoro]**: un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello (Sidekick > Pagina > Proprietà pagina > Stadi).
 * **[!UICONTROL Priorità]**: la priorità selezionata viene visualizzata nella casella in entrata AEM. Le opzioni disponibili sono Alta, Media e Bassa. Il valore predefinito è Medio.
 * **[!UICONTROL Data di scadenza]**: specifica quanti giorni o ore devono trascorrere prima che l’attività venga contrassegnata come scaduta. Se si seleziona **[!UICONTROL Disattivato]**, quindi l’attività non viene mai contrassegnata come scaduta. È inoltre possibile specificare un gestore di timeout per eseguire attività specifiche dopo la scadenza dell&#39;attività.
 

@@ -2,14 +2,19 @@
 title: Configurare un’azione di invio per un modulo adattivo
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3133'
+source-wordcount: '3153'
 ht-degree: 1%
 
 ---
 
 # Azione di invio modulo adattivo {#configuring-the-submit-action}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 Un’azione di invio viene attivata quando un utente fa clic su **[!UICONTROL Invia]** in un modulo adattivo. Forms adattivo fornisce alcune azioni di invio pronte all’uso. Le azioni di invio disponibili sono:
 
@@ -111,7 +116,6 @@ Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati co
 > * Tutti i campi modulo devono avere nomi di elementi diversi, anche se i campi sono posizionati su pannelli diversi di un modulo adattivo.
 > * AEM as a Cloud Service richiede la crittografia della posta in uscita. Per impostazione predefinita, l’e-mail in uscita è disabilitata. Per attivarlo, invia un ticket di supporto a [Richiesta di accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
-
 Puoi anche includere nell’e-mail allegati e un documento di record (DoR). Per abilitare **[!UICONTROL Allega documento record]** , configura il modulo adattivo per generare un documento di record (DoR). Puoi abilitare l’opzione per generare un documento di record dalle proprietà del modulo adattivo.
 
 
@@ -198,7 +202,6 @@ Per collegare AEM Forms al tuo Microsoft® Sharepoint Storage:
    >* Per impostazione predefinita, `forms-ootb-storage-adaptive-forms-submission` è presente nel sito SharePoint selezionato.
    >* Creare una cartella come `forms-ootb-storage-adaptive-forms-submission`, se non già presente nel `Documents` libreria del sito SharePoint selezionato facendo clic su **Crea cartella**.
 
-
 Ora puoi utilizzare questa configurazione di SharePoint Sites per l’azione di invio in un modulo adattivo.
 
 ### Utilizzare la configurazione SharePoint in un modulo adattivo {#use-sharepoint-configuartion-in-af}
@@ -210,7 +213,6 @@ Puoi utilizzare la configurazione SharePoint creata in un modulo adattivo per sa
    >
    > * Seleziona lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stato creato lo storage SharePoint.
    > * In caso negativo [!UICONTROL Contenitore configurazione] è selezionato, quindi il [!UICONTROL Configurazione archiviazione] Le cartelle vengono visualizzate nella finestra delle proprietà dell&#39;azione di invio.
-
 
 1. Seleziona **Azione di invio** as **[!UICONTROL Invia a SharePoint]**.
    ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
@@ -257,7 +259,6 @@ Per collegare AEM Forms allo storage Microsoft® OneDrive:
    >* Per impostazione predefinita, `forms-ootb-storage-adaptive-forms-submission` è presente nel contenitore OneDrive.
    > * Creare una cartella come `forms-ootb-storage-adaptive-forms-submission`, se non già presente facendo clic su **Crea cartella**.
 
-
 Ora puoi utilizzare questa configurazione di archiviazione OneDrive per l&#39;azione di invio in un modulo adattivo.
 
 ### Usa configurazione OneDrive in un modulo adattivo {#use-onedrive-configuartion-in-af}
@@ -269,7 +270,6 @@ Ora puoi utilizzare questa configurazione di archiviazione OneDrive per l&#39;az
    >
    > * Seleziona lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stato creato lo storage OneDrive.
    > * In caso negativo [!UICONTROL Contenitore configurazione] è selezionato, quindi il [!UICONTROL Configurazione archiviazione] Le cartelle vengono visualizzate nella finestra delle proprietà dell&#39;azione di invio.
-
 
 1. Seleziona **Azione di invio** as **[!UICONTROL Invia a OneDrive]**.
    ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
@@ -284,7 +284,7 @@ La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/
 Il **[!UICONTROL Invia ad Azure Blob Storage]**  L’azione di invio collega un modulo adattivo a un portale Microsoft® Azure. È possibile inviare i dati del modulo, il file, gli allegati o il documento record ai contenitori di archiviazione di Azure connessi. Per utilizzare l’azione Invia per l’archiviazione BLOB di Azure:
 
 1. [Creare un contenitore di archiviazione BLOB di Azure](#create-a-azure-blob-storage-container-create-azure-configuration): connette AEM Forms ai contenitori di archiviazione Azure.
-2. [Utilizzare la configurazione di archiviazione Azure in un modulo adattivo ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): collega il modulo adattivo ai contenitori di archiviazione Azure configurati.
+2. [Utilizzare la configurazione di archiviazione Azure in un modulo adattivo](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): collega il modulo adattivo ai contenitori di archiviazione Azure configurati.
 
 ### Creare un contenitore di archiviazione BLOB di Azure {#create-azure-configuration}
 
@@ -313,7 +313,6 @@ Puoi utilizzare la configurazione del contenitore di archiviazione Azure creata 
    >
    > * Seleziona lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stato creato lo storage OneDrive.
    > * In caso negativo [!UICONTROL Contenitore configurazione] è selezionato, quindi il [!UICONTROL Configurazione archiviazione] Le cartelle vengono visualizzate nella finestra delle proprietà dell&#39;azione di invio.
-
 
 1. Seleziona **Azione di invio** as **[!UICONTROL Invia ad Azure Blob Storage]**.
    ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)

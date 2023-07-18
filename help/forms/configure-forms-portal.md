@@ -2,14 +2,19 @@
 title: Come creare un portale Forms su una pagina Experience Manager Sites
 description: Scopri come creare un portale Forms e utilizzare i componenti core predefiniti in una pagina di AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1782'
 ht-degree: 1%
 
 ---
 
 # Elencare Forms adattivo su un portale {#publish-forms-on-portal}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 In un tipico scenario di distribuzione di un portale incentrato sui moduli, lo sviluppo di moduli e lo sviluppo di portali sono due attività separate. Mentre i progettisti di moduli progettano e memorizzano i moduli in un repository, gli sviluppatori Web creano un&#39;applicazione Web per elencare i moduli e gestirne l&#39;invio. Forms viene copiato sul livello web in quanto non vi è alcuna comunicazione tra l’archivio dei moduli e l’applicazione web.
 
@@ -109,7 +114,7 @@ Per aggiungere un componente, trascina e rilascia il componente dal riquadro Com
 
 ### Configura componente Bozze e invii {#configure-drafts-submissions-component}
 
-Il componente Bozze e invii visualizza i moduli salvati come bozze da compilare in un secondo momento e quelli inviati. Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/configure_icon.png). In [!UICONTROL Bozze e invii] , specificare il titolo per indicare l&#39;elenco dei moduli come bozza o inviati. Seleziona anche se il componente deve elencare le bozze di moduli o i moduli inviati in formato scheda o elenco.
+Il componente Bozze e invii visualizza i moduli salvati come bozze per il completamento successivo e i moduli inviati. Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/configure_icon.png). In [!UICONTROL Bozze e invii] , specificare il titolo per indicare l&#39;elenco dei moduli come bozza o inviati. Seleziona anche se il componente deve elencare le bozze di moduli o i moduli inviati in formato scheda o elenco.
 
 ![Icona Bozze](assets/drafts-component.png)
 
@@ -135,7 +140,7 @@ Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/
 
 Il componente collegamento consente di fornire nella pagina i collegamenti a un modulo adattivo. Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/configure_icon.png). Il [!UICONTROL Modifica componente collegamento] viene visualizzata una finestra di dialogo.
 
-1. In [!UICONTROL Visualizzazione] , fornire la didascalia del collegamento e la descrizione comando per facilitare l&#39;identificazione dei moduli rappresentati dal collegamento.
+1. In [!UICONTROL Visualizzazione] , fornisci la didascalia del collegamento e la descrizione comando per facilitare l&#39;identificazione dei moduli rappresentati dal collegamento.
 1. In [!UICONTROL Info risorsa] , specifica il percorso dell’archivio in cui è memorizzata la risorsa.
 1. In [!UICONTROL Parametri query] , specificare i parametri aggiuntivi nel formato coppia chiave-valore. Quando fai clic sul collegamento, questi parametri aggiuntivi vengono trasmessi insieme al modulo.
 

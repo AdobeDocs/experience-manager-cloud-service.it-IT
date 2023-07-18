@@ -4,14 +4,19 @@ seo-title: Configure Out of Office settings
 description: RConfigura impostazioni Fuori sede
 seo-description: Configure Out of Office settings
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 0%
+source-wordcount: '819'
+ht-degree: 1%
 
 ---
 
 # Configura impostazione Fuori sede {#configure-out-of-office-settings}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 Se si prevede di uscire dall&#39;ufficio, è possibile specificare cosa accade agli articoli assegnati per quel periodo.
 
@@ -28,7 +33,6 @@ Puoi segregare la delega di elementi in base ai modelli di flusso di lavoro. Ad 
 >* Quando si disattiva l&#39;impostazione Fuori sede, gli elementi delegati non vengono riassegnati automaticamente all&#39;utente. È possibile utilizzare la funzionalità di richiesta di risarcimento per assegnare gli articoli.
 >* Quando l&#39;utente A delega gli elementi all&#39;utente B e l&#39;utente B delega ulteriormente all&#39;utente C, gli elementi vengono assegnati solo all&#39;utente C e non all&#39;utente B.
 >* Quando è presente un ciclo nell&#39;assegnazione, le attività rimangono con l&#39;utente originale. Ad esempio, quando l&#39;utente A delega gli elementi all&#39;utente B, l&#39;utente B delega all&#39;utente C, l&#39;utente C delega all&#39;utente D e l&#39;utente D delega all&#39;utente B, viene creato un loop. In questa situazione, l’elemento rimane con l’Utente originale. L’utente A è l’utente originale nell’esempio precedente.
-
 
 ## Abilitare l&#39;impostazione Fuori sede per l&#39;account {#enable-out-of-office}
 

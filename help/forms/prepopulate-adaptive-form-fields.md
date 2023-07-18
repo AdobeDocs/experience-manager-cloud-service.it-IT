@@ -6,14 +6,19 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1948'
-ht-degree: 0%
+source-wordcount: '1968'
+ht-degree: 1%
 
 ---
 
 # Precompilare i campi di un modulo adattivo{#prefill-adaptive-form-fields}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 ## Introduzione {#introduction}
 
@@ -199,7 +204,7 @@ Di seguito è riportato un esempio senza `afData/afBoundData` wrapper:
 
 >[!NOTE]
 >
-> L’utilizzo di campi non associati nei pannelli associati (pannelli con bindRef non vuoto creati trascinando componenti dalla barra laterale o dalla scheda Origini dati) è **non** consigliato in quanto potrebbe causare la perdita di dati dei campi non associati. Si consiglia di avere nomi di campo univoci nel modulo, in particolare per i campi non associati.
+> L’utilizzo di campi non associati nei pannelli associati (pannelli con bindRef non vuoto creati trascinando componenti dalla scheda Sidekick o Origini dati) è **non** consigliato in quanto potrebbe causare la perdita di dati dei campi non associati. Si consiglia di avere nomi di campo univoci nel modulo, in particolare per i campi non associati.
 >
 
 ### Modulo adattivo senza modello di modulo {#adaptive-form-with-no-form-model}
