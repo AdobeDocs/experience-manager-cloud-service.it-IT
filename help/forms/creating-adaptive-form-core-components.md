@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '2246'
 ht-degree: 5%
 
 ---
 
-# Creare un modulo adattivo (componenti core) {#creating-an-adaptive-form-core-components}
+# Creare un modulo adattivo {#creating-an-adaptive-form-core-components}
 
 Forms adattivo consente di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce una procedura guidata intuitiva per la creazione rapida di Adaptive Forms. La procedura guidata fornisce una navigazione rapida a schede per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per la creazione di un modulo adattivo.
 
@@ -44,7 +44,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 * **Autorizzazioni**: aggiungi gli utenti a [!DNL forms-users] gruppo. I membri della [!DNL forms-users] dispongono delle autorizzazioni per creare un modulo adattivo. Per un elenco dettagliato dei gruppi di utenti specifici per i moduli, consulta [Gruppi e autorizzazioni](forms-groups-privileges-tasks.md).
 
 
-## Creare un modulo adattivo (componenti core) {#create-an-adaptive-form-core-components}
+## Creare un modulo adattivo  {#create-an-adaptive-form-core-components}
 
 1. Accedi al tuo [!DNL Experience Manager Forms] Istanza Autore. Può essere un’istanza Cloud o un’istanza di sviluppo locale.
 

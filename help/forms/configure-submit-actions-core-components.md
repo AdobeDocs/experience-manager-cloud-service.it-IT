@@ -1,40 +1,85 @@
 ---
 title: Configurare un’azione di invio per un modulo adattivo
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
-exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
+hide: true
+hidefromtoc: true
 source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '3178'
+source-wordcount: '3366'
 ht-degree: 1%
 
 ---
 
 # Azione di invio modulo adattivo {#configuring-the-submit-action}
 
+
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-**Applicabile a**: ✔️ Componenti Di Base Per Moduli Adattivi. ❌ [Componenti core modulo adattivo](/help/forms/configure-submit-actions-core-components.md). L’Adobe consiglia di utilizzare i Componenti core per [aggiungere un Forms adattivo a una pagina AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [creare un Forms adattivo indipendente](creating-adaptive-form-core-components.md).
+**Applicabile a**: ❌ dei componenti core del modulo adattivo ✔️ [Componenti di base per moduli adattivi](/help/forms/configuring-submit-actions.md). L’Adobe consiglia di utilizzare i Componenti core per [aggiungere un Forms adattivo a una pagina AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [creare un Forms adattivo indipendente](creating-adaptive-form-core-components.md).
 
-Un’azione di invio viene attivata quando un utente fa clic su **[!UICONTROL Invia]** in un modulo adattivo. Forms as a Cloud Service fornisce le seguenti azioni di invio pronte all’uso.
+Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tramite un modulo adattivo. Viene attivato quando un utente fa clic su **[!UICONTROL Invia]** in un modulo adattivo.
 
+Forms as a Cloud Service, per Forms adattivo basato su Componenti core, offre una serie di azioni di invio predefinite. Queste azioni di invio pronte all’uso ti consentono di:
 
-* [Invia all’endpoint REST](#submit-to-rest-endpoint)
-* [Invia e-mail](#send-email)
-* [Invia usando il modello dati modulo](#submit-using-form-data-model)
-* [Richiama un flusso di lavoro AEM](#invoke-an-aem-workflow)
-* [Invia a SharePoint](#submit-to-sharedrive)
-* [Invia a OneDrive](#submit-to-onedrive)
-* [Invia ad Azure Blob Storage](#azure-blob-storage)
+* Invia facilmente i dati del modulo tramite e-mail.
+* Avvia flussi di lavoro Microsoft Power Automate o AEM durante la trasmissione dei dati.
+* Trasmettere direttamente i dati del modulo a Microsoft SharePoint Server, Microsoft Azure Blob Storage o Microsoft OneDrive.
+* Invia facilmente i dati a un’origine dati configurata utilizzando il modello dati del modulo.
+* Invia in modo semplice i dati a un endpoint REST.
 
 È inoltre possibile [estendere le azioni di invio predefinite](custom-submit-action-form.md) per creare un’azione di invio personalizzata.
 
-Puoi configurare un’azione di invio in **[!UICONTROL Invio]** nella barra laterale, nella sezione delle proprietà Contenitore modulo adattivo.
+## Selezionare e configurare un’azione di invio per un modulo adattivo {#select-and-configure-submit-action}
 
-![Configura azione di invio](assets/submission.png)
+Per selezionare e configurare un&#39;azione di invio per il modulo:
 
+1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
+1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+
+1. Fai clic su  **[!UICONTROL Invio]** scheda.
+
+   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare un’azione di invio](/help/forms/assets/adaptive-forms-submit-message.png)
+
+1. Seleziona e configura un **[!UICONTROL Azione di invio]**, in base alle tue esigenze. Per informazioni dettagliate sull&#39;azione di invio selezionata, vedere:
+
+   * [Invia e-mail](#send-email)
+   * [Invia a SharePoint](#submit-to-sharedrive)
+   * [Invia usando il modello dati modulo](#submit-using-form-data-model)
+   * [Invia ad Azure Blob Storage](#azure-blob-storage)
+   * [Invia all’endpoint REST](#submit-to-rest-endpoint)
+   * [Invia a OneDrive](#submit-to-onedrive)
+   * [Richiama un flusso di lavoro AEM](#invoke-an-aem-workflow)
+
+## Invia e-mail {#send-email}
+
+Per inviare un’e-mail a uno o più destinatari dopo l’invio corretto del modulo, puoi utilizzare **[!UICONTROL Invia e-mail]** Azione di invio. Questa azione consente di creare un messaggio e-mail che include i dati del modulo in un formato predefinito. Ad esempio, considera il seguente modello in cui il nome del cliente, l’indirizzo di spedizione, il nome dello stato e il codice postale vengono recuperati dai dati del modulo inviato:
+
+    &quot;
+    
+    Ciao ${customer_Name},
+    
+    Di seguito è riportato l&#39;indirizzo di spedizione predefinito:
+    ${customer_Name},
+    ${customer_Shipping_Address},
+    ${customer_State},
+    ${customer_ZIPCode}
+    
+    Cordiali saluti
+    WKND
+    
+    &quot;
+
+>[!NOTE]
+>
+> * È fondamentale che tutti i campi modulo abbiano nomi di elementi univoci, anche se sono posizionati su pannelli diversi all’interno di un modulo adattivo.
+> * Quando si utilizza AEM as a Cloud Service, i messaggi e-mail in uscita richiedono la crittografia. Per impostazione predefinita, la funzionalità e-mail in uscita è disabilitata. Per attivarlo, invia un ticket di supporto a [Richiedi accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+
+Inoltre, la **[!UICONTROL Invia e-mail]** L’azione Invia consente di includere allegati e un documento Record (DoR) con l’e-mail.
+
+Per attivare [!UICONTROL Allega documento record] , consulta la documentazione su [configurare il modulo adattivo per generare un documento di record (DoR)](generate-document-of-record-core-components.md). Puoi abilitare questa opzione dalle proprietà del modulo adattivo.
 
 <!-- [!NOTE]
 >
@@ -57,6 +102,64 @@ Puoi configurare un’azione di invio in **[!UICONTROL Invio]** nella barra late
 
 
 -->
+
+## Invia a SharePoint {#submit-to-sharedrive}
+
+Il **[!UICONTROL Invia a SharePoint]** L’azione di invio collega un modulo adattivo a un archivio Microsoft® SharePoint. È possibile inviare il file di dati del modulo, gli allegati o il documento di record all&#39;archivio di Microsoft® Sharepoint connesso. Per utilizzare **[!UICONTROL Invia a SharePoint]** Azione di invio in un modulo adattivo:
+
+1. [Creare una configurazione SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): collega AEM Forms all’archiviazione Microsoft® Sharepoint.
+2. [Utilizzare l’azione Invia a SharePoint in un modulo adattivo](#use-sharepoint-configuartion-in-af): collega il modulo adattivo a Microsoft® SharePoint configurato.
+
+### Creare una configurazione SharePoint {#create-sharepoint-configuration}
+
+Per collegare AEM Forms al tuo Microsoft® Sharepoint Storage:
+
+1. Vai al tuo **AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Seleziona un **Contenitore configurazione**. Non fare clic sulla casella di controllo del Contenitore di configurazione. Fai clic sul nome del Contenitore di configurazione per selezionarlo. La configurazione viene archiviata nel Contenitore configurazione selezionato.
+1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata di configurazione di SharePoint.
+   ![Configurazione SharePoint](/help/forms/assets/sharepoint_configuration.png)
+1. Specifica la **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l’ID client, il segreto client e l’ID tenant per l’URL OAuth, consulta [Documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * È possibile recuperare `Client ID` e `Client Secret` dell’app dal portale Microsoft® Azure.
+   * Nel portale Microsoft® Azure, aggiungi l’URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l’URL dell’istanza di AEM Forms Author.
+   * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` per fornire autorizzazioni di lettura/scrittura.
+   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell’app dal portale Microsoft® Azure.
+
+   >[!NOTE]
+   >
+   > Il **segreto client** Il campo è obbligatorio o facoltativo a seconda della configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+
+1. Clic **[!UICONTROL Connetti]**. In caso di connessione riuscita, il `Connection Successful` viene visualizzato il messaggio.
+
+1. Per selezionare una cartella in cui salvare i dati, selezionare **Sito SharePoint** > **Raccolta documenti** > **Cartella SharePoint**, .
+
+   >[!NOTE]
+   >
+   >* Per impostazione predefinita, il `forms-ootb-storage-adaptive-forms-submission` è disponibile nel sito SharePoint selezionato. Se la cartella non è disponibile, utilizza **Crea cartella** per crearlo.
+
+Ora puoi utilizzare questa configurazione di SharePoint Sites per il **Invia a SharePoint** invia azione in un modulo adattivo.
+
+### Utilizzare l’azione Invia a SharePoint in un modulo adattivo {#use-sharepoint-configuartion-in-af}
+
+È possibile utilizzare la configurazione di SharePoint creata nella sezione precedente per salvare dati o documenti di record in una cartella di SharePoint. Per utilizzare l’azione di invio Invia a SharePoint in un modulo adattivo, effettua le seguenti operazioni:
+
+1. Creare un [Modulo adattivo](/help/forms/creating-adaptive-form.md). Durante la creazione del modulo adattivo, seleziona la [!UICONTROL Contenitore configurazione] utilizzato per [creazione di una configurazione SharePoint](#create-sharepoint-configuration).
+
+   >[!NOTE]
+   >
+   > In caso contrario [!UICONTROL Contenitore configurazione] è selezionato, il valore globale [!UICONTROL Configurazione archiviazione] Le cartelle vengono visualizzate nella finestra delle proprietà dell&#39;azione di invio.
+
+1. Seleziona **Azione di invio** as **[!UICONTROL Invia a SharePoint]**.
+1. Seleziona la configurata **[!UICONTROL Configurazione archiviazione]**. Specifica la cartella in SharePoint in cui salvare i dati del modulo e il documento di record.
+1. Clic **[!UICONTROL Salva]** per salvare le impostazioni di invio.
+
+Quando si invia il modulo, i dati vengono salvati nel percorso di archiviazione di Microsoft® Sharepoint (cartella) specificato.
+La struttura delle cartelle per i dati salvati è `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## Invia usando il modello dati modulo {#submit-using-form-data-model}
+
+Il **[!UICONTROL Invia utilizzando il modello dati modulo]** L’azione di invio scrive i dati del modulo adattivo inviati per l’oggetto modello dati specificato in un modello dati modulo nella relativa origine dati. Durante la configurazione dell’azione di invio, puoi scegliere un oggetto modello dati di cui desideri riscrivere i dati inviati nella relativa origine dati.
+
+È inoltre possibile inviare un allegato del modulo all&#39;origine dati utilizzando un modello dati modulo e un documento di record (DoR). Per informazioni sul modello dati del modulo, consulta [[!DNL AEM Forms] Integrazione dei dati](data-integration.md).
 
 ## Invia all’endpoint REST {#submit-to-rest-endpoint}
 
@@ -95,34 +198,6 @@ Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati co
 >
 >Per passare i campi come parametri in un URL REST, tutti i campi devono avere nomi di elementi diversi, anche se i campi sono posizionati su pannelli diversi.
 
-## Invia e-mail {#send-email}
-
-È possibile utilizzare **[!UICONTROL Invia e-mail]** Azione di invio per inviare un’e-mail a uno o più destinatari in seguito all’invio corretto del modulo. L’e-mail generata può contenere dati del modulo in un formato predefinito. Ad esempio, nel modello seguente, il nome del cliente, l’indirizzo di spedizione, il nome dello stato e il codice postale vengono recuperati dai dati del modulo inviati.
-
-    &quot;
-    
-    Ciao ${customer_Name},
-    
-    Di seguito è riportato l&#39;indirizzo di spedizione predefinito:
-    ${customer_Name},
-    ${customer_Shipping_Address},
-    ${customer_State},
-    ${customer_ZIPCode}
-    
-    Cordiali saluti
-    WKND
-    
-    &quot;
-
->[!NOTE]
->
-> * Tutti i campi modulo devono avere nomi di elementi diversi, anche se i campi sono posizionati su pannelli diversi di un modulo adattivo.
-> * AEM as a Cloud Service richiede la crittografia della posta in uscita. Per impostazione predefinita, l’e-mail in uscita è disabilitata. Per attivarlo, invia un ticket di supporto a [Richiesta di accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
-
-Puoi anche includere nell’e-mail allegati e un documento di record (DoR). Per abilitare **[!UICONTROL Allega documento record]** , configura il modulo adattivo per generare un documento di record (DoR). Puoi abilitare l’opzione per generare un documento di record dalle proprietà del modulo adattivo.
-
-
-
 <!-- ## Send PDF via Email {#send-pdf-via-email}
 
 The **Send PDF via Email** Submit Action sends an email with a PDF containing form data, to one or more recipients on successful submission of the form.
@@ -137,11 +212,7 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## Invia usando il modello dati modulo {#submit-using-form-data-model}
 
-Il **[!UICONTROL Invia utilizzando il modello dati modulo]** L’azione di invio scrive i dati del modulo adattivo inviati per l’oggetto modello dati specificato in un modello dati modulo nella relativa origine dati. Durante la configurazione dell’azione di invio, puoi scegliere un oggetto modello dati di cui desideri riscrivere i dati inviati nella relativa origine dati.
-
-È inoltre possibile inviare un allegato del modulo all&#39;origine dati utilizzando un modello dati modulo e un documento di record (DoR). Per informazioni sul modello dati del modulo, consulta [[!DNL AEM Forms] Integrazione dei dati](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -170,60 +241,7 @@ Prima di utilizzare **[!UICONTROL Richiama un flusso di lavoro AEM]** Azione di 
 
 * **[!UICONTROL Password server di elaborazione]**: password dell&#39;utente del flusso di lavoro
 
-## Invia a SharePoint {#submit-to-sharedrive}
 
-Il **[!UICONTROL Invia a SharePoint]** L’azione di invio collega un modulo adattivo a un archivio Microsoft® SharePoint. È possibile inviare il file di dati del modulo, gli allegati o il documento di record all&#39;archivio di Microsoft® Sharepoint connesso. Per utilizzare **[!UICONTROL Invia a SharePoint]** Azione di invio in un modulo adattivo:
-
-1. [Creare una configurazione SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): collega AEM Forms all’archiviazione Microsoft® Sharepoint.
-2. [Utilizzare l’azione Invia a SharePoint in un modulo adattivo](#use-sharepoint-configuartion-in-af): collega il modulo adattivo a Microsoft® SharePoint configurato.
-
-### Creare una configurazione SharePoint {#create-sharepoint-configuration}
-
-Per collegare AEM Forms al tuo Microsoft® Sharepoint Storage:
-
-1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
-1. Dopo aver selezionato **[!UICONTROL Microsoft® SharePoint]**, viene reindirizzato a **[!UICONTROL Browser SharePoint]**.
-1. Seleziona un **Contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
-1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata di configurazione di SharePoint.
-   ![Configurazione SharePoint](/help/forms/assets/sharepoint_configuration.png)
-1. Specifica la **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l’ID client, il segreto client e l’ID tenant per l’URL OAuth, consulta [Documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * È possibile recuperare `Client ID` e `Client Secret` dell’app dal portale Microsoft® Azure.
-   * Nel portale Microsoft® Azure, aggiungi l’URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l’URL dell’istanza di authoring.
-   * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` per fornire autorizzazioni di lettura/scrittura.
-   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell’app dal portale Microsoft® Azure.
-
-   >[!NOTE]
-   >
-   > Il **segreto client** Il campo è obbligatorio o facoltativo dipende dalla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
-
-1. Clic **[!UICONTROL Connetti]**. In caso di connessione riuscita, il `Connection Successful` viene visualizzato il messaggio.
-
-1. Ora, seleziona **Sito SharePoint** > **Raccolta documenti** > **Cartella SharePoint**, per salvare i dati.
-
-   >[!NOTE]
-   >
-   >* Per impostazione predefinita, `forms-ootb-storage-adaptive-forms-submission` è presente nel sito SharePoint selezionato.
-   >* Creare una cartella come `forms-ootb-storage-adaptive-forms-submission`, se non già presente nel `Documents` libreria del sito SharePoint selezionato facendo clic su **Crea cartella**.
-
-Ora puoi utilizzare questa configurazione di SharePoint Sites per l’azione di invio in un modulo adattivo.
-
-### Utilizzare la configurazione SharePoint in un modulo adattivo {#use-sharepoint-configuartion-in-af}
-
-Puoi utilizzare la configurazione SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in una cartella SharePoint. Per utilizzare una configurazione di archiviazione SharePoint in un modulo adattivo, effettua le seguenti operazioni:
-1. Creare un [Modulo adattivo](/help/forms/creating-adaptive-form.md).
-
-   >[!NOTE]
-   >
-   > * Seleziona lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stato creato lo storage SharePoint.
-   > * In caso negativo [!UICONTROL Contenitore configurazione] è selezionato, quindi il [!UICONTROL Configurazione archiviazione] Le cartelle vengono visualizzate nella finestra delle proprietà dell&#39;azione di invio.
-
-1. Seleziona **Azione di invio** as **[!UICONTROL Invia a SharePoint]**.
-   ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
-1. Seleziona la **[!UICONTROL Configurazione archiviazione]**, dove desideri salvare i dati.
-1. Clic **[!UICONTROL Salva]** per salvare le impostazioni di invio.
-
-Quando si invia il modulo, i dati vengono salvati nell&#39;archivio di Microsoft® Sharepoint specificato.
-La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## Invia a OneDrive {#submit-to-onedrive}
 
