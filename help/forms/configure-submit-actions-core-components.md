@@ -3,7 +3,7 @@ title: Configurare un’azione di invio per un modulo adattivo
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 hide: true
 hidefromtoc: true
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
 workflow-type: tm+mt
 source-wordcount: '3366'
 ht-degree: 1%
@@ -12,17 +12,17 @@ ht-degree: 1%
 
 # Azione di invio modulo adattivo {#configuring-the-submit-action}
 
+<span class="preview"> L’Adobe consiglia di utilizzare i Componenti core per [aggiungere un Forms adattivo a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [creare un Forms adattivo indipendente](/help/forms/creating-adaptive-form-core-components.md). </span>
+
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Questo articolo |
+| Applicabile a | Componenti core del modulo adattivo ✅, ❎ [Componenti di base per moduli adattivi](/help/forms/configuring-submit-actions.md) |
 
-**Applicabile a**: ❌ dei componenti core del modulo adattivo ✔️ [Componenti di base per moduli adattivi](/help/forms/configuring-submit-actions.md). L’Adobe consiglia di utilizzare i Componenti core per [aggiungere un Forms adattivo a una pagina AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [creare un Forms adattivo indipendente](creating-adaptive-form-core-components.md).
 
-Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tramite un modulo adattivo. Viene attivato quando un utente fa clic su **[!UICONTROL Invia]** in un modulo adattivo.
-
-Forms as a Cloud Service, per Forms adattivo basato su Componenti core, offre una serie di azioni di invio predefinite. Queste azioni di invio pronte all’uso ti consentono di:
+Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tramite un modulo adattivo. Viene attivato quando un utente fa clic su **[!UICONTROL Invia]** in un modulo adattivo. Forms as a Cloud Service, per Forms adattivo basato su Componenti core, offre una serie di azioni di invio predefinite. Queste azioni di invio pronte all’uso ti consentono di:
 
 * Invia facilmente i dati del modulo tramite e-mail.
 * Avvia flussi di lavoro Microsoft Power Automate o AEM durante la trasmissione dei dati.
