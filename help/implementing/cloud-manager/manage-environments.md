@@ -2,10 +2,10 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che è possibile creare e come crearli per il progetto Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 47%
+source-wordcount: '2558'
+ht-degree: 42%
 
 ---
 
@@ -172,6 +172,38 @@ Dopo l’attivazione puoi pubblicare il contenuto nel servizio di anteprima tram
 >[!NOTE]
 >
 >La versione dell’ambiente deve essere AEM `2021.05.5368.20210529T101701Z` o più recente per utilizzare il servizio di anteprima. Assicurati che una pipeline di aggiornamento sia stata eseguita correttamente nell’ambiente in uso, in modo da poter utilizzare il servizio di anteprima.
+
+### Stato di altre aree geografiche di pubblicazione {#additional-region-status}
+
+Se hai attivato altre aree di pubblicazione, puoi controllarne lo stato da **Ambienti** Card.
+
+1. Il giorno **Panoramica** pagina, individua la **Ambienti** Card.
+
+1. Il giorno **Ambienti** scheda, il **Stato** La colonna riflette eventuali problemi relativi alle aree di pubblicazione aggiuntive configurate. Fai clic su **Info** per i dettagli delle aree geografiche.
+
+   ![Informazioni aggiuntive sullo stato delle aree di pubblicazione nella scheda Ambienti](assets/additional-publish-region-status-environments-card.png)
+
+In alternativa, è possibile accedere alle stesse informazioni dal **Ambienti** scheda.
+
+1. Il giorno **Panoramica** , seleziona la **Ambienti** scheda.
+
+1. Il giorno **Ambienti** , seleziona l’ambiente in cui desideri eseguire la query nel pannello di navigazione a sinistra.
+
+1. Una volta selezionato un ambiente:
+
+   * Il **Informazioni sull&#39;ambiente** mostra quali aree sono configurate per l’ambiente selezionato.
+   * Il **Stato** colonna del **Segmenti di ambiente** La tabella indica se ci sono problemi con le aree di pubblicazione aggiuntive configurate. Passa il cursore del mouse sullo stato per visualizzare i dettagli di eventuali problemi.
+
+   ![Informazioni aggiuntive sullo stato delle aree di pubblicazione nella scheda Ambienti](assets/additional-publish-region-status-environments-tab.png)
+
+In caso di problemi segnalati con altre aree geografiche di pubblicazione:
+
+1. Per piacere, siate pazienti. Cloud Manager tenta continuamente di ripristinare l’area geografica che potrebbe diventare disponibile in qualsiasi momento.
+1. Se il problema persiste dopo un certo numero di ore, puoi rimuovere l’area di pubblicazione aggiuntiva e aggiungerla nuovamente (nella stessa area o in un’altra) per attivare una distribuzione completa.
+
+Il tempo che si attende dal ripristino del sistema prima di intraprendere ulteriori azioni dipende dall&#39;impatto che il guasto di quell&#39;area ha sui sistemi.
+
+Si prega di notare che in ogni caso, [il traffico verrà sempre indirizzato all’altra area più vicina disponibile online.](/help/operations/additional-publish-regions.md) Se continui a visualizzare dei problemi, contatta l’Assistenza clienti Adobe.
 
 ## Aggiornamento degli ambienti {#updating-dev-environment}
 
