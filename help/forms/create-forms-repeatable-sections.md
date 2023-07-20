@@ -2,9 +2,9 @@
 title: Ripetibilità in modulo adattivo (componenti core)
 description: Utilizzate la funzione di ripetibilità dei componenti del pannello per ripetere sezioni simili in un modulo adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
+source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1391'
 ht-degree: 1%
 
 ---
@@ -131,7 +131,11 @@ L’elemento padre del pannello deve contenere un pulsante Elimina per eliminare
 >`Panel1.instanceManager.instances[1].textbox.value`
 >
 >
->Per ulteriori informazioni, vedere Classe: InstanceManager#instances in [Riferimento API Java di AEM Forms](https://adobe.com/go/learn_aemforms_documentation_63).
+>
+
+<!-- 
+>For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).      
+-->
 
 >[!NOTE]
 >
@@ -221,7 +225,7 @@ Nel codice seguente, la proprietà `SampleType`utilizza la proprietà minOccours
 ```
 
 
-## articoli correlati
+## Articoli correlati
 
 * [Creare un modulo adattivo](creating-adaptive-form-core-components.md)
 * [Creare stili o temi per i moduli](using-themes-in-core-components.md)
