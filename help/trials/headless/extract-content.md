@@ -4,10 +4,10 @@ description: Scopri come utilizzare Frammenti di contenuto e l’API GraphQL com
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 94%
+source-wordcount: '1086'
+ht-degree: 96%
 
 ---
 
@@ -67,10 +67,6 @@ Inizia da GraphQL Explorer in una nuova scheda. Qui puoi creare e convalidare le
    ![Query elenco](assets/do-not-localize/list-query-1-3-4-5.png)
 
 Hai appena convalidato una query elenco per un elenco completo di tutti i frammenti di contenuto. Questo processo consente di garantire che la risposta sia ciò che l’app si aspetta, con risultati che illustrano come le app e i siti web recupereranno il contenuto creato in AEM.
-
->[!NOTE]
->
->Se non è possibile selezionare **Risorse dimostrative AEM** dall&#39;elenco a discesa, contatta l&#39;assistenza clienti Adobe o contatta il [Canale di Slack degli studi AEM.](https://adobe-dx-support.slack.com/)
 
 ## Query per un contenuto specifico di esempio {#bypath-query}
 

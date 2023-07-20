@@ -4,10 +4,10 @@ description: Scopri come recuperare i contenuti JSON dall’ambiente di prova co
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 58%
+source-wordcount: '977'
+ht-degree: 54%
 
 ---
 
@@ -47,7 +47,7 @@ Facendo clic su **Avvia l’app CodePen di esempio** dalla versione di prova con
           ...
 ```
 
-Se viene visualizzato un errore, controlla la console del browser per ulteriori dettagli o contattaci [su Slack](https://adobe-dx-support.slack.com).
+Se invece visualizzi un errore, controlla la console del browser per maggiori dettagli o contatta [per e-mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
 
 Ora che conosci qualcosa di CodePen, puoi configurare l’app per recuperare i dati dalla query persistente creata in un modulo precedente.
 
@@ -92,7 +92,7 @@ Alla riga 25, indichi da quale query persistente GraphQL l’app deve recuperare
    persistedQueryName = 'your-project/adventure-list';
    ```
 
-1. Una volta apportata questa modifica, l’app dovrebbe aggiornarsi automaticamente e stampare la risposta JSON non elaborata dalla query persistente all’elemento div `#output`. Se viene visualizzato un messaggio di errore, verifica la console per ulteriori dettagli. Se hai ancora problemi con questo passaggio, contattaci [su Slack](https://adobe-dx-support.slack.com).
+1. Una volta apportata questa modifica, l’app dovrebbe aggiornarsi automaticamente e stampare la risposta JSON non elaborata dalla query persistente all’elemento div `#output`. Se viene visualizzato un messaggio di errore, verifica la console per ulteriori dettagli. Uscita portata [per e-mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) se hai ancora problemi con questo passaggio.
 
 1. Questo codice JSON contiene le proprietà esatte necessarie per la tua app? In caso contrario, torna alla guida di apprendimento [Estrarre contenuto utilizzando l’API GraphQL](https://experience.adobe.com/it/experiencemanager/learn/extract_content_using_graphql) per apportare modifiche. Al termine, non dimenticare di salvare e pubblicare la query.
 
