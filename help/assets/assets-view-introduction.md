@@ -1,16 +1,16 @@
 ---
-title: Quali vantaggi offre Assets?
-description: Ulteriori informazioni sui principali vantaggi della visualizzazione Assets
+title: Quali vantaggi offre la nuova interfaccia utente di AEM Assets o la visualizzazione di Assets nell’AEM?
+description: Ulteriori informazioni sui vantaggi chiave della nuova interfaccia utente di AEM Assets o della nuova visualizzazione Assets nell’AEM
 mini-toc-levels: 3
-source-git-commit: 97b6f66f2d19b85ec0a71eda756aaa334ea5da57
+source-git-commit: 9980064be3ba7e8a15b95ac8ef6e23ba0f258cb0
 workflow-type: tm+mt
-source-wordcount: '1064'
-ht-degree: 12%
+source-wordcount: '1117'
+ht-degree: 11%
 
 ---
 
 
-# Introduzione alla vista Risorse {#assets-view}
+# Introduzione alla nuova interfaccia utente di AEM Assets {#assets-view}
 
 ![Implementare Assets Essentials](assets/banner-image.jpg)
 
@@ -18,9 +18,9 @@ Nel panorama moderno e dinamico della digital-first, in cui la creazione e la di
 
 Per ulteriori informazioni sulle esperienze disponibili basate su utenti tipo per Assets as a Cloud Service, consulta [Introduzione ad Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
-## Come accedere alla vista Risorse? {#access-assets-view}
+## Come accedere alla nuova interfaccia utente di AEM Assets? {#access-assets-view}
 
-È possibile accedere alla vista Risorse nei modi seguenti:
+Puoi accedere alla nuova interfaccia utente di AEM Assets o alla nuova visualizzazione AEM Assets nei seguenti modi:
 ![Panoramica della mia area di lavoro](assets/assets-view.png)
 
 <!--
@@ -45,9 +45,9 @@ Per ulteriori informazioni sulle esperienze disponibili basate su utenti tipo pe
 
     -->
 
-## Perché visualizzare le risorse?
+## Perché la nuova visualizzazione AEM Assets?
 
-La vista Assets offre i seguenti vantaggi chiave che non sono disponibili nella vista Amministratore:
+La nuova interfaccia utente di AEM Assets offre i seguenti vantaggi chiave che non sono disponibili nella visualizzazione Amministratore:
 
 * [Il mio dashboard di Workspace per fornire esperienze semplificate](#my-workspace-for-streamlined-experience)
 * [Approccio basato sulla ricerca per migliorare l&#39;efficienza](#search-first)
@@ -59,7 +59,7 @@ La vista Assets offre i seguenti vantaggi chiave che non sono disponibili nella 
 
 ### Il mio dashboard di Workspace per fornire esperienze semplificate {#my-workspace-for-streamlined-experience}
 
-Una soluzione per la gestione delle risorse digitali che comprenda le diverse esigenze dei diversi ruoli organizzativi. La nuova ed elegante visualizzazione Assets dà priorità alla facilità d&#39;uso e alla velocità, in linea con la preferenza degli esperti di marketing per spazi di lavoro di impatto visivo e privi di ingombri. Grazie a una dashboard personalizzata di My Workspace specifica dell’utente, gli esperti di marketing possono trovare, visualizzare in anteprima, modificare, gestire e distribuire rapidamente le risorse con una notevole efficienza. Dedica il tuo saluto alle infinite ore dedicate alla ricerca di risorse specifiche e ti diamo il benvenuto a un’esperienza semplificata che ti offre tutto ciò che ti serve a portata di mano.
+Una soluzione per la gestione delle risorse digitali che comprenda le diverse esigenze dei diversi ruoli organizzativi. La nuova ed elegante visualizzazione dell’interfaccia utente di AEM Assets dà priorità alla facilità d’uso e alla velocità, in linea con la preferenza degli esperti di marketing per spazi di lavoro di impatto visivo e privi di ingombri. Grazie a una dashboard personalizzata di My Workspace specifica dell’utente, gli esperti di marketing possono trovare, visualizzare in anteprima, modificare, gestire e distribuire rapidamente le risorse con una notevole efficienza. Dedica il tuo saluto alle infinite ore dedicate alla ricerca di risorse specifiche e ti diamo il benvenuto a un’esperienza semplificata che ti offre tutto ciò che ti serve a portata di mano.
 
 ![Panoramica della mia area di lavoro](assets/my-workspace-demo.gif)
 
@@ -67,7 +67,7 @@ Una soluzione per la gestione delle risorse digitali che comprenda le diverse es
 
 ### Informazioni per prendere decisioni basate sui dati {#insights-data}
 
-Per tenere il passo con la velocità dei contenuti, è essenziale disporre di informazioni fruibili. La nuova esperienza di visualizzazione delle risorse offre informazioni avanzate all’interno di My Workspace, fornendo dati preziosi sulle prestazioni delle risorse, sull’utilizzo del pubblico e sul coinvolgimento. Gli addetti al marketing possono prendere decisioni basate sui dati, ottimizzare le strategie di contenuto e perfezionare la distribuzione a valle per ottenere risultati ottimali. Grazie all’accesso a informazioni significative, le aziende possono battere la concorrenza e ottenere risultati eccezionali.
+Per tenere il passo con la velocità dei contenuti, è essenziale disporre di informazioni fruibili. La nuova esperienza nell’interfaccia utente di AEM Assets offre informazioni avanzate all’interno di My Workspace, fornendo dati preziosi sulle prestazioni delle risorse, sull’utilizzo del pubblico e sui coinvolgimento. Gli addetti al marketing possono prendere decisioni basate sui dati, ottimizzare le strategie di contenuto e perfezionare la distribuzione a valle per ottenere risultati ottimali. Grazie all’accesso a informazioni significative, le aziende possono battere la concorrenza e ottenere risultati eccezionali.
 
 ![Panoramica di Insights](assets/insights-overview.gif)
 
@@ -77,7 +77,7 @@ Per tenere il passo con la velocità dei contenuti, è essenziale disporre di in
 
 La nuova esperienza offre un set completo di funzioni di collaborazione, tra cui la modifica in tempo reale con funzionalità Adobe Photoshop integrate, controlli della versione e strumenti di annotazione. Questo consente una collaborazione fluida tra team di progettazione, creativi, di branding e di marketing, consentendo loro di superare i colli di bottiglia e accelerare il processo delle operazioni di marketing. Gli addetti al marketing dispongono ora di potenti strumenti per accelerare la consegna dei progetti e aumentare la produttività complessiva.
 
-Guarda questo video per comprendere la potenza dell’integrazione della visualizzazione Assets con Adobe Photoshop Express:
+Guarda questo video per comprendere la potenza della nuova integrazione dell’interfaccia utente di AEM Assets con Adobe Photoshop Express:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
@@ -87,7 +87,7 @@ Le prossime versioni di Assets as a Cloud Service includeranno [Integrazione di 
 
 ### Caricamenti delle cartelle per impostare la struttura gerarchica per l’organizzazione {#folder-uploads}
 
-Imposta rapidamente una struttura di cartelle per la tua organizzazione utilizzando la vista Risorse caricando le cartelle esistenti sul file system locale. Non è necessario creare cartelle nella cartella principale e quindi caricare manualmente le risorse in tali cartelle per mantenere la struttura gerarchica logica. Tutte le cartelle e le risorse nella cartella principale vengono caricate automaticamente in Experience Manager Assets.
+Imposta rapidamente una struttura di cartelle per la tua organizzazione utilizzando la nuova interfaccia utente di AEM Assets caricando le cartelle esistenti sul file system locale. Non è necessario creare cartelle nella cartella principale e quindi caricare manualmente le risorse in tali cartelle per mantenere la struttura gerarchica logica. Tutte le cartelle e le risorse nella cartella principale vengono caricate automaticamente in Experience Manager Assets.
 
 ![Carica cartelle](assets/folder-uploads.gif)
 
@@ -101,7 +101,7 @@ Sfrutta il potenziale della libreria di risorse digitali della tua organizzazion
 
 ### Iscriviti al contenuto dell’archivio per una gestione efficiente delle risorse {#subscribe-content}
 
-La vista Risorse consente di monitorare le operazioni eseguite sulle risorse, cartelle o raccolte disponibili nell’archivio. Devi selezionare e iscriverti al contenuto per il quale ti vengono inviate le notifiche. Puoi anche configurare i tipi di evento, ad esempio l’eliminazione dei contenuti a cui ti sei iscritto, le modifiche ai contenuti a cui ti sei iscritto e così via. Le notifiche vengono quindi inviate solo per questi tipi di evento.
+La nuova interfaccia utente di AEM Assets consente di monitorare le operazioni eseguite sulle risorse, cartelle o raccolte disponibili nell’archivio. Devi selezionare e iscriverti al contenuto per il quale ti vengono inviate le notifiche. Puoi anche configurare i tipi di evento, ad esempio l’eliminazione dei contenuti a cui ti sei iscritto, le modifiche ai contenuti a cui ti sei iscritto e così via. Le notifiche vengono quindi inviate solo per questi tipi di evento.
 
 ![Ricevi notifiche](assets/notifications.gif)
 
@@ -109,22 +109,22 @@ La vista Risorse consente di monitorare le operazioni eseguite sulle risorse, ca
 
 ### Eliminazione temporanea delle risorse per migliorare il controllo degli amministratori {#soft-delete-assets}
 
-La cartella Cestino disponibile nella vista Risorse elenca le risorse eliminate dalla cartella principale Risorse. Puoi selezionare una risorsa dalla cartella Cestino per ripristinarla alla posizione originale o eliminarla definitivamente. Puoi anche specificare una parola chiave o applicare filtri standard o personalizzati per cercare le risorse appropriate all’interno della cartella Cestino.
+Nella cartella Cestino disponibile nella nuova interfaccia utente di AEM Assets sono elencate le risorse eliminate dalla cartella principale Assets. Puoi selezionare una risorsa dalla cartella Cestino per ripristinarla alla posizione originale o eliminarla definitivamente. Puoi anche specificare una parola chiave o applicare filtri standard o personalizzati per cercare le risorse appropriate all’interno della cartella Cestino.
 
 ![Eliminazione temporanea](assets/soft-delete.gif)
 
 [![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
 
-Oltre a queste funzioni, la vista Risorse consente di eseguire le seguenti funzioni non disponibili nella vista Amministrazione:
+Oltre a queste funzioni, la nuova interfaccia utente di AEM Assets consente di eseguire le seguenti funzioni non disponibili in visualizzazione Amministratore:
 
 * Carica una nuova versione di una risorsa, con un nome diverso, dal file system locale all’archivio delle risorse. La risorsa caricata è disponibile come nuova versione con lo stesso nome di quella originale.
 
 * Rinomina le risorse e le cartelle disponibili nell’archivio.
 
-La nuova vista Adobe Experience Manager Assets è personalizzata per semplificare i flussi di lavoro, promuovere la collaborazione e accelerare la distribuzione delle risorse. Adottando la velocità dei contenuti, gli esperti di marketing possono sfruttare appieno il potenziale delle loro risorse digitali e stimolare la creatività come mai prima d’ora.
+La nuova interfaccia utente di AEM Assets è personalizzata per semplificare i flussi di lavoro, promuovere la collaborazione e accelerare la distribuzione delle risorse. Adottando la velocità dei contenuti, gli esperti di marketing possono sfruttare appieno il potenziale delle loro risorse digitali e stimolare la creatività come mai prima d’ora.
 
 
-Utilizza questi collegamenti per iniziare rapidamente a utilizzare la vista Risorse:
+Utilizza questi collegamenti per iniziare rapidamente a usare la nuova interfaccia utente di AEM Assets:
 
 * [Area di lavoro personale](/help/assets/my-workspace-assets-view.md)
 * [Introduzione all’utilizzo della vista Risorse](/help/assets/get-started-assets-view.md)
