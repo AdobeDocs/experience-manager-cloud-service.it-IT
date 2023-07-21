@@ -8,9 +8,9 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2362'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Flusso di lavoro incentrato su Forms su OSGi{#forms-centric-workflow-on-osgi}
 
-![](do-not-localize/header.png)
+![Immagine protagonista](do-not-localize/header.png)
 
 Le aziende raccolgono dati da centinaia e migliaia di moduli, da vari sistemi back-end e da origini dati online o offline. Hanno anche un set dinamico di utenti per prendere decisioni sui dati, che comporta processi iterativi di revisione e approvazione.
 

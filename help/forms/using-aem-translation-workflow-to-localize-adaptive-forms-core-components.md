@@ -2,9 +2,9 @@
 title: Tradurre un modulo adattivo basato su componenti core
 description: Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo basato su componenti core
 feature: Adaptive Forms
-source-git-commit: a33b380570210a32f4a4a1f26c9a2fe37c885bb1
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '882'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ Per localizzare un modulo e il relativo documento di record mediante Human Trans
 1. Nella parte inferiore della sezione **Riepilogo** , fai clic su **ellissi**. Viene visualizzata la schermata Proprietà progetto di traduzione.
 1. Apri **[!UICONTROL Avanzate]** nella parte superiore della sezione **Proprietà progetto di traduzione** schermo. Per **[!UICONTROL Campo di traduzione]**, seleziona **[!UICONTROL Traduzione umana]**. Clic **Salva e chiudi** nella parte superiore dello schermo.
 1. Il giorno **Lavoro di traduzione** , fai clic su ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e fai clic su **Esporta**. Nella finestra di dialogo Esporta, fai clic sull’opzione Scarica file esportato. Scarica un file .zip.
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   ![Esporta file di traduzione](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. Estrai il file .zip scaricato. La cartella estratta contiene due file:
    * translation_export_summary.xml
    * [form-fields-file].xml.
@@ -79,6 +79,6 @@ Per localizzare un modulo e il relativo documento di record mediante Human Trans
 1. Comprimere i file translation_export_summary.xml e [form-fields-file].xml.
 1. Il giorno **Lavoro di traduzione** , fai clic su ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e fai clic su **Importa**. Seleziona l’archivio contenente [form-fields-file].xml. con stringhe e messaggi localizzati per i campi modulo.
 
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![Importa file di traduzione](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. Per visualizzare in anteprima il modulo localizzato, seleziona il modulo localizzato nell’interfaccia utente di AEM Forms. Clic **[!UICONTROL Anteprima]** >**[!UICONTROL Anteprima come HTML]**. Riapri il modulo dopo l’aggiunta di `afAcceptLang=<locale code>` all’URL del modulo. Ad esempio, aggiungi `afAcceptLang=de`per aprire la versione tedesca del modulo.
