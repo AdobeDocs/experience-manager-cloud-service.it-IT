@@ -2,12 +2,13 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
+source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 44%
+source-wordcount: '1939'
+ht-degree: 35%
 
 ---
+
 
 # Authoring dei contenuti con l’editor universale {#authoring}
 
@@ -141,7 +142,7 @@ Puoi anche scegliere di emulare un dispositivo mobile e nell’Editor universale
 
 #### Apri anteprima app {#open-app-preview}
 
-Tocca o fai clic sull’icona di anteprima dell’app aperta per aprire la pagina che stai modificando nel browser, senza ricorrere all’editor per visualizzare in anteprima le modifiche.
+Tocca o fai clic sull’icona di anteprima dell’app per aprire la pagina che stai modificando nella scheda del browser corrispondente, senza che sia necessario l’editor per visualizzare l’anteprima del contenuto.
 
 ![Apri anteprima app](assets/open-app-preview.png)
 
@@ -177,9 +178,12 @@ In modalità anteprima, la pagina viene riprodotta nell’editor come verrebbe v
 
 #### Modalità testo {#text-mode}
 
-In modalità testo, la pagina viene riprodotta nell’editor, ma l’autore del contenuto può fare clic per selezionare il contenuto di testo da modificare. Questa è la modalità predefinita dell’editor quando viene caricata una pagina.
+In modalità testo, l’autore del contenuto può fare clic per selezionare il contenuto di testo.
 
 ![Modalità testo](assets/text-mode.png)
+
+* È possibile [modifica testo normale](#editing-content) sul posto.
+* È inoltre possibile [modifica testo formattato](#editing-rich-text) nella barra dei componenti sono presenti ulteriori opzioni di formattazione.
 
 >[!TIP]
 >
@@ -187,9 +191,11 @@ In modalità testo, la pagina viene riprodotta nell’editor, ma l’autore del 
 
 #### Modalità file multimediale {#media-mode}
 
-In modalità multimediale, la pagina viene sottoposta a rendering nell’editor, ma l’autore di contenuto può fare clic per selezionare il contenuto multimediale da modificare.
+In modalità multimediale, l’autore di contenuto può fare clic per selezionare il contenuto multimediale.
 
 ![Modalità file multimediale](assets/media-mode.png)
+
+I dettagli del contenuto vengono visualizzati nella barra dei componenti, che consente anche all’autore di [modificare il contenuto multimediale.](#editing-media)
 
 >[!TIP]
 >
@@ -197,11 +203,11 @@ In modalità multimediale, la pagina viene sottoposta a rendering nell’editor,
 
 #### Modalità componente {#component-mode}
 
-In modalità componente, la pagina viene riprodotta nell’editor, ma l’autore di contenuto può fare clic su per selezionare i componenti della pagina.
+In modalità componente, l’autore di contenuto può fare clic per selezionare [Frammenti di contenuto.](/help/assets/content-fragments/content-fragments.md)
 
 ![Modalità componente](assets/component-mode.png)
 
-Quando selezioni un frammento di contenuto, i relativi dettagli vengono visualizzati nel [barra dei componenti.](#component-rail)
+Quando selezioni un frammento di contenuto, i relativi dettagli vengono visualizzati nella barra dei componenti, dove puoi [modificare il frammento di contenuto.](#edit-content-fragment)
 
 >[!TIP]
 >
@@ -209,11 +215,13 @@ Quando selezioni un frammento di contenuto, i relativi dettagli vengono visualiz
 
 #### Modifica {#edit}
 
-In [modalità componente,](#component-mode) Se selezioni un frammento di contenuto, nella barra della modalità viene visualizzata l’opzione di modifica.
+In [modalità componente,](#component-mode) se si seleziona un [Frammento di contenuto,](/help/assets/content-fragments/content-fragments.md) nella barra delle modalità viene visualizzata l’opzione modifica.
 
 ![Icona Modifica](assets/edit.png)
 
-Toccando o facendo clic sul pulsante di modifica si apre l’Editor frammento di contenuto in una nuova scheda, che consente di modificare il contenuto di riferimento nonché il testo e i contenuti multimediali dall’interno dell’Editor universale.
+Toccando o facendo clic sul pulsante di modifica si apre [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in una nuova scheda, che consente di accedere a tutte le funzioni dell’Editor frammento di contenuto.
+
+Puoi anche modificare i dettagli del frammento di contenuto nel [barra dei componenti](#edit-content-fragment) in base alle esigenze del flusso di lavoro.
 
 >[!TIP]
 >
@@ -223,7 +231,7 @@ Toccando o facendo clic sul pulsante di modifica si apre l’Editor frammento di
 
 L’editor occupa la maggior parte della finestra ed è dove si trova la pagina specificata in [la barra della posizione](#location-bar) è sottoposto a rendering.
 
-* Se l’editor è in modalità di modifica, ad esempio [modalità testo](#text-mode) o [modalità multimediale,](#media-mode) il contenuto sarà modificabile e non puoi seguire i collegamenti.
+* Se l’editor è in modalità di modifica, ad esempio [modalità testo](#text-mode) o [modalità multimediale,](#media-mode) il contenuto sarà modificabile, ma non puoi seguire i collegamenti.
 * Se l’editor è in [modalità anteprima,](#preview-mode) il contenuto sarà navigabile e potrai seguire i collegamenti, ma non puoi modificarlo.
 
 ![Editor](assets/editor.png)
@@ -240,11 +248,11 @@ In modalità proprietà, la barra mostra le proprietà del componente attualment
 
 ![Modalità Proprietà](assets/properties-mode.png)
 
-I dettagli del componente selezionato sono visualizzati nella barra. Se hai selezionato un frammento di contenuto utilizzando [modalità componente,](#component-mode) puoi modificarne le impostazioni nella barra dei componenti. Le modifiche vengono salvate automaticamente dall&#39;Editor universale.
+A seconda del tipo di componente selezionato, i dettagli possono essere visualizzati e modificati nella barra delle proprietà.
 
 ![Dettagli componente](assets/component-details.png)
 
-Non tutti i componenti hanno dettagli che possono essere visualizzati.
+Nota che non tutti i componenti hanno dettagli che possono essere visualizzati e/o modificati.
 
 >[!TIP]
 >
@@ -271,17 +279,59 @@ La modifica del contenuto è semplice e intuitiva. In modalità di modifica ([mo
 
 ![Il contenuto modificabile viene evidenziato da una casella blu](assets/editable-content.png)
 
-Tocca o fai clic sul contenuto nella casella blu per avviare un editor diretto per apportare le modifiche. Le modifiche vengono salvate automaticamente.
+In modalità modifica, toccando o facendo clic sul contenuto lo si seleziona per la modifica. Per navigare nel contenuto tramite i seguenti collegamenti, passa a [modalità anteprima.](#preview-mode)
+
+A seconda della [modalità](#mode-rail) in e nel contenuto selezionato, possono essere disponibili opzioni di modifica locali diverse e puoi rivedere proprietà aggiuntive per il contenuto utilizzando [barra dei componenti.](#component-rail)
+
+### Modifica del testo normale {#edit-plain-text}
+
+Se ti trovi in [modalità testo](#text-mode) e selezionare un componente testo normale, è possibile modificare il testo nella posizione desiderata.
 
 ![Modifica del contenuto](assets/editing-content.png)
 
-In modalità modifica, toccando o facendo clic sul contenuto lo si seleziona per la modifica. Per navigare nel contenuto tramite i seguenti collegamenti, passa a [modalità anteprima.](#preview-mode)
+È sufficiente digitare per aggiornare il contenuto. Premi Invio/Ritorna o tocca o fai clic all’esterno della casella di testo per salvare le modifiche.
 
-A seconda della [modalità](#mode-rail) in e nel contenuto selezionato, potrebbero essere disponibili opzioni di modifica locali diverse.
+### Modifica del testo formattato {#edit-rich-text}
 
-Inoltre, puoi rivedere proprietà aggiuntive per il contenuto utilizzando [barra dei componenti.](#component-rail) Ad esempio, se selezioni un componente Rich text, puoi modificare le opzioni di formattazione nella barra dei componenti.
+Se ti trovi in [modalità testo](#text-mode) e selezionare un componente testo RTF, puoi modificare il testo nella posizione desiderata.
+
+È sufficiente digitare per aggiornare il contenuto. Premi Invio/Ritorna o tocca o fai clic all’esterno della casella di testo per salvare le modifiche.
+
+Inoltre, le opzioni di formattazione e i dettagli sul testo sono disponibili nella barra dei componenti.
 
 ![Modifica di un componente Rich Text](assets/rich-text-editing.png)
+
+Le modifiche di formattazione vengono salvate automaticamente nel contenuto.
+
+### Editing di file multimediali {#edit-media}
+
+Se ti trovi in [modalità multimediale](#media-mode) quando selezioni un’immagine puoi visualizzarne i dettagli nella barra dei componenti.
+
+![Editing di file multimediali](assets/ue-edit-media.png)
+
+Tocca o fai clic su **Sostituisci** sotto l’anteprima dell’immagine selezionata nella barra dei componenti, per sostituirla con un’altra immagine della libreria di risorse.
+
+1. Il [selettore risorse](/help/assets/asset-selector.md#using-asset-selector) viene visualizzata una finestra che consente di selezionare una risorsa.
+1. Tocca o fai clic su per selezionare una nuova risorsa.
+1. Tocca o fai clic su **Seleziona** per tornare alla barra dei componenti in cui la risorsa è stata sostituita.
+
+Le modifiche vengono salvate automaticamente nel contenuto.
+
+>[!TIP]
+>
+>Utilizza il tasto di scelta rapida `R` per aprire il selettore risorse e sostituire l’immagine selezionata.
+
+### Modifica di frammenti di contenuto {#edit-content-fragment}
+
+Se ti trovi in [modalità componente](#component-mode) e selezioni una [Frammento di contenuto,](/help/assets/content-fragments/content-fragments.md) puoi modificarne i dettagli nella barra dei componenti.
+
+![Modifica di un frammento di contenuto](assets/ue-edit-cf.png)
+
+I campi definiti nel modello di contenuto del frammento di contenuto selezionato sono visualizzati e modificabili nella barra dei componenti.
+
+Le modifiche vengono salvate automaticamente nel contenuto.
+
+Se desideri modificare il frammento di contenuto in [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) invece, fai clic su [pulsante modifica](#edit) nella barra delle modalità.
 
 ## Anteprima del contenuto {#previewing-content}
 
