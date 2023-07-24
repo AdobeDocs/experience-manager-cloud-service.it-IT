@@ -2,12 +2,13 @@
 title: Lo strumento Copia contenuto
 description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service ad ambienti inferiori a scopo di test.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
+source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 41%
+source-wordcount: '1308'
+ht-degree: 37%
 
 ---
+
 
 # Lo strumento Copia contenuto {#content-copy}
 
@@ -40,6 +41,8 @@ Per utilizzare lo strumento di copia del contenuto, sono necessarie determinate 
 |---|---|---|
 | Creare e modificare il [set di contenuti](#create-content-set) | Obbligatorio | Non obbligatorio |
 | Avviare o annullare il [processo di copia del contenuto](#copy-content) | Obbligatorio | Obbligatorio |
+
+Per ulteriori dettagli sulle autorizzazioni e su come impostarle, consulta il documento [Profili di prodotto e team as a Cloud Service AEM.](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ## Creazione di un set di contenuti {#create-content-set}
 
@@ -174,6 +177,16 @@ A tale scopo, il **Attività copia contenuto** , seleziona la **Annulla** dal me
 >Quando annulli un’operazione di copia del contenuto, questa può tradursi in una copia parziale del contenuto nell’ambiente di destinazione. Questa situazione può lasciare l’ambiente di destinazione inutilizzabile.
 >
 >Se l’ambiente si trova in questo stato a causa di una cancellazione, contatta l’Assistenza clienti Adobe.
+
+### Accesso ai registri {#accessing-logs}
+
+Puoi controllare i registri sia per l’ambiente di origine che per quello di destinazione per qualsiasi processo di copia del contenuto completato.
+
+A tale scopo, il **Attività copia contenuto** , seleziona la **Registri** dal menu con i puntini di sospensione del processo di copia per il quale desideri rivedere i registri e quindi scegliere l’ambiente desiderato.
+
+![Accesso ai registri per il processo di copia del contenuto](assets/copy-content-logs.png)
+
+I registri vengono scaricati nel computer locale. Se il download non inizia, controlla le impostazioni del blocco dei popup.
 
 ## Limitazioni {#limitations}
 
