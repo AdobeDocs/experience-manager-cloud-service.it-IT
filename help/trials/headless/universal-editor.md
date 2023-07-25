@@ -1,12 +1,12 @@
 ---
 title: Modifica nel contesto
-description: Scopri come utilizzare l’Editor universale per modificare qualsiasi aspetto del contenuto sul posto e nel contesto in qualsiasi implementazione.
+description: Scopri come utilizzare l’Editor universale per modificare qualsiasi aspetto del contenuto, in posizione e nel contesto, in qualsiasi implementazione.
 hidefromtoc: true
 index: false
-source-git-commit: 4dd0998862baf3e1d0c8ed2d42006acfcf5d0873
+source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 6%
+source-wordcount: '961'
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Modifica nel contesto"
->abstract="Scopri in che modo le app headless possono sfruttare l’Editor universale per portare a portata di mano le modifiche contestuali a basso attrito dei tuoi autori."
+>abstract="Scopri in che modo le app headless possono sfruttare l’Editor universale per ridurre l’attrito, mentre le modifiche contestuali vengono portate a portata di mano dai tuoi autori."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -32,7 +32,11 @@ ht-degree: 6%
 
 La modifica diretta e contestuale può spesso essere vantaggiosa rispetto alla modifica strutturata di contenuti headless, come nell’editor dei frammenti di contenuto visualizzato nei moduli precedenti.
 
-Con Universal Editor è possibile modificare il testo in modo semplice e intuitivo sia dal punto di vista del contesto che della posizione.
+>[!NOTE]
+>
+>Per utilizzare l’Editor universale in questa prova, è necessario utilizzare Chrome come browser e non in modalità di navigazione in incognito. Si tratta di una limitazione dell’esperienza di prova, non dell’editor universale.
+
+Con Universal Editor è possibile modificare il testo in modo semplice e intuitivo.
 
 1. L’editor deve essere caricato per impostazione predefinita in **Testo** modalità. In caso contrario, tocca o fai clic su **Testo** nella barra delle modalità sul lato sinistro dell’editor.
 
@@ -47,6 +51,26 @@ Con Universal Editor è possibile modificare il testo in modo semplice e intuiti
 1. Premi il tasto Invio/Ritorna o tocca o fai clic all’esterno del componente testo e le modifiche vengono salvate automaticamente.
 
 Universal Editor salva automaticamente le modifiche all&#39;interno dell&#39;ambiente di creazione. Devi comunque pubblicarli per consentire ai tuoi lettori di visualizzarli, operazione che eseguiremo in un passaggio successivo.
+
+## Modifica contenuti multimediali nel contesto {#edit-media}
+
+Utilizzando Universal Editor è inoltre possibile scambiare le immagini rimanendo nel contesto del contenuto.
+
+1. Modifica l’editor in **Contenuti multimediali** toccando o facendo clic sul pulsante **Contenuti multimediali** sulla barra della modalità.
+
+1. Tocca o fai clic sull&#39;immagine del surfista per selezionarla.
+
+1. Nella barra dei componenti puoi visualizzare i dettagli della risorsa. Tocca o fai clic su **Sostituisci**.
+
+   ![Selezione di un&#39;immagine da modificare](assets/do-not-localize/ue-edit-media.png)
+
+1. In **Seleziona risorse** , scorri verso il basso e tocca o fai clic sul pulsante `surfer-wave-02.JPG` per selezionarla.
+
+1. Tocca o fai clic su **Seleziona** nel **Seleziona risorse** finestra.
+
+   ![Utilizzo della finestra Seleziona risorsa per selezionare un’immagine](assets/do-not-localize/ue-select-asset.png)
+
+L’immagine viene sostituita con quella selezionata.
 
 ## Scoprite I Contenuti Come I Vostri Reader {#emulators}
 
@@ -102,6 +126,5 @@ Per accelerare l’esperienza di authoring dei contenuti quando la modifica stru
 1. Una nuova **Modifica** nella barra delle modalità. Tocca o fai clic su **Modifica** per aprire l’editor dei frammenti di contenuto in una nuova scheda.
 
 ![Selezione di frammenti di contenuto nell’editor universale](assets/do-not-localize/ue-content-fragments.png)
-
 
 Nella nuova scheda è ora possibile modificare il frammento di contenuto selezionato nell’Editor universale.
