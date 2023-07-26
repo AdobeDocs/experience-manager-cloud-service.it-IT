@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: 651fd49950c9b168a097e4b7d2812b22bd8de03f
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4194'
 ht-degree: 98%
 
 ---
@@ -340,7 +340,6 @@ ht-degree: 98%
             + [Recuperare le informazioni di accesso all’archivio Git](/help/journey-sites/quick-site/retrieve-access.md)
             + [Personalizza il tema del sito](/help/journey-sites/quick-site/customize-theme.md)
             + [Distribuire il tema personalizzato](/help/journey-sites/quick-site/deploy-theme.md)
-      + [Amministrazione dei flussi di lavoro](/help/sites-cloud/administering/workflows-administering.md)
       + Riutilizzo del contenuto {#reusing-content}
          + [MSM e traduzione](/help/sites-cloud/administering/msm-and-translation.md)
          + Gestione di più siti {#msm}
@@ -369,6 +368,8 @@ ht-degree: 98%
             + [Configurazione del framework di integrazione della traduzione](/help/sites-cloud/administering/translation/integration-framework.md)
             + [Connetti a Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [Best practice per la traduzione](/help/sites-cloud/administering/translation/best-practices.md)
+      + [Amministrazione dei tag](/help/sites-cloud/administering/tags.md)
+      + [Amministrazione dei flussi di lavoro](/help/sites-cloud/administering/workflows-administering.md)
    + Integrazione con AEM as a Cloud Service {#integrations}
       + [Integrazione con Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integrazione con Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
