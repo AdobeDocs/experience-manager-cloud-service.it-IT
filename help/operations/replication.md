@@ -2,10 +2,10 @@
 title: Replica
 description: Distribuzione e risoluzione dei problemi di replica.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e545ff2bc3dc0c56cd6d3e1160b453551816f07f
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 46%
+source-wordcount: '1334'
+ht-degree: 44%
 
 ---
 
@@ -55,7 +55,7 @@ Puoi trovare informazioni più dettagliate su Gestisci pubblicazione nella sezio
 
 ![Scheda Flusso Di Lavoro Pubblica Struttura Contenuto](/help/operations/assets/publishcontenttreeworkflow.png)
 
-Non modificare o richiamare il modello originale. Assicurati invece di fare prima la copia del modello e quindi modificare o richiamare tale copia.
+Non richiamare il modello originale. Assicurati invece di copiare prima il modello e richiamare tale copia.
 
 Come tutti i flussi di lavoro, può anche essere richiamato tramite API. Per ulteriori informazioni, consulta [Interazione con i flussi di lavoro a livello di programmazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=it#extending-aem).
 
