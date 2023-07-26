@@ -4,10 +4,10 @@ description: Sfruttare il Centro azioni per intervenire opportunamente su proble
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 91%
+source-wordcount: '708'
+ht-degree: 90%
 
 ---
 
@@ -72,7 +72,7 @@ AEM as a Cloud Service dispone di diversi tipi di notifiche, ma nel Centro azion
 
 ## Tipi di notifica supportati {#supported-notification-types}
 
-Nella tabella seguente sono elencati i tipi di notifica attualmente supportati nel Centro azioni.
+Nella tabella seguente sono elencati i tipi di notifica attualmente supportati nel Centro azioni. Le notifiche sono attualmente limitate agli ambienti di produzione.
 
 | Tipo di notifica | Profilo prodotto correlato | Azione correttiva |
 |---|---|---|
