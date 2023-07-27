@@ -3,9 +3,9 @@ title: Come si aggiunge un modulo adattivo alla pagina di AEM Sites?
 description: Scopri come creare o aggiungere un modulo adattivo alla pagina AEM Sites. Scopri anche i vantaggi e i vari modi per integrare i moduli nel sito web.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: c5a3b5a22283e0e14b8d0a8464b9bba460a80c71
+source-git-commit: 6a462b7a437f74e659a43f7f5d4a95663b92c2cf
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3308'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | Questo articolo |
+
+## Panoramica {#overview}
 
 Con AEM Forms, puoi aggiungere facilmente un modulo alla pagina di AEM Sites. Questo consente ai visitatori di compilare e inviare i moduli in modo comodo, senza mai uscire dalla pagina in cui si trovano. In questo modo, possono rimanere coinvolti senza difficoltà con altri elementi del sito web interagendo attivamente con il modulo.
 
@@ -51,11 +53,12 @@ Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
 * **[Convertire un modulo adattivo in frammento di esperienza](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Converti un modulo adattivo aggiunto a una pagina AEM Sites in un frammento di esperienza per riutilizzare il modulo su più pagine AEM Sites.
 
-* **Aggiungere più moduli a una pagina o a un frammento di esperienza di AEM Sites:**  Puoi creare o aggiungere più Forms adattivi a una pagina AEM Sites per fornire più scelte agli utenti in base alle loro preferenze e ai loro requisiti. Questi possono essere una combinazione di forme nuove di zecca da zero e moduli esistenti.
+* **[Creare e aggiungere moduli basati su modelli approvati a una pagina AEM Sites:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** Puoi sfruttare i modelli pre-approvati per creare rapidamente Forms adattivi in linea con le linee guida di branding e gli standard di progettazione della tua organizzazione. L’opzione è disponibile solo per Forms adattivo creato con il componente Forms Editor adattivo o Forms adattivo - Incorpora.
 
-* **Creare e aggiungere moduli basati su modelli approvati a una pagina AEM Sites:** Puoi sfruttare i modelli pre-approvati per creare rapidamente Forms adattivi in linea con le linee guida di branding e gli standard di progettazione della tua organizzazione. L’opzione è disponibile solo per Forms adattivo creato con il componente Forms Editor adattivo o Forms adattivo - Incorpora.
+* **[Aggiungere moduli esistenti a una pagina AEM Sites:](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** Puoi integrare facilmente nei tuoi siti web i moduli già creati, consentendo ai visitatori di interagire direttamente con essi. L’opzione è disponibile solo per Forms adattivo creato con il componente Forms Editor adattivo o Forms adattivo - Incorpora.
 
-* **Aggiungere moduli esistenti a una pagina AEM Sites:** Puoi integrare facilmente nei tuoi siti web i moduli già creati, consentendo ai visitatori di interagire direttamente con essi. L’opzione è disponibile solo per Forms adattivo creato con il componente Forms Editor adattivo o Forms adattivo - Incorpora.
+
+* **Aggiungere più moduli a una pagina o a un frammento di esperienza di AEM Sites:**  Puoi creare o aggiungere più Forms adattivi a una pagina AEM Sites per fornire più scelte agli utenti in base alle loro preferenze e ai loro requisiti. Questi possono essere una combinazione di forme nuove di zecca da zero e moduli esistenti. È possibile utilizzare **[!UICONTROL Contenitore modulo adattivo]** più volte per aggiungere Forms adattivo a una pagina AEM Sites. È possibile utilizzare **[!UICONTROL Forms adattivo - Incorpora]** componente più volte in una pagina AEM Sites, solo se **[!UICONTROL La forma copre l&#39;intera larghezza della cornice]** è selezionata. Se il valore **[!UICONTROL La forma copre l&#39;intera larghezza della cornice]** non è selezionata, la pagina AEM Sites supporta un solo modulo adattivo senza iframe. Per aggiungere altro Forms adattivo utilizzando **[!UICONTROL Forms adattivo - Incorpora]** componente, seleziona **[!UICONTROL La forma copre l&#39;intera larghezza della cornice]** opzione.
 
 ## Considerazioni per la creazione di un modulo adattivo nella pagina di AEM Sites o nel frammento di esperienza AEM {#consideration}
 
