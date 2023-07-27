@@ -3,7 +3,7 @@ title: Come si aggiunge un modulo adattivo alla pagina di AEM Sites?
 description: Scopri come creare o aggiungere un modulo adattivo alla pagina AEM Sites. Scopri anche i vantaggi e i vari modi per integrare i moduli nel sito web.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 991de20303380af76d3e2e97aca8e0a4373e2232
+source-git-commit: ecc881ac1a9f8dd98cd57bbeb44cc35deddcbb8e
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 0%
