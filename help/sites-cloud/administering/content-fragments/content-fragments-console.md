@@ -5,10 +5,10 @@ landing-page-description: Scopri come gestire i frammenti di contenuto dalla con
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 94%
+source-wordcount: '1178'
+ht-degree: 85%
 
 ---
 
@@ -64,6 +64,7 @@ Nella console puoi osservare tre aree principali:
             * Aprire il frammento appropriato nell’editor
             * Mostrare informazioni sui riferimenti
             * Mostrare informazioni sulle versioni linguistiche del frammento
+            * Filtra rapidamente in base a un tag selezionato
       * Posizionando il cursore del mouse sulle intestazioni di colonna, viene visualizzato un selettore di azioni a discesa e dei cursori di larghezza. Queste ti consentono di effettuare le seguenti operazioni:
          * Ordinare: selezionando l’azione appropriata per ordine crescente o decrescente. 
 In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ordinamento è disponibile solo nelle colonne appropriate.
@@ -117,27 +118,34 @@ Il pannello principale (vista tabella) della console, a destra, fornisce una ser
 * **Nome**
    * Fornisce un collegamento per aprire il frammento nell’editor.
 * **Modello**
-   * Fornisce un collegamento per aprire il frammento nell’editor.
+   * Solo informazioni.
+   * Può essere utilizzato per [Filtro rapido](#fast-filtering#fast-filtering)
 * **Cartella**
    * Fornisce un collegamento per aprire la cartella nella console.
 Passando il puntatore del mouse sul nome della cartella verrà visualizzato il percorso JCR.
 * **Stato**
-   * Solo informazioni
+   * Solo informazioni.
+   * Può essere utilizzato per [Filtro rapido](#fast-filtering#fast-filtering)
 * **Anteprima**
    * Solo informazioni:
       * **In sincronizzazione**: il frammento di contenuto è in sincronizzazione nei servizi di **authoring** e **anteprima**.
       * **Fuori sincronizzazione**: il frammento di contenuto è fuori sincronizzazione nei servizi di **authoring** e **anteprima**. È necessario **Pubblica** in **Anteprima** per garantire che le due istanze tornino ad essere sincronizzate.
       * vuoto: il frammento di contenuto non esiste nel servizio di **Anteprima**.
 * **Modificato**
-   * Solo informazioni
+   * Solo informazioni.
 * **Modificato da**
-   * Solo informazioni
+   * Solo informazioni.
+   * Può essere utilizzato per [Filtro rapido](#fast-filtering#fast-filtering).
+* **Tag**
+   * Solo informazioni.
+   * Mostra tutti i tag relativi al frammento di contenuto, sia Principale che eventuali varianti.
+   * Può essere utilizzato per [Filtro rapido](#fast-filtering#fast-filtering).
 * **Pubblicazione**
-   * Solo informazioni
+   * Solo informazioni.
 * **Pubblicato da**
-   * Solo informazioni
+   * Solo informazioni.
+   * Può essere utilizzato per [Filtro rapido](#fast-filtering#fast-filtering).
 * **Con riferimento da**
-
    * Fornisce un collegamento che apre una finestra di dialogo in cui sono elencati tutti i riferimenti principali di quel frammento, compresi i frammenti di contenuto, frammenti di esperienza e pagine. Per aprire un riferimento specifico, fai clic sul **Titolo** nella finestra di dialogo.
 
      ![Console Frammenti di contenuto - Finestra di dialogo Riferimenti](assets/cfc-console-references-dialog.png)
@@ -166,9 +174,13 @@ Presenta un elenco di colonne che puoi nascondere o mostrare:
 
 Il pannello Filtro offre:
 
-* una selezione di predicati; è possibile selezionare uno o più predicati e combinarli per creare il filtro
+* una selezione di predicati;
+   * tra cui modelli per frammenti di contenuto, localizzazione, tag, campi di stato
+   * è possibile selezionare e combinare uno o più predicati per creare il filtro
 * l’opportunità di salvare la configurazione mediante il comando **Salva**
 * l’opzione di recuperare un filtro di ricerca salvato per il riutilizzo
+
+Una volta selezionata, la **Filtraggio per** (sotto la casella di ricerca). Possono essere deselezionati da lì. Ad esempio:
 
 ![Console Frammenti di contenuto - Filtro](assets/cfc-console-filter.png)
 
@@ -180,7 +192,7 @@ Ad esempio, seleziona **Pubblicato** nella colonna **Stato**:
 
 >[!NOTE]
 >
->Il filtro rapido è supportato solo per le colonne **Modello**, **Stato**, **Modificato da** e **Pubblicato da**.
+>Il filtro rapido è supportato solo per **Modello**, **Stato**, **Modificato da**, **Tag**, e **Pubblicato da** colonne.
 
 ![Console Frammenti di contenuto - Filtro](assets/cfc-console-fast-filter-01.png)
 
