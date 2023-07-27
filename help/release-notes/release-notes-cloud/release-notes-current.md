@@ -3,9 +3,9 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8efe5d66929d1e2ccd7af71a2de8ae02f2bbc290
+source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '981'
 ht-degree: 32%
 
 ---
@@ -77,10 +77,9 @@ Per impostazione predefinita, Assets Essentials ora ordina i risultati della ric
 
 * [**Temi predefiniti**](/help/forms/using-themes-in-core-components.md) **e modelli**: avvia il processo di creazione dei moduli con i nostri temi e modelli OOTB pronti all’uso, personalizzati per consentire a professionisti esperti e nuovi autori di moduli di acquisire dimestichezza. Creati in modo semplice utilizzando i componenti core di Forms adattivi, questi temi e modelli meticolosamente curati consentono di iniziare a creare moduli rapidamente per i casi d’uso comuni.
 
+!![Modelli pronti all’uso](/help/forms/assets/form-templates-ootb.png)
 
 * **Componenti React per Forms headless**: ora puoi visualizzare in anteprima e personalizzare le rappresentazioni headless di moduli adattivi con i componenti React forniti come predefiniti. Questi componenti sfruttano le classi BEM dei componenti core di Forms adattivi per la creazione di stili, semplificando la personalizzazione del loro aspetto in base a requisiti specifici.
-
-  L’integrazione con Adobe Acrobat Sign Solutions for Government consente ai partner e ai clienti governativi di Adobe di utilizzare le firme elettroniche in Adaptive Forms per alcune delle linee di business più critiche e sensibili. Questo ulteriore livello di sicurezza garantisce che tutte le firme elettroniche siano pienamente conformi alla conformità FedRAMP Moderate, garantendo ai clienti del settore pubblico di Adobe la massima tranquillità.
 
 * [**Creare un Forms adattivo con sezioni ripetibili**](/help/forms/create-forms-repeatable-sections.md): ora puoi effettuare [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), e [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) Adaptive Form basato su componenti ripetibile per l’acquisizione di più record di dati.  Queste sezioni ripetibili consentono di fornire facilmente più voci di dati. È utile quando le istanze di dati richieste sono sconosciute in anticipo. Un modulo può aggiungere o rimuovere facilmente sezioni, rendendo i moduli adattabili a diversi scenari di immissione dati e semplificando la raccolta di più occorrenze dello stesso record di dati.
 
