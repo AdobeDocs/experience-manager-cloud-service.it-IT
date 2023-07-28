@@ -1,9 +1,9 @@
 ---
 title: Configurazione delle regole CDN e WAF per filtrare il traffico
 description: Utilizzare le regole CDN e Firewall applicazione Web per filtrare il traffico dannoso
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2371'
 ht-degree: 2%
 
 ---
@@ -312,6 +312,7 @@ data:
 "ttfb": 19,
 "cip": "147.160.230.112",
 "rid": "974e67f6",
+"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
 "req_mthd": "GET",
@@ -329,11 +330,12 @@ data:
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
 "cip": "147.160.230.112",
+"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
 "req_mthd": "GET",
-"res_type": "",
+"res_type": "image/png",
 "cache": "PASS",
 "res_status": 406,
 "res_bsize": 3362,
@@ -352,6 +354,7 @@ Di seguito è riportato un elenco dei nomi dei campi utilizzati nei registri CDN
 | *ttfb* | Abbreviazione per *Tempo al primo byte*. L’intervallo di tempo tra la richiesta iniziata fino al punto prima che il corpo della risposta iniziasse a essere trasmesso in streaming. |
 | *cip* | Indirizzo IP del client. |
 | *rid* | Il valore dell’intestazione della richiesta utilizzata per identificare in modo univoco la richiesta. |
+| *ua* | L’agente utente responsabile di effettuare una determinata richiesta HTTP. |
 | *host* | Autorità a cui è destinata la richiesta. |
 | *url* | Il percorso completo, inclusi i parametri di query. |
 | *req_mthd* | Metodo HTTP inviato dal client, ad esempio &quot;GET&quot; o &quot;POST&quot;. |
