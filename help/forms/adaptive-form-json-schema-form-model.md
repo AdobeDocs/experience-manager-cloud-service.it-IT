@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 558662fb646abcf298a46fd0c1b1c709d53bce45
+source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 5%
@@ -734,7 +734,7 @@ Per limitare i valori accettabili per un componente Modulo adattivo, puoi aggiun
 
 ## Abilita dati conformi allo schema {#enablig-schema-compliant-data}
 
-Per consentire al modulo adattivo di generare i dati conformi allo schema all’invio del modulo, effettua le seguenti operazioni:
+Per abilitare tutti i Forms adattivi basati su schema JSON a generare dati conformi allo schema al momento dell’invio del modulo, effettua le seguenti operazioni:
 
 1. Vai alla console web di Experience Manager all’indirizzo `https://server:host/system/console/configMgr`.
 1. Individua **[!UICONTROL Configurazione del canale web per la comunicazione di moduli adattivi e interattivi]**.
