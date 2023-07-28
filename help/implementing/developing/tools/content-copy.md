@@ -2,7 +2,7 @@
 title: Lo strumento Copia contenuto
 description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service ad ambienti inferiori a scopo di test.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
+source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 37%
@@ -39,7 +39,7 @@ Per utilizzare lo strumento di copia del contenuto, sono necessarie determinate 
 
 | Funzione Copia contenuto | Gruppo di amministratori AEM | Ruolo Responsabile della distribuzione |
 |---|---|---|
-| Creare e modificare il [set di contenuti](#create-content-set) | Obbligatorio | Non obbligatorio |
+| Creare e modificare il [set di contenuti](#create-content-set) | Non obbligatorio | Obbligatorio |
 | Avviare o annullare il [processo di copia del contenuto](#copy-content) | Obbligatorio | Obbligatorio |
 
 Per ulteriori dettagli sulle autorizzazioni e su come impostarle, consulta il documento [Profili di prodotto e team as a Cloud Service AEM.](/help/onboarding/aem-cs-team-product-profiles.md)
