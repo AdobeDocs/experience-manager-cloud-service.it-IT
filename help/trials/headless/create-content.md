@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 76%
+ht-degree: 82%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 76%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Avvio della console Frammenti di contenuto"
->abstract="La creazione di contenuti coerenti e di alta qualità che funzionano perfettamente nelle applicazioni e nei siti web ti permette di offrire ai tuoi clienti esperienze eccezionali. Questo modulo ti guida attraverso la creazione dei primi contenuti headless tramite la console Frammenti di contenuto.<br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante, quindi segui questa guida."
+>abstract="La creazione di contenuti coerenti e di alta qualità che funzionano perfettamente nelle applicazioni e nei siti web ti permette di offrire ai tuoi clienti esperienze eccezionali. Questo modulo ti guida nella creazione dei primi contenuti headless tramite la console Frammenti di contenuto.<br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante, quindi segui questa guida."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Ottimo lavoro In questo modulo hai imparato a creare contenuti headless come frammento di contenuto in base al modello creato in precedenza. Ora puoi comprendere come i team di contenuti possono creare e gestire contenuti per app e siti web indipendentemente dai cicli di sviluppo."
+>title="Ottimo lavoro In questo modulo hai imparato a creare un contenuto headless come frammento di contenuto, basato sul modello creato in precedenza. Ora puoi comprendere come i team di contenuti possono creare e gestire contenuti per app e siti web indipendentemente dai cicli di sviluppo."
 >abstract=""
 
 ## Creare un frammento di contenuto {#create-fragment}

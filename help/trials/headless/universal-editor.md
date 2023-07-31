@@ -6,7 +6,7 @@ index: false
 source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Modifica nel contesto"
->abstract="Scopri in che modo le app headless possono sfruttare l’Editor universale per ridurre l’attrito, mentre le modifiche contestuali vengono portate a portata di mano dai tuoi autori."
+>title="Modifica nel contesto dei contenuti"
+>abstract="Scopri in che modo le app headless possono sfruttare l’Editor universale per consentire agli autori di apportare facilmente modifiche nel contesto stesso dei contenuti."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="In questo modulo hai imparato a personalizzare il contenuto nel contesto e sul posto utilizzando l’Editor universale."
+>title="In questo modulo hai imparato a personalizzare il contenuto direttamente nel suo contesto, utilizzando l’Editor universale."
 >abstract=""
 
 ## Modifica testo nel contesto {#edit-text}
