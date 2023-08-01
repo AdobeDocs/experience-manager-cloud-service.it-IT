@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9c9e773d3ba69f5582bf75a30f50bd9c8aaa3272
+source-git-commit: 31d0bc8592bdd7c7cb71e0d7ee5eaa9898c276f2
 workflow-type: tm+mt
-source-wordcount: '4205'
+source-wordcount: '4215'
 ht-degree: 97%
 
 ---
@@ -524,7 +524,7 @@ ht-degree: 97%
       + [Gestire le raccolte](/help/assets/manage-collections-assets-view.md)
       + [Osservare risorse, cartelle e raccolte](/help/assets/manage-notifications-assets-view.md)
       + [Gestire i rapporti](/help/assets/manage-reports-assets-view.md)
-      + [Gestione tag](/help/assets/tagging-management-assets-view.md)
+      + [Gestire i tag](/help/assets/tagging-management-assets-view.md)
    + Integrazione con Adobe Workfront {#integrations}
       + [Integrazioni con [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configurare la mappatura dei metadati delle risorse](/help/assets/configure-asset-metadata-mapping.md)
@@ -572,6 +572,7 @@ ht-degree: 97%
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
+            + [Temi di esempio, modelli e modelli di dati dei moduli nei componenti core](/help/forms/sample-themes-templates-form-data-models-core-components)
             + [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-core-components.md)
             + [Crea un Componente core dei moduli adattivi in una pagina AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
