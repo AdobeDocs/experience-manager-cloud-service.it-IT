@@ -2,7 +2,7 @@
 title: Tradurre un modulo adattivo basato su componenti core
 description: Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo basato su componenti core
 feature: Adaptive Forms
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 4%
