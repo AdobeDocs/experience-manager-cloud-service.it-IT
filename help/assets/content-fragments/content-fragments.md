@@ -1,17 +1,17 @@
 ---
 title: Utilizzo di frammenti di contenuto (Risorse - Frammenti di contenuto)
-description: Scopri in che modo i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring e la distribuzione headless.
+description: Scopri in che modo i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring e la distribuzione headless. Inoltre, come possono essere utilizzati insieme a MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 89%
+source-wordcount: '2159'
+ht-degree: 88%
 
 ---
 
 # Utilizzo di frammenti di contenuto {#working-with-content-fragments}
 
-Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless.
+Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless. Possono essere utilizzati anche insieme a [Gestione multisito per consentire il riutilizzo dei contenuti](#reusing-content-fragments-with-msm-assets).
 
 I frammenti di contenuto contengono contenuto strutturato:
 
@@ -30,7 +30,7 @@ I frammenti di contenuto contengono contenuto strutturato:
 I frammenti di contenuto possono essere consegnati anche in formato JSON, utilizzando le funzionalità di esportazione Sling Model (JSON) dei componenti core di AEM. Questo tipo di consegna:
 
 * consente di utilizzare il componente per gestire gli elementi di un frammento da consegnare;
-* consente la consegna in massa, aggiungendo più componenti core per frammenti di contenuto nella pagina utilizzata per la consegna API.
+* consente la consegna in massa, aggiungendo più componenti core per frammenti di contenuto nella pagina utilizzata per la consegna API
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, c
 
 * [Abilita funzionalità frammento di contenuto per la tua istanza](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md): come abilitare, creare e definire i modelli
-* [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md): come creare frammenti di contenuto, quindi modificarli, pubblicarli e farvi riferimento.
+* [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md): come creare frammenti di contenuto, quindi modificarli, pubblicarli e farvi riferimento
 * [Varianti: authoring dei contenuti di frammenti](/help/assets/content-fragments/content-fragments-variations.md): come creare il contenuto di un frammento e quindi varianti del contenuto principale
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md): come utilizzare la sintassi markdown per il frammento
 * [Utilizzo di contenuti associati](/help/assets/content-fragments/content-fragments-assoc-content.md): come aggiungere contenuti associati
@@ -228,7 +228,7 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
       * oppure in un secondo tempo:
 
          * visualizzando e modificando le **Proprietà** del frammento dalla console;
-         * modificando i **Metadati** nell’editor di frammenti.
+         * modificando i **Metadati** nell’editor di frammenti
 
   >[!CAUTION]
   >
