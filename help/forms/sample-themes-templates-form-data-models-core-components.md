@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6abd681fbf0258029dd594d214a2480d73b21f57
+source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1200'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Temi di esempio, modelli e modelli di dati dei moduli nei componenti core {#sample-themes-templates-and-data-models}
 
-AEM Forms as a Cloud Service fornisce esempi di temi di riferimento, modelli e modelli di dati dei moduli per aiutarti a iniziare rapidamente a creare Adaptive Forms con i Componenti core. È possibile [abilitare i componenti core Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it) sull’ambiente di sviluppo as a Cloud Service e locale di AEM Forms per ottenere modelli OOTB di riferimento e per [utilizzare e personalizzare i temi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+AEM Forms as a Cloud Service fornisce esempi di temi di riferimento, modelli e modelli di dati dei moduli per aiutarti a iniziare rapidamente a creare Adaptive Forms con i Componenti core. È possibile [abilitare i componenti core Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it) sull’ambiente di sviluppo as a Cloud Service e locale di AEM Forms per ottenere modelli OOTB di esempio e per [utilizzare e personalizzare i temi di esempio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
 
 I temi di esempio, i modelli e i modelli di dati dei moduli inclusi nel pacchetto di contenuto di riferimento sono:
 
@@ -26,14 +26,13 @@ I temi di esempio, i modelli e i modelli di dati dei moduli inclusi nel pacchett
 | Base | Area di lavoro | Microsoft® Dynamics 365 |
 | Vuoto | WKND | Salesforce |
 | Contattaci | Semaforo |  |
+| Aggiornamento dei dettagli di contatto |   |   |
 | Modulo di consenso | |  |
-| Sollevare un reclamo | | |
 | Richiesta servizio di registro |  |  |
 | Invia feedback |  |  |
 | Iscrizione benefit |  |   |
 | Sintetico benefit dipendenti |   |   |
 | Richiesta di estratto conto |   |   |
-| Aggiornamento dei dettagli di contatto |   |   |
 | Modulo di ispezione di sicurezza |   |   |
 | Ispezione del controllo di qualità |   |   |
 | Richiesta di acquisto |  |  |
@@ -77,15 +76,15 @@ Il modello di base consente di creare rapidamente un modulo per l’esperienza d
 
 >[!TAB Desktop]
 
-    ![Desktop modello di base](assets/Basic-template-desktop-view.png)
+![Desktop modello di base](assets/Basic-template-desktop-view.png)
 
 >[!TAB Telefono]
 
-    ![Telefono modello base](assets/Basic-template-phone-view.png)
+![Telefono modello base](assets/Basic-temp-phone-view.png)
 
 >[!TAB Tablet]
 
-    ![Tablet modello di base](assets/Basic-template-tablet-view.png)
+![Tablet modello di base](assets/Basic-temp-tablet-view.png)
 
 >[!ENDTABS]
 
@@ -96,11 +95,9 @@ Un modello di area di lavoro vuoto consente di creare da zero una struttura di m
 
 ![Modello vuoto](assets/Blank-template.png)
 
-### Richiesta estratto conto {#Request-for-Account-Statement}
+### Contattaci {#Contact-Us}
 
-Il modello di estratto conto della richiesta consente di creare un modulo che avvia il processo di ottenimento di un estratto conto accurato e aggiornato dei clienti. Il rendiconto fornisce una registrazione dettagliata di transazioni finanziarie, attività o altre informazioni rilevanti sui clienti che utilizzano questo modulo.
-
-![Request-for-account-statment](assets/Request-for-account-statment.png)
+Il modello di modulo Contattaci viene utilizzato per creare un modulo per facilitare la comunicazione tra i visitatori del sito web e gli amministratori. Gli utenti possono inviare query, feedback o richieste di supporto tramite il modulo.
 
 ### Aggiornamento dei dettagli di contatto {#Contact-Details-Update}
 
@@ -108,38 +105,9 @@ Il modello di aggiornamento dei dettagli di contatto consente agli autori di cre
 
 ![Contact-details-update](assets/Contact-details-update.png)
 
-### Ispezione di sicurezza {#Safety-Inspection}
-
-Il modello di modulo per le ispezioni di sicurezza consente di creare un modulo per l&#39;immissione di dettagli per un ambiente di lavoro sicuro. Effettuando ispezioni regolari utilizzando questo modulo è possibile identificare potenziali rischi. Il modulo copre vari aspetti come le uscite di emergenza, la sicurezza antincendio, la sicurezza elettrica, i materiali pericolosi, i dispositivi di protezione personale, l&#39;ergonomia delle postazioni di lavoro per la sicurezza e il benessere di dipendenti, visitatori e clienti.
-
-### Richiesta di acquisto {#Purchase-Request}
-
-Il modello di modulo per la richiesta di acquisto consente di creare un modulo per avviare il processo di approvvigionamento e consentire ai dipendenti di richiedere formalmente l&#39;acquisto di beni o servizi necessari per il proprio lavoro. Il modulo acquisisce dettagli essenziali come la descrizione dell&#39;articolo, la quantità, il fornitore preferito (se applicabile), l&#39;allocazione del budget, la giustificazione per l&#39;acquisto, le informazioni di consegna e le approvazioni richieste.
-
-![richiesta di acquisto](assets/purchase-request.gif)
-
-### Sintetico benefit dipendenti {#Employee-Benefits-Summary}
-
-Il modello di modulo Riepilogo benefit dipendente consente di creare un modulo per raccogliere dettagli essenziali sui vantaggi di un singolo utente. Consente di valutare la copertura in modo rapido e accurato, fornendo una panoramica completa per assistenza e supporto efficienti.
-
-### Iscrizione benefit {#Benefits-Enrollment}
-
-Il modello di modulo di iscrizione ai benefit viene utilizzato per creare un modulo per raccogliere informazioni essenziali dai dipendenti in merito ai benefit e alle opzioni di copertura preferiti. In genere accompagna il periodo di iscrizione ai benefit annuali.
-
-
-### Ispezione del controllo qualità {#Quality-Control-Inspection}
-
-Il modello di modulo per l&#39;ispezione del controllo qualità consente di creare un modulo per valutare e documentare l&#39;aspetto visivo, le dimensioni, la funzionalità, la documentazione, i risultati dei test e la qualità complessiva di un prodotto o di un elemento. Consente di identificare i difetti, le non conformità e le azioni correttive necessarie per garantire il rispetto degli standard di qualità.
-
-
 ### Modulo di consenso {#Consent-Form}
 
 Il modello di modulo di consenso viene utilizzato per creare un modulo per l’acquisizione di un documento legale da parte di partecipanti che partecipano a un’attività specifica, a uno studio di ricerca, a una procedura medica o a qualsiasi situazione in cui possano essere coinvolti dati o diritti personali. Il modulo garantisce la trasparenza, tutela i diritti dei partecipanti e stabilisce una chiara comprensione di ciò che l&#39;individuo sta accettando.
-
-
-### Contattaci {#Contact-Us}
-
-Il modello di modulo Contattaci viene utilizzato per creare un modulo per facilitare la comunicazione tra i visitatori del sito web e gli amministratori. Gli utenti possono inviare query, feedback o richieste di supporto tramite il modulo.
 
 ### Registra richiesta servizio {#Log-Service-Request}
 
@@ -148,6 +116,34 @@ Il modello di richiesta del servizio di registro consente di creare un modulo ch
 ### Invia feedback {#Give-Feedback}
 
 Fornire un modello di modulo di feedback consente di creare un modulo per fornire un feedback costruttivo a un&#39;altra persona o team. Il modulo contribuisce a garantire un feedback chiaro, specifico e actionable, promuovendo una comunicazione aperta e miglioramenti.
+
+### Iscrizione benefit {#Benefits-Enrollment}
+
+Il modello di modulo di iscrizione ai benefit viene utilizzato per creare un modulo per raccogliere informazioni essenziali dai dipendenti in merito ai benefit e alle opzioni di copertura preferiti. In genere accompagna il periodo di iscrizione ai benefit annuali.
+
+### Sintetico benefit dipendenti {#Employee-Benefits-Summary}
+
+Il modello di modulo Riepilogo benefit dipendente consente di creare un modulo per raccogliere dettagli essenziali sui vantaggi di un singolo utente. Consente di valutare la copertura in modo rapido e accurato, fornendo una panoramica completa per assistenza e supporto efficienti.
+
+### Richiesta estratto conto {#Request-for-Account-Statement}
+
+Il modello di estratto conto della richiesta consente di creare un modulo che avvia il processo di ottenimento di un estratto conto accurato e aggiornato dei clienti. Il rendiconto fornisce una registrazione dettagliata di transazioni finanziarie, attività o altre informazioni rilevanti sui clienti che utilizzano questo modulo.
+
+![Request-for-account-statment](assets/Request-for-account-statment.png)
+
+### Ispezione di sicurezza {#Safety-Inspection}
+
+Il modello di modulo per le ispezioni di sicurezza consente di creare un modulo per l&#39;immissione di dettagli per un ambiente di lavoro sicuro. Effettuando ispezioni regolari utilizzando questo modulo è possibile identificare potenziali rischi. Il modulo copre vari aspetti come le uscite di emergenza, la sicurezza antincendio, la sicurezza elettrica, i materiali pericolosi, i dispositivi di protezione personale, l&#39;ergonomia delle postazioni di lavoro per la sicurezza e il benessere di dipendenti, visitatori e clienti.
+
+### Ispezione del controllo qualità {#Quality-Control-Inspection}
+
+Il modello di modulo per l&#39;ispezione del controllo qualità consente di creare un modulo per valutare e documentare l&#39;aspetto visivo, le dimensioni, la funzionalità, la documentazione, i risultati dei test e la qualità complessiva di un prodotto o di un elemento. Consente di identificare i difetti, le non conformità e le azioni correttive necessarie per garantire il rispetto degli standard di qualità.
+
+### Richiesta di acquisto {#Purchase-Request}
+
+Il modello di modulo per la richiesta di acquisto consente di creare un modulo per avviare il processo di approvvigionamento e consentire ai dipendenti di richiedere formalmente l&#39;acquisto di beni o servizi necessari per il proprio lavoro. Il modulo acquisisce dettagli essenziali come la descrizione dell&#39;articolo, la quantità, il fornitore preferito (se applicabile), l&#39;allocazione del budget, la giustificazione per l&#39;acquisto, le informazioni di consegna e le approvazioni richieste.
+
+![richiesta di acquisto](assets/purchase-request.gif)
 
 ## Modelli dati modulo di riferimento {#reference-models}
 
