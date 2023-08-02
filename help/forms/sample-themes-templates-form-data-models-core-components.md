@@ -3,21 +3,21 @@ title: Temi di esempio, modelli e modelli di dati dei moduli nei componenti core
 description: I componenti core di AEM Forms forniscono esempi di temi, modelli e modelli di dati per moduli adattivi
 solution: Experience Manager Forms
 topic: Administration
-role: Author
+role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 12c99aa55871f9b24ec7b007b14898f0100bfe2f
+source-git-commit: 6abd681fbf0258029dd594d214a2480d73b21f57
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1207'
 ht-degree: 3%
 
 ---
 
+
 # Temi di esempio, modelli e modelli di dati dei moduli nei componenti core {#sample-themes-templates-and-data-models}
 
-AEM Forms as a Cloud Service fornisce diversi esempi di temi di riferimento, modelli e modelli di dati dei moduli per aiutarti a iniziare rapidamente a creare Adaptive Forms con i Componenti core. È possibile [abilitare i componenti core Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it) sull’ambiente di sviluppo as a Cloud Service e locale di AEM Forms per ottenere modelli OOTB di riferimento e per [utilizzare e personalizzare i temi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+AEM Forms as a Cloud Service fornisce esempi di temi di riferimento, modelli e modelli di dati dei moduli per aiutarti a iniziare rapidamente a creare Adaptive Forms con i Componenti core. È possibile [abilitare i componenti core Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it) sull’ambiente di sviluppo as a Cloud Service e locale di AEM Forms per ottenere modelli OOTB di riferimento e per [utilizzare e personalizzare i temi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
 
 I temi di esempio, i modelli e i modelli di dati dei moduli inclusi nel pacchetto di contenuto di riferimento sono:
 
@@ -40,29 +40,28 @@ I temi di esempio, i modelli e i modelli di dati dei moduli inclusi nel pacchett
 
 ## Temi di esempio {#Sample-Themes}
 
-I temi di riferimento consentono di definire lo stile dei moduli senza dover avere esperienza in CSS, anche se puoi personalizzare il tema in base alle tue esigenze. È possibile [abilitare i componenti core Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it) nell’ambiente di sviluppo as a Cloud Service e locale di AEM Forms, per ottenere questi temi descritti come segue:
+I temi di esempio di riferimento aiutano gli autori a definire e personalizzare lo stile dei moduli; gli autori con conoscenze di base su CSS possono personalizzare il tema in base alle esigenze. Autori modulo [abilitare i componenti core Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it) nell’ambiente di sviluppo as a Cloud Service e locale di AEM Forms, per ottenere questi temi descritti come segue:
 
 ![Temi inclusi](assets/OOTB-themes.png)
 
 ### Area di lavoro {#Canvas}
 
-L&#39;area di lavoro è il tema predefinito per l&#39;Adaptive Forms ed enfatizza l&#39;uso di colori di base, trasparenza e icone piatte. Nella schermata seguente puoi vedere come si presenta il tema Canvas.
+Il tema Area di lavoro è il tema predefinito per le maschere e sottolinea l&#39;utilizzo di colori di base, trasparenza e icone piatte. Nella schermata seguente puoi vedere come si presenta il tema Canvas.
+
 ![Tema area di lavoro](assets/canvas-theme.png)
 
 ### WKND {#WKND}
 
-Il tema WKND incarna un design vivace, fantasioso e coinvolgente per mostrare un aspetto elegante nelle tue forme. Il tema è basato sull&#39;aspetto e lo stile di [Sito WKND](https://wknd.site/us/en.html) che è un sito web di viaggi e avventura basato su [Componenti core di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+Il tema WKND incarna un design vivace, fantasioso e coinvolgente per mostrare un aspetto elegante alle tue forme. Il tema è basato sull&#39;aspetto e lo stile di [Sito WKND](https://wknd.site/us/en.html) che è un sito web di viaggi e avventura basato su [Componenti core di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
 
 ![Tema WKND](assets/WKND-theme.png)
 
 
 ### Semaforo {#Easel}
 
-Il tema Sel si riferisce a un tipo specifico di progettazione del modello facile da impostare e personalizzato per semplicità e facilità d’uso. Il tema di Easel è basato sul concetto di un supporto portatile utilizzato dagli artisti per sostenere una tela mentre lavorano sui loro dipinti.
+Il tema semplice consente di creare un aspetto del modulo accattivante e facile da impostare, personalizzato per la semplicità e la facilità d’uso. Il tema di Easel è basato sul concetto di un supporto portatile utilizzato dagli artisti per sostenere una tela mentre lavorano sui loro dipinti.
 
 ![Tema Easy](assets/Easel-theme.png)
-
-
 
 ## Modelli di esempio {#Sample-templates}
 
@@ -72,7 +71,7 @@ I modelli definiscono la struttura iniziale del modulo, il contenuto e le azioni
 
 ### Base {#Basic}
 
-Il modello di base consente di creare rapidamente un modulo per l’esperienza di iscrizione. Puoi utilizzarlo anche per visualizzare in anteprima la funzionalità dei componenti core adattivi di Forms. Fornisce un layout guidato per la presentazione sezione per sezione dei dati.
+Il modello di base consente di creare rapidamente un modulo per l’esperienza di iscrizione. Puoi utilizzarlo anche per visualizzare in anteprima la funzionalità di [Componenti core Forms adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction). Fornisce un layout guidato per la presentazione sezione per sezione dei dati.
 
 >[!BEGINTABS]
 
@@ -93,67 +92,68 @@ Il modello di base consente di creare rapidamente un modulo per l’esperienza d
 
 ### Vuoto {#Blank}
 
-Un modello di area di lavoro vuoto consente di creare da zero una struttura di moduli adattivi, un contenuto e regole. Nessun componente modulo incorporato.
+Un modello di area di lavoro vuoto consente di creare da zero una struttura di moduli adattivi, un contenuto e regole. Nessun componente modulo viene pre-incorporato nel modello vuoto.
 
 ![Modello vuoto](assets/Blank-template.png)
 
 ### Richiesta estratto conto {#Request-for-Account-Statement}
 
-Richiesta di un modulo di rendiconto conto per richiedere un rendiconto delle transazioni. Questo rendiconto fornisce una registrazione dettagliata di transazioni finanziarie, attività o altre informazioni rilevanti su una persona. Compilando questo modulo è possibile avviare il processo per ottenere un rendiconto accurato e aggiornato per i record.
+Il modello di estratto conto della richiesta consente di creare un modulo che avvia il processo di ottenimento di un estratto conto accurato e aggiornato dei clienti. Il rendiconto fornisce una registrazione dettagliata di transazioni finanziarie, attività o altre informazioni rilevanti sui clienti che utilizzano questo modulo.
 
 ![Request-for-account-statment](assets/Request-for-account-statment.png)
 
 ### Aggiornamento dei dettagli di contatto {#Contact-Details-Update}
 
-Il Modulo di aggiornamento dei dettagli di contatto per l&#39;indirizzo e l&#39;aggiornamento dei dettagli di contatto è progettato per aiutarti ad aggiornare i tuoi dati personali relativi all&#39;abbonamento o ai vantaggi per garantire una comunicazione fluida e un accesso ininterrotto ai servizi o ai vantaggi che ricevi.
+Il modello di aggiornamento dei dettagli di contatto consente agli autori di creare un modulo per l’aggiornamento dell’indirizzo e dei dettagli di contatto dei clienti. Il modulo aiuta inoltre i clienti ad aggiornare le informazioni personali relative all’abbonamento o ai vantaggi per garantire una comunicazione fluida e un accesso ininterrotto ai servizi o ai vantaggi.
 
 ![Contact-details-update](assets/Contact-details-update.png)
 
 ### Ispezione di sicurezza {#Safety-Inspection}
 
-Il modulo di ispezione di sicurezza serve a mantenere un ambiente di lavoro sicuro. Effettuando ispezioni regolari utilizzando questo modulo è possibile identificare potenziali rischi. Esso copre vari aspetti quali le uscite di emergenza, la sicurezza antincendio, la sicurezza elettrica, i materiali pericolosi, i dispositivi di protezione individuale, l&#39;ergonomia dei posti di lavoro, ecc. per la sicurezza e il benessere di dipendenti, visitatori e clienti e crea un ambiente sicuro per tutti.
+Il modello di modulo per le ispezioni di sicurezza consente di creare un modulo per l&#39;immissione di dettagli per un ambiente di lavoro sicuro. Effettuando ispezioni regolari utilizzando questo modulo è possibile identificare potenziali rischi. Il modulo copre vari aspetti come le uscite di emergenza, la sicurezza antincendio, la sicurezza elettrica, i materiali pericolosi, i dispositivi di protezione personale, l&#39;ergonomia delle postazioni di lavoro per la sicurezza e il benessere di dipendenti, visitatori e clienti.
 
 ### Richiesta di acquisto {#Purchase-Request}
 
-Un modulo di richiesta di acquisto per avviare la procedura di approvvigionamento e consentire ai dipendenti di richiedere formalmente l’acquisto di beni o servizi necessari per il loro lavoro. Il modulo acquisisce dettagli essenziali come la descrizione dell&#39;articolo, la quantità, il fornitore preferito (se applicabile), l&#39;allocazione del budget, la giustificazione per l&#39;acquisto, le informazioni di consegna e le approvazioni richieste. Lo scopo del modulo è quello di semplificare e documentare il processo di acquisto, garantendo la corretta autorizzazione e tracciabilità degli acquisti richiesti.
+Il modello di modulo per la richiesta di acquisto consente di creare un modulo per avviare il processo di approvvigionamento e consentire ai dipendenti di richiedere formalmente l&#39;acquisto di beni o servizi necessari per il proprio lavoro. Il modulo acquisisce dettagli essenziali come la descrizione dell&#39;articolo, la quantità, il fornitore preferito (se applicabile), l&#39;allocazione del budget, la giustificazione per l&#39;acquisto, le informazioni di consegna e le approvazioni richieste.
 
 ![richiesta di acquisto](assets/purchase-request.gif)
 
 ### Sintetico benefit dipendenti {#Employee-Benefits-Summary}
 
-Il modulo Sintetico benefici dipendente viene utilizzato per raccogliere dettagli essenziali sui benefici di un individuo. Consente di valutare la copertura in modo rapido e accurato, fornendo una panoramica completa per assistenza e supporto efficienti.
+Il modello di modulo Riepilogo benefit dipendente consente di creare un modulo per raccogliere dettagli essenziali sui vantaggi di un singolo utente. Consente di valutare la copertura in modo rapido e accurato, fornendo una panoramica completa per assistenza e supporto efficienti.
 
 ### Iscrizione benefit {#Benefits-Enrollment}
 
-Un modello di modulo di iscrizione ai benefit per raccogliere informazioni essenziali dai dipendenti in merito ai benefit e alle opzioni di copertura preferiti. In genere accompagna il periodo di iscrizione ai benefit annuali.
+Il modello di modulo di iscrizione ai benefit viene utilizzato per creare un modulo per raccogliere informazioni essenziali dai dipendenti in merito ai benefit e alle opzioni di copertura preferiti. In genere accompagna il periodo di iscrizione ai benefit annuali.
 
 
 ### Ispezione del controllo qualità {#Quality-Control-Inspection}
 
-Un modulo di ispezione per il controllo della qualità per valutare e documentare l’aspetto visivo, le dimensioni, la funzionalità, la documentazione, i risultati dei test e la qualità complessiva di un prodotto o di un articolo. Consente di identificare i difetti, le non conformità e le azioni correttive necessarie per garantire il rispetto degli standard di qualità.
+Il modello di modulo per l&#39;ispezione del controllo qualità consente di creare un modulo per valutare e documentare l&#39;aspetto visivo, le dimensioni, la funzionalità, la documentazione, i risultati dei test e la qualità complessiva di un prodotto o di un elemento. Consente di identificare i difetti, le non conformità e le azioni correttive necessarie per garantire il rispetto degli standard di qualità.
 
 
 ### Modulo di consenso {#Consent-Form}
 
-Un modulo di consenso è un documento legale che cerca di ottenere il permesso volontario e informato di un individuo o partecipante prima che partecipi a un&#39;attività specifica, uno studio di ricerca, una procedura medica o qualsiasi situazione in cui possano essere coinvolti i suoi dati o diritti personali. Lo scopo di un modulo di consenso è garantire la trasparenza, proteggere i diritti del partecipante e stabilire una chiara comprensione di ciò che la persona accetta.
+Il modello di modulo di consenso viene utilizzato per creare un modulo per l’acquisizione di un documento legale da parte di partecipanti che partecipano a un’attività specifica, a uno studio di ricerca, a una procedura medica o a qualsiasi situazione in cui possano essere coinvolti dati o diritti personali. Il modulo garantisce la trasparenza, tutela i diritti dei partecipanti e stabilisce una chiara comprensione di ciò che l&#39;individuo sta accettando.
+
 
 ### Contattaci {#Contact-Us}
 
-Il Modulo di aggiornamento dei dettagli di contatto per l&#39;indirizzo e l&#39;aggiornamento dei dettagli di contatto è progettato per aiutarti ad aggiornare i tuoi dati personali relativi all&#39;abbonamento o ai vantaggi per garantire una comunicazione fluida e un accesso ininterrotto ai servizi o ai vantaggi che ricevi.
+Il modello di modulo Contattaci viene utilizzato per creare un modulo per facilitare la comunicazione tra i visitatori del sito web e gli amministratori. Gli utenti possono inviare query, feedback o richieste di supporto tramite il modulo.
 
 ### Registra richiesta servizio {#Log-Service-Request}
 
-Modulo di richiesta del servizio di registrazione per richiedere servizi di registrazione specifici a un provider di servizi. Il modulo funge da richiesta formale per la creazione di un ticket che includa determinati eventi, attività o dati registrati per il monitoraggio o il tracciamento dello stato.
+Il modello di richiesta del servizio di registro consente di creare un modulo che richiede servizi di registrazione specifici a un provider di servizi. Il modulo funge da richiesta formale per la creazione di un ticket che includa determinati eventi, attività o dati registrati per il monitoraggio o il tracciamento dello stato.
 
 ### Invia feedback {#Give-Feedback}
 
-Un modello per fornire feedback costruttivi a un’altra persona o team. Il modello consente di garantire un feedback chiaro, specifico e actionable, promuovendo una comunicazione e un miglioramento aperti.
+Fornire un modello di modulo di feedback consente di creare un modulo per fornire un feedback costruttivo a un&#39;altra persona o team. Il modulo contribuisce a garantire un feedback chiaro, specifico e actionable, promuovendo una comunicazione aperta e miglioramenti.
 
 ## Modelli dati modulo di riferimento {#reference-models}
 
-Il Forms adattivo può quindi interagire con i server Microsoft® Dynamics 365 e Salesforce per abilitare i flussi di lavoro aziendali. Ad esempio:
+Dopo aver creato un’ [Modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) in base a [Componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), è possibile connettere il back-end del modulo con i server di database Microsoft® Dynamics 365 e Salesforce per abilitare i flussi di lavoro aziendali. Ad esempio:
 
-* Scrivere dati in Microsoft® Dynamics 365 e Salesforce all’invio di moduli adattivi.
+* Scrivi dati in Microsoft® Dynamics 365 e Salesforce all’invio di moduli adattivi.
 * Scrivi dati in Microsoft® Dynamics 365 e Salesforce tramite entità personalizzate definite in Modello dati modulo e viceversa.
 * Effettua query sui server Microsoft® Dynamics 365 e Salesforce per i dati e precompila Forms adattivo.
 * Leggi i dati da Microsoft® Dynamics 365 e dal server Salesforce.

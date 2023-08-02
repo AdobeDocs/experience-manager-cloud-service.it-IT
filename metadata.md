@@ -5,10 +5,9 @@ git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.it-IT
 index: y
 type: Documentation
 solution: Experience Manager
-version: Cloud Service
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 cloud: Experience Cloud
-source-git-commit: 5bc43af20dc8893303b1d1f4dc70939631933eb7
+source-git-commit: a7a8b14c6d95f704c6ea4ee0d1424e77df045a4c
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 68%
@@ -49,4 +48,4 @@ Articolo
 
 * `title`
 * `description`
-* `contentOwner` (solo nel contenuto delle risorse di base in `/help/assets`)
+* `contentOwner` (solo sul contenuto della risorsa principale in `/help/assets`)
