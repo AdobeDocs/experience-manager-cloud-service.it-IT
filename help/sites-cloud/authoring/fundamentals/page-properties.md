@@ -1,15 +1,15 @@
 ---
 title: Modifica delle proprietà di una pagina
-description: Imposta le proprietà richieste per una pagina
+description: Scopri come definire le proprietà necessarie per gestire una pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2341'
-ht-degree: 81%
+source-wordcount: '2347'
+ht-degree: 80%
 
 ---
 
-# Modifica delle proprietà di una pagina   {#editing-page-properties}
+# Modifica delle proprietà di una pagina {#editing-page-properties}
 
 Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine potrebbero essere collegate a una Live Copy, mentre altre no, e le informazioni sulla Live Copy sono disponibili in base alle necessità.
 

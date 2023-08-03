@@ -1,15 +1,15 @@
 ---
 title: Concetti relativi all’authoring
-description: Concetti relativi all’authoring in AEM
+description: Scopri i concetti di authoring in AEM utilizzando gli ambienti di authoring, anteprima e pubblicazione.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 42%
+source-wordcount: '394'
+ht-degree: 40%
 
 ---
 
-# Authoring   Concetti  {#authoring-concepts}
+# Concetti relativi all’authoring {#authoring-concepts}
 
 Un’installazione di AEM è in genere costituita da almeno due ambienti:
 
