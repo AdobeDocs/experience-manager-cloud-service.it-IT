@@ -1,10 +1,10 @@
 ---
 title: Inserimento di contenuto in Target
-description: Inserimento di contenuto in Target
+description: Scopri come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per acquisire in un’istanza di Cloud Service i contenuti del set di migrazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1941'
 ht-degree: 11%
 
 ---
@@ -181,4 +181,4 @@ Le best practice indicano che, se un’acquisizione deve essere eseguita con wip
 
 ## Passaggio successivo {#whats-next}
 
-Una volta completato l’inserimento del contenuto in Target, puoi visualizzare i registri di ciascun passaggio (estrazione e acquisizione) e cercare gli errori. Consulta [Visualizzazione dei registri di un set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=it) per ulteriori informazioni.
+Una volta completato l’inserimento del contenuto in Target, puoi visualizzare i registri di ogni passaggio (estrazione e acquisizione) e cercare gli errori. Consulta [Visualizzazione dei registri di un set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=it) per ulteriori informazioni.

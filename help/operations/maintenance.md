@@ -1,11 +1,11 @@
 ---
 title: Attività di manutenzione in AEM as a Cloud Service
-description: Attività di manutenzione in AEM as a Cloud Service
+description: Scopri le attività di manutenzione in AEM as a Cloud Service e come configurarle.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 19a3ebd981a7a62fe78a9ec909547b6a70c55121
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 63%
+source-wordcount: '1114'
+ht-degree: 62%
 
 ---
 
@@ -49,7 +49,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
        <li>Le versioni precedenti a 30 giorni vengono rimosse</li>
        <li>Le ultime 5 versioni degli ultimi 30 giorni vengono conservate</li>
        <li>Indipendentemente dalle regole di cui sopra, viene conservata la versione più recente.</li>
-       <br>Si consiglia ai clienti con requisiti normativi di eseguire il rendering delle pagine del sito esattamente come sono apparse in una data specifica di integrarsi con servizi esterni specializzati.
+       <br>Si consiglia ai clienti con requisiti normativi di eseguire il rendering delle pagine del sito esattamente come sono apparse in una data specifica, di integrarsi con servizi esterni specializzati.
      </ol></td>
   </td>
   </tr>
