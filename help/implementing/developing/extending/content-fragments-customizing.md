@@ -1,10 +1,10 @@
 ---
 title: Personalizzazione ed estensione dei frammenti di contenuto
-description: Un frammento di contenuto estende una risorsa standard.
+description: Un frammento di contenuto estende una risorsa standard. Scopri come personalizzarli.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1817'
 ht-degree: 2%
 
 ---
