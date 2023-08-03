@@ -1,12 +1,12 @@
 ---
 title: CDN in AEM as a Cloud Service
-description: CDN in AEM as a Cloud Service
+description: Scopri come utilizzare la rete CDN gestita dall’AEM e come indirizzare la tua rete CDN alla rete CDN gestita dall’AEM.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 25%
+source-wordcount: '1033'
+ht-degree: 24%
 
 ---
 
@@ -57,7 +57,7 @@ Se un cliente deve utilizzare la propria rete CDN esistente, può gestirla e pun
 
 Istruzioni di configurazione:
 
-1. Puntare la rete CDN all’ingresso della rete CDN Adobe come dominio di origine. Esempio: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Puntare la CDN all’ingresso della CDN Adobe come dominio di origine. Esempio: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Impostare SNI sull&#39;ingresso della rete CDN in Adobe.
 1. Imposta l’intestazione Host sul dominio di origine. Esempio: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Imposta il `X-Forwarded-Host` con il nome di dominio in modo che l’AEM possa determinare l’intestazione dell’host. Esempio: `X-Forwarded-Host:example.com`.
