@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
+source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1210'
 ht-degree: 3%
 
 ---
@@ -80,7 +80,7 @@ Il modello di base consente di creare rapidamente un modulo per l’esperienza d
 
 >[!TAB Telefono]
 
-![Telefono modello base](assets/Basic-temp-phone-view.png)
+![Telefono modello base](assets/Basic-temp-phone-view.png){width:&quot;25%&quot;}
 
 >[!TAB Tablet]
 
@@ -93,7 +93,21 @@ Il modello di base consente di creare rapidamente un modulo per l’esperienza d
 
 Un modello di area di lavoro vuoto consente di creare da zero una struttura di moduli adattivi, un contenuto e regole. Nessun componente modulo viene pre-incorporato nel modello vuoto.
 
-![Modello vuoto](assets/Blank-template.png)
+>[!BEGINTABS]
+
+>[!TAB Desktop]
+
+![Desktop modello vuoto](assets/Blank-temp-desktop-view.png)
+
+>[!TAB Telefono]
+
+![Telefono modello base](assets/Blank-temp-phone-view.png){width:&quot;25%&quot;}
+
+>[!TAB Tablet]
+
+![Tablet modello di base](assets/Blank-temp-tablet-view.png)
+
+>[!ENDTABS]
 
 ### Contattaci {#Contact-Us}
 
@@ -147,7 +161,7 @@ Il modello di modulo per la richiesta di acquisto consente di creare un modulo p
 
 ## Modelli dati modulo di riferimento {#reference-models}
 
-Dopo aver creato un’ [Modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) in base a [Componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), è possibile connettere il back-end del modulo con i server di database Microsoft® Dynamics 365 e Salesforce per abilitare i flussi di lavoro aziendali. Ad esempio:
+Dopo aver creato un’ [Modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) in base a [Componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), è possibile connettere il modulo con i server di database Microsoft® Dynamics 365 e Salesforce per abilitare i flussi di lavoro aziendali. Ad esempio:
 
 * Scrivi dati in Microsoft® Dynamics 365 e Salesforce all’invio di moduli adattivi.
 * Scrivi dati in Microsoft® Dynamics 365 e Salesforce tramite entità personalizzate definite in Modello dati modulo e viceversa.
