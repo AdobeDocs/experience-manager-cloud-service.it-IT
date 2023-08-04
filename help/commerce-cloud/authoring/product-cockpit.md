@@ -1,10 +1,10 @@
 ---
 title: Cockpit prodotto
-description: Utilizzo della cabina di comando del prodotto
+description: Scopri come utilizzare il pannello di comando del prodotto, che fornisce una panoramica unificata dei cataloghi di prodotti collegati e dei contenuti associati.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '448'
 ht-degree: 1%
 
 ---

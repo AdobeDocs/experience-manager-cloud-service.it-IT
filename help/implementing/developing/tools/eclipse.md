@@ -1,11 +1,11 @@
 ---
 title: Strumenti AEM Developer per Eclipse
-description: Strumenti AEM Developer per Eclipse
+description: Scopri come utilizzare AEM Developer Tools per Eclipse, un plug-in di Eclipse basato sul plug-in di Eclipse per Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 3%
+source-wordcount: '1199'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ Prima di utilizzare gli strumenti per sviluppatori di AEM, è necessario:
 
 >[!NOTE]
 >
->In macOS, è necessario fare clic con il pulsante destro del mouse su **Eclipse.app**, quindi selezionare **Mostra contenuto pacchetto** per trovare `eclipse.ini`**.**
+>In macOS, è necessario fare clic con il pulsante destro del mouse su **Eclipse.app** e quindi selezionare **Mostra contenuto pacchetto** per trovare `eclipse.ini`**.**
 
 ## Come installare gli strumenti per sviluppatori AEM per Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -89,7 +89,7 @@ Per creare il progetto di esempio, segui la procedura riportata di seguito.
 
    ![Seleziona la versione dell’archetipo](assets/select-archetype.png)
 
-1. Fornisci i seguenti campi per il progetto di esempio:
+1. Fornisci i campi seguenti per il progetto di esempio:
 
    * **Nome**
    * **ID gruppo**
