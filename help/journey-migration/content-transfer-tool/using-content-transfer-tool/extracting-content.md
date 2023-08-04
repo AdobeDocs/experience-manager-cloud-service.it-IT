@@ -1,11 +1,11 @@
 ---
 title: Estrazione del contenuto dall’origine
-description: Estrazione del contenuto dall’origine
+description: Scopri come estrarre il contenuto da un’istanza AEM di origine per trasferirlo successivamente a un’istanza AEM di Cloud Service.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 27%
+source-wordcount: '718'
+ht-degree: 26%
 
 ---
 

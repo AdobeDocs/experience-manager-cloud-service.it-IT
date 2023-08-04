@@ -1,9 +1,9 @@
 ---
 title: Panoramica di Content Transformer
-description: Panoramica di Content Transformer
-source-git-commit: 55eedd342f048e19bad5c6fbfdd16a468ff1f4f9
+description: Scopri come rilevare e risolvere i problemi relativi al contenuto segnalati da BPA utilizzando Content Transformer.
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '393'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Il Content Transformer può aiutare a risolvere i problemi che rientrano nelle s
 | CAV | content.area.violation | Sposta temporaneamente i percorsi in `/etc/packages/content-transformation/paths` per garantire che non vengano trasferiti a AEM as a Cloud Service. |
 | DOPI | deprecated.ordered.index | Rimuovi gli indici obsoleti. |
 | OAUI | non.migrated.oauth.users | Rimuovi questi utenti per assicurarti che non vengano trasferiti ad AEM as a Cloud Service. |
-| PCX | page.complex.medium <br> page.complex.high | Elimina le pagine o gli elementi figlio o spostali in un percorso diverso per assicurarti che non vengano migrati all’AEM as a Cloud Service. |
+| PCX | page.complex.medium <br> page.complex.high | Elimina le pagine o gli elementi figlio o spostali in un percorso diverso per assicurarti che non vengano migrati all’as a Cloud Service AEM. |
 | REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | Rimuovi gli agenti di replica appena creati. <br> OPPURE <br> Rimuovi le proprietà modificate/aggiunte. |
 | URS | clientlibs.location <br> file.location <br> node.location <br> workflow.location | Passa alla posizione corretta per evitare problemi durante la migrazione. |
 | URS | node.size | Spostare temporaneamente i nodi in`/etc/packages/content-transformation/paths` per garantire che non vengano trasferiti a AEM as a Cloud Service. |

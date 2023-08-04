@@ -1,11 +1,11 @@
 ---
 title: Risoluzione dei problemi dello strumento Content Transfer (Trasferimento contenuti)
-description: Risoluzione dei problemi dello strumento Content Transfer (Trasferimento contenuti)
+description: Scopri come risolvere i problemi relativi allo strumento Content Transfer (Trasferimento contenuti)
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 96%
+source-wordcount: '183'
+ht-degree: 91%
 
 ---
 

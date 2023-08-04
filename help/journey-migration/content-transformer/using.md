@@ -1,14 +1,14 @@
 ---
-title: Utilizzo di Content Transformer
-description: Utilizzo di Content Transformer
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+title: Utilizzo del trasformatore di contenuti
+description: Scopri come trasformare la struttura dei contenuti in preparazione alla migrazione a AEM as a Cloud Service.
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 1%
+source-wordcount: '645'
+ht-degree: 2%
 
 ---
 
-# Utilizzo di Content Transformer {#using-ct}
+# Utilizzo del trasformatore di contenuti {#using-ct}
 
 ## Considerazioni importanti sull’utilizzo di Content Transformer {#imp-considerations-ct}
 
@@ -18,7 +18,7 @@ Leggi la sezione seguente per comprendere le considerazioni importanti sull’ut
 * Anche se è possibile eseguire Content Transformer nell’ambiente di produzione, si consiglia di eseguirlo su un clone dell’ambiente di produzione. È importante assicurarsi che BPA e CT vengano eseguiti nello stesso ambiente.
 * Devi essere un amministratore dell’ambiente in cui desideri eseguire Content Transformer.
 * Per impostazione predefinita, qualsiasi operazione in grado di modificare il contenuto sorgente ( sposta/rimuovi/rinomina ) crea un pacchetto di backup dei percorsi sorgente in `/etc/packages/content-transformation` prima della trasformazione. Sebbene ogni finestra di dialogo delle operazioni disponga di un’opzione per disabilitare/abilitare la creazione dei pacchetti di backup, si consiglia rigorosamente di selezionare sempre l’opzione per abilitare la creazione dei pacchetti.
-* Ogni pagina della TC è configurata per elencare un massimo di 50 risultati, quindi alla volta è possibile trasformare un massimo di 50 risultati. Questa operazione viene eseguita per fornire una risposta tempestiva nell’interfaccia utente.
+* Ogni pagina nel Content Transformer è configurata per elencare un massimo di 50 risultati, quindi alla volta è possibile trasformare un massimo di 50 risultati. Questa operazione viene eseguita per fornire una risposta tempestiva nell’interfaccia utente.
 
 ## Disponibilità {#availability-ct}
 

@@ -1,10 +1,10 @@
 ---
 title: Riferimento predicato di Query Builder
-description: Riferimento predicato per l’API Query Builder.
+description: Riferimento predicato per l’API Query Builder in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2252'
 ht-degree: 2%
 
 ---
@@ -122,7 +122,7 @@ Un predicato di sola filtraggio e non può utilizzare un indice di ricerca.
 
 ### intervallo di date {#daterange}
 
-Questo predicato confronta le proprietà della data JCR con un intervallo data/ora. Utilizza il formato ISO8601 per data e ora (`YYYY-MM-DDTHH:mm:ss.SSSZ`) e consente anche rappresentazioni parziali, come `YYYY-MM-DD`. In alternativa, la marca temporale può essere fornita come ora POSIX.
+Questo predicato confronta le proprietà della data JCR con un intervallo di data/ora. Utilizza il formato ISO8601 per data e ora (`YYYY-MM-DDTHH:mm:ss.SSSZ`) e consente anche rappresentazioni parziali, come `YYYY-MM-DD`. In alternativa, la marca temporale può essere fornita come ora POSIX.
 
 Puoi cercare qualsiasi cosa tra due marche temporali, qualsiasi cosa più recente o più vecchia di una determinata data e anche scegliere tra intervalli inclusivi e aperti.
 
