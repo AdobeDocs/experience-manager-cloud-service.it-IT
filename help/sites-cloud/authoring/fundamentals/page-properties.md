@@ -2,9 +2,9 @@
 title: Modifica delle proprietà di una pagina
 description: Scopri come definire le proprietà necessarie per gestire una pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2281'
 ht-degree: 80%
 
 ---
@@ -294,18 +294,6 @@ Quando modifichi una pagina puoi utilizzare **Informazioni pagina** per definire
 ### Dalla console Sites - Pagine multiple {#from-the-sites-console-multiple-pages}
 
 Dalla console **Sites** è possibile selezionare più pagine e quindi utilizzare **Visualizza proprietà** per visualizzare e/o modificare le proprietà della pagina. Questa operazione è definita modifica in serie delle proprietà di pagina.
-
->[!NOTE]
->
->La modifica in serie delle proprietà è disponibile anche per le risorse. È molto simile, ma differisce per alcuni aspetti. Per ulteriori informazioni, consulta Modifica delle proprietà di più risorse.
->
->È anche disponibile la funzione Modifiche in serie, che consente di cercare contenuti in più pagine tramite GQL (Google Query Language), e quindi di modificarli direttamente con Modifiche in serie prima di salvare le modifiche apportate alle pagine originarie.
-
-<!--
->Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
->
->There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
--->
 
 Puoi selezionare più pagine per la modifica in serie utilizzando diversi metodi, tra i quali:
 

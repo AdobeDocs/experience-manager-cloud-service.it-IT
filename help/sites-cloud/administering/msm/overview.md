@@ -4,10 +4,10 @@ description: Ottieni un’introduzione al riutilizzo dei contenuti con le potent
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
 workflow-type: tm+mt
-source-wordcount: '2706'
-ht-degree: 96%
+source-wordcount: '2719'
+ht-degree: 95%
 
 ---
 
@@ -170,11 +170,9 @@ Come introduzione, la tabella seguente fornisce una panoramica dei termini princ
 | Superficiale | Live Copy di una singola pagina |  |
 | Profondo | Una Live Copy di una pagina, insieme alle relative pagine figlie |  |
 
-<!--
 >[!TIP]
 >
->See [Overview of the Java API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) for the object names.
--->
+>Consulta il documento [Estensione di Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) per i nomi degli oggetti.
 
 ## Live Copy {#live-copies}
 
