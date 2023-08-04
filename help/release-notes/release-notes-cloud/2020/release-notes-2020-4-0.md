@@ -1,11 +1,11 @@
 ---
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.4.0'
-description: Note sulla versione 2020.4.0 di Experience Manager
+description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.4.0 as a Cloud Service."
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 94%
+source-wordcount: '648'
+ht-degree: 93%
 
 ---
 
@@ -32,11 +32,11 @@ Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Ma
 * Gli utenti possono configurare [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) da avviare automaticamente tramite l’interfaccia utente per le [!UICONTROL Proprietà] della cartella, nelle gerarchie di cartelle specifiche.
    * L’interfaccia utente per le [!UICONTROL Proprietà] della cartella è stata semplificata: la nuova scheda [!UICONTROL Elaborazione risorse] contiene il profilo di metadati, il profilo di elaborazione e la nuova configurazione del flusso di lavoro con avvio automatico.
 
-      ![I profili di elaborazione possono essere facilmente applicati alle cartelle e tutte le risorse caricate nelle cartelle vengono elaborate utilizzando questi profili](/help/assets/assets/asset-processing-folder-properties.png)
+     ![I profili di elaborazione possono essere facilmente applicati alle cartelle e tutte le risorse caricate nelle cartelle vengono elaborate utilizzando questi profili](/help/assets/assets/asset-processing-folder-properties.png)
 
    * L’opzione di rielaborazione delle risorse consente di selezionare uno specifico profilo di elaborazione con cui rielaborare le risorse selezionate dall’utente nelle sottocartelle.
 
-      ![Rielaborazione di risorse selezionate mediante un profilo di elaborazione specifico](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+     ![Rielaborazione di risorse selezionate mediante un profilo di elaborazione specifico](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
    * [!DNL Dynamic Media]: è stata aggiunta la configurazione di pubblicazione selettiva in modo che le risorse vengano pubblicate automaticamente solo per l’anteprima protetta. Inoltre, le risorse possono essere pubblicate in modo esplicito in Experience Manager senza pubblicare contenuti in DMS7 per la distribuzione nel dominio pubblico.
 
@@ -51,7 +51,6 @@ Scopri nuove funzioni, miglioramenti e correzioni di bug per [!DNL Experience Ma
 >* [Configurazione di Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Configurazione di Experience Manager per l’utilizzo con Asset Link](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Creare un flusso di lavoro in Experience Manager utilizzando i microservizi per le risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
-
 
 ## Novità di Cloud Manager {#whats-new-cloud-manager}
 
