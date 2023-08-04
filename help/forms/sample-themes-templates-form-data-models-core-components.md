@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
+source-git-commit: 2b290be134be05bc15891082e8b54efef62076d0
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1277'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Temi di esempio, modelli e modelli di dati dei moduli nei componenti core {#sample-themes-templates-and-data-models}
 
-I componenti core di AEM Forms forniscono esempi di temi di riferimento, modelli e modelli di dati dei moduli per aiutarti a iniziare rapidamente a creare Forms adattivo con i componenti core. È possibile [abilitare i componenti core Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it) sull’ambiente di sviluppo as a Cloud Service e locale di AEM Forms per ottenere modelli OOTB di esempio e per [utilizzare e personalizzare i temi di esempio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+[!DNL AEM Forms] I Componenti core forniscono temi di esempio, modelli e modelli di dati per moduli pronti all’uso per creare moduli adattivi versatili in modo rapido. Questi consentono inoltre agli autori dei moduli di apprendere l’estensibilità, l’adattabilità e la reattività di [Componenti core di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per creare moduli semplici in poco tempo e moduli complessi in modo semplice e senza interruzioni, collegandosi al database.
 
 I temi di esempio, i modelli e i modelli di dati dei moduli inclusi nel pacchetto di contenuto di riferimento sono:
 
@@ -39,7 +39,13 @@ I temi di esempio, i modelli e i modelli di dati dei moduli inclusi nel pacchett
 
 ## Temi di esempio {#Sample-Themes}
 
-I temi di esempio di riferimento aiutano gli autori a definire e personalizzare lo stile dei moduli; gli autori con conoscenze di base su CSS possono personalizzare il tema in base alle esigenze. Autori modulo [abilitare i componenti core Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it) nell’ambiente di sviluppo as a Cloud Service e locale di AEM Forms, per ottenere questi temi descritti come segue:
+I temi di esempio di riferimento aiutano gli autori a definire e personalizzare lo stile dei moduli; gli autori con conoscenze di base su CSS possono personalizzare il tema in base alle esigenze.
+
+**Come ottenere questi temi?**
+* Per attivare questi temi **Forms as a Cloud Service** ambiente, [abilitare i componenti core Adaptive Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) e utilizza [pipeline front-end](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) per distribuire questi temi.
+* Per inserire questi temi in una **AEM 6.5 Forms** ambiente, [abilitare i componenti core Adaptive Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) e utilizza [gestione pacchetti](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components) per distribuire questi temi.
+
+Il **pronto all’uso** [Componenti core modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) I temi sono descritti come segue:
 
 ![Temi inclusi](assets/OOTB-themes.png)
 
@@ -51,7 +57,7 @@ Il tema Area di lavoro è il tema predefinito per le maschere e sottolinea l&#39
 
 ### WKND {#WKND}
 
-Il tema WKND incarna un design vivace, fantasioso e coinvolgente per mostrare un aspetto elegante alle tue forme. Il tema è basato sull&#39;aspetto e lo stile di [Sito WKND](https://wknd.site/us/en.html) che è un sito web di viaggi e avventura basato su [Componenti core di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+Il tema WKND incarna un design vivace, fantasioso e coinvolgente per mostrare un aspetto elegante alle tue forme. Il tema è basato sull&#39;aspetto e lo stile di [Sito WKND](https://wknd.site/us/en.html) che è un sito web di viaggi e avventura basato su [Componenti core di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it).
 
 ![Tema WKND](assets/Safety-Inspection-Form-Theme.png)
 
@@ -64,7 +70,12 @@ Il tema semplice consente di creare un aspetto del modulo accattivante e facile 
 
 ## Modelli di esempio {#Sample-templates}
 
-I modelli definiscono la struttura iniziale del modulo, il contenuto e le azioni da replicare nel modulo oppure utilizzano una struttura di modelli simile al modulo, ad esempio Modulo di consenso, Modulo di iscrizione benefit e molto altro ancora. Per ottenere i seguenti modelli: [abilitazione dei componenti core di Forms adattivi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it) in un ambiente di sviluppo as a Cloud Service o locale di AEM Forms. I modelli di esempio nei componenti core di Adaptive Forms sono:
+I modelli definiscono la struttura iniziale del modulo, il contenuto e le azioni da replicare nel modulo oppure utilizzano una struttura di modelli simile al modulo, ad esempio Modulo di consenso, Modulo di iscrizione benefit e molto altro ancora.
+
+**Come si ottengono questi modelli?**
+Per ottenere i modelli, distribuisci un [Progetto basato su Archetipo AEM 43 o versione successiva](https://github.com/adobe/aem-project-archetype) al tuo **AEM Forms as a Cloud Service** o **AEM 6.5** ambiente Forms.
+
+Il **pronto all’uso** [Componenti core modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) I modelli sono descritti come segue:
 
 ![Modelli di riferimento](assets/reference-templates-core-components.png)
 
@@ -82,7 +93,7 @@ Un modello di area di lavoro vuoto consente di creare da zero una struttura di m
 
 ### Contattaci {#Contact-Us}
 
-Il modello di modulo Contattaci viene utilizzato per creare un modulo per facilitare la comunicazione tra i visitatori del sito web e gli amministratori. Gli utenti possono inviare query, feedback o richieste di supporto tramite il modulo.
+Il modello di modulo Contattaci viene utilizzato per creare un modulo per facilitare la comunicazione tra i visitatori del sito Web e gli amministratori dei moduli. Gli utenti possono inviare query, feedback o richieste di supporto tramite il modulo.
 
 ![Modello per contattarci](assets/Contact-us-desktop-view.png)
 
@@ -100,7 +111,7 @@ Il modello di modulo di consenso viene utilizzato per creare un modulo per l’a
 
 ### Registra richiesta servizio {#Log-Service-Request}
 
-Il modello di richiesta del servizio di registro consente di creare un modulo che richiede servizi di registrazione specifici a un provider di servizi. Il modulo funge da richiesta formale per la creazione di un ticket che includa determinati eventi, attività o dati registrati per il monitoraggio o il tracciamento dello stato.
+Il modello di richiesta del servizio di registro consente di creare un modulo che richiede a un provider di servizi servizi servizi di registrazione specifici del registro. Il modulo funge da richiesta formale per creare un ticket per eventi, attività o dati registrati per il monitoraggio o il tracciamento dello stato.
 
 ![Modello di richiesta servizio di registro](assets/Log-service-request-desktop-view.png)
 
@@ -152,7 +163,7 @@ Il modello di modulo per la richiesta di acquisto consente di creare un modulo p
 
 ## Modelli dati modulo di riferimento {#reference-models}
 
-Dopo aver creato un’ [Modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) in base a [Componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), è possibile connettere il modulo con i server di database Microsoft® Dynamics 365 e Salesforce per abilitare i flussi di lavoro aziendali. Ad esempio:
+Dopo aver creato un’ [Modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#adaptive-forms-core-components) in base a [Componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction#adaptive-forms-core-components), è possibile connettere il modulo con i server di database Microsoft® Dynamics 365 e Salesforce per abilitare i flussi di lavoro aziendali. Ad esempio:
 
 * Scrivi dati in Microsoft® Dynamics 365 e Salesforce all’invio di moduli adattivi.
 * Scrivi dati in Microsoft® Dynamics 365 e Salesforce tramite entità personalizzate definite in Modello dati modulo e viceversa.
@@ -164,4 +175,4 @@ Dopo aver creato un’ [Modulo adattivo](https://experienceleague.adobe.com/docs
 * Microsoft® Dynamics 365
 * Salesforce
 
-Per informazioni sull’utilizzo di questi modelli, consulta [Configurazione di Microsoft® Dynamics 365 e dei servizi cloud Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Per informazioni sull’utilizzo di questi modelli, consulta [Configurazione di Microsoft® Dynamics 365 e dei servizi cloud Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
