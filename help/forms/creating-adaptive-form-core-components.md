@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: e6358044af395ee0fc785db3531465a3a6fbd5d5
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2280'
 ht-degree: 6%
 
 ---
@@ -188,6 +188,7 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 * [Creare stili o temi per i moduli](using-themes-in-core-components.md)
 * [Aggiungere un comportamento dinamico ai moduli tramite l’editor di regole](rule-editor.md)
 * [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Modelli di temi e modelli di dati modulo di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## Articolo correlato {#related-article}

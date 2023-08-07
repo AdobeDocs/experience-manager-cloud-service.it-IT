@@ -4,9 +4,9 @@ description: Puoi utilizzare i temi per formattare e fornire un’identità visi
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: crea un nuovo tema, personalizza il tema, carica un nuovo tema, utilizza il tema nei moduli, personalizza il tema con la pipeline front-end
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 1cec6e01e72cb286949f64749e2386a2b652920e
+source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2711'
 ht-degree: 3%
 
 ---
@@ -417,6 +417,7 @@ Se si desidera fornire informazioni quali un&#39;immagine del logo, il nome dell
 * [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Generare un documento di record per Forms adattivo (componenti core)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creare un Forms adattivo con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md)
+* [Modelli di temi e modelli di dati modulo di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## Articolo correlato {#related-article}
