@@ -3,10 +3,10 @@ title: Aggiornamenti della versione di AEM
 description: Scopri in che modo AEM as a Cloud Service utilizza Continuous Integration and Delivery (CI/CD) per mantenere i progetti sull’ultima versione.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd567c484d71e25de1808f784c455cfb9b124fbf
+source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 11%
+source-wordcount: '800'
+ht-degree: 9%
 
 ---
 
@@ -58,6 +58,37 @@ Analogamente, se un aggiornamento automatico di un ambiente di sviluppo non ries
 >[!NOTE]
 >
 >Se il codice personalizzato è stato inviato alla gestione temporanea e non alla produzione, il prossimo aggiornamento AEM rimuoverà tali modifiche per riflettere il tag Git dell’ultima versione del cliente alla produzione con esito positivo. Pertanto, il codice personalizzato disponibile solo nell’area di gestione temporanea dovrà essere nuovamente distribuito.
+
+## Best practice {#best-practices}
+
+* 
+   * **Utilizzo ambiente di staging**
+   * Utilizza un ambiente diverso (non stage) per lunghi cicli di QA/UAT.
+   * Una volta completato il test di integrità su Stage, spostati per verificare in Produzione.
+
+* 
+   * **Pipeline di produzione**
+   * Sospendi prima di implementare in produzione.
+   * L’annullamento della pipeline dopo una distribuzione di staging indica che il codice è &quot;uno scarto&quot; e non è un candidato valido per la produzione. Fai riferimento a [Configurazione di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+
+* 
+   * **Pipeline non di produzione**
+* Configura [Pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* 
+   * Accelerare la velocità/frequenza di consegna in caso di errori della pipeline di produzione.  Identifica i problemi nelle pipeline non di produzione abilitando i test funzionali del prodotto, i test funzionali personalizzati e i test dell’interfaccia utente personalizzati.
+
+* 
+   * **Copia contenuto**
+   * Utilizzare [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per spostare set di contenuti simili in un ambiente non di produzione.
+
+* 
+   * **Test funzionali automatizzati**
+* Includi test automatizzati nella pipeline per testare funzionalità critiche.
+* [Test funzionali del cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) e [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) stanno bloccando, se non riescono a rilasciare l’AEM non verrà introdotto.
+
+## Regressione {#regression}
+
+Se riscontri un problema relativo alla regressione, solleva un caso di supporto tramite Admin Console.  Se il problema è un bloccante e influisce sulla produzione, deve essere generata una P1.  Fornire tutti i dettagli necessari per riprodurre il problema di regressione.
 
 ## Archivio nodi compositi {#composite-node-store}
 
