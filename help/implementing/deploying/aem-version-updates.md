@@ -3,10 +3,10 @@ title: Aggiornamenti della versione di AEM
 description: Scopri in che modo AEM as a Cloud Service utilizza Continuous Integration and Delivery (CI/CD) per mantenere i progetti sull’ultima versione.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: dd567c484d71e25de1808f784c455cfb9b124fbf
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 23%
+source-wordcount: '622'
+ht-degree: 11%
 
 ---
 
@@ -17,9 +17,16 @@ Scopri in che modo AEM as a Cloud Service utilizza Continuous Integration and De
 
 ## CI/CD {#ci-cd}
 
-AEM as a Cloud Service utilizza l’integrazione continua e la distribuzione continua (CI/CD) per garantire che i tuoi progetti siano nella versione dell’AEM più recente. Ciò significa che le istanze di produzione e staging vengono aggiornate alla versione più recente di AEM senza alcuna interruzione del servizio per gli utenti.
+AEM as a Cloud Service utilizza l’integrazione continua e la distribuzione continua (CI/CD) per garantire che i tuoi progetti siano nella versione dell’AEM più recente. Questo processo aggiorna facilmente le istanze di produzione, staging e sviluppo senza causare interruzioni agli utenti.
 
-Gli aggiornamenti delle versioni vengono applicati automaticamente solo alle istanze di produzione e staging. [Gli aggiornamenti AEM devono essere applicati manualmente a tutte le altre istanze](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
+Prima che le istanze vengano aggiornate automaticamente, viene pubblicata una nuova versione di manutenzione dell’AEM con 3-5 giorni di anticipo. Durante questo periodo, puoi scegliere di:
+[attivare gli aggiornamenti manuali per le istanze di sviluppo](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
+Trascorso questo periodo di tempo, gli aggiornamenti delle versioni vengono applicati automaticamente agli ambienti di sviluppo. Se l’aggiornamento ha esito positivo, il processo di aggiornamento procede alle istanze di staging e produzione. Le istanze di sviluppo e staging fungono da gate di qualità automatizzato, in cui i test scritti personalizzati vengono eseguiti prima dell’applicazione dell’aggiornamento all’ambiente di produzione.
+
+>[!NOTE]
+>
+> Nota: gli aggiornamenti automatici per gli ambienti di sviluppo verranno progressivamente abilitati nel 2023 per tutti i clienti. Se gli ambienti di sviluppo non vengono aggiornati automaticamente, puoi utilizzare gli aggiornamenti manuali per mantenerli sincronizzati con gli ambienti di staging e produzione.
+
 
 ## Tipo di aggiornamenti {#update-types}
 
@@ -37,11 +44,16 @@ Esistono due tipi di aggiornamenti delle versioni di AEM:
 
 ## Errore di aggiornamento {#update-failure}
 
-Gli aggiornamenti AEM passano attraverso una pipeline di convalida del prodotto intensa e completamente automatizzata che coinvolge più fasi, garantendo l&#39;assenza di interruzioni del servizio per tutti i sistemi in produzione. I controlli di integrità vengono utilizzati per monitorare lo stato dell&#39;applicazione. Se questi controlli non vanno a buon fine durante un aggiornamento as a Cloud Service dell’AEM, la versione non procede e l’Adobe indaga il motivo per cui l’aggiornamento ha causato questo comportamento imprevisto.
+Gli aggiornamenti AEM passano attraverso una pipeline di convalida del prodotto intensa e completamente automatizzata che coinvolge più fasi, garantendo l&#39;assenza di interruzioni del servizio per tutti i sistemi in produzione.
+I controlli di integrità vengono utilizzati per monitorare lo stato dell&#39;applicazione.
+Se questi controlli non vanno a buon fine durante un aggiornamento as a Cloud Service dell’AEM, la versione non procede e Adobe indaga il motivo per cui l’aggiornamento ha causato questo comportamento imprevisto.
 
-[test di prodotto e test funzionali del cliente,](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) che impediscono gli aggiornamenti del prodotto e gli push del codice del cliente da interrompere i sistemi di produzione, vengono convalidati anche durante un aggiornamento della versione AEM.
+Quando distribuisci una nuova versione di un codice personalizzato di nei tuoi ambienti,
+[Test funzionali del prodotto e personalizzati](/help/implementing/cloud-manager/overview-test-results.md#functional-testing)
+svolgere un ruolo cruciale nel garantire che i sistemi di produzione rimangano stabili e funzionanti anche dopo l&#39;applicazione di un cambiamento. Questi test vengono utilizzati anche nel processo di aggiornamento della versione AEM.
 
-Se l’aggiornamento dell’ambiente di produzione non riesce, Cloud Manager ripristina automaticamente l’ambiente di staging. Questa operazione viene eseguita automaticamente per assicurarsi che al termine di un aggiornamento, entrambi gli ambienti di staging e di produzione utilizzino la stessa versione di AEM.
+Se l’aggiornamento dell’ambiente di produzione non riesce, Cloud Manager ripristina automaticamente l’ambiente di staging. Questa operazione viene eseguita automaticamente per assicurarsi che al termine di un aggiornamento, entrambi gli ambienti di staging e produzione utilizzino la stessa versione dell’AEM.
+Analogamente, se un aggiornamento automatico di un ambiente di sviluppo non riesce, gli ambienti di staging e produzione non verranno aggiornati.
 
 >[!NOTE]
 >
