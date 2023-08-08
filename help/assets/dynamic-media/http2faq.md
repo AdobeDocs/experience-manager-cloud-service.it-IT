@@ -1,12 +1,12 @@
 ---
 title: Domande frequenti sulla distribuzione dei contenuti HTTP2
-description: Informazioni sulla distribuzione di contenuti HTTP2.
+description: Scopri la distribuzione di contenuti HTTP2 e come migliora la comunicazione tra browser e server per un trasferimento più rapido delle informazioni.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '807'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Adobe è entusiasta di annunciare la disponibilità della distribuzione HTTP/2 d
 
 >[!NOTE]
 >
->Questa funzione richiede l’utilizzo della rete per la distribuzione dei contenuti preconfigurata, inclusa in Adobe Experience Manager - Dynamic Media. Con questa funzione non è supportata alcuna rete di distribuzione di contenuti personalizzata.
+>Questa funzione richiede l’utilizzo della rete per la distribuzione dei contenuti preconfigurata, inclusa in Adobe Experience Manager - Dynamic Medie. Con questa funzione non è supportata alcuna rete di distribuzione di contenuti personalizzata.
 
 ## Cos’è HTTP/2? {#what-is-http}
 
@@ -27,7 +27,7 @@ Articolo del sito web [Informazioni necessarie su HTTP/2](https://www.engadget.c
 
 ## Quali sono i vantaggi principali del passaggio a HTTP/2 per la distribuzione dei contenuti? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-Il miglioramento delle prestazioni varia notevolmente perché si basa su vari fattori. Ad esempio, il codice del tuo sito web, come utilizzi Dynamic Media, il dispositivo del consumatore, lo schermo e la posizione.
+Il miglioramento delle prestazioni varia notevolmente perché si basa su vari fattori. Ad esempio, il codice del tuo sito web, come utilizzi Dynamic Medie, il dispositivo del consumatore, lo schermo e la posizione.
 
 I test eseguiti da Adobe hanno prodotto i seguenti risultati:
 
@@ -44,13 +44,13 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 * Utilizza HTTPS sicuro per le richieste rich media.
 * Utilizza la rete CDN (Content Delivery Network) fornita dall’Adobe come parte della licenza Dynamic Media Classic.
-* Utilizza un dominio dedicato (ovvero `images.company.com` o `mycompany.scene7.com`), non un dominio Dynamic Media generico (ovvero `s7d1.scene7.com`, `s7d2.scene7.com`, o `s7d13.scene7.com`).
+* Utilizza un dominio dedicato (ovvero `images.company.com` o `mycompany.scene7.com`), non un dominio Dynamic Medie generico (ovvero `s7d1.scene7.com`, `s7d2.scene7.com`, o `s7d13.scene7.com`).
 
   Per trovare i domini, apri la [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-  Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cerca il campo con etichetta **Nome server pubblicato**. Se attualmente utilizzi un dominio Dynamic Media generico, puoi richiedere di passare al dominio personalizzato come parte di questa transizione.
+  Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cerca il campo con etichetta **Nome server pubblicato**. Se attualmente utilizzi un dominio Dynamic Medie generico, puoi richiedere di passare al dominio personalizzato come parte di questa transizione.
 
-## Qual è il processo per abilitare HTTP/2 per il mio account Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dm-account}
+## Qual è il processo per abilitare HTTP/2 per il mio account Dynamic Medie? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
 [Utilizza l’Admin Console per creare un caso di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) e richiesta di passare a HTTP/2; non viene eseguito automaticamente.
 
@@ -65,11 +65,11 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
    * Verifica di utilizzare HTTPS sicuro per le richieste rich media.
    * Verifica di utilizzare la rete CDN tramite Adobe e di non essere gestita con una relazione diretta.
-   * Verifica di utilizzare un dominio dedicato. Cioè, `images.company.com` o `mycompany.scene7.com`, non un dominio Dynamic Media generico come `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+   * Verifica di utilizzare un dominio dedicato. Cioè, `images.company.com` o `mycompany.scene7.com`, non un dominio Dynamic Medie generico come `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
    Per trovare i domini, Apri il [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-   Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se attualmente utilizzi un dominio Dynamic Media generico, puoi richiedere di passare al dominio personalizzato come parte di questa transizione.
+   Vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se attualmente utilizzi un dominio Dynamic Medie generico, puoi richiedere di passare al dominio personalizzato come parte di questa transizione.
 
    1. L’Assistenza clienti ti aggiunge alla lista di attesa dei clienti HTTP/2 in base all’ordine in cui sono state inviate le richieste.
    1. Quando Adobe è pronto a gestire la richiesta, l’Assistenza clienti ti contatta per coordinare la transizione e impostare una data di scadenza.
