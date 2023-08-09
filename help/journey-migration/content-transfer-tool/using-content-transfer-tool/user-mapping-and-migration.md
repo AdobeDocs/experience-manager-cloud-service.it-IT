@@ -2,9 +2,9 @@
 title: Mappatura utenti e migrazione delle entità principali
 description: Panoramica sulla mappatura degli utenti e sulla migrazione delle entità in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '855'
 ht-degree: 10%
 
 ---
@@ -55,8 +55,9 @@ Vengono registrati i seguenti casi specifici:
 ## Considerazioni aggiuntive {#additional-considerations}
 
 * Se l&#39;impostazione **Cancella i contenuti esistenti nell’istanza Cloud prima dell’acquisizione** è impostato, gli utenti già trasferiti nell’istanza di Cloud Service vengono eliminati insieme all’intero archivio esistente. Viene inoltre creato un nuovo archivio in cui vengono acquisiti i contenuti. Questa procedura reimposta anche tutte le impostazioni, incluse le autorizzazioni sull’istanza del Cloud Service target ed è true per un utente amministratore aggiunto al **amministratori** gruppo. L’utente amministratore deve essere letto su **amministratori** gruppo per recuperare il token di accesso per CTT.
-* Quando si esegue l’integrazione del contenuto, se il contenuto non viene trasferito perché non è stato modificato rispetto al trasferimento precedente, non vengono trasferiti né gli utenti né i gruppi associati a tale contenuto. Questa regola è vera anche se nel frattempo utenti e gruppi sono cambiati. Il motivo è che utenti e gruppi vengono migrati insieme al contenuto a cui sono associati.
+* Quando si esegue l’integrazione del contenuto, se il contenuto non viene trasferito perché non è stato modificato rispetto al trasferimento precedente, non vengono trasferiti né gli utenti né i gruppi associati a tale contenuto. Questa regola è valida anche se nel frattempo gli utenti e i gruppi sono cambiati. Il motivo è che utenti e gruppi vengono migrati insieme al contenuto a cui sono associati.
 * Se l’istanza AEM Cloud Service di destinazione ha un utente con un nome utente diverso ma lo stesso indirizzo e-mail di uno degli utenti nell’istanza AEM di origine e la mappatura degli utenti è abilitata, i registri registrano un messaggio di errore. Inoltre, l’utente AEM di origine non viene trasferito, in quanto nel sistema di destinazione è consentito un solo utente con un determinato indirizzo e-mail.
+* Consulta [Migrazione di gruppi utenti chiusi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) per ulteriori considerazioni sui gruppi utilizzati in un criterio Gruppo utenti chiuso (CUG).
 
 ## Riepilogo finale e relazione {#final-report}
 

@@ -2,9 +2,9 @@
 title: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1562'
 ht-degree: 19%
 
 ---
@@ -35,7 +35,7 @@ Le versioni precedenti alla 2.0.0 non saranno più supportate ed è consigliabil
 
 Le seguenti linee guida e best practice sono applicabili alla nuova versione dello strumento Content Transfer (Trasferimento contenuti):
 
-* È consigliabile eseguire la [pulizia delle revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e i [controlli di coerenza dell’archivio dati](https://helpx.adobe.com/it/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) nell’archivio **sorgente** per identificare potenziali problemi e ridurre le dimensioni dell’archivio.
+* È consigliabile eseguire la [pulizia delle revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=it) e i [controlli di coerenza dell’archivio dati](https://helpx.adobe.com/it/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) nell’archivio **sorgente** per identificare potenziali problemi e ridurre le dimensioni dell’archivio.
 
 * Nella fase di acquisizione, si consiglia di eseguire l’acquisizione utilizzando *a comparsa* è abilitata la modalità in cui l’archivio esistente (di authoring o pubblicazione) nell’ambiente AEM Cloud Service di destinazione viene completamente eliminato e quindi aggiornato con i dati del set di migrazione. Questa modalità è molto più veloce della modalità in cui la cancellazione è disattivata e il set di migrazione viene applicato sul contenuto corrente.
 
@@ -73,7 +73,7 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferirlo dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione del contenuto in un ambiente di pubblicazione. Qualsiasi contenuto specificato nel set di migrazione viene acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author, Publish o entrambe. Durante lo spostamento del contenuto in un’istanza di produzione, si consiglia di installare CTT nell’istanza di authoring di origine per spostare il contenuto nell’istanza di authoring di destinazione e, analogamente, di installare CTT nell’istanza di pubblicazione di origine per spostare il contenuto nell’istanza di pubblicazione di destinazione. Consulta [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) per ulteriori dettagli.
 
-* Gli utenti e i gruppi trasferiti dallo strumento Content Transfer (Trasferimento contenuti) sono solo quelli necessari per il contenuto per soddisfare le autorizzazioni. Il _Estrazione_ processo copia l&#39;intero `/home` nel set di migrazione e esegue la mappatura degli utenti aggiungendo un campo creato dall’indirizzo e-mail di ciascun utente. Per ulteriori informazioni, consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Il _Acquisizione_ process copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL dei contenuti migrati.
+* Gli utenti e i gruppi trasferiti dallo strumento Content Transfer (Trasferimento contenuti) sono solo quelli necessari per il contenuto per soddisfare le autorizzazioni. Il _Estrazione_ processo copia l&#39;intero `/home` nel set di migrazione e esegue la mappatura degli utenti aggiungendo un campo creato dall’indirizzo e-mail di ciascun utente. Per ulteriori informazioni, consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Il _Acquisizione_ process copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL dei contenuti migrati. Consulta [Migrazione di gruppi utenti chiusi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) per ulteriori considerazioni sui gruppi utilizzati in un criterio Gruppo utenti chiuso (CUG).
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 

@@ -2,9 +2,9 @@
 title: Convalida dei trasferimenti di contenuto
 description: Utilizzare lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuti
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -163,3 +163,7 @@ Per verificare il funzionamento, scegliere un percorso dal rapporto di convalida
 Alcuni percorsi dai digest di estrazione e acquisizione sono esclusi appositamente per mantenere gestibili le dimensioni di questi file, con l’obiettivo di poter calcolare il risultato della convalida della migrazione entro due ore dal completamento dell’acquisizione.
 
 I percorsi che attualmente escludiamo dai digest includono: `cqdam.text.txt` rappresentazioni, nodi in `/home`, e nodi in `/jcr:system`.
+
+### I gruppi di utenti chiusi non funzionano {#validating-cugs}
+
+Consulta [Migrazione di gruppi utenti chiusi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) per ulteriori considerazioni sull’utilizzo di un criterio Gruppo utenti chiuso (CUG).
