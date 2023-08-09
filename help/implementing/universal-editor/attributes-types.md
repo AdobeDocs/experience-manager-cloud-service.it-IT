@@ -2,10 +2,10 @@
 title: Attributi e tipi
 description: Scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 9df57ce958bb8f7f9406b9fe342c9d2a4ccb0ae0
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 82%
+source-wordcount: '681'
+ht-degree: 77%
 
 ---
 
@@ -53,7 +53,8 @@ A seconda del caso d’uso `itemprop` o `itemid` può essere richiesto o meno. A
 
 | `data-editor-behavior` | Descrizione |
 |---|---|
-| `component` | Può essere utilizzato per consentire ai componenti di testo indipendente, RTF e di mimica dei contenuti multimediali di essere anche mobili e eliminabili nella pagina |
+| `component` | Utilizzato per consentire l’utilizzo di componenti di testo, testo RTF e imitazione di contenuti multimediali autonomi in modo che possano essere spostati ed eliminabili sulla pagina |
+| `container` | Utilizzato per consentire ai contenitori di essere trattati come componenti propri in modo che siano spostabili ed eliminabili sulla pagina |
 
 ## Risorse aggiuntive {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
+source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 35%
+source-wordcount: '2271'
+ht-degree: 30%
 
 ---
 
@@ -34,7 +34,7 @@ Per creare contenuti per un’app tramite l’editor universale, l’app deve es
 
 >[!TIP]
 >
->Consulta [Guida introduttiva all’Editor universale in AEM](getting-started.md) un esempio di come configurare un’app AEM per l’utilizzo con Universal Editor.
+>Consulta [Guida introduttiva dell’Editor universale in AEM](getting-started.md) un esempio di come configurare un’app AEM per l’utilizzo con Universal Editor.
 
 ## Accedi {#sign-in}
 
@@ -213,20 +213,6 @@ Quando selezioni un frammento di contenuto, i relativi dettagli vengono visualiz
 >
 >Utilizza il tasto di scelta rapida `C` per passare alla modalità componente.
 
-#### Modifica {#edit}
-
-In [modalità componente,](#component-mode) se si seleziona un [Frammento di contenuto,](/help/assets/content-fragments/content-fragments.md) nella barra delle modalità viene visualizzata l’opzione modifica.
-
-![Icona Modifica](assets/edit.png)
-
-Toccando o facendo clic sul pulsante di modifica si apre [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in una nuova scheda, che consente di accedere a tutte le funzioni dell’Editor frammento di contenuto.
-
-Puoi anche modificare i dettagli del frammento di contenuto nel [barra dei componenti](#edit-content-fragment) in base alle esigenze del flusso di lavoro.
-
->[!TIP]
->
->Utilizza il tasto di scelta rapida `E` per modificare un componente selezionato.
-
 ### L’editor {#editor}
 
 L’editor occupa la maggior parte della finestra ed è dove si trova la pagina specificata in [la barra della posizione](#location-bar) è sottoposto a rendering.
@@ -258,7 +244,7 @@ Nota che non tutti i componenti hanno dettagli che possono essere visualizzati e
 >
 >Utilizza il tasto di scelta rapida `D` per passare alla modalità proprietà.
 
-#### Modalità Struttura contenuto {#Content-tree-mode}
+#### Modalità Struttura contenuto {#content-tree-mode}
 
 In modalità struttura contenuto, la barra mostra la gerarchia del contenuto della pagina.
 
@@ -272,6 +258,43 @@ Quando si seleziona un elemento nella struttura del contenuto, l’editor scorre
 >
 >Utilizza il tasto di scelta rapida `F` per passare alla modalità struttura contenuto.
 
+#### Modifica {#edit}
+
+In [modalità componente,](#component-mode) se si seleziona un [Frammento di contenuto,](/help/assets/content-fragments/content-fragments.md) l’opzione modifica viene visualizzata nella barra dei componenti.
+
+![Icona Modifica](assets/edit.png)
+
+Toccando o facendo clic sul pulsante di modifica si apre [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in una nuova scheda, che consente di accedere a tutte le funzioni dell’Editor frammento di contenuto.
+
+Puoi anche modificare i dettagli del Frammento di contenuto all’interno della barra dei componenti in base alle esigenze del flusso di lavoro.
+
+>[!TIP]
+>
+>Utilizza il tasto di scelta rapida `E` per modificare un componente selezionato.
+
+#### Aggiungi {#add}
+
+Se selezioni un componente contenitore nella struttura del contenuto o nell’editor, l’opzione aggiungi viene visualizzata nella barra dei componenti.
+
+![Icona Aggiungi](assets/ue-add-component-icon.png)
+
+Toccando o facendo clic sul pulsante Aggiungi si apre un menu a discesa dei componenti disponibili per [aggiungi al contenitore selezionato.](#adding-components)
+
+>[!TIP]
+>
+>Utilizza il tasto di scelta rapida `A` per aggiungere un componente a un componente contenitore selezionato.
+
+#### Eliminare {#delete}
+
+Se selezioni un componente all’interno di un componente contenitore nella struttura del contenuto o nell’editor, l’opzione Elimina viene visualizzata nella barra dei componenti.
+
+![Icona Elimina](assets/ue-delete-component-icon.png)
+
+Toccando o facendo clic sul pulsante Elimina [elimina il componente.](#deleting-components)
+
+>[!TIP]
+>
+>Utilizza il tasto di scelta rapida `Shift+Backspace` per eliminare un componente selezionato da un contenitore.
 
 ## Modifica del contenuto {#editing-content}
 
@@ -332,6 +355,38 @@ I campi definiti nel modello di contenuto del frammento di contenuto selezionato
 Le modifiche vengono salvate automaticamente nel contenuto.
 
 Se desideri modificare il frammento di contenuto in [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) invece, fai clic su [pulsante modifica](#edit) nella barra delle modalità.
+
+### Aggiunta di componenti ai contenitori {#adding-components}
+
+1. Seleziona un componente contenitore nella struttura del contenuto o nell’editor.
+1. Quindi tocca o fai clic sull’icona Aggiungi nella barra dei componenti.
+
+   ![Selezione di un componente da aggiungere a un contenitore](assets/ue-add-component.png)
+
+Il componente viene inserito nel contenitore e può essere modificato nell’editor.
+
+### Eliminazione di componenti dai contenitori {#deleting-components}
+
+1. Seleziona un componente contenitore nella struttura del contenuto o nell’editor.
+1. Tocca o fai clic sulla freccia del contenitore per espanderne il contenuto nella struttura del contenuto.
+1. Quindi, nella struttura del contenuto, seleziona un componente all’interno del contenitore.
+1. Tocca o fai clic sull’icona Elimina nella barra dei componenti.
+
+   ![Eliminazione di un componente](assets/ue-delete-component.png)
+
+Il componente selezionato è stato eliminato.
+
+### Riordinamento dei componenti nei contenitori {#reordering-components}
+
+1. Seleziona un componente contenitore nella struttura del contenuto o nell’editor.
+1. Se non è già in [modalità struttura contenuto,](#content-tree-mode) passa ad esso.
+1. Tocca o fai clic sulla freccia del contenitore per espanderne il contenuto nella struttura del contenuto.
+1. Trascina le icone delle maniglie accanto ai componenti all’interno del contenitore per mostrare che puoi riorganizzarli. Trascina i componenti per riordinarli all’interno del contenitore.
+
+   ![Riordinamento dei componenti](assets/ue-reordering-components.png)
+1. Il componente trascinato diventa grigio nell’albero dei componenti, mentre il punto di inserimento è rappresentato da una linea blu. Rilasciate il componente per posizionarlo nella nuova posizione.
+
+I componenti vengono riordinati sia nella struttura del contenuto che nell’editor
 
 ## Anteprima del contenuto {#previewing-content}
 
