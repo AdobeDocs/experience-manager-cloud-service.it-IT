@@ -2,10 +2,10 @@
 title: Distribuzione del codice
 description: Scopri come distribuire il codice con le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d1d3ac98f8fe40ba5f9ab1ccec946c8448ddc43
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 89%
+source-wordcount: '1193'
+ht-degree: 67%
 
 ---
 
@@ -126,34 +126,41 @@ Tutte le distribuzioni di Cloud Service seguono un processo continuo per garanti
 >
 >La cache del Dispatcher viene cancellata su ogni distribuzione. Subisce successivamente un processo di riscaldamento prima che i nuovi nodi di pubblicazione accettino il traffico.
 
-## Riesecuzione di una distribuzione nell’ambiente di produzione {#Reexecute-Deployment}
+## Riesecuzione di una distribuzione nell’ambiente di produzione {#reexecute-deployment}
 
-La riesecuzione del passaggio di distribuzione nell’ambiente di produzione è supportata per le esecuzioni in cui il suddetto passaggio è stato completato. Il tipo di completamento non è importante: la distribuzione può essere stata annullata o non riuscita. Detto ciò, il caso d’uso principale è quello in cui il passaggio di distribuzione nell’ambiente di produzione non è riuscito per motivi transitori. La riesecuzione crea una nuova esecuzione utilizzando la stessa pipeline. La nuova esecuzione consiste di tre passaggi:
+In rari casi, i passaggi di distribuzione nell’ambiente di produzione possono non riuscire per motivi transitori. In questi casi, la riesecuzione del passaggio di distribuzione nell’ambiente di produzione è supportata fino a quando il passaggio di distribuzione nell’ambiente di produzione è stato completato, indipendentemente dal tipo di completamento (ad esempio annullato o non riuscito). La riesecuzione crea una nuova esecuzione utilizzando la stessa pipeline composta da tre passaggi.
 
-1. Passaggio di convalida: si tratta essenzialmente della stessa convalida prevista durante una normale esecuzione della pipeline.
-1. Fase di build: nel contesto di una nuova esecuzione, la fase di build copia gli artefatti senza eseguire effettivamente un nuovo processo di build.
-1. Passaggio di distribuzione nell’ambiente di produzione: utilizza la stessa configurazione e le stesse opzioni del passaggio di distribuzione nell’ambiente di produzione previste per una normale esecuzione della pipeline.
+1. Passaggio di convalida: si tratta essenzialmente della stessa convalida che si verifica durante una normale esecuzione della pipeline.
+1. Passaggio di build: nel contesto di una riesecuzione, il passaggio di build copia gli artefatti e non esegue effettivamente un nuovo processo di build.
+1. Passaggio di distribuzione nell’ambiente di produzione: utilizza la stessa configurazione e le stesse opzioni del passaggio di distribuzione nell’ambiente di produzione in una normale esecuzione della pipeline.
 
-La fase di build può essere etichettata in modo leggermente diverso nell’interfaccia utente per indicare la copia degli artefatti e non un nuovo processo di build.
+In tali circostanze, in cui è possibile una riesecuzione, la pagina di stato della pipeline di produzione fornisce **Riesegui** opzione accanto al consueto **Scarica registro build** opzione.
 
-![Ridistribuzione](assets/Re-deploy.png)
+![L’opzione Riesegui nella finestra di panoramica della pipeline](assets/re-execute.png)
 
-Limiti:
+>[!NOTE]
+>
+>In una riesecuzione, il passaggio di build viene etichettato nell’interfaccia utente per indicare che sta copiando gli artefatti, non la ricompilazione.
+
+### Limitazioni {#limitations}
 
 * La riesecuzione del passaggio di distribuzione nell’ambiente di produzione è disponibile solo per l’ultima esecuzione.
-* La riesecuzione non è disponibile per le esecuzioni degli aggiornamenti push. Se l’ultima esecuzione è un aggiornamento push, non è possibile eseguirla nuovamente.
-* Se l’ultima esecuzione è un aggiornamento push, non è possibile eseguirla nuovamente.
+* La riesecuzione non è disponibile per le esecuzioni degli aggiornamenti push.
+   * Se l’ultima esecuzione è un aggiornamento push, non è possibile eseguirla nuovamente.
 * Se l’ultima esecuzione non è riuscita in un qualsiasi punto precedente al passaggio di distribuzione nell’ambiente di produzione, non è possibile eseguirla nuovamente.
 
-### Riesecuzione dell’API {#Reexecute-API}
+### Riesecuzione dell’API {#reexecute-API}
 
-### Identificazione di un’esecuzione rieseguita
+Oltre a essere disponibile nell’interfaccia utente, puoi utilizzare [API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) per attivare le riesecuzioni e identificare le esecuzioni attivate come riesecuzioni.
 
-Per identificare se un’esecuzione è stata rieseguita, verifica il campo trigger. Il suo valore è *RI_ESEGUI*.
+#### Attivazione di una riesecuzione {#reexecute-deployment-api}
 
-### Attivazione di una nuova esecuzione
+Per attivare una nuova esecuzione, effettua una richiesta PUT al collegamento HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` nello stato del passaggio di distribuzione nell’ambiente di produzione.
 
-Per attivare una nuova esecuzione è necessario effettuare una richiesta PUT al collegamento HAL &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> dello stato del passaggio di distribuzione nell’ambiente di produzione. Se questo collegamento è presente, l’esecuzione può essere riavviata da quel passaggio. Se assente, l’esecuzione non può essere riavviata da quel passaggio. Nella versione iniziale, il collegamento sarà sempre presente solo nel passaggio di distribuzione nell’ambiente di produzione, ma le versioni future potrebbero supportare l’avvio della pipeline da altri passaggi. Esempio:
+* Se questo collegamento è presente, l’esecuzione può essere riavviata da quel passaggio.
+* Se assente, l’esecuzione non può essere riavviata da quel passaggio.
+
+Questo collegamento è disponibile solo per il passaggio di distribuzione nell’ambiente di produzione.
 
 ```JavaScript
  {
@@ -190,7 +197,10 @@ Per attivare una nuova esecuzione è necessario effettuare una richiesta PUT al 
   "status": "FINISHED"
 ```
 
+La sintassi del valore href del collegamento HAL è solo un esempio. Il valore effettivo deve sempre essere letto dal collegamento HAL e non generato.
 
-La sintassi del valore _href_ del collegamento HAL di cui sopra non è concepita per essere utilizzata come punto di riferimento. Il valore effettivo deve sempre essere letto dal collegamento HAL e non generato.
+L’invio di una richiesta PUT a questo endpoint genera una risposta 201 in caso di esito positivo; il corpo della risposta è la rappresentazione della nuova esecuzione. È simile all’avvio di un’esecuzione normale tramite l’API.
 
-Invio di un *PUT* la richiesta a questo endpoint restituisce un *201* response if success (risposta in caso di esito positivo); il corpo della risposta è la rappresentazione della nuova esecuzione. È simile all’avvio di un’esecuzione normale tramite l’API.
+#### Identificazione di un’esecuzione rieseguita {#identify-reexecution}
+
+Le esecuzioni rieseguite possono essere identificate dal valore `RE_EXECUTE` nel `trigger` campo.

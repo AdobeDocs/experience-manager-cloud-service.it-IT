@@ -1,19 +1,19 @@
 ---
-title: Note sulla versione 2023.7.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
-description: Queste sono le note sulla versione 2023.7.0 di Cloud Manager in AEM as a Cloud Service.
+title: Note sulla versione 2023.8.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
+description: Queste sono le note sulla versione 2023.8.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 2721cb20083eeda7546513817f1ddfe12e9cb43a
+source-git-commit: d1640c14c796d7b7b6a7b236b38077e360559966
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 38%
+source-wordcount: '412'
+ht-degree: 27%
 
 ---
 
 
-# Note sulla versione 2023.7.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Note sulla versione 2023.8.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2023.7.0 di Cloud Manager in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2023.8.0 di Cloud Manager in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,20 +21,34 @@ Questa pagina illustra le note sulla versione 2023.7.0 di Cloud Manager in AEM a
 
 ## Data di pubblicazione {#release-date}
 
-La data di pubblicazione di Cloud Manager versione 2023.7.0 in AEM as a Cloud Service è l’29 giugno 2023. La prossima versione è pianificata per il 10 Agosto 2023.
+La data di pubblicazione di Cloud Manager versione 2023.8.0 in AEM as a Cloud Service è l’10 agosto 2023. La versione successiva è pianificata per il 7 settembre 2023.
 
 ## Novità {#what-is-new}
 
-* Le schede nella pagina di destinazione di Cloud Manager ora indicano se la [protezione avanzata](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) è abilitata per i relativi programmi.
-* Se uno sviluppo [pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) non contiene passaggi di test, gli utenti ora possono includere passaggi di test quando [avvia la pipeline.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
-   * Questo verrà introdotto in modo graduale.
-* Quando [annullamento dell’esecuzione,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) il passaggio di approvazione dell’esecuzione della pipeline ora richiede all’utente di fornire un motivo per l’annullamento.
-   * Questo verrà introdotto in modo graduale.
-* Gli utenti possono ora accedere a [registra dal processo copia contenuto.](/help/implementing/developing/tools/content-copy.md#accessing-logs)
-   * Questa opzione è disponibile solo se gli ambienti di origine e di destinazione sono entrambi nella versione AEM `2023.7.12549` o superiore.
+* Durante la configurazione di un set di contenuti su [copiare il contenuto,](/help/implementing/developing/tools/content-copy.md) [configurazioni in base al contesto](/help/implementing/developing/introduction/configurations.md) sono ora consentiti nei set di contenuti dell’interfaccia utente.
+* Sono stati apportati miglioramenti per migliorare la comprensibilità e la visualizzazione dei messaggi di errore nell’interfaccia utente di Cloud Manager.
+
+## Programma di adozione anticipata per il ripristino dei contenuti self-service {#early-adoption}
+
+[Una nuova funzione di ripristino self-service dei contenuti](/help/operations/restore.md) ora fornisce il ripristino del backup per un massimo di sette giorni ed è disponibile per gli utenti che lo adottano per la valutazione, con:
+
+* Ripristino del backup point-in-time per le 24 ore precedenti
+* Ripristini a tempo fisso per un massimo di sette giorni
+
+Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `aemcs-restorefrombackup-adopter@adobe.com` dall’e-mail associata al tuo Adobe ID. Nota:
+
+* Il programma di adozione anticipata è limitato solo agli ambienti di sviluppo.
+* La disponibilità del programma di adozione anticipata è limitata.
+* Questa funzione consente di ripristinare i contenuti eliminati accidentalmente e non è destinata al disaster recovery.
 
 ## Correzioni di bug {#bug-fixes}
 
-* Dopo l’accesso, l’accesso all’interfaccia utente di authoring da Cloud Manager non impedisce più il reindirizzamento a Unified Shell.
-* La modifica della data di pubblicazione tramite il widget di pubblicazione ora passa alla **Vai in diretta** al posto della scheda **Sicurezza avanzata** scheda.
-* Quando si avvia un’operazione di copia, un utente non può più selezionare un ambiente in cui è già stata richiamata un’operazione di copia.
+* Il **Ambienti** Il menu ora si chiude dopo aver attivato **[Copia contenuto](/help/implementing/developing/tools/content-copy.md)** modale.
+* [Una riesecuzione della pipeline](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) non è più consentito se l’esecuzione precedente non ha un `commitId` impostato sullo stato della fase di build.
+* Ora quando un utente fa clic su una pipeline in viene visualizzato un messaggio più comprensibile per i rari errori **Attività** o **Pipeline** schermi.
+* Il `contentSetName` il valore non è più mancante nei registri ed è ora fornito negli input quando si avvia un [copia contenuto](/help/implementing/developing/tools/content-copy.md) operazione.
+* In alcune rare circostanze non è più possibile avviare due esecuzioni dalla stessa pipeline portando a uno stato &quot;bloccato&quot;.
+* Alla scadenza di un certificato, i nomi di dominio e gli elenchi IP consentiti associati al certificato non verranno più rimossi dalla rete CDN.
+   * In questi casi, il sito continuerà ad essere raggiungibile.
+   * [](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)L’interfaccia utente di Cloud Manager fornisce avvisi anticipati più visibili relativi al Certificato SSL che sta per scadere.
+* È stato risolto un problema che causava la perdita dell’accesso AEM a un endpoint di pubblicazione nelle situazioni in cui Sites veniva aggiunto come soluzione a un programma per sole risorse.
