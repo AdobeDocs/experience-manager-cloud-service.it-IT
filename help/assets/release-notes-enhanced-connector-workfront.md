@@ -2,9 +2,9 @@
 title: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 description: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
+source-git-commit: 4b63c00847fa21967560a59c3bcd931433a3a73f
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1190'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,16 @@ La sezione seguente illustra le note generali sulla versione di [!DNL Workfront 
 
 ## Data di pubblicazione {#release-date}
 
-Data di rilascio dell’ultima versione 1.9.11 di [!DNL Workfront for Experience Manager enhanced connector] è il 19 giugno 2023.
+Data di rilascio dell’ultima versione 1.9.12 di [!DNL Workfront for Experience Manager enhanced connector] è il 9 agosto 2023.
 
 ## Elementi salienti della versione {#release-highlights}
 
 Ultima versione di [!DNL Workfront for Experience Manager enhanced connector] include i seguenti aggiornamenti:
 
-* Se hai configurato la rete avanzata, si verificano dei problemi durante l’invio di contenuti da Adobe Workfront a AEM as a Cloud Service.
+* Impossibile creare cartelle collegate in Experience Manager. Nessun account utente associato alla cartella collegata.
+
+* Condizioni di gara durante gli aggiornamenti dei metadati per una risorsa in Experience Manager.
+
 
 >[!NOTE]
 >
@@ -30,7 +33,7 @@ Ultima versione di [!DNL Workfront for Experience Manager enhanced connector] in
 
 >[!IMPORTANT]
 >
->L’Adobe consiglia di: [aggiornamento alla versione più recente del 1.9.11](/help/assets/workfront-connector-install.md) del [!DNL Workfront for Experience Manager enhanced connector].
+>L’Adobe consiglia di: [aggiornamento alla versione più recente del 1.9.12](/help/assets/workfront-connector-install.md) del [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemi noti {#known-issues}
 
@@ -39,6 +42,11 @@ Ultima versione di [!DNL Workfront for Experience Manager enhanced connector] in
 * Quando utilizzi l’esperienza Workfront classica, il **[!UICONTROL Invia a]** opzione disponibile in **[!UICONTROL Altro]** L’elenco a discesa non consente di selezionare la destinazione in Experience Manager. Il **[!UICONTROL Invia a]** funziona correttamente utilizzando **[!UICONTROL Azioni documento]** elenco a discesa. Il **[!UICONTROL Invia a]** funziona correttamente per **[!UICONTROL Altro]** e la **[!UICONTROL Azioni documento]** disponibile nella nuova esperienza Workfront.
 
 ## Versioni precedenti {#previous-releases}
+
+### Versione di giugno 2023 {#june-2023-release}
+
+* Se hai configurato la rete avanzata, si verificano dei problemi durante l’invio di contenuti da Adobe Workfront a AEM as a Cloud Service.
+
 
 ### Versione di maggio 2023 {#may-2023-release}
 
