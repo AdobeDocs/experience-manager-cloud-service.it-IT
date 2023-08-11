@@ -3,10 +3,10 @@ title: Note sulla versione 2023.8.0 di Cloud Manager in Adobe Experience Manager
 description: Queste sono le note sulla versione 2023.8.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: d1640c14c796d7b7b6a7b236b38077e360559966
+source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 27%
+source-wordcount: '540'
+ht-degree: 21%
 
 ---
 
@@ -28,7 +28,11 @@ La data di pubblicazione di Cloud Manager versione 2023.8.0 in AEM as a Cloud Se
 * Durante la configurazione di un set di contenuti su [copiare il contenuto,](/help/implementing/developing/tools/content-copy.md) [configurazioni in base al contesto](/help/implementing/developing/introduction/configurations.md) sono ora consentiti nei set di contenuti dell’interfaccia utente.
 * Sono stati apportati miglioramenti per migliorare la comprensibilità e la visualizzazione dei messaggi di errore nell’interfaccia utente di Cloud Manager.
 
-## Programma di adozione anticipata per il ripristino dei contenuti self-service {#early-adoption}
+## Programma di adozione anticipata {#early-adoption}
+
+Partecipa al nostro programma di adozione anticipata e hai la possibilità di testare alcune delle prossime funzionalità.
+
+### Ripristino del contenuto self-service {#content-restore}
 
 [Una nuova funzione di ripristino self-service dei contenuti](/help/operations/restore.md) ora fornisce il ripristino del backup per un massimo di sette giorni ed è disponibile per gli utenti che lo adottano per la valutazione, con:
 
@@ -38,8 +42,16 @@ La data di pubblicazione di Cloud Manager versione 2023.8.0 in AEM as a Cloud Se
 Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `aemcs-restorefrombackup-adopter@adobe.com` dall’e-mail associata al tuo Adobe ID. Nota:
 
 * Il programma di adozione anticipata è limitato solo agli ambienti di sviluppo.
-* La disponibilità del programma di adozione anticipata è limitata.
+* La disponibilità del programma di adozione anticipata di questa funzione è limitata.
 * Questa funzione consente di ripristinare i contenuti eliminati accidentalmente e non è destinata al disaster recovery.
+
+### Dashboard di audit dell’esperienza {#experience-audit-dashboard}
+
+[Dashboard di Cloud Manager Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md) include una visualizzazione con tendenze dei punteggi di prestazioni della pagina, oltre a informazioni approfondite e consigli per aiutarti a migliorarli. L’audit dell’esperienza è incluso come passaggio nella pipeline di produzione di Cloud Manager.
+
+La dashboard sfrutta Google Lighthouse, uno strumento open-source automatizzato per migliorare la qualità delle app web. Puoi eseguirla su qualsiasi pagina web, pubblica o che richiede l’autenticazione. Sono disponibili controlli di prestazioni, accessibilità, applicazioni web progressive, SEO e altro ancora.
+
+Ti interessa testare il nuovo cruscotto? Invia un&#39;e-mail a `aem-lighthouse-pilot@adobe.com` dall’e-mail associata al tuo Adobe ID per iniziare.
 
 ## Correzioni di bug {#bug-fixes}
 
