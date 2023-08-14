@@ -2,10 +2,10 @@
 title: Post-pubblicazione
 description: Scopri come monitorare i problemi e migliorare le prestazioni
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 28%
+source-wordcount: '477'
+ht-degree: 22%
 
 ---
 
@@ -15,10 +15,10 @@ ht-degree: 28%
 >id="aemcloud_golive_troubleshooting"
 >title="Risoluzione dei problemi relativi ad AEM"
 >abstract="Esamina le best practice per lo sviluppo continuo e gestisci i registri insieme a strumenti come la console per sviluppatori e CRXDE Lite per aiutarti a risolvere eventuali problemi relativi ad AEM"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=it" text="Accesso e gestione dei registri"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=it#aem-as-a-cloud-service-development-tools" text="Strumenti di sviluppo in AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Accesso e gestione dei registri"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Strumenti di sviluppo in AEM as a Cloud Service"
 
-Questa è l’ultima parte del percorso, dove imparerai a monitorare i problemi e a migliorare le prestazioni una volta completata la migrazione. Assicurati che i file temporanei vengano eliminati, rivedi le best practice per lo sviluppo continuo e gestisci i registri.
+Questo percorso è l’ultima parte, per consentirti di imparare a monitorare i problemi e migliorare le prestazioni una volta completata la migrazione. Assicurati che i file temporanei vengano eliminati, rivedi le best practice per lo sviluppo continuo e gestisci i registri.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -45,7 +45,7 @@ Come utente, puoi accedere a CRXDE Lite nell’ambiente di sviluppo ma non in qu
 >[!IMPORTANT]
 >Scrittura in archivi immutabili come `/libs` e `/apps` in fase di runtime genera errori. Inoltre, non hai accesso agli strumenti per sviluppatori per gli ambienti di staging e produzione.
 
-Consulta [Sviluppo con CRXDE Lite](/help/implementing/developing/tools/crxde.md) per scoprire come sviluppare l’applicazione AEM utilizzando CRXDE Lite.
+Consulta [Sviluppo con CRXDE Liti](/help/implementing/developing/tools/crxde.md) per ulteriori informazioni su come sviluppare l’applicazione AEM utilizzando CRXDE Liti.
 
 ## Gestione dei registri {#managing-logs}
 
@@ -58,20 +58,20 @@ Consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/mana
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="Guida e supporto"
->abstract="Per eventuali domande o dubbi, contatta il Team di supporto AEM."
+>abstract="Per eventuali domande o dubbi, contatta il team di supporto AEM dell’Adobe."
 >additional-url="https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html" text="Supporto per Experience Cloud"
 
 Se hai domande sull’accesso al Cloud Service, contatta il rappresentante del tuo Adobe o [Supporto per Experience Cloud](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per ulteriori dettagli.
 
 ## Apprendimenti documento {#document-learnings}
 
-Una volta completata la migrazione, devi documentare le conoscenze acquisite durante questo processo. Alcune domande che potrebbero essere utili per il processo di documentazione sono:
+Una volta completata la migrazione, documenta le conoscenze acquisite durante questo processo. Alcune domande che potrebbero essere utili per il processo di documentazione sono:
 
 * Cosa ha funzionato bene e cosa no?
 * Quali erano i punti dolenti maggiori?
-* Recommendations in caso di migrazione futura.
+* Recommendations se è prevista una migrazione futura.
 
-Dovresti quindi condividere questi insegnamenti post-migrazione con le parti interessate e i team all’interno della tua organizzazione.
+Condividi questi insegnamenti post-migrazione con le parti interessate e i team all’interno della tua organizzazione.
 
 ## Il percorso è terminato - Davvero? {#journey-ends}
 
