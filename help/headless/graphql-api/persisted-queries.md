@@ -3,10 +3,10 @@ title: Query GraphQL persistenti
 description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 92%
+source-wordcount: '1680'
+ht-degree: 91%
 
 ---
 
@@ -444,7 +444,7 @@ Per creare un pacchetto:
 1. Immetti un numero di versione, ad esempio a “1.0”.
 1. Nella sezione **Filtri**, aggiungi un nuovo **Filtro**. Utilizza Trova percorso per selezionare la cartella `persistentQueries` sotto la configurazione. Ad esempio, per `wknd` configurazione, il percorso completo è `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tocca **Salva** per salvare la definizione del nuovo pacchetto e chiudere la finestra di dialogo.
-1. Tocca **Genera** nella definizione del pacchetto appena creata.
+1. Tocca il **Genera** nella definizione del pacchetto appena creata.
 
 Dopo aver generato il pacchetto puoi:
 

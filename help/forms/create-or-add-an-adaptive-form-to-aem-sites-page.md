@@ -3,9 +3,9 @@ title: Come si aggiunge un modulo adattivo alla pagina di AEM Sites?
 description: Scopri come creare o aggiungere un modulo adattivo alla pagina AEM Sites. Scopri anche i vantaggi e i vari modi per integrare i moduli nel sito web.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 6a462b7a437f74e659a43f7f5d4a95663b92c2cf
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3308'
+source-wordcount: '3301'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Con AEM Forms, puoi aggiungere facilmente un modulo alla pagina di AEM Sites. Qu
 
 È possibile utilizzare l’Editor pagina AEM per creare e aggiungere rapidamente più moduli alle pagine AEM Sites. L’editor di pagine AEM consente agli autori di contenuti di creare esperienze di acquisizione dati fluide all’interno di una pagina Sites, sfruttando la potenza dei componenti per moduli adattivi, tra cui comportamento dinamico, convalide, integrazione dei dati, generazione di documenti di record e automazione dei processi aziendali. Consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito.
 
-Il Cloud Service AEM Forms fornisce i componenti Contenitore modulo adattivo e Forms adattivo - Incorpora. È possibile utilizzare il Contenitore di moduli adattivi per creare un nuovo modulo in una pagina o in un frammento di esperienza di AEM Sites, mentre il componente Incorpora di Forms adattivo consente di aggiungere un modulo adattivo esistente o crearne uno nuovo tramite l’editor di Forms adattivo.
+Il Cloud Service AEM Forms fornisce i componenti Contenitore modulo adattivo e Forms adattivo - Incorpora. È possibile utilizzare Contenitore di moduli adattivi per creare un nuovo modulo in una pagina o in un frammento di esperienza di AEM Sites, mentre il componente Forms adattivo - Incorpora consente di aggiungere un modulo adattivo esistente o crearne uno nuovo utilizzando l’editor di Forms adattivo.
 
 ![Esempio di modulo adattivo in una pagina AEM Sites](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -166,7 +166,7 @@ Poi, tu [impostare l&#39;azione di invio](#configure-submit-action-for-form) e p
 
 ### Creare un modulo in un frammento esperienza {#create-an-adaptive-form-in-experience-fragment}
 
-Puoi estendere la portata dei moduli aggiungendoli ai Frammenti esperienza AEM per consentirne il riutilizzo su più pagine o siti. Ad esempio, puoi includere un modulo di iscrizione a una newsletter all’interno di un frammento di esperienza. Questo consente di riutilizzare in modo comodo il frammento su più pagine del sito web, eliminando la necessità di ricreare ripetutamente il modulo. Eventuali aggiornamenti o modifiche apportate al modulo di iscrizione alla newsletter all’interno del frammento di esperienza vengono propagate automaticamente a tutte le pagine in cui viene utilizzato. Questo semplifica il processo e garantisce un’esperienza utente fluida, semplificando al contempo la gestione dei moduli del sito web.
+Puoi estendere la portata dei moduli aggiungendoli ai Frammenti esperienza AEM per consentirne il riutilizzo su più pagine o siti. Ad esempio, puoi includere un modulo di iscrizione a una newsletter all’interno di un frammento di esperienza. In questo modo è possibile riutilizzare il frammento in più pagine del sito Web, eliminando la necessità di ricreare ripetutamente il modulo. Eventuali aggiornamenti o modifiche apportate al modulo di iscrizione alla newsletter all’interno del frammento di esperienza vengono propagate automaticamente a tutte le pagine in cui viene utilizzato. Questo semplifica il processo e garantisce un’esperienza utente fluida, semplificando al contempo la gestione dei moduli del sito web.
 
 Per creare un modulo adattivo in un frammento di esperienza:
 

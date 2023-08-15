@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4918'
-ht-degree: 93%
+source-wordcount: '4913'
+ht-degree: 92%
 
 ---
 
@@ -564,7 +564,7 @@ Per altri esempi, consulta:
 >
 >Per ottenere prestazioni ottimali prova l’[Aggiornamento dei frammenti di contenuto per il paging e l’ordinamento nel filtro GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
-Questa funzione ti consente di ordinare i risultati della query in base a un campo specificato.
+Questa funzione consente di ordinare i risultati della query in base a un campo specificato.
 
 I criteri di ordinamento:
 
@@ -707,7 +707,7 @@ query {
 
 ## Distribuzione di immagini ottimizzate per il web nelle query GraphQL {#web-optimized-image-delivery-in-graphql-queries}
 
-La distribuzione di immagini ottimizzate per il web consente di utilizzare una query GraphQL per:
+La consegna di immagini ottimizzate per il web consente di utilizzare una query Graphql per:
 
 * Richiedere un URL per un’immagine risorsa di AEM
 
@@ -725,7 +725,7 @@ Puoi utilizzare AEM per:
 
 Ciò significa che i comandi vengono applicati durante l’esecuzione della query, allo stesso modo dei parametri URL sulle richieste GET per quelle immagini.
 
-Questo consente di creare in modo dinamico rappresentazioni di immagini per la distribuzione JSON, evitando di dover creare e archiviare manualmente tali rappresentazioni nell’archivio.
+Questo consente di creare in modo dinamico le rappresentazioni di immagini per la distribuzione JSON, evitando di doverle creare e archiviare manualmente nell’archivio.
 
 La soluzione GraphQL consente di:
 

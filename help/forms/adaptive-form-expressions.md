@@ -2,9 +2,9 @@
 title: Espressioni modulo adattivo
 seo-title: Adaptive Form Expressions
 description: Utilizza espressioni Forms adattive per aggiungere convalida, calcolo e attivazione o disattivazione automatica della visibilità di una sezione.
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '2695'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ JavaScript™ è il linguaggio di espressione di Adaptive Forms. Tutte le espres
 
 ## Best practice per le espressioni che coinvolgono il pannello ripetuto {#best-practices-for-expressions-involving-repeating-panel}
 
-I pannelli ripetuti sono istanze di un pannello aggiunte o rimosse dinamicamente, utilizzando API di script o dati precompilati. <!--  For detailed information about using repeating panel, see [creating forms with repeatable sections](creating-forms-repeatable-sections.md). -->
+I pannelli ripetuti sono istanze di un pannello che vengono aggiunte o rimosse dinamicamente, utilizzando API di script o dati precompilati. <!--  For detailed information about using repeating panel, see [creating forms with repeatable sections](creating-forms-repeatable-sections.md). -->
 
 * Per creare un pannello ripetuto, nella finestra di dialogo del pannello, apri le impostazioni e imposta il valore del campo conteggio massimo su più di 1.
 * Il valore di conteggio minimo delle impostazioni di ripetizione del pannello può essere uno o più ma non può essere superiore al valore di conteggio massimo.
@@ -270,7 +270,7 @@ Come accennato in precedenza, Adaptive Forms consente all’autore di fornire mo
 
 Per creare un pattern personalizzato per un tipo di campo specifico e riutilizzarlo per altri campi dello stesso tipo, effettua le seguenti operazioni:
 
-1. Passa a CRXDE Lite nell’istanza di authoring.
+1. Passa a CRXDE Liti nell’istanza di authoring.
 1. Crea una cartella per mantenere i modelli personalizzati. Nella directory /apps, crea un nodo di tipo sling:folder. Ad esempio, crea un nodo con il nome `customPatterns`. Sotto questo nodo, crea un altro nodo di tipo `nt:unstructed` e denominalo `textboxpatterns`. Questo nodo contiene i vari modelli personalizzati che desideri aggiungere.
 1. Apri la scheda Proprietà del nodo creato. Ad esempio, apri la scheda Proprietà di `textboxpatterns`. Aggiungi il `guideComponentType` su questo nodo e impostarne il valore su *fd/af/components/formatter/guideTextBox*.
 

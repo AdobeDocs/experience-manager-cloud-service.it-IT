@@ -2,9 +2,9 @@
 title: Creazione e gestione dei canali in Screens as a Cloud Service
 description: Questa pagina descrive come creare e gestire i canali in Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1092'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ Per aggiungere o modificare il contenuto di un canale, effettua le seguenti oper
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
-1. L’editor ti consente di aggiungere al canale le risorse/componenti che desideri pubblicare.
+1. L’editor ti consente di aggiungere al canale risorse/componenti che desideri pubblicare.
 
 1. Trascina e rilascia le risorse dal riquadro a sinistra e aggiungilo all’editor.
 
@@ -171,7 +171,7 @@ in alternativa, seleziona la visualizzazione desiderata nella vista inventario e
 1. Fai clic su *Rimuovi* per convalidare la modifica.
 
 **Nota:** Se si rimuovono i dettagli di assegnazione predefiniti da un canale, le assegnazioni corrispondenti verranno rimosse da tutte le visualizzazioni che lo utilizzavano.
-Di conseguenza, questo può portare alla creazione di schermate vuote se su tali schermi non è presente contenuto alternativo da riprodurre.
+Di conseguenza, questo può portare alla creazione di schermate vuote se su tali schermi non è presente alcun contenuto alternativo da riprodurre.
 
 ## Passaggio successivo {#whats-next}
 

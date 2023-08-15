@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 63%
+source-wordcount: '624'
+ht-degree: 59%
 
 ---
 
@@ -63,7 +63,7 @@ Dai un’occhiata al video Panoramica sulla versione di agosto 2022 per un riepi
 
 * [Procedura guidata per moduli adattivi](/help/forms/creating-adaptive-form.md): AEM Forms fornisce una procedura guidata intuitiva che consente agli utenti aziendali di creare rapidamente Adaptive Forms. La procedura guidata fornisce una navigazione rapida a schede per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati per creare un modulo adattivo. Con questa versione sono stati introdotti i seguenti miglioramenti alla procedura guidata:
 
-   * Selezionare o deselezionare i campi: la procedura guidata consente di creare un modulo adattivo basato su schemi JSON e Form Data Model. È ora possibile selezionare un sottoinsieme di campi all’interno di uno schema da includere in un modulo adattivo. I campi selezionati vengono convertiti nei corrispondenti componenti di acquisizione dati per moduli adattivi, per creare rapidamente i moduli adattivi desiderati.
+   * Selezione o deselezione dei campi: la procedura guidata consente di creare un modulo adattivo basato su schemi JSON e Modello dati modulo. È ora possibile selezionare un sottoinsieme di campi all’interno di uno schema da includere in un modulo adattivo. I campi selezionati vengono convertiti nei corrispondenti componenti di acquisizione dati per moduli adattivi, per creare rapidamente i moduli adattivi desiderati.
 
    * Usare modelli statici: i clienti che dispongono già di modelli statici legacy possono continuare il loro percorso di adozione cloud utilizzando modelli statici nella procedura guidata per la creazione di moduli adattivi. Questo offre ai clienti più tempo per completare la migrazione dai vecchi modelli statici ai nuovi modelli modificabili.
 

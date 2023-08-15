@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4938'
+source-wordcount: '4937'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 Il formato video è una parte fondamentale delle risorse digitali di un’organizzazione. [!DNL Adobe Experience Manager] offre offerte e funzioni mature per gestire l’intero ciclo di vita delle risorse video dopo la loro creazione.
 
-Scopri come gestire e modificare le risorse video in [!DNL Adobe Experience Manager Assets]. La codifica e la transcodifica video, ad esempio la transcodifica FFmpeg, sono possibili utilizzando Profili di elaborazione e utilizzando [!DNL Dynamic Media] integrazione. Senza [!DNL Dynamic Media] licenza, [!DNL Experience Manager] fornisce supporto di base per i video, ad esempio per la transcodifica tramite FFmpeg, l’estrazione delle miniature di anteprima per i formati di file supportati e l’anteprima nell’interfaccia utente per i formati supportati per la riproduzione diretta nel browser.
+Scopri come gestire e modificare le risorse video in [!DNL Adobe Experience Manager Assets]. La codifica e la transcodifica video, ad esempio la transcodifica FFmpeg, sono possibili utilizzando Profili di elaborazione e utilizzando [!DNL Dynamic Media] integrazione. Senza [!DNL Dynamic Media] licenza, [!DNL Experience Manager] fornisce il supporto di base per i video, ad esempio la transcodifica tramite FFmpeg, l’estrazione delle miniature di anteprima per i formati di file supportati e l’anteprima nell’interfaccia utente per i formati supportati per la riproduzione diretta nel browser.
 
 ## Caricare e visualizzare in anteprima le risorse video {#upload-and-preview-video-assets}
 
@@ -42,9 +42,9 @@ Puoi pubblicare le risorse video gestite in Experience Manager Assets direttamen
 
 Per pubblicare risorse video in YouTube, devi assegnare tag alle risorse video in Experience Manager Assets. Associa questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde a quello di un canale YouTube, il video viene pubblicato in YouTube. La pubblicazione su YouTube viene eseguita insieme alla normale pubblicazione del video, purché venga utilizzato un tag associato.
 
-YouTube esegue la propria codifica. Di conseguenza, il file video originale caricato in Experience Manager viene pubblicato in YouTube invece di qualsiasi rendering video creato dalla codifica di Dynamic Media. Anche se non è necessario per elaborare i video utilizzando Dynamic Media, è previsto che lo facciano nel caso in cui sia necessario un predefinito visualizzatore per la riproduzione.
+YouTube esegue la propria codifica. Di conseguenza, il file video originale caricato in Experience Manager viene pubblicato in YouTube invece di qualsiasi rendering video creato con la codifica Dynamic Medie. Anche se non è necessario per elaborare i video utilizzando Dynamic Medie, è previsto che lo facciano nel caso in cui sia necessario un predefinito visualizzatore per la riproduzione.
 
-Quando salti il profilo di elaborazione video e pubblichi direttamente in YouTube, significa semplicemente che la risorsa video in Experience Manager Asset non riceve una miniatura visualizzabile. Significa anche che i video non codificati non funzionano con nessuno dei tipi di risorse Dynamic Media.
+Quando salti il profilo di elaborazione video e pubblichi direttamente in YouTube, significa semplicemente che la risorsa video in Experience Manager Asset non riceve una miniatura visualizzabile. Significa anche che i video non codificati non funzionano con nessuno dei tipi di risorse Dynamic Medie.
 
 La pubblicazione di risorse video sui server YouTube prevede il completamento delle seguenti attività per garantire una verifica server-to-server sicura con YouTube:
 
@@ -203,8 +203,8 @@ A partire dall’Experience Manager 6.4, è stato introdotto un nuovo metodo di 
 
 #### Configurare YouTube all’Experience Manager 6.4 e versioni successive {#setting-up-youtube-in-aem-and-later}
 
-1. Accertati di accedere alla tua istanza di Dynamic Media come amministratore.
-1. Nell’angolo in alto a sinistra dell’Experience Manager, seleziona il logo dell’Experience Manager, quindi nella barra a sinistra passa a **[!UICONTROL Strumenti]**(icona a forma di martello) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione pubblicazione YouTube]**.
+1. Accertati di accedere alla tua istanza di Dynamic Medie come amministratore.
+1. Nell’angolo in alto a sinistra dell’Experience Manager, seleziona il logo dell’Experience Manager, quindi nella barra a sinistra passa a **[!UICONTROL Strumenti]**(icona a forma di martello) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione pubblicazione YouTube]**.
 1. Seleziona **[!UICONTROL globale]** (non selezionarlo).
 
 1. Nell’angolo superiore destro della pagina globale, seleziona **[!UICONTROL Crea]**.
@@ -238,7 +238,7 @@ Lascia aperta la pagina Crea configurazione di YouTube; tornerai tra un attimo.
 
    Ora imposta i tag per la pubblicazione.
 
-1. **[!UICONTROL Impostazione dei tag per la pubblicazione]** - Nella pagina Cloud Services > YouTube, seleziona l’icona a forma di matita per modificare l’elenco di tag che desideri utilizzare.
+1. **[!UICONTROL Impostazione dei tag per la pubblicazione]** - Nella pagina Cloud Service > YouTube, seleziona l’icona a forma di matita per modificare l’elenco di tag che desideri utilizzare.
 1. Per visualizzare l’elenco dei tag disponibili in Experience Manager, seleziona l’icona a discesa dell’elenco (cursore a discesa).
 1. Per aggiungerli, seleziona uno o più tag.
 
@@ -250,9 +250,9 @@ Lascia aperta la pagina Crea configurazione di YouTube; tornerai tra un attimo.
 
 #### Configurare YouTube in Experience Manager prima della versione 6.4 {#setting-up-youtube-in-aem-before}
 
-1. Accertati di accedere alla tua istanza di Dynamic Media come amministratore.
+1. Accertati di accedere alla tua istanza di Dynamic Medie come amministratore.
 
-1. Nell’angolo in alto a sinistra dell’Experience Manager, seleziona il logo dell’Experience Manager, quindi nella barra a sinistra passa a **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud Services]**.
+1. Nell’angolo in alto a sinistra dell’Experience Manager, seleziona il logo dell’Experience Manager, quindi nella barra a sinistra passa a **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud Service]**.
 1. Nell’intestazione Servizi di terze parti, in YouTube, seleziona **[!UICONTROL Configura ora]**.
 1. Nella finestra di dialogo Crea configurazione, immetti un titolo (obbligatorio) e un nome (facoltativo) nei rispettivi campi.
 1. Seleziona **[!UICONTROL Crea]**.
@@ -284,7 +284,7 @@ Lascia aperta la finestra di dialogo YouTube Account Setting (Impostazioni accou
 
    Ora imposta i tag per la pubblicazione.
 
-1. **[!UICONTROL Impostazione dei tag per la pubblicazione]** - Nella pagina Cloud Services > YouTube, seleziona l’icona a forma di matita per modificare l’elenco di tag che desideri utilizzare.
+1. **[!UICONTROL Impostazione dei tag per la pubblicazione]** - Nella pagina Cloud Service > YouTube, seleziona l’icona a forma di matita per modificare l’elenco di tag che desideri utilizzare.
 1. Per visualizzare l’elenco dei tag disponibili in Experience Manager, seleziona l’icona a discesa dell’elenco (cursore a discesa).
 1. Per aggiungerli, seleziona uno o più tag.
 
@@ -365,11 +365,14 @@ Ora associ alle risorse video i tag aggiunti in precedenza. Questo consente agli
 >
 >La pubblicazione immediata non viene automaticamente pubblicata in YouTube. Quando si imposta Dynamic Media, è possibile scegliere tra due opzioni di pubblicazione: **[!UICONTROL Immediatamente]** o **[!UICONTROL All’attivazione]**.
 >
->**[!UICONTROL Pubblica immediatamente]** significa che la risorsa caricata, dopo essere stata sincronizzata con IPS, viene pubblicata automaticamente nel sistema di consegna. Anche se questo è vero per Dynamic Media, non lo è per YouTube. Per pubblicare in YouTube, devi utilizzare l’Autore Experience Manager.
+>**[!UICONTROL Pubblica immediatamente]** significa che la risorsa caricata, dopo essere stata sincronizzata con IPS, viene pubblicata automaticamente nel sistema di consegna. Anche se questo è vero per Dynamic Medie, non lo è per YouTube. Per pubblicare in YouTube, devi utilizzare l’Autore Experience Manager.
 
 >[!NOTE]
+>
 Per pubblicare contenuti da YouTube, Experience Manager utilizza **[!UICONTROL Pubblica su YouTube]** che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
+>
 Consulta [Monitorare la codifica video e l’avanzamento della pubblicazione in YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+>
 Per informazioni più dettagliate sullo stato di avanzamento, puoi monitorare il registro di YouTube in replica. Tenere presente, tuttavia, che tale monitoraggio richiede l&#39;accesso dell&#39;amministratore.
 
 **Per pubblicare video sul canale YouTube:**
@@ -402,9 +405,10 @@ Dopo otto ore, se ricevi ancora un messaggio di stato che indica **[!UICONTROL C
 
 ### Collegare gli URL di YouTube all’applicazione web {#linking-youtube-urls-to-your-web-application}
 
-Dopo la pubblicazione del video, puoi ottenere una stringa URL di YouTube generata da Dynamic Media. Quando copi l’URL di YouTube, questo viene inserito negli Appunti, in modo da poterlo incollare nelle pagine del sito web o dell’applicazione.
+Dopo la pubblicazione del video, puoi ottenere una stringa URL di YouTube generata da Dynamic Medie. Quando copi l’URL di YouTube, questo viene inserito negli Appunti, in modo da poterlo incollare nelle pagine del sito web o dell’applicazione.
 
 >[!NOTE]
+>
 L’URL di YouTube non è disponibile per la copia finché non hai pubblicato la risorsa video in YouTube.
 
 Per collegare gli URL di YouTube alla tua applicazione web:
@@ -422,10 +426,13 @@ Per collegare gli URL di YouTube alla tua applicazione web:
 Quando annulli la pubblicazione di una risorsa video in Experience Manager, il video viene rimosso da YouTube.
 
 >[!CAUTION]
+>
 Se rimuovi un video direttamente da YouTube, Experience Manager non ne è a conoscenza e continua a comportarsi come se il video fosse ancora pubblicato in YouTube. Per Experience Manager, annulla sempre la pubblicazione di una risorsa video da YouTube.
 
 >[!NOTE]
+>
 Per rimuovere il contenuto da YouTube, Experience Manager utilizza **[!UICONTROL Annulla pubblicazione da YouTube]** che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
+>
 Consulta [Monitorare la codifica video e l’avanzamento della pubblicazione in YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Per annullare la pubblicazione dei video e rimuoverli da YouTube:**
@@ -466,16 +473,19 @@ Puoi monitorare l’avanzamento, inclusa la codifica non riuscita/pubblicazione 
    Tutte le informazioni sul flusso di lavoro, ad esempio la codifica, vengono visualizzate nella timeline. Per YouTube Publish, la timeline del flusso di lavoro include anche il nome del canale YouTube e l’URL del video YouTube. Inoltre, una volta completata la pubblicazione, nella timeline del flusso di lavoro vengono visualizzate tutte le notifiche di errore.
 
    >[!NOTE]
+   >
    Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di workflow **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
+   >
    * Configurazione coda processi Apache Sling
    * Adobe Granite Workflow External Process Job Handler
    * Coda di timeout del flusso di lavoro Granite
-
+   >
    È possibile regolare **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** proprietà in queste configurazioni.
 
 1. Per i flussi di lavoro in corso, vedi l’opzione Istanze flusso di lavoro accedendo a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso]** di lavoro > **[!UICONTROL Istanze]**.
 
    >[!NOTE]
+   >
    Sono necessari diritti di amministratore per accedere a **[!UICONTROL Strumenti]** menu.
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
@@ -489,21 +499,25 @@ Puoi monitorare l’avanzamento, inclusa la codifica non riuscita/pubblicazione 
 1. Per i processi non riusciti, consulta l’opzione Errori di flusso di lavoro, accessibile da **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Errori]**. In **[!UICONTROL Errore flusso di lavoro]** sono elencate tutte le attività del flusso di lavoro che hanno generato errori.
 
    >[!NOTE]
+   >
    Sono necessari diritti di amministratore per accedere a **[!UICONTROL Strumenti]** menu.
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
+   >
    Potrebbero essere necessari tempi lunghi per la registrazione del messaggio di errore, a causa della presenza di più configurazioni di workflow in **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
+   >
    * Configurazione coda processi Apache Sling
    * Adobe Granite Workflow External Process Job Handler
    * Coda di timeout del flusso di lavoro Granite
-
+   >
    È possibile regolare **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** proprietà in queste configurazioni.
 
 1. Per i flussi di lavoro completati, consulta Archivio flussi di lavoro, accessibile da **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Archivio]**. **[!UICONTROL Archivio flussi di lavoro]** elenca tutte le attività del flusso di lavoro che sono state completate.
 
    >[!NOTE]
+   >
    Sono necessari diritti di amministratore per accedere a **[!UICONTROL Strumenti]** menu.
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
@@ -573,6 +587,7 @@ Per elaborare le risorse utilizzando un profilo di elaborazione, aggiungi un pro
 Puoi aggiungere annotazioni alle risorse video. Durante l’annotazione dei video, il lettore si interrompe per consentire l’annotazione su un fotogramma. Per ulteriori informazioni, consulta [gestione delle risorse video](manage-video-assets.md).
 
 >[!NOTE]
+>
 Il formato video MXF non è ancora supportato con le annotazioni delle risorse video.
 
 1. Dalla sezione [!DNL Assets] console, seleziona **[!UICONTROL Modifica]** nella scheda delle risorse per visualizzare la pagina dettagli risorsa.
@@ -593,24 +608,25 @@ Il formato video MXF non è ancora supportato con le annotazioni delle risorse v
       * 400 MB per la transcodifica 4k.
       * 800 MB per la transcodifica 1080p.
       * 8 GB per transcodifica 720p.
+
    * La dimensione massima del file trascodificabile a una risoluzione 4k è di 2,55 GB di file MP4 con risoluzione 4k, bitrate di 12 Mbps e 23 fps.
 
-   **Consulta anche**
+  **Consulta anche**
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
-* [Documentazione video di Dynamic Media](/help/assets/dynamic-media/video.md).
+>
+* [Documentazione video di Dynamic Medie](/help/assets/dynamic-media/video.md).
 * [Ulteriori informazioni su utilizzo, tipi e configurazione dei profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).
-

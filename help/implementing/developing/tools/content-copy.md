@@ -2,9 +2,9 @@
 title: Lo strumento Copia contenuto
 description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service ad ambienti inferiori a scopo di test.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1306'
 ht-degree: 37%
 
 ---
@@ -16,7 +16,7 @@ Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mu
 
 ## Introduzione {#introduction}
 
-I dati attuali e reali sono utili a scopo di test, convalida e accettazione da parte degli utenti. Lo strumento di copia dei contenuti consente di copiare il contenuto da un ambiente di produzione AEM as a Cloud Service a uno staging, sviluppo o [Ambiente di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) ambiente per tali test.
+I dati attuali e reali sono utili a scopo di test, convalida e accettazione da parte degli utenti. Lo strumento di copia del contenuto consente di copiare il contenuto da un ambiente di produzione AEM as a Cloud Service a uno staging, sviluppo o [Ambiente di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) ambiente per tali test.
 
 Il contenuto da copiare è definito da un set di contenuti. Un set di contenuti è costituito da un elenco di percorsi JCR che contengono il contenuto mutabile da copiare da un ambiente del servizio di authoring sorgente a un ambiente del servizio di authoring di destinazione all’interno dello stesso programma Cloud Manager. I percorsi seguenti sono consentiti in un set di contenuti.
 

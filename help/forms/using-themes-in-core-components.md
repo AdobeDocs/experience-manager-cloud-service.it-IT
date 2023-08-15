@@ -4,9 +4,9 @@ description: Puoi utilizzare i temi per formattare e fornire un’identità visi
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: crea un nuovo tema, personalizza il tema, carica un nuovo tema, utilizza il tema nei moduli, personalizza il tema con la pipeline front-end
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2711'
+source-wordcount: '2709'
 ht-degree: 3%
 
 ---

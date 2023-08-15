@@ -2,10 +2,10 @@
 title: Percorso Architect di contenuti AEM headless
 description: Inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come modellare i contenuti sul tuo primo progetto headless.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '786'
-ht-degree: 86%
+ht-degree: 84%
 
 ---
 
@@ -47,7 +47,7 @@ Le informazioni in questo percorso possono ovviamente essere utili ad altri uten
 
 In questo percorso esplorerai molti argomenti. La lettura degli articoli seguenti fornirà le conoscenze di base sui contenuti headless in AEM e il collegamento all’approfondita documentazione tecnica.
 
-Sebbene tu possa accedere direttamente a una sezione specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Perciò, se non possiedi nessuna conoscenza dell’headless in AEM, ti raccomandiamo di cominciare dalla parte iniziale e di avanzare progressivamente.
+Sebbene tu possa accedere direttamente a una sezione specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se sei un nuovo utente di headless in AEM, Adobe consiglia di iniziare dall’inizio e procedere in sequenza.
 
 | # | Articolo | Descrizione |
 |---|---|---|

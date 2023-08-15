@@ -2,9 +2,9 @@
 title: Utilizzo di adattatori Sling
 description: Sling offre un pattern Adapter per tradurre in modo semplice gli oggetti che implementano l'interfaccia Adaptable
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2214'
+source-wordcount: '2213'
 ht-degree: 1%
 
 ---

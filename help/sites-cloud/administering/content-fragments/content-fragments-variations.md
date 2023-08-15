@@ -4,10 +4,10 @@ description: Scopri come le varianti consentono di creare contenuti per il framm
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2461'
-ht-degree: 92%
+source-wordcount: '2458'
+ht-degree: 90%
 
 ---
 
@@ -114,7 +114,7 @@ Il formato può essere selezionato quando si utilizza l’editor a schermo inter
 
 ### Testo formattato {#rich-text}
 
-La modifica come testo formattato consente di applicare la seguente formattazione:
+La modifica in formato RTF consente di formattare:
 
 * Grassetto
 * Corsivo
@@ -151,7 +151,7 @@ Testo normale consente di inserire rapidamente contenuti senza formattazione o i
 >
 >Per informazioni complete vedi la documentazione relativa a [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md).
 
-Questo consente di formattare il testo utilizzando il linguaggio markdown. Puoi definire:
+Questo consente di formattare il testo utilizzando il markdown. Puoi definire:
 
 * Titoli
 * Paragrafi e interruzioni di riga
@@ -470,7 +470,7 @@ Non è possibile eliminare l’elemento **Principale**.
 
 L’elemento **Principale** è parte integrante di un frammento di contenuto e, per definizione, contiene la copia principale del contenuto; le varianti ne contengono le singole versioni aggiornate e personalizzate. Quando viene aggiornato l’elemento Principale, è possibile che le modifiche apportate siano pertinenti anche per le varianti e, pertanto, devono essere propagate.
 
-Quando modifichi una variante, hai accesso all’azione che consente di sincronizzare l’elemento corrente della variante con l’elemento Principale. Questo consente di copiare automaticamente le modifiche apportate all’elemento Principale nella variante desiderata.
+Quando modifichi una variante, hai accesso all’azione che consente di sincronizzare l’elemento corrente della variante con l’elemento Principale. Questo consente di copiare automaticamente le modifiche apportate all’elemento Principale nella variante richiesta.
 
 >[!CAUTION]
 >

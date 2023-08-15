@@ -1,10 +1,10 @@
 ---
 title: Ripristino del contenuto in AEM as a Cloud Service
 description: Scopri come ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando Cloud Manager.
-source-git-commit: 6813b5b9570a4d115cd0600bcccd4d787dc42154
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 79%
+source-wordcount: '1166'
+ht-degree: 76%
 
 ---
 
@@ -59,11 +59,11 @@ Determina innanzitutto l’intervallo di tempo del contenuto da ripristinare. Qu
 
 1. Nella scheda **Ripristina contenuto** della pagina dei dettagli dell’ambiente, seleziona innanzitutto l’arco temporale del ripristino nel menu a discesa **Tempo di ripristino**.
 
-   1. Se selezioni **Ultime 24 ore** il campo vicino, **Orario**, consente di specificare l’ora esatta entro le ultime 24 ore da ripristinare.
+   1. Se si seleziona **Ultime 24 ore** il vicino **Ora** Questo campo consente di specificare l’ora esatta entro le ultime 24 ore da ripristinare.
 
       ![Ultime 24 ore](assets/backup-time.png)
 
-   1. Se selezioni **Ultima settimana** il campo vicino, **Giorno**, consente di selezionare una data negli ultimi sette giorni, escluse le 24 ore precedenti.
+   1. Se si seleziona **Ultima settimana** il vicino **Giorno** consente di selezionare una data negli ultimi sette giorni, escluse le 24 ore precedenti.
 
       ![Ultima settimana](assets/backup-date.png)
 

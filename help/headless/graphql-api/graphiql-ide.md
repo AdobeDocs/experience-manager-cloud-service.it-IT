@@ -3,10 +3,10 @@ title: Utilizzo dell’IDE GraphiQL in AEM
 description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 96%
+source-wordcount: '1141'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,7 @@ Un’implementazione dell’IDE [GraphiQL](https://graphql.org/learn/serving-ove
 >[!NOTE]
 >Prima di utilizzare l’IDE GraphiQL, devi avere [configurato gli endpoint](/help/headless/graphql-api/graphql-endpoint.md) nel [browser delle configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
 
-Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query GraphQL consentendoti di:
+Il **GraphiQL** Questo strumento consente di testare ed eseguire il debug delle query GraphQL consentendo di:
 * selezionare l’**Endpoint** appropriato per la configurazione Sites da utilizzare per le query;
 * inserire direttamente nuove query;
 * creare e accedere a **[query persistenti](/help/headless/graphql-api/persisted-queries.md)**;
@@ -87,7 +87,7 @@ In entrambi i casi, la query visualizzata nel pannello dell’editor è quella e
 
 ## Variabili di query {#query-variables}
 
-L’IDE GraphiQL consente inoltre di gestire le [variabili di query](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+L’IDE GraphiQL consente inoltre di gestire i [Variabili di query](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Esempio:
 
@@ -155,7 +155,7 @@ In questo modo la query verrà disattivata dall’ambiente selezionato, sia per 
 
 ## Copiare l’URL per accedere direttamente alla query {#copy-url}
 
-L’opzione **Copia URL** consente di simulare una query copiando l’URL utilizzato per accedere direttamente alla query persistente e visualizzare i risultati. Questa può quindi essere utilizzata per i test; ad esempio, accedendo in un browser:
+Il **Copia URL** consente di simulare una query copiando l’URL utilizzato per accedere direttamente alla query persistente e visualizzare i risultati. Questa può quindi essere utilizzata per i test; ad esempio, accedendo in un browser:
 
 <!--
   >[!NOTE]

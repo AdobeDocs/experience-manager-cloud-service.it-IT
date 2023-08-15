@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 86da8e784e3e5ff034efdb9186cf134d4b1c6e9c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2486'
-ht-degree: 94%
+source-wordcount: '2482'
+ht-degree: 93%
 
 ---
 
@@ -94,7 +94,7 @@ Mostra la gerarchia degli oggetti del modulo. L’autore può passare a un compo
 
    * **Oggetti modello dati**
 Consente di visualizzare la gerarchia del modello di modulo.
-Consente di trascinare gli elementi del modello di modulo sul modulo adattivo. Gli elementi aggiunti vengono automaticamente convertiti in componenti modulo mantenendo le proprietà originali. È possibile visualizzare gli oggetti del modello dati quando il modulo utilizza lo schema XML, lo schema JSON o il modello XDP.
+Consente di trascinare e rilasciare gli elementi del modello di modulo sul modulo adattivo. Gli elementi aggiunti vengono automaticamente convertiti in componenti modulo mantenendo le proprietà originali. È possibile visualizzare gli oggetti del modello dati quando il modulo utilizza lo schema XML, lo schema JSON o il modello XDP.
 
 * **Browser proprietà**
 
@@ -178,7 +178,7 @@ Consente di trascinare gli elementi del modello di modulo sul modulo adattivo. G
   </tr>
   <tr>
    <td>Immagine</td>
-   <td>Consente di inserire un’immagine.</td>
+   <td>Consente di inserire un'immagine.</td>
   </tr>
   <tr>
    <td>Scelta dell'immagine</td>
@@ -234,7 +234,7 @@ Consente di trascinare gli elementi del modello di modulo sul modulo adattivo. G
   </tr>
   <tr>
    <td>Testo</td>
-   <td>Consente di specificare il testo statico.</td>
+   <td>Consente di specificare testo statico.</td>
   </tr>
   <tr>
    <td>Pulsante Invia</td>

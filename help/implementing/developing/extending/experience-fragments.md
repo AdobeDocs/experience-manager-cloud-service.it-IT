@@ -2,9 +2,9 @@
 title: Panoramica dei frammenti esperienza
 description: Estendi i frammenti esperienza Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1640'
 ht-degree: 1%
 
 ---

@@ -3,9 +3,9 @@ title: Modifica nel contesto
 description: Scopri come utilizzare l’Editor universale per modificare qualsiasi aspetto del contenuto, in posizione e nel contesto, in qualsiasi implementazione.
 hidefromtoc: true
 index: false
-source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '959'
 ht-degree: 9%
 
 ---
@@ -74,7 +74,7 @@ L’immagine viene sostituita con quella selezionata.
 
 ## Scoprite I Contenuti Come I Vostri Reader {#emulators}
 
-L’Editor universale consente di interagire con il contenuto all’interno del contesto, visualizzandone il contenuto così come viene distribuito ai dispositivi degli utenti.
+L’Editor universale consente di interagire con il contenuto all’interno del suo contesto, visualizzandone il contenuto così come viene distribuito ai dispositivi degli utenti.
 
 1. Per impostazione predefinita, l’editor esegue il rendering della versione desktop del contenuto. Tocca o fai clic sul pulsante dell’emulatore in alto a destra dell’editor per modificare il dispositivo di destinazione.
 

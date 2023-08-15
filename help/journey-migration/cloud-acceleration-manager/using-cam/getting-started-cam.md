@@ -2,9 +2,9 @@
 title: Guida introduttiva di Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica su come utilizzare e iniziare a utilizzare Cloud Acceleration Manager.
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 22%
 
 ---

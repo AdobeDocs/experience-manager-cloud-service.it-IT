@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2210'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ Il servizio web RESTful può essere descritto utilizzando [Specifiche Swagger](h
 
 ### Configurazione dei servizi RESTful per la specifica API Open versione 2.0 {#configure-restful-services-open-api-2.0}
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 
@@ -151,7 +151,7 @@ Il servizio web RESTful può essere descritto utilizzando [Specifiche Swagger](h
 
 ### Configurare i servizi RESTful per la versione 3.0 delle specifiche API aperte {#configure-restful-services-open-api-3.0}
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 
@@ -227,7 +227,7 @@ I servizi web basati su SOAP sono descritti utilizzando [Specifiche di Web Servi
 
 Per configurare il servizio Web basato su SOAP in [!DNL Experience Manager] as a Cloud Service, assicurati di disporre dell’URL WSDL per il servizio Web e procedi come segue:
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 
@@ -270,7 +270,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 > Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
 >Guida dettagliata alla configurazione di [!DNL Microsoft® Dynamics 365], online o on-premise, vedi [[!DNL Microsoft® Dynamics] Configurazione OData](ms-dynamics-odata-configuration.md).
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 

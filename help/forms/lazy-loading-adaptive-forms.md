@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1073'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## Introduzione al caricamento lento {#introduction-to-lazy-loading}
 
-Quando i moduli diventano grandi e complessi con centinaia e migliaia di campi, gli utenti finali ottengono tempi di risposta lunghi durante il rendering dei moduli in fase di esecuzione. Per ridurre al minimo il tempo di risposta, l’Adaptive Forms consente di suddividere i moduli in frammenti logici e di configurare per posticipare l’inizializzazione o il caricamento dei frammenti fino a quando il frammento non deve essere visibile. È noto come caricamento lento. Inoltre, i frammenti configurati per il caricamento lazy vengono scaricati quando l’utente passa ad altre sezioni del modulo e i frammenti non sono più visibili.
+Quando i moduli diventano grandi e complessi con centinaia e migliaia di campi, gli utenti finali ottengono tempi di risposta lunghi durante il rendering dei moduli in fase di esecuzione. Per ridurre al minimo il tempo di risposta, l’Adaptive Forms consente di suddividere i moduli in frammenti logici e di configurarli in modo da posticipare l’inizializzazione o il caricamento dei frammenti fino a quando il frammento non deve essere visibile. È noto come caricamento lento. Inoltre, i frammenti configurati per il caricamento lazy vengono scaricati quando l’utente passa ad altre sezioni del modulo e i frammenti non sono più visibili.
 
 Comprendiamo innanzitutto i requisiti e i passaggi preparatori prima di configurare il caricamento lento.
 
@@ -73,7 +73,7 @@ Puoi contrassegnare i valori degli oggetti nel frammento caricato in modo differ
 
 Alcune limitazioni, raccomandazioni e punti importanti da tenere a mente quando si lavora con il caricamento lento sono i seguenti:
 
-* Si consiglia di utilizzare Forms adattivo basato su schema XSD su Forms adattivo basato su XFA per configurare il caricamento lento su moduli di grandi dimensioni. L’aumento delle prestazioni dovuto all’implementazione di caricamento lento in Adaptive Forms basato su XFA è relativamente inferiore al guadagno in Adaptive Forms basato su XSD.
+* Si consiglia di utilizzare Forms adattivo basato su schema XSD su Forms adattivo basato su XFA per configurare il caricamento lento su moduli di grandi dimensioni. L’aumento delle prestazioni dovuto all’implementazione con caricamento lento in Adaptive Forms basato su XFA è relativamente inferiore al guadagno in Adaptive Forms basato su XSD.
 * Non configurare il caricamento lento per i frammenti in un modulo adattivo che utilizzano **[!UICONTROL Reattivo: tutto su una pagina senza navigazione]** layout del pannello principale. Con la configurazione del layout Reattivo, tutti i frammenti vengono caricati contemporaneamente in un modulo adattivo. ma può anche causare un peggioramento delle prestazioni.
 * Si consiglia di non configurare il caricamento lento sui frammenti nel primo pannello riprodotto al caricamento del modulo adattivo.
 * Il caricamento lento è supportato fino a due livelli nella gerarchia dei frammenti.

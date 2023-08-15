@@ -4,9 +4,9 @@ description: Experience Manager aggiunge automaticamente tag avanzati contestual
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1212'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ I risultati della ricerca sono una combinazione di risorse video con parole chia
 
 ## Modera tag avanzati video {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] consente di curare gli smart tag per:
+[!DNL Adobe Experience Manager] consente di curare i tag avanzati per:
 
 * rimuovi i tag inesatti assegnati ai video del tuo marchio.
 

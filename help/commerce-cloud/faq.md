@@ -2,10 +2,10 @@
 title: Domande frequenti sull’integrazione AEM-Commerce tramite Commerce Integration Framework
 description: Domande frequenti sull’integrazione AEM-Commerce tramite Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '967'
-ht-degree: 29%
+ht-degree: 28%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe ha adottato le API GraphQL di Adobe Commerce come API Commerce ufficiale p
 
 Non è disponibile alcuna integrazione ufficiale AEM Assets - Adobe Commerce. È disponibile un connettore per i partner su [marketplace](https://marketplace.magento.com) <!-- THIS IS THE OLD URL THAT WAS USED. IT WAS 404 (https://marketplace.magento.com/bounteous-dam.html) -->
 
-Oppure, come soluzione alternativa, puoi memorizzare le risorse dei prodotti (immagini) in AEM Assets, ma devi memorizzare manualmente gli URL delle risorse in Adobe Commerce. Dynamic Media ora fa parte di AEM Assets e funziona allo stesso modo.
+Oppure, come soluzione alternativa, puoi memorizzare le risorse dei prodotti (immagini) in AEM Assets, ma devi memorizzare manualmente gli URL delle risorse in Adobe Commerce. Dynamic Medie ora fa parte di AEM Assets e funziona allo stesso modo.
 
 ## 3. Importa dove viene implementata la soluzione commerce? on-premise o nel cloud?
 
@@ -47,7 +47,7 @@ I dati dinamici come prezzo o inventario non vengono memorizzati nella cache di 
 
 ## 9. Come funziona l’invalidazione della cache per il Dispatcher AEM con l’AEM e il Commerce?
 
-È consigliabile impostare l’invalidazione della cache basata su TTL per le pagine memorizzate nella cache di Dispatcher. Per informazioni dinamiche come prezzo o azioni, si consiglia di eseguire il rendering dei dati lato client. Per ulteriori informazioni sull’invalidazione della cache basata su TTL, consulta [Ottimizzazione della cache di Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=it) e [Ottimizzazione delle prestazioni AEM](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
+L’Adobe consiglia di impostare l’invalidazione della cache basata su TTL per le pagine memorizzate nella cache di Dispatcher. Per informazioni dinamiche come prezzo o azioni, Adobe consiglia di eseguire il rendering dei dati lato client. Per ulteriori informazioni sull’invalidazione della cache basata su TTL, consulta [Ottimizzazione della cache di Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=it) e [Ottimizzazione delle prestazioni AEM](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
 ## 10. Vi sono consigli sulla ricerca unificata nei contenuti AEM con Commerce?
 
@@ -63,11 +63,11 @@ I dati del prodotto sono già tradotti in PIM o in Adobe Commerce. L’integrazi
 
 ## 13. Esiste un modo per migliorare i dati di prodotto con testo commerciale? Dove si effettua questa procedura? In AEM o nella soluzione Commerce?
 
-Consigliamo di gestire i dati e i contenuti di marketing in AEM. Decora i dati di prodotto dalla soluzione commerce con attributi aggiuntivi utilizzando Frammenti di contenuto oppure crea e collega frammenti di esperienza per contenuti non strutturati con i tuoi prodotti.
+L’Adobe consiglia di gestire i dati e i contenuti di marketing nell’AEM. Decora i dati di prodotto dalla soluzione commerce con attributi aggiuntivi utilizzando Frammenti di contenuto oppure crea e collega frammenti di esperienza per contenuti non strutturati con i tuoi prodotti.
 
 ## 14. Come possiamo garantire la conformità PCI quando si utilizza AEM per l’intero livello di presentazione?
 
-Si consiglia di utilizzare metodi di pagamento astratti. Questo mette il client browser in comunicazione diretta con il provider del gateway dei pagamenti in modo che né l&#39;Adobe né le soluzioni commerce conservino o trasmettano i dati del titolare della carta. Questo approccio richiede solo una conformità PCI di livello 3. Tuttavia, ci sono altri aspetti da considerare per essere pienamente conformi allo standard PCI, come il modo in cui i dipendenti interagiscono con il sistema e i dati. Per ulteriori informazioni sulla conformità PCI di Adobe Commerce, consulta [Requisiti di conformità PCI](https://business.adobe.com/products/magento/pci-compliance.html).
+L’Adobe consiglia di utilizzare metodi di pagamento astratti. Questo mette il client browser in comunicazione diretta con il provider del gateway dei pagamenti in modo che né l&#39;Adobe né le soluzioni commerce conservino o trasmettano i dati del titolare della carta. Questo approccio richiede solo una conformità PCI di livello 3. Tuttavia, ci sono altri aspetti da considerare per essere pienamente conformi allo standard PCI, come il modo in cui i dipendenti interagiscono con il sistema e i dati. Per ulteriori informazioni sulla conformità PCI di Adobe Commerce, consulta [Requisiti di conformità PCI](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## 15. Se utilizzo le versioni cloud AEM e Adobe Commerce, questa soluzione congiunta è compatibile con PCI?
 

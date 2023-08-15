@@ -4,10 +4,10 @@ description: Dopo aver configurato le risorse cloud, devi fornire al team l’ac
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Prima di iniziare a leggere questa sezione, è necessario disporre delle seguent
 
 >[!TIP]
 >
->Ai fini dell’onboarding, consigliamo di aggiungere per primi gli utenti che parteciperanno alle attività fin da subito, come amministratori, sviluppatori e autori di contenuti. Puoi avanzare nel resto del processo di onboarding senza aggiungere tutti gli utenti. Potrai aggiungerne di più in un secondo momento, dopo aver completato l’onboarding.
+>Ai fini dell’onboarding, l’Adobe consiglia di aggiungere per primi gli utenti che parteciperanno alle attività fin da subito, come amministratori, sviluppatori e autori di contenuti. Puoi avanzare nel resto del processo di onboarding senza aggiungere tutti gli utenti. Potrai aggiungerne di più in un secondo momento, dopo aver completato l’onboarding.
 
 ## Visualizzazione dei profili di prodotto di AEM {#view-profiles}
 

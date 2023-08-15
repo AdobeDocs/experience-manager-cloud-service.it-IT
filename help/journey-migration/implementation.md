@@ -2,10 +2,10 @@
 title: Fase di implementazione
 description: Assicurarsi che il codice e il contenuto siano pronti per la migrazione al cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 9%
+source-wordcount: '2339'
+ht-degree: 10%
 
 ---
 
@@ -59,13 +59,13 @@ Con questo strumento, puoi specificare il sottoinsieme di contenuti che desideri
 
 La migrazione dei contenuti è un processo in più fasi che richiede pianificazione, tracciamento e collaborazione tra team diversi.
 
-Per informazioni dettagliate su come funziona lo strumento e su come consigliamo di utilizzarlo, vedi [Documentazione dello strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+Per informazioni dettagliate su come funziona lo strumento e su come Adobe consiglia di utilizzarlo, vedere [Documentazione dello strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## Refactoring del codice {#code-refactor}
 
 ### Configurazione per lo sviluppo {#set-up-for-development}
 
-È ora di iniziare a rieseguire il factoring delle funzioni esistenti per renderle compatibili con i Cloud Services.
+È ora di iniziare a rieseguire il factoring delle funzioni esistenti per renderle compatibili con i Cloud Service.
 
 Per prima cosa, consulta la documentazione che descrive gli strumenti di base e inizia a rieseguire il factoring del codice:
 
@@ -112,7 +112,7 @@ Dopo aver configurato l’ambiente di sviluppo locale, acquisisci familiarità c
 
 ### Pianificare un blocco del codice {#schedule-a-code-freeze}
 
-Per gestire lo sviluppo del codice in corso sull’AEM attivo insieme alle attività di refactoring del codice come parte del percorso di transizione, ti consigliamo di pianificare un periodo di blocco del codice fino a quando non avrai completato la ristrutturazione del progetto Maven per renderlo compatibile con AEM as a Cloud Service.
+Per gestire lo sviluppo del codice in corso sull’AEM attivo insieme alle attività di refactoring del codice come parte del percorso di transizione, Adobe consiglia di pianificare un periodo di blocco del codice fino a quando non avrai completato la ristrutturazione del progetto Maven per renderlo compatibile con AEM as a Cloud Service.
 
 Al termine della ristrutturazione del progetto, puoi riprendere lo sviluppo del nuovo codice in base a questa nuova struttura. Questo riduce gli errori della pipeline di Cloud Manager durante la distribuzione e il test del codice.
 
@@ -130,7 +130,7 @@ Segui le best practice riportate nei documenti seguenti relativi al test della q
 
 ## Preparazione per il lancio {#preparing-for-go-live}
 
-La preparazione del sistema di origine per la migrazione prevede attività a livello di sistema e di amministratore AEM. Puoi iniziare verificando che l’archivio dei contenuti sia in uno stato di manutenzione corretto controllando [pulizia revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e [raccolta di oggetti inattivi dell’archivio dati](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html) stato attività. Se esegui la versione 6.3 dell’AEM (poiché lo strumento Content Transfer (Trasferimento contenuti) è compatibile dalla versione 6.3 in poi), si consiglia di eseguire la compattazione offline, seguita dalla raccolta di oggetti inattivi dell’archivio dati.
+La preparazione del sistema di origine per la migrazione prevede attività a livello di sistema e di amministratore AEM. Puoi iniziare verificando che l’archivio dei contenuti sia in uno stato di manutenzione corretto controllando [pulizia revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=it) e [raccolta di oggetti inattivi dell’archivio dati](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=it) stato attività. Se esegui la versione 6.3 dell’AEM (poiché lo strumento Content Transfer (Trasferimento contenuti) è compatibile dalla versione 6.3 in poi), si consiglia di eseguire la compattazione offline, seguita dalla raccolta di oggetti inattivi dell’archivio dati.
 
 [Verifica coerenza dati](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) è consigliato in tutte le versioni AEM per garantire che l’archivio dei contenuti in buono stato avvii le attività di migrazione.
 
@@ -193,7 +193,7 @@ Alcuni dettagli importanti che influenzano il piano di migrazione:
 
 * È importante acquisire questo elemento nel piano, poiché un set estratto può essere acquisito in più ambienti di Cloud Service.
 * Numero di acquisizioni integrative.
-* La migrazione del contenuto dall’istanza di authoring dell’origine a quella di authoring del servizio cloud e dalla pubblicazione dell’origine a quella del Cloud Service è la best practice per evitare di acquisire tutti i contenuti di authoring nella pubblicazione del Cloud Service.
+* La migrazione del contenuto dall’istanza di authoring dell’origine a quella di authoring del servizio Cloud e dalla pubblicazione dell’origine a quella del Cloud Service è la best practice per evitare di acquisire tutti i contenuti di authoring nella pubblicazione del Cloud Service.
 
 ### Tracciamento migrazione {#migration-tracker}
 

@@ -1,13 +1,13 @@
 ---
 title: Profili immagine di Dynamic Media
-description: Scopri come creare profili immagine Dynamic Media contenenti impostazioni per maschera di contrasto, ritaglio avanzato, campione avanzato o entrambi. Quindi, applica il profilo a una cartella di risorse immagine.
+description: Scopri come creare profili immagine Dynamic Medie contenenti impostazioni per maschera di contrasto, ritaglio avanzato, campione avanzato o entrambi. Quindi, applica il profilo a una cartella di risorse immagine.
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: c15486fb3de73773fa7e255809ffaa36715cea05
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3528'
 ht-degree: 8%
 
 ---
@@ -61,11 +61,11 @@ Quando implementi il ritaglio avanzato sulle immagini, Adobe consiglia la proced
 | --- | --- | --- |
 | **Immagine** - Numero di ritagli avanzati per immagine | 5 | 100 |
 
-Vedi anche [Limitazioni di Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-Le coordinate di ritaglio avanzato dipendono dalle proporzioni. Per le impostazioni di ritaglio avanzato in un profilo immagine, se le proporzioni sono le stesse per le dimensioni aggiunte nel profilo immagine, le stesse proporzioni vengono inviate a Dynamic Media. L’Adobe consiglia di utilizzare la stessa area di ritaglio. In questo modo si evita un impatto sulle diverse dimensioni utilizzate nel profilo immagine.
+Le coordinate di ritaglio avanzato dipendono dalle proporzioni. Per le impostazioni di ritaglio avanzato in un profilo immagine, se le proporzioni sono le stesse per le dimensioni aggiunte nel profilo immagine, le stesse proporzioni vengono inviate a Dynamic Medie. L’Adobe consiglia di utilizzare la stessa area di ritaglio. In questo modo si evita un impatto sulle diverse dimensioni utilizzate nel profilo immagine.
 
 Ogni generazione di ritaglio avanzato creata richiede un’elaborazione aggiuntiva. Ad esempio, l’aggiunta di più di cinque proporzioni di ritaglio avanzato può causare un rallentamento del tasso di acquisizione delle risorse. Può anche causare un aumento del carico sui sistemi. Poiché puoi applicare lo strumento di ritaglio avanzato a livello di cartella, l’Adobe consiglia di utilizzarlo nelle cartelle *solo* dove è necessario.
 
@@ -90,7 +90,7 @@ Sono disponibili due opzioni di ritaglio immagine: Ritaglio pixel e Ritaglio ava
 | --- | --- | --- |
 | **[!UICONTROL Ritaglio pixel]** | Ritaglia in blocco le immagini solo in base alle dimensioni. | Dalla sezione **[!UICONTROL Opzioni di ritaglio]** elenco a discesa, seleziona **[!UICONTROL Ritaglio pixel]**.<br>Per ritagliare dai lati di un&#39;immagine, immettere il numero di pixel da ritagliare da qualsiasi lato o da ogni lato dell&#39;immagine. La quantità di immagine ritagliata dipende dall&#39;impostazione ppi (pixel per pollice) nel file di immagine.<br>Il ritaglio di un pixel di un profilo immagine viene riprodotto nel modo seguente:<br>· I valori sono Top, Bottom, Left e Right.<br>· Viene considerata la parte superiore sinistra `0,0` e il ritaglio di pixel viene calcolato da lì.<br>· Punto iniziale di ritaglio: X a sinistra e Y in alto<br>· Calcolo orizzontale: dimensioni orizzontali dei pixel dell&#39;immagine originale meno Sinistra e quindi meno Destra.<br>· Calcolo verticale: altezza verticale in pixel meno Superiore e quindi meno Inferiore.<br>Ad esempio, supponiamo di avere un&#39;immagine di 4000 x 3000 pixel. Si utilizzano i seguenti valori: Top=250, Bottom=500, Left=300, Right=700.<br>Dal ritaglio in alto a sinistra (300.250) utilizzando lo spazio di riempimento di (4000-300-700, 3000-250-500 o 3000.2250). |
 | **[!UICONTROL Ritaglio avanzato]** | Ritaglia in blocco le immagini in base al loro punto focale visivo. | Smart Crop utilizza la potenza dell’intelligenza artificiale in Adobe Sensei per automatizzare rapidamente il ritaglio di immagini in blocco. Il ritaglio avanzato rileva automaticamente e ritaglia fino al punto focale di qualsiasi immagine per acquisire il punto di interesse desiderato, indipendentemente dalle dimensioni dello schermo.<br>Dalla sezione **[!UICONTROL Opzioni di ritaglio]** elenco a discesa, seleziona **[!UICONTROL Ritaglio avanzato]**, quindi a destra di **[!UICONTROL Ritaglio immagine reattivo]**, attiva (attiva) la funzione.<br>Dimensioni predefinite dei punti di interruzione (**[!UICONTROL Grande]**, **[!UICONTROL Medio]**, **[!UICONTROL Piccolo]**) coprono l&#39;intera gamma di dimensioni utilizzate dalla maggior parte delle immagini su dispositivi mobili e tablet, desktop e banner. Se lo si desidera, è possibile modificare i nomi predefiniti di Grande, Medio e Piccolo.<br>Per aggiungere altri punti di interruzione, seleziona **[!UICONTROL Aggiungi ritaglio]**; per eliminare un ritaglio, seleziona l’icona Cestino. |
-| **[!UICONTROL Campione immagine e colore]** | Genera un campione di immagine per ogni immagine. | **Nota**: campione avanzato non supportato in Dynamic Media Classic.<br>Individua e genera automaticamente campioni di alta qualità da immagini di prodotti che mostrano colori o texture.<br>Dalla sezione **[!UICONTROL Opzioni di ritaglio]** elenco a discesa, seleziona **[!UICONTROL Ritaglio avanzato]**. Quindi a destra di **[!UICONTROL Campione colore e immagine]**, attiva (attiva) la funzione. Immetti un valore in pixel in **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]** caselle di testo.<br>Mentre tutte le ritagli di immagini sono disponibili dalla barra Rappresentazioni, i campioni vengono utilizzati solo tramite **[!UICONTROL Copia URL]** funzionalità. Utilizza il tuo componente di visualizzazione per eseguire il rendering del campione sul tuo sito. L&#39;eccezione a questa regola sono i banner a carosello. Dynamic Media fornisce il componente visualizzazione per il campione utilizzato nei banner carosello.<br><br>**Utilizzo dei campioni immagine**<br> L&#39;URL per i campioni di immagine è semplice:<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>Dove `:Swatch` viene aggiunto alla richiesta della risorsa.<br><br>**Utilizzo dei campioni colore**<br> Per utilizzare i campioni colore, è necessario effettuare una `req=userdata` richiede quanto segue:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Di seguito è riportato un esempio di risorsa campione in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>Ed ecco la risorsa campione corrispondente `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>Il `req=userdata` la risposta è la seguente:<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>Puoi anche richiedere un `req=userdata` risposta in formato XML o JSON, come nei seguenti esempi URL rispettivi:<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota**: per richiedere un campione di colore e analizzare il componente WCM, è necessario creare un componente personalizzato `SmartSwatchColor` attributo, rappresentato da un valore esadecimale RGB a 24 bit.<br>Vedi anche [`userdata`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html) nella Guida di riferimento dei visualizzatori. |
+| **[!UICONTROL Campione immagine e colore]** | Genera un campione di immagine per ogni immagine. | **Nota**: campione avanzato non supportato in Dynamic Media Classic.<br>Individua e genera automaticamente campioni di alta qualità da immagini di prodotti che mostrano colori o texture.<br>Dalla sezione **[!UICONTROL Opzioni di ritaglio]** elenco a discesa, seleziona **[!UICONTROL Ritaglio avanzato]**. Quindi a destra di **[!UICONTROL Campione colore e immagine]**, attiva (attiva) la funzione. Immetti un valore in pixel in **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]** caselle di testo.<br>Mentre tutte le ritagli di immagini sono disponibili dalla barra Rappresentazioni, i campioni vengono utilizzati solo tramite **[!UICONTROL Copia URL]** funzionalità. Utilizza il tuo componente di visualizzazione per eseguire il rendering del campione sul tuo sito. L&#39;eccezione a questa regola sono i banner a carosello. Dynamic Medie fornisce il componente visualizzazione per il campione utilizzato nei banner carosello.<br><br>**Utilizzo dei campioni immagine**<br> L&#39;URL per i campioni di immagine è semplice:<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>Dove `:Swatch` viene aggiunto alla richiesta della risorsa.<br><br>**Utilizzo dei campioni colore**<br> Per utilizzare i campioni colore, è necessario effettuare una `req=userdata` richiede quanto segue:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Di seguito è riportato un esempio di risorsa campione in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>Ed ecco la risorsa campione corrispondente `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>Il `req=userdata` la risposta è la seguente:<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>Puoi anche richiedere un `req=userdata` risposta in formato XML o JSON, come nei seguenti esempi URL rispettivi:<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota**: per richiedere un campione di colore e analizzare il componente WCM, è necessario creare un componente personalizzato `SmartSwatchColor` attributo, rappresentato da un valore esadecimale RGB a 24 bit.<br>Vedi anche [`userdata`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html) nella Guida di riferimento dei visualizzatori. |
 | **[!UICONTROL Mantieni i contenuti di ritaglio nelle risoluzioni di destinazione]** | Per mantenere i contenuti di ritaglio con le stesse proporzioni | Utilizza quando crei un profilo di ritaglio avanzato.<br>Per generare nuovi contenuti di ritaglio mantenendo il punto focale per una determinata proporzione in diverse risoluzioni, deseleziona questa opzione <br>Se decidi di deselezionare questa casella, accertati che la risoluzione dell’immagine originale sia maggiore delle risoluzioni definite per il profilo di ritaglio avanzato.<br><br>Ad esempio, supponiamo di aver impostato i rapporti di formato su 600 x 600 (Large), 400 x 400 (Medium) e 300 x 300 (Small).<br>Quando **[!UICONTROL Mantieni contenuti di ritaglio nelle risoluzioni di destinazione]** l&#39;opzione è *selezionato*, lo stesso ritaglio viene visualizzato in tutte e tre le risoluzioni, in modo simile all’output di esempio seguente delle immagini (solo a scopo illustrativo):<br>![Opzione selezionata](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>Quando **[!UICONTROL Mantieni contenuti di ritaglio nelle risoluzioni di destinazione]** l&#39;opzione è *non selezionato*, il contenuto di ritaglio è nuovo per tutte e tre le risoluzioni, simile al seguente output di esempio di immagini (solo a scopo illustrativo):<br>![Opzione deselezionata](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
 
 ### Formati di file immagine supportati per Ritaglio avanzato e Campioni colore
@@ -104,25 +104,25 @@ La risoluzione massima supportata per le dimensioni dei file di input è di 16K.
 | Formato immagine | Estensione file senza distinzione tra maiuscole e minuscole | Tipo MIME | Spazio colore di input supportato | Dimensione massima file di input supportata | Formato immagine supportato? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Sì |
-| CMYK |  |  |  |  | Sì |
-| EPS |  |  |  |  | No |
+| CMYK | | | | | Sì |
+| EPS | | | | | No |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Sì; per la rappresentazione viene utilizzato il primo fotogramma del GIF animato. Non è possibile configurare o modificare il primo fotogramma. |
 | JPEG | `.jpg` e `.jpeg` | image/jpeg | sRGB | 15 GB | Sì |
 | PNG | `.png` | image/png | sRGB | 15 GB | Sì |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2 GB | Sì |
-| SVG |  |  |  |  | No |
+| SVG | | | | | No |
 | TIFF | `.tif` e `.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | Sì |
-| WebP/WebP animato |  |  |  |  | No |
+| WebP/WebP animato | | | | | No |
 
-## Creare profili immagine Dynamic Media {#creating-image-profiles}
+## Creare profili immagine Dynamic Medie {#creating-image-profiles}
 
 Per definire parametri di elaborazione avanzati per altri tipi di risorse, consulta [Configurazione dell’elaborazione delle risorse](config-dm.md#configuring-asset-processing).
 
-Consulta [Informazioni sui profili immagine e video di Dynamic Media](/help/assets/dynamic-media/about-image-video-profiles.md).
+Consulta [Informazioni sui profili immagine e video di Dynamic Medie](/help/assets/dynamic-media/about-image-video-profiles.md).
 
 Vedi anche [Best practice per organizzare le risorse digitali per l’utilizzo dei profili di elaborazione](/help/assets/organize-assets.md).
 
-**Per creare profili immagine Dynamic Media:**
+**Per creare profili immagine Dynamic Medie:**
 
 1. Seleziona il logo Adobe Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili immagine]**.
 1. Per aggiungere un profilo immagine, seleziona **[!UICONTROL Crea]**.
@@ -136,7 +136,7 @@ Vedi anche [Best practice per organizzare le risorse digitali per l’utilizzo d
 
 1. Seleziona **[!UICONTROL Salva]**. Il nuovo profilo creato viene visualizzato nell’elenco dei profili disponibili.
 
-## Modificare o eliminare i profili immagine Dynamic Media {#editing-or-deleting-image-profiles}
+## Modificare o eliminare i profili immagine Dynamic Medie {#editing-or-deleting-image-profiles}
 
 1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili immagine]**.
 1. Seleziona il profilo immagine da modificare o rimuovere. Per modificarlo, seleziona **[!UICONTROL Modifica profilo elaborazione immagine]**. Per rimuoverlo, seleziona **[!UICONTROL Elimina profilo elaborazione immagine]**.
@@ -145,7 +145,7 @@ Vedi anche [Best practice per organizzare le risorse digitali per l’utilizzo d
 
 1. Se stai eseguendo una modifica, salva le modifiche. In caso di eliminazione, conferma di voler rimuovere il profilo.
 
-## Applicare un profilo immagine Dynamic Media alle cartelle {#applying-an-image-profile-to-folders}
+## Applicare un profilo immagine Dynamic Medie alle cartelle {#applying-an-image-profile-to-folders}
 
 Quando si assegna un profilo immagine a una cartella, tutte le sottocartelle ereditano automaticamente il profilo dalla cartella principale. È quindi possibile assegnare un solo profilo immagine a una cartella. Considera quindi con attenzione la struttura di cartelle in cui caricare, archiviare, utilizzare e archiviare le risorse.
 
@@ -159,7 +159,7 @@ Puoi applicare i profili immagine a cartelle specifiche o a livello globale a tu
 
 Puoi rielaborare le risorse in una cartella che dispone già di un profilo immagine modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo averne modificato il profilo di elaborazione](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-### Applicare profili immagine Dynamic Media a cartelle specifiche {#applying-image-profiles-to-specific-folders}
+### Applicare profili immagine Dynamic Medie a cartelle specifiche {#applying-image-profiles-to-specific-folders}
 
 È possibile applicare un profilo immagine a una cartella dall’interno di **[!UICONTROL Strumenti]** o se ti trovi nella cartella, da **[!UICONTROL Proprietà]**.
 
@@ -167,7 +167,7 @@ Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visuali
 
 Puoi rielaborare le risorse in una cartella che dispone già di un profilo video modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo averne modificato il profilo di elaborazione](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-#### Applicazione dei profili immagine di Dynamic Media alle cartelle dall’interfaccia utente Profili {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Applicazione dei profili immagine di Dynamic Medie alle cartelle dall’interfaccia utente Profili {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili immagine]**.
 1. Seleziona il profilo immagine da applicare a una o più cartelle.
@@ -176,7 +176,7 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 
 1. Seleziona **[!UICONTROL Applicare il profilo di elaborazione alle cartelle]** e seleziona la cartella o le cartelle da utilizzare per ricevere le risorse appena caricate, quindi fai clic su **[!UICONTROL Applica]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
-#### Applicare profili immagine Dynamic Media alle cartelle da Proprietà {#applying-image-profiles-to-folders-from-properties}
+#### Applicare profili immagine Dynamic Medie alle cartelle da Proprietà {#applying-image-profiles-to-folders-from-properties}
 
 1. Tocca il logo di Experience Manager e passa a **[!UICONTROL Risorse]**.
 1. Passa a *cartella* (non una risorsa) alla quale desideri applicare un profilo immagine.
@@ -184,31 +184,31 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
    * In Vista a schede, posiziona il puntatore del mouse sulla cartella, quindi seleziona il segno di spunta per selezionarla.
    * In Vista a colonne o Vista a elenco selezionare la casella di controllo a sinistra del nome della cartella.
 1. Sulla barra degli strumenti, seleziona **[!UICONTROL Proprietà]**.
-1. Seleziona la **[!UICONTROL Elaborazione Dynamic Media]** scheda.
+1. Seleziona la **[!UICONTROL Elaborazione Dynamic Medie]** scheda.
 1. Sotto **[!UICONTROL Profilo immagine]**, dalla **[!UICONTROL Nome profilo]** dall&#39;elenco a discesa, selezionare il profilo da applicare.
 1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Applicare un profilo immagine Dynamic Media a livello globale {#applying-an-image-profile-globally}
+### Applicare un profilo immagine Dynamic Medie a livello globale {#applying-an-image-profile-globally}
 
 Oltre ad applicare un profilo a una cartella, puoi anche applicarne uno a livello globale. A qualsiasi contenuto caricato in Experience Manager Assets in qualsiasi cartella è applicato il profilo selezionato.
 
 Puoi rielaborare le risorse in una cartella che dispone già di un profilo video modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo averne modificato il profilo di elaborazione](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Per applicare un profilo immagine Dynamic Media a livello globale:**
+**Per applicare un profilo immagine Dynamic Medie a livello globale:**
 
 1. Effettua una delle operazioni seguenti:
 
    * Accedi a `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e applica il profilo appropriato e seleziona **[!UICONTROL Salva]**.
 
-      ![chlimage_1-257](assets/chlimage_1-257.png)
+     ![chlimage_1-257](assets/chlimage_1-257.png)
 
-   * Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`.
+   * Passa a CRXDE Liti al seguente nodo: `/content/dam/jcr:content`.
 
-      Aggiungi la proprietà `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` e seleziona **[!UICONTROL Salva tutto]**.
+     Aggiungi la proprietà `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` e seleziona **[!UICONTROL Salva tutto]**.
 
-      ![configure_image_profiles](assets/configure_image_profiles.png)
+     ![configure_image_profiles](assets/configure_image_profiles.png)
 
 ## Modificare il ritaglio o il campione avanzato di una singola immagine {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
@@ -223,7 +223,7 @@ Dopo aver modificato un ritaglio avanzato e aver salvato, la modifica viene prop
 >[!IMPORTANT]
 >
 >Quando si riallinea o ridimensiona manualmente la finestra di ritaglio avanzato di una risorsa, tale modifica viene mantenuta anche se successivamente si decide di rielaborare la risorsa. Tuttavia, se si modificano la larghezza, l&#39;altezza o entrambe nel **[!UICONTROL Ritaglio immagine reattivo]** del profilo immagine, la risorsa è soggetta a rielaborazione.
->Consulta [Rielaborare le risorse Dynamic Media in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>Consulta [Rielaborare le risorse Dynamic Medie in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Se necessario, puoi eseguire nuovamente il ritaglio avanzato per generare di nuovo i ritagli aggiuntivi.
 
@@ -259,7 +259,7 @@ Dopo aver modificato un ritaglio avanzato e aver salvato, la modifica viene prop
 >[!IMPORTANT]
 >
 >Se si riallinea o ridimensiona manualmente la finestra di ritaglio avanzato per più risorse, le modifiche vengono mantenute anche se successivamente si decide di rielaborare le risorse. Tuttavia, se si modificano la larghezza, l’altezza o entrambe nell’area **[!UICONTROL Ritaglio immagine reattivo]** del profilo immagine, le risorse verranno rielaborate.
->Consulta [Rielaborare le risorse Dynamic Media in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>Consulta [Rielaborare le risorse Dynamic Medie in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Se necessario, puoi eseguire nuovamente il ritaglio avanzato per generare di nuovo i ritagli aggiuntivi.
 
@@ -272,37 +272,35 @@ Se necessario, puoi eseguire nuovamente il ritaglio avanzato per generare di nuo
 
    * Regola le dimensioni di visualizzazione delle immagini sulla pagina.
 
-      A destra dell&#39;elenco a discesa Nome punto di interruzione, trascinare la barra di scorrimento verso sinistra o verso destra per modificare le dimensioni della visualizzazione dell&#39;immagine visualizzabile.
+     A destra dell&#39;elenco a discesa Nome punto di interruzione, trascinare la barra di scorrimento verso sinistra o verso destra per modificare le dimensioni della visualizzazione dell&#39;immagine visualizzabile.
 
-      ![edit_smart_crop-sliderbar](assets/edit_smart_crops-sliderbar.png)
+     ![edit_smart_crop-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
    * Filtra l’elenco delle immagini visualizzabili in base ai nomi dei punti di interruzione. Nell’esempio seguente, le immagini vengono filtrate in base al nome del punto di interruzione &quot;Medium&quot;.
 
-      Dall’elenco a discesa nell’angolo in alto a destra della pagina, seleziona un nome di punto di interruzione per filtrare in base alle immagini visualizzate. (Vedi l’immagine precedente).
+     Dall’elenco a discesa nell’angolo in alto a destra della pagina, seleziona un nome di punto di interruzione per filtrare in base alle immagini visualizzate. (Vedi l’immagine precedente).
 
-      ![edit_smart_crop-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
+     ![edit_smart_crop-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
    * Ridimensiona la casella di ritaglio avanzato. Effettua una delle seguenti operazioni:
 
       * Se l’immagine dispone solo di un ritaglio avanzato o di un campione avanzato, trascina la maniglia d’angolo della casella di ritaglio sull’immagine. Regola le dimensioni dell’area visibile del ritaglio.
       * Se l&#39;immagine presenta sia un ritaglio avanzato che un campione avanzato, trascinate la maniglia d&#39;angolo della casella di ritaglio. Regola le dimensioni dell’area visibile del ritaglio. In alternativa, seleziona il campione avanzato sotto l’immagine (i campioni di colore sono statici), quindi trascina la maniglia d’angolo della casella di ritaglio. Regola le dimensioni dell&#39;area visualizzabile del campione.
 
-      ![Ridimensionamento del ritaglio avanzato di un’immagine](assets/edit_smart_crops-resize.png).
+     ![Ridimensionamento del ritaglio avanzato di un’immagine](assets/edit_smart_crops-resize.png).
 
    * Spostare la casella di ritaglio avanzato. Effettua una delle seguenti operazioni:
 
       * Se l’immagine dispone solo di un ritaglio avanzato o di un campione avanzato, trascina la casella di ritaglio in una nuova posizione sull’immagine.
       * Se l’immagine dispone sia di un ritaglio avanzato che di un campione avanzato, trascina la casella di ritaglio avanzato in una nuova posizione. In alternativa, seleziona il campione avanzato sotto l’immagine (i campioni di colore sono statici), quindi trascina la casella di ritaglio del campione avanzato in una nuova posizione.
 
-      ![edit_smart_crop-move](assets/edit_smart_crops-move.png)
+     ![edit_smart_crop-move](assets/edit_smart_crops-move.png)
 
    * Annulla tutte le modifiche e ripristina il ritaglio avanzato o il campione avanzato originale (si applica solo alla sessione di modifica corrente).
 
-      Seleziona **[!UICONTROL Ripristina]** sopra l&#39;immagine.
+     Seleziona **[!UICONTROL Ripristina]** sopra l&#39;immagine.
 
-      ![edit_smart_crop-revert](assets/edit_smart_crops-revert.png)
-
-
+     ![edit_smart_crop-revert](assets/edit_smart_crops-revert.png)
 
 1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]**, quindi seleziona **[!UICONTROL Chiudi]** per tornare alla cartella delle risorse.
 
@@ -312,7 +310,7 @@ Quando rimuovi un profilo immagine da una cartella, tutte le sottocartelle eredi
 
 È possibile rimuovere un profilo immagine da una cartella dall’interno di **[!UICONTROL Strumenti]** o se ti trovi nella cartella, da **[!UICONTROL Proprietà]**.
 
-### Rimuovere i profili immagine di Dynamic Media dalle cartelle tramite l’interfaccia utente Profili {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Rimuovere i profili immagine di Dynamic Medie dalle cartelle tramite l’interfaccia utente Profili {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili immagine]**.
 1. Seleziona il profilo immagine da rimuovere da una o più cartelle.
@@ -320,7 +318,7 @@ Quando rimuovi un profilo immagine da una cartella, tutte le sottocartelle eredi
 
    Puoi confermare che il profilo immagine non è più applicato a una cartella perché il nome non viene più visualizzato sotto il nome della cartella.
 
-### Rimuovere i profili immagine di Dynamic Media dalle cartelle tramite Proprietà {#removing-image-profiles-from-folders-via-properties}
+### Rimuovere i profili immagine di Dynamic Medie dalle cartelle tramite Proprietà {#removing-image-profiles-from-folders-via-properties}
 
 1. Seleziona il logo di Experience Manager e naviga **[!UICONTROL Risorse]** e quindi alla cartella da cui desideri rimuovere un profilo immagine.
 1. Sulla cartella, seleziona il segno di spunta per selezionarla, quindi fai clic su **[!UICONTROL Proprietà]**.

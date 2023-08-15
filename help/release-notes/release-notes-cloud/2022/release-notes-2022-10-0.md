@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2022.10.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2022.10.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2022.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2022.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 84%
+source-wordcount: '836'
+ht-degree: 79%
 
 ---
 
@@ -48,7 +48,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2022 per un r
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets ora consente di caricare documenti in altri tipi di formati supportati e di [visualizzarli in anteprima utilizzando il visualizzatore di Document Cloud incluso](/help/assets/manage-pdf-documents.md). I tipi di formato supportati sono TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX.
+* Experience Manager Assets ora consente di caricare documenti in altri tipi di formati supportati e[visualizzali in anteprima utilizzando il visualizzatore di Document Cloud incluso](/help/assets/manage-pdf-documents.md). I tipi di formato supportati sono TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX.
 
   ![Rappresentazione di PDF per altri formati](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -65,7 +65,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2022 per un r
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms}
 
-* **Editor di modelli per moduli adattivi**: l’editor di modelli consente di predefinire la struttura e l’aspetto di base dei moduli adattivi di un’organizzazione. Questa versione apporta i seguenti miglioramenti all’editor di modelli:
+* **Editor modelli per Forms adattivo**: l’editor di modelli ti consente di predefinire la struttura e l’aspetto di base del Forms adattivo di un’organizzazione. Questa versione apporta i seguenti miglioramenti all’editor di modelli:
    * **[Modello per dati modulo nell’editor modelli](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: è possibile associare uno schema Modello dati modulo a un modello per moduli adattivi nell’editor modelli. Questo consente di velocizzare la creazione di un modulo adattivo. La stessa opzione è stata aggiunta anche all’editor di moduli adattivi per consentire agli utenti di selezionare o cambiare il modello di dati per i moduli esistenti.
    * **[Documento di record nell’editor modelli](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: ora è possibile standardizzare la generazione di documenti di record per tutti i moduli creati utilizzando un modello. Questo aiuta a migliorare la conformità e la standardizzazione in base ai requisiti dell’organizzazione.
 

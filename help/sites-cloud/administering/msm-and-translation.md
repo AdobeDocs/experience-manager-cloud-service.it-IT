@@ -4,10 +4,10 @@ description: Scopri come riutilizzare i contenuti all’interno del progetto e c
 feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 49%
+source-wordcount: '409'
+ht-degree: 45%
 
 ---
 
@@ -17,7 +17,7 @@ Gli strumenti di traduzione e gestione multisito integrati di Adobe Experience M
 
 * Multi Site Manager (MSM) e le sue funzioni Live Copy consentono di utilizzare lo stesso contenuto del sito in più posizioni, permettendo al contempo l’utilizzo di varianti:
    * [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](msm/overview.md)
-* La traduzione consente di automatizzare la localizzazione dei contenuti della pagina per creare e gestire siti Web multilingue:
+* La traduzione consente di automatizzare la traduzione del contenuto della pagina per creare e gestire siti Web multilingue:
    * [Traduzione di contenuti per siti multilingue](translation/overview.md)
 
 Queste due funzioni possono essere combinate per gestire i siti Web che sono [multinazionali e multilingue](#multinational-and-multilingual-sites).

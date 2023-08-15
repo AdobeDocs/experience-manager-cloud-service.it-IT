@@ -4,10 +4,10 @@ description: Informazioni sull'utilizzo della Creazione guidata copia in lingua 
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 82%
+source-wordcount: '280'
+ht-degree: 72%
 
 ---
 
@@ -29,11 +29,11 @@ Per accedere alla creazione guidata:
 
    ![Crea copia in lingua dalla creazione guidata](../assets/language-copy-wizard.png)
 
-1. Viene visualizzata la creazione guidata per il passaggio **Seleziona origine**, che consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie. Seleziona le pagine da includere e tocca o fai clic su **Successivo**.
+1. La procedura guidata si apre su **Seleziona origine** passaggio che consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie. Seleziona le pagine da includere e tocca o fai clic su **Successivo**.
 
    ![Aggiunta di pagine con la creazione guidata](../assets/language-copy-wizard-add-pages.png)
 
-1. Il passaggio **Configura** della creazione guidata consente di aggiungere/rimuovere le lingue e selezionare il metodo di traduzione. Tocca o fai clic su **Avanti**.
+1. Il **Configura** passaggio della procedura guidata consente di aggiungere/rimuovere lingue e selezionare il metodo di traduzione. Tocca o fai clic su **Avanti**.
 
    ![Configura il passaggio della creazione guidata](../assets/language-copy-wizard-configure.png)
 

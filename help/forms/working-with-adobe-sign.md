@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3173'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Per configurare [!DNL Adobe Sign] per un modulo adattivo:
 
 ### Abilita [!DNL Adobe Sign] per un modulo adattivo  {#enableadobesign}
 
-È possibile abilitare [!DNL Adobe Sign] per un modulo adattivo esistente o crea un [!DNL Adobe Sign] modulo adattivo abilitato. Scegliere una delle opzioni seguenti:
+È possibile abilitare [!DNL Adobe Sign] per un modulo adattivo esistente o crea un [!DNL Adobe Sign] è stato abilitato Adaptive Form. Scegliere una delle opzioni seguenti:
 
 * [Creare un [!DNL Adobe Sign] Modulo adattivo abilitato](#create-an-adaptive-form-for-adobe-sign)
 * [Abilita [!DNL Adobe Sign] per un modulo adattivo esistente](#editafsign).
@@ -83,7 +83,7 @@ Per creare un modulo adattivo abilitato alla firma:
 
    1. Seleziona la [Contenitore configurazione](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creato durante [integrazione [!DNL Adobe Sign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   Il contenitore di configurazione contiene [!DNL Adobe Sign] Cloud Services configurati per l’ambiente. Questi servizi sono disponibili per la selezione nell’editor di moduli adattivi.
+   Il contenitore di configurazione contiene [!DNL Adobe Sign] Cloud Service configurati per l’ambiente. Questi servizi sono disponibili per la selezione nell’editor di moduli adattivi.
 
 1. In **[!UICONTROL Modello modulo]** , selezionare una delle opzioni seguenti:
 
@@ -164,11 +164,11 @@ Per selezionare un Cloud Service e un ordine di firma:
 
 1. Nel browser Contenuti, tocca **[!UICONTROL Contenitore modulo]**, e tocca il **[!UICONTROL Configura]** ![configura](assets/Smock_Wrench_18_N.svg) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo.
 1. Nel browser delle proprietà, espandi la sezione **[!UICONTROL Firma elettronica]** Pannello a soffietto e seleziona la **[!UICONTROL Abilita Adobe Sign]** opzione. Abilita [!DNL Adobe Sign] per un modulo adattivo.
-1. Seleziona un Cloud Service dall’elenco già configurato di [!DNL Adobe Sign] Cloud Services.
+1. Seleziona un Cloud Service dall’elenco già configurato di [!DNL Adobe Sign] Cloud Service.
 
    Se il **[!UICONTROL Adobe Sign Cloud Service]** è vuoto, segui la [Configura [!DNL Adobe Sign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) articolo per configurare il servizio.
 
-   Il menu a discesa elenca i Cloud Services presenti nel `global` cartella in Strumenti > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Inoltre, il menu a discesa elenca anche i Cloud Services presenti nella cartella selezionata nel **[!UICONTROL Contenitore configurazione]** quando crei un modulo adattivo.
+   Il menu a discesa elenca i Cloud Service presenti nel `global` cartella in Strumenti > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Inoltre, il menu a discesa elenca anche i Cloud Service presenti nella cartella selezionata nel **[!UICONTROL Contenitore configurazione]** quando crei un modulo adattivo.
 
 1. Selezionare l&#39;ordine di firma dalla **[!UICONTROL I destinatari possono completare]** . I destinatari possono firmare un modulo adattivo **[!UICONTROL In sequenza]** - uno dopo l&#39;altro, o **[!UICONTROL Contemporaneamente]** - in qualsiasi ordine.
 
@@ -201,7 +201,7 @@ Puoi avere uno o più destinatari per un accordo Adobe Sign. Quando aggiungi un 
 
      >[!NOTE]
      >
-     >Assicurati che l’indirizzo e-mail del primo destinatario o dell’unico destinatario (se esiste un solo destinatario) non sia identico a [!DNL Adobe Sign] account utilizzato per configurare AEM Cloud Services.
+     >Assicurati che l’indirizzo e-mail del primo destinatario o dell’unico destinatario (se esiste un solo destinatario) non sia identico a [!DNL Adobe Sign] account utilizzato per configurare i Cloud Service AEM.
 
    * **[!UICONTROL Metodo di autenticazione destinatario]:** Specifica il metodo per autenticare un destinatario prima di aprire l’accordo Adobe Sign. Puoi scegliere tra telefono, knowledge base, autenticazione basata su identità social e [Documento ufficiale](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) per [!DNL Adobe Acrobat Sign]. Per [!DNL Adobe Acrobat Sign for Government] puoi scegliere tra l’autenticazione tramite telefono e basata su knowledge base.
 
@@ -322,7 +322,7 @@ Dopo [modifica delle proprietà di un modulo adattivo per Adobe Sign](working-wi
 
      >[!NOTE]
      >
-     > La firma digitale è applicabile anche a [!DNL Adobe Acrobat Sign for Government] ma non puoi applicarlo utilizzando le firme cloud.
+     > La firma digitale è applicabile anche a [!DNL Adobe Acrobat Sign for Government] ma non è possibile applicarlo utilizzando le firme cloud.
 
    Dopo aver aggiunto il campo della firma cloud al modulo adattivo, esegui i seguenti passaggi per completare il processo di configurazione:
 
@@ -357,9 +357,9 @@ Quando [!DNL Adobe Sign] è configurato per un modulo adattivo, il servizio non 
 
 * Controlla la [configurazione di Adobe Sign Cloud Service](adobe-sign-integration-adaptive-forms.md) utilizzato nel modulo adattivo.
 * Assicurati che l’applicazione API su [!DNL Adobe Sign] server utilizzato per configurare [!DNL Adobe Sign] Il Cloud Service dispone delle autorizzazioni necessarie.
-* Se utilizzi più [!DNL Adobe Sign] Cloud Services, selezionare **[!UICONTROL URL OAuth]** di tutti i servizi allo stesso **[!UICONTROL Condivisione Adobe Sign]**.
+* Se utilizzi più [!DNL Adobe Sign] Cloud Service, selezionare **[!UICONTROL URL OAuth]** di tutti i servizi allo stesso **[!UICONTROL Condivisione Adobe Sign]**.
 
-* Utilizza indirizzi e-mail separati per configurare [!DNL Adobe Sign] e per il primo o un singolo destinatario. L’indirizzo e-mail del primo destinatario o dell’unico destinatario (se presente, il singolo destinatario) non può essere identico a [!DNL Adobe Sign] account utilizzato per configurare AEM Cloud Services.
+* Utilizza indirizzi e-mail separati per configurare [!DNL Adobe Sign] e per il primo o un singolo destinatario. L’indirizzo e-mail del primo destinatario o dell’unico destinatario (se presente, il singolo destinatario) non può essere identico a [!DNL Adobe Sign] account utilizzato per configurare i Cloud Service AEM.
 
 ## Articoli correlati {#related-articles}
 

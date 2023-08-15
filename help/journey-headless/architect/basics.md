@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sulla modellazione dei contenuti
 description: Scopri le nozioni di base sulla modellazione dei contenuti per CMS headless utilizzando Frammenti di contenuto.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 100%
+source-wordcount: '903'
+ht-degree: 95%
 
 ---
 
@@ -67,7 +67,7 @@ All’interno di un modello:
 1. **Tipi di dati** consente di definire i singoli attributi.
 Ad esempio, definisci il campo contenente il nome di un insegnante come **Testo** e i relativi anni di servizio come **Numero**.
 1. I tipi di dati **Riferimento contenuto** e **Riferimento frammento** consentono di creare relazioni con altri contenuti all’interno di AEM.
-1. Il tipo di dati **Riferimento frammento** consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
+1. Il **Riferimento frammento** Il tipo di dati consente di realizzare più livelli di struttura nidificando i Frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
 
 Esempio:
 
@@ -113,7 +113,7 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 
 ## Livelli di struttura (frammenti nidificati) {#levels-of-structure-nested-fragments}
 
-Per la modellazione dei contenuti il tipo di dati **Riferimento frammento** consente di creare più livelli di struttura e relazioni.
+Per la modellazione dei contenuti **Riferimento frammento** tipo di dati consente di creare più livelli di struttura e relazioni.
 
 Con questo riferimento è possibile *connettere* vari modelli di frammenti di contenuto per rappresentare le interrelazioni. Questo consente all’applicazione headless di seguire le connessioni e accedere al contenuto in base alle necessità.
 

@@ -2,10 +2,10 @@
 title: Gestione dei frammenti di contenuto (risorse - frammenti di contenuto)
 description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 70%
+source-wordcount: '1768'
+ht-degree: 69%
 
 ---
 
@@ -105,11 +105,11 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 * **Pagamento**
 * **Proprietà**
 
-   * Consente di visualizzare e/o modificare i metadati del frammento.
+   * Consente di visualizzare, modificare o entrambi i metadati del frammento.
 
 * **Modifica**
 
-   * Ti consente di: [apri il frammento per la modifica del contenuto](/help/assets/content-fragments/content-fragments-variations.md) insieme ai relativi elementi, varianti, contenuti e metadati associati.
+   * Consente di: [apri il frammento per la modifica del contenuto](/help/assets/content-fragments/content-fragments-variations.md) insieme ai relativi elementi, varianti, contenuti e metadati associati.
 
 * **Pubblicazione rapida**
 * **Gestisci pubblicazione**
@@ -162,7 +162,7 @@ Naviga tra le varie modalità utilizzando le icone nel pannello laterale:
 * Varianti: [Modifica del contenuto](#editing-the-content-of-your-fragment) e [Gestione delle varianti](#creating-and-managing-variations-within-your-fragment)
 
 * [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [Contenuto associato ](#associating-content-with-your-fragment)
+* [Contenuto associato](#associating-content-with-your-fragment)
 * [Metadati](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 * [Albero struttura](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Anteprima](/help/assets/content-fragments/content-fragments-json-preview.md)
@@ -323,7 +323,7 @@ Vengono visualizzati affiancati, dove:
    * Testo inserito: verde
    * Testo sostituito: blu
 
-* L’icona a schermo intero consente di aprire una delle due versioni da sola; quindi di tornare alla vista parallela
+* L’icona a schermo intero consente di aprire una versione da sola, quindi di tornare alla vista parallela
 * È possibile **ritornare** alla versione specifica
 * **Fine** riporta alla console
 

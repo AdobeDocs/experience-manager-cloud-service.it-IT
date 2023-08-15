@@ -3,9 +3,9 @@ title: Importare ed esportare le risorse
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: Puoi importare ed esportare Forms adattivo e le risorse correlate in istanze AEM. Ciò consente di migrare i moduli o spostarli tra i sistemi.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1323'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Per le risorse di cui caricare e importare tramite [!DNL AEM Forms] L’interfac
 
 ## Scaricare o caricare risorse Forms &amp; Documents {#download-or-upload-forms-amp-documents-assets}
 
-[!DNL AEM Forms] L’interfaccia utente ti consente di esportare le risorse da un’istanza AEM scaricandole come un pacchetto CRX dell’AEM o come file binari. Puoi quindi importare il pacchetto AEM CRX scaricato o il file binario in un’altra istanza AEM.
+[!DNL AEM Forms] L’interfaccia utente consente di esportare le risorse da un’istanza AEM scaricandole come un pacchetto CRX dell’AEM o come file binari. Puoi quindi importare il pacchetto AEM CRX scaricato o il file binario in un’altra istanza AEM.
 
 Esportazione e importazione tramite [!DNL AEM Forms] L’interfaccia utente di è supportata per tutte le risorse, ad eccezione dei modelli di moduli adattivi e dei criteri per il contenuto dei moduli adattivi. Pertanto, all’esportazione di un modulo adattivo da [!DNL AEM Forms] L’interfaccia utente, il modello di modulo adattivo e i criteri del contenuto correlati non vengono esportati automaticamente come altre risorse correlate.
 
@@ -202,7 +202,7 @@ La procedura seguente illustra come creare una cartella:
 
    Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Puoi visualizzare il messaggio di errore passando il cursore sopra l’errore ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) accanto al campo del nome.
 
-   Tocca la cartella appena creata per entrarvi e creare risorse o cartelle al suo interno. Inoltre, puoi selezionare una cartella e scegliere di metterla in coda per il download, eliminarla o modificarne il nome.
+   Tocca la cartella appena creata per entrare nella cartella e creare risorse o cartelle al suo interno. Inoltre, puoi selezionare una cartella e scegliere di metterla in coda per il download, eliminarla o modificarne il nome.
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 
@@ -221,9 +221,9 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-[!DNL AEM Forms] UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
+[!DNL AEM Forms] UI lets you search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 
-When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -239,7 +239,7 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 

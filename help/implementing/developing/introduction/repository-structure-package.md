@@ -2,7 +2,7 @@
 title: Pacchetto per la struttura dell’archivio dei progetti AEM
 description: I progetti Maven in Adobe Experience Manager as a Cloud Service richiedono una definizione di pacchetto secondario della struttura dell’archivio il cui unico scopo è quello di definire le directory principali dell’archivio JCR in cui vengono distribuiti i pacchetti secondari del codice del progetto.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 2%
@@ -86,7 +86,7 @@ Assicurati di aggiungere questo nuovo sottoprogetto Maven ai progetti principali
                         Examples of complex roots
 
 
-                        Overlays of /libs typically require defining the overlayed structure, at each level here.
+                        Overlays of /libs typically require defining the overlay structure, at each level here.
 
                         For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
 

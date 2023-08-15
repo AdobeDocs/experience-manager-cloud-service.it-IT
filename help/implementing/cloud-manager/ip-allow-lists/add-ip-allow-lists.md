@@ -2,9 +2,9 @@
 title: Aggiunta degli elenchi IP consentiti
 description: Scopri come aggiungere il tuo elenco Consentiti IP di utilizzando Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '196'
 ht-degree: 40%
 
 ---
@@ -38,4 +38,4 @@ Un utente in **Proprietario business** o **Responsabile dell’implementazione**
 
 1. Per confermare quanto inserito, fai clic su **Salva**.
 
-Dopo il salvataggio, il nuovo elenco Consentiti IP creato viene visualizzato come riga nella tabella di, in cui è presente l’icona di controllo del codice di accesso (). **ELENCHI CONSENTITI IP** pagina.
+Dopo il salvataggio, il nuovo elenco Consentiti IP creato viene visualizzato come una riga nella tabella in **ELENCHI CONSENTITI IP** pagina.

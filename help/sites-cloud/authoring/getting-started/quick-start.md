@@ -2,10 +2,10 @@
 title: Guida rapida all’authoring delle pagine
 description: Guida rapida di alto livello per iniziare a creare i contenuti di una pagina
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 61%
+source-wordcount: '1568'
+ht-degree: 60%
 
 ---
 
@@ -57,13 +57,13 @@ Prima di iniziare la lettura della guida rapida, ti offriamo una piccola raccolt
 
 Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseguire ricerche:
 
-1. Apri **Sites** console (utilizzando il **Sites** opzione in [Navigazione globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - viene attivato (a discesa) quando selezioni il collegamento Adobe Experience Manager (in alto a sinistra).
+1. Apri **Sites** console (utilizzando il **Sites** opzione in [Navigazione globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - viene attivato (a discesa) quando si seleziona il collegamento Adobe Experience Manager (in alto a sinistra).
 
 1. Spostati verso il basso all’interno della struttura toccando/facendo clic sulla pagina appropriata. La modalità di rappresentazione delle risorse di pagina dipende dalla vista che stai utilizzando, [A schede, Elenco o Colonna](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
    ![Menu a discesa per selezionare la vista](/help/sites-cloud/authoring/assets/views.png)
 
-1. Per spostarti in alto nella struttura, usa le [breadcrumb nell’intestazione](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), che permettono di tornare alla posizione selezionata:
+1. Per spostarsi verso l’alto nella struttura, utilizza [breadcrumb nell’intestazione](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), che consente di tornare alla posizione selezionata:
 
    ![Menu a discesa per le breadcrumb](/help/sites-cloud/authoring/assets/breadcrumb.png)
 

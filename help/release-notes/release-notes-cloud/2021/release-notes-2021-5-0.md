@@ -1,10 +1,10 @@
 ---
-title: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1352'
 ht-degree: 29%
 
 ---
@@ -66,10 +66,10 @@ La seguente versione (2021.6.0) sarà del 28 giugno 2021.
 * Il caricamento di file di grandi dimensioni provoca l’arresto anomalo del [!DNL Experience Manager desktop app]. (CQ-4320942)
 * Le opzioni della barra degli strumenti sono diverse quando la stessa raccolta viene selezionata all’interno di una cartella e quando viene selezionata da un risultato di ricerca. (CQ-4321406)
 
-#### Novità di Dynamic Media {#what-is-new-dm}
+#### Novità di Dynamic Medie {#what-is-new-dm}
 
 * La funzione Smart Imaging DPR (Device Pixel Ratio) e l&#39;ottimizzazione della larghezza di banda della rete consentono di fornire immagini di alta qualità in modo efficiente su dispositivi con display ad alta risoluzione e larghezza di banda limitata. Per ulteriori informazioni, consulta [Domande frequenti sulla tecnologia Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) e [Ottimizzazione delle immagini con i formati WebP e AVIF di nuova generazione.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
-* È stato introdotto il supporto per il formato AVIF di nuova generazione nella distribuzione Dynamic Media (modificatore URL fmt).
+* È stato introdotto il supporto per il formato AVIF di nuova generazione nella distribuzione Dynamic Medie (modificatore URL fmt).
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

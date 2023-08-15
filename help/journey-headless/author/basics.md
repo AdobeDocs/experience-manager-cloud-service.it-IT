@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 89%
+source-wordcount: '1714'
+ht-degree: 88%
 
 ---
 
@@ -50,7 +50,7 @@ Come per la maggior parte dei sistemi, è necessario accedere. In qualità di au
 * Password
 * Collegamento per accedere alla schermata di accesso
 
-Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso di problemi, ti consigliamo di contattare il team di supporto per il progetto interno.
+Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso di problemi, l’Adobe consiglia di contattare il team interno di supporto al progetto.
 
 ### Navigazione {#navigation}
 
@@ -235,7 +235,7 @@ Conferma gli aggiornamenti con **Salva** o **Salva e chiudi**.
 
 #### Di cosa non deve (probabilmente) preoccuparsi {#what-you-probably-do-not-need-to-worry-about}
 
-OK, questa sezione potrebbe sembrare un po’ strana, ma non appena apri l’Editor frammento di contenuto e inizi a esplorare puoi vedere diverse opzioni che (probabilmente) non si applicano al tuo percorso headless come Autore di contenuti. Questo è solo un rapido resoconto di ciò che dovresti essere in grado di ignorare nel contesto headless:
+Questa potrebbe sembrare una sezione un po’ strana, ma non appena apri l’Editor frammento di contenuto e inizi a esplorare puoi vedere diverse opzioni che (probabilmente) non si applicano al tuo percorso headless come Autore di contenuti. Questo è solo un rapido resoconto di ciò che dovresti essere in grado di ignorare nel contesto headless:
 
 * **Modelli per frammenti di contenuto**
 

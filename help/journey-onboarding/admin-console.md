@@ -2,10 +2,10 @@
 title: Accesso a Admin Console
 description: Una volta comprese le operazioni preliminari all’onboarding e le nozioni di base della struttura di AEMaaCS, puoi effettuare il primo accesso a Admin Console.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 94%
+source-wordcount: '1104'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ In qualità di amministratore di sistema, sei responsabile della gestione degli 
 
 ## Admin Console {#admin-console}
 
-Adobe Admin Console è una piattaforma centralizzata da cui amministrare e gestire le licenze e gli utenti dei prodotti Adobe. Con Admin Console è possibile creare e gestire gli utenti da un’unica posizione anziché dalle singole soluzioni individuali.
+Adobe Admin Console è una piattaforma centralizzata da cui amministrare e gestire le licenze e gli utenti dei prodotti Adobe. L’Admin Console consente di creare e gestire gli utenti in un’unica posizione anziché all’interno delle varie soluzioni individuali.
 
 ## Adobe ID {#adobe-id}
 
@@ -50,7 +50,7 @@ Prima di poter gestire gli utenti del team con Admin Console, assicurati di pote
 
 1. In qualità di amministratore di sistema, come parte del processo di onboarding riceverai più e-mail da Adobe. Cerca l’e-mail di benvenuto con le informazioni sul nome dell’organizzazione a cui hai accesso.
 
-1. Per accedere a Admin Console, fai clic sul collegamento **Inizia** nell’e-mail di benvenuto. Se non riesci a trovare l’e-mail, apri un browser per accedere direttamente a Admin Console all’indirizzo [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Per accedere a Admin Console, fai clic sul collegamento **Inizia** nell’e-mail di benvenuto. Se non riesci a trovare l’e-mail, apri un browser per passare direttamente all’Admin Console da [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![E-mail di benvenuto](/help/journey-onboarding/assets/get-started-email.png)
 
@@ -90,7 +90,7 @@ In caso di problemi, accedi al supporto Adobe tramite Admin Console. Nella sched
 
 ![Scheda Supporto](/help/journey-onboarding/assets/support-menu.png)
 
-Dalla scheda è possibile creare e gestire i casi, chattare direttamente con l’assistenza clienti Adobe e pianificare le sessioni con gli esperti. Gli amministratori di sistema e gli amministratori del supporto devono effettuare l’accesso per accedere ai casi e alle opzioni delle sessioni con gli esperti.
+La scheda ti consente di creare e gestire i casi, chattare direttamente con i rappresentanti dell’assistenza clienti Adobe e pianificare le sessioni con gli esperti. Gli amministratori di sistema e gli amministratori del supporto devono effettuare l’accesso per accedere ai casi e alle opzioni delle sessioni con gli esperti.
 
 ## Passaggio successivo {#whats-next}
 

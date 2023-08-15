@@ -2,10 +2,10 @@
 title: Aggiunta di annotazioni di pagina
 description: La modalità di annotazione consente di lasciare annotazioni e schizzi sulle pagine, in modo da facilitare il processo di revisione dei contenuti
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 96%
+source-wordcount: '694'
+ht-degree: 87%
 
 ---
 
@@ -89,7 +89,7 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 >[!NOTE]
 >
->Non è possibile aggiungere annotazioni a una pagina che è stata bloccata da un altro utente.
+>Non è possibile aggiungere annotazioni a una pagina bloccata da un altro utente.
 
 >[!NOTE]
 >

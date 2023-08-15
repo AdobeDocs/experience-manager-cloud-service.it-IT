@@ -2,10 +2,10 @@
 title: Guida rapida alle linee guida WCAG 2.1
 description: Guida rapida alle linee guida WCAG (Web Content Accessibility Guidelines) versione 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 93%
+source-wordcount: '1782'
+ht-degree: 92%
 
 ---
 
@@ -68,7 +68,7 @@ In particolare:
 * Le linee guida sono numerate da 1.1 a 4.1 e la prima cifra corrisponde al principio padre.
 * Ogni linea guida è costituita da uno o più **criteri di successo**.
 * I criteri di successo sono formulati come istruzioni, che possono essere `True` o `False` per una determinata pagina web.
-* I criteri di successo possono includere una o più opzioni oppure eccezioni, ovvero situazioni in cui non è necessario soddisfare i criteri di successo.
+* I criteri di successo possono includere una o più scelte oppure eccezioni, ovvero situazioni in cui non è necessario soddisfare i criteri di successo.
 * I criteri di successo sono numerati in base alla linea guida e al principio padre, da 1.1.1 a 4.1.1. Hanno anche un nome breve che riassume l’intento del criterio, per un riferimento più semplice. Ad esempio, il criterio di successo [1.1.1 prevede contenuto non testuale](https://www.w3.org/TR/WCAG/#non-text-content).
 * I criteri di successo includono un elenco delle **tecniche** correlate (descritte più in dettaglio di seguito).
 

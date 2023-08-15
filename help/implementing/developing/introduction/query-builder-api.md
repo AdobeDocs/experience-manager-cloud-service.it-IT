@@ -2,9 +2,9 @@
 title: API Query Builder
 description: La funzionalità di Asset Share Query Builder è esposta tramite un’API Java&trade; e un’API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2006'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ L’API REST consente di accedere alle stesse funzioni tramite HTTP con risposte
 
 >[!NOTE]
 >
->L’API QueryBuilder viene creata utilizzando l’API JCR. Puoi anche eseguire query sul JCR dell’AEM utilizzando l’API JCR all’interno di un bundle OSGi. Per informazioni, consulta [Query dei dati di Adobe Experience Manager tramite l’API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
+>L’API QueryBuilder viene creata utilizzando l’API JCR. Puoi anche eseguire query sul JCR dell’AEM utilizzando l’API JCR all’interno di un bundle OSGi. Per informazioni, consulta [Query dei dati Adobe Experience Manager tramite l’API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
 
 ## Sessione Gem {#gem-session}
 

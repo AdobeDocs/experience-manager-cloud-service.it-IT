@@ -2,9 +2,9 @@
 title: Modifica di uno SPA esterno in AEM
 description: Questo documento descrive i passaggi consigliati per caricare un SPA autonomo in un’istanza AEM, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2421'
+source-wordcount: '2418'
 ht-degree: 2%
 
 ---
@@ -169,7 +169,7 @@ Prendiamo una pagina di esempio in cui devi aggiungere un testo dal progetto WKN
 
    Il `AEMText` Il componente può essere aggiunto nella posizione desiderata all’interno della pagina con `pagePath` e `itemPath` valori impostati come proprietà. `pagePath` è una proprietà obbligatoria.
 
-#### Verifica della modifica del contenuto di testo su AEM {#verify-text-edit}
+#### Verificare la modifica del contenuto di testo su AEM {#verify-text-edit}
 
 Ora testa il componente sull’istanza AEM in esecuzione.
 
@@ -237,7 +237,7 @@ Il `TestPage` dopo l’aggiunta del componente virtuale, il componente si presen
 >
 >Assicurati che `AEMText` il componente ha il suo `resourceType` nella configurazione in modo da poter abilitare questa funzione.
 
-Ora puoi implementare le modifiche all’AEM seguendo i passaggi descritti nella sezione [Verifica della modifica del contenuto di testo su AEM](#verify-text-edit). Viene visualizzato un segnaposto per il file attualmente non esistente `text_20` nodo.
+Ora puoi implementare le modifiche all’AEM seguendo i passaggi descritti nella sezione [Verificare la modifica del contenuto di testo su AEM](#verify-text-edit). Viene visualizzato un segnaposto per il file attualmente non esistente `text_20` nodo.
 
 ![Nodo text_20 in AEM](assets/external-spa-text20-aem.png)
 
@@ -356,7 +356,7 @@ Per abilitare la modifica all’interno dell’AEM per questo esempio di SPA, so
 
 1. Verifica la modifica della pagina in AEM.
 
-   * Distribuisci il progetto in AEM e passa al nuovo `test` pagina. Ora viene eseguito il rendering del contenuto della pagina e i componenti AEM sono modificabili.
+   * Implementa il progetto in AEM e passa al nuovo `test` pagina. Ora viene eseguito il rendering del contenuto della pagina e i componenti AEM sono modificabili.
 
 ## Limitazioni del framework {#framework-limitations}
 

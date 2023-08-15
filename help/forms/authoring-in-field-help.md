@@ -1,16 +1,12 @@
 ---
 title: Creazione della Guida contestuale per i campi modulo
-seo-title: Authoring in-context help for form fields
-description: AEM Forms consente di aggiungere assistenza contestuale ai campi e ai pannelli del modulo adattivo, come testo o file multimediali avanzati, inclusi i video.
-seo-description: AEM Forms allows you to add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.
-uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
+description: AEM Forms consente di aggiungere assistenza contestuale ai campi e ai pannelli del modulo adattivo come testo o file multimediali avanzati, inclusi i video.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '365'
 ht-degree: 1%
 
 ---

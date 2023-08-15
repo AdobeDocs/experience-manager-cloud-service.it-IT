@@ -2,10 +2,10 @@
 title: Configurare la pipeline
 description: Crea una pipeline front-end per gestire la personalizzazione del tema del sito.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 89%
+source-wordcount: '966'
+ht-degree: 87%
 
 ---
 
@@ -51,7 +51,7 @@ In questo modo, lo sviluppo front-end può funzionare separatamente e parallelam
 
 >[!NOTE]
 >
->Le pipeline front-end possono distribuire solo risorse JavaScript, CSS e statiche per personalizzare lo stile del sito AEM. Il contenuto del sito, come pagine o risorse, non può essere distribuito in una pipeline.
+>Le pipeline front-end possono distribuire solo risorse JavaScript, CSS e statiche per personalizzare lo stile del sito AEM. Il contenuto del sito, ad esempio pagine o risorse, non può essere distribuito in una pipeline.
 
 ## Accesso a Cloud Manager {#login}
 
@@ -102,7 +102,7 @@ La nuova pipeline viene creata ed è visibile nella sezione **Pipeline** della f
 
 >[!TIP]
 >
->Se conosci le pipeline in AEMaaCS e vuoi saperne di più sulle differenze tra i diversi tipi di pipeline, compresi ulteriori dettagli sulla pipeline front-end, consulta Configurare la pipeline CI/CD - Cloud Services collegati in [Risorse aggiuntive](#additional-resources) sezione successiva.
+>Se conosci le pipeline in AEMaaCS e vuoi saperne di più sulle differenze tra i diversi tipi di pipeline, compresi ulteriori dettagli sulla pipeline front-end, consulta Configurare la pipeline CI/CD - Cloud Service collegati in [Risorse aggiuntive](#additional-resources) sezione successiva.
 
 ## Novità {#what-is-next}
 

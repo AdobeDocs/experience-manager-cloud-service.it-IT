@@ -4,10 +4,10 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2919'
-ht-degree: 91%
+source-wordcount: '2916'
+ht-degree: 90%
 
 ---
 
@@ -222,6 +222,7 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 * **[Riferimento frammento](#fragment-reference-nested-fragments)** (frammenti nidificati)
    * Fa riferimento ad altri frammenti, a seconda dei modelli specifici indicati.
    * Consente di includere/recuperare dati strutturati.
+
      >[!NOTE]
      >
      >Questo metodo è particolarmente interessante in relazione alla [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).

@@ -2,10 +2,10 @@
 title: Percorso di authoring di contenuti AEM headless
 description: Inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche, e la creazione di contenuti per il tuo progetto.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '865'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -49,7 +49,7 @@ Le informazioni in questo percorso possono ovviamente essere utili ad altri uten
 
 In questo percorso esplorerai molti argomenti. La lettura degli articoli seguenti fornirà le conoscenze di base sui contenuti headless in AEM e il collegamento all’approfondita documentazione tecnica.
 
-Sebbene tu possa accedere direttamente a una sezione specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Perciò, se non possiedi nessuna conoscenza dell’headless in AEM, ti raccomandiamo di cominciare dalla parte iniziale e di avanzare progressivamente.
+Sebbene tu possa accedere direttamente a una sezione specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se sei un nuovo utente di headless in AEM, Adobe consiglia di iniziare dall’inizio e procedere in sequenza.
 
 | # | Articolo | Descrizione |
 |---|---|---|

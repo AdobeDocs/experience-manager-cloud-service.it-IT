@@ -1,13 +1,13 @@
 ---
 title: Set di immagini
-description: Scopri come utilizzare i set di immagini in Dynamic Media.
+description: Scopri come utilizzare i set di immagini in Dynamic Medie.
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2134'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ Quando crei un set di immagini, Adobe consiglia le seguenti best practice e appl
 | Numero di risorse duplicate per set | Nessun duplicato | 20 |
 | Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
 
-Vedi anche [Limitazioni di Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations.md).
 
 ## Guida introduttiva: Set di immagini {#quick-start-image-sets}
 
@@ -55,7 +55,7 @@ Per iniziare subito a utilizzare il prodotto:
 
    Carica le immagini per i set di immagini. Gli utenti possono ingrandire le immagini nel Visualizzatore set di immagini. Scegliere quindi con attenzione le immagini. Assicurati che le dimensioni delle immagini siano di almeno 2000 pixel.
 
-   Consulta [Dynamic Media - Formati di immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media) per un elenco di formati supportati dai set di immagini.
+   Consulta [Dynamic Medie - Formati di immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media) per un elenco di formati supportati dai set di immagini.
 
 1. [Crea set di immagini](#creating-image-sets).
 
@@ -92,15 +92,15 @@ Per iniziare subito a utilizzare il prodotto:
 
 Per modificare i set di immagini, consulta [modifica di set di immagini](#editing-image-sets). Inoltre, è possibile visualizzare e modificare [Proprietà set immagini](/help/assets/manage-digital-assets.md#editing-properties).
 
-In caso di problemi durante la creazione dei set, consultate Immagini e set in [Risoluzione dei problemi di Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
+In caso di problemi durante la creazione dei set, consultate Immagini e set in [Risoluzione dei problemi di Dynamic Medie](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
 ## Caricare risorse per set di immagini {#uploading-assets-in-image-sets}
 
-Per iniziare, carica le risorse immagine per i set di immagini. Gli utenti possono ingrandire le immagini nel Visualizzatore set di immagini. Scegliere quindi con attenzione le immagini. Assicurati che le immagini abbiano una dimensione minima di 2000 pixel per ottenere un dettaglio di zoom ottimale. Dynamic Media è in grado di eseguire il rendering di immagini fino a 25 megapixel ciascuna. Ad esempio, puoi utilizzare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
+Per iniziare, carica le risorse immagine per i set di immagini. Gli utenti possono ingrandire le immagini nel Visualizzatore set di immagini. Scegliere quindi con attenzione le immagini. Assicurati che le immagini abbiano una dimensione minima di 2000 pixel per ottenere un dettaglio di zoom ottimale. Dynamic Medie è in grado di eseguire il rendering di immagini fino a 25 megapixel ciascuna. Ad esempio, puoi utilizzare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
 
 <!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-Consulta [Dynamic Media - Formati di immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media) per un elenco di formati supportati dai set di immagini.
+Consulta [Dynamic Medie - Formati di immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media) per un elenco di formati supportati dai set di immagini.
 
 Per i set di immagini puoi caricare le immagini come faresti [caricare qualsiasi altra risorsa in Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
@@ -120,7 +120,6 @@ Poiché gli utenti possono ingrandire le immagini in Set immagini, accertatevi c
 >
 >* Un colpo nero, marrone e verde della stessa giacca.
 >* Miniatura di colore nero, marrone e verde.
-
 
 ## Crea set di immagini {#creating-image-sets}
 
@@ -144,7 +143,7 @@ Quando crei un set di immagini, Adobe consiglia le seguenti best practice e appl
 | Numero di risorse duplicate per set | Nessun duplicato | 20 |
 | Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
 
-Vedi anche [Limitazioni di Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations.md).
 
 **Per creare i set di immagini:**
 
@@ -164,6 +163,7 @@ Vedi anche [Limitazioni di Dynamic Media](/help/assets/dynamic-media/limitations
    * Nell&#39;angolo superiore sinistro della pagina Editor set di immagini selezionare **[!UICONTROL Aggiungi risorsa]**.
 
    * Al centro della pagina Editor set di immagini, seleziona **[!UICONTROL Toccate per aprire il selettore risorse]**.
+
    Tocca per selezionare le risorse da includere nel set di immagini. Le risorse selezionate presentano un’icona a forma di segno di spunta. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Seleziona]**.
 
    Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e selezionando **[!UICONTROL Ritorno]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e quindi fai clic su **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, seleziona l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]**, o **[!UICONTROL Vista a elenco]**.
@@ -185,6 +185,7 @@ Vedi anche [Limitazioni di Dynamic Media](/help/assets/dynamic-media/limitations
    * Per eliminare un’immagine, selezionala e seleziona **[!UICONTROL Elimina risorsa]**.
 
    * Per applicare un predefinito, fai clic su nell’angolo superiore destro della pagina **[!UICONTROL Predefinito]**, quindi seleziona un predefinito da applicare a tutte le risorse contemporaneamente.
+
    >[!NOTE]
    >
    >Durante la creazione del set di immagini, è possibile modificare la miniatura del set di immagini. In alternativa, puoi consentire a Experience Manager di selezionare automaticamente la miniatura in base alle risorse nel set di immagini. Per selezionare una miniatura, seleziona **[!UICONTROL Cambia miniatura]** sopra il campo Titolo nella pagina Editor set di immagini. Quindi, seleziona un’immagine (puoi passare anche ad altre cartelle per trovare le immagini). Se hai selezionato una miniatura e vuoi che Experience Manager ne generi una dal set di immagini, seleziona **[!UICONTROL Passa a]** **[!UICONTROL Miniatura automatica]**.
@@ -203,17 +204,17 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, esegui *non* 
 
 * Apri le proprietà di una risorsa. Le proprietà indicano i set a cui fa riferimento la risorsa selezionata o un membro di. Per visualizzare l&#39;intero set, selezionate il nome del set.
 
-   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
+  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
 * Da un’immagine inclusa in un qualsiasi set. Seleziona la **[!UICONTROL Set]** per visualizzare i set di cui fa parte la risorsa.
 
-   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
+  ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Dalla ricerca, puoi selezionare **[!UICONTROL Filtro]**, quindi espandi **[!UICONTROL Dynamic Media]** e seleziona **[!UICONTROL Set]**.
+* Dalla ricerca, puoi selezionare **[!UICONTROL Filtro]**, quindi espandi **[!UICONTROL Dynamic Medie]** e seleziona **[!UICONTROL Set]**.
 
-   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando &quot;Inizia con&quot;. Questo criterio di ricerca è diverso da Experience Manager, che si basa sull’utilizzo di &quot;Contiene&quot;. Impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per cercare i set automatizzati.
+  La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando &quot;Inizia con&quot;. Questo criterio di ricerca è diverso da Experience Manager, che si basa sull’utilizzo di &quot;Contiene&quot;. Impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per cercare i set automatizzati.
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
@@ -242,10 +243,9 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, esegui *non* 
    * Per riordinare le risorse, trascina un’immagine in una nuova posizione (seleziona l’icona Riordina per spostare gli elementi).
    * Per ordinare gli elementi in ordine crescente o decrescente, fare clic sull&#39;intestazione della colonna.
    * Per aggiungere una risorsa o aggiornare una risorsa esistente, fai clic sul pulsante **[!UICONTROL Aggiungi risorsa]**. Passa a una risorsa, selezionala, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro della pagina.
-
-      >[!NOTE]
-      >
-      >Se elimini l’immagine utilizzata da Experience Manager per la miniatura sostituendola con un’altra immagine, la risorsa originale viene comunque visualizzata.
+     >[!NOTE]
+     >
+     >Se elimini l’immagine utilizzata da Experience Manager per la miniatura sostituendola con un’altra immagine, la risorsa originale viene comunque visualizzata.
    * Per eliminare una risorsa, selezionala e seleziona **[!UICONTROL Elimina risorsa]**.
    * Per applicare un predefinito, fai clic su nell’angolo superiore destro della pagina **[!UICONTROL Predefinito]**, quindi seleziona un predefinito visualizzatore.
    * Per aggiungere o modificare una miniatura, seleziona l’icona della miniatura accanto a destra della risorsa. Passa alla nuova miniatura o risorsa campione, selezionala, quindi fai clic su **[!UICONTROL Seleziona]**.

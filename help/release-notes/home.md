@@ -2,10 +2,10 @@
 title: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service.
 description: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 3f62a7db9038dabdcca3dd59612e8e26c48b8482
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 100%
+source-wordcount: '642'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Con il modello di rilascio continuo in [!DNL Adobe Experience Manager] as a Clou
 * [Le versioni di funzioni](/help/release-notes/release-notes-cloud/release-notes-current.md) vengono rilasciate con frequenza mensile prevedibile e sono incentrate su nuove funzionalità e innovazioni dei prodotti.
 * [Le versioni di manutenzione](/help/release-notes/maintenance/latest.md) vengono eseguite frequentemente e si concentrano su aggiornamenti di sicurezza, correzioni di bug e miglioramenti delle prestazioni. Ciò assicura che [!DNL Adobe Experience Manager] as a Cloud Service sia sempre aggiornato con eventuali correzioni critiche.
 
-Oltre alla rapidità dell’innovazione, [!DNL Adobe Experience Manager] as a Cloud Service offre anche la flessibilità di visualizzare in anteprima le prossime funzioni con un mese di anticipo rispetto al momento in cui vengono rilasciate in produzione. Questo consente di valutare l’impatto di una versione futura sull’organizzazione sottoponendo a test le funzioni nel proprio ambiente personalizzato e di formare/preparare gli utenti interni con largo anticipo. Se disponi di un componente aggiuntivo AEM, per esempio Forms, puoi selezionarlo nella sezione [impostazioni del programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) per verificare che sia aggiornato.
+Oltre alla rapidità dell’innovazione, [!DNL Adobe Experience Manager] as a Cloud Service offre anche la flessibilità di visualizzare in anteprima le prossime funzioni con un mese di anticipo rispetto al momento in cui vengono rilasciate in produzione. Questo consente di valutare l’impatto di una versione futura sull’organizzazione sottoponendo a test le funzioni nel proprio ambiente personalizzato e di addestrare/preparare gli utenti interni con largo anticipo. Se disponi di un componente aggiuntivo AEM, per esempio Forms, puoi selezionarlo nella sezione [impostazioni del programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) per verificare che sia aggiornato.
 
 >[!NOTE]
 >

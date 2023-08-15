@@ -2,10 +2,10 @@
 title: Creare una richiesta API - Configurazione headless
 description: Scopri come utilizzare l’API GraphQL per la distribuzione headless di contenuti con frammenti di contenuto e API REST di Assets di AEM per gestire i frammenti di contenuto.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 63%
+source-wordcount: '651'
+ht-degree: 58%
 
 ---
 
@@ -57,7 +57,7 @@ GraphiQL è un IDE, incluso nel tuo ambiente AEM e accessibile/visibile dopo ave
 1. L’IDE GraphiQL è un editor di query interno al browser per GraphQL. Puoi utilizzarlo per creare query per recuperare frammenti di contenuto da distribuire in modalità headless come JSON.
    * L’elenco a discesa in alto a destra consente di selezionare l’endpoint.
    * L’ultimo pannello a sinistra elenca le query persistenti (se disponibili)
-   * Il pannello nella parte centrale sinistra ti consente di creare la query.
+   * Il pannello centrale a sinistra consente di creare la query.
    * Nel pannello centrale di destra vengono visualizzati i risultati.
    * L’editor delle query dispone del completamento del codice e dei tasti di scelta rapida per eseguire facilmente la query.
 

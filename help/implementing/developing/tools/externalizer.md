@@ -2,16 +2,16 @@
 title: Esternalizzazione degli URL
 description: Externalizer è un servizio OSGi che consente di trasformare in modo programmatico un percorso di risorsa in un URL esterno e assoluto.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
 
 # Esternalizzazione degli URL {#externalizing-urls}
 
-Nell&#39;AEM, la **Esternalizzatore** è un servizio OSGi che consente di trasformare in modo programmatico un percorso di risorsa (ad esempio, `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) inserendo un prefisso DNS nel percorso.
+Nell&#39;AEM, la **Esternalizzatore** è un servizio OSGi che consente di trasformare in modo programmatico un percorso di risorsa (ad esempio `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) inserendo un prefisso DNS nel percorso.
 
 Poiché un’istanza as a Cloud Service dell’AEM non può conoscere il proprio URL visibile esternamente e poiché a volte è necessario creare un collegamento al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare tali URL esterni e generarli.
 
@@ -44,7 +44,7 @@ Per ignorare `preview` e `publish` , utilizza le variabili di ambiente di Cloud 
 
 ## Configurazione del servizio Externalizer {#configuring-the-externalizer-service}
 
-Il servizio Externalizer ti consente di definire a livello centrale il dominio da utilizzare per prefissare in modo programmatico i percorsi delle risorse. Il servizio Externalizer deve essere utilizzato solo per le applicazioni con un singolo dominio.
+Il servizio Externalizer ti consente di definire a livello centrale il dominio che può essere utilizzato per prefissare in modo programmatico i percorsi delle risorse. Il servizio Externalizer deve essere utilizzato solo per le applicazioni con un singolo dominio.
 
 >[!NOTE]
 >

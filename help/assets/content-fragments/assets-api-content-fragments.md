@@ -3,9 +3,9 @@ title: Supporto dei frammenti di contenuto di Adobe Experience Manager as a Clou
 description: Scopri il supporto per i frammenti di contenuto nell’API Assets HTTP di, un’importante componente della funzione di distribuzione headless dell’AEM.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1784'
 ht-degree: 18%
 
 ---
@@ -236,7 +236,7 @@ Attualmente i modelli che definiscono la struttura di un frammento di contenuto 
 
 Per creare un nuovo frammento di contenuto, è necessario fornire il percorso (archivio interno) del modello.
 
-#### Contenuto associato  {#associated-content}
+#### Contenuto associato {#associated-content}
 
 Il contenuto associato non è attualmente esposto.
 

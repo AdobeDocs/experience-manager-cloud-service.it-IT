@@ -2,9 +2,9 @@
 title: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 description: Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3706'
+source-wordcount: '3705'
 ht-degree: 95%
 
 ---
@@ -192,7 +192,7 @@ Può essere necessario visualizzare i nomi delle pagine localizzate agli utenti 
 
 Il problema legato alla localizzazione del nome della pagina è che molti degli strumenti di localizzazione disponibili sulla piattaforma AEM dipendono dalla corrispondenza dei nomi delle pagine tra diverse lingue per mantenere sincronizzato il contenuto.
 
-Per risolvere questo problema, puoi utilizzare la proprietà `sling:alias`. Puoi aggiungere `sling:alias` come proprietà a qualsiasi risorsa per consentire l’utilizzo di un nome di alias della risorsa. Nell’esempio precedente, avrai:
+Il `sling:alias` La proprietà ti permette di avere la nostra torta e mangiarla troppo. Puoi aggiungere `sling:alias` come proprietà a qualsiasi risorsa per consentire l’utilizzo di un nome di alias della risorsa. Nell’esempio precedente, avrai:
 
 * Una pagina nel JCR in:
   `…/es/home`

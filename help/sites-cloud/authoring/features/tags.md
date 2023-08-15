@@ -2,10 +2,10 @@
 title: Utilizzo dei tag
 description: I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 79%
+source-wordcount: '562'
+ht-degree: 76%
 
 ---
 
@@ -47,7 +47,7 @@ Analogamente a quanto avviene per la pubblicazione e l’annullamento della pubb
 
 * Consente di attivare singoli tag.
 
-  Come per le pagine, è necessario attivare i nuovi tag creati prima che siano disponibili nell’ambiente di pubblicazione.
+  Proprio come per le pagine, i tag appena creati devono essere attivati prima di diventare disponibili nell’ambiente di pubblicazione.
 
 >[!NOTE]
 >

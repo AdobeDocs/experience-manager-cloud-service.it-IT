@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina
 description: Scopri come definire le proprietà necessarie per gestire una pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 80%
+source-wordcount: '2279'
+ht-degree: 78%
 
 ---
 
@@ -76,7 +76,7 @@ Le proprietà sono distribuite su più schede.
 
 * **URL personalizzato**
 
-   * Permette di inserire un URL personalizzato per questa pagina, che può consentirti di avere un URL più breve e/o più significativo.
+   * Consente di immettere un URL personalizzato per questa pagina, che può consentire di avere un URL più breve e/o più espressivo.
    * Ad esempio, se l’URL personalizzato è impostato su `welcome` per la pagina identificata dal percorso `/v1.0/startpage` del sito web `http://example.com`, `http://example.com/welcome` sarà l’URL personalizzato di `http://example.com/content/v1.0/startpage`.
 
   >[!CAUTION]
@@ -104,7 +104,7 @@ Le proprietà sono distribuite su più schede.
    * **Alias**: specifica un alias da utilizzare per la pagina
       * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
       * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
-      * Le pagine a cui si accede tramite alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
+      * Le pagine accessibili da alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
       * Per maggiori dettagli, consulta [Nomi di pagina localizzati nelle best practice per la gestione di SEO e URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configurazione**

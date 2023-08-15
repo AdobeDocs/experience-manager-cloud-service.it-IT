@@ -4,10 +4,10 @@ description: Ottieni un’introduzione al riutilizzo dei contenuti con le potent
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2719'
-ht-degree: 95%
+source-wordcount: '2714'
+ht-degree: 92%
 
 ---
 
@@ -114,14 +114,14 @@ MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse op
 
 * **Crea sito** (**Sites**)
 
-   * MSM consente di gestire più siti web che condividono contenuti comuni. Ad esempio, i siti web sono spesso disponibili per il pubblico internazionale in modo che la maggior parte dei contenuti sia comune in tutti i Paesi, con un sottoinsieme di contenuti specifici per il singolo Paese. MSM consente di [creare Live Copy che aggiornano automaticamente uno o più siti in base al sito sorgente](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Questo consente anche di applicare una struttura di base comune, utilizzare i contenuti comuni tra più siti, mantenere un aspetto comune e ottimizzare gli sforzi per gestire i contenuti che differiscono effettivamente tra i siti. La creazione di un sito in questo modo:
+   * MSM consente di gestire più siti web che condividono contenuti comuni. Ad esempio, i siti web sono spesso disponibili per il pubblico internazionale in modo che la maggior parte dei contenuti sia comune in tutti i Paesi, con un sottoinsieme di contenuti specifici per il singolo Paese. MSM consente di: [crea Live Copy che aggiornano automaticamente uno o più siti in base al sito sorgente](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Questo consente anche di applicare una struttura di base comune, utilizzare i contenuti comuni tra più siti, mantenere un aspetto comune e ottimizzare gli sforzi per gestire i contenuti che differiscono effettivamente tra i siti. La creazione di un sito in questo modo:
       * Richiede una configurazione blueprint predefinita per specificare la sorgente.
       * Crea una Live Copy della sorgente (predefinita).
       * Fornisce all’utente il pulsante di **Rollout**.
 
 * **Crea Live Copy** (**Sites**)
 
-   * MSM consente di [creare una Live Copy ad hoc (una tantum) di una singola pagina o sottosezione di un sito web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Ad esempio, duplicando un ramo secondario per fornire informazioni su una versione nuova/aggiornata di un prodotto. Creazione di una Live Copy in questo modo:
+   * MSM consente di: [crea una Live Copy ad hoc (una tantum) di una singola pagina o sottosezione di un sito web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Ad esempio, duplicando un ramo secondario per fornire informazioni su una versione nuova/aggiornata di un prodotto. Creazione di una Live Copy in questo modo:
       * Crea una Live Copy ad-hoc (non è richiesta alcuna configurazione blueprint).
       * Può essere utilizzata per creare (immediatamente) una Live Copy di qualsiasi pagina/ramo.
       * Richiede **Sincronizza** (non fornisce il pulsante di **Rollout**).
@@ -136,11 +136,11 @@ MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse op
 
 * **Panoramica delle Live Copy** (**Sites**)
 
-   * Questa console consente di [visualizzare e gestire la blueprint e le relative Live Copy.](live-copy-overview.md)
+   * Questa console consente di [visualizza e gestisci la blueprint e le relative Live Copy.](live-copy-overview.md)
 
 * **Blueprint** (**Strumenti** - **Sites**)
 
-   * Questa console consente di [creare e gestire le configurazioni della blueprint.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Questa console consente di [crea e gestisci le configurazioni blueprint.](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
@@ -245,7 +245,7 @@ Una Live Copy è nota come Live Copy sovrapposta quando viene creata come figlia
 
 ### Sorgente, blueprint e configurazioni di blueprint {#source-blueprints-and-blueprint-configurations}
 
-Qualsiasi pagina o ramo di pagine può essere utilizzata come sorgente di una Live Copy. Tuttavia, MSM consente anche di definire una configurazione blueprint che specifica un percorso sorgente. I vantaggi dell’utilizzo di una configurazione blueprint sono i seguenti:
+Qualsiasi pagina o ramo di pagine può essere utilizzata come sorgente di una Live Copy. Tuttavia, MSM ti consente anche di definire una configurazione blueprint che specifica un percorso sorgente. I vantaggi dell’utilizzo di una configurazione blueprint sono i seguenti:
 
 * Consenti all&#39;autore di utilizzare il **Rollout** su una blueprint. ovvero di inviare in modo esplicito modifiche a Live Copy che ereditano da questa blueprint.
 * Consenti all&#39;autore di utilizzare **Crea sito**. Questo consente all’utente di selezionare facilmente le lingue e configurare la struttura della Live Copy.

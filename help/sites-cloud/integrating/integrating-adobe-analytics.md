@@ -4,10 +4,10 @@ description: Scopri come integrare Adobe Analytics con AEM as a Cloud Service ut
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 85%
+source-wordcount: '573'
+ht-degree: 82%
 
 ---
 

@@ -2,10 +2,10 @@
 title: Headful e headless in AEM
 description: I progetti AEM possono essere implementati in un modello headful e headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 89%
+source-wordcount: '1013'
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ In un modello headful o full-stack, il contenuto viene gestito nell’archivio A
 
 In un modello headless, il contenuto viene gestito nell’archivio AEM, ma distribuito tramite API come REST e GraphQL a un altro sistema per eseguire il rendering del contenuto per l’esperienza utente. In questo modello, il contenuto viene creato in AEM, ma la sua presentazione, distribuzione e attribuzione di stile avvengono su un’altra piattaforma.
 
-Le applicazioni a pagina singola (SPA) sono spesso la destinazione del contenuto headless consegnato da AEM. Tuttavia, queste SPA non devono essere del tutto esterne ad AEM. AEM consente di decidere in che misura le SPA sono integrate in AEM. Prendiamo un esempio.
+Le applicazioni a pagina singola (SPA) sono spesso la destinazione del contenuto headless consegnato da AEM. Tuttavia, non è necessario che questi SPA siano completamente esterni all&#39;AEM. L’AEM consente di decidere in che misura l’SPA viene integrato nell’AEM. Prendiamo un esempio.
 
 ## Esempio di negozio web {#web-shop-example}
 

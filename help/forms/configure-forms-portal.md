@@ -2,9 +2,9 @@
 title: Come creare un portale Forms su una pagina Experience Manager Sites
 description: Scopri come creare un portale Forms e utilizzare i componenti core predefiniti in una pagina di AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1837'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ In un tipico scenario di distribuzione di un portale incentrato sui moduli, lo s
 
 Tali scenari spesso causano problemi di gestione e ritardi nella produzione. Ad esempio, se nell&#39;archivio è disponibile una versione più recente di un modulo, è necessario sostituire il modulo sul livello Web, modificare l&#39;applicazione Web e ridistribuire il modulo sul sito pubblico. La ridistribuzione dell’applicazione web potrebbe causare tempi di inattività del server. In genere, il tempo di inattività del server è un’attività pianificata e pertanto le modifiche non possono essere inviate istantaneamente al sito pubblico.
 
-AEM Forms fornisce componenti portale che riducono i costi generali di gestione e i ritardi di produzione. I componenti consentono agli sviluppatori web di creare e personalizzare un portale Forms su siti web creati con Adobe Experience Manager (AEM).
+AEM Forms fornisce componenti portale che riducono i costi generali di gestione e i ritardi di produzione. I componenti consentono agli sviluppatori Web di creare e personalizzare un portale Forms nei siti Web creati con Adobe Experience Manager (AEM).
 
 I componenti del portale moduli consentono di aggiungere le funzionalità seguenti:
 
@@ -88,7 +88,7 @@ Per importare componenti predefiniti di Forms Portal su AEM Forms as a Cloud Ser
 
 Prima di eseguire questi passaggi, assicurati di disporre di un account di archiviazione Azure e di una chiave di accesso per autorizzare l’accesso a [!DNL Azure] account di archiviazione.
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Archiviazione Azure]**.
+1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
 1. Seleziona una cartella per creare la configurazione e tocca **[!UICONTROL Crea]**.
 1. Specifica un titolo per la configurazione nella **[!UICONTROL Titolo]** campo.
 1. Specifica il nome del [!DNL Azure] account di archiviazione in **[!UICONTROL Account di archiviazione Azure]** campo.

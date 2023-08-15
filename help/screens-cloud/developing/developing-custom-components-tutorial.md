@@ -2,9 +2,9 @@
 title: Sviluppo di un componente personalizzato per Screens as a Cloud Service
 description: Il seguente tutorial illustra i passaggi necessari per creare un componente personalizzato per AEM Screens. AEM Screens riutilizza molti modelli di progettazione e tecnologie esistenti di altri prodotti AEM. Il tutorial evidenzia differenze e considerazioni speciali durante lo sviluppo per AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2107'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ Per completare questa esercitazione, sono necessari i seguenti elementi:
 
 1. Ambiente di sviluppo locale
 
-I passaggi del tutorial e le schermate vengono eseguiti utilizzando **CRXDE Lite**. È inoltre possibile utilizzare gli IDE per completare l&#39;esercitazione. Ulteriori informazioni sull&#39;utilizzo di un IDE per sviluppare [con AEM si trova qui.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en)
+I passaggi del tutorial e le schermate vengono eseguiti utilizzando **CRXDE Liti**. È inoltre possibile utilizzare gli IDE per completare l&#39;esercitazione. Ulteriori informazioni sull&#39;utilizzo di un IDE per sviluppare [con AEM si trova qui.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en)
 
 
 ## Configurazione del progetto {#project-setup}
@@ -65,9 +65,9 @@ Il codice sorgente di un progetto Screens viene in genere gestito come progetto 
    >
    >In questa esercitazione non viene scritto alcun codice Java™. Se è necessaria una logica di business più complessa, è possibile creare e distribuire Java™ di back-end utilizzando il bundle Java™ di base.
 
-   ![Rappresentazione del codice ui.apps in CRXDE Lite](/help/screens-cloud/developing/assets/uipps-contents.png)
+   ![Rappresentazione del codice ui.apps in CRXDE Liti](/help/screens-cloud/developing/assets/uipps-contents.png)
 
-   Rappresentazione del codice ui.apps in CRXDE Lite
+   Rappresentazione del codice ui.apps in CRXDE Liti
 
    Il **`helloworld`** il componente è solo un segnaposto. Nel corso dell’esercitazione, viene aggiunta una funzionalità che consente all’autore di aggiornare il messaggio visualizzato dal componente.
 
@@ -132,7 +132,7 @@ AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente va
    I componenti Screens richiedono due rendering diversi a seconda di quale [modalità di authoring](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=en#page-modes) è in uso:
 
    1. **Produzione**: modalità Anteprima o Pubblicazione (wcmmode=disabled)
-   1. **Modifica**: utilizzato per tutte le altre modalità di authoring, ovvero modifica, progettazione, scaffolding, sviluppatore...
+   1. **Modifica**: utilizzato per tutte le altre modalità di authoring, ad esempio modifica, progettazione, scaffolding, sviluppatore...
 
    `helloworld.html`funge da switch, controllando quale modalità di authoring è attiva e reindirizzando a un altro script HTL. Una convenzione comune utilizzata dai componenti Screens consiste nell’avere `edit.html` script per la modalità di modifica e un `production.html` script per la modalità di produzione.
 
@@ -380,7 +380,7 @@ AEM Screens utilizza [Modelli di pagina statici](https://experienceleague.adobe.
 
 Di seguito viene creata una pagina Progettazione dell&#39;esecuzione di We.Retail in cui sono memorizzate tutte le configurazioni specifiche del progetto.
 
-1. In entrata **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs`, passa a `/apps/settings/wcm/designs`
+1. In entrata **CRXDE Liti** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs`, passa a `/apps/settings/wcm/designs`
 1. Crea un nodo sotto la cartella delle progettazioni, denominato `we-retail-run` con un tipo di `cq:Page`.
 1. Sotto `we-retail-run` , aggiungere un altro nodo denominato `jcr:content` di tipo `nt:unstructured`. Aggiungi le seguenti proprietà alla `jcr:content` nodo:
 
@@ -437,7 +437,7 @@ Il componente Hello World deve essere utilizzato su un canale di sequenza. Per t
 
    ![2018-04-30_at_5_53 pm](assets/2018-04-30_at_5_53pm.png)
 
-1. In entrata **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par`, passa a `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. Osserva `components` La proprietà ora include `group:Screens`, `group:We.Retail Run - Content`.
+1. In entrata **CRXDE Liti** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par`, passa a `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. Osserva `components` La proprietà ora include `group:Screens`, `group:We.Retail Run - Content`.
 
    ![Configurazione del progetto in /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1_14pm.png)
 

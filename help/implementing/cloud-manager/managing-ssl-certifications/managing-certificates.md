@@ -2,10 +2,10 @@
 title: Gestione dei certificati SSL
 description: Scopri come controllare lo stato dei certificati SSL e come modificarli, sostituirli, aggiornarli ed eliminarli con Cloud Manager.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: aeb407f8971dabb4e86203b3cee82318330638b0
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 76%
+source-wordcount: '644'
+ht-degree: 74%
 
 ---
 

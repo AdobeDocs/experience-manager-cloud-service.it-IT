@@ -2,16 +2,16 @@
 title: Experience Manager [!DNL Forms] Elaborazione batch di comunicazioni as a Cloud Service
 description: Come si creano comunicazioni personalizzate e orientate al brand?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1692'
 ht-degree: 2%
 
 ---
 
 # Utilizza elaborazione batch
 
-Le comunicazioni consentono di creare, assemblare e distribuire comunicazioni personalizzate e orientate al marchio, ad esempio corrispondenza aziendale, documenti, rendiconti, lettere per l&#39;elaborazione delle richieste di rimborso, note sui benefit, lettere per l&#39;elaborazione delle richieste di rimborso, fatture mensili e kit di benvenuto. È possibile utilizzare le API di comunicazione per combinare un modello (XFA o PDF) con i dati del cliente per generare documenti in formato PDF, PS, PCL, DPL, IPL e ZPL.
+Le comunicazioni consentono di creare, assemblare e distribuire comunicazioni personalizzate e orientate al marchio, ad esempio corrispondenza commerciale, documenti, rendiconti, lettere di elaborazione delle richieste, avvisi sui benefit, lettere di elaborazione delle richieste, fatture mensili e kit di benvenuto. È possibile utilizzare le API di comunicazione per combinare un modello (XFA o PDF) con i dati del cliente per generare documenti in formato PDF, PS, PCL, DPL, IPL e ZPL.
 
 Le comunicazioni forniscono API per la generazione di documenti su richiesta e pianificata. È possibile utilizzare API sincrone per API batch e on-demand (API asincrone) per la generazione pianificata dei documenti:
 
@@ -87,7 +87,7 @@ Nell’archiviazione di Microsoft Azure, crea [container](https://docs.microsoft
 
 La configurazione Cloud connette l’istanza Experience Manager all’archiviazione di Microsoft Azure. Per creare una configurazione Cloud:
 
-1. Vai a Strumenti > Cloud Services > Archiviazione Azure
+1. Vai a Strumenti > Cloud Service > Archiviazione Azure
 1. Apri una cartella per ospitare la configurazione e fai clic su Crea. Puoi utilizzare la cartella Globale o crearne una.
 1. Specifica il nome della configurazione e le credenziali per la connessione al servizio. È possibile [recuperare queste credenziali dal portale di archiviazione di Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
 1. Fai clic su Crea.
@@ -157,7 +157,6 @@ La risposta della richiesta di stato contiene la sezione relativa allo stato. Fo
 >
 >* Quando si richiedono più formati PRINT, lo stato contiene più voci. Ad esempio PRINT/ZPL, PRINT/IPL.
 >* Un processo batch non legge tutti i record contemporaneamente, ma continua a leggere e ad incrementare il numero di record. Lo stato restituisce quindi -1 finché tutti i record non sono stati letti.
-
 
 ### Visualizza documenti generati {#view-generated-documents}
 

@@ -3,9 +3,9 @@ title: Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail e u
 description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti tramite e-sign, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '7209'
+source-wordcount: '7204'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
     -->
 
 * **[!UICONTROL Assegnatario]** > **[!UICONTROL Assegna opzioni]**: specifica il metodo per assegnare l’attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selettore partecipanti oppure assegnare l&#39;attività a un utente o a un gruppo AEM specifico.
-* **[!UICONTROL Selettore partecipanti]**: l’opzione è disponibile quando **[!UICONTROL Dinamicamente per un utente o un gruppo]** nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, consulta [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato di Adobe Experience Manager Dynamic Participant.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL Selettore partecipanti]**: l’opzione è disponibile quando **[!UICONTROL Dinamicamente per un utente o un gruppo]** nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, consulta [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio Partecipante dinamico Adobe Experience Manager personalizzato.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL Partecipanti]**: campo disponibile quando **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata in **[!UICONTROL Selettore partecipanti]** campo. Il campo consente di selezionare utenti o gruppi per l&#39;opzione RandomParticipantChooser.
 
@@ -334,7 +334,7 @@ Il passaggio Richiama servizio modello dati modulo presenta i campi elencati di 
 
 * **[!UICONTROL Percorso modello dati modulo]**: sfoglia e seleziona un modello dati modulo presente sul server.
 
-* **[!UICONTROL Errori e convalide]**: l’opzione ti consente di acquisire messaggi di errore e specificare le opzioni di convalida per i dati recuperati e inviati alle origini dati. Con queste modifiche, puoi garantire che i dati passati al passaggio Richiama servizio modello dati modulo siano conformi ai vincoli di dati definiti dall’origine dati. Per ulteriori dettagli, consulta [Convalida automatica dei dati di input](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL Errori e convalide]**: l’opzione ti consente di acquisire i messaggi di errore e specificare le opzioni di convalida per i dati recuperati e inviati alle origini dati. Con queste modifiche, puoi garantire che i dati passati al passaggio Richiama servizio modello dati modulo siano conformi ai vincoli di dati definiti dall’origine dati. Per ulteriori dettagli, consulta [Convalida automatica dei dati di input](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL Livello di convalida]**: sono disponibili tre categorie di convalide: Base, Completo e Disattivato:
 

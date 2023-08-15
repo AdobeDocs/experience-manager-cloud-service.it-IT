@@ -1,9 +1,9 @@
 ---
 title: Dashboard di audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO tramite un’interfaccia dashboard chiara e informativa.
-source-git-commit: 7a8e6c3d226b02c65943629d0df196252218aa3c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '844'
 ht-degree: 17%
 
 ---
@@ -59,7 +59,7 @@ Il **Approfondimenti** fornisce una breve descrizione dei consigli utilizzabili 
 
 Tocca o fai clic su **Mostra altro** per aprire la dashboard completa.
 
-In **Approfondimenti e raccomandazioni** Questa sezione contiene un elenco dettagliato di consigli actionable con un chiaro indicatore di valore legato ai guadagni prevedibili in termini di prestazioni, insieme alla percentuale di pagine interessate. Ciò ti consente di assegnare facilmente la priorità a questi consigli per i team.
+In **Approfondimenti e raccomandazioni** Questa sezione contiene un elenco dettagliato di consigli actionable con un chiaro indicatore di valore legato ai guadagni prevedibili in termini di prestazioni, insieme alla percentuale di pagine interessate. Questo consente di assegnare facilmente la priorità a questi consigli per i team.
 
 ![Approfondimenti e raccomandazioni](assets/insights-recommendations.png)
 
@@ -105,7 +105,7 @@ Il **Problemi** la scheda riepiloga eventuali problemi di prestazioni rilevati n
 
 Tocca o fai clic su **Mostra altro** per aprire la dashboard completa.
 
-In **Approfondimenti e raccomandazioni** Questa sezione contiene un elenco più dettagliato dei consigli actionable con un chiaro indicatore di valore legato ai guadagni prevedibili in termini di prestazioni, insieme alla percentuale di pagine interessate. Ciò ti consente di assegnare facilmente la priorità a questi consigli per i team.
+In **Approfondimenti e raccomandazioni** Questa sezione contiene un elenco più dettagliato dei consigli actionable con un chiaro indicatore di valore legato ai guadagni prevedibili in termini di prestazioni, insieme alla percentuale di pagine interessate. Questo consente di assegnare facilmente la priorità a questi consigli per i team.
 
 ![Approfondimenti e raccomandazioni](assets/insights-recommendations.png)
 

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2930'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 I microservizi per le risorse forniscono un’elaborazione scalabile e resiliente delle risorse utilizzando applicazioni native per il cloud (denominate anche processi di lavoro). Adobe gestisce i servizi per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione.
 
-I microservizi per le risorse consentono di elaborare una [ampia gamma di tipi di file](/help/assets/file-format-support.md) con un maggior numero di formati predefiniti rispetto alle versioni precedenti di [!DNL Experience Manager]. Ad esempio, è ora possibile estrarre le miniature dai formati PSD e PSB, ma in precedenza richiedevano soluzioni di terze parti come [!DNL ImageMagick].
+I microservizi per le risorse consentono di elaborare una [ampia gamma di tipi di file](/help/assets/file-format-support.md) che includono più formati pronti all’uso di quanto sia possibile con le versioni precedenti di [!DNL Experience Manager]. Ad esempio, è ora possibile estrarre le miniature dai formati PSD e PSB, ma in precedenza richiedevano soluzioni di terze parti come [!DNL ImageMagick].
 
 L’elaborazione delle risorse dipende dalla configurazione in **[!UICONTROL Profili elaborazione]**. In questo Experience Manager viene fornita una configurazione di base predefinita che consente agli amministratori di aggiungere una configurazione di elaborazione delle risorse più specifica. Gli amministratori possono creare, gestire e modificare le configurazioni dei flussi di lavoro di post-elaborazione, inclusa la personalizzazione facoltativa. La personalizzazione dei flussi di lavoro consente agli sviluppatori di estendere l’offerta predefinita.
 

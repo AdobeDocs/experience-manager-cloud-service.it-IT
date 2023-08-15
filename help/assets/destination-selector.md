@@ -3,15 +3,15 @@ title: Selettore di destinazione per AEM as a Cloud Service
 description: Utilizza il selettore di destinazione AEM per mostrare e selezionare le risorse da utilizzare come copia della risorsa originale.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 35%
+source-wordcount: '1902'
+ht-degree: 36%
 
 ---
 
 
-# Selettore di destinazione micro-front-end {#Overview}
+# Selettore di destinazione micro front-end {#Overview}
 
 Il selettore di destinazione Micro-Frontend fornisce all’interno dell’applicazione un’interfaccia utente che si integra facilmente con [!DNL Experience Manager Assets as a Cloud Service] archivio. È possibile cercare o selezionare la cartella appropriata all&#39;interno del [!DNL Experience Manager Assets as a Cloud Service] archiviare e caricare le risorse dall’applicazione.
 
@@ -192,7 +192,7 @@ Puoi utilizzare le proprietà del Selettore di destinazione per personalizzare i
 | *hasMore* | booleano | No | | Quando l’applicazione ha più contenuto da visualizzare, puoi utilizzare questa proprietà per aggiungere un caricatore che carica il contenuto per renderlo visibile nell’applicazione. È un indicatore che indica che il caricamento del contenuto è in corso. |
 | *orgName* | booleano | No | | È il nome dell’organizzazione (probabilmente orgID) associata all’AEM |
 | *initRepoID* | stringa | No | | Si tratta del percorso dell’archivio delle risorse che desideri utilizzare in una visualizzazione iniziale predefinita |
-| *onCreateFolder* | stringa | No | | Il `onCreateFolder` consente di aggiungere un&#39;icona che aggiunge una nuova cartella nell&#39;applicazione. |
+| *onCreateFolder* | stringa | No | | Il `onCreateFolder` consente di aggiungere un’icona che aggiunge una nuova cartella nell’applicazione. |
 | *onConfirm* | stringa | No | | Si tratta di un callback quando si preme il pulsante di conferma. |
 | *confirmDisabled* | stringa | No | | Questa proprietà controlla l’interruttore del pulsante di conferma. |
 | *viewType* | stringa | No | | Il `viewType` viene utilizzata per specificare le visualizzazioni utilizzate per visualizzare le risorse. |
@@ -208,7 +208,7 @@ Puoi definire il Selettore di destinazione [proprietà](#destination-selector-pr
 
 ### Esempio 1: creare una cartella nel selettore di destinazione
 
-Il selettore delle destinazioni ti consente di creare una nuova cartella per caricare, spostare o copiare le risorse nella posizione specifica.
+Il selettore delle destinazioni consente di creare una nuova cartella per caricare, spostare o copiare le risorse nella posizione specifica.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -241,7 +241,7 @@ Una volta configurato il Selettore di destinazione, sei autenticato per utilizza
 
 ### Barra di ricerca {#search-bar}
 
-Il selettore delle destinazioni consente di eseguire una ricerca full-text delle risorse all’interno dell’archivio selezionato. Ad esempio, se digiti la parola chiave `wave` nella barra di ricerca, vengono mostrate tutte le risorse con la parola chiave `wave` menzionata in una qualsiasi delle proprietà dei metadati.
+Il selettore di destinazione consente di eseguire una ricerca full-text delle risorse all’interno dell’archivio selezionato. Ad esempio, se digiti la parola chiave `wave` nella barra di ricerca, vengono mostrate tutte le risorse con la parola chiave `wave` menzionata in una qualsiasi delle proprietà dei metadati.
 
 ### Ordinamento {#sorting}
 
@@ -257,7 +257,7 @@ Il selettore di destinazione consente inoltre di visualizzare i dati dell’arch
 
 ### Crea una nuova cartella {#create-new-folder}
 
-Consente di creare una nuova cartella nella cartella di destinazione del [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+Ti consente di creare una nuova cartella nella cartella di destinazione del [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### Tipi di visualizzazione {#types-of-view}
 

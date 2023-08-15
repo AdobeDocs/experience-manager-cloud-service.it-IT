@@ -2,10 +2,10 @@
 title: Modelli per frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuti strutturati.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2901'
-ht-degree: 89%
+source-wordcount: '2898'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
    Una volta aperto, l’editor modelli mostra:
 
    * a sinistra: campi già definiti
-   * a destra: **Tipi di dati** disponibili per la creazione di campi, oltre alle **Proprietà** da utilizzare dopo la creazione.
+   * a destra: **Tipi di dati** disponibili per la creazione di campi, oltre alle **Proprietà** da utilizzare dopo la creazione
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti d
 
   >[!CAUTION]
   >
-  >Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), qualsiasi **Univoco** I vincoli devono essere rimossi da tutti i tipi di dati utilizzati nei rispettivi modelli per frammenti di contenuto.
+  >Se desideri utilizzare MSM (che crea copie di frammenti di contenuto), qualsiasi vincolo **Univoco** deve essere rimosso da tutti i tipi di dati utilizzati nei rispettivi modelli per frammenti di contenuto.
 
 * Vedi **[Riferimento contenuto](#content-reference)** per ulteriori dettagli su quel tipo di dati specifico e sulle relative proprietà.
 

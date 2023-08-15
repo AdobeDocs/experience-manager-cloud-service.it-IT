@@ -1,46 +1,46 @@
 ---
 title: Utilizzo di CRXDE Lite
-description: CRXDE Lite fa parte del modulo quickstart dell’AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
+description: CRXDE Liti fa parte del modulo quickstart dell’AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1685'
 ht-degree: 1%
 
 ---
 
 # Utilizzo di CRXDE Lite {#using-crxde-lite}
 
-CRXDE Lite fa parte del modulo quickstart dell’AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser. Con CRXDE Lite puoi modificare file, cartelle, nodi e proprietà. L’intero archivio è accessibile da questa interfaccia di facile utilizzo.
+CRXDE Liti fa parte del modulo quickstart dell’AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser. Con CRXDE Liti puoi modificare file, cartelle, nodi e proprietà. L’intero archivio è accessibile da questa interfaccia di facile utilizzo.
 
 >[!NOTE]
 >
->CRXDE Lite è disponibile solo negli ambienti di sviluppo locali. Non è disponibile nell’AEM as a Cloud Service.
+>CRXDE Liti è disponibile solo negli ambienti di sviluppo locali. Non è disponibile nell’AEM as a Cloud Service.
 
-## Guida introduttiva di CRXDE Lite {#getting-started-with-crxde-lite}
+## Guida introduttiva di CRXDE Liti {#getting-started-with-crxde-lite}
 
-Per iniziare a utilizzare CRXDE Lite:
+Per iniziare a utilizzare CRXDE Liti:
 
 1. Avvia rapidamente lo sviluppo locale dell’AEM.
 1. Nel browser, apri l’URL `https://<host>:<port>/crx/de`.
 1. Immetti il **nome utente** e **password**.
 1. Fai clic su **OK**.
 
-L’interfaccia utente di CRXDE Lite viene visualizzata come segue nel browser:
+L’interfaccia utente di CRXDE Liti viene visualizzata come segue nel browser:
 
-![Interfaccia CRXDE Lite](assets/crxde-lite.png)
+![Interfaccia CRXDE Liti](assets/crxde-lite.png)
 
 >[!TIP]
 >
->Puoi anche accedere a CRXDE Lite dal menu AEM. Dal menu principale, seleziona **Strumenti** -> **Generale** -> **CRXDE Lite**.
+>Puoi anche accedere a CRXDE Liti dal menu AEM. Dal menu principale, seleziona **Strumenti** -> **Generale** -> **CRXDE Liti**.
 
 ## Panoramica dell’interfaccia utente {#overview-of-the-user-interface}
 
-L&#39;interfaccia utente di CRXDE Lite ha molte parti e molte funzioni.
+L&#39;interfaccia utente di CRXDE Liti ha molte parti e molte funzioni.
 
 ### Barra del commutatore superiore {#top-switcher-bar}
 
-La barra di commutazione superiore consente di passare rapidamente da CRXDE Lite a [Gestione pacchetti.](package-manager.md)
+La barra di commutazione superiore consente di passare rapidamente da CRXDE Liti a [Gestione pacchetti.](package-manager.md)
 
 ### Widget percorso nodo {#node-path-widget}
 
@@ -89,7 +89,7 @@ Le autorizzazioni sono suddivise nelle seguenti categorie.
 
 >[!NOTE]
 >
-Per poter visualizzare le informazioni sul controllo di accesso, l’utente connesso a CRXDE Lite deve disporre dei diritti per la lettura delle voci ACL.
+Per poter visualizzare le informazioni sul controllo di accesso, l’utente connesso a CRXDE Liti deve disporre dei diritti per la lettura delle voci ACL.
 
 ### Scheda Replica {#replication-tab}
 
@@ -167,9 +167,9 @@ Il **Preferenze** Questa opzione può essere utilizzata per impostare la lingua 
 
 ## Creazione di una cartella {#creating-a-folder}
 
-Per creare una cartella con CRXDE Lite:
+Per creare una cartella con CRXDE Liti:
 
-1. Apri CRXDE Lite nel browser.
+1. Apri CRXDE Liti nel browser.
 1. Nel riquadro di spostamento fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare la nuova cartella e selezionare **Crea...**, quindi **Crea cartella...**.
 
 1. Inserisci la cartella **Nome** e fai clic su **OK**.
@@ -178,9 +178,9 @@ Per creare una cartella con CRXDE Lite:
 
 ## Creazione di un nodo {#creating-a-node}
 
-Per creare un nodo con CRXDE Lite:
+Per creare un nodo con CRXDE Liti:
 
-1. Apri CRXDE Lite nel browser.
+1. Apri CRXDE Liti nel browser.
 1. In [**Riquadro Exploerer**,](#explorer-pane) fare clic con il pulsante destro del mouse sul nodo in cui si desidera creare il nuovo nodo, quindi selezionare **Crea**, quindi **Crea nodo**.
 1. Inserisci il **Nome** e seleziona la **Tipo**.
 1. Fai clic su **OK**.
@@ -196,9 +196,9 @@ La convalida relativa alla possibilità che il nodo appena creato sia consentito
 
 ## Creazione di una proprietà {#creating-a-property}
 
-Per creare una proprietà con CRXDE Lite:
+Per creare una proprietà con CRXDE Liti:
 
-1. Apri CRXDE Lite nel browser.
+1. Apri CRXDE Liti nel browser.
 1. In [**Riquadro Exploerer**,](#explorer-pane) seleziona il nodo in cui desideri aggiungere la nuova proprietà.
 1. In [**Scheda Proprietà**](#properties-tab) nel riquadro inferiore, immettere **Nome**, il **Tipo** e **Valore**.
 1. Clic **Aggiungi**.
@@ -206,9 +206,9 @@ Per creare una proprietà con CRXDE Lite:
 
 ## Creazione di un file {#creating-a-file}
 
-Per creare un nuovo file con CRXDE Lite:
+Per creare un nuovo file con CRXDE Liti:
 
-1. Apri CRXDE Lite nel browser.
+1. Apri CRXDE Liti nel browser.
 1. In [**Riquadro Exploerer**,](#explorer-pane) fai clic con il pulsante destro del mouse sul componente in cui desideri creare il file e seleziona (crea file) **Crea**, quindi **Crea file**.
 1. Immetti il file **Nome** inclusa la sua estensione.
 1. Fai clic su **OK**.
@@ -218,11 +218,11 @@ Per creare un nuovo file con CRXDE Lite:
 
 ## Esportazione e importazione di tipi di nodo {#exporting-and-importing-node-types}
 
-Con CRXDE Lite è possibile importare e/o esportare le definizioni dei tipi di nodo in [Notazione CND (Node Type Definition) e spazio dei nomi compatto](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Con CRXDE Liti è possibile importare e/o esportare le definizioni dei tipi di nodo in [Notazione CND (Node Type Definition) e spazio dei nomi compatto](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
-Per esportare la definizione di un tipo di nodo in CRXDE Lite:
+Per esportare la definizione di un tipo di nodo in CRXDE Liti:
 
-1. Apri CRXDE Lite nel browser.
+1. Apri CRXDE Liti nel browser.
 1. Seleziona il nodo richiesto.
 1. Seleziona **Strumenti** allora **Esporta tipo di nodo**.
 1. La definizione viene visualizzata in notazione CND in una nuova scheda nel browser.
@@ -230,7 +230,7 @@ Per esportare la definizione di un tipo di nodo in CRXDE Lite:
 
 Per importare una definizione di tipo di nodo:
 
-1. Apri CRXDE Lite nel browser.
+1. Apri CRXDE Liti nel browser.
 1. Seleziona **Strumenti** allora **Importa tipo di nodo**.
 1. Viene visualizzata una nuova scheda in [**Modifica riquadro**](#edit-pane) etichettato **Importa tipo di nodo**.
 1. Immetti la notazione CND per la definizione nella casella di testo della **Importa tipo di nodo** scheda.
@@ -239,9 +239,9 @@ Per importare una definizione di tipo di nodo:
 
 ## Registrazione {#logging}
 
-Con CRXDE Lite è possibile visualizzare il file `error.log` che si trova nel file system in `<aem-install-dir>/crx-quickstart/logs` e filtrarlo con il livello di registro appropriato. Procedere come segue:
+Con CRXDE Liti è possibile visualizzare il file `error.log` che si trova nel file system in `<aem-install-dir>/crx-quickstart/logs` e filtrarlo con il livello di registro appropriato. Procedere come segue:
 
-1. Apri CRXDE Lite nel browser.
+1. Apri CRXDE Liti nel browser.
 1. Nel menu a discesa a destra della sezione [**Scheda Console**](#console-tab) nella parte inferiore della finestra, seleziona **Registri server**.
 1. Fai clic su **Interrompi** per visualizzare i messaggi.
 

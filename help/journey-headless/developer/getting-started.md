@@ -2,10 +2,10 @@
 title: Guida introduttiva ad AEM headless as a Cloud Service
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3084'
-ht-degree: 94%
+source-wordcount: '3080'
+ht-degree: 93%
 
 ---
 
@@ -82,8 +82,8 @@ I Frammenti di contenuto contengono contenuto strutturato e possono essere conse
 
 Per modificare il contenuto senza problemi, AEM offre due solide API.
 
-* API GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
-* API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
+* L’API di GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
+* L’API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
 
 Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure vedi [risorse aggiuntive](#additional-resources) per ulteriore documentazione, vedere la sezione seguente.
 
@@ -143,7 +143,7 @@ Per ogni progetto riuscito è importante definire chiaramente non solo i requisi
 
 ### Ambito {#scope}
 
-È importante disporre di un ambito chiaramente definito per il progetto. L’ambito segnala i criteri di accettazione e consente di stabilire una definizione di operazione completata.
+È importante disporre di un ambito chiaramente definito per il progetto. L’ambito informa i criteri di accettazione e consente di stabilire una definizione di completato.
 
 La prima domanda che dovete porre è “Cosa sto cercando di fare con AEM headless?” In generale, la risposta dovrebbe essere che in futuro si dispone o si disporrà di un’applicazione Experience creata con i propri strumenti di sviluppo e non con l’AEM. Questa applicazione di esperienza potrebbe essere un’app mobile, un sito web o qualsiasi altra applicazione di esperienza rivolta ai clienti e alle clienti finali. L’obiettivo nell’utilizzo di AEM headless è alimentare l’applicazione di esperienza con contenuti creati, memorizzati e gestiti in AEM con API all’avanguardia che richiamerebbero AEM headless per recuperare contenuti o persino contenuti completamente CRUD direttamente dall’applicazione di esperienza. Se questo non è quello che stai cercando di fare, probabilmente vorrai [tornare indietro per consultare la documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) e trovare la sezione che meglio si adatta a ciò che desideri realizzare.
 
@@ -259,7 +259,7 @@ Per capire il traffico e i modelli di traffico inizia raccogliendo ciò che sai 
 
 #### Frequenza di aggiornamento {#update-frequency}
 
-Spesso, nelle diverse sezioni di esperienze la frequenza di aggiornamento dei contenuti è diversa. È importante comprendere questo per poter perfezionare le configurazioni di CDN e cache. Questo è anche un importante contributo per gli [Architetti dei contenuti](#content-architects) quando progettano modelli per rappresentare il tuo contenuto. Ritieni che:
+Spesso, nelle diverse sezioni di esperienze la frequenza di aggiornamento dei contenuti è diversa. È importante comprendere questo aspetto per poter ottimizzare le configurazioni della CDN e della cache. Questo è anche un importante contributo per gli [Architetti dei contenuti](#content-architects) quando progettano modelli per rappresentare il tuo contenuto. Ritieni che:
 
 * Alcuni tipi di contenuto debbano scadere dopo un determinato periodo di tempo?
 * Esistano elementi specifici di un utente e, quindi, non possano essere memorizzati nella cache?

@@ -4,10 +4,10 @@ description: Scopri come utilizzare la console Frammenti di contenuto per gestir
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 84%
+source-wordcount: '2051'
+ht-degree: 83%
 
 ---
 
@@ -394,7 +394,7 @@ Vengono visualizzati affiancati, dove:
    * Testo inserito: verde
    * Testo sostituito: blu
 
-* L’icona a schermo intero consente di aprire una delle due versioni da sola; quindi di tornare alla vista parallela
+* L’icona a schermo intero consente di aprire una versione da sola, quindi di tornare alla vista parallela
 * È possibile **ritornare** alla versione specifica
 * **Fine** riporta alla console
 

@@ -4,10 +4,10 @@ description: Scopri le best practice compilate dai team di progettazione e consu
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 92%
+source-wordcount: '1420'
+ht-degree: 87%
 
 ---
 
@@ -82,7 +82,7 @@ MSM può contribuire alla creazione di siti Web multilingue in due modi:
 Quando crei le lingue master, tieni presente quanto segue:
 
 * Sebbene MSM stesso **non fornisca la traduzione del contenuto**, può essere integrato con connettori di traduzione di terze parti che lo fanno. Tieni presente quanto segue:
-   * MSM consente di annullare l’ereditarietà a livello di pagina e/o componente. Questo aiuta a evitare la sovrascrittura dei contenuti tradotti (da una Live Copy, con contenuti non ancora tradotti da una blueprint) al prossimo rollout.
+   * MSM consente di annullare l’ereditarietà a livello di pagina e/o di componente. Questo aiuta a evitare la sovrascrittura dei contenuti tradotti (da una Live Copy, con contenuti non ancora tradotti da una blueprint) al prossimo rollout.
       * Alcuni connettori di traduzione di terze parti automatizzano questa gestione delle ereditarietà MSM.
       * Per ulteriori informazioni, rivolgiti al provider di servizi di traduzione.
       * Un approccio alternativo per la creazione e la traduzione di lingue master consiste nell’utilizzare copie in lingua insieme all&#39;AEM Translation Integration Framework preconfigurato.
@@ -140,7 +140,7 @@ Pertanto, ti consigliamo di utilizzare i trigger `onModify` solo se i vantaggi d
 
 ### Tipi di nodo/proprietà {#node-types-properties}
 
-Oltre a personalizzare le azioni di rollout, MSM ti consente anche di personalizzare le proprietà dei nodi in fase di rollout. La [configurazione MSM OSGi ti consente di escludere alcuni tipi di nodo](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) dall&#39;essere copiati dal sorgente alla Live Copy.
+Oltre a personalizzare le azioni di rollout, MSM ti consente anche di personalizzare le proprietà dei nodi in fase di rollout. Il [La configurazione MSM OSGi consente di escludere i tipi di nodo](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) dall&#39;origine alla Live Copy.
 
 ## Ulteriori informazioni {#further-information}
 

@@ -2,10 +2,10 @@
 title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Imparare a utilizzare i riferimenti in Frammenti di contenuto, per i contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 95%
+source-wordcount: '728'
+ht-degree: 87%
 
 ---
 
@@ -39,11 +39,11 @@ Alcuni riferimenti sono costituiti da tipi di dati dedicati (ad esempio, Riferim
 
 ## Riferimenti al contenuto {#content-references}
 
-I riferimenti al contenuto fanno proprio questo: ti consentono di fare riferimento a qualsiasi altro contenuto. Questo apre un browser che consente di selezionare l’elemento di contenuto.
+I riferimenti al contenuto fanno proprio questo: ti consentono di fare riferimento a qualsiasi altro contenuto. Verrà aperto un browser che consente di selezionare l’elemento di contenuto.
 
 ## Riferimenti a risorse/file multimediali {#assets-media-references}
 
-È possibile fare riferimento alle risorse (ad esempio, immagini o file multimediali) all’interno di un blocco di testo utilizzando l’opzione **Inserisci risorsa**. Questa apre un browser che consente di selezionare la risorsa.
+È possibile fare riferimento alle risorse (ad esempio, immagini o file multimediali) all’interno di un blocco di testo utilizzando l’opzione **Inserisci risorsa**. Verrà aperto un browser che consente di selezionare la risorsa.
 
 ![Frammenti di contenuto - Inserisci risorsa](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -79,7 +79,7 @@ In qualità di autore, non sei responsabile della definizione di queste relazion
 
 ### Come creare i frammenti nidificati {#author-nested-fragment}
 
-L’authoring dei riferimenti ai frammenti è abbastanza semplice (anche se in genere il campo non sarà etichettato come **Riferimento a frammento**). È possibile digitare direttamente il riferimento oppure (più probabilmente) selezionare l’icona della cartella per aprire un browser che consente di sfogliare e selezionare il frammento desiderato.
+L’authoring dei riferimenti ai frammenti è abbastanza semplice (anche se in genere il campo non sarà etichettato come **Riferimento a frammento**). Puoi digitare direttamente nel riferimento oppure (molto probabilmente) selezionare l’icona della cartella per aprire un browser che ti consenta di navigare e selezionare il frammento necessario.
 
 ![Frammenti di contenuto - Riferimenti](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

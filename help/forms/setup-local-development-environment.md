@@ -2,9 +2,9 @@
 title: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 description: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2818'
+source-wordcount: '2816'
 ht-degree: 3%
 
 ---
@@ -182,11 +182,11 @@ Use this project to update configurations, create overlays, develop custom Adapt
 
 ## Imposta ambiente di sviluppo locale per documento di record (DoR){#docker-microservices}
 
-AEM Forms as a Cloud Services fornisce un ambiente SDK basato su docker per semplificare lo sviluppo di documenti di record e l’utilizzo di altri microservizi. Consente di configurare manualmente binari e adattamenti specifici della piattaforma. Per impostare l’ambiente:
+AEM Forms as a Cloud Service fornisce un ambiente SDK basato su docker per semplificare lo sviluppo di documenti di record e l’utilizzo di altri microservizi. Consente di configurare manualmente binari e adattamenti specifici della piattaforma. Per impostare l’ambiente:
 
 1. Installare e configurare Docker:
 
-   * (Per Microsoft® Windows) Installa [Docker Desktop](https://www.docker.com/products/docker-desktop). Configura `Docker Engine` e `docker-compose` sul tuo computer.
+   * (Per Microsoft® Windows) Installazione [Docker Desktop](https://www.docker.com/products/docker-desktop). Configura `Docker Engine` e `docker-compose` sul tuo computer.
 
    * (Apple macOS) Installazione [Docker Desktop per Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Include Docker Engine, il client CLI Docker, Docker Compose, Docker Content Trust, Kubernetes e Credential Helper.
 
@@ -194,7 +194,7 @@ AEM Forms as a Cloud Services fornisce un ambiente SDK basato su docker per semp
 
    >[!NOTE]
    >
-   > * Per Apple macOS, inserire nell&#39;elenco Consentiti cartelle contenenti le istanze locali di AEM Author.
+   > * Per Apple macOS, inserire nell&#39;elenco Consentiti cartelle contenenti istanze AEM Author locali.
    >
    > * Docker Desktop per Windows supporta due back-end, Hyper-V
    > (legacy) e WSL2 (modern). La condivisione dei file avviene automaticamente
@@ -207,13 +207,13 @@ AEM Forms as a Cloud Services fornisce un ambiente SDK basato su docker per semp
 
    ![aggiunta aem forms estratta nativa](assets/microservice-docker.png)
 
-1. Crea una variabile di ambiente AEM_HOME e punta all’installazione locale di AEM Author. Ad esempio, C:\aem\author\.
+1. Creare una variabile di ambiente AEM_HOME e puntare all&#39;installazione locale di AEM Author. Ad esempio, C:\aem\author\.
 
-1. Apri sdk.bat o sdk.sh per la modifica. Imposta AEM_HOME in modo che punti all’installazione di AEM Author locale. Ad esempio, C:\aem\author\.
+1. Apri sdk.bat o sdk.sh per la modifica. Impostare AEM_HOME in modo che punti all&#39;installazione di AEM Author locale. Ad esempio, C:\aem\author\.
 
 1. Apri il prompt dei comandi e passa alla `aem-forms-addon-native-<version>` cartella.
 
-1. Assicurati che l’istanza AEM Author locale sia attiva e in esecuzione. Esegui il seguente comando per avviare l&#39;SDK:
+1. Assicurati che l’istanza locale di AEM Author sia operativa. Esegui il seguente comando per avviare l&#39;SDK:
 
    * (su Microsoft® Windows) `sdk.bat start`
    * (su Linux® o Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
@@ -276,7 +276,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 ## Configurare gli strumenti locali di Dispatcher {#setup-local-dispatcher-tools}
 
-Dispatcher è un modulo server web Apache HTTP che fornisce protezione e prestazioni tra il livello CDN e AEM Publish. Dispatcher è parte integrante dell’architettura Experience Manager complessiva e deve far parte dell’ambiente di sviluppo locale.
+Dispatcher è un modulo server web Apache HTTP che fornisce sicurezza e prestazioni tra il livello di CDN e pubblicazione AEM. Dispatcher è parte integrante dell’architettura Experience Manager complessiva e deve far parte dell’ambiente di sviluppo locale.
 
 Per configurare il Dispatcher locale e quindi aggiungere a esso regole specifiche per Forms, effettua le seguenti operazioni:
 
@@ -294,7 +294,7 @@ Per configurare la cache di Dispatcher per Experience Manager Forms as a Cloud S
 
 1. Apri il progetto AEM e passa a `\src\conf.dispatcher.d\available_farms`
 1. Crea una copia di `default.farm` file. Esempio: `forms.farm`.
-1. Apri il nuovo elemento creato `forms.farm` file per la modifica e sostituire il seguente codice:
+1. Apri il nuovo `forms.farm` file per la modifica e sostituire il seguente codice:
 
    ```json
    #/ignoreUrlParams {
@@ -329,9 +329,9 @@ Per configurare la cache di Dispatcher per Experience Manager Forms as a Cloud S
 
 L’ambiente di sviluppo locale è pronto.
 
-## Abilitare i componenti core Adaptive Forms nell’ambiente di sviluppo as a Cloud Service e locale di AEM Forms
+## Abilitare i componenti core dei moduli adattivi in AEM Forms as a Cloud Service e nell’ambiente di sviluppo locale
 
-Abilitando i componenti core dei moduli adattivi su AEM Forms as a Cloud Service, è possibile iniziare a creare, pubblicare e distribuire componenti core basati su moduli adattivi e moduli headless utilizzando le istanze del Cloud Service di AEM Forms su più canali. Per utilizzare Headless Adaptive Forms è necessario un ambiente abilitato per i Componenti core Forms adattivi.
+Abilitando i componenti core Adaptive Forms su AEM Forms as a Cloud Service, puoi iniziare a creare, pubblicare e distribuire componenti core basati su Adaptive Forms e Headless Forms utilizzando le istanze del Cloud Service AEM Forms su più canali. Per utilizzare Headless Adaptive Forms è necessario un ambiente abilitato per i Componenti core Forms adattivi.
 
 Per istruzioni, consulta [Abilitare i componenti core Adaptive Forms nell’ambiente di sviluppo as a Cloud Service e locale di AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1156'
 ht-degree: 2%
 
 ---
@@ -110,7 +110,7 @@ Per abilitare la nuova griglia reattiva, effettua le seguenti operazioni:
 
 ### Incorporare un vecchio frammento in un modulo adattivo con un nuovo layout reattivo {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
-Il nuovo layout dinamico per modulo adattivo consente di aggiungere al modulo un frammento di modulo adattivo con il vecchio layout responsivo. Tuttavia, il nuovo layout elimina le proprietà di layout già definite per i componenti utilizzati nel frammento. Puoi passare alla modalità Layout per definire le proprietà di layout dei componenti utilizzati nel frammento.
+Il nuovo layout reattivo per modulo adattivo consente di aggiungere al modulo un frammento di modulo adattivo con il vecchio layout reattivo. Tuttavia, il nuovo layout elimina le proprietà di layout già definite per i componenti utilizzati nel frammento. Puoi passare alla modalità Layout per definire le proprietà di layout dei componenti utilizzati nel frammento.
 
 ### Incorporare un frammento con un nuovo layout reattivo in un modulo adattivo precedente {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 

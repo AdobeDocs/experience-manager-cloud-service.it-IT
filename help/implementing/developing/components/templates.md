@@ -2,9 +2,9 @@
 title: Modelli di pagina
 description: I Modelli di pagina vengono utilizzati durante la creazione di una pagina utilizzata come base per la nuova pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3294'
+source-wordcount: '3291'
 ht-degree: 5%
 
 ---
@@ -163,12 +163,12 @@ Viene creato un elenco di tutte le voci consentite. Se le configurazioni si sovr
 
 Per creare una nuova cartella, puoi effettuare le seguenti operazioni:
 
-* A livello di programmazione o con CRXDE Lite
+* A livello di programmazione o con CRXDE Liti
 * Utilizzo di [Browser configurazioni](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Utilizzo di CRXDE Lite {#using-crxde-lite}
 
-1. È possibile creare una nuova cartella (in /conf) per l’istanza a livello di programmazione o con CRXDE Lite.
+1. È possibile creare una nuova cartella (in /conf) per l’istanza a livello di programmazione o con CRXDE Liti.
 
    Deve essere utilizzata la seguente struttura:
 
@@ -356,7 +356,7 @@ When creating a new editable template, the value is copied from the template typ
 Se è stato creato un modello che può fungere da base per altri modelli, è possibile copiarlo come tipo di modello.
 
 1. Crea un modello come faresti con un modello pagina [come documentato qui](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), che fungerà da base per il tipo di modello.
-1. Utilizzando CRXDE Lite, copia il modello appena creato da `templates` nodo a `template-types` nodo sotto [cartella modelli](#template-folders).
+1. Utilizzando CRXDE Liti, copia il modello appena creato da `templates` nodo a `template-types` nodo sotto [cartella modelli](#template-folders).
 1. Elimina il modello da `templates` nodo sotto [cartella modelli](#template-folders).
 1. Nella copia del modello che si trova in `template-types` nodo, elimina tutto `cq:template` e `cq:templateType` proprietà da tutti `jcr:content` nodi.
 
@@ -541,7 +541,7 @@ Durante il rendering di una pagina:
       * Il componente Pagina consente all’autore di modificare solo i nodi della struttura del modello contrassegnati come modificabili (e gli eventuali elementi secondari).
       * Quando si esegue il rendering di un componente su una pagina, il relativo percorso di tale componente viene ricavato da `jcr:content` nodo; lo stesso percorso sotto `policies/jcr:content` Verrà quindi eseguita una ricerca nel nodo del modello.
          * Il `cq:policy` proprietà di questo nodo punta al criterio del contenuto effettivo, ovvero contiene la configurazione di progettazione per quel componente.
-            * Ciò consente di disporre di più modelli che riutilizzano le stesse configurazioni dei criteri per i contenuti.
+            * In questo modo è possibile disporre di più modelli che riutilizzano le stesse configurazioni dei criteri per i contenuti.
 
 ### Disponibilità dei modelli {#template-availability}
 

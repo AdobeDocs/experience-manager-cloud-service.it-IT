@@ -2,9 +2,9 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard. Scopri come personalizzarli.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1812'
 ht-degree: 2%
 
 ---
@@ -96,7 +96,7 @@ Per l’integrazione con Assets Core:
 >
 >Il [Il componente Frammento di contenuto fa parte dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it). Consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) per ulteriori dettagli.
 
-È possibile fare riferimento ai frammenti di contenuto dalle pagine dell’AEM, come qualsiasi altro tipo di risorsa. L&#39;AEM fornisce **[Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)** - a [componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere questo **[Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)** Componente core.
+È possibile fare riferimento ai frammenti di contenuto dalle pagine AEM, come qualsiasi altro tipo di risorsa. L&#39;AEM fornisce **[Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)** - a [componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere questo **[Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)** Componente core.
 
 * Il componente utilizza `fragmentPath` per fare riferimento al frammento di contenuto effettivo. Il `fragmentPath` viene gestita nello stesso modo di proprietà simili di altri tipi di risorse, ad esempio quando il frammento di contenuto viene spostato in un’altra posizione.
 

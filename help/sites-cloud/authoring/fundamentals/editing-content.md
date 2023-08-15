@@ -2,10 +2,10 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, puoi modificarne il contenuto per apportare gli aggiornamenti necessari
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2990'
-ht-degree: 53%
+source-wordcount: '2983'
+ht-degree: 52%
 
 ---
 
@@ -246,19 +246,19 @@ Le azioni disponibili per l’utente sono visualizzate come appropriato e non tu
 
 * **Elemento padre**
 
-  Questa opzione consente di selezionare l’elemento padre del componente selezionato.
+  Questo consente di selezionare il componente principale del componente selezionato.
 
   ![Pulsante Elemento padre](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **Layout**
 
-  Questo consente di modificare [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) del componente selezionato. Questo si applica solo al componente selezionato e non attiva il [Modalità Layout](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) per l’intera pagina.
+  Questo ti consente di modificare [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) del componente selezionato. Questo si applica solo al componente selezionato e non attiva il [Modalità Layout](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) per l’intera pagina.
 
   ![Pulsante Layout](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **Converti in variante di frammento di esperienza**
 
-  Consente di creare un nuovo [Frammento esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) dal componente selezionato o di aggiungerlo a un frammento di esperienza esistente.
+  Questo ti consente di creare un nuovo [frammento esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) dal componente selezionato o aggiungilo a un frammento di esperienza esistente.
 
   ![Pulsante Converti in frammento esperienza](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -430,7 +430,7 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 Durante la modifica del contenuto è possibile visualizzare l’anteprima della pagina utilizzando [modalità](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes). Questa modalità:
 
 * Nasconde vari meccanismi di modifica per fornire un’indicazione rapida di come apparirà la pagina una volta pubblicata.
-* Consente di utilizzare i collegamenti per spostarsi.
+* Consente di utilizzare i collegamenti per navigare.
 * Does **non** aggiorna il contenuto della pagina.
 
 Durante l’authoring, la modalità di anteprima è disponibile utilizzando l’icona in alto a destra nell’editor di pagine:
@@ -492,7 +492,7 @@ Nel menu Informazioni pagina è presente l’opzione **Sblocca** e l’icona Blo
 >
 >Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
 >
->Pages can not be unlocked by impersonating the user who locked the page.
+>Pages cannot be unlocked by impersonating the user who locked the page.
 -->
 
 <!--

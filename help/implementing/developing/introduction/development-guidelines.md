@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f69b348b7de6c6537a9945793e3397bf4fe30f98
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2653'
 ht-degree: 4%
 
 ---
@@ -165,7 +165,7 @@ Le immagini thread negli ambienti Cloud vengono raccolte su base continuativa, m
 
 ### Sviluppo locale {#local-development}
 
-Per lo sviluppo locale, gli sviluppatori hanno pieno accesso a CRXDE Lite (`/crx/de`) e la console web dell&#39;AEM (`/system/console`).
+Per lo sviluppo locale, gli sviluppatori hanno pieno accesso a CRXDE Liti (`/crx/de`) e la console web dell&#39;AEM (`/system/console`).
 
 Tieni presente che sullo sviluppo locale (utilizzando l’SDK), `/apps` e `/libs` può essere scritto direttamente in, il che è diverso dagli ambienti Cloud in cui tali cartelle di livello superiore non sono modificabili.
 
@@ -205,7 +205,7 @@ Per i programmi di produzione, l’accesso a Console sviluppatori è definito da
 
 ### Monitoraggio delle prestazioni {#performance-monitoring}
 
-Adobe monitora le prestazioni delle applicazioni e adotta misure per affrontare eventuali deterioramenti. Al momento, non è possibile osservare le metriche dell’applicazione.
+Adobe monitora le prestazioni delle applicazioni e adotta misure per affrontare eventuali deterioramenti. Al momento, non è possibile osservare le metriche delle applicazioni.
 
 ## Invio e-mail {#sending-email}
 

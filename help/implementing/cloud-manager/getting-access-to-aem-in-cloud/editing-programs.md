@@ -2,10 +2,10 @@
 title: Modifica dei programmi
 description: Scopri come modificare i programmi sandbox e di produzione per apportare modifiche alle opzioni dopo averli creati.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 88%
+source-wordcount: '516'
+ht-degree: 85%
 
 ---
 
@@ -89,4 +89,4 @@ In alternativa, dalla pagina della panoramica di Cloud Manager, accedi alla sche
 
 >[!NOTE]
 >
->È possibile eliminare solo i programmi sandbox. I programmi di produzione non possono essere eliminati.
+>È possibile eliminare solo i programmi sandbox. Impossibile eliminare il programma di produzione.

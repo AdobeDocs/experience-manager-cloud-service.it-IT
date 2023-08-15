@@ -2,9 +2,9 @@
 title: Utilizzo di librerie lato client su AEM as a Cloud Service
 description: AEM fornisce cartelle di librerie lato client, che consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2552'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Una cartella di libreria lato client è un nodo di archivio di tipo `cq:ClientLi
   - channels (string) multiple
 ```
 
-* `cq:ClientLibraryFolder` I nodi possono essere posizionati ovunque all&#39;interno del `/apps` sottostruttura dell’archivio.
+* `cq:ClientLibraryFolder` I nodi possono essere posizionati ovunque all’interno del `/apps` sottostruttura dell’archivio.
 * Utilizza il `categories` del nodo per identificare le categorie di libreria a cui appartiene.
 
 Ogni `cq:ClientLibraryFolder` viene compilato con un set di file JS e/o CSS, insieme ad alcuni file di supporto (vedi di seguito). Proprietà importanti del `cq:ClientLibraryFolder` sono configurate come segue:
@@ -75,7 +75,7 @@ Le librerie client devono trovarsi in `/apps`. Questa regola è necessaria per i
 
 Per le librerie client in `/apps` per essere accessibile, viene utilizzato un servlet proxy. Gli ACL vengono ancora applicati nella cartella della libreria client, ma il servlet consente la lettura del contenuto tramite `/etc.clientlibs/` se `allowProxy` proprietà impostata su `true`.
 
-1. Apri CRXDE Lite in un browser Web (`https://<host>:<port>/crx/de`).
+1. Apri CRXDE Liti in un browser Web (`https://<host>:<port>/crx/de`).
 1. Seleziona la `/apps` cartella e fai clic su **Crea > Crea nodo**.
 1. Immetti un nome per la cartella della libreria e nella **Tipo** selezione elenco `cq:ClientLibraryFolder`. Clic **OK** e quindi fare clic su **Salva tutto**.
 1. Per specificare la categoria o le categorie a cui appartiene la libreria, seleziona la `cq:ClientLibraryFolder` , aggiungere la seguente proprietà e quindi fare clic su **Salva tutto**:
@@ -88,7 +88,7 @@ Per le librerie client in `/apps` per essere accessibile, viene utilizzato un se
    * Tipo: booleano
    * Valore: `true`
 1. Per gestire le risorse statiche, crea una sottocartella denominata `resources` nella cartella della libreria client.
-   * Se archivi risorse statiche in un punto diverso da quello della cartella `resources`, non è possibile farvi riferimento in un’istanza di pubblicazione.
+   * Se archivi risorse statiche in un punto diverso da quello della cartella `resources`, non è possibile farvi riferimento in un’istanza Publish.
 1. Aggiungere i file di origine alla cartella della libreria.
    * Questa operazione viene in genere eseguita dal processo di sviluppo front-end del [Archetipo progetto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * Se necessario, è possibile organizzare i file di origine in sottocartelle.

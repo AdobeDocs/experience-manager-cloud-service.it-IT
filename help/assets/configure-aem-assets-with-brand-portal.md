@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: '2562'
 ht-degree: 13%
 
 ---
@@ -386,7 +386,7 @@ Per configurare il servizio cloud Brand Portal, effettua le seguenti operazioni:
 
 1. Accedi a Experience Manager Assets.
 
-1. Dalla sezione **Strumenti** , passa a **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. Dalla sezione **Strumenti** , passa a **[!UICONTROL Cloud Service]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Nella pagina Configurazioni Brand Portal, fai clic su **[!UICONTROL Crea]**.
 
@@ -405,7 +405,7 @@ Per configurare il servizio cloud Brand Portal, effettua le seguenti operazioni:
 Ora puoi testare la configurazione controllando l’agente di distribuzione e pubblicando le risorse in Brand Portal.
 
 **Inserisce nell&#39;elenco Consentiti IP in uscita in SPS se l&#39;anteprima protetta è abilitata**
-Se si utilizza Dynamic Media-Scene7 con [anteprima protetta abilitata](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) per una società), si consiglia all&#39;amministratore della società Scene7 [inserire nell&#39;elenco Consentiti gli IP in uscita pubblici](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) per le rispettive aree geografiche utilizzando l’interfaccia utente flash di SPS (Scene7 Publishing System).
+Se si utilizza Dynamic Medie-Scene7 con [anteprima protetta abilitata](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) per una società), si consiglia all&#39;amministratore della società Scene7 [inserire nell&#39;elenco Consentiti gli IP in uscita pubblici](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) per le rispettive aree geografiche utilizzando l’interfaccia utente flash di SPS (Scene7 Publishing System).
 Gli IP in uscita sono i seguenti:
 
 | **Regione** | **IP in uscita** |

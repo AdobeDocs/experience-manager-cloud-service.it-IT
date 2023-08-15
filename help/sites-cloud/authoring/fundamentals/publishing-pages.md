@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Scopri come pubblicare e annullare la pubblicazione delle pagine utilizzando vari meccanismi in AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 72%
+source-wordcount: '1804'
+ht-degree: 70%
 
 ---
 
@@ -85,7 +85,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 >[!NOTE]
 >
->Le pagine accessibili da [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell’editor non possono essere pubblicate. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
+>Pagine a cui si accede tramite [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell’editor non può essere pubblicato. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
 
 ### Pubblicazione dalla console {#publishing-from-the-console}
 
@@ -124,7 +124,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    ![Selezione delle pagine per la pubblicazione](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Il primo passaggio, **Opzioni**, consente di:
+1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Il primo passo, **Opzioni**, consente di:
 
    * **Azione**
 
@@ -228,7 +228,7 @@ Durante la modifica di una pagina, se desideri annullarne la pubblicazione selez
 
 >[!NOTE]
 >
->Non può essere annullata la pubblicazione delle pagine accessibili da [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell’editor. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
+>Pagine a cui si accede tramite [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell’editor non può essere annullata. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
 
 ### Annullamento della pubblicazione dalla console  {#unpublishing-from-the-console}
 

@@ -2,10 +2,10 @@
 title: Creazione di modelli di pagina
 description: Il modello definisce la struttura della pagina risultante e, con l’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4577'
-ht-degree: 56%
+source-wordcount: '4570'
+ht-degree: 55%
 
 ---
 
@@ -32,7 +32,7 @@ Per informazioni dettagliate su come funzionano i modelli modificabili a livello
 
 >[!NOTE]
 >
->L’**Editor modelli** non supporta il targeting diretto a livello di modello. È possibile impostare come destinazione le pagine create in base a un modello modificabile, ma non i modelli stessi.
+>L’**Editor modelli** non supporta il targeting diretto a livello di modello. È possibile eseguire il targeting delle pagine create in base a un modello modificabile, ma non dei modelli stessi.
 
 ## Prima di iniziare {#before-you-start}
 
@@ -230,7 +230,7 @@ Poiché al modello viene fatto riferimento quando viene eseguito il rendering di
 
 Durante la creazione o la modifica di un modello è possibile definire vari aspetti. La modifica dei modelli è simile alla creazione delle pagine.
 
-Il selettore **Modalità** nella barra degli strumenti consente di selezionare e modificare l’aspetto appropriato del modello:
+Il **Modalità** nella barra degli strumenti consente di selezionare e modificare l’aspetto appropriato del modello:
 
 * [Struttura](#editing-a-template-structure-template-author)
 * [Contenuto iniziale](#editing-a-template-initial-content-author)
@@ -238,7 +238,7 @@ Il selettore **Modalità** nella barra degli strumenti consente di selezionare e
 
 ![Selettore della modalità nell’Editor modelli](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-L’opzione **Criterio pagina** nel menu **Informazioni pagina** consente invece di [selezionare i criteri di pagina richiesti](#page-policies):
+Mentre il **Criterio pagina** opzione sul **Informazioni pagina** menu consente di: [seleziona i criteri di pagina richiesti](#page-policies):
 
 ![Informazioni pagina nell’Editor modelli](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -323,7 +323,7 @@ Una volta aggiunto, ogni componente viene contrassegnato con:
 
 #### Azioni dei componenti {#component-actions}
 
-Esegui azioni sui componenti una volta aggiunti al modello. Ogni singola istanza dispone di una barra degli strumenti che ti consente di accedere alle azioni disponibili; la barra degli strumenti dipende dal tipo di componente.
+Esegui azioni sui componenti una volta aggiunti al modello. Ogni singola istanza dispone di una barra degli strumenti che consente di accedere alle azioni disponibili; la barra degli strumenti dipende dal tipo di componente.
 
 ![Barra delle azioni di un componente del modello](/help/sites-cloud/authoring/assets/templates-component-actions.png)
 
@@ -345,7 +345,7 @@ Crea un criterio per i contenuti o selezionane uno esistente per un componente.
 
 ![Pulsante Criterio contenuto](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
 
-In questo modo è possibile definire i dettagli del progetto.
+Questo consente di definire i dettagli della progettazione.
 
 ![Criterio contenuto](/help/sites-cloud/authoring/assets/template-content-policy.png)
 
@@ -407,7 +407,7 @@ Per rimuovere una configurazione, tocca o fai clic sul pulsante **Elimina**.
 
 ###### Funzioni {#features}
 
-Il **Funzioni** consente di abilitare o disabilitare funzioni aggiuntive del componente.
+Il **Funzioni** Questa scheda ti consente di abilitare o disabilitare funzioni aggiuntive del componente.
 
 Ad esempio, per un componente immagine puoi definire le proporzioni di ritaglio, gli orientamenti consentiti per le immagini e se sono consentiti caricamenti.
 

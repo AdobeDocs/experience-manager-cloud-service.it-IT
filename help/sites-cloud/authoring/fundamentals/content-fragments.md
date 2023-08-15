@@ -2,9 +2,9 @@
 title: Frammenti di contenuto
 description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redigere e utilizzare contenuti indipendenti dalla pagina.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1222'
 ht-degree: 86%
 
 ---
@@ -115,7 +115,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 
 Quando un frammento di contenuto specifico viene aggiunto alla pagina, è disponibile un segnaposto **Trascina qui i componenti** tra ciascun paragrafo HTML (e nella parte superiore/inferiore) del frammento.
 
-Ciò ti consente di aggiungere contenuto aggiuntivo [nel mezzo (ovvero nel contenuto intermedio)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) il contenuto del frammento (in qualsiasi punto disponibile), senza dover modificare il frammento principale.
+Questo ti consente di aggiungere contenuto aggiuntivo [nel mezzo (ovvero nel contenuto intermedio)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) il contenuto del frammento (in qualsiasi punto disponibile), senza dover modificare il frammento principale.
 
 Per il contenuto intermedio è possibile:
 

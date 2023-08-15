@@ -4,9 +4,9 @@ description: Scopri le nozioni di base di AE; gestione dei pacchetti con Gestion
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3770'
 ht-degree: 4%
 
 ---
@@ -98,14 +98,14 @@ Per creare, modificare, caricare e installare pacchetti, gli utenti devono dispo
 È possibile accedere a Gestione pacchetti in tre modi:
 
 1. Dal menu principale dell’AEM -> **Strumenti** -> **Distribuzione** -> **Pacchetti**
-1. Da [CRXDE Lite](crxde.md) utilizzo della barra del commutatore superiore
+1. Da [CRXDE Liti](crxde.md) utilizzo della barra del commutatore superiore
 1. Direttamente accedendo a `http://<host>:<port>/crx/packmgr/`
 
 ### Interfaccia utente di Gestione pacchetti {#ui}
 
 Gestione pacchetti è suddiviso in quattro aree funzionali principali:
 
-* **Pannello di navigazione sinistro** : questo pannello consente di filtrare e ordinare l’elenco dei pacchetti.
+* **Pannello di navigazione sinistro** - Questo pannello consente di filtrare e ordinare l’elenco dei pacchetti.
 * **Elenco pacchetti** : elenco dei pacchetti nell’istanza filtrati e ordinati per selezioni nel pannello di navigazione a sinistra.
 * **Registro attività** : questo pannello viene ridotto a icona in un primo momento ed espande per descrivere nel dettaglio l’attività di Gestione pacchetti, ad esempio quando un pacchetto viene generato o installato. Nella scheda Registro attività sono disponibili pulsanti aggiuntivi per:
    * **Cancella registro**

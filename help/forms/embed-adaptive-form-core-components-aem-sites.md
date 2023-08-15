@@ -6,9 +6,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2131'
 ht-degree: 2%
 
 ---
@@ -19,9 +19,9 @@ Puoi creare o incorporare facilmente Forms adattivo in una pagina di AEM Sites p
 
 Per creare o aggiungere un modulo adattivo a una pagina di AEM Sites, puoi scegliere uno dei seguenti metodi:
 
-* **Creare un modulo adattivo utilizzando il componente Contenitore Forms adattivo**: Il [Contenitore modulo adattivo](#af-container-component) consente di creare esperienze di registrazione digitale utilizzando componenti Adaptive Forms direttamente nell’editor di AEM Sites. Questa integrazione offre un’esperienza fluida agli autori di AEM Sites che desiderano creare e gestire moduli all’interno delle loro pagine AEM Sites.
+* **Creare un modulo adattivo utilizzando il componente Contenitore Forms adattivo**: Il [Contenitore modulo adattivo](#af-container-component) Questo componente consente di creare esperienze di registrazione digitale utilizzando componenti Adaptive Forms direttamente nell’editor di AEM Sites. Questa integrazione offre un’esperienza fluida agli autori di AEM Sites che desiderano creare e gestire moduli all’interno delle loro pagine AEM Sites.
 
-* **Aggiungi un modulo adattivo esistente**: Il [Forms adattivo - Incorpora(v2)](#embed-existing-af) consente di aggiungere facilmente un modulo adattivo preesistente a una pagina all’interno di AEM Sites. Questa funzione migliora l’adattabilità e la riutilizzabilità di Adaptive Forms. Questa integrazione offre ai clienti un modo pratico per riutilizzare i Forms adattivi già creati.
+* **Aggiungi un modulo adattivo esistente**: Il [Forms adattivo - Incorpora(v2)](#embed-existing-af) Questo componente consente di aggiungere facilmente un modulo adattivo preesistente a una pagina all’interno di AEM Sites. Questa funzione migliora l’adattabilità e la riutilizzabilità di Adaptive Forms. Questa integrazione offre ai clienti un modo pratico per riutilizzare i Forms adattivi già creati.
 
 * **Utilizzare l’autocomposizione di Forms adattivo per creare un modulo**: utilizza [Forms adattivo - Incorpora(v2)](#embed-new-af) componente per creare un modulo adattivo dall’editor di AEM Sites mediante la procedura guidata di creazione di moduli. Il modulo viene salvato come entità esterna. Puoi riutilizzare questo modulo anche in altre pagine Sites e moduli autonomi.
 
@@ -140,7 +140,7 @@ In [!UICONTROL Modifica contenitore Forms adattivo] , è possibile specificare q
 
 ## Incorporare un modulo adattivo  {#aem-container-component}
 
-Utilizzo di **[!UICONTROL Forms Adattivo - Incorpora (V2)]** , è possibile incorporare un nuovo modulo adattivo o un modulo adattivo esistente nella pagina del sito. Il [!UICONTROL Forms adattivo - Incorpora(v2)] consente di:
+Utilizzo di **[!UICONTROL Forms Adattivo - Incorpora (V2)]** , è possibile incorporare un nuovo modulo adattivo o un modulo adattivo esistente nella pagina del sito. Il [!UICONTROL Forms adattivo - Incorpora(v2)] Componente consente di:
 
 * [Aggiungi un modulo adattivo esistente](#embed-new-af)
 

@@ -2,10 +2,10 @@
 title: Utilizzo dei flussi di lavoro per i progetti
 description: Sono disponibili diversi flussi di lavoro di progetto pronti all’uso.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 46%
+source-wordcount: '451'
+ht-degree: 43%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 46%
 
 I flussi di lavoro dei progetti disponibili includono:
 
-* **Flusso di lavoro di approvazione progetto:** questo flusso di lavoro consente di assegnare dei contenuti a un utente, rivederli e approvarli.
+* **Flusso di lavoro di approvazione progetto** - Questo flusso di lavoro consente di assegnare il contenuto a un utente, rivederlo e approvarlo.
 * **Richiedi lancio**: flusso di lavoro per richiedere un lancio.
 * **Richiedi pagina di destinazione**: flusso di lavoro per richiedere una pagina di destinazione.
 * **Richiedi e-mail**: flusso di lavoro per la richiesta di un’e-mail.

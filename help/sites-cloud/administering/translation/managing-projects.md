@@ -4,9 +4,9 @@ description: Scopri come creare e gestire progetti di traduzione automatica e um
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4078'
+source-wordcount: '4077'
 ht-degree: 96%
 
 ---
@@ -454,7 +454,7 @@ La best practice per questo scenario prevede di seguire questa procedura:
 1. Annulla la pubblicazione dei testi in lingua associati alla pagina sorgente che desideri spostare.
 1. Eliminali.
 1. Crea nuovi testi in lingua dalla pagina sorgente appena spostata.
-1. Pubblica i nuovi testi in lingua.
+1. Pubblica le nuove copie per lingua create.
 
 ## Importazione ed esportazione di processi di traduzione {#import-export}
 

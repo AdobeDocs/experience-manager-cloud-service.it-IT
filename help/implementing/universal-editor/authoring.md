@@ -2,10 +2,10 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2271'
-ht-degree: 30%
+source-wordcount: '2266'
+ht-degree: 29%
 
 ---
 
@@ -26,7 +26,7 @@ A tal fine, l’Editor universale offre agli autori dei contenuti un’interfacc
 
 >[!NOTE]
 >
->L&#39;editor universale è ancora in fase di sviluppo. Attualmente non può modificare tutti i tipi di contenuto.
+>L&#39;editor universale è ancora in fase di sviluppo. Al momento non è possibile modificare tutti i tipi di contenuto.
 
 ## Preparare l’app {#prepare-app}
 
@@ -74,7 +74,7 @@ Viene visualizzata l’organizzazione in cui hai effettuato l’accesso. Tocca o
 
 #### Soluzioni {#solutions}
 
-Tocca o fai clic sul selettore delle soluzioni per passare rapidamente ad altre soluzioni di Experience Cloud.
+Toccando o facendo clic sul selettore delle soluzioni puoi passare rapidamente ad altre soluzioni di Experience Cloud.
 
 ![Selettore di soluzioni](assets/solutions.png)
 

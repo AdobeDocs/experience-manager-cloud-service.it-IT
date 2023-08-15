@@ -2,9 +2,9 @@
 title: Creazione di contenuti di destinazione utilizzando la modalità di targeting
 description: La modalità di targeting e il componente Target forniscono gli strumenti necessari per creare contenuti per le esperienze
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '5410'
+source-wordcount: '5409'
 ht-degree: 45%
 
 ---
@@ -403,7 +403,7 @@ Apri un’offerta dalla libreria da un’esperienza in modalità targeting per m
 
 ## Target: configurazione dei tipi di pubblico {#target-configuring-the-audiences}
 
-Il passaggio di destinazione di [il processo di targeting](#the-targeting-process-create-target-and-goals-settings) implica la mappatura dei tipi di pubblico con le esperienze con cui hai lavorato nel passaggio Crea. La pagina di targeting mostra il pubblico per ogni esperienza di cui stai eseguendo il targeting. Puoi specificare o modificare il pubblico per ogni esperienza. Se utilizzi Adobe Target, puoi anche creare test A/B che ti consentono di eseguire il targeting della percentuale di traffico di un pubblico per una particolare esperienza.
+Il passaggio di destinazione di [il processo di targeting](#the-targeting-process-create-target-and-goals-settings) implica la mappatura dei tipi di pubblico con le esperienze con cui hai lavorato nel passaggio Crea. La pagina di targeting mostra il pubblico per ogni esperienza di cui stai eseguendo il targeting. Puoi specificare o modificare il pubblico per ogni esperienza. Se utilizzi Adobe Target, puoi anche creare test A/B che ti consentono di eseguire il targeting della percentuale di traffico per un pubblico per una particolare esperienza.
 
 ### Se utilizzi il targeting AEM o Adobe Target (targeting delle esperienze) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -621,7 +621,7 @@ Se hai selezionato Adobe Target come motore:
 | Opzione | Descrizione |
 |---|---|
 | Impostazione destinazione precisa | L’abilitazione di un targeting accurato indica al componente di attendere che i dati contestuali o del context hub siano disponibili prima di inviare la richiesta ad Adobe Target. Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato. Se selezioni la casella di controllo Targeting accurato, la mBox esegue prima una mboxDefine e quindi una mboxUpdate dando luogo a una richiesta Ajax non appena i dati sono disponibili. Se non selezioni la casella di controllo Targeting accurato, la mBox esegue una mboxCreate con conseguente richiesta sincrona immediata (in questo caso, i dati di contesto potrebbero non essere ancora tutti disponibili). Nota: l’abilitazione o la disabilitazione del targeting accurato su un componente specifico non influisce sulle impostazioni configurate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente. |
-| Includi segmenti risolti | La selezione di questa casella di controllo include tutti i segmenti risolti nella chiamata mBox e tutti i parametri configurati nella pagina e nel framework. Questo funziona solo in situazioni con API XML dove stai sincronizzando i segmenti AEM. Se disponi di segmenti in AEM che non vengono gestiti da Adobe Target (come i segmenti di script), questa opzione consente di risolvere il segmento in AEM e segnalare ad Adobe Target che il segmento è attivo. |
+| Includi segmenti risolti | La selezione di questa casella di controllo include tutti i segmenti risolti nella chiamata mBox e tutti i parametri configurati nella pagina e nel framework. Questo funziona solo in situazioni con API XML dove stai sincronizzando i segmenti AEM. Se hai segmenti in AEM che non sono gestiti da Adobe Target (come i segmenti di script), questa opzione ti consente di risolvere il segmento in AEM e di inviare ad Adobe Target informazioni sul fatto che il segmento è attivo. |
 | Parametri di contesto ereditati | Elenca i parametri di contesto ereditati dal framework Adobe Target, se presenti, associati alla pagina selezionata. |
 | Parametri di contesto | Tocca o fai clic su Aggiungi campo per configurare parametri di contesto aggiuntivi (come quelli disponibili nel framework di Target). I parametri di contesto aggiunti al componente si applicano solo a quel componente e non a un altro, come accadrebbe se si aggiungessero parametri di contesto direttamente al framework. |
 | Parametri statici | Tocca o fai clic su Aggiungi campo per configurare parametri statici aggiuntivi (come quelli disponibili nel framework di Target). I parametri statici aggiunti al componente si applicano solo a quel componente e non a un altro, come accadrebbe se si aggiungessero parametri statici direttamente al framework. I parametri statici non sono contenuti nel contesto (contesto cliente del Content Hub). |

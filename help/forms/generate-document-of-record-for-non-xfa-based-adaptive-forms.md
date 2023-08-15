@@ -2,9 +2,9 @@
 title: Generare un documento di record per Adaptive Forms
 description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4143'
+source-wordcount: '4139'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,7 @@ Quando un modulo adattivo è configurato per generare automaticamente un documen
 * Gli sviluppatori di moduli non devono mantenere manualmente le associazioni dati. Il documento di record generato automaticamente si occupa degli aggiornamenti relativi all’associazione dei dati.
 * Gli sviluppatori di moduli non devono nascondere manualmente i campi contrassegnati come esclusi dal documento di record. Il documento di record generato automaticamente è preconfigurato per escludere tali campi.
 * L’opzione Documento di record generato automaticamente consente di risparmiare il tempo necessario per creare un modello di modulo per il documento di record.
-* L’opzione Documento di record generato automaticamente consente di utilizzare stili e aspetti diversi utilizzando diversi modelli di base. Consente di selezionare lo stile e l’aspetto migliori per il documento di record per la tua organizzazione. Se non specificate lo stile, gli stili di sistema vengono impostati come predefiniti.
+* L’opzione Documento di record generato automaticamente consente di utilizzare stili e aspetti diversi utilizzando modelli di base diversi. Consente di selezionare lo stile e l’aspetto migliori per il documento di record per la tua organizzazione. Se non specificate lo stile, gli stili di sistema vengono impostati come predefiniti.
 * Il documento di record generato automaticamente assicura che qualsiasi modifica apportata al modulo venga immediatamente riportata nel documento di record.
 
 Per configurare un modulo adattivo in modo da generare automaticamente un documento di record, effettua le seguenti operazioni:
@@ -103,7 +103,7 @@ Associa campi modulo adattivo a campi modello per visualizzare i dati del modulo
 1. Fai clic su **[!UICONTROL Salva]**.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 Puoi utilizzare Invia e-mail, l’azione di invio del flusso di lavoro di Experience Manager insieme a [Passaggio del documento record e altre azioni di invio](configuring-submit-actions.md) per ricevere un documento di record.

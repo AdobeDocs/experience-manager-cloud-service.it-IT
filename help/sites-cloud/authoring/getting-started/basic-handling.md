@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con la navigazione in AEM e il suo utilizzo di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 69%
+source-wordcount: '2975'
+ht-degree: 68%
 
 ---
 
@@ -20,7 +20,7 @@ Questo documento offre una panoramica delle operazioni di base nell’ambiente d
 
 ## Interfaccia touch {#a-touch-enabled-ui}
 
-L’interfaccia utente di AEM è dotata di funzionalità touch. Un’interfaccia touch consente di interagire con il software con azioni come toccare, tenere premuto e scorrere. Poiché l’interfaccia utente di AEM è di tipo touch, puoi usare i gesti touch sui dispositivi abilitati, come il cellulare o il tablet. Tuttavia, sono disponibili anche le azioni del mouse su un dispositivo desktop tradizionale, che offrono flessibilità nella scelta della modalità di creazione dei contenuti.
+L’interfaccia utente di AEM è dotata di funzionalità touch. L&#39;interfaccia touch consente di interagire con il software tramite gesti quali toccare, tenere premuto e scorrere. Poiché l’interfaccia utente di AEM è di tipo touch, puoi usare i gesti touch sui dispositivi abilitati, come il cellulare o il tablet. Tuttavia, sono disponibili anche le azioni del mouse su un dispositivo desktop tradizionale, che offrono flessibilità nella scelta della modalità di creazione dei contenuti.
 
 ## Primi passi {#first-steps}
 
@@ -293,7 +293,7 @@ In tutte le viste, tutti gli elementi possono essere deselezionati con il tasto 
 
 ![Vista a colonne](/help/sites-cloud/authoring/assets/column-view.png)
 
-La vista a colonne consente una navigazione visiva di una struttura del contenuto attraverso una serie di colonne a cascata. Questa vista consente di visualizzare e scorrere la struttura ad albero del sito web.
+La vista a colonne consente una navigazione visiva di una struttura del contenuto attraverso una serie di colonne a cascata. Questa visualizzazione consente di visualizzare e scorrere la struttura ad albero del sito web.
 
 Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengono visualizzate in una colonna a destra. Selezionando una risorsa nella colonna di destra, le risorse figlie verranno visualizzate in un’altra colonna a destra e così via.
 
@@ -418,7 +418,7 @@ Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezion
 
 ![Struttura della timeline](/help/sites-cloud/authoring/assets/timeline.png)
 
-La colonna della timeline consente di effettuare le seguenti operazioni:
+La colonna della timeline consente di:
 
 * Visualizzare vari eventi relativi all’elemento selezionato.
 

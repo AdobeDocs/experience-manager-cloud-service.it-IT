@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 12%
+source-wordcount: '455'
+ht-degree: 15%
 
 ---
 
@@ -36,7 +36,7 @@ Per modificare i metadati:
    >
    >Se un campo di testo è vuoto, non è presente alcun set di metadati. Puoi immettere un valore nel campo e salvarlo per aggiungere tale proprietà di metadati.
 
-Eventuali modifiche ai metadati di una risorsa vengono riscritte nel file binario originale come parte dei dati XMP. Questa operazione viene eseguita mediante un flusso di lavoro Experience Manager di reinserimento dei metadati. Modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritti e le nuove proprietà create (incluse le proprietà personalizzate come `cq:tags`) vengono aggiunti insieme allo schema.
+Eventuali modifiche ai metadati di una risorsa vengono riscritte nel file binario originale come parte dei dati XMP. Questa operazione viene eseguita mediante un flusso di lavoro Experience Manager di reinserimento dei metadati. Modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritti e le proprietà create di recente (comprese le proprietà personalizzate come `cq:tags`) vengono aggiunti insieme allo schema.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -58,13 +58,13 @@ In Experience Manager puoi aggiungere spazi dei nomi personalizzati. Proprio com
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

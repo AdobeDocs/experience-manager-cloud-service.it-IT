@@ -1,15 +1,15 @@
 ---
-title: Varianti - Authoring dei contenuti di frammenti  (Risorse - Frammenti di contenuto)
+title: Varianti - Authoring dei contenuti di frammenti (Risorse - Frammenti di contenuto)
 description: Scopri come le varianti possono rendere ancora più flessibili i contenuti headless in AEM consentendoti di creare contenuti per il frammento e quindi creare varianti di tali contenuti in base allo scopo.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2438'
-ht-degree: 83%
+source-wordcount: '2435'
+ht-degree: 88%
 
 ---
 
-# Varianti - Authoring dei contenuti di frammenti {#variations-authoring-fragment-content}
+# Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
 [Varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una funzione importante dei frammenti di contenuto dell’AEM, in quanto consentono di creare e modificare copie del contenuto principale da utilizzare su canali e/o scenari specifici, rendendo ancora più flessibile la distribuzione di contenuti headless.
 
@@ -40,13 +40,13 @@ Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di m
 
 Quando apri il frammento di contenuto per la modifica, il **Varianti** è aperto per impostazione predefinita. Qui puoi creare il contenuto per l’elemento Principale o per una delle varianti disponibili. Il frammento strutturato contiene vari campi, per vari tipi di dati, definiti nel modello di contenuto.
 
-Esempio:
+Ad esempio:
 
 ![editor a schermo intero](assets/cfm-variations-02.png)
 
 Operazioni disponibili:
 
-* Apportare modifiche al contenuto direttamente in **Varianti** scheda; ogni tipo di dati fornisce diverse opzioni di modifica, ad esempio:
+* Apporta modifiche al contenuto direttamente nella scheda **Varianti**; ogni tipo di dati fornisce diverse opzioni di modifica, ad esempio:
 
    * Per i campi di **Testo su più righe** è inoltre possibile aprire l’[editor a schermo intero](#full-screen-editor) per:
 
@@ -60,16 +60,16 @@ Operazioni disponibili:
 
    * I [tag](/help/sites-cloud/authoring/features/tags.md) sono particolarmente utili per organizzare i frammenti, in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 
-      * La ricerca di un tag restituisce il frammento ed evidenzia la variante con tag.
-      * I tag di variante possono essere utilizzati anche per raggruppare le varianti per un profilo CDN (Content Delivery Network) specifico (per il caching CDN), invece di utilizzare il nome della variante.
+      * La ricerca di un tag restituirà il frammento ed evidenzierà la variante con tag.
+      * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo Content Delivery Network (CDN) specifico (per la memorizzazione in cache di CDN), invece di utilizzare il nome della variante.
 
-     Ad esempio, puoi assegnare ai frammenti rilevanti il tag &quot;Lancio di Natale&quot; per consentire la navigazione solo come sottoinsieme oppure per copiarli e utilizzarli per un altro lancio futuro in una nuova cartella.
+     Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” in modo da poter visualizzare solo tale sottoinsieme di frammenti, oppure per copiarli in una nuova cartella e utilizzarli per un altro lancio futuro.
 
   >[!NOTE]
   >
-  >**Tag** può essere aggiunto (al **Principale** (variazione) come parte del [Metadati](/help/assets/content-fragments/content-fragments-metadata.md)
+  >I **Tag** possono essere aggiunti (alla variante **Principale**) come parte dei [Metadati](/help/assets/content-fragments/content-fragments-metadata.md)
 
-* [Creare e gestire le varianti](#managing-variations) del **Principale** contenuto.
+* [Creare e gestire le varianti](#managing-variations) del contenuto **principale**.
 
 ### Editor a schermo intero {#full-screen-editor}
 
@@ -84,7 +84,7 @@ Verrà aperto l’editor di testo a schermo intero:
 L’editor di testo a schermo intero fornisce:
 
 * accesso a varie [azioni](#actions);
-* a seconda del [formato](#formats), opzioni di formattazione aggiuntive ([Testo formattato](#rich-text)).
+* a seconda del [formato](#formats), opzioni di formattazione aggiuntive ([Testo formattato](#rich-text))
 
 ### Azioni {#actions}
 
@@ -112,7 +112,7 @@ Il formato può essere selezionato quando si utilizza l’editor a schermo inter
 
 ### Testo formattato {#rich-text}
 
-La modifica come testo formattato consente di applicare la seguente formattazione:
+La modifica in formato RTF consente di formattare:
 
 * Grassetto
 * Corsivo
@@ -149,7 +149,7 @@ Testo normale consente di inserire rapidamente contenuti senza formattazione o i
 >
 >Per informazioni complete vedi la documentazione relativa a [Markdown](/help/assets/content-fragments/content-fragments-markdown.md).
 
-Questo consente di formattare il testo utilizzando il linguaggio markdown. Puoi definire:
+Questo consente di formattare il testo utilizzando il markdown. Puoi definire:
 
 * Titoli
 * Paragrafi e interruzioni di riga
@@ -390,7 +390,7 @@ Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments
 
    >[!CAUTION]
    >
-   Se, dopo aver aggiunto un riferimento a un altro frammento, si modifica il formato in:
+   Se, dopo aver aggiunto un riferimento a un altro frammento, modifichi il formato in:
    * **Testo normale**: il riferimento viene perso completamente dal frammento.
    * **Markdown**, il riferimento verrà mantenuto.
 
@@ -414,7 +414,7 @@ Per creare una nuova variante:
 
    >[!NOTE]
    >
-   Quando crei una nuova variante, tutti **Tag** attualmente assegnato al **Principale** La variante viene copiata nella nuova variante.
+   Quando crei una nuova variante, tutti i **Tag** attualmente assegnati alla variante **Principale** vengono copiati nella nuova variante.
 
 ### Modifica di una variante {#editing-a-variation}
 
@@ -459,7 +459,7 @@ Non è possibile eliminare l’elemento **Principale**.
 
 L’elemento **Principale** è parte integrante di un frammento di contenuto e, per definizione, contiene la copia principale del contenuto; le varianti ne contengono le singole versioni aggiornate e personalizzate. Quando viene aggiornato l’elemento Principale, è possibile che le modifiche apportate siano pertinenti anche per le varianti e, pertanto, devono essere propagate.
 
-Quando modifichi una variante, hai accesso all’azione che consente di sincronizzare l’elemento corrente della variante con l’elemento Principale. Questo consente di copiare automaticamente le modifiche apportate all’elemento Principale nella variante desiderata.
+Quando modifichi una variante, hai accesso all’azione che consente di sincronizzare l’elemento corrente della variante con l’elemento Principale. Questo consente di copiare automaticamente le modifiche apportate all’elemento Principale nella variante richiesta.
 
 >[!CAUTION]
 >
@@ -485,8 +485,8 @@ Il trasferimento delle modifiche *da una variante all’elemento **Principale***
 
 1. L’elemento Principale e la variante vengono visualizzati affiancati:
 
-   * Il contenuto aggiunto alla variante è indicato in verde.
-   * II contenuto rimosso dalla variante è indicato in rosso.
+   * Il contenuto aggiunto alla variante è indicato in verde
+   * II contenuto rimosso dalla variante è indicato in rosso
    * Il testo sostituito è indicato in blu.
 
    ![sincronizzazione con l’elemento principale](assets/cfm-variations-11c.png)

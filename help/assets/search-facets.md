@@ -4,9 +4,9 @@ description: In questo articolo viene descritto come creare, modificare e utiliz
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2444'
 ht-degree: 22%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 22%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-Un’implementazione a livello aziendale di Adobe Experience Manager Assets consente di memorizzare molte risorse. Talvolta, trovare la risorsa giusta può essere difficile e richiedere tempo se utilizzi solo le funzionalità di ricerca generiche di Experience Manager.
+Una distribuzione a livello aziendale di Adobe Experience Manager Assets consente di memorizzare molte risorse. Talvolta, trovare la risorsa giusta può essere difficile e richiedere tempo se utilizzi solo le funzionalità di ricerca generiche di Experience Manager.
 
 Utilizza i facet di ricerca nel pannello Filtri per aggiungere maggiore granularità all’esperienza di ricerca e rendere la funzionalità di ricerca più efficiente e versatile. I facet di ricerca aggiungono più dimensioni (predicati) che consentono di eseguire ricerche più complesse. Il pannello Filtri include alcuni facet standard. Puoi anche aggiungere facet di ricerca personalizzati.
 
@@ -134,7 +134,7 @@ Il `Multi Value Property` predicato consente di cercare risorse per più valori.
 
 ## Aggiungere un predicato Tag {#adding-a-tags-predicate}
 
-Il `Tags` Il predicato consente di eseguire ricerche di risorse basate su tag. Per impostazione predefinita, [!DNL Assets] cerca le risorse per trovare una o più corrispondenze di tag in base ai tag specificati. In altre parole, la query di ricerca esegue un&#39;operazione OR utilizzando i tag specificati. Tuttavia, puoi utilizzare l’opzione abbina tutti i tag per cercare le risorse che includono tutti i tag specificati.
+Il `Tags` predicato consente di eseguire ricerche di risorse basate su tag. Per impostazione predefinita, [!DNL Assets] cerca le risorse per trovare una o più corrispondenze di tag in base ai tag specificati. In altre parole, la query di ricerca esegue un&#39;operazione OR utilizzando i tag specificati. Tuttavia, puoi utilizzare l’opzione abbina tutti i tag per cercare le risorse che includono tutti i tag specificati.
 
 1. Fai clic sul logo dell’Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Dalla pagina Forms di ricerca, seleziona **[!UICONTROL Barra di ricerca amministrazione risorse]** e quindi tocca **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
@@ -345,4 +345,3 @@ Se non ti è stato assegnato un ruolo di amministratore, ecco un elenco di autor
 >[!MORELIKETHIS]
 >
 >* [Cercare risorse digitali](search-assets.md).
-

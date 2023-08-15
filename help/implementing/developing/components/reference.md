@@ -2,9 +2,9 @@
 title: Guida di riferimento dei componenti
 description: Guida di riferimento per sviluppatori per i dettagli dei componenti e della loro struttura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3648'
 ht-degree: 2%
 
 ---
@@ -315,7 +315,7 @@ Il comportamento di modifica di un componente viene configurato aggiungendo un `
    * `cq:inplaceEditing` (tipo di nodo `cq:InplaceEditingConfig`): definisce una configurazione per la modifica diretta del componente
    * `cq:listeners` (tipo di nodo `cq:EditListenersConfig`): definisce cosa accade prima o dopo che si verifica un’azione sul componente
 
-Ci sono molte configurazioni esistenti nell&#39;AEM. Puoi cercare facilmente proprietà specifiche o nodi secondari utilizzando lo strumento Query in **CRXDE Lite**.
+Ci sono molte configurazioni esistenti nell&#39;AEM. Puoi cercare facilmente proprietà specifiche o nodi secondari utilizzando lo strumento Query in **CRXDE Liti**.
 
 ### Segnaposto Componente {#component-placeholders}
 

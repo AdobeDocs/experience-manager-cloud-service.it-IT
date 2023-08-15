@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2646'
+source-wordcount: '2643'
 ht-degree: 24%
 
 ---
@@ -153,7 +153,7 @@ Se utilizzi questa opzione, il flusso di lavoro di traduzione viene eseguito per
 
 ### Aggiorna copie per lingua {#update-language-copies}
 
-Esegui questo flusso di lavoro per tradurre qualsiasi set aggiuntivo di risorse e includerlo in una copia per lingua specifica. In questo caso, le risorse tradotte vengono aggiunte alla cartella di destinazione che contiene già le risorse tradotte in precedenza. A seconda della scelta di opzioni, viene creato un progetto di traduzione o viene aggiornato un progetto di traduzione esistente per le nuove risorse. Il flusso di lavoro Aggiorna copie per lingua include le seguenti opzioni:
+Esegui questo flusso di lavoro per tradurre qualsiasi set aggiuntivo di risorse e includerlo in una copia per lingua specifica. In questo caso, le risorse tradotte vengono aggiunte alla cartella di destinazione che contiene già risorse tradotte in precedenza. A seconda della scelta di opzioni, viene creato un progetto di traduzione o viene aggiornato un progetto di traduzione esistente per le nuove risorse. Il flusso di lavoro Aggiorna copie per lingua include le seguenti opzioni:
 
 * Crea un nuovo progetto di traduzione
 * Aggiungi a progetto di traduzione esistente
@@ -206,7 +206,7 @@ In questo flusso di lavoro, le risorse da tradurre vengono copiate nella directo
 
 **Aggiorna copie per lingua**
 
-Esegui questo flusso di lavoro per tradurre un gruppo aggiuntivo di risorse e includerlo in una copia per lingua specifica. In questo caso, le risorse tradotte vengono aggiunte alla cartella di destinazione che contiene già le risorse tradotte in precedenza.
+Esegui questo flusso di lavoro per tradurre un gruppo aggiuntivo di risorse e includerlo in una copia per lingua specifica. In questo caso, le risorse tradotte vengono aggiunte alla cartella di destinazione che contiene già risorse tradotte in precedenza.
 
 >[!NOTE]
 >
@@ -267,7 +267,7 @@ L’applicazione dei servizi cloud di traduzione direttamente nella cartella del
 Se vuoi applicare un connettore personalizzato per i servizi di traduzione che desideri utilizzare nei flussi di lavoro di traduzione, attieniti alla seguente procedura. Per applicare un connettore personalizzato, installalo da [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md). Quindi, configura il connettore dalla console Cloud Services. Dopo aver configurato il connettore, questo è disponibile nell’elenco dei connettori nella scheda Cloud Services descritta in [Applicazione dei servizi di traduzione](#applying-the-translation-services). Dopo aver applicato il connettore personalizzato e aver eseguito i flussi di lavoro di traduzione, nella sezione **[!UICONTROL Riepilogo di traduzione]** del progetto di traduzione vengono visualizzati i dettagli del connettore, rispettivamente sotto le head **[!UICONTROL Provider]** e **[!UICONTROL Metodo]**.
 
 1. Installare il connettore da [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md).
-1. Tocca o fai clic sul logo dell’Experience Manager, quindi passa a **[!UICONTROL Strumenti > Implementazione > Cloud Services]**.
+1. Tocca o fai clic sul logo dell’Experience Manager, quindi passa a **[!UICONTROL Strumenti > Implementazione > Cloud Service]**.
 1. Nella pagina **[!UICONTROL Cloud Services]**, individua il connettore installato in **[!UICONTROL Servizi di terze parti]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

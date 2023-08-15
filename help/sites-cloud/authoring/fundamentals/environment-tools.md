@@ -2,10 +2,10 @@
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 59%
+source-wordcount: '2150'
+ht-degree: 57%
 
 ---
 
@@ -15,7 +15,7 @@ L’ambiente di authoring di AEM offre diversi metodi per organizzare e modifica
 
 ## Gestione del sito {#managing-your-site}
 
-La console **Sites** consente di navigare nel sito web e di gestirlo utilizzando la barra dell’intestazione, la barra degli strumenti, le icone delle azioni (per la risorsa selezionata), le breadcrumb e, se selezionate, le barre laterali secondarie (ad esempio Timeline e Riferimenti).
+Il **Sites** console consente di navigare nel sito web e di gestirlo mediante la barra intestazione, la barra degli strumenti, le icone delle azioni (per la risorsa selezionata), le breadcrumb e, se selezionate, le barre laterali secondarie (ad esempio Timeline e Riferimenti).
 
 Ad esempio, nella vista a colonne:
 
@@ -265,9 +265,9 @@ Inoltre, **Informazioni pagina** può fornire accesso ad analytics e alle raccom
 Esistono diverse modalità di modifica di una pagina che consentono di eseguire azioni diverse:
 
 * [Modifica](/help/sites-cloud/authoring/fundamentals/editing-content.md) : modalità da utilizzare per la modifica del contenuto della pagina.
-* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md): consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout).
+* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) : consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout)
 * [Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) - aumentare la rilevanza dei contenuti attraverso il targeting e la misurazione su tutti i canali.
-* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - consente di visualizzare lo stato di una pagina in un determinato momento.
+* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : consente di visualizzare lo stato di una pagina in un determinato momento.
 * [Stato Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : consente di ottenere una rapida panoramica dello stato della live copy e dei componenti che non vengono ereditati.
 * [Modalità Sviluppatore](/help/implementing/developing/tools/developer-mode.md)
 * [Anteprima](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) : utilizzato per visualizzare l’aspetto che la pagina ha nell’ambiente di pubblicazione o per spostarsi utilizzando i collegamenti presenti nel contenuto.

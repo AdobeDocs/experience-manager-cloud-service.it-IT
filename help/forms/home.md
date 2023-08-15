@@ -3,10 +3,10 @@ title: Introduzione a  [!DNL AEM Forms]  as a Cloud Service
 description: Scopri AEM Forms e come ti può aiutare a creare moduli e documenti pronti da usare in azienda. Scopri Platform as a Service (PaaS) e come gestire moduli digitali e processi aziendali di classe enterprise, e collega Forms ad Adobe Sign e alle origini dati correnti.
 landing-page-description: Scopri come utilizzare i moduli in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 92%
+source-wordcount: '1155'
+ht-degree: 90%
 
 ---
 
@@ -51,7 +51,7 @@ Usa dei flussi di lavoro incentrati sui moduli per automatizzare l’elaborazion
 
 ## Ottimizzare le prestazioni dei moduli
 
-Il servizio si integra con Adobe Analytics, che consente di acquisire e tenere traccia delle metriche delle prestazioni relative ai moduli pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate basate sui dati in merito alle modifiche necessarie a rendere i moduli o i documenti più utilizzabili. Puoi utilizzare Adobe Analytics per scoprire i pattern di interazione e i problemi che gli utenti devono affrontare durante l’utilizzo dei moduli adattivi.
+Il servizio si integra con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate basate sui dati in merito alle modifiche necessarie a rendere i moduli o i documenti più utilizzabili. Puoi utilizzare Adobe Analytics per scoprire i pattern di interazione e i problemi che gli utenti devono affrontare durante l’utilizzo dei moduli adattivi.
 
 
 ## Inizia {#key-features}

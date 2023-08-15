@@ -1,10 +1,10 @@
 ---
-title: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1436'
 ht-degree: 29%
 
 ---
@@ -48,7 +48,7 @@ La prossima versione è pianificata per il 15 luglio 2021.
 
 ### Novità {#what-is-new-junecm}
 
-* Ora il servizio di anteprima viene distribuito su base continua per tutti i programmi. I clienti ricevono una notifica interna al prodotto quando il programma è abilitato per il servizio Anteprima. Consulta [Accesso al servizio di anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) per ulteriori dettagli.
+* Ora il servizio di anteprima viene distribuito su base continua per tutti i programmi. I clienti ricevono una notifica interna al prodotto quando il programma è abilitato per il servizio Anteprima. Consulta [Accesso al servizio Anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) per ulteriori dettagli.
 
 * Ora le dipendenze Maven scaricate durante la fase di build vengono memorizzate nella cache tra le esecuzioni della pipeline. La funzione verrà attivata per i clienti nelle prossime settimane.
 

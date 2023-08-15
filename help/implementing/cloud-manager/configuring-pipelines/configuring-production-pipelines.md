@@ -3,10 +3,10 @@ title: Configurazione delle pipeline di produzione
 description: Scopri come configurare le pipeline di produzione per generare e distribuire il codice negli ambienti di produzione.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 90%
+source-wordcount: '1507'
+ht-degree: 88%
 
 ---
 
@@ -19,7 +19,7 @@ Per configurare le pipeline di produzione, l’utente deve avere il ruolo **[Res
 
 >[!NOTE]
 >
->Non è possibile configurare una pipeline di produzione senza aver prima completato la creazione del programma, aggiunto almeno un ramo a un archivio Git e aver creato un set di ambienti di produzione e staging.
+>Non è possibile configurare una pipeline di produzione finché non è stata completata la creazione del programma, non è stato creato almeno un ramo in un archivio Git e non è stato creato un set di ambienti di produzione e di staging.
 
 Prima di iniziare la distribuzione del codice, è necessario configurare le impostazioni della pipeline da [!UICONTROL Cloud Manager].
 

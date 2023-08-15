@@ -3,9 +3,9 @@ title: "Interfaccia utente di [!DNL Assets view]"
 description: Comprendere l’interfaccia utente e la navigazione in [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 88%
 
 ---
@@ -44,7 +44,7 @@ Quando accedi a [!DNL Assets view], viene visualizzata la seguente interfaccia.
 * [Attività](/help/assets/my-workspace-assets-view.md): nella scheda **Le mie attività** puoi visualizzare le attività che ti sono state assegnate. Nella scheda **Attività assegnate** trovi invece le attività che hai creato. Inoltre, le attività che hai completato si trovano nella scheda **Attività completate**.
 * [Risorse](/help/assets/manage-organize-assets-view.md): elenco di tutte le cartelle a cui ai accesso, con struttura ad albero.
 * **Visualizzate di recente**: elenco delle risorse visualizzate in anteprima di recente. [!DNL Assets view] mostra solo le risorse visualizzate in anteprima. Non visualizza le risorse che scorri quando esplori i file o le cartelle dell’archivio.
-* [Raccolte](/help/assets/manage-collections-assets-view.md): una raccolta è un set di risorse, cartelle o altre raccolte nella vista Risorse di Adobe Experience Manager. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti. A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Puoi condividere più raccolte con un utente. Ogni raccolta contiene riferimenti alle risorse. L’integrità dei riferimenti alle risorse viene mantenuta tra le varie raccolte.
+* [Raccolte](/help/assets/manage-collections-assets-view.md): una raccolta è un insieme di risorse, cartelle o altre raccolte nella vista Risorse di Adobe Experience Manager. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti. A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Puoi condividere più raccolte con un utente. Ogni raccolta contiene riferimenti alle risorse. L’integrità dei riferimenti alle risorse viene mantenuta tra le varie raccolte.
 
 * [Approfondimenti](/help/assets/manage-reports-assets-view.md#view-live-statistics): in [!DNL Assets view], puoi visualizzare insight in tempo reale nella tua dashboard. La vista Risorse consente di visualizzare i dati in tempo reale per l’ambiente di visualizzazione Risorse con la dashboard Approfondimenti. Puoi visualizzare le metriche degli eventi in tempo reale negli ultimi 30 giorni o negli ultimi 12 mesi.
 * **Cestino**: mostra l’elenco delle risorse eliminate dalla cartella principale **[!UICONTROL Risorse]**. È possibile selezionare una risorsa nella cartella Cestino per ripristinarla nella posizione originale o eliminarla definitivamente. Puoi anche specificare una parola chiave o applicare filtri standard o personalizzati per cercare le risorse appropriate all’interno della cartella Cestino. Per ulteriori informazioni sull’utilizzo di filtri standard e personalizzati, consulta [Cercare le risorse nella vista Risorse](/help/assets/search-assets-view.md).
@@ -78,9 +78,9 @@ Per accedere a una cartella, fai doppio clic sulle miniature della cartella oppu
 
 Prima di utilizzare, condividere o scaricare una risorsa, puoi visualizzarla più da vicino. La funzione di anteprima consente di visualizzare non solo le immagini ma anche alcuni altri tipi di risorse supportati.
 
-Per visualizzare in anteprima una risorsa, selezionala e fai clic sull’[!UICONTROL Dettagli] ![icona dei dettagli](assets/do-not-localize/edit-in-icon.png) dalla barra degli strumenti nella parte superiore. Inoltre, puoi visualizzarne i metadati e intraprendere altre azioni.
+Per visualizzare in anteprima una risorsa, selezionala e fai clic sull’[!UICONTROL Dettagli] ![icona dei dettagli](assets/do-not-localize/edit-in-icon.png) dalla barra degli strumenti nella parte superiore. Non puoi solo visualizzare la risorsa, ma anche i metadati dettagliati e intraprendere altre azioni.
 
-![Visualizzare l’anteprima di una risorsa](assets/preview-asset-2.png)
+![Visualizzare in anteprima una risorsa](assets/preview-asset-2.png)
 
 *A: Tornare alla cartella corrente o al risultato della ricerca corrente nell’archivio*
 *B: Nome e formato del file che si sta visualizzando in anteprima*

@@ -2,9 +2,9 @@
 title: Utilizzo dei contenuti di destinazione in più siti
 description: Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito integrato dell’AEM per contenuti mirati
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2891'
+source-wordcount: '2890'
 ht-degree: 31%
 
 ---
@@ -78,7 +78,7 @@ Potresti anche avere **multiplo** marchi utilizzati in un sito, che potrebbe ess
 
 ## Esempio: targeting del contenuto in base alla geografia {#example-targeting-content-based-on-geography}
 
-L’utilizzo di più siti per contenuti mirati consente di condividere, eseguire il rollout o isolare i contenuti di personalizzazione. Per illustrare meglio come viene utilizzata questa funzione, considera uno scenario in cui desideri controllare come viene implementato il contenuto di destinazione in base alla geografia, come nello scenario seguente:
+L’utilizzo di più siti per contenuti mirati consente di condividere, distribuire o isolare i contenuti di personalizzazione. Per illustrare meglio come viene utilizzata questa funzione, considera uno scenario in cui desideri controllare come viene implementato il contenuto di destinazione in base alla geografia, come nello scenario seguente:
 
 Esistono quattro versioni dello stesso sito basate sulla geografia:
 

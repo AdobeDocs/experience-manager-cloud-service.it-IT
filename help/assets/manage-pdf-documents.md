@@ -4,9 +4,9 @@ description: Gestire i documenti PDF in [!DNL Adobe Experience Manager] as a [!D
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '849'
 ht-degree: 4%
 
 ---

@@ -2,9 +2,9 @@
 title: Genera documento di record per Adaptive Forms
 description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3109'
+source-wordcount: '3105'
 ht-degree: 2%
 
 ---
@@ -66,8 +66,8 @@ Quando un modulo adattivo è configurato per generare automaticamente un documen
 * Gli sviluppatori di moduli non devono mantenere manualmente le associazioni dati. Il documento di record generato automaticamente si occupa degli aggiornamenti relativi all’associazione dei dati.
 * Gli sviluppatori di moduli non devono nascondere manualmente i campi contrassegnati come esclusi dal documento di record. Il documento di record generato automaticamente è preconfigurato per escludere tali campi.
 * L’opzione Documento di record generato automaticamente consente di risparmiare il tempo necessario per creare un modello di modulo per il documento di record.
-* L’opzione Documento di record generato automaticamente consente di utilizzare stili e aspetti diversi utilizzando diversi modelli di base. Consente di selezionare lo stile e l’aspetto migliori per il documento di record per la tua organizzazione. Se non specificate lo stile, gli stili di sistema vengono impostati come predefiniti.
-* Il documento di record generato automaticamente assicura che qualsiasi modifica apportata al modulo venga immediatamente riportata nel documento di record.
+* L’opzione Documento di record generato automaticamente consente di utilizzare stili e aspetti diversi utilizzando modelli di base diversi. Consente di selezionare lo stile e l’aspetto migliori per il documento di record per la tua organizzazione. Se non specificate lo stile, gli stili di sistema vengono impostati come predefiniti.
+* Il documento di record generato automaticamente garantisce che qualsiasi modifica apportata al modulo venga immediatamente riportata nel documento di record.
 
 Per configurare un modulo adattivo in modo da generare automaticamente un documento di record, effettua le seguenti operazioni:
 
@@ -94,7 +94,7 @@ Associa campi modulo adattivo a campi modello per visualizzare i dati del modulo
 1. Fai clic su **[!UICONTROL Salva]**.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 Puoi utilizzare le azioni di invio, ad esempio &quot;Invia e-mail&quot;, &quot;Richiama un flusso di lavoro AEM&quot;, &quot;Richiama un flusso Power Automate&quot; e altro [Invia azioni](configuring-submit-actions.md) per ricevere un documento di record.
@@ -328,14 +328,21 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
       * **Famiglia font**: famiglia di caratteri del testo nel Document of Record PDF.
 
       * **Includi oggetti modulo non associati al modello dati**: l’impostazione della proprietà include i campi non associati dal modulo adattivo basato su schema nel documento di record.
+
       <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
       * **Nascondi descrizione pannelli**: quando si imposta la proprietà, la descrizione del pannello o della tabella viene esclusa dal documento di record. Applicabile per il pannello e la tabella.
+
+
+
    1. **Proprietà del campo modulo**:
       * **Per i componenti Casella di controllo e Pulsante di opzione, mostra solo i valori selezionati**: impostando la proprietà vengono visualizzati solo i valori selezionati delle caselle di controllo e dei pulsanti di scelta in [!UICONTROL Documento record].
       * **Separatore per più valori**: per visualizzare più valori, puoi scegliere qualsiasi separatore, ad esempio virgola o interruzione di riga.
       * **Allineamento opzioni**: puoi selezionare l’allineamento desiderato (Orizzontale, Verticale, Come modulo adattivo) per impostare l’allineamento dei campi, ad esempio la casella di controllo o il pulsante di opzione da visualizzare [!UICONTROL Documento record]. Per impostazione predefinita, l’allineamento verticale è impostato per i campi in [!UICONTROL Documento record]. Impostazione delle proprietà da [!UICONTROL Proprietà campo modulo] di DoR sovrascrive le proprietà impostate in [!UICONTROL Allineamento elemento] per i campi di un modulo adattivo. Nel caso, seleziona [!UICONTROL Come modulo adattivo] , l’allineamento configurato in un’istanza di authoring di moduli adattivi viene utilizzato per [!UICONTROL Documento record] campi.
       * **Numero di opzioni per l&#39;allineamento orizzontale**: è possibile impostare il numero di opzioni da visualizzare nel documento di record per l’allineamento orizzontale.
+
+
+
    1. **Proprietà pagina mastro**:
       * **Immagine logo**: puoi scegliere di utilizzare l’immagine del logo dal modulo adattivo, sceglierne una da DAM o caricarne una dal computer.
       * **Titolo modulo**: titolo del documento record.
@@ -343,7 +350,9 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
       * **Etichetta liberatoria**: etichetta della liberatoria.
       * **Esclusione di responsabilità**: testo che specifica la portata dei diritti e degli obblighi sul documento record.
       * **Testo liberatoria**: testo della liberatoria.
+
       ![Proprietà pagina mastro](/help/forms/assets/dorpropertiesimg.png)
+
    >[!NOTE]
    >
    >Se utilizzi un modello di modulo adattivo creato con una versione di Designer precedente alla 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, accertati che nel modello di modulo adattivo nel sottomodulo principale sia presente quanto segue:

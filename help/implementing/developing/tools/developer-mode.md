@@ -4,9 +4,9 @@ seo-title: Developer Mode
 description: Modalità sviluppatore apre un pannello laterale con diverse schede che forniscono a uno sviluppatore informazioni sulla pagina corrente
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '527'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Viene mostrata una struttura ad albero componente che:
 * Mostra il tempo di calcolo lato server necessario per eseguire il rendering del componente.
 * Consente di espandere la struttura e selezionare componenti specifici all&#39;interno della struttura. La selezione consente di accedere ai dettagli dei componenti, ad esempio:
    * Percorso archivio
-   * Collegamenti agli script (a cui si accede in CRXDE Lite)
+   * Collegamenti agli script (a cui si accede in CRXDE Liti)
    * Dettagli del componente come mostrato nella [Console Componenti](/help/sites-cloud/authoring/features/components-console.md)
 * I componenti selezionati nella struttura sono indicati da un bordo blu nell’editor.
 
@@ -74,7 +74,7 @@ Ciascuna voce di componente può avere le seguenti opzioni:
 
      ![Visualizza dettagli](assets/developer-mode-view-details.png)
 
-* **Modifica script:** Un collegamento che apre lo script del componente in CRXDE Lite.
+* **Modifica script:** Un collegamento che apre lo script del componente in CRXDE Liti.
 
 * **Visualizza dettagli componenti:** Apre i dettagli del componente all&#39;interno di [Console Componenti](/help/sites-cloud/authoring/features/components-console.md).
 
@@ -89,7 +89,7 @@ Inoltre, l’espansione di una voce di componente toccando o facendo clic sulla 
 
 Si spera che **Errori** La scheda sarà sempre vuota (come sopra), ma in caso di problemi possono essere visualizzati i seguenti dettagli per ciascun componente:
 
-* Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli dell’errore e collegamenti diretti al codice appropriato all’interno di CRXDE Lite.
+* Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli dell’errore e collegamenti diretti al codice appropriato all’interno di CRXDE Liti.
 * Un avviso se il componente apre una sessione di amministrazione.
 
 Ad esempio, se viene chiamato un metodo non definito, l&#39;errore risultante viene visualizzato nel **Errori** e la voce del componente nella struttura ad albero del **Componenti** verrà inoltre contrassegnata con un indicatore quando si verifica un errore.

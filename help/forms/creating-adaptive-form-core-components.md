@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 6d9ebc5410f6ffce0f0c7c7f4e9302b30e82b70b
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2342'
-ht-degree: 6%
+source-wordcount: '2340'
+ht-degree: 5%
 
 ---
 
@@ -35,7 +35,7 @@ Prima di iniziare, scopri i tipi di componenti Forms disponibili:
 
 Per creare un modulo adattivo è necessario quanto segue:
 
-* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: quando crei un nuovo programma, i Componenti core adattivi di Forms sono già abilitati per il tuo ambiente. Se disponi di un ambiente Forms as a Cloud Service basato sull&#39;Archtipo 39 o versioni precedenti, vedi [Abilitare i componenti core dei moduli adattivi per il tuo ambiente](enable-adaptive-forms-core-components.md). Quando abiliti i componenti core per il tuo ambiente, vengono aggiunti il modello e l&#39;area di lavoro del **componente core moduli adattivi**. Se la tua versione dell’SDK di AEM è precedente alla 2023.02.0, [assicurati di aver abilitato il flag `prerelease` nel tuo ambiente ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features), poiché i componenti core dei moduli adattivi facevano parte della versione prerelease precedente alla versione 2023.02.0.
+* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: quando crei un nuovo programma, i Componenti core adattivi di Forms sono già abilitati per il tuo ambiente. Se disponi di un ambiente Forms as a Cloud Service basato su Archetipo 39 o versioni precedenti, [Abilitare i componenti core Forms adattivi per il tuo ambiente](enable-adaptive-forms-core-components.md). Quando abiliti i componenti core per il tuo ambiente, vengono aggiunti il modello e l&#39;area di lavoro del **componente core moduli adattivi**. Se la tua versione dell’SDK di AEM è precedente alla 2023.02.0, [assicurati di aver abilitato il flag `prerelease` nel tuo ambiente ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features), poiché i componenti core dei moduli adattivi facevano parte della versione prerelease precedente alla versione 2023.02.0.
 
 * **Un modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’azione &quot;look and feel&quot; e &quot;submit&quot; definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Il servizio cloud fornisce un modello OOTB, denominato vuoto:
 

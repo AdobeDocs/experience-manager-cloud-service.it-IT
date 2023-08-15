@@ -2,18 +2,18 @@
 title: Layout reattivo
 description: AEM consente di realizzare un layout dinamico per le pagine
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 57%
+source-wordcount: '1739'
+ht-degree: 53%
 
 ---
 
-# Layout reattivo   {#responsive-layout}
+# Layout reattivo {#responsive-layout}
 
-AEM consente di disporre di un layout reattivo per le pagine utilizzando **Contenitore di layout** componente.
+AEM consente di disporre di un layout dinamico per le pagine utilizzando **Contenitore di layout** componente.
 
-Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato della periferica o della finestra. Il componente viene utilizzato [**insieme alla modalità** Layout](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), che consente di creare e modificare il layout reattivo (o dinamico) in base al dispositivo.
+Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato della periferica o della finestra. Il componente viene utilizzato insieme al [**Layout** modalità](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), che consente di creare e modificare il layout dinamico a seconda del dispositivo.
 
 Il contenitore layout:
 
@@ -96,7 +96,7 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
 
    La barra degli strumenti dell’emulatore mostra le seguenti opzioni di layout aggiuntive:
 
-   * **Ruota dispositivo**: consente di ruotare l’orientamento di un dispositivo da verticale a orizzontale e viceversa.
+   * **Ruota dispositivo** - Consente di ruotare l&#39;orientamento di un dispositivo da verticale a orizzontale e viceversa.
 
    ![Pulsante Ruota dispositivo in orizzontale](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Pulsante Ruota dispositivo in verticale](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -195,8 +195,8 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
   >
   >Proporzioni e rapporti vengono mantenuti quando componenti come **Immagini** sono ridimensionati.
 
-* Facendo clic/toccando un componente di contenuti la barra degli strumenti consente di:
-   * **Elemento padre:** consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
+* Tocca o fai clic su un componente di contenuto; la barra degli strumenti ti consente di:
+   * **Elemento padre** : consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
    * **Mobile in nuova riga** : il componente viene spostato su una nuova riga, a seconda dello spazio disponibile all’interno della griglia.
    * **Nascondi componente** : il componente viene reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
 

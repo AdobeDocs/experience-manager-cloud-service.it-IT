@@ -2,10 +2,10 @@
 title: Esportazione in formato CSV
 description: Esportare le informazioni sulle pagine in un file CSV nel sistema locale
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 85%
+source-wordcount: '197'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 85%
 >
 >Vengono utilizzate la funzione di download e la destinazione predefinita del browser in uso.
 
-La procedura guidata **Crea esportazione CSV** permette di selezionare:
+Il **Crea esportazione CSV** procedura guidata:
 
 * Proprietà da esportare
    * Metadati

@@ -3,9 +3,9 @@ title: Configurare un’azione di invio per un modulo adattivo
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 hide: true
 hidefromtoc: true
-source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3365'
 ht-degree: 1%
 
 ---
@@ -114,7 +114,7 @@ Il **[!UICONTROL Invia a SharePoint]** L’azione di invio collega un modulo ada
 
 Per collegare AEM Forms al tuo Microsoft® Sharepoint Storage:
 
-1. Vai al tuo **AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Vai al tuo **AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Seleziona un **Contenitore configurazione**. Non fare clic sulla casella di controllo del Contenitore di configurazione. Fai clic sul nome del Contenitore di configurazione per selezionarlo. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata di configurazione di SharePoint.
    ![Configurazione SharePoint](/help/forms/assets/sharepoint_configuration.png)
@@ -254,7 +254,7 @@ Il **[!UICONTROL Invia a OneDrive]** L&#39;azione di invio collega un modulo ada
 
 Per collegare AEM Forms allo storage Microsoft® OneDrive:
 
-1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® OneDrive]**.
+1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® OneDrive]**.
 1. Dopo aver selezionato **[!UICONTROL Microsoft® OneDrive]**, viene reindirizzato a **[!UICONTROL Browser OneDrive]**.
 1. Seleziona un **Contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]**. Verrà visualizzata la configurazione guidata di OneDrive.
@@ -310,7 +310,7 @@ Il **[!UICONTROL Invia ad Azure Blob Storage]**  L’azione di invio collega un 
 ### Creare un contenitore di archiviazione BLOB di Azure {#create-azure-configuration}
 
 Per connettere AEM Forms ai contenitori di archiviazione Azure:
-1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Archiviazione Azure]**.
+1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Archiviazione Azure]**.
 1. Dopo aver selezionato **[!UICONTROL Archiviazione Azure]**, viene reindirizzato a **[!UICONTROL Browser archiviazione Azure]**.
 1. Seleziona un **Contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata Crea configurazione di archiviazione Azure.

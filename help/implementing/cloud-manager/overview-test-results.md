@@ -2,10 +2,10 @@
 title: Panoramica dei test di Cloud Manager
 description: Ottieni una panoramica dei tre tipi di test eseguiti automaticamente da Cloud Manager per garantire la qualità del codice personalizzato.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 100%
+source-wordcount: '162'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ Cloud Manager supporta tre categorie di test per le pipeline di Cloud Service.
 
 1. [Test dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   * I test dell’audit dell’esperienza sono abilitati in tutte le pipeline di produzione di Cloud Manager e non possono essere ignorati.
+   * I test di audit dell’esperienza sono abilitati in tutte le pipeline di produzione di Cloud Manager e non possono essere ignorati.
 
 I test possono essere:
 

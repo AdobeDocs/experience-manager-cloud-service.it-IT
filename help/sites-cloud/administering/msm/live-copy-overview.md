@@ -4,10 +4,10 @@ description: Scopri le nozioni di base della console Panoramica Live Copy per co
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 92%
+source-wordcount: '729'
+ht-degree: 89%
 
 ---
 
@@ -94,7 +94,7 @@ Quando selezioni una pagina Live Copy, sono disponibili le seguenti azioni:
 * **[Sincronizza](overview.md#rollout-and-synchronize)**: sincronizza una Live Copy per estrarre le modifiche dalla sorgente alla Live Copy.
 * **[Reimposta](creating-live-copies.md#resetting-a-live-copy-page)**: reimposta una pagina Live Copy per rimuovere tutte le cancellazioni di ereditarietà e ripristinare la pagina allo stesso stato della pagina sorgente.
 * **[Sospendi](overview.md#suspending-and-cancelling-inheritance-and-synchronization)**: disattiva temporaneamente la relazione in tempo reale tra una Live Copy e la relativa pagina blueprint.
-* **[Riprendi](creating-live-copies.md#resuming-inheritance-for-a-page)**: riprendi consente di ripristinare una relazione sospesa.
+* **[Riprendi](creating-live-copies.md#resuming-inheritance-for-a-page)** - Riprendi consente di ripristinare una relazione sospesa.
 * **[Stacca](overview.md#detaching-a-live-copy)**: rimuove definitivamente la relazione live tra una Live Copy e la relativa pagina blueprint.
 
 ## Stato di relazione {#relationship-status}

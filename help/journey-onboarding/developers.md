@@ -4,10 +4,10 @@ description: Quando l’amministratore di sistema ha configurato le risorse clou
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 98%
+source-wordcount: '1415'
+ht-degree: 93%
 
 ---
 
@@ -150,6 +150,6 @@ Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre 
 * [Utilizzo di Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md): scopri come utilizzare gli archivi Git di Cloud Manager e come integrare un archivio Git personalizzato e gestito dal cliente on-premise con Cloud Manager.
 * [Configurazione dell’ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it): questo tutorial illustra i passaggi necessari per la configurazione di un ambiente di sviluppo locale per Adobe Experience Manager (AEM) con l’SDK di AEM as a Cloud Service.
 * [Guida introduttiva di AEM Sites: tutorial WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it): questo tutorial in più sezioni è concepito per sviluppatori e sviluppatrici che utilizzano per la prima volta Adobe Experience Manager (AEM). Questo tutorial illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, WKND. Il tutorial tratta elementi fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie lato client e lo sviluppo di componenti con Sites di Adobe Experience Manager.
-* [Guida introduttiva delle applicazioni SPA in AEM con React](/help/implementing/developing/hybrid/getting-started-react.md): questo articolo illustra un esempio di applicazione SPA, spiega come viene creata e come iniziare subito a utilizzare un’applicazione SPA personale con il framework React.
-* [Guida introduttiva delle applicazioni SPA in AEM con Angular](/help/implementing/developing/hybrid/getting-started-angular.md): questo articolo illustra un esempio di applicazione SPA, spiega come viene creata e come iniziare subito a utilizzare un’applicazione SPA personale con il framework Angular.
+* [Guida introduttiva dell’SPA nell’AEM con React](/help/implementing/developing/hybrid/getting-started-react.md) - Questo articolo presenta un esempio di applicazione per l’SPA, spiega come viene creata e come iniziare a utilizzare il proprio SPA in modo rapido utilizzando il framework React.
+* [Guida introduttiva dell’SPA nell’AEM con l’uso di Angular](/help/implementing/developing/hybrid/getting-started-angular.md) - Questo articolo presenta un esempio di applicazione per l’SPA, spiega come viene creata e come iniziare subito a utilizzare il proprio SPA utilizzando il framework Angular.
 * [Percorso di sviluppo headless](/help/journey-headless/developer/overview.md): inizia qui il tuo percorso guidato per sviluppare applicazioni headless con AEM.

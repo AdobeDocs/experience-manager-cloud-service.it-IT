@@ -2,10 +2,10 @@
 title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3571'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Un programma può fornire un’unica variante di rete avanzata. Quando bisogna d
 
 ## Uscita flessibile della porta {#flexible-port-egress}
 
-Questa funzionalità avanzata di rete consente di configurare AEM as a Cloud Service per incrementare il traffico attraverso porte diverse da HTTP (porta 80) e HTTPS (porta 443), che sono aperte per impostazione predefinita.
+Questa funzionalità di rete avanzata consente di configurare AEM as a Cloud Service per l’uscita del traffico attraverso porte diverse da HTTP (porta 80) e HTTPS (porta 443), che sono aperte per impostazione predefinita.
 
 ### Considerazioni {#flexible-port-egress-considerations}
 
@@ -198,7 +198,7 @@ La configurazione dell’indirizzo IP in uscita dedicato è identica all’[usci
 
 La differenza principale è che il traffico sarà sempre in uscita da un IP dedicato e univoco. Per trovare tale IP, utilizza un risolutore DNS per identificare l’indirizzo IP associato a `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’indirizzo IP non dovrebbe cambiare, ma se deve cambiare in futuro, viene fornita una notifica avanzata.
 
-Oltre alle regole di routing supportate dall’uscita da porta flessibile nell’endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, l’indirizzo IP in uscita dedicato supporta un parametro `nonProxyHosts`. Questo consente di dichiarare un gruppo di host che devono indirizzare attraverso un intervallo di indirizzi IP condivisi anziché l’indirizzo IP dedicato, il che può essere utile in quanto il traffico in uscita attraverso gli IP condivisi può essere ulteriormente ottimizzato. Gli URL `nonProxyHost` possono seguire i pattern di `example.com` o `*.example.com`, in cui il carattere jolly è supportato solo all’inizio del dominio.
+Oltre alle regole di routing supportate dall’uscita da porta flessibile nell’endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, l’indirizzo IP in uscita dedicato supporta un parametro `nonProxyHosts`. Questo consente di dichiarare un set di host che devono indirizzare attraverso un intervallo di indirizzi IP condivisi anziché l’IP dedicato, il che può essere utile in quanto il traffico in uscita attraverso gli IP condivisi può essere ulteriormente ottimizzato. Gli URL `nonProxyHost` possono seguire i pattern di `example.com` o `*.example.com`, in cui il carattere jolly è supportato solo all’inizio del dominio.
 
 Quando si decide tra uscita da porta flessibile e indirizzo IP in uscita dedicato, i clienti devono scegliere la prima soluzione se non è necessario un indirizzo IP specifico, poiché Adobe può ottimizzare le prestazioni del traffico in uscita da porta flessibile.
 
@@ -556,7 +556,7 @@ Quando si aggiunge un’area geografica aggiuntiva a un ambiente in cui è già 
 
 Se nell’area geografica primaria è già abilitata una configurazione di rete avanzata, segui questi passaggi:
 
-1. Se hai bloccato l’infrastruttura in modo che l’indirizzo IP AEM dedicato sia inserito nell’elenco Consentiti, si consiglia di disabilitare temporaneamente eventuali regole di rifiuto in tale infrastruttura. In caso contrario, si verifica un breve periodo in cui le richieste provenienti dagli indirizzi IP della nuova regione vengono negate dalla propria infrastruttura. Nota che ciò non è necessario se l’infrastruttura è stata bloccata tramite il nome di dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`, ad esempio), perché tutte le aree dell’AEM ricevono il traffico di rete avanzato dallo stesso FQDN
+1. Se hai bloccato l’infrastruttura in modo che l’indirizzo IP AEM dedicato sia inserito nell’elenco Consentiti, si consiglia di disabilitare temporaneamente eventuali regole di rifiuto in tale infrastruttura. In caso contrario, si verifica un breve periodo in cui le richieste provenienti dagli indirizzi IP della nuova regione vengono negate dalla propria infrastruttura. Questa operazione non è necessaria se l&#39;infrastruttura è stata bloccata tramite un nome di dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`, ad esempio), perché tutte le aree dell’AEM ricevono il traffico di rete avanzato dallo stesso FQDN
 1. Crea l’infrastruttura di rete con ambito di programma per l’area geografica secondaria tramite una chiamata POST all’API Crea infrastruttura di rete di Cloud Manager, come descritto nella documentazione di rete avanzata. L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà region
 1. Se l’infrastruttura deve essere bloccata da IP per consentire il traffico AEM, aggiungi gli IP corrispondenti a `p1234.external.adobeaemcloud.com`. Dovrebbe essercene uno per area geografica.
 

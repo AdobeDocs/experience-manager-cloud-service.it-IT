@@ -2,10 +2,10 @@
 title: New Relic One
 description: Scopri il servizio New Relic One di monitoraggio delle prestazioni delle applicazioni (APM) per AEM as a Cloud Service e come accedervi.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 82%
+source-wordcount: '1586'
+ht-degree: 79%
 
 ---
 
@@ -30,7 +30,7 @@ New Relic One APM per AEM as a Cloud Service presenta numerose funzioni.
 
 * Agente New Relic One APM instrumentato che mostra le chiamate al metodo esatto con i numeri delle righe, includendo le dipendenze e i database esterni
 
-* Ottimizzazione olistica delle prestazioni attraverso la combinazione di metriche chiave provenienti dal monitoraggio a livello di infrastruttura e dal monitoraggio delle applicazioni (Adobe Experience Manager)
+* Ottimizzazione olistica delle prestazioni attraverso la combinazione di metriche chiave dal monitoraggio a livello di infrastruttura e dal monitoraggio delle applicazioni (Adobe Experience Manager)
 
 * Esposizione di JMX Mbeans e dei controlli di stato di AEM as a Cloud Service interni alle metriche Insights di New Relic che consentono un’analisi più approfondita delle prestazioni dello stack dell’applicazione e delle metriche relative allo stato.
 
@@ -112,7 +112,7 @@ Per accedere direttamente a New Relic One:
 
 ### Verifica dell’e-mail {#verify-email}
 
-Se ti viene chiesto di verificare l’e-mail durante l’accesso a New Relic One, significa che l’e-mail è associata a più account. Scegli a quale account accedere.
+Se ti viene chiesto di verificare l’e-mail durante l’accesso a New Relic One, significa che l’e-mail è associata a più account. Questo ti consente di scegliere a quale account accedere.
 
 Se non verifichi il tuo indirizzo e-mail, New Relic tenta di accedere con il record utente creato più di recente associato al tuo indirizzo e-mail. Per evitare la verifica dell’e-mail durante ogni tentativo di accesso, seleziona la casella di controllo per **ricordare le tue credenziali** nella schermata di accesso.
 
@@ -120,7 +120,7 @@ Per ulteriore assistenza, apri un ticket di supporto tramite [Portale di support
 
 ## Risoluzione dei problemi di accesso a New Relic One {#troubleshooting}
 
-Se sei stato aggiunto o aggiunta come utente di New Relic One come descritto nella sezione [Gestione degli utenti di New Relic One](#manage-users) e non riesci a trovare l’e-mail di conferma dell’account originale, segui la procedura riportata di seguito.
+Se sei stato aggiunto come utente New Relic One come descritto nella sezione [Gestione degli utenti di New Relic One](#manage-users) e non è possibile individuare l’e-mail di conferma dell’account originale, segui la procedura riportata di seguito.
 
 1. Accedi alla pagina di accesso di New Relic all’indirizzo [`login.newrelic.com/login`](https://login.newrelic.com/login).
 

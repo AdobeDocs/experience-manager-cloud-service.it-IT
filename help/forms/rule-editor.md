@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '6401'
+source-wordcount: '6389'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 <span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
-| Versione | Collegamento articolo |
+| Versione | Articolo collegare |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 | AEM as a Cloud Service | Questo articolo |
@@ -57,15 +57,15 @@ I tipi di regola Mostra, Nascondi, Abilita, Disabilita, Imposta valore di e Conv
 
 >[!NOTE]
 >
->I tipi di regole disponibili, incluse le condizioni e le azioni definite nell&#39;editor di regole, dipendono anche dal tipo di oggetto modulo su cui si sta creando una regola. Nell&#39;editor delle regole vengono visualizzati solo i tipi di regole e le opzioni validi per la scrittura di istruzioni di condizione e azione per un particolare tipo di oggetto modulo. Ad esempio, per un oggetto pannello non vengono visualizzati i tipi di regole Convalida, Imposta valore di, Abilita e Disabilita.
+>I tipi di regole disponibili, incluse le condizioni e le azioni definite nell&#39;editor di regole, dipendono anche dal tipo di oggetto modulo su cui si sta creando una regola. Nell&#39;editor delle regole vengono visualizzati solo i tipi di regole e le opzioni validi per la scrittura di istruzioni di condizione e azione per un particolare tipo di oggetto modulo. Ad esempio, non Vedi convalidare, impostate Valore di, abilitare e disabilitare i tipi di regola per un oggetto pannello.
 
-Per ulteriori informazioni sui tipi di regole disponibili nell’editor di regole, consulta [Tipi di regole disponibili nell’editor di regole](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Per ulteriori informazioni sui tipi di regola disponibili nella regola editor, consulta [ Regola tipi disponibili in regola editor ](rule-editor.md#p-available-rule-types-in-rule-editor-p) .
 
 ### Linee guida per la scelta di un costrutto regola {#guidelines-for-choosing-a-rule-construct}
 
-Sebbene sia possibile ottenere la maggior parte dei casi d’uso utilizzando qualsiasi costrutto di regola, di seguito sono riportate alcune linee guida per scegliere un costrutto rispetto a un altro. Per ulteriori informazioni sulle regole disponibili nell’editor di regole, consulta [Tipi di regole disponibili nell’editor di regole](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Mentre è possibile ottenere la maggior parte dei casi d&#39;uso utilizzando qualsiasi regola costrutto, Ecco alcune linee guida per scegliere un costrutto rispetto a un altro. Per ulteriori informazioni sulle regole disponibili in regola editor, consulta [ tipi di regola disponibili in regola editor ](rule-editor.md#p-available-rule-types-in-rule-editor-p) .
 
-* Una regola tipica del pollice durante la creazione di una regola è pensarla nel contesto dell&#39;oggetto su cui si sta scrivendo una regola. Si supponga di voler nascondere o visualizzare il campo B in base al valore specificato dall&#39;utente nel campo A. In questo caso, si sta valutando una condizione nel campo A e, in base al valore restituito, si sta attivando un&#39;azione nel campo B.
+* Una regola tipica del pollice durante la creazione di un regola è quella di pensarci nel contesto dell&#39;oggetto su cui stai scrivendo un regola. Considera di voler nascondere o mostrare il campo B in base al valore utente specifica nel campo a. In questo caso, stai valutando una condizione sul campo A e, in base al valore restituito, stai attivando un&#39;azione nel campo B.
 
   Pertanto, se si sta scrivendo una regola nel campo B (l&#39;oggetto su cui si sta valutando una condizione), utilizzare il costrutto condizione-azione o il tipo di regola When. Allo stesso modo, utilizza il costrutto action-condition o il tipo di regola Show o Hide sul campo A.
 
@@ -93,10 +93,10 @@ L’editor di regole fornisce i seguenti operatori logici ed eventi utilizzando 
 * **Ha selezionato:** Restituisce true quando l’utente seleziona una particolare opzione per una casella di controllo, un elenco a discesa o un pulsante di scelta.
 * **È inizializzato (evento):** Restituisce true quando viene eseguito il rendering di un oggetto modulo nel browser.
 * **Viene modificato (evento):** Restituisce true quando l&#39;utente modifica il valore immesso o l&#39;opzione selezionata per un oggetto modulo.
-* **Navigazione (evento):** Restituisce true quando l&#39;utente fa clic su un oggetto di spostamento. Gli oggetti di navigazione vengono utilizzati per spostarsi tra i pannelli.
-* **Completamento fase (evento):** Restituisce true al completamento di un passaggio di una regola.
-* **Invio riuscito (evento):** Restituisce true in caso di invio corretto di dati a un modello dati del modulo.
-* **Errore nell’invio (evento):**  Restituisce true in caso di invio non riuscito di dati a un modello dati del modulo.
+* **Navigazione (evento):** restituisce true quando il utente fare clic su un oggetto navigazione. Gli oggetti di navigazione vengono utilizzati per spostarsi tra i pannelli.
+* **Completamento passaggio (evento):** restituisce true quando viene completato un passaggio di un regola.
+* **Invio corretto (evento):** restituisce true al momento dell&#39;invio dei dati a un modello di dati del modulo.
+* **Errore nell&#39;invio (evento):**  restituisce true in caso di invio di dati non riuscito a un modello dati del modulo.
 
 ## Tipi di regole disponibili nell’editor di regole {#available-rule-types-in-rule-editor}
 
@@ -194,13 +194,13 @@ Imposta il valore dell&#39;oggetto A su:
 
 Quando (facoltativo):
 
-(Condizione 1 AND Condizione 2 AND Condizione 3) è TRUE;
+(Condizione 1 e condizione 2 e condizione 3) è vero;
 
-L’esempio seguente utilizza il valore in `dependentid` come input e imposta il valore del campo `Relation` campo all&#39;output del `Relation` argomento della `getDependent` Servizio modello dati modulo.
+L&#39;esempio seguente prende il valore nel `dependentid` campo come input e imposta il valore del `Relation` campo sull&#39;output dell&#39; `Relation` argomento del `getDependent` servizio del modello dati del modulo.
 
-![Set-value-web-service](assets/set-value-web-service.png)
+![Valore di impostazione-Web-Service](assets/set-value-web-service.png)
 
-Esempio di regola Imposta valore tramite il servizio Modello dati modulo
+Esempio di set Valore regola utilizzando il servizio modello dati modulo
 
 >[!NOTE]
 >
@@ -338,15 +338,15 @@ La scheda Oggetti modulo mostra una vista gerarchica di tutti gli oggetti conten
 
 Gli oggetti modulo a cui sono applicate una o più regole valide sono contrassegnati da un punto verde. Se una delle regole applicate a un oggetto modulo non è valida, l&#39;oggetto modulo viene contrassegnato con un punto giallo.
 
-La scheda Funzioni include un set di funzioni incorporate, ad esempio Somma di, Min di, Max di, Media di, Numero di e Convalida modulo. È possibile utilizzare queste funzioni per calcolare i valori nei pannelli e nelle righe di tabella ripetibili e utilizzarli nelle istruzioni di azione e condizione durante la scrittura delle regole. Tuttavia, puoi creare [funzioni personalizzate](#custom-functions) anche.
+La scheda Funzioni include un set di funzioni incorporate, ad esempio Somma di, Min di, Max di, Media di, Numero di e Convalida modulo. È possibile utilizzare queste funzioni per calcolare i valori nei pannelli e nelle righe di tabella ripetibili e utilizzarli nelle istruzioni di azione e condizione durante la scrittura delle regole. Puoi, tuttavia, creare [ anche funzioni ](#custom-functions) personalizzate.
 
-![Scheda Funzioni](assets/functions.png)
+![Le funzioni scheda](assets/functions.png)
 
 >[!NOTE]
 >
->È possibile eseguire la ricerca di testo su oggetti e funzioni, nomi e titoli nelle schede Oggetti e funzioni di Forms.
+>È possibile eseguire ricerca di testo su oggetti e funzioni nomi e titoli nelle schede Forms oggetti e funzioni.
 
-Nell&#39;albero sinistro degli oggetti modulo è possibile toccare gli oggetti modulo per visualizzare le regole applicate a ciascuno degli oggetti. Non solo è possibile spostarsi tra le regole dei vari oggetti modulo, ma è anche possibile copiare e incollare le regole tra gli oggetti modulo. Per ulteriori informazioni, consulta [Regole di copia e incolla](rule-editor.md#p-copy-paste-rules-p).
+Nella struttura a sinistra degli oggetti modulo, è possibile toccare gli oggetti modulo per visualizzare le regole applicate a ciascuno degli oggetti. Non solo è possibile spostarsi tra le regole dei vari oggetti modulo, ma è anche possibile copiare le regole tra gli oggetti del modulo. Per ulteriori informazioni, consulta [ regole ](rule-editor.md#p-copy-paste-rules-p) Incolla copia.
 
 ### C. Attivazione/disattivazione di funzioni e oggetti modulo {#c-form-objects-and-functions-toggle-br}
 
@@ -354,7 +354,7 @@ Quando viene toccato, questo pulsante attiva o disattiva il riquadro delle funzi
 
 ### D. Editor di regole visive {#visual-rule-editor}
 
-L’editor di regole visive è l’area in cui si scrivono le regole nella modalità editor visivo dell’interfaccia utente dell’editor di regole. Consente di selezionare un tipo di regola e di conseguenza di definire condizioni e azioni. Quando si definiscono condizioni e azioni in una regola, è possibile trascinare gli oggetti modulo e le funzioni dal riquadro Oggetti modulo e funzioni.
+L’editor di regole visive è l’area in cui si scrivono le regole nella modalità editor visivo dell’interfaccia utente dell’editor di regole. Ti consente di selezionare un tipo di regola e di definire di conseguenza condizioni e azioni. Quando si definiscono condizioni e azioni in una regola, è possibile trascinare gli oggetti modulo e le funzioni dal riquadro Oggetti modulo e funzioni.
 
 Per ulteriori informazioni sull’utilizzo dell’editor di regole visive, consulta [Scrivi regole](rule-editor.md#p-write-rules-p).
 <!-- 
@@ -761,7 +761,7 @@ Puoi anche trascinare le condizioni all’interno di una regola per modificarla.
 
 ## Condizioni di espressione data {#dateexpression}
 
-L’editor di regole consente di utilizzare i confronti tra date per creare le condizioni.
+L’editor di regole consente di utilizzare i confronti tra date per creare condizioni.
 
 Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se l’ipoteca sulla casa è già stata accettata, che l’utente indica compilando il campo data.
 

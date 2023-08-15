@@ -1,13 +1,13 @@
 ---
 title: Gestisci pubblicazione
-description: Pubblicare o annullare la pubblicazione delle risorse in Experience Manager Assets, Dynamic Media e Brand Portal
+description: Pubblicare o annullare la pubblicazione delle risorse in Experience Manager Assets, Dynamic Medie e Brand Portal
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1627'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ Puoi pubblicare o annullare la pubblicazione delle risorse a livello di risorsa 
 * [Pubblicare le risorse tramite la pubblicazione rapida](#quick-publish)
 * [Pubblicare risorse tramite Gestisci pubblicazione](#manage-publication)
 * [Pubblicare le risorse in un secondo momento](#publish-assets-later)
-* [Pubblicare risorse in Dynamic Media](#publish-assets-to-dynamic-media)
+* [Pubblicare risorse in Dynamic Medie](#publish-assets-to-dynamic-media)
 * [Pubblicare risorse su Brand Portal](#publish-assets-to-brand-portal)
 * [Richiedi pubblicazione](#request-publication)
 * [Limitazioni e suggerimenti](#limitations-and-tips)
@@ -80,7 +80,7 @@ Per filtrare il contenuto della cartella da pubblicare, fai clic su **[!UICONTRO
 
 * `Include folder contents` e `Include only immediate folder contents`
 
-   Se sono selezionate entrambe le opzioni, vengono pubblicate tutte le risorse della cartella selezionata, delle sottocartelle (vuote) e dei riferimenti. Le risorse delle sottocartelle non vengono pubblicate.
+  Se sono selezionate entrambe le opzioni, vengono pubblicate tutte le risorse della cartella selezionata, delle sottocartelle (vuote) e dei riferimenti. Le risorse delle sottocartelle non vengono pubblicate.
 
 <!--
 * [!UICONTROL Include only immediate folder contents]: Only the subfolders content and references are published. 
@@ -96,9 +96,9 @@ Dopo aver applicato i filtri, fai clic su **[!UICONTROL OK]** e quindi fare clic
 
 Nell’illustrazione precedente, puoi vedere valori diversi per **[!UICONTROL Destinazione pubblicazione]** attributo. Ricordiamo che hai scelto di pubblicare su [!DNL Experience Manager Assets] (`Destination: Publish`). Quindi, perché mostra che solo una cartella e una risorsa sono pubblicate in `AEM`e le altre due risorse vengono pubblicate in entrambi `AEM` e `Dynamic Media`?
 
-In questo caso, è necessario comprendere il ruolo delle proprietà della cartella. Di una cartella **[!UICONTROL Modalità di pubblicazione Dynamic Media]** La proprietà svolge un ruolo importante nella pubblicazione. Per visualizzare le proprietà di una cartella, selezionala e fai clic su **[!UICONTROL Proprietà]** dalla barra degli strumenti. Per una risorsa, vedi le proprietà della relativa cartella principale.
+In questo caso, è necessario comprendere il ruolo delle proprietà della cartella. Di una cartella **[!UICONTROL Modalità di pubblicazione Dynamic Medie]** La proprietà svolge un ruolo importante nella pubblicazione. Per visualizzare le proprietà di una cartella, selezionala e fai clic su **[!UICONTROL Proprietà]** dalla barra degli strumenti. Per una risorsa, vedi le proprietà della relativa cartella principale.
 
-La tabella seguente spiega come si verifica la pubblicazione in base al **[!UICONTROL Destinazione]** e **[!UICONTROL Modalità di pubblicazione Dynamic Media]**:
+La tabella seguente spiega come si verifica la pubblicazione in base al **[!UICONTROL Destinazione]** e **[!UICONTROL Modalità di pubblicazione Dynamic Medie]**:
 
 | [!UICONTROL Destinazione] | [!UICONTROL Modalità di pubblicazione Dynamic Media] | [!UICONTROL Destinazione pubblicazione] | Contenuto consentito |
 | --- | --- | --- | --- |
@@ -118,7 +118,7 @@ La tabella seguente spiega come si verifica la pubblicazione in base al **[!UICO
 >Se si seleziona una cartella (`Selective Publish`) e scegliere il [!DNL Dynamic Media] destinazione, il [!UICONTROL Destinazione pubblicazione] riflessi attributo `None`.
 
 
-Cambiiamo ora il **[!UICONTROL Destinazione]** nel caso d’uso precedente, per **[!UICONTROL Dynamic Media]** e verificare i risultati. In questo modo, solo la risorsa di `Selective Publish` la cartella è pubblicata in [!DNL Dynamic Media]. Le risorse di `Immediate` e `Upon Activation` cartelle non sono pubblicate e riflette `None`.
+Cambiiamo ora il **[!UICONTROL Destinazione]** nel caso d’uso precedente, per **[!UICONTROL Dynamic Medie]** e verificare i risultati. In questo modo, solo la risorsa di `Selective Publish` la cartella è pubblicata in [!DNL Dynamic Media]. Le risorse di `Immediate` e `Upon Activation` cartelle non sono pubblicate e riflette `None`.
 
 ![Pubblica in Dynamic Media](assets/manage-publication-dynamic-media.png)
 
@@ -154,19 +154,19 @@ Per pianificare il flusso di lavoro di pubblicazione delle risorse in una data o
 
    Accedi all’istanza di destinazione per verificare le risorse pubblicate (a seconda della data o dell’ora pianificata).
 
-## Pubblicare risorse in Dynamic Media {#publish-assets-to-dynamic-media}
+## Pubblicare risorse in Dynamic Medie {#publish-assets-to-dynamic-media}
 
-Solo le risorse vengono pubblicate in [!DNL Dynamic Media]. Tuttavia, il comportamento di pubblicazione varia in base alle proprietà della cartella. Una cartella può avere **[!UICONTROL Modalità di pubblicazione Dynamic Media]** configurate per la pubblicazione selettiva che può essere una delle seguenti:
+Solo le risorse vengono pubblicate in [!DNL Dynamic Media]. Tuttavia, il comportamento di pubblicazione varia in base alle proprietà della cartella. Una cartella può avere **[!UICONTROL Modalità di pubblicazione Dynamic Medie]** configurate per la pubblicazione selettiva che può essere una delle seguenti:
 
 * `Selective Publish`
 * `Immediate`
 * `Upon Activation`
 
-Il processo di pubblicazione per **[!UICONTROL Immediato]** e **[!UICONTROL All&#39;attivazione]** è coerente, tuttavia è diversa per **[!UICONTROL Pubblicazione selettiva]**. Consulta [configurare la pubblicazione selettiva a livello di cartella in Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html). Dopo aver configurato la pubblicazione selettiva in una cartella, puoi effettuare una delle seguenti operazioni:
+Il processo di pubblicazione per **[!UICONTROL Immediato]** e **[!UICONTROL All&#39;attivazione]** è coerente, tuttavia è diversa per **[!UICONTROL Pubblicazione selettiva]**. Consulta [configurare la pubblicazione selettiva a livello di cartella in Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html). Dopo aver configurato la pubblicazione selettiva in una cartella, puoi effettuare una delle seguenti operazioni:
 
-* [Pubblicare selettivamente le risorse in Dynamic Media o Experience Manager tramite Gestisci pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
-* [Annullare la pubblicazione selettiva di risorse da Dynamic Media o Experience Manager tramite Gestisci pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
-* [Pubblicare risorse in Dynamic Media o Experience Manager tramite Pubblicazione rapida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
+* [Pubblicare selettivamente le risorse in Dynamic Medie o Experience Manager tramite Gestisci pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
+* [Annullare la pubblicazione selettiva di risorse da Dynamic Medie o Experience Manager tramite Gestisci pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
+* [Pubblicare risorse in Dynamic Medie o Experience Manager tramite Pubblicazione rapida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
 * [Pubblicare o annullare la pubblicazione selettiva delle risorse tramite i risultati della ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-unpublish-search-results)
 
 ## Pubblicare risorse su Brand Portal {#publish-assets-to-brand-portal}
@@ -194,6 +194,7 @@ L’opzione Richiedi pubblicazione è disponibile per i seguenti utenti:
 >[!NOTE]
 >
 >Se [!DNL Dynamic Media] è selezionato come destinazione, quindi il passaggio del flusso di lavoro è disabilitato per **utente del flusso di lavoro** e **admin** utenti.
+>
 
 ## Limitazioni e suggerimenti {#limitations-and-tips}
 

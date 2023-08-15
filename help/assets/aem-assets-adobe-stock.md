@@ -1,13 +1,13 @@
 ---
 title: Gestisci [!DNL Adobe Stock] risorse in [!DNL Assets].
-description: Ricerca, recupero, licenza e gestione [!DNL Adobe Stock] risorse da [!DNL Adobe Experience Manager]. Utilizza le risorse concesse in licenza come qualsiasi altra risorsa digitale.
+description: Cerca, recupera, concedi licenze e gestisci [!DNL Adobe Stock] risorse da [!DNL Adobe Experience Manager]. Utilizza le risorse concesse in licenza come qualsiasi altra risorsa digitale.
 contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2493'
+source-wordcount: '2492'
 ht-degree: 8%
 
 ---
@@ -212,7 +212,7 @@ Per configurare l’account IMS:
 
 Per configurare [!DNL Adobe Stock] servizio cloud:
 
-1. In [!DNL Experience Manager] interfaccia utente, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. In [!DNL Experience Manager] interfaccia utente, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**.
 
 1. In [!DNL Adobe Stock Configurations] pagina, fai clic su **[!UICONTROL Crea]**.
 
@@ -269,9 +269,9 @@ Puoi creare un gruppo di utenti o assegnare le autorizzazioni a un gruppo di ute
 
    ![autorizzazioni utente](assets/aem-stock-user-permissions.png)
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. Seleziona la [!DNL Adobe Stock] configurazione cloud e clic su **[!UICONTROL Proprietà]**.
+1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**. Seleziona la [!DNL Adobe Stock] configurazione cloud e clic su **[!UICONTROL Proprietà]**.
 
-1. Aggiungi il gruppo utenti appena creato a [!DNL Adobe Stock] configurazione. Fai clic su **[!UICONTROL Salva e chiudi]**.
+1. Aggiungi il nuovo gruppo di utenti al [!DNL Adobe Stock] configurazione. Fai clic su **[!UICONTROL Salva e chiudi]**.
 
    ![assign-user](assets/aem-stock-adduser.png)
 
@@ -318,7 +318,7 @@ La tabella seguente spiega come funzionano le autorizzazioni utente durante l’
 
 | User | Gruppo | Autorizzazioni | Accetta configurazione Stock nelle preferenze utente | Accedere alle risorse | Accedere ad Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
-| admin | N/D | Tutti i bundle  | N/D | Sì | Sì |
+| admin | N/D | Tutti | N/D | Sì | Sì |
 | test-doc1 | Utente DAM | /conf/global/settings/stock/cloud-config | Sì | Sì | Sì |
 | test-doc1 | Utente DAM | /conf/global/settings/stock/cloud-config | No | Errore: impossibile caricare i dati | No |
 | test-doc1 | Utente DAM | **consenti**: /conf/global/settings/stock **rifiuta**: /cloud-config | La configurazione Stock non è visibile | Sì | No |
@@ -461,20 +461,19 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
 >* [Tutorial video sull’utilizzo di risorse Adobe Stock con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Guida al piano aziendale di Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Domande frequenti su Adobe Stock](https://helpx.adobe.com/stock/faq.html)
-
