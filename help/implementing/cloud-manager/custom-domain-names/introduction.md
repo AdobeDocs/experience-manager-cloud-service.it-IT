@@ -1,11 +1,11 @@
 ---
 title: Introduzione ai nomi di dominio personalizzati
-description: Tramite l’interfaccia utente di Cloud Manager è possibile aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo.
+description: L’interfaccia utente di Cloud Manager consente di aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 93%
+source-wordcount: '757'
+ht-degree: 74%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="Gestione dei nomi di dominio personalizzati"
->abstract="Tramite l’interfaccia utente di Cloud Manager è possibile aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo."
+>abstract="L’interfaccia utente di Cloud Manager consente di aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=it" text="Aggiunta di un nome di dominio personalizzato"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html?lang=it" text="Visualizzazione e aggiornamento del nome di dominio personalizzato"
 
-Tramite l’interfaccia utente di Cloud Manager è possibile aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo. Adobe Experience Manager as a Cloud Service viene fornito con un nome di dominio predefinito, che termina con `*.adobeaemcloud.com`. Questo nome di dominio predefinito viene conservato anche dopo aver associato i nomi di dominio personalizzati al sito web.
+L’interfaccia utente di Cloud Manager consente di aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo. Adobe Experience Manager as a Cloud Service viene fornito con un nome di dominio predefinito, che termina con `*.adobeaemcloud.com`. Questo nome di dominio predefinito viene conservato anche dopo aver associato i nomi di dominio personalizzati al sito web.
 
 ## Che cosa sono i nomi di dominio personalizzati? {#what-are-custom-domain-names}
 
@@ -35,7 +35,7 @@ Il nome di dominio può essere acquistato da un registrar di nomi di dominio o d
 
 ## Nomi di dominio personalizzati e CDN BYO {#byo-cdn}
 
-AEM as a Cloud Service offre un servizio CDN (Content Delivery Network) integrato, ma consente anche di portare la propria CDN (BYO) da utilizzare con AEM. I domini personalizzati possono essere installati nella rete CDN gestita da AEM o in una rete CDN gestita dall’utente.
+AEM as a Cloud Service offre un servizio integrato di rete per la distribuzione di contenuti (CDN), ma consente anche di usare una rete CDN personalizzata (BYO) con AEM. I domini personalizzati possono essere installati nella rete CDN gestita da AEM o in una rete CDN gestita dall’utente.
 
 * I nomi di dominio personalizzati (e i certificati) installati nel CDN gestito da AEM vengono gestiti tramite Cloud Manager.
 * I nomi di dominio personalizzati (e i certificati) installati nel tuo CDN sono gestiti in quel CDN specifico.
@@ -70,8 +70,8 @@ L’utilizzo di nomi di dominio personalizzati con AEMaaCS presenta diverse limi
 
 * I nomi di dominio personalizzati sono supportati in Cloud Manager per entrambi i servizi di publicazione e anteprima dei programmi Sites. I domini personalizzati per i servizi di authoring non sono supportati.
 * Ogni ambiente di Cloud Manager può ospitare fino a un massimo di 500 domini personalizzati.
-* Non è possibile aggiungere nomi di dominio agli ambienti se a questi è collegata una pipeline attualmente in esecuzione.
-* Lo stesso nome di dominio non può essere utilizzato in più ambienti.
+* Non è possibile aggiungere nomi di dominio agli ambienti se a essi è collegata una pipeline attualmente in esecuzione.
+* Impossibile utilizzare lo stesso nome di dominio in più ambienti.
 * È possibile aggiungere un solo nome di dominio alla volta.
 * AEM as a Cloud Service non supporta i domini con caratteri jolly come `*.example.com`.
 * Prima di aggiungere un nome di dominio personalizzato, è necessario installare un certificato SSL valido contenente il nome di dominio personalizzato del programma (i certificati wildcard sono validi). Consulta [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) per ulteriori informazioni.
