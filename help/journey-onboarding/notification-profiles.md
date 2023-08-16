@@ -4,10 +4,10 @@ description: Scopri come creare profili utente in Admin Console per gestire la r
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -139,3 +139,9 @@ Segui questi passaggi per aggiungere utenti per i quali esistono già ID federat
 1. Fai clic su **Salva**; un’e-mail di benvenuto viene inviata all’utente aggiunto.
 
 L’utente invitato riceverà le notifiche. Ripeti questi passaggi per gli altri utenti del tuo team che dovranno ricevere le notifiche.
+
+## Risorse aggiuntive {#additional-resources}
+
+Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
+
+* [Centro azioni](/help/operations/actions-center.md) - Sfruttare il Centro azioni per intervenire in modo comodo sugli incidenti e su altre informazioni importanti.
