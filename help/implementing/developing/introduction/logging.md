@@ -2,9 +2,9 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2683'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,7 @@ Le impostazioni di registrazione e i livelli di registro as a Cloud Service dall
 
 * Registrazione AEM, che esegue la registrazione a livello di applicazione AEM
 * Registrazione del server web/Dispatcher Apache HTTPD, che esegue la registrazione del server web e del Dispatcher sul livello di pubblicazione.
+* La registrazione CDN, indicata dal nome, esegue la registrazione sulla CDN. Questa funzione è attualmente disponibile per i primi utenti; per partecipare al programma per i primi utenti, invia un’e-mail a **aemcs-cdnlogs-adopter@adobe.com**, incluso il nome dell’organizzazione e il contesto relativi al tuo interesse per la funzione.
 
 ## Registrazione AEM {#aem-logging}
 
@@ -499,6 +500,57 @@ Define DISP_LOG_LEVEL debug
 >
 >Per gli ambienti AEM as a Cloud Service, debug è il livello di dettaglio massimo. Il livello del registro di traccia non è supportato, pertanto è consigliabile evitare di impostarlo quando si lavora in ambienti cloud.
 
+## Registro CDN {#cdn-log}
+
+>[!NOTE]
+>
+>Questa funzione non è ancora disponibile al pubblico. Per aderire al programma di adozione anticipata in corso, invia un messaggio e-mail a **aemcs-cdnlogs-adopter@adobe.com**, incluso il nome dell’organizzazione e il contesto relativi al tuo interesse per la funzione.
+>
+
+AEM as a Cloud Service fornisce accesso ai registri CDN, utili per i casi d’uso, inclusa l’ottimizzazione del rapporto di hit della cache. Il formato di registro CDN non può essere personalizzato e non è possibile impostarlo su modalità diverse, ad esempio info, avvertenza o errore.
+
+**Esempio**
+
+```
+{
+"timestamp": "2023-05-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR"
+}
+```
+
+**Formato registro**
+
+I registri CDN sono distinti dagli altri registri in quanto sono conformi al formato json.
+
+| **Nome campo** | **Descrizione** |
+|---|---|
+| *timestamp* | Ora di inizio della richiesta, dopo la chiusura di TLS |
+| *ttfb* | Abbreviazione per *Tempo al primo byte*. L’intervallo di tempo tra la richiesta iniziata fino al punto prima che il corpo della risposta iniziasse a essere trasmesso in streaming. |
+| *cli_ip* | Indirizzo IP del client. |
+| *cli_country* | Due lettere [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) codice paese alfa-2 per il paese cliente. |
+| *rid* | Il valore dell’intestazione della richiesta utilizzata per identificare in modo univoco la richiesta. |
+| *req_ua* | L’agente utente responsabile di effettuare una determinata richiesta HTTP. |
+| *host* | Autorità a cui è destinata la richiesta. |
+| *url* | Il percorso completo, inclusi i parametri di query. |
+| *metodo* | Metodo HTTP inviato dal client, ad esempio &quot;GET&quot; o &quot;POST&quot;. |
+| *res_ctype* | Tipo di contenuto utilizzato per indicare il tipo di file multimediale originale della risorsa. |
+| *cache* | Stato della cache. I valori possibili sono HIT, MISS o PASS |
+| *stato* | Il codice di stato HTTP come valore intero. |
+| *res_age* | Il tempo (in secondi) per cui una risposta è stata memorizzata nella cache (in tutti i nodi). |
+| *pop* | Datacenter del server cache CDN. |
+
 ## Come accedere ai registri {#how-to-access-logs}
 
 ### Ambienti cloud {#cloud-environments}
@@ -540,7 +592,7 @@ Anche se questo è possibile, richiede modifiche ai livelli di registro nei file
 
 A seconda del traffico e della quantità di istruzioni di registro scritte da Debug, questo può comportare un impatto negativo sulle prestazioni dell’ambiente. Pertanto, si consiglia di modificare i livelli di debug di Stage e Production come segue:
 
-* Fatto con prudenza, e solo se assolutamente necessario
+* Fatto con buon senso, e solo se assolutamente necessario
 * riportati ai livelli appropriati e ridistribuiti il più presto possibile
 
 ## Registri Splunk {#splunk-logs}
