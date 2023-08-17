@@ -1,11 +1,11 @@
 ---
 title: Panoramica del flusso di distribuzione dei contenuti
-description: Panoramica del flusso di distribuzione dei contenuti
+description: Ulteriori informazioni sul flusso di dati per la distribuzione dei contenuti e su come pubblicare i contenuti
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 49%
+source-wordcount: '217'
+ht-degree: 45%
 
 ---
 
@@ -23,7 +23,7 @@ Il flusso di dati è il seguente:
 1. Richiesta effettuata a CDN mappata in DNS a quel dominio
 1. Se il contenuto è completamente memorizzato nella cache su CDN, quest’ultima lo trasmette al browser
 1. Se il contenuto non è completamente memorizzato nella cache, la rete CDN viene richiamata (proxy inverso) in Dispatcher
-1. Se il contenuto è completamente memorizzato nella cache in Dispatcher, Dispatcher lo trasmette al CDN
+1. Se il contenuto è completamente memorizzato nella cache in Dispatcher, Dispatcher lo trasmette alla rete CDN
 1. Se il contenuto non è completamente memorizzato nella cache, Dispatcher invia una chiamata (proxy inverso) alla pubblicazione AEM
 1. Il contenuto viene renderizzato dal browser, che può anche memorizzarlo nella cache, a seconda delle intestazioni
 

@@ -1,11 +1,11 @@
 ---
 title: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
-description: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
+description: Ulteriori informazioni sulle modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 8e06dff01e06ced62686a4784619278f29345082
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '537'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,6 @@ AEM Sites as a Cloud Service fornisce funzionalità di gestione delle esperienze
 >* [Modifiche di rilievo apportate ad AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 >* [Introduzione ad AEM Assets as a Cloud Service](/help/assets/overview.md)
 >* [Tutorial su Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
-
 
 Le modifiche e le aggiunte in AEM Sites as a Cloud Service sono le seguenti:
 

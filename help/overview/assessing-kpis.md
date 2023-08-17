@@ -1,11 +1,11 @@
 ---
 title: Accesso ai KPI
-description: Accesso ai KPI
+description: Scopri come accedere ai KPI e definire il processo di reporting
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 67%
+source-wordcount: '545'
+ht-degree: 65%
 
 ---
 
