@@ -2,10 +2,10 @@
 title: Test dell’audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e9f205a506fb2d2b7f5e634b353b112bf077058a
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 91%
+source-wordcount: '588'
+ht-degree: 85%
 
 ---
 
@@ -32,6 +32,10 @@ L’audit dell’esperienza in Cloud Manager assicura i più elevati standard di
 I risultati dell’audit sono informativi e consentono agli utenti con ruolo Responsabile dell’implementazione di visualizzare i punteggi e cosa è cambiato tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se c’è una regressione introdotta con la distribuzione corrente.
 
 L’audit dell’esperienza è basato su Google Lighthouse, uno strumento open source di Google abilitato in tutte le pipeline di produzione di Cloud Manager.
+
+>[!INFO]
+>
+>A partire dal 28 agosto 2023, l’audit dell’esperienza passerà alla visualizzazione dei risultati specifici della piattaforma mobile. Tieni presente che le metriche delle prestazioni mobili in genere si registrano a un livello inferiore rispetto a quelle del desktop, pertanto anticipa un cambiamento nelle prestazioni riportate a seguito di questo cambiamento.
 
 >[!TIP]
 >
