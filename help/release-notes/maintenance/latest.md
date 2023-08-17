@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
+source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 18%
+source-wordcount: '661'
+ht-degree: 17%
 
 ---
 
@@ -24,7 +24,7 @@ Di seguito sono riepilogati i continui miglioramenti per la versione di manutenz
 - SITES-13906: GraphQL - Aggiornamento a graphql-java 20.1.
 - SITES-8972: GraphQL - Aggiungi l’etichetta dell’opzione in JSON per il tipo di dati Enumerazione.
 - SITES-9689: GraphQL - Aggiungi titolo e descrizione in JSON per il tipo di dati Riferimento contenuto.
-- SITES-13052: Frammenti di contenuto - Esportare frammenti di contenuto in Adobe Target
+- SITES-13052: Frammenti di contenuto - Esporta frammenti di contenuto in Adobe Target.
 
 ### Problemi risolti {#fixed-issues-13099}
 
@@ -54,7 +54,9 @@ Di seguito sono riepilogati i continui miglioramenti per la versione di manutenz
 
 ### Problemi noti {#known-issues-13099}
 
-- SITES-15359: il pattern del nome della variante non corrisponde correttamente alle varianti che presentano ```'_'``` nei nomi delle risorse.
+- SITES-15359: Frammenti di contenuto - Il modello del nome della variante non corrisponde correttamente alle varianti che hanno ```'_'``` nei nomi delle risorse.
+- SITES-15463: Modelli di siti - Non è possibile pubblicare i modelli (soluzione alternativa: utilizzare la console di distribuzione).
+- CQ-4354191: Flussi di lavoro - Il modulo di avvio personalizzato può essere attivato molte volte a causa dei metadati di replica presenti sui nodi nt:unstructured (soluzione alternativa: aggiorna i moduli di avvio per escludere le proprietà dei metadati di replica per evitare sovrapposizioni).
 
 ### Tecnologie incorporate {#embedded-tech-13099}
 
