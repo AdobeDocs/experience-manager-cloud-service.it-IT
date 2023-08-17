@@ -1,11 +1,11 @@
 ---
-title: Differenze tra AEM 6.5 Forms e AEM Cloud Services
-description: Sei un utente di Experience Manager Forms e stai cercando di effettuare l’aggiornamento ad Adobe Experience Manager Forms as a Cloud Service? Confronta Forms AEM 6.5 e AEM Cloud Services e scopri le modifiche più importanti prima di eseguire l’aggiornamento o la migrazione al Cloud Service.
+title: Differenze tra i Cloud Service AEM 6.5 Forms e AEM
+description: Sei un utente di Experience Manager Forms e stai cercando di effettuare l’aggiornamento ad Adobe Experience Manager Forms as a Cloud Service? Confronta i Cloud Services Forms e AEM di AEM 6.5 e scopri le modifiche più importanti prima di eseguire l’aggiornamento o la migrazione al Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1343'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di ri
 
 * Il servizio dispone di un&#39;architettura nativa per il cloud che consente il ridimensionamento automatico in base al carico, l&#39;azzeramento dei tempi di inattività per gli aggiornamenti, la distribuzione frequente e successiva di nuove funzioni e aggiornamenti e topologie ottimizzate per la massima resilienza ed efficienza.
 
-* Il servizio non include azioni di invio che memorizzano i dati nelle istanze del Cloud Service Adobe Experience Manager, rendendolo super sicuro. I dati acquisiti tramite i moduli vengono inviati direttamente agli archivi dati configurati.
+* Il servizio non include azioni di invio che memorizzano i dati nelle istanze di Cloud Service di Adobe Experience Manager, rendendolo super sicuro. I dati acquisiti tramite i moduli vengono inviati direttamente agli archivi dati configurati.
 
 * È inclusa anche una rete CDN (Content Delivery Network) gratuita per distribuire ed eseguire il rendering dei moduli a un ritmo più rapido.
 
@@ -60,11 +60,11 @@ Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di ri
 
 * **Forms adattivo basato su XSD:** È possibile utilizzare il modello XDP per progettare un modello per Document for Record. Il servizio non supporta Forms adattivo basato su XFA
 
-* **Componenti**: puoi utilizzare [Componenti core Forms adattivi](/help/forms/creating-adaptive-form-core-components.md) per progettare i moduli. Questi componenti sono basati sui componenti core WCM, seguono gli standard BEM e possono essere facilmente personalizzati. Il servizio non supporta l’esperienza di firma interna ai moduli e non include i componenti Riepilogo e Verifica per il modulo adattivo
+* **Componenti**: il servizio non supporta l’esperienza di firma interna ai moduli e non include i componenti Riepilogo e Verifica per Modulo adattivo.
+
+* **Interfaccia procedura guidata:** È possibile utilizzare [Interfaccia procedura guidata](/help/forms/creating-adaptive-form-core-components.md) per configurare rapidamente le opzioni comuni e creare facilmente un modulo adattivo.
 
 ## Portale Forms
-
-* È possibile utilizzare i componenti Ricerca e elenco, Bozze e invio e Collegamento di Forms Portal per elencare i moduli per gli utenti connessi. Il supporto per l’utilizzo anonimo di Forms Portal non è disponibile come funzionalità integrata (OOTB). È possibile personalizzare Forms Portal per abilitare la visualizzazione dei moduli per gli utenti non connessi.
 
 * Il servizio non mantiene i metadati per le bozze e i Forms adattivi inviati.
 
@@ -85,7 +85,7 @@ Forms as a Cloud Service fornisce API RESTful per generazione e manipolazione di
 
 ## Integrazione dei dati (modello dati modulo)
 
-* Il servizio fornisce inoltre supporto per il connettore JDBC, Microsoft Dynamics, SalesForce, servizi Web basati su SOAP e servizi che supportano OData.
+* Il servizio fornisce inoltre supporto per Microsoft Dynamics, SalesForce, servizi Web basati su SOAP e servizi che supportano OData.
 
 * Puoi anche collegare il profilo utente AEM per recuperare e aggiornare le informazioni utente.
 
@@ -96,8 +96,6 @@ Forms as a Cloud Service fornisce API RESTful per generazione e manipolazione di
 
 ## E-Sign
 
-* Il servizio fornisce un’integrazione OOTB con Adobe Sign e supporta DocuSign per le firme elettroniche.
-
 * Il servizio supporta anche i ruoli di Adobe Sign. Puoi configurare i ruoli nell’editor di Forms adattivo per gli utenti aziendali per configurare facilmente i flussi di lavoro di firma.
 
 
@@ -105,7 +103,7 @@ Forms as a Cloud Service fornisce API RESTful per generazione e manipolazione di
 
 * È possibile utilizzare un ambiente Forms AEM 6.5 per:
 
-   * esegui il rendering dei moduli basati su XDP come HTML5 Forms. Il servizio non supporta HTML5 Forms (Mobile Forms).
+   * esegui il rendering dei moduli basati su XDP come HTML5 Forms. Il servizio non supporta HTML5 Forms.
 
    * acquisire i dati offline e sincronizzarli alla successiva connessione in linea con [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) app.
 
