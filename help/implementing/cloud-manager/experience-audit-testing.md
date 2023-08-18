@@ -2,7 +2,7 @@
 title: Test dell’audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: e9f205a506fb2d2b7f5e634b353b112bf077058a
+source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 85%
@@ -35,7 +35,7 @@ L’audit dell’esperienza è basato su Google Lighthouse, uno strumento open s
 
 >[!INFO]
 >
->A partire dal 28 agosto 2023, l’audit dell’esperienza passerà alla visualizzazione dei risultati specifici della piattaforma mobile. Tieni presente che le metriche delle prestazioni mobili in genere si registrano a un livello inferiore rispetto a quelle del desktop, pertanto anticipa un cambiamento nelle prestazioni riportate a seguito di questo cambiamento.
+>A partire dal 31 agosto 2023, l’audit dell’esperienza passerà alla visualizzazione dei risultati specifici della piattaforma mobile. Tieni presente che le metriche delle prestazioni mobili in genere si registrano a un livello inferiore rispetto a quelle del desktop, pertanto anticipa un cambiamento nelle prestazioni riportate a seguito di questo cambiamento.
 
 >[!TIP]
 >
