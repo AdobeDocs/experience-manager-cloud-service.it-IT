@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d092e68b4f6dbc4f2bcfc45d2e522cfbfa831c0d
+source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
 workflow-type: tm+mt
-source-wordcount: '4242'
+source-wordcount: '4249'
 ht-degree: 97%
 
 ---
@@ -756,7 +756,8 @@ ht-degree: 97%
       + [Autenticazione](/help/headless/security/authentication.md)
    + Distribuzione {#deployment}
       + [Architettura](/help/headless/deployment/architecture.md)
-      + [Dispatcher](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher - Endpoint](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher: abilitare il caching per le query persistenti](/help/headless/deployment/dispatcher-caching.md)
       + [Configurazione CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Filtro referrer](/help/headless/deployment/referrer-filter.md)
    + Percorsi headless {#journeys}
