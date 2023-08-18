@@ -2,9 +2,9 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
+source-git-commit: 6e491a68dedc55609349db75ac13691aeda2f0dc
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '673'
 ht-degree: 17%
 
 ---
@@ -56,6 +56,7 @@ Di seguito sono riepilogati i continui miglioramenti per la versione di manutenz
 
 - SITES-15359: Frammenti di contenuto - Il modello del nome della variante non corrisponde correttamente alle varianti che hanno ```'_'``` nei nomi delle risorse.
 - SITES-15463: Modelli di siti - Non è possibile pubblicare i modelli (soluzione alternativa: utilizzare la console di distribuzione).
+- FORMS-10444: non è possibile pubblicare modelli di Forms adattivi (soluzione alternativa: utilizzare la console di distribuzione).
 - CQ-4354191: Flussi di lavoro - Il modulo di avvio personalizzato può essere attivato molte volte a causa dei metadati di replica presenti sui nodi nt:unstructured (soluzione alternativa: aggiorna i moduli di avvio per escludere le proprietà dei metadati di replica per evitare sovrapposizioni).
 
 ### Tecnologie incorporate {#embedded-tech-13099}
