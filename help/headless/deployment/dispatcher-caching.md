@@ -2,10 +2,10 @@
 title: 'Query persistenti GraphQL: abilitazione della memorizzazione nella cache in Dispatcher'
 description: Dispatcher è un livello di memorizzazione in cache e sicurezza davanti agli ambienti di pubblicazione Adobe Experience Manager. Puoi abilitare la memorizzazione nella cache per le query persistenti in AEM Headless.
 feature: Dispatcher, GraphQL API
-source-git-commit: 6f07089812e587834784aeda7e62d3e4614f45a1
+source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 5%
+source-wordcount: '317'
+ht-degree: 6%
 
 ---
 
@@ -23,6 +23,10 @@ La memorizzazione nella cache delle query persistenti non è abilitata per impos
 >Il Dispatcher non memorizza in cache `Vary` intestazione.
 >
 >La memorizzazione nella cache di altre intestazioni relative a CORS può essere abilitata in Dispatcher, ma potrebbe non essere sufficiente in presenza di più origini CORS.
+
+>[!NOTE]
+>
+>Per la documentazione dettagliata sul Dispatcher, vedi [Guida di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it).
 
 ## Abilita la memorizzazione nella cache delle query persistenti {#enable-caching-persisted-queries}
 
