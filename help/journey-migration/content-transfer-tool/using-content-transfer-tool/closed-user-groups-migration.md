@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
 >title="Migrazione di gruppi di utenti chiusi"
->abstract="La migrazione di gruppi chiusi di utenti (CUG) richiede attualmente alcuni controlli e passaggi per essere operativa dopo una migrazione."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="Gruppi di utenti chiusi nell’AEM"
+>abstract="La migrazione di gruppi di utenti chiusi (CUG) richiede attualmente alcuni controlli e passaggi affinché continui a essere operativa dopo una migrazione."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=it" text="Gruppi di utenti chiusi in AEM"
 
 Attualmente, i gruppi chiusi di utenti (CUG) richiedono alcuni passaggi aggiuntivi per funzionare nell’ambiente di destinazione di una migrazione.  Questo documento illustra lo scenario e i passaggi necessari per consentire loro di proteggere i nodi nel modo previsto.
 
@@ -45,4 +45,4 @@ In sintesi, questi sono i passaggi per abilitare il gruppo utenti chiusi (CUG) d
    - Un gruppo può già esistere se incluso nell’ACL di un contenuto migrato.
    - In caso contrario, utilizza i pacchetti per installarlo nell’istanza di destinazione (o crearlo manualmente lì) e attivarlo con i relativi membri. Verifica che esista al momento della pubblicazione.
 1. Se il criterio del gruppo utenti chiusi non protegge ancora il nodo, ripubblica la pagina (assicurandosi che venga pubblicata anche se non sono state apportate modifiche a tale pagina).
-   - Verifica ogni nodo protetto da CUG.
+   - Verifica per ogni nodo protetto da CUG.
