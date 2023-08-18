@@ -1,10 +1,10 @@
 ---
 title: Quali vantaggi offre la nuova interfaccia utente di AEM Assets o la visualizzazione di Assets nell’AEM?
-description: Ulteriori informazioni sui vantaggi chiave della nuova interfaccia utente di AEM Assets o della nuova visualizzazione Assets nell’AEM
+description: Scopri i vantaggi chiave della nuova interfaccia utente di AEM Assets o della nuova visualizzazione Assets nell’AEM. Adobe, sfruttando l’esperienza nel rafforzamento di professionisti del marketing e della creatività, introduce una nuova esperienza utente rivoluzionaria.
 mini-toc-levels: 3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1132'
 ht-degree: 66%
 
 ---

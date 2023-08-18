@@ -1,12 +1,12 @@
 ---
-title: Cercare e individuare le risorse in [!DNL Assets view]
-description: Cerca e individua le risorse in [!DNL Assets view].
+title: Scopri come cercare e individuare le risorse in [!DNL Assets view]?
+description: Scopri come cercare e individuare le risorse nella vista AEM Assets. La potente funzionalità di ricerca consente di trovare rapidamente la risorsa appropriata e velocizza le attività relative ai contenuti.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: ed7ce8be17ad1445132b9aa38a0efa84ffa70fdf
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 94%
+source-wordcount: '924'
+ht-degree: 92%
 
 ---
 
