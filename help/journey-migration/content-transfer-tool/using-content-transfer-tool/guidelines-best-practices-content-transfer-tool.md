@@ -2,9 +2,9 @@
 title: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: 9212042db782dc413b64d40ebde096c12d754f97
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1599'
 ht-degree: 19%
 
 ---
@@ -50,6 +50,8 @@ La formula generale per calcolare lo spazio libero su disco richiesto è la segu
 Pertanto, per un archivio segmenti di 20 GB, lo spazio libero su disco richiesto è di 94 GB.
 
 * È necessario mantenere un set di migrazione per l’intera durata dell’attività di trasferimento dei contenuti per supportare l’integrazione dei contenuti stessi. È possibile creare e mantenere un massimo di cinque set di migrazione per progetto in Cloud Acceleration Manager alla volta durante l’attività di trasferimento dei contenuti. Se sono necessari più di cinque set di migrazione, è necessario creare un secondo progetto in Cloud Acceleration Manager. Tuttavia, questo richiederà una gestione del progetto aggiuntiva e una governance fuori prodotto per evitare che più utenti sovrascrivano i contenuti sul target.
+
+* Evitare di modificare la directory di installazione dello strumento CTT. Per impostazione predefinita, l’installazione si svolge nel percorso crx-quickstart/cloud-migration. Questa posizione specifica viene utilizzata internamente da altre librerie. La modifica di questo percorso può causare problemi di estrazione.
 
 ## Considerazioni importanti prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti) {#important-considerations}
 
