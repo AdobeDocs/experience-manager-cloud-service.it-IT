@@ -1,15 +1,14 @@
 ---
-title: Come si scarica e si installa Forms Designer per creare modelli per documenti di record?
+title: Scaricare e installare Forms Designer
 description: È possibile utilizzare Forms Designer per creare modelli di moduli XDP e PDF che fungono da modello per un documento di record. Designer è disponibile con [!DNL AEM Forms] licenza.
-exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: e71dd8a4eb92acbed53fb9384bc40efc3e743761
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 2%
 
 ---
 
-# Installare Forms Designer {#installing-and-configuring-designer}
+# Scaricare e installare Forms Designer {#installing-and-configuring-designer}
 
 Designer è uno strumento di progettazione grafica semplice e intuitivo che semplifica la creazione di modelli di moduli XDP e PDF. È possibile progettare un modello di modulo, definirne la logica e soddisfare requisiti legislativi rigorosi. Un modulo XDP e PDF fungono da modello per un documento di record in un modulo adattivo. Questi modelli di moduli sono diversi da [Modelli di modulo adattivo](template-editor.md).
 

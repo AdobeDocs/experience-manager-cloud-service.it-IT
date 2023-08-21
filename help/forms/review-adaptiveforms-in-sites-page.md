@@ -1,19 +1,18 @@
 ---
-title: Creazione e gestione delle revisioni di Adaptive Forms incorporate o create nella pagina Sites
-seo-title: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step
+title: Creare e gestire recensioni per un modulo adattivo
 description: La revisione è un meccanismo che consente al revisore di eseguire diverse attività per i moduli adattivi utilizzando il passaggio Assegna attività
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '351'
 ht-degree: 4%
 
 ---
 
 
-# Passaggio di revisione per Forms nella pagina del sito {#review-step-forms-aem-sites-page}
+# Creare e gestire recensioni per un modulo adattivo {#review-step-forms-aem-sites-page}
 
 Utilizzo di [Assegna passaggio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) del flusso di lavoro dell’AEM, il revisore esamina il modulo inviato ed esegue un’azione su di esso. Per rivedere il modulo inviato tramite il passaggio Assegna attività, eseguire la procedura seguente:
 

@@ -1,17 +1,17 @@
 ---
-title: Selezionare dinamicamente un utente o un gruppo per i passaggi del flusso di lavoro incentrati su AEM Forms
+title: Selezione dinamica di utenti o gruppi nel flusso di lavoro AEM
 description: Scopri come selezionare un utente o un gruppo per un [!DNL AEM Forms] flusso di lavoro in fase di esecuzione.
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
 
 
-# Selezionare dinamicamente un utente o un gruppo per i passaggi del flusso di lavoro incentrati su AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Selezione dinamica di utenti o gruppi nel flusso di lavoro AEM {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Scopri come selezionare un utente o un gruppo per un [!DNL AEM Forms] flusso di lavoro in fase di esecuzione.
 
@@ -23,7 +23,7 @@ Assegna attività e [!DNL Adobe Sign] passaggi di [Flussi di lavoro incentrati s
 
 ECMAScript è un linguaggio di script. Viene utilizzato per applicazioni server e scripting lato client. Per selezionare dinamicamente un utente o un gruppo utilizzando ECMAScript, effettuare le seguenti operazioni:
 
-1. Apri CRXDE Lite. L’URL è `https://'[server]:[port]'/crx/de/index.jsp`
+1. Apri CRXDE Liti. L’URL è `https://'[server]:[port]'/crx/de/index.jsp`
 1. Creare un file con estensione .ecma nel percorso seguente. Se il percorso (struttura del nodo) non esiste, crealo:
 
    * (Percorso per il passaggio Assegna attività) `/apps/fd/dashboard/scripts/participantChooser`

@@ -1,10 +1,9 @@
 ---
-title: Come impostare un’ [!DNL AEM Forms] ambiente as a Cloud Service?
+title: Integrazione con AEM Forms as a Cloud Service
 description: Scopri come impostare e configurare un [!DNL AEM Forms] ambiente as a Cloud Service
-exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '632'
 ht-degree: 17%
 
 ---
@@ -70,12 +69,12 @@ Puoi utilizzare Forms as a Cloud Service per creare un modulo adattivo (iscrizio
 
 ## Configurare gli utenti {#config-users}
 
-Dopo aver completato l’onboarding nel servizio, accedi al tuo [!DNL AEM Forms] ambiente as a Cloud Service, apri le istanze Author e Publish e aggiungi gli utenti alle istanze specifiche di Forms [Gruppi AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing), in base al loro tipo di utente. Nella tabella seguente sono elencati i gruppi AEM specifici di Forms, disponibili con le opzioni pronte all’uso, e i tipi di utente corrispondenti. La tabella fornisce anche il tipo di istanza AEM per ciascun tipo di utente:
+Dopo aver completato l’onboarding nel servizio, accedi al tuo [!DNL AEM Forms] ambiente as a Cloud Service, apri le istanze Author e Publish e aggiungi gli utenti alle istanze specifiche di Forms [Gruppi AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing), in base al loro tipo di utente. Nella tabella seguente sono elencati i gruppi AEM specifici di Forms, disponibili con le opzioni predefinite, e i tipi di utente corrispondenti. La tabella fornisce anche il tipo di istanza AEM per ciascun tipo di utente:
 
 | Tipi di utenti (utenti tipo) | Gruppi di utenti | Istanza AEM |
 |---|---|---|
 | Professionista del modulo /sviluppatore Forms | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul> | Istanza Autore |
-| Progettazione esperienza utente | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | Istanza Autore |
+| Designer esperienza utente | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | Istanza Autore |
 | Amministratore AEM | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul> | Istanza Author e Publish |
 | Utente finale | <ul> <li>Quando un utente deve effettuare l’accesso per visualizzare e inviare un modulo adattivo, aggiungi tali utenti a [!DNL forms-users] gruppo. </li> <li>Se non è richiesta l’autenticazione utente per accedere a Adaptive Forms, non assegnare alcun gruppo a tali utenti. </li> </ul> | Istanza Author e Publish |
 

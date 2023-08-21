@@ -1,18 +1,18 @@
 ---
-title: Come si utilizza la modalità Layout per ridimensionare i componenti per Forms adattivo?
+title: Utilizzare la modalità Layout per ridimensionare i componenti per Forms adattivo
 description: Definisci la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout. Scopri come accedere alla modalità Layout, ridimensionare i componenti e i pannelli, definire il layout a più colonne per un pannello, abilitare la nuova griglia reattiva per i layout reattivi precedenti e disabilitare la modalità Layout per i moduli con layout reattivo precedente.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 2%
+source-wordcount: '1157'
+ht-degree: 1%
 
 ---
 
-# Utilizzare la modalità Layout per ridimensionare i componenti {#use-layout-mode-to-resize-components}
+# Utilizza la modalità Layout per ridimensionare i componenti per Adaptive Forms {#use-layout-mode-to-resize-components}
 
 <span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 

@@ -1,23 +1,23 @@
 ---
-title: Come assegnare un flusso di lavoro ad un altro utente, inviare e-mail e utilizzare Adobe Sign in un flusso di lavoro?
+title: Utilizzare flussi di lavoro AEM incentrati su moduli per automatizzare i processi aziendali
 description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti tramite e-sign, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '7204'
+source-wordcount: '7192'
 ht-degree: 1%
 
 ---
 
-# Flussi di lavoro AEM incentrati su Forms - Riferimento per la fase {#forms-centric-workflow-on-osgi-step-reference}
+# Utilizzare flussi di lavoro AEM incentrati su Forms - Riferimento alla fase per automatizzare i processi aziendali{#forms-centric-workflow-on-osgi-step-reference}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-I modelli di workflow consentono di convertire una regola business in un processo ripetitivo automatizzato. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. È possibile [includere vari passaggi del flusso di lavoro AEM in un modello per raggiungere la logica di business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
+Si utilizzano i modelli di flusso di lavoro. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. È possibile [includere vari passaggi del flusso di lavoro AEM in un modello per raggiungere la logica di business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
 ## Passaggi incentrati su Forms {#forms-workflow-steps}
 

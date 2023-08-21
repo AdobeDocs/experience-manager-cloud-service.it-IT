@@ -1,18 +1,16 @@
 ---
-title: Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse
-seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
+title: Importare o esportare risorse Adaptive Forms e AEM Forms
 description: Desideri migrare risorse e Forms adattivi da e verso istanze AEM? Scopri come importare ed esportare Forms adattivo, PDF forms, temi e altre risorse di supporto da un [!DNL AEM Forms] dell'istanza.
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 2%
+source-wordcount: '1206'
+ht-degree: 1%
 
 ---
 
-# Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse{#importing-and-exporting-assets-to-aem-forms}
+# Importare o esportare risorse Adaptive Forms e AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
 È possibile spostare Forms adattivo e le risorse correlate, ad esempio i temi dei moduli adattivi, i modelli di dati dei moduli, i modelli di moduli adattivi, i frammenti di documento e i PDF forms tra [!DNL AEM Forms] istanze. Potete importare ed esportare le risorse in formato pacchetto CRX o file binario.
 

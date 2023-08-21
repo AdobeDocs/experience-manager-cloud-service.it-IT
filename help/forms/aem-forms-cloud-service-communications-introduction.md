@@ -1,15 +1,15 @@
 ---
-title: Introduzione a Forms as a Cloud Service Communications
+title: Introduzione alle comunicazioni as a Cloud Service di Forms
 description: Unisci automaticamente i dati ai modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
 source-wordcount: '1156'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
-# Usare AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
+# Introduzione ad AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |

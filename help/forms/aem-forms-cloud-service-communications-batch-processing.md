@@ -1,15 +1,15 @@
 ---
-title: Experience Manager [!DNL Forms] Elaborazione batch di comunicazioni as a Cloud Service
+title: Elaborazione batch di comunicazioni as a Cloud Service AEM Forms
 description: Come si creano comunicazioni personalizzate e orientate al brand?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1698'
 ht-degree: 2%
 
 ---
 
-# Utilizza elaborazione batch
+# Elaborazione batch di comunicazioni as a Cloud Service AEM Forms
 
 Le comunicazioni consentono di creare, assemblare e distribuire comunicazioni personalizzate e orientate al marchio, ad esempio corrispondenza commerciale, documenti, rendiconti, lettere di elaborazione delle richieste, avvisi sui benefit, lettere di elaborazione delle richieste, fatture mensili e kit di benvenuto. È possibile utilizzare le API di comunicazione per combinare un modello (XFA o PDF) con i dati del cliente per generare documenti in formato PDF, PS, PCL, DPL, IPL e ZPL.
 

@@ -1,20 +1,20 @@
 ---
-title: Come si aggiungono informazioni dai dati utente ai metadati di invio del modulo?
+title: Aggiungere informazioni dai dati utente ai metadati di invio del modulo
 description: Scopri come aggiungere informazioni ai metadati di un modulo inviato con i dati forniti dall’utente. Approfondisci come visualizzare i metadati aggiornati per l’invio dei moduli nell’archivio CRX.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
 
 
-# Aggiunta di informazioni dai dati utente ai metadati di invio del modulo {#adding-information-from-user-data-to-form-submission-metadata}
+# Aggiungere informazioni dai dati utente ai metadati di invio del modulo {#adding-information-from-user-data-to-form-submission-metadata}
 
-È possibile utilizzare i valori immessi in un elemento del modulo per calcolare i campi di metadati di una bozza o di un invio di modulo. I metadati consentono di filtrare il contenuto in base ai dati utente. Ad esempio, un utente immette John Doe nel campo del nome del modulo. È possibile utilizzare queste informazioni per calcolare i metadati che possono classificare l’invio in base alle iniziali JD.
+È possibile utilizzare i valori immessi in un elemento del modulo per calcolare i campi di metadati di una bozza o di un modulo inviato. I metadati consentono di filtrare il contenuto in base ai dati utente. Ad esempio, un utente immette John Doe nel campo del nome del modulo. È possibile utilizzare queste informazioni per calcolare i metadati che possono classificare l’invio in base alle iniziali JD.
 
 Per calcolare i campi di metadati con i valori immessi dall’utente, aggiungi elementi del modulo nei metadati. Quando un utente immette un valore in tale elemento, uno script utilizza il valore per calcolare le informazioni. Queste informazioni vengono aggiunte nei metadati. Quando aggiungi un elemento come campo di metadati, fornisci una chiave per esso. La chiave viene aggiunta come campo nei metadati e le informazioni calcolate vengono registrate su di essa.
 
@@ -41,7 +41,7 @@ Per aggiungere un elemento nei metadati, effettua le seguenti operazioni:
 
    Script immesso nella scheda Metadati
 
-1. Clic **[!DNL OK]**.
+1. Fai clic su **[!DNL OK]**.
 
 Dopo che un utente immette i dati nell’elemento selezionato come campo di metadati, le informazioni calcolate vengono registrate nei metadati. Puoi visualizzare i metadati nell’archivio configurato per archiviarli.
 

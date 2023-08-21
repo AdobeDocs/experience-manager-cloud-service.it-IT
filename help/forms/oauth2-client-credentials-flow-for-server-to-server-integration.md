@@ -1,18 +1,18 @@
 ---
-title: Come integrare l’integrazione di salesforce con AEM Forms utilizzando il flusso delle credenziali client OAuth 2.0?
+title: Integrazione di Salesforce tramite il flusso delle credenziali client OAuth 2.0
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
 description: Passaggi per integrare l’integrazione di Salesforce con AEM Forms utilizzando il flusso di credenziali del client OAuth 2.0
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
-source-git-commit: 2c0a816b61cfc17a83b24b28be1f317e9681c6c5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '420'
 ht-degree: 2%
 
 ---
 
 
-# Integrazione dell’applicazione Salesforce tramite il flusso delle credenziali client OAuth 2.0 {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integrazione di Salesforce tramite il flusso delle credenziali client OAuth 2.0 {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -43,7 +43,7 @@ Prima di impostare la comunicazione tra un’applicazione Salesforce e un ambien
 Per integrare l’applicazione Salesforce con un modulo adattivo utilizzando le impostazioni di autenticazione delle credenziali client OAuth 2.0, effettua le seguenti operazioni:
 
 1. Accedi all’istanza di authoring.
-1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Origini dati]**.
+1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Origini dati]**.
 1. Seleziona la cartella di configurazione.
 1. Clic **[!UICONTROL Crea]** e **[!UICONTROL Crea configurazione origine dati]** viene visualizzato.
 1. Specifica la **[!UICONTROL Titolo]** e seleziona la **[!UICONTROL Tipo di servizio]** as **[!UICONTROL Servizio RESTful]**.

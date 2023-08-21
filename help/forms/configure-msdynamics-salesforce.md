@@ -1,15 +1,14 @@
 ---
-title: Come configurare Microsoft Dynamics 365 e Salesforce modelli di dati per moduli adattivi pronti all’uso?
+title: Configurare Microsoft Dynamics 365 o Salesforce per AEM Forms
 description: Scopri come integrare Microsoft Dynamics 365 e Salesforce con moduli adattivi.
-exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '952'
 ht-degree: 2%
 
 ---
 
-# Configurazione[!DNL Microsoft Dynamics 365]e[!DNL Salesforce]servizi cloud {#configure-azure-storage}
+# Configurare Microsoft Dynamics 365 o Salesforce per AEM Forms {#configure-azure-storage}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -47,7 +46,7 @@ Prima di configurare [!DNL Salesforce] servizi cloud, assicurati di eseguire le 
 
 Per configurare il [!DNL Salesforce] servizio cloud:
 
-1. On [!DNL AEM Forms] istanza di authoring, passa a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Origini dati]**. L&#39;elenco delle cartelle wrapper disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
+1. On [!DNL AEM Forms] istanza di authoring, passa a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Origini dati]**. L&#39;elenco delle cartelle wrapper disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 1. Tocca il nome della cartella, seleziona **[!UICONTROL Configurazione cloud Salesforce]**, e tocca **[!UICONTROL Proprietà]**.
 1. In **[!UICONTROL Impostazioni di autenticazione]** scheda:
    1. Specifica la [!DNL Salesforce] URL del dominio in **[!UICONTROL Host]** campo. Ad esempio: [Nome di dominio].my.salesforce.com.
@@ -81,7 +80,7 @@ Prima di configurare [!DNL Microsoft Dynamics 365] cloud service, assicurati di 
 
 Per configurare il [!DNL Microsoft Dynamics 365] servizio cloud:
 
-1. On [!DNL AEM Forms] istanza di authoring, passa a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Origini dati]**. L&#39;elenco delle cartelle wrapper disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
+1. On [!DNL AEM Forms] istanza di authoring, passa a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Origini dati]**. L&#39;elenco delle cartelle wrapper disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 1. Tocca il nome della cartella, seleziona **[!UICONTROL Configurazione cloud Microsoft Dynamics 365]**, e tocca **[!UICONTROL Proprietà]**.
 1. In **[!UICONTROL Impostazioni di autenticazione]** scheda:
    1. Immetti il valore per **[!UICONTROL Directory principale servizio]** campo. Vai all’istanza Dynamics e passa a [Risorse per sviluppatori](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) per visualizzare il valore del campo Service Root. Ad esempio `https://<tenant-name>.dynamics.com/api/data/v9.1/`

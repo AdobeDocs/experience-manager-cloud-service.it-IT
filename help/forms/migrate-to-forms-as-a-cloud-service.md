@@ -1,5 +1,5 @@
 ---
-title: Come migrare da un Forms AEM 6.5 a [!DNL AEM Forms] ambiente as a Cloud Service?
+title: Migrazione da AEM 6.5 Forms ad AEM Forms as a Cloud Service
 description: Guida introduttiva del Percorso di migrazione all’AEM as a Cloud Service | Adobe Experience Manager. Migra da un [!DNL AEM Forms] (ambienti locali e AMS) per [!DNL AEM Forms] ambiente as a Cloud Service.
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: d43e2d555a09f481900ec70e5e38bab42f4cc1d7
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1580'
+ht-degree: 4%
 
 ---
 
@@ -111,7 +111,7 @@ Effettua le seguenti operazioni per rendere [!DNL AEM Forms] risorse compatibili
 
    1. Tocca **[!UICONTROL Migrazione modello Forms adattivo]** e nella pagina Migrazione componenti personalizzati, tocca **[!UICONTROL Avvia migrazione]**. Crea modelli di modulo adattivo in `/apps` o `/conf` e creato utilizzando l’Editor di modelli AEM compatibile con [!DNL AEM] as a Cloud Service.
 
-   1. Tocca **[!UICONTROL Migrazione configurazioni AEM Forms Cloud]** quindi, nella pagina Migrazione della configurazione, tocca **[!UICONTROL Avvia migrazione]**. Aggiorna e sposta i seguenti Cloud Services in una nuova posizione:
+   1. Tocca **[!UICONTROL Migrazione configurazioni AEM Forms Cloud]** quindi, nella pagina Migrazione della configurazione, tocca **[!UICONTROL Avvia migrazione]**. Aggiorna e sposta i seguenti Cloud Service in una nuova posizione:
 
       * Cloud Service modello dati modulo
       * Cloud Service Google reCAPTCHA
@@ -128,7 +128,7 @@ Effettua le seguenti operazioni per rendere [!DNL AEM Forms] risorse compatibili
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Esegui il [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Quando si specificano i parametri **[!UICONTROL Crea set di migrazione]** , specifica il percorso di Forms adattivo, temi, modelli, modelli di dati dei moduli, Cloud Services, componenti personalizzati e altre risorse specifiche di AEM Forms per **[!UICONTROL Percorsi da includere]** opzione. Aggiunge specificato [!DNL AEM Forms] risorse al set di migrazione.
+1. Esegui il [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Quando si specificano i parametri **[!UICONTROL Crea set di migrazione]** , specifica il percorso di Forms adattivo, temi, modelli, modelli di dati dei moduli, Cloud Service, componenti personalizzati e altre risorse specifiche di AEM Forms per **[!UICONTROL Percorsi da includere]** opzione. Aggiunge specificato [!DNL AEM Forms] risorse al set di migrazione.
 
 ## Percorsi di varie risorse specifiche per AEM Forms
 

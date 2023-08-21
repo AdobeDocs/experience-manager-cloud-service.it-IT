@@ -1,15 +1,14 @@
 ---
-title: Abilitare i componenti core dei moduli adattivi in AEM Forms as a Cloud Service e nell’ambiente di sviluppo locale
-seo-title: Step-by-Step Guide for enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment
+title: Abilita componenti core Forms adattivi
 description: Scopri come abilitare i componenti core Adaptive Forms su AEM Forms as a Cloud Service con la nostra guida dettagliata. Il nostro tutorial illustra la procedura per abilitare facilmente questa potente funzione per il tuo ambiente AEM Forms.
 seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 7%
+source-wordcount: '1031'
+ht-degree: 6%
 
 ---
 
