@@ -1,16 +1,16 @@
 ---
-title: Applicare firme elettroniche a un modulo utilizzando le firme scarabocchio
+title: Firma elettronica di un modulo tramite firme a mano
 description: Firma di moduli tramite scarabocchio
 seo-description: Signing forms using scribble
 topic-tags: author
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '714'
 ht-degree: 2%
 
 ---
 
-# Applicare firme elettroniche a un modulo utilizzando le firme scarabocchio{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# Firma elettronica di un modulo tramite firme a mano{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 <span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 

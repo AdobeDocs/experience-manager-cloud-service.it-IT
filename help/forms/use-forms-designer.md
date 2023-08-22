@@ -1,15 +1,15 @@
 ---
-title: Utilizzare Forms Designer per creare modelli DOR e frammenti di modulo
+title: Utilizzare AEM Forms Designer
 description: Utilizzare [!DNL AEM Forms] per creare modelli di documenti di record.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
-# Utilizzare Forms Designer per creare modelli di documento di record (DoR) e frammenti di modulo {#install-designer}
+# Utilizzare AEM Forms Designer {#install-designer}
 
 Designer è uno strumento di progettazione grafica semplice e intuitivo che semplifica la creazione di modelli di modulo XDP. È possibile progettare un modello di modulo, definirne la logica e soddisfare requisiti legislativi rigorosi. Questi modelli fungono da modello di documento record per un modulo adattivo. Questi modelli di moduli sono diversi da [Modelli di modulo adattivo](template-editor.md).
 
