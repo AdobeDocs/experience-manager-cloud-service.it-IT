@@ -3,9 +3,9 @@ title: Come si collegano e inviano i dati del modulo adattivo a Microsoft&reg; P
 description: Guida dettagliata alla connessione e all'invio di dati di moduli adattivi a Microsoft&reg; Power Automate.
 keywords: Adaptive Forms Microsoft Power Automate, invia dati Adaptive Forms a Microsoft Power Automate
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1198'
 ht-degree: 4%
 
 ---
@@ -119,7 +119,7 @@ Dopo di te [Collegare l&#39;istanza Forms as a Cloud Service con Microsoft® Pow
 1. Accedi all’istanza di authoring, seleziona il modulo adattivo e fai clic su **[!UICONTROL Proprietà]**.
 1. Nel Contenitore di configurazione, sfoglia e seleziona il contenitore creato nella sezione [Crea configurazione cloud Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration), e tocca **[!UICONTROL Salva e chiudi]**.
 1. Apri il modulo adattivo per la modifica e passa a **[!UICONTROL Invio]** sezione delle proprietà Contenitore modulo adattivo.
-1. Nel contenitore delle proprietà, per **[!UICONTROL Invia azioni]** seleziona la **[!UICONTROL Richiama un flusso Power Automate]** opzione. È disponibile un elenco dei flussi disponibili di Power Automate **[!UICONTROL Flusso di Power Automate]** opzione. Seleziona il flusso richiesto e i dati di Adaptive Forms vengono inviati al momento dell’invio.
+1. Nel contenitore delle proprietà, per **[!UICONTROL Invia azioni]** seleziona la **[!UICONTROL Richiama un flusso Power Automate]** e selezionare un **[!UICONTROL Flusso di Power Automate]**. Seleziona il flusso richiesto e i dati di Adaptive Forms vengono inviati al momento dell’invio.
 
    ![Configura azione di invio](assets/submission.png)
 
