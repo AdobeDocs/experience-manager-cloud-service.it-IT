@@ -4,7 +4,7 @@ description: Utilizza il Selettore risorse per cercare, trovare e recuperare i m
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: dd923ae9d63f1ca1379d8e177ff7b00648da052a
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 91%
@@ -44,6 +44,7 @@ Per integrare e utilizzare Selettore risorse con il tuo archivio [!DNL Experienc
 È possibile integrare qualsiasi [!DNL Adobe] o applicazioni non Adobe nell’archivio [!DNL Experience Manager Assets] as a [!DNL Cloud Service] e selezionare le risorse dall’interno dell’applicazione.
 
 L’integrazione viene eseguita importando il pacchetto Selettore risorse e connettendolo ad Assets as a Cloud Service tramite la libreria JavaScript Vanilla. È necessario modificare un `index.html` o qualsiasi file appropriato all’interno dell’applicazione per:
+
 * Definire i dettagli di autenticazione
 * Accedere all’archivio Assets as a Cloud Service
 * Configurare le proprietà di visualizzazione del Selettore risorse
@@ -73,6 +74,7 @@ You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken
 -->
 
 Definisci i prerequisiti in un file `index.html` o simile nell’implementazione dell’applicazione per definire i dettagli di autenticazione per accedere all’archivio di [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. I prerequisiti includono:
+
 * imsOrg
 * imsToken
 * apikey
@@ -105,7 +107,7 @@ I selettori di Assets sono disponibile tramite entrambe le versioni ESM CDN(ad e
 Nei browser che utilizzano la **versione UMD** (scelta consigliata):
 
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
   const { renderAssetSelector } = PureJSSelectors;
@@ -116,14 +118,14 @@ Nei browser con supporto di `import maps` che utilizzano la **versione ESM CDN**
 
 ```
 <script type="module">
-  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 Nella federazione di moduli Deno/Webpack utilizzando la **versione ESM CDN**:
 
 ```
-import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### Tipo di risorsa selezionato {#selected-asset-type}
@@ -526,7 +528,7 @@ Il Selettore risorse fornisce anche opzioni di filtro predefinite per perfeziona
 * `MIME type`: include JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
 * `Image Size`: include larghezza minima/massima, altezza minima/massima dell’immagine
 
-![rail-view-example](assets/filters-asset-selector.png)
+  ![rail-view-example](assets/filters-asset-selector.png)
 
 ### Ricerca personalizzata
 
