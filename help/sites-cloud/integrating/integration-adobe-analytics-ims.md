@@ -2,10 +2,10 @@
 title: Configurazione IMS da utilizzare per l’integrazione con Adobe Analytics
 description: Scopri di più sulla configurazione IMS da utilizzare per l’integrazione con Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 91%
+source-wordcount: '914'
+ht-degree: 96%
 
 ---
 
@@ -45,7 +45,7 @@ La prima fase consiste nel creare una configurazione IMS in AEM e generare la ch
 1. In AEM apri il menu **Strumenti**.
 1. Nella sezione **Sicurezza** seleziona **Configurazioni Adobe IMS**.
 1. Seleziona **Crea** per aprire **Configurazione dell’account tecnico Adobe IMS**.
-1. Utilizzo del menu a discesa in **Configurazione cloud**, seleziona **Adobe Analytics**.
+1. Dal menu a discesa in **Configurazione cloud**, seleziona **Adobe Analytics**.
 1. Attiva **Crea nuovo certificato** e immetti un nuovo alias.
 1. Conferma con **Crea certificato**.
 
@@ -55,7 +55,7 @@ La prima fase consiste nel creare una configurazione IMS in AEM e generare la ch
 
    >[!CAUTION]
    >
-   >Tieni aperta questa configurazione, sarà necessaria di nuovo quando [Completamento della configurazione IMS in AEM](#completing-the-ims-configuration-in-aem).
+   >Tieni aperta questa configurazione, sarà nuovamente necessaria durante il [completamento della configurazione IMS in AEM](#completing-the-ims-configuration-in-aem).
 
    ![Scarica certificato](assets/integrate-analytics-ims-02.png)
 
@@ -67,15 +67,21 @@ Utilizzando Adobe Developer Console è necessario creare un progetto (integrazio
 
 Apri la console Adobe Developer per creare un progetto con Adobe Analytics che AEM utilizzerà:
 
+>[!CAUTION]
+>
+>Adobe Developer Al momento, supportiamo solo i **Account di servizio (JWT)** tipo di credenziali.
+>
+>Non utilizzare il **OAuth Server-to-Server** tipo di credenziali, che sarà supportato in futuro.
+
 1. Apri la console Adobe Developer per progetti:
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Vengono visualizzati tutti i progetti che hai. Seleziona **Crea nuovo progetto**; la posizione e l’utilizzo dipenderanno da:
+1. Vengono visualizzati tutti i tuoi progetti. Seleziona **Crea nuovo progetto**; la posizione e l’utilizzo dipenderanno da:
 
-   * Se non hai ancora un progetto, **Crea nuovo progetto** è al centro, in basso.
+   * Se non hai ancora un progetto, **Crea nuovo progetto** si trova in basso al centro.
      ![Crea nuovo progetto - Primo progetto](assets/integration-analytics-ims-02.png)
-   * Se disponi già di progetti esistenti, questi vengono elencati e **Crea nuovo progetto** è in alto a destra.
+   * Se disponi già di progetti esistenti, questi vengono elencati e **Crea nuovo progetto** si trova in alto a destra.
      ![Crea nuovo progetto - Più progetti](assets/integration-analytics-ims-03.png)
 
 
@@ -132,7 +138,7 @@ Seleziona una voce di progetto specifica per visualizzare ulteriori dettagli sul
 
 * Panoramica del progetto
 * Approfondimenti
-* Credenziali 
+* Credenziali
    * Account servizio (JWT)
       * Dettagli delle credenziali
       * Genera JWT

@@ -2,10 +2,10 @@
 title: Configurazione IMS da utilizzare per l’integrazione con Adobe Target
 description: Configurazione IMS da utilizzare per l’integrazione con Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 155b24c4b46e8baebd6215c0717d9f2adde95017
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 91%
+source-wordcount: '883'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ La prima fase consiste nel creare una configurazione IMS in AEM e generare la ch
 1. In AEM apri il menu **Strumenti**.
 1. Nella sezione **Sicurezza** seleziona **Configurazioni Adobe IMS**.
 1. Seleziona **Crea** per aprire **Configurazione dell’account tecnico Adobe IMS**.
-1. Utilizzo del menu a discesa in **Configurazione cloud**, seleziona **Adobe Target**.
+1. Dal menu a discesa in **Configurazione cloud**, seleziona **Adobe Target**.
 1. Attiva **Crea nuovo certificato** e immetti un nuovo alias.
 1. Conferma con **Crea certificato**.
 
@@ -53,7 +53,7 @@ La prima fase consiste nel creare una configurazione IMS in AEM e generare la ch
 
    >[!CAUTION]
    >
-   >Tieni aperta questa configurazione, sarà necessaria di nuovo quando [Completamento della configurazione IMS in AEM](#completing-the-ims-configuration-in-aem).
+   >Tieni aperta questa configurazione, sarà nuovamente necessaria durante il [completamento della configurazione IMS in AEM](#completing-the-ims-configuration-in-aem).
 
    ![Scarica certificato](assets/integrate-target-ims-02.png)
 
@@ -65,15 +65,21 @@ Progetto Adobe Developer Console (integrazione) con Adobe Target che AEM utilizz
 
 Apri Adobe Developer Console per creare un progetto con Adobe Target che AEM utilizzerà:
 
+>[!CAUTION]
+>
+>Adobe Developer Al momento, supportiamo solo i **Account di servizio (JWT)** tipo di credenziali.
+>
+>Non utilizzare il **OAuth Server-to-Server** tipo di credenziali, che sarà supportato in futuro.
+
 1. Apri la console Adobe Developer per progetti:
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Vengono visualizzati tutti i progetti che hai. Seleziona **Crea nuovo progetto**; la posizione e l’utilizzo dipenderanno da:
+1. Vengono visualizzati tutti i tuoi progetti. Seleziona **Crea nuovo progetto**; la posizione e l’utilizzo dipenderanno da:
 
-   * Se non hai ancora un progetto, **Crea nuovo progetto** è al centro, in basso.
+   * Se non hai ancora un progetto, **Crea nuovo progetto** si trova in basso al centro.
      ![Crea nuovo progetto - Primo progetto](assets/integration-target-ims-02.png)
-   * Se disponi già di progetti esistenti, questi vengono elencati e **Crea nuovo progetto** è in alto a destra.
+   * Se disponi già di progetti esistenti, questi vengono elencati e **Crea nuovo progetto** si trova in alto a destra.
      ![Crea nuovo progetto - Più progetti](assets/integration-target-ims-03.png)
 
 
