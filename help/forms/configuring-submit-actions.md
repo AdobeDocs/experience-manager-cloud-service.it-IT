@@ -2,10 +2,10 @@
 title: Configurare un’azione di invio per un modulo adattivo
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
 workflow-type: tm+mt
-source-wordcount: '3178'
-ht-degree: 1%
+source-wordcount: '3388'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,6 @@ ht-degree: 1%
 
 Un’azione di invio viene attivata quando un utente fa clic su **[!UICONTROL Invia]** in un modulo adattivo. Forms as a Cloud Service fornisce le seguenti azioni di invio pronte all’uso.
 
-
 * [Invia all’endpoint REST](#submit-to-rest-endpoint)
 * [Invia e-mail](#send-email)
 * [Invia usando il modello dati modulo](#submit-using-form-data-model)
@@ -28,6 +27,7 @@ Un’azione di invio viene attivata quando un utente fa clic su **[!UICONTROL In
 * [Invia a SharePoint](#submit-to-sharedrive)
 * [Invia a OneDrive](#submit-to-onedrive)
 * [Invia ad Azure Blob Storage](#azure-blob-storage)
+* [Invia a Power Automate](#microsoft-power-automate)
 
 È inoltre possibile [estendere le azioni di invio predefinite](custom-submit-action-form.md) per creare un’azione di invio personalizzata.
 
@@ -89,7 +89,7 @@ Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati co
 
 ![Configurazione dell’azione di invio endpoint REST](assets/action-config.png)
 
-È inoltre possibile **[!UICONTROL Abilita richiesta POST]** e fornisci un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso radice del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
+È inoltre possibile **[!UICONTROL Abilita richiesta POST]** e fornisci un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso radice del server AEM. Esempio: `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ Il **[!UICONTROL Invia a SharePoint]** L’azione di invio collega un modulo ada
 
 Per collegare AEM Forms al tuo Microsoft® Sharepoint Storage:
 
-1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Dopo aver selezionato **[!UICONTROL Microsoft® SharePoint]**, viene reindirizzato a **[!UICONTROL Browser SharePoint]**.
 1. Seleziona un **Contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata di configurazione di SharePoint.
@@ -236,7 +236,7 @@ Il **[!UICONTROL Invia a OneDrive]** L&#39;azione di invio collega un modulo ada
 
 Per collegare AEM Forms allo storage Microsoft® OneDrive:
 
-1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® OneDrive]**.
+1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® OneDrive]**.
 1. Dopo aver selezionato **[!UICONTROL Microsoft® OneDrive]**, viene reindirizzato a **[!UICONTROL Browser OneDrive]**.
 1. Seleziona un **Contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]**. Verrà visualizzata la configurazione guidata di OneDrive.
@@ -292,7 +292,7 @@ Il **[!UICONTROL Invia ad Azure Blob Storage]**  L’azione di invio collega un 
 ### Creare un contenitore di archiviazione BLOB di Azure {#create-azure-configuration}
 
 Per connettere AEM Forms ai contenitori di archiviazione Azure:
-1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Archiviazione Azure]**.
+1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Archiviazione Azure]**.
 1. Dopo aver selezionato **[!UICONTROL Archiviazione Azure]**, viene reindirizzato a **[!UICONTROL Browser archiviazione Azure]**.
 1. Seleziona un **Contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata Crea configurazione di archiviazione Azure.
@@ -327,6 +327,19 @@ Quando si invia il modulo, i dati vengono salvati nella configurazione del conte
 La struttura di cartelle per il salvataggio dei dati è `/configuration_container/form_name/year/month/date/submission_id/data`.
 
 Per impostare i valori di una configurazione: [Generare configurazioni OSGi utilizzando l’SDK per AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), e [distribuire la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) all’istanza di Cloud Service.
+
+## Invia a Power Automate {#submit-to-power-automate}
+
+È possibile configurare un modulo adattivo per eseguire un flusso cloud di Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record al flusso cloud Power Automate per l’elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche di business sulla base dei dati acquisiti e automatizzare i flussi di lavoro dei clienti. Di seguito sono riportati alcuni esempi di cosa è possibile fare dopo l’integrazione di un modulo adattivo con Microsoft® Power Automate:
+
+* Utilizzare dati Forms adattivi in processi aziendali Power Automate
+* Utilizza Power Automate per inviare i dati acquisiti a più di 500 origini dati o a qualsiasi API disponibile pubblicamente
+* Eseguire calcoli complessi sui dati acquisiti
+* Salvataggio dei dati Adaptive Forms sui sistemi di storage secondo una pianificazione predefinita
+
+L’editor di Forms adattivo fornisce **Richiama un flusso Microsoft® Power Automate** l’azione di invio per inviare i dati dei moduli adattivi, gli allegati e il documento di record viene inviata a Power Automate Cloud Flow. Per utilizzare l&#39;azione Invia per inviare i dati acquisiti a Microsoft® Power Automate, [Collegare l&#39;istanza Forms as a Cloud Service con Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
+
+Dopo una configurazione corretta, utilizza [Richiama un flusso Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) azione di invio per inviare dati a un flusso Power Automate.
 
 ## Utilizzare l’invio sincrono o asincrono {#use-synchronous-or-asynchronous-submission}
 
