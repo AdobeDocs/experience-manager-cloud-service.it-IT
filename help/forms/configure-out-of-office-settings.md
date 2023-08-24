@@ -1,12 +1,9 @@
 ---
 title: Configurare le impostazioni Fuori sede
-seo-title: Configure Out of Office settings
-description: RConfigura impostazioni Fuori sede
-seo-description: Configure Out of Office settings
-exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+description: Consente di delegare le attività mentre si è in congedo o fuori sede per un'esecuzione fluida del flusso di lavoro.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -55,7 +52,7 @@ Per abilitare l&#39;impostazione Fuori sede per l&#39;account e delegare gli ele
 
    >[!NOTE]
    >
-   >L&#39;ordine degli assegnatari è importante. Quando un elemento viene assegnato a un utente che ha abilitato l&#39;impostazione Fuori sede, l&#39;elemento viene valutato in base all&#39;elenco degli assegnatari specificato nell&#39;ordine in cui vengono aggiunti gli assegnatari. Quando un elemento corrisponde ai criteri, viene assegnato all&#39;assegnatario e l&#39;assegnatario successivo non viene selezionato.
+   >L&#39;ordine degli assegnatari è importante. Quando un elemento viene assegnato a un utente che ha abilitato l&#39;impostazione fuori sede, l&#39;elemento viene valutato in base all&#39;elenco degli assegnatari specificato nell&#39;ordine in cui vengono aggiunti gli assegnatari. Quando un elemento corrisponde ai criteri, viene assegnato all&#39;assegnatario e l&#39;assegnatario successivo non è selezionato.
 
 1. Tocca **[!UICONTROL Salva]**. L&#39;impostazione ha effetto alla data e all&#39;ora di inizio specificate. Se si effettua l&#39;accesso mentre si è fuori sede, non si viene considerati in ufficio fino a quando non si modificano le impostazioni.
 
@@ -64,7 +61,7 @@ Ora gli elementi assegnati durante il periodo Fuori sede vengono assegnati autom
 
 >[!NOTE]
 >
->(Solo per elementi del flusso di lavoro incentrati su Forms) Abilita **[!UICONTROL Consenti all’assegnatario di delegare utilizzando le impostazioni &quot;Fuori sede&quot;]** opzione del **[!UICONTROL Assegna attività]** nel flusso di lavoro. Solo gli elementi per i quali è attivata l&#39;opzione sopra indicata vengono delegati ad altri utenti.
+>(Solo per elementi del flusso di lavoro incentrati su Forms) Abilita **[!UICONTROL Consenti all’assegnatario di delegare utilizzando le impostazioni &quot;Fuori sede&quot;]** opzione del **[!UICONTROL Assegna attività]** nel flusso di lavoro. Solo gli elementi per i quali è abilitata l’opzione precedentemente indicata vengono delegati ad altri utenti.
 
 ## Limitazioni {#limitations}
 

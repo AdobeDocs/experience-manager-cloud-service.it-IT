@@ -1,11 +1,10 @@
 ---
 title: Firma elettronica di un modulo tramite firme a mano
-description: Firma di moduli tramite scarabocchio
-seo-description: Signing forms using scribble
+description: Il passaggio Firma e Firma Scribble Adaptive Forms consente di eseguire facilmente l’e-sign. Firma digitale semplificata per una maggiore efficienza.
 topic-tags: author
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '725'
 ht-degree: 2%
 
 ---

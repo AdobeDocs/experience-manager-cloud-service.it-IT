@@ -1,13 +1,10 @@
 ---
 title: Risoluzione dei problemi relativi alle prestazioni di memorizzazione nella cache
-seo-title: Troubleshooting caching performance
-description: Risoluzione dei problemi relativi alle prestazioni di memorizzazione nella cache
-seo-description: Troubleshooting caching performance
+description: Come risolvere i problemi relativi alla memorizzazione nella cache per AEM Forms as a Cloud Service?
 contentOwner: khsingh
-exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '370'
 ht-degree: 1%
 
 ---
@@ -57,7 +54,7 @@ Per risolvere il problema, effettua le seguenti operazioni:
 
 ## Il caching CDN smette di funzionare dopo 300 secondi {#cdn-caching-stops-working-after-300-seconds}
 
-Il caching della rete CDN non funziona più dopo 300 secondi e tutte le richieste da memorizzare nella cache della rete CDN vengono reindirizzate a Dispatcher.
+Il caching della rete CDN smette di funzionare dopo 300 secondi e tutte le richieste da memorizzare nella cache della rete CDN vengono reindirizzate a Dispatcher.
 
 Per risolvere il problema, imposta l’intestazione della pagina su 0:
 

@@ -1,10 +1,9 @@
 ---
-title: Supporto note a piè di pagina
-description: Supporto dell’editor Rich Text per le note a piè di pagina.
-exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+title: Supporto delle note a piè di pagina per Adaptive Forms
+description: Migliora Adaptive Forms con note a piè di pagina in formato Rich Text informative. Migliora l'esperienza utente e il coinvolgimento.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 1%
 
 **[!UICONTROL Nota a piè di pagina]** è la parte aggiuntiva di informazioni o note visualizzate alla fine della pagina. [!UICONTROL Nota a piè di pagina] comprende le note indicate nel testo con i numeri in apice.
 
-Le note a piè di pagina sono numerate in sequenza nell’ordine in cui appaiono sulla pagina. Ogni nota a piè di pagina ha un numero univoco come apice che corrisponde al numero posizionato nella parte inferiore della pagina. Accanto al numero vengono visualizzate le informazioni supplementari come descrizione della nota a piè di pagina.
+Le note a piè di pagina sono numerate in sequenza in base all&#39;ordine di visualizzazione nella pagina. Ogni nota a piè di pagina ha un numero univoco come apice che corrisponde al numero posizionato nella parte inferiore della pagina. Accanto al numero vengono visualizzate le informazioni supplementari come descrizione della nota a piè di pagina.
 
 ![Descrizione nota a piè di pagina](/help/forms/assets/footnote_description.png)
 
