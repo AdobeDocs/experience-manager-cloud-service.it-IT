@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 74%
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service offre un servizio integrato di rete per la distribuzione 
 * I nomi di dominio personalizzati (e i certificati) installati nel CDN gestito da AEM vengono gestiti tramite Cloud Manager.
 * I nomi di dominio personalizzati (e i certificati) installati nel tuo CDN sono gestiti in quel CDN specifico.
 
-I domini gestiti nella tua rete CDN non devono essere installati tramite Cloud Manager. Vengono resi disponibili all’AEM tramite X-Forwarded-Host e corrispondono agli host definiti in Dispatcher. Consulta la [Documentazione CDN](/help/implementing/dispatcher/cdn.md).
+I domini gestiti nel tuo CDN non devono essere installati tramite Cloud Manager. Vengono resi disponibili per AEM tramite X-Forwarded-Host e corrispondono agli host definiti nel Dispatcher. Consulta la [documentazione CDN](/help/implementing/dispatcher/cdn.md).
 
 In un ambiente è possibile installare entrambi i domini nel CDN gestito da AEM e installarli nel proprio CDN.
 
@@ -74,4 +74,4 @@ L’utilizzo di nomi di dominio personalizzati con AEMaaCS presenta diverse limi
 * Impossibile utilizzare lo stesso nome di dominio in più ambienti.
 * È possibile aggiungere un solo nome di dominio alla volta.
 * AEM as a Cloud Service non supporta i domini con caratteri jolly come `*.example.com`.
-* Prima di aggiungere un nome di dominio personalizzato, è necessario installare un certificato SSL valido contenente il nome di dominio personalizzato del programma (i certificati wildcard sono validi). Consulta [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) per ulteriori informazioni.
+* Prima di aggiungere un nome di dominio personalizzato, è necessario installare un certificato SSL valido contenente il nome di dominio personalizzato del programma (i certificati wildcard sono validi). Per ulteriori informazioni, consulta [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
