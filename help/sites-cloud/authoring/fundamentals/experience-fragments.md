@@ -2,10 +2,10 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
 workflow-type: tm+mt
 source-wordcount: '2044'
-ht-degree: 77%
+ht-degree: 99%
 
 ---
 
@@ -18,14 +18,14 @@ In Adobe Experience Manager as a Cloud Service, un frammento esperienza:
 * può essere aggiunto come riferimento nelle pagine;
 * può contenere qualsiasi componente.
 
-Un frammento esperienza:
+Un frammento di esperienza:
 
-* Fa parte di un’esperienza (pagina).
+* è parte di un’esperienza (pagina).
 * Può essere utilizzato su più pagine.
-* È basato su un modello (solo modificabile) per definire la struttura e i componenti.
+* Si basa su un modello (solo modificabile) che ne definisce struttura e componenti.
 * Questo modello viene utilizzato per creare la *pagina root* del frammento di esperienza.
-* è costituito da uno o più componenti, con layout, in un sistema paragrafo.
-* Può contenere altri frammenti esperienza.
+* È costituito da uno o più componenti, con layout, in un sistema paragrafo.
+* Può contenere altri frammenti di esperienza.
 * Può essere combinato con altri componenti (inclusi altri frammenti esperienza) per formare una pagina completa (esperienza).
 * Puoi creare una o più varianti in base alla pagina root.
 * Queste varianti possono condividere contenuti e/o componenti.
@@ -37,7 +37,7 @@ Puoi utilizzare Frammenti esperienza:
 Senza Frammenti esperienza, l’autore dovrebbe copiare e incollare tale frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente.
 Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
 * Per supportare il caso d’uso del CMS headless.
-Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. Un sistema/punto di contatto di terze parti utilizzerebbe tale esperienza e quindi la consegnerebbe all’utente finale.
+Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. È possibile che un sistema o punto di contatto di terzi prenda in carico questa particolare esperienza e in seguito la trasmetta all’utente finale.
 
 >[!NOTE]
 >
@@ -47,25 +47,25 @@ Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distri
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 >
->Per ulteriori informazioni, consulta [Frammenti di contenuto e frammenti di esperienza nell’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
+>Per ulteriori informazioni, consulta [Frammenti di contenuto e frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
 
 >[!NOTE]
 >
->Per poter accedere in scrittura ai frammenti esperienza, l’account utente deve essere registrato nel gruppo
+>Per poter accedere in scrittura ai frammenti esperienza, l’account utente deve essere registrato nel gruppo:
 >
 >* `experience-fragments-editors`
 >
->In caso di problemi, contatta l’amministratore di sistema.
+>Se riscontri problemi, contatta l’amministratore di sistema.
 
 ## Quando utilizzare i frammenti esperienza?   {#when-should-you-use-experience-fragments}
 
-I frammenti esperienza sono indicati nei seguenti casi:
+I Frammenti di esperienza sono indicati nei seguenti casi:
 
 * Quando desideri riutilizzare le esperienze.
-   * Esperienze riutilizzate con contenuti uguali o simili.
+   * Per esperienze che riutilizzerai con contenuti simili o uguali.
 * Quando utilizzi AEM come piattaforma di distribuzione di contenuti per terze parti.
    * Per qualsiasi soluzione che utilizza AEM come piattaforma di distribuzione di contenuti. .
-   * Incorporazione di contenuti nei punti di contatto di terze parti.
+   * Incorporazione di contenuti nei punti di contatto di terzi.
 * Se usi un’esperienza con diverse varianti o rappresentazioni.
    * Varianti per un canale o per un contesto specifico. .
    * Per esperienze che è utile raggruppare; ad esempio una campagna con diverse esperienze per i vari canali.
@@ -145,7 +145,7 @@ Per creare e configurare una cartella per i frammenti esperienza, è consigliabi
 >
 >È consigliabile non utilizzare questo metodo per modificare i **modelli consentiti**, in quanto i modelli specificati possono essere sovrascritti in seguito a un aggiornamento.
 >
->Utilizzare questa finestra di dialogo solo a scopo informativo.
+>Utilizza questa finestra di dialogo solo a scopo informativo.
 
 1. Individua la console **Frammenti esperienza** necessaria.
 
@@ -184,7 +184,7 @@ Per creare un frammento esperienza:
 
 1. Inserisci le **proprietà** per il **frammento esperienza**.
 
-   A **Titolo** è obbligatorio. Se il **Nome** è lasciato vuoto è derivato dal valore **Titolo**.
+   È obbligatorio un **Titolo**. Se il **Nome** viene lasciato vuoto, viene generato dal **Titolo**.
 
    ![Proprietà dei frammenti esperienza](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -227,7 +227,7 @@ Esempio: `http://<host>:<port>/editor.html/content/experience-fragments/wknd/lan
 
 Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 
-1. Apri il frammento per [modifica](#editing-your-experience-fragment).
+1. Apri la pagina per la [modifica](#editing-your-experience-fragment).
 1. Apri la scheda **Varianti**.
 
    ![Creazione di una variante del frammento esperienza](/help/sites-cloud/authoring/assets/xf-06.png)
@@ -241,7 +241,7 @@ Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 
    * **Modello**
    * **Titolo**
-   * **Nome** - se non specificato, deriva dal campo Titolo
+   * **Nome**: se è lasciato vuoto, viene generato dal Titolo.
    * **Descrizione**
    * **Tag varianti**
 
@@ -250,13 +250,13 @@ Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
    ![Proprietà della variante](/help/sites-cloud/authoring/assets/xf-07.png)
 
 
-1. Conferma con **Fine**, la nuova variante viene visualizzata nel pannello.
+1. Conferma con **Fine**; la nuova variante viene visualizzata nel pannello.
 
 ## Utilizzo del frammento esperienza {#using-your-experience-fragment}
 
 Ora puoi utilizzare il frammento di esperienza durante l’authoring delle pagine:
 
-1. Apri qualsiasi pagina per la modifica.
+1. Apri la pagina da modificare.
 
 1. Crea un’istanza del componente Frammento esperienza, all’interno del sistema di paragrafi della pagina:
 
@@ -281,7 +281,7 @@ Puoi selezionare uno o più componenti per creare un blocco predefinito da riuti
 
 Per creare un nuovo blocco predefinito:
 
-1. Nell’editor frammento di esperienza, seleziona i componenti da riutilizzare:
+1. Nell’editor Frammento di esperienza, seleziona i componenti da riutilizzare:
 
    ![Selezione del componente per il blocco predefinito](/help/sites-cloud/authoring/assets/xf-09.png)
 
@@ -293,13 +293,13 @@ Per creare un nuovo blocco predefinito:
 
    ![Assegnazione di un nome al blocco predefinito](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. Il **Blocco predefinito** viene visualizzato nella scheda sinistra (**Locale**) e può essere selezionato per ulteriori azioni:
+1. Il **blocco predefinito** verrà visualizzato nella scheda a sinistra (**Locale**) e potrà essere selezionato per ulteriori azioni:
 
    ![Blocco predefinito nella barra](/help/sites-cloud/authoring/assets/xf-12.png)
 
 #### Gestione di un blocco predefinito {#managing-a-building-block}
 
-Il blocco predefinito è visibile in **Blocchi predefiniti** scheda. Per ciascun blocco sono disponibili le seguenti azioni:
+Il blocco predefinito è visibile nella scheda **Blocchi predefiniti**. Per ciascun blocco sono disponibili le seguenti azioni:
 
 * **Vai a master**: apri la variante della pagina root in una nuova scheda
 * **Rinomina**
@@ -341,7 +341,7 @@ Per personalizzare il frammento:
 
    >[!NOTE]
    >
-   >Le proprietà di personalizzazione definite in una cartella vengono ereditate da tutte le cartelle secondarie nella sottostruttura, mentre i frammenti di esperienza (e le varianti) all’interno di tale sottostruttura. È possibile sostituirli interrompendo l’ereditarietà.
+   >Le proprietà di personalizzazione definite in una cartella vengono ereditate da tutte le cartelle secondarie nella sotto-struttura, mentre i frammenti di esperienza (e le varianti) all’interno di questa sotto-struttura. È possibile sostituirli interrompendo l’ereditarietà.
 
 1. Apri la scheda **Personalizzazione** per definire e salvare le impostazioni. Ad esempio, su una cartella:
 
@@ -349,21 +349,25 @@ Per personalizzare il frammento:
 
    >[!CAUTION]
    >
-   >Quando un frammento è incorporato in una pagina Sites e **Personalizzazione** è stata configurata, al momento del rendering della pagina viene utilizzata solo la versione di personalizzazione della pagina.
+   >Quando un frammento è incorporato in una pagina Sites ed è stata configurata la **Personalizzazione**, al momento del rendering della pagina verrà utilizzata solo la versione di personalizzazione della pagina.
    >
    >Affinché il targeting eseguito sui componenti di un frammento funzioni correttamente nel rendering della pagina, è necessario soddisfare le seguenti condizioni:
    >
    >Il **Percorso ContextHub** selezionato nella scheda **Personalizzazione** deve essere:
    >
-   >* lo stesso percorso configurato per la pagina in cui viene eseguito il rendering del frammento
-   >Oppure:
+   >* lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento
+   >
+   >  Oppure:
+   >
    >* un percorso che contiene un sottoinsieme degli archivi definiti in ContextHub configurati per la pagina
    >
-   > 
-Il **Percorso segmenti** selezionato nella scheda **Personalizzazione** deve essere:
+   >Il **Percorso segmenti** selezionato nella scheda **Personalizzazione** deve essere:
    >
-   * lo stesso percorso configurato per la pagina in cui viene eseguito il rendering del frammento Oppure
-   * un percorso che contiene un sottoinsieme dei segmenti configurati per la pagina
+   >* lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento
+   >
+   >  Oppure
+   >
+   >* un percorso che contiene un sottoinsieme dei segmenti configurati per la pagina
 
 ### Definizione del targeting per il frammento di esperienza {#defining-targeting-experience-fragment}
 
@@ -390,9 +394,9 @@ I dettagli vengono visualizzati in tutte le viste della console **Frammenti espe
 
    >[!CAUTION]
    >
-   Queste schede vengono visualizzate quando apri **Proprietà** dalla console Frammenti esperienza.
+   >Queste schede vengono visualizzate quando apri **Proprietà** dalla console Frammenti esperienza.
    >
-   Se scegli **Apri proprietà** durante la modifica di un frammento esperienza, vengono visualizzate le [proprietà di pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriate.
+   >Se scegli **Apri proprietà** durante la modifica di un frammento esperienza, vengono visualizzate le [proprietà di pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriate.
 
    ![Proprietà dei frammenti esperienza](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -403,7 +407,7 @@ I dettagli vengono visualizzati in tutte le viste della console **Frammenti espe
       * **Numero totale di varianti** - solo informativo
       * **Numero di varianti web** - solo informativo
       * **Numero di varianti non web** - solo informativo
-      * **Numero di pagine che utilizzano questo frammento** - solo informativo
+      * **Numero di pagine che utilizzano questo frammento** - solo informazioni
    * **Servizi cloud**
       * **Configurazione cloud**
       * **Configurazioni Cloud Service**
@@ -422,7 +426,7 @@ Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML s
 
 >[!NOTE]
 >
-Anche se è disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere direttamente al contenuto del frammento di esperienza, utilizzando solo l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere ai contenuti del frammento esperienza direttamente dall’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Pubblicazione di frammenti di esperienza {#publishing-experience-fragments}
 
@@ -432,7 +436,7 @@ In alternativa è possibile [pubblicare in anteprima](/help/sites-cloud/authorin
 
 ## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
 
-Per impostazione predefinita, i frammenti di esperienza vengono consegnati in formato HTML. Può essere utilizzato sia dall’AEM che da canali di terze parti.
+Per impostazione predefinita, i frammenti di esperienza vengono forniti nel formato HTML. che può essere utilizzato sia da AEM che da canali di terze parti.
 
 Per l’esportazione in Adobe Target, è possibile utilizzare anche JSON. Consulta:
 
