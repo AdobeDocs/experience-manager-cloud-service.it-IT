@@ -1,9 +1,9 @@
 ---
 title: Configurazione delle regole CDN e WAF per filtrare il traffico
 description: Utilizzare le regole CDN e Firewall applicazione Web per filtrare il traffico dannoso
-source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
+source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2391'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Adobe tenta di mitigare gli attacchi contro i siti web dei clienti, ma può esse
 Questo articolo descrive quest’ultimo approccio, che offre due categorie di regole:
 
 1. **Regole CDN**: blocca o consenti le richieste in base alle proprietà e alle intestazioni di richiesta, inclusi IP, percorsi e agente utente. Queste regole possono essere configurate da tutti i clienti AEM as a Cloud Service
-1. **WAF** (Web Application Firewall) regole: blocca le richieste che corrispondono a vari pattern noti per essere associati a traffico dannoso. Queste regole possono essere configurate dai clienti che concedono in licenza il componente aggiuntivo WAF; per informazioni, contatta il team del tuo account di Adobe. Si noti che non è richiesta alcuna licenza aggiuntiva durante il primo programma dell&#39;utente.
+1. **WAF** (Web Application Firewall) regole: blocca le richieste che corrispondono a vari pattern noti per essere associati a traffico dannoso. Queste regole possono essere configurate dai clienti che dispongono di una licenza per il componente aggiuntivo WAF; per informazioni, contatta il team del tuo account di Adobe. Si noti che non è richiesta alcuna licenza aggiuntiva durante il primo programma dell&#39;utente.
 
 Queste regole possono essere distribuite ai tipi di ambiente cloud di sviluppo, staging e produzione, per i programmi di produzione (non sandbox). Il supporto per gli ambienti RDE sarà disponibile in futuro.
 
@@ -255,7 +255,7 @@ A volte è auspicabile bloccare il traffico che corrisponde a una regola solo se
 
 | **Proprietà** | **Tipo** | **Valore predefinito** | **Descrizione** |
 |---|---|---|---|
-| limit | numero intero compreso tra 10 e 10000 | obbligatorio | Frequenza di richieste al secondo per le quali viene attivata la regola |
+| limit | numero intero da 10 a 10000 | obbligatorio | Frequenza di richieste al secondo per le quali viene attivata la regola |
 | finestra | numero intero: 1, 10 o 60 | 10 | Finestra di campionamento in secondi per la quale viene calcolata la frequenza di richiesta |
 | penalità | numero intero compreso tra 60 e 3600 | 300 (5 minuti) | Un periodo in secondi per il quale le richieste corrispondenti vengono bloccate (arrotondato al minuto più vicino) |
 
@@ -310,17 +310,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
 "rid": "974e67f6",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
-"req_mthd": "GET",
-"res_type": "",
+"method": "GET",
+"res_ctype": "",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=path-rule;waf=;action=blocked"
 }
 ```
@@ -329,17 +330,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
-"req_mthd": "GET",
-"res_type": "image/png",
+"method": "GET",
+"res_ctype": "image/png",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=;waf=SQLI;action=blocked"
 }
 ```
@@ -352,15 +354,16 @@ Di seguito è riportato un elenco dei nomi dei campi utilizzati nei registri CDN
 |---|---|
 | *timestamp* | Ora di inizio della richiesta, dopo la chiusura di TLS |
 | *ttfb* | Abbreviazione per *Tempo al primo byte*. L’intervallo di tempo tra la richiesta iniziata fino al punto prima che il corpo della risposta iniziasse a essere trasmesso in streaming. |
-| *cip* | Indirizzo IP del client. |
+| *cli_ip* | Indirizzo IP del client. |
+| *cli_country* | Due lettere [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) codice paese alfa-2 per il paese cliente. |
 | *rid* | Il valore dell’intestazione della richiesta utilizzata per identificare in modo univoco la richiesta. |
-| *ua* | L’agente utente responsabile di effettuare una determinata richiesta HTTP. |
+| *req_ua* | L’agente utente responsabile di effettuare una determinata richiesta HTTP. |
 | *host* | Autorità a cui è destinata la richiesta. |
 | *url* | Il percorso completo, inclusi i parametri di query. |
-| *req_mthd* | Metodo HTTP inviato dal client, ad esempio &quot;GET&quot; o &quot;POST&quot;. |
-| *res_type* | Tipo di contenuto utilizzato per indicare il tipo di file multimediale originale della risorsa |
+| *metodo* | Metodo HTTP inviato dal client, ad esempio &quot;GET&quot; o &quot;POST&quot;. |
+| *res_ctype* | Tipo di contenuto utilizzato per indicare il tipo di file multimediale originale della risorsa. |
 | *cache* | Stato della cache. I valori possibili sono HIT, MISS o PASS |
-| *res_status* | Il codice di stato HTTP come valore intero. |
-| *res_bsize* | Byte del corpo inviati al client nella risposta. |
-| *server* | Datacenter del server cache CDN. |
+| *stato* | Il codice di stato HTTP come valore intero. |
+| *res_age* | Il tempo (in secondi) per cui una risposta è stata memorizzata nella cache (in tutti i nodi). |
+| *pop* | Datacenter del server cache CDN. |
 | *regole* | Il nome di qualsiasi regola corrispondente, sia per le regole CDN che per quelle waf.<br><br>Le regole CDN corrispondenti vengono visualizzate nella voce di registro per tutte le richieste alla CDN, indipendentemente dal fatto che si tratti di un hit, di un passaggio o di un mancato recapito della CDN.<br><br>Indica anche se la corrispondenza ha prodotto un blocco. <br><br>Ad esempio, &quot;`cdn=;waf=SQLI;action=blocked`&quot;<br><br>Vuoto se non corrisponde alcuna regola. |
