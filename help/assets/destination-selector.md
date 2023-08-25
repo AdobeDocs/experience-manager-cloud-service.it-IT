@@ -3,9 +3,9 @@ title: Selettore di destinazione per AEM as a Cloud Service
 description: Utilizza il selettore di destinazione AEM per mostrare e selezionare le risorse da utilizzare come copia della risorsa originale.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1908'
 ht-degree: 36%
 
 ---
@@ -40,6 +40,7 @@ Per integrare e utilizzare il Selettore di destinazione con il [!DNL Experience 
 È possibile integrare qualsiasi [!DNL Adobe] o applicazioni non Adobe nell’archivio [!DNL Experience Manager Assets] as a [!DNL Cloud Service] e selezionare le risorse dall’interno dell’applicazione.
 
 L’integrazione viene eseguita importando il pacchetto Selettore di destinazione e collegandosi alle risorse as a Cloud Service tramite la libreria JavaScript di Vanilla. È necessario modificare un `index.html` o qualsiasi file appropriato all&#39;interno dell&#39;applicazione a -
+
 * Definire i dettagli di autenticazione
 * Accedere all’archivio Assets as a Cloud Service
 * Configurare le proprietà di visualizzazione del Selettore di destinazione
@@ -52,6 +53,7 @@ Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 ## Prerequisiti {#prerequisites}
 
 Definisci i prerequisiti in un file `index.html` o simile nell’implementazione dell’applicazione per definire i dettagli di autenticazione per accedere all’archivio di [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. I prerequisiti includono:
+
 * imsOrg
 * imsToken
 * apikey
@@ -62,11 +64,13 @@ Il selettore delle destinazioni è disponibile tramite CDN ESM (ad esempio, [esm
 
 Nei browser che utilizzano la **versione UMD** (scelta consigliata):
 
+Nei browser che utilizzano la **versione UMD** (scelta consigliata):
+
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
-  const { renderDestinationSelector } = PureJSSelectors;
+  const { renderAssetSelector } = PureJSSelectors;
 </script>
 ```
 
@@ -74,14 +78,14 @@ Nei browser con supporto di `import maps` che utilizzano la **versione ESM CDN**
 
 ```
 <script type="module">
-  import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 Nella federazione di moduli Deno/Webpack utilizzando la **versione ESM CDN**:
 
 ```
-import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### Destinazione selezionata {#selected-destination}
