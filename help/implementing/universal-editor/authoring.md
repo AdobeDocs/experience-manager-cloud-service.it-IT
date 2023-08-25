@@ -2,10 +2,10 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f28b8a85de76a1658ef45c509cbf5600baa1bb3a
 workflow-type: tm+mt
-source-wordcount: '2266'
-ht-degree: 29%
+source-wordcount: '2267'
+ht-degree: 57%
 
 ---
 
@@ -16,9 +16,9 @@ Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenu
 
 ## Introduzione {#introduction}
 
-Universal Editor consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione, in modo da poter fornire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
+L’editor universale consente di modificare ogni aspetto di qualsiasi contenuto in qualsiasi implementazione in modo da offrire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 
-A tal fine, l’Editor universale offre agli autori dei contenuti un’interfaccia utente intuitiva che richiede una formazione minima per essere in grado di accedere e iniziare semplicemente a modificare i contenuti. Questo documento descrive l’esperienza di authoring dell’Editor universale.
+A questo scopo, l’editor universale offre agli autori di contenuti un’interfaccia utente intuitiva che richiede una formazione minima per poter entrare e iniziare a modificare i contenuti. Questo documento descrive l’esperienza di authoring dell’editor universale.
 
 >[!TIP]
 >
@@ -26,21 +26,21 @@ A tal fine, l’Editor universale offre agli autori dei contenuti un’interfacc
 
 >[!NOTE]
 >
->L&#39;editor universale è ancora in fase di sviluppo. Al momento non è possibile modificare tutti i tipi di contenuto.
+>L’editor universale è ancora in fase di sviluppo. Attualmente non è possibile modificare tutti i tipi di contenuto.
 
 ## Preparare l’app {#prepare-app}
 
-Per creare contenuti per un’app tramite l’editor universale, l’app deve essere dotata di strumenti che consentano a uno sviluppatore di supportare l’editor.
+Per creare contenuti per un’app utilizzando l’editor universale, l’app deve essere preparata da uno sviluppatore per supportare l’editor.
 
 >[!TIP]
 >
->Consulta [Guida introduttiva dell’Editor universale in AEM](getting-started.md) un esempio di come configurare un’app AEM per l’utilizzo con Universal Editor.
+>Consulta il documento [Guida introduttiva all’editor universale in AEM](getting-started.md) per un esempio su come configurare un’app AEM per utilizzare l’editor universale.
 
 ## Accedi {#sign-in}
 
 Una volta che l’app è stata preparata per funzionare con l’editor universale, dovrai accedere all’editor universale. Sarà necessario un Adobe ID per accedere e [avere accesso all’editor universale.](getting-started.md#request-access)
 
-Dopo aver effettuato l’accesso, immetti l’URL della pagina da modificare in [barra di posizione.](#location-bar) in modo da poter iniziare a modificare i contenuti, come [contenuto testo](#text-mode) o [contenuti multimediali.](#media-mode)
+Dopo aver effettuato l’accesso, immetti l’URL della pagina da modificare nella [barra degli indirizzi.](#location-bar) in modo da poter iniziare a modificare i contenuti, come [contenuto testo](#text-mode) o il [contenuto multimediale.](#media-mode)
 
 ## Comprendere l’interfaccia utente {#ui}
 
@@ -48,9 +48,9 @@ L’interfaccia utente è divisa in cinque aree principali.
 
 * [Intestazione di Experience Cloud](#experience-cloud-header)
 * [Intestazione dell’editor universale](#universal-editor-header)
-* [Barra modalità](#mode-rail)
+* [La barra modalità](#mode-rail)
 * [L’editor](#editor)
-* [Barra dei componenti](#component-rail)
+* [La barra dei componenti](#component-rail)
 
 ![Interfaccia utente dell’editor universale](assets/ui.png)
 
@@ -86,7 +86,7 @@ L’icona dell’aiuto fornisce un accesso rapido alle risorse di apprendimento 
 
 #### Notifiche {#notifications}
 
-Questa icona è contrassegnata con il numero di incompleti attualmente assegnati [notifiche.](/help/implementing/cloud-manager/notifications.md)
+Questa icona viene contrassegnata con il numero di [notifiche](/help/implementing/cloud-manager/notifications.md) incomplete attualmente assegnate.
 
 ![Notifiche](assets/notifications.png)
 
@@ -98,7 +98,7 @@ Tocca o fai clic sull’icona che rappresenta l’utente per accedere alle impos
 
 ### Intestazione dell’editor universale {#universal-editor-header}
 
-L’intestazione dell’editor universale è sempre presente nella parte superiore dello schermo immediatamente sotto [l’intestazione di Experience Cloud.](#experience-cloud-header) Ti consente di accedere rapidamente a un’altra pagina per modificare e pubblicare la pagina corrente.
+L’intestazione dell’editor universale è sempre presente nella parte superiore dello schermo immediatamente sotto [l’intestazione di Experience Cloud.](#experience-cloud-header) Consente un accesso rapido per passare a un’altra pagina di modifica e di pubblicazione della pagina corrente.
 
 ![Intestazione dell’editor universale](assets/universal-editor-header.png)
 
@@ -106,7 +106,7 @@ L’intestazione dell’editor universale è sempre presente nella parte superio
 
 Il menu hamburger non è ancora implementato.
 
-![Menu Hamburger](assets/hamburger-menu.png)
+![Menu hamburger](assets/hamburger-menu.png)
 
 #### Barra della posizione {#location-bar}
 
@@ -124,17 +124,17 @@ La barra della posizione mostra l’indirizzo della pagina che stai modificando.
 
 #### Impostazioni emulatore {#emulator}
 
-Tocca o fai clic sull’icona dell’emulazione per definire il rendering della pagina in Editor universale.
+Tocca o fai clic sull’icona dell’emulatore per definire il rendering della pagina nell’editor universale.
 
 ![Icona dell’emulatore](assets/emulator.png)
 
-Toccando o facendo clic sull’icona dell’emulazione vengono visualizzate le opzioni.
+Toccando o facendo clic sull’icona dell’emulatore vengono visualizzate le opzioni.
 
 ![Opzioni di emulazione](assets/emulation-options.png)
 
 Per impostazione predefinita, l’editor si apre in layout desktop, dove l’altezza e la larghezza vengono definite automaticamente dal browser.
 
-Puoi anche scegliere di emulare un dispositivo mobile e nell’Editor universale:
+Puoi anche scegliere di emulare un dispositivo mobile e nell’editor universale:
 
 * Definirne l’orientamento
 * Definire la larghezza e l’altezza
@@ -148,11 +148,11 @@ Tocca o fai clic sull’icona di anteprima dell’app per aprire la pagina che s
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `O` (la lettera O) per aprire l’anteprima dell’app.
+>Usa il tasto di scelta rapida `O` (la lettera O) per aprire l’anteprima dell’app.
 
 #### Pubblicazione {#publish}
 
-Tocca o fai clic sul pulsante Pubblica per pubblicare le modifiche al contenuto live per consentirne l’utilizzo da parte dei lettori.
+Tocca o fai clic sul pulsante Pubblica per poter pubblicare le modifiche al contenuto utilizzabile dai lettori in tempo reale.
 
 ![Pulsante pubblica](assets/publish.png)
 
@@ -160,11 +160,11 @@ Tocca o fai clic sul pulsante Pubblica per pubblicare le modifiche al contenuto 
 >
 >Consulta il documento [Pubblicazione di contenuti con l’editor visivo universale](publishing.md) per ulteriori informazioni sulla pubblicazione con l’editore universale.
 
-### Barra modalità {#rail}
+### La barra modalità {#rail}
 
-La barra delle modalità è sempre presente lungo il lato sinistro dell’editor. L&#39;editor può passare facilmente da una modalità di editing all&#39;altra.
+La barra modalità è sempre presente sul lato sinistro dell’editor. Consente all’editor di passare facilmente da una modalità di modifica all’altra.
 
-![Barra modalità](assets/mode-rail.png)
+![La barra modalità](assets/mode-rail.png)
 
 #### Modalità Anteprima {#preview-mode}
 
@@ -187,19 +187,19 @@ In modalità testo, l’autore del contenuto può fare clic per selezionare il c
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `T` per passare alla modalità testo.
+>Usa il tasto di scelta rapida `T` per passare alla modalità testo.
 
-#### Modalità file multimediale {#media-mode}
+#### Modalità contenuto multimediale {#media-mode}
 
 In modalità multimediale, l’autore di contenuto può fare clic per selezionare il contenuto multimediale.
 
-![Modalità file multimediale](assets/media-mode.png)
+![Modalità contenuto multimediale](assets/media-mode.png)
 
 I dettagli del contenuto vengono visualizzati nella barra dei componenti, che consente anche all’autore di [modificare il contenuto multimediale.](#editing-media)
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `M` per passare alla modalità multimediale.
+>Usa il tasto di scelta rapida `M` per passare alla modalità contenuto multimediale.
 
 #### Modalità componente {#component-mode}
 
@@ -211,11 +211,11 @@ Quando selezioni un frammento di contenuto, i relativi dettagli vengono visualiz
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `C` per passare alla modalità componente.
+>Usa il tasto di scelta rapida `C` per passare alla modalità componente.
 
 ### L’editor {#editor}
 
-L’editor occupa la maggior parte della finestra ed è dove si trova la pagina specificata in [la barra della posizione](#location-bar) è sottoposto a rendering.
+L’editor occupa la maggior parte della finestra ed è l’area in cui viene eseguito il rendering della pagina specificata nella [barra della posizione](#location-bar).
 
 * Se l’editor è in modalità di modifica, ad esempio [modalità testo](#text-mode) o [modalità multimediale,](#media-mode) il contenuto sarà modificabile, ma non puoi seguire i collegamenti.
 * Se l’editor è in [modalità anteprima,](#preview-mode) il contenuto sarà navigabile e potrai seguire i collegamenti, ma non puoi modificarlo.
@@ -224,27 +224,27 @@ L’editor occupa la maggior parte della finestra ed è dove si trova la pagina 
 
 ### Barra dei componenti {#component-rail}
 
-La barra dei componenti è sempre presente lungo il lato sinistro dell’editor. A seconda della modalità, può mostrare i dettagli di un componente selezionato nel contenuto o nella gerarchia del contenuto della pagina.
+La barra dei componenti è sempre presente lungo il lato destro dell’editor. A seconda della modalità, può mostrare i dettagli di un componente selezionato nel contenuto o la gerarchia dei contenuti della pagina.
 
-![Barra dei componenti](assets/component-rail.png)
+![La barra dei componenti](assets/component-rail.png)
 
-#### Modalità Proprietà {#properties-mode}
+#### Modalità proprietà {#properties-mode}
 
 In modalità proprietà, la barra mostra le proprietà del componente attualmente selezionato nell’editor. Questa è la modalità predefinita della barra dei componenti quando viene caricata una pagina.
 
-![Modalità Proprietà](assets/properties-mode.png)
+![Modalità proprietà](assets/properties-mode.png)
 
 A seconda del tipo di componente selezionato, i dettagli possono essere visualizzati e modificati nella barra delle proprietà.
 
-![Dettagli componente](assets/component-details.png)
+![Dettagli dei componenti](assets/component-details.png)
 
 Nota che non tutti i componenti hanno dettagli che possono essere visualizzati e/o modificati.
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `D` per passare alla modalità proprietà.
+>Usa il tasto di scelta rapida `D` per passare alla modalità proprietà.
 
-#### Modalità Struttura contenuto {#content-tree-mode}
+#### Modalità struttura contenuto {#content-tree-mode}
 
 In modalità struttura contenuto, la barra mostra la gerarchia del contenuto della pagina.
 
@@ -256,7 +256,7 @@ Quando si seleziona un elemento nella struttura del contenuto, l’editor scorre
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `F` per passare alla modalità struttura contenuto.
+>Usa il tasto di scelta rapida `F` per passare alla modalità struttura contenuto.
 
 #### Modifica {#edit}
 
@@ -298,7 +298,7 @@ Toccando o facendo clic sul pulsante Elimina [elimina il componente.](#deleting-
 
 ## Modifica del contenuto {#editing-content}
 
-La modifica del contenuto è semplice e intuitiva. In modalità di modifica ([modalità testo](#text-mode), [modalità multimediale](#media-mode), e [modalità componente](#component-mode)), quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato con una casella blu.
+La modifica del contenuto è semplice e intuitiva. In modalità di modifica ([modalità testo](#text-mode), [modalità contenuto multimediale](#media-mode), e [modalità componente](#component-mode)), quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato con una casella blu.
 
 ![Il contenuto modificabile viene evidenziato da una casella blu](assets/editable-content.png)
 
@@ -322,7 +322,7 @@ Se ti trovi in [modalità testo](#text-mode) e selezionare un componente testo R
 
 Inoltre, le opzioni di formattazione e i dettagli sul testo sono disponibili nella barra dei componenti.
 
-![Modifica di un componente Rich Text](assets/rich-text-editing.png)
+![Modifica di un componente formato RTF](assets/rich-text-editing.png)
 
 Le modifiche di formattazione vengono salvate automaticamente nel contenuto.
 
@@ -392,13 +392,13 @@ I componenti vengono riordinati sia nella struttura del contenuto che nell’edi
 
 Quando hai finito di modificare il contenuto, spesso desideri navigare in esso per vedere come si presenta nel contenuto di altre pagine. In [modalità anteprima](#preview-mode) puoi fare clic sui collegamenti per navigare nel contenuto come farebbe un lettore. Il contenuto viene riprodotto nell’editor così come verrebbe pubblicato.
 
-In modalità anteprima, toccando o facendo clic sul contenuto questo appare così come si presenterebbe a un lettore. Se desideri selezionare il contenuto da modificare, passa a una modalità di modifica come [modalità testo](#text-mode) o [modalità multimediale.](#media-mode)
+In modalità anteprima, toccando o facendo clic sul contenuto questo appare così come si presenterebbe a un lettore. Se desideri selezionare il contenuto da modificare, passa a una modalità di modifica come [modalità testo](#text-mode) o [modalità contenuto multimediale.](#media-mode)
 
 ## Risorse aggiuntive {#additional-resources}
 
 Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
-* [Introduzione all’editor universale](introduction.md) - Scopri come Universal Editor consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione, per offrire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
+* [Introduzione all’editor universale](introduction.md): scopri come l’editor universale consente di modificare ogni aspetto di qualsiasi contenuto in qualsiasi implementazione in modo da fornire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 * [Pubblicazione di contenuto con l’editor universale](publishing.md): scopri in che modo l’editor visivo universale pubblica il contenuto e come le app possono gestire il contenuto pubblicato.
 * [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.
 * [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
