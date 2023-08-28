@@ -8,10 +8,10 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
+source-git-commit: 49d1e002f22427d8ffc6c5bdecd054c10eac47b9
 workflow-type: tm+mt
-source-wordcount: '4249'
-ht-degree: 97%
+source-wordcount: '4252'
+ht-degree: 98%
 
 ---
 
@@ -147,7 +147,7 @@ ht-degree: 97%
          + [Note sulla versione 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Note sulla versione 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Note sulla versione 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Note sulla versione del connettore avanzato Workfront per Experience Manager {#workfront}
+   + Note sulla versione del connettore avanzato Workfront per Experience Manager{#workfront}
       + [Note aggiornate sulla versione del connettore avanzato Workfront per Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Novità](/help/release-notes/what-is-new.md)
    + [Modifiche di rilievo in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -519,6 +519,7 @@ ht-degree: 97%
       + [Tipi di file supportati e casi d’uso](/help/assets/supported-file-formats-assets-view.md)
       + [Visualizzare le risorse](/help/assets/navigate-assets-view.md)
       + [Caricare e aggiungere risorse](/help/assets/add-delete-assets-view.md)
+      + [Risorse di importazione in blocco](/help/assets/bulk-import-assets-view.md)
       + [Cercare e individuare le risorse](/help/assets/search-assets-view.md)
       + [Attività di gestione risorse](/help/assets/manage-organize-assets-view.md)
       + [Modificare le immagini](/help/assets/edit-images-assets-view.md)
@@ -601,14 +602,14 @@ ht-degree: 97%
             + [Applicare una firma scarabocchio](/help/forms/signing-forms-using-scribble.md)
             + [Aggiungere una tabella a un modulo adattivo](/help/forms/adaptive-forms-tables.md)
             + [Aggiungere il supporto per le note a piè di pagina a un modulo adattivo](/help/forms/footnotes-richtextsupport.md)
-         + Configurare il layout e applicare lo stile a un modulo adattivo {#configure-layout-of-an-adaptive-form}
+         + Configurare il layout e applicare lo stile a un modulo adattivo{#configure-layout-of-an-adaptive-form}
             + [Impostare il layout di un modulo adattivo](/help/forms/layout-capabilities-adaptive-forms.md)
             + [Utilizzare la modalità Layout per ridimensionare i componenti](/help/forms/resize-using-layout-mode.md)
             + [Creare un’esperienza di acquisizione dati in più passaggi](/help/forms/introduction-form-sequence.md)
             + [Applicare stili CSS in linea ai singoli componenti del modulo adattivo](/help/forms/inline-style-adaptive-forms.md)
          + Aggiungere regole ed utilizzare espressioni in un modulo adattivo {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Aggiungere regole a un modulo adattivo](/help/forms/rule-editor.md)
-            + [Aggiungere un gestore degli errori personalizzato utilizzando il servizio Invoke dell’editor di regole](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [Aggiungere un handler di errori personalizzato utilizzando il servizio di chiamata dell’editor di regole](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + Utilizzo [!DNL Adobe Sign] {#use-adobe-sign}
             + [Utilizzare Adobe Sign per apporre la firma elettronica a un modulo adattivo](/help/forms/working-with-adobe-sign.md)
          + Configurare le azioni di invio e l’invio dei metadati {#configure-submit-actions-and-metadata-submission}
@@ -639,10 +640,10 @@ ht-degree: 97%
       + [Utilizzo di font personalizzati nei documenti PDF](/help/forms/use-custom-fonts.md)
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)
    + Riferimento API per sviluppatori {#aem-forms-developer-api-reference}
-      + [Riferimento API di Forms adattivo](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [Riferimento API di moduli adattivi](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Riferimento API per le comunicazioni del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [Riferimento API per JavaScript del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html?lang=it)
-      + [Riferimento API per Java del Cloud Service di AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
+      + [Riferimento API per Java del Cloud Service di AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
    + Risoluzione dei problemi {#troubleshooting-aem-forms-cloud-service}
       + [Installazione e configurazione](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Memorizzazione in cache di Dispatcher e CDN](/help/forms/troubleshooting-caching-performance.md)
@@ -944,7 +945,7 @@ ht-degree: 97%
       + [API ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
       + [Configurazione della segmentazione con ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=it)
    + Configurazione ed estensione di AEM as a Cloud Service {#configuring-and-extending}
-      + Estensione di AEM con App Builder {#app-builder}
+      + Estensione di AEM con App Builder{#app-builder}
          + [Estensione di AEM con Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Introduzione ad App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Console per sviluppatori di Adobe](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
