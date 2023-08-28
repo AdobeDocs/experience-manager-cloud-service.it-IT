@@ -2,10 +2,10 @@
 title: New Relic One
 description: Scopri il servizio New Relic One di monitoraggio delle prestazioni delle applicazioni (APM) per AEM as a Cloud Service e come accedervi.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f695bc891b60d2494b936a43f5c0a729c64628d7
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 79%
+source-wordcount: '1691'
+ht-degree: 94%
 
 ---
 
@@ -28,9 +28,9 @@ New Relic One APM per AEM as a Cloud Service presenta numerose funzioni.
 
 * Accesso diretto a un account New Relic One dedicato
 
-* Agente New Relic One APM instrumentato che mostra le chiamate al metodo esatto con i numeri delle righe, includendo le dipendenze e i database esterni
+* Agente New Relic One APM instrumentato che mostra le chiamate metodo esatte con i numeri delle righe, inclusi dipendenze e database esterni
 
-* Ottimizzazione olistica delle prestazioni attraverso la combinazione di metriche chiave dal monitoraggio a livello di infrastruttura e dal monitoraggio delle applicazioni (Adobe Experience Manager)
+* Ottimizzazione olistica delle prestazioni grazie alla combinazione di metriche chiave dal monitoraggio a livello di infrastruttura e dal monitoraggio delle applicazioni (Adobe Experience Manager)
 
 * Esposizione di JMX Mbeans e dei controlli di stato di AEM as a Cloud Service interni alle metriche Insights di New Relic che consentono un’analisi più approfondita delle prestazioni dello stack dell’applicazione e delle metriche relative allo stato.
 
@@ -64,7 +64,7 @@ Una volta definiti gli utenti, New Relic invia un’e-mail di conferma a tutti c
 
 >[!NOTE]
 >
->Se gestisci gli utenti di New Relic One, devi anche aggiungere te stesso o te stessa come utente per avere accesso. Avere il ruolo di **Proprietario business** o **Responsabile dell’implementazione** non è sufficiente per avere accesso a New Relic One. Devi creare un utente anche per te stesso o stessa.
+>Se gestisci gli utenti di New Relic One, per avere accesso devi aggiungere anche te stesso o te stessa come utente. Avere il ruolo di **Proprietario business** o **Responsabile dell’implementazione** non è sufficiente per avere accesso a New Relic One. Devi creare un utente anche per te stesso o stessa.
 
 ## Attivazione dell’account utente di New Relic One {#activate-account}
 
@@ -84,7 +84,7 @@ Per attivare l’account come utente di New Relic, segui la procedura riportata 
 
 1. Riceverai un’e-mail da New Relic contente il collegamento per confermare l’account.
 
-Se non ricevi un’e-mail di conferma da New Relic, consulta [sezione risoluzione dei problemi.](#troubshooting)
+Se non ricevi un’e-mail di conferma da New Relic, consulta la [sezione Risoluzione dei problemi.](#troubshooting)
 
 ## Accesso a New Relic One {#accessing-new-relic}
 
@@ -114,13 +114,13 @@ Per accedere direttamente a New Relic One:
 
 Se ti viene chiesto di verificare l’e-mail durante l’accesso a New Relic One, significa che l’e-mail è associata a più account. Questo ti consente di scegliere a quale account accedere.
 
-Se non verifichi il tuo indirizzo e-mail, New Relic tenta di accedere con il record utente creato più di recente associato al tuo indirizzo e-mail. Per evitare la verifica dell’e-mail durante ogni tentativo di accesso, seleziona la casella di controllo per **ricordare le tue credenziali** nella schermata di accesso.
+Se non verifichi il tuo indirizzo e-mail, New Relic tenta di accedere con il più recente record utente creato e associato al tuo indirizzo e-mail. Per evitare la verifica dell’e-mail durante ogni tentativo di accesso, seleziona la casella di controllo **Ricordami** nella schermata di accesso.
 
-Per ulteriore assistenza, apri un ticket di supporto tramite [Portale di supporto AEM](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+Per ulteriore assistenza, apri un ticket di supporto tramite il [Portale di supporto AEM](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 
 ## Risoluzione dei problemi di accesso a New Relic One {#troubleshooting}
 
-Se sei stato aggiunto come utente New Relic One come descritto nella sezione [Gestione degli utenti di New Relic One](#manage-users) e non è possibile individuare l’e-mail di conferma dell’account originale, segui la procedura riportata di seguito.
+Se sei stato aggiunto o aggiunta come utente di New Relic One come descritto nella sezione [Gestione degli utenti di New Relic One](#manage-users) e non riesci a trovare l’e-mail di conferma dell’account originale, segui la procedura riportata di seguito.
 
 1. Accedi alla pagina di accesso di New Relic all’indirizzo [`login.newrelic.com/login`](https://login.newrelic.com/login).
 
@@ -134,23 +134,29 @@ Se sei stato aggiunto come utente New Relic One come descritto nella sezione [Ge
 
 1. Riceverai un’e-mail da New Relic contente il collegamento per confermare l’account.
 
-Se dopo aver completato la procedura di accesso non riesci ad accedere al tuo account a causa di messaggi di errore relativi all’e-mail o alla password, invia un ticket di supporto utilizzando [Admin Console.](https://adminconsole.adobe.com/)
+Se dopo aver completato la procedura di accesso non riesci ad accedere al tuo account a causa di messaggi di errore relativi all’e-mail o alla password, invia un ticket di supporto tramite [Admin Console.](https://adminconsole.adobe.com/)
 
 Se non ricevi un’e-mail da New Relic:
 
 * Controlla i [filtri anti-spam](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
 * Se possibile, [aggiungi New Relic all’elenco Consentiti della tua e-mail](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-* Se nessuno dei due suggerimenti è utile, fornisci un feedback sul ticket di supporto e il team di supporto Adobe può aiutarti.
+* Se nessuna delle due soluzioni è utile, invia un feedback tramite ticket di supporto per ricevere assistenza dal team Adobe.
 
 ## Limitazioni {#limitations}
 
 L’aggiunta di utenti a New Relic One prevede le seguenti limitazioni:
 
-* È possibile aggiungere fino a un massimo di 30 utenti. Se è stato raggiunto il numero massimo di utenti, rimuovi gli utenti per poter aggiungere nuovi utenti.
-* Gli utenti aggiunti a New Relic sono di tipo **Limitato**, vedi [la documentazione di New Relic per i dettagli.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
+* È possibile aggiungere fino a un massimo di 30 utenti. Se è stato raggiunto il numero massimo di utenti, rimuovine alcuni per poterne aggiungere di nuovi.
+* Gli utenti aggiunti a New Relic sono di tipo **Limitato**. Per ulteriori informazioni, consulta la [documentazione di New Relic.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service offre unicamente la soluzione New Relic One APM e non fornisce supporto per avvisi, registrazione o integrazioni API.
 
-Per ulteriore assistenza o informazioni sulle offerte New Relic One per il programma AEM as a Cloud Service, apri un ticket di supporto tramite [Portale di supporto AEM](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+>[!NOTE]
+>
+>Se non viene rilevata alcuna attività nell’account New Relic One per 90 giorni o più, l’agente APM verrà interrotto.
+>
+>Aprire un ticket di supporto tramite [Portale di supporto AEM](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) se desideri riabilitare l’agente APM per i tuoi ambienti AEMaaCS.
+
+Per ulteriore assistenza o informazioni sulle offerte di New Relic One per i programmi AEM as a Cloud Service, apri un ticket di supporto tramite il [portale AEM dedicato all’assistenza](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 
 ## Domande frequenti su New Relic One {#faqs}
 
@@ -184,8 +190,12 @@ New Relic One è la nuova piattaforma di osservabilità di New Relic abilitata a
 
 New Relic One mette a disposizione degli utenti la possibilità di effettuare ricerche in tutti gli account a cui hanno accesso e di visualizzare i dati di tutti i servizi e gli host in un’unica vista.
 
-Anche se il supporto Adobe monitorerà l’applicazione as a Cloud Service AEM utilizzando New Relic One e altri strumenti interni come parte del servizio, i team possono continuare a utilizzare New Relic per i servizi e l’infrastruttura ospitati on-premise. Sono in grado di visualizzare i dati sia dall’account New Relic One di Adobe che dagli account New Relic gestiti dal cliente.
+Sebbene il supporto Adobe monitori l’applicazione AEM as a Cloud Service con New Relic One e altri strumenti interni parte del servizio, i team possono continuare a utilizzare New Relic per infrastrutture e servizi ospitati on-premise. Possono visualizzare sia i dati dell’account New Relic One di Adobe sia quelli degli account New Relic gestiti dal cliente.
 
 >[!NOTE]
 >
->Per visualizzare entrambi i set di dati in New Relic One, l’utente deve disporre delle adeguate autorizzazioni e utilizzare la stessa metodologia di accesso per entrambi gli account (l’account New Relic One di Adobe e l’account New Relic gestito dal cliente).
+>Per visualizzare entrambi i set di dati in New Relic One, l’utente deve disporre delle autorizzazioni appropriate e utilizzare la stessa metodologia di accesso per entrambi gli account (l’account New Relic One di Adobe e l’account New Relic gestito dal cliente).
+
+### L&#39;agente APM per il mio account New Relic One è stato arrestato. Cos&#39;è successo? {#deactivated}
+
+[Gli agenti APM vengono arrestati](#limitations) se non viene rilevata alcuna attività per 90 giorni o più. Aprire un ticket di supporto tramite [Portale di supporto AEM](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) se desideri riabilitare l’agente APM per i tuoi ambienti AEMaaCS.
