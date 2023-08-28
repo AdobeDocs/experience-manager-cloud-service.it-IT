@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: 9da813d39d154e81da5b9814aa86b8318dc0bb3a
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
 >title="Migrazione di gruppi di utenti chiusi"
->abstract="La migrazione di gruppi chiusi di utenti (CUG) attualmente richiede alcuni controlli e passaggi per renderla operativa dopo una migrazione."
+>abstract="La migrazione di gruppi di utenti chiusi (CUG) richiede attualmente alcuni controlli e passaggi affinché continui a essere operativa dopo una migrazione."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=it" text="Gruppi di utenti chiusi in AEM"
 
 Attualmente, i gruppi chiusi di utenti (CUG) richiedono alcuni passaggi aggiuntivi per funzionare nell’ambiente di destinazione di una migrazione.  Questo documento illustra lo scenario e i passaggi necessari per consentire loro di proteggere i nodi nel modo previsto.
