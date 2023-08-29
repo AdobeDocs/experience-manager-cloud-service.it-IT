@@ -1,7 +1,7 @@
 ---
 title: Configurazione delle regole CDN e WAF per filtrare il traffico
 description: Utilizzare le regole CDN e Firewall applicazione Web per filtrare il traffico dannoso
-source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
+source-git-commit: 27165ce7d6259f5b5fc9915349d87f551076389e
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 2%
@@ -265,7 +265,7 @@ Esempio 1: quando la frequenza di richieste supera le 100 richieste al secondo n
 
 ```
 - name: rate-limit-example
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -274,7 +274,7 @@ Esempio 2: quando la frequenza di richieste supera le 10 richieste al secondo in
 
 ```
 - name: rate-limit-using-defaults
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit:
     limit: 10
