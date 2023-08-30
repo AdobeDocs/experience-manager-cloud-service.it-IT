@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
 workflow-type: tm+mt
-source-wordcount: '5162'
+source-wordcount: '5372'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ La ricerca di risorse in AEM supporta i seguenti casi d’uso e questo articolo 
 | [Comprendere i risultati e il comportamento della ricerca](#searchbehavior) | [Modificare i facet di ricerca](#searchfacets) | [Aggiornamenti in blocco dei metadati](#metadata-updates) |
 | [Ricerca classificazione e potenziamento](#searchrank) | [Predicati personalizzati](#custompredicates) | [Raccolte avanzate](#collections) |
 | [Ricerca avanzata: filtro e ambito della ricerca](#scope) | | [Comprendere e risolvere i problemi relativi a risultati imprevisti](#unexpected-results) |
-| [Cerca da altre soluzioni e app](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[app desktop Experience Manager](#desktop-app)</li><li>[Immagini di Adobe Stock](#adobe-stock)</li><li>[Risorse Dynamic Media](#search-dynamic-media-assets)</li></ul> | | |
+| [Cerca da altre soluzioni e app](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[app desktop Experience Manager](#desktop-app)</li><li>[Immagini di Adobe Stock](#adobe-stock)</li><li>[Risorse Dynamic Medie](#search-dynamic-media-assets)</li></ul> | | |
 | [Selettore risorse](#asset-picker) | | |
 | [Limitazioni](#limitations) e [Suggerimenti](#tips) | | |
 | [Esempi illustrati](#samples) | | |
@@ -60,6 +60,20 @@ Puoi trovare più rapidamente le risorse desiderate dalla pagina dei risultati d
 ![Visualizza il numero approssimativo di risorse senza filtrare i risultati di ricerca nei facet di ricerca.](assets/asset_search_results_in_facets_filters.png)
 
 *Figura: Visualizzare il numero approssimativo di risorse senza filtrare i risultati di ricerca nei facet di ricerca.*
+
+Per impostazione predefinita, in Experience Manager Assets vengono visualizzati i conteggi dei facet per due proprietà:
+
+* Tipo risorsa (jcr:content/metadata/dc:format)
+
+* Stato approvazione (jcr:content/metadata/dam:status)
+
+Da agosto 2023, Experience Manager Assets include una nuova versione 9 di `damAssetLucene` indice. Le versioni precedenti, `damAssetLucene-8` e di seguito, utilizza `statistical` modalità per controllare il controllo degli accessi su un campione di elementi per ogni conteggio dei facet di ricerca.
+
+`damAssetLucene-9` modifica il comportamento del conteggio dei facet di query Oak in modo da non valutare più il controllo degli accessi sui conteggi dei facet restituiti dall’indice di ricerca sottostante, velocizzando i tempi di risposta della ricerca. Di conseguenza, agli utenti potrebbero essere presentati valori di conteggio dei facet, che includono risorse a cui non hanno accesso. Tali utenti non possono accedere, scaricare o leggere altri dettagli di tali risorse, inclusi i percorsi, né ottenere ulteriori informazioni su di esse.
+
+Se devi passare al comportamento precedente (`statistical` ), vedere [Ricerca e indicizzazione dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=it) per creare una versione personalizzata di `damAssetLucene-9` indice. L&#39;Adobe non consiglia di passare al `secure` modalità a causa dell’impatto sui tempi di risposta delle ricerche con set di risultati di grandi dimensioni.
+
+Per ulteriori informazioni sulle funzionalità facet di Oak, inclusa una descrizione dettagliata di queste modalità, consulta [questo articolo](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Suggerimenti per la ricerca durante la digitazione {#searchsuggestions}
 
@@ -148,7 +162,7 @@ Per trovare immagini visivamente simili a quelle selezionate dall’utente, fai 
 
 Dall&#39;interno del [!DNL Experience Manager] dell&#39;interfaccia utente, gli utenti possono effettuare ricerche [Risorse Adobe Stock](/help/assets/aem-assets-adobe-stock.md) e concedi in licenza le risorse richieste. Aggiungi `Location: Adobe Stock` nella barra di Omnisearch. Puoi anche utilizzare il pannello Filtri per trovare tutte le risorse con o senza licenza oppure cercare una risorsa specifica utilizzando il numero di file di Adobe Stock.
 
-### Risorse Dynamic Media {#dmassets}
+### Risorse Dynamic Medie {#dmassets}
 
 Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri]** seleziona **[!UICONTROL Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi.
 
@@ -460,7 +474,7 @@ Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UI
 
 Crea una versione per le risorse visualizzate nei risultati di ricerca. Seleziona la risorsa e fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Versione]**. Aggiungi un’etichetta o un commento facoltativo e fai clic su **[!UICONTROL Crea]**. Puoi anche selezionare più risorse e crearne simultaneamente le versioni.
 
-### Creare un flusso di lavoro {#create-workflow}
+### Crea un flusso di lavoro {#create-workflow}
 
 Analogamente alla funzionalità di creazione della versione, puoi anche creare un flusso di lavoro per le risorse visualizzate nei risultati di ricerca. Seleziona le risorse e fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Flusso di lavoro]**. Seleziona il modello di flusso di lavoro, specifica un titolo per il flusso di lavoro e fai clic su **[!UICONTROL Inizio]**.
 
