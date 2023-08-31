@@ -3,9 +3,9 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Scopri la convalida locale, il debug, la struttura del file in modalità flessibile e come migrare dalla modalità legacy alla modalità flessibile.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
+source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
 workflow-type: tm+mt
-source-wordcount: '2988'
+source-wordcount: '2990'
 ht-degree: 1%
 
 ---
@@ -113,13 +113,13 @@ Questa cartella contiene collegamenti simbolici relativi a file in conf.dispatch
 
 Comandi di esempio necessari per creare questi collegamenti simbolici:
 
-Apple® macOS, Linux e WSL
+Apple macOS, Linux e WSL
 
 ```
 ln -s ../available_vhosts/wknd.vhost wknd.vhost
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.vhost ..\available_vhosts\wknd.vhost
@@ -151,13 +151,13 @@ Questa cartella contiene collegamenti simbolici relativi ai file in conf.dispatc
 
 Comandi di esempio necessari per creare questi collegamenti simbolici:
 
-Apple® macOS, Linux e WSL
+Apple macOS, Linux e WSL
 
 ```
 ln -s ../available_farms/wknd.farm wknd.farm
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.farm ..\available_farms\wknd.farm
