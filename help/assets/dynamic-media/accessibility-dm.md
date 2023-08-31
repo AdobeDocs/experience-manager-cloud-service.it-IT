@@ -1,13 +1,13 @@
 ---
 title: Accessibilità in Dynamic Media
-description: Scopri come utilizzare i video in Dynamic Media, ad esempio come best practice per codificare i video, pubblicare video in YouTube e visualizzare rapporti video. Scopri anche come aggiungere sottotitoli, sottotitoli o marcatori capitolo ai video.
+description: Scopri come utilizzare i video in Dynamic Medie, ad esempio come best practice per codificare i video, pubblicare video in YouTube e visualizzare rapporti video. Scopri anche come aggiungere sottotitoli, sottotitoli o marcatori capitolo ai video.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 0d3262a3182063e69f764339e7937e2f83ad7bbb
+source-git-commit: 483a72f67f361023ebeefa3d74ec9f35a5f4f765
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 1%
@@ -16,13 +16,13 @@ ht-degree: 1%
 
 # Accessibilità in Dynamic Media {#accessibility-in-dm}
 
-Dynamic Media supporta il controllo da tastiera e tecnologie per l’accessibilità, come le utilità di lettura dello schermo JAWS e NVDA, nell’interfaccia utente di authoring.
+Dynamic Medie supporta il controllo da tastiera e tecnologie per l’accessibilità, come le utilità di lettura dello schermo JAWS e NVDA, nell’interfaccia utente di authoring.
 
-## Supporto dell’accessibilità della tastiera in Dynamic Media {#keyboard-support-in-dm}
+## Supporto dell’accessibilità della tastiera in Dynamic Medie {#keyboard-support-in-dm}
 
-Perché Dynamic Media è un plug-in per [!DNL Experience Manager Assets], la maggior parte del comportamento di controllo della tastiera è uguale a quello [!DNL Experience Manager Assets]. Ad esempio, il `Cancel` in Dynamic Media ha la stessa evidenziazione di messa a fuoco come in [!DNL Experience Manager Assets]. Essa reagisce inoltre alla `Spacebar` chiave come in [!DNL Experience Manager Assets]. Consulta [scelte rapide da tastiera in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Perché Dynamic Medie è un plug-in per [!DNL Experience Manager Assets], la maggior parte del comportamento di controllo della tastiera è uguale a quello [!DNL Experience Manager Assets]. Ad esempio, il `Cancel` in Dynamic Medie ha la stessa evidenziazione di messa a fuoco come in [!DNL Experience Manager Assets]. Essa reagisce inoltre alla `Spacebar` chiave come in [!DNL Experience Manager Assets]. Consulta [scelte rapide da tastiera in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Le sequenze di tasti supportate dai singoli elementi dell’interfaccia utente in Dynamic Media sono, nella maggior parte dei casi, ovvie e facili da trovare. Il controllo tramite tastiera in Dynamic Media riguarda i seguenti aspetti:
+Le sequenze di tasti supportate dai singoli elementi dell’interfaccia utente in Dynamic Medie sono, nella maggior parte dei casi, ovvie e facili da trovare. Il controllo tramite tastiera in Dynamic Medie riguarda i seguenti aspetti:
 
 * Capacità di utilizzare `Tab` e `Shift+Tab` tasti per spostarsi tra gli elementi interattivi della pagina.
 Utilizzo di `Tab` sposta lo stato attivo dell&#39;input sull&#39;elemento dell&#39;interfaccia utente successivo nell&#39;ordine di tabulazione; utilizzando `Shift+Tab` riporta lo stato attivo sull’elemento dell’interfaccia utente precedente.
@@ -39,36 +39,35 @@ Consulta [Modifica del ritaglio o del campione avanzato di una singola immagine]
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (Experience Manager 6.5) or Coral Spectrum (in Skyline)) as entire Experience Manager Assets.  -->
 
-<!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md##adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
+<!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
 
 <!-- I think we should definitely mention this in the DM-specific area of documentation for keyboard support. -->
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Supporto per le tecnologie di supporto in Dynamic Media {#assistive-technology=support-for-dm}
+## Supporto per le tecnologie di supporto in Dynamic Medie {#assistive-technology=support-for-dm}
 
-Gli elementi dell’interfaccia utente di Dynamic Media funzionano con tecnologie per l’accessibilità, come gli assistenti vocali. Ad esempio, riconosce i punti di riferimento in una pagina quando si naviga tra i punti di riferimento utilizzando la scelta rapida da tastiera `D` o aree tramite scelta rapida da tastiera `R`. Vengono inoltre narrate le intestazioni durante la navigazione utilizzando la scelta rapida da tastiera per le intestazioni `H`.
+Gli elementi dell’interfaccia utente di Dynamic Medie funzionano con tecnologie per l’accessibilità, come gli assistenti vocali. Ad esempio, riconosce i punti di riferimento in una pagina quando si naviga tra i punti di riferimento utilizzando la scelta rapida da tastiera `D` o aree tramite scelta rapida da tastiera `R`. Vengono inoltre narrate le intestazioni durante la navigazione utilizzando la scelta rapida da tastiera per le intestazioni `H`.
 
-## Supporto dell’accessibilità della tastiera nei visualizzatori Dynamic Media {#keyboard-accessibility-for-dm-viewers}
+## Supporto dell’accessibilità della tastiera nei visualizzatori Dynamic Medie {#keyboard-accessibility-for-dm-viewers}
 
-Tutti i componenti predefiniti per visualizzatori Dynamic Media supportano l’accessibilità da tastiera per i clienti.
+Tutti i componenti predefiniti per visualizzatori Dynamic Medie supportano l’accessibilità da tastiera per i clienti.
 
-Consulta [Accessibilità della tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella Guida di riferimento dei visualizzatori di Dynamic Media.
+Consulta [Accessibilità della tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella Guida di riferimento dei visualizzatori di Dynamic Medie.
 
-## Supporto per la tecnologia di supporto nei visualizzatori Dynamic Media {#assistive-technology=support-for-dm-viewers}
+## Supporto per la tecnologia di supporto nei visualizzatori Dynamic Medie {#assistive-technology=support-for-dm-viewers}
 
-Tutti i componenti visualizzatore Dynamic Media supportano i ruoli e gli attributi ARIA (Accessible Rich Internet Applications) per migliorare l’integrazione con tecnologie per l’accessibilità, come gli assistenti vocali.
-Consulta la **Supporto di tecnologie assistive** Argomento della Guida in linea di qualsiasi argomento relativo alla personalizzazione dei visualizzatori nella Guida di riferimento dei visualizzatori di Dynamic Media. Ad esempio, consulta [Supporto di tecnologie assistive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore Video, oppure [Supporto di tecnologie assistive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
+Tutti i componenti visualizzatore Dynamic Medie supportano i ruoli e gli attributi ARIA (Accessible Rich Internet Applications) per migliorare l’integrazione con tecnologie per l’accessibilità, come gli assistenti vocali.
+Consulta la **Supporto di tecnologie assistive** Argomento della Guida in linea di qualsiasi argomento relativo alla personalizzazione dei visualizzatori nella Guida di riferimento dei visualizzatori di Dynamic Medie. Ad esempio, consulta [Supporto di tecnologie assistive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore Video, oppure [Supporto di tecnologie assistive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
 
 ## Supporto per sottotitoli codificati in [!DNL Dynamic Media] {#closed-caption-support}
 
-Dynamic Media supporta la distribuzione di video e set di video adattivi con sottotitoli. I sottotitoli devono essere visualizzati sopra il contenuto video.
+Dynamic Medie supporta la distribuzione di video e set di video adattivi con sottotitoli. I sottotitoli devono essere visualizzati sopra il contenuto video.
 
-Consulta [Video in Dynamic Media: aggiungi sottotitoli o sottotitoli al video](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+Consulta [Video in Dynamic Medie: aggiungi sottotitoli o sottotitoli al video](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]
 >
 >* [Accessibilità per soluzioni di Adobe](https://www.adobe.com/accessibility.html)
 >* [Accessibilità in Experience Manager Assets](/help/assets/dynamic-media/accessibility-dm.md)
-
