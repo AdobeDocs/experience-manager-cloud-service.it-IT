@@ -2,9 +2,9 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 22ed74b307b9eb4c6c2f72ac2a34e2ab6d30a85c
+source-git-commit: bb7d8145eb954557d185b58f884532f8f08c5a54
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 45%
 
 ---
@@ -23,12 +23,10 @@ L’attivazione delle funzioni 2023.9.0 fornirà il set completo di funzioni per
 
 - GRANITE-46784: Aggiungi l’opzione per disabilitare BearerAuthenticationHandler
 - GRANITE-36205: Aggiornare la versione interna di oak all’ultima versione
-- GRANITE-47059: rimuovere il bundle SSL di Granite Jetty
 - ASSETS-26713: Collegamento esterno all’interfaccia touch per il nuovo dashboard dell’interfaccia utente di Experience, aggiornamento dell’integrazione unificata-shell e dell’ottimizzazione dell’interfaccia utente
 - SKYOPS-63302: aggiornare com.adobe.granite:com.adobe.granite.auth.saml alla versione 1.0.54
 - GRANITE-46634: Aggiornamento al client di eventi 1.4.0
-- GRANITE-46788: Aggiornamento librerie Apache Commons
-- GRANITE-29211: Aggiornare gli utensili a Sling Feature Model 2.0
+- GRANITE-46788: aggiornamento delle librerie in Apache Commons IO 2.13.0, Commons Lang 3.13.0, Commons Code 1.16.0 e Commons Compress 1.23.0
 - GRANITE-46705: Aggiornamento ad Apache Felix Http Jetty 4.1.14
 - GRANITE-46631: Aggiornamento della versione di Jackrabbit al 2.20.11
 - SKYOPS-61895: Aggiornamento a Jackrabbit Filevault 3.7.0
@@ -41,6 +39,7 @@ L’attivazione delle funzioni 2023.9.0 fornirà il set completo di funzioni per
 - GRANITE-43744: Sling Authenticator non funziona correttamente in caso di configurazione errata con requisiti di autenticazione e percorso personalizzato
 - GRANITE-46419: problema di integrazione AEM con Auth0 Idp
 - GRANITE-46292: la configurazione Okta SAML non funziona dopo l’aggiornamento di AEM Cloud
+- GRANITE-47059: rimuovere il bundle SSL di Granite Jetty
 
 ### Problemi noti {#known-issues-13239}
 
