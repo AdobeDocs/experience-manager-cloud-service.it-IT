@@ -3,9 +3,9 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Scopri la convalida locale, il debug, la struttura del file in modalità flessibile e come migrare dalla modalità legacy alla modalità flessibile.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2988'
 ht-degree: 1%
 
 ---
@@ -107,6 +107,28 @@ Se desideri trovare la corrispondenza esatta con l’host perché disponi di pi�
 </VirtualHost>
 ```
 
+* `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
+
+Questa cartella contiene collegamenti simbolici relativi a file in conf.dispatcher.d/available_hosts.
+
+Comandi di esempio necessari per creare questi collegamenti simbolici:
+
+Apple® macOS, Linux e WSL
+
+```
+ln -s ../available_vhosts/wknd.vhost wknd.vhost
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.vhost ..\available_vhosts\wknd.vhost
+```
+
+>[!NOTE]
+>
+> Quando si lavora con collegamenti simbolici in Windows, è necessario eseguire il comando in un prompt dei comandi con privilegi elevati, nel Sottosistema Windows per Linux oppure [Creare collegamenti simbolici](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilegio assegnato.
+
 * `conf.d/rewrites/rewrite.rules`
 
 Il file è incluso dall’interno del tuo `.vhost` file. Ha una serie di regole di riscrittura per `mod_rewrite`.
@@ -122,6 +144,28 @@ Il file viene incluso dall&#39;interno di `dispatcher_vhost.conf` file. Puoi mod
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
 Puoi avere uno o più di questi file, che contengono farm con nomi host corrispondenti e consentono al modulo Dispatcher di gestire ogni farm con regole diverse. I file vengono creati in `available_farms` e abilitati con un collegamento simbolico nel `enabled_farms` directory. Dalla sezione `.farm` sono inclusi file, altri file come filtri, regole di cache e altri.
+
+* `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
+
+Questa cartella contiene collegamenti simbolici relativi ai file in conf.dispatcher.d/available_farms.
+
+Comandi di esempio necessari per creare questi collegamenti simbolici:
+
+Apple® macOS, Linux e WSL
+
+```
+ln -s ../available_farms/wknd.farm wknd.farm
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.farm ..\available_farms\wknd.farm
+```
+
+>[!NOTE]
+>
+> Quando si lavora con collegamenti simbolici in Windows, è necessario eseguire il comando in un prompt dei comandi con privilegi elevati, nel Sottosistema Windows per Linux oppure [Creare collegamenti simbolici](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilegio assegnato.
 
 * `conf.dispatcher.d/cache/rules.any`
 
