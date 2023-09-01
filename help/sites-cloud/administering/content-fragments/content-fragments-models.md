@@ -3,15 +3,24 @@ title: Modelli per frammenti di contenuto
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i frammenti di contenuto in AEM. Ti consentono di creare contenuti strutturati da utilizzare nella consegna headless o nell’authoring di pagine.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2916'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
 # Modelli per frammenti di contenuto {#content-fragment-models}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 I modelli per frammenti di contenuto in AEM definiscono la struttura per il contenuto dei [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md). Possono essere utilizzati per l’authoring delle pagine o come base per i contenuti headless.
 
@@ -58,7 +67,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
    >[!NOTE]
    >
-   >Quando un campo come **Obbligatorio**, il **Etichetta** indicato nel riquadro a sinistra è contrassegnato con un asterisco (**&#42;**).
+   >Quando un campo è **obbligatorio**, l’**Etichetta** indicata nel riquadro a sinistra è contrassegnata da un asterisco (**&#42;**).
 
 ![proprietà](assets/cfm-models-03.png)
 
@@ -85,7 +94,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
 1. **Per rimuovere un campo**
 
-   Seleziona il campo richiesto, quindi tocca o fai clic sull’icona del cestino. Ti viene chiesto di confermare l’azione.
+   Seleziona il campo richiesto, quindi tocca o fai clic sull’icona del cestino. Viene richiesto di confermare l’azione.
 
    ![rimuovere](assets/cfm-models-06.png)
 
@@ -124,12 +133,12 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 * **Oggetto JSON**
    * Consente all’autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
       * Questo fa sì che AEM possa memorizzare direttamente JSON con copia e incolla da un altro servizio.
-      * Il JSON viene trasmesso e prodotto come JSON in GraphQL.
+      * Il codice JSON viene trasmesso e riprodotto come codice JSON in GraphQL.
       * Include l’evidenziazione della sintassi JSON, il completamento automatico e l’evidenziazione degli errori nell’editor dei frammenti di contenuto.
 * **Segnaposto scheda**
    * Consente l’introduzione di schede da utilizzare per la modifica del contenuto dei frammenti di contenuto.
-Nell’editor modelli viene visualizzato come divisore che separa le sezioni dell’elenco dei tipi di dati di contenuto. Ogni istanza rappresenta l’inizio di una nuova scheda.
-Nell’editor frammenti, ogni istanza viene visualizzata come una scheda.
+Nell’editor modelli viene mostrato come divisore che separa le sezioni dell’elenco dei tipi di dati di contenuto. Ogni sua istanza rappresenta l’inizio di una nuova scheda.
+Nell’editor di frammenti, ogni istanza viene visualizzata come una scheda.
 
      >[!NOTE]
      >
@@ -148,10 +157,10 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
   >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering come** 
-Consente varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso, questo consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze.
+Sono disponibili varie opzioni per realizzare o riprodurre il campo in un frammento. Spesso questo consente di definire se l’autore può vedere una singola istanza del campo o se può crearne più istanze.
 
-* **Etichetta campo**
-Inserimento di un **Etichetta campo** genererà automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente se necessario.
+* **Etichetta campo** 
+Se si inserisce un’**Etichetta campo** verrà generato automaticamente un **Nome proprietà** che, se necessario, potrà essere aggiornato manualmente.
 
 * **Convalida**
 La convalida di base è disponibile tramite meccanismi quali la proprietà **Obbligatorio**. Alcuni tipi di dati dispongono di campi di convalida aggiuntivi. Vedi [Convalida](#validation) per ulteriori dettagli.
@@ -411,7 +420,7 @@ Per eliminare un modello per frammenti di contenuto:
 
    >[!NOTE]
    >
-   >Se si fa riferimento al modello, viene visualizzato un avviso. Agisci di conseguenza.
+   >Se ci sono riferimenti al modello, viene visualizzata un’avvertenza. Agisci di conseguenza.
 
 ## Pubblicazione di un modello per frammenti di contenuto {#publishing-a-content-fragment-model}
 
@@ -423,11 +432,11 @@ Per pubblicare un modello per frammenti di contenuto:
 
 1. Passa alla cartella contenente il modello per frammenti di contenuto.
 1. Seleziona il modello e poi **Pubblica** dalla barra degli strumenti.
-Lo stato di pubblicazione è indicato nella console.
+Lo stato di pubblicazione viene indicato nella console.
 
    >[!NOTE]
    >
-   >Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, ciò viene indicato in un elenco di selezione e il modello viene pubblicato con il frammento.
+   >Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo viene segnalato in un elenco di selezione e il modello viene pubblicato con il frammento.
 
 ## Annullamento della pubblicazione di un modello per frammenti di contenuto {#unpublishing-a-content-fragment-model}
 
@@ -439,7 +448,7 @@ Per annullare la pubblicazione di un modello per frammenti di contenuto:
 
 1. Passa alla cartella contenente il modello per frammenti di contenuto.
 1. Seleziona il modello e poi **Annulla pubblicazione** dalla barra degli strumenti.
-Lo stato di pubblicazione è indicato nella console.
+Lo stato di pubblicazione viene indicato nella console.
 
 Se tenti di annullare la pubblicazione di un modello attualmente utilizzato da uno o più frammenti, un avviso di errore segnala quanto segue:
 
@@ -491,7 +500,7 @@ Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
 
    * È possibile **Sbloccare** un modello per abilitare le modifiche.
 
-     Se si seleziona **Sblocca**, viene visualizzato un avviso ed è necessario confermare **Sblocca** azione:
+     Se selezioni **Sblocca** viene mostrata un’avvertenza in cui ti si chiede di confermare l’azione **Sblocca**:
      ![Messaggio relativo allo sblocco del modello per frammenti di contenuto](assets/cfm-model-unlock-message.png)
 
      Puoi quindi aprire il modello per la modifica.
@@ -501,7 +510,7 @@ Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
 
 * Editor modelli
 
-   * Quando aprite un modello bloccato, viene visualizzato un avviso e vengono visualizzate tre azioni: **Annulla**, **Visualizza sola lettura**, **Modifica**:
+   * Quando apri un modello bloccato, viene visualizzato un avviso con tre possibili azioni: **Annulla**, **Visualizza sola lettura**, **Modifica**:
 
      ![Messaggio relativo alla visualizzazione di un modello per frammenti di contenuto bloccato](assets/cfm-model-editor-lock-message.png)
 

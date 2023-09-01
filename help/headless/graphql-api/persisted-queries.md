@@ -1,12 +1,12 @@
 ---
 title: Query GraphQL persistenti
-description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
+description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzarne le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -32,15 +32,15 @@ Ad esempio, per creare una query persistente per la configurazione di Sites WKND
 
 >[!NOTE]
 >
->Per ulteriori dettagli, vedi [Abilitare la funzionalità Frammenti di contenuto nel browser configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+>Per ulteriori dettagli, vedi [Abilitare la funzionalità Frammenti di contenuto nel browser configurazioni](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 >
 >Per la configurazione di Sites appropriata, è necessario abilitare **query GraphQL persistenti**.
 
 Ad esempio, se vi è una particolare query denominata `my-query`, che utilizza un modello `my-model` della configurazione Sites `my-conf`:
 
-* Puoi creare una query utilizzando `my-conf` endpoint specifico, quindi la query viene salvata come segue:
+* Puoi creare una query utilizzando l’endpoint `my-conf` specifico. La query viene salvata come segue:
   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* Puoi creare la stessa query utilizzando `global` endpoint, ma la query viene salvata come segue:
+* Puoi creare la stessa query utilizzando l’endpoint `global`, ma in questo caso la query viene salvata come segue:
   `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 dove `PERSISTENT_PATH` è un percorso abbreviato in cui viene salvata la query persistente.
 
-1. Ad esempio: `wknd` è il nome della configurazione e `plain-article-query` è il nome della query persistente. Per eseguire la query:
+1. Ad esempio, `wknd` è il nome della configurazione e `plain-article-query` è il nome della query persistente. Per eseguire la query:
 
    ```shell
    $ curl -X GET \
@@ -228,7 +228,7 @@ Il pattern si presenta come segue:
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-Ad esempio, la query seguente contiene una variabile `activity` per filtrare un elenco in base a un valore di attività:
+Ad esempio, la seguente query contiene una variabile `activity` per filtrare un elenco in base a un valore di attività:
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -389,10 +389,10 @@ Per impostazione predefinita, il `PersistedQueryServlet` invia una risposta `200
 Il campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) può essere definito come richiesto:
 
 * `false` (valore predefinito): 
-non importa se la query persistente ha esito positivo o negativo. Il `/execute.json/persisted-query` restituisce il codice di stato `200` e `Content-Type` l’intestazione restituita è `application/json`.
+non importa se la query persistente ha esito positivo o negativo. `/execute.json/persisted-query` restituisce il codice di stato `200` e l’intestazione `Content-Type` restituita è `application/json`.
 
 * `true`: 
-secondi i casi, l’endpoint restituirà `400` o `500` quando si verifica qualsiasi tipo di errore durante l’esecuzione della query persistente. Inoltre, il restituito `Content-Type` è `application/graphql-response+json`.
+secondi i casi, l’endpoint restituirà `400` o `500` quando si verifica qualsiasi tipo di errore durante l’esecuzione della query persistente. Inoltre, il `Content-Type` restituito è `application/graphql-response+json`.
 
   >[!NOTE]
   >
@@ -400,7 +400,7 @@ secondi i casi, l’endpoint restituirà `400` o `500` quando si verifica qualsi
 
 ## Codifica dell’URL della query per l’utilizzo da parte di un’app {#encoding-query-url}
 
-Per l&#39;utilizzo da parte di un&#39;applicazione, qualsiasi carattere speciale utilizzato per creare variabili di query, ovvero punto e virgola (`;`), segno di uguale (`=`), barre `/`) per utilizzare la codifica UTF-8 corrispondente.
+Per poter essere utilizzati da un’applicazione, eventuali caratteri speciali utilizzati per creare variabili di query (come punto e virgola (`;`), segno di uguale (`=`), barra `/`) devono essere convertiti nella codifica UTF-8 corrispondente.
 
 Esempio:
 
@@ -442,7 +442,7 @@ Per creare un pacchetto:
 1. Per creare un nuovo pacchetto, tocca **Crea pacchetto**. Viene visualizzata una finestra di dialogo per la definizione del pacchetto.
 1. Nella finestra di dialogo Definizione pacchetto, nella sezione **Generale** inserisci un **Nome**, ad esempio “wknd-persistent-queries”.
 1. Immetti un numero di versione, ad esempio a “1.0”.
-1. Nella sezione **Filtri**, aggiungi un nuovo **Filtro**. Utilizza Trova percorso per selezionare la cartella `persistentQueries` sotto la configurazione. Ad esempio, per `wknd` configurazione, il percorso completo è `/conf/wknd/settings/graphql/persistentQueries`.
+1. Nella sezione **Filtri**, aggiungi un nuovo **Filtro**. Utilizza Trova percorso per selezionare la cartella `persistentQueries` sotto la configurazione. Ad esempio, per la configurazione `wknd` il percorso completo sarà `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tocca **Salva** per salvare la definizione del nuovo pacchetto e chiudere la finestra di dialogo.
 1. Tocca il **Genera** nella definizione del pacchetto appena creata.
 

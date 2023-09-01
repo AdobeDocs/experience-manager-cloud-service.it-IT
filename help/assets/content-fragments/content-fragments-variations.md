@@ -2,16 +2,22 @@
 title: Varianti - Authoring dei contenuti di frammenti (Risorse - Frammenti di contenuto)
 description: Scopri come le varianti possono rendere ancora più flessibili i contenuti headless in AEM consentendoti di creare contenuti per il frammento e quindi creare varianti di tali contenuti in base allo scopo.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 88%
+source-wordcount: '2567'
+ht-degree: 90%
 
 ---
 
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
 [Varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una funzione importante dei frammenti di contenuto dell’AEM, in quanto consentono di creare e modificare copie del contenuto principale da utilizzare su canali e/o scenari specifici, rendendo ancora più flessibile la distribuzione di contenuti headless.
+
+>[!NOTE]
+>
+>I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
+>
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
 
 Dalla scheda **Varianti** è possibile:
 
@@ -88,7 +94,7 @@ L’editor di testo a schermo intero fornisce:
 
 ### Azioni {#actions}
 
-Sono inoltre disponibili le seguenti azioni (per tutte le [formati](#formats)) quando l’editor a schermo intero (ovvero il testo su più righe) è aperto:
+Quando l’editor a schermo intero (ovvero testo su più righe) è aperto, sono disponibili anche le seguenti azioni (per tutti i [formati](#formats)):
 
 * Selezionare il [formato](#formats) ([Testo formattato](#rich-text), [Testo normale,](#plain-text) [Markdown](#markdown))
 
@@ -322,7 +328,7 @@ Caratteristiche delle annotazioni:
 
 Per semplificare il processo di creazione dei frammenti di contenuto, puoi aggiungere [Risorse](/help/assets/manage-digital-assets.md) (immagini) direttamente al frammento.
 
-Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; la formattazione può essere applicata quando [frammento utilizzato o a cui si fa riferimento in una pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; la formattazione può essere impostata quando il [frammento viene utilizzato o inserito come riferimento in una pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -358,7 +364,7 @@ Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments
 
 Per semplificare il processo di creazione dei frammenti di contenuto, puoi anche aggiungere al frammento un altro frammento di contenuto.
 
-Vengono aggiunti come riferimento nella posizione corrente all’interno del frammento.
+Sono aggiunti come riferimento, nella posizione corrente all’interno del frammento.
 
 >[!NOTE]
 >
@@ -391,8 +397,33 @@ Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments
    >[!CAUTION]
    >
    Se, dopo aver aggiunto un riferimento a un altro frammento, modifichi il formato in:
-   * **Testo normale**: il riferimento viene perso completamente dal frammento.
+   >
+   * **Testo normale**, il riferimento viene perso completamente dal frammento.
    * **Markdown**, il riferimento verrà mantenuto.
+
+## Ereditarietà {#inheritance}
+
+L’ereditarietà è il meccanismo in cui il contenuto può essere inviato automaticamente da un frammento all’altro. I campi ereditati e le varianti possono essere il prodotto di [Gestione multisito](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+È possibile annullare l’ereditarietà, quindi riabilitarla. A seconda del contesto, questo può essere disponibile per una variante o per un singolo campo, se il frammento fa parte di una Live Copy.
+
+![Un frammento di contenuto che mostra la relazione di ereditarietà](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+Esempio:
+
+* Annulla ereditarietà
+
+  ![Pulsante Annulla ereditarietà](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* Riattiva ereditarietà (se l’ereditarietà è già annullata)
+
+  ![Pulsante Riattiva ereditarietà](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## Gestione delle varianti {#managing-variations}
 
@@ -406,7 +437,7 @@ Per creare una nuova variante:
 1. Seleziona **Varianti** dalla barra delle icone nel pannello laterale.
 1. Seleziona **Crea variante**.
 1. Viene aperta una finestra di dialogo in cui vengono specificati **Titolo** e **Descrizione** per la nuova variante.
-1. Seleziona **Aggiungi**; il frammento **Principale** viene copiato nella nuova variante, che è ora aperta per [modifica](#editing-a-variation).
+1. Seleziona **Aggiungi**, il frammento **Principale** viene copiato nella nuova variante, che è ora aperta per la [modifica](#editing-a-variation).
 
    >[!NOTE]
    >
@@ -431,7 +462,7 @@ Per modificare il nome di una variante esistente:
 
 1. Apri il frammento e seleziona **Varianti** nel pannello laterale.
 1. Seleziona la variante desiderata.
-1. Seleziona **Rinomina** dal **Azioni** a discesa.
+1. Seleziona **Rinomina** dal menu a discesa **Azioni**.
 
 1. Nella finestra di dialogo che si apre, immetti il nuovo **Titolo** e/o la nuova **Descrizione**.
 
@@ -447,7 +478,7 @@ Per eliminare una variante esistente:
 
 1. Apri il frammento e seleziona **Varianti** nel pannello laterale.
 1. Seleziona la variante desiderata.
-1. Seleziona **Elimina** dal **Azioni** a discesa.
+1. Seleziona **Elimina** dal menu a discesa **Azioni**.
 
 1. Nella finestra di dialogo che si apre, conferma l’azione **Elimina**.
 
@@ -475,7 +506,7 @@ Il trasferimento delle modifiche *da una variante all’elemento **Principale***
 
 1. Seleziona una variante specifica, quindi seleziona l’azione di sincronizzazione appropriata da una delle seguenti aree:
 
-   * il **Azioni** selettore a discesa - **Sincronizza elemento corrente con elemento principale**
+   * Selettore a discesa **Azioni**: **sincronizza l’elemento corrente con l’elemento principale**
 
      ![sincronizzazione con elemento principale](assets/cfm-variations-11a.png)
 

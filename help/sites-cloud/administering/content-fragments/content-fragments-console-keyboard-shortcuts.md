@@ -3,15 +3,24 @@ title: Scelte rapide da tastiera per la console Frammenti di contenuto
 description: In tutte le aree di AEM sono disponibili varie scelte rapide da tastiera, comprese quelle per la gestione dei frammenti di contenuto
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Scelte rapide da tastiera per la console Frammenti di contenuto {#keyboard-shortcuts-content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Nella console Frammenti di contenuto è disponibile una selezione di scelte rapide da tastiera.
 

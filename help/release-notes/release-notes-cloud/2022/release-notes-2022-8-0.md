@@ -1,8 +1,8 @@
 ---
-title: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione 2022.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione 2022.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 59%
@@ -45,7 +45,7 @@ Dai un’occhiata al video Panoramica sulla versione di agosto 2022 per un riepi
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Sites] {#prerelease-features-sites}
 
-* Il [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) offre agli utenti un’opzione per visualizzare il numero totale di copie per lingua associate a un frammento di contenuto. Inoltre, è possibile accedere con 1 solo clic per visualizzare tutte le copie delle varie lingue. Gli utenti possono anche filtrare la visualizzazione a tabella in base alla lingua che desiderano.
+* Il [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) offre agli utenti un’opzione per visualizzare il numero totale di copie per lingua associate a un frammento di contenuto. Inoltre, è possibile accedere con 1 solo clic per visualizzare tutte le copie delle varie lingue. Gli utenti possono anche filtrare la visualizzazione a tabella in base alla lingua che desiderano.
 
 ![Lingue dei frammenti di contenuto](/help/release-notes/assets/cfconsole-languages.png)
 

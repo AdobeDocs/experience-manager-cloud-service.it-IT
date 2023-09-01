@@ -2,10 +2,10 @@
 title: 'Creazione di frammenti di contenuto: configurazione headless'
 description: Scopri come utilizzare i Frammenti di contenuto AEM per progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina per la consegna headless.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ I Frammenti di contenuto contengono contenuto strutturato e possono essere conse
 
 ## Come creare un Frammento di contenuto {#how-to-create-a-content-fragment}
 
-Gli autori dei contenuti creano un certo numero di Frammenti di contenuto per rappresentare il contenuto creato. Questo è il loro compito principale nell&#39;AEM. Ai fini di questa guida introduttiva, ne creeremo uno.
+Gli autori dei contenuti creano un certo numero di Frammenti di contenuto per rappresentare il contenuto creato. Questa sarà l’attività principale in AEM. Ai fini di questa guida introduttiva, ne creeremo uno.
 
 1. Accedi ad AEM as a Cloud Service, quindi dal menu principale seleziona **Navigazione** -> **Frammenti di contenuto**.
 
@@ -51,4 +51,4 @@ Dopo aver creato un Frammento di contenuto, puoi passare alla parte finale della
 
 >[!TIP]
 >
->Per informazioni complete sulla gestione dei Frammenti di contenuto, consulta la sezione [Documentazione sui Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+>Per informazioni complete sulla gestione dei Frammenti di contenuto, consulta la sezione [Documentazione sui Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md).

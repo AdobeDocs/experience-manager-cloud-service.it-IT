@@ -3,15 +3,24 @@ title: Varianti - Authoring dei contenuti di frammenti
 description: Scopri come le varianti consentono di creare contenuti per il frammento, quindi di creare varianti di tale contenuto in base allo scopo. Ciò offre maggiore flessibilità sia per la distribuzione headless che per l’authoring delle pagine.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2458'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Le [varianti](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una caratteristica importante dei frammenti di contenuto di AEM, in quanto consentono di creare e modificare copie del contenuto principale da utilizzare su canali e/o scenari specifici, rendendo ancora più flessibile sia l’authoring delle pagine che la distribuzione di contenuti headless.
 
@@ -40,7 +49,7 @@ Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di m
 
 ## Authoring dei contenuti {#authoring-your-content}
 
-Quando apri il frammento di contenuto per la modifica, il **Varianti** viene aperta per impostazione predefinita. Qui puoi creare il contenuto per l’elemento Principale o per una delle varianti disponibili. Il frammento strutturato contiene vari campi, per vari tipi di dati, definiti nel modello di contenuto.
+Quando apri il frammento di contenuto per la modifica, la scheda **Varianti** viene aperta per impostazione predefinita. Qui puoi creare il contenuto per l’elemento Principale o per una delle varianti disponibili. Il frammento strutturato contiene vari campi, per vari tipi di dati, definiti nel modello di contenuto.
 
 Ad esempio:
 
@@ -90,7 +99,7 @@ L’editor di testo a schermo intero fornisce:
 
 ### Azioni {#actions}
 
-Sono inoltre disponibili le seguenti azioni (per tutte le [formati](#formats)) quando l’editor a schermo intero (ovvero il testo su più righe) è aperto:
+Quando l’editor a schermo intero (ovvero testo su più righe) è aperto, sono disponibili anche le seguenti azioni (per tutti i [formati](#formats)):
 
 * Selezionare il [formato](#formats) ([Testo formattato](#rich-text), [Testo normale,](#plain-text) [Markdown](#markdown))
 
@@ -324,7 +333,7 @@ Caratteristiche delle annotazioni:
 
 Per semplificare il processo di creazione dei frammenti di contenuto, puoi aggiungere [Risorse](/help/assets/manage-digital-assets.md) (immagini) direttamente al frammento.
 
-Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; la formattazione può essere applicata quando [frammento utilizzato o a cui si fa riferimento in una pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; la formattazione può essere impostata quando il [frammento viene utilizzato o inserito come riferimento in una pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -355,13 +364,13 @@ Esistono diversi metodi per aggiungere [immagini](/help/sites-cloud/administerin
    Se, dopo aver aggiunto una risorsa, ne cambi il formato in:
    >
    * **Testo normale**: la risorsa viene persa completamente dal frammento.
-   * **Markdown**: la risorsa non è visibile, ma è ancora lì quando torni a **Rich Text**.
+   * **Markdown**: la risorsa non è visibile, ma lo tornerà a essere quando torni a **Rich Text**.
 
 ### Inserimento di un frammento di contenuto nel frammento {#inserting-content-fragment-into-your-fragment}
 
 Per semplificare il processo di creazione dei frammenti di contenuto, puoi anche aggiungere al frammento un altro frammento di contenuto.
 
-Vengono aggiunti come riferimento nella posizione corrente all’interno del frammento.
+Sono aggiunti come riferimento, nella posizione corrente all’interno del frammento.
 
 >[!NOTE]
 >
@@ -395,7 +404,7 @@ Esistono diversi metodi per aggiungere [immagini](/help/sites-cloud/administerin
    >
    Se, dopo aver aggiunto un riferimento a un altro frammento, modifichi il formato in:
    >
-   * **Testo normale**: il riferimento viene perso completamente dal frammento.
+   * **Testo normale**, il riferimento viene perso completamente dal frammento.
    * **Markdown**, il riferimento verrà mantenuto.
 
 ## Gestione delle varianti {#managing-variations}
@@ -416,7 +425,7 @@ Per creare una nuova variante:
 1. Seleziona **Varianti** dalla barra delle icone nel pannello laterale.
 1. Seleziona **Crea variante**.
 1. Viene aperta una finestra di dialogo in cui vengono specificati **Titolo** e **Descrizione** per la nuova variante.
-1. Seleziona **Aggiungi**; il frammento **Principale** viene copiato nella nuova variante, che è ora aperta per [modifica](#editing-a-variation).
+1. Seleziona **Aggiungi**, il frammento **Principale** viene copiato nella nuova variante, che è ora aperta per la [modifica](#editing-a-variation).
 
    >[!NOTE]
    >
@@ -442,7 +451,7 @@ Per modificare il nome di una variante esistente:
 
 1. Apri il frammento e seleziona **Varianti** nel pannello laterale.
 1. Seleziona la variante desiderata.
-1. Seleziona **Rinomina** dal **Azioni** a discesa.
+1. Seleziona **Rinomina** dal menu a discesa **Azioni**.
 
 1. Nella finestra di dialogo che si apre, immetti il nuovo **Titolo** e/o la nuova **Descrizione**.
 
@@ -458,7 +467,7 @@ Per eliminare una variante esistente:
 
 1. Apri il frammento e seleziona **Varianti** nel pannello laterale.
 1. Seleziona la variante desiderata.
-1. Seleziona **Elimina** dal **Azioni** a discesa.
+1. Seleziona **Elimina** dal menu a discesa **Azioni**.
 
 1. Nella finestra di dialogo che si apre, conferma l’azione **Elimina**.
 
@@ -486,7 +495,7 @@ Il trasferimento delle modifiche *da una variante all’elemento **Principale***
 
 1. Seleziona una variante specifica, quindi seleziona l’azione di sincronizzazione appropriata da una delle seguenti aree:
 
-   * il **Azioni** selettore a discesa - **Sincronizza elemento corrente con elemento principale**
+   * Selettore a discesa **Azioni**: **sincronizza l’elemento corrente con l’elemento principale**
 
      ![sincronizzazione con elemento principale](assets/cfm-variations-11a.png)
 

@@ -1,8 +1,8 @@
 ---
-title: Note sulla versione 2022.7.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2022.7.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2022.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione 2022.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 82%
@@ -37,7 +37,7 @@ Dai un’occhiata al video Panoramica sulla versione di luglio 2022 per un riepi
 
 ### Nuove funzioni in [!DNL Sites] {#sites-features}
 
-* La [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ora supporta le [scelte rapide da tastiera](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+* La [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ora supporta le [scelte rapide da tastiera](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 * AEM come Cloud Service [consegna di immagini ottimizzate per il web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=it) consente di migliorare in modo significativo la velocità della pagina distribuendo formati come WebP. Questo nuovo servizio offre anche opzioni più flessibili per il ridimensionamento e la trasformazione delle immagini. Tutte le versioni di [Componente immagine core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it) consente di utilizzare questo servizio e di distribuire immagini come WebP facendo clic su un’opzione nel criterio del componente immagine.
 

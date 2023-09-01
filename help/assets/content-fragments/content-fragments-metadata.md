@@ -2,16 +2,22 @@
 title: Metadati - Proprietà dei frammenti (Risorse - Frammenti di contenuto)
 description: Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 77%
+source-wordcount: '274'
+ht-degree: 69%
 
 ---
 
 # Metadati - Proprietà dei frammenti {#metadata-fragment-properties}
 
 Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto in AEM per regolare i contenuti headless.
+
+>[!NOTE]
+>
+>I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
+>
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
 
 ## Modifica di proprietà o metadati {#editing-properties-meta-data}
 
@@ -37,7 +43,7 @@ Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” 
 
         >[!NOTE]
         >
-        >**Tag** può essere aggiunto anche quando [authoring dei contenuti della variante](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e quando [creazione di varianti](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+        >**Tag** possono essere aggiunti anche durante l’[authoring dei contenuti della variante](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e quando [vengono create varianti](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
 
    * **Creato** (solo visualizzazione)
 

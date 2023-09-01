@@ -4,16 +4,22 @@ description: Scopri in che modo l’editor dei frammenti di contenuto utilizza l
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 92%
+source-wordcount: '576'
+ht-degree: 83%
 
 ---
 
 # Markdown {#markdown}
 
 Quando sei [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor di frammenti di contenuto utilizza *markdown* sintassi per consentire di scrivere facilmente contenuti headless:
+
+>[!NOTE]
+>
+>I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
+>
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
 
 ![Editor Markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

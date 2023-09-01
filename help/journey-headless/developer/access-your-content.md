@@ -2,10 +2,10 @@
 title: Come accedere al contenuto tramite API di consegna di AEM
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
+source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -30,9 +30,9 @@ Questo articolo si basa su questi elementi fondamentali per comprendere come acc
    * Approfondisci i dettagli dell’API GraphQL di AEM.
    * Osserva alcune query di esempio per vedere come funzionano in pratica.
 
-## Desideri quindi accedere al tuo contenuto? {#so-youd-like-to-access-your-content}
+## Desideri accedere ai tuoi contenuti? {#so-youd-like-to-access-your-content}
 
-Quindi...hai tutti questi contenuti, sono strutturati in modo ordinato (in Frammenti di contenuto) e stai solo aspettando di alimentare la tua nuova app. La domanda è: come arrivarci?
+Allora... disponi di tutto questo contenuto, ben strutturato (in Frammenti di contenuto) e in attesa di alimentare la tua nuova app. La domanda è: come arrivarci?
 
 Ciò di cui hai bisogno è un modo per eseguire il targeting di contenuti specifici, selezionare ciò che ti serve e restituirlo all’app per un’ulteriore elaborazione.
 
@@ -260,7 +260,7 @@ Per utilizzare effettivamente l’API GraphQL di AEM in una query, possiamo util
 
 Come puoi vedere, i campi Amministratore delegato e Dipendenti fanno riferimento ai frammenti persona.
 
-Vengono utilizzati i modelli di frammenti:
+I modelli di frammento vengono utilizzati:
 
 * durante la creazione del contenuto nell’Editor frammento di contenuto
 * per generare gli schemi GraphQL da interrogare
@@ -369,10 +369,10 @@ Ora che hai imparato ad accedere ai contenuti headless e ad eseguire query trami
    * [Query di esempio: un singolo frammento di città specifico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [Esempio di query per metadati: elenco dei metadati per i riconoscimenti denominati GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [Query di esempio: tutte le città con una variante denominata](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [Abilitare la funzionalità dei frammenti di contenuto nel browser configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-   * [Output JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+* [Abilitare la funzionalità dei frammenti di contenuto nel browser configurazioni](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
+* [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
+   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Comprendere la condivisione CORS (Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=it#understand-cross-origin-resource-sharing-(cors))
 * [Query persistenti GraphQL: abilitazione della memorizzazione nella cache in Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Generazione dei token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)

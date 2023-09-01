@@ -4,15 +4,24 @@ description: Scopri come gestire i frammenti di contenuto dalla console Framment
 landing-page-description: Scopri come gestire i frammenti di contenuto dalla console Frammenti di contenuto. La console è incentrata sull’utilizzo di volumi elevati di frammenti di contenuto per casi d’uso headless, ma viene utilizzata anche per l’authoring delle pagine.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 85%
+ht-degree: 90%
 
 ---
 
 # Console Frammenti di contenuto  {#content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Scopri in che modo la console Frammenti di contenuto può ottimizzare l’accesso ai frammenti di contenuto, consentendoti di creare, cercare e gestire i frammenti eseguendo azioni amministrative quali pubblicare, annullare le pubblicazioni e copiare.
 
@@ -59,13 +68,13 @@ Nella console puoi osservare tre aree principali:
 * Pannello principale/destro; da qui puoi:
    * Visualizzare l’elenco di tutti i frammenti di contenuto nel ramo selezionato della struttura:
       * La posizione è indicata dalle breadcrumb; puoi utilizzarle anche per modificare la posizione
-      * Vengono visualizzati i frammenti di contenuto della cartella selezionata e tutte le cartelle secondarie:
+      * Verranno visualizzati i Frammenti di contenuto della cartella selezionata, e tutte le cartelle secondarie:
          * [Vari campi di informazioni](#selectuse-available-columns) su un frammento di contenuto forniscono collegamenti con cui, a seconda del campo, è possibile:
             * Aprire il frammento appropriato nell’editor
             * Mostrare informazioni sui riferimenti
             * Mostrare informazioni sulle versioni linguistiche del frammento
             * Filtra rapidamente in base a un tag selezionato
-      * Posizionando il cursore del mouse sulle intestazioni di colonna, viene visualizzato un selettore di azioni a discesa e dei cursori di larghezza. Queste ti consentono di effettuare le seguenti operazioni:
+      * Al passaggio del mouse sulle intestazioni della colonna, verranno visualizzati un selettore di azioni a discesa e cursori di larghezza. Questi ti consentono di effettuare le seguenti operazioni:
          * Ordinare: selezionando l’azione appropriata per ordine crescente o decrescente. 
 In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ordinamento è disponibile solo nelle colonne appropriate.
          * Ridimensiona la colonna: utilizzando i cursori di azione o di larghezza
@@ -96,7 +105,7 @@ Alcune azioni sono disponibili dalla console senza selezionare un frammento di c
 
 ### Azioni per un frammento di contenuto (selezionato) {#actions-selected-content-fragment}
 
-Quando si seleziona un frammento specifico, viene aperta una barra degli strumenti incentrata sulle azioni disponibili per tale frammento. Puoi anche selezionare più frammenti; la selezione delle azioni viene regolata di conseguenza.
+Quando si seleziona un frammento specifico, viene aperta una barra degli strumenti incentrata sulle azioni disponibili per tale frammento. Puoi selezionare inoltre più frammenti; la selezione delle azioni verrà regolata di conseguenza.
 
 ![Console Frammenti di contenuto; barra degli strumenti per un frammento selezionato](assets/cfc-fragment-toolbar.png)
 

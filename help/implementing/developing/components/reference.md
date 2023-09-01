@@ -2,7 +2,7 @@
 title: Guida di riferimento dei componenti
 description: Guida di riferimento per sviluppatori per i dettagli dei componenti e della loro struttura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3648'
 ht-degree: 2%
@@ -59,7 +59,7 @@ Viene eseguito il rendering del componente con [HTML](https://www.w3schools.com/
 
 Si consiglia di mantenere il codice responsabile del markup e del rendering separato dal codice che controlla la logica utilizzata per selezionare il contenuto del componente.
 
-Questa filosofia è supportata da [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it): linguaggio per modelli appositamente limitato per garantire che venga utilizzato un linguaggio di programmazione reale per definire la logica di business sottostante. Questo meccanismo evidenzia il codice chiamato per una determinata vista e, se necessario, consente una logica specifica per diverse viste dello stesso componente.
+Questa filosofia è supportata da [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it): linguaggio per modelli appositamente limitato per garantire che venga utilizzato un linguaggio di programmazione reale per definire la logica di business sottostante. Questo meccanismo evidenzia il codice chiamato per una determinata vista e, se necessario, consente una logica specifica per diverse viste dello stesso componente.
 
 Questa logica (facoltativa) può essere implementata in diversi modi e viene richiamata da HTL con comandi specifici:
 
@@ -473,4 +473,4 @@ Questo markdown verrà quindi visualizzato nel [Console Componenti](/help/sites-
 
 ![README.md visibile nella console Componenti](assets/components-documentation-console.png)
 
-Il markdown supportato è lo stesso di [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+Il markdown supportato è lo stesso di [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md).

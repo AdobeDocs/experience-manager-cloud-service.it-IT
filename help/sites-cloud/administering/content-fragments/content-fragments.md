@@ -3,15 +3,24 @@ title: Utilizzo di frammenti di contenuto
 description: Scopri in che modo i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring e la distribuzione headless.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Utilizzo di frammenti di contenuto {#working-with-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Consentono di preparare contenuti pronti per l’uso in più posizioni e su più canali, ideali per l’authoring delle pagine e la distribuzione headless.
 
@@ -87,7 +96,7 @@ I frammenti di contenuto possono quindi essere assemblati per fornire esperienze
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 >
->Per ulteriori informazioni, consulta [Frammenti di contenuto e frammenti di esperienza nell’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
+>Per ulteriori informazioni, consulta [Comprensione dei frammenti di contenuto e dei frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
 
 ## Frammenti di contenuto e Content Services {#content-fragments-and-content-services}
 
@@ -147,7 +156,7 @@ I frammenti di contenuto sono una struttura di contenuto che:
 * può [contenere immagini o essere connessa ad esse](#fragments-with-visual-assets);
 * può utilizzare [contenuto intermedio](#in-between-content-when-page-authoring-with-content-fragments) se referenziato in una pagina;
 
-* È indipendente dal meccanismo di consegna (ovvero pagina, canale).
+* è indipendente dal meccanismo di consegna (ad esempio, pagina, canale).
 
 ### Frammenti con risorse visive {#fragments-with-visual-assets}
 
@@ -294,13 +303,13 @@ Per utilizzare i frammenti di contenuto nell’authoring delle pagine è inoltre
 
    * Essenziale per la distribuzione del frammento in formato HTML e/o JSON.
    * Obbligatorio per [fare riferimento al frammento in una pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Responsabile del layout e della distribuzione di un frammento, ovvero dei canali.
+   * Responsabile del layout e della distribuzione di un frammento, ovvero i canali.
    * I frammenti devono disporre di uno o più componenti dedicati per definire il layout e fornire alcuni o tutti gli elementi/varianti e i contenuti associati.
    * Quando si trascina un frammento su una pagina in fase di authoring, il componente richiesto viene associato automaticamente.
 
 ## Esempio di utilizzo {#example-usage}
 
-Un frammento, con i relativi elementi e varianti, può essere utilizzato per creare contenuti coerenti per più canali. Durante la progettazione del frammento, considera cosa viene utilizzato e dove.
+Un frammento, con i relativi elementi e varianti, può essere utilizzato per creare contenuti coerenti per più canali. Durante la progettazione del frammento, considera quali elementi verranno utilizzati e dove.
 
 ### Esempio WKND {#wknd-sample}
 

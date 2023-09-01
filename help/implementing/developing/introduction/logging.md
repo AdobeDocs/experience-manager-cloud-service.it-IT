@@ -2,9 +2,9 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
+source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2669'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ Le impostazioni di registrazione e i livelli di registro as a Cloud Service dall
 
 * Registrazione AEM, che esegue la registrazione a livello di applicazione AEM
 * Registrazione del server web/Dispatcher Apache HTTPD, che esegue la registrazione del server web e del Dispatcher sul livello di pubblicazione.
-* La registrazione CDN, indicata dal nome, esegue la registrazione sulla CDN. Questa funzione è attualmente disponibile per i primi utenti; per partecipare al programma per i primi utenti, invia un’e-mail a **aemcs-cdnlogs-adopter@adobe.com**, incluso il nome dell’organizzazione e il contesto relativi al tuo interesse per la funzione.
+* La registrazione CDN, indicata dal nome, esegue la registrazione sulla CDN. Questa funzione verrà gradualmente implementata per i clienti a inizio settembre.
 
 ## Registrazione AEM {#aem-logging}
 
@@ -504,10 +504,12 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->Questa funzione non è ancora disponibile al pubblico. Per aderire al programma di adozione anticipata in corso, invia un messaggio e-mail a **aemcs-cdnlogs-adopter@adobe.com**, incluso il nome dell’organizzazione e il contesto relativi al tuo interesse per la funzione.
+>Questa funzione verrà gradualmente implementata per i clienti a inizio settembre.
 >
 
 AEM as a Cloud Service fornisce accesso ai registri CDN, utili per i casi d’uso, inclusa l’ottimizzazione del rapporto di hit della cache. Il formato di registro CDN non può essere personalizzato e non è possibile impostarlo su modalità diverse, ad esempio info, avvertenza o errore.
+
+La funzione di inoltro Splunk non supporta ancora i registri CDN.
 
 **Esempio**
 
@@ -600,6 +602,8 @@ A seconda del traffico e della quantità di istruzioni di registro scritte da De
 I clienti con account Splunk possono richiedere tramite ticket di assistenza clienti che i loro registri di AEM Cloud Service vengano inoltrati all’indice appropriato. I dati di registrazione sono equivalenti a quelli disponibili nei download dei registri di Cloud Manager, ma i clienti potrebbero trovare conveniente utilizzare le funzioni di query disponibili nel prodotto Splunk.
 
 La larghezza di banda di rete associata ai registri inviati a Splunk è considerata parte dell&#39;utilizzo di I/O di rete del cliente.
+
+L’inoltro Splunk non supporta ancora i registri CDN.
 
 ### Abilitazione dell’inoltro Splunk {#enabling-splunk-forwarding}
 

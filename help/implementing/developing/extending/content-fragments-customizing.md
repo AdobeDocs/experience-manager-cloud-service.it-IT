@@ -2,10 +2,10 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard. Scopri come personalizzarli.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1812'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 2%
 
 All’interno di Adobe Experience Manager as a Cloud Service, un frammento di contenuto estende una risorsa standard; vedi:
 
-* [Creazione e gestione di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) e [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md) per ulteriori informazioni sui frammenti di contenuto.
+* [Creazione e gestione di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) e [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md) per ulteriori informazioni sui frammenti di contenuto.
 
 * [Gestione delle risorse](/help/assets/manage-digital-assets.md) per ulteriori informazioni sulle risorse standard.
 
 ## Architettura {#architecture}
 
-La base [parti costitutive](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) di un frammento di contenuto:
+La base [parti costitutive](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) di un frammento di contenuto:
 
 * A *Frammento di contenuto*,
 * costituito da uno o più *Elementi contenuto*,
@@ -78,7 +78,7 @@ Come per le risorse standard, un frammento di contenuto si trova in:
 
 #### Autorizzazioni risorse {#asset-permissions}
 
-Per maggiori dettagli vedi [Frammento di contenuto - Considerazioni sull’eliminazione](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+Per maggiori dettagli vedi [Frammento di contenuto - Considerazioni sull’eliminazione](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 #### Integrazione delle funzioni {#feature-integration}
 
@@ -324,7 +324,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Esempio: specifica dell&#39;intervallo di salvataggio automatico {#example-specifying-the-auto-save-interval}
 
-Il [intervallo di salvataggio automatico](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) (misurato in secondi) può essere definito utilizzando la gestione della configurazione (ConfMgr):
+Il [intervallo di salvataggio automatico](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) (misurato in secondi) può essere definito utilizzando la gestione della configurazione (ConfMgr):
 
 * Nodo: `<conf-root>/settings/dam/cfm/jcr:content`
 * Nome proprietà: `autoSaveInterval`

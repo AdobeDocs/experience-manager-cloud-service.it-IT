@@ -2,10 +2,10 @@
 title: Scopri come definire metadati e tag per i frammenti di contenuto
 description: Scopri come definire metadati e tag per i frammenti di contenuto
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 85%
+source-wordcount: '191'
+ht-degree: 92%
 
 ---
 
@@ -26,21 +26,9 @@ L’articolo si basa su questi elementi, importanti per comprendere come utilizz
 
 ## Aggiunta di metadati e tag {#adding-metadata-and-tags}
 
-Esistono tre metodi per aggiungere metadati e tag:
+Puoi aggiungere metadati e tag dal pannello di destra dell’Editor frammento di contenuto:
 
-* Il primo passo per la creazione del frammento (dalla console **Assets**):
-
-  ![Crea frammento di contenuto: specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-* Il **Varianti** dell’editor dei frammenti di contenuto ti consente di aggiungere **Tag** dal progetto:
-
-  ![Editor frammento di contenuto - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
-
-* Il **Metadati** nell’editor dei frammenti di contenuto ti consente di aggiungere sia vari campi di metadati che campi predefiniti **Tag** dal progetto:
-
-  ![Editor frammento di contenuto: metadati](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
-
-   * È inoltre direttamente accessibile tramite l’opzione **Proprietà** nella barra degli strumenti della console Assets.
+![Editor frammento di contenuto - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Passaggio successivo {#whats-next}
 
@@ -48,8 +36,8 @@ Ora puoi mettere in pratica tutte queste conoscenze per iniziare a creare framme
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Metadati - Proprietà dei frammenti](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+* [Metadati - Proprietà dei frammenti](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
 * [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modelli per frammenti di contenuto - Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modelli per frammenti di contenuto - Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

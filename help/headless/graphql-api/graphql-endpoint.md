@@ -3,10 +3,10 @@ title: Gestire gli endpoint GraphQL in AEM
 description: Scopri come gestire gli endpoint GraphQL in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -22,10 +22,10 @@ Esistono due tipi di endpoint in AEM:
 
 * Globale
    * Disponibile per tutti i siti.
-   * Questo endpoint può utilizzare tutti i modelli per frammenti di contenuto di tutte le configurazioni di Sites (definite nella sezione [Browser configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Questo endpoint può utilizzare tutti i modelli per frammenti di contenuto di tutte le configurazioni di Sites (definite nella sezione [Browser configurazioni](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)).
    * Se esistono modelli per frammenti di contenuto che devono essere condivisi tra le configurazioni di Sites, questi devono essere creati nelle configurazioni globali di Sites.
 * Configurazioni di Sites:
-   * Corrisponde a una configurazione Sites, come definita nella sezione [Browser configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Corrisponde a una configurazione Sites, come definita nella sezione [Browser configurazioni](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
    * Sono specifiche per un determinato sito o progetto.
    * Un endpoint specifico per la configurazione di Sites utilizzerà i modelli di frammento di contenuto di quella specifica configurazione di Sites insieme a quelli della configurazione globale di Sites.
 
@@ -33,7 +33,7 @@ Esistono due tipi di endpoint in AEM:
 >
 >L’Editor frammento di contenuto può consentire a un frammento di contenuto di una configurazione Sites di fare riferimento a un frammento di contenuto di un’altra configurazione Sites (tramite criteri).
 >
->In questo caso, non tutto il contenuto è recuperabile utilizzando un endpoint specifico per la configurazione di Sites.
+>In questo caso, non tutti i contenuti sono recuperabili utilizzando un endpoint specifico per la configurazione Sites.
 >
 >L’autore del contenuto deve controllare questo scenario; ad esempio, potrebbe essere utile inserire modelli per frammenti di contenuto condivisi nella configurazione globale di Sites.
 
@@ -52,11 +52,11 @@ Per abilitare un endpoint per GraphQL per AEM è necessario:
 
 ## Abilitazione dell’endpoint GraphQL {#enabling-graphql-endpoint}
 
-Per abilitare un endpoint GraphQL è innanzitutto necessario disporre di una configurazione appropriata. Vedi la sezione [Frammenti di contenuto - Browser configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
+Per abilitare un endpoint GraphQL è innanzitutto necessario disporre di una configurazione appropriata. Vedi la sezione [Frammenti di contenuto - Browser configurazioni](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
 >[!CAUTION]
 >
->Se l’[utilizzo di modelli per frammenti di contenuto non è stato abilitato](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md), l’opzione **Crea** non sarà disponibile.
+>Se l’[utilizzo di modelli per frammenti di contenuto non è stato abilitato](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser), l’opzione **Crea** non sarà disponibile.
 
 Per abilitare l’endpoint corrispondente:
 
@@ -70,7 +70,7 @@ Per abilitare l’endpoint corrispondente:
    >
    >Nella finestra di dialogo viene visualizzato la seguente avvertenza:
    >
-   >* *Se non vengono gestiti correttamente, gli endpoint GraphQL possono causare problemi di prestazioni e sicurezza dei dati. Dopo aver creato un endpoint, verifica di aver impostato le autorizzazioni appropriate.*
+   >* *Se non vengono gestiti con attenzione, gli endpoint GraphQL possono causare problemi di prestazioni e sicurezza dei dati. Dopo aver creato un endpoint, verifica di aver impostato le autorizzazioni appropriate.*
 
 1. Conferma con **Crea**.
 1. Il **Passaggi successivi** fornirà un collegamento diretto alla console Sicurezza per verificare che l’endpoint appena creato disponga delle autorizzazioni appropriate.

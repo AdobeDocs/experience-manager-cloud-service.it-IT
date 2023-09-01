@@ -2,10 +2,10 @@
 title: Gestione dei frammenti di contenuto (risorse - frammenti di contenuto)
 description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 69%
+source-wordcount: '1813'
+ht-degree: 71%
 
 ---
 
@@ -34,7 +34,11 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 
 >[!NOTE]
 >
->I frammenti di contenuto sono memorizzati come **Risorse**. Ora sono gestite principalmente con **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** , anche se possono ancora essere gestite dalla **Risorse** console. Questa sezione riguarda la gestione da **Risorse** console.
+>I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
+>
+>Ora sono gestite principalmente con **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** , anche se possono ancora essere gestite dalla **Risorse** console. Questa sezione riguarda la gestione da **Risorse** console.
+>
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
@@ -129,7 +133,7 @@ Per aprire la pagina per la modifica:
 
 >[!CAUTION]
 >
->Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). In caso di problemi, contatta l’amministratore di sistema.
+>Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
 
 1. Utilizza il **Risorse** per passare alla posizione del frammento di contenuto.
 1. Apri il frammento per la modifica eseguendo una delle seguenti operazioni:
@@ -175,7 +179,7 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
 
 ![Azioni della barra degli strumenti disponibili in varie modalità](assets/cfm-managing-top-toolbar.png)
 
-* Viene visualizzato un messaggio quando in una pagina di contenuto è già presente un riferimento al frammento. È possibile **chiudere** il messaggio.
+* Se in una pagina di contenuto è già presente un riferimento al frammento, viene visualizzato un messaggio. È possibile **chiudere** il messaggio.
 
 * Il pannello laterale può essere nascosto o visualizzato utilizzando l’icona **Attiva/Disattiva pannello laterale**.
 
@@ -217,7 +221,7 @@ L’editor dispone di diverse opzioni:
 
   >[!CAUTION]
   >
-  >Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). In caso di problemi, contatta l’amministratore di sistema.
+  >Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
 
   >[!NOTE]
   >
@@ -231,7 +235,7 @@ L’editor dispone di diverse opzioni:
 
 * **Chiudi**
 
-  Chiude l’editor senza salvare le modifiche più recenti, ovvero apportate dall’ultima **Salva**).
+  Chiude l’editor senza salvare le modifiche più recenti, ovvero apportate dall’ultimo comando **Salva**.
 
 Durante la modifica del frammento di contenuto, AEM crea automaticamente alcune versioni per garantire che il contenuto precedente possa essere ripristinato se si annullano le modifiche (utilizzando **Chiudi** senza salvare):
 
@@ -262,7 +266,7 @@ Dopo aver creato il contenuto primario, puoi creare e gestire le [Varianti](/hel
 
 ## Associazione di contenuto al frammento {#associating-content-with-your-fragment}
 
-È inoltre possibile [associare il contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) a un frammento. Fornisce una connessione in modo che le risorse (ovvero le immagini) possano essere (facoltativamente) utilizzate con il frammento quando viene aggiunto a una pagina di contenuto.
+È inoltre possibile [associare il contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) a un frammento. In questo modo si fornisce una connessione in modo che le risorse (ad esempio le immagini) possano essere utilizzate (facoltativamente) con il frammento quando viene aggiunto a una pagina di contenuto.
 
 ## Visualizzazione e modifica dei metadati (proprietà) del frammento {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -303,7 +307,7 @@ Le annotazioni (per i frammenti di contenuto) sono:
 
 Esempio:
 
-![Timeline ](assets/cfm-managing-05.png)
+![Timeline](assets/cfm-managing-05.png)
 
 ## Confronto delle versioni dei frammenti {#comparing-fragment-versions}
 

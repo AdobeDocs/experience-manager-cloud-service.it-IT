@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
+source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
 workflow-type: tm+mt
-source-wordcount: '5372'
+source-wordcount: '5532'
 ht-degree: 7%
 
 ---
@@ -137,6 +137,20 @@ Puoi utilizzarlo a tuo vantaggio, incrementando la classificazione di alcune ris
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Video: scopri come vengono classificati i risultati della ricerca e come può essere influenzato il livello.*
+
+## Configurare la dimensione del batch di risorse per visualizzare i risultati della ricerca {#configure-asset-batch-size}
+
+Gli amministratori possono ora configurare le dimensioni batch delle risorse visualizzate durante la ricerca. I risultati della ricerca delle risorse vengono visualizzati in multipli del numero di dimensioni del batch configurato quando scorri ulteriormente verso il basso per caricare i risultati. Puoi scegliere tra le dimensioni disponibili del batch (200, 500 e 1000 risorse). Impostando un numero di dimensioni batch più basso si ottengono tempi di risposta della ricerca più rapidi.
+
+Se ad esempio si imposta il limite di conteggio dei risultati su una dimensione batch di 200 risorse, Experience Manager Assets visualizza una dimensione batch di 200 risorse nei risultati della ricerca quando si inizia la ricerca. Quando scorri verso il basso per spostarti tra i risultati della ricerca, viene visualizzato il successivo batch di 200 risorse. Il processo continua finché non vengono visualizzate tutte le risorse che corrispondono alla query di ricerca.
+
+Per configurare la dimensione del batch di risorse:
+
+1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Configurazioni risorse]** > **[!UICONTROL Configurazione di Assets Omnisearch]**.
+
+1. Seleziona il limite di conteggio dei risultati e fai clic su **[!UICONTROL Salva]**.
+
+   ![Configurazione delle dimensioni batch delle risorse](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## Ricerca avanzata {#scope}
 

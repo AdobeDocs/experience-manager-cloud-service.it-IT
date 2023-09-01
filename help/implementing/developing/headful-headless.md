@@ -1,17 +1,17 @@
 ---
 title: Headful e headless in AEM
-description: I progetti AEM possono essere implementati in un modello headful e headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto.
+description: È possibile implementare i progetti AEM in un modello headful e headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
 # Headful e Headless in AEM {#headful-headless}
 
-I progetti Adobe Experience Manager possono essere implementati sia in modelli headful che headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto. Questo documento fornisce una panoramica dei diversi modelli e descrive i livelli di integrazione SPA.
+I progetti di Adobe Experience Manager possono essere implementati sia in modelli headful che headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto. Questo documento fornisce una panoramica dei diversi modelli e descrive i livelli di integrazione SPA.
 
 ## Panoramica {#overview}
 
@@ -31,7 +31,7 @@ Le applicazioni a pagina singola (SPA) sono spesso la destinazione del contenuto
 
 ## Esempio di negozio web {#web-shop-example}
 
-Diciamo che hai un negozio web esistente per la tua azienda come una SPA. Contiene tutti i dettagli e le immagini del prodotto. Poi introduci l’AEM per potenziare le tue attività di marketing, come siti promozionali, blog e contenuti per campagne. Come si integrano i due? AEM consente una serie di opzioni:
+Diciamo che hai un negozio web esistente per la tua azienda come una SPA. Contiene tutti i dettagli e le immagini del prodotto. Introduci quindi AEM per potenziare le tue attività di marketing come siti promozionali, blog e contenuti delle campagne. Come si integrano i due? AEM consente una serie di opzioni:
 
 * **Consenti il funzionamento indipendente dei sistemi.**
 * **Fornisci al negozio web contenuti limitati da AEM tramite GraphQL.** I contenuti possono essere creati dagli autori in AEM, ma solo visualizzati tramite la SPA del negozio web.
@@ -43,7 +43,7 @@ La sezione successiva esplora più dettagliatamente questi livelli di integrazio
 
 >[!NOTE]
 >
->Naturalmente puoi anche reimplementare il web shop SPA AEM come un SPA pienamente funzionante [utilizzo del framework dell’editor SPA dell’AEM](/help/implementing/developing/hybrid/introduction.md). Se hai già AEM e desideri creare un nuovo negozio web o un&#39;altra SPA, questo è il metodo consigliato, ma non rientra nell’ambito di questo documento.
+>Naturalmente è possibile anche implementare nuovamente la SPA del negozio web come una SPA AEM pienamente funzionante [utilizzando il framework dell’editor SPA AEM](/help/implementing/developing/hybrid/introduction.md). Se disponi già di AEM e desideri creare un nuovo negozio web o un’altra SPA, questo è il metodo consigliato, ma non rientra nell’ambito di questo documento.
 
 ## Livelli di integrazione SPA {#integration-levels}
 
@@ -53,19 +53,19 @@ L’integrazione SPA si sviluppa su quattro livelli in AEM.
    * SPA e AEM esistono separatamente e non si scambiano informazioni.
    * I contenuti vengono creati, gestiti e distribuiti in modo indipendente in due sistemi distinti.
 * **Livello 1: integrazione dei frammenti di contenuto**
-   * I [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) vengono utilizzati in AEM per creare e gestire contenuti limitati per la SPA.
-   * L&#39;SPA recupera questo contenuto tramite AEM [API GRAPHQL](/help/headless/graphql-api/content-fragments.md).
+   * I [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) vengono utilizzati in AEM per creare e gestire contenuti limitati per la SPA.
+   * La SPA recupera questo contenuto tramite l’[API GraphQL](/help/headless/graphql-api/content-fragments.md) di AEM.
    * Alcuni contenuti vengono gestiti in AEM e altri in un sistema esterno.
    * Il contenuto può essere visualizzato solo nella SPA.
 * **Livello 2: incorpora la SPA in AEM**
-   * I [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) vengono utilizzati in AEM per creare e gestire il contenuto per la SPA.
-   * L&#39;SPA recupera questo contenuto tramite AEM [API GRAPHQL](/help/headless/graphql-api/content-fragments.md).
+   * I [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) vengono utilizzati in AEM per creare e gestire il contenuto per la SPA.
+   * La SPA recupera questo contenuto tramite l’[API GraphQL](/help/headless/graphql-api/content-fragments.md) di AEM.
    * Alcuni contenuti vengono gestiti in AEM e altri in un sistema esterno.
    * Il contenuto può essere visualizzato nel contesto in AEM.
    * È possibile modificare contenuto limitato in AEM.
 * **Livello 3: incorpora e abilita completamente SPA in AEM**
-   * I [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) vengono utilizzati in AEM per creare e gestire il contenuto per la SPA.
-   * L&#39;SPA recupera questo contenuto tramite AEM [API GRAPHQL](/help/headless/graphql-api/content-fragments.md).
+   * I [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) vengono utilizzati in AEM per creare e gestire il contenuto per la SPA.
+   * La SPA recupera questo contenuto tramite l’[API GraphQL](/help/headless/graphql-api/content-fragments.md) di AEM.
    * Il contenuto può essere visualizzato nel contesto in AEM.
    * La maggior parte dei contenuti può essere modificata in AEM.
 

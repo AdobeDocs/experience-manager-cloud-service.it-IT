@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
 workflow-type: tm+mt
-source-wordcount: '4376'
+source-wordcount: '4508'
 ht-degree: 12%
 
 ---
@@ -76,6 +76,21 @@ Una volta abilitata, Experience Manager invia le notifiche delle risorse duplica
 >[!NOTE]
 >
 >Quando carichi le risorse nell’archivio, Experience Manager rileva la duplicazione e notifica le prime 100 risorse duplicate.
+
+## Estrai archivi ZIP {#extract-zip-archives}
+
+Seleziona gli archivi ZIP gestiti in Experience Manager ed estrai i file direttamente in Experience Manager senza scaricarli.
+
+Per estrarre i file ZIP, effettuare le seguenti operazioni:
+
+1. Seleziona il tipo di file ZIP.
+1. Fai clic su **[!UICONTROL Estrai archivio]** disponibile sulla barra delle azioni.
+1. Seleziona la cartella in cui salvare le risorse estratte disponibili nella cartella compressa.
+1. Fai clic su **[!UICONTROL Avanti]**.
+1. Seleziona il comportamento appropriato per gestire i conflitti di nome file durante l’estrazione. Puoi scegliere di creare una nuova versione di una risorsa esistente, sostituirla, mantenere entrambe le risorse nella cartella di destinazione o saltare l’estrazione della nuova risorsa.
+1. Clic **[!UICONTROL Extract]**. Il processo di estrazione ZIP viene avviato. Una volta completato il processo, puoi visualizzare le risorse estratte nella cartella di destinazione.
+
+   ![estrazione zip](assets/zip-extraction.png)
 
 ## Visualizzare l’anteprima delle risorse {#previewing-assets}
 
@@ -186,7 +201,7 @@ Le altre proprietà e le informazioni sui metadati vengono conservate. Una copia
 
    >[!NOTE]
    >
-   >* Se nella nuova posizione non è presente alcuna risorsa con lo stesso nome, è possibile specificare lo stesso nome per la risorsa. Tuttavia, se sposti la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, utilizza un nome diverso. Se utilizzate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa è denominata Square, il sistema genera il nome Square1 per la relativa copia.
+   >* Se nella nuova posizione non è presente alcuna risorsa con lo stesso nome, è possibile specificare lo stesso nome per la risorsa. Tuttavia, se sposti la risorsa in una posizione in cui esiste già una risorsa con lo stesso nome, utilizza un nome diverso. Se utilizzate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa è denominata Square, il sistema genera il nome Square1 per la relativa copia.
    >* Durante la ridenominazione, il nome del file non può contenere spazi.
 
 1. Il giorno **[!UICONTROL Seleziona destinazione]** eseguire una delle operazioni seguenti:
@@ -405,7 +420,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
 -->
 
-## Timeline  {#timeline}
+## Timeline {#timeline}
 
 La timeline consente di visualizzare vari eventi per un elemento selezionato, ad esempio flussi di lavoro attivi per una risorsa, commenti/annotazioni, registri attività e versioni.
 
@@ -535,7 +550,7 @@ Per stampare le annotazioni e controllare lo stato, tocca o fai clic sul pulsant
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. Nella finestra di dialogo Stampa, scegliere la posizione in cui si desidera visualizzare lo stato di annotazioni/revisioni sul PDF. Ad esempio, se desideri stampare le annotazioni/lo stato in alto a destra della pagina che contiene l’immagine stampata, utilizza **In alto a sinistra** impostazione. È selezionata per impostazione predefinita.
+1. Nella finestra di dialogo Stampa, scegliere la posizione in cui si desidera visualizzare lo stato di annotazioni/revisioni sul PDF. Ad esempio, se desideri stampare le annotazioni/stato in alto a destra della pagina che contiene l’immagine stampata, utilizza **In alto a sinistra** impostazione. È selezionata per impostazione predefinita.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 

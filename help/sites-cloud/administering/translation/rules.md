@@ -4,10 +4,10 @@ description: Scopri come le regole di traduzione identificano il contenuto da tr
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ Le regole di traduzione identificano il contenuto da tradurre per le pagine, i c
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti AEM Sites utilizzando potenti strumenti di traduzione AEM, ideale per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta il [Percorso di traduzione Sites](/help/journey-sites/translation/overview.md) per una guida attraverso la traduzione di contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o di traduzione.
 
 ## Frammenti di contenuto e regole di traduzione {#content-fragments}
 
 Le regole di traduzione descritte in questo documento si applicano ai frammenti di contenuto solo se l’opzione **Abilita campi del modello di contenuto per la traduzione** non è stata abilitata nel [livello di configurazione del framework di integrazione della traduzione.](integration-framework.md#assets-configuration-properties)
 
-Se l’opzione **Abilita campi del modello di contenuto per la traduzione** è attiva, AEM utilizzerà il campo **Traducibile** su [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) per determinare se il campo deve essere tradotto e crea automaticamente le conseguenti regole di traduzione. Questa opzione sostituisce eventuali regole di traduzione create e non richiede alcun intervento o passaggi aggiuntivi.
+Se l’opzione **Abilita campi del modello di contenuto per la traduzione** è attiva, AEM utilizzerà il campo **Traducibile** su [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) per determinare se il campo deve essere tradotto e crea automaticamente le conseguenti regole di traduzione. Questa opzione sostituisce eventuali regole di traduzione create e non richiede alcun intervento o passaggi aggiuntivi.
 
 Se desideri utilizzare le regole di traduzione per tradurre i frammenti di contenuto, l’opzione **Abilita campi del modello di contenuto per la traduzione** sulla configurazione del framework di integrazione della traduzione deve essere disabilitata e devi seguire i passaggi descritti di seguito per creare le regole.
 
@@ -163,7 +163,7 @@ Per accedervi:
 
 Nell’interfaccia utente delle regole di traduzione puoi:
 
-1. **Aggiungi contesto**, che consente di aggiungere un percorso.
+1. **Aggiungi contesto**, che ti consente di aggiungere un percorso.
 
    ![Aggiungi contesto di traduzione](../assets/add-translation-context.png)
 
@@ -186,7 +186,7 @@ Puoi modificare quattro attributi tramite l’interfaccia utente:
 
 **`isDeep`**  è applicabile nei filtri dei nodi ed è true per impostazione predefinita. Controlla se il nodo (o i suoi predecessori) contiene tale proprietà con il valore della proprietà specificato nel filtro. Se false, controlla solo il nodo corrente.
 
-Ad esempio, i nodi secondari vengono aggiunti a un processo di traduzione anche quando il nodo principale ha la proprietà `draftOnly` imposta su true per contrassegnare il contenuto della bozza. Qui `isDeep` entra in gioco e controlla se i nodi principali hanno proprietà `draftOnly` come true ed esclude tali nodi secondari.
+Ad esempio, i nodi secondari vengono aggiunti a un processo di traduzione anche quando il nodo principale ha la proprietà `draftOnly` impostata su true per contrassegnare il contenuto in formato bozza. Qui `isDeep` entra in gioco e controlla se i nodi principali hanno proprietà `draftOnly` come true ed esclude tali nodi secondari.
 
 Nell&#39;editor, puoi selezionare/deselezionare **Deep** nella scheda **Filtri**.
 

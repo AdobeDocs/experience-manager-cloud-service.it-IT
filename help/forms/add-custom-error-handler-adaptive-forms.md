@@ -6,9 +6,9 @@ keywords: Aggiungi un gestore degli errori personalizzato, aggiungi un gestore d
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1982'
+source-wordcount: '2428'
 ht-degree: 2%
 
 ---
@@ -180,44 +180,42 @@ Utilizzo di [Servizio di richiamo dell’editor di regole](https://experiencelea
 >[!NOTE]
 >
 > * Per utilizzare i gestori di errori con l’azione Richiama del servizio dell’editor di regole, configura Forms adattivo con un modello di dati del modulo.
-> * Per impostazione predefinita, viene fornito un gestore degli errori predefinito per visualizzare i messaggi di errore sui campi se la risposta di errore si trova nello schema standard. Il gestore degli errori predefinito può anche chiamare il gestore degli errori personalizzato se la risposta di errore non è conforme allo schema standard.
+> * Se la risposta di errore si trova nello schema standard, viene fornito un gestore degli errori predefinito per visualizzare i messaggi di errore sui campi. È inoltre possibile chiamare il gestore degli errori predefinito dalla funzione del gestore degli errori personalizzato.
 
-<!-- 
-Using Rule Editor, you can:
-* [Add default error handler function](#add-default-errror-handler)
-* [Add custom error handler function](#add-custom-errror-handler)
+Utilizzando l’editor di regole, puoi:
+* [Aggiungi funzione gestore errori predefinita](#add-default-errror-handler)
+* [Aggiungi funzione di gestione degli errori personalizzata](#add-custom-errror-handler)
 
 
-### Add default error handler function {#add-default-errror-handler}
+### Aggiungi funzione gestore errori predefinita {#add-default-errror-handler}
 
-A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
-To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take an example of a simple Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a default error handler at the **Pet ID** field to check for various errors returned by the REST endpoint configured to invoke an external service, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
+È supportato un gestore degli errori predefinito per visualizzare i messaggi di errore sui campi se la risposta di errore si trova nello schema standard o in un errore di convalida lato server.
+Per informazioni su come utilizzare un gestore degli errori predefinito utilizzando [Servizio di richiamo dell’editor di regole](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) , ad esempio un semplice modulo adattivo con due campi, **ID animale domestico** e **Nome animale domestico** e utilizza un gestore degli errori predefinito in corrispondenza di **ID animale domestico** per verificare la presenza di vari errori restituiti dall’endpoint REST configurato per richiamare un servizio esterno, ad esempio, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Per aggiungere un gestore degli errori predefinito tramite l’azione Richiama servizio dell’editor di regole, esegui i passaggi seguenti:
 
-1. Open an Adaptive Form in authoring mode, select a form component and tap **[!UICONTROL Rule Editor]** to open the rule editor.
-1. Tap **[!UICONTROL Create]**.
-1. Create a condition in the **When** section of the rule. For example, **When[Name of Pet ID field]** is changed. Select is changed from the **Select State** drop-down list.
-1. In the **Then** section, select **[!UICONTROL Invoke Service]** from the **Select Action** drop-down list.
-1. Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
-1. Select the data bindings from the **Output** section. Select **Pet Name** in the **Output** section.
-1. Select **[!UICONTROL Default Error Handler]** from the **Error Handler** section. 
-1. Click **[!UICONTROL Done]**.
+1. Apri un modulo adattivo in modalità di authoring, seleziona un componente modulo e tocca **[!UICONTROL Editor regole]** per aprire l’editor di regole.
+1. Tocca **[!UICONTROL Crea]**.
+1. Creare una condizione in **Quando** sezione della regola. Ad esempio: **Quando[Nome del campo ID animale domestico]** è stato modificato. Seleziona viene modificato dal **Seleziona stato** elenco a discesa.
+1. In **Then** sezione, seleziona **[!UICONTROL Richiama servizio]** dal **Seleziona azione** elenco a discesa.
+1. Seleziona un **Servizio post** e le associazioni di dati corrispondenti dalla **Input** sezione. Ad esempio, per convalidare **ID animale domestico**, seleziona un **Servizio post** as **GET /pet/{petId}** e seleziona **ID animale domestico** nel **Input** sezione.
+1. Seleziona le associazioni di dati da **Output** sezione. Seleziona **Nome animale domestico** nel **Output** sezione.
+1. Seleziona **[!UICONTROL Gestore errori predefinito]** dal **Gestore errori** sezione.
+1. Clic **[!UICONTROL Fine]**.
 
- ![add a default error handler for a field validation checks in a form](/help/forms/assets/default-error-handler.png)
+![aggiungere un gestore errori predefinito per i controlli di convalida dei campi in un modulo](/help/forms/assets/default-error-handler.png)
 
-As a result of this rule, the values you enter for **Pet ID** checks validation for **Pet Name** using external service invoked by REST endpoint. If the validation criteria based on the data source fail, the error messages are displayed at the field level.
+Come risultato di questa regola, i valori immessi per **ID animale domestico** verifica la convalida per **Nome animale domestico** utilizzo di un servizio esterno richiamato dall’endpoint REST. Se i criteri di convalida basati sull’origine dati non riescono, i messaggi di errore vengono visualizzati a livello di campo.
 
- ![display the default error message when you add a default error handler in a form to handle error responses](/help/forms/assets/default-error-message.png)
-
--->
+![visualizza il messaggio di errore predefinito quando si aggiunge un gestore degli errori predefinito in un modulo per gestire le risposte di errore](/help/forms/assets/default-error-message.png)
 
 ### Aggiungi funzione di gestione degli errori personalizzata {#add-custom-errror-handler}
 
 È possibile aggiungere una funzione di gestione degli errori personalizzata per eseguire alcune delle azioni seguenti:
+
 * gestisce le risposte di errore che utilizzano risposte di errore non standard o standard. È importante notare che queste risposte di errore non standard non sono conformi al [schema standard di risposte di errore](#failure-response-format).
 * invia eventi di analytics a qualsiasi piattaforma di analytics. Ad esempio, Adobe Analytics.
 * visualizza la finestra di dialogo modale con messaggi di errore.
 
-Oltre alle azioni menzionate, i gestori degli errori personalizzati possono essere utilizzati per eseguire funzioni personalizzate che soddisfano requisiti utente specifici.
+Oltre alle azioni citate, i gestori degli errori personalizzati possono essere utilizzati per eseguire funzioni personalizzate che soddisfano requisiti utente specifici.
 
 Il gestore degli errori personalizzati è una funzione (libreria client) progettata per rispondere agli errori restituiti da un servizio esterno e fornire una risposta personalizzata agli utenti finali. Qualsiasi libreria client con annotazione `@errorHandler` è considerata una funzione di gestione degli errori personalizzata. Questa annotazione consente di identificare la funzione di gestione degli errori specificata in `.js` file.
 Per informazioni su come creare e utilizzare un gestore degli errori personalizzato utilizzando [Servizio Invoke dell&#39;editor di regole](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) , prendiamo un esempio di modulo adattivo con due campi, **ID animale domestico** e **Nome animale domestico** e utilizza un gestore degli errori personalizzato in corrispondenza di **ID animale domestico** per verificare la presenza di vari errori restituiti dall’endpoint REST configurato per richiamare un servizio esterno, ad esempio, `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
@@ -229,8 +227,10 @@ Per aggiungere e utilizzare un gestore di errori personalizzato in un modulo ada
 #### 1. Creare un gestore degli errori personalizzato {#create-custom-error-message}
 
 Per creare una funzione di errore personalizzata, effettuare le seguenti operazioni:
-1. [Clona l’archivio as a Cloud Service di AEM Forms.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/`.
+
+1. [Clonare l’archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+1. Creare una cartella in `[AEM Forms as a Cloud Service repository folder]/apps/` cartella. Ad esempio, crea una cartella denominata come `experience-league`
+1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` e creare un `ClientLibraryFolder` as `clientlibs`.
 1. Crea una cartella denominata `js`.
 1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` cartella.
 1. Aggiungi un file JavaScript, ad esempio `function.js`. Il file contiene il codice per il gestore degli errori personalizzato.
@@ -247,12 +247,22 @@ Aggiungiamo il seguente codice al file JavaScript per visualizzare la risposta e
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
+           guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
            console.log("Custom Error Handler processing end...");
        }
    ```
 
-   <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
-        `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
+   Per chiamare il gestore errori predefinito dal gestore errori personalizzato, viene utilizzata la seguente riga del codice di esempio:
+   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+
+   >[!NOTE]
+   >
+   > In `.content.xml` file, aggiungi `allowProxy` e `categories` proprietà.
+   >
+   > * `allowProxy = [Boolean]true`
+   > * `categories= customfunctionsdemo`
+   >Ad esempio, in questo caso: [custom-errorhandler-name] viene fornito come `customfunctionsdemo`.
+
 1. Salva il `function.js` file.
 1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` cartella.
 1. Aggiungi un file di testo come `js.txt`. Il file contiene:
@@ -262,7 +272,10 @@ Aggiungiamo il seguente codice al file JavaScript per visualizzare la risposta e
        functions.js
    ```
 
-1. Salva il `js.txt` file.
+1. Salva il `js.txt` file.\
+   La struttura di cartelle creata è simile alla seguente:
+
+   ![Struttura delle cartelle della libreria client creata](/help/forms/assets/customclientlibrary_folderstructure.png)
 
    >[!NOTE]
    >
@@ -276,11 +289,17 @@ Aggiungiamo il seguente codice al file JavaScript per visualizzare la risposta e
        git push
    ```
 
-1. [Eseguire la pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
+1. [Eseguire la pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 Una volta eseguita correttamente la pipeline, il gestore degli errori personalizzato diventa disponibile nell’editor di regole del modulo adattivo. Ora vediamo come configurare e utilizzare un gestore di errori personalizzato utilizzando il servizio Invoke dell’editor di regole in AEM Forms.
 
 #### 2. Utilizza l’Editor regole per configurare un gestore degli errori personalizzato {#use-custom-error-handler}
+
+Prima di implementare il gestore degli errori personalizzato in un modulo adattivo, assicurati che il nome della libreria client nel **[!UICONTROL Categoria libreria client]** allinea con il nome specificato nell&#39;opzione categorie della `.content.xml` file.
+
+![Aggiunta del nome della libreria client nella configurazione del contenitore di moduli adattivi](/help/forms/assets/client-library-category-name.png)
+
+In questo caso, il nome della libreria client viene fornito come `customfunctionsdemo` nel `.content.xml` file.
 
 Per utilizzare un gestore degli errori personalizzato utilizzando **[!UICONTROL Servizio di richiamo dell’editor di regole]** azione:
 
@@ -295,9 +314,7 @@ Per utilizzare un gestore degli errori personalizzato utilizzando **[!UICONTROL 
 
 ![aggiungere un gestore degli errori personalizzato in un modulo per gestire le risposte di errore](/help/forms/assets/custom-error-handler.png)
 
-
 Come risultato di questa regola, i valori immessi per **ID animale domestico** verifica la convalida per **Nome animale domestico** utilizzo di un servizio esterno richiamato dall’endpoint REST. Se i criteri di convalida basati sull’origine dati non riescono, i messaggi di errore vengono visualizzati a livello di campo.
-
 
 ![aggiungere un gestore degli errori personalizzato in un modulo per gestire le risposte di errore](/help/forms/assets/custom-error-handler-message.png)
 

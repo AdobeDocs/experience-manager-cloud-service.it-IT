@@ -2,10 +2,10 @@
 title: Modelli per frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuti strutturati.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
 workflow-type: tm+mt
-source-wordcount: '2898'
-ht-degree: 88%
+source-wordcount: '2937'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,12 @@ Per utilizzare i modelli di frammento di contenuto:
    >
    >Se l’[utilizzo di modelli per frammenti di contenuto non è stato abilitato](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’opzione **Crea** non sarà disponibile.
 
-1. Specifica il **Titolo modello**. Puoi anche aggiungere **Tag**, **Descrizione** e, se necessario, selezionare **Abilita modello** per [abilitare il modello](#enabling-disabling-a-content-fragment-model).
+1. Specifica il **Titolo modello**.
+Puoi anche definire varie proprietà; ad esempio, aggiungi **Tag**, a **Descrizione**, e seleziona **Abilita modello** a [abilita il modello](#enabling-disabling-a-content-fragment-model) se necessario.
+
+   >[!NOTE]
+   >
+   >Per ulteriori informazioni su **Pattern URL anteprima predefinito** vedi [Modello per frammenti di contenuto - Proprietà](#content-fragment-model-properties).
 
    ![titolo e descrizione](assets/cfm-models-02.png)
 
@@ -56,7 +61,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
    >[!NOTE]
    >
-   >Quando un campo come **Obbligatorio**, il **Etichetta** indicato nel riquadro a sinistra è contrassegnato con un asterisco (**&#42;**).
+   >Quando un campo è **obbligatorio**, l’**Etichetta** indicata nel riquadro a sinistra è contrassegnata da un asterisco (**&#42;**).
 
 ![proprietà](assets/cfm-models-03.png)
 
@@ -83,7 +88,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
 1. **Per rimuovere un campo**
 
-   Seleziona il campo richiesto, quindi tocca o fai clic sull’icona del cestino. Ti viene chiesto di confermare l’azione.
+   Seleziona il campo richiesto, quindi tocca o fai clic sull’icona del cestino. Viene richiesto di confermare l’azione.
 
    ![rimuovere](assets/cfm-models-06.png)
 
@@ -122,7 +127,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 * **Oggetto JSON**
    * Consente all’autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
       * Questo fa sì che AEM possa memorizzare direttamente JSON con copia e incolla da un altro servizio.
-      * Il JSON viene trasmesso e prodotto come JSON in GraphQL.
+      * Il codice JSON viene trasmesso e riprodotto come codice JSON in GraphQL.
       * Include l’evidenziazione della sintassi JSON, il completamento automatico e l’evidenziazione degli errori nell’editor dei frammenti di contenuto.
 * **Segnaposto scheda**
    * Consente l’introduzione di schede da utilizzare per la modifica del contenuto dei frammenti di contenuto.
@@ -145,10 +150,10 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
   >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering come** 
-Consente varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questa proprietà ti consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze.
+Sono disponibili varie opzioni per realizzare o riprodurre il campo in un frammento. Spesso questa proprietà ti consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze.
 
-* **Etichetta campo**
-Inserimento di un **Etichetta campo** genererà automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente se necessario.
+* **Etichetta campo** 
+Se si inserisce un’**Etichetta campo** verrà generato automaticamente un **Nome proprietà** che, se necessario, potrà essere aggiornato manualmente.
 
 * **Convalida**
 La convalida di base è disponibile tramite meccanismi quali la proprietà **Obbligatorio**. Alcuni tipi di dati dispongono di campi di convalida aggiuntivi. Vedi [Convalida](#validation) per ulteriori dettagli.
@@ -314,6 +319,12 @@ Puoi modificare le **Proprietà** di un modello per frammenti di contenuto:
    * **Tag**
    * **Descrizione**
    * **Carica immagine**
+   * **Pattern URL anteprima predefinito**
+
+     >[!NOTE]
+     >
+     >Viene utilizzato solo da *nuovo* Editor frammento di contenuto. Consulta [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) per ulteriori informazioni.
+
 
 ## Abilitazione o disabilitazione di un modello per frammenti di contenuto {#enabling-disabling-a-content-fragment-model}
 
@@ -407,7 +418,7 @@ Per eliminare un modello per frammenti di contenuto:
 
    >[!NOTE]
    >
-   >Se si fa riferimento al modello, viene visualizzato un avviso. Agisci di conseguenza.
+   >Se ci sono riferimenti al modello, viene visualizzata un’avvertenza. Agisci di conseguenza.
 
 ## Pubblicazione di un modello per frammenti di contenuto {#publishing-a-content-fragment-model}
 
@@ -419,11 +430,11 @@ Per pubblicare un modello per frammenti di contenuto:
 
 1. Passa alla cartella contenente il modello per frammenti di contenuto.
 1. Seleziona il modello e poi **Pubblica** dalla barra degli strumenti.
-Lo stato di pubblicazione è indicato nella console.
+Lo stato di pubblicazione viene indicato nella console.
 
    >[!NOTE]
    >
-   >Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, un elenco di selezione lo indica e il modello viene pubblicato con il frammento.
+   >Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo viene segnalato in un elenco di selezione e il modello viene pubblicato con il frammento.
 
 ## Annullamento della pubblicazione di un modello per frammenti di contenuto {#unpublishing-a-content-fragment-model}
 
@@ -435,7 +446,7 @@ Per annullare la pubblicazione di un modello per frammenti di contenuto:
 
 1. Passa alla cartella contenente il modello per frammenti di contenuto.
 1. Seleziona il modello e poi **Annulla pubblicazione** dalla barra degli strumenti.
-Lo stato di pubblicazione è indicato nella console.
+Lo stato di pubblicazione viene indicato nella console.
 
 Se tenti di annullare la pubblicazione di un modello attualmente utilizzato da uno o più frammenti, un avviso di errore segnala quanto segue:
 
@@ -487,7 +498,7 @@ Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
 
    * È possibile **Sbloccare** un modello per abilitare le modifiche.
 
-     Se si seleziona **Sblocca**, viene visualizzato un avviso ed è necessario confermare **Sblocca** azione:
+     Se selezioni **Sblocca** viene mostrata un’avvertenza in cui ti si chiede di confermare l’azione **Sblocca**:
      ![Messaggio relativo allo sblocco del modello per frammenti di contenuto](assets/cfm-model-unlock-message.png)
 
      Puoi quindi aprire il modello per la modifica.
@@ -497,7 +508,7 @@ Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
 
 * Editor modelli
 
-   * Quando aprite un modello bloccato, viene visualizzato un avviso e vengono visualizzate tre azioni: **Annulla**, **Visualizza sola lettura**, **Modifica**:
+   * Quando apri un modello bloccato, viene visualizzato un avviso con tre possibili azioni: **Annulla**, **Visualizza sola lettura**, **Modifica**:
 
      ![Messaggio relativo alla visualizzazione di un modello per frammenti di contenuto bloccato](assets/cfm-model-editor-lock-message.png)
 

@@ -2,10 +2,10 @@
 title: Percorso della tua prima esperienza con AEM Headless
 description: In questa parte del Percorso per sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 96%
+source-wordcount: '1991'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Separato da AEM, assicurati anche di disporre di una configurazione dell’ambie
 
 ### Definizione di modelli di contenuto e API {#defining-models}
 
-Vuoi creare un’esperienza coerente e gestire campagne personalizzate tra i canali, in modo da poter esaminare ogni singolo canale e superficie come una propria struttura di contenuti distinta a cui distribuire. Tuttavia, mantenere un proprio modello di contenuto per ogni canale è difficile.
+Vuoi creare un’esperienza coerente e gestire campagne personalizzate tra i canali, in modo da poter esaminare ogni singolo canale e superficie come una propria struttura di contenuti distinta a cui distribuire. Tuttavia, un modello di contenuto a disposizione per ogni canale è difficile da mantenere.
 
 È invece necessario considerare il modo in cui il contenuto su superfici diverse è correlato in base a principi di organizzazione quali gerarchie di marchi e prodotti, categorie di beni o superfici o passaggi nel percorso del cliente. Ad esempio, se disponi di un insieme di superfici che supportano un marchio specifico di auto prodotte, potresti voler iniziare con un modello di contenuto per informazioni generali che sarebbe vero per l’intera auto e poi avere elementi più specifici come il contenuto necessario da quando l’auto si avvia a quando ci sono problemi di servizio. Un modello di questo tipo applicherà l’ereditarietà del contenuto generale del marchio automobilistico, consentendo al tempo stesso turni in base al contesto specifico necessario. Aiuta anche nella gestione futura degli aggiornamenti di questo contenuto in quanto puoi applicare il controllo in base a ruoli come l’addetto marketing o il responsabile prodotto per l’intero marchio automobilistico rispetto a un autore responsabile dell’esperienza di “avvio automobile”.
 
@@ -76,7 +76,7 @@ Gli autori e le autrici dei contenuti creano contenuti in base ai modelli di con
 
 Prima di iniziare a utilizzare le funzionalità headless in AEM, assicurati che tutte le funzioni richieste siano abilitate. Questa sezione descrive i requisiti necessari. I passi effettivi per eseguire questi passaggi sono descritti più avanti nel [Percorso per sviluppatori headless di AEM.](#overview.md)
 
-Facoltativamente puoi anche vedere [risorse aggiuntive](#additional-resources) per ulteriori informazioni sui singoli argomenti.
+Facoltativamente, per ulteriori informazioni sui singolo argomenti, puoi anche consultare le [risorse aggiuntive](#additional-resources).
 
 ### Configurazione {#configuration}
 
@@ -86,7 +86,7 @@ Facoltativamente puoi anche vedere [risorse aggiuntive](#additional-resources) p
 
 ## Implementazione della prima app AEM headless
 
-Questa è una panoramica di ciò che è necessario per implementare la prima app headless utilizzando AEM per distribuire i contenuti. Le modalità di esecuzione di questi passaggi saranno descritte in dettaglio nelle parti successive del Percorso per sviluppatori headless.
+Questa è una panoramica di ciò che è necessario per implementare la prima app headless utilizzando AEM per distribuire i contenuti. Come eseguire questi passaggi sarà descritto in dettaglio nelle parti successive del percorso per sviluppatori di contenuti headless.
 
 1. Creare modelli di frammenti di contenuto
 1. Creare frammenti di contenuto
@@ -106,12 +106,12 @@ Un progetto headless non solo ha successo grazie alla tecnologia implementata, m
 * Raggruppare contenuti simili in una cartella.
    * È più probabile che un autore o un’autrice di contenuti copi e incolli contenuti esistenti per creare nuovi contenuti. Pertanto, farlo fare nella stessa cartella rende tutto più efficiente.
    * AEM consente di impostare i modelli per cartella in modo che il pulsante **Crea nuovo** mostrerà solo i modelli supportati in tale posizione.
-* La creazione di nuovi frammenti di contenuto nell’editor frammenti di contenuto in linea può essere semplificata se la cartella principale è impostata nel modello. Il professionista non deve quindi scegliere una posizione, ma deve solo fornire un nome e può iniziare a modificare il nuovo riferimento.
+* La creazione di nuovi frammenti di contenuto nell’editor frammenti di contenuto in linea può essere semplificata se la cartella principale è impostata nel modello. Quindi il professionista o la professionista non deve scegliere una posizione, ma deve solo fornire un nome e può iniziare a modificare il nuovo riferimento.
 
 ### Creazione di contenuti {#authoring}
 
-* Per le versioni del contenuto specifiche del canale, è consigliabile utilizzare varianti di frammento di contenuto. Le varianti vengono sincronizzate con lo schema del contenuto per semplificare la gestione delle modifiche al contenuto.
-* Invitare altri produttori di contenuti a esaminare i contenuti e fornire feedback con annotazioni e commenti, disponibili nell’editor dei frammenti di contenuto e a livello globale tra i vari frammenti nell’Admin Console dei frammenti di contenuto.
+* Per le versioni del contenuto specifiche del canale, è consigliabile utilizzare varianti di frammento di contenuto. Le varianti vengono sincronizzate con il contenuto principale per semplificare la gestione delle modifiche al contenuto.
+* Invita altri produttori di contenuti a rivedere i contenuti e fornire feedback.
 * Mantenere le cose in movimento con il minor numero possibile di elementi obbligatori. Gli elementi obbligatori possono bloccare il flusso di lavoro.
 
 ### Creazione di contenuti globali {#localization}
@@ -149,6 +149,6 @@ Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): questo progetto GitHub include applicazioni di esempio che evidenziano le API GraphQL di AEM.
 * [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md): panoramica completa dell’architettura AEM
 * [Configurazione headless](/help/headless/introduction.md#getting-started): introduzione rapida alle funzioni AEM headless per gli utenti già esperti di AEM.
-* [Creare modelli di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md): documentazione tecnica sui modelli per frammenti di contenuto
-* [Creare frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md): documentazione tecnica sui frammenti di contenuto
+* [Creare modelli di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md): documentazione tecnica sui modelli per frammenti di contenuto
+* [Creare frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments): documentazione tecnica sui frammenti di contenuto
 * [Query del contenuto con GraphQL](/help/headless/graphql-api/content-fragments.md): documentazione tecnica sull’API GraphQL

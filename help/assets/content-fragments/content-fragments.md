@@ -2,10 +2,10 @@
 title: Utilizzo di frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri in che modo i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring e la distribuzione headless. Inoltre, come possono essere utilizzati insieme a MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 88%
+source-wordcount: '2216'
+ht-degree: 86%
 
 ---
 
@@ -34,7 +34,11 @@ I frammenti di contenuto possono essere consegnati anche in formato JSON, utiliz
 
 >[!NOTE]
 >
->I frammenti di contenuto sono memorizzati come **Risorse**. Ora sono gestite principalmente con **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** , anche se possono ancora essere gestite dalla **Risorse** console. Questa sezione riguarda la gestione da **Risorse** console.
+>I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
+>
+>Ora sono gestite principalmente con **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** , anche se possono ancora essere gestite dalla **Risorse** console. Questa sezione riguarda la gestione da **Risorse** console.
+>
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
 
 Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, configurazione, manutenzione e utilizzo dei frammenti di contenuto:
 
@@ -114,7 +118,7 @@ Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, tali
 
 Quando si accede tramite il **Risorse** console puoi utilizzare MSM e creare Live Copy per i tuoi frammenti.
 
-Per maggiori dettagli vedi [Riutilizzare i frammenti di contenuto con MSM per le risorse](/help/assets/reuse-assets-using-msm.md).
+Per maggiori dettagli vedi [Riutilizzare i frammenti di contenuto con MSM per le risorse](/help/assets/reuse-assets-using-msm.md). Ciò consente [ereditarietà](/help/assets/content-fragments/content-fragments-variations.md#inheritance) sia per le varianti che per i singoli campi dei frammenti.
 
 >[!CAUTION]
 >
@@ -142,7 +146,7 @@ I frammenti di contenuto sono una struttura di contenuto che:
 * può [contenere immagini o essere connessa ad esse](#fragments-with-visual-assets);
 * può utilizzare [contenuto intermedio](#in-between-content-when-page-authoring-with-content-fragments) se referenziato in una pagina;
 
-* È indipendente dal meccanismo di consegna (ovvero pagina, canale).
+* è indipendente dal meccanismo di consegna (ad esempio, pagina, canale).
 
 ### Frammenti con risorse visive {#fragments-with-visual-assets}
 
@@ -289,7 +293,7 @@ Per utilizzare i frammenti di contenuto nell’authoring delle pagine è inoltre
 
    * Essenziale per la distribuzione del frammento in formato HTML e/o JSON.
    * Obbligatorio per [fare riferimento al frammento in una pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Responsabile del layout e della distribuzione di un frammento, ovvero dei canali.
+   * Responsabile del layout e della distribuzione di un frammento, ovvero i canali.
    * I frammenti devono disporre di uno o più componenti dedicati per definire il layout e fornire alcuni o tutti gli elementi/varianti e i contenuti associati.
    * Quando si trascina un frammento su una pagina in fase di authoring, il componente richiesto viene associato automaticamente.
 

@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 88%
+source-wordcount: '1729'
+ht-degree: 84%
 
 ---
 
@@ -44,7 +44,7 @@ Dalla console **Frammenti di contenuto**, puoi anche pubblicare nel **Servizio d
 
 ### Accesso {#signing-in}
 
-Come per la maggior parte dei sistemi, è necessario accedere. In qualità di autore, ti vengono forniti:
+Come per la maggior parte dei sistemi, è necessario effettuare l’accesso. In qualità di autore, ricevi:
 
 * Nome utente (account)
 * Password
@@ -56,7 +56,7 @@ Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso 
 
 La prima volta che esegui l’accesso a una piccola esercitazione online, verranno evidenziate alcune delle funzioni principali dell’interfaccia utente.
 
-È quindi possibile utilizzare il pannello di navigazione per accedere alle aree chiave di AEM. Per i frammenti di contenuto, utilizza **Frammenti di contenuto** (per alcune azioni utilizzerai anche la **Risorse** console).
+È quindi possibile utilizzare il pannello di navigazione per accedere alle aree chiave di AEM. Per i frammenti di contenuto viene utilizzata la console **Frammenti di contenuto** (per alcune azioni puoi usare anche la console **Risorse**).
 
 Per aprire il pannello di navigazione, seleziona l’icona Adobe in alto a sinistra e l’icona a forma di piccola bussola.
 
@@ -71,7 +71,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 Nella console puoi selezionare le cartelle nel pannello a sinistra per andare al frammento di contenuto. Puoi anche filtrare e/o eseguire ricerche.
 
-![Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
+![Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### Azioni, selezione, visualizzazione {#actions-selecting-viewing}
 
@@ -121,7 +121,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Authoring dei frammenti di contenuto {#authoring-content-fragments}
 
-Quindi, questa è stata una rapida introduzione all&#39;Interfaccia Utente (UI) dell&#39;AEM, ma si spera di avere avuto la possibilità di provarlo. Ora passiamo a quello che ti interessa di più: frammenti di contenuto per headless.
+Questa è stata una rapida introduzione all’interfaccia utente AEM, ma dovresti aver avuto l’occasione di provarla. Ora passiamo a quello che ti interessa di più: frammenti di contenuto per headless.
 
 Dovremo passare dall’inizio alla fine delle operazioni, ma l’istanza potrebbe avere già cartelle e/o frammenti creati, che potrebbero trovarsi in posizioni diverse. I principi sono gli stessi.
 
@@ -141,7 +141,7 @@ Viene visualizzata una finestra di dialogo in cui puoi inserire i dettagli, quin
 
 #### Utilizzo di percorsi e tag per limitare i modelli per frammenti di contenuto disponibili nella cartella {#tags-paths-for-models-in-folder}
 
-Questa sezione è leggermente più avanzata. Non ne hai veramente bisogno se stai solo iniziando e provando le cose, ma è *molto* utile quando hai molti frammenti. Quindi è bene sapere su - anche se non lo si utilizza ancora abbastanza.
+Questa sezione è leggermente più avanzata. Non ne hai bisogno se hai appena iniziato a fare delle prove, ma è *molto* utile quando sono disponibili divesi frammenti. Quindi è bene conoscerla, anche se non la stai ancora usando.
 
 L’architect di contenuti avrà creato tutti i modelli di frammento di contenuto necessari per il progetto corrente e forse anche altri progetti. Per semplificare le cose a te stesso e agli altri autori, puoi limitare l’elenco dei modelli disponibili per una cartella specifica.
 
@@ -183,43 +183,44 @@ Specifica:
 
 Quindi conferma con **Crea** o con **Crea e apri**.
 
-<!--
-Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
-
-![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
-
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
-
-![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
-
-After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
-
-![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-Confirm with **Create** and you can then **Open** your fragment in the editor.
--->
-
 ### Modifica di un frammento {#editing-fragment}
 
 È possibile aprire un frammento subito dopo averlo creato, oppure selezionandolo dalla console Frammenti di contenuto (anche dalla console Risorse).
 
-La prima volta che l’editor viene aperto, viene visualizzato quanto segue:
+>[!NOTE]
+>
+>I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
+>
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto.
+>
+>* Il nuovo editor, accessibile principalmente da **Frammenti di contenuto** console.
+>* L’editor originale, accessibile principalmente da **Risorse** console.
 
-* Un elenco di icone a sinistra permette di accedere a varie aree di funzionalità. L’editor si apre nella scheda **Variazioni**, in questo punto avviene la maggior parte delle modifiche. Potresti anche essere interessato alle schede **Annotazioni** e **Metadati**.
+Quando l’editor si apre per la prima volta, visualizzi:
 
-* Intestazione con informazioni sul frammento e accesso a varie azioni.
+* barra degli strumenti superiore: per informazioni chiave e azioni
+   * un collegamento alla Console Frammenti di contenuto (icona Home)
+   * informazioni sul modello e sulla cartella
+   * collegamenti a Anteprima; se per il modello è configurato il Pattern URL di anteprima predefinito
+   * Pubblicare e annullare la pubblicazione delle azioni
+   * un&#39;opzione per mostrare tutto **Riferimenti padre** (icona collegamento)
+   * il frammento **Stato**, e le ultime informazioni salvate
+   * un pulsante per passare all’editor originale (basato su Assets)
+* pannello a sinistra: mostra **Varianti** per il frammento di contenuto e i relativi **Campi**:
+   * questi collegamenti possono essere utilizzati per navigare nella struttura dei frammenti di contenuto
+* pannello a destra: presenta schede che mostrano le proprietà (metadati) e i tag, informazioni sulla cronologia delle versioni e informazioni relative a eventuali copie per lingua
+   * nel **Proprietà** è possibile aggiornare la scheda **Titolo** e **Descrizione** per il frammento, oppure **Variante**
+* pannello centrale: mostra i campi e il contenuto effettivi della variante selezionata
+   * consente di modificare il contenuto
+   * se **Segnaposto scheda** I campi sono definiti all&#39;interno del modello che vengono visualizzati qui e possono essere utilizzati per la navigazione
 
-* L’area di modifica principale dipende dal modello utilizzato per creare il frammento.
+Ad esempio, un frammento può:
 
-Come esempi:
+* Richiedono più informazioni, alcune con un tipo specifico. Come scoprirai andando avanti nel tuo percorso, i riferimenti sono fondamentali per i contenuti headless.
 
-* Frammento che richiede solo più informazioni, alcune con un tipo specifico. Per i contenuti headless, i riferimenti sono fondamentali (ne saprai di più avanti nel tuo percorso).
+* Consente di scrivere una lunga sezione di testo. Qui sono disponibili opzioni aggiuntive per la gestione e la formattazione del testo. Puoi anche aprire i singoli campi di testo in un editor a schermo intero (utilizzando l’icona a forma di piccolo schermo a destra)
 
-  ![Editor frammento di contenuto - Frammento personale](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
-
-* Frammento che consente di scrivere una lunga sezione di testo. Qui sono disponibili opzioni aggiuntive per la gestione e la formattazione del testo. Puoi anche aprire i singoli campi di testo in un editor a schermo intero (utilizzando l’icona a forma di piccolo schermo a destra)
-
-  ![Editor frammento di contenuto - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+![Editor frammento di contenuto - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
@@ -233,32 +234,18 @@ Conferma gli aggiornamenti con **Salva** o **Salva e chiudi**.
 >
 >Per ulteriori informazioni, consulta Varianti - Authoring di frammenti di contenuto.
 
-#### Di cosa non deve (probabilmente) preoccuparsi {#what-you-probably-do-not-need-to-worry-about}
+#### Quello di cui (probabilmente) non devi preoccuparti {#what-you-probably-do-not-need-to-worry-about}
 
-Questa potrebbe sembrare una sezione un po’ strana, ma non appena apri l’Editor frammento di contenuto e inizi a esplorare puoi vedere diverse opzioni che (probabilmente) non si applicano al tuo percorso headless come Autore di contenuti. Questo è solo un rapido resoconto di ciò che dovresti essere in grado di ignorare nel contesto headless:
+OK, questa potrebbe sembrare una sezione leggermente ambigua, ma appena aperto l’Editor frammento di contenuto e iniziato ad esplorarlo, visualizzerai diverse opzioni che (probabilmente) non sono applicabili al tuo percorso headless come Autore del contenuto. Questo è solo un rapido resoconto di ciò che dovresti essere in grado di ignorare nel contesto headless:
 
 * **Modelli per frammenti di contenuto**
 
-  Il nome del modello di frammento di contenuto verrà visualizzato nella parte superiore dell’editor, direttamente sotto il nome del frammento. Questo è anche un collegamento che ti porta all’editor modelli.
+  Il nome del modello per frammenti di contenuto viene visualizzato nel pannello di destra dell’editor. Questo è anche un collegamento che ti porta all’editor modelli.
 I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di contenuto quando definiscono la struttura utilizzata. Tuttavia, la creazione e la modifica di tali elementi è (in genere) responsabilità di un’altra persona, l’architect di contenuti.
 
   >[!NOTE]
   >
   >Per ulteriori informazioni, consulta il Percorso Architect di contenuti AEM headless.
-
-* **Contenuto associato**
-
-  Questo è abbastanza ovvio in quanto è una scheda nell&#39;editor.
-
-  I frammenti di contenuto sono disponibili in AEM in diverse versioni. Originariamente erano disponibili per l’uso “tradizionale” durante l’authoring delle pagine....e sono ancora utilizzati in questo contesto. Questo può comportare l’associazione di risorse (ad esempio immagini) che, pur non essendo incorporate nel frammento, devono essere disponibili all’autore durante la creazione di una pagina.
-
-* **Anteprima**
-
-  Questa è un’altra scheda nell’editor e fornisce una vista tecnica, destinata principalmente agli sviluppatori.
-
-* **Aggiorna i riferimenti di pagina**
-
-  Questa azione è disponibile dal **...** (puntini di sospensione). Non è interessante per gli autori headless in quanto si riferisce all’authoring delle pagine.
 
 ### Pubblicazione {#publishing}
 
@@ -296,15 +283,15 @@ Ora che hai imparato le nozioni di base, il passo successivo è [Scopri come uti
 
    * [Selettore della barra](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-* [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Gestione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [Gestione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md)
 
-   * [Applica la configurazione alla cartella Risorse](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [Applica la configurazione alla cartella Risorse](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-   * [Creazione di un frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Creazione di un frammento di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Varianti - Authoring di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [Authoring dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * Pubblicazione
 
@@ -316,15 +303,17 @@ Ora che hai imparato le nozioni di base, il passo successivo è [Scopri come uti
 
       * Dalla console **Frammenti di contenuto**
 
-         * [Pubblicazione e anteprima di un frammento di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+         * [Pubblicazione e anteprima di un frammento di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Modelli per frammenti di contenuto - Tipi di dati](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [Modelli per frammenti di contenuto - Tipi di dati](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [Modelli per frammenti di contenuto - Proprietà](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [Modelli per frammenti di contenuto - Proprietà](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-      * [Modelli per frammenti di contenuto - Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Modelli per frammenti di contenuto - Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+
+* [Frammenti di contenuto - editor originale, dalla console Assets](/help/assets/content-fragments/content-fragments-variations.md)
 
 * Guide introduttive
    * [Creazione di una configurazione headless per la cartella delle risorse](/help/headless/setup/create-assets-folder.md)

@@ -2,7 +2,7 @@
 title: Scelte rapide da tastiera per le console
 description: Risparmia tempo durante l’authoring utilizzando queste scelte rapide da tastiera
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 69%
@@ -84,4 +84,4 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in part
 
 ## Scelte rapide da tastiera per la Console Frammenti di contenuto {#keyboard-shortcuts-for-the-content-fragments-console}
 
-Alcune scelte rapide da tastiera sono applicabili alla [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+Alcune scelte rapide da tastiera sono applicabili alla [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)

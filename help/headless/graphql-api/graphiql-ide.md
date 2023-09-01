@@ -3,10 +3,10 @@ title: Utilizzo dell’IDE GraphiQL in AEM
 description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Un’implementazione dell’IDE [GraphiQL](https://graphql.org/learn/serving-ove
 >Nelle versioni precedenti, era necessario un pacchetto per installare l’IDE GraphiQL. Se installato, ora è possibile rimuoverlo.
 
 >[!NOTE]
->Prima di utilizzare l’IDE GraphiQL, devi avere [configurato gli endpoint](/help/headless/graphql-api/graphql-endpoint.md) nel [browser delle configurazioni](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
+>Prima di utilizzare l’IDE GraphiQL, devi avere [configurato gli endpoint](/help/headless/graphql-api/graphql-endpoint.md) nel [browser delle configurazioni](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
 Il **GraphiQL** Questo strumento consente di testare ed eseguire il debug delle query GraphQL consentendo di:
 * selezionare l’**Endpoint** appropriato per la configurazione Sites da utilizzare per le query;
@@ -80,7 +80,7 @@ La query viene visualizzata nel pannello dell’editor. Apporta le modifiche nec
 
 Puoi eseguire immediatamente una nuova query oppure caricare ed eseguire una query persistente. Per caricare una query persistente, selezionala dall’elenco: la query viene visualizzata nel pannello dell’editor.
 
-In entrambi i casi, la query visualizzata nel pannello dell’editor è quella eseguita quando:
+In entrambi i casi, la query visualizzata nel pannello dell’editor è quella che verrà eseguita quando:
 
 * tocchi o fai clic sull’icona **Esegui query**;
 * utilizzi la scelta rapida di tastiera `Control-Enter`

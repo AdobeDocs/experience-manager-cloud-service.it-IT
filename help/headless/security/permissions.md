@@ -3,10 +3,10 @@ title: Considerazioni sulle autorizzazioni per contenuti headless
 description: Scopri diverse considerazioni su autorizzazioni e ACL per un’implementazione headless con Adobe Experience Manager. Comprendi i diversi utenti tipo e i potenziali livelli di autorizzazione necessari sia per gli ambienti Author che per quelli Publish.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,9 +52,9 @@ Se utilizzi IMS per l’iscrizione al gruppo, aggiungi i gruppi IMS appropriati 
 
 È meglio non modificare direttamente le autorizzazioni di un gruppo preconfigurato. Al contrario, puoi anche creare i tuoi gruppi personalizzati modellati sulle autorizzazioni del gruppo **Utenti DAM** e ulteriori restrizioni all’accesso a diverse **cartelle** in AEM Assets.
 
-Per autorizzazioni più granulari, utilizza **Autorizzazioni** in AEM e aggiorna il percorso da `/content/dam` a un percorso più specifico, ovvero `/content/dam/mycontentfragments`.
+Per autorizzazioni più dettagliate, utilizza la console **Autorizzazioni** in AEM e aggiorna il percorso da `/content/dam` a un percorso più specifico, ovvero, `/content/dam/mycontentfragments`.
 
-Potrebbe essere opportuno concedere a questo gruppo di utenti le autorizzazioni necessarie per creare e modificare frammenti di contenuto, ma non per eliminarli. Per rivedere e assegnare le autorizzazioni per la modifica, ma non per eliminarla, consulta [Frammenti di contenuto - Considerazioni sull’eliminazione](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+Potrebbe essere opportuno concedere a questo gruppo di utenti le autorizzazioni necessarie per creare e modificare frammenti di contenuto, ma non per eliminarli. Per rivedere e assegnare le autorizzazioni per la modifica, ma non per eliminarla, consulta [Frammenti di contenuto - Considerazioni sull’eliminazione](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 ### Editor modelli
 

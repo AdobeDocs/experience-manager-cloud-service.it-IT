@@ -2,10 +2,10 @@
 title: Guida introduttiva ad AEM headless as a Cloud Service
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3080'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -82,18 +82,18 @@ I Frammenti di contenuto contengono contenuto strutturato e possono essere conse
 
 Per modificare il contenuto senza problemi, AEM offre due solide API.
 
-* L’API di GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
+* L’API GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
 * L’API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
 
-Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure vedi [risorse aggiuntive](#additional-resources) per ulteriore documentazione, vedere la sezione seguente.
+Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure consulta la sezione seguente sulle [risorse aggiuntive](#additional-resources) per ulteriore documentazione.
 
 ## Livelli di integrazione headless {#integration-levels}
 
 AEM supporta sia i modelli di CMS full headless che quelli tradizionali full stack o headful. Tuttavia AEM offre non solo queste due opzioni esclusive, ma anche la possibilità di supportare modelli ibridi che combinano i vantaggi di entrambi, offrendo una flessibilità unica per il vostro progetto headless.
 
-Per garantire la tua comprensione dei concetti headless, questo Percorso per sviluppatori AEM headless si concentra sul modello headless puro per farti iniziare il prima possibile senza codifica in AEM.
+Al fine di garantire la comprensione dei concetti headless, questo Percorso per sviluppatori headless di AEM si concentra sul modello headless puro per consentirti di iniziare a lavorare il prima possibile senza conoscere il codice in AEM.
 
-Tuttavia, è necessario essere consapevoli delle possibilità ibride aggiuntive disponibili una volta comprese le caratteristiche di AEM headless. Questi casi sono indicati di seguito perché possiate prenderne visione. Al termine del percorso, riceverai informazioni più dettagliate su questi concetti, nel caso in cui il progetto richieda tale flessibilità.
+Tuttavia, è necessario essere consapevoli delle possibilità ibride aggiuntive disponibili una volta comprese le caratteristiche di AEM headless. Questi casi sono indicati di seguito perché possiate prenderne visione. Al termine del percorso, riceverai informazioni più dettagliate su questi concetti nel caso in cui sia necessaria tale flessibilità per il tuo progetto.
 
 ### È possibile già un utilizzo esterno del contenuto headless, ad esempio un’applicazione a pagina singola (SPA). {#already-have-a-spa}
 
@@ -145,7 +145,7 @@ Per ogni progetto riuscito è importante definire chiaramente non solo i requisi
 
 È importante disporre di un ambito chiaramente definito per il progetto. L’ambito informa i criteri di accettazione e consente di stabilire una definizione di completato.
 
-La prima domanda che dovete porre è “Cosa sto cercando di fare con AEM headless?” In generale, la risposta dovrebbe essere che in futuro si dispone o si disporrà di un’applicazione Experience creata con i propri strumenti di sviluppo e non con l’AEM. Questa applicazione di esperienza potrebbe essere un’app mobile, un sito web o qualsiasi altra applicazione di esperienza rivolta ai clienti e alle clienti finali. L’obiettivo nell’utilizzo di AEM headless è alimentare l’applicazione di esperienza con contenuti creati, memorizzati e gestiti in AEM con API all’avanguardia che richiamerebbero AEM headless per recuperare contenuti o persino contenuti completamente CRUD direttamente dall’applicazione di esperienza. Se questo non è quello che stai cercando di fare, probabilmente vorrai [tornare indietro per consultare la documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) e trovare la sezione che meglio si adatta a ciò che desideri realizzare.
+La prima domanda che dovete porre è “Cosa sto cercando di fare con AEM headless?” In generale, la risposta dovrebbe essere la disponibilità presente o futura di un’applicazione di esperienza creata con i tuoi strumenti di sviluppo e non con AEM. Questa applicazione di esperienza potrebbe essere un’app mobile, un sito web o qualsiasi altra applicazione di esperienza rivolta ai clienti e alle clienti finali. L’obiettivo nell’utilizzo di AEM headless è alimentare l’applicazione di esperienza con contenuti creati, memorizzati e gestiti in AEM con API all’avanguardia che richiamerebbero AEM headless per recuperare contenuti o persino contenuti completamente CRUD direttamente dall’applicazione di esperienza. Se questo non è quello che stai cercando di fare, probabilmente vorrai [tornare indietro per consultare la documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) e trovare la sezione che meglio si adatta a ciò che desideri realizzare.
 
 ### Ruoli e responsabilità {#roles-responsibilities}
 
@@ -166,7 +166,7 @@ L’amministratore deve essere l’utente che configura AEM e prepara l’ambien
 
 #### Autore del contenuto {#content-author}
 
-Gli autori dei contenuti creano e gestiscono i contenuti distribuiti in modo headless da AEM. Gli autori dei contenuti utilizzano funzioni di AEM come Frammenti di contenuto e la console Assets per gestirne i contenuti.
+Gli autori dei contenuti creano e gestiscono i contenuti distribuiti in modo headless da AEM. Gli autori dei contenuti utilizzano le funzioni dell’AEM, come l’editor dei frammenti di contenuto e diverse console, per gestire i contenuti.
 
 Gli autori dei contenuti devono tenere presenti le seguenti best practice.
 
@@ -179,9 +179,9 @@ Creare un piano su quali contenuti devono essere tradotti.
 * Hai bisogno di lingue diverse o anche di una lingua da adottare per caratteristiche regionali specifiche?
 * È necessario che contenuti multimediali complessi come immagini o video siano diversi per impostazioni internazionali diverse?
 
-Procedere con sicurezza sul flusso di lavoro di aggiornamento dei contenuti. Quale processo di approvazione deve supportare il sistema? È possibile utilizzare i flussi di lavoro dell’AEM per automatizzare questo processo?
+Procedere con sicurezza sul flusso di lavoro di aggiornamento dei contenuti. Quale processo di approvazione deve supportare il sistema? È possibile utilizzare i flussi di lavoro AEM per automatizzare questo processo?
 
-Tieni presente che [gerarchia dei contenuti](#content-hierarchy) può essere utilizzato per semplificare la traduzione.
+Tieni presente che la [gerarchia dei contenuti](#content-hierarchy) può essere sfruttata per semplificare la traduzione.
 
 Consulta la sezione [risorse aggiuntive](#additional-resources) per ulteriore documentazione sui flussi di lavoro AEM e gli strumenti di traduzione, compresi i collegamenti al Percorso di traduzione headless di AEM.
 
@@ -190,7 +190,7 @@ Consulta la sezione [risorse aggiuntive](#additional-resources) per ulteriore do
 La gerarchia delle cartelle può affrontare due problemi principali relativi alla gestione dei contenuti:
 
 * [Traduzione](#translation): AEM gestisce la traduzione dei contenuti mantenendone delle copie in cartelle specifiche delle impostazioni locali.
-* Organizzazione: le cartelle vengono utilizzate per definire una gerarchia di contenuti necessaria per supportare le esigenze di traduzione e gestire in modo logico i frammenti di contenuto.
+* Organizzazione: le cartelle vengono utilizzate per definire una gerarchia di contenuti necessaria per supportare le esigenze di traduzione e per gestire in modo logico i frammenti di contenuto.
 
 AEM consente una struttura dei contenuti flessibile e una gerarchia può essere arbitrariamente grande. Tuttavia è importante rendersi conto che eventuali modifiche nella struttura delle cartelle possono avere conseguenze indesiderate per le query esistenti che [si basano sul percorso del contenuto.](#developer) Pertanto, una gerarchia ben definita, chiaramente impostata in anticipo, può essere utile per gli autori dei contenuti.
 
@@ -199,7 +199,7 @@ Le cartelle possono anche essere limitate per consentire solo alcuni tipi di con
 * Impedisce agli autori di contenuti di creare contenuti che non appartengono alla cartella.
 * Ottimizza il processo di creazione dei contenuti filtrando i tipi di contenuto consentiti nella cartella durante la creazione per mostrare solo i tipi di contenuto validi.
 
-Creando una struttura di contenuto appropriata, diventa più semplice coordinare l’authoring dei contenuti headless tra i canali in modo da massimizzare il riutilizzo dei contenuti. L’utilizzo dei contenuti su più canali migliora notevolmente l’efficienza della produzione dei contenuti e la gestione delle modifiche.
+La creazione di una struttura di contenuti appropriata rende più facile il coordinamento dell’authoring di contenuti headless tra i diversi canali al fine di ottimizzare il riutilizzo dei contenuti. L’utilizzo dei contenuti su più canali migliora notevolmente l’efficienza della produzione dei contenuti e la gestione delle modifiche.
 
 ##### Stabilire buone convenzioni di denominazione {#naming-conventions}
 
@@ -289,8 +289,8 @@ Mentre si raccomanda di spostarsi nella parte successiva del percorso per lo svi
 * [Convenzioni di denominazione](/help/implementing/developing/introduction/naming-conventions.md) - Documentazione tecnica sulle restrizioni di denominazione delle pagine in AEM
 * [Gestore multisito e traduzione](/help/sites-cloud/administering/msm-and-translation.md) - Documentazione tecnica sulle potenti funzioni di traduzione di AEM
 * [Flussi di lavoro AEM](/help/sites-cloud/authoring/workflows/overview.md) - Documentazione tecnica su come automatizzare i flussi di lavoro in AEM
-* [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Documentazione tecnica per i frammenti di contenuto.
-* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Documentazione tecnica per i modelli per frammenti di contenuto.
+* [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) - Documentazione tecnica per i frammenti di contenuto.
+* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Documentazione tecnica per i modelli per frammenti di contenuto.
 * [Documentazione tecnica GraphQL](https://graphql.org) - Definizione di GraphQL (collegamento esterno)
 * [API GraphQL](/help/headless/graphql-api/content-fragments.md) - Documentazione tecnica che spiega come creare richieste di accesso e distribuire frammenti di contenuto
 * [API REST di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) - Documentazione tecnica che spiega come creare e modificare Frammenti di contenuto (e altre risorse)

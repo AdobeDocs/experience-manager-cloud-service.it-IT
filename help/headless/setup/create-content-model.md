@@ -2,10 +2,10 @@
 title: 'Creazione di modelli per frammenti di contenuto: configurazione headless'
 description: Definisci la struttura del contenuto da creare e distribuire utilizzando le funzionalità headless di AEM, mediante i modelli per frammenti di contenuto.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ Un architetto dell’informazione esegue tali attività solo occasionalmente, qu
 
 1. La modalità del modello appena creato dipende dalla selezione o meno dell’opzione **Abilita modello** durante la creazione dello stesso:
    * selezionato: il nuovo modello è già **abilitato**
-   * non selezionato: il nuovo modello viene creato in **Bozza** modalità
+   * non selezionato: il nuovo modello viene creato nella modalità **Bozza**
 
-1. Se non è già abilitato, il modello deve essere **Abilitato** per utilizzarlo.
+1. Se non è già abilitato, per poter essere utilizzato il modello deve essere **abilitato**.
    1. Seleziona il modello appena creato, quindi tocca o fai clic su **Abilita**.
 
       ![Abilitazione del modello](../assets/models-enable.png)
@@ -69,4 +69,4 @@ Dopo aver definito le strutture dei frammenti di contenuto mediante la creazione
 
 >[!TIP]
 >
->Per informazioni complete sui modelli per frammenti di contenuto, consulta la [documentazione sui modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+>Per informazioni complete sui modelli per frammenti di contenuto, consulta la [documentazione sui modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

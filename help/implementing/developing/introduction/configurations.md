@@ -2,10 +2,10 @@
 title: Configurazioni e browser di configurazione
 description: Scopri le configurazioni dell’AEM e come gestiscono le impostazioni dell’area di lavoro nell’AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -34,7 +34,7 @@ L’amministratore AEM e gli autori possono considerare le configurazioni come a
 È possibile creare configurazioni per molte funzioni diverse all’interno dell’AEM.
 
 * [Segmenti Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Modelli modificabili](/help/sites-cloud/authoring/features/templates.md)
 * varie configurazioni cloud
 
@@ -75,12 +75,12 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
    ![Creare la configurazione](assets/configuration-create.png)
 
    * Il **titolo** deve essere descrittivo.
-   * Il **Nome** diventa il nome del nodo nell’archivio.
-      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM.](naming-conventions.md)
+   * Il **nome** diventa il nome del nodo nell’archivio.
+      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](naming-conventions.md)
       * Se necessario è possibile modificarlo.
 1. Controlla il tipo di configurazioni che desideri consentire.
    * [Segmenti Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Modelli modificabili](/help/sites-cloud/authoring/features/templates.md)
    * varie configurazioni cloud
 1. Tocca o fai clic su **Crea**.
@@ -179,7 +179,7 @@ Per supportare questa funzione, la ricerca della configurazione in AEM ha un mec
    * Modificabile in fase di runtime da utenti con privilegi di configurazione
 1. `/conf/global`
    * Impostazioni globali del sistema
-   * Di solito impostazioni globali per l&#39;installazione
+   * In genere, impostazioni globali predefinite per l&#39;installazione
    * Impostato da un `admin` ruolo
    * Modificabile in fase di runtime da utenti con privilegi di configurazione
 1. `/apps`

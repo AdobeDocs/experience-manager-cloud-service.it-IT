@@ -1,17 +1,17 @@
 ---
-title: Come si collegano e inviano i dati del modulo adattivo a Microsoft&reg; Power Automate?
-description: Guida dettagliata alla connessione e all'invio di dati di moduli adattivi a Microsoft&reg; Power Automate.
-keywords: Adaptive Forms Microsoft Power Automate, invia dati Adaptive Forms a Microsoft Power Automate
+title: Integrare un modulo adattivo con Microsoft&reg; Power Automate
+description: Integrare un modulo adattivo con Microsoft&reg; Power Automate.
+hide: true
+hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1173'
 ht-degree: 4%
 
 ---
 
-
-# Collegare e inviare i dati del modulo adattivo a Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
+# Collegare un modulo adattivo con Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
 È possibile configurare un modulo adattivo per eseguire un flusso cloud di Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record al flusso cloud Power Automate per l’elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche di business sulla base dei dati acquisiti e automatizzare i flussi di lavoro dei clienti. Di seguito sono riportati alcuni esempi di cosa è possibile fare dopo l’integrazione di un modulo adattivo con Microsoft® Power Automate:
 
@@ -26,8 +26,8 @@ L’editor di Forms adattivo fornisce **Richiama un flusso Microsoft® Power Aut
 
 Per collegare un modulo adattivo con Microsoft® Power Automate sono necessari i seguenti elementi:
 
-* Licenza Microsoft® Power Automate Premium
-* Microsoft® [Flusso di Power Automate](https://docs.microsoft.com/en-us/power-automate/create-flow-solution) con `When an HTTP request is received` trigger per accettare i dati di invio del modulo adattivo
+* Licenza Microsoft® Power Automate Premium.
+* Microsoft® [Flusso di Power Automate](https://docs.microsoft.com/en-us/power-automate/create-flow-solution) con `When an HTTP request is received` attiva per accettare dati di invio modulo adattivo.
 * Un Experience Manager di utente con [Autore Forms](/help/forms/forms-groups-privileges-tasks.md) e [Amministratore Forms](/help/forms/forms-groups-privileges-tasks.md) privilegi
 * L’account utilizzato per connettersi a Microsoft® Power Automate è il proprietario del flusso Power Automate configurato per ricevere i dati dal modulo adattivo
 
@@ -80,7 +80,8 @@ Per collegare l’istanza Forms as a Cloud Service a Microsoft® Power Automate,
 1. Nell’istanza di authoring di AEM Forms, passa a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Generale]** > **[!UICONTROL Browser configurazioni]**.
 1. Il giorno **[!UICONTROL Browser configurazioni]** pagina, tocca **[!UICONTROL Crea]**.
 1. In **[!UICONTROL Crea configurazione]** , specifica un **[!UICONTROL Titolo]** per la configurazione, abilita **[!UICONTROL Configurazioni cloud]**, e tocca **[!UICONTROL Crea]**. Crea un contenitore di configurazione per archiviare i Cloud Service. Verificare che il nome della cartella non contenga spazio.
-1. Accedi a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®® Power Automate Dataverse]** e apri il contenitore di configurazione creato nel passaggio precedente.
+1. Accedi a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** e apri il contenitore di configurazione creato nel passaggio precedente.
+
 
    >[!NOTE]
    >
@@ -97,9 +98,11 @@ Per collegare l’istanza Forms as a Cloud Service a Microsoft® Power Automate,
 
 1. Accedi a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Servizio Flow di Microsoft®® Power Automate]** e apri il contenitore di configurazione creato nella sezione precedente.
 
+
    >[!NOTE]
    >
    Quando crei un modulo adattivo, specifica il nome del contenitore in **[!UICONTROL Contenitore configurazione]** campo.
+
 1. Nella pagina di configurazione, tocca **[!UICONTROL Crea]** per creare [!DNL Microsoft®® Power Automate Flow Service] in AEM Forms.
 1. Il giorno **[!UICONTROL Configurazione di Dataverse per Microsoft®® Power Automate]** , specificare **[!UICONTROL ID client]** (indicato anche come ID applicazione), **[!UICONTROL Segreto client]**, **[!UICONTROL URL OAuth]** e **[!UICONTROL URL ambiente dinamico]**. Utilizza l’ID client, il segreto client, l’URL OAuth e l’ID ambiente Dynamics. Utilizza l’opzione Endpoints nell’interfaccia utente dell’applicazione Microsoft® Azure Active Directory per trovare l’URL OAuth. Apri [I miei flussi](https://us.flow.microsoft.com) Tocca e collega I miei flussi per utilizzare l’ID elencato nell’URL come ID ambiente Dynamics.
 1. Tocca **[!UICONTROL Connetti]**. Se richiesto, accedere all&#39;account Microsoft® Azure. Tocca **[!UICONTROL Salva]**.

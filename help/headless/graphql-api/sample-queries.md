@@ -1,28 +1,28 @@
 ---
 title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
-description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
+description: Scopri come utilizzare GraphQL con AEM in modo da distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1752'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query {#learn-graphql-with-aem-sample-content-queries}
 
-Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
+Scopri come utilizzare GraphQL con AEM in modo da distribuire contenuti headless esplorando contenuti e query di esempio.
 
 >[!NOTE]
 >
 >Leggi questa pagina e quanto segue:
 >
->* [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments.md)
->* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+>* [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
+>* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 >* [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
 
-Per iniziare a utilizzare le query GraphQL e a come funzionano con i frammenti di contenuto AEM, è utile visualizzare alcuni esempi pratici.
+Come introduzione alle query GraphQL e per scoprire come funzionano con i frammenti di contenuto AEM, è utile visualizzare alcuni esempi pratici.
 
 Per assistenza, consulta:
 
@@ -41,7 +41,7 @@ Approfondisci queste query di esempio per le illustrazioni di creazione query, i
 
 >[!NOTE]
 >
->A seconda dell’istanza, puoi accedere direttamente al [Interfaccia GraphiQL inclusa con API GraphQL AEM](/help/headless/graphql-api/graphiql-ide.md) per l’invio e la verifica delle query.
+>A seconda dell’istanza, è possibile accedere direttamente all’[Interfaccia GraphiQL inclusa con API GraphQL AEM](/help/headless/graphql-api/graphiql-ide.md) per l’invio e la verifica delle query.
 >
 >Puoi accedere all’editor delle query da:
 >
@@ -158,7 +158,7 @@ Per recuperare tutte le informazioni su tutte le città, puoi utilizzare la segu
 }
 ```
 
-Quando viene eseguita, il sistema espande automaticamente la query per includere tutti i campi:
+Una volta eseguita, il sistema la espande automaticamente per includere tutti i campi:
 
 ```graphql
 {
@@ -230,7 +230,7 @@ Quando viene eseguita, il sistema espande automaticamente la query per includere
 
 ### Query di esempio: nomi di tutte le città {#sample-names-all-cities}
 
-Una query semplice per restituire `name`di tutte le voci nella `city`schema.
+Una query semplice che restituisce il `name` di tutte le voci dello schema `city`.
 
 **Query di esempio**
 
@@ -280,7 +280,7 @@ query {
 
 ### Query di esempio: un singolo frammento di città specifico {#sample-single-specific-city-fragment}
 
-Query per restituire i dettagli di una singola voce di frammento in una posizione specifica nell’archivio.
+Una query che restituisce i dettagli di una singola voce di frammento in una posizione specifica nell’archivio.
 
 **Query di esempio**
 
@@ -321,7 +321,7 @@ Query per restituire i dettagli di una singola voce di frammento in una posizion
 
 ### Query di esempio: tutte le città con una variante denominata {#sample-cities-named-variation}
 
-Se crei una variante, denominata &quot;Berlino centro&quot; (`berlin_centre`), per `city` Berlino, puoi utilizzare una query per restituire i dettagli della variante.
+Se crei una variante, denominata “Berlino centro” (`berlin_centre`), relativa alla `city` Berlino, puoi utilizzare una query per restituire i dettagli della variante.
 
 **Query di esempio**
 
@@ -366,8 +366,8 @@ Se crei una variante, denominata &quot;Berlino centro&quot; (`berlin_centre`), p
 
 Se:
 
-* crea vari tag, denominati `Tourism` : `Business`, `City Break`, `Holiday`
-* e assegnarli alla variante principale di vari `City` istanze
+* crei vari tag, denominati `Tourism` : `Business`, `City Break` e `Holiday`
+* e li assegni alla variante principale di varie istanze `City`,
 
 allora puoi utilizzare una query per restituire i dettagli di `name` e `tags` di tutte le voci classificate come Soggiorni in città nello schema `city`.
 
@@ -544,7 +544,7 @@ query {
 
 ### Query di esempio: tutte le persone con nome “Jobs” o “Smith” {#sample-all-persons-jobs-smith}
 
-Una query che filtra tutto `persons` per qualsiasi che ha il nome `Jobs`o `Smith`.
+Una query che filtra tutte le `persons` che hanno il nome `Jobs` o `Smith`.
 
 **Query di esempio**
 
@@ -598,7 +598,7 @@ query {
 
 ### Query di esempio: tutte le persone che non hanno nome “Jobs” {#sample-all-persons-not-jobs}
 
-Una query che filtra tutto `persons` per qualsiasi che ha il nome `Jobs`o `Smith`.
+Una query che filtra tutte le `persons` che hanno il nome `Jobs` o `Smith`.
 
 **Query di esempio**
 
@@ -710,7 +710,7 @@ query {
 
 ### Query di esempio: tutte le città in Germania o Svizzera con una popolazione compresa tra 400000 e 999999 {#sample-all-cities-d-ch-population}
 
-In questo caso, viene filtrata una combinazione di campi. Viene utilizzato un `AND` (implicito) per selezionare l’intervallo di `population`, mentre un `OR` (esplicito) viene utilizzato per selezionare le città richieste.
+In questo caso il filtro è impostato su una combinazione di campi. Viene utilizzato un `AND` (implicito) per selezionare l’intervallo di `population`, mentre un `OR` (esplicito) viene utilizzato per selezionare le città richieste.
 
 **Query di esempio**
 
@@ -1152,7 +1152,7 @@ query {
 
 ## Query di esempio con il progetto WKND {#sample-queries-using-wknd-project}
 
-Queste query di esempio si basano sul progetto WKND. Presenta le seguenti caratteristiche:
+Queste query di esempio si basano sul progetto WKND. Presenta le seguenti:
 
 * Modelli di Frammento di contenuto disponibili in:
   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1256,7 +1256,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query di esempio rappresenta un’interrogazione per ottenere:
 
 * per un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all’interno del frammento, tutti i formati di contenuto:
+   * all’interno del frammento sono presenti tutti i formati di contenuto:
       * HTML
       * Markdown
       * Testo normale
@@ -1310,12 +1310,12 @@ Questa query di esempio rappresenta un’interrogazione per ottenere:
 }
 ```
 
-### Query di esempio per un frammento di contenuto nidificato: tipo di modello singolo {#sample-wknd-nested-fragment-single-model}
+### Query di esempio per un frammento di contenuto nidificato: tipo di modello singolo{#sample-wknd-nested-fragment-single-model}
 
 Questa query rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all’interno del frammento, il percorso e l’autore del frammento (nidificato) a cui si fa riferimento
+   * all’interno del frammento è presente il percorso e l’autore del frammento (nidificato) a cui si fa riferimento
 
 >[!NOTE]
 >
@@ -1446,7 +1446,7 @@ La query seguente restituisce tutti i riferimenti di contenuto utilizzando `_ref
 
 #### Query di esempio per più frammenti di contenuto con allegati {#sample-wknd-multiple-fragments-attachments}
 
-La query seguente restituisce tutti `attachments` - un campo specifico (sottogruppo) di tipo `content-reference`:
+La query seguente restituisce tutti gli `attachments`: un campo specifico (gruppo secondario) di tipo `content-reference`:
 
 >[!NOTE]
 >
@@ -1538,7 +1538,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto di tipo `author` in un percorso specifico
-   * all’interno di tale frammento, i dati relativi alla variante: `another`
+   * all’interno del frammento sono presenti dati relativi alla variante: `another`
 
 **Query di esempio**
 
@@ -1564,7 +1564,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 >[!NOTE]
 >
->Questa query illustra il fallback per i frammenti di contenuto che non hanno un [Variante](/help/headless/graphql-api/content-fragments.md#variations) del nome specificato.
+>Questa query dimostra il fallback per i frammenti di contenuto privi di una [Variante](/help/headless/graphql-api/content-fragments.md#variations) del nome specificato.
 
 **Query di esempio**
 
@@ -1717,7 +1717,7 @@ Questa query rappresenta un’interrogazione:
 }
 ```
 
-### Query di esempio con filtro per ID _tags ed esclusione di varianti {#sample-filtering-tag-not-variations}
+### Query di esempio con filtro per ID _tags e varianti escluse {#sample-filtering-tag-not-variations}
 
 Questa query rappresenta un’interrogazione:
 
@@ -1805,7 +1805,7 @@ Le query di esempio si basano sulla seguente struttura, che utilizza:
 
 ### Modelli per frammenti di contenuto di esempio (schemi) {#sample-content-fragment-models-schemas}
 
-Per le query di esempio vengono utilizzati i seguenti modelli di contenuto e le relative interrelazioni (riferimenti ->):
+Per le query di esempio, vengono utilizzati i seguenti modelli di contenuto e le relative interrelazioni (riferimenti ->):
 
 * [Azienda](#model-company)
 -> [Utente](#model-person)
