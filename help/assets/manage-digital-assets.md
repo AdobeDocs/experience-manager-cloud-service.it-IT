@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
+source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
 workflow-type: tm+mt
-source-wordcount: '4508'
-ht-degree: 12%
+source-wordcount: '4481'
+ht-degree: 11%
 
 ---
 
@@ -121,19 +121,18 @@ Per visualizzare in anteprima una risorsa, segui la procedura riportata di segui
 
 1. Per pianificare una data/ora specifica per l’attivazione della risorsa, utilizza il selettore data posto accanto al campo **[!UICONTROL On Time (All’ora)]**.
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![Selettore data](assets/date-picker.png)
 
 1. Per disattivare la risorsa dopo una determinata durata, scegli la data/ora di disattivazione dal selettore data posto accanto a **[!UICONTROL Ora di disattivazione]** campo. La data di disattivazione deve essere successiva alla data di attivazione di una risorsa. Dopo il [!UICONTROL Ora di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili né tramite l’interfaccia web di Assets né tramite l’API HTTP.
 
-   ![chlimage_1-218](assets/chlimage_1-218.png)
-
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)
 1. In **[!UICONTROL Tag]** , selezionare uno o più tag. Per aggiungere un tag personalizzato, digita il nome del tag nella casella e seleziona il `Enter` chiave. Il nuovo tag viene salvato in [!DNL Experience Manager].
 
    YouTube richiede che i tag siano pubblicati e che sia presente un collegamento ad YouTube (se disponibile).
 
    >[!NOTE]
    >
-   >Per creare i tag, devi disporre dell’autorizzazione di scrittura su `/content/cq:tags/default` percorso nell’archivio CRX.
+   > Per creare i tag, devi disporre dell’autorizzazione di scrittura su `/content/cq:tags/default` percorso nell’archivio CRX.
 
 1. Tocca o fai clic **[!UICONTROL Salva e chiudi]**.
 
@@ -181,7 +180,7 @@ Le altre proprietà e le informazioni sui metadati vengono conservate. Una copia
 
 1. Fai clic su **[!UICONTROL Incolla]** nella barra degli strumenti. Le risorse vengono copiate in questa posizione.
 
-   ![chlimage_1-219](assets/chlimage_1-219.png)
+   <!--![chlimage_1-219](assets/chlimage_1-219.png)-->
 
    >[!NOTE]
    >
@@ -229,7 +228,7 @@ Le altre proprietà e le informazioni sui metadati vengono conservate. Una copia
 
 1. Tocca o fai clic sulla risorsa per aprirne la pagina.
 
-   ![chlimage_1-220](assets/chlimage_1-220.png)
+   <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
 1. Tocca o fai clic sull’icona GlobalNav e seleziona **[!UICONTROL Rappresentazioni]** dall&#39;elenco.
 
@@ -255,7 +254,7 @@ Le altre proprietà e le informazioni sui metadati vengono conservate. Una copia
 
    Vai alla pagina dei dettagli della risorsa, quindi tocca o fai clic sull’icona **[!UICONTROL Aggiungi rappresentazione]** della barra degli strumenti per caricare una nuova rappresentazione della risorsa.
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
    >[!NOTE]
    >
@@ -267,7 +266,7 @@ Le altre proprietà e le informazioni sui metadati vengono conservate. Una copia
 
    Allo stesso modo, potete personalizzare l&#39;immagine della pagina Annotazione sovrapponendola `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+   <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
    Per configurare le dimensioni di rendering per una risorsa video, passa alla `videopicker` nodo nell’archivio CRX nel percorso `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, sovrapporre il nodo e quindi modificare la proprietà appropriata.
 
@@ -451,11 +450,11 @@ Le annotazioni video sono supportate solo nei browser con formati video compatib
    * [Azioni rapide](#quick-actions)
    * Dalla barra degli strumenti, dopo aver selezionato la risorsa o essere passato alla pagina della risorsa
 
-   ![chlimage_1-233](assets/chlimage_1-233.png)
+   <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
 
-   ![chlimage_1-234](assets/chlimage_1-234.png)
+<!-- ![chlimage_1-234](assets/chlimage_1-234.png)-->
 
 <!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
@@ -465,11 +464,11 @@ Le annotazioni video sono supportate solo nei browser con formati video compatib
 >
 >Per un utente non amministratore, i suggerimenti vengono visualizzati solo se l’utente dispone delle autorizzazioni di lettura in `/home` in CRXDE.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+<!--![chlimage_1-235](assets/chlimage_1-235.png)-->
 
 1. Dopo aver aggiunto l’annotazione, fai clic su **[!UICONTROL Aggiungi]** per salvarlo. Viene inviata una notifica per l’annotazione ad Aaron.
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   <!--![chlimage_1-236](assets/chlimage_1-236.png)-->
 
    >[!NOTE]
    >
@@ -484,11 +483,11 @@ Le annotazioni video sono supportate solo nei browser con formati video compatib
 
 1. Per scegliere un colore diverso in modo da poter distinguere tra gli utenti, tocca o fai clic sull’icona Profilo e tocca o fai clic su **[!UICONTROL Le mie preferenze]**.
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
    Nella casella **[!UICONTROL Colore annotazione]**, specifica il colore desiderato, infine tocca o fai clic su **[!UICONTROL Accetta]**.
 
-   ![chlimage_1-238](assets/chlimage_1-238.png)
+<!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
 >[!NOTE]
 >
@@ -508,15 +507,15 @@ Le annotazioni video sono supportate solo nei browser con formati video compatib
 
 1. Tocca o fai clic sull’icona GlobalNav e scegli **[!UICONTROL Timeline]** dall&#39;elenco.
 
-   ![chlimage_1-239](assets/chlimage_1-239.png)
+   <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
 1. Dall’elenco **[!UICONTROL Mostra tutti]** nella timeline, seleziona **[!UICONTROL Commenti]** per filtrare i risultati in base alle annotazioni.
 
-   ![chlimage_1-240](assets/chlimage_1-240.png)
+   <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
    Tocca o fai clic su un commento nella **[!UICONTROL Timeline]** per visualizzare l’annotazione corrispondente sull’immagine.
 
-   ![chlimage_1-241](assets/chlimage_1-241.png)
+   <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
    Tocca o fai clic **[!UICONTROL Elimina]**, per eliminare un particolare commento.
 
@@ -540,29 +539,29 @@ Per stampare le annotazioni e controllare lo stato, tocca o fai clic sul pulsant
 
 1. Per stampare annotazioni specifiche, selezionarle dalla timeline.
 
-   ![chlimage_1-242](assets/chlimage_1-242.png)
+   <!--![chlimage_1-242](assets/chlimage_1-242.png)-->
 
    Per stampare solo lo stato di revisione, selezionarlo dalla timeline.
 
-   ![chlimage_1-243](assets/chlimage_1-243.png)
+   <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
 1. Tocca o fai clic sul pulsante **[!UICONTROL Stampa]** dalla barra degli strumenti.
 
-   ![chlimage_1-244](assets/chlimage_1-244.png)
+   <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
 1. Nella finestra di dialogo Stampa, scegliere la posizione in cui si desidera visualizzare lo stato di annotazioni/revisioni sul PDF. Ad esempio, se desideri stampare le annotazioni/stato in alto a destra della pagina che contiene l’immagine stampata, utilizza **In alto a sinistra** impostazione. È selezionata per impostazione predefinita.
 
-   ![chlimage_1-245](assets/chlimage_1-245.png)
+   <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
    È possibile scegliere altre impostazioni, a seconda della posizione in cui si desidera visualizzare le annotazioni o lo stato nel PDF stampato. Se vuoi che le annotazioni o lo stato vengano visualizzati in una pagina separata dalla risorsa stampata, scegli **[!UICONTROL Pagina successiva]**.
 
 1. Clic **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, il PDF generato visualizza annotazioni/stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **In alto a sinistra**, l’output generato sarà simile al file PDF qui riportato.
 
-   ![chlimage_1-246](assets/chlimage_1-246.png)
+   <!--![chlimage_1-246](assets/chlimage_1-246.png)-->
 
 1. Scarica o stampa il PDF utilizzando le opzioni in alto a destra.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
    Per modificare l&#39;aspetto del file PDF sottoposto a rendering, ad esempio il colore, la dimensione e lo stile del carattere e il colore di sfondo dei commenti e degli stati, aprire **[!UICONTROL Configurazione di Annotation PDF]** da Configuration Manager e modificare le opzioni desiderate. Ad esempio, per modificare il colore di visualizzazione dello stato approvato, modifica il codice del colore nel campo corrispondente. Per informazioni sulla modifica del colore del carattere delle annotazioni, vedere [Annotazione](/help/assets/manage-digital-assets.md#annotating).
 
@@ -594,15 +593,15 @@ La funzionalità di controllo delle versioni consente di effettuare le seguenti 
 
 1. Tocca o fai clic sul pulsante **[!UICONTROL Azioni]** (freccia) in basso per visualizzare le azioni disponibili che puoi eseguire sulla risorsa.
 
-   ![chlimage_1-249](assets/chlimage_1-249.png)
+   <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
 1. Tocca o fai clic **[!UICONTROL Salva come versione]** per creare una versione della risorsa.
 
-   ![chlimage_1-250](assets/chlimage_1-250.png)
+<!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
 1. Aggiungere un&#39;etichetta e un commento, quindi fare clic su **[!UICONTROL Crea]** per creare una versione. In alternativa, tocca o fai clic su **Annulla** per uscire dall&#39;operazione.
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
 1. Per visualizzare la nuova versione, apri l’elenco **[!UICONTROL Mostra tutti]** nella timeline dalla pagina dei dettagli della risorsa o dall’interfaccia utente Assets, quindi scegli **[!UICONTROL Versioni]**. Tutte le versioni create per una risorsa sono elencate nella scheda della timeline. Puoi filtrare l’elenco Versioni, facendo clic sulla freccia rivolta verso il basso e selezionando **[!UICONTROL Versioni]** dall’elenco.
 
@@ -635,23 +634,23 @@ La funzionalità di controllo delle versioni consente di effettuare le seguenti 
 
 1. Tocca o fai clic sul pulsante **[!UICONTROL Azioni]** (freccia) in basso per aprire l’elenco delle azioni disponibili per la risorsa.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
 1. Tocca o fai clic **[!UICONTROL Avvia flusso di lavoro]** dall&#39;elenco.
 
-   ![chlimage_1-253](assets/chlimage_1-253.png)
+   <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
 1. In **[!UICONTROL Avvia flusso di lavoro]** , seleziona un modello di flusso di lavoro dall’elenco.
 
-   ![chlimage_1-254](assets/chlimage_1-254.png)
+   <!--![chlimage_1-254](assets/chlimage_1-254.png)-->
 
 1. (Facoltativo) Specifica un titolo per il flusso di lavoro, che può essere utilizzato per fare riferimento all’istanza del flusso di lavoro.
 
-   ![chlimage_1-255](assets/chlimage_1-255.png)
+   <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
 1. Tocca o fai clic su **[!UICONTROL Avvia]**, quindi, per confermare, tocca o fai clic su **[!UICONTROL Procedi]** nella finestra di dialogo. Ciascun passaggio del flusso di lavoro viene visualizzato nella timeline come un evento.
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
+   <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 
 ## Raccolte {#collections}
 
