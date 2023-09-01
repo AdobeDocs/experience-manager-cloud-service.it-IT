@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: bb7d8145eb954557d185b58f884532f8f08c5a54
+source-git-commit: a1686d7796bb1e310b776195bd19df98f6f10650
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 45%
+source-wordcount: '305'
+ht-degree: 41%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 45%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 13239 {#release-13239}
+## Versione 13323 {#release-13323}
 
-Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 13239, rilasciata pubblicamente il 29 agosto 2023. Questa versione di manutenzione sostituisce le 13206 sulla versione.
+Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 13323, rilasciata pubblicamente il 1° settembre 2023. Questa versione di manutenzione sostituisce le 13239 sulla versione.
 
 L’attivazione delle funzioni 2023.9.0 fornirà il set completo di funzioni per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it).
 
-### Miglioramenti {#enhancements-13239}
+### Miglioramenti {#enhancements-13323}
 
 - GRANITE-46784: Aggiungi l’opzione per disabilitare BearerAuthenticationHandler
 - GRANITE-36205: Aggiornare la versione interna di oak all’ultima versione
@@ -31,7 +31,7 @@ L’attivazione delle funzioni 2023.9.0 fornirà il set completo di funzioni per
 - GRANITE-46631: Aggiornamento della versione di Jackrabbit al 2.20.11
 - SKYOPS-61895: Aggiornamento a Jackrabbit Filevault 3.7.0
 
-### Problemi risolti {#fixed-issues-13239}
+### Problemi risolti {#fixed-issues-13323}
 
 - SKYOPS-63290: Corretta evoluzione dei bucket
 - SKYOPS-54607: calcolo del carico del server Ratelimiter non corretto per una richiesta non riuscita
@@ -41,11 +41,12 @@ L’attivazione delle funzioni 2023.9.0 fornirà il set completo di funzioni per
 - GRANITE-46292: la configurazione Okta SAML non funziona dopo l’aggiornamento di AEM Cloud
 - GRANITE-47059: rimuovere il bundle SSL di Granite Jetty
 
-### Problemi noti {#known-issues-13239}
+### Problemi noti {#known-issues-13323}
 
-Nessuno.
+- SITES-15622: GraphQL - Problema con le query persistenti con numeri e parametri booleani.
+- SITES-15654: GraphQL - Problemi relativi a unioni e proprietà con lo stesso nome.
 
-### Tecnologie incorporate {#embedded-tech-13239}
+### Tecnologie incorporate {#embedded-tech-13323}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
