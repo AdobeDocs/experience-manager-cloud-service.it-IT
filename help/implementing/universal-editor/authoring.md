@@ -2,7 +2,7 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f28b8a85de76a1658ef45c509cbf5600baa1bb3a
+source-git-commit: 4cf7d3692b53e5cb5baecd7d0ee93824d9186380
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 57%
@@ -346,7 +346,7 @@ Le modifiche vengono salvate automaticamente nel contenuto.
 
 ### Modifica di frammenti di contenuto {#edit-content-fragment}
 
-Se ti trovi in [modalità componente](#component-mode) e selezioni una [Frammento di contenuto,](/help/assets/content-fragments/content-fragments.md) puoi modificarne i dettagli nella barra dei componenti.
+Se ti trovi in [modalità componente](#component-mode) e selezioni una [Frammento di contenuto,](/help/sites-cloud/administering/content-fragments/overview.md) puoi modificarne i dettagli nella barra dei componenti.
 
 ![Modifica di un frammento di contenuto](assets/ue-edit-cf.png)
 
@@ -354,7 +354,7 @@ I campi definiti nel modello di contenuto del frammento di contenuto selezionato
 
 Le modifiche vengono salvate automaticamente nel contenuto.
 
-Se desideri modificare il frammento di contenuto in [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) invece, fai clic su [pulsante modifica](#edit) nella barra delle modalità.
+Se desideri modificare il frammento di contenuto in [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md) invece, fai clic su [pulsante modifica](#edit) nella barra delle modalità.
 
 ### Aggiunta di componenti ai contenitori {#adding-components}
 
