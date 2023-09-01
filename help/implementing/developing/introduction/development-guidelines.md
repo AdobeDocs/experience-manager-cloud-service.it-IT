@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5a60c491db4a182529a2c4b6490b18b356c14fa7
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2746'
 ht-degree: 4%
 
 ---
@@ -99,6 +99,14 @@ La replica inversa da Pubblica ad Autore non è supportata in AEM as a Cloud Ser
 Il contenuto viene replicato dall’istanza di authoring a quella di pubblicazione tramite un meccanismo pub-sub. Gli agenti di replica personalizzati non sono supportati.
 
 ## Monitoraggio e debug {#monitoring-and-debugging}
+
+## Nessun overload degli ambienti di sviluppo {#overloading-dev-envs}
+
+Gli ambienti di produzione sono dimensionati più in alto per garantire un funzionamento stabile, mentre gli ambienti di staging sono dimensionati come gli ambienti di produzione per garantire test realistici in condizioni di produzione.
+
+Gli ambienti di sviluppo e gli ambienti di sviluppo rapido devono essere limitati allo sviluppo, all’analisi degli errori e ai test funzionali e non devono essere progettati per elaborare carichi di lavoro elevati né grandi quantità di contenuti.
+
+Ad esempio, la modifica della definizione di un indice in un archivio di contenuti di grandi dimensioni in un ambiente di sviluppo può causare la reindicizzazione, con conseguente elaborazione eccessiva. I test che richiedono contenuti sostanziali devono essere eseguiti in ambienti di staging.
 
 ### Registri {#logs}
 
