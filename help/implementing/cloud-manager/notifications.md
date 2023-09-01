@@ -2,10 +2,10 @@
 title: Notifiche
 description: Scopri come ricevere informazioni sulle distribuzioni delle pipeline con il sistema di notifica di Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 96%
+source-wordcount: '589'
+ht-degree: 89%
 
 ---
 
@@ -54,13 +54,13 @@ Le iscrizioni definiscono per quali prodotti ricevi le notifiche e quali notific
 
 ![Iscrizioni alle notifiche](assets/notifications-subscriptions.png)
 
-Per impostazione predefinita, riceverai tutte le notifiche per tutti i prodotti. Fai clic su **Personalizza** accanto a un prodotto per definire i tipi di notifiche ricevute per quel prodotto.
+Per impostazione predefinita, riceverai tutte le notifiche per tutti i prodotti sia nell’applicazione che tramite e-mail. Fai clic sulla freccia accanto al nome di un prodotto per visualizzare le opzioni dettagliate e definire i tipi di notifiche che ricevi per quel prodotto. Oppure seleziona o deseleziona le opzioni a livello di prodotto per selezionare/deselezionare tutte le opzioni per il prodotto.
 
 ![Personalizzazione dell’iscrizione alle notifiche](assets/notifications-subscriptions-customize.png)
 
 ### Priorità {#priority}
 
-Gli avvisi prioritari sono contrassegnati con un simbolo **ALTA** e possono essere configurati per essere ricevuti esclusivamente come avvisi. Nella sezione **Priorità** è possibile definire quali categorie si qualificano come notifiche prioritarie.
+Gli avvisi prioritari saranno contrassegnati con un tag **ALTA** e possono essere configurati per essere ricevuti esclusivamente come avvisi. Nella sezione **Priorità** è possibile definire quali categorie si qualificano come notifiche prioritarie.
 
 ![Priorità di notifica](assets/notifications-priority.png)
 
