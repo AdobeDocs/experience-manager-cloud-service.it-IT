@@ -2,9 +2,9 @@
 title: Panoramica dei frammenti esperienza
 description: Estendi i frammenti esperienza Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,8 @@ Ad esempio:
 >[!NOTE]
 >
 >I collegamenti fanno sempre riferimento all’istanza Publish. Poiché sono destinati a essere utilizzati da terze parti, il collegamento viene sempre richiamato dall’istanza Publish e non dall’istanza Autore.
+>
+>Per ulteriori informazioni, consulta [Esternalizzazione degli URL](/help/implementing/developing/tools/externalizer.md).
 
 ![Rendering di HTML semplice](assets/xf-14.png)
 
@@ -112,7 +114,7 @@ The only additional configuration is to ensure that the components are [allowed 
 
 ## Experience Fragment Link Rewriter Provider - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
-In AEM puoi creare frammenti esperienza. Un frammento esperienza:
+In AEM puoi creare frammenti esperienza. Un frammento di esperienza:
 
 * è costituito da un gruppo di componenti con un layout,
 * può esistere indipendentemente da una pagina AEM.
