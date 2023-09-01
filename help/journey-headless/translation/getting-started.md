@@ -2,10 +2,10 @@
 title: Guida introduttiva alla traduzione in AEM headless
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 94%
+source-wordcount: '1425'
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ Ci sono diversi requisiti prima di iniziare a tradurre il contenuto AEM headless
 
 >[!TIP]
 >
->Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso. Al termine, torna a questa pagina.
+>Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso. Quindi, al termine torna a questa pagina.
 
 ### Strumenti {#tools}
 
@@ -64,7 +64,7 @@ Il contenuto di AEM, sia esso headless o costituito da pagine web tradizionali, 
 
 ## Come AEM archivia i contenuti headless {#headless-content-in-aem}
 
-Per lo specialista della traduzione, non è importante comprendere in modo approfondito come AEM gestisce i contenuti headless. Tuttavia, è utile avere familiarità con i concetti e la terminologia di base in quanto in seguito utilizzerai gli strumenti di traduzione dell’AEM. Ma soprattutto, devi comprendere i contenuti e la loro struttura per tradurli in modo efficace.
+Per lo specialista della traduzione, non è importante comprendere in modo approfondito come AEM gestisce i contenuti headless. Tuttavia, conoscere i concetti e la terminologia di base è utile in seguito all’utilizzo di strumenti di traduzione AEM. È importante comprendere il proprio contenuto e la sua struttura per tradurlo in modo efficace.
 
 ### Modelli di contenuto {#content-models}
 
@@ -153,7 +153,7 @@ La struttura finale può avere un aspetto simile al seguente.
         |- ...
 ```
 
-Devi prendere nota del percorso specifico del contenuto, in quanto è necessario in un secondo momento per configurare la traduzione.
+È necessario prendere nota del percorso specifico del contenuto, in quanto sarà necessario in seguito per configurare la traduzione.
 
 >[!NOTE]
 >
@@ -188,3 +188,5 @@ Mentre si consiglia di procedere alla parte successiva del percorso di traduzion
 * [Identificazione del contenuto da tradurre](/help/sites-cloud/administering/translation/rules.md): scopri come le regole di traduzione identificano i contenuti da tradurre.
 * [Configurazione del Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md): scopri come configurare il Translation Integration Framework per l’integrazione con i servizi di traduzione di terze parti.
 * [Gestione dei progetti di traduzione](/help/sites-cloud/administering/translation/managing-projects.md): scopri come creare e gestire progetti di traduzione automatica e umana in AEM.
+* [Introduzione all’AEM come CMS headless](/help/headless/introduction.md)
+* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

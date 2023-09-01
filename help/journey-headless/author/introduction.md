@@ -2,10 +2,10 @@
 title: Authoring in AEM utilizzato come CMS headless - Introduzione
 description: Introduzione all’utilizzo delle funzioni di Adobe Experience Manager as a Cloud Service come CMS headless per la creazione di contenuti per il tuo progetto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 96%
+source-wordcount: '691'
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ Ciò significa che i contenuti possono essere fruiti su una vasta gamma di dispo
 (E se ciò non bastasse, questi frammenti possono essere utilizzati anche per la creazione di pagine web AEM, se lo si desidera.)
 
 * CMS “tradizionale”
-   * Il contenuto viene creato per le pagine web, utilizzando una serie di componenti che definiscono come viene eseguito il rendering del contenuto sul sito web. Anche in questo caso, AEM è estremamente flessibile in quanto il team di progetto può sviluppare componenti personalizzati.
+   * Il contenuto viene creato per le pagine web utilizzando una serie di componenti che definiscono il modo in cui verrà eseguito il rendering del contenuto sul sito web. Anche in questo caso, AEM è estremamente flessibile in quanto il team di progetto può sviluppare componenti personalizzati.
 
 ## Modellazione dei contenuti {#content-modeling}
 
@@ -77,10 +77,16 @@ Ora che hai imparato i concetti e la terminologia, il passo successivo è [Scopr
 
 ## Risorse aggiuntive {#additional-resources}
 
+* [Introduzione all’AEM come CMS headless](/help/headless/introduction.md)
+
+* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+
 * Percorso per sviluppatori headless di AEM
    * [Scopri di più sullo sviluppo di CMS headless](/help/journey-headless/developer/learn-about.md)
    * [Scopri come modellare il contenuto](/help/journey-headless/developer/model-your-content.md)
 
-* Percorso Architect di contenuti AEM headless
+* [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
 
-* Percorso di traduzione dei contenuti AEM headless
+* [Percorso Architect di contenuti AEM headless](/help/journey-headless/architect/overview.md)
+
+* [Percorso di traduzione dei contenuti AEM headless](/help/journey-headless/translation/overview.md)

@@ -2,10 +2,10 @@
 title: Come pubblicare con la tua applicazione headless
 description: In questa parte del Percorso per sviluppatori AEM Headless, scopri come distribuire un’applicazione headless in tempo reale prendendo il codice locale nel Git e spostandolo nel Git di Cloud Manager per la pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 93%
+source-wordcount: '1093'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ Per preparare l’applicazione AEM headless per il lancio, segui le best practic
 
 * Evita di creare query con output superiore a 15 kb di JSON (gzip compresso). I file JSON lunghi richiedono un uso intensivo delle risorse per l’analisi da parte dell’applicazione client.
 * Evita più di cinque livelli nidificati di gerarchie di frammenti. Livelli aggiuntivi rendono difficile per gli autori dei contenuti valutare l’impatto delle loro modifiche.
-* Utilizza query con più oggetti invece di modellare query con gerarchie di dipendenza all’interno dei modelli. Questo consente una flessibilità a lungo termine per ristrutturare l’output JSON senza dover apportare molte modifiche al contenuto.
+* Utilizza query con più oggetti invece di modellare query con gerarchie di dipendenza all’interno dei modelli. Ciò consente una maggiore flessibilità a lungo termine per ristrutturare l’output JSON senza dover apportare molte modifiche al contenuto.
 
 ## Massimizza il rapporto Hit-cache CDN {#maximize-cdn}
 
@@ -50,7 +50,7 @@ Per preparare l’applicazione AEM headless per il lancio, segui le best practic
    * Utilizza le query persistenti quando possibile.
    * Fornisci a CDN un TTL di oltre 600 secondi per consentire alla CDN di memorizzarli nella cache.
    * AEM può calcolare l’impatto di una modifica del modello sulle query esistenti.
-* Suddividi le query JSON su file/GraphQL tra il tasso di modifica del contenuto basso e alto in modo da ridurre il traffico client su CDN e assegnare un TTL più alto. Questo riduce al minimo la riconvalida da parte della CDN di JSON con il server di origine.
+* Dividi i file JSON/le query GraphQL tra la frequenza di variazione del contenuto bassa e alta in modo da ridurre il traffico client verso CDN e assegnare un TTL più alto. Questo riduce al minimo la riconvalida da parte della CDN di JSON con il server di origine.
 * Per invalidare attivamente il contenuto dalla rete CDN, utilizza la rimozione temporanea. Questo consente alla rete CDN di scaricare nuovamente il contenuto senza causare una perdita della cache.
 
 ## Migliora il tempo di download dei contenuti headless {#improve-download-time}
@@ -101,7 +101,7 @@ Segui queste best practice come approccio generale al debug:
 
 ### Registrazione di un bug con Support {#logging-a-bug-with-support}
 
-Per segnalare in modo efficiente un bug con il supporto nel caso sia necessaria ulteriore assistenza, effettuare le seguenti operazioni:
+Per registrare in modo efficiente un bug con il supporto nel caso sia necessaria ulteriore assistenza, effettua le seguenti operazioni:
 
 * Se necessario, acquisisci le schermate del problema
 * Documenta un modo per riprodurre il problema
@@ -124,12 +124,15 @@ Hai già lanciato il tuo primo progetto AEM Headless oppure possiedi ormai tutte
 
 ### Esplora le applicazioni a pagina singola {#explore-spa}
 
-I negozi headless in AEM non hanno bisogno di fermarsi qui, però. Potresti ricordare che nella [Guida introduttiva al percorso](getting-started.md#integration-levels) abbiamo discusso brevemente come AEM supporta non solo la distribuzione headless e i modelli tradizionali full-stack, ma anche i modelli ibridi che combinano i vantaggi di entrambi.
+I negozi headless in AEM possono anche non fermarsi qui, però. Potresti ricordare che nella [Guida introduttiva al percorso](getting-started.md#integration-levels) abbiamo discusso brevemente come AEM supporta non solo la distribuzione headless e i modelli tradizionali full-stack, ma anche i modelli ibridi che combinano i vantaggi di entrambi.
 
 Se questo tipo di flessibilità è un elemento necessario per il tuo progetto, continua con l’ulteriore parte opzionale del percorso, [Come creare applicazioni a pagina singola (SPA) con AEM.](create-spa.md)
 
 ## Risorse aggiuntive {#additional-resources}
 
+* [Introduzione all’AEM come CMS headless](/help/headless/introduction.md)
+* [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
+* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
 * [Panoramica della distribuzione in AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Utilizzare Cloud Manager per distribuire il codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it)
 * [Integra l’archivio Git di Cloud Manager con un archivio Git esterno e distribuisci un progetto in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=it)
