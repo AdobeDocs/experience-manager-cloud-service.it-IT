@@ -5,8 +5,8 @@ role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 52%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Dopo aver modificato un’immagine, puoi salvarla come nuova versione. Se necess
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
 >title="Integrazione Adobe Express"
->abstract="Strumenti di editing delle immagini semplici e intuitivi basati su Adobi Express disponibili direttamente in AEM Assets per aumentare il riutilizzo dei contenuti e velocizzarne la realizzazione."
+>abstract="Strumenti di editing delle immagini semplici e intuitivi gestiti da Adobe Express disponibili direttamente in AEM Assets per aumentare il riutilizzo dei contenuti e accelerarne la velocità."
 
 ### Ridimensionare l’immagine {#resize-image-using-express}
 
