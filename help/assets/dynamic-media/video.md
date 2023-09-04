@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 3203e79d1dd083d13d9357b21040dfa88194c4db
+source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
 workflow-type: tm+mt
-source-wordcount: '9445'
+source-wordcount: '9442'
 ht-degree: 2%
 
 ---
@@ -576,7 +576,6 @@ Alcuni dei casi d’uso da considerare per aggiungere sottotitoli multipli e tra
 | **Sottotitoli** | Supporto di più lingue |
 |  | Testo descrittivo per accessibilità |
 | **Tracce audio** | Supporto di più lingue |
-|  | Audio stereo e multicanale (audio surround) |
 |  | Brani di commento |
 |  | Audio descrittivo |
 
@@ -669,7 +668,7 @@ Nel caso in cui Dynamic Medie sia stato configurato per la pubblicazione immedia
 
 >[!CAUTION]
 >
->Quando si caricano file di sottotitoli o file audio in un video già pubblicato, questi file vengono eliminati se [*rielabora*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) il video. Solo l&#39;audio originale del video rimane intatto. In questi casi, è necessario caricare nuovamente i file dei sottotitoli e delle tracce audio nel video.
+>Quando si caricano file di sottotitoli o file audio in un video pubblicato o non pubblicato, i file vengono eliminati se [*rielabora*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) il video. Solo l&#39;audio originale del video rimane intatto. In questi casi, è necessario caricare nuovamente i file dei sottotitoli e delle tracce audio nel video.
 
 #### Aggiungere più sottotitoli a un video che ha un URL esistente con modificatore sottotitoli
 
