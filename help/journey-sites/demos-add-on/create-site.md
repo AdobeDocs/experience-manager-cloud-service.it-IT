@@ -3,9 +3,9 @@ title: Crea sito demo
 description: Crea un sito demo in AEM basato su una libreria di modelli preconfigurati.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Una volta implementato AEM Reference Demos Add-On, la pipeline può accedere all
 
    ![Creazione guidata sito](assets/site-creation-wizard.png)
 
-1. Nella schermata successiva, specifica un titolo per il sito o il progetto Screens. Se omesso, è possibile specificare o generare un nome di sito dal titolo. Tocca o fai clic su **Crea**.
+1. Nella schermata successiva, specifica un titolo per il sito o il progetto Screens. Se omesso, puoi specificare un nome per il sito o generarlo dal titolo. Tocca o fai clic su **Crea**.
 
    * Il titolo del sito viene visualizzato nella barra del titolo del browser.
    * Il nome del sito diventa parte dell’URL.
@@ -110,5 +110,5 @@ Puoi testare le funzioni di AEM utilizzando il contenuto aggiuntivo. Sono dispon
 
 * [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=it): per ulteriori informazioni sulle funzioni di Cloud Manager, consulta direttamente i documenti tecnici dettagliati.
 * [Crea sito](/help/sites-cloud/administering/site-creation/create-site.md) - scopri come utilizzare AEM per creare un sito utilizzando i modelli per definirne lo stile e la struttura.
-* [Convenzioni AEM di denominazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Consulta questa pagina per comprendere le convenzioni per l’organizzazione delle pagine AEM.
-* [Operazioni di base in AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): esplora questo documento se hai poca esperienza con AEM per comprendere i concetti di base, come la navigazione e l’organizzazione della console.
+* [Convenzioni AEM di denominazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Per informazioni sulle convenzioni per l’organizzazione delle pagine AEM, consulta questa pagina.
+* [Operazioni di base in AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): se non hai ancora familiarità con AEM, esplora questo documento per comprendere i concetti di base, come la navigazione e l’organizzazione della console.
