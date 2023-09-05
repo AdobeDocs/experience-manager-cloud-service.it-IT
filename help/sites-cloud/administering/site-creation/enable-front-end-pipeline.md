@@ -1,19 +1,19 @@
 ---
 title: Abilitazione della pipeline front-end
-description: Scopri come abilitare la pipeline front-end per i siti esistenti per utilizzare i temi del sito per personalizzarlo più rapidamente.
+description: Scopri come abilitare la pipeline front-end per i siti esistenti, per utilizzare i temi per personalizzare più rapidamente il tuo sito.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Abilitazione della pipeline front-end {#enable-front-end-pipeline}
 
-Scopri come abilitare la pipeline front-end per i siti esistenti per utilizzare i temi del sito per personalizzarlo più rapidamente.
+Scopri come abilitare la pipeline front-end per i siti esistenti, per utilizzare i temi per personalizzare più rapidamente il tuo sito.
 
 ## Panoramica {#overview}
 
@@ -21,11 +21,11 @@ La pipeline front-end è un meccanismo che può distribuire rapidamente solo il 
 
 Invece di distribuire l’intero stack, questa pipeline gestisce solo il codice front-end, rendendo il processo più veloce e consentendo agli sviluppatori di personalizzare facilmente e rapidamente il sito senza conoscere AEM.
 
-Per impostazione predefinita, i siti basati sui modelli del sito possono utilizzare la pipeline front-end. Questo documento descrive come adattare i siti esistenti per sfruttare la pipeline front-end.
+Per impostazione predefinita, i siti basati sui modelli di sito possono sfruttare la pipeline front-end. Questo documento descrive come adattare i siti esistenti per sfruttare la pipeline front-end.
 
 >[!TIP]
 >
->Se non conosci la pipeline front-end e le modalità di distribuzione rapida dei siti che la utilizzano insieme ai modelli, consulta [Percorso di Creazione Rapida dei Siti](/help/journey-sites/quick-site/overview.md) per un’introduzione.
+>Se non conosci la pipeline front-end e le modalità di distribuzione rapida dei siti che la utilizzano insieme ai modelli, consulta la sezione [Percorso di creazione rapida dei siti](/help/journey-sites/quick-site/overview.md) per una panoramica.
 
 Se non hai creato il sito esistente in base a modelli e temi del sito, AEM può configurarlo per caricare i temi distribuiti con la pipeline front-end sopra le librerie client esistenti.
 
@@ -56,7 +56,7 @@ L’abilitazione del sito viene eseguita dalla console Sites utilizzando la [Bar
 
    ![Abilita pipeline front-end](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
 
-1. L’AEM ti chiede di confermare con una panoramica delle modifiche che verranno apportate. Una volta confermato, il tuo sito viene adattato.
+1. AEM ti chiederà di confermare una panoramica delle modifiche che verranno apportate. Una volta confermato, il tuo sito viene adattato.
 
 Ora il tuo sito è pronto per utilizzare la pipeline front-end. Per ulteriori informazioni sulla pipeline front-end e sulla gestione del tema del sito, consulta:
 
