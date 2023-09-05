@@ -3,25 +3,25 @@ title: Gestione dei progetti
 description: Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità, accessibile e gestibile nella console dedicata
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '893'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 # Gestione dei progetti {#managing-projects}
 
-Progetti consente di organizzare il progetto raggruppando le risorse in un’unica entità.
+La funzione Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità.
 
-In **Progetti** , puoi accedere ai tuoi progetti e intervenire su di essi:
+Nella console **Progetti**, puoi accedere ai tuoi progetti e intervenire su di essi:
 
 ![Console Progetti](/help/sites-cloud/authoring/assets/projects-console.png)
 
-In Progetti puoi creare un progetto, associare risorse al progetto ed eliminare anche un progetto o collegamenti a risorse. È possibile aprire una tessera per visualizzarne il contenuto e aggiungere elementi a una tessera. In questo argomento vengono descritte tali procedure.
+Tramite Progetti è possibile creare un progetto e associarvi risorse, ma anche eliminarlo o eliminare i collegamenti alle risorse. È possibile aprire un riquadro per visualizzarne il contenuto e aggiungere elementi. In questo argomento vengono descritte tali procedure.
 
 ## Creazione di un progetto {#creating-a-project}
 
-Per impostazione predefinita, AEM fornisce questi modelli tra cui scegliere quando si crea un progetto:
+Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di un progetto:
 
 * Progetto semplice
 * Progetto multimediale
@@ -38,20 +38,20 @@ La procedura di creazione di un progetto è la stessa per ciascun progetto. La d
 
    ![Creazione di un progetto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Definisci un **titolo** e una **descrizione**; se necessario, aggiungi un’immagine di **miniatura**. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono. Inoltre, fai clic su **Avanzate** per aggiungere un nome utilizzato nell&#39;URL.
+1. Definisci un **titolo** e una **descrizione**; se necessario, aggiungi un’immagine di **miniatura**. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
 
    ![Aggiunta di dettagli al progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Tocca o fai clic su **Crea**. La conferma chiede se desideri aprire il nuovo progetto o tornare alla console.
+1. Tocca o fai clic su **Crea**. Nella finestra di conferma ti viene richiesto se desideri aprire il nuovo progetto o tornare alla console.
 
-### Associazione delle risorse al progetto {#associating-resources-with-your-project}
+### Associazione di risorse a un progetto {#associating-resources-with-your-project}
 
-Poiché i progetti consentono di raggruppare le risorse in un’unica entità, è necessario associare le risorse al progetto. Queste risorse vengono chiamate **Riquadri**. I tipi di risorse che è possibile aggiungere sono descritti in [Riquadri progetto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
+Poiché i progetti consentono di raggruppare risorse in un’unica entità, è possibile associare delle risorse a un progetto. Queste risorse sono chiamate **Riquadri**. I tipi di risorse che è possibile aggiungere sono descritti nella sezione [Riquadri progetto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
-Per associare le risorse al progetto:
+Per associare le risorse a un progetto:
 
-1. Apri il progetto da **Progetti** console.
-1. Tocca o fai clic **Aggiungi sezione** e seleziona il riquadro da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
+1. Apri il progetto dalla console **Progetti**.
+1. Tocca o fai clic su **Aggiungi sezione** e seleziona il riquadro da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
 
    ![Aggiunta di un riquadro a un progetto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
@@ -67,21 +67,21 @@ Per eliminare un progetto dalla console o una risorsa collegata dal progetto si 
 
 1. Passa alla posizione appropriata:
 
-   * Per eliminare un progetto, vai al livello superiore della sezione **Progetti** console.
+   * Per eliminare un progetto, spostati nella parte superiore della console **Progetti**.
    * Per eliminare un collegamento di risorsa all’interno di un progetto, apri il progetto nella console **Progetti**.
 
 1. Entra nella modalità di selezione facendo clic su **Seleziona** e scegli il progetto o collegamento di risorsa.
 1. Tocca o fai clic su **Elimina**.
 
-1. È necessario confermare l’eliminazione in una finestra di dialogo. Se confermato, il progetto o il collegamento di risorsa viene eliminato. Per uscire dalla modalità di selezione, tocca o fai clic su **Deseleziona**.
+1. È necessario confermare l’eliminazione in una finestra di dialogo. Se confermata, il progetto o il collegamento alla risorsa viene eliminato. Per uscire dalla modalità di selezione, tocca o fai clic su **Deseleziona**.
 
 >[!NOTE]
 >
 >Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. Un amministratore deve eliminare manualmente i gruppi da **Strumenti** > **Protezione** > **Gruppi**.
 
-### Aggiunta di elementi a una sezione {#adding-items-to-a-tile}
+### Aggiunta di elementi a un riquadro {#adding-items-to-a-tile}
 
-In alcuni riquadri, potrebbe essere necessario aggiungere più elementi. Ad esempio, puoi avere più di un flusso di lavoro in esecuzione alla volta o più di un’esperienza.
+Per alcuni riquadri, è possibile aggiungere più di un oggetto. Ad esempio, è possibile avere più flussi di lavoro o esperienze in esecuzione allo stesso tempo.
 
 Per aggiungere elementi a un riquadro:
 
@@ -89,19 +89,19 @@ Per aggiungere elementi a un riquadro:
 
    ![Aggiungere un elemento a un riquadro](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Aggiungi un elemento alla sezione come faresti quando crei una nuova sezione. Sono descritte le tessere del progetto [qui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In questo esempio è stato aggiunto un altro flusso di lavoro.
+1. Aggiungi un elemento al riquadro con la stessa procedura che usi quando crei un nuovo riquadro. I riquadri di progetto sono descritti [qui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In questo esempio è stato aggiunto un altro flusso di lavoro.
 
-### Apertura di una sezione {#opening-a-tile}
+### Apertura di un riquadro {#opening-a-tile}
 
-Puoi visualizzare gli elementi inclusi in una sezione corrente oppure modificare o eliminare gli elementi nella sezione.
+È possibile visualizzare gli elementi inclusi nel riquadro selezionato, modificarli o eliminarli.
 
-Per aprire una tessera in modo da poter visualizzare o modificare gli elementi:
+Per aprire un riquadro e visualizzare o modificare gli elementi:
 
 1. Nella console Progetti, tocca o fai clic sull’icona con i puntini di sospensione (...) nella parte inferiore della scheda.
 
    ![Apertura di un riquadro](/help/sites-cloud/authoring/assets/project-links.png)
 
-1. L&#39;AEM elenca gli elementi di quella sezione. È possibile attivare la modalità di selezione per modificare o eliminare gli elementi.
+1. AEM mostra l’elenco degli elementi inclusi nel riquadro. Per modificarli o eliminarli, entra nella modalità di selezione.
 
    ![Riquadro aperto](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -109,9 +109,9 @@ Per aprire una tessera in modo da poter visualizzare o modificare gli elementi:
 
 È possibile visualizzare le statistiche del progetto nella console **Progetti**.
 
-### Visualizzazione della sequenza temporale di un progetto {#viewing-a-project-timeline}
+### Visualizzazione della timeline di un progetto {#viewing-a-project-timeline}
 
-La timeline del progetto fornisce informazioni sull’ultimo utilizzo delle risorse del progetto. Per visualizzare la timeline di un progetto, tocca o fai clic su **Timeline**, quindi entra nella modalità di selezione e scegli il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Per tornare alla console **Progetti**, tocca o fai clic su **Timeline**.
+La timeline di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse del progetto. Per visualizzare la timeline di un progetto, tocca o fai clic su **Timeline**, quindi entra nella modalità di selezione e scegli il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Per tornare alla console **Progetti**, tocca o fai clic su **Timeline**.
 
 ![Timeline del progetto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
@@ -127,11 +127,11 @@ Se l’icona è affiancata da una x, stai visualizzando i progetti inattivi.
 
 ## Rendere i progetti inattivi o attivi {#making-projects-inactive-or-active}
 
-È possibile disattivare un progetto dopo averlo completato, ma si desidera comunque mantenere le informazioni relative al progetto.
+Se hai completato un progetto ma desideri mantenere le informazioni ad esso associate, puoi renderlo inattivo.
 
 Per rendere un progetto inattivo (o attivo):
 
-1. In **Progetti** , apri il progetto e quindi individua **Informazioni progetto** affiancare.
+1. Nella console **Progetti**, apri il progetto e quindi individua il riquadro **Informazioni progetto**.
 
    >[!NOTE]
    >
