@@ -3,9 +3,9 @@ title: Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzat
 description: Scopri come aggiornare i frammenti di contenuto per il filtro GraphQL ottimizzato in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
       <td>Tutti i bundle  </td>
       <td> </td>
       <td>Variabile </td>
-      <td>Dimensione del batch per il salvataggio del numero di frammenti di contenuto dopo la migrazione.<br>Questo è rilevante per il numero di CF salvati nell’archivio in un batch e può essere utilizzato per ottimizzare il numero di scritture nell’archivio. </td>
+      <td>Dimensione del batch per il salvataggio del numero di frammenti di contenuto dopo la migrazione.<br>Questo è relativo a quanti frammenti di contenuto verranno salvati nell’archivio in un batch e può servire a ottimizzare il numero di scritture nell’archivio. </td>
      </tr>
      <tr>
       <td>4</td>
@@ -99,7 +99,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
       <td>Tutti i bundle  </td>
       <td> </td>
       <td>Variabile </td>
-      <td>Intervallo (secondi) per elaborare i frammenti di contenuto rimanenti fino al limite successivo<br>Questo intervallo viene anche considerato come un tempo di attesa prima di avviare il processo e un ritardo tra l'elaborazione di ogni successivo numero di CF CF CF_MIGRATION_LIMIT.<br>(*)</td>
+      <td>Intervallo (in secondi) per l’elaborazione dei frammenti di contenuto rimanenti fino al limite successivo<br>Questo intervallo viene anche considerato come tempo di attesa prima di avviare il processo, nonché come ritardo tra l’elaborazione di ogni successivo numero di frammenti di contenuto CF_MIGRATION_LIMIT.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -146,7 +146,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   I clienti che hanno abilitato l’accesso ai registri dell’ambiente utilizzando Splunk possono utilizzare la query di esempio riportata di seguito per monitorare il processo di aggiornamento. Per informazioni dettagliate sull’abilitazione della registrazione Splunk, consulta [Debug di produzione e staging](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) pagina.
+   I clienti che hanno abilitato l’accesso ai registri dell’ambiente utilizzando Splunk possono utilizzare la query di esempio riportata di seguito per monitorare il processo di aggiornamento. Per informazioni su come abilitare la registrazione Splunk, consulta la pagina [Debug degli ambienti di produzione e staging](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -242,7 +242,7 @@ Pertanto, la presenza di questa proprietà sul nodo JCR `/content/dam` con un va
 
 ## Limitazioni {#limitations}
 
-Presta attenzione alle seguenti limitazioni:
+Tieni presente le seguenti limitazioni:
 
 * L’ottimizzazione delle prestazioni dei filtri di GraphQL sarà possibile solo dopo un aggiornamento completo di tutti i frammenti di contenuto (indicato dalla presenza della proprietà `cfGlobalVersion` per il nodo JCR `/content/dam`).
 
