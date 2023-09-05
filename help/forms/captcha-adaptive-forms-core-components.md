@@ -5,16 +5,23 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 0%
+source-wordcount: '947'
+ht-degree: 12%
 
 ---
 
-# Utilizzare Google reCAPTCHA in un modulo adattivo AEM {#using-reCAPTCHA-in-adaptive-forms}
+# Utilizzare Google reCAPTCHA in un modulo adattivo AEM basato su componenti core {#using-reCAPTCHA-in-adaptive-forms}
 
-CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o scopi dannosi.
+<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| Applicabile a | Collegamento articolo |
+| -------- | ---------------------------- |
+| Modulo adattivo basato su componenti core | Questo articolo |
+| Modulo adattivo basato su componenti di base | [Fai clic qui](/help/forms/captcha-adaptive-forms.md) |
+
+Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un essere umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o avere scopi dannosi.
 
 [!DNL AEM Forms] as a [!DNL Cloud Service] supporta Google reCAPTCHA v2 in Adaptive Forms. Puoi utilizzarlo per presentare una sfida CAPTCHA all’invio del modulo. Per utilizzare reCAPTCHA in un modulo adattivo:
 
@@ -106,3 +113,9 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **D: Posso utilizzare più di un componente Captcha in un modulo adattivo?**
 **Ans:** L’utilizzo di più componenti Captcha in un modulo adattivo non è supportato. Inoltre, si sconsiglia di utilizzare il componente Captcha in un frammento o in un pannello contrassegnato per il caricamento lento.
 
+## Consulta anche
+
+* [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
+* [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments-core-components.md)
+* [Aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Utilizzare Google reCAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
