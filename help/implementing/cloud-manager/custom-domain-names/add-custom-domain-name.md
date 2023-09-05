@@ -3,9 +3,9 @@ title: Aggiunta di un nome di dominio personalizzato
 description: Scopri come aggiungere un nome di dominio personalizzato con Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ In Cloud Manager è possibile aggiungere un nome di dominio personalizzato da du
 
 >[!NOTE]
 >
->Un utente deve disporre di **Proprietario business** o **Responsabile dell’implementazione** ruolo per aggiungere un nome di dominio personalizzato in Cloud Manager
+>Per poter aggiungere un nome di dominio personalizzato in Cloud Manager, l’utente deve avere il ruolo **Proprietario business** o **Responsabile dell’implementazione**
 
 ## Aggiunta di un nome di dominio personalizzato dalla pagina Impostazioni dominio {#adding-cdn-settings}
 
@@ -42,7 +42,7 @@ Per aggiungere un nome di dominio personalizzato dalla pagina **Impostazioni dom
    >
    >Non includere `http://`, `https://` o spazi durante l’inserimento del dominio.
 
-1. Seleziona la **Ambiente** il cui servizio è associato al nome di dominio.
+1. Seleziona l’**Ambiente** il cui servizio è associato al nome di dominio.
 
 1. Seleziona il servizio **Publish** o **Anteprima**.
 
@@ -54,17 +54,17 @@ Per aggiungere un nome di dominio personalizzato dalla pagina **Impostazioni dom
 
 La distribuzione CDN richiede un certificato SSL valido e una verifica TXT correttamente riuscita. Viene indicato dallo stato **Verificato e distribuito**.
 
-Consulta [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) per ulteriori informazioni sui vari stati e su come risolvere potenziali problemi.
+Per ulteriori informazioni sui vari stati e su come risolvere i potenziali problemi, consulta il documento [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 >[!NOTE]
 >
 >L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS.
 >
->Cloud Manager verificherà la proprietà del dominio e aggiornerà lo stato riportato nella tabella Impostazioni dominio. Consulta [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) per ulteriori dettagli.
+>Cloud Manager verificherà la proprietà del dominio e aggiornerà lo stato riportato nella tabella Impostazioni dominio. Per ulteriori dettagli, consulta [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 >[!TIP]
 >
->Consulta [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) per ulteriori informazioni sui record TXT.
+>Per ulteriori informazioni sui record TXT, consulta [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
 
 ## Aggiunta di un nome di dominio personalizzato dalla pagina Ambienti {#adding-cdn-environments}
 
@@ -98,14 +98,14 @@ Per aggiungere un nome di dominio personalizzato dalla pagina **Ambienti**, segu
 
 La distribuzione CDN richiede un certificato SSL valido e una verifica TXT correttamente riuscita. Viene indicato dallo stato **Verificato e distribuito**.
 
-Consulta [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) per ulteriori informazioni sui vari stati e su come risolvere potenziali problemi.
+Per ulteriori informazioni sui vari stati e su come risolvere i potenziali problemi, consulta il documento [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 >[!NOTE]
 >
 >L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS.
 >
->Cloud Manager verificherà la proprietà del dominio e aggiornerà lo stato riportato nella tabella Impostazioni dominio. Consulta [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) per ulteriori dettagli.
+>Cloud Manager verificherà la proprietà del dominio e aggiornerà lo stato riportato nella tabella Impostazioni dominio. Per ulteriori dettagli, consulta [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 >[!TIP]
 >
->Consulta [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) per ulteriori informazioni sui record TXT.
+>Per ulteriori informazioni sui record TXT, consulta [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
