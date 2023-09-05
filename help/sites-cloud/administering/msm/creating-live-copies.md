@@ -5,15 +5,15 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4308'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Creazione e sincronizzazione di Live Copy {#creating-and-synchronizing-live-copies}
 
-Puoi creare una Live Copy da una configurazione di pagina o blueprint per riutilizzare tale contenuto nel sito. Gestisci l’ereditarietà e la sincronizzazione, puoi controllare il modo in cui vengono propagate le modifiche al contenuto.
+Puoi creare una Live Copy da una configurazione di pagina o blueprint, per riutilizzare tale contenuto all’interno del sito. Gestisci l’ereditarietà e la sincronizzazione, puoi controllare il modo in cui vengono propagate le modifiche al contenuto.
 
 ## Gestione delle configurazioni blueprint {#managing-blueprint-configurations}
 
@@ -101,7 +101,7 @@ Puoi creare una Live Copy di qualsiasi pagina:
 
 L&#39;unica differenza è che la disponibilità del **Rollout** nelle pagine sorgente/blueprint dipende dal fatto che un modello di configurazione faccia riferimento al sorgente o meno:
 
-* Se crei la Live Copy da una pagina sorgente che **è** in una configurazione blueprint a cui si fa riferimento, il comando Rollout è disponibile nelle pagine sorgente/blueprint.
+* Se crei la Live Copy da una pagina sorgente che **fa** riferimento a una configurazione blueprint, il comando Rollout è disponibile nelle pagine sorgente/blueprint.
 * Se crei la Live Copy da una pagina sorgente che **non fa** riferimento a una configurazione blueprint, il comando Rollout non sarà disponibile nelle pagine sorgente/blueprint.
 
 Per creare una Live Copy:
@@ -134,8 +134,8 @@ Per creare una Live Copy:
    * Selezionato: crea una Live Copy solo della pagina selezionata (Live Copy shallow)
    * Non selezionato: crea una Live Copy che include tutti i discendenti della pagina selezionata (Live Copy deep)
 
-1. (Facoltativo) Per specificare una o più configurazioni di rollout da utilizzare per la Live Copy, utilizza l&#39;elenco a discesa **Configurazioni di rollout** per selezionarli. Le configurazioni selezionate vengono visualizzate sotto il selettore a discesa.
-1. Tocca o fai clic su **Crea**. Viene visualizzato un messaggio di conferma, da qui puoi selezionare **Apri** o **Fine**.
+1. (Facoltativo) Per specificare una o più configurazioni di rollout da utilizzare per la Live Copy, utilizza l&#39;elenco a discesa **Configurazioni di rollout** per selezionarli. Le configurazioni selezionate vengono mostrate sotto il menu a discesa.
+1. Tocca o fai clic su **Crea**. Verrà visualizzato un messaggio di conferma. Da qui puoi selezionare una delle seguenti opzioni, **Apri** o **Fine**.
 
    >[!NOTE]
    >
@@ -164,7 +164,7 @@ Quando crei il sito, fornisci valori per le seguenti proprietà:
 
 Per creare una Live Copy di un sito da una configurazione blueprint:
 
-1. In **Sites** console, seleziona **Crea**, quindi **Sito** dal selettore a discesa.
+1. Nella console **Sites**, seleziona **Crea**, quindi **Sito** dal menu a discesa.
 1. Seleziona la configurazione blueprint da utilizzare come sorgente della Live Copy e procedi con **Successivo**:
 
    ![Crea sito da blueprint](../assets/create-site-from-blueprint.png)
@@ -245,7 +245,7 @@ Effettua il roll out di una pagina blueprint per inviare le modifiche al contenu
 
    ![Definire il tempo di rollout](../assets/rollout-now-later.png)
 
-I rollout vengono elaborati come processi asincroni e possono essere controllati sulla [***Stato processi asincroni** pagina](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+I rollout vengono elaborati come processi asincroni e possono essere controllati sulla pagina [***Stato dei processi asincroni**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
 #### Effettuare il roll out di una blueprint dalla barra dei riferimenti {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -270,7 +270,7 @@ I rollout vengono elaborati come processi asincroni e possono essere controllati
 
 1. Dopo aver confermato questi dettagli, seleziona **Rollout** per eseguire l’azione.
 
-I rollout vengono elaborati come processi asincroni e possono essere controllati sulla [**Stato processi asincroni** pagina](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+I rollout vengono elaborati come processi asincroni e possono essere verificati sulla pagina [**Stato dei processi asincroni**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
 #### Eseguire il rollout di una blueprint dalla panoramica della Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ Quando viene selezionata una pagina Blueprint, l’azione [**Rollout** è dispon
 
    ![Definire la pianificazione di rollout](../assets/rollout-now-later.png)
 
-I rollout vengono elaborati come processi asincroni e possono essere controllati sulla [**Stato processi asincroni** pagina](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+I rollout vengono elaborati come processi asincroni e possono essere verificati sulla pagina [**Stato dei processi asincroni**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
 ### Sincronizzazione di una Live Copy {#synchronizing-a-live-copy}
 
@@ -309,7 +309,7 @@ Sincronizza una Live Copy per richiamare le modifiche dall’origine alla Live C
 
    ![Pulsante Sincronizza](../assets/synchronize.png)
 
-   È richiesta la conferma, utilizza **Sincronizza** per procedere.
+   Viene richiesta la conferma. Per procedere fai clic su **Sincronizza**.
 
 #### Sincronizzazione di una Live Copy dalla panoramica della Live Copy {#synchronize-a-live-copy-from-the-live-copy-overview}
 
@@ -335,7 +335,7 @@ Per modificare il contenuto della Live Copy, puoi:
 >
 >Se crei manualmente una nuova pagina nella Live Copy, tale pagina per la Live Copy sarà locale, cioè non dispone di una pagina di origine corrispondente alla quale è associata.
 >
->Per creare una pagina locale che fa parte della relazione, è consigliabile creare la pagina locale nell’origine ed eseguire un rollout profondo. La pagina verrà creata localmente come Live Copy.
+>Per poter creare una pagina locale che fa parte della relazione, è consigliabile creare la pagina locale nell’origine ed eseguire un rollout profondo. La pagina verrà creata localmente come Live Copy.
 
 >[!NOTE]
 >
@@ -417,19 +417,19 @@ Una volta [sospesa](#suspending-inheritance-from-page-properties), l’azione **
 
 ![Pulsante Riprendi](../assets/resume.png)
 
-Se questa opzione è selezionata, viene visualizzata la finestra di dialogo. Se necessario, puoi selezionare una sincronizzazione e quindi confermare l’azione.
+Quando viene selezionata, viene visualizzata la finestra di dialogo. Se necessario, puoi selezionare una sincronizzazione e quindi confermare l’azione.
 
 #### Riprendere una pagina Live Copy dalla panoramica della Live Copy {#resume-a-live-copy-page-from-the-live-copy-overview}
 
 Quando viene selezionata una pagina Live Copy, l’azione [Riprendi è disponibile anche nella panoramica della Live Copy](live-copy-overview.md#using-the-live-copy-overview).
 
-1. Apri [Panoramica Live Copy](live-copy-overview.md#using-the-live-copy-overview) e seleziona una pagina Live Copy sospesa. La pagina viene visualizzata come **EREDITARIETÀ ANNULLATA**.
+1. Apri [Panoramica di Live Copy](live-copy-overview.md#using-the-live-copy-overview) e seleziona una pagina Live Copy sospesa. La pagina viene mostrata come **EREDITARIETÀ ANNULLATA**.
 1. Seleziona **Riprendi** nella barra degli strumenti.
 1. Indica se desideri sincronizzare la pagina dopo aver ripristinato l’ereditarietà, quindi conferma l’azione **Riprendi** nella finestra di dialogo **Riprendi Live Copy**.
 
 ### Modifica della profondità dell’ereditarietà (superficiale/profonda) {#changing-inheritance-depth-shallow-deep}
 
-Su una Live Copy esistente puoi modificare la profondità di una pagina, ovvero se le pagine figlie sono incluse.
+Su una Live Copy esistente è possibile modificare la profondità di una pagina, ovvero se le pagine secondarie sono incluse.
 
 * Passaggio a una Live Copy superficiale:
 
@@ -498,7 +498,7 @@ Per abilitare l’ereditarietà di un componente, tocca o fai clic sull&#39;icon
 Se una Live Copy contiene componenti che fanno parte di un sistema di paragrafi, l’ereditarietà di tale sistema osserva le regole seguenti:
 
 * L’ordine dei componenti in un sistema dei paragrafi ereditato può essere modificato anche con l’ereditarietà stabilita.
-* Al momento del rollout, l’ordine dei componenti viene ripristinato dalla blueprint. Se sono stati aggiunti nuovi componenti alla Live Copy prima del rollout, questi vengono riordinati insieme ai componenti sopra i quali sono stati aggiunti.
+* Al momento del rollout, l’ordine dei componenti verrà ripristinato dalla blueprint. Se sono stati aggiunti nuovi componenti alla Live Copy prima del rollout, questi verranno riordinati insieme ai componenti sopra i quali sono stati aggiunti.
 * Se l’ereditarietà del sistema dei paragrafi viene annullata, l’ordine dei componenti non verrà ripristinato al momento del rollout e rimarrà invariato nella Live Copy.
 
 >[!NOTE]
@@ -641,7 +641,7 @@ Per scollegare una Live Copy:
 
    ![Pulsante Scollega](../assets/detach-button.png)
 
-1. Viene visualizzata una finestra di dialogo di conferma, seleziona **Stacca** per completare l&#39;azione.
+1. Viene visualizzata una finestra di dialogo di conferma. Seleziona **Scollega** per completare l’azione.
 
 ### Scollega una pagina Live Copy dalla panoramica Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 
