@@ -3,9 +3,9 @@ title: Registrazione, accesso e profilo utente
 description: Scopri di più su Registrazione, Accesso, Dati utente e Sincronizzazione dei gruppi per AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1167'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ L’interfaccia`com.adobe.granite.auth.oauth.provider` può essere integrata con
 
 ### Sessioni permanenti e token incapsulati {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service dispone di sessioni permanenti basate su cookie abilitate, che garantiscono che un utente finale venga indirizzato allo stesso nodo di pubblicazione a ogni richiesta. Per migliorare le prestazioni, la funzione del token incapsulato è abilitata per impostazione predefinita, pertanto non è necessario fare riferimento al record utente nell’archivio a ogni richiesta. Se viene sostituito il nodo di pubblicazione a cui un utente finale ha un’affinità, il record del relativo ID utente è disponibile sul nuovo nodo di pubblicazione, come descritto nella sezione di sincronizzazione dei dati seguente.
+AEM as a Cloud Service dispone di sessioni permanenti basate su cookie abilitate, che garantiscono che un utente finale venga indirizzato allo stesso nodo di pubblicazione a ogni richiesta. Per migliorare le prestazioni, la funzione del token incapsulato è abilitata per impostazione predefinita, pertanto non è necessario fare riferimento al record utente nell’archivio a ogni richiesta. Se viene sostituito il nodo di pubblicazione con cui un utente finale ha un’affinità, il record del relativo ID utente sarà disponibile sul nuovo nodo di pubblicazione, come descritto nella sezione di sincronizzazione dati seguente.
 
 ## Profilo utente {#user-profile}
 
@@ -100,11 +100,11 @@ Le informazioni sul profilo utente possono essere scritte e lette in due modi:
 
 I dati dell’utente finale possono essere inviati a fornitori di terze parti come CRM e recuperati tramite API al momento dell’accesso dell’utente a AEM e memorizzati (o aggiornati) sul nodo del profilo dell’utente AEM, e utilizzati in base alle esigenze.
 
-È possibile accedere in tempo reale a servizi di terze parti per recuperare gli attributi del profilo, tuttavia è importante assicurarsi che questo non influisca materialmente sull’elaborazione delle richieste nell’AEM.
+È possibile accedere in tempo reale a servizi di terzi per recuperare gli attributi del profilo, tuttavia, è importante assicurarsi che questo non influisca materialmente sull’elaborazione delle richieste in AEM.
 
 ## Autorizzazioni (gruppi di utenti chiusi) {#permissions-closed-user-groups}
 
-I criteri di accesso al livello di pubblicazione, denominati anche gruppi di utenti chiusi, sono definiti nell’autore AEM come [qui descritto](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=it#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
+I criteri di accesso al livello di pubblicazione, denominati anche gruppi di utenti chiusi, sono definiti nell’autore AEM come [qui descritto](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=it#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito Web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
 
 * Se gli utenti effettuano l&#39;accesso autenticandosi con un provider di identità (IdP) utilizzando SAML, il gestore di autenticazione identificherà l&#39;appartenenza al gruppo degli utenti (che devono corrispondere ai CUG sul livello di pubblicazione) e manterrà l&#39;associazione tra l&#39;utente e il gruppo attraverso un record dell&#39;archivio
 * Se l&#39;accesso viene eseguito senza l&#39;integrazione IdP, il codice personalizzato può applicare le stesse relazioni di struttura dell&#39;archivio.
