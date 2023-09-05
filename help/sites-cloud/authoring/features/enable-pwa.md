@@ -3,9 +3,9 @@ title: Abilitazione delle funzioni progressive delle web app
 description: AEM Sites consente all’autore dei contenuti di abilitare le funzionalità progressive delle app web a qualsiasi sito tramite una configurazione semplice invece che tramite la codifica.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1997'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
 >* Informazioni sulle strategie di caching
 >* Supporto dal team di sviluppo
 >
->Prima di utilizzare questa funzione è consigliabile parlarne con il team di sviluppo per definire il modo migliore per utilizzarla per il progetto.
+>Prima di utilizzare questa funzione è consigliabile parlarne con il team di sviluppo per definire il modo migliore per usarla al meglio per il progetto.
 
 ## Introduzione {#introduction}
 
@@ -50,7 +50,7 @@ Questi sono i passaggi tecnici che l’autore dovrà coordinare con il team di s
 
 ### Utilizzare componenti core {#adjust-components}
 
-La versione 2.15.0 o successiva dei componenti core supporta completamente le funzioni PWA di AEM Sites. Poiché AEMaaCS include sempre la versione più recente dei Componenti core, puoi utilizzare le funzioni PWA pronte all’uso. Il progetto AEMaaCS soddisfa automaticamente questo requisito.
+La versione 2.15.0 o successiva dei componenti core supporta completamente le funzioni PWA di AEM Sites. Poiché AEMaaCS include sempre la versione più recente dei componenti core, puoi usare le funzionalità di PWA predefinite. Il progetto AEMaaCS soddisfa automaticamente questo requisito.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Regolare il Dispatcher {#adjust-dispatcher}
 
-La funzione PWA genera e utilizza file `/content/<sitename>/manifest.webmanifest`. Per impostazione predefinita, [il dispatcher](/help/implementing/dispatcher/overview.md) non espone tali file. Per esporre questi file, lo sviluppatore deve aggiungere la seguente configurazione al progetto del sito.
+La funzione PWA genera e utilizza file `/content/<sitename>/manifest.webmanifest`. Per impostazione predefinita, [Dispatcher](/help/implementing/dispatcher/overview.md) non espone tali file. Per esporre questi file, lo sviluppatore deve aggiungere la seguente configurazione al progetto del sito.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -167,7 +167,7 @@ Queste impostazioni permettono che il tuo sito si comporti come un’app nativa,
 * **Colore tema** - Definisce il [colore dell’app](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) che influisce sul modo in cui il sistema operativo dell’utente locale visualizza la barra degli strumenti dell’interfaccia utente nativa e i controlli di navigazione. A seconda del browser, può influenzare altri elementi di presentazione dell’app.
    * Utilizza la finestra a comparsa del colore per selezionare un colore.
    * Il colore può essere definito anche in base al valore esadecimale o RGB.
-* **Colore di sfondo** - Definisce [colore di sfondo dell’app](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), che viene visualizzato durante il caricamento dell’app.
+* **Colore di sfondo** - Definisce il [colore di sfondo dell’app](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), che viene visualizzato durante il caricamento dell’app.
    * Utilizza la finestra a comparsa del colore per selezionare un colore.
    * Il colore può essere definito anche in base al valore esadecimale o RGB.
    * Alcuni browser [creano automaticamente una schermata iniziale](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) dal nome dell’app, dal colore di sfondo e dall’icona.
@@ -186,7 +186,7 @@ Queste impostazioni rendono alcune parti del sito disponibili offline e localmen
       * Con questa impostazione, l’app cercherà prima il contenuto più recente tramite la rete e, se non è disponibile, tornerà alla cache locale.
    * **Raramente** - Questo è il caso dei siti quasi statici, come le pagine di riferimento.
       * Con questa impostazione, l’app cercherà prima il contenuto nella cache e, se non disponibile, tornerà sulla rete per recuperarlo.
-* **Pre-caching dei file** - Questi file in hosting su AEM vengono salvati nella cache del browser locale quando il service worker si sta installando e prima di essere utilizzato. Ciò garantisce che l’app web sia completamente funzionante quando è offline.
+* **Pre-memorizzazione in cache dei file** - Questi file in hosting su AEM vengono salvati nella cache del browser locale quando il service worker si sta installando e prima di essere utilizzato. Ciò garantisce che l’app web sia completamente funzionante quando è offline.
 * **Inclusioni dei percorsi** - Le richieste di rete per i percorsi definiti vengono intercettate e il contenuto nella cache viene restituito in conformità alla configurazione della **Strategia di memorizzazione in cache e frequenza di aggiornamento dei contenuti**.
 * **Esclusioni di cache**: questi file non verranno mai memorizzati nella cache indipendentemente dalle impostazioni in **Pre-memorizzazione in cache dei file** e **Inclusioni dei percorsi**.
 
@@ -217,7 +217,7 @@ Le librerie client vengono distribuite con l’aggiunta di un selettore di cache
 
 Il componente Immagine dei componenti core AEM determina il front-end della migliore resa da recuperare. Questo meccanismo include anche una marca temporale corrispondente all’ora dell’ultima modifica apportata alla risorsa. Questo meccanismo complica la configurazione della pre-memorizzazione della cache di PWA.
 
-Durante la configurazione della pre-memorizzazione della cache, l’utente deve elencare tutte le varianti di percorso che possono essere recuperate. Queste varianti sono composte da parametri come la qualità e la larghezza. Si consiglia di ridurre il numero di tali variazioni a un massimo di tre: piccolo, medio, grande. Puoi farlo tramite la finestra di dialogo dei criteri per i contenuti del [Componente immagine.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it)
+Durante la configurazione della pre-memorizzazione della cache, l’utente deve elencare tutte le varianti di percorso che possono essere recuperate. Queste varianti sono composte da parametri come la qualità e la larghezza. Si consiglia di ridurre il numero di queste variazioni a un massimo di tre: piccolo, medio, grande. Puoi farlo tramite la finestra di dialogo dei criteri per i contenuti del [Componente immagine.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it)
 
 Se non viene configurato con attenzione, il consumo di memoria e rete può influire notevolmente sulle prestazioni di PWA. Inoltre, se si intende prememorizzare in cache, ad esempio, 50 immagini e avere 3 larghezze per immagine, l’utente che gestisce il sito dovrà mantenere un elenco che comprende fino a 150 voci nella sezione di pre-memorizzazione della cache di PWA delle proprietà di pagina.
 
