@@ -3,9 +3,9 @@ title: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Clo
 description: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '846'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ AEM Cloud Service include molte nuove funzioni e opportunità per gestire i prog
 
 
 >[!NOTE]
->Questo documento illustra le modifiche di rilievo apportate ad AEM a livello generale. Per ulteriori informazioni e modifiche specifiche per la soluzione, consulta:
+>Questo documento illustra le modifiche di rilievo apportate ad AEM a livello generale. Per ulteriori informazioni e modifiche specifiche relative alla soluzione, consulta:
 >
 >* [Introduzione ad Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Novità e differenze](/help/overview/what-is-new-and-different.md) tra Adobe Experience Manager as a Cloud Service e le versioni precedenti
@@ -49,14 +49,14 @@ Le principali differenze riguardano le seguenti aree:
 
 ## /apps e /libs non sono modificabili in fase di esecuzione {#apps-libs-immutable}
 
-Tutti i contenuti e le sottocartelle in `/apps` e `/libs` sono di sola lettura. Non è possibile apportarvi modifiche mediante funzioni o codice personalizzato. Viene restituito un errore che indica che il contenuto è di sola lettura e che non è stato possibile completare l&#39;operazione di scrittura. Questa modifica interessa diverse aree di AEM:
+Tutti i contenuti e le sottocartelle in `/apps` e `/libs` sono di sola lettura. Non è possibile apportarvi modifiche mediante funzioni o codice personalizzato. Verrà restituito un errore per segnalare che il contenuto è di sola lettura e che l’operazione di scrittura non è stata completata. Questa modifica interessa diverse aree di AEM:
 
 * Non sono consentite modifiche in `/libs`.
    * Questa non è una nuova regola, ma non veniva applicata nelle versioni on-premise precedenti di AEM.
 * Le sovrapposizioni per le aree in `/libs` in cui è consentita la sovrapposizione sono ancora consentite in `/apps`.
    * Tali sovrapposizioni devono provenire da Git tramite la pipeline CI/CD.
 * Le informazioni di progettazione dei modelli statici memorizzate in `/apps` non possono essere modificate tramite l’interfaccia.
-   * In alternativa, è consigliabile utilizzare i modelli modificabili.
+   * In alternativa, si consiglia di usare i modelli modificabili.
    * Se i modelli statici sono ancora necessari, le informazioni di configurazione devono provenire da Git tramite la pipeline CI/CD.
 * Le configurazioni di rollout di blueprint MSM e MSM personalizzato devono essere installate da Git tramite la pipeline CI/CD.
 * Le modifiche per la traduzione I18N devono provenire da Git tramite la pipeline CI/CD.
