@@ -1,11 +1,11 @@
 ---
 title: Progetti
-description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso semplifica la gestione dei progetti
+description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso ne semplifica la gestione
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1255'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +17,12 @@ La funzione Progetti consente di raggruppare le risorse in una singola entità. 
 >
 >Affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano le funzionalità, come la creazione di progetti, la creazione di attività/flussi di lavoro, la visualizzazione e la gestione del team, è necessario che tali utenti abbiano accesso in lettura a `/home/users` e `/home/groups`. Il modo più semplice per implementarlo è consentire al gruppo **utenti del progetto** l’accesso in lettura a `/home/users` e `/home/groups`.
 
-In qualità di utente, puoi effettuare le seguenti operazioni:
+Come utente, puoi effettuare le seguenti operazioni:
 
 * Creare progetti
 * Associare contenuto e cartelle di risorse a un progetto
-* Elimina progetti
-* Rimuovi collegamenti contenuto dal progetto
+* Eliminare progetti
+* Rimuovere i collegamenti contenuto dal progetto
 
 Consulta i seguenti argomenti aggiuntivi:
 
@@ -32,26 +32,26 @@ Consulta i seguenti argomenti aggiuntivi:
 
 ## Console Progetti {#projects-console}
 
-Nella console Progetti puoi accedere e gestire i progetti in AEM.
+Dalla console Progetti è possibile accedere e gestire i tuoi progetti in AEM.
 
 ![Console Progetti](/help/sites-cloud/authoring/assets/projects-console.png)
 
-* Seleziona **Timeline** e quindi un progetto per visualizzarne la timeline.
+* Seleziona **Timeline** e quindi un progetto per visualizzarne la relativa timeline.
 * Tocca o fai clic su **Seleziona** per accedere alla modalità di selezione.
-* Clic **Crea** per aggiungere progetti.
-* **Mostra/Nascondi progetti attivi** consente di passare da tutti i progetti a solo quelli attivi.
-* **Mostra visualizzazione statistiche** consente di visualizzare le statistiche del progetto relative al completamento delle attività.
+* Fai clic su **Crea** per aggiungere progetti.
+* **Mostra/Nascondi progetti attivi** consente di passare da tutti i progetti a solo quelli che sono attivi.
+* **Mostra vista statistiche** consente di visualizzare le statistiche del progetto relative al completamento delle attività.
 
 ## Riquadri progetto {#project-tiles}
 
-Con Progetti è possibile associare diversi tipi di informazioni ai progetti. Questi vengono chiamati **Riquadri**. In questa sezione sono descritte tutte le sezioni e il tipo di informazioni in esse contenute.
+Da Progetti è possibile associare diversi tipi di informazioni ai progetti. Questi vengono chiamati **Riquadri**. In questa sezione sono descritte tutti i riquadri e il tipo di informazioni che contengono.
 
-Al progetto possono essere associate le seguenti tessere. Ciascuno è descritto nelle sezioni seguenti:
+È possibile associare i seguenti riquadri al progetto. Ciascuno è descritto nelle sezioni seguenti:
 
 * Risorse e raccolte risorse
 * Esperienze
 * Collegamenti
-* Informazioni progetto
+* Informazioni sul progetto
 * Team
 * Pagine di destinazione
 * E-mail
@@ -61,7 +61,7 @@ Al progetto possono essere associate le seguenti tessere. Ciascuno è descritto 
 
 ### Assets {#assets}
 
-In **Risorse** sezione, puoi raccogliere tutte le risorse utilizzate per un particolare progetto.
+Nel riquadro **Risorse**, puoi raccogliere tutte le risorse utilizzate per un particolare progetto.
 
 ![Riquadro risorse](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
@@ -71,7 +71,7 @@ Le risorse vengono caricate direttamente nel riquadro. Inoltre, se disponi del c
 
 ### Raccolte di risorse {#asset-collections}
 
-Simile alle risorse, puoi aggiungere [raccolte risorse](/help/assets/manage-collections.md) direttamente al progetto. Puoi definire le raccolte in Assets.
+Come per le risorse, puoi aggiungere [raccolte di risorse](/help/assets/manage-collections.md) direttamente al progetto. Puoi definire le raccolte in Risorse.
 
 ![Raccolta risorse](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -79,7 +79,7 @@ Per aggiungere una raccolta, fai clic su **Aggiungi raccolta** e seleziona la ra
 
 ### Esperienze {#experiences}
 
-Il **Esperienze** sezione consente di aggiungere al progetto un’app mobile, un sito web o una pubblicazione.
+Il riquadro **Esperienze** consente di aggiungere un’app mobile, un sito web o una pubblicazione al progetto.
 
 ![Esperienze](/help/sites-cloud/authoring/assets/project-experiences.png)
 
@@ -95,23 +95,23 @@ Il riquadro Collegamenti consente di associare collegamenti esterni al progetto.
 
 ![Collegamenti](/help/sites-cloud/authoring/assets/project-links.png)
 
-È possibile assegnare al collegamento un nome facile da riconoscere e modificare la miniatura.
+Puoi denominare il collegamento con un nome facile da riconoscere e modificare la miniatura.
 
 ![Aggiungi collegamento](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
-### Informazioni progetto {#project-info}
+### Informazioni sul progetto {#project-info}
 
-Il riquadro Informazioni progetto fornisce informazioni generali sul progetto, tra cui una descrizione, lo stato del progetto (inattivo o attivo), una data di scadenza e i membri. Inoltre, è possibile aggiungere una miniatura del progetto, visualizzata nella pagina principale Progetti.
+Il riquadro Informazioni sul progetto fornisce informazioni generali sul progetto, tra cui una descrizione, lo stato del progetto (attivo o inattivo), una data di scadenza e i membri. Inoltre, è possibile aggiungere una miniatura del progetto, che viene visualizzata nella pagina principale Progetti.
 
 ![Informazioni progetto](/help/sites-cloud/authoring/assets/project-info.png)
 
-I membri del team possono essere assegnati ed eliminati da questa sezione (oppure è possibile modificare i ruoli) e dalla sezione Team.
+I membri del team possono essere assegnati a questo riquadro o al riquadro Team ed eliminati (oppure è possibile modificare i ruoli).
 
 ![Aggiungi membri del team al progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 ### Processo di traduzione {#translation-job}
 
-Il riquadro Lavoro di traduzione è il punto in cui inizia una traduzione e in cui viene visualizzato lo stato delle traduzioni. Per impostare la traduzione, vedi [Creazione di progetti di traduzione](/help/assets/translate-assets.md).
+Dal riquadro Processo di traduzione puoi iniziare una traduzione e visualizzare lo stato delle traduzioni. Per impostare la traduzione, consulta [Creazione di progetti di traduzione](/help/assets/translate-assets.md).
 
 ![Lavoro di traduzione](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
@@ -121,7 +121,7 @@ Fai clic sull’ellissi nella parte inferiore della scheda **Lavoro di traduzion
 
 ### Team {#team}
 
-In questo riquadro è possibile specificare i membri del team di progetto. Durante la modifica, puoi immettere il nome del membro del team e assegnare il ruolo utente.
+In questo riquadro è possibile specificare i membri del team del progetto. Durante la modifica, è possibile immettere il nome del membro del team e assegnare il ruolo utente.
 
 ![Riquadro team](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
@@ -131,17 +131,17 @@ Puoi aggiungere ed eliminare membri dal team. Inoltre, puoi modificare il [ruolo
 
 ### Flussi di lavoro {#workflows}
 
-Puoi assegnare il progetto in modo che segua determinati flussi di lavoro. Se sono in esecuzione flussi di lavoro, il loro stato viene visualizzato nel **Flussi di lavoro** affiancare in Progetti.
+Puoi assegnare il progetto in modo da seguire determinati flussi di lavoro. Se sono in esecuzione dei flussi di lavoro, il loro stato viene visualizzato nel riquadro **Flussi di lavoro** in Progetti.
 
 ![Flussi di lavoro](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-Puoi assegnare il progetto in modo che segua determinati flussi di lavoro. A seconda del progetto scelto, sono disponibili flussi di lavoro diversi.
+Puoi assegnare il progetto in modo da seguire determinati flussi di lavoro. A seconda del progetto scelto, sono disponibili flussi di lavoro diversi.
 
-Questi sono descritti in [Utilizzo dei flussi di lavoro per i progetti](/help/sites-cloud/authoring/projects/workflows.md).
+Questi sono descritti in [Utilizzo dei flussi di lavoro del progetto](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### Lanci {#launches}
 
-Il riquadro Lanci mostra tutti i lanci richiesti con un [Richiedi flusso di lavoro di Launch](/help/sites-cloud/authoring/projects/workflows.md).
+Il riquadro Lanci mostra tutti i lanci richiesti con [Flusso di lavoro Richiesta lancio](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![Lanci](/help/sites-cloud/authoring/assets/project-launches.png)
 
@@ -165,15 +165,15 @@ In base al modello selezionato, sono disponibili diverse opzioni, in particolare
 
 I diversi ruoli utente vengono impostati in un modello di progetto e vengono utilizzati per due motivi principali:
 
-1. Autorizzazioni. I ruoli utente rientrano in una delle tre categorie elencate: osservatore, editor, proprietario. Ad esempio, un fotografo o un copywriter avrà gli stessi privilegi di un editor. Le autorizzazioni determinano cosa può fare un utente al contenuto di un progetto.
-1. Flussi di lavoro. I flussi di lavoro determinano a chi vengono assegnate le attività di un progetto. Le attività possono essere associate a un ruolo del progetto. Ad esempio, è possibile assegnare un&#39;attività ai fotografi in modo che tutti i membri del gruppo che hanno il ruolo di fotografo ottengano l&#39;attività.
+1. Autorizzazioni. I ruoli utente rientrano in una delle tre categorie elencate: Osservatore, Editor, Proprietario. Ad esempio, un fotografo o un copywriter avrà gli stessi privilegi di un editor. Le autorizzazioni determinano cosa può fare un utente in relazione al contenuto di un progetto.
+1. Flussi di lavoro. I flussi di lavoro determinano a chi vengono assegnate le attività di un progetto. Le attività possono essere associate a un ruolo del progetto. Ad esempio, un’attività può essere assegnata ai Fotografi in modo che tutti i membri del gruppo che hanno il ruolo di fotografo la riceveranno.
 
 Tutti i progetti supportano i seguenti ruoli predefiniti che consentono di amministrare le autorizzazioni di protezione e controllo:
 
 | Ruolo | Descrizione | Autorizzazioni | Iscrizione al gruppo |
 |---|---|---|---|
-| Osservatore | L’utente con questo ruolo può visualizzare i dettagli del progetto, compreso lo stato. | Autorizzazioni di sola lettura per un progetto | `workflow-users` gruppo |
-| Editor | Un utente con questo ruolo può caricare e modificare il contenuto di un progetto. | Accesso in lettura e scrittura a un progetto, ai metadati associati e alle risorse correlate; privilegi per caricare un elenco di immagini, rivedere e approvare le risorse; permessi di scrittura su /etc/commerce; permessi di modifica su un progetto specifico. | gruppo workflow-users |
+| Osservatore | Un utente con questo ruolo può visualizzare i dettagli del progetto, compreso lo stato. | Autorizzazioni di sola lettura per un progetto | `workflow-users` gruppo |
+| Editor | Un utente con questo ruolo può caricare e modificare il contenuto di un progetto. | Accesso in lettura e scrittura a un progetto, ai metadati associati e alle risorse correlate; privilegi per caricare un elenco di immagini, rivedere e approvare le risorse; permessi di scrittura su /etc/commerce; permessi di modifica su un progetto specifico. | gruppo utenti del flusso di lavoro |
 | Proprietario | Un utente con questo ruolo può avviare un progetto. Un proprietario può creare un progetto, avviare il lavoro in un progetto e spostare le risorse approvate nella cartella di produzione. Il proprietario può visualizzare ed eseguire anche tutte le altre attività del progetto. | Autorizzazioni di scrittura su `/etc/commerce` | `dam-users` gruppo (per poter creare un progetto) amministratori di progetto (per poter creare un progetto e spostare risorse) |
 
 >[!NOTE]
