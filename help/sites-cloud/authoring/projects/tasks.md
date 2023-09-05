@@ -3,45 +3,45 @@ title: Utilizzo delle attività
 description: Le attività rappresentano elementi di lavoro da eseguire sul contenuto e vengono utilizzate nei progetti per determinare il livello di completezza delle attività correnti
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '576'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 # Utilizzo delle attività {#working-with-tasks}
 
-Le attività rappresentano elementi di lavoro da eseguire sul contenuto. Quando ti viene assegnata un’attività, questa viene visualizzata nella casella in entrata del flusso di lavoro. Gli elementi attività hanno un valore di attività nella colonna Tipo.
+Le attività rappresentano elementi di lavoro da eseguire sul contenuto. Quando ti viene assegnata un’attività, questa viene visualizzata nella casella in entrata del flusso di lavoro. Gli elementi attività sono identificati dal valore attività nella colonna Tipo.
 
-Le attività vengono inoltre utilizzate nei progetti per determinare il livello di completezza delle attività correnti, incluse le attività del flusso di lavoro.
+Le attività vengono utilizzate anche nei progetti per determinare il livello di completezza delle attività correnti, incluse quelle del flusso di lavoro.
 
-## Tracciamento dell’avanzamento del progetto {#tracking-project-progress}
+## Tracciamento dello stato di avanzamento del progetto {#tracking-project-progress}
 
-Puoi tenere traccia dell’avanzamento del progetto osservando le attività attive/completate all’interno di un progetto rappresentato da **Attività** affiancare. L’avanzamento del progetto può essere determinato da:
+Puoi tenere traccia dell’avanzamento del progetto osservando le attività completate/attive all’interno di un progetto, rappresentato dal riquadro **Attività**. L’avanzamento del progetto può essere determinato da:
 
 * **Titolo attività:** l’avanzamento generale del progetto è rappresentato nella sezione Titolo attività, disponibile nella pagina dei dettagli del progetto.
 
 * **Elenco attività**: quando fai clic su Titolo attività, viene visualizzato un elenco delle attività. L’elenco contiene informazioni dettagliate su tutte le attività correlate al progetto.
 
-Elencare sia le attività del flusso di lavoro che le attività create direttamente nel **Attività** affiancare.
+Sono elencate sia le attività del flusso di lavoro che le attività create direttamente nel riquadro **Attività**.
 
-### Sezione attività {#task-tile}
+### Riquadro Attività {#task-tile}
 
-Se un progetto include attività correlate, all’interno del progetto viene visualizzata una sezione Attività. Il riquadro Attività mostra lo stato corrente del progetto. Si basa sulle attività esistenti all’interno del flusso di lavoro e non include le attività che verranno generate in futuro mentre il flusso di lavoro procede. Le seguenti informazioni sono visibili nel riquadro attività:
+Se un progetto include attività correlate, viene visualizzato un Riquadro attività all’interno del progetto. Il Riquadro attività mostra lo stato corrente del progetto. Si basa sulle attività esistenti all’interno del flusso di lavoro e non include le attività che verranno generate in futuro al procedere del flusso di lavoro. Nel Riquadro attività sono visibili le seguenti informazioni:
 
 * Percentuale di attività completate
-* Percentuale di attività attive
-* Percentuale di attività scadute
+* Percentuale di attività in corso
+* Percentuale di attività in ritardo
 
 ![Riquadro attività](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
 
-### Visualizzazione o modifica delle attività di un progetto {#viewing-or-modifying-the-tasks-in-a-project}
+### Visualizzazione o modifica delle attività in un progetto {#viewing-or-modifying-the-tasks-in-a-project}
 
-Oltre a tenere traccia dell’avanzamento, potresti voler visualizzare ulteriori informazioni sul progetto o modificarlo.
+Oltre a tenere traccia dell’avanzamento, è anche possibile visualizzare ulteriori informazioni sul progetto o modificarlo.
 
 #### Elenco attività {#task-list}
 
-Fai clic sui puntini di sospensione (...) nella sezione Attività per visualizzare l’elenco delle attività correlate al progetto. Le attività sono suddivise per flussi di lavoro padre. I dettagli dell’attività vengono visualizzati insieme a metadati quali data di scadenza, assegnatario, priorità e stato.
+Fai clic sui puntini di sospensione (...) nel Riquadro attività per visualizzare l’elenco delle attività correlate al progetto. Le attività sono suddivise per flussi di lavoro principali. I dettagli dell’attività vengono visualizzati insieme a metadati, quali la data di scadenza, l’assegnatario, la priorità e lo stato.
 
 ![Elenco delle attività](/help/sites-cloud/authoring/assets/projects-task-list.png)
 
@@ -51,20 +51,20 @@ Per ulteriori informazioni su una particolare attività, nell’Elenco Attività
 
 ![Dettagli attività](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
-### Visualizzazione e modifica di commenti attività {#viewing-and-modifying-task-comments}
+### Visualizzazione e modifica di commenti dell’attività {#viewing-and-modifying-task-comments}
 
-In Dettagli attività è possibile modificare o aggiungere commenti. Inoltre, tutti i commenti di un progetto sono visibili nell’area Commenti.
+Nei Dettagli attività è possibile modificare o aggiungere commenti. Inoltre tutti i commenti presenti in un progetto sono visibili nell’area Commenti.
 
 ![Commenti sulle attività](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
 
 ### Aggiunta di attività {#adding-tasks}
 
-Puoi aggiungere nuove attività ai progetti. Queste attività vengono quindi visualizzate nel riquadro Attività e sono disponibili nella casella in entrata Notifiche per eseguire azioni su.
+Puoi aggiungere nuove attività ai progetti. Queste attività vengono visualizzate quindi nel Riquadro attività e sono disponibili nella casella in entrata Notifiche,per eseguire le azioni desiderate.
 
-Per aggiungere un&#39;attività:
+Per aggiungere un’attività:
 
 1. Nel progetto, nella sezione **Attività**, tocca o fai clic sull’icona +. Si apre la finestra **Aggiungi attività**.
-1. Immettere le informazioni sull&#39;attività. Il titolo dell’attività e il gruppo a cui è assegnata sono obbligatori. Informazioni aggiuntive, ad esempio il percorso del contenuto, la descrizione, la priorità dell&#39;attività e la data di scadenza, sono facoltative. Inoltre, è possibile selezionare **Avanzate** , per immettere il nome dell&#39;attività, utilizzato per denominare l&#39;URL.
+1. Inserisci le informazioni sull’attività. Il titolo dell’attività e il gruppo a cui è assegnata sono obbligatori. Informazioni aggiuntive, tra cui il percorso del contenuto, la descrizione, la priorità dell’attività e la data di scadenza, sono facoltative. Inoltre, puoi selezionare la scheda **Avanzate**, per inserire il nome dell’attività che viene usato per assegnare un nome all’URL.
 
    ![Aggiungi un’attività](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
@@ -72,10 +72,10 @@ Per aggiungere un&#39;attività:
 
 ## Utilizzo delle attività nella casella in entrata {#working-with-tasks-in-the-inbox}
 
-Un altro modo per accedere alle attività è dalla casella in entrata. Dalla casella in entrata, puoi aprire il contenuto per implementare le modifiche necessarie. Al termine, impostare lo stato dell&#39;attività su Completato. Le attività vengono visualizzate anche nella casella in entrata quando sono assegnate a un gruppo di utenti a cui appartieni. In questo caso, qualsiasi membro del gruppo può eseguire il lavoro e completare l&#39;attività.
+Un altro modo per accedere alle attività è dalla casella in entrata. Dalla casella in entrata, puoi aprire il contenuto per implementare le modifiche necessarie. Al termine, lo stato dell’attività viene impostato su Completato. Le attività vengono visualizzate anche nella casella in entrata quando sono assegnate a un gruppo utenti di cui fai parte. In questo caso, qualsiasi membro del gruppo può eseguire le operazioni necessarie e completare l’attività.
 
 ![Attività nella casella in entrata](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-Per completare un&#39;attività, selezionarla e fare clic su **Completa**. Aggiungere informazioni all&#39;attività e quindi fare clic su **Fine**. Consulta [Casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md) per ulteriori informazioni.
+Per completare un’attività, selezionala e fai clic su **Completa**. Aggiungi informazioni all’attività e quindi fai clic su **Fine**. Per ulteriori informazioni, consulta [Casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Notifiche delle attività](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
