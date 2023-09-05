@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '872'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti AEM Sites utilizzando potenti strumenti di traduzione AEM, ideale per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta il [Percorso di traduzione Sites](/help/journey-sites/translation/overview.md) per una guida attraverso la traduzione di contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o di traduzione.
 
 ## Generale {#general}
 
@@ -24,7 +24,7 @@ La creazione o l’espansione di una presenza web globale può essere un process
 * **Pianifica l’espansione globale** prima di implementare il primo sito. Adattare un sito esistente a una copertura globale quando il sito è stato implementato con breve preavviso è tipicamente più difficile del pianificare l’espansione globale all’inizio:
    * Valuta lo stato attuale della maturità di localizzazione della tua organizzazione. Determina se disponi di **strumenti**, **processi** e **risorse** per supportare l’espansione globale.
    * Presta attenzione a **regolamenti globali** e **preferenze linguistiche regionali**. Progetta strutture e processi di contenuto flessibili in grado di adattarsi a un ambiente aziendale globale in continua evoluzione.
-* Determina un modello di **governance** che supporta il tuo business globale e utilizza i meccanismi AEM come MSM e autorizzazioni utente per applicare il modello scelto. Ad esempio, puoi determinare se il contenuto viene creato a livello centrale e &quot;inviato&quot; o &quot;trascinato&quot; alle aree geografiche o ai paesi. Determina i contenuti che possono essere sbloccati e modificati nelle aree geografiche. Determina chi è responsabile dell’avvio e della gestione delle traduzioni.
+* Determina un modello di **governance** che supporta il tuo business globale e utilizza i meccanismi AEM come MSM e autorizzazioni utente per applicare il modello scelto. Ad esempio, puoi determinare se il contenuto viene creato a livello centrale e “inviato” o “trascinato” alle aree geografiche o ai Paesi. Determina i contenuti che possono essere sbloccati e modificati nelle aree geografiche. Determina chi è responsabile dell’avvio e della gestione delle traduzioni.
 * Se le risorse lo consentono, è meglio gestire l’attività di traduzione con un team centrale che può sviluppare competenze negli strumenti, nei processi e nelle relazioni con i fornitori necessari.
 * **Pianifica**, **crea un prototipo** e **testa** la struttura e i processi globali per assicurarti che supportino l’attività e che tu disponga del supporto richiesto dalle parti interessate nelle aree geografiche.
 
@@ -32,7 +32,7 @@ La creazione o l’espansione di una presenza web globale può essere un process
 
 * Durante la progettazione della struttura del sito, esamina innanzitutto il contenuto e determina dove e in quale lingua viene creato il contenuto. Questa posizione deve essere il livello superiore del sito.
 * La best practice consiste in una **struttura basata sul linguaggio** con un massimo di 3 livelli tra l’authoring di livello superiore e i siti del Paese.
-* Utilizza una convenzione di denominazione di un sito in una lingua o in un paese che segue **[Standard W3C](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
+* Utilizza una convenzione di denominazione di un sito in una lingua o in un Paese che segue gli **[standard W3C](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
 * Determina in che modo i contenuti vengono distribuiti da aree geografiche e Paesi. Considera quali Paesi condividono le lingue. Si consiglia di creare master di lingua, un livello di pagine non attivate, in cui il contenuto tradotto può essere rivisto e modificato e quindi inviato o trascinato a un sito del Paese che condivide tale lingua.
 * Sono disponibili due approcci per la creazione di master di lingua: tramite copie per lingua e tramite copie MSM/live.
    * L’approccio tramite la copia per lingua è quello utilizzato nel framework di integrazione della traduzione pronto all’uso di AEM, e quindi è il modo più semplice per iniziare. Il framework fornisce un’interfaccia utente che semplifica inizialmente la propagazione e la traduzione delle modifiche apportate al contenuto dalla lingua principale (ad esempio inglese) al contenuto principale di un’altra lingua. Tuttavia, man mano che il progetto cresce, l’automazione del flusso di lavoro diventa sempre più necessaria per gestire la traduzione di un maggior numero di pagine e/o lingue.
