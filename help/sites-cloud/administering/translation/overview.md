@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Automatizza la traduzione di contenuti e risorse della pagina per creare e gesti
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un percorso guidato attraverso la traduzione dei contenuti AEM Sites utilizzando i potenti strumenti di traduzione dell’AEM, ideale per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta il [Percorso di traduzione Sites](/help/journey-sites/translation/overview.md) per una guida attraverso la traduzione di contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o di traduzione.
 
 La traduzione del contenuto prevede i seguenti passaggi:
 
