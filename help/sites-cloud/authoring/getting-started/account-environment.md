@@ -3,9 +3,9 @@ title: Configurazione dell’ambiente dell’account
 description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Per prima cosa, accedi all’opzione [Utente](#user-settings) nell’intestazion
 
 ## Impostazioni utente {#user-settings}
 
-Il **Utente** La finestra di dialogo delle impostazioni consente di accedere a:
+Le impostazioni **Utente** consentono di accedere a:
 
 * Impersona
    * La funzionalità Impersona permette a un utente di lavorare a nome di un altro utente. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -44,9 +44,9 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Gestione finestre**
 
-  Definisce il comportamento o l&#39;apertura delle finestre. Puoi selezionare:
+  Ciò definisce il comportamento o l’apertura delle finestre. Puoi selezionare:
 
-   * **Finestre multiple** (Predefinito)
+   * **Finestre multiple** (predefinito)
 
       * Le pagine vengono aperte in una nuova finestra.
 
@@ -85,7 +85,7 @@ Ogni utente può impostare autonomamente determinate proprietà.
    * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-  Questa opzione abilita le scelte rapide da tastiera. Per impostazione predefinita sono abilitate, ma possono essere disabilitate, ad esempio se un utente ha determinati requisiti di accessibilità.
+  Questa opzione abilita le scelte rapide da tastiera. Per impostazione predefinita queste sono abilitate, ma possono essere disabilitate ad esempio se un utente ha determinati requisiti di accessibilità.
 
 * **Abilita pagina iniziale di Assets**
 
@@ -93,4 +93,4 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Configurazione Stock**
 
-  Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l’amministratore di sistema ha abilitato [Integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l’amministratore di sistema ha abilitato [l’integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
