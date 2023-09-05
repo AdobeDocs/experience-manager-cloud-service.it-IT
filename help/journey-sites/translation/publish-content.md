@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1358'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,9 +81,9 @@ Il contenuto tradotto è ora pubblicato. Ora è possibile accedervi e utilizzarl
 
 >[!TIP]
 >
->Quando si pubblica per pubblicare più traduzioni contemporaneamente, è possibile selezionare più elementi (ovvero cartelle multilingue).
+>Per pubblicare più traduzioni contemporaneamente, è possibile selezionare più elementi (ovvero cartelle multilingue) durante la pubblicazione.
 
-Quando si pubblicano i contenuti, sono disponibili opzioni aggiuntive, ad esempio per pianificare un’ora di pubblicazione, che vanno oltre l’ambito di questo percorso. Consulta la [Risorse aggiuntive](#additional-resources) per ulteriori informazioni.
+Quando si pubblicano i contenuti, sono disponibili opzioni aggiuntive, ad esempio per pianificare un’ora di pubblicazione, che vanno oltre l’ambito di questo percorso. Per ulteriori informazioni, consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine del documento.
 
 ## Aggiornamento del contenuto tradotto {#updating-translations}
 
