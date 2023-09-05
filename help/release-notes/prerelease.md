@@ -3,9 +3,9 @@ title: Canale prerelease Adobe Experience Manager as a Cloud Service
 description: Scopri come utilizzare il canale prerelease per ottenere un’anteprima delle prossime funzionalità su AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1304'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Scopri come utilizzare il canale prerelease per ottenere un’anteprima delle pr
 
 Adobe Experience Manager as a Cloud Service offre nuove funzionalità su cadenza mensile, secondo la [road map di versioni di Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it#aem-as-cloud-service)
 
-Per acquisire familiarità con le funzioni pianificate per la pubblicazione della seguente versione, puoi abbonarti al canale prerelease, accessibile configurando gli ambienti di sviluppo o qualsiasi ambiente sandbox. Puoi visualizzare in anteprima le modifiche accessibili tramite l’interfaccia utente dell’AEM e generare il codice rispetto a qualsiasi nuova API prerelease.
+Per acquisire familiarità con le funzionalità programmate per essere pubblicate nella prossima versione funzionale, puoi abbonarti al canale prerelease, che è accessibile configurando gli ambienti di sviluppo o qualsiasi ambiente sandbox. Puoi visualizzare in anteprima le modifiche accessibili tramite l’interfaccia utente di AEM e generare il codice rispetto a qualsiasi nuova API prerelease.
 
-L’elenco delle funzioni prerelease per una data funzione è pubblicato all’interno di [note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
+L’elenco delle funzioni prerelease per una data funzione è pubblicato all’interno delle [note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Versioni di AEM as a Cloud Service {#releases}
 
@@ -31,13 +31,13 @@ AEM as a Cloud Service dispone di due tipi di versioni.
 
 Questo modello garantisce versioni continue senza interruzioni del servizio.
 
-Il canale preliminare consente di visualizzare in anteprima le funzioni pianificate per il prossimo rilascio di funzioni, in modo da poter valutare le funzionalità future e pianificare la loro possibile implementazione per i tuoi progetti. Ti consente di pianificare in anticipo il prossimo rilascio di funzioni.
+Il canale prerelease consente di visualizzare in anteprima le funzioni pianificate per la prossima versione funzionale, per poter valutare le funzionalità in arrivo e pianificare la loro eventuale implementazione per i progetti. Consente di pianificare in anticipo la prossima versione funzionale.
 
-Ad esempio, se è maggio e sei abbonato al canale prerelease, puoi valutare le funzioni nella prossima versione di giugno.
+Ad esempio, se siamo nel mese di maggio e sei abbonato al canale prerelease, puoi valutare le funzionalità della prossima versione di giugno.
 
 ![Grafico a cadenza prerelease](assets/prerelease-cadence.png)
 
-La versione prerelease offre una finestra continua di un mese sulle prossime funzioni di AEMaaCS, consentendoti di valutare l’impatto di eventuali nuove funzioni sui progetti e sulle personalizzazioni e pianificare il rollout di tali funzioni, nonché di eseguire test e corsi di formazione per gli utenti.
+La versione prerelease offre una finestra di un mese sulle prossime funzionalità di AEMaaCS, che ti offre il tempo di valutare l’impatto di eventuali nuove funzioni sui tuoi progetti e personalizzazioni e di pianificare l’implementazione di tali funzioni, test e formazione per gli utenti.
 
 Sfruttare efficacemente il canale prerelease richiede quattro passaggi.
 
@@ -189,7 +189,7 @@ Il [plug-in maven di AEM CS SDK build Analyzer v1.0 e versioni successive](https
 
 ## Formazione degli utenti {#train-users}
 
-Dopo aver testato le nuove funzioni nel canale prerelease e aver deciso di utilizzarle nei progetti, devi formare gli utenti.
+Dopo aver testato le nuove funzioni nel canale prerelease e aver deciso di utilizzarle nei progetti, è necessario formare gli utenti.
 
 Adobe Experience League offre molte risorse per imparare AEMaaCS.
 
