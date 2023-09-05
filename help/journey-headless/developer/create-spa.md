@@ -3,7 +3,7 @@ title: Facoltativo - Come creare applicazioni a pagina singola (SPA) con Adobe E
 description: In questa continuazione facoltativa del Percorso per sviluppatori AEM headless, scoprirai come AEM riesce a unire la distribuzione headless con le tradizionali funzioni di un CMS full-stack e come tu puoi creare SPA modificabili utilizzando il framework editor di SPA di AEM.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1266'
 ht-degree: 100%
 
