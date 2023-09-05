@@ -2,7 +2,7 @@
 title: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '732'
 ht-degree: 100%
 
