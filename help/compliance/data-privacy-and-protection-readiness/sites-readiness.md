@@ -3,9 +3,9 @@ title: Normative sulla protezione e la privacy dei dati - Preparazione di Adobe 
 description: Scopri il supporto di Adobe Experience Manager as a Cloud Service Sites per le varie normative su privacy e protezione dei dati, incluso il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi quando si implementa un nuovo progetto AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 86%
 
 Adobe Experience Manager as a Cloud Service Sites è pronto ad aiutare i clienti a rispettare gli obblighi in materia di privacy e protezione dei dati. Questa pagina guida i clienti attraverso le procedure per gestire tali richieste in AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con codice.
 
-Per ulteriori informazioni, vedere [Centro per la privacy di Adobe](https://www.adobe.com/it/privacy.html).
+Per ulteriori informazioni, visita il [Centro per la privacy Adobe](https://www.adobe.com/it/privacy.html).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Gli account utente e i contenuti UGC sul server di authoring sono trattati nella
 
 Gli account utente utilizzati per autenticare i visitatori sul sito e i contenuti UGC sul server di pubblicazione sono trattati nella [documentazione di AEM Foundation](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
 
-Per impostazione predefinita, i componenti AEM Sites non memorizzano i dati dei moduli immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terze parti o ad Adobe Campaign per un’ulteriore elaborazione.
+Per impostazione predefinita, i componenti AEM Sites non memorizzano i dati dei moduli immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terzi o ad Adobe Campaign per un’ulteriore elaborazione.
 
 ## Consenso/rinuncia {#opt-in-opt-out}
 
@@ -76,13 +76,13 @@ Per rinunciare:
 
 AEM Sites include un’integrazione opzionale con Analytics Foundation che utilizza funzionalità interne al servizio Adobe Analytics On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati in relazione ad Adobe Analytics, consulta [Adobe Analytics e Privacy dei dati](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=it).
+Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati in relazione ad Adobe Analytics, consulta [Adobe Analytics e privacy dei dati](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=it).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites include un’integrazione opzionale con Personalization Foundation by Target che utilizza funzionalità interne al servizio Adobe Target On-demand.
 
-Per informazioni sulla gestione delle richieste dei soggetti interessati in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati (RGPD)](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=it).
+Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati (RGPD)](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=it).
 
 ## ContextHub {#contexthub}
 
@@ -174,7 +174,7 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     L’archivio ContextHub definisce quale livello di persistenza viene utilizzato, in modo da visualizzare lo stato corrente della persistenza in tutti i livelli che devono essere controllati.
+     L’archivio ContextHub definisce il livello di persistenza utilizzato, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
 
 Ad esempio, per visualizzare i dati memorizzati in localStorage:
 
@@ -203,7 +203,7 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     L’archivio ContextHub definisce quale livello di persistenza viene utilizzato, in modo da visualizzare lo stato corrente della persistenza in tutti i livelli che devono essere controllati.
+     L’archivio ContextHub definisce il livello di persistenza utilizzato, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
 
 Ad esempio, per visualizzare i dati memorizzati in localStorage:
 
