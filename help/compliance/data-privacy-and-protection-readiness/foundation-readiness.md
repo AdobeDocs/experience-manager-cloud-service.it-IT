@@ -1,11 +1,11 @@
 ---
 title: Normative sulla protezione dei dati e la privacy dei dati - Preparazione di Adobe Experience Manager as a Cloud Service Foundation
-description: Scopri come Adobe Experience Manager as a Cloud Service Foundation supporta le varie normative su privacy e protezione dei dati. Questo articolo include il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi quando si implementa un nuovo progetto AEM as a Cloud Service.
+description: Scopri il supporto di Adobe Experience Manager as a Cloud Service Foundation per le varie normative su privacy e protezione dei dati. Questo articolo include il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi all’implementazione di un nuovo progetto AEM as a Cloud Service.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 55%
 
 ## Supporto per la privacy e la protezione dei dati di AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
-A livello di AEM Foundation, i dati personali memorizzati vengono mantenuti nel Profilo utente. Pertanto, le informazioni contenute in questo articolo riguardano principalmente come accedere ed eliminare i profili utente, in modo da poter soddisfare rispettivamente le richieste di accesso ed eliminazione.
+A livello di AEM Foundation, i dati personali memorizzati vengono mantenuti nel Profilo utente. Pertanto, le informazioni contenute in questo articolo riguardano principalmente come accedere ed eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso e di cancellazione.
 
 ## Accesso a un profilo utente {#accessing-a-user-profile}
 
@@ -45,7 +45,7 @@ A livello di AEM Foundation, i dati personali memorizzati vengono mantenuti nel 
 
 ### API HTTP {#http-api}
 
-Come accennato, Adobe fornisce API per accedere ai dati utente, per facilitare l’automazione. Esistono diversi tipi di API che puoi utilizzare:
+Come accennato, Adobe fornisce API per l’accesso ai dati utente per facilitare l’automazione. Esistono diversi tipi di API che puoi utilizzare:
 
 **API UserProperties**
 
@@ -79,9 +79,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Disattiva utente {#disable-user}
 
 1. Apri la console User Administration e cerca l’utente in questione, come descritto sopra.
-2. Passa il puntatore del mouse sull’utente e fai clic sull’icona di selezione. Il profilo diventa grigio e indica che è selezionato.
+2. Passa il puntatore del mouse sull’utente e fai clic sull’icona di selezione. Il profilo diventa grigio e indica che è stato selezionato.
 
-3. Nel menu superiore, fai clic su **Disattiva** per disattivare (disattivare) l&#39;utente:
+3. Nel menu superiore, fai clic su **Disabilita** per disabilitare (disattivare) l’utente:
 
    ![disattiva account](assets/dpp-foundation-03.png)
 
@@ -95,11 +95,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->Per AEM as a Cloud Service, non è disponibile alcuna procedura manuale dall’interfaccia utente per l’eliminazione di un profilo utente, in quanto CRXDE non è accessibile.
+>Per AEM as a Cloud Service non è disponibile alcuna procedura manuale dall’interfaccia utente per l’eliminazione di un profilo utente, in quanto CRXDE non è accessibile.
 
 ### API HTTP {#http-api-1}
 
-Le procedure seguenti utilizzano `curl` strumento da riga di comando per illustrare come disabilitare l&#39;utente con **[!UICONTROL caverna]** `userId` ed eliminare i profili dell’utente disponibili nel percorso predefinito.
+Le procedure seguenti utilizzano lo `curl` strumento della riga di comando per illustrare come disabilitare l’utente con **[!UICONTROL cavery]** `userId` ed eliminare i profili disponibili nella posizione predefinita.
 
 **Individuazione della home utente:**
 
