@@ -4,7 +4,7 @@ description: Scopri come incorporare un modulo adattivo in una pagina web estern
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 876a861d3bc4ec3f685c6cc41a3a7e747ab214a5
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 2%
@@ -19,7 +19,8 @@ ht-degree: 2%
 | AEM as a Cloud Service | Questo articolo |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) |
 
-È possibile [incorporare moduli adattivi in una pagina AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md) o una pagina web ospitata al di fuori dell’AEM. Il modulo adattivo incorporato è completamente funzionante e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente all’utente di rimanere nel contesto di altri elementi della pagina web e interagire contemporaneamente con il modulo.
+
+È possibile [incorporare moduli adattivi in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md) o una pagina web ospitata al di fuori dell’AEM. Il modulo adattivo incorporato è completamente funzionante e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente all’utente di rimanere nel contesto di altri elementi della pagina web e interagire contemporaneamente con il modulo.
 
 ## Prerequisiti {#prerequisites}
 
