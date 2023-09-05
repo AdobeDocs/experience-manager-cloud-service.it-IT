@@ -1,11 +1,11 @@
 ---
-title: Gestire i rapporti nella vista Risorse
-description: Accedi ai dati nella sezione dei rapporti della vista Risorse per valutare l’utilizzo di prodotti e funzionalità e ottenere informazioni approfondite sulle metriche di successo chiave.
+title: Gestione dei rapporti in vista Risorse
+description: Accedi ai dati nella sezione dei rapporti di vista Risorse per valutare l’utilizzo di prodotti e funzionalità e ottenere informazioni approfondite sulle metriche di successo chiave.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '814'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -20,21 +20,21 @@ La funzionalità di reporting sulle risorse offre agli amministratori visibilit�
 
 ## Accedere ai rapporti {#access-reports}
 
-Tutti gli utenti assegnati al profilo di prodotto per amministratori della vista Risorse possono accedere alla dashboard Approfondimenti o creare rapporti definiti dall’utente nella vista Risorse.
+Tutti gli utenti assegnati al profilo di prodotto per amministratori di vista Risorse possono accedere alla dashboard Insight e creare rapporti definiti dagli utenti in vista Risorse.
 
 ## Visualizzare gli approfondimenti {#view-live-statistics}
 
-La vista Risorse consente di visualizzare i dati in tempo reale per l’ambiente di visualizzazione Risorse con la dashboard Approfondimenti. Puoi visualizzare le metriche degli eventi in tempo reale negli ultimi 30 giorni o negli ultimi 12 mesi.
+Vista Risorse consente di visualizzare in tempo reale i dati del tuo ambiente vista Risorse, con la dashboard Insight. Puoi visualizzare le metriche degli eventi in tempo reale negli ultimi 30 giorni o negli ultimi 12 mesi.
 
 ![Opzioni nella barra degli strumenti quando si seleziona una risorsa](assets/assets-essentials-live-statistics.png)
 
 Fai clic su **[!UICONTROL Approfondimenti]** disponibile nel riquadro di navigazione a sinistra per visualizzare i seguenti grafici generati automaticamente:
 
-* **Download**: numero di risorse scaricate dall’ambiente di visualizzazione Risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
+* **Download**: numero di risorse scaricate dall’ambiente vista Risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
 
-* **Caricamenti**: numero di risorse caricate nell’ambiente di visualizzazione delle risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
+* **Caricamenti**: numero di risorse caricate nell’ambiente vista Risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
 
-* **Ricerche principali**: visualizza i termini più cercati e il numero di volte in cui tali termini sono stati cercati nell’ambiente di visualizzazione delle risorse negli ultimi 30 giorni o 12 mesi rappresentato in formato tabulare.
+* **Ricerche principali**: visualizza i termini più cercati e il numero di volte in cui tali termini sono stati cercati nell’ambiente vista Risorse negli ultimi 30 giorni o 12 mesi rappresentato in formato tabulare.
 
 <!--
 
@@ -58,7 +58,7 @@ Per creare un rapporto sui download:
 
    >[!NOTE]
    >
-   > La vista Risorse converte tutti i fusi orari locali nel Tempo coordinato universale (UTC).
+   > Vista Risorse converte tutti i fusi orari locali nel Tempo coordinato universale (UTC).
 
 1. Nella scheda [!UICONTROL Colonne] seleziona i nomi delle colonne da visualizzare nel rapporto.
 
@@ -80,7 +80,7 @@ La tabella seguente descrive tutte le colonne che è possibile aggiungere al rap
      </tr>
      <tr>
       <td>Percorso </td>
-      <td>Percorso della cartella in cui la risorsa è disponibile nella vista Risorse.</td>
+      <td>Percorso della cartella in cui la risorsa è disponibile in vista Risorse.</td>
      </tr>
      <tr>
       <td>Tipo MIME</td>
@@ -104,7 +104,7 @@ La tabella seguente descrive tutte le colonne che è possibile aggiungere al rap
      </tr>
      <tr>
       <td>Data creazione</td>
-      <td>La data in cui la risorsa viene caricata nella vista Risorse.</td>
+      <td>La data in cui la risorsa è stata caricata in vista Risorse.</td>
      </tr>
      <tr>
       <td>Data di modifica</td>
@@ -155,7 +155,7 @@ La tabella seguente descrive tutte le colonne che è possibile aggiungere al rap
      </tr>
      <tr>
       <td>Percorso </td>
-      <td>Percorso della cartella in cui la risorsa è disponibile nella vista Risorse.</td>
+      <td>Percorso della cartella in cui la risorsa è disponibile in vista Risorse.</td>
      </tr>
      <tr>
       <td>Tipo MIME</td>
@@ -171,7 +171,7 @@ La tabella seguente descrive tutte le colonne che è possibile aggiungere al rap
      </tr>
      <tr>
       <td>Data creazione</td>
-      <td>La data in cui la risorsa viene caricata nella vista Risorse.</td>
+      <td>La data in cui la risorsa è stata caricata in vista Risorse.</td>
      </tr>
      <tr>
       <td>Data di modifica</td>
