@@ -3,9 +3,9 @@ title: Dashboard delle licenze
 description: Cloud Manager fornisce una dashboard per visualizzare facilmente i diritti dei prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '873'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ In ogni sezione vengono riepilogate le opzioni disponibili e come sono attualmen
 
 >[!TIP]
 >
->Consulta [Panoramica Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per scoprire come gestire i diritti Adobe in tutta l’organizzazione da Admin Console.
+>Per ulteriori informazioni su come gestire i diritti Adobe in tutta l’organizzazione da Admin Console, consulta [Panoramica di Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html).
 
 ## Domande frequenti {#faq}
 
@@ -79,13 +79,13 @@ Le richieste di contenuto presentano delle varianze rispetto agli strumenti di g
 | Suite per rapporti | Le pagine che fanno parte della stessa istanza di AEM e dello stesso dominio possono inviare dati a suite per rapporti di Analytics diverse. |
 | Strumenti di monitoraggio e sicurezza di terze parti | Gli strumenti di monitoraggio e sicurezza possono generare richieste di contenuto per AEM che non vengono monitorate nei rapporti di Analytics. |
 | Richieste di prelettura | L’utilizzo di un servizio di prelettura per precaricare le pagine al fine di aumentare la velocità può causare un aumento significativo del traffico delle richieste di contenuto. |
-| DDOS | Sebbene Adobe si impegni al massimo per rilevare e filtrare automaticamente il traffico dagli attacchi DDOS, non c’è alcuna garanzia che tutti i possibili attacchi DDOS vengano rilevati |
+| DDOS | Sebbene Adobe si impegni al massimo a rilevare e filtrare automaticamente il traffico dagli attacchi DDOS, non c’è alcuna garanzia che tutti i possibili attacchi DDOS vengano rilevati. |
 | Blocchi del traffico | L’utilizzo di un blocco del tracciamento in un browser può far sì che il tracciamento di alcune richieste non venga eseguito. |
 | Firewall | I firewall possono bloccare il tracciamento di Analytics. Il problema è più frequente con i firewall aziendali. |
 
 ### Come posso ottenere ulteriori informazioni sul volume di richieste di contenuto? {#current-request-volumes}
 
-Se desideri ulteriori informazioni sul volume di richieste di contenuto visualizzato nella dashboard delle licenze, il team di Adobe può fornirti un rapporto che mostra i principali driver di volume delle richieste dei contenuti. Rivolgiti al tuo team di Adobi o all’Assistenza clienti di Adobe per richiedere un rapporto sull’utilizzo superiore.
+Se desideri ulteriori informazioni sul volume di richieste di contenuto visualizzato nella dashboard delle licenze, il team di Adobe può fornirti un rapporto che mostra i principali driver di volume delle richieste dei contenuti. Per richiedere un report sulle principali voci di utilizzo, rivolgiti al tuo team Adobe o all’Assistenza clienti Adobe.
 
 ### Cosa succede se utilizzo una mia rete CDN? {#using-own-cdn}
 
