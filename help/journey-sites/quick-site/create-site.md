@@ -3,9 +3,9 @@ title: Creare un sito da un modello
 description: Scopri come creare rapidamente un nuovo sito AEM utilizzando un modello di sito.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1506'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Questa parte del percorso vale per l’amministratore AEM.
 
 ## Modelli per siti {#site-templates}
 
-I modelli di sito consentono di combinare i contenuti di base del sito in un pacchetto semplice e riutilizzabile. I modelli di sito generalmente contengono il contenuto e le informazioni sulla struttura e sullo stile del sito di base per iniziare rapidamente a creare un nuovo sito. La struttura effettiva è la seguente:
+I modelli di sito consentono di combinare i contenuti di base del sito in un pacchetto semplice e riutilizzabile. Per consentire un rapido avvio del nuovo sito, i modelli di sito generalmente contengono il contenuto e la struttura di base del sito e informazioni sul suo stile. La struttura effettiva è la seguente:
 
 * `files`: cartella con il kit dell’interfaccia utente, file XD ed eventualmente altri file
 * `previews`: cartella con le schermate del modello di sito
@@ -57,11 +57,11 @@ Una volta scaricato, puoi caricarlo nel tuo ambiente AEM come faresti con qualsi
 
 >[!TIP]
 >
->Il modello di sito standard AEM può essere personalizzato per soddisfare le esigenze del progetto ed evitare la necessità di ulteriori personalizzazioni. Tuttavia questo argomento esula dall’ambito del presente percorso. Per ulteriori informazioni, consulta la documentazione GitHub del modello di sito standard.
+>Il modello di sito standard AEM può essere personalizzato per soddisfare le esigenze del progetto ed evitare la necessità di ulteriori personalizzazioni. Tuttavia questo argomento esula dall’ambito del presente percorso. Per ulteriori informazioni, vedi la documentazione GitHub del modello di sito standard.
 
 >[!TIP]
 >
->Puoi anche scegliere di generare il modello dall’origine come parte del flusso di lavoro del progetto. Tuttavia questo argomento esula dall’ambito del presente percorso. Per ulteriori informazioni, consulta la documentazione GitHub del modello di sito standard.
+>Puoi anche scegliere di generare il modello dall’origine come parte del flusso di lavoro del progetto. Tuttavia questo argomento esula dall’ambito del presente percorso. Per ulteriori informazioni, vedi la documentazione GitHub del modello di sito standard.
 
 ## Installazione di un modello di sito {#installing-template}
 
@@ -85,7 +85,7 @@ L’utilizzo di un modello per creare un nuovo sito è molto semplice.
 
    ![Seleziona un modello](assets/select-site-template.png)
 
-1. Immetti un titolo per il sito. Se omesso, è possibile specificare o generare un nome di sito dal titolo.
+1. Immetti un titolo per il sito. Se omesso, puoi specificare un nome per il sito o generarlo dal titolo.
 
    * Il titolo del sito viene visualizzato nella barra del titolo del browser.
    * Il nome del sito diventa parte dell’URL.
@@ -184,4 +184,4 @@ Sebbene sia consigliabile passare alla parte successiva del percorso di Creazion
 * [Creazione e organizzazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md): questa guida descrive come gestire le pagine del sito AEM se desideri personalizzarlo ulteriormente dopo averlo creato dal modello.
 * [Come lavorare con il pacchetto](/help/implementing/developing/tools/package-manager.md): i pacchetti consentono l&#39;importazione e l&#39;esportazione del contenuto dell&#39;archivio. Questo documento spiega come lavorare con i pacchetti in AEM 6.5, ed è applicabile anche ad AEMaaCS.
 * [Documentazione sull’amministrazione del sito](/help/sites-cloud/administering/site-creation/create-site.md): per ulteriori informazioni sulle funzioni dello strumento Creazione Rapida dei Siti, consulta i documenti tecnici sulla creazione dei siti.
-* [Creare o aggiungere moduli a una pagina di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) : scopri tecniche e best practice passo passo per integrare i moduli nel tuo sito web, ottimizzando le tue esperienze digitali per il massimo impatto.
+* [Crea o aggiungi moduli a una pagina di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): scopri tecniche e best practice passo passo per integrare i moduli nel tuo sito web, ottimizzando le tue esperienze digitali per il massimo impatto.
