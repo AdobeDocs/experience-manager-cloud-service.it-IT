@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ AEM crea automaticamente le regole di traduzione per tutto il contenuto. Per vis
 
    ![Editor regole di traduzione](assets/translation-rules-editor.png)
 
-1. Le proprietà di pagina tradotte si trovano sotto **Generale** dell&#39;elenco. È possibile aggiungere o aggiornare i nomi di proprietà esistenti che si desidera includere esplicitamente nella traduzione.
+1. Le proprietà di pagina che vengono tradotte si trovano nella sezione **Generale** dell’elenco. È possibile aggiungere o aggiornare i nomi di proprietà esistenti che si desidera includere esplicitamente nella traduzione.
    1. Immetti il nome della proprietà nel campo **Nuova proprietà**.
    1. Le opzioni **Traduci** e **Eredita** vengono controllate automaticamente.
    1. Tocca o fai clic su **Avanti**.
