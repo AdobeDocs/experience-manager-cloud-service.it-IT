@@ -3,9 +3,9 @@ title: Accesso e gestione dei registri
 description: Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Per scaricare i registri, effettua le seguenti operazioni.
 
 ## Registri tramite API {#logs-through-api}
 
-Oltre a scaricare i registri tramite l’interfaccia utente, i registri sono disponibili tramite l’API e l’interfaccia della riga di comando.
+Oltre che dall’interfaccia utente, i registri possono essere scaricati tramite l’API e l’interfaccia della riga di comando.
 
 Per scaricare i file di registro di un ambiente specifico, il comando è simile al seguente.
 
@@ -54,7 +54,7 @@ Inoltre, puoi visualizzare i registri tramite l’interfaccia della riga di coma
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Per ottenere l’ID dell’ambiente (1884 in questo esempio) e le opzioni del servizio o del nome di registro disponibili, puoi utilizzare i seguenti comandi.
+Per ottenere l’ID dell’ambiente (1884 in questo esempio) e le opzioni del servizio o del nome di registro disponibili, utilizza i seguenti comandi.
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### Risorse aggiuntive {#resources}
 
-Per ulteriori informazioni sull’API di Cloud Manager e sull’Adobe I/O di CLI, consulta le seguenti risorse aggiuntive:
+Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia della riga di comando Adobe I/O, vedi le seguenti risorse aggiuntive:
 
 * [Documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Interfaccia della riga di comando Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
