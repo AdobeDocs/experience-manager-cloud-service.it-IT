@@ -3,9 +3,9 @@ title: Componenti
 description: I componenti sono elementi costitutivi essenziali per l’authoring delle pagine di contenuto in AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '347'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ AEM include diversi componenti predefiniti che offrono funzionalità complete pe
 
 >[!NOTE]
 >
->In questa sezione vengono descritti solo i componenti disponibili come predefiniti in un’installazione standard per AEM.
+>In questa sezione vengono descritti solo i componenti disponibili forniti in un’installazione standard di AEM.
 >
->A seconda dell’istanza, è possibile che siano stati sviluppati in modo esplicito componenti personalizzati in base alle proprie esigenze. Questi possono anche avere lo stesso nome di alcuni dei componenti discussi qui.
+>A seconda dell’istanza, potrebbero essere stati sviluppati componenti personalizzati specifici per le tue esigenze. Questi potrebbero anche avere lo stesso nome di alcuni dei componenti descritti qui.
 
-## Utilizzo generale   {#general-usage}
+## Utilizzo generale {#general-usage}
 
-I componenti sono disponibili nel **Componenti** del pannello laterale dell’editor di pagine quando [modifica di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+I componenti sono disponibili nella scheda **Componenti** del pannello laterale dell’editor di pagine durante la [modifica di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pagina. Puoi quindi modificarlo utilizzando:
 
@@ -31,7 +31,7 @@ Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pa
 * [Modifica contenuto](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [Modifica contenuto - Modalità a tutto schermo](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-Per ulteriori informazioni sull’aggiunta di componenti a una pagina, consulta [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Per ulteriori informazioni sull’aggiunta di componenti a una pagina, consulta l’articolo [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## Panoramica di tutti i componenti {#overview-of-all-components}
 
@@ -43,7 +43,7 @@ I ](https://experienceleague.adobe.com/docs/experience-manager-core-components/u
 
 Vengono creati utilizzando le best practice di AEM e sono alla base dell’esperienza di authoring di AEM. I componenti core possono essere facilmente estesi dagli sviluppatori per soddisfare specifiche esigenze di progetto.
 
-Oltre ai componenti core WCM, puoi utilizzare anche [Componenti core Forms adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Questi Componenti core forniscono un metodo standard e più semplice per [creare o aggiungere moduli a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+Oltre ai componenti core WCM, puoi utilizzare anche [Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it#features). Questi componenti core forniscono un metodo standard e più semplice per [creare o aggiungere moduli a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Configurazione dei modelli {#configuring-templates}
 
