@@ -3,9 +3,9 @@ title: Creazione di contenuti accessibili per Adobe Experience Manager as a Clou
 description: Utilizzare AEM as a Cloud Service per rendere il contenuto web accessibile e fruibile per le persone con disabilità
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '13862'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 * Icone: si tratta di piccoli pittogrammi (immagini) che veicolano informazioni specifiche. Devono essere utilizzati in modo coerente all’interno di una pagina e del sito. Tutte le istanze dell’icona in una pagina o in un sito devono avere lo stesso testo alternativo, breve e sintetico, a meno che questo determini inutili duplicazioni di testo adiacente.
 * Grafici e diagrammi: solitamente rappresentano dati numerici. Di conseguenza, un possibile testo alternativo potrebbe consistere in una breve sintesi delle principali tendenze indicate nel grafico o diagramma. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando il campo **Descrizione** nella scheda **Avanzate** delle proprietà dell’immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
 * Mappe, diagrammi, diagrammi di flusso: per gli elementi grafici che forniscono dati spaziali (ad esempio, per la descrizione di relazioni tra oggetti o un processo), assicurati che il messaggio principale venga comunicato in formato testuale e che tali informazioni testuali vengano posizionate in prossimità di ciascun punto di dati associato. Per le mappe, potrebbe non risultare pratico fornire un equivalente di testo completo. Se la mappa ha lo scopo di aiutare le persone a individuare una posizione particolare, il testo alternativo dell’immagine della mappa può indicare brevemente *Mappa di X*, fornendo poi le indicazioni per tale posizione in un altro testo della pagina o attraverso il campo **Descrizione**, disponibile nella scheda **Avanzate** del componente **Immagine**.
-* CAPTCHA: un CAPTCHA è un *test di Turing pubblico completamente automatizzato per distinguere fra computer ed esseri umani*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani da software dannosi, ma che può creare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che vedono per superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche. Il W3C fornisce diversi suggerimenti. Ognuno di questi approcci presenta pro e contro.
+* CAPTCHA: un CAPTCHA è un *test di Turing pubblico completamente automatizzato per distinguere fra computer ed esseri umani*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani da software dannosi, ma che può creare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che visualizzano, per poter superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche. Il W3C fornisce diversi suggerimenti. Ognuno di questi approcci presenta pro e contro.
 
    * Rompicapi logici
    * L&#39;uso dell&#39;output sonoro invece delle immagini
@@ -225,7 +225,7 @@ Per soddisfare questo criterio di successo è possibile adottare due approcci. E
    * Fornisci una nuova traccia audio, aggiuntiva e facoltativa, contenente l’audio originale, ma anche informazioni audio ulteriori sui cambiamenti nella scena.
       * Questo consente agli utenti di passare dalla traccia audio esistente (che *non* contiene una descrizione audio) alla nuova traccia audio (che *contiene* una descrizione audio), e viceversa.
       * in questo modo si evitano interruzioni per gli utenti che non necessitano di desscrizione aggiuntiva.
-   * Creare una seconda versione dei contenuti video per consentire descrizioni audio estese. Questo riduce le difficoltà associate alla fornitura di descrizioni audio dettagliate all’interno degli spazi tra la finestra di dialogo esistente, mettendo temporaneamente in pausa l’audio e il video nei punti opportuni. Di conseguenza, è possibile fornire una descrizione audio molto più lunga prima che l’azione ricominci. Come nell’esempio precedente, questa è meglio fornita come traccia audio aggiuntiva opzionale per evitare interruzioni per gli utenti che non hanno bisogno della descrizione aggiuntiva.
+   * Creare una seconda versione dei contenuti video per consentire descrizioni audio estese. Questo riduce le difficoltà associate alla fornitura di descrizioni audio dettagliate all’interno degli spazi tra la finestra di dialogo esistente, mettendo temporaneamente in pausa l’audio e il video nei punti opportuni. Di conseguenza, è possibile fornire una descrizione audio molto più lunga prima che l’azione ricominci. Come nell’esempio precedente, questa funzione è fornita come traccia audio aggiuntiva opzionale, per evitare interruzioni agli utenti che non necessitano della descrizione aggiuntiva.
 1. Fornisci una trascrizione testuale che rappresenti un equivalente testuale adatto per gli elementi sonori e visivi del video o dell’animazione. Queste dovrebbero includere, a seconda del caso, l’indicazione di chi sta parlando, una descrizione dell’ambientazione, eventuali eventi o informazioni presentate visivamente e le espressioni vocali. A seconda della lunghezza, è possibile inserire la trascrizione nella stessa pagina del video o dell’animazione oppure in una pagina separata. Se scegli la seconda opzione, includi un collegamento alla trascrizione accanto al video o all’animazione.
 
 La descrizione dettagliata delle modalità di creazione di video con descrizione audio esula dallo scopo di questa guida. La creazione di video e descrizioni audio può richiedere parecchio tempo, ma puoi ricorrere ad altri prodotti Adobe per facilitare l’esecuzione di tali attività.
@@ -301,7 +301,7 @@ Questa linea guida copre i requisiti necessari per supportare le persone che:
 
 #### Finalità - Informazioni e correlazioni (1.3.1)  {#purpose-info-and-relationships}
 
-Molte tecnologie per l’accessibilità utilizzate da persone con disabilità si basano su informazioni strutturali per visualizzare o *comprendere* contenuto. Queste possono assumere la forma di titoli, intestazioni di righe e colonne di tabella, e tipi di elenchi. Ad esempio, un’utilità di lettura dello schermo potrebbe consentire a un utente di spostarsi all’interno di una pagina passando da un’intestazione a un’altra. Tuttavia, quando la struttura del contenuto della pagina dipende esclusivamente da uno stile visivo, anziché dal codice HTML sottostante, non sono presenti informazioni strutturali utilizzabili dalle tecnologie per l’accessibilità, il che ne limita la capacità di supportare la navigazione facilitata.
+Molte tecnologie per l’accessibilità utilizzate da persone affette da disabilità si basano su informazioni strutturali per visualizzare o *comprendere* i contenuti in modo efficace. Queste possono assumere la forma di titoli, intestazioni di righe e colonne di tabella, e tipi di elenchi. Ad esempio, un’utilità di lettura dello schermo potrebbe consentire a un utente di spostarsi all’interno di una pagina passando da un’intestazione a un’altra. Tuttavia, quando la struttura del contenuto della pagina dipende esclusivamente da uno stile visivo, anziché dal codice HTML sottostante, non sono presenti informazioni strutturali utilizzabili dalle tecnologie per l’accessibilità, il che ne limita la capacità di supportare la navigazione facilitata.
 
 Questo criterio di successo esiste affinché tali informazioni strutturali vengano fornite a livello di programmazione tramite HTML o con altre tecniche di scrittura del codice, in modo che i browser e le tecnologie per l’accessibilità possano accedervi e sfruttarle.
 
@@ -436,9 +436,9 @@ Allo stesso modo, le informazioni che richiedono di distinguere suoni diversi (a
 
 >[!NOTE]
 >
-Per i requisiti relativi alle alternative al colore, consulta [Uso del colore](#use-of-color).
+Per requisiti relativi alle alternative di colore, consulta [Utilizzo del colore](#use-of-color).
 
-#### Come soddisfare il criterio - Caratteristiche sensoriali (1.3.3)  {#how-to-meet-sensory-characteristics}
+#### Come soddisfare il criterio: caratteristiche sensoriali (1.3.3)  {#how-to-meet-sensory-characteristics}
 
 Assicurati che anche tutte le informazioni che si basano sulle caratteristiche visive del contenuto della pagina siano presentate in un formato alternativo.
 
@@ -550,7 +550,7 @@ Assicurati che il testo contrasti a sufficienza con il relativo sfondo. I rappor
 
 >[!NOTE]
 >
-Ricordate che i font possono differire nel modo in cui vengono riprodotti le dimensioni PT/PX/EM equivalenti.
+Ricorda che il rendering dei font varia a seconda delle dimensioni PT/PX/EM equivalenti.
 >
 Ti consigliamo di seguire il buon senso e di privilegiare la leggibilità e l’usabilità nella scelta di font e dimensioni appropriati per i contenuti web.
 
