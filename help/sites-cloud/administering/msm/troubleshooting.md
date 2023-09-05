@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -55,19 +55,19 @@ I servlet precedenti restituivano informazioni calcolate in base ai nodi e ai mi
 
 Le informazioni presenti in queste proprietà devono essere riportare nell’interfaccia utente, tuttavia durante la risoluzione dei problemi può essere utile osservare il comportamento di MSM direttamente nell’archivio mentre si verificano le azioni MSM.
 
-Conoscere queste proprietà può essere utile anche per poter eseguire query sull’archivio e individuare set di pagine che si trovano in determinati stati. Esempio:
+Conoscere queste proprietà può essere utile anche per eseguire query nell’archivio e trovare set di pagine che hanno determinati stati. Esempio:
 
 * `select * from cq:LiveSync` restituisce tutte le pagine principali di Live Copy.
 
 ## Domande frequenti {#faq}
 
-Di seguito sono riportate alcune domande frequenti relative a MSM e Live Copy.
+Ecco alcune domande frequenti relative a MSM e Live Copy.
 
 ### Perché alcune proprietà (ad esempio titolo, annotazioni) non vengono aggiornate durante un rollout di MSM? {#missing-properties}
 
 Le azioni di sincronizzazione MSM sono altamente configurabili. Quali proprietà o componenti vengono modificati durante il rollout dipendono direttamente dalle proprietà di tali configurazioni.
 
-Consulta [questo articolo](best-practices.md) per ulteriori informazioni su questo argomento.
+Per ulteriori informazioni su questo argomento, consulta [questo articolo](best-practices.md).
 
 ### Come posso rimuovere le autorizzazioni di rollout per un gruppo di autori? {#remove-rollout-permissions}
 
@@ -80,11 +80,11 @@ In alternativa, puoi effettuare le seguenti operazioni:
 
 ### Perché vedo le pagine Live Copy con il suffisso “_msm_moved“? {#moved-pages}
 
-Se viene eseguito il rollout di una pagina blueprint, la pagina Live Copy viene aggiornata oppure, se non esiste ancora, viene creata una pagina Live Copy (ad esempio, quando viene eseguito il rollout per la prima volta oppure la pagina Live Copy è stata eliminata manualmente).
+Se viene eseguito il rollout di una pagina blueprint, la pagina Live Copy verrà aggiornata oppure, se non esiste ancora, ne verrà creata una nuova (ad esempio, quando ne viene eseguito il rollout per la prima volta o se la pagina Live Copy è stata eliminata manualmente).
 
-In quest’ultimo caso, tuttavia, se una pagina senza un `cq:LiveRelationship` esiste con lo stesso nome. Questa pagina viene rinominata di conseguenza prima che venga creata la pagina Live Copy.
+Tuttavia in quest’ultimo caso, se esiste una pagina senza una proprietà `cq:LiveRelationship` con lo stesso nome, la pagina verrà rinominata di conseguenza prima che venga creata la pagina Live Copy.
 
-Per impostazione predefinita, al momento della creazione di una pagina Live Copy, il rollout prevede una pagina Live Copy collegata, sulla quale viene eseguito il rollout degli aggiornamenti dei blueprint, oppure nessuna pagina.
+Per impostazione predefinita, al momento della creazione di una pagina Live Copy, il rollout prevede una pagina Live Copy collegata, sulla quale verrà effettuato il rollout degli aggiornamenti dei blueprint, oppure nessuna pagina.
 
 Se viene trovata una pagina “indipendente“, MSM sceglie di rinominare questa pagina e di creare una pagina Live Copy separata collegata.
 
