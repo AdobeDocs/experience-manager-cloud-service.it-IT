@@ -1,7 +1,7 @@
 ---
 title: Scaricare e installare Forms Designer
 description: È possibile utilizzare Forms Designer per creare modelli di moduli XDP e PDF che fungono da modello per un documento di record. Designer è disponibile con [!DNL AEM Forms] licenza.
-source-git-commit: a22c21ba05e72c1bf18c56df72b7e3c7c62edc0c
+source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 1%
@@ -53,7 +53,6 @@ Per installare la versione più recente di AEM Forms Designer a 64 bit o a 32 bi
 Per installare Designer, effettuare le seguenti operazioni:
 
 1. Scarica Designer da [Distribuzione di software](https://experience.adobe.com/downloads).
-
 1. Fare doppio clic su setup.exe per eseguire il programma di installazione.
 1. Procedi e fornisci i tuoi dettagli nella schermata Personalizzazione.
 1. Se si accetta il contratto di licenza, fare clic su **[!UICONTROL Successivo]** per procedere.
