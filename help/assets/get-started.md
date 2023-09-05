@@ -4,9 +4,9 @@ description: Accesso, esperienza di accesso, casi di utilizzo supportati e probl
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 source-git-commit: 88cbaae2ad8b610b8cd14b3ba0a92e7238ae8e9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '390'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -57,9 +57,9 @@ Di seguito sono indicate le varie attività di gestione delle risorse digitali (
 
 ## Passaggi successivi {#next-steps}
 
-* [Guarda un video per iniziare a utilizzare la vista Risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=it)
+* [Guarda un video su come iniziare a utilizzare la vista Risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=it)
 
-* Fornire feedback sul prodotto utilizzando [!UICONTROL Feedback] opzione disponibile nell’interfaccia utente di visualizzazione delle risorse
+* Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
