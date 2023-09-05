@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '229'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 ## TrustStore in AEM {#aem-trust-store}
 
-Per supportare operazioni di crittografia asimmetriche, i certificati vengono memorizzati dall&#39;AEM all&#39;interno dell&#39;archivio dei contenuti in un archivio attendibile globale. I contenuti sono pubblici e, per impostazione predefinita, accessibili in modo anonimo da tutti gli utenti delle istanze degli editori.
+Per supportare operazioni di crittografia asimmetriche, AEM memorizza i certificati all’interno dell’archivio dei contenuti in un TrustStore globale. I contenuti sono pubblici e, per impostazione predefinita, accessibili in modo anonimo da tutti gli utenti delle istanze degli editori.
 
 ### Caratteristiche del TrustStore {#truststore-characteristics}
 
