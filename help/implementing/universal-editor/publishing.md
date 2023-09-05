@@ -3,9 +3,9 @@ title: Pubblicazione di contenuti con l’editor visivo universale
 description: Scopri in che modo l’editor visivo universale pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Quando è ospitata esternamente, è compito della web app assicurare che il cont
 
 Per determinare se il livello di authoring o pubblicazione deve essere accessibile, nell’app puoi usare una semplice istruzione condizionale per scegliere l’endpoint di authoring o pubblicazione appropriato al momento di rilevare l’apertura nell’editor.
 
-Un’altra opzione consiste nell’implementare l’app in due ambienti diversi configurati in maniera diversa, in modo che uno recuperi il contenuto dal livello di authoring e un altro lo recuperi dal livello di pubblicazione. Per consentire agli autori di aprire l’URL pubblicato nell’editor universale, è possibile creare un piccolo script per &quot;convertire&quot; l’URL lato pubblicazione nel relativo equivalente nell’ambiente di authoring (ad esempio, anteponendo un `author` sottodominio), in modo che gli autori vengano automaticamente reindirizzati.
+Un’altra opzione consiste nell’implementare l’app in due ambienti diversi configurati in maniera diversa, in modo che uno recuperi il contenuto dal livello di authoring e un altro lo recuperi dal livello di pubblicazione. Per consentire agli autori di aprire l’URL pubblicato nell’editor universale, è possibile creare un piccolo script per “convertire” l’URL lato pubblicazione al suo equivalente nell’ambiente di authoring (ad esempio, anteponendo un sottodominio `author`), in modo che gli autori vengano reindirizzati automaticamente.
 
 ## Riepilogo {#summary}
 
