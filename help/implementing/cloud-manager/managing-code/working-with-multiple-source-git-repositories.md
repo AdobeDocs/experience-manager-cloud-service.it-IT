@@ -3,9 +3,9 @@ title: Utilizzo di più archivi
 description: Scopri come gestire più archivi Git con Cloud Manager.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '752'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Sebbene un’automazione di questo tipo per un singolo archivio Git del cliente 
 
 Di seguito è riportato un file `pom.xml` di esempio per due archivi Git del cliente.
 
-* Il primo progetto viene inserito nella directory denominata `project-a`.
+* Il primo progetto viene aggiunto alla directory denominata `project-a`.
 * Il secondo progetto viene aggiunto alla directory denominata `project-b`.
 
 ```xml
@@ -122,7 +122,7 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-L’utilizzo di un’azione GitHub è molto flessibile. È possibile eseguire qualsiasi mappatura tra rami degli archivi Git e qualsiasi mappatura dei progetti Git separati nel layout di directory del progetto principale.
+L’utilizzo di un’azione GitHub è molto flessibile. È possibile eseguire qualsiasi mappatura tra i rami degli archivi Git e qualsiasi mappatura di progetti Git distinti nel layout di directory del progetto principale.
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-L’utilizzo di un processo Jenkins è molto flessibile. È possibile eseguire qualsiasi mappatura tra rami degli archivi Git e qualsiasi mappatura dei progetti Git separati nel layout di directory del progetto principale.
+L’utilizzo di un processo Jenkins è molto flessibile. È possibile eseguire qualsiasi mappatura tra i rami degli archivi Git e qualsiasi mappatura di progetti Git distinti nel layout di directory del progetto principale.
 
 >[!NOTE]
 >
