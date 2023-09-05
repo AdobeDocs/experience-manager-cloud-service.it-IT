@@ -3,9 +3,9 @@ title: Personalizzazione e targeting dei contenuti
 description: Scopri come creare contenuti personalizzati e mirati con AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1055'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Puoi [creare contenuti mirati (di destinazione)](/help/sites-cloud/authoring/per
 
 Un set raggruppato di componenti che compongono un’esperienza.
 
-I [frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) sono costituiti da contenuti e informazioni (stile, ecc.) per creare un’esperienza; possono essere utilizzati direttamente durante l’authoring delle pagine. Possono essere considerati come un sottoinsieme di una pagina AEM. Consentono agli autori di contenuti di riutilizzare i contenuti tra canali diversi, incluse le pagine Sites e i sistemi di terze parti.
+I [frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) sono costituiti da contenuti e informazioni (stile, ecc.) per creare un’esperienza; possono essere utilizzati direttamente durante l’authoring delle pagine. Possono essere considerati come un sottoinsieme di una pagina AEM. Consentono alle persone autrici di contenuti di riutilizzare i contenuti tra canali diversi, incluse le pagine Sites e i sistemi di terze parti.
 
 Una personalizzazione, ad esempio, può essere ottenuta combinando insieme un titolo, un’immagine, una descrizione e pulsante di invito all’azione in modo da creare un’esperienza teaser. I frammenti di esperienza hanno un ruolo chiave nell’utilizzo delle funzioni di personalizzazione di Adobe Target.
 
@@ -118,7 +118,7 @@ AEM fornisce il motore di targeting integrato [ContextHub](/help/implementing/de
 Il motore di targeting di [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) permette di tenere traccia delle informazioni raccolte dalle visite della pagina in Adobe Target.
 
 * Quando utilizzi questo motore di targeting, puoi utilizzare i segmenti importati da Adobe Target per definire i tipi di pubblico per le esperienze.
-* Le attività che utilizzano il motore di Adobe Target sono [sincronizzato con Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* Le attività che utilizzano il motore di Adobe Target sono [sincronizzate con Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 Puoi usare questo motore di targeting dopo averlo [integrato con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
