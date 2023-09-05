@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '353'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ I siti creati con modelli AEM consentono di scaricare, personalizzare e applicar
 
 >[!NOTE]
 >
->I temi del sito AEM non devono essere confusi con i [modelli del sito AEM](site-templates.md). I temi del sito AEM contengono solo le informazioni sullo stile di un sito AEM. I modelli di sito AEM definiscono la struttura del sito e il contenuto iniziale e contengono un tema del sito AEM che consente [creazione rapida di siti](create-site.md).
+>I temi del sito AEM non devono essere confusi con i [modelli del sito AEM](site-templates.md). I temi del sito AEM contengono solo le informazioni sullo stile di un sito AEM. I modelli di sito AEM definiscono la struttura del sito e il contenuto iniziale e inoltre contengono un tema del sito AEM per consentire una [creazione rapida del sito](create-site.md).
 
 ## Utilizzo dei temi del sito {#using-themes}
 
@@ -34,7 +34,7 @@ I temi del sito vengono utilizzati in due modi diversi:
 
 >[!TIP]
 >
->Per una descrizione end-to-end del processo di creazione di un sito da un modello e personalizzazione del relativo tema, vedi [Percorso di Creazione Rapida dei Siti](/help/journey-sites/quick-site/overview.md).
+>Per una descrizione end-to-end del processo di creazione di un sito da un modello e personalizzazione del relativo tema, consulta [Percorso di creazione rapida dei siti](/help/journey-sites/quick-site/overview.md).
 
 ## Struttura del tema del sito {#structure}
 
