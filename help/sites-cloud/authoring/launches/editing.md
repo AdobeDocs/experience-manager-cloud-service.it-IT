@@ -3,20 +3,20 @@ title: Modifica dei lanci
 description: Dopo aver creato un lancio per la pagina (o per un set di pagine), puoi modificarne il contenuto nella copia di lancio delle pagine.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '553'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 # Modifica dei lanci {#editing-launches}
 
-## Modifica delle pagine di un lancio {#editing-launch-pages}
+## Modifica delle pagine di lancio {#editing-launch-pages}
 
-Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificare il contenuto nella copia di lancio delle pagine.
+Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificarne il contenuto nella copia di lancio delle pagine.
 
 1. Accedi a [Lancio da Riferimenti (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) per visualizzare le azioni disponibili.
-1. Seleziona **Vai alla pagina** per aprire la pagina per la modifica.
+1. Seleziona **Vai alla pagina** per aprire la pagina su cui effettuare la modfica.
 
 Quando modifichi la pagina, nella barra degli strumenti superiore viene visualizzata un’indicazione insieme alle opzioni **Esci** e **Naviga**:
 
@@ -39,24 +39,24 @@ Una Live Copy viene utilizzata per sincronizzare il contenuto *dal* ramo di orig
 
 Puoi apportare modifiche nello stesso modo in cui puoi modificare una Live Copy standard; ad esempio:
 
-* Facendo clic su un lucchetto chiuso si interrompe la sincronizzazione e si apportano nuovi aggiornamenti al contenuto del lancio. Una volta sbloccato (apri lucchetto), le modifiche non verranno sovrascritte da eventuali modifiche apportate nella stessa posizione all’interno del ramo di origine.
+* facendo clic su un lucchetto chiuso si interrompe la sincronizzazione e si apportano nuovi aggiornamenti al contenuto del lancio. Una volta sbloccato (lucchetto aperto), le modifiche non verranno sovrascritte da eventuali modifiche apportate nella stessa posizione all’interno del ramo di origine.
 * **Sospendi** (e **Riprendi**) l’ereditarietà per una pagina specifica.
 
 Consulta [Modifica del contenuto della Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md) per ulteriori informazioni.
 
-## Confronto tra una pagina di lancio e la relativa pagina di origine {#comparing-a-launch-page-to-its-source-page}
+## Confronto tra una pagina di lancio e la relativa pagina sorgente {#comparing-a-launch-page-to-its-source-page}
 
 Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **Riferimenti** e confrontare la pagina del lancio con la relativa pagina di origine:
 
 1. Nella console **Sites**, [passa alle pagine di origine del lancio e selezionane una](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Apri **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e seleziona **Lanci**.
-1. Seleziona il lancio specifico, quindi **Confronta con origine**:
+1. Apri il pannello **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e seleziona **Lanci**.
+1. Seleziona il lancio specifico, quindi **Confronta con sorgente**:
 
    ![Confronto tra lancio e origine](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. Le due pagine (lancio e sorgente) vengono aperte una accanto all’altra.
+1. Le due pagine (lancio e sorgente) verranno aperte una accanto all’altra.
 
-   Per informazioni complete sull’utilizzo di questa funzione, consulta [Differenza di pagina](/help/sites-cloud/authoring/features/page-diff.md).
+   Per informazioni complete sull’utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Modifica delle pagine sorgente utilizzate {#changing-the-source-pages-used}
 
@@ -67,23 +67,23 @@ In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la ga
       * Seleziona **Modifica**.
    * [Riferimenti (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) per visualizzare le azioni disponibili:
       * Seleziona **Modifica lancio**.
-      * Vengono visualizzate le pagine sorgente.
+      * Vengono mostrate le pagine sorgente.
 1. Apporta le modifiche necessarie, quindi conferma con **Salva**.
 
 >[!NOTE]
 >
 >Per aggiungere pagine a un lancio, è necessario che si trovino al di sotto di una directory principale della lingua comune, ovvero all’interno di un singolo sito.
 
-## Modifica di una configurazione di Launch {#editing-a-launch-configuration}
+## Modifica di una configurazione di lancio {#editing-a-launch-configuration}
 
 In qualsiasi momento è possibile modificare le proprietà per un lancio:
 
 1. Accedi e seleziona il lancio in uno dei seguenti modi:
-   * il [Console Launches](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+   * [console Lanci](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * Seleziona **Proprietà**.
    * [Riferimenti (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) per visualizzare le azioni disponibili:
       * Seleziona **Modifica proprietà**.
-      * Vengono visualizzati i dettagli.
+      * Vengono mostrati i dettagli.
 1. Apporta le modifiche necessarie, quindi conferma con **Salva**.
    * Consulta la sezione [Lanci - Ordine degli eventi](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) per informazioni sullo scopo e sull’interazione dei campi **Data lancio** e **Production Ready**.
 
