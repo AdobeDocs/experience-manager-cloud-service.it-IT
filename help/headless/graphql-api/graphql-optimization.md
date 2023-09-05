@@ -3,9 +3,9 @@ title: Ottimizzazione delle query GraphQL
 description: Scopri come ottimizzare le query GraphQL per il filtro, il paging e l’ordinamento dei frammenti di contenuto in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Un filtro JCR viene applicato (sotto forma di vincolo di query) prima di caricar
 
 >[!NOTE]
 >
->Per motivi tecnici (ad esempio, flessibilità, nidificazione di frammenti), l’AEM non può delegare l’intero filtro al JCR.
+>Per motivi tecnici (ad esempio flessibilità o nidificazione di frammenti), AEM non può delegare l’intera operazione di filtro a JCR.
 
 Questa tecnica mantiene la flessibilità fornita dai filtri GraphQL, delegando la maggior parte del filtro possibile a JCR.
 
@@ -49,7 +49,7 @@ Questa tecnica mantiene la flessibilità fornita dai filtri GraphQL, delegando l
 GraphQL in AEM supporta due tipi di impaginazione:
 
 * [paginazione basata su limite/offset](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-Viene utilizzata per le query elenco; queste terminano con `List`; per esempio, `articleList`.
+Viene utilizzata per le query elenco; queste terminano con `List`; ad esempio, `articleList`.
 Per utilizzarlo, devi fornire la posizione del primo elemento da restituire (il `offset`) e il numero di elementi da restituire (il `limit`, o dimensioni della pagina).
 
 * [paginazione basata su cursore](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (rappresentato da `first` e `after`)
@@ -129,7 +129,7 @@ Se sei principalmente interessato a recuperare solo le prime pagine, non vi è a
 
 ### Operazioni logiche nelle espressioni di filtro {#logical-operations-in-filter-expressions}
 
-Se esegui il filtro su frammenti nidificati, puoi comunque applicare il filtro JCR fornendo un filtro correlato su un campo di livello principale combinato utilizzando `AND` operatore.
+Se esegui il filtro su frammenti nidificati, puoi comunque applicare il filtro JCR fornendone uno correlato su un campo di livello principale combinato utilizzando l’operatore `AND`.
 
 Un caso d’uso tipico è quello di limitare l’ambito della query utilizzando un filtro sul campo `_path` del frammento di livello principale, per poi applicare un filtro ai campi aggiuntivi che potrebbero trovarsi nel livello principale o in un frammento nidificato.
 
