@@ -3,7 +3,7 @@ title: Introduzione alla SPA e procedura dettagliata
 description: Questo articolo introduce i concetti di una SPA e spiega come utilizzare un’applicazione SPA di base per l’authoring, mostrando come si relaziona con l’editor di SPA AEM sottostante.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 100%
 
