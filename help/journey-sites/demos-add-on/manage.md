@@ -5,7 +5,7 @@ exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -105,7 +105,7 @@ Ora puoi esplorare le funzionalità di AEM utilizzando i tuoi siti demo. Tuttavi
 
 * [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=it): per ulteriori informazioni sulle funzioni di Cloud Manager, consulta direttamente i documenti tecnici dettagliati.
 * [Crea sito](/help/sites-cloud/administering/site-creation/create-site.md) - scopri come utilizzare AEM per creare un sito utilizzando i modelli per definirne lo stile e la struttura.
-* [Convenzioni AEM di denominazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Consulta questa pagina per comprendere le convenzioni per l’organizzazione delle pagine AEM.
-* [Operazioni di base in AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): esplora questo documento se hai poca esperienza con AEM per comprendere i concetti di base, come la navigazione e l’organizzazione della console.
+* [Convenzioni AEM di denominazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Per informazioni sulle convenzioni per l’organizzazione delle pagine AEM, consulta questa pagina.
+* [Operazioni di base in AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): se non hai ancora familiarità con AEM, esplora questo documento per comprendere i concetti di base, come la navigazione e l’organizzazione della console.
 * [Documentazione tecnica AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it): se hai già una conoscenza approfondita di AEM, potresti voler consultare i documenti tecnici approfonditi.
 * [Modelli del sito](/help/sites-cloud/administering/site-creation/site-templates.md): per ulteriori informazioni sulla struttura dei modelli del sito e sulla relativa modalità di creazione, consulta questo documento.

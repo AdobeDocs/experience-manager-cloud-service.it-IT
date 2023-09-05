@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1014'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -34,13 +34,13 @@ Tra i casi d’uso tipici per l’utilizzo delle variabili di ambiente vi sono:
 
 >[!NOTE]
 >
->Devi essere membro di [**Responsabile dell’implementazione** ruolo](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) per aggiungere o modificare variabili di ambiente.
+>Per poter aggiungere o modificare le variabili di ambiente è necessario avere il ruolo [**Responsabile della distribuzione**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
 
 1. Accedi a Adobe Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager elenca i vari programmi disponibili. Seleziona il programma che desideri gestire.
 1. Seleziona la scheda **Ambienti** per il programma scelto, quindi dal pannello di navigazione a sinistra seleziona l’ambiente per il quale desideri creare una variabile di ambiente.
 1. Nel dettaglio dell’ambiente seleziona la scheda **Configurazione**, quindi seleziona **Aggiungi** per aprire la finestra di dialogo **Configurazione ambiente**.
-   * Se stai aggiungendo una variabile di ambiente per la prima volta, viene visualizzata una **Aggiungi configurazione** al centro della pagina. Apri la finestra di dialogo **Configurazione ambiente** con questo pulsante o con **Aggiungi**.
+   * Se stai aggiungendo una variabile di ambiente per la prima volta, viene visualizzato un pulsante **Aggiungi configurazione** al centro della pagina. Apri la finestra di dialogo **Configurazione ambiente** con questo pulsante o con **Aggiungi**.
 
    ![Scheda Configurazione](assets/configuration-tab.png)
 
@@ -90,7 +90,7 @@ Dopo aver creato le variabili di ambiente, è possibile aggiornarle con il pulsa
 
 1. Dopo aver apportato tutte le modifiche di configurazione richieste, seleziona **Salva**.
 
-[Come per l’aggiunta delle variabili,](#add-variables) a fianco delle variabili appena aggiornate viene visualizzato un indicatore con lo stato **Aggiornamento in corso** per indicare che è in corso l’aggiornamento dell’ambiente con la configurazione. Al termine dell’operazione, le variabili di ambiente aggiornate sono visibili nella tabella.
+[Come per l’aggiunta delle variabili,](#add-variables) nella parte superiore della tabella e a fianco delle variabili appena aggiornate viene visualizzato un indicatore con lo stato **Aggiornamento in corso** per indicare che è in corso l’aggiornamento dell’ambiente con la configurazione. Al termine dell’operazione, le variabili di ambiente aggiornate sono visibili nella tabella.
 
 >[!TIP]
 >

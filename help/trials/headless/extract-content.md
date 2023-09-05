@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Inizia da GraphQL Explorer in una nuova scheda. Qui puoi creare e convalidare le
 
    ![Query elenco](assets/do-not-localize/list-query-1-3-4-5.png)
 
-Hai appena convalidato una query elenco per un elenco completo di tutti i frammenti di contenuto. Questo processo consente di garantire che la risposta sia ciò che l’app si aspetta, con risultati che illustrano come le app e i siti web recupereranno il contenuto creato in AEM.
+Hai appena convalidato una query di elenco per un elenco completo di tutti i frammenti di contenuto. Questo processo consente di garantire che la risposta sia ciò che l’app si aspetta, con risultati che illustrano come le app e i siti web recupereranno il contenuto creato in AEM.
 
 ## Query per un contenuto specifico di esempio {#bypath-query}
 
@@ -105,7 +105,7 @@ L’esecuzione di una query byPath consente di recuperare il contenuto per un fr
 
    ![Risultati della query byPath](assets/do-not-localize/bypath-query-2-3-4.png)
 
-È stata appena convalidata una query byPath per recuperare un frammento di contenuto specifico identificato dal percorso di tale frammento.
+Hai appena convalidato una query byPath per recuperare un frammento di contenuto specifico identificato dal percorso di tale frammento.
 
 ## Query del contenuto personale {#own-queries}
 

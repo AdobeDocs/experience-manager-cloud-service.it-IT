@@ -5,7 +5,7 @@ exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 40%
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ Un’installazione di AEM è in genere costituita da almeno due ambienti:
 * Autore
 * Pubblicazione
 
-Questi ambienti interagiscono tra loro e consentono di rendere i contenuti disponibili sul sito web e accessibili ai visitatori.
+Questi ambienti interagiscono tra di loro e consentono di rendere i contenuti disponibili nel sito web e accessibili ai visitatori.
 
 L’ambiente di authoring fornisce le funzioni necessarie per creare, aggiornare e rivedere i contenuti prima che vengano pubblicati:
 
@@ -25,25 +25,25 @@ L’ambiente di authoring fornisce le funzioni necessarie per creare, aggiornare
 
 ![Diagramma relativo a authoring, pubblicazione e dispatcher](/help/sites-cloud/authoring/assets/author-publish.png)
 
-Nell’ambiente di authoring, le funzionalità dell’AEM sono rese disponibili tramite l’interfaccia utente di authoring dell’AEM. Per l’ambiente di pubblicazione, puoi progettare l’aspetto e il comportamento dell’interfaccia resa disponibile agli utenti.
+Nell’ambiente di authoring è possibile accedere alle funzionalità di AEM tramite l’interfaccia utente di authoring di AEM. Nell’ambiente di pubblicazione vengono invece progettati l’aspetto e il comportamento dell’interfaccia presentata agli utenti.
 
 ## Ambiente di authoring {#author-environment}
 
-L’autore lavora in ciò che è noto come **ambiente di authoring**. Questo ambiente fornisce un’interfaccia di facile utilizzo (interfaccia grafica utente (GUI o UI)) per la creazione dei contenuti. Richiede all&#39;autore di effettuare l&#39;accesso, utilizzando un account a cui siano stati assegnati i diritti di accesso appropriati.
+L’autore lavora in ciò che è noto come **ambiente di authoring**. Questo ambiente fornisce un’interfaccia di facile utilizzo (interfaccia grafica utente (GUI o UI)) per la creazione dei contenuti. L’autore deve effettuare l’accesso, utilizzando un account a cui sono assegnati i diritti di accesso appropriati.
 
 >[!NOTE]
 >
->Il tuo account necessita dei diritti di accesso appropriati per creare, modificare o pubblicare contenuti.
+>Per creare, modificare o pubblicare contenuti, il tuo account deve disporre dei diritti di accesso appropriati.
 
-A seconda della configurazione dell’istanza e dei diritti di accesso personali, puoi eseguire molte attività sul contenuto, tra cui:
+A seconda della configurazione dell’istanza e dei diritti di accesso personali, puoi eseguire molte attività sul contenuto, tra cui (tra le altre):
 
 * Generazione di nuovi contenuti o modifica dei contenuti esistenti in una pagina
-* Utilizzo di modelli predefiniti per creare pagine di contenuto
+* Utilizzo di modelli predefiniti per creare pagine di contenuti
 * Creazione, modifica e gestione delle risorse e delle raccolte
 * Spostamento, copia ed eliminazione di pagine di contenuto e risorse.
-* Pubblicazione (o annullamento) di pagine e risorse.
+* Pubblicazione (o annullamento della pubblicazione) di pagine e risorse.
 
-Sono inoltre disponibili attività amministrative che consentono di gestire il contenuto:
+Sono anche disponibili attività amministrative per la gestione dei contenuti:
 
 * Flussi di lavoro che controllano la modalità di gestione dei cambiamenti, ad esempio per imporre la revisione prima della pubblicazione
 * Progetti per coordinare singole attività
@@ -54,7 +54,7 @@ Sono inoltre disponibili attività amministrative che consentono di gestire il c
 
 ## Anteprima del contenuto {#previewing-content}
 
-AEM offre anche un servizio di anteprima Sites che consente a sviluppatori e autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione e sia disponibile pubblicamente.
+AEM offre anche un servizio di anteprima di Sites che consente a sviluppatori e autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che venga inserito in un ambiente di pubblicazione e divenga disponibile.
 
 Ulteriori dettagli in [Anteprima del contenuto](/help/sites-cloud/authoring/fundamentals/previewing-content.md).
 
@@ -66,4 +66,4 @@ Per ulteriori informazioni sulla pubblicazione e sull’annullamento della pubbl
 
 ## Dispatcher {#dispatcher}
 
-Per ottimizzare le prestazioni per i visitatori del sito Web, il **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementa il bilanciamento del carico e il caching.
+Per ottimizzare le prestazioni dal punto di vista dei visitatori del sito web, **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementa funzioni di bilanciamento del carico e memorizzazione in cache.

@@ -5,7 +5,7 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ L’audit dell’esperienza è una funzione disponibile nelle pipeline di produz
 
 L’audit dell’esperienza in Cloud Manager assicura i più elevati standard di esperienza utente sul sito.
 
-I risultati dell’audit sono informativi e consentono agli utenti con ruolo Responsabile dell’implementazione di visualizzare i punteggi e cosa è cambiato tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se c’è una regressione introdotta con la distribuzione corrente.
+I risultati dell’audit sono informativi e consentono agli utenti con ruolo Responsabile dell’implementazione di visualizzare i punteggi e cosa è cambiato tra i punteggi correnti e precedenti. Questa informazione è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.
 
 L’audit dell’esperienza è basato su Google Lighthouse, uno strumento open source di Google abilitato in tutte le pipeline di produzione di Cloud Manager.
 
@@ -41,7 +41,7 @@ L’audit dell’esperienza è basato su Google Lighthouse, uno strumento open s
 >
 >Puoi configurare le pagine incluse nell’audit dell’esperienza quando [configuri la pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
-## Lettura dei risultati dell’audit dell’esperienza {#understanding-experience-audit-results}
+## Comprensione dei risultati dell’audit dell’esperienza {#understanding-experience-audit-results}
 
 L’audit dell’esperienza fornisce risultati di test aggregati e dettagliati a livello di pagina tramite la [pagina di esecuzione della pipeline di produzione](/help/implementing/cloud-manager/deploy-code.md).
 

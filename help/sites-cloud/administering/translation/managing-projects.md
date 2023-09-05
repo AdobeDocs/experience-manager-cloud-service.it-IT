@@ -7,7 +7,7 @@ exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '4077'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ I progetti di traduzione consentono di gestire la traduzione dei contenuti AEM. 
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un processo guidato attraverso la traduzione dei contenuti AEM Sites utilizzando potenti strumenti di traduzione AEM, ideale per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto contenuti, consulta il nostro [Percorso di traduzione Sites,](/help/journey-sites/translation/overview.md) per una guida attraverso la traduzione di contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o di traduzione.
 
 Quando si aggiungono risorse a un progetto di traduzione, viene creato un processo di traduzione apposito. I processi forniscono i comandi e le informazioni sullo stato, utili per gestire i flussi di lavoro di traduzione umana e automatica che vengono eseguiti sulle risorse.
 
@@ -210,7 +210,7 @@ Nella console Progetti è possibile accedere a numerose attività di traduzione 
 
 ### Informazioni sulla console Progetti
 
-I progetti di traduzione in AEM utilizzano la console standard [Progetti AEM](/help/sites-cloud/authoring/projects/overview.md). Se non conosci i progetti AEM, consulta la relativa documentazione.
+I progetti di traduzione in AEM utilizzano la console standard [Progetti AEM](/help/sites-cloud/authoring/projects/overview.md). Se non hai familiarità con Progetti AEM, consulta la relativa documentazione.
 
 Come qualsiasi altro progetto, un progetto di traduzione è costituito da riquadri che presentano una panoramica delle attività del progetto.
 
@@ -303,7 +303,7 @@ Quando un progetto viene creato utilizzando la barra dei riferimenti di una pagi
 
 ### Monitoraggio dello stato di un processo di traduzione {#monitoring-the-status-of-a-translation-job}
 
-Il riquadro del processo di un progetto di traduzione fornisce lo stato di un processo di traduzione e il numero di pagine e risorse in esso contenute.
+Il riquadro del processo di un progetto di traduzione fornisce lo stato del processo di traduzione e il numero di pagine e di risorse che ne fanno parte.
 
 ![Processo di traduzione](../assets/translation-job.png)
 
@@ -344,7 +344,7 @@ Specifica la data prima della quale il fornitore di traduzione deve restituire i
 
 La valutazione di un processo di traduzione serve per ottenere una stima del costo dal fornitore del servizio. Quando si esegue la valutazione di un processo, i file di origine vengono inviati al fornitore di traduzione che confronta il testo con il proprio pool di traduzioni memorizzate (memoria di traduzione). In genere, la valutazione corrisponde al numero di parole che devono essere tradotte.
 
-Per ulteriori informazioni sui risultati dell’ambito, contatta il fornitore di traduzione.
+Per ottenere ulteriori informazioni sui risultati della valutazione, contatta il fornitore della traduzione.
 
 >[!NOTE]
 >
@@ -374,7 +374,7 @@ Puoi anche avviare tutti i processi di traduzione per un progetto.
 
 1. Nella console del progetto, seleziona il progetto di traduzione.
 1. Nella barra degli strumenti tocca o fai clic su **Avvia processi di traduzione**.
-1. Nella finestra di dialogo, controlla l’elenco dei processi avviati e quindi conferma con **Inizio** o interrompere con **Annulla**.
+1. Nella finestra di dialogo, controlla l’elenco dei processi che vengono avviati e quindi conferma con **Avvia** o interrompi con **Annulla**.
 
 ### Annullamento di un processo di traduzione {#canceling-a-translation-job}
 
@@ -390,7 +390,7 @@ Quando il contenuto torna dopo la traduzione ed è in stato **Pronto per la revi
 
 Se selezioni **Rifiuta traduzione**, puoi aggiungere un commento.
 
-Il contenuto rifiutato viene inviato nuovamente al fornitore di traduzione, che può visualizzare il commento.
+Il contenuto rifiutato viene inviato nuovamente al fornitore della traduzione, che è in grado di visualizzarne il commento.
 
 ### Completamento e archiviazione dei processi di traduzione {#completing-and-archiving-translation-jobs}
 
@@ -443,7 +443,7 @@ Per confrontare le copie per lingua con il master:
 
    ![Confronta copie per lingua](../assets/language-copy-compare.png)
 
-1. Le due pagine (lancio e sorgente) vengono aperte una accanto all’altra.
+1. Le due pagine (lancio e sorgente) verranno aperte una accanto all’altra.
    * Per informazioni complete sull’utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Spostamento o ridenominazione di una pagina di origine {#move-source}

@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,7 @@ Per aggiungere un certificato con Cloud Manager, segui la procedura riportata di
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Nel pannello di navigazione a sinistra, fai clic su **Certificati SSL**. Nella schermata principale viene visualizzata una tabella con i dettagli di eventuali certificati SSL esistenti.
+1. Nel pannello di navigazione a sinistra, fai clic su **Certificati SSL**. Nella schermata principale viene visualizzata una tabella con i dettagli di tutti i certificati SSL esistenti.
 
    ![Aggiunta di un certificato SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
@@ -63,7 +63,7 @@ Per aggiungere un certificato con Cloud Manager, segui la procedura riportata di
 
    * Vengono visualizzati tutti gli eventuali errori rilevati.
       * Prima di salvare il certificato è necessario risolvere tutti gli errori.
-      * Consulta [Errori relativi ai certificati](#certificate-errors) per ulteriori informazioni su come risolvere gli errori comuni.
+      * Per ulteriori informazioni su come risolvere gli errori comuni, consulta la sezione [Errori relativi ai certificati](#certificate-errors).
 
 1. Per salvare il certificato, fai clic su **Salva**.
 
@@ -73,7 +73,7 @@ Dopo aver salvato, il certificato viene visualizzato come una nuova riga nella t
 
 >[!NOTE]
 >
->Un utente deve essere membro di **Proprietario business** o **Responsabile dell’implementazione** ruolo per installare un certificato SSL in Cloud Manager.
+>Per installare un certificato SSL in Cloud Manager, l’utente deve avere il ruolo **Proprietario business** o **Responsabile dell’implementazione**.
 
 ## Errori relativi ai certificati {#certificate-errors}
 

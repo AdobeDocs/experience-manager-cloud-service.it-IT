@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Ci sono diversi requisiti prima di iniziare a tradurre il tuo contenuto AEM.
 
 >[!TIP]
 >
->Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso. Al termine, torna a questa pagina.
+>Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso. Quindi, al termine torna a questa pagina.
 
 ### Strumenti {#tools}
 
@@ -57,7 +57,7 @@ Ci sono diversi requisiti prima di iniziare a tradurre il tuo contenuto AEM.
 
 ## Come AEM archivia i contenuti {#content-in-aem}
 
-Per lo specialista della traduzione, non è importante comprendere in modo approfondito come AEM gestisce i contenuti. Tuttavia, è utile avere familiarità con i concetti e la terminologia di base in quanto in seguito utilizzerai gli strumenti di traduzione dell’AEM. Ma soprattutto, devi comprendere i contenuti e come sono strutturati per tradurli in modo efficace.
+Per lo specialista della traduzione, non è importante comprendere in modo approfondito come AEM gestisce i contenuti. Tuttavia, conoscere i concetti e la terminologia di base sarà utile in seguito all’utilizzo di strumenti di traduzione AEM. È importante comprendere il proprio contenuto e la sua struttura per tradurlo in modo efficace.
 
 ### Console Sites {#sites-console}
 
@@ -75,7 +75,7 @@ Per accedere alla console Sites:
 
    ![Gerarchia dei contenuti](assets/sites-console-hierarchy.png)
 
-1. Toccando o facendo clic sulla casella di controllo di un elemento in una colonna, l’elemento viene selezionato e ne vengono visualizzati i dettagli nella colonna a destra, mostrando una serie di azioni disponibili per l’elemento selezionato nella barra degli strumenti precedente.
+1. Toccando o facendo clic sulla casella di spunta di un elemento in una colonna, l’elemento viene selezionato e ne vengono visualizzati i dettagli nella colonna a destra, rivelando una serie di azioni disponibili nella barra degli strumenti precedente.
 
    ![Selezione del contenuto](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ La console Sites consente di navigare nel contenuto e fornisce una panoramica de
 
 Per modificare la pagina:
 
-1. Utilizza la console Sites per individuare e selezionare una pagina. Tieni presente che devi toccare o fare clic sulla casella di controllo di una singola pagina per selezionarla.
+1. Utilizza la console Sites per individuare e selezionare una pagina. Per selezionarla, è necessario toccare o fare clic sulla casella di spunta di una singola pagina.
 
    ![Selezione di una pagina da modificare](assets/sites-editor-select-page.png)
 
@@ -175,7 +175,7 @@ La struttura finale può avere un aspetto simile al seguente.
     |- ...
 ```
 
-Devi prendere nota del percorso specifico del contenuto, in quanto è necessario in un secondo momento per configurare la traduzione.
+È necessario prendere nota del percorso specifico del contenuto, in quanto sarà necessario in seguito per configurare la traduzione.
 
 >[!NOTE]
 >

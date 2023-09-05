@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1337'
-ht-degree: 77%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ Scopri le pipeline CI/CD di Cloud Manager e come utilizzarle per distribuire il 
 
 ## Introduzione {#introduction}
 
-Una pipeline CI/CD in Cloud Manager è un meccanismo che consente di generare il codice da un archivio sorgente e distribuirlo in un ambiente. Una pipeline può essere attivata da un evento, ad esempio una richiesta di pull da un archivio del codice sorgente (ovvero una modifica del codice) o da una pianificazione regolare, in modo che corrisponda a una data di rilascio.
+Una pipeline CI/CD in Cloud Manager è un meccanismo che consente di generare il codice da un archivio sorgente e distribuirlo in un ambiente. È possibile attivare le pipeline da un evento, ad esempio una richiesta pull da un archivio del codice sorgente (ovvero una modifica del codice) o da una pianificazione regolare, in modo che corrisponda a una cadenza di pubblicazione.
 
 Per configurare una pipeline è necessario:
 
@@ -85,7 +85,7 @@ Il diagramma seguente illustra le configurazioni delle pipeline di Cloud Manager
 
 Le pipeline full stack distribuiscono contemporaneamente il codice back-end, il codice front-end e le configurazioni a livello web per il runtime di AEM.
 
-* Codice back-end: contenuto immutabile come codice Java, configurazioni OSGi, repoinit e contenuto mutabile
+* Codice back-end: contenuti non modificabili come codice Java, configurazioni OSGi, repoinit e contenuti modificabili
 * Codice front-end: risorse dell’interfaccia utente dell’applicazione come JavaScript, CSS e font
 * Configurazione a livello web: configurazioni HTTPD/Dispatcher
 
@@ -97,10 +97,10 @@ Le pipeline full stack possono distribuire configurazioni a livello web se non �
 
 Si applicano le seguenti restrizioni.
 
-* Un utente deve essere registrato con **Responsabile dell’implementazione** per configurare o eseguire le pipeline.
+* Per configurare o eseguire le pipeline è necessario che l’utente con il ruolo **Responsabile dell’implementazione** abbia eseguito l’accesso.
 * In qualsiasi momento può essere presente una sola pipeline full stack per ogni ambiente.
 
-Inoltre, se scegli di introdurre un’ [pipeline di configurazione a livello web.](#web-tier-config-pipelines)
+Inoltre, se scegli di introdurre una [pipeline di configurazione a livello web](#web-tier-config-pipelines), è bene tenere presente il comportamento della pipeline full stack.
 
 * In presenza di una pipeline a livello web corrispondente, la pipeline full stack di un ambiente ignora la configurazione Dispatcher.
 * Se la pipeline di configurazione a livello web corrispondente per l’ambiente non esiste, l’utente può configurare la pipeline full stack per includere o ignorare la configurazione Dispatcher.
@@ -115,7 +115,7 @@ Grazie alle pipeline front-end i team possono semplificare il processo di proget
 
 >[!IMPORTANT]
 >
->Devi usare la versione AEM `2021.10.5933.20211012T154732Z ` o versione successiva con AEM Sites abilitato per l’utilizzo delle pipeline front-end.
+>Per utilizzare le pipeline front-end è necessario aver installato AEM versione `2021.10.5933.20211012T154732Z ` o successiva e aver abilitato AEM Sites.
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Le pipeline front-end possono essere pipeline per qualità del codice o per dist
 
 ### Prima di configurare le pipeline front-end {#before-start}
 
-Prima di configurare le pipeline front-end, controlla [Percorso di creazione rapida di siti AEM](/help/journey-sites/quick-site/overview.md) per una guida end-to-end all’intuitivo strumento di creazione rapida dei siti dell’AEM. Questo percorso aiuta a semplificare lo sviluppo front-end e consente di personalizzare rapidamente il sito senza alcuna conoscenza del back-end di AEM.
+Prima di configurare le pipeline front-end, consulta la sezione [Percorso Creazione rapida sito di AEM](/help/journey-sites/quick-site/overview.md) per una guida end-to-end all’intuitivo strumento di AEM per la creazione rapida dei siti. Questo percorso aiuta a semplificare lo sviluppo front-end e consente di personalizzare rapidamente il sito senza alcuna conoscenza del back-end di AEM.
 
 ### Configurazione di una pipeline front-end {#configure-front-end}
 
@@ -140,7 +140,7 @@ Per informazioni su come configurare le pipeline front-end, consulta:
 
 Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore indipendenza e il processo di sviluppo può essere accelerato.
 
-Consulta [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) il funzionamento di questo processo e alcune considerazioni di cui tenere conto per sfruttare appieno il suo potenziale.
+Per informazioni sul funzionamento di questo processo e alcune considerazioni per sfruttare al massimo il suo potenziale, consulta [Sviluppo di Sites con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
 
 ### Configurazione delle pipeline full stack {#configure-full-stack}
 
@@ -160,18 +160,18 @@ Le pipeline di configurazione a livello web consentono di distribuire la configu
 
 Si applicano le seguenti restrizioni.
 
-* Devi usare la versione AEM `2021.12.6151.20211217T120950Z` o versioni successive per utilizzare le pipeline di configurazione a livello web.
-* Devi [dare il consenso alla modalità flessibile degli strumenti del dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) per utilizzare le pipeline di configurazione a livello web.
-* Un utente deve essere registrato con **Responsabile dell’implementazione** per configurare o eseguire le pipeline.
+* Per utilizzare le pipeline di configurazione a livello web è necessario aver installato AEM versione `2021.12.6151.20211217T120950Z` o successiva.
+* Per utilizzare le pipeline di configurazione a livello web è necessario fornire il [consenso alla modalità flessibile degli strumenti Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug).
+* Per configurare o eseguire le pipeline è necessario che l’utente con il ruolo **Responsabile dell’implementazione** abbia eseguito l’accesso.
 * In qualsiasi momento può essere presente una sola pipeline di configurazione a livello web per ogni ambiente.
 * L’utente non può configurare una pipeline di configurazione a livello web quando è in esecuzione la pipeline full stack corrispondente.
 * La struttura a livello web deve rispettare la struttura della modalità flessibile, come definito nel documento [Dispatcher nel cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
-Inoltre, è importante tenere presente che il [pipeline full stack](#full-stack-pipeline) si comporta quando si introduce una pipeline a livello web.
+Inoltre, è bene tenere presente il comportamento della [pipeline full stack](#full-stack-pipeline) quando si introduce una pipeline a livello web.
 
 * Se per un ambiente non è stata configurata una pipeline di configurazione a livello web, l’utente può effettuare una selezione durante la configurazione della pipeline full stack corrispondente per includere o ignorare la configurazione Dispatcher durante l’esecuzione e la distribuzione.
 * Dopo aver configurato una pipeline di configurazione a livello web per un ambiente, la corrispondente pipeline full stack (se presente) ignora la configurazione dispatcher durante l’esecuzione e la distribuzione.
-* Dopo aver eliminato una pipeline di configurazione a livello web, la corrispondente pipeline full stack viene reimpostata per distribuire le configurazioni di Dispatcher durante l’esecuzione.
+* Dopo aver eliminato la pipeline di configurazione a livello web, la pipeline full stack corrispondente viene reimpostata per distribuire le configurazioni Dispatcher durante l’esecuzione.
 
 Le pipeline di configurazione a livello web possono essere di tipo qualità del codice o distribuzione del codice.
 

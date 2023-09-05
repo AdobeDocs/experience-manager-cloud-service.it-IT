@@ -5,11 +5,11 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3705'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
-# Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service {#seo-and-url-management-best-practices-for-aem}
+# Best practice relative alla gestione di SEO (Search Engine Optimization) e URL per Adobe Experience Manager as a Cloud Service{#seo-and-url-management-best-practices-for-aem}
 
 L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. È quindi necessario affrontare questo tipo di ottimizzazione in numerosi progetti Adobe Experience Manager (AEM) as a Cloud Service.
 
@@ -25,7 +25,7 @@ Negli URL sono presenti alcune best practice accettate.
 
 Durante la valutazione degli URL nel progetto AEM, considera le seguenti domande:
 
-*&quot;Potendo vedere solo questo URL e non i contenuti della pagina, un utente sarebbe in grado di descrivere la pagina?&quot;*
+*“Potendo vedere solo questo URL e non i contenuti della pagina, un utente sarebbe in grado di descrivere la pagina?”*
 
 Se la risposta è affermativa, è probabile che l’URL funzioni correttamente per un motore di ricerca.
 
@@ -77,9 +77,9 @@ Ecco alcuni suggerimenti di carattere generale su come creare URL per l’ottimi
 
 * Assicurati che ogni pagina sia gestita da un solo protocollo.
 
-   * A volte i siti vengono gestiti tramite `http` fino a quando un utente non raggiunge una pagina contenente, ad esempio, un modulo di pagamento o di accesso, che viene quindi impostato su `https`. Quando il collegamento viene effettuato da questa pagina, se l’utente può tornare alle pagine `http` e accedervi tramite `https`, il motore di ricerca ne tiene traccia come se fossero due pagine separate.
+   * A volte i siti vengono gestiti tramite `http` fino a quando l’utente non raggiunge una pagina contenente, ad esempio, un modulo di pagamento o di accesso, che viene gestito tramite `https`. Quando il collegamento viene effettuato da questa pagina, se l’utente può tornare alle pagine `http` e accedervi tramite `https`, il motore di ricerca ne tiene traccia come se fossero due pagine separate.
 
-   * Google attualmente preferisce le pagine `https` a quelle `http`. Per questo motivo è spesso preferibile gestire l&#39;intero sito tramite `https`.
+   * Google attualmente preferisce le pagine `https` a quelle `http`. Per questo motivo è spesso preferibile gestire l’intero sito tramite `https`.
 
 ### Configurazione del server {#server-configuration}
 
@@ -190,7 +190,7 @@ Può essere necessario visualizzare i nomi delle pagine localizzate agli utenti 
 * Ma sarebbe meglio che fosse:
   `www.mydomain.com/es/casa.html`.
 
-Il problema legato alla localizzazione del nome della pagina è che molti degli strumenti di localizzazione disponibili sulla piattaforma AEM dipendono dalla corrispondenza dei nomi delle pagine tra diverse lingue per mantenere sincronizzato il contenuto.
+Il problema correlato alla localizzazione del nome della pagina è che molti degli strumenti di localizzazione disponibili sulla piattaforma AEM dipendono dalla corrispondenza dei nomi delle pagine tra diverse lingue, per garantire la sincronizzazione del contenuto.
 
 Il `sling:alias` La proprietà ti permette di avere la nostra torta e mangiarla troppo. Puoi aggiungere `sling:alias` come proprietà a qualsiasi risorsa per consentire l’utilizzo di un nome di alias della risorsa. Nell’esempio precedente, avrai:
 
@@ -286,7 +286,7 @@ Esiste però anche una soluzione più semplice per gestire questo problema:
 
 Finora, hai implementato le mappature unitamente alla logica presente nei tuoi componenti per utilizzarle durante la creazione dell’output degli URL nelle pagine.
 
-Non resta che definire come gestire questi URL abbreviati quando arrivano al Dispatcher ed è qui che entra in gioco `mod_rewrite`. Il massimo vantaggio nell&#39;utilizzo di `mod_rewrite` è che gli URL vengono mappati sulla relativa forma estesa *prima di* vengono inviati al modulo di Dispatcher. Questo significa che il Dispatcher richiederà l’URL esteso al server di pubblicazione e lo memorizzerà nella cache come al solito. Di conseguenza, qualsiasi richiesta di eliminazione del Dispatcher proveniente dal server di pubblicazione potrà annullare la validità di questo contenuto.
+Non resta che definire come gestire questi URL abbreviati quando arrivano al Dispatcher ed è qui che entra in gioco `mod_rewrite`. Il principale vantaggio associato all’uso di `mod_rewrite` è che gli URL vengono mappati sulla relativa forma estesa *prima* di essere inviati al modulo del Dispatcher. Questo significa che il Dispatcher richiederà l’URL esteso al server di pubblicazione e lo memorizzerà nella cache come al solito. Di conseguenza, qualsiasi richiesta di eliminazione del Dispatcher proveniente dal server di pubblicazione potrà annullare la validità di questo contenuto.
 
 Per implementare queste regole, puoi aggiungere elementi `RewriteRule` nell’host virtuale della configurazione di Apache HTTP Server. Se vuoi espandere gli URL abbreviati dell’esempio precedente, puoi implementare una regola simile alla seguente:
 
@@ -349,7 +349,7 @@ Disallow: /
 
 In alternativa, in un ambiente live, puoi scegliere di non consentire l’indicizzazione di determinati percorsi.
 
-Avvertenza per il posizionamento di `robots.txt` nella directory principale del sito è che le richieste di svuotamento del Dispatcher potrebbero cancellare questo file e le mappature URL probabilmente posizionano la directory principale del sito in un punto diverso dal `DOCROOT` come definito nella configurazione di Apache HTTP Server. Per questo motivo, questo file viene in genere inserito nell’istanza di authoring nella directory principale del sito e replicato nell’istanza di pubblicazione.
+Bisogna però prestare attenzione quando si inserisce il file `robots.txt` nella directory principale del sito. Le richieste di svuotamento del Dispatcher, infatti, potrebbero cancellare questo file ed è possibile che le mappature URL posizionino la directory principale del sito in un percorso diverso da `DOCROOT`, come definito nella configurazione del server Apache HTTP. Per questo motivo, questo file viene in genere inserito nell’istanza di authoring nella directory principale del sito e replicato nell’istanza di pubblicazione.
 
 ### Creazione di una mappa del sito XML in AEM {#building-an-xml-sitemap-on-aem}
 
@@ -459,7 +459,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Inoltre, la funzionalità implementata per le sitemap XML può essere utilizzata anche in casi d’uso diversi, ad esempio per aggiungere il collegamento canonico o la lingua nell’intestazione di una pagina. Consulta la [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) per ulteriori informazioni.
+Inoltre, la funzionalità implementata per le sitemap XML può essere utilizzata anche in casi d’uso diversi, ad esempio per aggiungere il collegamento canonico o la lingua nell’intestazione di una pagina. Per ulteriori informazioni, consulta l’interfaccia [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html).
 
 ### Creazione di reindirizzamenti 301 per gli URL legacy {#creating-redirects-for-legacy-urls}
 

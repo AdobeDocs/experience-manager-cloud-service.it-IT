@@ -7,7 +7,7 @@ exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 90%
+ht-degree: 94%
 
 ---
 
@@ -77,7 +77,7 @@ AEM fornisce:
 Il gestore di conflitti predefinito è `ResourceNameRolloutConflictHandler`
 
 * Con questo gestore la pagina blueprint ha la precedenza.
-* La classificazione del servizio per questo gestore è impostata su bassa, ovvero al di sotto del valore predefinito per `service.ranking` poiché si presume che i gestori personalizzati avranno bisogno di una classificazione più elevata. Tuttavia, la classificazione non è il valore minimo assoluto per garantire flessibilità quando necessario.
+* La classificazione del servizio per questo gestore è impostata su bassa, ovvero al di sotto del valore predefinito per la proprietà `service.ranking`, poiché si presume che i gestori personalizzati avranno bisogno di una classificazione più elevata. Tuttavia, la classificazione non è il valore minimo assoluto per garantire flessibilità quando necessario.
 
 Questo gestore di conflitti ha la precedenza sulla blueprint. Ad esempio, la pagina Live Copy `/b` viene spostata all’interno del ramo Live Copy in `/b_msm_moved`.
 

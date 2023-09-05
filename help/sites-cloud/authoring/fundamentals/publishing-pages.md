@@ -5,13 +5,13 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 70%
+ht-degree: 97%
 
 ---
 
 # Pubblicazione delle pagine {#publishing-pages}
 
-Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, l’obiettivo è [rendilo disponibile sul sito web pubblico](/help/sites-cloud/authoring/getting-started/concepts.md) (ambiente di pubblicazione).
+Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, l’obiettivo è [renderli disponibili nel sito web pubblico](/help/sites-cloud/authoring/getting-started/concepts.md) (l’ambiente di pubblicazione).
 
 Questa operazione è denominata pubblicazione della pagina. Quando si rimuove una pagina dall’ambiente di pubblicazione, si parla di annullamento della pubblicazione. Durante la pubblicazione e l’annullamento della pubblicazione la pagina rimane disponibile nell’ambiente di authoring per ulteriori modifiche fino a quando non la elimini.
 
@@ -44,11 +44,11 @@ A seconda della posizione, puoi pubblicare:
 
 >[!NOTE]
 >
->Se non disponi dei privilegi necessari per pubblicare una pagina specifica:
+>Se non disponi dei privilegi necessari per la pubblicazione di una pagina specifica:
 >
->* Viene attivato un flusso di lavoro per notificare alla persona appropriata la richiesta di pubblicazione.
+>* Viene avviato un flusso di lavoro per comunicare al soggetto adeguato la tua richiesta di pubblicazione.
 >* Questo flusso di lavoro potrebbe essere stato personalizzato dal team di sviluppo.
->* Viene visualizzato brevemente un messaggio per avvisarti che il flusso di lavoro è stato attivato.
+>* Viene visualizzato brevemente un messaggio che informa che il flusso di lavoro è stato attivato.
 
 >[!NOTE]
 >
@@ -64,8 +64,8 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 1. A seconda che la pagina includa o meno riferimenti che devono essere pubblicati:
 
-   * La pagina viene pubblicata direttamente se non sono presenti riferimenti da pubblicare.
-   * Se la pagina include riferimenti da pubblicare, questi sono elencati nella **Pubblica** procedura guidata, in cui è possibile:
+   * La pagina viene pubblicata direttamente, se non sono presenti riferimenti da pubblicare.
+   * Se la pagina include riferimenti da pubblicare, questi sono elencati nella procedura guidata di **Pubblicazione**, dove è possibile:
       * Specifica le risorse, i tag ecc. da pubblicare insieme alla pagina, quindi seleziona **Pubblica** per completare il processo.
       * Seleziona **Annulla** per annullare l’azione.
 
@@ -81,7 +81,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 >[!NOTE]
 >
->La pubblicazione dall’editor è superficiale, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
+>La pubblicazione dall’editor è “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine secondarie.
 
 >[!NOTE]
 >
@@ -108,15 +108,15 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
    ![Conferma Pubblicazione rapida](/help/sites-cloud/authoring/assets/publishing-quick-publish.png)
 
-1. Quando la pagina viene pubblicata, viene visualizzato un avviso che conferma la pubblicazione.
+1. Quando la pagina viene pubblicata, viene visualizzato un avviso che ne conferma la pubblicazione.
 
 >[!NOTE]
 >
->La pubblicazione rapida è una pubblicazione superficiale, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
+>La pubblicazione rapida è una pubblicazione “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine secondarie.
 
 #### Gestisci pubblicazione  {#manage-publication}
 
-**Gestisci pubblicazione** offre più opzioni di **Pubblicazione rapida**, consentendo l’inclusione di pagine figlie, la personalizzazione dei riferimenti e l’avvio di tutti i flussi di lavoro applicabili e offrendo la possibilità di pubblicare in una data successiva.
+**Gestisci pubblicazione** offre più opzioni rispetto alla **Pubblicazione rapida** e consente di includere pagine secondarie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili. Consente inoltre di pubblicare la pagina in un secondo momento.
 
 Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblicazione:
 
@@ -132,7 +132,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    * **Pianificazione**
 
-     Scegli di eseguire l’azione ora o in una data successiva.
+     Scegli se eseguire l’azione ora o in un secondo momento.
 
      Con Pubblica più tardi viene avviato un flusso di lavoro per attivare le pagine selezionate alla data e all’ora specificate. Al contrario, l’annullamento della pubblicazione in un secondo momento avvia un flusso di lavoro per annullare la pubblicazione della pagina o delle pagine selezionate in un momento specifico.
 
@@ -168,11 +168,11 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    ![Opzioni di Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   La finestra di dialogo **Riferimenti pubblicati** visualizza i riferimenti per il contenuto selezionato. Per impostazione predefinita, sono tutti selezionati e vengono pubblicati o ne viene annullata la pubblicazione, ma puoi deselezionarli in modo da non includerli nell’azione.
+   La finestra di dialogo **Riferimenti pubblicati** visualizza i riferimenti per il contenuto selezionato. Per impostazione predefinita si presentano tutti selezionati e verranno pubblicati o ne verrà annullata la pubblicazione, ma puoi deselezionarli in modo da non includerli nell’azione.
 
    Fai clic su **Fine** per salvare le modifiche o su **Annulla** per annullare la selezione e tornare alla procedura guidata.
 
-   Nella procedura guidata, il **Riferimenti** viene aggiornata per riflettere la selezione dei riferimenti da pubblicare o di cui annullare la pubblicazione.
+   Nella procedura guidata, la colonna **Riferimenti** verrà aggiornata per riflettere la selezione dei riferimenti da pubblicare o di cui annullare la pubblicazione.
 
    ![Selezione pagine di Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -203,11 +203,11 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    >[!NOTE]
    >
-   >Il **Flussi di lavoro** Il passaggio viene visualizzato in base ai diritti di cui dispone l’utente. Consulta la nota precedente su questa pagina per quanto riguarda i privilegi di pubblicazione e la gestione dell’accesso ai flussi di lavoro e [Applicazione dei flussi di lavoro alle pagine](/help/sites-cloud/authoring/workflows/applying.md) per i dettagli.
+   >Il passaggio **Flussi di lavoro** verrà visualizzato in base ai diritti di cui dispone o meno l’utente. Per ulteriori dettagli, consulta la nota precedente su questa pagina inerente i privilegi di pubblicazione, nonché gli argomenti Gestione dell’accesso ai flussi di lavoro e [Applicazione dei flussi di lavoro alle pagine](/help/sites-cloud/authoring/workflows/applying.md).
 
    Le risorse sono raggruppate in base ai flussi di lavoro attivati e a ciascuna opzione specificata per:
 
-   * Definisci il titolo del flusso di lavoro.
+   * Definire il titolo del flusso di lavoro.
    * Mantenere il pacchetto del flusso di lavoro, a condizione che il flusso di lavoro sia dotato di supporto per più risorse.
    * Definire un titolo del pacchetto del flusso di lavoro se è stata selezionata l’opzione per mantenere il pacchetto del flusso di lavoro.
 
@@ -254,13 +254,13 @@ Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazion
 
 ## Pubblicazione e annullamento della pubblicazione di una struttura {#publishing-and-unpublishing-a-tree}
 
-Dopo aver inserito o aggiornato un numero considerevole di pagine di contenuto, tutte memorizzate nella stessa pagina principale, può essere più semplice pubblicare l’intera struttura in un’unica azione.
+Dopo aver inserito o aggiornato un numero considerevole di pagine di contenuto, tutte memorizzate nella stessa pagina principale, può risultare più semplice pubblicare l’intera struttura in un’unica azione.
 
-È possibile utilizzare [Gestisci pubblicazione](#manage-publication) nella console sites.
+È possibile utilizzare [Gestisci pubblicazione](#manage-publication) nella console Sites.
 
-1. Nella console Sites, seleziona la pagina root della struttura da pubblicare o di cui vuoi annullare la pubblicazione e fai clic su **Gestisci pubblicazione**.
-1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Scegli se pubblicare o annullare la pubblicazione, quando deve avvenire e seleziona **Successivo** per continuare.
-1. In **Ambito** , seleziona la pagina root e fai clic su **Includi elementi figlio**.
+1. Nella console Sites, seleziona la pagina principale della struttura da pubblicare o di cui vuoi annullare la pubblicazione e fai clic su **Gestisci pubblicazione**.
+1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Scegli se e quando pubblicare o annullare la pubblicazione e seleziona **Avanti** per continuare.
+1. Nel passaggio **Ambito**, seleziona la pagina principale e fai clic su **Includi elementi secondari**.
 
    ![Selezione pagine di Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 

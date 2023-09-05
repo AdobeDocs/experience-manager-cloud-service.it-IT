@@ -7,7 +7,7 @@ exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 72%
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ La Creazione guidata copia in lingua è un’esperienza guidata per la creazione
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti,](/help/journey-sites/translation/overview.md) che è un percorso guidato attraverso la traduzione dei contenuti AEM Sites utilizzando i potenti strumenti di traduzione dell’AEM, ideale per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta il [Percorso di traduzione Sites](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione di contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o di traduzione.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Per accedere alla creazione guidata:
 
    >[!NOTE]
    >
-   >Se hai selezionato più lingue nel passaggio precedente, vengono creati più progetti di traduzione.
+   >Se hai selezionato più lingue nel passaggio precedente, verranno creati più progetti di traduzione.
 
    ![Passaggio di traduzione della creazione guidata](../assets/language-copy-wizard-translate.png)
 

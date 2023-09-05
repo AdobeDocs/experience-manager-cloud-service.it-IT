@@ -5,7 +5,7 @@ exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ Oltre alla documentazione statica di cui sopra, Adobe e la comunità AEM offrono
 Regole della struttura del pacchetto
 -----------------------
 
-Per supportare le distribuzioni continue, i pacchetti as a Cloud Service AEM, di cui i connettori sono esempi, hanno una netta separazione tra contenuti &quot;immutabili&quot; e contenuti &quot;mutabili&quot;. I pacchetti devono essere separati in modo pulito tra quelli che includono:
+Per supportare le distribuzioni continue, i pacchetti AEM as a Cloud Service, di cui i connettori sono esempi, hanno una netta separazione tra contenuti “immutabili” e contenuti “mutabili”. I pacchetti devono essere separati in modo pulito tra quelli che includono:
 
 * `/apps`
 * `/content` e `/conf`
@@ -74,7 +74,7 @@ Un aspetto dell’implementazione del connettore è il codice che ne supporta la
 Configurazioni in base al contesto
 -----------------------------
 
-[Configurazioni in base al contesto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) consente la configurazione dei livelli in diverse cartelle, tra cui `/libs`, `/apps`, `/conf` e sottocartelle in `/conf`. Supporta l’ereditarietà in modo che un cliente possa impostare la configurazione globale mentre apporta modifiche specifiche a ciascun microsito. Poiché è possibile utilizzare questa funzione per le configurazioni di Cloud Services, il codice del connettore deve fare riferimento alla configurazione utilizzando l’API di configurazione in base al contesto, invece di fare riferimento a un nodo di configurazione specifico.
+[Configurazioni in base al contesto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) consente la configurazione dei livelli in diverse cartelle, tra cui `/libs`, `/apps`, `/conf` e sottocartelle in `/conf`. Supporta l’ereditarietà in modo che un cliente possa impostare la configurazione globale mentre apporta modifiche specifiche a ciascun microsito. Poiché è possibile utilizzare questa funzione per le configurazioni dei Servizi cloud, il codice del connettore dovrebbe fare riferimento alla configurazione utilizzando l’API di configurazione in base al contesto, invece di fare riferimento a un nodo di configurazione specifico.
 
 Se le configurazioni modificate sono usate nel connettore, occorre architettare il connettore in modo da gestire l&#39;inclusione/unione di qualsiasi aggiornamento futuro delle configurazioni predefinite fornite dal connettore con le configurazioni del cliente. Ricordate che la modifica di contenuti o configurazioni personalizzate (cioè modificate dal cliente) senza l&#39;avviso e il consenso del cliente può interrompere (o creare un comportamento imprevisto) con il connettore.
 

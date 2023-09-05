@@ -5,7 +5,7 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ Ora che il connettore è configurato, questo articolo illustra il passaggio succ
 >Questo passaggio del percorso di documentazione è necessario solo se non utilizzi il contrassegno **Traducibile** nei frammenti di contenuto.
 >
 >* Il contrassegno **Traducibile** crea automaticamente le regole di traduzione per te e non richiede alcun intervento.
->* Il contrassegno **Traducibile** viene utilizzato solo se la configurazione del Framework di integrazione della traduzione è impostata su **[Abilita i campi del modello di contenuto per la traduzione](/help/sites-cloud/administering/translation/integration-framework.md)**.
+>* Il contrassegno **Traducibile** viene utilizzato solo se la configurazione del framework di integrazione della traduzione è impostata su **[Abilita campi del modello di contenuto per la traduzione](/help/sites-cloud/administering/translation/integration-framework.md)**.
 >* L’abilitazione di questa opzione nella configurazione TIF sostituirà eventuali regole di traduzione create manualmente.|
 
 ## Obiettivo {#objective}
@@ -76,7 +76,7 @@ Nell’interfaccia utente di **Configurazione della traduzione** sono disponibil
 1. AEM salva la configurazione.
 1. Seleziona il contesto appena creato, quindi tocca o fai clic su **Modifica**. Viene aperto l’**Editor regole di traduzione** per configurare le proprietà.
    ![Editor regole di traduzione](assets/translation-rules-editor.png)
-1. Per impostazione predefinita, tutte le configurazioni vengono ereditate dal percorso padre, in questo caso `/content/dam`. Deseleziona l’opzione **Eredita da`/content/dam`** in modo da poter aggiungere ulteriori campi alla configurazione.
+1. Per impostazione predefinita, tutte le configurazioni vengono ereditate dal percorso padre, in questo caso `/content/dam`. Deseleziona l’opzione **Eredita da`/content/dam`** per aggiungere ulteriori campi alla configurazione.
 1. Una volta deselezionato, sotto la sezione **Generale** aggiungi i nomi delle proprietà dei modelli per frammento di contenuto [precedentemente identificati come campi per la traduzione.](getting-started.md#content-models)
    1. Immetti il nome della proprietà nel campo **Nuova proprietà**.
    1. Le opzioni **Traduci** e **Eredita** vengono controllate automaticamente.

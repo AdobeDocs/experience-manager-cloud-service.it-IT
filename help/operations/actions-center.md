@@ -5,13 +5,13 @@ exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
 # Centro azioni {#actions-center}
 
-Il Cloud Service AEM invia notifiche e-mail al Centro operativo quando si verificano incidenti critici che richiedono un’azione immediata e raccomandazioni proattive per le ottimizzazioni. Gli esempi includono una coda bloccata o un set di credenziali in scadenza; il set completo dei tipi di notifica del Centro azioni può essere visualizzato nella [tabella seguente](#supported-notification-types), che verrà ampliata nel tempo.
+AEM as a Cloud Service invia notifiche e-mail del Centro azioni quando si verificano incidenti critici che richiedono un’azione immediata, e consigli proattivi per le ottimizzazioni. Gli esempi includono una coda bloccata o un set di credenziali in scadenza; il set completo dei tipi di notifica del Centro azioni può essere visualizzato nella [tabella seguente](#supported-notification-types), che verrà ampliata nel tempo.
 
 Quando viene ricevuta una notifica e-mail del Centro azioni, è possibile fare clic su di essa per aprire il Centro azioni di AEM as a Cloud Service con una finestra a comparsa, nella quale viene mostrato un contesto aggiuntivo che spiega al cliente l’azione da intraprendere.
 
@@ -41,7 +41,7 @@ Facendo clic sull’e-mail si accede al Centro azioni, con una finestra a compar
 
 Facendo clic sul collegamento a **Ulteriori informazioni** l’utente potrà consultare questo articolo, in cui è possibile fare riferimento alla [tabella dei tipi di notifica supportati](#supported-notification-types) seguente, la quale fornisce indicazioni sull’azione da intraprendere.
 
-Nel Centro azioni è disponibile un elenco di altre notifiche recenti. Utilizzando l’elenco Azioni, è consigliabile confermare una notifica per segnalare all’Adobe che l’organizzazione è a conoscenza dell’attività e risolvere successivamente la notifica quando è stata intrapresa un’azione correttiva.
+Nel Centro azioni è disponibile un elenco di altre notifiche recenti. È consigliabile utilizzare l’elenco Azioni per confermare una notifica per segnalare ad Adobe che l’organizzazione è a conoscenza dell’attività e per risolvere in seguito la notifica dopo aver intrapreso un’azione correttiva.
 
 ![Elenco notifiche](/help/operations/assets/notification-list.png)
 

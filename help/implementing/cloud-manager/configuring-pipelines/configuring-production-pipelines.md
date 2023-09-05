@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
    **Comportamento in caso di errori relativi a metriche importanti**: durante la configurazione o la modifica della pipeline, l’utente con il ruolo **Responsabile dell’implementazione** può definire il comportamento della pipeline in caso di errore importante rilevato da un gate di qualità. Opzioni disponibili:
 
    * **Chiedi ogni volta**: impostazione predefinita che richiede l’intervento manuale per tutti gli errori importanti.
-   * **Interrompi subito** - Se selezionata, la pipeline viene annullata ogni volta che si verifica un errore importante. In sostanza, quest’opzione simula un utente che rifiuta manualmente ogni errore.
+   * **Interrompi subito**: selezionando questa opzione, la pipeline viene annullata ogni volta che si verifica un errore importante. In sostanza, quest’opzione simula un utente che rifiuta manualmente ogni errore.
    * **Continua immediatamente**: selezionando questa opzione, la pipeline avanza automaticamente ogni volta che si verifica un errore importante. In sostanza, quest’opzione simula un utente che approva manualmente ogni errore.
 
    ![Configurazione della pipeline di produzione](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -95,7 +95,7 @@ Una pipeline del codice full stack distribuisce simultaneamente le build del cod
 
 >[!NOTE]
 >
->Se per l’ambiente selezionato esiste già una pipeline del codice full stack, questa selezione viene disabilitata.
+>Se per l’ambiente selezionato esiste già una pipeline del codice full stack, la selezione viene disabilitata.
 
 Per completare la configurazione della pipeline di produzione del codice full stack, segui la procedura riportata di seguito.
 
@@ -126,18 +126,18 @@ Per completare la configurazione della pipeline di produzione del codice full st
 
    ![Definizione di un percorso per l’audit dell’esperienza](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. Clic **Aggiungi pagina** e il percorso viene completato automaticamente con l’indirizzo dell’ambiente e aggiunto alla tabella dei percorsi.
+1. Facendo clic su **Aggiungi pagina**, il percorso viene completato automaticamente con l’indirizzo dell’ambiente e aggiunto alla tabella dei percorsi.
 
    ![Salvataggio del percorso nella tabella](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
 1. Continua ad aggiungere i percorsi che desideri ripetendo i due passaggi precedenti.
 
    * Puoi aggiungere fino a un massimo di 25 percorsi.
-   * Se non definisci alcun percorso, per impostazione predefinita la pagina home del sito viene inclusa nell’audit dell’esperienza.
+   * Se non definisci alcun percorso, per impostazione predefinita la pagina Home del sito viene inclusa nell’audit dell’esperienza.
 
 1. Per salvare la pipeline, fai clic su **Salva**.
 
-I percorsi configurati per l’audit dell’esperienza vengono inviati al servizio e valutati in base a test di prestazioni, accessibilità, SEO (Search Engine Optimization), best practice e PWA (app web progressiva) durante l’esecuzione della pipeline. Consulta [I risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md) per ulteriori dettagli.
+I percorsi configurati per l’audit dell’esperienza vengono inviati al servizio e valutati in termini di prestazioni, accessibilità, SEO (Search Engine Optimization), best practice e test PWA (web app progressiva) durante l’esecuzione della pipeline. Per ulteriori informazioni, consulta la sezione dedicata alla [lettura dei risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
 
@@ -177,7 +177,7 @@ Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.m
 
 Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore indipendenza e il processo di sviluppo può essere accelerato.
 
-Consulta [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) il funzionamento di questo processo e alcune considerazioni di cui tenere conto per sfruttare appieno il suo potenziale.
+Per informazioni sul funzionamento di questo processo e alcune considerazioni per sfruttare al massimo il suo potenziale, consulta il documento [Sviluppo di Sites con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
 
 ## Ignorare i pacchetti Dispatcher {#skip-dispatcher-packages}
 

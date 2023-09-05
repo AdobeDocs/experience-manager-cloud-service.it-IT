@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3571'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service offre diversi tipi di funzionalità di rete avanzate, che
 * [Indirizzo IP in uscita dedicato](#dedicated-egress-IP-address) - configura il traffico da AEM as a Cloud Service per l’origine da un IP univoco
 * [Virtual Private Network (VPN)](#vpn) - traffico sicuro tra l’infrastruttura di un cliente e AEM as a Cloud Service, per i clienti che dispongono di tecnologia VPN
 
-Questo articolo descrive in dettaglio ciascuna di queste opzioni, incluso come configurarle. Come strategia generale di configurazione, l’endpoint API `/networkInfrastructures` viene richiamato a livello di programma per dichiarare il tipo desiderato di rete avanzata, seguito da una chiamata all’endpoint `/advancedNetworking` per ogni ambiente per abilitare l’infrastruttura e configurare parametri specifici dell’ambiente. Fai riferimento agli endpoint appropriati nella documentazione API di Cloud Manager per ogni sintassi formale e per richieste e risposte di esempio.
+Questo articolo descrive in dettaglio ciascuna di queste opzioni, incluso come configurarle. Come strategia generale di configurazione, l’endpoint API `/networkInfrastructures` viene richiamato a livello di programma per dichiarare il tipo desiderato di rete avanzata, seguito da una chiamata all’endpoint `/advancedNetworking` per ogni ambiente per abilitare l’infrastruttura e configurare parametri specifici dell’ambiente. Fai riferimento agli endpoint appropriati nella documentazione API di Cloud Manager per ogni sintassi formale e alle richieste di esempio e risposte.
 
 Un programma può fornire un’unica variante di rete avanzata. Quando bisogna decidere tra l’uscita flessibile della porta e l’indirizzo IP in uscita dedicato, si consiglia di scegliere l’uscita flessibile della porta se non è necessario un indirizzo IP specifico perché Adobe può ottimizzare le prestazioni del traffico in uscita flessibile della porta.
 
@@ -44,11 +44,11 @@ Questa funzionalità di rete avanzata consente di configurare AEM as a Cloud Ser
 
 ### Considerazioni {#flexible-port-egress-considerations}
 
-L’uscita da porta flessibile è la scelta consigliata se non hai bisogno di VPN e non hai bisogno di un indirizzo IP in uscita dedicato, in quanto il traffico che non si basa su un’uscita dedicata può raggiungere una velocità effettiva più elevata.
+L’uscita dalla porta flessibile è la scelta consigliata se non hai bisogno di VPN o di un indirizzo IP di uscita dedicato, in quanto il traffico che non si basa su un’uscita dedicata può raggiungere una produttività più elevata.
 
 ### Configurazione {#configuring-flexible-port-egress-provision}
 
-Una volta per programma, l’endpoint POST `/program/<programId>/networkInfrastructures` viene richiamato, passando semplicemente il valore di `flexiblePortEgress` per il parametro `kind` e area geografica. L’endpoint risponde con `network_id`, e altre informazioni, tra cui lo stato. Il set completo di parametri e la sintassi esatta, oltre a informazioni importanti quali i parametri che non possono essere modificati in un secondo momento, [possono essere consultati nella documentazione delle API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+Una volta per programma, l’endpoint POST `/program/<programId>/networkInfrastructures` viene richiamato, passando semplicemente il valore di `flexiblePortEgress` per il parametro `kind` e area geografica. L’endpoint risponde con `network_id`, nonché altre informazioni, tra cui lo stato. Per informazioni sull’intero set di parametri e sulla sintassi esatta, nonché altre informazioni importanti (ad esempio, quali parametri non possono essere modificati in un secondo momento), [consulta la documentazione sulle API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 Una volta effettuata la chiamata, in genere sono necessari circa 15 minuti per il provisioning dell’infrastruttura di rete. Una chiamata all’[endpoint GET per infrastruttura di rete](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) di Cloud Manager mostrerebbe uno stato “ready”.
 
@@ -71,7 +71,7 @@ L’API dovrebbe rispondere in pochi secondi, indicando lo stato di aggiornament
 
 ### Disabilitazione dell’uscita con porta flessibile {#disabling-flexible-port-egress-provision}
 
-A **disable** uscita di porta flessibile da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Al fine di **disabilitare** l’uscita con porta flessibile da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 Per ulteriori informazioni sulle API, consulta la [documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -180,7 +180,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->Se hai effettuato il provisioning con un IP in uscita dedicato prima della versione di settembre 2021 (10/6/21), consulta [Clienti con indirizzi in uscita dedicati legacy](#legacy-dedicated-egress-address-customers).
+>Se hai effettuato il provisioning con un IP in uscita dedicato prima della versione di settembre 2021 (10/06/21), fai riferimento a [Clienti di indirizzi in uscita dedicati legacy](#legacy-dedicated-egress-address-customers).
 
 ### Vantaggi {#benefits}
 
@@ -196,7 +196,7 @@ Se la funzione di indirizzo IP dedicato non è abilitata, il traffico provenient
 
 La configurazione dell’indirizzo IP in uscita dedicato è identica all’[uscita da porta flessibile](#configuring-flexible-port-egress-provision).
 
-La differenza principale è che il traffico sarà sempre in uscita da un IP dedicato e univoco. Per trovare tale IP, utilizza un risolutore DNS per identificare l’indirizzo IP associato a `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’indirizzo IP non dovrebbe cambiare, ma se deve cambiare in futuro, viene fornita una notifica avanzata.
+La differenza principale è che il traffico sarà sempre in uscita da un IP dedicato e univoco. Per trovare tale IP, utilizza un risolutore DNS per identificare l’indirizzo IP associato a `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’indirizzo IP non dovrebbe cambiare, ma se deve cambiare in futuro, sarà fornita una notifica avanzata.
 
 Oltre alle regole di routing supportate dall’uscita da porta flessibile nell’endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, l’indirizzo IP in uscita dedicato supporta un parametro `nonProxyHosts`. Questo consente di dichiarare un set di host che devono indirizzare attraverso un intervallo di indirizzi IP condivisi anziché l’IP dedicato, il che può essere utile in quanto il traffico in uscita attraverso gli IP condivisi può essere ulteriormente ottimizzato. Gli URL `nonProxyHost` possono seguire i pattern di `example.com` o `*.example.com`, in cui il carattere jolly è supportato solo all’inizio del dominio.
 
@@ -204,7 +204,7 @@ Quando si decide tra uscita da porta flessibile e indirizzo IP in uscita dedicat
 
 ### Disabilitazione indirizzo IP di uscita dedicato {#disabling-dedicated-egress-IP-address}
 
-A **disable** Indirizzo IP di uscita dedicato da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Per **disabilitare** l’indirizzo IP di uscita dedicato da un particolare ambiente, richiama `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 Per ulteriori informazioni sulle API, consulta la [documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -354,7 +354,7 @@ Sono supportati la maggior parte dei dispositivi VPN con tecnologia IPSec. Consu
 
 ### Creazione {#vpn-creation}
 
-Una volta per programma, viene richiamato l’endpoint POST `/program/<programId>/networkInfrastructures`, passando in un payload di informazioni di configurazione che includono: il valore di “vpn” per il parametro `kind`, l’area geografica, lo spazio indirizzi (elenco di CIDR - nota che questo valore non potrà essere modificato in seguito), i risolutori DNS (per la risoluzione dei nomi nella rete del cliente) e informazioni sulla connessione VPN, ad esempio la configurazione del gateway, la chiave VPN condivisa e i criteri di sicurezza IP. L’endpoint risponde con `network_id`, e altre informazioni, tra cui lo stato. Per il set completo di parametri e la sintassi esatta è necessario fare riferimento alla [documentazione dell’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+Una volta per programma, viene richiamato l’endpoint POST `/program/<programId>/networkInfrastructures`, passando in un payload di informazioni di configurazione che includono: il valore di “vpn” per il parametro `kind`, l’area geografica, lo spazio indirizzi (elenco di CIDR - nota che questo valore non potrà essere modificato in seguito), i risolutori DNS (per la risoluzione dei nomi nella rete del cliente) e informazioni sulla connessione VPN, ad esempio la configurazione del gateway, la chiave VPN condivisa e i criteri di sicurezza IP. L’endpoint risponde con `network_id`, nonché con altre informazioni, tra cui lo stato. Per il set completo di parametri e la sintassi esatta è necessario fare riferimento alla [documentazione dell’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 Una volta effettuata la chiamata, in genere il provisioning dell’infrastruttura di rete richiede tra i 45 e i 60 minuti. Il metodo GET dell’API può essere chiamato per restituire lo stato corrente, che alla fine passerà da `creating` a `ready`. Consulta la documentazione dell’API per tutti gli stati.
 
@@ -425,7 +425,7 @@ La tabella seguente descrive il routing del traffico.
   </tr>
   <tr>
     <td></td>
-    <td>Se il PI non rientra nel <i>Spazio indirizzi gateway VPN</i> e tramite la configurazione proxy http (configurata per impostazione predefinita per il traffico http/s utilizzando la libreria client Java HTTP standard)</td>
+    <td>Se l’IP non rientra nell’intervallo <i>Spazio degli indirizzi gateway VPN</i> e attraverso la configurazione proxy http (configurata per impostazione predefinita per il traffico http/s utilizzando la libreria client Java HTTP standard)</td>
     <td>Qualsiasi</td>
     <td>Attraverso l’IP dedicato in uscita</td>
     <td></td>
@@ -454,7 +454,7 @@ La tabella seguente descrive il routing del traffico.
   </tr>
   <tr>
     <td></td>
-    <td>Se il PI non rientra nel <i>Spazio indirizzi gateway VPN</i> intervallo e client si connette a <code>AEM_PROXY_HOST</code> variabile d’ambiente che utilizza un <code>portOrig</code> dichiarato in <code>portForwards</code> Parametro API</td>
+    <td>Se l’IP non rientra nell’intervallo <i>Spazio degli indirizzi gateway VPN</i> e il client si connette alla variabile env <code>AEM_PROXY_HOST</code> che utilizza un <code>portOrig</code> dichiarato nel parametro di API <code>portForwards</code></td>
     <td>Qualsiasi</td>
     <td>Attraverso l’IP dedicato in uscita</td>
     <td></td>
@@ -544,7 +544,7 @@ Se i tempi di inattività dovessero avere un impatto significativo sulle attivit
 
 ## Configurazione di rete avanzata per aree geografiche di pubblicazione aggiuntiva {#advanced-networking-configuration-for-additional-publish-regions}
 
-Quando si aggiunge un’area geografica aggiuntiva a un ambiente in cui è già configurata la rete avanzata, per impostazione predefinita il traffico dell’area di pubblicazione aggiuntiva corrispondente alle regole di rete avanzate passerà attraverso l’area geografica primaria. Tuttavia, se l’area primaria non è più disponibile, il traffico di rete avanzato viene eliminato se la rete avanzata non è stata abilitata nell’area aggiuntiva. Se desideri ottimizzare la latenza e aumentare la disponibilità nel caso in cui una delle aree geografiche subisca un’interruzione, è necessario abilitare la rete avanzata per le aree geografiche di pubblicazione aggiuntiva. Nelle sezioni seguenti sono descritti due scenari diversi.
+Quando si aggiunge un’area geografica aggiuntiva a un ambiente in cui è già configurata la rete avanzata, per impostazione predefinita il traffico dell’area di pubblicazione aggiuntiva corrispondente alle regole di rete avanzate passerà attraverso l’area geografica primaria. Tuttavia, se l’area geografica primaria non è più disponibile, il traffico di rete avanzato verrà interrotto se la rete avanzata non è stata abilitata nell’area geografica aggiuntiva. Se desideri ottimizzare la latenza e aumentare la disponibilità nel caso in cui una delle aree geografiche subisca un’interruzione, è necessario abilitare la rete avanzata per le aree geografiche di pubblicazione aggiuntiva. Nelle sezioni seguenti sono descritti due scenari diversi.
 
 >[!NOTE]
 >
@@ -556,15 +556,15 @@ Quando si aggiunge un’area geografica aggiuntiva a un ambiente in cui è già 
 
 Se nell’area geografica primaria è già abilitata una configurazione di rete avanzata, segui questi passaggi:
 
-1. Se hai bloccato l’infrastruttura in modo che l’indirizzo IP AEM dedicato sia inserito nell’elenco Consentiti, si consiglia di disabilitare temporaneamente eventuali regole di rifiuto in tale infrastruttura. In caso contrario, si verifica un breve periodo in cui le richieste provenienti dagli indirizzi IP della nuova regione vengono negate dalla propria infrastruttura. Questa operazione non è necessaria se l&#39;infrastruttura è stata bloccata tramite un nome di dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`, ad esempio), perché tutte le aree dell’AEM ricevono il traffico di rete avanzato dallo stesso FQDN
-1. Crea l’infrastruttura di rete con ambito di programma per l’area geografica secondaria tramite una chiamata POST all’API Crea infrastruttura di rete di Cloud Manager, come descritto nella documentazione di rete avanzata. L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà region
+1. Se hai bloccato l’infrastruttura in modo che l’indirizzo IP AEM dedicato sia inserito nell’elenco Consentiti, si consiglia di disabilitare temporaneamente eventuali regole di rifiuto in tale infrastruttura. In caso contrario, trascorre un breve periodo in cui le richieste provenienti dagli indirizzi IP della nuova area geografica sono rifiutate dalla tua infrastruttura. Questa operazione non è necessaria se l&#39;infrastruttura è stata bloccata tramite un nome di dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`, ad esempio), perché tutte le aree dell’AEM ricevono il traffico di rete avanzato dallo stesso FQDN
+1. Crea l’infrastruttura di rete con ambito di programma per l’area geografica secondaria tramite una chiamata POST all’API Crea infrastruttura di rete di Cloud Manager, come descritto nella documentazione di rete avanzata. L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà dell’area geografica
 1. Se l’infrastruttura deve essere bloccata da IP per consentire il traffico AEM, aggiungi gli IP corrispondenti a `p1234.external.adobeaemcloud.com`. Dovrebbe essercene uno per area geografica.
 
 #### Rete avanzata non ancora configurata in alcuna area geografica {#not-yet-configured}
 
 La procedura è in gran parte simile alle istruzioni precedenti. Tuttavia, se l’ambiente di produzione non è ancora stato abilitato per la rete avanzata, è possibile testare la configurazione abilitandola prima in un ambiente di staging:
 
-1. Crea un’infrastruttura di rete per tutte le aree geografiche tramite chiamata POST all’[API Crea infrastruttura di rete di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà region.
+1. Crea un’infrastruttura di rete per tutte le aree geografiche tramite chiamata POST all’[API Crea infrastruttura di rete di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà dell’area geografica.
 1. Per l’ambiente di staging, abilita e configura l’ambiente con ambito di rete avanzato eseguendo il comando `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Per ulteriori informazioni, consulta la documentazione API [qui](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. Se necessario, blocca l’infrastruttura esterna, preferibilmente tramite FQDN (ad esempio `p1234.external.adobeaemcloud.com`). In alternativa, puoi farlo per indirizzo IP
 1. Se l’ambiente di staging funziona come previsto, abilita e configura la configurazione di rete avanzata con ambito di ambiente per la produzione.

@@ -5,13 +5,13 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 85%
+ht-degree: 97%
 
 ---
 
 # Modifica dei programmi {#editing-programs}
 
-Gli utenti con le autorizzazioni necessarie possono modificare [programmi di produzione creati nell’organizzazione](creating-production-programs.md) e [programmi sandbox creati nell’organizzazione.](creating-sandbox-programs.md) Modificando un programma è possibile:
+Gli utenti con le autorizzazioni necessarie possono modificare i [programmi di produzione](creating-production-programs.md) e i [programmi sandbox creati nell’organizzazione.](creating-sandbox-programs.md) Modificando un programma è possibile:
 
 * Aggiungere la soluzione Sites a un programma esistente con Assets e viceversa.
 * Rimuovere Sites o Assets da un programma esistente con entrambi Sites e Assets.
@@ -59,11 +59,11 @@ Per modificare un programma, segui la procedura riportata di seguito.
 
 Ogni volta che si modifica un programma, compreso aggiungere o rimuovere una soluzione o un componente aggiuntivo, le modifiche hanno effetto dopo la distribuzione successiva.
 
-Se nel programma di produzione è stata abilitata la protezione avanzata, verrà **Sicurezza avanzata** è disponibile nella scheda **Modifica programma** per confermare che la funzione è attiva per il programma.
+Se il programma di produzione aveva abilitato la sicurezza avanzata, sarà disponibile la scheda aggiuntiva **Sicurezza avanzata** nella finestra **Modifica programma**, per confermare che la funzione è attiva per il programma.
 
 ![Protezione avanzata attiva per un programma](assets/edit-program-enhanced.png)
 
-Questa impostazione non può essere modificata dopo la creazione del programma. Per ulteriori informazioni sull&#39;opzione di protezione avanzata, vedere [Creazione di programmi di produzione](creating-production-programs.md) documento.
+Questa impostazione non può essere modificata dopo la creazione del programma. Per ulteriori informazioni sull’opzione di sicurezza avanzata, consulta il documento [Creazione di programmi di produzione](creating-production-programs.md).
 
 ## Eliminazione dei programmi sandbox {#delete-sandbox-program}
 

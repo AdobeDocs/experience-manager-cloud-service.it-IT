@@ -6,7 +6,7 @@ exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 50%
+ht-degree: 94%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->Per la documentazione dettagliata sul Dispatcher, vedi [Guida di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it).
+>Per la documentazione dettagliata su Dispatcher consulta la sezione [Guida a Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it).
 
-Come parte di un progetto AEM, è incluso un modulo Dispatcher che contiene le configurazioni del Dispatcher. Progetti generati di recente dal [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) includi automaticamente [filtri](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#defining-a-filter) che abilitano gli endpoint di GraphQL.
+In un progetto AEM è incluso un modulo Dispatcher che contiene configurazioni per il Dispatcher. I progetti generati di recente da [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype) includono automaticamente [filtri](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#defining-a-filter) che abilitano gli endpoint GraphQL.
 
 ## Endpoint GraphQL
 
@@ -29,11 +29,11 @@ Come parte dei filtri predefiniti, [Endpoint GraphQL](/help/headless/graphql-api
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-Il carattere jolly `*` apre più endpoint sull’istanza AEM. La query tramite un endpoint GraphQL viene eseguita utilizzando `POST` e la risposta è **non** nella cache.
+Il carattere jolly `*` apre più endpoint sull’istanza AEM. La query tramite un endpoint GraphQL viene eseguita utilizzando `POST` e la risposta **non** viene memorizzata nella cache.
 
 ## Query persistenti GraphQL
 
-La richiesta di query persistenti viene eseguita su un endpoint diverso. Come parte della configurazione del filtro predefinita, l’URL di [Query persistenti](/help/headless/graphql-api/persisted-queries.md) viene aperto con la seguente regola:
+La richiesta di query persistenti viene eseguita su un endpoint diverso. Nella configurazione del filtro predefinita, l’URL di [Query persistenti](/help/headless/graphql-api/persisted-queries.md) è aperto con la seguente regola:
 
 ```
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }

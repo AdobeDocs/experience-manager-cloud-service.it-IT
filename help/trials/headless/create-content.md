@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 82%
 
 I frammenti di contenuto rappresentano il contenuto headless dell’utente e si basano su strutture predefinite, denominate modelli di frammenti di contenuto. Hai già creato un modello in un modulo precedente.
 
-In questo modulo, puoi creare un nuovo Frammento di contenuto basato su tale modello utilizzando la console Frammento di contenuto. Considera la console Frammenti di contenuto come una libreria di contenuti headless. Utilizzala per creare nuovi frammenti di contenuto e gestire i frammenti esistenti.
+In questo modulo viene creato un nuovo frammento di contenuto basato su tale modello, utilizzando la console Frammenti di contenuto. Considera la console Frammenti di contenuto come una libreria di contenuti headless. Utilizzala per creare nuovi frammenti di contenuto e gestire i frammenti esistenti.
 
 La console Frammenti di contenuto viene utilizzata per creare e modificare contenuti headless tra canali di distribuzione e indipendentemente dal contesto, che in molti casi può essere il metodo più efficace per l’authoring. In un modulo successivo esploreremo la modifica di contenuti headless nel contesto e sul posto.
 
 1. Tocca o fai clic sul pulsante **Crea** in alto a destra nella console.
 
-1. Il **Nuovo frammento di contenuto** Viene visualizzata una finestra di dialogo in cui puoi iniziare a creare un nuovo frammento di contenuto. **Posizione** viene popolato automaticamente con dove viene salvato il nuovo contenuto.
+1. La finestra di dialogo **Nuovo frammento di contenuto** si apre e lì puoi iniziare a creare un nuovo frammento di contenuto. La **Posizione** viene compilata automaticamente con le posizioni in cui verranno salvati i nuovi contenuti.
 
 1. Nel menu a discesa **Modello di frammento di contenuto**, seleziona il modello di frammento di contenuto **Avventura** creato in precedenza.
 
@@ -51,11 +51,11 @@ La console Frammenti di contenuto viene utilizzata per creare e modificare conte
 
 >[!TIP]
 >
->A seconda delle impostazioni del browser, la nuova scheda del browser potrebbe essere rimossa da un blocco dei pop-up. Se il nuovo frammento non si apre dopo aver fatto clic su **Crea e apri**, controlla le impostazioni del browser.
+>A seconda delle impostazioni del browser, la nuova scheda del browser potrebbe essere rimossa da un blocco dei pop-up. Se il nuovo frammento non si apre dopo aver fatto clic su **Crea e apri**, verifica le impostazioni del browser.
 
 ## Aggiungi contenuti al frammento di contenuto {#add-content}
 
-Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento di contenuto viene aperto in una nuova scheda. Qui puoi aggiungere il contenuto del nuovo frammento.
+Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento di contenuto si aprirà in una nuova scheda. Qui puoi aggiungere il contenuto del nuovo frammento.
 
 1. L’editor Frammento di contenuto mostra i campi definiti nel modello selezionato. Qui puoi aggiungere contenuto a ogni campo per completare il frammento di contenuto. L’avanzamento viene salvato automaticamente.
 

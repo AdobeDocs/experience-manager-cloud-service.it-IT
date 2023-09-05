@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Inizia nell’editor frammenti di contenuto con l’app di esempio fornita con l
 
 1. Tocca o fai clic sul pulsante **Anteprima** in alto a destra nella schermata dell’editor.
 
-1. L’app di dimostrazione si apre in una nuova scheda. L’app è per il brand fittizio WKND outdoor lifestyle. Scorri verso il basso la pagina per navigare nel contenuto di esempio.
+1. L’app di dimostrazione si apre in una nuova scheda. L’app è per il brand fittizio WKND outdoor lifestyle. Scorri verso il basso la pagina per passare al contenuto di esempio.
 
 1. Torna alla scheda del browser dell’editor frammenti di contenuto per continuare.
 
@@ -105,7 +105,7 @@ Ora che hai aggiornato l’immagine del biker, vediamo come aggiungere nuovi con
 
 1. Seleziona il livello **Mtn Biking - Shoppable**.
 
-1. Per creare una nuova chiamata in questo pannello, devi creare un nuovo frammento di contenuto per il momento dell’acquisto. Tocca o fai clic sul pulsante **+ Crea nuovo fragmento**.
+1. Per creare una nuova didascalia su questo pannello, devi creare un nuovo frammento di contenuto per opportunità di acquisto. Tocca o fai clic sul pulsante **+ Crea nuovo fragmento**.
 
    ![Aggiungere un’opportunità di acquisto](assets/do-not-localize/add-reference-1-5.png)
 

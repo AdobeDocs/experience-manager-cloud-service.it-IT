@@ -1,11 +1,11 @@
 ---
 title: Creazione di modelli di pagina
-description: Il modello definisce la struttura della pagina risultante e, con l’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
+description: Il modello definisce la struttura della pagina risultante e, grazie all’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '4570'
-ht-degree: 55%
+ht-degree: 97%
 
 ---
 
@@ -15,20 +15,20 @@ Quando crei una pagina, devi selezionare un modello, che viene utilizzato come b
 
 Con l’**Editor modelli**, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori. Può essere coinvolto anche un tipo di “power user”, detto **autore dimodelli**. Gli sviluppatori devono comunque occuparsi di configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che questi elementi di base sono implementati, l’**autore del modello** avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
 
-Il **Console modelli** consente agli autori di modelli di:
+La **Console modelli** consente agli autori di modelli di:
 
 * Creare un nuovo modello o copiarne uno esistente.
 * Gestione del ciclo di vita del modello.
 
-Il **Editor modelli** consente agli autori di modelli di:
+L’**Editor modelli** consente agli autori di modelli di:
 
-* Aggiungi i componenti al modello e posizionali su una griglia reattiva.
+* Aggiungere i componenti al modello e posizionarli su una griglia dinamica.
 * Preconfigurare i componenti.
-* Definisci quali componenti possono essere modificati nelle pagine create con il modello.
+* Definire quali componenti possono essere modificati nelle pagine create con il modello.
 
-Questo documento spiega come **autore modello** può utilizzare la console e l’editor modelli per creare e gestire modelli modificabili.
+Questo documento illustra come un **autore di modelli** può utilizzare la console e l’editor modelli per creare e gestire modelli modificabili.
 
-Per informazioni dettagliate su come funzionano i modelli modificabili a livello tecnico, consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md) per ulteriori informazioni.
+Per informazioni dettagliate su come funzionano i modelli modificabili a livello tecnico, consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md).
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ La creazione di un nuovo modello tramite **Templates Console (Console modelli)**
 
 * **Amministratore**:
    * Crea una nuova cartella per i modelli che richiede i diritti di `admin`.
-   * Tali attività possono spesso essere eseguite anche da uno sviluppatore
+   * Spesso tali attività possono essere eseguite anche da uno sviluppatore
 * **Sviluppatore**:
    * Si concentra sui dettagli tecnici/interni
    * Deve avere esperienza con l’ambiente di sviluppo.
@@ -58,30 +58,30 @@ La creazione di un nuovo modello tramite **Templates Console (Console modelli)**
       * In questo modo vengono assegnati i privilegi e le autorizzazioni necessarie.
    * Può configurare l’utilizzo di componenti e di altri dettagli di alto livello che richiedono:
       * Alcune conoscenze tecniche
-         * Ad esempio, l&#39;utilizzo di pattern durante la definizione dei tracciati.
+         * Ad esempio, l’utilizzo di pattern durante la definizione dei percorsi.
       * Informazioni tecniche fornite dallo sviluppatore.
 
 A causa della natura di alcune attività, come la creazione di una cartella, è necessario un ambiente di sviluppo che richiede conoscenza/esperienza.
 
-I compiti descritti nel presente documento sono elencati con il ruolo responsabile della loro esecuzione.
+Le attività descritte nel presente documento sono elencate con il ruolo responsabile della loro esecuzione.
 
 ## Creazione e gestione di modelli {#creating-and-managing-templates}
 
-Quando crei un nuovo modello modificabile:
+Quando viene creato un nuovo modello modificabile:
 
-* Utilizza il **Modello** console. Questo è disponibile nel **Generale** sezione del **Strumenti** console.
+* Utilizza la console dei **Modelli**. Questa funzione è disponibile nella sezione **Generale** della console degli **Strumenti**.
    * Oppure direttamente da: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Se necessario, puoi [creare una cartella per i modelli](#creating-a-template-folder-admin).
 * [Crea un nuovo modello](#creating-a-new-template-template-author), che sarà inizialmente vuoto.
-* [Definire proprietà aggiuntive](#defining-template-properties-template-author) per il modello, se necessario
+* Se necessario, [Definisci proprietà aggiuntive](#defining-template-properties-template-author) per il modello
 * [Modifica il modello](#editing-templates-template-authors) per definire:
    * [Struttura](#editing-a-template-structure-template-author): contenuto predefinito che non può essere modificato nelle pagine create con il modello.
    * [Contenuto iniziale](#editing-a-template-initial-content-author): contenuto predefinito che potrà essere modificato nelle pagine create con il modello.
    * [Layout](#editing-a-template-layout-template-author): per una vasta gamma di dispositivi.
    * [Stili](/help/sites-cloud/authoring/features/style-system.md): definisci gli stili da utilizzare con il modello e i suoi componenti.
-* [Abilita il modello](#enabling-a-template-template-author) da utilizzare per la creazione di una pagina
-* [Consenti modello](#allowing-a-template-author) per la pagina o il ramo richiesto del sito web
-* [Pubblicare il modello](#publishing-a-template-template-author) per renderla disponibile nell’ambiente di pubblicazione
+* [Abilita il modello](#enabling-a-template-template-author) da utilizzare durante la creazione di una pagina
+* [Consenti il modello](#allowing-a-template-author) per la pagina o la sezione richiesta del sito web
+* [Pubblica il modello](#publishing-a-template-template-author) per renderlo disponibile nell’ambiente di pubblicazione
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ Quando crei un nuovo modello modificabile:
 >
 >Non inserire mai informazioni che devono essere internazionalizzate in un modello. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Per gli elementi modello che devono essere localizzati, ad esempio intestazioni e piè di pagina, utilizzare [funzioni di localizzazione dei Componenti core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it)
+>Per gli elementi modello che devono essere localizzati, come intestazioni e piè di pagina, utilizza le funzioni di [localizzazione dei componenti core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it)
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
@@ -105,17 +105,17 @@ Quando crei un nuovo modello modificabile:
    >
    >In un’istanza AEM standard la cartella **globale** esiste già nella console modelli. Questa contiene i modelli predefiniti e funge da fallback se nella cartella corrente non sono presenti criteri e/o tipi di modello.
    >
-   >Si consiglia di utilizzare una [cartella modelli creata per il progetto](/help/implementing/developing/components/templates.md#template-folders).
+   >Si consiglia di utilizzare una [cartella di modelli creata per il progetto](/help/implementing/developing/components/templates.md#template-folders).
 
 1. Seleziona **Crea**, seguito da **Crea modello** per aprire la procedura guidata.
 
-1. Scegli un **Tipo di modello**, quindi seleziona **Successivo**.
+1. Scegli un **Tipo di modello**, quindi seleziona **Avanti**.
 
    >[!NOTE]
    >
    >I tipi di modello sono layout di modello predefiniti che possono essere considerati modelli di un modello. Sono predefiniti dagli sviluppatori o dall’amministratore di sistema. Per ulteriori informazioni consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md#template-type).-->
 
-1. Completa il **Dettagli Modello**:
+1. Completa i **dettagli del Modello**:
 
    * **Nome modello**
    * **Descrizione**
@@ -138,10 +138,10 @@ Un modello può avere le seguenti proprietà:
 
 * Immagine
    * Immagine da utilizzare come [miniatura del modello](#template-thumbnail-image) per facilitare la selezione, ad esempio nella procedura guidata Crea pagina.
-      * Può essere caricato
-      * Può essere generato in base al contenuto del modello
+      * Può essere caricata
+      * Può essere generata in base al contenuto del modello
 * Titolo
-   * Titolo utilizzato per identificare il modello, ad esempio nel **Crea pagina** procedura guidata.
+   * Titolo utilizzato per identificare il modello, ad esempio nella procedura guidata **Crea pagina**.
 * Descrizione
    * Una descrizione opzionale per fornire informazioni sul modello e sul suo utilizzo, che possono essere visualizzate, ad esempio, nella procedura guidata **Crea pagina**.
 
@@ -164,7 +164,7 @@ Per definire la miniatura del modello:
    * Per caricare una miniatura, tocca o fai clic su **Carica immagine**
    * Per generare una miniatura, tocca o fai clic su **Genera anteprima**
 1. Per entrambi i metodi viene visualizzata un’anteprima della miniatura.
-   * Se non è soddisfacente, tocca o fai clic su **Cancella** per caricare un’altra immagine o rigenerare la miniatura.
+   * Se non ti soddisfa, tocca o fai clic su **Cancella** per caricare un’altra immagine o rigenerare la miniatura.
 1. Quando la miniatura è soddisfacente, tocca o fai clic su **Salva e chiudi**.
 
 ### Abilitazione e autorizzazione di un modello - Autore del modello   {#enabling-and-allowing-a-template-template-author}
@@ -176,11 +176,11 @@ Per poter utilizzare un modello quando si crea una pagina, è necessario svolger
 
 #### Abilitazione di un modello - Autore del modello {#enabling-a-template-template-author}
 
-Un modello può essere abilitato o disabilitato per renderlo disponibile o non disponibile in **Crea pagina** procedura guidata.
+Un modello può essere abilitato o disabilitato per renderlo disponibile o non disponibile nella procedura guidata **Crea pagina**.
 
 >[!CAUTION]
 >
->Dopo l’abilitazione di un modello, viene visualizzato un avviso quando un autore di modelli inizia ad aggiornare ulteriormente il modello. Questo messaggio informa l’utente che è possibile fare riferimento al modello, pertanto eventuali modifiche potrebbero interessare le pagine che fanno riferimento al modello.
+>Una volta abilitato un modello, viene visualizzato un avviso quando un autore di modelli inizia ad aggiornare ulteriormente il modello. In tal modo l’utente viene informato che è possibile fare riferimento al modello e che eventuali modifiche potrebbero interessare le pagine che vi fanno riferimento.
 
 1. Nella **console Modelli**, seleziona il modello.
 1. Seleziona **Abilita** o **Disabilita** nella barra degli strumenti e di nuovo nella finestra di dialogo di conferma.
@@ -206,7 +206,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 
    >[!NOTE]
    >
-   >Se il **Modelli consentiti** L’elenco viene lasciato vuoto, quindi la struttura viene incrementata fino a quando non viene trovato un valore/elenco.
+   >Se l’elenco **Modelli consentiti** viene lasciato vuoto, la struttura ad albero viene percorsa verso l’alto finché non viene trovato un valore/elenco.
    >
    >
    >Consulta [Disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability): i principi per i modelli consentiti rimangono gli stessi.
@@ -224,7 +224,7 @@ Poiché al modello viene fatto riferimento quando viene eseguito il rendering di
 1. Nella **console Modelli**, seleziona il modello.
 1. Seleziona **Pubblica** nella barra degli strumenti per aprire la procedura guidata.
 1. Seleziona **Criteri per contenuto** da pubblicare in tandem.
-1. Seleziona **Pubblica** dalla barra degli strumenti per completare l’azione.
+1. Seleziona **Pubblica** nella barra degli strumenti per completare l’azione.
 
 ## Modifica dei modelli - Autori dei modelli   {#editing-templates-template-authors}
 
@@ -244,7 +244,7 @@ Mentre il **Criterio pagina** opzione sul **Informazioni pagina** menu consente 
 
 >[!CAUTION]
 >
->Se un autore inizia a modificare un modello già abilitato, viene visualizzato un avviso. Questo messaggio informa l’utente che è possibile fare riferimento al modello, pertanto eventuali modifiche potrebbero interessare le pagine che fanno riferimento al modello.
+>Se un autore inizia a modificare un modello già abilitato, viene visualizzato un avviso. In tal modo l’utente viene informato che è possibile fare riferimento al modello e che eventuali modifiche potrebbero interessare le pagine che vi fanno riferimento.
 
 ### Attributi di un modello {#template-attributes}
 
@@ -252,21 +252,21 @@ Mentre il **Criterio pagina** opzione sul **Informazioni pagina** menu consente 
 
 #### Struttura {#template-structure}
 
-I componenti aggiunti alla [struttura](#editing-a-template-structure-template-author) non possono essere spostati o rimossi dalle pagine risultanti dagli autori delle pagine. Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti dalle pagine risultanti, devi aggiungere al modello un sistema di paragrafi.
+I componenti aggiunti alla [struttura](#editing-a-template-structure-template-author) non possono essere spostati o rimossi dalle pagine risultanti dagli autori delle pagine. Se desideri permettere agli autori delle pagine di aggiungere e rimuovere componenti dalle pagine risultanti, è necessario aggiungere un sistema di paragrafi al modello.
 
-Quando i componenti sono bloccati, è possibile aggiungere contenuti che non possono essere modificati dagli autori delle pagine. Puoi sbloccare i componenti per definire [Contenuto iniziale](#editing-a-template-initial-content-author).
+Quando i componenti sono bloccati, è possibile aggiungere contenuti che non possono essere modificati dagli autori delle pagine. Puoi sbloccare i componenti per consentire di definire il [Contenuto iniziale](#editing-a-template-initial-content-author).
 
 >[!NOTE]
 >
->In modalità struttura, non è possibile spostare, tagliare o eliminare componenti padre di un componente sbloccato.
+>In modalità struttura, tutti i componenti che sono l’elemento principale di un componente sbloccato non possono essere spostati, tagliati o cancellati.
 
 #### Contenuto iniziale {#template-initial-content}
 
-Quando un componente è stato sbloccato, è possibile definire [contenuto iniziale](#editing-a-template-initial-content-author) copiato nelle pagine risultanti, create dal modello. I componenti sbloccati possono essere modificati nella pagina o nelle pagine risultanti.
+Quando un componente è stato sbloccato, è possibile definire il [contenuto iniziale](#editing-a-template-initial-content-author) che viene copiato nelle pagine risultanti, create dal modello. I componenti sbloccati possono essere modificati nella pagina o nelle pagine risultanti.
 
 >[!NOTE]
 >
->In entrata **Contenuto iniziale** e nelle pagine risultanti, tutti i componenti sbloccati che hanno un elemento padre accessibile (ovvero i componenti all’interno di un contenitore di layout) possono essere eliminati.
+>Nella modalità **Contenuto iniziale** e nelle pagine risultanti, tutti i componenti sbloccati che hanno un elemento principale accessibile (ad esempio i componenti all’interno di un contenitore di layout) possono essere eliminati.
 
 #### Layout {#template-layout}
 
@@ -287,7 +287,7 @@ Per ulteriori informazioni, consulta la [documentazione sul sistema di stili](/h
 In modalità **Struttura** si definiscono i componenti e i contenuti per il modello, nonché i criteri per il modello e i suoi componenti.
 
 * I componenti definiti nella struttura del modello non possono essere spostati in una pagina risultante né eliminati dalle pagine risultanti.
-* Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema paragrafo al modello.
+* Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema di paragrafi al modello.
 * I componenti possono essere sbloccati e bloccati di nuovo per consentire di definire il [contenuto iniziale](#editing-a-template-initial-content-author).
 * Vengono definiti i criteri di design per i componenti e la pagina.
 
@@ -297,23 +297,23 @@ Nella modalità **Struttura** dell’Editor modelli è possibile eseguire divers
 
 #### Aggiungi componenti {#add-components}
 
-Esistono diversi meccanismi per aggiungere componenti al modello:
+Per aggiungere componenti al modello, esistono diversi meccanismi:
 
-* Dalla sezione **Componenti** nel pannello laterale.
+* Dal browser **Componenti** nel pannello laterale.
 * Utilizzando l’opzione **Inserisci componente** nella barra degli strumenti dei componenti già presenti nel modello, oppure il riquadro **Trascina qui i componenti**.
-* Trascinando una risorsa (dalla **Risorse** nel pannello laterale) direttamente sul modello per generare il componente appropriato in situ.
+* Trascinando una risorsa (dal browser **Risorse** nel pannello laterale) direttamente sul modello per generare il componente appropriato in situ.
 
 Una volta aggiunto, ogni componente viene contrassegnato con:
 
-* Bordo
+* Un bordo
 * Un marcatore per mostrare il tipo di componente
-* Indicatore da visualizzare quando il componente è stato sbloccato
+* Un marcatore che indica se il componente è stato sbloccato
 
 >[!NOTE]
 >
 >Quando si aggiunge al modello un componente **Titolo** pronto per l’uso, questo conterrà la **struttura** di testo predefinita.
 >
->Se si modifica questa impostazione e si aggiunge testo personalizzato, questo testo aggiornato viene utilizzato quando si crea una pagina dal modello.
+>Se si modifica questa impostazione e si aggiunge un proprio testo, questo testo aggiornato viene utilizzato quando si crea una pagina dal modello.
 >
 >Se si lascia il testo (struttura) predefinito, il titolo predefinito corrisponde al nome della pagina risultante.
 
@@ -323,7 +323,7 @@ Una volta aggiunto, ogni componente viene contrassegnato con:
 
 #### Azioni dei componenti {#component-actions}
 
-Esegui azioni sui componenti una volta aggiunti al modello. Ogni singola istanza dispone di una barra degli strumenti che consente di accedere alle azioni disponibili; la barra degli strumenti dipende dal tipo di componente.
+Una volta aggiunti al modello, effettua le azioni sui componenti: Ogni singola istanza dispone di una barra degli strumenti che consente di accedere alle azioni disponibili; la barra degli strumenti dipende dal tipo di componente.
 
 ![Barra delle azioni di un componente del modello](/help/sites-cloud/authoring/assets/templates-component-actions.png)
 
@@ -335,11 +335,11 @@ Con queste due azioni è possibile aggiungere contenuti ai componenti.
 
 #### Bordo per indicare la Struttura {#border-to-indicate-structure}
 
-Quando si lavora in **Struttura** mode un bordo arancione indica il componente attualmente selezionato. Una linea tratteggiata indica anche il componente principale.
+Quando si lavora in modalità **Struttura**, un bordo arancione indica il componente attualmente selezionato. Una linea tratteggiata indica anche il componente principale.
 
 #### Criteri e proprietà (generale) {#policy-and-properties-general}
 
-I criteri di contenuto (o progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello).
+I criteri relativi al contenuto (o alla progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minime/massime. Sono applicabili al modello (e alle pagine create con il modello).
 
 Crea un criterio per i contenuti o selezionane uno esistente per un componente.
 
@@ -354,11 +354,11 @@ La finestra di configurazione è divisa in due parti.
 * Nella parte sinistra, in **Criteri**, è possibile selezionare un criterio esistente.
 * Nella parte destra, in **Proprietà** è possibile impostare le proprietà specifiche del tipo di componente.
 
-Le proprietà disponibili dipendono dal componente selezionato. Ad esempio, per un componente testo le proprietà definiscono le opzioni di copia e incolla, le opzioni di formattazione e lo stile di paragrafo, tra le altre opzioni.
+Le proprietà disponibili dipendono dal componente selezionato. Ad esempio, per un componente testo le proprietà definiscono, tra le altre, le opzioni di copia e incolla, le opzioni di formattazione e lo stile di paragrafo.
 
 ##### Criterio {#policy}
 
-I criteri di contenuto (o progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello).
+I criteri relativi al contenuto (o alla progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minime/massime. Sono applicabili al modello (e alle pagine create con il modello).
 
 In **Criterio** puoi selezionare un criterio esistente da applicare al componente tramite il menu a discesa.
 
@@ -368,7 +368,7 @@ Puoi aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto a
 
 ![Pulsante Aggiungi criterio](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato ha il titolo **Copia di X**, dove X è il titolo del criterio copiato.
+Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
 
 ![Pulsante Copia criterio](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -384,18 +384,18 @@ Nella sezione **Altri modelli che utilizzano il criterio selezionato**, è possi
 
 ##### Proprietà {#properties}
 
-Sotto **Proprietà** titolo puoi definire le impostazioni del componente. L’intestazione presenta due schede:
+Nell’intestazione **Proprietà** puoi definire le impostazioni del componente. L’intestazione presenta due schede:
 
 * Principale
 * Funzioni
 
 ###### Principale {#main}
 
-Il giorno **Principale** , vengono definite le impostazioni più importanti del componente.
+Nella scheda **Principale** vengono definite le impostazioni più importanti del componente.
 
-Ad esempio, per un componente immagine le larghezze consentite possono essere definite insieme all’abilitazione del caricamento lento.
+Ad esempio, per un componente immagine è possibile definire le larghezze consentite e abilitare il caricamento lento.
 
-Se un’impostazione consente più configurazioni, tocca o fai clic su **Aggiungi** per aggiungere un’altra configurazione.
+Se per un’impostazione sono consentite più configurazioni, tocca o fai clic sul pulsante **Aggiungi** per aggiungerne un’altra.
 
 ![Pulsante Aggiungi](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
@@ -409,7 +409,7 @@ Per rimuovere una configurazione, tocca o fai clic sul pulsante **Elimina**.
 
 Il **Funzioni** Questa scheda ti consente di abilitare o disabilitare funzioni aggiuntive del componente.
 
-Ad esempio, per un componente immagine puoi definire le proporzioni di ritaglio, gli orientamenti consentiti per le immagini e se sono consentiti caricamenti.
+Ad esempio, per un componente immagine è possibile definire le proporzioni di ritaglio, gli orientamenti consentiti per le immagini e se il caricamento è ammesso.
 
 ![Scheda Funzioni](/help/sites-cloud/authoring/assets/templates-features-tab.png)
 
@@ -423,23 +423,23 @@ Ad esempio, per un componente immagine puoi definire le proporzioni di ritaglio,
 
 #### Criteri e proprietà (contenitore di layout) {#policy-and-properties-layout-container}
 
-Le impostazioni dei criteri e delle proprietà di un contenitore di layout sono simili all’utilizzo generale, ma con alcune differenze.
+Le impostazioni dei criteri e delle proprietà di un contenitore di layout sono simili a quelle di uso generale, ma con alcune differenze.
 
 >[!NOTE]
 >
->La configurazione di un criterio è obbligatoria per i componenti contenitore in quanto consente di definire i componenti disponibili nel contenitore.
+>La configurazione di un criterio è obbligatoria per i componenti del contenitore in quanto consente di definire i componenti disponibili nel contenitore.
 
-La finestra di configurazione è divisa in due parti, come nell’utilizzo generale della finestra.
+La finestra di configurazione è divisa in due parti, come la finestra per uso generale.
 
 ##### Criterio {#policy-layout}
 
-I criteri di contenuto (o progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello).
+I criteri relativi al contenuto (o alla progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minime/massime. Sono applicabili al modello (e alle pagine create con il modello).
 
 In **Criterio** puoi selezionare un criterio esistente da applicare al componente tramite il menu a discesa. Questo funziona come nell’uso generale della finestra.
 
 ##### Proprietà {#properties-layout}
 
-Sotto **Proprietà** intestazione puoi scegliere quali componenti sono disponibili per il contenitore layout e definirne le impostazioni. L’intestazione presenta tre schede:
+Nell’intestazione **Proprietà** è possibile scegliere quali componenti sono disponibili per il contenitore di layout e definirne le impostazioni. L’intestazione presenta tre schede:
 
 * Componenti consentiti
 * Componenti standard
@@ -447,19 +447,19 @@ Sotto **Proprietà** intestazione puoi scegliere quali componenti sono disponibi
 
 ###### Componenti consentiti {#allowed-components}
 
-Il giorno **Componenti consentiti** , puoi definire quali componenti sono disponibili per il Contenitore di layout.
+Nella scheda **Componenti consentiti**, puoi definire quali componenti sono disponibili per il contenitore di layout.
 
 * I componenti sono raggruppati in base ai rispettivi gruppi di componenti, che possono essere espansi e compressi.
 * È possibile selezionare un intero gruppo selezionando il nome del gruppo e deselezionando tutti gli elementi.
-* Il segno meno rappresenta almeno uno, ma non tutti gli elementi di un gruppo sono selezionati.
+* Il segno meno significa che è stato selezionato almeno un elemento del gruppo, ma non tutti.
 * È disponibile una ricerca per filtrare un componente in base al nome.
-* I conteggi elencati a destra del nome del gruppo di componenti rappresentano il numero totale di componenti selezionati in tali gruppi indipendentemente dal filtro.
+* I numeri elencati a destra del nome del gruppo di componenti rappresentano il numero totale di componenti selezionati in tale gruppo indipendentemente dal filtro.
 
 ![Scheda Componenti consentiti](/help/sites-cloud/authoring/assets/templates-allowed-components-tab.png)
 
 ###### Componenti standard {#default-components}
 
-Il giorno **Componenti predefiniti** definisci quali componenti vengono associati automaticamente a determinati tipi di file multimediali in modo che, quando un autore trascina una risorsa dal browser di risorse, l’AEM sappia a quale componente associarla. Solo i componenti con zone di rilascio sono disponibili per tale configurazione.
+Nella scheda **Componenti predefiniti**, è possibile definire quali componenti vengono associati automaticamente a determinati tipi di file multimediali in modo che, quando un autore trascina una risorsa dal browser di risorse, AEM sappia a quale componente associarla. Per questa configurazione sono disponibili solo i componenti con aree di rilascio.
 
 Tocca o fai clic su **Aggiungi mappatura** per aggiungere un componente completamente nuovo e la mappatura del tipo MIME.
 
@@ -473,19 +473,19 @@ Nella scheda **Impostazioni reattive** è possibile configurare il numero di col
 
 #### Sblocca e blocca componenti {#unlock-and-lock-components}
 
-Puoi sbloccare/bloccare i componenti per definire se il contenuto è disponibile per la modifica in **Contenuto iniziale** modalità.
+È possibile sbloccare/bloccare i componenti per definire se il contenuto è disponibile per la modifica in modalità **Contenuto iniziale**.
 
 Quando un componente è stato sbloccato:
 
-* Nel bordo viene visualizzato un indicatore di lucchetto aperto.
+* Nel bordo viene visualizzato un lucchetto aperto.
 * La barra degli strumenti del componente viene regolata di conseguenza.
-* Tutti i contenuti già immessi non saranno più visualizzati in **Struttura** modalità.
+* Tutti i contenuti già inseriti non saranno più visualizzati in modalità **Struttura**.
    * Il contenuto già inserito è considerato contenuto iniziale ed è visibile solo nella modalità **Contenuto iniziale**.
 * L’elemento padre di un componente sbloccato non può essere spostato, tagliato o cancellato.
 
 ![Pulsante Blocca componente](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Ciò include lo sblocco di componenti contenitore in modo che possano essere aggiunti altri componenti, sia in modalità **Contenuto iniziale** che sulle pagine risultanti. Se hai già aggiunto componenti/contenuti al contenitore prima di sbloccarlo, questi non vengono più visualizzati in **Struttura** ma sono visualizzate in **Contenuto iniziale** modalità. In entrata **Modalità Struttura**, viene visualizzato solo il componente contenitore stesso con il relativo elenco di **Componenti consentiti**.
+Ciò include lo sblocco di componenti contenitore in modo che possano essere aggiunti altri componenti, sia in modalità **Contenuto iniziale** che sulle pagine risultanti. Se hai già aggiunto componenti o contenuto al contenitore prima di sbloccarlo, questi non saranno più visualizzati in modalità **Struttura** ma saranno presenti in modalità **Contenuto iniziale**. In **Modalità struttura** viene mostrato solo il componente contenitore con il suo elenco di **Componenti consentiti**.
 
 ![Componenti consentiti](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
@@ -503,7 +503,7 @@ Se la struttura viene aggiornata dopo la creazione di pagine basate sul modello,
 
 ### Modifica di un modello - Contenuto iniziale - Autore {#editing-a-template-initial-content-author}
 
-**Contenuto iniziale** La modalità viene utilizzata per definire il contenuto che verrà visualizzato quando una pagina viene creata per la prima volta in base al modello. Il contenuto iniziale può quindi essere modificato dagli autori di pagine.
+La modalità **Contenuto iniziale** viene utilizzata per definire il contenuto che verrà visualizzato quando una pagina viene creata per la prima volta in base al modello. Il contenuto iniziale può quindi essere modificato da chi crea la pagina.
 
 Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **Contenuto iniziale**, solo i componenti sbloccati possono essere selezionati e modificati.
 
@@ -511,7 +511,7 @@ Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **
 >
 >La modalità **Contenuto iniziale** è in pratica una modalità di modifica per le pagine create con quel modello. Pertanto, i criteri non vengono definiti in modalità **Contenuto iniziale**, ma in [**modalità Struttura**](#editing-a-template-structure-template-author).
 
-* I componenti sbloccati disponibili per la modifica vengono contrassegnati. Quando sono selezionati, presentano un bordo blu:
+* I componenti sbloccati disponibili per la modifica sono contrassegnati. Quando sono selezionati, presentano un bordo blu:
 
   ![Modalità contenuto iniziale](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
 
@@ -530,7 +530,7 @@ Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **
 
 >[!NOTE]
 >
->Il contenuto iniziale è destinato alla preparazione dei componenti e del layout di pagina che fungono da punto di partenza per la creazione del contenuto. Non si tratta del contenuto effettivo che rimarrebbe invariato. Per questo motivo, il contenuto iniziale non può essere tradotto.
+>Il contenuto iniziale è destinato alla preparazione dei componenti e del layout di pagina, che fungono da punto di partenza per la creazione del contenuto. Non si tratta del contenuto effettivo, che rimarrebbe invariato. Per questo motivo, il contenuto iniziale non può essere tradotto.
 >
 >Per includere nel modello il testo traducibile, ad esempio nelle intestazioni o nei piè di pagina, puoi utilizzare le funzioni di [localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it).
 
@@ -540,9 +540,9 @@ Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **
 
 >[!NOTE]
 >
->Le modifiche al layout si riflettono in **Contenuto iniziale** ma non viene visualizzata alcuna modifica in **Struttura** modalità.
+>Le modifiche apportate al layout vengono riportate in modalità **Contenuto iniziale**, ma non in modalità **Struttura**.
 
-![Modifica il layout del modello](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
+![Modificare il layout del modello](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
 ### Modifica di un modello - Criterio pagina - Autore/sviluppatore del modello {#editing-a-template-page-policy-template-author-developer}
 
@@ -553,8 +553,8 @@ Per accedere alla finestra di dialogo **Criterio pagina**:
 1. Dall’**Editor modelli**, seleziona **Informazioni pagina** dalla barra degli strumenti, quindi **Criterio pagina** per aprire la finestra di dialogo.
 1. Si apre la finestra di dialogo **Criterio pagina**, divisa in due sezioni:
 
-   * La metà sinistra definisce il [criteri di pagina](#page-policies)
-   * La metà destra definisce il [proprietà pagina](#page-properties)
+   * La metà a sinistra definisce i [criteri della pagina](#page-policies)
+   * La metà a destra definisce le [proprietà della pagina](#page-properties)
 
    ![Progettazione pagina](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
@@ -572,7 +572,7 @@ Per accedere alla finestra di dialogo **Criterio pagina**:
 
   ![Pulsante Aggiungi criterio](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato ha il titolo **Copia di X**, dove X è il titolo del criterio copiato.
+  Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
 
   ![Pulsante Copia criterio](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -591,7 +591,7 @@ Con le proprietà della pagina è possibile definire le librerie lato client ric
 
 ![Proprietà pagina](/help/sites-cloud/authoring/assets/templates-page-properties.png)
 
-* Specifica le librerie lato client da applicare alle pagine create con questo modello. Immissione del nome di una libreria nel campo di testo della **Librerie lato client** sezione.
+* Specifica le librerie lato client che desideri applicare alle pagine create con questo modello. Immetti il nome di una libreria nel campo di testo della sezione **Librerie lato client**.
 
   ![Librerie lato client](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
@@ -619,46 +619,46 @@ L’opzione **Proprietà pagina iniziale** consente di definire le [proprietà d
 
    ![Proprietà pagina iniziale dei modelli](/help/sites-cloud/authoring/assets/templates-initial-properties.png)
 
-1. Conferma le tue definizioni con **Fine**.
+1. Per confermare le definizioni, seleziona **Fine**.
 
 ## Best practice   {#best-practices}
 
 Quando crei dei modelli, prendi in considerazione quanto segue:
 
-1. L’impatto delle modifiche apportate al modello dopo la creazione delle pagine da tale modello.
+1. L’impatto di eventuali modifiche apportate al modello dopo che sono state create delle pagine dal modello in questione.
 
-   Di seguito è riportato un elenco delle diverse operazioni possibili sui modelli e del modo in cui influiscono sulle pagine create da essi:
+   Di seguito è riportato un elenco delle diverse operazioni possibili sui modelli e di come influiscono sulle pagine create da essi:
 
    * Modifiche alla struttura:
 
-      * Queste vengono applicate immediatamente alle pagine risultanti.
-      * La pubblicazione del modello modificato è ancora necessaria per consentire ai visitatori di visualizzare le modifiche.
+      * Vengono applicate immediatamente alle pagine risultanti.
+      * È comunque necessario pubblicare il modello modificato affinché i visitatori possano vedere le modifiche.
 
-   * Modifiche ai criteri di contenuto e alle configurazioni di progettazione:
+   * Modifiche ai criteri dei contenuti e alle configurazioni di progettazione:
 
-      * Questi si applicano immediatamente alle pagine risultanti.
-      * La pubblicazione delle modifiche è necessaria per consentire ai visitatori di visualizzarle.
+      * Vengono applicate immediatamente alle pagine risultanti.
+      * È necessario pubblicare le modifiche affinché i visitatori possano vederle.
 
    * Modifiche al contenuto iniziale:
 
-      * Si applicano solo alle pagine create dopo le modifiche al modello.
+      * Vengono applicate solo alle pagine create dopo la modifica del modello.
 
-   * Le modifiche al layout dipendono dall’appartenenza o meno del componente modificato:
+   * Le modifiche al layout dipendono dal ruolo del componente modificato:
 
-      * Solo struttura - applicato immediatamente
-      * Contengono contenuto iniziale - solo nelle pagine create dopo la modifica
+      * Solo struttura: vengono applicate immediatamente
+      * Con contenuto iniziale: vengono applicate immediatamente solo alle pagine create dopo la modifica
 
-   Faccia particolare attenzione quando:
+   Presta particolare attenzione nei seguenti casi:
 
    * Blocco o sblocco di componenti su modelli abilitati.
-   * Questo può avere effetti collaterali, in quanto le pagine esistenti possono già utilizzarlo. In genere:
+   * Questo può avere effetti secondari, in quanto le pagine esistenti possono già utilizzarlo. In genere:
 
-      * I componenti sbloccati risultano mancanti nelle pagine esistenti.
-      * Il blocco dei componenti (che potevano essere modificati) nasconde la visualizzazione del contenuto sulle pagine.
+      * I componenti sbloccati (che erano bloccati) risultano mancanti nelle pagine esistenti.
+      * I componenti bloccati (che erano modificabili) nascondono la visualizzazione di tale contenuto sulle pagine.
 
    >[!NOTE]
    >
-   >L’AEM fornisce avvisi espliciti quando si modifica lo stato di blocco dei componenti nei modelli che non sono più bozze.
+   >AEM fornisce avvisi espliciti quando si modifica lo stato di blocco dei componenti nei modelli che non sono più bozze.
 
 1. [Creazione di cartelle personalizzate](#creating-a-template-folder-admin) per i modelli specifici del sito.
-1. [Pubblicare i modelli](#publishing-a-template-template-author) dal **Modelli** console.
+1. [Pubblica i modelli](#publishing-a-template-template-author) dalla console **Modelli**.

@@ -5,7 +5,7 @@ exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 66%
+ht-degree: 97%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 66%
 
 La console Pubblico consente di creare, organizzare e gestire i tipi di pubblico per il tuo account di Adobe Target o gestire i segmenti per ContextHub:
 
-* Aggiungi tipi di pubblico: o Adobe Target o i segmenti ContextHub.
-* Gestire i tipi di pubblico.
+* Aggiungere tipi di pubblico: tipi di pubblico Adobe Target o segmenti ContextHub.
+* Gestisci tipi di pubblico.
 
 Un tipo di pubblico, denominato *segmento* in ContextHub, è una classe di visitatori definita da criteri specifici che determinano chi visualizzerà un’attività sottoposta a targeting. Quando esegui il targeting di un’attività, puoi selezionare i tipi di pubblico direttamente nel processo di targeting oppure crearne di nuovi nella console Pubblico.
 
@@ -48,7 +48,7 @@ Per ulteriori dettagli sulla creazione di segmenti utilizzando ContextHub, consu
 
 ## Creazione di un pubblico di Adobe Target tramite la console Pubblico {#creating-an-adobe-target-audience-using-the-audience-console}
 
-Puoi creare i tipi di pubblico di Adobe Target direttamente nell’AEM utilizzando la console Pubblico.
+Puoi creare i tipi di pubblico di Adobe Target direttamente in AEM utilizzando la console Pubblico.
 
 I tipi di pubblico sono definiti da regole che determinano chi è incluso in un’attività target. Una definizione di pubblico può includere più regole e ogni regola può includere più parametri.
 
@@ -68,8 +68,8 @@ Per creare un pubblico di Adobe Target:
 
    ![Creazione di un pubblico Target](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. In **Configurazione Adobe Target** , seleziona la configurazione di destinazione e tocca o fai clic su **OK**.
-1. Nell’area Regola n. 1, tocca o fai clic sul tipo di attributo e immetti le informazioni sull’attributo nei campi disponibili. Al termine, selezionare il segno di spunta a destra dell&#39;attributo per salvarlo. Consulta [Attributi e relative opzioni](#attributes-and-their-options) per informazioni su tutti gli attributi.
+1. Nella finestra di dialogo **Configurazione Adobe Target**, seleziona la configurazione di destinazione e tocca o fai clic su **OK**.
+1. Nell’area Regola n.1, tocca o fai clic sul tipo di attributo e immetti le informazioni sull’attributo nei campi disponibili. Al termine, seleziona il segno di spunta a destra dell’attributo per salvarlo. Per informazioni su tutti gli attributi, consulta [Attributi e relative opzioni](#attributes-and-their-options).
 1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore boolean AND, il che significa che l’audience deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
 1. Tocca o fai clic su **Avanti**.
 1. Inserisci un nome per il pubblico e tocca o fai clic su **Salva**.

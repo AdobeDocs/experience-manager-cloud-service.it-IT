@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 21%
+ht-degree: 37%
 
 ---
 
@@ -17,7 +17,7 @@ Questa pagina illustra le note sulla versione 2023.8.0 di Cloud Manager in AEM a
 
 >[!NOTE]
 >
->Consulta [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) per le note sulla versione corrente di Adobe Experience Manager as a Cloud Service.
+>Per le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, consulta [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Data di pubblicazione {#release-date}
 
@@ -26,7 +26,7 @@ La data di pubblicazione di Cloud Manager versione 2023.8.0 in AEM as a Cloud Se
 ## Novità {#what-is-new}
 
 * Durante la configurazione di un set di contenuti su [copiare il contenuto,](/help/implementing/developing/tools/content-copy.md) [configurazioni in base al contesto](/help/implementing/developing/introduction/configurations.md) sono ora consentiti nei set di contenuti dell’interfaccia utente.
-* Sono stati apportati miglioramenti per migliorare la comprensibilità e la visualizzazione dei messaggi di errore nell’interfaccia utente di Cloud Manager.
+* Sono stati apportati miglioramenti nella comprensione e nella visualizzazione dei messaggi di errore all’interno dell’interfaccia utente di Cloud Manager.
 
 ## Programma di adozione anticipata {#early-adoption}
 
@@ -55,9 +55,9 @@ Ti interessa testare il nuovo cruscotto? Invia un&#39;e-mail a `aem-lighthouse-p
 
 ## Correzioni di bug {#bug-fixes}
 
-* Il **Ambienti** Il menu ora si chiude dopo aver attivato **[Copia contenuto](/help/implementing/developing/tools/content-copy.md)** modale.
-* [Una riesecuzione della pipeline](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) non è più consentito se l’esecuzione precedente non ha un `commitId` impostato sullo stato della fase di build.
-* Ora quando un utente fa clic su una pipeline in viene visualizzato un messaggio più comprensibile per i rari errori **Attività** o **Pipeline** schermi.
+* Il menu **Ambienti** ora si chiude dopo aver attivato la vista modale **[Copia contenuto](/help/implementing/developing/tools/content-copy.md)**.
+* Non è più consentita [una riesecuzione della pipeline](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) se l’esecuzione precedente non ha un `commitId` impostato sullo stato della fase di compilazione.
+* Ora quando un utente fa clic su una pipeline nelle schermate **Attività** o **Pipeline** viene visualizzato un messaggio più comprensibile riguardante gli errori rari.
 * Il `contentSetName` il valore non è più mancante nei registri ed è ora fornito negli input quando si avvia un [copia contenuto](/help/implementing/developing/tools/content-copy.md) operazione.
 * In alcune rare circostanze non è più possibile avviare due esecuzioni dalla stessa pipeline portando a uno stato &quot;bloccato&quot;.
 * Alla scadenza di un certificato, i nomi di dominio e gli elenchi IP consentiti associati al certificato non verranno più rimossi dalla rete CDN.

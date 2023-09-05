@@ -5,13 +5,13 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2279'
-ht-degree: 78%
+ht-degree: 98%
 
 ---
 
 # Modifica delle proprietà di una pagina {#editing-page-properties}
 
-Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine potrebbero essere collegate a una Live Copy, mentre altre no, e le informazioni sulla Live Copy sono disponibili in base alle necessità.
+Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine potrebbero essere collegate a una Live Copy, mentre altre no, e le informazioni della Live Copy vengono rese disponibili a seconda delle necessità.
 
 ## Proprietà pagina {#page-properties}
 
@@ -26,7 +26,7 @@ Le proprietà sono distribuite su più schede.
    * **Tag**: qui puoi aggiungere o rimuovere i tag dalla pagina aggiornando l’elenco nella casella di selezione.
       * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
       * Per aggiungere un tag completamente nuovo, digitane il nome in una casella di selezione vuota.
-         * Il nuovo tag viene creato quando si preme Invio.
+         * Il nuovo tag viene creato quando premi Invio.
          * Il nuovo tag viene quindi mostrato con un asterisco a destra che lo identifica come nuovo tag.
       * Con l’elenco a discesa puoi selezionare uno dei tag esistenti.
       * Quando passi il mouse su uno dei tag nella casella di selezione, viene visualizzata una x, che può essere utilizzata per rimuovere quel tag per quella pagina.
@@ -40,7 +40,7 @@ Le proprietà sono distribuite su più schede.
    * **Brand Slug**
 
       * **Override**: selezionalo per definire il marchio su questa pagina.
-         * Il valore viene ereditato da tutte le pagine figlie a meno che non presentino anche la **Ignora** valori impostati.
+         * Il valore viene ereditato da tutte le pagine secondarie a meno che non abbiano impostati anche i loro valori **Override**.
       * **Valore di override**: testo del marchio da aggiungere al titolo della pagina.
          * Il valore viene aggiunto al titolo della pagina dopo un carattere di barra come &quot;Cycling Tuscany | Always ready for the WKND&quot;
 
@@ -50,8 +50,8 @@ Le proprietà sono distribuite su più schede.
 
 * **Altri titoli e descrizioni**
 
-   * **Titolo pagina**: titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se vuoto, **Titolo** viene utilizzato.
-   * **Titolo navigazione** : puoi specificare un titolo separato da usare nella navigazione (ad esempio, se desideri qualcosa di più conciso). Se vuoto, **Titolo** viene utilizzato.
+   * **Titolo pagina**: titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se vuoto, il **Titolo** è utilizzato.
+   * **Titolo navigazione** : puoi specificare un titolo diverso da usare nella navigazione (ad esempio, se ne desideri uno più conciso). Se vuoto, il **Titolo** è utilizzato.
    * **Sottotitolo**: sottotitolo da utilizzare nella pagina.
    * **Descrizione**: descrizione della pagina, il suo ruolo o altri dettagli.
 
@@ -62,15 +62,15 @@ Le proprietà sono distribuite su più schede.
   > Vedi [Tempi di attivazione e disattivazione - Configurazione del trigger](/help/operations/replication.md#on-and-off-times-trigger-configuration) per informazioni dettagliate su come configurare la replica automatica correlata.
 
   >[!NOTE]
-  >Se **Ora di attivazione** o **Ora di disattivazione** è nel passato e la replica automatica è configurata, quindi l’azione pertinente viene attivata immediatamente.
+  >Se l’**Ora di attivazione** o l’**Ora di disattivazione** è nel passato e la replica automatica è configurata, l’azione pertinente verrà attivata immediatamente.
 
-   * **Ora di attivazione** : data e ora in cui la pagina pubblicata viene resa visibile (renderizzata) nell’ambiente di pubblicazione. La pagina deve essere pubblicata, manualmente o tramite replica automatica preconfigurata.
+   * **Ora di attivazione**: la data e l’ora in cui la pagina pubblicata viene resa visibile (renderizzata) nell’ambiente di pubblicazione. La pagina deve essere pubblicata, manualmente o tramite replica automatica preconfigurata.
 
-      * Se già [pubblicato (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) questa pagina rimane inattiva (nascosta) fino al rendering alla data e all’ora specificate.
-      * Se non è pubblicata e configurata per la replica automatica, la pagina viene pubblicata automaticamente e quindi sottoposta a rendering al momento specificato.
+      * Se già [pubblicata (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) questa pagina rimane inattiva (nascosta) fino al rendering alla data e all’ora specificate.
+      * Se non è pubblicata, ma è configurata per la replica automatica, la pagina viene pubblicata automaticamente e quindi sottoposta a rendering al momento specificato.
       * Se non è pubblicata e non è configurata per la replica automatica, la pagina non viene pubblicata automaticamente, quindi viene visualizzato un errore 404 quando si tenta di accedere alla pagina.
 
-   * **Ora di disattivazione** - Simile e spesso utilizzato in combinazione con **Ora di attivazione**, definisce l’ora in cui la pagina pubblicata viene nascosta nell’ambiente di pubblicazione.
+   * **Ora di disattivazione**: simile e spesso utilizzata in combinazione con l’**Ora di attivazione**, definisce l’ora in cui la pagina pubblicata viene nascosta nell’ambiente di pubblicazione.
 
    * Lascia questi campi (**Ora di attivazione** e **Ora di disattivazione**) vuoti per le pagine da pubblicare immediatamente e disponibili nell’ambiente di pubblicazione fino a quando non vengono disattivate (lo scenario più consueto).
 
@@ -115,7 +115,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Impostazioni modello**
 
-   * **Modelli consentiti** - [Definisce l’elenco dei modelli disponibili](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) all’interno di questa sub-filiale
+   * **Modelli permessi**: [definisce l’elenco di modelli che sono disponibili](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) in questo ramo secondario
 
 * **Autenticazione richiesta**
 
@@ -133,7 +133,7 @@ Le proprietà sono distribuite su più schede.
 
 * **SEO**
 
-   * **URL canonico** : può essere utilizzato per sovrascrivere l’URL canonico della pagina; se lasciato vuoto, l’URL canonico corrisponde all’URL della pagina
+   * **Url canonico**: può essere utilizzato per sovrascrivere l’URL canonico della pagina; se lasciato vuoto, l’URL della pagina è il relativo URL canonico
 
    * **Tag robot**: seleziona i tag robot per controllare il comportamento dei crawler dei motori di ricerca.
 
@@ -141,7 +141,7 @@ Le proprietà sono distribuite su più schede.
      >
      >Alcune delle opzioni sono in conflitto tra loro. In caso di conflitto, l’opzione più permissiva ha la precedenza.
 
-   * **Genera mappa del sito** : se selezionata, viene generato un file sitemap.xml per questa pagina e i relativi discendenti
+   * **Genera mappa del sito**: se selezionata, per questa pagina viene generato un file sitemap.xml con i relativi discendenti
 
 ### Immagini {#images}
 
@@ -198,13 +198,13 @@ Le proprietà sono distribuite su più schede.
 
 Questa scheda è visibile solo per le pagine che fungono da blueprint. Le blueprint fungono da base per le Live Copy e fanno parte della [Gestione multisito](/help/sites-cloud/administering/msm/overview.md).
 
-* **Live Copy correnti** : elenca le pagine basate su (ovvero, Live Copy di) questa pagina blueprint
+* **Live Copy attuali**: elenca le pagine basate su (ovvero, Live Copy di) questa pagina blueprint
 
-* **Configurazioni rollout** - Controlla le circostanze in cui le modifiche vengono propagate alla Live Copy
+* **Configurazioni di Rollout**: controlla le circostanze in cui le modifiche vengono propagate alla Live Copy
 
 ### Live Copy  {#live-copy}
 
-Questa scheda è visibile solo per le pagine configurate come Live Copy. Come per le blueprint, le Live Copy fanno parte di [Gestione multisito](/help/sites-cloud/administering/msm/overview.md).
+Questa scheda è visibile solo per le pagine configurate come Live Copy. Come per le blueprint, le Live Copy fanno parte della [Gestione multisito](/help/sites-cloud/administering/msm/overview.md).
 
 * **Sincronizza**: sincronizza le Live Copy con blueprint, mantenendo le modifiche locali
 * **Ripristina**: ripristina le Live Copy allo stato di blueprint, rimuovendo le modifiche locali
@@ -223,7 +223,7 @@ Questa scheda è visibile solo per le pagine configurate come Live Copy. Come pe
 
    * **Ereditarietà della Live Copy**: se selezionato, la configurazione Live Copy ha effetto su tutti gli elementi figli
    * **Eredita configurazioni di rollout dal genitore**: se selezionato, la configurazione di rollout viene ereditata dalla pagina genitore
-   * **Scegli configurazione di rollout** - Definisce le circostanze in cui le modifiche vengono propagate dalla Blueprint e sono disponibili solo quando **Eredita configurazioni di rollout dal genitore** non è selezionato
+   * **Scegli configurazione di rollout**: definisce le circostanze in cui le modifiche vengono propagate dalla Blueprint e disponibili solo quando **Eredita configurazioni di rollout dall’elemento principale** non è selezionato
 
 ### Anteprima {#preview}
 
@@ -253,7 +253,7 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
 
    * **Strategia di memorizzazione in cache e frequenza di aggiornamento dei contenuti**: definisce il modello di memorizzazione in cache per PWA
    * **File da memorizzare nella cache per uso offline**
-      * **Pre-caching dei file (anteprima tecnica)** - i file in hosting su AEM vengono salvati nella cache del browser locale quando il service worker si sta installando e prima di essere utilizzato
+      * **Pre-memorizzazione in cache dei file (anteprima tecnica)**: i file ospitati su AEM vengono salvati nella cache del browser locale quando il service worker si sta installando e prima di essere utilizzato
       * **Librerie lato client**: le librerie lato client per memorizzare in cache l’esperienza offline
       * **Inclusioni dei percorsi**: le richieste di rete per i percorsi definiti vengono intercettate e il contenuto memorizzato nella cache viene restituito in conformità alla configurazione della strategia di memorizzazione in cache e alla frequenza di aggiornamento dei contenuti
       * **Esclusioni di percorsi**: questi file non verranno mai memorizzati nella cache indipendentemente dalle impostazioni in Pre-memorizzazione in cache dei file e Inclusioni dei percorsi
@@ -276,7 +276,7 @@ Tocca o fai clic su **Proprietà** per definire le proprietà di pagina:
 1. Seleziona l’opzione **Proprietà** per la pagina desiderata, utilizzando:
    * [Azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * Le proprietà di pagina vengono visualizzate utilizzando le schede appropriate.
+   * Le proprietà di pagina vengono visualizzate utilizzando le relative schede.
 1. Visualizza o modifica le proprietà a seconda delle esigenze.
 1. Quindi, seleziona **Salva** per salvare le modifiche e **Chiudi** per tornare alla console.
 
@@ -300,7 +300,7 @@ Puoi selezionare più pagine per la modifica in serie utilizzando diversi metodi
 * Quando esplori la console **Sites**
 * Dopo l’utilizzo di **Ricerca** per individuare un set di pagine
 
-Dopo aver selezionato le pagine e aver toccato o fatto clic su **Opzione Proprietà**, vengono visualizzate le proprietà per la modifica in serie:
+Dopo aver selezionato le pagine e aver toccato o fatto clic sull’opzione **Proprietà**, vengono visualizzate le proprietà per la modifica in serie:
 
 ![Modifica in serie delle proprietà di pagina](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -308,7 +308,7 @@ Puoi eseguire la modifica in serie solo su pagine che:
 
 * condividono lo stesso tipo di risorsa;
 * non fanno parte di una Live Copy.
-   * Se una delle pagine si trova in una Live Copy, all’apertura delle proprietà viene visualizzato un messaggio.
+   * Se una delle pagine fa parte di una Live Copy, all’apertura delle proprietà viene visualizzato un messaggio di avviso.
 
 Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti operazioni:
 
@@ -329,6 +329,6 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
 * **Modifica**
 
    * Puoi aggiornare i valori nei campi disponibili.
-      * I nuovi valori vengono applicati a tutte le pagine selezionate quando si seleziona **Fine**.
+      * I nuovi valori vengono applicati a tutte le pagine selezionate quando selezioni **Fine**.
       * Quando il campo è multivalore (ad esempio Tag), è possibile aggiungere un nuovo valore o rimuovere un valore comune.
-   * I campi in comune ma con valori diversi nelle varie pagine sono contrassegnati da un valore speciale, ad esempio il testo `<Mixed Entries>`.
+   * I campi in comune ma con valori diversi nelle varie pagine sono contraddistinti da uno speciale valore, ad esempio il testo `<Mixed Entries>`.

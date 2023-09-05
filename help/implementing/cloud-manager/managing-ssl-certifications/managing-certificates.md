@@ -5,7 +5,7 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '644'
-ht-degree: 74%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Lo stato dei certificati SSL può essere visualizzato dalla pagina del certifica
 * **Verde**: indica che il certificato è valido per almeno 60 giorni dalla data corrente.
 
 * **Arancione**: indica che la scadenza del certificato è tra meno di 60 giorni.
-   * È ora di assicurarsi di disporre di un piano per rinnovare il certificato e sostituirlo tramite l’interfaccia utente di Cloud Manager per evitare possibili accessi o interruzioni del sito.
+   * In questo momento è necessario verificare di disporre di un piano per il rinnovo del certificato e sostituirlo tramite l’interfaccia utente di Cloud Manager, per evitare possibili accessi o interruzioni del sito.
    * Cloud Manager invia notifiche regolari nell’interfaccia utente per avvisarti della scadenza imminente del certificato.
 
 * **Rosso**: indica che la scadenza del certificato SSL è trascorsa.
@@ -39,7 +39,7 @@ Quando un certificato scade, i domini in uso con il certificato scaduto smettera
 
 >[!NOTE]
 >
->Un utente deve essere membro di **Proprietario business** o **Responsabile dell’implementazione** ruolo per aggiornare un certificato SSL in Cloud Manager.
+>Per aggiornare un certificato SSL in Cloud Manager, l’utente deve avere il ruolo **Proprietario business** o **Responsabile della distribuzione**.
 
 ## Sostituzione di un certificato SSL {#replace-ssl-certificate}
 
@@ -49,7 +49,7 @@ Quando un certificato scade, i domini in uso con il certificato scaduto smettera
 
 La rimozione dei certificati da Cloud Manager è un’azione permanente che non può essere annullata. Come best practice, Adobe consiglia di salvare localmente i file SSL prima di eliminarli in Cloud Manager.
 
-Cloud Manager non consente di eliminare un certificato SSL associato a uno o più domini. Prima dell’eliminazione del certificato SSL è necessario eliminare tutti i domini associati. Consulta [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) per ulteriori informazioni.
+Cloud Manager non consente di eliminare un certificato SSL associato a uno o più domini. Prima dell’eliminazione del certificato SSL è necessario eliminare tutti i domini associati. Per ulteriori informazioni, consulta [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
 
 Per eliminare un certificato SSL, segui la procedura riportata di seguito.
 
@@ -62,11 +62,11 @@ Per eliminare un certificato SSL, segui la procedura riportata di seguito.
 
 >[!NOTE]
 >
->Un utente deve essere membro di **Proprietario business** o **Responsabile dell’implementazione** ruolo per eliminare un certificato SSL in Cloud Manager.
+>Per eliminare un certificato SSL in Cloud Manager, l’utente deve avere il ruolo **Proprietario business** o **Responsabile della distribuzione**.
 
 ## Configurazioni CDN preesistenti {#pre-existing-cdn}
 
-Se disponi di una configurazione CDN preesistente per il certificato SSL, viene visualizzato un messaggio informativo sulla **Certificati SSL** , per invitarti ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
+Se disponi di una configurazione CDN preesistente per il certificato SSL, viene visualizzato un messaggio informativo sulla pagina **Certificati SSL** che ti invita ad aggiungere queste configurazioni tramite l’interfaccia utente, in modo che siano visibili e configurabili in Cloud Manager.
 
 Il messaggio non viene più visualizzato dopo aver eseguito la migrazione di tutte le configurazioni dell’ambiente preesistenti tramite l’interfaccia utente. Potrebbero essere necessari 1-2 giorni lavorativi affinché il messaggio non venga più visualizzato.
 

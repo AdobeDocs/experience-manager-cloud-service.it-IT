@@ -5,7 +5,7 @@ exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1687'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ L’AEM ti consente di personalizzare facilmente le esperienze degli utenti. Con
 
 ## Accesso ai segmenti {#accessing-segments}
 
-Il [Tipi di pubblico](audiences.md) La console viene utilizzata per gestire i segmenti per ContextHub e i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub.
+La console [Tipi di pubblico](audiences.md) viene utilizzata sia per gestire i segmenti per ContextHub, sia i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub.
 
 Per accedere ai segmenti, nella navigazione globale seleziona **Navigazione > Personalizzazione > Tipi di pubblico**. Seleziona la configurazione (ad esempio, Sito WKND) per visualizzare i segmenti:
 
@@ -65,13 +65,13 @@ Per valutare le proprietà dei segmenti sono disponibili i seguenti confronti di
 
 >[!NOTE]
 >
->Quando si confrontano i valori, se il tipo di dati del confronto non è impostato (ovvero è impostato sul rilevamento automatico), il motore di segmentazione di ContextHub si limiterà a confrontare i valori come farebbe JavaScript. Non effettua l’assegnazione dei valori ai tipi previsti, il che può portare a risultati fuorvianti. Esempio:
+>Quando si confrontano i valori, se il tipo di dati del confronto non è impostato (cioè è impostato sul rilevamento automatico), il motore di segmentazione di ContextHub si limiterà a confrontare i valori allo stesso modo di Javascript. Non effettua l’assegnazione dei valori ai tipi previsti, il che può portare a risultati fuorvianti. Esempio:
 >
 >`null < 30 // will return true`
 >
 >Pertanto quando procedi alla [creazione di un segmento](#creating-a-new-segment) devi selezionare un **tipo di dati** ogni volta che sono noti i tipi di valori confrontati. Esempio:
 >
->Quando si confronta la proprietà `profile/age`, sai già che il tipo confrontato è un **numero**, quindi anche se `profile/age` non è impostato, un confronto `profile/age` viene restituito less-than 30 **false**, come ti aspetteresti.
+>Quando confronti la proprietà `profile/age`, sai già che il tipo confrontato sarà un **numero**, perciò anche se `profile/age` non è impostato, un confronto `profile/age` minore di 30 restituirà **False (Falso)**, come prevedibile.
 
 ### Riferimenti {#references}
 
@@ -92,11 +92,11 @@ Per definire il nuovo segmento:
 
    ![Aggiungi segmento](../assets/contexthub-create-segment.png)
 
-1. In **Nuovo segmento ContextHub**, immetti un titolo per il segmento e un valore di incremento, se necessario, quindi tocca o fai clic su **Crea**.
+1. In **Nuovo segmento ContextHub**, inserisci un titolo per il segmento e se necessario un valore di incremento, quindi tocca o fai clic su **Crea**.
 
    ![Nuovo segmento](../assets/contexthub-new-segment.png)
 
-   Ogni segmento ha un parametro di incremento utilizzato come fattore di ponderazione. Un numero più alto indica che il segmento è selezionato al posto di un segmento con un numero più basso nelle istanze in cui sono validi più segmenti.
+   Ogni segmento ha un parametro di incremento utilizzato come fattore di ponderazione. Un valore più elevato determina la selezione del segmento, preferendolo a un segmento con un valore inferiore nelle istanze in cui sono validi più segmenti.
 
    * Valore minimo: `0`
    * Valore massimo: `1000000`
@@ -199,8 +199,8 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.
-   * Il **Nome** diventa il nome del nodo nell’archivio.
-      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM](/help/implementing/developing/introduction/naming-conventions.md).
+   * Il **nome** diventa il nome del nodo nell’archivio.
+      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Se necessario è possibile modificarlo.
 
    ![Crea cartella](../assets/contexthub-create-folder.png)
@@ -279,7 +279,7 @@ Oppure, se non è risolto:
 
 Tali test possono essere eseguiti anche sulle pagine di contenuto e in combinazione con contenuti mirati e **Attività** ed **Esperienze** correlate.
 
-Se hai impostato un’attività e un’esperienza, puoi testare facilmente il segmento con l’attività. Per informazioni dettagliate sulla configurazione di un’attività, consulta [documentazione sull’authoring di contenuti di destinazione](targeted-content.md).
+Se hai impostato un’attività e un’esperienza, puoi testare facilmente il segmento con l’attività. Per informazioni dettagliate sulla configurazione di un’attività, consulta la [documentazione sull’authoring di contenuti di destinazione](targeted-content.md).
 
 1. In modalità di modifica di una pagina in cui hai impostato il contenuto di destinazione, è possibile vedere che il contenuto è indirizzato tramite l’icona a forma di freccia su di esso.
 1. Passa alla modalità anteprima e utilizza ContextHub, passa a un utente tipo che non corrisponde alla segmentazione configurata per l’esperienza.

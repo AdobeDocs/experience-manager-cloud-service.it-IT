@@ -5,7 +5,7 @@ exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 45%
+ht-degree: 93%
 
 ---
 
@@ -14,22 +14,22 @@ ht-degree: 45%
 La pagina corrente descrive la consegna dei contenuti del servizio di pubblicazione in AEM as a Cloud Service. La consegna dei contenuti del servizio di pubblicazione include:
 
 * CDN
-* AEM Dispatcher
-* Pubblicazione AEM
+* Dispatcher AEM
+* Editore AEM
 
 Il flusso di dati è il seguente:
 
 1. L’URL viene aggiunto nel browser
 1. Richiesta effettuata a CDN mappata in DNS a quel dominio
 1. Se il contenuto è completamente memorizzato nella cache su CDN, quest’ultima lo trasmette al browser
-1. Se il contenuto non è completamente memorizzato nella cache, la rete CDN viene richiamata (proxy inverso) in Dispatcher
-1. Se il contenuto è completamente memorizzato nella cache in Dispatcher, Dispatcher lo trasmette alla rete CDN
-1. Se il contenuto non è completamente memorizzato nella cache, Dispatcher invia una chiamata (proxy inverso) alla pubblicazione AEM
-1. Il contenuto viene renderizzato dal browser, che può anche memorizzarlo nella cache, a seconda delle intestazioni
+1. Se il contenuto non è completamente memorizzato nella cache, la rete CDN si rivolge (proxy invertito) al Dispatcher
+1. Se il contenuto è completamente memorizzato nella cache del Dispatcher, quest’ultimo lo distribuisce alla CDN
+1. Se il contenuto non è completamente memorizzato nella cache, il Dispatcher si rivolge (proxy invertito) alla pubblicazione AEM
+1. Il browser esegue il rendering sul contenuto, che può anche memorizzarlo nella cache, a seconda delle intestazioni
 
-Per impostazione predefinita, il tipo di contenuto HTML/testo è impostato per scadere dopo 300 secondi (5 minuti) a livello di Dispatcher, una soglia rispettata sia dalla cache di Dispatcher che dalla rete CDN. Durante le ridistribuzioni del servizio di pubblicazione, la cache di Dispatcher viene cancellata e quindi riscaldata prima che i nuovi nodi di pubblicazione accettino il traffico.
+Per impostazione predefinita, il tipo di contenuto HTML/testo è impostato per scadere dopo 300 secondi (5 minuti) al livello del Dispatcher, una soglia rispettata sia dalla cache del Dispatcher che dalla CDN. Durante le ridistribuzioni del servizio di pubblicazione, la cache del Dispatcher viene svuotata e quindi subisce un processo di riscaldamento prima che i nuovi nodi di pubblicazione accettino il traffico.
 
-Le sezioni seguenti forniscono maggiori dettagli sulla distribuzione dei contenuti:
+Le sezioni seguenti forniscono ulteriori dettagli sulla distribuzione dei contenuti:
 * [Configurazione CDN](/help/implementing/dispatcher/cdn.md)
 * [Memorizzazione in cache](/help/implementing/dispatcher/caching.md)
 

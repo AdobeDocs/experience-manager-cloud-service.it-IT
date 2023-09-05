@@ -6,7 +6,7 @@ role: Admin
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
 1. Seleziona **Istanze** per visualizzare l’elenco delle istanze in esecuzione del flusso di lavoro attualmente in corso.
 1. Nella barra superiore, nell’angolo a destra, le istanze del flusso di lavoro mostrano i **Flussi di lavoro in esecuzione**, lo **Stato** e i **Dettagli**.
-1. L’istanza **Flussi di lavoro in esecuzione** mostra il numero di flussi di lavoro in esecuzione e il relativo stato. ad esempio, nelle immagini specificate, viene mostrato il numero di **Flussi di lavoro in esecuzione** e lo **Stato** dell’istanza di AEM:
+1. L’istanza **Flussi di lavoro in esecuzione** mostra il numero di flussi di lavoro in esecuzione e il relativo stato. Ad esempio, nelle immagini specificate, viene mostrato il numero di **Flussi di lavoro in esecuzione** e lo **Stato** dell’istanza di AEM:
 
    * **Stato: integro**
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
@@ -36,12 +36,12 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
    * **Stato: non integro**
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
-1. Per i **Dettagli dello stato** delle istanze del flusso di lavoro, fai clic su **Dettagli**, per visualizzare il **numero di istanze di flussi di lavoro in esecuzione**, le **istanze di flusso di lavoro completate**, le **istanze di flusso di lavoro interrotte**, le **istanze di flusso di lavoro non riuscite** e così via. ad esempio, di seguito sono riportate le immagini che mostrano **Dettagli stato** con:
+1. Per i **Dettagli dello stato** delle istanze del flusso di lavoro, fai clic su **Dettagli**, per visualizzare il **numero di istanze di flussi di lavoro in esecuzione**, le **istanze di flusso di lavoro completate**, le **istanze di flusso di lavoro interrotte**, le **istanze di flusso di lavoro non riuscite** e così via. Ad esempio, di seguito sono riportate le immagini che mostrano i **Dettagli dello stato** con:
 
-   * **Dettagli stato: integro**
+   * **Dettagli dello stato: integro**
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
-   * **Dettagli stato: Non integro**
+   * **Dettagli dello stato: non integro**
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -198,9 +198,9 @@ I dati elaborati dai flussi di lavoro vengono memorizzati nell’archiviazione f
 
 Viene fornito un flag a livello di modello di flusso di lavoro per indicare che tale modello (e le sue istanze di runtime) dispone di archiviazione esterna dei metadati. Le variabili del flusso di lavoro non saranno rese persistenti in JCR per quelle istanze dei modelli contrassegnati per l’archiviazione esterna.
 
-La proprietà *userMetadataPersistenceEnabled* è memorizzato su *jcr:content, nodo* del modello di flusso di lavoro. Questo flag viene reso persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
+La proprietà *userMetadataPersistenceEnabled* viene memorizzata nel *nodo jcr:content* del modello di flusso di lavoro. Questo flag viene reso persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
 
-L’illustrazione seguente mostra come impostare il flag su un flusso di lavoro.
+L’illustrazione seguente mostra come configurare il flag in un flusso di lavoro.
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 

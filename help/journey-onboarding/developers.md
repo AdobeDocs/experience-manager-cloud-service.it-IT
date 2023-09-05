@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ A seconda delle esigenze dell’organizzazione, gli stessi utenti possono avere 
 Prima di iniziare le attività descritte in questo documento come utente con ruolo Sviluppatore o Responsabile dell’implementazione, assicurati che l’amministratore di sistema abbia completato tutti i passaggi di questo percorso di onboarding. Ciò significa che:
 
 * L’amministratore di sistema ha assegnato sviluppatori e responsabili dell’implementazione ai rispettivi profili di prodotto.
-* Gli sviluppatori devono inoltre essere assegnati a **Utenti AEM** o **Amministratori AEM** anche i profili di prodotto utilizzano l’AEM.
+* Gli sviluppatori sono stati inoltre assegnati ai profili di prodotto **Utenti AEM** o **Amministratori AEM** per poter utilizzare AEM.
 * Le risorse cloud sono state configurate.
 
 ## Accesso a Git {#accessing-git}

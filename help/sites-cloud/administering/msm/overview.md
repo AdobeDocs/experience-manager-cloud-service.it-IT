@@ -7,7 +7,7 @@ exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2714'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -148,20 +148,20 @@ MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse op
 
 ### Termini utilizzati {#terms-used}
 
-Come introduzione, la tabella seguente fornisce una panoramica dei termini principali utilizzati con MSM. Tali informazioni sono descritte più dettagliatamente nelle sezioni e nelle pagine successive.
+Come introduzione, la tabella seguente fornisce una panoramica dei termini principali utilizzati con MSM. Tali informazioni saranno descritte più dettagliatamente nelle sezioni e nelle pagine successive.
 
 | Termine | Definizione | Maggiori dettagli |
 |---|---|---|
 | Sorgente | Pagine originali utilizzate come base per le Live Copy | Sinonimo di pagine blueprint e/o blueprint |
 | Live Copy  | La copia (della sorgente), gestita dalle azioni di sincronizzazione definite dalle configurazioni di rollout |  |
 | Configurazione Live Copy | Definizione dei dettagli di configurazione per una Live Copy |  |
-| Relazione Live | Definizione effettiva dell’ereditarietà per una determinata risorsa, ovvero le connessioni tra sorgente e Live Copy | Garantisce che le modifiche all’origine possano essere sincronizzate con la Live Copy |
+| Relazione Live | Definizione effettiva dell’ereditarietà per una determinata risorsa, ovvero connessioni tra origine e Live Copy | Garantisce che le modifiche all’origine possano essere sincronizzate con la Live Copy |
 | Blueprint | Sinonimo di Origine | Può essere definito da una configurazione blueprint |
 | Configurazione Blueprint | Configurazione predefinita che specifica un percorso origine | Quando si fa riferimento a una pagina blueprint in una configurazione blueprint, diventa disponibile il comando Rollout |
 | Capitolo | Sezioni della blueprint da includere nella Live Copy | Si tratta in genere di sottopagine della radice |
 | Sincronizzazione | Termine generico per la sincronizzazione dei contenuti tra l’origine e le Live Copy (per le opzioni **Rollout** e **Sincronizza**) |  |
 | Rollout | Sincronizza dall’origine alla Live Copy | Può essere attivato da un autore (in una pagina blueprint) o da un evento di sistema (come definito dalla configurazione di rollout) |
-| Configurazione rollout | Regole che determinano quali proprietà vengono sincronizzate, come e quando |  |
+| Configurazione rollout | Regole che determinano quali proprietà sincronizzare, e come e quando sincronizzarle |  |
 | Sincronizza | Richiesta manuale di sincronizzazione, effettuata dalle pagine Live Copy |  |
 | Ereditarietà | Una pagina/componente Live Copy eredita il contenuto dalla pagina/componente origine quando avviene la sincronizzazione |  |
 | Sospendi | Rimuove temporaneamente la relazione live tra una Live Copy e la relativa pagina blueprint |  |
@@ -229,15 +229,15 @@ Quando crei una Live Copy in AEM, puoi visualizzare e navigare attraverso il ram
 Quando crei una [nuova pagina all’interno di una Live Copy esistente](#live-copy-with-non-live-copy-pages), questa può anche essere impostata come Live Copy di un’altra blueprint. Questa è nota come Live Copy nidificata. Nelle Live Copy nidificate il comportamento della Live Copy secondaria o interna è interessato dalla Live Copy primaria o esterna nei seguenti modi:
 
 * Un rollout deep attivato per la Live Copy di livello superiore può essere proseguito nella Live Copy nidificata.
-* Eventuali collegamenti tra le sorgenti vengono riscritti all’interno delle Live Copy.
+* Eventuali collegamenti tra le origini verranno riscritti in Live Copy.
 
-Ad esempio, i collegamenti che puntano dal secondo al primo blueprint vengono riscritti come collegamenti che puntano dalla Live Copy nidificata/seconda alla prima Live Copy.
+Ad esempio, i collegamenti che puntano dal secondo al primo blueprint verranno riscritti come collegamenti che puntano dalla Live Copy nidificata/secondaria alla prima Live Copy.
 
 ![Live Copy nidificate](../assets/live-copy-nested.png)
 
 >[!NOTE]
 >
->Se sposti o rinomini una pagina all’interno del ramo Live Copy, questa viene trattata come una Live Copy nidificata per consentire all’AEM di tenere traccia delle relazioni.
+>Se sposti o rinomini una pagina all’interno del ramo Live Copy, questa verrà trattata come una Live Copy nidificata per consentire ad AEM di tenere traccia delle relazioni.
 
 #### Live Copy sovrapposte {#stacked-live-copies}
 

@@ -7,7 +7,7 @@ exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
 workflow-type: tm+mt
 source-wordcount: '970'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ Vengono creati i due nuovi profili di notifica.
 
 >[!NOTE]
 >
->È importante che il **nome del profilo di prodotto** di Cloud Manager sia esattamente uguale a quello fornito. Per evitare errori, copia e incolla il nome del profilo di prodotto fornito. Se è diverso o presenta errori di battitura, l’invio delle notifiche non avverrà correttamente.
+>È importante che il **nome del profilo di prodotto** di Cloud Manager sia esattamente uguale a quello fornito. Per evitare errori, copia e incolla il nome del profilo di prodotto. Se è diverso o presenta errori di battitura, l’invio delle notifiche non avverrà correttamente.
 >
 >In caso di errore o se i profili non sono stati definiti, per impostazione predefinita Adobe invierà le notifiche agli utenti esistenti assegnati al profilo **Sviluppatore Cloud Manager** o **Responsabile della distribuzione**.
 

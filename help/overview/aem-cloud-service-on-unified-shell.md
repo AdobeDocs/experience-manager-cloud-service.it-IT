@@ -5,7 +5,7 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 76%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service (Servizio di authoring) è integrato con Unified Shell pe
 
 Offre i seguenti vantaggi:
 
-* Single Sign-on in tutte le applicazioni Experience Cloud
+* Single sign-on in tutte le applicazioni Experience Cloud
 * Semplicità di passaggio a un’altra organizzazione o applicazione
 * Documentazione del prodotto migliorata
 * Pulsante di feedback semplificato all’interno del prodotto per segnalare i problemi o condividere idee con Adobe
@@ -32,19 +32,19 @@ La funzionalità Unified Shell è attivata in AEM as a Cloud Service per imposta
 >[!NOTE]
 >La funzionalità Unified Shell può essere disabilitata solo da un account con autorizzazioni di livello amministratore.
 
-1. Clic **Strumenti > Cloud Services**.
+1. Fai clic su **Strumenti > Cloud Services**.
 
-   Un utente amministratore visualizza la scheda di configurazione Unified Shell come mostrato di seguito:
+   All’utente amministratore viene presentata la scheda di configurazione Unified Shell, come illustrato di seguito:
 
    ![immagine](/help/overview/assets/unifiedshell2.png)
 
-1. Clic **Configurazione Unified Shell**. Quindi, deseleziona la casella di controllo illustrata di seguito per disabilitare Unified Shell:
+1. Fai clic su **Configurazione Unified Shell**. Quindi, deseleziona la casella di controllo illustrata di seguito per disabilitare Unified Shell:
 
    ![immagine](/help/overview/assets/unifiedshell3.png)
 
 ## Passare al tema scuro {#changing-to-dark-theme}
 
-Per passare al tema scuro, fai clic sull’icona del tuo profilo. Questa azione visualizza un popover come mostrato di seguito. Puoi utilizzare l’interruttore per passare al tema scuro di Unified Shell.
+Per passare al tema scuro, fai clic sull’icona del tuo profilo. Questa azione visualizza una finestra popover come mostrato di seguito. Puoi utilizzare l’interruttore per passare al tema scuro di Unified Shell.
 
 >[!INFO]
 >
@@ -60,7 +60,7 @@ AEM as a Cloud Service fornisce tre tipi di ambienti: produzione, staging e svil
 
 ## Accesso alla casella in entrata AEM {#accessing-the-aem-inbox}
 
-Per accedere alla casella in entrata dell’AEM fai clic sull’icona del campanello in Unified Shell.
+È possibile accedere alla Casella in entrata AEM facendo clic sull’icona a foma di campana in Unified Shell.
 
 >[!INFO]
 >
@@ -68,6 +68,6 @@ Per accedere alla casella in entrata dell’AEM fai clic sull’icona del campan
 
 ![immagine](/help/overview/assets/unifiedshell5.png)
 
-Fai clic sul pulsante Casella in entrata nel popover per passare alla casella in entrata AEM:
+Fai clic sul pulsante casella in entrata nella finestra popover per passare alla casella in entrata AEM:
 
 ![immagine](/help/overview/assets/unifiedshell6.png)

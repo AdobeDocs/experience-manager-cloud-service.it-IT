@@ -7,7 +7,7 @@ exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1420'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -29,8 +29,8 @@ Tieni presente che una Live Copy può essere creata utilizzando [pagine normali]
 
 I vantaggi aggiuntivi dell’utilizzo di una configurazione blueprint sono i seguenti:
 
-* Consenti all&#39;autore di utilizzare **Rollout** su una blueprint per inviare in modo esplicito le modifiche alle Live Copy che ereditano da questa blueprint.
-* Consenti all’autore di utilizzare **Crea sito** per selezionare facilmente le lingue e configurare la struttura della Live Copy.
+* Consente all’autore di utilizzare il **rollout** su una blueprint al fine di inviare in modo esplicito modifiche alle Live Copy che la ereditano.
+* Consente all’autore di utilizzare **Crea sito** per selezionare facilmente le lingue e configurare la struttura della Live Copy.
 * Definisci una configurazione di rollout predefinita per le Live Copy che hanno una relazione con la blueprint.
 
 Nel caso in cui non venga fatto riferimento a una configurazione blueprint, i rollout possono essere avviati solo dalle Live Copy stesse, essenzialmente richiamando il contenuto dal sorgente.
@@ -39,7 +39,7 @@ Quando crei un nuovo sito con Live Copy, è vantaggioso creare configurazioni bl
 
 >[!NOTE]
 >
->Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica intorno a questa regola durante la configurazione della Live Copy.
+>Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione della Live Copy.
 
 ## Sincronizzazione dei componenti e dei contenitori {#components-and-container-synchronization}
 
@@ -84,8 +84,8 @@ Quando crei le lingue master, tieni presente quanto segue:
 * Sebbene MSM stesso **non fornisca la traduzione del contenuto**, può essere integrato con connettori di traduzione di terze parti che lo fanno. Tieni presente quanto segue:
    * MSM consente di annullare l’ereditarietà a livello di pagina e/o di componente. Questo aiuta a evitare la sovrascrittura dei contenuti tradotti (da una Live Copy, con contenuti non ancora tradotti da una blueprint) al prossimo rollout.
       * Alcuni connettori di traduzione di terze parti automatizzano questa gestione delle ereditarietà MSM.
-      * Per ulteriori informazioni, rivolgiti al provider di servizi di traduzione.
-      * Un approccio alternativo per la creazione e la traduzione di lingue master consiste nell’utilizzare copie in lingua insieme all&#39;AEM Translation Integration Framework preconfigurato.
+      * Per ulteriori informazioni, rivolgiti al fornitore di servizi di traduzione.
+      * Un approccio alternativo per la creazione e la traduzione di lingue master consiste nell’utilizzare copie in lingua insieme al Translation Integration Framework di AEM preconfigurato.
 
 Per ulteriori informazioni consulta [Traduzione di contenuti per siti multilingue](/help/sites-cloud/administering/translation/overview.md) e [Best practice per la traduzione](/help/sites-cloud/administering/translation/best-practices.md).
 
@@ -144,7 +144,7 @@ Oltre a personalizzare le azioni di rollout, MSM ti consente anche di personaliz
 
 ## Ulteriori informazioni {#further-information}
 
-Consulta i seguenti articoli per ulteriori dettagli su MSM e Live Copy.
+Per ulteriori informazioni su MSM e Live Copy, consulta i seguenti articoli.
 
 * [Creazione e sincronizzazione di Live Copy](creating-live-copies.md)
 * [Panoramica Live Copy](live-copy-overview.md)
