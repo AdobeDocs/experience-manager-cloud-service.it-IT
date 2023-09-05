@@ -3,9 +3,9 @@ title: Test di qualità del codice
 description: Scopri come funziona il test di qualità del codice delle pipeline e come può migliorare la qualità delle distribuzioni.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1161'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Scopri come funziona il test di qualità del codice delle pipeline e come può m
 
 Il test di qualità del codice valuta il codice dell’applicazione in base a un set di regole relative alla qualità. È lo scopo principale di una pipeline destinata solo alla qualità del codice e viene eseguito immediatamente dopo la fase di build in tutte le pipeline di produzione e non di produzione.
 
-Consulta [Configurazione della pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) per ulteriori informazioni sui diversi tipi di pipeline.
+Per ulteriori informazioni sui diversi tipi di pipeline, consulta il documento [Configurazione della pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 ## Regole per la qualità del codice {#understanding-code-quality-rules}
 
@@ -30,7 +30,7 @@ Il test di qualità del codice controlla il codice sorgente per garantire che so
 
 >[!NOTE]
 >
->Scarica l’elenco completo delle regole [da questo collegamento](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+>È possibile scaricare l’elenco completo delle regole [utilizzando questo collegamento](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 ### Valutazioni a tre livelli {#three-tiered-gate}
 
@@ -60,16 +60,16 @@ Nella tabella seguente sono riepilogate le valutazioni e le soglie di errore per
 | Copertura | Definito da una combinazione di copertura di righe e copertura di condizioni dello unit test utilizzando la formula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = condizioni già valutate come `true` almeno una volta durante l’esecuzione degli unit test</li><li>`CF` = condizioni già valutate come `false` almeno una volta durante l’esecuzione degli unit test</li><li>`LC` = righe coperte = lines_to_cover - uncovered_lines</li><li>`B` = numero totale di condizioni</li><li>`EL` = numero totale di righe eseguibili (lines_to_cover)</li></ul> | Importante | &lt; 50% |
 | Unit test ignorati | Numero di unit test ignorati | Info | > 1 |
 | Problemi aperti | Tipi di problemi generali: vulnerabilità, bug e code smell | Info | > 0 |
-| Righe duplicate | Definito come il numero di righe presenti in blocchi duplicati. Un blocco di codice si considera duplicato nelle seguenti condizioni.<br>Progetti non Java:<ul><li>Devono esserci almeno 100 token successivi e duplicati.</li><li>Tali token devono essere distribuiti, per lo meno, come segue: </li><li>30 righe di codice per COBOL </li><li>20 righe di codice per ABAP </li><li>10 righe di codice per altri linguaggi</li></ul>Progetti Java:<ul></li><li> Devono essere presenti almeno 10 istruzioni successive e duplicate indipendentemente dal numero di token e righe.</li></ul>Le differenze nel rientro e nei valori letterali stringa vengono ignorate quando si rilevano duplicati. | Info | > 1% |
+| Righe duplicate | Definito come il numero di righe presenti in blocchi duplicati. Un blocco di codice si considera duplicato nelle seguenti condizioni.<br>Progetti non Java:<ul><li>Devono esserci almeno 100 token successivi e duplicati.</li><li>Tali token devono essere distribuiti, per lo meno, come segue: </li><li>30 righe di codice per COBOL </li><li>20 righe di codice per ABAP </li><li>10 righe di codice per altri linguaggi</li></ul>Progetti Java:<ul></li><li> Devono essere presenti almeno 10 istruzioni successive e duplicate indipendentemente dal numero di token e righe.</li></ul>Le differenze nel rientro e nelle stringhe letterali vengono ignorate quando si rilevano duplicati. | Info | > 1% |
 | Compatibilità con Cloud Service | Numero di problemi di compatibilità con Cloud Service identificati | Info | > 0 |
 
 >[!NOTE]
 >
->Consulta [Definizioni delle metriche di SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) per definizioni più dettagliate.
+>Per ulteriori dettagli sulle definizioni, consulta il documento [Definizioni delle metriche di SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle regole per la qualità del codice personalizzato eseguite da [!UICONTROL Cloud Manager], vedi [Regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>Per ulteriori informazioni sulle regole per la qualità del codice personalizzato eseguite da [!UICONTROL Cloud Manager], consulta [Regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Gestione dei falsi positivi {#dealing-with-false-positives}
 
@@ -103,10 +103,10 @@ la soluzione corretta è rimuovere la password hardcoded.
 
 >[!NOTE]
 >
->Anche se è una best practice fare `@SuppressWarnings` annotazione il più specifica possibile, ovvero annota solo l’istruzione o il blocco specifico causa del problema, è possibile annotare a livello di classe.
+>Anche se è una best practice fare l’annotazione `@SuppressWarnings` nel modo più specifico possibile, ossia annotare solo l’istruzione o il blocco specifici che causano il problema, è possibile annotare a livello di classe.
 
 >[!NOTE]
->Sebbene non esista un esplicito passaggio per i test di sicurezza, durante il passaggio di qualità del codice vengono valutate alcune regole per la qualità del codice relative alla sicurezza. Consulta [Panoramica sulla sicurezza per AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) per ulteriori informazioni sulla protezione nel Cloud Service.
+>Sebbene non esista un esplicito passaggio per i test di sicurezza, durante il passaggio di qualità del codice vengono valutate alcune regole per la qualità del codice relative alla sicurezza. Per ulteriori informazioni sulla sicurezza in Cloud Service, consulta [Panoramica sulla sicurezza di AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
 
 ## Ottimizzazione dell’analisi dei pacchetti di contenuti {#content-package-scanning-optimization}
 
@@ -116,11 +116,11 @@ Come parte del processo di analisi della qualità, Cloud Manager esegue l’anal
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (pacchetto di contenuti ignorato)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (pacchetto di contenuti ignorato)
 
-Se gli unici elementi `myco-all-1.0.0-SNAPSHOT.zip` sono i due pacchetti di contenuti ignorati, quindi i due pacchetti incorporati vengono analizzati al posto del pacchetto di contenuti &quot;all&quot;.
+Se gli unici elementi all’interno di `myco-all-1.0.0-SNAPSHOT.zip` sono i due pacchetti di contenuto ignorato, allora i due pacchetti incorporati sono analizzati al posto del pacchetto di contenuto “all”.
 
 Per i progetti che producono decine di pacchetti incorporati, è comprovato che questa ottimizzazione consente di risparmiare fino a 10 minuti per ogni esecuzione della pipeline.
 
-Un caso speciale può verificarsi quando il pacchetto di contenuti “all” include una combinazione di pacchetti di contenuti e bundle OSGi ignorati. Ad esempio, se `myco-all-1.0.0-SNAPSHOT.zip` conteneva i due pacchetti incorporati precedentemente menzionati e uno o più bundle OSGi, quindi viene creato un nuovo pacchetto di contenuti minimo con i soli bundle OSGi. Questo pacchetto viene sempre denominato `cloudmanager-synthetic-jar-package` e i bundle contenuti vengono inseriti in `/apps/cloudmanager-synthetic-installer/install`.
+Un caso speciale può verificarsi quando il pacchetto di contenuti “all” include una combinazione di pacchetti di contenuti e bundle OSGi ignorati. Ad esempio, se `myco-all-1.0.0-SNAPSHOT.zip` contiene i due pacchetti incorporati precedentemente menzionati oltre a uno o più bundle OSGi, allora viene creato un nuovo pacchetto di contenuti minimo con i soli bundle OSGi. Questo pacchetto viene sempre denominato `cloudmanager-synthetic-jar-package` e i bundle contenuti vengono inseriti in `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >
