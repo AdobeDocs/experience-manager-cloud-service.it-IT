@@ -4,9 +4,9 @@ description: Accesso, esperienza di accesso, casi di utilizzo supportati e probl
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Per utilizzare [!DNL Assets View], accedi a [https://experience.adobe.com/#/asse
 
 ## Accedere alla vista Risorse {#access-assets-view}
 
-Consulta [Come accedere alla vista Risorse](/help/assets/assets-view-introduction.md#how-to-access-assets-view) per istruzioni dettagliate su come accedere alla vista Risorse.
+Consulta [Come accedere alla vista Risorse](/help/assets/assets-view-introduction.md#how-to-access-assets-view) per ricevere istruzioni dettagliate su come accedere alla vista Risorse.
 
 ## Configurare [!DNL Assets View] {#configuration}
 
@@ -57,7 +57,7 @@ Di seguito sono indicate le varie attività di gestione delle risorse digitali (
 
 * [Guarda un video su come iniziare a utilizzare la vista Risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=it)
 
-* Fornire feedback sul prodotto utilizzando [!UICONTROL Feedback] opzione disponibile nell’interfaccia utente di Visualizzazione risorse
+* Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
