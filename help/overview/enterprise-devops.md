@@ -3,18 +3,18 @@ title: DevOps aziendale
 description: Scopri i processi, i metodi e la comunicazione necessari per semplificare l’implementazione e la collaborazione.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
 source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
-# DevOps aziendale {#enterprise-devops}
+# DevOps aziendale{#enterprise-devops}
 
-DevOps tratta i processi, i metodi e le comunicazioni necessari per:
+La metodologia DevOps tratta i processi, i metodi e la comunicazione necessari per:
 
-* Semplificare l’implementazione del software nei diversi ambienti
-* Semplifica la collaborazione tra i team di sviluppo, test e implementazione.
+* Semplificare l’implementazione del software nei diversi ambienti.
+* Semplificare la collaborazione tra i team di sviluppo, test e implementazione.
 
 DevOps punta a evitare problemi come:
 
@@ -39,15 +39,15 @@ Adobe Experience Manager (AEM) as a Cloud Service in genere è costituito da pi�
 
 ### Sviluppo {#development}
 
-Gli sviluppatori sono responsabili dello sviluppo e della personalizzazione del progetto proposto (che si tratti di sito web, applicazioni mobili, implementazione DAM e così via), con tutte le funzionalità richieste. Si occupano di:
+Gli sviluppatori sono responsabili dello sviluppo e della personalizzazione del progetto proposto (che si tratti di un sito web, applicazioni mobili, implementazione DAM, ecc.) con tutte le funzionalità richieste. Si occupano di:
 
 * sviluppare e personalizzare gli elementi necessari, ad esempio modelli, componenti, flussi di lavoro, applicazioni;
 * realizzare la progettazione;
-* sviluppare i servizi e gli script necessari per implementare le funzionalità richieste
+* sviluppare i servizi e gli script necessari per implementare le funzionalità richieste.
 
-La configurazione del [sviluppo](/help/implementing/developing/introduction/development-guidelines.md) L’ambiente può dipendere da vari fattori, anche se in genere è composto dai seguenti elementi:
+La configurazione dell’ambiente di [sviluppo](/help/implementing/developing/introduction/development-guidelines.md) può dipendere da vari fattori, anche se in genere è composto dai seguenti elementi:
 
-* Un sistema di sviluppo integrato con controllo della versione per fornire una base di codice integrata. Questa base di codice integrata viene utilizzata per unire e consolidare il codice dei singoli ambienti di sviluppo utilizzati da ogni sviluppatore.
+* Un sistema di sviluppo integrato con controllo della versione per fornire una base di codice integrata. Viene utilizzato per unire e consolidare il codice dei singoli ambienti di sviluppo utilizzati da ogni sviluppatore.
 * Un ambiente personale per ogni sviluppatore, di solito residente sulla sua macchina locale. A intervalli appropriati, il codice viene sincronizzato con il sistema di controllo delle versioni
 
 A seconda delle dimensioni del sistema, nell’ambiente di sviluppo possono essere presenti sia istanze di authoring che di pubblicazione.
@@ -58,7 +58,7 @@ Questo ambiente viene utilizzato dal team di controllo qualità per testare in m
 
 ### Staging {#staging}
 
-L’ambiente di staging deve rispecchiare l’ambiente di produzione: configurazione, codice e contenuto:
+L’ambiente di staging deve riflettere l’ambiente di produzione, cioè la sua configurazione, il suo codice e il suo contenuto:
 
 * Viene utilizzato per testare gli script impiegati per implementare la distribuzione effettiva.
 * Può essere utilizzato per i test finali (progettazione, funzionalità e interfacce) prima dell’implementazione negli ambienti di produzione.
@@ -66,7 +66,7 @@ L’ambiente di staging deve rispecchiare l’ambiente di produzione: configuraz
 
 ### Produzione: authoring e pubblicazione {#production-author-and-publish}
 
-L’ambiente di produzione è costituito dagli ambienti che [authoring e pubblicazione](/help/sites-cloud/authoring/getting-started/concepts.md) implementazione.
+L’ambiente di produzione è costituito dagli ambienti necessari per [effettuare l’authoring e pubblicare](/help/sites-cloud/authoring/getting-started/concepts.md) l’implementazione.
 
 Un ambiente di produzione è costituito da almeno un’istanza di authoring e un’istanza di pubblicazione:
 
@@ -77,7 +77,7 @@ A seconda delle dimensioni del progetto, è spesso composto da diversi autori, e
 
 #### Autore {#author}
 
-In genere, le istanze di authoring si trovano dietro il firewall interno. Questo firewall interno è l&#39;ambiente in cui tu e i tuoi colleghi eseguite attività di authoring, come le seguenti:
+Le istanze di authoring si trovano in genere dietro il firewall interno. Questo firewall interno è l’ambiente in cui tu e i tuoi colleghi eseguite attività di authoring, come le seguenti:
 
 * amministrare l’intero sistema
 * immettere i contenuti
@@ -86,11 +86,11 @@ In genere, le istanze di authoring si trovano dietro il firewall interno. Questo
 
 I contenuti attivati vengono inseriti in un pacchetto e posizionati nella coda di replica dell’ambiente di authoring. Il processo di replica trasferisce quindi tali contenuti all’ambiente di pubblicazione.
 
-Per eseguire la replica inversa nell’ambiente di authoring dei dati generati in un ambiente di pubblicazione, un listener di replica nell’ambiente di authoring esegue il polling dell’ambiente di pubblicazione e recupera tali contenuti dalla casella in uscita della replica inversa dell’ambiente di pubblicazione.
+Per effettuare la replica inversa nell’ambiente di authoring dei dati generati in un ambiente di pubblicazione, un listener di replica nell’ambiente di authoring esegue il polling dell’ambiente di pubblicazione e recupera i contenuti dalla casella in uscita della replica inversa dell’ambiente di pubblicazione.
 
 #### Pubblicazione {#publish}
 
-In genere, un ambiente di pubblicazione si trova nella &quot;zona demilitarizzata&quot; (DMZ). In questo ambiente i visitatori accedono al contenuto dell’utente (ad esempio tramite un sito web o un’app mobile) e interagiscono con esso, a prescindere che sia pubblico o nella rete Intranet. Un ambiente di pubblicazione:
+In genere, un ambiente di pubblicazione si trova nella “zona demilitarizzata” (DMZ). Questo è l’ambiente in cui i visitatori accedono al contenuto (ad esempio tramite un sito web o un’app mobile) e interagiscono con esso, a prescindere che sia pubblico o nella rete Intranet. Un ambiente di pubblicazione:
 
 * ospita i contenuti replicati dall’ambiente di authoring;
 * rende tali contenuti disponibili ai visitatori;
@@ -101,19 +101,19 @@ L’ambiente di pubblicazione genera i contenuti in tempo reale e in modo dinami
 
 ## Spostamento del codice {#code-movement}
 
-Propaga sempre il codice dal basso verso l&#39;alto:
+Propaga sempre il codice dal basso verso l’alto:
 
-* Il codice viene inizialmente sviluppato negli ambienti di sviluppo locali e poi integrati.
-* seguito da test approfonditi sugli ambienti di controllo qualità
+* il codice viene inizialmente sviluppato negli ambienti di sviluppo locali e poi integrati
+* seguiti da approfonditi test negli ambienti di controllo qualità
 * Quindi viene testato nuovamente negli ambienti di gestione temporanea.
 * Solo a questo punto il codice può essere distribuito agli ambienti di produzione.
 
-Di solito, il codice (ad esempio, funzionalità di applicazioni web personalizzate e modelli di progettazione) viene trasferito esportando e importando pacchetti tra i diversi archivi di contenuto. Se utile, questa replica può essere configurata come processo automatico.
+Il codice (ad esempio, funzionalità di applicazioni web personalizzate e modelli di progettazione) viene in genere trasferito esportando e importando pacchetti tra i diversi archivi dei contenuti. Se utile, questa replica può essere configurata come processo automatico.
 
 I progetti su AEM as a Cloud Service spesso attivano la distribuzione del codice:
 
 * Automaticamente: per il trasferimento negli ambienti di sviluppo e di controllo qualità.
-* Manualmente: le distribuzioni negli ambienti di staging e produzione vengono effettuate in modo più controllato, spesso manuale; anche se l’automazione è possibile, se necessario.
+* Manualmente: le distribuzioni negli ambienti di staging e produzione sono effettuate in modo più controllato, spesso manuale, anche se l’automazione è possibile se necessaria.
 
 ![Spostamento del codice](assets/code-movement.png)
 
@@ -127,11 +127,11 @@ I contenuti di produzione devono essere spostati dall’ambiente di produzione a
 
 >[!NOTE]
 >
->Questa metodologia non significa che il contenuto di staging debba essere continuamente sincronizzato con la produzione; sono sufficienti aggiornamenti regolari, ma soprattutto prima di testare una nuova iterazione del codice. I contenuti negli ambienti di controllo qualità e di sviluppo non devono essere aggiornati con la stessa frequenza. Deve semplicemente essere una buona rappresentazione del contenuto di produzione.
+>Ciò non significa che il contenuto di staging debba essere continuamente sincronizzato con la produzione. Sono sufficienti gli aggiornamenti regolari, da eseguire in particolare prima di testare una nuova iterazione del codice. I contenuti negli ambienti di controllo qualità e di sviluppo non devono essere aggiornati con la stessa frequenza. Deve semplicemente essere una buona rappresentazione del contenuto di produzione.
 
 Il contenuto può essere trasferito:
 
 * tra i diversi ambienti esportando e importando pacchetti;
-* Tra istanze diverse tramite la replica diretta (replica AEM as a Cloud Service) del contenuto (tramite una connessione HTTP o HTTPS).
+* tra istanze diverse tramite la replica diretta (replica di AEM as a Cloud Service) dei contenuti (tramite una connessione HTTP o HTTPS).
 
 ![Spostamento dei contenuti](assets/content-movement.png)
