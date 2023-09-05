@@ -4,9 +4,9 @@ description: Il filtro Referrer di Adobe Experience Manager consente l’accesso
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
