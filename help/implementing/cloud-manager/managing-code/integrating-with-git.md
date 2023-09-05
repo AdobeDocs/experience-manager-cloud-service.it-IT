@@ -3,9 +3,9 @@ title: Utilizzo di Git con Cloud Manager
 description: Scopri come utilizzare gli archivi Git di Cloud Manager e come integrare un archivio Git personalizzato e gestito dal cliente on-premise con Cloud Manager.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -45,19 +45,19 @@ In questo video scoprirai le strategie di base per la ramificazione.
 
 ## Sviluppo dei rami delle funzioni {#feature-development}
 
-Utilizza un ramo della funzione per isolare le modifiche al codice in un archivio Git gestito dal cliente e sincronizzalo con l’archivio Git di Cloud Manager per utilizzare una pipeline non di produzione per i test di qualità del codice e convalida.
+Usa un ramo della funzione per isolare le modifiche apportate al codice in un archivio Git gestito dal cliente e sincronizzale con l’archivio Git di Cloud Manager, per utilizzare una pipeline di non produzione a scopi di test di qualità del codice e di convalida.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
 ## Implementazione nell’ambiente di produzione {#production-deployment}
 
-Prepara il codice per una versione di produzione in un archivio Git gestito dal cliente e sincronizzalo con l’archivio Git di Cloud Manager per la distribuzione negli ambienti di staging e produzione.
+Prepara il codice per una versione di produzione in un archivio Git gestito dal cliente e sincronizzalo con l’archivio Git di Cloud Manager, per la distribuzione negli ambienti di staging e di produzione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
 ## Sincronizzazione dei tag della versione {#sync-tags}
 
-Sincronizza i tag della versione da un archivio Git di Cloud Manager in un archivio Git gestito dal cliente per fornire visibilità sul codice distribuito negli ambienti di staging e produzione.
+Sincronizza i tag della versione da un archivio Git di Cloud Manager in un archivio Git gestito dal cliente, per fornire visibilità sul codice distribuito negli ambienti di staging e di produzione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 
