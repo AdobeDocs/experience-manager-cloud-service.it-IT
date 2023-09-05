@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
@@ -32,73 +32,73 @@ ht-degree: 41%
 
 ## Creare un modello {#create-model}
 
-La console Modelli per frammenti di contenuto si apre in una nuova scheda. Considera la console dei modelli Frammento di contenuto come una libreria di modelli in cui puoi creare modelli e gestire quelli esistenti.
+La console Modelli per frammenti di contenuto si apre in una nuova scheda. Considera la console Modelli per frammenti di contenuto come una libreria di modelli, in cui puoi creare modelli e gestire quelli esistenti.
 
-Ad esempio, puoi creare un modello che rappresenta la struttura dati di un viaggio presente in un sito web di viaggi. Un viaggio che utilizza questo modello viene definito **Avventura**.
+In questo esempio, viene creato un modello che rappresenta la struttura dati di un viaggio presentato su un sito web di viaggi. Un viaggio che utilizza questo modello viene definito come un’**Avventura**.
 
-1. Nell’angolo superiore destro dello schermo, fai clic su **Crea** per iniziare a creare un modello per frammenti di contenuto.
+1. Fai clic su **Crea** in alto a destra per iniziare a creare un modello per frammenti di contenuto.
 
-1. La procedura guidata Crea modello assiste l&#39;utente durante la creazione del modello. Fornisci le seguenti informazioni obbligatorie.
+1. La procedura guidata Crea modello ti guida attraverso la creazione del modello. Fornisci le seguenti informazioni obbligatorie.
 
-   * **Titolo modello** - Breve etichetta del modello che in genere indica lo scopo del modello. È possibile chiamare il nuovo modello `Adventure`.
-   * **Abilita modello** - Questa opzione è selezionata per impostazione predefinita e deve essere selezionata per poter creare frammenti di contenuto in base a questo modello.
+   * **Titolo modello**: breve etichetta del modello che in genere ne indica lo scopo. Assegna al nuovo modello il titolo `Adventure`.
+   * **Abilita modello**: questa opzione è selezionata per impostazione predefinita e deve essere selezionata per poter creare frammenti di contenuto in base a questo modello.
 
-1. Dopo aver compilato i campi obbligatori, fai clic su **Crea** in alto a destra per creare il modello.
+1. Una volta compilati i campi obbligatori, fai clic su **Crea** in alto a destra per creare il modello.
 
-1. Il **Completato** conferma la creazione del modello. Clic **Apri** nella finestra di dialogo, in modo da poter aprire il nuovo Modello per frammenti di contenuto nell’editor in una nuova scheda. Quindi procedi al passaggio successivo per aggiungere campi dati al modello.
+1. La finestra di dialogo **Completato** conferma che il modello è stato creato. Fai clic su **Apri** nella finestra di dialogo per aprire il nuovo modello per frammenti di contenuto nell’editor in una nuova scheda. Quindi passa al passaggio successivo per aggiungere campi di dati al modello.
 
-![Passaggi due e tre della creazione di un modello di frammento di contenuto](assets/do-not-localize/create-model.png)
+![Passaggi due e tre della creazione di un modello per frammenti di contenuto](assets/do-not-localize/create-model.png)
 
 ## Utilizzo dell’Editor modelli {#configure-model}
 
-Ora disponi di un modello denominato **Avventura**, ma non contiene dettagli come durata, destinazione e attività. Prima di poter utilizzare il modello, è necessario definire la struttura dei dati.
+Ora hai un modello chiamato **Adventure**, ma non dispone di dettagli come durata, destinazione e attività. Prima di poter utilizzare il modello, è necessario definire la struttura dei relativi dati.
 
-Nell’editor modelli di frammento di contenuto è possibile configurare i tipi di dati e le proprietà che definiscono il contenuto del modello.
+Nell’editor di modelli per frammenti di contenuto è possibile configurare i tipi di dati e le proprietà che definiscono il contenuto del modello.
 
 >[!TIP]
 >
->È importante seguire gli schemi di denominazione nelle istruzioni seguenti perché a questi nomi specifici si fa riferimento nei moduli successivi.
+>È importante seguire gli schemi di denominazione nelle istruzioni seguenti, poiché nei moduli successivi si farà riferimento a questi stessi nomi.
 
 1. Trascina un campo **Testo su riga singola** dal pannello **Tipi di dati** a destra dell’editor e rilascialo sul modello per frammenti di contenuto.
 
-1. Una volta inserito un tipo di dati, il **Tipi di dati** viene modificata automaticamente in **Proprietà** , in cui è possibile definire i dettagli del tipo di dati inserito. Per questo primo campo, vuoi memorizzare il titolo del viaggio o dell’avventura. Immetti le seguenti proprietà.
+1. Una volta inserito un tipo di dati, la colonna **Tipi di dati** lascia automaticamente il posto alla scheda **Proprietà**, che consente di definire i dettagli del tipo di dati inserito. Per questo primo campo, memorizza il titolo del viaggio o dell’avventura. Immetti le seguenti proprietà.
 
-   * **Rendering come:** **Campo di testo** - Quando crei un’avventura, in questo campo viene memorizzato il titolo dell’avventura.
-   * **Etichetta campo:** `Title` : l’etichetta visualizzata per questo campo durante la creazione di un’avventura.
+   * **Rendering come:** **Campo di testo** - Quando si crea un’avventura, questo campo ne memorizza il titolo.
+   * **Etichetta campo:** `Title` - Questa è l’etichetta che viene visualizzata per questo campo quando si crea un’avventura.
 
-1. Dopo aver definito le proprietà del campo, puoi tornare al **Tipi di dati** nel pannello di destra e aggiungi altri campi trascinandoli.
+1. Una volta definite le proprietà del campo, puoi tornare alla scheda **Tipi di dati** nel pannello a destra e aggiungere altri campi mediante trascinamento.
 
-In questo modo, puoi aggiungere al modello tutti i campi necessari per supportare qualsiasi struttura di dati ti serva. I tipi di campi dati variano, ma il processo di aggiunta al modello rimane lo stesso.
+In questo modo, puoi aggiungere al modello tutti i campi necessari per supportare qualsiasi struttura dati necessaria. I tipi di campi dati variano, ma il processo di aggiunta al modello rimane lo stesso.
 
-Procedi alla sezione successiva per aggiungere i campi necessari per completare e salvare **Avventura** modello
+Procedi alla sezione successiva per aggiungere i campi necessari per completare e salvare il modello **Adventure**
 
 ![Passaggi uno, due e tre per aggiungere campi al modello](assets/do-not-localize/define-model-fields.png)
 
 ## Aggiungi campi al modello {#additional-fields}
 
-Hai già un campo per il titolo dell&#39;avventura. Ora è necessario aggiungere campi per acquisire la descrizione, il prezzo e un&#39;immagine rappresentativa dell&#39;avventura.
+Hai già un campo per il titolo dell&#39;avventura. Ora devi aggiungere dei campi per acquisire la descrizione, il prezzo e un’immagine rappresentativa dell’avventura.
 
 >[!TIP]
 >
 >Il modello di **Avventura** si basa sul sito di esempio WKND per AEM. Puoi [visitare il sito qui](https://wknd.site/us/en/adventures/yosemite-backpacking.html) per visualizzare il contenuto che utilizza il modello **Avventura**.
 
-Segui gli stessi passaggi indicati sopra per aggiungere questi ulteriori campi. L&#39;unica differenza consiste nelle proprietà che dovete impostare.
+Segui gli stessi passaggi indicati sopra per aggiungere questi ulteriori campi. L’unica differenza consiste nelle proprietà che devi impostare.
 
-1. Aggiungi un campo in modo da poter memorizzare la descrizione dell’avventura trascinando e rilasciando una **Testo su più righe** e immetti le seguenti proprietà:
+1. Per aggiungi un campo in cui memorizzare la descrizione dell’avventura, trascina un campo **Testo su più righe** e immetti le seguenti proprietà:
 
-   * **Rendering come:** **Area di testo** - Quando crei un’avventura, questo campo memorizza una breve descrizione del viaggio.
-   * **Etichetta campo:** `Description` : l’etichetta visualizzata per questo campo durante la creazione di un’avventura.
+   * **Rendering come:** **Area di testo** - Quando crei un’avventura, in questo campo puoi memorizzare una breve descrizione del viaggio.
+   * **Etichetta campo:** `Description` - Questa è l’etichetta che viene visualizzata per questo campo quando si crea un’avventura.
 
-1. Aggiungi un campo in modo da poter archiviare il prezzo dell’avventura trascinando e rilasciando un **Testo su riga singola** e immetti le seguenti proprietà:
+1. Per aggiungere un campo in cui memorizzare il prezzo dell’avventura, trascina un campo **Testo su riga singola** e immetti le seguenti proprietà:
 
-   * **Rendering come:** **Campo di testo** - Quando crei un’avventura, questo campo memorizza il prezzo del viaggio.
-   * **Etichetta campo:** `Price` : l’etichetta visualizzata per questo campo durante la creazione di un’avventura.
+   * **Rendering come:** **Campo di testo** - Quando crei un’avventura, in questo campo viene memorizzato il prezzo del viaggio.
+   * **Etichetta campo:** `Price` - Questa è l’etichetta che viene visualizzata per questo campo quando si crea un’avventura.
 
-1. Aggiungi un campo in modo da poter memorizzare un’immagine che rappresenta il viaggio. Le immagini in AEM vengono memorizzate come un altro tipo di contenuto denominato **Risorse**. Per creare un campo per loro, trascina e rilascia una **Riferimento contenuto** campo che fa riferimento alla risorsa dell’immagine.
+1. Aggiungi un campo in cui memorizzare un’immagine che rappresenta il viaggio. Le immagini in AEM vengono memorizzate come un altro tipo di contenuto denominato **Risorse**. Per creare un campo per immagini, trascina un campo **Riferimento contenuto** che fa riferimento alla risorsa dell’immagine.
 
-   * **Rendering come:** **Riferimento contenuto** - Quando crei un’avventura, questo campo punta alla risorsa immagine che rappresenta il viaggio.
-   * **Etichetta campo:** `Image` : l’etichetta visualizzata per questo campo durante la creazione di un’avventura.
+   * **Rendering come:** **Riferimento contenuto** - Quando crei un’avventura, questo campo punta alla risorsa immagine che rappresenta questo viaggio.
+   * **Etichetta campo:** `Image` - Questa è l’etichetta che viene visualizzata per questo campo quando si crea un’avventura.
 
-1. Dopo aver aggiunto i campi necessari per il modello Frammento di contenuto, in alto a destra della finestra, fai clic su **Salva**.
+1. Dopo aver aggiunto i campi necessari per il modello per frammenti di contenuto, fai clic su **Salva** in alto a destra.
 
-1. Il modello viene salvato e si torna alla console del modello di frammento di contenuto.
+1. Il modello viene salvato e si torna alla console del modello per frammenti di contenuto.
