@@ -1,15 +1,15 @@
 ---
 title: Problemi noti e limitazioni
-description: Problemi noti e limitazioni di  [!DNL AEM Forms] ambiente as a Cloud Service
+description: Problemi noti e limitazioni dell’ambiente  [!DNL AEM Forms] as a Cloud Service
 contentOwner: khsingh
 role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
 source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '358'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
@@ -19,21 +19,21 @@ Prima di iniziare a utilizzare [!DNL AEM Forms] as a Cloud Service, esamina i se
 
 ## Problemi noti {#known-issues}
 
-* Fino a nuovo avviso, non aggiungere ed eseguire un test che invia un modulo adattivo da un’istanza Publish a un flusso di lavoro AEM in esecuzione su un’istanza Author.
+* Fino a nuovo avviso, non aggiungere ed eseguire un test che invia un modulo adattivo da un’istanza di pubblicazione a un flusso di lavoro AEM in esecuzione su un’istanza di authoring.
 
-* Quando importi un modulo adattivo che utilizza un modello contenente **[!UICONTROL Salva]** pulsante, il pulsante **[!UICONTROL Salva]** continua a essere visualizzato nel modulo adattivo anche dopo essere stato rimosso dal modello corrispondente. Rimuovi il **[!UICONTROL Salva]** dal Forms adattivo prima di pubblicarlo. Tieni d’occhio le note sulla versione per verificare la disponibilità del portale Forms e della funzione Salva come bozza da ripristinare e utilizzare il pulsante.
+* Quando importi un modulo adattivo che utilizza un modello contenente il pulsante **[!UICONTROL Salva]**, il pulsante **[!UICONTROL Salva]** continua a essere visualizzato nel modulo adattivo anche dopo essere stato rimosso dal modello corrispondente. Rimuovi il pulsante **[!UICONTROL Salva]** dai moduli adattivi prima di pubblicarli. Tieni d’occhio le note sulla versione per verificare la disponibilità di Forms Portal e della funzione Salva come bozza per ripristinare e utilizzare il pulsante.
 
-* Il **[!UICONTROL Imposta variabile]** Il passaggio dei flussi di lavoro AEM non supporta le variabili dell’elenco di array di tipo. È possibile utilizzare il passaggio del processo per impostare variabili di tipo elenco matrice.
+* Il passaggio **[!UICONTROL Imposta variabile]** dei flussi di lavoro AEM non supporta le variabili di tipo elenco array. È possibile utilizzare il passaggio del processo per impostare variabili di tipo elenco array.
 
-* Quando invii un modulo adattivo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, il contenuto del file non viene inviato e viene ricevuto un file da 0 byte all’altra estremità. Il problema si verifica in modo intermittente e solo quando si utilizza l’invio sincrono. Questo è un [problema noto](https://feedbackassistant.apple.com/feedback/9117687) in Apple iOS.
+* Quando invii un modulo adattivo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, il contenuto del file non viene inviato e l’altra parte riceve un file da 0 byte. Il problema si verifica in modo intermittente e solo quando si utilizza l’invio sincrono. Si tratta di un [problema noto](https://feedbackassistant.apple.com/feedback/9117687) in Apple iOS.
 
-* Quando invii un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file da 0 byte all’altra estremità. Questo è un problema noto in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* Quando invii un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file da 0 byte. Si tratta di un problema noto in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-* AEM Forms as a Cloud Service non genera miniature per i file di schema XDP e JSON. Al posto delle miniature, vengono visualizzate le icone predefinite.
+* AEM Forms as a Cloud Service non genera miniature per i file di schema XDP e JSON. Al posto delle miniature, il servizio visualizza le icone predefinite.
 
-  ![Problema noto della miniatura del Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
+  ![Problema noto nelle miniature di Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
 
-* Quando si utilizza uno schema con elementi ripetibili per creare un modulo adattivo basato su Componenti core, l’opzione di trascinamento degli elementi ripetibili dalla struttura del modello dati nell’editor di Forms adattivo non funziona.
+* Quando si utilizza uno schema con elementi ripetibili per creare un modulo adattivo basato su componenti core, l’opzione di trascinamento degli elementi ripetibili dalla struttura del modello dati all’editor dei moduli adattivi non funziona.
 
 ## Limitazioni {#limitations}
 
