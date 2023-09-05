@@ -3,9 +3,9 @@ title: Archivi di Cloud Manager
 description: Scopri come creare, visualizzare ed eliminare gli archivi Git in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Seleziona l’archivio nella tabella e fai clic sul pulsante con i puntini di so
 
 ![Opzioni dell’archivio](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-Gli archivi creati in Cloud Manager sono disponibili per la selezione anche quando aggiungi o modifichi le pipeline. Consulta [Pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) per ulteriori informazioni.
+Gli archivi creati in Cloud Manager sono disponibili per la selezione anche quando aggiungi o modifichi le pipeline. Per ulteriori informazioni, consulta [Pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 Esiste un singolo archivio principale o ramo per ogni pipeline. Grazie al [supporto per i moduli Git secondari](#git-submodule-support), molti rami secondari possono essere aggiunti al momento della generazione.
 
@@ -51,7 +51,7 @@ Esiste un singolo archivio principale o ramo per ogni pipeline. Grazie al [suppo
 L’eliminazione di un archivio:
 
 * Rende il nome dell’archivio eliminato inutilizzabile per i nuovi archivi che possono essere creati in futuro.
-   * Messaggio di errore `Repository name should be unique within organization.` in tali casi.
+   * In tali casi viene visualizzato il messaggio di errore `Repository name should be unique within organization.`.
 * Rende l’archivio eliminato non disponibile in Cloud Manager e non disponibile per il collegamento a una pipeline.
 
 Per eliminare un archivio in Cloud Manager, segui la procedura riportata di seguito.
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 Questa tecnica rappresenta una potenziale alternativa alla soluzione descritta nel documento [Utilizzo di più archivi Git di origine](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) per le organizzazioni che hanno familiarità con l’utilizzo dei moduli Git secondari e non desiderano gestire un processo di unione esterno.
 
-Supponiamo ad esempio la presenza di tre archivi, ciascuno contenente un singolo ramo denominato `main`. Nell’archivio principale, ovvero quello configurato nelle pipeline, `main` il ramo ha un `pom.xml` file che dichiara i progetti contenuti negli altri due archivi.
+Supponiamo ad esempio la presenza di tre archivi, ciascuno contenente un singolo ramo denominato `main`. Nell’archivio principale, ovvero quello configurato nelle pipeline, il ramo `main` include un file `pom.xml` dove sono riportati i progetti contenuti negli altri due archivi.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -121,7 +121,7 @@ Per ulteriori informazioni sui moduli Git secondari, consulta il [Manuale di rif
 
 ### Limitazioni e consigli {#limitations-recommendations}
 
-Quando utilizzi i moduli Git secondari, tieni presente le seguenti limitazioni.
+Quando utilizzi dei moduli Git secondari, tieni presente le seguenti limitazioni.
 
 * La sintassi dell’URL Git deve essere esattamente quella descritta nella sezione precedente.
 * I moduli secondari sono supportati unicamente nella radice del ramo.
