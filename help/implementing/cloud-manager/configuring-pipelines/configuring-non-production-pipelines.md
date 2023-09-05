@@ -1,19 +1,19 @@
 ---
 title: Configurazione delle pipeline non di produzione
-description: Scopri come configurare le pipeline non di produzione per testare la qualità del codice prima di distribuirle negli ambienti di produzione.
+description: Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1356'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 
 # Configurazione delle pipeline non di produzione {#configuring-non-production-pipelines}
 
-Scopri come configurare le pipeline non di produzione per testare la qualità del codice prima di distribuirle negli ambienti di produzione.
+Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 
 ## Pipeline non di produzione {#non-production-pipelines}
 
@@ -34,7 +34,7 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Accedi alla scheda **Pipeline** dalla pagina Home di Cloud Manager. Clic **+Aggiungi** e seleziona **Aggiungi pipeline non di produzione**.
+1. Accedi alla scheda **Pipeline** dalla pagina Home di Cloud Manager. Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline non di produzione**.
 
    ![Aggiungi pipeline non di produzione](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
@@ -50,13 +50,13 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
    * **Trigger distribuzione**: quando si definiscono i trigger della distribuzione per avviare la pipeline, le opzioni disponibili sono le seguenti.
 
       * **Manuale**: per avviare la pipeline manualmente.
-      * **Modifiche su Git** - Questa opzione avvia la pipeline CI/CD ogni volta che vengono aggiunti dei commit al ramo Git configurato. Con questa opzione è comunque possibile avviare la pipeline manualmente secondo necessità.
+      * **Cambiamenti su Git**: questa opzione avvia la pipeline CI/CD ogni volta che vengono aggiunti dei commit al ramo Git configurato. Con questa opzione è comunque possibile avviare la pipeline manualmente secondo necessità.
 
-1. Se scegli di creare un’ **Pipeline di implementazione**, è inoltre necessario definire **Comportamento in caso di errori di metriche importanti**.
+1. Se scegli di creare una **pipeline di distribuzione**, dovrai inoltre definire il **Comportamento in caso di errori di metriche importanti**.
 
-   * **Chiedi ogni volta** : questo comportamento è l’impostazione predefinita e richiede l’intervento manuale per tutti gli errori importanti.
-   * **Interrompi subito** - Se selezionata, la pipeline viene annullata ogni volta che si verifica un errore importante. In sostanza, simula un utente che rifiuta manualmente ogni errore.
-   * **Continua immediatamente** - Se selezionata, la pipeline procede automaticamente ogni volta che si verifica un errore importante. In sostanza, simula un utente che approva manualmente ogni errore.
+   * **Chiedi ogni volta**: questo comportamento è l’impostazione predefinita che richiede l’intervento manuale per tutti gli errori importanti.
+   * **Interrompi subito**: selezionando questa opzione, la pipeline viene annullata ogni volta che si verifica un errore importante. In sostanza, questa opzione simula il rifiuto manuale di ogni errore da parte dell’utente.
+   * **Continua immediatamente**: se questa opzione è selezionata, la pipeline procede automaticamente ogni volta che si verifica un errore importante. In sostanza, quest’opzione simula l’approvazione manuale di ogni errore da parte dell’utente.
 
 1. Fai clic su **Continua**.
 
@@ -66,7 +66,7 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
    * **[Codice full stack](#full-stack-code)**
    * **[Configurazione a livello web](#web-tier-config)**
 
-I passaggi per completare la creazione della pipeline non di produzione variano a seconda dell’opzione **Codice sorgente** selezionata. Segui i collegamenti riportati qui sopra per passare alla sezione successiva del documento e completare la configurazione della pipeline.
+I passaggi per completare la creazione della pipeline non di produzione variano a seconda dell’opzione **Codice sorgente** selezionata. Accedi ai collegamenti riportati qui sopra per passare alla sezione successiva del documento e completare la configurazione della pipeline.
 
 ### Codice front-end {#front-end-code}
 
@@ -77,14 +77,14 @@ Per completare la configurazione della pipeline non di produzione del codice fro
 1. Nella scheda **Codice sorgente** è necessario definire le seguenti opzioni.
 
    * **Ambienti di distribuzione idonei**: se la pipeline è di distribuzione, seleziona gli ambienti in cui eseguire la distribuzione.
-   * **Archivio** - Questa opzione definisce da quale archivio Git la pipeline deve recuperare il codice.
+   * **Archivio**: questa opzione definisce da quale archivio Git la pipeline deve recuperare il codice.
 
    >[!TIP]
    > 
-   >Consulta [Aggiunta e gestione degli archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) in questo modo puoi imparare ad aggiungere e gestire archivi in Cloud Manager.
+   >Per scoprire come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione degli archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
-   * **Ramo Git** : questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
-      * Immetti i primi caratteri del nome del ramo e la funzione di completamento automatico di questo campo. Trova i rami corrispondenti che puoi selezionare.
+   * **Ramo Git**: questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
+      * Immetti i primi caratteri del nome del ramo: la funzione di completamento automatico di questo campo. trova i rami corrispondenti che puoi selezionare.
    * **Posizione codice**: definisce il percorso nel ramo dell’archivio selezionato dal quale la pipeline deve recuperare il codice.
 
    ![Pipeline front-end](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -99,24 +99,24 @@ Una pipeline del codice full stack distribuisce simultaneamente le build del cod
 
 >[!NOTE]
 >
->Se per l’ambiente selezionato esiste una pipeline del codice full stack, questa selezione viene disabilitata.
+>Se per l’ambiente selezionato esiste una pipeline del codice full stack, la selezione verrà disabilitata.
 
 Per completare la configurazione della pipeline non di produzione del codice full stack, segui la procedura riportata di seguito.
 
 1. Nella scheda **Codice sorgente** è necessario definire le seguenti opzioni.
 
    * **Ambienti di distribuzione idonei**: se la pipeline è di distribuzione, seleziona gli ambienti in cui eseguire la distribuzione.
-   * **Archivio** - Questa opzione definisce da quale archivio Git la pipeline deve recuperare il codice.
+   * **Archivio**: questa opzione definisce da quale archivio Git la pipeline deve recuperare il codice.
 
    >[!TIP]
    > 
-   >Consulta [Aggiunta e gestione degli archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) in questo modo puoi imparare ad aggiungere e gestire archivi in Cloud Manager.
+   >Per scoprire come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione degli archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
-   * **Ramo Git** : questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
-      * Immetti i primi caratteri del nome del ramo e la funzione di completamento automatico di questo campo. Ti aiuta a trovare i rami corrispondenti che puoi selezionare.
-   * **Ignora configurazione a livello web** - Se questa opzione è selezionata, la pipeline non distribuisce la configurazione a livello web.
+   * **Ramo Git**: questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
+      * Immetti i primi caratteri del nome del ramo: la funzione di completamento automatico di questo campo. ti aiuta a trovare i rami corrispondenti che puoi selezionare.
+   * **Ignora configurazione a livello web**: se questa opzione è selezionata, la pipeline non distribuisce la configurazione a livello web.
 
-   * **Pipeline**: se la tua pipeline non è di distribuzione, puoi scegliere di eseguire una fase di test. Seleziona le opzioni che desideri abilitare in questa fase. Se non è selezionata alcuna opzione, la fase di test non viene visualizzata durante l’esecuzione della pipeline.
+   * **Pipeline**: se si tratta di una pipeline è di distribuzione, puoi scegliere di eseguire una fase di test. Seleziona le opzioni che desideri abilitare in questa fase. Se non è selezionata alcuna opzione, la fase di test non viene visualizzata durante l’esecuzione della pipeline.
 
       * **Test funzionali del prodotto**: esegui [test funzionali del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) rispetto all’ambiente di sviluppo.
       * **Test funzionali personalizzato**: esegui [test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) rispetto all’ambiente di sviluppo.
@@ -130,26 +130,26 @@ Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.m
 
 ### Configurazione a livello web {#web-tier-config}
 
-Una pipeline di configurazione a livello web distribuisce le configurazioni HTTPD/Dispatcher. Consulta [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) per ulteriori informazioni su questo tipo di pipeline.
+Una pipeline di configurazione a livello web distribuisce configurazioni HTTPD/Dispatcher. Per maggiori informazioni su questo tipo di pipeline, consulta [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline).
 
 >[!NOTE]
 >
->Se per l’ambiente selezionato esiste una pipeline del codice a livello web, questa selezione viene disabilitata.
+>Se esiste una pipeline del codice a livello web per l’ambiente selezionato, questa selezione è disabilitata.
 
 Per completare la configurazione della pipeline non di produzione del codice a livello web, segui la procedura riportata di seguito.
 
 1. Nella scheda **Codice sorgente** è necessario definire le seguenti opzioni.
 
    * **Ambienti di distribuzione idonei**: se la pipeline è di distribuzione, seleziona gli ambienti in cui eseguire la distribuzione.
-   * **Archivio** - Questa opzione definisce da quale archivio Git la pipeline deve recuperare il codice.
+   * **Archivio**: questa opzione definisce da quale archivio Git la pipeline deve recuperare il codice.
 
    >[!TIP]
    > 
-   >Consulta [Aggiunta e gestione degli archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) in questo modo puoi imparare ad aggiungere e gestire archivi in Cloud Manager.
+   >Per scoprire come aggiungere e gestire gli archivi in Cloud Manager, consulta [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
-   * **Ramo Git** : questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
+   * **Ramo Git**: questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
    * **Posizione codice**: definisce il percorso nel ramo dell’archivio selezionato dal quale la pipeline deve recuperare il codice.
-      * Per le pipeline di configurazione a livello web, in genere questo percorso contiene `conf.d`, `conf.dispatcher.d`, e `opt-in` directory.
+      * Per le pipeline di configurazione a livello web, in genere questo percorso contiene le directory `conf.d`, `conf.dispatcher.d` e `opt-in`.
       * Ad esempio, se la struttura del progetto è stata generata dall’[archetipo del progetto AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) il percorso è `/dispatcher/src`.
 
    ![Pipeline a livello web](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
@@ -166,13 +166,13 @@ Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.m
 
 Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore indipendenza e il processo di sviluppo può essere accelerato.
 
-Consulta il documento [Sviluppo di siti con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) il funzionamento di questo processo e alcune considerazioni di cui tenere conto per sfruttare appieno il suo potenziale.
+Per informazioni sul funzionamento di questo processo e alcune considerazioni per sfruttare al massimo il suo potenziale, consulta il documento [Sviluppo di Sites con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
 
 ## Ignorare i pacchetti Dispatcher {#skip-dispatcher-packages}
 
-Se desideri che i pacchetti Dispatcher vengano generati come parte della pipeline, ma non che vengano pubblicati nell’archivio della build, puoi disabilitare la pubblicazione, riducendo in tal modo la durata dell’esecuzione della pipeline.
+Se desideri che i pacchetti dispatcher vengano generati come parte della pipeline, ma non che vengano pubblicati nell’archivio della build, puoi disabilitare la pubblicazione riducendo in tal modo la durata dell’esecuzione della pipeline.
 
-Per disabilitare la pubblicazione dei pacchetti Dispatcher, aggiungi la seguente configurazione tramite il progetto `pom.xml` file. Si basa su una variabile di ambiente che funge da flag impostabile nel contenitore della build di Cloud Manager per definire quando ignorare i pacchetti Dispatcher.
+Per disabilitare la pubblicazione dei pacchetti dispatcher, aggiungi la seguente configurazione tramite il file di progetto `pom.xml`. Si basa su una variabile di ambiente che funge da flag impostabile nel contenitore della build di Cloud Manager per definire quando ignorare i pacchetti dispatcher.
 
 ```xml
 <profile>
