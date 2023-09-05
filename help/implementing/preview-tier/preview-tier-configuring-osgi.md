@@ -3,9 +3,9 @@ title: Configurazione delle impostazioni OSGi per il livello di anteprima
 description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima i contenuti prima della pubblicazione.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ I valori delle proprietà OSGi del livello di anteprima vengono ereditati dal li
 
 >[!NOTE]
 >
->Per ulteriori dettagli sugli ambienti di anteprima, vedi [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Per ulteriori dettagli sugli ambienti di anteprima, consulta il documento [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Configurazione delle impostazioni OSGi per il livello di anteprima {#configuring-osgi-settings-for-the-preview-tier}
 
@@ -40,7 +40,7 @@ Per ulteriori informazioni, consulta [questa sezione](/help/implementing/deployi
 
 ## Eseguire il debug dell’anteprima tramite la Console per sviluppatori {#debugging-preview-using-the-developer-console}
 
-Segui questi passaggi per eseguire il debug del livello di anteprima utilizzando la Console per sviluppatori:
+Segui questi passaggi per eseguire il debug del livello di anteprima utilizzando la Developer Console:
 
 * Nella [Console per sviluppatori](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), seleziona **-- Tutte le anteprime --** oppure un ambiente di produzione che includa **prev** nel nome
 * Genera le informazioni rilevanti per l’istanza di anteprima 
