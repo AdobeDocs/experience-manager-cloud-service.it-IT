@@ -2,9 +2,9 @@
 title: Rendering lato server e SPA
 description: L’utilizzo del rendering lato server (SSR) nell’SPA può accelerare il caricamento iniziale della pagina e quindi passare un ulteriore rendering al client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,10 @@ Le sezioni seguenti descrivono come Adobe I/O Runtime può essere utilizzato per
 >L’Adobe consiglia un’area di lavoro Adobe I/O Runtime separata per ogni ambiente (stage, prod, test e così via). In questo modo è possibile utilizzare modelli SDLC (System Development Life Cycle) tipici con versioni diverse di una singola applicazione distribuite in ambienti diversi. Consulta [CI/CD per applicazioni App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) per ulteriori informazioni.
 >
 >Un’area di lavoro separata non è necessaria per ogni istanza (Author, Publish) a meno che non vi siano differenze nell’implementazione runtime per tipo di istanza.
+
+>[!NOTE]
+>
+>Cloud Manager non supporta la distribuzione in Adobe I/O Runtime. Di conseguenza, è necessario configurare la propria infrastruttura per distribuire il codice SSR in Adobe I/O Runtime.
 
 ## Configurazione Remote Renderer {#remote-content-renderer-configuration}
 
