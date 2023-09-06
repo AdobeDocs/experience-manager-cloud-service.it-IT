@@ -3,9 +3,9 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 9da87302369331fb55c1c8036c5b22fa686b1be8
+source-git-commit: e75c957e8e791ed991117f5cd54012c3a24a2958
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1935'
 ht-degree: 13%
 
 ---
@@ -144,8 +144,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[Protect i tuoi documenti con le API DocAssurance (parte delle API di comunicazione)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: le API DocAssurance ti consentono di proteggere le informazioni riservate firmando e crittografando i documenti. Tramite la crittografia, il contenuto di un documento viene trasformato in un formato illeggibile, in modo che solo gli utenti autorizzati possano accedervi. Questo strato di protezione fortificato non solo protegge i dati preziosi da occhi non autorizzati, ma offre anche la massima tranquillità. Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che solo i destinatari desiderati possano modificare i documenti.
 
-
-  <br> Puoi inviare un’e-mail a `aem-forms-early-adopter-program@adobe.com` dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità per il tuo ambiente.  <br>  <br>
+  <br> Puoi inviare un’e-mail dal tuo indirizzo e-mail ufficiale a `aem-forms-early-adopter-program@adobe.com`  partecipare al programma early adopter e richiedere l’accesso alla funzionalità.  <br>  <br>
 
 
 * **[Forms adattivo headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=it)**: utilizza Forms adattivo headless per consentire agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e interagire tramite API, anziché tramite un’interfaccia utente grafica tradizionale. I moduli adattivi headless consentono di:
