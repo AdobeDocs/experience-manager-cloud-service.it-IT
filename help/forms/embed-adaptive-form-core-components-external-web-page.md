@@ -4,9 +4,9 @@ description: Scopri come incorporare un modulo adattivo in una pagina web estern
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '979'
 ht-degree: 2%
 
 ---
@@ -99,14 +99,12 @@ Per incorporare il modulo adattivo:
 
 Il modulo adattivo è incorporato nella pagina web. Osserva quanto segue nel modulo adattivo incorporato:
 
-* Intestazione e piè di pagina nel modulo adattivo originale non sono inclusi nel modulo incorporato.
 * Le bozze e i moduli inviati sono disponibili nella scheda Bozze e invii del portale Forms.
 * L’azione di invio configurata nel modulo adattivo originale viene mantenuta nel modulo incorporato.
 * Le regole dei moduli adattivi vengono mantenute e sono completamente funzionali nel modulo incorporato.
 * Il targeting delle esperienze e i test A/B configurati nel modulo adattivo originale non funzionano nel modulo incorporato.
 * Se Adobe Analytics è configurato nel modulo originale, i dati di analisi vengono acquisiti nel server Adobe Analytics. Tuttavia, non è disponibile nel rapporto di Forms Analytics.
-
-In Forms adattivo basato su componenti core, le librerie client (ClientLibs) sono incluse e caricate insieme ai componenti Intestazione e Piè di pagina di un modulo. Pertanto, quando incorpori un Forms adattivo basato su componenti core in una pagina web, questo include sempre Intestazione e piè di pagina del modulo.
+* In Forms adattivo basato su componenti core, le librerie client (ClientLibs) sono incluse e caricate insieme ai componenti Intestazione e Piè di pagina di un modulo. Pertanto, quando incorpori un Forms adattivo basato su componenti core in una pagina web, questo include sempre Intestazione e piè di pagina del modulo.
 
 ## Topologia di esempio {#sample-topology}
 
