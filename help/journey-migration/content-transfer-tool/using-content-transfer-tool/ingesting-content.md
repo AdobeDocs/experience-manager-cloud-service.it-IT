@@ -1,25 +1,25 @@
 ---
-title: Inserimento di contenuto in Target
-description: Scopri come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per acquisire in un’istanza di Cloud Service i contenuti del set di migrazione.
+title: Acquisizione di contenuti nel Cloud Service
+description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 11%
+source-wordcount: '1954'
+ht-degree: 8%
 
 ---
 
-# Inserimento di contenuto in Target {#ingesting-content}
+# Acquisizione di contenuti nel Cloud Service {#ingesting-content}
 
 ## Processo di acquisizione nello strumento Content Transfer (Trasferimento contenuti) {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Acquisizione dei contenuti"
->abstract="Per acquisizione si intende l’acquisizione dei contenuti dal set di migrazione nell’istanza Cloud Service di destinazione. Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti."
+>abstract="Per acquisizione si intende l’acquisizione dei contenuti dal set di migrazione nell’istanza del Cloud Service di destinazione. Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it" text="Acquisizione integrativa"
 
-Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
+Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effettua le seguenti operazioni:
 
 >[!NOTE]
 >Ti sei ricordato di registrare un ticket di supporto per questa acquisizione? Consulta [Considerazioni importanti prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) affinché questa e altre considerazioni possano contribuire al successo dell’acquisizione.
@@ -80,7 +80,7 @@ Per acquisire il set di migrazione dallo strumento Content Transfer (Trasferimen
    Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-   
+
    Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
@@ -181,4 +181,7 @@ Le best practice indicano che, se un’acquisizione deve essere eseguita con wip
 
 ## Passaggio successivo {#whats-next}
 
-Una volta completato l’inserimento del contenuto in Target, puoi visualizzare i registri di ogni passaggio (estrazione e acquisizione) e cercare gli errori. Consulta [Visualizzazione dei registri di un set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=it) per ulteriori informazioni.
+Quando l’acquisizione viene completata correttamente, l’indicizzazione AEM viene avviata automaticamente. Consulta [Indicizzazione dopo la migrazione del contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) per ulteriori informazioni.
+
+Una volta completato l’inserimento del contenuto nel Cloud Service, puoi visualizzare i registri di ciascun passaggio (estrazione e acquisizione) e cercare gli errori. Consulta [Visualizzazione dei registri di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) per ulteriori informazioni.
+
