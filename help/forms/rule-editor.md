@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
 workflow-type: tm+mt
-source-wordcount: '6436'
+source-wordcount: '6446'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ Per ulteriori informazioni sulla configurazione dei servizi nel modello dati mod
 
 Per ulteriori informazioni sulla configurazione dei servizi nel modello dati modulo, vedi [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md).
 
-Il **[!UICONTROL Imposta proprietà]** tipo di regola consente di impostare il valore di una proprietà dell&#39;oggetto specificato in base a un&#39;azione condizione. È possibile impostare la proprietà su uno dei seguenti elementi:
+Il **[!UICONTROL Imposta proprietà]** tipo di regola consente di impostare il valore di una proprietà dell&#39;oggetto specificato in base a un&#39;azione condizione. È possibile impostare la proprietà su una delle seguenti opzioni:
 * visibile (booleano)
 * dorExclusion (booleano)
 * chartType (String)
@@ -634,7 +634,7 @@ Ad esempio, si desidera aggiungere una funzione personalizzata che calcola l&#39
 
 Per creare una libreria client e aggiungerla all’archivio CRX, effettua le seguenti operazioni:
 
-1. Creare un clientEffettuare le seguenti operazioni nella libreria. Per ulteriori informazioni, consulta [Utilizzo delle librerie lato client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+1. Crea una libreria client. Per ulteriori informazioni, consulta [Utilizzo delle librerie lato client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. In CRXDE, aggiungi una proprietà `categories`con valore di tipo stringa come `customfunction` al `clientlib` cartella.
 
    >[!NOTE]
@@ -656,6 +656,10 @@ Per aprire un modulo in modalità di modifica, seleziona un modulo e tocca **[!U
    [![Utilizzo di funzioni personalizzate per creare una regola](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. Tocca **[!UICONTROL Fine]**. Viene aggiunta la funzione personalizzata.
+
+   >[!NOTE]
+   >
+   > Per richiamare un modello di dati modulo dall’editor di regole utilizzando funzioni personalizzate: [vedi qui](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### Tipi supportati da dichiarazione di funzione {#function-declaration-supported-types}
 

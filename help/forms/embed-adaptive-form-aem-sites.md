@@ -5,9 +5,9 @@ description: Puoi utilizzare il componente Forms adattivo - Incorpora per incorp
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
 workflow-type: tm+mt
-source-wordcount: '3158'
+source-wordcount: '3177'
 ht-degree: 0%
 
 ---
@@ -259,6 +259,11 @@ Per convertire un modulo adattivo nella pagina di AEM Sites in un frammento di e
 * **Usa lingua della pagina**: utilizza la lingua locale della pagina AEM Sites invece della lingua del modulo adattivo. Questa opzione è applicabile solo per il modulo adattivo (Foundation).
 * **Imposta stato attivo sul modulo**: seleziona per impostare lo stato attivo sul primo campo del modulo adattivo. Questa opzione è applicabile solo per il modulo adattivo (Foundation).
 * **Tema**: seleziona un tema che definisce lo stile dei componenti del modulo adattivo. Lo stile include proprietà di aspetto quali lo stile del carattere, il colore di sfondo, le dimensioni e l&#39;allineamento. Questa opzione è applicabile solo per il modulo adattivo (Foundation).
+
+  >[!NOTE]
+  >
+  > È possibile utilizzare **Usa lingua della pagina**, **Imposta stato attivo sul modulo** e **Tema** solo per Modulo adattivo (Foundation).
+
 * **La forma copre l&#39;intera larghezza della cornice**: un frame in linea (iframe) è un elemento HTML che carica un modulo adattivo in una pagina AEM Sites.
 
    * Se il **[!UICONTROL La forma copre l&#39;intera larghezza della cornice]** Se è selezionata una casella di controllo, un modulo adattivo occupa l’intera larghezza del contenitore in cui viene inserito. In questo caso, non viene utilizzato un iframe per eseguire il rendering del modulo. Il layout e il design di un modulo adattivo si adattano a coprire l’intera larghezza del contenitore, rendendolo reattivo e in grado di adattarsi a diverse dimensioni dello schermo. Questa opzione consente di incorporare più Forms adattivi all’interno di una pagina AEM Sites.

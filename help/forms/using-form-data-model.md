@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 1%
+source-wordcount: '1244'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ![integrazione dei dati](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] l’integrazione dei dati consente di utilizzare diverse origini dati di back-end per creare un modello dati modulo da utilizzare come schema in vari Forms adattivi <!--and interactive communications--> flussi di lavoro. Richiede la configurazione delle origini dati e la creazione di un modello dati modulo basato su oggetti e servizi del modello dati disponibili nelle origini dati. Per ulteriori informazioni, vedi:
+[!DNL Experience Manager Forms] l’integrazione dei dati consente di utilizzare diverse origini dati di back-end per creare un modello dati modulo da utilizzare come schema in vari Forms adattivi <!--and interactive communications--> flussi di lavoro. Richiede la configurazione delle origini dati e la creazione di un modello dati modulo basato su oggetti e servizi del modello dati disponibili nelle origini dati. Per ulteriori informazioni, consulta:
 
 * [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md)
 * [Configurare origini dati](configure-data-sources.md)
@@ -146,3 +146,26 @@ Ad esempio, la regola seguente richiama un servizio get che utilizza come input 
 ![invoke-service](assets/invoke-service.png)
 
 Inoltre, è possibile utilizzare `guidelib.dataIntegrationUtils.executeOperation` API per scrivere un JavaScript nell’editor di codice per l’editor di regole. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+
+### Richiama un modello di dati modulo utilizzando funzioni personalizzate {#invoke-form-data-model-using-custom-functions}
+
+È possibile [richiamare un modello di dati modulo dall’editor di regole utilizzando funzioni personalizzate](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Per richiamare il modello dati del modulo, aggiungi un modello dati del modulo al inserisco nell&#39;elenco Consentiti di. Per aggiungere un modello dati modulo a un elenco Consentiti:
+
+1. Vai alla console web di Experience Manager all’indirizzo `https://server:host/system/console/configMgr`.
+1. Individua **[!UICONTROL Inserimento in whitelist a livello di modulo adattivo del modello dati del modulo per chiamata di servizio - Configuration Factory]**.
+1. Clic ![icona più](/help/forms/assets/Smock_Add_18_N.svg) per aggiungere la configurazione.
+1. Aggiungi **[!UICONTROL Schema percorso contenuto]** per specificare la posizione del Forms adattivo.  Per impostazione predefinita, il valore è `/content/forms/af/(.*)` che include tutti i Forms adattivi. Puoi anche specificare il percorso per un modulo adattivo specifico.
+1. Aggiungi **[!UICONTROL Pattern percorso modello dati modulo]** per specificare il percorso del modello dati del modulo. Per impostazione predefinita, il valore è `/content/dams/formsanddocuments-fdm/(.*)` che include tutto il modello dati del modulo. È inoltre possibile specificare il percorso per un modello dati modulo specifico.
+1. Salva le impostazioni.
+
+La configurazione aggiunta viene salvata in **[!UICONTROL Inserimento in whitelist a livello di modulo adattivo del modello dati del modulo per chiamata di servizio - Configuration Factory]** opzione.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
+
+>[!NOTE]
+>
+> Per richiamare un modello di dati modulo dall’editor di regole utilizzando funzioni personalizzate tramite un progetto di archetipo AEM:
+>
+>1. [Creare un file di configurazione](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. Imposta le proprietà di getContentPathPattern e getFormDataModelPathPattern.
+>1. Distribuisci il progetto.
