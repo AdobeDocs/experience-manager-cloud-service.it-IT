@@ -1,37 +1,30 @@
 ---
-title: Note sulla versione 2023.07.0 degli strumenti di migrazione nell’AEM as a Cloud Service
-description: Note sulla versione 2022.07.0 degli strumenti di migrazione nell’AEM as a Cloud Service
+title: Note sulla versione 2023.09.0 degli strumenti di migrazione in AEM as a Cloud Service
+description: Note sulla versione 2022.09.0 degli strumenti di migrazione in AEM as a Cloud Service
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
+source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 7%
+source-wordcount: '150'
+ht-degree: 4%
 
 ---
 
-# Note sulla versione 2023.07.0 degli strumenti di migrazione nell’AEM as a Cloud Service {#release-notes}
+# Note sulla versione 2023.09.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2022.07.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2022.09.0 degli strumenti di migrazione in AEM as a Cloud Service.
 
-## Analisi delle best practice {#bpa-release}
+## Strumento Trasferimento contenuti {#ctt-release}
 
-### Data di pubblicazione {#release-date-bpa}
+### Data di pubblicazione {#release-date-ctt}
 
-La data di rilascio di Best Practices Analyzer v2.1.42 è il 6 luglio 2023.
+La data di pubblicazione dello strumento Content Transfer v3.0.0 è il 7 settembre 2023.
 
-### Novità {#what-is-new-bpa}
+### Novità {#what-is-new-ctt}
 
-* A questa versione di Best Practices Analyzer sono stati aggiunti diversi modelli di best practice. Comprendono:
-   * Identificazione della configurazione minima dell&#39;attività di manutenzione
-   * Rilevamento di query con tempi di esecuzione lunghi/pesanti
-   * Rilevamento di un numero elevato di flussi di lavoro di authoring in esecuzione o in stato non aggiornato
-   * Rilevamento della configurazione del processo Sling OSGI Apache
-   * Rilevamento delle cache Guava personalizzate
+Lo strumento Content Transfer (Trasferimento contenuti) è stato notevolmente migliorato per offrire i seguenti vantaggi:
+* Riduzione del tempo di trasferimento durante la migrazione di un sottoinsieme di un archivio di contenuti grazie a AzCopy per copiare solo gli ID BLOB richiesti invece di copiare tutti gli ID BLOB
+* Miglioramenti più rapidi dei contenuti differenziali con l’aggiornamento Oak
+* È stata migliorata la robustezza separando il processo di indicizzazione dal processo di acquisizione dei contenuti. In caso di indicizzazione non riuscita, il contenuto non dovrà essere nuovamente acquisito. Solo l’indicizzazione si riavvia automaticamente, risparmiando tempo e fatica
 
-### Correzioni di bug {#bug-fixes-bpa}
-
-* Il BPA è stato migliorato per evitare errori di generazione di rapporti con un numero elevato di risultati.
-* Il BPA è stato migliorato per rilevare i caratteri di escape nei percorsi al fine di evitare errori di acquisizione dei contenuti durante la migrazione dei contenuti a AEM as a Cloud Service.
 
 
