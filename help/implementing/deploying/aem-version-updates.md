@@ -3,7 +3,7 @@ title: Aggiornamenti della versione di AEM
 description: Scopri in che modo AEM as a Cloud Service utilizza Continuous Integration and Delivery (CI/CD) per mantenere i progetti sull’ultima versione.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 7cdbda468221c42325a957131c6817c9f85a574a
+source-git-commit: 620543b6c5d7bc017b8ac99d82b2a00dab2287b9
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 9%
@@ -56,23 +56,23 @@ Analogamente, se un aggiornamento automatico di un ambiente di sviluppo non ries
 ## Best practice {#best-practices}
 
 * **Utilizzo ambiente di staging**
-* Utilizza un ambiente diverso (non stage) per lunghi cicli di QA/UAT.
-* Una volta completato il test di integrità su Stage, spostati per verificare in Produzione.
+   * Utilizza un ambiente diverso (non stage) per lunghi cicli di QA/UAT.
+   * Una volta completato il test di integrità su Stage, spostati per verificare in Produzione.
 
 * **Pipeline di produzione**
-* Sospendi prima di implementare in produzione.
-* L’annullamento della pipeline dopo una distribuzione di staging indica che il codice è &quot;uno scarto&quot; e non è un candidato valido per la produzione. Fai riferimento a [Configurazione di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * Sospendi prima di implementare in produzione.
+   * L’annullamento della pipeline dopo una distribuzione di staging indica che il codice è &quot;uno scarto&quot; e non è un candidato valido per la produzione. Fai riferimento a [Configurazione di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
 * **Pipeline non di produzione**
-* Configura [Pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-* Accelerare la velocità/frequenza di consegna in caso di errori della pipeline di produzione.  Identifica i problemi nelle pipeline non di produzione abilitando i test funzionali del prodotto, i test funzionali personalizzati e i test dell’interfaccia utente personalizzati.
+   * Configura [Pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+   * Accelerare la velocità/frequenza di consegna in caso di errori della pipeline di produzione.  Identifica i problemi nelle pipeline non di produzione abilitando i test funzionali del prodotto, i test funzionali personalizzati e i test dell’interfaccia utente personalizzati.
 
 * **Copia contenuto**
-* Utilizzare [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per spostare set di contenuti simili in un ambiente non di produzione.
+   * Utilizzare [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per spostare set di contenuti simili in un ambiente non di produzione.
 
 * **Test funzionali automatizzati**
-* Includi test automatizzati nella pipeline per testare funzionalità critiche.
-* [Test funzionali del cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) e [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) stanno bloccando, se non riescono a rilasciare l’AEM non verrà introdotto.
+   * Includi test automatizzati nella pipeline per testare funzionalità critiche.
+   * [Test funzionali del cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) e [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) stanno bloccando, se non riescono a rilasciare l’AEM non verrà introdotto.
 
 ## Regressione {#regression}
 
