@@ -2,9 +2,9 @@
 title: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 description: Note sulla versione [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9981fb1ac5ddf5d918cf76476fa185c524749c70
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1252'
 ht-degree: 1%
 
 ---
@@ -15,16 +15,17 @@ La sezione seguente illustra le note generali sulla versione di [!DNL Workfront 
 
 ## Data di pubblicazione {#release-date}
 
-Data di rilascio dell’ultima versione 1.9.12 di [!DNL Workfront for Experience Manager enhanced connector] è il 9 agosto 2023.
+Data di rilascio dell’ultima versione 1.9.13 di [!DNL Workfront for Experience Manager enhanced connector] : 11 settembre 2023.
 
 ## Elementi salienti della versione {#release-highlights}
 
 Ultima versione di [!DNL Workfront for Experience Manager enhanced connector] include i seguenti aggiornamenti:
 
-* Impossibile creare cartelle collegate in Experience Manager. Nessun account utente associato alla cartella collegata.
+* Il connettore avanzato Experience Manager recupera tutti gli abbonamenti agli eventi da Workfront durante l’eliminazione di un abbonamento a un evento per un progetto, con un conseguente impatto sulle prestazioni dell’applicazione.
 
-* Condizioni di gara durante gli aggiornamenti dei metadati per una risorsa in Experience Manager.
+* Quando una risorsa viene inviata da Workfront ad Experience Manager, il tipo MIME della risorsa non è impostato su `dc:format` all&#39;interno dell&#39;Experience Manager.
 
+* Gli ID progetto Workfront memorizzati sul connettore avanzato Experience Manager includono duplicati.
 
 >[!NOTE]
 >
@@ -33,7 +34,7 @@ Ultima versione di [!DNL Workfront for Experience Manager enhanced connector] in
 
 >[!IMPORTANT]
 >
->L’Adobe consiglia di: [aggiornamento alla versione più recente del 1.9.12](/help/assets/workfront-connector-install.md) del [!DNL Workfront for Experience Manager enhanced connector].
+>L’Adobe consiglia di: [aggiornamento alla versione più recente del 1.9.13](/help/assets/workfront-connector-install.md) del [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemi noti {#known-issues}
 
@@ -42,6 +43,12 @@ Ultima versione di [!DNL Workfront for Experience Manager enhanced connector] in
 * Quando utilizzi l’esperienza Workfront classica, il **[!UICONTROL Invia a]** opzione disponibile in **[!UICONTROL Altro]** L’elenco a discesa non consente di selezionare la destinazione in Experience Manager. Il **[!UICONTROL Invia a]** funziona correttamente utilizzando **[!UICONTROL Azioni documento]** elenco a discesa. Il **[!UICONTROL Invia a]** funziona correttamente per **[!UICONTROL Altro]** e la **[!UICONTROL Azioni documento]** disponibile nella nuova esperienza Workfront.
 
 ## Versioni precedenti {#previous-releases}
+
+### Versione di agosto 2023 {#august-2023-release}
+
+* Impossibile creare cartelle collegate in Experience Manager. Nessun account utente associato alla cartella collegata.
+
+* Condizioni di gara durante gli aggiornamenti dei metadati per una risorsa in Experience Manager.
 
 ### Versione di giugno 2023 {#june-2023-release}
 
