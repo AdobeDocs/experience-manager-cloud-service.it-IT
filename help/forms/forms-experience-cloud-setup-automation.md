@@ -1,15 +1,17 @@
 ---
 title: Abilitare Adobe Analytics per un modulo adattivo utilizzando Experience Cloud Setup Automation
 description: Experience Cloud Setup Automation consente di collegare Adobe Analytics a un modulo adattivo. Aiuta a tracciare e analizzare l’interazione dell’utente con un modulo adattivo, offrendo informazioni approfondite sulle interazioni e sul coinvolgimento dei visitatori.
-source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
+source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1030'
 ht-degree: 0%
 
 ---
 
 
 # Abilitare Adobe Analytics per un modulo adattivo utilizzando Experience Cloud Setup Automation {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+
+<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Experience Cloud Setup Automation consente di collegare Adobe Analytics ad Adaptive Forms per monitorare e analizzare l’interazione dell’utente con i moduli e offrire informazioni approfondite sulle interazioni e sul coinvolgimento dei visitatori. Experience Cloud Setup Automation consente inoltre di monitorare le prestazioni dei moduli tramite la valutazione di metriche quali tempi di completamento e punti di riconsegna. Questa analisi consente di ottimizzare i moduli per una migliore esperienza utente, distinguendo al contempo il comportamento degli utenti in base allo stato di accesso, ad esempio utenti anonimi, per identificare tendenze e modelli generali.
 

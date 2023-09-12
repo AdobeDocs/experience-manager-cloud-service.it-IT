@@ -5,15 +5,17 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
+source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
 
 # Visualizzazione e comprensione dei rapporti di analisi adattiva di Forms {#viewing-and-understanding-aem-forms-analytics-reports}
+
+<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Nel panorama in rapida evoluzione dell’analisi digitale, è fondamentale rimanere in sintonia con le tendenze globali per prendere decisioni informate e ottimizzare le esperienze digitali. Per risolvere questo problema, Forms adattivo si integra perfettamente con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo alla base dell’analisi di queste metriche è prendere decisioni basate sui dati, utilizzando metriche e analisi per migliorare l’usabilità e l’efficacia dei moduli.
 
