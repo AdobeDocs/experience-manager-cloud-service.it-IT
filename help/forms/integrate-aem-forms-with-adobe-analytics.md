@@ -2,21 +2,24 @@
 title: Come integrare AEM Forms con Adobe Analytics?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+hidefromtoc: true
+source-git-commit: d97b17981e82323317e34185e47ee3f4224795b3
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1743'
 ht-degree: 1%
 
 ---
 
-# Integrare con [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+# Integrare AEM Forms con [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-AEM Forms si integra con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati. L’obiettivo dell’analisi di queste metriche è consentire agli utenti aziendali di ottenere informazioni sul comportamento degli utenti finali e ottimizzare l’esperienza di acquisizione dei dati. Puoi acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms.
+<span class="preview"> Per un’integrazione fluida e più rapida dei moduli adattivi con Adobe Analytics, visita [Abilitare Adobe Analytics per un modulo adattivo utilizzando Experience Cloud Setup Automation](/help/forms/forms-experience-cloud-setup-automation.md). </span>
+
+AEM Forms si integra con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati. L’obiettivo dell’analisi di queste metriche è quello di consentire agli utenti aziendali di ottenere informazioni sul comportamento degli utenti finali e di ottimizzare l’esperienza di acquisizione dei dati. Puoi acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms.
 
 Dopo aver eseguito le azioni menzionate in questo articolo, puoi configurare e visualizzare i rapporti in [!DNL Adobe Analytics], come illustrato nel seguente video:
 
@@ -38,7 +41,7 @@ Dopo aver eseguito le azioni menzionate in questo articolo, puoi configurare e v
 
 * **Salva**: numero di volte in cui gli utenti salvano un modulo sul portale Forms.
 
-Oltre a questi eventi predefiniti, puoi definire eventi personalizzati in moduli adattivi utilizzando l’editor di regole e mapparli su eventi in [!DNL Adobe Analytics]
+Oltre a questi eventi predefiniti, puoi definire eventi personalizzati in moduli adattivi utilizzando un editor di regole e mapparli su eventi in [!DNL Adobe Analytics]
 
 La figura seguente illustra le azioni da eseguire prima di visualizzare i rapporti in [!DNL Adobe Analytics]:
 
@@ -192,19 +195,19 @@ Per pubblicare la configurazione, effettua le seguenti operazioni:
 
 1. In **[!UICONTROL Sviluppo]** sezione, tocca ![Altre opzioni](assets/more-options-icon.svg) e quindi tocca **[!UICONTROL Approva e pubblica in produzione]**.
 
-1. Conferma le modifiche e il flusso di pubblicazione verrà presto visualizzato in **[!UICONTROL Pubblicato]** sezione.
+1. Conferma che le modifiche e il flusso di pubblicazione vengano presto visualizzati nel **[!UICONTROL Pubblicato]** sezione.
 
 ![Flusso di pubblicazione](assets/publish-flow.png)
 
 ## 2. Configurare AEM Forms {#configure-aem-forms}
 
-Prima di creare la configurazione di Adobe Launch, crea un’ [Configurazione Adobe IMS con Adobe Launch come soluzione cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+Prima di creare una configurazione di Launch di Adobe, crea un’ [Configurazione Adobe IMS con Adobe Launch come soluzione cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
 ### Crea configurazione di Adobe Launch {#create-adobe-launch-configuration}
 
 Per creare una configurazione Launch di Adobe, effettua le seguenti operazioni:
 
-1. Nell’istanza Autore di AEM Forms, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazioni di Adobe Launch]**.
+1. Nell’istanza Autore di AEM Forms, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazioni di Adobe Launch]**.
 
 1. Seleziona una cartella per creare la configurazione e tocca **[!UICONTROL Crea]**.
 
@@ -222,7 +225,7 @@ Per creare una configurazione Launch di Adobe, effettua le seguenti operazioni:
 
 ### Abilita [!DNL Adobe Analytics] per un modulo adattivo {#enable-analytics-adaptive-form}
 
-Da utilizzare [!DNL Adobe Launch] configurazione in un modulo adattivo esistente:
+Per utilizzare [!DNL Adobe Launch] configurazione in un modulo adattivo esistente:
 
 1. Nell’istanza Autore di AEM Forms, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona il modulo adattivo e tocca **[!UICONTROL Proprietà]**.
@@ -234,11 +237,11 @@ Dopo aver abilitato [!DNL Adobe Analytics] per un modulo adattivo è possibile: 
 
 ### Creare regole per acquisire eventi personalizzati (facoltativo) {#capture-custom-events}
 
-Creare regole su campi specifici di un modulo adattivo utilizzando l’editor di regole per inviare dati di Analytics da un modulo adattivo a [!DNL Adobe Analytics].
+Creare regole su campi specifici di un modulo adattivo utilizzando un editor di regole per inviare dati di Analytics da un modulo adattivo a [!DNL Adobe Analytics].
 
 In un processo in due fasi, puoi definire una regola su un campo in un modulo adattivo. La regola invia un evento. Il nome dell’evento è mappato a un evento di acquisizione personalizzato in Adobe Launch.
 
-Per creare regole utilizzando l’editor di regole in un modulo adattivo:
+Per creare regole utilizzando un editor di regole in un modulo adattivo:
 
 1. Tocca il campo e seleziona ![Editor regole](assets/rule-editor-icon.svg) per aprire la pagina editor di regole.
 1. Definire una condizione in [!UICONTROL Quando] sezione della regola.
@@ -259,7 +262,7 @@ Per mappare l’evento a un evento di acquisizione personalizzato in [!DNL Adobe
 
 1. Seleziona **[!UICONTROL Acquisisci evento personalizzato]** dal **[!UICONTROL Tipo di evento]** elenco a discesa.
 
-1. Specifica il nome dell&#39;evento specificato nel passaggio 4 durante la creazione di una regola tramite l&#39;editor di regole.
+1. Specifica il nome dell&#39;evento specificato nel passaggio 4 durante la creazione di una regola utilizzando l&#39;editor di regole.
 
 1. Tocca **Mantieni modifiche** ed eseguire le altre azioni specificate in [Configurare le regole](#configure-rules).
 
