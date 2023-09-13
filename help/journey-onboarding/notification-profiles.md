@@ -4,10 +4,10 @@ description: Scopri come creare profili utente in Admin Console per gestire la r
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
+source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 98%
+source-wordcount: '989'
+ht-degree: 96%
 
 ---
 
@@ -22,6 +22,10 @@ Di tanto in tanto, Adobe deve contattare gli utenti in merito ai loro ambienti A
 
 * **Notifica per incidente**: queste notifiche vengono inviate se si verifica un incidente o se Adobe ha identificato un potenziale problema di disponibilità che interessa il tuo ambiente AEM as a Cloud Service.
 * **Notifica proattiva**: queste notifiche vengono inviate quando un membro del team del supporto Adobe desidera fornire indicazioni su una potenziale ottimizzazione o consigli su come sfruttare al megliio l’ambiente AEM as a Cloud Service.
+
+>[!NOTE]
+>
+>L’assegnazione di gruppi a una notifica proattiva non è supportata. Al suo posto, devi assegnare direttamente gli utenti ai profili di prodotto.
 
 Affinché queste notifiche siano ricevute dagli utenti appropriati, devi configurare e assegnare profili utente come descritto in questo documento.
 
