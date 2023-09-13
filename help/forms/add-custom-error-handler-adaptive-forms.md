@@ -6,9 +6,9 @@ keywords: Aggiungi un gestore degli errori personalizzato, aggiungi un gestore d
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 1f6fd90b2a5772951c78275b395653bbd14bbd7b
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2466'
 ht-degree: 2%
 
 ---
@@ -401,3 +401,11 @@ The `var som_map` lists the SOM expression of the Adaptive Form fields that you 
 Using this custom error handler, the adaptive form converts the fields listed in `var som_map` to standard error message format. As a result, the validation error messages display at field-level in the adaptive form.
 
  -->
+
+
+## Consulta anche {#see-also}
+
+* [Creare e utilizzare gestori di errori personalizzati in Adaptive Forms (Componenti core)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+* [Creare un modulo adattivo basato su Componenti core autonomi](/help/forms/creating-adaptive-form-core-components.md)
+* [Creare stili o temi per i moduli](/help/forms/using-themes-in-core-components.md)
+* [Creare o aggiungere un modulo adattivo alla pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
