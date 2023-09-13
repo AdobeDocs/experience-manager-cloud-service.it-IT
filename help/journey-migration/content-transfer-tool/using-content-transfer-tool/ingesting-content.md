@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Acquisizione dei contenuti"
->abstract="Per acquisizione si intende l’acquisizione dei contenuti dal set di migrazione nell’istanza del Cloud Service di destinazione. Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti."
+>abstract="Per acquisizione si intende l’acquisizione dei contenuti dal set di migrazione nell’istanza Cloud Service di destinazione. Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it" text="Acquisizione integrativa"
 
 Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effettua le seguenti operazioni:

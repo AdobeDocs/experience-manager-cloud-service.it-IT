@@ -4,7 +4,7 @@ description: Scopri come il processo di migrazione indicizzerà i contenuti acqu
 source-git-commit: 22c5cbf300bb0b3b0db04fcfa669dde44197c326
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="Indicizzazione dei contenuti"
->abstract="Per indicizzazione AEM si intende l’indicizzazione del contenuto nell’istanza di Cloud Service dopo la migrazione del contenuto. L’indicizzazione è necessaria per supportare la ricerca di contenuti in tale istanza."
+>abstract="Per indicizzazione di AEM si intende l’indicizzazione dei contenuti nell’istanza di Cloud Service dopo la migrazione di contenuti. L’indicizzazione è necessaria per supportare la ricerca di contenuti in tale istanza."
 
 Una volta che Cloud Acceleration Manager ha completato l’acquisizione del contenuto nell’istanza di Cloud Service, è pronto per essere utilizzato. Inizialmente il contenuto non è indicizzato, probabilmente causando un ambiente instabile in cui sono prevedibili problemi quali contenuto non ricercabile e prestazioni ridotte.
 Per prestazioni ottimali sull’istanza, il processo di migrazione avvierà automaticamente l’indicizzazione del contenuto. Non è necessario eseguire alcuna operazione, ad eccezione del monitoraggio dell’avanzamento dell’indicizzazione.
