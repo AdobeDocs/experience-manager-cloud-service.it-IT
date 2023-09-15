@@ -2,22 +2,22 @@
 title: Acquisizione di contenuti nel Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
+source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 9%
+source-wordcount: '2142'
+ht-degree: 7%
 
 ---
 
 # Acquisizione di contenuti nel Cloud Service {#ingesting-content}
 
-## Processo di acquisizione nello strumento Content Transfer (Trasferimento contenuti) {#ingestion-process}
+## Processo di acquisizione in Cloud Acceleration Manager {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Acquisizione dei contenuti"
->abstract="Per acquisizione si intende l’acquisizione dei contenuti dal set di migrazione nell’istanza Cloud Service di destinazione. Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it" text="Acquisizione integrativa"
+>abstract="Per acquisizione si intende l’acquisizione dei contenuti dal set di migrazione nell’istanza Cloud Service di destinazione. Lo strumento Content Transfer dispone di una funzione che supporta l’integrazione differenziale dei contenuti, per trasferire solo le modifiche apportate dopo l’ultima attività di trasferimento dei contenuti."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="Estrazione integrativa"
 
 Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effettua le seguenti operazioni:
 
@@ -42,50 +42,31 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
    >Le note seguenti si applicano all’acquisizione del contenuto:
    > Se l’origine era Author, si consiglia di acquisirla nel livello Author sulla destinazione. Analogamente, se l’origine è Pubblica, anche la destinazione deve essere Pubblica.
    > Se il livello di destinazione è `Author`, l’istanza di authoring viene chiusa per tutta la durata dell’acquisizione e diventa non disponibile per gli utenti (ad esempio, autori o chiunque esegua attività di manutenzione). Il motivo è proteggere il sistema ed evitare eventuali modifiche che potrebbero andare perse o causare un conflitto di acquisizione. Assicurati che il tuo team sia a conoscenza di questo fatto. Inoltre, l’ambiente risulta ibernato durante l’acquisizione dell’autore.
-   > Puoi eseguire il passaggio di pre-copia opzionale per velocizzare notevolmente la fase di acquisizione. Consulta [Acquisizione con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) per ulteriori dettagli.
+   > Puoi eseguire il passaggio di pre-copia opzionale per velocizzare notevolmente l’acquisizione. Consulta [Acquisizione con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) per ulteriori dettagli.
    > Se si utilizza l’acquisizione con pre-copia (per S3 o Azure Data Store), si consiglia di eseguire prima l’acquisizione dell’authoring. In questo modo, l’acquisizione Publish diventa più rapida quando viene eseguita in un secondo momento.
    > Le acquisizioni non supportano una destinazione RDE (Rapid Development Environment) e non vengono visualizzate come possibile scelta di destinazione, anche se l’utente ha accesso a tale destinazione.
 
    >[!IMPORTANT]
-   > Per l’acquisizione dei contenuti si applicano le seguenti note importanti:
    > Puoi avviare un’acquisizione nell’ambiente di destinazione solo se appartieni al gruppo locale **Amministratori AEM** nel servizio Author del Cloud Service di destinazione. Se non riesci ad avviare un’acquisizione, consulta [Impossibile avviare l’acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
-   > Se l&#39;impostazione **A comparsa** viene abilitato prima dell’acquisizione, elimina l’intero archivio esistente e crea un archivio in cui puoi acquisire il contenuto. Questo flusso di lavoro comporta il ripristino di tutte le impostazioni, incluse le autorizzazioni, nell’istanza del Cloud Service di destinazione. Questo ripristino è valido anche per un utente amministratore aggiunto al **amministratori** gruppo. Per avviare un’acquisizione, devi essere letto al gruppo degli amministratori.
+
+   * Scegli la `Wipe` valore
+      * Il **A comparsa** imposta il punto iniziale della destinazione dell’acquisizione. Se **A comparsa** è abilitato, la destinazione, compreso tutto il suo contenuto, viene reimpostata sulla versione dell’AEM specificata in Cloud Manager. Se non è abilitata, la destinazione mantiene il contenuto corrente come punto di partenza.
+      * Tieni presente che questa opzione **NOT** influenzano il modo in cui verrà eseguita l’acquisizione del contenuto. L’acquisizione utilizza sempre una strategia di sostituzione dei contenuti e _non_ una strategia di unione dei contenuti in modo tale che, in entrambi **A comparsa** e **Non Cancellato** In alcuni casi, l’acquisizione di un set di migrazione sovrascriverà i contenuti nello stesso percorso sulla destinazione. Ad esempio, se il set di migrazione contiene `/content/page1` e la destinazione contiene già `/content/page1/product1`, l’acquisizione rimuoverà l’intero `page1` percorso e relative pagine secondarie, inclusi `product1`e sostituirlo con il contenuto nel set di migrazione. Ciò significa che è necessario eseguire un’attenta pianificazione quando si esegue una **Non Cancellato** acquisizione in una destinazione che contiene qualsiasi contenuto che deve essere mantenuto.
+
+   >[!IMPORTANT]
+   > Se l&#39;impostazione **A comparsa** è abilitato per l’acquisizione, ripristina l’intero archivio esistente, incluse le autorizzazioni utente sull’istanza del Cloud Service di destinazione. Questo ripristino è valido anche per un utente amministratore aggiunto al **amministratori** e tale utente deve essere aggiunto nuovamente al gruppo amministratori per avviare un’acquisizione.
 
 1. Clic **Acquisisci**.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. Puoi quindi monitorare la fase di acquisizione dalla vista a elenco Processi di acquisizione e utilizzare il menu Azioni di acquisizione per visualizzare il registro man mano che l’acquisizione procede.
+1. Puoi quindi monitorare l’acquisizione dalla vista a elenco Processi di acquisizione e utilizzare il menu Azioni dell’acquisizione per visualizzare le durate e registrare nel momento in cui l’acquisizione procede.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
 1. Fai clic su **i) IT** nella riga per ulteriori informazioni sul processo di acquisizione. Puoi visualizzare la durata di ciascun passaggio dell’acquisizione quando è in esecuzione o completata facendo clic su **...** e quindi clic su **Visualizza durate**. Le informazioni provenienti dall’estrazione vengono anche mostrate per realizzare ciò che viene acquisito.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
-
-<!-- Alexandru: hiding temporarily, until it's reviewed 
-
-1. The **Migration Set ingestion** dialog box displays. Content can be ingested to either Author instance or Publish instance at a time. Select the instance to ingest content to. Click on **Ingest** to start the ingestion phase. 
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
-
-   >[!IMPORTANT]
-   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later. 
-
-   >[!IMPORTANT]
-   >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
-
-   Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-
-   Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
-
-1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png) -->
 
 ## Acquisizione integrativa {#top-up-ingestion-process}
 
@@ -95,14 +76,14 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
 >abstract="Utilizza la funzione integrativa per spostare il contenuto modificato dall’ultima attività di trasferimento dei contenuti. Al termine dell’acquisizione, verifica la presenza di eventuali errori o avvisi nei registri. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’Assistenza clienti di Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=it" text="Visualizzazione dei registri"
 
-Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’*integrazione* di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
+Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che consente l’estrazione di contenuti differenziali eseguendo una *integrativo* del set di migrazione. Questo consente di modificare il set di migrazione in modo da includere solo il contenuto modificato rispetto all’estrazione precedente, senza dover estrarre nuovamente tutto il contenuto.
 
 >[!NOTE]
->Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service. Se hai utilizzato il passaggio di pre-copia per la prima acquisizione completa, puoi saltare la pre-copia per le successive acquisizioni integrative (se la dimensione del set di migrazione integrativo è inferiore a 200 GB). Il motivo è che potrebbe aggiungere tempo all&#39;intero processo.
+>Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service. Se hai utilizzato il passaggio di pre-copia per la prima acquisizione, puoi saltare la pre-copia per le successive acquisizioni integrative (se la dimensione del set di migrazione integrativa è inferiore a 200 GB). Il motivo è che potrebbe aggiungere tempo all&#39;intero processo.
 
-Al termine del processo di acquisizione, per acquisire il contenuto delta è necessario eseguire una [Estrazione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process), quindi utilizza il metodo di acquisizione integrativa.
+Per acquisire il contenuto differenziale al termine di alcune acquisizioni, è necessario eseguire una [Estrazione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process), quindi utilizza il metodo di acquisizione con il **A comparsa** opzione **disabilitato**. Assicurati di leggere **A comparsa** per evitare di perdere contenuti già presenti nella destinazione.
 
-Per prima cosa, crea un processo di acquisizione e assicurati che **A comparsa** è disattivato durante la fase di acquisizione, come illustrato di seguito:
+Per prima cosa, crea un processo di acquisizione e assicurati che **A comparsa** è disattivato durante l’acquisizione, come illustrato di seguito:
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
@@ -163,7 +144,7 @@ Una causa comune di [Acquisizione integrativa](/help/journey-migration/content-t
 
 Ogni nodo in AEM deve avere un UUID univoco. Questo errore indica che un nodo che viene acquisito ha lo stesso UUID di uno esistente altrove in un percorso diverso nell’istanza di destinazione.
 Questa situazione può verificarsi se un nodo viene spostato sull’origine tra un’estrazione e una successiva [Estrazione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-Può anche accadere se un nodo sul target viene spostato tra un’acquisizione e una successiva acquisizione integrativa.
+Può anche accadere se un nodo della destinazione viene spostato tra un’acquisizione e una successiva acquisizione integrativa.
 
 Questo conflitto deve essere risolto manualmente. Chi ha familiarità con il contenuto deve decidere quale dei due nodi deve essere eliminato, tenendo presente gli altri contenuti che vi fanno riferimento. La soluzione può richiedere che l’estrazione integrativa venga eseguita nuovamente senza il nodo problematico.
 
@@ -172,11 +153,11 @@ Questo conflitto deve essere risolto manualmente. Chi ha familiarità con il con
 Un’altra causa comune di [Acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) errore è un conflitto di versione per un particolare nodo nell’istanza di destinazione. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come quella seguente:
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity001: impossibile eliminare il nodo a cui si fa riferimento: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-Questo può accadere se un nodo sulla destinazione viene modificato tra un’acquisizione e una successiva acquisizione integrativa in modo che sia stata creata una nuova versione. Se per l’acquisizione sono abilitate le &quot;versioni di inclusione&quot;, potrebbe verificarsi un conflitto in quanto la destinazione dispone ora di una versione più recente a cui fa riferimento la cronologia delle versioni e altro contenuto. Il processo di acquisizione non sarà in grado di eliminare il nodo della versione che genera l’infrazione perché vi si fa riferimento.
+Questo può accadere se un nodo sulla destinazione viene modificato tra un’acquisizione e una successiva **Non Cancellato** acquisizione tale da aver creato una nuova versione. Se il set di migrazione è stato estratto con &quot;includi versioni&quot; abilitato, si potrebbe verificare un conflitto in quanto la destinazione dispone ora di una versione più recente a cui fa riferimento la cronologia delle versioni e altro contenuto. Il processo di acquisizione non sarà in grado di eliminare il nodo della versione che genera l’infrazione perché vi si fa riferimento.
 
 La soluzione può richiedere che l’estrazione integrativa venga eseguita nuovamente senza il nodo problematico. Oppure, creando un piccolo set di migrazione del nodo problematico, ma con &quot;include versions&quot; disabilitato.
 
-Le best practice indicano che, se un’acquisizione deve essere eseguita con wipe=false e &quot;include versions&quot;=true, è fondamentale che il contenuto della destinazione venga modificato il meno possibile, fino al completamento del percorso di migrazione. In caso contrario, possono verificarsi tali conflitti.
+Le best practice indicano che se un **Non Cancellato** l’acquisizione deve essere eseguita utilizzando un set di migrazione che include le versioni (ovvero estratte con &quot;include versions&quot;=true). È fondamentale che il contenuto nella destinazione venga modificato il meno possibile, fino al completamento del percorso di migrazione. In caso contrario, possono verificarsi tali conflitti.
 
 
 ## Passaggio successivo {#whats-next}
@@ -184,4 +165,3 @@ Le best practice indicano che, se un’acquisizione deve essere eseguita con wip
 Quando l’acquisizione viene completata correttamente, l’indicizzazione AEM viene avviata automaticamente. Consulta [Indicizzazione dopo la migrazione del contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) per ulteriori informazioni.
 
 Una volta completato l’inserimento del contenuto nel Cloud Service, puoi visualizzare i registri di ciascun passaggio (estrazione e acquisizione) e cercare gli errori. Consulta [Visualizzazione dei registri di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) per ulteriori informazioni.
-
