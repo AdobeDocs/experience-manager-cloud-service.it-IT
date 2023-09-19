@@ -2,10 +2,10 @@
 title: Variabili di ambiente di Cloud Manager
 description: È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager e fornirle all’ambiente di runtime per l’utilizzo nella configurazione OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 15a53778e0934a1940efa5cc88467c20b4b67fe4
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 99%
+source-wordcount: '1016'
+ht-degree: 98%
 
 ---
 
@@ -118,7 +118,7 @@ Negli ambienti di authoring, anteprima e pubblicazione è possibile utilizzare s
 
 ### Dispatcher {#dispatcher}
 
-Solo le variabili di ambiente normali possono essere utilizzate dal [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) Secretscan non può essere utilizzato.
+Solo le variabili di ambiente normali possono essere utilizzate dal [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) I segreti non possono essere utilizzati.
 
 Tuttavia, le variabili di ambiente non possono essere utilizzate in `IfDefine` direttive.
 
