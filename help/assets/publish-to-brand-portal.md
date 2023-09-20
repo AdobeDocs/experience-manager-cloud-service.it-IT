@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 56a4b03e78e835108aa57fdb241803e75b867260
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 96%
+source-wordcount: '1263'
+ht-degree: 93%
 
 ---
 
@@ -87,6 +87,16 @@ Accedi all’interfaccia di Brand Portal per visualizzare le risorse pubblicate 
 
 ![bp_landingpage](assets/bp_landingpage.png)
 
+>[!NOTE]
+>
+> * La parte utenti esistenti del gruppo DAM-Users dispone dell’accesso in lettura al percorso &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
+>* I nuovi utenti (o utenti non amministratori) richiedono i seguenti diritti per la pubblicazione su Brand Portal.
+> Percorsi:
+> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
+>/libs : jcr:read
+>/conf : jcr:read
+>/content : jcr:read , crx:replicate
+>/content/dam/ : jcr:read ,Modify , crx:replicate
 
 ## Pubblicare cartelle su Brand Portal {#publish-folders-to-brand-portal}
 
@@ -104,7 +114,7 @@ Puoi pubblicare o annullare subito la pubblicazione delle cartelle di risorse op
 
    * Dalla barra degli strumenti, seleziona **[!UICONTROL Pubblicazione rapida]**.
 
-      Dal menu, seleziona **[!UICONTROL Pubblica su Brand Portal]**.
+     Dal menu, seleziona **[!UICONTROL Pubblica su Brand Portal]**.
 
    * Dalla barra degli strumenti, seleziona **[!UICONTROL Gestisci pubblicazione]**.
 
@@ -254,13 +264,13 @@ Per ulteriori informazioni, consulta la [documentazione di Brand Portal](https:/
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
