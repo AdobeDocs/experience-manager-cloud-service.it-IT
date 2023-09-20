@@ -1,7 +1,7 @@
 ---
-title: Configurazione delle regole del filtro del traffico (con regole WAF)
-description: Utilizzare le regole del filtro del traffico (con le regole WAF) per filtrare il traffico
-source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
+title: Configurazione delle regole del filtro del traffico con le regole WAF
+description: Utilizzare le regole di filtro del traffico con le regole WAF per filtrare il traffico
+source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 2%
@@ -9,7 +9,7 @@ ht-degree: 2%
 ---
 
 
-# Configurazione delle regole del filtro del traffico (con regole WAF) per filtrare il traffico {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# Configurazione delle regole del filtro del traffico con le regole WAF per filtrare il traffico {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
