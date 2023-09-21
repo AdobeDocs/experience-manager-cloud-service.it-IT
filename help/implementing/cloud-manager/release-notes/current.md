@@ -3,9 +3,9 @@ title: Note sulla versione 2023.9.0 di Cloud Manager in Adobe Experience Manager
 description: Queste sono le note sulla versione 2023.9.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
+source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '443'
 ht-degree: 23%
 
 ---
@@ -55,6 +55,6 @@ Ti interessa testare il nuovo cruscotto? Invia un&#39;e-mail a `aem-lighthouse-p
 
 ## Correzioni di bug {#bug-fixes}
 
-* Quando un programma viene eliminato, viene eliminata anche qualsiasi pipeline in esecuzione associata, garantendo che la pipeline non venga erroneamente designata come stato di errore.
-* Il pulsante Lancio completato è disattivato e informa l’utente del motivo per cui è in corso una pipeline.
-* Talvolta, quando tutti i passaggi di un’esecuzione della pipeline sono &quot;completati&quot;, lo stato della pipeline viene visualizzato come &quot;in esecuzione&quot;, facendola sembrare in uno stato bloccato. Ora viene visualizzato come &#39;Completo&#39;.
+* Quando un programma viene eliminato, viene eliminata anche qualsiasi pipeline in esecuzione associata.
+* Se è in corso una pipeline, il **Invia** pulsante della **Lancio completato** la finestra di dialogo è ora disattivata e informa l’utente che non è possibile impostare la data di pubblicazione a causa della pipeline in esecuzione.
+* È stato corretto un errore occasionale in cui tutti i passaggi di un’esecuzione della pipeline venivano contrassegnati come completati, ma lo stato della pipeline era ancora in esecuzione, dando l’aspetto di uno stato bloccato.

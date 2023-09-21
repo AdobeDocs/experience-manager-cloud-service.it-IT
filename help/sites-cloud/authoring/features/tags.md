@@ -2,10 +2,10 @@
 title: Utilizzo dei tag
 description: I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a7774ff75fb6bac55d5e931b13597d90bf8d721b
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati come parole chiave o etichette da allegare a una pagina, una risorsa o altro contenuto, per consentire la ricerca di contenuti specifici o correlati.
 
-* Per informazioni sulla creazione e la gestione dei tag, nonché sulla modalità di applicazione dei tag di contenuto, consulta Gestione dei tag. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
+* Consulta [Amministrazione dei tag](/help/sites-cloud/administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
 * Per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag in applicazioni personalizzate, consulta [Assegnazione tag per sviluppatori](/help/implementing/developing/introduction/tagging-framework.md).
 
 ## Dieci motivi per utilizzare l’assegnazione tag {#ten-reasons-to-use-tagging}
