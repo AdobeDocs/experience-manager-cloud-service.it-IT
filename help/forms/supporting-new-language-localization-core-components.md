@@ -1,7 +1,7 @@
 ---
 title: Come si aggiunge il supporto per nuove lingue a un modulo adattivo basato su componenti core?
 description: AEM Forms consente di aggiungere nuove lingue per la localizzazione dei moduli adattivi.
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 1%
@@ -48,7 +48,7 @@ AEM Forms attualmente supporta la localizzazione di contenuti Forms adattivi nel
 
 ![Aggiungere una lingua a un repository](add-a-locale-adaptive-form-core-components.png)
 
-### 1. Clonare l’archivio Git as a Cloud Service per AEM {#clone-the-repository}
+### Clonare l’archivio Git as a Cloud Service per AEM {#clone-the-repository}
 
 1. Apri la riga di comando e scegli una directory in cui memorizzare l’archivio, ad esempio `/cloud-service-repository/`.
 
@@ -63,7 +63,7 @@ AEM Forms attualmente supporta la localizzazione di contenuti Forms adattivi nel
    Dopo aver completato correttamente il comando, una cartella `<my-program>` viene creato. Contiene il contenuto clonato dall’archivio Git. Nel resto dell’articolo, la cartella viene indicata come, `[AEM Forms as a Cloud Service Git repostory]`.
 
 
-### 2. Aggiungere le nuove impostazioni locali al servizio di localizzazione della Guida TV {#add-a-locale-to-the-guide-localization-service}
+### Aggiungere le nuove impostazioni locali al servizio di localizzazione della Guida TV {#add-a-locale-to-the-guide-localization-service}
 
 1. Apri la cartella dell’archivio, clonata nella sezione precedente, in un editor di testo normale.
 1. Accedi a `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` cartella. È possibile trovare `<appid>` nel `archetype.properties` file del progetto.
@@ -74,7 +74,7 @@ AEM Forms attualmente supporta la localizzazione di contenuti Forms adattivi nel
 1. Aggiungi il [codice locale della lingua](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) stai cercando di aggiungere, ad esempio, &quot;hi&quot; per hindi.
 1. Salva e chiudi il file 
 
-### 3. Creare una libreria client per aggiungere una lingua
+### Creare una libreria client per aggiungere una lingua
 
 AEM Forms fornisce una libreria client di esempio per aiutarti ad aggiungere facilmente nuove lingue. Puoi scaricare e aggiungere `clientlib-it-custom-locale` libreria client dall’archivio dei componenti core adattivi Forms su GitHub all’archivio as a Cloud Service Forms. Per aggiungere la libreria client, effettua le seguenti operazioni:
 
@@ -84,7 +84,7 @@ AEM Forms fornisce una libreria client di esempio per aiutarti ad aggiungere fac
 1. Accedi a `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` e incolla `clientlib-it-custom-locale` directory.
 
 
-### 4. Creare un file specifico per le impostazioni internazionali {#locale-specific-file}
+### Creare un file specifico per le impostazioni internazionali {#locale-specific-file}
 
 1. Accedi a `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Individua il [File .json locale inglese su GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), che contiene il set più recente di stringhe predefinite incluse nel prodotto.
@@ -94,7 +94,7 @@ AEM Forms fornisce una libreria client di esempio per aiutarti ad aggiungere fac
 1. Salvare e chiudere il file.
 
 
-### 4. Aggiungere il supporto delle impostazioni internazionali al dizionario {#add-locale-support-for-the-dictionary}
+### Aggiunta del supporto delle impostazioni locali al dizionario {#add-locale-support-for-the-dictionary}
 
 Esegui questo passaggio solo se `<locale>` stai aggiungendo non è tra `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -133,7 +133,7 @@ Esegui questo passaggio solo se `<locale>` stai aggiungendo non è tra `en`, `de
 
    ![Aggiungi le cartelle appena create in `filter.xml` in `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### 5. Eseguire il commit delle modifiche e distribuire la pipeline {#commit-changes-in-repo-deploy-pipeline}
+### Eseguire il commit delle modifiche e distribuire la pipeline {#commit-changes-in-repo-deploy-pipeline}
 
 Apporta le modifiche all’archivio GIT dopo l’aggiunta di un nuovo supporto delle impostazioni internazionali. Distribuisci il codice utilizzando la pipeline full stack. Scopri [come impostare una pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) per aggiungere nuovo supporto per le impostazioni internazionali.
 Una volta completata la pipeline, nell’ambiente AEM viene visualizzata la lingua appena aggiunta.
