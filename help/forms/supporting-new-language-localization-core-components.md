@@ -1,11 +1,10 @@
 ---
-title: Aggiungere il supporto per nuove lingue a un modulo adattivo
-description: AEM Forms consente di aggiungere nuove lingue per la localizzazione dei moduli adattivi. Inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-taiwanese (zh-TW) e coreano (ko-KR).
-exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
+title: Come si aggiunge il supporto per nuove lingue a un modulo adattivo basato su componenti core?
+description: AEM Forms consente di aggiungere nuove lingue per la localizzazione dei moduli adattivi.
+source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 2%
+source-wordcount: '1336'
+ht-degree: 1%
 
 ---
 
