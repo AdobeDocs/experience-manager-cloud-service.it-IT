@@ -2,9 +2,9 @@
 title: Aggiungere il supporto per nuove lingue a un modulo adattivo
 description: AEM Forms consente di aggiungere nuove lingue per la localizzazione dei moduli adattivi. Inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-taiwanese (zh-TW) e coreano (ko-KR).
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1251'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 1%
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
-| AEM as a Cloud Service | Questo articolo |
 
 AEM Forms fornisce supporto predefinito per le lingue inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR). È possibile aggiungere il supporto anche per altre lingue, come Hindi(hi_IN).
 
@@ -31,7 +30,7 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari locali:
 
 ## Aggiunta del supporto per le nuove lingue {#add-support-for-new-locales}
 
-Per aggiungere il supporto per una nuova lingua, effettua le seguenti operazioni:
+Per aggiungere il supporto per una lingua, effettua le seguenti operazioni:
 
 1. [Aggiunta del supporto per la localizzazione per le lingue non supportate](#add-localization-support-for-non-supported-locales)
 1. [Utilizzare le lingue aggiunte in Adaptive Forms](#use-added-locale-in-af)
@@ -40,7 +39,7 @@ Per aggiungere il supporto per una nuova lingua, effettua le seguenti operazioni
 
 AEM Forms attualmente supporta la localizzazione di contenuti Forms adattivi nelle lingue inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
 
-Per aggiungere il supporto per una nuova lingua in fase di esecuzione di Adaptive Forms:
+Per aggiungere il supporto per una lingua:
 
 1. [Clonare l’archivio](#clone-the-repository)
 1. [Aggiungere una lingua al servizio GuideLocalizationService](#add-a-locale-to-the-guide-localization-service)
@@ -112,7 +111,7 @@ Prima di eseguire il commit delle modifiche nell’archivio Git dell’AEM, devi
 
 #### 5. Eseguire il commit delle modifiche nell’archivio e distribuire la pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Apporta le modifiche all’archivio GIT dopo l’aggiunta di un nuovo supporto delle impostazioni internazionali. Distribuisci il codice utilizzando la pipeline full stack. Scopri [come impostare una pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) per aggiungere nuovo supporto per le impostazioni internazionali.
+Apporta le modifiche all’archivio GIT dopo l’aggiunta del supporto delle impostazioni internazionali. Distribuisci il codice utilizzando la pipeline full stack. Scopri [come impostare una pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) per aggiungere nuovo supporto per le impostazioni internazionali.
 Una volta completata la pipeline, nell’ambiente AEM viene visualizzata la lingua appena aggiunta.
 
 ### Usa le impostazioni locali aggiunte in Adaptive Forms {#use-added-locale-in-af}
