@@ -2,16 +2,16 @@
 title: Modifica dei programmi
 description: Scopri come modificare i programmi sandbox e di produzione per apportare modifiche alle opzioni dopo averli creati.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 97%
+source-wordcount: '502'
+ht-degree: 50%
 
 ---
 
 # Modifica dei programmi {#editing-programs}
 
-Gli utenti con le autorizzazioni necessarie possono modificare i [programmi di produzione](creating-production-programs.md) e i [programmi sandbox creati nell’organizzazione.](creating-sandbox-programs.md) Modificando un programma è possibile:
+Gli utenti con le autorizzazioni necessarie possono modificare [programmi di produzione creati nell’organizzazione](creating-production-programs.md) e [programmi sandbox creati nell’organizzazione.](creating-sandbox-programs.md) Modificando un programma è possibile:
 
 * Aggiungere la soluzione Sites a un programma esistente con Assets e viceversa.
 * Rimuovere Sites o Assets da un programma esistente con entrambi Sites e Assets.
@@ -24,11 +24,9 @@ Per modificare i programmi o eliminare i programmi sandbox, è necessario avere 
 
 ## Modifica di un programma {#editing}
 
-Per modificare un programma, segui la procedura riportata di seguito.
-
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Per visualizzare i dettagli del programma, fai clic su quello che desideri modificare.
+1. Fare clic sul programma che si desidera modificare per visualizzarne i dettagli.
 
 1. Fai clic sul nome del programma nella parte superiore sinistra della pagina e seleziona **Modifica programma**.
 
@@ -44,7 +42,7 @@ Per modificare un programma, segui la procedura riportata di seguito.
 
    ![Selezione delle soluzioni](assets/edit-prg.png)
 
-1. Per visualizzare i componenti aggiuntivi facoltativi, come l’opzione per il componente **Commerce** in **Sites**, fai clic sulla freccia che precede il nome della soluzione.
+1. Fai clic sulla freccia che precede il nome della soluzione per visualizzare i componenti aggiuntivi facoltativi, ad esempio per selezionare **Commerce** opzione del componente aggiuntivo in **Sites**.
 
    ![Modifica dei componenti aggiuntivi](assets/edit-program-add-on.png)
 
@@ -52,18 +50,18 @@ Per modificare un programma, segui la procedura riportata di seguito.
 
    ![Modifica delle impostazioni di pubblicazione](assets/edit-program-go-live.png)
 
-   * Questa data è solo per uso informativo e attiva il widget di pubblicazione sulla pagina della panoramica del programma per fornire collegamenti rapidi alla documentazione sulle best practice di AEM as a Cloud Service, al fine di allinearsi con il percorso che culmina in un’esperienza di pubblicazione fluida e di successo.
+   * Questa data è esclusivamente a scopo informativo. Attiva il widget di pubblicazione nella pagina di panoramica del programma. A sua volta, fornisce collegamenti interni alla documentazione sulle best practice as a Cloud Service di Adobe Experience Manager (AEM) per allinearsi al percorso, che culmina in un’esperienza di lancio di successo.
    * Questa scheda non è disponibile per i programmi sandbox.
 
-1. Per salvare le modifiche apportate al programma, fai clic su **Aggiorna**.
+1. Clic **Aggiorna** per salvare le modifiche apportate al programma.
 
-Ogni volta che si modifica un programma, compreso aggiungere o rimuovere una soluzione o un componente aggiuntivo, le modifiche hanno effetto dopo la distribuzione successiva.
+Ogni volta che si modifica un programma, incluso l&#39;aggiunta o la rimozione di una soluzione o di un componente aggiuntivo, tali modifiche diventano effettive dopo la distribuzione successiva.
 
 Se il programma di produzione aveva abilitato la sicurezza avanzata, sarà disponibile la scheda aggiuntiva **Sicurezza avanzata** nella finestra **Modifica programma**, per confermare che la funzione è attiva per il programma.
 
 ![Protezione avanzata attiva per un programma](assets/edit-program-enhanced.png)
 
-Questa impostazione non può essere modificata dopo la creazione del programma. Per ulteriori informazioni sull’opzione di sicurezza avanzata, consulta il documento [Creazione di programmi di produzione](creating-production-programs.md).
+Non è possibile modificare questa impostazione dopo la creazione del programma. Per ulteriori informazioni sull&#39;opzione di protezione avanzata, vedere [Creazione di programmi di produzione](creating-production-programs.md).
 
 ## Eliminazione dei programmi sandbox {#delete-sandbox-program}
 
@@ -73,11 +71,11 @@ L’eliminazione di un programma sandbox comporta la rimozione di tutti gli ambi
 >
 >In alternativa, gli utenti con i ruoli **Proprietario business** o **Responsabile dell’implementazione** possono eliminare gli ambienti di produzione e di staging al posto dell’intero programma sandbox.
 
-Per eliminare un programma sandbox, segui la procedura riportata di seguito.
+Per eliminare un programma sandbox, effettuare le seguenti operazioni.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Per visualizzare i dettagli del programma, fai clic su quello che desideri modificare.
+1. Fare clic sul programma che si desidera modificare per visualizzarne i dettagli.
 
 1. Fai clic sul nome del programma nella parte superiore sinistra della pagina e seleziona **Elimina programma**.
 
@@ -89,4 +87,4 @@ In alternativa, dalla pagina della panoramica di Cloud Manager, accedi alla sche
 
 >[!NOTE]
 >
->È possibile eliminare solo i programmi sandbox. Impossibile eliminare il programma di produzione.
+>È possibile eliminare solo i programmi sandbox. I programmi di produzione non possono essere eliminati.

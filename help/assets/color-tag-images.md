@@ -1,11 +1,11 @@
 ---
 title: Tag colore per immagini
-description: Experience Manager Assets consente di distinguere i colori in un’immagine e di applicarli automaticamente come tag. Puoi quindi utilizzare questi tag per cercare e filtrare le immagini.
+description: Adobe Experience Manager Assets consente di distinguere i colori in un’immagine e di applicarli automaticamente come tag. Puoi quindi utilizzare questi tag per cercare e filtrare le immagini.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 ![Banner assegnazione tag colore](assets/banner-image.png)
 
-Experience Manager Assets utilizza le funzionalità di intelligenza artificiale di Adobe Sensei per distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’acquisizione. Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine.
+Adobe Experience Manager (AEM) Assets utilizza le funzionalità di intelligenza artificiale di Adobe Sensei per distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’inserimento. Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione cromatica dell’immagine.
 
 È possibile configurare il numero di colori, compresi tra uno e 40, con cui un&#39;immagine viene taggata in modo da poter cercare le immagini in base a tali colori in un secondo momento. Experience Manager Assets applica i tag in base alla copertura cromatica di un’immagine. È inoltre possibile configurare il formato di visualizzazione per un tag colore.
 
@@ -25,12 +25,12 @@ La figura seguente illustra la sequenza di attività da eseguire per configurare
 
 | Formato file | Estensione | Tipo MIME | Spazio colore di input | Dimensione massima file di origine supportata | Risoluzione massima dimensione file supportata |
 |---|---|---|---|---|---|
-| JPEG | jpg, jpeg | image/jpeg | sRGB | 15GB | 20000px X 20000px |
-| PNG | .png | image/png | sRGB | 15GB | 20000px X 20000px |
-| TIFF | tif, tiff | image/tiff | sRGB | 4 GB (limitati dalle specifiche del formato) | 20000px X 20000px |
-| PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 GB (limitati dalle specifiche del formato) | 20000px X 20000px |
-| GIF | .gif | image/gif | sRGB | 15GB | 20000px X 20000px |
-| BMP | bmp | image/bmp | sRGB | 4 GB (limitati dalle specifiche del formato) | 20000px X 20000px |
+| JPEG | .jpg e .jpeg | image/jpeg | sRGB | 15 GB | 20000 × 20000 pixel |
+| PNG | .png | image/png | sRGB | 15 GB | 20000 × 20000 pixel |
+| TIFF | tif e tiff | image/tiff | sRGB | 4 GB (limitati dalle specifiche del formato) | 20000 × 20000 pixel |
+| PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 GB (limitata dalle specifiche del formato) | 20000 × 20000 pixel |
+| GIF | .gif | image/gif | sRGB | 15 GB | 20000 × 20000 pixel |
+| BMP | bmp | image/bmp | sRGB | 4 GB (limitati dalle specifiche del formato) | 20000 × 20000 pixel |
 
 ## Gestire le proprietà dei tag colore {#manage-color-tagging-properties}
 
@@ -42,15 +42,15 @@ Per gestire le proprietà dei tag colore per le immagini:
 
 1. Specificate un formato di visualizzazione per il tag colore in **[!UICONTROL Formato di visualizzazione]** campo. Le opzioni possibili includono il nome del colore, il RGB o il formato HEX.
 
-1. Specifica il numero di colori da assegnare alle immagini nel **[!UICONTROL Limite]** campo. Questi colori vengono visualizzati quando si visualizzano le proprietà di un&#39;immagine.  In questo campo puoi definire un numero compreso tra 1 e 40. Il valore predefinito per questo campo è dieci colori.
+1. Specifica il numero di colori a cui assegnare tag per le immagini nella **[!UICONTROL Limite]** campo. Questi colori vengono visualizzati quando si visualizzano le proprietà di un&#39;immagine. In questo campo puoi definire un numero compreso tra 1 e 40. Il valore predefinito per questo campo è dieci colori.
 
 1. Specifica la percentuale minima di copertura cromatica per includere un tag colore nei risultati di ricerca in **[!UICONTROL Soglia copertura/dominanza (%)]** campo. Ad esempio, se la copertura del colore Rosso in un&#39;immagine è il 10% e in questo campo si definisce il 9%, l&#39;immagine viene inclusa quando si cercano immagini con il colore Rosso. Tuttavia, se la copertura del colore rosso in un&#39;immagine è pari al 10% e si definisce l&#39;11% in questo campo, l&#39;immagine non viene inclusa quando si cercano immagini con il colore rosso.
 
-   In questo campo è possibile specificare un numero qualsiasi compreso tra cinque e cento. Il valore predefinito è 11.
+   In questo campo è possibile specificare un numero qualsiasi compreso tra cinque e 100. Il valore predefinito è 11.
 
    >[!NOTE]
    >
-   >L’Adobe consiglia di utilizzare un valore vicino al valore predefinito in questo campo. L&#39;impostazione di un numero elevato di valori per questo campo (ad esempio, maggiore di 25) può restituire pochi risultati di ricerca. Allo stesso modo, l’impostazione di un valore con numero basso (ad esempio, inferiore a 6) può restituire troppi risultati di ricerca, il che potrebbe non essere utile.
+   >L’Adobe consiglia di utilizzare un valore vicino al valore predefinito in questo campo. L&#39;impostazione di un valore numerico elevato per questo campo (ad esempio maggiore di 25) può restituire pochi risultati di ricerca. Allo stesso modo, l’impostazione di un valore con numero basso (ad esempio, inferiore a 6) può restituire troppi risultati di ricerca, il che potrebbe non essere utile.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
@@ -84,7 +84,7 @@ Gli schemi di metadati contengono campi specifici per informazioni specifiche da
 
 >[!NOTE]
 >
->Il campo Tag colore avanzato è disponibile nello schema metadati predefinito. Se utilizzi uno schema di metadati personalizzato, configura lo schema per aggiungere il campo tag smart color.
+>Il campo Tag colore avanzato è disponibile nello schema metadati predefinito. Se utilizzi uno schema di metadati personalizzato, configura lo schema per aggiungere un campo tag di colore avanzato.
 
 Per aggiungere il componente Tag colore avanzati all’editor modulo schema metadati:
 
@@ -104,21 +104,21 @@ Per aggiungere il componente Tag colore avanzati all’editor modulo schema meta
 
 ## Tag colore per le immagini esistenti in DAM {#color-tags-existing-images}
 
-Alle immagini già esistenti in DAM non vengono assegnati automaticamente tag colore. È necessario [!UICONTROL Rielabora risorse] manualmente per generare i tag colore.
+Le immagini esistenti in DAM non vengono taggate automaticamente con colori. [!UICONTROL Rielabora risorse] manualmente per generare i tag colore.
 
-Per colorare le immagini di tag o le cartelle (comprese le sottocartelle) di risorse già presenti nell’archivio delle risorse, effettua le seguenti operazioni:
+Per applicare un colore alle immagini di tag o alle cartelle (comprese le sottocartelle) delle risorse presenti nell’archivio delle risorse, effettua le seguenti operazioni:
 
 1. Seleziona la [!DNL Adobe Experience Manager] e quindi selezionare le risorse dal [!UICONTROL Navigazione] pagina.
 
-1. Seleziona [!UICONTROL File] per visualizzare l’interfaccia Assets.
+1. Seleziona [!UICONTROL File].
 
-1. Passare alla cartella alla quale si desidera applicare i tag colore.
+1. Nell’interfaccia di Assets, individua la cartella a cui desideri applicare i tag colore.
 
 1. Seleziona l’intera cartella o immagini specifiche.
 
 1. Seleziona ![Icona Rielabora risorse](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Rielabora risorse] e seleziona la [!UICONTROL Processo completo] opzione.
 
-Al termine del processo, passare alla [!UICONTROL Proprietà] di qualsiasi immagine all’interno della cartella. I tag aggiunti automaticamente sono visualizzati in [!UICONTROL Tag colore avanzato] sezione in [!UICONTROL Base] scheda.
+Al termine del processo, passare alla [!UICONTROL Proprietà] di qualsiasi immagine all’interno della cartella. I tag aggiunti automaticamente sono visualizzati nella [!UICONTROL Tag colore avanzato] sezione nella sezione [!UICONTROL Base] scheda.
 
 
 ## Visualizza tag colore avanzati per le immagini {#view-color-tags}
@@ -133,11 +133,11 @@ Per visualizzare i tag di colore avanzati per le immagini:
 
    ![Visualizza tag colore](assets/view-color-tags.png)
 
-   Passa il mouse su un tag a colori per visualizzare **[!UICONTROL Soglia copertura/dominanza (%)]** di un colore in un&#39;immagine.
+   Passa il mouse su un tag colore per visualizzare **[!UICONTROL Soglia copertura/dominanza (%)]** di un colore in un&#39;immagine.
 
 ## Configurare il predicato colore AEM Assets {#configure-search-predicate}
 
-Puoi configurare il filtro di ricerca per le immagini. Puoi quindi basare i criteri di ricerca su un colore specifico per filtrare i risultati.
+Puoi configurare un filtro di ricerca per le immagini. Puoi quindi basare i criteri di ricerca su un colore specifico per filtrare i risultati.
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ Per configurare il filtro di ricerca:
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-Dopo aver configurato tutte le proprietà di assegnazione tag colore e [configurazione del predicato colore di Assets](#search-images-based-on-colors), è possibile cercare le immagini in base a un colore come filtro.
+Dopo aver configurato tutte le proprietà di assegnazione tag colore e [configurazione del predicato colore delle risorse](#search-images-based-on-colors), è possibile cercare le immagini in base a un colore come filtro.
 
 Per cercare le immagini in base ai colori:
 
@@ -180,7 +180,7 @@ Per cercare le immagini in base ai colori:
 
    Puoi filtrare le immagini in base alla selezione di un colore. Le immagini con il colore selezionato come uno dei tag di colore avanzato e sopra [Soglia copertura/dominanza (%)](#manage-color-tagging-settings) nel riquadro di destra.
 
-1. Fai clic su x nella barra di ricerca per cancellare il filtro.
+1. Per cancellare il filtro, fai clic su X nella barra di ricerca.
 
 **Consulta anche**
 

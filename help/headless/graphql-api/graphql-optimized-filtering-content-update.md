@@ -2,20 +2,20 @@
 title: Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato
 description: Scopri come aggiornare i frammenti di contenuto per il filtro GraphQL ottimizzato in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
-workflow-type: ht
-source-wordcount: '909'
-ht-degree: 100%
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 60%
 
 ---
 
 # Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato {#updating-content-fragments-for-optimized-graphql-filtering}
 
-Per ottimizzare le prestazioni dei filtri GraphQL, è necessario eseguire una procedura per aggiornare i frammenti di contenuto.
+Per ottimizzare le prestazioni dei filtri di GraphQL, esegui una procedura per aggiornare i frammenti di contenuto.
 
 >[!NOTE]
 >
->Dopo aver aggiornato i frammenti di contenuto, puoi seguire i consigli per [l’ottimizzazione delle query GraphQL](/help/headless/graphql-api/graphql-optimization.md).
+>Dopo aver aggiornato i frammenti di contenuto, puoi seguire i consigli per [Ottimizzazione delle query GraphQL](/help/headless/graphql-api/graphql-optimization.md).
 
 
 ## Prerequisiti {#prerequisites}
@@ -26,11 +26,9 @@ Questa attività presenta i seguenti prerequisiti:
 
 1. Assicurati che l’utente che esegue l’attività disponga delle autorizzazioni necessarie:
 
-   * è richiesto come minimo il ruolo di `Deployment Manager` in Cloud Manager.
+   * come minimo, `Deployment Manager` ruolo in Cloud Manager è obbligatorio.
 
 ## Aggiornamento dei frammenti di contenuto {#updating-content-fragments}
-
-Per eseguire la procedura, segui le indicazioni descritte di seguito.
 
 1. Abilita l’aggiornamento impostando le seguenti variabili per l’istanza tramite l’interfaccia utente di Cloud Manager:
 
@@ -69,7 +67,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
       <td>Tutti i bundle  </td>
       <td> </td>
       <td>Variabile </td>
-      <td>Applica (!=0) una nuova migrazione dei frammenti di contenuto.<br>Se si imposta questo contrassegno su 0, verrà eseguita una migrazione incrementale dei CF. Ciò significa che se il processo viene terminato per qualsiasi motivo, la successiva esecuzione del processo inizierà la migrazione dal punto in cui è stato terminato. Tieni presente che si consiglia di applicare la prima migrazione (valore=1). </td>
+      <td>Applica (!=0) migrazione di frammenti di contenuto.<br>Se si imposta questo flag su 0, viene eseguita una migrazione incrementale dei CF. Ciò significa che, se il processo viene terminato per qualsiasi motivo, la successiva esecuzione del processo inizia la migrazione dal punto in cui è stato terminato. Si consiglia di eseguire la prima migrazione per l’applicazione (valore=1). </td>
      </tr>
      <tr>
       <td>3</td>
@@ -79,7 +77,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
       <td>Tutti i bundle  </td>
       <td> </td>
       <td>Variabile </td>
-      <td>Dimensione del batch per il salvataggio del numero di frammenti di contenuto dopo la migrazione.<br>Questo è relativo a quanti frammenti di contenuto verranno salvati nell’archivio in un batch e può servire a ottimizzare il numero di scritture nell’archivio. </td>
+      <td>Dimensione del batch per il salvataggio del numero di frammenti di contenuto dopo la migrazione.<br>Questo è rilevante per il numero di CF salvati nell’archivio in un batch e può essere utilizzato per ottimizzare il numero di scritture nell’archivio. </td>
      </tr>
      <tr>
       <td>4</td>
@@ -99,7 +97,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
       <td>Tutti i bundle  </td>
       <td> </td>
       <td>Variabile </td>
-      <td>Intervallo (in secondi) per l’elaborazione dei frammenti di contenuto rimanenti fino al limite successivo<br>Questo intervallo viene anche considerato come tempo di attesa prima di avviare il processo, nonché come ritardo tra l’elaborazione di ogni successivo numero di frammenti di contenuto CF_MIGRATION_LIMIT.<br>(*)</td>
+      <td>Intervallo (secondi) per elaborare i frammenti di contenuto rimanenti fino al limite successivo<br>Questo intervallo viene anche considerato come un tempo di attesa prima di avviare il processo e un ritardo tra l'elaborazione di ogni successivo numero di CF CF CF_MIGRATION_LIMIT.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -118,7 +116,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
    >* Tempo approssimativo necessario per completare la migrazione = 60 + (20.000/1000 * 60) = 1260 sec = 21 minuti
    >  I “60” secondi aggiuntivi aggiunti all’avvio sono dovuti al ritardo iniziale all’avvio del processo.
    >
-   >Tieni anche presente che questo è solo il tempo *minimo* necessario per completare il processo e non include il tempo di I/O. Il tempo effettivamente impiegato potrebbe essere notevolmente superiore a questa stima.
+   >Questo è solo il *minimo* il tempo necessario per completare il processo e non include il tempo di I/O. Il tempo effettivamente impiegato potrebbe essere superiore a questa stima.
 
 1. Monitora l’avanzamento e il completamento dell’aggiornamento.
 
@@ -146,7 +144,7 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   I clienti che hanno abilitato l’accesso ai registri dell’ambiente utilizzando Splunk possono utilizzare la query di esempio riportata di seguito per monitorare il processo di aggiornamento. Per informazioni su come abilitare la registrazione Splunk, consulta la pagina [Debug degli ambienti di produzione e staging](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
+   I clienti che hanno abilitato l’accesso ai registri dell’ambiente utilizzando Splunk possono utilizzare la query di esempio riportata di seguito per monitorare il processo di aggiornamento. Per informazioni dettagliate sull’abilitazione della registrazione Splunk, consulta [Debug di produzione e staging](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -220,13 +218,13 @@ Per eseguire la procedura, segui le indicazioni descritte di seguito.
 
    >[!NOTE]
    >
-   >Ciò è particolarmente importante per il livello di pubblicazione, in quanto l’aggiornamento del contenuto viene eseguito solo sulla pubblicazione in gold e su questa si basano tutti i normali pod di pubblicazione quando si ricicla un pod.
+   >Questo è importante per il livello di pubblicazione, in quanto l’aggiornamento del contenuto viene eseguito solo su golden-publish e, quando si ricicla il pod, tutti i normali pod di pubblicazione si basano su golden-publish.
 
 1. Verificare il completamento della procedura di aggiornamento.
 
    Puoi verificare il completamento corretto dell’aggiornamento utilizzando il browser dell’archivio nella Console per sviluppatori di Cloud Manager dove puoi controllare i dati dei frammenti di contenuto.
 
-   * Finché la prima migrazione non è completata, la proprietà `cfGlobalVersion` non esiste.
+   * Prima di completare la prima migrazione, `cfGlobalVersion` la proprietà non esiste.
 Pertanto, la presenza di questa proprietà sul nodo JCR `/content/dam` con un valore di `1` conferma il completamento della migrazione.
 
    * Puoi anche controllare le seguenti proprietà sui singoli frammenti di contenuto:
@@ -236,14 +234,14 @@ Pertanto, la presenza di questa proprietà sul nodo JCR `/content/dam` con un va
 
      >[!NOTE]
      >
-     >La procedura aggiorna i frammenti di contenuto nelle istanze di authoring e pubblicazione.
+     >La procedura aggiorna i frammenti di contenuto nelle istanze Author e Publish.
      >
-     >Pertanto, si consiglia di eseguire la verifica tramite il browser dell’archivio per *almeno* un’istanza di authoring *e* una di pubblicazione.
+     >Pertanto, Adobe consiglia di eseguire la verifica tramite il browser dell’archivio per *almeno* un autore *e* un’istanza Publish.
 
 ## Limitazioni {#limitations}
 
 Tieni presente le seguenti limitazioni:
 
-* L’ottimizzazione delle prestazioni dei filtri di GraphQL sarà possibile solo dopo un aggiornamento completo di tutti i frammenti di contenuto (indicato dalla presenza della proprietà `cfGlobalVersion` per il nodo JCR `/content/dam`).
+* L’ottimizzazione delle prestazioni dei filtri di GraphQL è possibile solo dopo un aggiornamento completo di tutti i frammenti di contenuto (indicato dalla presenza di `cfGlobalVersion` proprietà per il nodo JCR `/content/dam`)
 
-* Se i frammenti di contenuto vengono importati da un pacchetto di contenuti (utilizzando `crx/de`) dopo l’esecuzione della procedura di aggiornamento, tali frammenti di contenuto non vengono considerati nei risultati della query GraphQL, fino a quando la procedura di aggiornamento non viene eseguita nuovamente.
+* Se i frammenti di contenuto vengono importati da un pacchetto di contenuti (utilizzando `crx/de`) dopo l’esecuzione della procedura di aggiornamento, tali frammenti di contenuto non vengono considerati nei risultati della query GraphQL fino a quando la procedura di aggiornamento non viene eseguita nuovamente.
