@@ -1,9 +1,9 @@
 ---
 title: Come si aggiunge il supporto per nuove lingue a un modulo adattivo basato su componenti core?
 description: Scopri come aggiungere nuove lingue per un modulo adattivo.
-source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
+source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1484'
 ht-degree: 1%
 
 ---
@@ -16,12 +16,11 @@ ht-degree: 1%
 | Componenti di base | [Fai clic qui](supporting-new-language-localization.md) |
 | Componenti core | Questo articolo |
 
-AEM Forms fornisce supporto predefinito per le lingue inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
+AEM Forms fornisce supporto predefinito per le lingue inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR). È possibile aggiungere il supporto anche per altre lingue, come Hindi(hi_IN).
 
 ## Come viene selezionata la lingua per un modulo adattivo?
 
-
-Esistono due metodi per identificare e selezionare le impostazioni locali di un modulo adattivo al momento del rendering:
+Prima di iniziare ad aggiungere nuove impostazioni locali per Forms adattivo, è necessario comprendere come viene selezionata una impostazione locale per un modulo adattivo. Esistono due metodi per identificare e selezionare le impostazioni locali di un modulo adattivo al momento del rendering:
 
 * **Utilizzo di [lingua] Selettore nell’URL**: durante il rendering di un modulo adattivo, il sistema identifica le impostazioni locali richieste esaminando [lingua] nell’URL del modulo adattivo. L’URL segue questo formato: http:/[URL del server AEM Forms]/content/forms/af/[afName].[lingua].html?wcmmode=disabled. L&#39;uso del [lingua] consente la memorizzazione nella cache del modulo adattivo.
 
