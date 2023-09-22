@@ -1,9 +1,9 @@
 ---
 title: Come si aggiunge il supporto per nuove lingue a un modulo adattivo basato su componenti core?
 description: Scopri come aggiungere nuove lingue per un modulo adattivo.
-source-git-commit: 056aecd0ea1fd9ec1e4c05299d2c50bca161615f
+source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1449'
 ht-degree: 1%
 
 ---
@@ -20,17 +20,18 @@ AEM Forms fornisce supporto predefinito per le lingue inglese (en), spagnolo (es
 
 ## Come viene selezionata la lingua per un modulo adattivo?
 
+
 Esistono due metodi per identificare e selezionare le impostazioni locali di un modulo adattivo al momento del rendering:
 
 * **Utilizzo di [lingua] Selettore nell’URL**: durante il rendering di un modulo adattivo, il sistema identifica le impostazioni locali richieste esaminando [lingua] nell’URL del modulo adattivo. L’URL segue questo formato: http:/[URL del server AEM Forms]/content/forms/af/[afName].[lingua].html?wcmmode=disabled. L&#39;uso del [lingua] consente la memorizzazione nella cache del modulo adattivo.
 
 * Recupero dei parametri nell&#39;ordine elencato di seguito:
 
-   * Parametro richiesta `afAcceptLang`: per ignorare le impostazioni locali del browser dell’utente, puoi trasmettere il parametro della richiesta afAcceptLang. Ad esempio, questo URL impone il rendering del modulo nelle impostazioni internazionali francesi canadesi: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **Parametro di richiesta`afAcceptLang`**: per ignorare le impostazioni locali del browser dell’utente, puoi trasmettere il parametro della richiesta afAcceptLang. Ad esempio, questo URL impone il rendering del modulo nelle impostazioni internazionali francesi canadesi: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
 
-   * Browser Locale (Accept-Language Header): il sistema considera anche le impostazioni locali del browser dell’utente, specificate nella richiesta utilizzando `Accept-Language` intestazione.
+   * **Impostazioni locali browser (intestazione Accept-Language)**: il sistema considera anche le impostazioni locali del browser dell’utente, specificate nella richiesta utilizzando `Accept-Language` intestazione.
 
-  Se non è disponibile una libreria client per le impostazioni locali richieste, il sistema controlla se esiste una libreria client per il codice della lingua. Ad esempio, se la lingua richiesta è `en_ZA` (Inglese sudafricano) e non esiste una libreria client per `en_ZA`, il modulo adattivo utilizzerà la libreria client per en (inglese), se disponibile. Se non viene trovato nessuno dei due, il modulo adattivo utilizza il dizionario per il `en` lingua.
+  Se non è disponibile una libreria client per le impostazioni locali richieste, il sistema controlla se esiste una libreria client per il codice della lingua. Ad esempio, se la lingua richiesta è `en_ZA` (Inglese sudafricano) e non esiste una libreria client per `en_ZA`, il modulo adattivo utilizza la libreria client per en (inglese), se disponibile. Se non viene trovato nessuno dei due, il modulo adattivo utilizza il dizionario per il `en` lingua.
 
   Una volta identificate le impostazioni locali, il modulo adattivo seleziona il dizionario corrispondente specifico per il modulo. Se non viene trovato il dizionario per le impostazioni locali richieste, per impostazione predefinita viene utilizzato nella lingua in cui è stato creato il modulo adattivo.
 
@@ -42,7 +43,8 @@ Esistono due metodi per identificare e selezionare le impostazioni locali di un 
 Prima di iniziare ad aggiungere il supporto per una nuova lingua,
 
 * Installa un editor di testo normale (IDE) per semplificarne la modifica. Gli esempi in questo documento si basano su Microsoft® Visual Studio Code.
-* Clona l’archivio dei Componenti core Adattivi di Forms. Per clonare l’archivio:
+* Installare una versione di [Git](https://git-scm.com), se non disponibile sul computer.
+* Clona il [Componenti core Forms adattivi](https://github.com/adobe/aem-core-forms-components) archivio. Per clonare l’archivio:
    1. Aprire la riga di comando o la finestra del terminale e passare a una posizione in cui archiviare l&#39;archivio. Esempio `/adaptive-forms-core-components`
    1. Esegui il comando seguente per clonare l’archivio:
 
@@ -50,7 +52,7 @@ Prima di iniziare ad aggiungere il supporto per una nuova lingua,
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  L&#39;archivio include una libreria client necessaria per aggiungere una lingua.
+  L&#39;archivio include una libreria client necessaria per aggiungere una lingua. Nel resto dell’articolo, la cartella viene indicata come, [Archivio dei componenti core di Forms adattivi].
 
 
 ## Aggiungi una lingua {#add-localization-support-for-non-supported-locales}
@@ -59,9 +61,9 @@ Per aggiungere il supporto per una nuova lingua, eseguire la procedura seguente:
 
 ![Aggiungere una lingua a un repository](add-a-locale-adaptive-form-core-components.png)
 
-### Clonare l’archivio Git as a Cloud Service per AEM {#clone-the-repository}
+### 1. Clonare l’archivio Git as a Cloud Service per AEM {#clone-the-repository}
 
-1. Apri la riga di comando e scegli una directory in cui memorizzare l’archivio, ad esempio `/cloud-service-repository/`.
+1. Apri la riga di comando e scegli una directory in cui memorizzare l’archivio as a Cloud Service di AEM Forms, ad esempio `/cloud-service-repository/`.
 
 1. Esegui il comando seguente per clonare l’archivio:
 
@@ -74,7 +76,7 @@ Per aggiungere il supporto per una nuova lingua, eseguire la procedura seguente:
    Dopo aver completato correttamente il comando, una cartella `<my-program>` viene creato. Contiene il contenuto clonato dall’archivio Git. Nel resto dell’articolo, la cartella viene indicata come, `[AEM Forms as a Cloud Service Git repository]`.
 
 
-### Aggiungere le nuove impostazioni locali al servizio di localizzazione della Guida TV {#add-a-locale-to-the-guide-localization-service}
+### 2. Aggiungere le nuove impostazioni locali al servizio di localizzazione della Guida TV {#add-a-locale-to-the-guide-localization-service}
 
 1. Apri la cartella dell’archivio, clonata nella sezione precedente, in un editor di testo normale.
 1. Accedi a `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` cartella. È possibile trovare `<appid>` nel `archetype.properties` file del progetto.
@@ -85,17 +87,17 @@ Per aggiungere il supporto per una nuova lingua, eseguire la procedura seguente:
 1. Aggiungi il [codice locale della lingua](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) che stai cercando di aggiungere, ad esempio, aggiungi &quot;hi&quot; per hindi.
 1. Salva e chiudi il file 
 
-### Creare una libreria client per aggiungere una lingua
+### 3. Creare una libreria client per aggiungere una lingua
 
-AEM Forms fornisce una libreria client di esempio per aiutarti ad aggiungere facilmente nuove lingue. Puoi scaricare e aggiungere `clientlib-it-custom-locale` libreria client dall’archivio dei componenti core adattivi Forms su GitHub all’archivio as a Cloud Service Forms. Per aggiungere la libreria client, effettua le seguenti operazioni:
+AEM Forms fornisce una libreria client di esempio per aiutarti ad aggiungere facilmente nuove lingue. Puoi scaricare e aggiungere `clientlib-it-custom-locale` libreria client da [Archivio dei componenti core di Forms adattivi] su GitHub nell’archivio as a Cloud Service di Forms. Per aggiungere la libreria client, effettua le seguenti operazioni:
 
-1. Apri l’archivio dei componenti core Adaptive Forms nell’editor di testo normale. Se non hai clonato l’archivio, consulta [Prerequisiti](#prerequistes) per istruzioni su come clonare l’archivio.
+1. Apri il [Archivio dei componenti core di Forms adattivi] nell’editor di testo normale. Se non hai clonato l’archivio, consulta [Prerequisiti](#prerequistes) per istruzioni su come clonare l’archivio.
 1. Accedi a `/aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs` directory.
 1. Copia il `clientlib-it-custom-locale` directory.
 1. Accedi a `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` e incolla `clientlib-it-custom-locale` directory.
 
 
-### Creare un file specifico per le impostazioni internazionali {#locale-specific-file}
+### 4. Creare un file specifico per le impostazioni internazionali {#locale-specific-file}
 
 1. Accedi a `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Individua il [File .json locale inglese su GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), che contiene il set più recente di stringhe predefinite incluse nel prodotto.
@@ -105,7 +107,7 @@ AEM Forms fornisce una libreria client di esempio per aiutarti ad aggiungere fac
 1. Salvare e chiudere il file.
 
 
-### Aggiunta del supporto delle impostazioni locali al dizionario {#add-locale-support-for-the-dictionary}
+### 5. Aggiungere il supporto delle impostazioni internazionali al dizionario {#add-locale-support-for-the-dictionary}
 
 Esegui questo passaggio solo se `<locale>` stai aggiungendo non è tra `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -144,9 +146,9 @@ Esegui questo passaggio solo se `<locale>` stai aggiungendo non è tra `en`, `de
 
    ![Aggiungi le cartelle appena create in `filter.xml` in `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### Eseguire il commit delle modifiche e distribuire la pipeline {#commit-changes-in-repo-deploy-pipeline}
+### 6. Eseguire il commit delle modifiche e distribuire la pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Apporta le modifiche all’archivio GIT dopo l’aggiunta di un nuovo supporto delle impostazioni internazionali. Distribuisci il codice utilizzando la pipeline full stack. Scopri [come impostare una pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) per aggiungere nuovo supporto per le impostazioni internazionali.
+Apporta le modifiche all’archivio GIT dopo l’aggiunta della nuova lingua. Distribuisci il codice utilizzando la pipeline full stack. Scopri [come impostare una pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) per aggiungere nuovo supporto per le impostazioni internazionali.
 
 Una volta completata l’esecuzione della pipeline, la lingua appena aggiunta è pronta per l’uso.
 
