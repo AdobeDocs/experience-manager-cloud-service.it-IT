@@ -1,10 +1,10 @@
 ---
 title: Come si aggiunge il supporto per nuove lingue in un modulo adattivo basato su componenti core?
 description: Scopri come aggiungere nuove lingue per un modulo adattivo.
-source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
+source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 1%
+source-wordcount: '1339'
+ht-degree: 2%
 
 ---
 
@@ -20,17 +20,17 @@ AEM Forms fornisce supporto predefinito per le lingue inglese (en), spagnolo (es
 
 ## Come viene selezionata la lingua per un modulo adattivo?
 
-Prima di iniziare ad aggiungere nuove impostazioni locali per Forms adattivo, è necessario comprendere come viene selezionata una impostazione locale per un modulo adattivo. Esistono due metodi per identificare e selezionare le impostazioni locali di un modulo adattivo al momento del rendering:
+Prima di iniziare ad aggiungere una lingua per Forms adattivo, è necessario comprendere come viene selezionata una lingua per un modulo adattivo. Esistono due metodi per identificare e selezionare le impostazioni locali di un modulo adattivo al momento del rendering:
 
-* **Utilizzo di [lingua] Selettore nell’URL**: durante il rendering di un modulo adattivo, il sistema identifica le impostazioni locali richieste esaminando [lingua] nell’URL del modulo adattivo. L’URL segue questo formato: http:/[URL del server AEM Forms]/content/forms/af/[afName].[lingua].html?wcmmode=disabled. L&#39;uso del [lingua] consente la memorizzazione nella cache del modulo adattivo.
+* **Utilizzo di `locale` Selettore nell’URL**: durante il rendering di un modulo adattivo, il sistema identifica le impostazioni locali richieste esaminando [lingua] nell’URL del modulo adattivo. L’URL segue questo formato: http:/[URL del server AEM Forms]/content/forms/af/[afName].[lingua].html?wcmmode=disabled. L&#39;uso del [lingua] consente la memorizzazione nella cache del modulo adattivo. Ad esempio, l’URL `www.example.com/content/forms/af/contact-us.hi.html?wcmmmode=disabled` esegue il rendering del modulo in lingua hindi.
 
 * Recupero dei parametri nell&#39;ordine elencato di seguito:
 
-   * **Parametro di richiesta`afAcceptLang`**: per ignorare le impostazioni locali del browser dell’utente, puoi trasmettere il parametro della richiesta afAcceptLang. Ad esempio, questo URL impone il rendering del modulo nelle impostazioni internazionali francesi canadesi: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **Utilizzo di `afAcceptLang`parametro di richiesta**: per ignorare le impostazioni locali del browser dell’utente, puoi trasmettere il parametro della richiesta afAcceptLang. Ad esempio, il `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr` L’URL impone ad AEM Forms Server di eseguire il rendering del modulo nelle impostazioni internazionali francesi canadesi.
 
-   * **Impostazioni locali browser (intestazione Accept-Language)**: il sistema considera anche le impostazioni locali del browser dell’utente, specificate nella richiesta utilizzando `Accept-Language` intestazione.
+   * **Utilizzo delle impostazioni locali del browser (Intestazione Accept-Language)**: il sistema considera anche le impostazioni locali del browser dell’utente, specificate nella richiesta utilizzando `Accept-Language` intestazione.
 
-  Se non è disponibile una libreria client per le impostazioni locali richieste, il sistema controlla se esiste una libreria client per il codice della lingua. Ad esempio, se la lingua richiesta è `en_ZA` (Inglese sudafricano) e non esiste una libreria client per `en_ZA`, il modulo adattivo utilizza la libreria client per en (inglese), se disponibile. Se non viene trovato nessuno dei due, il modulo adattivo utilizza il dizionario per il `en` lingua.
+  Se non è disponibile una libreria client (il processo di creazione e utilizzo della libreria è descritto più avanti in questo articolo) per le impostazioni locali richieste, il sistema controlla se esiste una libreria client per il codice della lingua nelle impostazioni locali. Ad esempio, se la lingua richiesta è `en_ZA` (Inglese sudafricano) e non esiste una libreria client per `en_ZA`, il modulo adattivo utilizza la libreria client per en (inglese), se disponibile. Se non viene trovato nessuno dei due, il modulo adattivo utilizza il dizionario per il `en` lingua.
 
   Una volta identificate le impostazioni locali, il modulo adattivo seleziona il dizionario corrispondente specifico per il modulo. Se non viene trovato il dizionario per le impostazioni locali richieste, per impostazione predefinita viene utilizzato nella lingua in cui è stato creato il modulo adattivo.
 
@@ -39,19 +39,21 @@ Prima di iniziare ad aggiungere nuove impostazioni locali per Forms adattivo, è
 
 ## Prerequisiti {#prerequistes}
 
-Prima di iniziare ad aggiungere il supporto per una nuova lingua,
+Prima di iniziare ad aggiungere una lingua:
 
-* Installa un editor di testo normale (IDE) per semplificarne la modifica. Gli esempi in questo documento si basano su Microsoft® Visual Studio Code.
+* Installa un editor di testo normale (IDE) per semplificarne la modifica. Gli esempi contenuti in questo documento si basano su [Codice Microsoft® Visual Studio](https://code.visualstudio.com/download).
 * Installare una versione di [Git](https://git-scm.com), se non disponibile sul computer.
 * Clona il [Componenti core Forms adattivi](https://github.com/adobe/aem-core-forms-components) archivio. Per clonare l’archivio:
-   1. Aprire la riga di comando o la finestra del terminale e passare a una posizione in cui archiviare l&#39;archivio. Esempio `/adaptive-forms-core-components`
+   1. Aprire la riga di comando o la finestra del terminale e passare a una posizione in cui archiviare l&#39;archivio. Ad esempio `/adaptive-forms-core-components`
    1. Esegui il comando seguente per clonare l’archivio:
 
       ```SHELL
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  L&#39;archivio include una libreria client necessaria per aggiungere una lingua. Nel resto dell’articolo, la cartella viene indicata come, [Archivio dei componenti core di Forms adattivi].
+  L&#39;archivio include una libreria client necessaria per aggiungere una lingua.
+
+  Una volta eseguito correttamente il comando, l’archivio viene clonato in `aem-core-forms-components` nel computer. Nel resto dell’articolo, la cartella viene indicata come, [Archivio dei componenti core di Forms adattivi].
 
 
 ## Aggiungi una lingua {#add-localization-support-for-non-supported-locales}
@@ -169,7 +171,13 @@ Per visualizzare in anteprima un adattivo con le nuove impostazioni locali aggiu
 * L’Adobe consiglia di creare un progetto di traduzione dopo la creazione di un modulo adattivo.
 
 * Quando vengono aggiunti nuovi campi in un modulo adattivo esistente:
-   * **Per la traduzione automatica**: ricrea il dizionario ed esegui il progetto di traduzione. I campi aggiunti a un modulo adattivo dopo la creazione di un progetto di traduzione rimangono non tradotti.
-   * **Per traduzione umana**: esporta il dizionario tramite `[server:port]/libs/cq/i18n/gui/translator.html`. Aggiorna il dizionario per i campi appena aggiunti e caricalo.
+   * **Per la traduzione automatica**: ricrea il dizionario e [esegui il progetto di traduzione](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). I campi aggiunti a un modulo adattivo dopo la creazione di un progetto di traduzione rimangono non tradotti.
+   * **Per traduzione umana**: esporta il dizionario utilizzando l’interfaccia utente di `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Aggiorna il dizionario per i campi appena aggiunti e caricalo.
+
+## Vedi altro
+
+* [Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo basato su componenti core](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Genera documento di record per Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+* [Aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 
