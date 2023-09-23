@@ -1,9 +1,9 @@
 ---
-title: Come si aggiunge il supporto per nuove lingue a un modulo adattivo basato su componenti core?
+title: Come si aggiunge il supporto per nuove lingue in un modulo adattivo basato su componenti core?
 description: Scopri come aggiungere nuove lingue per un modulo adattivo.
-source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
+source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1254'
 ht-degree: 1%
 
 ---
@@ -163,25 +163,6 @@ Per visualizzare in anteprima un adattivo con le nuove impostazioni locali aggiu
 1. Seleziona un modulo adattivo e fai clic su **Anteprima come HTML**.
 1. Aggiungi `&afAcceptLang=<locale-name>` nell’URL di un modulo adattivo.
 1. Aggiorna la pagina e viene eseguito il rendering del modulo adattivo in una lingua specificata.
-
-Esistono due metodi per identificare le impostazioni locali di un modulo adattivo. Quando viene eseguito il rendering di un modulo adattivo, questo identifica le impostazioni locali richieste tramite:
-
-* Recupero di `[local]` nell’URL del modulo adattivo. Il formato dell’URL è `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Utilizzo di `[local]` consente di memorizzare in cache un modulo adattivo.
-
-* Recupero dei seguenti parametri nell&#39;ordine elencato:
-
-   * Parametro di richiesta `afAcceptLang`
-Per ignorare le impostazioni locali del browser per gli utenti, puoi trasmettere il `afAcceptLang` per forzare le impostazioni locali. Ad esempio, l’URL seguente forza il rendering del modulo nelle impostazioni locali canadesi-francesi:
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
-
-   * Impostazioni locali del browser impostate per l&#39;utente, specificate nella richiesta utilizzando `Accept-Language` intestazione.
-
-Se non esiste una libreria client per le impostazioni locali richieste, verifica la presenza di una libreria client per il codice della lingua presente nelle impostazioni locali. Ad esempio, se la lingua richiesta è `en_ZA` (inglese sudafricano) e la libreria client per `en_ZA` non esiste, il modulo adattivo utilizza la libreria client per `en` (Inglese), se esiste. Tuttavia, se non esiste nessuno di questi, il modulo adattivo utilizza il dizionario per `en` lingua.
-
-Una volta identificate le impostazioni locali, il modulo adattivo seleziona il dizionario specifico per il modulo. Se non viene trovato il dizionario specifico per il modulo per le impostazioni locali richieste, viene utilizzato il dizionario per la lingua in cui viene creato il modulo adattivo.
-
-Se non sono disponibili informazioni sulle impostazioni internazionali, il modulo adattivo viene visualizzato nella lingua originale, la lingua utilizzata durante lo sviluppo dei moduli.
-
 
 ## Procedure consigliate per il supporto della nuova localizzazione {#best-practices}
 
