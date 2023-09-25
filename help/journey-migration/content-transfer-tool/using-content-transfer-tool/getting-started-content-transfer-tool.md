@@ -2,7 +2,7 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Scopri come iniziare a utilizzare lo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7de874f607c98501052ddb715c4af98f6c5d5324
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 21%
@@ -86,7 +86,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
    >[!NOTE]
    >
-   >In Cloud Acceleration Manager è possibile creare fino a cinque set di migrazione per progetto, compresi i set scaduti.
+   >In Cloud Acceleration Manager è possibile creare fino a venti set di migrazione per progetto, compresi i set scaduti.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
@@ -114,7 +114,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 >abstract="Dopo aver creato un set di migrazione, questo deve essere popolato con il contenuto dell’istanza di origine da spostare nell’ambiente AEM as a Cloud Service. A questo scopo, è necessario installare lo strumento Content Transfer (Trasferimento contenuti) nell’istanza di origine."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=it" text="Estrazione del contenuto"
 
-Per popolare il set di migrazione creato in Cloud Acceleration Manager, devi installare la versione più recente dello strumento Content Transfer nell’istanza Adobe Experience Manager (AEM) di origine. Segui questa sezione per scoprire come popolare il set di migrazione.
+Per popolare il set di migrazione creato in Cloud Acceleration Manager, è necessario installare la versione più recente dello strumento Content Transfer (Trasferimento contenuti) nell’istanza Adobe Experience Manager (AEM) di origine. Segui questa sezione per scoprire come popolare il set di migrazione.
 
 1. Dopo aver installato la versione più recente dello strumento Content Transfer (Trasferimento contenuti) nell’istanza Adobe Experience Manager di origine, vai a **Operazioni - Migrazione dei contenuti**
 
