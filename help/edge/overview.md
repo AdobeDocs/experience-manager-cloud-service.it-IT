@@ -1,7 +1,7 @@
 ---
 title: Introduzione ai Edge Delivery Services
-description: Introduzione ai Edge Delivery Services
-source-git-commit: 22a3795340add4ae29ec690b41baef96e8fb4adc
+description: Introduzione ai Edge Delivery Services.
+source-git-commit: 6334efceb9abae560ae77c133df1a70ffb438e6a
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Il diagramma seguente illustra come modificare il contenuto in Microsoft Word (m
 
 Edge Delivery è un insieme componibile di servizi che consente un elevato grado di flessibilità nel modo in cui vengono creati i contenuti sul sito web. Come accennato in precedenza, puoi utilizzare entrambi [Authoring AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) e [authoring basato su documenti](https://www.hlx.live/docs/authoring).
 
-Ad esempio, puoi utilizzare il contenuto direttamente da Microsoft Word o da Goggle Docs. Ciò significa che i documenti provenienti da tali origini possono diventare pagine del sito Web. Inoltre, titoli, elenchi, immagini ed elementi font possono essere trasferiti dalla sorgente iniziale al sito web. I nuovi contenuti verranno aggiunti immediatamente senza un processo di ricostruzione.
+È ad esempio possibile utilizzare il contenuto direttamente dai documenti di Microsoft Word o Google. Ciò significa che i documenti provenienti da tali origini possono diventare pagine del sito Web. Inoltre, titoli, elenchi, immagini ed elementi font possono essere trasferiti dalla sorgente iniziale al sito web. I nuovi contenuti verranno aggiunti immediatamente senza un processo di ricostruzione.
 
 Edge Delivery sfrutta GitHub per consentire ai clienti di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, puoi scrivere contenuti nei documenti di Google o in Microsoft Word e le funzionalità del sito possono essere sviluppate utilizzando CSS e JavaScript in GitHub. Quando sei pronto, puoi utilizzare l’estensione del browser del Sidekick per visualizzare in anteprima e pubblicare gli aggiornamenti dei contenuti.
 
