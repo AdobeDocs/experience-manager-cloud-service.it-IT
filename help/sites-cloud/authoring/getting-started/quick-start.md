@@ -2,12 +2,13 @@
 title: Guida rapida all’authoring delle pagine
 description: Guida rapida di alto livello per iniziare a creare i contenuti di una pagina
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 98%
 
 ---
+
 
 # Guida rapida all’authoring delle pagine {#quick-guide-to-authoring-pages}
 
@@ -20,6 +21,8 @@ Per maggiori dettagli sull’authoring con AEM consulta:
 
 * [Concetti di authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+
+{{edge-delivery-authoring}}
 
 ## Alcuni suggerimenti rapidi {#a-few-quick-hints}
 

@@ -2,12 +2,13 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile aggiornarla modificandone i contenuti
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 97%
 
 ---
+
 
 # Modifica del contenuto di una pagina{#editing-page-content}
 
@@ -31,6 +32,8 @@ Per aggiungere i contenuti si trascinano sulla pagina specifici [componenti](/he
 >[!TIP]
 >
 >In modalità **Modifica**, i collegamenti presenti nel contenuto sono visibili, ma **non accessibili**. Utilizza la modalità [Anteprima](#previewing-pages) se desideri navigare utilizzando i collegamenti presenti nel tuo contenuto.
+
+{{edge-delivery-authoring}}
 
 ## Barra degli strumenti della pagina {#page-toolbar}
 

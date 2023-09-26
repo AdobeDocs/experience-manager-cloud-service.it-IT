@@ -2,12 +2,13 @@
 title: Concetti relativi all’authoring
 description: Scopri i concetti di authoring in AEM utilizzando gli ambienti di authoring, anteprima e pubblicazione.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 96%
 
 ---
+
 
 # Concetti relativi all’authoring {#authoring-concepts}
 
@@ -26,6 +27,8 @@ L’ambiente di authoring fornisce le funzioni necessarie per creare, aggiornare
 ![Diagramma relativo a authoring, pubblicazione e dispatcher](/help/sites-cloud/authoring/assets/author-publish.png)
 
 Nell’ambiente di authoring è possibile accedere alle funzionalità di AEM tramite l’interfaccia utente di authoring di AEM. Nell’ambiente di pubblicazione vengono invece progettati l’aspetto e il comportamento dell’interfaccia presentata agli utenti.
+
+{{edge-delivery-authoring}}
 
 ## Ambiente di authoring {#author-environment}
 

@@ -2,12 +2,13 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e il suo utilizzo di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 98%
 
 ---
+
 
 # Operazioni di base {#basic-handling}
 
@@ -17,6 +18,8 @@ Questo documento offre una panoramica delle operazioni di base nell’ambiente d
 >
 >* Alcune funzionalità non sono disponibili in tutte le console e in alcune console potrebbero essere disponibili funzionalità aggiuntive. In altre sezioni sono descritte più dettagliatamente le informazioni specifiche sulle singole console e sulle relative funzionalità.
 >* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+{{edge-delivery-authoring}}
 
 ## Interfaccia touch {#a-touch-enabled-ui}
 
