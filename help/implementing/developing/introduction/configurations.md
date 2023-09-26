@@ -1,17 +1,17 @@
 ---
 title: Configurazioni e browser di configurazione
-description: Scopri le configurazioni dell’AEM e come gestiscono le impostazioni dell’area di lavoro nell’AEM.
+description: Scopri le configurazioni di Adobe Experience Manager (AEM) e come gestiscono le impostazioni dell’area di lavoro nell’AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1493'
 ht-degree: 6%
 
 ---
 
 # Configurazioni e browser di configurazione {#configuration-browser}
 
-Le configurazioni dell’AEM servono a gestire le impostazioni nell’AEM e fungono da aree di lavoro.
+Le configurazioni di Adobe Experience Manager (AEM) servono per gestire le impostazioni nell’AEM e fungono da aree di lavoro.
 
 ## Cos&#39;è una configurazione? {#what-is-a-configuration}
 
@@ -51,8 +51,8 @@ L’amministratore può quindi associare il WKND-General a tutto il contenuto de
 
 In questo modo:
 
-* Quando un autore di contenuti crea una nuova pagina per la rivista, può scegliere tra modelli generali (WKND-General) o modelli di rivista (WKND-Magazine).
-* Quando un autore di contenuti crea una nuova pagina per un’altra parte del sito che non è la rivista, può scegliere solo tra i modelli generali (WKND-General).
+* Quando un autore di contenuti crea una pagina per la rivista, può scegliere tra modelli generali (WKND-General) o modelli di rivista (WKND-Magazine).
+* Quando un autore di contenuti crea una pagina per un’altra parte del sito che non è la rivista, può scegliere solo tra i modelli generali (WKND-General).
 
 Configurazioni simili sono possibili non solo per i modelli modificabili, ma anche per le configurazioni cloud, i segmenti ContextHub e i modelli per frammenti di contenuto.
 
@@ -62,11 +62,11 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
 
 >[!NOTE]
 >
->È possibile creare configurazioni utilizzando il Browser configurazioni solo se l’utente ha `admin` diritti. `admin` I diritti sono necessari anche per assegnare i diritti di accesso alla configurazione o per modificare in altro modo una configurazione.
+>È possibile creare configurazioni utilizzando il Browser configurazioni solo se l’utente dispone di `admin` diritti. Tali `admin` I diritti sono necessari anche per assegnare i diritti di accesso alla configurazione o per modificare in altro modo una configurazione.
 
 #### Creazione di una configurazione  {#creating-a-configuration}
 
-È molto semplice creare una nuova configurazione in AEM utilizzando Configuration Browser.
+È semplice creare una configurazione in AEM utilizzando Configuration Browser.
 
 1. Accedi a AEM as a Cloud Service e dal menu principale seleziona **Strumenti** -> **Generale** -> **Browser configurazioni**.
 1. Tocca o fai clic su **Crea**.
@@ -94,20 +94,22 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
 Se consideri le configurazioni come aree di lavoro, puoi impostare i diritti di accesso su tali configurazioni per imporre a chi può o meno accedere a tali aree di lavoro.
 
 1. Accedi a AEM as a Cloud Service e dal menu principale seleziona **Strumenti** -> **Generale** -> **Browser configurazioni**.
-1. Seleziona la configurazione da modificare, quindi tocca o fai clic su **Proprietà** nella barra degli strumenti.
-1. Seleziona le funzioni aggiuntive da aggiungere alla configurazione
+1. Seleziona la configurazione da modificare, quindi seleziona **Proprietà** nella barra degli strumenti.
+1. Seleziona le funzioni aggiuntive da aggiungere alla configurazione.
+
    >[!NOTE]
    >
    >Una volta creata la configurazione, non è possibile deselezionare una feature.
+
 1. Utilizza il **Autorizzazioni effettive** per visualizzare una matrice di ruoli e le autorizzazioni attualmente concesse alle configurazioni.
    ![Finestra Autorizzazioni effettive](assets/configuration-effective-permissions.png)
 1. Per assegnare nuove autorizzazioni, immetti il nome dell’utente o del gruppo nel **Seleziona utente o gruppo** campo in **Aggiungi nuove autorizzazioni** sezione.
    * Il  **Seleziona utente o gruppo** offre il completamento automatico in base agli utenti e ai ruoli esistenti.
 1. Selezionare l&#39;utente o il ruolo appropriato dai risultati di completamento automatico.
    * È possibile selezionare più utenti o ruoli.
-1. Controlla le opzioni di accesso di cui devono disporre gli utenti o i ruoli selezionati e fai clic su **Aggiungi**.
+1. Controlla le opzioni di accesso di uno o più utenti o ruoli selezionati e fai clic su **Aggiungi**.
    ![Aggiungere diritti di accesso a una configurazione](assets/configuration-edit.png)
-1. Ripeti i passaggi per selezionare utenti o ruoli e assegnare diritti di accesso aggiuntivi, in base alle esigenze.
+1. Ripeti i passaggi in modo da poter selezionare utenti o ruoli e assegnare diritti di accesso aggiuntivi in base alle esigenze.
 1. Tocca o fai clic su **Salva e chiudi** al termine.
 
 ## Configurazioni come sviluppatore {#configurations-developer}
@@ -121,7 +123,7 @@ Anche se il [l’amministratore e gli utenti possono considerare le configurazio
 * `/content` è la pagina principale di tutti i contenuti.
 * `/conf` è la home di tutte le configurazioni.
 
-Il contenuto fa riferimento alla relativa configurazione associata tramite un `cq:conf` proprietà. AEM esegue una ricerca in base al contenuto ed è contestuale `cq:conf` per trovare la configurazione appropriata.
+Il contenuto fa riferimento alla configurazione associata tramite un `cq:conf` proprietà. L’AEM esegue una ricerca in base al contenuto e al relativo contesto `cq:conf` per trovare la configurazione appropriata.
 
 ### Esempio {#developer-example}
 
@@ -133,9 +135,9 @@ ValueMap imageServerSettings = conf.getItem("dam/imageserver");
 String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 ```
 
-Il punto iniziale di tutte le ricerche di configurazione è una risorsa di contenuto, in genere posizionata sotto `/content`. Potrebbe trattarsi di una pagina, di un componente all’interno di una pagina, di una risorsa o di una cartella DAM. Questo è il contenuto effettivo per il quale stiamo cercando la configurazione corretta che si applica in questo contesto.
+Il punto iniziale di tutta la ricerca di configurazione è una risorsa di contenuto da qualche parte in `/content`. Potrebbe trattarsi di una pagina, di un componente all’interno di una pagina, di una risorsa o di una cartella DAM. Si tratta del contenuto effettivo per il quale stai cercando la configurazione corretta che si applica in questo contesto.
 
-Ora con `Conf` oggetto, possiamo recuperare l’elemento di configurazione specifico che ci interessa. In questo caso è `dam/imageserver`, che è una raccolta di impostazioni relative al `imageserver`. Il `getItem` la chiamata restituisce un `ValueMap`. Quindi leggiamo un `bgkcolor` stringa e fornire il valore predefinito &quot;FFFFFF&quot; nel caso in cui la proprietà (o l’intero elemento di configurazione) non sia presente.
+Ora con `Conf` oggetto, è possibile recuperare l&#39;elemento di configurazione specifico desiderato. In questo caso, è `dam/imageserver`, che è una raccolta di impostazioni relative al `imageserver`. Il `getItem` la chiamata restituisce un `ValueMap`. Poi leggi un `bgkcolor` stringa e fornire il valore predefinito &quot;FFFFFF&quot; nel caso in cui la proprietà (o l’intero elemento di configurazione) non sia presente.
 
 Ora diamo un’occhiata al contenuto JCR corrispondente:
 
@@ -153,19 +155,19 @@ Ora diamo un’occhiata al contenuto JCR corrispondente:
             - bgkcolor = "FF0000"
 ```
 
-In questo esempio, si assume qui una cartella DAM specifica per WKND e una configurazione corrispondente. A partire da quella cartella `/content/dam/wknd`, verrà visualizzata una proprietà stringa denominata `cq:conf` che fa riferimento alla configurazione da applicare per la sottostruttura. La proprietà viene in genere impostata su `jcr:content` di una cartella o pagina di risorse. Questi `conf` I collegamenti sono espliciti, quindi è facile seguirli semplicemente guardando il contenuto in CRXDE.
+In questo esempio, puoi assumere una cartella DAM specifica per WKND qui e una configurazione corrispondente. A partire da quella cartella `/content/dam/wknd`, è possibile vedere che esiste una proprietà stringa denominata `cq:conf` che fa riferimento alla configurazione applicabile alla sottostruttura. La proprietà è impostata su `jcr:content` di una cartella o pagina di risorse. Questi `conf` I collegamenti sono espliciti, quindi è facile seguirli semplicemente guardando il contenuto in CRXDE.
 
-Salto all&#39;interno `/conf`, seguiamo il riferimento e vediamo che c&#39;è un `/conf/wknd` nodo. Questa è una configurazione. La ricerca è completamente trasparente per il codice dell’applicazione. Il codice di esempio non ha mai un riferimento dedicato ad esso, è nascosto dietro il `Conf` oggetto. La configurazione applicabile è completamente controllata tramite il contenuto JCR.
+Salto all&#39;interno `/conf`, segui il riferimento e osserva che è presente `/conf/wknd` nodo. Questa è una configurazione. La ricerca è trasparente per il codice dell’applicazione. Il codice di esempio non ha mai un riferimento dedicato ad esso, è nascosto dietro il `Conf` oggetto. La configurazione applicabile viene controllata tramite il contenuto JCR.
 
-Vediamo che la configurazione contiene un `settings` nodo che contiene gli elementi effettivi, incluso `dam/imageserver` nel nostro caso abbiamo bisogno. Un elemento di questo tipo può essere considerato come un &quot;documento impostazioni&quot; e in genere è rappresentato da un `cq:Page` incluso un `jcr:content` mantenendo il contenuto effettivo.
+Vedi che la configurazione contiene un `settings` nodo che contiene gli elementi effettivi, incluso `dam/imageserver` hai bisogno in questo caso. Tale elemento può essere considerato come un &quot;documento delle impostazioni&quot; ed è rappresentato da un `cq:Page` incluso un `jcr:content` mantenendo il contenuto effettivo.
 
-Infine, vediamo la proprietà `bgkcolor` di cui il nostro codice di esempio ha bisogno. Il `ValueMap` torniamo da `getItem` è basato su `jcr:content` nodo.
+Infine, viene visualizzata la proprietà `bgkcolor` di cui questo codice di esempio ha bisogno. Il `ValueMap` torni da `getItem` è basato su `jcr:content` nodo.
 
 ### Risoluzione configurazione {#configuration-resolution}
 
 L’esempio di base precedente mostrava una singola configurazione. Tuttavia, in molti casi è necessario disporre di configurazioni diverse, ad esempio una configurazione globale predefinita, una diversa per ogni marchio e forse una specifica per i sottoprogetti.
 
-Per supportare questa funzione, la ricerca della configurazione in AEM ha un meccanismo di ereditarietà e fallback nell’ordine di preferenza seguente:
+Per supportare questa ricerca nella configurazione, AEM dispone di un meccanismo di ereditarietà e fallback nell’ordine di preferenza seguente:
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
    * Configurazione specifica a cui fa riferimento `cq:conf` da qualche parte `/content`
@@ -179,7 +181,7 @@ Per supportare questa funzione, la ricerca della configurazione in AEM ha un mec
    * Modificabile in fase di runtime da utenti con privilegi di configurazione
 1. `/conf/global`
    * Impostazioni globali del sistema
-   * In genere, impostazioni globali predefinite per l&#39;installazione
+   * Valori predefiniti globali per l&#39;installazione
    * Impostato da un `admin` ruolo
    * Modificabile in fase di runtime da utenti con privilegi di configurazione
 1. `/apps`
@@ -210,7 +212,7 @@ Fornisci semplicemente:
 * **Elemento**
 * **User**
 
-Clic **Risolvi** per vedere quali configurazioni vengono risolte e ricevere il codice di esempio che le risolverà.
+Clic **Risolvi** in questo modo puoi vedere quali configurazioni vengono risolte e ottenere esempi di codice utili per risolverle.
 
 ### Console Web di configurazione in base al contesto {#context-aware-web-console}
 
@@ -223,4 +225,4 @@ Fornisci semplicemente:
 * **Percorso contenuto**
 * **Nome configurazione**
 
-Clic **Risolvi** per recuperare i percorsi e le proprietà di contesto associati per la configurazione selezionata.
+Clic **Risolvi** in modo da poter recuperare i percorsi e le proprietà di contesto associati per la configurazione selezionata.

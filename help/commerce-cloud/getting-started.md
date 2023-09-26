@@ -1,6 +1,6 @@
 ---
 title: Guida introduttiva ad AEM Commerce as a Cloud Service
-description: Scopri come distribuire un progetto di e-commerce AEM utilizzando Adobe Cloud Manager, una pipeline CI/CD e la vetrina di riferimento Venia.
+description: Scopri come distribuire un progetto di e-commerce Adobe Experience Manager (AEM) utilizzando Adobe Cloud Manager, una pipeline CI/CD e la vetrina di riferimento Venia.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -8,16 +8,16 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1104'
 ht-degree: 15%
 
 ---
 
 # Guida introduttiva ad AEM Commerce as a Cloud Service {#start}
 
-Per iniziare a utilizzare AEM Commerce as a Cloud Service, è necessario eseguire il provisioning del tuo Experience Manager Cloud Service con il componente aggiuntivo Commerce Integration Framework (CIF). Il componente aggiuntivo CIF è un modulo aggiuntivo per [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+Per iniziare a utilizzare Adobe Experience Manager (AEM) Commerce as a Cloud Service, è necessario eseguire il provisioning del tuo Experience Manager Cloud Service con il componente aggiuntivo Commerce integration framework (CIF). Il componente aggiuntivo CIF è un modulo aggiuntivo per [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
 
 ## Onboarding {#onboarding}
 
@@ -30,7 +30,7 @@ Il primo passaggio di onboarding è effettuato per Adobe. Per maggiori dettagli 
 
 Dopo il provisioning con il componente aggiuntivo CIF, questo viene applicato a tutti i programmi Cloud Manager esistenti. Se non disponi di un programma Cloud Manager, devi crearne uno. Per ulteriori dettagli, consulta [Configurare il programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
 
-Il secondo passaggio è autonomo per ogni ambiente AEM as a Cloud Service. Dopo il provisioning iniziale del componente aggiuntivo CIF, è necessario eseguire alcune configurazioni aggiuntive.
+Il secondo passaggio è autonomo per ogni ambiente AEM as a Cloud Service. Dopo il provisioning iniziale del componente aggiuntivo CIF è necessario effettuare alcune configurazioni aggiuntive.
 
 ## Collegamento dell’AEM con una soluzione Commerce {#solution}
 
@@ -39,11 +39,11 @@ Per collegare il componente aggiuntivo CIF e [Componenti core CIF dell’AEM](ht
 Questa variabile di ambiente viene utilizzata in due posizioni:
 
 - GraphQL chiama dall’AEM al backend di e-commerce, tramite alcuni client GraphQl condivisibili, utilizzati dai componenti core CIF dell’AEM e dai componenti di progetto del cliente.
-- Imposta un URL proxy di GraphQL in ogni ambiente AEM in cui la variabile è impostata e disponibile `/api/graphql`. Questo URL viene utilizzato dagli strumenti di creazione di e-commerce AEM (componente aggiuntivo CIF) e dai componenti lato client CIF.
+- Imposta un URL proxy di GraphQL in ogni ambiente AEM in cui la variabile è impostata e disponibile `/api/graphql`. Questo URL viene utilizzato dai componenti lato client e dagli strumenti per la creazione di contenuti commerciali (componente aggiuntivo CIF CIF) dell’AEM.
 
 Per ogni ambiente AEM as a Cloud Service, è possibile utilizzare un diverso URL endpoint GraphQL di In questo modo i progetti possono collegare gli ambienti di staging AEM con i sistemi di staging commerce e l’ambiente di produzione AEM a un sistema di produzione commerce. L’endpoint GraphQL di deve essere disponibile pubblicamente; non sono supportate connessioni VPN private o locali. Facoltativamente, è possibile fornire un’intestazione di autenticazione per utilizzare funzioni CIF aggiuntive che richiedono l’autenticazione.
 
-Facoltativamente, e solo per Adobe Commerce Enterprise / Cloud, il componente aggiuntivo CIF supporta l’utilizzo di dati di catalogo per gli autori di AEM. Questi dati richiedono la configurazione di un’intestazione di autorizzazione. Questa intestazione è disponibile e utilizzata solo nelle istanze di authoring AEM per motivi di sicurezza. Le istanze di pubblicazione dell’AEM non possono mostrare dati di staging.
+Facoltativamente, e solo per Adobe Commerce Enterprise / Cloud, il componente aggiuntivo CIF supporta l’utilizzo di dati di catalogo per gli autori di AEM. Questi dati richiedono la configurazione di un’intestazione di autorizzazione. Questa intestazione è disponibile e utilizzata solo nelle istanze di creazione AEM per motivi di sicurezza. Le istanze di pubblicazione AEM non possono mostrare dati di staging.
 
 Esistono due opzioni per configurare l’endpoint:
 
@@ -103,17 +103,17 @@ Ora puoi utilizzare AEM Commerce as a Cloud Service e distribuire il progetto tr
 
 ## Configurazione di store e cataloghi {#catalog}
 
-Il componente aggiuntivo CIF e [Componenti core CIF](https://github.com/adobe/aem-core-cif-components) può essere utilizzato su più strutture di siti AEM collegate a diversi store commerciali (o viste store, ecc.). Per impostazione predefinita, il componente aggiuntivo CIF viene distribuito con una configurazione predefinita che si collega all’archivio e al catalogo predefiniti di Adobe Commerce.
+Il componente aggiuntivo CIF e il [Componenti core CIF](https://github.com/adobe/aem-core-cif-components) può essere utilizzato su più strutture di siti AEM collegate a diversi store commerciali (o viste store, ecc.). Per impostazione predefinita, il componente aggiuntivo CIF viene distribuito con una configurazione predefinita che si collega all’archivio e al catalogo predefiniti di Adobe Commerce.
 
-Questa configurazione può essere regolata per il progetto tramite la configurazione di Cloud Service CIF, come segue:
+Questa configurazione può essere regolata per il progetto mediante la configurazione del Cloud Service CIF seguente:
 
-1. In AEM andare a Strumenti -> Cloud Services -> Configurazione CIF.
+1. In AEM andare a Strumenti -> Cloud Service -> Configurazione CIF.
 
 2. Seleziona la configurazione commerce da modificare.
 
 3. Apri le proprietà di configurazione tramite la barra delle azioni.
 
-![Configurazione Cloud Services CIF](/help/commerce-cloud/assets/cif-cloud-service-config.png)
+![Configurazione Cloud Service CIF](/help/commerce-cloud/assets/cif-cloud-service-config.png)
 
 È possibile configurare le seguenti proprietà:
 
@@ -130,7 +130,7 @@ Questa configurazione può essere regolata per il progetto tramite la configuraz
 - Identificatore categoria radice catalogo: l’identificatore (UID o ID) della radice del catalogo dell’archivio
   >[!CAUTION]
   >
-  > A partire dalla versione 2.0.0 dei componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Se il progetto utilizza i componenti core CIF versione 2.0.0, devi abilitare il supporto UID del catalogo e utilizzare un UID di categoria valido come &quot;Identificatore della categoria principale del catalogo&quot;.
+  > A partire dalla versione 2.0.0 dei Componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Se il progetto utilizza i componenti core CIF versione 2.0.0, devi abilitare il supporto per il catalogo UID e utilizzare un UID di categoria valido come &quot;Identificatore della categoria principale del catalogo&quot;.
 
 La configurazione mostrata sopra è a scopo di riferimento. I progetti devono fornire le proprie configurazioni.
 

@@ -1,17 +1,17 @@
 ---
 title: Configurazione dell’ambiente dell’account
-description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
+description: Adobe Experience Manager (AEM) consente di configurare l’account e alcuni aspetti dell’ambiente di authoring.
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '488'
-ht-degree: 100%
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 60%
 
 ---
 
 # Configurazione dell’ambiente dell’account   {#configuring-your-account-environment}
 
-Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring.
+Adobe Experience Manager (AEM) consente di configurare l’account e alcuni aspetti dell’ambiente di authoring.
 
 Utilizza l’opzione [Utente](#user-settings) nell’[intestazione](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) e la relativa finestra di dialogo [Preferenze](#my-preferences) per modificare le opzioni utente.
 
@@ -24,7 +24,7 @@ Le impostazioni **Utente** consentono di accedere a:
 * Impersona
    * La funzionalità Impersona permette a un utente di lavorare a nome di un altro utente. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * Profilo
-   * Offre un collegamento semplice alle impostazioni utente.<!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * Offre un collegamento semplice alle impostazioni utente <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [Preferenze](#my-preferences)
    * Consente di specificare varie preferenze di impostazione specifiche dell’utente.
 
@@ -32,9 +32,9 @@ Le impostazioni **Utente** consentono di accedere a:
 
 ### Preferenze {#my-preferences}
 
-Puoi accedere alla finestra di dialogo **Preferenze** tramite l’opzione [Utente](#user-settings) nell’intestazione.
+Il **Le mie preferenze** è accessibile tramite il [Utente](#user-settings) nell’intestazione.
 
-Ogni utente può impostare autonomamente determinate proprietà.
+Ogni utente può impostare le proprie proprietà preferite.
 
 ![Preferenze](/help/sites-cloud/authoring/assets/user-preferences.png)
 
@@ -67,7 +67,7 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Presentazione data relativa**
 
-  Per migliorare la leggibilità, AEM presenterà le date degli ultimi sette giorni come date relative (ad esempio, tre giorni fa) e le date più lontane come date esatte (ad esempio, il 20 marzo 2017).
+  Per migliorare la leggibilità, AEM riproduce le date degli ultimi sette giorni come date relative (ad esempio, Tre giorni fa) e le date più lontane come date esatte (ad esempio, 20 marzo 2017).
 
   Questa opzione definisce il modo in cui il sistema visualizza le date. Sono disponibili le seguenti opzioni:
 
@@ -80,17 +80,17 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Abilita scelte rapide**
 
-  AEM supporta una serie di scelte rapide da tastiera per ottimizzare l’authoring.
+  AEM supporta varie scelte rapide da tastiera per rendere più efficiente l’authoring.
 
    * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-  Questa opzione abilita le scelte rapide da tastiera. Per impostazione predefinita queste sono abilitate, ma possono essere disabilitate ad esempio se un utente ha determinati requisiti di accessibilità.
+  Questa opzione abilita le scelte rapide da tastiera. Per impostazione predefinita sono abilitate, ma possono essere disabilitate, ad esempio, se un utente ha determinati requisiti di accessibilità.
 
 * **Abilita pagina iniziale di Assets**
 
-  Questa opzione è disponibile solo se l’amministratore di sistema ha abilitato l’esperienza Pagina iniziale di Assets per l’intera organizzazione.
+  Questa opzione è disponibile solo se l’amministratore di sistema ha attivato l’esperienza Pagina iniziale risorse per l’intera organizzazione.
 
 * **Configurazione Stock**
 
-  Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l’amministratore di sistema ha abilitato [l’integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l’amministratore di sistema ha abilitato [Integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

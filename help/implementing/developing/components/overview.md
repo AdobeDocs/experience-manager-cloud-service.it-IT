@@ -2,10 +2,10 @@
 title: Panoramica dei componenti
 description: I componenti sono unità modulari che realizzano funzionalità specifiche per presentare i contenuti sul sito web
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 100%
+source-wordcount: '386'
+ht-degree: 67%
 
 ---
 
@@ -15,18 +15,16 @@ Questa pagina fornisce una panoramica dei componenti di Adobe Experience Manager
 
 ## Cosa sono i Componenti? {#what-are-components}
 
-I componenti in AEM sono:
-
 * Unità modulari che realizzano funzionalità specifiche per presentare i contenuti sul sito web.
-* Riutilizzabili.
+* Riutilizzabile.
 * Sviluppati come unità autonome all’interno di una cartella dell’archivio.
 * Non sono presenti file di configurazione nascosti.
 * Possono contenere altri componenti.
-* Possono essere eseguiti ovunque all’interno di qualsiasi sistema AEM e possono essere limitati all’esecuzione in base a componenti specifici.
+* Possono essere eseguiti ovunque all&#39;interno di qualsiasi sistema AEM e possono anche essere limitati per funzionare con componenti specifici.
 * Hanno un’interfaccia utente standard.
 * Hanno un comportamento di modifica configurabile.
-* Utilizzano le finestre di dialogo create utilizzando elementi secondari basati sui componenti dell’interfaccia utente Granite.
-* Sono sviluppati utilizzando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it).
+* Utilizza finestre di dialogo create utilizzando sottoelementi basati su componenti dell’interfaccia utente Granite.
+* Vengono sviluppati utilizzando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it).
 * Possono essere sviluppati per creare componenti personalizzati che estendono la funzionalità predefinita.
 
 Poiché i componenti sono modulari, puoi:
@@ -34,7 +32,7 @@ Poiché i componenti sono modulari, puoi:
 * Sviluppare un nuovo componente nell’istanza locale.
 * Distribuirlo nell’ambiente di test.
 * Distribuirlo nel tuo ambiente di authoring live, dove gli autori e/o gli amministratori possono aggiungere e configurare contenuti.
-* Distribuirlo negli ambienti di pubblicazione live, dove viene utilizzata per il rendering dei contenuti per i visitatori del sito web.
+* Distribuiscilo negli ambienti di pubblicazione live, dove viene utilizzato per eseguire il rendering dei contenuti per i visitatori del tuo sito web.
 
 Ogni componente AEM:
 
@@ -44,13 +42,13 @@ Ogni componente AEM:
 
 ## Componenti core AEM {#aem-core-components}
 
-[I Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) sono un set di componenti di Gestione contenuti web (Web Content Management, WCM) standardizzati di AEM che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti web.
+[Componenti core dell’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) sono un set di componenti WCM (Web Content Management) standardizzati per l’AEM che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti web.
 
 I Componenti core sono forniti con AEM as a Cloud Service e il [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustra come implementarli e utilizzarli. I componenti sono forniti con tutto il codice sorgente e possono essere utilizzati così come sono o come punti di partenza per i componenti modificati o estesi.
 
 ### Visualizzazione dei componenti disponibili {#viewing-available-components}
 
-Per una panoramica di tutti i componenti disponibili nell’istanza di AEM, utilizza la funzione [Console Componenti](/help/sites-cloud/authoring/features/components-console.md).
+Per una panoramica di tutti i componenti disponibili nell’istanza AEM, utilizza [Console Componenti](/help/sites-cloud/authoring/features/components-console.md).
 
 In alternativa, è possibile utilizzare CRXDE Lite per ottenere un elenco di tutti i componenti disponibili nell’archivio.
 
@@ -58,7 +56,7 @@ In alternativa, è possibile utilizzare CRXDE Lite per ottenere un elenco di tut
 
 1. Nella scheda **[!UICONTROL Query]**, seleziona `XPath` come **[!UICONTROL Tipo]**.
 
-1. Nel campo di inserimento **[!UICONTROL Query]**, immetti la stringa seguente:
+1. In **[!UICONTROL Query]** campo di input, immettere la seguente stringa:
 
    `//element(*, cq:Component)`
 
