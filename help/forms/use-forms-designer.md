@@ -1,19 +1,19 @@
 ---
 title: Utilizzare AEM Forms Designer
-description: Utilizzare [!DNL AEM Forms] per creare modelli di documenti di record.
+description: Utilizzare [!DNL Adobe Experience Manager (AEM) Forms] Progettazione per creare modelli di documenti di record.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
 
-# Utilizzare AEM Forms Designer {#install-designer}
+# Utilizzare Adobe Experience Manager (AEM) Forms Designer {#install-designer}
 
 Designer è uno strumento di progettazione grafica semplice e intuitivo che semplifica la creazione di modelli di modulo XDP. È possibile progettare un modello di modulo, definirne la logica e soddisfare requisiti legislativi rigorosi. Questi modelli fungono da modello di documento record per un modulo adattivo. Questi modelli di moduli sono diversi da [Modelli di modulo adattivo](template-editor.md).
 
-I documenti seguenti forniscono istruzioni per utilizzare la finestra di progettazione per creare modelli e PDF forms XDP:
+Nei documenti seguenti vengono fornite istruzioni per l&#39;utilizzo di Designer per la creazione di modelli e PDF forms XDP:
 
 + [Utilizzo di Designer](assets/using-designer-cs.pdf)
 + [Tutorials di avvio rapido di Designer](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)

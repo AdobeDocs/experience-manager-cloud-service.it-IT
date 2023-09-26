@@ -3,61 +3,59 @@ title: Creazione di un programma
 description: Scopri come creare il tuo primo programma con Cloud Manager.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: ht
-source-wordcount: '686'
-ht-degree: 100%
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+workflow-type: tm+mt
+source-wordcount: '678'
+ht-degree: 67%
 
 ---
 
 # Creazione di un programma {#create-program}
 
-In questa sezione del [percorso di onboarding](overview.md) scoprirai come creare il tuo primo programma con Cloud Manager.
+In questa parte del [percorso di onboarding,](overview.md) scopri come creare il primo programma con Cloud Manager.
 
 ## Obiettivo {#objective}
 
 Dopo aver rivisto il documento precedente di questo percorso di onboarding, [Accesso a Cloud Manager,](cloud-manager.md) hai appurato di avere accesso a Cloud Manager. Ora puoi creare il primo programma.
 
-Dopo aver letto questo documento:
+Dopo aver letto questo documento, puoi:
 
-* Saprai che cos’è un programma.
+* Comprendere e spiegare cos’è un programma.
 * Conoscerai la differenza tra i programmi di produzione e i programmi sandbox.
-* Sarai in grado di creare un programma personalizzato.
+* Crea un programma personalizzato.
 
 ## Che cos’è un programma? {#programs}
 
 I programmi rappresentano il livello organizzativo più alto in Cloud Manager. In base alla licenza Adobe in uso, i programmi consentono di organizzare la soluzione e concedere le autorizzazioni di accesso a tali programmi a determinati membri del gruppo.
 
-I programmi Cloud Manager rappresentano set di ambienti di Cloud Manager. Questi programmi supportano set logici di iniziative aziendali, in genere corrispondenti al contratto del livello di servizio (SLA) concesso in licenza. Ad esempio, un programma può rappresentare le risorse AEM per supportare il sito web pubblico globale di un’organizzazione, mentre un altro programma può rappresentare un DAM interno centrale.
+I programmi Cloud Manager rappresentano set di ambienti di Cloud Manager. Questi programmi supportano set logici di iniziative aziendali, in genere corrispondenti al contratto del livello di servizio (SLA) concesso in licenza. Ad esempio, un programma può rappresentare le risorse Adobe Experience Manager (AEM) per supportare un sito web pubblico globale per un’organizzazione, mentre un altro programma può rappresentare un DAM interno centrale.
 
-Richiamando alla memoria l’esempio precedente, l’ipotetica WKND Travel and Adventure Enterprises, un tenant che si occupa di media legati ai viaggi, potrebbe avere due programmi: Sites per la divisione WKND Magazine e Assets per la divisione WKND Media. Diversi membri del gruppo avrebbero quindi accesso a diversi programmi per via della divisione dei lavori.
+Se ricordi l’esempio teorico di WKND Travel and Adventure Enterprises, un tenant che si occupa di media legati ai viaggi, potrebbe avere due programmi. Un programma AEM Sites per la divisione WKND Magazine e un programma AEM Assets per la divisione WKND Media. Diversi membri del gruppo avrebbero quindi accesso a diversi programmi per via della divisione dei lavori.
 
-Vi sono due diversi tipi di programmi:
+Esistono due diversi tipi di programmi:
 
 * Un **programma di produzione** viene creato per abilitare il traffico in tempo reale per il sito. Si tratta del tuo ambiente &quot;reale&quot;.
 * I **programmi sandbox** vengono generalmente creati a scopi di formazione, esecuzione di demo, abilitazione, POC o documentazione.
 
-Poiché hanno scopi diversi, i diversi ambienti presentano opzioni differenti. Tuttavia, il processo per la loro creazione è analogo. Per questo percorso di onboarding verrà creato un ambiente sandbox.
+Poiché hanno scopi diversi, i diversi ambienti presentano opzioni differenti. Tuttavia, il processo per la loro creazione è analogo. Per questo percorso di onboarding viene creato un ambiente sandbox.
 
 >[!TIP]
 >
->Per creare un programma di produzione, consulta la sezione [Risorse aggiuntive](#additional-resources) per un collegamento alla documentazione che descrive i programmi in dettaglio.
+>Se devi creare un programma di produzione, consulta [Risorse aggiuntive](#additional-resources) sezione per un collegamento alla documentazione che descrive i programmi in dettaglio.
 
 ## Creazione di un programma sandbox {#create-sandbox}
 
-Per creare un programma sandbox, segui la procedura riportata di seguito.
-
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Dalla pagina di destinazione di Cloud Manager, fai clic su **Aggiungi programma** nell’angolo in alto a destra della schermata.
+1. Dalla pagina di destinazione di Cloud Manager, fai clic su **Aggiungi programma** nell’angolo in alto a destra dello schermo.
 
    ![Pagina di destinazione di Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. Dalla procedura guidata Crea programma, seleziona **Configura una sandbox**, assegna un nome al programma, quindi fai clic su **Continua**.
+1. Dalla procedura guidata Crea programma, seleziona **Configurare una sandbox**, quindi specifica un nome per il programma e tocca o fai clic su **Continua**.
 
    ![Creazione del tipo di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. Nella finestra di dialogo **Configura una sandbox**, puoi scegliere le soluzioni da abilitare nel programma sandbox. Le soluzioni **Sites** e **Assets** sono sempre incluse nei programmi sandbox e vengono selezionate automaticamente. Questo è sufficiente per il nostro esempio di onboarding. Fai clic su **Crea**.
+1. In **Configurare la sandbox** , è possibile scegliere le soluzioni da abilitare nel programma sandbox. Le soluzioni **Sites** e **Assets** sono sempre incluse nei programmi sandbox e vengono selezionate automaticamente. Questo è sufficiente per il tuo esempio di onboarding. Fai clic su **Crea**.
 
    ![Selezione della soluzione](assets/set-up-sandbox-onboarding.png)
 
@@ -65,11 +63,11 @@ Nella pagina di destinazione viene visualizzata una nuova scheda del programma s
 
 ![Creazione di un programma sandbox dalla pagina Panoramica](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/program-create-setupdemo2.png)
 
-Dopo aver completato il programma, i membri dell’organizzazione assegnati al profilo di prodotto **Sviluppatore** possono accedere a Cloud Manager e gestire gli archivi Git di Cloud Manager.
+Una volta completato il programma, i membri dell’organizzazione vengono assegnati al **Sviluppatore** Il profilo di prodotto può accedere a Cloud Manager e gestire gli archivi Git di Cloud Manager.
 
 ## Passaggio successivo {#whats-next}
 
-Ora che hai creato il primo programma, puoi creare degli ambienti da aggiungere. Rivedi il documento [Creazione degli ambienti](create-environments.md) prima di continuare il percorso di onboarding.
+Ora che hai creato il primo programma, puoi creare degli ambienti da aggiungere. Continua il tuo percorso di onboarding passando al documento successivo [Creare ambienti.](create-environments.md)
 
 ## Risorse aggiuntive {#additional-resources}
 

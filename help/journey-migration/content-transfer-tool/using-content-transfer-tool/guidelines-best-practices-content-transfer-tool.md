@@ -1,11 +1,11 @@
 ---
 title: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
-description: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
+description: Scopri le linee guida e le best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti).
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 19%
+source-wordcount: '1554'
+ht-degree: 14%
 
 ---
 
@@ -27,17 +27,17 @@ ht-degree: 19%
 È disponibile una nuova versione dello strumento Content Transfer (Trasferimento contenuti) che integra il processo di trasferimento dei contenuti con Cloud Acceleration Manager. Si consiglia vivamente di passare a questa nuova versione per sfruttare tutti i vantaggi che offre:
 
 * Modalità self-service per estrarre un set di migrazione in una sola volta e trasferirlo in più ambienti in parallelo
-* Miglioramento dell’esperienza utente grazie a stati di caricamento, guardrail e gestione degli errori più efficienti
+* È stata migliorata l’esperienza dell’utente grazie a migliori stati di caricamento, guardrail e gestione degli errori
 * I registri di acquisizione vengono mantenuti e sono sempre disponibili per la risoluzione dei problemi
 
-Per iniziare a utilizzare la nuova versione, è necessario disinstallare le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti). Questo è necessario perché la nuova versione viene fornita con un importante cambiamento architettonico. Con la versione 2.x, è necessario creare nuovi set di migrazione ed eseguire nuovamente l’estrazione e l’acquisizione sui nuovi set di migrazione.
-Le versioni precedenti alla 2.0.0 non saranno più supportate ed è consigliabile utilizzare la versione più recente.
+Per iniziare a utilizzare la nuova versione, disinstalla le versioni precedenti dello strumento Content Transfer (Trasferimento contenuti). Questo è necessario perché la nuova versione viene fornita con un importante cambiamento architettonico. Con la versione 2.x, puoi creare i set di migrazione ed eseguire nuovamente l’estrazione e l’acquisizione sui set.
+Le versioni precedenti alla 2.0.0 non sono supportate e si consiglia di utilizzare la versione più recente.
 
 Le seguenti linee guida e best practice sono applicabili alla nuova versione dello strumento Content Transfer (Trasferimento contenuti):
 
-* È consigliabile eseguire la [pulizia delle revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=it) e i [controlli di coerenza dell’archivio dati](https://helpx.adobe.com/it/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) nell’archivio **sorgente** per identificare potenziali problemi e ridurre le dimensioni dell’archivio.
+* Esegui [Pulizia revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=it) e [controlli di coerenza dell’archivio dati](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=it) il **sorgente** in modo da identificare potenziali problemi e ridurre le dimensioni dell’archivio.
 
-* Nella fase di acquisizione, si consiglia di eseguire l’acquisizione utilizzando *a comparsa* è abilitata la modalità in cui l’archivio esistente (di authoring o pubblicazione) nell’ambiente AEM Cloud Service di destinazione viene completamente eliminato e quindi aggiornato con i dati del set di migrazione. Questa modalità è molto più veloce della modalità in cui la cancellazione è disattivata e il set di migrazione viene applicato sul contenuto corrente.
+* Nella fase di acquisizione, l’Adobe consiglia di eseguire l’acquisizione utilizzando *a comparsa* è abilitata la modalità in cui viene eliminato l’archivio esistente (di authoring o pubblicazione) nell’ambiente di Cloud Service Adobe Experience Manager (AEM) di destinazione. Quindi, esegui l’aggiornamento con i dati del set di migrazione. Questa modalità è più veloce della modalità in cui la cancellazione è disattivata e il set di migrazione viene applicato al contenuto corrente.
 
 * Al termine dell’attività di trasferimento dei contenuti, nell’ambiente Cloud Service è necessaria la giusta struttura di progetto per garantire il corretto rendering dei contenuti.
 
@@ -49,7 +49,7 @@ La formula generale per calcolare lo spazio libero su disco richiesto è la segu
    * *node store size*: dimensione archivio nodi; dimensione della directory dell’archivio segmenti o dimensione del database MongoDB.
 Pertanto, per un archivio segmenti di 20 GB, lo spazio libero su disco richiesto è di 94 GB.
 
-* È necessario mantenere un set di migrazione per l’intera durata dell’attività di trasferimento dei contenuti per supportare l’integrazione dei contenuti stessi. È possibile creare e mantenere fino a venti set di migrazione per progetto in Cloud Acceleration Manager alla volta durante l’attività di trasferimento dei contenuti. Se sono necessari più di venti set di migrazione, è necessario creare un secondo progetto in Cloud Acceleration Manager. Tuttavia, questo richiederà una gestione del progetto aggiuntiva e una governance fuori prodotto per evitare che più utenti sovrascrivano i contenuti sul target.
+* È necessario mantenere un set di migrazione per l’intera durata dell’attività di trasferimento dei contenuti per supportare l’integrazione dei contenuti. È possibile creare e gestire fino a 20 set di migrazione per progetto in Cloud Acceleration Manager alla volta durante l’attività di trasferimento dei contenuti. Se sono necessari più di 20 set di migrazione, crea un secondo progetto in Cloud Acceleration Manager. Tuttavia, questo richiede una gestione del progetto aggiuntiva e una governance out-of-product per evitare la sovrascrittura dei contenuti sul target da parte di più utenti.
 
 * Evitare di modificare la directory di installazione dello strumento CTT. Per impostazione predefinita, l’installazione si svolge nel percorso crx-quickstart/cloud-migration. Questa posizione specifica viene utilizzata internamente da altre librerie. La modifica di questo percorso può causare problemi di estrazione.
 
@@ -57,29 +57,29 @@ Pertanto, per un archivio segmenti di 20 GB, lo spazio libero su disco richiest
 
 Segui le indicazioni riportate in questa sezione per comprendere le valutazioni importanti durante l’esecuzione dello strumento Content Transfer (Trasferimento contenuti):
 
-* l requisiti di sistema minimi per lo strumento Content Transfer (Trasferimento contenuti) sono AEM 6.3 o versione successiva e JAVA 8. Se utilizzi una versione AEM inferiore, devi aggiornare l’archivio dei contenuti a AEM 6.5 per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+* Il requisito minimo di sistema per lo strumento Content Transfer (Trasferimento contenuti) è AEM 6.3 o versione successiva e Java™ 8. Se utilizzi una versione AEM inferiore, aggiorna l’archivio dei contenuti a AEM 6.5 per utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-* Java deve essere configurato nell’ambiente AEM, in modo che il `java` può essere eseguito dall&#39;utente che avvia AEM.
+* Java™ deve essere configurato nell&#39;ambiente AEM, in modo che `java` può essere eseguito dall&#39;utente che avvia AEM.
 
 * Lo strumento Content Transfer (Trasferimento contenuti) può essere utilizzato con i seguenti tipi di archivio dati: archivio dati file, archivio dati S3, archivio dati S3 condiviso e archivio dati archivio BLOB di Azure.
 
 * Se si utilizza un *Ambiente sandbox*, assicurati che l’ambiente sia aggiornato alla versione più recente. Se utilizzi un *ambiente di produzione*, viene aggiornato automaticamente.
 
-* Per iniziare un’acquisizione, devi appartenere all’AEM locale **amministratori** nell’istanza del Cloud Service a cui stai trasferendo il contenuto. Gli utenti non autorizzati non potranno avviare le acquisizioni senza fornire manualmente il token di migrazione.
+* Per iniziare un’acquisizione, devi appartenere all’AEM locale **amministratori** nell’istanza del Cloud Service a cui stai trasferendo il contenuto. Gli utenti non autorizzati non possono avviare le acquisizioni senza fornire manualmente il token di migrazione.
 
-* Se l&#39;impostazione **Cancella i contenuti esistenti nell’istanza Cloud prima dell’acquisizione** se questa opzione è abilitata, elimina l’intero archivio esistente e crea un nuovo archivio in cui acquisire il contenuto. Ciò significa che vengono ripristinate tutte le impostazioni, comprese le autorizzazioni sull’istanza del Cloud Service di destinazione. Questo vale anche per un utente amministratore aggiunto al **amministratori** gruppo. L&#39;utente deve essere aggiunto di nuovo al **amministratori** per recuperare il token di accesso per lo strumento Content Transfer (Trasferimento contenuti).
+* Se l&#39;impostazione **Cancella i contenuti esistenti nell’istanza Cloud prima dell’acquisizione** se questa opzione è abilitata, elimina l’intero archivio esistente e crea un nuovo archivio in cui acquisire il contenuto. Ciò significa che vengono ripristinate tutte le impostazioni, comprese le autorizzazioni sull’istanza del Cloud Service di destinazione. È anche vero per un utente amministratore aggiunto al **amministratori** gruppo. L’utente deve essere letto sul **amministratori** per recuperare il token di accesso per lo strumento Content Transfer (Trasferimento contenuti).
 
-* Le acquisizioni non supportano l’unione di contenuti da più origini nell’istanza del Cloud Service target se il contenuto dalle due origini viene spostato negli stessi percorsi sulla destinazione. Per spostare il contenuto da più origini in un’unica istanza del Cloud Service target, è necessario assicurarsi che non vi sia alcuna sovrapposizione dei percorsi del contenuto dalle origini.
+* Le acquisizioni non supportano l’unione di contenuti da più origini nell’istanza del Cloud Service target se il contenuto dalle due origini viene spostato negli stessi percorsi sulla destinazione. Per spostare il contenuto da più origini in un’unica istanza del Cloud Service target, assicurati che non vi siano sovrapposizioni dei percorsi del contenuto dalle origini.
 
-* La chiave di estrazione è valida per 14 giorni dal momento in cui è stata creata/rinnovata. Può essere rinnovato in qualsiasi momento. Se la chiave di estrazione è scaduta, non potrai eseguire un’estrazione.
+* La chiave di estrazione è valida per 14 giorni dal momento in cui è stata creata o rinnovata. Può essere rinnovato in qualsiasi momento. Se la chiave di estrazione è scaduta, non puoi eseguire un’estrazione.
 
-* Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferirlo dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione del contenuto in un ambiente di pubblicazione. Qualsiasi contenuto specificato nel set di migrazione viene acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author, Publish o entrambe. Durante lo spostamento del contenuto in un’istanza di produzione, si consiglia di installare CTT nell’istanza di authoring di origine per spostare il contenuto nell’istanza di authoring di destinazione e, analogamente, di installare CTT nell’istanza di pubblicazione di origine per spostare il contenuto nell’istanza di pubblicazione di destinazione. Consulta [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) per ulteriori dettagli.
+* Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferirlo dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione del contenuto in un ambiente di pubblicazione. Qualsiasi contenuto specificato nel set di migrazione viene acquisito nell’istanza di destinazione selezionata. L’utente può acquisire un set di migrazione in un’istanza Author, Publish o entrambe. L’Adobe consiglia di installare CTT nell’istanza di authoring di origine per spostare il contenuto nell’istanza di authoring di destinazione durante lo spostamento del contenuto in un’istanza di produzione. Allo stesso modo, installa CTT sull’istanza Publish di origine per spostare il contenuto nell’istanza Publish di destinazione. Consulta [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) per ulteriori dettagli.
 
 * Gli utenti e i gruppi trasferiti dallo strumento Content Transfer (Trasferimento contenuti) sono solo quelli necessari per il contenuto per soddisfare le autorizzazioni. Il _Estrazione_ processo copia l&#39;intero `/home` nel set di migrazione e esegue la mappatura degli utenti aggiungendo un campo creato dall’indirizzo e-mail di ciascun utente. Per ulteriori informazioni, consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Il _Acquisizione_ process copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL dei contenuti migrati. Consulta [Migrazione di gruppi utenti chiusi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) per ulteriori considerazioni sui gruppi utilizzati in un criterio Gruppo utenti chiuso (CUG).
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
 
-* Dopo aver completato *Estrazione* fase del processo di trasferimento dei contenuti e prima di avviare *Fase di acquisizione* per inserire contenuti nell’AEM as a Cloud Service *Fase* o *Produzione* istanze, dovrai registrare un ticket di supporto per notificare all’Adobe la tua intenzione di eseguire *Acquisizione* in modo che Adobe possa garantire che non si verifichino interruzioni durante *Acquisizione* processo. Dovrai registrare il ticket di supporto 1 settimana prima della pianificazione *Acquisizione* data. Dopo aver inviato il ticket di supporto, il team di supporto fornisce indicazioni sui passaggi successivi. Puoi registrare un ticket di supporto con i seguenti dettagli:
+* Dopo aver completato *Estrazione* fase del processo di trasferimento dei contenuti e prima di avviare *Fase di acquisizione* per inserire contenuti nell’AEM as a Cloud Service *Fase* o *Produzione* istanze, registra un ticket di supporto. Notifica all&#39;Adobe l&#39;intenzione di eseguire *Acquisizione* in modo che Adobe possa garantire che non si verifichino interruzioni durante *Acquisizione* processo. Registra il ticket di supporto una settimana prima del periodo pianificato *Acquisizione* data. Dopo aver inviato il ticket di supporto, il team di supporto fornisce indicazioni sui passaggi successivi. Puoi inviare un ticket di supporto con i seguenti dettagli:
 
    * Data esatta e ora stimata (con il fuso orario) in cui intendi avviare il *Acquisizione* fase.
    * Tipo di ambiente (stage o produzione) in cui intendi acquisire i dati.
@@ -89,14 +89,14 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Quando si utilizza `Amazon S3` o `Azure` come archivio dati sul sistema AEM di origine, l’archivio dati deve essere configurato in modo che i BLOB memorizzati non possano essere eliminati (garbage collection). In questo modo viene garantita l’integrità dei dati di indice e, se non si configura questa modalità, le estrazioni potrebbero non riuscire a causa della mancanza di integrità dei dati di indice.
 
-* Se utilizzi gli indici personalizzati, assicurati di configurarli con `tika` prima di eseguire lo strumento Content Transfer (Trasferimento contenuti). Consulta [Preparazione della nuova definizione dell’indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=it#preparing-the-new-index-definition) per ulteriori dettagli.
+* Se utilizzi gli indici personalizzati, assicurati di configurarli con `tika` prima di eseguire lo strumento Content Transfer (Trasferimento contenuti). Consulta [Preparazione della nuova definizione dell’indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition) per ulteriori dettagli.
 
-* Se intendi eseguire integrazioni, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui viene effettuata l’estrazione iniziale a quando viene eseguita l’estrazione integrativa. I top-up non possono essere eseguiti su contenuti la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questo passaggio durante il processo di migrazione.
+* Se desideri eseguire integrazioni, la struttura del contenuto esistente non deve cambiare dal momento in cui viene effettuata l’estrazione iniziale a quando viene eseguita l’estrazione integrativa. I top-up non possono essere eseguiti su contenuti la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questo passaggio durante il processo di migrazione.
 
 * Se desideri includere le versioni come parte di un set di migrazione ed esegui integrazioni con `wipe=false`, devi quindi disabilitare l’eliminazione della versione a causa di una limitazione corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione delle versioni e stai eseguendo integrazioni in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
-* Un set di migrazione scadrà dopo un periodo prolungato di inattività, trascorso il quale i relativi dati non saranno più disponibili. Revisione [Scadenza set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) per ulteriori dettagli.
+* Un set di migrazione scade dopo un periodo prolungato di inattività, trascorso il quale i relativi dati non sono più disponibili. Revisione [Scadenza set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) per ulteriori dettagli.
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso le linee guida, le best practice e le considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti), puoi procedere all’installazione e all’utilizzo dello strumento, a partire dalla creazione di un set di migrazione. Consulta [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) per ulteriori informazioni.
+Dopo aver appreso le linee guida, le best practice e le considerazioni importanti sull’utilizzo dello strumento Content Transfer (Trasferimento contenuti), puoi procedere all’installazione e all’utilizzo dello strumento, a partire dalla creazione di un set di migrazione. Consulta [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
