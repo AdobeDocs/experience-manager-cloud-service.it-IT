@@ -3,9 +3,9 @@ title: Authoring dei frammenti di contenuto
 description: Scopri come creare contenuti per i frammenti di contenuto, quindi creare varianti di tale contenuto in base allo scopo. Ciò offre maggiore flessibilità sia per la distribuzione headless che per l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2227'
 ht-degree: 4%
 
 ---
@@ -484,7 +484,7 @@ Il **Campi** nel pannello sono elencati tutti i campi all’interno del framment
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Segnaposto scheda</b></p><p>Anche se non rappresentata da un'icona effettiva, una <b>Segnaposto scheda</b> è rappresentato nel pannello sinistro e nel pannello centrale.</p> </td>
+   <td><p><b>Segnaposto scheda</b></p><p>Anche se non rappresentata da un'icona effettiva, una <b>Segnaposto scheda</b> è rappresentato nel pannello sinistro. <br>È anche rappresentato nel pannello centrale, orizzontalmente come mostrato, o in un elenco a discesa (quando ce ne sono troppi da mostrare orizzontalmente).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
