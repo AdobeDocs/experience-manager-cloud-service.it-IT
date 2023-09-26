@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 66%
+source-wordcount: '825'
+ht-degree: 88%
 
 ---
 
@@ -39,19 +39,25 @@ Di seguito sono riportati i vantaggi principali di Assets as a [!DNL Cloud Servi
 
 ## Esperienze disponibili basate su utenti tipo {#persona-based-experiences}
 
-Adobe offre una solida soluzione di gestione delle risorse digitali (DAM) che consente di ottenere il massimo dalle risorse digitali. Adobe Experience Manager Assets dispone di due esperienze separate che utilizzano lo stesso archivio Cloud Service:
+Adobe offre una solida soluzione di gestione delle risorse digitali (DAM) che consente di ottenere il massimo dalle risorse digitali. Adobe Experience Manager Assets dispone di due esperienze separate che utilizzano lo stesso archivio Cloud Services:
 
-* **Visualizzazione amministratore**: interfaccia utente esistente di Assets as a Cloud Service. Utilizza la Vista amministratore per tutte le funzionalità avanzate di gestione delle risorse, inclusi integrazioni, flussi di lavoro, automazione dei contenuti, pubblicazione e altro ancora.
+* **Vista Amministratore**: l’interfaccia utente esistente di Assets as a Cloud Service. Utilizza la vista Amministratore per tutte le funzionalità avanzate di gestione risorse, tra cui integrazioni, flussi di lavoro, automazione dei contenuti, pubblicazione e altro ancora.
 
-* **Visualizzazione risorse**: esperienza di gestione delle risorse leggera di Adobe per archiviare, gestire, individuare e utilizzare le risorse digitali. Interfaccia utente semplificata con funzionalità essenziali per la gestione delle risorse. Progettato per gli utenti DAM leggeri con particolare attenzione a caricamento, gestione dei metadati, ricerca, download e condivisione.
+* **Vista Risorse**: esperienza Adobe leggera di gestione delle risorse per archiviare, gestire, scoprire e utilizzare le risorse digitali. Interfaccia utente semplificata con funzionalità essenziali per la gestione delle risorse. Progettata per gli utenti di DAM leggeri con particolare attenzione al caricamento, alla gestione dei metadati, alla ricerca, al download e alla condivisione.
 
-Gli utenti con accesso alla vista Amministratore possono accedere anche alla vista Risorse. La visualizzazione Assets offre un’interfaccia utente semplificata per gestire, individuare e distribuire facilmente le risorse digitali. Un’ampia gamma di utenti con diverse funzioni, tra cui creativi, team di marketing e line-of-business possono collaborare alle risorse e accedere alle risorse approvate, quando e dove ne hanno bisogno. Molti utenti DAM occasionali preferiscono la vista Risorse perché contiene solo un sottoinsieme di funzioni. L’esperienza è destinata ai creativi, ai consumatori di risorse di sola lettura e agli utenti DAM più leggeri.
+Gli utenti con accesso alla vista Amministratore possono accedere anche alla vista Risorse. L’interfaccia utente semplificata di vista Risorse agevola la gestione, l’individuazione e la distribuzione delle risorse digitali. Un ampio insieme di utenti con diverse funzioni, compresi i team creativi, di marketing e line-of-business, possono collaborare alle risorse e accedere alle risorse approvate, quando e dove ne hanno bisogno. Molti utenti di DAM occasionali preferiscono la vista Risorse perché contiene solo un sottoinsieme di funzioni. L’esperienza è destinata ai creativi, a chi utilizza le risorse di sola lettura e agli utenti di DAM più leggeri.
 
-Librerie DAM, sviluppatori e utenti con privilegi avanzati possono continuare a utilizzare la visualizzazione Amministratore o passare da un’interfaccia utente all’altra, in base alle esigenze. Puoi selezionare l’esperienza che funziona meglio per il tuo ruolo.
+Librerie, sviluppatori e utenti con privilegi avanzati DAM possono continuare a utilizzare la vista Amministratore o passare da un’interfaccia utente all’altra, in base alle esigenze. Puoi selezionare l’esperienza che funziona meglio per il tuo ruolo.
 
 ![add-tags](assets/newui-overview.svg)
 
 Per informazioni su come accedere alla vista Risorse e su alcune delle semplificazioni offerte rispetto alla vista Amministratore, consulta [Introduzione alla vista Risorse](/help/assets/assets-view-introduction.md).
+
+## Integrazione con l’authoring basato su documenti per i Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
+
+Edge Delivery consente di creare siti web veloci e coinvolgenti in cui gli autori possono aggiornare e pubblicare rapidamente i contenuti e nuovi siti possono essere avviati rapidamente.
+
+Integra AEM Assets con l’authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti web di utilizzare le immagini disponibili negli archivi AEM Assets durante l’authoring di documenti nei documenti Microsoft Word o Google. Per ulteriori informazioni, consulta [Integrare AEM Assets con l’authoring basato su documenti](/help/edge/using.md#integrate-assets-edge).
 
 ## Nuove funzionalità di Assets {#whats-new-assets}
 
