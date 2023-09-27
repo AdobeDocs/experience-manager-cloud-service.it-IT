@@ -8,7 +8,7 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '4268'
 ht-degree: 94%
@@ -560,7 +560,7 @@ ht-degree: 94%
          + [Integrare AEM Forms as a Cloud Service con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [Integrare AEM Forms as a Cloud Service con DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
          + [Integrare AEM Forms as a Cloud Service con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-         + [Integrare Forms adattivo in Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md)
+         + [Integrare Forms adattivo in Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [Visualizzazione e comprensione del rapporto di Adaptive Forms Analytics](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporare un modulo adattivo in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)

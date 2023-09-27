@@ -3,7 +3,7 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 407afc27911c507d3662fa4897b29e8187bbec7a
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 13%
@@ -116,7 +116,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * [**Supporto aziendale Google reCAPTCHA**](/help/forms/captcha-adaptive-forms-core-components.md): utilizza Google reCAPTCHA Enterprise in un modulo adattivo per fornire una protezione avanzata contro le attività fraudolente e lo spam, fornendo un’esperienza utente più sicura. Grazie all’analisi avanzata dei rischi e all’integrazione perfetta, gli utenti autentici possono inviare facilmente i moduli mentre i bot vengono bloccati in modo efficace.
 
-* [**Adobe Analytics con Experience Cloud Setup Automation per Forms**](/help/forms/forms-experience-cloud-setup-automation.md): ora puoi abilitare Adobe Analytics con Experience Cloud Setup Automation con un paio di pulsanti. Consente di collegare AEM Forms as a Cloud Service con i tag Experienci Platform e Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati.
+* [**Adobe Analytics con Experience Cloud Setup Automation per Forms**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): ora puoi abilitare Adobe Analytics con Experience Cloud Setup Automation con un paio di pulsanti. Consente di collegare AEM Forms as a Cloud Service con i tag Experienci Platform e Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati.
 
 * [**Modello di rapporto Adobe Analytics per Adaptive Forms**](/help/forms/view-understand-aem-forms-analytics-reports.md): Forms as a Cloud Service ora fornisce un rapporto Adobe Analytics OOTB. Consente di comprendere facilmente le prestazioni dei moduli. Le metriche a livello di modulo forniscono informazioni approfondite sulle prestazioni del modulo per più indicatori di prestazioni chiave (KPI, Key Performance Indicator), come rappresentazioni, visitatori, invii e tempo medio di riempimento. Monitorando il comportamento degli utenti e i feedback ricevuti, è possibile identificare le aree del modulo che causano confusione e guidare i miglioramenti alla progettazione e alle funzionalità del modulo.
 
