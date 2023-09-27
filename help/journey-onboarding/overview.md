@@ -2,10 +2,10 @@
 title: Introduzione al percorso di onboarding di AEM as a Cloud Service
 description: Inizia qui per una panoramica del percorso guidato nel processo di onboarding di AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
-workflow-type: ht
-source-wordcount: '1172'
-ht-degree: 100%
+source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
+workflow-type: tm+mt
+source-wordcount: '1220'
+ht-degree: 96%
 
 ---
 
@@ -83,6 +83,10 @@ I seguenti articoli descrivono in dettaglio i concetti fondamentali dell’onboa
 | 8 | [Assegnazione dei profili di prodotto di AEM](assign-profiles-aem.md) | Scopri come l’amministratore di sistema assegna i membri del gruppo ai profili di prodotto in AEM as a Cloud Service. | Amministratore di sistema |
 | 9 | [Attività dei ruoli Sviluppatore e Responsabile dell’implementazione](developers.md) | Facoltativo: scopri come accedere e gestire l’archivio Git di Cloud Manager in qualità di Sviluppatore e come configurare le pipeline e distribuire il codice in Cloud Manager in qualità di Responsabile della distribuzione. | Ruoli Sviluppatore e Responsabile dell’implementazione |
 | 10 | [Attività degli utenti AEM](aem-users.md) | Facoltativo: scopri come accedere all’istanza di AEM as a Cloud Service come autore o autrice AEM e come acquisire familiarità con l’authoring dei contenuti per AEM as a Cloud Service. | Utenti AEM |
+
+>[!NOTE]
+>
+>Edge Delivery Services è un nuovo set componibile di servizi che consente un ambiente di sviluppo rapido in cui gli autori possono aggiornare e pubblicare rapidamente e nuovi siti vengono avviati rapidamente. Per ulteriori informazioni sui servizi di consegna Edge, consulta [Pagina Introduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## Passaggio successivo {#what-is-next}
 
