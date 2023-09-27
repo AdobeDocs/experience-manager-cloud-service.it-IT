@@ -2,10 +2,10 @@
 title: Anteprima del contenuto
 description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima i contenuti prima della pubblicazione.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '274'
-ht-degree: 100%
+source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 86%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 100%
 AEM offre un servizio di anteprima Sites che consente agli sviluppatori e agli autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione e sia disponibile pubblicamente.
 
 Semplifica la visualizzazione in anteprima delle esperienze di pagina che non sarebbero altrimenti visibili dall’ambiente di authoring, come le transizioni di pagina e altri contenuti solo lato pubblicazione.
+
+>[!NOTE]
+>
+>Poiché il contenuto è *pubblicato* nell’ambiente di anteprima è accessibile tramite URL (quindi non ha bisogno dell’accesso a AEM).
 
 Per ulteriori dettagli sugli ambienti di anteprima, consulta il documento [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
@@ -31,6 +35,9 @@ Puoi pubblicare i contenuti nel servizio di anteprima utilizzando la funzione **
 
 1. Viene visualizzata una finestra di dialogo con gli URL per accedere al contenuto nell’ambiente di anteprima.
 
+   >[!NOTE]
+   >
+   >Poiché il contenuto è *pubblicato* nell’ambiente di anteprima è accessibile tramite URL (quindi non ha bisogno dell’accesso a AEM).
 
 Per visualizzare il contenuto dell’anteprima utilizzando gli URL nella procedura guidata, in alternativa, puoi anche anteporre `preview-` all’URL di pubblicazione dell’istanza di produzione.
 
