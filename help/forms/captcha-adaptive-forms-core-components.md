@@ -2,19 +2,16 @@
 title: Utilizzare Google reCAPTCHA in un modulo adattivo AEM
 description: Migliora la sicurezza dei moduli con il servizio Google reCAPTCHA. Guida passo passo all'interno!
 topic-tags: Adaptive Forms, author
-hide: true
-hidefromtoc: true
-Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+keywords: Servizio Google reCAPTCHA, Forms adattivo, sfida CAPTCHA, prevenzione dei bot, componenti core, sicurezza dell’invio dei moduli, prevenzione della posta indesiderata dei moduli
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '945'
 ht-degree: 12%
 
 ---
 
-# Utilizzare Google reCAPTCHA in un modulo adattivo AEM basato su componenti core {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+# Utilizzare Google reCAPTCHA in un modulo adattivo AEM basato su componenti core {#using-reCAPTCHA-in-adaptive-forms}
 
 | Applicabile a | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -54,13 +51,9 @@ Per collegare il tuo ambiente AEM Forms con il servizio reCAPTCHA di Google
    1. Seleziona un Contenitore di configurazione, creato o aggiornato nella sezione precedente. Tocca **[!UICONTROL Crea]**.
    1. Specifica **[!UICONTROL Titolo]**, **[!UICONTROL Nome]**, **[!UICONTROL Chiave sito]**, e **[!UICONTROL Chiave segreta]** per il servizio reCAPTCHA (ottenuto nel passaggio 1). Tocca **[!UICONTROL Crea]**.
 
-
    ![Configurare il Cloud Service per collegare l’ambiente AEM Forms con il servizio reCAPTCHA di Google](/help/forms/assets/captcha-configuration.gif)
 
-
-
    Una volta configurato, il servizio reCAPTCHA è disponibile per l’utilizzo in un modulo adattivo. Per ulteriori informazioni, consulta [utilizzo di Google reCAPTCHA in un modulo adattivo](#using-reCAPTCHA).
-
 
 ## Utilizzare Google reCAPTCHA in un modulo adattivo {#using-reCAPTCHA}
 

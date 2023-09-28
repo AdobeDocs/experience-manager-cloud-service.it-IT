@@ -1,21 +1,25 @@
 ---
 title: Visualizzazione e comprensione dei rapporti di analisi adattiva di Forms
 description: Forms adattivo si integra perfettamente con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati.
+keywords: Visualizzazione e comprensione dei rapporti di Forms Analytics adattivo, rapporto di Adobe Analytics e rapporto di Forms Analytics
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 0%
+source-wordcount: '988'
+ht-degree: 2%
 
 ---
 
 
 # Visualizzazione e comprensione dei rapporti di analisi adattiva di Forms {#viewing-and-understanding-aem-forms-analytics-reports}
 
-<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Questo articolo |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 Nel panorama in rapida evoluzione dell’analisi digitale, è fondamentale rimanere in sintonia con le tendenze globali per prendere decisioni informate e ottimizzare le esperienze digitali. Per risolvere questo problema, Forms adattivo si integra perfettamente con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo alla base dell’analisi di queste metriche è prendere decisioni basate sui dati, utilizzando metriche e analisi per migliorare l’usabilità e l’efficacia dei moduli.
 
@@ -102,3 +106,9 @@ Metriche quali visualizzazioni dell’Aiuto, errori di convalida e visite sul ca
 Consente di analizzare i campi del modulo in cui gli utenti hanno trascorso del tempo prima di abbandonare il modulo. Ad esempio, nell’immagine seguente, su 5 moduli abbandonati, 2 rimangono sul campo **Nome e cognome**, 2 a sinistra sul campo **Numero di telefono**, e 1 lasciato sul campo **Input testo**.
 
 ![Visitatori sul campo](assets/field-visitors.png){width="100%"}
+
+## Consulta anche {#see-also}
+
+* [Abilitare Adobe Analytics per un modulo adattivo utilizzando Experience Cloud Setup Automation](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Integrare AEM Forms con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

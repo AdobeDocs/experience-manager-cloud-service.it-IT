@@ -3,21 +3,21 @@ title: Utilizzare flussi di lavoro AEM incentrati su moduli per automatizzare i 
 description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti tramite e-sign, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+keywords: Utilizzare i flussi di lavoro AEM, utilizzando Assegna passaggi attività, converti in passaggi PDF/A, Genera un documento di passaggi registrati, Utilizza flussi di lavoro, Firma passaggio documento, Genera un passaggio di output stampato, Genera output PDF non interattivo
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '7452'
+source-wordcount: '7433'
 ht-degree: 1%
 
 ---
 
-# Utilizzare flussi di lavoro AEM incentrati su Forms - Riferimento alla fase per automatizzare i processi aziendali{#forms-centric-workflow-on-osgi-step-reference}
+
+# Utilizzare flussi di lavoro AEM incentrati su Forms - Riferimento alla fase per automatizzare i processi aziendali {#forms-centric-workflow-on-osgi-step-reference}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Questo articolo |
-
-<span class="preview"> Singer, Audit trail e opzioni di autenticazione basate su ID governativo in [Passaggio Firma documento](#sign-document-step) sono funzioni pre-release e accessibili tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Si utilizzano i modelli di flusso di lavoro. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. È possibile [includere vari passaggi del flusso di lavoro AEM in un modello per raggiungere la logica di business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
@@ -40,7 +40,6 @@ I passaggi del flusso di lavoro incentrati su Forms eseguono operazioni specific
 >[!NOTE]
 >
 >Se il modello di flusso di lavoro è contrassegnato per un archivio esterno, per tutti i passaggi del Forms Workflow è possibile selezionare solo l&#39;opzione della variabile per memorizzare o recuperare file di dati e allegati.
-
 
 ## Assegna passaggio attività {#assign-task-step}
 
@@ -379,8 +378,6 @@ Il passaggio Richiama servizio modello dati modulo presenta i campi elencati di 
 
 ## Passaggio Firma documento {#sign-document-step}
 
-<span class="preview"> I ruoli dei firmatari, la traccia di audit e le opzioni di autenticazione basata su documento ufficiale nel passaggio di Adobe Sign sono funzioni pre-release e accessibili tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 Il passaggio Firma documento consente di utilizzare [!DNL Adobe Sign] per firmare i documenti. Quando si utilizza [!DNL Adobe Sign] Passaggio del flusso di lavoro per firmare un modulo adattivo, il modulo può essere trasmesso tra i destinatari uno dopo l’altro o può essere inviato a tutti i destinatari contemporaneamente, a seconda della configurazione del passaggio del flusso di lavoro. [!DNL Adobe Sign] Forms adattivo abilitato vengono inviati a Experience Manager Forms Server solo dopo che tutti i destinatari hanno completato il processo di firma.
 
 Per impostazione predefinita, il [!DNL Adobe Sign] Il servizio di pianificazione controlla (esegue il polling) la risposta del destinatario ogni 24 ore. È possibile [modificare l’intervallo predefinito per l’ambiente](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status).
@@ -589,3 +586,9 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 * **Linearized PDF**: specifica se ottimizzare il PDF generato per la visualizzazione Web.
 * **PDF con tag**: specifica se rendere accessibile il PDF generato.
 * **Documento XCI**: specifica il percorso del file XCI.
+
+## Consulta anche {#see-also}
+
+* [Variabili nei flussi di lavoro AEM incentrati su Forms](/help/forms/variable-in-aem-workflows.md)
+* [Configura impostazione Fuori sede](/help/forms/configure-out-of-office-settings.md)
+

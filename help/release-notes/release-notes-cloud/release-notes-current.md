@@ -3,10 +3,10 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: 39284210e6639c4ed2a80cf86dbf0ea32d889986
 workflow-type: tm+mt
-source-wordcount: '1934'
-ht-degree: 13%
+source-wordcount: '1421'
+ht-degree: 17%
 
 ---
 
@@ -26,78 +26,41 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2023.8.0) è il 31 agosto 2023. La prossima versione (2023.9.0) è prevista per il 28 settembre 2023.
+La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2023.9.0) è il 28 settembre 2023. La prossima versione (2023.10.0) è prevista per il 26 ottobre 2023.
 
-## Video sulla versione {#release-video}
+<!-- 
 
-Dai un’occhiata al video Panoramica sulla versione di agosto 2023 per un riepilogo delle funzioni aggiunte alla versione 2023.8.0:
+## Release Video {#release-video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3423535/?quality=12)
+Have a look at the September 2023 Release Overview video for a summary of the features added in the 2023.9.0 release:
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+>[!VIDEO](put new link here)
 
-### Nuove funzioni in [!DNL Experience Manager Sites] {#sites-features}
+-->
 
-* Il [Console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it) ora consente agli utenti di visualizzare i tag e di effettuare ricerche per tag applicati come metadati ai frammenti di contenuto. Per usufruire di questa funzionalità, gli utenti non dovranno più passare all’interfaccia utente Assets, riducendo il passaggio da un contesto all’altro e migliorando l’efficienza.
+## Servizi di consegna Edge {#edge-delivery}
 
-  ![Assegnazione di tag nella console Frammenti di contenuto](/help/assets/content-fragments-console-tags.png)
-* Il nuovo Editor frammento di contenuto è ora disponibile su AEM as a Cloud Service. Consente agli autori di contenuti di essere più produttivi semplificando le attività di authoring e riducendo la necessità di passare da un’app all’altra durante la modifica dei contenuti.
-  ![Nuovo editor frammento di contenuto](/help/release-notes/assets/newCFEditor.png)
+Edge Delivery è una nuova serie di servizi componibili incentrati sulla massimizzazione dell’impatto dei contenuti per promuovere risultati aziendali misurabili al momento dell’interazione con il cliente.
 
-Il nuovo editor di frammenti di contenuto offre i seguenti vantaggi che non sono disponibili nell’editor originale:
-* Salvataggio automatico per una maggiore efficienza nell&#39;authoring e per evitare la perdita accidentale di modifiche.
-* Visualizzazione gerarchica di un frammento di contenuto e dei relativi riferimenti utilizzando la struttura ad albero Struttura per una navigazione rapida all’interno di un frammento con struttura profonda.
-  ![Struttura nell’Editor frammenti di contenuto](/help/release-notes/assets/newCFEditor_StructureTree.png)
-
-* Caricamento in linea delle risorse come riferimenti di contenuto senza doverlo prima caricare in Asset DAM
-* Anteprima ad hoc dell’esperienza con rendering fornita dal frammento di contenuto, per aiutare gli autori a visualizzare l’aspetto dei contenuti nell’app front-end
-* Pubblicazione con 1 clic e annullamento della pubblicazione del frammento di contenuto dall’editor
-* Visualizzazione e accesso alle copie per lingua durante la modifica di un frammento di contenuto
-  ![Copie per lingua nell’Editor frammento di contenuto](/help/release-notes/assets/newCFEditor_LanguageCopies.PNG)
-
-* Visualizzazione delle versioni per tenere traccia della timeline di un frammento di contenuto
-
-  ![Versioni nell’Editor frammento di contenuto](/help/release-notes/assets/newCFEditor_Versionhistory.PNG)
-
-* Visualizzazione dei riferimenti principali per aiutare gli autori a comprendere l’impatto delle modifiche
-
-  ![Riferimenti principali nell’Editor frammento di contenuto](/help/release-notes/assets/newCFEditor_Parentreferences.PNG)
+Per ulteriori informazioni sui Edge Delivery Services, consulta l’articolo [qui](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuove funzioni nella Vista risorse {#assets-view-features}
 
-<!--
+**Assegnare il modulo metadati a una cartella**
 
-**Assign metadata form to a folder**
+Ora puoi assegnare il modulo metadati a una cartella specifica all’interno della distribuzione Assets Essentials. Tutte le risorse nella cartella, comprese le risorse nelle sottocartelle, quindi visualizzano le proprietà definite nel modulo metadati assegnato.
 
-You can now assign metadata form to a specific folder within your Assets Essentials deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
-
-![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
-
--->
-
-* **Importare risorse in blocco da origini dati**: gli amministratori ora dispongono di [possibilità di importare un numero elevato di risorse](/help/assets/bulk-import-assets-view.md) da un’origine dati ad AEM Assets. Gli amministratori non devono più caricare singole risorse o cartelle in AEM Assets. Le origini dati supportate per l’importazione in blocco includono Azure, AWS, Google Cloud e Dropbox.
-
-  ![Importare risorse in blocco da un’origine dati](/help/release-notes/assets/bulk-import.png)
-
-* **Strumenti di modifica delle immagini basati su Adobi Express**: facile e intuitivo [strumenti di modifica delle immagini basati su Adobi Express](/help/assets/edit-images-assets-view.md) disponibile direttamente in AEM Assets per aumentare il riutilizzo dei contenuti e velocizzarne la distribuzione.
-
-  ![Editing di immagini con Adobi Express](/help/release-notes/assets/edit-adobe-express.png)
-
-* **Flessibilità durante l&#39;inserimento di elementi nell&#39;area di lavoro Accesso rapido**: possibilità di selezionare e fissare gli elementi per te, per l’intera organizzazione o per un elenco di gruppi in modo che vengano visualizzati nel [Sezione Accesso rapido della mia area di lavoro](/help/assets/my-workspace-assets-view.md) in base alla selezione.
-
-  ![Fissa elementi per gruppi](/help/release-notes/assets/pin-items-for-groups.png)
+![assegnare il modulo metadati a una cartella](/help/release-notes/assets/assign-to-folder.png)
 
 ### Nuove funzioni nella visualizzazione Amministratore {#admin-view-features}
 
-**Miglioramenti alla ricerca**
+* **Integrare AEM Assets as a Cloud Service con l’authoring basato su documenti per i Edge Delivery Services**: integra AEM Assets con l’authoring basato su documenti per i Edge Delivery Services per consentire agli autori di siti web di [utilizzare le immagini disponibili negli archivi di AEM Assets durante la creazione di documenti nei documenti di Microsoft Word o Google](/help/edge/using.md#integrate-assets-edge).
 
-* Ora gli amministratori possono [configurare la dimensione batch delle risorse](/help/assets/search-assets.md#configure-asset-batch-size) che vengono visualizzati quando si esegue una ricerca. I risultati della ricerca delle risorse vengono visualizzati in multipli del numero di dimensioni del batch configurato quando scorri ulteriormente verso il basso per caricare i risultati. Puoi scegliere tra le dimensioni disponibili del batch (200, 500 e 1000 risorse). Impostando un numero di dimensioni batch più basso si ottengono tempi di risposta della ricerca più rapidi.
+* **Estrai archivi ZIP**: possibilità di selezionare archivi ZIP gestiti in Experience Manager e [estrazione diretta dei file in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) senza scaricarli.
 
-  ![Configurazione delle dimensioni batch delle risorse](/help/release-notes/assets/assets-batch-size-configuration.png)
-
-* Experience Manager Assets ora include una nuova versione 9 di `damAssetLucene` indice. `damAssetLucene-9` modifica il comportamento del conteggio dei facet di query Oak in [non valuta più il controllo degli accessi sui conteggi facet](/help/assets/search-assets.md) restituito dall&#39;indice di ricerca sottostante, che determina tempi di risposta della ricerca più rapidi.
+  ![Fissa elementi per gruppi](/help/release-notes/assets/extract-archive.png)
 
 ### Funzioni pre-release disponibili in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
@@ -105,18 +68,15 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Scheda Sottotitoli e tracce audio nella pagina Proprietà di una risorsa video selezionata.](/help/release-notes/assets/msma-aem-cs.png)*Scheda Sottotitoli e tracce audio nella pagina Proprietà di una risorsa video selezionata.*
 
-* **Risorse**: possibilità di selezionare archivi ZIP gestiti in Experience Manager e [estrazione diretta dei file in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) senza scaricarli.
-
-  ![Fissa elementi per gruppi](/help/release-notes/assets/extract-archive.png)
-
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Funzioni pre-release disponibili in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### Nuove funzioni in [!DNL Experience Manager Forms] {#forms-features}
 
 * [**Supporto aziendale Google reCAPTCHA**](/help/forms/captcha-adaptive-forms-core-components.md): utilizza Google reCAPTCHA Enterprise in un modulo adattivo per fornire una protezione avanzata contro le attività fraudolente e lo spam, fornendo un’esperienza utente più sicura. Grazie all’analisi avanzata dei rischi e all’integrazione perfetta, gli utenti autentici possono inviare facilmente i moduli mentre i bot vengono bloccati in modo efficace.
 
 * [**Adobe Analytics con Experience Cloud Setup Automation per Forms**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): ora puoi abilitare Adobe Analytics con Experience Cloud Setup Automation con un paio di pulsanti. Consente di collegare AEM Forms as a Cloud Service con i tag Experienci Platform e Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati.
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
 
 * [**Modello di rapporto Adobe Analytics per Adaptive Forms**](/help/forms/view-understand-aem-forms-analytics-reports.md): Forms as a Cloud Service ora fornisce un rapporto Adobe Analytics OOTB. Consente di comprendere facilmente le prestazioni dei moduli. Le metriche a livello di modulo forniscono informazioni approfondite sulle prestazioni del modulo per più indicatori di prestazioni chiave (KPI, Key Performance Indicator), come rappresentazioni, visitatori, invii e tempo medio di riempimento. Monitorando il comportamento degli utenti e i feedback ricevuti, è possibile identificare le aree del modulo che causano confusione e guidare i miglioramenti alla progettazione e alle funzionalità del modulo.
 
@@ -131,21 +91,18 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
    * **Nuovi ruoli per i destinatari del contratto oltre al solo firmatario**: Adobe Acrobat Sign può espandere i ruoli dei destinatari del contratto oltre al solo firmatario, per soddisfare meglio i requisiti del flusso di lavoro. Quando questa opzione è abilitata, ogni destinatario di un contratto ha il proprio ruolo configurabile singolarmente, con Firmatario come impostazione predefinita.
 
-* **[Protect i tuoi documenti con le API Document Assurance (parte delle API di comunicazione)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: le API Document Assurance ti consentono di proteggere le informazioni riservate firmando e crittografando i documenti. Tramite la crittografia, il contenuto di un documento viene trasformato in un formato illeggibile, in modo che solo gli utenti autorizzati possano accedervi. Questo strato di protezione fortificato non solo protegge i dati preziosi da occhi non autorizzati, ma offre anche la massima tranquillità. Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che solo i destinatari desiderati possano modificare i documenti.
-
 * **Supporto del conteggio delle pagine nelle API di comunicazione**: ora, oltre a recuperare il documento tramite le API di comunicazione, puoi ricevere anche le preziose informazioni sul numero di pagine contenute all’interno del documento.
 
 * **[Gestione degli errori con gestori degli errori personalizzati nell’editor di regole](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: ora puoi richiamare una funzione personalizzata in risposta a un errore restituito da un servizio esterno e fornire una risposta personalizzata agli utenti finali. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel back-end per codici di errore specifici o informare il cliente che il servizio non è disponibile.
 
 * **[Versione a 64 bit di AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: la versione a 64 bit di AEM Forms Designer offre prestazioni, scalabilità e gestione della memoria migliorate per migliorare l’esperienza di creazione dei moduli. Grazie all&#39;architettura a 64 bit, è possibile gestire con facilità progetti ancora più grandi e complessi, garantendo flussi di lavoro di progettazione ottimizzati ed efficienza. Migliora le funzionalità di progettazione dei moduli e abbraccia il futuro di AEM Forms Designer con questa versione all’avanguardia.
 
-
 ### Programma di adozione anticipata {#forms-early-adopter}
 
 * **[Protect i tuoi documenti con le API DocAssurance (parte delle API di comunicazione)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: le API DocAssurance ti consentono di proteggere le informazioni riservate firmando e crittografando i documenti. Tramite la crittografia, il contenuto di un documento viene trasformato in un formato illeggibile, in modo che solo gli utenti autorizzati possano accedervi. Questo strato di protezione fortificato non solo protegge i dati preziosi da occhi non autorizzati, ma offre anche la massima tranquillità. Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che solo i destinatari desiderati possano modificare i documenti.
 
-      Puoi scrivere su &quot;aem-forms-early-adopter-program@adobe.com&quot; dal tuo ID e-mail ufficiale per partecipare al programma di adozione anticipata e richiedere l’accesso alla funzionalità.
-  
+  Puoi scrivere a `aem-forms-early-adopter-program@adobe.com` dal tuo id e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità.
+
 * **[Forms adattivo headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=it)**: utilizza Forms adattivo headless per consentire agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e interagire tramite API, anziché tramite un’interfaccia utente grafica tradizionale. I moduli adattivi headless consentono di:
 
    * creare moduli multi-canale di alta qualità nel linguaggio di programmazione desiderato
@@ -155,14 +112,13 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   È possibile inviare un’e-mail a `aem-forms-headless@adobe.com` dal proprio ID e-mail ufficiale per aderire al programma per i primi utilizzatori.
 
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Registri CDN {#cdn-logs}
+### Nuovo comportamento di caching CDN per i parametri URL relativi alla campagna {#cache-url-params}
 
-Scarica i registri CDN da Cloud Manager, utile per ottimizzare il rapporto cache-hit e migliorare la visibilità nel flusso di distribuzione dei contenuti. [Informazioni su](/help/implementing/developing/introduction/logging.md#cdn-log) il formato di registro CDN. Questa funzione verrà gradualmente implementata dai primi di settembre.
+Per i nuovi ambienti, la rete CDN rimuoverà i parametri di query correlati al marketing per impostazione predefinita, al fine di aumentare le prestazioni della campagna di marketing e i rapporti di hit della cache. Gli ambienti esistenti non subiscono modifiche. [Ulteriori informazioni.](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
-### Programma per l’adozione anticipata delle regole CDN e WAF {#waf-early-adopter}
+### Regole filtro traffico (incluse le regole WAF) programma per l’adozione anticipata {#waf-early-adopter}
 
 Filtra il traffico sulla rete CDN in base a:
 * intestazioni e proprietà della richiesta (ad esempio, indirizzo IP)
@@ -171,7 +127,6 @@ Filtra il traffico sulla rete CDN in base a:
 Ti interessa provare questa funzione e condividere feedback? Invia un messaggio e-mail a **aemcs-waf-adopter@adobe.com** dal tuo ID e-mail ufficiale per ulteriori informazioni sul programma early adopter. Lo spazio è limitato.
 
 Ulteriori informazioni sulla funzione nell’articolo [qui](/help/security/cdn-and-waf-rules.md).
-
 
 ## Note sulla versione di manutenzione {#maintenance}
 
