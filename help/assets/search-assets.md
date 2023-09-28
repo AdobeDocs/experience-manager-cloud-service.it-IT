@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
+source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
 workflow-type: tm+mt
-source-wordcount: '5532'
-ht-degree: 7%
+source-wordcount: '5561'
+ht-degree: 6%
 
 ---
 
@@ -46,12 +46,26 @@ Utilizza il **[!UICONTROL Filtri]** per cercare risorse, cartelle, tag e metadat
 ## Interfaccia per la ricerca delle risorse {#searchui}
 
 Acquisisci familiarità con l’interfaccia di ricerca delle risorse e le azioni disponibili.
-
-![Interfaccia dei risultati di ricerca di Experience Manager Assets](assets/aem_search_results.png)
-
+<!--
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
+-->
+![Interfaccia dei risultati di ricerca di Experience Manager Assets](assets/aem-search-interface.png)
 *Figura: Comprendere [!DNL Experience Manager Assets] interfaccia dei risultati di ricerca.*
 
-**R.** Salva la ricerca come raccolta avanzata. **B.** Filtri o predicati per limitare i risultati della ricerca. **C.** Visualizza file, cartelle o entrambi. **D.** Fai clic su Filtri per aprire o chiudere la barra a sinistra. **E.** Il percorso di ricerca è DAM. **F.** Campo Omnisearch con la parola chiave di ricerca fornita dall’utente. **G.** Seleziona i risultati della ricerca caricati. **H.** Numero di risultati di ricerca visualizzati rispetto al totale dei risultati. **I.** Chiudere la ricerca. **J.** Passa dalla vista a schede alla vista a elenco.
+**R.** Salva la ricerca come raccolta avanzata.
+**B.** Filtri o predicati per limitare i risultati della ricerca.
+**C.** Visualizza file, cartelle o entrambi.
+**D.** Il percorso di ricerca è DAM.
+**E.** Accedere alle ricerche salvate.
+**F.** Fai clic su Filtri per aprire o chiudere la barra a sinistra.
+**G.** Mostra Risorse come ricerca predefinita.
+**H.** Il percorso di ricerca è DAM.
+**I.** Campo Omnisearch con la parola chiave di ricerca fornita dall’utente.
+**J.** Seleziona i risultati della ricerca caricati.
+**K.** Ordina per Creato, Modificato, Nome, Nessuno.
+**L.** Ordinare in ordine crescente o decrescente.
+**M.** Numero di risultati di ricerca visualizzati rispetto al totale dei risultati. **N.** Chiudere la ricerca.
+**O.** Passa dalla vista a schede alla vista a elenco.
 
 ### Facet di ricerca dinamica {#dynamicfacets}
 
@@ -160,7 +174,10 @@ Per configurare la dimensione del batch di risorse:
 
 **Cercare le risorse all’interno di una cartella**: puoi limitare la ricerca a una cartella specifica. In **[!UICONTROL Filtri]** aggiungere il percorso di una cartella. È possibile selezionare una sola cartella alla volta.
 
-![Limitare i risultati della ricerca a una cartella aggiungendo un percorso cartella nel pannello Filtri](assets/search_folder_select.gif)
+![Limitare i risultati della ricerca a una cartella aggiungendo un percorso cartella nel pannello Filtri](assets/limiting-search.gif)
+<!--
+![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *Figura: Limitare i risultati della ricerca a una cartella aggiungendo un percorso cartella nel pannello Filtri.*
 
@@ -277,7 +294,9 @@ Passa i seguenti parametri di richiesta in un URL per avviare il selettore risor
 
 Per accedere all’interfaccia del selettore delle risorse, vai a `https://[aem_server]:[port]/aem/assetpicker`. Passa alla cartella desiderata e seleziona una o più risorse. In alternativa, cerca la risorsa desiderata dalla casella Omnisearch, applica il filtro in base alle esigenze, quindi selezionala.
 
-![Sfoglia e seleziona la risorsa nel selettore risorse](assets/assetpicker.png)
+![Sfoglia e seleziona la risorsa nel selettore risorse](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *Figura: Sfogliare e selezionare la risorsa nel selettore risorse.*
 
