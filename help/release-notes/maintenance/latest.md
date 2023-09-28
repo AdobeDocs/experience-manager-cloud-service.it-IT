@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 0dab7428d8ae5ec4c11a88ff310fad649a365868
+source-git-commit: b147c80581bcb554ae0b4ac971c5f98e7160d1df
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 22%
+source-wordcount: '1363'
+ht-degree: 8%
 
 ---
 
@@ -26,6 +26,12 @@ Di seguito sono riepilogati i continui miglioramenti per la versione di manutenz
 * SITES-11206: Frammenti di contenuto: API di ricerca per frammenti di contenuto.
 * SITES-11262: Frammenti di contenuto: pulsante per passare al nuovo editor di frammenti di contenuto.
 * SITES-15447: Componenti core: versione 2.23.4.
+* FORMS-9624: è stato introdotto il componente CAPTCHA per Forms adattivo basato su componenti core.
+* FORMS-9913: è stato migliorato il servizio invoke dell&#39;editor visivo aggiungendo la funzionalità di convalida dei campi e la visualizzazione di messaggi di errore e di successo appropriati.
+* FORMS-10106: API GeneratePDFOutput migliorata per restituire il numero di pagine contenute nel documento generato.
+* FORMS-2494: è stato aggiunto il supporto per frammenti di modulo per Forms adattivo basati su componenti core.
+* FORMS-9807: è stato aggiunto il supporto per consentire l’accesso all’URL di una pagina restituito in seguito all’invio corretto tramite l’editor di regole del modulo adattivo.
+* FORMS-10571: è stata aggiunta la possibilità di impostare un URL di reindirizzamento della pagina di ringraziamento in base alla risposta di un servizio utilizzato in un’azione di invio personalizzata per Forms adattivo basata sui Componenti core.
 
 ### Problemi risolti {#fixed-issues-13665}
 
@@ -57,6 +63,42 @@ Di seguito sono riepilogati i continui miglioramenti per la versione di manutenz
 * SITES-15815: Lanci: la pagina eliminata dal lancio impedisce la corretta promozione di Launch.
 * SITES-15223: Editor pagina: impossibile ridimensionare i componenti nell’emulatore delle dimensioni del tablet.
 * SITES-15463: Modelli di pagina: impossibile pubblicare i modelli.
+* FORMS-10700: quando si utilizza il componente selettore data all’interno di un modulo adattivo basato su componenti core:
+   * Quando l’utente invia il modulo senza fornire alcun input per il componente data, viene registrato un errore.
+   * Quando si utilizzano versioni localizzate del selettore di date, alcuni mesi funzionano senza problemi e la selezione di alcuni altri porta a un malfunzionamento del componente.
+* FORMS-9598: il componente di incorporamento AEM Forms non funziona.
+* FORMS-9579: non è possibile passare un valore booleano a una funzione mentre si utilizza l’editor delle regole.
+* FORMS-9916: se si contrassegna il campo come non valido, viene attivato nuovamente un evento di modifica sullo stesso campo. Questo evento imprevisto attiva nuovamente la regola, creando un ciclo che continua a ripetersi fino a raggiungere un limite massimo di 10 ripetizioni.
+* FORMS-10243: l’opzione Set Focus non funziona correttamente per Forms adattivo basato su componenti core. In particolare, quando si fa clic su un pulsante di scelta e la regola &quot;imposta stato attivo&quot; è abilitata per un oggetto casella di testo, non riesce a impostare lo stato attivo come previsto, nonostante altre regole funzionino correttamente.
+* FORMS-10416: per un modulo adattivo headless, quando la proprietà &quot;:type&quot; è inclusa, il componente a input multilinea viene visualizzato come un normale componente di input di testo a riga singola.
+* FORMS-10015: per un modulo adattivo basato su componenti core, quando si sceglie l’oggetto Form nell’editor delle regole, questo passa l’intero oggetto istanza campo alla funzione personalizzata anziché al solo valore del campo.
+* FORMS-9890: gli utenti del gruppo amministratori cloud, senza accesso utente ai moduli, possono creare origini dati, moduli e modelli dati dei moduli. Tuttavia, non possono visualizzare i servizi disponibili nel sistema quando si utilizza &quot;Invoke service&quot; nell’editor di regole.
+* FORMS-9075: Quando si invia un modulo adattivo, gli assistenti vocali non annunciano tutti i messaggi di errore relativi ai campi obbligatori.
+* FORMS-9014: sono stati risolti i seguenti problemi di accessibilità:
+   * Quando si apre la casella della firma scarabocchio, il cursore passa al componente successivo e non all&#39;interno della casella stessa. Questo comportamento è stato confermato come un problema dal team Accesso facilitato.
+   * Dopo aver firmato, premendo Invio non si chiude la finestra di dialogo; gli utenti devono fare clic esplicitamente sul pulsante OK.
+   * Dopo la firma, l’ordine di tabulazione viene reimpostato in alto, anziché rimanere nel componente firma o passare al successivo.
+   * L&#39;opzione per cancellare la firma, rappresentata da un&#39;icona a forma di croce, non fa parte dell&#39;ordine di tabulazione e viene visualizzata solo al passaggio del mouse.
+   * Non è possibile accedere alla finestra di dialogo di conferma della cancellazione della firma tramite tastiera.
+   * L’etichetta del pulsante di firma della tastiera deve essere corretta per maggiore chiarezza.
+   * I controlli all&#39;interno della firma scarabocchio non dispongono del rapporto di contrasto consigliato.
+   * Lo stato inattivo del pulsante OK/segno di spunta deve includere l’attributo &quot;aria-disabled&quot;.
+   * L’assistente vocale non trasmette il testo utilizzato per creare la firma digitata, rendendola inaccessibile agli utenti ipovedenti.
+* FORMS-9214: per Forms adattivo basato su componenti core, la funzione personalizzata non viene richiamata a meno che non venga utilizzata per modificare un altro campo, ad esempio per impostare il valore di un campo diverso.
+* Per le API di generazione di documenti, il percorso &quot;/content&quot; mostra incongruenze nel suo utilizzo tra il percorso del modello, la directory principale del contenuto e i dati. In alcuni casi funziona correttamente ma non in modo uniforme.
+* FORMS-10718: è stato aggiunto il supporto per l’API resolveNode di GuideBridge per Forms adattivo basato sui componenti core.
+* FORMS-9998: in Forms adattivo basato su componenti core, le funzioni &quot;È vuoto&quot; e &quot;Non è vuoto&quot; non funzionano come previsto durante la convalida dell’input di testo tramite l’editor di regole.
+* FORMS-10236: il componente File allegato non funziona correttamente per Forms adattivo basato su componenti core. Quando si utilizza il componente Allegato, le anteprime dei file funzionano inizialmente, ma se si allegano altri file di tipi o formati simili o diversi, l’anteprima non funziona correttamente.
+* FORMS-10470: nel componente Casella di controllo, quando il valore predefinito è deselezionato (&quot;off&quot;) e il tipo di dati è String, il pulsante di invio non funziona.
+* FORMS-10534: in Forms adattivo basato su componenti core, l’opzione dell’operando booleano viene visualizzata a sinistra, a indicare che è selezionabile. Tuttavia, quando un utente cerca di selezionarlo, viene evidenziato un errore o viene generata un’indicazione di errore, che suggerisce che la selezione non funziona come previsto.
+* FORMS-10248: in Forms adattivo basato su componenti core, l’impostazione del valore di un pulsante di opzione o di una casella di controllo quando il tipo di valore dei dati è booleano non funziona come previsto.
+* FORMS-8114: il selettore di date e il modello non vengono letti correttamente dallo screen reader NVDA. In particolare, quando si utilizza l’assistente vocale NVDA, la selezione della data senza pattern viene letta correttamente. Tuttavia, quando un pattern viene applicato al selettore di date, viene letto come una tabella invece di essere interpretato correttamente.
+
+
+
+
+
+
 
 ### Problemi noti {#known-issues-13665}
 
