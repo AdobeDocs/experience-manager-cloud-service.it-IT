@@ -2,10 +2,10 @@
 title: Introduzione a Cloud Manager
 description: Scopri in che modo Cloud Manager supporta il progetto AEM tramite programmi, ambienti e pipeline.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 1608a44b8c9b5ae6bd75307ecb29dcd8f0ff367f
+source-git-commit: 0e0daf9870ba2e5923f9ea5dcdf3821a0cd0b7c6
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 100%
+source-wordcount: '861'
+ht-degree: 97%
 
 ---
 
@@ -51,6 +51,8 @@ Puoi accedere alla pagina Programmi e prodotti di Cloud Manager anche dalla pagi
 | Generazione del token di accesso personale | Accesso a Git |  | x |  | x |
 | Crea un RDE | Crea un ambiente di sviluppo rapido | x |  |  | x |
 | Reimposta un RDE | Ripristina un ambiente di sviluppo rapido | x |  |  | x |
+| Creare/modificare i set di contenuti | Creare o modificare un set di contenuti per la copia del contenuto |  | x |  |  |
+| Avvia/annulla copia contenuto | Avviare o annullare un processo di copia del contenuto |  | x |  |  |
 
 >[!NOTE]
 >
