@@ -1,10 +1,10 @@
 ---
 title: Assegnazione del lettore a un display in Schermi as a Cloud Service
-description: Questa pagina descrive come assegnare un lettore a una visualizzazione in Screens as a Cloud Service.
+description: Scopri come assegnare un lettore a una visualizzazione in Screens as a Cloud Service.
 exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '224'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Dopo aver registrato il lettore, è necessario assegnargli la visualizzazione ne
 
 Per assegnare un lettore a una visualizzazione, effettua le seguenti operazioni:
 
-1. Seleziona **Lettori** nel pannello di navigazione a sinistra, seleziona Network Admin Panel (Pannello di amministrazione della rete) e quindi il lettore. Fai clic su **Assegna visualizzazione**
+1. Seleziona **Lettori** nel pannello di navigazione a sinistra, seleziona Network Admin Panel (Pannello di amministrazione della rete) e quindi il lettore. Clic **Assegna visualizzazione**
 
    ![immagine](/help/screens-cloud/assets/player/register-player7.png)
 
@@ -33,8 +33,8 @@ Per assegnare un lettore a una visualizzazione, effettua le seguenti operazioni:
 
 ## Riproduzione dei contenuti {#content-playback}
 
-Dopo aver assegnato una visualizzazione a un lettore, come illustrato nella sezione precedente, la visualizzazione assegnata verrà visualizzata in **VISUALIZZAZIONE ASSEGNATA** pannello.
+Dopo aver assegnato una visualizzazione a un lettore, come illustrato nella sezione precedente, la visualizzazione assegnata viene visualizzata nella sezione **VISUALIZZAZIONE ASSEGNATA** pannello.
 
-Ora la visualizzazione viene assegnata al lettore e il canale inizia a riprodurre il contenuto. Ora il lettore deve scaricare e avviare la riproduzione del contenuto. **Congratulazioni.**
+Ora la visualizzazione viene assegnata al lettore e il canale inizia a riprodurre il contenuto. Ora il lettore deve scaricare e iniziare a riprodurre il contenuto. **Congratulazioni.**
 
 ![immagine](/help/screens-cloud/assets/player/output.gif)

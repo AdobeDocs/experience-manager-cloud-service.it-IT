@@ -1,11 +1,11 @@
 ---
 title: Aggiunta del componente aggiuntivo Screens a un nuovo programma in Cloud Manager
-description: Questa pagina descrive l’aggiunta di un componente aggiuntivo Screens a un nuovo programma in Cloud Manager per Screens as a Cloud Service.
+description: Scopri come aggiungere un componente aggiuntivo Screens a un nuovo programma in Cloud Manager per Screens as a Cloud Service.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 5%
+source-wordcount: '308'
+ht-degree: 6%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 5%
 Questa sezione descrive come aggiungere Screens come componente aggiuntivo a un nuovo programma in Cloud Manager.
 
 >[!NOTE]
->Consulta [Informazioni su programmi e tipi di programmi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) per ulteriori informazioni sui programmi di Cloud Manager.
+>Consulta [Informazioni su programmi e tipi di programmi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en) per ulteriori informazioni sui programmi di Cloud Manager.
 
 ## Obiettivo {#objective}
 
@@ -27,9 +27,9 @@ Per aggiungere Screens come componente aggiuntivo a un nuovo programma in Cloud 
 1. Accedi a [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Consulta [Introduzione a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=it?lang=it) per informazioni su Cloud Manager.
+   >Consulta [Introduzione a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=en) per informazioni su Cloud Manager.
 
-1. Fai clic su **Aggiungi programma** dalla pagina di destinazione di Cloud Manager.
+1. Clic **Aggiungi programma** dalla pagina di destinazione di Cloud Manager.
 
    ![immagine](/help/screens-cloud/assets/onboarding/onboard-screens-addon1.png)
 
@@ -41,10 +41,10 @@ Per aggiungere Screens come componente aggiuntivo a un nuovo programma in Cloud 
 
    ![immagine](/help/screens-cloud/assets/onboarding/onboard-screens-addon3.png)
 
-1. Una volta completata la configurazione della creazione del programma, visualizzerai il programma Cloud Manager, ad esempio, **Programma dimostrativo ScreensCloud**, come illustrato nella figura seguente, con Screens come componente aggiuntivo nel programma.
+1. Una volta completata la configurazione della creazione del programma, puoi visualizzare il programma Cloud Manager. Ad esempio, il **Programma dimostrativo ScreensCloud**, come illustrato nella figura seguente, con Screens come componente aggiuntivo nel programma.
 
    ![immagine](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come aggiungere Screens come componente aggiuntivo a un programma Cloud Manager esistente e aver visualizzato il programma in Programmi e prodotti di Cloud Manager, ora puoi procedere al passaggio successivo nel processo di onboarding, ovvero [Creazione di un ramo per il progetto in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Dopo aver appreso come aggiungere Screens come componente aggiuntivo a un programma Cloud Manager esistente e aver visualizzato il programma in Programmi e prodotti di Cloud Manager, puoi procedere. Il passaggio successivo nel processo di onboarding è [Creazione di un ramo per il progetto in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
