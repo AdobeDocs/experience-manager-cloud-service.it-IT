@@ -3,9 +3,9 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 39284210e6639c4ed2a80cf86dbf0ea32d889986
+source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1419'
 ht-degree: 17%
 
 ---
@@ -50,7 +50,7 @@ Per ulteriori informazioni sui Edge Delivery Services, consulta l’articolo [qu
 
 **Assegnare il modulo metadati a una cartella**
 
-Ora puoi assegnare il modulo metadati a una cartella specifica all’interno della distribuzione Assets Essentials. Tutte le risorse nella cartella, comprese le risorse nelle sottocartelle, quindi visualizzano le proprietà definite nel modulo metadati assegnato.
+Ora puoi assegnare il modulo metadati a una cartella specifica all’interno della distribuzione. Tutte le risorse nella cartella, comprese le risorse nelle sottocartelle, quindi visualizzano le proprietà definite nel modulo metadati assegnato.
 
 ![assegnare il modulo metadati a una cartella](/help/release-notes/assets/assign-to-folder.png)
 
