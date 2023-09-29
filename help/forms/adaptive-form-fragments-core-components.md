@@ -4,15 +4,15 @@ description: Forms adattivo fornisce un meccanismo per creare un segmento di mod
 topic-tags: author
 keywords: Aggiungere frammenti di moduli adattivi, frammenti di moduli adattivi, creare un frammento di modulo, aggiungere un frammento a un modulo adattivo, gestire i frammenti
 feature: Adaptive Forms
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 290cdecdb355b5c9a872d0f12ac701d271a258d4
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1745'
 ht-degree: 2%
 
 ---
 
 
-# Frammenti di moduli adattivi {#adaptive-form-fragments}
+# Creare e utilizzare frammenti di Forms adattivi in un modulo adattivo basato su componenti core {#adaptive-form-fragments}
 
 
 | Versione | Collegamento articolo |

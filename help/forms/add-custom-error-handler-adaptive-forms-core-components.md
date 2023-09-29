@@ -7,15 +7,15 @@ keywords: Aggiungi un gestore degli errori personalizzato, aggiungi un gestore d
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: a589005551dd7d8cdf8ac004725341905f0e99d1
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2408'
 ht-degree: 2%
 
 ---
 
 
-# Gestori di errori in Forms adattivo (componenti core) {#error-handlers-in-adaptive-form}
+# Gestori di errori per il modulo adattivo basato su componenti core {#error-handlers-in-adaptive-form}
 
 
 | Versione | Collegamento articolo |
