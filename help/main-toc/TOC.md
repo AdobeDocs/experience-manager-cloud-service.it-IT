@@ -8,10 +8,10 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 904b35d31dc317703ad1aec09cefee3c111abcb0
+source-git-commit: a741105afdb2fb4dc3bfb70dc6dcb1bf317a3aea
 workflow-type: tm+mt
-source-wordcount: '4286'
-ht-degree: 94%
+source-wordcount: '4296'
+ht-degree: 93%
 
 ---
 
@@ -539,8 +539,11 @@ ht-degree: 94%
       + [Configurare la mappatura dei metadati delle risorse](/help/assets/configure-asset-metadata-mapping.md)
       + [Installa [!DNL enhanced connector] per [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Rimuovere le dipendenze esterne per le installazioni esistenti](/help/assets/remove-external-dependencies.md)
-      + [Configura [!DNL enhanced connector] per [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-      + [Aggiornare [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+      + [Configura  [!DNL enhanced connector]  per  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Aggiorna [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+
++ Integrazione con Adobi Express {#integration-adobe-express}
+   + [Componente aggiuntivo AEM Assets per Adobe Express](/help/assets/addon-adobe-express.md)
 + Forms {#forms}
    + Panoramica {#forms-overview}
       + [Introduzione](/help/forms/home.md)
