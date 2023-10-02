@@ -1,9 +1,7 @@
 ---
 title: Componente aggiuntivo AEM Assets per Adobe Express
 description: Il componente aggiuntivo AEM Assets, ad Adobe Express, consente di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente di Adobi Express.
-hide: true
-hidefromtoc: true
-source-git-commit: 5fe4204bcfdd42edad53ca80b693800aef0a5dc5
+source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
