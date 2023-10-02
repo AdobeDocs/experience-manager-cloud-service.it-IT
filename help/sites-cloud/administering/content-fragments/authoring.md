@@ -3,9 +3,9 @@ title: Authoring dei frammenti di contenuto
 description: Scopri come creare contenuti per i frammenti di contenuto, quindi creare varianti di tale contenuto in base allo scopo. Ciò offre maggiore flessibilità sia per la distribuzione headless che per l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2249'
 ht-degree: 4%
 
 ---
@@ -62,6 +62,11 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
    * un&#39;opzione per mostrare tutto **Riferimenti padre** (icona collegamento)
    * il frammento **[Stato](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, e le ultime informazioni salvate
    * un pulsante per passare all’editor originale (basato su Assets)
+
+     >[!WARNING]
+     >
+     >L’editor originale si aprirà nella stessa scheda. Si sconsiglia di aprire entrambi gli editor contemporaneamente.
+
 * pannello a sinistra: mostra **[Varianti](#variations)** per il frammento di contenuto e i relativi **Campi**:
    * questi collegamenti possono essere utilizzati per [Navigare nella struttura dei frammenti di contenuto](#navigate-structure)
 * pannello a destra: presenta le schede [visualizzazione delle proprietà (metadati) e dei tag](#view-properties-tags), informazioni su [cronologia delle versioni](#view-version-history), e informazioni relative a qualsiasi [copie per lingua](#view-language-copies)

@@ -2,10 +2,10 @@
 title: Gestione dei frammenti di contenuto (risorse - frammenti di contenuto)
 description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 70%
+source-wordcount: '1877'
+ht-degree: 69%
 
 ---
 
@@ -196,6 +196,10 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
    * **Disattivato**: rosso
 
 * Un pulsante consente di: **Prova nuovo editor**, aprendo direttamente il *nuovo* [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md) accessibile tramite [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+
+  >[!WARNING]
+  >
+  >Il nuovo editor si aprirà nella stessa scheda. Si sconsiglia di aprire entrambi gli editor contemporaneamente.
 
 * **Salva** fornisce accesso all’opzione **Salva e chiudi**.
 
