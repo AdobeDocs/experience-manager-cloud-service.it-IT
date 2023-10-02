@@ -2,10 +2,10 @@
 title: Gestione dei frammenti di contenuto (risorse - frammenti di contenuto)
 description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 71%
+source-wordcount: '1855'
+ht-degree: 70%
 
 ---
 
@@ -38,7 +38,7 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 >
 >Ora sono gestite principalmente con **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** , anche se possono ancora essere gestite dalla **Risorse** console. Questa sezione riguarda la gestione da **Risorse** console.
 >
->Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console). Entrambi gli editor dispongono di un interruttore nella barra degli strumenti superiore per consentire un accesso rapido all’altro editor.
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
@@ -194,6 +194,8 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
    * **Pubblicato**: verde
    * **Modificato**: arancione
    * **Disattivato**: rosso
+
+* Un pulsante consente di: **Prova nuovo editor**, aprendo direttamente il *nuovo* [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md) accessibile tramite [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 
 * **Salva** fornisce accesso all’opzione **Salva e chiudi**.
 
