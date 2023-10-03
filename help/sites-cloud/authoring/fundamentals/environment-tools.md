@@ -2,9 +2,9 @@
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
 workflow-type: tm+mt
-source-wordcount: '2150'
+source-wordcount: '2166'
 ht-degree: 96%
 
 ---
@@ -224,7 +224,10 @@ Apri la console richiesta, quindi accedi alla risorsa desiderata e apri i **Rife
 
 Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determinate situazioni sono disponibili azioni ulteriori quando viene selezionato un riferimento specifico, inclusi:
 
-* **Collegamenti in entrata**: fornisce un elenco di pagine che fanno riferimento a una data pagina, insieme all’accesso diretto alla funzione di **Modifica** di una di queste pagine quando selezioni un collegamento specifico.
+* **Collegamenti in entrata**: fornisce un elenco di pagine che fanno riferimento a una data pagina, insieme all’accesso diretto alla funzione di **Modifica** di una di queste pagine quando selezioni un collegamento specifico..
+
+   * Questo può mostrare solo collegamenti statici, non collegamenti generati dinamicamente; ad esempio dal componente Elenco.
+
 * Istanze di contenuto prestato o preso in prestito mediante il componente **Riferimento**: da qui puoi passare alla pagina di riferimento o a cui si fa riferimento.
 * [Lanci](/help/sites-cloud/authoring/launches/overview.md): fornisce accesso ai lanci correlati.
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md) visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
