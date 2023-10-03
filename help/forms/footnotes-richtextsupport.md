@@ -1,9 +1,10 @@
 ---
-title: Supporto delle note a piè di pagina per Adaptive Forms
-description: Migliora Adaptive Forms con note a piè di pagina in formato Rich Text informative. Migliora l'esperienza utente e il coinvolgimento.
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+title: Supporto delle note a piè di pagina in Adaptive Forms
+description: Utilizza l’editor Rich Text per le note a piè di pagina in un modulo adattivo.
+exl-id: f04dae84-daab-42f8-876f-02fe426f62be
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '438'
 ht-degree: 1%
 
 ---

@@ -1,14 +1,11 @@
 ---
-title: Precompilare i campi di un modulo adattivo
-seo-title: Prefill Adaptive Form fields
-description: Utilizza i dati esistenti per precompilare i campi di un modulo adattivo.
-seo-description: With Adaptive Forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+title: Come si precompilano i campi del modulo adattivo?
+description: 'Utilizzare i dati esistenti per precompilare i campi di un modulo adattivo: gli utenti possono precompilare le informazioni di base in un modulo accedendo con i propri profili social.'
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2042'
 ht-degree: 1%
 
 ---

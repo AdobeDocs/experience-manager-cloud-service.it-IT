@@ -1,9 +1,10 @@
 ---
-title: Connettere AEM Forms a un database
-description: È possibile recuperare e salvare dati in servizi Web RESTful, servizi Web basati su SOAP e servizi OData da [!DNL AEM Forms] as a Cloud Service. Il servizio fornisce uno strumento dedicato per recuperare, testare, convalidare e inviare dati a vari tipi di origini dati.
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+title: Come connettere un database a [!DNL AEM Forms] as a Cloud Service?
+description: Recupera e salva i dati nei servizi web RESTful, nei servizi web basati su SOAP e nei servizi OData da un modulo adattivo o da un flusso di lavoro AEM.
+exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '555'
 ht-degree: 2%
 
 ---

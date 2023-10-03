@@ -1,10 +1,10 @@
 ---
-title: Genera documento di record per Adaptive Forms
-description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
+title: Come si genera un documento di record per Adaptive Forms?
+description: Scopri come generare un modello per un documento di record (DoR) per i componenti core di Forms adattivi.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '3105'
+source-wordcount: '3107'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 Ora, quando il modulo adattivo viene inviato, viene generato un documento di record aggiornato.
 
-![Aggiornamento dei bundle-](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aggiornato-](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Considerazioni chiave durante l’utilizzo del documento record {#key-considerations-when-working-with-document-of-record}
 

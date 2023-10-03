@@ -1,14 +1,14 @@
 ---
 title: Progettazione di uno schema JSON per un modulo adattivo
-description: Scopri come creare Forms adattivo utilizzando lo schema JSON come modello di modulo. Puoi utilizzare gli schemi JSON esistenti per creare Forms adattivo. Approfondisci un esempio di schema JSON, preconfigura i campi nella definizione dello schema JSON, limita i valori accettabili per un componente Modulo adattivo e scopri i costrutti non supportati.
+description: Scopri come creare uno schema JSON per un modulo adattivo e un modulo adattivo basato sullo schema per produrre i dati del reclamo per lo schema.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 5%
+source-wordcount: '1343'
+ht-degree: 6%
 
 ---
 

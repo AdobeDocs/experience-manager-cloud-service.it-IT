@@ -1,11 +1,9 @@
 ---
-title: Importare ed esportare le risorse
-seo-title: Import and export assets to [!DNL AEM Forms]
-description: Puoi importare ed esportare Forms adattivo e le risorse correlate in istanze AEM. Ciò consente di migrare i moduli o spostarli tra i sistemi.
-seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+title: Importare ed esportare le risorse in [!DNL AEM Forms]?
+description: Scopri come utilizzare DocuSign con un modulo adattivo per raccogliere firme elettroniche.
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1314'
 ht-degree: 1%
 
 ---

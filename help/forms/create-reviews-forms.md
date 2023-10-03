@@ -1,20 +1,18 @@
 ---
-title: Creazione e gestione delle revisioni nei moduli
-seo-title: Creating and managing reviews in forms
-description: Una revisione è un meccanismo che consente a uno o più revisori di aggiungere commenti a un modulo.
-seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
+title: Come si creano e gestiscono le revisioni nei moduli?
+description: Utilizzare il meccanismo di revisione per aggiungere revisori e consentire ai revisori di aggiungere commenti a un modulo.
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '731'
 ht-degree: 2%
 
 ---
 
 # Creazione e gestione delle revisioni ai moduli{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente per l’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 
 | Versione | Collegamento articolo |
@@ -35,7 +33,7 @@ Una revisione è un meccanismo che consente a uno o più revisori di aggiungere 
    * **Titolo**: obbligatorio, può contenere caratteri alfanumerici, trattini e trattini bassi.
    * **Descrizione**: facoltativo, descrizione dello scopo/contenuto da rivedere.
    * **Scadenza**: facoltativo, data in cui termina la revisione. Se la scadenza è stata superata, l’attività viene visualizzata come &quot;Scaduto&quot;.
-   * **Nome revisore**: almeno uno è obbligatorio. Utilizza la casella combinata per aggiungere revisori, digitando un elenco dei nomi con i nomi corrispondenti; seleziona un nome e fai clic su **Aggiungi**. Nella sezione successiva del **Revisori** mostra il nome di tutti i revisori.
+   * **Nome revisore**: almeno uno è obbligatorio. Utilizza la casella combinata per aggiungere revisori, digitando un elenco dei nomi con i nomi corrispondenti; seleziona un nome e fai clic su **Aggiungi**. Nella sezione successiva del **Revisori** mostra i nomi di tutti i revisori.
 
 1. Fai clic su **Inizio** per avviare una revisione.
 

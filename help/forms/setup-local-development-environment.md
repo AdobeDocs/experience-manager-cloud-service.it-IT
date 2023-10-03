@@ -1,9 +1,10 @@
 ---
-title: Configurare l’ambiente di sviluppo locale per AEM Forms
+title: Come si imposta un ambiente di sviluppo locale per AEM Forms?
 description: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '2807'
+source-wordcount: '2810'
 ht-degree: 3%
 
 ---

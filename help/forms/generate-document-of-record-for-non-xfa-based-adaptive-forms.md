@@ -1,11 +1,11 @@
 ---
 title: Generare un documento di record per Adaptive Forms
-description: Spiega come generare un modello per un documento di record (DoR) per Adaptive Forms.
+description: Scopri come generare un modello per un documento di record (DoR) per Forms adattivo.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '4139'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -131,7 +131,7 @@ Lo sviluppatore del modulo associa i campi di Adaptive Forms al modello del docu
 
 Ora, quando il modulo adattivo viene inviato, viene creato un documento di record aggiornato.
 
-![Aggiornamento dei bundle-](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aggiornato-](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Considerazioni chiave durante l’utilizzo del documento record {#key-considerations-when-working-with-document-of-record}
 
@@ -392,8 +392,8 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 
 Esegui i seguenti passaggi dall’istanza di authoring dell’editor di moduli adattivi:
 
-1. Seleziona la **[!UICONTROL Contenitore modulo adattivo (radice)]** componente.
-1. Clic ![Icona Configura](/help/forms/assets/configure-icon.svg) per aprire **[!UICONTROL Proprietà]** del contenitore Modulo adattivo.
+1. Seleziona il componente **[!UICONTROL Contenitore per modulo adattivo (principale)]**.
+1. Fai clic sull’icona ![Configura icona](/help/forms/assets/configure-icon.svg) per aprire le **[!UICONTROL proprietà]** del contenitore per modulo adattivo.
 1. Apri **[!UICONTROL Modello del documento record]** e selezionare una delle seguenti opzioni:
    * **[!UICONTROL Nessuno]**: quando questa opzione è selezionata, no [!UICONTROL Documento record] modello creato per il modulo adattivo.
 

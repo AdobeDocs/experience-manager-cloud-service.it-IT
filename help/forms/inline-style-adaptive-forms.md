@@ -1,14 +1,14 @@
 ---
 title: Come si applicano gli stili in linea ai componenti di moduli adattivi?
-description: Sebbene sia possibile applicare stili personalizzati a un modulo adattivo, è anche possibile applicare proprietà CSS in linea ai singoli componenti di un modulo adattivo. Scopri come applicare stili inline ai componenti del modulo adattivo. Approfondisci l’utilizzo di un esempio per applicare uno stile in linea a un componente campo di testo.
+description: Scopri come applicare stili personalizzati a un modulo adattivo, e come applicare le proprietà CSS in linea ai singoli componenti di un modulo adattivo.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 3%
+source-wordcount: '769'
+ht-degree: 4%
 
 ---
 

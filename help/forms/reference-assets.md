@@ -1,20 +1,18 @@
 ---
 title: Temi di riferimento
-seo-title: Reference Themes
-description: AEM Forms fornisce temi per moduli adattivi che è possibile ottenere da Distribuzione di software e utilizzare per assegnare uno stile a un modulo.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
+description: Per iniziare in modo rapido, utilizza i temi, i modelli e i modelli di dati dei moduli adattivi di riferimento forniti.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
-source-git-commit: 575e9836d676cf6711e039a5bb6860ad04324d60
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 3%
+source-wordcount: '510'
+ht-degree: 7%
 
 ---
 
 # Risorse di riferimento per Forms as a Cloud Service {#reference-themes}
 
-È possibile ottenere i temi di riferimento, i modelli e i modelli di dati dei moduli installando [Pacchetto risorse di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Aiuta ad avviare e accelerare rapidamente lo sviluppo di Forms adattivi. È possibile utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=it) per distribuire questo pacchetto nell’ambiente as a Cloud Service Forms.
+È possibile ottenere i temi di riferimento, i modelli e i modelli di dati dei moduli installando [Pacchetto risorse di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Aiuta ad avviare e accelerare rapidamente lo sviluppo di Forms adattivi. È possibile utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=it) per distribuire questo pacchetto nell’ambiente as a Cloud Service Forms.
 Le risorse di riferimento incluse nel pacchetto sono:
 
 ## Temi {#themes}

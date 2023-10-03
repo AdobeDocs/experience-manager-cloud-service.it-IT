@@ -1,12 +1,14 @@
 ---
 title: Configurare le impostazioni Fuori sede
 description: Consente di delegare le attività mentre si è in congedo o fuori sede per un'esecuzione fluida del flusso di lavoro.
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '873'
 ht-degree: 1%
 
 ---
+
 
 # Configura impostazione Fuori sede {#configure-out-of-office-settings}
 
@@ -29,7 +31,7 @@ Puoi segregare la delega di elementi in base ai modelli di flusso di lavoro. Ad 
 >* Quando si attiva l&#39;impostazione Fuori sede, tutti gli elementi disponibili nella cartella Posta in arrivo prima dell&#39;attivazione rimangono nella cartella Posta in arrivo. Vengono delegati solo gli elementi ricevuti dopo l’abilitazione dell’impostazione.
 >* Quando si disattiva l&#39;impostazione Fuori sede, gli elementi delegati non vengono riassegnati automaticamente all&#39;utente. È possibile utilizzare la funzionalità di richiesta di risarcimento per assegnare gli articoli.
 >* Quando l&#39;utente A delega gli elementi all&#39;utente B e l&#39;utente B delega ulteriormente all&#39;utente C, gli elementi vengono assegnati solo all&#39;utente C e non all&#39;utente B.
->* Quando è presente un ciclo nell&#39;assegnazione, le attività rimangono con l&#39;utente originale. Ad esempio, quando l&#39;utente A delega gli elementi all&#39;utente B, l&#39;utente B delega all&#39;utente C, l&#39;utente C delega all&#39;utente D e l&#39;utente D delega all&#39;utente B, viene creato un loop. In questa situazione, l’elemento rimane con l’Utente originale. L’utente A è l’utente originale nell’esempio precedente.
+>* Quando è presente un ciclo nell&#39;assegnazione, le attività rimangono all&#39;utente originale. Ad esempio, quando l&#39;utente A delega gli elementi all&#39;utente B, l&#39;utente B delega all&#39;utente C, l&#39;utente C delega all&#39;utente D e l&#39;utente D delega all&#39;utente B, viene creato un loop. In tale situazione, l’elemento rimane con l’Utente originale. L’utente A è l’utente originale nell’esempio precedente.
 
 ## Abilitare l&#39;impostazione Fuori sede per l&#39;account {#enable-out-of-office}
 
@@ -52,7 +54,8 @@ Per abilitare l&#39;impostazione Fuori sede per l&#39;account e delegare gli ele
 
    >[!NOTE]
    >
-   >L&#39;ordine degli assegnatari è importante. Quando un elemento viene assegnato a un utente che ha abilitato l&#39;impostazione fuori sede, l&#39;elemento viene valutato in base all&#39;elenco degli assegnatari specificato nell&#39;ordine in cui vengono aggiunti gli assegnatari. Quando un elemento corrisponde ai criteri, viene assegnato all&#39;assegnatario e l&#39;assegnatario successivo non è selezionato.
+   >L&#39;ordine degli assegnatari è importante. Quando un elemento viene assegnato a un utente che ha abilitato l&#39;impostazione Fuori sede, l&#39;elemento viene valutato in base all&#39;elenco degli assegnatari specificato nell&#39;ordine in cui vengono aggiunti gli assegnatari. Quando un elemento corrisponde ai criteri, viene assegnato all&#39;assegnatario e l&#39;assegnatario successivo non viene selezionato.
+
 
 1. Tocca **[!UICONTROL Salva]**. L&#39;impostazione ha effetto alla data e all&#39;ora di inizio specificate. Se si effettua l&#39;accesso mentre si è fuori sede, non si viene considerati in ufficio fino a quando non si modificano le impostazioni.
 
@@ -61,6 +64,7 @@ Ora gli elementi assegnati durante il periodo Fuori sede vengono assegnati autom
 
 >[!NOTE]
 >
+>(Solo per elementi del flusso di lavoro incentrati su Forms) Abilita **[!UICONTROL Consenti all’assegnatario di delegare utilizzando le impostazioni &quot;Fuori sede&quot;]** opzione del **[!UICONTROL Assegna attività]** nel flusso di lavoro. Solo gli elementi per i quali è attivata l&#39;opzione sopra indicata vengono delegati ad altri utenti.
 >(Solo per elementi del flusso di lavoro incentrati su Forms) Abilita **[!UICONTROL Consenti all’assegnatario di delegare utilizzando le impostazioni &quot;Fuori sede&quot;]** opzione del **[!UICONTROL Assegna attività]** nel flusso di lavoro. Solo gli elementi per i quali è abilitata l’opzione precedentemente indicata vengono delegati ad altri utenti.
 
 ## Limitazioni {#limitations}

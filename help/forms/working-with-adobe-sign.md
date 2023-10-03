@@ -1,17 +1,17 @@
 ---
 title: Come usare [!DNL Adobe Sign] in un modulo adattivo?
-description: È possibile attivare la firma elettronica ([!DNL Adobe Sign]) per un modulo adattivo per automatizzare i flussi di lavoro di firma, semplificare i processi a firma singola e multipla e firmare elettronicamente i moduli da dispositivi mobili.
+description: Utilizza Adobe Sign in un modulo adattivo per consentire ai destinatari del modulo di apporre la firma elettronica a un modulo dal dispositivo e dal luogo di loro scelta.
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '3173'
+source-wordcount: '3169'
 ht-degree: 1%
 
 ---
-
 
 # Utilizzo di [!DNL Adobe Sign] in un modulo adattivo {#using-adobe-sign-in-an-adaptive-form}
 

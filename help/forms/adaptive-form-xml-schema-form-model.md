@@ -1,13 +1,13 @@
 ---
 title: Progettare uno schema XML per un modulo adattivo
-description: Scopri come utilizzare lo schema XML come modello di modulo in un modulo adattivo. Approfondisci l’analisi di un esempio di schema XML, aggiungi proprietà speciali ai campi utilizzando uno schema XML e limita i valori accettabili per un componente Modulo adattivo.
+description: Scopri come creare uno schema XML per un modulo adattivo e un modulo adattivo basato sullo schema per produrre i dati dei reclami relativi allo schema.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '950'
 ht-degree: 6%
 
 ---

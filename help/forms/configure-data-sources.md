@@ -1,14 +1,14 @@
 ---
 title: Come si configurano le origini dati?
-description: L’integrazione dei dati di Experience Manager Forms consente di configurare e connettersi a diverse origini dati. Scopri come configurare i servizi web RESTful, i servizi web basati su SOAP e i servizi OData come origini dati e utilizzarli per creare modelli di dati dei moduli.
+description: Scopri come configurare i servizi web RESTful, i servizi web basati su SOAP e i servizi OData come origini dati per un modello dati del modulo.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 0%
+source-wordcount: '2193'
+ht-degree: 1%
 
 ---
 

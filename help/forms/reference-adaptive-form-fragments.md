@@ -1,16 +1,14 @@
 ---
-title: Riferimento a frammenti di moduli adattivi
-seo-title: Reference Adaptive Form Fragments
-description: AEM Forms fornisce frammenti di moduli adattivi che puoi utilizzare come risorse per creare rapidamente un modulo.
-seo-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly.
+title: Cosa sono i frammenti di moduli adattivi di riferimento?
+description: AEM Forms fornisce frammenti di moduli adattivi che puoi utilizzare come risorse per creare rapidamente i moduli.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '423'
 ht-degree: 2%
 
 ---
@@ -39,7 +37,7 @@ Quando si installa il pacchetto, in Forms &amp; Documents viene creata una carte
 
 ## Indirizzo {#address}
 
-Include campi per specificare l&#39;indirizzo postale. I campi disponibili sono indirizzo, CAP, città, stato e paese. Include anche un servizio web preconfigurato che popola la città e lo stato per un codice postale statunitense specificato.
+Include campi per specificare un indirizzo postale. I campi disponibili sono indirizzo, CAP, città, stato e paese. Include anche un servizio web preconfigurato che popola la città e lo stato per un codice postale statunitense specificato.
 
 ![Frammento di indirizzo](assets/address.png)
 
@@ -49,7 +47,7 @@ Include campi per specificare l&#39;indirizzo postale. I campi disponibili sono 
 
 ## Informazioni di contatto {#contact-information}
 
-Include campi per acquisire numero di telefono e indirizzo e-mail.
+Include campi per acquisire un numero di telefono e un indirizzo e-mail.
 
 ![Frammento informazioni contatto](assets/contact-info.png)
 
@@ -60,7 +58,7 @@ Include campi per acquisire numero di telefono e indirizzo e-mail.
 ## Informazioni carta di credito {#credit-card-information}
 
 Include campi per acquisire informazioni sulla carta di credito che possono essere utilizzate per elaborare i pagamenti.
-[ ![Frammento informazioni carta di credito](assets/cc-info.png)](assets/cc-info-1.png)
+[![Frammento informazioni carta di credito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Occupazione corrente {#current-employment}
 

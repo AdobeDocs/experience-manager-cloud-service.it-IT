@@ -1,13 +1,12 @@
 ---
-title: Incorporare un modulo adattivo nella pagina di AEM Sites
-seo-title: How to add an Adaptive Form to an AEM Sites page?
-description: Puoi utilizzare il componente Forms adattivo - Incorpora per incorporare Forms adattivo in una pagina di AEM Sites, che consente di compilare e inviare un modulo senza uscire dalle pagine di AEM Sites.
+title: Come si aggiunge un modulo adattivo a una pagina di AEM Sites?
+description: Incorpora facilmente Forms adattivo in una pagina AEM Sites o in una pagina web ospitata al di fuori dell’AEM.
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '3177'
+source-wordcount: '3165'
 ht-degree: 0%
 
 ---
@@ -372,7 +371,7 @@ Quando incorpori Forms adattivo nelle pagine dei siti AEM, considera gli aspetti
 * L’azione di invio configurata nel modulo originale viene mantenuta nel modulo incorporato.
 * Se hai configurato Adobe Analytics per il modulo originale, i dati di analisi del modulo incorporato vengono acquisiti in Adobe Analytics. Tuttavia, non è disponibile nel rapporto di analisi di Forms.
 
-## Vedi anche {#see-also}
+## Consulta anche {#see-also}
 
 * [Creazione di un Forms adattivo indipendente basato su Componente core](/help/forms/creating-adaptive-form-core-components.md)
 * [Creare un modulo adattivo basato su componenti core direttamente in una pagina di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

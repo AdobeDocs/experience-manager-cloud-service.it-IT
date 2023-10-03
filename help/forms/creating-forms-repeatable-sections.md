@@ -1,15 +1,13 @@
 ---
-title: Creazione di moduli con sezioni ripetibili
-seo-title: Creating forms with repeatable sections
-description: Le sezioni ripetibili sono pannelli che possono essere aggiunti o rimossi in modo dinamico in un modulo.
-seo-description: Repeatable sections are panels that can be dynamically added or removed to a form.
+title: Come creare moduli con sezioni ripetibili?
+description: Scopri come creare sezioni ripetibili in un modulo che possono essere aggiunte o rimosse in modo dinamico.
 uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -91,16 +89,14 @@ Per creare pannelli ripetibili, potete utilizzare uno dei seguenti metodi:
 
       >[!NOTE]
       >
-      >Quando tutte le istanze di un pannello vengono rimosse da un modulo adattivo, per aggiungere un’istanza del pannello rimosso, utilizza la sintassi _panelName per acquisire la gestione delle istanze del pannello e l’API addInstance di gestione istanze per aggiungere l’istanza eliminata. _panelName.addInstance(). Aggiunge un’istanza del pannello rimosso.
-
-
+      >Quando tutte le istanze di un pannello vengono rimosse da un modulo adattivo, per aggiungere un’istanza del pannello rimosso, utilizza la sintassi _panelName per acquisire la gestione delle istanze del pannello e l’API addInstance della gestione delle istanze per aggiungere l’istanza eliminata. _panelName.addInstance(). Aggiunge un’istanza del pannello rimosso.
 
 ## Utilizzo del layout Pannello a soffietto per il pannello principale   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
-Un pannello dispone di varie opzioni di layout. L’opzione Layout per pannello a soffietto supporta i pannelli ripetibili come funzionalità integrata. Effettua le seguenti operazioni per creare un pannello ripetibile con l’opzione Layout per la progettazione del pannello a soffietto:
+Un pannello dispone di varie opzioni di layout. L’opzione Layout per la progettazione del Pannello a soffietto supporta i pannelli ripetibili come funzionalità integrata. Esegui i seguenti passaggi per creare un pannello ripetibile con l’opzione Layout per la progettazione del Pannello a soffietto:
 
 1. Nell’elemento padre del pannello da ripetere, tocca ![cmppr](assets/cmppr.png). Puoi visualizzare le proprietà nella barra laterale. In **Layout** a discesa, seleziona **Accordion**.
-1. In un pannello da ripetere, tocca ![cmppr](assets/cmppr.png). Puoi visualizzare le proprietà del pannello nella barra laterale. Abilita **Rendi il pannello ripetibile** e specifica il valore per la scheda **Massimo** e **Minimo** campi.
+1. In un pannello da ripetere, tocca ![cmppr](assets/cmppr.png). Puoi visualizzare le proprietà del pannello nella barra laterale. Abilita **Rendi il pannello ripetibile** e specificare i valori per la scheda **Massimo** e **Minimo** campi.
 
    Ora è possibile utilizzare il segno più (+) ed eliminare ( ![delete-panel](assets/delete-panel.png)) per aggiungere e rimuovere i pannelli.
 
@@ -172,4 +168,4 @@ Nel codice seguente, la proprietà `SampleType`utilizza la proprietà minOccours
 
 >[!NOTE]
 >
->Per il layout non pannello a soffietto, utilizza i componenti pulsante Modulo adattivo per aggiungere e rimuovere le istanze.
+>Per il layout non a soffietto, utilizza i componenti del pulsante Modulo adattivo per aggiungere e rimuovere le istanze.

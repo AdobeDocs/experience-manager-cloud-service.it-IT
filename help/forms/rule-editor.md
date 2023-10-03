@@ -1,13 +1,13 @@
 ---
-title: Come si utilizza l’editor di regole di Forms adattivo?
-description: L’editor di regole di Forms adattivo consente di aggiungere un comportamento dinamico e di creare una logica complessa nei moduli senza codificare o scrivere script. Introduzione alla comprensione di una regola e delle linee guida per la scelta di un costrutto regola. Ulteriori informazioni sui tipi di operatori e sugli eventi disponibili nell’editor di regole.
+title: Cos’è l’editor di regole di Forms adattivo?
+description: L’editor di regole di Forms adattivo consente di aggiungere un comportamento dinamico e di creare una logica complessa nei moduli senza codificare o scrivere script.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '6446'
+source-wordcount: '6422'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata p
 
 * Mostrare o nascondere un oggetto
 * Attivare o disattivare un oggetto
-* Impostare un valore per un oggetto
+* Imposta un valore per un oggetto
 * Convalidare il valore di un oggetto
 * Eseguire funzioni per calcolare il valore di un oggetto
 * Richiamare un servizio Form Data Model ed eseguire un&#39;operazione
-* Impostare la proprietà di un oggetto
+* Imposta proprietà di un oggetto
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
@@ -43,13 +43,13 @@ Gli utenti aggiunti al gruppo forms-power-users possono creare script e modifica
 
 Una regola è una combinazione di azioni e condizioni. Nell’editor delle regole, le azioni includono attività quali nascondere, mostrare, abilitare, disabilitare o calcolare il valore di un oggetto in un modulo. Le condizioni sono espressioni booleane che vengono valutate eseguendo controlli e operazioni sullo stato, sul valore o sulla proprietà di un oggetto modulo. Le azioni vengono eseguite in base al valore ( `True` o `False`) restituita valutando una condizione.
 
-L’editor di regole fornisce un set di tipi di regole predefiniti, ad esempio Quando, Mostra, Nascondi, Abilita, Disabilita, Imposta valore di e Convalida, per facilitare la scrittura delle regole. Ogni tipo di regola ti consente di definire condizioni e azioni in una regola. Il documento spiega ulteriormente ogni tipo di regola nei dettagli.
+L’editor di regole fornisce un set di tipi di regole predefiniti, ad esempio Quando, Mostra, Nascondi, Abilita, Disabilita, Imposta valore di e Convalida, per facilitare la scrittura delle regole. Ogni tipo di regola consente di definire condizioni e azioni in un regola. Il documento spiega ulteriormente ogni tipo di regola nei dettagli.
 
 Una regola segue in genere uno dei seguenti costrutti:
 
 **Condizione-Azione** In questo costrutto, una regola definisce prima una condizione seguita da un’azione da attivare. Il costrutto è paragonabile all&#39;istruzione if-then nei linguaggi di programmazione.
 
-In regola editor, il tipo When **regola impone il** costrutto condizione-azione.
+Nell’editor delle regole, il **Quando** tipo di regola applica il costrutto condizione-azione.
 
 **Azione-Condizione** In questo costrutto, un regola definisce prima un&#39;azione da attivare seguita dalle condizioni per la valutazione. Un&#39;altra variante di questo costrutto è action-condition-alternate action, che definisce anche un&#39;azione alternativa da attivare se la condizione restituisce False.
 
@@ -57,7 +57,7 @@ I tipi regola Mostra, Nascondi, Abilita, Disabilita, Imposta Valore e Convalida 
 
 >[!NOTE]
 >
->I tipi di regole disponibili, incluse le condizioni e le azioni definite nell&#39;editor di regole, dipendono anche dal tipo di oggetto modulo su cui si sta creando una regola. Nell&#39;editor delle regole vengono visualizzati solo i tipi di regole e le opzioni validi per la scrittura di istruzioni di condizione e azione per un particolare tipo di oggetto modulo. Ad esempio, per un oggetto pannello non vengono visualizzati i tipi di regole Convalida, Imposta valore di, Abilita e Disabilita.
+>I tipi di regola disponibili, incluse le condizioni e le azioni definite in regola editor, dipendono anche dal tipo di oggetto modulo su cui si sta creando un regola. Nella regola editor vengono visualizzati solo tipi di regola validi e opzioni per la scrittura di istruzioni di condizione e di azione per un particolare tipo di oggetto modulo. Ad esempio, non sono disponibili i tipi regola Convalida, Imposta Valore di, Attiva e Disattiva per un oggetto pannello.
 
 Per ulteriori informazioni sui tipi di regole disponibili nell’editor di regole, consulta [Tipi di regole disponibili nell’editor di regole](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
@@ -104,9 +104,9 @@ L’editor di regole fornisce un set di tipi di regole predefiniti che è possib
 
 ### [!UICONTROL Quando  ] {#whenruletype}
 
-Il **[!UICONTROL Quando]** il tipo di regola segue **condizione-azione-azione-azione alternativa** costrutto della regola o, a volte, solo **condizione-azione** costruzione. In questo tipo di regola, devi innanzitutto specificare una condizione per la valutazione seguita da un&#39;azione da attivare se la condizione viene soddisfatta ( `True`). Quando si utilizza il tipo When regola, è possibile utilizzare più operatori AND e OR per creare [espressioni nidificate](#nestedexpressions).
+Il **[!UICONTROL Quando]** il tipo di regola segue **condizione-azione-azione-azione alternativa** costrutto della regola o, a volte, solo **condizione-azione** costruzione. In questo tipo di regola, devi innanzitutto specificare una condizione per la valutazione seguita da un&#39;azione da attivare se la condizione viene soddisfatta ( `True`). Quando si utilizza il tipo di regola When, è possibile utilizzare più operatori AND e OR per creare [espressioni nidificate](#nestedexpressions).
 
-Utilizzando il tipo regola Quando è possibile valutare una condizione in un oggetto modulo ed eseguire azioni su uno o più oggetti.
+Utilizzando il tipo di regola When, è possibile valutare una condizione in un oggetto modulo ed eseguire azioni su uno o più oggetti.
 
 In parole povere, un tipico Quando regola è strutturato come segue:
 
@@ -140,7 +140,7 @@ Durante la scrittura di una regola When, puoi attivare l&#39;azione Cancella val
 
 **[!UICONTROL Disattiva]** Disattiva l&#39;oggetto specificato.
 
-**[!UICONTROL Richiama servizio]** Richiama un servizio configurato in un modello dati modulo. Quando si sceglie l&#39;operazione Invoke Service, viene visualizzato un campo. Toccando il campo, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati modulo sul istanza [!DNL Experience Manager] . Quando si sceglie un servizio Modello dati modulo, vengono visualizzati più campi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato. Vedi regola di esempio per richiamare i servizi del modello dati modulo.
+**[!UICONTROL Richiama servizio]** Richiama un servizio configurato in un modello dati modulo. Quando scegli l’operazione Richiama servizio, viene visualizzato un campo. Quando tocca il campo, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo sul [!DNL Experience Manager] dell&#39;istanza. Quando si sceglie un servizio modello dati modulo, vengono visualizzati più campi in cui è possibile mappare oggetti modulo con parametri di input e output per il servizio specificato. Vedere regola di esempio per richiamare i servizi del modello dati del modulo.
 
 Oltre al servizio Modello dati modulo, è possibile specificare un URL WSDL diretto per richiamare un servizio Web. Tuttavia, un servizio di modello dati modulo presenta molti vantaggi e l’approccio consigliato per richiamare un servizio.
 
@@ -202,13 +202,9 @@ Il **[!UICONTROL Imposta valore di]** tipo di regola consente di impostare il va
 
 Il **Imposta valore di** il tipo di regola non è disponibile per tutti gli oggetti modulo, ad esempio pannelli e pulsanti della barra degli strumenti. Una regola Set Value Of standard ha la seguente struttura:
 
-Impostare il valore dell&#39;oggetto A su:
+Imposta il valore dell&#39;oggetto A su:
 
-(stringa ABC) O
-(proprietà oggetto X dell&#39;oggetto C) O
-(valore da una funzione) O
-(valore da un&#39;espressione matematica) O
-(valore di output di un servizio modello di dati o di un servizio Web);
+(stringa ABC) OR (proprietà dell&#39;oggetto X dell&#39;oggetto C) OR (valore di una funzione) OR (valore di un&#39;espressione matematica) OR (valore di output di un servizio di modello dati o di un servizio Web);
 
 Quando (facoltativo):
 
@@ -218,7 +214,7 @@ Nell&#39;esempio seguente il valore nel `dependentid` campo viene preso come inp
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-Esempio di regola Imposta valore tramite il servizio Modello dati modulo
+Esempio di Set Valore regola utilizzando il servizio Modello dati modulo
 
 >[!NOTE]
 >

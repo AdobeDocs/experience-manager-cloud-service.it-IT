@@ -1,16 +1,14 @@
 ---
-title: Costrutti di stile per Forms adattivo
-seo-title: Styling constructs for Adaptive Forms
-description: Utilizza il framework LESS per personalizzare l’aspetto di Adaptive Forms.
-seo-description: Use LESS framework to customize appearance of Adaptive Forms.
+title: Come si assegnano gli stili ai costrutti per Adaptive Forms?
+description: Utilizza il framework LESS per Forms adattivo per personalizzare l’aspetto di Forms adattivo.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2315'
 ht-degree: 3%
 
 ---
@@ -105,7 +103,7 @@ Un contenitore è il componente di livello principale. Altri pannelli e campi si
 
 I Forms adattivi includono vari tipi di campi. Ogni campo ha un nome di classe univoco, che è il nome del campo. Il campo ha anche un nome di classe comune `guideFieldNode`.
 
-I campi includono etichette, widget, descrizioni della Guida (descrizione lunga e breve) e icone della Guida dei campi (punto interrogativo).
+I campi includono etichette, widget, descrizioni della Guida (descrizione lunga e breve) e icone della Guida in linea (punto interrogativo).
 
 <table>
  <tbody>

@@ -1,14 +1,14 @@
 ---
-title: Utilizzare la modalità Layout per ridimensionare i componenti per Forms adattivo
-description: Definisci la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout. Scopri come accedere alla modalità Layout, ridimensionare i componenti e i pannelli, definire il layout a più colonne per un pannello, abilitare la nuova griglia reattiva per i layout reattivi precedenti e disabilitare la modalità Layout per i moduli con layout reattivo precedente.
+title: Come si utilizza la modalità Layout per ridimensionare i componenti per Forms adattivo?
+description: Definisci la posizione dei componenti AEM Forms, scopri come accedere alla modalità di layout, ridimensionare i componenti, ridimensionare i pannelli e definire il layout a più colonne per un pannello.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 1%
+source-wordcount: '1134'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ Seleziona **[!UICONTROL Layout]** dall’elenco a discesa visualizzato nella par
 
    ![Modalità Layout](assets/layout_mode_ic_new.png)
 
-## Ridimensiona i componenti {#resize-components}
+## Ridimensionare i componenti {#resize-components}
 
 1. In modalità Layout, tocca il componente per ridimensionarlo. I punti blu vengono visualizzati all’inizio e alla fine della griglia reattiva.
 1. Trascina i punti blu per definire la posizione del componente nella griglia reattiva.

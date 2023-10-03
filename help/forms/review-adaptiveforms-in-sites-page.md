@@ -1,12 +1,12 @@
 ---
-title: Creare e gestire recensioni per un modulo adattivo
-description: La revisione è un meccanismo che consente al revisore di eseguire diverse attività per i moduli adattivi utilizzando il passaggio Assegna attività
+title: Come si creano e gestiscono le revisioni di Adaptive Forms incorporate o create nella pagina Sites?
+description: La revisione è un meccanismo che consente al revisore di eseguire diverse attività per i moduli adattivi utilizzando la fase Assegna attività.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '358'
 ht-degree: 4%
 
 ---

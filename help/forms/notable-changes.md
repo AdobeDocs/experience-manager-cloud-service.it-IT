@@ -1,11 +1,11 @@
 ---
-title: Differenze tra i Cloud Service AEM 6.5 Forms e AEM
-description: Sei un utente di Experience Manager Forms e stai cercando di effettuare l’aggiornamento ad Adobe Experience Manager Forms as a Cloud Service? Confronta i Cloud Services Forms e AEM di AEM 6.5 e scopri le modifiche più importanti prima di eseguire l’aggiornamento o la migrazione al Cloud Service.
+title: Quali sono le differenze tra i Cloud Service AEM 6.5 Forms e AEM?
+description: Confronta i Cloud Services Forms e AEM di AEM 6.5 e scopri le modifiche più importanti prima di eseguire l’aggiornamento o la migrazione al Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1350'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di ri
 
 * Prima di utilizzare i bundle per i clienti con Forms as a Cloud Service, ricompila il codice personalizzato con l’ultima versione di adobe-aemfd-docmanager.
 
-* Utilizzare [Utility di migrazione AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md) per preparare ed eseguire la migrazione di Forms adattivo, temi, modelli e configurazioni cloud da <!-- AEM 6.3 Forms--> AEM 6.4 Forms su OSGi e AEM 6.5 Forms su OSGi a [!DNL AEM] as a Cloud Service. Utilizzare [Archivio Git del programma](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) per importare modelli di moduli adattivi esistenti.
+* Utilizzare [Utility di migrazione AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md) per preparare ed eseguire la migrazione di Forms adattivo, temi, modelli e configurazioni cloud da <!-- AEM 6.3 Forms--> AEM 6.4 Forms su OSGi e AEM 6.5 Forms su OSGi a [!DNL AEM] as a Cloud Service. Utilizza il [Archivio Git del programma](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) per importare modelli di moduli adattivi esistenti.
 
 * Per impostazione predefinita, le e-mail supportano solo i protocolli HTTP e HTTP. [Contatta il team di supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) per abilitare le porte per l’invio di e-mail e il protocollo SMTP per il tuo ambiente.
 
@@ -56,7 +56,7 @@ Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di ri
 
 * **Inviare azioni:** Il **E-mail** azione di invio fornisce opzioni per l’invio di allegati e allega un documento Record (DoR) all’e-mail. Puoi utilizzarlo al posto del **Invia e-mail come PDF** disponibile nel Forms AEM 6.5.
 
-* **Servizio automated forms conversion**: il servizio non fornisce un metamodello per il servizio di Automated forms conversion. È possibile [scarica dalla documentazione di Automated forms conversion Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).
+* **Servizio automated forms conversion**: il servizio non fornisce un metamodello per il servizio Automated forms conversion. È possibile [scarica dalla documentazione di Automated forms conversion Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).
 
 * **Forms adattivo basato su XSD:** È possibile utilizzare il modello XDP per progettare un modello per Document for Record. Il servizio non supporta Forms adattivo basato su XFA
 
@@ -76,25 +76,27 @@ Forms as a Cloud Service fornisce API RESTful per generazione e manipolazione di
 
 * **API per la manipolazione dei documenti (servizio Assembler)**:
 
-   * Le operazioni che si basano su applicazioni o servizi basati su documenti non sono disponibili. Ad esempio, Microsoft Word per PDF, Microsoft Excel per PDF e HTML per PDF, PostScript (PS) per PDF, XDP per PDF forms non sono supportati. Queste operazioni si basano rispettivamente su Microsoft Office, Adobe Acrobat, Adobe Distiller e Forms Document Service.
+   * Le operazioni che si basano su applicazioni o servizi basati su documenti non sono disponibili. Ad esempio, Microsoft® da Word a PDF, Microsoft® da Excel a PDF e da HTML a PDF, PostScript (PS) a PDF, XDP a PDF forms non sono supportati. Queste operazioni si basano rispettivamente su Microsoft® Office, Adobe Acrobat, Adobe Distiller e Forms Document Service.
 
-   * Converti i documenti in formato non PDF in formato PDF prima di utilizzarli con le API Communications Document Manipulation. Se ad esempio i documenti sono in formato Microsoft Office, HTML, PostScript (PS) o XDP, convertire i documenti in formato PDF prima di utilizzarli con i documenti PDF. È possibile utilizzare [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) servizio per tali conversioni.
+   * Converti i documenti in formato non PDF in formato PDF prima di utilizzarli con le API Communications Document Manipulation. Se ad esempio i documenti sono in formato Microsoft® Office, HTML, PostScript (PS) o XDP, convertire i documenti in formato PDF prima di utilizzarli con i documenti PDF. È possibile utilizzare [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) servizio per tali conversioni.
 
-* È possibile utilizzare un ambiente Forms AEM 6.5 per la firma digitale, la crittografia, l&#39;estensione del Reader, l&#39;invio alla stampante, Convert PDF e il servizio Forms con codice a barre.
+   * È possibile utilizzare un ambiente Forms AEM 6.5 per la firma digitale, la crittografia, l&#39;estensione del Reader, l&#39;invio alla stampante, Convert PDF e il servizio Forms con codice a barre.
 
 
 ## Integrazione dei dati (modello dati modulo)
 
-* Il servizio fornisce inoltre supporto per Microsoft Dynamics, SalesForce, servizi Web basati su SOAP e servizi che supportano OData.
+* Il servizio fornisce inoltre supporto per il connettore JDBC, Microsoft® Dynamics, SalesForce, servizi Web basati su SOAP e servizi che supportano OData.
 
 * Puoi anche collegare il profilo utente AEM per recuperare e aggiornare le informazioni utente.
 
 * Il modello dati di Forms supporta solo endpoint HTTP e HTTPS per inviare dati. Il servizio non supporta SSL reciproco per il connettore REST e l&#39;autenticazione basata su certificato x509 per le origini dati SOAP.
 
-* Forms as a Cloud Service consente di utilizzare Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive e i servizi che supportano le operazioni CRUD (Create, Read, Update, Delete) generali come archivi di dati. Sono supportate sia le specifiche API 2.0 che le specifiche API 3.0 aperte.
+* Forms as a Cloud Service consente di utilizzare Microsoft® Azure Blob, Microsoft® Sharepoint, Microsoft® OneDrive e i servizi che supportano operazioni CRUD (Create, Read, Update, Delete) generali come archivi dati. Sono supportate sia le specifiche API 2.0 che quelle API 3.0 aperte.
 
 
 ## E-Sign
+
+* Il servizio fornisce un’integrazione OOTB con Adobe Sign e supporta DocuSign per le firme elettroniche.
 
 * Il servizio supporta anche i ruoli di Adobe Sign. Puoi configurare i ruoli nell’editor di Forms adattivo per gli utenti aziendali per configurare facilmente i flussi di lavoro di firma.
 
@@ -105,7 +107,7 @@ Forms as a Cloud Service fornisce API RESTful per generazione e manipolazione di
 
    * esegui il rendering dei moduli basati su XDP come HTML5 Forms. Il servizio non supporta HTML5 Forms.
 
-   * acquisire i dati offline e sincronizzarli alla successiva connessione in linea con [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) app.
+   * acquisire i dati offline e sincronizzarli alla successiva connessione con [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) app.
 
 ## Comunicazioni interattive
 

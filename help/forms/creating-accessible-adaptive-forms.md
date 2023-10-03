@@ -1,17 +1,15 @@
 ---
-title: Creazione di un Forms adattivo accessibile
-seo-title: Creating accessible Adaptive Forms
-description: AEM Forms fornisce strumenti e consente di creare Forms adattivi accessibili e di rispettare gli standard di accessibilità.
-seo-description: AEM Forms provides you tools and to create accessible Adaptive Forms and helps comply with accessibility standards.
+title: Come si crea un Forms adattivo accessibile?
+description: AEM Forms fornisce gli strumenti necessari per creare Forms adattivo accessibile e consente di rispettare gli standard di accessibilità.
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2025'
 ht-degree: 0%
 
 ---
@@ -115,7 +113,7 @@ Per utilizzare l&#39;opzione Accessibilità, effettuare le seguenti operazioni:
 
 **Breve descrizione** Per la maggior parte dei componenti, la breve descrizione viene visualizzata in fase di runtime quando l’utente passa il puntatore sul componente. È possibile impostare questa opzione nel campo breve descrizione in opzione contenuto della Guida.
 
-**Titolo** Utilizza questa opzione per consentire [!DNL AEM Forms] utilizzare l&#39;etichetta visiva associata al campo modulo come testo per la lettura dello schermo.
+**Titolo** Utilizza questa opzione per consentire [!DNL AEM Forms] utilizza l’etichetta visiva associata al campo modulo come testo per la lettura dello schermo.
 
 **Nome** È possibile specificare un valore nel campo Nome della scheda Associazione. Il nome non può contenere spazi.
 

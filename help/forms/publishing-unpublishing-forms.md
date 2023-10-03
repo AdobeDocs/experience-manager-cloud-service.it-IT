@@ -1,18 +1,13 @@
 ---
-title: Pubblicazione e annullamento della pubblicazione di moduli e documenti
-seo-title: Publishing and unpublishing forms and documents
-description: È possibile pianificare la pubblicazione e l’annullamento della pubblicazione dei moduli. I moduli pubblicati vengono replicati nell’istanza Publish.
-seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
-uuid: 0bad5608-b7a8-4599-81cc-2cd0a3dc7dd5
+title: Come si pubblicano e si annullano le pubblicazioni di moduli e documenti?
+description: Pianifica la pubblicazione e l’annullamento della pubblicazione del Forms adattivo. I moduli pubblicati vengono replicati nell’istanza Publish.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+docset: aem65s
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -78,7 +73,6 @@ Una risorsa può avere i seguenti stati:
       >[!NOTE]
       >
       >Non selezionare più risorse. La pubblicazione di più risorse contemporaneamente non è supportata.
-
 
 1. All’avvio del processo di pubblicazione, viene visualizzata una finestra di dialogo di conferma in cui sono elencate tutte le risorse e le risorse correlate. Nella finestra di dialogo che contiene le risorse correlate, tocca **[!UICONTROL Pubblica]**. La risorsa viene pubblicata e viene visualizzata la finestra di dialogo Pubblica esito positivo delle risorse.
 
@@ -198,6 +192,6 @@ Per abilitare l&#39;autenticazione per i moduli:
 1. Nel browser, apri configMgr nell’istanza Publish.\
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
-1. Nella configurazione della console web di Adobe Experience Manager, fai clic su **Servizio di autenticazione Apache Sling** per configurarlo.
+1. Nella console Web Adobe Experience Manager, fai clic su **Servizio di autenticazione Apache Sling** per configurarlo.
 1. Nella finestra di dialogo Apache Sling Authentication Service che viene visualizzata, utilizza **+** per aggiungere percorsi.\
    Quando si aggiunge un percorso, il servizio di autenticazione viene abilitato per i moduli in tale percorso.

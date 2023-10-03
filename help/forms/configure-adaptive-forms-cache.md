@@ -1,15 +1,14 @@
 ---
 title: Configurare la cache di Adaptive Forms
-description: La cache di Adaptive Forms è progettata appositamente per Forms e documenti adattivi. Memorizza nella cache il Forms adattivo e i documenti adattivi con l’obiettivo di ridurre il tempo necessario per eseguire il rendering di un modulo o di un documento adattivo sul client.
+description: La cache di Forms adattiva è progettata per Forms adattivo e documenti con l’obiettivo di ridurre il tempo necessario per il rendering di un modulo o documento adattivo.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
-docset: aem65
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '965'
 ht-degree: 1%
 
 ---
@@ -42,8 +41,8 @@ Puoi anche configurare il caching dei moduli adattivi in Dispatcher per un ulter
 
 ### Prerequisiti {#pre-requisites}
 
-* Abilita [unione o precompilazione dei dati nel client](prepopulate-adaptive-form-fields.md#prefill-at-client) opzione. Consente di unire dati univoci per ogni istanza di un modulo precompilato.
-* [Abilita l’agente di svuotamento per ogni istanza di pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance). Consente di ottenere migliori prestazioni di caching per Adaptive Forms. L’URL predefinito degli agenti di svuotamento è `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
+* Abilita [unione o precompilazione di dati nel client](prepopulate-adaptive-form-fields.md#prefill-at-client) opzione. Consente di unire dati univoci per ogni istanza di un modulo precompilato.
+* [Abilitare un agente di svuotamento per ogni istanza di pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance). Consente di ottenere migliori prestazioni di caching per Adaptive Forms. L’URL predefinito degli agenti di svuotamento è `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
 ### Considerazioni per la memorizzazione nella cache di Adaptive Forms su un Dispatcher {#considerations}
 
@@ -54,7 +53,7 @@ Puoi anche configurare il caching dei moduli adattivi in Dispatcher per un ulter
    * Usa formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo anziché `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
    * Disattiva utilizzando le impostazioni locali del browser <!-- [Disable using browser locale](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) -->per URL con formato `http://host:port/content/forms/af/<adaptivefName>.html`.
    * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html`, e **[!UICONTROL Usa impostazioni internazionali del browser]** in configuration manager è disattivato, viene distribuita la versione non localizzata del modulo adattivo. Il linguaggio non localizzato è il linguaggio utilizzato durante lo sviluppo del modulo adattivo. Le impostazioni locali configurate per il browser (impostazioni locali del browser) non vengono considerate e viene distribuita una versione non localizzata del modulo adattivo.
-   * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html`, e **[!UICONTROL Usa impostazioni internazionali del browser]** in configuration manager è abilitato, viene distribuita una versione localizzata del modulo adattivo, se disponibile. La lingua del modulo adattivo localizzato si basa sulle impostazioni locali configurate per il browser (impostazioni locali del browser). Può portare a [memorizzazione nella cache solo della prima istanza di un modulo adattivo]. Per evitare che il problema si verifichi nell’istanza, consulta [risoluzione dei problemi](#only-first-insatnce-of-adptive-forms-is-cached).
+   * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html`, e **[!UICONTROL Usa impostazioni internazionali del browser]** in configuration manager è abilitato, viene distribuita una versione localizzata del modulo adattivo, se disponibile. La lingua del modulo adattivo localizzato si basa sulle impostazioni locali configurate per il browser (impostazioni locali del browser). Può portare a [memorizzare in cache solo la prima istanza di un modulo adattivo]. Per evitare che il problema si verifichi nell’istanza, consulta [risoluzione dei problemi](#only-first-insatnce-of-adptive-forms-is-cached).
 
 ### Abilita il caching in Dispatcher
 
@@ -91,7 +90,7 @@ Per abilitare e configurare la memorizzazione in cache di Forms adattivi su Disp
 
    * Un modulo adattivo rimane nella cache fino a quando non viene pubblicata una versione aggiornata del modulo.
 
-   * Quando viene pubblicata una versione più recente della risorsa a cui si fa riferimento in un modulo adattivo, il modulo adattivo interessato viene automaticamente invalidato. Esistono alcune eccezioni all’annullamento automatico della validità delle risorse di riferimento. Per risolvere le eccezioni, consulta [risoluzione dei problemi](#troubleshooting) sezione.
+   * Quando viene pubblicata una versione più recente di una risorsa a cui si fa riferimento in un modulo adattivo, il modulo adattivo interessato viene automaticamente invalidato. Esistono alcune eccezioni all’annullamento automatico della validità delle risorse di riferimento. Per una soluzione alternativa alle eccezioni, vedere [risoluzione dei problemi](#troubleshooting) sezione.
 1. [Aggiungi il file rules dispatcher.any o personalizzato seguente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-documents-to-cache). Sono esclusi gli URL che non supportano il caching. Ad esempio, la comunicazione interattiva.
 
    ```JSON
@@ -150,7 +149,7 @@ Quando aggiungi un frammento di contenuto o un frammento di esperienza a un modu
 
 Dopo aver pubblicato un frammento di contenuto o un frammento di esperienza aggiornato, annulla esplicitamente la pubblicazione e pubblica il Forms adattivo che utilizza queste risorse.
 
-### Solo la prima istanza di un modulo adattivo è memorizzata nella cache{#only-first-insatnce-of-adptive-forms-is-cached}
+### Solo la prima istanza di un modulo adattivo è memorizzata in cache{#only-first-insatnce-of-adptive-forms-is-cached}
 
 #### Problema   {#issue3}
 

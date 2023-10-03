@@ -1,14 +1,16 @@
 ---
-title: Aggiungere gestori di errori personalizzati in AEM Adaptive Forms
+title: Aggiungere gestori di errori personalizzati in Forms adattivo per Forms adattivo AEM
+seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
 description: AEM Forms fornisce gestori predefiniti di errori e operazioni riuscite per un modulo che utilizza l’endpoint REST configurato per richiamare un servizio esterno. In un modulo adattivo AEM puoi aggiungere un gestore degli errori predefinito e personalizzato.
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: Aggiungi un gestore degli errori personalizzato, aggiungi un gestore degli errori predefinito, aggiungi un gestore degli errori nel modulo, utilizza il servizio invoke dell’editor delle regole per aggiungere un gestore degli errori personalizzato, configura l’editor delle regole per aggiungere un gestore degli errori personalizzato, aggiungi un gestore degli errori personalizzato utilizzando l’editor delle regole
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: f6c6ef96f8de194942a95d8589591b41431037f5
+exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '2466'
+source-wordcount: '2470'
 ht-degree: 2%
 
 ---

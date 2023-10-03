@@ -1,23 +1,22 @@
 ---
-title: Abilita componenti core Forms adattivi
-description: Scopri come abilitare i componenti core Adaptive Forms su AEM Forms as a Cloud Service con la nostra guida dettagliata. Il nostro tutorial illustra la procedura per abilitare facilmente questa potente funzione per il tuo ambiente AEM Forms.
-seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
+title: Abilitare i componenti core Adaptive Forms nell’ambiente di sviluppo as a Cloud Service e locale di AEM Forms
+description: Scopri come abilitare i componenti core Adaptive Forms su AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 4%
+source-wordcount: '1009'
+ht-degree: 6%
 
 ---
-
 
 # Abilita componenti core Forms adattivi {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
 Abilitando i componenti core Adaptive Forms su AEM Forms as a Cloud Service, puoi iniziare a creare, pubblicare e distribuire componenti core basati su Adaptive Forms e Headless Forms utilizzando le istanze del Cloud Service AEM Forms su più canali. Per utilizzare Headless Adaptive Forms è necessario un ambiente abilitato per i Componenti core Forms adattivi.
@@ -334,7 +333,7 @@ Quando i componenti core Adaptive Forms sono abilitati per il tuo ambiente, all�
 * [Creazione di componenti core basati su Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md).
 * [Creare modelli di moduli adattivi basati su Componenti core](/help/forms/template-editor.md).
 * [Creare temi personalizzati per modelli di moduli adattivi basati su Componenti core](/help/forms/using-themes-in-core-components.md).
-* [Distribuisci le rappresentazioni JSON del modulo adattivo basato su componenti core a canali quali dispositivi mobili, web, app native e servizi che richiedono la rappresentazione headless di un modulo](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html).
+* [Distribuisci le rappresentazioni JSON del modulo adattivo basato su componenti core a canali quali dispositivi mobili, web, app native e servizi che richiedono la rappresentazione headless di un modulo](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=it).
 
 ### I componenti core Forms adattivi sono abilitati per il mio ambiente? {#enable-components}
 
@@ -356,4 +355,3 @@ Per verificare che i componenti core Adaptive Forms siano abilitati per il tuo a
    ![individua l’artefatto core-forms-components-af-core in all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    Se le dipendenze esistono, i componenti core Adaptive Forms sono abilitati per il tuo ambiente.
-

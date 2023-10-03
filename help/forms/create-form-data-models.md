@@ -1,13 +1,13 @@
 ---
 title: Come si crea il modello dati del modulo?
-description: L’integrazione dei dati di Experience Manager Forms fornisce un’interfaccia utente intuitiva per la creazione e l’utilizzo dei modelli di dati dei moduli. Scopri come creare modelli di dati per moduli con o senza origini dati configurate.
+description: Scopri come creare un modello di dati modulo (FDM) e inviare o recuperare dati a un’origine dati utilizzando un modulo adattivo o un flusso di lavoro AEM.
 feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ Creare file di configurazione di fabbrica OSGi con PID `org.apache.sling.caconfi
       1. Sull’istanza di sviluppo locale `/system/console/configMgr`, seleziona factory OSGi configuration (Configurazione OSGi in fabbrica) con il nome **[!UICONTROL Provider di sostituzione configurazione in base al contesto Apache Sling: configurazione OSGi]**.
       1. Fornisci una descrizione.
       1. Seleziona **[!UICONTROL abilitato]**.
-      1. In sostituzioni, fornisci i campi che devono essere modificati in base all’ambiente nella sintassi di sostituzione Sling. Per ulteriori informazioni, consulta [Configurazione in base al contesto di Apache Sling - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Ad esempio, `cloudconfigs/fdm/{configName}/url="newURL"`.
+      1. In sostituzioni, fornisci i campi che devono essere modificati in base all’ambiente nella sintassi di sostituzione Sling. Per ulteriori informazioni, consulta [Configurazione in base al contesto di Apache Sling - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Esempio: `cloudconfigs/fdm/{configName}/url="newURL"`.
 È possibile aggiungere più sostituzioni selezionando **[!UICONTROL +]**.
       1. Seleziona **[!UICONTROL Salva]**.
       1. Per ottenere il JSON di configurazione OSGi, segui i passaggi descritti in [Generazione di configurazioni OSGi tramite QuickStart per SDK AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).

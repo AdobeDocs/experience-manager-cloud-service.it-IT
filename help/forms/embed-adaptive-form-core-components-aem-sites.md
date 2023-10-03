@@ -1,12 +1,12 @@
 ---
-title: Creare o aggiungere un modulo adattivo tramite l’editor di AEM Sites
-description: Puoi utilizzare il modulo adattivo (componenti core) in una pagina di AEM Sites per compilare e inviare un modulo senza uscire dalle pagine di AEM Sites.
+title: Come si aggiunge o crea un componente core Modulo adattivo nella pagina AEM Sites?
+description: Utilizza i componenti core modulo adattivo in una pagina AEM Sites per compilare e inviare un modulo senza uscire dalle pagine AEM Sites.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2131'
 ht-degree: 2%
 
 ---

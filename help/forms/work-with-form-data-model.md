@@ -1,14 +1,14 @@
 ---
 title: Come si utilizza il modello dati del modulo?
-description: Scopri come aggiungere oggetti e servizi del modello dati, creare oggetti del modello dati e proprietà figlio, configurare servizi, aggiungere associazioni e utilizzare le proprietà di navigazione dei servizi OData. Approfondisci come generare e modificare dati di esempio, testare oggetti e servizi di modelli di dati e automatizzare la convalida dei dati di input.
+description: Aggiungi oggetti modello dati, servizi, crea oggetti modello dati e proprietà figlio, configura servizi, utilizza le proprietà di navigazione dei servizi OData.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '4137'
-ht-degree: 0%
+source-wordcount: '4108'
+ht-degree: 1%
 
 ---
 

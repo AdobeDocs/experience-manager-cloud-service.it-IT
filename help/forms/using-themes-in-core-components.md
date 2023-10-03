@@ -1,13 +1,11 @@
 ---
-title: Creazione e utilizzo di temi
-description: Puoi utilizzare i temi per formattare e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
-seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
-keywords: crea un nuovo tema, personalizza il tema, carica un nuovo tema, utilizza il tema nei moduli, personalizza il tema con la pipeline front-end
+title: Come si creano e utilizzano i temi in Adaptive Forms?
+description: Puoi utilizzare i temi per assegnare uno stile e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 3%
+source-wordcount: '2697'
+ht-degree: 4%
 
 ---
 
@@ -18,13 +16,13 @@ ht-degree: 3%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-Puoi creare e applicare temi per assegnare uno stile a un modulo adattivo. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l&#39;allineamento e le dimensioni. Quando applicate un tema, lo stile specificato viene riflesso sui componenti corrispondenti. Un tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo e può essere riutilizzato in più Forms adattivi.
+Puoi creare e applicare temi per assegnare uno stile a un modulo adattivo. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Un tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo e può essere riutilizzato in più Forms adattivi.
 
 ## Temi disponibili
 
 Forms as a Cloud Service fornisce, i seguenti temi elencati per i Componenti core basati su Adaptive Forms:
 
-* [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -46,7 +44,7 @@ Un tema è un pacchetto che include il file CSS, i file JavaScript e le risorse 
 
 Forms as a Cloud Service fornisce, i temi elencati di seguito per i Componenti core basati su Adaptive Forms.
 
-* [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -95,7 +93,7 @@ Gli esempi forniti nel documento sono basati su **Area di lavoro** ma è importa
 
 Per clonare un tema per Forms adattivo basato su Componenti core, scegli uno dei seguenti temi:
 
-* [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 

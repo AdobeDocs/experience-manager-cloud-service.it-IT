@@ -1,11 +1,11 @@
 ---
-title: Integrare DocuSign con un modulo adattivo
+title: Come integrare DocuSign con un modulo adattivo?
 description: Scopri come utilizzare DocuSign con un modulo adattivo per raccogliere firme elettroniche.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 0%
+source-wordcount: '1559'
+ht-degree: 1%
 
 ---
 
@@ -124,7 +124,7 @@ Per configurare l’azione di invio personalizzata predefinita e il Cloud Servic
 
 Dopo aver impostato i prerequisiti, effettua le seguenti operazioni per integrare [!DNL DocuSign] con [!DNL AEM Forms] sulle istanze Autore.
 
-1. Accedi a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL DocuSign]** e seleziona una cartella per ospitare la configurazione.
+1. Accedi a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL DocuSign]** e seleziona una cartella per ospitare la configurazione.
 
 1. Nella pagina delle configurazioni, tocca **[!UICONTROL Crea]** per creare [!DNL DocuSign] in AEM Forms.
 1. In **[!UICONTROL Generale]** scheda di **[!UICONTROL Crea configurazione DocuSign]** , specificare un **[!UICONTROL Nome]** per la configurazione, quindi tocca **[!UICONTROL Successivo]**. Facoltativamente, puoi specificare un valore **[!UICONTROL Titolo]**.
@@ -158,7 +158,7 @@ Ora l’ambiente AEM Forms è configurato per l’utilizzo di DocuSign. Accertat
 
 ### Utilizzare [!DNL DocuSign] in un modulo adattivo {#enabledocusign}
 
-È possibile abilitare [!DNL DocuSign] per un modulo adattivo esistente o crea un [!DNL DocuSign] modulo adattivo abilitato. Scegliere una delle opzioni seguenti:
+È possibile abilitare [!DNL DocuSign] per un modulo adattivo esistente o crea un [!DNL DocuSign] è stato abilitato Adaptive Form. Scegliere una delle opzioni seguenti:
 
 - [Creare un [!DNL DocuSign] Modulo adattivo abilitato](#create-an-adaptive-form-for-docusign)
 - [Abilita [!DNL DocuSign] per un modulo adattivo esistente](#editafsign).
@@ -174,7 +174,8 @@ Per creare un modulo adattivo abilitato alla firma:
    1. Specifica la **[!UICONTROL Nome]** e **[!UICONTROL Titolo]** per il modulo adattivo.
 
    1. Seleziona la [Contenitore configurazione](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creato durante [integrazione [!DNL DocuSign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
-   Il contenitore di configurazione contiene [!DNL DocuSign] Cloud Services configurati per l’ambiente. Questi servizi sono disponibili per la selezione nell’editor di moduli adattivi.
+
+   Il contenitore di configurazione contiene [!DNL DocuSign] Cloud Service configurati per l’ambiente. Questi servizi sono disponibili per la selezione nell’editor di moduli adattivi.
 
 1. In **[!UICONTROL Modello modulo]** , selezionare una delle opzioni seguenti:
 

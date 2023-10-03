@@ -1,11 +1,11 @@
 ---
-title: Aggiungere il supporto per nuove lingue a un modulo adattivo
-description: AEM Forms consente di aggiungere nuove lingue per la localizzazione dei moduli adattivi. Inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-taiwanese (zh-TW) e coreano (ko-KR).
+title: Come si aggiunge il supporto per nuove lingue in un modulo adattivo?
+description: Per Adaptive Forms, puoi aggiungere lingue per più lingue oltre a quella fornita come impostazione predefinita.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1259'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -28,11 +28,11 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari locali:
 
 * **Dizionario specifico per modulo** Contiene le stringhe utilizzate nei moduli adattivi. Ad esempio, etichette, nomi dei campi, messaggi di errore, descrizioni dell’Aiuto. Viene gestito come un insieme di file XLIFF per ogni lingua e puoi accedervi all’indirizzo `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
-* **Dizionari globali** Nella libreria client AEM sono disponibili due dizionari globali gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, modelli di data e ora e così via. Puoi trovare questi dizionari all&#39;indirizzo `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Questi percorsi contengono cartelle separate per ogni lingua. Poiché i dizionari globali non vengono aggiornati frequentemente, la separazione dei file JavaScript per ciascuna lingua consente ai browser di memorizzarli nella cache e di ridurre l’utilizzo della larghezza di banda di rete quando si accede a moduli adattivi diversi sullo stesso server.
+* **Dizionari globali** Nella libreria client AEM sono presenti due dizionari globali gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, modelli di data e ora e così via. Puoi trovare questi dizionari all&#39;indirizzo `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Questi percorsi contengono cartelle separate per ogni lingua. Poiché i dizionari globali non vengono aggiornati frequentemente, la separazione dei file JavaScript per ciascuna lingua consente ai browser di memorizzarli nella cache e di ridurre l’utilizzo della larghezza di banda di rete quando si accede a moduli adattivi diversi sullo stesso server.
 
 ## Aggiunta del supporto per le nuove lingue {#add-support-for-new-locales}
 
-Per aggiungere il supporto per una lingua, effettua le seguenti operazioni:
+Per aggiungere il supporto per una nuova lingua, effettua le seguenti operazioni:
 
 1. [Aggiunta del supporto per la localizzazione per le lingue non supportate](#add-localization-support-for-non-supported-locales)
 1. [Utilizzare le lingue aggiunte in Adaptive Forms](#use-added-locale-in-af)
@@ -41,7 +41,7 @@ Per aggiungere il supporto per una lingua, effettua le seguenti operazioni:
 
 AEM Forms attualmente supporta la localizzazione di contenuti Forms adattivi nelle lingue inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
 
-Per aggiungere il supporto per una lingua:
+Per aggiungere il supporto per una nuova lingua in fase di esecuzione di Adaptive Forms:
 
 1. [Clonare l’archivio](#clone-the-repository)
 1. [Aggiungere una lingua al servizio GuideLocalizationService](#add-a-locale-to-the-guide-localization-service)
@@ -69,7 +69,7 @@ Per aggiungere il supporto per una lingua:
 1. Nella cartella UI.content, crea `etc/clientlibs` cartella.
 1. Crea ulteriormente una cartella denominata come `locale-name` in `etc/clientlibs` per fungere da contenitore per clientlibs xfa e af.
 
-##### 3.1 Aggiungere una libreria client XFA per una lingua nella cartella dei nomi delle impostazioni internazionali
+##### 3.1 Aggiungere una libreria client XFA per una lingua in una cartella con il nome della lingua
 
 Crea un nodo denominato come `[locale-name]_xfa` e digita come `cq:ClientLibraryFolder` in `etc/clientlibs/locale_name`, con categoria `xfaforms.I18N.<locale>`e aggiungi i seguenti file:
 
@@ -144,11 +144,11 @@ Per ignorare le impostazioni locali del browser per gli utenti, puoi trasmettere
 Se non esiste una libreria client per le impostazioni locali richieste, verifica la presenza di una libreria client per il codice della lingua presente nelle impostazioni locali. Ad esempio, se la lingua richiesta è `en_ZA` (inglese sudafricano) e la libreria client per `en_ZA` non esiste, il modulo adattivo utilizza la libreria client per `en` (Inglese), se esiste. Tuttavia, se non esiste nessuno di questi, il modulo adattivo utilizza il dizionario per `en` lingua.
 
 
-Una volta identificate le impostazioni locali, il modulo adattivo seleziona il dizionario specifico per il modulo. Se non viene trovato il dizionario specifico per la lingua richiesta, viene utilizzato il dizionario per la lingua in cui viene creato il modulo adattivo.
+Una volta identificate le impostazioni locali, il modulo adattivo seleziona il dizionario specifico per il modulo. Se non viene trovato il dizionario specifico per il modulo per le impostazioni locali richieste, viene utilizzato il dizionario per la lingua in cui viene creato il modulo adattivo.
 
 Se non sono presenti informazioni sulle impostazioni internazionali, il modulo adattivo viene consegnato nella lingua originale del modulo. La lingua originale è quella utilizzata durante lo sviluppo del modulo adattivo.
 
-Ottenere [libreria client di esempio](/help/forms/assets/locale-support-sample.zip) per aggiungere il supporto per le nuove impostazioni locali. È necessario modificare il contenuto della cartella nelle impostazioni internazionali richieste.
+Ottieni un [libreria client di esempio](/help/forms/assets/locale-support-sample.zip) per aggiungere il supporto per le nuove impostazioni locali. È necessario modificare il contenuto della cartella nelle impostazioni internazionali richieste.
 
 ## Procedure consigliate per il supporto della nuova localizzazione {#best-practices}
 

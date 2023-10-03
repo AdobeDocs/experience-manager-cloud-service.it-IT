@@ -1,13 +1,13 @@
 ---
 title: Come si utilizza il modello dati del modulo?
-description: Scopri come creare Forms adattivo e frammenti di moduli adattivi basati su un modello di dati del modulo. Approfondisci la generazione e la modifica di dati di esempio per gli oggetti modello dati nel modello dati del modulo. Puoi utilizzare questi dati per visualizzare in anteprima e testare Adaptive Forms.
+description: Scopri come creare Forms adattivo e frammenti basati su un modello di dati del modulo (FDM). Genera e modifica dati di esempio per gli oggetti modello dati in FDM.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1226'
 ht-degree: 2%
 
 ---

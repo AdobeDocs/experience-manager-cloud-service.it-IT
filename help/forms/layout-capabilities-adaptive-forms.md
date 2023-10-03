@@ -1,11 +1,10 @@
 ---
-title: Funzionalità di layout di Adaptive Forms
-seo-title: Layout capabilities of Adaptive Forms
+title: Quali sono le funzionalità di layout di Adaptive Forms?
 description: Il layout e l’aspetto di Adaptive Forms su vari dispositivi sono regolati dalle impostazioni di layout. Comprendere i vari layout e come applicarli.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '859'
 ht-degree: 2%
 
 ---

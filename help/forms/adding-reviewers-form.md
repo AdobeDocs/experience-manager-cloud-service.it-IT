@@ -1,16 +1,15 @@
 ---
 title: Associazione dei revisori di invio a un modulo
 seo-title: Associating submission reviewers with a form
-description: Scopri come associare i revisori di invio a un modulo in [!DNL AEM Forms]. I revisori associati esaminano un modulo inviato tramite il portale dei moduli.
-seo-description: Learn how to associate submission reviewers with a form in [!DNL AEM Forms]. Associated reviewers review a form submitted via forms portal.
+description: Condividi un modulo adattivo per la revisione con uno o più revisori.
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---

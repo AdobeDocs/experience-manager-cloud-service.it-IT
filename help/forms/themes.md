@@ -1,10 +1,10 @@
 ---
-title: Creare e utilizzare i temi per formattare un modulo adattivo
-description: Puoi utilizzare i temi per formattare e fornire un’identità visiva a un modulo adattivo. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
+title: Come si creano e utilizzano i temi per assegnare uno stile a un modulo adattivo?
+description: Utilizza i temi del modulo adattivo per applicare uno stile e fornire un’identità visiva a un modulo adattivo. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '5576'
+source-wordcount: '5578'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-Puoi creare e applicare temi per formattare un modulo adattivo<!-- or an interactive communication-->. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l&#39;allineamento e le dimensioni. Quando applicate un tema, lo stile specificato viene riflesso sui componenti corrispondenti. Il tema viene gestito in modo indipendente senza riferimento a un modulo adattivo<!-- or interactive communication -->.
+Puoi creare e applicare temi per formattare un modulo adattivo<!-- or an interactive communication-->. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Il tema viene gestito in modo indipendente senza riferimento a un modulo adattivo<!-- or interactive communication -->.
 
 Puoi scaricare e installare [!DNL AEM Forms] pacchetto di contenuti di riferimento da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) per importare nell&#39;ambiente i temi e i modelli di riferimento.
 
@@ -376,11 +376,11 @@ La barra laterale nell’editor temi fornisce opzioni per personalizzare gli sti
 Quando selezioni un componente dall’area di lavoro o dai selettori nella barra laterale, questa mostra tutte le opzioni che consentono di personalizzare gli stili.
 Di seguito sono riportate le opzioni visualizzate nella barra laterale quando si seleziona un componente:
 
-* Stadio
+* Stato
 * Foglio delle proprietà
 * Simula errore/esito positivo
 
-#### Stadio {#state}
+#### Stato {#state}
 
 Uno stato è un indicatore dell’interazione dell’utente con un componente. Ad esempio, quando un utente immette dati errati in una casella di testo, lo stato della casella di testo cambia in errore. L’editor tema consente di specificare lo stile per un particolare stato.
 
@@ -488,8 +488,8 @@ Un punto di interruzione rappresenta un dispositivo mobile e le relative dimensi
 
 Per configurare Adobe Fonts in Experience Manager, effettua le seguenti operazioni:
 
-1. Nell’istanza di authoring, fai clic su ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL  Strumenti ]**![martello](assets/hammer.png) >**[!UICONTROL  Distribuzione ]**>**[!UICONTROL  Cloud Services ]**.
-1. Il giorno **[!UICONTROL Cloud Services]** , passa alla pagina e apri la **[!UICONTROL Adobe Fonts]** opzione. Apri la cartella di configurazione e fai clic su **[!UICONTROL Crea]**.
+1. Nell’istanza di authoring, fai clic su ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL  Strumenti ]**![martello](assets/hammer.png) >**[!UICONTROL  Distribuzione ]**>**[!UICONTROL  Cloud Service ]**.
+1. Il giorno **[!UICONTROL Cloud Service]** , passa alla pagina e apri la **[!UICONTROL Adobe Fonts]** opzione. Apri la cartella di configurazione e fai clic su **[!UICONTROL Crea]**.
 1. Il giorno **[!UICONTROL Crea configurazione]** , specifica un titolo per la configurazione e fai clic su **[!UICONTROL Crea]**.
 
    Ti reindirizzano alla pagina di configurazione.
@@ -520,7 +520,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 È possibile utilizzare il pulsante + per aggiungere un carattere. Quando si aggiunge un carattere, questo viene elencato nella barra laterale.
 
-![Nuovo font elencato nell’editor di temi](assets/theme-font.png)
+![Nuovo font elencato nell’editor temi](assets/theme-font.png)
 
 Oltre all’opzione di configurazione del tema, puoi anche aggiungere il font dall’editor stesso. Digitate il font da usare nel campo famiglia font sotto la barra laterale e premete il tasto Invio sulla tastiera.
 

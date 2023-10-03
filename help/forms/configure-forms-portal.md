@@ -1,10 +1,11 @@
 ---
-title: Aggiungere Forms Portal a una pagina di AEM Sites
+title: Come si crea un portale Forms su una pagina Experience Manager Sites?
 description: Scopri come creare un portale Forms e utilizzare i componenti core predefiniti in una pagina di AEM Sites.
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 1%
+source-wordcount: '1839'
+ht-degree: 2%
 
 ---
 

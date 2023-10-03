@@ -1,14 +1,14 @@
 ---
 title: Come configurare [!DNL Microsoft Dynamics] OData?
-description: Scopri come creare il modello dati modulo in base alle entità, agli attributi e ai servizi definiti in [!DNL Microsoft Dynamics] servizio. Il modello dati modulo può essere utilizzato per creare Forms adattivo che interagisce con [!DNL Microsoft Dynamics] per abilitare i flussi di lavoro aziendali.
+description: Scopri come creare un modello di dati modulo basato su entità, attributi e servizi definiti in [!DNL Microsoft Dynamics] servizio.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 2%
+source-wordcount: '982'
+ht-degree: 3%
 
 ---
 
@@ -122,7 +122,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 >
 >Guida dettagliata alla configurazione di [!DNL Microsoft Dynamics 365], online o on-premise, vedi [[!DNL Microsoft Dynamics] Configurazione OData](ms-dynamics-odata-configuration.md).
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 
