@@ -2,10 +2,10 @@
 title: Architettura dell’editor universale
 description: Scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: ht
-source-wordcount: '652'
-ht-degree: 100%
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 96%
 
 ---
 
@@ -80,7 +80,7 @@ Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
 * [Introduzione all’editor universale](introduction.md): scopri come l’editor universale consente di modificare ogni aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 * [Authoring dei contenuti con l’editor universale](authoring.md): scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’editor universale.
-* [Pubblicazione di contenuto con l’editor universale](publishing.md): scopri in che modo l’editor visivo universale pubblica il contenuto e come le app possono gestire il contenuto pubblicato.
+* [Pubblicazione di contenuti con l’editor universale](publishing.md) - Scopri come l’Editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
 * [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la tua prima app AEM da utilizzare.
 * [Attributi e tipi](attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 * [Autenticazione dell’editor universale](authentication.md): scopri come l’editor universale effettua l’autenticazione.

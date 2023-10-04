@@ -1,18 +1,18 @@
 ---
-title: Introduzione all’Editor visivo universale
-description: Scopri in che modo l’Editor visivo universale (meglio conosciuto come Editor universale) consente la modifica WYSIWYG (What you see is what you get) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
+title: Introduzione all’editor universale
+description: Scopri in che modo Universal Editor consente di modificare ciò che vedi è ciò che ottieni (WYSIWYG) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: ht
-source-wordcount: '933'
-ht-degree: 100%
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 91%
 
 ---
 
 
-# Introduzione all’Editor visivo universale {#introduction}
+# Introduzione all’editor universale {#introduction}
 
-Scopri in che modo l’Editor visivo universale (meglio conosciuto come Editor universale) consente la modifica WYSIWYG (What you see is what you get) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
+Scopri in che modo Universal Editor consente di modificare ciò che vedi è ciò che ottieni (WYSIWYG) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
 
 ## Informazioni di base {#background}
 
@@ -62,9 +62,9 @@ Svincolando l’esperienza di modifica del contenuto da qualsiasi sistema di dis
 * **Aumento della velocità del contenuto** - Per semplificare la gestione del flusso di lavoro dei professionisti, l’Editor universale consente di modificare il contenuto nell’anteprima per guidare i professionisti mostrando solo le opzioni pertinenti a tale contesto e rende il flusso di lavoro indipendente dalle origini del contenuto.
 * **Esperienza per sviluppatori all’avanguardia** - Per supportare un panorama delle applicazioni eterogeneo nel mondo reale, l’Editor universale è completamente dissociato e indipendente dalla tecnologia, consentendo agli sviluppatori di utilizzare l’insieme di tecnologie preferito per implementare l’esperienza.
 
-## Editor visivo universale e Editor frammento di contenuto {#universal-editor-content-fragment-editor}
+## Editor universale e Editor frammento di contenuto {#universal-editor-content-fragment-editor}
 
-A prima vista, potrebbe sembrare che l’Editor visivo universale e l’Editor frammento di contenuto forniscano funzionalità di modifica simili. Tuttavia, questi editor offrono funzionalità molto diverse e svolgono diversi compiti del professionista di marketing.
+A prima vista, potrebbe sembrare che l’Editor universale e l’Editor frammento di contenuto forniscano funzionalità di modifica simili. Tuttavia, questi editor offrono funzionalità molto diverse e svolgono diversi compiti del professionista di marketing.
 
 ### Editor frammento di contenuto {#content-fragment-editor}
 
@@ -72,7 +72,7 @@ Un professionista del marketing desidera creare contenuto senza doversi preoccup
 
 * Il lavoro sottostante da realizzare è quello di scalare la strategia del contenuto.
 
-### Editor visivo universale {#universal-editor}
+### Editor universale {#universal-editor}
 
 Un professionista del marketing desidera creare contenuto personalizzato in base al layout di un determinato contesto per offrire un’esperienza eccezionale.
 
@@ -89,7 +89,7 @@ Rivolgiti al tuo contatto Adobe per maggiori informazioni sulle prossime funzion
 Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
 * [Authoring del contenuto con l’Editor universale](authoring.md) - Scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’Editor universale.
-* [Pubblicazione di contenuto con l’editor universale](publishing.md): scopri in che modo l’editor visivo universale pubblica il contenuto e come le app possono gestire il contenuto pubblicato.
+* [Pubblicazione di contenuti con l’editor universale](publishing.md) - Scopri come l’Editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
 * [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.
 * [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 * [Attributi e tipi](attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.

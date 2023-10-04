@@ -1,26 +1,26 @@
 ---
-title: Pubblicazione di contenuti con l’editor visivo universale
-description: Scopri in che modo l’editor visivo universale pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
+title: Pubblicazione di contenuti con l’editor universale
+description: Scopri come l’Editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: ht
-source-wordcount: '367'
-ht-degree: 100%
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 73%
 
 ---
 
 
-# Pubblicazione di contenuti con l’editor visivo universale {#publishing}
+# Pubblicazione di contenuti con l’editor universale {#publishing}
 
-Scopri in che modo l’editor visivo universale pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
+Scopri come l’Editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
 
 ## Somiglianze con AEM {#similarities}
 
-Per gli utenti di AEM, il processo di pubblicazione dei contenuti con l’editor visivo universale funziona come di consueto: alla pubblicazione in AEM, il contenuto viene replicato dal livello di authoring al livello di pubblicazione.
+Per gli utenti di AEM, il processo di pubblicazione dei contenuti con Universal Editor funziona come di consueto: al momento della pubblicazione nell’AEM, i contenuti vengono replicati dal livello di authoring a quello di pubblicazione.
 
 ## Differenze {#differences}
 
-Ciò che rende la pubblicazione con l’editorì visivo universale un po’ diversa, non è tanto l’editor stesso, ma piuttosto l’hosting esterno dell’app, reso possibile dall’editor universale.
+Ciò che rende la pubblicazione con Universal Editor un po&#39; diversa non è tanto l&#39;editor stesso, ma piuttosto l&#39;hosting esterno dell&#39;app reso possibile da Universal Editor.
 
 Quando è ospitata esternamente, è compito della web app assicurare che il contenuto venga caricato dal livello di authoring quando l’app viene aperta dagli autori all’interno dell’editor, e che venga caricato dal livello di pubblicazione quando i visitatori possono accedere all’app.
 
