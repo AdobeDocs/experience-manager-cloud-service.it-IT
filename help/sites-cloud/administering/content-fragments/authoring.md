@@ -3,13 +3,13 @@ title: Authoring dei frammenti di contenuto
 description: Scopri come creare contenuti per i frammenti di contenuto, quindi creare varianti di tale contenuto in base allo scopo. Ciò offre maggiore flessibilità sia per la distribuzione headless che per l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2253'
 ht-degree: 4%
 
 ---
-
 
 # Authoring dei frammenti di contenuto {#authoring-content-fragments}
 
@@ -32,23 +32,9 @@ Questo editor fornisce:
 * Possibilità di [visualizzare e aprire i riferimenti padre](#view-parent-references).
 * Una visualizzazione gerarchica del frammento di contenuto e dei relativi riferimenti, utilizzando [Struttura ad albero](#structure-tree).
 
->[!CAUTION]
+>[!WARNING]
 >
 >L’editor descritto in questa sezione è *solo* disponibile in *online* Adobe Experience Manager (AEM) as a Cloud Service.
-
->[!CAUTION]
->
->Per modificare un frammento di contenuto è necessario [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
-> 
->Ad esempio, se non hai `edit` autorizzazioni l’editor sarà di sola lettura.
-
->[!NOTE]
->
->Consulta la documentazione di Assets per informazioni complete su [Editor frammento di contenuto originale](/help/assets/content-fragments/content-fragments-variations.md) - è disponibile presso **Risorse** e **Frammenti di contenuto** console.
-
->[!NOTE]
->
->Se necessario, il team del progetto può personalizzare l’editor. Consulta [Personalizzazione della console e dell’editor dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-console-and-editor.md) per ulteriori dettagli.
 
 ## Editor frammento di contenuto {#content-fragment-editor}
 
@@ -76,12 +62,6 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
    * se **Segnaposto scheda** I campi sono definiti all’interno del modello che vengono visualizzati qui e possono essere utilizzati per la navigazione; verranno presentati in orizzontale o come elenco a discesa
 
 ![Editor frammenti di contenuto: panoramica](assets/cf-authoring-overview.png)
-
->[!CAUTION]
->
->Spesso un modello per frammenti di contenuto può definire campi di dati denominati **Titolo** e **Descrizione**. Se questi campi esistono, sono definiti dall&#39;utente e possono essere aggiornati nel *pannello centrale* durante la modifica del frammento.
->
->Il frammento di contenuto e le relative varianti dispongono anche di campi di metadati (proprietà variante) denominati **Titolo** e **Descrizione**. Questi campi sono parte integrante di qualsiasi frammento di contenuto e sono stati inizialmente definiti durante la creazione del frammento. Possono essere aggiornati nella sezione *pannello destro* durante la modifica del frammento.
 
 ## Navigare nella struttura dei frammenti di contenuto {#navigate-structure}
 
@@ -494,3 +474,19 @@ Il **Campi** nel pannello sono elencati tutti i campi all’interno del framment
   </tr>
  </tbody>
 </table>
+
+## Buono a sapersi {#good-to-know}
+
+Inoltre:
+
+* Per modificare un frammento di contenuto è necessario [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
+
+  Ad esempio, se non hai `edit` autorizzazioni l’editor sarà di sola lettura.
+
+* Spesso un modello per frammenti di contenuto può definire campi di dati denominati **Titolo** e **Descrizione**. Se questi campi esistono, sono definiti dall&#39;utente e possono essere aggiornati nel *pannello centrale* durante la modifica del frammento.
+
+  Il frammento di contenuto e le relative varianti dispongono anche di campi di metadati (proprietà variante) denominati **Titolo** e **Descrizione**. Questi campi sono parte integrante di qualsiasi frammento di contenuto e sono stati inizialmente definiti durante la creazione del frammento. Possono essere aggiornati nella sezione *pannello destro* durante la modifica del frammento.
+
+* Consulta la documentazione di Assets per informazioni complete su [Editor frammento di contenuto originale](/help/assets/content-fragments/content-fragments-variations.md) - è disponibile presso **Risorse** e **Frammenti di contenuto** console.
+
+* Se necessario, il team del progetto può personalizzare l’editor. Consulta [Personalizzazione della console e dell’editor dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-console-and-editor.md) per ulteriori dettagli.
