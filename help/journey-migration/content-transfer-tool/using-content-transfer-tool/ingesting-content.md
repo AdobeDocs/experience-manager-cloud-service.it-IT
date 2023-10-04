@@ -2,9 +2,9 @@
 title: Acquisizione di contenuti nel Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
+source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2191'
 ht-degree: 7%
 
 ---
@@ -20,9 +20,6 @@ ht-degree: 7%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=it#top-up-extraction-process" text="Estrazione integrativa"
 
 Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effettua le seguenti operazioni:
-
->[!NOTE]
->Ti sei ricordato di registrare un ticket di supporto per questa acquisizione? Consulta [Considerazioni importanti prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) affinché questa e altre considerazioni possano contribuire al successo dell’acquisizione.
 
 1. Passa a Cloud Acceleration Manager. Fai clic sulla scheda del progetto e poi sulla scheda Content Transfer (Trasferimento contenuti). Accedi a **Processi di acquisizione** e fai clic su **Nuova acquisizione**
 
@@ -120,21 +117,27 @@ Questo messaggio indica che Cloud Acceleration Manager non è riuscito a raggiun
 > Viene visualizzato il campo &quot;Token di migrazione&quot; perché in alcuni casi è ciò che non è consentito recuperare il token. Consentendo la trasmissione manuale, può consentire all’utente di avviare l’acquisizione rapidamente, senza alcun aiuto aggiuntivo. Se il token è fornito e il messaggio viene ancora visualizzato, il problema non era il recupero del token.
 
 * AEM as a Cloud Service mantiene lo stato dell’ambiente e occasionalmente deve riavviare il servizio di migrazione per vari motivi normali. Se il servizio viene riavviato, non potrà essere raggiunto, ma sarà disponibile alla fine.
-* È possibile che nell’istanza sia in esecuzione un altro processo. Ad esempio, se Release Orchestrator applica un aggiornamento, il sistema potrebbe essere occupato e il servizio di migrazione regolarmente non disponibile. Per questo motivo, e con la possibilità di danneggiare l’istanza di stage o produzione, si consiglia vivamente di sospendere gli aggiornamenti durante un’acquisizione.
+* È possibile che nell’istanza sia in esecuzione un altro processo. Ad esempio, se [Aggiornamenti delle versioni AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) sta applicando un aggiornamento, il sistema potrebbe essere occupato e il servizio di migrazione regolarmente non disponibile. Al termine di questo processo, è possibile tentare di nuovo l’inizio dell’acquisizione.
 * Se un [È stato applicato il Inserisco nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Tramite Cloud Manager, impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è dinamico. Attualmente, l’unica soluzione consiste nel disattivare l’elenco consentiti IP mentre l’acquisizione è in esecuzione.
 * Ci possono essere altri motivi che richiedono un&#39;indagine. Se l’acquisizione continua a non riuscire, contatta l’Assistenza clienti di Adobe.
 
-### Aggiornamenti automatici tramite Release Orchestrator è ancora abilitato
+### Aggiornamenti e acquisizioni delle versioni di AEM
 
-Release Orchestrator mantiene automaticamente gli ambienti aggiornati applicando automaticamente gli aggiornamenti. Se l’aggiornamento viene attivato quando viene eseguita un’acquisizione, possono verificarsi risultati imprevedibili, incluso il danneggiamento dell’ambiente. Un buon motivo per registrare un ticket di assistenza clienti prima di iniziare un’acquisizione (vedi &quot;Nota&quot; sopra), in modo da poter pianificare la disattivazione temporanea di Release Orchestrator.
+[Aggiornamenti delle versioni AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) vengono applicati automaticamente agli ambienti per mantenerli aggiornati con la versione più recente di AEM as a Cloud Service. Se l’aggiornamento viene attivato quando viene eseguita un’acquisizione, possono verificarsi risultati imprevedibili, incluso il danneggiamento dell’ambiente.
 
-Se Release Orchestrator è ancora in esecuzione all’avvio di un’acquisizione, questo messaggio viene visualizzato nell’interfaccia utente. È possibile scegliere di continuare comunque, accettando il rischio, selezionando il campo e premendo nuovamente il pulsante.
+Se nel programma di destinazione è stato effettuato l’onboarding di &quot;Aggiornamenti della versione dell’AEM&quot;, il processo di acquisizione tenterà di disabilitare la coda prima dell’avvio. Al termine dell’acquisizione, lo stato del programma di aggiornamento della versione viene ripristinato come era prima dell’avvio delle acquisizioni.
 
 >[!NOTE]
 >
-> Release Orchestrator è ora implementato negli ambienti di sviluppo, quindi è necessario sospendere anche gli aggiornamenti in tali ambienti.
+> Non è più necessario registrare un ticket di supporto per disabilitare &quot;Aggiornamenti della versione AEM&quot;.
 
-![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+Se &quot;Aggiornamenti della versione dell’AEM&quot; è attivo (ad esempio, gli aggiornamenti sono in esecuzione o sono in coda per l’esecuzione), l’acquisizione non inizierà e l’interfaccia utente visualizza il seguente messaggio. Una volta completati gli aggiornamenti, è possibile avviare l’acquisizione. Cloud Manager può essere utilizzato per visualizzare lo stato corrente delle pipeline del programma.
+
+>[!NOTE]
+>
+> &quot;Aggiornamenti della versione dell’AEM&quot; viene eseguito nella pipeline dell’ambiente e attenderà che la pipeline sia pulita. Se gli aggiornamenti vengono messi in coda per un periodo più lungo del previsto, assicurati che la pipeline non sia bloccata involontariamente in un flusso di lavoro personalizzato.
+
+![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
 ### Errore di acquisizione integrativa a causa di violazione del vincolo di unicità
 

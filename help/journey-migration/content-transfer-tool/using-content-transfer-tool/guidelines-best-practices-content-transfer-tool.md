@@ -2,10 +2,10 @@
 title: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Scopri le linee guida e le best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti).
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 14%
+source-wordcount: '1432'
+ht-degree: 16%
 
 ---
 
@@ -78,12 +78,6 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 * Gli utenti e i gruppi trasferiti dallo strumento Content Transfer (Trasferimento contenuti) sono solo quelli necessari per il contenuto per soddisfare le autorizzazioni. Il _Estrazione_ processo copia l&#39;intero `/home` nel set di migrazione e esegue la mappatura degli utenti aggiungendo un campo creato dall’indirizzo e-mail di ciascun utente. Per ulteriori informazioni, consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Il _Acquisizione_ process copia tutti gli utenti e i gruppi a cui si fa riferimento negli ACL dei contenuti migrati. Consulta [Migrazione di gruppi utenti chiusi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) per ulteriori considerazioni sui gruppi utilizzati in un criterio Gruppo utenti chiuso (CUG).
 
 * Durante la fase di estrazione, lo strumento Content Transfer (Trasferimento contenuti) viene eseguito su un’istanza sorgente di AEM attiva.
-
-* Dopo aver completato *Estrazione* fase del processo di trasferimento dei contenuti e prima di avviare *Fase di acquisizione* per inserire contenuti nell’AEM as a Cloud Service *Fase* o *Produzione* istanze, registra un ticket di supporto. Notifica all&#39;Adobe l&#39;intenzione di eseguire *Acquisizione* in modo che Adobe possa garantire che non si verifichino interruzioni durante *Acquisizione* processo. Registra il ticket di supporto una settimana prima del periodo pianificato *Acquisizione* data. Dopo aver inviato il ticket di supporto, il team di supporto fornisce indicazioni sui passaggi successivi. Puoi inviare un ticket di supporto con i seguenti dettagli:
-
-   * Data esatta e ora stimata (con il fuso orario) in cui intendi avviare il *Acquisizione* fase.
-   * Tipo di ambiente (stage o produzione) in cui intendi acquisire i dati.
-   * ID programma.
 
 * Il *Fase di acquisizione* per l’authoring riduce l’intera implementazione di authoring. Significa che l’AEM dell’autore non è disponibile durante l’intero processo di acquisizione. Inoltre, assicurati che non vengano eseguite pipeline di Cloud Manager mentre esegui il *Acquisizione* fase.
 
