@@ -2,9 +2,9 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
+source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2657'
 ht-degree: 3%
 
 ---
@@ -501,11 +501,6 @@ Define DISP_LOG_LEVEL debug
 >Per gli ambienti AEM as a Cloud Service, debug è il livello di dettaglio massimo. Il livello del registro di traccia non è supportato, pertanto è consigliabile evitare di impostarlo quando si lavora in ambienti cloud.
 
 ## Registro CDN {#cdn-log}
-
->[!NOTE]
->
->Questa funzione verrà gradualmente implementata per i clienti a inizio settembre.
->
 
 AEM as a Cloud Service fornisce accesso ai registri CDN, utili per i casi d’uso, inclusa l’ottimizzazione del rapporto di hit della cache. Il formato di registro CDN non può essere personalizzato e non è possibile impostarlo su modalità diverse, ad esempio info, avvertenza o errore.
 
