@@ -1,26 +1,26 @@
 ---
-title: Modifica nel contesto
-description: Scopri come utilizzare l’Editor universale per modificare qualsiasi aspetto del contenuto, in posizione e nel contesto, in qualsiasi implementazione.
+title: Modifica nel contesto con l’Editor universale
+description: Scopri come utilizzare l’Editor universale per modificare qualsiasi aspetto del contenuto, dal posto e nel contesto, in qualsiasi implementazione.
 hidefromtoc: true
 index: false
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
+source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '971'
 ht-degree: 9%
 
 ---
 
-
-# Modifica nel contesto {#editing-in-context}
+# Modifica nel contesto con l’Editor universale {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Modifica nel contesto dei contenuti"
+>title="Modifica nel contesto con l’Editor universale"
 >abstract="Scopri in che modo le app headless possono sfruttare l’Editor universale per consentire agli autori di apportare facilmente modifiche nel contesto stesso dei contenuti."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
->title="Avvia l’Editor universale"
+>title="Avviare l’Editor universale"
 >abstract="Questa guida descrive l’Editor universale e come consente a chiunque di modificare ogni aspetto del contenuto in qualsiasi implementazione, per velocizzare le operazioni.<br><br>Per avviare questo modulo in una nuova scheda, fai clic qui sotto, quindi segui questa guida."
 
 >[!CONTEXTUALHELP]
