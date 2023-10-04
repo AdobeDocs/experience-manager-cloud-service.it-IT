@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
+source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
 workflow-type: tm+mt
-source-wordcount: '9442'
+source-wordcount: '9448'
 ht-degree: 2%
 
 ---
@@ -551,6 +551,7 @@ Allo stesso tempo che crei un caso di supporto Adobe con DASH abilitato sul tuo 
 1. Per creare un caso di supporto, attieniti alle istruzioni e accertati di fornire le seguenti informazioni:
 
    * Nome del contatto principale, e-mail, telefono.
+   * ID del programma e ID dell’ambiente.
    * Nome dell’account Dynamic Medie.
    * Specifica di abilitare il supporto per tracce DASH, sottotitoli multipli e audio sul tuo account Dynamic Medie, all&#39;Experience Manager 6.5.
 
