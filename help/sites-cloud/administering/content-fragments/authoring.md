@@ -4,7 +4,7 @@ description: Scopri come creare contenuti per i frammenti di contenuto, quindi c
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
+source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
 workflow-type: tm+mt
 source-wordcount: '2253'
 ht-degree: 4%
@@ -27,8 +27,7 @@ Questo editor fornisce:
 * [Anteprima](#preview-content-fragment) dell’esperienza sottoposta a rendering fornita dal frammento di contenuto.
 * Possibilità di [Pubblica](#publish-content-fragment) e [Annulla pubblicazione](#unpublish-content-fragment) dall’editor.
 * Possibilità di [visualizzare e aprire le copie per lingua associate](#view-language-copies) nell’editor.
-* Possibilità di [visualizza dettagli versione](#view-version-history) nell’editor.
-   * Puoi anche ripristinare una versione selezionata.
+* Possibilità di [visualizza dettagli versione](#view-version-history) nell’editor. Puoi anche ripristinare una versione selezionata.
 * Possibilità di [visualizzare e aprire i riferimenti padre](#view-parent-references).
 * Una visualizzazione gerarchica del frammento di contenuto e dei relativi riferimenti, utilizzando [Struttura ad albero](#structure-tree).
 
