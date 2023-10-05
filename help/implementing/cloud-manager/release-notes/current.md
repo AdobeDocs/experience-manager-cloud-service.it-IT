@@ -1,19 +1,19 @@
 ---
-title: Note sulla versione 2023.9.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
-description: Queste sono le note sulla versione 2023.9.0 di Cloud Manager in AEM as a Cloud Service.
+title: Note sulla versione 2023.10.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
+description: Queste sono le note sulla versione 2023.10.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
+source-git-commit: 661eac787439e6e696574a6973afa7e39eeb443e
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 23%
+source-wordcount: '529'
+ht-degree: 18%
 
 ---
 
 
-# Note sulla versione 2023.9.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Note sulla versione 2023.10.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2023.9.0 di Cloud Manager in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2023.10.0 di Cloud Manager in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,16 +21,31 @@ Questa pagina illustra le note sulla versione 2023.9.0 di Cloud Manager in AEM a
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione 2023.9.0 di Cloud Manager in AEM as a Cloud Service è l’14 settembre 2023. La prossima versione è prevista per il 5 ottobre 2023.
+La data di pubblicazione di Cloud Manager versione 2023.10.0 in AEM as a Cloud Service è il 5 ottobre 2023. La prossima versione è pianificata per il 2 novembre 2023.
 
 ## Novità {#what-is-new}
 
-* I registri CDN, se disponibili, possono essere scaricati tramite l’interfaccia utente di Cloud Manager.
-* Gli utenti possono ora fornire il consenso per includere i test di audit dell’esperienza basati su Google LightHouse in pipeline full stack non di produzione.
+* [Ora puoi annullare una pipeline in modo sicuro](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#cancel) nei passaggi di convalida e creazione dell’immagine.
+* Miglioramenti a [indicizzazione](/help/operations/indexing.md) hanno una durata della pipeline ridotta durante la distribuzione di nuovi indici.
+   * I miglioramenti variano a seconda del profilo del contenuto.
+* Automatico [aggiornamenti per gli ambienti di sviluppo](/help/implementing/cloud-manager/manage-environments.md#updating-environments) sono attivate per impostazione predefinita per i nuovi programmi, risparmiando tempo per eseguire gli aggiornamenti manualmente.
+   * Questo aggiornamento verrà introdotto in modo graduale.
+* Con la versione di ottobre 2023 di Cloud Manager, le versioni Java e Maven sono in fase di aggiornamento tramite un rollout graduale.
+   * Apache Maven è in fase di aggiornamento alla versione 3.8.8.
+   * Le versioni Java sono state aggiornate agli Oracli JDK 8u371 e Oracle JDK 11.0.20.
+   * Per impostazione predefinita, il `JAVA_HOME` la variabile di ambiente viene aggiornata in `/usr/lib/jvm/jdk1.8.0_371` che contiene l’Oracle JDK 8u371.
+   * Consulta il documento [Ambiente di build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) per ulteriori dettagli.
+   * [Consulta l’avviso OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) per informazioni dettagliate sulla sicurezza e sui bug risolti in questi aggiornamenti JDK.
 
 ## Programma di adozione anticipata {#early-adoption}
 
 Partecipa al nostro programma di adozione anticipata e hai la possibilità di testare alcune delle prossime funzionalità.
+
+### Autorizzazioni personalizzate {#custom-permissions}
+
+[Autorizzazioni personalizzate di Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) consente di creare nuovi profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
+
+se ti interessa testare questa nuova funzione e condividere i tuoi commenti, invia un messaggio e-mail `Grp-CloudManager-custom-permissions@adobe.com` dal tuo indirizzo e-mail associato al tuo Adobe ID.
 
 ### Ripristino del contenuto self-service {#content-restore}
 
@@ -52,9 +67,3 @@ Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti
 La dashboard sfrutta Google Lighthouse, uno strumento open-source automatizzato per migliorare la qualità delle app web. Puoi eseguirla su qualsiasi pagina web, pubblica o che richiede l’autenticazione. Sono disponibili controlli di prestazioni, accessibilità, applicazioni web progressive, SEO e altro ancora.
 
 Ti interessa testare il nuovo cruscotto? Invia un&#39;e-mail a `aem-lighthouse-pilot@adobe.com` dall’e-mail associata al tuo Adobe ID per iniziare.
-
-## Correzioni di bug {#bug-fixes}
-
-* Quando un programma viene eliminato, viene eliminata anche qualsiasi pipeline in esecuzione associata.
-* Se è in corso una pipeline, il **Invia** pulsante della **Lancio completato** la finestra di dialogo è ora disattivata e informa l’utente che non è possibile impostare la data di pubblicazione a causa della pipeline in esecuzione.
-* È stato corretto un errore occasionale in cui tutti i passaggi di un’esecuzione della pipeline venivano contrassegnati come completati, ma lo stato della pipeline era ancora in esecuzione, dando l’aspetto di uno stato bloccato.

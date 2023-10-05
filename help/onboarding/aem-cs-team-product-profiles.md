@@ -2,12 +2,13 @@
 title: Team e profili di prodotto di AEM as a Cloud Service
 description: Scopri come usare i team e i profili di prodotto di AEM as a Cloud Service per consentire e limitare l’accesso alle soluzioni Adobe con licenza.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '759'
-ht-degree: 100%
+source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 89%
 
 ---
+
 
 # Team e profili di prodotto di AEM as a Cloud Service {#product-profiles}
 
@@ -54,10 +55,18 @@ Cloud Manager offre profili di prodotto preconfigurati che possono essere consid
 
 A ciascuno dei profili di prodotto sono associate autorizzazioni specifiche.
 
-* **Proprietario business**: con questo ruolo l’utente dispone delle autorizzazioni per aggiungere un nuovo programma o modificarne uno esistente, aggiungere o aggiornare un ambiente, distribuire il codice in un ambiente AEM o eseguire controlli di qualità del codice.
-* **Responsabile dell’implementazione**: con questo ruolo l’utente dispone delle autorizzazioni per aggiungere o aggiornare un ambiente, eseguire tutte le pipeline, distribuire il codice nell’ambiente AEM ed eseguire i controlli di qualità del codice.
-* **Sviluppatore**: con questo ruolo l’utente dispone dell’autorizzazione per generare token di accesso personali per accedere a Git.
-* **Responsabile del programma**: con questo ruolo l’utente dispone delle autorizzazioni per pianificare le pipeline, ignorare i gate di qualità a 3 livelli e approvare la produzione.
+* **Proprietario business**
+   * Con questo ruolo l&#39;utente dispone delle autorizzazioni per aggiungere un nuovo programma o modificarne uno esistente, aggiungere o aggiornare un ambiente, distribuire il codice in un ambiente AEM o eseguire controlli di qualità del codice.
+   * Questo utente è responsabile della definizione dei KPI, dell’approvazione delle implementazioni di produzione e della sostituzione di errori importanti di terzo livello quando necessario.
+* **Responsabile della distribuzione**
+   * Con questo ruolo l’utente dispone delle autorizzazioni per aggiungere o aggiornare un ambiente, eseguire tutte le pipeline, distribuire il codice nell’ambiente AEM ed eseguire i controlli di qualità del codice.
+   * Questo utente gestisce le operazioni di distribuzione e utilizza Cloud Manager per eseguire distribuzioni di staging/produzione, modificare le pipeline CI/CD, approvare errori importanti di terzo livello, se necessario, e può accedere all’archivio Git.
+* **Sviluppatore**
+   * Con questo ruolo l’utente dispone dell’autorizzazione per generare token di accesso personali per accedere a Git.
+   * Questo utente sviluppa ed esegue il test del codice personalizzato dell’applicazione, utilizza principalmente Cloud Manager per visualizzare lo stato di distribuzione e può accedere all’archivio Git per commit di codice.
+* **Responsabile del programma**
+   * Con questo ruolo l’utente dispone delle autorizzazioni per pianificare le pipeline, ignorare i gate di qualità a 3 livelli e approvare la produzione.
+   * Questo utente utilizza Cloud Manager per eseguire la configurazione del team, esaminare lo stato, visualizzare i KPI e, se necessario, può approvare errori importanti di terzo livello.
 
 È possibile assegnare un singolo utente a più profili di prodotto. Ad esempio, assegnando a un utente entrambi i ruoli **Proprietario business** e **Responsabile dell’implementazione**, si assegna la somma delle rispettive autorizzazioni.
 

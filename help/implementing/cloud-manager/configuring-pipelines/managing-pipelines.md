@@ -3,12 +3,13 @@ title: Gestione delle pipeline
 description: Scopri come gestire, modificare, eseguire ed eliminare le pipeline esistenti.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8d692e354851a31b4f66b24135c863b5ca723b4
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 97%
+source-wordcount: '667'
+ht-degree: 80%
 
 ---
+
 
 # Gestione delle pipeline {#managing-pipelines}
 
@@ -74,7 +75,9 @@ A seconda del tipo di pipeline, puoi annullare l’esecuzione facendo nuovamente
 >
 >Non è possibile eliminare una pipeline in esecuzione.
 
-## Visualizza dettagli {#view-details}
+## Visualizzare i dettagli della pipeline {#view-details}
+
+Puoi visualizzare i dettagli di una pipeline per visualizzarne lo stato e i registri dell’ultima esecuzione.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
@@ -84,8 +87,32 @@ A seconda del tipo di pipeline, puoi annullare l’esecuzione facendo nuovamente
 
 ![Dettagli della pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
-Da qui è possibile visualizzare lo stato dei vari passaggi della pipeline e recuperare i registri della build per finalità diagnostiche. Per ulteriori informazioni, consulta il documento [Distribuzione del codice](/help/implementing/cloud-manager/deploy-code.md).
+Da qui è possibile visualizzare lo stato dei vari passaggi della pipeline e recuperare i registri della build per finalità diagnostiche. Consulta il documento [Implementazione del codice](/help/implementing/cloud-manager/deploy-code.md) per ulteriori informazioni sulla distribuzione del codice e sull’esecuzione dei test.
 
 >[!NOTE]
 >
 >È possibile visualizzare i dettagli solo di una pipeline in esecuzione o eseguita almeno una volta.
+
+## Annulla pipeline {#cancel}
+
+Se una pipeline si trova in fase di convalida o di creazione dell’immagine, puoi annullare l’esecuzione della pipeline in modo sicuro.
+
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+
+1. Dalla pagina della panoramica del programma, fai clic sul pulsante con i puntini di sospensione della pipeline che desideri annullare nella **Pipeline** Card.
+
+   ![Annullamento di una pipeline](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
+
+1. Tocca o fai clic su **Annulla**.
+
+In alternativa, puoi annullare una pipeline dalla pagina dei dettagli della pipeline.
+
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+
+1. Accedi a **Pipeline** scheda da **Panoramica del programma** tocca o fai clic sulla pipeline da annullare.
+
+1. L’opzione reindirizza alla pagina dei dettagli della pipeline in esecuzione.
+
+   ![Annulla dettagli pipeline](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
+
+1. Tocca o fai clic su **Annulla**.
