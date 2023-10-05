@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9146bf7222ad3cb74e6558868c41b822364ef3f0
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '4296'
+source-wordcount: '4308'
 ht-degree: 93%
 
 ---
@@ -569,7 +569,8 @@ ht-degree: 93%
          + [Visualizzazione e comprensione del rapporto di Adaptive Forms Analytics](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporare un modulo adattivo in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [Incorporare un modulo adattivo basato su componenti core in una pagina web esterna](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [Incorporare un modulo adattivo basato su Componenti core in una pagina web esterna](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [Incorporare un modulo adattivo basato su Componenti Foundation in una pagina web esterna](/help/forms/embed-adaptive-form-external-web-page.md)
       + Modello dati modulo {#use-form-data-model}
          + [Collegare le origini dati al Cloud Service](/help/forms/data-integration.md)
          + [Configurare origini dati](/help/forms/configure-data-sources.md)

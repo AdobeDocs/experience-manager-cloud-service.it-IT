@@ -4,9 +4,9 @@ description: Utilizza i componenti core modulo adattivo in una pagina AEM Sites 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2150'
 ht-degree: 2%
 
 ---
@@ -267,3 +267,8 @@ La pagina dei siti dell’AEM contiene un riferimento al modulo adattivo. Quando
 
 * Intestazione e piè di pagina nel modulo originale non sono inclusi nel modulo incorporato.
 * Le bozze utente e gli invii di moduli incorporati sono supportati e visibili nelle schede Bozze e Forms inviate nel portale Forms.
+
+>[!MORELIKETHIS]
+>
+>* [Incorporare un modulo adattivo basato su componenti core in una pagina web esterna](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [Incorporare un modulo adattivo in una pagina web esterna](/help/forms/embed-adaptive-form-external-web-page.md)

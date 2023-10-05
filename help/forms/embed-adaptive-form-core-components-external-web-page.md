@@ -1,16 +1,16 @@
 ---
-title: Incorporare un modulo adattivo in una pagina web esterna
-description: Scopri come incorporare un modulo adattivo in una pagina web esterna
+title: Come incorporare un modulo adattivo basato su Componenti core in una pagina web esterna?
+description: Scopri come incorporare un Forms adattivo in un sito web.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 2%
+source-wordcount: '984'
+ht-degree: 1%
 
 ---
-
 
 # Incorporare un modulo adattivo basato su componenti core in una pagina web esterna {#embed-adaptive-form-in-external-web-page}
 
@@ -162,6 +162,3 @@ Quando incorpori un modulo adattivo in una pagina web, considera le seguenti bes
 1. Nell’istanza di pubblicazione dell’AEM, vai a Gestione configurazione della console web dell’AEM all’indirizzo `https://'[server]:[port]'/system/console/configMgr`.
 1. Individuare e aprire **Filtro referrer Apache Sling** configurazione.
 1. Nel campo Host consentiti specifica il dominio in cui si trova la pagina web. Consente all&#39;host di effettuare richieste POST al server AEM. È inoltre possibile utilizzare espressioni regolari per specificare una serie di domini di applicazioni esterni.
-
-
-
