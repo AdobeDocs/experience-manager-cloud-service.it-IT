@@ -1,17 +1,17 @@
 ---
-title: Note sulla versione 2023.09.0 degli strumenti di migrazione in AEM as a Cloud Service
-description: Note sulla versione 2022.09.0 degli strumenti di migrazione in AEM as a Cloud Service
+title: Note sulla versione 2023.10.0 degli strumenti di migrazione in AEM as a Cloud Service
+description: Note sulla versione 2022.10.0 degli strumenti di migrazione nell’AEM as a Cloud Service
 feature: Release Information
-source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
+source-git-commit: 2ff6aeeb0145695aa44c79f42aefd53c7c545fea
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 4%
+source-wordcount: '124'
+ht-degree: 5%
 
 ---
 
-# Note sulla versione 2023.09.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
+# Note sulla versione 2023.10.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2022.09.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2022.10.0 degli strumenti di migrazione in AEM as a Cloud Service.
 
 ## Strumento Trasferimento contenuti {#ctt-release}
 
@@ -21,10 +21,4 @@ La data di pubblicazione dello strumento Content Transfer v3.0.0 è il 7 settemb
 
 ### Novità {#what-is-new-ctt}
 
-Lo strumento Content Transfer (Trasferimento contenuti) è stato notevolmente migliorato per offrire i seguenti vantaggi:
-* Riduzione del tempo di trasferimento durante la migrazione di un sottoinsieme di un archivio di contenuti grazie a AzCopy per copiare solo gli ID BLOB richiesti invece di copiare tutti gli ID BLOB
-* Miglioramenti più rapidi dei contenuti differenziali con l’aggiornamento Oak
-* È stata migliorata la robustezza separando il processo di indicizzazione dal processo di acquisizione dei contenuti. In caso di indicizzazione non riuscita, il contenuto non dovrà essere nuovamente acquisito. Solo l’indicizzazione si riavvia automaticamente, risparmiando tempo e fatica
-
-
-
+Sono state apportate modifiche al processo di acquisizione dei contenuti: non è più necessario inviare un ticket all’Assistenza clienti/Supporto per disabilitare gli aggiornamenti della versione AEM nell’ambiente di destinazione. Questo processo è ora automatizzato. Per ulteriori informazioni, consulta [Aggiornamenti e acquisizioni delle versioni di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#aem-version-updates-and-ingestions)
