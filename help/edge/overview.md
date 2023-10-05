@@ -1,13 +1,13 @@
 ---
 title: Introduzione ai Edge Delivery Services
 description: Introduzione ai Edge Delivery Services.
-source-git-commit: 6334efceb9abae560ae77c133df1a70ffb438e6a
+exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
+source-git-commit: ba59cb131d3b17730c87377f30162feb4e7aee29
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
-
 
 # Introduzione ai Edge Delivery Services {#getstart-edge}
 
@@ -59,7 +59,7 @@ Adobe fornisce tre canali per aiutarti con i Edge Delivery Services:
 
 ### Accedi alle risorse della community {#community-resource}
 
-Adobe dispone di due risorse della community per aiutarti con la distribuzione Edge, [Community Experience League](https://adobe.ly/3RzitVw) e un [Discord channel](https://discord.gg/YFTKQK8M).
+Adobe dispone di due risorse della community per aiutarti con la distribuzione Edge, [Community Experience League](https://adobe.ly/3Q6kTKl) e un [Discord channel](https://discord.gg/YFTKQK8M).
 
 ### Come accedere al canale di collaborazione sui prodotti {#collab-channel}
 
