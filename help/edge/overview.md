@@ -1,16 +1,16 @@
 ---
-title: Introduzione ai Edge Delivery Services
-description: Introduzione ai Edge Delivery Services.
+title: Guida introduttiva ai servizi di consegna Edge
+description: Guida introduttiva ai servizi di consegna Edge.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 6a4a257b3ca3d2db76d43707792d97db87974593
 workflow-type: tm+mt
 source-wordcount: '833'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Introduzione ai Edge Delivery Services {#getstart-edge}
+# Guida introduttiva ai servizi di consegna Edge {#getstart-edge}
 
 Con i Edge Delivery Services, l&#39;AEM offre esperienze eccezionali che stimolano coinvolgimento e conversioni. L’AEM lo fa offrendo esperienze ad alto impatto veloci da creare e sviluppare. Si tratta di un set componibile di servizi che consente un ambiente di sviluppo rapido in cui gli autori possono aggiornare e pubblicare rapidamente e nuovi siti vengono avviati rapidamente. Con questi Edge Delivery Services è possibile migliorare la conversione, ridurre i costi e velocizzare le attività relative ai contenuti.
 
