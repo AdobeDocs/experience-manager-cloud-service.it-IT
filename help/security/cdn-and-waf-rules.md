@@ -1,13 +1,13 @@
 ---
 title: Configurazione delle regole del filtro del traffico con le regole WAF
 description: Utilizzare le regole di filtro del traffico con le regole WAF per filtrare il traffico
-source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
+exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
+source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2740'
 ht-degree: 2%
 
 ---
-
 
 # Configurazione delle regole del filtro del traffico con le regole WAF per filtrare il traffico {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
@@ -32,8 +32,7 @@ Le regole del filtro del traffico possono essere distribuite a tutti i tipi di a
 
    ```
    config/
-        cdn/
-           cdn.yaml
+        cdn.yaml
    ```
 
 1. `cdn.yaml` deve contenere metadati, nonché un elenco di regole dei filtri di traffico e regole WAF.
@@ -46,7 +45,15 @@ Le regole del filtro del traffico possono essere distribuite a tutti i tipi di a
    data:
      trafficFilters:
        rules:
-         ...
+       # Block simple path
+       - name: block-path
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/block/me'
+         action: block
    ```
 
 Il parametro &quot;tipo&quot; deve essere impostato su &quot;CDN&quot; e la versione deve essere impostata sulla versione dello schema, attualmente &quot;1&quot;. Vedi gli esempi di seguito.
@@ -81,6 +88,7 @@ Il parametro &quot;tipo&quot; deve essere impostato su &quot;CDN&quot; e la vers
       > Per configurare o eseguire queste pipeline, gli utenti devono aver effettuato l’accesso come Responsabile dell’implementazione.
       > Inoltre, puoi configurare ed eseguire una sola pipeline di configurazione per ogni ambiente.
 
+   1. Imposta la posizione del codice in cui è memorizzata la configurazione radice (esempio: /config).
    1. Seleziona **Salva**. La nuova pipeline verrà visualizzata nella scheda della pipeline e potrà essere eseguita quando sei pronto.
    1. Per gli RDE verrà utilizzata la riga di comando, ma al momento RDE non è supportato.
 
@@ -171,6 +179,7 @@ Un gruppo di condizioni è composto da più condizioni semplici e/o di gruppo.
 | **doesNotMatch** | `string` | true se il risultato del getter non corrisponde al regex specificato |
 | **in** | `array[string]` | true se l’elenco fornito contiene un risultato getter |
 | **notIn** | `array[string]` | true se l’elenco fornito non contiene il risultato getter |
+| **esiste** | `boolean` | true se è impostata su true e la proprietà esiste o se è impostata su false e la proprietà non esiste |
 
 ### Struttura azione {#action-structure}
 
@@ -188,7 +197,7 @@ Nella tabella seguente, che viene ordinata in base all’ordine di esecuzione de
 
 ### Elenco flag WAF {#waf-flags-list}
 
-Il `wafFlag` la proprietà può includere quanto segue:
+Il `wafFlags` la proprietà può includere quanto segue:
 
 | **ID contrassegno** | **Nome contrassegno** | **Descrizione** |
 |---|---|---|
@@ -318,7 +327,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-**Esempio 4**
+**Esempio 5**
 
 Questa regola blocca l’accesso ai paesi OFAC:
 
@@ -333,7 +342,8 @@ data:
       - name: block-ofac-countries
         when:
           allOf:
-            - { reqProperty: tier, equals: publish }
+            - reqProperty: tier
+              matches: "author|publish"
             - reqProperty: clientCountry
               in:
                 - SY
@@ -379,8 +389,8 @@ data:
   trafficFilters:
     - name: limit-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        - reqProperty: tier
+        - matches: "author|publish"
       rateLimit:
         limit: 60
         window: 10
