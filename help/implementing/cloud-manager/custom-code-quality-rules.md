@@ -2,10 +2,10 @@
 title: Regole per la qualità del codice personalizzato
 description: Questa pagina descrive le regole per la qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice dei team tecnici di Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '3502'
-ht-degree: 100%
+source-git-commit: 57a7cd3fd2bfc34ebcee82832e020cf45887afa9
+workflow-type: tm+mt
+source-wordcount: '3868'
+ht-degree: 92%
 
 ---
 
@@ -570,7 +570,6 @@ Per ulteriori informazioni sulla personalizzazione delle definizioni dell’indi
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
 ```
@@ -583,7 +582,6 @@ Per ulteriori informazioni sulla personalizzazione delle definizioni dell’indi
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -606,11 +604,8 @@ Gli indici Oak di tipo `lucene` devono essere sempre asincroni. In caso contrar
     + damAssetLucene-1-custom
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
-      - reindex: false
       - tags: [visualSimilaritySearch]
-      - type: lucene
       + tika
         + config.xml
 ```
@@ -623,7 +618,6 @@ Gli indici Oak di tipo `lucene` devono essere sempre asincroni. In caso contrar
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -647,7 +641,6 @@ Affinché la ricerca delle risorse in Experience Manager Assets funzioni corrett
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
       + tika
         + config.xml
@@ -661,7 +654,6 @@ Affinché la ricerca delle risorse in Experience Manager Assets funzioni corrett
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -948,3 +940,208 @@ Experience Manager as a Cloud Service non consente che le definizioni dell’ind
 * **Da**: versione 2021.2.0
 
 Experience Manager as a Cloud Service non consente che le definizioni dell’indice di ricerca personalizzato (ovvero i nodi di tipo `oak:QueryIndexDefinition`) contengano una proprietà denominata `reindex`. Prima della migrazione a Experience Manager as a Cloud Service è necessario aggiornare l’indicizzazione che utilizza questa proprietà. Per ulteriori informazioni, consulta il documento [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md#how-to-use).
+
+### I nodi Lucene delle risorse DAM personalizzati non devono specificare &quot;queryPaths&quot; {#oakpal-damAssetLucene-queryPaths}
+
+* **Chiave**: IndexDamAssetLucene
+* **Tipo**: bug
+* **Gravità**: bloccante
+* **Da**: versione 2022.1.0
+
+#### Codice non conforme {#non-compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-1
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - queryPaths: [/content/dam]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### Codice conforme {#compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Se la definizione dell&#39;indice di ricerca personalizzato contiene compatVersion, deve essere impostata su 2 {#oakpal-compatVersion}
+
+* **Chiave**: IndexCompatVersion
+* **Tipo**: code smell
+* **Gravità**: importante
+* **Da**: versione 2022.1.0
+
+
+### Il nodo indice che specifica &#39;includedPaths&#39; deve inoltre specificare &#39;queryPaths&#39; con gli stessi valori {#oakpal-included-paths-without-query-paths}
+
+* **Chiave**: IndexIncludedPathsWithoutQueryPaths
+* **Tipo**: code smell
+* **Gravità**: minore
+* **Da**: versione 2023.1.0
+
+Per gli indici personalizzati, entrambi `includedPaths` e `queryPaths` deve essere configurato con valori identici. Se ne viene specificata una, l&#39;altra deve corrispondere. Tuttavia, esiste un caso particolare per gli indici di `damAssetLucene`, incluse le versioni personalizzate. Per questi, devi fornire solo `includedPaths`.
+
+### Il nodo di indice che specifica nodeScopeIndex sul tipo di nodo generico deve inoltre specificare includedPaths e queryPaths {#oakpal-full-text-on-generic-node-type}
+
+* **Chiave**: IndexFulltextOnGenericType
+* **Tipo**: code smell
+* **Gravità**: minore
+* **Da**: versione 2023.1.0
+
+Quando si imposta `nodeScopeIndex` su un tipo di nodo &quot;generico&quot; come `nt:unstructured` o `nt:base`, è inoltre necessario specificare `includedPaths` e `queryPaths` proprietà.
+`nt:base` può essere considerato &quot;generico&quot;, in quanto tutti i tipi di nodo ereditano da esso. Quindi, impostazione di un `nodeScopeIndex` il `nt:base` lo farà indicizzare tutti i nodi nell’archivio. Analogamente, `nt:unstructured` è anche considerato &quot;generico&quot; in quanto esistono molti nodi negli archivi che sono di questo tipo.
+
+#### Codice non conforme {#non-compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+#### Codice conforme {#compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+  - includedPaths: ["/content/dam/"] 
+  - queryPaths: ["/content/dam/"]
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+### La proprietà queryLimitReads del motore di query non deve essere sostituita {#oakpal-query-limit-reads}
+
+* **Chiave**: OverrideOfQueryLimitReads
+* **Tipo**: code smell
+* **Gravità**: minore
+* **Da**: versione 2023.1.0
+
+Se si ignora il valore predefinito, le letture delle pagine possono risultare molto lente, in particolare quando viene aggiunto più contenuto.
+
+### Più versioni attive dello stesso indice {#oakpal-multiple-active-versions}
+
+* **Chiave**: IndexDetectMultipleActiveVersionsOfSameIndex
+* **Tipo**: code smell
+* **Gravità**: minore
+* **Da**: versione 2023.1.0
+
+#### Codice non conforme {#non-compliant-code-multiple-active-versions}
+
+```text
++ oak:index
+  + damAssetLucene-1-custom-1
+    ...
+  + damAssetLucene-1-custom-2
+    ...
+  + damAssetLucene-1-custom-3
+    ...
+```
+
+#### Codice conforme {#compliant-code-multiple-active-versions}
+
+```text
++ damAssetLucene-1-custom-3
+    ...
+```
+
+
+### Il nome delle definizioni di indice completamente personalizzate deve essere conforme alle linee guida ufficiali {#oakpal-fully-custom-index-name}
+
+* **Chiave**: IndexValidFullyCustomName
+* **Tipo**: code smell
+* **Gravità**: minore
+* **Da**: versione 2023.1.0
+
+Il modello previsto per i nomi di indice completamente personalizzati è: `[prefix].[indexName]-custom-[version]`. Ulteriori informazioni sono disponibili nel documento [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md).
+
+
+### Stessa proprietà con valori analizzati diversi nella stessa definizione di indice {#oakpal-same-property-different-analyzed-values}
+
+#### Codice non conforme {#non-compliant-code-same-property-different-analyzed-values}
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+```
+
+#### Codice conforme {#compliant-code-same-property-different-analyzed-values}
+
+Esempio:
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+Esempio:
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+Se la proprietà analizzata non è stata impostata in modo esplicito, il valore predefinito sarà falso.
+
+### Proprietà Tags
+
+* **Chiave**: IndexHasValidTagsProperty
+* **Tipo**: code smell
+* **Gravità**: minore
+* **Da**: versione 2023.1.0
+
+Per indici specifici, assicurati di mantenere la proprietà tags e i relativi valori correnti. Anche se è possibile aggiungere nuovi valori alla proprietà tags, l’eliminazione di eventuali valori esistenti (o del tutto la proprietà ) può causare risultati imprevisti.
