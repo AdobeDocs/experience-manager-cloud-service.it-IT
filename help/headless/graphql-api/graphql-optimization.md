@@ -2,7 +2,7 @@
 title: Ottimizzazione delle query GraphQL
 description: Scopri come ottimizzare le query GraphQL per il filtro, il paging e l’ordinamento dei frammenti di contenuto in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: ba864cb28d2de0559d36f113e8e154ed5c115cae
+source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 65%
@@ -104,7 +104,7 @@ Per ridurre i problemi di prestazioni e memoria, il set di risultati iniziale de
 AEM consente due approcci per ottimizzare le query GraphQL:
 
 * [Filtro ibrido](#use-aem-graphql-hybrid-filtering)
-* [Paging](#use-graphql-pagination) (o impaginazione)
+* [Paging](#use-aem-graphql-pagination) (o impaginazione)
 
    * [Ordinamento](#use-graphql-sorting) non è direttamente correlato all’ottimizzazione, ma è correlato al paging
 
