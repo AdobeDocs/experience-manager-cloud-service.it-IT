@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
+source-git-commit: 51b048f753fe2e548d0ffdd9e3a903b21032aed7
 workflow-type: tm+mt
-source-wordcount: '9448'
+source-wordcount: '9463'
 ht-degree: 2%
 
 ---
@@ -521,7 +521,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 
 
-### Abilita il supporto per DASH, sottotitoli multipli e tracce audio multiple sul tuo account Dynamic Medie {#enable-dash}
+## Abilita il supporto per DASH, sottotitoli multipli e tracce audio multiple sul tuo account Dynamic Medie {#enable-dash}
 
 **Informazioni sull’attivazione del supporto DASH sul tuo account**
 DASH (Digital Adaptive Streaming over HTTP) è lo standard internazionale per lo streaming video ed è ampiamente adottato tra diversi visualizzatori video. Quando DASH è abilitato sul tuo account, puoi scegliere tra DASH o HLS per lo streaming video adattivo. Oppure, è possibile optare per entrambi con cambio automatico tra i lettori quando **[!UICONTROL auto]** viene selezionato come tipo di riproduzione nel predefinito Visualizzatore.
@@ -539,7 +539,7 @@ L’abilitazione del supporto DASH sul tuo account viene eseguita tramite un Ado
 
 **Informazioni sull’attivazione del supporto per più sottotitoli e tracce audio multiple sul tuo account**
 
-Allo stesso tempo che crei un caso di supporto Adobe con DASH abilitato sul tuo account, puoi anche beneficiare dell’abilitazione automatica del supporto per più sottotitoli e tracce audio. Dopo l’abilitazione, tutti i video successivi caricati vengono elaborati con una nuova architettura back-end che include il supporto per l’aggiunta di tracce multi-sottotitolo e multi-audio ai video.
+Contemporaneamente alla creazione di un caso di supporto Adobe con DASH abilitato sul tuo account, puoi anche beneficiare dell’abilitazione automatica del supporto per più sottotitoli e tracce audio. Dopo l’abilitazione, tutti i video successivi caricati vengono elaborati con una nuova architettura back-end che include il supporto per l’aggiunta di tracce multi-sottotitolo e multi-audio ai video.
 
 >[!IMPORTANT]
 >
@@ -551,8 +551,9 @@ Allo stesso tempo che crei un caso di supporto Adobe con DASH abilitato sul tuo 
 1. Per creare un caso di supporto, attieniti alle istruzioni e accertati di fornire le seguenti informazioni:
 
    * Nome del contatto principale, e-mail, telefono.
-   * ID del programma e ID dell’ambiente.
-   * Nome dell’account Dynamic Medie.
+   * Ambiente Cloud Service (ID programma e ID ambiente).
+   * Nome dell&#39;account della società Dynamic Medie.
+   * La tua area geografica di Dynamic Medie: Nord America (NA), Asia-Pacifico (APAC) o Europa-Medio Oriente-Asia (EMEA).
    * Specifica di abilitare il supporto per tracce DASH, sottotitoli multipli e audio sul tuo account Dynamic Medie, all&#39;Experience Manager 6.5.
 
 1. L’Assistenza clienti di Adobe ti aggiunge alla Lista di attesa dei clienti in base all’ordine in cui vengono inviate le richieste.
