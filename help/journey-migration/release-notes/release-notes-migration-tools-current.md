@@ -2,9 +2,10 @@
 title: Note sulla versione 2023.10.0 degli strumenti di migrazione in AEM as a Cloud Service
 description: Note sulla versione 2022.10.0 degli strumenti di migrazione nell’AEM as a Cloud Service
 feature: Release Information
-source-git-commit: 2ff6aeeb0145695aa44c79f42aefd53c7c545fea
+exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
+source-git-commit: c0a28f7183c2f29f54e9fcfa641839a257661e5c
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '135'
 ht-degree: 5%
 
 ---
@@ -17,8 +18,9 @@ Questa pagina illustra le note sulla versione 2022.10.0 degli strumenti di migra
 
 ### Data di pubblicazione {#release-date-ctt}
 
-La data di pubblicazione dello strumento Content Transfer v3.0.0 è il 7 settembre 2023.
+La data di pubblicazione dello strumento Content Transfer v3.0.4 è il 6 ottobre 2023.
 
 ### Novità {#what-is-new-ctt}
 
-Sono state apportate modifiche al processo di acquisizione dei contenuti: non è più necessario inviare un ticket all’Assistenza clienti/Supporto per disabilitare gli aggiornamenti della versione AEM nell’ambiente di destinazione. Questo processo è ora automatizzato. Per ulteriori informazioni, consulta [Aggiornamenti e acquisizioni delle versioni di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#aem-version-updates-and-ingestions)
+* Sono state apportate modifiche al processo di acquisizione dei contenuti: non è più necessario inviare un ticket all’Assistenza clienti/Supporto per disabilitare gli aggiornamenti della versione AEM nell’ambiente di destinazione. Questo processo è ora automatizzato. Per ulteriori informazioni, consulta [Aggiornamenti e acquisizioni delle versioni di AEM](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#aem-version-updates-and-ingestions)
+* La concorrenza dinamica verrà utilizzata durante [pre-copia](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) sia nelle fasi di estrazione che di acquisizione, riducendo notevolmente i tempi di migrazione dei contenuti.
