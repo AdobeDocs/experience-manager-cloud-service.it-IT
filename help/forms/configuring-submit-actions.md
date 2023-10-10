@@ -2,9 +2,9 @@
 title: Configurare un’azione di invio per un modulo adattivo
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: ba83b35f411ffd51e0032e7c7f12c7c82cd982ad
 workflow-type: tm+mt
-source-wordcount: '3388'
+source-wordcount: '3395'
 ht-degree: 3%
 
 ---
@@ -184,8 +184,9 @@ Per collegare AEM Forms al tuo Microsoft® Sharepoint Storage:
 1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Dopo aver selezionato **[!UICONTROL Microsoft® SharePoint]**, viene reindirizzato a **[!UICONTROL Browser SharePoint]**.
 1. Seleziona un **Contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
-1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata di configurazione di SharePoint.
-   ![Configurazione SharePoint](/help/forms/assets/sharepoint_configuration.png)
+1. Clic **[!UICONTROL Crea]** > **[!UICONTROL Raccolta documenti di SharePoint]** dall’elenco a discesa. Viene visualizzata la procedura guidata di configurazione di SharePoint.
+
+![Configurazione SharePoint](/help/forms/assets/sharepoint_configuration.png)
 1. Specifica la **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l’ID client, il segreto client e l’ID tenant per l’URL OAuth, consulta [Documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
    * È possibile recuperare `Client ID` e `Client Secret` dell’app dal portale Microsoft® Azure.
    * Nel portale Microsoft® Azure, aggiungi l’URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l’URL dell’istanza di authoring.
@@ -210,6 +211,7 @@ Ora puoi utilizzare questa configurazione di SharePoint Sites per l’azione di 
 ### Utilizzare la configurazione SharePoint in un modulo adattivo {#use-sharepoint-configuartion-in-af}
 
 Puoi utilizzare la configurazione SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in una cartella SharePoint. Per utilizzare una configurazione di archiviazione SharePoint in un modulo adattivo, effettua le seguenti operazioni:
+
 1. Creare un [Modulo adattivo](/help/forms/creating-adaptive-form.md).
 
    >[!NOTE]

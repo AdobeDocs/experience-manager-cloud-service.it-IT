@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2a1bb951c9da5ea0fdcafd1bb82eda3f55d0a16a
+source-git-commit: baf2a91f76af83ff9790ba3a97e7dafa415086c6
 workflow-type: tm+mt
-source-wordcount: '4316'
+source-wordcount: '4324'
 ht-degree: 93%
 
 ---
@@ -580,6 +580,7 @@ ht-degree: 93%
          + [Integrazione dell’applicazione Salesforce tramite il flusso delle credenziali del client OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [Configura [!DNL Azure] archiviazione](/help/forms/configure-azure-storage.md)
          + [Configurazione [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud](/help/forms/configure-msdynamics-salesforce.md)
+         + [Collegare un modulo adattivo all’elenco SharePoint di Microsoft](/help/forms/connect-aem-adaptive-form-to-sharepointlist.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)

@@ -5,12 +5,13 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: ac7e1a1ada156734c3a487269e674e8eade7c9c3
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2452'
 ht-degree: 1%
 
 ---
+
 
 # Configurare origini dati {#configure-data-sources}
 
@@ -23,7 +24,7 @@ ht-degree: 1%
 
 [!DNL Experience Manager Forms] L’integrazione dei dati consente di configurare e connettersi a diverse origini dati. Sono supportati i seguenti tipi predefiniti:
 
-* Database relazionali: MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], e [!DNL Oracle RDBMS]
+* Database relazionali: MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], e [!DNL Oracle RDBMS]
 * Servizi Web RESTful
 * Servizi web basati su SOAP
 * Servizi OData (versione 4.0)
@@ -42,7 +43,7 @@ Prima di configurare i database relazionali utilizzando [!DNL Experience Manager
 * [Aggiungere dipendenze driver JDBC in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
 
 
-### Passaggi per configurare il database relazionale
+### Passaggi per configurare un database relazionale
 
 È possibile configurare i database relazionali utilizzando [!DNL Experience Manager] Configurazione della console web. Effettua le seguenti operazioni:
 
@@ -57,11 +58,11 @@ Prima di configurare i database relazionali utilizzando [!DNL Experience Manager
    * URI connessione JDBC
    * Nome utente e password per stabilire la connessione con il driver JDBC
    * Specificare una query SQL SELECT in **[!UICONTROL Query di convalida]** per convalidare le connessioni dal pool. La query deve restituire almeno una riga. In base al database, specificare una delle seguenti opzioni:
-      * SELECT 1 (MySQL e MS SQL)
+      * SELECT 1 (MySQL e MS® SQL)
       * SELECT 1 da dual (Oracle)
    * Nome dell’origine dati
 
-   Stringhe di esempio per la configurazione del database relazionale:
+   Stringhe di esempio per configurare un database relazionale:
 
    ```text
       "datasource.name": "sqldatasourcename-mysql",
@@ -122,7 +123,7 @@ Per configurare la cartella per le configurazioni del servizio cloud:
 
 ## Configurare i servizi web RESTful {#configure-restful-web-services}
 
-Il servizio web RESTful può essere descritto utilizzando [Specifiche Swagger](https://swagger.io/specification/v2/) in formato JSON o YAML in un [!DNL Swagger] file di definizione. Per configurare il servizio Web RESTful in [!DNL Experience Manager] as a Cloud Service, assicurati di disporre di [!DNL Swagger] file ([Swagger versione 2.0](https://swagger.io/specification/v2/)) o [!DNL Swagger] file ([Swagger versione 3.0](https://swagger.io/specification/v3/)) nel file system o nell&#39;URL in cui è ospitato il file.
+I servizi web RESTful possono essere descritti utilizzando [Specifiche Swagger](https://swagger.io/specification/v2/) in formato JSON o YAML in un [!DNL Swagger] file di definizione. Per configurare il servizio Web RESTful in [!DNL Experience Manager] as a Cloud Service, assicurati di disporre di [!DNL Swagger] file ([Swagger versione 2.0](https://swagger.io/specification/v2/)) o [!DNL Swagger] file ([Swagger versione 3.0](https://swagger.io/specification/v3/)) nel file system o nell&#39;URL in cui è ospitato il file.
 
 ### Configurazione dei servizi RESTful per la specifica API Open versione 2.0 {#configure-restful-services-open-api-2.0}
 
@@ -133,7 +134,7 @@ Il servizio web RESTful può essere descritto utilizzando [Specifiche Swagger](h
 1. Tocca **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio RESTful]** dal **[!UICONTROL Tipo di servizio]** a discesa, se necessario sfoglia e seleziona un’immagine di miniatura per la configurazione, quindi tocca **[!UICONTROL Successivo]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
-   * Seleziona URL o file da [!UICONTROL Sorgente Swagger] e quindi specificare il [!DNL Swagger URL] al[!DNL  Swagger] file di definizione o carica [!DNL Swagger] dal file system locale.
+   * Seleziona un URL o un file da [!UICONTROL Sorgente Swagger] e quindi specificare il [!DNL Swagger URL] al[!DNL  Swagger] file di definizione o carica [!DNL Swagger] dal file system locale.
    * In base al[!DNL  Swagger] Input sorgente., i seguenti campi sono precompilati con i valori:
 
       * Schema: protocolli di trasferimento utilizzati dall’API REST. Il numero di tipi di schema visualizzati nell&#39;elenco a discesa dipende dagli schemi definiti nella [!DNL Swagger] sorgente.
@@ -158,7 +159,7 @@ Il servizio web RESTful può essere descritto utilizzando [Specifiche Swagger](h
 1. Tocca **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio RESTful]** dal **[!UICONTROL Tipo di servizio]** a discesa, se necessario sfoglia e seleziona un’immagine di miniatura per la configurazione, quindi tocca **[!UICONTROL Successivo]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
-   * Seleziona URL o file da [!UICONTROL Sorgente Swagger] e quindi specificare il [!DNL Swagger 3.0 URL] al[!DNL  Swagger] file di definizione o carica [!DNL Swagger] dal file system locale.
+   * Seleziona un URL o un file da [!UICONTROL Sorgente Swagger] e quindi specificare il [!DNL Swagger 3.0 URL] al[!DNL  Swagger] file di definizione o carica [!DNL Swagger] dal file system locale.
    * In base al[!DNL  Swagger] Input di origine, vengono visualizzate le informazioni di connessione con il server di destinazione.
    * Seleziona il tipo di autenticazione: Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base, chiave API o autenticazione personalizzata: per accedere al servizio RESTful e fornire di conseguenza i dettagli per l’autenticazione.
 
@@ -179,7 +180,7 @@ Consulta [Specifiche OpenAPI 3.0](https://swagger.io/specification/v3/) per info
 
 ### Configurazione client HTTP del modello dati modulo per ottimizzare le prestazioni {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] il modello dati del modulo durante l’integrazione con i servizi web RESTful come origine dati include configurazioni client HTTP per l’ottimizzazione delle prestazioni.
+[!DNL Experience Manager Forms] formare un modello dati durante l’integrazione con i servizi web RESTful come origine dati include configurazioni client HTTP per l’ottimizzazione delle prestazioni.
 
 Imposta le seguenti proprietà del **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]** per specificare l&#39;espressione regolare:
 
@@ -268,7 +269,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 >[!NOTE]
 >
 > Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
->Guida dettagliata alla configurazione di [!DNL Microsoft® Dynamics 365], online o on-premise, vedi [[!DNL Microsoft® Dynamics] Configurazione OData](ms-dynamics-odata-configuration.md).
+>Per una guida dettagliata alla configurazione di [!DNL Microsoft®® Dynamics 365], online o on-premise, vedi [[!DNL Microsoft® Dynamics] Configurazione OData](ms-dynamics-odata-configuration.md).
 
 1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
 
@@ -284,9 +285,32 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 
    >[!NOTE]
    >
-   Devi selezionare il tipo di autenticazione OAuth 2.0 con cui connetterti [!DNL Microsoft® Dynamics] servizi che utilizzano l&#39;endpoint OData come radice del servizio.
+   Devi selezionare il tipo di autenticazione OAuth 2.0 con cui connetterti [!DNL Microsoft®® Dynamics] servizi che utilizzano l&#39;endpoint OData come radice del servizio.
 
 1. Tocca **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio OData.
+
+## Configura elenco SharePoint Microsoft® {#config-sharepoint-list}
+
+<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+Per salvare i dati in un modulo tabulare, utilizzare Microsoft® SharePoint List. Per configurare un elenco SharePoint di Microsoft in [!DNL Experience Manager] as a Cloud Service, effettuare le seguenti operazioni:
+
+1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft®® SharePoint]**.
+1. Seleziona un **Contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
+1. Clic **[!UICONTROL Crea]** > **[!UICONTROL Elenco SharePoint]** dall’elenco a discesa. Viene visualizzata la procedura guidata di configurazione di SharePoint.
+1. Specifica la **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l’ID client, il segreto client e l’ID tenant per l’URL OAuth, consulta [Documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * È possibile recuperare `Client ID` e `Client Secret` dell’app dal portale Microsoft® Azure.
+   * Nel portale Microsoft® Azure, aggiungi l’URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l’URL dell’istanza di authoring.
+   * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` nel **Grafico Microsoft®** per fornire autorizzazioni di lettura/scrittura. Aggiungi `AllSites.Manage` autorizzazione in **Sharepoint** per interagire in remoto con i dati di SharePoint.
+   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell’app dal portale Microsoft® Azure.
+
+     >[!NOTE]
+     >
+     Il **segreto client** Il campo è obbligatorio o facoltativo dipende dalla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+
+1. Clic **[!UICONTROL Connetti]**. In caso di connessione riuscita, il `Connection Successful` viene visualizzato il messaggio.
+1. Seleziona **[!UICONTROL Sito SharePoint]** e **[!UICONTROL Elenco SharePoint]** dall’elenco a discesa.
+1. Tocca **[!UICONTROL Crea]** per creare la configurazione cloud per Microsoft® SharePointList.
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
