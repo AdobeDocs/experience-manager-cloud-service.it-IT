@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2ec0e09a20e2d129c9f2c01ebe21202b73505ee2
+source-git-commit: 3fbdb150a9a1c133b4910603682e37f1c5d885d2
 workflow-type: tm+mt
-source-wordcount: '1364'
-ht-degree: 9%
+source-wordcount: '414'
+ht-degree: 35%
 
 ---
 
@@ -13,96 +13,44 @@ ht-degree: 9%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 13665 {#release-13665}
+## Versione 13804 {#release-13804}
 
-Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 13665, rilasciata pubblicamente il 27 settembre 2023. Questa versione di manutenzione sostituisce le 13420 sulla versione.
+Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 13804, rilasciata pubblicamente il 10 ottobre 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 13665.
 
 L’attivazione delle funzioni 2023.10.0 fornirà il set completo di funzioni per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it).
 
-### Miglioramenti {#enhancements-13665}
+### Miglioramenti {#enhancements-13804}
 
-* Vari miglioramenti nelle API per frammenti di contenuto.
-* ASSETS-26713: Assets Dashboard: la nuova dashboard dell’interfaccia utente dell’esperienza ora è raggiungibile dall’interfaccia utente touch.
-* SITES-11206: Frammenti di contenuto: API di ricerca per frammenti di contenuto.
-* SITES-11262: Frammenti di contenuto: pulsante per passare al nuovo editor di frammenti di contenuto.
-* SITES-15447: Componenti core: versione 2.23.4.
-* FORMS-9624: è stato introdotto il componente CAPTCHA per Forms adattivo basato su componenti core.
-* FORMS-9913: è stato migliorato il servizio invoke dell&#39;editor visivo aggiungendo la funzionalità di convalida dei campi e la visualizzazione di messaggi di errore e di successo appropriati.
-* FORMS-10106: API GeneratePDFOutput migliorata per restituire il numero di pagine contenute nel documento generato.
-* FORMS-2494: è stato aggiunto il supporto per frammenti di modulo per Forms adattivo basati su componenti core.
-* FORMS-9807: è stato aggiunto il supporto per consentire l’accesso all’URL di una pagina restituito in seguito all’invio corretto tramite l’editor di regole del modulo adattivo.
-* FORMS-10571: è stata aggiunta la possibilità di impostare un URL di reindirizzamento della pagina di ringraziamento in base alla risposta di un servizio utilizzato in un’azione di invio personalizzata per Forms adattivo basata sui Componenti core.
+* GRANITE-47238: Manutenzione del registro di controllo: elimina i processi client per utilizzare la configurazione del cliente.
+* GRANITE-47123: Publish (Sling) - Migliora il tempo di avvio inizializzando la cache dei percorsi personalizzati in modo asincrono per impostazione predefinita.
+* GRANITE-46618: Pubblicazione (replica) - Migliora la velocità di avvio della pubblicazione tramite la gestione in batch dei messaggi di stato della replica.
+* GRANITE-47136: indicizzazione (download) - Migliora la velocità di download del nuovo download dell’indice parallelo (disabilitando la convalida del checksum).
+* GRANITE-47211: pubblicazione (Infra): migliora la separazione delle distribuzioni a livello di pubblicazione (memorizzando e recuperando il nome della revisione dell’archivio segmenti).
+* GRANITE-47267: Aggiornamento ad Apache Felix Http Jetty 4.2.18 (include la correzione di bug per la gestione dei parametri delle richieste ([FELIX-6625](https://issues.apache.org/jira/browse/FELIX-6625)) con miglioramenti delle prestazioni per gli sviluppi locali e RDE).
+* GRANITE-47247: aggiornamento a Sling Servlets Resolver 2.9.14 con miglioramenti delle prestazioni nella risoluzione dei servlet.
 
-### Problemi risolti {#fixed-issues-13665}
+### Problemi risolti {#fixed-issues-13804}
 
-* Vari aggiornamenti relativi alla traduzione.
-* CQ-4354428: Flussi di lavoro: impossibile completare un’attività nella casella in entrata.
-* SITES-9733: Frammenti di contenuto: i riferimenti alle risorse nel pannello dei riferimenti ai frammenti di contenuto mostrano riferimenti 0 (zero).
-* SITES-14561: Frammenti di contenuto: conversione da HTML a markup corretta e migliorata.
-* SITES-14882: Frammenti di contenuto: dopo aver modificato Frammento di contenuto e chiuso la scheda senza fare clic sul pulsante Salva o chiudi, i valori vengono memorizzati.
-* SITES-15167: Frammenti di contenuto: l’applicazione di patch a una variante con un payload non valido non restituisce 400 ma 500.
-* SITES-15514: Frammenti di contenuto: output Markdown non valido per una tabella nell’editor Rich Text.
-* SITES-15661: Frammenti di contenuto: non utilizzare vincoli univoci e riordinare gli elementi nei campi dei riferimenti nell’API Frammenti.
-* SITES-15730: Screens: la funzionalità Anteprima canale Screens non funziona sul dashboard.
-* SITES-15995: Frammenti di contenuto: i tipi MIME dei campi di testo del modello e del frammento lungo sono codificati.
-* SITES-16074: Frammenti di contenuto: applica tag ai campi che non sono stringhe[] non può essere recuperato da JCR.
-* SITES-16084: Frammenti di contenuto: CFHomeCardModelImpl non dispone del navigatore di destinazione.
-* SITES-14773: Frammenti esperienza: il riferimento al collegamento non viene aggiornato all’interno del frammento esperienza.
-* SITES-14899: Frammenti di esperienza: offerte multiple create per varianti XF in Target.
-* SITES-8590: GraphQL: problemi di codifica con le variabili nelle query persistenti.
-* SITES-9224: GraphQL: eccezione &quot;Writer has already been closed&quot; in GraphQLServlet.
-* SITES-14800: GraphQL: eccezione nelle query GraphQL persistenti con variabili.
-* SITES-15586: GraphQL: problema con il filtro delle query persistenti con valori nulli.
-* SITES-15622: GraphQL: problema con le query persistenti con numeri e parametri booleani.
-* SITES-15654: GraphQL: problema con unioni e proprietà con lo stesso nome.
-* SITES-15267: Lanci: la promozione non riprende le pagine di lancio modificate prima del momento di modifica della configurazione del lancio.
-* SITES-15406: Lanci: impossibile aggiungere una pagina di lancio.
-* SITES-15427: Lanci: comportamento incoerente dell’ambito &quot;Promuovi pagina corrente e sottopagine&quot;.
-* SITES-15429: Lanci: creazione di pagine eliminate durante la promozione dei lanci.
-* SITES-15462: Lanci: il processo di promozione automatica pubblica le pagine al di fuori dell’ambito della promozione.
-* SITES-15815: Lanci: la pagina eliminata dal lancio impedisce la corretta promozione di Launch.
-* SITES-15223: Editor pagina: impossibile ridimensionare i componenti nell’emulatore delle dimensioni del tablet.
-* SITES-15463: Modelli di pagina: impossibile pubblicare i modelli.
-* FORMS-10700: quando si utilizza il componente selettore data all’interno di un modulo adattivo basato su componenti core:
-   * Quando l’utente invia il modulo senza fornire alcun input per il componente data, viene registrato un errore.
-   * Quando si utilizzano versioni localizzate del selettore di date, alcuni mesi funzionano senza problemi e la selezione di alcuni altri porta a un malfunzionamento del componente.
-* FORMS-9598: il componente di incorporamento AEM Forms non funziona.
-* FORMS-9579: non è possibile passare un valore booleano a una funzione mentre si utilizza l’editor delle regole.
-* FORMS-9916: se si contrassegna il campo come non valido, viene attivato nuovamente un evento di modifica sullo stesso campo. Questo evento imprevisto attiva nuovamente la regola, creando un ciclo che continua a ripetersi fino a raggiungere un limite massimo di 10 ripetizioni.
-* FORMS-10243: l’opzione Set Focus non funziona correttamente per Forms adattivo basato su componenti core. In particolare, quando si fa clic su un pulsante di scelta e la regola &quot;imposta stato attivo&quot; è abilitata per un oggetto casella di testo, non riesce a impostare lo stato attivo come previsto, nonostante altre regole funzionino correttamente.
-* FORMS-10416: per un modulo adattivo headless, quando la proprietà &quot;:type&quot; è inclusa, il componente a input multilinea viene visualizzato come un normale componente di input di testo a riga singola.
-* FORMS-10015: per un modulo adattivo basato su componenti core, quando si sceglie l’oggetto Form nell’editor delle regole, questo passa l’intero oggetto istanza campo alla funzione personalizzata anziché al solo valore del campo.
-* FORMS-9890: gli utenti del gruppo amministratori cloud, senza accesso utente ai moduli, possono creare origini dati, moduli e modelli dati dei moduli. Tuttavia, non possono visualizzare i servizi disponibili nel sistema quando si utilizza &quot;Invoke service&quot; nell’editor di regole.
-* FORMS-9075: Quando si invia un modulo adattivo, gli assistenti vocali non annunciano tutti i messaggi di errore relativi ai campi obbligatori.
-* FORMS-9014: sono stati risolti i seguenti problemi di accessibilità:
-   * Quando si apre la casella della firma scarabocchio, il cursore passa al componente successivo e non all&#39;interno della casella stessa. Questo comportamento è stato confermato come un problema dal team Accesso facilitato.
-   * Dopo aver firmato, premendo Invio non si chiude la finestra di dialogo; gli utenti devono fare clic esplicitamente sul pulsante OK.
-   * Dopo la firma, l’ordine di tabulazione viene reimpostato in alto, anziché rimanere nel componente firma o passare al successivo.
-   * L&#39;opzione per cancellare la firma, rappresentata da un&#39;icona a forma di croce, non fa parte dell&#39;ordine di tabulazione e viene visualizzata solo al passaggio del mouse.
-   * Non è possibile accedere alla finestra di dialogo di conferma della cancellazione della firma tramite tastiera.
-   * L’etichetta del pulsante di firma della tastiera deve essere corretta per maggiore chiarezza.
-   * I controlli all&#39;interno della firma scarabocchio non dispongono del rapporto di contrasto consigliato.
-   * Lo stato inattivo del pulsante OK/segno di spunta deve includere l’attributo &quot;aria-disabled&quot;.
-   * L’assistente vocale non trasmette il testo utilizzato per creare la firma digitata, rendendola inaccessibile agli utenti ipovedenti.
-* FORMS-9214: per Forms adattivo basato su componenti core, la funzione personalizzata non viene richiamata a meno che non venga utilizzata per modificare un altro campo, ad esempio per impostare il valore di un campo diverso.
-* Per le API di generazione di documenti, il percorso &quot;/content&quot; mostra incongruenze nel suo utilizzo tra il percorso del modello, la directory principale del contenuto e i dati. In alcuni casi funziona correttamente ma non in modo uniforme.
-* FORMS-10718: è stato aggiunto il supporto per l’API resolveNode di GuideBridge per Forms adattivo basato sui componenti core.
-* FORMS-9998: in Forms adattivo basato su componenti core, le funzioni &quot;È vuoto&quot; e &quot;Non è vuoto&quot; non funzionano come previsto durante la convalida dell’input di testo tramite l’editor di regole.
-* FORMS-10236: il componente File allegato non funziona correttamente per Forms adattivo basato su componenti core. Quando si utilizza il componente Allegato, le anteprime dei file funzionano inizialmente, ma se si allegano altri file di tipi o formati simili o diversi, l’anteprima non funziona correttamente.
-* FORMS-10470: nel componente Casella di controllo, quando il valore predefinito è deselezionato (&quot;off&quot;) e il tipo di dati è String, il pulsante di invio non funziona.
-* FORMS-10534: in Forms adattivo basato su componenti core, l’opzione dell’operando booleano viene visualizzata a sinistra, a indicare che è selezionabile. Tuttavia, quando un utente cerca di selezionarlo, viene evidenziato un errore o viene generata un’indicazione di errore, che suggerisce che la selezione non funziona come previsto.
-* FORMS-10248: in Forms adattivo basato su componenti core, l’impostazione del valore di un pulsante di opzione o di una casella di controllo quando il tipo di valore dei dati è booleano non funziona come previsto.
-* FORMS-8114: il selettore di date e il modello non vengono letti correttamente dallo screen reader NVDA. In particolare, quando si utilizza l’assistente vocale NVDA, la selezione della data senza pattern viene letta correttamente. Tuttavia, quando un pattern viene applicato al selettore di date, viene letto come una tabella invece di essere interpretato correttamente.
+* GRANITE-47376: Author (Infra) - Correzione di errori DiscoveryTopologyUndefined dopo il riavvio continuo.
+* CQ-4353436: la console web AEM (Sling) - Configurazioni vuote in ServiceUserMapperImpl Validators (Principal/User) interrompe l’istanza AEM ([SLING-11912](https://issues.apache.org/jira/browse/SLING-11912)).
+* SKYOPS-63925: processo di trasformazione - Evitare errori TransformJob con JDK 11 - ZipException: errori di intestazione CEN non validi (con flag JVM disableZip64ExtraFieldValidation).
+* SKYOPS-63361: processo di trasformazione (registrazione) Registrazione migliorata con processi di trasformazione (sottoparagrafo CUSTOMER_EXTRACT).
+* SKYOPS-64103: Strumento FACT (Registrazione) - Riduce o tronca i messaggi di errore e di avviso relativi alla compilazione Clientlib.
+* SKYOPS-65109: strumento FACT (Gestione errori) - I pacchetti di contenuti con dipendenze non risolte generano un errore segnalato correttamente.
+* SKYOPS-65368: strumento FACT (Gestione errori): lo strumento viene eseguito in un ciclo di inclusione senza fine e alla fine si interrompe per l’incorporamento circolare di Clientlibs.
+* SKYOPS-64031: RDE - ComponentCacheImpl può entrare in uno stato incoerente a causa di una registrazione ResourceResolverFactory duplicata ([SLING-12019](https://issues.apache.org/jira/browse/SLING-12019)).
+* ASSETS-29105: RDE - Provider di restrizioni mancante da SecurityProviderRegistration requiredServicePids nel modello di funzionalità RDE.
+* GRANITE-44674: CoralUI - La funzionalità del campo obbligatorio Datepicker non è corretta.
 
-### Problemi noti {#known-issues-13665}
+### Problemi noti {#known-issues-13804}
 
 Nessuno.
 
-### Tecnologie incorporate {#embedded-tech-13665}
+### Tecnologie incorporate {#embedded-tech-13804}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
-| AEM Oak | 1,54-T20230817132355-3800a65 | [API Oak API 1.54.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
+| AEM OAK | 1,56-T20230927085643-189caed | [API Oak API 1.56.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.56.0/index.html) |
 | API SLING AEM | Versione 2.27.2 | [API Apache Sling 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Versione 1.4.20-1.4.0 | [Specifiche HTML Template Language](https://github.com/adobe/htl-spec) |
 | Componenti core AEM | Versione 2.23.4 | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
