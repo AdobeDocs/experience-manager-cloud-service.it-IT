@@ -3,9 +3,9 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Scopri le nozioni di base sul caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
+source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2878'
 ht-degree: 2%
 
 ---
@@ -99,6 +99,33 @@ In entrambi i casi, le intestazioni di memorizzazione in cache possono essere ig
 ```
 
 Quando modifichi le intestazioni di memorizzazione in cache a livello di Dispatcher, presta attenzione a non creare una cache troppo ampia. Consulta la discussione nella sezione HTML/testo [sopra](#html-text). Inoltre, assicurati che le risorse destinate a essere mantenute private (anziché memorizzate in cache) non facciano parte del `LocationMatch` filtri direttiva.
+
+Le risorse JCR (più grandi di 16 KB) memorizzate nell’archivio BLOB vengono solitamente servite come reindirizzamenti 302 dall’AEM. Questi reindirizzamenti vengono intercettati e seguiti da CDN e il contenuto viene distribuito direttamente dall’archivio BLOB. Su queste risposte è possibile personalizzare solo un set limitato di intestazioni. Ad esempio, per personalizzare `Content-Disposition` utilizza le direttive dispatcher nel modo seguente:
+
+```
+<LocationMatch "\.(?i:pdf)$">
+  ForceType application/pdf
+  Header set Content-Disposition inline
+  </LocationMatch>
+```
+
+L’elenco delle intestazioni che possono essere personalizzate nelle risposte BLOB è:
+
+```
+content-security-policy
+x-frame-options
+x-xss-protection
+x-content-type-options
+x-robots-tag
+access-control-allow-origin
+content-disposition
+permissions-policy
+referrer-policy
+x-vhost
+content-disposition
+cache-control
+vary
+```
 
 #### Nuovo comportamento di caching predefinito {#new-caching-behavior}
 
