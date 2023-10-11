@@ -1,12 +1,12 @@
 ---
-title: Aggiungere informazioni dai dati utente ai metadati di invio del modulo
+title: Come aggiornare i metadati di un modulo inviato?
 description: Scopri come aggiungere informazioni ai metadati di un modulo inviato con i dati forniti dall’utente. Approfondisci come visualizzare i metadati aggiornati per l’invio dei moduli nell’archivio CRX.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---

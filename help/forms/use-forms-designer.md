@@ -1,10 +1,10 @@
 ---
-title: Come si utilizza Forms Designer per creare modelli di documenti di record (DoR) e frammenti di moduli?
+title: Come è possibile utilizzare Forms Designer per creare modelli di documenti di record (DoR) e frammenti di moduli?
 description: Utilizzare [!DNL AEM Forms] per creare modelli di documento di record e frammenti di modulo.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---

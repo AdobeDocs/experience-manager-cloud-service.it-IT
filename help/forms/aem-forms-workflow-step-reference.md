@@ -1,12 +1,12 @@
 ---
-title: Utilizzare flussi di lavoro AEM incentrati su moduli per automatizzare i processi aziendali
+title: Quali passaggi del flusso di lavoro sono disponibili per il Cloud Service AEM Forms per la creazione di un flusso di lavoro o per l'automazione dei processi aziendali (BPM, Business Process Automation)?
 description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti tramite e-sign, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utilizzare i flussi di lavoro AEM, utilizzando Assegna passaggi attività, converti in passaggi PDF/A, Genera un documento di passaggi registrati, Utilizza flussi di lavoro, Firma passaggio documento, Genera un passaggio di output stampato, Genera output PDF non interattivo
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '7433'
+source-wordcount: '7446'
 ht-degree: 1%
 
 ---

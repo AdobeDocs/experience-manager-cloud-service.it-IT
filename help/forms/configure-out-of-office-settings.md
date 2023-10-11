@@ -1,10 +1,10 @@
 ---
-title: Configurare le impostazioni Fuori sede
+title: Come configurare le impostazioni Fuori sede in AEM Forms?
 description: Consente di delegare le attività mentre si è in congedo o fuori sede per un'esecuzione fluida del flusso di lavoro.
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '878'
 ht-degree: 1%
 
 ---

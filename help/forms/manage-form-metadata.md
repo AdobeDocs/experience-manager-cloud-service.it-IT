@@ -1,10 +1,10 @@
 ---
-title: Gestire i metadati per AEM Forms
+title: Come possiamo gestire i metadati per AEM Forms?
 description: I metadati semplificano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1741'
 ht-degree: 3%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: Come si crea un modello di modulo adattivo?
+title: Come possiamo creare un modello di modulo adattivo?
 description: Crea modelli per moduli adattivi per definire la struttura di base e il contenuto iniziale tramite l’Editor modelli.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2095'
-ht-degree: 1%
+source-wordcount: '2096'
+ht-degree: 2%
 
 ---
 
@@ -114,7 +114,7 @@ Nel livello Contenuto iniziale, puoi creare il modello di modulo adattivo utiliz
 
 >[!NOTE]
 >
->Quando si seleziona Archivia contenuto o Archivia PDF come azione di invio, viene visualizzata un&#39;opzione per specificare il percorso di archiviazione. Se si specifica il percorso nel modello, tutti i moduli creati da esso avranno lo stesso percorso. È possibile specificare il percorso di archiviazione corretto o assicurarsi che gli autori dei moduli lo aggiornino per impedire che i dati di ogni modulo vengano archiviati nella stessa posizione.
+>Quando si seleziona Archivia contenuto o Archivia PDF come azione di invio, si ottiene un&#39;opzione per specificare il percorso di archiviazione. Se si specifica il percorso nel modello, tutti i moduli creati da esso avranno lo stesso percorso. È possibile specificare il percorso di archiviazione corretto o assicurarsi che gli autori dei moduli lo aggiornino per impedire che i dati di ogni modulo vengano archiviati nella stessa posizione.
 
 #### Creazione di un modello di modulo adattivo con schede e pannelli {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
@@ -156,7 +156,7 @@ Quando crei un modulo adattivo, puoi visualizzare il modello elencato quando ti 
 
 ## Importazione o esportazione di un modello {#importing-or-exporting-a-template}
 
-Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando si importa il modulo su un altro [!DNL AEM Forms] istanza, viene importato senza il relativo modello. Se un modulo viene importato ma il relativo modello non è disponibile, il modulo non viene sottoposto a rendering. Puoi creare un pacchetto del modello personalizzato da `/conf` nodo in `https://<server>:<port>/crx/packmgr`, e portarlo in [!DNL AEM Forms] istanza in cui si desidera caricare il modulo. È inoltre possibile [Creare un modello utilizzando AEM Archeype e distribuirlo nell’istanza dei Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando si importa il modulo su un altro [!DNL AEM Forms] istanza, viene importato senza il relativo modello. Se un modulo viene importato ma il relativo modello non è disponibile, il modulo non viene sottoposto a rendering. Puoi creare un pacchetto del modello personalizzato da `/conf` nodo in `https://<server>:<port>/crx/packmgr`, e portarlo in [!DNL AEM Forms] istanza in cui si desidera caricare il modulo. È inoltre possibile [Creare un modello utilizzando AEM Archeype e distribuirlo nell’istanza dei Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >

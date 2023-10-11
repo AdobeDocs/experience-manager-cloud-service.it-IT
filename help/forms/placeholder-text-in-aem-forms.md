@@ -1,9 +1,9 @@
 ---
-title: Testo segnaposto in [!DNL AEM Forms]
+title: Come si aggiunge il testo segnaposto ai campi modulo?
 description: Il testo segnaposto ha lo scopo di aiutare l'utente a immettere dati quando il controllo non contiene alcun valore. Potrebbe essere un valore di esempio o una breve descrizione del formato previsto.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---

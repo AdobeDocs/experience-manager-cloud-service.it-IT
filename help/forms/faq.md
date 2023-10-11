@@ -1,12 +1,12 @@
 ---
-title: Domande frequenti su Forms as a Cloud Service
+title: Domande frequenti per AEM Forms as a Cloud Service
 description: Domande frequenti su Forms as a Cloud Service
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
-source-git-commit: 93e7c4b31ea3037c98b64790ffdee11f94cc6134
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '995'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ Puoi scaricare [!DNL JavaScript™] Documentazione di riferimento API da[!DNL  M
 * **Posso continuare a utilizzare i temi e i modelli esistenti?**
 Sì, puoi continuare a utilizzare i temi creati con AEM 6.4 Forms e AEM 6.5 Forms dopo aver utilizzato [Utilità di migrazione](migrate-to-forms-as-a-cloud-service.md) per spostarli in [!DNL AEM Forms] as a Cloud Service.
 
-   Puoi anche creare un progetto basato su [!DNL AEM Forms] as a Cloud Service [Archetipo](setup-local-development-environment.md#forms-cloud-service-local-development-environment) e utilizza i temi e i modelli di esempio inclusi.
+  Puoi anche creare un progetto basato su [!DNL AEM Forms] as a Cloud Service [Archetipo](setup-local-development-environment.md#forms-cloud-service-local-development-environment) e utilizza i temi e i modelli di esempio inclusi.
 
 * **Posso produrre dati conformi allo schema?**
 Sì, puoi creare un Forms adattivo per produrre dati conformi allo schema.
@@ -60,7 +60,7 @@ Per impostazione predefinita, la memorizzazione nella cache delle funzioni di co
 
 * **Dispongo di un modulo adattivo localizzato; non viene eseguito il rendering della versione localizzata? Quale potrebbe essere la causa e come risolverla?**
 
-   La convenzione URL di Forms adattivo localizzato ora supporta la specifica di una lingua nell’URL. La nuova convenzione URL consente di memorizzare nella cache i moduli localizzati su una rete CDN o Dispatcher. In ambiente di Cloud Service, utilizza il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo anziché `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. L’Adobe consiglia di utilizzare il caching di Dispatcher o CDN. Consente di migliorare la velocità di rendering dei moduli precompilati.
+  La convenzione URL di Forms adattivo localizzato ora supporta la specifica di una lingua nell’URL. La nuova convenzione URL consente di memorizzare nella cache i moduli localizzati su una rete CDN o Dispatcher. In ambiente di Cloud Service, utilizza il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo anziché `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. L’Adobe consiglia di utilizzare il caching di Dispatcher o CDN. Consente di migliorare la velocità di rendering dei moduli precompilati.
 
 * **Ho aggiornato un modulo adattivo; la versione aggiornata non è disponibile per l’uso da parte dei clienti?**
 Per impostazione predefinita, la rete CDN aggiorna la cache dopo ogni 5 minuti, attendi 5 minuti e verifica la versione aggiornata.
@@ -82,11 +82,11 @@ Il modello dati modulo non fornisce un metodo per utilizzare certificati persona
 
 * **Posso utilizzare l’azione di invio Forms Portal per Forms adattivo?**
 
-   Puoi modificare il Forms adattivo esistente per utilizzare [Invia all’endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Invia e-mail](configuring-submit-actions.md#send-email), [Invia utilizzando il modello dati modulo](configuring-submit-actions.md#submit-using-form-data-model), e [Richiama un flusso di lavoro AEM](configuring-submit-actions.md#invoke-an-aem-workflow) Inviare azioni. L’azione di invio Forms Portal e Forms Portal non è ancora disponibile. Per informazioni sulla disponibilità delle funzioni, consulta le note sulla versione mensili.
+  Puoi modificare il Forms adattivo esistente per utilizzare [Invia all’endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Invia e-mail](configuring-submit-actions.md#send-email), [Invia utilizzando il modello dati modulo](configuring-submit-actions.md#submit-using-form-data-model), e [Richiama un flusso di lavoro AEM](configuring-submit-actions.md#invoke-an-aem-workflow) Inviare azioni. L’azione di invio Forms Portal e Forms Portal non è ancora disponibile. Per informazioni sulla disponibilità delle funzioni, consulta le note sulla versione mensili.
 
 * **Posso utilizzare [!DNL AEM Forms] app con [!DNL AEM Forms] as a Cloud Service?**
 
-   Forms adattivo offre un design responsive. Questi moduli modificano l’aspetto, la progettazione e l’interattività in base al dispositivo sottostante. Puoi continuare a utilizzare Adaptive Forms sui dispositivi mobili e controllare le note sulla versione mensili per verificare la disponibilità delle funzioni.
+  Forms adattivo offre un design responsive. Questi moduli modificano l’aspetto, la progettazione e l’interattività in base al dispositivo sottostante. Puoi continuare a utilizzare Adaptive Forms sui dispositivi mobili e controllare le note sulla versione mensili per verificare la disponibilità delle funzioni.
 
 * **Quali funzioni non fanno parte della versione GA iniziale?**
 Forms Portal [!DNL AEM Forms] L’app, l’integrazione con Adobe Analytics e l’integrazione con Adobe Target non fanno parte della versione GA iniziale. Per informazioni sulle nuove funzioni, consulta le note sulla versione mensili.

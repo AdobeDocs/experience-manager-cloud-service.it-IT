@@ -1,10 +1,10 @@
 ---
-title: Generare un documento di record per Adaptive Forms
+title: Come si genera un documento di record (DoR) per AEM Forms?
 description: Scopri come generare un modello per un documento di record (DoR) per Forms adattivo.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '4139'
+source-wordcount: '4140'
 ht-degree: 3%
 
 ---

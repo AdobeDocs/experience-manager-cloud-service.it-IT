@@ -1,16 +1,14 @@
 ---
-title: Integrazione di Salesforce tramite il flusso delle credenziali client OAuth 2.0
-seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
-description: Passaggi per integrare l’integrazione di Salesforce con AEM Forms utilizzando il flusso di credenziali del client OAuth 2.0
-seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
+title: Come integrare Salesforce utilizzando il flusso delle credenziali client OAuth 2.0 con AEM Forms?
+description: Scopri come integrare Salesforce con AEM Forms utilizzando il flusso delle credenziali client OAuth 2.0.
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 2%
+source-wordcount: '423'
+ht-degree: 5%
 
 ---
-
 
 # Integrazione di Salesforce tramite il flusso delle credenziali client OAuth 2.0 {#configure-salesforce-with-ouath-2.0-client-credential}
 
@@ -42,7 +40,7 @@ Prima di impostare la comunicazione tra un’applicazione Salesforce e un ambien
 
 Per integrare l’applicazione Salesforce con un modulo adattivo utilizzando le impostazioni di autenticazione delle credenziali client OAuth 2.0, effettua le seguenti operazioni:
 
-1. Accedi all’istanza di authoring.
+1. Accedi all’istanza di authoring .
 1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Origini dati]**.
 1. Seleziona la cartella di configurazione.
 1. Clic **[!UICONTROL Crea]** e **[!UICONTROL Crea configurazione origine dati]** viene visualizzato.

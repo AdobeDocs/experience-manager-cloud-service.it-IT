@@ -1,11 +1,11 @@
 ---
-title: Selezione dinamica di utenti o gruppi nel flusso di lavoro AEM
+title: Come selezionare gli utenti nel flusso di lavoro AEM?
 description: Scopri come selezionare un utente o un gruppo per un [!DNL AEM Forms] flusso di lavoro in fase di esecuzione.
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---

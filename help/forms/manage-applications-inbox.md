@@ -1,13 +1,13 @@
 ---
-title: Come gestire le applicazioni e le attività Forms nella casella in entrata AEM?
+title: Come posso gestire moduli, applicazioni e attività nella casella in entrata AEM?
 description: Casella in entrata AEM consente di avviare flussi di lavoro incentrati su Forms tramite l'invio di applicazioni e la gestione di attività.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1150'
 ht-degree: 3%
 
 ---

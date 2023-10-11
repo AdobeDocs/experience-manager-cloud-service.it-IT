@@ -1,12 +1,12 @@
 ---
-title: Come si concede l’accesso all’editor di regole a determinati gruppi di utenti?
+title: Come fornire l’accesso all’editor di regole per moduli adattivi di AEM per selezionare i gruppi di utenti?
 description: Esistono diversi tipi di utenti con diverse competenze che lavorano con Adaptive Forms. Scopri come limitare l’accesso all’editor di regole agli utenti in base al loro ruolo o funzione.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '325'
 ht-degree: 5%
 
 ---

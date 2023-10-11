@@ -1,10 +1,10 @@
 ---
-title: Espressioni modulo adattivo
+title: Cosa sono le espressioni di modulo adattivo?
 seo-title: Adaptive Form Expressions
 description: Utilizza espressioni Forms adattive per aggiungere convalida, calcolo e attivazione o disattivazione automatica della visibilità di una sezione.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2697'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ In Forms adattivo, puoi scrivere espressioni per aggiungere comportamenti quali 
 
 ### Calcola espressione {#calculate-expression}
 
-L’espressione di calcolo viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un’espressione. In genere, tali espressioni utilizzano la proprietà value di altri campi. Ad esempio, `field2.value + field3.value`. Ogni volta che il valore `field2`o `field3`, l&#39;espressione viene riattivata e il valore viene ricalcolato.
+L’espressione di calcolo viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un’espressione. In genere, tali espressioni utilizzano la proprietà value di altri campi. Esempio: `field2.value + field3.value`. Ogni volta che il valore `field2`o `field3`, l&#39;espressione viene riattivata e il valore viene ricalcolato.
 
 **Applicabile a**: campi
 

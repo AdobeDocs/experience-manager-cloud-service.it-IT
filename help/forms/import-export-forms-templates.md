@@ -1,9 +1,9 @@
 ---
-title: Scopri come importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse su un[!DNL AEM Forms] istanza
+title: Come importare, esportare e organizzare Forms o PDF forms adattivi in un’istanza di AEM Forms?
 description: Scopri come migrare Forms adattivo, PDF forms, temi e altre risorse di supporto da e verso istanze AEM.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 1%

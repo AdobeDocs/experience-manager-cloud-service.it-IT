@@ -1,11 +1,11 @@
 ---
-title: Come si traduce un modulo adattivo basato su Componenti core?
+title: Come possiamo tradurre un Modulo adattivo basato su Componenti core?
 description: Scopri come creare un modello di dati modulo in AEM Forms, testare il modello con dati e servizi di esempio e configurare varie opzioni per un modello.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '894'
 ht-degree: 4%
 
 ---

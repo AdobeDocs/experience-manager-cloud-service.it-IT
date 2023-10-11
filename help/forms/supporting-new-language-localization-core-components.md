@@ -1,13 +1,13 @@
 ---
-title: Come si aggiunge il supporto per nuove lingue in un modulo adattivo basato su componenti core?
+title: Come si aggiunge il supporto per nuove lingue a un modulo adattivo basato su componenti core?
 description: Scopri come aggiungere nuove lingue per un modulo adattivo.
-source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
+exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1340'
 ht-degree: 2%
 
 ---
-
 
 # Aggiungere una lingua per Forms adattivo basato sui componenti core {#supporting-new-locales-for-adaptive-forms-localization}
 
@@ -179,5 +179,3 @@ Per visualizzare in anteprima un adattivo con le nuove impostazioni locali aggiu
 * [Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo basato su componenti core](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Genera documento di record per Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
 * [Aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
-

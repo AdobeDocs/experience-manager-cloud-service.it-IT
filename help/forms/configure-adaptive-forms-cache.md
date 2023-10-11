@@ -1,14 +1,14 @@
 ---
-title: Configurare la cache di Adaptive Forms
+title: Cos’è la cache dei moduli adattivi? e come memorizzare nella cache un modulo adattivo per l’AEM?
 description: La cache di Forms adattiva è progettata per Forms adattivo e documenti con l’obiettivo di ridurre il tempo necessario per il rendering di un modulo o documento adattivo.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '974'
 ht-degree: 1%
 
 ---

@@ -1,13 +1,13 @@
 ---
-title: Come incorporare un modulo adattivo basato su Componenti core in una pagina web esterna?
-description: Scopri come incorporare un Forms adattivo in un sito web.
+title: Come possiamo incorporare un modulo adattivo in una pagina web esterna?
+description: Scopri come incorporare un modulo adattivo in una pagina web esterna
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '982'
 ht-degree: 1%
 
 ---

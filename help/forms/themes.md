@@ -1,10 +1,10 @@
 ---
-title: Come si creano e utilizzano i temi per assegnare uno stile a un modulo adattivo?
+title: Come possiamo creare e utilizzare i temi per assegnare uno stile a un modulo adattivo?
 description: Utilizza i temi del modulo adattivo per applicare uno stile e fornire un’identità visiva a un modulo adattivo. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '5578'
+source-wordcount: '5579'
 ht-degree: 1%
 
 ---

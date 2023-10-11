@@ -1,14 +1,14 @@
 ---
-title: Frammenti di moduli adattivi
+title: Come si creano e utilizzano i frammenti di moduli adattivi?
 description: Il frammento di modulo è un componente modulare e riutilizzabile di un modulo. Scopri come creare frammenti di modulo e riutilizzarli in più moduli per assemblarli in modo efficiente.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2023'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ I frammenti di modulo adattivo creati vengono visualizzati nella scheda Framment
 1. Apri il modulo adattivo, in modalità di modifica, in cui desideri inserire un frammento di modulo adattivo.
 1. Clic **Risorse** ![assets-browser](assets/assets-browser.png) nella barra laterale. Nel browser Risorse, seleziona **Frammenti di moduli adattivi** dal menu a discesa.
 
-   È inoltre possibile scegliere di visualizzare tutti i frammenti di modulo adattivi o di filtrare in base al modello di modulo, ovvero Modello di modulo, Schema XML o Base.
+   È inoltre possibile scegliere di visualizzare tutti i frammenti di modulo adattivo o filtrarli in base al modello del modulo: modello di modulo, schema XML o di base.
 
 1. Trascina un frammento di modulo adattivo nel modulo adattivo.
 

@@ -1,17 +1,17 @@
 ---
-title: Elaborazione batch di comunicazioni as a Cloud Service AEM Forms
+title: Creazione di Bulk PDF senza sforzo - Padroneggiare l’arte con l’elaborazione in batch - La tua guida autonoma alla generazione di milioni di documenti PDF!
 description: Come si creano comunicazioni personalizzate e orientate al brand?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1705'
 ht-degree: 2%
 
 ---
 
 # Elaborazione batch di comunicazioni as a Cloud Service AEM Forms
 
-Le comunicazioni consentono di creare, assemblare e distribuire comunicazioni personalizzate e orientate al marchio, ad esempio corrispondenza commerciale, documenti, rendiconti, lettere di elaborazione delle richieste, avvisi sui benefit, lettere di elaborazione delle richieste, fatture mensili e kit di benvenuto. È possibile utilizzare le API di comunicazione per combinare un modello (XFA o PDF) con i dati del cliente per generare documenti in formato PDF, PS, PCL, DPL, IPL e ZPL.
+Le comunicazioni consentono di creare, assemblare e distribuire comunicazioni personalizzate e orientate al brand, ad esempio corrispondenza aziendale, documenti, rendiconti, lettere di elaborazione delle richieste di rimborso, avvisi sui benefit, fatture mensili e kit di benvenuto. È possibile utilizzare le API di comunicazione per combinare un modello (XFA o PDF) con i dati del cliente per generare documenti in formato PDF, PS, PCL, DPL, IPL e ZPL.
 
 Le comunicazioni forniscono API per la generazione di documenti su richiesta e pianificata. È possibile utilizzare API sincrone per API batch e on-demand (API asincrone) per la generazione pianificata dei documenti:
 

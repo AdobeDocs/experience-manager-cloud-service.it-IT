@@ -1,12 +1,12 @@
 ---
-title: Risorse di riferimento AEM Forms
+title: Come ottenere temi di riferimento per moduli adattivi basati su componenti di base?
 description: Per iniziare in modo rapido, utilizza i temi, i modelli e i modelli di dati dei moduli adattivi di riferimento forniti.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 7%
+source-wordcount: '521'
+ht-degree: 6%
 
 ---
 

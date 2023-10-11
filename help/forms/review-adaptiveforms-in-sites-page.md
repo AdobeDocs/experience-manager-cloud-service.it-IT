@@ -1,12 +1,12 @@
 ---
-title: Come si creano e gestiscono le revisioni di Adaptive Forms incorporate o create nella pagina Sites?
+title: Come si invia un modulo adattivo per la revisione? Come si gestiscono le recensioni per un modulo adattivo AEM?
 description: La revisione è un meccanismo che consente al revisore di eseguire diverse attività per i moduli adattivi utilizzando la fase Assegna attività.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 4%
 
 ---
