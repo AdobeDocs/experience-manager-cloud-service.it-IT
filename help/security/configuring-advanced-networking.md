@@ -2,10 +2,10 @@
 title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 46ff33808e710b511db7cfcdad931c14846d8cfe
 workflow-type: tm+mt
-source-wordcount: '3571'
-ht-degree: 97%
+source-wordcount: '3600'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Una volta effettuata la chiamata, in genere sono necessari circa 15 minuti per i
 Se la configurazione dell’uscita della porta flessibile con ambito di programma è pronta, l’endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` deve essere richiamato per ambiente per abilitare la rete a livello di ambiente e per dichiarare facoltativamente eventuali regole di inoltro porte. I parametri sono configurabili in base all’ambiente per offrire flessibilità.
 
 Le regole di port forwarding devono essere dichiarate per tutte le porte di destinazione diverse da 80/443, ma solo se non si utilizza il protocollo http o https, 
-specificando il set di host di destinazione (nomi o IP e con le porte). Per ogni host di destinazione, i clienti devono mappare la porta di destinazione prevista su una porta da 30000 a 30999.
+specificando il set di host di destinazione (nomi o IP e con le porte). La connessione client che utilizza la porta 80/443 su http/https deve continuare a utilizzare le impostazioni proxy nella connessione per applicare le proprietà della rete avanzata alla connessione. Per ogni host di destinazione, i clienti devono mappare la porta di destinazione prevista su una porta da 30000 a 30999.
 
 L’API dovrebbe rispondere in pochi secondi, indicando lo stato di aggiornamento e dopo circa 10 minuti, il metodo `GET` dell’endpoint indica che la rete avanzata è abilitata.
 
