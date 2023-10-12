@@ -3,10 +3,10 @@ title: Risorse di supporto per Experience Manager as a Cloud Service Sites
 description: Consulta l’elenco di tutte le risorse di supporto di Adobe AEM Cloud Services. Trova le risposte alle tue domande su AEM Sites as Cloud Service.
 landing-page-description: Come effettuare l’authoring e come amministrare AEM Sites as a Cloud Service.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '412'
-ht-degree: 100%
+source-git-commit: ce841a83d46dc1c4fa2edc858e4a0be0af3ac170
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,6 +19,7 @@ Questa pagina fornisce un elenco completo di tutte le risorse di supporto di AEM
 * [Modifiche di rilievo apportate ad AEM Sites as a Cloud Service](sites-cloud-changes.md)
 * [Guida rapida all’authoring](authoring/getting-started/quick-start.md)
 * [Pubblicazione delle pagine](authoring/fundamentals/publishing-pages.md)
+* [Authoring con Edge Delivery Services](/help/edge/overview.md)
 * [Authoring del layout reattivo](authoring/features/responsive-layout.md)
 * [Authoring di modelli](authoring/features/templates.md)
 * [Utilizzo di Frammenti esperienza](authoring/fundamentals/experience-fragments.md)
