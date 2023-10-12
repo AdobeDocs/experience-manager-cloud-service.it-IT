@@ -4,10 +4,10 @@ description: In questo articolo viene descritto come creare, modificare e utiliz
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
 workflow-type: tm+mt
-source-wordcount: '2444'
-ht-degree: 22%
+source-wordcount: '2503'
+ht-degree: 21%
 
 ---
 
@@ -303,6 +303,18 @@ Analogamente al modo in cui si aggiunge un predicato Proprietà o Opzioni, è po
   </tr>
  </tbody>
 </table>
+
+## Rimuovi facet di ricerca predefiniti {#removing-default-search-facets}
+
+L’Adobe consiglia di prestare attenzione durante la rimozione dei facet di ricerca predefiniti per evitare problemi di prestazioni. La rimozione dei facet di ricerca predefiniti potrebbe influire anche sul comportamento della funzionalità predefinita.
+
+Non rimuovere i seguenti campi nascosti poiché causano un problema di prestazioni delle query con OmniSearch e le raccolte avanzate:
+
+* group.2_group.type=dam:Asset
+
+* group.1_group.type=nt:folder
+
+* group.p.or=true
 
 ## Ripristina facet di ricerca {#restoring-default-search-facets}
 
