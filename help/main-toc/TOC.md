@@ -8,9 +8,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 73e2e84006cb6435d5bf34eef642269eeb8f5c4e
+source-git-commit: 2218aa58c6105d5fbfc08975e9e39d6476f4b173
 workflow-type: tm+mt
-source-wordcount: '4328'
+source-wordcount: '4333'
 ht-degree: 93%
 
 ---
@@ -744,6 +744,7 @@ ht-degree: 93%
    + [Cos’è un CMS headless?](/help/headless/what-is-headless.md)
    + [Introduzione ad AEM Headless](/help/headless/introduction.md)
    + [Portale per sviluppatori (risorse aggiuntive)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
+   + [Best practice: configurazione e utilizzo](/help/headless/best-practices-setup-use.md)
    + Configurazione {#setup}
       + [Introduzione](/help/headless/setup/introduction.md)
       + [Configurazione](/help/headless/setup/create-configuration.md)
