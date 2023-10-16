@@ -3,9 +3,9 @@ title: Best practice per query e indicizzazione
 description: Scopri come ottimizzare indici e query in base alle linee guida sulle best practice di Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
+source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '3144'
 ht-degree: 46%
 
 ---
@@ -315,4 +315,15 @@ Ciò può verificarsi per una serie di motivi:
    * In questo caso, tutti i risultati restituiti dall’indice devono essere letti dal motore di query e ordinati in memoria.
    * Questa operazione è molto più lenta dell’applicazione dell’ordinamento nella query dell’indice sottostante.
 1. L&#39;esecutore della query sta tentando di iterare un set di risultati di grandi dimensioni.
-   * Questa situazione potrebbe verificarsi per una serie di motivi - | Causa | Mitigazione | -------------- ---------- | La Commissione di `p.guessTotal` (o l&#39;utilizzo di un guessTotal molto grande), causando l&#39;iterazione da parte di QueryBuilder di numerosi risultati di conteggio dei risultati |Fornire `p.guessTotal` con un valore appropriato | | Utilizzo di un limite grande o non limitato nel Query Builder (ossia `p.limit=-1`) |Utilizzare un valore appropriato per `p.limit` (idealmente 1000 o inferiore) | | Utilizzo di un predicato di filtro in Query Builder per filtrare un numero elevato di risultati dalla query JCR sottostante | Sostituisci i predicati di filtraggio con restrizioni che possono essere applicate nella query JCR sottostante | | Utilizzo di un ordinamento basato su confronto in QueryBuilder |Sostituisci con ordinamento basato su proprietà nella query JCR sottostante (utilizzando le proprietà indicizzate come ordinate) | | Filtraggio di un gran numero di risultati a causa del controllo degli accessi |Applicare alla query ulteriori restrizioni alla proprietà o al percorso indicizzati per rispecchiare il controllo di accesso | | Utilizzo di &quot;impaginazione offset&quot; con un offset elevato |Valutare la possibilità di utilizzare [Paginazione keyset](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Iterazione di un numero elevato o illimitato di risultati |Valutare la possibilità di utilizzare [Paginazione keyset](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Indice scelto non corretto |Utilizzare i tag nella query e nella definizione dell&#39;indice per assicurarsi che venga utilizzato l&#39;indice previsto|
+   * Questa situazione può verificarsi per una serie di motivi, elencati di seguito:
+
+| Causa | Mitigazione |
+|----------|--------------|
+| La Commissione di `p.guessTotal` (o l&#39;utilizzo di un guessTotal molto grande), causando l&#39;iterazione da parte di QueryBuilder di numerosi risultati di conteggio dei risultati | Fornire `p.guessTotal` con un valore appropriato |
+| Utilizzo di un limite grande o non limitato nel Generatore di query (ad esempio `p.limit=-1`) | Utilizza un valore appropriato per `p.limit` (idealmente 1000 o inferiore) |
+| Utilizzo di un predicato di filtro in Query Builder per filtrare un numero elevato di risultati dalla query JCR sottostante | Sostituisci i predicati di filtro con restrizioni che possono essere applicate nella query JCR sottostante |
+| Utilizzo di un ordinamento basato su Comparator in QueryBuilder | Sostituisci con ordinamento basato su proprietà nella query JCR sottostante (utilizzando le proprietà indicizzate come ordinate) |
+| Filtraggio di un numero elevato di risultati a causa del controllo degli accessi | Applicare alla query una proprietà indicizzata o una restrizione di percorso aggiuntiva per rispecchiare il controllo di accesso |
+| Utilizzo di &quot;impaginazione offset&quot; con un offset di grandi dimensioni | Valuta l’utilizzo di [Paginazione keyset](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Iterazione di un numero elevato o non limitato di risultati | Valuta l’utilizzo di [Paginazione keyset](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Indice scelto non corretto | Utilizza i tag nella definizione della query e dell’indice per garantire che venga utilizzato l’indice previsto |
