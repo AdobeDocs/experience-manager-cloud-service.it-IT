@@ -3,10 +3,10 @@ title: Best practice per query e indicizzazione
 description: Scopri come ottimizzare indici e query in base alle linee guida sulle best practice di Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 94%
+source-wordcount: '3141'
+ht-degree: 46%
 
 ---
 
@@ -62,7 +62,7 @@ Una strategia simile può essere utilizzata per mantenere il risultato in una ca
 
 La documentazione Oak fornisce una [panoramica di alto livello sulle modalità di esecuzione delle query.](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) Questo costituisce la base di tutte le attività di ottimizzazione descritte nel presente documento.
 
-AEM as a Cloud Service fornisce lo strumento Prestazioni query, progettato per supportare l’implementazione di query efficienti.
+AEM as a Cloud Service fornisce [Strumento Prestazioni query](#query-performance-tool), progettato per supportare l’implementazione di query efficienti.
 
 * Vengono visualizzate le query già eseguite con le relative caratteristiche di prestazione e la pianificazione delle query.
 * Consente l’esecuzione di query ad-hoc a vari livelli, a partire dalla semplice visualizzazione della pianificazione delle query, fino all’esecuzione della query completa.
@@ -105,13 +105,177 @@ Ciò significa anche che le dimensioni del set di risultati possono essere deter
 
 Tale limite impedisce inoltre al motore di query di raggiungere il **limite trasversale** di 100.000 nodi, che comporta un arresto forzato della query.
 
-Se deve essere elaborato completamente un set di risultati potenzialmente di grandi dimensioni, consulta la sezione [Query con risultati di grandi dimensioni](#queries-with-large-result-sets) di questo documento.
+Consulta la sezione [Query con set di risultati di grandi dimensioni](#queries-with-large-result-sets) di questo documento se deve essere elaborato completamente un set di risultati potenzialmente di grandi dimensioni.
+
+## Strumento Prestazioni query {#query-performance-tool}
+
+Lo strumento Prestazioni query (disponibile all’indirizzo `/libs/granite/operations/content/diagnosistools/queryPerformance.html` e disponibile tramite [Console per sviluppatori in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it#queries)) fornisce -
+* Un elenco di qualsiasi &quot;Query lente&quot;; attualmente definite come quelle che leggono/analizzano più di 5000 righe.
+* Un elenco di &quot;Query popolari&quot;
+* Lo strumento &quot;Explain Query&quot; consente di comprendere in che modo una particolare query verrà eseguita da Oak.
+
+![Strumento Prestazioni query](assets/query-performance-tool.png)
+
+Le tabelle &quot;Query lente&quot; e &quot;Query popolari&quot; includono:
+* L&#39;istruzione di query stessa.
+* Dettagli dell’ultimo thread che ha eseguito la query, consentendo l’identificazione della pagina o della funzione dell’applicazione che esegue la query.
+* Punteggio &quot;Ottimizzazione di lettura&quot; per la query.
+   * Questo viene calcolato come rapporto tra il numero di righe/nodi analizzati per eseguire la query e il numero di risultati corrispondenti letti.
+   * Una query per la quale ogni restrizione (e qualsiasi ordine) può essere gestita all’indice in genere ottiene un punteggio pari o superiore al 90%.
+* Dettagli del numero massimo di righe -
+   * Lettura: indica che una riga è stata inclusa in un set di risultati.
+   * Analizzato: indica che una riga è stata inclusa nei risultati della query di indice sottostante (nel caso di una query indicizzata) o letta dal nodo (nel caso di un attraversamento dell’archivio).
+
+Queste tabelle consentono di identificare le query non completamente indicizzate (vedere [Utilizzare un indice](#use-an-index) o leggono troppi nodi (vedi anche [Archivio trasversale](#repository-traversal) e [Attraversamento indice](#index-traversal)). Tali domande saranno evidenziate - con le aree di preoccupazione appropriate contrassegnate in rosso.
+
+Il `Reset Statistics` è disponibile l’opzione per rimuovere tutte le statistiche esistenti raccolte nelle tabelle. Ciò consente l’esecuzione di una particolare query (tramite l’applicazione stessa o lo strumento Explain Query) e l’analisi delle statistiche di esecuzione.
+
+### Spiega query
+
+Lo strumento Explain Query Tool consente agli sviluppatori di comprendere il piano di esecuzione delle query (vedere [Lettura del piano di esecuzione della query](#reading-query-execution-plan)), inclusi i dettagli di eventuali indici utilizzati durante l’esecuzione della query. Questo può essere utilizzato per comprendere l’efficacia dell’indicizzazione di una query al fine di prevederne o analizzarne retrospettivamente le prestazioni.
+
+#### Spiegazione di una query
+
+Per spiegare una query, eseguire le operazioni seguenti:
+* Selezionare la lingua di query appropriata utilizzando `Language` a discesa.
+* Immettere l&#39;istruzione di query in `Query` campo.
+* Se necessario, seleziona la modalità di esecuzione della query utilizzando le caselle di controllo fornite.
+   * Per impostazione predefinita, non è necessario eseguire query JCR per identificare il piano di esecuzione delle query (questo non è il caso delle query QueryBuilder).
+   * Sono disponibili tre opzioni per l’esecuzione della query:
+      * `Include Execution Time` : esegui la query ma non tentare di leggere alcun risultato.
+      * `Read first page of results` : esegui la query e leggi la prima &quot;pagina&quot; di 20 risultati (replicando le best practice per l’esecuzione delle query).
+      * `Include Node Count` : esegui la query e leggi l’intero set di risultati (in genere questo non è consigliato, vedi [Attraversamento indice](#index-traversal)).
+
+#### Popup Spiegazione query {#query-explanation-popup}
+
+![Popup Spiegazione query](./assets/query-explanation-popup.png)
+
+Dopo aver selezionato `Explain`, all’utente viene presentata una finestra a comparsa che descrive il risultato della query explain (e l’esecuzione, se selezionata).
+Questo pop-up include i dettagli di -
+* Gli indici utilizzati durante l’esecuzione della query (o nessun indice se la query viene eseguita utilizzando [Archivio trasversale](#repository-traversal)).
+* Tempo di esecuzione (se `Include Execution Time` è stata selezionata) e conteggio dei risultati letti (se `Read first page of results` o `Include Node Count` sono state selezionate).
+* Il piano di esecuzione, che consente un’analisi dettagliata di come viene eseguita la query: vedi [Lettura del piano di esecuzione della query](#reading-query-execution-plan) per come interpretarlo.
+* I percorsi dei primi 20 risultati della query (se `Read first page of results` è stata selezionata)
+* Registri completi della pianificazione della query, che mostrano i costi relativi degli indici considerati per l’esecuzione della query (verrà scelto l’indice con il costo più basso).
+
+#### Lettura del piano di esecuzione della query {#reading-query-execution-plan}
+
+Il piano di esecuzione della query contiene tutto ciò che è necessario per prevedere (o spiegare) le prestazioni di una determinata query. Comprendi l’efficienza dell’esecuzione della query confrontando le restrizioni e l’ordine nella query JCR originale (o Query Builder) con la query eseguita nell’indice sottostante (Lucene, Elastic o Property).
+
+Considera la seguente query:
+
+```
+/jcr:root/content/dam//element(*, dam:Asset) [jcr:content/metadata/dc:title = "My Title"] order by jcr:created
+```
+
+...che contiene -
+* 3 restrizioni
+   * Tipo di nodo (`dam:Asset`)
+   * Percorso (discendenti di `/content/dam`)
+   * Proprietà (`jcr:content/metadata/dc:title = "My Title"`)
+* Ordinamento in base al `jcr:created` proprietà
+
+La spiegazione di questa query determina il seguente piano:
+
+```
+[dam:Asset] as [a] /* lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +jcr:content/metadata/dc:title:My Title ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }] where ([a].[jcr:content/metadata/dc:title] = 'My Title') and (isdescendantnode([a], [/content/dam])) */
+```
+
+All’interno di questo piano, la sezione che descrive la query eseguita nell’indice sottostante è -
+
+```
+lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +jcr:content/metadata/dc:title:My Title ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]
+```
+
+In questa sezione del piano si afferma che:
+* Per eseguire questa query viene utilizzato un indice -
+   * In questo caso l’indice Lucene `/oak:index/damAssetLucene-9` , in modo che le informazioni rimanenti siano in sintassi di query Lucene.
+* Tutte e 3 le restrizioni sono gestite dall’indice:
+   * La restrizione del tipo di nodo
+      * implicito, perché `damAssetLucene-9` indicizza solo i nodi di tipo dam:Asset.
+   * La restrizione del percorso
+      * perché `+:ancestors:/content/dam` nella query Lucene.
+   * La restrizione della proprietà
+      * perché `+jcr:content/metadata/dc:title:My Title` nella query Lucene.
+* L’ordinamento viene gestito dall’indice
+   * perché `ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]`  nella query Lucene.
+
+È probabile che una query di questo tipo funzioni correttamente, poiché i risultati restituiti dalla query di indice non verranno ulteriormente filtrati nel motore di query (oltre al filtro del controllo di accesso). Tuttavia, è ancora possibile che una query di questo tipo venga eseguita lentamente se non vengono seguite le best practice - vedi [Attraversamento indice](#index-traversal) di seguito.
+
+Considerazione di una query diversa -
+
+```
+/jcr:root/content/dam//element(*, dam:Asset) [jcr:content/metadata/myProperty = "My Property Value"] order by jcr:created
+```
+
+...che contiene -
+* 3 restrizioni
+   * Tipo di nodo (`dam:Asset`)
+   * Percorso (discendenti di `/content/dam`)
+   * Proprietà (`jcr:content/metadata/myProperty = "My Property Value"`)
+* Ordinamento in base al `jcr:created` proprietà**
+
+La spiegazione di questa query determina il seguente piano:
+
+```
+[dam:Asset] as [a] /* lucene:damAssetLucene-9-custom-1(/oak:index/damAssetLucene-9-custom-1) :ancestors:/content/dam ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }] where ([a].[jcr:content/metadata/myProperty] = 'My Property Value') and (isdescendantnode([a], [/content/dam])) */
+```
+
+All’interno di questo piano, la sezione che descrive la query eseguita nell’indice sottostante è -
+
+```
+lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]
+```
+
+In questa sezione del piano si afferma che:
+* Solo 2 (delle 3) restrizioni sono gestite dall&#39;indice -
+   * La restrizione del tipo di nodo
+      * implicito, perché `damAssetLucene-9` indicizza solo i nodi di tipo dam:Asset.
+   * La restrizione del percorso
+      * perché `+:ancestors:/content/dam` nella query Lucene.
+* La restrizione della proprietà `jcr:content/metadata/myProperty = "My Property Value"` non viene eseguito in corrispondenza dell’indice, ma verrà applicato come filtro del motore di query sui risultati della query Lucene sottostante.
+   * Questo perché `+jcr:content/metadata/myProperty:My Property Value` non viene visualizzato nella query Lucene, poiché questa proprietà non è indicizzata in `damAssetLucene-9` indice utilizzato per questa query.
+
+Questo piano di esecuzione della query si tradurrà in ogni risorsa sotto `/content/dam` letti dall’indice e quindi filtrati ulteriormente dal motore di query (che includerà solo quelli che corrispondono alla restrizione della proprietà non indicizzata nel set di risultati).
+
+Anche se solo una piccola percentuale di risorse corrisponde alla restrizione `jcr:content/metadata/myProperty = "My Property Value"`, la query dovrà leggere un numero elevato di nodi per (tentare di) riempire la &quot;pagina&quot; richiesta dei risultati. Questo può causare prestazioni insoddisfacenti, che verranno visualizzate come con un basso `Read Optimization` nello strumento Prestazioni query) e può causare messaggi di avvertenza che indicano che un numero elevato di nodi viene attraversato (vedere [Attraversamento indice](#index-traversal)).
+
+Per ottimizzare le prestazioni di questa seconda query, crea una versione personalizzata di `damAssetLucene-9` indice (`damAssetLucene-9-custom-1`) e aggiungi la seguente definizione di proprietà -
+
+```
+"myProperty": {
+  "jcr:primaryType": "nt:unstructured",
+  "propertyIndex": true,
+  "name": "jcr:content/metadata/myProperty"
+}
+```
 
 ## Scheda di riferimento rapido per le query JCR {#jcr-query-cheatsheet}
 
 Per supportare la creazione di query JCR e le definizioni degli indici efficienti, la [Scheda di riferimento rapido per le query JCR](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=it#jcrquerycheatsheet) è disponibile per il download e l’utilizzo come riferimento durante lo sviluppo.
 
 Contiene query di esempio per QueryBuilder, XPath e SQL-2 comprendendo scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre consigli su come creare o personalizzare gli indici Oak. Il contenuto della presente Scheda di riferimento rapido si applica all’AEM as a Cloud Service e all’AEM 6.5.
+
+## Best practice per la definizione degli indici {#index-definition-best-practices}
+
+Di seguito sono riportate alcune best practice da considerare durante la definizione o l’estensione degli indici.
+
+* Per i tipi di nodo con indici esistenti (ad esempio `dam:Asset` o `cq:Page`) preferisce l’estensione degli indici OOTB all’aggiunta di nuovi indici.
+   * Aggiunta di nuovi indici, in particolare indici full-text, sulla `dam:Asset` nodetype è fortemente sconsigliato (vedi [questa nota](/help/operations/indexing.md##index-names-index-names)).
+* Quando si aggiungono nuovi indici
+   * Definisci sempre gli indici di tipo &quot;lucene&quot;.
+   * Utilizza un tag di indice nella definizione dell’indice (e nella query associata) e `selectionPolicy = tag` per garantire che l’indice venga utilizzato solo per le query previste.
+   * Assicurare `queryPaths` e `includedPaths` vengono entrambi forniti (in genere con gli stessi valori).
+   * Utilizzare `excludedPaths` per escludere percorsi che non conterranno risultati utili.
+   * Utilizzare `analyzed` proprietà solo quando necessario, ad esempio quando è necessario utilizzare una restrizione di query full-text solo per tale proprietà.
+   * Specifica sempre `async = [ async, nrt ] `, `compatVersion = 2` e `evaluatePathRestrictions = true`.
+   * Specifica solo `nodeScopeIndex = true` se è necessario un indice full-text nodescope.
+
+>[!NOTE]
+>
+>Per ulteriori informazioni, consulta [Documentazione di Oak Lucene Index](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+
+I controlli automatizzati della pipeline di Cloud Manager applicheranno alcune delle best practice descritte in precedenza.
 
 ## Query con set di risultati di grandi dimensioni {#queries-with-large-result-sets}
 
@@ -134,3 +298,21 @@ Con questo frammento di log puoi determinare:
 * Il codice Java che ha eseguito questa query: `com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet::getHeuristics` per aiutare a identificare l’autore della query.
 
 Con queste informazioni, è possibile ottimizzare questa query utilizzando i metodi descritti nella sezione [Ottimizzazione delle query](#optimizing-queries) di questo documento.
+
+### Attraversamento indice {#index-traversal}
+
+Le query che utilizzano un indice, ma ancora leggono un numero elevato di nodi vengono registrate con un messaggio simile al seguente (nota il termine `Index-Traversed` anziché `Traversed`).
+
+```text
+05.10.2023 10:56:10.498 *WARN* [127.0.0.1 [1696502982443] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.search.spi.query.FulltextIndex$FulltextPathCursor Index-Traversed 60000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [dam:Asset] as a where isdescendantnode(a, '/content/dam') order by [jcr:content/metadata/unindexedProperty] /* xpath: /jcr:root/content/dam//element(*, dam:Asset) order by jcr:content/metadata/unindexedProperty */, path=/content/dam//*)
+```
+
+Ciò può verificarsi per una serie di motivi:
+1. Non tutte le restrizioni nella query possono essere gestite nell’indice.
+   * In questo caso, un superset del set di risultati finale viene letto dall’indice e successivamente filtrato nel motore di query.
+   * Questa operazione è molto più lenta rispetto all’applicazione di restrizioni nella query dell’indice sottostante.
+1. La query è ordinata in base a una proprietà non contrassegnata come &#39;ordinata&#39; nell&#39;indice.
+   * In questo caso, tutti i risultati restituiti dall’indice devono essere letti dal motore di query e ordinati in memoria.
+   * Questa operazione è molto più lenta dell’applicazione dell’ordinamento nella query dell’indice sottostante.
+1. L&#39;esecutore della query sta tentando di iterare un set di risultati di grandi dimensioni.
+   * Questa situazione potrebbe verificarsi per una serie di motivi - | Causa | Mitigazione | -------------- ---------- | La Commissione di `p.guessTotal` (o l&#39;utilizzo di un guessTotal molto grande), causando l&#39;iterazione da parte di QueryBuilder di numerosi risultati di conteggio dei risultati |Fornire `p.guessTotal` con un valore appropriato | | Utilizzo di un limite grande o non limitato nel Query Builder (ossia `p.limit=-1`) |Utilizzare un valore appropriato per `p.limit` (idealmente 1000 o inferiore) | | Utilizzo di un predicato di filtro in Query Builder per filtrare un numero elevato di risultati dalla query JCR sottostante | Sostituisci i predicati di filtraggio con restrizioni che possono essere applicate nella query JCR sottostante | | Utilizzo di un ordinamento basato su confronto in QueryBuilder |Sostituisci con ordinamento basato su proprietà nella query JCR sottostante (utilizzando le proprietà indicizzate come ordinate) | | Filtraggio di un gran numero di risultati a causa del controllo degli accessi |Applicare alla query ulteriori restrizioni alla proprietà o al percorso indicizzati per rispecchiare il controllo di accesso | | Utilizzo di &quot;impaginazione offset&quot; con un offset elevato |Valutare la possibilità di utilizzare [Paginazione keyset](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Iterazione di un numero elevato o illimitato di risultati |Valutare la possibilità di utilizzare [Paginazione keyset](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Indice scelto non corretto |Utilizzare i tag nella query e nella definizione dell&#39;indice per assicurarsi che venga utilizzato l&#39;indice previsto|

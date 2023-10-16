@@ -2,10 +2,10 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Scopri la ricerca e l’indicizzazione dei contenuti in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 35%
+source-wordcount: '2433'
+ht-degree: 32%
 
 ---
 
@@ -34,6 +34,11 @@ Limiti:
 * Internamente, possono essere configurati e utilizzati per le query altri indici. Ad esempio, le query scritte rispetto all’indice `damAssetLucene` potrebbero, su Skyline, essere eseguite in base a una versione Elasticsearch di questo indice. Questa differenza generalmente non è visibile all’applicazione e all’utente, tuttavia, alcuni strumenti come `explain` La funzionalità segnala un indice diverso. Per le differenze tra gli indici Lucene e gli indici Elastic, vedi [la documentazione Elastic in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non devono e non possono configurare direttamente gli indici Elasticsearch.
 * Ricerca per vettori di funzionalità simili (`useInSimilarity = true`) non è supportato.
 
+>[!TIP]
+>
+>Per ulteriori dettagli sull’indicizzazione e le query Oak, inclusa una descrizione dettagliata delle funzioni di ricerca e indicizzazione avanzate, vedi [Documentazione di Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
+
+
 ## Guida all’uso {#how-to-use}
 
 Le definizioni degli indici possono essere suddivise in tre casi d’uso principali, come segue:
@@ -54,11 +59,15 @@ Una definizione di indice può rientrare in una delle seguenti categorie:
 
 3. Indice completamente personalizzato: è possibile creare un indice completamente nuovo da zero. Il nome deve avere un prefisso per evitare conflitti di denominazione. Ad esempio: `/oak:index/acme.product-1-custom-2`, dove il prefisso è `acme.`
 
+>[!NOTE]
+>
+>Introduzione di nuovi indici sul `dam:Asset` nodetype (in particolare gli indici full-text) è fortemente sconsigliato in quanto possono entrare in conflitto con le funzionalità dei prodotti OOTB e causare problemi funzionali e di prestazioni. In generale, l&#39;aggiunta di proprietà aggiuntive al `damAssetLucene-*` versione indice è il modo più appropriato per indicizzare le query sulla `dam:Asset` nodetype (queste modifiche verranno automaticamente unite in una nuova versione del prodotto dell’indice se viene successivamente rilasciato). In caso di dubbi, contatta l’Assistenza Adobe per un consiglio.
+
 ## Preparazione della nuova definizione dell’indice {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Per personalizzare un indice preconfigurato, ad esempio `damAssetLucene-8`, copia l’ultima definizione di indice preconfigurato da un *ambiente Cloud Service* utilizzando Gestione pacchetti CRX DE (`/crx/packmgr/`). Rinomina in `damAssetLucene-8-custom-1` (o versione successiva) e aggiungere le personalizzazioni nel file XML. In questo modo le configurazioni richieste non vengono rimosse inavvertitamente. Ad esempio, il nodo `tika` sotto `/oak:index/damAssetLucene-8/tika` è richiesto nell’indice personalizzato del servizio cloud. Non esiste nell’SDK di Cloud.
+>Per personalizzare un indice preconfigurato, ad esempio `damAssetLucene-8`, copia l’ultima definizione di indice preconfigurato da un *ambiente Cloud Service* utilizzando Gestione pacchetti CRX DE (`/crx/packmgr/`). Rinomina in `damAssetLucene-8-custom-1` (o versione successiva) e aggiungere le personalizzazioni nel file XML. In questo modo le configurazioni richieste non vengono rimosse inavvertitamente. Ad esempio, il `tika` nodo sotto `/oak:index/damAssetLucene-8/tika` è richiesto nell’indice personalizzato distribuito in un ambiente AEM Cloud Service, ma non esiste nell’SDK AEM locale.
 
 Per le personalizzazioni di un indice OOTB, prepara un nuovo pacchetto contenente la definizione effettiva dell’indice che segue questo pattern di denominazione:
 

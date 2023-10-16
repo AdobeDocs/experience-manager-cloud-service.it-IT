@@ -2,9 +2,9 @@
 title: Riferimento predicato di Query Builder
 description: Riferimento predicato per l’API Query Builder in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2295'
 ht-degree: 2%
 
 ---
@@ -25,6 +25,8 @@ Il nome &quot;root&quot; non viene mai utilizzato in una query; è implicito.
 * **`p.limit`** - numero che indica le dimensioni della pagina.
 * **`p.guessTotal`** - consigliato: evita di calcolare il totale completo dei risultati, che può essere costoso. Un numero che indica il totale massimo fino a cui contare (ad esempio 1000, un numero che fornisce agli utenti un feedback sufficiente sulle dimensioni approssimative e numeri esatti per risultati più piccoli). Oppure `true` per contare solo fino al minimo necessario `p.offset` + `p.limit`.
 * **`p.excerpt`** - se impostato su `true`, includi un estratto di testo completo nel risultato.
+* **`p.indexTag`** : se impostato, includerà un’opzione tag di indice nella query (consulta [Tag indice opzione query](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
+* **`p.facetStrategy`** - se impostato su `oak`, Query Builder delegherà l’estrazione del facet a Oak (vedi [Facet](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
 * **`p.hits`** : (solo per il servlet JSON) seleziona il modo in cui gli hit vengono scritti come JSON, con questi standard (estensibili tramite il servizio ResultHitWriter).
    * **`simple`** - elementi minimi come `path`, `title`, `lastmodified`, `excerpt` (se impostato).
    * **`full`** : rendering JSON sling del nodo, con `jcr:path` che indica il percorso dell’hit. Per impostazione predefinita, elenca solo le proprietà dirette del nodo, includi una struttura più profonda con `p.nodedepth=N`, dove 0 indica l&#39;intero sottoalbero infinito. Aggiungi `p.acls=true` per includere le autorizzazioni JCR della sessione corrente sull’elemento risultato specificato (mappature: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
