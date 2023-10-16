@@ -4,9 +4,9 @@ description: In questo articolo viene descritto come creare, modificare e utiliz
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '2503'
+source-wordcount: '2506'
 ht-degree: 21%
 
 ---
@@ -342,6 +342,7 @@ Se non ti è stato assegnato un ruolo di amministratore, ecco un elenco di autor
 
 **Consulta anche**
 
+* [Best practice per la ricerca](search-best-practices.md)
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
 * [Formati di file supportati dalle risorse](file-format-support.md)
