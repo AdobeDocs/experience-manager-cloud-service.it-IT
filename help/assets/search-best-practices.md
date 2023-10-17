@@ -2,9 +2,9 @@
 title: Cerca best practice per [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Best practice per cercare, trovare e recuperare i metadati delle risorse all’interno dell’applicazione.
 contentOwner: KK
-source-git-commit: 31526510cc32c9587e76da522d9377afd837d991
+source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2544'
 ht-degree: 3%
 
 ---
@@ -299,13 +299,11 @@ The newly added assets are not indexed.
 
 <table>
     <tr>
-        <th> S.No.</th>
         <th> Parametri </th>
         <th> Visualizzazione amministratore </th>
         <th> Vista risorse </th>
     </tr>
     <tr>
-        <td> 1. </td>
         <td> Facet personalizzati </td>
         <td> Puoi aggiungere <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">facet di ricerca personalizzati in base al requisito.</td>
         <td> I facet personalizzati sono parzialmente supportati nella vista Risorse. I facet supportati sono:
@@ -319,37 +317,31 @@ The newly added assets are not indexed.
         </td>
     </tr>
     <tr>
-        <td> 2. </td>
         <td> Operatori </td>
         <td> Supporta AND, OR e NOT </td>
         <td> Non supportato </td>
     </tr>
     <tr>
-        <td> 3. </td>
         <td> Caratteri jolly </td>
         <td> Supporta il punto interrogativo (?) e asterisco (*).</td>
         <td> Non supportato </td>
     </tr>
     <tr>
-        <td> 4. </td>
         <td> Miglioramento dei risultati di ricerca </td>
         <td> Funzione supportata </td>
         <td> Non supportato </td>
     </tr>
      <tr>
-        <td> 5. </td>
         <td> Cancella tutti i filtri contemporaneamente </td>
         <td> Non supportato </td>
         <td> Funzione supportata</td>
     </tr>
      <tr>
-        <td> 6. </td>
         <td> File/Cartelle/File e cartelle </td>
         <td> Funzione supportata </td>
         <td> Un'opzione per selezionare una cartella è disponibile in "Tipo di file" </td>
     </tr>
      <tr>
-        <td> 7. </td>
         <td> Stato risorsa </td>
         <td> 
             Le opzioni supportate sono:
@@ -374,7 +366,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 8. </td>
         <td> Tipo di file </td>
         <td>
         Le opzioni supportate sono:
@@ -398,7 +389,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 9. </td>
         <td> Dimensione file </td>
         <td>
         Le opzioni supportate sono:
@@ -410,7 +400,6 @@ The newly added assets are not indexed.
         <td> Non supportato </td>
     </tr>
      <tr>
-        <td> 10. </td>
         <td> Altri filtri </td>
         <td>
             <ul>
@@ -427,7 +416,6 @@ The newly added assets are not indexed.
         <td> Non supportato </td>
     </tr>
      <tr>
-        <td> 11. </td>
         <td> Trova simile </td>
         <td> Funzione supportata </td>
         <td> Non supportato </td>
