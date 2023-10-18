@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 7%
+source-wordcount: '1387'
+ht-degree: 6%
 
 ---
 
@@ -131,6 +131,15 @@ Se non hai bisogno della funzionalità di download, disattiva il servlet per evi
 1. Per bloccare le richieste di download di risorse tramite una configurazione del dispatcher, modifica `dispatcher.any` e aggiungi una nuova regola al [sezione filtro](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+
+## Rappresentazione OnTime/OffTime {#on-off-time-rendition}
+
+Per attivare `OnOffTimeAssetAccessFilter` servizio, è necessario creare una configurazione OSGi. Questo servizio consente di bloccare l’accesso alle rappresentazioni e ai metadati, oltre che alla risorsa stessa, in base alle impostazioni di ora di attivazione/disattivazione. La configurazione OSGi deve essere per `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Effettua le seguenti operazioni:
+
+1. Nel codice del progetto in Git, crea un file di configurazione in `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Il file deve contenere `{}` come contenuto, a indicare una configurazione OSGi vuota per il componente OSGi corrispondente. Questa azione abilita il servizio.
+1. Distribuisci il codice, inclusa la nuova configurazione, tramite [!DNL Cloud Manager].
+1. Una volta implementati, i rendering e i metadati sono accessibili in base alle impostazioni di orario di attivazione/disattivazione delle risorse. Se la data o l’ora corrente cade prima dell’ora di attivazione o dopo l’ora di disattivazione, viene visualizzato un messaggio di errore.
+Per ulteriori dettagli sull’aggiunta di una configurazione OSGi vuota, consulta [guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Suggerimenti e limitazioni {#tips-limitations}
 
