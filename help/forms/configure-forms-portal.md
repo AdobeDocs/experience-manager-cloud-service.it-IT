@@ -2,9 +2,9 @@
 title: Come si crea un portale Forms su una pagina Experience Manager Sites?
 description: Scopri come creare un portale Forms e utilizzare i componenti core predefiniti in una pagina di AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1841'
 ht-degree: 2%
 
 ---
@@ -182,3 +182,19 @@ Puoi configurare la funzione di salvataggio automatico per un modulo adattivo co
 1. Seleziona la **[!UICONTROL Abilita]** per abilitare il salvataggio automatico del modulo. Puoi configurare quanto segue:
 * Per impostazione predefinita, il [!UICONTROL Evento modulo adattivo] è impostato su &quot;true&quot;, il che implica che il modulo viene salvato automaticamente dopo ogni evento.
 * In entrata [!UICONTROL Trigger], configura per attivare il salvataggio automatico in base al verificarsi di un evento o dopo un intervallo di tempo specifico.
+
+## Consulta anche {#see-also}
+
+{{see-also}}
+
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+
+-->

@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 1%
+source-wordcount: '1548'
+ht-degree: 2%
 
 ---
 
@@ -139,3 +139,8 @@ Quando questo progetto di archetipo viene distribuito tramite pipeline CM, l’o
 Ora disponi di un modello dati modulo con origini dati aggiunte. È quindi possibile modificare il modello dati modulo per aggiungere e configurare oggetti e servizi del modello dati, aggiungere associazioni tra oggetti del modello dati, modificare proprietà, aggiungere oggetti e proprietà del modello dati personalizzato, generare dati di esempio e così via.
 
 Per ulteriori informazioni, consulta [Utilizzare il modello dati del modulo](work-with-form-data-model.md).
+
+
+>[!MORELIKETHIS]
+>
+>* [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)

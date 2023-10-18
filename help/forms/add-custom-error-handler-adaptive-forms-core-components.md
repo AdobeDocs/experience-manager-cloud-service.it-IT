@@ -7,13 +7,13 @@ keywords: Aggiungi un gestore degli errori personalizzato, aggiungi un gestore d
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: a589005551dd7d8cdf8ac004725341905f0e99d1
+exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2408'
+source-wordcount: '2410'
 ht-degree: 2%
 
 ---
-
 
 # Gestori di errori per il modulo adattivo basato su componenti core {#error-handlers-in-adaptive-form}
 
@@ -410,3 +410,8 @@ Using this custom error handler, the adaptive form converts the fields listed in
 * [Creare un modulo adattivo basato su Componenti core autonomi](/help/forms/creating-adaptive-form-core-components.md)
 * [Creare stili o temi per i moduli](/help/forms/using-themes-in-core-components.md)
 * [Creare o aggiungere un modulo adattivo alla pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+## Consulta anche {#see-also}
+
+{{see-also}}
+

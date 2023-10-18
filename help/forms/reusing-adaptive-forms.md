@@ -3,9 +3,9 @@ title: Come si riutilizzano le proprietà dei metadati di un modulo adattivo?
 description: Scopri come riutilizzare in modo efficiente un modulo adattivo esistente per crearne uno nuovo.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 4%
 
 ---
@@ -71,3 +71,8 @@ Il contenuto di un Forms adattivo incollato può essere modificato utilizzando i
 1. **Ripubblica:**
 
    La risorsa incollata è diversa da quella copiata. Puoi pubblicarla come nuova risorsa per renderla disponibile agli utenti finali. Per sapere come pubblicare una risorsa, <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
+
+
+## Consulta anche {#see-also}
+
+{{see-also}}

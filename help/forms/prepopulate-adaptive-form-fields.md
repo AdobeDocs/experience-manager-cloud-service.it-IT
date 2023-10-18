@@ -3,7 +3,7 @@ title: Come si precompilano i campi del modulo adattivo?
 description: 'Utilizzare i dati esistenti per precompilare i campi di un modulo adattivo: gli utenti possono precompilare le informazioni di base in un modulo accedendo con i propri profili social.'
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 1%

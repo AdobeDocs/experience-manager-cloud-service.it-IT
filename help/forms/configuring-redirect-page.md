@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 4%
+source-wordcount: '214'
+ht-degree: 6%
 
 ---
 
@@ -35,3 +35,7 @@ Gli autori dei moduli possono configurare una pagina per ogni modulo, alla quale
 Gli autori dei moduli possono utilizzare i seguenti parametri passati alla pagina di ringraziamento. Per tutte le azioni di invio disponibili, `status` e `owner` i parametri vengono passati. Oltre a questi due parametri, vengono passati alcuni parametri aggiuntivi per le seguenti azioni di invio:
 
 * **[!UICONTROL Invia all’endpoint REST]**: vengono passati i parametri aggiunti per la mappatura in-field ai parametri. `status` e `owner` I parametri non vengono passati in questa azione di invio. Per ulteriori informazioni, consulta [Configurazione dell’azione di invio Invia all’endpoint REST](configuring-submit-actions.md).
+
+>[!MORELIKETHIS]
+>
+>* [Configurare una pagina di reindirizzamento o un messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)

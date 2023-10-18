@@ -2,10 +2,10 @@
 title: Come si aggiunge una nota a piè di pagina a un modulo adattivo?
 description: Utilizza l’editor Rich Text per le note a piè di pagina in un modulo adattivo.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 1%
+source-wordcount: '443'
+ht-degree: 2%
 
 ---
 
@@ -55,3 +55,8 @@ Per aggiungere una nota a piè di pagina in Adaptive Forms, effettuate le seguen
 1. Salva le proprietà.
 
 In fase di runtime, il numero viene visualizzato sul testo come apice e la descrizione corrispondente viene visualizzata nel **[!UICONTROL Nota a piè di pagina]** componente nella posizione in cui [!UICONTROL Segnaposto nota a piè di pagina] viene inserito nel modulo adattivo. È possibile passare direttamente alla descrizione della nota a piè di pagina facendo clic sul numero corrispondente nella [!UICONTROL Nota a piè di pagina].
+
+
+## Consulta anche {#see-also}
+
+{{see-also}}

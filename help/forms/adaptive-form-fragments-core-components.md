@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Aggiungere frammenti di moduli adattivi, frammenti di moduli adattivi, creare un frammento di modulo, aggiungere un frammento a un modulo adattivo, gestire i frammenti
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 2%
+source-wordcount: '1716'
+ht-degree: 1%
 
 ---
 
@@ -190,8 +190,8 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando lâ
 Sono disponibili frammenti per moduli adattivi di riferimento che Ã¨ possibile utilizzare per creare il modulo.
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
+
+
 ## Consulta anche {#see-also}
 
-* [Aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Creare o aggiungere temi in Adaptive Forms](/help/forms/using-themes-in-core-components.md)
-* [Utilizzare Google reCAPTCHA in un modulo adattivo AEM basato su componenti core](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

@@ -4,13 +4,13 @@ description: Scopri come gli utenti possono visualizzare un messaggio di ringraz
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
+exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 0%
+source-wordcount: '239'
+ht-degree: 1%
 
 ---
-
 
 # Configurazione della pagina di reindirizzamento {#configuring-redirect-page}
 
@@ -32,3 +32,11 @@ Gli autori dei moduli possono configurare una pagina per ogni modulo, alla quale
 **Correlato**
 
 * [Configurazione della pagina di reindirizzamento (Foundation Forms)](configuring-redirect-page.md)
+
+>[!MORELIKETHIS]
+>
+>* [Configurare una pagina di reindirizzamento](/help/forms/configuring-redirect-page.md)
+
+## Consulta anche {#see-also}
+
+{{see-also}}

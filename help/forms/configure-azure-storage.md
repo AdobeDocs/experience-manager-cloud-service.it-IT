@@ -2,7 +2,7 @@
 title: Come si configura l’archiviazione Azure?
 description: Scopri come integrare i moduli con il server di archiviazione Azure.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 Prima di eseguire questi passaggi, assicurati di disporre di un [!DNL Azure] e una chiave di accesso per autorizzare l&#39;accesso al [!DNL Azure] account di archiviazione.
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Archiviazione Azure]**.
+1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
 1. Seleziona una cartella per creare la configurazione e tocca **[!UICONTROL Crea]**.
 1. Specifica un titolo per la configurazione nella **[!UICONTROL Titolo]** campo.
 1. Specifica il nome del [!DNL Azure] account di archiviazione in **[!UICONTROL Account di archiviazione Azure]** campo.
@@ -101,3 +101,13 @@ Dopo aver definito le proprietà dell’oggetto modello dati come chiavi di rice
 >[!NOTE]
 >
 >Sono consentite solo 10 chiavi di ricerca per entità Azure, poiché Azure consente solo 10 tag per BLOB e il valore delle proprietà contrassegnato come chiavi di ricerca viene memorizzato nei tag di indice di Azure dopo l’hashing.
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

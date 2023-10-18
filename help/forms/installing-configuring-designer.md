@@ -3,9 +3,9 @@ title: Come si scarica e si installa Forms Designer per creare modelli per docum
 description: Utilizza Forms Designer per creare modelli XDP e PDF Form da utilizzare come modello per un documento di record.
 keywords: Installazione di Designer, Installazione di Forms Designer, Requisiti per l'installazione di Forms Designer
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '410'
 ht-degree: 7%
 
 ---
@@ -74,3 +74,8 @@ Per installare Designer, effettuare le seguenti operazioni:
 * [Usa caratteri personalizzati](/help/forms/use-custom-fonts.md)
 * [Creare un modulo adattivo basato su Componenti core autonomi](/help/forms/creating-adaptive-form-core-components.md)
 * [Creare o aggiungere un modulo adattivo alla pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+>[!MORELIKETHIS]
+>
+>* [Utilizzare Forms Designer per creare modelli di documenti di record e frammenti di moduli](/help/forms/use-forms-designer.md)

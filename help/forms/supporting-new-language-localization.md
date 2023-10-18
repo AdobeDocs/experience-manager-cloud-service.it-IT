@@ -2,9 +2,9 @@
 title: Come si aggiunge il supporto per le nuove lingue in un modulo adattivo basato su componenti di base?
 description: Per Adaptive Forms, puoi aggiungere lingue per più lingue oltre a quella fornita come impostazione predefinita.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1266'
 ht-degree: 1%
 
 ---
@@ -157,3 +157,8 @@ Ottieni un [libreria client di esempio](/help/forms/assets/locale-support-sample
 * Quando vengono aggiunti nuovi campi in un modulo adattivo esistente:
    * **Per la traduzione automatica**: ricrea il dizionario ed esegui il progetto di traduzione. I campi aggiunti a un modulo adattivo dopo la creazione di un progetto di traduzione rimangono non tradotti.
    * **Per traduzione umana**: esporta il dizionario tramite `[server:port]/libs/cq/i18n/gui/translator.html`. Aggiorna il dizionario per i campi appena aggiunti e caricalo.
+
+
+## Consulta anche {#see-also}
+
+{{see-also}}

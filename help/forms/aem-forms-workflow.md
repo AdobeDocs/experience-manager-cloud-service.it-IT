@@ -4,9 +4,9 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 'Utilizza AEM Forms Workflow per automatizzare e creare rapidamente flussi di lavoro per i processi aziendali. Ad esempio: revisione e approvazione, Generazione di PDF, Flussi di lavoro di Adobe Sign.'
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2392'
 ht-degree: 2%
 
 ---
@@ -270,3 +270,9 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### Rimuovi istanze flusso di lavoro {#purge-workflow-instances}
 
 Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, consulta [Rimozione regolare delle istanze del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=it) rimozione delle istanze del flusso di lavoro
+
+
+>[!MORELIKETHIS]
+>
+>* [Utilizzare il flusso di lavoro di traduzione dell’AEM per localizzare il Forms adattivo e il documento record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+>* [Variabili nei flussi di lavoro AEM incentrati su Forms](/help/forms/variable-in-aem-workflows.md)

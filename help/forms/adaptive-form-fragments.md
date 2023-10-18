@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2029'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Potete creare un frammento di modulo adattivo da zero o salvare un pannello in u
 
    >[!NOTE]
    >
-   >Assicurarsi di specificare un nome univoco per il frammento. Se esiste già un altro frammento con lo stesso nome, la creazione del frammento non riesce.
+   >Assicurarsi di specificare un nome univoco per il frammento. Se esiste già un altro frammento con lo stesso nome, il frammento non viene creato.
 
 1. Fare clic per aprire la **scheda Modello** modulo e, dal **menu a discesa Seleziona da** , selezionare uno dei seguenti modelli per il frammento:
 
@@ -239,7 +239,7 @@ Per localizzare un modulo adattivo che contiene frammenti di modulo adattivo, è
 * Un frammento in un modulo adattivo che utilizza un modello di dati modulo diverso non è supportato. Ad esempio, un frammento basato su XDP non è supportato in un modulo adattivo basato su XSD e viceversa.
 * I frammenti di moduli adattivi sono disponibili per l&#39;uso tramite la scheda frammenti di moduli adattivi in AEM contenuto finder.
 * Qualsiasi espressione, script o stile in un frammento di modulo adattivo autonomo viene mantenuto quando viene inserito per riferimento o incorporato in un modulo adattivo.
-* Non è possibile modificare un frammento di modulo adattivo inserito per riferimento dall&#39;interno di un modulo adattivo. Per modificarlo, è necessario modificare il frammento di modulo adattivo autonomo o incorporare il frammento nel modulo adattivo.
+* Non è possibile modificare un frammento di modulo adattivo, inserito per riferimento, dall’interno di un modulo adattivo. Per modificarlo, è necessario modificare il frammento di modulo adattivo autonomo o incorporare il frammento nel modulo adattivo.
 * Quando pubblichi un modulo adattivo, devi pubblicare i frammenti di modulo adattivo autonomi inseriti per riferimento nel modulo adattivo.
 * Quando ripubblichi un frammento di modulo adattivo aggiornato, le modifiche si riflettono nelle istanze pubblicate del modulo adattivo in cui viene utilizzato il frammento.
 * Il modulo adattivo contenente il componente Verifica non supporta gli utenti anonimi. Inoltre, non è consigliabile utilizzare il componente Verifica in un frammento di modulo adattivo.
@@ -249,3 +249,7 @@ Per localizzare un modulo adattivo che contiene frammenti di modulo adattivo, è
 ## Frammenti di riferimento {#reference-fragments}
 
 Sono disponibili i frammenti di moduli adattivi di riferimento che è possibile utilizzare per creare il modulo. Per ulteriori informazioni, consulta [Frammenti di riferimento](reference-adaptive-form-fragments.md).
+
+>[!MORELIKETHIS]
+>
+>* [Frammenti di moduli adattivi nei componenti core](/help/forms/adaptive-form-fragments-core-components.md)

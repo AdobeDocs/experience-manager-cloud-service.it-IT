@@ -4,7 +4,7 @@ description: I flussi di lavoro incentrati su Forms consentono di creare rapidam
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utilizzare i flussi di lavoro AEM, utilizzando Assegna passaggi attività, converti in passaggi PDF/A, Genera un documento di passaggi registrati, Utilizza flussi di lavoro, Firma passaggio documento, Genera un passaggio di output stampato, Genera output PDF non interattivo
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '7446'
 ht-degree: 1%
@@ -592,3 +592,11 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 * [Variabili nei flussi di lavoro AEM incentrati su Forms](/help/forms/variable-in-aem-workflows.md)
 * [Configura impostazione Fuori sede](/help/forms/configure-out-of-office-settings.md)
 
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Forms-centric workflow on OSGi](/help/forms/aem-forms-workflow.md)
+>* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+
+-->

@@ -4,10 +4,10 @@ description: Migliora la sicurezza dei moduli con il servizio Google reCAPTCHA. 
 topic-tags: Adaptive Forms, author
 keywords: Servizio Google reCAPTCHA, Forms adattivo, sfida CAPTCHA, prevenzione dei bot, componenti core, sicurezza dell’invio dei moduli, prevenzione della posta indesiderata dei moduli
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 12%
+source-wordcount: '919'
+ht-degree: 11%
 
 ---
 
@@ -106,9 +106,6 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **D: Posso utilizzare più di un componente Captcha in un modulo adattivo?**
 **Ans:** L’utilizzo di più componenti Captcha in un modulo adattivo non è supportato. Inoltre, si sconsiglia di utilizzare il componente Captcha in un frammento o in un pannello contrassegnato per il caricamento lento.
 
-## Consulta anche
+## Consulta anche {#see-also}
 
-* [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
-* [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments-core-components.md)
-* [Aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Utilizzare Google reCAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

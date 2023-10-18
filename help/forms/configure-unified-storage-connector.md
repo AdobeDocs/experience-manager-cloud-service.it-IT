@@ -2,9 +2,9 @@
 title: Come si configura il connettore di archiviazione unificata per AEM Forms?
 description: Scopri come gestire il connettore di archiviazione unificata per AEM Forms. Utilizza il connettore di archiviazione unificata per collegare AEM Forms a archivi di dati esterni.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Prima di eseguire questi passaggi, assicurati di disporre di un [!DNL Azure] e u
 
 Per creare un’ [!DNL Azure] configurazione archiviazione:
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Archiviazione Azure]**.
+1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
 1. Seleziona una cartella per creare la configurazione e tocca **[!UICONTROL Crea]**.
 1. Specifica un titolo per la configurazione nella **[!UICONTROL Titolo]** campo.
 1. Specifica il nome del [!DNL Azure] account di archiviazione in **[!UICONTROL Account di archiviazione Azure]** campo.
@@ -66,3 +66,10 @@ Di seguito sono riportate le linee guida per l&#39;utilizzo dei flussi di lavoro
 * Non utilizzare un passaggio del flusso di lavoro AEM personalizzato in un modello di flusso di lavoro per memorizzare i dati nell’archivio CRX DE.
 
 * Quando [configurare un modello di flusso di lavoro AEM per l’archiviazione di dati esterni](#configure-workflow-external-data-storage), non creare colonne personalizzate per la casella in entrata AEM poiché i valori delle colonne personalizzate non vengono recuperati se l’elemento di lavoro nella casella in entrata AEM appartiene a un flusso di lavoro contrassegnato per l’archiviazione esterna.
+
+>[!MORELIKETHIS]
+>
+>* [Configurare le origini dati per AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configurare l’archiviazione Azure per AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrare Microsoft Dynamics 365 e Salesforce con Forms adattivo](/help/forms/configure-msdynamics-salesforce.md)
+>  [Aggiungere Forms Portal a una pagina di AEM Sites](/help/forms/configure-forms-portal.md)

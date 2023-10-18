@@ -2,9 +2,9 @@
 title: Come ottenere temi e modelli di riferimento per i moduli AEM?
 description: AEM Forms fornisce esempi di temi, modelli e modelli di dati per moduli adattivi per aiutarti a creare i moduli rapidamente.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '841'
 ht-degree: 17%
 
 ---
@@ -120,3 +120,8 @@ Il Forms adattivo può quindi interagire con i server Microsoft Dynamics 365 e S
 * Salesforce
 
 Per informazioni sull’utilizzo di questi modelli, consulta [Configurare Microsoft Dynamics 365 e i servizi cloud Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+
+
+## Consulta anche {#see-also}
+
+{{see-also}}

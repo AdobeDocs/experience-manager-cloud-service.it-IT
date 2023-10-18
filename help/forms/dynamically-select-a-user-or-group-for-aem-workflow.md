@@ -3,9 +3,9 @@ title: Come selezionare gli utenti nel flusso di lavoro AEM?
 description: Scopri come selezionare un utente o un gruppo per un [!DNL AEM Forms] flusso di lavoro in fase di esecuzione.
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -345,3 +345,7 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
+
+>[!MORELIKETHIS]
+>
+>* [Utilizzare il flusso di lavoro di AEM Forms per l&#39;automazione dei processi aziendali](/help/forms/aem-forms-workflow.md)

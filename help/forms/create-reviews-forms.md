@@ -3,10 +3,10 @@ title: Come si creano e gestiscono le revisioni nei moduli?
 description: Utilizzare il meccanismo di revisione per aggiungere revisori e consentire ai revisori di aggiungere commenti a un modulo.
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 2%
+source-wordcount: '733'
+ht-degree: 3%
 
 ---
 
@@ -114,3 +114,17 @@ Questa sezione descrive cosa accade il **Revisione aggiornamento/fine**:
    1. **Tutti**: la revisione viene visualizzata nella sezione Revisioni precedenti. Non è possibile aggiungere altri commenti.
 
    ![revisione completata](assets/review-complete-imgg.png)
+
+
+## Consulta anche {#see-also}
+
+{{see-also}}
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
+
+-->

@@ -1,8 +1,7 @@
 ---
 title: Cosa sono le espressioni di modulo adattivo?
-seo-title: Adaptive Form Expressions
 description: Utilizza espressioni Forms adattive per aggiungere convalida, calcolo e attivazione o disattivazione automatica della visibilità di una sezione.
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '2697'
 ht-degree: 0%

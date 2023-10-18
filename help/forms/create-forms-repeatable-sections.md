@@ -3,7 +3,7 @@ title: Come si creano pannelli ripetibili nei componenti core modulo adattivo?
 description: Scopri come creare sezioni o campi ripetibili in un modulo adattivo.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 6%
@@ -225,9 +225,14 @@ Nel codice seguente, la proprietà `SampleType`utilizza la proprietà minOccours
 ```
 
 
-## Articoli correlati
+## Consulta anche {#see-also}
 
-* [Creare un modulo adattivo](creating-adaptive-form-core-components.md)
-* [Creare stili o temi per i moduli](using-themes-in-core-components.md)
-* [Aggiungere un comportamento dinamico ai moduli tramite l’editor di regole](rule-editor.md)
-* [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/features/responsive-layout.md)
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [Creare un modulo adattivo](creating-adaptive-form-core-components.md)
+>* [Creare stili o temi per i moduli](using-themes-in-core-components.md)
+>* [Aggiungere un comportamento dinamico ai moduli tramite l’editor di regole](rule-editor.md)
+>* [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/features/responsive-layout.md)

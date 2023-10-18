@@ -5,7 +5,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 1%
@@ -162,3 +162,11 @@ Quando incorpori un modulo adattivo in una pagina web, considera le seguenti bes
 1. Nell’istanza di pubblicazione dell’AEM, vai a Gestione configurazione della console web dell’AEM all’indirizzo `https://'[server]:[port]'/system/console/configMgr`.
 1. Individuare e aprire **Filtro referrer Apache Sling** configurazione.
 1. Nel campo Host consentiti specifica il dominio in cui si trova la pagina web. Consente all&#39;host di effettuare richieste POST al server AEM. È inoltre possibile utilizzare espressioni regolari per specificare una serie di domini di applicazioni esterni.
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Embed adaptive form based on core components to AEM sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+
+-->

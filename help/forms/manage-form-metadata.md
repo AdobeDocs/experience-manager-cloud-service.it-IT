@@ -2,9 +2,9 @@
 title: Come possiamo gestire i metadati per AEM Forms?
 description: I metadati semplificano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1743'
 ht-degree: 3%
 
 ---
@@ -307,3 +307,8 @@ Viene fornito uno strumento (Editor schema metadati) per definire lo schema per 
    È stata aggiunta una proprietà di metadati personalizzata.
 
 Tutti i Forms adattivi in [!DNL AEM Forms] ora contiene questa proprietà di metadati aggiuntiva. Puoi modificarlo dalla pagina delle proprietà.
+
+
+## Consulta anche {#see-also}
+
+{{see-also}}

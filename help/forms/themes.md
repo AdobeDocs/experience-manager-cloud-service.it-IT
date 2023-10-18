@@ -2,9 +2,9 @@
 title: Come possiamo creare e utilizzare i temi per assegnare uno stile a un modulo adattivo?
 description: Utilizza i temi del modulo adattivo per applicare uno stile e fornire un’identità visiva a un modulo adattivo. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '5579'
+source-wordcount: '5581'
 ht-degree: 1%
 
 ---
@@ -668,3 +668,8 @@ Puoi visualizzare il CSS generato utilizzando le seguenti opzioni:
 
   Utilizzare l&#39;editor tema se si desidera applicare uno stile a intestazione e piè di pagina utilizzando opzioni di stile quali stile, sfondo e trasparenza del carattere.
 Se si desidera fornire informazioni quali un&#39;immagine del logo, il nome della società nell&#39;intestazione e le informazioni sul copyright nel piè di pagina, utilizzare le opzioni dell&#39;editor di moduli.
+
+
+## Consulta anche {#see-also}
+
+{{see-also}}

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '248'
 ht-degree: 1%
 
 ---
@@ -45,3 +45,8 @@ Il contenuto Pagina zero viene visualizzato per impostazione predefinita quando 
 >[!NOTE]
 >
 >La proprietà personalizzata appena creata potrebbe non essere visualizzata correttamente nella finestra di dialogo Proprietà maschera quando si riapre la maschera. Tuttavia, funziona correttamente e nel modulo viene visualizzato il messaggio Pagina zero aggiornato.
+
+>[!MORELIKETHIS]
+>
+>* [Scaricare e installare Forms Designer per creare modelli per documenti di record](/help/forms/installing-configuring-designer.md)
+>* [Utilizzare Forms Designer per creare modelli di documenti di record (DoR) e frammenti di moduli?](/help/forms/use-forms-designer.md)

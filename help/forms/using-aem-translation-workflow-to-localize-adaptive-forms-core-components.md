@@ -3,9 +3,9 @@ title: Come possiamo tradurre un Modulo adattivo basato su Componenti core?
 description: Scopri come creare un modello di dati modulo in AEM Forms, testare il modello con dati e servizi di esempio e configurare varie opzioni per un modello.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '896'
 ht-degree: 4%
 
 ---
@@ -83,3 +83,7 @@ Per localizzare un modulo e il relativo documento di record mediante Human Trans
    ![Importa file di traduzione](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. Per visualizzare in anteprima il modulo localizzato, seleziona il modulo localizzato nell’interfaccia utente di AEM Forms. Clic **[!UICONTROL Anteprima]** >**[!UICONTROL Anteprima come HTML]**. Riapri il modulo dopo l’aggiunta di `afAcceptLang=<locale code>` all’URL del modulo. Ad esempio, aggiungi `afAcceptLang=de`per aprire la versione tedesca del modulo.
+
+## Consulta anche {#see-also}
+
+{{see-also}}

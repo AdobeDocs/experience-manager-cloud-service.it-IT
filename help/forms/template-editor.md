@@ -2,9 +2,9 @@
 title: Come possiamo creare un modello di modulo adattivo?
 description: Crea modelli per moduli adattivi per definire la struttura di base e il contenuto iniziale tramite l’Editor modelli.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2098'
 ht-degree: 2%
 
 ---
@@ -223,3 +223,8 @@ Perform the following steps to show and hide templates:
 * Quando si modificano le proprietà del modulo nell&#39;editor modelli, non utilizzare la proprietà BindReference.
 * Se desideri aggiungere un punto di interruzione, crealo quando crei un modello di modulo adattivo.
 Per ulteriori informazioni sui punti di interruzione, consulta [Layout reattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
+
+
+## Consulta anche {#see-also}
+
+{{see-also}}

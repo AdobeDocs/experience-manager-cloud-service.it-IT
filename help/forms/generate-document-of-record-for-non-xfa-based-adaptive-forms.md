@@ -2,9 +2,9 @@
 title: Come si genera un documento di record (DoR) per AEM Forms?
 description: Scopri come generare un modello per un documento di record (DoR) per Forms adattivo.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4142'
 ht-degree: 3%
 
 ---
@@ -503,3 +503,8 @@ Un file XCI consente di impostare varie proprietà di un documento. Forms as a C
 1. Apri Cloud Service SDK Configuration Manager. L’URL predefinito è: <http://localhost:4502/system/console/configMgr>.
 1. Individuare e aprire **[!UICONTROL Canale web di comunicazione interattiva e Forms adattivo]** configurazione.
 1. Specifica il percorso del file XCI e fai clic su **[!UICONTROL Salva]**.
+
+
+## Consulta anche {#see-also}
+
+{{see-also}}

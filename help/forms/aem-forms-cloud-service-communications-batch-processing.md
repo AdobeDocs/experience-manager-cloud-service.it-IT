@@ -2,9 +2,9 @@
 title: Creazione di Bulk PDF senza sforzo - Padroneggiare l’arte con l’elaborazione in batch - La tua guida autonoma alla generazione di milioni di documenti PDF!
 description: Come si creano comunicazioni personalizzate e orientate al brand?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1735'
 ht-degree: 2%
 
 ---
@@ -171,3 +171,10 @@ Comprendiamo con l’aiuto di un esempio: supponiamo che sia presente un file di
 ## Documentazione di riferimento API
 
 La documentazione di riferimento API fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API è disponibile in formato .yaml. È possibile scaricare [API batch](assets/batch-api.yaml) e caricarlo in Postman per verificare la funzionalità delle API.
+
+>[!MORELIKETHIS]
+>
+>* [Introduzione ad AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Architettura as a Cloud Service di AEM Forms per API di comunicazione e Forms adattivi](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Elaborazione della comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Elaborazione della comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

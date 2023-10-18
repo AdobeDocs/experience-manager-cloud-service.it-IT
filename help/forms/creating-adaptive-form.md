@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1558'
 ht-degree: 87%
 
 ---
@@ -204,3 +204,8 @@ Puoi anche modificare le proprietà del modello di modulo dall’editor di modul
 >[!NOTE]
 >
 > È inoltre possibile salvare un modulo adattivo come modello. Per ulteriori informazioni, consulta [Creare un modello utilizzando un modulo adattivo](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
+
+
+## Consulta anche {#see-also}
+
+{{see-also}}

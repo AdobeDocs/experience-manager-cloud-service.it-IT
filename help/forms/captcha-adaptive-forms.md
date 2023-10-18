@@ -1,14 +1,14 @@
 ---
 title: Come si utilizza CAPTCHA in Adaptive Forms?
-description: Scopri come configurare il servizio AEM CAPTCHA o Google reCAPTCHA per un modulo adattivo.
+description: Scopri come configurare o Google il servizio reCAPTCHA per un modulo adattivo.
 uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1945'
 ht-degree: 5%
 
 ---
@@ -342,3 +342,12 @@ Imposta il **[!UICONTROL af.cloudservices.recaptcha.domain]** proprietà del **[
 ```
 
 Per impostare i valori di una configurazione: [Generare configurazioni OSGi utilizzando l’SDK per AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), e [distribuire la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) all’istanza di Cloud Service.
+
+## Consulta anche {#see-also}
+
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [Temi di riferimento, modelli e modelli di dati dei moduli per Forms adattivo](/help/forms/reference-themes-templates-data-models.md)

@@ -2,7 +2,7 @@
 title: Come connettere un database a [!DNL AEM Forms] as a Cloud Service?
 description: Recupera e salva i dati nei servizi web RESTful, nei servizi web basati su SOAP e nei servizi OData da un modulo adattivo o da un flusso di lavoro AEM.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 2%

@@ -4,9 +4,9 @@ description: Utilizza il componente tabella per aggiungere tabelle a un modulo a
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2498'
 ht-degree: 0%
 
 ---
@@ -329,3 +329,8 @@ Inoltre, puoi trascinare un gruppo di elementi di tipo complesso XSD per creare 
 * A ogni cella body di una tabella predefinita è associato un nome elemento predefinito. Se aggiungi un’altra tabella nel modulo adattivo, le celle del corpo predefinite nella nuova tabella avranno lo stesso nome elemento della prima tabella. In questo caso, i dati generati durante l&#39;invio del modulo includeranno i dati nelle celle predefinite del corpo di una sola tabella. Assicurati pertanto di rinominare i nomi degli elementi per le celle del corpo predefinite per mantenerli univoci nelle tabelle ed evitare la perdita di dati.
 
   Si noti che questo è applicabile solo alle celle del corpo di default. Se si aggiungono più righe o colonne a una tabella, verranno generati automaticamente nomi di elementi univoci per le celle del corpo non predefinite.
+
+## Consulta anche {#see-also}
+
+{{see-also}}
+

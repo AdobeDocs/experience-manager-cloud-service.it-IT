@@ -8,9 +8,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2462'
 ht-degree: 2%
 
 ---
@@ -407,7 +407,10 @@ Using this custom error handler, the adaptive form converts the fields listed in
 
 ## Consulta anche {#see-also}
 
-* [Creare e utilizzare gestori di errori personalizzati in Adaptive Forms (Componenti core)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-* [Creare un modulo adattivo basato su Componenti core autonomi](/help/forms/creating-adaptive-form-core-components.md)
-* [Creare stili o temi per i moduli](/help/forms/using-themes-in-core-components.md)
-* [Creare o aggiungere un modulo adattivo alla pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+{{see-also}}
+
+>[!MORELIKETHIS]
+>
+>* [Creare e utilizzare gestori di errori personalizzati in Adaptive Forms (Componenti core)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+>* [Creare stili o temi per i moduli](/help/forms/using-themes-in-core-components.md)
+>* [Creare o aggiungere un modulo adattivo alla pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

@@ -2,9 +2,9 @@
 title: Come possiamo creare e utilizzare i temi in Adaptive Forms?
 description: Puoi utilizzare i temi per assegnare uno stile e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2680'
 ht-degree: 4%
 
 ---
@@ -418,7 +418,11 @@ Se si desidera fornire informazioni quali un&#39;immagine del logo, il nome dell
 * [Modelli di temi e modelli di dati modulo di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
-## Articolo correlato {#related-article}
+>[!MORELIKETHIS]
+>
+>* [Abilitare i componenti core dei moduli adattivi in AEM Forms as a Cloud Service e nell’ambiente di sviluppo locale](/help/forms/enable-adaptive-forms-core-components.md)
 
-* [Abilitare i componenti core dei moduli adattivi in AEM Forms as a Cloud Service e nell’ambiente di sviluppo locale](/help/forms/enable-adaptive-forms-core-components.md)
-* [Creare un modulo adattivo basato su Componenti core autonomi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
+
+## Consulta anche {#see-also}
+
+{{see-also}}
