@@ -2,9 +2,9 @@
 title: Configurazione delle regole del filtro del traffico con le regole WAF
 description: Utilizzare le regole di filtro del traffico con le regole WAF per filtrare il traffico
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 146b85093331fe26da891252c398fc24d4f7c0d6
+source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
 workflow-type: tm+mt
-source-wordcount: '3810'
+source-wordcount: '3826'
 ht-degree: 1%
 
 ---
@@ -271,15 +271,15 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-     rules:
-       - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
-         when: { reqProperty: clientIp, equals: "192.168.1.1" }
-           allOf:
-            - { reqProperty: path, equals: /helloworld }
-            - { reqProperty: tier, equals: publish }
-            - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-           action:
-             type: block
+    rules:
+      - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
+        when:
+          allOf:
+          - { reqProperty: path, equals: /helloworld }
+          - { reqProperty: tier, equals: publish }
+          - { reqHeader: user-agent, matches: '.*Chrome.*'  }
+        action:
+          type: block
 ```
 
 **Esempio 3**
@@ -387,10 +387,11 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
+    rules:
     - name: limit-requests-client-ip
       when:
-        - reqProperty: tier
-        - matches: "author|publish"
+        reqProperty: tier
+        matches: "author|publish"
       rateLimit:
         limit: 60
         window: 10
@@ -545,24 +546,24 @@ I clienti che utilizzano anticipatamente le Regole del filtro del traffico devon
 
 1. Nel workspace, crea una configurazione di cartella a livello principale e aggiungi un file denominato cdn.yaml, in cui dichiarerai una regola semplice, impostandola in modalità registro anziché in modalità di blocco.
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-       # Log request on simple path
-       - name: log-rule-example
-         when:
-           allOf:
-             - reqProperty: tier
-               matches: "author|publish"
-             - reqProperty: path
-               equals: '/log/me'
-         action: log
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    # Log request on simple path
+    - name: log-rule-example
+      when:
+        allOf:
+          - reqProperty: tier
+            matches: "author|publish"
+          - reqProperty: path
+            equals: '/log/me'
+      action: log
+```
 
 1. Apporta e invia le modifiche e distribuisci la configurazione utilizzando la pipeline di configurazione.
 
@@ -597,24 +598,24 @@ I clienti che utilizzano anticipatamente le Regole del filtro del traffico devon
 
 1. Ora modifica il file cdn.yaml in modo da attivare la regola in modalità di blocco per garantire che le pagine siano bloccate, come previsto. Quindi esegui il commit, invia e attiva la pipeline di configurazione come fatto in precedenza.
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-       # Log request on simple path
-       - name: log-rule-example
-         when:
-           allOf:
-             - reqProperty: tier
-               matches: "author|publish"
-             - reqProperty: path
-               equals: '/log/me'
-         action: block
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    # Log request on simple path
+    - name: log-rule-example
+      when:
+        allOf:
+          - reqProperty: tier
+            matches: "author|publish"
+          - reqProperty: path
+            equals: '/log/me'
+      action: block
+```
 
 1. Una volta implementata la configurazione, prova ad accedere a https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me utilizzando il browser web o con il comando curl seguente. Dovresti ricevere una pagina di errore 406 che indica che la richiesta è stata bloccata.
 
@@ -629,40 +630,40 @@ I clienti che utilizzano anticipatamente le Regole del filtro del traffico devon
 
 1. Se sono abilitati dei filtri del traffico WAF (questo richiederà una licenza aggiuntiva quando la funzione sarà GA), ripeti con una regola del filtro del traffico WAF, in modalità registro, e distribuisci le regole.
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-         - name: log-waf-flags
-           when:
-             reqProperty: tier
-             matches: "author|publish"
-           action:
-             type: log
-             wafFlags:
-                 - SANS
-                 - SIGSCI-IP
-                 - TORNODE
-                 - NOUA
-                 - SCANNER
-                 - USERAGENT
-                 - PRIVATEFILE
-                 - ABNORMALPATH
-                 - TRAVERSAL
-                 - NULLBYTE
-                 - BACKDOOR
-                 - LOG4J-JNDI
-                 - SQLI
-                 - XSS
-                 - CODEINJECTION
-                 - CMDEXE
-                 - NO-CONTENT-TYPE
-                 - UTF8
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: log-waf-flags
+        when:
+          reqProperty: tier
+          matches: "author|publish"
+        action:
+          type: log
+          wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+```
 
 1. Utilizza uno strumento come [nikto](https://github.com/sullo/nikto/tree/master) per generare richieste corrispondenti. Il comando seguente invierà circa 550 richieste dannose in meno di 1 minuto.
 
@@ -685,34 +686,40 @@ I clienti che utilizzano anticipatamente le Regole del filtro del traffico devon
 
 1. Ripeti con una regola che utilizza la limitazione della frequenza, in modalità registro. Come sempre, esegui il commit, invia e attiva la pipeline di configurazione per applicare la configurazione.
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-         - name: limit-requests-client-ip
-           when:
-             reqProperty: tier
-             matches: "author|publish"
-           rateLimit:
-             limit: 10
-             window: 1
-             penalty: 60
-             groupBy:
-               - reqProperty: clientIp
-           action: log
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: limit-requests-client-ip
+        when:
+          reqProperty: tier
+          matches: "author|publish"
+        rateLimit:
+          limit: 10
+          window: 1
+          penalty: 60
+          groupBy:
+            - reqProperty: clientIp
+        action: log
+```
 
 1. Utilizza uno strumento come [Vegeta](https://github.com/tsenart/vegeta) per generare il traffico.
 
    ```
-   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s | tee results.bin | vegeta report
    ```
 
 1. Dopo aver eseguito lo strumento, puoi scaricare i registri CDN e acquisirli nel dashboard per verificare che la regola del limitatore di velocità sia stata attivata
+
+   ![Visualizza dati WAF](/help/security/assets/waf-dashboard-ratelimiter-1.png)
+
+   ![Visualizza dati WAF](/help/security/assets/waf-dashboard-ratelimiter-2.png)
+
+   Come puoi vedere la nostra regola *limit-requests-client-ip* è stato attivato.
 
    Ora che conosci il funzionamento delle regole del filtro del traffico, puoi passare all’ambiente di produzione.
 
@@ -743,65 +750,65 @@ data:
         penalty: 300
         groupBy:
           - reqProperty: clientIp
-      action: block
-      # Block requests coming from OFAC countries
-      - name: block-ofac-countries
-        when:
-          allOf:
-            - { reqProperty: tier, equals: publish }
-            - reqProperty: clientCountry
-              in:
-                - SY
-                - BY
-                - MM
-                - KP
-                - IQ
-                - CD
-                - SD
-                - IR
-                - LR
-                - ZW
-                - CU
-                - CI
-        action: block
-        # Enable recommended WAF protections (only works if WAF is enabled for your environment)
-        - name: block-waf-flags-globally
-          when:
-            reqProperty: tier
+      action: log
+    # Block requests coming from OFAC countries
+    - name: block-ofac-countries
+      when:
+        allOf:
+          - { reqProperty: tier, equals: publish }
+          - reqProperty: clientCountry
+            in:
+              - SY
+              - BY
+              - MM
+              - KP
+              - IQ
+              - CD
+              - SD
+              - IR
+              - LR
+              - ZW
+              - CU
+              - CI
+      action: log
+    # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+    - name: block-waf-flags-globally
+      when:
+        reqProperty: tier
+        matches: "author|publish"
+      action:
+        type: log
+        wafFlags:
+          - SANS
+          - SIGSCI-IP
+          - TORNODE
+          - NOUA
+          - SCANNER
+          - USERAGENT
+          - PRIVATEFILE
+          - ABNORMALPATH
+          - TRAVERSAL
+          - NULLBYTE
+          - BACKDOOR
+          - LOG4J-JNDI
+          - SQLI
+          - XSS
+          - CODEINJECTION
+          - CMDEXE
+          - NO-CONTENT-TYPE
+          - UTF8
+    # Disable protection against CMDEXE on /bin
+    - name: allow-cdmexe-on-root-bin
+      when:
+        allOf:
+          - reqProperty: tier
             matches: "author|publish"
-          action:
-            type: block
-            wafFlags:
-              - SANS
-              - SIGSCI-IP
-              - TORNODE
-              - NOUA
-              - SCANNER
-              - USERAGENT
-              - PRIVATEFILE
-              - ABNORMALPATH
-              - TRAVERSAL
-              - NULLBYTE
-              - BACKDOOR
-              - LOG4J-JNDI
-              - SQLI
-              - XSS
-              - CODEINJECTION
-              - CMDEXE
-              - NO-CONTENT-TYPE
-              - UTF8
-        # Disable protection against CMDEXE on /bin
-        - name: allow-cdmexe-on-root-bin
-          when:
-            allOf:
-              - reqProperty: tier
-                matches: "author|publish"
-              - reqProperty: path
-                matches: "^/bin/.*"
-          action:
-            type: allow
-            wafFlags:
-              - CMDEXE
+          - reqProperty: path
+            matches: "^/bin/.*"
+      action:
+        type: log
+        wafFlags:
+          - CMDEXE
 ```
 
 1. Aggiungi eventuali regole aggiuntive per bloccare il traffico dannoso di cui potresti essere a conoscenza. Ad esempio, alcuni IP che hanno attaccato il tuo sito.
