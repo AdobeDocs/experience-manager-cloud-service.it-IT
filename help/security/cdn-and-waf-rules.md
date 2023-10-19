@@ -2,9 +2,9 @@
 title: Configurazione delle regole del filtro del traffico con le regole WAF
 description: Utilizzare le regole di filtro del traffico con le regole WAF per filtrare il traffico
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
+source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3810'
 ht-degree: 1%
 
 ---
@@ -532,7 +532,7 @@ Di seguito è riportato un elenco dei nomi dei campi utilizzati nei registri CDN
 
 Adobe fornisce un meccanismo per scaricare gli strumenti del dashboard sul computer per acquisire i registri CDN scaricati tramite Cloud Manager. Con questo strumento, puoi analizzare il traffico per scoprire le regole del filtro del traffico da dichiarare, incluse le regole WAF. Questa sezione fornisce innanzitutto alcune istruzioni per acquisire familiarità con gli strumenti del dashboard in un ambiente di sviluppo, seguite da indicazioni su come sfruttare tali conoscenze per creare regole in un ambiente di produzione.
 
-I clienti che utilizzano anticipatamente le Regole del filtro del traffico devono richiedere un file zip della dashboard, contenente un file README che descrive come caricare il contenitore Docker e acquisire i registri CDN.
+Gli strumenti del dashboard possono essere clonati direttamente dal [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Archivio Github.
 
 
 ### Introduzione agli strumenti del dashboard {#dashboard-getting-familiar}
