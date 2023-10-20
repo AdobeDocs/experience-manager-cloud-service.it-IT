@@ -2,9 +2,9 @@
 title: Come connettere un database a [!DNL AEM Forms] as a Cloud Service?
 description: Recupera e salva i dati nei servizi web RESTful, nei servizi web basati su SOAP e nei servizi OData da un modulo adattivo o da un flusso di lavoro AEM.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 596cd08a98b1d9d47825438e1d64b6db3f847271
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '542'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 2%
 | AEM as a Cloud Service | Questo articolo |
 
 
+
 ![Integrazione dei dati](do-not-localize/data-integeration.png)
 
 L&#39;infrastruttura aziendale include diversi sistemi back-end o origini dati come database, servizi Web, servizi REST, servizi OData e soluzioni CRM. Insieme, creano un sistema di informazioni che fornisce dati alle applicazioni aziendali per eseguire le attività quotidiane. D&#39;altra parte, le applicazioni acquisiscono i dati e li inviano ad aggiornare le origini dati.
 
-[!DNL AEM Forms] applicazioni come Adaptive Forms e le comunicazioni interattive richiedono l’integrazione con le origini dati per recuperare i dati dei clienti durante il rendering dei moduli e la creazione di comunicazioni interattive. In alcuni casi i dati vengono recuperati da origini dati in base agli input dell’utente in Adaptive Forms. Inoltre, i dati del modulo adattivo inviati possono essere riscritti per aggiornare le rispettive origini dati.
+Quando si connette un modulo adattivo a un database, è necessaria l’integrazione con le origini dati per recuperare i dati dei clienti durante il rendering dei moduli. In alcuni casi i dati vengono recuperati da origini dati in base agli input dell’utente in Adaptive Forms. Inoltre, quando si invia un modulo adattivo a un database, i dati del modulo adattivo inviati possono essere riscritti per aggiornare le rispettive origini dati.
 
 Anche se un sistema modulare distribuito ha i propri vantaggi, la sfida consiste nell’integrare e creare associazioni di dati tra diverse origini dati. L&#39;integrazione dei dati è la chiave di un&#39;infrastruttura aziendale funzionale ed efficiente con diverse origini dati collegate alle applicazioni per lo scambio di dati aziendali.
 
@@ -36,20 +37,20 @@ Anche se un sistema modulare distribuito ha i propri vantaggi, la sfida consiste
 * Creare associazioni tra oggetti modello dati all’interno e tra origini dati.
 * Richiama i servizi oggetto modello dati per eseguire query o scrivere dati da e verso origini dati.
 
-Dopo aver creato un modello di dati modulo, puoi utilizzarlo in vari flussi di lavoro per moduli adattivi e comunicazioni interattive, ad esempio:
+Dopo aver creato un modello dati modulo, è possibile utilizzarlo per:
 
-* Creare Forms adattivo e comunicazioni interattive basate sul modello di dati del modulo
-* Precompila Forms adattivo e comunicazioni interattive da origini dati configurate
+* Creare un Forms adattivo basato su un modello di dati del modulo
+* Precompila Forms adattivo da origini dati configurate
 * Richiama servizi/operazioni dell’origine dati tramite le regole del modulo adattivo
 * Scrivere i dati del modulo adattivo inviati nelle origini dati
 
 ## Introduzione all’integrazione dei dati {#get-started-with-data-integration}
 
-Il primo passaggio per implementare l’integrazione dei dati consiste nell’identificare e configurare le origini dati in cui sono memorizzate le informazioni che desideri utilizzare nei casi di utilizzo di Adaptive Forms e delle comunicazioni interattive. Successivamente, verrà creato un modello dati modulo che utilizza oggetti, proprietà e servizi del modello dati da una o più origini dati. Puoi creare Forms adattivo e comunicazioni interattive basate su un modello dati modulo in cui i campi o i segnaposto di Moduli adattivi nelle comunicazioni interattive sono associati alle rispettive proprietà dell’origine dati.
+Il primo passaggio per implementare l’integrazione dei dati per inviare un modulo adattivo a un database consiste nell’identificare e configurare le origini dati in cui sono memorizzate le informazioni che desideri utilizzare in Adaptive Forms. Successivamente, verrà creato un modello dati modulo che utilizza oggetti, proprietà e servizi del modello dati da una o più origini dati. È possibile creare un Forms adattivo basato su un modello di dati del modulo in cui i campi del modulo adattivo sono associati alle rispettive proprietà dell’origine dati.
 
 [!DNL AEM Forms] consente inoltre di creare un modello dati modulo indipendente dalle origini dati e di associare o associare in un secondo momento gli oggetti e le proprietà del modello dati modulo all’origine dati. Elimina tutte le dipendenze dalle origini dati mentre si lavora su un modello dati modulo.
 
-Consulta quanto segue per iniziare, comprendere e implementare l’integrazione dei dati.
+Per iniziare, comprendere e implementare l’integrazione dei dati, leggi quanto segue:
 
 * [Configurare origini dati](configure-data-sources.md)
 * [Crea modello dati modulo](create-form-data-models.md)
