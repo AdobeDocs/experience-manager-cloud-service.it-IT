@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2023.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 2b242cb10fb5d1da725c1396633d2db779a78639
+exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1686'
-ht-degree: 14%
+ht-degree: 18%
 
 ---
-
 
 # Note sulla versione 2023.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -66,15 +66,15 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **Importare risorse in blocco da origini dati**: gli amministratori ora dispongono di [possibilità di importare un numero elevato di risorse](/help/assets/bulk-import-assets-view.md) da un’origine dati ad AEM Assets. Gli amministratori non devono più caricare singole risorse o cartelle in AEM Assets. Le origini dati supportate per l’importazione in blocco includono Azure, AWS, Google Cloud e Dropbox.
+* **Importare risorse in blocco da origini dati**: gli amministratori ora dispongono di [possibilità di importare un numero elevato di risorse](/help/assets/bulk-import-assets-view.md) da un’origine dati ad AEM Assets. Gli amministratori non devono più caricare singole risorse o cartelle in AEM Assets. Le origini dati supportate per l’importazione in blocco includono Azure, AWS, Google Cloud e Dropbox.
 
-  ![Importare risorse in blocco da un’origine dati](/help/release-notes/assets/bulk-import.png)
+  ![Importazione in blocco da un’origine dati](/help/release-notes/assets/bulk-import.png)
 
-* **Strumenti di modifica delle immagini basati su Adobi Express**: facile e intuitivo [strumenti di modifica delle immagini basati su Adobi Express](/help/assets/edit-images-assets-view.md) disponibile direttamente in AEM Assets per aumentare il riutilizzo dei contenuti e velocizzarne la distribuzione.
+* **Strumenti di editing delle immagini basati su Adobe Express**: facile e intuitivo [strumenti di modifica delle immagini basati su Adobi Express](/help/assets/edit-images-assets-view.md) disponibile direttamente in AEM Assets per aumentare il riutilizzo dei contenuti e velocizzarne la distribuzione.
 
-  ![Editing di immagini con Adobi Express](/help/release-notes/assets/edit-adobe-express.png)
+  ![Editing di immagini con Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flessibilità durante l&#39;inserimento di elementi nell&#39;area di lavoro Accesso rapido**: possibilità di selezionare e fissare gli elementi per te, per l’intera organizzazione o per un elenco di gruppi in modo che vengano visualizzati nel [Sezione Accesso rapido della mia area di lavoro](/help/assets/my-workspace-assets-view.md) in base alla selezione.
+* **Flessibilità durante il fissaggio di elementi in Accesso rapido dell’area di lavoro personale**: possibilità di selezionare e fissare gli elementi per te, per l’intera organizzazione o per un elenco di gruppi in modo che vengano visualizzati nel [Sezione Accesso rapido della mia area di lavoro](/help/assets/my-workspace-assets-view.md) in base alla selezione.
 
   ![Fissa elementi per gruppi](/help/release-notes/assets/pin-items-for-groups.png)
 
@@ -156,7 +156,7 @@ Filtra il traffico sulla rete CDN in base a:
 
 Ti interessa provare questa funzione e condividere feedback? Invia un messaggio e-mail a **aemcs-waf-adopter@adobe.com** dal tuo ID e-mail ufficiale per ulteriori informazioni sul programma early adopter. Lo spazio è limitato.
 
-Ulteriori informazioni sulla funzione nell’articolo [qui](/help/security/cdn-and-waf-rules.md).
+Ulteriori informazioni sulla funzione nell’articolo [qui](/help/security/traffic-filter-rules-including-waf.md).
 
 
 ## Note sulla versione di manutenzione {#maintenance}

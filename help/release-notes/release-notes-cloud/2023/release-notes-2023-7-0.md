@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2023.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 1158508cc28d33e5799b3102381f227db05a0107
+exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 49%
 
 ---
-
 
 # Note sulla versione 2023.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -120,7 +120,7 @@ Filtra il traffico sulla rete CDN in base a:
 
 Ti interessa provare questa funzione e condividere feedback? Invia un messaggio e-mail a **aemcs-waf-adopter@adobe.com** dal tuo ID e-mail ufficiale per ulteriori informazioni sul programma early adopter. Lo spazio è limitato.
 
-Ulteriori informazioni sulla funzione nell’articolo [qui](/help/security/cdn-and-waf-rules.md).
+Ulteriori informazioni sulla funzione nell’articolo [qui](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Altre modifiche di base {#other-foundation-changes}
 
