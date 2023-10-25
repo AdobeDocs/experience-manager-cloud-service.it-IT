@@ -3,10 +3,10 @@ title: Pipeline CI/CD
 description: Scopri le pipeline CI/CD di Cloud Manager e come utilizzarle per distribuire il codice in modo efficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 98%
+source-wordcount: '1448'
+ht-degree: 92%
 
 ---
 
@@ -32,12 +32,6 @@ Cloud Manager offre due tipi di pipeline:
 
 ![Tipi di pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
-## Panoramica video {#video}
-
-Guarda questo breve video per una breve panoramica sui tipi di pipeline.
-
->[!VIDEO](https://video.tv.adobe.com/v/342363)
-
 ## Pipeline di produzione {#prod-pipeline}
 
 Una pipeline di produzione è una pipeline dedicata che include una serie di passaggi orchestrati per distribuire il codice sorgente per l’utilizzo in produzione. Tra i passaggi sono previsti la prima generazione, la creazione di pacchetti, i test, la convalida e la distribuzione in tutti gli ambienti di staging. Pertanto, una pipeline di produzione può essere aggiunta solo dopo aver creato un set di ambienti di produzione e di staging.
@@ -59,6 +53,7 @@ Una pipeline non di produzione serve principalmente per eseguire controlli di qu
 Oltre ai tipi di produzione e non di produzione, le pipeline possono essere differenziate in base al tipo di codice che distribuiscono.
 
 * **[Pipeline full stack](#full-stack-pipeline)**: distribuiscono simultaneamente le build del codice back-end e front-end contenenti una o più applicazioni server di AEM con configurazioni HTTPD/Dispatcher
+* **[Configurare le pipeline di distribuzione](#config-deployment-pipeline)** : configura le impostazioni relative all’ambiente AEM, alle attività di manutenzione, alle regole CDN e altro ancora.
 * **[Pipeline front-end](#front-end)**: distribuiscono le build del codice front-end contenenti una o più applicazioni dell’interfaccia utente lato client
 * **[Pipeline di configurazione a livello web](#web-tier-config-pipelines)**: distribuiscono le configurazioni HTTPD/Dispatcher
 
@@ -73,9 +68,11 @@ La tabella seguente riepiloga tutte le pipeline disponibili in Cloud Manager e i
 | Di produzione o non di produzione | Distribuzione | Full stack | Distribuisce simultaneamente le build del codice back-end e front-end con le configurazioni HTTPD/Dispatcher | Quando è necessario distribuire il codice front-end in contemporanea al codice del server AEM.<br>Quando non sono ancora state implementate le pipeline front-end o di configurazione a livello web. |
 | Di produzione o non di produzione | Distribuzione | Front-end | Distribuisce la build del codice front-end contenente una o più applicazioni dell’interfaccia utente lato client | Supporta più pipeline front-end simultanee<br>Distribuzioni molto più rapide rispetto al tipo full stack |
 | Di produzione o non di produzione | Distribuzione | Configurazione a livello web | Distribuisce le configurazioni HTTPD/Dispatcher | Distribuzione in pochi minuti |
+| Di produzione o non di produzione | Distribuzione | Configurazione | Distribuisce le regole di filtro del traffico | Distribuzione in pochi minuti |
 | Non di produzione | Qualità del codice | Full stack | Esegue controlli di qualità del codice full stack senza una distribuzione | Supporta più pipeline |
 | Non di produzione | Qualità del codice | Front-end | Esegue controlli di qualità del codice front-end senza una distribuzione | Supporta più pipeline |
 | Non di produzione | Qualità del codice | Configurazione a livello web | Esegue controlli di qualità del codice su configurazioni dispatcher senza una distribuzione | Supporta più pipeline |
+| Non di produzione | Qualità del codice | Configurazione | Distribuisce le regole di filtro del traffico |  |
 
 Il diagramma seguente illustra le configurazioni delle pipeline di Cloud Manager con archivio tradizionale front-end singolo o indipendente.
 
@@ -106,6 +103,26 @@ Inoltre, se scegli di introdurre una [pipeline di configurazione a livello web](
 * Se la pipeline di configurazione a livello web corrispondente per l’ambiente non esiste, l’utente può configurare la pipeline full stack per includere o ignorare la configurazione Dispatcher.
 
 Le pipeline full stack possono essere di qualità del codice o di distribuzione.
+
+### Configurazione delle pipeline full stack {#configure-full-stack}
+
+Per informazioni su come configurare le pipeline full stack, consulta i seguenti documenti:
+
+* [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+* [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
+
+## Configurare le pipeline di distribuzione {#config-deployment-pipeline}
+
+Con una pipeline di distribuzione della configurazione è possibile distribuire le impostazioni di configurazione nell’ambiente AEM per attività di manutenzione, regole CDN e altro ancora.
+
+Consulta il documento [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md) per scoprire come gestire le configurazioni nell’archivio in modo che vengano distribuite correttamente.
+
+### Configurazione delle pipeline di distribuzione della configurazione {#configure-config-deployment}
+
+Per informazioni su come configurare le pipeline di distribuzione di configurazione, consulta i seguenti documenti:
+
+* [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
 
 ## Pipeline front-end {#front-end}
 
@@ -142,14 +159,6 @@ Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore in
 
 Per informazioni sul funzionamento di questo processo e alcune considerazioni per sfruttare al massimo il suo potenziale, consulta [Sviluppo di Sites con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
 
-### Configurazione delle pipeline full stack {#configure-full-stack}
-
-Per informazioni su come configurare le pipeline full stack, consulta i seguenti documenti:
-
-* [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
-
-
 ## Pipeline di configurazione a livello web {#web-tier-config-pipelines}
 
 Le pipeline di configurazione a livello web consentono di distribuire la configurazione HTTPD/Dispatcher esclusivamente nel runtime di AEM, separandola dalle altre modifiche al codice. Si tratta di una pipeline semplificata che offre a chi desidera distribuire esclusivamente le modifiche della configurazione dispatcher un metodo accelerato per svolgere l’operazione in pochi minuti.
@@ -175,9 +184,15 @@ Inoltre, è bene tenere presente il comportamento della [pipeline full stack](#f
 
 Le pipeline di configurazione a livello web possono essere di tipo qualità del codice o distribuzione del codice.
 
-### Configurazione delle pipeline di configurazione a livello web {#configure-web-tier-config-pipelines}
+### Configurazione delle pipeline a livello web {#configure-web-tier}
 
-Per informazioni su come configurare le pipeline di configurazione a livello web, consulta i seguenti documenti:
+Per informazioni su come configurare le pipeline a livello web, consulta i seguenti documenti:
 
-* [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
+
+## Panoramica video dei tipi di pipeline {#video}
+
+Guarda questo breve video per una breve panoramica sui tipi di pipeline.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)

@@ -3,10 +3,10 @@ title: Configurazione delle pipeline non di produzione
 description: Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1356'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 80%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 100%
 # Configurazione delle pipeline non di produzione {#configuring-non-production-pipelines}
 
 Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
+
+Un utente deve disporre di **[Responsabile dell’implementazione](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** per configurare le pipeline non di produzione.
 
 ## Pipeline non di produzione {#non-production-pipelines}
 
@@ -62,40 +64,16 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
 
 1. Dalla scheda **Codice sorgente** della finestra di dialogo **Aggiungi pipeline non di produzione**, seleziona il tipo di codice da elaborare con la pipeline.
 
-   * **[Codice front-end](#front-end-code)**
    * **[Codice full stack](#full-stack-code)**
-   * **[Configurazione a livello web](#web-tier-config)**
+   * **[Distribuzione mirata](#targeted-deployment)**
 
-I passaggi per completare la creazione della pipeline non di produzione variano a seconda dell’opzione **Codice sorgente** selezionata. Accedi ai collegamenti riportati qui sopra per passare alla sezione successiva del documento e completare la configurazione della pipeline.
+Consulta il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) per ulteriori informazioni sui tipi di pipeline.
 
-### Codice front-end {#front-end-code}
-
-Una pipeline del codice front-end distribuisce le build del codice front-end contenenti una o più applicazioni dell’interfaccia utente lato client. Per ulteriori informazioni su questo tipo di pipeline, consulta il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end).
-
-Per completare la configurazione della pipeline non di produzione del codice front-end, segui la procedura riportata di seguito.
-
-1. Nella scheda **Codice sorgente** è necessario definire le seguenti opzioni.
-
-   * **Ambienti di distribuzione idonei**: se la pipeline è di distribuzione, seleziona gli ambienti in cui eseguire la distribuzione.
-   * **Archivio**: questa opzione definisce da quale archivio Git la pipeline deve recuperare il codice.
-
-   >[!TIP]
-   > 
-   >Per scoprire come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione degli archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
-
-   * **Ramo Git**: questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
-      * Immetti i primi caratteri del nome del ramo: la funzione di completamento automatico di questo campo. trova i rami corrispondenti che puoi selezionare.
-   * **Posizione codice**: definisce il percorso nel ramo dell’archivio selezionato dal quale la pipeline deve recuperare il codice.
-
-   ![Pipeline front-end](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
-
-1. Fai clic su **Salva**.
-
-Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
+I passaggi per completare la creazione della pipeline non di produzione variano a seconda del tipo di codice sorgente selezionato. Accedi ai collegamenti riportati qui sopra per passare alla sezione successiva del documento e completare la configurazione della pipeline.
 
 ### Codice full stack {#full-stack-code}
 
-Una pipeline del codice full stack distribuisce simultaneamente le build del codice back-end e front-end contenenti una o più applicazioni server di AEM con la configurazione HTTPD/Dispatcher. Per ulteriori informazioni su questo tipo di pipeline, consulta il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline).
+Una pipeline del codice full stack distribuisce simultaneamente le build del codice back-end e front-end contenenti una o più applicazioni server di AEM con la configurazione HTTPD/Dispatcher.
 
 >[!NOTE]
 >
@@ -115,12 +93,12 @@ Per completare la configurazione della pipeline non di produzione del codice ful
    * **Ramo Git**: questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
       * Immetti i primi caratteri del nome del ramo: la funzione di completamento automatico di questo campo. ti aiuta a trovare i rami corrispondenti che puoi selezionare.
    * **Ignora configurazione a livello web**: se questa opzione è selezionata, la pipeline non distribuisce la configurazione a livello web.
-
    * **Pipeline**: se si tratta di una pipeline è di distribuzione, puoi scegliere di eseguire una fase di test. Seleziona le opzioni che desideri abilitare in questa fase. Se non è selezionata alcuna opzione, la fase di test non viene visualizzata durante l’esecuzione della pipeline.
 
       * **Test funzionali del prodotto**: esegui [test funzionali del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) rispetto all’ambiente di sviluppo.
       * **Test funzionali personalizzato**: esegui [test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) rispetto all’ambiente di sviluppo.
       * **Test personalizzati dell’interfaccia utente**: esegui [test personalizzati dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md) per applicazioni personalizzate.
+      * **Audit dell’esperienza** - Esecuzione [Audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
 
    ![Pipeline full stack](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -128,45 +106,52 @@ Per completare la configurazione della pipeline non di produzione del codice ful
 
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
 
-### Configurazione a livello web {#web-tier-config}
+### Distribuzione mirata {#targeted-deployment}
 
-Una pipeline di configurazione a livello web distribuisce configurazioni HTTPD/Dispatcher. Per maggiori informazioni su questo tipo di pipeline, consulta [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline).
+Una distribuzione mirata distribuisce il codice solo per parti selezionate dell’applicazione AEM. In tale distribuzione è possibile scegliere di: **Includi** uno dei seguenti tipi di codice:
+
+* **[Config](#config)** : configura le impostazioni relative all’ambiente AEM, alle attività di manutenzione, alle regole CDN e altro ancora.
+   * Consulta il documento [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md) per scoprire come gestire le regole del filtro del traffico nell’archivio in modo che vengano distribuite correttamente.
+* **[Codice front-end](#front-end-code)** : configura JavaScript e CSS per il front-end dell’applicazione AEM.
+   * Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore indipendenza e il processo di sviluppo può essere accelerato.
+   * Per informazioni sul funzionamento di questo processo e alcune considerazioni per sfruttare al massimo il suo potenziale, consulta il documento [Sviluppo di Sites con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+* **[Configurazione a livello web](#web-tier-config)** : configura le proprietà del dispatcher per archiviare, elaborare e consegnare le pagine web al client.
 
 >[!NOTE]
 >
->Se esiste una pipeline del codice a livello web per l’ambiente selezionato, questa selezione è disabilitata.
+>* Se esiste una pipeline del codice a livello web per l’ambiente selezionato, questa selezione è disabilitata.
+>* Se già disponi di una pipeline full stack distribuita in un ambiente, creando una pipeline di configurazione a livello web per lo stesso ambiente la configurazione del livello web esistente nella pipeline full stack verrà ignorata.
+> * In qualsiasi momento può essere presente una sola pipeline di distribuzione della configurazione per ogni ambiente.
 
-Per completare la configurazione della pipeline non di produzione del codice a livello web, segui la procedura riportata di seguito.
+I passaggi per completare la creazione della pipeline di distribuzione non di produzione con targeting sono gli stessi quando scegli un tipo di distribuzione.
 
-1. Nella scheda **Codice sorgente** è necessario definire le seguenti opzioni.
+1. Scegliere il tipo di distribuzione desiderato.
 
-   * **Ambienti di distribuzione idonei**: se la pipeline è di distribuzione, seleziona gli ambienti in cui eseguire la distribuzione.
+![Opzioni di implementazione mirate](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
+
+1. Definisci il **Ambienti di implementazione idonei**.
+
+   * Se la pipeline è di distribuzione, seleziona gli ambienti in cui eseguire la distribuzione.
+
+1. Sotto **Codice sorgente**, definisci le seguenti opzioni:
+
    * **Archivio**: questa opzione definisce da quale archivio Git la pipeline deve recuperare il codice.
 
    >[!TIP]
    > 
-   >Per scoprire come aggiungere e gestire gli archivi in Cloud Manager, consulta [Aggiunta e gestione di archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
+   >Per scoprire come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione degli archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
    * **Ramo Git**: questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
+      * Immetti i primi caratteri del nome del ramo: la funzione di completamento automatico di questo campo. trova i rami corrispondenti che puoi selezionare.
    * **Posizione codice**: definisce il percorso nel ramo dell’archivio selezionato dal quale la pipeline deve recuperare il codice.
-      * Per le pipeline di configurazione a livello web, in genere questo percorso contiene le directory `conf.d`, `conf.dispatcher.d` e `opt-in`.
-      * Ad esempio, se la struttura del progetto è stata generata dall’[archetipo del progetto AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) il percorso è `/dispatcher/src`.
 
-   ![Pipeline a livello web](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
+   ![Configurare la pipeline di distribuzione](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
 
 1. Fai clic su **Salva**.
 
->[!NOTE]
->
->Se già disponi di una pipeline full stack distribuita in un ambiente, creando una pipeline di configurazione a livello web per lo stesso ambiente la configurazione del livello web esistente nella pipeline full stack verrà ignorata.
-
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
 
-## Sviluppo di Sites con la pipeline front-end {#developing-with-front-end-pipeline}
-
-Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore indipendenza e il processo di sviluppo può essere accelerato.
-
-Per informazioni sul funzionamento di questo processo e alcune considerazioni per sfruttare al massimo il suo potenziale, consulta il documento [Sviluppo di Sites con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+Durante l’esecuzione di una pipeline di distribuzione di destinazione, le configurazioni [ad esempio configurazioni WAF](/help/security/traffic-filter-rules-including-waf.md) verranno implementati, purché vengano salvati nell’ambiente, nell’archivio e nel ramo definiti nella pipeline.
 
 ## Ignorare i pacchetti Dispatcher {#skip-dispatcher-packages}
 

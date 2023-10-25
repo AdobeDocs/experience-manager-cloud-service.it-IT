@@ -2,10 +2,10 @@
 title: Modifica dei programmi
 description: Scopri come modificare i programmi sandbox e di produzione per apportare modifiche alle opzioni dopo averli creati.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 50%
+source-wordcount: '507'
+ht-degree: 44%
 
 ---
 
@@ -53,15 +53,19 @@ Per modificare i programmi o eliminare i programmi sandbox, è necessario avere 
    * Questa data è esclusivamente a scopo informativo. Attiva il widget di pubblicazione nella pagina di panoramica del programma. A sua volta, fornisce collegamenti interni alla documentazione sulle best practice as a Cloud Service di Adobe Experience Manager (AEM) per allinearsi al percorso, che culmina in un’esperienza di lancio di successo.
    * Questa scheda non è disponibile per i programmi sandbox.
 
+1. Se i diritti richiesti sono disponibili per il programma, il **Sicurezza** verrà visualizzata la scheda in cui è possibile modificare le opzioni di protezione per il programma.
+
+   ![Modifica impostazioni di protezione](assets/edit-program-security.png)
+
+   * Impossibile abilitare o disabilitare HIPAA dopo [creazione di programmi.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      * [Ulteriori informazioni](https://www.adobe.com/go/hipaa-ready_it) sull’implementazione della soluzione compatibile HIPAA di Adobe.
+   * Una volta attivata, la protezione WAF-DDOS può essere configurata impostando un [pipeline non di produzione.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+
+   {{waf-limited-release}}
+
 1. Clic **Aggiorna** per salvare le modifiche apportate al programma.
 
 Ogni volta che si modifica un programma, incluso l&#39;aggiunta o la rimozione di una soluzione o di un componente aggiuntivo, tali modifiche diventano effettive dopo la distribuzione successiva.
-
-Se il programma di produzione aveva abilitato la sicurezza avanzata, sarà disponibile la scheda aggiuntiva **Sicurezza avanzata** nella finestra **Modifica programma**, per confermare che la funzione è attiva per il programma.
-
-![Protezione avanzata attiva per un programma](assets/edit-program-enhanced.png)
-
-Non è possibile modificare questa impostazione dopo la creazione del programma. Per ulteriori informazioni sull&#39;opzione di protezione avanzata, vedere [Creazione di programmi di produzione](creating-production-programs.md).
 
 ## Eliminazione dei programmi sandbox {#delete-sandbox-program}
 
