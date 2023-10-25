@@ -5,9 +5,9 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1030'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Puoi accedere ed eliminare i dati utente da un’istanza del flusso di lavoro ne
 Tuttavia, non è possibile identificare o i risultati possono essere ambigui quando si identificano i flussi di lavoro associati a un iniziatore nei seguenti scenari:
 
 * **Flusso di lavoro attivato tramite una cartella controllata**: un’istanza di flusso di lavoro non può essere identificata utilizzando il relativo iniziatore se il flusso di lavoro viene attivato da una cartella controllata. In questo caso, le informazioni utente vengono codificate nei dati memorizzati.
-* **Flusso di lavoro avviato dall&#39;istanza AEM di pubblicazione**: tutte le istanze del flusso di lavoro vengono create utilizzando un utente del servizio quando Forms adattivo, comunicazioni interattive o lettere vengono inviate dall’istanza pubblicata dell’AEM. In questi casi, il nome utente dell’utente connesso non viene acquisito nei dati dell’istanza del flusso di lavoro.
+* **Flusso di lavoro avviato dall&#39;istanza AEM di pubblicazione**: tutte le istanze del flusso di lavoro vengono create utilizzando un utente del servizio quando vengono inviate lettere o Forms adattivi dall’istanza di pubblicazione dell’AEM. In questi casi, il nome utente dell’utente connesso non viene acquisito nei dati dell’istanza del flusso di lavoro.
 
 ### Accedere ai dati utente {#access}
 
