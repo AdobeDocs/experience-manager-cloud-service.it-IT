@@ -35,7 +35,7 @@ Consulta [Dispatcher nel cloud](https://experienceleague.adobe.com/docs/experien
 
 ## AEM Dispatcher Converter {#aem-dispatcher-converter}
 
-Il convertitore del Dispatcher AEM fornisce la funzionalità di refactoring delle configurazioni del Dispatcher On-Premise o Adobe Managed Services esistenti per la configurazione del Dispatcher compatibile con l’AEM as a Cloud Service.
+Il convertitore del Dispatcher AEM fornisce la funzionalità di refactoring delle configurazioni del Dispatcher Managed Services on-premise o Adobe esistenti per la configurazione del Dispatcher compatibile con l’AEM as a Cloud Service.
 
 ## Utilizzo di AEM Dispatcher Converter {#using-dispatcher-converter}
 

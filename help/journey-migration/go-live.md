@@ -99,7 +99,7 @@ Considera che l’intera acquisizione non riesce se una qualsiasi delle seguenti
 
 * Un nodo JCR con un nome che supera i 150 caratteri
 * Un nodo JCR di dimensioni superiori a 16 MB
-* Qualsiasi utente/gruppo con `rep:AuthorizableID` in fase di acquisizione, già presente nell’AEM as a Cloud Service
+* Qualsiasi utente/gruppo con `rep:AuthorizableID` in fase di acquisizione che è già presente nell’AEM as a Cloud Service
 * Se una risorsa estratta e acquisita viene spostata in un percorso diverso nell’origine o nella destinazione prima della successiva iterazione della migrazione.
 
 ## Integrità risorsa {#asset-health}

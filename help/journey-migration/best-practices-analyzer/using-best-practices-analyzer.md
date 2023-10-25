@@ -21,7 +21,7 @@ ht-degree: 45%
 
 La sezione seguente per contiene considerazioni importanti sull’esecuzione di Best Practices Analyzer (BPA):
 
-* Il rapporto BPA viene creato utilizzando l’output di Adobe Experience Manager (AEM) [Rilevatore pattern](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). La versione del rilevatore pattern utilizzata da BPA è inclusa nel pacchetto di installazione di BPA.
+* Il rapporto BPA viene creato utilizzando l’output del Adobe Experience Manager (AEM) [Rilevatore pattern](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). La versione del rilevatore pattern utilizzata da BPA è inclusa nel pacchetto di installazione di BPA.
 
 * BPA può essere eseguito solo da **admin** utente o un utente in **amministratori** gruppo.
 

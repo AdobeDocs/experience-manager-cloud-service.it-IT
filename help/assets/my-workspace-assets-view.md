@@ -5,7 +5,7 @@ exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
 source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -42,14 +42,14 @@ Fissa file, cartelle e raccolte per un accesso più rapido a questi elementi qua
 
 Per fissare una risorsa, una cartella o una raccolta:
 
-1. Seleziona l’elemento e fai clic su **[!UICONTROL Aggiungi all&#39;accesso rapido]**.
+1. Seleziona l’elemento e fai clic su **[!UICONTROL Fissa in Accesso rapido]**.
 
-1. Selezionare questa opzione per fissare l&#39;articolo solo per l&#39;utente, per l&#39;intera organizzazione o per i gruppi selezionati. Se si seleziona **[!UICONTROL Per i gruppi]**, definiscono i nomi dei gruppi nella **[!UICONTROL Fissa per gruppi]** campo.
+1. Seleziona questa opzione per fissare l’elemento solo per l’utente, per l’intera organizzazione o per i gruppi selezionati. Se selezioni **[!UICONTROL Per i gruppi]**, definisci i nomi dei gruppi nel campo **[!UICONTROL Fissa per gruppi]**.
 
    ![Fissa elementi per gruppi](assets/pin-items-for-groups.png)
-1. Clic **[!UICONTROL Fissa]**.
+1. Fai clic su **[!UICONTROL Fissa]**.
 
-   L’elemento selezionato viene visualizzato nel **[!UICONTROL Accesso rapido]** sezione di My Workspace.
+   Gli elementi selezionati vengono visualizzati nella sezione **[!UICONTROL Accesso rapido]** dell’area di lavoro personale.
    ![Attività nell’area di lavoro](assets/quick-access.png)
 
 **Approfondimenti**

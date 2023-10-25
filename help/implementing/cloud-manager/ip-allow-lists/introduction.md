@@ -3,7 +3,7 @@ title: Introduzione agli elenchi IP consentiti
 description: Scopri come limitare gli indirizzi da cui gli utenti possono accedere ai domini di AEM as a Cloud Service con gli elenchi IP consentiti.
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 100%
 

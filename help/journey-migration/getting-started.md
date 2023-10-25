@@ -11,11 +11,11 @@ ht-degree: 24%
 
 # Guida introduttiva del Percorso di migrazione all’AEM as a Cloud Service {#getting-started}
 
-In questa sezione del Percorso di migrazione as a Cloud Service dell’AEM scoprirai le nozioni di base sullo spostamento nel cloud dell’installazione on-premise o di Adobe Managed Services dell’AEM.
+In questa sezione del Percorso di migrazione as a Cloud Service dell’AEM, scoprirai le nozioni di base per spostare l’installazione Managed Services on-premise o Adobe dell’AEM sul cloud.
 
 ## Obiettivo {#objective}
 
-Questo documento spiega perché utilizzare una versione cloud nativa dell’AEM e le diverse fasi di migrazione a AEM as a Cloud Service. Dopo la lettura, dovresti:
+Questo documento spiega perché utilizzare una versione cloud nativa dell’AEM e le diverse fasi di migrazione a AEM as a Cloud Service. Dopo la lettura dovresti:
 
 * Comprendere i vantaggi del movimento dell’AEM as a Cloud Service
 * Acquisisci familiarità con i passaggi generali che devi compiere per poter passare al cloud

@@ -3,7 +3,8 @@ title: Migrazione di gruppi utenti chiusi
 description: Scopri le considerazioni speciali necessarie per abilitare i gruppi chiusi di utenti dopo la migrazione dei contenuti ad Adobe Experience Manager as a Cloud Service.
 hide: true
 hidefromtoc: true
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 8%
@@ -46,4 +47,3 @@ In sintesi, questi sono i passaggi per abilitare il gruppo utenti chiusi (CUG) d
    - In caso contrario, utilizza i pacchetti per installarlo nell’istanza di destinazione (o crearlo manualmente) e attivarlo insieme ai relativi membri. Verifica che esista al momento della pubblicazione.
 1. Ripubblica tutte le pagine associate a un criterio per gruppi utenti chiusi (CUG), assicurandoti che sia pubblicato, ad esempio, modificando prima la pagina. È importante ripubblicarli tutti.
    - Dopo la ripubblicazione di tutte le pagine, verifica la funzionalità per ogni pagina protetta con gruppo di utenti chiusi (CUG).
-

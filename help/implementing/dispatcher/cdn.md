@@ -34,7 +34,7 @@ Segui le sezioni riportate di seguito per utilizzare l’interfaccia utente self
 
 Per impostazione predefinita, per una configurazione CDN gestita dall’AEM tutto il traffico pubblico può indirizzarsi al servizio di pubblicazione, sia per gli ambienti di produzione che per quelli non di produzione (sviluppo e stage). Puoi limitare il traffico verso il servizio di pubblicazione per un dato ambiente (ad esempio, limitando la gestione temporanea da un intervallo di indirizzi IP) tramite l’interfaccia utente di Cloud Manager.
 
-Consulta [Gestione degli Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) per ulteriori informazioni.
+Per ulteriori informazioni, vedi [Gestione degli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!CAUTION]
 >
@@ -131,7 +131,7 @@ Il CDN gestito da AEM aggiunge intestazioni a ogni richiesta con:
 >
 >Se è presente una rete CDN gestita dal cliente, queste intestazioni riflettono la posizione del server proxy CDN del cliente anziché il client effettivo. Pertanto, per la rete CDN gestita dal cliente, le intestazioni di geolocalizzazione devono essere gestite dalla rete CDN del cliente.
 
-I valori per i codici paese sono i codici alfa-2 descritti [qui](https://en.wikipedia.org/wiki/ISO_3166-1).
+I valori per i codici dei paesi sono i codici Alpha-2 descritti [qui](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 I valori per i codici continente sono:
 

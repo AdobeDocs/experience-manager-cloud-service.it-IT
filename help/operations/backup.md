@@ -46,6 +46,6 @@ Dopo un ripristino, la versione dell’AEM viene aggiornata alla più recente.
 
 ## Backup fuori sede {#offsite-backup}
 
-Anche se i backup regolari coprono il rischio di eliminazioni accidentali o di errori tecnici in AEM Cloud Services, è necessario coprire anche i rischi che possono sorgere dal fallimento di un’area. Oltre alla disponibilità, il rischio maggiore in tali interruzioni dell’area dati è principalmente la perdita di dati.
+Mentre i backup regolari coprono il rischio di cancellazioni accidentali o di guasti tecnici all&#39;interno dei Cloud Service AEM, devono essere coperti anche i rischi che possono derivare dal guasto di una regione. Oltre alla disponibilità, il rischio maggiore in tali interruzioni dell’area dati è principalmente la perdita di dati.
 AEM as a Cloud Service copre questo rischio come standard per tutti gli ambienti di produzione AEM. Copia in modo continuo l&#39;intero contenuto dell&#39;AEM in un&#39;area remota e lo rende disponibile per il ripristino per tre mesi. L&#39;Adobe chiama questa funzionalità Offsite Backup.
-Il ripristino di AEM Cloud Services per gli ambienti di staging e produzione viene eseguito da AEM Service Reliability Engineering in caso di interruzioni dell’area dati.
+Il ripristino dei Cloud Service AEM per gli ambienti di staging e produzione viene eseguito da AEM Service Reliability Engineering in caso di interruzioni dell’area dati.
