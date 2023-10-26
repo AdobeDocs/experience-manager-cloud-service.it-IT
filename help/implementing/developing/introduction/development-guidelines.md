@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
+source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2733'
 ht-degree: 4%
 
 ---
@@ -69,9 +69,6 @@ Oltre a fornire timeout, è necessario anche gestire correttamente tali timeout 
 
 ## Gestione dei limiti di velocità delle richieste {#rate-limit-handling}
 
->[!NOTE]
->La risposta di errore HTTP passerà da 503 a 429 nella settimana del 7 agosto 2023.
->
 Quando la frequenza delle richieste in entrata all’AEM supera i livelli integri, l’AEM risponde alle nuove richieste con il codice di errore HTTP 429. Le applicazioni che effettuano chiamate programmatiche all&#39;AEM possono considerare la codifica in modo difensivo, ritentando dopo alcuni secondi con una strategia di backoff esponenziale. Prima di metà agosto 2023, l’AEM ha risposto alla stessa condizione con il codice di errore HTTP 503.
 
 ## Nessuna personalizzazione interfaccia classica {#no-classic-ui-customizations}

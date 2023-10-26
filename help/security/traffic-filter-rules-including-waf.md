@@ -2,9 +2,9 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 221f6df73fe660c6f8dbf79affdccdd081ad3906
+source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
 workflow-type: tm+mt
-source-wordcount: '4210'
+source-wordcount: '3312'
 ht-degree: 1%
 
 ---
@@ -13,18 +13,17 @@ ht-degree: 1%
 # Regole del filtro del traffico, incluse le regole WAF {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->
->Questa funzione non è ancora disponibile al pubblico. Per aderire al programma di adozione anticipata in corso, invia un messaggio e-mail a **aemcs-waf-adopter@adobe.com**, incluso il nome dell’organizzazione e il contesto relativi al tuo interesse per la funzione.
+>Questa funzione sarà presto disponibile negli ambienti di sviluppo, con un rollout graduale negli ambienti di staging e produzione a novembre. Puoi richiedere l’accesso anticipato tramite e-mail su stage e prod **aemcs-waf-adopter@adobe.com**.
 
 Le regole del filtro del traffico possono essere utilizzate per bloccare o consentire le richieste a livello CDN, il che può essere utile in scenari come:
 
 * Limitazione dell’accesso a domini specifici al traffico interno dell’azienda, prima della pubblicazione di un nuovo sito
-* Stabilire limiti di velocità in modo da essere meno suscettibili ad attacchi DDoS volumetrici
+* Stabilire limiti di velocità in modo da essere meno suscettibili ad attacchi DoS volumetrici
 * Impedire che indirizzi IP dannosi eseguano il targeting delle pagine
 
-Alcune di queste regole del filtro del traffico sono disponibili per tutti i clienti AEM as a Cloud Service Sites e Forms. Funzionano principalmente su proprietà di richiesta e intestazioni di richiesta, tra cui IP, nome host, percorso e agente utente.
+La maggior parte di queste regole del filtro del traffico è disponibile per tutti i clienti AEM as a Cloud Service Sites e Forms. Funzionano principalmente su proprietà di richiesta e intestazioni di richiesta, tra cui IP, nome host, percorso e agente utente.
 
-Una sottocategoria delle regole del filtro del traffico richiede una licenza di protezione avanzata o una licenza di protezione WAF-DDoS Security. Queste potenti regole sono note come regole del filtro del traffico WAF (Web Application Firewall) (o regole WAF in breve) e hanno accesso al [Flag WAF](#waf-flags-list) descritto più avanti in questo articolo. I clienti di Sites e Forms possono contattare il proprio account team di Adobi per informazioni dettagliate sulla concessione in licenza di questa funzionalità avanzata.
+Una sottocategoria delle regole del filtro del traffico richiede una licenza Enhanced Security o WAF-DDoS Protection e sarà disponibile nel corso dell&#39;anno. Queste potenti regole sono note come regole del filtro del traffico WAF (Web Application Firewall) (o regole WAF in breve) e hanno accesso al [Flag WAF](#waf-flags-list) descritto più avanti in questo articolo.
 
 Le regole del filtro del traffico possono essere distribuite tramite le pipeline di configurazione di Cloud Manager ai tipi di ambiente di sviluppo, di staging e di produzione nei programmi di produzione (non sandbox). Il supporto per gli RDE arriverà in futuro.
 
@@ -40,33 +39,35 @@ Questo articolo è suddiviso nelle sezioni seguenti:
 * **Regole limite tasso:** Scopri come utilizzare le regole di limitazione della frequenza per proteggere il sito da attacchi di volumi elevati.
 * **Registri CDN:** Scopri quali regole dichiarate e flag WAF corrispondono al tuo traffico.
 * **Strumenti dashboard:** Analizza i registri CDN per trovare nuove regole per il filtro del traffico.
+* **Regole iniziali consigliate:** Un set di regole con cui iniziare.
 * **Esercitazione:** Conoscenza pratica della funzione, incluso come utilizzare gli strumenti del dashboard per dichiarare le regole corrette.
-<!-- About the tutorial: sets the context for a linked tutorial, which gives you practical knowledge about the feature, including how to use dashboard tooling to declare the right rules. -->
+
+Ti invitiamo a fornire feedback o a porre domande sulle regole del filtro del traffico inviando un’e-mail **aemcs-waf-adopter@adobe.com**.
 
 ## Panoramica sulla protezione del traffico {#traffic-protection-overview}
 
 Nel panorama digitale attuale, il traffico dannoso è una minaccia sempre presente. Riconosciamo la gravità del rischio e offriamo diversi approcci per proteggere le applicazioni dei clienti e mitigare gli attacchi quando si verificano.
 
-Al limite, la rete CDN gestita dall&#39;Adobe assorbe gli attacchi DDoS a livello di rete (livelli 3 e 4), inclusi gli attacchi di inondazione e riflessione/amplificazione.
+Al limite, la rete CDN gestita dall&#39;Adobe assorbe gli attacchi DoS a livello di rete (livelli 3 e 4), inclusi gli attacchi di inondazione e riflessione/amplificazione.
 
-Per impostazione predefinita, Adobe adotta misure per evitare il deterioramento delle prestazioni dovuto a picchi di traffico inaspettatamente elevato oltre una determinata soglia. Nel caso di un attacco DDoS che influisca sulla disponibilità del sito, i team operativi di Adobe vengono avvisati e adottano misure per mitigare gli effetti.
+Per impostazione predefinita, Adobe adotta misure per evitare il deterioramento delle prestazioni dovuto a picchi di traffico inaspettatamente elevato oltre una determinata soglia. Nel caso in cui un attacco DoS influisca sulla disponibilità del sito, i team operativi di Adobe vengono avvisati e adottano misure per attenuare il problema.
 
 I clienti possono adottare misure proattive per mitigare gli attacchi a livello di applicazione (livello 7) configurando regole a vari livelli del flusso di distribuzione dei contenuti.
 
 Ad esempio, a livello di Apache, i clienti possono configurare [modulo dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) o [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) per limitare l’accesso a determinati contenuti.
 
-Come descritto in questo articolo, le regole del filtro del traffico possono essere distribuite alla CDN utilizzando la pipeline di configurazione di Cloud Manager. Oltre alle regole del filtro del traffico basate sulla richiesta di traffico in base a proprietà come indirizzo IP, percorso e intestazioni, i clienti possono anche concedere in licenza una potente sottocategoria di regole del filtro del traffico chiamate regole WAF.
+Come descritto in questo articolo, le regole del filtro del traffico possono essere distribuite alla rete CDN gestita Adobe, utilizzando la pipeline di configurazione di Cloud Manager. Oltre alle regole del filtro del traffico basate su proprietà come indirizzo IP, percorso e intestazioni, o sulle regole basate sull’impostazione dei limiti di velocità, i clienti possono anche concedere in licenza una potente sottocategoria di regole del filtro del traffico chiamate regole WAF.
 
 ## Processo consigliato {#suggested-process}
 
 Di seguito è riportato un processo end-to-end consigliato di alto livello per individuare le regole per il filtro del traffico corrette:
 
-1. Configurare una pipeline di configurazione non di produzione e di produzione, come descritto in [Configurazione](#setup) sezione.
+1. Configurare le pipeline di configurazione di produzione e non di produzione, come descritto in [Configurazione](#setup) sezione.
 1. I clienti che hanno concesso in licenza la sottocategoria delle regole del filtro del traffico WAF devono abilitarle in Cloud Manager.
 1. Leggi e prova l’esercitazione per comprendere concretamente come utilizzare le regole del filtro del traffico, incluse le regole WAF, se dispongono della licenza. Il tutorial illustra come distribuire le regole in un ambiente di sviluppo, simulare traffico dannoso e scaricare [Registri CDN](#cdn-logs)e analizzarli in [strumenti dashboard](#dashboard-tooling).
 1. Copia le regole iniziali consigliate in `cdn.yaml` e implementa la configurazione nell’ambiente di produzione in modalità registro.
-1. Dopo aver raccolto del traffico, analizza i risultati utilizzando [strumenti dashboard](#dashboard-tooling) per vedere se ci sono state corrispondenze. Cerca i falsi positivi e apporta le regolazioni necessarie, in ultima analisi abilitando le regole predefinite in modalità blocco.
-1. Aggiungi regole personalizzate basate sull’analisi dei registri CDN, eseguendo prima un test con traffico simulato in ambienti di sviluppo, prima della distribuzione nell’ambiente di staging e produzione in modalità registro, quindi in modalità blocco.
+1. Dopo aver raccolto del traffico, analizza i risultati utilizzando [strumenti dashboard](#dashboard-tooling) per vedere se ci sono state corrispondenze. Cerca i falsi positivi e apporta le eventuali modifiche necessarie, in ultima analisi abilitando le regole iniziali in modalità blocco.
+1. Aggiungi regole personalizzate basate sull’analisi dei registri CDN, eseguendo prima un test con traffico simulato in ambienti di sviluppo prima di distribuirlo negli ambienti di staging e produzione in modalità registro, quindi in modalità blocco.
 1. Monitora il traffico su base continuativa, apportando modifiche alle regole man mano che il panorama delle minacce si evolve.
 
 ## Configurazione {#setup}
@@ -104,7 +105,7 @@ Il `kind` il parametro deve essere impostato su `CDN` e la versione deve essere 
 
 <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
-1. Per configurare le regole WAF, è necessario che WAF sia abilitato in Cloud Manager, come descritto di seguito per gli scenari di programma nuovi ed esistenti. Si noti che per WAF deve essere acquistata una licenza separata.
+1. Se le regole WAF sono concesse in licenza, devi abilitare la funzione in Cloud Manager, come descritto di seguito per gli scenari di programma nuovi ed esistenti.
 
    1. Per configurare WAF per un nuovo programma, selezionare **Protezione WAF-DDOS** casella di controllo sulla **Sicurezza** scheda quando [aggiungi un programma di produzione.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
@@ -327,7 +328,7 @@ data:
 
 **Esempio 4**
 
-Questa regola blocca le richieste al percorso `/block-me`, e blocca ogni richiesta che corrisponde a `SQLI` o `XSS` pattern. Questo esempio include le regole di filtro del traffico WAF, che fanno riferimento al `SQLI` e `XSS` [Flag WAF](#waf-flags-list), che richiedono una licenza separata.
+Questa regola blocca le richieste al percorso `/block-me`, e blocca ogni richiesta che corrisponde a `SQLI` o `XSS` pattern. Questo esempio include le regole di filtro del traffico WAF, che fanno riferimento al `SQLI` e `XSS` [Flag WAF](#waf-flags-list), e richiede pertanto una licenza separata.
 
 ```
 kind: "CDN"
@@ -384,9 +385,11 @@ data:
 
 ## Regole di limite di tasso {#rate-limits-rules}
 
-A volte è auspicabile bloccare il traffico che corrisponde a una regola solo se la corrispondenza supera una determinata velocità nel tempo. Impostazione di un valore per `rateLimit` limita la frequenza delle richieste che corrispondono alla condizione della regola.
+A volte è auspicabile bloccare il traffico se supera una certa frequenza di richieste in arrivo, forse in base a una condizione specifica. Impostazione di un valore per `rateLimit` limita la frequenza delle richieste che corrispondono alla condizione della regola.
 
 Le regole del limite di tasso non possono fare riferimento ai flag WAF. Sono disponibili per tutti i clienti Sites e Forms.
+
+I limiti di velocità vengono calcolati per POP CDN. Ad esempio, supponiamo che i POP a Montreal, Miami e Dublino registrino tassi di traffico rispettivamente di 80, 90 e 120 richieste al secondo e che la regola del limite di tasso sia impostata su un limite di 100. In tal caso, solo il traffico verso Dublino sarebbe limitato.
 
 ### struttura rateLimit {#ratelimit-structure}
 
@@ -445,7 +448,7 @@ data:
 
 ## Registri CDN {#cdn-logs}
 
-AEM as a Cloud Service fornisce accesso ai registri CDN, utili per i casi d’uso, tra cui l’ottimizzazione del rapporto hit della cache e la configurazione delle regole CDN e WAF. I registri CDN vengono visualizzati in Cloud Manager **Scarica registri** durante la selezione del servizio Author o Publish.
+AEM as a Cloud Service fornisce accesso ai registri CDN, utili per i casi d’uso, tra cui l’ottimizzazione del rapporto hit della cache e la configurazione delle regole del filtro del traffico. I registri CDN vengono visualizzati in Cloud Manager **Scarica registri** durante la selezione del servizio Author o Publish.
 
 I registri CDN possono subire un ritardo fino a 5 minuti.
 
@@ -463,10 +466,10 @@ Ad esempio:
 
 Le regole si comportano nel modo seguente:
 
-* Il nome della regola dichiarato dal cliente di qualsiasi regola corrispondente verrà elencato nell&#39;attributo matches.
-* L’attributo action specifica se le regole hanno avuto l’effetto di bloccare, consentire o registrare.
-* Se WAF è concesso in licenza e abilitato, l&#39;attributo waf elencherà tutte le regole waf rilevate, ad esempio SQLI; si noti che questo è indipendente dal nome dichiarato dal cliente, indipendentemente dal fatto che le regole waf siano elencate o meno nella configurazione.
-* Se nessuna regola dichiarata dal cliente corrisponde e nessuna regola waf corrisponde, la proprietà dell&#39;attributo delle regole sarà vuota.
+* Il nome della regola dichiarato dal cliente di qualsiasi regola corrispondente verrà elencato in `match` attributo.
+* Il `action` Questo attributo determina se le regole hanno avuto l&#39;effetto di bloccare, consentire o registrare.
+* Se la WAF è concessa in licenza e abilitata, `waf` Questo attributo elenca tutti i flag WAF (ad esempio, SQLI) rilevati, indipendentemente dal fatto che i flag WAF siano elencati o meno in una delle regole. In questo modo è possibile ottenere informazioni sulle nuove regole da dichiarare.
+* Se nessuna regola dichiarata dal cliente corrisponde e nessuna regola waf corrisponde, il `rules` la proprietà sarà vuota.
 
 In generale, le regole corrispondenti vengono visualizzate nella voce di registro per tutte le richieste alla rete CDN, indipendentemente dal fatto che si tratti di un hit, di un superamento o di un mancato recapito della rete CDN. Tuttavia, le regole WAF vengono visualizzate nella voce di registro solo per le richieste alla rete CDN considerate mancanti o passate alla rete CDN, ma non per gli hit della rete CDN.
 
@@ -561,215 +564,15 @@ Gli strumenti del dashboard possono essere clonati direttamente dal [AEMCS-CDN-L
 
 [Guarda il tutorial](#tutorial) per istruzioni concrete su come utilizzare gli strumenti del dashboard.
 
-## Tutorial {#tutorial}
+## Regole di avvio consigliate {#recommended-starter-rules}
 
-Adobe fornisce un meccanismo per scaricare gli strumenti del dashboard sul computer per acquisire i registri CDN scaricati tramite Cloud Manager. Con questo strumento, puoi analizzare il traffico per scoprire le regole del filtro del traffico da dichiarare, incluse le regole WAF. Questa sezione fornisce innanzitutto alcune istruzioni per acquisire familiarità con gli strumenti del dashboard in un ambiente di sviluppo, seguite da indicazioni su come sfruttare tali conoscenze per creare regole in un ambiente di produzione.
-
-Gli strumenti del dashboard possono essere clonati direttamente dal [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Archivio GitHub.
-
-
-### Introduzione agli strumenti del dashboard {#dashboard-getting-familiar}
-
-1. Crea una pipeline di configurazione non di produzione di Cloud Manager, associata a un ambiente di sviluppo. Seleziona innanzitutto il **Pipeline di implementazione** opzione. Quindi seleziona **Distribuzione mirata**, Config, l’archivio, il ramo Git e imposta la posizione del codice su /config.
-
-   ![Aggiungi implementazione di selezione pipeline non di produzione](/help/security/assets/waf-select-pipeline1.png)
-
-   ![Aggiungi destinazione di selezione pipeline non di produzione](/help/security/assets/waf-select-pipeline2.png)
-
-[Consulta questo documento per informazioni dettagliate sulla configurazione di pipeline non di produzione.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-1. Nel workspace, crea una configurazione di cartella a livello principale e aggiungi un file denominato `cdn.yaml`, in cui dichiarerai una regola semplice, impostandola in modalità registro anziché in modalità di blocco.
+Puoi copiare le regole consigliate di seguito nel tuo `cdn.yaml` per iniziare. Inizia in modalità registro, analizza il traffico e, se soddisfatto, passa alla modalità blocco. Puoi modificare le regole in base alle caratteristiche univoche del traffico live del tuo sito web.
 
 ```
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-    # Log request on simple path
-    - name: log-rule-example
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            equals: '/log/me'
-      action: log
-```
-
-1. Apporta e invia le modifiche e distribuisci la configurazione utilizzando la pipeline di configurazione.
-
-   ![Eseguire la pipeline di configurazione](/help/security/assets/waf-run-pipeline.png)
-
-1. Una volta implementata la configurazione, prova ad accedere `https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me` utilizzando il browser web o con il comando curl di seguito. Dovresti ricevere una pagina di errore 404 in quanto tale pagina non esiste.
-
-   ```
-   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
-   ```
-
-1. Scarica i registri CDN da Cloud Manager e verifica che le regole corrispondano come previsto, con una proprietà delle regole corrispondente al nome della regola:
-
-   ```
-   "rules": "match=log-rule-example"
-   ```
-
-   ![Seleziona i registri di download](/help/security/assets/waf-download-logs1.png)
-
-   ![Scaricare i registri](/help/security/assets/waf-download-logs2.png)
-
-1. Carica l’immagine Docker con gli strumenti del dashboard e segui il file README per acquisire i registri CDN. Come illustrato nelle schermate seguenti, seleziona il periodo di tempo corretto, l’ambiente giusto e i filtri giusti.
-
-   ![Seleziona l’ora dal dashboard](/help/security/assets/dashboard-select-time.png)
-
-   ![Seleziona l’ambiente dal dashboard](/help/security/assets/dashboard-select-env.png)
-
-1. Una volta applicati i filtri corretti, dovresti essere in grado di visualizzare una dashboard caricata con i dati previsti. Nella schermata seguente, l’esempio della regola di registro è stato attivato 3 volte nelle ultime 2 ore, dallo stesso IP che si trova in Irlanda, utilizzando un browser web e curl.
-
-   ![Visualizzare i dati del dashboard di sviluppo](/help/security/assets/dashboard-see-data-logmode.png)
-   ![Visualizza widget dati dashboard di sviluppo](/help/security/assets/dashboard-see-data-logmode2.png)
-
-1. Ora modifica il file cdn.yaml in modo da attivare la regola in modalità di blocco per garantire che le pagine siano bloccate, come previsto. Quindi esegui il commit, invia e attiva la pipeline di configurazione come fatto in precedenza.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-    # Log request on simple path
-    - name: log-rule-example
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            equals: '/log/me'
-      action: block
-```
-
-1. Una volta implementata la configurazione, prova ad accedere `https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me` utilizzando il browser web o con il comando curl di seguito. Dovresti ricevere una pagina di errore 406 che indica che la richiesta è stata bloccata.
-
-   ```
-   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
-   ```
-
-1. Ancora una volta, scarica i registri CDN in Cloud Manager (nota: l’esposizione delle nuove richieste nei registri CDN può richiedere fino a 5 minuti) e importali negli strumenti della dashboard, come abbiamo fatto in precedenza. Al termine, aggiorna la dashboard. Come puoi vedere nella schermata seguente, le richieste a `/log/me` sono bloccati dalla nostra regola.
-
-   ![Visualizza dati dashboard di produzione](/help/security/assets/dashboard-see-data-blockmode.png)
-   ![Visualizza dati dashboard di produzione](/help/security/assets/dashboard-see-data-blockmode2.png)
-
-1. Se sono abilitati dei filtri del traffico WAF (questo richiederà una licenza aggiuntiva quando la funzione sarà GA), ripeti con una regola del filtro del traffico WAF, in modalità registro, e distribuisci le regole.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-      - name: log-waf-flags
-        when:
-          reqProperty: tier
-          matches: "author|publish"
-        action:
-          type: log
-          wafFlags:
-              - SANS
-              - SIGSCI-IP
-              - TORNODE
-              - NOUA
-              - SCANNER
-              - USERAGENT
-              - PRIVATEFILE
-              - ABNORMALPATH
-              - TRAVERSAL
-              - NULLBYTE
-              - BACKDOOR
-              - LOG4J-JNDI
-              - SQLI
-              - XSS
-              - CODEINJECTION
-              - CMDEXE
-              - NO-CONTENT-TYPE
-              - UTF8
-```
-
-1. Utilizza uno strumento come [nikto](https://github.com/sullo/nikto/tree/master) per generare richieste corrispondenti. Il comando seguente invierà circa 550 richieste dannose in meno di 1 minuto.
-
-   ```
-   ./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
-   ```
-
-1. Scarica i registri CDN da Cloud Manager (la visualizzazione potrebbe richiedere fino a 5 minuti) e verifica che vengano visualizzate sia le regole dichiarate corrispondenti che i flag WAF.
-
-   Come si può vedere, molte delle richieste prodotte da Nikto vengono segnalate dalla WAF come maligne. Possiamo vedere che Nikto ha provato a sfruttare le vulnerabilità CMDEXE, SQLI e NULLBYTE. Se ora modifichi l’azione da registro a blocco e riattivi una scansione utilizzando Nikto, tutte le richieste precedentemente segnalate verranno bloccate questa volta.
-
-   ![Visualizza dati WAF](/help/security/assets/dashboard-see-data-waf.png)
-
-
-   Tieni presente che ogni volta che una richiesta corrisponde a uno dei flag WAF, tali flag WAF verranno visualizzati, anche se non fanno parte della regola dichiarata; in questo modo sei sempre a conoscenza di traffico potenzialmente nuovo, per il quale non hai ancora dichiarato regole corrispondenti. Ad esempio:
-
-   ```
-   "rules": "match=log-waf-flags,waf=SQLI,action=blocked"
-   ```
-
-1. Ripeti con una regola che utilizza la limitazione della frequenza, in modalità registro. Come sempre, esegui il commit, invia e attiva la pipeline di configurazione per applicare la configurazione.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-      - name: limit-requests-client-ip
-        when:
-          reqProperty: tier
-          matches: "author|publish"
-        rateLimit:
-          limit: 10
-          window: 1
-          penalty: 60
-          groupBy:
-            - reqProperty: clientIp
-        action: log
-```
-
-1. Utilizza uno strumento come [Vegeta](https://github.com/tsenart/vegeta) per generare il traffico.
-
-   ```
-   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s | tee results.bin | vegeta report
-   ```
-
-1. Dopo aver eseguito lo strumento, puoi scaricare i registri CDN e acquisirli nel dashboard per verificare che la regola del limitatore di velocità sia stata attivata
-
-   ![Visualizza dati WAF](/help/security/assets/waf-dashboard-ratelimiter-1.png)
-
-   ![Visualizza dati WAF](/help/security/assets/waf-dashboard-ratelimiter-2.png)
-
-   Come puoi vedere la nostra regola **limit-requests-client-ip** è stato attivato.
-
-   Ora che conosci il funzionamento delle regole del filtro del traffico, puoi passare all’ambiente di produzione.
-
-### Distribuzione di regole nell’ambiente di produzione {#dashboard-prod-env}
-
-Assicurati di dichiarare inizialmente le regole in modalità registro per verificare che non vi siano falsi positivi, il che significa traffico legittimo che verrebbe bloccato in modo errato.
-
-1. Crea una pipeline di configurazione di produzione associata all’ambiente di produzione.
-
-1. Copia le regole consigliate di seguito nel tuo cdn.yaml. Puoi modificare le regole in base alle caratteristiche univoche del traffico live del tuo sito web. Esegui il commit, invia e attiva la pipeline di configurazione. Assicurati che le regole siano in modalità registro.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
+  envTypes: ["dev", "stage", "prod"]
 data:
   trafficFilters:
     rules:
@@ -805,7 +608,7 @@ data:
               - CU
               - CI
       action: log
-    # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+    # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
     - name: block-waf-flags-globally
       when:
         reqProperty: tier
@@ -831,7 +634,7 @@ data:
           - CMDEXE
           - NO-CONTENT-TYPE
           - UTF8
-    # Disable protection against CMDEXE on /bin
+    # Disable protection against CMDEXE on /bin (only works if WAF is licensed enabled for your environment)
     - name: allow-cdmexe-on-root-bin
       when:
         allOf:
@@ -845,18 +648,14 @@ data:
           - CMDEXE
 ```
 
-1. Aggiungi eventuali regole aggiuntive per bloccare il traffico dannoso di cui potresti essere a conoscenza. Ad esempio, alcuni IP che hanno attaccato il tuo sito.
+## Tutorial {#tutorial}
 
-1. Dopo alcuni minuti, ore o giorni, a seconda del volume di traffico del sito, scarica i registri CDN da Cloud Manager e analizzali con la dashboard.
+[Esercitazione](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) acquisire conoscenze pratiche ed esperienza sulle regole del filtro del traffico.
 
-1. Di seguito sono riportate alcune considerazioni:
-   1. Le regole dichiarate di corrispondenza del traffico vengono visualizzate nei grafici e nei registri delle richieste per verificare facilmente se le regole dichiarate vengono attivate.
-   1. I flag WAF corrispondenti al traffico vengono visualizzati nei grafici e nei registri delle richieste, anche se non li hai registrati in una regola. In questo modo, sei sempre a conoscenza di traffico potenzialmente nuovo dannoso e puoi creare nuove regole, in base alle esigenze. Esaminare i flag WAF che non si riflettono nelle regole dichiarate e considerare la dichiarazione.
-   1. Per le regole corrispondenti, esamina i registri di richiesta per verificare la presenza di falsi positivi e verifica se è possibile escluderli dalle regole. Ad esempio, potrebbero essere un falso positivo solo per determinati percorsi.
+Il tutorial illustra:
 
-1. Imposta le regole appropriate per la modalità blocco e prendi in considerazione l’aggiunta di regole aggiuntive. Forse alcune delle regole dovrebbero rimanere in modalità registro mentre si analizza ulteriormente con più traffico.
-
-1. Ridistribuisci la configurazione.
-
-1. Eseguire iterazioni, analizzando frequentemente le dashboard.
-
+* Configurazione della pipeline di configurazione di Cloud Manager
+* Utilizzo di strumenti per simulare traffico dannoso
+* Dichiarazione delle regole del filtro del traffico, incluse le regole WAF
+* Analisi dei risultati con gli strumenti del dashboard
+* Best practice
