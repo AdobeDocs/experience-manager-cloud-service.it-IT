@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e771913562b3770e5a504432d40c770804aadc4b
+source-git-commit: aa9629c3e48ca0bf4654351462a94777af9ed651
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 34%
+source-wordcount: '606'
+ht-degree: 22%
 
 ---
 
@@ -13,41 +13,68 @@ ht-degree: 34%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 13804 {#release-13804}
+## Versione 14029 {#release-14029}
 
-Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 13804, rilasciata pubblicamente il 10 ottobre 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 13665.
+Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 14029, rilasciata pubblicamente il 25 ottobre 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 13804.
 
-L’attivazione delle funzioni 2023.10.0 fornirà il set completo di funzioni per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it).
+L’attivazione delle funzioni 2023.11.0 fornirà il set completo di funzioni per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it).
 
-### Miglioramenti {#enhancements-13804}
+### Miglioramenti {#enhancements-14029}
 
-* GRANITE-47238: Manutenzione del registro di controllo: elimina i processi client per utilizzare la configurazione del cliente.
-* GRANITE-47123: Publish (Sling) - Migliora il tempo di avvio inizializzando la cache dei percorsi personalizzati in modo asincrono per impostazione predefinita.
-* GRANITE-46618: Pubblicazione (replica) - Migliora la velocità di avvio della pubblicazione tramite la gestione in batch dei messaggi di stato della replica.
-* GRANITE-47136: indicizzazione (download) - Migliora la velocità di download del nuovo download dell’indice parallelo (disabilitando la convalida del checksum).
-* GRANITE-47211: pubblicazione (Infra): migliora la separazione delle distribuzioni a livello di pubblicazione (memorizzando e recuperando il nome della revisione dell’archivio segmenti).
-* GRANITE-47267: Aggiornamento ad Apache Felix Http Jetty 4.2.18 (include la correzione di bug per la gestione dei parametri delle richieste ([FELIX-6625](https://issues.apache.org/jira/browse/FELIX-6625)) con miglioramenti delle prestazioni per gli sviluppi locali e RDE).
-* GRANITE-47247: aggiornamento a Sling Servlets Resolver 2.9.14 con miglioramenti delle prestazioni nella risoluzione dei servlet.
+* ASSETS-28551: migliorare la scalabilità dell’interfaccia utente Condivisioni collegamenti
+* ASSETS-28566: aggiungi l’indice dam:metadataForm Lucene
+* ASSETS-29281: Aggiornare RAPI per inviare eventi di download v2
 
-### Problemi risolti {#fixed-issues-13804}
+### Problemi risolti {#fixed-issues-14029}
 
-* GRANITE-47376: Author (Infra) - Correzione di errori DiscoveryTopologyUndefined dopo il riavvio continuo.
-* CQ-4353436: la console web AEM (Sling) - Configurazioni vuote in ServiceUserMapperImpl Validators (Principal/User) interrompe l’istanza AEM ([SLING-11912](https://issues.apache.org/jira/browse/SLING-11912)).
-* SKYOPS-63925: processo di trasformazione - Evitare errori TransformJob con JDK 11 - ZipException: errori di intestazione CEN non validi (con flag JVM disableZip64ExtraFieldValidation).
-* SKYOPS-63361: processo di trasformazione (registrazione) Registrazione migliorata con processi di trasformazione (sottoparagrafo CUSTOMER_EXTRACT).
-* SKYOPS-64103: Strumento FACT (Registrazione) - Riduce o tronca i messaggi di errore e di avviso relativi alla compilazione Clientlib.
-* SKYOPS-65109: strumento FACT (Gestione errori) - I pacchetti di contenuti con dipendenze non risolte generano un errore segnalato correttamente.
-* SKYOPS-65368: strumento FACT (Gestione errori): lo strumento viene eseguito in un ciclo di inclusione senza fine e alla fine si interrompe per l’incorporamento circolare di Clientlibs.
-* SKYOPS-64031: RDE - ComponentCacheImpl può entrare in uno stato incoerente a causa di una registrazione ResourceResolverFactory duplicata ([SLING-12019](https://issues.apache.org/jira/browse/SLING-12019)).
-* ASSETS-29105: RDE - Provider di restrizioni mancante da SecurityProviderRegistration requiredServicePids nel modello di funzionalità RDE.
-* GRANITE-44674: CoralUI - La funzionalità del campo obbligatorio Datepicker non è corretta.
+* ASSETS-25199: il componente core immagine non mostra i ritagli avanzati corretti
+* ASSETS-26142: unified-shell.js customEnvLabel non impostato o ritentato se la richiesta di individuazione non riesce o viene interrotta
+* ASSETS-26416: nel modulo di ricerca il predicato data relativa è sempre definito come &quot;1 giorno/i fa&quot;
+* ASSETS-27321: cancella la cache del gruppo in caso di modifiche all’iscrizione al team
+* ASSETS-27591: correggi la dipendenza dal vecchio org.json
+* ASSETS-28439: l’elenco Bloccati di tag avanzati Inserisce nell&#39;elenco Bloccati l’eccezione NPE quando l’opzione globale non è configurata
+* ASSETS-28612: Correzione di BlockedTagResolver in &quot;repository-api&quot;
+* ASSETS-28634: il campo Omnisearch nel magazzino di Adobe non aggiunge automaticamente i dati della risorsa
+* ASSETS-28727: l’elenco Configurazione profilo di elaborazione non mostra i valori personalizzati di altezza e larghezza specificati
+* ASSETS-29056: aggiungere rappresentazioni di transcodifica profilo di elaborazione standard AEM
+* ASSETS-29105: provider di restrizioni mancante in SecurityProviderRegistration requiredServicePids nel modello di funzionalità RDE
+* ASSETS-29106: la vista sul materiale di Adobe genera un errore sull’AEM abilitato per Unified Shell
+* ASSETS-29115: rimozione della proprietà di configurazione per i percorsi del provider di restrizioni
+* ASSETS-29208: errori durante il caricamento delle risorse causati da richieste inviate a un pod di authoring prima della registrazione del servizio CompleteUploadAssetServlet
+* ASSETS-29297: problema durante la creazione dell’opzione Salva ricerca con filtro estratto
+* ASSETS-29363: il profilo metadati non applica valori predefiniti per IPTC
+* ASSETS-29404: rapporto Condivisioni collegamenti che raggiungono il limite di query
+* ASSETS-29431: rimuovere i vecchi flag di funzione
+* ASSETS-29443: Unified Shell Hero rimane visibile e cliccabile quando la modalità di intestazione della shell Granite diventa &quot;selection&quot; (selezione)
+* ASSETS-29476: la chiamata Api scene7DAMService.getS7FileReference(asset) non restituisce il valore previsto.
+* ASSETS-29515: Assets/Nodi con &quot;jcr:lastModifiedBy&quot;: &quot;workflow-process-service&quot; mostra &quot;utente esterno&quot; nella vista a elenco
+* ASSETS-29579: gli utenti non amministratori non possono creare il set di immagini
+* ASSETS-29631: Utilizzare dam:roles per una consegna/ricerca sicura
+* ASSETS-29689: dc:roles (e la nuova proprietà dam:roles) deve essere filtrata dal lato AEM
+* ASSETS-29738: la limitazione del caricamento delle risorse non riesce con NullPointerException
+* ASSETS-29779: le risorse piccole non possono essere elaborate in formato Web perché non si trovano nell’archiviazione BLOB
+* ASSETS-29892: l’esportazione dei metadati non riesce per una cartella con un numero elevato di risorse
+* ASSETS-29996: &quot;Utente esterno&quot; come modificatore quando si caricano le risorse in modo intermittente solo sull’istanza PROD
+* ASSETS-30167: HTML per adobe_dam:le restrizioni si interrompono dopo il caricamento di una risorsa
+* ASSETS-30276: Share Link UI: impossibile condividere da assetdetails
+* ASSETS-30434: l’evento di elaborazione delle risorse completato non è stato inviato alla pipeline
+* ASSETS-30519: Aggiungere RAPI a REDMetricsServletFilter
+* CQ-4354413: QueryBuilder: le query con parentesi quadre non vengono convertite correttamente in xpath
+* CQ-4354834: impossibile aggiungere commenti nell’attività casella in entrata
+* CQ-4354836: impossibile avviare il flusso di lavoro o creare l’attività dalla console Progetti
+* CQ-4354867: il riferimento a ToggleCondition fa riferimento a un campo inesistente in InstanceActionServlet
+* CQ-4354895: Kit di traduzione AEM: 12 ottobre
+* GRANITE-45560: Rappresentazione dello schema comune nella busta Evento
+* GRANITE-47267: Aggiornamento ad Apache Felix Http Jetty 4.2.18
+* GRANITE-47599: importazioni di contenuti non riuscite dall’aggiornamento 13323 (JCRVLT-721)
+* GRANITE-47873: Aggiornamento ad Apache Felix Webconsole 4.9.6
 
-### Problemi noti {#known-issues-13804}
+### Problemi noti {#known-issues-14029}
 
 * CQ-4354836: impossibile avviare il flusso di lavoro o creare l’attività dalla console Progetti.
 * CQ-4354834 : Gli utenti non possono aggiungere commenti in un’attività casella in entrata.
 
-### Tecnologie incorporate {#embedded-tech-13804}
+### Tecnologie incorporate {#embedded-tech-14029}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
