@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: aa9629c3e48ca0bf4654351462a94777af9ed651
+source-git-commit: 6e82bbcc1b83fa9216831f6f746665507a46eec7
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 22%
+source-wordcount: '585'
+ht-degree: 23%
 
 ---
 
@@ -71,8 +71,7 @@ L’attivazione delle funzioni 2023.11.0 fornirà il set completo di funzioni pe
 
 ### Problemi noti {#known-issues-14029}
 
-* CQ-4354836: impossibile avviare il flusso di lavoro o creare l’attività dalla console Progetti.
-* CQ-4354834 : Gli utenti non possono aggiungere commenti in un’attività casella in entrata.
+Nessuno.
 
 ### Tecnologie incorporate {#embedded-tech-14029}
 
