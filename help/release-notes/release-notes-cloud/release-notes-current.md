@@ -3,10 +3,10 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+source-git-commit: 6e834244f3de7e615df12b137f2ae90a11e64ad0
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 18%
+source-wordcount: '951'
+ht-degree: 19%
 
 ---
 
@@ -26,7 +26,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2023.9.0) è il 28 settembre 2023. La prossima versione (2023.10.0) è prevista per il 26 ottobre 2023.
+La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2023.10.0) è il 26 ottobre 2023. La prossima versione (2023.11.0) è prevista per il 30 novembre 2023.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -34,33 +34,29 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 ## Video sulla versione {#release-video}
 
-Dai un’occhiata al video Panoramica sulla versione di settembre 2023 per un riepilogo delle funzioni aggiunte alla versione 2023.9.0:
+Dai un’occhiata al video di panoramica sulla versione di ottobre 2023 per un riepilogo delle funzioni aggiunte alla versione 2023.10.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
-
-## Servizi di consegna Edge {#edge-delivery}
-
-Edge Delivery è una nuova serie di servizi componibili incentrati sulla massimizzazione dell’impatto dei contenuti per promuovere risultati aziendali misurabili al momento dell’interazione con il cliente.
-
-Per ulteriori informazioni sui Edge Delivery Services, consulta l’articolo [qui](/help/edge/overview.md).
+>[!VIDEO](https://video.tv.adobe.com/v/3425186/?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### Nuove funzioni {#assets-features}
+
+**Componente aggiuntivo AEM Assets per Adobe Express**: Experience Manager Assets ora fornisce un’ [componente aggiuntivo per Adobe Express](/help/assets/addon-adobe-express.md). Il componente aggiuntivo consente di accedere direttamente alle risorse memorizzate in Experience Manager Assets dall’interfaccia utente di Adobi Express. Puoi inserire il contenuto gestito in AEM Assets nell’area di lavoro di Express e quindi salvare il contenuto nuovo o modificato in un archivio AEM Assets. Il componente aggiuntivo offre i seguenti vantaggi chiave:
+
+* Maggiore riutilizzo dei contenuti grazie alla modifica e al salvataggio di nuove risorse in AEM
+
+* Riduzione del tempo e dell&#39;impegno necessari per creare nuove risorse o nuove versioni di risorse esistenti
+
+  ![Includi risorse dal componente aggiuntivo Risorse](/help/assets/assets/aem-assets-add-on-include-assets.png)
+
 ### Nuove funzioni nella Vista risorse {#assets-view-features}
 
-**Assegnare il modulo metadati a una cartella**
+* **Importa risorse in blocco dall&#39;origine dati di OneDrive**: gli amministratori possono ora: [importa un numero elevato di risorse da OneDrive ad AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). L&#39;elenco aggiornato delle origini dati supportate per l&#39;importazione in blocco include Azure, AWS, Google Cloud, Dropbox e OneDrive.
 
-Ora puoi assegnare il modulo metadati a una cartella specifica all’interno della distribuzione. Tutte le risorse nella cartella, comprese le risorse nelle sottocartelle, quindi visualizzano le proprietà definite nel modulo metadati assegnato.
+  ![assegnare il modulo metadati a una cartella](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-![assegnare il modulo metadati a una cartella](/help/release-notes/assets/assign-to-folder.png)
-
-### Nuove funzioni nella visualizzazione Amministratore {#admin-view-features}
-
-* **Integrare AEM Assets as a Cloud Service con l’authoring basato su documenti per i Edge Delivery Services**: integra AEM Assets con l’authoring basato su documenti per i Edge Delivery Services per consentire agli autori di siti web di [utilizzare le immagini disponibili negli archivi di AEM Assets durante la creazione di documenti nei documenti di Microsoft Word o Google](/help/edge/using.md#integrate-assets-edge).
-
-* **Estrai archivi ZIP**: possibilità di selezionare archivi ZIP gestiti in Experience Manager e [estrazione diretta dei file in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) senza scaricarli.
-
-  ![Fissa elementi per gruppi](/help/release-notes/assets/extract-archive.png)
+* **Supporto di diritti per più organizzazioni per le librerie**: Experience Manager Assets ora consente di configurare l’accesso alle librerie Creative Cloud in un’organizzazione IMS diversa. Consente di accedere più facilmente ai flussi di lavoro più recenti tra Creative Cloud e Experience Manager, riducendo i tempi e gli sforzi dei creativi.
 
 ### Funzioni pre-release disponibili in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
@@ -72,30 +68,17 @@ Ora puoi assegnare il modulo metadati a una cartella specifica all’interno del
 
 ### Nuove funzioni in [!DNL Experience Manager Forms] {#forms-features}
 
-* [**Supporto aziendale Google reCAPTCHA**](/help/forms/captcha-adaptive-forms-core-components.md): utilizza Google reCAPTCHA Enterprise in un modulo adattivo per fornire una protezione avanzata contro le attività fraudolente e lo spam, fornendo un’esperienza utente più sicura. Grazie all’analisi avanzata dei rischi e all’integrazione perfetta, gli utenti autentici possono inviare facilmente i moduli mentre i bot vengono bloccati in modo efficace.
+* **Proprietà personalizzate per Adaptive Forms**: è possibile associare attributi personalizzati (coppie chiave-valore) a un modello di modulo o a un componente moduli adattivi per consentire agli sviluppatori di moduli di fornire comportamenti di moduli dinamici che si adattano in base ai valori di tali attributi personalizzati. Ad esempio, gli sviluppatori possono creare diverse rappresentazioni di un componente Forms headless su piattaforme mobili, desktop o web, in base ai valori degli attributi personalizzati, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
-* [**Adobe Analytics con Experience Cloud Setup Automation per Forms**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): ora puoi abilitare Adobe Analytics con Experience Cloud Setup Automation con un paio di pulsanti. Consente di collegare AEM Forms as a Cloud Service con i tag Experienci Platform e Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati.
+* **Temi e modelli**: avvia il processo di creazione dei moduli con nuovi temi e modelli, personalizzati per abilitare professionisti esperti e nuovi autori di moduli. Creati in modo semplice utilizzando i componenti core di Forms adattivi, questi temi e modelli meticolosamente curati consentono di iniziare a creare moduli rapidamente per i casi d’uso comuni.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
+  ![Modelli pronti all’uso](/help/forms/assets/form-templates-ootb.png)
 
-* [**Modello di rapporto Adobe Analytics per Adaptive Forms**](/help/forms/view-understand-aem-forms-analytics-reports.md): Forms as a Cloud Service ora fornisce un rapporto Adobe Analytics OOTB. Consente di comprendere facilmente le prestazioni dei moduli. Le metriche a livello di modulo forniscono informazioni approfondite sulle prestazioni del modulo per più indicatori di prestazioni chiave (KPI, Key Performance Indicator), come rappresentazioni, visitatori, invii e tempo medio di riempimento. Monitorando il comportamento degli utenti e i feedback ricevuti, è possibile identificare le aree del modulo che causano confusione e guidare i miglioramenti alla progettazione e alle funzionalità del modulo.
+### Funzioni pre-release disponibili in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
-  ![Report Adobe Analytics sul coinvolgimento degli utenti dei moduli adattivi](/help/forms/assets/forms-analytics-report.png)
+* **Invia Forms a Microsoft SharePoint List**: AEM Forms fornisce un’integrazione OOTB per inviare i dati dei moduli direttamente a SharePoint List, consentendoti di sfruttare le funzionalità di SharePoint Lists.
 
-* **[Frammento di modulo in Forms adattivo basato su componenti core](/help/forms/adaptive-form-fragments-core-components.md)**: puoi dire addio alla duplicazione, ottimizzare l’inventario digitale e migliorare la collaborazione migliorando l’esperienza di creazione dei moduli con i frammenti di modulo. Questi componenti riutilizzabili si integrano perfettamente in più moduli, semplificando la creazione di moduli coerenti e dall’aspetto professionale. I frammenti di modulo garantiscono riutilizzabilità, standardizzazione e coerenza del brand attraverso la funzionalità &quot;cambia una volta e riflette ovunque&quot;. Aumenta la manutenibilità e l’efficienza, poiché gli aggiornamenti apportati in un’unica posizione vengono propagati automaticamente in tutti i moduli che utilizzano questi frammenti.
-
-* **[Passaggio del flusso di lavoro Adobe Sign migliorato](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: il passaggio del flusso di lavoro di Adobe Sign è stato migliorato per includere quanto segue:
-   * **Autenticazione basata su documento ufficiale per Adobe Sign**: l’autenticazione basata su documento ufficiale di Adobe Acrobat Sign offre un ulteriore livello di verifica, consentendo agli utenti di autenticare la propria identità utilizzando gli ID governativi (patente di guida, carta d’identità, passaporto). Sfruttando i documenti di identificazione attendibili, questo miglioramento aggiunge un ulteriore livello di affidabilità al processo di firma, rendendolo ideale per scenari che richiedono maggiore sicurezza, conformità e convalida degli utenti.
-
-   * **Audit Trail per documenti Adobe Sign**: utilizza la funzione Audit Trail per ottenere informazioni dettagliate sul ciclo di vita dei documenti Adobe Sign. Con Audit Trail è ora possibile mantenere un registro completo di tutte le azioni e interazioni relative ai documenti. Questo include dettagli quali chi ha visualizzato, modificato o firmato il documento, insieme ai timestamp di ogni evento. Questo miglioramento è fondamentale per mantenere la conformità, risolvere le controversie e garantire l’integrità degli accordi digitali.
-
-   * **Nuovi ruoli per i destinatari del contratto oltre al solo firmatario**: Adobe Acrobat Sign può espandere i ruoli dei destinatari del contratto oltre al solo firmatario, per soddisfare meglio i requisiti del flusso di lavoro. Quando questa opzione è abilitata, ogni destinatario di un contratto ha il proprio ruolo configurabile singolarmente, con Firmatario come impostazione predefinita.
-
-* **Supporto del conteggio delle pagine nelle API di comunicazione**: ora, oltre a recuperare il documento tramite le API di comunicazione, puoi ricevere anche le preziose informazioni sul numero di pagine contenute all’interno del documento.
-
-* **[Gestione degli errori con gestori degli errori personalizzati nell’editor di regole](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: ora puoi richiamare una funzione personalizzata in risposta a un errore restituito da un servizio esterno e fornire una risposta personalizzata agli utenti finali. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel back-end per codici di errore specifici o informare il cliente che il servizio non è disponibile.
-
-* **[Versione a 64 bit di AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: la versione a 64 bit di AEM Forms Designer offre prestazioni, scalabilità e gestione della memoria migliorate per migliorare l’esperienza di creazione dei moduli. Grazie all&#39;architettura a 64 bit, è possibile gestire con facilità progetti ancora più grandi e complessi, garantendo flussi di lavoro di progettazione ottimizzati ed efficienza. Migliora le funzionalità di progettazione dei moduli e abbraccia il futuro di AEM Forms Designer con questa versione all’avanguardia.
+  >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 ### Programma di adozione anticipata {#forms-early-adopter}
 
@@ -103,30 +86,17 @@ Ora puoi assegnare il modulo metadati a una cartella specifica all’interno del
 
   Puoi scrivere a `aem-forms-early-adopter-program@adobe.com` dal tuo id e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità.
 
-* **[Forms adattivo headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=it)**: utilizza Forms adattivo headless per consentire agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e interagire tramite API, anziché tramite un’interfaccia utente grafica tradizionale. I moduli adattivi headless consentono di:
-
-   * creare moduli multi-canale di alta qualità nel linguaggio di programmazione desiderato
-   * integrare in modo nativo i moduli nelle app desktop e per dispositivi mobili, nei siti web e nelle applicazioni chat
-   * riutilizzare i componenti proprietari dell’interfaccia utente con le applicazioni di Forms
-   * sfruttare la potenza di Adobe Experience Manager Forms
-
-  È possibile inviare un’e-mail a `aem-forms-headless@adobe.com` dal proprio ID e-mail ufficiale per aderire al programma per i primi utilizzatori.
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Nuovo comportamento di caching CDN per i parametri URL relativi alla campagna {#cache-url-params}
+### Regole filtro del traffico, incluso WAF {#traffic-filter-rules-waf}
 
-Per i nuovi ambienti, la rete CDN rimuoverà i parametri di query correlati al marketing per impostazione predefinita, al fine di aumentare le prestazioni della campagna di marketing e i rapporti di hit della cache. Gli ambienti esistenti non subiscono modifiche. [Ulteriori informazioni.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+[Filtra il traffico sulla rete CDN gestita dell’Adobe](/help/security/traffic-filter-rules-including-waf.md) dichiarando le regole che corrispondono al traffico del sito web in base alle proprietà, inclusi URL, indirizzo IP e agente utente, oppure impostando limiti di velocità di traffico personalizzati per evitare attacchi DoS. I clienti possono inoltre concedere in licenza un set di regole WAF (Web Application Firewall) avanzate per una protezione aggiuntiva contro le minacce sofisticate dei siti Web.
 
-### Regole filtro traffico (incluse le regole WAF) programma per l’adozione anticipata {#waf-early-adopter}
+Ti invitiamo a familiarizzare con le regole del filtro del traffico [prova di un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! Illustra i passaggi necessari per configurare una nuova pipeline di configurazione di Cloud Manager, dichiarare le regole in un file di configurazione e analizzare i registri CDN per rilevare eventuale traffico dannoso.
 
-Filtra il traffico sulla rete CDN in base a:
-* intestazioni e proprietà della richiesta (ad esempio, indirizzo IP)
-* modelli di traffico noti per essere associati a traffico dannoso
+Le regole del filtro del traffico sono ora disponibili sugli ambienti di sviluppo, con un rollout graduale negli ambienti di staging e produzione a novembre. Puoi richiedere l’accesso anticipato tramite e-mail su stage e prod **aemcs-waf-adopter@adobe.com**.
 
-Ti interessa provare questa funzione e condividere feedback? Invia un messaggio e-mail a **aemcs-waf-adopter@adobe.com** dal tuo ID e-mail ufficiale per ulteriori informazioni sul programma early adopter. Lo spazio è limitato.
-
-Ulteriori informazioni sulla funzione nell’articolo [qui](/help/security/traffic-filter-rules-including-waf.md).
+Le regole avanzate del filtro del traffico WAF possono essere concesse in licenza entro la fine dell&#39;anno tramite le offerte di sicurezza avanzata o protezione WAF-DDoS.
 
 ## Cloud Manager {#cloud-manager}
 

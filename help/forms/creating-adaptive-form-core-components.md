@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '2326'
 ht-degree: 57%
@@ -41,7 +41,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 
    * Il modello `blank` è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
    * È possibile installare il pacchetto di riferimento tramite Gestione pacchetti per aggiungere il `blank` modello al programma AEM Forms as a Cloud Service.
-   * È inoltre possibile [creare un nuovo modello di modulo adattivo (Componenti core)](template-editor.md) da zero.
+   * È inoltre possibile [creare un nuovo modello di modulo adattivo (Componenti core)](/help/forms/template-editor-core-components.md) da zero.
    * Puoi anche distribuire [modelli di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) nell&#39;ambiente. che consentono di iniziare a creare rapidamente i moduli.
 
 * **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti.  Il modello `Canvas` è incluso in ogni nuovo programma AEM Forms as a Cloud Service. Puoi anche distribuire [temi di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) nell&#39;ambiente. In questo modo è possibile iniziare a definire lo stile dei moduli e fornire una struttura di base per creare o personalizzare un tema in base alle proprie esigenze aziendali.

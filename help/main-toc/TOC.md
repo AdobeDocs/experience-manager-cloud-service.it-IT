@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c9ad4b6f2ae5107569c556ca11c75868c9e4be63
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
-source-wordcount: '4335'
+source-wordcount: '4344'
 ht-degree: 93%
 
 ---
@@ -592,6 +592,7 @@ ht-degree: 93%
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
             + [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments-core-components.md)
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
+            + [Creare un modello di modulo adattivo basato su componenti core](/help/forms/template-editor-core-components.md)
             + [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-core-components.md)
             + [Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurazione della pagina di reindirizzamento o del messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)

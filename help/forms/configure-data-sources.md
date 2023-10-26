@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2202'
 ht-degree: 1%
 
 ---
@@ -252,13 +252,11 @@ Per configurare il servizio Web basato su SOAP in [!DNL Experience Manager] as a
 
 Imposta il `importAllowlistPattern` proprietà del **[!UICONTROL Modello dati modulo SOAP Web Services Importa Inserisco nell&#39;elenco Consentiti]** per specificare l&#39;espressione regolare. Il seguente file JSON mostra un esempio:
 
-
 ```json
 {
   "importAllowlistPattern": ".*"
 }
 ```
-
 
 Per impostare i valori di una configurazione: [Generare configurazioni OSGi utilizzando l’SDK per AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), e [distribuire la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) all’istanza di Cloud Service.
 
@@ -289,28 +287,31 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 
 1. Tocca **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio OData.
 
-## Configura elenco SharePoint Microsoft® {#config-sharepoint-list}
+<!--
+## Configure Microsoft® SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-Per salvare i dati in un modulo tabulare, utilizzare Microsoft® SharePoint List. Per configurare un elenco SharePoint di Microsoft in [!DNL Experience Manager] as a Cloud Service, effettuare le seguenti operazioni:
+To save data in a tabular form use, Microsoft® SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
-1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft®® SharePoint]**.
-1. Seleziona un **Contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
-1. Clic **[!UICONTROL Crea]** > **[!UICONTROL Elenco SharePoint]** dall’elenco a discesa. Viene visualizzata la procedura guidata di configurazione di SharePoint.
-1. Specifica la **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l’ID client, il segreto client e l’ID tenant per l’URL OAuth, consulta [Documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * È possibile recuperare `Client ID` e `Client Secret` dell’app dal portale Microsoft® Azure.
-   * Nel portale Microsoft® Azure, aggiungi l’URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l’URL dell’istanza di authoring.
-   * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` nel **Grafico Microsoft®** per fornire autorizzazioni di lettura/scrittura. Aggiungi `AllSites.Manage` autorizzazione in **Sharepoint** per interagire in remoto con i dati di SharePoint.
-   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell’app dal portale Microsoft® Azure.
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
-     >[!NOTE]
-     >
-     Il **segreto client** Il campo è obbligatorio o facoltativo dipende dalla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+      >[!NOTE]
+      >
+      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
 
-1. Clic **[!UICONTROL Connetti]**. In caso di connessione riuscita, il `Connection Successful` viene visualizzato il messaggio.
-1. Seleziona **[!UICONTROL Sito SharePoint]** e **[!UICONTROL Elenco SharePoint]** dall’elenco a discesa.
-1. Tocca **[!UICONTROL Crea]** per creare la configurazione cloud per Microsoft® SharePointList.
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
+1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
+1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+
+-->
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 

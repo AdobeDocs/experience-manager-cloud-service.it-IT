@@ -2,9 +2,9 @@
 title: Note sulla versione 2023.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+source-git-commit: 75a26cf6f486ce951f1f81b5125026fac9458ab4
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '937'
 ht-degree: 49%
 
 ---
@@ -79,8 +79,6 @@ Per impostazione predefinita, Assets Essentials ora ordina i risultati della ric
 ### Nuove funzioni disponibili in [!DNL Forms] {#new-features-available-in-forms-channel}
 
 * [**Temi predefiniti**](/help/forms/using-themes-in-core-components.md) **e modelli**: avvia il processo di creazione dei moduli con i nostri temi e modelli OOTB pronti all’uso, personalizzati per consentire a professionisti esperti e nuovi autori di moduli di acquisire dimestichezza. Creati in modo semplice utilizzando i componenti core di Forms adattivi, questi temi e modelli meticolosamente curati consentono di iniziare a creare moduli rapidamente per i casi d’uso comuni.
-
-  ![Modelli pronti all’uso](/help/forms/assets/form-templates-ootb.png)
 
 * **[Componenti React per Forms headless](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: ora puoi visualizzare in anteprima e personalizzare le rappresentazioni headless di moduli adattivi con i componenti React forniti come predefiniti. Questi componenti sfruttano le classi BEM dei componenti core di Forms adattivi per la creazione di stili, semplificando la personalizzazione del loro aspetto in base a requisiti specifici.
 

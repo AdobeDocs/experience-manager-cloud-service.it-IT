@@ -2,9 +2,9 @@
 title: Come si configura un’azione di invio per un modulo adattivo?
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: ddc7ddbcd1761b4320e1c7a30a015d844ef3e0c0
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
-source-wordcount: '3403'
+source-wordcount: '3429'
 ht-degree: 3%
 
 ---
@@ -172,14 +172,22 @@ Prima di utilizzare **[!UICONTROL Richiama un flusso di lavoro AEM]** Azione di 
 
 ## Invia a SharePoint {#submit-to-sharedrive}
 
-Il **[!UICONTROL Invia a SharePoint]** L’azione di invio collega un modulo adattivo a un archivio Microsoft® SharePoint. È possibile inviare il file di dati del modulo, gli allegati o il documento di record all&#39;archivio di Microsoft® Sharepoint connesso. Per utilizzare **[!UICONTROL Invia a SharePoint]** Azione di invio in un modulo adattivo:
+Il **[!UICONTROL Invia a SharePoint]** L’azione di invio collega un modulo adattivo a un archivio Microsoft® SharePoint. È possibile inviare il file di dati del modulo, gli allegati o il documento di record all&#39;archivio di Microsoft® Sharepoint connesso.
 
-1. [Creare una configurazione SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): collega AEM Forms all’archiviazione Microsoft® Sharepoint.
+<!-- Using Submit to SharePoint, you can:
+* [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+
+### Collegare un modulo adattivo alla raccolta documenti di SharePoint {#connect-af-sharepoint-doc-library}
+
+Per utilizzare **[!UICONTROL Invia a raccolta documenti di SharePoint]** Azione di invio in un modulo adattivo:
+
+1. [Creare una configurazione di SharePoint Document Library](#create-a-sharepoint-configuration-create-sharepoint-configuration): collega AEM Forms all’archiviazione Microsoft® Sharepoint.
 2. [Utilizzare l’azione Invia a SharePoint in un modulo adattivo](#use-sharepoint-configuartion-in-af): collega il modulo adattivo a Microsoft® SharePoint configurato.
 
-### Creare una configurazione SharePoint {#create-sharepoint-configuration}
+#### Creare una configurazione di SharePoint Document Library {#create-sharepoint-configuration}
 
-Per collegare AEM Forms al tuo Microsoft® Sharepoint Storage:
+Per connettere AEM Forms all&#39;archiviazione della raccolta documenti di Microsoft® Sharepoint:
 
 1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Dopo aver selezionato **[!UICONTROL Microsoft® SharePoint]**, viene reindirizzato a **[!UICONTROL Browser SharePoint]**.
@@ -208,15 +216,15 @@ Per collegare AEM Forms al tuo Microsoft® Sharepoint Storage:
 
 Ora puoi utilizzare questa configurazione di SharePoint Sites per l’azione di invio in un modulo adattivo.
 
-### Utilizzare la configurazione SharePoint in un modulo adattivo {#use-sharepoint-configuartion-in-af}
+#### Utilizzare la configurazione della raccolta documenti di SharePoint in un modulo adattivo {#use-sharepoint-configuartion-in-af}
 
-Puoi utilizzare la configurazione SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in una cartella SharePoint. Per utilizzare una configurazione di archiviazione SharePoint in un modulo adattivo, effettua le seguenti operazioni:
+È possibile utilizzare la configurazione della raccolta documenti di SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in una cartella di SharePoint. Per utilizzare una configurazione di archiviazione SharePoint Document Library in un modulo adattivo, effettua le seguenti operazioni:
 
 1. Creare un [Modulo adattivo](/help/forms/creating-adaptive-form.md).
 
    >[!NOTE]
    >
-   > * Seleziona lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stato creato lo storage SharePoint.
+   > * Seleziona lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stata creata l’archiviazione della raccolta documenti di SharePoint.
    > * In caso negativo [!UICONTROL Contenitore configurazione] è selezionato, quindi il [!UICONTROL Configurazione archiviazione] Le cartelle vengono visualizzate nella finestra delle proprietà dell&#39;azione di invio.
 
 1. Seleziona **Azione di invio** as **[!UICONTROL Invia a SharePoint]**.
@@ -224,16 +232,74 @@ Puoi utilizzare la configurazione SharePoint creata in un modulo adattivo per sa
 1. Seleziona la **[!UICONTROL Configurazione archiviazione]**, dove desideri salvare i dati.
 1. Clic **[!UICONTROL Salva]** per salvare le impostazioni di invio.
 
-Quando si invia il modulo, i dati vengono salvati nell&#39;archivio di Microsoft® Sharepoint specificato.
+Quando si invia il modulo, i dati vengono salvati nell&#39;archivio della raccolta documenti di Microsoft® Sharepoint specificato.
 La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+
+<!--
+### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
+
+To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
+
+1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft® Sharepoint List Storage.
+1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
+
+#### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
+
+To connect AEM Forms to your Microsoft&reg; Sharepoint List:
+
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
+
+      >[!NOTE]
+      >
+      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
+1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
+1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+
+    >[!NOTE]
+    >
+    > In Microsoft® SharePoint List, the following column types are not supported:
+    > * image column
+    > * metadata column
+    > * person column
+    > * external data column
+
+#### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
+
+You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+
+1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
+1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
+1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+
+When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
+
+    >[!NOTE]
+    >
+    > In Microsoft® SharePoint List, the following column types are not supported:
+    > * image column
+    > * metadata column
+    > * person column
+    > * external data column
+    
+-->
 
 ## Invia a OneDrive {#submit-to-onedrive}
 
-Il **[!UICONTROL Invia a OneDrive]** L&#39;azione di invio collega un modulo adattivo a Microsoft® OneDrive. È possibile inviare i dati del modulo, i file, gli allegati o il documento di record all&#39;archivio Microsoft® OneDrive collegato.
-
->[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
-
-Per utilizzare [!UICONTROL Invia a OneDrive] Azione di invio in un modulo adattivo:
+Il **[!UICONTROL Invia a OneDrive]** L&#39;azione di invio collega un modulo adattivo a Microsoft® OneDrive. È possibile inviare i dati del modulo, i file, gli allegati o il documento di record all&#39;archivio Microsoft® OneDrive collegato. Per utilizzare [!UICONTROL Invia a OneDrive] Azione di invio in un modulo adattivo:
 
 1. [Crea una configurazione OneDrive](#create-a-onedrive-configuration-create-onedrive-configuration): collega AEM Forms allo storage Microsoft® OneDrive.
 2. [Utilizzare l&#39;azione Invia a OneDrive in un modulo adattivo](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): collega il modulo adattivo a Microsoft® OneDrive configurato.

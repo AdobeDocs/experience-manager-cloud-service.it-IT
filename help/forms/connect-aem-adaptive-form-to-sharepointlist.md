@@ -3,7 +3,9 @@ title: Come si collega il modulo adattivo AEM all’elenco di Microsoft® ShareP
 description: Collegare un modulo adattivo all’elenco di Microsoft® SharePoint. Scopri come configurare l’elenco Microsoft® SharePoint e creare un modello di dati del modulo utilizzando la configurazione. Scoprirai inoltre come integrare FDM con il modulo adattivo.
 role: User, Developer
 keywords: Collega Modulo adattivo AEM a Elenco Microsoft SharePoint, connetti Modulo adattivo a Elenco Microsoft SharePoint, integra Modulo adattivo AEM a Elenco Microsoft SharePoint, integra Modulo adattivo a Elenco Microsoft SharePoint, invia dati da un Modulo adattivo a Elenco SharePoint, invia flusso di lavoro di a Elenco AEM SharePoint.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+hide: true
+hidefromToC: true
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 3%
