@@ -2,9 +2,9 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
+source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3453'
 ht-degree: 1%
 
 ---
@@ -227,7 +227,7 @@ when:
 
 ### Struttura azione {#action-structure}
 
-Specificato da `action` può essere una stringa che specifica il tipo di azione (consenti, blocco, registro) e che assume i valori predefiniti per tutte le altre opzioni oppure un oggetto in cui il tipo di regola è definito tramite `type` campo obbligatorio insieme ad altre opzioni applicabili a quel tipo.
+Un `action` può essere una stringa che specifica l&#39;azione (allow, block o log) oppure un oggetto composto sia dal tipo di azione (allow, block o log) che da opzioni quali wafFlags e/o status.
 
 **Tipi di azioni**
 
@@ -278,6 +278,8 @@ Il `wafFlags` La proprietà, che può essere utilizzata nelle regole del filtro 
 * I file di configurazione non devono contenere segreti, in quanto potrebbero essere letti da chiunque abbia accesso all’archivio Git.
 
 * Gli Elenchi consentiti IP definiti in Cloud Manager hanno la precedenza sulle regole dei filtri di traffico.
+
+* Le corrispondenze delle regole WAF vengono visualizzate solo nei registri CDN per mancati riscontri e passate CDN, non per hit.
 
 ## Esempi di regole {#examples}
 
@@ -491,7 +493,7 @@ Le regole si comportano nel modo seguente:
 * Se la WAF è concessa in licenza e abilitata, `waf` Questo attributo elenca tutti i flag WAF (ad esempio, SQLI) rilevati, indipendentemente dal fatto che i flag WAF siano elencati o meno in una delle regole. In questo modo è possibile ottenere informazioni sulle nuove regole da dichiarare.
 * Se nessuna regola dichiarata dal cliente corrisponde e nessuna regola waf corrisponde, il `rules` la proprietà sarà vuota.
 
-In generale, le regole corrispondenti vengono visualizzate nella voce di registro per tutte le richieste alla rete CDN, indipendentemente dal fatto che si tratti di un hit, di un superamento o di un mancato recapito della rete CDN. Tuttavia, le regole WAF vengono visualizzate nella voce di registro solo per le richieste alla rete CDN considerate mancanti o passate alla rete CDN, ma non per gli hit della rete CDN.
+Come indicato in precedenza, le corrispondenze delle regole WAF vengono visualizzate solo nei registri CDN per mancati e passaggi CDN, non per hit.
 
 L’esempio seguente mostra un esempio `cdn.yaml` e due voci di registro CDN:
 
