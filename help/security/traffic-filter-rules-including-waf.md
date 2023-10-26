@@ -2,9 +2,9 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3480'
 ht-degree: 1%
 
 ---
@@ -118,6 +118,10 @@ Il `kind` il parametro deve essere impostato su `CDN` e la versione deve essere 
 
 Per gli RDE verrà utilizzata la riga di comando, ma al momento RDE non è supportato.
 
+**Note**
+
+* È possibile utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad es. `yq cdn.yaml`).
+
 ## Sintassi delle regole del filtro del traffico {#rules-syntax}
 
 Puoi configurare `traffic filter rules` affinché corrisponda a pattern quali IP, agente utente, intestazioni di richiesta, nome host, geo e url.
@@ -152,7 +156,7 @@ Il formato delle regole del filtro del traffico nel `cdn.yaml` Il file è descri
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | Nome regola (64 caratteri, può contenere solo caratteri alfanumerici e - ) |
 | quando | X | X | `Condition` | - | La struttura di base è:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[Consulta Sintassi della struttura delle condizioni](#condition-structure) di seguito, che descrive i getter, i predicati e come combinare più condizioni. |
-| azione | X | X | `Action` | log | log, allow, block, log o action object Il valore predefinito è log |
+| azione | X | X | `Action` | log | oggetto log, allow, block o Action. Il valore predefinito è log |
 | rateLimit | X |   | `RateLimit` | non definito | Configurazione del limite di frequenza. La limitazione della frequenza è disabilitata se non definita.<br><br>Di seguito è riportata una sezione separata che descrive la sintassi rateLimit, con alcuni esempi. |
 
 ### Struttura della condizione {#condition-structure}
@@ -188,11 +192,11 @@ Un gruppo di condizioni è composto da più condizioni semplici e/o di gruppo.
 
 | **Proprietà** | **Tipo** | **Descrizione** |
 |---|---|---|
-| reqProperty | `string` | Proprietà richiesta.<br><br>Uno di: `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>La proprietà domain è una trasformazione in minuscolo dell’intestazione host della richiesta. È utile per i confronti tra stringhe, pertanto le corrispondenze non vengono perse a causa della distinzione tra maiuscole e minuscole.<br><br>Il `clientCountry` utilizza due codici di lettera visualizzati in [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) |
+| reqProperty | `string` | Proprietà richiesta.<br><br>Uno di:<br><ul><li>`path`: restituisce il percorso completo di un URL senza i parametri di query.</li><li>`queryString`: restituisce la parte di query di un URL</li><li>`method`: restituisce il metodo HTTP utilizzato nella richiesta.</li><li>`tier`: restituisce uno di `author`, `preview` o `publish`.</li><li>`domain`: restituisce la proprietà domain (come definito nella `Host` header) in minuscolo</li><li>`clientIp`: restituisce l’IP del client.</li><li>`clientCountry`: restituisce un codice di due lettere ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) che identificano il paese in cui si trova il cliente.</li></ul> |
 | reqHeader | `string` | Restituisce l’intestazione della richiesta con il nome specificato |
 | queryParam | `string` | Restituisce il parametro di query con il nome specificato |
 | reqCookie | `string` | Restituisce il cookie con il nome specificato |
-| postParam | `string` | Restituisce il parametro con il nome specificato dal corpo. Funziona solo quando il corpo è di tipo contenuto `application/x-www-form-urlencoded` |
+| postParam | `string` | Restituisce il parametro Post con il nome specificato dal corpo della richiesta. Funziona solo quando il corpo è di tipo contenuto `application/x-www-form-urlencoded` |
 
 **Predicato**
 
@@ -207,6 +211,19 @@ Un gruppo di condizioni è composto da più condizioni semplici e/o di gruppo.
 | **in** | `array[string]` | true se l’elenco fornito contiene un risultato getter |
 | **notIn** | `array[string]` | true se l’elenco fornito non contiene il risultato getter |
 | **esiste** | `boolean` | true se è impostata su true e la proprietà esiste o se è impostata su false e la proprietà non esiste |
+
+**Note**
+
+* La proprietà della richiesta `clientIp` può essere utilizzato solo con i seguenti predicati: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` può essere confrontato anche con intervalli IP quando si utilizza `in` e `notIn` predicati. L’esempio seguente implementa una condizione per valutare se un IP del client è compreso nell’intervallo IP 192.168.0.0/24 (quindi da 192.168.0.0 a 192.168.0.255):
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* Si consiglia di utilizzare [regex101](https://regex101.com/) e [File veloce](https://fiddle.fastly.dev/) quando si lavora con regex. Puoi anche saperne di più su come Fastly gestisce il regex in questo [articolo](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+
 
 ### Struttura azione {#action-structure}
 
@@ -259,6 +276,8 @@ Il `wafFlags` La proprietà, che può essere utilizzata nelle regole del filtro 
 * Se una regola viene rilevata e bloccata, la rete CDN risponde con un `406` codice restituito.
 
 * I file di configurazione non devono contenere segreti, in quanto potrebbero essere letti da chiunque abbia accesso all’archivio Git.
+
+* Gli Elenchi consentiti IP definiti in Cloud Manager hanno la precedenza sulle regole dei filtri di traffico.
 
 ## Esempi di regole {#examples}
 
@@ -396,9 +415,10 @@ I limiti di velocità vengono calcolati per POP CDN. Ad esempio, supponiamo che 
 | **Proprietà** | **Tipo** | **Predefiniti** | **SIGNIFICATO** |
 |---|---|---|---|
 | limit | numero intero da 10 a 10000 | obbligatorio | Frequenza richieste (per POP CDN) nelle richieste al secondo per le quali viene attivata la regola. |
-| finestra | numero intero: 1, 10 o 60 | 10 | Finestra di campionamento in secondi per la quale viene calcolata la frequenza di richiesta. |
+| finestra | numero intero: 1, 10 o 60 | 10 | Finestra di campionamento in secondi per la quale viene calcolata la frequenza di richiesta. La precisione dei contatori dipende dalle dimensioni della finestra (maggiore precisione della finestra). Ad esempio, ci si può aspettare una precisione del 50% per la finestra di 1 secondo e del 90% per la finestra di 60 secondi. |
 | penalità | numero intero compreso tra 60 e 3600 | 300 (5 minuti) | Un periodo in secondi per il quale le richieste corrispondenti vengono bloccate (arrotondato al minuto più vicino). |
 | groupBy | array[Recuperatore] | nessuno | il contatore del limitatore di velocità verrà aggregato da un set di proprietà di richiesta (ad esempio clientIp). |
+
 
 ### Esempi {#ratelimiting-examples}
 
