@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 5540b7aa03a384fe613abe9b32cfbf6da2268b64
+source-git-commit: 177021106fc67e67a8cd6645a6684185331dd6f4
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 4%
+source-wordcount: '1344'
+ht-degree: 5%
 
 ---
 
@@ -21,39 +21,11 @@ ht-degree: 4%
 
 [!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte con i membri dell’organizzazione e con entità esterne, inclusi partner e fornitori. Per condividere le risorse da, utilizza i seguenti metodi [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:
 
-* [Condividi come collegamento](#sharelink).
+* [Condividi come collegamento](#sharelink)
 * [Scaricare le risorse](/help/assets/download-assets-from-aem.md) e condividere separatamente.
 * Condividi con [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it).
 * Condividi con [[!DNL Adobe Asset Link]](https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html).
 * Condividi con [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
-
-## Prerequisiti {#prerequisites}
-
-È necessario disporre dei privilegi di amministratore per [configurare le impostazioni per la condivisione delle risorse come collegamento](#config-link-share-settings).
-
-## Configurare le impostazioni di condivisione dei collegamenti {#config-link-share-settings}
-
-[!DNL Experience Manager Assets] consente di configurare le impostazioni predefinite della condivisione di collegamenti.
-
-1. Fai clic su [!DNL Experience Manager] e quindi passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Configurazione risorse]** > **[!UICONTROL Condivisione collegamenti]**.
-1. Impostazioni iniziali:
-
-   * **Includi originali:**
-
-      * Seleziona `Select Include Originals` per selezionare `Include Originals` per impostazione predefinita, nella finestra di dialogo condivisione collegamento.
-      * Specificare il comportamento scegliendo l&#39;opzione appropriata per rendere `Include Originals` opzione modificabile, di sola lettura o nascosta.
-   * **Includi rappresentazioni:**
-      * Seleziona `Select Include Renditions` opzione per selezionare `Include Renditions` per impostazione predefinita, nella finestra di dialogo condivisione collegamento.
-      * Seleziona il comportamento scegliendo l’opzione appropriata per effettuare la `Include Renditions` opzione modificabile, di sola lettura o nascosta.
-
-1. Specifica il periodo di validità predefinito per il collegamento nel `Validity Period` campo in `Expiration date` sezione.
-
-1. **[!UICONTROL Condivisione collegamento]** nella barra delle azioni:
-   * Tutti gli utenti con `jcr:modifyAccessControl` Le autorizzazioni di possono visualizzare [!UICONTROL Condivisione collegamento] opzione. Per impostazione predefinita, è visibile a tutti gli amministratori. Il [!UICONTROL Condivisione collegamento] è visibile a tutti, per impostazione predefinita. È possibile configurare per visualizzare questa opzione solo per i gruppi definiti oppure negarla a gruppi specifici. Seleziona `Allow only for groups` per consentire a gruppi specifici di visualizzare `Share Link` opzione. Seleziona `Deny from groups` per negare `Share Link` da gruppi specifici. Dopo aver selezionato una di queste opzioni, specificate i nomi dei gruppi utilizzando `Select Groups` per aggiungere i nomi dei gruppi da consentire o negare.
-
-Per le impostazioni relative alla configurazione e-mail, visita [Documentazione del servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
-
-![Configura servizio e-mail](config-email-service.png)
 
 ## Condividere le risorse come collegamento {#sharelink}
 
@@ -70,12 +42,11 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 Esistono due modi per condividere le risorse utilizzando la funzionalità di condivisione dei collegamenti:
 
-1. Generare un collegamento condiviso, [copia e condividi il collegamento della risorsa](#copy-and-share-assets-link) con altri utenti.
-1. Generare un collegamento condiviso e [condividere il collegamento della risorsa tramite e-mail](#share-assets-link-through-email). Puoi modificare i valori predefiniti, ad esempio data e ora di scadenza, e consentire di scaricare le risorse originali e le relative rappresentazioni. Puoi inviare e-mail a più utenti aggiungendo i loro indirizzi e-mail.
+1. Generare un collegamento condiviso, [copia e condividi il collegamento della risorsa](#copy-and-share-assets-link) con altri utenti. La scadenza predefinita del collegamento è un giorno. Non è possibile modificare la data di scadenza quando si condivide il collegamento copiato con altri utenti.
 
-   ![Finestra di dialogo Condivisione collegamenti](assets/share-link.png)
+1. Generare un collegamento condiviso e [condividere il collegamento della risorsa tramite e-mail](#share-assets-link-through-email). In questo caso, puoi modificare i valori predefiniti, ad esempio data e ora di scadenza, e consentire il download delle risorse originali e delle relative rappresentazioni. Puoi inviare e-mail a più utenti aggiungendo i loro indirizzi e-mail.
 
-In entrambi i casi, puoi modificare i valori predefiniti, ad esempio data e ora di scadenza, e consentire il download delle risorse originali e delle relative rappresentazioni.
+   ![Finestra di dialogo Condivisione collegamenti](assets/link-sharing-dialog.png)
 
 ### Copiare e condividere il collegamento della risorsa{#copy-and-share-asset-link}
 
@@ -84,9 +55,6 @@ Per condividere le risorse come URL pubblico:
 1. Accedi a [!DNL Experience Manager Assets] e passa a **[!UICONTROL File]**.
 1. Seleziona le risorse o la cartella contenente le risorse. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]**.
 1. Il **[!UICONTROL Condivisione collegamenti]** viene visualizzata una finestra di dialogo che contiene un collegamento di risorsa generato automaticamente **[!UICONTROL Condividi collegamento]** campo.
-1. Imposta la data di scadenza del collegamento condiviso come richiesto.
-1. Sotto **[!UICONTROL Impostazioni collegamento]**, selezionare o deselezionare `Include Originals` o `Include Renditions` per includere o escludere uno dei due. È obbligatorio scegliere almeno l’opzione.
-1. I nomi delle risorse selezionate vengono visualizzati nella colonna di destra della [!DNL Share Link] .
 1. Copia il collegamento della risorsa e condividilo con gli utenti.
 
 ### Condividere il collegamento delle risorse tramite notifica e-mail {#share-assets-link-through-email}
@@ -96,7 +64,7 @@ Per condividere le risorse tramite e-mail:
 1. Seleziona le risorse o la cartella contenente le risorse. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]**.
 1. Il **[!UICONTROL Condivisione collegamenti]** viene visualizzata una finestra di dialogo che contiene un collegamento di risorsa generato automaticamente **[!UICONTROL Condividi collegamento]** campo.
 
-   * Nella casella dell’indirizzo e-mail digita l’indirizzo e-mail dell’utente con cui vuoi condividere il collegamento. Puoi condividere il collegamento con più utenti. Se l’utente è membro dell’organizzazione, seleziona il proprio indirizzo e-mail dai suggerimenti visualizzati nell’elenco a discesa. Nel campo di testo dell’indirizzo e-mail, digita l’indirizzo e-mail dell’utente con cui vuoi condividere il collegamento e fai clic su [!UICONTROL Invio]. Puoi condividere il collegamento con più utenti.
+   * Nella casella dell’indirizzo e-mail digita l’ID e-mail dell’utente con cui vuoi condividere il collegamento. Puoi condividere il collegamento con più utenti. Se l’utente è membro dell’organizzazione, seleziona il proprio ID e-mail dai suggerimenti visualizzati nell’elenco a discesa. Se l’utente è esterno, digita l’ID e-mail completo e premi **[!UICONTROL Invio]**; l’ID e-mail viene aggiunto all’elenco degli utenti.
 
    * In **[!UICONTROL Oggetto]** , digita un oggetto per specificare lo scopo delle risorse condivise.
    * In **[!UICONTROL Messaggio]** digitare un messaggio, se necessario.
@@ -121,7 +89,7 @@ Qualsiasi utente che abbia accesso al collegamento della risorsa condivisa può 
 
   ![Download coda](assets/queue-download.png)
 
-* Durante la preparazione del file di download, fare clic su **[!UICONTROL Casella in entrata download]** per visualizzare lo stato del download. Per i download di grandi dimensioni, fai clic su **[!UICONTROL Aggiorna]** per aggiornare lo stato.
+* Durante la preparazione del file di download, fare clic sul pulsante **[!UICONTROL Casella in entrata download]** per visualizzare lo stato del download. Per i download di grandi dimensioni, fai clic sul pulsante **[!UICONTROL Aggiorna]** per aggiornare lo stato.
 
   ![Casella in entrata download](assets/link-sharing-download-inbox.png)
 
@@ -234,13 +202,20 @@ Per generare l’URL per le risorse da condividere con gli utenti, utilizza la f
 >* `[aem_server]:[port]/linkexpired.html`
 
 <!--
+## Configure Day CQ mail service {#configmailservice}
+
+Before you can share assets as links, configure the email service.
+
+1. Click or tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
     * SMTP user: email server user name
     * SMTP password: email server password
+
+1. Click/tap **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
