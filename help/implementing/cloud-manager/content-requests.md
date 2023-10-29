@@ -1,13 +1,13 @@
 ---
 title: Informazioni sulle richieste di contenuto di Cloud Service
 description: Se hai acquistato licenze per richieste di contenuto da Adobe, scopri i tipi di richieste di contenuto che Adobe Experience Cloud as a Service misura e le varianze con gli strumenti di reporting di Analytics di un’organizzazione.
-source-git-commit: e34b21194e35b2f56dd1e7df2165c3fa5c0cb7da
+exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 12%
 
 ---
-
 
 # Richieste di contenuto Cloud Service
 
@@ -67,5 +67,3 @@ Vedi anche [Dashboard delle licenze](/help/implementing/cloud-manager/license-da
 | Escludi chiamate Commerce integration framework | Escluso | Si tratta di richieste effettuate all’AEM che vengono inoltrate alla Commerce integration framework: l’URL inizia con `/api/graphql`- per evitare il doppio conteggio, non sono fatturabili per il Cloud Service. |
 | Escludi `manifest.json` | Escluso | Manifest non è una chiamata API, è qui per fornire informazioni su come installare siti web sul desktop o sul telefono cellulare. L’Adobe non deve contare la richiesta JSON a `/etc.clientlibs/*/manifest.json` |
 | Escludi `favicon.ico` | Escluso | Anche se il contenuto restituito non deve essere HTML o JSON, si osserva che in alcuni scenari come i flussi di autenticazione SAML, le favicon possono essere restituite come HTML, pertanto sono esplicitamente escluse dal conteggio. |
-
-

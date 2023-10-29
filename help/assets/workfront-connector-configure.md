@@ -4,10 +4,10 @@ description: Configurare [!DNL Workfront for Experience Manager enhanced connect
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bb80414989aa5ceb624550d0ea41283c7d5da4c6
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
+source-wordcount: '1772'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ Gli abbonamenti agli eventi vengono utilizzati per notificare all’AEM gli even
 
 Per utilizzare queste funzioni, abilita sottoscrizioni eventi.
 
-* Modifica [!UICONTROL Strumenti Workfront] configurazione dei Cloud Services creata al passaggio 5 e selezionare [!UICONTROL Abbonamenti eventi] scheda.
+* Modifica [!UICONTROL Strumenti Workfront] configurazione dei Cloud Service creata al passaggio 5 e selezionare [!UICONTROL Abbonamenti eventi] scheda.
 * Seleziona la [!UICONTROL Integrazione personalizzata Workfront] creato nella sezione 6.
 * Clic [!UICONTROL Abilita sottoscrizioni eventi Workfront].
 
@@ -80,6 +80,7 @@ La mappatura dei metadati tra i progetti Workfront e le cartelle AEM è definita
 
 Per configurare le mappature, effettua le seguenti operazioni:
 
+1. Aggiungi `jcr:read` autorizzazioni a `/conf/global/settings/dam/adminui-extension/foldermetadataschema` per `wf-workfront-users` gruppo.
 1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati cartelle]**.
 1. Seleziona il modulo schema metadati cartelle da modificare e fai clic su Modifica.
 1. Seleziona il campo modulo schema metadati cartelle da modificare e seleziona la scheda Impostazioni nel pannello di destra.
@@ -151,7 +152,7 @@ Nell’editor del flusso di lavoro, modifica le proprietà di **[!UICONTROL Work
 
 ## Sincronizzazione commenti {#comments-sync}
 
-1. In entrata [!DNL Experience Manager], accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione strumenti Workfront]**, seleziona la configurazione e seleziona **[!UICONTROL Proprietà]**.
+1. In entrata [!DNL Experience Manager], accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione strumenti Workfront]**, seleziona la configurazione e seleziona **[!UICONTROL Proprietà]**.
 
    ![commenti sincronizzati](/help/assets/assets/comments-sync1.png)
 
@@ -171,7 +172,7 @@ Per verificare la sincronizzazione dei commenti da Workfront all’AEM, effettua
 
 Per mantenere la cronologia delle versioni delle risorse in AEM, configura il controllo delle versioni delle risorse in AEM.
 
-1. Ad Experience Manager, l’accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione strumenti Workfront]** e aprire **[!UICONTROL Avanzate]** scheda.
+1. Ad Experience Manager, l’accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione strumenti Workfront]** e aprire **[!UICONTROL Avanzate]** scheda.
 
 1. Seleziona opzione **[!UICONTROL Memorizza le risorse con lo stesso nome delle versioni della risorsa esistente]**. Se selezionata, questa opzione consente di memorizzare le risorse caricate con lo stesso nome e nella stessa posizione della versione della risorsa esistente. Se questa opzione non è selezionata, viene creata una nuova risorsa con un nome diverso (ad esempio, `asset-name.pdf` e `asset-name-1.pdf`).
 
@@ -193,7 +194,7 @@ Nell’editor del flusso di lavoro di Experience Manager, modifica le proprietà
 
 ## Pubblicazione automatica delle risorse {#auto-publish-assets}
 
-1. Ad Experience Manager, l’accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione strumenti Workfront]** e aprire **[!UICONTROL Avanzate]** scheda.
+1. Ad Experience Manager, l’accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione strumenti Workfront]** e aprire **[!UICONTROL Avanzate]** scheda.
 
 1. Seleziona **[!UICONTROL Pubblica automaticamente le risorse quando inviate da Workfront]**. Questa opzione consente la pubblicazione automatica delle risorse quando vengono inviate da Workfront all’AEM. Questa funzione può essere abilitata in modo condizionale specificando un campo modulo personalizzato Workfront e il valore su cui deve essere impostata. Ogni volta che un documento viene inviato al AEM, se soddisfa la condizione, la risorsa viene pubblicata automaticamente.
 
