@@ -4,9 +4,9 @@ description: Scopri come creare o aggiungere un modulo adattivo alla pagina AEM 
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 7b797524d0df764c497baa6e4ffd0b3cabd368ca
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3212'
 ht-degree: 1%
 
 ---
@@ -255,14 +255,21 @@ All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altr
    * Per configurare un URL di reindirizzamento, per l’opzione Invia seleziona la **[!UICONTROL Reindirizza a URL]** e sfoglia e seleziona una pagina AEM Sites oppure specifica l’URL di una pagina esterna.
    * Per configurare un messaggio personalizzato o di ringraziamento, per all’opzione Invia, seleziona la **[!UICONTROL Mostra messaggio]** e inserisci un messaggio nella sezione **[!UICONTROL Contenuto del messaggio]** casella. Si tratta di una casella di testo RTF, è possibile utilizzare l&#39;opzione a schermo intero per visualizzare tutti gli elementi RTF disponibili.
 
-## Vedi successivo
 
-* [Creare stili o temi per i moduli](using-themes-in-core-components.md)
-* [Aggiungere un comportamento dinamico ai moduli tramite l’editor di regole](rule-editor.md)
-* [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/features/responsive-layout.md)
+<!--
+## See next
 
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+-->
 
 ## Consulta anche {#see-also}
 
 {{see-also}}
+
+* [Aggiungere un comportamento dinamico ai moduli tramite l’editor di regole](rule-editor.md)
+* [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/features/responsive-layout.md)
+
 

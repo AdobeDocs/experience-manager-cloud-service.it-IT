@@ -5,9 +5,9 @@ role: User, Developer
 keywords: Collega Modulo adattivo AEM a Elenco Microsoft SharePoint, connetti Modulo adattivo a Elenco Microsoft SharePoint, integra Modulo adattivo AEM a Elenco Microsoft SharePoint, integra Modulo adattivo a Elenco Microsoft SharePoint, invia dati da un Modulo adattivo a Elenco SharePoint, invia flusso di lavoro di a Elenco AEM SharePoint.
 hide: true
 hidefromToC: true
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 3%
 
 ---
@@ -86,16 +86,12 @@ Scopri come [utilizzare il flusso di lavoro AEM](https://experienceleague.adobe.
 * [Configurare origini dati](/help/forms/configuring-submit-actions.md)
 * [Crea modello dati modulo](/help/forms/create-form-data-models.md)
 * [Utilizzare flussi di lavoro AEM incentrati su Forms - Riferimento alla fase per automatizzare i processi aziendali](/help/forms/aem-forms-workflow-step-reference.md)
-
-## Informazioni aggiuntive
-
+* [Creare un’azione di invio personalizzata per Adaptive Forms](/help/forms/custom-submit-action-form.md)
 * [Creare o aggiungere un modulo adattivo a una pagina di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Incorporare un modulo adattivo in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
 * [Creare, utilizzare e personalizzare i temi in un modulo adattivo](/help/forms/using-themes-in-core-components.md)
 
->[!MORELIKETHIS]
->
->* [Creare un’azione di invio personalizzata per Adaptive Forms](/help/forms/custom-submit-action-form.md)
+
 
 
 

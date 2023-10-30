@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 4%
@@ -171,7 +171,7 @@ Quando esegui la migrazione dei modelli di flussi di lavoro AEM da AEM Forms 6.5
 L’utility di migrazione consente di migrare Forms adattivo in base ai componenti di base. Inoltre, Forms as a Cloud Service supporta i componenti core Adaptive Forms. In questo modo è possibile:
 
 * [Creazione di un Forms adattivo indipendente basato su Componente core](/help/forms/creating-adaptive-form-core-components.md)
-* [Creare un modulo adattivo basato su componenti core direttamente in una pagina di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Creare un modulo adattivo basato su componenti core direttamente in una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 Per ulteriori informazioni su AEM Forms as a Cloud Service, consulta:
 

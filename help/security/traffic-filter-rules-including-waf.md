@@ -2,9 +2,9 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
+source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3473'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 # Regole del filtro del traffico, incluse le regole WAF {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->Questa funzione sarà presto disponibile negli ambienti di sviluppo, con un rollout graduale negli ambienti di staging e produzione a novembre. Puoi richiedere l’accesso anticipato tramite e-mail su stage e prod **aemcs-waf-adopter@adobe.com**.
+>Questa funzione è ora disponibile negli ambienti di sviluppo, con un rollout graduale negli ambienti di staging e produzione più avanti in novembre. Puoi richiedere l’accesso anticipato tramite e-mail su stage e prod **aemcs-waf-adopter@adobe.com**.
 
 Le regole del filtro del traffico possono essere utilizzate per bloccare o consentire le richieste a livello CDN, il che può essere utile in scenari come:
 
@@ -26,6 +26,8 @@ La maggior parte di queste regole del filtro del traffico è disponibile per tut
 Una sottocategoria delle regole del filtro del traffico richiede una licenza Enhanced Security o WAF-DDoS Protection e sarà disponibile nel corso dell&#39;anno. Queste potenti regole sono note come regole del filtro del traffico WAF (Web Application Firewall) (o regole WAF in breve) e hanno accesso al [Flag WAF](#waf-flags-list) descritto più avanti in questo articolo.
 
 Le regole del filtro del traffico possono essere distribuite tramite le pipeline di configurazione di Cloud Manager ai tipi di ambiente di sviluppo, di staging e di produzione nei programmi di produzione (non sandbox). Il supporto per gli RDE arriverà in futuro.
+
+[Segui un’esercitazione](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) per sviluppare rapidamente competenze concrete su questa funzione.
 
 ## Organizzazione di questo articolo {#how-organized}
 

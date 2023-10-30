@@ -1,23 +1,23 @@
 ---
-title: Come si configura il connettore di archiviazione unificata per AEM Forms?
-description: Scopri come gestire il connettore di archiviazione unificata per AEM Forms. Utilizza il connettore di archiviazione unificata per collegare AEM Forms a archivi di dati esterni.
+title: Come si configura il connettore di archiviazione unificata (USC) per AEM Forms?
+description: Scopri come gestire il connettore di archiviazione unificata (USC) per AEM Forms. Utilizza il connettore di archiviazione unificata (USC) per collegare AEM Forms alle archiviazioni dati esterne.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
-# Gestione del connettore di archiviazione unificata per AEM Forms {#manage-unified-storage-connector}
+# Gestire il connettore di archiviazione unificata (USC) per AEM Forms {#manage-unified-storage-connector}
 
-Puoi utilizzare il connettore di archiviazione unificata per collegare AEM Forms a archivi di dati esterni.
+È possibile utilizzare il connettore di archiviazione unificata (USC) per collegare AEM Forms a archivi di dati esterni.
 
-Ad esempio, puoi compilare i valori dei campi in un modulo adattivo e inviarlo a un flusso di lavoro AEM. Puoi configurare ulteriormente i flussi di lavoro AEM per archiviare i dati in un archivio esterno, ad esempio il server di archiviazione Microsoft Azure. Utilizza il connettore di archiviazione unificata per creare una connessione tra i flussi di lavoro AEM e l’archiviazione esterna.
+Ad esempio, puoi compilare i valori dei campi in un modulo adattivo e inviarlo a un flusso di lavoro AEM. Puoi configurare ulteriormente i flussi di lavoro AEM per archiviare i dati in un archivio esterno, ad esempio il server di archiviazione Microsoft Azure. Utilizza il connettore di archiviazione unificata (USC) per creare una connessione tra i flussi di lavoro dell’AEM e l’archiviazione esterna.
 
 ## Collegare i flussi di lavoro AEM con un server di archiviazione Microsoft Azure {#connect-workflows-with-azure}
 
-Crea una configurazione di archiviazione Azure e fai riferimento a tale configurazione utilizzando il connettore di archiviazione unificata. È quindi possibile configurare i modelli di flusso di lavoro AEM per esternalizzare l’archiviazione dati per collegarli a un server di archiviazione Azure.
+Crea una configurazione di archiviazione Azure e fai riferimento a tale configurazione utilizzando il connettore di archiviazione unificata (USC). È quindi possibile configurare i modelli di flusso di lavoro AEM per esternalizzare l’archiviazione dati per collegarli a un server di archiviazione Azure.
 
 ### Crea [!DNL Azure] configurazione di archiviazione {#create-azure-storage-configuration}
 
@@ -31,9 +31,9 @@ Per creare un’ [!DNL Azure] configurazione archiviazione:
 1. Specifica il nome del [!DNL Azure] account di archiviazione in **[!UICONTROL Account di archiviazione Azure]** campo.
 1. Specifica la chiave per accedere all’account di archiviazione Azure in **[!UICONTROL Chiave di accesso Azure]** campo e tocco **[!UICONTROL Salva]**.
 
-### Configurare il connettore di archiviazione unificata per i flussi di lavoro AEM {#configure-unified-storage-connector-workflows}
+### Configurare il connettore di archiviazione unificata (USC) per i flussi di lavoro AEM {#configure-unified-storage-connector-workflows}
 
-Per configurare il connettore di archiviazione unificata per i flussi di lavoro AEM, effettua le seguenti operazioni:
+Per configurare il connettore di archiviazione unificata (USC) per i flussi di lavoro AEM, effettua le seguenti operazioni:
 
 1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Connettore di archiviazione unificata]**.
 
