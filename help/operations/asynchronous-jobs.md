@@ -2,9 +2,9 @@
 title: Processi asincroni
 description: Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a uso intensivo di risorse come operazioni in background.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '865'
 ht-degree: 70%
 
 ---
@@ -19,7 +19,6 @@ Alcune di queste operazioni sono:
 * Spostamento di più di una risorsa o risorse con più riferimenti
 * Esportazione/importazione in blocco dei metadati di una risorsa
 * Recupero di risorse che superano il limite di soglia impostato da una implementazione remota di Experience Manager
-* Spostamento di pagine
 * Rollout di Live Copy
 
 È possibile visualizzare lo stato dei processi asincroni da **[!UICONTROL Operazioni in background]** dashboard in **Navigazione globale** -> **Strumenti** -> **Generale** -> **Processi**.
@@ -124,20 +123,6 @@ Quando il numero di risorse, cartelle o riferimenti da spostare supera la soglia
 1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio, success, failed.
 1. Salva le modifiche.
 
-### Configurare le operazioni di spostamento delle pagine asincrone {#configuring-asynchronous-page-move-operations}
-
-Quando il numero di riferimenti o pagine da spostare supera la soglia impostata, l’operazione di spostamento viene eseguita in modo asincrono.
-
-1. Accedi alla console web AEM di Quickstart Jar per l’SDK dell’AEM all’indirizzo `https://<host>:<port>/system/console` come utente amministratore.
-1. Accedi a **OSGi** > **Configurazione**
-1. Dalla console Web, apri la **[!UICONTROL configurazione dell’elaborazione asincrona del processo di spostamento.]**
-1. Nel campo **[!UICONTROL Threshold number of references]** (Soglia riferimenti), specifica il numero limite di riferimenti per l’elaborazione asincrona delle operazioni di spostamento.
-
-   ![Soglia per lo spostamento delle pagine ](assets/async-page-move.png)
-
-1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio, success, failed.
-1. Salva le modifiche.
-
 ### Configurare le operazioni MSM asincrone {#configuring-asynchronous-msm-operations}
 
 1. Accedi alla console web AEM di Quickstart Jar per l’SDK dell’AEM all’indirizzo `https://<host>:<port>/system/console` come utente amministratore.
@@ -154,4 +139,3 @@ Quando il numero di riferimenti o pagine da spostare supera la soglia impostata,
 >* [Creazione e organizzazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
 >* [Importare ed esportare in blocco i metadati delle risorse](/help/assets/metadata-import-export.md).
 >* [Utilizzare le risorse collegate per condividere le risorse DAM da implementazioni remote](/help/assets/use-assets-across-connected-assets-instances.md).
-

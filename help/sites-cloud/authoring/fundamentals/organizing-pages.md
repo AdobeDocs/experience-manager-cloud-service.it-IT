@@ -2,10 +2,10 @@
 title: Creazione e organizzazione delle pagine
 description: Scopri come organizzare il sito web creando e gestendo pagine con AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '2543'
-ht-degree: 99%
+source-wordcount: '2451'
+ht-degree: 98%
 
 ---
 
@@ -373,18 +373,15 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
 #### Azioni asincrone {#asynchronous-actions}
 
-Generalmente, un’azione di spostamento o ridenominazione di una pagina viene eseguita immediatamente. Si tratta quindi di elaborazione sincrona e, finché non viene completata, ulteriori azioni risultano bloccate nell’interfaccia utente.
+Le azioni di spostamento delle pagine vengono sempre elaborate in modo asincrono, consentendo all’utente di continuare a creare nell’interfaccia utente senza ostacoli.
 
-Tuttavia, se il numero di pagine interessate è superiore a un limite definito, l’elaborazione avviene in modo asincrono. L’utente può quindi continuare a creare contenuti nell’interfaccia utente, senza dover attendere che la pagina sia stata spostata o rinominata.
+* È l’utente a definire quando deve essere eseguita l’operazione asincrona.
+   * **Ora** inizia subito l’esecuzione del processo asincrono.
+   * **In seguito** consente di definire quando verrà avviato il processo asincrono.
 
-* Nel momento in cui si seleziona **Sposta** nell’ultimo passaggio precedente, AEM verifica il limite configurato.
-* Se il numero di pagine interessate è inferiore al limite, l’operazione viene eseguita in modalità sincrona.
-* Se il numero di pagine interessate è superiore al limite, l’operazione viene eseguita in modalità asincrona.
-   * È l’utente a definire quando deve essere eseguita l’operazione asincrona.
-      * **Ora** inizia subito l’esecuzione del processo asincrono.
-      * **In seguito** consente di definire quando verrà avviato il processo asincrono.
-
-        ![Spostamento asincrono delle pagine](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+<!--
+  ![Asynchronous page move](assets/asynchronous-page-move.png)
+-->
 
 Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato processi asincroni** in](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) **Navigazione globale** -> **Strumenti** -> **Operazioni** -> **Processi**.
 
