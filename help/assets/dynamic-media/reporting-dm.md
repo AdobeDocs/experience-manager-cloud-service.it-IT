@@ -4,13 +4,15 @@ description: Scopri come richiedere un rapporto di errore per gli URL di consegn
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
-source-git-commit: 7ce15cc755c9db589001d543c16312096d88bcf0
+hide: true
+hidefromtoc: true
+exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
+source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 4%
 
 ---
-
 
 # Richiedi un rapporto di errore per gli URL di consegna Dynamic Medie che non superano il test
 
@@ -31,7 +33,3 @@ Puoi richiedere una segnalazione di errori una volta al mese, per una determinat
    Se non conosci il nome dell’azienda, consulta [Configurazione Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=it#configuring-dynamic-media-cloud-services) pagina in **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione Dynamic Medie]**. Nella pagina Browser configurazioni Dynamic Medie, fai clic su **[!UICONTROL globale]**, seleziona la *[Dynamic_Media_folder_icon]* , quindi seleziona **[!UICONTROL Modifica]**. Per accedere alla pagina Configurazione Dynamic Medie è necessario disporre dei diritti di amministratore in AEM.
 
    ![Accesso alla pagina Configurazione Dynamic Medie.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
-
-
-
-
