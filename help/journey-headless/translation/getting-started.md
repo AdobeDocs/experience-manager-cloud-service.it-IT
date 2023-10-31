@@ -2,10 +2,10 @@
 title: Guida introduttiva alla traduzione in AEM headless
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '1425'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
@@ -178,7 +178,7 @@ Ora cha hai completato questa parte del percorso di traduzione headless, dovrest
 * Avere compreso come AEM archivia il contenuto headless.
 * conoscere gli strumenti di traduzione di AEM.
 
-Sviluppa questa conoscenza e continua il tuo percorso di traduzione headless di AEM consultando il documento successivo [Configurare il connettore di traduzione](configure-connector.md) dove apprenderai come connettere AEM a un servizio di traduzione.|
+Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM esaminando il documento [Configurare l’integrazione della traduzione](configure-connector.md) dove imparerai a collegare l’AEM a un servizio di traduzione.|
 
 ## Risorse aggiuntive {#additional-resources}
 

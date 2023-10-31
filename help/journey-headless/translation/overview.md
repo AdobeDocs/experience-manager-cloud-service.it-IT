@@ -2,10 +2,10 @@
 title: Percorso di traduzione headless di AEM
 description: Inizia qui per un percorso guidato alla traduzione di contenuti headless utilizzando i potenti strumenti di traduzione di AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -66,8 +66,8 @@ Sebbene tu possa accedere direttamente a una sezione specifica del percorso, mol
 | 0 | Percorso di traduzione headless di AEM | Questo documento |
 | 1 | [Scopri i contenuti headless e come tradurli in AEM](learn-about.md) | Imparare i concetti headless, come si mappano su AEM e la teoria della traduzione in AEM. |
 | 2 | [Guida introduttiva alla traduzione headless in AEM](getting-started.md) | Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM. |
-| 3 | [Configurare il connettore di traduzione](configure-connector.md) | Scopri come connettere AEM a un servizio di traduzione. |
-| 4 | [Tradurre il contenuto](translate-content.md) | Utilizza il connettore di traduzione e le regole per tradurre il contenuto headless. |
+| 3 | [Configurare l’integrazione della traduzione](configure-connector.md) | Scopri come connettere AEM a un servizio di traduzione. |
+| 4 | [Tradurre il contenuto](translate-content.md) | Utilizza l’integrazione e le regole di traduzione per tradurre i contenuti headless. |
 | 5 | [Pubblicare contenuti tradotti](publish-content.md) | Scopri come pubblicare il contenuto tradotto e aggiornare la traduzione quando il contenuto sottostante viene aggiornato. |
 
 ## Novità {#what-is-next}

@@ -1,15 +1,15 @@
 ---
-title: Configura il connettore di traduzione per il contenuto headless
+title: Configurare l’integrazione della traduzione per contenuti headless
 description: Scopri come connettere AEM a un servizio di traduzione.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+workflow-type: tm+mt
 source-wordcount: '1231'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Configurare il connettore di traduzione {#configure-connector}
+# Configurare l’integrazione della traduzione {#configure-integration}
 
 Scopri come connettere AEM a un servizio di traduzione.
 
@@ -25,7 +25,7 @@ Questo articolo si basa su queste nozioni di base per permetterti di compiere il
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come impostare un connettore AEM per il servizio di traduzione selezionato. Dopo la lettura dovresti:
+Questo documento ti aiuta a capire come impostare un’integrazione AEM per il servizio di traduzione scelto. Dopo la lettura dovresti:
 
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
 * Essere in grado di impostare la propria connessione al servizio di traduzione.

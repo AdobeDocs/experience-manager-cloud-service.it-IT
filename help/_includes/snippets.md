@@ -2,7 +2,7 @@
 source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 23%
+ht-degree: 78%
 
 ---
 # Snippet {#snippets}
@@ -28,24 +28,24 @@ ht-degree: 23%
 ## Consulta anche {#see-also}
 
 * [Creare un modulo adattivo AEM](/help/forms/creating-adaptive-form-core-components.md)
-* [Aggiungere un modulo adattivo AEM alla pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Aggiungere un modulo adattivo AEM a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Applicare i temi a un modulo adattivo AEM](/help/forms/using-themes-in-core-components.md)
-* [Aggiungere componenti a un modulo adattivo dell’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it#components)
+* [Aggiungere componenti a un modulo adattivo di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it#components)
 * [Utilizzare il CAPTCHA in un modulo adattivo per l’AEM](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Generare la versione PDF (DoR) di un modulo adattivo AEM](/help/forms/generate-document-of-record-core-components.md)
-* [Tradurre un modulo adattivo per l’AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
-* [Abilita Adobe Analytics per un modulo adattivo per monitorare l’utilizzo dei moduli](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Tradurre un modulo adattivo AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Abilitare Adobe Analytics per il monitoraggio dell’utilizzo dei moduli con un modulo adattivo](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Collegare un modulo adattivo a Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
-* [Collegare il modulo adattivo a Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
-* [Connetti modulo adattivo a Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
-* [Connettere un modulo adattivo all’archiviazione BLOB di Microsoft Azure](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [Connettere un modulo adattivo a Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Utilizzare Adobe Sign in un modulo adattivo AEM](/help/forms/working-with-adobe-sign.md)
+* [Collegare un modulo adattivo a Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Collegare un modulo adattivo a Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
+* [Collegare un modulo adattivo all’archiviazione BLOB di Microsoft Azure](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Collegare un modulo adattivo a Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Utilizzare Adobe Sign in un modulo adattivo di AEM](/help/forms/working-with-adobe-sign.md)
 * [Aggiungere una nuova lingua per un modulo adattivo](/help/forms/supporting-new-language-localization-core-components.md)
-* [Inviare dati del modulo adattivo a un database](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
+* [Inviare dati del modulo adattivo a un database](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html?lang=it)
 * [Inviare dati del modulo adattivo a un endpoint REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
-* [Inviare dati del modulo adattivo al flusso di lavoro AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-* [Usare Forms Portal per elencare AEM Adaptive Forms su un sito web AEM](/help/forms/configure-forms-portal.md)
+* [Inviare dati del modulo adattivo al flusso di lavoro di AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Usare il portale dei moduli per elencare moduli adattivi di AEM su un sito web di AEM](/help/forms/configure-forms-portal.md)
 
 
 

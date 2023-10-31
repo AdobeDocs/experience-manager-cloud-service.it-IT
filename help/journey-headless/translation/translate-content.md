@@ -2,17 +2,17 @@
 title: Tradurre il contenuto headless
 description: Utilizzare il connettore di traduzione per tradurre i contenuti headless.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+workflow-type: tm+mt
 source-wordcount: '2175'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 
 # Tradurre il contenuto headless {#translate-content}
 
-Utilizzare il connettore di traduzione per tradurre i contenuti headless.
+Utilizza l’integrazione di traduzione per tradurre i contenuti headless.
 
 ## Percorso affrontato finora {#story-so-far}
 
