@@ -4,7 +4,7 @@ description: Scopri come creare o aggiungere un modulo adattivo alla pagina AEM 
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
 workflow-type: tm+mt
 source-wordcount: '3212'
 ht-degree: 1%
@@ -268,7 +268,6 @@ All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altr
 ## Consulta anche {#see-also}
 
 {{see-also}}
-
 * [Aggiungere un comportamento dinamico ai moduli tramite l’editor di regole](rule-editor.md)
 * [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/features/responsive-layout.md)
 

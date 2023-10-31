@@ -2,7 +2,7 @@
 title: Come possiamo creare e utilizzare i temi in Adaptive Forms?
 description: Puoi utilizzare i temi per assegnare uno stile e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 4%
@@ -430,7 +430,6 @@ Se si desidera fornire informazioni quali un&#39;immagine del logo, il nome dell
 ## Consulta anche {#see-also}
 
 {{see-also}}
-
 * [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Generare un documento di record per Forms adattivo (componenti core)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creare un Forms adattivo con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md)
