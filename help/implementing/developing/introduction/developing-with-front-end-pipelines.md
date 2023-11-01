@@ -2,7 +2,7 @@
 title: Sviluppo di Sites con la pipeline front-end
 description: Con la pipeline front-end, viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può guadagnare una notevole velocità. Questo documento descrive alcune considerazioni particolari del processo di sviluppo front-end che devono essere fornite.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 36e40976c43826efd7921cd9429373fe97a20426
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Il contenuto della `dist` Cartella è ciò che viene distribuito in AEM as a Clo
 
 Per impostazione predefinita, la pipeline front-end utilizza il nodo 14, ma sono disponibili anche i valori 12 e 16.
 
-È possibile utilizzare `CM_CUSTOM_VAR_NODE_VERSION` variabile di ambiente per impostare la versione desiderata.
+È possibile utilizzare `NODE_VERSION` variabile di ambiente per impostare la versione desiderata.
 
 ## Sorgente unica di verità {#single-source-of-truth}
 

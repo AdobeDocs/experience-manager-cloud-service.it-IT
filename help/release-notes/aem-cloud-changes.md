@@ -2,10 +2,10 @@
 title: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifiche di rilievo apportate ad Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 30edc83364dd9666b94f54048abc8b7f92ad6ce3
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 49%
+source-wordcount: '871'
+ht-degree: 48%
 
 ---
 
@@ -79,23 +79,9 @@ A parte le modifiche nella cartella `/home` sul livello di pubblicazione, le mod
 
 ## Non sono consentite modalità di esecuzione personalizzate {#custom-runmodes}
 
-In AEM Cloud Service sono disponibili le seguenti modalità di esecuzione:
+In AEM Cloud Service non sono possibili modalità di esecuzione aggiuntive o personalizzate. Per un elenco delle modalità di esecuzione disponibili in AEM Cloud Service, consulta il documento [Distribuzione a AEM as a Cloud Service.](/help/implementing/deploying/overview.md#runmodes)
 
-* `author`
-* `publish`
-* `prod`
-* `author.prod`
-* `publish.prod`
-* `stage`
-* `author.stage`
-* `publish.stage`
-* `dev`
-* `author.dev`
-* `publish.dev`
-
-In AEM Cloud Service non sono possibili modalità di esecuzione aggiuntive o personalizzate.
-
-## Rimozione degli agenti di replica e relative modifiche {#replication-agents}
+## Rimozione degli agenti di replica e delle relative modifiche {#replication-agents}
 
 In AEM Cloud Service il contenuto viene pubblicato utilizzando il modulo [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html). Gli agenti di replica utilizzati nelle versioni precedenti dell’AEM non vengono più utilizzati o forniti, il che potrebbe interessare le seguenti aree dei progetti AEM esistenti:
 
