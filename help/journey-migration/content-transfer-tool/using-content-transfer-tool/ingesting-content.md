@@ -2,9 +2,9 @@
 title: Acquisizione di contenuti nel Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
+source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2324'
 ht-degree: 7%
 
 ---
@@ -31,27 +31,35 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
 
 1. Fornisci le informazioni necessarie per creare un’acquisizione.
 
-   * Seleziona come Origine il set di migrazione contenente i dati estratti.
+   * **Set di migrazione:** Seleziona come Origine il set di migrazione contenente i dati estratti.
       * I set di migrazione scadranno dopo un periodo prolungato di inattività, pertanto si prevede che l’acquisizione avvenga relativamente presto dopo l’esecuzione dell’estrazione. Revisione [Scadenza set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) per i dettagli.
-   * Seleziona l’ambiente di destinazione. In questo ambiente viene acquisito il contenuto del set di migrazione. Seleziona il livello. (Autore/Pubblicazione). Gli ambienti di sviluppo rapido non sono supportati.
+
+   >[!TIP]
+   > Se l’estrazione è attualmente in esecuzione, la finestra di dialogo lo indicherà. Una volta completata l’estrazione, l’acquisizione viene avviata automaticamente. Se l’estrazione non riesce o viene interrotta, il processo di acquisizione verrà annullato.
+
+   * **Destinazione:** Seleziona l’ambiente di destinazione. In questo ambiente viene acquisito il contenuto del set di migrazione.
+      * Le acquisizioni non supportano una destinazione RDE (Rapid Development Environment) e non vengono visualizzate come possibile scelta di destinazione, anche se l’utente ha accesso a tale destinazione.
+      * Anche se un set di migrazione può essere acquisito in più destinazioni contemporaneamente, una destinazione può essere la destinazione di una sola acquisizione in esecuzione o in attesa alla volta.
+
+   * **Livello:** Seleziona il livello. (Autore/Pubblicazione).
+      * Se la sorgente era `Author`, si consiglia di acquisirlo nel `Author` livello sul target. Analogamente, se la sorgente era `Publish`, il target deve essere `Publish` anche.
 
    >[!NOTE]
-   >Le note seguenti si applicano all’acquisizione del contenuto:
-   > Se l’origine era Author, si consiglia di acquisirla nel livello Author sulla destinazione. Analogamente, se l’origine è Pubblica, anche la destinazione deve essere Pubblica.
    > Se il livello di destinazione è `Author`, l’istanza di authoring viene chiusa per tutta la durata dell’acquisizione e diventa non disponibile per gli utenti (ad esempio, autori o chiunque esegua attività di manutenzione). Il motivo è proteggere il sistema ed evitare eventuali modifiche che potrebbero andare perse o causare un conflitto di acquisizione. Assicurati che il tuo team sia a conoscenza di questo fatto. Inoltre, l’ambiente risulta ibernato durante l’acquisizione dell’autore.
-   > Puoi eseguire il passaggio di pre-copia opzionale per velocizzare notevolmente l’acquisizione. Consulta [Acquisizione con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) per ulteriori dettagli.
-   > Se si utilizza l’acquisizione con pre-copia (per S3 o Azure Data Store), si consiglia di eseguire prima l’acquisizione dell’authoring. In questo modo, l’acquisizione Publish diventa più rapida quando viene eseguita in un secondo momento.
-   > Le acquisizioni non supportano una destinazione RDE (Rapid Development Environment) e non vengono visualizzate come possibile scelta di destinazione, anche se l’utente ha accesso a tale destinazione.
 
-   >[!IMPORTANT]
-   > Puoi avviare un’acquisizione nell’ambiente di destinazione solo se appartieni al gruppo locale **Amministratori AEM** nel servizio Author del Cloud Service di destinazione. Se non riesci ad avviare un’acquisizione, consulta [Impossibile avviare l’acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
-
-   * Scegli la `Wipe` valore
+   * **A comparsa:** Scegli la `Wipe` valore
       * Il **A comparsa** imposta il punto iniziale della destinazione dell’acquisizione. Se **A comparsa** è abilitato, la destinazione, compreso tutto il suo contenuto, viene reimpostata sulla versione dell’AEM specificata in Cloud Manager. Se non è abilitata, la destinazione mantiene il contenuto corrente come punto di partenza.
       * Tieni presente che questa opzione **NOT** influenzano il modo in cui verrà eseguita l’acquisizione del contenuto. L’acquisizione utilizza sempre una strategia di sostituzione dei contenuti e _non_ una strategia di unione dei contenuti in modo tale che, in entrambi **A comparsa** e **Non Cancellato** In alcuni casi, l’acquisizione di un set di migrazione sovrascriverà i contenuti nello stesso percorso sulla destinazione. Ad esempio, se il set di migrazione contiene `/content/page1` e la destinazione contiene già `/content/page1/product1`, l’acquisizione rimuoverà l’intero `page1` percorso e relative pagine secondarie, inclusi `product1`e sostituirlo con il contenuto nel set di migrazione. Ciò significa che è necessario eseguire un’attenta pianificazione quando si esegue una **Non Cancellato** acquisizione in una destinazione che contiene qualsiasi contenuto che deve essere mantenuto.
 
    >[!IMPORTANT]
    > Se l&#39;impostazione **A comparsa** è abilitato per l’acquisizione, ripristina l’intero archivio esistente, incluse le autorizzazioni utente sull’istanza del Cloud Service di destinazione. Questo ripristino è valido anche per un utente amministratore aggiunto al **amministratori** e tale utente deve essere aggiunto nuovamente al gruppo amministratori per avviare un’acquisizione.
+
+   * **Pre-copia:** Scegli la `Pre-copy` valore
+      * Puoi eseguire il passaggio di pre-copia opzionale per velocizzare notevolmente l’acquisizione. Consulta [Acquisizione con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) per ulteriori dettagli.
+      * Se si utilizza l’acquisizione con pre-copia (per S3 o Azure Data Store), si consiglia di eseguire `Author` prima l’acquisizione da sola. In questo modo si accelera la `Publish` acquisizione quando viene eseguita in un secondo momento.
+
+   >[!IMPORTANT]
+   > Puoi avviare un’acquisizione nell’ambiente di destinazione solo se appartieni al gruppo locale **Amministratori AEM** nel servizio Author del Cloud Service di destinazione. Se non riesci ad avviare un’acquisizione, consulta [Impossibile avviare l’acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
 
 1. Clic **Acquisisci**.
 
@@ -162,6 +170,9 @@ La soluzione può richiedere che l’estrazione integrativa venga eseguita nuova
 
 Le best practice indicano che se un **Non Cancellato** l’acquisizione deve essere eseguita utilizzando un set di migrazione che include le versioni (ovvero estratte con &quot;include versions&quot;=true). È fondamentale che il contenuto nella destinazione venga modificato il meno possibile, fino al completamento del percorso di migrazione. In caso contrario, possono verificarsi tali conflitti.
 
+### Acquisizione limitata
+
+Un’acquisizione creata con un’estrazione in esecuzione come set di migrazione di origine attende pazientemente che l’estrazione abbia esito positivo e a quel punto inizierà normalmente. Se l’estrazione non riesce o viene interrotta, l’acquisizione e il relativo processo di indicizzazione non iniziano ma vengono annullati. In questo caso, controlla l’estrazione per determinare il motivo dell’errore, risolvi il problema e avvia di nuovo l’estrazione. Una volta eseguita l’estrazione fissa, è possibile pianificare una nuova acquisizione.
 
 ## Passaggio successivo {#whats-next}
 

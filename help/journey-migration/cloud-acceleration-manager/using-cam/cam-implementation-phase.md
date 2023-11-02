@@ -2,9 +2,9 @@
 title: Fase di implementazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica sulla fase di implementazione in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '652'
 ht-degree: 4%
 
 ---
@@ -109,7 +109,7 @@ Segui questa sezione per esplorare la scheda delle attività di Trasferimento co
 
 1. Scarica e installa lo strumento Content Transfer (Trasferimento contenuti) per popolare il set di migrazione e completare la fase di estrazione del trasferimento dei contenuti. Revisione [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it) per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-1. Per acquisire il contenuto dal set di migrazione in un ambiente su AEM as a Cloud Service, devi avviare un’acquisizione. Accedi a **Processi di acquisizione** e fai clic su **Nuova acquisizione**. Revisione [Acquisizione di contenuti in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) in questo modo puoi imparare a completare la fase di acquisizione del trasferimento dei contenuti.
+1. Per acquisire il contenuto dal set di migrazione in un ambiente su AEM as a Cloud Service, devi avviare un’acquisizione. Accedi a **Processi di acquisizione** e fai clic su **Nuova acquisizione**. Revisione [Acquisizione di contenuti in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) in questo modo puoi imparare a completare la fase di acquisizione del trasferimento dei contenuti.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 

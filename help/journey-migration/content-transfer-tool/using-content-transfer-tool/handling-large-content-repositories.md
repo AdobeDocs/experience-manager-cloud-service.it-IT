@@ -2,9 +2,9 @@
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione di archivi di contenuti di grandi dimensioni
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1835'
 ht-degree: 8%
 
 ---
@@ -191,6 +191,9 @@ Se si verifica un problema con AzCopy, l’estrazione non riesce immediatamente 
 
 Eventuali BLOB copiati prima dell’errore vengono ignorati automaticamente da AzCopy nelle esecuzioni successive e non è necessario copiarli nuovamente.
 
+>[!TIP]
+>Ora è possibile pianificare l’avvio automatico di un’acquisizione subito dopo la riuscita di un’estrazione. Consulta [Acquisizione di contenuti in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) per ulteriori informazioni.
+
 #### Per archivio dati file {#file-data-store-extract}
 
 Quando AzCopy è in esecuzione per il file di origine dataStore, nei registri dovresti visualizzare messaggi come questi che indicano che le cartelle vengono elaborate:
@@ -198,8 +201,7 @@ Quando AzCopy è in esecuzione per il file di origine dataStore, nei registri do
 
 ### 5. Acquisizione con AzCopy {#ingesting-azcopy}
 
-Consulta [Acquisizione di contenuti in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-per informazioni generali sull’acquisizione di contenuti nella destinazione da Cloud Acceleration Manager (CAM), incluse istruzioni sull’utilizzo di AzCopy (pre-copia) o meno, nella finestra di dialogo &quot;Nuova acquisizione&quot;.
+Consulta [Acquisizione di contenuti in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) per informazioni generali sull’acquisizione di contenuti nella destinazione da Cloud Acceleration Manager (CAM), incluse istruzioni sull’utilizzo di AzCopy (pre-copia) o meno, nella finestra di dialogo &quot;Nuova acquisizione&quot;.
 
 Per sfruttare AzCopy durante l’acquisizione, Adobe richiede di utilizzare una versione as a Cloud Service dell’AEM che sia almeno la versione 2021.6.5561.
 

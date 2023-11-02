@@ -2,10 +2,10 @@
 title: Estrazione del contenuto dall’origine
 description: Scopri come estrarre il contenuto da un’istanza Adobe Experience Manager (AEM) di origine per trasferirlo successivamente a un’istanza AEM di Cloud Service.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 28%
+source-wordcount: '735'
+ht-degree: 27%
 
 ---
 
@@ -28,6 +28,9 @@ Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferiment
 1. Seleziona un set di migrazione da **Trasferimento dei contenuti** e fai clic su **Extract** per avviare l’estrazione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
+
+   >[!TIP]
+   >Ora è possibile pianificare l’avvio automatico di un’acquisizione subito dopo la riuscita di un’estrazione. Consulta [Acquisizione di contenuti in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) per ulteriori informazioni.
 
    >[!IMPORTANT]
    >
