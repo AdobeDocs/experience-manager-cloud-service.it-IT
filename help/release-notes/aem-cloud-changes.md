@@ -5,11 +5,11 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: 30edc83364dd9666b94f54048abc8b7f92ad6ce3
 workflow-type: tm+mt
 source-wordcount: '871'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
-# Modifiche di rilievo apportate ad Adobe Experience Manager as a Cloud Service {#notable-changes-aem-cloud}
+# Modifiche di rilievo apportate a Adobe Experience Manager as a Cloud Service {#notable-changes-aem-cloud}
 
 Il Cloud Service Adobe Experience Manager (AEM) offre molte nuove funzioni e possibilità per la gestione dei progetti AEM. Tuttavia, esistono alcune differenze tra AEM Sites on-premise o in Adobe Managed Service e AEM Cloud Service. In questo documento sono illustrate le principali differenze.
 

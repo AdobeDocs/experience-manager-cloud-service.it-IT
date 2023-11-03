@@ -1,17 +1,17 @@
 ---
-title: Panoramica sullo strumento di mappatura utenti (legacy)
-description: Panoramica sullo strumento di mappatura utenti (legacy)
+title: Panoramica sullo strumento di mappatura utente (legacy)
+description: Panoramica sullo strumento di mappatura utente (legacy)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 22%
+ht-degree: 28%
 
 ---
 
-# Panoramica sullo strumento di mappatura utenti (legacy) {#overview-user-mapping-tool}
+# Panoramica sullo strumento di mappatura utente (legacy) {#overview-user-mapping-tool}
 
 >[!INFO]
 >

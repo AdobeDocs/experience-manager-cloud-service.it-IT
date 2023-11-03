@@ -1,5 +1,5 @@
 ---
-title: Migrazione di gruppi utenti chiusi
+title: Migrazione di gruppi di utenti chiusi
 description: Scopri le considerazioni speciali necessarie per abilitare i gruppi chiusi di utenti dopo la migrazione dei contenuti ad Adobe Experience Manager as a Cloud Service.
 hide: true
 hidefromtoc: true
@@ -7,11 +7,11 @@ exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
-# Migrazione di gruppi utenti chiusi {#migrating-closed-user-groups}
+# Migrazione di gruppi di utenti chiusi {#migrating-closed-user-groups}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"

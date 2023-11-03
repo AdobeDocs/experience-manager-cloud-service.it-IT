@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -40,7 +40,7 @@ Per ulteriori informazioni, vedi [Gestione degli elenchi IP consentiti](/help/im
 >
 >Solo le richieste provenienti dagli IP consentiti vengono gestite da CDN gestita dall’AEM. Se punti la tua rete CDN alla rete CDN gestita dall’AEM, assicurati che gli IP della tua rete CDN siano inclusi nel inserisco nell&#39;elenco Consentiti di.
 
-## La rete CDN del cliente punta alla rete CDN gestita dall’AEM {#point-to-point-CDN}
+## La CDN del cliente punta alla CDN gestita dall’AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"

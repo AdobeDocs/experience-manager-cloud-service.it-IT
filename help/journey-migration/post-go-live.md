@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
@@ -53,7 +53,7 @@ Gli utenti possono accedere a un elenco dei file di registro disponibili per l�
 
 Consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) per scoprire come accedere e gestire i registri tramite l’interfaccia utente o dall’API tramite Cloud Manager.
 
-## Contattare il supporto tecnico {#contacting-support}
+## Contattare il supporto  {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"

@@ -5,13 +5,13 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 27%
+ht-degree: 28%
 
 ---
 
 # Estrazione del contenuto dall’origine {#extracting-content}
 
-## Processo di estrazione nello strumento Content Transfer {#extraction-process}
+## Processo di estrazione nello strumento di trasferimento dei contenuti {#extraction-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
