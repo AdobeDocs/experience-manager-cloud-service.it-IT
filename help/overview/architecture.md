@@ -2,9 +2,9 @@
 title: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service
 description: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
+source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2665'
 ht-degree: 10%
 
 ---
@@ -66,7 +66,7 @@ Esistono quattro tipi di [ambiente](/help/implementing/cloud-manager/manage-envi
 
 Un programma AEM può essere configurato con [Edge Delivery Services](/help/edge/overview.md) anche.
 
-Una volta configurata, l’AEM può fare riferimento agli archivi di codice GitHub utilizzati per creare le esperienze con i Edge Delivery Services. Di conseguenza, diventano disponibili nuove opzioni di configurazione per le esperienze associate. Ad esempio, puoi configurare la rete CDN gestita dall’Adobe, accedere alle metriche delle licenze o ai rapporti SLA.
+Una volta configurata, l’AEM può fare riferimento agli archivi di codice GitHub utilizzati per creare le esperienze con i Edge Delivery Services. Di conseguenza, diventano disponibili nuove opzioni di configurazione per le esperienze associate. Ad esempio, è possibile configurare la rete CDN gestita dall&#39;Adobe e accedere alle metriche delle licenze o ai rapporti SLA.
 
 ## Architettura del servizio {#service-architecture}
 
@@ -198,7 +198,7 @@ In entrambi i casi viene eseguito lo stesso insieme di test automatizzati. È co
 
 * ha contribuito Adobe a garantire l’integrità del prodotto
 * test forniti dal cliente
-   * Test funzionali: http
+   * Test funzionali: tramite richieste http al livello di authoring o pubblicazione dell’AEM
    * Test dell’interfaccia utente: basati sulla tecnologia Selenium o Cypress
 
 Questi test automatizzati vengono eseguiti nell’ambiente di staging, ed è per questo che è importante mantenere il contenuto dell’ambiente di staging il più vicino possibile al contenuto nell’istanza di produzione.
