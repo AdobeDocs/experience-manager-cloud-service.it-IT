@@ -2,10 +2,10 @@
 title: Aree geografiche di pubblicazione aggiuntiva
 description: Scopri in che modo AEM as a Cloud Service supporta ulteriori aree geografiche di pubblicazione aggiuntiva per una maggiore disponibilità e una latenza ridotta.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
-source-wordcount: '542'
-ht-degree: 100%
+source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
+workflow-type: tm+mt
+source-wordcount: '606'
+ht-degree: 89%
 
 ---
 
@@ -35,6 +35,11 @@ Di seguito sono riportati alcuni casi d’uso in cui le organizzazioni possono u
 Dopo aver concesso in licenza un’area geografica di pubblicazione aggiuntiva, le aree geografiche vengono configurate utilizzando Cloud Manager. Consulta la [Documentazione di Cloud Manager](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) per istruzioni dettagliate.
 
 Le aree geografiche di pubblicazione aggiuntiva vengono applicate agli ambienti di staging e produzione, ma non agli ambienti RDE o di sviluppo.
+
+Nel caso in cui un’area geografica non sia più disponibile, i clienti non dovranno gestire l’instradamento del traffico verso le aree disponibili, in quanto è gestito dalla rete CDN di Adobe.
+
+Come descritto nella sezione Considerazioni avanzate sulla rete di seguito, si consiglia ai clienti che utilizzano la rete avanzata di configurarla per ogni area di pubblicazione aggiuntiva per mantenere la disponibilità nel caso in cui un’area non sia più disponibile.
+
 
 ## Considerazioni sulle reti avanzate {#advanced-networking-considerations}
 

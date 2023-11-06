@@ -2,10 +2,10 @@
 title: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service
 description: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
+source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
 workflow-type: tm+mt
-source-wordcount: '2015'
-ht-degree: 91%
+source-wordcount: '2656'
+ht-degree: 10%
 
 ---
 
@@ -14,210 +14,219 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
 >title="Introduzione all’architettura di AEM as a Cloud Service"
->abstract="In questa scheda puoi visualizzare la nuova architettura di AEM as a Cloud Service e comprendere le modifiche apportate. Per AEM è stata creata un’architettura dinamica con un numero variabile di immagini, pertanto è importante prendere il tempo necessario per comprenderne l’architettura cloud"
+>abstract="In questa scheda puoi visualizzare la nuova architettura di AEM as a Cloud Service e comprendere le modifiche apportate. L’AEM ha prodotto un’architettura dinamica con un numero variabile di immagini, pertanto è importante prendere il tempo necessario per comprendere l’architettura cloud."
 >additional-url="https://video.tv.adobe.com/v/330542/" text="Panoramica dell’architettura"
 
+Adobe Experience Manager (AEM) as a Cloud Service offre una serie di servizi componibili per la creazione e la gestione di esperienze ad alto impatto.
 
-Adobe Experience Manager (AEM) as a Cloud Service ha apportato delle modifiche all’architettura.
+Questa pagina fornisce un’introduzione all’architettura logica, all’architettura dei servizi, all’architettura dei sistemi e all’architettura di sviluppo per AEM as a Cloud Service.
 
-## Ridimensionamento {#scaling}
+## Architettura logica {#logical-architecture}
 
-AEM as a Cloud Service adesso include:
+AEM as a Cloud Service è costituito da soluzioni di alto livello come AEM Sites, AEM Assets e AEM Forms. Questi servizi sono concessi in licenza singolarmente, ma possono essere utilizzati in collaborazione. Ogni soluzione utilizza una combinazione di servizi componibili forniti da AEM as a Cloud Service, a seconda dei rispettivi casi d’uso.
 
-* Architettura dinamica con un numero variabile di immagini AEM
+### Programmi {#programs}
 
-![Architettura dinamica](assets/concepts-01.png "Architettura dinamica")
+Le domande dell&#39;AEM sono materializzate sotto forma di [Programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) che crei nell’applicazione Cloud Manager, in base alle licenze concesse. Questi programmi consentono di controllare completamente il nome, la configurazione e l&#39;allocazione delle autorizzazioni dell&#39;applicazione AEM associata nel contesto di un determinato progetto.
 
-Tale architettura:
-
-* viene ridimensionata in base al *traffico* e all’*attività* effettiva;
-
-* presenta istanze singole che vengono eseguite solo quando necessario;
-
-* utilizza applicazioni modulari;
-
-* per impostazione predefinita dispone di un cluster di authoring, per garantire la disponibilità continua anche durante le attività di manutenzione.
-
-Questo approccio consente la scalabilità automatica in base alle esigenze di diversi schemi di utilizzo:
-
-![Scalabilità automatica per diversi schemi di utilizzo](assets/concepts-02.png "Scalabilità automatica per diversi schemi di utilizzo")
-
-A tal fine, tutte le istanze di AEM as a Cloud Service vengono create uguali, ciascuna con le medesime caratteristiche predefinite in termini di numero di nodi, di memoria e di capacità di elaborazione allocate.
-
-AEM as a Cloud Service si basa sull’utilizzo di un motore di orchestrazione che:
-
-* controlla costantemente lo stato del servizio;
-
-* ridimensiona in modo dinamico ciascuna istanza del servizio in base alle esigenze effettive, potenziandola o riducendola a seconda delle necessità.
-
-Tale comportamento:
-
-* è applicabile al numero di nodi, alla quantità di memoria e alla capacità della CPU allocata su ciascun nodo;
-
-* consente ad AEM as a Cloud Service di adattarsi agli schemi di traffico mano a mano che cambiano.
-
-La scalabilità delle istanze per tenant del servizio si applica ai due assi:
-
-* Orizzontale: il numero di nodi per un determinato servizio viene aumentato o diminuito automaticamente, consentendo comunque configurazioni predefinite individuali.
-
-* Verticale: la memoria e la capacità della CPU allocate possono essere potenziate o ridotte tramite la configurazione di un numero fisso di nodi per soddisfare i singoli requisiti in base alle esigenze.
-
-## Ambienti {#environments}
+In qualità di cliente, solitamente sei identificato da Adobe come **tenant**, noto anche come *Organizzazione IMS* (Sistema Identity Management). Un tenant può disporre di tutti i programmi necessari e disporre di una licenza. Ad esempio, è abbastanza comune vedere un programma centrale per AEM Assets, mentre AEM Sites potrebbe essere utilizzato in più programmi corrispondenti a più esperienze online.
 
 >[!NOTE]
->Per maggiori informazioni, vedi [Distribuzione - Modalità di esecuzione](/help/implementing/deploying/overview.md#runmodes)
+>
+>I Edge Delivery Services AEM sono esposti come soluzione di livello superiore in Cloud Manager, pur essendo parte delle altre soluzioni principali dal punto di vista delle licenze. Ad esempio, AEM Sites con Edge Delivery Services.
 
-AEM as a Cloud Service è disponibile come istanza singola, dove ogni istanza rappresenta un ambiente AEM completo.
+Un programma può essere configurato con qualsiasi combinazione delle soluzioni di alto livello e ogni soluzione può supportare da componenti aggiuntivi uno-a-molti. Ad esempio, Commerce o Screens per AEM Sites, Dynamic Medie o Brand Portal per AEM Assets.
 
-Con AEM as a Cloud Service sono disponibili tre tipi di ambienti:
+![AEM as a Cloud Service - Programmi](assets/architecture-aem-edge-programs.png "AEM as a Cloud Service - Architettura di distribuzione")
 
-* **Ambiente di produzione**: ospita le applicazioni utilizzate dagli utenti business.
+### Ambienti {#environments}
 
-* **Ambiente stage**: è sempre associato a un unico ambiente di produzione con una relazione 1:1. L’ambiente stage viene utilizzato per vari test di prestazioni e qualità, prima che eventuali modifiche all’applicazione vengano inviate all’ambiente di produzione.
+Una volta creato un programma con le soluzioni AEM Sites, AEM Assets o AEM Forms, le istanze AEM associate verranno rappresentate sotto forma di ambienti AEM in questo programma.
 
-* **Ambiente di sviluppo**: consente agli sviluppatori di implementare le applicazioni AEM nelle medesime condizioni di esecuzione degli ambienti di stage e produzione.
+Esistono quattro tipi di [ambiente](/help/implementing/cloud-manager/manage-environments.md) disponibile con AEM as a Cloud Service:
 
-  Consulta [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=it#using-cloud-manager) per ulteriori dettagli.
+* Ambiente di produzione:
 
-* **Ambiente di sviluppo rapido**: consente di eseguire rapidamente le iterazioni di sviluppo per il debug di un codice nuovo o già esistente.
+   * Un ambiente di produzione ospita le applicazioni per gli utenti business ed esegue le esperienze live.
 
-## Programmi {#programs}
+* Ambiente stage:
 
-Qualsiasi nuovo progetto AEM è sempre associato a una singola base di codice specifica, in cui puoi memorizzare sia la configurazione che il codice personalizzato per il progetto. Queste informazioni sono memorizzate in un archivio di codice, accessibile tramite i consueti client Git, messi a disposizione al momento della creazione di nuovi programmi.
+   * Un ambiente stage è in genere associato a un ambiente di produzione con una relazione 1:1.
+   * L’ambiente stage è progettato principalmente per test automatizzati prima che le modifiche all’applicazione vengano inviate all’ambiente di produzione.
+      * Questo è indipendente dalle modifiche avviate da Adobe come parte di un aggiornamento di manutenzione o dalle distribuzioni del codice.
+      * Puoi anche eseguire test manuali in caso di distribuzione del codice.
+   * Il contenuto dell’ambiente di stage viene in genere mantenuto sincronizzato con il contenuto di produzione utilizzando la funzione di copia self-service dei contenuti.
+* Ambiente di sviluppo:
+   * Un ambiente di sviluppo consente agli sviluppatori di implementare e testare le applicazioni AEM nelle stesse condizioni di esecuzione degli ambienti di stage e produzione.
+   * Le modifiche passano attraverso una pipeline di distribuzione che consente gli stessi gate di qualità del codice e sicurezza delle pipeline di distribuzione di produzione.
+* Ambiente di sviluppo rapido (RDE):
+   * Un ambiente RDE consente di eseguire rapidamente le iterazioni di sviluppo durante la distribuzione di codice nuovo o esistente nelle istanze RDE, senza passare attraverso una pipeline di distribuzione formale come quella presente negli ambienti di sviluppo regolari.
 
-Un programma AEM è il contenitore che include:
+### Servizi di consegna Edge {#logical-architecture-edge-delivery-services}
 
-|  Elemento del programma |  Numero |
-|--- |--- |
-| Archivio del codice (Git) |  1 |
-| Immagine linea di base (Sites o Assets) |  1 |
-| Set di ambienti di stage e produzione (1:1) | 0 o 1 |
-| Ambienti non destinati alla produzione (RDE, sviluppo o dimostrazione) | Da 0 a N |
-| Pipeline per ogni ambiente | 0 o 1 |
+Un programma AEM può essere configurato con [Edge Delivery Services](/help/edge/overview.md) anche.
 
-Per AEM as a Cloud Service, inizialmente sono disponibili due tipi di programmi:
+Una volta configurata, l’AEM può fare riferimento agli archivi di codice GitHub utilizzati per creare le esperienze con i Edge Delivery Services. Di conseguenza, diventano disponibili nuove opzioni di configurazione per le esperienze associate. Ad esempio, puoi configurare la rete CDN gestita dall’Adobe, accedere alle metriche delle licenze o ai rapporti SLA.
 
-* AEM Cloud Sites Service
+## Architettura del servizio {#service-architecture}
 
-* AEM Cloud Assets Service
+L’elenco dei servizi componibili di alto livello in AEM as a Cloud Service può essere rappresentato con due segmenti: Gestione dei contenuti e Distribuzione delle esperienze:
 
-Entrambi consentono l’accesso a una serie di funzioni e funzionalità. Il livello di authoring contiene tutte le funzionalità di Sites e Risorse per tutti i programmi, ma i programmi delle risorse non avranno per impostazione predefinita un livello di pubblicazione né di anteprima.
+![Panoramica di AEM as a Cloud Service - con Edge Delivery Services](assets/architecture-aem-edge.png "Panoramica di AEM as a Cloud Service - con Edge Delivery Services")
 
-## Architettura runtime {#runtime-architecture}
+Per la gestione dei contenuti, esistono due set principali di servizi per l’authoring dei contenuti, entrambi rappresentati da *origini di contenuto*:
 
-Questa nuova architettura presenta diversi componenti principali:
+* Livello di authoring AEM: fornisce un’interfaccia basata su web (con API associate) per la gestione dei contenuti web. Funziona per entrambi gli approcci:
+   * Headful: tramite l’editor di pagine e l’editor universale
+   * Headless - tramite l’editor di frammenti di contenuto
+* Livello di authoring basato su documenti: consente di creare contenuti utilizzando applicazioni standard, ad esempio:
+   * Microsoft Word ed Excel tramite SharePoint
+   * Documentazione e fogli di Google - tramite Google Drive
 
-<!--- needs reworking -->
+Per la distribuzione delle esperienze, quando si utilizza AEM Sites o AEM Forms, sono disponibili anche due set principali di servizi, non reciprocamente esclusivi e che funzionano in una rete CDN (Content Delivery Network) gestita da un Adobe condivisa, come origini diverse:
 
-![AEM as a Cloud Service: architettura runtime](assets/concepts-03.png "AEM as a Cloud Service - Architettura runtime")
+* Livello di pubblicazione AEM:
+   * Esegue una farm di editori e dispatcher AEM standard che consente il rendering dinamico di pagine web e contenuti API (ad esempio, GraphQL) assemblati con contenuti pubblicati.
+   * Si basa principalmente sulla logica dell&#39;applicazione lato server.
+* Livello di pubblicazione della consegna Edge:
+   * Consente il rendering dinamico di pagine web e contenuti API da varie origini di contenuto, come il livello di authoring AEM o il livello di authoring basato su documenti.
+   * Si basa sulla logica dell&#39;applicazione lato client ed è progettato per garantire le massime prestazioni.
 
-* Per AEM Sites as a Cloud Service:
+Ci sono anche i principali servizi adiacenti:
 
-   * Per ogni ambiente ad alto livello permane il concetto di livello di authoring e livello di pubblicazione.
+* Livello delle risorse di consegna Edge:
+   * Consente la consegna di elementi multimediali approvati e pubblicati da AEM Assets. Ad esempio, immagini e video.
+   * Di solito si fa riferimento agli elementi multimediali dalle esperienze in esecuzione sul livello di pubblicazione AEM, sul livello di pubblicazione Edge Delivery o da qualsiasi altra applicazione Adobe Experience Cloud integrata con AEM Assets.
+* Livello di anteprima AEM e livello di anteprima Edge Delivery Services:
+   * Sono disponibili anche per le esperienze create rispettivamente con il livello di pubblicazione AEM o il livello di pubblicazione Edge Delivery.
+   * Consente agli autori di contenuti di visualizzare in anteprima il contenuto nel contesto prima delle operazioni di pubblicazione.
 
-   * Il livello di authoring è composto da due o più nodi all’interno di un singolo cluster di authoring e viene ridimensionato automaticamente in base all’attività di authoring.
+>[!NOTE]
+>
+>Per impostazione predefinita, i programmi solo Assets non dispongono di un livello di pubblicazione né di un livello di anteprima.
 
-      * Gli autori o i creatori dei contenuti accedono al livello di authoring di AEM per creare, modificare e gestire i contenuti.
+Ci sono altri servizi adiacenti:
 
-      * L’accesso al livello di authoring è gestito da Adobe Identity Management Services (IMS).
+* Servizio di replica:
+   * Situato tra il livello di gestione dei contenuti e il livello di distribuzione delle esperienze.
+   * È responsabile del trattamento del *pubblicare* operazioni emesse dagli autori dei contenuti, quindi fornitura dei contenuti pubblicati ai livelli di pubblicazione (AEM o Consegna Edge).
 
-      * L’integrazione e l’elaborazione di Assets utilizza un servizio dedicato di elaborazione Assets.
+  >[!NOTE]
+  >Il servizio di replica ha subito una riprogettazione completa rispetto alle versioni 6.x di AEM, in quanto il framework di replica delle versioni precedenti di AEM non viene più utilizzato per pubblicare contenuti.
+  >
+  >L’architettura più recente si basa su un *pubblicare e sottoscrivere* approccio con code di contenuti basate su cloud. Per il livello di pubblicazione dell’AEM, consente a un numero variabile di editori di abbonarsi al contenuto di pubblicazione ed è una parte essenziale per ottenere una scalabilità automatica vera e rapida per gli as a Cloud Service AEM
 
-   * Il livello di anteprima è composto da un singolo nodo di anteprima. Utilizzato per il controllo qualità dei contenuti prima della pubblicazione sul livello di pubblicazione.
+* Il servizio Content Repository:
+   * Viene utilizzato dal livello di authoring AEM.
+   * È un’istanza basata su cloud di un archivio di contenuti conforme a JCR, implementato dalla tecnologia Apache Oak.
+   * La persistenza dei contenuti si basa principalmente sull’archiviazione cloud basata su BLOB.
+* Il servizio CI/CD:
+   * Rappresenta il sottoinsieme delle funzionalità di Cloud Manager dedicate alla gestione delle pipeline di distribuzione negli ambienti AEM.
+* Il servizio di testing:
+   * Rappresenta l’infrastruttura sottostante utilizzata per eseguire:
+      * prove funzionali,
+      * Test dell’interfaccia utente: ad esempio, basati su script Selenium o Cypress,
+      * test di audit dell’esperienza: ad esempio, punteggi di Lighthouse,
 
-   * Il livello di pubblicazione è composto da due o più nodi all’interno di una singola farm di pubblicazione.
+     come parte di una pipeline di distribuzione in un ambiente AEM o come parte di una richiesta pull GitHub a un archivio del codice di consegna Edge.
+* Il servizio dati:
+   * È responsabile dell’esposizione dei dati dei clienti come le metriche delle licenze (ad esempio, Richieste di contenuti, Archiviazione, Utenti) o i rapporti sull’utilizzo (come il numero di caricamenti e download).
+   * I dati del cliente possono essere esposti tramite API e all’interno di interfacce utente del prodotto (come Cloud Manager).
+* Il servizio Real-User Metric (RUM):
+   * È responsabile della raccolta di metriche chiave da un’esperienza del cliente (come visualizzazioni di pagina, elementi vitali web di base, eventi di conversione), nonché della risposta alle query associate (ad esempio, visualizzazioni della pagina superiore per un determinato dominio negli ultimi 7 giorni).
+* Il servizio Assets Compute:
+   * È responsabile dell’elaborazione di immagini, video e documenti caricati, ad esempio file PDF e Adobe Photoshop. L’elaborazione può utilizzare Adobe Sensei per estrarre metadati di immagini e video (come tag descrittivi o toni di colore primari) e generare rappresentazioni (come dimensioni o formati diversi) con accesso a API come le API di Adobe Photoshop e Adobe Lightroom.
+* Il servizio Identity Management (IMS):
+   * È la posizione centrale responsabile della gestione e dell’autenticazione di utenti e gruppi di utenti per una determinata applicazione Adobe Experience Cloud (ad esempio, il livello di authoring di Cloud Manager o AEM).
+   * È accessibile tramite Adobe Admin Console.
 
-      * I nodi possono operare in modo indipendente l’uno dall’altro.
+## Architettura del sistema {#system-architecture}
 
-      * Ogni nodo è costituito da un editore AEM e da un server web dotato del modulo AEM Dispatcher.
+### Livelli di authoring, anteprima e pubblicazione AEM {#aem-author-preview-publish-tiers}
 
-      * Il nodo viene ridimensionato automaticamente in base alle esigenze di traffico del sito.
+I livelli Author e Publish dell’AEM sono implementati come un set di contenitori Docker, gestiti da un servizio standard di orchestrazione dei contenitori. L’architettura containerizzata risultante è un sistema completamente dinamico con un numero variabile di pod, dipendente dall’attività effettiva (per la gestione dei contenuti) e dal traffico effettivo (per la distribuzione dell’esperienza). Questo consente a AEM as a Cloud Service di adattarsi agli schemi di traffico man mano che cambiano.
 
-      * Per impostazione predefinita nell’area geografica principale è presente una singola farm di pubblicazione, tuttavia le [aree geografiche di pubblicazione aggiuntiva](/help/operations/additional-publish-regions.md) possono essere autorizzate.
+Il livello di authoring AEM funziona come un cluster di pod di authoring AEM che condividono un singolo archivio di contenuti. Un minimo di due pod consente la Business Continuity durante l&#39;esecuzione delle attività di manutenzione o durante un processo di distribuzione.
 
-      * Gli utenti finali o i visitatori del sito visitano il sito web tramite AEM Publish Service.
+Il livello di pubblicazione AEM funziona come una farm di istanze di pubblicazione AEM, ciascuna con il proprio archivio di contenuti pubblicati. Ogni editore è associato a una singola istanza di Apache dotata del modulo dispatcher dell’AEM per una vista materializzata del contenuto, che funge da origine per la rete CDN gestita dagli Adobi. Un minimo di due pod consente anche la business continuity, ma non è insolito vedere questo numero crescere in periodi di traffico elevato.
 
-* Per AEM Assets as a Cloud Service:
+Il livello di anteprima AEM è costituito da un singolo nodo AEM. Viene utilizzato per garantire la qualità dei contenuti prima della pubblicazione sul livello di pubblicazione. Sul livello di anteprima possono verificarsi tempi di inattività occasionali, in particolare durante le distribuzioni.
 
-   * L’architettura include solo un ambiente di authoring.
+### Servizi di consegna Edge {#system-architecture-edge-delivery-services}
 
-* Sia il livello di authoring, livello di anteprima, che quello di pubblicazione leggono e rendono persistente i contenuti da/a un servizio di archiviazione dei contenuti.
+I Edge Delivery Services funzionano su una rete CDN e su un’infrastruttura senza server per assemblare le pagine nel modo più performante. Quando viene richiesta una risorsa, l’infrastruttura senza server è responsabile della conversione del contenuto pubblicato in HTML semantico e funge da origine per la rete CDN.
 
-   * Il livello di pubblicazione e il livello di anteprima leggono i contenuti solo dal livello di persistenza.
+La conversione in HTML semantico avviene dal contenuto pubblicato distribuito dal livello di authoring dell’AEM o dall’ambiente di authoring basato su documenti.
 
-   * Il livello di authoring legge e scrive i contenuti da e verso il livello di persistenza.
+Il diagramma seguente illustra come modificare il contenuto di Sites in Microsoft Word (authoring basato su documenti) e pubblicarlo in Edge Delivery. Mostra anche il tradizionale metodo di pubblicazione AEM utilizzando i vari editor.
 
-   * L’archiviazione BLOB è condivisa tra il livello di pubblicazione, anteprima e authoring. I file non vengono *moved*.
+![AEM Sites as a Cloud Service - con Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service - con Edge Delivery Services")
 
-   * Quando il contenuto viene approvato dal livello di authoring, ciò indica che può essere attivato e quindi inviato al livello di persistenza del livello di pubblicazione (oppure al livello di anteprima). Ciò avviene tramite il servizio di replica, una pipeline middleware. Questa pipeline riceve il nuovo contenuto: i singoli nodi del servizio di pubblicazione (o servizio di anteprima) si abbonano al contenuto inviato alla pipeline.
+Poiché i Edge Delivery Services fanno parte di Adobe Experience Manager, Edge Delivery, AEM Sites e AEM Assets possono coesistere sullo stesso dominio. Questo è un caso d’uso comune per i siti web più grandi. Ad esempio, un cliente potrebbe voler migrare una pagina particolare con traffico elevato in Edge Delivery Services, mentre tutte le altre pagine potrebbero rimanere nel livello di pubblicazione AEM.
 
-     >[!NOTE]
-     >
-     >Per ulteriori dettagli, consulta [Replica](/help/operations/replication.md).
+## Architettura di sviluppo {#development-architecture}
 
-   * Sviluppatori e amministratori gestiscono l’applicazione AEM as a Cloud Service mediante Continuous Integration/Continuous Delivery (CI/CD), tramite [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager). Il servizio include distribuzioni di codice e configurazione tramite la pipeline CI/CD di Cloud Manager. I clienti di Cloud Manager visualizzano tutto ciò che riguarda il monitoraggio, la manutenzione e la risoluzione dei problemi, ad esempio, i file di registro.
+### Archivi di codice {#code-repositories}
 
-   * L’accesso ai livelli di authoring e pubblicazione avviene sempre tramite un load balancer, che è sempre aggiornato con i nodi attivi in ciascuno dei livelli.
+Il codice e la configurazione per i progetti AEM vengono memorizzati in un archivio del codice, da cui vengono rilasciate le pipeline di distribuzione quando vengono apportate modifiche. Esistono diversi tipi di archivi di codice:
 
-   * Per il livello di pubblicazione e di anteprima, come primo punto di ingresso è disponibile anche un servizio CDN (Continuous Delivery Network).
+* Full stack AEM:
+   * Per l’archiviazione del codice Java lato server e le configurazioni OSGI per i livelli di authoring e pubblicazione dell’AEM.
+* Front-end AEM:
+   * Per memorizzare codice JS, CSS e HTML lato client per i livelli di authoring e pubblicazione dell’AEM.
+Per ulteriori dettagli su clientlibs, consulta [Utilizzo delle librerie lato client su AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+* Livello web AEM:
+   * Memorizza i file di configurazione del dispatcher per il livello di pubblicazione AEM.
+* Configurazione AEM:
+   * Consente di memorizzare varie opzioni di configurazione (ad esempio impostazioni CDN o impostazioni delle attività di manutenzione) per il livello di pubblicazione AEM e il livello di pubblicazione Edge Delivery Services.
+* Distribuzione edge AEM:
+   * Per memorizzare il codice JS, CSS e HTML lato client per i siti generati con i Edge Delivery Services
 
-* Per le istanze dimostrative di AEM as a Cloud Service, l’architettura viene semplificata a un singolo nodo di authoring. Pertanto non presenta tutte le caratteristiche dell’ambiente di sviluppo, stage o produzione standard. In altre parole, possono anche verificarsi tempi di inattività e non è incluso il supporto di operazioni di backup e ripristino.
+### Pipeline di distribuzione {#deployment-pipelines}
 
-## Architettura di distribuzione {#deployment-architecture}
+Sviluppatori e amministratori gestiscono l’applicazione AEM as a Cloud Service tramite Continuous Integration/Continuous Delivery (CI/CD), tramite Cloud Manager. Cloud Manager espone inoltre qualsiasi cosa relativa al monitoraggio, alla manutenzione, alla risoluzione dei problemi (ad esempio, l’accesso ai file di registro) e alle licenze.
 
-Cloud Manager gestisce tutti gli aggiornamenti alle istanze di AEM as a Cloud Service. È una scelta obbligatoria, essendo l’unica soluzione per creare, testare e distribuire l’applicazione del cliente, sia per il livello di authoring che per quello di pubblicazione. Questi aggiornamenti possono essere attivati da Adobe quando è pronta una nuova versione di AEM Cloud Service oppure dal cliente stesso, quando è pronta una nuova versione della sua applicazione.
+![AEM as a Cloud Service: architettura di distribuzione](assets/architecture-aem-edge-deployment-pipelines.png "AEM as a Cloud Service - Architettura di distribuzione")
 
-Tecnicamente, l’implementazione avviene grazie al concetto di pipeline di distribuzione, associata a ogni ambiente presente all’interno di un programma. Quando una pipeline di Cloud Manager è in esecuzione, crea una nuova versione dell’applicazione del cliente per il livello di authoring, anteprima e pubblicazione. Tale risultato si ottiene combinando gli ultimi pacchetti cliente con la più recente immagine linea di base di Adobe. Quando le nuove immagini vengono create e testate correttamente, Cloud Manager automatizza completamente il cutover alla versione più recente dell’immagine tramite l’aggiornamento di tutti i nodi del servizio, secondo uno schema di aggiornamento in sequenza. Ciò non comporta tempi di inattività né per il servizio di authoring né per quello di pubblicazione.
+Cloud Manager gestisce tutti gli aggiornamenti alle istanze dell’AEM as a Cloud Service. È una scelta obbligatoria, essendo l’unica soluzione per generare, testare e distribuire l’applicazione del cliente ai livelli di authoring, anteprima e pubblicazione. Questi aggiornamenti possono essere attivati per Adobe, quando è pronta una nuova versione dell’AEM Cloud Service, oppure da te stesso, quando è pronta una nuova versione dell’applicazione.
 
-<!--- needs reworking -->
+Questa viene implementata da una pipeline di implementazione, associata a ogni ambiente all’interno di un programma. Quando una pipeline di Cloud Manager è in esecuzione, crea una nuova versione dell’applicazione del cliente, sia per il livello di authoring che per quello di pubblicazione. Tale risultato si ottiene combinando gli ultimi pacchetti cliente con la più recente immagine linea di base di Adobe.
 
-![AEM as a Cloud Service: architettura di distribuzione](assets/concepts-04.png "AEM as a Cloud Service - Architettura di distribuzione")
+La pipeline di distribuzione viene attivata quando i clienti apportano modifiche al codice o quando Adobe distribuisce una nuova versione di manutenzione.
 
-## Distribuzione dei contenuti {#content-distribution}
+In entrambi i casi viene eseguito lo stesso insieme di test automatizzati. È costituito da test:
 
-Con Adobe Experience Manager as a Cloud Service cambia il funzionamento della pubblicazione dei contenuti. Con AEM as a Cloud Service, il framework di replica delle versioni precedenti di AEM non viene più utilizzato per pubblicare le pagine (le modifiche vengono spostate dall’istanza di authoring a quelle di pubblicazione).
+* ha contribuito Adobe a garantire l’integrità del prodotto
+* test forniti dal cliente
+   * Test funzionali: http
+   * Test dell’interfaccia utente: basati sulla tecnologia Selenium o Cypress
 
-AEM as a Cloud Service adesso utilizza la [funzionalità di distribuzione dei contenuti Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) per spostare il contenuto appropriato. Tale funzionalità si basa su un servizio pipeline eseguito su Adobe I/O, che si trova al di fuori del runtime AEM.
+Questi test automatizzati vengono eseguiti nell’ambiente di staging, ed è per questo che è importante mantenere il contenuto dell’ambiente di staging il più vicino possibile al contenuto nell’istanza di produzione.
 
-La configurazione è automatizzata, con autoconfigurazione automatica quando i nodi di pubblicazione vengono aggiunti, rimossi o riciclati durante il runtime.
+Una volta superati tutti i test, il nuovo codice viene distribuito nell’ambiente di produzione.
 
-Una singola richiesta di pubblicazione o di annullamento della pubblicazione può includere più risorse, ma restituirà un unico stato applicato a tutte, e avrà esito positivo o negativo per tutte le risorse di AEM Publish Service. In questo modo le risorse di AEM Publish Service non presenteranno mai uno stato incoerente.
+### Aggiornamenti continui {#rolling-updates}
 
-**Diagramma dell’architettura di distribuzione dei contenuti di alto livello**
+Cloud Manager automatizza completamente il cut-over alla versione più recente dell’applicazione AEM aggiornando tutti i nodi di servizio con un pattern di aggiornamento continuo. Questo significa che c&#39;è **nessun downtime** per il servizio Author o Publish.
 
-![Diagramma dell’architettura di distribuzione dei contenuti di alto livello](assets/architecture-diagram.png "Diagramma dell’architettura di distribuzione dei contenuti di alto livello")
+## Importanti innovazioni dal AEM 6.x {#major-innovations-since-aem-6x}
 
-## Evoluzioni fondamentali {#key-evolutions}
+L’architettura più recente di AEM as a Cloud Service introduce alcune modifiche e innovazioni fondamentali rispetto alle generazioni precedenti (AEM 6.x e precedenti):
 
-La nuova architettura di AEM as a Cloud Service introduce alcune modifiche e innovazioni fondamentali rispetto alle generazioni precedenti:
-
-* Tutti i file (BLOB) vengono caricati e serviti direttamente da un archivio dati cloud. Il flusso di bit associato non passa mai attraverso la JVM dei servizi AEM Author e Publish. Di conseguenza, i nodi dei servizi di authoring e pubblicazione di AEM possono avere dimensioni più ridotte e risultare maggiormente compatibili con l’aspettativa di una rapida scalabilità automatica. Per i professionisti del settore, questo consente un’esperienza più rapida durante il caricamento e il download di immagini, video ecc.
+* Tutti i file vengono caricati e serviti direttamente da un archivio dati cloud. Il flusso di bit associato non passa mai attraverso la JVM dei servizi AEM Author e Publish. Di conseguenza, i nodi dei servizi di authoring e pubblicazione dell’AEM possono essere di dimensioni più ridotte e quindi più compatibili con l’aspettativa di una rapida scalabilità automatica. Per gli utenti business, questo consente un’esperienza più rapida durante il caricamento e il download di immagini, video e altre attività.
 
 * Tutte le operazioni che consistono nella pubblicazione di contenuto adesso includono una pipeline che segue uno schema di sottoscrizione. Il contenuto pubblicato viene inviato a varie code della pipeline, alle quali sono abbonati tutti i nodi del servizio di pubblicazione. Di conseguenza, il livello di authoring non deve essere a conoscenza del numero di nodi presenti nel servizio di pubblicazione, il che consente un rapido ridimensionamento automatico del livello di pubblicazione.
 
-* Il concetto di Golden Master è stato introdotto per automatizzare il ciclo di vita dei nodi di pubblicazione. Il Golden Master è un nodo di pubblicazione specializzato, a cui nessun utente finale accede e da cui vengono creati tutti i nodi del servizio di pubblicazione. Le operazioni di manutenzione, come la compattazione, vengono eseguite nell’archivio dei contenuti collegato al Golden Master. I nodi di pubblicazione vengono riciclati ogni giorno e non richiedono alcun tipo di manutenzione ordinaria. In passato, tale manutenzione comportava tempi di inattività, in particolare per l’istanza di authoring.
-
 * L’architettura separa completamente il contenuto dell’applicazione dal codice e dalla configurazione dell’applicazione. Tutto il codice e la configurazione diventano praticamente immutabili e vengono inseriti nell’immagine linea di base utilizzata per creare i vari nodi dei servizi di authoring e pubblicazione. Di conseguenza, esiste una garanzia assoluta che ogni nodo sia identico e che le modifiche al codice e alla configurazione possano essere apportate solo a livello globale, eseguendo una pipeline di Cloud Manager.
 
-## AEM con Edge Delivery Services {#aem-with-edge-delivery-services}
+* L’architettura include più microservizi basati su tecnologia senza server, in particolare con il runtime Adobe I/O
 
-Con l&#39;aggiunta dei Edge Delivery Services, l&#39;AEM offre esperienze eccezionali che guidano il coinvolgimento e le conversioni. L’AEM lo fa offrendo esperienze ad alto impatto veloci da creare e sviluppare. I Edge Delivery Services sono un insieme componibile di servizi che consentono un ambiente di sviluppo rapido in cui gli autori possono aggiornare e pubblicare rapidamente e nuovi siti vengono avviati rapidamente. Con questi Edge Delivery Services è possibile migliorare la conversione, ridurre i costi e velocizzare le attività relative ai contenuti.
-
-L’architettura aggiornata comprende:
-
-* Gestione dei contenuti, che ora include una selezione di editor:
-   * Editor visivo universale
-   * Editor frammento di contenuto
-   * Editor pagina
-   * Authoring basato su documenti da SharePoint o Google Drive
-* Consegna delle esperienze, che ora include:
-   * Servizi di consegna Edge
-* Servizi ausiliari per la distribuzione rapida ed efficiente di contenuti e codice
-
-![Panoramica di AEM as a Cloud Service - con Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "Panoramica di AEM as a Cloud Service - con Edge Delivery Services")
+## Ulteriori informazioni {#further-information}
 
 Consulta anche:
 
-* [Panoramica di AEM as a Cloud Service - con Edge Delivery Services](/help/edge/overview.md)
-* [Utilizzo dei Edge Delivery Services](/help/edge/using.md)
-* [Esplora l’architettura sottostante e le parti importanti dell’AEM as a Cloud Service ai Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
+* Servizi di consegna Edge:
+
+   * [Panoramica di AEM as a Cloud Service - con Edge Delivery Services](/help/edge/overview.md)
+   * [Utilizzo dei Edge Delivery Services](/help/edge/using.md)
+   * [Esplora l’architettura sottostante e le parti importanti dell’AEM as a Cloud Service ai Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

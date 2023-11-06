@@ -2,9 +2,9 @@
 title: Mappatura utenti e migrazione delle entità principali
 description: Panoramica sulla mappatura degli utenti e sulla migrazione delle entità in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
+source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '1003'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente
 
 ## Dettagli migrazione entità {#principal-migration-detail}
 
-Lo strumento Content Transfer e Cloud Acceleration Manager eseguiranno la migrazione al sistema cloud di tutte le entità associate al contenuto da migrare.  Lo strumento Content Transfer (Trasferimento contenuti) esegue questa operazione copiando tutte le entità dal sistema AEM di origine durante il processo di estrazione.  CAM Ingestion seleziona e migra solo le entità principali associate al contenuto da acquisire.
+Lo strumento Content Transfer e Cloud Acceleration Manager eseguiranno la migrazione al sistema cloud di tutte le entità associate al contenuto da migrare.  Lo strumento Content Transfer (Trasferimento contenuti) esegue questa operazione copiando tutte le entità dal sistema AEM di origine durante il processo di estrazione.  CAM Ingestion seleziona e migra solo le entità principali associate al contenuto da acquisire. Se un&#39;entità si trova in un criterio ACL o CUG di contenuto migrato, tale entità e tutti i gruppi in cui si trova verranno migrati i relativi gruppi predecessori (padre). Inoltre, se un’entità sul contenuto è un gruppo, verranno migrati anche tutti i suoi gruppi discendenti (figlio) e gli utenti.
 
 ## Dettagli mappatura utenti {#user-mapping-detail}
 
