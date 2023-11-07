@@ -3,10 +3,10 @@ title: Note sulla versione 2023.10.0 di Cloud Manager in Adobe Experience Manage
 description: Queste sono le note sulla versione 2023.10.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
+source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 19%
+source-wordcount: '599'
+ht-degree: 29%
 
 ---
 
@@ -29,12 +29,12 @@ La data di pubblicazione di Cloud Manager versione 2023.10.0 in AEM as a Cloud S
    * I miglioramenti variano a seconda del profilo del contenuto.
 * Automatico [aggiornamenti per gli ambienti di sviluppo](/help/implementing/cloud-manager/manage-environments.md#updating-environments) sono attivate per impostazione predefinita per i nuovi programmi, risparmiando tempo per eseguire gli aggiornamenti manualmente.
    * Questo aggiornamento verrà introdotto in modo graduale.
-* Con la versione di ottobre 2023 di Cloud Manager, le versioni Java sono in fase di aggiornamento tramite un rollout graduale.
-   * Le versioni secondarie di Java 8 e 11 e Maven sono state aggiornate e verranno implementate in modo graduale nei prossimi 2 mesi. La nuova versione include più correzioni di sicurezza e bug. Le nuove versioni sono:
-   * *Maven: 3.8.8*
-   * *Java 8 versione: /usr/lib/jvm/jdk1.8.0_371*
-   * *Java 11 versione: /usr/lib/jvm/jdk-11.0.20*
-   * [Consulta l’avviso OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) per informazioni dettagliate sulla sicurezza e sui bug risolti in questi aggiornamenti JDK.
+* Con la versione di ottobre 2023 di Cloud Manager, le versioni di Java sono in fase di aggiornamento tramite un rollout graduale.
+   * Le versioni secondarie di Java 8 e 11 e Maven sono state aggiornate e verranno implementate in modo graduale nei prossimi 2 mesi. La nuova versione include diverse correzioni di sicurezza e di bug. Le nuove versioni sono:
+      * **Maven:** `3.8.8`
+      * **Versione Java 8:** `/usr/lib/jvm/jdk1.8.0_371`
+      * **Java 11 versione:** `/usr/lib/jvm/jdk-11.0.20`
+   * [Consulta i consigli OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) per informazioni dettagliate sulle correzioni di sicurezza e dei bug in questi aggiornamenti JDK.
 
 ## Programma di adozione anticipata {#early-adoption}
 
@@ -66,3 +66,15 @@ Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti
 La dashboard sfrutta Google Lighthouse, uno strumento open-source automatizzato per migliorare la qualità delle app web. Puoi eseguirla su qualsiasi pagina web, pubblica o che richiede l’autenticazione. Sono disponibili controlli di prestazioni, accessibilità, applicazioni web progressive, SEO e altro ancora.
 
 Ti interessa testare il nuovo cruscotto? Invia un&#39;e-mail a `aem-lighthouse-pilot@adobe.com` dall’e-mail associata al tuo Adobe ID per iniziare.
+
+## Problemi noti {#known-issues}
+
+Esiste un bug noto che impedisce [configurare le pipeline di distribuzione](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) dall&#39;invio alla produzione.
+
+Se il **Sospendi prima della distribuzione in produzione** per una pipeline di distribuzione della configurazione è necessaria l’opzione, di seguito è riportata la soluzione alternativa consigliata fino alla risoluzione del bug.
+
+1. Eseguire la pipeline.
+1. Verifica il codice nell’ambiente di staging.
+1. Quando la distribuzione e l’approvazione diventano disponibili, fai clic su **Rifiuta**.
+1. Modifica la pipeline per disabilitare **Sospendi prima della distribuzione in produzione** opzione.
+1. Esegui nuovamente la pipeline. Verrà eseguito nuovamente sullo staging e quindi sulla produzione.
