@@ -3,9 +3,9 @@ title: Cerca best practice per [!DNL Adobe Experience Manager] as a [!DNL Cloud 
 description: Best practice per cercare, trovare e recuperare i metadati delle risorse all’interno dell’applicazione.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
+source-git-commit: 780f0dee9a2a0fd7fa63b93bdd8be6bc23eef04f
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2544'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ Specifica `classic car` come parola chiave di ricerca e fare clic su Cerca. È p
 
 La ricerca mostra risultati simili se si lavora nel **[!UICONTROL Visualizzazione risorse]** anche.
 
-[Guarda un video per eseguire una ricerca di base in AEM Assets](https://video.tv.adobe.com/v/3425489)
+>[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
 ## File e cartelle {#files-folders}
 
@@ -67,7 +67,7 @@ Seleziona la cartella dal percorso e passa alla cartella richiesta se desideri e
 
 ![Cerca in file e cartelle](assets/files-folders.png)
 
-[Guarda un video per eseguire ricerche in AEM Assets utilizzando file e cartelle](https://video.tv.adobe.com/v/3425487)
+>[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
 ## Operatori {#operators}
 
@@ -119,7 +119,7 @@ L&#39;asterisco è un operatore jolly utilizzato per ampliare la ricerca digitan
 * `car*` restituisce i cespiti con il lavaggio, il vettore, il trasporto e così via.
 * `*car` restituisce risorse con auto moderne, auto sportive e così via.
 
-[Guarda un video per eseguire una ricerca in AEM Assets utilizzando i caratteri jolly](https://video.tv.adobe.com/v/3425488)
+>[!VIDEO](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL Visualizzazione risorse]** non supporta l&#39;utilizzo di caratteri jolly.
 
@@ -187,7 +187,7 @@ Per cercare le risorse utilizzando lo scenario menzionato in **[!UICONTROL Visua
 1. Vai ai filtri di ricerca.
 1. Vai a Filtri. Sotto [!UICONTROL Tipo MIME], seleziona tutti i tipi MIME specificati, ma deseleziona PNG.
 
-[Guarda un video per eseguire ricerche in AEM Assets utilizzando i filtri](https://video.tv.adobe.com/v/3425486)
+>[!VIDEO](https://video.tv.adobe.com/v/3425486)
 
 ## Ricerca avanzata {#advanced-search}
 
@@ -241,7 +241,7 @@ Puoi acquisire un criterio specifico utilizzando vari filtri di ricerca. Tag è 
 
 La ricerca mostra risultati simili se si lavora nel **[!UICONTROL Visualizzazione risorse]** anche.
 
-[Guarda un video per eseguire ricerche in AEM Assets utilizzando la Ricerca avanzata](https://video.tv.adobe.com/v/3425490)
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
 **Scenario 9: trovare una corrispondenza simile per un&#39;auto di colore rosso**
 
