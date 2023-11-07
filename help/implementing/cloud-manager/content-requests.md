@@ -2,10 +2,10 @@
 title: Informazioni sulle richieste di contenuto di Cloud Service
 description: Se hai acquistato licenze per richieste di contenuto da Adobe, scopri i tipi di richieste di contenuto che Adobe Experience Cloud as a Service misura e le varianze con gli strumenti di reporting di Analytics di un’organizzazione.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 12%
+source-wordcount: '1164'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,7 @@ Le richieste di contenuto possono presentare varianze con gli strumenti di repor
 | Strumenti di monitoraggio e sicurezza di terze parti | Gli strumenti di monitoraggio e sicurezza possono generare richieste di contenuto per AEM che non vengono monitorate nei rapporti di Analytics. |
 | Accesso API | L’accesso a livello di programmazione a pagine o API Adobe Experience Manager può generare richieste di contenuto per AEM che non vengono tracciate nei rapporti di Analytics. |
 | Richieste di prelettura | L’utilizzo di un servizio di prelettura per precaricare le pagine al fine di aumentare la velocità può causare un aumento significativo del traffico delle richieste di contenuto. |
-| DDOS | Sebbene Adobe si impegni al massimo a rilevare e filtrare automaticamente il traffico dagli attacchi DDOS, non c’è alcuna garanzia che tutti i possibili attacchi DDOS vengano rilevati. |
+| DDOS | Adobe tenta di rilevare e filtrare automaticamente il traffico dagli attacchi DDOS, ma non garantisce che tutti i possibili attacchi DDOS vengano rilevati. |
 | Blocchi del traffico | L’utilizzo di un blocco del tracciamento in un browser può far sì che il tracciamento di alcune richieste non venga eseguito. |
 | Firewall | I firewall possono bloccare il tracciamento di Analytics. Questo scenario è più frequente con i firewall aziendali. |
 
@@ -59,7 +59,7 @@ Vedi anche [Dashboard delle licenze](/help/implementing/cloud-manager/license-da
 | Codice HTTP 400-499 | Escluso | Sono stati restituiti errori al visitatore se il contenuto non esiste (404) o si sono verificati altri problemi relativi al contenuto o alle richieste. |
 | Codice HTTP 300-399 | Escluso | Si tratta di richieste valide che verificano se qualcosa è cambiato sul server o reindirizzano la richiesta a un’altra risorsa. Non contengono contenuto in sé, quindi non sono fatturabili. |
 | Richieste indirizzate a /libs/* | Escluso | Richieste JSON interne dell’AEM, ad esempio il token CSRF non fatturabile. |
-| Traffico da attacchi DDOS | Escluso | Protezione DDOS. L’AEM rileva automaticamente alcuni degli attacchi DDOS e li blocca. Gli attacchi DDOS rilevati non sono fatturabili.<br><br>Tipi DDOS rilevati automaticamente:<br>· DDOSBlockedCiphersSHA<br>· DDOSBlockedPattern<br>· DDOSSuspiciousRequest |
+| Traffico da attacchi DDOS | Escluso | Protezione DDOS. L’AEM rileva automaticamente alcuni degli attacchi DDOS e li blocca. Gli attacchi DDOS rilevati non sono fatturabili. |
 | Monitoraggio New Relic as a Cloud Service AEM | Escluso | Monitoraggio globale as a Cloud Service dell’AEM. |
 | URL per i clienti per monitorare il programma di Cloud Service | Escluso | URL consigliato per monitorare esternamente la disponibilità.<br><br>`/system/probes/health` |
 | Servizio di riscaldamento del pod as a Cloud Service dell&#39;AEM | Escluso | Agente utente: skyline-service-warm/1.* |

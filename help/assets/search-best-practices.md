@@ -3,9 +3,9 @@ title: Cerca best practice per [!DNL Adobe Experience Manager] as a [!DNL Cloud 
 description: Best practice per cercare, trovare e recuperare i metadati delle risorse all’interno dell’applicazione.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2603'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ Specifica `classic car` come parola chiave di ricerca e fare clic su Cerca. È p
 
 La ricerca mostra risultati simili se si lavora nel **[!UICONTROL Visualizzazione risorse]** anche.
 
-<!--[Watch a video to perform a simple search in AEM Assets] ()-->
+[Guarda un video per eseguire una ricerca di base in AEM Assets](https://video.tv.adobe.com/v/3425489)
 
 ## File e cartelle {#files-folders}
 
@@ -67,7 +67,7 @@ Seleziona la cartella dal percorso e passa alla cartella richiesta se desideri e
 
 ![Cerca in file e cartelle](assets/files-folders.png)
 
-<!--[Watch a video to perform search in AEM Assets using Files and Folders] ()-->
+[Guarda un video per eseguire ricerche in AEM Assets utilizzando file e cartelle](https://video.tv.adobe.com/v/3425487)
 
 ## Operatori {#operators}
 
@@ -119,7 +119,7 @@ L&#39;asterisco è un operatore jolly utilizzato per ampliare la ricerca digitan
 * `car*` restituisce i cespiti con il lavaggio, il vettore, il trasporto e così via.
 * `*car` restituisce risorse con auto moderne, auto sportive e così via.
 
-<!--[Watch a video to perform a search in AEM Assets using wildcards] ()-->
+[Guarda un video per eseguire una ricerca in AEM Assets utilizzando i caratteri jolly](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL Visualizzazione risorse]** non supporta l&#39;utilizzo di caratteri jolly.
 
@@ -172,8 +172,6 @@ Esegui i seguenti passaggi in **[!UICONTROL Visualizzazione risorse]**:
 1. Vai a Filtri. Sotto [!UICONTROL Tipo MIME], seleziona [!UICONTROL PDF].
 1. Vai a [!UICONTROL Stato risorsa], seleziona [!UICONTROL Tutti] per includere tutte le risorse pubblicate e non pubblicate.
 
-<!--[Watch a video to perform search in AEM Assets using various filters] ()-->
-
 **Scenario 5: cercare tutte le immagini tranne PNG**
 
 Quando non sei sicuro del titolo o della metadescrizione di una risorsa, puoi utilizzare vari filtri di ricerca per rendere la ricerca più rilevante. Ad esempio, per cercare le risorse in **[!UICONTROL Visualizzazione amministratore]**, effettua le seguenti operazioni:
@@ -188,6 +186,8 @@ Per cercare le risorse utilizzando lo scenario menzionato in **[!UICONTROL Visua
 
 1. Vai ai filtri di ricerca.
 1. Vai a Filtri. Sotto [!UICONTROL Tipo MIME], seleziona tutti i tipi MIME specificati, ma deseleziona PNG.
+
+[Guarda un video per eseguire ricerche in AEM Assets utilizzando i filtri](https://video.tv.adobe.com/v/3425486)
 
 ## Ricerca avanzata {#advanced-search}
 
@@ -240,6 +240,8 @@ Puoi acquisire un criterio specifico utilizzando vari filtri di ricerca. Tag è 
 ![Cerca utilizzando i tag](assets/search-tags.png)
 
 La ricerca mostra risultati simili se si lavora nel **[!UICONTROL Visualizzazione risorse]** anche.
+
+[Guarda un video per eseguire ricerche in AEM Assets utilizzando la Ricerca avanzata](https://video.tv.adobe.com/v/3425490)
 
 **Scenario 9: trovare una corrispondenza simile per un&#39;auto di colore rosso**
 
