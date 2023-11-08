@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -87,9 +87,9 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2023 per un r
 
 [Filtra il traffico sulla rete CDN gestita dell’Adobe](/help/security/traffic-filter-rules-including-waf.md) dichiarando le regole che corrispondono al traffico del sito web in base alle proprietà, inclusi URL, indirizzo IP e agente utente, oppure impostando limiti di velocità di traffico personalizzati per evitare attacchi DoS. I clienti possono inoltre concedere in licenza un set di regole WAF (Web Application Firewall) avanzate per una protezione aggiuntiva contro le minacce sofisticate dei siti Web.
 
-Ti invitiamo a familiarizzare con le regole del filtro del traffico [prova di un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! Illustra i passaggi necessari per configurare una nuova pipeline di configurazione di Cloud Manager, dichiarare le regole in un file di configurazione e analizzare i registri CDN per rilevare eventuale traffico dannoso.
+Ti invitiamo a familiarizzare con le regole del filtro del traffico [prova di un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=it)! Illustra i passaggi necessari per configurare una nuova pipeline di configurazione di Cloud Manager, dichiarare le regole in un file di configurazione e analizzare i registri CDN per rilevare eventuale traffico dannoso.
 
-Le regole del filtro del traffico sono ora disponibili sugli ambienti di sviluppo, con un rollout graduale negli ambienti di staging e produzione a novembre. Puoi richiedere l’accesso anticipato tramite e-mail su stage e prod **aemcs-waf-adopter@adobe.com**.
+Le regole del filtro del traffico sono ora disponibili sugli ambienti di sviluppo, con un rollout graduale negli ambienti di staging e produzione a novembre. Puoi richiedere l’accesso anticipato all’ambiente di staging e produzione inviando una e-mail all’indirizzo **aemcs-waf-adopter@adobe.com**.
 
 Le regole avanzate del filtro del traffico WAF possono essere concesse in licenza entro la fine dell&#39;anno tramite le offerte di sicurezza avanzata o protezione WAF-DDoS.
 

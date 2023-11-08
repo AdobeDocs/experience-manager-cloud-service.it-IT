@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2167'
 ht-degree: 1%
 
 ---
@@ -22,12 +22,12 @@ ht-degree: 1%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
-Sebbene ogni modulo sia progettato per uno scopo specifico, nella maggior parte dei moduli sono presenti alcuni segmenti comuni, ad esempio fornire dettagli personali like nome e indirizzo, familiari, dettagli sul reddito e così via. Gli sviluppatori di moduli sono tenuti a creare questi segmenti comuni ogni volta che viene creato un nuovo modulo. L&#39;Forms adattivo offre un pratico meccanismo per creare un segmento del modulo like un pannello o un gruppo di campi una sola volta e riutilizzarli in Forms adattivi. Questi segmenti riutilizzabili e autonomi sono denominati frammenti di moduli adattivi.
+Anche se ogni modulo è progettato per uno scopo specifico, nella maggior parte dei moduli sono presenti alcuni segmenti comuni, ad esempio per fornire dati personali come nome e indirizzo, dettagli sulla famiglia, dettagli sul reddito e così via. Gli sviluppatori di moduli devono creare questi segmenti comuni ogni volta che viene creato un nuovo modulo. L’Adaptive Forms fornisce un comodo meccanismo per creare segmenti di modulo una sola volta, ad esempio un pannello o un gruppo di campi, e riutilizzarli in Adaptive Forms. Questi segmenti riutilizzabili e autonomi sono denominati Frammenti di modulo adattivi.
 
 
-## Crea un frammento {#create-a-fragment}
+## Creare un frammento {#create-a-fragment}
 
-Potete creare un frammento di modulo adattivo da zero o salvare un pannello in un modulo adattivo esistente come frammento.
+Puoi creare un frammento di modulo adattivo da zero o salvare un pannello in un modulo adattivo esistente come frammento.
 
 ### Crea frammento da zero {#create-fragment-from-scratch}
 
@@ -37,24 +37,29 @@ Potete creare un frammento di modulo adattivo da zero o salvare un pannello in u
 
    >[!NOTE]
    >
-   >Assicurarsi di specificare un nome univoco per il frammento. Se esiste già un altro frammento con lo stesso nome, il frammento non viene creato.
+   >Assicurati di specificare un nome univoco per il frammento. Se esiste già un altro frammento con lo stesso nome, la creazione del frammento non riesce.
 
-1. Fare clic per aprire la **scheda Modello** modulo e, dal **menu a discesa Seleziona da** , selezionare uno dei seguenti modelli per il frammento:
+1. Fai clic per aprire **Modello modulo** e dalla scheda **Seleziona da** dal menu a discesa, seleziona uno dei seguenti modelli per il frammento:
 
-   * **Nessuno**: specifica di creare il frammento da zero senza utilizzare alcun modello di modulo.
+   * **None**: specifica di creare il frammento da zero senza utilizzare alcun modello di modulo.
+
+     >[!NOTE]
+     >
+     > Nei Forms adattivi basati su componenti core, è possibile utilizzare più volte un singolo frammento di modulo all&#39;interno di un modulo. Supporta sia frammenti di modulo basati su nessuno che frammenti di modulo basati su schema.
+
    * **Modello modulo**: specifica di creare il frammento utilizzando un modello XDP caricato in [!DNL AEM Forms]. Seleziona il modello XDP appropriato come modello di modulo per il frammento.
 
    ![Creazione di un modulo adattivo utilizzando un modello di modulo come modello](assets/form-template-model.png)
 
-   Vengono visualizzati anche i sottomoduli contrassegnati come frammenti nel modello di modulo selezionato. Puoi selezionare un modulo secondario per Frammento di modulo adattivo dall’elenco a discesa.
+   Vengono inoltre visualizzati i sottomoduli contrassegnati come frammenti nel modello di modulo selezionato. È possibile selezionare un sottomodulo per Frammento di modulo adattivo dall&#39;elenco a discesa.
 
-   ![Seleziona sottomoduli dal modello di modulo specificato](assets/fragment-subform.png)
+   ![Selezionare i sottomoduli dal modello di modulo specificato](assets/fragment-subform.png)
 
-   È inoltre possibile creare un frammento di modulo adattivo utilizzando sottomoduli non contrassegnati come frammenti nel modello di modulo specificando l’espressione SOM per il sottomodulo nella casella a discesa.
+   Inoltre, è possibile creare un frammento di modulo adattivo utilizzando sottomoduli non contrassegnati come frammenti nel modello di modulo specificando l&#39;espressione SOM per il sottomodulo nella casella a discesa.
 
-   * **Schema XML**: specifica di creare il frammento utilizzando uno schema XML caricato in [!DNL AEM Forms]. Puoi caricare o selezionare dagli schemi XML disponibili come modello di modulo per il frammento.
+   * **Schema** XML: specifica di creare il frammento utilizzando uno schema XML caricato in [!DNL AEM Forms]. È possibile caricare o selezionare tra gli schemi XML disponibili come modello modulo per il frammento.
 
-   ![Creare un frammento di modulo adattivo basato su uno schema XML come modello](assets/xml-schema-model.png)
+   ![Crea come modello un frammento di modulo adattivo basato su uno schema XML](assets/xml-schema-model.png)
 
    Puoi anche creare un frammento di modulo adattivo selezionando dalla casella a discesa un complexType presente nello schema selezionato.
 
@@ -118,12 +123,12 @@ Se si sceglie **/** come directory principale del modello di frammento, la strut
 
 Qualsiasi frammento inserito in Adaptive Forms viene visualizzato come immagine segnaposto. Il segnaposto visualizza titoli contenenti fino a un massimo di dieci pannelli secondari nel frammento. Puoi configurare [!DNL AEM Forms] per mostrare il frammento completo invece dell’immagine segnaposto.
 
-Per visualizzare frammenti completi nei moduli, effettuare le seguenti operazioni:
+Per visualizzare i frammenti completi nei moduli, effettua le seguenti operazioni:
 
-1. Vai alla pagina di configurazione AEM console web all&#39;indirizzo https:host:[*[* porta *]*]/system/console/configMgr.
+1. Vai alla pagina di configurazione della console web AEM all’indirizzo https:[*host*]:[*porta*]/system/console/configMgr.
 
-1. Search e fate clic su **[!UICONTROL Servizio configurazione]** modulo adattivo per aprirlo in modalità di modifica.
-1. Disattiva **[!UICONTROL la casella di controllo Abilita segnaposto al posto del frammento]** per visualizzare frammenti completi anziché l&#39;immagine segnaposto.
+1. Cerca e fai clic su **[!UICONTROL Servizio configurazione modulo adattivo]** per aprirlo in modalità di modifica.
+1. Disattiva **[!UICONTROL Abilita segnaposto al posto del frammento]** per mostrare i frammenti completi anziché l’immagine segnaposto.
 
 ### Inserire un frammento in un modulo adattivo {#insert-a-fragment-in-an-adaptive-form}
 
@@ -144,21 +149,31 @@ Il frammento di modulo adattivo viene inserito per riferimento nel modulo adatti
 
 ### Incorporare un frammento in un modulo adattivo {#embed-a-fragment-in-adaptive-form}
 
-Puoi scegliere di incorporare un frammento di modulo adattivo in un modulo adattivo facendo clic su **Incorpora risorsa: &lt;*fragmentName*>** sulla barra degli strumenti del pannello del frammento aggiunto, come illustrato nell’immagine di esempio seguente.
+Potete scegliere di incorporare un frammento di modulo adattivo in un modulo adattivo facendo clic su **Incorpora risorsa: fragmentName *>*** pulsante sulla barra degli strumenti del pannello del frammento aggiunto, come illustrato nell&#39;immagine di esempio seguente.
 
 ![Incorporare un frammento di modulo in un modulo adattivo](assets/embed-fragment.png)
 
 >[!NOTE]
 >
->Il frammento incorporato non è più collegato al frammento autonomo. Puoi modificare i componenti nel frammento incorporato direttamente dal modulo adattivo.
+>Il frammento incorporato non è più collegato al frammento autonomo. È possibile modificare i componenti nel frammento incorporato dall&#39;interno del modulo adattivo.
 
-### Utilizzo di frammenti all’interno di frammenti {#using-fragments-within-fragments}
+### Uso dei frammenti all&#39;interno dei frammenti {#using-fragments-within-fragments}
 
-È possibile creare frammenti di moduli adattivi nidificati, ovvero trascinare un frammento all’interno di un altro frammento e creare una struttura di frammenti nidificata.
+È possibile creare frammenti di moduli adattivi nidificati, il che significa che è possibile trascinare un frammento in un altro frammento e avere una struttura di frammento nidificata.
 
 ### Modifica frammenti {#change-fragments}
 
 È possibile sostituire o modificare un frammento di modulo adattivo con un altro frammento utilizzando **Seleziona risorsa frammento** nella finestra di dialogo Modifica componente per il pannello Frammento di modulo adattivo.
+
+### Utilizzo di un frammento di modulo più volte in un modulo adattivo {#using-form-fragment-mutiple-times-in-af}
+
+È possibile utilizzare più volte un frammento di modulo basato su schema in un modulo adattivo per salvare i dati in modo univoco per ogni campo del frammento di modulo. Ad esempio, puoi utilizzare un frammento di modulo indirizzo per raccogliere i dettagli dell’indirizzo per indirizzi permanenti, di comunicazione e di presentazione in un modulo di richiesta di prestito.
+
+![utilizzo di più frammenti in un modulo adattivo](/help/forms/assets/using-multiple-fragment-af.gif)
+
+>[!NOTE]
+>
+> * Se in un modulo adattivo utilizzi più volte frammenti di modulo non basati su, si verifica la sincronizzazione dei dati tra i campi dei frammenti. È possibile utilizzare un singolo [frammento di modulo (basato sui componenti core)](/help/forms/adaptive-form-fragments-core-components.md)  più volte in un modulo. Supporta frammenti di modulo basati su nessuno e su schema senza problemi di sincronizzazione dei dati.
 
 ## Mappatura automatica dei frammenti per l’associazione dati {#auto-mapping-of-fragments-for-data-binding}
 
@@ -170,13 +185,13 @@ Puoi modificare la risorsa del frammento e i relativi binding dalla finestra di 
 >
 >Puoi anche trascinare un frammento di modulo adattivo associato dalla libreria Frammento di modulo adattivo nel Finder di contenuti AEM e fornire il riferimento di binding corretto dalla finestra di dialogo Modifica componente del pannello Frammento di modulo adattivo.
 
-## Gestire i frammenti {#manage-fragments}
+## Gestione dei frammenti {#manage-fragments}
 
-È possibile eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando [!DNL AEM Forms] UI.
+È possibile eseguire diverse operazioni sui frammenti di modulo adattivo utilizzando la [!DNL AEM Forms] interfaccia.
 
 1. Passa a `https://[hostname]:'port'/aem/forms.html`.
 
-1. Clic **Seleziona** nel [!DNL AEM Forms] Barra degli strumenti dell’interfaccia utente e seleziona un Frammento di modulo adattivo. La barra degli strumenti mostra le seguenti operazioni che è possibile eseguire sul frammento di modulo adattivo selezionato.
+1. Fate clic su **Seleziona** nella [!DNL AEM Forms] barra degli strumenti interfaccia e selezionate un frammento di modulo adattivo. Sulla barra degli strumenti sono visualizzate le seguenti operazioni che è possibile eseguire sul frammento di modulo adattivo selezionato.
 
 <table>
  <tbody>
@@ -235,11 +250,11 @@ Per localizzare un modulo adattivo che contiene frammenti di modulo adattivo, è
 
 * Assicurati che il nome del frammento sia univoco. Il frammento non viene creato se è presente un frammento con lo stesso nome.
 * In un modulo adattivo basato su XDP, se salvi un pannello come frammento che include un altro frammento XDP, il frammento risultante viene associato automaticamente al frammento XDP secondario. Nel caso di un modulo adattivo basato su XSD, il frammento risultante è associato alla directory principale dello schema.
-* Quando si crea un frammento di modulo adattivo, viene creato un nodo di frammento, che è simile al nodo guideContainer per un modulo adattivo, in CRXDe Lite.
-* Un frammento in un modulo adattivo che utilizza un modello di dati modulo diverso non è supportato. Ad esempio, un frammento basato su XDP non è supportato in un modulo adattivo basato su XSD e viceversa.
-* I frammenti di moduli adattivi sono disponibili per l&#39;uso tramite la scheda frammenti di moduli adattivi in AEM contenuto finder.
-* Qualsiasi espressione, script o stile in un frammento di modulo adattivo autonomo viene mantenuto quando viene inserito per riferimento o incorporato in un modulo adattivo.
-* Non è possibile modificare un frammento di modulo adattivo, inserito per riferimento, dall’interno di un modulo adattivo. Per modificarlo, è necessario modificare il frammento di modulo adattivo autonomo o incorporare il frammento nel modulo adattivo.
+* Quando crei un frammento di modulo adattivo, viene creato un nodo di frammento simile al nodo guideContainer per un modulo adattivo in CRXDe Lite.
+* Un frammento in un modulo adattivo che utilizza un modello dati del modulo diverso non è supportato. Ad esempio, un frammento basato su XDP non è supportato in un modulo adattivo basato su XSD e viceversa.
+* I Frammenti di moduli adattivi sono disponibili per l’utilizzo tramite la scheda Frammenti di moduli adattivi nel Finder di contenuti AEM.
+* Qualsiasi espressione, script o stile in un frammento di modulo adattivo autonomo viene mantenuto quando viene inserito tramite riferimento o incorporato in un modulo adattivo.
+* Non è possibile modificare un frammento di modulo adattivo inserito per riferimento dall&#39;interno di un modulo adattivo. Per apportare modifiche, puoi modificare il frammento di modulo adattivo autonomo o incorporarlo nel modulo adattivo.
 * Quando pubblichi un modulo adattivo, devi pubblicare i frammenti di modulo adattivo autonomi inseriti per riferimento nel modulo adattivo.
 * Quando ripubblichi un frammento di modulo adattivo aggiornato, le modifiche si riflettono nelle istanze pubblicate del modulo adattivo in cui viene utilizzato il frammento.
 * Il modulo adattivo contenente il componente Verifica non supporta gli utenti anonimi. Inoltre, non è consigliabile utilizzare il componente Verifica in un frammento di modulo adattivo.

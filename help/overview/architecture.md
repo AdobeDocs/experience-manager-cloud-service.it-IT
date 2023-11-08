@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -158,11 +158,11 @@ I Edge Delivery Services funzionano su una rete CDN e su un’infrastruttura sen
 
 La conversione in HTML semantico avviene dal contenuto pubblicato distribuito dal livello di authoring dell’AEM o dall’ambiente di authoring basato su documenti.
 
-Il diagramma seguente illustra come modificare il contenuto di Sites in Microsoft Word (authoring basato su documenti) e pubblicarlo in Edge Delivery. Mostra anche il tradizionale metodo di pubblicazione AEM utilizzando i vari editor.
+Il diagramma seguente illustra come modificare il contenuto di Sites in Microsoft Word (authoring basato su documenti) e pubblicarlo in Edge Delivery. Mostra anche il tradizionale metodo di pubblicazione di AEM utilizzando i vari editor.
 
 ![AEM Sites as a Cloud Service - con Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service - con Edge Delivery Services")
 
-Poiché i Edge Delivery Services fanno parte di Adobe Experience Manager, Edge Delivery, AEM Sites e AEM Assets possono coesistere sullo stesso dominio. Questo è un caso d’uso comune per i siti web più grandi. Ad esempio, un cliente potrebbe voler migrare una pagina particolare con traffico elevato in Edge Delivery Services, mentre tutte le altre pagine potrebbero rimanere nel livello di pubblicazione AEM.
+Poiché i Edge Delivery Services fanno parte di Adobe Experience Manager, Edge Delivery, AEM Sites e AEM Assets possono coesistere sullo stesso dominio. Questo è un caso d’uso comune per i siti Web più grandi. Ad esempio, un cliente potrebbe voler migrare una pagina particolare con traffico elevato in Edge Delivery Services, mentre tutte le altre pagine potrebbero rimanere nel livello di pubblicazione AEM.
 
 ## Architettura di sviluppo {#development-architecture}
 
@@ -228,5 +228,5 @@ Consulta anche:
 * Servizi di consegna Edge:
 
    * [Panoramica di AEM as a Cloud Service - con Edge Delivery Services](/help/edge/overview.md)
-   * [Utilizzo dei Edge Delivery Services](/help/edge/using.md)
+   * [Utilizzo di Edge Delivery Services](/help/edge/using.md)
    * [Esplora l’architettura sottostante e le parti importanti dell’AEM as a Cloud Service ai Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
