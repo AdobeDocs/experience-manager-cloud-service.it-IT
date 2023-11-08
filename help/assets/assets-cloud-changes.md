@@ -4,10 +4,10 @@ description: Modifiche di rilievo apportate [!DNL Adobe Experience Manager Asset
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 10%
+source-wordcount: '1038'
+ht-degree: 11%
 
 ---
 
@@ -51,14 +51,14 @@ Per eseguire una convalida end-to-end del codice e del processo, inclusi l’acq
 
 | Funzionalità o caso d’uso | Stato in [!DNL Experience Manager] as a [!DNL Cloud Service] | Commenti |
 |-----|-----|-----|
-| [Rilevamento di risorse duplicate](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Funziona diversamente | Consulta [come funzionava in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
+| [Rilevamento di risorse duplicate](/help/assets/detect-duplicate-assets.md) | Funziona diversamente | Consulta [come funzionava in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [Copie trasformate solo per posizionamento (FPO)](/help/assets/configure-fpo-renditions.md) | Funziona diversamente | I profili di elaborazione utilizzano i microservizi delle risorse per generare rappresentazioni FPO. Nell&#39;Experience Manager 6.5, una soluzione di terze parti come [!DNL ImageMagick] era disponibile per generare le rappresentazioni. |
 | Writeback di metadati | Funziona diversamente | Opzione disattivata per impostazione predefinita. Se necessario, abilita il modulo di avvio del flusso di lavoro corrispondente. Il writeback viene gestito dai microservizi delle risorse. |
 | Elaborazione delle risorse caricate tramite Gestione pacchetti | Necessità di intervento manuale | Rielabora manualmente utilizzando **[!UICONTROL Rielabora risorsa]** azione. |
 | Rilevamento tipo MIME | Non supportato. | Se carichi una risorsa digitale senza un’estensione o con un’estensione non corretta, questa potrebbe non essere elaborata come desiderato. Gli utenti possono comunque memorizzare i file binari senza un’estensione in DAM. Consulta [Rilevamento del tipo MIME in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Generazione di risorse secondarie per risorse composte | Non supportato. | I casi d’uso dipendenti come le annotazioni potrebbero non essere soddisfatti. Consulta [creazione di risorse secondarie in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). L’anteprima PDF di alcuni tipi di file è disponibile a partire da [Versione 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
 | Modificare le immagini | Non supportato | La modifica delle risorse non è supportata in Experience Manager as a Cloud Service. Consulta [come ha funzionato nell&#39;Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#editing-images). |
-| Home page | Non supportato | Consulta [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
+| Home page | Non supportato | Consulta [[!DNL Assets] Esperienza della pagina Home in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Estrai risorse dall’archivio ZIP | Non supportato | Consulta [Estrazione ZIP in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Valutazioni risorse | Non supportato | Il widget di valutazione nell’editor schema metadati non è supportato. |
 | Filtro di disposizione del contenuto | Non supportato | Un caso d’uso comune di `ContentDispositionFilter` consente agli amministratori di configurare [!DNL Experience Manager] per distribuire i file HTML e aprire i file PDF in linea anziché scaricarli. Nelle istanze Publish, puoi gestire la disposizione utilizzando la configurazione di Dispatcher. Nelle istanze Autore, Adobe non consiglia di modificare l’intestazione Disposizione contenuto. Consulta [Filtro eliminazione contenuto in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
@@ -71,16 +71,16 @@ Per eseguire una convalida end-to-end del codice e del processo, inclusi l’acq
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
@@ -93,4 +93,3 @@ Per eseguire una convalida end-to-end del codice e del processo, inclusi l’acq
 >* [Modifiche di rilievo](/help/release-notes/aem-cloud-changes.md)
 >* [Modifiche di rilievo [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Tutorial video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)
-

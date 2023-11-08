@@ -2,7 +2,7 @@
 title: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 87%
@@ -44,7 +44,7 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
 * Ora puoi utilizzare l’interfaccia utente di [!DNL Experience Manager Assets] per:
 
-   * Configura il [rilevamento delle risorse duplicate](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in un archivio.
+   * Configura il [rilevamento delle risorse duplicate](/help/assets/detect-duplicate-assets.md) in un archivio.
 
    * Configura l’[aggiunta di filigrane digitali](/help/assets/watermark-assets.md) alle immagini.
 
