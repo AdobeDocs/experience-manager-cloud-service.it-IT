@@ -4,10 +4,10 @@ description: Aggiungere le risorse digitali a [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
 workflow-type: tm+mt
-source-wordcount: '3156'
-ht-degree: 2%
+source-wordcount: '3188'
+ht-degree: 7%
 
 ---
 
@@ -58,13 +58,13 @@ Puoi anche scegliere di eseguire un’elaborazione aggiuntiva sulle risorse cari
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-Per caricare uno o più file, selezionali sul desktop e trascinali sull&#39;interfaccia utente (browser Web) nella cartella di destinazione. In alternativa, puoi avviare il caricamento dall’interfaccia utente.
+Per caricare uno o più file, selezionali sul desktop e trascinali sull&#39;interfaccia utente (browser Web) nella cartella di destinazione. In alternativa, puoi avviare il caricamento dall’interfaccia utente. [!DNL Experience Manager] può gestire cartelle con più di 1000 risorse. Se vuoi caricare altri elementi in questa cartella con più di 1000 elementi già esistenti, puoi ritardare il caricamento o la creazione della nuova cartella.
 
 >[!IMPORTANT]
 >
->Le risorse caricate in Experience Manager con un nome file superiore a 100 caratteri hanno un nome abbreviato quando vengono utilizzate in Dynamic Media.
+>Le risorse caricate in Experience Manager con un nome file superiore a 100 caratteri hanno un nome abbreviato quando vengono utilizzate in Dynamic Medie.
 >
->I primi 100 caratteri nel nome del file vengono utilizzati così come sono; tutti i caratteri rimanenti vengono sostituiti da una stringa alfanumerica. Questo metodo di ridenominazione garantisce un nome univoco quando la risorsa viene utilizzata in Dynamic Media. Inoltre, deve contenere la lunghezza massima consentita per il nome del file di risorse in Dynamic Media.
+>I primi 100 caratteri nel nome del file vengono utilizzati così come sono; tutti i caratteri rimanenti vengono sostituiti da una stringa alfanumerica. Questo metodo di ridenominazione garantisce un nome univoco quando la risorsa viene utilizzata in Dynamic Medie. Inoltre, deve contenere la lunghezza massima consentita per il nome del file di risorse in Dynamic Medie.
 
 
 1. In [!DNL Assets] nell’interfaccia utente, passa alla posizione in cui desideri aggiungere risorse digitali.
@@ -181,21 +181,21 @@ Per configurare lo strumento Importazione in blocco, effettuare le seguenti oper
 
 1. Seleziona la modalità di autenticazione richiesta dall’elenco a discesa. **Chiave di accesso Azure** fornisce accesso completo all’account di archiviazione Azure, mentre **Token SAS di Azure** consente all’amministratore di limitare le funzionalità del token utilizzando le autorizzazioni e i criteri di scadenza.
 
-1. Immetti il nome della cartella principale che contiene le risorse nell’origine dati in **[!UICONTROL Cartella di origine]** campo.
+1. Immetti il nome della cartella principale che contiene le risorse nell’origine dati nel campo **[!UICONTROL Cartella di origine]**.
 
 1. (Facoltativo) Specifica la dimensione minima in MB del file delle risorse da includere nel processo di acquisizione in **[!UICONTROL Filtra per dimensione min]** campo.
 
-1. (Facoltativo) Specifica la dimensione massima in MB del file delle risorse da includere nel processo di acquisizione di **[!UICONTROL Filtra per dimensione max]** campo.
+1. (Facoltativo) Specifica la dimensione massima in MB del file delle risorse da includere nel processo di acquisizione del campo **[!UICONTROL Filtra per dimensione max]**.
 
-1. (Facoltativo) Specifica un elenco separato da virgole di tipi MIME da escludere dall’acquisizione nel **[!UICONTROL Escludi tipi MIME]** campo. Ad esempio, `image/jpeg, image/.*, video/mp4`. Consulta [tutti i formati di file supportati](/help/assets/file-format-support.md).
+1. (Facoltativo) Specifica un elenco separato da virgole di tipi MIME da escludere dall’acquisizione nel **[!UICONTROL Escludi tipi MIME]** campo. Esempio: `image/jpeg, image/.*, video/mp4`. Consulta [tutti i formati di file supportati](/help/assets/file-format-support.md).
 
 1. Specifica un elenco separato da virgole di tipi MIME da includere dall’acquisizione nella **[!UICONTROL Includi tipi MIME]** campo. Consulta [tutti i formati di file supportati](/help/assets/file-format-support.md).
 
 1. Seleziona la **[!UICONTROL Elimina il file di origine dopo l’importazione]** opzione per eliminare i file originali dall&#39;archivio dati di origine dopo l&#39;importazione dei file [!DNL Experience Manager].
 
-1. Seleziona la **[!UICONTROL Modalità di importazione]**. Seleziona **Ignora**, **Sostituisci**, o **Crea versione**. La modalità Ignora è l’impostazione predefinita e, in questa modalità, l’importazione di una risorsa viene ignorata se esiste già. Vedi il significato di [sostituisci e crea opzioni versione](#handling-upload-existing-file).
+1. Seleziona la **[!UICONTROL Modalità di importazione]**. Seleziona **Ignora**, **Sostituisci** o **Crea versione**. La modalità Ignora è l’impostazione predefinita e, in questa modalità, l’importazione di una risorsa viene ignorata se esiste già. Vedi il significato di [sostituisci e crea opzioni versione](#handling-upload-existing-file).
 
-1. Per definire una posizione in DAM in cui importare le risorse utilizzando **[!UICONTROL Cartella risorse di destinazione]** , specifica un percorso. Esempio: `/content/dam/imported_assets`.
+1. Per definire una posizione in DAM in cui importare le risorse utilizzando il campo **[!UICONTROL Cartella risorse di destinazione]**, specifica un percorso. Esempio: `/content/dam/imported_assets`.
 
 1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel **[!UICONTROL File metadati]** campo. Specifica il file CSV nel percorso del BLOB di origine e fai riferimento al percorso durante la configurazione dello strumento Importazione in blocco. Il formato di file CSV a cui si fa riferimento in questo campo è lo stesso del formato di file CSV quando [Importare ed esportare in blocco i metadati delle risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Se si seleziona la **Elimina il file di origine dopo l’importazione** , filtrare i file CSV utilizzando **Escludi** o **Includi tipo MIME** o **Filtra per percorso/file** campi. È possibile utilizzare un’espressione regolare per filtrare i file CSV in questi campi.
 
@@ -207,7 +207,7 @@ Dopo aver creato la configurazione dello strumento Importazione in blocco, puoi 
 
 ### Modificare la configurazione {#edit-configuration}
 
-Per modificare i dettagli della configurazione, selezionarla e quindi fare clic su **[!UICONTROL Modifica]**. Non è possibile modificare il titolo della configurazione e l&#39;origine dati di importazione durante l&#39;operazione di modifica.
+Per modificare i dettagli della configurazione, selezionarla e quindi fare clic su **[!UICONTROL Modifica]**. Durante l’operazione di modifica non è possibile modificare il titolo della configurazione e l’origine dati di importazione.
 
 ### Elimina la configurazione {#delete-configuration}
 
@@ -215,7 +215,7 @@ Seleziona la configurazione e fai clic su **[!UICONTROL Elimina]** per eliminare
 
 ### Convalidare la connessione all’origine dati {#validate-connection}
 
-Per convalidare la connessione all&#39;origine dati, selezionare la configurazione e quindi fare clic su **[!UICONTROL spunta]**. Se la connessione ha esito positivo, nell’Experience Manager viene visualizzato il seguente messaggio:
+Per convalidare la connessione all&#39;origine dati, selezionare la configurazione e quindi fare clic su **[!UICONTROL spunta]**. Se la connessione ha esito positivo, Experience Manager presenta il seguente messaggio:
 
 ![Messaggio di completamento dell’importazione in blocco](assets/bulk-import-success-message.png)
 
@@ -317,7 +317,7 @@ Per pianificare un’importazione in blocco una tantum o ricorrente, effettua le
 
 1. Crea una configurazione di importazione in blocco.
 1. Seleziona la configurazione e seleziona **[!UICONTROL Pianificazione]** dalla barra degli strumenti.
-1. Imposta un’acquisizione una tantum o una pianificazione oraria, giornaliera o settimanale. Clic **[!UICONTROL Invia]**.
+1. Imposta un’acquisizione una tantum o una pianificazione oraria, giornaliera o settimanale. Fai clic su **[!UICONTROL Invia]**.
 
    ![Pianifica processo di acquisizione in blocco](assets/bulk-ingest-schedule1.png)
 
