@@ -2,9 +2,9 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
+source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1124'
 ht-degree: 12%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 12%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 14157 {#release-14157}
+## Versione 14227 {#release-14227}
 
-Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 14157, rilasciata pubblicamente il 7 novembre 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 14029.
+Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 14227, rilasciata pubblicamente il 9 novembre 2023. Questa versione di manutenzione è un aggiornamento della versione di manutenzione precedente, la 14029. La versione di manutenzione 14227 sostituisce 14157 per risolvere un problema.
 
 L’attivazione delle funzioni 2023.11.0 fornirà il set completo di funzioni per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it).
 
-### Miglioramenti {#enhancements-14157}
+### Miglioramenti {#enhancements-14227}
 
 * ASSETS-29631: Assets Cloud: utilizza dam:roles per una consegna/ricerca sicura.
 * CQ-4354515: Traduzioni: opzione per eliminare la traduzione delle risorse di riferimento.
@@ -40,7 +40,7 @@ L’attivazione delle funzioni 2023.11.0 fornirà il set completo di funzioni pe
 * SITES-16545: Frammenti di contenuto: aggiungi un endpoint per recuperare i riferimenti della variante di un frammento di contenuto.
 * SITES-16853: Frammenti di contenuto: Rimuovi /adobe/sites/cf/fragments/{fragmentId}/variation/{name}/tags.
 
-### Problemi risolti {#fixed-issues-14157}
+### Problemi risolti {#fixed-issues-14227}
 
 * Vari problemi di accessibilità risolti
 * ASSETS-31015: impossibile caricare i file in Assets con estensioni sconosciute.
@@ -85,7 +85,6 @@ L’attivazione delle funzioni 2023.11.0 fornirà il set completo di funzioni pe
 * SITES-16243: Frammenti di contenuto: Trova e sostituisci non funziona con campi con Rendering come: Multiplo.
 * SITES-16250: Frammenti di contenuto: l’applicazione di patch a una CF talvolta restituisce un’intestazione etag non corretta.
 * SITES-16686: Frammenti di contenuto: i riferimenti non di frammento di frammento di contenuto vengono serializzati quando il riferimento principale è alla profondità massima.
-* SITES-16234: ContextHub: Correct Selected Brand Activity Name non viene visualizzato quando si avvia il targeting.
 * SITES-12880: Fast-Track: correzione della localizzazione per Sites > Configurazione di Analytics.
 * SITES-16103: Frammenti di esperienza: le opzioni di Target non vengono visualizzate in Cloud Service a causa di un errore della console.
 * SITES-16001: MSM: possibilità di escludere i componenti per più campi dalla configurazione di rollout durante la creazione di Live Copy.
@@ -102,11 +101,11 @@ L’attivazione delle funzioni 2023.11.0 fornirà il set completo di funzioni pe
 * FORMS-11546: Lighthouse ha rilevato un’etichetta ARIA mancante per i pannelli ripetuti in un modulo adattivo, influendo sull’accessibilità.
 * FORMS-11095: l’attributo ARIA non è definito correttamente per i campi numero di telefono, indirizzo e-mail e numero, causando problemi di accessibilità.
 
-### Problemi noti {#known-issues-14157}
+### Problemi noti {#known-issues-14227}
 
 Nessuno.
 
-### Tecnologie incorporate {#embedded-tech-14157}
+### Tecnologie incorporate {#embedded-tech-14227}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
