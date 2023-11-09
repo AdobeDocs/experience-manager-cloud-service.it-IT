@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
+source-git-commit: 1835559f9becea5f79d179be9b01efbe67c82151
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2148'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ Puoi scegliere di incorporare un frammento di modulo adattivo in un modulo adatt
 
 >[!NOTE]
 >
-> Se si utilizzano più volte frammenti di modulo basati su nessuno in un modulo adattivo, si verificherà la sincronizzazione dei dati tra i campi dei frammenti. È possibile utilizzare più volte in un modulo un singolo [frammento di modulo (basato su componenti core)](/help/forms/adaptive-form-fragments-core-components.md) che non sia associato ad alcun modello dati modulo senza problemi di sincronizzazione dei dati.
+> Se si utilizzano più volte frammenti di modulo basati su nessuno in un modulo adattivo, si verifica un problema di sincronizzazione dei dati tra i campi dei frammenti. È possibile utilizzare più volte in un modulo un singolo [frammento di modulo (basato su componenti core)](/help/forms/adaptive-form-fragments-core-components.md) non legato ad alcun modello di dati modulo, senza problemi di sincronizzazione dei dati.
 
 ## Automatico mappatura di frammenti per il binding dei dati {#auto-mapping-of-fragments-for-data-binding}
 
