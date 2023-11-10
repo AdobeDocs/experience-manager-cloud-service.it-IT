@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: b9fb484135fb2d16758548c525b59f5ba011afb5
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2203'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 [!DNL Experience Manager Forms] L’integrazione dei dati consente di configurare e connettersi a diverse origini dati. Sono supportati i seguenti tipi predefiniti:
 
-* Database relazionali: MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], e [!DNL Oracle RDBMS]
+* Database relazionali: MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL e [!DNL Oracle RDBMS]
 * Servizi Web RESTful
 * Servizi web basati su SOAP
 * Servizi OData (versione 4.0)
