@@ -2,10 +2,10 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 48%
+source-wordcount: '2442'
+ht-degree: 45%
 
 ---
 
@@ -50,7 +50,7 @@ L’interfaccia utente è divisa in cinque aree principali.
 * [Intestazione dell’editor universale](#universal-editor-header)
 * [La barra modalità](#mode-rail)
 * [L’editor](#editor)
-* [La barra dei componenti](#component-rail)
+* [Barra delle proprietà](#properties-rail)
 
 ![Interfaccia utente dell’editor universale](assets/ui.png)
 
@@ -102,11 +102,19 @@ L’intestazione dell’editor universale è sempre presente nella parte superio
 
 ![Intestazione dell’editor universale](assets/universal-editor-header.png)
 
-#### Il menu hamburger {#hamburger-menu}
+#### Pulsante Home {#home-button}
 
-Il menu hamburger non è ancora implementato.
+Il pulsante Home consente di tornare alla pagina iniziale di Universal Editor
 
-![Menu hamburger](assets/hamburger-menu.png)
+![Menu hamburger](assets/home-button.png)
+
+Nella pagina iniziale è possibile immettere l&#39;URL del sito che si desidera modificare con l&#39;editor universale.
+
+![Pagina iniziale](assets/start-page.png)
+
+>[!NOTE]
+>
+>Qualsiasi pagina da modificare con l’editor universale deve essere [abilitata per supportare l’editor universale.](getting-started.md)
 
 #### Barra della posizione {#location-bar}
 
@@ -121,6 +129,12 @@ La barra della posizione mostra l’indirizzo della pagina che stai modificando.
 >[!NOTE]
 >
 >Qualsiasi pagina da modificare con l’editor universale deve essere [abilitata per supportare l’editor universale.](getting-started.md)
+
+#### Impostazioni intestazione autenticazione {#authentication-settings}
+
+Se hai bisogno di impostare un segreto di autenticazione, tocca o fai clic sull’icona delle impostazioni dell’intestazione di autenticazione.
+
+![Pulsante Impostazioni intestazione autenticazione](assets/authentication-header-settings.png)
 
 #### Impostazioni emulatore {#emulator}
 
@@ -162,7 +176,7 @@ Tocca o fai clic sul pulsante Pubblica per poter pubblicare le modifiche al cont
 
 ### La barra modalità {#rail}
 
-La barra modalità è sempre presente sul lato sinistro dell’editor. Consente all’editor di passare facilmente da una modalità di modifica all’altra.
+La barra della modalità si trova appena sotto il pulsante Home ed è sempre presente lungo il lato sinistro dell’editor. L&#39;editor può essere commutato facilmente tra le diverse modalità di utilizzo.
 
 ![La barra modalità](assets/mode-rail.png)
 
@@ -176,52 +190,41 @@ In modalità anteprima, la pagina viene riprodotta nell’editor come verrebbe v
 >
 >Usa il tasto di scelta rapida `P` per passare alla modalità anteprima.
 
-#### Modalità contenuto multimediale {#media-mode}
+#### Modalità componenti {#component-mode}
 
-In modalità multimediale, l’autore di contenuto può fare clic per selezionare il contenuto multimediale.
-
-![Modalità contenuto multimediale](assets/media-mode.png)
-
-I dettagli del contenuto vengono visualizzati nella barra dei componenti, che consente anche all’autore di [modificare il contenuto multimediale.](#editing-media)
-
->[!TIP]
->
->Usa il tasto di scelta rapida `M` per passare alla modalità contenuto multimediale.
-
-#### Modalità componente {#component-mode}
-
-In modalità componente, l’autore di contenuto può fare clic su per selezionare i componenti e modificarli, tra cui:
+In modalità componenti, l’autore di contenuto può fare clic su per selezionare i componenti e modificarli, tra cui:
 
 * [Modifica del testo normale](#editing-content) sul posto.
-* [Modifica del testo RTF](#editing-rich-text) nella barra dei componenti sono presenti ulteriori opzioni di formattazione.
+* [Modifica del testo RTF](#editing-rich-text) nella barra delle proprietà vengono visualizzate ulteriori opzioni di formattazione.
+* [Modifica del contenuto multimediale](#editing-media)
 * [Modifica di frammenti di contenuto](#edit-content-fragment)
 
-![Modalità componente](assets/component-mode.png)
+![Modalità Componenti](assets/component-mode.png)
 
-Quando selezioni un [Frammento di contenuto](/help/assets/content-fragments/content-fragments.md), i relativi dettagli vengono visualizzati nella barra dei componenti, dove è possibile modificare il Frammento di contenuto.
+Quando selezioni un componente, i dettagli del suo contenuto vengono visualizzati nel [barra delle proprietà.](#properties-rail) A seconda del tipo di contenuto, puoi modificare direttamente o nella barra delle proprietà.
 
 >[!TIP]
 >
->Usa il tasto di scelta rapida `C` per passare alla modalità componente.
+>Utilizza il tasto di scelta rapida `C` per passare alla modalità componenti.
 
 ### L’editor {#editor}
 
 L’editor occupa la maggior parte della finestra ed è l’area in cui viene eseguito il rendering della pagina specificata nella [barra della posizione](#location-bar).
 
-* Se l’editor è in [modalità componente,](#component-mode) il contenuto sarà modificabile, ma non puoi seguire i collegamenti.
+* Se l’editor è in [modalità componenti,](#component-mode) il contenuto sarà modificabile, ma non puoi seguire i collegamenti.
 * Se l’editor è in [modalità anteprima,](#preview-mode) il contenuto sarà navigabile e potrai seguire i collegamenti, ma non puoi modificarlo.
 
 ![Editor](assets/editor.png)
 
-### Barra dei componenti {#component-rail}
+### Barra delle proprietà {#properties-rail}
 
-La barra dei componenti è sempre presente lungo il lato destro dell’editor. A seconda della modalità, può mostrare i dettagli di un componente selezionato nel contenuto o la gerarchia dei contenuti della pagina.
+La barra delle proprietà è sempre presente lungo il lato destro dell’editor. A seconda della modalità, può mostrare i dettagli di un componente selezionato nel contenuto o la gerarchia dei contenuti della pagina.
 
-![La barra dei componenti](assets/component-rail.png)
+![Barra delle proprietà](assets/component-rail.png)
 
 #### Modalità proprietà {#properties-mode}
 
-In modalità proprietà, la barra mostra le proprietà del componente attualmente selezionato nell’editor. Questa è la modalità predefinita della barra dei componenti quando viene caricata una pagina.
+In modalità proprietà, la barra mostra le proprietà del componente attualmente selezionato nell’editor. Questa è la modalità predefinita della barra delle proprietà quando viene caricata una pagina.
 
 ![Modalità proprietà](assets/properties-mode.png)
 
@@ -234,20 +237,6 @@ Nota che non tutti i componenti hanno dettagli che possono essere visualizzati e
 >[!TIP]
 >
 >Usa il tasto di scelta rapida `D` per passare alla modalità proprietà.
-
-##### Modifica {#edit}
-
-In [modalità componente,](#component-mode) le opzioni di modifica per il componente selezionato vengono visualizzate nella barra dei componenti. Nella barra dei componenti puoi modificare il componente selezionato. Tuttavia, puoi anche toccare o fare clic sul pulsante Modifica.
-
-![Icona Modifica](assets/edit.png)
-
-Toccando o facendo clic sul pulsante di modifica si apre [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in una nuova scheda. Questo consente di accedere a tutte le funzionalità dell’Editor frammento di contenuto per modificare il frammento di contenuto associato.
-
-A seconda delle esigenze del flusso di lavoro, puoi modificare il Frammento di contenuto nell’Editor universale o direttamente nell’Editor Frammento di contenuto.
-
->[!TIP]
->
->Utilizza il tasto di scelta rapida `E` per modificare un componente selezionato.
 
 #### Modalità struttura contenuto {#content-tree-mode}
 
@@ -263,13 +252,29 @@ Quando si seleziona un elemento nella struttura del contenuto, l’editor scorre
 >
 >Usa il tasto di scelta rapida `F` per passare alla modalità struttura contenuto.
 
+##### Modifica {#edit}
+
+In [modalità componenti,](#component-mode) le opzioni di modifica per il componente selezionato vengono visualizzate nella barra delle proprietà. Nella barra delle proprietà puoi modificare il componente selezionato. Se il componente selezionato è un frammento di contenuto, puoi anche toccare o fare clic sul pulsante Modifica.
+
+![Icona Modifica](assets/edit.png)
+
+Toccando o facendo clic sul pulsante di modifica si apre [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in una nuova scheda. Questo consente di accedere a tutte le funzionalità dell’Editor frammento di contenuto per modificare il frammento di contenuto associato.
+
+A seconda delle esigenze del flusso di lavoro, puoi modificare il Frammento di contenuto nell’Editor universale o direttamente nell’Editor Frammento di contenuto.
+
+>[!TIP]
+>
+>Utilizza il tasto di scelta rapida `E` per modificare un componente selezionato.
+
 ##### Aggiungi {#add}
 
-Se selezioni un componente contenitore nella struttura del contenuto o nell’editor, l’opzione aggiungi viene visualizzata nella barra dei componenti.
+Se selezioni un componente contenitore nella struttura del contenuto o nell’editor, l’opzione aggiungi viene visualizzata nella barra delle proprietà.
 
 ![Icona Aggiungi](assets/ue-add-component-icon.png)
 
 Toccando o facendo clic sul pulsante Aggiungi si apre un menu a discesa dei componenti disponibili per [aggiungi al contenitore selezionato.](#adding-components)
+
+![Aggiungi menu di scelta rapida](assets/add-context-menu.png)
 
 >[!TIP]
 >
@@ -277,7 +282,7 @@ Toccando o facendo clic sul pulsante Aggiungi si apre un menu a discesa dei comp
 
 ##### Eliminare {#delete}
 
-Se selezioni un componente all’interno di un componente contenitore nella struttura del contenuto o nell’editor, l’opzione Elimina viene visualizzata nella barra dei componenti.
+Se selezioni un componente all’interno di un componente contenitore nella struttura del contenuto o nell’editor, l’opzione Elimina viene visualizzata nella barra delle proprietà.
 
 ![Icona Elimina](assets/ue-delete-component-icon.png)
 
@@ -289,51 +294,51 @@ Toccando o facendo clic sul pulsante Elimina [elimina il componente.](#deleting-
 
 ## Modifica del contenuto {#editing-content}
 
-La modifica del contenuto è semplice e intuitiva. In modalità di modifica ([modalità multimediale](#media-mode) e [modalità componente](#component-mode)), quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato con una casella blu.
+La modifica del contenuto è semplice e intuitiva. In entrata [modalità componenti](#component-mode)Quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato con una casella blu.
 
 ![Il contenuto modificabile viene evidenziato da una casella blu](assets/editable-content.png)
 
 >[!TIP]
 >
->In modalità di modifica, tocca o fai clic sul contenuto per selezionarlo e modificarlo. Per navigare nel contenuto tramite i seguenti collegamenti, passa a [modalità anteprima.](#preview-mode)
+>In modalità componenti, tocca o fai clic sul contenuto per selezionarlo e modificarlo. Per navigare nel contenuto tramite i seguenti collegamenti, passa a [modalità anteprima.](#preview-mode)
 
-A seconda della [modalità](#mode-rail) in e nel contenuto selezionato, possono essere disponibili opzioni di modifica locali diverse e puoi rivedere proprietà aggiuntive per il contenuto utilizzando [barra dei componenti.](#component-rail)
+A seconda del contenuto selezionato, è possibile che siano disponibili diverse opzioni di modifica diretta e che siano disponibili ulteriori informazioni e opzioni per il contenuto nel [barra delle proprietà.](#properties-rail)
 
 ### Modifica del testo normale {#edit-plain-text}
 
-Se ti trovi in [modalità componente](#component-mode) e selezionare un componente testo normale, puoi modificare il testo nella posizione facendo doppio clic o toccando due volte il componente.
+Se ti trovi in [modalità componenti](#component-mode) e selezionare un componente testo normale, puoi modificare il testo nella posizione facendo doppio clic o toccando due volte il componente.
 
 ![Modifica del contenuto](assets/editing-content.png)
 
 Premi Invio/Ritorna o tocca o fai clic all’esterno della casella di testo per salvare le modifiche.
 
-Quando tocchi o fai clic per selezionare il componente testo, i relativi dettagli vengono visualizzati nella barra dei componenti. Puoi anche modificare il testo nella barra.
+Quando tocchi o fai clic per selezionare il componente testo, i relativi dettagli vengono visualizzati nella barra delle proprietà. Puoi anche modificare il testo nella barra.
 
-![Modifica del testo nella barra dei componenti](assets/ue-editing-text-component-rail.png)
+![Modifica del testo nella barra delle proprietà](assets/ue-editing-text-component-rail.png)
 
-Inoltre, i dettagli sul testo sono disponibili nella barra dei componenti. Le modifiche vengono salvate automaticamente una volta che lo stato attivo lascia il campo modificato nella barra dei componenti.
+Inoltre, i dettagli sul testo sono disponibili nella barra delle proprietà. Le modifiche vengono salvate automaticamente una volta che lo stato attivo lascia il campo modificato nella barra delle proprietà.
 
 ### Modifica del testo formattato {#edit-rich-text}
 
-Se ti trovi in [modalità componente](#component-mode) e selezionare un componente testo RTF, puoi modificare il testo nella posizione facendo doppio clic o toccando due volte il componente.
+Se ti trovi in [modalità componenti](#component-mode) e selezionare un componente testo RTF, puoi modificare il testo nella posizione facendo doppio clic o toccando due volte il componente.
 
 Premi Invio/Ritorna o tocca o fai clic all’esterno della casella di testo per salvare le modifiche.
 
 ![Modifica di un componente formato RTF](assets/rich-text-editing.png)
 
-Inoltre, le opzioni di formattazione e i dettagli sul testo sono disponibili nella barra dei componenti. Le modifiche vengono salvate automaticamente una volta che lo stato attivo lascia il campo modificato nella barra dei componenti.
+Inoltre, le opzioni di formattazione e i dettagli sul testo sono disponibili nella barra delle proprietà. Le modifiche vengono salvate automaticamente una volta che lo stato attivo lascia il campo modificato nella barra delle proprietà.
 
 ### Editing di file multimediali {#edit-media}
 
-Se ti trovi in [modalità multimediale](#media-mode) quando selezioni un’immagine puoi visualizzarne i dettagli nella barra dei componenti.
+Se ti trovi in [modalità componenti](#component-mode) se selezioni un’immagine, puoi visualizzarne i dettagli nella barra delle proprietà.
 
 ![Editing di file multimediali](assets/ue-edit-media.png)
 
-Tocca o fai clic su **Sostituisci** sotto l’anteprima dell’immagine selezionata nella barra dei componenti, per sostituirla con un’altra immagine della libreria di risorse.
+Tocca o fai clic su **Sostituisci** nella barra delle proprietà, sotto l’anteprima dell’immagine selezionata, per sostituirla con un’altra immagine della libreria di risorse.
 
 1. Il [selettore risorse](/help/assets/asset-selector.md#using-asset-selector) viene visualizzata una finestra che consente di selezionare una risorsa.
 1. Tocca o fai clic su per selezionare una nuova risorsa.
-1. Tocca o fai clic su **Seleziona** per tornare alla barra dei componenti in cui la risorsa è stata sostituita.
+1. Tocca o fai clic su **Seleziona** per tornare alla barra delle proprietà in cui è stata sostituita la risorsa.
 
 Le modifiche vengono salvate automaticamente nel contenuto.
 
@@ -343,15 +348,15 @@ Le modifiche vengono salvate automaticamente nel contenuto.
 
 ### Modifica di frammenti di contenuto {#edit-content-fragment}
 
-Se ti trovi in [modalità componente](#component-mode) e selezioni una [Frammento di contenuto,](/help/sites-cloud/administering/content-fragments/overview.md) puoi modificarne i dettagli nella barra dei componenti.
+Se ti trovi in [modalità componenti](#component-mode) e selezioni una [Frammento di contenuto,](/help/sites-cloud/administering/content-fragments/overview.md) puoi modificarne i dettagli nella barra delle proprietà.
 
 ![Modifica di un frammento di contenuto](assets/ue-edit-cf.png)
 
-I campi definiti nel modello di contenuto del frammento di contenuto selezionato sono visualizzati e modificabili nella barra dei componenti.
+I campi definiti nel modello di contenuto del frammento di contenuto selezionato vengono visualizzati e modificabili nella barra delle proprietà.
 
 Se selezioni un campo correlato a un frammento di contenuto, il frammento di contenuto viene caricato nella barra dei componenti e il campo viene scorruto automaticamente in.
 
-Le modifiche vengono salvate automaticamente una volta che lo stato attivo lascia il campo modificato nella barra dei componenti.
+Le modifiche vengono salvate automaticamente una volta che lo stato attivo lascia il campo modificato nella barra delle proprietà.
 
 Se desideri modificare il frammento di contenuto in [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md) invece, fai clic su [pulsante modifica](#edit) nella barra delle modalità.
 
@@ -360,7 +365,7 @@ A seconda delle esigenze del flusso di lavoro, puoi modificare il Frammento di c
 ### Aggiunta di componenti ai contenitori {#adding-components}
 
 1. Seleziona un componente contenitore nella struttura del contenuto o nell’editor.
-1. Quindi tocca o fai clic sull’icona Aggiungi nella barra dei componenti.
+1. Quindi tocca o fai clic sull&#39;icona Aggiungi nella barra delle proprietà.
 
    ![Selezione di un componente da aggiungere a un contenitore](assets/ue-add-component.png)
 
@@ -375,7 +380,7 @@ Il componente viene inserito nel contenitore e può essere modificato nell’edi
 1. Seleziona un componente contenitore nella struttura del contenuto o nell’editor.
 1. Tocca o fai clic sulla freccia del contenitore per espanderne il contenuto nella struttura del contenuto.
 1. Quindi, nella struttura del contenuto, seleziona un componente all’interno del contenitore.
-1. Tocca o fai clic sull’icona Elimina nella barra dei componenti.
+1. Tocca o fai clic sull’icona Elimina nella barra delle proprietà.
 
    ![Eliminazione di un componente](assets/ue-delete-component.png)
 
@@ -402,7 +407,7 @@ I componenti vengono riordinati sia nella struttura del contenuto che nell’edi
 
 Quando hai finito di modificare il contenuto, spesso desideri navigare in esso per vedere come si presenta nel contenuto di altre pagine. In [modalità anteprima](#preview-mode) puoi fare clic sui collegamenti per navigare nel contenuto come farebbe un lettore. Il contenuto viene riprodotto nell’editor così come verrebbe pubblicato.
 
-In modalità anteprima, toccando o facendo clic sul contenuto questo appare così come si presenterebbe a un lettore. Se desideri selezionare il contenuto da modificare, passa a una modalità di modifica come [modalità componente](#component-mode) o [modalità multimediale.](#media-mode)
+In modalità anteprima, toccando o facendo clic sul contenuto questo appare così come si presenterebbe a un lettore. Se desideri selezionare il contenuto da modificare, passa a [modalità componenti.](#component-mode)
 
 ## Risorse aggiuntive {#additional-resources}
 

@@ -2,12 +2,13 @@
 title: Attributi e tipi
 description: Scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 90%
 
 ---
+
 
 # Attributi e tipi {#attributes-types}
 

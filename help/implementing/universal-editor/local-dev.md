@@ -1,7 +1,8 @@
 ---
 title: Sviluppo locale AEM con Universal Editor
 description: Scopri in che modo Universal Editor supporta la modifica sulle istanze AEM locali a scopo di sviluppo.
-source-git-commit: bf09c31baf209f5315e35f47c0d79c2b4365d3d3
+exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
+source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 0%
