@@ -4,12 +4,13 @@ description: Scopri come utilizzare l’Editor universale per modificare qualsia
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
+source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '977'
 ht-degree: 11%
 
 ---
+
 
 # Modificare nel contesto con l’Editor universale {#editing-in-context}
 
@@ -38,11 +39,11 @@ La modifica diretta e contestuale può spesso essere vantaggiosa rispetto alla m
 
 Con Universal Editor è possibile modificare il testo in modo semplice e intuitivo.
 
-1. L’editor deve essere caricato per impostazione predefinita in **Testo** modalità. In caso contrario, tocca o fai clic su **Testo** nella barra delle modalità sul lato sinistro dell’editor.
+1. L’editor deve essere caricato per impostazione predefinita in **Componenti** modalità. In caso contrario, tocca o fai clic su **Componenti** nella barra delle modalità sul lato sinistro dell’editor.
 
 1. Tocca o fai clic sul titolo dell’articolo più recente per modificarlo.
 
-   ![Editor universale](assets/do-not-localize/ue-text-mode.png)
+   ![Editor universale](assets/do-not-localize/ue-component-mode.png)
 
 1. Il componente viene selezionato come indicato da un bordo blu con una scheda che indica che si tratta di un componente testo. Il cursore si trova sul bordo in attesa di immissione testo. Cambia il testo in `Aloha Spirit in Lofoten`.
 
@@ -56,11 +57,9 @@ Universal Editor salva automaticamente le modifiche all&#39;interno dell&#39;amb
 
 Utilizzando Universal Editor è inoltre possibile scambiare le immagini rimanendo nel contesto del contenuto.
 
-1. Modifica l’editor in **Contenuti multimediali** toccando o facendo clic sul pulsante **Contenuti multimediali** sulla barra della modalità.
+1. Rimanente in **Componenti** tocca o fai clic sull’immagine del surfista per selezionarla.
 
-1. Tocca o fai clic sull&#39;immagine del surfista per selezionarla.
-
-1. Nella barra dei componenti puoi visualizzare i dettagli della risorsa. Tocca o fai clic su **Sostituisci**.
+1. Nella barra dei componenti puoi visualizzare i dettagli della risorsa. Tocca o fai clic su **Immagine in primo piano** miniatura.
 
    ![Selezione di un&#39;immagine da modificare](assets/do-not-localize/ue-edit-media.png)
 
@@ -82,7 +81,7 @@ L’Editor universale consente di interagire con il contenuto all’interno del 
 
 1. Poiché i Reader si trovano su dispositivi diversi con proporzioni diverse, l’editor offre modalità di emulazione che consentono di vedere come verrà presentata la pagina agli utenti. Ad esempio, seleziona l’opzione per dispositivo mobile in modalità verticale.
 
-   ![Voce di menu emulatore](assets/do-not-localize/ue-emulator-3.png)
+   ![Voce di menu emulatore](assets/do-not-localize/ue-emulator-2.png)
 
 1. Vedi la modifica del contenuto nell’editor. Anche l’icona dell’emulatore cambia per riflettere la modalità in cui si trova. Tocca o fai clic in un punto qualsiasi all’esterno del menu dell’emulatore per chiuderlo e interagire con il contenuto.
 
@@ -118,12 +117,12 @@ Per accelerare l’esperienza di authoring dei contenuti quando la modifica stru
 
 1. Nella barra della modalità sul lato sinistro dell’editor, seleziona **Componenti**. Questo consente di selezionare i componenti della pagina nell’editor.
 
-1. Tocca o fai clic su una delle avventure per selezionarla.
+1. Tocca o fai clic su una delle avventure come **Campo da surf di Bali** per selezionarlo.
 
-   * Osserva il contorno blu del componente selezionato. La scheda deve contenere il testo **riferimento** quando viene selezionato un frammento di contenuto.
+   * Osserva il contorno blu del componente selezionato. Quando viene selezionato un frammento di contenuto, nella scheda deve essere visualizzato il nome del frammento di contenuto. In questo caso **Campo da surf di Bali**.
    * Poiché l’Editor universale consente di selezionare qualsiasi oggetto nella pagina, è possibile selezionare singolarmente anche i componenti che fanno parte di un frammento di contenuto. Per selezionare l’intero componente Frammento di contenuto, tocca o fai clic dove indicato nell’illustrazione.
 
-1. Una nuova **Modifica** nella barra delle modalità. Tocca o fai clic su **Modifica** per aprire l’editor dei frammenti di contenuto in una nuova scheda.
+1. Il **Modifica** nella barra dei componenti. Tocca o fai clic su **Modifica** per aprire l’editor dei frammenti di contenuto in una nuova scheda.
 
 ![Selezione di frammenti di contenuto nell’editor universale](assets/do-not-localize/ue-content-fragments.png)
 
