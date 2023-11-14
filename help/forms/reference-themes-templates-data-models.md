@@ -2,14 +2,20 @@
 title: Come ottenere temi e modelli di riferimento per i moduli AEM?
 description: AEM Forms fornisce esempi di temi, modelli e modelli di dati per moduli adattivi per aiutarti a creare i moduli rapidamente.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: dd0c45352ea402065c7c6fced1394849ed9c316c
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 17%
+source-wordcount: '864'
+ht-degree: 18%
 
 ---
 
 # Temi di riferimento, modelli e modelli dati modulo {#reference-themes-templates-and-data-models}
+
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| Componenti core dei moduli adattivi | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| AEM as a Cloud Service | Questo articolo |
 
 <span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -25,7 +31,7 @@ I temi, i modelli e i modelli di dati dei moduli inclusi nel pacchetto di conten
 | Urbano |   |  |
 | Ultramarina |  |  |
 | Beryl |  |  |
-| Assistenza sanitaria |  |   |
+| Healthcare |  |   |
 | FSI |   |   |
 
 ## Temi di riferimento {#reference-themes}
@@ -37,7 +43,7 @@ I temi, i modelli e i modelli di dati dei moduli inclusi nel pacchetto di conten
 * Tranquilla
 * Urbano
 * Ultramarina
-* Assistenza sanitaria
+* Healthcare
 * FSI (Servizi finanziari e assicurativi)
 
 Ogni tema contiene uno stile univoco ed elegante che puoi utilizzare per creare moduli adattivi deliziosi per i tuoi utenti. Contiene uno stile univoco per selettori quali pannello, casella di testo, casella numerica, pulsante di scelta, tabella e interruttore. Gli stili in questi temi sono basati su requisiti. Ad esempio, in uno scenario particolare è necessario un tema minimalista con font puliti. Il tema Liberty ti permette di ottenere questo aspetto.
@@ -81,7 +87,7 @@ Il tema Ultramarine utilizza tonalità blu profonde per evidenziare componenti q
 
 ![Tema Ultramarino](assets/ultramarine.png)
 
-## Assistenza sanitaria {#healthcare}
+## Healthcare {#healthcare}
 
 Il tema Healthcare utilizza tonalità verdi profonde per evidenziare componenti come schede, pannelli, caselle di testo e pulsanti.
 
