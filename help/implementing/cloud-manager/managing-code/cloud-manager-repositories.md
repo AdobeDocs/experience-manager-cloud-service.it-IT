@@ -2,10 +2,10 @@
 title: Archivi di Cloud Manager
 description: Scopri come creare, visualizzare ed eliminare gli archivi Git in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '575'
-ht-degree: 100%
+source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 96%
 
 ---
 
@@ -22,9 +22,11 @@ Scopri come creare, visualizzare ed eliminare gli archivi Git in Cloud Manager.
 
 Per visualizzare e gestire gli archivi in Cloud Manager, segui la procedura riportata di seguito.
 
-1. Dalla pagina **Panoramica del programma**, fai clic sulla scheda **Archivi** e accedi alla pagina **Archivi**.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Per avviare la procedura guidata, fai clic su **Aggiungi archivio**.
+1. Dalla sezione **Panoramica del programma** pagina, tocca o fai clic su **Archivi** per passare alla scheda **Archivi** pagina.
+
+1. Fai clic su **Aggiungi archivio**.
 
    ![Pulsante Aggiungi archivio](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 

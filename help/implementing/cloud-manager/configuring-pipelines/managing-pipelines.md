@@ -3,10 +3,10 @@ title: Gestione delle pipeline
 description: Scopri come gestire, modificare, eseguire ed eliminare le pipeline esistenti.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: b8d692e354851a31b4f66b24135c863b5ca723b4
+source-git-commit: 01a89f779689733fb82a556291e091026def63e0
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 80%
+source-wordcount: '957'
+ht-degree: 59%
 
 ---
 
@@ -34,6 +34,38 @@ Nella parte inferiore dell’elenco delle pipeline sono disponibili le opzioni g
 * **Mostra tutto**: reindirizza l’utente alla schermata Pipeline per visualizzare tutte le pipeline in una tabella più dettagliata.
 * **Accedi a dati archivio**: consente di visualizzare le informazioni necessarie per accedere all’archivio Git di Cloud Manager.
 * **Ulteriori informazioni**: consente di accedere alle risorse della documentazione sulla pipeline CI/CD.
+
+## Finestra Pipeline {#pipelines}
+
+Il **Pipeline** viene visualizzato un elenco completo di tutte le pipeline per il programma selezionato. Questa funzione è utile in quanto presenta informazioni più complete rispetto a quelle disponibili nella [Scheda pipeline.](#pipeline-card)
+
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+
+1. Dalla sezione **Panoramica del programma** pagina, tocca o fai clic su **Pipeline** per passare alla scheda **Pipeline** finestra.
+
+1. Qui puoi visualizzare un elenco di tutte le pipeline del programma, nonché avviare e interrompere l’esecuzione della pipeline come faresti nella **Scheda Pipeline**.
+
+Se una pipeline è in esecuzione, passa il cursore sopra la relativa **Stato** rivelerà i dettagli sull’esecuzione.
+
+![Dettagli di esecuzione della pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
+
+Toccare o fare clic **Visualizza dettagli** ti porterà al [i dettagli dell’esecuzione della pipeline.](#view-details)
+
+## Finestra Attività {#activity}
+
+Il **Attività** mostra un elenco completo di tutte le esecuzioni di pipeline per il programma selezionato.
+
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+
+1. Dalla sezione **Panoramica del programma** pagina, tocca o fai clic su **Attività** per passare alla scheda **Attività** finestra.
+
+1. Qui puoi vedere un elenco di tutte le esecuzioni della pipeline del programma, comprese le esecuzioni correnti e storiche.
+
+Se una pipeline è in esecuzione, passa il cursore sopra la relativa **Stato** rivelerà i dettagli sull’esecuzione.
+
+![Dettagli di esecuzione della pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
+
+Toccare o fare clic **Visualizza dettagli** ti porterà al [i dettagli dell’esecuzione della pipeline.](#view-details)
 
 ## Esecuzione delle pipeline {#running-pipelines}
 
@@ -88,6 +120,16 @@ Puoi visualizzare i dettagli di una pipeline per visualizzarne lo stato e i regi
 ![Dettagli della pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
 Da qui è possibile visualizzare lo stato dei vari passaggi della pipeline e recuperare i registri della build per finalità diagnostiche. Consulta il documento [Implementazione del codice](/help/implementing/cloud-manager/deploy-code.md) per ulteriori informazioni sulla distribuzione del codice e sull’esecuzione dei test.
+
+Tutti i passaggi di un’esecuzione della pipeline vengono visualizzati con quelli non ancora avviati in grigio. I passaggi completati mostrano la loro durata.
+
+Una volta completato un passaggio della pipeline, viene presentato un riepilogo.
+
+![Riepilogo del passaggio](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
+
+Tocca o fai clic su **Visualizza dettagli** collegamento per visualizzare **Durata** sezione. Ciò include la durata media della pipeline in base alla tendenza storica per quel programma.
+
+![Durata](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
 >[!NOTE]
 >

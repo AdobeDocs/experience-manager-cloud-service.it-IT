@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 92e7e64f25fdb2b4d8fbfe0da6da4bc81b9c96a1
+source-git-commit: a6d43e6d4138305c2f98dfb6e33946d36fb50fe1
 workflow-type: tm+mt
-source-wordcount: '4372'
+source-wordcount: '4381'
 ht-degree: 92%
 
 ---
@@ -88,6 +88,7 @@ ht-degree: 92%
    + Note sulla versione per Cloud Manager {#cloud-manager}
       + [Note sulla versione corrente](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [Note sulla versione 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)
          + [Note sulla versione 2023.9.0](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
          + [Note sulla versione 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [Note sulla versione 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
@@ -843,6 +844,7 @@ ht-degree: 92%
          + [Utilizzo di Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Utilizzo di più archivi](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Configurazione del team di sviluppo Enterprise](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Utilizzo di archivi GitHub personalizzati](/help/implementing/cloud-manager/managing-code/byo-github.md)
       + [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md)
       + Pipeline CI-CD di Cloud Manager {#cicd-pipelines}
          + [Introduzione](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
