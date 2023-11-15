@@ -2,10 +2,10 @@
 title: Accesso e gestione dei registri
 description: Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '267'
-ht-degree: 100%
+source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 87%
 
 ---
 
@@ -83,3 +83,8 @@ Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia dell
 
 * [Documentazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Interfaccia della riga di comando Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+
+Per ulteriori informazioni sui file di registro in AEM as a Cloud Service, consulta le seguenti risorse aggiuntive:
+
+* [File di registro AEM di Cloud 5](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [Debug di AEM as a Cloud Service tramite i registri](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=it)
