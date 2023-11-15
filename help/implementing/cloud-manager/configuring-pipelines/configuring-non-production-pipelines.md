@@ -3,9 +3,9 @@ title: Configurazione delle pipeline non di produzione
 description: Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1288'
 ht-degree: 80%
 
 ---
@@ -121,7 +121,7 @@ Una distribuzione mirata distribuisce il codice solo per parti selezionate dell�
 >
 >* Se esiste una pipeline del codice a livello web per l’ambiente selezionato, questa selezione è disabilitata.
 >* Se già disponi di una pipeline full stack distribuita in un ambiente, creando una pipeline di configurazione a livello web per lo stesso ambiente la configurazione del livello web esistente nella pipeline full stack verrà ignorata.
-> * In qualsiasi momento può essere presente una sola pipeline di distribuzione della configurazione per ogni ambiente.
+> * In qualsiasi momento può essere presente una sola pipeline di configurazione per ogni ambiente.
 
 I passaggi per completare la creazione della pipeline di distribuzione non di produzione con targeting sono gli stessi quando scegli un tipo di distribuzione.
 
@@ -145,7 +145,7 @@ I passaggi per completare la creazione della pipeline di distribuzione non di pr
       * Immetti i primi caratteri del nome del ramo: la funzione di completamento automatico di questo campo. trova i rami corrispondenti che puoi selezionare.
    * **Posizione codice**: definisce il percorso nel ramo dell’archivio selezionato dal quale la pipeline deve recuperare il codice.
 
-   ![Configurare la pipeline di distribuzione](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
 
 1. Fai clic su **Salva**.
 

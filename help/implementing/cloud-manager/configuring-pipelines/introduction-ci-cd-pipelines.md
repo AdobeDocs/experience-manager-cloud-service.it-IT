@@ -3,9 +3,9 @@ title: Pipeline CI/CD
 description: Scopri le pipeline CI/CD di Cloud Manager e come utilizzarle per distribuire il codice in modo efficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1443'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Una pipeline non di produzione serve principalmente per eseguire controlli di qu
 Oltre ai tipi di produzione e non di produzione, le pipeline possono essere differenziate in base al tipo di codice che distribuiscono.
 
 * **[Pipeline full stack](#full-stack-pipeline)**: distribuiscono simultaneamente le build del codice back-end e front-end contenenti una o più applicazioni server di AEM con configurazioni HTTPD/Dispatcher
-* **[Configurare le pipeline di distribuzione](#config-deployment-pipeline)** : configura le impostazioni relative all’ambiente AEM, alle attività di manutenzione, alle regole CDN e altro ancora.
+* **[Configurare le pipeline](#config-deployment-pipeline)** : configura le impostazioni relative all’ambiente AEM, alle attività di manutenzione, alle regole CDN e altro ancora.
 * **[Pipeline front-end](#front-end)**: distribuiscono le build del codice front-end contenenti una o più applicazioni dell’interfaccia utente lato client
 * **[Pipeline di configurazione a livello web](#web-tier-config-pipelines)**: distribuiscono le configurazioni HTTPD/Dispatcher
 
@@ -111,15 +111,15 @@ Per informazioni su come configurare le pipeline full stack, consulta i seguenti
 * [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 * [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
-## Configurare le pipeline di distribuzione {#config-deployment-pipeline}
+## Configurare le pipeline {#config-deployment-pipeline}
 
-Con una pipeline di distribuzione della configurazione è possibile distribuire le impostazioni di configurazione nell’ambiente AEM per attività di manutenzione, regole CDN e altro ancora.
+Con una pipeline di configurazione è possibile distribuire le impostazioni di configurazione nell’ambiente AEM per attività di manutenzione, regole CDN e altro ancora.
 
 Consulta il documento [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md) per scoprire come gestire le configurazioni nell’archivio in modo che vengano distribuite correttamente.
 
-### Configurazione delle pipeline di distribuzione della configurazione {#configure-config-deployment}
+### Configurazione delle pipeline di configurazione {#configure-config-deployment}
 
-Per informazioni su come configurare le pipeline di distribuzione di configurazione, consulta i seguenti documenti:
+Per informazioni su come configurare le pipeline di configurazione, consulta i seguenti documenti:
 
 * [Aggiunta di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
 * [Aggiunta di una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)

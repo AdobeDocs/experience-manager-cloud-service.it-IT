@@ -3,9 +3,9 @@ title: Configurazione delle pipeline di produzione
 description: Scopri come configurare le pipeline di produzione per generare e distribuire il codice negli ambienti di produzione.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1418'
 ht-degree: 80%
 
 ---
@@ -132,7 +132,7 @@ Una distribuzione mirata distribuisce il codice solo per parti selezionate dell�
 >
 >* Se esiste una pipeline del codice a livello web per l’ambiente selezionato, questa selezione è disabilitata.
 >* Se già disponi di una pipeline full stack distribuita in un ambiente, creando una pipeline di configurazione a livello web per lo stesso ambiente la configurazione del livello web esistente nella pipeline full stack verrà ignorata.
-> * In qualsiasi momento può essere presente una sola pipeline di distribuzione della configurazione per ogni ambiente.
+> * In qualsiasi momento può essere presente una sola pipeline di configurazione per ogni ambiente.
 
 I passaggi per completare la creazione della pipeline di distribuzione di produzione con targeting sono gli stessi quando scegli un tipo di distribuzione.
 
@@ -158,7 +158,7 @@ I passaggi per completare la creazione della pipeline di distribuzione di produz
    * **Sospendi prima della distribuzione in produzione**: sospende la pipeline prima della distribuzione nell’ambiente di produzione.
    * **Pianificato**: consente all’utente di abilitare la pianificazione della distribuzione nell’ambiente di produzione. Disponibile solo per le distribuzioni mirate a livello web.
 
-   ![Configurare la pipeline di distribuzione](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. Fai clic su **Salva**.
 

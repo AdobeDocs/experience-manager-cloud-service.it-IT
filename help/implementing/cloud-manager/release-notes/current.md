@@ -3,9 +3,9 @@ title: Note sulla versione 2023.11.0 di Cloud Manager in Adobe Experience Manage
 description: Queste sono le note sulla versione 2023.11.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71746b00c2d4ee05126af54241db30a7d3aeab1c
+source-git-commit: 3a9eaa162d62cd3e674f14ba39ed7c96ad271f79
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '746'
 ht-degree: 13%
 
 ---
@@ -26,7 +26,7 @@ La data di rilascio di Cloud Manager versione 2023.11.0 in AEM as a Cloud Servic
 ## Novità {#what-is-new}
 
 * La protezione WAF-DDOS (Web Application Firewall-DDOS Protection) è ora disponibile per l&#39;acquisto come parte dei diritti as a Cloud Service AEM e [può essere configurato in modo autonomo.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* Specializzato [Configurare le pipeline di distribuzione](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Sono ora disponibili pipeline per configurare le impostazioni dell’ambiente, le attività di manutenzione, le regole CDN e altro in pochi minuti.
+* Specializzato [configurare le pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Sono ora disponibili per configurare le impostazioni dell’ambiente, le attività di manutenzione, le regole CDN e altro in pochi minuti.
 * [Durante la copia del contenuto](/help/implementing/developing/tools/content-copy.md) da un ambiente superiore a uno di sviluppo, ora viene visualizzato un messaggio che consiglia di prestare attenzione quando si copiano set di contenuti di grandi dimensioni, poiché gli ambienti di sviluppo hanno capacità limitata.
 * [Pagina dei dettagli di esecuzione della pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) mostrerà ora tutti i passaggi di un’esecuzione della pipeline con quelli non ancora avviati disattivati.
 * Su entrambi **[Attività](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** e **[Pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** Quando si fa clic su una pipeline con stato in esecuzione, è ora disponibile un riepilogo dell’esecuzione della pipeline.
@@ -75,9 +75,9 @@ Ti interessa testare il nuovo cruscotto? Invia un&#39;e-mail a `aem-lighthouse-p
 
 ## Problemi noti {#known-issues}
 
-Esiste un bug noto che impedisce [configurare le pipeline di distribuzione](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) dall&#39;invio alla produzione.
+Esiste un bug noto che impedisce [configurare le pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) dall&#39;invio alla produzione.
 
-Se il **Sospendi prima della distribuzione in produzione** per una pipeline di distribuzione della configurazione è necessaria l’opzione, di seguito è riportata la soluzione alternativa consigliata fino alla risoluzione del bug.
+Se il **Sospendi prima della distribuzione in produzione** per una pipeline di configurazione è necessaria l’opzione, di seguito è riportata la soluzione alternativa consigliata fino alla risoluzione del bug.
 
 1. Eseguire la pipeline.
 1. Verifica il codice nell’ambiente di staging.
