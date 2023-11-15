@@ -2,20 +2,20 @@
 title: Come ottenere temi e modelli di riferimento per i moduli AEM?
 description: AEM Forms fornisce esempi di temi, modelli e modelli di dati per moduli adattivi per aiutarti a creare i moduli rapidamente.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: dd0c45352ea402065c7c6fced1394849ed9c316c
+source-git-commit: 046ffed13569ca3f9c104fb4525d28361873277a
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 18%
+source-wordcount: '868'
+ht-degree: 17%
 
 ---
 
 # Temi di riferimento, modelli e modelli dati modulo {#reference-themes-templates-and-data-models}
 
 
-| Versione | Collegamento articolo |
+| Applicabile a | Collegamento articolo |
 | -------- | ---------------------------- |
-| Componenti core dei moduli adattivi | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
-| AEM as a Cloud Service | Questo articolo |
+| Modulo adattivo basato su componenti core | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| Modulo adattivo basato su componenti di base | Questo articolo |
 
 <span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
