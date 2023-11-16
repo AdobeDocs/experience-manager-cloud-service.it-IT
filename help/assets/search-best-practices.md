@@ -3,9 +3,9 @@ title: Cerca best practice per [!DNL Adobe Experience Manager] as a [!DNL Cloud 
 description: Best practice per cercare, trovare e recuperare i metadati delle risorse all’interno dell’applicazione.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
+source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2520'
 ht-degree: 3%
 
 ---
@@ -38,11 +38,11 @@ I risultati della ricerca che corrispondono a tutti i termini di ricerca nei cam
 
 Specifica `classic car` come parola chiave di ricerca e fare clic su Cerca. È possibile visualizzare i suggerimenti di ricerca in un elenco a discesa durante la digitazione della parola chiave. I suggerimenti di ricerca si basano sul contenuto dell’indice di ricerca della distribuzione dell’Experience Manager. Se non riesci a visualizzare le risorse appropriate nel menu a discesa, premi Invio per visualizzare l’elenco dei risultati. I risultati sono ordinati in base alla rilevanza, a partire dalle corrispondenze più vicine.
 
-![Esecuzione del metodo di ricerca di base 1](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 È possibile rendere la ricerca più specifica aggiungendo la parola chiave di ricerca tra virgolette doppie (&quot;&quot;). Questa ricerca include solo le risorse che contengono insieme i termini specificati. I criteri di ricerca hanno l’aspetto di - `"classic car"`. Pertanto, i risultati della ricerca con entrambi i termini `classic` e `car` vengono visualizzati.
 
-![Ricerca di una corrispondenza esatta](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 La ricerca mostra risultati simili se si lavora nel **[!UICONTROL Visualizzazione risorse]** anche.
 
@@ -65,7 +65,7 @@ Per ottenere questo scenario, esegui i passaggi seguenti:
 Seleziona la cartella dal percorso e passa alla cartella richiesta se desideri eseguire ricerche all’interno della cartella specifica.
 3. Selezionare File dall&#39;elenco a discesa per visualizzare tutti i file con la parola chiave `classic car`.
 
-![Cerca in file e cartelle](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
@@ -164,7 +164,7 @@ Esegui i seguenti passaggi in **[!UICONTROL Visualizzazione amministratore]**:
 1. Seleziona [!UICONTROL PDF].
 1. Vai a [!UICONTROL Stato] > [!UICONTROL Pubblica] > [!UICONTROL Non pubblicato].
 
-![Esempio di filtro 2](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 Esegui i seguenti passaggi in **[!UICONTROL Visualizzazione risorse]**:
 
@@ -180,7 +180,7 @@ Quando non sei sicuro del titolo o della metadescrizione di una risorsa, puoi ut
 1. Vai a Filtri. Sotto [!UICONTROL Tipo di file], espandi [!UICONTROL Immagini] e seleziona [!UICONTROL Abilitato per il Web]
 1. Deselezionare PNG.
 
-![Cerca tutte le immagini tranne Jeep](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 Per cercare le risorse utilizzando lo scenario menzionato in **[!UICONTROL Visualizzazione risorse]**, effettua le seguenti operazioni:
 
@@ -203,7 +203,7 @@ Per eseguire una ricerca per lo scenario 6:
 2. Passa al pannello dei filtri e seleziona Documenti in Tipo file.
 3. Ottimizzare la ricerca utilizzando il carattere jolly asterisco. Tipo `"classic car"` per cercare tutte le risorse che contengono `classic car` parola chiave.
 
-![Scenario 6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 Impossibile eseguire lo scenario 6 in **[!UICONTROL Visualizzazione risorse]** in quanto non supporta l&#39;utilizzo di caratteri jolly.
 
@@ -213,7 +213,7 @@ Per eseguire una ricerca per lo scenario 7:
 
 Digita il `car - classic` nella barra di ricerca. Passa al pannello dei filtri e seleziona Documenti in Tipo file. L’ordine di priorità della ricerca si basa sui seguenti elementi: Priorità 1: Priorità metadati 2: Tag avanzati
 
-![Scenario 7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 Impossibile eseguire lo scenario 7 in **[!UICONTROL Visualizzazione risorse]** in quanto non supporta l&#39;utilizzo di caratteri jolly.
 
@@ -237,7 +237,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 Puoi acquisire un criterio specifico utilizzando vari filtri di ricerca. Tag è una parola chiave assegnata a una risorsa per renderla identificabile in un numero elevato di risorse. Ad esempio, in questo scenario, cerca le risorse con *jeep* tag in esso contenuti. A questo scopo, digita `tags:jeep` nella barra di ricerca. Solo le risorse che soddisfano questi criteri sono elencate nei risultati della ricerca.
 
-![Cerca utilizzando i tag](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 La ricerca mostra risultati simili se si lavora nel **[!UICONTROL Visualizzazione risorse]** anche.
 
