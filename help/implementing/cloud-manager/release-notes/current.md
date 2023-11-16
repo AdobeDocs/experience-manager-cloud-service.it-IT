@@ -3,7 +3,7 @@ title: Note sulla versione 2023.11.0 di Cloud Manager in Adobe Experience Manage
 description: Queste sono le note sulla versione 2023.11.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3a9eaa162d62cd3e674f14ba39ed7c96ad271f79
+source-git-commit: 4e2ea040ec14515525424b42f524601d34786cb8
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 13%
@@ -26,7 +26,7 @@ La data di rilascio di Cloud Manager versione 2023.11.0 in AEM as a Cloud Servic
 ## Novità {#what-is-new}
 
 * La protezione WAF-DDOS (Web Application Firewall-DDOS Protection) è ora disponibile per l&#39;acquisto come parte dei diritti as a Cloud Service AEM e [può essere configurato in modo autonomo.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* Specializzato [configurare le pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Sono ora disponibili per configurare le impostazioni dell’ambiente, le attività di manutenzione, le regole CDN e altro in pochi minuti.
+* Specializzato [configurare le pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Sono ora disponibili per configurare e distribuire in pochi minuti le regole del filtro del traffico, incluse le regole WAF.
 * [Durante la copia del contenuto](/help/implementing/developing/tools/content-copy.md) da un ambiente superiore a uno di sviluppo, ora viene visualizzato un messaggio che consiglia di prestare attenzione quando si copiano set di contenuti di grandi dimensioni, poiché gli ambienti di sviluppo hanno capacità limitata.
 * [Pagina dei dettagli di esecuzione della pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) mostrerà ora tutti i passaggi di un’esecuzione della pipeline con quelli non ancora avviati disattivati.
 * Su entrambi **[Attività](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** e **[Pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** Quando si fa clic su una pipeline con stato in esecuzione, è ora disponibile un riepilogo dell’esecuzione della pipeline.
