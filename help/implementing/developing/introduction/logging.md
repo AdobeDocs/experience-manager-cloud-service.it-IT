@@ -2,10 +2,10 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
+source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 3%
+source-wordcount: '2683'
+ht-degree: 10%
 
 ---
 
@@ -523,7 +523,8 @@ La funzione di inoltro Splunk non supporta ancora i registri CDN.
 "cache": "PASS",
 "status": 200,
 "res_age": 0,
-"pop": "PAR"
+"pop": "PAR",
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -533,20 +534,22 @@ I registri CDN sono distinti dagli altri registri in quanto sono conformi al for
 
 | **Nome campo** | **Descrizione** |
 |---|---|
-| *timestamp* | Ora di inizio della richiesta, dopo la chiusura di TLS |
-| *ttfb* | Abbreviazione per *Tempo al primo byte*. L’intervallo di tempo tra la richiesta iniziata fino al punto prima che il corpo della risposta iniziasse a essere trasmesso in streaming. |
+| *marca temporale* | L’ora di inizio della richiesta, dopo la cessazione del TLS |
+| *ttfb* | Abbreviazione per *Time To First Byte*. L’intervallo di tempo compreso tra l’inizio della richiesta e il momento prima che il corpo della risposta inizi a essere trasmesso in streaming. |
 | *cli_ip* | Indirizzo IP del client. |
-| *cli_country* | Due lettere [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) codice paese alfa-2 per il paese cliente. |
-| *rid* | Il valore dell’intestazione della richiesta utilizzata per identificare in modo univoco la richiesta. |
+| *cli_country* | Codice paese a due lettere [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alfa-2 del paese client. |
+| *rid* | Il valore dell’intestazione di richiesta utilizzato per identificare in modo univoco la richiesta. |
 | *req_ua* | L’agente utente responsabile di effettuare una determinata richiesta HTTP. |
 | *host* | Autorità a cui è destinata la richiesta. |
 | *url* | Il percorso completo, inclusi i parametri di query. |
-| *metodo* | Metodo HTTP inviato dal client, ad esempio &quot;GET&quot; o &quot;POST&quot;. |
+| *metodo* | Metodo HTTP inviato dal client, ad esempio “GET” o “POST”. |
 | *res_ctype* | Tipo di contenuto utilizzato per indicare il tipo di file multimediale originale della risorsa. |
 | *cache* | Stato della cache. I valori possibili sono HIT, MISS o PASS |
 | *stato* | Il codice di stato HTTP come valore intero. |
-| *res_age* | Il tempo (in secondi) per cui una risposta è stata memorizzata nella cache (in tutti i nodi). |
-| *pop* | Datacenter del server cache CDN. |
+| *res_age* | Il tempo (in secondi) in cui una risposta è stata memorizzata nella cache (in tutti i nodi). |
+| *pop* | Centro dati del server cache CDN. |
+| *regole* | I nomi di qualsiasi corrispondenza [regole filtro traffico](/help/security/traffic-filter-rules-including-waf.md) e WAF, che indicano anche se la corrispondenza ha prodotto un blocco. Vuoto se non corrisponde alcuna regola. |
+
 
 ## Come accedere ai registri {#how-to-access-logs}
 
