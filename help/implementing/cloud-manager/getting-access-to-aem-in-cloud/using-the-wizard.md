@@ -2,10 +2,10 @@
 title: Creazione guidata di un progetto
 description: Scopri la procedura guidata di creazione del progetto per velocizzare la configurazione del tuo progetto dopo aver creato il programma di produzione.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '312'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Segui questi passaggi per creare un progetto di applicazione AEM in Cloud Manage
 
    ![Crea ramo e progetto](assets/create-wizard2.png)
 
-1. Facoltativamente, fai clic sul divisore per visualizzare i parametri aggiuntivi del progetto. I valori predefiniti vengono forniti dall’archetipo del progetto AEM e in genere non è necessario modificarli.
+1. Se necessario, fai clic sul divisore per visualizzare i parametri aggiuntivi del progetto. I valori predefiniti vengono forniti dall’archetipo del progetto AEM e in genere non è necessario modificarli.
 
    ![Parametri aggiuntivi del progetto](assets/create-wizard5.png)
 

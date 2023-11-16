@@ -2,10 +2,10 @@
 title: Creazione e organizzazione delle pagine
 description: Scopri come organizzare il sito web creando e gestendo pagine con AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 98%
+source-wordcount: '2449'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Questo documento illustra come creare e gestire le pagine in Adobe Experience Ma
 
 ## Organizzazione del sito web {#organizing-your-website}
 
-In qualità di autore, dovrai organizzare il tuo sito web all’interno di AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
+In qualità di autore, devi organizzare il tuo sito web all’interno dell’AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
 
 * siano facilmente reperibili nell’ambiente di authoring;
 * i visitatori possano facilmente sfogliare le pagine nell’ambiente di pubblicazione.
@@ -225,7 +225,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
    >
    >Se per la pagina creata hai specificato un nome già esistente nello stesso percorso, viene automaticamente generata una variante del nome aggiungendo un numero. Se, ad esempio, esiste già `beach`, la nuova pagina diventa `beach1`.
 
-1. Torna alla console per visualizzare la nuova pagina:
+1. Se ritorni alla console puoi visualizzare la nuova pagina:
 
    ![Nuova pagina risultante](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
 
@@ -309,7 +309,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
    ![Pulsante Sposta](/help/sites-cloud/authoring/assets/move.png)
 
-   Viene aperta la procedura guidata per lo spostamento delle pagine.
+   Verrà avviata la procedura guidata Sposta pagina.
 
 1. Dal passaggio **Rinomina** della procedura guidata, puoi effettuare le seguenti operazioni:
 

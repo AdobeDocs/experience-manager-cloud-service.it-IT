@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e il suo utilizzo di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 98%
+source-wordcount: '2970'
+ht-degree: 95%
 
 ---
 
@@ -133,7 +133,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   Situate al centro della barra, le breadcrumb mostrano sempre la descrizione dell’elemento attualmente selezionato e consentono di spostarsi all’interno di una console specifica. Nella console **Sites** puoi spostarti tra i vari livelli del sito web.
 
-  Ti basterà fare clic sul testo della breadcrumb per visualizzare un elenco a discesa con i livelli della gerarchia dell’elemento selezionato. Fai clic su una voce per passare a quella posizione.
+  Fai clic sul testo della breadcrumb per visualizzare un elenco a discesa dei livelli della gerarchia dell’elemento attualmente selezionato. Fare clic su una voce per passare alla posizione desiderata.
 
   ![Esempio di breadcrumb espanso](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -171,7 +171,7 @@ Sono disponibili diverse risorse di Aiuto:
 
 * **Barra degli strumenti della console**
 
-  A seconda della tua posizione, l’icona **Aiuto** consente di accedere alle risorse appropriate:
+  A seconda della posizione, il **Aiuto** apre le risorse appropriate:
 
   ![Icona Aiuto](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -304,7 +304,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
    * Il nome della risorsa e la freccia vengono evidenziati quando tocchi o fai clic su tali elementi.
    * Gli elementi secondari della risorsa che hai toccato o su cui hai fatto clic vengono visualizzati nella colonna a destra di tale risorsa.
-   * Se tocchi o fai clic sul nome di una risorsa che non presenta elementi secondari, i relativi dettagli vengono visualizzati nella colonna finale.
+   * Se tocchi o fai clic su un nome di risorsa senza elementi secondari, i relativi dettagli vengono visualizzati nella colonna finale.
 
 * Quando tocchi o fai clic sulla miniatura, la risorsa viene selezionata.
 
@@ -475,6 +475,6 @@ Consulta il documento [Utilizzo della barra del sito per gestire il tema del sit
 
 ### Filtro {#filter}
 
-Verrà aperto un pannello simile alla [Ricerca](/help/sites-cloud/authoring/getting-started/search.md) con i filtri di posizione già impostati, che consentono di filtrare ulteriormente il contenuto da visualizzare.
+Questo apre un pannello simile a [ricerca](/help/sites-cloud/authoring/getting-started/search.md) con i filtri di posizione appropriati già impostati, che consentono di filtrare ulteriormente il contenuto da visualizzare.
 
 ![Esempio di filtro](/help/sites-cloud/authoring/assets/filter.png)

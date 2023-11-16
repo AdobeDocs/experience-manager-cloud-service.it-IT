@@ -1,13 +1,13 @@
 ---
-title: Come si collega il modulo adattivo AEM all’elenco di Microsoft® SharePoint?
-description: Collegare un modulo adattivo all’elenco di Microsoft® SharePoint. Scopri come configurare l’elenco Microsoft® SharePoint e creare un modello di dati del modulo utilizzando la configurazione. Scoprirai inoltre come integrare FDM con il modulo adattivo.
+title: Come si collega il Modulo adattivo AEM a Microsoft&reg; SharePoint List?
+description: Collegare un modulo adattivo all’elenco SharePoint di Microsoft&reg;. Scopri come configurare l’elenco Microsoft&reg; SharePoint e creare un modello di dati del modulo utilizzando la configurazione. Inoltre, imparerai a integrare FDM con il tuo modulo adattivo.
 role: User, Developer
 keywords: Collega Modulo adattivo AEM a Elenco Microsoft SharePoint, connetti Modulo adattivo a Elenco Microsoft SharePoint, integra Modulo adattivo AEM a Elenco Microsoft SharePoint, integra Modulo adattivo a Elenco Microsoft SharePoint, invia dati da un Modulo adattivo a Elenco SharePoint, invia flusso di lavoro di a Elenco AEM SharePoint.
 hide: true
 hidefromToC: true
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '539'
 ht-degree: 3%
 
 ---
@@ -30,15 +30,15 @@ Per istruzioni su come integrare un **Libreria documenti Microsoft® SharePoint*
 
 Prima di collegare un modulo adattivo a Microsoft® SharePoint List, effettua le seguenti operazioni:
 
-1. [Configura elenco SharePoint Microsoft®](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Creare un modello dati modulo utilizzando la configurazione Elenco Microsoft® SharePoint](/help/forms/create-form-data-models.md)
+1. [Configurare Microsoft](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
+1. [Creare un modello di dati modulo con Microsoft](/help/forms/create-form-data-models.md)
 1. [Configurare il modello dati modulo per recuperare e inviare dati](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
 
 Ora è possibile:
 
-* [Connettere Microsoft® SharePoint List a un modulo adattivo](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
-* [Collegare Microsoft® SharePoint List a un flusso di lavoro AEM](#connect-sharepoint-list-workflow)
+* [Connetti Microsoft](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
+* [Connetti Microsoft](#connect-sharepoint-list-workflow)
 
 ## Collegare un modulo adattivo all’elenco di Microsoft® SharePoint {#connect-af-sharepoint-list}
 
@@ -73,7 +73,7 @@ Scopri come [utilizzare il flusso di lavoro AEM](https://experienceleague.adobe.
 
 ## Best practice {#best-practices}
 
-<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft® SharePoint List rather than Microsoft® SharePoint Document Library. -->
+<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft&reg; SharePoint List rather than Microsoft&reg; SharePoint Document Library. -->
 * In Microsoft® SharePoint List non sono supportati i seguenti tipi di colonna:
    * colonna immagine
    * colonna metadati

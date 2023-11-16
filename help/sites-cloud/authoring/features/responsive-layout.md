@@ -2,10 +2,10 @@
 title: Layout reattivo
 description: AEM consente di realizzare un layout dinamico per le pagine
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 92%
+source-wordcount: '1734'
+ht-degree: 86%
 
 ---
 
@@ -90,7 +90,7 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
 
    ![Pulsante Emulatore](/help/sites-cloud/authoring/assets/emulator.png)
 
-1. Viene aperta la barra degli strumenti dell’emulatore.
+1. Viene visualizzata la barra degli strumenti dell’emulatore.
 
    ![Barra degli strumenti dell’emulatore](/help/sites-cloud/authoring/assets/responsive-layout-emulator-toolbar.png)
 
@@ -120,8 +120,8 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
 
    ![La piega](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * La piega può anche essere considerata l’interruzione di riga della pagina (da non confondere con i [punti di interruzione](#layout-definitions-device-emulation-and-breakpoints)) per il contenuto. Viene visualizzata per comodità, per mostrare quale parte del contenuto sarà visibile all’utente sul dispositivo prima di scorrere in basso.
-   * La linea per la piega non verrà mostrata se l’altezza del dispositivo emulato è superiore alle dimensioni dello schermo.
+   * La piega può anche essere considerata l’interruzione di riga della pagina (da non confondere con i [punti di interruzione](#layout-definitions-device-emulation-and-breakpoints)) per il contenuto. Viene visualizzato per comodità, per mostrare quale parte del contenuto l’utente vede sul dispositivo prima di scorrere.
+   * La linea per la piega non viene visualizzata se l&#39;altezza del dispositivo emulato è superiore alle dimensioni dello schermo.
    * La piega è indicata per comodità dell’autore e non viene visualizzata nella pagina pubblicata.
 
 ## Aggiunta di un contenitore di layout e del relativo contenuto (modalità di modifica) {#adding-a-layout-container-and-its-content-edit-mode}
@@ -136,7 +136,7 @@ Un **Contenitore di layout** è un sistema paragrafo che:
 >
 >Se non è già disponibile, il **Contenitore di layout** deve essere attivato esplicitamente per un sistema paragrafo/pagina. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. Il **Contenitore di layout** è disponibile come componente standard nel [browser componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Da qui è possibile trascinarlo nella posizione desiderata sulla pagina, dopodiché verrà visualizzato il segnaposto **Trascina qui i componenti**.
+1. Il **Contenitore di layout** è disponibile come componente standard nel [browser componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Da qui è possibile trascinarlo nella posizione desiderata sulla pagina, dopodiché sarà possibile visualizzare **Trascina qui i componenti** segnaposto.
 1. È quindi possibile aggiungere componenti al Contenitore di layout. Questi componenti includeranno il contenuto vero e proprio:
 
    ![Contenitore di layout](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -202,7 +202,7 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
 
   ![Nascondi componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Per questa modalità viene visualizzata la barra degli strumenti.
+* In entrata **Layout** tocca o fai clic sul pulsante **Trascina qui i componenti** per selezionare l&#39;intero componente. Per questa modalità viene visualizzata la barra degli strumenti.
 
   La barra degli strumenti dispone di opzioni diverse a seconda dello stato del componente di layout e dei componenti a esso appartenenti. Esempio:
 

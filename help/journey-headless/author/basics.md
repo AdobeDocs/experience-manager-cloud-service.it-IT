@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 84%
+source-wordcount: '1727'
+ht-degree: 83%
 
 ---
 
@@ -135,7 +135,7 @@ Per farlo, crea una serie di cartelle all’interno della sezione **File** della
 
 ![Opzione Crea cartella](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Viene visualizzata una finestra di dialogo in cui puoi inserire i dettagli, quindi confermare con **Crea**:
+Viene visualizzata una finestra di dialogo in cui puoi immettere i dettagli, quindi confermare con **Crea**:
 
 ![Finestra di dialogo Crea cartella](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -216,7 +216,7 @@ Quando l’editor si apre per la prima volta, visualizzi:
 
 Ad esempio, un frammento può:
 
-* Richiedono più informazioni, alcune con un tipo specifico. Come scoprirai andando avanti nel tuo percorso, i riferimenti sono fondamentali per i contenuti headless.
+* Richiedono più informazioni, alcune con un tipo specifico. Per i contenuti headless, i riferimenti sono fondamentali (informazioni su questi ultimi disponibili più avanti nel percorso).
 
 * Consente di scrivere una lunga sezione di testo. Qui sono disponibili opzioni aggiuntive per la gestione e la formattazione del testo. Puoi anche aprire i singoli campi di testo in un editor a schermo intero (utilizzando l’icona a forma di piccolo schermo a destra)
 
@@ -240,7 +240,7 @@ OK, questa potrebbe sembrare una sezione leggermente ambigua, ma appena aperto l
 
 * **Modelli per frammenti di contenuto**
 
-  Il nome del modello per frammenti di contenuto viene visualizzato nel pannello di destra dell’editor. Questo è anche un collegamento che ti porta all’editor modelli.
+  Puoi visualizzare il nome del modello per frammenti di contenuto nel pannello di destra dell’editor. Questo è anche un collegamento che ti porta all’editor modelli.
 I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di contenuto quando definiscono la struttura utilizzata. Tuttavia, la creazione e la modifica di tali elementi è (in genere) responsabilità di un’altra persona, l’architect di contenuti.
 
   >[!NOTE]

@@ -2,10 +2,10 @@
 title: Differenze tra pagine
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 39%
+source-wordcount: '609'
+ht-degree: 89%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 39%
 
 ## Introduzione {#introduction}
 
-La creazione dei contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. Visualizzare una versione di pagina e l’altra è inefficiente e soggetto a errori. L’autore desidera poter confrontare facilmente la pagina corrente affiancata a un’altra sua versione.
+La creazione dei contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. L’autore desidera poter confrontare facilmente la pagina corrente affiancata a un’altra sua versione.
 
 È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 
 >[!NOTE]
 >
->L’utente deve disporre di **Modifica/Crea/Elimina** autorizzazione sul nodo `/content/versionhistory` per utilizzare la funzione.
+>Per utilizzare questa funzione, l’utente deve disporre dell’autorizzazione **Modifica/Crea/Elimina** sul nodo `/content/versionhistory`.
 >
 >Per ulteriori informazioni tecniche su questa funzione, consulta [Sviluppo e differenze tra pagine](/help/implementing/developing/introduction/page-diff.md#operation-details).
 
@@ -32,14 +32,14 @@ La visualizzazione affiancata delle differenze permette di confrontare:
 * [Lanci](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Lancio con la rispettiva sorgente
 * [Copie per lingua](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) - Una pagina prima e dopo la traduzione o la ritraduzione
 
-Consulta i rispettivi argomenti su come avviare la differenze all’interno di tali contesti.
+Consulta i rispettivi argomenti su come avviare la funzione per il rilevamento delle differenze all’interno di questi contesti.
 
 ### Presentazione delle differenze   {#presentation-of-differences}
 
 Indipendentemente dal contenuto confrontato, la presentazione della differenza rimane la stessa.
 
-* Il contenuto selezionato all&#39;avvio della diff viene visualizzato a sinistra (il punto di ingresso della diff).
-* Il contenuto di confronto viene visualizzato a destra (a cosa viene confrontato il contenuto selezionato).
+* Il contenuto selezionato all’avvio della funzione per il rilevamento delle differenze viene visualizzato a sinistra (il punto di ingresso).
+* Il contenuto con cui viene confrontato viene visualizzato a destra (rispetto a cosa viene confrontato il contenuto selezionato).
 
 Ad esempio, se si confrontano le versioni, la versione corrente viene visualizzata a sinistra e la versione precedente a destra.
 
@@ -47,21 +47,21 @@ L’origine di entrambe le pagine viene visualizzata in modo chiaro nella barra 
 
 ![Versioni affiancate](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
 
-La differenza rileva le modifiche a livello di componente e HTML. Gli elementi che sono stati modificati vengono evidenziati con colori diversi.
+La differenza rileva le modifiche apportate a livello di componente e HTML. Gli elementi che sono stati modificati sono evidenziati con colori diversi.
 
 **Modifiche ai componenti**
 
-* Verde chiaro - Componente aggiunto
-* Rosa - Componente rimosso
+* Verde chiaro: componente aggiunto
+* Rosa: componente rimosso
 
 **Modifiche HTML**
 
-* Verde scuro - HTML aggiunto
+* Verde scuro: HTML aggiunto
 * Rosso - HTML rimosso
 
 >[!NOTE]
 >
->Quando si confrontano le copie per lingua, l’evidenziazione viene disattivata in quanto in una traduzione cambia tutto e l’evidenziazione non sarebbe di alcun vantaggio.
+>Quando si confrontano le copie per lingua, l’evidenziazione viene disattivata in quanto in una traduzione cambia tutto e l’evidenziazione non avrebbe alcun vantaggio.
 
 ### Modalità a schermo intero e Uscita   {#fullscreen-and-exiting}
 
@@ -85,12 +85,12 @@ Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsias
 
 ## Limiti   {#limitations}
 
-In alcune situazioni, la differenza di pagina potrebbe non rilevare una differenza come previsto.
+In alcune situazioni, il confronto delle differenze della pagina potrebbe non essere in grado di rilevare una differenza nel modo previsto.
 
-* Quando si differenzia tra versioni e avvii, la diff non tiene conto dei componenti dinamici come breadcrumb, menu, elenchi di prodotti o loghi (componenti che si basano sulla struttura del sito per il rendering dei contenuti).
+* Quando si confrontano versioni e lanci, la funzione non tiene conto dei componenti dinamici come breadcrumb, menu, elenchi di prodotti o loghi (componenti che si basano sulla struttura del sito per eseguire rendering del contenuto).
 * Per le versioni, non viene ricreato il criterio per il controllo degli accessi e le relazioni Live Copy.
-* Se una pagina viene spostata, non è più possibile eseguire una differenze con le versioni effettuate prima dello spostamento.
-   * Se riscontri problemi con una differenza, controlla [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) affinché la pagina possa vedere se è stata spostata.
+* Se una pagina viene spostata, non sarà più possibile eseguire una rilevazione delle differenze con qualsiasi versione creata prima dello spostamento.
+   * Se riscontri problemi con un confronto, controlla la [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) per la pagina per verificare se la pagina è stata spostata.
 
 >[!NOTE]
 >
@@ -98,4 +98,4 @@ In alcune situazioni, la differenza di pagina potrebbe non rilevare una differen
 
 >[!NOTE]
 >
->Per ulteriori dettagli sul funzionamento del meccanismo di differenze tra pagine e sulle limitazioni che possono influenzare tale meccanismo, consulta [documentazione per sviluppatori](/help/implementing/developing/introduction/page-diff.md) di questa funzione.
+>Per ulteriori informazioni sul funzionamento del meccanismo di confronto tra pagine e sui limiti che possono influenzare tale meccanismo, consulta la [documentazione per gli sviluppatori](/help/implementing/developing/introduction/page-diff.md) relativa a questa funzione.

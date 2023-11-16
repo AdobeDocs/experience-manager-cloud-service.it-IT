@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina
 description: Scopri come definire le proprietà necessarie per gestire una pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2279'
-ht-degree: 98%
+source-wordcount: '2280'
+ht-degree: 96%
 
 ---
 
@@ -286,7 +286,7 @@ Quando modifichi una pagina puoi utilizzare **Informazioni pagina** per definire
 
 1. Apri la pagina di cui desideri modificare le proprietà.
 1. Seleziona l’icona **Informazioni pagina** per aprire il menu di selezione.
-1. Seleziona **Apri proprietà** per aprire una finestra di dialogo che consente di modificare le proprietà, organizzate nella scheda appropriata. A destra della barra degli strumenti sono disponibili anche i seguenti pulsanti:
+1. Seleziona **Apri proprietà** e viene visualizzata una finestra di dialogo che consente di modificare le proprietà, ordinate in base alla scheda appropriata. A destra della barra degli strumenti sono disponibili anche i seguenti pulsanti:
    * **Annulla**
    * **Salva e chiudi**
 1. Usa il pulsante **Salva e chiudi** per salvare le modifiche.

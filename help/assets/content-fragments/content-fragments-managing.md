@@ -2,10 +2,10 @@
 title: Gestione dei frammenti di contenuto (risorse - frammenti di contenuto)
 description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1877'
-ht-degree: 69%
+source-wordcount: '1873'
+ht-degree: 68%
 
 ---
 
@@ -185,7 +185,7 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
 
 * Sotto il nome del frammento è possibile visualizzare il nome del [Modello per frammento di contenuto](/help/assets/content-fragments/content-fragments-models.md) utilizzato per creare il frammento corrente:
 
-   * Il nome funge anche da collegamento per aprire l’editor modelli.
+   * Il nome è anche un collegamento che apre l’editor modelli.
 
 * Consulta lo stato del frammento; ad esempio, per informazioni su quando è stato creato, modificato o pubblicato. Lo stato viene inoltre codificato con un colore:
 
@@ -199,7 +199,7 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
 
   >[!WARNING]
   >
-  >Il nuovo editor si aprirà nella stessa scheda. Si sconsiglia di aprire entrambi gli editor contemporaneamente.
+  >Il nuovo editor viene aperto nella stessa scheda. Si sconsiglia di aprire entrambi gli editor contemporaneamente.
 
 * **Salva** fornisce accesso all’opzione **Salva e chiudi**.
 
@@ -319,7 +319,7 @@ Esempio:
 
 L’azione **Confronta con corrente** è disponibile nella [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) dopo aver selezionato una versione specifica.
 
-Si aprirà:
+Verrà aperto:
 
 * la versione **Corrente** (più recente) (a sinistra)
 

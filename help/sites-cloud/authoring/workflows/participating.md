@@ -2,10 +2,10 @@
 title: Partecipazione ai flussi di lavoro
 description: In genere i flussi di lavoro includono passaggi che richiedono di eseguire un’attività su una pagina o una risorsa.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 99%
+source-wordcount: '1527'
+ht-degree: 93%
 
 ---
 
@@ -73,9 +73,9 @@ Per questa azione è possibile indicare:
 Utilizza la seguente procedura per completare l’elemento di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Completa** dalla barra degli strumenti.
-1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento**, se richiesto.
+1. Il **Completa elemento di lavoro** viene visualizzata una finestra di dialogo. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento**, se richiesto.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Completamento di un passaggio partecipante: editor pagina {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ Utilizza la seguente procedura per completare l’elemento di lavoro:
 
 1. Apri la [pagina per la modifica](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Completa** dalla barra di stato in alto.
-1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento**, se richiesto.
+1. Il **Completa elemento di lavoro** viene visualizzata una finestra di dialogo. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento**, se richiesto.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Cancel** per interrompere l’azione).
 
 #### Completamento di un passaggio partecipante - Timeline {#completing-a-participant-step-timeline}
@@ -132,9 +132,9 @@ Per questa azione è possibile indicare:
 Segui la procedura seguente per delegare un elemento di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Delega** dalla barra degli strumenti.
-1. Viene aperta una finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se richiesto.
+1. Viene visualizzata la finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se richiesto.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un passaggio partecipante: editor pagina {#delegating-a-participant-step-page-editor}
@@ -143,7 +143,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 
 1. Apri la [pagina per la modifica](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Delega** dalla barra di stato in alto.
-1. Viene aperta una finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se richiesto.
+1. Viene visualizzata la finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se richiesto.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un passaggio partecipante: Timeline {#delegating-a-participant-step-timeline}
@@ -182,7 +182,7 @@ Per questa azione è possibile indicare:
 Per tornare indietro, attenersi alla procedura descritta di seguito.
 
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Passo indietro** per aprire la finestra di dialogo.
 1. Specifica il **Passaggio precedente** e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
@@ -243,7 +243,7 @@ I dettagli del flusso di lavoro sono visualizzati in schede e le azioni appropri
 Per aprire un elemento del flusso di lavoro e visualizzare i dettagli:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Apri** per aprire le schede informative.
 1. Se necessario, seleziona l’azione appropriata, inserisci tutte le informazioni richieste e conferma con **OK** (o **Annulla**).
 1. Usa il comando **Salva** o **Annulla** per uscire.
@@ -264,7 +264,7 @@ Puoi visualizzare i dettagli del payload associato all’istanza del flusso di l
 Per visualizzare il payload e le risorse dell’istanza di flusso di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Visualizza payload** dalla barra degli strumenti per aprire la finestra di dialogo.
    * Poiché un pacchetto del flusso di lavoro è semplicemente una raccolta di puntatori ai percorsi all’interno dell’archivio, è possibile aggiungere, rimuovere o modificare le voci qui per regolare ciò a cui fa riferimento il pacchetto del flusso di lavoro. Utilizza il componente **Definizione risorsa** per aggiungere nuove voci.
 1. I collegamenti possono essere utilizzati per aprire le singole pagine.

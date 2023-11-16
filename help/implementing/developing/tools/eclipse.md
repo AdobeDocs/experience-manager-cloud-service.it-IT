@@ -2,9 +2,9 @@
 title: Strumenti AEM Developer per Eclipse
 description: Scopri come utilizzare AEM Developer Tools per Eclipse, un plug-in di Eclipse basato sul plug-in di Eclipse per Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1192'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Prima di utilizzare gli strumenti per sviluppatori di AEM, è necessario:
 
 >[!NOTE]
 >
->In macOS, è necessario fare clic con il pulsante destro del mouse su **Eclipse.app** e quindi selezionare **Mostra contenuto pacchetto** per trovare `eclipse.ini`**.**
+>In macOS, è necessario fare clic con il pulsante destro del mouse **Eclipse.app** e quindi selezionare **Mostra contenuto pacchetto** per trovare `eclipse.ini`**.**
 
 ## Come installare gli strumenti per sviluppatori AEM per Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -132,16 +132,16 @@ Per creare il progetto di esempio, segui la procedura riportata di seguito.
 1. Sostituisci il contenuto della `PROJECT.ui.apps` progetto con `apps` e `etc` cartelle del pacchetto:
 
    1. Nel pannello Esplora progetti, apri `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
-   1. Fai clic con il pulsante destro del mouse sulla `apps` cartella e scegli **Mostra in** > **Esplora sistema**.
+   1. Fare clic con il pulsante destro del mouse `apps` cartella e scegli **Mostra in** > **Esplora sistema**.
    1. Elimina `apps` e `etc` cartelle che ora dovresti visualizzare e inserire qui le `apps` e `etc` cartelle del pacchetto di contenuti.
-   1. In Eclipse, fai clic con il pulsante destro del mouse sulla `PROJECT.ui.apps` progetto e scelta **Aggiorna**.
+   1. In Eclipse, fai clic con il pulsante destro del mouse su `PROJECT.ui.apps` progetto e scelta **Aggiorna**.
 
 1. Quindi fai lo stesso per `PROJECT.ui.content` e sostituisci la cartella dei contenuti con uno dei pacchetti:
 
    1. Nel pannello Esplora progetti, apri `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
    1. Fai clic con il pulsante destro del mouse sulla cartella dei contenuti più profondi e scegli **Mostra in** -> **Esplora sistema**.
    1. Elimina la cartella dei contenuti da visualizzare e inserisci qui la cartella dei contenuti del pacchetto di contenuti.
-   1. In Eclipse, fai clic con il pulsante destro del mouse sulla `PROJECT.ui.content` progetto e scelta **Aggiorna**.
+   1. In Eclipse, fai clic con il pulsante destro del mouse su `PROJECT.ui.content` progetto e scelta **Aggiorna**.
 
 1. Ora è necessario aggiornare `filter.xml` i file di questi due progetti in modo che corrispondano al contenuto del pacchetto di contenuti. Per questo, apri il `META-INF/vault/filter.xml` del pacchetto di contenuti in un editor di testo/codice separato.
 
@@ -190,11 +190,11 @@ Per creare il progetto di esempio, segui la procedura riportata di seguito.
 1. Assicurati di salvare tutte le modifiche. Ora puoi sincronizzare il nuovo contenuto con l’istanza AEM.
 
 1. Nel pannello Server, accertatevi che la connessione sia avviata e, in caso contrario, avviatela.
-1. Fai clic sul pulsante **Pulisci e pubblica** icona.
+1. Fai clic su **Pulisci e pubblica** icona.
 
 Al termine, il pacchetto dovrebbe essere in esecuzione sull’istanza e, al momento del salvataggio, qualsiasi modifica viene sincronizzata automaticamente con l’istanza.
 
-Se desideri ricreare un pacchetto dal progetto, fai clic con il pulsante destro del mouse sulla `PROJECT.ui.apps` o `PROJECT.ui.content` e scegli **Esegui come** -> **Installazione Maven**.
+Se desideri ricreare un pacchetto dal progetto, fai clic con il pulsante destro del mouse su `PROJECT.ui.apps` o `PROJECT.ui.content` e scegli **Esegui come** -> **Installazione Maven**.
 
 Ora disponi di una cartella di destinazione creata con il pacchetto all’interno (denominata, ad esempio `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 

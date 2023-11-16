@@ -2,10 +2,10 @@
 title: Creazione di programmi di produzione
 description: Scopri come creare un programma di produzione per ospitare il traffico in tempo reale con Cloud Manager.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 88%
+source-wordcount: '601'
+ht-degree: 73%
 
 ---
 
@@ -22,7 +22,7 @@ Per creare un programma di produzione, segui la procedura riportata di seguito.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Fai clic su **Aggiungi programma** in alto a destra.
+1. Clic **Aggiungi programma** dall&#39;angolo superiore destro dello schermo.
 
    ![Pagina di destinazione di Cloud Manager](assets/log-in.png)
 
@@ -49,7 +49,7 @@ Per creare un programma di produzione, segui la procedura riportata di seguito.
 
    ![Selezione delle soluzioni](assets/setup-prod-select.png)
 
-1. Per visualizzare i componenti aggiuntivi facoltativi, come l’opzione per il componente **Commerce** in **Sites**, fai clic sulla freccia che precede il nome della soluzione.
+1. Per visualizzare i componenti aggiuntivi facoltativi, come la selezione del componente aggiuntivo, fai clic sulla freccia che precede il nome della soluzione **Commerce** opzione del componente aggiuntivo in **Sites**.
 
    ![Selezione dei componenti aggiuntivi](assets/setup-prod-commerce.png)
 
@@ -80,7 +80,7 @@ Il programma viene creato da Cloud Manager e visualizzato nella pagina di destin
 
    ![Panoramica del programma](assets/set-up-prod5.png)
 
-Se in qualsiasi momento è necessario passare a un altro programma o tornare alla pagina della panoramica per crearne uno nuovo, fai clic sul nome del programma nella parte superiore sinistra della schermata per visualizzare l’opzione **Accedi a**.
+Se in qualsiasi momento è necessario passare a un altro programma o tornare alla pagina della panoramica per crearne uno nuovo, fai clic sul nome del programma nella parte superiore sinistra della schermata per visualizzare **Accedi a** opzione.
 
 ![Accedi a](assets/create-program-a1.png)
 

@@ -2,10 +2,10 @@
 title: Personalizzazione e targeting dei contenuti
 description: Scopri come creare contenuti personalizzati e mirati con AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '1055'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1053'
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Personalizzare i contenuti web che fornisci ai clienti significa adattare tali esperienze ai loro interessi e alle loro esigenze. Puoi farlo in base alle informazioni che hai su di loro; ad esempio, riepilogo degli acquisti, età, genere o area geografica.
 
-Con Adobe Experience Manager as a Cloud Service (AEM) puoi creare una selezione di contenuti, quindi specificare quale pubblico (gruppi di utenti finali) visualizzerà ogni singola esperienza. Ciò significa che eseguire il targeting delle esperienze personalizzate a tipi di pubblico specifici.
+Con Adobe Experience Manager as a Cloud Service (AEM) puoi creare una selezione di contenuti, quindi specificare quali tipi di pubblico (gruppi di utenti finali) visualizzano ogni singola esperienza. Ciò significa che eseguire il targeting delle esperienze personalizzate a tipi di pubblico specifici.
 
 Quando il lettore è online, il motore di targeting esamina le informazioni disponibili sull’utente finale e le confronta con le definizioni delle esperienze. Il motore poi *“decide”* quale esperienza personalizzata verrà visualizzata.
 
@@ -40,7 +40,7 @@ Quando crei le pagine puoi definire più esperienze, ognuna delle quali corrispo
 
 Un’offerta è un’esperienza personalizzata, spesso disponibile per un periodo di tempo limitato.
 
-Ad esempio, una pagina di un sito web può utilizzare delle offerte come immagini teaser che appaiono nella parte superiore della pagina. Se la pagina è visitata da una persona sopra i 30 anni e da una sotto i 30 anni, a ciascuna verrà presentata un’offerta differente nel teaser dell’esperienza.
+Ad esempio, una pagina di un sito web di esempio può utilizzare le offerte come immagini teaser che appaiono nella parte superiore della pagina. Una persona sopra i 30 anni e una persona sotto i 30 anni possono vedere diverse offerte come teaser di esperienza.
 
 ## Pubblico {#audience}
 

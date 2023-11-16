@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '764'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ PWA Studi si integra perfettamente con Adobe Commerce tramite GraphQL, fornendo 
 
 I frammenti di contenuto sono parti di contenuto con una struttura predefinita che consente di utilizzarli in modo headless utilizzando GraphQL come API in formati diversi (ad esempio, JSON, Markdown) e renderizzati in modo indipendente. I frammenti di contenuto includono tutti i tipi di dati e i campi necessari affinché GraphQL possa garantire che l’applicazione richieda solo ciò che è disponibile e riceva ciò che è previsto. La flessibilità che forniscono in termini di struttura li rende perfetti per l&#39;utilizzo in più posizioni e su più canali.
 
-Con l’Editor modello per frammenti di contenuto in Adobe Experience Manager è facile progettare la struttura necessaria. Il problema principale per l’integrazione di Frammenti di contenuto di Adobe Experience Manager (o di qualsiasi altro dato) con l’applicazione PWA Studi è il recupero di dati da più endpoint GraphQL. Questo perché, come impostazione predefinita, PWA Studi funziona con un singolo endpoint Adobe Commerce GraphQL.
+L’Editor modello per frammenti di contenuto in Adobe Experience Manager semplifica la progettazione della struttura necessaria. Il problema principale per l’integrazione di Frammenti di contenuto di Adobe Experience Manager (o di qualsiasi altro dato) con l’applicazione PWA Studi è il recupero di dati da più endpoint GraphQL. Questo perché, come impostazione predefinita, PWA Studi funziona con un singolo endpoint Adobe Commerce GraphQL.
 
 ## Architettura {#architecture}
 
@@ -62,7 +62,7 @@ Per collegare PWA Studi all’endpoint GraphQL dell’AEM, puoi utilizzare [Este
 
    Per ulteriori dettagli sulla personalizzazione del componente Navigazione, consulta [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) e nella [Framework di estensibilità](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) PWA Studio.
 
-1. Il client Apollo si aspetta che l’endpoint AEM GraphQL sia `<https://pwa-studio/endpoint.js>`. Per mappare l’endpoint a questa posizione, devi personalizzare la configurazione UPWARD dell’applicazione PWA Studi: a. Aggiungi la variabile AEM_CFM_GRAPHQL a pwa-root/.env e adattala in modo che punti all’endpoint GraphQL dei frammenti di contenuto AEM.
+1. Il client Apollo si aspetta che l’endpoint AEM GraphQL sia `<https://pwa-studio/endpoint.js>`. Per mappare l’endpoint a questa posizione, personalizza la configurazione UPWARD dell’applicazione PWA Studi: a. Aggiungi la variabile AEM_CFM_GRAPHQL a pwa-root/.env e adattala in modo che punti all’endpoint GraphQL dei frammenti di contenuto AEM.
 
    Esempio: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
@@ -93,15 +93,15 @@ Segui la documentazione sui Frammenti di contenuto dell’AEM per impostare un e
 
 * Adobe di criteri di condivisione risorse tra origini granite (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   Imposta la proprietà allowedorigin sul nome host completo dell’applicazione PWA.
+  Imposta la proprietà allowedorigin sul nome host completo dell’applicazione PWA.
 
-   Esempio:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Esempio:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtro referrer Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   Imposta la proprietà allow.hosts sul nome host dell’applicazione PWA.
+  Imposta la proprietà allow.hosts sul nome host dell’applicazione PWA.
 
-   Esempio: `pwa-studio-test-vflyn.local.pwadev`
+  Esempio: `pwa-studio-test-vflyn.local.pwadev`
 
 Puoi trovare esempi completi di entrambe le configurazioni qui: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

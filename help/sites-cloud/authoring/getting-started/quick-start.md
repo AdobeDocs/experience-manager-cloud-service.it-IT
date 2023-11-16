@@ -2,10 +2,10 @@
 title: Guida rapida all’authoring delle pagine
 description: Guida rapida di alto livello per iniziare a creare i contenuti di una pagina
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 98%
+source-wordcount: '1561'
+ht-degree: 90%
 
 ---
 
@@ -93,11 +93,11 @@ La modalità di selezione di una pagina dipende dalla visualizzazione utilizzata
 
 1. Vista a colonne:
 
-   * Tocca/fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
+   * Tocca o fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
 
 1. Vista a elenco:
 
-   * Tocca/fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
+   * Tocca o fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
 
 1. Vista a schede:
 
@@ -168,7 +168,7 @@ Per modificare la pagina:
 
    >[!NOTE]
    >
-   >È possibile utilizzare **Incolla** per collocare i componenti sulla stessa pagina o su una pagina differente. Se si incolla un componente in una pagina che era già aperta prima dell’operazione Taglia o Copia, sarà necessario aggiornare la pagina.
+   >È possibile utilizzare **Incolla** per collocare i componenti sulla stessa pagina o su una pagina differente. Se si incolla in un&#39;altra pagina già aperta prima dell&#39;operazione Taglia/Copia, è necessario aggiornare la pagina.
 
    * [Eliminare](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un componente:
 
@@ -258,7 +258,7 @@ Queste azioni possono essere tutte attivate nei seguenti modi:
 
    * [Sposta](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
-      * Verrà visualizzata la procedura guidata per la raccolta delle informazioni necessarie allo spostamento della pagina. Segui le istruzioni sullo schermo.
+      * Viene visualizzata la procedura guidata per raccogliere le informazioni necessarie per spostare la pagina. Seguire le istruzioni visualizzate.
 
    * [Elimina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
@@ -302,7 +302,7 @@ Per creare una [versione](/help/sites-cloud/authoring/features/page-versions.md)
 
    ![Opzione per la vista Timeline](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Tocca o fai clic sull’ellissi in basso a destra della colonna Timeline per visualizzare pulsanti aggiuntivi, tra i quali **Salva come versione**.
+1. Tocca o fai clic sull’ellissi in basso a destra della colonna Timeline per visualizzare pulsanti aggiuntivi, tra cui **Salva come versione**.
 
    ![Vista Timeline](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ Lo stesso meccanismo di base viene utilizzato per il ripristino e/o il confronto
 
    Se una versione della pagina è già stata salvata, viene elencata nella Timeline.
 
-1. Tocca o fai clic sulla versione da ripristinare, verranno visualizzati pulsanti di azione aggiuntivi:
+1. Tocca o fai clic sulla versione da ripristinare. Verranno visualizzati pulsanti di azione aggiuntivi:
 
    * **Ripristina questa versione**
 

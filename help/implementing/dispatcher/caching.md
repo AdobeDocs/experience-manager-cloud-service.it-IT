@@ -3,9 +3,9 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Scopri le nozioni di base sul caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2874'
 ht-degree: 2%
 
 ---
@@ -232,7 +232,7 @@ Quando viene ricevuta una richiesta HEAD al CDN di Adobe per una risorsa che è 
 
 Gli URL del sito web includono spesso parametri della campagna di marketing utilizzati per monitorare il successo di una campagna.
 
-Per gli ambienti creati a ottobre 2023 o versioni successive, al fine di memorizzare in cache meglio le richieste, la rete CDN rimuoverà i parametri di query comuni relativi al marketing, in particolare quelli che corrispondono al seguente pattern regex:
+Per gli ambienti creati a ottobre 2023 o versioni successive, per memorizzare in cache meglio le richieste, la rete CDN rimuoverà i parametri di query comuni relativi al marketing, in particolare quelli che corrispondono al seguente pattern regex:
 
 ```
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$

@@ -4,9 +4,9 @@ description: Scopri come creare contenuti per i frammenti di contenuto, quindi c
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2252'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
 
      >[!WARNING]
      >
-     >L’editor originale si aprirà nella stessa scheda. Si sconsiglia di aprire entrambi gli editor contemporaneamente.
+     >L’editor originale viene aperto nella stessa scheda. Si sconsiglia di aprire entrambi gli editor contemporaneamente.
 
 * pannello a sinistra: mostra **[Varianti](#variations)** per il frammento di contenuto e i relativi **Campi**:
    * questi collegamenti possono essere utilizzati per [Navigare nella struttura dei frammenti di contenuto](#navigate-structure)
@@ -88,7 +88,7 @@ Nel pannello a sinistra puoi vedere:
 
 ### Segui collegamenti {#follow-links}
 
-In varie parti dell’editor viene visualizzata l’icona del collegamento. Può essere utilizzato per aprire l’elemento visualizzato, ad esempio un Modello per frammento di contenuto, un Riferimento principale o un frammento a cui si fa riferimento:
+In varie parti dell’editor è possibile visualizzare l’icona del collegamento. Può essere utilizzato per aprire l’elemento visualizzato, ad esempio un Modello per frammento di contenuto, un Riferimento principale o un frammento a cui si fa riferimento:
 
 ![Editor frammento di contenuto - Icona collegamento](assets/cf-authoring-link-icon.png)
 

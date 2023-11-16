@@ -2,10 +2,10 @@
 title: Crea sito demo
 description: Crea un sito demo in AEM basato su una libreria di modelli preconfigurati.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ Una volta implementato AEM Reference Demos Add-On, la pipeline può accedere all
 
    ![Accesso all’ambiente di authoring](assets/access-author.png)
 
-1. Dal menu principale di AEM, tocca o fai clic su **Sites**.
+1. Dal menu principale dell’AEM, tocca o fai clic su **Sites**.
 
    ![Accedere a Sites](assets/access-sites.png)
 
@@ -104,7 +104,7 @@ Adesso che hai completato questa parte del percorso di AEM Reference Demo Add-On
 Puoi testare le funzioni di AEM utilizzando il contenuto aggiuntivo. Sono disponibili due opzioni per continuare il percorso:
 
 * Se desideri una demo per testare completamente il contenuto di AEM Screens, assicurati di aver implementato un sito basato su **Modello del sito We.Cafe** come descritto in precedenza e continua tramite [Abilita AEM Screens per il tuo sito dimostrativo.](screens.md)
-* Se utilizzi solo contenuti demo di Sites, continua con [Gestire i siti demo,](manage.md) dove troverai nformazioni sugli strumenti disponibili per gestire i siti demo e su come rimuoverli.
+* Se utilizzi solo contenuti demo di Sites, continua con [Gestire i siti demo,](manage.md) dove scopri gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
 
 ## Risorse aggiuntive {#additional-resources}
 

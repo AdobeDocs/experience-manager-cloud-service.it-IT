@@ -1,11 +1,11 @@
 ---
 title: Immagini interattive
-description: Scopri come utilizzare le immagini interattive in Dynamic Media.
+description: Scopri come utilizzare le immagini interattive in Dynamic Medie.
 contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '4176'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Il tutorial illustra i passaggi necessari per integrare le immagini interattive 
 
 Passaggi delle immagini interattive:
 
-1. **(Facoltativo) Identificare le variabili dei punti attivi**. Se utilizzi Adobe Experience Manager Assets e Dynamic Media in modo autonomo, identifica le variabili dinamiche utilizzate nell’implementazione Quickview esistente. In questo modo è possibile inserire i dati dei punti attivi durante la creazione dell&#39;immagine interattiva. Consulta [(Facoltativo) Identificazione delle variabili dei punti attivi](#optional-identifying-hotspot-variables).
+1. **(Facoltativo) Identificare le variabili dei punti attivi**. Se utilizzi Adobe Experience Manager Assets e Dynamic Medie standalone, identifica le variabili dinamiche utilizzate nell’implementazione Quickview esistente. In questo modo è possibile inserire i dati dei punti attivi durante la creazione dell&#39;immagine interattiva. Consulta [(Facoltativo) Identificazione delle variabili dei punti attivi](#optional-identifying-hotspot-variables).
 Tuttavia, se utilizzi Experience Manager Sites, o Experience Manager eCommerce, o entrambi, questo passaggio non è necessario.
 
 1. **(Facoltativo) Crea un predefinito visualizzatore di immagini interattivo**. Personalizzare l&#39;immagine grafica utilizzata per rappresentare i punti attivi. Se intendi utilizzare il predefinito visualizzatore di immagini interattive predefinito denominato, non è necessario creare un predefinito visualizzatore di immagini interattive personalizzato `Shoppable_Banner` invece.
@@ -52,8 +52,8 @@ Consulta [Aggiunta di punti attivi a un banner immagine](#adding-hotspots-to-an-
 Consulta [Anteprima di immagini interattive](#optional-previewing-interactive-images) - Facoltativo. Se lo desideri, puoi visualizzare una rappresentazione del banner acquistabile e testarne l’interattività.
 Consulta [Pubblicazione delle risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) per informazioni dettagliate su come pubblicare risorse di immagini interattive.
 
-1. **Aggiungi un’immagine interattiva al tuo sito web o al sito web in Experience Manager**. Se utilizzi Sites, eCommerce o entrambi, in Experience Manager puoi aggiungere immagini interattive direttamente a una pagina web. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
-Se utilizzi Experience Manager Assets e Dynamic Media in modo autonomo, copia il codice da incorporare sul tuo sito web. Quindi, integrarlo con Quickview esistente. Consulta [Integrazione di un’immagine interattiva con il sito web](#integrating-an-interactive-image-with-your-website).
+1. **Aggiungi un’immagine interattiva al tuo sito web o al sito web in Experience Manager**. Se utilizzi Sites, eCommerce o entrambi, in Experience Manager puoi aggiungere immagini interattive direttamente a una pagina web. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Medie alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Se utilizzi Experience Manager Assets e Dynamic Medie in modo autonomo, copia il codice da incorporare sul tuo sito web. Quindi, integrarlo con Quickview esistente. Consulta [Integrazione di un’immagine interattiva con il sito web](#integrating-an-interactive-image-with-your-website).
 Se si utilizza un modulo WCM (Web Content Manager) di terze parti, integrare il nuovo video interattivo con il Quickview esistente utilizzato sul sito Web. Consulta [Integrazione di un&#39;immagine interattiva con un Quickview esistente](#integrating-an-interactive-image-with-an-existing-quickview).
 
 ## (Facoltativo) Identificare le variabili dei punti attivi {#optional-identifying-hotspot-variables}
@@ -313,7 +313,7 @@ Puoi utilizzare Anteprima per visualizzare una rappresentazione dell’aspetto d
 Quando sei soddisfatto dell’immagine interattiva, puoi pubblicarla.
 Consulta [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md).
 Consulta [Collegare gli URL all’applicazione web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
-Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **Per visualizzare in anteprima le immagini interattive:**
 
@@ -330,7 +330,7 @@ Consulta [Pubblicare le risorse](/help/assets/dynamic-media/publishing-dynamicme
 
 Dopo aver caricato un&#39;immagine del banner, aggiunto punti attivi e pubblicato l&#39;immagine interattiva, puoi aggiungerla alla pagina del sito Web.
 
-I clienti di Experience Manager Sites possono aggiungere l’immagine interattiva trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+I clienti di Experience Manager Sites possono aggiungere l’immagine interattiva trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Se sei un cliente Experience Manager Assets indipendente, puoi aggiungere manualmente l’immagine interattiva al sito web come descritto in questa sezione.
 
@@ -405,7 +405,7 @@ Il codice di incorporamento restituito da Experience Manager Assets include un g
              s7interactiveimageviewer.setHandlers({
                 "quickViewActivate": function(inData) {
                     var sku=inData.sku; //SKU for product ID
-                    //To pass other parameter from the hotspot, you will need to add custom parameter during the hotspot setup as parameterName=value
+                    //To pass other parameter from the hotspot, add custom parameter during the hotspot setup as parameterName=value
                     loadQuickView(sku); //Replace this call with your Quickview plugin
                     //See your Quickviewer plugin for the Quickview call
                  },

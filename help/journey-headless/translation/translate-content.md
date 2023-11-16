@@ -2,10 +2,10 @@
 title: Tradurre il contenuto headless
 description: Utilizzare il connettore di traduzione per tradurre i contenuti headless.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2175'
-ht-degree: 99%
+source-wordcount: '2170'
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ Per i proprietari di contenuti che sono anche responsabili della traduzione, spe
 1. Passa a **Navigazione** -> **Risorse** -> **File**. Tieni presente che il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
 1. Seleziona la directory principale della lingua del progetto. In questo caso abbiamo selezionato `/content/dam/wknd/en`.
 1. Tocca o fai clic sul selettore della barra e mostra il pannello **Riferimenti**.
-1. Tocca o fai clic su **Copie in lingua**.
+1. Tocca o fai clic su **Copie per lingua**.
 1. Seleziona la casella di spunta delle **Copie in lingua**.
 1. Espandi la sezione **Aggiorna copie in lingua** nella parte inferiore del pannello dei riferimenti.
 1. Nel menu a discesa **Progetto**, seleziona **Crea progetto di traduzione**.
@@ -130,7 +130,7 @@ Quando crei automaticamente il progetto di traduzione, AEM valuta il contenuto h
 
 Per visualizzare i dettagli del contenuto headless incluso in questo progetto:
 
-1. Tocca o fai clic sul pulsante con i puntini di sospensione nella parte inferiore della scheda **Lavoro di traduzione**.
+1. Tocca o fai clic sul pulsante con i puntini di sospensione nella parte inferiore della sezione **Lavoro di traduzione** Card.
 1. Nella finestra **Lavoro di traduzione** vengono elencati tutti gli elementi del lavoro.
    ![Dettagli del lavoro di traduzione](assets/translation-job-detail.png)
 1. Tocca o fai clic su una riga per visualizzarne i dettagli, tenendo presente che può rappresentare più elementi di contenuto da tradurre.
@@ -226,7 +226,7 @@ Se passi a questa cartella tramite **Navigazione** -> **File** -> **Risorse**, v
 
 Il Translation Framework AEM riceve le traduzioni dal connettore e quindi crea automaticamente la struttura del contenuto in base alla lingua root, utilizzando le traduzioni fornite.
 
-È importante comprendere che questo contenuto non è pubblicato e, quindi, non è disponibile per i servizi headless. Impareremo a conoscere questa struttura autore-pubblicazione e vedremo come pubblicare i nostri contenuti tradotti nel prossimo passaggio del percorso di traduzione.
+È importante comprendere che questo contenuto non è pubblicato e, quindi, non è disponibile per i servizi headless. Scopri questa struttura autore-pubblicazione e scopri come pubblicare i contenuti tradotti nel passaggio successivo del percorso di traduzione.
 
 ## Traduzione manuale {#human-translation}
 
@@ -242,7 +242,7 @@ Ora cha hai completato questa parte del percorso di traduzione headless, dovrest
 * Essere in grado di creare nuovi progetti di traduzione.
 * Utilizzare i progetti di traduzione per tradurre i contenuti headless.
 
-Approfondisci questo argomento e continua il tuo percorso di traduzione in AEM headless consultando il documento successivo [Pubblicare contenuti tradotti](publish-content.md) dove imparerai a pubblicare i contenuti tradotti e come aggiornare tali traduzioni man mano che il contenuto della lingua principale cambia.
+Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM esaminando il documento [Pubblicare contenuti tradotti](publish-content.md) dove scopri come pubblicare i contenuti tradotti e come aggiornare tali traduzioni man mano che il contenuto della lingua root cambia.
 
 ## Risorse aggiuntive {#additional-resources}
 

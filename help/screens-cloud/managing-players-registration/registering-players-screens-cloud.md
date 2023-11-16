@@ -2,9 +2,9 @@
 title: Registrazione dei lettori in Screens as a Cloud Service
 description: Questa pagina descrive come registrare i lettori in Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -44,18 +44,18 @@ Per registrare il lettore, segui i passaggi seguenti:
    1. **Limita utilizzo**: attiva il pulsante per disattivare il limite di utilizzo del codice di registrazione. Per impostazione predefinita, l’opzione Limita utilizzo è disattivata.
    1. **Limite di utilizzo**: scegli il numero per il limite di utilizzo
 
-1. Fai clic su **Crea** per creare il codice di registrazione. Visualizzerai il lettore con il codice di registrazione nell’elenco.
+1. Clic **Crea** per creare il codice di registrazione. Puoi visualizzare il lettore con il codice di registrazione nell’elenco.
 
    ![immagine](/help/screens-cloud/assets/player/register-player3.png)
 
 1. Fai clic sul valore sotto la colonna **CODICE DI REGISTRAZIONE**  per copiare il valore negli Appunti.
 
-1. Incolla questo valore in **Immetti il codice** campo in **Registrazione lettore** nell’interfaccia utente di amministrazione del lettore AEM Screens, quindi fai clic su **Registrati**.
+1. Incolla questo valore in **Immetti il codice** campo in **Registrazione lettore** dall’interfaccia utente di amministrazione del lettore AEM Screens e fai clic su **Registrati**.
 
    ![immagine](/help/screens-cloud/assets/player/register-player4.png)
 
 
-1. Dopo aver aggiunto il codice, vedrai che il lettore è ora registrato dall’interfaccia utente di amministrazione del lettore.
+1. Dopo aver aggiunto il codice, puoi vedere che il lettore è ora registrato dall’interfaccia utente di amministrazione del lettore.
 
    ![immagine](/help/screens-cloud/assets/player/register-player5.png)
 

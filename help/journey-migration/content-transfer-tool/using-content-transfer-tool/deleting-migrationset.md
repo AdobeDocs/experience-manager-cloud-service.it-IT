@@ -2,9 +2,9 @@
 title: Eliminazione di un set di migrazione nello strumento Content Transfer
 description: Scopri come eliminare un set di migrazione nello strumento Content Transfer (Trasferimento contenuti).
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '232'
 ht-degree: 8%
 
 ---
@@ -22,11 +22,11 @@ I set di migrazione possono essere eliminati da Cloud Acceleration Manager.
 
 Per eliminare un set di migrazione, effettua le seguenti operazioni:
 
-1. Passa alla vista a elenco Set di migrazione in Cloud Acceleration Manager e fai clic sui tre punti (**...**) accanto al set di migrazione da eliminare. Il **Elimina** L&#39;azione deve essere visibile come mostrato di seguito.
+1. Nella vista a elenco Set di migrazione di Cloud Acceleration Manager, fai clic sui tre punti (**...**) accanto al set di migrazione da eliminare. Il **Elimina** L&#39;azione deve essere visibile come mostrato di seguito.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. Dopo aver fatto clic su **Elimina** verrà visualizzata una finestra di dialogo per confermare l’azione elimina.
+1. Quando fai clic su **Elimina** viene visualizzata una finestra di dialogo che consente di confermare l&#39;azione elimina.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
 

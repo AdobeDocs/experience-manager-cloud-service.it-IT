@@ -2,16 +2,16 @@
 title: Terminologia di AEM as a Cloud Service
 description: Prima di accedere a AEMaaCS è utile comprendere alcuni termini del sistema e la relativa struttura di base.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 87%
 
 ---
 
 # Terminologia di AEM as a Cloud Service {#terminology}
 
-In questa parte del [percorso di onboarding](overview.md) è riportata parte della terminologia di AEM as a Cloud Service e la relativa struttura di base.
+In questa parte del [percorso di onboarding,](overview.md) impari parte della terminologia di AEM as a Cloud Service e la sua struttura di base.
 
 ## Obiettivo {#objective}
 
@@ -53,4 +53,4 @@ Ora che hai completato questa parte del percorso di onboarding di AEM, dovresti 
 * I diversi livelli che compongono AEMaaCS.
 * Le nozioni di base su ogni livello.
 
-Sviluppa le tue conoscenze e continua il percorso di onboarding di AEM leggendo il prossimo documento, [Accesso a Admin Console](admin-console.md), dove scoprirai come accedere alla Console e verificare lo stato di amministratore di sistema.
+Approfondisci l&#39;argomento e continua il tuo percorso di onboarding AEM leggendo il documento successivo. [Accesso all’Admin Console](admin-console.md), dove viene illustrato come accedere alla console e verificare lo stato di amministratore di sistema.

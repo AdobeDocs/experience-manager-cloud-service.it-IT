@@ -3,13 +3,13 @@ title: Modelli per frammenti di contenuto
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i frammenti di contenuto in AEM. Questi frammenti ti consentono di creare contenuti strutturati da utilizzare nella distribuzione headless o nell’authoring di pagine.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 61%
+source-wordcount: '3061'
+ht-degree: 60%
 
 ---
-
 
 # Modelli per frammenti di contenuto {#content-fragment-models}
 
@@ -181,6 +181,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
    * Consente l’introduzione di schede da utilizzare per la modifica del contenuto dei frammenti di contenuto.
       * Vengono visualizzati come divisori nell’editor modelli, separando le sezioni dell’elenco dei tipi di dati di contenuto. Ogni sua istanza rappresenta l’inizio di una nuova scheda.
       * Nell’editor frammenti ogni istanza viene visualizzata come una scheda.
+
      >[!NOTE]
      >
      >Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
@@ -198,10 +199,10 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
   >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering come** 
-Consente varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore può visualizzare una singola istanza del campo o se può creare più istanze.
+Consente varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze.
 
-* **Etichetta campo** 
-L’inserimento di **Etichetta campo** genera automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente se necessario.
+* **Etichetta campo**
+Inserimento di un **Etichetta campo** genera automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente se necessario.
 
 * **Convalida**
 La convalida di base è disponibile tramite meccanismi quali la proprietà **Obbligatorio**. Alcuni tipi di dati dispongono di campi di convalida aggiuntivi. Vedi [Convalida](#validation) per ulteriori dettagli.

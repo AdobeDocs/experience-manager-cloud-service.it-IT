@@ -2,9 +2,9 @@
 title: Convalida dei trasferimenti di contenuto
 description: Utilizzare lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuti
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -127,7 +127,7 @@ Migration validation took 0 minutes
 
 L’esempio di errore precedente è stato ottenuto eseguendo un’acquisizione e quindi eseguendo nuovamente la stessa acquisizione con Wipe disabilitato, in modo che non vi fossero nodi coinvolti durante l’acquisizione — tutto era già presente nel target.
 
-Oltre a essere incluso nel registro di acquisizione, il rapporto di convalida è accessibile dalla sezione **Processi di acquisizione** interfaccia utente in Cloud Acceleration Manager. A tale scopo, fai clic sui tre punti (**...**) quindi fare clic su **Rapporto di convalida** nel menu a discesa per visualizzare il rapporto di convalida.
+Oltre a essere incluso nel registro di acquisizione, il rapporto di convalida è accessibile dalla sezione **Processi di acquisizione** interfaccia utente in Cloud Acceleration Manager. A tale scopo, fare clic sui tre punti (**...**) quindi fai clic su **Rapporto di convalida** nel menu a discesa per visualizzare il rapporto di convalida.
 
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -138,11 +138,11 @@ Consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content
 
 Una volta completata correttamente l’estrazione e l’acquisizione, sono disponibili un riepilogo e un rapporto della migrazione principale. Queste informazioni possono essere utilizzate per verificare quali utenti e gruppi sono stati migrati correttamente e, forse, per determinare perché alcuni non lo sono stati.
 
-Per visualizzare queste informazioni, vai a Cloud Acceleration Manager. Fai clic sulla scheda del progetto e poi sulla scheda Content Transfer (Trasferimento contenuti). Accedi a **Processi di acquisizione** e individua l’acquisizione da verificare. Fai clic sui tre punti (**...**) per tale acquisizione, quindi fai clic su **Visualizza riepilogo entità** nel menu a discesa.
+Per visualizzare queste informazioni, vai a Cloud Acceleration Manager. Fai clic sulla scheda del progetto e poi sulla scheda Content Transfer (Trasferimento contenuti). Accedi a **Processi di acquisizione** e individua l’acquisizione da verificare. Fare clic sui tre punti (**...**) per tale acquisizione, quindi fai clic su **Visualizza riepilogo entità** nel menu a discesa.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Verrà visualizzata una finestra di dialogo con le informazioni di riepilogo. Utilizzare le icone della guida per una descrizione più completa. Fai clic su **Scarica rapporto** per scaricare il rapporto CSV (Virgole Separated) completo.
+Viene visualizzata una finestra di dialogo con le informazioni di riepilogo. Utilizzare le icone della guida per una descrizione più completa. Fai clic su **Scarica rapporto** per scaricare il rapporto CSV (Virgole Separated) completo.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 

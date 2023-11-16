@@ -2,10 +2,10 @@
 title: Applicazione dei flussi di lavoro alle pagine
 description: Durante l’authoring, è possibile ricorrere ai flussi di lavoro per intraprendere azioni sulle pagine; è inoltre possibile applicare più di un flusso di lavoro..
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '660'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 93%
 
 ---
 
@@ -52,9 +52,7 @@ Puoi avviare un flusso di lavoro da:
 * [con l’opzione Crea della barra degli strumenti di Sites](#starting-a-workflow-from-the-sites-toolbar);
 * [dalla barra Timeline della console Sites](#starting-a-workflow-from-the-timeline).
 
-In entrambi i casi sarà necessario:
-
-* [Specificare i dettagli del flusso di lavoro nella procedura guidata Crea flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
+In entrambi i casi, devi [Specificare i dettagli del flusso di lavoro nella procedura guidata Crea flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Avvio di un flusso di lavoro dalla barra degli strumenti di Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -123,7 +121,7 @@ Puoi specificare i dettagli:
    * Una risorsa esistente per visualizzare le seguenti azioni:
 
       * **Includi elementi secondari** per specificare gli elementi secondari di tale risorsa che vengono inclusi nel flusso di lavoro.
-Una finestra di dialogo si apre per permettere di perfezionare la selezione includendo:
+Viene visualizzata una finestra di dialogo che consente di perfezionare la selezione in base a:
 
          * Solo gli elementi secondari di primo livello.
          * Solo pagine modificate.
@@ -143,6 +141,6 @@ Una finestra di dialogo si apre per permettere di perfezionare la selezione incl
 
 ## Avvio di un flusso di lavoro dall’editor pagina {#starting-a-workflow-from-the-page-editor}
 
-Quando modifichi una pagina puoi selezionare **Informazioni pagina** dalla barra degli strumenti. Il menu a discesa include l’opzione **Inizia nel flusso di lavoro**. Questa apre una finestra di dialogo nella quale puoi specificare il flusso di lavoro obbligatorio, insieme a un titolo richiesto:
+Quando modifichi una pagina puoi selezionare **Informazioni pagina** dalla barra degli strumenti. Il menu a discesa include l’opzione **Inizia nel flusso di lavoro**. Viene visualizzata una finestra di dialogo in cui puoi specificare il flusso di lavoro richiesto, insieme a un titolo, se necessario:
 
 ![Avviare un flusso di lavoro dall’editor pagina](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

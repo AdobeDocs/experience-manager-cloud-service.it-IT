@@ -3,7 +3,7 @@ title: Utilizzo dell’IDE GraphiQL in AEM
 description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 95%
@@ -113,7 +113,7 @@ Utilizzando GraphQL è possibile configurare le intestazioni cache HTTP per cont
 
    ![Intestazioni cache HTTP per query persistenti](assets/cfm-graphqlapi-headers-01.png "Intestazioni cache HTTP per query persistenti")
 
-1. Selezionando questa opzione si aprirà la finestra di dialogo **Configurazione cache**:
+1. Selezionando questa opzione si apre **Configurazione cache** finestra di dialogo:
 
    ![Impostazioni di intestazione cache HTTP per query persistenti](assets/cfm-graphqlapi-headers-02.png "Impostazioni di intestazione cache HTTP per query persistenti")
 
@@ -160,7 +160,7 @@ Il **Copia URL** consente di simulare una query copiando l’URL utilizzato per 
 <!--
   >[!NOTE]
   >
-  >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
+  >The URL needs [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >
   >The target environment might need adjusting, depending on your requirements.
 -->

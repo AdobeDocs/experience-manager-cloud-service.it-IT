@@ -3,10 +3,10 @@ title: Best practice per query e indicizzazione
 description: Scopri come ottimizzare indici e query in base alle linee guida sulle best practice di Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3144'
-ht-degree: 46%
+source-wordcount: '3133'
+ht-degree: 47%
 
 ---
 
@@ -132,11 +132,12 @@ Il `Reset Statistics` è disponibile l’opzione per rimuovere tutte le statisti
 
 ### Spiega query
 
-Lo strumento Explain Query Tool consente agli sviluppatori di comprendere il piano di esecuzione delle query (vedere [Lettura del piano di esecuzione della query](#reading-query-execution-plan)), inclusi i dettagli di eventuali indici utilizzati durante l’esecuzione della query. Questo può essere utilizzato per comprendere l’efficacia dell’indicizzazione di una query al fine di prevederne o analizzarne retrospettivamente le prestazioni.
+Lo strumento Explain Query Tool consente agli sviluppatori di comprendere il piano di esecuzione delle query (vedere [Lettura del piano di esecuzione della query](#reading-query-execution-plan)), inclusi i dettagli di eventuali indici utilizzati durante l’esecuzione della query. Questo può essere utilizzato per comprendere l’efficacia dell’indicizzazione di una query per prevedere o analizzare retrospettivamente le prestazioni.
 
 #### Spiegazione di una query
 
 Per spiegare una query, eseguire le operazioni seguenti:
+
 * Selezionare la lingua di query appropriata utilizzando `Language` a discesa.
 * Immettere l&#39;istruzione di query in `Query` campo.
 * Se necessario, seleziona la modalità di esecuzione della query utilizzando le caselle di controllo fornite.
@@ -238,7 +239,7 @@ In questa sezione del piano si afferma che:
 
 Questo piano di esecuzione della query si tradurrà in ogni risorsa sotto `/content/dam` letti dall’indice e quindi filtrati ulteriormente dal motore di query (che includerà solo quelli che corrispondono alla restrizione della proprietà non indicizzata nel set di risultati).
 
-Anche se solo una piccola percentuale di risorse corrisponde alla restrizione `jcr:content/metadata/myProperty = "My Property Value"`, la query dovrà leggere un numero elevato di nodi per (tentare di) riempire la &quot;pagina&quot; richiesta dei risultati. Questo può causare prestazioni insoddisfacenti, che verranno visualizzate come con un basso `Read Optimization` nello strumento Prestazioni query) e può causare messaggi di avvertenza che indicano che un numero elevato di nodi viene attraversato (vedere [Attraversamento indice](#index-traversal)).
+Anche se solo una piccola percentuale di risorse corrisponde alla restrizione `jcr:content/metadata/myProperty = "My Property Value"`, la query deve leggere un numero elevato di nodi per (tentare di) riempire la &quot;pagina&quot; richiesta dei risultati. Questo può causare prestazioni insoddisfacenti, che verranno visualizzate come con un basso `Read Optimization` nello strumento Prestazioni query) e può causare messaggi di avvertenza che indicano che un numero elevato di nodi viene attraversato (vedere [Attraversamento indice](#index-traversal)).
 
 Per ottimizzare le prestazioni di questa seconda query, crea una versione personalizzata di `damAssetLucene-9` indice (`damAssetLucene-9-custom-1`) e aggiungi la seguente definizione di proprietà -
 

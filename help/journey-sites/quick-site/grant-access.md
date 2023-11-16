@@ -2,10 +2,10 @@
 title: Concedere l’accesso allo sviluppatore front-end
 description: Inserisci gli sviluppatori front-end in Cloud Manager in modo che abbiano accesso all'archivio git del sito AEM e alla pipeline.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 100%
+source-wordcount: '784'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Innanzitutto devi aggiungere lo sviluppatore front-end come utente utilizzando l
 
    ![Profili di prodotto](assets/product-profiles.png)
 
-1. Per assegnare lo sviluppatore front-end ai profili corretti, tocca o fai clic sulla scheda **Utenti** e quindi sul pulsante **Aggiungi utente**.
+1. Per assegnare lo sviluppatore front-end ai profili corretti, tocca o fai clic sul pulsante **Utenti** e quindi la scheda **Aggiungi utente** pulsante.
 
    ![Aggiungi utente](assets/add-user.png)
 

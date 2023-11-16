@@ -4,9 +4,9 @@ description: Scopri come utilizzare l’Editor universale per modificare qualsia
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '969'
 ht-degree: 11%
 
 ---
@@ -79,7 +79,7 @@ L’Editor universale consente di interagire con il contenuto all’interno del 
 
    ![Voce di menu emulatore](assets/do-not-localize/ue-emulator-1.png)
 
-1. Poiché i Reader si trovano su dispositivi diversi con proporzioni diverse, l’editor offre modalità di emulazione che consentono di vedere come verrà presentata la pagina agli utenti. Ad esempio, seleziona l’opzione per dispositivo mobile in modalità verticale.
+1. I Reader possono essere su dispositivi diversi con proporzioni diverse, pertanto l’editor offre modalità di emulazione per vedere come verrà presentata la pagina agli utenti. Ad esempio, seleziona l’opzione per dispositivo mobile in modalità verticale.
 
    ![Voce di menu emulatore](assets/do-not-localize/ue-emulator-2.png)
 
@@ -95,7 +95,7 @@ Poiché devi toccare o fare clic sul contenuto per selezionarlo nell’editor, q
 
 1. Nella barra della modalità a sinistra dell’editor, tocca o fai clic su **Anteprima**.
 
-1. Ora tocca o fai clic sul pulsante **Ulteriori informazioni** collegamento per l’articolo principale.
+1. Ora tocca o fai clic su **Ulteriori informazioni** collegamento per l’articolo principale.
 
    ![Modalità anteprima](assets/do-not-localize/ue-preview-publish-1.png)
 
@@ -103,7 +103,7 @@ Poiché devi toccare o fare clic sul contenuto per selezionarlo nell’editor, q
 
    ![Torna alla pagina principale utilizzando il collegamento Indietro](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. Ora tocca o fai clic sul pulsante **Pubblica** in alto a destra nell’editor per pubblicare i contenuti.
+1. Ora tocca o fai clic su **Pubblica** in alto a destra nell’editor per pubblicare i contenuti.
 
    ![Voci di menu Anteprima e Pubblica](assets/do-not-localize/ue-preview-publish-4.png)
 

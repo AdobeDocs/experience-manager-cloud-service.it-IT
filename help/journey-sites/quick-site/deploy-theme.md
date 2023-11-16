@@ -2,10 +2,10 @@
 title: Distribuire il tema personalizzato
 description: Scopri come distribuire il tema del sito utilizzando la pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1023'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1022'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ Questa parte del percorso è dedicata allo sviluppatore front-end.
 
 Dopo aver confermato le modifiche di personalizzazione del tema nell’archivio Git AEM, puoi eseguire [la pipeline creata dall’amministratore](pipeline-setup.md) per distribuire le modifiche.
 
-1. Accedi a Cloud Manager [come hai fatto per recuperare le informazioni di accesso Git](retrieve-access.md) e accedi al tuo programma. Nella scheda **Panoramica** verrà visualizzata una scheda per **Pipeline**.
+1. Accedi a Cloud Manager [come hai fatto per recuperare le informazioni di accesso Git](retrieve-access.md) e accedi al tuo programma. Il giorno **Panoramica** , viene visualizzata una scheda per **Pipeline**.
 
    ![Panoramica di Cloud Manager](assets/cloud-manager-overview.png)
 

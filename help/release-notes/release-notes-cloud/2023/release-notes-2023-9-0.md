@@ -2,9 +2,9 @@
 title: Note sulla versione 2023.9.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.9.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1441'
 ht-degree: 18%
 
 ---
@@ -115,7 +115,7 @@ Ora puoi assegnare il modulo metadati a una cartella specifica all’interno del
 
 ### Nuovo comportamento di caching CDN per i parametri URL relativi alla campagna {#cache-url-params}
 
-Per i nuovi ambienti, la rete CDN rimuoverà i parametri di query correlati al marketing per impostazione predefinita, al fine di aumentare le prestazioni della campagna di marketing e i rapporti di hit della cache. Gli ambienti esistenti non subiscono modifiche. [Ulteriori informazioni.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+Per i nuovi ambienti, la rete CDN rimuoverà i parametri di query relativi al marketing per impostazione predefinita, al fine di aumentare le prestazioni della campagna di marketing e i rapporti di hit della cache. Gli ambienti esistenti non subiscono modifiche. [Ulteriori informazioni.](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
 ### Regole filtro traffico (incluse le regole WAF) programma per l’adozione anticipata {#waf-early-adopter}
 

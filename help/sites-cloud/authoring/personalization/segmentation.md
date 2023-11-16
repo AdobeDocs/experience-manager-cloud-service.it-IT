@@ -2,16 +2,16 @@
 title: Segmentazione
 description: La segmentazione è un concetto chiave per la creazione di una campagna
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '538'
 ht-degree: 74%
 
 ---
 
 # Segmentazione {#understanding-segmentation}
 
-La segmentazione è un concetto chiave per la creazione di una campagna. Nella maggior parte dei casi, prima di avviare la campagna dovrai aver già definito i segmenti.
+La segmentazione è un concetto chiave per la creazione di una campagna. Nella maggior parte dei casi, prima di avviare la campagna devi avere già definito dei segmenti.
 
 I visitatori del sito hanno interessi e obiettivi diversi quando arrivano su un sito. Comprendere questi obiettivi e soddisfare le aspettative è un importante fattore di successo per il marketing online.
 

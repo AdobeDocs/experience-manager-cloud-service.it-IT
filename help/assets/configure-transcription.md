@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 93%
+source-wordcount: '1690'
+ht-degree: 89%
 
 ---
 
@@ -57,15 +57,15 @@ Di seguito sono riportate le configurazioni necessarie per abilitare la funzione
 
 ![configure-transcription-service](assets/configure-transcription-service.png)
 
-Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione di Azure Media Services]**. Seleziona una cartella (posizione) dalla barra a sinistra e fai clic sul pulsante [!UICONTROL Crea] per configurare la connessione con l’account [!DNL Azure]. Questa cartella è il percorso in cui è memorizzata la configurazione cloud [!DNL Azure] in Experience Manager Assets. Inserisci le credenziali [!DNL Azure] e fai clic su **[!UICONTROL Salva e chiudi]**.
+Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione di Azure Media Services]**. Seleziona una cartella (posizione) dalla barra a sinistra e fai clic su [!UICONTROL Crea] per configurare la connessione con il [!DNL Azure] account. Questa cartella è il percorso in cui è memorizzata la configurazione cloud [!DNL Azure] in Experience Manager Assets. Inserisci le credenziali [!DNL Azure] e fai clic su **[!UICONTROL Salva e chiudi]**.
 
 ### Configurare il profilo di elaborazione per la trascrizione {#configure-processing-profile}
 
 Una volta che [!DNL Azure Media Services] è configurato in Experience Manager Assets, il passaggio successivo consiste nel creare un profilo di elaborazione delle risorse per generare la trascrizione delle risorse audio e video basate sull’intelligenza artificiale. Il profilo di elaborazione basato sull’intelligenza artificiale genera le trascrizioni della [risorsa audio o video supportata](#supported-file-formats-for-transcription) come rappresentazione in Experience Manager Assets e memorizza la trascrizione (file .vtt) nella stessa cartella in cui si trova la risorsa originale. In questo modo, è più facile per gli utenti cercare e individuare la risorsa e la relativa rappresentazione trascritta.
 
-Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili di elaborazione]** e fai clic sul pulsante **[!UICONTROL Crea]** per creare un profilo di elaborazione basato sull’intelligenza artificiale per generare la trascrizione dei file audio e video. Per impostazione predefinita, la pagina del profilo di elaborazione presenta solo tre schede (Immagine, Video e Personalizzato). Tuttavia, se hai configurato [!DNL Azure Media Services] nella tua istanza [!DNL Experience Manager Assets], è visibile una scheda **[!UICONTROL IA per la gestione dei contenuti]**. Verifica le credenziali [!DNL Azure] se non visualizzi la scheda **[!UICONTROL IA per la gestione dei contenuti]** durante la creazione di un profilo di elaborazione.
+Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili elaborazione]** e fai clic su **[!UICONTROL Crea]** per creare un profilo di elaborazione basato sull’intelligenza artificiale per generare la trascrizione dei file audio e video. Per impostazione predefinita, la pagina del profilo di elaborazione presenta solo tre schede (Immagine, Video e Personalizzato). Tuttavia, se hai configurato [!DNL Azure Media Services] nella tua istanza [!DNL Experience Manager Assets], è visibile una scheda **[!UICONTROL IA per la gestione dei contenuti]**. Verifica le credenziali [!DNL Azure] se non visualizzi la scheda **[!UICONTROL IA per la gestione dei contenuti]** durante la creazione di un profilo di elaborazione.
 
-Nella scheda **[!UICONTROL IA per la gestione dei contenuti]**, fai clic sul pulsante **[!UICONTROL Aggiungi nuovo]** per configurare la trascrizione. In questo caso è possibile includere ed escludere i formati di file (tipi MIME) per la generazione delle trascrizioni selezionandoli dall’elenco a discesa. Nell’illustrazione seguente, tutti i file audio e video supportati sono inclusi e i file di testo sono esclusi.
+In **[!UICONTROL IA per la gestione dei contenuti]** , fare clic sulla scheda **[!UICONTROL Aggiungi nuovo]** per configurare la trascrizione. In questo caso è possibile includere ed escludere i formati di file (tipi MIME) per la generazione delle trascrizioni selezionandoli dall’elenco a discesa. Nell’illustrazione seguente, tutti i file audio e video supportati sono inclusi e i file di testo sono esclusi.
 
 Abilita **[!UICONTROL Creare una trascrizione VTT nella stessa directory]** per creare e memorizzare la rappresentazione della trascrizione (file .vtt) nella stessa cartella in cui si trova la risorsa originale. Le altre rappresentazioni vengono generate anche dal flusso di lavoro di elaborazione delle risorse DAM predefinito, indipendentemente da questa impostazione.
 
@@ -79,7 +79,7 @@ Il profilo video contiene anche le seguenti configurazioni personalizzate. Consu
 
 ![configure-transcription-service](assets/video-processing-profile2.png)
 
-Ora configuriamo la trascrizione in questo profilo video. Passa alla scheda **[!UICONTROL IA per la gestione dei contenuti]** e fai clic sul pulsante **[!UICONTROL Aggiungi nuovo]**. Includi tutti i file audio e video ed escludi i file di immagine e di applicazione. Abilita **[!UICONTROL Creare una trascrizione VTT nella stessa directory]** e salva la configurazione.
+Ora configuriamo la trascrizione in questo profilo video. Accedi a **[!UICONTROL IA per la gestione dei contenuti]** e fai clic sul pulsante **[!UICONTROL Aggiungi nuovo]** pulsante. Includi tutti i file audio e video ed escludi i file di immagine e di applicazione. Abilita **[!UICONTROL Creare una trascrizione VTT nella stessa directory]** e salva la configurazione.
 
 ![configure-transcription-service](assets/video-processing-profile1.png)
 

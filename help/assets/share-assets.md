@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 177021106fc67e67a8cd6645a6684185331dd6f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1340'
 ht-degree: 5%
 
 ---
@@ -89,7 +89,7 @@ Qualsiasi utente che abbia accesso al collegamento della risorsa condivisa può 
 
   ![Download coda](assets/queue-download.png)
 
-* Durante la preparazione del file di download, fare clic sul pulsante **[!UICONTROL Casella in entrata download]** per visualizzare lo stato del download. Per i download di grandi dimensioni, fai clic sul pulsante **[!UICONTROL Aggiorna]** per aggiornare lo stato.
+* Durante la preparazione del file di download, fare clic su **[!UICONTROL Casella in entrata download]** per visualizzare lo stato del download. Per i download di grandi dimensioni, fai clic su **[!UICONTROL Aggiorna]** per aggiornare lo stato.
 
   ![Casella in entrata download](assets/link-sharing-download-inbox.png)
 

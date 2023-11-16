@@ -2,10 +2,10 @@
 title: Modifica dei lanci
 description: Dopo aver creato un lancio per la pagina (o per un set di pagine), puoi modificarne il contenuto nella copia di lancio delle pagine.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modifi
 1. Accedi a [Lancio da Riferimenti (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) per visualizzare le azioni disponibili.
 1. Seleziona **Vai alla pagina** per aprire la pagina su cui effettuare la modfica.
 
-Quando modifichi la pagina, nella barra degli strumenti superiore viene visualizzata un’indicazione insieme alle opzioni **Esci** e **Naviga**:
+Quando modifichi la pagina, nella barra degli strumenti superiore viene visualizzata un’indicazione insieme al simbolo **Esci** e **Naviga** opzioni:
 
 ![Lascia e naviga all’avvio dall’Editor pagina](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

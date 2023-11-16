@@ -2,9 +2,9 @@
 title: Utilizzo degli archivi GitHub in Cloud Manager
 description: Scopri come configurare Cloud Manager per l’utilizzo degli archivi GitHub.
 feature: Release Information
-source-git-commit: 8d689ea08ab7caf9cb0fa84df23d7e0fd906f379
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ La configurazione consiste di due passaggi principali:
 
 ### Aggiungi archivio {#add-repo}
 
-1. In Cloud Manager, dalla sezione **Panoramica del programma** pagina, tocca o fai clic su **Archivi** per passare alla scheda **Archivi** pagina e fai clic su **Aggiungi archivio**.
+1. In Cloud Manager, dalla sezione **Panoramica del programma** , tocca o fai clic su **Archivi** per passare alla scheda **Archivi** pagina e fai clic su **Aggiungi archivio**.
 
 1. In **Aggiungi archivio** finestra di dialogo, seleziona **Archivio privato** come tipo di archivio.
 
@@ -49,7 +49,7 @@ La configurazione consiste di due passaggi principali:
 
 Cloud Manager ora è a conoscenza dell’archivio GitHub, ma deve ancora accedervi. Per concedere l’accesso, devi installare l’app GitHub Adobe e verificare di essere il proprietario dell’archivio specificato.
 
-1. Dopo l’aggiunta del tuo archivio, il **Convalida proprietà archivio privato** viene aperta una finestra di dialogo.
+1. Dopo l’aggiunta del tuo archivio, il **Convalida proprietà archivio privato** viene visualizzata una finestra di dialogo.
 
    ![Convalida proprietà archivio privato](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
@@ -65,7 +65,7 @@ Cloud Manager ora è a conoscenza dell’archivio GitHub, ma deve ancora acceder
 
 1. Torna in **Convalida proprietà archivio privato** Cloud Manager ha generato il contenuto del file privato nella finestra **Contenuto del file segreto** campo. Copia il contenuto da quel campo.
 
-   * Il contenuto del file segreto verrà visualizzato una sola volta. Se non copi il contenuto prima di chiudere questa finestra, dovrai rigenerare il segreto.
+   * Il contenuto del file segreto verrà visualizzato una sola volta. Se non si copia il contenuto prima di chiudere la finestra, rigenerare il segreto.
 
    ![Copia contenuto file segreto](/help/implementing/cloud-manager/assets/repos/new-secret.png)
 
@@ -81,7 +81,7 @@ Fino alla convalida, l’archivio viene elencato con un’icona rossa, a indicar
 
 Tieni presente che **Tipo** questa colonna identifica facilmente gli archivi forniti dall’Adobe (**Adobe**) e i tuoi archivi GitHub (**GitHub**).
 
-Se per completare la convalida dovessi tornare all’archivio in una data successiva, il **Archivi** tocca o fai clic sul pulsante con i puntini di sospensione nella riga che rappresenta l’archivio GitHub appena aggiunto e seleziona **Convalida proprietà** dal menu a discesa.
+Se per completare la convalida dovrai tornare all’archivio in una data successiva, il **Archivi** tocca o fai clic sul pulsante con i puntini di sospensione nella riga che rappresenta l’archivio GitHub appena aggiunto e seleziona **Convalida proprietà** dal menu a discesa.
 
 ## Utilizzo di archivi GitHub personalizzati con Cloud Manager {#using}
 

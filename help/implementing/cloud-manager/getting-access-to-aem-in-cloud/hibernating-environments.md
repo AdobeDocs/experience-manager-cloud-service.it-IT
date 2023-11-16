@@ -2,10 +2,10 @@
 title: Sospensione e disattivazione degli ambienti sandbox
 description: Scopri in che modo gli ambienti di un programma sandbox entrano automaticamente in modalità di sospensione e come riattivarli.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '685'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ Per sospendere manualmente gli ambienti di un programma sandbox, segui la proced
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Per visualizzare i dettagli del programma, fai clic su quello che desideri sospendere.
+1. Fare clic sul programma che si desidera sospendere per visualizzarne i dettagli.
 
 1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
 
@@ -47,7 +47,7 @@ Per sospendere manualmente gli ambienti di un programma sandbox, segui la proced
 
    ![Conferma della sospensione](assets/hibernate-2.png)
 
-Quando la sospensione si attiva correttamente, nella schermata di **Console sviluppatori** viene visualizzata la notifica di completamento del processo di sospensione.
+Quando la sospensione ha esito positivo, viene visualizzata la notifica di completamento del processo di sospensione per l’ambiente in **Console per sviluppatori** schermo.
 
 ![Conferma della sospensione](assets/hibernate-4.png)
 
@@ -65,13 +65,13 @@ Puoi sospendere manualmente il programma sandbox da Console sviluppatori.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Per visualizzare i dettagli del programma, fai clic su quello che desideri sospendere.
+1. Fare clic sul programma che si desidera sospendere per visualizzarne i dettagli.
 
 1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
 
    * Per ulteriori dettagli su Developer Console, consulta [Accesso a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
 
-1. Fai clic su **Riattiva**.
+1. Clic **De-ibernazione**.
 
    ![Pulsante Riattiva](assets/de-hibernation-img1.png)
 

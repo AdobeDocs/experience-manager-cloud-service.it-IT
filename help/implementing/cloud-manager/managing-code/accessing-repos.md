@@ -2,10 +2,10 @@
 title: Accesso agli archivi
 description: Scopri come accedere e gestire l’archivio Git con la gestione self-service dell’account Git da Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
-workflow-type: ht
-source-wordcount: '232'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager consente di recuperare facilmente le informazioni sull’archivio 
 
    ![Pulsante Accedi a dati archivio nella scheda Ambienti](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Fai clic sul pulsante **Visualizza informazioni archivio** per aprire una finestra di dialogo e visualizzare:
+1. Fai clic su **Visualizza informazioni archivio** per aprire una finestra di dialogo e visualizzare:
 
    * L’URL dell’archivio Git di Cloud Manager.
    * Il nome utente di Git.

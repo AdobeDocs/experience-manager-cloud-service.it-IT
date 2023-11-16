@@ -4,10 +4,10 @@ description: Scopri come creare profili utente in Admin Console per gestire la r
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 96%
+source-wordcount: '985'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ Poiché i profili utente vengono creati e gestiti in Admin Console, prima di cre
 
 ## Creare nuovi profili di prodotto per Cloud Manager {#create-profiles}
 
-Per impostare correttamente la ricezione delle notifiche è necessario creare due profili utente. Questi passaggi devono essere eseguiti una sola volta.
+Per impostare correttamente la ricezione delle notifiche, crea due profili utente. Questi passaggi vengono eseguiti una sola volta.
 
 1. Accedi a Admin Console all’indirizzo [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
 
@@ -52,7 +52,7 @@ Per impostare correttamente la ricezione delle notifiche è necessario creare du
 
    ![Elenco delle istanze in Admin Console](assets/cloud_manager_instance.png)
 
-1. Viene visualizzato l’elenco dei profili di prodotto configurati per Cloud Manager.
+1. Puoi visualizzare l’elenco di tutti i profili di prodotto configurati per Cloud Manager.
 
    ![Profili di prodotto in Admin Console](assets/cloud_manager_profiles.png)
 

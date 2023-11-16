@@ -2,10 +2,10 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 45%
+source-wordcount: '2432'
+ht-degree: 43%
 
 ---
 
@@ -38,7 +38,7 @@ Per creare contenuti per un’app utilizzando l’editor universale, l’app dev
 
 ## Accedi {#sign-in}
 
-Una volta che l’app è stata preparata per funzionare con l’editor universale, dovrai accedere all’editor universale. Sarà necessario un Adobe ID per accedere e [avere accesso all’editor universale.](getting-started.md#request-access)
+Dopo aver instrumentato l’app per l’utilizzo dell’editor universale, accedi all’editor universale. È necessario un Adobe ID per accedere e [accedere all’editor universale.](getting-started.md#request-access)
 
 Dopo aver effettuato l’accesso, immetti l’URL della pagina da modificare nella [barra degli indirizzi.](#location-bar) in modo da poter iniziare a modificare i contenuti, come [contenuto testo](#text-mode) o il [contenuto multimediale.](#media-mode)
 
@@ -192,7 +192,7 @@ In modalità anteprima, la pagina viene riprodotta nell’editor come verrebbe v
 
 #### Modalità componenti {#component-mode}
 
-In modalità componenti, l’autore di contenuto può fare clic su per selezionare i componenti e modificarli, tra cui:
+Nella modalità componenti, l’autore di contenuto può selezionare i componenti da modificare, tra cui:
 
 * [Modifica del testo normale](#editing-content) sul posto.
 * [Modifica del testo RTF](#editing-rich-text) nella barra delle proprietà vengono visualizzate ulteriori opzioni di formattazione.

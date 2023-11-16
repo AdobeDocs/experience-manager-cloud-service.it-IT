@@ -2,9 +2,9 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Scopri come iniziare a utilizzare lo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1427'
 ht-degree: 21%
 
 ---
@@ -78,7 +78,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
 1. Accedi a Cloud Acceleration Manager (CAM) e fai clic sul progetto CAM creato in precedenza per valutare se sei pronto a passare a AEM as a Cloud Service. Se non avete creato un progetto CAM, consultate Creazione e gestione di un progetto in CAM.
 
-1. Fai clic sul pulsante **Trasferimento dei contenuti** Card. Verrà visualizzata la vista Elenco set di migrazione.
+1. Fai clic su **Trasferimento dei contenuti** Card. Verrà visualizzata la vista Elenco set di migrazione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -98,7 +98,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
    >
    >Il nome deve seguire le stesse convenzioni di un nodo AEM, quindi non può contenere nessuno dei seguenti caratteri: . / : [ ] | *
 
-1. Ora l’elenco delle migrazioni dovrebbe essere visualizzato nella vista a elenco. Fai clic sul simbolo dei tre punti (**...**) per aprire il menu a discesa e fare clic su **Copia chiave di estrazione**. Questa chiave sarà necessaria durante la fase di estrazione. Copia questa chiave di estrazione.
+1. Ora l’elenco delle migrazioni dovrebbe essere visualizzato nella vista a elenco. Selezionare il simbolo dei tre punti (**...**) per aprire il menu a discesa e selezionare **Copia chiave di estrazione**. Questa chiave è necessaria durante la fase di estrazione. Copia questa chiave di estrazione.
 
    >[!NOTE]
    >
@@ -118,7 +118,7 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, è neces
 
 1. Dopo aver installato la versione più recente dello strumento Content Transfer (Trasferimento contenuti) nell’istanza Adobe Experience Manager di origine, vai a **Operazioni - Migrazione dei contenuti**
 
-1. Fai clic su **Crea set di migrazione**
+1. Clic **Crea set di migrazione**
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -149,7 +149,7 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, è neces
       >* `/home`
       >* `/etc` (alcuni `/etc` I percorsi possono essere selezionati in CTT)
 
-1. Fai clic su **Salva** dopo aver compilato tutti i campi nel **Crea set di migrazione** nella schermata dei dettagli.
+1. Clic **Salva** dopo aver compilato tutti i campi nel **Crea set di migrazione** nella schermata dei dettagli.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
@@ -161,7 +161,7 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, è neces
    * A *green cloud* indicates that you can complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
+1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 
@@ -183,7 +183,7 @@ Per eseguire un controllo delle dimensioni, attenersi alla procedura descritta d
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Fai clic su **Verifica dimensione** per avviare il processo. Si tornerà quindi alla vista elenco set di migrazione e dovrebbe essere visualizzato un messaggio che indica che **Verifica dimensione** è in esecuzione.
+1. Clic **Verifica dimensione** per avviare il processo. Si tornerà quindi alla vista elenco set di migrazione e dovrebbe essere visualizzato un messaggio che indica che **Verifica dimensione** è in esecuzione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 

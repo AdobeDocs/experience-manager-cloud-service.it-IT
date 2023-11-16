@@ -4,17 +4,17 @@ description: Dopo che l’amministratore di sistema ha configurato le risorse cl
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '579'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 93%
 
 ---
 
 
 # Attività degli utenti AEM {#aem-user-tasks}
 
-In questa parte facoltativa del [percorso di onboarding](overview.md) scoprirai in che modo gli utenti AEM possono accedere a AEM as a Cloud Service per l’authoring dei contenuti.
+In questa parte facoltativa del [percorso di onboarding,](overview.md) scopri come gli utenti AEM possono accedere a AEM as a Cloud Service per creare contenuti.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -52,7 +52,7 @@ In qualità di autore AEM, è necessario accedere a AEM per iniziare a creare i 
 
 1. Per aprire la pagina **Panoramica**, seleziona il programma appropriato dalla pagina **Programmi e prodotti** di Cloud Manager. Se hai dei dubbi sul programma a cui accedere, consulta l’amministratore di sistema.
 
-1. Dalla pagina **Panoramica** in Cloud Manager, fai clic sul collegamento a Author dalla scheda **Ambienti**.
+1. Dalla sezione **Panoramica** in Cloud Manager, fai clic sul collegamento dell’autore dalla sezione **Ambienti** Card.
 
    ![Scheda Ambiente](/help/journey-onboarding/assets/author-environ.png)
 

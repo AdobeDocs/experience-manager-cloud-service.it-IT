@@ -2,10 +2,10 @@
 title: Configurare l’integrazione della traduzione per contenuti headless
 description: Scopri come connettere AEM a un servizio di traduzione.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 97%
+source-wordcount: '1230'
+ht-degree: 95%
 
 ---
 
@@ -132,7 +132,7 @@ Ora cha hai completato questa parte del percorso di traduzione headless, dovrest
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
 * Essere in grado di impostare la propria connessione al servizio di traduzione.
 
-Sviluppa questa conoscenza e continua il tuo percorso di traduzione in AEM headless andando poi al documento [Tradurre il contenuto,](translation-rules.md) dove imparerai come utilizzare la configurazione impostata finora per tradurre effettivamente il tuo contenuto.
+Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM esaminando il documento [Traduci contenuto,](translation-rules.md) dove finora hai imparato a utilizzare la configurazione per tradurre effettivamente i contenuti.
 
 ## Risorse aggiuntive {#additional-resources}
 

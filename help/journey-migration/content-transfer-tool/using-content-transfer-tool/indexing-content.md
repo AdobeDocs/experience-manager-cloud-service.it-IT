@@ -2,10 +2,10 @@
 title: Indicizzazione dopo la migrazione del contenuto
 description: Scopri come il processo di migrazione indicizzerà i contenuti acquisiti nell’istanza del Cloud Service di destinazione.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 8%
+source-wordcount: '506'
+ht-degree: 6%
 
 ---
 
@@ -46,13 +46,13 @@ Quando l’acquisizione ha esito positivo, il processo di indicizzazione viene a
 
 ### Completa
 
-Quando il processo di indicizzazione ha esito positivo, l’istanza è pronta per essere utilizzata con prestazioni ottimali. A questo punto, i registri dei processi di indicizzazione saranno disponibili per la visualizzazione o il download al fine di analizzarli.
+Quando il processo di indicizzazione ha esito positivo, l’istanza è pronta per essere utilizzata con prestazioni ottimali. A questo punto, i registri del processo di indicizzazione sono disponibili per la visualizzazione o il download per esaminarli.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-indexing/complete.png)
 
 ### Errori
 
-L’indicizzazione dell’istanza del Cloud Service di destinazione avrà molto probabilmente esito positivo. In alcuni casi, può non riuscire e la riga del processo di acquisizione viene visualizzata come segue. In tutti i casi, è possibile individuare alcuni dettagli dell&#39;errore passando sopra lo stato dell&#39;errore e potrebbero essere disponibili ulteriori informazioni per determinare i passaggi successivi. A questo punto, i registri del processo di indicizzazione saranno disponibili per la visualizzazione o il download per consentire l’individuazione della fonte dell’errore. Se il passaggio successivo non è chiaro, contatta il supporto Adobe con i dettagli dell’acquisizione e del registro di indicizzazione.
+L’indicizzazione dell’istanza del Cloud Service di destinazione avrà molto probabilmente esito positivo. In alcuni casi, può non riuscire e la riga del processo di acquisizione viene visualizzata come segue. In tutti i casi, è possibile individuare alcuni dettagli dell&#39;errore passando sopra lo stato dell&#39;errore e potrebbero essere disponibili ulteriori informazioni per determinare i passaggi successivi. A questo punto, i registri del processo di indicizzazione sono disponibili per la visualizzazione o il download per individuare l’origine dell’errore. Se il passaggio successivo non è chiaro, contatta il supporto Adobe con i dettagli dell’acquisizione e del registro di indicizzazione.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

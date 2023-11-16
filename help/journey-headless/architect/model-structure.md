@@ -2,10 +2,10 @@
 title: Scopri come creare modelli per frammenti di contenuto in AEM
 description: Scopri i concetti e la meccanica della modellazione dei contenuti per i CMS headless utilizzando Modelli per frammenti di contenuto.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '687'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '686'
+ht-degree: 96%
 
 ---
 
@@ -53,7 +53,7 @@ Conferma con **Crea** e poi **Apri** il modello per iniziare a definire la strut
 
 ## Definizione dei modelli per frammenti di contenuto {#defining-content-fragment-models}
 
-La prima volta che apri un nuovo modello viene visualizzato un grande spazio vuoto a sinistra e un lungo elenco di **Tipi di dati** a destra:
+Quando aprite un nuovo modello, viene visualizzato un grande spazio vuoto a sinistra e un lungo elenco di **Tipi di dati** a destra:
 
 ![Modello vuoto](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 

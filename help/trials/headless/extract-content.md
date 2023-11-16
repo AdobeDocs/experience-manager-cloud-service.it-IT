@@ -4,10 +4,10 @@ description: Scopri come utilizzare Frammenti di contenuto e l’API GraphQL com
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 98%
+source-wordcount: '1076'
+ht-degree: 93%
 
 ---
 
@@ -163,7 +163,7 @@ Verrà creata una query persistente che include i dati che si desidera utilizzar
 
    >[!NOTE]
    >
-   >Se non hai utilizzato le stesse descrizioni dei campi illustrate nei moduli precedenti, dovrai aggiornare i nomi dei campi in questa query.
+   >Se non hai utilizzato le stesse descrizioni dei campi descritte nei moduli precedenti, aggiorna i nomi dei campi in questa query.
    >
    >Utilizza la funzione di completamento automatico di GraphQL (Ctrl+Spazio o Opzione+Spazio) come descritto in precedenza per identificare le proprietà disponibili.
 
@@ -183,7 +183,7 @@ Verrà creata una query persistente che include i dati che si desidera utilizzar
 
 1. La query è resa persistente, come confermato da un messaggio del banner nella parte inferiore dello schermo. La query viene ora visualizzata anche nel pannello a sinistra delle query persistenti nella finestra.
 
-1. Affinché la query persistente sia disponibile pubblicamente, deve essere pubblicata, in modo analogo alla pubblicazione dei frammenti di contenuto. Fai clic sul pulsante **Pubblica** in alto a destra dell’editor delle query per pubblicare la query.
+1. Affinché la query persistente sia disponibile pubblicamente, è necessario pubblicarla, in modo analogo a come i frammenti di contenuto devono essere pubblicati. Clic **Pubblica** in alto a destra nell’editor delle query per pubblicare la query.
 
 1. La pubblicazione viene confermata da una notifica del banner.
 

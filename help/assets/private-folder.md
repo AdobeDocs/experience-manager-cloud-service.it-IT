@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 6%
+source-wordcount: '620'
+ht-degree: 7%
 
 ---
 
@@ -31,7 +31,7 @@ Puoi creare una cartella privata in [!DNL Adobe Experience Manager Assets] un&#3
 
 Per creare e condividere una cartella privata:
 
-1. In [!DNL Assets] , fai clic sul pulsante **[!UICONTROL Crea]** dalla barra degli strumenti, quindi seleziona **[!UICONTROL Cartella]** dal menu.
+1. In [!DNL Assets] , fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti, quindi seleziona **[!UICONTROL Cartella]** dal menu.
 
    ![Creare una cartella di risorse](assets/create-folder.png)
 
@@ -73,7 +73,7 @@ Puoi eliminare una cartella selezionandola e selezionando [!UICONTROL Elimina] d
 
 >[!CAUTION]
 >
->Se elimini una cartella privata da CRXDE Lite, i gruppi di utenti ridondanti vengono lasciati nell’archivio.
+>Se elimini una cartella privata da CRXDE Liti, i gruppi di utenti ridondanti vengono lasciati nell’archivio.
 
 >[!NOTE]
 >

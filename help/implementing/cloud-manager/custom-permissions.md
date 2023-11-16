@@ -1,13 +1,13 @@
 ---
 title: Autorizzazioni personalizzate
 description: Scopri come utilizzare le autorizzazioni personalizzate per creare nuovi profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+exl-id: 167da985-7f19-45b3-90a3-884817907da2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1506'
 ht-degree: 2%
 
 ---
-
 
 # Autorizzazioni personalizzate {#custom-permissions}
 
@@ -44,7 +44,7 @@ Questa sezione descrive i passaggi seguenti. Potrebbe essere utile fare riferime
 
 >[!NOTE]
 >
->Per creare nuovi profili e gestire le autorizzazioni per Cloud Manager, è necessario disporre dei diritti di amministratore del prodotto in Admin Console per Adobe Experience Manager as a Cloud Service.
+>Per poter creare nuovi profili e gestire le autorizzazioni per Cloud Manager, in Admin Console Adobe Experience Manager as a Cloud Service devi disporre dei diritti di amministratore di prodotto.
 
 ### Creare un nuovo profilo di prodotto {#create}
 
@@ -81,7 +81,7 @@ Ora che disponi di un nuovo profilo di prodotto, puoi assegnargli autorizzazioni
 
    ![Autorizzazioni modificabili](assets/permissions-tab.png)
 
-1. Tocca o fai clic sul pulsante **Modifica** collegamento di un’autorizzazione per modificarlo.
+1. Tocca o fai clic su **Modifica** collegamento di un’autorizzazione per modificarlo.
 
 1. Il **Modifica autorizzazioni** viene visualizzata la finestra.
    * L’autorizzazione selezionata nel passaggio precedente è selezionata nella colonna sinistra.

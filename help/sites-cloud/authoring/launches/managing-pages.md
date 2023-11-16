@@ -2,10 +2,10 @@
 title: Gestione delle pagine nel lancio
 description: Puoi creare nuove pagine all’interno del lancio. Puoi anche eliminare le pagine indesiderate.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 100%
+source-wordcount: '289'
+ht-degree: 94%
 
 ---
 
@@ -25,36 +25,34 @@ Puoi navigare nella struttura del lancio da:
 * Editor pagina:
 
    * Seleziona **Naviga** per aprire la struttura del lancio nella console:
-      ![Navigare nel lancio dall’Editor pagina](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+     ![Navigare nel lancio dall’Editor pagina](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
-      >[!NOTE]
-      >
-      >È inoltre possibile effettuare le seguenti operazioni:
-      >
-      >* **Uscire** dal lancio e tornare alla modifica della pagina sorgente
-
+     >[!NOTE]
+     >
+     >È inoltre possibile effettuare le seguenti operazioni:
+     >
+     >* **Uscire** dal lancio e tornare alla modifica della pagina sorgente
 
 * Console **Lanci**: 
 se selezioni un lancio specifico, puoi quindi selezionare **Gestisci contenuto**:
-   ![Console Lanci: gestisci contenuto](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+  ![Console Lanci: gestisci contenuto](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 * Console **Sites**:
 se selezioni una pagina sorgente specifica e apri **Riferimenti**, poi puoi selezionare **Lanci** seguito da **Gestisci contenuto**:
-   ![Console Lanci: gestisci contenuto](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+  ![Console Lanci: gestisci contenuto](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
-   >[!NOTE]
-   >
-   >Puoi anche selezionare **Console Lanci** per accedere a **Gestisci contenuto** (e altre azioni).
+  >[!NOTE]
+  >
+  >Puoi anche selezionare **Console Lanci** per accedere a **Gestisci contenuto** (e altre azioni).
 
-Tutti questi punti di ingresso apriranno il lancio nella console Sites, dove puoi:
+Tutti questi punti di ingresso aprono il lancio nella console Sites, dove puoi:
 
 * Naviga,
 * **Creare** nuove pagine,
 * Selezionare le pagine esistenti e intervenire; ad esempio, **Modifica**, apri **Proprietà**, **Blocca**, **Copia**, **Incolla** ed **Elimina**
-
-   ![Navigare il lancio nella console Sites da Gestisci contenuto](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+  ![Navigare il lancio nella console Sites da Gestisci contenuto](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Utilizza la barra **Riferimenti** per tornare alle pagine **Origine lancio**:
-   ![Console Sites: origine lancio](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
+  ![Console Sites: origine lancio](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## Aggiungere pagine al lancio {#add-pages-to-launch}
 

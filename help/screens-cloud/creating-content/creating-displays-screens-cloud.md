@@ -2,9 +2,9 @@
 title: Creazione e gestione di visualizzazioni in Schermi as a Cloud Service
 description: Questa pagina descrive come creare e gestire le visualizzazioni in Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '659'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Questo documento spiega come creare e gestire le visualizzazioni nel provider di
 Per creare la visualizzazione dal provider di servizi Screens, effettua le seguenti operazioni:
 
 1. Dalla tua istanza di AEM Cloud Service, accedi al provider di servizi Screens.
-1. Seleziona **Display** dal pannello di navigazione a sinistra e fai clic su **Crea** dall&#39;angolo in alto a destra dello schermo.
+1. Seleziona **Display** dal pannello di navigazione a sinistra e fai clic su **Crea** dall&#39;angolo superiore destro dello schermo.
 
    ![immagine](/help/screens-cloud/assets/display/disp-1.png)
 

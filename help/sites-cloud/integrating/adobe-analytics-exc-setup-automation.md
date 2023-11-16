@@ -4,10 +4,10 @@ description: Experience Cloud Setup Automation fornisce un modo semplice e autom
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '754'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ L’ambiente ora dovrebbe essere pronto per la configurazione dell’automazione
 1. Passa a **Sites** e seleziona la pagina principale del sito da integrare con Adobe Analytics.
 1. Espandi il menu della barra laterale e tocca **Configurazione di Analytics**.
 
-   Questa è una nuova opzione nella barra laterale che aprirà un pannello che fornirà i controlli e lo stato di Experience Cloud Setup Automation.
+   Questa è una nuova opzione nella barra laterale che apre un pannello che fornisce controlli e stato per Experience Cloud Setup Automation.
 1. Tocca il pulsante **Integra Analytics**.
 1. Nella finestra di dialogo risultante, fornisci un nome per **ID suite di rapporti**.
 

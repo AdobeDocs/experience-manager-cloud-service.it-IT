@@ -2,10 +2,10 @@
 title: Abilitare AEM Screens per il tuo sito demo
 description: Scopri i passaggi per abilitare l’esperienza completa di AEM Screens as a Cloud Service sul tuo sito demo.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2666'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2665'
+ht-degree: 98%
 
 ---
 
@@ -388,7 +388,7 @@ Adesso che hai completato questa parte del percorso del Componente aggiuntivo De
 * Comprendere il contenuto demo di We.Cafe.
 * Sapere come configurare AEM Screens per We.Cafe.
 
-Adesso sei pronto per esplorare le funzionalità di AEM Screens utilizzando i tuoi siti demo. Prosegui alla sezione successiva del percorso, [Gestire i siti demo,](manage.md) in cui scoprirai gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
+Adesso sei pronto per esplorare le funzionalità di AEM Screens utilizzando i tuoi siti demo. Passare alla sezione successiva del percorso, [Gestire i siti demo,](manage.md) dove scopri gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
 
 Puoi consultare alcune delle risorse aggiuntive disponibili nella [Sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 

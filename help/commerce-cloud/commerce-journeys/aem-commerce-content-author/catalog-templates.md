@@ -2,9 +2,9 @@
 title: Gestire pagine e modelli del catalogo dei prodotti
 description: Scopri come gestire pagine e modelli di catalogo dei prodotti
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '719'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ Scopri come gestire pagine e modelli di catalogo dei prodotti.
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di authoring dei contenuti e del commercio dell’AEM, [Guida introduttiva alle nozioni di base sull’authoring CIF dell’AEM](getting-started.md), hai imparato le nozioni di base sull’authoring CIF.
+Nel documento precedente del percorso di authoring dei contenuti e del commercio dell’AEM, [Guida introduttiva alle nozioni di base sull’authoring dell’CIF AEM](getting-started.md), hai imparato le nozioni di base sull’authoring CIF.
 
 Questo articolo si basa su questi principi fondamentali.
 
@@ -31,17 +31,17 @@ Questo documento spiega come gestire pagine e modelli di catalogo dei prodotti. 
 
 La vetrina Venia offre un’esperienza tipica con il catalogo dei prodotti, con navigazione e pagine di dettaglio dei prodotti (PDP), categorie (PLP) e destinazione.
 
-Le pagine di catalogo vengono create dinamicamente utilizzando un modello di catalogo CIF dell’AEM e dati di prodotto in tempo reale che vengono recuperati dall’endpoint commerce quando necessario. Ogni catalogo dispone di un modello generico per le pagine di prodotti e categorie.
+Le pagine del catalogo vengono create dinamicamente utilizzando un modello di catalogo CIF dell’AEM e dati dei prodotti in tempo reale che vengono recuperati dall’endpoint commerce quando necessario. Ogni catalogo dispone di un modello generico per le pagine di prodotti e categorie.
 ![struttura del catalogo](assets/catalog-structure.png)
 
 Il componente Navigazione mostra il contenuto e le pagine del catalogo. È possibile visualizzare la pagina di destinazione del catalogo o le categorie di primo livello nella navigazione. Passando il puntatore del mouse su una categoria, le categorie di secondo livello vengono visualizzate come seconda riga.
 ![navigazione catalogo](assets/catalog-navigation.png)
 
-Facendo clic su una categoria si aprirà la pagina della categoria (o la pagina dell’elenco dei prodotti).
+Facendo clic su una categoria si apre la pagina della categoria (o la pagina dell’elenco dei prodotti).
 
 ![PLP](assets/catalog-plp.png)
 
-Facendo clic su un prodotto si aprirà la pagina dei dettagli del prodotto.
+Facendo clic su un prodotto si apre la pagina dei dettagli del prodotto.
 
 ![PLP](assets/catalog-pdp.png)
 
@@ -61,7 +61,7 @@ I modelli possono essere modificati aprendo direttamente la pagina del modello o
 
 ### Modelli per categorie o prodotti specifici {#specific}
 
-CIF supporta più modelli con pochi clic. Per creare un altro modello, seleziona il modello generico dalla rispettiva categoria e crea una nuova pagina utilizzando **Crea** azione.
+L’CIF supporta più modelli con pochi clic. Per creare un altro modello, seleziona il modello generico dalla rispettiva categoria e crea una nuova pagina utilizzando **Crea** azione.
 
 ![crea pagina modello](assets/create-template-page.png)
 
@@ -107,11 +107,11 @@ Ora che hai completato questa parte del percorso dovresti:
 * funzionamento dei modelli generici
 * hanno creato un singolo modello
 
-Approfondisci l&#39;argomento e continua il tuo percorso esaminando il documento [Gestire le esperienze del catalogo dei prodotti in staging](staged-catalog.md), dove imparerai a utilizzare i dati di prodotto staging e i lanci AEM.
+Approfondisci l&#39;argomento e continua il tuo percorso esaminando il documento [Gestire le esperienze del catalogo dei prodotti in staging](staged-catalog.md), dove viene illustrato come utilizzare i dati di prodotto staging e i lanci AEM.
 
 ## Risorse aggiuntive {#additional-resources}
 
 Sebbene sia consigliabile passare alla parte successiva del percorso esaminando il documento [Gestire le esperienze del catalogo dei prodotti in staging](staged-catalog.md), di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma che non è necessario che continuino sul percorso headless:
 
 * [Creazione di più pagine per categorie e prodotti](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Guida alla migrazione per l’Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Come migrare al componente aggiuntivo AEM Commerce Integration Framework (CIF) da una versione precedente
+* [Guida alla migrazione per l’Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Come migrare al componente aggiuntivo AEM Commerce integration framework (CIF) da una versione precedente

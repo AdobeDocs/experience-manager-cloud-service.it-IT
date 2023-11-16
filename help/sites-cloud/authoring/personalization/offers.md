@@ -2,10 +2,10 @@
 title: Creazione e gestione delle offerte (console Offerte)
 description: Usa la console Offerte per creare offerte da utilizzare nelle esperienze Attività.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ Se necessario, aggiungi dei tag.
 
 1. Conferma con **Fine**.
 
-   Se ora passi alla console **Offerte con frammenti di esperienza**, il nuovo frammento di esperienza verrà visualizzato insieme alle relative varianti.
+   Se ora passi a **Offerte con frammenti di esperienza** nella console, puoi visualizzare il nuovo frammento di esperienza e le relative varianti.
 
 ### Targeting con il modello di offerte {#targeting-offers-template}
 

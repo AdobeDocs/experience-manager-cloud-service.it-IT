@@ -3,10 +3,10 @@ title: Gestire gli endpoint GraphQL in AEM
 description: Scopri come gestire gli endpoint GraphQL in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 95%
+source-wordcount: '512'
+ht-degree: 93%
 
 ---
 
@@ -62,7 +62,7 @@ Per abilitare l’endpoint corrispondente:
 
 1. Passa a **Strumenti**, **Generale**, quindi seleziona **GraphQL**.
 1. Seleziona **Crea**.
-1. Si aprirà la finestra di dialogo **Crea nuovo endpoint GraphQL**. Qui potrai definire:
+1. Il **Crea nuovo endpoint GraphQL** viene visualizzata una finestra di dialogo. Qui potrai definire:
    * **Nome**: nome dell’endpoint; puoi immettere qualsiasi testo.
    * **Utilizza lo schema GraphQL fornito da**: dal menu a discesa, seleziona il sito o il progetto richiesto.
 

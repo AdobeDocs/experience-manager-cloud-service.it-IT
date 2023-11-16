@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 14%
+source-wordcount: '986'
+ht-degree: 15%
 
 ---
 
@@ -67,7 +67,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
    >[!NOTE]
    >
-   >Quando si aggiungono le scelte, se si fa clic sul campo popup, l&#39;interfaccia risulta distorta e l&#39;icona di eliminazione delle scelte non funziona più. Non fare clic sul menu a discesa fino a quando non salvi le modifiche. Se riscontri questo problema, salva lo schema e aprilo nuovamente per continuare a modificare.
+   >Quando si aggiungono le scelte, se si fa clic sul campo popup, l&#39;interfaccia risulta distorta e l&#39;icona di eliminazione delle scelte non funziona più. Fai clic sul menu a discesa solo dopo aver salvato le modifiche. Se riscontri questo problema, salva lo schema e aprilo nuovamente per continuare a modificare.
 
 1. (Facoltativo) Aggiungi gli altri campi obbligatori. Ad esempio, formato, codec e durata per il video del tipo di risorsa.
 
@@ -118,13 +118,13 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

@@ -2,10 +2,10 @@
 title: Scelte rapide da tastiera per la modifica delle pagine
 description: In tutte le aree di AEM sono disponibili varie scelte rapide da tastiera, comprese quelle per la modifica delle pagine
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '237'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune 
 
 >[!NOTE]
 >
->Una volta che l’utente inizia a interagire con la pagina in modalità Anteprima, la scelta rapida `Ctrl-Shift-m` non è più disponibile. Per renderla nuovamente disponibile, si deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
+>Una volta che l’utente inizia a interagire con la pagina in modalità Anteprima, la scelta rapida `Ctrl-Shift-m` non è più disponibile. Per rendere nuovamente disponibile il collegamento, l’utente deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
 
 Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop quando utilizzano le [console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e alcune sono specifiche per la [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 

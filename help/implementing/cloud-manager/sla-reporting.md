@@ -2,10 +2,10 @@
 title: Generazione rapporti SLA
 description: Scopri come visualizzare le prestazioni dell’ambiente di produzione AEM relative al contratto del livello di servizio (SLA) sottoscritto.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 100%
+source-wordcount: '247'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ I dati della generazione rapporti SLA sono disponibili per ogni programma di pro
 
 1. Dalla pagina **Panoramica**, accedi alla scheda **Rapporti**.
 
-1. Per visualizzare i dati SLA riportati nel grafico, fai clic sull’anno desiderato.
+1. Fai clic sull’anno desiderato per visualizzare i dati SLA riportati nel grafico.
 
 ![Esempio di grafico SLA](assets/sla-reporting-1.png)
 

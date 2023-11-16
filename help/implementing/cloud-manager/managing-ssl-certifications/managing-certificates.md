@@ -2,10 +2,10 @@
 title: Gestione dei certificati SSL
 description: Scopri come controllare lo stato dei certificati SSL e come modificarli, sostituirli, aggiornarli ed eliminarli con Cloud Manager.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 98%
+source-wordcount: '637'
+ht-degree: 82%
 
 ---
 
@@ -33,7 +33,7 @@ Quando un certificato scade, i domini in uso con il certificato scaduto smettera
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 1. Dalla schermata **Ambienti**, accedi alla schermata **Certificati SSL**.
-1. Viene visualizzata una tabella con una riga per ogni certificato SSL installato correttamente nel programma. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga del certificato che desideri aggiornare e seleziona **Visualizza e aggiorna**.
+1. Puoi visualizzare una tabella con una riga per ogni certificato SSL installato correttamente nel programma. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga del certificato che desideri aggiornare e seleziona **Visualizza e aggiorna**.
 1. Vengono visualizzati i dettagli del certificato, che possono essere aggiornati.
 1. Esegui la pipeline per distribuire il certificato aggiornato.
 
@@ -56,7 +56,7 @@ Per eliminare un certificato SSL, segui la procedura riportata di seguito.
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 1. Dalla schermata **Ambienti**, accedi alla schermata **Certificati SSL**.
-1. Viene visualizzata una tabella con una riga per ogni certificato SSL installato correttamente nel programma. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga del certificato che desideri eliminare e seleziona **Elimina**.
+1. Puoi visualizzare una tabella con una riga per ogni certificato SSL installato correttamente nel programma. Fai clic sui puntini di sospensione all’estrema destra della riga del certificato che desideri eliminare e seleziona. **Elimina**.
 1. Conferma l’eliminazione nella finestra di dialogo **Elimina certificato SSL**.
 1. Esegui la pipeline per annullare la distribuzione del certificato eliminato.
 

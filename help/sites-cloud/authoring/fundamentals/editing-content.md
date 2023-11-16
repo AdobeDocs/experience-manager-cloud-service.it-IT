@@ -2,10 +2,10 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile aggiornarla modificandone i contenuti
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2983'
-ht-degree: 97%
+source-wordcount: '2978'
+ht-degree: 94%
 
 ---
 
@@ -151,9 +151,9 @@ Puoi aggiungere un nuovo componente utilizzando il [browser componenti](/help/si
 
      ![Inserire un componente](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * Se utilizzi un dispositivo desktop, puoi fare doppio clic sulla casella **Trascina qui i componenti**.
+   * Se utilizzi un dispositivo desktop, puoi fare doppio clic sul pulsante **Trascina qui i componenti** casella.
 
-   * Viene visualizzata la finestra di dialogo **Inserisci nuovo componente**, che consente di selezionare il componente richiesto:
+   * Il **Inserisci nuovo componente** viene visualizzata una finestra di dialogo che consente di selezionare il componente richiesto:
 
      ![Finestra di dialogo Inserisci nuovo componente](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -185,7 +185,7 @@ Se sfogliando le risorse disponibili scopri che è necessario eseguire una rapid
 
 ## Barra degli strumenti del componente {#component-toolbar}
 
-Quando si seleziona un componente, viene aperta la barra degli strumenti, che consente di accedere alle azioni disponibili per tale componente.
+Selezionando un componente si apre la barra degli strumenti. Consente di accedere a varie azioni che possono essere eseguite sul componente.
 
 Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descritte solo alcune.
 
@@ -361,7 +361,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
 >[!TIP]
 >
->L’azione Layout è limitata al componente selezionato. Ad esempio, se stai modificando il layout di un componente e fai clic su un altro componente, per il componente appena selezionato viene visualizzata la barra degli strumenti di modifica standard (non quella di layout), mentre le maniglie di ridimensionamento e la barra degli strumenti dell’emulatore sono nascosti.
+>L’azione Layout è limitata al componente selezionato. Ad esempio, se stai modificando il layout di un componente e fai clic su un altro componente, per il componente appena selezionato viene visualizzata la barra degli strumenti di modifica standard (non la barra degli strumenti di layout), mentre le maniglie di ridimensionamento e la barra degli strumenti dell’emulatore scompaiono.
 >
 >Se devi modificare il layout globale della pagina, che iinteresserà più componenti, passa alla [modalità di layout](/help/sites-cloud/authoring/features/responsive-layout.md).
 

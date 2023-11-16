@@ -2,10 +2,10 @@
 title: Anteprima del contenuto
 description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima i contenuti prima della pubblicazione.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 86%
+source-wordcount: '315'
+ht-degree: 80%
 
 ---
 
@@ -26,8 +26,8 @@ Per ulteriori dettagli sugli ambienti di anteprima, consulta il documento [Gesti
 
 Puoi pubblicare i contenuti nel servizio di anteprima utilizzando la funzione **Pubblicazione gestita** dell’interfaccia utente.
 
-1. Nella console Sites, seleziona le pagine da inviare all’anteprima e fai clic sul pulsante **Gestisci pubblicazione**.
-1. Nella procedura guidata seguente, seleziona **Anteprima** come destinazione
+1. Nella console Sites, seleziona le pagine da inviare all’anteprima e fai clic su **Gestisci pubblicazione** pulsante.
+1. Nella procedura guidata seguente, seleziona **Anteprima** come destinazione.
 
    ![pubblicazione gestita](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 

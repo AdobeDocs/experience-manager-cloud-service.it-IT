@@ -2,10 +2,10 @@
 title: Note sulla versione 2022.1.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2022.1.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 95%
+source-wordcount: '1074'
+ht-degree: 93%
 
 ---
 
@@ -104,7 +104,7 @@ La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2022.01.0 è
 ### Novità {#what-is-new-cm}
 
 * Cloud Manager [evita di ricostruire la base di codice quando rileva che viene utilizzato lo stesso commit Git](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in più esecuzioni di pipeline full-stack.
-* L’accesso al registro dell’ambiente AEM ora richiede il profilo di prodotto **Responsabile dell’implementazione**. Gli utenti senza questo profilo visualizzeranno un pulsante disabilitato nell’interfaccia utente.
+* L’accesso al registro dell’ambiente AEM ora richiede il profilo di prodotto **Responsabile dell’implementazione**. Gli utenti senza questo profilo visualizzano un pulsante disabilitato nell’interfaccia utente.
 * L’interfaccia utente non consente la configurazione della pipeline front-end per un programma in cui Sites non è abilitato come soluzione.
 * Durante la generazione di una password Git, viene visualizzata la data di scadenza.
 
@@ -123,7 +123,7 @@ La data di pubblicazione dello strumento Trasferimento contenuti v1.8.6 è il 3 
 
 ### Novità {#what-is-new-ctt}
 
-* Convalida del contenuto: gli utenti possono determinare in modo affidabile se tutti i contenuti estratti dallo strumento Trasferimento contenuti sono stati correttamente acquisiti nell’istanza di destinazione. Per utilizzare questa funzione, è necessario abilitarla nella `System Console` dell’ambiente AEM sorgente. Consulta [Convalida dei trasferimenti di contenuto - Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=it#getting-started) per ulteriori dettagli.
+* Convalida del contenuto: gli utenti possono determinare in modo affidabile se tutti i contenuti estratti dallo strumento Trasferimento contenuti sono stati correttamente acquisiti nell’istanza di destinazione. Per utilizzare questa funzione, abilitala in `System Console` dell’ambiente AEM di origine. Consulta [Convalida dei trasferimenti di contenuto - Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=it#getting-started) per ulteriori dettagli.
 
 ### Correzioni di bug {#bug-fixes-ctt}
 

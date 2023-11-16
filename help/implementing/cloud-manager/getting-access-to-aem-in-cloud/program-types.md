@@ -2,10 +2,10 @@
 title: Programmi e tipi di programmi
 description: Scopri la gerarchia di Cloud Manager, le differenze tra i diversi tipi di programmi e come si adattano alla struttura gerarchica.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 88%
+source-wordcount: '519'
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ Un esempio è spesso utile per contestualizzare questa gerarchia.
 
 I programmi di Cloud Manager vengono forniti automaticamente con il relativo archivio Git.
 
-Per accedere all’archivio Git di Cloud Manager è necessario utilizzare un client Git con uno strumento da riga di comando, un client Git visivo indipendente o l’IDE scelto dall’utente, ad esempio Eclipse, IntelliJ o NetBeans.
+Per accedere all’archivio Git di Cloud Manager, gli utenti devono utilizzare un client Git con uno strumento da riga di comando, un client Git visivo indipendente o l’IDE scelto dall’utente, ad esempio Eclipse, IntelliJ o NetBeans.
 
 Una volta configurato il client Git, puoi gestire l’archivio Git dall’interfaccia utente di Cloud Manager. Per informazioni su come gestire l’archivio Git con Cloud Manager, consulta [Accesso a Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 

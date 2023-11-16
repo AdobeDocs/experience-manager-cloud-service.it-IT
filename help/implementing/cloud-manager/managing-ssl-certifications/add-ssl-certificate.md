@@ -2,10 +2,10 @@
 title: Aggiunta di un certificato SSL
 description: Scopri come aggiungere un certificato SSL personalizzato con gli strumenti self-service di Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 88%
+source-wordcount: '552'
+ht-degree: 82%
 
 ---
 
@@ -29,11 +29,11 @@ Per aggiungere un certificato con Cloud Manager, segui la procedura riportata di
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Nel pannello di navigazione a sinistra, fai clic su **Certificati SSL**. Nella schermata principale viene visualizzata una tabella con i dettagli di tutti i certificati SSL esistenti.
+1. Clic **Certificati SSL** dal pannello di navigazione a sinistra. Nella schermata principale viene visualizzata una tabella con i dettagli di tutti i certificati SSL esistenti.
 
    ![Aggiunta di un certificato SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Per aprire la finestra di dialogo **Aggiungi certificato SSL**, fai clic su **Aggiungi certificato SSL**.
+1. Clic **Aggiungi certificato SSL** per aprire **Aggiungi certificato SSL** .
 
    * Inserisci un nome per il certificato nel campo **Nome certificato**.
       * Il nome è unicamente a scopo informativo e può essere qualsiasi nome che ti aiuta a ricordare facilmente il certificato.
@@ -47,7 +47,7 @@ Per aggiungere un certificato con Cloud Manager, segui la procedura riportata di
 
 1. Per salvare il certificato, fai clic su **Salva**.
 
-Dopo aver salvato, il certificato viene visualizzato come una nuova riga nella tabella.
+Una volta salvato, il certificato viene visualizzato come una nuova riga nella tabella.
 
 ![Certificato SSL salvato](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 

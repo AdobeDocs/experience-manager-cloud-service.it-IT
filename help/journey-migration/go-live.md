@@ -2,9 +2,9 @@
 title: Pubblicazione
 description: Scopri come eseguire la migrazione una volta che il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1704'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 >title="Preparazione alla pubblicazione"
 >abstract="Per garantire che la pubblicazione su AEM as a Cloud Service avvenga correttamente, devi pianificare i periodi di blocco del codice e dei contenuti, le iterazioni dei test, le integrazioni dei contenuti, i test delle prestazioni e di sicurezza e altro ancora."
 
-In questa sezione del percorso imparerai a pianificare ed eseguire la migrazione una volta che il codice e il contenuto saranno pronti per essere trasferiti a AEM as a Cloud Service. Inoltre, scoprirai quali sono le best practice e le limitazioni note durante l’esecuzione della migrazione.
+In questa sezione del percorso imparerai a pianificare ed eseguire la migrazione una volta che il codice e il contenuto saranno pronti per essere trasferiti a AEM as a Cloud Service. Inoltre, scopri le best practice e le limitazioni note durante l’esecuzione della migrazione.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -138,7 +138,7 @@ Rivedi questo elenco di attività per assicurarti di eseguire una migrazione flu
 * Configurare CDN, SSL e DNS.
    * Se utilizzi una tua rete CDN, inserisci un ticket di supporto per configurare il routing appropriato.
       * Consulta la sezione [La rete CDN del cliente punta alla rete CDN gestita dall’AEM](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) nella documentazione della rete CDN per ulteriori dettagli.
-      * Dovrai configurare SSL e DNS in base alla documentazione del fornitore CDN.
+      * Configura SSL e DNS in base alla documentazione del fornitore CDN.
    * Se non utilizzi una rete CDN aggiuntiva, gestisci SSL e DNS come descritto nella seguente documentazione:
       * Gestione dei certificati SSL
          * [Introduzione alla gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

@@ -2,10 +2,10 @@
 title: Configurazione della segmentazione con ContextHub
 description: Scopri come configurare la segmentazione utilizzando ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 98%
+source-wordcount: '1682'
+ht-degree: 95%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 La segmentazione è un concetto chiave per la creazione di una campagna. Consulta [Informazioni sulla segmentazione](segmentation.md) per saperne di più sul funzionamento della segmentazione e sui termini chiave.
 
-A seconda delle informazioni che hai già raccolto sui visitatori del tuo sito e degli obiettivi che desideri raggiungere, dovrai definire i segmenti e le strategie necessarie per i contenuti di destinazione.
+Definisci i segmenti e le strategie necessari per i contenuti di destinazione in base alle informazioni già raccolte sui visitatori del tuo sito e agli obiettivi che desideri raggiungere.
 
 Questi segmenti verranno poi utilizzati per fornire al visitatore i contenuti di destinazione più pertinenti. Le [Attività](activities.md) qui definite possono essere incluse in qualsiasi pagina e definiscono a quale segmento visitatore è applicabile il contenuto specifico.
 
@@ -103,7 +103,7 @@ Per definire il nuovo segmento:
 
 1. Dalla console dei segmenti, modifica il segmento appena creato per aprirlo nell’editor segmento.
 1. Trascina un confronto o un riferimento nell’editor segmento per visualizzarlo nel contenitore AND predefinito.
-1. Tocca o fai doppio clic sull’opzione di configurazione del nuovo riferimento o segmento per modificarne i parametri specifici. In questo esempio, effettuiamo i test per le persone a Basilea.
+1. Tocca o fai doppio clic sull’opzione di configurazione del nuovo riferimento o segmento per modificare i parametri specifici. In questo esempio, effettuiamo i test per le persone a Basilea.
 
    ![Test per le persone a Basilea](../assets/contexthub-comparing-property-value.png)
 

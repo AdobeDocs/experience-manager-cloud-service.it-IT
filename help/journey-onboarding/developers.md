@@ -4,17 +4,17 @@ description: Quando l’amministratore di sistema ha configurato le risorse clou
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 95%
+source-wordcount: '1411'
+ht-degree: 90%
 
 ---
 
 
 # Attività dei ruoli Sviluppatore e Responsabile dell’implementazione {#developer-deployment-manager}
 
-In questa sezione facoltativa del [percorso di onboarding](overview.md) scoprirai come sviluppatori e responsabili dell’implementazione possono accedere a Git per sviluppare applicazioni e distribuirle con le pipeline.
+In questa parte facoltativa del [percorso di onboarding,](overview.md) scopri come sviluppatori e responsabili dell’implementazione possono accedere a git per sviluppare applicazioni e distribuirle con le pipeline.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -64,7 +64,7 @@ Prima di iniziare le attività descritte in questo documento come utente con ruo
 
    ![Pulsante Accedi a dati archivio nella scheda Ambienti](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Fai clic sul pulsante **Visualizza informazioni archivio** per aprire una finestra di dialogo e visualizzare:
+1. Fai clic su **Visualizza informazioni archivio** per aprire una finestra di dialogo e visualizzare:
 
    * L’URL dell’archivio Git di Cloud Manager.
    * Il nome utente di Git.
@@ -119,7 +119,7 @@ Ora che il team di sviluppo ha aggiunto il codice personalizzato agli archivi Gi
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Dalla pagina **Panoramica del programma**, accedi alla scheda **Pipeline** e fai clic sul pulsante con i puntini di sospensione a fianco della pipeline creata nella sezione precedente, quindi seleziona **Esegui** dal menu.
+1. Accedi a **Pipeline** scheda da **Panoramica del programma** e fai clic sul pulsante con i puntini di sospensione a fianco della pipeline creata nella sezione precedente, quindi seleziona **Esegui** dal menu.
 
 1. L’esecuzione della pipeline viene avviata ed è indicata dalla colonna **Stato**.
 

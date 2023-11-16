@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '929'
 ht-degree: 5%
 
 ---
@@ -87,7 +87,7 @@ Di seguito è descritta la procedura per aggiungere tag a una risorsa:
 
 1. Accedi a [!DNL Experience Manager Assets].
 1. Clic **[!UICONTROL Risorse]** > **[!UICONTROL File]**, seleziona la risorsa e fai clic su **[!UICONTROL Proprietà]** per aprire le proprietà della risorsa.
-1. In **[!UICONTROL Base]** , fai clic sull’icona della cartella in **[!UICONTROL Tag]** metadati. Viene visualizzata una finestra popup.
+1. In **[!UICONTROL Base]** , fare clic sull&#39;icona della cartella in **[!UICONTROL Tag]** metadati. Viene visualizzata una finestra popup.
 1. Cerca o seleziona i tag appropriati dai tag esistenti in `cq-tags`. Puoi assegnare più tag alla risorsa.
 
    Puoi ordinare la struttura dei tag in ordine crescente o decrescente in base al **[!UICONTROL Nome]** (ordine alfabetico), **[!UICONTROL Creato]** data, oppure **[!UICONTROL Modificato]** data. Nell’illustrazione seguente, la struttura dei tag è ordinata alfabeticamente in base al **[!UICONTROL Nome]**.
@@ -135,5 +135,5 @@ La standardizzazione dell’utilizzo dei metadati, della denominazione dei file 
 >* [Utilizzare i microservizi delle risorse e i profili di elaborazione](asset-microservices-configure-and-use.md)
 >* [Profili metadati](metadata-profiles.md)
 >* [Profili video](/help/assets/dynamic-media/video-profiles.md)
->* [Profili immagine Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
+>* [Profili immagine Dynamic Medie](/help/assets/dynamic-media/image-profiles.md)
 

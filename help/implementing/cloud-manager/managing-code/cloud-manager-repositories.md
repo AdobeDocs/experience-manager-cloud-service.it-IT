@@ -2,10 +2,10 @@
 title: Archivi di Cloud Manager
 description: Scopri come creare, visualizzare ed eliminare gli archivi Git in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 96%
+source-wordcount: '585'
+ht-degree: 87%
 
 ---
 
@@ -24,9 +24,9 @@ Per visualizzare e gestire gli archivi in Cloud Manager, segui la procedura ripo
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Dalla sezione **Panoramica del programma** pagina, tocca o fai clic su **Archivi** per passare alla scheda **Archivi** pagina.
+1. Dalla sezione **Panoramica del programma** , tocca o fai clic su **Archivi** per passare alla scheda **Archivi** pagina.
 
-1. Fai clic su **Aggiungi archivio**.
+1. Clic **Aggiungi archivio**.
 
    ![Pulsante Aggiungi archivio](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
@@ -36,7 +36,7 @@ Per visualizzare e gestire gli archivi in Cloud Manager, segui la procedura ripo
 
 Al termine della procedura guidata, il nuovo archivio viene visualizzato nella tabella.
 
-Seleziona l’archivio nella tabella e fai clic sul pulsante con i puntini di sospensione, quindi seleziona **Copia URL archivio**, **Visualizza e aggiorna** o **Elimina**.
+Puoi selezionare l’archivio nella tabella, fare clic sul pulsante con i puntini di sospensione e selezionare **Copia URL archivio**, **Visualizza e aggiorna**, o **Elimina**.
 
 ![Opzioni dell’archivio](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,9 +58,9 @@ L’eliminazione di un archivio:
 
 Per eliminare un archivio in Cloud Manager, segui la procedura riportata di seguito.
 
-1. Dalla pagina **Panoramica del programma**, fai clic sulla scheda **Archivi** e accedi alla pagina **Archivi**.
+1. Dalla sezione **Panoramica del programma** , fare clic su **Archivi** e passare alla scheda **Archivi** pagina.
 
-1. Per eliminare l’archivio, selezionalo e fai clic sul pulsante con i puntini di sospensione, quindi seleziona **Elimina**.
+1. Seleziona l’archivio, fai clic sul pulsante con i puntini di sospensione e seleziona **Elimina** per eliminare l’archivio.
 
    ![Elimina archivio](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 

@@ -2,9 +2,9 @@
 title: Creazione di rappresentazioni video in Screens as a Cloud Service
 description: Questa pagina descrive come creare rappresentazioni video in Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Per creare rappresentazioni video in Screens as a Cloud Service dal provider di 
 
 1. Fai clic sulla sezione Strumenti nella barra di navigazione a sinistra e fai clic su **Risorse** e quindi fare clic su **Profili elaborazione**.
 
-   ![Fai clic sui profili di elaborazione](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![Fai clic su Profili elaborazione](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Clic **Crea** per creare un profilo di elaborazione.
 
@@ -61,7 +61,7 @@ Per creare rappresentazioni video in Screens as a Cloud Service dal provider di 
 
 1. Seleziona le cartelle in cui vengono conservati i video Screens e fai clic su **Applica**.
 
-   ![Fai clic su Applica.](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![Fai clic su Applica](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
    >

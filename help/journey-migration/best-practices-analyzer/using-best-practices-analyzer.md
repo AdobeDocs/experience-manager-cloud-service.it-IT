@@ -2,9 +2,9 @@
 title: Utilizzo di Best Practices Analyzer
 description: Scopri come utilizzare Best Practices Analyzer per comprendere lo stato di preparazione all’aggiornamento.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2478'
 ht-degree: 45%
 
 ---
@@ -61,7 +61,7 @@ Segui questa sezione per scoprire come visualizzare il rapporto Best Practices A
 
    ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Fai clic su **Genera report** per eseguire Best Practices Analyzer.
+1. Clic **Genera report** per eseguire Best Practices Analyzer.
 
    ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -69,7 +69,7 @@ Segui questa sezione per scoprire come visualizzare il rapporto Best Practices A
 
    ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. Una volta generato, il rapporto BPA visualizza un riepilogo e il numero dei risultati in un formato tabulare organizzato in base al tipo di risultato e al livello di importanza. Per ottenere ulteriori dettagli su un particolare risultato, è possibile fare clic sul numero corrispondente al tipo di risultato nella tabella.
+1. Una volta generato, il rapporto BPA visualizza un riepilogo e il numero dei risultati in formato tabulare organizzato in base al tipo di risultato e al livello di importanza. Per ottenere ulteriori dettagli su un particolare risultato, è possibile fare clic sul numero corrispondente al tipo di risultato nella tabella.
 
    ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -95,7 +95,7 @@ Segui questa sezione per scoprire come visualizzare il rapporto Best Practices A
 
 Per filtrare i risultati relativi a [Commons ACS](https://adobe-consulting-services.github.io/acs-aem-commons/), effettua le seguenti operazioni:
 
-1. Fai clic sull’icona della barra a sinistra sul lato sinistro della pagina. Verrà visualizzata la **ACS Commons Filter**. Fai clic sul pulsante **ACS Commons Filter** per visualizzare la casella di controllo interattiva, come illustrato nell&#39;immagine seguente.
+1. Fai clic sull’icona della barra a sinistra nella pagina. Verrà visualizzata la **ACS Commons Filter**. Fai clic su **ACS Commons Filter** per visualizzare la casella di controllo interattiva, come illustrato nell&#39;immagine seguente.
 
    ![immagine](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 

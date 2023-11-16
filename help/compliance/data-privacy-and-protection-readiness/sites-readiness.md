@@ -2,10 +2,10 @@
 title: Normative sulla protezione e la privacy dei dati - Preparazione di Adobe Experience Manager as a Cloud Service Sites
 description: Scopri il supporto di Adobe Experience Manager as a Cloud Service Sites per le varie normative su privacy e protezione dei dati, incluso il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi quando si implementa un nuovo progetto AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '1025'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Per rinunciare:
 
    * Per rinunciare all’aggregazione e all’analisi dei dati relativi alla visita a questo sito, è necessario installare un cookie sul browser. Questo cookie indica che hai rinunciato.
 
-     Se elimini il cookie di rinuncia o modifichi i computer o i browser Web, dovrai ripetere la rinuncia.
+     Se elimini il cookie di rinuncia o se cambi computer o browser Web, devi ripetere la rinuncia.
 
      Rinuncia: escludimi dall’aggregazione e dall’analisi della sessione del visitatore (installa il cookie di rinuncia `amcglobal.sc.omtrdc.net`) - Fai clic qui.
 

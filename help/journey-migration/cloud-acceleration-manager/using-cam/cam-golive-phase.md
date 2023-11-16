@@ -2,9 +2,9 @@
 title: Fase di lancio in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica della fase di pubblicazione in Cloud Acceleration Manager.
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '147'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Fai clic sulla scheda del progetto per aprire la pagina di destinazione del prog
 
 Segui questa sezione per esplorare la scheda dell’attività Go Live:
 
-1. Fai clic sul pulsante **Visualizza** dal pulsante **Vai in diretta** Card.
+1. Fai clic su **Visualizza** dal pulsante **Vai in diretta** Card.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 

@@ -2,9 +2,9 @@
 title: Pubblicazione di un canale in Screens as a Cloud Service
 description: Questa pagina descrive come pubblicare un canale in Screens as a Cloud Service.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '304'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Per pubblicare il canale, segui i passaggi seguenti:
 
    ![Seleziona canale](/help/screens-cloud/assets/create-content/managepub-1.png)
 
-1. Fai clic su **Gestisci pubblicazione** dalla barra delle azioni.
+1. Clic **Gestisci pubblicazione** dalla barra delle azioni.
 
 1. Seleziona la **Azione** as **Pubblica** e **Pianificazione** as **Ora** dal **Procedura guidata Gestisci pubblicazione** e fai clic su **Successivo**.
 

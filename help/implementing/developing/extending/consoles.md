@@ -1,13 +1,13 @@
 ---
 title: Personalizzazione delle console
 description: Scopri le diverse opzioni fornite da AEM per personalizzare le console dell’istanza di authoring.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
-
 
 # Personalizzazione delle console {#customizing-consoles}
 
@@ -117,4 +117,4 @@ Se desideri inserire dati aggiuntivi, devi scrivere un [PageInfoProvider](https:
 
 Quando utilizzi una console, un utente deve spesso selezionare tra risorse quali pagine, componenti o risorse. Può assumere la forma di un elenco dal quale l’autore deve scegliere un elemento.
 
-Al fine di mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Consulta il documento[Personalizzazione dell’authoring delle pagine](/help/implementing/developing/extending/page-authoring.md#filtering-resources) per i dettagli.
+Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Consulta il documento[Personalizzazione dell’authoring delle pagine](/help/implementing/developing/extending/page-authoring.md#filtering-resources) per i dettagli.

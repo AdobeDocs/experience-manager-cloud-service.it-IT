@@ -2,10 +2,10 @@
 title: Test dell’interfaccia utente
 description: I test personalizzati dell’interfaccia utente sono una funzionalità facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni personalizzate.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2389'
-ht-degree: 100%
+source-wordcount: '2385'
+ht-degree: 99%
 
 ---
 
@@ -183,7 +183,7 @@ Per includere un file `testing.properties` nell’artefatto della build, aggiung
 
 >[!NOTE]
 >
->Se il progetto non include questa riga, devi modificare il file per fornire il consenso esplicito ai test dell’interfaccia utente.
+>Se il progetto non include questa riga, modifica il file per fornire il consenso esplicito ai test dell’interfaccia utente.
 >
 >Il file può contenere una riga che consiglia di non modificarla. Questo è dovuto al fatto che la riga è stata introdotta nel progetto prima del consenso per i test dell’interfaccia utente e i client non erano destinati a modificare il file. Puoi tranquillamente ignorarla.
 

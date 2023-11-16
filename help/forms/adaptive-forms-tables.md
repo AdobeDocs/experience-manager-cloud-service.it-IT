@@ -4,9 +4,9 @@ description: Utilizza il componente tabella per aggiungere tabelle a un modulo a
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2494'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Fai doppio clic sulla riga per configurare le proprietà di una riga, ad esempio
 
 #### Aggiungere o eliminare una colonna
 
-Per aggiungere o eliminare una colonna, fai clic sulla cella di testo nella sezione dell’intestazione; si apre una barra degli strumenti con le opzioni per aggiungere o eliminare una colonna:
+Per aggiungere o eliminare una colonna, fai clic sulla cella di testo nella sezione dell’intestazione; viene visualizzata una barra degli strumenti con le opzioni per aggiungere o eliminare una colonna:
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -155,7 +155,7 @@ Le tabelle forniscono supporto preconfigurato per l’aggiunta o l’eliminazion
 1. Nella scheda Impostazioni ripetizione, specifica i conteggi minimo e massimo per limitare il numero di righe nella tabella.
 1. Clic **Fine**.
 
-In fase di runtime o di anteprima, verrà visualizzato **+** e ![Pulsante Elimina](/help/forms/assets/Smock_Delete.svg) per aggiungere o eliminare una riga.
+In fase di runtime o di anteprima, viene visualizzato **+** e ![Pulsante Elimina](/help/forms/assets/Smock_Delete.svg) per aggiungere o eliminare una riga.
 
 ![add-delete-rows-dynamically](assets/add-delete-layout.png)
 

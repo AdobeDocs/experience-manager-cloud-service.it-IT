@@ -2,9 +2,9 @@
 title: Creazione di modelli di pagina
 description: Il modello definisce la struttura della pagina risultante e, grazie all’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '4570'
+source-wordcount: '4567'
 ht-degree: 97%
 
 ---
@@ -607,7 +607,7 @@ Con le proprietà della pagina è possibile definire le librerie lato client ric
 
 >[!NOTE]
 >
->L’autore del modello può specificare il criterio della pagina sul modello, ma dovrà ottenere i dettagli delle librerie appropriate lato client dallo sviluppatore.
+>L’autore del modello può specificare il criterio della pagina sul modello, ma deve ottenere i dettagli delle librerie appropriate lato client dallo sviluppatore.
 
 ### Modifica di un modello - Proprietà pagina iniziale - Autore {#editing-a-template-initial-page-properties-author}
 

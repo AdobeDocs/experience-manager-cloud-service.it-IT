@@ -2,10 +2,10 @@
 title: Ambiente di build
 description: Scopri l’ambiente di build di Cloud Manager e come genera e verifica il codice.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 7945d67fe7d258af7131076d2416cbe121354a62
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 97%
+source-wordcount: '1005'
+ht-degree: 95%
 
 ---
 
@@ -179,7 +179,7 @@ Per l’utilizzo in un file `pom.xml` Maven, in genere è utile associare queste
 
 ## Installazione di pacchetti di sistema aggiuntivi {#installing-additional-system-packages}
 
-Alcune build richiedono l’installazione di pacchetti di sistema aggiuntivi per l’operatività completa. Ad esempio, una build può richiamare uno script Python o Ruby e richiedere l’installazione dell’interprete di linguaggio appropriato. È possibile eseguire l’operazione chiamando [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in `pom.xml` per richiamare APT. Questa esecuzione deve generalmente essere integrata in un profilo Maven specifico per Cloud Manager. In questo esempio viene installato Python.
+Alcune build richiedono l’installazione di pacchetti di sistema aggiuntivi per l’operatività completa. Ad esempio, una build può richiamare uno script Python o Ruby e deve disporre di un interprete del linguaggio appropriato installato. È possibile eseguire l’operazione chiamando [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in `pom.xml` per richiamare APT. Questa esecuzione deve generalmente essere integrata in un profilo Maven specifico per Cloud Manager. In questo esempio viene installato Python.
 
 ```xml
         <profile>

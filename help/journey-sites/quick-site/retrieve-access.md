@@ -2,10 +2,10 @@
 title: Recuperare le informazioni di accesso all’archivio Git
 description: Scopri in che modo lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell’archivio Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 93%
 
 ---
 
@@ -76,7 +76,7 @@ Se non hai ricevuto questa e-mail, contatta l’amministratore di Cloud Manager.
 
 ## Accesso a Cloud Manager {#access-cloud-manager}
 
-1. Accedi ad Adobe Experience Cloud all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) oppure fai clic sul collegamento fornito nell’e-mail di benvenuto.
+1. Accedi a Adobe Experience Cloud all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) oppure fai clic sul collegamento fornito nell’e-mail di benvenuto.
 
 1. Cloud Manager elenca i vari programmi disponibili. Tocca o fai clic su quello a cui devi accedere, secondo le indicazioni dell’amministratore di Cloud Manager. Se si tratta del primo progetto front-end per AEMaaCS, probabilmente è disponibile un solo programma.
 
@@ -111,7 +111,7 @@ Dopo aver completato questa parte del percorso di creazione rapida sito di AEM, 
 * Comprendere ad alto livello cosa è Cloud Manager.
 * Aver recuperato le credenziali per accedere al Git AEM in modo da poter eseguire il commit delle personalizzazioni.
 
-Sfrutta questa conoscenza e continua il percorso di creazione rapida del sito AEM rivedendo poi il documento [Personalizzare il tema del sito,](customize-theme.md) dove verrà illustrato come è stato creato il tema del sito, come personalizzarlo e come eseguire il test utilizzando contenuti live AEM.
+Approfondisci l&#39;argomento e continua il percorso di Creazione Rapida dei Siti AEM esaminando il documento [Personalizzare il tema del sito,](customize-theme.md) dove scopri come è creato il tema del sito, come personalizzarlo e come testarlo utilizzando contenuti live AEM.
 
 ## Risorse aggiuntive {#additional-resources}
 

@@ -4,10 +4,10 @@ description: Scopri come le regole di traduzione identificano il contenuto da tr
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '1291'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 99%
 
 ---
 
@@ -171,7 +171,7 @@ Nell’interfaccia utente delle regole di traduzione puoi:
 
    ![Seleziona contesto](../assets/select-context.png)
 
-1. Poi devi selezionare il contesto e fare clic su **Modifica**. Verrà aperto l’Editor delle regole di traduzione.
+1. Poi devi selezionare il contesto e fare clic su **Modifica**. Viene aperto l’Editor regole di traduzione.
 
    ![Editor regole di traduzione](../assets/translation-rules-editor.png)
 

@@ -3,13 +3,13 @@ title: Gestione dei frammenti di contenuto
 description: Scopri come gestire i frammenti di contenuto AEM dalla console e dall’editor, come base per i contenuti headless o per l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: d381cc80e2c15ea35f9fd23baa78806ce15ec1af
+exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 59%
+source-wordcount: '2532'
+ht-degree: 56%
 
 ---
-
 
 # Gestione dei frammenti di contenuto {#managing-content-fragments}
 
@@ -70,7 +70,7 @@ Per ulteriori informazioni consulta:
 
 ### Struttura e gestione di base della console {#basic-structure-handling-content-fragments-console}
 
-Selezionando **Frammenti di contenuto** verrà aperta la console in una nuova scheda.
+Selezione **Frammenti di contenuto** apre la console in una nuova scheda.
 
 ![Console Frammenti di contenuto - Panoramica](assets/cf-managing-console-overview.png)
 
@@ -131,7 +131,7 @@ Alcune azioni sono disponibili dalla console senza selezionare un frammento di c
 
 #### Azioni per un frammento di contenuto (selezionato) {#actions-selected-content-fragment}
 
-Quando si seleziona un frammento specifico, viene aperta una barra degli strumenti incentrata sulle azioni disponibili per tale frammento. Puoi inoltre selezionare più frammenti; la selezione delle azioni verrà regolata di conseguenza.
+Selezionando un frammento specifico si apre una barra degli strumenti incentrata sulle azioni disponibili per tale frammento. Puoi inoltre selezionare più frammenti; la selezione delle azioni verrà regolata di conseguenza.
 
 ![Console Frammenti di contenuto; barra degli strumenti per un frammento selezionato](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -191,7 +191,7 @@ Passando il puntatore del mouse sul nome della cartella verrà visualizzato il p
    * Solo informazioni.
    * Può essere utilizzato per [Filtro rapido](#fast-filtering).
 * **Con riferimento da**:
-   * Fornisce un collegamento che apre una finestra di dialogo in cui sono elencati tutti [riferimenti principali](#parent-references-fragment)  del frammento, compresi i frammenti di contenuto, frammenti di esperienza e pagine. Per aprire un riferimento specifico, fai clic sul **Titolo** nella finestra di dialogo.
+   * Fornisce un collegamento che apre una finestra di dialogo in cui sono elencati tutti [riferimenti principali](#parent-references-fragment)  del frammento, compresi i frammenti di contenuto, frammenti di esperienza e pagine. Per aprire un riferimento specifico, fare clic su **Titolo** nella finestra di dialogo.
 
      ![Console Frammenti di contenuto - Finestra di dialogo Riferimenti](assets/cf-managing-console-references-dialog.png)
 
@@ -201,7 +201,7 @@ Passando il puntatore del mouse sul nome della cartella verrà visualizzato il p
 
      ![Console Frammenti di contenuto - Indicatore della lingua](assets/cf-managing-console-language-indicator.png)
 
-   * Tocca o fai clic sul numero per aprire una finestra di dialogo in cui sono visualizzate tutte le copie per altre lingue. Per aprire una copia di una specifica lingua, fai clic sul **Titolo** nella finestra di dialogo.
+   * Tocca o fai clic sul numero per aprire una finestra di dialogo in cui sono visualizzate tutte le copie per altre lingue. Per aprire una copia per lingua specifica, fai clic su **Titolo** nella finestra di dialogo.
 
      ![Console Frammenti di contenuto - Finestra di dialogo Lingua](assets/cf-managing-console-languages-dialog.png)
 
@@ -224,7 +224,7 @@ Per creare un frammento di contenuto:
    >
    >Per impostare come predefinita la posizione del nuovo frammento, passa alla cartella in cui desideri creare il frammento oppure specifica la posizione durante il processo di creazione.
 
-1. Viene aperta la finestra di dialogo **Nuovo frammento di contenuto** da dove puoi specificare:
+1. Il **Nuovo frammento di contenuto** viene visualizzata la finestra di dialogo, da qui puoi specificare:
 
    * **Posizione**: il campo verrà compilato automaticamente con la posizione corrente, ma se necessario puoi selezionare una posizione differente
    * **Modello per frammento di contenuto**: dall’elenco a discesa seleziona il modello da utilizzare come base per il frammento
@@ -397,7 +397,7 @@ I dettagli dei riferimenti principali sono accessibili dalla sezione
 * **Riferimenti** della console Frammenti di contenuto
 * il [collegamento dei riferimenti principali nella barra degli strumenti superiore dell’editor di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
 
-Entrambi forniscono un collegamento che apre una finestra di dialogo in cui sono elencati tutti i riferimenti principali di quel frammento, inclusi i frammenti di contenuto, frammenti di esperienza e pagine. Per aprire un riferimento specifico, fare clic sul pulsante **Titolo** o l’icona del collegamento nella finestra di dialogo.
+Entrambi forniscono un collegamento che apre una finestra di dialogo in cui sono elencati tutti i riferimenti principali di quel frammento, inclusi i frammenti di contenuto, frammenti di esperienza e pagine. Per aprire un riferimento specifico, fare clic su **Titolo** o l’icona del collegamento nella finestra di dialogo.
 
 Ad esempio:
 
@@ -414,7 +414,7 @@ L’icona indica le impostazioni locali del frammento di contenuto e il numero t
 
 ![Console Frammenti di contenuto - Indicatore della lingua](assets/cfc-console-language-indicator.png)
 
-Tocca o fai clic sul numero per aprire una finestra di dialogo in cui sono visualizzate tutte le copie per altre lingue. Per aprire una copia di una specifica lingua, fai clic sul **Titolo** nella finestra di dialogo.
+Tocca o fai clic sul numero per aprire una finestra di dialogo in cui sono visualizzate tutte le copie per altre lingue. Per aprire una copia per lingua specifica, fai clic su **Titolo** nella finestra di dialogo.
 
 ![Console Frammenti di contenuto - Finestra di dialogo Lingua](assets/cf-managing-console-languages-dialog.png)
 

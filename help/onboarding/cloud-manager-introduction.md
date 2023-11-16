@@ -2,10 +2,10 @@
 title: Introduzione a Cloud Manager
 description: Scopri in che modo Cloud Manager supporta il progetto AEM tramite programmi, ambienti e pipeline.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 97%
+source-wordcount: '860'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Puoi accedere alla pagina Programmi e prodotti di Cloud Manager anche dalla pagi
 
 1. Seleziona **Experience Manager**.
 
-1. Dalla scheda **Cloud Manager**, fai clic su **Avvia**
+1. Il giorno **Cloud Manager** , fare clic su **Launch**
 
 ## Autorizzazioni basate sui ruoli in Cloud Manager {#role-based-permissions}
 

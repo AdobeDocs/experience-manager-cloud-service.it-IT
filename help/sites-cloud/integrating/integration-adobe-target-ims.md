@@ -2,10 +2,10 @@
 title: Configurazione IMS da utilizzare per l’integrazione con Adobe Target
 description: Configurazione IMS da utilizzare per l’integrazione con Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 155b24c4b46e8baebd6215c0717d9f2adde95017
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 96%
+source-wordcount: '880'
+ht-degree: 94%
 
 ---
 
@@ -154,7 +154,7 @@ Seleziona **Visualizza** (a destra di una specifica voce progetto) per visualizz
 * API
    * Ad esempio, Adobe Target
 
-Alcune di queste sono necessarie per completare l’integrazione di Adobe Target in AEM basato su IMS.
+Alcune di queste sono necessarie per completare l’integrazione di Adobe Target nell’AEM basato su IMS.
 
 ## Completamento della configurazione IMS in AEM {#completing-the-ims-configuration-in-aem}
 
@@ -196,7 +196,7 @@ Per confermare che la configurazione funziona come previsto:
 
    ![Verifica stato](assets/integrate-target-ims-12.png)
 
-1. In caso di esito positivo, verrà visualizzato un messaggio di conferma.
+1. In caso di esito positivo, viene visualizzato un messaggio di conferma.
 
 ## Completare l’integrazione con Adobe Target {#complete-the-integration-with-adobe-target}
 
@@ -211,7 +211,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Legacy Cloud Services**.
 1. Scroll down to **Adobe Target** and select **Configure now**.
 
-   The **Create Configuration** dialog will open.
+   The **Create Configuration** dialog opens.
 
 1. Enter a **Title** and, if you want, a **Name** (if left blank it is generated from the title).
 
@@ -219,7 +219,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Confirm with **Create**.
 
-   The **Edit Component** dialog will open.
+   The **Edit Component** dialog opens.
 
 1. Enter the details in the **Adobe Target Settings** tab:
 

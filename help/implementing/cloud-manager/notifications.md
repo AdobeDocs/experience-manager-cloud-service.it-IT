@@ -2,10 +2,10 @@
 title: Notifiche
 description: Scopri come ricevere informazioni sulle distribuzioni delle pipeline con il sistema di notifica di Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 89%
+source-wordcount: '584'
+ht-degree: 79%
 
 ---
 
@@ -34,9 +34,9 @@ La scheda **Annunci** include annunci di prodotti Adobe. Gli annunci riguardano 
 
 Fai clic su una notifica o un annuncio per visualizzarne i dettagli. Le notifiche collegate ad attività come le distribuzioni di pipeline ti portano ai dettagli di quell’attività, ad esempio la finestra di esecuzione della pipeline.
 
-Fai clic sull’opzione **Visualizza tutto** nella parte inferiore del pannello per visualizzare tutti gli annunci presenti nella casella in entrata.
+Fai clic su **Visualizza tutto** nella parte inferiore del pannello per visualizzare tutti gli annunci presenti nella casella in entrata.
 
-Fai clic sull’opzione **Contrassegna tutto come letto** nella parte inferiore del pannello per contrassegnare tutte le notifiche non lette come lette e cancellare il contrassegno dell’icona della campana.
+Fai clic su **Contrassegna tutto come letto** nella parte inferiore del pannello per contrassegnare tutte le notifiche non lette come lette e cancellare il contrassegno dell’icona a forma di campana.
 
 ## Configurazione delle notifiche {#configuration}
 
@@ -54,7 +54,7 @@ Le iscrizioni definiscono per quali prodotti ricevi le notifiche e quali notific
 
 ![Iscrizioni alle notifiche](assets/notifications-subscriptions.png)
 
-Per impostazione predefinita, riceverai tutte le notifiche per tutti i prodotti sia nell’applicazione che tramite e-mail. Fai clic sulla freccia accanto al nome di un prodotto per visualizzare le opzioni dettagliate e definire i tipi di notifiche che ricevi per quel prodotto. Oppure seleziona o deseleziona le opzioni a livello di prodotto per selezionare/deselezionare tutte le opzioni per il prodotto.
+Per impostazione predefinita, riceverai tutte le notifiche per tutti i prodotti sia nell’applicazione che tramite e-mail. Fai clic sulla freccia accanto al nome di un prodotto per visualizzare le opzioni dettagliate e definire i tipi di notifiche ricevute per quel prodotto. Oppure seleziona o deseleziona le opzioni a livello di prodotto per selezionare/deselezionare tutte le opzioni per il prodotto.
 
 ![Personalizzazione dell’iscrizione alle notifiche](assets/notifications-subscriptions-customize.png)
 

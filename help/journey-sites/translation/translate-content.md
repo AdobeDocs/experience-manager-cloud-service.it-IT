@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2590'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2586'
+ht-degree: 96%
 
 ---
 
@@ -60,7 +60,7 @@ Per i proprietari di contenuti che sono anche responsabili della traduzione, spe
    * Tieni presente che prima della prima traduzione le cartelle delle altre lingue sono segnaposto vuoti. Queste vengono normalmente create dall’architetto dei contenuti.
 1. Individua la lingua root del progetto.
 1. Tocca o fai clic sul selettore della barra e mostra il pannello **Riferimenti**.
-1. Tocca o fai clic su **Copie in lingua**.
+1. Tocca o fai clic su **Copie per lingua**.
 1. Seleziona la casella di spunta delle **Copie in lingua**.
 1. Espandi la sezione **Aggiorna copie in lingua** nella parte inferiore del pannello dei riferimenti.
 1. Nel menu a discesa **Progetto**, seleziona **Crea progetto di traduzione**.
@@ -144,7 +144,7 @@ Quando crei automaticamente il progetto di traduzione, AEM valuta il contenuto n
 
 Per visualizzare i dettagli del contenuto incluso in questo progetto:
 
-1. Tocca o fai clic sul pulsante con i puntini di sospensione nella parte inferiore della scheda **Lavoro di traduzione**.
+1. Tocca o fai clic sul pulsante con i puntini di sospensione nella parte inferiore della sezione **Lavoro di traduzione** Card.
 1. Nella finestra **Lavoro di traduzione** vengono elencati tutti gli elementi del lavoro.
 
    ![Dettagli del lavoro di traduzione](assets/translation-job-detail.png)
@@ -262,7 +262,7 @@ Se passi a questa cartella tramite **Navigazione** -> **Sites**, vengono visuali
 
 Il Translation Framework AEM riceve le traduzioni dal connettore e quindi crea automaticamente la struttura del contenuto in base alla lingua root, utilizzando le traduzioni fornite.
 
-È importante comprendere che questo contenuto non è pubblicato e quindi non è disponibile per il consumo. Impareremo a conoscere questa struttura autore-pubblicazione e vedremo come pubblicare i nostri contenuti tradotti nel prossimo passaggio del percorso di traduzione.
+È importante comprendere che questo contenuto non è pubblicato e quindi non è disponibile per il consumo. Scopri questa struttura autore-pubblicazione e scopri come pubblicare i contenuti tradotti nel passaggio successivo del percorso di traduzione.
 
 ## Traduzione manuale {#human-translation}
 
@@ -278,7 +278,7 @@ Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dov
 * Essere in grado di creare nuovi progetti di traduzione.
 * Utilizzare i progetti di traduzione per tradurre i contenuti.
 
-Approfondisci questo argomento e continua il tuo percorso di traduzione in AEM Sites consultando il documento successivo [Pubblicare contenuti tradotti](publish-content.md) dove imparerai a pubblicare i contenuti tradotti e come aggiornare tali traduzioni man mano che il contenuto della lingua root cambia.
+Approfondisci l&#39;argomento e continua il tuo percorso di traduzione AEM Sites consultando il documento [Pubblicare contenuti tradotti](publish-content.md) dove scopri come pubblicare i contenuti tradotti e come aggiornare tali traduzioni man mano che il contenuto della lingua root cambia.
 
 ## Risorse aggiuntive {#additional-resources}
 

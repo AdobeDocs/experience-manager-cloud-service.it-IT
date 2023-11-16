@@ -2,10 +2,10 @@
 title: Controllo dello stato del nome di dominio
 description: Scopri come determinare se il nome di dominio personalizzato è stato verificato correttamente da Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 82%
+source-wordcount: '647'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ In Cloud Manager è possibile determinare lo stato del nome di dominio personali
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Nel pannello di navigazione a sinistra, fai clic su **Impostazioni dominio**.
+1. Clic **Impostazioni dominio** nel pannello di navigazione a sinistra.
 
 1. Fai clic sull’icona **Stato** del nome di dominio.
 
@@ -35,18 +35,18 @@ Cloud Manager verifica la proprietà del dominio tramite il valore TXT e visuali
 
 * **Verificato, distribuzione non riuscita**: la verifica TXT è stata completata correttamente, ma la distribuzione CDN non è riuscita.
 
-   * In questi casi, contatta il rappresentante del tuo Adobe.
+   * In questo caso, contatta il rappresentante Adobe.
 
 * **Dominio verificato e distribuito**: questo stato indica che il nome di dominio personalizzato è pronto all’uso.
 
    * A questo punto, il nome di dominio personalizzato è pronto per la fase di test e per puntare al nome di dominio di Cloud Manager.
-   * Consulta [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) per ulteriori informazioni.
+   * Per ulteriori informazioni, consulta [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
 
 * **Eliminazione in corso**: è in corso l’eliminazione di un nome di dominio personalizzato.
 
 * **Eliminazione non riuscita**: l’eliminazione del nome di dominio personalizzato non è riuscita; è necessario effettuare un nuovo tentativo.
 
-   * Consulta [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) per ulteriori informazioni.
+   * Per ulteriori informazioni, consulta [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
 
 Cloud Manager attiva automaticamente una verifica TXT quando nel passaggio di verifica della procedura guidata **Aggiungi dominio personalizzato** selezioni **Salva**. Per le verifiche successive, devi riselezionare attivamente l’icona di verifica accanto allo stato.
 
@@ -60,7 +60,7 @@ Questo errore può verificarsi durante la convalida del dominio del record TXT a
 
 #### Causa errore {#cause}
 
-Faslty blocca un dominio all’account iniziale che ne ha effettuato la registrazione, impedendo a qualsiasi altro account di registrare un sottodominio senza richiedere l’autorizzazione. Inoltre, Fastly consente di assegnare un dominio APEX e i sottodomini associati a un unico servizio e account Fastly. L’errore viene visualizzato se disponi di un account Fastly che collega gli stessi domini e sottodomini APEX utilizzati per i domini di AEM Cloud Service.
+Faslty blocca un dominio all’account iniziale che ne ha effettuato la registrazione, impedendo a qualsiasi altro account di registrare un sottodominio senza richiedere l’autorizzazione. Inoltre, Fastly consente di assegnare un dominio APEX e i sottodomini associati a un unico servizio e account Fastly. Questo errore viene visualizzato se disponi di un account Fastly che collega gli stessi domini e sottodomini APEX utilizzati per i domini AEM Cloud Service.
 
 #### Risoluzione degli errori {#resolution}
 
@@ -82,8 +82,8 @@ L’errore viene corretto come segue:
 
 ## Configurazioni CDN preesistenti per i nomi di dominio personalizzati {#pre-existing-cdn}
 
-Se disponi di una configurazione CDN preesistente per i nomi di dominio personalizzati, viene visualizzato un messaggio informativo sulla **Nomi di dominio personalizzati** e **Ambiente** , per invitarti ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
+Se disponi di una configurazione CDN preesistente per i nomi di dominio personalizzati, viene visualizzato un messaggio informativo sulle pagine **Nomi di dominio personalizzati** e **Ambiente** che ti invita ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
 
 Il messaggio non viene più visualizzato dopo aver eseguito la migrazione di tutte le configurazioni dell’ambiente preesistenti tramite l’interfaccia utente. Potrebbero essere necessari 1-2 giorni lavorativi affinché il messaggio non venga più visualizzato.
 
-Consulta [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) per ulteriori dettagli.
+Per ulteriori dettagli, consulta [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).

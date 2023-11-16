@@ -2,10 +2,10 @@
 title: Team e profili di prodotto di AEM as a Cloud Service
 description: Scopri come usare i team e i profili di prodotto di AEM as a Cloud Service per consentire e limitare l’accesso alle soluzioni Adobe con licenza.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 89%
+source-wordcount: '849'
+ht-degree: 85%
 
 ---
 
@@ -24,9 +24,9 @@ AEM as a Cloud Service è un’offerta completamente nativa per il cloud che inc
 
 Durante l’onboarding, i membri del gruppo di AEM as a Cloud Service vengono aggiunti e assegnati a uno o più dei seguenti profili di prodotto tramite Admin Console.
 
-* **Amministratori AEM**: il ruolo Amministratore AEM in genere viene assegnato ai membri del team di sviluppo, in particolare a chi deve, ad esempio, accedere agli ambienti di sviluppo. Il profilo di prodotto Amministratore AEM consente di concedere i privilegi di amministratore nell’istanza AEM associata.
+* **Amministratori AEM**: un amministratore AEM viene generalmente assegnato agli sviluppatori, in particolare a quelli che hanno bisogno di accedere, ad esempio, agli ambienti di sviluppo. Il profilo di prodotto Amministratore AEM consente di concedere i privilegi di amministratore nell’istanza AEM associata.
 
-* **Utenti AEM**: gli utenti AEM sono le persone dell’organizzazione che utilizzano AEM as a Cloud Service a livello generale per creare contenuti. Questi utenti devono accedere a AEM per svolgere le loro attività. Il profilo di prodotto Utenti AEM viene in genere assegnato a un autore di contenuti AEM, che crea e rivede il contenuto. Tale contenuto può essere di molti tipi, ad esempio pagine, risorse, pubblicazioni e così via. Il profilo di prodotto Utenti AEM mostrato di seguito viene assegnato a questi membri.
+* **Utenti AEM**: gli utenti AEM sono le persone dell’organizzazione che utilizzano AEM as a Cloud Service a livello generale per creare contenuti. Questi utenti devono accedere all’AEM per svolgere le loro mansioni. Il profilo di prodotto Utenti AEM viene in genere assegnato a un autore di contenuti AEM, che crea e rivede il contenuto. Tale contenuto può essere di molti tipi, ad esempio pagine, risorse, pubblicazioni e così via. Il profilo di prodotto Utenti AEM mostrato di seguito viene assegnato a questi membri.
 
 ![Profili di prodotto](/help/onboarding/assets/admin-console-profiles.png)
 

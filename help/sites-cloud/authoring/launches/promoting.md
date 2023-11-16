@@ -2,10 +2,10 @@
 title: Promozione dei lanci
 description: Con la promozione delle pagine di lancio si sposta il contenuto nell’origine (produzione) prima della pubblicazione.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '812'
+ht-degree: 98%
 
 ---
 
@@ -80,7 +80,7 @@ Puoi promuovere i lanci dalla console **Sites** o dalla console **Lanci**:
 
 ## Promozione delle pagine di lancio durante la modifica {#promoting-launch-pages-when-editing}
 
-Quando modifichi una pagina di lancio, l’azione **Promuovi lancio** risulta disponibile anche da **Informazioni pagina**. Si aprirà la procedura guidata per raccogliere le informazioni necessarie.
+Quando modifichi una pagina di lancio, l’azione **Promuovi lancio** risulta disponibile anche da **Informazioni pagina**. Verrà avviata la procedura guidata per la raccolta delle informazioni necessarie.
 
 ![Promuovi il lancio dalle informazioni del sito](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 

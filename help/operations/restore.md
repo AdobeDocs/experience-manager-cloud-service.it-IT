@@ -2,10 +2,10 @@
 title: Ripristino del contenuto in AEM as a Cloud Service
 description: Scopri come ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: bf8493909fa995ec30d67646aec5b712318dbf75
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 76%
+source-wordcount: '1162'
+ht-degree: 71%
 
 ---
 
@@ -46,13 +46,13 @@ Determina innanzitutto l’intervallo di tempo del contenuto da ripristinare. Qu
 
 >[!NOTE]
 >
->Per avviare un’operazione di ripristino, è necessario che un utente con ruolo **Proprietario business** o **Responsabile della distribuzione** abbia effettuato l’accesso.
+>Un utente con **Proprietario business** o **Responsabile dell’implementazione** per avviare un&#39;operazione di ripristino, è necessario che il ruolo sia connesso.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Fai clic sul programma per il quale desideri avviare il ripristino.
+1. Fare clic sul programma per il quale si desidera avviare il ripristino.
 
-1. Nella pagina **Panoramica programma** e nella scheda **Ambienti**, fai clic sul pulsante con i tre puntini accanto all’ambiente per il quale vuoi avviare il ripristino e seleziona **Ripristina contenuto**.
+1. Dalla sezione **Panoramica del programma** pagina, nella **Ambienti** , fai clic sul pulsante con i puntini di sospensione accanto all’ambiente per il quale desideri avviare il ripristino e seleziona **Ripristina contenuto**.
 
    ![Opzione Ripristina](assets/backup-option.png)
 

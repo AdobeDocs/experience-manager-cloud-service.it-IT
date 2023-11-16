@@ -2,9 +2,9 @@
 title: Configurazione dei moduli di ricerca
 description: Configurazione di Search Forms per Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2035'
 ht-degree: 17%
 
 ---
@@ -575,7 +575,7 @@ Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 
    * Stai aggiungendo un nuovo campo:
 
-     Dopo l’aggiunta del predicato, **Impostazioni** viene aperta e vengono visualizzate le proprietà che possono essere definite.
+     Dopo l’aggiunta del predicato, il **Impostazioni** Viene visualizzata una scheda che mostra le proprietà che possono essere definite.
 
    * Desideri aggiornare un predicato esistente:
 

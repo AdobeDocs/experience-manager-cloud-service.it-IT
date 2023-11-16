@@ -2,10 +2,10 @@
 title: Guida introduttiva ad AEM headless as a Cloud Service
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 97%
+source-wordcount: '3096'
+ht-degree: 95%
 
 ---
 
@@ -85,7 +85,7 @@ Per modificare il contenuto senza problemi, AEM offre due solide API.
 * L’API GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
 * L’API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
 
-Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure consulta la sezione seguente sulle [risorse aggiuntive](#additional-resources) per ulteriore documentazione.
+Scopri queste API e come utilizzarle in una sezione successiva del percorso AEM headless. Oppure, vedi [risorse aggiuntive](#additional-resources) per ulteriore documentazione, consulta la sezione seguente.
 
 ## Livelli di integrazione headless {#integration-levels}
 
@@ -273,7 +273,7 @@ Ora che hai completato questa parte del percorso per sviluppatori headless di AE
 * Essere a conoscenza dei livelli di integrazione headless di AEM.
 * Essere in grado di definire il tuo progetto in termini di ambito.
 
-Continua il tuo percorso AEM headless rivedendo il documento successivo [Percorso per la prima esperienza con AEM Headless](path-to-first-experience.md) dove imparerai a configurare gli strumenti necessari e come iniziare a pensare alla modellazione dei tuoi dati in AEM.
+Dovresti continuare il tuo percorso headless AEM rivedendo il documento successivamente [Percorso della tua prima esperienza con AEM Headless](path-to-first-experience.md) dove imparerai a configurare gli strumenti necessari e a pensare come modellare i tuoi dati in AEM.
 
 ## Risorse aggiuntive {#additional-resources}
 

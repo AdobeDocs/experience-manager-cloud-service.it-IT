@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1163'
+ht-degree: 97%
 
 ---
 
@@ -133,7 +133,7 @@ Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dov
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
 * Essere in grado di impostare la propria connessione al servizio di traduzione.
 
-Sviluppa questa conoscenza e continua il tuo percorso di traduzione AEM Sites esaminando il documento [Configurare le regole di traduzione,](translation-rules.md) dove imparerai a definire quale contenuto tradurre.
+Approfondisci l&#39;argomento e continua il tuo percorso di traduzione AEM Sites consultando il documento [Configurare le regole di traduzione,](translation-rules.md) dove si impara a definire quale contenuto tradurre.
 
 ## Risorse aggiuntive {#additional-resources}
 

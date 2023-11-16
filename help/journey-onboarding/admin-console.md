@@ -2,16 +2,16 @@
 title: Accesso a Admin Console
 description: Una volta comprese le operazioni preliminari all’onboarding e le nozioni di base della struttura di AEMaaCS, puoi effettuare il primo accesso a Admin Console.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 95%
+source-wordcount: '1098'
+ht-degree: 85%
 
 ---
 
 # Accesso a Admin Console {#accessing-admin-console}
 
-In questa sezione del [percorso di onboarding](overview.md) scoprirai le operazioni preliminari necessarie per accedere al sistema per la prima volta.
+In questa parte del [percorso di onboarding,](overview.md) scopri le operazioni preliminari necessarie per accedere al sistema per la prima volta.
 
 ## Obiettivo {#objective}
 
@@ -30,7 +30,7 @@ Adobe Admin Console è una piattaforma centralizzata da cui amministrare e gesti
 
 ## Adobe ID {#adobe-id}
 
-Per accedere a Admin Console è necessario un Adobe ID. Adobe ID è un account associato a un indirizzo e-mail specifico, necessario per accedere a AEM as a Cloud Service o alle soluzioni Adobe in possesso. Con Adobe ID puoi riunire tutti i tuoi piani Adobe e i prodotti associati in un singolo account.
+Per accedere all’Admin Console, è necessario un Adobe ID. Adobe ID è un account associato a un indirizzo e-mail specifico, necessario per accedere a AEM as a Cloud Service o alle soluzioni Adobe in possesso. Con Adobe ID puoi riunire tutti i tuoi piani Adobe e i prodotti associati in un singolo account.
 
 Quando configuri il team come amministratore di sistema in Admin Console, specifica l’indirizzo e-mail da utilizzare come Adobe ID.
 
@@ -50,11 +50,11 @@ Prima di poter gestire gli utenti del team con Admin Console, assicurati di pote
 
 1. In qualità di amministratore di sistema, come parte del processo di onboarding riceverai più e-mail da Adobe. Cerca l’e-mail di benvenuto con le informazioni sul nome dell’organizzazione a cui hai accesso.
 
-1. Per accedere a Admin Console, fai clic sul collegamento **Inizia** nell’e-mail di benvenuto. Se non riesci a trovare l’e-mail, apri un browser per passare direttamente all’Admin Console da [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Fai clic su **Introduzione** collega nell’e-mail di benvenuto per passare a Admin Console. Se non riesci a trovare l’e-mail, apri un browser per passare direttamente all’Admin Console da [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![E-mail di benvenuto](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Accedi con il tuo Adobe ID. Dopo aver effettuato l’accesso, viene visualizzata la pagina **Panoramica** di Adobe Admin Console.
+1. Accedi con il tuo Adobe ID. Dopo aver effettuato l’accesso, viene visualizzato il file **Panoramica** della pagina Adobe Admin Console.
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -66,7 +66,7 @@ Prima di poter gestire gli utenti del team con Admin Console, assicurati di pote
 
    ![Verifica degli amministratori](/help/journey-onboarding/assets/get-started2.png)
 
-1. Dopo aver fatto clic su **Amministratori** dalla scheda **Utenti**, puoi effettuare una ricerca inserendo e-mail, nome utente, nome o cognome associati all’Adobe ID.
+1. Dopo aver fatto clic su **Amministratori** dal **Utenti** , puoi effettuare una ricerca inserendo e-mail, nome utente, nome o cognome Adobe ID.
 
    ![Ricerca utenti](/help/journey-onboarding/assets/get-started3.png)
 
@@ -82,7 +82,7 @@ AEM as a Cloud Service è preconfigurato con Adobe Identity Management System (a
 
 Con IMS, AEM as a Cloud Service consolida l’esperienza di accesso tra AEM e Adobe Experience Cloud. Le organizzazioni con più prodotti Adobe possono trarre particolare vantaggio dalla creazione di gruppi basati su ruoli in Admin Console e dall’assegnazione dell’accesso a più prodotti, tra cui AEM as a Cloud Service, tramite IMS.
 
-Nella sezione successiva di questo percorso di onboarding troverai ulteriori informazioni sui profili di prodotto.
+Ulteriori informazioni sui profili di prodotto e sull’assegnazione degli utenti sono disponibili nella sezione successiva di questo percorso di onboarding.
 
 ## Contattare il supporto Adobe {#support}
 

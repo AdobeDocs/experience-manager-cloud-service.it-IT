@@ -2,9 +2,9 @@
 title: Abilitazione dell’esportazione JSON per un componente
 description: I componenti possono essere adattati per generare l’esportazione JSON dei contenuti in base a un framework modellatore.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '468'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ I componenti possono essere adattati per generare l’esportazione JSON dei cont
 
 L’esportazione JSON si basa su [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html), e sul [Esportatore modello Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (che si basa su [Annotazioni Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-Questo significa che il componente deve avere un modello Sling per esportare JSON. Pertanto, dovrai seguire questi due passaggi per abilitare l’esportazione JSON su qualsiasi componente.
+Questo significa che il componente deve avere un modello Sling per esportare JSON. Pertanto, segui questi due passaggi per abilitare l’esportazione JSON su qualsiasi componente.
 
 * [Definire un modello Sling per il componente](#define-a-sling-model-for-the-component)
 * [Annotare l’interfaccia del modello Sling](#annotate-the-sling-model-interface)

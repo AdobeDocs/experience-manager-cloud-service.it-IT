@@ -2,10 +2,10 @@
 title: Casella in entrata
 description: Scopri come utilizzare le notifiche che arrivano nella casella in entrata per gestire le attività.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 71%
+source-wordcount: '912'
+ht-degree: 97%
 
 ---
 
@@ -21,19 +21,19 @@ Puoi ricevere notifiche da diverse aree di AEM, inclusi flussi di lavoro e proge
       * Sono il prodotto dei passaggi **Partecipante** di un flusso di lavoro.
    * Elementi con errori, per consentire agli amministratori di ripetere il passaggio non riuscito
 
-Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visualizzarle e intervenire.
+Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visualizzarle e interagire con loro.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui tipi di elemento, vedere:
+>Per ulteriori informazioni sui tipi di elemento, consulta quanto segue:
 >
 >* [Progetti](/help/sites-cloud/authoring/projects/overview.md)
->* [Progetti - Utilizzo delle attività](/help/sites-cloud/authoring/projects/tasks.md)
+>* [Progetti: lavorare con le attività](/help/sites-cloud/authoring/projects/tasks.md)
 >* [Flussi di lavoro](/help/sites-cloud/authoring/workflows/overview.md)
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
 
-Da una qualsiasi delle console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può anche essere aperto per fornire un accesso rapido alle pagine che richiedono azioni o accesso alla casella in entrata:
+Da una qualsiasi console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può essere aperto anche per fornire un accesso rapido alle pagine che richiedono azioni o accesso alla casella in entrata:
 
 ![Panoramica della casella in entrata nell’intestazione](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -47,7 +47,7 @@ Per aprire la casella in entrata delle notifiche AEM:
 
 1. Tocca o fai clic sull’indicatore nella barra degli strumenti.
 
-1. Seleziona **Visualizza tutto**. Viene aperta la **Casella in entrata AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
+1. Seleziona **Visualizza tutto**. Il **Casella in entrata AEM** viene aperto. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
 1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).
 
    Per entrambe le viste puoi inoltre definire le [Impostazioni vista](#inbox-view-settings). Le opzioni disponibili dipendono dalla vista corrente.
@@ -95,7 +95,7 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
 * **Vista a elenco**
 
-  Per **Vista a elenco** puoi configurare il meccanismo di ordinamento:
+  Per **Vista a elenco** puoi configurare il metodo di ordinamento:
 
    * **Ordina per**
    * **Ordinamento**
@@ -132,17 +132,17 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni, vedi:
+   >Per ulteriori informazioni, consulta:
    >
    >* Elementi del flusso di lavoro - [Partecipazione ai flussi di lavoro](/help/sites-cloud/authoring/workflows/participating.md)
 
 2. A seconda dell’elemento selezionato, viene avviata un’azione, ad esempio:
 
-   * Viene aperta una finestra di dialogo appropriata per l&#39;azione
-   * Viene avviata una Action Wizard
+   * Viene aperta una finestra di dialogo appropriata per l’azione
+   * Viene avviata una procedura guidata per un’azione
    * Viene aperta una pagina della documentazione
 
-   Ad esempio, selezionando **Delega** viene aperta una finestra di dialogo:
+   Ad esempio: **Delega** apre una finestra di dialogo:
 
    ![Delega di un’attività della casella in entrata](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 
@@ -182,9 +182,9 @@ Dalla casella in entrata è possibile creare le attività:
 
 ## Creazione di un progetto  {#creating-a-project}
 
-Per alcune attività puoi creare un [Progetto](/help/sites-cloud/authoring/projects/overview.md) in base a tale attività:
+Per alcune attività puoi creare un [Progetto](/help/sites-cloud/authoring/projects/overview.md) in base all’attività in questione:
 
-1. Seleziona l’attività appropriata, toccando/facendo clic sulla miniatura.
+1. Seleziona l’attività appropriata, toccando o facendo clic sulla miniatura.
 
    >[!NOTE]
    >
@@ -193,7 +193,7 @@ Per alcune attività puoi creare un [Progetto](/help/sites-cloud/authoring/proje
    >Gli elementi di lavoro (di un flusso di lavoro) non possono essere utilizzati per creare un progetto.
 
 1. Dalla barra degli strumenti, seleziona **Crea progetto** per aprire la procedura guidata.
-1. Seleziona il modello appropriato, quindi **Successivo**.
+1. Seleziona il modello appropriato, quindi **Avanti**.
 1. Specifica le proprietà richieste:
 
    * **Base**
@@ -210,7 +210,7 @@ Per alcune attività puoi creare un [Progetto](/help/sites-cloud/authoring/proje
 
    >[!NOTE]
    >
-   >Consulta [Creazione di un progetto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) per informazioni complete.
+   >Consulta [Creazione di un progetto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) per ricevere informazioni complete.
 
 1. Seleziona **Crea** per confermare l’azione.
 
