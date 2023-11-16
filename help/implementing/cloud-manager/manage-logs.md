@@ -2,10 +2,10 @@
 title: Accesso e gestione dei registri
 description: Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 87%
+source-wordcount: '345'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ Dalla scheda **Ambienti** della pagina **Panoramica** o dalla pagina Dettagli de
 
 ## Download dei registri {#download-logs}
 
-Per scaricare i registri, effettua le seguenti operazioni.
+Per scaricare i registri, effettua le seguenti operazioni:
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
@@ -32,11 +32,17 @@ Per scaricare i registri, effettua le seguenti operazioni.
 
    ![Finestra di dialogo Scarica registri](assets/download-preview.png)
 
+   Nel caso [Aree geografiche di pubblicazione aggiuntive](/help/operations/additional-publish-regions.md) sono abilitati per il tuo ambiente, potrai selezionare ogni area geografica e scaricare i relativi registri separatamente, come mostrato di seguito:
+
+   ![Scarica registri per altre aree geografiche di pubblicazione](assets/download-publish-region-logs.png)
+
 1. Dopo aver selezionato il servizio, fai clic sull’icona accanto al registro che desideri recuperare per scaricarlo.
 
 È possibile accedere ai registri anche dalla pagina **Ambienti**.
 
 ![Registri dalla schermata Ambienti](assets/download-logs.png)
+
+
 
 ## Registri tramite API {#logs-through-api}
 

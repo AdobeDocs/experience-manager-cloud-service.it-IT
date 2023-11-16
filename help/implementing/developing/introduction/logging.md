@@ -2,10 +2,10 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
+source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 10%
+source-wordcount: '2757'
+ht-degree: 9%
 
 ---
 
@@ -556,6 +556,16 @@ I registri CDN sono distinti dagli altri registri in quanto sono conformi al for
 ### Ambienti cloud {#cloud-environments}
 
 È possibile accedere ai registri AEM as a Cloud Service per i servizi cloud scaricandoli tramite l’interfaccia di Cloud Manager oppure scaricandoli dalla riga di comando tramite l’interfaccia della riga di comando di Adobe I/O. Per ulteriori informazioni, vedere [Documentazione di registrazione di Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
+
+### Registri per aree geografiche di pubblicazione aggiuntive {#logs-for-additional-publish-regions}
+
+Se per un particolare ambiente sono abilitate le Aree geografiche di pubblicazione aggiuntive, i registri di ciascuna area saranno disponibili per il download da Cloud Manager, come indicato in precedenza.
+
+I registri AEM e i registri dispatcher per le aree geografiche di pubblicazione aggiuntive specificheranno la regione nelle prime 3 lettere successive all’ID ambiente, come esemplificato da **nld2** nel campione seguente, che fa riferimento a un’ulteriore istanza pubblicata dell’AEM situata nei Paesi Bassi:
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+```
 
 ### SDK locale {#local-sdk}
 

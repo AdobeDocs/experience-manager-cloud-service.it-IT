@@ -2,10 +2,10 @@
 title: Aree geografiche di pubblicazione aggiuntiva
 description: Scopri in che modo AEM as a Cloud Service supporta ulteriori aree geografiche di pubblicazione aggiuntiva per una maggiore disponibilità e una latenza ridotta.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
+source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 89%
+source-wordcount: '639'
+ht-degree: 84%
 
 ---
 
@@ -46,6 +46,10 @@ Come descritto nella sezione Considerazioni avanzate sulla rete di seguito, si c
 Quando un’area geografica di pubblicazione aggiuntiva è abilitata in un programma con rete avanzata già configurata, per impostazione predefinita il traffico nell’area geografica di pubblicazione aggiuntiva che corrisponde alle regole di rete avanzate passerà attraverso l’area geografica primaria. Al fine di sfruttare la maggiore disponibilità, si consiglia di abilitare la rete avanzata nelle aree geografiche aggiuntive.
 
 Consulta la sezione [Configurazione di rete avanzata per aree geografiche di pubblicazione aggiuntive](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) nella documentazione sulla rete avanzata per ottenere ulteriori informazioni, tra cui come aggiungere configurazioni di rete avanzate alle aree geografiche aggiuntive senza causare la perdita di connettività.
+
+## Registrazione {#logging}
+
+Se sono abilitate altre aree, tramite Cloud Manager saranno disponibili registri separati per ciascuna area. Per ulteriori informazioni, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) e [Registri per aree geografiche di pubblicazione aggiuntive](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## Limitazioni {#limitations}
 
