@@ -2,10 +2,10 @@
 title: Crea sito demo
 description: Crea un sito demo in AEM basato su una libreria di modelli preconfigurati.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 89%
+source-wordcount: '815'
+ht-degree: 72%
 
 ---
 
@@ -21,7 +21,7 @@ Nel precedente documento del percorso AEM Reference Demos Add-On, [Crea programm
 * Scopri come attivare AEM Reference Demos Add-On per il nuovo programma.
 * Puoi eseguire una pipeline per distribuire il contenuto aggiuntivo.
 
-Questo articolo descrive il passaggio successivo del processo di creazione di un nuovo sito o progetto AEM Screens in AEM basato sui modelli di AEM Reference Demos Add-On.
+Questo articolo descrive il passaggio successivo del processo di creazione di un sito o di un progetto AEM Screens nell’AEM in base ai modelli di AEM Reference Demos Add-On.
 
 ## Obiettivo {#objective}
 
@@ -35,23 +35,23 @@ Questo documento spiega come creare un sito basato sui modelli di AEM Reference 
 
 Una volta implementato AEM Reference Demos Add-On, la pipeline può accedere all’ambiente di authoring AEM per creare siti demo in base al contenuto aggiuntivo.
 
-1. Dalla pagina di panoramica del programma in Cloud Manager, tocca o fai clic sul collegamento all’ambiente di authoring AEM.
+1. Dalla pagina di panoramica del programma in Cloud Manager, seleziona il collegamento all’ambiente di authoring AEM.
 
    ![Accesso all’ambiente di authoring](assets/access-author.png)
 
-1. Dal menu principale dell’AEM, tocca o fai clic su **Sites**.
+1. Dal menu principale dell’AEM, seleziona **Sites**.
 
    ![Accedere a Sites](assets/access-sites.png)
 
-1. Dalla console Sites, tocca o fai clic su **Crea** in alto a destra dello schermo e seleziona **Sito da modello** nel menu a discesa.
+1. Dalla console Sites, seleziona **Crea** in alto a destra dello schermo e seleziona **Sito da modello** nel menu a discesa.
 
    ![Crea sito da modello](assets/create-site-from-template.png)
 
-1. Viene avviata la procedura guidata di creazione del sito. Nella colonna a sinistra puoi vedere i modelli demo distribuiti dalla pipeline nell’istanza di authoring. Tocca o fai clic su uno per selezionarlo e visualizzare i dettagli nella colonna a destra. Se desideri testare AEM Screens, assicurati di scegliere il **modello del sito We.Cafe**. Tocca o fai clic su **Avanti**.
+1. Viene avviata la procedura guidata di creazione del sito. Nella colonna a sinistra puoi vedere i modelli demo distribuiti dalla pipeline nell’istanza di authoring. Selezionane una per selezionarla e visualizzarne i dettagli nella colonna di destra. Se desideri testare AEM Screens, assicurati di scegliere la **Modello del sito We.Cafe**. Seleziona **Avanti**.
 
    ![Creazione guidata sito](assets/site-creation-wizard.png)
 
-1. Nella schermata successiva, specifica un titolo per il sito o il progetto Screens. Se omesso, puoi specificare un nome per il sito o generarlo dal titolo. Tocca o fai clic su **Crea**.
+1. Nella schermata successiva, specifica un titolo per il sito o il progetto Screens. Se omesso, puoi specificare un nome per il sito o generarlo dal titolo. Seleziona **Crea**.
 
    * Il titolo del sito viene visualizzato nella barra del titolo del browser.
    * Il nome del sito diventa parte dell’URL.
@@ -59,7 +59,7 @@ Una volta implementato AEM Reference Demos Add-On, la pipeline può accedere all
 
    ![Dettagli del sito](assets/site-details.png)
 
-1. La creazione del sito viene confermata con una finestra di dialogo. Tocca o fai clic su **Fine**.
+1. La creazione del sito viene confermata con una finestra di dialogo. Seleziona **Fine**.
 
    ![Creazione del sito completata](assets/site-creation-complete.png)
 
@@ -77,11 +77,11 @@ Una volta creato il sito demo, puoi navigarlo e utilizzarlo come qualsiasi altro
 
    ![Vista a colonne](assets/column-view.png)
 
-1. Tocca o fai clic sul sito per esplorarne la struttura e il contenuto. La vista a colonne si espande continuamente durante la navigazione nella struttura del contenuto del sito demo.
+1. Seleziona il sito per esplorarne struttura e contenuto. La vista a colonne si espande continuamente durante la navigazione nella struttura del contenuto del sito demo.
 
    ![Struttura sito](assets/site-structure.png)
 
-1. Tocca o fai clic su una pagina per selezionarla, quindi tocca o fai clic su **Modifica** nella barra degli strumenti.
+1. Seleziona una pagina per selezionarla, quindi seleziona **Modifica** nella barra degli strumenti.
 
    ![Selezionate la pagina](assets/select-page.png)
 
@@ -103,7 +103,7 @@ Adesso che hai completato questa parte del percorso di AEM Reference Demo Add-On
 
 Puoi testare le funzioni di AEM utilizzando il contenuto aggiuntivo. Sono disponibili due opzioni per continuare il percorso:
 
-* Se desideri una demo per testare completamente il contenuto di AEM Screens, assicurati di aver implementato un sito basato su **Modello del sito We.Cafe** come descritto in precedenza e continua tramite [Abilita AEM Screens per il tuo sito dimostrativo.](screens.md)
+* Se desideri una demo per testare completamente il contenuto di AEM Screens, assicurati di aver implementato un sito basato su **Modello del sito We.Cafe** come descritto in precedenza e continua con [Abilita AEM Screens per il tuo sito demo.](screens.md)
 * Se utilizzi solo contenuti demo di Sites, continua con [Gestire i siti demo,](manage.md) dove scopri gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
 
 ## Risorse aggiuntive {#additional-resources}

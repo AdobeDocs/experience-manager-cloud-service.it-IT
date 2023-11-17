@@ -4,10 +4,10 @@ description: Scopri come creare e sincronizzare Live Copy per riutilizzare i con
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4307'
-ht-degree: 99%
+source-wordcount: '4270'
+ht-degree: 95%
 
 ---
 
@@ -110,11 +110,11 @@ Per creare una Live Copy:
 
    ![Crea Live Copy](../assets/create-live-copy.png)
 
-1. Seleziona la pagina sorgente e tocca o fai clic su **Successivo**. Esempio:
+1. Seleziona la pagina sorgente, quindi seleziona **Successivo**. Esempio:
 
    ![Seleziona il sorgente della Live Copy](../assets/live-copy-from.png)
 
-1. Specifica il percorso di destinazione della Live Copy (apri la cartella/pagina genitore della Live Copy), quindi tocca o fai clic su **Successivo**.
+1. Specifica il percorso di destinazione della Live Copy (apri la cartella/pagina genitore della Live Copy), quindi seleziona **Successivo**.
 
    ![Seleziona la destinazione della Live Copy](../assets/live-copy-to.png)
 
@@ -135,7 +135,7 @@ Per creare una Live Copy:
    * Non selezionato: crea una Live Copy che include tutti i discendenti della pagina selezionata (Live Copy deep)
 
 1. (Facoltativo) Per specificare una o più configurazioni di rollout da utilizzare per la Live Copy, utilizza l&#39;elenco a discesa **Configurazioni di rollout** per selezionarli. Le configurazioni selezionate vengono mostrate sotto il menu a discesa.
-1. Tocca o fai clic su **Crea**. Verrà visualizzato un messaggio di conferma. Da qui puoi selezionare una delle seguenti opzioni, **Apri** o **Fine**.
+1. Seleziona **Crea**. Verrà visualizzato un messaggio di conferma. Da qui puoi selezionare una delle seguenti opzioni, **Apri** o **Fine**.
 
    >[!NOTE]
    >
@@ -169,9 +169,9 @@ Per creare una Live Copy di un sito da una configurazione blueprint:
 
    ![Crea sito da blueprint](../assets/create-site-from-blueprint.png)
 
-1. Utilizza il selettore **Lingue iniziali** per specificare la lingua o le lingue del sito blueprint da utilizzare per la Live Copy.
+1. Utilizza il **Lingue iniziali** per specificare le lingue del sito blueprint da utilizzare per la Live Copy.
 
-   Tutte le lingue disponibili sono selezionate per impostazione predefinita. Per rimuovere una lingua, tocca o fai clic sul pulsante **X** accanto alla lingua.
+   Tutte le lingue disponibili sono selezionate per impostazione predefinita. Per rimuovere una lingua, selezionare **X** che viene visualizzato accanto alla lingua.
 
    Esempio:
 
@@ -217,7 +217,7 @@ Le pagine blueprint (a cui si fa riferimento in una configurazione blueprint) ti
 
 ## Sincronizzazione della Live Copy {#synchronizing-your-live-copy}
 
-Esistono diversi modi per sincronizzare la tua Live Copy.
+Esistono diversi modi per sincronizzare la Live Copy.
 
 ### Rollout di una blueprint {#rolling-out-a-blueprint}
 
@@ -252,7 +252,7 @@ I rollout vengono elaborati come processi asincroni e possono essere controllati
 1. Nella console **Sites** seleziona la pagina nella Live Copy e apri il pannello **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (dalla barra degli strumenti).
 1. Seleziona l&#39;opzione **Blueprint** dall’elenco, per visualizzare le blueprint associate a questa pagina.
 1. Seleziona la blueprint desiderata dall’elenco.
-1. Tocca o fai clic su **Rollout**.
+1. Seleziona **Rollout**.
 
    ![Rollout di una blueprint dalla barra dei riferimenti](../assets/rollout-blueprint-from-references.png)
 
@@ -305,7 +305,7 @@ Sincronizza una Live Copy per richiamare le modifiche dall’origine alla Live C
 
 1. Nella console **Sites**, seleziona la pagina Live Copy e apri le proprietà.
 1. Apri la scheda **Live Copy.**
-1. Tocca o fai clic su **Sincronizza**.
+1. Seleziona **Sincronizza**.
 
    ![Pulsante Sincronizza](../assets/synchronize.png)
 
@@ -368,7 +368,7 @@ Puoi sospendere l’ereditarietà della Live Copy per una pagina Live Copy in mo
 Per sospendere l’ereditarietà su una pagina:
 
 1. Apri le proprietà della pagina Live Copy utilizzando il comando **Visualizza proprietà** della console **Sites** oppure utilizzando **Informazioni pagina** sulla barra degli strumenti della pagina.
-1. Tocca o fai clic sulla scheda **Live Copy**.
+1. Apri la scheda **Live Copy**.
 1. Seleziona **Sospendi** nella barra degli strumenti. Puoi quindi selezionare:
 
    * **Sospendi**: per sospendere solo la pagina corrente.
@@ -451,7 +451,7 @@ Su una Live Copy esistente è possibile modificare la profondità di una pagina,
 Per specificare o modificare la profondità:
 
 1. Apri le proprietà della pagina Live Copy utilizzando il comando **Visualizza proprietà** della console **Sites** o utilizzando **Informazioni pagina** sulla barra degli strumenti.
-1. Tocca o fai clic sulla scheda **Live Copy**.
+1. Apri la scheda **Live Copy**.
 1. Nella sezione **Configurazione** imposta o cancella l&#39;opzione **Ereditarietà Live Copy** a seconda che le pagine figlie siano incluse o meno:
 
    * Spunta: una Live Copy deep (le pagine figlie sono incluse)
@@ -463,7 +463,7 @@ Per specificare o modificare la profondità:
    >
    >Vedi [Live Copy - Composizione](overview.md#live-copies-composition) per ulteriori informazioni.
 
-1. Tocca o fai clic su **Salva** per mantenere gli aggiornamenti.
+1. Seleziona **Salva** per mantenere gli aggiornamenti.
 
 ### Annullamento dell’ereditarietà di un componente {#cancelling-inheritance-for-a-component}
 
@@ -475,11 +475,11 @@ Annulla l’ereditarietà Live Copy per un componente in modo che non venga più
 
 Annulla l&#39;ereditarietà per modificare il contenuto o eliminare il componente:
 
-1. Tocca o fai clic il componente per il quale desideri annullare l&#39;ereditarietà.
+1. Seleziona il componente per il quale desideri annullare l’ereditarietà.
 
    ![Ereditarietà nella barra degli strumenti del componente](../assets/inheritance-toolbar.png)
 
-1. Nella barra degli strumenti del componente, tocca o fai clic sull&#39;icona **Annulla ereditarietà**.
+1. Sulla barra degli strumenti del componente, seleziona **Annulla ereditarietà** icona.
 
    ![Icona Annulla ereditarietà](../assets/cancel-inheritance-icon.png)
 
@@ -489,7 +489,7 @@ Annulla l&#39;ereditarietà per modificare il contenuto o eliminare il component
 
 ### Riabilitazione dell’ereditarietà per un componente {#re-enabling-inheritance-for-a-component}
 
-Per abilitare l’ereditarietà di un componente, tocca o fai clic sull&#39;icona **Riabilita ereditarietà** sulla barra degli strumenti del componente.
+Per abilitare l’ereditarietà di un componente, seleziona la **Riabilita ereditarietà** sulla barra degli strumenti del componente.
 
 ![Icona Riabilita ereditarietà](../assets/re-enable-inheritance-icon.png)
 
@@ -530,15 +530,15 @@ In seguito puoi riabilitare l’ereditarietà per una proprietà, se necessario.
 >Quando riabiliti l’ereditarietà, la proprietà della pagina Live Copy non viene sincronizzata automaticamente con la proprietà sorgente. Se necessario, è possibile richiedere manualmente una sincronizzazione.
 
 1. Apri le proprietà della pagina Live Copy utilizzando l&#39;opzione **Visualizza proprietà** nella console **Sites** o **Informazioni pagina** sulla barra degli strumenti.
-1. Per annullare l’ereditarietà di una proprietà, tocca o fai clic sull’icona di collegamento visualizzata a destra della proprietà.
+1. Per annullare l’ereditarietà di una proprietà, seleziona l’icona di collegamento visualizzata a destra della proprietà.
 
    ![Pulsante Annulla ereditarietà](../assets/cancel-inheritance-button.png)
 
-1. Nella finestra di dialogo di conferma **Annulla ereditarietà**, fai clic o tocca **Sì**.
+1. In **Annulla ereditarietà** finestra di dialogo di conferma, seleziona **Sì**.
 
 ### Ripristinare le proprietà di una pagina Live Copy {#revert-properties-of-a-live-copy-page}
 
-Per abilitare l’ereditarietà di una proprietà, tocca o fai clic sull’icona **Ripristina ereditarietà** visualizzata accanto alla proprietà.
+Per abilitare l’ereditarietà di una proprietà, seleziona la **Ripristina ereditarietà** accanto alla proprietà.
 
 ![Pulsante Ripristina ereditarietà](../assets/revert-inheritance-button.png)
 
@@ -635,7 +635,7 @@ Ci sono implicazioni relative a dove utilizzi **Scollega** all’interno dell’
 
 Per scollegare una Live Copy:
 
-1. Nella console **Sites**, seleziona la pagina Live Copy e tocca, o fai clic, su **Visualizza proprietà**.
+1. Nella console **Sites**, seleziona la pagina Live Copy e seleziona **Visualizza proprietà**.
 1. Apri la scheda **Live Copy.**
 1. Sulla barra degli strumenti, seleziona **Scollega**.
 

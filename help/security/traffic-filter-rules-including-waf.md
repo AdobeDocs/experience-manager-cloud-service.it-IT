@@ -2,9 +2,9 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3435'
 ht-degree: 97%
 
 ---
@@ -113,8 +113,8 @@ Il parametro `kind` deve essere impostato su `CDN` e la versione deve essere imp
 
 1. Per tipi di ambiente diversi da RDE, crea una pipeline di configurazione della distribuzione mirata in Cloud Manager.
 
-   * [Consulta questo documento per le pipeline di produzione.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [Consulta questo documento per le pipeline non di produzione.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [Consulta Configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [Consulta Configurazione delle pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 Per gli RDE verrà utilizzata la riga di comando, ma al momento RDE non è supportato.
 
@@ -588,7 +588,7 @@ Gli strumenti della dashboard possono essere clonati direttamente dall’archivi
 
 ## Regole iniziali consigliate {#recommended-starter-rules}
 
-Puoi copiare le regole consigliate di seguito nel tuo `cdn.yaml` per iniziare. Inizia in modalità registro, analizza il traffico e, quando il risultato è soddisfacente, passa alla modalità blocco. Puoi modificare le regole in base alle caratteristiche specifiche del traffico live del tuo sito Web.
+Puoi copiare le regole consigliate di seguito nel tuo `cdn.yaml` per iniziare. Inizia in modalità registro, analizza il traffico e, quando il risultato è soddisfacente, passa alla modalità blocco. Puoi modificare le regole in base alle caratteristiche univoche del traffico live del sito web.
 
 ```
 kind: "CDN"

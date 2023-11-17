@@ -2,9 +2,9 @@
 title: Sviluppo locale AEM con Universal Editor
 description: Scopri in che modo Universal Editor supporta la modifica sulle istanze AEM locali a scopo di sviluppo.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Il servizio Universal Editor è ciò che lega Universal Editor e il sistema di b
 
 [NodeJS versione 16](https://nodejs.org/en/download/releases) è necessario per eseguire una copia locale del servizio Universal Editor
 
-Il servizio Universal Editor viene distribuito direttamente dal team ingegneristico AEM. per una copia locale, contattare il contatto tecnico del programma VIP.
+Il servizio Universal Editor viene distribuito direttamente dal team ingegneristico AEM. Contatta il tuo tecnico nel programma VIP per una copia locale.
 
 Il team tecnico fornirà una `universal-editor-service.cjs` file. Salva nell’ambiente di sviluppo locale.
 

@@ -2,10 +2,10 @@
 title: Casella in entrata
 description: Scopri come utilizzare le notifiche che arrivano nella casella in entrata per gestire le attività.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 97%
+source-wordcount: '910'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Puoi ricevere notifiche da diverse aree di AEM, inclusi flussi di lavoro e proge
       * Sono il prodotto dei passaggi **Partecipante** di un flusso di lavoro.
    * Elementi con errori, per consentire agli amministratori di ripetere il passaggio non riuscito
 
-Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visualizzarle e interagire con loro.
+Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visualizzarle e agire di conseguenza.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Da una qualsiasi console, il numero corrente di elementi nella casella in entrat
 
 Per aprire la casella in entrata delle notifiche AEM:
 
-1. Tocca o fai clic sull’indicatore nella barra degli strumenti.
+1. Seleziona l’indicatore nella barra degli strumenti.
 
 1. Seleziona **Visualizza tutto**. Il **Casella in entrata AEM** viene aperto. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
 1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).

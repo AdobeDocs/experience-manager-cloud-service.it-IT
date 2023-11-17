@@ -2,10 +2,10 @@
 title: Progetti
 description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso ne semplifica la gestione
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1255'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Dalla console Progetti è possibile accedere e gestire i tuoi progetti in AEM.
 ![Console Progetti](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Seleziona **Timeline** e quindi un progetto per visualizzarne la relativa timeline.
-* Tocca o fai clic su **Seleziona** per accedere alla modalità di selezione.
+* Seleziona **Seleziona** per accedere alla modalità di selezione.
 * Fai clic su **Crea** per aggiungere progetti.
 * **Mostra/Nascondi progetti attivi** consente di passare da tutti i progetti a solo quelli che sono attivi.
 * **Mostra vista statistiche** consente di visualizzare le statistiche del progetto relative al completamento delle attività.
@@ -178,4 +178,4 @@ Tutti i progetti supportano i seguenti ruoli predefiniti che consentono di ammin
 
 >[!NOTE]
 >
->Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. Un amministratore deve eliminare manualmente i gruppi da **Strumenti** > **Protezione** > **Gruppi**.
+>Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. Un amministratore deve eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.

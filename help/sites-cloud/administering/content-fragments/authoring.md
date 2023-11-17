@@ -4,9 +4,9 @@ description: Scopri come creare contenuti per i frammenti di contenuto, quindi c
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2251'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
    * nel **Proprietà** è possibile aggiornare la scheda **Titolo** e **Descrizione** per il frammento, oppure **Variante**
 * pannello centrale: mostra i campi e il contenuto effettivi della variante selezionata
    * consente di modificare il contenuto
-   * se **Segnaposto scheda** I campi sono definiti all’interno del modello che vengono visualizzati qui e possono essere utilizzati per la navigazione; verranno presentati in orizzontale o come elenco a discesa
+   * se **Segnaposto scheda** I campi sono definiti all’interno del modello che vengono visualizzati qui e possono essere utilizzati per la navigazione; verranno presentati in orizzontale o come elenco a discesa.
 
 ![Editor frammenti di contenuto: panoramica](assets/cf-authoring-overview.png)
 
@@ -345,7 +345,7 @@ Nella scheda delle proprietà (pannello a destra) puoi anche modificare:
 
 * **Titolo**
 * **Descrizione**
-* **Tag**: utilizzando il menu a discesa o la finestra di dialogo per selezione
+* **Tag**: utilizzando l’elenco a discesa o la finestra di dialogo per selezione
 
   ![Editor frammento di contenuto - Gestisci tag](assets/cf-authoring-edit-tags.png)
 
@@ -399,7 +399,7 @@ L’editor dei frammenti di contenuto offre agli autori la possibilità di visua
 Per utilizzare questa funzione, devi innanzitutto:
 
 * Collabora con il tuo team IT per configurare l’applicazione front-end esterna che eseguirà il rendering del frammento di contenuto consumando il relativo output JSON.
-* Una volta configurata l&#39;applicazione front-end esterna, **Pattern URL anteprima predefinito** deve essere definito come [proprietà del modello per frammenti di contenuto appropriato](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* Quando si configura l&#39;applicazione front-end esterna, **Pattern URL anteprima predefinito** deve essere definito come [proprietà del modello per frammenti di contenuto appropriato](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
 
 Una volta definito l’URL, il **Anteprima** è attivo. Puoi selezionare questo pulsante per avviare l’applicazione esterna (in una scheda separata) per eseguire il rendering del frammento di contenuto.
 
@@ -475,8 +475,6 @@ Il **Campi** nel pannello sono elencati tutti i campi all’interno del framment
 </table>
 
 ## Buono a sapersi {#good-to-know}
-
-Inoltre:
 
 * Per modificare un frammento di contenuto è necessario [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
 

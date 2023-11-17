@@ -2,10 +2,10 @@
 title: Aggiunta di un record TXT
 description: Scopri come aggiungere un record TXT per l’aggiunta di un nome di dominio personalizzato in Cloud Manager.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '329'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 97%
 
 ---
 
@@ -46,4 +46,4 @@ dig TXT _aemverification.example.com -t txt
 
 >[!TIP]
 >
->Sono disponibili diversi [strumenti di ricerca DNS](https://www.ultratools.com/tools/dnsLookup). Puoi utilizzare Google DoH per cercare voci di record TXT e identificare se un record TXT risulta mancante o errato.
+>Ce ne sono diversi [Strumenti di ricerca DNS](https://www.ultratools.com/tools/dnsLookup) disponibile. Puoi utilizzare Google DoH per cercare voci di record TXT e identificare se un record TXT risulta mancante o errato.

@@ -2,10 +2,10 @@
 title: Ripristino del contenuto in AEM as a Cloud Service
 description: Scopri come ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 71%
+source-wordcount: '1158'
+ht-degree: 60%
 
 ---
 
@@ -21,7 +21,7 @@ Scopri come ripristinare il contenuto di AEM as a Cloud Service dal backup utili
 >* La funzione è disponibile solo negli ambienti di sviluppo.
 >* Il ripristino dei contenuti è limitato a due al mese per programma.
 >
->Per informazioni dettagliate sul sistema di backup e ripristino esistente per AEM as a Cloud Service, consultare il documento [Backup e ripristino in AEM as a Cloud Service](/help/operations/backup.md)
+>Per informazioni dettagliate sul sistema di backup e ripristino esistente per AEM as a Cloud Service, vedere [Backup e ripristino in AEM as a Cloud Service](/help/operations/backup.md).
 
 ## Panoramica {#overview}
 
@@ -58,7 +58,7 @@ Determina innanzitutto l’intervallo di tempo del contenuto da ripristinare. Qu
 
    * In alternativa, puoi passare direttamente alla scheda **Ripristina contenuto** dalla pagina dei dettagli di un ambiente specifico.
 
-1. Nella scheda **Ripristina contenuto** della pagina dei dettagli dell’ambiente, seleziona innanzitutto l’arco temporale del ripristino nel menu a discesa **Tempo di ripristino**.
+1. Il giorno **Ripristina contenuto** della pagina dei dettagli dell’ambiente, seleziona innanzitutto l’intervallo di tempo del ripristino in **Tempo di ripristino** elenco a discesa.
 
    1. Se si seleziona **Ultime 24 ore** il vicino **Ora** Questo campo consente di specificare l’ora esatta entro le ultime 24 ore da ripristinare.
 
@@ -72,13 +72,13 @@ Determina innanzitutto l’intervallo di tempo del contenuto da ripristinare. Qu
 
    ![Backup disponibili](assets/backup-available.png)
 
-1. Quando [scegli il backup](#choosing-the-right-backup) da ripristinare, utilizza l’icona delle informazioni per visualizzare informazioni relative alla versione del codice e di AEM incluse nel backup e valuta le implicazioni del ripristino.
+1. Trova il backup da ripristinare utilizzando l’icona delle informazioni per visualizzare informazioni relative alla versione del codice e dell’AEM incluse nel backup e valuta le implicazioni di un ripristino quando [scelta del backup.](#choosing-the-right-backup)
 
    ![Informazioni sul backup](assets/backup-info.png)
 
-   * Tieni presente che la marca temporale visualizzata per le opzioni di ripristino si basa sul fuso orario del computer dell’utente.
+   * La marca temporale visualizzata per le opzioni di ripristino si basa sul fuso orario del computer dell&#39;utente.
 
-1. Per avviare il processo di ripristino, fai clic sull’icona **Ripristina** a destra della riga del backup da ripristinare.
+1. Fai clic su **Ripristina** a destra della riga che rappresenta il backup da ripristinare per avviare il processo di ripristino.
 
 1. Rivedi i dettagli nella finestra di dialogo **Ripristina contenuto**, quindi conferma la richiesta facendo clic su **Ripristina**.
 
@@ -103,7 +103,7 @@ Sono possibili diversi scenari.
    * In questo caso, non verrà visualizzato un ID impegno.
    * È fortemente consigliato di clonare entrambi gli archivi e utilizzare uno strumento di differenze per confrontare i rami.
 
-Inoltre, è da tenere presente che un ripristino potrebbe causare la mancata sincronizzazione degli ambienti di produzione e pre-produzione. Le conseguenze del ripristino dei contenuti sono di tua responsabilità.
+Inoltre, ricorda che un ripristino potrebbe causare la mancata sincronizzazione degli ambienti di produzione e di staging. Le conseguenze del ripristino dei contenuti sono di tua responsabilità.
 
 ## Attività di ripristino {#restore-activity}
 

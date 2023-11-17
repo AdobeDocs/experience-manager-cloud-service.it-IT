@@ -2,10 +2,10 @@
 title: Modelli di pagina
 description: I Modelli di pagina vengono utilizzati durante la creazione di una pagina utilizzata come base per la nuova pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3287'
-ht-degree: 8%
+source-wordcount: '3279'
+ht-degree: 7%
 
 ---
 
@@ -40,7 +40,7 @@ Questo documento:
 
 La creazione di modelli di pagina viene eseguita principalmente con [console modelli ed editor modelli](/help/sites-cloud/authoring/features/templates.md) da un autore di modelli. Questa sezione offre una panoramica di questo processo e segue con una descrizione di ciò che accade a livello tecnico.
 
-Quando viene creato un nuovo modello modificabile:
+Quando crei un modello modificabile:
 
 1. Creare un [cartella per i modelli](#template-folders). Questo non è obbligatorio, ma è una best practice consigliata.
 1. Seleziona un [tipo di modello](#template-type). Viene copiato per creare [definizione modello](#template-definitions).
@@ -191,13 +191,13 @@ Per creare una cartella, puoi effettuare le seguenti operazioni:
 
 1. Oltre alle autorizzazioni e ai privilegi di authoring standard (ad esempio, `content-authors`) ora devi assegnare i gruppi e definire i diritti di accesso (ACL) necessari affinché gli autori possano creare modelli nella nuova cartella.
 
-   Il `template-authors` gruppo è il gruppo predefinito da assegnare. Consulta la sezione [ACL e gruppi](#acls-and-groups) per i dettagli.
+   Il `template-authors` gruppo è il gruppo predefinito che deve essere assegnato. Consulta la sezione [ACL e gruppi](#acls-and-groups) per i dettagli.
 
    <!--See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.-->
 
 ### Utilizzo del browser configurazioni {#using-the-configuration-browser}
 
-1. Vai a **Navigazione globale** -> **Strumenti** > [**Browser configurazioni**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. Vai a **Navigazione globale** > **Strumenti** > [**Browser configurazioni**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    Le cartelle esistenti sono elencate a sinistra, incluso `global` cartella.
 
@@ -289,9 +289,9 @@ Questa impostazione predefinita `template-authors` il gruppo copre solo le impos
 
 ## Tipo di modello {#template-type}
 
-Quando si crea un nuovo modello, è necessario specificare un tipo di modello:
+Durante la creazione di un modello è necessario specificare un tipo di modello:
 
-* I tipi di modello forniscono in modo efficace i modelli per un modello. Durante la creazione di un nuovo modello, per creare il nuovo modello vengono utilizzati la struttura e il contenuto iniziale del tipo di modello selezionato.
+* I tipi di modello forniscono in modo efficace i modelli per un modello. Durante la creazione di un modello, per creare il nuovo modello vengono utilizzati la struttura e il contenuto iniziale del tipo di modello selezionato.
 
    * Il tipo di modello viene copiato per creare il modello.
    * Una volta eseguita la copia, l&#39;unica connessione tra il modello e il tipo di modello è un riferimento statico a scopo informativo.
@@ -338,7 +338,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >
@@ -432,7 +432,7 @@ Questo nodo contiene le proprietà per il modello:
 
 Definisce la struttura della pagina risultante:
 
-* Viene unito al contenuto iniziale ( `/initial`) durante la creazione di una nuova pagina.
+* Viene unito al contenuto iniziale ( `/initial`) durante la creazione di una pagina.
 * Le modifiche apportate alla struttura vengono applicate a tutte le pagine create con il modello.
 * Il `root` ( `structure/jcr:content/root`) definisce l’elenco dei componenti disponibili nella pagina risultante.
    * I componenti definiti nella struttura del modello non possono essere spostati o eliminati dalle pagine risultanti.
@@ -446,7 +446,7 @@ Definisce la struttura della pagina risultante:
 Definisce il contenuto iniziale di una nuova pagina al momento della creazione:
 
 * Contiene un `jcr:content` che viene copiato in qualsiasi nuova pagina.
-* Viene unito alla struttura ( `/structure`) durante la creazione di una nuova pagina.
+* Viene unito alla struttura ( `/structure`) durante la creazione di una pagina.
 * Le pagine esistenti non verranno aggiornate se il contenuto iniziale viene modificato dopo la creazione.
 * Il `root` node contiene un elenco di componenti per definire ciò che è disponibile nella pagina risultante.
 * Se il contenuto viene aggiunto a un componente in modalità struttura e successivamente viene sbloccato (o viceversa), tale contenuto viene utilizzato come contenuto iniziale.
@@ -545,7 +545,7 @@ Durante il rendering di una pagina:
 
 ### Disponibilità dei modelli {#template-availability}
 
-Quando si crea una nuova pagina nell’interfaccia di amministrazione del sito, l’elenco dei modelli disponibili dipende dalla posizione della nuova pagina e dalle restrizioni sul posizionamento specificate in ciascun modello.
+Durante la creazione di una pagina nell’interfaccia di amministrazione del sito, l’elenco dei modelli disponibili dipende dalla posizione della nuova pagina e dalle restrizioni sul posizionamento specificate in ciascun modello.
 
 Le seguenti proprietà determinano se un modello `T` può essere utilizzata per inserire una nuova pagina come pagina figlia di `P`. Ciascuna di queste proprietà è una stringa con più valori contenente zero o più espressioni regolari utilizzate per la corrispondenza con i percorsi:
 

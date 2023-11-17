@@ -2,10 +2,10 @@
 title: Sistema di stili
 description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 98%
+source-wordcount: '1317'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ In questo modo si elimina la necessità di sviluppare un componente personalizza
 
 ## Caso d’uso  {#use-case}
 
-Gli autori di modelli non solo hanno bisogno della possibilità di configurare il funzionamento dei componenti per gli autori di contenuto, ma anche una serie di varianti visive alternative di un componente.
+Gli autori di modelli devono poter configurare non solo il funzionamento dei componenti per gli autori di contenuto, ma anche diverse varianti visive alternative di un componente.
 
 Allo stesso modo, gli autori dei contenuti non solo devono poter strutturare e organizzare i contenuti, ma anche selezionare come presentarli visivamente.
 
@@ -63,7 +63,7 @@ Le sezioni seguenti, [Autore di contenuti](#as-a-content-author) e [Autore di mo
 Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le seguenti operazioni:
 
 1. Installa il CSS come librerie client, come descritto nella sezione [Panoramica](#overview).
-1. Configura le classi CSS da rendere disponibili agli autori di contenuti, come descritto nella sezione [Autore di modelli](#as-a-template-author).
+1. Configura le classi CSS che desideri rendere disponibili agli autori di contenuto come descritto nella sezione [Autore di modelli](#as-a-template-author).
 1. Gli autori di contenuti possono quindi utilizzare gli stili come descritto nella sezione [Autore di contenuti](#as-a-content-author).
 
 ### Autore di contenuti  {#as-a-content-author}
@@ -73,7 +73,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
    ![Sistema di stili per l’autore](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Tocca o fai clic sul pulsante **Stili** nella barra degli strumenti del componente **Elenco** per aprire il menu degli stili e modificare l’aspetto del componente.
+1. Seleziona la **Stili** sulla barra degli strumenti del **Elenco** per aprire il menu degli stili e modificare l&#39;aspetto del componente.
 
    ![Selezione degli stili](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -83,7 +83,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 ### Autore di modelli  {#as-a-template-author}
 
-1. Durante la modifica della pagina mastro in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifica il modello di pagina da **Informazioni pagina > Modifica modello**.
+1. Durante la modifica della pagina mastro in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifica il modello della pagina tramite **Informazioni pagina > Modifica modello**.
 
    ![Modifica modello](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -159,4 +159,4 @@ Evita di definire i nomi di elementi per gli stili che possono essere combinati.
 
 Questa capacità di definire i nomi degli stili è utile per i componenti molto generici, come Contenitore di layout o il componente Frammento di contenuto, al fine di attribuire loro un significato aggiuntivo.
 
-Ad esempio, consente di attribuire a un Contenitore di layout semantiche come `<main>`, `<aside>`, `<nav>` e così via.
+Ad esempio, consente di attribuire a un Contenitore di layout semantiche come `<main>`, `<aside>`, `<nav>`e così via.

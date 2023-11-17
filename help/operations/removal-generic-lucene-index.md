@@ -2,9 +2,9 @@
 title: Rimozione indice Lucene generico
 description: Scopri la rimozione pianificata degli indici Lucene generici e come potrebbe esserne interessato.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ## Dipendenze potenziali dagli indici Lucene generici {#potential-dependencies}
 
-In diverse aree le applicazioni e le installazioni AEM possono dipendere da indici Lucene generici sia nelle istanze di authoring che in quelle di pubblicazione.
+Esistono diverse aree in cui le applicazioni e le installazioni AEM possono dipendere da indici Lucene generici sia sulle istanze di authoring che su quelle di pubblicazione.
 
 ### Istanza di pubblicazione {#publish-instance}
 

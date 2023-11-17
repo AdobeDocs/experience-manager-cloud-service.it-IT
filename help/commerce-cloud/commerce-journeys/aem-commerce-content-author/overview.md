@@ -2,10 +2,10 @@
 title: Percorso di authoring dei contenuti in AEM Commerce
 description: Inizia qui un percorso guidato di authoring in AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 91%
+source-wordcount: '453'
+ht-degree: 81%
 
 ---
 
@@ -25,7 +25,7 @@ Questa guida illustra gli argomenti più importanti sui temi relativi all’auth
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 
-[Un percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e forse complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente di AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
+[Un Percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente dell’AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o dell’AEM.
 
 I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti dei clienti.
 
@@ -35,7 +35,7 @@ Se desideri sapere come Adobe consiglia di risolvere i casi aziendali relativi a
 
 Questo percorso è progettato per l’authoring di contenuti in AEM Commerce. Questo percorso descrive i requisiti, le fasi e l’approccio per iniziare a gestire le pagine di catalogo, i modelli e le esperienze dei prodotti complete.
 
-Le informazioni in questo percorso possono ovviamente essere utili ad altri utenti, ma alcune sono superflue per alcuni ruoli. Rimani sintonizzato per i prossimi percorsi che includeranno ruoli aggiuntivi.
+Le informazioni in questo percorso possono essere utili ad altri utenti tipo, ma alcune sono superflue per alcuni ruoli. Rimani sintonizzato per i prossimi percorsi che includeranno ruoli aggiuntivi.
 
 ## Il percorso {#the-journey}
 

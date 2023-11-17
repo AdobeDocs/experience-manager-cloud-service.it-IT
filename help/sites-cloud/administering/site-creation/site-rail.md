@@ -4,10 +4,10 @@ description: Scopri le potenti funzioni della barra Sito per personalizzare e ge
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 95%
+source-wordcount: '583'
+ht-degree: 81%
 
 ---
 
@@ -38,7 +38,7 @@ Con la barra Sito visualizzata nella console Sites, seleziona la pagina principa
 
 ![Scarica origini tema](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Tocca o fai clic su **Scarica origini tema** per scaricare una copia locale del tema del sito come file `.zip` a scopo di personalizzazione.
+Seleziona **Scarica origini tema** per scaricare una copia locale del tema del sito come `.zip` file per scopi di personalizzazione.
 
 ## Scaricare le risorse dei modelli {#downloading-template-resources}
 
@@ -48,7 +48,7 @@ Se il sito è basato su un modello, con la barra Sito visualizzata nella console
 
 ![Scarica origini tema](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Tocca o fai clic sul pulsante o sui pulsanti sotto l’intestazione **Scarica risorse aggiuntive dei modelli** per scaricare una copia locale dei file disponibili.
+Seleziona il pulsante o i pulsanti sotto l’intestazione **Scarica risorse aggiuntive dei modelli** per scaricare una copia locale dei file disponibili.
 
 ## Visualizzazione e modifica delle versioni dei temi {#them-versions}
 
@@ -60,11 +60,11 @@ Con la barra Sito visualizzata nella console Sites, seleziona la pagina principa
 
 La versione corrente del tema viene visualizzata con il relativo hash di commit e la marca temporale dell’ultimo aggiornamento.
 
-Tocca o fai clic su **Seleziona versione** per visualizzare le versioni precedenti del tema.
+Seleziona **Seleziona versione** per visualizzare le versioni precedenti del tema.
 
 ![Seleziona versione tema](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Tocca o fai clic sulla nuova versione che desideri applicare in sostituzione, quindi tocca o fai clic su **Applica** per apportare il cambiamento.
+Seleziona la versione da modificare, quindi fai clic su **Applica** per apportare la modifica.
 
 Se AEM rileva che una versione più recente del tema è stata distribuita tramite la pipeline front-end ma non applicata al sito, viene visualizzata un’icona di notifica.
 
@@ -78,7 +78,7 @@ Se il sito non è stato creato utilizzando un modello, non è possibile utilizza
 
 Tuttavia, puoi abilitare la pipeline front-end per il sito utilizzando la barra Sito.
 
-Con la barra Sito visualizzata nella console Sites, seleziona la directory principale del sito per visualizzare informazioni sul tema, quindi tocca o fai clic su **Abilita pipeline front-end**.
+Con la barra Sito visualizzata nella console Sites, seleziona la pagina principale del sito per visualizzare informazioni sul tema, quindi seleziona **Abilita pipeline front-end**.
 
 ![Abilitazione pipeline front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 

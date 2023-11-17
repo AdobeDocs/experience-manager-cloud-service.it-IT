@@ -1,9 +1,10 @@
 ---
 title: Utilizzo del trasformatore di contenuti
 description: Scopri come trasformare la struttura dei contenuti in preparazione alla migrazione a AEM as a Cloud Service.
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '642'
 ht-degree: 2%
 
 ---
@@ -62,7 +63,7 @@ Il Content Transformer è fornito con [Strumento Content Transfer](/help/journey
    >[!NOTE]
    > Qualsiasi operazione che può modificare il contenuto sorgente (`move`/`remove`/`rename`) per impostazione predefinita crea un pacchetto di backup dei percorsi sorgente in `/etc/packages/content-transformation` prima della trasformazione. Sebbene ogni finestra di dialogo delle operazioni disponga di un’opzione per disabilitare/abilitare la creazione dei pacchetti di backup, si consiglia rigorosamente di selezionare sempre l’opzione per abilitare la creazione dei pacchetti.
 
-1. Di seguito è riportato un esempio di pacchetto di backup creato per l’operazione di spostamento dei percorsi. Fai clic su Installa per ripristinare i percorsi sorgente. Si noti che l&#39;installazione riporterà solo i percorsi sorgente nella posizione originale e non eliminerà i percorsi in cui sono stati spostati durante la trasformazione. Per eliminare i percorsi nella posizione spostata, fate clic su **Aggiungi percorsi** per aggiungere la posizione (ad esempio `/etc/packages/content-transformation/paths`), seleziona il percorso e fai clic su **Rimuovi**.
+1. Di seguito è riportato un esempio di pacchetto di backup creato per l’operazione di spostamento dei percorsi. Fai clic su Installa per ripristinare i percorsi sorgente. L’installazione riporta solo i percorsi sorgente nella posizione originale e non elimina i percorsi in cui sono stati spostati durante la trasformazione. Per eliminare i percorsi nella posizione spostata, fate clic su **Aggiungi percorsi** per aggiungere la posizione (ad esempio `/etc/packages/content-transformation/paths`), seleziona il percorso e fai clic su **Rimuovi**.
 
    >[!CAUTION]
    > Non eliminare `/etc/packages/content-transformation` poiché è la posizione in cui risiedono i pacchetti di backup. Solo quando sei sicuro di non aver più bisogno di questi pacchetti, puoi eliminare questa posizione per ridurre le dimensioni dell’archivio.

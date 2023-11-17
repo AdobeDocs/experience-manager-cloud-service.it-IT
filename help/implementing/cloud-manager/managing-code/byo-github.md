@@ -2,10 +2,10 @@
 title: Utilizzo degli archivi GitHub in Cloud Manager
 description: Scopri come configurare Cloud Manager per l’utilizzo degli archivi GitHub.
 feature: Release Information
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ La configurazione consiste di due passaggi principali:
 
 ### Aggiungi archivio {#add-repo}
 
-1. In Cloud Manager, dalla sezione **Panoramica del programma** , tocca o fai clic su **Archivi** per passare alla scheda **Archivi** pagina e fai clic su **Aggiungi archivio**.
+1. In Cloud Manager, dalla sezione **Panoramica del programma** , seleziona la **Archivi** per passare alla scheda **Archivi** pagina e fai clic su **Aggiungi archivio**.
 
 1. In **Aggiungi archivio** finestra di dialogo, seleziona **Archivio privato** come tipo di archivio.
 
@@ -39,11 +39,11 @@ La configurazione consiste di due passaggi principali:
 
    ![Aggiungi un proprio archivio](/help/implementing/cloud-manager/assets/repos/add-own-github.png)
 
-1. Tocca o fai clic su **Salva**.
+1. Seleziona **Salva**.
 
 >[!TIP]
 >
->Per informazioni dettagliate sulla gestione degli archivi in Cloud Manager, consulta il documento [Archivi di Cloud Manager.](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+>Per informazioni dettagliate sulla gestione degli archivi in Cloud Manager, consulta [Archivi di Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
 ### Convalida proprietà archivio privato {#validate-ownership}
 
@@ -55,9 +55,9 @@ Cloud Manager ora è a conoscenza dell’archivio GitHub, ma deve ancora acceder
 
 1. Cloud Manager utilizza un’app GitHub per interagire in modo sicuro con l’archivio.
    * Un proprietario dell’organizzazione GitHub deve installare l’app che si trova in `https://github.com/apps/cloud-manager-for-aem-stage` e concedono l’accesso all’archivio.
-   * Fai riferimento alla documentazione di GitHub per informazioni dettagliate su come eseguire questa operazione.
+   * Consulta la documentazione di GitHub per informazioni dettagliate su come eseguire questa operazione.
 
-1. Per migliorare la protezione, è necessario creare un file segreto nel ramo predefinito dell’archivio. Tocca o fai clic su **Genera**.
+1. Per migliorare la protezione, è necessario creare un file segreto nel ramo predefinito dell’archivio. Seleziona **Genera**.
 
 1. Conferma la generazione del file segreto toccando o facendo clic su **Conferma**.
 
@@ -71,7 +71,7 @@ Cloud Manager ora è a conoscenza dell’archivio GitHub, ma deve ancora acceder
 
 1. Crea un nuovo file nel ramo predefinito dell’archivio GitHub denominato `.well-known/adobe/cloud-manager-challenge` e incollare il contenuto del file segreto in tale file e salvarlo.
 
-1. Una volta che l’app è installata e il file segreto esiste nell’archivio, puoi toccare o fare clic su **Convalida** nel **Convalida proprietà archivio privato** .
+1. Una volta installata l’app e inserito il file segreto nell’archivio, puoi selezionare **Convalida** nel **Convalida proprietà archivio privato** .
 
 L’app può essere installata e il file segreto può essere creato in qualsiasi ordine. Tuttavia, entrambi i passaggi devono essere completati prima di poter eseguire la convalida.
 
@@ -79,9 +79,9 @@ Fino alla convalida, l’archivio viene elencato con un’icona rossa, a indicar
 
 ![Archivio non convalidato](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-Tieni presente che **Tipo** questa colonna identifica facilmente gli archivi forniti dall’Adobe (**Adobe**) e i tuoi archivi GitHub (**GitHub**).
+Il **Tipo** questa colonna identifica facilmente gli archivi forniti dall’Adobe (**Adobe**) e i tuoi archivi GitHub (**GitHub**).
 
-Se per completare la convalida dovrai tornare all’archivio in una data successiva, il **Archivi** tocca o fai clic sul pulsante con i puntini di sospensione nella riga che rappresenta l’archivio GitHub appena aggiunto e seleziona **Convalida proprietà** dal menu a discesa.
+Se per completare la convalida dovrai tornare all’archivio in una data successiva, il **Archivi** , seleziona il pulsante con i puntini di sospensione nella riga che rappresenta l’archivio GitHub appena aggiunto e fai clic su **Convalida proprietà** dal menu a discesa.
 
 ## Utilizzo di archivi GitHub personalizzati con Cloud Manager {#using}
 
@@ -101,10 +101,10 @@ Quando la richiesta di pull viene chiusa o unita, la pipeline di qualità del co
 
 ## Limitazioni {#limitations}
 
-Tieni presenti le seguenti limitazioni quando utilizzi archivi GitHub personalizzati con Cloud Manager.
+Limitazioni quando si utilizzano archivi GitHub personalizzati con Cloud Manager.
 
-* Non puoi utilizzare gli archivi GitHub come origine diretta dell’archivio per le pipeline gestite.
+* Non è possibile utilizzare gli archivi GitHub come origine diretta dell’archivio per le pipeline gestite.
    * Questa funzionalità è pianificata.
-* Non puoi mettere in pausa la convalida della richiesta di pull utilizzando il controllo GitHub di Cloud Manager.
+* Non è possibile sospendere la convalida della richiesta di pull utilizzando il controllo GitHub da Cloud Manager.
    * Se l’archivio GitHub viene convalidato in Cloud Manager, Cloud Manager tenterà sempre di convalidare le richieste pull create per tale archivio.
 Se l’app GitHub di Adobe viene rimossa dall’organizzazione GitHub, la funzione di convalida delle richieste pull verrà rimossa per tutti gli archivi.

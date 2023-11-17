@@ -1,9 +1,10 @@
 ---
 title: Componente aggiuntivo AEM Assets per Adobe Express
 description: Il componente aggiuntivo AEM Assets, ad Adobe Express, consente di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente di Adobi Express.
-source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
+exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Per aggiungere il componente aggiuntivo AEM Assets a un Adobe Express, effettua 
 
 1. Apri l’applicazione web Adobi Express.
 
-1. Apri una nuova area di lavoro vuota caricando un nuovo modello o progetto oppure creando una nuova risorsa.
+1. Apri una nuova area di lavoro vuota caricando un nuovo modello o progetto oppure creando una risorsa.
 
 1. Clic **[!UICONTROL Componenti aggiuntivi]** disponibile nel riquadro di navigazione a sinistra.
 
@@ -64,4 +65,3 @@ Dopo aver incorporato le modifiche appropriate nell’area di lavoro di Express,
 1. Clic **[!UICONTROL Carica]** per caricare la risorsa in AEM Assets.
 
    ![Salvare le risorse in AEM](assets/aem-assets-add-on-save.png)
-

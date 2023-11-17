@@ -1,13 +1,13 @@
 ---
 title: Personalizzazione dell’authoring delle pagine
 description: Scopri i meccanismi forniti da AEM as a Cloud Service per personalizzare la funzionalità di authoring delle pagine.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '969'
 ht-degree: 2%
 
 ---
-
 
 # Personalizzazione dell’authoring delle pagine {#customizing-page-authoring}
 
@@ -22,7 +22,7 @@ Durante la personalizzazione, puoi creare una libreria client personalizzata in 
 * Dipende dalla libreria client di authoring `cq.authoring.editor.sites.page`.
 * Essere parte dell&#39;appropriato `cq.authoring.editor.sites.page.hook` categoria.
 
-Per ulteriori dettagli su clientlibs, consulta il documento [Utilizzo delle librerie lato client su AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Consulta [Utilizzo di librerie lato client su AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Sovrapposizioni {#overlays}
 
@@ -32,7 +32,7 @@ Quando si crea una sovrapposizione, non è necessaria una copia 1:1 dell&#39;ori
 
 Per ulteriori informazioni, vedere [Set di documentazione JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-Per ulteriori informazioni sulle sovrapposizioni, consulta il documento [Sovrapposizioni per Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+Per ulteriori informazioni sulle sovrapposizioni, consulta [Sovrapposizioni per Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Aggiungi nuovo livello (modalità) {#add-new-layer-mode}
 

@@ -1,9 +1,9 @@
 ---
 title: Cosa sono le espressioni di modulo adattivo?
 description: Utilizza espressioni Forms adattive per aggiungere convalida, calcolo e attivazione o disattivazione automatica della visibilità di una sezione.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2698'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ L’espressione options viene utilizzata per riempire dinamicamente le opzioni d
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Ogni volta che il valore **marital_status** modifica il campo, l’espressione viene riattivata. Puoi anche popolare il menu a discesa da un servizio REST. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+Ogni volta che il valore **marital_status** modifica il campo, l’espressione viene riattivata. È inoltre possibile compilare l’elenco a discesa da un servizio REST. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### Espressione di riepilogo {#summary}
 

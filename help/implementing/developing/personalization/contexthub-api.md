@@ -2,9 +2,9 @@
 title: Riferimento API JavaScript di ContextHub
 description: L’API JavaScript ContextHub è disponibile per gli script quando il componente ContextHub è stato aggiunto alla pagina
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4620'
+source-wordcount: '4612'
 ht-degree: 2%
 
 ---
@@ -145,7 +145,7 @@ La classe base per gli archivi ContextHub.
 
 A [`ContextHub.Utils.Eventing`](#contexthub-utils-eventing) oggetto. Utilizzare questo oggetto per le funzioni di associazione per memorizzare gli eventi. Per informazioni sul valore predefinito e sull&#39;inizializzazione, vedere [`init(name,config)`](#init-name-config).
 
-#### name {#name}
+#### nome {#name}
 
 Nome dell’archivio.
 
@@ -403,7 +403,7 @@ Oggetto che rappresenta la risposta raw.
 
 #### getServiceDetails() {#getservicedetails}
 
-Recupera l&#39;oggetto servizio per l&#39;oggetto ContextHub.Store.JSONPStore. L&#39;oggetto servizio contiene tutte le informazioni necessarie per creare l&#39;URL del servizio.
+Recupera l&#39;oggetto servizio per l&#39;oggetto ContextHub.Store.JSONPStore. L&#39;oggetto servizio contiene le informazioni necessarie per creare l&#39;URL del servizio.
 
 ##### Restituisce {#returns-getservicedetails}
 

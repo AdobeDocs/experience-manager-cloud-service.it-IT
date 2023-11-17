@@ -4,10 +4,10 @@ description: Scopri come creare profili utente in Admin Console per gestire la r
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 93%
+source-wordcount: '982'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Scopri come creare profili utente in Admin Console per gestire la ricezione di n
 
 ## Panoramica {#overview}
 
-Di tanto in tanto, Adobe deve contattare gli utenti in merito ai loro ambienti AEM as a Cloud Service. Oltre alle notifiche interne al prodotto, Adobe a volte potrebbe inviare le notifiche per e-mail. Esistono due tipi di notifiche e-mail:
+Di tanto in tanto, l’Adobe contatta gli utenti in merito agli ambienti AEM as a Cloud Service. Oltre alle notifiche interne al prodotto, Adobe a volte potrebbe inviare le notifiche per e-mail. Esistono due tipi di notifiche e-mail:
 
 * **Notifica per incidente**: queste notifiche vengono inviate se si verifica un incidente o se Adobe ha identificato un potenziale problema di disponibilità che interessa il tuo ambiente AEM as a Cloud Service.
 * **Notifica proattiva**: queste notifiche vengono inviate quando un membro del team del supporto Adobe desidera fornire indicazioni su una potenziale ottimizzazione o consigli su come sfruttare al megliio l’ambiente AEM as a Cloud Service.
@@ -148,4 +148,4 @@ L’utente invitato riceverà le notifiche. Ripeti questi passaggi per gli altri
 
 Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
-* [Centro azioni](/help/operations/actions-center.md) - Sfruttare il Centro azioni per intervenire in modo comodo sugli incidenti e su altre informazioni importanti.
+* [Centro azioni](/help/operations/actions-center.md) - Sfruttare il Centro azioni per intervenire in modo comodo in caso di incidenti e altre informazioni importanti.

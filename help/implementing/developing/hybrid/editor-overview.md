@@ -2,10 +2,10 @@
 title: Panoramica dell’editor di SPA
 description: Questo articolo offre una panoramica completa dell’editor di SPA e del suo funzionamento, inclusi flussi di lavoro dettagliati relativi all’interazione dell’editor di SPA in AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1630'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1632'
+ht-degree: 96%
 
 ---
 
@@ -23,11 +23,11 @@ Per abilitare la modifica delle SPA all’interno di AEM, è necessaria una mapp
 
 Il supporto SPA in AEM introduce un livello JS sottile che interagisce con il codice JS SPA caricato nell’Editor pagina con cui è possibile inviare eventi e attivare la posizione dei controlli di modifica per consentire la modifica nel contesto. Questa funzione si basa sul concetto di endpoint API di Content Services, in quanto il contenuto dell’SPA deve essere caricato tramite Content Services.
 
-Per ulteriori dettagli su SPA in AEM, consulta i seguenti documenti:
+Per maggiori dettagli sull’SPA nell’AEM, vedi:
 
-* [Blueprint SPA](blueprint.md) per i requisiti tecnici di una SPA
-* [Guida introduttiva agli SPA in AEM utilizzando React](getting-started-react.md) per un rapido tour di una semplice SPA utilizzando React
-* [Guida introduttiva agli SPA in AEM con Angular](getting-started-angular.md) per un rapido tour di una semplice SPA utilizzando Angular
+* [Blueprint SPA](blueprint.md) per i requisiti tecnici di una SPA.
+* [Guida introduttiva agli SPA in AEM utilizzando React](getting-started-react.md) per un rapido tour di una semplice SPA utilizzando React.
+* [Guida introduttiva agli SPA in AEM con Angular](getting-started-angular.md) per un rapido tour di una semplice SPA utilizzando Angular.
 
 ## Design {#design}
 
@@ -185,6 +185,6 @@ L’SDK dell’editor di SPA di AEM è completamente supportato da Adobe e conti
 * Modifica le configurazioni (ad esempio ascoltatori)
 * Annulla/Ripeti
 * Differenze tra pagine e alterazione ora
-* Funzionalità che eseguono la riscrittura sul lato server di HTML, come Link Checker, servizio di rewriter CDN, accorciamento degli URL, ecc.
+* Funzioni che eseguono la riscrittura HTML lato server, come Verifica collegamenti, servizio di rewriter CDN, abbreviazione degli URL e così via.
 * Modalità sviluppatore
 * Lanci AEM

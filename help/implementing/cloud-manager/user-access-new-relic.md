@@ -2,10 +2,10 @@
 title: New Relic One
 description: Scopri il servizio New Relic One di monitoraggio delle prestazioni delle applicazioni (APM) per AEM as a Cloud Service e come accedervi.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 90%
+source-wordcount: '1728'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ Per definire gli utenti dell’account secondario New Relic One associato al pro
 
    * Puoi accedere all’opzione **Gestisci utenti** anche dal pulsante con i puntini di sospensione nella parte superiore della schermata **Ambienti** del programma.
 
-1. Nella finestra di dialogo **Gestisci utenti di New Relic**, inserisci nome e cognome dell’utente che desideri aggiungere, quindi fai clic sul pulsante **Aggiungi**. Ripeti questo passaggio per tutti gli utenti che desideri aggiungere.
+1. In **Gestire gli utenti di New Relic** , immettere il nome e il cognome dell&#39;utente che si desidera aggiungere e fare clic sul pulsante **Aggiungi** pulsante. Ripeti questo passaggio per tutti gli utenti che desideri aggiungere.
 
    ![Aggiungi utenti](assets/newrelic-add-users.png)
 
@@ -154,7 +154,7 @@ L’aggiunta di utenti a New Relic One prevede le seguenti limitazioni:
 >
 >Se non viene rilevata alcuna attività nell’account New Relic One per 90 giorni o più, l’agente APM verrà interrotto.
 >
->Aprire un ticket di supporto tramite [Portale di supporto AEM](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) se desideri riabilitare l’agente APM per i tuoi ambienti AEMaaCS.
+>Apri un ticket di supporto tramite [Portale di supporto AEM](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) se desideri riabilitare l’agente APM per gli ambienti AEMaaCS.
 
 Per ulteriore assistenza o informazioni sulle offerte di New Relic One per i programmi AEM as a Cloud Service, apri un ticket di supporto tramite il [portale AEM dedicato all’assistenza](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 
@@ -202,4 +202,4 @@ Sebbene il supporto Adobe monitori l’applicazione AEM as a Cloud Service con N
 
 ### L&#39;agente APM per il mio account New Relic One è stato arrestato. Cos&#39;è successo? {#deactivated}
 
-[Gli agenti APM vengono arrestati](#limitations) se non viene rilevata alcuna attività per 90 giorni o più. Aprire un ticket di supporto tramite [Portale di supporto AEM](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) se desideri riabilitare l’agente APM per i tuoi ambienti AEMaaCS.
+[Gli agenti APM vengono arrestati](#limitations) se non viene rilevata alcuna attività per 90 giorni o più. Apri un ticket di supporto tramite [Portale di supporto AEM](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) se desideri riabilitare l’agente APM per gli ambienti AEMaaCS.

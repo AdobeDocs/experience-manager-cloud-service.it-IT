@@ -2,10 +2,10 @@
 title: Crea programma
 description: Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 58%
+source-wordcount: '696'
+ht-degree: 53%
 
 ---
 
@@ -46,30 +46,30 @@ Dopo aver effettuato l’accesso a Cloud Manager, puoi creare un programma sandb
 
    ![Panoramica di Cloud Manager](assets/cloud-manager.png)
 
-1. Tocca o fai clic su **Aggiungi programma** in alto a destra nella finestra.
+1. Seleziona **Aggiungi programma** in alto a destra nella finestra.
 
 1. Nella finestra di dialogo **Creiamo il tuo programma**:
 
    1. Inserisci un **Nome del programma** per descriverlo.
-   1. Tocca o fai clic su **Configura una sandbox** per l&#39;**Obiettivo del programma**
-   1. Tocca o fai clic su **Continua**.
+   1. Seleziona **Configurare una sandbox** per **Obiettivo del programma**
+   1. Seleziona **Continua**.
 
    ![Finestra di dialogo Crea programma](assets/create-program.png)
 
 1. In **Configurare la sandbox** finestra di dialogo in **Soluzioni e componenti aggiuntivi** tabella, espandi **Sites** per inserire un elemento nell’elenco, toccalo o fai clic su di esso, quindi seleziona **Demo di riferimento**.
 
-   * Se desideri anche creare demo per AEM Screens, seleziona la **Schermi** nell&#39;elenco. Tocca o fai clic su **Aggiorna**.
+   * Se desideri anche creare demo per AEM Screens, seleziona la **Schermi** nell&#39;elenco. Seleziona **Aggiorna**.
 
    ![Selezione del componente aggiuntivo per una Demo di riferimento nella configurazione del programma](assets/select-reference-demo-add-on.png)
 
 
-1. Tocca o fai clic su **Crea** e Cloud Manager avvierà la configurazione del programma sandbox. Viene visualizzata la schermata panoramica del programma e una breve notifica nel banner indica che il processo è stato avviato. È stata aggiunta una scheda alla pagina panoramica del nuovo programma. Il processo di configurazione richiede alcuni minuti.
+1. Seleziona **Crea** e Cloud Manager inizia a configurare il programma sandbox. Viene visualizzata la schermata panoramica del programma e una breve notifica nel banner indica che il processo è stato avviato. È stata aggiunta una scheda alla pagina panoramica del nuovo programma. Il processo di configurazione richiede alcuni minuti.
 
-1. Una volta completata la configurazione, la scheda dell’ambiente nella pagina panoramica mostrerà lo stato come **Pronto**. Tocca o fai clic sulla scheda per aprire l’ambiente.
+1. Una volta completata la configurazione, la scheda dell’ambiente nella pagina panoramica mostrerà lo stato come **Pronto**. Seleziona la scheda in modo da poter aprire l’ambiente.
 
    ![Creazione del programma completata](assets/ready.png)
 
-1. L’ambiente è pronto e il componente aggiuntivo è ora abilitato come opzione, ma il contenuto della Demo deve essere distribuito in AEM per essere disponibile. A questo scopo, tocca o fai clic sul pulsante con i puntini di sospensione accanto alla pipeline Distribuisci su Dev in **Pipeline** e seleziona **Esegui**.
+1. L’ambiente è pronto e il componente aggiuntivo è ora abilitato come opzione, ma il contenuto della Demo deve essere distribuito in AEM per essere disponibile. A questo scopo, seleziona il pulsante con i puntini di sospensione accanto a Distribuisci su pipeline di sviluppo in **Pipeline** e seleziona **Esegui**.
 
    ![Avvia](assets/run.png)
 

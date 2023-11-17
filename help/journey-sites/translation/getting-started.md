@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 95%
+source-wordcount: '1390'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,7 @@ Questo documento illustra come iniziare a tradurre il contenuto dei siti in AEM.
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
-Ci sono diversi requisiti prima di iniziare a tradurre il tuo contenuto AEM.
+Ci sono diversi requisiti prima di iniziare a tradurre il contenuto AEM.
 
 ### Conoscenza {#knowledge}
 
@@ -65,7 +65,7 @@ La console Sites fornisce una panoramica della struttura dei contenuti, facilita
 
 Per accedere alla console Sites:
 
-1. Nel menu di navigazione globale, tocca o fai clic su **Navigazione** -> **Sites**.
+1. Nel menu di navigazione globale, seleziona **Navigazione** > **Sites**.
 1. La console Sites si apre al livello superiore del contenuto.
 1. Assicurati che la **Vista a colonne** sia selezionata utilizzando il selettore di visualizzazione in alto a destra nella finestra.
 
@@ -75,7 +75,7 @@ Per accedere alla console Sites:
 
    ![Gerarchia dei contenuti](assets/sites-console-hierarchy.png)
 
-1. Toccando o facendo clic sulla casella di spunta di un elemento in una colonna, l’elemento viene selezionato e ne vengono visualizzati i dettagli nella colonna a destra, rivelando una serie di azioni disponibili nella barra degli strumenti precedente.
+1. Toccando o facendo clic sulla casella di controllo di un elemento in una colonna, l’elemento viene selezionato e ne vengono visualizzati i dettagli nella colonna a destra, mostrando diverse azioni disponibili per l’elemento selezionato nella barra degli strumenti precedente.
 
    ![Selezione del contenuto](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ La console Sites consente di navigare nel contenuto e fornisce una panoramica de
 
 Per modificare la pagina:
 
-1. Utilizza la console Sites per individuare e selezionare una pagina. Per selezionarla, è necessario toccare o fare clic sulla casella di spunta di una singola pagina.
+1. Utilizza la console Sites per individuare e selezionare una pagina. È necessario selezionare la casella di controllo di una singola pagina per selezionarla.
 
    ![Selezione di una pagina da modificare](assets/sites-editor-select-page.png)
 

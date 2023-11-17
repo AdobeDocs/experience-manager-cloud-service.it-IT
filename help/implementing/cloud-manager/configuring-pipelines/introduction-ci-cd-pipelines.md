@@ -3,10 +3,10 @@ title: Pipeline CI/CD
 description: Scopri le pipeline CI/CD di Cloud Manager e come utilizzarle per distribuire il codice in modo efficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 92%
+source-wordcount: '1418'
+ht-degree: 90%
 
 ---
 
@@ -61,7 +61,7 @@ Ulteriori informazioni su queste pipeline sono riportate più avanti in questo d
 
 ### Informazioni sulle pipeline CI/CD in Cloud Manager {#understand-pipelines}
 
-La tabella seguente riepiloga tutte le pipeline disponibili in Cloud Manager e i relativi utilizzi.
+La tabella seguente riepiloga le pipeline disponibili in Cloud Manager e i relativi utilizzi.
 
 | Tipo di pipeline | Distribuzione o qualità del codice | Codice sorgente | Scopo | Note |
 |--- |--- |--- |---|---|
@@ -115,7 +115,7 @@ Per informazioni su come configurare le pipeline full stack, consulta i seguenti
 
 Con una pipeline di configurazione è possibile configurare e distribuire in pochi minuti le regole del filtro del traffico, incluse le regole WAF.
 
-Consulta il documento [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md) per scoprire come gestire le configurazioni nell’archivio in modo che vengano distribuite correttamente.
+Consulta [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md) per scoprire come gestire le configurazioni nell’archivio in modo che vengano distribuite correttamente.
 
 ### Configurazione delle pipeline di configurazione {#configure-config-deployment}
 
@@ -157,7 +157,7 @@ Per informazioni sul funzionamento di questo processo e alcune considerazioni pe
 
 ## Pipeline di configurazione a livello web {#web-tier-config-pipelines}
 
-Le pipeline di configurazione a livello web consentono di distribuire la configurazione HTTPD/Dispatcher esclusivamente nel runtime di AEM, separandola dalle altre modifiche al codice. Si tratta di una pipeline semplificata che offre a chi desidera distribuire esclusivamente le modifiche della configurazione dispatcher un metodo accelerato per svolgere l’operazione in pochi minuti.
+Le pipeline di configurazione a livello web consentono di distribuire la configurazione HTTPD/Dispatcher esclusivamente nel runtime di AEM, separandola dalle altre modifiche al codice. Si tratta di una pipeline semplificata che offre agli utenti che desiderano distribuire solo le modifiche alla configurazione del dispatcher un metodo accelerato per farlo in pochi minuti.
 
 >[!TIP]
 >

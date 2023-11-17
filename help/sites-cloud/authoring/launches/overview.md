@@ -2,10 +2,10 @@
 title: Lanci
 description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di apportare modifiche pronte per la pubblicazione futura, mantenendo le pagine correnti
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 96%
+source-wordcount: '899'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ Nel trimestre successivo, promuovi le pagine di lancio in modo da poter pubblica
 
 I lanci possono anche essere:
 
-* creati per più rami principali. Nonostante sia possibile creare il lancio per l&#39;intero sito (e apportare le modifiche desiderate), questa operazione potrebbe risultare poco pratica perché l&#39;intero sito dovrà essere copiato. Quando sono coinvolte centinaia o persino migliaia di pagine, i requisiti e le prestazioni di sistema sono influenzati sia dall’azione di copia che, in un secondo momento, dai confronti richiesti per le attività di promozione.
+* creati per più rami principali. Anche se è possibile creare il lancio per l’intero sito (e apportare le modifiche), questo può non essere pratico in quanto l’intero sito deve essere copiato. Quando sono coinvolte centinaia o persino migliaia di pagine, i requisiti e le prestazioni di sistema sono influenzati sia dall’azione di copia che, in un secondo momento, dai confronti richiesti per le attività di promozione.
 * Nidificato (un lancio all’interno di un lancio) per consentirti di creare un lancio da uno esistente, in modo che gli autori possano sfruttare le modifiche già apportate, anziché dover apportare le stesse modifiche più volte per ogni lancio.
 
 Questa sezione spiega come creare, modificare e promuovere (e, se necessario, [eliminare](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) le pagine di lancio dall&#39;interno della console Sites o [dalla console Launches](#the-launches-console):
@@ -96,7 +96,7 @@ I lanci ti consentono di:
 
    ![Riferimenti di lanci nella console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Tocca o fai clic sul lancio appropriato per visualizzare l’elenco delle azioni possibili:
+1. Seleziona il lancio appropriato per visualizzare l’elenco delle azioni possibili:
 
    ![Azioni da intraprendere su Launches nella console Sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

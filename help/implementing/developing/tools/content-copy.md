@@ -2,10 +2,10 @@
 title: Lo strumento Copia contenuto
 description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service ad ambienti inferiori a scopo di test.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 38%
+source-wordcount: '1292'
+ht-degree: 35%
 
 ---
 
@@ -41,7 +41,7 @@ Per utilizzare lo strumento di copia del contenuto, sono necessarie determinate 
 | Creare e modificare il [set di contenuti](#create-content-set) | Non obbligatorio | Obbligatorio |
 | Avviare o annullare il [processo di copia del contenuto](#copy-content) | Obbligatorio | Obbligatorio |
 
-Per ulteriori dettagli sulle autorizzazioni e su come impostarle, consulta il documento [Profili di prodotto e team as a Cloud Service AEM.](/help/onboarding/aem-cs-team-product-profiles.md)
+Per ulteriori dettagli sulle autorizzazioni e su come impostarle, vedi [Profili di prodotto e team as a Cloud Service AEM](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Creazione di un set di contenuti {#create-content-set}
 
@@ -57,7 +57,7 @@ Prima di poter copiare qualsiasi contenuto, è necessario definire un set di con
 
    ![Set di contenuti](assets/content-sets.png)
 
-1. Nella scheda **Dettagli** della procedura guidata, assegna un nome e una descrizione per il set di contenuti e tocca o fai clic su **Continua**.
+1. Il giorno **Dettagli** della procedura guidata, fornisci un nome e una descrizione per il set di contenuti e seleziona **Continua**.
 
    ![Dettagli dei set di contenuti](assets/add-content-set-details.png)
 
@@ -74,8 +74,8 @@ Prima di poter copiare qualsiasi contenuto, è necessario definire un set di con
 
    1. Nell’elenco dei percorsi inclusi, fai clic su **Aggiungi percorsi secondari di esclusione** accanto al percorso che si desidera limitare.
    1. Immettere il percorso secondario da escludere sotto il percorso selezionato.
-   1. Tocca o fai clic su **Escludi percorso**.
-   1. Tocca o fai clic di nuovo su **Aggiungi percorsi secondari di esclusione** per aggiungere altri percorsi da escludere, se necessario.
+   1. Seleziona **Escludi percorso**.
+   1. Seleziona **Aggiungi percorsi secondari di esclusione** per aggiungere altri percorsi da escludere, se necessario.
       * I percorsi esclusi devono essere relativi al percorso incluso.
       * Non esiste alcun limite al numero di percorsi esclusi.
 
@@ -88,7 +88,7 @@ Prima di poter copiare qualsiasi contenuto, è necessario definire un set di con
 
    ![Modifica dell’elenco dei percorsi](assets/add-content-set-excluded-paths.png)
 
-1. Tocca o fai clic su **Crea** per creare il set di contenuti.
+1. Seleziona **Crea** per creare il set di contenuti.
 
 Il set di contenuti può ora essere utilizzato per copiare il contenuto tra ambienti diversi.
 
@@ -136,7 +136,7 @@ Dopo aver creato un set di contenuti, puoi utilizzarlo per copiare il contenuto.
 
 1. Se necessario, puoi anche scegliere di **Includi elenchi di controllo di accesso** nel processo di copia.
 
-1. Tocca o fai clic su **Copia**.
+1. Seleziona **Copia**.
 
 Viene avviato il processo di copia. Lo stato del processo di copia si riflette nella console del set di contenuti selezionato.
 
@@ -185,7 +185,7 @@ A tale scopo, il **Attività copia contenuto** , seleziona la **Registri** dal m
 
 ![Accesso ai registri per il processo di copia del contenuto](assets/copy-content-logs.png)
 
-I registri vengono scaricati nel computer locale. Se il download non inizia, controlla le impostazioni del blocco dei popup.
+I registri vengono scaricati nel computer locale. Se il download non inizia, controllare le impostazioni del blocco dei popup.
 
 ## Limitazioni {#limitations}
 

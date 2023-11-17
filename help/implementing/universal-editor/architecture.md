@@ -2,10 +2,10 @@
 title: Architettura dell’editor universale
 description: Scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 96%
+source-wordcount: '650'
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ Questo documento delinea ciascuno di questi blocchi predefiniti e la loro modali
 
 >[!TIP]
 >
->Per visualizzare l’editor universale e la relativa architettura in azione, consulta il documento [Guida introduttiva all’editor universale in AEM](getting-started.md) per scoprire come accedere all’editor universale e come iniziare a preparare la tua prima app AEM da utilizzare.
+>Per vedere Universal Editor e la relativa architettura in azione, consulta [Guida introduttiva dell’Editor universale in AEM](getting-started.md) per scoprire come accedere a Universal Editor e come iniziare a dotare la tua prima app AEM di strumenti per utilizzarla.
 
 ### Editor {#editors}
 
@@ -50,7 +50,7 @@ L’editor universale richiede un SDK minimo, pertanto la strumentazione rientra
 ### Livello di persistenza {#persistence-layer}
 
 * **Modello per frammenti di contenuto**: per supportare la barra laterale per la modifica delle proprietà dei frammenti di contenuto, dell’editor di frammenti di contenuto e degli editor basati su moduli, sono necessari modelli per componente e frammenti di contenuto.
-* **Contenuto**: il contenuto può essere archiviato ovunque, ad esempio in AEM, Magento, ecc.
+* **Contenuto** - I contenuti possono essere archiviati ovunque, ad esempio in AEM, Magento e così via.
 
 ![Livello di persistenza](assets/persistence-layer.png)
 

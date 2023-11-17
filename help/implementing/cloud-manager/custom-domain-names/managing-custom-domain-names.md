@@ -2,10 +2,10 @@
 title: Gestione dei nomi di dominio personalizzati
 description: Scopri come visualizzare, aggiornare, sostituire ed eliminare i nomi di dominio personalizzati con Cloud Manager.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 96%
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,7 @@ Visualizza i dettagli di qualsiasi nome di dominio personalizzato tramite il men
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Individua la riga del nome di dominio personalizzato che desideri visualizzare o aggiornare.
+1. Identifica la riga del nome di dominio personalizzato che desideri visualizzare o aggiornare.
 
 1. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga.
 
@@ -47,7 +47,7 @@ L’utente con il ruolo **Proprietario business** o **Responsabile dell’implem
 
 1. Dalla schermata **Ambienti**, accedi alla pagina **Impostazioni dominio**.
 
-1. Individua la riga del nome di dominio personalizzato che desideri eliminare.
+1. Identifica la riga del nome di dominio personalizzato che desideri eliminare.
 
 1. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga.
 
@@ -62,7 +62,7 @@ L’utente con il ruolo **Proprietario business** o **Responsabile dell’implem
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 1. Dalla pagina **Ambienti**, accedi alla schermata dei dettagli dell’ambiente di tuo interesse.
-1. Nella tabella dei nomi di dominio, individua la riga del nome di dominio personalizzato che desideri eliminare.
+1. Nella tabella dei nomi di dominio, identifica la riga del nome di dominio personalizzato che desideri eliminare.
 1. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga.
 1. Seleziona **Elimina**.
 1. Conferma quanto inserito.

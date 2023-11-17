@@ -4,10 +4,10 @@ description: Segui questa pagina per scoprire come assegnare i membri del gruppo
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1528'
-ht-degree: 94%
+source-wordcount: '1527'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Quando consenti l’accesso a una soluzione Adobe agli utenti, non devi necessar
 
 Il primo passaggio consiste nel consentire agli utenti di accedere a Cloud Manager. Per supportarti, Cloud Manager offre configurazioni di sviluppo di livello Enterprise e pipeline CI/CD appositamente progettate per garantire test approfonditi e la massima qualità del codice, in modo da poter offrire esperienze eccezionali.
 
-Dopo aver letto questo documento dovresti:
+Dopo aver letto questo documento, dovresti:
 
 * Sapere cosa sono i profili di prodotto.
 * Sapere che cos’è Cloud Manager.
@@ -181,7 +181,7 @@ Ora puoi continuare il percorso di onboarding passando al documento successivo [
 
 ## Risorse aggiuntive {#additional-resources}
 
-È consigliabile continuare il percorso di onboarding come descritto in precedenza. Queste sono alcune risorse aggiuntive utili se desideri approfondire un particolare argomento di questo percorso.
+È consigliabile continuare il percorso di onboarding come descritto in precedenza. Queste sono alcune risorse aggiuntive utili per approfondire un argomento specifico di questo percorso.
 
 * [Introduzione a Cloud Manager](/help/onboarding/cloud-manager-introduction.md): informazioni su Cloud Manager, i programmi e gli ambienti di Cloud Manager.
 * [Profili di prodotto di Cloud Manager](/help/onboarding/aem-cs-team-product-profiles.md): informazioni su team e profili di prodotto di AEM as a Cloud Service.

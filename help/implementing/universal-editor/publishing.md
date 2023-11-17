@@ -2,10 +2,10 @@
 title: Pubblicazione di contenuti con l’editor universale
 description: Scopri come l’Editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 73%
+source-wordcount: '359'
+ht-degree: 67%
 
 ---
 
@@ -34,4 +34,4 @@ Un’altra opzione consiste nell’implementare l’app in due ambienti diversi 
 
 L’obiettivo dell’editor universale è di non imporre alcun modello particolare, in modo che l’implementazione possa raggiungere al meglio i suoi obiettivi in una modalità completamente separata, assicurando al tempo stesso che tutto risulti semplice e chiaro per l’implementazione.
 
-Allo stesso modo, l’editor universale non detta i requisiti su come un particolare progetto debba determinare da quale livello distribuire il contenuto. Al contrario, offre una serie di possibilità e permette al progetto di determinare quale soluzione sia la più adatta alle proprie esigenze.
+Allo stesso modo, l’editor universale non detta i requisiti su come un particolare progetto debba determinare da quale livello distribuire il contenuto. Al contrario, offre diverse possibilità e consente al progetto di determinare quale soluzione soddisfa al meglio le proprie esigenze.

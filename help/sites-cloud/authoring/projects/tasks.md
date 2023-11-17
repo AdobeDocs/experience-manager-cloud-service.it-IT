@@ -2,10 +2,10 @@
 title: Utilizzo delle attività
 description: Le attività rappresentano elementi di lavoro da eseguire sul contenuto e vengono utilizzate nei progetti per determinare il livello di completezza delle attività correnti
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '576'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ Fai clic sui puntini di sospensione (...) nel Riquadro attività per visualizzar
 
 #### Dettagli attività {#task-details}
 
-Per ulteriori informazioni su una particolare attività, nell’Elenco Attività, tocca o fai clic sull’attività e su **Apri**.
+Per ulteriori informazioni su una particolare attività, nell&#39;Elenco attività selezionare l&#39;attività e **Apri**.
 
 ![Dettagli attività](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -63,12 +63,12 @@ Puoi aggiungere nuove attività ai progetti. Queste attività vengono visualizza
 
 Per aggiungere un’attività:
 
-1. Nel progetto, nella sezione **Attività**, tocca o fai clic sull’icona +. Si apre la finestra **Aggiungi attività**.
+1. Nel progetto, nella sezione **Attività** , seleziona l’icona +. Si apre la finestra **Aggiungi attività**.
 1. Inserisci le informazioni sull’attività. Il titolo dell’attività e il gruppo a cui è assegnata sono obbligatori. Informazioni aggiuntive, tra cui il percorso del contenuto, la descrizione, la priorità dell’attività e la data di scadenza, sono facoltative. Inoltre, puoi selezionare la scheda **Avanzate**, per inserire il nome dell’attività che viene usato per assegnare un nome all’URL.
 
    ![Aggiungi un’attività](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. Tocca o fai clic su **Crea**.
+1. Seleziona **Crea**.
 
 ## Utilizzo delle attività nella casella in entrata {#working-with-tasks-in-the-inbox}
 

@@ -2,16 +2,16 @@
 title: Materiali di riferimento API
 description: L’AEM dispone di API estese e potenti che puoi utilizzare per il tuo progetto di esperienza digitale.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '662'
 ht-degree: 9%
 
 ---
 
 # Materiali di riferimento API {#api-reference-materials}
 
-Adobe Experience Manager (AEM) fornisce molte API per lo sviluppo di applicazioni e l’estensione dell’AEM. L’AEM si basa su una serie di tecnologie open-source che possono anche essere utilizzate.
+Adobe Experience Manager (AEM) fornisce molte API per lo sviluppo di applicazioni e l’estensione dell’AEM. L’AEM è basato su diverse tecnologie open-source, che possono anche essere utilizzate.
 
 ## API core AEM {#core-aem-apis}
 
@@ -19,7 +19,7 @@ Le seguenti API sono core per l’AEM.
 
 | API | Descrizione |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Astrazioni di prodotto come pagine, risorse, flussi di lavoro, ecc. |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Astrazioni di prodotto come pagine, risorse, flussi di lavoro e così via. |
 | [Interfaccia utente Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Stack Open Web di Adobe, che fornisce vari componenti essenziali (i materiali 6.5 Granite si applicano ad AEMaaCS) |
 | [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | Stile visivo di Adobe per le interfacce utente cloud, progettato per fornire coerenza nell’esperienza utente |
 
@@ -29,7 +29,7 @@ Le seguenti API sono core per l’AEM.
 
 ## Framework aggiuntivi {#additional-apis}
 
-L’AEM si basa su una serie di API open source aggiuntive.
+L’AEM si basa su diverse API open-source aggiuntive.
 
 | API | Descrizione |
 |---|---|
@@ -44,7 +44,7 @@ L’AEM è basato sui seguenti quattro set di API Java primari in ordine decresc
 
 | Priorità | API | Descrizione |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Astrazioni di prodotto come pagine, risorse, flussi di lavoro, ecc. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Astrazioni di prodotto come pagine, risorse, flussi di lavoro e così via. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | Astrazioni REST e basate su risorse come risorse, mappe del valore e richieste HTTP. |
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Astrazioni di dati e contenuti come nodo, proprietà e sessioni. |
 | 4 | [Apache Felix](https://felix.apache.org/) | Astrazioni dei contenitori di applicazioni OSGi come servizi e componenti (OSGi). |
@@ -78,7 +78,7 @@ Il framework SDK dell’editor di applicazioni a pagina singola (SPA) dell’AEM
 | [Mappatura dei componenti](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) | Consente all&#39;applicazione a pagina singola di mappare i componenti front-end ai tipi di risorse Adobe Experience Manager (componenti AEM) |
 | [Gestione modelli di pagina](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) | Interprete tra Adobe Experience Manager Editor e Adobe Experience Manager Single Page Application (SPA) Editor |
 | [React - Componenti modificabili](https://www.npmjs.com/package/@adobe/aem-react-editable-components) | Fornisce i componenti React e il livello di integrazione per iniziare a utilizzare Adobe Experience Manager Site Editor |
-| [Angular di componenti modificabili](https://www.npmjs.com/package/@adobe/aem-angular-editable-components) | Fornisce i componenti di Angular e il livello di integrazione per iniziare a utilizzare l’Editor siti di Adobe Experience Manager |
+| [Angular di componenti modificabili](https://www.npmjs.com/package/@adobe/aem-angular-editable-components) | Fornisce i componenti di Angular e il livello di integrazione per iniziare a utilizzare Adobe Experience Manager Site Editor |
 
 >[!TIP]
 >

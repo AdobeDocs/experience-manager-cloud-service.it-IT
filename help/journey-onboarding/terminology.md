@@ -2,10 +2,10 @@
 title: Terminologia di AEM as a Cloud Service
 description: Prima di accedere a AEMaaCS è utile comprendere alcuni termini del sistema e la relativa struttura di base.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 87%
+source-wordcount: '463'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ Ora che hai compreso le fasi preliminari del processo di onboarding leggendo il 
 
 AEM as a Cloud Service è uno strumento potente e flessibile. Per utilizzarlo è necessario conoscere la sua struttura, la terminologia e il linguaggio impiegati per descriverlo. Questo documento riepiloga alcuni termini chiave da comprendere prima di iniziare a utilizzare il sistema.
 
-Dopo aver letto questo documento conoscerai:
+Dopo aver letto questo documento, dovresti capire
 
 * I diversi livelli che compongono AEMaaCS.
 * Le nozioni di base su ogni livello.
@@ -44,7 +44,7 @@ Un esempio è spesso utile per contestualizzare questa gerarchia.
    * Programma One Assets per la divisione WKND Media
 * Entrambi i programmi WKND Magazine e WKND Media includono **ambienti** di sviluppo, staging e produzione.
 * Gli **archivi** vengono utilizzati per conservare le applicazioni e il codice personalizzato per WKND Magazine e WKND Media.
-* Vari **strumenti e flussi di lavoro** operano negli archivi per distribuire il codice con le pipeline CI/CD, accedere ai registri, accedere a AEM e così via.
+* Varie **strumenti e flussi di lavoro** lavora negli archivi per distribuire il codice con le pipeline CI/CD, accedere ai registri, accedere all’AEM e così via.
 
 ## Passaggio successivo {#what-is-next}
 

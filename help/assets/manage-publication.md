@@ -5,7 +5,7 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 6%
@@ -134,7 +134,6 @@ Cambiiamo ora il **[!UICONTROL Destinazione]** nel caso d’uso precedente, per 
 >
 >Tuttavia, puoi rimuovere la personalizzazione esistente per utilizzare il nuovo [!DNL Manager Publication] funzioni.
 
-
 ## Pubblicare le risorse in un secondo momento {#publish-assets-later}
 
 Per pianificare il flusso di lavoro di pubblicazione delle risorse in una data o in un’ora successiva:
@@ -182,6 +181,7 @@ Puoi pubblicare risorse, cartelle e raccolte in [!DNL Experience Manager Assets 
 Il `Request Publication` consente di autenticare il flusso di lavoro delle risorse prima di pubblicarle in [!DNL AEM] Ambiente risorse. [!DNL AEM] fornisce un diverso livello di autorizzazioni a vari utenti. Puoi essere un *collaboratore* che sta caricando le risorse, ma non può pubblicarle finché non vengono verificati i caricamenti. Inoltre, essendo un *Amministratore* puoi gestire la lettura e la scrittura dei flussi di lavoro di Assets.
 
 L’opzione Richiedi pubblicazione è disponibile per i seguenti utenti:
+
 * **Collaboratore:** Se sei un utente che può contribuire a [!DNL AEM] Assets, quindi hai accesso limitato al [!DNL AEM] Flusso di lavoro delle risorse. `Manage publication` Il pulsante è nascosto per te. In qualità di collaboratore, puoi contribuire solo aggiungendo risorse, ma non puoi pubblicarle o avere accesso in lettura al flusso di lavoro.
 
 * **Utente flusso di lavoro:** Questo utente non può pubblicare le risorse, ma ha accesso in lettura al flusso di lavoro. In qualità di utente del flusso di lavoro, puoi:

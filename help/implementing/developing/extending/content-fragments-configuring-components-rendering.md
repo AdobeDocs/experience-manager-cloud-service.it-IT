@@ -2,9 +2,9 @@
 title: Componenti di configurazione dei frammenti di contenuto per il rendering
 description: Componenti di configurazione dei frammenti di contenuto per il rendering
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '521'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ Queste informazioni sono necessarie quando:
 * È necessario implementare un componente basato su frammenti di contenuto personalizzato,
 * E devono utilizzare i servizi avanzati.
 
-Si consiglia di utilizzare i Componenti core.
+L’Adobe consiglia di utilizzare i Componenti core.
 
 >[!CAUTION]
 >

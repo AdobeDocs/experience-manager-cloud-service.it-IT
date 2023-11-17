@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina
 description: Scopri come definire le proprietà necessarie per gestire una pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 96%
+source-wordcount: '2270'
+ht-degree: 94%
 
 ---
 
@@ -87,9 +87,9 @@ Le proprietà sono distribuite su più schede.
   >* non supportano le espressioni regolari;
   >* non devono essere impostati su una pagina esistente.
 
-   * **Aggiungi**: tocca o fai clic per visualizzare un campo e definire un URL personalizzato per la pagina.
-      * Tocca o fai di nuovo clic per aggiungere più elementi.
-      * Tocca o fai clic sull&#39;icona **Rimuovi** per eliminare il Vanity URL.
+   * **Aggiungi** : seleziona per mostrare un campo e definire un URL personalizzato per la pagina.
+      * Seleziona nuovamente per aggiungere più elementi.
+      * Seleziona la **Rimuovi** per eliminare il Vanity URL.
    * **Reindirizza Vanity URL**: specifica se la pagina deve utilizzare il Vanity URL.
 
 ### Avanzate  {#advanced}
@@ -105,7 +105,7 @@ Le proprietà sono distribuite su più schede.
       * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
       * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
       * Le pagine accessibili da alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
-      * Per maggiori dettagli, consulta [Nomi di pagina localizzati nelle best practice per la gestione di SEO e URL](/help/overview/seo-and-url-management.md#localized-page-names).
+      * Consulta [Nomi di pagina localizzati in Best practice per la gestione di SEO e URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configurazione**
 
@@ -147,7 +147,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Immagine in primo piano**
 
-  Seleziona e configura l’immagine da presentare. Viene utilizzata nei componenti che fanno riferimento alla pagina; ad esempio teaser, elenchi di pagine e così via.
+  Seleziona e configura l’immagine da presentare. Viene utilizzato nei componenti che fanno riferimento alla pagina, ad esempio teaser, elenchi di pagine e così via.
 
    * **Immagine**
 
@@ -237,7 +237,7 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
 
 >[!NOTE]
 >
->Per maggiori dettagli, consulta [Abilitazione delle funzioni progressive delle web app](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Consulta [Abilitazione delle funzioni progressive delle app web](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Configura esperienza installabile**
 

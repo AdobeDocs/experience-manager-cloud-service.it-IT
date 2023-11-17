@@ -2,10 +2,10 @@
 title: Ambiente di build
 description: Scopri l’ambiente di build di Cloud Manager e come genera e verifica il codice.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 95%
+source-wordcount: '1004'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Cloud Manager genera e verifica il codice mediante un ambiente di build speciali
 
 ### Utilizzo di una versione Java specifica {#using-java-support}
 
-Per impostazione predefinita, i progetti sono generati dal processo di build di Cloud Manager utilizzando il JDK di Oracle 8. Chi desidera utilizzare un JDK alternativo ha due opzioni.
+Per impostazione predefinita, i progetti sono generati dal processo di build di Cloud Manager utilizzando il JDK di Oracle 8. I clienti che desiderano utilizzare un JDK alternativo hanno due opzioni.
 
 * [Usare le toolchain Maven.](#maven-toolchains)
 * [Selezionare una versione JDK alternativa per l’intero processo di esecuzione Maven.](#alternate-maven-jdk-version)

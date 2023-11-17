@@ -2,10 +2,10 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2601'
-ht-degree: 85%
+source-wordcount: '2585'
+ht-degree: 83%
 
 ---
 
@@ -87,9 +87,9 @@ Quando aggiungi un nuovo ambiente, puoi scegliere di configurare aree geografich
 1. Seleziona l’opzione **Aggiungi aree geografiche di pubblicazione aggiuntive**. In questo modo verrà visualizzato un nuovo menu a discesa **Aree geografiche di pubblicazione aggiuntive**.
 1. Nel menu a discesa **Aree geografiche di pubblicazione aggiuntive**, seleziona un’area geografica aggiuntiva.
 1. L’area geografica selezionata viene aggiunta sotto il menu a discesa per indicarne la selezione.
-   * Tocca o fai clic su `X` accanto all’area geografica selezionata, per poterla deselezionare.
+   * Seleziona la `X` accanto all&#39;area selezionata, per poterla deselezionare.
 1. Seleziona un’altra area geografica dal menu a discesa **Aree geografiche di pubblicazione aggiuntiva** per aggiungere un’altra area geografica.
-1. Tocca o fai clic su **Salva** quando è tutto pronto per creare l’ambiente.
+1. Seleziona **Salva** quando sei pronto per creare l’ambiente.
 
 ![Selezionare più aree geografiche](assets/select-multiple-regions.png)
 
@@ -115,7 +115,7 @@ Puoi anche rimuovere le aree geografiche di pubblicazione aggiuntiva. Tuttavia, 
 
    ![Modifica ambiente](assets/edit-environment.png)
 
-1. Per salvare le modifiche, tocca o fai clic su **Salva**.
+1. Seleziona **Salva** per salvare le modifiche.
 
 Le modifiche apportate all’ambiente di produzione verranno applicate sia agli ambienti di produzione che a quelli di staging. Le modifiche apportate a più aree geografiche di pubblicazione possono essere modificate solo nell’ambiente di produzione.
 
@@ -200,12 +200,12 @@ In alternativa, è possibile accedere alle stesse informazioni dal **Ambienti** 
 
 In caso di problemi segnalati con altre aree geografiche di pubblicazione:
 
-1. Per piacere, siate pazienti. Cloud Manager tenta continuamente di ripristinare l’area geografica che potrebbe diventare disponibile in qualsiasi momento.
-1. Se il problema persiste dopo un certo numero di ore, puoi rimuovere l’area di pubblicazione aggiuntiva e aggiungerla nuovamente (nella stessa area o in un’altra) per attivare una distribuzione completa.
+1. Siate pazienti. Cloud Manager tenta continuamente di recuperare l’area geografica che potrebbe diventare disponibile in qualsiasi momento.
+1. Se il problema persiste dopo diverse ore, puoi rimuovere l’area di pubblicazione aggiuntiva e aggiungerla nuovamente (nella stessa area o in un’altra) per attivare una distribuzione completa.
 
 Il tempo che si attende dal ripristino del sistema prima di intraprendere ulteriori azioni dipende dall&#39;impatto che il guasto di quell&#39;area ha sui sistemi.
 
-Si prega di notare che in ogni caso, [il traffico verrà sempre indirizzato all’altra area più vicina disponibile online.](/help/operations/additional-publish-regions.md) Se continui a visualizzare dei problemi, contatta l’Assistenza clienti Adobe.
+In ogni caso, [il traffico viene sempre indirizzato all&#39;altra area più vicina in linea.](/help/operations/additional-publish-regions.md) Se continui a visualizzare dei problemi, contatta l’Assistenza clienti di Adobe.
 
 ## Aggiornamento degli ambienti {#updating-dev-environment}
 
@@ -333,7 +333,7 @@ Per poter applicare l’elenco IP consentiti a un ambiente, l’elenco deve esis
 **Per applicare un elenco IP consentiti:**
 
 1. Dalla scheda **Ambienti** della schermata **Panoramica** del programma, accedi all’ambiente specifico e seleziona la tabella **Elenco IP consentiti**.
-1. Seleziona l’elenco IP consentiti e il servizio di authoring o pubblicazione che desideri applicare con i campi di immissione nella parte superiore della tabella Elenco IP consentiti.
+1. Utilizza i campi di input nella parte superiore della tabella di inserisce nell&#39;elenco Consentiti dell’IP in modo da poter selezionare il inserisco nell&#39;elenco Consentiti dell’ IP e il servizio Author o Publish a cui desideri applicarlo.
 1. Fai clic su **Applica** e conferma quanto inserito.
 
 ### Annullamento dell’applicazione di un elenco IP consentiti {#unapply-ip-allow-list}

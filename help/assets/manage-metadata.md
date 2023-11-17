@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2003'
-ht-degree: 8%
+source-wordcount: '2000'
+ht-degree: 9%
 
 ---
 
@@ -135,7 +135,7 @@ Enterprise Manager Assets consente di modificare i metadati di più risorse cont
 
 1. Passa alla posizione delle risorse da modificare.
 1. Seleziona le risorse per le quali desideri modificare le proprietà comuni.
-1. Dalla barra degli strumenti, tocca o fai clic su **[!UICONTROL Proprietà]** per aprire [!UICONTROL Proprietà] per le risorse selezionate.
+1. Dalla barra degli strumenti, seleziona **[!UICONTROL Proprietà]** per aprire [!UICONTROL Proprietà] per le risorse selezionate.
 
    >[!NOTE]
    >
@@ -149,9 +149,8 @@ Enterprise Manager Assets consente di modificare i metadati di più risorse cont
    >* In [!UICONTROL Proprietà] pagina, puoi rimuovere le risorse dall’elenco annullando la selezione. Per impostazione predefinita, nell’elenco delle risorse sono selezionate tutte le risorse. I metadati delle risorse rimosse dall’elenco non vengono aggiornati.
    >* Nella parte superiore dell’elenco delle risorse, seleziona la casella di controllo accanto a **[!UICONTROL Titolo]** per passare dalla selezione delle risorse alla cancellazione dell’elenco.
 
-
-1. Per selezionare uno schema di metadati diverso per le risorse, tocca o fai clic su **[!UICONTROL Impostazioni]** dalla barra degli strumenti e seleziona lo schema desiderato. Salva le modifiche.
-1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Tocca o fai clic su **[!UICONTROL Invia]**.
+1. Per selezionare uno schema di metadati diverso per le risorse, seleziona **[!UICONTROL Impostazioni]** dalla barra degli strumenti e seleziona lo schema desiderato. Salva le modifiche.
+1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Seleziona **[!UICONTROL Invia]**.
 
    >[!CAUTION]
    >
@@ -252,18 +251,17 @@ La creazione di flussi di lavoro basati sui metadati consente di automatizzare a
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
 >* [Metadati XMP](xmp-metadata.md)
 >* [Come modificare o aggiungere metadati](meta-edit.md)
-

@@ -4,9 +4,9 @@ description: Scopri come utilizzare le code condivise per flussi di lavoro incen
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '839'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Condividere e richiedere l’accesso agli elementi della casella in entrata di un utente {#share-and-request-access}
 
-Una coda è un elenco di elementi nella casella in entrata AEM di un utente. Possono essere elementi assegnati a un utente o elementi condivisi con il gruppo di cui un utente è membro. Puoi accedere alla tua casella in entrata per visualizzare e intervenire sull’elemento della casella in entrata. Ad esempio, condividere un elemento con un altro utente.
+Una coda è un elenco di elementi nella casella in entrata AEM di un utente. Possono essere elementi assegnati a un utente o elementi condivisi con il gruppo di cui un utente è membro. Puoi accedere alla tua casella in entrata per visualizzare e agire sull’elemento della casella in entrata. Ad esempio, condividere un elemento con un altro utente.
 
 Puoi anche condividere gli elementi della tua casella in entrata con un altro utente. Una volta che un altro utente ha accesso agli elementi della tua casella in entrata, può richiedere e intraprendere azioni appropriate sugli elementi condivisi. Analogamente, è possibile richiedere l&#39;accesso agli elementi della casella in entrata ad altri utenti.
 

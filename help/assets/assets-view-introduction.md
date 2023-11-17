@@ -1,20 +1,20 @@
 ---
 title: Quali vantaggi offre Assets in AEM?
-description: Ulteriori informazioni sui principali vantaggi della visualizzazione Assets in AEM. Adobe, sfruttando l’esperienza nel rafforzamento di professionisti del marketing e della creatività, introduce una nuova esperienza utente rivoluzionaria.
+description: Ulteriori informazioni sui principali vantaggi della visualizzazione Assets in AEM. Ad Adobe, utilizzando la sua esperienza nel rafforzamento dei professionisti del marketing e creativi, introduce una nuova esperienza utente rivoluzionaria.
 mini-toc-levels: 3
-source-git-commit: 20e0527ebecb6720f39c0a4b2957dc899117d96f
+exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
-
 
 # Introduzione alla vista Risorse {#assets-view}
 
 ![Implementare Assets Essentials](assets/banner-image.jpg)
 
-Nell’attuale panorama dinamico digitale, in cui la creazione e la distribuzione dei contenuti in tempo reale sono essenziali, è fondamentale disporre di un’esperienza di gestione delle risorse digitali (DAM) progettata per velocizzare le attività di marketing downstream. Adobe, sfruttando l’esperienza nel rafforzamento di professionisti del marketing e della creatività, introduce una nuova esperienza utente rivoluzionaria. Questo approccio orientato al flusso di lavoro rivoluziona il modo in cui le aziende gestiscono le risorse digitali dinamiche, consentendo ai marketer di ottimizzare l’efficienza nella ricerca, nella collaborazione, nella personalizzazione e nella distribuzione delle risorse. Questi flussi di lavoro semplificati accelerano la velocità dei contenuti e stimolano le attività di marketing verso nuovi traguardi.
+Nell’attuale panorama dinamico digitale, in cui la creazione e la distribuzione dei contenuti in tempo reale sono essenziali, è fondamentale disporre di un’esperienza di gestione delle risorse digitali (DAM) progettata per velocizzare le attività di marketing downstream. Ad Adobe, utilizzando la sua esperienza nel rafforzamento dei professionisti del marketing e creativi, introduce una nuova esperienza utente rivoluzionaria. Questo approccio orientato al flusso di lavoro rivoluziona il modo in cui le aziende gestiscono le risorse digitali dinamiche, consentendo ai marketer di ottimizzare l’efficienza nella ricerca, nella collaborazione, nella personalizzazione e nella distribuzione delle risorse. Questi flussi di lavoro semplificati accelerano la velocità dei contenuti e stimolano le attività di marketing verso nuovi traguardi.
 
 Per ulteriori informazioni sulle esperienze disponibili basate su utenti tipo per Assets as a Cloud Service, consulta [Introduzione ad Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
@@ -128,9 +128,3 @@ Utilizza questi collegamenti per iniziare rapidamente a utilizzare la vista Riso
 
 * [Area di lavoro personale](/help/assets/my-workspace-assets-view.md)
 * [Introduzione all’utilizzo della vista Risorse](/help/assets/get-started-assets-view.md)
-
-
-
-
-
-

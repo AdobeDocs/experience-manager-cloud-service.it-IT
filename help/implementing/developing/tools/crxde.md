@@ -2,9 +2,9 @@
 title: Utilizzo di CRXDE Lite
 description: CRXDE Liti fa parte del modulo quickstart dell’AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1685'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ L’interfaccia utente di CRXDE Liti viene visualizzata come segue nel browser:
 
 >[!TIP]
 >
->Puoi anche accedere a CRXDE Liti dal menu AEM. Dal menu principale, seleziona **Strumenti** -> **Generale** -> **CRXDE Liti**.
+>Puoi anche accedere a CRXDE Liti dal menu AEM. Dal menu principale, seleziona **Strumenti** > **Generale** > **CRXDE Liti**.
 
 ## Panoramica dell’interfaccia utente {#overview-of-the-user-interface}
 
@@ -163,7 +163,7 @@ Il **Widget di accesso** visualizza l&#39;utente attualmente connesso.
 
 Fai clic su di esso per accedere o accedere nuovamente come altro utente. Il `@crx.default` indica che ci si trova nell&#39;area di lavoro predefinita (e solo) dell&#39;archivio.
 
-Il **Preferenze** Questa opzione può essere utilizzata per impostare la lingua dell’interfaccia utente e per visualizzare e personalizzare i tasti di scelta rapida per varie azioni quali salvataggio, ricerca, creazione di note e così via.
+Il **Preferenze** Questa opzione può essere utilizzata per impostare la lingua dell’interfaccia utente e per visualizzare e personalizzare i tasti di scelta rapida per varie azioni, ad esempio salvare, cercare, creare una nota e così via.
 
 ## Creazione di una cartella {#creating-a-folder}
 

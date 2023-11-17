@@ -2,10 +2,10 @@
 title: Archivi di Cloud Manager
 description: Scopri come creare, visualizzare ed eliminare gli archivi Git in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 87%
+source-wordcount: '582'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ Per visualizzare e gestire gli archivi in Cloud Manager, segui la procedura ripo
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Dalla sezione **Panoramica del programma** , tocca o fai clic su **Archivi** per passare alla scheda **Archivi** pagina.
+1. Dalla sezione **Panoramica del programma** , seleziona la **Archivi** per passare alla scheda **Archivi** pagina.
 
 1. Clic **Aggiungi archivio**.
 
@@ -130,5 +130,5 @@ Quando utilizzi dei moduli Git secondari, tieni presente le seguenti limitazioni
 * Per motivi di sicurezza, non incorporare le credenziali negli URL Git.
 * Se non diversamente necessario, è consigliabile utilizzare dei moduli secondari superficiali.
    * Per eseguire l’operazione, esegui `git config -f .gitmodules submodule.<submodule path>.shallow true` per ciascun modulo secondario.
-* I riferimenti ai moduli Git secondari vengono archiviati in commit Git specifici. Di conseguenza, quando si apportano modifiche all’archivio dei moduli secondari, il commit a cui si fa riferimento deve essere aggiornato.
+* I riferimenti ai moduli Git secondari vengono archiviati in commit Git specifici. Di conseguenza, quando vengono apportate modifiche all’archivio dei sottomoduli, il commit a cui si fa riferimento deve essere aggiornato.
    * Ad esempio, utilizzando `git submodule update --remote`. 

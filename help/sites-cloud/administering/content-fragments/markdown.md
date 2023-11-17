@@ -3,13 +3,13 @@ title: Markdown
 description: Scopri in che modo l’editor dei frammenti di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti sia per la creazione della pagina che per la consegna headless.
 feature: Content Fragments
 role: User
-source-git-commit: af97fec754edae6216551763fd20cad5ee07179c
+exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 91%
+source-wordcount: '559'
+ht-degree: 88%
 
 ---
-
 
 # Markdown {#markdown}
 
@@ -31,7 +31,7 @@ Puoi definire:
 
 ## Notazione intestazione {#heading-notation}
 
-Per creare un’intestazione inserendo un hashtag (#) davanti al titolo. Un singolo hashtag (#) viene utilizzato per un titolo H1, due hashtag (##) per H2 e così via. Puoi utilizzare fino a 6 hashtag. Esempio:
+Per creare un’intestazione inserendo un hashtag (#) davanti al titolo. Un hashtag (#) viene utilizzato per un H1, due hashtag (##) per un H2 e così via. Puoi utilizzare fino a 6 hashtag. Esempio:
 
     `## This is an H2`
 

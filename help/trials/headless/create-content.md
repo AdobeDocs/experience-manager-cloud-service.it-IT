@@ -4,10 +4,10 @@ description: Utilizza il modello Frammento di contenuto creato in precedenza per
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 91%
+source-wordcount: '688'
+ht-degree: 81%
 
 ---
 
@@ -37,15 +37,15 @@ In questo modulo, puoi creare un Frammento di contenuto basato su tale modello u
 
 La console Frammenti di contenuto viene utilizzata per creare e modificare contenuti headless tra canali di distribuzione e indipendentemente dal contesto, che in molti casi può essere il metodo più efficace per l’authoring. In un modulo successivo esploreremo la modifica di contenuti headless nel contesto e sul posto.
 
-1. Tocca o fai clic sul pulsante **Crea** in alto a destra nella console.
+1. Seleziona la **Crea** in alto a destra nella console.
 
-1. La finestra di dialogo **Nuovo frammento di contenuto** si apre e lì puoi iniziare a creare un nuovo frammento di contenuto. La **Posizione** viene compilata automaticamente con le posizioni in cui verranno salvati i nuovi contenuti.
+1. Il **Nuovo frammento di contenuto** Viene visualizzata una finestra di dialogo in cui puoi iniziare a creare un frammento di contenuto. La **Posizione** viene compilata automaticamente con le posizioni in cui verranno salvati i nuovi contenuti.
 
 1. Nel menu a discesa **Modello di frammento di contenuto**, seleziona il modello di frammento di contenuto **Avventura** creato in precedenza.
 
 1. Aggiungi `Tuscany` come **Titolo** descrittivo per il frammento di contenuto. In questo modo è possibile identificare il frammento nella console.
 
-1. Tocca o fai clic su **Crea e apri**.
+1. Seleziona **Crea e apri**.
 
 ![Creazione di un nuovo frammento di contenuto](assets/do-not-localize/create-content.png)
 
@@ -71,7 +71,7 @@ Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento
 
 1. Fornisci un’**Immagine** rappresentativa del viaggio toccando o facendo clic su **Aggiungi risorsa** nel campo **Immagine**.
 
-1. Nella finestra a comparsa della risorsa, tocca o fai clic su **Sfoglia risorse** per selezionarne una esistente nella libreria delle risorse.
+1. Nel pop-up della risorsa, seleziona **Sfoglia risorse** per selezionare una risorsa esistente nella libreria delle risorse.
 
    ![Aggiungi risorsa](assets/do-not-localize/add-asset.png)
 
@@ -79,17 +79,17 @@ Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento
 
 1. I contenuti della cartella **ciclismo-toscana** vengono visualizzati a destra. Seleziona l’immagine `ADOBESTOCK_141786166.JPEG`.
 
-1. Tocca o fai clic su **Seleziona**.
+1. Seleziona **Seleziona**.
 
    ![Seleziona risorsa](assets/do-not-localize/select-asset.png)
 
 1. L’immagine selezionata viene visualizzata nel frammento di contenuto. Le modifiche vengono salvate automaticamente dall’editor.
 
-1. Al termine dell’aggiunta di contenuto, tocca o fai clic sul pulsante **Pubblica** in alto a destra dell’editor. Questo rende il frammento di contenuto disponibile per il consumo da parte di app esterne. Seleziona **Ora** dal menu a discesa. Puoi anche pianificarlo per la pubblicazione in un secondo momento.
+1. Dopo aver aggiunto il contenuto, seleziona la **Pubblica** in alto a destra nell’editor. Questo rende il frammento di contenuto disponibile per il consumo da parte di app esterne. Seleziona **Ora** dal menu a discesa. Puoi anche pianificarlo per la pubblicazione in un secondo momento.
 
    ![Pubblica contenuto](assets/do-not-localize/publish.png)
 
-1. Viene visualizzata la finestra di dialogo **Pubblica frammenti di contenuto**. AEM esegue automaticamente un controllo di riferimento per verificare che tutte le risorse necessarie siano pubblicate per il frammento di contenuto. In questo caso, dovrai anche pubblicare il modello creato. Tocca o fai clic su **Pubblica**.
+1. Viene visualizzata la finestra di dialogo **Pubblica frammenti di contenuto**. AEM esegue automaticamente un controllo di riferimento per verificare che tutte le risorse necessarie siano pubblicate per il frammento di contenuto. In questo caso, dovrai anche pubblicare il modello creato. Seleziona **Pubblica**.
 
    ![Controllo di pubblicazione e riferimento](assets/do-not-localize/publish-confirm.png)
 

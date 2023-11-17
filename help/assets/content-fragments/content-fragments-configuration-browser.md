@@ -2,10 +2,10 @@
 title: Frammenti di contenuto - Browser configurazioni (Risorse - Frammenti di contenuto)
 description: Scopri come abilitare la funzionalità Frammenti di contenuto nel Browser configurazioni.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 27%
+source-wordcount: '355'
+ht-degree: 80%
 
 ---
 
@@ -15,7 +15,7 @@ Scopri come abilitare alcune funzionalità relative ai frammenti di contenuto ne
 
 ## Abilita funzionalità frammento di contenuto per la tua istanza {#enable-content-fragment-functionality-instance}
 
-Prima di utilizzare i frammenti di contenuto, è necessario utilizzare **Browser configurazioni** per abilitare:
+Prima di utilizzare i frammenti di contenuto, utilizza la funzione **Browser di configurazione** per abilitare:
 
 * **Modelli per frammenti di contenuto**: obbligatorio
 * **Query GraphQL persistenti**: facoltativo
@@ -24,8 +24,8 @@ Prima di utilizzare i frammenti di contenuto, è necessario utilizzare **Browser
 >
 >Se non si abilita **Modelli per frammenti di contenuto**:
 >
->* il **Crea** non è disponibile per la creazione di modelli.
->* non puoi [seleziona la configurazione Sites per creare il punto finale correlato](/help/headless/graphql-api/graphql-endpoint.md).
+>* l’opzione **Crea** non è disponibile per la creazione di modelli.
+>* non puoi [selezionare la configurazione Sites per creare il punto finale correlato](/help/headless/graphql-api/graphql-endpoint.md).
 
 Per abilitare la funzionalità dei frammenti di contenuto, è necessario effettuare le seguenti operazioni:
 
@@ -34,24 +34,24 @@ Per abilitare la funzionalità dei frammenti di contenuto, è necessario effettu
 
 ### Abilitare la funzionalità dei frammenti di contenuto nel browser configurazioni {#enable-content-fragment-functionality-in-configuration-browser}
 
-Per utilizzare alcuni [Funzionalità Frammento di contenuto](#creating-a-content-fragment-model), tu **deve** prima attivarli tramite **Browser configurazioni**:
+Per utilizzare alcune [funzionalità dei frammenti di contenuto](#creating-a-content-fragment-model), per prima cosa **devi** attivarle tramite il **Browser di configurazione**:
 
 >[!NOTE]
 >
->Per maggiori dettagli, vedi [Browser configurazioni](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Consulta [Browser configurazioni](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
->[Subconfigurazioni](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (configurazione nidificata all’interno di un’altra configurazione) sono completamente supportate per l’utilizzo con Frammenti di contenuto, Modelli di frammenti di contenuto e query GraphQL.
+>Le [Configurazioni secondarie](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (configurazioni nidificate all’interno di un’altra configurazione) sono supportate totalmente per l’utilizzo con Frammenti di contenuto, Modelli di frammenti di contenuto e query GraphQL.
 >
 >Fai attenzione che:
 >
 >
->* Dopo aver creato i modelli in una sottoconfigurazione, NON è possibile spostare o copiare il modello in un’altra sottoconfigurazione.
+>* dopo la creazione di modelli in una configurazione secondaria, NON è possibile spostare o copiare il modello in un’altra configurazione secondaria.
 >
->* Un endpoint GraphQL è (ancora) basato su una configurazione principale (root).
+>* L’endpoint GraphQL si baserà (ancora) su una configurazione principale (primaria).
 >
->* Le query persistenti vengono (ancora) salvate in base alla configurazione principale (root).
+>* Le query persistenti verranno salvate (ancora) in base alla configurazione principale (primaria).
 
 
 1. Accedi a **Strumenti**, **Generali**, quindi apri **Browser configurazioni**.
@@ -59,8 +59,8 @@ Per utilizzare alcuni [Funzionalità Frammento di contenuto](#creating-a-content
 1. Utilizza **Crea** per aprire la finestra di dialogo, in cui:
 
    1. Specificare un **Titolo**.
-   1. Il **Nome** diventa il nome del nodo nell’archivio.
-      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM](/help/implementing/developing/introduction/naming-conventions.md).
+   1. Il **nome** diventa il nome del nodo nell’archivio.
+      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Se necessario è possibile regolarlo.
    1. Per attivarne l’uso, seleziona
       * **Modelli per frammenti di contenuto**
@@ -76,6 +76,6 @@ Per utilizzare alcuni [Funzionalità Frammento di contenuto](#creating-a-content
 
 Quando la configurazione **globale** è abilitato per la funzionalità frammento di contenuto, quindi si applica a qualsiasi cartella Risorse.
 
-Per utilizzare altre configurazioni (ovvero escludendo quelle globali) con una cartella Risorse simile, è necessario definire la connessione. Questa connessione viene eseguita selezionando l&#39;opzione **Configurazione** nel **Cloud Services** scheda di **Proprietà cartella** della cartella appropriata.
+Per utilizzare altre configurazioni con una cartella Risorse simile, ovvero escludendo il formato globale, è necessario definire la connessione. Questa operazione viene eseguita selezionando l’appropriata **Configurazione** nella scheda **Servizi cloud** della finestra **Proprietà cartella** della cartella specifica.
 
 ![Applica configurazione](assets/cfm-conf-02.png)

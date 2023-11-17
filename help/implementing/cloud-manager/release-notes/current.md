@@ -3,10 +3,10 @@ title: Note sulla versione 2023.11.0 di Cloud Manager in Adobe Experience Manage
 description: Queste sono le note sulla versione 2023.11.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 13%
+source-wordcount: '740'
+ht-degree: 12%
 
 ---
 
@@ -44,13 +44,13 @@ Partecipa al nostro programma di adozione anticipata e hai la possibilità di te
 
 Se utilizzi GitHub per gestire gli archivi, [ora puoi convalidare il codice direttamente all’interno degli archivi GitHub tramite Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) Questa integrazione elimina la necessità di sincronizzare in modo coerente il codice con l’archivio Adobe e consente di verificare le richieste pull prima di unirle ai rami principali.
 
-Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `Grp-CloudManager_BYOG@adobe.com` dal tuo indirizzo e-mail associato al tuo Adobe ID.
+Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, invia un’e-mail a `Grp-CloudManager_BYOG@adobe.com` dal tuo indirizzo e-mail associato al tuo Adobe ID.
 
 ### Autorizzazioni personalizzate {#custom-permissions}
 
 [Autorizzazioni personalizzate di Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) consente di creare nuovi profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
 
-se ti interessa testare questa nuova funzione e condividere i tuoi commenti, invia un messaggio e-mail `Grp-CloudManager-custom-permissions@adobe.com` dal tuo indirizzo e-mail associato al tuo Adobe ID.
+se ti interessa testare questa nuova funzione e condividere i tuoi commenti, invia un’e-mail a `Grp-CloudManager-custom-permissions@adobe.com` dal tuo indirizzo e-mail associato al tuo Adobe ID.
 
 ### Ripristino del contenuto self-service {#content-restore}
 
@@ -59,7 +59,7 @@ se ti interessa testare questa nuova funzione e condividere i tuoi commenti, inv
 * Ripristino del backup point-in-time per le 24 ore precedenti
 * Ripristini a tempo fisso per un massimo di sette giorni
 
-Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `aemcs-restorefrombackup-adopter@adobe.com` dall’e-mail associata al tuo Adobe ID. Nota:
+Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, invia un’e-mail a `aemcs-restorefrombackup-adopter@adobe.com` dall’e-mail associata al tuo Adobe ID.
 
 * Il programma di adozione anticipata è limitato solo agli ambienti di sviluppo.
 * La disponibilità del programma di adozione anticipata di questa funzione è limitata.
@@ -71,7 +71,7 @@ Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti
 
 La dashboard sfrutta Google Lighthouse, uno strumento open-source automatizzato per migliorare la qualità delle app web. Puoi eseguirla su qualsiasi pagina web, pubblica o che richiede l’autenticazione. Sono disponibili controlli di prestazioni, accessibilità, applicazioni web progressive, SEO e altro ancora.
 
-Ti interessa testare il nuovo cruscotto? Invia un&#39;e-mail a `aem-lighthouse-pilot@adobe.com` dall’e-mail associata al tuo Adobe ID per iniziare.
+Ti interessa testare il nuovo cruscotto? Invia un messaggio e-mail a `aem-lighthouse-pilot@adobe.com` dall’e-mail associata al tuo Adobe ID per iniziare.
 
 ## Problemi noti {#known-issues}
 

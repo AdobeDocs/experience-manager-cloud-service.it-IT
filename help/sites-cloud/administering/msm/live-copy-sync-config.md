@@ -4,10 +4,10 @@ description: Scopri le potenti opzioni di sincronizzazione Live Copy disponibili
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 96%
+source-wordcount: '2414'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ Se le azioni installate non soddisfano le tue esigenze, puoi [Crea una nuova azi
 | `contentDelete` | Questa azione elimina i nodi della Live Copy che non esistono nel sorgente. [Configura il **servizio** CQ MSM Content Delete Action](#excluding-properties-and-node-types-from-synchronization) per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. |  |
 | `contentUpdate` | Questa azione aggiorna il contenuto della Live Copy con le modifiche apportate dal sorgente. [Configura il **servizio** CQ MSM Content Update Action](#excluding-properties-and-node-types-from-synchronization) per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. |  |
 | `editProperties` | Questa azione modifica le proprietà della Live Copy. La proprietà `editMap` determina quali proprietà vengono modificate e il loro valore. Il valore della proprietà `editMap` deve utilizzare il formato seguente:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` e `new_value` sono espressioni regolari e `n` è un numero intero incrementato.<br>Ad esempio, considera il seguente valore per `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Questo valore modifica le proprietà dei nodi Live Copy come segue:<br>le `sling:resourceType` proprietà impostate su `contentpage` o `homepage` sono impostate su `mobilecontentpage`.<br>Le proprietà `cq:template` impostate su `contentpage` vengono impostate su `mobilecontentpage`. | `editMap: (String)` identifica la proprietà, il valore corrente e il nuovo valore. Per informazioni, consulta la descrizione. |
-| `notify` | Questa azione invia un evento di pagina segnalando che è stata soggetta a rollout. Per ricevere una notifica, è necessario innanzitutto iscriversi a eventi di rollout. |  |
+| `notify` | Questa azione invia un evento di pagina segnalando che è stata soggetta a rollout. Per ricevere una notifica, devi prima abbonarti agli eventi di rollout. |  |
 | `orderChildren` | Questa azione ordina i nodi figli in base all’ordine della blueprint. |  |
 | `referencesUpdate` | Questa azione di sincronizzazione aggiorna i riferimenti sulla Live Copy.<br>Cerca i percorsi nelle pagine Live Copy che puntano a una risorsa all’interno della blueprint. Quando viene trovato un percorso, lo aggiorna per indicare il punto in cui si trova la risorsa correlata all’interno della Live Copy. I riferimenti che hanno destinazioni esterne alla blueprint non vengono modificati. <br>[Configure il **servizio** CQ MSM References Update Action](#excluding-properties-and-node-types-from-synchronization) per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. |  |
 | `targetVersion` | Crea una versione della pagina Live Copy.<br>Questa deve essere l’unica azione di sincronizzazione inclusa in una configurazione di rollout. |  |
@@ -182,13 +182,13 @@ Puoi anche impostare le configurazioni di rollout per una pagina Live Copy quand
 
    ![Ignorare l’ereditarietà della configurazione di Live Copy](../assets/live-copy-inherit-override.png)
 
-1. Tocca o fai clic su **Salva &amp; Chiudi**.
+1. Seleziona **Salva e chiudi**.
 
 ### Impostazione della configurazione di rollout per una pagina blueprint {#setting-the-rollout-configuration-for-a-blueprint-page}
 
 Configura una pagina blueprint con le configurazioni di rollout da utilizzare quando la pagina blueprint è soggetta a rollout.
 
-Tieni presente che le pagine secondarie della pagina blueprint ereditano la configurazione. Quando imposti la configurazione di rollout da utilizzare, potresti sovrascrivere la configurazione che la pagina eredita dalla sua pagina principale.
+Le pagine figlie della pagina blueprint ereditano la configurazione. Quando imposti la configurazione di rollout da utilizzare, potresti sovrascrivere la configurazione che la pagina eredita dalla sua pagina principale.
 
 1. Utilizza la console **Sites** per selezionare la pagina principale della blueprint.
 1. Seleziona **Proprietà** nella barra degli strumenti.

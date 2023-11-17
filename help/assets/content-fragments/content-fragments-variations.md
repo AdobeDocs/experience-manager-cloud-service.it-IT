@@ -2,10 +2,10 @@
 title: Varianti - Authoring dei contenuti di frammenti (Risorse - Frammenti di contenuto)
 description: Scopri come le varianti possono rendere ancora più flessibili i contenuti headless in AEM consentendoti di creare contenuti per il frammento e quindi creare varianti di tali contenuti in base allo scopo.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 55%
+source-wordcount: '2530'
+ht-degree: 54%
 
 ---
 
@@ -79,7 +79,7 @@ Operazioni disponibili:
 
 ### Editor a schermo intero {#full-screen-editor}
 
-Quando modifichi un campo di testo su più righe puoi aprire l’editor a schermo intero; tocca o fai clic all’interno del testo effettivo, quindi seleziona la seguente icona di azione:
+Quando modifichi un campo di testo su più righe puoi aprire l’editor a schermo intero; seleziona all’interno del testo effettivo, quindi seleziona la seguente icona di azione:
 
 ![icona dell’editor a schermo intero](assets/cfm-variations-03.png)
 

@@ -4,10 +4,10 @@ description: Scopri come configurare [!DNL Adobe Experience Manager] Plug-in del
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4299'
-ht-degree: 3%
+source-wordcount: '4298'
+ht-degree: 4%
 
 ---
 
@@ -233,7 +233,7 @@ Specificare quindi la posizione dei fogli di stile a cui si desidera fare riferi
 
    * **Nome** `externalStyleSheets`
    * **Tipo** `String[]` (stringa multipla; fare clic su **Più** in CRXDE)
-   * **Valore/i** Percorso e nome di ogni foglio di stile che si desidera includere. Utilizza i percorsi dell’archivio.
+   * **Valori** Percorso e nome di ogni foglio di stile che si desidera includere. Utilizza i percorsi dell’archivio.
 
    >[!NOTE]
    >
@@ -376,7 +376,7 @@ I formati di paragrafo possono essere selezionati da:
 
    * **Nome** `tag`
    * **Tipo** `String`
-   * **Valore** Il tag di blocco per il formato; ad esempio: p, h1, h2, ecc.
+   * **Valore** Il tag di blocco per il formato, ad esempio: p, h1, h2 e così via.
 
      Non è necessario inserire le parentesi angolari di delimitazione.
 
@@ -586,9 +586,9 @@ Per aggiungere altri dizionari, se necessario, eseguire la procedura seguente.
 >
 Il controllo ortografico dell’editor Rich Text è disponibile su richiesta. Non viene eseguito automaticamente quando si inizia a digitare il testo.
 >
-Per eseguire il controllo ortografico, toccare o fare clic sul pulsante Controllo ortografico nella barra degli strumenti. L’editor Rich Text controlla l’ortografia delle parole ed evidenzia le parole con un’ortografia errata.
+Per eseguire il controllo ortografico, selezionare il pulsante Controllo ortografico nella barra degli strumenti. L’editor Rich Text controlla l’ortografia delle parole ed evidenzia le parole con un’ortografia errata.
 >
-Se si incorporano le modifiche suggerite dal correttore ortografico, lo stato del testo cambia e le parole digitate in modo errato non vengono più evidenziate. Per eseguire il controllo ortografico, toccare o fare di nuovo clic sul pulsante Controllo ortografia.
+Se si incorporano le modifiche suggerite dal correttore ortografico, lo stato del testo cambia e le parole digitate in modo errato non vengono più evidenziate. Per eseguire il controllo ortografico, selezionare nuovamente il pulsante Controllo ortografico.
 
 ## Configurare la dimensione della cronologia per le azioni Annulla e Ripristina {#undohistory}
 

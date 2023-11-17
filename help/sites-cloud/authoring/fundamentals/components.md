@@ -2,16 +2,16 @@
 title: Componenti
 description: I componenti sono elementi costitutivi essenziali per l’authoring delle pagine di contenuto in AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '347'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 94%
 
 ---
 
 # Componenti {#components}
 
-I componenti sono elementi costitutivi essenziali per l’authoring delle pagine di contenuto in Adobe Experience Manager (AEM). Componenti quali immagini, testo, titoli e così via, possono essere facilmente trascinati per creare contenuti.
+I componenti sono elementi costitutivi essenziali per l’authoring delle pagine di contenuto in Adobe Experience Manager (AEM). Componenti come immagini, testo, titoli e così via possono essere facilmente trascinati e rilasciati per creare i contenuti.
 
 AEM include diversi componenti predefiniti che offrono funzionalità complete per gli autori di siti web. I componenti sono disponibili quando si [modifica una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md) e, per facilitare l’applicazione di filtri, sono raggruppati per area funzionale principale, ovvero per gruppi di componenti.
 

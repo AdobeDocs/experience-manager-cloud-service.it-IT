@@ -2,10 +2,10 @@
 title: Aggiunta di annotazioni di pagina
 description: La modalità di annotazione consente di lasciare annotazioni e schizzi sulle pagine, in modo da facilitare il processo di revisione dei contenuti
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 91%
+source-wordcount: '676'
+ht-degree: 74%
 
 ---
 
@@ -43,11 +43,11 @@ Le annotazioni sono visibili solo in modalità Annota.
 
    ![Esempi di annotazione](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Tocca o fai clic sull’annotazione per aprirla e visualizzarne i dettagli.
+1. Seleziona l’annotazione per aprirla e visualizzarne i dettagli.
 
    ![Dettagli annotazione](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. Per uscire dalla modalità Annota e tornare alla modalità precedente tocca/fai clic sul pulsante x a destra della barra degli strumenti superiore.
+1. Per uscire dalla modalità Annota e tornare alla modalità precedente, selezionare il pulsante x a destra della barra degli strumenti superiore.
 
 ## Aggiunta e modifica di annotazioni {#annotating-a-component}
 
@@ -55,9 +55,9 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 1. [Modalità Avvia annotazione](#annotate-mode) sulla pagina.
 
-1. Tocca o fai clic sull’icona Aggiungi annotazione (simbolo + a sinistra della barra degli strumenti) per iniziare ad aggiungere annotazioni.
+1. Per iniziare ad aggiungere annotazioni, seleziona l’icona Aggiungi annotazione (simbolo + a sinistra della barra degli strumenti).
 
-1. Tocca o fai clic sul componente richiesto (i componenti ai quali è possibile aggiungere annotazioni saranno evidenziati da un bordo blu) per aggiungere l’annotazione e aprire la relativa finestra di dialogo:
+1. Seleziona il componente richiesto (i componenti ai quali è possibile aggiungere annotazioni sono evidenziati da un bordo blu) per aggiungere l’annotazione e aprire la relativa finestra di dialogo:
 
    ![Aggiunta di un’annotazione](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -80,9 +80,9 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 1. Dopo aver modificato un’annotazione, puoi effettuare le seguenti operazioni:
 
-   * Tocca o fai clic sul marcatore di testo per aprire l’annotazione. Una volta aperto, è possibile visualizzare il testo completo, apportare modifiche o [eliminare l’annotazione.](#deleting-annotations)
+   * Selezionare l&#39;indicatore di testo per aprire l&#39;annotazione. Una volta aperto, è possibile visualizzare il testo completo, apportare modifiche o [eliminare l’annotazione.](#deleting-annotations)
    * Riposiziona il marcatore di testo.
-   * Tocca o fai clic su una linea dello schizzo per selezionarlo e trascinarlo nella posizione desiderata.
+   * Selezionate una linea di sketch per selezionarlo e trascinarlo nella posizione desiderata.
    * Spostare o copiare un componente
       * Vengono spostate o copiate anche tutte le annotazioni e gli schizzi associati, mantenendo la stessa posizione in relazione al paragrafo.
 
@@ -101,9 +101,9 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 1. [Avvia modalità annota](#annotate-mode) sulla pagina.
 
-1. Tocca o fai clic sul marcatore di testo per aprire l’annotazione.
+1. Selezionare l&#39;indicatore di testo per aprire l&#39;annotazione.
 
-1. Tocca o fai clic sull’icona Elimina.
+1. Seleziona l’icona Elimina.
 
    ![Elimina annotazione](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
@@ -119,7 +119,7 @@ Con tutti gli schizzi associati è possibile eliminare solo gli schizzi specific
 
 1. [Avvia Modalità annota](#annotate-mode) sulla pagina.
 
-1. Tocca o fai clic sullo schizzo. AEM lo evidenzia con una casella blu più scura.
+1. Selezionate lo sketch. AEM lo evidenzia con una casella blu più scura.
 
    ![Seleziona lo schizzo da eliminare](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 

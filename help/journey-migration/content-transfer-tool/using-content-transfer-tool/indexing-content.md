@@ -2,9 +2,9 @@
 title: Indicizzazione dopo la migrazione del contenuto
 description: Scopri come il processo di migrazione indicizzerà i contenuti acquisiti nell’istanza del Cloud Service di destinazione.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '505'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ Per iniziare, passa a Cloud Acceleration Manager. Fai clic sulla scheda del prog
 e visualizzare i processi elencati.
 
 >[!NOTE]
->Puoi visualizzare o scaricare i registri di indicizzazione utilizzando le azioni del processo di acquisizione dal menu a discesa .... I registri saranno disponibili nel
+>Puoi visualizzare o scaricare i registri di indicizzazione utilizzando le azioni del processo di acquisizione, utilizzando l’elenco a discesa ... I registri saranno disponibili nel
 > Sezione Azioni del &#39;Registro di indicizzazione&#39;, al termine del processo di indicizzazione
 
 ### In sospeso

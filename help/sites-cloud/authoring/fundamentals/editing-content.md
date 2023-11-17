@@ -2,10 +2,10 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile aggiornarla modificandone i contenuti
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 93%
+source-wordcount: '2973'
+ht-degree: 92%
 
 ---
 
@@ -341,7 +341,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
    ![Barra degli strumenti di un componente pagina](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Tocca o fai clic sull’azione **Layout** per modificare il layout del componente.
+   Seleziona la **Layout** per regolare il layout del componente.
 
    ![Pulsante Layout della barra degli strumenti del componente](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

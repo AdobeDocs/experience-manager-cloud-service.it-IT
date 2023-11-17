@@ -2,10 +2,11 @@
 title: Note sulla versione 2023.06.0 degli strumenti di migrazione nell’AEM as a Cloud Service
 description: Note sulla versione 2022.06.0 degli strumenti di migrazione nell’AEM as a Cloud Service
 feature: Release Information
-source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
+exl-id: 021b7472-d1e4-4ef6-a040-c612fed8d3c3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 3%
 
 ---
 
@@ -25,4 +26,4 @@ La data di pubblicazione dello strumento Content Transfer v2.0.20 è il 8 giugno
 I vantaggi offerti da Content Transformer sono:
    * Fail-safe: un pacchetto viene creato da Content Transformer ogni volta che apporta modifiche all’archivio per risolvere i problemi. Se necessario, puoi ripristinare lo stato precedente installando il pacchetto.
    * Facile da usare: Content Transformer è stato integrato con lo strumento Content Transfer ed è dotato di una semplice interfaccia utente intuitiva.
-   * Risparmio di tempo: quando si dispone di un numero elevato di problemi di contenuto che rientrano in una categoria di pattern, è possibile risolverli tutti con solo un paio di clic utilizzando Content Transformer, riducendo in modo significativo i tempi e la complessità della migrazione.
+   * Risparmio di tempo: quando si dispone di un numero elevato di problemi di contenuto che rientrano in una categoria di pattern, è possibile risolverli tutti con diversi clic utilizzando Content Transformer, riducendo in modo significativo il tempo e la complessità della migrazione.

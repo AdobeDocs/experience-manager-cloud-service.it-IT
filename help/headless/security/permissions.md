@@ -3,10 +3,10 @@ title: Considerazioni sulle autorizzazioni per contenuti headless
 description: Scopri diverse considerazioni su autorizzazioni e ACL per un’implementazione headless con Adobe Experience Manager. Comprendi i diversi utenti tipo e i potenziali livelli di autorizzazione necessari sia per gli ambienti Author che per quelli Publish.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -64,7 +64,7 @@ La possibilità di modificare **Modelli per frammenti di contenuto** deve essere
 >
 >Le modifiche ai modelli di frammenti di contenuto modificano l’API GraphQL sottostante su cui le applicazioni headless si basano.
 
-Se desideri creare un gruppo che gestisca i modelli di frammento di contenuto ma non l’accesso completo da parte dell’amministratore, puoi creare un gruppo con le seguenti voci di controllo di accesso:
+Se desideri creare un gruppo che gestisca i modelli per frammenti di contenuto ma non l’accesso completo da parte dell’amministratore, puoi creare un gruppo con le seguenti voci di controllo di accesso:
 
 | Percorso | Autorizzazione | Privilegi |
 |-----| -------------| ---------|

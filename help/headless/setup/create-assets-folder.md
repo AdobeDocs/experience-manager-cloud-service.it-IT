@@ -2,10 +2,10 @@
 title: 'Creazione di una cartella di risorse: configurazione headless'
 description: Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 88%
 
 ---
 
@@ -25,8 +25,8 @@ Le cartelle di risorse vengono utilizzate per [organizzare le risorse di contenu
 
 Di solito, un amministratore deve creare cartelle solo occasionalmente, per organizzare i contenuti al momento della creazione. Ai fini di questa guida introduttiva, è sufficiente creare una sola cartella.
 
-1. Accedi ad AEM as a Cloud Service, quindi dal menu principale seleziona **Navigazione -> Risorse -> File**.
-1. Tocca o fai clic su **Crea -> Cartella**.
+1. Accedi a AEM as a Cloud Service e dal menu principale seleziona **Navigazione > Risorse > File**.
+1. Seleziona **Crea > Cartella**.
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.
    * Il **nome** diventa il nome del nodo nell’archivio.
@@ -38,12 +38,12 @@ Di solito, un amministratore deve creare cartelle solo occasionalmente, per orga
 1. In **Proprietà**, seleziona la scheda **Servizi cloud**.
 1. In **Configurazione cloud** seleziona la [configurazione creata in precedenza.](create-configuration.md)
    ![Configurare la cartella delle risorse](../assets/assets-folder-configure.png)
-1. Tocca o fai clic su **Salva e chiudi**.
-1. Nella finestra di conferma tocca o fai clic su **OK**.
+1. Seleziona **Salva e chiudi**.
+1. Seleziona **OK** nella finestra di conferma.
 
    ![Finestra di conferma](../assets/assets-folder-confirmation.png)
 
-Puoi creare ulteriori sottocartelle all’interno della cartella appena creata. Le sottocartelle ereditano la **configurazione cloud** della cartella principale. Tuttavia, questo può essere ignorato se vuoi utilizzare i modelli di un’altra configurazione.
+Puoi creare ulteriori sottocartelle all’interno della cartella appena creata. Le sottocartelle ereditano la **configurazione cloud** della cartella principale. Tuttavia, questo può essere ignorato se desideri utilizzare modelli di un’altra configurazione.
 
 Se utilizzi una struttura del sito localizzata, puoi [creare una directory principale della lingua](/help/assets/translate-assets.md) al di sotto della nuova cartella.
 

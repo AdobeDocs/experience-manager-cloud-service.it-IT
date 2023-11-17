@@ -1,9 +1,9 @@
 ---
 title: Conversione di una configurazione AMS in una configurazione Adobe Experience Manager as a Cloud Service Dispatcher
 description: Conversione di una configurazione AMS in una configurazione Adobe Experience Manager as a Cloud Service Dispatcher
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1282'
 ht-degree: 39%
 
 ---
@@ -79,7 +79,7 @@ Rimuovi le sezioni che fanno riferimento a variabili denominate DISP_ID, PUBLISH
    Esegui la convalida del Dispatcher nella directory, con il sottocomando httpd:
 
    `$ validator httpd`
-Se si verificano degli errori relativi a file &quot;include&quot; mancanti, verifica di averli rinominati correttamente.
+Se vengono visualizzati errori relativi a file &quot;include&quot; mancanti, verifica di averli rinominati correttamente.
 
    Se vengono visualizzate delle direttive Apache che non sono inserite nella whitelist, rimuovile.
 
@@ -190,7 +190,7 @@ con l’istruzione:
 
      `$ validator dispatcher`
 
-   * Se si verificano degli errori relativi a file &quot;include&quot; mancanti, verifica di averli rinominati correttamente.
+   * Se vengono visualizzati errori relativi a file &quot;include&quot; mancanti, verifica di averli rinominati correttamente.
 
    * Se vengono visualizzati errori relativi a una variabile `PUBLISH_DOCROOT` non definita, rinominala in `DOCROOT`.
 

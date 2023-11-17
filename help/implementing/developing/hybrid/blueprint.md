@@ -2,9 +2,9 @@
 title: Blueprint SPA
 description: Questo documento descrive il contratto generale, indipendente dal framework, che qualsiasi framework SPA deve soddisfare in modo da poter implementare componenti SPA modificabili all'interno dell'AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2055'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ Il resto del presente documento descrive i requisiti di questo livello specifico
 
 La struttura del contenuto della pagina è memorizzata in AEM. Il modello della pagina viene utilizzato per mappare e creare istanze dei componenti SPA. Gli sviluppatori dell&#39;SPA creano i componenti dell&#39;SPA che mappano ai componenti dell&#39;AEM. A tal fine, utilizzano il tipo di risorsa (o il percorso del componente AEM) come chiave univoca.
 
-I componenti SPA devono essere sincronizzati con il modello della pagina e devono essere aggiornati di conseguenza con qualsiasi modifica al relativo contenuto. Un pattern che sfrutta i componenti dinamici deve essere utilizzato per creare istantaneamente istanze di componenti seguendo la struttura del modello di pagina fornita.
+I componenti SPA devono essere sincronizzati con il modello della pagina e devono essere aggiornati di conseguenza con qualsiasi modifica al relativo contenuto. Un pattern che utilizza componenti dinamici deve essere utilizzato per creare istantaneamente istanze di componenti seguendo la struttura del modello di pagina fornita.
 
 ### Meta campi {#meta-fields}
 

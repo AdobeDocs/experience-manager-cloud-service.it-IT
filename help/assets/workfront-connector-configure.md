@@ -4,7 +4,7 @@ description: Configurare [!DNL Workfront for Experience Manager enhanced connect
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1770'
 ht-degree: 1%
@@ -100,7 +100,7 @@ Per configurare le mappature, effettua le seguenti operazioni:
 1. Accedi a **Strumenti** > **Risorse** > **Schemi metadati**.
 1. Seleziona il modulo schema metadati da modificare e fai clic su **Modifica** oppure crea uno schema di metadati da zero.
 1. Seleziona il campo del modulo schema metadati da modificare e seleziona **Impostazioni** nel pannello di destra.
-1. In entrata [!DNL Workfront] Campo modulo personalizzato seleziona il nome del [!DNL Workfront] che desideri mappare sulla proprietà AEM selezionata. Le opzioni disponibili sono:
+1. In entrata [!DNL Workfront] Campo modulo personalizzato seleziona il nome del [!DNL Workfront] che si desidera mappare alla proprietà AEM selezionata. Le opzioni disponibili sono:
 
    * Documenta campi modulo personalizzati
    * Campi modulo personalizzati del progetto
@@ -108,7 +108,7 @@ Per configurare le mappature, effettua le seguenti operazioni:
    * Campi modulo personalizzato attività
    * Campi Panoramica progetto (ID, Nome, Descrizione o Numero di riferimento)
 
-1. Nel caso in cui [!DNL Workfront] campo selezionato in [!UICONTROL Campo modulo personalizzato Workfront] è un campo di completamento automatico di tipo utente di Workfront, è necessario specificare quale campo utente di Workfront si desidera mappare. A tale scopo, selezionare Ottieni valore dal campo oggetto di riferimento Workfront e quindi specificare il nome dell&#39; [!UICONTROL Campo modulo personalizzato utente Workfront] da cui recuperare il valore da mappare.
+1. Nel caso in cui [!DNL Workfront] campo selezionato in [!UICONTROL Campo modulo personalizzato Workfront] è un campo di tipo Utente di Workfront, è necessario specificare quale campo Utente di Workfront si desidera mappare. A tale scopo, selezionare Ottieni valore dal campo oggetto di riferimento Workfront e quindi specificare il nome dell&#39; [!UICONTROL Campo modulo personalizzato utente Workfront] da cui recuperare il valore da mappare.
 
    ![configurazione mappatura metadati](/help/assets/assets/wf-metadata-mapping-config1.png)
 

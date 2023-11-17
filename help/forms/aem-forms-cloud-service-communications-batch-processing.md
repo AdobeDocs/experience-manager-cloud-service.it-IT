@@ -2,7 +2,7 @@
 title: Creazione di Bulk PDF senza sforzo - Padroneggiare l’arte con l’elaborazione in batch - La tua guida autonoma alla generazione di milioni di documenti PDF!
 description: Come si creano comunicazioni personalizzate e orientate al brand?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 2%

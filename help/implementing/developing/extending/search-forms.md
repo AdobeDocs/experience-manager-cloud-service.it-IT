@@ -2,7 +2,7 @@
 title: Configurazione dei moduli di ricerca
 description: Configurazione di Search Forms per Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2035'
 ht-degree: 17%
@@ -64,7 +64,7 @@ Le configurazioni predefinite (elencate in ordine alfabetico) disponibili sono:
 
 >[!NOTE]
 >
->Per ulteriori dettagli sui moduli di ricerca relativi a Assets, vedi [Risorse - Facet di ricerca](/help/assets/search-facets.md)
+>Per ulteriori dettagli sui moduli di ricerca relativi alle risorse, consulta [Risorse - Facet di ricerca](/help/assets/search-facets.md).
 
 
 ## Predicati e relative impostazioni {#predicates-and-their-settings}

@@ -1,11 +1,11 @@
 ---
 title: Centro azioni
-description: Sfruttare il Centro azioni per intervenire opportunamente su problemi e altre informazioni importanti
+description: Sfruttare il Centro operativo per intervenire in modo comodo in caso di incidenti e altre informazioni importanti
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 95%
+source-wordcount: '726'
+ht-degree: 93%
 
 ---
 

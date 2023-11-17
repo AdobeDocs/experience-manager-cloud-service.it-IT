@@ -2,10 +2,10 @@
 title: Recuperare le informazioni di accesso all’archivio Git
 description: Scopri in che modo lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell’archivio Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 93%
+source-wordcount: '880'
+ht-degree: 83%
 
 ---
 
@@ -24,7 +24,7 @@ Se hai anche il ruolo di amministratore di Cloud Manager o AEM oltre a sviluppat
 
 Questo articolo fa il passo successivo per mostrare come lo sviluppatore front-end utilizza l’accesso a Cloud Manager per recuperare le credenziali di accesso all’archivio Git AEM.
 
-Ora che esiste un sito creato in base a un modello, è presente una pipeline impostata, lo sviluppatore front-end è integrato nel processo e dispone di tutte le informazioni necessarie, questo articolo lascia da parte gli amministratori e si occupa esclusivamente al ruolo di sviluppatore front-end.
+Ora che esiste un sito creato in base a un modello, è presente una pipeline impostata, lo sviluppatore front-end è integrato nel processo e dispone di tutte le informazioni necessarie, questo articolo lascia da parte gli amministratori e si occupa esclusivamente del ruolo di sviluppatore front-end.
 
 ## Obiettivo {#objective}
 
@@ -78,7 +78,7 @@ Se non hai ricevuto questa e-mail, contatta l’amministratore di Cloud Manager.
 
 1. Accedi a Adobe Experience Cloud all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) oppure fai clic sul collegamento fornito nell’e-mail di benvenuto.
 
-1. Cloud Manager elenca i vari programmi disponibili. Tocca o fai clic su quello a cui devi accedere, secondo le indicazioni dell’amministratore di Cloud Manager. Se si tratta del primo progetto front-end per AEMaaCS, probabilmente è disponibile un solo programma.
+1. Cloud Manager elenca i vari programmi disponibili. Seleziona quello a cui devi accedere, secondo le indicazioni dell’amministratore di Cloud Manager. Se si tratta del primo progetto front-end per AEMaaCS, probabilmente è disponibile un solo programma.
 
    ![Selezione di un programma in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -88,7 +88,7 @@ Viene visualizzata una panoramica del programma. La pagina avrà un aspetto dive
 
 ## Recuperare le informazioni di accesso all’archivio  {#repo-access}
 
-1. Nella sezione **Pipeline** della pagina Cloud Manager, tocca o fai clic sul pulsante **Accesso alle informazioni sull’archivio**.
+1. In **Pipeline** nella pagina Cloud Manager, seleziona la sezione **Accedi a dati archivio** pulsante.
 
    ![Pipeline](assets/pipelines-repo-info.png)
 
@@ -96,13 +96,13 @@ Viene visualizzata una panoramica del programma. La pagina avrà un aspetto dive
 
    ![Informazioni sull’archivio](assets/repo-info.png)
 
-1. Tocca o fai clic sul pulsante **Genera password** per creare una password personale.
+1. Seleziona la **Genera password** per creare una password personale.
 
 1. Salva la password generata in un gestore di password sicuro. La password non verrà mai più visualizzata.
 
 1. Copia anche i campi **username** e **Riga di comando Git**. In seguito, utilizzerai queste informazioni per accedere all’archivio.
 
-1. Tocca o fai clic su **Chiudi**.
+1. Seleziona **Chiudi**.
 
 ## Novità {#what-is-next}
 

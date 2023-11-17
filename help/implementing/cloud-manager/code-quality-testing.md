@@ -2,10 +2,10 @@
 title: Test di qualità del codice
 description: Scopri come funziona il test di qualità del codice delle pipeline e come può migliorare la qualità delle distribuzioni.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 100%
+source-wordcount: '1159'
+ht-degree: 96%
 
 ---
 
@@ -110,7 +110,7 @@ la soluzione corretta è rimuovere la password hardcoded.
 
 ## Ottimizzazione dell’analisi dei pacchetti di contenuti {#content-package-scanning-optimization}
 
-Come parte del processo di analisi della qualità, Cloud Manager esegue l’analisi dei pacchetti di contenuti prodotti dalla build Maven. Per accelerare il processo, Cloud Manager offre delle ottimizzazioni che risultano efficaci quando si osservano determinati vincoli relativi ai pacchetti. La più significativa è l’ottimizzazione dei progetti che producono un singolo pacchetto di contenuti, generalmente denominati pacchetti “all”, che contengono una serie di altri pacchetti di contenuti prodotti dalla build e contrassegnati come ignorati. Quando Cloud Manager rileva questo scenario, anziché decomprimere il pacchetto “all”, scansiona i singoli pacchetti di contenuti e li ordina in base alle dipendenze. Consideriamo ad esempio il seguente output di build.
+Come parte del processo di analisi della qualità, Cloud Manager esegue l’analisi dei pacchetti di contenuti prodotti dalla build Maven. Per accelerare il processo, Cloud Manager offre delle ottimizzazioni che risultano efficaci quando si osservano determinati vincoli relativi ai pacchetti. La più significativa è l’ottimizzazione eseguita per i progetti che producono un singolo pacchetto di contenuti, generalmente denominato pacchetto &quot;all&quot;, che contiene diversi altri pacchetti di contenuti prodotti dalla build e contrassegnati come ignorati. Quando Cloud Manager rileva questo scenario, anziché decomprimere il pacchetto “all”, scansiona i singoli pacchetti di contenuti e li ordina in base alle dipendenze. Consideriamo ad esempio il seguente output di build.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (pacchetto di contenuti)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (pacchetto di contenuti ignorato)

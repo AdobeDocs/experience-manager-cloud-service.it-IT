@@ -2,9 +2,9 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2757'
+source-wordcount: '2753'
 ht-degree: 9%
 
 ---
@@ -279,7 +279,7 @@ AEM as a Cloud Service fornisce tre registri per i server web Apache e il livell
 * Registro errori server web Apache HTTPD
 * Registro di Dispatcher
 
-Tieni presente che questi registri sono disponibili solo per il livello di pubblicazione.
+Questi registri sono disponibili solo per il livello di pubblicazione.
 
 Questo set di registri fornisce informazioni approfondite sulle richieste HTTP al livello di pubblicazione as a Cloud Service dall’AEM prima che tali richieste raggiungano l’applicazione AEM. È importante comprendere che, idealmente, la maggior parte delle richieste HTTP ai server di livello Publish sono gestite da contenuto memorizzato nella cache dal server web Apache HTTPD e dal Dispatcher AEM e non raggiungono mai l’applicazione AEM stessa. Pertanto, nei registri Java, Request o Access dell’AEM non sono presenti istruzioni di registro per queste richieste.
 

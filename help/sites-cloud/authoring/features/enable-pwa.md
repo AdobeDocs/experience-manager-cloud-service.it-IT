@@ -2,10 +2,10 @@
 title: Abilitazione delle funzioni progressive delle web app
 description: AEM Sites consente all’autore dei contenuti di abilitare le funzionalità progressive delle app web a qualsiasi sito tramite una configurazione semplice invece che tramite la codifica.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 67%
+source-wordcount: '1998'
+ht-degree: 66%
 
 ---
 
@@ -102,8 +102,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 Con [i prerequisiti](#prerequisites) soddisfatta, per un autore di contenuti è facile abilitare le funzioni di PWA a un sito. Di seguito è riportato uno schema di base su come eseguire questa operazione. Le singole opzioni sono descritte in dettaglio nella sezione [Opzioni dettagliate.](#detailed-options)
 
 1. Accedi ad AEM.
-1. Dal menu principale, tocca o fai clic su **Navigazione** -> **Sites**.
-1. Seleziona il progetto Sites e tocca o fai clic su [**Proprietà**](/help/sites-cloud/authoring/fundamentals/page-properties.md) o utilizza il tasto di scelta rapida `p`.
+1. Dal menu principale, seleziona **Navigazione** > **Sites**.
+1. Seleziona il progetto Sites e seleziona [**Proprietà**](/help/sites-cloud/authoring/fundamentals/page-properties.md) o utilizza il tasto di scelta rapida `p`.
 1. Seleziona la scheda **App web progressiva** e configura le proprietà applicabili. Come minimo, desideri:
    1. Selezionare l’opzione **Abilita PWA**.
    1. Definire l’**URL di avvio**.
@@ -123,7 +123,7 @@ Con [i prerequisiti](#prerequisites) soddisfatta, per un autore di contenuti è 
 
       ![Definire i percorsi offline di PWA](../assets/pwa-offline.png)
 
-1. Toccare o fare clic su **Salva e chiudi**.
+1. Seleziona **Salva e chiudi**.
 
 Il tuo sito è ora configurato e puoi [installarlo come app locale.](#using-pwa-enabled-site)
 

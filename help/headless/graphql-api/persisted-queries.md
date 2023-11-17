@@ -3,9 +3,9 @@ title: Query GraphQL persistenti
 description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzarne le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1676'
 ht-degree: 98%
 
 ---
@@ -396,7 +396,7 @@ secondi i casi, l’endpoint restituirà `400` o `500` quando si verifica qualsi
 
   >[!NOTE]
   >
-  >Per maggiori dettagli, visita il sito https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >Vedi https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Codifica dell’URL della query per l’utilizzo da parte di un’app {#encoding-query-url}
 

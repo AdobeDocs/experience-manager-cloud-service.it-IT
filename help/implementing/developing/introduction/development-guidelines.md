@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2732'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Lo stato non deve essere mantenuto in memoria, ma deve essere mantenuto nell’a
 
 Il file system dell’istanza non deve essere utilizzato in AEM as a Cloud Service. Il disco è temporaneo e viene eliminato quando le istanze vengono riciclate. È possibile un uso limitato del file system per la memorizzazione temporanea in relazione al trattamento di singole richieste, ma non dovrebbe essere utilizzato impropriamente per file di grandi dimensioni. Questo perché potrebbe avere un impatto negativo sulla quota di utilizzo delle risorse ed essere soggetto a limitazioni del disco.
 
-Ad esempio, se l’utilizzo del file system non è supportato, il livello di pubblicazione deve garantire che tutti i dati che devono essere mantenuti vengano inviati a un servizio esterno per l’archiviazione a lungo termine.
+Ad esempio, se l’utilizzo del file system non è supportato, il livello di pubblicazione deve garantire che tutti i dati che devono essere mantenuti vengano inviati a un servizio esterno per uno storage a lungo termine.
 
 ## Osservazione {#observation}
 
@@ -243,7 +243,7 @@ Consulta la [Documentazione di AEM 6.5](https://experienceleague.adobe.com/docs/
 
 La porta del server SMTP deve essere impostata come `portDest` valore impostato nel parametro portForwards utilizzato nella chiamata API durante la configurazione della rete avanzata e `portOrig` il valore deve essere un valore significativo compreso nell’intervallo 30000 - 30999. Ad esempio, se la porta del server SMTP è 465, la porta 30465 deve essere utilizzata come `portOrig` valore.
 
-In questo caso e supponendo che SSL debba essere abilitato, nella configurazione di **Day CQ Mail Service OSGI** servizio:
+In questo caso, supponendo che SSL debba essere abilitato, nella configurazione di **Day CQ Mail Service OSGI** servizio:
 
 * Imposta `smtp.port` a `30465`
 * Imposta `smtp.ssl` a `true`

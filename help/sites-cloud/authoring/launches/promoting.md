@@ -2,9 +2,9 @@
 title: Promozione dei lanci
 description: Con la promozione delle pagine di lancio si sposta il contenuto nell’origine (produzione) prima della pubblicazione.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '811'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ Puoi promuovere i lanci dalla console **Sites** o dalla console **Lanci**:
       1. Seleziona la pagina di lancio desiderata utilizzando [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md).
       1. L’azione **Promuovi** è disponibile nella barra degli strumenti.
    * La console **Launches**:
-      1. Seleziona il lancio (tocca o fai clic sulla miniatura).
+      1. Seleziona il lancio (seleziona la miniatura).
       1. Seleziona **Promuovi**.
 1. Nel primo passaggio puoi specificare:
    * **Destinazione**

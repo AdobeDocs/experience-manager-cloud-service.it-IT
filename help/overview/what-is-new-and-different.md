@@ -2,10 +2,10 @@
 title: Differenze e novità - Adobe Experience Manager as a Cloud Service
 description: Differenze e novità - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 98%
+source-wordcount: '1889'
+ht-degree: 94%
 
 ---
 
@@ -36,13 +36,13 @@ Esistono differenze intrinseche tra gli approcci precedenti e AEM as a Cloud Ser
 
 >[!NOTE]
 >
->Per ulteriori dettagli sulle versioni On-Premise e Managed Service, consulta la documentazione di [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it).
+>Per ulteriori dettagli sulle versioni On-Premise e Managed Service, vedi [Documentazione di AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it) .
 
 ## Architettura {#architecture}
 
 >[!NOTE]
 >
->Per maggiori dettagli, consulta [Architettura](/help/overview/architecture.md).
+>Per ulteriori dettagli, consulta [Architettura](/help/overview/architecture.md).
 
 AEM as a Cloud Service adesso include:
 
@@ -87,7 +87,7 @@ Esistono due tipi di aggiornamenti delle versioni di AEM:
 
 >[!TIP]
 >
->Per maggiori dettagli, consulta [Aggiornamenti della versione di AEM](/help/implementing/deploying/aem-version-updates.md).
+>Per ulteriori dettagli, consulta [Aggiornamenti delle versioni AEM](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -156,7 +156,7 @@ L’avvio e la gestione di un progetto AEM è semplice quando si utilizza AEM as
 
 >[!NOTE]
 >
->Per ulteriori dettagli puoi iniziare con le [linee guida per lo sviluppo](/help/implementing/developing/introduction/development-guidelines.md) e [l’esercitazione WKND sullo sviluppo](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+>Per ulteriori dettagli, puoi iniziare con [Linee guida per lo sviluppo](/help/implementing/developing/introduction/development-guidelines.md) e [Sviluppo: tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 La nuova architettura che supporta AEM as a Cloud Service comporta alcuni cambiamenti fondamentali nell’esperienza complessiva di sviluppo. Uno degli obiettivi principali per AEM as a Cloud Service è consentire ai clienti esperti (che hanno utilizzato AEM on-premise o nel contesto di Adobe Managed Services) di migrare ad AEM as a Cloud Service il più rapidamente possibile, senza dover riscrivere la maggior parte del codice personalizzato. Tuttavia, potrebbero essere ancora necessari alcuni adeguamenti.
 
@@ -206,7 +206,7 @@ Per supportare le iterazioni e lo sviluppo rapidi, è anche possibile sviluppare
 
 >[!NOTE]
 >
->Per maggiori dettagli, inizia con [ripristino dei contenuti](/help/operations/backup.md), [Indicizzazione](/help/operations/indexing.md), e [altre attività di manutenzione](/help/operations/maintenance.md).
+>Per ulteriori dettagli, inizia con [ripristino dei contenuti](/help/operations/backup.md), [Indicizzazione](/help/operations/indexing.md), e [altre attività di manutenzione](/help/operations/maintenance.md).
 
 Con AEM as a Cloud Service, tali operazioni sono automatizzate in modo che qualsiasi interruzione del servizio non sia più necessaria.
 
@@ -224,7 +224,7 @@ Le operazioni per AEM as a Cloud Service sono inoltre supportate da una nuova in
 
 >[!NOTE]
 >
->Per maggiori dettagli, consulta [Sicurezza - Supporto IMS](/help/security/ims-support.md).
+>Consulta [Sicurezza - Supporto IMS](/help/security/ims-support.md).
 
 Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente integrato degli Adobe ID per accedere al livello di authoring.
 
@@ -240,7 +240,7 @@ Questo combina i vantaggi dell’
 
 >[!NOTE]
 >
->Per maggiori dettagli, [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) è un buon punto di partenza.
+>Per ulteriori dettagli, vedere [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) è un buon punto di partenza.
 
 I principi di base dell’interfaccia utente di authoring, sia per Sites che per Assets, saranno familiari per tutti coloro che hanno utilizzato AEM in passato.
 
@@ -274,6 +274,6 @@ Per ulteriori informazioni, consulta:
 
 >[!TIP]
 >
->Una volta acquisite le nozioni generali su AEM as a Cloud Service, per iniziare in breve tempo a utilizzarlo segui il [Percorso di onboarding](/help/journey-onboarding/overview.md).
+>Quando hai una panoramica di AEM as a Cloud Service, puoi iniziare rapidamente consultando il [Percorso di onboarding](/help/journey-onboarding/overview.md).
 >
 >Hai già iniziato a utilizzarlo, oppure vuoi iniziare a testare le funzionalità di AEM? Installa [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) per esplorare le potenti funzioni di AEM utilizzando esempi articolati.

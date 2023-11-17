@@ -5,9 +5,9 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '726'
 ht-degree: 3%
 
 ---
@@ -76,7 +76,7 @@ Puoi toccare il **Configura** ![icona configura](assets/configure.png) per impos
    * **Messaggio modello:** Specificare il messaggio da visualizzare durante il caricamento del PDF della firma. I servizi Adobe Sign impiegano un po’ di tempo per preparare e caricare signature PDF.
    * **Servizio di firma:** Seleziona la **Firma a mano** opzione.
 
-   * **Classe CSS**: specifica la classe CSS della libreria client, se presente. Si consiglia di utilizzare [temi](themes.md) e [stili in linea](inline-style-adaptive-forms.md) anziché Classe CSS.
+   * **Classe CSS**: specifica la classe CSS della libreria client, se presente. L’Adobe consiglia di utilizzare [temi](themes.md) e [stili in linea](inline-style-adaptive-forms.md) anziché Classe CSS.
 
    Tocca Fine ![aem_forms_save](assets/aem_forms_save.png) per salvare le modifiche. La firma è stata configurata correttamente.
 

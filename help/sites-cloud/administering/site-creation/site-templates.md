@@ -4,10 +4,10 @@ description: Scopri come utilizzare i modelli per sito AEM per predefinire la st
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '568'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 84%
 
 ---
 
@@ -37,15 +37,15 @@ I modelli sono efficaci perché sono riutilizzabili e personalizzabili. Inoltre,
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Tocca o fai clic su **Crea** in alto a destra dello schermo e dal menu a discesa seleziona **Sito da modello**.
+1. Seleziona **Crea** in alto a destra e dal menu a discesa, seleziona **Sito da modello**.
 
    ![Creazione di un sito da un modello](../assets/create-site-from-template.png)
 
-1. Nella procedura guidata Crea sito, tocca o fai clic su **Importa** nella parte superiore della colonna sinistra.
+1. Nella procedura guidata Crea sito, seleziona **Importa** nella parte superiore della colonna sinistra.
 
    ![Creazione guidata sito](../assets/site-creation-wizard.png)
 
-1. Nel browser dei file, individua il modello da utilizzare e tocca o fai clic su **Carica**.
+1. Nel browser dei file, individua il modello da utilizzare e seleziona **Carica**.
 
 1. Una volta caricato, viene visualizzato nell’elenco dei modelli disponibili.
 
@@ -61,7 +61,7 @@ I modelli di sito sono semplicemente pacchetti con una struttura logica che rifl
 
 * `files`: cartella con il kit dell&#39;interfaccia utente, file XD ed eventualmente altri file
 * `previews`: cartella con le schermate del modello di sito
-* `site`: pacchetto di contenuti del contenuto copiato per ogni sito creato da questo modello, ad esempio i modelli di pagina, le pagine e così via.
+* `site`: pacchetto di contenuti del contenuto copiato per ogni sito creato da questo modello, ad esempio modelli di pagina, pagine e così via.
 * `theme`: origini del [tema del sito](site-themes.md) per modificare l’aspetto del sito, inclusi CSS, JavaScript e così via.
 
 ## Modello di sito standard {#standard-site-template}

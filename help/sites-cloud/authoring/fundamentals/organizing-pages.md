@@ -2,10 +2,10 @@
 title: Creazione e organizzazione delle pagine
 description: Scopri come organizzare il sito web creando e gestendo pagine con AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 96%
+source-wordcount: '2429'
+ht-degree: 86%
 
 ---
 
@@ -16,17 +16,17 @@ Questo documento illustra come creare e gestire le pagine in Adobe Experience Ma
 
 >[!NOTE]
 >
->Il tuo account necessita dei diritti di accesso e delle autorizzazioni adeguati per intervenire sulle pagine, ad esempio per creare, copiare, spostare, modificare, eliminare elementi.
+>Il tuo account necessita dei diritti di accesso e delle autorizzazioni adeguati per intervenire sulle pagine, ad esempio per creare, copiare, spostare, modificare ed eliminare elementi.
 >
 >Nell’eventualità di problemi, rivolgiti al tuo amministratore di sistema.
 
 <!--
->Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to act on pages such as create, copy, move, edit, and delete.
 -->
 
 >[!TIP]
 >
->Vi sono una serie di [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) che si possono utilizzare dalla console di siti web che consentono di organizzare le pagine con maggiore efficienza.
+>Ce ne sono diversi [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) che puoi utilizzare dalla console dei siti web per organizzare le pagine in modo più efficiente.
 
 {{edge-delivery-authoring}}
 
@@ -70,7 +70,7 @@ Da qualsiasi punto, puoi vedere il ramo verso l’alto dalle breadcrumb nella ba
 
 ### Convenzioni di denominazione delle pagine {#page-naming-conventions}
 
-Durante la creazione di una nuova pagina sono disponibili due campi chiave:
+Durante la creazione di una pagina sono disponibili due campi chiave:
 
 * **[Titolo](#title)**:
 
@@ -95,7 +95,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 
-Durante la creazione di una nuova pagina, AEM ne [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte da AEM e JCR.
+Durante la creazione di una pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
 
 I caratteri minimi consentiti sono:
 
@@ -113,7 +113,7 @@ Per informazioni complete su tutti i caratteri consentiti, consulta le [convenzi
 
 #### Titolo {#title}
 
-Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome** [da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR.](/help/implementing/developing/introduction/naming-conventions.md)
+Se si specifica solo una pagina **Titolo** quando si crea una pagina, l’AEM la deriva **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
 
 Un campo **Titolo** che contiene caratteri non validi viene accettato, ma nel nome derivato dal titolo tali caratteri vengono sostituiti. Ad esempio:
 
@@ -124,7 +124,7 @@ Un campo **Titolo** che contiene caratteri non validi viene accettato, ma nel no
 
 #### Nome {#name}
 
-Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [convalida in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte da AEM e JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato con un messaggio esplicativo.
+Quando si specifica una pagina **Nome** durante la creazione di una pagina, AEM [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato con un messaggio esplicativo.
 
 ![Esempio di immissione di un nome di pagina non valido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -185,7 +185,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
 
 1. Nel primo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
 
-   * Seleziona il modello da utilizzare per creare la prima pagina, quindi tocca o fai clic su **Avanti** per proseguire.
+   * Seleziona il modello da utilizzare per creare la nuova pagina, quindi seleziona **Successivo** per procedere.
 
    * Seleziona **Annulla** per interrompere la procedura.
 
@@ -193,7 +193,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
 
 1. Nell’ultimo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
 
-   * Usa le tre schede per specificare le [proprietà di pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) da assegnare alla nuova pagina, quindi tocca o fai clic su **Crea** per creare la pagina.
+   * Utilizza le tre schede per inserire [proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) vuoi assegnarlo alla nuova pagina, quindi seleziona **Crea** per creare effettivamente la pagina.
 
    * Utilizza **Indietro** per tornare alla selezione del modello.
 
@@ -206,7 +206,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
    * **Nome**:
 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
-      * Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [convalida in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte da AEM e JCR.
+      * Se si specifica una pagina **Nome** durante la creazione di una pagina, AEM [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
       * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
 
    >[!TIP]
@@ -269,7 +269,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
    ![Copia](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Passa al percorso in cui desideri inserire la nuova copia della pagina.
-1. Tocca o fai clic sull’icona **Incolla** che è diventata disponibile.
+1. Seleziona la **Incolla** che è diventata disponibile.
 
    ![Incolla](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -279,7 +279,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
    ![Finestra di dialogo Incolla](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Tocca o fai clic sul pulsante **Incolla** per confermare la transazione e creare le nuove pagine.
+1. Seleziona la **Incolla** per confermare la transazione e creare le nuove pagine.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
 1. Dal passaggio **Rinomina** della procedura guidata, puoi effettuare le seguenti operazioni:
 
-   * Specifica il nome da assegnare alla pagina spostata, quindi tocca o fai clic su **Avanti**.
+   * Specifica il nome da assegnare alla pagina spostata, quindi seleziona **Successivo** per procedere.
    * Seleziona **Annulla** per interrompere la procedura.
 
    ![Spostare e rinominare la pagina](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -383,7 +383,7 @@ Le azioni di spostamento delle pagine vengono sempre elaborate in modo asincrono
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 -->
 
-Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato processi asincroni** in](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) **Navigazione globale** -> **Strumenti** -> **Operazioni** -> **Processi**.
+Lo stato dei processi asincroni può essere controllato in [**Stato processi asincroni** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) a **Navigazione globale** > **Strumenti** > **Operazioni** > **Processi**
 
 >[!NOTE]
 >

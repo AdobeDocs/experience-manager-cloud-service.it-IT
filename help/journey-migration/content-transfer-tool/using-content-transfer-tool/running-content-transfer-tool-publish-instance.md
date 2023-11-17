@@ -2,10 +2,10 @@
 title: Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione
 description: Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 11%
+source-wordcount: '250'
+ht-degree: 12%
 
 ---
 
@@ -24,7 +24,7 @@ Segui l’approccio raccomandato come descritto di seguito:
 
 * Utilizza la stessa versione dello strumento Content Transfer (Trasferimento contenuti) utilizzata nell’istanza di authoring.
 
-* È necessario migrare un solo nodo di pubblicazione. Deve essere rimosso dal load balancer prima di iniziare l’estrazione.
+* È necessario eseguire la migrazione di un solo nodo di pubblicazione. Deve essere rimosso dal load balancer prima di iniziare l’estrazione.
 
 * Durante l’acquisizione per la pubblicazione, il livello di pubblicazione non verrà ridotto (a differenza dell’authoring).
 

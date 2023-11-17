@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 1%
@@ -168,7 +168,7 @@ Per selezionare un Cloud Service e un ordine di firma:
 
    Se il **[!UICONTROL Adobe Sign Cloud Service]** è vuoto, segui la [Configura [!DNL Adobe Sign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) articolo per configurare il servizio.
 
-   Il menu a discesa elenca i Cloud Service presenti nel `global` cartella in Strumenti > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Inoltre, il menu a discesa elenca anche i Cloud Service presenti nella cartella selezionata nel **[!UICONTROL Contenitore configurazione]** quando crei un modulo adattivo.
+   Nell’elenco a discesa sono elencati i Cloud Service presenti nel `global` cartella in Strumenti > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Inoltre, l’elenco a discesa elenca anche i Cloud Service presenti nella cartella selezionata nell’ **[!UICONTROL Contenitore configurazione]** quando crei un modulo adattivo.
 
 1. Selezionare l&#39;ordine di firma dalla **[!UICONTROL I destinatari possono completare]** . I destinatari possono firmare un modulo adattivo **[!UICONTROL In sequenza]** - uno dopo l&#39;altro, o **[!UICONTROL Contemporaneamente]** - in qualsiasi ordine.
 
@@ -286,7 +286,7 @@ Facoltativamente, è anche possibile associare un bindref all&#39;ID contratto (
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 L’esperienza di firma del modulo è pronta. Puoi visualizzare in anteprima il modulo per verificare l’esperienza di firma. Nel modulo pubblicato: [!DNL Adobe Sign] I campi di blocco vengono visualizzati quando un destinatario riceve il modulo per la firma tramite un messaggio e-mail. Quando **[!UICONTROL Quando sono uguali il destinatario e la persona che compila il modulo?]** l’opzione è contrassegnata come sì e la condizione è soddisfatta, l’utente viene reindirizzato al contratto di Adobe Sign dopo l’invio e può firmare il documento immediatamente, invece di attendere che il contratto venga visualizzato nell’e-mail.

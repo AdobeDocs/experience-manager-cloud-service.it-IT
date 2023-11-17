@@ -2,9 +2,9 @@
 title: Regole per la qualità del codice personalizzato
 description: Questa pagina descrive le regole per la qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice dei team tecnici di Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4097'
+source-wordcount: '4095'
 ht-degree: 87%
 
 ---
@@ -542,7 +542,7 @@ Le applicazioni AEM spesso si rivolgono ad altre applicazioni utilizzando il pro
 
 Questa regola controlla che tale oggetto HttpClient non sia privato all&#39;interno di un metodo, ma globale a livello di classe, in modo da poterlo riutilizzare. In questo caso, il campo httpClient deve essere impostato nel costruttore della classe o nel `activate()` (se questa classe è un componente/servizio OSGi).
 
-Controlla anche la [Guida all’ottimizzazione](https://hc.apache.org/httpclient-legacy/performance.html) di HttpClient per alcune best practice relative all’utilizzo di HttpClient.
+Controlla la [Guida all’ottimizzazione](https://hc.apache.org/httpclient-legacy/performance.html) di HttpClient per alcune best practice relative all’utilizzo di HttpClient.
 
 #### Codice non conforme {#non-compliant-code-14}
 
@@ -1038,7 +1038,7 @@ Experience Manager as a Cloud Service non consente che le definizioni dell’ind
 * **Gravità**: minore
 * **Da**: versione 2023.1.0
 
-Per gli indici personalizzati, entrambi `includedPaths` e `queryPaths` deve essere configurato con valori identici. Se ne viene specificata una, l&#39;altra deve corrispondere. Tuttavia, esiste un caso particolare per gli indici di `damAssetLucene`, incluse le versioni personalizzate. Per questi, devi fornire solo `includedPaths`.
+Per gli indici personalizzati, entrambi `includedPaths` e `queryPaths` deve essere configurato con valori identici. Se ne viene specificata una, l&#39;altra deve corrispondere. Tuttavia, esiste un caso speciale per gli indici di `damAssetLucene`, incluse le versioni personalizzate. Per questi, devi fornire solo `includedPaths`.
 
 ### Il nodo di indice che specifica nodeScopeIndex sul tipo di nodo generico deve inoltre specificare includedPaths e queryPaths {#oakpal-full-text-on-generic-node-type}
 

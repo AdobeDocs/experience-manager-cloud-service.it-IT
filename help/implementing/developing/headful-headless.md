@@ -2,10 +2,10 @@
 title: Headful e headless in AEM
 description: È possibile implementare i progetti AEM in un modello headful e headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 93%
+source-wordcount: '1014'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Ma questa non deve essere una scelta binaria. AEM offre una flessibilità senza 
 
 ![Modelli di implementazione di AEM](/help/headless/assets/aem-implementation-models.png)
 
-In un modello headful o full-stack, il contenuto viene gestito nell’archivio AEM e i componenti AEM basati su Java, HTL, ecc. vengono utilizzati per eseguire il rendering del contenuto per l’esperienza utente. In questo modello, la creazione del contenuto, la sua presentazione, distribuzione e attribuzione di stile avvengono in AEM.
+In un modello headful o full stack, il contenuto viene gestito nell’archivio AEM e i componenti AEM basati su Java, HTL e così via vengono utilizzati per eseguire il rendering del contenuto per l’esperienza utente. In questo modello, la creazione del contenuto, la sua presentazione, distribuzione e attribuzione di stile avvengono in AEM.
 
 In un modello headless, il contenuto viene gestito nell’archivio AEM, ma distribuito tramite API come REST e GraphQL a un altro sistema per eseguire il rendering del contenuto per l’esperienza utente. In questo modello, il contenuto viene creato in AEM, ma la sua presentazione, distribuzione e attribuzione di stile avvengono su un’altra piattaforma.
 

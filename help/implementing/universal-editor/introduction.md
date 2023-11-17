@@ -2,10 +2,10 @@
 title: Introduzione all’editor universale
 description: Scopri in che modo Universal Editor consente di modificare ciò che vedi è ciò che ottieni (WYSIWYG) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 91%
+source-wordcount: '925'
+ht-degree: 84%
 
 ---
 
@@ -34,8 +34,8 @@ Gli utenti spesso pensano che un’implementazione headless limiti gli autori a 
 
 I requisiti per un’implementazione che utilizza l’Editor universale sono molto semplici e supportano:
 
-* **Qualsiasi architettura** - Rendering lato server, rendering lato edge, rendering lato client, ecc.
-* **Qualsiasi framework** - Vanilla AEM o qualsiasi framework di terze parti come React, Next.js, Angular, ecc.
+* **Qualsiasi architettura** : rendering lato server, rendering lato edge, rendering lato client e così via.
+* **Qualsiasi framework** - AEM &quot;vanilla&quot; o qualsiasi framework di terze parti come React, Next.js, Angular e così via.
 * **Qualsiasi hosting** - Può essere ospitato localmente su AEM o su un dominio remoto
 
 ### Qualsiasi contenuto {#any-content}
@@ -50,7 +50,7 @@ Un autore di contenuto deve avere la stessa potente esperienza di modifica prece
 
 Per un autore di contenuto, il contenuto non riguarda solo le informazioni contenute, ma anche il rendering e la ricezione. Il contenuto viene fornito con metadati aggiuntivi e regole di strumentazione, che l’editor universale può comprendere e modificare, tra cui:
 
-* **Applicazione di layout e stili** - Utilizzando un sistema di stili, i professionisti del marketing e gli autori di contenuto possono applicare stili diversi al loro contenuto e creare per questo layout diversi, come colonne, caroselli, schede, accordion, ecc.
+* **Applicazione di layout e stile** - Utilizzando un sistema di stili, l’operatore marketing e l’autore di contenuti possono applicare stili diversi al contenuto e creare layout diversi per il contenuto, ad esempio colonne, caroselli, schede, fisarmoniche e così via.
 
 ## Valore {#value}
 

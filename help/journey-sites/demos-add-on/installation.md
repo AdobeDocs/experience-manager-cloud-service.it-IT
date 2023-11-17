@@ -2,10 +2,10 @@
 title: Comprendere l’installazione del componente aggiuntivo Demo di riferimento
 description: Scopri Cloud Manager e come viene utilizzato per installare il componente aggiuntivo.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ Cloud Manager viene utilizzato per amministrare le risorse cloud che supportano 
 
 >[!TIP]
 >
->Per informazioni approfondite su Cloud Manager, consulta la sezione [Risorse aggiuntive](#additional-resources) di questo articolo per collegamenti a ulteriori informazioni.
+>Per informazioni approfondite su Cloud Manager, consulta [Risorse aggiuntive](#additional-resources) sezione di questo articolo per collegamenti a ulteriori informazioni.
 
 ### Programmi {#programs}
 

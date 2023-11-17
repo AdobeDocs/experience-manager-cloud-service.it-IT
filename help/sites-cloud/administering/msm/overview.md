@@ -4,10 +4,10 @@ description: Ottieni un’introduzione al riutilizzo dei contenuti con le potent
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 96%
+source-wordcount: '2702'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Questa pagina fornisce una panoramica del riutilizzo dei contenuti con MSM. Nell
 
 >[!NOTE]
 >
->MSM può essere utilizzato anche per Assets, inclusi i frammenti di contenuto. Per maggiori dettagli consulta [Riutilizzare i frammenti di contenuto con MSM per Assets](/help/assets/reuse-assets-using-msm.md) (disponibile solo tramite la console Assets).
+>MSM può essere utilizzato anche per Assets, inclusi i frammenti di contenuto. Consulta [Riutilizzare i frammenti di contenuto con MSM per le risorse](/help/assets/reuse-assets-using-msm.md) (disponibile solo tramite la console Risorse ).
 
 ## Scenari possibili {#possible-scenarios}
 
@@ -106,7 +106,7 @@ Ci sono molti casi d’uso di MSM e Live Copy. Alcuni scenari includono:
   >
   >Contro:
   >
-  >* Quanto delle singole copie deve essere adattato.
+  >* Quanto delle singole copie deve essere regolato.
 
 ## MSM dall’interfaccia utente {#msm-from-the-ui}
 
@@ -172,7 +172,7 @@ Come introduzione, la tabella seguente fornisce una panoramica dei termini princ
 
 >[!TIP]
 >
->Consulta il documento [Estensione di Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) per i nomi degli oggetti.
+>Consulta [Estensione di Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) per i nomi degli oggetti.
 
 ## Live Copy {#live-copies}
 
@@ -278,7 +278,7 @@ Un rollout è l’azione MSM essenziale che sincronizza le Live Copy con le loro
 Una configurazione di rollout definisce quando e come una Live Copy viene sincronizzata con il contenuto sorgente. Una configurazione di rollout è costituita da un trigger e da una o più azioni di sincronizzazione:
 
 * **Trigger**: un trigger è un evento che causa la sincronizzazione di un’azione live, ad esempio l’attivazione di una pagina sorgente. MSM definisce i trigger utilizzabili.
-* **Azioni di sincronizzazione**: le azioni di sincronizzazione vengono eseguite sulla Live Copy per sincronizzarla con la sorgente. Le azioni di esempio sono la copia del contenuto, l’ordine dei nodi figli e l’attivazione della pagina Live Copy. MSM fornisce una serie di azioni di sincronizzazione.
+* **Azioni di sincronizzazione**: le azioni di sincronizzazione vengono eseguite sulla Live Copy per sincronizzarla con la sorgente. Le azioni di esempio sono la copia del contenuto, l’ordine dei nodi figli e l’attivazione della pagina Live Copy. MSM fornisce diverse azioni di sincronizzazione.
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ I passaggi seguenti descrivono la procedura standard per riutilizzare il contenu
 1. Sviluppa il contenuto del sito sorgente.
 1. Determina la configurazione di rollout da utilizzare.
 
-   1. MSM [installa diverse configurazioni di rollout](live-copy-sync-config.md#installed-rollout-configurations) che possono soddisfare una serie di casi d&#39;uso.
+   1. MSM [installa diverse configurazioni di rollout](live-copy-sync-config.md#installed-rollout-configurations) che può soddisfare diversi casi d’uso.
    1. Eventualmente puoi [creare una configurazione di rollout](live-copy-sync-config.md#creating-a-rollout-configuration) se necessario.
 
 1. Determina dove devi [specificare le configurazioni di rollout da utilizzare](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) e configurale correttamente.

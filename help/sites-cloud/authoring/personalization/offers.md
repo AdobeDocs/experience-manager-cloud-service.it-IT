@@ -2,10 +2,10 @@
 title: Creazione e gestione delle offerte (console Offerte)
 description: Usa la console Offerte per creare offerte da utilizzare nelle esperienze Attività.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 96%
+source-wordcount: '1351'
+ht-degree: 83%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 La console **Offerte** in futuro diventerà obsoleta. Da ora in poi:
 
-* sarà disponibile solo per i clienti che dispongono di offerte *legacy* già definite (ovvero preesistenti);
+* Disponibile solo per i clienti che hanno *legacy* offerte già definite (ovvero preesistenti)
 * si consiglia di convertire tali offerte legacy in offerte basate su frammenti di esperienza;
    * non appena l’ultima offerta legacy sarà stata convertita o rimossa, la console **Offerte** non sarà più disponibile.
 
@@ -116,7 +116,7 @@ Per i clienti che dispongono di offerte legacy preesistenti, le opzioni **Usa mo
 Usa la console Offerte per creare offerte da [utilizzare in più esperienze](/help/sites-cloud/authoring/personalization/targeted-content.md). La creazione di offerte nella console Offerte consente di risparmiare tempo quando più esperienze richiedono la stessa offerta:
 
 * Crea l’offerta una volta nella libreria e usala in più esperienze per le attività del tuo marchio.
-* Modifica l’offerta nella libreria e la modifica interesserà tutte le esperienze che la utilizzano.
+* Modifica l’offerta nella libreria e la modifica influisce su tutte le esperienze che la utilizzano.
 
 Nella console Offerte, le offerte sono organizzate per marchio. Ogni marchio contiene una libreria di offerte che possono essere utilizzate nelle diverse esperienze del marchio. Utilizza le cartelle per definire una struttura gerarchica e organizzare le offerte in ogni libreria. Una struttura logica delle cartelle consente agli autori di trovare facilmente le offerte navigando nella libreria. Gli strumenti di assegnazione tag e ricerca consentono inoltre agli autori di trovare le offerte.
 
@@ -126,21 +126,21 @@ Crea un marchio a cui sono associate le offerte. Apri un marchio nella console O
 
 Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato anche nella [Console Attività](/help/sites-cloud/authoring/personalization/activities.md) dove puoi aggiungere e amministrare attività per il marchio.
 
-1. Fai clic o tocca **Personalizzazione** > **Offerte** nella console di navigazione.
+1. Nella console Navigazione, seleziona **Personalizzazione** > **Offerte**.
 
    ![Navigazione alla console Offerte](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
-1. Tocca o fai clic su **Crea** e quindi su **Crea** **marchio**.
-1. Seleziona il modello di marchio e tocca o fai clic su **Avanti**.
+1. Seleziona **Crea** e poi **Crea** **Marchio**.
+1. Seleziona il modello del brand e seleziona **Successivo**.
 1. Digita un titolo per il marchio in base a come desideri che appaia nelle console Offerte e Attività. Facoltativamente, digita o seleziona uno o più tag da associare al marchio.
-1. Tocca o fai clic su **Crea**.
+1. Seleziona **Crea**.
 
 ### Aggiunta di una cartella a una libreria di offerte {#add-a-folder-to-an-offer-library}
 
 Aggiungi una cartella alla libreria di offerte di un marchio per organizzare e archiviare le offerte. Puoi creare una cartella sotto il marchio o sotto altre cartelle.
 
 1. Nella console Offerte, apri il percorso in cui desideri creare la cartella. Ad esempio, apri il marchio per creare una cartella di livello superiore o apri un’altra cartella nella libreria.
-1. Tocca o fai clic su **Crea** > **Crea cartella o offerta**.
+1. Seleziona **Crea** > **Crea cartella o offerta**.
 
    ![Creazione di una cartella di offerta](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
@@ -149,7 +149,7 @@ Aggiungi una cartella alla libreria di offerte di un marchio per organizzare e a
 
    ![Definizione delle proprietà della cartella](/help/sites-cloud/authoring/assets/offers-folder-properties.png)
 
-1. Tocca o fai clic su **Crea**.
+1. Seleziona **Crea**.
 
 ### Aggiungere un’offerta a una libreria di offerte {#add-an-offer-to-an-offer-library}
 
@@ -158,13 +158,13 @@ Aggiungi un’offerta alla libreria di offerte di un marchio in modo che possa e
 Dopo aver creato l’offerta, puoi aprirla per eseguire l’authoring del contenuto.
 
 1. Nella console Offerte, apri la posizione in cui desideri creare l’offerta. Ad esempio, apri il marchio per creare un’offerta di livello superiore o apri una cartella nella libreria.
-1. Tocca o fai clic su **Crea** > **Crea cartella o offerta**.
+1. Seleziona **Crea** > **Crea cartella o offerta**.
 
    ![Creazione di una cartella di offerta](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
-1. Seleziona il modello **Pagina offerte** e tocca o fai clic su **Avanti**.
-1. Digita un titolo per l’offerta e facoltativamente seleziona o digita uno o più tag da associare all’offerta, quindi tocca o fai clic su **Crea**.
-1. Nella finestra di dialogo di conferma, per aprire l&#39;offerta di modifica tocca o fai clic su **Apri pagina**.
+1. Seleziona la **Pagina offerta** e quindi selezionare **Successivo**.
+1. Digita un titolo per l’offerta e facoltativamente seleziona o digita uno o più tag da associare all’offerta, quindi seleziona **Crea**.
+1. Nella finestra di dialogo di conferma, per aprire l’offerta da modificare seleziona **Apri pagina**.
 
 ### Modifica di un’offerta {#editing-an-offer}
 
@@ -172,7 +172,7 @@ Apri un’offerta e modifica il contenuto in base a come desideri che appaia nel
 
 Puoi aprire un’offerta da una cartella in una libreria di offerte o dai risultati della ricerca. Puoi anche aprire un’offerta da un’esperienza che utilizza l’offerta.
 
-1. Nella console Offerte, tocca o fai clic sull’icona accanto all’offerta e tocca o fai clic su **Modifica**.
+1. Nella console Offerte, seleziona l’icona accanto all’offerta e fai clic su **Modifica**.
 1. Aggiungi componenti all’offerta e modifica normalmente il contenuto dei componenti.
 
 ### Eliminazione di un’offerta {#deleting-an-offer}
@@ -181,15 +181,15 @@ Elimina un’offerta quando non è più necessaria. Quando tenti di eliminare un
 
 Puoi eliminare un’offerta quando visualizzi il contenuto di una cartella in una libreria di offerte o nei risultati della ricerca.
 
-1. Nella console Offerte, tocca o fai clic sull’icona accanto all’offerta e tocca o fai clic su **Elimina**.
+1. Nella console Offerte, seleziona l’icona accanto all’offerta e fai clic su **Elimina**.
 
-   Seleziona l’offerta e tocca o fai clic su **Elimina**.
+   Seleziona l’offerta e seleziona **Elimina**.
 
-1. Nella finestra di dialogo visualizzata, tocca o fai clic su **Elimina** per confermare l’eliminazione.
+1. Nella finestra di dialogo visualizzata, seleziona **Elimina** per confermare l’eliminazione.
 1. Se l’offerta viene utilizzata in una o più esperienze, viene visualizzata una finestra di dialogo per indicare che si fa riferimento all’offerta:
 
-   * Per eliminare l’offerta e rimuoverla dalle esperienze, tocca o fai clic su **Forza eliminazione**.
-   * Per mantenere l’offerta, tocca o fai clic su **Annulla**.
+   * Per eliminare l’offerta e rimuoverla dalle esperienze, seleziona **Forza eliminazione**.
+   * Per mantenere l’offerta, seleziona **Annulla**.
 
 ### Ricerca di offerte {#searching-for-offers}
 
@@ -201,5 +201,5 @@ I criteri di ricerca correnti vengono visualizzati accanto ai risultati della ri
 
 Per cercare le offerte:
 
-1. Nella parte superiore della console Offerte, tocca o fai clic sull&#39;icona della lente d&#39;ingrandimento. Per impostazione predefinita, la ricerca è limitata alle offerte.
+1. Nella parte superiore della console Offerte, seleziona l’icona della lente di ingrandimento. Per impostazione predefinita, la ricerca è limitata alle offerte.
 1. Immetti la parola chiave per cercare le offerte. Seleziona un elemento dai risultati di ricerca.

@@ -2,9 +2,9 @@
 title: Implementazione di un valutatore del predicato personalizzato per Query Builder
 description: Query Builder in AEM offre un modo semplice e personalizzabile per eseguire query sull’archivio dei contenuti
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Il raggruppamento dei predicati di replica con un valutatore di predicati person
 >
 >L’avvio di nuovi progetti AEM, compreso l’utilizzo di Maven, è spiegata in dettaglio da [l’esercitazione WKND.](develop-wknd-tutorial.md)
 
-Innanzitutto devi aggiornare le dipendenze Maven del progetto. Il `PredicateEvaluator` fa parte del `cq-search` deve essere aggiunto al file POM Maven.
+Innanzitutto devi aggiornare le dipendenze Maven del progetto. Il `PredicateEvaluator` fa parte del `cq-search` in modo che debba essere aggiunto al file POM Maven.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Il `cq-search` il progetto contiene `AbstractPredicateEvaluator` classe astratta
 
    >[!NOTE]
    >
-   >Il nome del `PredicateEvaluator` è il nome del predicato, utilizzato per la creazione di query.
+   >Il nome del `PredicateEvaluator` è il nome del predicato, utilizzato per la creazione delle query.
 
 1. Sostituisci:
 

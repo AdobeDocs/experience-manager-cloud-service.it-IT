@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 24%
+source-wordcount: '827'
+ht-degree: 9%
 
 ---
 
@@ -28,11 +28,11 @@ Al termine della revisione (approvazione o rifiuto delle risorse), il revisore r
 ## Creazione di un&#39;attività di revisione per le cartelle {#creating-a-review-task-for-folders}
 
 1. Dall’interfaccia utente di Assets, seleziona la cartella per la quale desideri creare un’attività di revisione.
-1. Dalla barra degli strumenti, tocca o fai clic sull’icona **[!UICONTROL Crea attività di revisione]** per aprire la pagina **[!UICONTROL Attività di revisione]**. Se l’icona non è visibile nella barra degli strumenti, tocca o fai clic su **[!UICONTROL More (Altro)]**, quindi seleziona l’icona.
+1. Dalla barra degli strumenti, seleziona la **[!UICONTROL Crea attività di revisione]** per aprire **[!UICONTROL Attività di revisione]** pagina. Se l’icona non è visibile nella barra degli strumenti, seleziona **[!UICONTROL Altro]** e seleziona l’icona.
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. (Facoltativo) Da **[!UICONTROL Progetto]** selezionare il progetto a cui si desidera associare l&#39;attività di revisione. Per impostazione predefinita, il **[!UICONTROL Nessuno]** è selezionata. Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
+1. (Facoltativo) Dal menu **[!UICONTROL Progetto]** selezionare il progetto a cui si desidera associare l&#39;attività di revisione. Per impostazione predefinita, il **[!UICONTROL Nessuno]** è selezionata. Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
 
    >[!NOTE]
    >
@@ -52,17 +52,17 @@ Al termine della revisione (approvazione o rifiuto delle risorse), il revisore r
 
    ![review_name](assets/review_name.png)
 
-1. Tocca o fai clic su **[!UICONTROL Invia]**, quindi tocca o fai clic su **[!UICONTROL Fine]** per chiudere il messaggio di conferma. Una notifica per la nuova attività viene inviata al responsabile approvazione.
-1. Accedi a [!DNL Experience Manager Assets] come Approvatore, passa all’interfaccia utente Assets. Per approvare le risorse, tocca o fai clic su **[!UICONTROL Notifiche]** e quindi selezionare il task di revisione dall&#39;elenco.
+1. Seleziona **[!UICONTROL Invia]** e quindi selezionare **[!UICONTROL Fine]** per chiudere il messaggio di conferma. Una notifica per la nuova attività viene inviata al responsabile approvazione.
+1. Accedi a [!DNL Experience Manager Assets] come Approvatore, passa all’interfaccia utente Assets. Per approvare le risorse, seleziona la **[!UICONTROL Notifiche]** e quindi selezionare il task di revisione dall&#39;elenco.
 
    ![notifica](assets/notification.png)
 
-1. Nella pagina **[!UICONTROL Rivedi attività]**, esamina i dettagli dell’attività di revisione, quindi tocca o fai clic su **[!UICONTROL Review (Verifica)]**.
-1. Nella pagina **[!UICONTROL Rivedi attività]**, seleziona le risorse, quindi tocca o fai clic sull’icona **[!UICONTROL Approva/Rifiuta]** per approvare o rifiutare, a seconda delle necessità.
+1. In **[!UICONTROL Attività di revisione]** , esaminare i dettagli del task di revisione e quindi selezionare **[!UICONTROL Revisione]**.
+1. In **[!UICONTROL Attività di revisione]** , seleziona le risorse e fai clic su **[!UICONTROL Approva/Rifiuta]** per approvare o rifiutare, a seconda dei casi.
 
    ![task_revisione](assets/review_task.png)
 
-1. Tocca o fai clic sul pulsante **[!UICONTROL Completa]** dalla barra degli strumenti. Nella finestra di dialogo, immetti un commento e tocca o fai clic su  **[!UICONTROL Completa]** per confermare.
+1. Seleziona la **[!UICONTROL Completa]** dalla barra degli strumenti. Nella finestra di dialogo, immetti un commento e seleziona  **[!UICONTROL Completa]** per confermare.
 1. Passa all’interfaccia utente Assets e apri la cartella. Le icone dello stato di approvazione per le risorse vengono visualizzate sia nella vista a schede che in quella a elenco.
 
    **Vista a schede**
@@ -76,7 +76,7 @@ Al termine della revisione (approvazione o rifiuto delle risorse), il revisore r
 ## Creazione di un&#39;attività di revisione per le raccolte {#creating-a-review-task-for-collections}
 
 1. Nella pagina Raccolte selezionare la raccolta per la quale si desidera creare un task di revisione.
-1. Dalla barra degli strumenti, tocca o fai clic sull’icona **[!UICONTROL Crea attività di revisione]** per aprire la pagina **[!UICONTROL Attività di revisione]**. Se l’icona non è visibile nella barra degli strumenti, tocca o fai clic su **[!UICONTROL More (Altro)]**, quindi seleziona l’icona.
+1. Dalla barra degli strumenti, seleziona la **[!UICONTROL Crea attività di revisione]** per aprire **[!UICONTROL Attività di revisione]** pagina. Se l’icona non è visibile nella barra degli strumenti, seleziona **[!UICONTROL Altro]** e seleziona l’icona.
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -96,14 +96,14 @@ Al termine della revisione (approvazione o rifiuto delle risorse), il revisore r
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Tocca o fai clic su **[!UICONTROL Invia]**, quindi tocca o fai clic su **[!UICONTROL Fine]** per chiudere il messaggio di conferma. Una notifica per la nuova attività viene inviata al responsabile approvazione.
-1. Accedi a [!DNL Experience Manager Assets] come Approvatore, passa alla console Risorse. Per approvare le risorse, tocca o fai clic su **[!UICONTROL Notifiche]** e quindi selezionare il task di revisione dall&#39;elenco.
-1. Nella pagina **[!UICONTROL Rivedi attività]**, esamina i dettagli dell’attività di revisione, quindi tocca o fai clic su **[!UICONTROL Review (Verifica)]**.
-1. Tutte le risorse della raccolta sono visibili nella pagina di revisione. Seleziona le risorse e tocca o fai clic su **[!UICONTROL Approva/Rifiuta]** per approvare o rifiutare le risorse, a seconda delle necessità.
+1. Seleziona **[!UICONTROL Invia]** e quindi selezionare **[!UICONTROL Fine]** per chiudere il messaggio di conferma. Una notifica per la nuova attività viene inviata al responsabile approvazione.
+1. Accedi a [!DNL Experience Manager Assets] come Approvatore, passa alla console Risorse. Per approvare le risorse, seleziona la **[!UICONTROL Notifiche]** e quindi selezionare il task di revisione dall&#39;elenco.
+1. In **[!UICONTROL Attività di revisione]** , esaminare i dettagli del task di revisione e quindi selezionare **[!UICONTROL Revisione]**.
+1. Tutte le risorse della raccolta sono visibili nella pagina di revisione. Seleziona le risorse e fai clic su **[!UICONTROL Approva/Rifiuta]** per approvare o rifiutare le risorse, a seconda delle necessità.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Tocca o fai clic sul pulsante **[!UICONTROL Completa]** dalla barra degli strumenti. Nella finestra di dialogo, immetti un commento e tocca o fai clic su **[!UICONTROL Completa]** per confermare.
+1. Seleziona la **[!UICONTROL Completa]** dalla barra degli strumenti. Nella finestra di dialogo, immetti un commento e seleziona **[!UICONTROL Completa]** per confermare.
 1. Passa alla console Raccolte e apri la raccolta. Le icone dello stato di approvazione per le risorse vengono visualizzate sia nella vista a schede che in quella a elenco.
 
    **Vista a schede**
@@ -118,13 +118,13 @@ Al termine della revisione (approvazione o rifiuto delle risorse), il revisore r
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

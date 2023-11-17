@@ -4,9 +4,9 @@ description: Utilizza il selettore di destinazione AEM per mostrare e selezionar
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '1904'
 ht-degree: 36%
 
 ---
@@ -259,7 +259,7 @@ Il selettore di destinazione consente inoltre di visualizzare i dati dell’arch
 
 È un esempio di `optionsFormSetup` proprietà. È possibile utilizzarlo per confermare la selezione, che viene trasmessa al `onConfirm` evento.
 
-### Crea una nuova cartella {#create-new-folder}
+### Crea una cartella . {#create-new-folder}
 
 Ti consente di creare una cartella nella cartella di destinazione del [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
@@ -274,7 +274,7 @@ Il selettore delle destinazioni consente di visualizzare la risorsa in quattro d
 
 ### Info {#info}
 
-L’icona delle informazioni o info consente di visualizzare i metadati della risorsa selezionata. Include vari dettagli come dimensioni, dimensioni, descrizione, percorso, data di modifica e data di creazione. Le informazioni sui metadati vengono fornite durante il caricamento, la copia o la creazione di una nuova risorsa.
+L’icona delle informazioni o info consente di visualizzare i metadati della risorsa selezionata. Include vari dettagli come dimensioni, dimensioni, descrizione, percorso, data di modifica e data di creazione. Le informazioni sui metadati vengono fornite durante il caricamento, la copia o la creazione di una risorsa.
 
 ### Selezione cartella {#select-folder}
 

@@ -2,10 +2,10 @@
 title: Esportazione di frammenti di contenuto in Adobe Target
 description: Scopri come esportare i frammenti di contenuto in Adobe Target, per testare e personalizzare le esperienze.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2231'
-ht-degree: 95%
+source-wordcount: '2223'
+ht-degree: 96%
 
 ---
 
@@ -69,7 +69,7 @@ Prima di esportare un frammento è necessario aggiungere la **Configurazione clo
 * selezionare un’area di lavoro di Target come destinazione
 * seleziona un dominio di Externalizer per riscrivere i riferimenti nel frammento di contenuto (facoltativo)
 
-Le opzioni richieste possono essere selezionate in **Proprietà pagina** della cartella, del frammento o di entrambi i tipi richiesti; la specifica viene ereditata in base alle necessità.
+Le opzioni richieste possono essere selezionate in **Proprietà pagina** della cartella e/o del frammento richiesti; la specifica viene ereditata in base alle necessità.
 
 1. Passa alla console **Assets**.
 
@@ -163,7 +163,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -175,7 +175,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
 
    * **ID tenant**: ID del tenant
 
-   * **Configurazione IMS**: seleziona la configurazione richiesta dall’elenco a discesa
+   * **Configurazione IMS**: seleziona la configurazione desiderata dall’elenco a discesa
 
    * **Tipo di API**: impostazione predefinita REST (XML è obsoleto)
 
@@ -187,7 +187,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
 
    * **Utilizza targeting accurato:** per impostazione predefinita questa casella di controllo è selezionata. Se questa opzione è selezionata, la configurazione del servizio cloud attenderà il caricamento del contesto prima di caricare il contenuto. Vedi la nota che segue.
 
-   * **Sincronizza segmenti da Adobe Target:** seleziona questa opzione per scaricare i segmenti definiti in Target e utilizzarli in AEM. Devi selezionare questa opzione quando la proprietà Tipo API è REST, perché i segmenti in linea non sono supportati e devi sempre utilizzare i segmenti da Target. Nota che il termine AEM “segmento” è equivalente a “pubblico” in Target.
+   * **Sincronizza segmenti da Adobe Target:** seleziona questa opzione per scaricare i segmenti definiti in Target e utilizzarli in AEM. Seleziona questa opzione quando la proprietà Tipo API è REST, perché i segmenti in linea non sono supportati e devi sempre utilizzare i segmenti da Target. Il termine AEM &quot;segmento&quot; equivale al termine Target &quot;pubblico&quot;.
 
    * **Libreria client:** questo valore predefinito è AT.js (mbox.js è obsoleto)
 
@@ -288,8 +288,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
   ![Cloud Service Configurations](assets/chlimage_1-165.png)
 
@@ -299,7 +299,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Select **Done**.
 1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
 
    >[!NOTE]
@@ -313,14 +313,14 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >Per le risorse multimediali, come le immagini, viene esportato solo un riferimento in Target. La risorsa stessa rimane memorizzata in AEM Assets e viene distribuita dall’istanza di pubblicazione AEM.
 >
->Per questo motivo è necessario pubblicare il frammento di contenuto con tutte le relative risorse prima di esportarlo in Target.
+>Per questo motivo è necessario pubblicare il Frammento di contenuto, con tutte le relative risorse, prima di esportarlo in Target.
 
 Per esportare un frammento di contenuto da AEM in Target (dopo aver specificato la configurazione cloud):
 
 1. Passa al frammento di contenuto nella console **Assets**.
 1. Seleziona il frammento di contenuto che desideri esportare in Target.
 
-1. Tocca o fai clic su **Esporta nelle offerte Adobe Target**.
+1. Seleziona **Esporta in offerte Adobe Target**.
 
    ![Esporta in Adobe Target](assets/cfm-export-target-01.png)
 
@@ -334,19 +334,19 @@ Per esportare un frammento di contenuto da AEM in Target (dopo aver specificato 
    
    -->
 
-1. Tocca o fai clic su **Esporta senza pubblicare** o **Pubblica** in base alle esigenze.
+1. Seleziona **Esporta senza pubblicare** o **Pubblica** secondo necessità.
 
    >[!NOTE]
    >
-   >Le azioni effettive visualizzate dipendono dallo stato del frammento e delle risorse correlate.
+   >Le azioni effettive visualizzate dipenderanno dallo stato del frammento e delle risorse correlate.
    >
-   >Se è già stato pubblicato tutto e non è stato modificato nulla da allora, questo passaggio viene superato.
+   >Se tutto è già stato pubblicato e da allora non è stato modificato nulla, questo passaggio verrà ignorato.
 
    >[!NOTE]
    >
    >Selezionando **Pubblica**, il frammento di contenuto verrà pubblicato immediatamente e verrà inviato a Target.
 
-1. Nella finestra di conferma tocca o fai clic su **OK**.
+1. Seleziona **OK** nella finestra di dialogo di conferma.
 
    Il frammento di contenuto ora dovrebbe trovarsi in Target.
 
@@ -396,7 +396,7 @@ Per evitare tali situazioni:
 
 ## Ulteriori risorse {#further-resources}
 
-Per ulteriori informazioni, vedi:
+Per ulteriori informazioni, consulta:
 
 <!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)

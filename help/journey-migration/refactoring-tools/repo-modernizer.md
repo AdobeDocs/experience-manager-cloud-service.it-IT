@@ -2,9 +2,9 @@
 title: Modernizzatore dell'archivio
 description: Scopri come ristrutturare i pacchetti di progetto esistenti e renderli compatibili con la struttura di progetto definita per Adobe Experience Manager as a Cloud Service.
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '322'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ Repository Modernizer crea una struttura di progetto AEM Cloud Service compatibi
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Ad Adobe I/O, CLI : si consiglia di utilizzare il Modernizzatore dell’archivio tramite `aio-cli-plugin-aem-cloud-service-migration` (plug-in per il refactoring del codice as a Cloud Service AEM per Adobe I/O CLI).
+* A titolo di Adobe I/O CLI: Adobe consiglia di utilizzare il Modernizzatore dell’archivio tramite `aio-cli-plugin-aem-cloud-service-migration` (plug-in per il refactoring del codice as a Cloud Service AEM per Adobe I/O CLI).
 
   Consulta **[Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** in questo modo puoi imparare a installare e utilizzare il plug-in.
 

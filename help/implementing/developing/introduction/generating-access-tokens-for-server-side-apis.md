@@ -2,9 +2,9 @@
 title: Generazione dei token di accesso per le API lato server
 description: Scopri come facilitare la comunicazione tra un server di terze parti e AEM as a Cloud Service generando un token JWT sicuro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2089'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Il flusso server-to-server è descritto di seguito, insieme a un flusso semplifi
 
 ## Flusso server-to-server {#the-server-to-server-flow}
 
-Gli utenti con ruolo di amministratore dell’organizzazione IMS e che sono membri del profilo di prodotto Utenti AEM o Amministratori AEM in AEM Author possono generare un set di credenziali dall’AEM as a Cloud Service. Ogni credenziale è un payload JSON che include un certificato (la chiave pubblica), una chiave privata e un account tecnico costituito da una `clientId` e `clientSecret`. Tali credenziali possono essere recuperate in seguito da un utente con il ruolo di amministratore dell’ambiente as a Cloud Service dell’AEM e devono essere installate su un server non AEM e trattate con attenzione come chiave segreta. Questo file in formato JSON contiene tutti i dati necessari per l’integrazione con un’API as a Cloud Service per AEM. I dati vengono utilizzati per creare un token JWT firmato, che viene scambiato con l’Adobe Identity Management Services (IMS) per un token di accesso IMS. Questo token di accesso può quindi essere utilizzato come token di autenticazione Bearer per rendere as a Cloud Service le richieste all’AEM. Per impostazione predefinita, il certificato nelle credenziali scade dopo un anno, ma può essere aggiornato quando necessario, come descritto [qui](#refresh-credentials).
+Gli utenti con ruolo di amministratore dell’organizzazione IMS e che sono membri del profilo di prodotto Utenti AEM o Amministratori AEM nell’istanza Autore AEM possono generare un set di credenziali dall’AEM as a Cloud Service. Ogni credenziale è un payload JSON che include un certificato (la chiave pubblica), una chiave privata e un account tecnico costituito da una `clientId` e `clientSecret`. Tali credenziali possono essere recuperate in seguito da un utente con il ruolo di amministratore dell’ambiente as a Cloud Service dell’AEM e devono essere installate su un server non AEM e trattate con attenzione come chiave segreta. Questo file in formato JSON contiene tutti i dati necessari per l’integrazione con un’API as a Cloud Service per AEM. I dati vengono utilizzati per creare un token JWT firmato, che viene scambiato con l’Adobe Identity Management Services (IMS) per un token di accesso IMS. Questo token di accesso può quindi essere utilizzato come token di autenticazione Bearer per rendere as a Cloud Service le richieste all’AEM. Per impostazione predefinita, il certificato nelle credenziali scade dopo un anno, ma può essere aggiornato quando necessario, come descritto [qui](#refresh-credentials).
 
 Il flusso server-to-server prevede i seguenti passaggi:
 
@@ -49,7 +49,7 @@ Dopo la creazione, le credenziali verranno visualizzate nella sezione **Account 
 
 ![Visualizza credenziali](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-Gli utenti possono visualizzare le credenziali in un secondo momento utilizzando l’azione Visualizza. Inoltre, come descritto più avanti nell’articolo, gli utenti possono modificare le credenziali per lo stesso account tecnico. Per eseguire questa modifica, crea una nuova chiave privata o un nuovo certificato, nei casi in cui il certificato debba essere rinnovato o revocato.
+Gli utenti possono visualizzare le credenziali in un secondo momento utilizzando l’azione Visualizza. Inoltre, come descritto più avanti nell’articolo, gli utenti possono modificare le credenziali per lo stesso account tecnico. Questa operazione viene eseguita creando una chiave privata o un certificato, nei casi in cui il certificato debba essere rinnovato o revocato.
 
 Gli utenti con il ruolo Amministratore dell’ambiente as a Cloud Service dall’AEM possono in seguito creare credenziali per account tecnici aggiuntivi. Questa funzionalità è utile quando diverse API hanno requisiti di accesso diversi. Ad esempio, lettura e scrittura.
 

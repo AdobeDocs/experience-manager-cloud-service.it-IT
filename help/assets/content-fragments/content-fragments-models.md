@@ -2,10 +2,10 @@
 title: Modelli per frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuti strutturati.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2935'
-ht-degree: 93%
+source-wordcount: '2931'
+ht-degree: 91%
 
 ---
 
@@ -88,7 +88,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
 1. **Per rimuovere un campo**
 
-   Seleziona il campo richiesto, quindi tocca o fai clic sull’icona del cestino. Viene richiesto di confermare l’azione.
+   Seleziona il campo richiesto, quindi seleziona l’icona del cestino. Viene richiesto di confermare l’azione.
 
    ![rimuovere](assets/cfm-models-06.png)
 
@@ -113,7 +113,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 * **Data e ora**
    * Aggiungi una data e/o un’ora
 * **Enumerazione**
-   * Aggiungi un set di caselle di controllo, pulsanti di scelta o campi a discesa
+   * Aggiungere un set di campi casella di controllo, pulsanti di scelta o elenco a discesa
 * **Tag**
    * Consente agli autori di frammenti di accedere alle aree dei tag e di selezionarle
 * **Riferimento contenuto**
@@ -332,9 +332,9 @@ I modelli per frammenti di contenuto dispongono di uno stato che puoi impostare 
 
 ### Abilitazione di un modello per frammenti di contenuto {#enabling-a-content-fragment-model}
 
-Una volta creato un modello, sarà necessario abilitarlo per consentire quanto segue:
+Quando viene creato un modello, questo deve essere abilitato in modo che:
 
-* Possibilità di selezionarlo quando si crea un nuovo frammento di contenuto
+* Può essere selezionato quando si crea un frammento di contenuto.
 * Possibilità di utilizzarlo come riferimento all’interno di un modello per frammento di contenuto
 * Possibilità di utilizzarlo in GraphQL, affinché venga generato lo schema
 

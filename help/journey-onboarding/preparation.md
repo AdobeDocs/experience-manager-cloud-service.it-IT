@@ -2,10 +2,10 @@
 title: Preparazione all’onboarding
 description: Prima dell’inizio del processo di onboarding e di effettuare l’accesso al sistema è necessario che l’amministratore comprenda una serie di passaggi preparatori.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 96%
+source-wordcount: '760'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Ora che sai cosa ti riserva il processo di onboarding poiché hai letto l’arti
 
 AEM as a Cloud Service è uno strumento potente e flessibile che offre numerose soluzioni, componenti aggiuntivi e modelli di distribuzione. La soluzione a cui la tua organizzazione ha diritto è definita nel contratto con Adobe, che governa l’avvio del processo di onboarding.
 
-Dopo aver letto questo documento saprai:
+Dopo aver letto questo documento, dovresti capire
 
 * Quali punti sono definiti nel contratto con Adobe.
 * Cosa fornisce Adobe.
@@ -34,7 +34,7 @@ Questo video riassume il processo di onboarding descritto nel percorso ed è con
 
 ## Contratto {#contract}
 
-L’onboarding su AEM as a Cloud Service inizia con la sottoscrizione di un contratto tra l’organizzazione e Adobe. Questo passaggio è necessario in quanto il contratto specifica una serie di importanti accordi tra Adobe e l’organizzazione, ad esempio:
+L’onboarding su AEM as a Cloud Service inizia con la sottoscrizione di un contratto tra l’organizzazione e Adobe. Il motivo è che il contratto specifica diversi importanti accordi tra Adobe e la tua organizzazione, ad esempio:
 
 * Quali soluzioni e componenti aggiuntivi può utilizzare l’organizzazione.
 * Il numero e i tipi di ambienti a cui è possibile accedere.

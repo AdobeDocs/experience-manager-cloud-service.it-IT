@@ -4,10 +4,10 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3060'
-ht-degree: 60%
+source-wordcount: '3058'
+ht-degree: 59%
 
 ---
 
@@ -129,7 +129,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
 1. **Per rimuovere un campo**
 
-   Seleziona il campo richiesto, quindi tocca o fai clic sull’icona del cestino. Viene richiesto di confermare l’azione.
+   Seleziona il campo richiesto, quindi seleziona l’icona del cestino. Viene richiesto di confermare l’azione.
 
    ![Rimuovi](assets/cf-cfmodels-remove-icon.png)
 
@@ -199,7 +199,7 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
   >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering come** 
-Consente varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze.
+Sono disponibili varie opzioni per realizzare o riprodurre il campo in un frammento. Spesso questo consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze.
 
 * **Etichetta campo**
 Inserimento di un **Etichetta campo** genera automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente se necessario.
@@ -375,7 +375,7 @@ Specifica un percorso radice per tutti i frammenti a cui si fa riferimento.
 
 Una volta creato, il modello deve essere abilitato in modo che:
 
-* Possibilità di selezionarlo quando si crea un nuovo frammento di contenuto
+* Può essere selezionato quando si crea un frammento di contenuto.
 * Possibilità di utilizzarlo come riferimento all’interno di un modello per frammento di contenuto
 * Possibilità di utilizzarlo in GraphQL, affinché venga generato lo schema
 

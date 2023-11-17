@@ -2,9 +2,9 @@
 title: Come si condividono i collegamenti alle risorse?
 description: Generare un collegamento e condividere le risorse con altri utenti che non hanno accesso all’applicazione [!DNL Assets view] .
 exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 93%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 93%
 
 Per generare un collegamento per una risorsa o una cartella contenente risorse:
 
-1. Seleziona le risorse e/o le cartelle contenenti le risorse e fai clic su **[!UICONTROL Condividi collegamento]**.
+1. Seleziona le risorse, le cartelle o entrambe che contengono risorse e fai clic su **[!UICONTROL Condividi collegamento]**.
 
 1. Se desideri modificarlo, fai clic sull’icona Calendario per definire una data di scadenza del collegamento utilizzando il campo **[!UICONTROL Data di scadenza]**. Puoi anche specificare una data direttamente nel formato `yyyy-mm-dd`. Per impostazione predefinita, la data di scadenza di un collegamento è impostata su 2 settimane dalla data di condivisione.
 
@@ -45,7 +45,7 @@ Per scaricare tutte le risorse contemporaneamente, passa alla **[!UICONTROL Vist
 
 * [Guarda un video per condividere i collegamenti per le risorse nella vista Risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=it)
 
-* Fornire feedback sul prodotto utilizzando [!UICONTROL Feedback] opzione disponibile nell’interfaccia utente di visualizzazione delle risorse
+* Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 

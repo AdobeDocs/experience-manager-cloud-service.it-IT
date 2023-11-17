@@ -2,10 +2,10 @@
 title: Applicazione e rimozione degli elenchi IP consentiti
 description: Scopri come applicare e rimuovere gli elenchi IP consentiti dagli ambienti.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ L’utente con il ruolo **Proprietario business** o **Responsabile dell’implem
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 1. Dalla schermata **Ambienti**, accedi alla pagina dei dettagli dell’ambiente specifico, quindi accedi alla tabella **Elenco IP consentiti**.
-1. Seleziona l’elenco IP consentiti e il servizio di authoring o pubblicazione che desideri applicare utilizzando i campi di inserimento nella parte superiore della tabella.
+1. Utilizza i campi di input nella parte superiore della tabella per selezionare l’elenco consentiti IP e il servizio Author o Publish a cui desideri applicarlo.
    * Per poter applicare l’elenco IP consentiti, l’elenco deve esistere in Cloud Manager.
 1. Fai clic su **Applica** e conferma quanto inserito.
 
@@ -32,6 +32,6 @@ L’utente con il ruolo **Proprietario business** o **Responsabile della distrib
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 1. Dalla schermata **Ambienti**, accedi alla pagina dei dettagli dell’ambiente specifico, quindi accedi alla tabella **Elenco IP consentiti**.
-1. Individua la riga dell’elenco IP consentiti che desideri rimuovere.
+1. Identifica la riga dell’elenco consentiti IP che desideri rimuovere.
 1. Seleziona il pulsante con i puntini di sospensione all’estrema destra della riga.
 1. Seleziona l’opzione **Rimuovi** e conferma quanto inserito.

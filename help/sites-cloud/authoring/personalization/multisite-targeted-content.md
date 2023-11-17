@@ -2,10 +2,10 @@
 title: Utilizzo dei contenuti di destinazione in più siti
 description: Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito integrato dell’AEM per contenuti mirati
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2885'
-ht-degree: 96%
+source-wordcount: '2844'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ Questo documento descrive quanto segue:
 
 Per impostare la modalità di condivisione dei contenuti personalizzati da parte dei siti, è necessario effettuare le seguenti operazioni:
 
-1. [Crea una nuova area](#creating-new-areas) o [creare un’area come live copy](#creating-new-areas). Un’area include tutte le attività disponibili per un’*area* della pagina, ovvero la posizione sulla pagina di destinazione del componente. La creazione di una nuova area crea un’area vuota, mentre la creazione di una nuova area come Live Copy consente di ereditare il contenuto tra le strutture del sito.
+1. [Crea una nuova area](#creating-new-areas) o [creare un’area come live copy](#creating-new-areas). Un’area include tutte le attività disponibili per un’*area* della pagina, ovvero la posizione sulla pagina di destinazione del componente. La creazione di una nuova area crea un’area vuota, mentre la creazione di un’area come Live Copy consente di ereditare il contenuto tra le strutture del sito.
 
 1. [Collega il sito o la pagina](#linking-sites-to-an-area) a un’area.
 
@@ -144,18 +144,18 @@ Le aree possono estendersi su attività e offerte. Dopo aver creato un’area in
 
 >[!NOTE]
 >
->L’area predefinita denominata Area mastro viene ridotta per impostazione predefinita quando tocchi o fai clic sul nome di un marchio **fino a** si crea un&#39;altra area. Quindi, quando selezioni un marchio nella console **Attività** o **Offerte**, viene visualizzata la console **Area**.
+>L’area predefinita denominata Area mastro viene ridotta per impostazione predefinita quando si seleziona il nome di un marchio **fino a** si crea un&#39;altra area. Quindi, quando selezioni un marchio nella console **Attività** o **Offerte**, viene visualizzata la console **Area**.
 
 Per creare un&#39;area:
 
 1. Passa a **Personalizzazione** > **Attività** o **Offerte** per poi, infine, arrivare al tuo marchio.
-1. Tocca o fai clic su **Crea area**.
+1. Seleziona **Crea area**.
 
    ![Crea area](/help/sites-cloud/authoring/assets/multisite-create-area.png)
 
 1. Fai clic sull’icona **Area** e poi su **Avanti**.
 1. Nel campo **Titolo**, immetti un nome per la nuova area. Facoltativamente, seleziona i tag.
-1. Tocca o fai clic su **Crea**.
+1. Seleziona **Crea**.
 
    AEM reindirizza alla finestra del marchio, dove elenca le aree create. Se è presente un’altra area oltre all’Area Master, puoi creare aree direttamente nella console Marchio.
 
@@ -168,7 +168,7 @@ Crea un’area come Live Copy per ereditare il contenuto di destinazione tra le 
 Per creare un’area come Live Copy:
 
 1. Passa a **Personalizzazione** > **Attività** o **Offerte** e infine, al tuo marchio.
-1. Tocca o fai clic su **Crea area come Live Copy**.
+1. Seleziona **Crea area come Live Copy**.
 
    ![Crea area come Live Copy](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
 
@@ -190,7 +190,7 @@ Per creare un’area come Live Copy:
    >
    >Quando si effettua il rollout di una pagina su una Live Copy e l’area viene configurata per la pagina del Blueprint, il Blueprint per l’area viene configurato per le Pagine Live Copy, **personalizationContentRollout** attiva un subRollout in sincronia, che fa parte di **Configurazione rollout standard**.
 
-1. Tocca o fai clic su **Crea**.
+1. Seleziona **Crea**.
 
    AEM reindirizza alla finestra del marchio, dove elenca le aree create. Se è presente un’altra area oltre all’Area master, è possibile creare aree direttamente dalla finestra del marchio.
 
@@ -209,13 +209,13 @@ Quando esegui un collegamento, sono disponibili solo le attività, le esperienze
 Per collegare un sito a un’area:
 
 1. Passa al sito (o alla pagina) che desideri collegare a un’area.
-1. Seleziona il sito o la pagina e tocca o fai clic su **Visualizza proprietà**.
-1. Tocca o fai clic sulla scheda **Personalizzazione**.
+1. Seleziona il sito o la pagina e seleziona **Visualizza proprietà**.
+1. Seleziona la **Personalizzazione** scheda.
 1. Dal menu **Marchio**, seleziona il marchio a cui desideri collegare l’area. Dopo aver selezionato il marchio, le aree disponibili sono presenti nel menu **Riferimento area**.
 
    ![Collegamento di siti](/help/sites-cloud/authoring/assets/multisite-english.png)
 
-1. Seleziona l’area dal menu a discesa **Riferimento Area** e tocca o fati clic su **Salva**.
+1. Seleziona l’area dal menu **Riferimento area** menu a discesa e selezionare **Salva**.
 
    ![Riferimento area](/help/sites-cloud/authoring/assets/multisite-area-reference.png)
 
@@ -239,8 +239,8 @@ Un’attività che eredita da un altro sito è contrassegnata in verde accanto a
 
 Per sospendere o scollegare l’ereditarietà dei contenuti mirati in un’attività:
 
-1. Passa alla pagina in cui desideri scollegare o sospendere l’ereditarietà e tocca o fai clic su **Targeting** nel menu a discesa della modalità.
-1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Tocca o fai clic su **Inizia impostazione destinazione**.
+1. Passa alla pagina in cui desideri scollegare o sospendere l’ereditarietà e seleziona **Targeting** nel menu a discesa mode.
+1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Fai clic su **Inizia impostazione destinazione**.
 1. Per sospendere un’attività, effettua una delle seguenti operazioni:
 
    1. Seleziona un elemento dell’attività, ad esempio il pubblico. AEM visualizza automaticamente una casella di conferma Sospendi Live Copy. (Puoi sospendere la Live Copy toccando o facendo clic su qualsiasi elemento durante tutto il processo di targeting).
@@ -248,7 +248,7 @@ Per sospendere o scollegare l’ereditarietà dei contenuti mirati in un’attiv
 
    ![Sospendi la Live Copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
-1. Tocca o fai clic su **Sospendi** per sospendere l’attività. Le attività sospese sono contrassegnate in rosso.
+1. Seleziona **Sospendi** per sospendere l’attività. Le attività sospese sono contrassegnate in rosso.
 
    ![Live Copy sospesa](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
@@ -256,10 +256,10 @@ Per sospendere o scollegare l’ereditarietà dei contenuti mirati in un’attiv
 
 Per interrompere l’ereditarietà di contenuti mirati in un’attività:
 
-1. Passa alla pagina in cui desideri scollegare la Live Copy dalla pagina master e tocca o fai clic su **Targeting** nel menu a discesa della modalità.
-1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Tocca o fai clic su **Inizia impostazione destinazione**.
+1. Passa alla pagina in cui desideri scollegare la Live Copy dalla pagina mastro e seleziona **Targeting** nel menu a discesa mode.
+1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Fai clic su **Inizia impostazione destinazione**.
 1. Dal menu a discesa nella barra degli strumenti, seleziona **Stacca Live Copy**. AEM conferma che vuoi scollegare la Live Copy.
-1. Tocca o fai clic su **Scollega** per scollegare la live copy dall’attività. Una volta scollegata, il menu a discesa relativo all’ereditarietà non viene più visualizzato. L’attività è ora un’attività locale.
+1. Seleziona **Stacca** per scollegare la live copy dall’attività. Una volta scollegata, il menu a discesa relativo all’ereditarietà non viene più visualizzato. L’attività è ora un’attività locale.
 
    ![Attività locale](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
@@ -269,13 +269,13 @@ Se hai sospeso l’ereditarietà di contenuti di destinazione in un’attività,
 
 Per ripristinare l’ereditarietà di contenuti di destinazione in un’attività:
 
-1. Accedi alla pagina in cui desideri ripristinare l’ereditarietà e tocca o fai clic su **Targeting** nel menu a discesa della modalità.
-1. Tocca o fai clic su **Inizia impostazione destinazione**.
+1. Passa alla pagina in cui desideri ripristinare l’ereditarietà e seleziona **Targeting** nel menu a discesa mode.
+1. Fai clic su **Inizia impostazione destinazione**.
 1. Dal menu a discesa nella barra degli strumenti, seleziona **Riprendi Live Copy**.
 
    ![Ripresa della Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
-1. Tocca o fai clic su **Riprendi** per confermare che desideri riprendere l’ereditarietà della Live Copy. Se riprendi l’ereditarietà, eventuali modifiche apportate all’attività corrente andranno perse.
+1. Seleziona **Riprendi** per confermare che desideri riprendere l’ereditarietà della live copy. Se riprendi l’ereditarietà, eventuali modifiche apportate all’attività corrente andranno perse.
 
 ## Eliminazione di aree {#deleting-areas}
 
@@ -284,5 +284,5 @@ Quando si elimina un’area, vengono eliminate anche tutte le attività in tale 
 Eliminare un’area:
 
 1. Vai su **Personalizzazione** > **Attività** or **Offerte** e quindi al tuo marchio.
-1. Tocca o fai clic sull’icona accanto all’area da eliminare.
-1. Tocca o fai clic su **Elimina** e conferma che desideri eliminare l’area.
+1. Seleziona l’icona accanto all’area da eliminare.
+1. Seleziona **Elimina** e confermare che si desidera eliminare l&#39;area.

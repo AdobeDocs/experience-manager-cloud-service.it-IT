@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Scopri come pubblicare e annullare la pubblicazione delle pagine utilizzando vari meccanismi in AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1801'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -224,7 +224,7 @@ Con una [procedura simile alla pubblicazione](#publishing-pages), è possibile a
 
 ### Annullamento della pubblicazione dall’editor  {#unpublishing-from-the-editor}
 
-Durante la modifica di una pagina, se desideri annullarne la pubblicazione seleziona **Annulla pubblicazione pagina** nel menu **Informazioni pagina**. La procedura è simile a quella di [pubblicazione della pagina](#publishing-from-the-editor).
+Durante la modifica di una pagina, se desideri annullarne la pubblicazione seleziona **Annulla pubblicazione pagina** nel **Informazioni pagina** menu, come si farebbe [pubblicare la pagina](#publishing-from-the-editor).
 
 >[!NOTE]
 >

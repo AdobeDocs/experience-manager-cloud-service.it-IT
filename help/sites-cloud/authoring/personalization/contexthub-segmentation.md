@@ -2,10 +2,10 @@
 title: Configurazione della segmentazione con ContextHub
 description: Scopri come configurare la segmentazione utilizzando ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 95%
+source-wordcount: '1652'
+ht-degree: 88%
 
 ---
 
@@ -88,11 +88,11 @@ Per definire il nuovo segmento:
 
 1. Dopo l’[accesso ai segmenti](#accessing-segments), [passa alla cartella](#organizing-segments) in cui desideri creare il segmento.
 
-1. Tocca o fai clic sul pulsante **Crea** e seleziona **Crea segmento ContextHub**.
+1. Seleziona la **Crea** e seleziona **Crea segmento ContextHub**.
 
    ![Aggiungi segmento](../assets/contexthub-create-segment.png)
 
-1. In **Nuovo segmento ContextHub**, inserisci un titolo per il segmento e se necessario un valore di incremento, quindi tocca o fai clic su **Crea**.
+1. In **Nuovo segmento ContextHub**, inserisci un titolo per il segmento e un valore di incremento, se necessario, quindi seleziona **Crea**.
 
    ![Nuovo segmento](../assets/contexthub-new-segment.png)
 
@@ -103,7 +103,7 @@ Per definire il nuovo segmento:
 
 1. Dalla console dei segmenti, modifica il segmento appena creato per aprirlo nell’editor segmento.
 1. Trascina un confronto o un riferimento nell’editor segmento per visualizzarlo nel contenitore AND predefinito.
-1. Tocca o fai doppio clic sull’opzione di configurazione del nuovo riferimento o segmento per modificare i parametri specifici. In questo esempio, effettuiamo i test per le persone a Basilea.
+1. Selezionate due volte l&#39;opzione di configurazione del nuovo riferimento o segmento per modificare i parametri specifici. In questo esempio, effettuiamo i test per le persone a Basilea.
 
    ![Test per le persone a Basilea](../assets/contexthub-comparing-property-value.png)
 
@@ -193,7 +193,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 ### Crea una nuova cartella,  {#create-folder}
 
-1. Dopo aver effettuato [l’accesso ai segmenti](#accessing-segments), tocca o fai clic sul pulsante **Crea** e seleziona **Cartella**.
+1. Dopo [accesso ai segmenti](#accessing-segments), seleziona la **Crea** e seleziona **Cartella**.
 
    ![Aggiungi cartella](../assets/contexthub-create-segment.png)
 
@@ -205,24 +205,24 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
    ![Crea cartella](../assets/contexthub-create-folder.png)
 
-1. Tocca o fai clic su **Crea**.
+1. Seleziona **Crea**.
 
    ![Conferma cartella](../assets/contexthub-confirm-folder.png)
 
 1. La cartella verrà visualizzata nell’elenco dei segmenti.
    * L’ordinamento delle colonne incide sulla posizione di visualizzazione della nuova cartella nell’elenco.
-   * Per regolare l’ordinamento, tocca o fai clic sulle intestazioni di colonna.
+   * È possibile selezionare le intestazioni di colonna per modificare l&#39;ordinamento.
      ![La nuova cartella](../assets/contexthub-folder.png)
 
 ### Modificare le cartelle esistenti {#modify-folders}
 
-1. Dopo aver effettuato [l’accesso ai segmenti](#accessing-segments), tocca o fai clic sulla cartella da modificare per selezionarla.
+1. Dopo [accesso ai segmenti](#accessing-segments), seleziona la cartella da modificare per selezionarla.
 
    ![Selezione cartella](../assets/contexthub-select-folder.png)
 
-1. Per rinominare la cartella, tocca o fai clic su **Rinomina** nella barra degli strumenti.
+1. Seleziona **Rinomina** nella barra degli strumenti per rinominare la cartella.
 
-1. Specifica un nuovo **Titolo cartella** e tocca o fai clic su **Salva**.
+1. Fornisci un nuovo **Titolo cartella** e seleziona **Salva**.
 
    ![Rinomina cartella](../assets/contexthub-rename-folder.png)
 
@@ -232,25 +232,25 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 ### Eliminare una cartella
 
-1. Dopo aver effettuato [l’accesso ai segmenti](#accessing-segments), tocca o fai clic sulla cartella da modificare per selezionarla.
+1. Dopo [accesso ai segmenti](#accessing-segments), seleziona la cartella da modificare per selezionarla.
 
    ![Selezione cartella](../assets/contexthub-select-folder.png)
 
-1. Per eliminare la cartella, tocca o fai clic su **Elimina** nella barra degli strumenti.
+1. Seleziona **Elimina** nella barra degli strumenti per eliminare la cartella.
 
 1. Una finestra di dialogo riporta un elenco di cartelle selezionate per l’eliminazione.
 
    ![Conferma eliminazione](../assets/contexthub-confirm-segment-delete.png)
 
-   * Tocca o fai clic su **Elimina** per confermare.
-   * Tocca o fai clic su **Annulla** per interrompere.
+   * Seleziona **Elimina** per confermare.
+   * Seleziona **Annulla** per interrompere.
 
 1. Se una delle cartelle selezionate contiene sottocartelle o segmenti, devi confermarne l’eliminazione.
 
    ![Conferma l’eliminazione degli elementi figlio](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tocca o fai clic su **Forza eliminazione** per confermare.
-   * Tocca o fai clic su **Annulla** per interrompere.
+   * Seleziona **Forza eliminazione** per confermare.
+   * Seleziona **Annulla** per interrompere.
 
 >[!NOTE]
 >

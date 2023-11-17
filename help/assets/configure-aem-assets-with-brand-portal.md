@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2585'
+source-wordcount: '2584'
 ht-degree: 12%
 
 ---
@@ -266,7 +266,7 @@ Per generare le credenziali dell’account di servizio e il payload JWT, effettu
 
    >[!NOTE]
    >
-   >Verifica di aver selezionato l’organizzazione IMS corretta (tenant Brand Portal) dall’elenco a discesa (organizzazione) in alto a destra.
+   >Accertati di aver selezionato l’organizzazione IMS corretta (tenant Brand Portal) dall’elenco a discesa (organizzazione) in alto a destra.
 
 1. Clic **[!UICONTROL Crea nuovo progetto]**. Per l’organizzazione viene creato un progetto vuoto con un nome generato dal sistema.
 
@@ -313,7 +313,7 @@ Ora puoi utilizzare l’ID client (chiave API), il segreto client e il payload J
 
    ![Create New Integration](assets/create-new-integration1.png)
 
-1. Create a new integration page opens. 
+1. Create an integration page. 
    
    Select your organization from the drop-down list.
 
@@ -377,7 +377,7 @@ Per configurare l’account IMS, effettua le seguenti operazioni.
 >
 >Puoi disporre di una sola configurazione IMS.
 >
->Verifica che la configurazione IMS superi il controllo di integrità. Se la configurazione non supera questa verifica, non è valida. Dovrai quindi eliminarla e creare una nuova configurazione valida.
+>Verifica che la configurazione IMS superi il controllo di integrità. Se la configurazione non supera questa verifica, non è valida. È necessario eliminarla e creare un&#39;altra configurazione valida.
 
 ### Configurare il servizio cloud {#configure-the-cloud-service}
 

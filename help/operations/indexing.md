@@ -2,10 +2,10 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Scopri la ricerca e l’indicizzazione dei contenuti in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 31%
+source-wordcount: '2428'
+ht-degree: 29%
 
 ---
 
@@ -61,13 +61,13 @@ Una definizione di indice può rientrare in una delle seguenti categorie:
 
 >[!NOTE]
 >
->Introduzione di nuovi indici sul `dam:Asset` nodetype (in particolare gli indici full-text) è fortemente sconsigliato in quanto possono entrare in conflitto con le funzionalità dei prodotti OOTB e causare problemi funzionali e di prestazioni. In generale, l&#39;aggiunta di proprietà aggiuntive al `damAssetLucene-*` versione indice è il modo più appropriato per indicizzare le query sulla `dam:Asset` nodetype (queste modifiche verranno automaticamente unite in una nuova versione del prodotto dell’indice se viene successivamente rilasciato). In caso di dubbi, contatta l’Assistenza Adobe per un consiglio.
+>Introduzione di nuovi indici sul `dam:Asset` nodetype (in particolare gli indici full-text) è fortemente sconsigliato in quanto possono entrare in conflitto con le funzionalità dei prodotti OOTB e causare problemi funzionali e di prestazioni. In generale, l&#39;aggiunta di proprietà aggiuntive al `damAssetLucene-*` versione indice è il modo più appropriato per indicizzare le query sulla `dam:Asset` nodetype (queste modifiche verranno automaticamente unite in una nuova versione del prodotto dell’indice se viene successivamente rilasciato). In caso di dubbi, contatta il supporto Adobe per un consiglio.
 
 ## Preparazione della nuova definizione dell’indice {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Per personalizzare un indice preconfigurato, ad esempio `damAssetLucene-8`, copia l’ultima definizione di indice preconfigurato da un *ambiente Cloud Service* utilizzando Gestione pacchetti CRX DE (`/crx/packmgr/`). Rinomina in `damAssetLucene-8-custom-1` (o versione successiva) e aggiungere le personalizzazioni nel file XML. In questo modo le configurazioni richieste non vengono rimosse inavvertitamente. Ad esempio, il `tika` nodo sotto `/oak:index/damAssetLucene-8/tika` è richiesto nell’indice personalizzato distribuito in un ambiente AEM Cloud Service, ma non esiste nell’SDK AEM locale.
+>Per personalizzare un indice predefinito, ad esempio `damAssetLucene-8`, copia l’ultima definizione di indice preconfigurata da una *Ambiente Cloud Service* utilizzo di Gestione pacchetti CRX DE (`/crx/packmgr/`). Rinomina in `damAssetLucene-8-custom-1` (o versione successiva) e aggiungere le personalizzazioni nel file XML. In questo modo le configurazioni richieste non vengono rimosse inavvertitamente. Ad esempio, il `tika` nodo sotto `/oak:index/damAssetLucene-8/tika` è richiesto nell’indice personalizzato distribuito in un ambiente AEM Cloud Service, ma non esiste nell’SDK AEM locale.
 
 Per le personalizzazioni di un indice OOTB, prepara un nuovo pacchetto contenente la definizione effettiva dell’indice che segue questo pattern di denominazione:
 
@@ -240,7 +240,7 @@ Dopo aver aggiunto la nuova definizione dell’indice, distribuisci la nuova app
 
 >[!TIP]
 >
->Per ulteriori dettagli sulla struttura del pacchetto richiesta per AEM as a Cloud Service, vedi il documento [struttura del progetto AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>Per maggiori dettagli sulla struttura del pacchetto richiesta per l’AEM as a Cloud Service, vedi [Struttura dei progetti AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Gestione dell’indice tramite distribuzioni continue {#index-management-using-rolling-deployments}
 

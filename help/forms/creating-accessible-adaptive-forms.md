@@ -1,15 +1,13 @@
 ---
 title: Come si crea un Forms adattivo accessibile?
 description: AEM Forms fornisce gli strumenti necessari per creare Forms adattivo accessibile e consente di rispettare gli standard di accessibilità.
-uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Un modulo accessibile è un modulo utilizzabile da tutti, inclusi gli utenti con esigenze speciali. Forms adattivo include una serie di funzioni e funzionalità che migliorano l’usabilità per gli utenti con funzionalità diverse. L’integrazione dell’accessibilità in Adaptive Forms non solo consente al pubblico di contenuti di essere il più ampio possibile, ma è anche un requisito fondamentale per la fornitura di documenti in aree geografiche in cui è richiesta la conformità agli standard di accessibilità. [!DNL AEM Forms] aiutare gli sviluppatori di moduli a rispettare gli standard di accessibilità.
+Un modulo accessibile è un modulo utilizzabile da tutti, inclusi gli utenti con esigenze speciali. Forms adattivo include diverse funzioni e funzionalità che migliorano l’usabilità per gli utenti con funzionalità diverse. L’integrazione dell’accessibilità in Adaptive Forms non solo consente al pubblico di contenuti di essere il più ampio possibile, ma è anche un requisito fondamentale per la fornitura di documenti in aree geografiche in cui è richiesta la conformità agli standard di accessibilità. [!DNL AEM Forms] aiutare gli sviluppatori di moduli a rispettare gli standard di accessibilità.
 
 Durante la creazione di un modulo adattivo, l’autore deve considerare i seguenti punti per creare un modulo adattivo accessibile:
 

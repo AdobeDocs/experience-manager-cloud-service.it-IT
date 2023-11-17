@@ -4,10 +4,10 @@ description: Scopri in che modo l’editor dei frammenti di contenuto utilizza l
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 83%
+source-wordcount: '578'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ Puoi definire:
 
 ## Notazione intestazione {#heading-notation}
 
-Per creare un’intestazione inserendo un hashtag (#) davanti al titolo. Un singolo hashtag (#) viene utilizzato per un titolo H1, due hashtag (##) per H2 e così via. Puoi utilizzare fino a 6 hashtag. Esempio:
+Per creare un’intestazione inserendo un hashtag (#) davanti al titolo. Un hashtag (#) viene utilizzato per un H1, due hashtag (##) per un H2 e così via. Puoi utilizzare fino a 6 hashtag. Esempio:
 
     `## This is an H2`
 
@@ -105,7 +105,7 @@ Un’immagine stile di riferimento ha la seguente sintassi:
 
     `![Alt text][id]`
 
-Dove “id” è il nome di un riferimento immagine definito. I riferimenti a immagini sono definiti utilizzando una sintassi identica ai riferimenti di collegamento:
+Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferimenti a immagini sono definiti utilizzando una sintassi identica ai riferimenti di collegamento:
 
     `[id]: url/to/image "Optional title attribute"`
 

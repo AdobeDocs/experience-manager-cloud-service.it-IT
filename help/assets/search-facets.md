@@ -4,9 +4,9 @@ description: In questo articolo viene descritto come creare, modificare e utiliz
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2504'
 ht-degree: 21%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 21%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-Una distribuzione a livello aziendale di Adobe Experience Manager Assets consente di memorizzare molte risorse. Talvolta, trovare la risorsa giusta può essere difficile e richiedere tempo se utilizzi solo le funzionalità di ricerca generiche di Experience Manager.
+Un’implementazione a livello aziendale di Adobe Experience Manager Assets ha la capacità di archiviare molte risorse. Talvolta, trovare la risorsa giusta può essere difficile e richiedere tempo se utilizzi solo le funzionalità di ricerca generiche di Experience Manager.
 
 Utilizza i facet di ricerca nel pannello Filtri per aggiungere maggiore granularità all’esperienza di ricerca e rendere la funzionalità di ricerca più efficiente e versatile. I facet di ricerca aggiungono più dimensioni (predicati) che consentono di eseguire ricerche più complesse. Il pannello Filtri include alcuni facet standard. Puoi anche aggiungere facet di ricerca personalizzati.
 
@@ -108,7 +108,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 1. Effettua una delle operazioni seguenti:
 
    * In **[!UICONTROL Nome proprietà]** , indica il percorso del file JSON in cui si definiscono i nodi per le opzioni e specifica le coppie chiave-valore corrispondenti.
-   * Tocca ![Icona di aggiunta risorse](assets/do-not-localize/aem_assets_add_icon.png) accanto al campo Opzioni per specificare il testo e il valore da visualizzare per le opzioni che si desidera specificare nel pannello Filtri. Per aggiungere un’altra opzione, tocca o fai clic su ![Icona di aggiunta risorse](assets/do-not-localize/aem_assets_add_icon.png) e ripetere il passaggio.
+   * Tocca ![Icona di aggiunta risorse](assets/do-not-localize/aem_assets_add_icon.png) accanto al campo Opzioni per specificare il testo e il valore da visualizzare per le opzioni che si desidera specificare nel pannello Filtri. Per aggiungere un’altra opzione, seleziona ![Icona di aggiunta risorse](assets/do-not-localize/aem_assets_add_icon.png) e ripetere il passaggio.
 
 1. Assicurati che l’opzione **[!UICONTROL Selezione singola]** sia deselezionata per consentire all’utente di scegliere più opzioni per volta per i tipi di file (ad esempio, Immagini, Documenti, Multimedia e Archivi). Se scegli **[!UICONTROL Selezione singola]**, l’utente può scegliere una sola opzione alla volta per i tipi di file.
 
@@ -145,7 +145,7 @@ Il `Tags` predicato consente di eseguire ricerche di risorse basate su tag. Per 
 
    ![Impostazioni tipiche del predicato Tag](assets/tags_predicate.png)
 
-1. In **[!UICONTROL Descrizione]** , immetti una descrizione facoltativa e quindi fai clic o tocca **[!UICONTROL Fine]**.
+1. In **[!UICONTROL Descrizione]** , immettere una descrizione facoltativa e quindi selezionare **[!UICONTROL Fine]**.
 1. Passa al pannello Ricerca. Il **[!UICONTROL Tag]** Il predicato viene aggiunto al pannello Ricerca.
 1. Specifica i tag in base ai quali desideri cercare le risorse o selezionarli dall’elenco dei suggerimenti.
 1. Seleziona **[!UICONTROL Corrispondenza con tutti]** per cercare corrispondenze che includono tutti i tag specificati.

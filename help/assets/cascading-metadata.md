@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 15%
+source-wordcount: '971'
+ht-degree: 7%
 
 ---
 
@@ -36,14 +36,14 @@ Considera uno scenario in cui desideri visualizzare i metadati a catena in base 
 
 Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul copyright come campo obbligatorio.
 
-1. Tocca o fai clic sul pulsante [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**.
-1. Nella pagina **[!UICONTROL Moduli schema]** seleziona un modulo schema, quindi, per modificare lo schema, dalla barra degli strumenti tocca o fai clic su **[!UICONTROL Modifica]**.
+1. Seleziona la [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**.
+1. In **[!UICONTROL Schema Forms]** , selezionare un modulo schema, quindi selezionare **[!UICONTROL Modifica]** dalla barra degli strumenti per modificare lo schema.
 
    ![select_form](assets/select_form.png)
 
 1. (Facoltativo) Nell’editor schema metadati, crea un campo da condizionare. Specifica un nome e un percorso di proprietà nel **[!UICONTROL Impostazioni]** scheda.
 
-   Per creare una scheda, tocca o fai clic su `+` per aggiungere una scheda e quindi un campo di metadati.
+   Per creare una scheda, seleziona `+` per aggiungere una scheda e quindi un campo di metadati.
 
    ![add_tab](assets/add_tab.png)
 
@@ -53,7 +53,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
 1. Le coppie chiave-valori sono le opzioni fornite a un utente del modulo. Puoi fornire le coppie chiave-valore manualmente o da un file JSON.
 
-   * Per specificare manualmente i valori, selezionare **[!UICONTROL Aggiungi manualmente]**, quindi tocca o fai clic su **[!UICONTROL Aggiungi scelta]** e specifica il testo e il valore dell’opzione. Specifica ad esempio i tipi di risorse Video, PDF, Word e Image.
+   * Per specificare manualmente i valori, selezionare **[!UICONTROL Aggiungi manualmente]**, e seleziona **[!UICONTROL Aggiungi scelta]** e specifica il testo e il valore dell’opzione. Specifica ad esempio i tipi di risorse Video, PDF, Word e Image.
 
    * Per recuperare dinamicamente i valori da un file JSON, seleziona **[!UICONTROL Aggiungi tramite percorso JSON]** e fornisci il percorso del file JSON. [!DNL Experience Manager] recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all’utente.
 
@@ -80,7 +80,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Sotto **[!UICONTROL Requisito]**, scegli il **[!UICONTROL Obbligatorio, in base alla nuova regola]** opzione.
-1. Tocca o fai clic su **[!UICONTROL Aggiungi regola]** e scegli il campo **[!UICONTROL Tipo di risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Per salvare le modifiche, Tocca o fai clic su **[!UICONTROL Fine]**.
+1. Seleziona **[!UICONTROL Aggiungi regola]** e scegli la **[!UICONTROL Tipo risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Seleziona **[!UICONTROL Fine]** per salvare le modifiche.
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,13 +90,13 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
 1. In **[!UICONTROL Visibilità]**, scegli l’opzione **[!UICONTROL Visibile, in base alla nuova regola]**.
 
-1. Tocca o fai clic su **[!UICONTROL Aggiungi regola]** e scegli il campo **[!UICONTROL Tipo di risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Per salvare le modifiche, Tocca o fai clic su **[!UICONTROL Fine]**.
+1. Seleziona **[!UICONTROL Aggiungi regola]** e scegli la **[!UICONTROL Tipo risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Seleziona **[!UICONTROL Fine]** per salvare le modifiche.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >Per reimpostare i valori, tocca o fai clic su uno spazio o in un punto qualsiasi dell’interfaccia diverso dai valori. Se i valori vengono reimpostati, selezionare nuovamente i valori.
+   >Per ripristinare i valori, seleziona un punto qualsiasi dell’interfaccia diverso dai valori. Se i valori vengono reimpostati, selezionare nuovamente i valori.
 
    >[!NOTE]
    >

@@ -2,10 +2,10 @@
 title: Modellazione dei contenuti per AEM come CMS headless - Introduzione
 description: Introduzione all’utilizzo delle funzioni di Adobe Experience Manager as a Cloud Service come CMS headless per la modellazione dei contenuti del tuo progetto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 94%
+source-wordcount: '745'
+ht-degree: 78%
 
 ---
 
@@ -27,16 +27,16 @@ Questo documento ti aiuta a comprendere cos’è la distribuzione headless dei c
 
 Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da usare e su larga scala, le aziende li hanno utilizzati come punto centrale per gestire messaggistica, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
 
-![CMS full-stack classico](/help/journey-headless/developer/assets/full-stack.png)
+![Il classico CMS full-stack](/help/journey-headless/developer/assets/full-stack.png)
 
-In un CMS full-stack, tutte le funzionalità per la manipolazione dei contenuti si trovano nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
+In un CMS full stack, la funzionalità per la manipolazione dei contenuti è nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
 
 * Occorre gestire un solo sistema.
 * I contenuti vengono gestiti a livello centrale.
 * Tutti i servizi del sistema sono integrati.
 * L’authoring dei contenuti è semplice.
 
-Quindi, se è necessario aggiungere un nuovo canale o supportare nuovi tipi di esperienze, è possibile inserire uno (o più) componenti nuovi nello stack e c’è una sola posizione per apportare modifiche.
+Pertanto, se è necessario aggiungere un nuovo canale o supportare nuovi tipi di esperienze, è possibile inserire uno o più nuovi componenti nello stack ed è disponibile un solo punto in cui apportare modifiche.
 
 ![Aggiunta di un nuovo canale nello stack](/help/journey-headless/developer/assets/adding-channel.png)
 
@@ -50,15 +50,15 @@ Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a con
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
-I servizi utilizzati, siano essi esperienze AR, un webshop, esperienze mobili, app web progressive (PWA), ecc., prendono i contenuti dal CMS headless e forniscono il loro rendering. Si occupano di fornire le teste per i tuoi contenuti.
+I servizi che fruiscono di tali servizi, siano essi esperienze AR, un webshop, esperienze mobili, app web progressive (PWA) e così via, accettano i contenuti dal CMS headless e forniscono il proprio rendering. Si occupano di fornire le teste per i tuoi contenuti.
 
 Omettendo la “testa” si semplifica il CMS rimuovendo la complessità. In questo modo si sposta anche la responsabilità di eseguire il rendering dei contenuti ai servizi che ne hanno effettivamente bisogno e che sono spesso più adatti a tale rendering.
 
 ## Modellazione dei contenuti {#content-modeling}
 
-La modellazione dei contenuti (nota anche come modellazione dei dati) è la tua specialità, quindi cosa deve essere preso in considerazione durante la modellazione per headless?
+La modellazione dei contenuti (nota anche come modellazione dati) è la tua specialità, quindi cosa devi prendere in considerazione durante la modellazione per headless?
 
-Affinché le applicazioni headless possano accedere ai contenuti e utilizzarli, il contenuto deve avere una struttura predefinita. I contenuti potrebbero anche non essere strutturati, ma per le applicazioni sarebbe *molto* più complesso accedere ad essi.
+Affinché le applicazioni headless possano accedere al contenuto e utilizzarlo, il contenuto deve avere una struttura predefinita. I contenuti potrebbero anche non essere strutturati, ma per le applicazioni sarebbe *molto* più complesso accedere ad essi.
 
 Con AEM potrai, in qualità di architetto di contenuti, eseguire la modellazione dei contenuti per progettare una serie di **Modelli per frammenti di contenuto**. Definiscono la struttura utilizzata dagli autori dei contenuti quando creano i **Frammenti di contenuto** che racchiudono il contenuto.
 

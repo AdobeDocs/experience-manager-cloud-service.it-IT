@@ -2,9 +2,9 @@
 title: Guida introduttiva ad AEM headless as a Cloud Service
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3095'
+source-wordcount: '3093'
 ht-degree: 94%
 
 ---
@@ -123,7 +123,7 @@ Con l’editor SPA, la SPA non solo utilizza contenuti di AEM, ma è anche compl
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
-Sono necessari molti requisiti prima di iniziare il progetto AEM headless.
+Ci sono diversi requisiti prima di iniziare il tuo progetto per AEM headless.
 
 ### Conoscenza {#knowledge}
 

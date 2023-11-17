@@ -2,10 +2,10 @@
 title: Guida introduttiva all’editor universale in AEM
 description: Scopri come accedere all’editor universale e come iniziare a preparare la tua prima app AEM per utilizzarla.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 84%
+source-wordcount: '920'
+ht-degree: 76%
 
 ---
 
@@ -22,7 +22,7 @@ Scopri come accedere all’editor universale e come iniziare a preparare la tua 
 
 Anche se l’editor universale può modificare il contenuto da qualsiasi origine, questo documento utilizza un’app AEM come esempio.
 
-Sono disponibili diversi passaggi per l’onboarding dell’app AEM e la relativa preparazione per l’utilizzo dell’editor universale.
+Puoi eseguire diversi passaggi per onboarding dell’app AEM e strumentazione per l’utilizzo dell’editor universale.
 
 1. [Richiedi l’accesso all’editor universale.](#request-access)
 1. [Includi la libreria principale dell’editor universale.](#core-library)
@@ -43,13 +43,13 @@ Fai clic su **Richiesta di accesso** e compila il modulo come indicato per richi
 
 ## Includi la libreria principale dell’editor universale {#core-library}
 
-Prima di poter preparare l’app con l’editor universale, è necessario includere la seguente dipendenza.
+Prima che l’app possa essere instrumentata per l’utilizzo con l’editor universale, deve includere la seguente dipendenza.
 
 ```javascript
 @adobe/universal-editor-cors
 ```
 
-Per attivare la preparazione, è necessario aggiungere la seguente importazione al `index.js`.
+Per attivare la strumentazione, è necessario aggiungere la seguente importazione alla `index.js`.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -103,7 +103,7 @@ Questa proprietà deve essere impostata nella configurazione OSGi `org.apache.sl
 
 Il servizio di editor universale richiede un [nome risorsa uniforme (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) per identificare e utilizzare il sistema back-end corretto per il contenuto dell’app in fase di modifica. Pertanto, è necessario uno schema URN per mappare il contenuto alle risorse di contenuto.
 
-Gli attributi della preparazione aggiunti alla pagina sono costituiti per lo più da [Microdati HTML,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) uno standard di settore che può essere utilizzato anche per rendere l’HTML più semantico, rendere i documenti HTML indicizzabili, ecc.
+Gli attributi di strumentazione aggiunti alla pagina sono costituiti principalmente da [Microdati HTML,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) uno standard di settore che può essere utilizzato anche per rendere HTML più semantico, rendere i documenti HTML indicizzabili e così via.
 
 ### Creazione di connessioni {#connections}
 

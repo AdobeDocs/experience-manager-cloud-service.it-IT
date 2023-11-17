@@ -2,10 +2,10 @@
 title: Gestione delle pagine nel lancio
 description: Puoi creare nuove pagine all’interno del lancio. Puoi anche eliminare le pagine indesiderate.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 94%
+source-wordcount: '288'
+ht-degree: 89%
 
 ---
 
@@ -49,7 +49,7 @@ Tutti questi punti di ingresso aprono il lancio nella console Sites, dove puoi:
 
 * Naviga,
 * **Creare** nuove pagine,
-* Selezionare le pagine esistenti e intervenire; ad esempio, **Modifica**, apri **Proprietà**, **Blocca**, **Copia**, **Incolla** ed **Elimina**
+* Seleziona le pagine esistenti e agisci; ad esempio, **Modifica**, aperto **Proprietà**, **Blocca**, **Copia**, **Incolla** e **Elimina**
   ![Navigare il lancio nella console Sites da Gestisci contenuto](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Utilizza la barra **Riferimenti** per tornare alle pagine **Origine lancio**:
   ![Console Sites: origine lancio](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

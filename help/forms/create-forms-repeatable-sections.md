@@ -3,9 +3,9 @@ title: Come si creano pannelli ripetibili nei componenti core modulo adattivo?
 description: Scopri come creare sezioni o campi ripetibili in un modulo adattivo.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1357'
 ht-degree: 6%
 
 ---

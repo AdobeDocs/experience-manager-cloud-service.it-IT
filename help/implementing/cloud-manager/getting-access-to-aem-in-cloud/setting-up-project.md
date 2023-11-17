@@ -2,10 +2,10 @@
 title: Configurazione del progetto
 description: Scopri come creare progetti AEM con Maven e gli standard da osservare durante la creazione di un progetto personalizzato.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1404'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1399'
+ht-degree: 97%
 
 ---
 
@@ -110,7 +110,7 @@ Per inviare un semplice messaggio solo quando la build viene eseguita all’este
 
 >[!NOTE]
 >
->Gli artefatti di un archivio Maven protetto da password devono essere utilizzati con cautela, in quanto attualmente il codice distribuito tramite questo meccanismo non viene eseguito da tutte le [regole per la qualità del codice](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementate nei gate di qualità di Cloud Manager. Per questo motivo, è consigliabile utilizzarlo esclusivamente in rari casi e solo per il codice non collegato a AEM. Si consiglia inoltre di distribuire le origini Java e l’intero codice sorgente del progetto insieme al binario.
+>Gli artefatti di un archivio Maven protetto da password devono essere utilizzati con cautela perché il codice distribuito tramite questo meccanismo non viene attualmente eseguito [regole di qualità del codice](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementato nei gate di qualità di Cloud Manager. Per questo motivo, è consigliabile utilizzarlo esclusivamente in rari casi e solo per il codice non collegato a AEM. Si consiglia inoltre di distribuire le origini Java e l’intero codice sorgente del progetto insieme al binario.
 
 Per utilizzare un archivio Maven protetto da password in Cloud Manager:
 

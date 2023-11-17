@@ -4,10 +4,10 @@ description: Informazioni sull'utilizzo della Creazione guidata copia in lingua 
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 89%
+source-wordcount: '270'
+ht-degree: 59%
 
 ---
 
@@ -21,19 +21,19 @@ La Creazione guidata copia in lingua è un’esperienza guidata per la creazione
 
 >[!NOTE]
 >
->L&#39;utente deve essere membro del gruppo `project-administrators` creare una copia in lingua di un sito.
+>L&#39;utente deve essere membro di `project-administrators` per creare una copia in lingua di un sito.
 
 Per accedere alla creazione guidata:
 
-1. Nella console Sites, seleziona una pagina e tocca o fai clic su **Crea** e seleziona **Copia in lingua**.
+1. Nella console Sites, seleziona una pagina e fai clic su **Crea** e seleziona **Copia lingua**.
 
    ![Crea copia in lingua dalla creazione guidata](../assets/language-copy-wizard.png)
 
-1. La procedura guidata si apre su **Seleziona origine** passaggio che consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie. Seleziona le pagine da includere e tocca o fai clic su **Successivo**.
+1. La procedura guidata si apre su **Seleziona origine** passaggio che consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie. Seleziona le pagine da includere e seleziona **Successivo**.
 
    ![Aggiunta di pagine con la creazione guidata](../assets/language-copy-wizard-add-pages.png)
 
-1. Il **Configura** passaggio della procedura guidata consente di aggiungere/rimuovere lingue e selezionare il metodo di traduzione. Tocca o fai clic su **Avanti**.
+1. Il **Configura** passaggio della procedura guidata consente di aggiungere/rimuovere lingue e selezionare il metodo di traduzione. Seleziona **Avanti**.
 
    ![Configura il passaggio della creazione guidata](../assets/language-copy-wizard-configure.png)
 
@@ -41,7 +41,7 @@ Per accedere alla creazione guidata:
    >
    >Per impostazione predefinita, è disponibile una sola impostazione di traduzione. Per poter selezionare altre impostazioni, devi prima configurare le configurazioni cloud. Consulta [Configurazione del framework di integrazione della traduzione](integration-framework.md).
 
-1. Nel passaggio **Traduci** della creazione guidata puoi scegliere se creare solo la struttura, creare un nuovo progetto di traduzione o aggiungere elementi a un progetto di traduzione esistente.
+1. In **Traduci** passaggio della procedura guidata puoi scegliere se creare solo la struttura, creare un progetto di traduzione o aggiungere elementi a un progetto di traduzione esistente.
 
    >[!NOTE]
    >
@@ -49,6 +49,6 @@ Per accedere alla creazione guidata:
 
    ![Passaggio di traduzione della creazione guidata](../assets/language-copy-wizard-translate.png)
 
-1. Il pulsante **Crea** termina la creazione guidata. Tocca o fai clic su **Fine** per chiudere la creazione guidata o **Apri** per visualizzare il progetto di traduzione risultante.
+1. Il pulsante **Crea** termina la creazione guidata. Seleziona **Fine** per chiudere la procedura guidata o **Apri** per visualizzare il progetto di traduzione risultante.
 
    ![Termina creazione guidata](../assets/language-copy-wizard-done.png)

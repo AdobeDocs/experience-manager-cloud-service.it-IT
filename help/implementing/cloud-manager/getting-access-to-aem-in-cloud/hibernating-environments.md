@@ -2,10 +2,10 @@
 title: Sospensione e disattivazione degli ambienti sandbox
 description: Scopri in che modo gli ambienti di un programma sandbox entrano automaticamente in modalità di sospensione e come riattivarli.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 93%
+source-wordcount: '683'
+ht-degree: 85%
 
 ---
 
@@ -51,7 +51,7 @@ Quando la sospensione ha esito positivo, viene visualizzata la notifica di compl
 
 ![Conferma della sospensione](assets/hibernate-4.png)
 
-Per accedere all’elenco di ambienti da sospendere in Console sviluppatori, fai clic sul collegamento **Ambienti** nel percorso di navigazione sopra all’elenco a discesa **Pod**.
+In Console sviluppatori puoi anche fare clic sul pulsante **Ambienti** collegamento nelle breadcrumb sopra **Pod** elenco a discesa per un elenco di ambienti da sospendere.
 
 ![Elenco degli ambienti da sospendere](assets/hibernate-1b.png)
 
@@ -88,7 +88,7 @@ Puoi sospendere manualmente il programma sandbox da Console sviluppatori.
    ![Riattivazione completa](assets/de-hibernation-img4.png)
 
 
-Per accedere all’elenco di ambienti da riattivare in Console sviluppatori, fai clic sul collegamento **Ambienti** nel percorso di navigazione sopra all’elenco a discesa **Pod**.
+In Console sviluppatori puoi anche fare clic sul pulsante **Ambienti** collegamento nelle breadcrumb sopra **Pod** elenco a discesa per un elenco di ambienti da riattivare.
 
 ![Elenco dei pod sospesi](assets/de-hibernate-1b.png)
 

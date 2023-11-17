@@ -3,10 +3,10 @@ title: Introduzione a  [!DNL AEM Forms]  as a Cloud Service
 description: Scopri AEM Forms per produrre moduli pronti per l’azienda, creare flussi di lavoro per i processi aziendali e utilizzare i servizi di documentazione per produrre e proteggere i documenti.
 landing-page-description: Scopri come utilizzare i moduli in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 96%
+source-wordcount: '1149'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] è una soluzione incent
 
 ## Digitalizzare e semplificare l’esperienza di registrazione e onboarding
 
-Puoi utilizzare il servizio per creare e distribuire moduli digitali interattivi e coinvolgenti. Pensa per esempio a un’organizzazione che sta cercando di digitalizzare il percorso di registrazione dei suoi clienti. Questi ultimi utilizzano origini dati diverse contenenti i dati dei clienti esistenti. Desiderano precompilare i moduli, aggiungerci la firma elettronica e archiviare i moduli compilati come file PDF. Inoltre, l’organizzazione dispone di più moduli stampabili (moduli PDF) e li vuole convertire tutti in moduli digitali.
+Puoi utilizzare il servizio per creare e distribuire moduli digitali interattivi e coinvolgenti. Pensa per esempio a un’organizzazione che sta cercando di digitalizzare il percorso di registrazione dei suoi clienti. Questi ultimi utilizzano origini dati diverse contenenti i dati dei clienti esistenti. Desiderano precompilare i moduli, aggiungerci la firma elettronica e archiviare i moduli compilati come file PDF. Inoltre, l’organizzazione dispone di più moduli per la stampa (PDF forms) e sta cercando di convertire i propri moduli per la stampa in moduli digitali.
 
 L’organizzazione può utilizzare [!DNL AEM Forms] as a Cloud Service per la creazione di moduli digitali, la connessione di moduli a origini dati esistenti e l’integrazione di moduli con [!DNL Adobe Sign] per aggiungere le firme elettroniche ai moduli, nonché per la generazione di documenti di record (DoR) per archiviare i moduli inviati come file PDF. L’organizzazione può inoltre utilizzare il servizio per convertire i moduli PDF esistenti in moduli digitali.
 

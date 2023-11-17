@@ -4,10 +4,10 @@ description: Dopo aver configurato le risorse cloud, concedi al team l’accesso
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 79%
+source-wordcount: '885'
+ht-degree: 77%
 
 ---
 
@@ -88,7 +88,7 @@ Per queste attività è necessario essere amministratori di sistema con il profi
 
    ![Gestisci accesso](/help/journey-onboarding/assets/add-team1.png)
 
-1. Si apre nuova scheda di Admin Console, da cui puoi accedere all’istanza di Author dell’ambiente. Seleziona **Amministratori AEM** o **Utenti AEM** in base alle autorizzazioni da assegnare a questo utente.
+1. Si apre nuova scheda di Admin Console, da cui puoi accedere all’istanza di Author dell’ambiente. Seleziona **Amministratori AEM** o **Utenti AEM** in base alle autorizzazioni che deve essere assegnato a questa persona.
 
    ![Assegnazione dell’accesso](/help/journey-onboarding/assets/add-team2.png)
 

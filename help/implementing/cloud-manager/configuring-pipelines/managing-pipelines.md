@@ -3,10 +3,10 @@ title: Gestione delle pipeline
 description: Scopri come gestire, modificare, eseguire ed eliminare le pipeline esistenti.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 46%
+source-wordcount: '938'
+ht-degree: 45%
 
 ---
 
@@ -41,7 +41,7 @@ Il **Pipeline** viene visualizzato un elenco completo di tutte le pipeline per i
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Dalla sezione **Panoramica del programma** , tocca o fai clic su **Pipeline** per passare alla scheda **Pipeline** finestra.
+1. Dalla sezione **Panoramica del programma** , seleziona la **Pipeline** per passare alla scheda **Pipeline** finestra.
 
 1. Qui puoi visualizzare un elenco di tutte le pipeline del programma, nonché avviare e interrompere l’esecuzione della pipeline come faresti nella **Scheda Pipeline**.
 
@@ -57,7 +57,7 @@ Il **Attività** mostra un elenco completo di tutte le esecuzioni di pipeline pe
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Dalla sezione **Panoramica del programma** , tocca o fai clic su **Attività** per passare alla scheda **Attività** finestra.
+1. Dalla sezione **Panoramica del programma** , seleziona la **Attività** per passare alla scheda **Attività** finestra.
 
 1. Qui puoi vedere un elenco di tutte le esecuzioni della pipeline del programma, comprese le esecuzioni correnti e storiche.
 
@@ -87,7 +87,7 @@ A seconda del tipo di pipeline, puoi annullare l’esecuzione facendo nuovamente
 
 1. Viene visualizzata la finestra di dialogo **Modifica pipeline di produzione** o **Modifica pipeline non di produzione**, che consente di modificare i dettagli inseriti durante la creazione della pipeline.
 
-   * Per ulteriori informazioni su tutti i campi e le opzioni di configurazione disponibili per le pipeline, consulta le pagine successive.
+   * Per informazioni dettagliate sui campi e le opzioni di configurazione disponibili per le pipeline, consulta le pagine seguenti.
       * [Configurazione delle pipeline di produzione](configuring-production-pipelines.md)
       * [Configurazione delle pipeline non di produzione](configuring-non-production-pipelines.md)
 
@@ -127,7 +127,7 @@ Una volta completato un passaggio della pipeline, viene presentato un riepilogo.
 
 ![Riepilogo del passaggio](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
-Tocca o fai clic su **Visualizza dettagli** collegamento per visualizzare **Durata** sezione. Ciò include la durata media della pipeline in base alla tendenza storica per quel programma.
+Seleziona la **Visualizza dettagli** collegamento per visualizzare **Durata** sezione. Ciò include la durata media della pipeline in base alla tendenza storica per quel programma.
 
 ![Durata](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
@@ -145,16 +145,16 @@ Se una pipeline si trova in fase di convalida o di creazione dell’immagine, pu
 
    ![Annullamento di una pipeline](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
-1. Tocca o fai clic su **Annulla**.
+1. Seleziona **Annulla**.
 
 In alternativa, puoi annullare una pipeline dalla pagina dei dettagli della pipeline.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Accedi a **Pipeline** scheda da **Panoramica del programma** tocca o fai clic sulla pipeline da annullare.
+1. Accedi a **Pipeline** scheda da **Panoramica del programma** e seleziona la pipeline da annullare.
 
 1. L’opzione reindirizza alla pagina dei dettagli della pipeline in esecuzione.
 
    ![Annulla dettagli pipeline](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
-1. Tocca o fai clic su **Annulla**.
+1. Seleziona **Annulla**.

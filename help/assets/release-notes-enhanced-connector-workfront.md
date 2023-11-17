@@ -2,10 +2,10 @@
 title: Note sulla versione di [!DNL Workfront for Experience Manager enhanced connector]
 description: Note sulla versione di [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 100%
+source-wordcount: '1352'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ L’ultima versione di [!DNL Workfront for Experience Manager enhanced connector
 
 >[!NOTE]
 >
->AEM 6.4 ha raggiunto il termine del supporto esteso. Per maggiori dettagli, consulta i nostri [periodi di supporto tecnico](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Le versioni supportate sono disponibili [qui](https://experienceleague.adobe.com/docs/?lang=it).
+>AEM 6.4 ha raggiunto il termine del supporto esteso. Visualizza la [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Le versioni supportate sono disponibili [qui](https://experienceleague.adobe.com/docs/?lang=it).
 
 
 >[!IMPORTANT]
@@ -43,7 +43,7 @@ L’ultima versione di [!DNL Workfront for Experience Manager enhanced connector
 
 * Durante la configurazione di cartelle collegate a un progetto tramite AEM 6.4, Experience Manager non salva i valori per i campi **[!UICONTROL sottocartelle]** e **[!UICONTROL Crea cartella collegata in progetti con portfolio]**. Il valore per il campo **[!UICONTROL sottocartelle]** si aggiorna a **[!UICONTROL non definito]** e il valore per il campo **[!UICONTROL Crea cartella collegata in progetti con portfolio]** si aggiorna a **[!UICONTROL Portfolio predefinito]** automaticamente, a seguito del salvataggio della configurazione.
 
-* Durante l’utilizzo dell’esperienza Workfront classica, l’opzione **[!UICONTROL Invia a]** disponibile nell’elenco a discesa **[!UICONTROL Altro]** non consente di selezionare la destinazione target in Experience Manager. L’opzione **[!UICONTROL Invia a]** funziona correttamente utilizzando l’elenco a discesa **[!UICONTROL Azioni documento]**. L’opzione **[!UICONTROL Invia a]** funziona correttamente per gli elenchi a discesa **[!UICONTROL Altro]** e **[!UICONTROL Azioni documento]** disponibile nella nuova esperienza Workfront.
+* Quando utilizzi l’esperienza Workfront classica, il **[!UICONTROL Invia a]** opzione disponibile in **[!UICONTROL Altro]** non consente di selezionare la destinazione in Experience Manager. L’opzione **[!UICONTROL Invia a]** funziona correttamente utilizzando l’elenco a discesa **[!UICONTROL Azioni documento]**. L’opzione **[!UICONTROL Invia a]** funziona correttamente per gli elenchi a discesa **[!UICONTROL Altro]** e **[!UICONTROL Azioni documento]** disponibile nella nuova esperienza Workfront.
 
 ## Versioni precedenti {#previous-releases}
 

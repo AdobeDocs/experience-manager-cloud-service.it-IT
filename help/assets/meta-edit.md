@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 15%
+source-wordcount: '443'
+ht-degree: 7%
 
 ---
 
@@ -24,13 +24,13 @@ Per modificare i metadati:
 
 1. Effettua una delle operazioni seguenti:
 
-   * Dall’interfaccia utente Assets, seleziona la risorsa e tocca o fai clic sul pulsante **[!UICONTROL Visualizza proprietà]** dalla barra degli strumenti.
+   * Dall’interfaccia utente Assets, seleziona la risorsa e fai clic su **[!UICONTROL Visualizza proprietà]** dalla barra degli strumenti.
    * Dalla miniatura della risorsa, seleziona la **[!UICONTROL Visualizza proprietà]** azione rapida.
-   * Dalla pagina della risorsa, tocca o fai clic su **[!UICONTROL Visualizza proprietà]** dalla barra degli strumenti.
+   * Dalla pagina della risorsa, seleziona **[!UICONTROL Visualizza proprietà]** dalla barra degli strumenti.
 
-   Nella pagina delle risorse vengono visualizzati tutti i metadati della risorsa. Questi metadati venivano estratti automaticamente quando venivano caricati (acquisiti) in Experience Manager Assets.
+   Nella pagina della risorsa vengono visualizzati i relativi metadati. Questi metadati venivano estratti automaticamente quando venivano caricati (acquisiti) in Experience Manager Assets.
 
-1. Apporta le modifiche necessarie ai metadati delle varie schede e, al termine, per salvarle tocca o fai clic su **[!UICONTROL Salva]** nella barra degli strumenti. Tocca o fai clic su **[!UICONTROL Chiudi]** per tornare all’interfaccia web Assets.
+1. Apporta le modifiche necessarie ai metadati delle varie schede e, al termine, seleziona **[!UICONTROL Salva]** dalla barra degli strumenti per salvare le modifiche. Seleziona **[!UICONTROL Chiudi]** per tornare all’interfaccia web Assets.
 
    >[!NOTE]
    >
@@ -49,10 +49,10 @@ Per informazioni dettagliate su come modificare lo schema metadati, consulta [Mo
 In Experience Manager puoi aggiungere spazi dei nomi personalizzati. Proprio come ci sono spazi dei nomi predefiniti come cq, jcr e sling, puoi avere uno spazio dei nomi per i metadati dell’archivio e l’elaborazione xml.
 
 1. Vai alla pagina di amministrazione del tipo di nodo *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. Tocca o fai clic su **[!UICONTROL Namespace]** nella parte superiore della pagina. La pagina di amministrazione dello spazio dei nomi viene visualizzata in una finestra.
+1. Seleziona **[!UICONTROL Namespace]** nella parte superiore della pagina. La pagina di amministrazione dello spazio dei nomi viene visualizzata in una finestra.
 
-1. Per aggiungere uno spazio dei nomi, tocca o fai clic su **[!UICONTROL Nuovo]** in basso.
-1. Specifica uno spazio dei nomi personalizzato nella convenzione dello spazio dei nomi XML (specifica l’ID sotto forma di URI e di un prefisso associato per l’ID), quindi tocca o fai clic su **[!UICONTROL Salva]**.
+1. Per aggiungere uno spazio dei nomi, seleziona **[!UICONTROL Nuovo]** in basso.
+1. Specifica uno spazio dei nomi personalizzato nella convenzione dello spazio dei nomi XML (specifica l’ID sotto forma di URI e di un prefisso associato per l’ID) e seleziona **[!UICONTROL Salva]**.
 
 **Consulta anche**
 

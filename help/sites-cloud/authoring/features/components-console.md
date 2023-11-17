@@ -2,9 +2,9 @@
 title: Console Componenti
 description: La console Componenti consente di sfogliare tutti i componenti definiti per la tua istanza
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 69%
 
 ---
@@ -29,7 +29,7 @@ L’icona **Solo contenuto** (in alto a sinistra) permette di aprire il pannello
 
 ### Dettagli dei componenti {#component-details}
 
-Per visualizzare i dettagli su un componente specifico, tocca o fai clic sulla risorsa richiesta. Tre schede forniscono:
+Per visualizzare i dettagli di un componente specifico, seleziona la risorsa richiesta. Tre schede forniscono:
 
 * **Proprietà**
 

@@ -4,10 +4,10 @@ description: Scopri come gestire i frammenti di contenuto AEM dalla console e da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 56%
+source-wordcount: '2531'
+ht-degree: 54%
 
 ---
 
@@ -124,7 +124,7 @@ Alcune azioni sono disponibili dalla console senza selezionare un frammento di c
 
   >[!NOTE]
   >
-  >La console **Assets** viene utilizzata per accedere alle risorse, ad esempio immagini, video e così via.  È possibile accedere a questa console:
+  >Il **Risorse** La console viene utilizzata per accedere alle risorse, ad esempio immagini, video e così via.  È possibile accedere a questa console:
   >
   >* utilizzando il collegamento **Apri in Assets** (nella console Frammenti di contenuto);
   >* direttamente dal sistema globale **Navigazione** riquadro
@@ -201,7 +201,7 @@ Passando il puntatore del mouse sul nome della cartella verrà visualizzato il p
 
      ![Console Frammenti di contenuto - Indicatore della lingua](assets/cf-managing-console-language-indicator.png)
 
-   * Tocca o fai clic sul numero per aprire una finestra di dialogo in cui sono visualizzate tutte le copie per altre lingue. Per aprire una copia per lingua specifica, fai clic su **Titolo** nella finestra di dialogo.
+   * Seleziona il conteggio per aprire una finestra di dialogo in cui vengono visualizzate tutte le copie per lingua. Per aprire una copia per lingua specifica, fai clic su **Titolo** nella finestra di dialogo.
 
      ![Console Frammenti di contenuto - Finestra di dialogo Lingua](assets/cf-managing-console-languages-dialog.png)
 
@@ -300,7 +300,7 @@ Puoi pubblicare i frammenti di contenuto in:
 
   >[!NOTE]
   >
-  >Per ulteriori dettagli sugli ambienti di anteprima, consulta:
+  >Per ulteriori dettagli sugli ambienti di anteprima, vedi:
   >
   >* [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [Configurazione delle impostazioni OSGi per il livello di anteprima](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
@@ -414,7 +414,7 @@ L’icona indica le impostazioni locali del frammento di contenuto e il numero t
 
 ![Console Frammenti di contenuto - Indicatore della lingua](assets/cfc-console-language-indicator.png)
 
-Tocca o fai clic sul numero per aprire una finestra di dialogo in cui sono visualizzate tutte le copie per altre lingue. Per aprire una copia per lingua specifica, fai clic su **Titolo** nella finestra di dialogo.
+Seleziona il conteggio per aprire una finestra di dialogo in cui vengono visualizzate tutte le copie per lingua. Per aprire una copia per lingua specifica, fai clic su **Titolo** nella finestra di dialogo.
 
 ![Console Frammenti di contenuto - Finestra di dialogo Lingua](assets/cf-managing-console-languages-dialog.png)
 

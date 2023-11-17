@@ -2,10 +2,10 @@
 title: Creazione di modelli di pagina
 description: Il modello definisce la struttura della pagina risultante e, grazie all’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4567'
-ht-degree: 97%
+source-wordcount: '4538'
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Per informazioni dettagliate su come funzionano i modelli modificabili a livello
 >
 >Un amministratore deve configurare una cartella di modelli nel **browser delle configurazioni** e applicare le autorizzazioni appropriate prima che un autore possa creare un modello in tale cartella.
 
-Prima di iniziare, è importante tenere presente che la creazione di un nuovo modello richiede collaborazione. Per questo motivo per ogni attività è indicato il relativo [Ruolo](#roles). Questo non influisce sul modo in cui si utilizza effettivamente un modello per creare una pagina, ma su come una pagina si relaziona al suo modello.
+Prima di iniziare, è importante considerare che la creazione di un modello richiede collaborazione. Per questo motivo per ogni attività è indicato il relativo [Ruolo](#roles). Questo non influisce sul modo in cui si utilizza effettivamente un modello per creare una pagina, ma su come una pagina si relaziona al suo modello.
 
 ### Ruoli {#roles}
 
@@ -67,7 +67,7 @@ Le attività descritte nel presente documento sono elencate con il ruolo respons
 
 ## Creazione e gestione di modelli {#creating-and-managing-templates}
 
-Quando viene creato un nuovo modello modificabile:
+Quando crei un modello modificabile:
 
 * Utilizza la console dei **Modelli**. Questa funzione è disponibile nella sezione **Generale** della console degli **Strumenti**.
    * Oppure direttamente da: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
@@ -89,7 +89,7 @@ Quando viene creato un nuovo modello modificabile:
 
 >[!TIP]
 >
->Non inserire mai informazioni che devono essere internazionalizzate in un modello. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>Non inserire mai informazioni che devono essere internazionalizzate in un modello. <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
 >Per gli elementi modello che devono essere localizzati, come intestazioni e piè di pagina, utilizza le funzioni di [localizzazione dei componenti core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it)
 
@@ -161,11 +161,11 @@ Per definire la miniatura del modello:
 
 1. Modifica le proprietà del modello.
 1. Scegli se desideri caricare una miniatura o generarla dal contenuto del modello.
-   * Per caricare una miniatura, tocca o fai clic su **Carica immagine**
-   * Per generare una miniatura, tocca o fai clic su **Genera anteprima**
+   * Per caricare una miniatura, seleziona **Carica immagine**
+   * Per generare una miniatura, seleziona **Genera anteprima**
 1. Per entrambi i metodi viene visualizzata un’anteprima della miniatura.
-   * Se non ti soddisfa, tocca o fai clic su **Cancella** per caricare un’altra immagine o rigenerare la miniatura.
-1. Quando la miniatura è soddisfacente, tocca o fai clic su **Salva e chiudi**.
+   * Se non è soddisfacente, selezionare **Cancella** per caricare un’altra immagine o rigenerare la miniatura.
+1. Quando si è soddisfatti della miniatura, selezionare **Salva e chiudi**.
 
 ### Abilitazione e autorizzazione di un modello - Autore del modello   {#enabling-and-allowing-a-template-template-author}
 
@@ -184,7 +184,7 @@ Un modello può essere abilitato o disabilitato per renderlo disponibile o non d
 
 1. Nella **console Modelli**, seleziona il modello.
 1. Seleziona **Abilita** o **Disabilita** nella barra degli strumenti e di nuovo nella finestra di dialogo di conferma.
-1. È ora possibile utilizzare il modello quando si [crea una nuova pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), anche se probabilmente si vorrà [modificare il modello](#editing-templates-template-authors) in base a specifiche esigenze.
+1. Ora puoi utilizzare il modello quando [creazione di una pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), anche se probabilmente vorrai [modificare il modello](#editing-templates-template-authors) in base alle tue esigenze.
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 
 ### Pubblicazione di un modello - Autore del modello {#publishing-a-template-template-author}
 
-Poiché al modello viene fatto riferimento quando viene eseguito il rendering di una pagina, il modello completamente configurato deve essere pubblicato in modo che sia disponibile nell’ambiente di pubblicazione.
+Poiché al modello viene fatto riferimento durante il rendering di una pagina, il modello completamente configurato deve essere pubblicato in modo che sia disponibile nell’ambiente di pubblicazione.
 
 1. Nella **console Modelli**, seleziona il modello.
 1. Seleziona **Pubblica** nella barra degli strumenti per aprire la procedura guidata.
@@ -293,7 +293,7 @@ In modalità **Struttura** si definiscono i componenti e i contenuti per il mode
 
 ![Struttura della pagina nell’Editor modelli](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-Nella modalità **Struttura** dell’Editor modelli è possibile eseguire diverse azioni e numerose funzioni per facilitarti il lavoro:
+È possibile eseguire diverse azioni in **Struttura** dell’editor modelli e diverse funzioni per facilitarti il lavoro:
 
 #### Aggiungi componenti {#add-components}
 
@@ -360,21 +360,21 @@ Le proprietà disponibili dipendono dal componente selezionato. Ad esempio, per 
 
 I criteri relativi al contenuto (o alla progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minime/massime. Sono applicabili al modello (e alle pagine create con il modello).
 
-In **Criterio** puoi selezionare un criterio esistente da applicare al componente tramite il menu a discesa.
+Sotto **Policy** puoi selezionare un criterio esistente da applicare al componente tramite il menu a discesa.
 
 ![Seleziona criterio](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-Puoi aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto al menu a discesa **Seleziona criterio**. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**.
+È possibile aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto al **Seleziona criterio** a discesa. Assegna un nuovo titolo nella sezione **Titolo criterio** campo.
 
 ![Pulsante Aggiungi criterio](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
+Il criterio esistente selezionato in **Seleziona criterio** l’elenco a discesa può essere copiato come nuovo criterio utilizzando il pulsante copia accanto all’elenco a discesa. Assegna un nuovo titolo nella sezione **Titolo criterio** campo. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
 
 ![Pulsante Copia criterio](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 La descrizione del criterio nel campo **Descrizione criterio** è facoltativa.
 
-Nella sezione **Altri modelli che utilizzano il criterio selezionato**, è possibile vedere facilmente quali altri modelli utilizzano i criteri selezionati nell’elenco a discesa **Seleziona criterio**.
+In **Altri modelli che utilizzano il criterio selezionato** , è possibile vedere facilmente quali altri modelli utilizzano i criteri selezionati nella sezione **Seleziona criterio** elenco a discesa.
 
 ![Utilizzo del criterio esistente](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -395,13 +395,13 @@ Nella scheda **Principale** vengono definite le impostazioni più importanti del
 
 Ad esempio, per un componente immagine è possibile definire le larghezze consentite e abilitare il caricamento lento.
 
-Se per un’impostazione sono consentite più configurazioni, tocca o fai clic sul pulsante **Aggiungi** per aggiungerne un’altra.
+Se un’impostazione consente più configurazioni, seleziona la **Aggiungi** per aggiungere un’altra configurazione.
 
 ![Pulsante Aggiungi](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-Per rimuovere una configurazione, tocca o fai clic sul pulsante **Elimina** situato a destra della configurazione.
+Per rimuovere una configurazione, seleziona la **Elimina** a destra della configurazione.
 
-Per rimuovere una configurazione, tocca o fai clic sul pulsante **Elimina**.
+Per rimuovere una configurazione, seleziona la **Elimina** pulsante.
 
 ![Pulsante Elimina](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
@@ -461,9 +461,9 @@ Nella scheda **Componenti consentiti**, puoi definire quali componenti sono disp
 
 Nella scheda **Componenti predefiniti**, è possibile definire quali componenti vengono associati automaticamente a determinati tipi di file multimediali in modo che, quando un autore trascina una risorsa dal browser di risorse, AEM sappia a quale componente associarla. Per questa configurazione sono disponibili solo i componenti con aree di rilascio.
 
-Tocca o fai clic su **Aggiungi mappatura** per aggiungere un componente completamente nuovo e la mappatura del tipo MIME.
+Seleziona **Aggiungi mappatura** per aggiungere un componente completamente nuovo e la mappatura del tipo MIME.
 
-Seleziona un componente nell’elenco e tocca o fai clic su **Aggiungi tipo** per aggiungere un altro tipo MIME a un componente già mappato. Fai clic sull’icona **Elimina** per rimuovere un tipo di MIME.
+Seleziona un componente nell’elenco e seleziona **Aggiungi tipo** per aggiungere un tipo MIME aggiuntivo a un componente già mappato. Fai clic sull’icona **Elimina** per rimuovere un tipo di MIME.
 
 ![Scheda Componenti predefiniti](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -568,20 +568,20 @@ Per accedere alla finestra di dialogo **Criterio pagina**:
 
   ![Selettore criteri](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  Puoi aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto al menu a discesa **Seleziona criterio**. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**.
+  È possibile aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto al **Seleziona criterio** elenco a discesa. Assegna un nuovo titolo nella sezione **Titolo criterio** campo.
 
   ![Pulsante Aggiungi criterio](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
+  Il criterio esistente selezionato in **Seleziona criterio** l’elenco a discesa può essere copiato come nuovo criterio utilizzando il pulsante copia accanto all’elenco a discesa. Assegna un nuovo titolo nella sezione **Titolo criterio** campo. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
 
   ![Pulsante Copia criterio](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-* Aggiungi un titolo al criterio nel campo **Titolo criterio**. Un criterio deve avere un titolo che permetta di riconoscerlo facilmente nel menu a discesa **Seleziona criterio**.
+* Aggiungi un titolo al criterio nel campo **Titolo criterio**. Una policy deve avere un titolo che permetta di riconoscerla facilmente nella **Seleziona criterio** elenco a discesa.
 
   ![Titolo criterio](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * La descrizione del criterio nel campo **Descrizione criterio** è facoltativa.
-* Nella sezione **Altri modelli che utilizzano il criterio selezionato**, è possibile vedere facilmente quali altri modelli utilizzano i criteri selezionati nell’elenco a discesa **Seleziona criterio**.
+* In **Altri modelli che utilizzano il criterio selezionato** , è possibile vedere facilmente quali altri modelli utilizzano i criteri selezionati nella sezione **Seleziona criterio** elenco a discesa.
 
   ![Utilizzo dei criteri](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 

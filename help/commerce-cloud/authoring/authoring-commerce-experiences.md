@@ -2,9 +2,9 @@
 title: Authoring di esperienze Commerce
 description: Scopri come creare e creare esperienze commerciali in modo efficiente accedendo ai dati e ai contenuti dei prodotti senza uscire dal contesto.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Questo crea un collegamento segnaposto che viene sostituito da un collegamento r
 
 ### Accesso al contenuto prodotto associato {#associated-content}
 
-Se Universal Editor riconosce i prodotti 1:n in una pagina, il pannello laterale mostra automaticamente la scheda &quot;Contenuto Commerce associato&quot;. Questa scheda consente agli autori di accedere rapidamente ai contenuti AEM a cui è stato applicato il tag del prodotto (vedere [arricchire i dati di prodotto con i contenuti AEM associati](./enrich-product-associated-content.md) per ulteriori informazioni). Questa scheda offre elenchi a discesa per filtrare in base al tipo di contenuto e a prodotti specifici se nella pagina sono presenti più prodotti. L’utilizzo del contenuto funziona esattamente come l’utilizzo del contenuto della scheda &quot;Risorse&quot;.
+Se Universal Editor riconosce i prodotti 1:n in una pagina, il pannello laterale mostra automaticamente la scheda &quot;Contenuto Commerce associato&quot;. Questa scheda consente agli autori di accedere rapidamente ai contenuti AEM a cui è stato applicato il tag del prodotto (vedere [arricchire i dati di prodotto con i contenuti AEM associati](./enrich-product-associated-content.md) per ulteriori informazioni). Questa scheda offre elenchi a discesa per filtrare in base al tipo di contenuto e a prodotti specifici se sulla pagina sono presenti più prodotti. L’utilizzo del contenuto funziona esattamente come l’utilizzo del contenuto della scheda &quot;Risorse&quot;.
 
 ![Pannello laterale dati prodotto](../assets/authoring/associated-commerce-content-tab.png)
 

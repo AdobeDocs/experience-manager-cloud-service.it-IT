@@ -2,9 +2,9 @@
 title: Utilizzo di Sling Resource Merger in Adobe Experience Manager as a Cloud Service
 description: Sling Resource Merger fornisce servizi per accedere e unire le risorse
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -220,7 +220,7 @@ Sling Resource Merger include due provider di risorse personalizzati: uno per le
 >
 >Quando si accede alla risorsa, si consiglia di utilizzare il punto di montaggio appropriato.
 >
->In questo modo viene richiamato Sling Resource Merger e viene restituita la risorsa completamente unita, riducendo la struttura da cui replicare `/libs`).
+>In questo modo viene richiamato Sling Resource Merger e viene restituita la risorsa completamente unita, riducendo la struttura da cui deve essere replicata `/libs`).
 
 * Sovrapposizione:
 

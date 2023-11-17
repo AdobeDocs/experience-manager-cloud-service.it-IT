@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 9%
+source-wordcount: '1069'
+ht-degree: 10%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 9%
 
 Utilizza l’editor di Forms per lo schema metadati delle cartelle per creare e modificare gli schemi di metadati per le cartelle.
 
-1. Tocca o fai clic sul pulsante [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati cartelle]**.
-1. Nella pagina Forms dello schema metadati cartelle, tocca o fai clic su **[!UICONTROL Crea]**.
-1. Specifica un nome per il modulo, quindi tocca o fai clic su **[!UICONTROL Crea]**. Il nuovo modulo schema è elencato nella pagina Schema Forms.
+1. Seleziona la [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati cartelle]**.
+1. Nella pagina Forms dello schema metadati cartelle, seleziona **[!UICONTROL Crea]**.
+1. Specificare un nome per il modulo e selezionare **[!UICONTROL Crea]**. Il nuovo modulo schema è elencato nella pagina Schema Forms.
 
 ## Modifica moduli schema metadati cartelle {#edit-folder-metadata-schema-forms}
 
@@ -33,18 +33,18 @@ Puoi modificare un modulo schema metadati appena aggiunto o esistente, che inclu
 
 Puoi mappare/configurare questi elementi modulo su un campo all’interno di un nodo di metadati nell’archivio CRX. È possibile aggiungere nuove schede o elementi del modulo al modulo schema metadati.
 
-1. Nella pagina Schema Forms, seleziona il modulo creato, quindi tocca o fai clic sul pulsante **[!UICONTROL Modifica]** dalla barra degli strumenti.
-1. Nella pagina Editor schema metadati cartelle, tocca o fai clic su **[!UICONTROL +]** per aggiungere una scheda al modulo. Per rinominare la scheda, tocca o fai clic sul nome predefinito e specifica il nuovo nome in **[!UICONTROL Impostazioni]**.
+1. Nella pagina Schema Forms selezionare il modulo creato, quindi selezionare **[!UICONTROL Modifica]** dalla barra degli strumenti.
+1. Nella pagina Editor schema metadati cartelle, seleziona la **[!UICONTROL +]** per aggiungere una scheda al modulo. Per rinominare la scheda, selezionate il nome di default e specificate il nuovo nome in **[!UICONTROL Impostazioni]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   Per aggiungere altre schede, tocca o fai clic sul pulsante **[!UICONTROL +]** icona. Tocca o fai clic **[!UICONTROL X]** per eliminare una scheda.
+   Per aggiungere altre schede, seleziona la **[!UICONTROL +]** icona. Seleziona **[!UICONTROL X]** per eliminare una scheda.
 
 1. Nella scheda attiva, aggiungi uno o più componenti della **[!UICONTROL Genera modulo]** scheda.
 
    ![add_components](assets/adding_components.png)
 
-   Se crei più schede, tocca o fai clic su una scheda particolare per aggiungere componenti.
+   Se crei più schede, seleziona una scheda particolare per aggiungere componenti.
 
 1. Per configurare un componente, selezionalo e modificane le proprietà in **[!UICONTROL Impostazioni]** scheda.
 
@@ -52,7 +52,7 @@ Puoi mappare/configurare questi elementi modulo su un campo all’interno di un 
 
    ![configure_properties](assets/configure_properties.png)
 
-1. Tocca o fai clic **[!UICONTROL Salva]** dalla barra degli strumenti per salvare le modifiche.
+1. Seleziona **[!UICONTROL Salva]** dalla barra degli strumenti per salvare le modifiche.
 
 ### Componenti per la creazione di moduli {#components-to-build-forms}
 
@@ -101,7 +101,7 @@ Il **[!UICONTROL Genera modulo]** scheda elenca gli elementi del modulo utilizza
 
 ### Modifica di elementi modulo {#editing-form-items}
 
-Per modificare le proprietà degli elementi del modulo, tocca o fai clic sul componente e modifica tutte o un sottoinsieme delle seguenti proprietà nel **[!UICONTROL Impostazioni]** scheda. Si consiglia di mappare un solo campo a una determinata proprietà nello schema metadati. In caso contrario, il sistema seleziona l’ultimo campo aggiunto mappato alla proprietà.
+Per modificare le proprietà degli elementi modulo, seleziona il componente e modifica tutte o un sottoinsieme delle seguenti proprietà in **[!UICONTROL Impostazioni]** scheda. Si consiglia di mappare un solo campo a una determinata proprietà nello schema metadati. In caso contrario, il sistema seleziona l’ultimo campo aggiunto mappato alla proprietà.
 
 **[!UICONTROL Etichetta campo]**: nome della proprietà dei metadati visualizzata nella pagina delle proprietà della cartella.
 
@@ -127,7 +127,7 @@ Per garantire che il componente sia visualizzato correttamente nel modulo schema
 
 ## Elimina moduli schema metadati cartelle {#delete-folder-metadata-schema-forms}
 
-Puoi eliminare i moduli schema metadati cartelle dalla pagina Forms dello schema metadati cartelle. Per eliminare un modulo, selezionalo e tocca o fai clic sull’icona Elimina nella barra degli strumenti.
+Puoi eliminare i moduli schema metadati cartelle dalla pagina Forms dello schema metadati cartelle. Per eliminare un modulo, selezionalo e seleziona l’icona Elimina dalla barra degli strumenti.
 
 ![delete_form](assets/delete_form.png)
 
@@ -139,16 +139,16 @@ Se configuri uno schema di metadati per una cartella, il percorso del modulo sch
 
 ### Assegnare a uno schema dalla pagina Schema metadati cartelle {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Tocca o fai clic sul pulsante [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**> **[!UICONTROL Schemi metadati cartelle]**.
+1. Seleziona la [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**> **[!UICONTROL Schemi metadati cartelle]**.
 1. Dalla pagina Forms schema metadati cartelle, seleziona il modulo schema da applicare a una cartella.
-1. Dalla barra degli strumenti, tocca o fai clic su **[!UICONTROL Applica a cartelle]**.
+1. Dalla barra degli strumenti, seleziona **[!UICONTROL Applica a cartelle]**.
 
-1. Seleziona la cartella in cui applicare lo schema, quindi tocca o fai clic su **[!UICONTROL Applica]**. Se nella cartella è già applicato uno schema metadati, un messaggio di avviso informa che stai per sovrascrivere lo schema metadati esistente. Tocca o fai clic **[!UICONTROL Sovrascrivere]**.
+1. Seleziona la cartella in cui applicare lo schema, quindi seleziona **[!UICONTROL Applica]**. Se nella cartella è già applicato uno schema metadati, un messaggio di avviso informa che stai per sovrascrivere lo schema metadati esistente. Seleziona **[!UICONTROL Sovrascrivere]**.
 1. Apri le proprietà dei metadati per la cartella a cui hai applicato lo schema metadati.
 
    ![folder_properties](assets/folder_properties.png)
 
-   Per visualizzare i campi di metadati della cartella, tocca o fai clic sulla scheda **[!UICONTROL Folder Metadata (Metadati cartella)]**.
+   Per visualizzare i campi dei metadati della cartella, seleziona la **[!UICONTROL Metadati cartella]** scheda.
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
@@ -156,20 +156,20 @@ Se configuri uno schema di metadati per una cartella, il percorso del modulo sch
 
 Puoi assegnare uno schema di metadati della cartella durante la creazione di una cartella. Se nel sistema è presente almeno uno schema di metadati di cartella, viene visualizzato un elenco aggiuntivo nel **[!UICONTROL Crea cartella]** . Puoi selezionare lo schema desiderato. Per impostazione predefinita, non è selezionato alcuno schema.
 
-1. Dalla sezione [!DNL Experience Manager Assets] interfaccia utente, tocca o fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
+1. Dalla sezione [!DNL Experience Manager Assets] interfaccia utente, selezionare **[!UICONTROL Crea]** dalla barra degli strumenti.
 1. Specifica un titolo e un nome per la cartella.
-1. Dall’elenco Schema metadati cartelle, seleziona lo schema desiderato. Quindi tocca o fai clic su **[!UICONTROL Crea]**.
+1. Dall’elenco Schema metadati cartelle, seleziona lo schema desiderato. Quindi, seleziona **[!UICONTROL Crea]**.
 
    ![select_schema](assets/select_schema.png)
 
 1. Apri le proprietà dei metadati per la cartella a cui hai applicato lo schema metadati.
-1. Per visualizzare i campi di metadati della cartella, tocca o fai clic sulla scheda **[!UICONTROL Folder Metadata (Metadati cartella)]**.
+1. Per visualizzare i campi dei metadati della cartella, seleziona la **[!UICONTROL Metadati cartella]** scheda.
 
 ## Utilizzare lo schema di metadati della cartella {#use-the-folder-metadata-schema}
 
 Apri le proprietà di una cartella configurata con uno schema di metadati della cartella. Nella pagina delle proprietà della cartella viene visualizzata la scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
 
-Inserisci i valori dei metadati nei vari campi e tocca o fai clic su **[!UICONTROL Salva]** per memorizzare i valori. I valori specificati vengono memorizzati nel nodo della cartella nell’archivio CRX.
+Inserisci i valori dei metadati nei vari campi e seleziona **[!UICONTROL Salva]** per memorizzare i valori. I valori specificati vengono memorizzati nel nodo della cartella nell’archivio CRX.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 
@@ -177,13 +177,13 @@ Inserisci i valori dei metadati nei vari campi e tocca o fai clic su **[!UICONTR
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

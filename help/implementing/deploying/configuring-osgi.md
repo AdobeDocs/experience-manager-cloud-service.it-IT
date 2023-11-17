@@ -3,9 +3,9 @@ title: Configurazione di OSGi per Adobe Experience Manager as a Cloud Service
 description: Configurazione OSGi con valori segreti e valori specifici dell’ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3317'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Le modalità di esecuzione dell’AEM as a Cloud Service sono ben definite in ba
 
 I valori di configurazione OSGi specificati dalla modalità di esecuzione possono essere verificati da:
 
-1. Aprire l&#39;AEM come Cloud Services [Console per sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it)
+1. Aprire l&#39;AEM come Cloud Service [Console per sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it)
 1. Selezione dei livelli di servizio da controllare, utilizzando __Pod__ elenco a discesa
 1. Selezione del __Stato__ scheda
 1. Selezione __Configurazioni__ dal __Immagine stato__ elenco a discesa
@@ -558,7 +558,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 Poiché i valori di configurazione segreti e specifici dell’ambiente si trovano al di fuori di Git e pertanto non fanno parte dei meccanismi formali di distribuzione di Adobe Experience Manager as a Cloud Service, il cliente deve gestire, gestire e integrare nel processo di distribuzione di Adobe Experience Manager as a Cloud Service.
 
-Come accennato in precedenza, la chiamata all’API distribuisce le nuove variabili e i nuovi valori negli ambienti Cloud, in modo simile a una tipica pipeline di distribuzione del codice del cliente. I servizi di authoring e pubblicazione vengono riavviati e fanno riferimento ai nuovi valori, in genere dopo alcuni minuti. Tieni presente che i gate e i test di qualità eseguiti da Cloud Manager durante una distribuzione regolare del codice non vengono eseguiti durante questo processo.
+Come accennato in precedenza, la chiamata all’API distribuisce le nuove variabili e i nuovi valori negli ambienti Cloud, in modo simile a una tipica pipeline di distribuzione del codice del cliente. I servizi di authoring e pubblicazione vengono riavviati e fanno riferimento ai nuovi valori, in genere dopo alcuni minuti. I gate e i test di qualità eseguiti da Cloud Manager durante una distribuzione regolare del codice non vengono eseguiti durante questo processo.
 
 In genere, i clienti chiamano l’API per impostare le variabili di ambiente prima di distribuire il codice che si basa su di esse in Cloud Manager. In alcune situazioni, potrebbe essere utile modificare una variabile esistente dopo la distribuzione del codice.
 

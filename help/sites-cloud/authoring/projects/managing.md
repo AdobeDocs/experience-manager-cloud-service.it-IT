@@ -2,10 +2,10 @@
 title: Gestione dei progetti
 description: Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità, accessibile e gestibile nella console dedicata
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 99%
+source-wordcount: '876'
+ht-degree: 84%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 La funzione Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità.
 
-Nella console **Progetti**, puoi accedere ai tuoi progetti e intervenire su di essi:
+In **Progetti** , puoi accedere ai tuoi progetti e agire su di essi:
 
 ![Console Progetti](/help/sites-cloud/authoring/assets/projects-console.png)
 
@@ -33,7 +33,7 @@ Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di u
 
 La procedura di creazione di un progetto è la stessa per ciascun progetto. La differenza tra i tipi di progetti include i [ruoli utente](/help/sites-cloud/authoring/projects/overview.md) e i [flussi di lavoro](/help/sites-cloud/authoring/projects/workflows.md) disponibili.  Per creare un progetto:
 
-1. In **Progetti**, tocca o fai clic su **Crea** per aprire la procedura guidata **Crea progetto**:
+1. In entrata **Progetti**, seleziona **Crea** per aprire **Crea progetto** procedura guidata:
 1. Seleziona un modello e fai clic su **Avanti**.
 
    ![Creazione di un progetto](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -42,7 +42,7 @@ La procedura di creazione di un progetto è la stessa per ciascun progetto. La d
 
    ![Aggiunta di dettagli al progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Tocca o fai clic su **Crea**. Nella finestra di conferma ti viene richiesto se desideri aprire il nuovo progetto o tornare alla console.
+1. Seleziona **Crea**. Nella finestra di conferma ti viene richiesto se desideri aprire il nuovo progetto o tornare alla console.
 
 ### Associazione di risorse a un progetto {#associating-resources-with-your-project}
 
@@ -51,7 +51,7 @@ Poiché i progetti consentono di raggruppare risorse in un’unica entità, è p
 Per associare le risorse a un progetto:
 
 1. Apri il progetto dalla console **Progetti**.
-1. Tocca o fai clic su **Aggiungi sezione** e seleziona il riquadro da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
+1. Seleziona **Aggiungi sezione** e seleziona il riquadro da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
 
    ![Aggiunta di un riquadro a un progetto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
@@ -59,7 +59,7 @@ Per associare le risorse a un progetto:
    >
    >I riquadri associabili a un progetto sono descritti dettagliatamente nella sezione [Riquadri di progetto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
-1. Tocca o fai clic su **Crea**. La risorsa è ora collegata al progetto e accessibile da questo.
+1. Seleziona **Crea**. La risorsa è ora collegata al progetto e accessibile da questo.
 
 ### Eliminazione di un progetto o di un collegamento di risorsa {#deleting-a-project-or-resource-link}
 
@@ -71,13 +71,13 @@ Per eliminare un progetto dalla console o una risorsa collegata dal progetto si 
    * Per eliminare un collegamento di risorsa all’interno di un progetto, apri il progetto nella console **Progetti**.
 
 1. Entra nella modalità di selezione facendo clic su **Seleziona** e scegli il progetto o collegamento di risorsa.
-1. Tocca o fai clic su **Elimina**.
+1. Seleziona **Elimina**.
 
-1. È necessario confermare l’eliminazione in una finestra di dialogo. Se confermata, il progetto o il collegamento alla risorsa viene eliminato. Per uscire dalla modalità di selezione, tocca o fai clic su **Deseleziona**.
+1. È necessario confermare l’eliminazione in una finestra di dialogo. Se confermata, il progetto o il collegamento alla risorsa viene eliminato. Seleziona **Deseleziona** per uscire dalla modalità di selezione.
 
 >[!NOTE]
 >
->Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. Un amministratore deve eliminare manualmente i gruppi da **Strumenti** > **Protezione** > **Gruppi**.
+>Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. Un amministratore deve eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
 
 ### Aggiunta di elementi a un riquadro {#adding-items-to-a-tile}
 
@@ -85,11 +85,11 @@ Per alcuni riquadri, è possibile aggiungere più di un oggetto. Ad esempio, è 
 
 Per aggiungere elementi a un riquadro:
 
-1. In **Progetti**, individua quello di tuo interesse e fai clic sulle freccette in basso del riquadro in cui desideri aggiungere un elemento.
+1. In entrata **Progetti**, individua il progetto e seleziona la freccia giù nella sezione a cui desideri aggiungere un elemento.
 
    ![Aggiungere un elemento a un riquadro](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Aggiungi un elemento al riquadro con la stessa procedura che usi quando crei un nuovo riquadro. I riquadri di progetto sono descritti [qui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In questo esempio è stato aggiunto un altro flusso di lavoro.
+1. Aggiungi un elemento alla tessera come faresti quando crei una tessera. I riquadri di progetto sono descritti [qui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In questo esempio è stato aggiunto un altro flusso di lavoro.
 
 ### Apertura di un riquadro {#opening-a-tile}
 
@@ -97,7 +97,7 @@ Per aggiungere elementi a un riquadro:
 
 Per aprire un riquadro e visualizzare o modificare gli elementi:
 
-1. Nella console Progetti, tocca o fai clic sull’icona con i puntini di sospensione (...) nella parte inferiore della scheda.
+1. Nella console Progetti, seleziona l’icona con i puntini di sospensione (...) nella parte inferiore della scheda.
 
    ![Apertura di un riquadro](/help/sites-cloud/authoring/assets/project-links.png)
 
@@ -111,7 +111,7 @@ Per aprire un riquadro e visualizzare o modificare gli elementi:
 
 ### Visualizzazione della timeline di un progetto {#viewing-a-project-timeline}
 
-La timeline di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse del progetto. Per visualizzare la timeline di un progetto, tocca o fai clic su **Timeline**, quindi entra nella modalità di selezione e scegli il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Per tornare alla console **Progetti**, tocca o fai clic su **Timeline**.
+La timeline di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse del progetto. Per visualizzare la timeline del progetto, seleziona **Timeline**, quindi entra in modalità di selezione e seleziona il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Seleziona **Timeline** per tornare al **Progetti** console.
 
 ![Timeline del progetto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
@@ -137,9 +137,9 @@ Per rendere un progetto inattivo (o attivo):
    >
    Potrebbe essere necessario aggiungere questo riquadro, se non è già presente nel progetto. Consulta [Aggiunta di riquadri](#adding-items-to-a-tile).
 
-1. Tocca o fai clic su **Modifica**.
+1. Seleziona **Modifica**.
 1. Modifica il selettore passando da **Attivo** a **Inattivo** (o viceversa).
 
    ![Attivazione di un progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Tocca o fai clic su **Fine** per salvare le modifiche apportate.
+1. Seleziona **Fine** per salvare le modifiche.

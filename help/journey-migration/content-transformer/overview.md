@@ -1,9 +1,10 @@
 ---
 title: Panoramica di Content Transformer
 description: Scopri come rilevare e risolvere i problemi relativi al contenuto segnalati da BPA utilizzando Content Transformer.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '388'
 ht-degree: 2%
 
 ---
@@ -33,4 +34,4 @@ Content Transformer offre i seguenti vantaggi:
 
 * Fail-safe: un pacchetto viene creato da Content Transformer ogni volta che apporta modifiche all’archivio per risolvere i problemi. Se necessario, puoi ripristinare lo stato precedente installando il pacchetto.
 * Facile da usare: Content Transformer è stato integrato con lo strumento Content Transfer ed è dotato di una semplice interfaccia utente intuitiva.
-* Risparmio di tempo: quando si dispone di un numero elevato di problemi di contenuto che rientrano in una categoria di pattern, è possibile risolverli tutti con solo un paio di clic utilizzando Content Transformer.
+* Risparmio di tempo: quando si dispone di un numero elevato di problemi di contenuto che rientrano in una categoria di pattern, è possibile risolverli tutti con diversi clic utilizzando Content Transformer.

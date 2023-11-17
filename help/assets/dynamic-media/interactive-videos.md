@@ -1,11 +1,11 @@
 ---
 title: Video interattivi
-description: Scopri come lavorare con video interattivi e video acquistabili in Dynamic Media.
+description: Scopri come lavorare con video interattivi e video acquistabili in Dynamic Medie.
 contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '5966'
 ht-degree: 3%
@@ -28,11 +28,11 @@ Per vedere un video interattivo e shoppable in azione, seleziona [Demo live](htt
 
 * Per mettere in pausa il video e aprire Quickview del prodotto, seleziona la miniatura. Ad esempio, seleziona l’immagine della miniatura di KitchenAid nel video per avere una rotazione di 360° del mixer, oppure ingrandisci per vedere i dettagli del mixer.
 
-Vedi anche [Utilizzare il video interattivo con Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
+Vedi anche [Utilizzare il video interattivo con Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now must call a new interactive video
 
 -->
 
@@ -49,7 +49,7 @@ There was a link here that showed the video frame of an interactive video and wh
 ### Guarda come vengono creati i video interattivi {#watch-how-interactive-videos-are-created}
 
 Guarda una procedura dettagliata su [creazione di video interattivi](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)(7 minuti e 30 secondi)
-Anche se la procedura dettagliata per i video è contrassegnata con Assets on Demand, i principi e i passaggi illustrati restano validi per i video interattivi di Adobe Experience Manager Assets.
+Anche se la procedura dettagliata per i video è contrassegnata con Assets on Demand, i principi e i passaggi illustrati restano validi per i video interattivi in Adobe Experience Manager Assets.
 
 ### Adobe di webinar Customer Success {#adobe-customer-success-webinar}
 
@@ -57,7 +57,7 @@ Il [Utilizzare video interattivi, condivisione di collegamenti e condivisione di
 
 ## Guida introduttiva: Video interattivi {#quick-start-interactive-videos}
 
-La seguente descrizione dettagliata del flusso di lavoro è progettata per aiutarti a iniziare rapidamente a utilizzare i video interattivi in Dynamic Media.
+La seguente descrizione dettagliata del flusso di lavoro è progettata per aiutarti a iniziare rapidamente a utilizzare i video interattivi in Dynamic Medie.
 
 Cerca **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su questo [avvio di una pagina web demo che *non* hai già aggiunto un elemento interattivo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html).
 
@@ -81,17 +81,17 @@ Consulta [Caricare un video e le risorse miniatura associate](#uploading-a-video
 
    >[!NOTE]
    >
-   >Il formato video MXF non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Media.
+   >Il formato video MXF non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Medie.
 
 1. **Aggiungi interattività al video** : aggiungi uno o più segmenti di tempo al video. Quindi, associa le miniature delle immagini all’interno di tali segmenti di tempo. Assegna ogni miniatura di immagine a un’azione come un collegamento ipertestuale, una visualizzazione rapida o un frammento di esperienza.
 Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
 Per terminare, pubblica le risorse video interattive. La pubblicazione crea il codice o l’URL da incorporare che alla fine copierai e applicherai alla pagina di destinazione del tuo sito web. Consulta [Aggiungi interattività al video](#adding-interactivity-to-your-video).
 Consulta [Pubblicare le risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. **Aggiungi un video interattivo al tuo sito web o al sito web in Experience Manager** - Se utilizzi Experience Manager Sites, eCommerce o entrambi, aggiungi il video interattivo a una pagina web in Experience Manager. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+1. **Aggiungi un video interattivo al tuo sito web o al sito web in Experience Manager** - Se utilizzi Experience Manager Sites, eCommerce o entrambi, aggiungi il video interattivo a una pagina web in Experience Manager. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 Utilizza il codice o l’URL da incorporare per integrare il video interattivo con le esperienze del sito web. Consulta [Integrare un video interattivo con il sito Web](#integrating-an-interactive-video-with-your-website).
 Se utilizzi una soluzione WCM (Web Content Manager) di terze parti, devi integrare il nuovo video interattivo con l’implementazione Quickview esistente utilizzata sul tuo sito web. Consulta [Integrare un video interattivo con un Quickview esistente](#integrating-an-interactive-video-with-an-existing-quickview).
-   [Aggiungere risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 ## (Facoltativo) Identificare le variabili Quickview {#optional-identifying-quickview-variables}
 
@@ -243,7 +243,7 @@ Se hai già caricato le risorse video e delle miniature, procedi a [Aggiungi int
 
 >[!NOTE]
 >
-Il formato video MXF non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Media.
+Il formato video MXF non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Medie.
 
 Se hai caricato video o immagini errati o desideri eliminare i video o le immagini caricati di cui non hai più bisogno, consulta [Elimina risorse](/help/assets/manage-digital-assets.md#delete-assets).
 
@@ -425,7 +425,7 @@ Dopo aver salvato il video interattivo, questo viene aperto immediatamente in An
       <td><p>In Tipo azione, seleziona <strong>Collegamento ipertestuale</strong>, quindi eseguire una delle operazioni seguenti:</p> 
        <ul> 
        <li>Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore sito (cartella) per passare a una pagina web. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.</li> 
-       <li>Se si è clienti Dynamic Media autonomi, specificare il percorso URL completo di una pagina Web collegata nel campo di testo HREF.</li> 
+       <li>Se si è clienti Dynamic Medie autonomi, specificare il percorso URL completo di una pagina Web collegata nel campo di testo HREF.</li> 
        </ul> <p>Assicurati di specificare se aprire il collegamento in una nuova scheda del browser o nella scheda corrente.</p> </td> 
       </tr> 
       <tr> 
@@ -515,7 +515,7 @@ Consulta [Pubblicare le risorse](/help/assets/dynamic-media/publishing-dynamicme
 
 Dopo aver caricato un video, aggiunto segmenti di timeline e pubblicato il video interattivo, puoi aggiungerlo al sito web esistente.
 
-I clienti di Experience Manager Sites possono aggiungere il video interattivo trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+I clienti di Experience Manager Sites possono aggiungere il video interattivo trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Se sei un cliente Experience Manager Assets indipendente, puoi aggiungere manualmente il video interattivo al sito web come descritto in questa sezione.
 

@@ -2,10 +2,10 @@
 title: Utilizzo di Best Practices Analyzer
 description: Scopri come utilizzare Best Practices Analyzer per comprendere lo stato di preparazione all’aggiornamento.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2478'
-ht-degree: 45%
+source-wordcount: '2476'
+ht-degree: 44%
 
 ---
 
@@ -161,7 +161,7 @@ Quando fai clic su **CSV** dall’istanza dell’AEM, il rapporto Best Practices
 
 Se la cache è scaduta, il rapporto viene rigenerato prima che il file CSV venga generato e scaricato.
 
-Il formato CSV del rapporto include informazioni generate dall’output del rilevatore pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza. Il formato è adatto alla visualizzazione e la modifica in un’applicazione come Microsoft Excel. È stato progettato per fornire tutte le informazioni sui risultati in un formato ripetibile che può essere utile quando si confrontano i rapporti nel tempo per misurare l’avanzamento.
+Il formato CSV del rapporto include informazioni generate dall’output del rilevatore pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza. Il formato è adatto alla visualizzazione e la modifica in un’applicazione come Microsoft Excel. Lo scopo è quello di fornire tutte le informazioni sui risultati in un formato ripetibile che può essere utile quando si confrontano i rapporti nel tempo per misurare l’avanzamento.
 
 Le colonne del rapporto in formato CSV sono:
 

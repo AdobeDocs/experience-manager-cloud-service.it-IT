@@ -1,13 +1,13 @@
 ---
 title: Configurazione della modifica in blocco delle proprietà di pagina
 description: Scopri come configurare la modifica in serie per poter modificare le proprietà di più pagine contemporaneamente.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '250'
+ht-degree: 2%
 
 ---
-
 
 # Configurazione della modifica in blocco delle proprietà di pagina {#configuring-bulk-editing-of-page-properties}
 
@@ -20,7 +20,7 @@ Le proprietà di pagina non sono abilitate per la modifica in serie come imposta
 * Alcuni campi sono in genere univoci. È necessario decidere se è utile abilitare questi campi per la modifica in blocco, quando verrà applicato un valore.
    * Ad esempio, i titoli delle pagine sono quasi sempre univoci.
 * Alcuni campi possono avere più valori che richiedono una rappresentazione significativa durante il rendering.
-   * Ad esempio, un elenco a discesa di stato etichettato **Pronto per la pubblicazione**. Questo potrebbe avere diversi valori prima della modifica in blocco, ad esempio **pronto**, **in-review**, **in corso**, ecc.
+   * Ad esempio, un elenco a discesa di stato etichettato **Pronto per la pubblicazione**. Questo potrebbe avere diversi valori prima della modifica in blocco, ad esempio **pronto**, **in-review**, **in corso** e così via.
 
 A causa della possibilità di utilizzare più valori, si consiglia di abilitare solo i seguenti tipi di campo per la modifica in serie.
 

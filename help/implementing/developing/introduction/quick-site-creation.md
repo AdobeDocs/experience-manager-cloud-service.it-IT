@@ -2,9 +2,9 @@
 title: Creazione rapida di siti e personalizzazione front-end
 description: Scopri in che modo lo strumento Creazione Rapida dei Siti utilizza modelli di sito, temi e la pipeline front-end per consentire una rapida distribuzione di nuovi siti e separare lo sviluppo front-end.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '324'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ Lo strumento Creazione rapida di siti è uno strumento di facile utilizzo che co
 
 A tal fine, lo strumento Creazione Rapida dei Siti utilizza diverse potenti funzioni as a Cloud Service dell’AEM:
 
-1. **Modelli per sito AEM** vengono utilizzati per definire il contenuto, la struttura e lo stile del sito di base e vengono selezionati da un amministratore durante la creazione di un nuovo sito.
+1. **Modelli per sito AEM** vengono utilizzati per definire il contenuto e la struttura del sito di base e lo stile del sito e vengono selezionati da un amministratore durante la creazione di un sito.
 1. Un **Tema del sito AEM** è incluso nel modello e contiene le risorse CSS, JavaScript e statiche che definiscono lo stile del sito.
 1. Il **Pipeline front-end** può essere utilizzato per distribuire personalizzazioni al tema del sito indipendentemente dallo sviluppo back-end.
 

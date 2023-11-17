@@ -2,10 +2,10 @@
 title: Attributi e tipi
 description: Scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 90%
+source-wordcount: '679'
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 
 >[!NOTE]
 >
->La convalida del contenuto viene eseguita lato server. L’editor universale funziona semplicemente con gli attributi dei dati. La convalida che soddisfa il modello/struttura deve essere gestita a livello di API.
+>La convalida del contenuto viene eseguita lato server. L’editor universale funziona semplicemente con gli attributi dei dati. La verifica della loro conformità al modello/struttura deve essere effettuata a livello di API.
 
 ## Proprietà dati {#data-properties}
 

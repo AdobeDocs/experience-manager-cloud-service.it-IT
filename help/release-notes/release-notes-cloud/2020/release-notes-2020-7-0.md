@@ -2,10 +2,10 @@
 title: Note sulla versione 2020.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.7.0 as a Cloud Service."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 78%
+source-wordcount: '1032'
+ht-degree: 76%
 
 ---
 
@@ -39,7 +39,7 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 * La pubblicazione delle risorse su [!DNL Dynamic Media] è stata semplificata ed è più robusta; è ora parte integrante della pipeline di elaborazione delle risorse complessiva tramite i microservizi per le risorse ed è stato migliorato il back-end per la pubblicazione batch.
 
-* I passaggi di un flusso di lavoro non compatibili con un’implementazione Cloud Service ora sono contrassegnati da un avviso nell’editor per [!UICONTROL modelli di flusso di lavoro]. Inoltre, durante l’esecuzione dei flussi di lavoro esistenti nell’ambiente Cloud Service, vengono ignorati i passaggi del flusso di lavoro non compatibili.
+* I passaggi di un flusso di lavoro non compatibili con un’implementazione Cloud Service ora sono contrassegnati da un avviso nell’editor per [!UICONTROL modelli di flusso di lavoro]. Inoltre, durante l’esecuzione dei flussi di lavoro esistenti nell’ambiente di Cloud Service, vengono saltati i passaggi del flusso di lavoro non compatibili.
 
 * I modelli di flussi di lavoro creati dai clienti che vengono distribuiti in `/conf/global`[!DNL Cloud Manager] nel progetto Git associato all’ambiente in vengono automaticamente distribuiti in `/var` e sono quindi disponibili in [!DNL Experience Manager]. I modelli di flusso di lavoro dei prodotti in `/libs` che sono stati modificati dai clienti non vengono distribuiti automaticamente in `/var`.
 
@@ -105,7 +105,7 @@ Per ulteriori informazioni, consulta Utilizzo del supporto Java 11.
 
 * Alcuni errori nel processo di qualità del codice potevano causare la generazione non corretta del file di registro.
 
-* Al momento della creazione di un nuovo programma, a volte il nome suggerito poteva essere un duplicato di nome di programma esistente.
+* Durante la creazione di un programma, il nome suggerito talvolta restituiva un duplicato di un nome di programma esistente.
 
 * Tramite l’interfaccia utente non si potevano scaricare in modo coerente i log di alcuni fasi di pipeline di grandi dimensioni.
 

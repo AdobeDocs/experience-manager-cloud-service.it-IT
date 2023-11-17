@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 96%
+source-wordcount: '776'
+ht-degree: 86%
 
 ---
 
@@ -57,22 +57,22 @@ Una console **Configurazione della traduzione** è disponibile per la configuraz
 
 Per accedervi:
 
-1. Passa a **Strumenti** -> **Generale**.
-1. Tocca o fai clic su **Configurazione della traduzione**.
+1. Accedi a **Strumenti** > **Generale**.
+1. Seleziona **Configurazione traduzione**.
 
 AEM crea automaticamente le regole di traduzione per tutto il contenuto. Per visualizzare queste regole:
 
-1. Seleziona il contesto `/content` e quindi l’opzione **Modifica** dalla barra degli strumenti.
+1. Seleziona la `/content` contesto.
+1. Sulla barra degli strumenti, seleziona **Modifica**.
 1. Si apre l’Editor regole di traduzione con le regole AEM create automaticamente per il percorso `/content`.
 
    ![Editor regole di traduzione](assets/translation-rules-editor.png)
 
 1. Le proprietà di pagina che vengono tradotte si trovano nella sezione **Generale** dell’elenco. È possibile aggiungere o aggiornare i nomi di proprietà esistenti che si desidera includere esplicitamente nella traduzione.
-   1. Immetti il nome della proprietà nel campo **Nuova proprietà**.
-   1. Le opzioni **Traduci** e **Eredita** vengono controllate automaticamente.
-   1. Tocca o fai clic su **Avanti**.
+   1. In **Nuova proprietà** immetti il nome della proprietà. Le opzioni **Traduci** e **Eredita** vengono controllate automaticamente.
+   1. Seleziona **Aggiungi**.
    1. Ripeti questi passaggi per tutti i campi da tradurre.
-   1. Tocca o fai clic su **Salva**.
+   1. Seleziona **Salva**.
 
 Hai configurato le regole di traduzione.
 
@@ -86,7 +86,7 @@ Hai configurato le regole di traduzione.
 
 ## Utilizzo avanzato {#advanced-usage}
 
-È possibile configurare una serie di proprietà aggiuntive come parte delle regole di traduzione. Inoltre, è possibile specificare le regole manualmente come XML, il che consente maggiore specificità e flessibilità.
+Ci sono diverse proprietà aggiuntive che possono essere configurate come parte delle regole di traduzione. Inoltre, è possibile specificare le regole manualmente come XML, il che consente maggiore specificità e flessibilità.
 
 Tali funzioni generalmente non sono necessarie per iniziare a localizzare il contenuto ma, se sei interessato, puoi avere maggiori informazioni nella sezione [Risorse aggiuntive](#additional-resources).
 

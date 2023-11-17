@@ -4,10 +4,10 @@ description: Scopri come le regole di traduzione identificano il contenuto da tr
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 99%
+source-wordcount: '1288'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Le regole di traduzione descritte in questo documento si applicano ai frammenti 
 
 Se l’opzione **Abilita campi del modello di contenuto per la traduzione** è attiva, AEM utilizzerà il campo **Traducibile** su [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) per determinare se il campo deve essere tradotto e crea automaticamente le conseguenti regole di traduzione. Questa opzione sostituisce eventuali regole di traduzione create e non richiede alcun intervento o passaggi aggiuntivi.
 
-Se desideri utilizzare le regole di traduzione per tradurre i frammenti di contenuto, l’opzione **Abilita campi del modello di contenuto per la traduzione** sulla configurazione del framework di integrazione della traduzione deve essere disabilitata e devi seguire i passaggi descritti di seguito per creare le regole.
+Se desideri utilizzare le regole di traduzione per tradurre i frammenti di contenuto, il **Abilita campi modello di contenuto per la traduzione** l’opzione sulla configurazione del framework di integrazione della traduzione deve essere disabilitata e devi seguire i passaggi descritti di seguito per creare le regole.
 
 ## Panoramica {#overview}
 
@@ -167,7 +167,7 @@ Nell’interfaccia utente delle regole di traduzione puoi:
 
    ![Aggiungi contesto di traduzione](../assets/add-translation-context.png)
 
-1. Utilizza il browser percorsi per selezionare il contesto desiderato e tocca o fai clic sul pulsante **Conferma** per salvare.
+1. Utilizza il browser Percorsi per selezionare il contesto desiderato e selezionare **Conferma** per salvare.
 
    ![Seleziona contesto](../assets/select-context.png)
 

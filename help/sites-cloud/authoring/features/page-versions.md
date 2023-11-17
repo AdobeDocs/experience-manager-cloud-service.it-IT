@@ -2,18 +2,18 @@
 title: Utilizzo delle versioni di una pagina
 description: Scopri come creare, confrontare e ripristinare versioni delle pagine in AEM.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 36%
+source-wordcount: '1505'
+ht-degree: 97%
 
 ---
 
 # Utilizzo delle versioni di una pagina   {#working-with-page-versions}
 
-Il controllo delle versioni crea un&#39;istantanea di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
+Il controllo delle versioni crea lo snapshot di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
 
-* Crea una versione di una pagina.
+* Creare una versione di una pagina.
 * Ripristina una versione precedente di una o più pagine per:
    * Annullare le modifiche apportate alle pagine.
    * Ripristinare le pagine eliminate.
@@ -35,12 +35,12 @@ Puoi creare una versione della risorsa da:
 1. Passa alla pagina per la quale desideri creare una versione.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Apri la barra **Timeline**.
-1. Tocca o fai clic sui punti di sospensione accanto al campo del commento per visualizzare le opzioni:
+1. Seleziona i puntini di sospensione accanto al campo del commento per visualizzare le opzioni:
 
    ![Versioni nella barra Timeline](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
 1. Seleziona **Salva come versione**.
-1. Immetti un **Etichetta** e **Commento**, se necessario.
+1. Immetti un’**Etichetta** e un **Commento**, se necessario.
 
    ![Aggiunta dell’etichetta per una versione](/help/sites-cloud/authoring/assets/versions-add-label.png)
 
@@ -52,11 +52,11 @@ Puoi creare una versione della risorsa da:
 
 1. Passa alla pagina per la quale desideri creare una versione.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Seleziona la **Crea** dalla barra degli strumenti.
-1. Viene visualizzata la stessa finestra di dialogo. È possibile immettere un valore **Etichetta** e un **Commento**, se necessario.
+1. Seleziona l’opzione **Crea** dalla barra degli strumenti.
+1. Viene aperta la stessa finestra di dialogo. Puoi immettere un’**Etichetta** e un **Commento**, se necessario.
 1. Conferma la nuova versione selezionando **Crea**.
 
-La timeline viene aperta con le informazioni aggiornate per indicare che si tratta di una nuova versione.
+Viene aperta la timeline con le informazioni aggiornate per indicare che si tratta di una nuova versione.
 
 ## Ripristino delle versioni {#reinstating-versions}
 
@@ -70,21 +70,21 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 
    * **Ripristina versione**
 
-     Ripristina le versioni delle pagine specificate nella cartella attualmente selezionata. Può inoltre includere il ripristino di pagine precedentemente eliminate.
+     Ripristina le versioni delle pagine specificate nella cartella attualmente selezionata. Può inoltre includere il ripristino delle pagine precedentemente eliminate.
 
-   * **Ripristina albero**
+   * **Ripristina struttura**
 
-     Ripristinare una versione dell&#39;intera struttura in base a una data e un&#39;ora specificate. Può anche includere pagine precedentemente eliminate.
+     Ripristina una versione dell’intera struttura in base a una data e un’ora specificate. Può anche includere pagine precedentemente eliminate.
 
 >[!NOTE]
 >
->Quando si ripristina una pagina, la versione creata fa parte di un nuovo ramo.
+>Durante il ripristino di una pagina, la versione creata fa parte di un nuovo ramo.
 >
 >Per maggiore chiarezza:
 >
 >1. Crea versioni di qualsiasi pagina.
 >1. Le etichette iniziali e i nomi dei nodi di versione sono 1.0, 1.1, 1.2 e così via.
->1. Ripristina la prima versione, ovvero 1.0.
+>1. Ripristina la prima versione, ovvero la 1.0.
 >1. Crea di nuovo le versioni.
 >1. Le etichette e i nomi dei nodi generati sono ora 1.0.0, 1.0.1, 1.0.2 e così via.
 
@@ -92,10 +92,10 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 
 Per **ripristinare** la pagina selezionata in una versione precedente:
 
-1. Passa alla pagina in cui desideri ripristinare una versione precedente.
+1. Passa alla pagina di cui desideri ripristinare una versione precedente.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**. Vengono elencate le versioni della pagina selezionata.
-1. Seleziona la versione da ripristinare. Vengono visualizzate le opzioni possibili:
+1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**. Vengono elencate le versioni disponibili per la pagina selezionata.
+1. Seleziona la versione da ripristinare. Vengono visualizzate le opzioni disponibili:
 
    ![Ripristina questa versione](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -113,7 +113,7 @@ Questo metodo può essere utilizzato per ripristinare versioni di pagine specifi
    >
    >Se:
    >
-   >* ha selezionato una singola pagina che non ha mai avuto pagine figlie,
+   >* hai selezionato una singola pagina che non ha mai avuto pagine secondarie,
    >* o nessuna delle pagine della cartella dispone di versioni,
    >
    >La visualizzazione diventa vuota perché non sono presenti versioni applicabili.
@@ -138,29 +138,29 @@ Questo metodo può essere utilizzato per ripristinare versioni di pagine specifi
 
 ### Ripristina albero {#restore-tree}
 
-Questo metodo può essere utilizzato per ripristinare una versione di una struttura in una data e in un&#39;ora specificate. Può includere pagine precedentemente eliminate:
+Questo metodo può essere utilizzato per ripristinare una versione di una struttura a una data e a un’ora specificate. Può includere pagine precedentemente eliminate:
 
 1. Vai alla cartella richiesta e [selezionala](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 
 1. Seleziona **Ripristina**, quindi **Ripristina struttura** dalla [barra delle azioni](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar) in alto. Viene visualizzata la versione più recente della struttura:
 
-   ![Ripristina albero](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
+   ![Ripristina struttura](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
-1. Utilizza il selettore data e ora in **Ultime versioni alla data** in modo da poter selezionare un&#39;altra versione della struttura, quella da ripristinare.
+1. Utilizza il selettore data e ora in **Versioni più recenti alla data** per poter selezionare un’altra versione della struttura, quella da ripristinare.
 
 1. Imposta il contrassegno **Pagine non versionate salvate** se necessario:
 
    * Se è attiva (selezionata), tutte le pagine senza versione vengono mantenute e non sono interessate dal ripristino.
 
-   * Se non è attiva (deselezionata), tutte le pagine senza versione vengono rimosse in quanto non esistevano nella struttura con versione.
+   * Se non è attiva (deselezionata), tutte le pagine non versionate vengono rimosse in quanto non esistevano nella struttura versionata.
 
 1. Seleziona **Ripristina** per la versione selezionata della struttura da ripristinare come versione *attuale*.
 
 ## Anteprima di una versione   {#previewing-a-version}
 
-Puoi visualizzare in anteprima una versione specifica:
+Puoi visualizzare l’anteprima di una versione specifica:
 
-1. Passare alla pagina che si desidera confrontare.
+1. Passa alla pagina che desideri confrontare.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
 1. Vengono elencate le versioni della pagina. Seleziona la versione da visualizzare in anteprima:
@@ -171,22 +171,22 @@ Puoi visualizzare in anteprima una versione specifica:
 
    >[!CAUTION]
    >
-   >Se una pagina è stata spostata, non è più possibile eseguire un&#39;anteprima sulle versioni create prima dello spostamento.
+   >Se una pagina è stata spostata, non è più possibile eseguire un’anteprima delle versioni create prima dello spostamento.
    >
-   >Se riscontri problemi con un’anteprima, controlla [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) affinché la pagina possa vedere se è stata spostata.
+   >Se riscontri problemi con un’anteprima, controlla la [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline), per constatare se la pagina da visualizzare è stata spostata.
 
 ## Confronto di una versione con la pagina corrente {#comparing-a-version-with-current-page}
 
-Per confrontare una versione precedente con la pagina corrente:
+Per mettere a confronto una versione precedente con la pagina corrente:
 
-1. Passare alla pagina che si desidera confrontare.
+1. Passa alla pagina che desideri confrontare.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
 1. Vengono elencate le versioni della pagina. Seleziona la versione da confrontare:
 
    ![Confronto delle versioni](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Seleziona **Confronta con corrente**. Il [differenze di pagina](/help/sites-cloud/authoring/features/page-diff.md) apre e visualizza le differenze.
+1. Seleziona **Confronta con corrente**. La [pagina di confronto](/help/sites-cloud/authoring/features/page-diff.md) si apre e visualizza le differenze.
 
 ## Timewarp   {#timewarp}
 
@@ -196,24 +196,24 @@ Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di 
 >
 >[Timewarp può essere utilizzato anche con Launches per visualizzare anteprime](/help/sites-cloud/authoring/launches/preview.md).
 
-Poiché la creazione di contenuti è un processo continuo e collaborativo, lo scopo di Timewarp è quello di consentire agli autori di tenere traccia del sito web pubblicato nel tempo, in modo che possano capire come è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione.
+Poiché la creazione di contenuti è un processo continuo e collaborativo, lo scopo di Timewarp è consentire agli autori di tenere traccia del sito web pubblicato nel tempo, in modo da comprendere in che modo è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione.
 
 Per utilizzare questa funzione:
 
-* Il sistema cerca la versione della pagina che era attiva al momento selezionato.
-* Significa che la versione mostrata è stata creata/attivata *prima di* il momento selezionato in Timewarp.
-* Quando si passa a una pagina che è stata eliminata, viene eseguito anche il rendering, purché nell’archivio siano ancora disponibili le versioni precedenti della pagina.
-* Se non viene trovata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di authoring, in modo da evitare un errore 404 di pagina non trovata, che impedirebbe la navigazione.
+* il sistema cerca la versione della pagina che era attiva al momento selezionato.
+* In altre parole, la versione mostrata era stata creata/attivata *prima* del momento temporale selezionato in Timewarp.
+* Quando si passa a una pagina che è stata successivamente eliminata, questa viene riprodotta purché nell’archivio siano disponibili ancora le precedenti versioni di tale pagina.
+* Se non viene individuata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di authoring (in modo da evitare un errore 404 di pagina non trovata, che impedirebbe la navigazione).
 
 ### Utilizzo di Timewarp {#using-timewarp}
 
-Timewarp è un [modalità](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) dell’editor pagina. Per avviarlo, è sufficiente cambiarlo come si farebbe con qualsiasi altra modalità.
+Timewarp è una [modalità](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) dell’editor pagina. Per avviarlo, è sufficiente cambiarlo come si farebbe con qualsiasi altra modalità.
 
 1. Avvia l’editor per la pagina in cui desideri avviare Timewarp, quindi seleziona **Timewarp** nella selezione della modalità.
 
    ![Modalità Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. Nella finestra di dialogo, imposta una data e un’ora di destinazione e fai clic su **Imposta data**. Se non si seleziona un&#39;ora, per impostazione predefinita viene utilizzata l&#39;ora corrente.
+1. Nella finestra di dialogo, imposta una data e un’ora di destinazione e fai clic su **Imposta data**. Se non si seleziona un’ora, per impostazione predefinita viene utilizzata l’ora corrente.
 
    ![Data di destinazione in Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
@@ -223,13 +223,13 @@ Timewarp è un [modalità](/help/sites-cloud/authoring/fundamentals/environment-
 
 ### Limitazioni di Timewarp {#timewarp-limitations}
 
-Timewarp semplifica al massimo la riproduzione di una pagina in un determinato momento. Tuttavia, a causa delle complessità dell’authoring continuo dei contenuti in AEM, questa riproduzione non è sempre possibile. Tieni presenti queste limitazioni quando utilizzi Timewarp.
+Timewarp semplifica al massimo la riproduzione di una pagina in un determinato momento. Tuttavia, a causa delle complessità dell’authoring continuo di contenuti in AEM, questo non è sempre possibile. Tieni presenti queste limitazioni quando utilizzi Timewarp.
 
-* **Timewarp funziona in base alle pagine pubblicate** - Timewarp funziona correttamente solo se la pagina è stata già pubblicata. In caso contrario, Timewarp mostra la pagina corrente nell’ambiente di authoring.
-* **Timewarp utilizza le versioni di pagina** - Se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa viene riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
+* **Timewarp funziona in base alle pagine pubblicate**: Timewarp funziona correttamente solo se la pagina è stata già pubblicata. In caso contrario viene mostrata la pagina corrente nell’ambiente di authoring.
+* **Timewarp utilizza le versioni di pagina**: se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa verrà riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
 * **Le versioni rimosse influiscono su Timewarp**: se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta.
-* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando [ripristinare](#revert-to-a-version).
-* **Timewarp si basa sul contenuto della pagina** - Se sono stati modificati alcuni elementi per il rendering del sito web, ad esempio codice, css e risorse, la visualizzazione è diversa da quella originale. Per tali elementi non viene creata una versione nell&#39;archivio.
+* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](#revert-to-a-version).
+* **Timewarp si basa sul contenuto della pagina**: se sono stati modificati alcuni elementi per il rendering del sito web, ad esempio codice, css e risorse, la visualizzazione sarà diversa da quella originale. Per tali elementi non viene creata una versione nell’archivio.
 
 >[!CAUTION]
 >

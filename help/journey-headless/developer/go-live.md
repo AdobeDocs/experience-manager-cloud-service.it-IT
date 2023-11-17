@@ -2,10 +2,10 @@
 title: Come pubblicare con la tua applicazione headless
 description: In questa parte del Percorso per sviluppatori AEM Headless, scopri come distribuire un’applicazione headless in tempo reale prendendo il codice locale nel Git e spostandolo nel Git di Cloud Manager per la pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -67,7 +67,7 @@ Una volta verificato che tutto sia stato testato e funzioni correttamente, puoi 
 
 Dopo il caricamento su Cloud Manager, gli aggiornamenti possono essere distribuiti su AEM as a Cloud Service utilizzando la [pipeline CI/CD di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it).
 
-Puoi iniziare a distribuire il codice sfruttando la pipeline CI/CD di Cloud Manager, ampiamente illustrata [qui](/help/implementing/deploying/overview.md).
+Puoi iniziare a distribuire il codice utilizzando la pipeline CI/CD di Cloud Manager, ampiamente trattata [qui](/help/implementing/deploying/overview.md).
 
 ## Monitoraggio delle prestazioni {#performance-monitoring}
 

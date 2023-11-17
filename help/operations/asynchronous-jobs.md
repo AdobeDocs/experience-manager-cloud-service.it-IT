@@ -2,9 +2,9 @@
 title: Processi asincroni
 description: Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a uso intensivo di risorse come operazioni in background.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '863'
 ht-degree: 70%
 
 ---
@@ -21,7 +21,7 @@ Alcune di queste operazioni sono:
 * Recupero di risorse che superano il limite di soglia impostato da una implementazione remota di Experience Manager
 * Rollout di Live Copy
 
-È possibile visualizzare lo stato dei processi asincroni da **[!UICONTROL Operazioni in background]** dashboard in **Navigazione globale** -> **Strumenti** -> **Generale** -> **Processi**.
+È possibile visualizzare lo stato dei processi asincroni da **[!UICONTROL Operazioni in background]** dashboard in **Navigazione globale** > **Strumenti** > **Generale** > **Processi**.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Ogni volta che AEM elabora un’operazione in modo asincrono, ricevi una notific
 
 Per visualizzare in dettaglio lo stato delle operazioni asincrone, passare alla **[!UICONTROL Operazioni in background]** pagina.
 
-1. Nell’interfaccia Experience Manager seleziona **Navigazione globale** -> **Strumenti** -> **Generale** -> **Processi**.
+1. Nell’interfaccia Experience Manager seleziona **Navigazione globale** > **Strumenti** > **Generale** > **Processi**.
 
 1. In **[!UICONTROL Operazioni in background]** , rivedere i dettagli delle operazioni.
 
@@ -71,7 +71,7 @@ Per visualizzare in dettaglio lo stato delle operazioni asincrone, passare alla 
 
 ## Configurazione delle opzioni di elaborazione del processo asincrono {#configure}
 
-È possibile configurare diverse opzioni relative ai processi asincroni. Gli esempi seguenti mostrano come eseguire questa operazione utilizzando la gestione della configurazione su un sistema di sviluppo locale.
+È possibile configurare diverse opzioni per i processi asincroni. Gli esempi seguenti mostrano come eseguire questa operazione utilizzando la gestione della configurazione su un sistema di sviluppo locale.
 
 >[!NOTE]
 >

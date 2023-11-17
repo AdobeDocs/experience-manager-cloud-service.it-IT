@@ -2,10 +2,10 @@
 title: Scelte rapide da tastiera per le console
 description: Risparmia tempo durante l’authoring utilizzando queste scelte rapide da tastiera
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 69%
+source-wordcount: '378'
+ht-degree: 64%
 
 ---
 
@@ -65,7 +65,7 @@ Inoltre, le scelte rapide da tastiera sono le stesse per tutte le lingue e i lay
 
 ## Disattivazione delle scelte rapide da tastiera {#deactivating-keyboard-shortcuts}
 
-AEM fornisce scelte rapide da tastiera per alcune delle funzioni di uso comune (modifica, proprietà, copia/incolla, visualizzazione dei menu delle barre laterali e così via).
+AEM fornisce scelte rapide da tastiera per alcune delle funzioni comunemente utilizzate (modifica, proprietà, copia/incolla, visualizzazione di vari menu della barra laterale e così via).
 
 Per gli utenti che non utilizzano scelte rapide da tastiera o che hanno determinati requisiti di accessibilità, tutte le scelte rapide da tastiera possono essere disattivate.
 

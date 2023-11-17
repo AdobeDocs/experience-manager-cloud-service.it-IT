@@ -2,10 +2,10 @@
 title: Gestire siti demo
 description: Scopri gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 94%
+source-wordcount: '936'
+ht-degree: 89%
 
 ---
 
@@ -41,7 +41,7 @@ Questo documento illustra come gestire i siti demo creati. Dopo la lettura dovre
 
 Ora che hai dei siti dimostrativi, probabilmente vorrai sapere come gestirli. La pipeline non solo ha implementato i modelli di sito per fornire il contenuto dei siti demo, ma ha anche implementato un set di utilità per gestirli.
 
-1. Dalla barra di navigazione globale AEM, seleziona **Strumenti** -> **Demo di riferimento** -> **Utilità demo di riferimento**.
+1. Dalla barra di navigazione globale AEM, seleziona **Strumenti** > **Demo di riferimento** > **Utilità demo di riferimento**.
 
    ![Utilità demo self-service](assets/demo-utilities.png)
 
@@ -49,7 +49,7 @@ Ora che hai dei siti dimostrativi, probabilmente vorrai sapere come gestirli. La
 
    ![Dashboard](assets/dashboard.png)
 
-Utilità demo self-service fornisce una serie di strumenti.
+Utilità demo self-service fornisce diversi strumenti.
 
 * **Elimina siti**: seleziona il sito da eliminare in questa istanza di Adobe Experience Manager. Tieni presente che si tratta di un’azione distruttiva e non può essere annullata una volta avviata.
 * **Elimina modelli di sito**: seleziona il modello di sito da eliminare in questa istanza di Adobe Experience Manager. Prima di eliminare un modello di sito, assicurati che vengano eliminati anche tutti i siti che fanno riferimento al modello. Tieni presente che si tratta di un’azione distruttiva e non può essere annullata una volta avviata.
@@ -62,11 +62,11 @@ Utilità demo self-service fornisce una serie di strumenti.
 
 Dopo aver testato un set di funzionalità AEM, potrebbe non essere più necessario il sito demo o persino il modello su cui si basa. È facile eliminare sia i siti demo che i modelli di sito.
 
-1. Accedi a **Utilità Demo di riferimento** e tocca o fai clic su **Elimina siti**.
+1. Accedere a **Utilità demo di riferimento** e seleziona **Elimina siti**.
 
    ![Elimina siti](assets/delete-sites.png)
 
-1. I siti disponibili sono presentati in un elenco. Controlla il sito o i siti che desideri eliminare, quindi tocca o fai clic su **Elimina**.
+1. I siti disponibili sono presentati in un elenco. Controllare il sito o i siti che si desidera eliminare e quindi selezionare **Elimina**.
 
    >[!CAUTION]
    >

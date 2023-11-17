@@ -2,9 +2,9 @@
 title: Best practice per la configurazione e l’utilizzo di AEM GraphQL con frammenti di contenuto
 description: Scopri le best practice consigliate per la configurazione e l’utilizzo di AEM GraphQL con frammenti di contenuto.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '739'
 ht-degree: 34%
 
 ---
@@ -199,9 +199,9 @@ Per:
 * Test
 * Produzione
 
-### Ulteriori risorse
+### Risorse aggiuntive
 
-Per ulteriori dettagli sul GraphQL dell’AEM e sui frammenti di contenuto consulta:
+Per ulteriori dettagli sul GraphQL dell’AEM e sui frammenti di contenuto, vedi:
 
 * [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
 * [Utilizzo dell’IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md)

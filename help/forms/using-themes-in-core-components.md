@@ -2,9 +2,9 @@
 title: Come possiamo creare e utilizzare i temi in Adaptive Forms?
 description: Puoi utilizzare i temi per assegnare uno stile e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2676'
 ht-degree: 4%
 
 ---
@@ -367,7 +367,7 @@ Il tema viene distribuito utilizzando [pipeline front-end.](https://experiencele
 
    ![run-a-pipeline](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-Una volta completata la build, il tema diventa disponibile nell’istanza di authoring per l’utilizzo. Viene visualizzato sotto **[!UICONTROL Stile]** nella procedura guidata di creazione di moduli adattivi, durante la creazione di un nuovo modulo adattivo.
+Una volta completata la build, il tema diventa disponibile nell’istanza di authoring per l’utilizzo. Viene visualizzato sotto **[!UICONTROL Stile]** nella procedura guidata di creazione di moduli adattivi, durante la creazione di un modulo adattivo.
 
 ![tema personalizzato disponibile nella scheda stile](/help/forms/assets/custom-theme-style-tab.png)
 

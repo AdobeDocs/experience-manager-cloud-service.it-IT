@@ -4,9 +4,9 @@ description: I flussi di lavoro incentrati su Forms consentono di creare rapidam
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utilizzare i flussi di lavoro AEM, utilizzando Assegna passaggi attività, converti in passaggi PDF/A, Genera un documento di passaggi registrati, Utilizza flussi di lavoro, Firma passaggio documento, Genera un passaggio di output stampato, Genera output PDF non interattivo
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '7446'
+source-wordcount: '7444'
 ht-degree: 1%
 
 ---
@@ -396,7 +396,7 @@ Il passaggio Firma documento presenta le seguenti proprietà:
 * **[!UICONTROL Processo di firma]**: puoi scegliere di firmare un documento in ordine sequenziale o parallelo. In ordine sequenziale, un firmatario riceve il documento alla volta per la firma. Dopo che il primo firmatario ha completato la firma del documento, questo viene inviato al secondo firmatario e così via. In ordine parallelo, più firmatari possono firmare un documento alla volta.
 * **[!UICONTROL URL di reindirizzamento]**: specifica un URL di reindirizzamento. Dopo aver firmato il documento, puoi reindirizzare l’assegnatario a un URL. Di solito, questo URL contiene un messaggio di ringraziamento o ulteriori istruzioni.
 * **[!UICONTROL Fase flusso di lavoro]**: un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello ( **[!UICONTROL Sidekick]** > **[!UICONTROL Pagina]** > **[!UICONTROL Proprietà pagina]** > **[!UICONTROL Fasi]**).
-* **[!UICONTROL Seleziona destinatari]**: specifica il metodo di scelta dei destinatari del documento. Puoi assegnare dinamicamente il flusso di lavoro a un utente o a un gruppo oppure aggiungere manualmente i dettagli di un destinatario. Quando selezioni Manualmente nel menu a discesa, aggiungi i dettagli del destinatario come E-mail, Ruolo e Metodo di autenticazione.
+* **[!UICONTROL Seleziona destinatari]**: specifica il metodo di scelta dei destinatari del documento. Puoi assegnare dinamicamente il flusso di lavoro a un utente o a un gruppo oppure aggiungere manualmente i dettagli di un destinatario. Quando selezioni Manualmente nell’elenco a discesa, aggiungi i dettagli del destinatario come E-mail, Ruolo e Metodo di autenticazione.
 
   >[!NOTE]
   >
@@ -546,7 +546,7 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 
 * **[!UICONTROL Seleziona posizione principale contenuto tramite]**: radice del contenuto è un valore stringa che specifica l’URI, il riferimento assoluto o la posizione nell’archivio per recuperare le risorse relative utilizzate dalla progettazione del modulo. Ad esempio, se la progettazione del modulo fa riferimento a un’immagine relativamente, ad esempio `../myImage.gif`, `myImage.gif` deve essere in `repository://`. Il valore predefinito è `repository://`, che punta al livello principale dell’archivio.
 
-  Quando scegli una risorsa dall’applicazione, il percorso URI della directory principale del contenuto deve avere la struttura corretta. Ad esempio, se un modulo viene selezionato da un’applicazione denominata SampleApp e viene posizionato in `SampleApp/1.0/forms/Test.xdp`, l&#39;URI radice del contenuto deve essere specificato come `repository://administrator@password/Applications/SampleApp/1.0/forms/`, o `repository:/Applications/SampleApp/1.0/forms/` (quando l&#39;autorità è nulla). Quando l’URI della directory principale del contenuto viene specificato in questo modo, i percorsi di tutte le risorse a cui si fa riferimento nel modulo vengono risolti in base a questo URI.
+  Quando scegli una risorsa dall’applicazione, il percorso URI della directory principale del contenuto deve avere la struttura corretta. Ad esempio, se un modulo viene selezionato da un’applicazione denominata SampleApp e viene posizionato in `SampleApp/1.0/forms/Test.xdp`, l&#39;URI radice del contenuto deve essere specificato come `repository://administrator@password/Applications/SampleApp/1.0/forms/`, o `repository:/Applications/SampleApp/1.0/forms/` (quando l&#39;autorità è nulla). Quando l’URI della directory principale del contenuto viene specificato in questo modo, i percorsi di tutte le risorse a cui si fa riferimento nel modulo vengono risolti rispetto a questo URI.
 
 * **[!UICONTROL Seleziona file XCI tramite]**: i file XCI vengono utilizzati per descrivere i font e altre proprietà utilizzati per gli elementi di progettazione dei moduli. È possibile mantenere un file XCI relativo al payload, in un percorso assoluto o utilizzando una variabile di tipo dati Documento.
 

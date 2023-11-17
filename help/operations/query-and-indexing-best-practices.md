@@ -3,10 +3,10 @@ title: Best practice per query e indicizzazione
 description: Scopri come ottimizzare indici e query in base alle linee guida sulle best practice di Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3133'
-ht-degree: 47%
+source-wordcount: '3128'
+ht-degree: 44%
 
 ---
 
@@ -46,7 +46,7 @@ Ad esempio, se il contenuto viene memorizzato in una tassonomia simile a:
 
 il `/content/myUnstructuredContent/parentCategory/childCategory` nodo può essere semplicemente recuperato, i relativi nodi secondari possono essere analizzati e utilizzati per eseguire il rendering del componente.
 
-Inoltre, quando si tratta di un set di risultati piccolo o omogeneo, navigare l’archivio e raccogliere i nodi richiesti può essere una soluzione più veloce rispetto alla creazione di una query per restituire lo stesso set di risultati. In generale, occorre evitare le query laddove possibile.
+Inoltre, quando si tratta di un set di risultati piccolo o omogeneo, può essere più rapido attraversare l’archivio e raccogliere i nodi richiesti, anziché creare una query per restituire lo stesso set di risultati. In generale, occorre evitare le query laddove possibile.
 
 ### Preacquisizione dei risultati {#prefetching-results}
 
@@ -85,7 +85,7 @@ Il vincolo principale su qualsiasi query deve essere una corrispondenza di propr
 
 Il motore di query considera solo un singolo indice. Ciò significa che un indice esistente può e deve essere personalizzato aggiungendovi proprietà di indice più personalizzate.
 
-Nella sezione [Scheda di riferimento rapido per le query JCR](#jcr-query-cheatsheet) di questo documento sono elencati i vincoli disponibili e inoltre viene illustrato come la definizione di un indice deve essere visualizzata per essere selezionata. Utilizza lo [Strumento Prestazioni query](#query-performance-tool) per verificare la query e assicurarti che sia utilizzato l’indice corretto e che il motore di query non debba valutare i vincoli al di fuori dell’indice.
+Il [Scheda di riferimento rapido per le query JCR](#jcr-query-cheatsheet) sezione di questo documento elenca i vincoli disponibili e illustra inoltre come deve essere visualizzata una definizione di indice per essere selezionata. Utilizza lo [Strumento Prestazioni query](#query-performance-tool) per verificare la query e assicurarti che sia utilizzato l’indice corretto e che il motore di query non debba valutare i vincoli al di fuori dell’indice.
 
 ### Ordinamento {#ordering}
 
@@ -138,7 +138,7 @@ Lo strumento Explain Query Tool consente agli sviluppatori di comprendere il pia
 
 Per spiegare una query, eseguire le operazioni seguenti:
 
-* Selezionare la lingua di query appropriata utilizzando `Language` a discesa.
+* Selezionare la lingua di query appropriata utilizzando `Language` elenco a discesa.
 * Immettere l&#39;istruzione di query in `Query` campo.
 * Se necessario, seleziona la modalità di esecuzione della query utilizzando le caselle di controllo fornite.
    * Per impostazione predefinita, non è necessario eseguire query JCR per identificare il piano di esecuzione delle query (questo non è il caso delle query QueryBuilder).
@@ -239,7 +239,7 @@ In questa sezione del piano si afferma che:
 
 Questo piano di esecuzione della query si tradurrà in ogni risorsa sotto `/content/dam` letti dall’indice e quindi filtrati ulteriormente dal motore di query (che includerà solo quelli che corrispondono alla restrizione della proprietà non indicizzata nel set di risultati).
 
-Anche se solo una piccola percentuale di risorse corrisponde alla restrizione `jcr:content/metadata/myProperty = "My Property Value"`, la query deve leggere un numero elevato di nodi per (tentare di) riempire la &quot;pagina&quot; richiesta dei risultati. Questo può causare prestazioni insoddisfacenti, che verranno visualizzate come con un basso `Read Optimization` nello strumento Prestazioni query) e può causare messaggi di avvertenza che indicano che un numero elevato di nodi viene attraversato (vedere [Attraversamento indice](#index-traversal)).
+Anche se solo una piccola percentuale di risorse corrisponde alla restrizione `jcr:content/metadata/myProperty = "My Property Value"`, la query deve leggere un numero elevato di nodi per (tentare di) riempire la &quot;pagina&quot; di risultati richiesta. Questo può causare prestazioni insoddisfacenti, che verranno visualizzate come con un basso `Read Optimization` nello strumento Prestazioni query) e può causare messaggi di avvertenza che indicano che un numero elevato di nodi viene attraversato (vedere [Attraversamento indice](#index-traversal)).
 
 Per ottimizzare le prestazioni di questa seconda query, crea una versione personalizzata di `damAssetLucene-9` indice (`damAssetLucene-9-custom-1`) e aggiungi la seguente definizione di proprietà -
 
@@ -308,7 +308,8 @@ Le query che utilizzano un indice, ma ancora leggono un numero elevato di nodi v
 05.10.2023 10:56:10.498 *WARN* [127.0.0.1 [1696502982443] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.search.spi.query.FulltextIndex$FulltextPathCursor Index-Traversed 60000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [dam:Asset] as a where isdescendantnode(a, '/content/dam') order by [jcr:content/metadata/unindexedProperty] /* xpath: /jcr:root/content/dam//element(*, dam:Asset) order by jcr:content/metadata/unindexedProperty */, path=/content/dam//*)
 ```
 
-Ciò può verificarsi per una serie di motivi:
+Ciò può verificarsi per diversi motivi:
+
 1. Non tutte le restrizioni nella query possono essere gestite nell’indice.
    * In questo caso, un superset del set di risultati finale viene letto dall’indice e successivamente filtrato nel motore di query.
    * Questa operazione è molto più lenta rispetto all’applicazione di restrizioni nella query dell’indice sottostante.
@@ -316,7 +317,7 @@ Ciò può verificarsi per una serie di motivi:
    * In questo caso, tutti i risultati restituiti dall’indice devono essere letti dal motore di query e ordinati in memoria.
    * Questa operazione è molto più lenta dell’applicazione dell’ordinamento nella query dell’indice sottostante.
 1. L&#39;esecutore della query sta tentando di iterare un set di risultati di grandi dimensioni.
-   * Questa situazione può verificarsi per una serie di motivi, elencati di seguito:
+   * Questa situazione può verificarsi per diversi motivi, elencati di seguito:
 
 | Causa | Mitigazione |
 |----------|--------------|

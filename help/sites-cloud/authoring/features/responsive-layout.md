@@ -2,10 +2,10 @@
 title: Layout reattivo
 description: AEM consente di realizzare un layout dinamico per le pagine
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 86%
+source-wordcount: '1731'
+ht-degree: 83%
 
 ---
 
@@ -45,7 +45,7 @@ Con questi meccanismi basati su una griglia dinamica è possibile:
 * Nascondere componenti per layout di dispositivo specifici.
 * Gestire il controllo delle colonne.
 
-A seconda del progetto, il Contenitore di layout può essere usato come il sistema paragrafo predefinito per le pagine o come componente disponibile per essere aggiunto alla pagina tramite il browser Componenti (o entrambi).
+A seconda del progetto, il Contenitore di layout può essere utilizzato come sistema paragrafo predefinito per le pagine o come componente disponibile per essere aggiunto alla pagina tramite il browser componenti (o entrambi).
 
 >[!TIP]
 >
@@ -108,7 +108,7 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
 1. Per selezionare un dispositivo specifico da emulare è possibile effettuare le seguenti operazioni:
 
    * Utilizza l’icona Seleziona dispositivo e scegli da un selettore a discesa.
-   * Tocca o fai clic sull’indicatore del dispositivo nella barra degli strumenti dell’emulatore.
+   * Seleziona l’indicatore del dispositivo nella barra degli strumenti dell’emulatore.
 
    ![Menu a discesa Seleziona il dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -143,7 +143,7 @@ Un **Contenitore di layout** è un sistema paragrafo che:
 
 ## Selezione e intervento su un Contenitore di layout (modalità di modifica) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-Come con altri componenti, puoi selezionare e quindi intervenire (opzioni Copia, Taglia, Elimina) su un Contenitore di layout (in modalità di **modifica**):
+Come con altri componenti, puoi selezionare e quindi intervenire (tagliare, copiare, eliminare) su un Contenitore di layout (quando è in **Modifica** modalità ):
 
 >[!CAUTION]
 >
@@ -195,14 +195,14 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
   >
   >Proporzioni e rapporti relativi vengono mantenuti al ridimensionamento di componenti come le **immagini**.
 
-* Tocca o fai clic su un componente di contenuto; la barra degli strumenti ti consente di:
+* Seleziona un componente di contenuto; la barra degli strumenti consente di:
    * **Elemento padre** : consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
    * **Mobile in nuova riga:** il componente viene spostato su una nuova riga, in base allo spazio disponibile all’interno della griglia.
    * **Nascondi componente:** il componente viene reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
 
   ![Nascondi componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In entrata **Layout** tocca o fai clic sul pulsante **Trascina qui i componenti** per selezionare l&#39;intero componente. Per questa modalità viene visualizzata la barra degli strumenti.
+* In entrata **Layout** modalità è possibile selezionare la **Trascina qui i componenti** per selezionare l&#39;intero componente. Per questa modalità viene visualizzata la barra degli strumenti.
 
   La barra degli strumenti dispone di opzioni diverse a seconda dello stato del componente di layout e dei componenti a esso appartenenti. Esempio:
 

@@ -2,9 +2,9 @@
 title: Estensione di Multi Site Manager
 description: Scopri come estendere le funzionalità di Multi Site Manager.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2435'
+source-wordcount: '2425'
 ht-degree: 1%
 
 ---
@@ -110,7 +110,7 @@ Ad esempio, un `LiveAction` deve memorizzare il nome dell’autore blueprint. Un
 
 Il parametro del [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) è un metodo `Resource` oggetto. Questo `Resource` l&#39;oggetto rappresenta `cq:LiveSyncAction` nella configurazione di rollout.
 
-Consulta il documento [Creazione di una configurazione di rollout](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) per ulteriori informazioni.
+Consulta [Creazione di una configurazione di rollout](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) per ulteriori informazioni.
 
 Come sempre quando si utilizza un nodo di configurazione, è necessario adattarlo a un `ValueMap` oggetto:
 
@@ -136,7 +136,7 @@ I seguenti oggetti vengono forniti come parametri del `execute` metodo del `Live
    * Il `autoSave` il valore indica se il `LiveAction` deve salvare le modifiche apportate all’archivio
    * Il `reset` il valore indica la modalità di ripristino del rollout.
 
-Da questi oggetti è possibile ottenere tutte le informazioni relative al `LiveCopy`. È inoltre possibile utilizzare `Resource` oggetti da ottenere `ResourceResolver`, `Session`, e `Node` oggetti. Questi oggetti sono utili per la manipolazione del contenuto del repository:
+Da questi oggetti è possibile ottenere informazioni sui `LiveCopy`. È inoltre possibile utilizzare `Resource` oggetti da ottenere `ResourceResolver`, `Session`, e `Node` oggetti. Questi oggetti sono utili per la manipolazione del contenuto del repository:
 
 Nella prima riga del codice seguente, l’origine è `Resource` oggetto della pagina sorgente:
 
@@ -349,7 +349,7 @@ Aggiungere le dipendenze in modo che il compilatore Eclipse possa fare riferimen
 
 I seguenti elementi `LiveActionFactory` la classe implementa una `LiveAction` che registra i messaggi sulle pagine di origine e di destinazione e copia i `cq:lastModifiedBy` dal nodo di origine al nodo di destinazione. Il nome dell’azione live è `exampleLiveAction`.
 
-1. In Eclipse Project Explorer, fai clic con il pulsante destro del mouse sul `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` pacchetto e fai clic su **Nuovo** -> **Classe**.
+1. In Eclipse Project Explorer, fai clic con il pulsante destro del mouse sul `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` pacchetto e fai clic su **Nuovo** > **Classe**.
 
 1. Per **Nome**, immetti `ExampleLiveActionFactory` e quindi fare clic su **Fine**.
 
@@ -617,7 +617,7 @@ Quindi è necessario assicurarsi che:
 * E-mail di contatto:
 
    * È escluso dalle proprietà di rollout.
-   * Consulta il documento [Configurazione della sincronizzazione di Live Copy](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) per ulteriori informazioni.
+   * Consulta [Configurazione della sincronizzazione di Live Copy](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) per ulteriori informazioni.
 
 * Stile visivo chiave:
 

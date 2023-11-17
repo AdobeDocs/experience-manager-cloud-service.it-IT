@@ -2,9 +2,9 @@
 title: Guida di riferimento dei componenti
 description: Guida di riferimento per sviluppatori per i dettagli dei componenti e della loro struttura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3646'
+source-wordcount: '3642'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ Ciò significa che è sufficiente ridefinire le differenze richieste, anziché r
 
 ### Logica dei contenuti e markup di rendering  {#content-logic-and-rendering-markup}
 
-Viene eseguito il rendering del componente con [HTML](https://www.w3schools.com/htmL/html_intro.asp). Il componente deve definire le HTML necessarie per acquisire il contenuto richiesto e quindi eseguirne il rendering come richiesto, sia nell’ambiente di authoring che in quello di pubblicazione.
+Viene eseguito il rendering del componente con [HTML](https://www.w3schools.com/htmL/html_intro.asp). Il componente deve definire il HTML necessario per acquisire il contenuto richiesto e quindi eseguirne il rendering come richiesto, sia nell’ambiente di authoring che in quello di pubblicazione.
 
 Si consiglia di mantenere il codice responsabile del markup e del rendering separato dal codice che controlla la logica utilizzata per selezionare il contenuto del componente.
 
@@ -181,7 +181,7 @@ Un componente è un nodo di tipo `cq:Component` e ha le seguenti proprietà e no
 | `component.html` | `nt:file` | Questo è il file di script HTL del componente. |
 | `cq:icon` | `String` | Questo valore punta al [icona del componente](#component-icon) e viene visualizzato nel browser Componenti. |
 
-Se consideriamo il **Testo** componente, possiamo vedere una serie di questi elementi:
+Osservando il **Testo** componente, puoi visualizzare diversi di questi elementi:
 
 ![Struttura dei componenti di testo](assets/components-text.png)
 
@@ -250,7 +250,7 @@ Content not found
 
 Per creare un widget da utilizzare nella finestra di dialogo di un componente è necessario creare un componente campo dell’interfaccia utente Granite.
 
-Se consideri la finestra di dialogo come un semplice contenitore per un elemento del modulo, puoi anche visualizzare il contenuto principale della finestra di dialogo come campi del modulo. La creazione di un nuovo campo modulo richiede la creazione di un tipo di risorsa, il che equivale alla creazione di un nuovo componente. Per facilitare questa attività, l’interfaccia utente Granite offre un componente campo generico da cui ereditare (utilizzando `sling:resourceSuperType`):
+Se consideri la finestra di dialogo come un semplice contenitore per un elemento del modulo, puoi anche visualizzare il contenuto principale della finestra di dialogo come campi del modulo. La creazione di un nuovo campo modulo richiede la creazione di un tipo di risorsa, che equivale alla creazione di un componente. Per facilitare questa attività, l’interfaccia utente Granite offre un componente campo generico da cui ereditare (utilizzando `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 

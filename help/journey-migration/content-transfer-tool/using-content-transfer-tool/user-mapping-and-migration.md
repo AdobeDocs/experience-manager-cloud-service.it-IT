@@ -2,9 +2,9 @@
 title: Mappatura utenti e migrazione delle entità principali
 description: Panoramica sulla mappatura degli utenti e sulla migrazione delle entità in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1004'
 ht-degree: 9%
 
 ---
@@ -34,7 +34,7 @@ Lo strumento Content Transfer e Cloud Acceleration Manager eseguiranno la migraz
 Gli utenti AEM possono essere mappati sugli utenti Adobe IMS corrispondenti con lo stesso indirizzo e-mail.  Questa mappatura può essere eseguita automaticamente in CTT (durante il passaggio di estrazione) e, se viene eseguita o meno, può essere controllata da un interruttore prima di avviare l’estrazione. L’impostazione predefinita dell’interruttore può essere ignorata dall’utente all’avvio dell’estrazione.
 
 * Se il sistema di origine è un’istanza di authoring, per impostazione predefinita la scelta per eseguire la mappatura è _il_, perché è il processo consigliato.
-* Se il sistema di origine è un’istanza Publish, per impostazione predefinita la scelta per eseguire la mappatura è _disattivato_, poiché gli utenti non vengono normalmente migrati o utilizzati nelle istanze di pubblicazione; o se vengono utilizzati, in genere viene utilizzato un sistema di autenticazione diverso (ad esempio, non IMS).
+* Se il sistema di origine è un’istanza Publish, per impostazione predefinita la scelta per eseguire la mappatura è _disattivato_, poiché normalmente gli utenti non vengono migrati o utilizzati nelle istanze di pubblicazione; o se vengono utilizzati, in genere viene utilizzato un sistema di autenticazione diverso (ovvero, non IMS).
 
 Indipendentemente dal fatto che gli utenti siano mappati o meno durante l’estrazione, vengono migrati al sistema cloud, insieme ai gruppi, durante l’acquisizione se sono associati al contenuto di cui stai eseguendo la migrazione.
 

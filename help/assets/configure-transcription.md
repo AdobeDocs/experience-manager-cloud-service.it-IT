@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1690'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -65,7 +65,7 @@ Una volta che [!DNL Azure Media Services] è configurato in Experience Manager A
 
 Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili elaborazione]** e fai clic su **[!UICONTROL Crea]** per creare un profilo di elaborazione basato sull’intelligenza artificiale per generare la trascrizione dei file audio e video. Per impostazione predefinita, la pagina del profilo di elaborazione presenta solo tre schede (Immagine, Video e Personalizzato). Tuttavia, se hai configurato [!DNL Azure Media Services] nella tua istanza [!DNL Experience Manager Assets], è visibile una scheda **[!UICONTROL IA per la gestione dei contenuti]**. Verifica le credenziali [!DNL Azure] se non visualizzi la scheda **[!UICONTROL IA per la gestione dei contenuti]** durante la creazione di un profilo di elaborazione.
 
-In **[!UICONTROL IA per la gestione dei contenuti]** , fare clic sulla scheda **[!UICONTROL Aggiungi nuovo]** per configurare la trascrizione. In questo caso è possibile includere ed escludere i formati di file (tipi MIME) per la generazione delle trascrizioni selezionandoli dall’elenco a discesa. Nell’illustrazione seguente, tutti i file audio e video supportati sono inclusi e i file di testo sono esclusi.
+In **[!UICONTROL IA per la gestione dei contenuti]** , fare clic sulla scheda **[!UICONTROL Aggiungi nuovo]** per configurare la trascrizione. In questo caso, puoi includere ed escludere i formati di file (tipi MIME) per la generazione delle trascrizioni selezionando i tipi di file dall’elenco a discesa. Nell’illustrazione seguente, tutti i file audio e video supportati sono inclusi e i file di testo sono esclusi.
 
 Abilita **[!UICONTROL Creare una trascrizione VTT nella stessa directory]** per creare e memorizzare la rappresentazione della trascrizione (file .vtt) nella stessa cartella in cui si trova la risorsa originale. Le altre rappresentazioni vengono generate anche dal flusso di lavoro di elaborazione delle risorse DAM predefinito, indipendentemente da questa impostazione.
 

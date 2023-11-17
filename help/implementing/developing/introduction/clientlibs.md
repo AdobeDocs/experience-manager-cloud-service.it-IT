@@ -2,9 +2,9 @@
 title: Utilizzo di librerie lato client su AEM as a Cloud Service
 description: AEM fornisce cartelle di librerie lato client, che consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2551'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Se la cartella della libreria client contiene uno o più file di origine che, in
 Le cartelle delle librerie client contengono i seguenti elementi:
 
 * File sorgente JS e/o CSS
-* Risorse statiche che supportano gli stili CSS, ad esempio icone, font web e così via.
+* Risorse statiche che supportano gli stili CSS, ad esempio icone, caratteri web e così via.
 * Uno `js.txt` file e/o uno `css.txt` file che identifica i file sorgente da unire nei file JS e/o CSS generati
 
 ![Architettura Clientlib](assets/clientlib-architecture.drawio.png)

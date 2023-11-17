@@ -2,10 +2,10 @@
 title: Gestione dei tipi di pubblico
 description: La console Pubblico consente di creare, organizzare e gestire i tipi di pubblico per il tuo account di Adobe Target o gestire segmenti per ContextHub
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 97%
+source-wordcount: '932'
+ht-degree: 87%
 
 ---
 
@@ -33,8 +33,8 @@ Puoi creare un segmento ContextHub nella console Pubblico o durante il processo 
 
 Per creare un segmento ContextHub nella console Pubblico:
 
-1. Nella console Navigazione, tocca o fai clic su **Personalizzazione**. Tocca o fai clic su **Tipi di pubblico**.
-1. Tocca o fai clic su **Crea segmento ContextHub**.
+1. Nella console Navigazione, seleziona **Personalizzazione**. Seleziona **Tipi di pubblico**.
+1. Seleziona **Crea segmento ContextHub**.
 
    ![Creazione di un segmento](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
 
@@ -60,20 +60,20 @@ Quando utilizzi più regole, queste vengono combinate tramite l&#39;operatore bo
 
 Per creare un pubblico di Adobe Target:
 
-1. Nella console Navigazione, tocca o fai clic su **Personalizzazione**. Tocca o fai clic su **Tipi di pubblico**.
+1. Nella console Navigazione, seleziona **Personalizzazione**. Seleziona **Tipi di pubblico**.
 
    ![Navigazione ai tipi di pubblico](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. Nella console Pubblico, tocca o fai clic su **Crea** e poi su **Crea pubblico Target**.
+1. Nella console Pubblico, seleziona **Crea** e poi **Crea pubblico Target**.
 
    ![Creazione di un pubblico Target](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. Nella finestra di dialogo **Configurazione Adobe Target**, seleziona la configurazione di destinazione e tocca o fai clic su **OK**.
-1. Nell’area Regola n.1, tocca o fai clic sul tipo di attributo e immetti le informazioni sull’attributo nei campi disponibili. Al termine, seleziona il segno di spunta a destra dell’attributo per salvarlo. Per informazioni su tutti gli attributi, consulta [Attributi e relative opzioni](#attributes-and-their-options).
+1. In **Configurazione Adobe Target** , selezionare la configurazione di destinazione e selezionare **OK**.
+1. Nell&#39;area Regola n. 1 selezionare il tipo di attributo e immettere le informazioni relative agli attributi nei campi disponibili. Al termine, seleziona il segno di spunta a destra dell’attributo per salvarlo. Per informazioni su tutti gli attributi, consulta [Attributi e relative opzioni](#attributes-and-their-options).
 1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore boolean AND, il che significa che l’audience deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
-1. Tocca o fai clic su **Avanti**.
-1. Inserisci un nome per il pubblico e tocca o fai clic su **Salva**.
-1. Tocca o fai clic su **Salva**. Il pubblico è elencato nell’elenco Pubblico.
+1. Seleziona **Avanti**.
+1. Immetti un nome per il pubblico e seleziona **Salva**.
+1. Seleziona **Salva**. Il pubblico è elencato nell’elenco Pubblico.
 
 ### Attributi e relative opzioni {#attributes-and-their-options}
 
@@ -97,6 +97,6 @@ Puoi creare regole di targeting per ciascuno dei seguenti attributi:
 
 Puoi modificare qualsiasi pubblico ContextHub dalla console Pubblico. Puoi modificare anche i tipi di pubblico di Adobe Target, ma solo quelli che sono stati creati in AEM:
 
-1. Nella console Navigazione, tocca o fai clic su **Personalizzazione**. Tocca o fai clic su **Tipi di pubblico**.
-1. Tocca o fai clic sull’icona accanto al segmento ContextHub da modificare, e poi tocca o fai clic su **Modifica**.
+1. Nella console Navigazione, seleziona **Personalizzazione**. Seleziona **Tipi di pubblico**.
+1. Seleziona l’icona accanto al segmento ContextHub da modificare, quindi fai clic su **Modifica**.
 1. Apporta le modifiche nell&#39;editor segmento. Per ulteriori informazioni, consulta la documentazione di ContextHub. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

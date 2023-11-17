@@ -2,9 +2,9 @@
 title: Personalizzazione delle console
 description: Scopri le diverse opzioni fornite da AEM per personalizzare le console dell’istanza di authoring.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ L&#39;AEM fornisce opzioni per personalizzare le console (e [funzionalità di au
 
 Le clientlibs consentono di estendere l’implementazione predefinita per offrire nuove funzionalità, riutilizzando al contempo funzioni, oggetti e metodi standard. Quando esegui la personalizzazione con clientlibs, puoi creare una clientlib personalizzata in `/apps.` Ad esempio, può contenere il codice necessario per il componente personalizzato.
 
-Per ulteriori dettagli su clientlibs, consulta il documento [Utilizzo delle librerie lato client su AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Consulta [Utilizzo di librerie lato client su AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Sovrapposizioni {#overlays}
 
@@ -25,11 +25,11 @@ Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrappo
 
 Le sovrapposizioni possono essere utilizzate in molti modi per estendere le console AEM. Nelle sezioni seguenti vengono forniti diversi esempi.
 
-Per ulteriori informazioni sulle sovrapposizioni, consulta il documento [Sovrapposizioni per Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+Vedi anche [Sovrapposizioni per Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->Se ti interessano le opzioni per personalizzare l’esperienza di authoring, consulta il documento [Personalizzazione dell’authoring delle pagine](/help/implementing/developing/extending/page-authoring.md)
+>Se ti interessano le opzioni per personalizzare l’esperienza di authoring, consulta [Personalizzazione dell’authoring delle pagine](/help/implementing/developing/extending/page-authoring.md).
 
 ## Personalizzazione della vista predefinita per una console {#customizing-the-default-view-for-a-console}
 
@@ -117,4 +117,4 @@ Se desideri inserire dati aggiuntivi, devi scrivere un [PageInfoProvider](https:
 
 Quando utilizzi una console, un utente deve spesso selezionare tra risorse quali pagine, componenti o risorse. Può assumere la forma di un elenco dal quale l’autore deve scegliere un elemento.
 
-Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Consulta il documento[Personalizzazione dell’authoring delle pagine](/help/implementing/developing/extending/page-authoring.md#filtering-resources) per i dettagli.
+Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Consulta [Personalizzazione dell’authoring delle pagine](/help/implementing/developing/extending/page-authoring.md#filtering-resources) per i dettagli.

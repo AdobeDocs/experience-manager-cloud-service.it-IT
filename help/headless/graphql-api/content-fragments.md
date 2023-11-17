@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4922'
-ht-degree: 98%
+source-wordcount: '4921'
+ht-degree: 94%
 
 ---
 
@@ -47,7 +47,7 @@ GraphQL è:
   Vedi [GraphQL Foundation](https://foundation.graphql.org/).
 
 <!--
-"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world the tools they need to understand and adopt GraphQL.*". 
 -->
 
 Per ulteriori informazioni sull’API GraphQL, consulta le sezioni seguenti (tra molte altre risorse):
@@ -156,13 +156,13 @@ Le autorizzazioni sono quelle necessarie per accedere ad Assets.
 
 Le query GraphQL vengono eseguite con l’autorizzazione dell’utente AEM della richiesta sottostante. Se l’utente non dispone dell’accesso in lettura ad alcuni frammenti (memorizzati come risorse), questi non faranno parte del set di risultati.
 
-Inoltre, per poter eseguire query GraphQL l’utente deve avere accesso a un endpoint GraphQL.
+Inoltre, l’utente deve avere accesso a un endpoint GraphQL per poter eseguire le query GraphQL.
 
 ## Generazione schema {#schema-generation}
 
 GraphQL è un’API fortemente tipizzata, il che significa che i dati devono essere chiaramente strutturati e organizzati per tipo.
 
-La specifica GraphQL fornisce una serie di linee guida su come creare una solida API per l’interrogazione dei dati su una determinata istanza. A questo scopo, un client deve recuperare lo [Schema](#schema-generation), che contiene tutti i tipi necessari per una query.
+La specifica GraphQL fornisce una serie di linee guida su come creare una solida API per l’interrogazione dei dati su una determinata istanza. A questo scopo, un client deve recuperare [Schema](#schema-generation), che contiene tutti i tipi necessari per una query.
 
 Per quanto riguarda i Frammenti di contenuto, gli schemi GraphQL (struttura e tipi) sono basati su [modelli di Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) **abilitati** e i relativi tipi di dati.
 
@@ -235,9 +235,9 @@ Nello schema sono presenti singoli campi, di due categorie di base:
 
   Per creare campi in base alla modalità di configurazione del modello di frammento di contenuto, viene utilizzata una selezione di [Tipi di dati](#Data-types). I nomi dei campi vengono ricavati dal campo **Nome proprietà** della scheda **Tipo di dati**.
 
-   * C&#39;è anche da tenere presente l’impostazione **Rendering come**, in quanto gli utenti possono configurare determinati tipi di dati. Ad esempio, un campo di testo a riga singola può essere configurato in modo da contenere più testi a riga singola scegliendo `multifield` dal menu a discesa.
+   * C&#39;è anche da tenere presente l’impostazione **Rendering come**, in quanto gli utenti possono configurare determinati tipi di dati. Ad esempio, un campo di testo a riga singola può essere configurato per contenere più testi a riga singola scegliendo `multifield` dall’elenco a discesa.
 
-* GraphQL per AEM genera anche una serie di [campi di supporto](#helper-fields).
+* GraphQL per AEM genera anche diversi [campi di supporto](#helper-fields).
 
 ### Tipi di dati {#data-types}
 
@@ -245,7 +245,7 @@ GraphQL per AEM supporta un elenco di tipi. Vengono rappresentati tutti i tipi d
 
 | Modello di Frammento di contenuto: tipo di dati | Tipo GraphQL | Descrizione |
 |--- |--- |--- |
-| Testo su riga singola | `String`, `[String]` | Utilizzato per stringhe semplici come nomi di autore, nomi di posizione, ecc. |
+| Testo su riga singola | `String`, `[String]` | Utilizzato per stringhe semplici come nomi di autore, nomi di posizione e così via. |
 | Testo su più righe | `String`, `[String]` | Utilizzato per l’output di testo, ad esempio il corpo di un articolo |
 | Numero | `Float`, `[Float]` | Utilizzato per visualizzare il numero a virgola mobile e i numeri regolari |
 | Booleano | `Boolean` | Utilizzato per visualizzare le caselle di controllo → semplici istruzioni true/false |
@@ -259,7 +259,7 @@ GraphQL per AEM supporta un elenco di tipi. Vengono rappresentati tutti i tipi d
 
 ### Campi di supporto {#helper-fields}
 
-Oltre ai tipi di dati per i campi generati dall’utente, GraphQL per AEM genera anche una serie di campi *di supporto* per consentire l’identificazione di un frammento di contenuto o per fornire informazioni aggiuntive su un frammento di contenuto.
+Oltre ai tipi di dati per i campi generati dall’utente, GraphQL per AEM genera anche diversi *aiutante* per identificare un frammento di contenuto o per fornire informazioni aggiuntive su un frammento di contenuto.
 
 Tali [campi di supporto](#helper-fields) sono contrassegnati con un `_` precedente per distinguere tra ciò che è stato definito dall’utente e ciò che è stato generato automaticamente.
 
@@ -365,7 +365,7 @@ Il campo `_variations` è stato implementato per semplificare l’esecuzione del
 
 >[!NOTE]
 >
->Tieni presente che il campo `_variations` non contiene una variazione `master`, poiché, tecnicamente, i dati originali (a cui si fa riferimento come *primari* nell’interfaccia utente) non sono considerati una variante esplicita.
+>Il `_variations` il campo non contiene `master` variazione, come tecnicamente i dati originali (cui si fa riferimento come *Principale* nell’interfaccia utente) non è considerata una variante esplicita.
 
 Vedi [Query di esempio: tutte le città con una variante denominata](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
@@ -571,8 +571,8 @@ Questa funzione consente di ordinare i risultati della query in base a un campo 
 I criteri di ordinamento:
 
 * è un elenco di valori separati da virgola che rappresenta il percorso del campo
-   * il primo campo dell’elenco definisce l’ordinamento primario, il secondo campo viene utilizzato se due valori del criterio di ordinamento primario sono uguali, il terzo se i primi due criteri sono uguali, ecc.
-   * notazione tratteggiata, ovvero field1.subfield.subfield ecc...
+   * il primo campo dell&#39;elenco definirà l&#39;ordinamento principale, il secondo campo verrà utilizzato se due valori del criterio di ordinamento principale sono uguali, il terzo se i primi due criteri sono uguali e così via.
+   * notazione punteggiata, ovvero field1.subfield.subfield e così via...
 * con una direzione d’ordine opzionale
    * ASC (crescente) o DESC (decrescente); con l’applicazione di ASC come predefinito
    * la direzione può essere specificata per campo; ciò significa che è possibile ordinare un campo in ordine crescente, un altro in ordine decrescente (name, firstName DESC)

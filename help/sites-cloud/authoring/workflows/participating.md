@@ -2,10 +2,10 @@
 title: Partecipazione ai flussi di lavoro
 description: In genere i flussi di lavoro includono passaggi che richiedono di eseguire un’attività su una pagina o una risorsa.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 93%
+source-wordcount: '1507'
+ht-degree: 86%
 
 ---
 
@@ -37,7 +37,7 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
    * Qualsiasi azione disponibile per l’utente nella fase corrente del flusso di lavoro, per esempio: Completa, Delega, Visualizza dettagli.
    * Il numero di flussi di lavoro a cui è soggetta la pagina. Operazioni disponibili:
       * utilizzare la freccia sinistra/destra per navigare tra le informazioni di stato dei vari flussi di lavoro.
-      * fare clic/toccare il numero totale per aprire un elenco a discesa di tutti i flussi di lavoro applicabili e quindi selezionare il flusso di lavoro che si desidera visualizzare nella barra di stato.
+      * seleziona il numero effettivo per aprire un elenco a discesa di tutti i flussi di lavoro applicabili, quindi seleziona il flusso di lavoro che desideri visualizzare nella barra di stato.
 
   ![Pagina con più flussi di lavoro](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
@@ -48,7 +48,7 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
   >
   >Le azioni vengono visualizzate quando l&#39;utente è direttamente coinvolto nella fase corrente del flusso di lavoro.
 
-* Quando la **Timeline** è aperta per la risorsa, viene mostrato il passaggio del flusso di lavoro. Quando si fa clic o si tocca il banner di avviso, vengono mostrate anche le azioni disponibili:
+* Quando la **Timeline** è aperta per la risorsa, viene mostrato il passaggio del flusso di lavoro. Quando selezioni sul banner dell’avviso, vengono visualizzate anche le azioni disponibili:
 
   ![Flusso di lavoro nella timeline](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
@@ -73,7 +73,7 @@ Per questa azione è possibile indicare:
 Utilizza la seguente procedura per completare l’elemento di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro su cui desideri agire (seleziona la miniatura).
 1. Seleziona **Completa** dalla barra degli strumenti.
 1. Il **Completa elemento di lavoro** viene visualizzata una finestra di dialogo. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento**, se richiesto.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
@@ -95,7 +95,7 @@ Puoi anche utilizzare la timeline per completare un passaggio e avanzare:
 
    ![Completamento di un passaggio](/help/sites-cloud/authoring/assets/workflows-timeline-completing.png)
 
-1. Tocca o fai clic sul banner di avviso per visualizzare le azioni disponibili. Seleziona **Avanti**:
+1. Seleziona il banner dell&#39;avviso per visualizzare le azioni disponibili. Seleziona **Avanti**:
 
    ![Avanzamento del passaggio](/help/sites-cloud/authoring/assets/workflows-timeline-advance.png)
 
@@ -107,7 +107,7 @@ Puoi anche utilizzare la timeline per completare un passaggio e avanzare:
 
 ### Delega di un passaggio partecipante {#delegating-a-participant-step}
 
-Se ti è stato assegnato un passaggio, ma per qualche motivo non ti è possibile intervenire, puoi delegarlo a un altro utente o gruppo.
+Se all&#39;utente è stato assegnato un passaggio, ma per qualsiasi motivo non è possibile eseguire l&#39;operazione, è possibile delegare il passaggio a un altro utente o gruppo.
 
 Gli utenti disponibili per la delega dipendono dal tipo di assegnatario dell’elemento di lavoro:
 
@@ -132,7 +132,7 @@ Per questa azione è possibile indicare:
 Segui la procedura seguente per delegare un elemento di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro su cui desideri agire (seleziona la miniatura).
 1. Seleziona **Delega** dalla barra degli strumenti.
 1. Viene visualizzata la finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se richiesto.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
@@ -151,7 +151,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 Puoi anche utilizzare la timeline per delegare e/o assegnare un passaggio:
 
 1. Seleziona la pagina richiesta e apri la **Timeline** (oppure, apri la **Timeline** e seleziona la pagina).
-1. Tocca o fai clic sul banner di avviso per visualizzare le azioni disponibili. Seleziona **Cambia assegnatario**:
+1. Seleziona il banner dell&#39;avviso per visualizzare le azioni disponibili. Seleziona **Cambia assegnatario**:
 
    ![Delega un passaggio](/help/sites-cloud/authoring/assets/workflows-delegate.png)
 
@@ -182,7 +182,7 @@ Per questa azione è possibile indicare:
 Per tornare indietro, attenersi alla procedura descritta di seguito.
 
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro su cui desideri agire (seleziona la miniatura).
 1. Seleziona **Passo indietro** per aprire la finestra di dialogo.
 1. Specifica il **Passaggio precedente** e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
@@ -201,7 +201,7 @@ Per tornare indietro, attenersi alla procedura descritta di seguito.
 Puoi anche utilizzare la timeline per tornare indietro a un passaggio precedente:
 
 1. Seleziona la pagina richiesta e apri la **Timeline** (oppure, apri la **Timeline** e seleziona la pagina).
-1. Tocca o fai clic sul banner di avviso per visualizzare le azioni disponibili. Seleziona **Ripristina versione precedente**:
+1. Seleziona il banner dell&#39;avviso per visualizzare le azioni disponibili. Seleziona **Ripristina versione precedente**:
 
    ![Ripristino di un passaggio precedente](/help/sites-cloud/authoring/assets/workflows-roll-back.png)
 
@@ -243,7 +243,7 @@ I dettagli del flusso di lavoro sono visualizzati in schede e le azioni appropri
 Per aprire un elemento del flusso di lavoro e visualizzare i dettagli:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro su cui desideri agire (seleziona la miniatura).
 1. Seleziona **Apri** per aprire le schede informative.
 1. Se necessario, seleziona l’azione appropriata, inserisci tutte le informazioni richieste e conferma con **OK** (o **Annulla**).
 1. Usa il comando **Salva** o **Annulla** per uscire.
@@ -264,7 +264,7 @@ Puoi visualizzare i dettagli del payload associato all’istanza del flusso di l
 Per visualizzare il payload e le risorse dell’istanza di flusso di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro su cui desideri agire (seleziona la miniatura).
 1. Seleziona **Visualizza payload** dalla barra degli strumenti per aprire la finestra di dialogo.
    * Poiché un pacchetto del flusso di lavoro è semplicemente una raccolta di puntatori ai percorsi all’interno dell’archivio, è possibile aggiungere, rimuovere o modificare le voci qui per regolare ciò a cui fa riferimento il pacchetto del flusso di lavoro. Utilizza il componente **Definizione risorsa** per aggiungere nuove voci.
 1. I collegamenti possono essere utilizzati per aprire le singole pagine.

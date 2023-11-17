@@ -4,10 +4,10 @@ description: Scopri come abilitare la pipeline front-end per i siti esistenti, p
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '562'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ AEM puà adattare automaticamente il sito esistente per utilizzare la pipeline f
 L’abilitazione del sito viene eseguita dalla console Sites utilizzando la [Barra del sito.](site-rail.md)
 
 1. Accedi ad AEM e naviga sul tuo sito tramite la **Navigazione globale** > **Sites**.
-1. Seleziona il sito nella console. Devi selezionare la root del sito e non le pagine figlie.
+1. Seleziona il sito nella console. Seleziona la directory principale del sito e non le pagine figlie.
 1. Con il sito selezionato, apri il [selettore della barra](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) a sinistra e scegli **Sito**.
 1. Nella barra del **Sito**, fai clic sul pulsante **Abilita pipeline front-end**.
 

@@ -2,17 +2,17 @@
 title: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
 description: Ulteriori informazioni sulle modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 97%
+source-wordcount: '535'
+ht-degree: 91%
 
 ---
 
 
 # Modifiche di rilievo apportate ad AEM Sites as a Cloud Service {#notable-changes}
 
-AEM Sites as a Cloud Service fornisce funzionalità di gestione delle esperienze come parte della piattaforma nativa per il cloud AEM as a Cloud Service. Oltre ai vantaggi principali di AEM as a Cloud Service, come la scalabilità nativa per il cloud, il tempo di attività e l’aggiornamento costante, AEM Sites as a Cloud Service fornisce anche una serie di modifiche e aggiunte specifiche per Sites.
+AEM Sites as a Cloud Service fornisce funzionalità di gestione delle esperienze come parte della piattaforma nativa per il cloud AEM as a Cloud Service. Oltre ai vantaggi principali di AEM as a Cloud Service, come la scalabilità nativa per il cloud, i tempi di attività e l’aggiornamento costante, AEM Sites as a Cloud Service fornisce anche diverse modifiche e aggiunte specifiche per Sites.
 
 >[!NOTE]
 >Questo documento evidenzia le modifiche di rilievo apportate ad AEM Sites. Per le modifiche generali di AEM as a Cloud Service e altri moduli, vedi:

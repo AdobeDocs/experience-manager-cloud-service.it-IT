@@ -2,7 +2,7 @@
 title: Pubblicazione
 description: Scopri come eseguire la migrazione una volta che il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 >title="Preparazione alla pubblicazione"
 >abstract="Per garantire che la pubblicazione su AEM as a Cloud Service avvenga correttamente, devi pianificare i periodi di blocco del codice e dei contenuti, le iterazioni dei test, le integrazioni dei contenuti, i test delle prestazioni e di sicurezza e altro ancora."
 
-In questa sezione del percorso imparerai a pianificare ed eseguire la migrazione una volta che il codice e il contenuto saranno pronti per essere trasferiti a AEM as a Cloud Service. Inoltre, scopri le best practice e le limitazioni note durante l’esecuzione della migrazione.
+In questa sezione del percorso imparerai a pianificare ed eseguire la migrazione una volta che il codice e il contenuto saranno pronti per essere trasferiti a AEM as a Cloud Service. Inoltre, scopri quali sono le best practice e le limitazioni note durante l’esecuzione della migrazione.
 
 ## Percorso affrontato finora {#story-so-far}
 

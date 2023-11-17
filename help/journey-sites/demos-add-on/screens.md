@@ -2,10 +2,10 @@
 title: Abilitare AEM Screens per il tuo sito demo
 description: Scopri i passaggi per abilitare l’esperienza completa di AEM Screens as a Cloud Service sul tuo sito demo.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 98%
+ht-degree: 93%
 
 ---
 
@@ -102,7 +102,7 @@ Al termine della procedura guidata, troverai il contenuto distribuito in Sites e
 
 Ora che disponi di contenuti dimostrativi We.Cafe, puoi scegliere come testare AEM Screens:
 
-* Per esplorare solo i contenuti della console AEM Sites, è sufficiente iniziare a esplorare e scoprire di più nella sezione [Risorse aggiuntive](#additional-resources) non è richiesta alcuna ulteriore azione.
+* Se desideri esplorare solo i contenuti della console AEM Sites, è sufficiente iniziare a esplorare e scoprire di più nel [Risorse aggiuntive](#additional-resources) sezione! non è richiesta alcuna ulteriore azione.
 * Se desideri utilizzare le funzioni dinamiche complete di AEM Screens, continua con la sezione successiva, [Modifica dinamica del contenuto di Screens.](#dynamically-change)
 
 ## Modifica dinamica del contenuto di Screens {#dynamically-change}
@@ -145,7 +145,7 @@ Innanzitutto, crea una chiave API Google per facilitare lo scambio di dati.
 
 Per consentire lo scambio dei dati di Fogli Google utilizzando la chiave API, abilita l’API Fogli Google.
 
-1. Torna alla console Google Cloud all’indirizzo `https://console.cloud.google.com` per il progetto, quindi utilizza il menu hamburger per selezionare **API e servizi -> Libreria**.
+1. Torna alla console Google Cloud all’indirizzo `https://console.cloud.google.com` per il progetto, quindi utilizza il menu hamburger per selezionare **API e servizi > Libreria**.
 
    ![Libreria API](assets/api-library.png)
 
@@ -221,9 +221,9 @@ Quando viene visualizzato il contenuto dello schermo, ContextHub richiama il ser
 
 A scopo dimostrativo, i valori nel foglio possono essere modificati. ContextHub riconosce questo fatto e il contenuto viene regolato nel canale in base alla temperatura aggiornata.
 
-1. Nell’istanza di authoring di AEMaaCS, vai a **Navigazione globale -> Strumenti -> Siti -> ContextHub**.
+1. Nell’istanza di authoring di AEMaaCS, vai a **Navigazione globale > Strumenti > Siti > ContextHub**.
 1. Seleziona il contenitore di configurazione con lo stesso nome assegnato al progetto quando hai creato il progetto Screens dal **modello del sito web We.Cafe**.
-1. Seleziona **Configurazione -> Configurazione ContextHub -> Fogli Google** quindi fai clic su **Successivo** in alto a destra.
+1. Seleziona **Configurazione > Configurazione ContextHub > Fogli Google** quindi fai clic su **Successivo** in alto a destra.
 1. La configurazione deve avere già dati JSON preconfigurati. È necessario modificare due valori:
    1. Sostituisci `[your Google Sheets id]` con l’ID foglio che [hai salvato in precedenza](#create-spreadsheet).
    1. Sostituisci `[your Google API Key]` con la chiave API che [hai salvato in precedenza](#create-api-key).
@@ -236,7 +236,7 @@ Ora è possibile modificare il valore della temperatura nel foglio di calcolo di
 Ora che AEM Screens e ContextHub sono connessi al servizio meteo, puoi testarlo per vedere come Screens può aggiornare i contenuti in modo dinamico.
 
 1. Accedi all’istanza di authoring della sandbox.
-1. Passa alla console Sites tramite **Navigazione globale -> Sites** e seleziona la pagina seguente **Screens -> &lt;nome progetto> -> Canali -> Ingresso Mattina (Verticale)**.
+1. Passa alla console Sites tramite **Navigazione globale > Sites** e seleziona la pagina seguente **Schermi > &lt;project-name> > Canali > Ingresso Mattina (Verticale)**.
 
    ![Selezionare il contenuto del progetto demo](assets/project-content.png)
 
@@ -325,7 +325,7 @@ Innanzitutto, è necessario creare un codice di registrazione per collegare in m
 
    ![Controlla la tua organizzazione Screens](assets/screens-org.png)
 
-1. Nel pannello a sinistra, fai clic su **Gestione lettore -> Codici di registrazione** quindi fai clic su **Crea codice** in alto a destra dello schermo.
+1. Nel pannello a sinistra, fai clic su **Gestione lettore > Codici di registrazione** e quindi fare clic su **Crea codice** in alto a destra.
 
 ![Codici di registrazione](assets/registration-codes.png)
 
@@ -360,7 +360,7 @@ Innanzitutto, è necessario creare un codice di registrazione per collegare in m
 
    ![Controlla la tua organizzazione Screens](assets/screens-org.png)
 
-1. Nel pannello a sinistra, fai clic su **Gestione lettore -> Lettori** per visualizzare il lettore che hai precedentemente installato e registrato.
+1. Nel pannello a sinistra, fai clic su **Gestione lettore > Lettori** e il lettore installato e registrato in precedenza.
 
    ![Lettori](assets/players.png)
 

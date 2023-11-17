@@ -2,10 +2,10 @@
 title: Concedere l’accesso allo sviluppatore front-end
 description: Inserisci gli sviluppatori front-end in Cloud Manager in modo che abbiano accesso all'archivio git del sito AEM e alla pipeline.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 97%
+source-wordcount: '778'
+ht-degree: 91%
 
 ---
 
@@ -65,7 +65,7 @@ Innanzitutto devi aggiungere lo sviluppatore front-end come utente utilizzando l
 
    ![Profili di prodotto](assets/product-profiles.png)
 
-1. Per assegnare lo sviluppatore front-end ai profili corretti, tocca o fai clic sul pulsante **Utenti** e quindi la scheda **Aggiungi utente** pulsante.
+1. Per assegnare lo sviluppatore front-end ai profili corretti, seleziona la **Utenti** e quindi la scheda **Aggiungi utente** pulsante.
 
    ![Aggiungi utente](assets/add-user.png)
 
@@ -73,11 +73,11 @@ Innanzitutto devi aggiungere lo sviluppatore front-end come utente utilizzando l
 
    ![Aggiungi utente al team](assets/add-to-team.png)
 
-1. Nella selezione **Prodotto**, tocca o fai clic sul segno più, quindi seleziona **Adobe Experience Manager come servizio cloud** e assegna all&#39;utente i profili di prodotto **Gestione distribuzione** e **Sviluppatore**.
+1. In **Prodotto** , selezionare il segno più e quindi selezionare **Adobe Experience Manager as a Cloud Service** e assegna il **Responsabile dell’implementazione** e **Sviluppatore** profili di prodotto per l’utente.
 
    ![Assegnare profili team](assets/assign-team.png)
 
-1. Tocca o fai clic su **Salva** e un messaggio e-mail di benvenuto viene inviato allo sviluppatore front-end aggiunto come utente.
+1. Seleziona **Salva** e un messaggio e-mail di benvenuto viene inviato allo sviluppatore front-end aggiunto come utente.
 
 Lo sviluppatore front-end invitato può accedere a Cloud Manager facendo clic sul collegamento nell’e-mail di benvenuto e accedendo utilizzando il proprio Adobe ID.
 

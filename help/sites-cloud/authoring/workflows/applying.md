@@ -1,17 +1,17 @@
 ---
 title: Applicazione dei flussi di lavoro alle pagine
-description: Durante l’authoring, è possibile ricorrere ai flussi di lavoro per intraprendere azioni sulle pagine; è inoltre possibile applicare più di un flusso di lavoro..
+description: Durante l’authoring, puoi richiamare i flussi di lavoro per agire sulle pagine; è anche possibile applicare più di un flusso di lavoro.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 93%
+source-wordcount: '654'
+ht-degree: 83%
 
 ---
 
 # Applicazione dei flussi di lavoro alle pagine {#applying-workflows-to-pages}
 
-Durante l’authoring, è possibile ricorrere ai flussi di lavoro per intraprendere azioni sulle pagine; è inoltre possibile applicare più di un flusso di lavoro.
+Durante l’authoring, puoi richiamare i flussi di lavoro per agire sulle pagine; è anche possibile applicare più di un flusso di lavoro.
 
 Quando applichi il flusso di lavoro, specifichi le informazioni seguenti:
 
@@ -116,7 +116,7 @@ Puoi specificare i dettagli:
 
 1. Al passaggio **Ambito** puoi selezionare:
 
-   * **Aggiungi contenuto**, per aprire il [browser percorsi](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) e selezionare altre risorse; una volta nel browser, tocca o fai clic su **Seleziona** per aggiungere contenuti all’istanza di flusso di lavoro.
+   * **Aggiungi contenuto** per aprire [browser percorsi](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) e seleziona le risorse aggiuntive; quando nel browser, seleziona **Seleziona** per aggiungere contenuti all’istanza di flusso di lavoro.
 
    * Una risorsa esistente per visualizzare le seguenti azioni:
 

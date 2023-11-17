@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e il suo utilizzo di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2970'
-ht-degree: 95%
+source-wordcount: '2943'
+ht-degree: 91%
 
 ---
 
@@ -31,21 +31,21 @@ Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navi
 
 ![Pannello di navigazione](/help/sites-cloud/authoring/assets/navigation.png)
 
-Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata la console **Sites**. Tocca o fai clic su **Sites** per iniziare.
+Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata la console **Sites**. Seleziona il **Sites** per iniziare.
 
 ## Navigazione nel prodotto  {#product-navigation}
 
-Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Dedica alcuni minuti a seguire il tutorial per ottenere una buona panoramica dell’utilizzo di base di AEM.
+Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Prenditi un minuto per effettuare la selezione e ottenere una buona panoramica della gestione di base dell’AEM.
 
 ![Esercitazione sulla navigazione](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Tocca o fai clic su **Avanti** per passare alla pagina successiva della panoramica. Tocca o fai clic su **Chiudi** oppure tocca o fai clic all’esterno della finestra di dialogo della panoramica per chiuderla.
+Seleziona **Successivo** per passare alla pagina successiva della panoramica. Seleziona **Chiudi** oppure seleziona all’esterno della finestra di dialogo della panoramica da chiudere.
 
 Se non visualizzi tutte le diapositive o non selezioni l’opzione **Non mostrare più**, al prossimo accesso a una console la panoramica viene riavviata.
 
 ## Navigazione globale {#global-navigation}
 
-Puoi spostarti tra le diverse console utilizzando il pannello di navigazione globale. Questo è attivato come elenco a discesa a schermo intero quando tocchi o fai clic sul collegamento Adobe Experience Manager in alto a sinistra dello schermo.
+Puoi spostarti tra le diverse console utilizzando il pannello di navigazione globale. Viene attivato come elenco a discesa a schermo intero quando selezioni il collegamento Adobe Experience Manager in alto a sinistra dello schermo.
 
 Per chiudere il pannello di navigazione globale e tornare alla posizione precedente, tocca o fai clic su **Chiudi**.
 
@@ -79,7 +79,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
 
 ## Pannello Strumenti {#tools-panel}
 
-Nel pannello Strumenti è presente un pannello laterale contenente una serie di categorie, che raggruppa le console simili della tipologia Strumenti. Le console Strumenti permettono di accedere a console e strumenti specifici per la gestione dei siti web, delle risorse digitali e di altri aspetti dell’archivio dei contenuti. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+Nel pannello Strumenti è presente un pannello laterale contenente una serie di categorie, che raggruppa le console simili della tipologia Strumenti. Le console Strumenti permettono di accedere a console e strumenti specifici per la gestione dei siti web, delle risorse digitali e di altri aspetti dell’archivio dei contenuti. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Pannello Strumenti](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -304,7 +304,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
    * Il nome della risorsa e la freccia vengono evidenziati quando tocchi o fai clic su tali elementi.
    * Gli elementi secondari della risorsa che hai toccato o su cui hai fatto clic vengono visualizzati nella colonna a destra di tale risorsa.
-   * Se tocchi o fai clic su un nome di risorsa senza elementi secondari, i relativi dettagli vengono visualizzati nella colonna finale.
+   * Se selezioni un nome di risorsa senza elementi secondari, i relativi dettagli vengono visualizzati nella colonna finale.
 
 * Quando tocchi o fai clic sulla miniatura, la risorsa viene selezionata.
 
@@ -331,7 +331,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
    * Il titolo della pagina
    * Date importanti (ad esempio ultima modifica, ultima pubblicazione)
    * Se la pagina è bloccata, nascosta o fa parte di una Live Copy
-   * Se appropriato, quando devi eseguire un’azione nell’ambito di un flusso di lavoro
+   * Se appropriato, quando devi agire come parte di un flusso di lavoro
       * Alle voci della [Casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md) possono essere correlati dei marcatori che indicano le azioni necessarie.
 
 * In questa vista sono disponibili anche [azioni rapide](#quick-actions), per effettuare selezioni ed eseguire le operazioni più comuni, come la modifica.
@@ -352,12 +352,12 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
    * Quando tutti gli elementi dell’elenco sono selezionati, viene selezionata la casella di controllo.
 
-      * Tocca o fai clic sulla casella di controllo per deselezionare tutti gli elementi.
+      * Seleziona la casella di controllo per deselezionare tutti.
 
    * Se sono selezionati solo alcuni elementi, viene visualizzato un segno meno.
 
-      * Tocca o fai clic sulla casella di controllo per selezionare tutti gli elementi.
-      * Tocca o fai di nuovo clic sulla casella di controllo per deselezionare tutti gli elementi.
+      * Seleziona la casella di controllo per selezionare tutti.
+      * Seleziona nuovamente la casella di controllo per deselezionare tutti.
 
 * Per seleziona le colonne da visualizzare utilizza l’opzione **Impostazioni vista** sotto il pulsante Viste. È possibile visualizzare le colonne seguenti:
 
@@ -383,7 +383,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
   ![Ordine delle colonne](/help/sites-cloud/authoring/assets/column-order.png)
 
-  Tocca o fai clic sulla barra di selezione verticale e trascina l’elemento in una nuova posizione nell’elenco.
+  Selezionare la barra di selezione verticale e trascinare l&#39;elemento in una nuova posizione nell&#39;elenco.
 
   ![Ordinare un elenco](/help/sites-cloud/authoring/assets/order-list.png)
 

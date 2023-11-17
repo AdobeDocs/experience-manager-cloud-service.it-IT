@@ -2,10 +2,10 @@
 title: Esportazione di frammenti di esperienza in Adobe Target
 description: Scopri come esportare i frammenti di esperienza in Adobe Target per testare e personalizzare le esperienze.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2254'
-ht-degree: 97%
+source-wordcount: '2246'
+ht-degree: 96%
 
 ---
 
@@ -48,7 +48,7 @@ I Frammenti di esperienza possono essere esportati nell’area di lavoro predefi
 
 >[!NOTE]
 >
->Per ulteriori informazioni, vedi:
+>Per ulteriori informazioni, consulta:
 >
 >* [Sviluppo Adobe Target](https://developers.adobetarget.com/)
 >* [Componenti core: Frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
@@ -75,7 +75,7 @@ Prima di esportare un frammento è necessario aggiungere la **Configurazione clo
 * selezionare un’area di lavoro di Target come destinazione
 * selezionare un dominio esternalizzatore per riscrivere i riferimenti nel Frammento di esperienza (facoltativo)
 
-Le opzioni richieste possono essere selezionate in **Proprietà pagina** della cartella, del frammento o di entrambi i tipi richiesti; la specifica viene ereditata in base alle necessità.
+Le opzioni richieste possono essere selezionate in **Proprietà pagina** della cartella e/o del frammento richiesti; la specifica viene ereditata secondo necessità.
 
 1. Passa alla console **Frammenti di esperienza**.
 
@@ -165,7 +165,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -177,7 +177,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
 
    * **ID tenant**: ID del tenant
 
-   * **Configurazione IMS**: seleziona la configurazione richiesta dall’elenco a discesa
+   * **Configurazione IMS**: seleziona la configurazione desiderata dall’elenco a discesa
 
    * **Tipo di API**: impostazione predefinita REST (XML è obsoleto)
 
@@ -189,7 +189,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
 
    * **Utilizza targeting accurato:** per impostazione predefinita questa casella di controllo è selezionata. Se questa opzione è selezionata, la configurazione del servizio cloud attenderà il caricamento del contesto prima di caricare il contenuto. Vedi la nota che segue.
 
-   * **Sincronizza segmenti da Adobe Target:** seleziona questa opzione per scaricare i segmenti definiti in Target e utilizzarli in AEM. Devi selezionare questa opzione quando la proprietà Tipo API è REST, perché i segmenti in linea non sono supportati e devi sempre utilizzare i segmenti da Target. Nota che il termine AEM “segmento” è equivalente a “pubblico” in Target.
+   * **Sincronizza segmenti da Adobe Target:** seleziona questa opzione per scaricare i segmenti definiti in Target e utilizzarli in AEM. Seleziona questa opzione quando la proprietà Tipo API è REST, perché i segmenti in linea non sono supportati e devi sempre utilizzare i segmenti da Target. Il termine AEM &quot;segmento&quot; equivale al termine Target &quot;pubblico&quot;.
 
    * **Libreria client:** questo valore predefinito è AT.js (mbox.js è obsoleto)
 
@@ -290,8 +290,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
   ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
@@ -301,7 +301,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Select **Done**.
 1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
 
    >[!NOTE]
@@ -326,19 +326,19 @@ Per esportare un frammento di esperienza da AEM a Target (dopo aver specificato 
    >
    >Deve essere una variante Web del frammento di esperienza.
 
-1. Tocca o fai clic su **Esporta in Adobe Target**.
+1. Seleziona **Esporta in Adobe Target**.
 
    >[!NOTE]
    >
    >Se il frammento di esperienza è già stato esportato, seleziona **Aggiorna in Adobe Target**.
 
-1. Tocca o fai clic su **Esporta senza pubblicare** o **Pubblica** se necessario.
+1. Seleziona **Esporta senza pubblicare** o **Pubblica** secondo necessità.
 
    >[!NOTE]
    >
    >Selezionando **Pubblica** pubblicherà immediatamente il frammento di esperienza e lo invierà in Target.
 
-1. Nella finestra di conferma tocca o fai clic su **OK**.
+1. Seleziona **OK** nella finestra di dialogo di conferma.
 
    Il frammento di esperienza deve ora essere in Target.
 
@@ -356,7 +356,7 @@ Per esportare un frammento di esperienza da AEM a Target (dopo aver specificato 
 
 ## Utilizzo dei frammenti di esperienza in Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Dopo aver eseguito le attività precedenti, il frammento di esperienza viene visualizzato nella pagina Offerte di Target. Consulta [documentazione specifica di Target](https://experiencecloud.adobe.com/resources/help/it_IT/target/target/aem-experience-fragments.html) per scoprire cosa puoi ottenere.
+Dopo aver eseguito le attività precedenti, il frammento di esperienza viene visualizzato nella pagina Offerte di Target. Per scoprire come potrai usarlo, consulta la [documentazione specifica di Target](https://experiencecloud.adobe.com/resources/help/it_IT/target/target/aem-experience-fragments.html).
 
 >[!NOTE]
 >

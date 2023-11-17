@@ -2,9 +2,9 @@
 title: Configurazione di ContextHub
 description: Scopri come configurare Context Hub, un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1629'
 ht-degree: 1%
 
 ---
@@ -43,10 +43,10 @@ Le icone sono riferimenti dalla [Libreria icona interfaccia utente Coral](https:
 
 Aggiungi una modalità interfaccia utente per raggruppare i moduli ContextHub correlati. Quando crei la modalità interfaccia utente, fornisci il titolo e l’icona visualizzati nella barra degli strumenti di ContextHub.
 
-1. Nella barra degli Experienci Manager, tocca o fai clic su Strumenti > Siti > Context Hub.
-1. Tocca o fai clic sul Contenitore di configurazione predefinito.
-1. Tocca o fai clic sulla configurazione Context Hub.
-1. Tocca o fai clic sul pulsante Crea, quindi tocca o fai clic su Modalità interfaccia utente Context Hub.
+1. Nella barra degli Experienci Manager, seleziona Strumenti > Siti > Context Hub.
+1. Seleziona il Contenitore di configurazione predefinito.
+1. Seleziona la configurazione Context Hub.
+1. Seleziona il pulsante Crea, quindi seleziona Modalità interfaccia utente Context Hub.
 
    ![Aggiungi modalità interfaccia utente](assets/contexthub-ui-mode.png)
 
@@ -56,7 +56,7 @@ Aggiungi una modalità interfaccia utente per raggruppare i moduli ContextHub co
    * Icona modalità: selettore per [Icona interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) da utilizzare, ad esempio `coral-Icon--user`
    * Abilitato: seleziona per visualizzare la modalità interfaccia utente nella barra degli strumenti di ContextHub
 
-1. Tocca o fai clic su Salva.
+1. Seleziona Salva.
 
 ### Aggiunta di un modulo interfaccia utente {#adding-a-ui-module}
 
@@ -76,11 +76,11 @@ Le proprietà del modulo UI includono una configurazione dettagliata in cui puoi
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Visualizza le statistiche sui tag pagina | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | Visualizza le informazioni di profilo per l&#39;utente corrente, tra cui `authorizableID`, `displayName` e `familyName`. Puoi modificare il valore di `displayName` e `familyName`. | `profile` |
 
-1. Nella barra degli Experienci Manager, tocca o fai clic su Strumenti > Siti > ContextHub.
-1. Tocca o fai clic sul Contenitore di configurazione a cui desideri aggiungere un modulo di interfaccia utente.
+1. Nella barra degli Experienci Manager, seleziona Strumenti > Siti > ContextHub.
+1. Seleziona il Contenitore di configurazione a cui desideri aggiungere un modulo di interfaccia utente.
 1. Fai clic o digita la configurazione ContextHub a cui desideri aggiungere il modulo di interfaccia utente.
-1. Tocca o fai clic sulla modalità interfaccia utente a cui stai aggiungendo il modulo interfaccia utente.
-1. Tocca o fai clic sul pulsante Crea, quindi tocca o fai clic su Modulo interfaccia utente ContextHub (generico).
+1. Seleziona la modalità dell’interfaccia utente a cui stai aggiungendo il modulo dell’interfaccia utente.
+1. Seleziona il pulsante Crea, quindi seleziona Modulo interfaccia utente ContextHub (generico).
 
    ![Modulo interfaccia utente ContextHub](assets/contexthub-ui-module.png)
 
@@ -91,7 +91,7 @@ Le proprietà del modulo UI includono una configurazione dettagliata in cui puoi
    * Abilitato: seleziona per mostrare il modulo interfaccia utente nella barra degli strumenti di ContextHub
 
 1. (Facoltativo) Per ignorare la configurazione predefinita dell’archivio, immetti un oggetto JSON per configurare il modulo interfaccia utente.
-1. Tocca o fai clic su Salva.
+1. Seleziona Salva.
 
 ## Creazione di un archivio ContextHub {#creating-a-contexthub-store}
 
@@ -115,14 +115,14 @@ L’AEM fornisce i seguenti esempi di store candidati su cui puoi basare un nego
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | Memorizza i dati profilo per l&#39;utente corrente |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | Memorizza informazioni sul client, ad esempio informazioni sul dispositivo, il tipo di browser e l&#39;orientamento della finestra |
 
-1. Nella barra degli Experienci Manager, tocca o fai clic su Strumenti > Siti > ContextHub.
-1. Tocca o fai clic sul contenitore di configurazione predefinito.
-1. Tocca o fai clic su Configurazione Contexthub
-1. Per aggiungere un archivio, tocca o fai clic sull’icona Crea, quindi tocca o fai clic su Configurazione archivio ContextHub.
+1. Nella barra degli Experienci Manager, seleziona Strumenti > Siti > ContextHub.
+1. Seleziona il contenitore di configurazione predefinito.
+1. Seleziona configurazione Contexthub
+1. Per aggiungere un archivio, seleziona l’icona Crea, quindi seleziona Configurazione archivio ContextHub.
 
    ![Configurazione archivio ContextHub](assets/contexthub-store-configuration.png)
 
-1. Immetti i valori per le proprietà di configurazione di base, quindi tocca o fai clic su Avanti:
+1. Immetti i valori per le proprietà di configurazione di base, quindi seleziona Successivo:
 
    * **Titolo configurazione:** Titolo che identifica l&#39;archivio
    * **Tipo di archivio:** Il valore della proprietà storeType del candidato dello store su cui basare lo store
@@ -130,7 +130,7 @@ L’AEM fornisce i seguenti esempi di store candidati su cui puoi basare un nego
    * **Attivato:** Seleziona per abilitare lo store
 
 1. (Facoltativo) Per ignorare la configurazione predefinita dell’archivio, immetti un oggetto JSON nella casella Configurazione dettaglio (JSON).
-1. Tocca o fai clic su Salva.
+1. Seleziona Salva.
 
 ## Esempio: utilizzo di un servizio JSONP  {#example-using-a-jsonp-service}
 
@@ -205,10 +205,10 @@ Utilizza la procedura in [Aggiunta di un modulo interfaccia utente](#adding-a-ui
 
 Modifica la configurazione di ContextHub e seleziona l’opzione **Debug**
 
-1. Nella barra, tocca o fai clic su **Strumenti > Sites > ContextHub**
-1. Tocca o fai clic sul pulsante predefinito **Contenitore configurazione**
-1. Seleziona la **Configurazione ContextHub** e tocca o fai clic su **Modifica elemento selezionato**
-1. Tocca o fai clic su **Debug** e tocca o fai clic su **Salva**
+1. Nella barra seleziona **Strumenti > Sites > ContextHub**
+1. Seleziona il valore predefinito **Contenitore configurazione**
+1. Seleziona la **Configurazione ContextHub** e seleziona **Modifica elemento selezionato**
+1. Seleziona **Debug** e seleziona **Salva**
 
 ### Via CRXDE {#via-crxde}
 
@@ -232,7 +232,7 @@ La modalità silenziosa sopprime tutte le informazioni di debug. A differenza de
 
 Questa funzione è utile per l’istanza Publish, in cui non desideri ricevere informazioni di debug. Poiché si tratta di un’impostazione globale, viene abilitata tramite OSGi.
 
-1. Apri **Configurazione della console web Adobe Experience Manager** a `http://<host>:<port>/system/console/configMgr`
+1. Apri **Configurazione console Web Adobe Experience Manager** a `http://<host>:<port>/system/console/configMgr`
 1. Cerca **Adobe Granite ContextHub**
 1. Fai clic sulla configurazione **Adobe Granite ContextHub** per modificarne le proprietà
 1. Seleziona l’opzione **Modalità silenziosa** e fai clic su **Salva**
@@ -243,10 +243,10 @@ ContextHub può essere disabilitato per impedirgli di caricare js/css e di inizi
 
 * Modifica la configurazione di ContextHub e seleziona l’opzione **Disabilita ContextHub**
 
-   1. Nella barra, tocca o fai clic su **Strumenti > Sites > ContextHub**
-   1. Tocca o fai clic sul pulsante predefinito **Contenitore configurazione**
-   1. Seleziona la **Configurazione ContextHub** e tocca o fai clic su **Modifica elemento selezionato**
-   1. Tocca o fai clic su **Disabilita ContextHub** e tocca o fai clic su **Salva**
+   1. Nella barra seleziona **Strumenti > Sites > ContextHub**
+   1. Seleziona il valore predefinito **Contenitore configurazione**
+   1. Seleziona la **Configurazione ContextHub** e seleziona **Modifica elemento selezionato**
+   1. Seleziona **Disabilita ContextHub** e seleziona **Salva**
 
 oppure
 

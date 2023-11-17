@@ -2,9 +2,9 @@
 title: Aggiunta di ContextHub alle pagine e accesso agli store
 description: Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Utilizza gli archivi ContextHub per rendere persistenti i dati contestuali. Cont
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-Tutti i tipi di store sono estensioni del [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) classe. Per informazioni sulla creazione di un nuovo tipo di archivio, vedere [Creazione di store personalizzati](extending-contexthub.md#creating-custom-store-candidates). Per informazioni sui tipi di archivio di esempio, vedi [Candidati archivio ContextHub di esempio](sample-stores.md).
+Tutti i tipi di store sono estensioni del [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) classe. Per informazioni sulla creazione di un tipo di archivio, consulta [Creazione di store personalizzati](extending-contexthub.md#creating-custom-store-candidates). Per informazioni sui tipi di archivio di esempio, vedi [Candidati archivio ContextHub di esempio](sample-stores.md).
 
 ### Modalità di persistenza {#persistence-modes}
 

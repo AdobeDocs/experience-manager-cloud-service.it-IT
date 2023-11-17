@@ -4,10 +4,10 @@ description: Scopri come utilizzare Frammenti di contenuto e l’API GraphQL com
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 93%
+source-wordcount: '1069'
+ht-degree: 89%
 
 ---
 
@@ -119,9 +119,9 @@ Dopo aver eseguito i due tipi principali di query, puoi eseguire una query sul c
 
 1. Definisci gli elementi che la query deve contenere per il modello Frammento di contenuto selezionato. Di nuovo, digita la parentesi aperta `{`, quindi premi Ctrl+Spazio o Opzione+Spazio per un elenco di completamento automatico. Seleziona `items` dalle opzioni.
 
-1. Tocca o fai clic sul pulsante **Migliora** per formattare automaticamente il codice in modo da facilitarne la lettura.
+1. Seleziona la **Migliora** per formattare automaticamente il codice in modo da semplificarne la lettura.
 
-1. Al termine, tocca o fai clic sul pulsante **Riproduzione** in alto a sinistra dell’editor per eseguire la query. L’editor completa automaticamente gli `items`, che vengono brevemente evidenziati in giallo e la query viene eseguita.
+1. Al termine, seleziona la **Play** in alto a sinistra nell’editor per eseguire la query. L’editor completa automaticamente gli `items`, che vengono brevemente evidenziati in giallo e la query viene eseguita.
 
 1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor delle query.
 
@@ -177,13 +177,13 @@ Verrà creata una query persistente che include i dati che si desidera utilizzar
 
 1. Nel menu a comparsa **Nome query**, assegna alla query il nome `adventure-list`.
 
-1. Tocca o fai clic su **Salva con nome**.
+1. Seleziona **Salva con nome**.
 
    ![Rendi persistente la query](assets/do-not-localize/persist-query.png)
 
 1. La query è resa persistente, come confermato da un messaggio del banner nella parte inferiore dello schermo. La query viene ora visualizzata anche nel pannello a sinistra delle query persistenti nella finestra.
 
-1. Affinché la query persistente sia disponibile pubblicamente, è necessario pubblicarla, in modo analogo a come i frammenti di contenuto devono essere pubblicati. Clic **Pubblica** in alto a destra nell’editor delle query per pubblicare la query.
+1. Affinché la query persistente sia disponibile pubblicamente, è necessario pubblicarla in modo analogo a come devono essere pubblicati i frammenti di contenuto. Clic **Pubblica** in alto a destra nell’editor delle query per pubblicare la query.
 
 1. La pubblicazione viene confermata da una notifica del banner.
 

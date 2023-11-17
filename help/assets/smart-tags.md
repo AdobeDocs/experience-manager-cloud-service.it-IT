@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ Assicurati che le immagini nel set di formazione siano conformi alle seguenti li
 
 **Quantità e dimensioni:** Almeno 10 immagini e massimo 50 immagini per tag.
 
-**Coerenza**: accertati che le immagini di un tag siano visivamente simili. È consigliabile aggiungere i tag relativi agli stessi aspetti visivi (come lo stesso tipo di oggetti in un’immagine) in un unico modello di tag. Ad esempio, non è consigliabile assegnare a tutte queste immagini il tag `my-party` (per l’addestramento) perché non sono visivamente simili.
+**Coerenza**: accertati che le immagini di un tag siano visivamente simili. È consigliabile aggiungere i tag relativi agli stessi aspetti visivi (come lo stesso tipo di oggetti in un’immagine) in un unico modello di tag. Ad esempio, non è consigliabile assegnare a queste immagini i tag `my-party` (per l’addestramento) perché non sono visivamente simili.
 
 ![Immagini illustrative che illustrano le linee guida per la formazione](assets/do-not-localize/coherence.png)
 

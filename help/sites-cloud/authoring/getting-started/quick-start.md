@@ -2,10 +2,10 @@
 title: Guida rapida all’authoring delle pagine
 description: Guida rapida di alto livello per iniziare a creare i contenuti di una pagina
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 90%
+source-wordcount: '1541'
+ht-degree: 84%
 
 ---
 
@@ -87,17 +87,17 @@ A [creare una pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.
 
 ### Selezione della pagina per ulteriori azioni {#selecting-your-page-for-further-action}
 
-Puoi selezionare una pagina in modo da poter intervenire su di essa. Quando si seleziona una pagina, la barra degli strumenti viene aggiornata automaticamente in modo da visualizzare le azioni relative a tale risorsa.
+Puoi selezionare una pagina in modo da poterci agire. Quando si seleziona una pagina, la barra degli strumenti viene aggiornata automaticamente in modo da visualizzare le azioni relative a tale risorsa.
 
 La modalità di selezione di una pagina dipende dalla visualizzazione utilizzata nella console:
 
 1. Vista a colonne:
 
-   * Tocca o fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
+   * Seleziona la miniatura per la risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
 
 1. Vista a elenco:
 
-   * Tocca o fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
+   * Seleziona la miniatura per la risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
 
 1. Vista a schede:
 
@@ -114,7 +114,7 @@ La modalità di selezione di una pagina dipende dalla visualizzazione utilizzata
 
 Sono disponibili delle [Azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions):
 
-1. [Passa alla pagina](#finding-your-page) sulla quale desideri intervenire.
+1. [Passa alla pagina](#finding-your-page) vuoi agire di conseguenza.
 1. Passa il puntatore del mouse sulla scheda che rappresenta la risorsa desiderata. Vengono visualizzate le azioni rapide:
 
    ![Azioni per la scheda](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -147,7 +147,7 @@ Per modificare la pagina:
 
    * [Modificare il contenuto di un componente esistente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) sulla pagina:
 
-      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza l’icona **Modifica** (matita) per aprire la finestra di dialogo.
+      * Apri la barra degli strumenti del componente selezionando una delle due opzioni. Utilizza l’icona **Modifica** (matita) per aprire la finestra di dialogo.
       * Apri l’editor locale per il componente toccando e tenendo premuto o facendo un doppio clic lento. Vengono visualizzate le azioni disponibili (per alcuni componenti è una selezione limitata).
       * Per visualizzare tutte le azioni disponibili, entra in modalità a schermo intero utilizzando:
 
@@ -155,16 +155,16 @@ Per modificare la pagina:
 
    * [Configurare le proprietà di un componente esistente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza l’icona **Configura** (chiave inglese) per aprire la finestra di dialogo.
+      * Apri la barra degli strumenti del componente selezionando una delle due opzioni. Utilizza l’icona **Configura** (chiave inglese) per aprire la finestra di dialogo.
 
    * [Sposta un componente](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) con una delle seguenti operazioni:
 
       * Trascina il componente richiesto nella nuova posizione.
-      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza le icone **Taglia** e quindi **Incolla** dove richiesto.
+      * Apri la barra degli strumenti del componente selezionando una delle due opzioni. Utilizza il **Taglia** allora **Incolla** icone, se necessario.
 
    * [Copiare (e incollare)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un componente:
 
-      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza le icone **Taglia** e quindi **Incolla** come richiesto.
+      * Apri la barra degli strumenti del componente selezionando una delle due opzioni. Utilizza il **Copia** allora **Incolla** icone, a seconda delle necessità.
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ Per modificare la pagina:
 
    * [Eliminare](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un componente:
 
-      * Apri la barra degli strumenti del componente toccando o facendo clic, quindi utilizza l’icona **Elimina**.
+      * Apri la barra degli strumenti del componente selezionando, quindi utilizza **Elimina** icona.
 
    * [Aggiungere annotazioni](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) alla pagina:
 
@@ -292,7 +292,7 @@ Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
 
    ![Vista Riferimenti](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. Tocca o fai clic sul tipo di riferimento richiesto per visualizzare ulteriori dettagli e, se necessario, per intraprendere ulteriori azioni.
+1. Selezionare il tipo di riferimento richiesto per visualizzare ulteriori dettagli e, se necessario, eseguire ulteriori azioni.
 
 ### Creazione di una versione della pagina   {#creating-a-version-of-your-page}
 
@@ -302,7 +302,7 @@ Per creare una [versione](/help/sites-cloud/authoring/features/page-versions.md)
 
    ![Opzione per la vista Timeline](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Tocca o fai clic sull’ellissi in basso a destra della colonna Timeline per visualizzare pulsanti aggiuntivi, tra cui **Salva come versione**.
+1. Seleziona i puntini di sospensione in basso a destra della colonna Timeline per visualizzare pulsanti aggiuntivi, tra cui **Salva come versione**.
 
    ![Vista Timeline](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ Lo stesso meccanismo di base viene utilizzato per il ripristino e/o il confronto
 
    Se una versione della pagina è già stata salvata, viene elencata nella Timeline.
 
-1. Tocca o fai clic sulla versione da ripristinare. Verranno visualizzati pulsanti di azione aggiuntivi:
+1. Seleziona la versione da ripristinare. Verranno visualizzati pulsanti di azione aggiuntivi:
 
    * **Ripristina questa versione**
 

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3491'
+source-wordcount: '3489'
 ht-degree: 15%
 
 ---
@@ -37,7 +37,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 | Esperienza semplificata per i creativi sul desktop | Accesso semplificato alle risorse da un DAM ([!DNL Assets]) per i creativi o, più in generale, per gli utenti che lavorano in applicazioni per la creazione di risorse native dal desktop. Hanno bisogno di un modo semplice per scoprire, utilizzare (aprire), modificare e salvare le modifiche in Experience Manager e caricare nuovi file. | Windows o Mac desktop; Creative Cloud app |
 | Risorse pronte all&#39;uso di alta qualità da [!DNL Adobe Stock] | Gli addetti al marketing contribuiscono ad accelerare il processo di creazione dei contenuti fornendo assistenza per l’origine e il rilevamento delle risorse. I creativi utilizzano le risorse approvate direttamente nei loro strumenti creativi. | [!DNL Assets]; [!DNL Adobe Stock] marketplace; campi metadati |
 | Distribuire e condividere le risorse per organizzazioni | Reparti interni/filiali locali e partner esterni, distributori e agenzie utilizzano le risorse approvate condivise dall’organizzazione principale. L’organizzazione desidera condividere in modo sicuro e fluido le risorse create per un riutilizzo più ampio. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
-| Genera automaticamente varianti predefinite di risorse caricate | Elabora automaticamente le risorse sfruttando l&#39;esclusiva tecnologia Adobe di gestione dei supporti e trasformazione per azioni predefinite. Crea una logica personalizzata per definire le tue azioni utilizzando API e microservizi per le risorse. | [!DNL Assets] - Interfaccia utente |
+| Genera automaticamente varianti predefinite di risorse caricate | Elabora automaticamente le risorse utilizzando l’esclusiva tecnologia di gestione dei supporti e trasformazione di Adobe per le azioni predefinite. Crea una logica personalizzata per definire le tue azioni utilizzando API e microservizi per le risorse. | [!DNL Assets] - Interfaccia utente |
 
 ## Adobi di offerte per supportare le esigenze di collaborazione {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -210,7 +210,7 @@ Adobe Asset Link offre un buon supporto per questo caso d’uso:
 
 L’app desktop Experience Manager fornisce una condivisione di rete per le risorse aperte nell’app nativa. Per impostazione predefinita, tutte le modifiche apportate localmente vengono caricate in Experience Manager automaticamente dopo un breve periodo di tempo. Con una tale configurazione, i salvataggi frequenti durante la fase di work-in-progress verrebbero tutti caricati in Experience Manager e ne verserebbero le versioni, creando una grande quantità di traffico di rete e potenziali problemi di scalabilità - per non parlare delle versioni non necessarie in Experience Manager.
 
-L’approccio consigliato in questo caso è quello di utilizzare un’opzione nell’app desktop Experience Manager per disattivare gli aggiornamenti automatici e caricare manualmente le modifiche apportate alle risorse in Experience Manager, sfruttando l’azione carica modifiche nell’interfaccia utente Stato risorse dell’app.
+L’approccio consigliato è quello di utilizzare un’opzione nell’app desktop Experience Manager per disattivare gli aggiornamenti automatici e caricare manualmente le modifiche apportate alle risorse da Experience Manager, utilizzando l’azione carica modifiche nell’interfaccia utente Stato risorse dell’app.
 
 #### Caricamento in blocco in DAM {#bulk-upload-to-dam}
 

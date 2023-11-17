@@ -2,9 +2,9 @@
 title: Esportatore JSON per Content Services
 description: AEM Content Services è progettato per generalizzare la descrizione e la consegna dei contenuti in/da AEM, non limitandosi alle pagine web. Fornisce contenuti a canali diversi dalle tradizionali pagine web di AEM, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '398'
 ht-degree: 31%
 
 ---
@@ -67,8 +67,6 @@ La pagina può contenere un singolo frammento di contenuto o più componenti di 
 
 ### Ulteriori informazioni {#further-information}
 
-Consulta anche:
-
 * API HTTP di Assets
    * [API HTTP di Assets](/help/assets/developer-reference-material-apis.md)
 * Modelli Sling:
@@ -77,8 +75,6 @@ Consulta anche:
    * [Abilitazione dell’esportazione JSON per un componente](enabling-json-exporter.md)
 
 ## Documentazione correlata {#related-documentation}
-
-Per maggiori dettagli, cfr.:
 
 * [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

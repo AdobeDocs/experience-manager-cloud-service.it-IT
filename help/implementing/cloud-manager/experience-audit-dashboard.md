@@ -1,13 +1,13 @@
 ---
 title: Dashboard di audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO tramite un’interfaccia dashboard chiara e informativa.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 17%
+source-wordcount: '831'
+ht-degree: 23%
 
 ---
-
 
 # Dashboard di audit dell’esperienza {#experience-audit-dashboard}
 
@@ -18,7 +18,7 @@ Scopri in che modo l’audit dell’esperienza convalida il processo di distribu
 >
 >Questa funzione è disponibile solo per [il programma early adopter.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 >
->Per informazioni dettagliate sulla funzione Audit dell’esperienza esistente per AEM as a Cloud Service, consulta il documento [Test di Experience Audit.](/help/implementing/cloud-manager/experience-audit-testing.md)
+>Per informazioni dettagliate sulla funzione Audit dell’esperienza esistente per AEM as a Cloud Service, consulta [Test di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 ## Panoramica {#overview}
 
@@ -30,17 +30,17 @@ L’audit dell’esperienza è una funzione disponibile nelle pipeline di produz
 
 L’audit dell’esperienza in Cloud Manager assicura i più elevati standard di esperienza utente sul sito.
 
-I risultati dell’audit sono informativi e consentono agli utenti con ruolo Responsabile dell’implementazione di visualizzare i punteggi e cosa è cambiato tra i punteggi correnti e precedenti. Questa informazione è utile per determinare se c’è una regressione introdotta con la distribuzione corrente.
+I risultati dell’audit sono informativi e consentono agli utenti con ruolo Responsabile dell’implementazione di visualizzare i punteggi e cosa è cambiato tra i punteggi correnti e precedenti. Questa informazione è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.
 
-Audit dell’esperienza è basato su [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) uno strumento open source di Google che è abilitato in tutte le pipeline di produzione di Cloud Manager.
+Audit dell’esperienza è basato su [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), strumento open source di Google abilitato in tutte le pipeline di produzione di Cloud Manager.
 
 >[!TIP]
 >
->Puoi configurare le pagine incluse nell’audit dell’esperienza quando [configuri la pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>Puoi configurare le pagine incluse nell’audit dell’esperienza quando [configuri la pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## Dashboard di audit dell’esperienza {#dashboard}
 
-I risultati dell’audit dell’esperienza sono presentati nel **Test dello staging** fase della pipeline di produzione tramite [pagina di esecuzione della pipeline di produzione.](/help/implementing/cloud-manager/deploy-code.md)
+I risultati dell’audit dell’esperienza sono presentati nel **Test dello staging** fase della pipeline di produzione tramite [pagina di esecuzione della pipeline di produzione](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Dashboard nella pipeline](assets/dashboard.png)
 
@@ -57,7 +57,7 @@ Il **Approfondimenti** fornisce una breve descrizione dei consigli utilizzabili 
 
 ![Approfondimenti](assets/insights.png)
 
-Tocca o fai clic su **Mostra altro** per aprire la dashboard completa.
+Seleziona la **Mostra altro** per aprire la dashboard completa.
 
 In **Approfondimenti e raccomandazioni** Questa sezione contiene un elenco dettagliato di consigli actionable con un chiaro indicatore di valore legato ai guadagni prevedibili in termini di prestazioni, insieme alla percentuale di pagine interessate. Questo consente di assegnare facilmente la priorità a questi consigli per i team.
 
@@ -71,7 +71,7 @@ Il **Punteggi faro** La scheda è un riepilogo dei punteggi di Lighthouse per il
 
 ![Punteggi faro](assets/lighthouse.png)
 
-Tocca o fai clic su **Mostra altro** per aprire la dashboard completa.
+Seleziona la **Mostra altro** per aprire la dashboard completa.
 
 In **Punteggi faro** sezione, si trova una visualizzazione delle tendenze dei vari punteggi. Seleziona **Prestazioni**, **Accessibilità**, **PWA**, o **SEO** per visualizzare la visualizzazione con tendenze mensili per tali valori.
 
@@ -87,13 +87,13 @@ Il **Pagine** La scheda è un riepilogo delle prestazioni delle pagine configura
 
 ![Scheda Pagine](assets/pages.png)
 
-Tocca o fai clic su **Mostra altro** per aprire la dashboard completa.
+Seleziona la **Mostra altro** per aprire la dashboard completa.
 
 Il **Pagine** Questa sezione fornisce un elenco delle pagine testate, con i punteggi di prestazioni di Lighthouse più recenti e il raggruppamento.
 
 ![Visualizzazione pagine](assets/pages-view.png)
 
-Puoi configurare le pagine incluse nell’audit dell’esperienza quando [configuri la pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+Puoi configurare le pagine incluse nell’audit dell’esperienza quando [configuri la pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 Per tornare alla pagina di esecuzione della pipeline di produzione, seleziona semplicemente la freccia indietro sul browser.
 
@@ -103,7 +103,7 @@ Il **Problemi** la scheda riepiloga eventuali problemi di prestazioni rilevati n
 
 ![Scheda Problemi](assets/issues.png)
 
-Tocca o fai clic su **Mostra altro** per aprire la dashboard completa.
+Seleziona la **Mostra altro** per aprire la dashboard completa.
 
 In **Approfondimenti e raccomandazioni** Questa sezione contiene un elenco più dettagliato dei consigli actionable con un chiaro indicatore di valore legato ai guadagni prevedibili in termini di prestazioni, insieme alla percentuale di pagine interessate. Questo consente di assegnare facilmente la priorità a questi consigli per i team.
 
@@ -113,7 +113,7 @@ Per tornare alla pagina di esecuzione della pipeline di produzione, seleziona se
 
 ### Dettagli pagina {#page-detail}
 
-Se tocchi o fai clic sul collegamento di una pagina in una delle schede di **Audit dell’esperienza** nella scheda della pagina di esecuzione della pipeline o nella **Pagine** sezione del dashboard completo di Audit dell’esperienza, puoi visualizzare i dettagli di una pagina particolare.
+Se selezioni il collegamento di una pagina in una delle schede di **Audit dell’esperienza** nella scheda della pagina di esecuzione della pipeline o nella **Pagine** sezione del dashboard completo di Audit dell’esperienza, puoi visualizzare i dettagli di una pagina particolare.
 
 ![Dati pagina](assets/page-data.png)
 

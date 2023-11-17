@@ -1,11 +1,11 @@
 ---
 title: Ricerca
-description: Ricerca completa per trovare più rapidamente i contenuti
+description: Individua il contenuto più velocemente con funzionalità complete di ricerca
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 57%
+source-wordcount: '492'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ La funzione Ricerca è disponibile nella barra degli strumenti superiore:
 La barra di ricerca consente di effettuare le seguenti operazioni:
 
 * Cercare una parola chiave, un percorso o un tag specifico
-* Filtrare in base a criteri specifici per le risorse come date di modifica, stato della pagina, dimensione del file e così via
+* Filtra in base a criteri specifici per le risorse, ad esempio date di modifica, stato della pagina, dimensione del file e così via.
 * Definire e utilizzare una [ricerca salvata](#saved-searches) in base ai criteri impostati
 
 >[!NOTE]
@@ -33,16 +33,16 @@ La barra di ricerca consente di effettuare le seguenti operazioni:
 
 Per cercare e filtrare le risorse:
 
-1. Apri **Ricerca** (con la lente di ingrandimento nella barra degli strumenti) e immettere il termine di ricerca. Vengono forniti suggerimenti che è possibile selezionare:
+1. Apri la **Ricerca** (con la lente di ingrandimento nella barra degli strumenti) e immetti il termine da cercare. Vengono forniti suggerimenti che possono essere selezionati:
 
    ![Ricerca termine](/help/sites-cloud/authoring/assets/search-term.png)
 
-   Per impostazione predefinita, i risultati della ricerca sono limitati alla posizione corrente (ovvero alla console e al tipo di risorsa correlato):
+   Per impostazione predefinita, i risultati della ricerca sono limitati alla posizione corrente (ovvero alla console e al tipo di risorsa corrispondente):
 
    ![Ricerca per posizione](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Se necessario, puoi rimuovere il filtro di posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire ricerche su tutte le console/i tipi di risorse.
-1. Vengono visualizzati i risultati, raggruppati in base alla console e al tipo di risorsa correlato.
+1. Se necessario, puoi rimuovere il filtro posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire la ricerca in tutte le console e i tipi di risorse.
+1. I risultati visualizzati vengono raggruppati in base alla console e al tipo di risorsa corrispondente.
 
    Puoi selezionare una risorsa specifica (sulla quale eseguire ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio **Visualizza tutti i siti**:
 
@@ -65,7 +65,7 @@ Per cercare e filtrare le risorse:
    >
    >I criteri di ricerca possono variare:
    >
-   >* A seconda del tipo di risorsa selezionato; ad esempio, i criteri di Assets e Communities sono comprensibilmente specializzati.
+   >* A seconda del tipo di risorsa selezionato; ad esempio, i criteri di Risorse e Community sono chiaramente specifici.
    >* La tua istanza, nonché i moduli di ricerca, possono essere personalizzati (in base alla posizione all’interno di AEM).
 
 <!--
@@ -80,13 +80,13 @@ Per cercare e filtrare le risorse:
 
 >[!NOTE]
 >
->I criteri di ricerca vengono mantenuti quando si seleziona un elemento nei risultati di ricerca.
+>I criteri di ricerca vengono mantenuti quando selezioni un elemento nei risultati di ricerca.
 >
 >Quando selezioni un elemento nella pagina dei risultati, e quindi torni alla pagina di ricerca dopo avere utilizzato il pulsante indietro del browser, i criteri di ricerca rimangono.
 
 ## Ricerche salvate {#saved-searches}
 
-Oltre a eseguire ricerche in base a un&#39;ampia gamma di facet, è possibile salvare una particolare configurazione di ricerca per recuperarla e utilizzarla in una fase successiva:
+Oltre a eseguire ricerche in base a un’ampia gamma di facet, puoi anche salvare una particolare configurazione di ricerca per riutilizzarla in una fase successiva:
 
 1. Definisci i criteri di ricerca e seleziona **Salva**.
 
@@ -96,13 +96,13 @@ Oltre a eseguire ricerche in base a un&#39;ampia gamma di facet, è possibile sa
 
    ![Salvataggio di una ricerca con un nome](/help/sites-cloud/authoring/assets/search-save-name.png)
 
-1. La ricerca salvata sarà disponibile dal selettore al successivo accesso al pannello di ricerca:
+1. La ricerca salvata è disponibile nel selettore alla successiva apertura del pannello di ricerca:
 
    ![Ricerche salvate](/help/sites-cloud/authoring/assets/saved-searches.png)
 
 1. Una volta salvato, è possibile:
 
-   * Utilizzare **x** (rispetto al nome della ricerca salvata) per avviare una nuova query (la ricerca salvata stessa non verrà eliminata).
+   * Utilizza **x** (rispetto al nome della ricerca salvata) per avviare una nuova query (la ricerca salvata stessa non verrà eliminata).
    * **Modifica ricerca salvata**, modifica le condizioni di ricerca, quindi **Salva** di nuovo.
 
 Per modificare le ricerche salvate, seleziona una ricerca e fai clic sull’opzione **Modifica ricerca salvata** nella parte inferiore del pannello di ricerca.

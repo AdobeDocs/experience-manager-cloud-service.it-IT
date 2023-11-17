@@ -2,9 +2,9 @@
 title: Informazioni sulle richieste di contenuto di Cloud Service
 description: Se hai acquistato licenze per richieste di contenuto da Adobe, scopri i tipi di richieste di contenuto che Adobe Experience Cloud as a Service misura e le varianze con gli strumenti di reporting di Analytics di un’organizzazione.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 9%
 
 ---
@@ -33,7 +33,7 @@ Vedi anche [Dashboard delle licenze](/help/implementing/cloud-manager/license-da
 
 ## Informazioni sulle richieste di contenuto di Cloud Service {#about-content-request}
 
-Le richieste di contenuto vengono tracciate automaticamente ai margini di Adobe Experience Manager (AEM) as a Cloud Service, tramite l’analisi automatizzata dei file di registro provenienti dalla rete CDN as a Cloud Service dall’AEM, isolando le richieste che restituiscono contenuto HTML (text/html) o JSON (application/json) dalla rete CDN e in base a una serie di regole di inclusione e esclusione descritte di seguito. Una richiesta di contenuto si verifica indipendentemente dal contenuto restituito distribuito dalle cache CDN o che ritorna all’origine della CDN (dispatcher AEM).
+Le richieste di contenuto vengono tracciate automaticamente ai margini di Adobe Experience Manager (AEM) as a Cloud Service, tramite l’analisi automatizzata dei file di registro provenienti dalla rete CDN as a Cloud Service dall’AEM, isolando le richieste che restituiscono contenuto HTML (text/html) o JSON (application/json) dalla rete CDN e in base a diverse regole di inclusione ed esclusione descritte di seguito. Una richiesta di contenuto si verifica indipendentemente dal contenuto restituito distribuito dalle cache CDN o che ritorna all’origine della CDN (dispatcher AEM).
 
 Per i clienti che utilizzano una propria rete CDN oltre a quella as a Cloud Service per AEM, questo tracciamento risulterà in numeri che non possono essere utilizzati per confrontare con le richieste di contenuto concesse in licenza e che dovranno essere misurati dal cliente al margine della rete CDN esterna.
 
