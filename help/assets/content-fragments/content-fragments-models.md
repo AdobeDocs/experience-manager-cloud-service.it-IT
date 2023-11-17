@@ -2,9 +2,9 @@
 title: Modelli per frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuti strutturati.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2935'
 ht-degree: 93%
 
 ---
@@ -298,7 +298,7 @@ Specifica un percorso radice per tutti i frammenti a cui si fa riferimento.
 
 * **Consenti creazione di frammenti**
 
-  In questo modo l’autore del frammento potrà creare un nuovo frammento basato sul modello appropriato.
+  Questo consente all’autore del frammento di creare un frammento basato sul modello appropriato.
 
    * **fragmentreferencecomposite**: consente all’autore del frammento di creare un elemento composito selezionando più frammenti
 

@@ -4,10 +4,10 @@ description: Scopri come utilizzare AEM per creare un sito utilizzando i modelli
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 96%
+source-wordcount: '773'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Scopri come utilizzare AEM per creare un sito utilizzando i modelli per definire
 
 Prima che gli autori dei contenuti possano creare pagine con contenuti, è necessario creare il sito. Questo viene generalmente eseguito da un amministratore AEM che definisce la struttura iniziale del sito. L’utilizzo dei modelli di sito rende la creazione del sito veloce e flessibile.
 
-Lo strumento Creazione rapida sito di AEM consente ai non sviluppatori di creare rapidamente un nuovo sito da zero utilizzando i modelli di sito.
+Lo strumento di Creazione Rapida dei Siti dell’AEM consente ai non sviluppatori di creare rapidamente un sito da zero utilizzando i modelli di sito.
 
 Una volta creato, lo strumento Creazione rapida sito consente inoltre di personalizzare velocemente il tema e lo stile del sito AEM (risorse JavaScript, CSS e statiche). In questo modo lo sviluppatore front-end, che non ha bisogno di conoscere AEM, può lavorare in maniera autonoma e in parallelo ai creatori di contenuti. L’amministratore AEM scarica semplicemente il tema del sito e lo fornisce allo sviluppatore front-end. Quest&#39;ultimo lo personalizza utilizzando i propri strumenti preferiti e successivamente conferma le modifiche nell’archivio del codice AEM, che viene quindi distribuito.
 

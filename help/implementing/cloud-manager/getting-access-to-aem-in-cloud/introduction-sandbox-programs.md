@@ -2,10 +2,10 @@
 title: Introduzione ai programmi sandbox
 description: Scopri che cosa sono i programmi sandbox e in cosa differiscono dai programmi di produzione.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '475'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '474'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Un programma sandbox è uno dei due tipi di programmi disponibili in AEM Cloud S
 
 ## Creazione automatica {#auto-creation}
 
-I programmi sandbox dispongono della funzionalità di creazione automatica. Ogni volta che crei un nuovo programma sandbox, Cloud Manager automaticamente:
+I programmi sandbox dispongono della funzionalità di creazione automatica. Ogni volta che crei un programma sandbox, Cloud Manager automaticamente:
 
 * Aggiunge al programma le soluzioni AEM Sites e AEM Assets.
 * Imposta un archivio Git del progetto con un progetto di esempio basato sull’[archetipo del progetto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)

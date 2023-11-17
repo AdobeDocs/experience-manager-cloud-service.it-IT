@@ -2,10 +2,10 @@
 title: Percorso della tua prima esperienza con AEM Headless
 description: In questa parte del Percorso per sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 98%
+source-wordcount: '1999'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +70,7 @@ Durante la fase di sviluppo, si consiglia di lavorare con un ambiente di svilupp
 
 Gli sviluppatori devono disporre di un ambiente di sviluppo AEM configurato con i modelli di contenuto popolati. Lo sviluppatore sviluppa il client che utilizzerà i contenuti da AEM headless, in quanto gli autori dei contenuti stanno ancora creando i contenuti. Ecco perché le definizioni API sono molto importanti. Sfruttando l’SDK di AEM, lo sviluppatore può creare un hook di prova in modo da poter creare client test e unit test per assicurarsi che il client sia in grado di eseguire correttamente il rendering del contenuto.
 
-Gli autori e le autrici dei contenuti creano contenuti in base ai modelli di contenuto definiti nell’ambiente di staging. Utilizzando lo strumento per l’authoring dei frammenti di contenuto, l’autore crea un nuovo frammento di contenuto o ne modifica uno esistente. Prima di pubblicarlo, l’autore o l&#39;autrice può visualizzare un’anteprima dell’aspetto che avrà nel client collaborando con lo sviluppatore per inviare il modello di contenuto allo sviluppo o impostare un ambiente per sviluppatori in modo che gli autori e le autrici possano visualizzare in anteprima l’aspetto che avrà nel client.
+Gli autori e le autrici dei contenuti creano contenuti in base ai modelli di contenuto definiti nell’ambiente di staging. Con lo strumento di creazione dei frammenti di contenuto, l’autore crea un frammento di contenuto o ne modifica uno esistente. Prima di pubblicarlo, l’autore o l&#39;autrice può visualizzare un’anteprima dell’aspetto che avrà nel client collaborando con lo sviluppatore per inviare il modello di contenuto allo sviluppo o impostare un ambiente per sviluppatori in modo che gli autori e le autrici possano visualizzare in anteprima l’aspetto che avrà nel client.
 
 ## Configurazione {#setup}
 

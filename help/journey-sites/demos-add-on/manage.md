@@ -2,10 +2,10 @@
 title: Gestire siti demo
 description: Scopri gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 95%
+source-wordcount: '942'
+ht-degree: 94%
 
 ---
 
@@ -93,7 +93,7 @@ Nello stesso modo è possibile eliminare i modelli sotto l’intestazione **Elim
 Congratulazioni! Hai completato il percorso del componente aggiuntivo Demo di riferimento AEM. Ora dovresti:
 
 * Scopri le nozioni di base di Cloud Manager e come le pipeline distribuiscono contenuti e configurazioni da AEM.
-* Scopri come utilizzare Cloud Manager per creare un nuovo programma.
+* Scopri come creare un programma con Cloud Manager.
 * Scopri come attivare il componente aggiuntivo Demo di riferimento per il nuovo programma e come eseguire una pipeline per distribuirne il contenuto.
 * Scopri come accedere all’ambiente di authoring AEM per creare un sito basato su un modello.
 * Scopri come accedere alle utilità demo self-service.

@@ -4,9 +4,9 @@ description: Configurare [!DNL Workfront for Experience Manager enhanced connect
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1770'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ La mappatura dei metadati tra i documenti di Adobe Workfront e le risorse è def
 Per configurare le mappature, effettua le seguenti operazioni:
 
 1. Accedi a **Strumenti** > **Risorse** > **Schemi metadati**.
-1. Seleziona il modulo schema metadati da modificare e fai clic su **Modifica** oppure crea un nuovo schema di metadati da zero.
+1. Seleziona il modulo schema metadati da modificare e fai clic su **Modifica** oppure crea uno schema di metadati da zero.
 1. Seleziona il campo del modulo schema metadati da modificare e seleziona **Impostazioni** nel pannello di destra.
 1. In entrata [!DNL Workfront] Campo modulo personalizzato seleziona il nome del [!DNL Workfront] che desideri mappare sulla proprietà AEM selezionata. Le opzioni disponibili sono:
 

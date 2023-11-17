@@ -2,9 +2,9 @@
 title: Autorizzazioni personalizzate
 description: Scopri come utilizzare le autorizzazioni personalizzate per creare nuovi profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1501'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ Questa sezione descrive i passaggi seguenti. Potrebbe essere utile fare riferime
 
 ### Creare un nuovo profilo di prodotto {#create}
 
-Devi innanzitutto creare un nuovo profilo di prodotto prima di cui assegnare le autorizzazioni personalizzate.
+Devi innanzitutto creare un profilo di prodotto prima del quale assegnare autorizzazioni personalizzate.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
@@ -123,10 +123,10 @@ Per creare profili personalizzati sono disponibili le seguenti autorizzazioni.
 
 | Autorizzazione | Descrizione |
 |---|---|
-| Creazione programma | Consenti agli utenti di creare un nuovo programma |
+| Creazione programma | Consenti agli utenti di creare un programma |
 | Accesso al programma | Consenti agli utenti di accedere ai programmi |
 | Modifica del programma | Consenti agli utenti di modificare i programmi |
-| Creazione dell’ambiente | Consenti agli utenti di creare un nuovo ambiente |
+| Creazione dell’ambiente | Consenti agli utenti di creare un ambiente |
 | Modifica dell’ambiente | Consenti agli utenti di aggiornare e modificare gli ambienti |
 | Lettura registri ambiente | Consenti agli utenti di leggere i registri dell’ambiente |
 | Creare pipeline | Consenti agli utenti di creare nuove pipeline |
@@ -145,7 +145,7 @@ Le autorizzazioni a livello di organizzazione si riferiscono alle autorizzazioni
 
 Le autorizzazioni seguenti sono autorizzazioni a livello di organizzazione:
 
-* **Creazione programma** - Questa autorizzazione consente agli utenti di creare un nuovo programma nell’organizzazione.
+* **Creazione programma** - Questa autorizzazione consente agli utenti di creare un programma all’interno dell’organizzazione.
 * **Accesso alle informazioni dell’archivio** Questa autorizzazione a livello di tenant/organizzazione consente agli utenti di generare nome utente, password e URL dell’archivio per accedere e contribuire al progetto del cliente.
    * Il nome utente e la password per l’accesso all’archivio saranno comuni a tutti gli archivi nell’organizzazione, tuttavia l’URL dell’archivio sarà univoco per ciascun programma.
    * Consulta il documento [Accesso agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md) per ulteriori informazioni.

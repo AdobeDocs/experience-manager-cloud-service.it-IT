@@ -2,10 +2,10 @@
 title: Creazione e gestione delle offerte (console Offerte)
 description: Usa la console Offerte per creare offerte da utilizzare nelle esperienze Attività.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 98%
+source-wordcount: '1390'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ L’opzione e flusso di lavoro **Converti in variante di frammento di esperienza
 
 >[!NOTE]
 >
->Puoi anche creare un nuovo frammento di esperienza, trasferire manualmente il contenuto dall’offerta legacy al frammento, quindi eliminare l’offerta legacy.
+>Puoi anche creare un frammento di esperienza, trasferire manualmente il contenuto dall’offerta legacy al frammento, quindi eliminare l’offerta legacy.
 
 >[!CAUTION]
 >

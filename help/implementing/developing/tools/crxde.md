@@ -2,9 +2,9 @@
 title: Utilizzo di CRXDE Lite
 description: CRXDE Liti fa parte del modulo quickstart dell’AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1683'
 ht-degree: 1%
 
 ---
@@ -206,7 +206,7 @@ Per creare una proprietà con CRXDE Liti:
 
 ## Creazione di un file {#creating-a-file}
 
-Per creare un nuovo file con CRXDE Liti:
+Per creare un file con CRXDE Liti:
 
 1. Apri CRXDE Liti nel browser.
 1. In [**Riquadro Exploerer**,](#explorer-pane) fai clic con il pulsante destro del mouse sul componente in cui desideri creare il file e seleziona (crea file) **Crea**, quindi **Crea file**.

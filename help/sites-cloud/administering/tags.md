@@ -2,9 +2,9 @@
 title: Amministrazione dei tag
 description: Scopri come amministrare i tag in AEM per organizzare i contenuti.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2265'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Esistono diversi passaggi per creare e utilizzare i tag per organizzare i conten
 
 Per organizzare altri tag viene utilizzato uno spazio dei nomi. Può essere considerato come il tag di livello più basso e viene in genere utilizzato per raggruppare altri tag.
 
-1. Per creare un nuovo spazio dei nomi, apri [console di assegnazione tag](#tagging-console) e tocca o fai clic su **Crea** nella barra degli strumenti e quindi **Crea spazio dei nomi**.
+1. Per creare uno spazio dei nomi, apri [console di assegnazione tag](#tagging-console) e tocca o fai clic su **Crea** nella barra degli strumenti e quindi **Crea spazio dei nomi**.
 
    ![Finestra di dialogo Aggiungi spazio dei nomi](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -101,7 +101,7 @@ Uno spazio dei nomi non deve necessariamente contenere tag secondari. Poiché un
 
 I tag vengono generalmente aggiunti agli spazi dei nomi.
 
-1. Per creare un nuovo tag, apri [console di assegnazione tag.](#tagging-console)
+1. Per creare un tag, apri [console di assegnazione tag.](#tagging-console)
 
 1. Seleziona lo spazio dei nomi in cui desideri creare il tag. In alternativa, seleziona un altro tag per creare un tag secondario al di sotto di esso.
 
@@ -123,11 +123,11 @@ Il tag viene creato e la console viene aggiornata per mostrare il nuovo tag.
 I tag consentono di creare in modo flessibile la propria tassonomia in base alle esigenze organizzative.
 
 * Puoi creare tag secondari di tag esistenti selezionando il tag principale nella console prima di creare il nuovo tag.
-* Se crei un tag senza selezionare uno spazio dei nomi o un altro tag, viene effettivamente creato un nuovo spazio dei nomi.
+* Se crei un tag senza selezionare uno spazio dei nomi o un altro tag, viene effettivamente creato uno spazio dei nomi.
 
 ### Pubblicazione dei tag {#publishing-tags}
 
-Come per la creazione di qualsiasi altro contenuto in AEM, una volta creato un tag (o namespace), questo esiste solo nell’ambiente di authoring. Affinché i tag siano disponibili per gli utenti, devi pubblicarli.
+Come per la creazione di qualsiasi altro contenuto in AEM, dopo aver creato un tag (o namespace), questo esiste solo nell’ambiente di authoring. Affinché i tag siano disponibili per gli utenti, devi pubblicarli.
 
 1. Per pubblicare un tag, apri [console di assegnazione tag.](#tagging-console)
 

@@ -2,10 +2,10 @@
 title: Gestione dei progetti
 description: Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità, accessibile e gestibile nella console dedicata
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '893'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '892'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di u
 * Product Photo Shoot Project 
 -->
 
-La procedura di creazione di un progetto è la stessa per ciascun progetto. La differenza tra i tipi di progetti include i [ruoli utente](/help/sites-cloud/authoring/projects/overview.md) e i [flussi di lavoro](/help/sites-cloud/authoring/projects/workflows.md) disponibili.  Per creare un nuovo progetto:
+La procedura di creazione di un progetto è la stessa per ciascun progetto. La differenza tra i tipi di progetti include i [ruoli utente](/help/sites-cloud/authoring/projects/overview.md) e i [flussi di lavoro](/help/sites-cloud/authoring/projects/workflows.md) disponibili.  Per creare un progetto:
 
 1. In **Progetti**, tocca o fai clic su **Crea** per aprire la procedura guidata **Crea progetto**:
 1. Seleziona un modello e fai clic su **Avanti**.
@@ -135,7 +135,7 @@ Per rendere un progetto inattivo (o attivo):
 
    >[!NOTE]
    >
-   >Potrebbe essere necessario aggiungere questo riquadro, se non è già presente nel progetto. Consulta [Aggiunta di riquadri](#adding-items-to-a-tile).
+   Potrebbe essere necessario aggiungere questo riquadro, se non è già presente nel progetto. Consulta [Aggiunta di riquadri](#adding-items-to-a-tile).
 
 1. Tocca o fai clic su **Modifica**.
 1. Modifica il selettore passando da **Attivo** a **Inattivo** (o viceversa).

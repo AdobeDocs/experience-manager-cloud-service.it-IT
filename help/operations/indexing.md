@@ -2,10 +2,10 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Scopri la ricerca e l’indicizzazione dei contenuti in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2433'
-ht-degree: 32%
+source-wordcount: '2432'
+ht-degree: 31%
 
 ---
 
@@ -47,7 +47,7 @@ Le definizioni degli indici possono essere suddivise in tre casi d’uso princip
 2. **Aggiorna** una definizione di indice esistente aggiungendo una nuova versione.
 3. **Rimuovi** una definizione di indice non più necessaria.
 
-Per entrambi i punti 1 e 2 di cui sopra, devi creare una nuova definizione dell’indice come parte della base di codice personalizzato nella rispettiva pianificazione della versione di Cloud Manager. Per ulteriori informazioni, vedere [Distribuzione a AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentazione.
+Per entrambi i punti 1 e 2 di cui sopra, devi creare una definizione dell’indice come parte della base di codice personalizzata nella rispettiva pianificazione della versione di Cloud Manager. Per ulteriori informazioni, vedere [Distribuzione a AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentazione.
 
 ## Nomi indice {#index-names}
 

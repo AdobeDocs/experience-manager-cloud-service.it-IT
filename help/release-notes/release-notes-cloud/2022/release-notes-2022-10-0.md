@@ -2,10 +2,10 @@
 title: Note sulla versione 2022.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 79%
+source-wordcount: '835'
+ht-degree: 77%
 
 ---
 
@@ -69,7 +69,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2022 per un r
    * **[Modello per dati modulo nell’editor modelli](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: è possibile associare uno schema Modello dati modulo a un modello per moduli adattivi nell’editor modelli. Questo consente di velocizzare la creazione di un modulo adattivo. La stessa opzione è stata aggiunta anche all’editor di moduli adattivi per consentire agli utenti di selezionare o cambiare il modello di dati per i moduli esistenti.
    * **[Documento di record nell’editor modelli](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: ora è possibile standardizzare la generazione di documenti di record per tutti i moduli creati utilizzando un modello. Questo aiuta a migliorare la conformità e la standardizzazione in base ai requisiti dell’organizzazione.
 
-* **[Avviare la procedura guidata Moduli adattivi da una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)**: il supporto per moduli adattivi è stato esteso alla pagina di AEM Sites. È ora possibile creare un nuovo modulo adattivo o incorporarne uno esistente direttamente nella pagina di AEM Sites.
+* **[Avviare la procedura guidata Moduli adattivi da una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)**: il supporto per moduli adattivi è stato esteso alla pagina di AEM Sites. È ora possibile creare un modulo adattivo o incorporarne uno esistente restando sulla pagina di AEM Sites.
 * **[Modificare l’allineamento della visualizzazione per caselle di controllo e pulsanti di scelta in DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: ora è possibile impostare l’allineamento desiderato (Orizzontale, Verticale, Come moduli adattivi) per le caselle di controllo e i pulsanti di scelta nel documento di record. Questa opzione determina il posizionamento delle opzioni di caselle di controllo e pulsanti di scelta nel documento di record.
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}

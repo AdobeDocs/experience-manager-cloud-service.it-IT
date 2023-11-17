@@ -2,7 +2,7 @@
 title: Comprendere Cloud Manager e il flusso di lavoro per la Creazione Rapida dei Siti
 description: Scopri Cloud Manager e come assicura il nuovo processo di Creazione Rapida dei Siti.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 96%
@@ -117,7 +117,7 @@ Dopo aver completato questa parte del percorso di creazione rapida sito di AEM, 
 * Scopri in che modo AEM Sites e Cloud Manager collaborano per facilitare lo sviluppo front-end
 * Scopri come il passaggio di personalizzazione front-end è completamente scollegato da AEM e non richiede alcuna conoscenza di AEM.
 
-Approfondisci l&#39;argomento e continua il percorso di Creazione Rapida dei Siti AEM esaminando il documento [Crea sito da modello,](create-site.md) dove scopri come creare rapidamente un nuovo sito AEM utilizzando un modello.
+Approfondisci l&#39;argomento e continua il percorso di Creazione Rapida dei Siti AEM esaminando il documento [Crea sito da modello,](create-site.md) dove viene illustrato come creare rapidamente un nuovo sito AEM utilizzando un modello.
 
 ## Risorse aggiuntive {#additional-resources}
 

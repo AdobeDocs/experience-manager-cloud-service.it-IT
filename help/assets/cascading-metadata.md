@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '984'
 ht-degree: 15%
 
 ---
@@ -41,9 +41,9 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
    ![select_form](assets/select_form.png)
 
-1. (Facoltativo) Nell’editor schema metadati, crea un nuovo campo da condizionare. Specifica un nome e un percorso di proprietà nel **[!UICONTROL Impostazioni]** scheda.
+1. (Facoltativo) Nell’editor schema metadati, crea un campo da condizionare. Specifica un nome e un percorso di proprietà nel **[!UICONTROL Impostazioni]** scheda.
 
-   Per creare una nuova scheda, tocca o fai clic su `+` per aggiungere una scheda e quindi un campo di metadati.
+   Per creare una scheda, tocca o fai clic su `+` per aggiungere una scheda e quindi un campo di metadati.
 
    ![add_tab](assets/add_tab.png)
 

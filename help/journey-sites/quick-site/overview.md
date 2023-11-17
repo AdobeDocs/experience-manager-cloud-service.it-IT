@@ -2,10 +2,10 @@
 title: Percorso di creazione di siti rapidi AEM
 description: Inizia qui per un percorso guidato attraverso lo strumento Creazione rapida sito di AEM facile da usare che permette di semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza alcuna conoscenza del back-end di AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1034'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1032'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Inizia qui per un percorso guidato attraverso lo strumento Creazione rapida sito
 
 AEM Sites è un potente set di strumenti per la creazione e la gestione di esperienze digitali. Gli autori dei contenuti possono creare facilmente esperienze digitali tramite l’editor dei siti e organizzare i contenuti mediante la console Sites, visualizzando allo stesso tempo i contenuti live così come saranno distribuiti da AEM ai vari tipi di pubblico su tutti i canali.
 
-Lo strumento Creazione rapida siti AEM consente agli sviluppatori di creare rapidamente un nuovo sito da zero utilizzando dei modelli. Una volta creato, lo strumento Creazione rapida sito consente inoltre di personalizzare velocemente il tema e lo stile del sito AEM (risorse JavaScript, CSS e statiche). In questo modo lo sviluppatore front-end, che non ha bisogno di conoscere AEM, può lavorare in maniera autonoma e in parallelo ai creatori di contenuti. L’amministratore AEM scarica semplicemente il tema del sito e lo fornisce allo sviluppatore front-end. Quest&#39;ultimo lo personalizza utilizzando i propri strumenti preferiti e successivamente conferma le modifiche nell’archivio del codice AEM, che viene quindi distribuito.
+Lo strumento di Creazione Rapida dei Siti dell’AEM consente ai non sviluppatori di creare rapidamente un sito da zero utilizzando i modelli di sito. Una volta creato, lo strumento Creazione rapida sito consente inoltre di personalizzare velocemente il tema e lo stile del sito AEM (risorse JavaScript, CSS e statiche). In questo modo lo sviluppatore front-end, che non ha bisogno di conoscere AEM, può lavorare in maniera autonoma e in parallelo ai creatori di contenuti. L’amministratore AEM scarica semplicemente il tema del sito e lo fornisce allo sviluppatore front-end. Quest&#39;ultimo lo personalizza utilizzando i propri strumenti preferiti e successivamente conferma le modifiche nell’archivio del codice AEM, che viene quindi distribuito.
 
 Eliminando le conoscenze per gli sviluppatori per la creazione di siti, eliminando i requisiti di conoscenza AEM per lo sviluppo front-end e consentendo lo sviluppo di temi in parallelo con la creazione di contenuti, lo strumento di Creazione rapida siti AEM accelera notevolmente il time-to-value del sito e aumenta l’agilità di personalizzazione e distribuzione del sito.
 
@@ -54,7 +54,7 @@ In questo percorso esplorerai molti argomenti. I seguenti articoli forniscono in
 |---|---|---|--|
 | 0 | Percorso di creazione di siti rapidi AEM | Questo documento | Amministratori di AEM e Cloud Manager |
 | 1 | [Informazioni su Cloud Manager e il flusso di lavoro per la creazione di siti rapidi](cloud-manager.md) | Scopri Cloud Manager e il modo in cui unisce il nuovo processo di creazione di siti rapidi. | Amministratore AEM |
-| 2 | [Crea sito da modello](create-site.md) | Scopri come creare rapidamente un nuovo sito AEM utilizzando un modello di sito. | Amministratore AEM |
+| 2 | [Crea sito da modello](create-site.md) | Scopri come creare rapidamente un sito AEM utilizzando un modello di sito. | Amministratore AEM |
 | 3 | [Configurare la pipeline](pipeline-setup.md) | Crea una pipeline front-end per gestire la personalizzazione del tema del sito. | Amministratore di Cloud Manager |
 | 4 | [Concedere l’accesso allo sviluppatore front-end](grant-access.md) | Integra gli sviluppatori front-end in Cloud Manager in modo che abbiano accesso all’archivio Git del sito AEM e alla pipeline. | Amministratore di Cloud Manager |
 | 5 | [Recuperare le informazioni di accesso all’archivio Git](retrieve-access.md) | Scopri in che modo lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell’archivio Git. | Sviluppatore front-end |

@@ -2,10 +2,10 @@
 title: Configurare l’integrazione della traduzione per contenuti headless
 description: Scopri come connettere AEM a un servizio di traduzione.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 95%
+source-wordcount: '1229'
+ht-degree: 93%
 
 ---
 
@@ -68,9 +68,9 @@ Dopo aver installato il pacchetto del connettore per il servizio di traduzione p
 * Se deve essere eseguita la traduzione umana o automatica
 * Se tradurre altri contenuti associati ai Frammenti di contenuto, come i tag
 
-Per creare una nuova configurazione di traduzione:
+Per creare una configurazione di traduzione:
 
-1. Nel menu di navigazione globale, tocca o fai clic su **Strumenti** -> **Cloud Services** -> **Cloud Services di traduzione**.
+1. Nel menu di navigazione globale, tocca o fai clic su **Strumenti** > **Cloud Service** > **Cloud Service di traduzione**.
 1. Passa alla posizione in cui desideri creare la configurazione nella struttura del contenuto. Spesso si basa su un particolare progetto o può essere globale.
    * Ad esempio, in questo caso, una configurazione può essere resa globale da applicare a tutti i contenuti o solo al progetto WKND.
 

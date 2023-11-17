@@ -2,10 +2,10 @@
 title: Crea sito demo
 description: Crea un sito demo in AEM basato su una libreria di modelli preconfigurati.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 92%
+source-wordcount: '836'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ Crea un sito demo in AEM basato su una libreria di modelli preconfigurati.
 
 Nel precedente documento del percorso AEM Reference Demos Add-On, [Crea programma,](create-program.md) hai fatto il primo passaggio di configurazione per creare un programma a scopo di test e hai utilizzato una pipeline per distribuire il contenuto aggiuntivo. Ora dovresti:
 
-* Scopri come utilizzare Cloud Manager per creare un nuovo programma.
+* Scopri come creare un programma con Cloud Manager.
 * Scopri come attivare AEM Reference Demos Add-On per il nuovo programma.
 * Puoi eseguire una pipeline per distribuire il contenuto aggiuntivo.
 
@@ -25,7 +25,7 @@ Questo articolo descrive il passaggio successivo del processo di creazione di un
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come creare un nuovo sito basato sui modelli di AEM Reference Demos Add-On. Dopo la lettura dovresti:
+Questo documento spiega come creare un sito basato sui modelli di AEM Reference Demos Add-On. Dopo la lettura dovresti:
 
 * Comprendere come accedere all’ambiente di authoring AEM.
 * Conoscere come creare un sito basato su un modello.

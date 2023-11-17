@@ -2,9 +2,9 @@
 title: Creazione e gestione dei canali in Screens as a Cloud Service
 description: Questa pagina descrive come creare e gestire i canali in Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1086'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Questo documento spiega come creare e gestire i canali per il progetto AEM Scree
 >**Prerequisiti**
 >Prima di iniziare questa sezione della Guida TV, rivedi [Creazione e gestione di progetti in Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-Segui i passaggi seguenti per creare un nuovo canale di sequenza in Screens as a Cloud Service:
+Per creare un canale di sequenza in Screens as a Cloud Service, effettua le seguenti operazioni:
 
 1. Passa a Provider di contenuti Screens.
 

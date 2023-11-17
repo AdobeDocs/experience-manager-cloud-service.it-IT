@@ -4,10 +4,10 @@ description: Scopri come configurare il Translation Integration Framework per in
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '1518'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1517'
+ht-degree: 99%
 
 ---
 
@@ -67,7 +67,7 @@ Dopo aver configurato un Translation Integration Framework, puoi [associarlo all
 >
 >Per una panoramica delle funzioni di traduzione dei contenuti di AEM, vedi [Traduzione di contenuti per siti multilingue](overview.md).
 
-Una singola configurazione del framework controlla come vengono tradotti il contenuto e le risorse della pagina. Per creare una nuova configurazione di traduzione:
+Una singola configurazione del framework controlla come vengono tradotti il contenuto e le risorse della pagina. Per creare una configurazione di traduzione:
 
 1. In [menu di navigazione globale,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) tocca o fai clic su **Strumenti -> Servizi cloud -&amp; Servizi cloud di traduzione**.
 1. Passa alla posizione in cui desideri creare la configurazione nella struttura del contenuto. Questo è spesso basato su un sito specifico o può essere globale.

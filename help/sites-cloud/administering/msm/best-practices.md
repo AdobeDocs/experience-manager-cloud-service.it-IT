@@ -4,10 +4,10 @@ description: Scopri le best practice compilate dai team di progettazione e consu
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 95%
+source-wordcount: '1419'
+ht-degree: 94%
 
 ---
 
@@ -66,7 +66,7 @@ Tieni presente che AEM dispone di due approcci principali per la creazione di Li
 
 Di seguito sono riportate alcune considerazioni da tenere a mente durante la creazione di un sito:
 
-* Per creare un nuovo sito, è necessario una [configurazione blueprint](creating-live-copies.md#managing-blueprint-configurations).
+* Per creare un sito, è necessario [configurazione blueprint](creating-live-copies.md#managing-blueprint-configurations).
 * Per consentire la selezione dei percorsi linguistici da creare in un nuovo sito, le lingue root corrispondenti devono esistere nella blueprint (sorgente).
 * Una volta creato un [nuovo sito come Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (usando **Crea**, poi **Sito**), i primi due livelli di questa Live Copy sono *shallow*. Gli elementi figli della pagina non appartengono alla relazione live, ma se viene trovata una relazione live corrispondente al trigger, verrà comunque generato un rollout.
 

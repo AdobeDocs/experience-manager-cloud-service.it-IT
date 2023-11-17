@@ -2,10 +2,10 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile aggiornarla modificandone i contenuti
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 94%
+source-wordcount: '2975'
+ht-degree: 93%
 
 ---
 
@@ -161,7 +161,7 @@ Puoi aggiungere un nuovo componente utilizzando il [browser componenti](/help/si
 
 ### Inserimento di un componente utilizzando il browser Risorse {#inserting-a-component-using-the-assets-browser}
 
-È possibile aggiungere un nuovo componente alla pagina anche trascinando una risorsa dal [browser Risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Questo determina la creazione automatica di un nuovo componente del tipo appropriato (e che include la risorsa).
+Puoi anche aggiungere un nuovo componente alla pagina trascinando una risorsa dal menu [browser risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Questo crea automaticamente un componente del tipo appropriato (e che contiene la risorsa).
 
 Puoi configurare questo comportamento per l’installazione in uso. Per ulteriori dettagli, consulta la sezione su come Configurare un sistema di paragrafi in modo che il trascinamento di una risorsa crei uno specifico componente. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -261,7 +261,7 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
 * **Converti in variante di frammento di esperienza**
 
-  Questo ti consente di creare un nuovo [frammento esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) dal componente selezionato o aggiungilo a un frammento di esperienza esistente.
+  Questo consente di creare un’ [frammento esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) dal componente selezionato o aggiungilo a un frammento di esperienza esistente.
 
   ![Pulsante Converti in frammento esperienza](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 

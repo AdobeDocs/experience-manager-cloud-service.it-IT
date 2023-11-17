@@ -2,10 +2,10 @@
 title: Configurare la pipeline
 description: Crea una pipeline front-end per gestire la personalizzazione del tema del sito.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 97%
+source-wordcount: '964'
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ Crea una pipeline front-end per gestire la personalizzazione del tema del sito.
 Nel documento precedente del percorso di creazione rapida sito di AEM, [Creare sito da modello,](create-site.md) hai imparato a utilizzare un modello di sito per creare rapidamente un sito AEM che può essere ulteriormente personalizzato utilizzando gli strumenti front-end e ora dovresti:
 
 * Comprendere come ottenere i modelli di sito di AEM.
-* Scopri come creare un nuovo sito utilizzando un modello.
+* Scopri come creare un sito utilizzando un modello.
 * Scopri come scaricare il modello dal tuo nuovo sito per fornirlo allo sviluppatore front-end.
 
 Questo articolo si basa su questi elementi fondamentali per consentire l’impostazione di una pipeline front-end, che lo sviluppatore front-end utilizzerà successivamente nel percorso per distribuire personalizzazioni front-end.

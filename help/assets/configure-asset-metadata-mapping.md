@@ -2,10 +2,10 @@
 title: Configurare la mappatura dei metadati delle risorse tra Workfront e Experience Manager Assets
 description: Mappa i campi di metadati delle risorse tra le applicazioni Adobe Workfront e Experience Manager as a Cloud Service. Come risultato della mappatura dei campi di metadati, quando invii una risorsa da Workfront a Experience Manager Assets, puoi visualizzare i metadati della risorsa mappata in Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 3%
+source-wordcount: '1023'
+ht-degree: 4%
 
 ---
 
@@ -56,7 +56,7 @@ Per inviare l&#39;immagine da Workfront a Experience Manager Assets:
 
 1. Fai clic sull’icona Menu principale ![Mostra menu](assets/show-menu.svg) disponibile nell’angolo superiore destro dell’applicazione Adobe Workfront, quindi fai clic su **[!UICONTROL Progetti]**.
 
-1. Clic **[!UICONTROL Nuovo progetto]** per creare un nuovo progetto.
+1. Clic **[!UICONTROL Nuovo progetto]** per creare un progetto.
 
 1. Clic **[!UICONTROL Documenti]** opzione disponibile nel riquadro a sinistra, trascina e seleziona l’immagine da inviare a Experience Manager Assets.
 
@@ -82,7 +82,7 @@ Per configurare la mappatura dei metadati utilizzando un nuovo modulo metadati i
 
 1. Seleziona il modulo schema e fai clic su **[!UICONTROL Modifica]**.
 
-1. (Facoltativo) Nell’Editor modulo schema metadati, fai clic su `+` per creare una nuova scheda per i campi Workfront.
+1. (Facoltativo) Nell’Editor modulo schema metadati, fai clic su `+` per creare una scheda per i campi Workfront.
 
 1. Fai clic su **[!UICONTROL Genera modulo]** e trascinare il **[!UICONTROL Testo su riga singola]** al modulo. Fai clic sul componente nel modulo. In **[!UICONTROL Genera modulo]** scheda:
 
@@ -133,13 +133,13 @@ Puoi passare all’immagine in Experience Manager Assets e visualizzare i metada
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

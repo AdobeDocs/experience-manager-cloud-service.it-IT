@@ -2,10 +2,10 @@
 title: Creazione di contenuti di destinazione utilizzando la modalità di targeting
 description: La modalità di targeting e il componente Target forniscono gli strumenti per la creazione di contenuti per esperienze
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '5409'
-ht-degree: 99%
+source-wordcount: '5408'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ Per aggiungere un’attività:
 
    >[!NOTE]
    >
-   >Quando crei una nuova attività e disponi di una configurazione cloud di Adobe Target associata alla pagina o a una delle pagine principali, AEM assume automaticamente Adobe Target come motore.
+   >Quando crei un’attività e disponi di una configurazione cloud di Adobe Target associata alla pagina o a una delle pagine principali, l’AEM assume automaticamente Adobe Target come motore.
 
 1. Nel menu a comparsa del motore di **targeting**, seleziona il motore di targeting.
 

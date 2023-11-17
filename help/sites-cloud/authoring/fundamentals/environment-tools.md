@@ -2,10 +2,10 @@
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2164'
-ht-degree: 94%
+source-wordcount: '2163'
+ht-degree: 93%
 
 ---
 
@@ -120,7 +120,7 @@ Per aggiungere una risorsa alla pagina, selezionala e trascinala nella posizione
 
 * un componente esistente del tipo appropriato.
    * Ad esempio, puoi trascinare una risorsa di tipo immagine su un componente Immagine.
-* Un [segnaposto](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) nel sistema paragrafo per creare un nuovo componente di tipo appropriato.
+* A [segnaposto](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) nel sistema paragrafo per creare un componente del tipo appropriato.
    * Ad esempio, puoi trascinare una risorsa di tipo immagine nel sistema paragrafo per creare un componente Immagine.
 
 >[!NOTE]

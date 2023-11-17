@@ -2,9 +2,9 @@
 title: Estensione di ContextHub
 description: Definisci nuovi tipi di store e moduli ContextHub quando quelli forniti non soddisfano i requisiti della soluzione
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Nella maggior parte dei casi è necessario un solo candidato e la priorità può
 
 ## Creazione di tipi di moduli dell’interfaccia utente ContextHub {#creating-contexthub-ui-module-types}
 
-Creare tipi di moduli dell’interfaccia utente personalizzati quando [installato con ContextHub](sample-modules.md) non soddisfa le tue esigenze. Per creare un tipo di modulo interfaccia utente, crea un nuovo modulo di rendering dell’interfaccia utente estendendo il `ContextHub.UI.BaseModuleRenderer` e quindi registrarlo con `ContextHub.UI`.
+Creare tipi di moduli dell’interfaccia utente personalizzati quando [installato con ContextHub](sample-modules.md) non soddisfa le tue esigenze. Per creare un tipo di modulo UI, crea un modulo di rendering dell’interfaccia utente estendendo il `ContextHub.UI.BaseModuleRenderer` e quindi registrarlo con `ContextHub.UI`.
 
 Per creare un modulo di rendering dell’interfaccia utente, crea un `Class` oggetto contenente la logica per il rendering del modulo dell’interfaccia utente. Come minimo, la classe deve eseguire le azioni seguenti:
 

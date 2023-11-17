@@ -4,10 +4,10 @@ description: Scopri come creare e sincronizzare Live Copy per riutilizzare i con
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
-workflow-type: ht
-source-wordcount: '4308'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '4307'
+ht-degree: 99%
 
 ---
 
@@ -333,7 +333,7 @@ Per modificare il contenuto della Live Copy, puoi:
 
 >[!TIP]
 >
->Se crei manualmente una nuova pagina nella Live Copy, tale pagina per la Live Copy sarà locale, cioè non dispone di una pagina di origine corrispondente alla quale è associata.
+>Se crei manualmente una pagina nella Live Copy, la nuova pagina è locale rispetto alla Live Copy, ovvero non dispone di una pagina sorgente corrispondente alla quale è associata.
 >
 >Per poter creare una pagina locale che fa parte della relazione, è consigliabile creare la pagina locale nell’origine ed eseguire un rollout profondo. La pagina verrà creata localmente come Live Copy.
 

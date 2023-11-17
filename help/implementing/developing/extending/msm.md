@@ -1,13 +1,13 @@
 ---
 title: Estensione di Multi Site Manager
 description: Scopri come estendere le funzionalità di Multi Site Manager.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2435'
 ht-degree: 1%
 
 ---
-
 
 # Estensione di Multi Site Manager {#extending-the-multi-site-manager}
 
@@ -165,7 +165,7 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
 
 ### Creare la configurazione di rollout {#create-the-rollout-configuration}
 
-Per creare una nuova configurazione di rollout:
+Per creare una configurazione di rollout:
 
 1. Apri CRXDE Liti in `https://<host>:<port>/crx/de`.
 

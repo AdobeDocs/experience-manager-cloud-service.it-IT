@@ -4,10 +4,10 @@ description: Utilizza un’app React di esempio per scoprire come personalizzare
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 98%
+source-wordcount: '1040'
+ht-degree: 97%
 
 ---
 
@@ -105,7 +105,7 @@ Ora che hai aggiornato l’immagine del biker, vediamo come aggiungere nuovi con
 
 1. Seleziona il livello **Mtn Biking - Shoppable**.
 
-1. Per creare una nuova didascalia su questo pannello, devi creare un nuovo frammento di contenuto per opportunità di acquisto. Tocca o fai clic sul pulsante **+ Crea nuovo fragmento**.
+1. Per creare una chiamata in questo pannello, crea un frammento di contenuto per il momento dell’acquisto. Tocca o fai clic sul pulsante **+ Crea nuovo fragmento**.
 
    ![Aggiungere un’opportunità di acquisto](assets/do-not-localize/add-reference-1-5.png)
 

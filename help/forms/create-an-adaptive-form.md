@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2748'
-ht-degree: 97%
+source-wordcount: '2737'
+ht-degree: 94%
 
 ---
 
@@ -38,17 +38,17 @@ Prima di iniziare, scopri i tipi di componenti dei moduli disponibili:
 
 Per creare un modulo adattivo è necessario quanto segue:
 
-* **Abilitare i componenti core dei moduli adattivi per il tuo ambiente**: quando crei un nuovo programma, i componenti core dei moduli adattivi sono già abilitati per il tuo ambiente. Se disponi di un ambiente Forms as a Cloud Service basato sull’Archetipo 39 o versioni precedenti, consulta [Abilitare i componenti core dei moduli adattivi per il tuo ambiente](enable-adaptive-forms-core-components.md). Quando abiliti i componenti core per il tuo ambiente, vengono aggiunti il modello e l&#39;area di lavoro del **componente core moduli adattivi**. Se la tua versione dell’SDK di AEM è precedente alla 2023.02.0, [assicurati di aver abilitato il flag `prerelease` nel tuo ambiente ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features), poiché i componenti core dei moduli adattivi facevano parte della versione prerelease precedente alla versione 2023.02.0.
+* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: quando crei un programma, i Componenti core adattivi di Forms sono già abilitati per il tuo ambiente. Se disponi di un ambiente Forms as a Cloud Service basato sull’Archetipo 39 o versioni precedenti, consulta [Abilitare i componenti core dei moduli adattivi per il tuo ambiente](enable-adaptive-forms-core-components.md). Quando abiliti i componenti core per il tuo ambiente, vengono aggiunti il modello e l&#39;area di lavoro del **componente core moduli adattivi**. Se la tua versione dell’SDK di AEM è precedente alla 2023.02.0, [assicurati di aver abilitato il flag `prerelease` nel tuo ambiente ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features), poiché i componenti core dei moduli adattivi facevano parte della versione prerelease precedente alla versione 2023.02.0.
 
 * **Un modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto, mentre l’azione di invio definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Il Cloud Service fornisce un modello OOTB, denominato vuoto:
 
    * Il modello `blank` è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
    * È possibile installare il pacchetto di riferimento tramite Gestione pacchetti per aggiungere il `blank` modello al programma AEM Forms as a Cloud Service.
-   * È inoltre possibile [creare un nuovo modello di modulo adattivo (Componenti core)](template-editor.md) da zero.
+   * È inoltre possibile [creare un modello di Forms adattivo (componenti core)](template-editor.md) da zero.
 
 * **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti.  Il modello `Canvas` è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
-    * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
+    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
 * **Autorizzazioni**: aggiungi gli utenti a un gruppo [!DNL forms-users]. I membri del gruppo [!DNL forms-users] dispongono delle autorizzazioni per creare un modulo adattivo. Per un elenco dettagliato dei gruppi di utenti specifici per moduli, consulta [Gruppi e autorizzazioni](forms-groups-privileges-tasks.md).
 
@@ -117,13 +117,13 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 * **Autorizzazioni**: aggiungi gli utenti a [!DNL forms-users] per fornire loro le autorizzazioni per creare un modulo adattivo. Per un elenco dettagliato dei gruppi di utenti specifici dei moduli, consulta [Gruppi e autorizzazioni](forms-groups-privileges-tasks.md).
 
-* **Tema per modulo adattivo**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Puoi [creare un nuovo tema](themes.md) o [importare un tema esistente](import-export-forms-templates.md#uploading-a-theme). Puoi anche distribuire l’[archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) per alcuni temi campioni.
+* **Tema per modulo adattivo**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. È possibile [creare un tema](themes.md) o [importa un tema esistente](import-export-forms-templates.md#uploading-a-theme). Puoi anche distribuire l’[archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) per alcuni temi campioni.
 
 * **Modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto, mentre l’azione di invio definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Cloud Service supporta due tipi di modelli:
 
-   * **Modello modificabile**: puoi [creare un nuovo modello modificabile](template-editor.md) o [importare un modello modificabile esistente](migrate-to-forms-as-a-cloud-service.md). Puoi anche distribuire l’[archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=it#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) per ottenere alcuni modelli modificabili campioni.
+   * **Modello modificabile**: puoi [creare un](template-editor.md) o [importa un modello modificabile esistente](migrate-to-forms-as-a-cloud-service.md). Puoi anche distribuire l’[archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=it#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) per ottenere alcuni modelli modificabili campioni.
 
-   * **Modello statico**: si tratta di modelli legacy e sono consigliati solo se si esegue la migrazione da installazioni di AEM Forms On-Premise o Adobe Managed Services (AMS) (AEM Forms 6.5 o versioni precedenti). Consentono di continuare a sfruttare quanto hai già investito in modelli statici. Quando crei un nuovo modulo adattivo, utilizza un modello modificabile.
+   * **Modello statico**: si tratta di modelli legacy e sono consigliati solo se si esegue la migrazione da installazioni di AEM Forms On-Premise o Adobe Managed Services (AMS) (AEM Forms 6.5 o versioni precedenti). Consentono di continuare a sfruttare quanto hai già investito in modelli statici. Quando crei un modulo adattivo, utilizza un modello modificabile.
 
 
 ## Creare un modulo adattivo {#create-an-adaptive-form-foundation-components}
@@ -143,7 +143,7 @@ Per creare un modulo adattivo è necessario quanto segue:
      >
      > Puoi anche creare un modello di [!UICONTROL Documento record] tramite un editor di moduli adattivi. Per ulteriori informazioni, consulta [Supporto per documenti di record nell’editor di moduli adattivi](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
-   * Quando selezioni un modello statico, le opzioni di dati, stile, invio, consegna e anteprima non sono disponibili. Quando crei un nuovo modulo adattivo, utilizza un modello modificabile.
+   * Quando selezioni un modello statico, le opzioni di dati, stile, invio, consegna e anteprima non sono disponibili. Durante la creazione di un modulo adattivo, si consiglia di utilizzare un modello modificabile.
 
 1. Nella scheda **[!UICONTROL Stile]**, seleziona un tema:
 

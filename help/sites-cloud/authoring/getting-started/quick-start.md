@@ -2,9 +2,9 @@
 title: Guida rapida all’authoring delle pagine
 description: Guida rapida di alto livello per iniziare a creare i contenuti di una pagina
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 90%
 
 ---
@@ -76,7 +76,7 @@ Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseg
 
 ### Creazione di una nuova pagina {#creating-a-new-page}
 
-Per [creare una nuova pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+A [creare una pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. [Passa alla posizione in cui desideri creare la nuova pagina.](#finding-your-page)
 1. Utilizza l’icona **Crea** e seleziona **Pagina** dall’elenco:

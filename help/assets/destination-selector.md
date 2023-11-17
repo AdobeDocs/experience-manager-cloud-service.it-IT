@@ -3,13 +3,13 @@ title: Selettore di destinazione per AEM as a Cloud Service
 description: Utilizza il selettore di destinazione AEM per mostrare e selezionare le risorse da utilizzare come copia della risorsa originale.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
+exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1906'
 ht-degree: 36%
 
 ---
-
 
 # Selettore di destinazione micro front-end {#Overview}
 
@@ -212,7 +212,7 @@ Puoi definire il Selettore di destinazione [proprietà](#destination-selector-pr
 
 ### Esempio 1: creare una cartella nel selettore di destinazione
 
-Il selettore delle destinazioni consente di creare una nuova cartella per caricare, spostare o copiare le risorse nella posizione specifica.
+Il selettore di destinazione consente di creare una cartella per caricare, spostare o copiare le risorse nella posizione specifica.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -261,7 +261,7 @@ Il selettore di destinazione consente inoltre di visualizzare i dati dell’arch
 
 ### Crea una nuova cartella {#create-new-folder}
 
-Ti consente di creare una nuova cartella nella cartella di destinazione del [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+Ti consente di creare una cartella nella cartella di destinazione del [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### Tipi di visualizzazione {#types-of-view}
 

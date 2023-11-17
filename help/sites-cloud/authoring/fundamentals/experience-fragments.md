@@ -2,9 +2,9 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2043'
 ht-degree: 99%
 
 ---
@@ -279,7 +279,7 @@ Puoi selezionare uno o più componenti per creare un blocco predefinito da riuti
 
 ### Creazione di un blocco predefinito {#creating-a-building-block}
 
-Per creare un nuovo blocco predefinito:
+Per creare un blocco predefinito:
 
 1. Nell’editor Frammento di esperienza, seleziona i componenti da riutilizzare:
 

@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4344'
 ht-degree: 11%
 
 ---
@@ -31,7 +31,7 @@ Quando si organizza una raccolta di risorse, ad esempio, tutti `Nature` immagini
 >* Condivisione di una cartella di risorse di tipo `sling:OrderedFolder`, non è supportato quando si condivide con Experience Cloud. Se desideri condividere una cartella, non selezionare [!UICONTROL Ordinato] durante la creazione di una cartella.
 >* L’Experience Manager non consente l’utilizzo di `subassets` word come nome di una cartella. È una parola chiave riservata ai nodi che contengono risorse secondarie per le risorse composte
 
-1. Passa alla posizione nella cartella delle risorse digitali in cui desideri creare una nuova cartella. Nel menu, fai clic su **[!UICONTROL Crea]**. Seleziona **[!UICONTROL Nuova cartella]**.
+1. Passa alla posizione nella cartella delle risorse digitali in cui desideri creare una cartella. Nel menu, fai clic su **[!UICONTROL Crea]**. Seleziona **[!UICONTROL Nuova cartella]**.
 1. In **[!UICONTROL Titolo]** , inserisci un nome per la cartella. Per impostazione predefinita, DAM utilizza il titolo fornito come nome della cartella. Una volta creata la cartella, puoi sovrascrivere l’impostazione predefinita e specificare un altro nome di cartella.
 1. Fai clic su **[!UICONTROL Crea]**. La cartella viene visualizzata nella cartella delle risorse digitali.
 
@@ -54,7 +54,7 @@ Per estrarre i file ZIP, effettuare le seguenti operazioni:
 1. Fai clic su **[!UICONTROL Estrai archivio]** disponibile sulla barra delle azioni.
 1. Seleziona la cartella in cui salvare le risorse estratte disponibili nella cartella compressa.
 1. Fai clic su **[!UICONTROL Avanti]**.
-1. Seleziona il comportamento appropriato per gestire i conflitti di nome file durante l’estrazione. Puoi scegliere di creare una nuova versione di una risorsa esistente, sostituirla, mantenere entrambe le risorse nella cartella di destinazione o saltare l’estrazione della nuova risorsa.
+1. Seleziona il comportamento appropriato per gestire i conflitti di nome file durante l’estrazione. Puoi scegliere di creare una versione di una risorsa esistente, sostituirla, mantenere entrambe le risorse nella cartella di destinazione o saltare l’estrazione della nuova risorsa.
 1. Clic **[!UICONTROL Extract]**. Il processo di estrazione ZIP viene avviato. Una volta completato il processo, puoi visualizzare le risorse estratte nella cartella di destinazione.
 
    ![estrazione zip](assets/zip-extraction.png)

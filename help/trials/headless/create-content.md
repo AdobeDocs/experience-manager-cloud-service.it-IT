@@ -4,10 +4,10 @@ description: Utilizza il modello Frammento di contenuto creato in precedenza per
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 93%
+source-wordcount: '701'
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 93%
 
 I frammenti di contenuto rappresentano il contenuto headless dell’utente e si basano su strutture predefinite, denominate modelli di frammenti di contenuto. Hai già creato un modello in un modulo precedente.
 
-In questo modulo viene creato un nuovo frammento di contenuto basato su tale modello, utilizzando la console Frammenti di contenuto. Considera la console Frammenti di contenuto come una libreria di contenuti headless. Utilizzala per creare nuovi frammenti di contenuto e gestire i frammenti esistenti.
+In questo modulo, puoi creare un Frammento di contenuto basato su tale modello utilizzando la console Frammento di contenuto. Considera la console Frammenti di contenuto come una libreria di contenuti headless. Utilizzala per creare nuovi frammenti di contenuto e gestire i frammenti esistenti.
 
 La console Frammenti di contenuto viene utilizzata per creare e modificare contenuti headless tra canali di distribuzione e indipendentemente dal contesto, che in molti casi può essere il metodo più efficace per l’authoring. In un modulo successivo esploreremo la modifica di contenuti headless nel contesto e sul posto.
 

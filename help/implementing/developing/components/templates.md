@@ -2,10 +2,10 @@
 title: Modelli di pagina
 description: I Modelli di pagina vengono utilizzati durante la creazione di una pagina utilizzata come base per la nuova pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3291'
-ht-degree: 5%
+source-wordcount: '3287'
+ht-degree: 8%
 
 ---
 
@@ -40,7 +40,7 @@ Questo documento:
 
 La creazione di modelli di pagina viene eseguita principalmente con [console modelli ed editor modelli](/help/sites-cloud/authoring/features/templates.md) da un autore di modelli. Questa sezione offre una panoramica di questo processo e segue con una descrizione di ciò che accade a livello tecnico.
 
-Quando crei un nuovo modello modificabile:
+Quando viene creato un nuovo modello modificabile:
 
 1. Creare un [cartella per i modelli](#template-folders). Questo non è obbligatorio, ma è una best practice consigliata.
 1. Seleziona un [tipo di modello](#template-type). Viene copiato per creare [definizione modello](#template-definitions).
@@ -55,7 +55,7 @@ Quando crei un nuovo modello modificabile:
 
    * La struttura ti consente di definire componenti e contenuti per il modello.
    * I componenti definiti nella struttura del modello non possono essere spostati in una pagina risultante né eliminati dalle pagine risultanti.
-   * Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema paragrafo al modello.
+   * Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema di paragrafi al modello.
    * I componenti possono essere sbloccati e bloccati di nuovo per consentire di definire il contenuto iniziale.
 
    Per informazioni dettagliate su come un autore di modelli definisce la struttura, consulta [Creazione di modelli di pagina](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -66,7 +66,7 @@ Quando crei un nuovo modello modificabile:
 
    * I criteri per contenuto definiscono le proprietà di progettazione di un componente.
 
-      * Ad esempio, i componenti disponibili o le dimensioni minima/massima.
+      * Ad esempio, i componenti disponibili o le dimensioni minime/massime.
 
    * Sono applicabili al modello (e alle pagine create con il modello).
 
@@ -103,7 +103,7 @@ Quando crei un nuovo modello modificabile:
 
 1. Utilizzala per creare pagine di contenuto.
 
-   * Quando si utilizza un modello per creare una nuova pagina, non vi è alcuna differenza visibile né indicazione tra modelli statici e modificabili.
+   * Quando si utilizza un modello per creare una pagina, non vi è alcuna differenza visibile né indicazione tra modelli statici e modificabili.
    * Per l’autore della pagina, il processo è trasparente.
 
    Per informazioni dettagliate su come un autore di pagine utilizza i modelli per creare una pagina, consulta [Creazione e organizzazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -141,11 +141,11 @@ Per organizzare i modelli è possibile utilizzare le cartelle seguenti:
 >
 >Anche se è possibile nidificare le cartelle, quando l’utente le visualizza in **Modelli** console sono presentati come una struttura piatta.
 
-In un caso di AEM standard, la `global` La cartella esiste già nella console dei modelli. Questa contiene i modelli predefiniti e funge da fallback se nella cartella corrente non sono presenti criteri e/o tipi di modello. Puoi aggiungere i modelli predefiniti a questa cartella o crearne una nuova (scelta consigliata).
+In un caso di AEM standard, la `global` La cartella esiste già nella console dei modelli. Questa contiene i modelli predefiniti e funge da fallback se nella cartella corrente non sono presenti criteri e/o tipi di modello. Puoi aggiungere i modelli predefiniti a questa cartella o crearne una (scelta consigliata).
 
 >[!NOTE]
 >
->È consigliabile creare una nuova cartella in cui inserire i modelli personalizzati e non utilizzare `global` cartella.
+>È consigliabile creare una cartella in cui inserire i modelli personalizzati e non utilizzare `global` cartella.
 
 >[!CAUTION]
 >
@@ -161,7 +161,7 @@ I tipi di modello e i criteri vengono ereditati in tutte le cartelle in base al 
 
 Viene creato un elenco di tutte le voci consentite. Se le configurazioni si sovrappongono ( `path`/ `label`), viene presentata all’utente solo l’istanza più vicina alla cartella corrente.
 
-Per creare una nuova cartella, puoi effettuare le seguenti operazioni:
+Per creare una cartella, puoi effettuare le seguenti operazioni:
 
 * A livello di programmazione o con CRXDE Liti
 * Utilizzo di [Browser configurazioni](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
@@ -425,7 +425,7 @@ Questo nodo contiene le proprietà per il modello:
 
 * **Nome**: `jcr:title`
 * **Nome**: `status`
-   * &quot;**Tipo**: `String`
+   * ``**Tipo**: `String`
    * **Valore**: `draft`, `enabled` o `disabled`
 
 ### Struttura {#structure}
@@ -459,7 +459,7 @@ Quando [modifica di un modello è possibile definire il layout](/help/sites-clou
 
 ### Criteri per contenuto {#content-policies}
 
-I criteri per contenuto definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello). I criteri per i contenuti possono essere creati e selezionati nell’editor modelli.
+I criteri per contenuto definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minime/massime. Sono applicabili al modello (e alle pagine create con il modello). I criteri per i contenuti possono essere creati e selezionati nell’editor modelli.
 
 * La proprietà `cq:policy`, sulla `root` nodo
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`

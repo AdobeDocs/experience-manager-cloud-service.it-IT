@@ -2,9 +2,9 @@
 title: Creazione e gestione di visualizzazioni in Schermi as a Cloud Service
 description: Questa pagina descrive come creare e gestire le visualizzazioni in Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '657'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ Puoi passare dalla barra delle cartelle alla visualizzazione di tutte le cartell
 
 1. Seleziona **Nascondi cartelle** per chiuderlo di nuovo.
 
-## Come creare una nuova cartella {#create-folder}
+## Come creare una cartella {#create-folder}
 
 Puoi creare cartelle per organizzare meglio le visualizzazioni.
 
@@ -86,7 +86,7 @@ Puoi creare cartelle per organizzare meglio le visualizzazioni.
 
    ![immagine](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## Come creare una nuova cartella nidificata {#nested-folder}
+## Come creare una cartella nidificata {#nested-folder}
 
 1. Passare alla visualizzazione delle scorte.
 

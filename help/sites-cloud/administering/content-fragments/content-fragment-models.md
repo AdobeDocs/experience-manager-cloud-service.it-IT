@@ -4,9 +4,9 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3061'
+source-wordcount: '3060'
 ht-degree: 60%
 
 ---
@@ -355,7 +355,7 @@ Specifica un percorso radice per tutti i frammenti a cui si fa riferimento.
 
 * **Consenti creazione di frammenti**
 
-  Questo consente all’autore del frammento di creare un nuovo frammento basato sul modello appropriato.
+  Questo consente all’autore del frammento di creare un frammento basato sul modello appropriato.
 
    * **fragmentreferencecomposite**: consente all’autore del frammento di creare un elemento composito selezionando più frammenti
 

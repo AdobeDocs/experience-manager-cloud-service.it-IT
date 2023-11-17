@@ -3,9 +3,9 @@ title: Supporto dei frammenti di contenuto di Adobe Experience Manager as a Clou
 description: Scopri il supporto per i frammenti di contenuto nell’API Assets HTTP di, un elemento importante della funzione di distribuzione headless di Adobe Experience Manager.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1791'
 ht-degree: 13%
 
 ---
@@ -263,7 +263,7 @@ L’utilizzo può variare a seconda che si utilizzi un ambiente di authoring o p
 
 Esistono alcune limitazioni:
 
-* **I modelli per frammenti di contenuto non sono attualmente supportati**: non possono essere letti o creati. Per poter creare un nuovo frammento di contenuto o aggiornarne uno esistente, gli sviluppatori devono conoscere il percorso corretto del modello per frammenti di contenuto. Attualmente, l’unico metodo per ottenere una panoramica di questi è tramite l’interfaccia utente di amministrazione.
+* **I modelli per frammenti di contenuto non sono attualmente supportati**: non possono essere letti o creati. Per poter creare o aggiornare un frammento di contenuto esistente, gli sviluppatori devono conoscere il percorso corretto del modello per frammenti di contenuto. Attualmente, l’unico metodo per ottenere una panoramica di questi è tramite l’interfaccia utente di amministrazione.
 * **I riferimenti vengono ignorati**. Al momento non sono presenti controlli per verificare se viene fatto riferimento a un frammento di contenuto esistente. Pertanto, ad esempio, l’eliminazione di un frammento di contenuto potrebbe causare problemi in una pagina che contiene un riferimento al frammento di contenuto eliminato.
 * **Tipo di dati JSON** L’output REST API di *Tipo di dati JSON* è *output basato su stringhe*.
 
