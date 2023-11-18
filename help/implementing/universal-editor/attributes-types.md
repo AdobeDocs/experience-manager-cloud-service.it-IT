@@ -2,10 +2,10 @@
 title: Attributi e tipi
 description: Scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 88%
+source-wordcount: '682'
+ht-degree: 81%
 
 ---
 
@@ -32,7 +32,7 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 | `data-editor-itemfilter` | Definisce quali riferimenti possono essere utilizzati |
 | `data-editor-itemlabel` | Definisce un’etichetta personalizzata per un elemento selezionabile visualizzato nell’editor. <br>Nel caso in cui`itemmodel` sia impostata, l’etichetta viene recuperata tramite il modello. |
 | `data-editor-itemmodel` | Definisce un modello che viene utilizzato per la modifica basata su modulo nella barra delle proprietà |
-| `data-editor-behavior` | Definisce il comportamento di una strumentazione, ad esempio testo o immagini indipendenti possono anche imitare un componente per renderlo mobile o eliminabile. |
+| `data-editor-behavior` | Definisce il comportamento di una strumentazione, ad esempio un testo o un&#39;immagine isolati possono simulare un componente per renderlo spostabile o eliminabile |
 
 ## Tipi di elementi {#item-types}
 
@@ -43,7 +43,7 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 | `media` | L’elemento modificabile è una risorsa, ad esempio immagine o video | Facoltativo | Obbligatorio | Facoltativo<br>elenco di criteri di filtro per immagini o video trasmessi al selettore risorse | Facoltativo | n/d | Facoltativo |
 | `container` | L’elemento modificabile si comporta come contenitore per i componenti, cioè come Sistema paragrafo. | Dipende <br>vedi sotto | Dipende <br>vedi sotto | Facoltativo<br>un elenco di componenti consentiti | Facoltativo | n/d | n/d |
 | `component` | L’elemento modificabile è un componente. Non aggiunge ulteriori funzionalità. È necessario per indicare parti mobili/eliminabili del DOM e per aprire la barra delle proprietà e i relativi campi | Obbligatorio | n/d | n/d | Facoltativo | Facoltativo | n/d |
-| `reference` | L’elemento modificabile è un riferimento, ad esempio frammento di contenuto, frammento di esperienza o prodotto. | Dipende <br>vedi sotto | Dipende <br>vedi sotto | Facoltativo<br>elenco di criteri di filtro per frammento di contenuto, prodotto o frammento di esperienza trasmessi al selettore di riferimento | Facoltativo | Facoltativo | n/d |
+| `reference` | L’elemento modificabile è un riferimento, ad esempio Frammento di contenuto, Frammento di esperienza o Prodotto | Dipende <br>vedi sotto | Dipende <br>vedi sotto | Facoltativo<br>elenco di criteri di filtro per frammento di contenuto, prodotto o frammento di esperienza trasmessi al selettore di riferimento | Facoltativo | Facoltativo | n/d |
 
 A seconda del caso d’uso `itemprop` o `itemid` può essere richiesto o meno. Ad esempio:
 

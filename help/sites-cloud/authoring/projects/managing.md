@@ -2,10 +2,10 @@
 title: Gestione dei progetti
 description: Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità, accessibile e gestibile nella console dedicata
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 84%
+source-wordcount: '875'
+ht-degree: 82%
 
 ---
 
@@ -38,7 +38,7 @@ La procedura di creazione di un progetto è la stessa per ciascun progetto. La d
 
    ![Creazione di un progetto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Definisci un **titolo** e una **descrizione**; se necessario, aggiungi un’immagine di **miniatura**. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
+1. Definisci il **Titolo** e **Descrizione** e aggiungi **Miniatura** immagine, se necessario. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
 
    ![Aggiunta di dettagli al progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -138,7 +138,7 @@ Per rendere un progetto inattivo (o attivo):
    Potrebbe essere necessario aggiungere questo riquadro, se non è già presente nel progetto. Consulta [Aggiunta di riquadri](#adding-items-to-a-tile).
 
 1. Seleziona **Modifica**.
-1. Modifica il selettore passando da **Attivo** a **Inattivo** (o viceversa).
+1. Cambia il selettore da **Attivo** a **Inattivo** (o viceversa).
 
    ![Attivazione di un progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 

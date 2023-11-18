@@ -2,10 +2,10 @@
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2158'
-ht-degree: 90%
+source-wordcount: '2161'
+ht-degree: 87%
 
 ---
 
@@ -189,7 +189,7 @@ Facendo clic sul componente, questo verrà evidenziato nell’editor pagina. Le 
 
   I componenti di una pagina di base avranno le consuete opzioni.
 
-  Se il componente su cui fai clic nella struttura ad albero è modificabile, a destra del nome compare un’icona a forma di chiave inglese. Facendo clic su questa icona si apre direttamente la finestra di dialogo di modifica del componente.
+  Se il componente su cui fai clic nella struttura ad albero è modificabile, a destra del nome compare un’icona a forma di chiave inglese. Facendo clic su questa icona si avvia la finestra di dialogo di modifica del componente.
 
   ![Pulsante modifica Struttura contenuto](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -288,7 +288,7 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* A seconda delle caratteristiche della pagina, alcune modalità potrebbero non essere disponibili.
 >* L’accesso ad alcune modalità richiede le autorizzazioni/i privilegi appropriati.
 >* La modalità Sviluppatore non è disponibile sui dispositivi mobili a causa di restrizioni di spazio.
->* La [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
+>* È presente un [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) per passare da **Anteprima** e la modalità attualmente selezionata (ad esempio, **Modifica**, **Layout** e così via).
 >
 
 ## Selezione del percorso {#path-selection}
@@ -315,10 +315,10 @@ Il browser Percorsi è organizzato come la [vista a colonne](/help/sites-cloud/a
 
 ![Browser Percorsi](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Una volta selezionata una risorsa, il pulsante **Seleziona** in alto a destra nella finestra di dialogo diventa attivo. Seleziona per confermare la selezione o **Annulla** per interrompere.
+* Una volta selezionata una risorsa, **Seleziona** in alto a destra nella finestra di dialogo diventa attivo. Seleziona per confermare la selezione o **Annulla** per interrompere.
 * Se il contesto consente la selezione di più risorse, la scelta di una risorsa attiva anche il pulsante **Seleziona**, ma aggiunge anche un conteggio del numero di risorse selezionate nella parte superiore destra della finestra. Per deselezionare tutti gli elementi, fai clic sulla **X** accanto al numero.
 * Quando ti sposti nella struttura, la posizione si riflette nelle breadcrumb nella parte superiore della finestra di dialogo. Queste breadcrumb possono essere utilizzate anche per passare rapidamente all’interno della gerarchia delle risorse.
-* In qualsiasi momento puoi utilizzare il campo di ricerca nella parte superiore della finestra di dialogo. Fai clic su **X** nel campo di ricerca per cancellare la ricerca.
+* In qualsiasi momento è possibile utilizzare il campo di ricerca nella parte superiore della finestra di dialogo. Fai clic su **X** nel campo di ricerca per cancellare la ricerca.
 * Per limitare l’ambito della ricerca, puoi visualizzare le opzioni filtro e filtrare il risultato in base a un determinato percorso.
 
   ![Opzione Filtri](/help/sites-cloud/authoring/assets/filters-option.png)

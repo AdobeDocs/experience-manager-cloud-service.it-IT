@@ -4,7 +4,7 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 59%
@@ -202,7 +202,7 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 Sono disponibili varie opzioni per realizzare o riprodurre il campo in un frammento. Spesso questo consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze.
 
 * **Etichetta campo**
-Inserimento di un **Etichetta campo** genera automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente se necessario.
+Inserimento di un **Etichetta campo** genera automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente, se necessario.
 
 * **Convalida**
 La convalida di base è disponibile tramite meccanismi quali la proprietà **Obbligatorio**. Alcuni tipi di dati dispongono di campi di convalida aggiuntivi. Vedi [Convalida](#validation) per ulteriori dettagli.

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2314'
 ht-degree: 3%
 
 ---
@@ -53,7 +53,7 @@ Attualmente, le variabili LESS vengono definite solo per queste proprietà dei v
 
 ## Modifica dello stile del componente {#changing-component-style}
 
-Potete apportare modifiche all&#39;aspetto, al layout, al posizionamento e alla visibilità degli elementi. Per eseguire questa operazione, crea o aggiorna i file .css personalizzati per includere i costrutti di stile elencati in questo articolo.
+Potete modificare l&#39;aspetto, il layout, il posizionamento e la visibilità degli elementi. Per eseguire questa operazione, crea o aggiorna i file .css personalizzati per includere i costrutti di stile elencati in questo articolo.
 
 Per applicare uno stile a un modulo adattivo, apri il modulo adattivo in per la modifica, apri le proprietà del contenitore Modulo adattivo e specifica il percorso del file CSS personalizzato nella scheda di base. Costrutti di stile predefiniti del modulo adattivo e sostituiti con i costrutti elencati nel file .css personalizzato.
 

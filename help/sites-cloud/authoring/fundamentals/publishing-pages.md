@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Scopri come pubblicare e annullare la pubblicazione delle pagine utilizzando vari meccanismi in AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 92%
+source-wordcount: '1805'
+ht-degree: 91%
 
 ---
 
@@ -66,7 +66,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
    * La pagina viene pubblicata direttamente, se non sono presenti riferimenti da pubblicare.
    * Se la pagina include riferimenti da pubblicare, questi sono elencati nella procedura guidata di **Pubblicazione**, dove è possibile:
-      * Specifica le risorse, i tag ecc. da pubblicare insieme alla pagina, quindi seleziona **Pubblica** per completare il processo.
+      * Specifica le risorse, i tag e così via, da pubblicare insieme alla pagina, quindi utilizza **Pubblica** per completare il processo.
       * Seleziona **Annulla** per annullare l’azione.
 
    ![Pubblicazione di riferimenti alla pagina](/help/sites-cloud/authoring/assets/publishing-references.png)

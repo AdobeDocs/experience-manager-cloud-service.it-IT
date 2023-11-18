@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2020.11.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2020.11.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.11.0 as a Cloud Service."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 17%
+source-wordcount: '1262'
+ht-degree: 19%
 
 ---
 
@@ -52,7 +52,7 @@ La seguente versione (2020.12.0) sarà del 17 dicembre 2020
    * Quando si seleziona una cella della griglia dalla griglia presente nella pagina, lo stato attivo si sposta sulla barra delle azioni visualizzata sullo schermo.
    * Gli utenti visivi possono distinguere tra testo normale e un collegamento, in quanto vengono visualizzati indizi visivi (sottolineatura e icona con freccia) per i collegamenti a tutte le soluzioni in [!DNL Experience Manager] home page.
 
-* **Predefiniti per set di batch in Dynamic Media**: ora puoi automatizzare la creazione e l’organizzazione di più risorse in un set di immagini o set 360 gradi al momento di caricare i file di risorse in una cartella singolarmente o utilizzando l’acquisizione in blocco.
+* **Predefiniti per set di batch in Dynamic Medie**: ora puoi automatizzare la creazione e l’organizzazione di più risorse in un set di immagini o set 360 gradi al momento di caricare i file di risorse in una cartella singolarmente o utilizzando l’acquisizione in blocco.
 
   Consulta [Predefiniti per set di batch](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
@@ -62,7 +62,7 @@ La seguente versione (2020.12.0) sarà del 17 dicembre 2020
    * Gli utenti possono visualizzare la finestra di dialogo del collegamento e-mail utilizzando `Tab` chiave.
    * Il flusso di lavoro per la creazione di profili di codifica video è più semplice da usare, grazie al miglioramento apportato all’assistente vocale.
    * Durante la navigazione tramite `Tab` principale, lo stato attivo si sposta sugli elementi appropriati dell’interfaccia utente nel flusso di lavoro per creare un video interattivo.
-   * Le pagine Pubblica, Modifica risorsa, Modifica ritagli avanzati e Editor set di immagini sono state migliorate per rispettare gli standard web. Gli utenti di Assistive Technology (AT) ora possono navigare facilmente in queste pagine e intraprendere azioni quali il ritaglio di immagini.
+   * Le pagine Pubblica, Modifica risorsa, Modifica ritagli avanzati e Editor set di immagini sono state migliorate per rispettare gli standard web. Gli utenti di Assistive Technology (AT) ora possono navigare facilmente in queste pagine e agire su di esse, ad esempio ritagliando immagini.
    * I visualizzatori sono stati migliorati per consentire agli utenti di navigare utilizzando una tastiera.
    * Gli utenti che utilizzano la tastiera e l’assistente vocale possono utilizzare la funzionalità di ritaglio.
    * Gli utenti che utilizzano la tastiera possono gestire meglio gli hotspot.
@@ -73,9 +73,9 @@ La seguente versione (2020.12.0) sarà del 17 dicembre 2020
 
 ### Novità {#what-is-new-commerce}
 
-* È stato rilasciato il sito di riferimento CIF Venia (2020.11.05), che include la versione più recente dei Componenti Core CIF v1.5.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) per ulteriori dettagli.
+* È stato rilasciato il sito di riferimento CIF Venia (2020.11.05), che include la versione più recente dei Componenti core CIF v1.5.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) per ulteriori dettagli.
 
-* È stata rilasciata la versione 1.5.0 dei componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) per ulteriori dettagli.
+* È stata rilasciata la versione 1.5.0 dei Componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) per ulteriori dettagli.
 
 ### Correzioni di bug {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2020.11.0 è
 ### Novità in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Una nuova opzione di menu **Accesso locale** è ora disponibile per gli utenti dalle opzioni di menu dell’ambiente sulla **Ambienti** scheda e **Ambienti** pagine di riepilogo.
-Consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md#login-locally) per ulteriori dettagli.
+Per ulteriori dettagli, consulta la [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md#login-locally).
 
 * La scheda **Scopri** in Cloud Manager è stata aggiornata aggiungendo nuove immagini nell’interfaccia utente.
 
@@ -99,7 +99,7 @@ Consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-envir
 * Il caricamento delle dipendenze eseguito prima dell’esecuzione della build richiedeva di scaricare un plug-in Maven.
 * Ora il collegamento per selezionare una lingua dal piè di pagina di Cloud Manager reindirizza alla posizione corretta.
 * A volte, durante la scansione del codice, il processo SonarQube non veniva avviato. Ora questo errore viene rilevato automaticamente e viene eseguito un tentativo di riavvio.
-* Tutte le pipeline di produzione esistenti vengono abilitate automaticamente con il passaggio Audit dell’esperienza.
+* Ora tutte le pipeline di produzione esistenti sono attivate automaticamente con il passaggio Audit dell’esperienza.
 
 ## Fondamenti di Adobe Experience Manager as a Cloud Service {#cloud-service-foundation}
 

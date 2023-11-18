@@ -2,10 +2,10 @@
 title: Ricerca
 description: Individua il contenuto più velocemente con funzionalità complete di ricerca
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -41,7 +41,7 @@ Per cercare e filtrare le risorse:
 
    ![Ricerca per posizione](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Se necessario, puoi rimuovere il filtro posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire la ricerca in tutte le console e i tipi di risorse.
+1. Se necessario, puoi rimuovere il filtro di posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire ricerche su tutte le console/i tipi di risorse.
 1. I risultati visualizzati vengono raggruppati in base alla console e al tipo di risorsa corrispondente.
 
    Puoi selezionare una risorsa specifica (sulla quale eseguire ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio **Visualizza tutti i siti**:

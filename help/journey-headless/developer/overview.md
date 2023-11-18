@@ -3,10 +3,10 @@ title: Percorso per sviluppatori CMS headless di AEM
 description: Scopri lo sviluppo headless utilizzando Adobe Experience Manager (AEM) come un CMS headless. Scopri come utilizzare funzioni quali Modelli di contenuto, Frammenti di contenuto e un’API GraphQL per fornire contenuti headless.
 landing-page-description: Scopri la distribuzione e l’implementazione headless dei contenuti. Ulteriori informazioni sullo sviluppo della strategia all’interno dell’azienda.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 97%
+source-wordcount: '1095'
+ht-degree: 95%
 
 ---
 
@@ -28,11 +28,11 @@ Scopri le funzioni headless potenti e flessibili, le loro funzionalità e come u
 
 L’implementazione headless di AEM utilizza modelli di frammenti di contenuto e frammenti di contenuto per concentrarsi sulla creazione di frammenti di contenuto strutturati, neutri rispetto ai canali e riutilizzabili e sulla loro distribuzione cross-channel. A questo scopo, dimentica la gestione delle pagine e dei componenti come avviene nelle soluzioni stack complete. Si tratta di un modello di sviluppo dinamico e moderno per implementare esperienze digitali.
 
-Questa guida ti orienta attraverso gli argomenti di implementazione headless in AEM, così al termine:
+Questa guida illustra gli argomenti relativi all’implementazione headless in AEM, per consentirti di:
 
 * Comprenderai appieno cosa è la distribuzione di contenuti headless e i relativi vantaggi.
 * Scoprirai le funzioni headless di AEM e come funzionano insieme per offrire un’esperienza headless.
-* Avrai la possibilità di compiere i primi passi per implementare il primo progetto headless di AEM.
+* Passa ai primi passaggi per implementare il primo progetto headless AEM.
 
 >[!TIP]
 >

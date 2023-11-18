@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1329'
-ht-degree: 83%
+source-wordcount: '1326'
+ht-degree: 82%
 
 ---
 
@@ -157,7 +157,7 @@ Congratulazioni! Hai completato il percorso di traduzione AEM Sites. Ora dovrest
 
 * Conoscere le funzioni di base di gestione dei contenuti di AEM.
 * Comprendere le funzioni di traduzione di AEM e in che modo si relazionano al contenuto dei siti.
-* Avere la possibilità di iniziare a tradurre i propri contenuti.
+* Siate pronti a tradurre i vostri contenuti.
 
 Ora puoi tradurre i contenuti in AEM. Tuttavia AEM è uno strumento potente e ci sono molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 

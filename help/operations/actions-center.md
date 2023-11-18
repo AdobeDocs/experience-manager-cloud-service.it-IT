@@ -2,10 +2,10 @@
 title: Centro azioni
 description: Sfruttare il Centro operativo per intervenire in modo comodo in caso di incidenti e altre informazioni importanti
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 93%
+ht-degree: 79%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 AEM as a Cloud Service invia notifiche e-mail del Centro azioni quando si verificano incidenti critici che richiedono un’azione immediata, e consigli proattivi per le ottimizzazioni. Gli esempi includono una coda bloccata o un set di credenziali in scadenza; il set completo dei tipi di notifica del Centro azioni può essere visualizzato nella [tabella seguente](#supported-notification-types), che verrà ampliata nel tempo.
 
-Quando viene ricevuta una notifica e-mail del Centro azioni, è possibile fare clic su di essa per aprire il Centro azioni di AEM as a Cloud Service con una finestra a comparsa, nella quale viene mostrato un contesto aggiuntivo che spiega al cliente l’azione da intraprendere.
+Quando viene ricevuta una notifica e-mail del Centro azioni, è possibile fare clic su di essa per aprire il Centro azioni di AEM as a Cloud Service con un pop-up contenente un contesto aggiuntivo che spiega l’azione che un cliente deve intraprendere.
 
 Oltre a visualizzare informazioni sulla notifica e-mail appena cliccata, il Centro azioni funge da hub dove è possibile visualizzare e gestire il set di notifiche attuali e precedenti. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -35,7 +35,7 @@ Per configurare la ricezione delle notifiche e-mail del Centro azioni, crea i pr
 
 ## Flusso utente dettagliato {#detailed-user-flow}
 
-Facendo clic sull’e-mail si accede al Centro azioni, con una finestra a comparsa che mostra il contesto per la notifica su cui hai fatto clic e, in alcuni casi, collegamenti a informazioni aggiuntive che descrivono come intraprendere un’azione correttiva. Puoi anche accedere al Centro operativo direttamente da [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), dove è possibile selezionare il programma e l’ambiente pertinenti.
+Facendo clic sull’e-mail si accede al Centro azioni, con un pop-up che mostra il contesto della notifica su cui si è fatto clic e, in alcuni casi, collegamenti a informazioni aggiuntive che descrivono come intraprendere azioni correttive. Puoi anche accedere al Centro operativo direttamente da [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), dove è possibile selezionare il programma e l’ambiente pertinenti.
 
 ![Dettagli problema](/help/operations/assets/incident-details.png)
 
@@ -45,7 +45,7 @@ Nel Centro azioni è disponibile un elenco di altre notifiche recenti. È consig
 
 ![Elenco notifiche](/help/operations/assets/notification-list.png)
 
-Nella maggior parte dei casi, la finestra a comparsa dovrebbe fornire tutto il contesto necessario per risolvere il problema. Tuttavia, se hai bisogno di porre domande al supporto Adobe, puoi fare clic sul collegamento **Contatta supporto** nel popup di notifica. Viene visualizzato un modulo dal quale è possibile descrivere la domanda e inviarla per creare un ticket di supporto, che includerà anche un riferimento alla notifica specifica in modo che un tecnico del supporto Adobe abbia il contesto pertinente.
+Nella maggior parte dei casi, il pop-up deve fornire tutto il contesto necessario per risolvere il problema. Tuttavia, in caso di domande come ad Adobe Supporto, puoi fare clic sul pulsante **Contatta il supporto** nel pop-up. Viene visualizzato un modulo dal quale è possibile descrivere la domanda e inviarla per creare un ticket di supporto, che includerà anche un riferimento alla notifica specifica in modo che un tecnico del supporto Adobe abbia il contesto pertinente.
 
 ![Contatta supporto 1](/help/operations/assets/contact-support1.png)
 

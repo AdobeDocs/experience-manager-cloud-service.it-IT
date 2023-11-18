@@ -2,7 +2,7 @@
 title: Rimozione indice Lucene generico
 description: Scopri la rimozione pianificata degli indici Lucene generici e come potrebbe esserne interessato.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -129,7 +129,7 @@ Storicamente, l’indice Lucene generico è stato utilizzato per supportare la r
 
 #### Ricerca selettore campo percorso {#picker-search}
 
-AEM include un componente per finestre di dialogo personalizzato con tipo di risorsa Sling `granite/ui/components/coral/foundation/form/pathfield`, che fornisce un browser/selettore per selezionare un altro percorso AEM. Il selettore di campi percorso predefinito, che viene utilizzato quando non è `pickerSrc` è definita nella struttura del contenuto, esegue il rendering di una barra di ricerca nella finestra di dialogo popup.
+AEM include un componente per finestre di dialogo personalizzato con tipo di risorsa Sling `granite/ui/components/coral/foundation/form/pathfield`, che fornisce un browser/selettore per selezionare un altro percorso AEM. Il selettore di campi percorso predefinito, che viene utilizzato quando non è `pickerSrc` è definita nella struttura del contenuto, esegue il rendering di una barra di ricerca nella finestra di dialogo a comparsa.
 
 I tipi di nodo in base ai quali eseguire la ricerca possono essere specificati utilizzando `nodeTypes` proprietà.
 

@@ -2,7 +2,7 @@
 title: Creazione di programmi di produzione
 description: Scopri come creare un programma di produzione per ospitare il traffico in tempo reale con Cloud Manager.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 73%
@@ -32,7 +32,7 @@ Per creare un programma di produzione, segui la procedura riportata di seguito.
 
 1. Se lo desideri, puoi anche aggiungere un’immagine al programma trascinando un file immagine nell’area **Aggiungi un’immagine del programma** oppure fai clic per selezionare un’immagine da un browser di file. Seleziona **Continua**.
 
-1. Se si dispone dei diritti necessari, il **Sicurezza** verrà visualizzata e fornirà l’opzione per attivare **HIPAA** e/o **Protezione WAF-DDOS** per il programma di produzione. Se necessario per il programma che stai creando, seleziona le opzioni applicabili e quindi fai clic su **Continua**.
+1. Se si dispone dei diritti necessari, il **Sicurezza** verrà visualizzata e fornirà l’opzione per attivare **HIPAA** e/o **Protezione WAF-DDOS** per il programma di produzione. Se necessario per il programma che stai creando, seleziona le opzioni applicabili e quindi seleziona **Continua**.
 
    * Impossibile abilitare o disabilitare HIPAA dopo la creazione del programma.
       * [Ulteriori informazioni](https://www.adobe.com/go/hipaa-ready_it) sull’implementazione della soluzione compatibile HIPAA di Adobe.

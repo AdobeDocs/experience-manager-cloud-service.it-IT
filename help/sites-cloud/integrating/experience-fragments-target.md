@@ -2,10 +2,10 @@
 title: Esportazione di frammenti di esperienza in Adobe Target
 description: Scopri come esportare i frammenti di esperienza in Adobe Target per testare e personalizzare le esperienze.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2246'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 

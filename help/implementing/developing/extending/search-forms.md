@@ -2,9 +2,9 @@
 title: Configurazione dei moduli di ricerca
 description: Configurazione di Search Forms per Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2033'
 ht-degree: 17%
 
 ---
@@ -480,7 +480,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
 >I predicati di ricerca comuni sono definiti in:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->Queste informazioni sono solo a scopo di riferimento, non è necessario apportare modifiche a `/libs`.
+>Queste informazioni sono solo a scopo di riferimento, non è necessario modificare `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -527,7 +527,7 @@ A seconda del predicato, è disponibile una selezione di impostazioni per la con
 
 * **Percorso opzione**
 
-  L’utente può selezionare il percorso utilizzando Browser percorsi nella scheda Impostazione predicati. Dopo aver selezionato **+** viene utilizzata per aggiungere la selezione all’elenco delle opzioni valide (quindi **-** da rimuovere se necessario).
+  L’utente può selezionare il percorso utilizzando Browser percorsi nella scheda Impostazione predicati. Dopo aver selezionato **+** viene utilizzata per aggiungere la selezione all’elenco delle opzioni valide (quindi **-** da rimuovere, se necessario).
 
   Le opzioni sono nodi di contenuto creati dall’utente con la seguente struttura:
 

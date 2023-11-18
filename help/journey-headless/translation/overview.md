@@ -2,10 +2,10 @@
 title: Percorso di traduzione headless di AEM
 description: Inizia qui per un percorso guidato alla traduzione di contenuti headless utilizzando i potenti strumenti di traduzione di AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 88%
+source-wordcount: '1037'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Questa guida affronta i più importanti argomenti relativi alla traduzione headl
 * Avrai una panoramica della distribuzione headless dei contenuti.
 * Avrai informazioni di base sulle funzioni headless di AEM.
 * Comprenderai le funzioni di traduzione di AEM e in che modo si relazionano con il contenuto headless.
-* Avrai la possibilità di iniziare a tradurre i tuoi contenuti headless.
+* Puoi iniziare a tradurre i tuoi contenuti headless.
 
 L’obiettivo è quello di darti ampie informazioni sulla tecnologia headless, su come funzionano i contenuti headless di AEM e come tradurli. Se non hai familiarità con nessuno di questi argomenti, questo è il posto giusto per iniziare.
 

@@ -2,9 +2,9 @@
 title: Casella in entrata
 description: Scopri come utilizzare le notifiche che arrivano nella casella in entrata per gestire le attività.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '911'
 ht-degree: 94%
 
 ---
@@ -148,7 +148,7 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
    A seconda della finestra di dialogo, procedura guidata o pagina di documentazione aperta, è possibile:
 
-   * Confermare l’azione appropriata, ad esempio Riassegna.
+   * Conferma l’azione appropriata, ad esempio Riassegna.
    * Annullare l’azione.
    * Selezionare la freccia indietro per tornare alla casella in entrata. Ad esempio, se è stata aperta una Action Wizard o una pagina della documentazione, puoi tornare alla casella in entrata.
 

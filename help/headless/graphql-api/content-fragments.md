@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4921'
-ht-degree: 94%
+source-wordcount: '4923'
+ht-degree: 93%
 
 ---
 
@@ -503,7 +503,7 @@ Alcuni tipi consentono inoltre di specificare opzioni aggiuntive che modificano 
 
 | Opzione | Tipo/i | Descrizione |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | Ignora il caso di una stringa, ad esempio un valore di `time` corrisponderà a `TIME`, `time`, `tImE`... |
+| `_ignoreCase` | `String` | Ignora le maiuscole/minuscole di una stringa, ad esempio un valore di `time` corrisponde a `TIME`, `time`, `tImE`, ... |
 | `_sensitiveness` | `Float` | Consente un certo margine per valori `float` da considerare uguali (per aggirare i limiti tecnici dovuti alla rappresentazione interna dei valori `float`; dovrebbe essere evitata, in quanto questa opzione potrebbe avere un impatto negativo sulle prestazioni |
 
 Le espressioni possono essere combinate in un set tramite un operatore logico (`_logOp`):
@@ -515,7 +515,7 @@ Ogni campo può essere filtrato in base al proprio set di espressioni. I set di 
 
 Una definizione di filtro (passata come argomento `filter` a una query) contiene:
 
-* Una sottodefinizione per ciascun campo (a cui è possibile accedere tramite il nome, ad esempio, è disponibile un campo `lastName` nel filtro per il campo `lastName` nel Tipo di dati (campo))
+* Una sottodefinizione per ciascun campo (il campo è accessibile tramite il suo nome, ad esempio è presente un `lastName` campo nel filtro per `lastName` nel campo Dati (campo) (tipo)
 * Ogni sottodefinizione contiene la variabile array `_expressions`, che fornisce il set di espressioni e campo `_logOp` che definisce l’operatore logico con cui combinare le espressioni
 * Ciascuna espressione è definita dal valore (campo `value`) e dall’operatore (campo `_operator`) con cui il contenuto di un campo deve essere confrontato
 
@@ -914,7 +914,7 @@ Esistono le seguenti limitazioni:
 Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifiche standard di GraphQL. Per le query GraphQL con AEM sono disponibili alcune estensioni:
 
 * Se necessiti di un singolo risultato:
-   * utilizza il nome del modello; ad es. città
+   * utilizza il nome del modello; ad esempio, città
 
 * Se prevedi un elenco di risultati:
    * aggiungi `List` al nome del modello; ad esempio, `cityList`

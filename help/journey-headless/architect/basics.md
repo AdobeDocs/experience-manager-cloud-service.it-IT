@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sulla modellazione dei contenuti
 description: Scopri le nozioni di base sulla modellazione dei contenuti per CMS headless utilizzando Frammenti di contenuto.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 94%
+source-wordcount: '900'
+ht-degree: 93%
 
 ---
 
@@ -109,7 +109,7 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 
 >[!NOTE]
 >
->È inoltre possibile creare riferimenti ad-hoc utilizzando i collegamenti all’interno dei blocchi di testo.
+>Puoi anche creare riferimenti improvvisati utilizzando collegamenti all’interno di blocchi di testo.
 
 ## Livelli di struttura (frammenti nidificati) {#levels-of-structure-nested-fragments}
 

@@ -2,10 +2,10 @@
 title: Scelte rapide da tastiera per la modifica delle pagine
 description: In tutte le aree di AEM sono disponibili varie scelte rapide da tastiera, comprese quelle per la modifica delle pagine
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 90%
+source-wordcount: '238'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune 
 
 | Dove si trova | Scelta rapida | Descrizione |
 |---|---|---|
-| Qualsiasi modalità delle finestre di modifica | `Ctrl-Shift-m` | Consente di passare da **Anteprima** alla [modalità](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> attualmente selezionata, ad esempio **Modifica**, **Layout** e così via* |
+| Qualsiasi modalità delle finestre di modifica | `Ctrl-Shift-m` | Passa da **Anteprima** e la selezionata [modalità](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (ad esempio, **Modifica**, **Layout** e così via)* |
 | Modalità **Modifica** | `Ctrl-z` | [Annulla l’ultima modifica](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Ripristina l’ultima modifica](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleziona più paragrafi |

@@ -3,7 +3,7 @@ title: Best practice per query e indicizzazione
 description: Scopri come ottimizzare indici e query in base alle linee guida sulle best practice di Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3128'
 ht-degree: 44%
@@ -147,11 +147,11 @@ Per spiegare una query, eseguire le operazioni seguenti:
       * `Read first page of results` : esegui la query e leggi la prima &quot;pagina&quot; di 20 risultati (replicando le best practice per l’esecuzione delle query).
       * `Include Node Count` : esegui la query e leggi l’intero set di risultati (in genere questo non è consigliato, vedi [Attraversamento indice](#index-traversal)).
 
-#### Popup Spiegazione query {#query-explanation-popup}
+#### Finestra a comparsa Spiegazione query {#query-explanation-popup}
 
-![Popup Spiegazione query](./assets/query-explanation-popup.png)
+![Finestra a comparsa Spiegazione query](./assets/query-explanation-popup.png)
 
-Dopo aver selezionato `Explain`, all’utente viene presentata una finestra a comparsa che descrive il risultato della query explain (e l’esecuzione, se selezionata).
+Dopo aver selezionato `Explain`, all’utente viene presentato un pop-up che descrive il risultato della query explain (e l’esecuzione, se selezionata).
 Questo pop-up include i dettagli di -
 * Gli indici utilizzati durante l’esecuzione della query (o nessun indice se la query viene eseguita utilizzando [Archivio trasversale](#repository-traversal)).
 * Tempo di esecuzione (se `Include Execution Time` è stata selezionata) e conteggio dei risultati letti (se `Read first page of results` o `Include Node Count` sono state selezionate).

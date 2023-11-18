@@ -3,9 +3,9 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: afb3de515336d3d13b392f8fcc4d263f4f063689
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '917'
 ht-degree: 22%
 
 ---
@@ -52,7 +52,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2023 per un r
 
 ### Nuove funzioni nella Vista risorse {#assets-view-features}
 
-* **Importa risorse in blocco dall&#39;origine dati di OneDrive**: gli amministratori possono ora: [importa un numero elevato di risorse da OneDrive ad AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). L&#39;elenco aggiornato delle origini dati supportate per l&#39;importazione in blocco include Azure, AWS, Google Cloud, Dropbox e OneDrive.
+* **Importa risorse in blocco dall&#39;origine dati di OneDrive**: ora gli amministratori possono [importa un numero elevato di risorse da OneDrive ad AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). L&#39;elenco aggiornato delle origini dati supportate per l&#39;importazione in blocco include Azure, AWS, Google Cloud, Dropbox e OneDrive.
 
   ![assegnare il modulo metadati a una cartella](/help/assets/assets/bulk-import-source-details-onedrive.png)
 

@@ -2,9 +2,9 @@
 title: Come ottenere temi e modelli di riferimento per i moduli AEM?
 description: AEM Forms fornisce esempi di temi, modelli e modelli di dati per moduli adattivi per aiutarti a creare i moduli rapidamente.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 046ffed13569ca3f9c104fb4525d28361873277a
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '867'
 ht-degree: 17%
 
 ---

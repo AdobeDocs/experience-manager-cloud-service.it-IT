@@ -2,10 +2,10 @@
 title: Percorso Architect di contenuti AEM headless
 description: Inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come modellare i contenuti sul tuo primo progetto headless.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 87%
+source-wordcount: '793'
+ht-degree: 85%
 
 ---
 
@@ -25,7 +25,7 @@ Questa guida presenta gli argomenti più importanti, perciò ti permette di:
 
 * Scopri cos’è la distribuzione headless dei contenuti e quali vantaggi offre.
 * Scopri come modellare il contenuto per le funzioni headless di AEM.
-* Possibilità di eseguire i primi passaggi per modellare i contenuti per il primo progetto headless di AEM.
+* Segui i primi passaggi per modellare il contenuto per il primo progetto headless AEM.
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 

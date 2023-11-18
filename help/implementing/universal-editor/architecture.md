@@ -2,10 +2,10 @@
 title: Architettura dell’editor universale
 description: Scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 88%
+source-wordcount: '651'
+ht-degree: 83%
 
 ---
 
@@ -34,7 +34,7 @@ Questo documento delinea ciascuno di questi blocchi predefiniti e la loro modali
 ### Editor {#editors}
 
 * **Editor universale**: l’editor universale utilizza un DOM abilitato per consentire la modifica diretta dei contenuti. Consulta il documento [Attributi e tipi](attributes-types.md) per informazioni dettagliate sui metadati necessari. Consulta il documento [Guida introduttiva all’editor universale in AEM](getting-started.md) per un esempio della strumentazione in AEM.
-* **Barra delle proprietà**: alcune proprietà dei componenti non possono essere modificate nel contesto, come il tempo di rotazione di un carosello o quale scheda a soffietto deve essere sempre aperta o chiusa. Per consentire la modifica di tali informazioni sui componenti, nella barra laterale dell’editor viene fornito un editor basato su moduli.
+* **Barra delle proprietà** - Alcune proprietà dei componenti non possono essere modificate nel contesto, ad esempio il tempo di rotazione di un carosello o la scheda del Pannello a soffietto che deve essere sempre aperta o chiusa. Per consentire la modifica di tali informazioni sui componenti, nella barra laterale dell’editor viene fornito un editor basato su moduli.
 
 ### App remota {#remote-app}
 

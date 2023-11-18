@@ -2,9 +2,9 @@
 title: Distribuzione del codice
 description: Scopri come distribuire il codice con le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1193'
 ht-degree: 91%
 
 ---
@@ -128,7 +128,7 @@ Tutte le distribuzioni di Cloud Service seguono un processo continuo per garanti
 
 ## Eseguire nuovamente una distribuzione di produzione {#reexecute-deployment}
 
-In rari casi, i passaggi di distribuzione nell’ambiente di produzione possono non riuscire per motivi transitori. In questi casi, la riesecuzione del passaggio di distribuzione nell’ambiente di produzione è supportata fino a quando il passaggio di distribuzione nell’ambiente di produzione è stato completato, indipendentemente dal tipo di completamento (ad esempio annullato o non riuscito). La riesecuzione crea una nuova esecuzione utilizzando la stessa pipeline costituita da tre passaggi.
+In rari casi, i passaggi di distribuzione nell’ambiente di produzione possono non riuscire per motivi transitori. In questi casi, la riesecuzione del passaggio di distribuzione nell’ambiente di produzione è supportata fino a quando il passaggio di distribuzione nell’ambiente di produzione è stato completato, indipendentemente dal tipo di completamento (ad esempio, annullato o non riuscito). La riesecuzione crea una nuova esecuzione utilizzando la stessa pipeline costituita da tre passaggi.
 
 1. Passaggio di convalida: si tratta essenzialmente della stessa convalida che si verifica durante una normale esecuzione della pipeline.
 1. Passaggio di compilazione: nel contesto di una riesecuzione, il passaggio di compilazione copia gli artefatti e non esegue effettivamente un nuovo processo di compilazione.

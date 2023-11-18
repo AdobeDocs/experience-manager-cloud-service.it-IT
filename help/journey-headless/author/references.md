@@ -2,10 +2,10 @@
 title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Imparare a utilizzare i riferimenti in Frammenti di contenuto, per i contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 91%
+source-wordcount: '705'
+ht-degree: 84%
 
 ---
 
@@ -27,13 +27,13 @@ Questo articolo si basa su questi elementi e spiega come utilizzare i riferiment
    * Riferimenti al contenuto
    * Riferimenti a risorse/file multimediali
    * Riferimenti ai frammenti
-   * Riferimenti ad hoc dall’interno di un blocco di testo
+   * Riferimenti improvvisati da un blocco di testo
 
 ## Cosa sono i riferimenti {#what-are-references}
 
 I riferimenti sono semplicemente un meccanismo per collegare le risorse, sia che si tratti di altro contenuto, di risorse (come nelle immagini) o di altri frammenti. Anche se molto simili, ci sono alcune differenze.
 
-Alcuni riferimenti sono costituiti da tipi di dati dedicati (ad esempio, Riferimenti al contenuto e Riferimenti ai frammenti), mentre altri sono semplicemente aggiunti come riferimento all’interno di un blocco di testo (riferimenti alle risorse e riferimenti ad hoc).
+Alcuni riferimenti hanno tipi di dati dedicati (ad esempio, Riferimenti a contenuti e Riferimenti a frammenti), mentre altri vengono semplicemente aggiunti come riferimento all’interno di un blocco di testo (riferimenti a risorse e riferimenti improvvisati).
 
 ![Frammenti di contenuto - Riferimenti](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -96,7 +96,7 @@ Utilizzando la scheda **Struttura ad albero** dell’Editor frammento di contenu
 
 ## Riferimenti ad hoc {#adhoc-references}
 
-I riferimenti ad hoc possono essere aggiunti come semplice collegamento all’interno di un blocco di testo:
+I riferimenti improvvisati possono essere aggiunti come un semplice collegamento all’interno di un blocco di testo:
 
 ![Frammenti di contenuto - Riferimenti ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 

@@ -2,10 +2,10 @@
 title: Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub
 description: La barra degli strumenti di ContextHub visualizza dati dagli archivi di ContextHub, ti consente di modificare i dati archiviati ed è utile per visualizzare in anteprima il contenuto
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 31%
+ht-degree: 25%
 
 ---
 
@@ -46,7 +46,7 @@ I moduli di interfaccia utente possono visualizzare dati da uno o più archivi d
 
 ### Contenuto a comparsa {#popup-content}
 
-Alcuni moduli di interfaccia utente visualizzano una finestra a comparsa quando l’utente fa clic su di essi o li seleziona mediante un tocco. In genere, la finestra a comparsa contiene informazioni aggiuntive rispetto a quelle visualizzate nella barra degli strumenti.
+Alcuni moduli di interfaccia utente visualizzano una finestra a comparsa quando si fa clic su di essi o li si tocca. In genere, il pop-up contiene informazioni aggiuntive rispetto a quelle visualizzate sulla barra degli strumenti.
 
 ![Informazioni sul profilo ContextHub](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
@@ -56,6 +56,6 @@ La sovrapposizione a comparsa di un modulo può includere elementi modulo che co
 
 ### Modalità schermo intero {#fullscreen-mode}
 
-Le sovrapposizioni a comparsa possono includere un&#39;icona selezionata per espandere il contenuto a comparsa in modo da coprire l&#39;intera finestra o schermata del browser.
+Le sovrapposizioni popup possono includere un&#39;icona selezionata per espandere il contenuto popup fino a coprire l&#39;intera finestra del browser o lo schermo.
 
 ![Pulsante Schermo intero](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

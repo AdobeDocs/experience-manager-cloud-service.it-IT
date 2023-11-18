@@ -4,10 +4,10 @@ description: Scopri come gestire i frammenti di contenuto AEM dalla console e da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2531'
-ht-degree: 54%
+ht-degree: 53%
 
 ---
 
@@ -226,10 +226,10 @@ Per creare un frammento di contenuto:
 
 1. Il **Nuovo frammento di contenuto** viene visualizzata la finestra di dialogo, da qui puoi specificare:
 
-   * **Posizione**: il campo verrà compilato automaticamente con la posizione corrente, ma se necessario puoi selezionare una posizione differente
+   * **Posizione** : verrà compilato automaticamente con la posizione corrente, ma se necessario puoi selezionare una posizione diversa
    * **Modello per frammento di contenuto**: dall’elenco a discesa seleziona il modello da utilizzare come base per il frammento
    * **Titolo**
-   * **Nome**: verrà compilato automaticamente in base al **Titolo**, ma puoi modificarlo se necessario
+   * **Nome** : verrà compilato automaticamente in base al **Titolo**, ma puoi modificarlo se necessario
    * **Descrizione**
 
    ![Finestra di dialogo Nuovo frammento di contenuto](assets/cf-managing-new-cf-dialog.png)

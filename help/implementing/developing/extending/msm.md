@@ -2,9 +2,9 @@
 title: Estensione di Multi Site Manager
 description: Scopri come estendere le funzionalità di Multi Site Manager.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2429'
 ht-degree: 1%
 
 ---
@@ -610,7 +610,7 @@ Ad esempio, se vengono aggiunte due nuove proprietà di pagina:
 
 * Stile visivo chiave:
 
-   * Il requisito del progetto è che questa proprietà venga implementata in quanto è (solitamente) comune a tutti i paesi (o marchi, ecc.).
+   * Il requisito del progetto è che questa proprietà venga implementata in quanto è (di solito) comune a tutti i paesi (o marchi, e così via).
 
 Quindi è necessario assicurarsi che:
 

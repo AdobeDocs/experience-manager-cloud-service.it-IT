@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina
 description: Scopri come definire le proprietà necessarie per gestire una pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -315,7 +315,7 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
 * **Visualizza**
 
    * Un elenco delle pagine interessate
-      * Se necessario, seleziona o deseleziona
+      * Se necessario, puoi selezionare/deselezionare
       * Schede
          * Come per la visualizzazione delle proprietà di una singola pagina, le proprietà sono ordinate in schede.
    * Un sottoinsieme di proprietà

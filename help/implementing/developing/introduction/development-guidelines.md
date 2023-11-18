@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2733'
 ht-degree: 4%
 
 ---

@@ -2,7 +2,7 @@
 title: Utilizzo di librerie lato client su AEM as a Cloud Service
 description: AEM fornisce cartelle di librerie lato client, che consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2551'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Clientlibs è la soluzione integrata per la distribuzione di CSS e JavaScript da
 
 ## Cosa sono le librerie lato client {#what-are-clientlibs}
 
-I siti richiedono risorse JavaScript e CSS e statiche come icone e font web da elaborare lato client. Una clientlib è un meccanismo AEM da utilizzare come riferimento (per categoria, se necessario) e al servizio di tali risorse.
+I siti richiedono risorse JavaScript e CSS e statiche come icone e font web da elaborare lato client. Una clientlib è un meccanismo dell’AEM a cui fare riferimento (se necessario per categoria) e che serve tali risorse.
 
 AEM raccoglie i file CSS e JavaScript del sito in un singolo file, in una posizione centrale, per garantire che nell’output HTML sia inclusa una sola copia di qualsiasi risorsa. In questo modo si ottimizza l&#39;efficienza della distribuzione e si consente la gestione centralizzata di tali risorse nell&#39;archivio tramite proxy, mantenendo l&#39;accesso sicuro.
 

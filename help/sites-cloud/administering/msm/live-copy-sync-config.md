@@ -4,10 +4,10 @@ description: Scopri le potenti opzioni di sincronizzazione Live Copy disponibili
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -174,7 +174,7 @@ Puoi anche impostare le configurazioni di rollout per una pagina Live Copy quand
 
    ![Ereditarietà Live Copy dalla pagina genitore](../assets/live-copy-inherit.png)
 
-1. Se necessario, regola il flag **Ereditarietà Live Copy**. Se selezionato, la configurazione Live Copy ha effetto su tutte le pagine figlie.
+1. Se necessario, regolare **Ereditarietà Live Copy** flag. Se selezionato, la configurazione Live Copy ha effetto su tutte le pagine figlie.
 
 1. Deseleziona la proprietà **Eredita configurazione di rollout dall’elemento principale**, quindi seleziona una o più configurazioni di rollout dall’elenco.
 

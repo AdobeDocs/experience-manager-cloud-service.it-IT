@@ -2,7 +2,7 @@
 title: Tipi di modulo interfaccia utente ContextHub di esempio
 description: ContextHub fornisce diversi moduli di interfaccia utente di esempio che puoi utilizzare nelle soluzioni
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -186,7 +186,7 @@ Istanze di `contexthub.screen-orientation` Il modulo dell’interfaccia utente n
 
 ## Tipo di modulo dell’interfaccia utente contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-Il `contexthub.tagcloud` Nel modulo dell’interfaccia utente vengono visualizzate informazioni sui tag. Sulla barra degli strumenti il modulo UI mostra il numero di tag. La finestra a comparsa mostra un tagcloud e una casella di testo per l’aggiunta di nuovi tag. Il modulo di interfaccia utente ottiene informazioni da un archivio ContextHub denominato tagcloud basate sulla `contexthub.tagcloud` archiviare il candidato.
+Il `contexthub.tagcloud` Nel modulo dell’interfaccia utente vengono visualizzate informazioni sui tag. Sulla barra degli strumenti il modulo UI mostra il numero di tag. Il pop-up mostra un tagcloud e una casella di testo per aggiungere nuovi tag. Il modulo di interfaccia utente ottiene informazioni da un archivio ContextHub denominato tagcloud basate sulla `contexthub.tagcloud` archiviare il candidato.
 
 ![modulo contexthub.tagcloud](assets/tagcloud-module.png)
 
@@ -210,7 +210,7 @@ Istanze di `contexthub.tagcloud` Il modulo dell’interfaccia utente non richied
 
 ## Tipo di modulo dell’interfaccia utente granite.profile {#granite-profile-ui-module-type}
 
-Il `granite.profile` Il modulo dell’interfaccia utente ContextHub visualizza il nome visualizzato dell’utente corrente. La finestra a comparsa mostra il nome di accesso dell’utente e consente di modificare il valore del nome visualizzato. Il modulo di interfaccia utente ottiene informazioni da un archivio ContextHub denominato profile basato su [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) archiviare il candidato.
+Il `granite.profile` Il modulo dell’interfaccia utente ContextHub visualizza il nome visualizzato dell’utente corrente. Il pop-up mostra il nome di accesso dell&#39;utente e consente di modificare il valore del nome visualizzato. Il modulo di interfaccia utente ottiene informazioni da un archivio ContextHub denominato profile basato su [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) archiviare il candidato.
 
 ![modulo granite.profile](assets/profile-module.png)
 

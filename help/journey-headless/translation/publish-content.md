@@ -2,9 +2,9 @@
 title: Pubblicare contenuti headless tradotti
 description: Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1359'
 ht-degree: 83%
 
 ---
@@ -155,7 +155,7 @@ Congratulazioni. Hai completato il percorso di traduzione headless. Ora dovresti
 * Avrai una panoramica della distribuzione headless dei contenuti.
 * avere una comprensione di base delle funzionalità headless di AEM.
 * Comprenderai le funzioni di traduzione di AEM e in che modo si relazionano con il contenuto headless.
-* Avrai la possibilità di iniziare a tradurre i tuoi contenuti headless.
+* Essere in grado di iniziare a tradurre i tuoi contenuti headless.
 
 essere in grado di tradurre i tuoi contenuti headless in AEM. Tuttavia AEM è uno strumento potente e ci sono molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 

@@ -5,9 +5,9 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1148'
 ht-degree: 3%
 
 ---
@@ -60,7 +60,7 @@ Le attività assegnate a un gruppo vengono visualizzate nella cartella Posta in 
 Quando si apre un&#39;attività, è possibile visualizzarne i dettagli ed eseguire le azioni disponibili. Le azioni disponibili per un&#39;attività sono definite nel passaggio Assegna attività del Forms Workflow associato.
 
 1. Tocca per selezionare la miniatura dell’attività. Le opzioni per aprire o delegare l&#39;attività selezionata vengono visualizzate nella parte superiore.
-1. Tocca **Apri** per visualizzare i dettagli dell&#39;attività ed eseguire azioni. Viene visualizzata la vista dettagliata dell&#39;operazione. In questa visualizzazione è possibile visualizzare i dettagli dell&#39;attività e intraprendere azioni sull&#39;attività.
+1. Seleziona **Apri** per visualizzare i dettagli dell&#39;attività e le azioni disponibili. Viene visualizzata la vista dettagliata dell&#39;operazione. In questa visualizzazione è possibile visualizzare i dettagli di un&#39;attività e intervenire su di essa.
 
    >[!NOTE]
    >

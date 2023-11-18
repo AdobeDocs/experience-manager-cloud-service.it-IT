@@ -2,9 +2,9 @@
 title: Componenti compositi negli SPA
 description: Scopri come creare componenti compositi personalizzati, composti da altri componenti compatibili con l’editor di applicazioni a pagina singola (SPA) dell’AEM.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 I componenti compositi utilizzano la natura modulare dei componenti dell’AEM combinando più componenti di base in un unico componente. Un caso d’uso comune di componente composito è il componente scheda, costituito da una combinazione dei componenti immagine e testo.
 
-Quando i componenti compositi vengono implementati correttamente nel framework dell’Editor applicazioni a pagina singola (SPA) dell’AEM, gli autori dei contenuti possono trascinare e rilasciare tali componenti come farebbero con qualsiasi altro componente, ma hanno comunque la possibilità di modificare singolarmente ogni componente che costituisce il componente composito.
+Quando i componenti compositi vengono implementati correttamente nel framework dell’Editor applicazioni a pagina singola (SPA) dell’AEM, gli autori dei contenuti possono trascinare e rilasciare tali componenti come farebbero con qualsiasi altro componente, ma possono comunque modificare singolarmente ogni componente che costituisce il componente composito.
 
 Questo articolo illustra come aggiungere un componente composito all’applicazione a pagina singola per lavorare direttamente con l’editor SPA dell’AEM.
 
-## Caso d’uso  {#use-case}
+## Caso d’uso {#use-case}
 
 Questo articolo utilizza il componente tipico della scheda come caso d’uso di esempio. Le schede sono un elemento dell’interfaccia utente comune per molte esperienze digitali e sono in genere costituite da un’immagine e dal testo o dalla didascalia associati. L’autore desidera poter trascinare e rilasciare l’intera scheda, ma può modificare singolarmente l’immagine della scheda e personalizzare il testo associato.
 

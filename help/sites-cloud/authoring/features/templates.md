@@ -2,10 +2,10 @@
 title: Creazione di modelli di pagina
 description: Il modello definisce la struttura della pagina risultante e, grazie all’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4538'
-ht-degree: 87%
+source-wordcount: '4535'
+ht-degree: 86%
 
 ---
 
@@ -73,7 +73,7 @@ Quando crei un modello modificabile:
    * Oppure direttamente da: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Se necessario, puoi [creare una cartella per i modelli](#creating-a-template-folder-admin).
 * [Crea un nuovo modello](#creating-a-new-template-template-author), che sarà inizialmente vuoto.
-* Se necessario, [Definisci proprietà aggiuntive](#defining-template-properties-template-author) per il modello
+* [Definire proprietà aggiuntive](#defining-template-properties-template-author) per il modello, se necessario
 * [Modifica il modello](#editing-templates-template-authors) per definire:
    * [Struttura](#editing-a-template-structure-template-author): contenuto predefinito che non può essere modificato nelle pagine create con il modello.
    * [Contenuto iniziale](#editing-a-template-initial-content-author): contenuto predefinito che potrà essere modificato nelle pagine create con il modello.
@@ -351,8 +351,8 @@ Questo consente di definire i dettagli della progettazione.
 
 La finestra di configurazione è divisa in due parti.
 
-* Nella parte sinistra, in **Criteri**, è possibile selezionare un criterio esistente.
-* Nella parte destra, in **Proprietà** è possibile impostare le proprietà specifiche del tipo di componente.
+* Nella parte sinistra della finestra di dialogo in **Policy**, è possibile selezionare un criterio esistente o selezionarne uno esistente.
+* Nella parte destra della finestra di dialogo in **Proprietà**, è possibile impostare le proprietà specifiche del tipo di componente.
 
 Le proprietà disponibili dipendono dal componente selezionato. Ad esempio, per un componente testo le proprietà definiscono, tra le altre, le opzioni di copia e incolla, le opzioni di formattazione e lo stile di paragrafo.
 

@@ -2,10 +2,10 @@
 title: Aree geografiche di pubblicazione aggiuntiva
 description: Scopri in che modo AEM as a Cloud Service supporta ulteriori aree geografiche di pubblicazione aggiuntiva per una maggiore disponibilità e una latenza ridotta.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 84%
+source-wordcount: '640'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ Se sono abilitate altre aree, tramite Cloud Manager saranno disponibili registri
 
 Tieni presenti le seguenti limitazioni quando consideri di utilizzare aree di pubblicazione aggiuntive.
 
-* È possibile aggiungere aree geografiche di pubblicazione aggiuntiva solo ad AEM Sites. Le aree geografiche di pubblicazione aggiuntiva non si estendono ad altre soluzioni AEM o a funzionalità correlate implementate nello stesso programma (ad esempio, AEM Forms o Adobe Learning Manager).
+* È possibile aggiungere aree geografiche di pubblicazione aggiuntiva solo ad AEM Sites. Altre aree geografiche di pubblicazione non si estendono ad altre soluzioni AEM o funzionalità correlate implementate nello stesso programma (ad esempio, AEM Forms o Adobe Learning Manager).
 * È possibile aggiungere altre aree solo se i diritti associati sono disponibili e non utilizzati nel tenant.
 * È possibile aggiungere fino a tre aree geografiche di pubblicazione aggiuntiva a ogni singolo ambiente.
 * Ulteriori aree geografiche sono disponibili solo nei programmi di produzione. Questa funzione non è disponibile nei programmi sandbox.

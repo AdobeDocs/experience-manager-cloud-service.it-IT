@@ -2,7 +2,7 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile aggiornarla modificandone i contenuti
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 92%
@@ -173,7 +173,7 @@ Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
    Un componente, appropriato per il tipo di risorsa, viene creato nella posizione desiderata e include la risorsa selezionata.
 
-1. Se necessario, [Modifica](#edit-content) il componente.
+1. [Modifica](#edit-content) il componente, se necessario.
 
 >[!NOTE]
 >

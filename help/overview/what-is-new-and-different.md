@@ -2,10 +2,10 @@
 title: Differenze e novità - Adobe Experience Manager as a Cloud Service
 description: Differenze e novità - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1889'
-ht-degree: 94%
+source-wordcount: '1891'
+ht-degree: 93%
 
 ---
 
@@ -182,7 +182,7 @@ Un altro requisito comune per gli sviluppatori è l’accesso rapido ai file di 
 
 A causa della netta separazione di codice e contenuto, gli sviluppatori possono utilizzare un particolare processo per aggiornare il contenuto come parte di una distribuzione. I casi d’uso tipici per i contenuti modificabili sono:
 
-* Contenuto standard *predefinito* che fa parte del progetto del cliente (ad esempio cartelle, modelli, flussi di lavoro, ecc.)
+* Standard *predefinito* contenuto che fa parte del progetto del cliente (ad esempio cartelle, modelli, flussi di lavoro e così via)
 
 * Definizioni degli indici di ricerca
 

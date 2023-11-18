@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2021.3.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.3.0 as a Cloud Service."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -74,9 +74,9 @@ Puoi rivolgerti al tuo rappresentante di Adobe per una demo o per registrarti al
 
 * Il componente Dettagli prodotto ora può essere utilizzato e configurato su qualsiasi pagina di contenuto
 
-* È stato rilasciato il sito di riferimento CIF Venia (25.03.2021), che include la versione più recente dei Componenti Core CIF 1.9.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) per ulteriori dettagli.
+* È stato rilasciato il sito di riferimento CIF Venia (25-03-2021), che include la versione più recente dei Componenti core CIF v1.9.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) per ulteriori dettagli.
 
-* È stata rilasciata la versione 1.9.0 dei componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) per ulteriori dettagli.
+* È stata rilasciata la versione 1.9.0 dei Componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) per ulteriori dettagli.
 
 
 ## Cloud Manager {#cloud-manager}
@@ -128,7 +128,7 @@ La prossima versione è pianificata per il 08 aprile 2021.
 
 * In alcuni casi, l’utente visualizzava uno stato verde “attivo” a fianco dell’elenco IP consentiti anche quando tale configurazione non era stata distribuita.
 
-* Tutte le pipeline di produzione esistenti vengono abilitate automaticamente con il passaggio Audit dell’esperienza.
+* Ora tutte le pipeline di produzione esistenti sono attivate automaticamente con il passaggio Audit dell’esperienza.
 
 ## Strumento Trasferimento contenuti {#content-transfer-tool}
 

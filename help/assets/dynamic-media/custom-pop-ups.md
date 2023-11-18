@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Il Quickview predefinito viene utilizzato nelle esperienze di e-commerce, in cui viene visualizzato un pop-up con le informazioni di prodotto per stimolare un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore utilizzato, i clienti possono selezionare un hotspot, un&#39;immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
 
-Quickview è supportato dai seguenti visualizzatori in Dynamic Media:
+Quickview è supportato dai seguenti visualizzatori in Dynamic Medie:
 
 * Immagini interattive (hotspot selezionabili)
 * Video interattivo (miniature selezionabili durante la riproduzione video)
@@ -144,9 +144,10 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    * Mappa eventuali variabili aggiuntive contenute in Quickview.
 
       * Aggiornare il `loadQuickView(sku,*var1*,*var2*)` effettua la chiamata se aggiungi altre variabili.
+
    * Creare un semplice `loadQuickView` () sulla pagina, all&#39;esterno del visualizzatore.
 
-      Ad esempio, il valore SKU viene scritto nella console del browser come segue:
+     Ad esempio, il valore SKU viene scritto nella console del browser come segue:
 
    ```xml {.line-numbers}
    function loadQuickView(sku){
@@ -156,11 +157,9 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
 
    * Carica una pagina di test HTML in un server web e apri.
 
-      Le variabili di Quickview vengono mappate. La chiamata di funzione è attiva. E la console del browser scrive il valore della variabile nella console del browser. Questa operazione viene eseguita utilizzando la funzione di esempio fornita.
+     Le variabili di Quickview vengono mappate. La chiamata di funzione è attiva. E la console del browser scrive il valore della variabile nella console del browser. Questa operazione viene eseguita utilizzando la funzione di esempio fornita.
 
-
-
-1. È ora possibile utilizzare una funzione per richiamare una semplice finestra a comparsa in Quickview. L’esempio che segue utilizza un `DIV` per un popup.
+1. È ora possibile utilizzare una funzione per richiamare una semplice finestra a comparsa in Quickview. L’esempio che segue utilizza un `DIV` per una finestra a comparsa.
 1. Personalizzare lo stile della finestra a comparsa `DIV` nel modo seguente. Aggiungete ulteriore stile come desiderato.
 
    ```xml {.line-numbers}
@@ -192,7 +191,7 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
-           document.getElementById("quickview_div").style.display="block"; // show popup
+           document.getElementById("quickview_div").style.display="block"; // show pop-up
        }
    </script>
    ```

@@ -2,7 +2,7 @@
 title: Utilizzo di Nascondi condizioni
 description: È possibile utilizzare le condizioni Nascondi per determinare se una risorsa componente è sottoposta o meno a rendering.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 2%
@@ -45,7 +45,7 @@ Quando definisci l’espressione Nascondi, tieni presente quanto segue:
 
 * Per essere valido, è necessario esprimere l’ambito in cui si trova la proprietà (ad esempio, `cqDesign.myProperty`).
 * I valori sono di sola lettura.
-* Le funzioni (se richieste) devono essere limitate a un determinato set fornito dal servizio.
+* Le funzioni (se necessario) devono essere limitate a un determinato insieme fornito dal servizio.
 
 ## Esempio {#example}
 

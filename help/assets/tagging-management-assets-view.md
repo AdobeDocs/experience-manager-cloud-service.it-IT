@@ -2,10 +2,10 @@
 title: Come gestire i tag nella Vista risorse?
 description: Scopri come gestire i tag nella Vista risorse. I tag consentono di categorizzare le risorse così da poter essere sfogliate e cercate in modo più efficiente.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 100%
+source-wordcount: '1416'
+ht-degree: 96%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="assets_taxonomy_management"
 >title="Gestisci tag"
->abstract="I tag consentono di categorizzare le risorse così da poter essere sfogliate e cercate in modo più efficiente. Gli amministratori possono utilizzare la struttura gerarchica dell’assegnazione di tag, che facilita l’applicazione di metadati rilevanti, la classificazione delle risorse, il supporto della ricerca, il riutilizzo dei tag, il miglioramento della reperibilità e così via."
+>abstract="I tag consentono di categorizzare le risorse così da poter essere sfogliate e cercate in modo più efficiente. Gli amministratori possono utilizzare la struttura gerarchica dei tag, che semplifica l’applicazione di metadati rilevanti, la classificazione delle risorse, il supporto della ricerca, il riutilizzo dei tag, il miglioramento dell’individuabilità e così via."
 
 I tag consentono di categorizzare le risorse così da poter essere sfogliate e cercate in modo più efficiente. L’assegnazione tag consente di estendere la tassonomia appropriata ad altri utenti e flussi di lavoro.
 
-Gli elenchi semplici di vocabolari controllati possono diventare ingestibili nel tempo. Gli amministratori possono utilizzare la struttura gerarchica dell’assegnazione di tag, che facilita l’applicazione di metadati rilevanti, la classificazione delle risorse, il supporto della ricerca, il riutilizzo dei tag, il miglioramento della reperibilità e così via.
+Gli elenchi semplici di vocabolari controllati possono diventare ingestibili nel tempo. Gli amministratori possono utilizzare la struttura gerarchica dei tag, che semplifica l’applicazione di metadati rilevanti, la classificazione delle risorse, il supporto della ricerca, il riutilizzo dei tag, il miglioramento dell’individuabilità e così via.
 
 Puoi creare uno spazio dei nomi a livello di radice e creare al suo interno una struttura gerarchica di sottotag. Ad esempio, puoi creare uno spazio dei nomi `Activities` a livello di radice e assegnare i tag `Cycling`, `Hiking` e `Running` al suo interno. Puoi assegnare ulteriori sottotag `Clothing` e `Shoes` all’interno di `Running`.
 

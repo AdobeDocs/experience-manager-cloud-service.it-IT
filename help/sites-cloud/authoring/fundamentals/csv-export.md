@@ -2,10 +2,10 @@
 title: Esportazione in formato CSV
 description: Esportare le informazioni relative alle pagine in un file CSV nel sistema locale
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -46,7 +46,7 @@ Il file `export.csv` risultante può essere aperto in Excel o in un’altra appl
 
 Per creare un’esportazione CSV:
 
-1. Apri la console **Sites** e passa alla posizione desiderata, se necessario.
+1. Apri **Sites** , passa alla posizione desiderata, se necessario.
    * L’opzione **Crea rapporto CSV** è disponibile nella vista a elenco della console **Sites**.
    * Si tratta di un’opzione del menu a discesa **Crea**:
 

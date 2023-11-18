@@ -2,9 +2,9 @@
 title: Creazione di contenuti di destinazione utilizzando la modalità di targeting
 description: La modalità di targeting e il componente Target forniscono gli strumenti per la creazione di contenuti per esperienze
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '5306'
+source-wordcount: '5304'
 ht-degree: 87%
 
 ---
@@ -585,7 +585,7 @@ Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
 
    La pagina cambia per mostrare il contenuto di destinazione per il contesto corrente.
 
-1. Per apportare modifiche alle offerte visualizzate, passa alla modalità di targeting. Con l’attività di simulazione selezionata, modifica le offerte per il contesto configurato in modalità Anteprima.
+1. Per modificare le offerte visualizzate, passa alla modalità Targeting. Con l’attività di simulazione selezionata, modifica le offerte per il contesto configurato in modalità Anteprima.
 
 ## Configurazione delle opzioni dei componenti di destinazione {#configuring-target-component-options}
 

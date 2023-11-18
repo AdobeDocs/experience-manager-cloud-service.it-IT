@@ -2,10 +2,10 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3435'
-ht-degree: 97%
+source-wordcount: '3437'
+ht-degree: 95%
 
 ---
 
@@ -103,7 +103,7 @@ Di seguito è riportato un processo end-to-end di alto livello consigliato per i
 Il parametro `kind` deve essere impostato su `CDN` e la versione deve essere impostata sulla versione dello schema, attualmente `1`. Vedi gli esempi di seguito.
 
 
-<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. Se le regole WAF sono concesse in licenza, per gli scenari di programma nuovi ed esistenti, devi abilitare la funzione in Cloud Manager, come descritto di seguito.
 
@@ -120,7 +120,7 @@ Per gli RDE verrà utilizzata la riga di comando, ma al momento RDE non è suppo
 
 **Note**
 
-* Puoi utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad es. `yq cdn.yaml`).
+* È possibile utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad esempio, `yq cdn.yaml`).
 
 ## Sintassi delle regole del filtro del traffico {#rules-syntax}
 
@@ -490,7 +490,7 @@ Le regole si comportano nel modo seguente:
 
 * Il nome dichiarato dal cliente della regola di qualsiasi regola con una corrispondenza verrà elencato nell’attributo `match`.
 * L’attributo `action` determina se le regole hanno avuto l’effetto di bloccare, consentire o registrare.
-* Se WAF è concesso in licenza e abilitato, l’attributo `waf` elenca tutti i contrassegni WAF (ad esempio, SQLI) rilevati, indipendentemente dal fatto che i contrassegni WAF siano elencati o meno in una delle regole. Questo serve a ottenere informazioni dettagliate su possibili nuove regole da dichiarare.
+* Se la WAF è concessa in licenza e abilitata, `waf` Questo attributo elenca tutti i flag WAF (ad esempio, SQLI) rilevati, indipendentemente dal fatto che i flag WAF siano elencati o meno in una delle regole. Questo serve a ottenere informazioni dettagliate su possibili nuove regole da dichiarare.
 * Se nessuna regola dichiarata dal cliente corrisponde e nessuna regola waf corrisponde, la proprietà `rules` sarà vuota.
 
 Come indicato in precedenza, le corrispondenze delle regole WAF vengono visualizzate solo nei registri CDN per mancati e passaggi CDN, non per hit.

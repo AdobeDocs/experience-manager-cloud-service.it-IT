@@ -2,9 +2,9 @@
 title: Modelli di pagina
 description: I Modelli di pagina vengono utilizzati durante la creazione di una pagina utilizzata come base per la nuova pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3279'
+source-wordcount: '3278'
 ht-degree: 7%
 
 ---

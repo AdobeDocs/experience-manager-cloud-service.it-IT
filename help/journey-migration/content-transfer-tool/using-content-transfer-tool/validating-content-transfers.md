@@ -2,9 +2,9 @@
 title: Convalida dei trasferimenti di contenuto
 description: Utilizzare lo strumento Content Transfer (Trasferimento contenuti) per convalidare i trasferimenti di contenuti
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1073'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 ## Guida introduttiva {#getting-started}
 
-Gli utenti possono determinare in modo affidabile se tutti i contenuti estratti dallo strumento Content Transfer sono stati correttamente acquisiti nell’istanza di destinazione. Questa funzione di convalida funziona confrontando un riepilogo dei percorsi di tutti i nodi coinvolti durante l’estrazione con un riepilogo dei percorsi di tutti i nodi coinvolti durante l’acquisizione. Se nel digest di estrazione sono presenti percorsi di nodo mancanti nel digest di acquisizione, la convalida viene considerata non riuscita e potrebbe essere necessaria un’ulteriore convalida manuale.
+Gli utenti possono determinare in modo affidabile se tutti i contenuti estratti dallo strumento Content Transfer (Trasferimento contenuti) sono stati correttamente acquisiti nell’istanza di destinazione. Questa funzione di convalida funziona confrontando un riepilogo dei percorsi di tutti i nodi coinvolti durante l’estrazione con un riepilogo dei percorsi di tutti i nodi coinvolti durante l’acquisizione. Se nel digest di estrazione sono presenti percorsi di nodo mancanti nel digest di acquisizione, la convalida viene considerata non riuscita e potrebbe essere necessaria un’ulteriore convalida manuale.
 
 >[!INFO]
 >

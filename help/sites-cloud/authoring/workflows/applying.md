@@ -2,7 +2,7 @@
 title: Applicazione dei flussi di lavoro alle pagine
 description: Durante l’authoring, puoi richiamare i flussi di lavoro per agire sulle pagine; è anche possibile applicare più di un flusso di lavoro.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 83%
@@ -141,6 +141,6 @@ Viene visualizzata una finestra di dialogo che consente di perfezionare la selez
 
 ## Avvio di un flusso di lavoro dall’editor pagina {#starting-a-workflow-from-the-page-editor}
 
-Quando modifichi una pagina puoi selezionare **Informazioni pagina** dalla barra degli strumenti. Il menu a discesa include l’opzione **Inizia nel flusso di lavoro**. Viene visualizzata una finestra di dialogo in cui puoi specificare il flusso di lavoro richiesto, insieme a un titolo, se necessario:
+Quando modifichi una pagina puoi selezionare **Informazioni pagina** dalla barra degli strumenti. Il menu a discesa include l’opzione **Inizia nel flusso di lavoro**. Viene visualizzata una finestra di dialogo in cui puoi specificare il flusso di lavoro richiesto, se necessario con un titolo:
 
 ![Avviare un flusso di lavoro dall’editor pagina](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

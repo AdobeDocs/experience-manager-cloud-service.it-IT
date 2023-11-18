@@ -2,10 +2,10 @@
 title: Note sulla versione 2022.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 79%
+source-wordcount: '637'
+ht-degree: 80%
 
 ---
 
@@ -37,7 +37,7 @@ Dai un’occhiata al video Panoramica sulla versione di giugno 2022 per un riepi
 
 ### Nuove funzioni in [!DNL Sites] {#sites-features}
 
-* Una nuova [interfaccia utente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) è ora disponibile per gli amministratori e gli autori di contenuti per gestire in modo efficiente (eseguire azioni quali pubblicare, annullare la pubblicazione, copiare, spostare e così via), cercare/filtrare e creare frammenti di contenuto per casi d’uso headless.
+* Una nuova [interfaccia utente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) è ora disponibile per gli amministratori e gli autori di contenuti per gestire in modo efficiente (ad esempio pubblicare, annullare la pubblicazione, copiare, spostare e così via), cercare/filtrare e creare frammenti di contenuto per casi d’uso headless.
 
   ![Console Frammenti di contenuto](/help/release-notes/assets/cf-ui.png)
 
