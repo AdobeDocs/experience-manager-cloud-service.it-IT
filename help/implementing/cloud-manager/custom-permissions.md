@@ -2,9 +2,9 @@
 title: Autorizzazioni personalizzate
 description: Scopri come utilizzare le autorizzazioni personalizzate per creare nuovi profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 33d14ac66fa46c25f1e027aa86848768fd0271ff
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1559'
 ht-degree: 2%
 
 ---
@@ -96,11 +96,6 @@ Ora che disponi di un nuovo profilo di prodotto, puoi assegnargli autorizzazioni
 
 1. Seleziona la **Aggiungi tutto** nella parte superiore della **Autorizzazioni disponibili** per aggiungere tutte le autorizzazioni.
 
-1. Se il profilo deve sempre avere tutti gli elementi di autorizzazione, è consigliabile utilizzare **Inclusione automatica** opzione.
-
-   * **On** - Tutti gli elementi di autorizzazione correnti e futuri verranno spostati in Elementi di autorizzazione inclusi e al salvataggio saranno applicabili di conseguenza.
-   * **Disattivato** - Tutti gli elementi di autorizzazione torneranno agli elementi di autorizzazione disponibili e al momento del salvataggio saranno applicabili di conseguenza.
-
 1. Seleziona **Salva** al termine della definizione delle autorizzazioni per il nuovo profilo di prodotto.
 
 Il nuovo profilo di prodotto viene ora salvato con le relative autorizzazioni personalizzate.
@@ -129,6 +124,10 @@ Per creare profili personalizzati sono disponibili le seguenti autorizzazioni.
 | Creazione dell’ambiente | Consenti agli utenti di creare un ambiente |
 | Modifica dell’ambiente | Consenti agli utenti di aggiornare e modificare gli ambienti |
 | Lettura registri ambiente | Consenti agli utenti di leggere i registri dell’ambiente |
+| Gestione variabili di ambiente | Consenti agli utenti di creare, modificare o eliminare configurazioni di ambiente |
+| Creazione ripristino ambiente | Consenti agli utenti di creare il ripristino dell’ambiente |
+| Ripristino rapido dell’ambiente di sviluppo | Consenti agli utenti di ripristinare l&#39;ambiente di sviluppo rapido |
+| Gestione copia contenuto | Consenti agli utenti di gestire le operazioni di copia dei contenuti |
 | Creare pipeline | Consenti agli utenti di creare nuove pipeline |
 | Eliminazione delle pipeline | Consenti agli utenti di eliminare le pipeline |
 | Modifica pipeline | Consenti agli utenti di modificare le pipeline |
@@ -138,6 +137,15 @@ Per creare profili personalizzati sono disponibili le seguenti autorizzazioni.
 | Escludere/Rifiutare Errori Di Metriche Importanti | Consenti agli utenti di ignorare/rifiutare errori metrici importanti |
 | Pianificazione delle implementazioni di produzione | Consenti agli utenti di pianificare un passaggio di distribuzione nell’ambiente di produzione |
 | Accesso alle informazioni dell’archivio | Consenti agli utenti di accedere alle informazioni dell’archivio e generare la password di accesso |
+| Creazione archivio | Consenti agli utenti di creare nuovi archivi Git |
+| Eliminazione archivio | Consenti agli utenti di eliminare gli archivi Git |
+| Modifica archivio | Consenti agli utenti di modificare gli archivi Git |
+| Genera codice archivio | Consenti agli utenti di generare un progetto da Archetipo |
+| Gestione nome dominio | Consenti agli utenti di creare, modificare o eliminare i nomi di dominio |
+| Gestione Inserisce nell&#39;elenco Consentiti IP | Consenti agli utenti di creare, modificare o eliminare l&#39;associazione di inserire nell&#39;elenco Consentiti inserisce nell&#39;elenco Consentiti di IP e l&#39;associazione di IP |
+| Gestione dell&#39;infrastruttura di rete | Consenti agli utenti di creare, modificare o eliminare infrastrutture di rete |
+| Gestione certificati SSL | Consenti agli utenti di creare, modificare o eliminare certificati SSL |
+| Gestione utenti account secondario New Relic | Consenti agli utenti di leggere/modificare gli utenti dell&#39;account New Relic secondario |
 
 ### Autorizzazioni a livello di organizzazione {#organization-level}
 
