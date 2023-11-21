@@ -3,14 +3,14 @@ title: Cerca best practice per [!DNL Adobe Experience Manager] as a [!DNL Cloud 
 description: Best practice per cercare, trovare e recuperare i metadati delle risorse all’interno dell’applicazione.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
+source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
 workflow-type: tm+mt
-source-wordcount: '2520'
+source-wordcount: '2521'
 ht-degree: 3%
 
 ---
 
-# Best practice per la ricerca AEM
+# Best practice per la ricerca in AEM Assets
 
 [!DNL Adobe Experience Manager Assets] fornisce solidi metodi di ricerca delle risorse che consentono di velocizzare i contenuti. Talvolta, trovare la risorsa giusta può essere difficile e richiedere tempo. Pertanto, cerca le risorse in [!DNL Adobe Experience Manager Assets] è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, che sia destinato all’ulteriore utilizzo da parte dei creativi, alla gestione affidabile delle risorse da parte degli utenti aziendali e dei professionisti del marketing o all’amministrazione da parte degli amministratori DAM.
 

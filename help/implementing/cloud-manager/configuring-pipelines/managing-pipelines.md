@@ -6,7 +6,7 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 45%
+ht-degree: 68%
 
 ---
 
@@ -37,7 +37,7 @@ Nella parte inferiore dell’elenco delle pipeline sono disponibili le opzioni g
 
 ## Finestra Pipeline {#pipelines}
 
-Il **Pipeline** viene visualizzato un elenco completo di tutte le pipeline per il programma selezionato. Questa funzione è utile in quanto presenta informazioni più complete rispetto a quelle disponibili nella [Scheda pipeline.](#pipeline-card)
+La finestra **Pipeline** mostra un elenco completo di tutte le pipeline per il programma selezionato. Questa funzione è utile in quanto presenta informazioni più complete rispetto a quelle disponibili nella [Scheda pipeline.](#pipeline-card)
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
@@ -45,27 +45,27 @@ Il **Pipeline** viene visualizzato un elenco completo di tutte le pipeline per i
 
 1. Qui puoi visualizzare un elenco di tutte le pipeline del programma, nonché avviare e interrompere l’esecuzione della pipeline come faresti nella **Scheda Pipeline**.
 
-Se una pipeline è in esecuzione, passa il cursore sopra la relativa **Stato** rivelerà i dettagli sull’esecuzione.
+Se una pipeline è in esecuzione, passa il cursore sopra la relativa colonna di **Stato** e potrai visualizzare i dettagli relativi all’esecuzione.
 
 ![Dettagli di esecuzione della pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-Toccare o fare clic **Visualizza dettagli** ti porterà al [i dettagli dell’esecuzione della pipeline.](#view-details)
+Se tocchi o fai clic su **Visualizza dettagli**, verrai reindirizzato ai [dettagli dell’esecuzione della pipeline.](#view-details)
 
 ## Finestra Attività {#activity}
 
-Il **Attività** mostra un elenco completo di tutte le esecuzioni di pipeline per il programma selezionato.
+La finestra **Attività** mostra un elenco completo di tutte le esecuzioni di pipeline per il programma selezionato.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
 1. Dalla sezione **Panoramica del programma** , seleziona la **Attività** per passare alla scheda **Attività** finestra.
 
-1. Qui puoi vedere un elenco di tutte le esecuzioni della pipeline del programma, comprese le esecuzioni correnti e storiche.
+1. Qui puoi visualizzare un elenco di tutte le esecuzioni della pipeline del programma, comprese le esecuzioni correnti e quelle precedenti.
 
-Se una pipeline è in esecuzione, passa il cursore sopra la relativa **Stato** rivelerà i dettagli sull’esecuzione.
+Se una pipeline è in esecuzione, passa il cursore sopra la relativa colonna di **Stato** e potrai visualizzare i dettagli relativi all’esecuzione.
 
 ![Dettagli di esecuzione della pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Toccare o fare clic **Visualizza dettagli** ti porterà al [i dettagli dell’esecuzione della pipeline.](#view-details)
+Se tocchi o fai clic su **Visualizza dettagli**, verrai reindirizzato ai [dettagli dell’esecuzione della pipeline.](#view-details)
 
 ## Esecuzione delle pipeline {#running-pipelines}
 
@@ -121,7 +121,7 @@ Puoi visualizzare i dettagli di una pipeline per visualizzarne lo stato e i regi
 
 Da qui è possibile visualizzare lo stato dei vari passaggi della pipeline e recuperare i registri della build per finalità diagnostiche. Consulta il documento [Implementazione del codice](/help/implementing/cloud-manager/deploy-code.md) per ulteriori informazioni sulla distribuzione del codice e sull’esecuzione dei test.
 
-Tutti i passaggi di un’esecuzione della pipeline vengono visualizzati con quelli non ancora avviati in grigio. I passaggi completati mostrano la loro durata.
+Tutti i passaggi dell’esecuzione di una pipeline vengono visualizzati con quelli non ancora avviati non selezionabili. I passaggi completati mostrano la loro durata.
 
 Una volta completato un passaggio della pipeline, viene presentato un riepilogo.
 
