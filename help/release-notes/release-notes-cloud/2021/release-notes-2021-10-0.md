@@ -2,7 +2,7 @@
 title: Note sulla versione 2021.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 69%
@@ -58,7 +58,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Novità in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics per Forms adattivo**: ora puoi acquisire e tenere traccia del comportamento degli utenti connessi e non (anonimi) tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni approfondite sull’utente finale. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza dell’utente finale.
+* **Analytics per Forms adattivo**: ora puoi acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni approfondite. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza utente.
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms-oct-2021}
 

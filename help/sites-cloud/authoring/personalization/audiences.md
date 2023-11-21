@@ -2,7 +2,7 @@
 title: Gestione dei tipi di pubblico
 description: La console Pubblico consente di creare, organizzare e gestire i tipi di pubblico per il tuo account di Adobe Target o gestire segmenti per ContextHub
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 87%
@@ -42,7 +42,7 @@ Per creare un segmento ContextHub nella console Pubblico:
 
    >[!NOTE]
    >
-   >Per ordinare l’elenco modificato, tocca o fai clic su **Modificato** per ordinare in ordine decrescente per visualizzare i tipi di pubblico appena creati.
+   >Per ordinare l’elenco modificato, tocca o fai clic su **Modificato** per ordinare in base all’ordine decrescente per visualizzare eventuali tipi di pubblico creati.
 
 Per ulteriori dettagli sulla creazione di segmenti utilizzando ContextHub, consulta la documentazione Configurazione della segmentazione con ContextHub. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 

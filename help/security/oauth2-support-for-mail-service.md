@@ -2,7 +2,7 @@
 title: Supporto OAuth2 per il servizio di posta
 description: Supporto Oauth2 per il servizio di posta in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: ede877212de3394cbdc81e1097d3d6eaf9f390cc
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 98%
@@ -26,7 +26,7 @@ Per ulteriori informazioni sul servizio di posta AEM as a Cloud Service, consult
    ![Avvia il processo di registrazione dell’app](assets/oauth-outlook1.png)
 
 1. Compila le informazioni in base alle tue esigenze, quindi fai clic su **Registra**.
-1. Vai alla nuova app creata e seleziona **Autorizzazioni API**.
+1. Vai all’app creata e seleziona **Autorizzazioni API**.
 1. Fai clic su **Aggiungi autorizzazione** > **Autorizzazione grafico** > **Autorizzazioni delegate**.
 1. Seleziona le seguenti autorizzazioni per la tua app, quindi fai clic su **Aggiungi autorizzazione**:
    * `https://outlook.office.com/SMTP.Send`

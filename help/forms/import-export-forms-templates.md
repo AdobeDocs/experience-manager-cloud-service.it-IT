@@ -3,7 +3,7 @@ title: Come importare, esportare e organizzare Forms o PDF forms adattivi in un�
 description: Scopri come migrare Forms adattivo, PDF forms, temi e altre risorse di supporto da e verso istanze AEM.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%
@@ -185,7 +185,7 @@ Puoi utilizzare le cartelle per organizzare e disporre le risorse. L’organizza
 
    Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Puoi visualizzare il messaggio di errore passando il cursore sopra l’errore ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) accanto al campo del nome.
 
-   Tocca la cartella appena creata per entrare nella cartella e creare risorse o cartelle al suo interno. Inoltre, puoi selezionare una cartella e scegliere di metterla in coda per il download, eliminarla o modificarne il nome.
+   Tocca la cartella creata per entrarvi e creare risorse o cartelle al suo interno. Inoltre, puoi selezionare una cartella e scegliere di metterla in coda per il download, eliminarla o modificarne il nome.
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

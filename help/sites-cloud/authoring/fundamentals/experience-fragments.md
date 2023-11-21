@@ -2,10 +2,10 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 99%
+source-wordcount: '2042'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Puoi utilizzare Frammenti esperienza:
 Senza Frammenti esperienza, l’autore dovrebbe copiare e incollare tale frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente.
 Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
 * Per supportare il caso d’uso del CMS headless.
-Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. È possibile che un sistema o punto di contatto di terzi prenda in carico questa particolare esperienza e in seguito la trasmetta all’utente finale.
+Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. Un sistema/punto di contatto di terze parti utilizzerebbe tale esperienza e quindi la consegnerebbe all’utente.
 
 >[!NOTE]
 >

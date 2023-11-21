@@ -2,9 +2,9 @@
 title: Informazioni sulle richieste di contenuto di Cloud Service
 description: Se hai acquistato licenze per richieste di contenuto da Adobe, scopri i tipi di richieste di contenuto che Adobe Experience Cloud as a Service misura e le varianze con gli strumenti di reporting di Analytics di un’organizzazione.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1160'
 ht-degree: 9%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 9%
 
 ## Varianze delle richieste di contenuto del Cloud Service{#content-requests-variances}
 
-Le richieste di contenuto possono presentare varianze con gli strumenti di reporting di Analytics di un’organizzazione, come riepilogato nella tabella seguente. In generale, gli strumenti di Analytics che raccolgono dati tramite la strumentazione lato client <b>non deve essere utilizzato</b> per generare rapporti sul numero di richieste di contenuto per un determinato sito, semplicemente perché spesso dipendono dal consenso dell’utente finale per essere attivate, perdendo quindi una frazione significativa del traffico. Gli strumenti di Analytics che raccolgono i dati lato server nei file di registro, o i rapporti CDN per i clienti che aggiungono la propria CDN oltre a AEM as a Cloud Service, forniranno conteggi migliori. Per la generazione di rapporti sulle visualizzazioni di pagina e sulle relative prestazioni, l’opzione consigliata è l’Adobe Adobe di RUM Data Service (Servizio dati RUM).
+Le richieste di contenuto possono presentare varianze con gli strumenti di reporting di Analytics di un’organizzazione, come riepilogato nella tabella seguente. In generale, gli strumenti di Analytics che raccolgono dati tramite la strumentazione lato client <b>non deve essere utilizzato</b> segnalare il numero di richieste di contenuto per un determinato sito, semplicemente perché spesso dipendono dal consenso dell’utente per essere attivate, perdendo quindi una frazione significativa del traffico. Gli strumenti di Analytics che raccolgono i dati lato server nei file di registro, o i rapporti CDN per i clienti che aggiungono la propria CDN oltre a AEM as a Cloud Service, forniranno conteggi migliori. Per la generazione di rapporti sulle visualizzazioni di pagina e sulle relative prestazioni, l’opzione consigliata è l’Adobe Adobe di RUM Data Service (Servizio dati RUM).
 
 | Motivo della varianza | Spiegazione |
 |---|---|
-| Consenso utente finale | Gli strumenti di Analytics che si basano su strumenti lato client spesso dipendono dal consenso dell’utente finale per essere attivati. Questo potrebbe rappresentare la maggior parte del traffico che non viene tracciato. Per i clienti che desiderano misurare autonomamente le richieste di contenuto, si consiglia di utilizzare gli strumenti di analisi per raccogliere i dati lato server o i rapporti CDN. |
+| Consenso utente finale | Gli strumenti di Analytics che si basano su strumenti lato client spesso dipendono dal consenso degli utenti all’attivazione. Questo potrebbe rappresentare la maggior parte del traffico che non viene tracciato. Per i clienti che desiderano misurare autonomamente le richieste di contenuto, si consiglia di utilizzare gli strumenti di analisi per raccogliere i dati lato server o i rapporti CDN. |
 | Assegnazione dei tag | A tutte le pagine o chiamate API tracciate come richieste di contenuto di Adobe Experience Manager (AEM) potrebbero non essere assegnati tag di tracciamento Analytics. |
 | Regole di gestione dei tag | Le impostazioni delle regole di gestione dei tag possono comportare diverse configurazioni di raccolta dati su una pagina, con conseguente combinazione di discrepanze con il tracciamento delle richieste di contenuto. |
 | Bot | I bot sconosciuti che non sono stati pre-identificati e rimossi da AEM possono causare discrepanze nel tracciamento. |

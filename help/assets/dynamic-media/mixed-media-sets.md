@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 14%
@@ -118,7 +118,7 @@ Quando aggiungi risorse al set, queste vengono aggiunte automaticamente in ordin
 
 1. Per eliminare una risorsa, seleziona la casella di controllo corrispondente e fai clic su **[!UICONTROL Elimina risorsa]**.
 1. Per applicare un predefinito, seleziona **[!UICONTROL Predefinito]** nell’angolo in alto a destra e seleziona un predefinito da applicare alle risorse.
-1. Seleziona **[!UICONTROL Salva]**. Il set di file multimediali diversi appena creato viene visualizzato nella cartella in cui è stato creato.
+1. Seleziona **[!UICONTROL Salva]**. Il set di file multimediali diversi creato viene visualizzato nella cartella in cui è stato creato.
 
 ## Modifica set di file multimediali diversi {#editing-mixed-media-sets}
 

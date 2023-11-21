@@ -2,10 +2,10 @@
 title: Personalizzazione e targeting dei contenuti
 description: Scopri come creare contenuti personalizzati e mirati con AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 93%
+source-wordcount: '1054'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ AEM fornisce un framework di strumenti per:
 * Definizione delle regole utilizzate per risolvere le informazioni utente note rispetto alla definizione di un pubblico.
 * Configurazione delle pagine per presentare esperienze personalizzate mirate, in modo da rendere lo specifico contenuto applicabile all’utente finale corrente.
 
-La panoramica seguente presenta alcuni termini utilizzati nell’ambito della personalizzazione in AEM as a Cloud Service, seguiti da un ordine di azioni consigliato.
+La panoramica seguente presenta alcuni dei termini utilizzati per la personalizzazione in AEM as a Cloud Service, seguiti da un ordine di azione consigliato.
 
 ## Esperienza {#experience}
 

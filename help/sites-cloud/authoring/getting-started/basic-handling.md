@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e il suo utilizzo di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 91%
+source-wordcount: '2945'
+ht-degree: 90%
 
 ---
 
@@ -231,7 +231,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 
 Nella [Vista a schede](#card-view) alcune azioni sono disponibili come icone di scelta rapida, oltre che dalla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un singolo elemento alla volta ed evitano di dover preselezionare le opzioni.
 
-La azioni rapide sono visibili con un tocco prolungato (su dispositivo touch) sulla scheda di una risorsa. Le azioni rapide disponibili possono dipendere dalla console e dal contesto. Ad esempio, di seguito sono riportate le azioni rapide per una pagina nella console **Sites**:
+Le azioni rapide sono visibili quando passi il mouse su una scheda delle risorse (dispositivo desktop). Le azioni rapide disponibili possono dipendere dalla console e dal contesto. Ad esempio, di seguito sono riportate le azioni rapide per una pagina nella console **Sites**:
 
 ![Opzioni aggiuntive](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -366,7 +366,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
    * **Pubblicato**: stato della pubblicazione
    * **Anteprima**: stato anteprima
    * **Modello**: modello su cui si basa la pagina
-   * **Flusso di lavoro**: flusso di lavoro attualmente applicato alla pagina. Ulteriori informazioni sono disponibili quando passi sopra con il mouse o apri la Timeline.
+   * **Flusso di lavoro**: flusso di lavoro attualmente applicato alla pagina. Ulteriori informazioni sono disponibili quando passate il mouse o aprite la timeline.
    * **Dati analitici della pagina**
    * **Visitatori univoci**
    * **Tempo sulla pagina**

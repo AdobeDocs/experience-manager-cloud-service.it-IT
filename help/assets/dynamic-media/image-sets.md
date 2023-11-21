@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 5%
@@ -190,7 +190,7 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
    >
    >Durante la creazione del set di immagini, è possibile modificare la miniatura del set di immagini. In alternativa, puoi consentire a Experience Manager di selezionare automaticamente la miniatura in base alle risorse nel set di immagini. Per selezionare una miniatura, seleziona **[!UICONTROL Cambia miniatura]** sopra il campo Titolo nella pagina Editor set di immagini. Quindi, seleziona un’immagine (puoi passare anche ad altre cartelle per trovare le immagini). Se hai selezionato una miniatura e vuoi che Experience Manager ne generi una dal set di immagini, seleziona **[!UICONTROL Passa a]** **[!UICONTROL Miniatura automatica]**.
 
-1. Fai clic su **[!UICONTROL Salva]**. Il set di immagini appena creato viene visualizzato nella cartella in cui è stato creato.
+1. Fai clic su **[!UICONTROL Salva]**. Il set di immagini creato viene visualizzato nella cartella in cui è stato creato.
 
 ## Visualizza set di immagini {#viewing-image-sets}
 

@@ -2,10 +2,10 @@
 title: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2023.2.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
-source-wordcount: '732'
-ht-degree: 100%
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ Dai un’occhiata al video Panoramica sulla versione di febbraio 2023 per un rie
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
 * Lancio del supporto per il nuovo protocollo (DASH - Dynamic Adaptive Streaming over HTTP) per lo streaming adattivo nella distribuzione video Dynamic Media (con CMAF abilitato):
-   * Lo streaming adattivo (DASH/HLS) garantisce agli utenti finali una migliore esperienza di visualizzazione dei video
+   * Lo streaming adattivo (DASH/HLS) garantisce una migliore esperienza di visualizzazione per i video da parte dell’utente
    * DASH è il protocollo standard internazionale per lo streaming video adattivo ed è ampiamente adottato nel settore
    * Disponibile in NA, si abilita tramite ticket di supporto, disponibile a breve nella regione APAC (Asia-Pacifico) e nella regione EMEA (Europa, Medio Oriente, Africa)
 

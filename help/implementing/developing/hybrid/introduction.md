@@ -2,10 +2,10 @@
 title: Introduzione alla SPA e procedura dettagliata
 description: Questo articolo introduce i concetti di una SPA e spiega come utilizzare un’applicazione SPA di base per l’authoring, mostrando come si relaziona con l’editor di SPA AEM sottostante.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 94%
+source-wordcount: '2065'
+ht-degree: 93%
 
 ---
 
@@ -130,7 +130,7 @@ Sono supportati ulteriori strumenti di authoring, come il trascinamento e il ril
 
 ## App SPA ed editor di SPA AEM {#spa-apps-and-the-aem-spa-editor}
 
-L’esperienza di come si comporta una SPA per l’utente finale e quindi l’analisi della pagina SPA aiuta a comprendere meglio come funziona un’app SPA con l’editor di SPA in AEM.
+L&#39;esperienza del comportamento di un SPA per l&#39;utente e la successiva ispezione della pagina SPA consentono di comprendere meglio il funzionamento di un&#39;app SAP con l&#39;Editor SPA nell&#39;AEM.
 
 ### Utilizzo di un’applicazione SPA {#using-an-spa-application}
 

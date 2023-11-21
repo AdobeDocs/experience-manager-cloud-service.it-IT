@@ -4,10 +4,10 @@ description: Scopri come preparare i contenuti per la traduzione quando sviluppi
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 86%
+source-wordcount: '752'
+ht-degree: 83%
 
 ---
 
@@ -52,7 +52,7 @@ Il [sito tutorial WKND](/help/implementing/developing/introduction/develop-wknd-
 
 La copia per lingua per la quale originariamente si è creato il contenuto del sito è la lingua master. Il lingua master è quella di partenza che viene tradotta in altre lingue.
 
-Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/wknd/fr` è la directory principale della lingua della copia in lingua francese. Le copie per lingua devono utilizzare una [directory principale della lingua configurata correttamente](preparation.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito di origine.
+Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/wknd/fr` è la directory principale della lingua della copia in lingua francese. Le copie per lingua devono utilizzare un [directory principale lingua configurata correttamente](preparation.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito sorgente.
 
 Utilizza i seguenti passaggi per preparare il sito alla traduzione:
 

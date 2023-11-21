@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '9463'
+source-wordcount: '9461'
 ht-degree: 2%
 
 ---
@@ -341,7 +341,7 @@ La codifica VBR richiede più tempo, ma produce i risultati più favorevoli; la 
 Quando si utilizza VBR rispetto a CRB?
 Quando selezioni VBR rispetto a CBR, si consiglia quasi sempre di utilizzare VBR per i file multimediali. VBR fornisce file di qualità superiore a bitrate competitivi. Quando si utilizza VBR, assicurarsi di utilizzare con la codifica a due passate e impostare il bitrate massimo su 1,5 volte il bitrate video di destinazione.
 
-Quando scegli un predefinito di codifica video, accertati di tenere conto della velocità di connessione dell’utente finale di destinazione. Scegli un predefinito con una velocità dati pari all’80% di quella velocità. Ad esempio, se la velocità di connessione dell&#39;utente finale è di 1000 Kbps, il valore predefinito migliore è 800 Kbps.
+Quando scegli un predefinito di codifica video, accertati di tenere conto della velocità di connessione dell&#39;utente target. Scegli un predefinito con una velocità dati pari all’80% di quella velocità. Ad esempio, se la velocità di connessione dell&#39;utente target è di 1000 Kbps, il predefinito migliore è quello con una velocità dati video di 800 Kbps.
 
 Questa tabella descrive la velocità dati delle velocità di connessione tipiche.
 

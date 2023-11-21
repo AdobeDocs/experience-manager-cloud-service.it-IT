@@ -3,7 +3,7 @@ title: Come possiamo tradurre un Modulo adattivo basato su Componenti core?
 description: Scopri come creare un modello di dati modulo in AEM Forms, testare il modello con dati e servizi di esempio e configurare varie opzioni per un modello.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 4%
@@ -25,7 +25,7 @@ Il servizio di traduzione automatica traduce immediatamente il contenuto in modu
    * Per aggiungere un nuovo dizionario a un progetto di traduzione esistente, seleziona la **[!UICONTROL Aggiungi a un progetto di traduzione esistente]** e selezionare un&#39;opzione **[!UICONTROL Progetto di traduzione esistente]**.
 1. In **Lingue di destinazione** , specificare una lingua (ad esempio, `German(de)`). È possibile specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le lingue specificate in **Lingue di destinazione** campo. Clic **Fine**.
 1. Nella finestra di dialogo Dizionario aggiunto fare clic su **Progetti aperti**.
-1. Nella schermata Progetti, fai clic sul progetto appena creato. Ad esempio, fai clic su **Sito di riferimento per la pubblica amministrazione - lingua tedesca** affiancare.
+1. Nella schermata Progetti, fai clic sul progetto creato. Ad esempio, fai clic su **Sito di riferimento per la pubblica amministrazione - lingua tedesca** affiancare.
 1. Il giorno **Lavoro di traduzione** , fai clic su ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e fai clic su **Inizio**. Lo stato della sezione diventa Bozza. Al termine della traduzione, lo stato cambia in **Approvato**. Aggiorna la pagina dopo alcuni minuti e verifica lo stato.
 
    ![Avvia traduzione](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
@@ -68,7 +68,7 @@ Per localizzare un modulo e il relativo documento di record mediante Human Trans
    * Per aggiungere un nuovo dizionario a un progetto di traduzione esistente, seleziona la **[!UICONTROL Aggiungi a un progetto di traduzione esistente]** e selezionare un&#39;opzione **[!UICONTROL Progetto di traduzione esistente]**.
 1. In **Lingue di destinazione** , specificare una lingua (ad esempio, `German(de)`). È possibile specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le lingue specificate in **Lingue di destinazione** campo. Clic **Fine**.
 1. Nella finestra di dialogo Dizionario aggiunto fare clic su **Progetti aperti**.
-1. Nella schermata Progetti, fai clic sul progetto appena creato. Ad esempio, fai clic su **Sito di riferimento per la pubblica amministrazione - lingua tedesca** affiancare.
+1. Nella schermata Progetti, fai clic sul progetto creato. Ad esempio, fai clic su **Sito di riferimento per la pubblica amministrazione - lingua tedesca** affiancare.
 1. Nella parte inferiore della sezione **Riepilogo** , fai clic su **ellissi**. Viene visualizzata la schermata Proprietà progetto di traduzione.
 1. Apri **[!UICONTROL Avanzate]** nella parte superiore della sezione **Proprietà progetto di traduzione** schermo. Per **[!UICONTROL Campo di traduzione]**, seleziona **[!UICONTROL Traduzione umana]**. Clic **Salva e chiudi** nella parte superiore dello schermo.
 1. Il giorno **Lavoro di traduzione** , fai clic su ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e fai clic su **Esporta**. Nella finestra di dialogo Esporta, fai clic sull’opzione Scarica file esportato. Scarica un file .zip.

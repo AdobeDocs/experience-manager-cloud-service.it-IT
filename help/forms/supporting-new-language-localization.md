@@ -2,7 +2,7 @@
 title: Come si aggiunge il supporto per le nuove lingue in un modulo adattivo basato su componenti di base?
 description: Per Adaptive Forms, puoi aggiungere lingue per più lingue oltre a quella fornita come impostazione predefinita.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 1%
@@ -102,7 +102,7 @@ Esegui questo passaggio solo se `<locale>` stai aggiungendo non è tra `en`, `de
 1. Aggiungi il `<locale-name>` valori predefiniti per le impostazioni locali `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, se non già presente.
 
 1. Aggiungi il `<locale>` ai valori del `languages` proprietà di `/etc/languages`.
-1. Aggiungi le cartelle appena create in `filter.xml` in etc/META-INF/[gerarchia di cartelle] come:
+1. Aggiungi le cartelle create in `filter.xml` in etc/META-INF/[gerarchia di cartelle] come:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>

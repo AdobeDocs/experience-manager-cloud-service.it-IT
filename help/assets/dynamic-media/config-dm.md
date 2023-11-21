@@ -4,7 +4,7 @@ description: Scopri come configurare Dynamic Medie in Adobe Experience Manager a
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3794'
 ht-degree: 3%
@@ -84,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    La nuova password viene salvata quando si seleziona **[!UICONTROL Salva]** nell&#39;angolo superiore destro del **[!UICONTROL Crea configurazione Dynamic Medie]** pagina.
 
-   Se hai selezionato **[!UICONTROL Annulla]** nel **[!UICONTROL Cambia password]** , è comunque necessario immettere una nuova password quando si salva la configurazione di Dynamic Medie appena creata.
+   Se hai selezionato **[!UICONTROL Annulla]** nel **[!UICONTROL Cambia password]** , è comunque necessario immettere una nuova password quando si salva la configurazione di Dynamic Medie creata.
 
    Vedi anche [Cambia la password in Dynamic Medie](#change-dm-password).
 

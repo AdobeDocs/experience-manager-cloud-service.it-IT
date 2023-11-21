@@ -1,13 +1,13 @@
 ---
 title: Video 360/VR
-description: Scopri come utilizzare il 360 e il video VR (Virtual Reality) in Dynamic Media.
+description: Scopri come utilizzare il 360 e il video VR (Virtual Reality) in Dynamic Medie.
 contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 I video a 360° registrano una vista in ogni direzione contemporaneamente. Le riprese vengono effettuate utilizzando una telecamera omnidirezionale o una serie di telecamere. Durante la riproduzione, su uno schermo piatto, l&#39;utente ha il controllo dell&#39;angolo di visualizzazione; la riproduzione su dispositivi mobili applica di solito i controlli giroscopici incorporati.
 
-Dynamic Media include il supporto nativo per la distribuzione di 360 risorse video. Per impostazione predefinita, non è necessaria alcuna configurazione aggiuntiva per la visualizzazione o la riproduzione. Puoi distribuire video 360 utilizzando le estensioni video standard come .mp4, .mkv e .mov. Il codec più comune è H.264.
+Dynamic Medie include il supporto nativo per la distribuzione di 360 risorse video. Per impostazione predefinita, non è necessaria alcuna configurazione aggiuntiva per la visualizzazione o la riproduzione. Puoi distribuire video 360 utilizzando le estensioni video standard come .mp4, .mkv e .mov. Il codec più comune è H.264.
 
 È possibile utilizzare il visualizzatore video 360/VR per eseguire il rendering di video equirettangolari. Il risultato è un&#39;esperienza visiva coinvolgente di una stanza, una proprietà, una posizione, un paesaggio, una procedura medica e così via.
 
 L&#39;audio spaziale non è attualmente supportato; se l&#39;audio è mixato in stereo, il bilanciamento (L/R) non cambia quando il cliente cambia l&#39;angolo di visualizzazione della telecamera.
 
-Consulta [Utilizzo di video Dynamic Media 360 e miniatura video personalizzata con AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
+Consulta [Utilizzo di video Dynamic Medie 360 e miniatura video personalizzata con AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
 
 Vedi anche [Gestione dei predefiniti per i visualizzatori](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -53,20 +53,22 @@ Consulta [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edi
 
    Il rendering di contenuti video a 360° richiede requisiti più elevati per la risoluzione del video sorgente e delle rappresentazioni codificate rispetto ai contenuti video standard non a 360°.
 
-   Puoi utilizzare il profilo video adattivo fornito con Dynamic Media. Tuttavia, risulta in una qualità video 360-inferiore rispetto a quella che si otterrebbe per un video non 360 codificato con le stesse impostazioni sottoposte a rendering con un visualizzatore video non 360. Pertanto, se è richiesta una qualità video 360 elevata, effettuare le seguenti operazioni:
+   Puoi utilizzare il profilo video adattivo fornito con Dynamic Medie. Tuttavia, risulta in una qualità video 360-inferiore rispetto a quella che si otterrebbe per un video non 360 codificato con le stesse impostazioni sottoposte a rendering con un visualizzatore video non 360. Pertanto, se è richiesta una qualità video 360 elevata, effettuare le seguenti operazioni:
 
    * Idealmente, il contenuto video originale a 360 ha una delle seguenti risoluzioni:
 
       * 1080p - 1920 x 1080, risoluzione Full HD o FHD oppure
       * 2160p - 3840 x 2160, nota come risoluzione 4k, UHD o HD Ultra. Questa risoluzione elevata del display si trova più spesso su televisori e monitor per computer di alta qualità. La risoluzione 2160p è spesso chiamata &quot;4k&quot; perché la larghezza è vicina a 4000 pixel. In altre parole, offre quattro volte i pixel di 1080p.
+
    * [Creare un profilo video adattivo personalizzato](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) con rappresentazioni di qualità superiore. Ad esempio, puoi creare un profilo video adattivo contenente le tre impostazioni seguenti:
 
       * Larghezza=auto; Altezza=720; Bit rate=2500 kbps
       * Larghezza=auto; Altezza=1080; Bit rate=5000 kbps
       * Larghezza=auto; Altezza=1440; Bit rate=6600 kbps
+
    * Elabora contenuti video 360 in una cartella dedicata esclusivamente alle risorse video 360.
 
-   Questo approccio aumenta le esigenze della rete e della CPU dell&#39;utente finale.
+   Questo approccio aumenta le esigenze della rete e della CPU dell&#39;utente.
 
 1. [Carica il video nella cartella](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
@@ -101,7 +103,7 @@ Quando sei soddisfatto del video 360, puoi pubblicarlo.
 
 Consulta [Incorporazione di un visualizzatore di video o immagini in una pagina web](/help/assets/dynamic-media/embed-code.md).
 Consulta [Collegamento di URL all’applicazione web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a [!DNL Experience Manager Sites] pagine.
-Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Consulta [Aggiunta di risorse Dynamic Medie alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **Per visualizzare in anteprima 360 video:**
 
@@ -124,7 +126,8 @@ Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-me
 
    * Dall’elenco Visualizzatori, seleziona **[!UICONTROL Video360VR]**.
 
-      Il video VR (Virtual Reality) è un video coinvolgente a cui si accede utilizzando cuffie per realtà virtuale. Come per i video ordinari, puoi creare video VR all’inizio quando un video viene registrato o catturato utilizzando videocamere a 360°.
+     Il video VR (Virtual Reality) è un video coinvolgente a cui si accede utilizzando cuffie per realtà virtuale. Come per i video ordinari, puoi creare video VR all’inizio quando un video viene registrato o catturato utilizzando videocamere a 360°.
+
    ![Schermata di un utente che passa il puntatore del mouse sull&#39;opzione Visualizzatore Video360VR.](assets/6_5_360video-preview-video360vr.png)
    *Una schermata video 360 VR.*
 
@@ -132,9 +135,9 @@ Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-me
 
 ## Pubblicazione di video 360 {#publishing-video}
 
-Per utilizzare il video 360, è necessario pubblicarlo. La pubblicazione di un video 360 attiva l’URL e il codice di incorporamento. Pubblica inoltre il video 360 sul cloud Dynamic Media, integrato con una rete CDN per una distribuzione scalabile e performante.
+Per utilizzare il video 360, è necessario pubblicarlo. La pubblicazione di un video 360 attiva l’URL e il codice di incorporamento. Pubblica inoltre il video 360 sul cloud Dynamic Medie, integrato con una rete CDN per una distribuzione scalabile e performante.
 
-Consulta [Pubblicazione di risorse Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) per informazioni dettagliate su come pubblicare video a 360°.
+Consulta [Pubblicazione di risorse Dynamic Medie](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) per informazioni dettagliate su come pubblicare video 360.
 Vedi anche [Incorporazione di un visualizzatore di video o immagini in una pagina web](/help/assets/dynamic-media/embed-code.md).
 Vedi anche [Collegamento di URL all’applicazione web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a [!DNL Experience Manager Sites] pagine.
-Vedi anche [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Vedi anche [Aggiunta di risorse Dynamic Medie alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).

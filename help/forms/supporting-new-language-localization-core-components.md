@@ -2,7 +2,7 @@
 title: Come si aggiunge il supporto per nuove lingue a un modulo adattivo basato su componenti core?
 description: Scopri come aggiungere nuove lingue per un modulo adattivo.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 2%
@@ -145,7 +145,7 @@ Esegui questo passaggio solo se `<locale>` stai aggiungendo non è tra `en`, `de
    <filter root="/etc/languages"/>
    ```
 
-   ![Aggiungi le cartelle appena create in `filter.xml` in `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
+   ![Aggiungi le cartelle create in `filter.xml` in `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
 ### 6. Eseguire il commit delle modifiche e distribuire la pipeline {#commit-changes-in-repo-deploy-pipeline}
 

@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2535'
 ht-degree: 17%
@@ -20,7 +20,7 @@ ht-degree: 17%
 
 # Personalizzare lo stile dei componenti core CIF di AEM {#style-aem-cif-core-components}
 
-Il [Progetto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) è una base di codice di riferimento per l’utilizzo di [Componenti core CIF](https://github.com/adobe/aem-core-cif-components). In questo tutorial, analizzerai il progetto di riferimento Venia e capirai come sono organizzati i CSS e JavaScript utilizzati dai componenti core CIF di AEM. Puoi anche creare uno stile CSS con cui aggiornare lo stile predefinito del file **Product Teaser** componente.
+Il [Progetto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) è una base di codice di riferimento per l’utilizzo di [Componenti core CIF](https://github.com/adobe/aem-core-cif-components). In questo tutorial, analizzerai il progetto di riferimento Venia e capirai come sono organizzati i CSS e JavaScript utilizzati dai componenti core CIF dell’AEM. Puoi anche creare uno stile CSS con cui aggiornare lo stile predefinito del file **Product Teaser** componente.
 
 >[!TIP]
 >
@@ -28,7 +28,7 @@ Il [Progetto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) è una ba
 
 ## Cosa verrà creato
 
-In questo tutorial, viene implementato un nuovo stile per il componente Product Teaser, che assomiglia a una scheda. Le lezioni apprese nell’esercitazione possono essere applicate ad altri componenti CIF di base.
+In questo tutorial, viene implementato un nuovo stile per il componente Product Teaser, che assomiglia a una scheda. Le lezioni apprese nell’esercitazione possono essere applicate ad altri Componenti core CIF.
 
 ![Cosa verrà creato](../assets/style-cif-component/what-you-will-build.png)
 
@@ -42,7 +42,7 @@ Stai per clonare il [Progetto Venia](https://github.com/adobe/aem-cif-guides-ven
 
 >[!NOTE]
 >
-> **Puoi utilizzare un progetto esistente** (in base all’Archetipo di progetto AEM con CIF incluso) e salta questa sezione.
+> **Puoi utilizzare un progetto esistente** (in base all’archetipo del progetto AEM con CIF incluso) e salta questa sezione.
 
 1. Esegui il seguente comando Git per clonare il progetto:
 
@@ -57,7 +57,7 @@ Stai per clonare il [Progetto Venia](https://github.com/adobe/aem-cif-guides-ven
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. Aggiungi le configurazioni OSGi necessarie per collegare l’istanza AEM a un’istanza Adobe Commerce o aggiungere le configurazioni al progetto appena creato.
+1. Aggiungi le configurazioni OSGi necessarie per collegare l’istanza AEM a un’istanza Adobe Commerce o aggiungere le configurazioni al progetto creato.
 
 1. A questo punto, devi disporre di una versione funzionante di una vetrina connessa a un’istanza di Adobe Commerce. Accedi a `US` > `Home` pagina in: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -469,7 +469,7 @@ AEM inoltre tenta di memorizzare nella cache le librerie client per migliorare l
 
 ## Congratulazioni {#congratulations}
 
-Hai terminato di creare lo stile del primo componente core CIF dell’AEM e hai utilizzato un server di sviluppo Webpack.
+Hai terminato di creare lo stile del primo componente core CIF AEM e hai utilizzato un server di sviluppo Webpack.
 
 ## Sfida bonus {#bonus-challenge}
 

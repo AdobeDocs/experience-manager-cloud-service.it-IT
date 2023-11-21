@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ Le impostazioni di produzione possono variare in diversi aspetti.
 
 * Puoi avere un singolo endpoint GraphQL federato che combina i dati AEM e Adobe Commerce GraphQL invece di personalizzare il client Apollo.
 * L’applicazione PWA Studi può utilizzare direttamente l’URL dell’endpoint GraphQL dell’AEM, senza un proxy con UPWARD. Il proxy può anche essere spostato in un livello diverso (ad esempio, CDN).
-* L’approccio più adatto alle tue esigenze dipende inoltre in larga misura da come distribuisci l’applicazione PWA Studi all’utente finale.
+* L’approccio più adatto alle tue esigenze dipende inoltre fortemente dal modo in cui distribuisci l’applicazione PWA Studi all’utente.
 
 Questa estensione viene fornita con due esempi.
 

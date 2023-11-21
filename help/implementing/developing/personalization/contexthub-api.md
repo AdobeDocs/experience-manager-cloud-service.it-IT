@@ -2,9 +2,9 @@
 title: Riferimento API JavaScript di ContextHub
 description: L’API JavaScript ContextHub è disponibile per gli script quando il componente ContextHub è stato aggiunto alla pagina
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4612'
+source-wordcount: '4613'
 ht-degree: 2%
 
 ---
@@ -856,7 +856,7 @@ Copia dell&#39;albero pulita.
 
 #### getItem() {#getitem}
 
-Recupera il valore da un oggetto per la chiave a.
+Recupera il valore da un oggetto per la chiave.
 
 ##### Parametri {#parameters-getitem-2}
 

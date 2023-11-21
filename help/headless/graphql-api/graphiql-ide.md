@@ -3,10 +3,10 @@ title: Utilizzo dell’IDE GraphiQL in AEM
 description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 94%
+source-wordcount: '1138'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ Il **GraphiQL** Questo strumento consente di testare ed eseguire il debug delle 
 * selezionare l’**Endpoint** appropriato per la configurazione Sites da utilizzare per le query;
 * inserire direttamente nuove query;
 * creare e accedere a **[query persistenti](/help/headless/graphql-api/persisted-queries.md)**;
-* eseguire le query per visualizzare immediatamente i risultati;
+* eseguire le query per visualizzare immediatamente i risultati
 * gestire **variabili di query**;
 * salvare e gestire **query persistenti**;
 * pubblicare o annullare la pubblicazione di **query persistenti** sul servizio **Pubblica** o **Anteprima**; ad esempio, a/da `dev-publish`
@@ -105,7 +105,7 @@ Le [query persistenti](/help/headless/graphql-api/persisted-queries.md) sono con
 >
 >Le regole di riscrittura personalizzate in Dispatcher potrebbero sovrascrivere le impostazioni predefinite di AEM Publish.
 >
->Se invii intestazioni di controllo cache basate su TTL da Dispatcher, in base a un pattern di corrispondenza della posizione, potresti voler escludere `/graphql/execute.json/*` dai match.
+>Nel caso in cui invii intestazioni di controllo cache basate su TTL da Dispatcher, in base a un pattern di corrispondenza della posizione, se necessario, escludi `/graphql/execute.json/*` dai match.
 
 Utilizzando GraphQL è possibile configurare le intestazioni cache HTTP per controllare questi parametri per la singola query persistente.
 

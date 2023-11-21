@@ -2,9 +2,9 @@
 title: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1152'
 ht-degree: 83%
 
 ---
@@ -91,7 +91,7 @@ Dai un’occhiata al video [Panoramica sulla versione di marzo 2022](https://vid
 
 ### Novità {#what-is-new-foundation}
 
-* Per una risoluzione più efficiente ed efficace dei problemi relativi alle funzioni personalizzate negli ambienti Cloud, abbiamo rilasciato un nuovo strumento per sviluppatori: [Browser dell’archivio](/help/implementing/developing/tools/repository-browser.md). È un browser HTML leggero e di sola lettura che puoi avviare da Developer Console. Ottieni visibilità nell’archivio dei contenuti sui livelli di pubblicazione, authoring e anteprima, e in tutti gli ambienti, compresi produzione, staging e sviluppo. Sfoglia la struttura del contenuto, visualizza le proprietà e visualizza in anteprima e scarica i dati binari.
+* Per una risoluzione più efficiente ed efficace dei problemi relativi alle funzioni personalizzate negli ambienti Cloud, abbiamo rilasciato un nuovo strumento per sviluppatori: [Browser dell’archivio](/help/implementing/developing/tools/repository-browser.md). Si tratta di un browser HTML leggero e di sola lettura che puoi avviare dalla Console per sviluppatori. Ottieni visibilità nell’archivio dei contenuti sui livelli di pubblicazione, authoring e anteprima, e in tutti gli ambienti, compresi produzione, staging e sviluppo. Sfoglia la struttura del contenuto, visualizza le proprietà e visualizza in anteprima e scarica i dati binari.
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 

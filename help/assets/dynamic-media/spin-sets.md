@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 9%
@@ -168,7 +168,7 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
 
    * Per applicare un predefinito, fai clic su nell’angolo superiore destro della pagina **[!UICONTROL Predefinito]**, quindi seleziona un predefinito da applicare a tutte le risorse contemporaneamente.
 
-1. Seleziona **[!UICONTROL Salva]**. Il set 360 gradi appena creato viene visualizzato nella cartella in cui è stato creato.
+1. Seleziona **[!UICONTROL Salva]**. Il set 360 gradi creato viene visualizzato nella cartella in cui è stato creato.
 
 ## Visualizzazione dei set 360 gradi {#viewing-spin-sets}
 

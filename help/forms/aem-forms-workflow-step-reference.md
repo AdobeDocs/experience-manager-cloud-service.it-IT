@@ -4,9 +4,9 @@ description: I flussi di lavoro incentrati su Forms consentono di creare rapidam
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utilizzare i flussi di lavoro AEM, utilizzando Assegna passaggi attività, converti in passaggi PDF/A, Genera un documento di passaggi registrati, Utilizza flussi di lavoro, Firma passaggio documento, Genera un passaggio di output stampato, Genera output PDF non interattivo
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '7444'
+source-wordcount: '7448'
 ht-degree: 1%
 
 ---
@@ -55,8 +55,8 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 * **[!UICONTROL Priorità]**: la priorità selezionata viene visualizzata nella casella in entrata AEM. Le opzioni disponibili sono Alta, Media e Bassa. Il valore predefinito è Medio.
 * **[!UICONTROL Data di scadenza]**: specifica quanti giorni o ore devono trascorrere prima che l’attività venga contrassegnata come scaduta. Se si seleziona **[!UICONTROL Disattivato]**, quindi l’attività non viene mai contrassegnata come scaduta. È inoltre possibile specificare un gestore di timeout per eseguire attività specifiche dopo la scadenza dell&#39;attività.
 
-* **[!UICONTROL Giorni]**: numero di giorni prima dei quali l’attività deve essere completata. Il numero di giorni viene conteggiato dopo l&#39;assegnazione dell&#39;attività a un utente. Se un’attività non è completa e supera il numero di giorni specificato nel campo Giorni, se selezionata, viene attivato un gestore di timeout dopo la data di scadenza.
-* **[!UICONTROL Ore]**: numero di ore prima del quale l’attività deve essere completata. Il numero di ore che vengono conteggiate dopo l&#39;assegnazione dell&#39;attività a un utente. Se un’attività non è completa e supera il numero di ore specificato nel campo Ore, se selezionato viene attivato un gestore di timeout dopo le ore dovute.
+* **[!UICONTROL Giorni]**: numero di giorni prima dei quali l’attività deve essere completata. Il numero di giorni viene conteggiato dopo l&#39;assegnazione dell&#39;attività a un utente. Se un’attività non è completa e supera il numero di giorni specificato nel campo Giorni, se è selezionata viene attivato un gestore di timeout dopo la data di scadenza.
+* **[!UICONTROL Ore]**: numero di ore prima del quale l’attività deve essere completata. Il numero di ore che vengono conteggiate dopo l&#39;assegnazione dell&#39;attività a un utente. Se un’attività non è completa e supera il numero di ore specificato nel campo Ore, se è selezionata, viene attivato un gestore di timeout dopo le ore dovute.
 * **[!UICONTROL Timeout dopo la data di scadenza]**: seleziona questa opzione per abilitare il campo di selezione Gestore di timeout.
 * **[!UICONTROL Gestore timeout]**: seleziona lo script da eseguire quando il passaggio dell’attività di assegnazione oltrepassa la data di scadenza. Script inseriti nell’archivio CRX in [app]È possibile selezionare /fd/dashboard/scripts/timeoutHandler. Il percorso specificato non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo.
 * **[!UICONTROL Evidenzia l&#39;azione e commenta dall&#39;ultima attività in Dettagli attività]**: seleziona questa opzione per visualizzare l’ultima azione eseguita e il commento ricevuto nella sezione dei dettagli di un’attività.

@@ -4,7 +4,7 @@ description: Scopri le best practice compilate dai team di progettazione e consu
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 92%
@@ -113,9 +113,9 @@ Quando progetti lo spostamento di pagine in una Live Copy, considera la seguente
    * Non aggiungere altre azioni a questa configurazione.
 1. Posiziona la nuova configurazione.
    * Per eseguire il rollout completo della pagina, spostala durante l’eliminazione della rispettiva pagina nella posizione precedente nella Live Copy:
-      * Posiziona la configurazione appena creata prima della configurazione di rollout standard. La configurazione di rollout standard si occuperà di eliminare le pagine nelle loro posizioni precedenti.
+      * Posiziona la configurazione creata prima della configurazione di rollout standard. La configurazione di rollout standard si occuperà di eliminare le pagine nelle loro posizioni precedenti.
       * Per distribuire lo spostamento della pagina mantenendo le rispettive pagine nelle vecchie posizioni in Live Copy (essenzialmente duplicando il contenuto):
-         * Posiziona la configurazione appena creata dopo la configurazione di rollout standard. In questo modo nessun contenuto verrà eliminato nella Live Copy o disattivato dalla pubblicazione.
+         * Posiziona la configurazione creata dopo la configurazione di rollout standard. In questo modo nessun contenuto verrà eliminato nella Live Copy o disattivato dalla pubblicazione.
 
 ## Personalizzazione dei rollout {#customizing-rollouts}
 

@@ -3,9 +3,9 @@ title: Come si configura un’azione di invio per un modulo adattivo?
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio incorporate o crearne di personalizzate
 keywords: come selezionare l’azione di invio per un modulo adattivo, collegare un modulo adattivo a un elenco di sharepoint, collegare un modulo adattivo a una raccolta documenti di sharepoint, collegare un modulo adattivo a un modello dati del modulo
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3635'
+source-wordcount: '3634'
 ht-degree: 2%
 
 ---
@@ -472,7 +472,7 @@ Utilizza il **[!UICONTROL Riconvalida sul server]** in Contenitore modulo adatti
 
 Abilitazione della convalida lato server
 
-Se l&#39;utente finale ignora tali convalide e invia i moduli, il server esegue nuovamente la convalida. Se la convalida non riesce alla fine del server, la transazione di invio viene interrotta. All’utente finale viene nuovamente presentato il modulo originale. I dati acquisiti e inviati vengono presentati all’utente come un errore.
+Se l&#39;utente finale ignora tali convalide e invia i moduli, il server esegue nuovamente la convalida. Se la convalida non riesce alla fine del server, la transazione di invio viene interrotta. All’utente viene nuovamente presentato il modulo originale. I dati acquisiti e inviati vengono presentati all’utente come un errore.
 
 >[!NOTE]
 >

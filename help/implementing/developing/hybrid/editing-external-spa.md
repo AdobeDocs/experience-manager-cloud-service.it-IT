@@ -2,7 +2,7 @@
 title: Modifica di uno SPA esterno in AEM
 description: Questo documento descrive i passaggi consigliati per caricare un SPA autonomo in un’istanza AEM, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 2%
@@ -111,7 +111,7 @@ Il `initializationAsync` può facoltativamente accettare un `options` object com
 
    ![Proprietà del componente Testo](assets/external-spa-text-properties.png)
 
-   Questi valori vengono passati come proprietà al nuovo `AEMText` React e può essere utilizzato per riprodurre il contenuto.
+   Questi valori vengono passati come proprietà al `AEMText` React e può essere utilizzato per riprodurre il contenuto.
 
    ```javascript
    import React from 'react';
@@ -343,7 +343,7 @@ Per abilitare la modifica all’interno dell’AEM per questo esempio di SPA, so
 
 1. Aggiungere helper all’interno del routing SPA.
 
-   * La pagina appena creata non è ancora in grado di eseguire il rendering del contenuto previsto in AEM. Il motivo è che il router prevede un percorso di `/test` considerando che il percorso attivo dell&#39;AEM è `/wknd-spa-react/us/en/test`. Per includere la porzione dell’URL specifica per l’AEM, devi aggiungere alcuni helper sul lato SPA.
+   * La pagina creata non è ancora in grado di eseguire il rendering del contenuto previsto in AEM. Il motivo è che il router prevede un percorso di `/test` considerando che il percorso attivo dell&#39;AEM è `/wknd-spa-react/us/en/test`. Per includere la porzione dell’URL specifica per l’AEM, devi aggiungere alcuni helper sul lato SPA.
 
    ![Helper di routing](assets/external-spa-router-helper.png)
 
@@ -356,7 +356,7 @@ Per abilitare la modifica all’interno dell’AEM per questo esempio di SPA, so
 
 1. Verifica la modifica della pagina in AEM.
 
-   * Implementa il progetto in AEM e passa al nuovo `test` pagina. Ora viene eseguito il rendering del contenuto della pagina e i componenti AEM sono modificabili.
+   * Distribuire il progetto in AEM e passare al `test` pagina. Ora viene eseguito il rendering del contenuto della pagina e i componenti AEM sono modificabili.
 
 ## Limitazioni del framework {#framework-limitations}
 

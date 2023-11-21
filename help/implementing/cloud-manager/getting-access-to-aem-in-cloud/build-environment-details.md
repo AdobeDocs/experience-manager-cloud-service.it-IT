@@ -2,10 +2,10 @@
 title: Ambiente di build
 description: Scopri l’ambiente di build di Cloud Manager e come genera e verifica il codice.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -157,9 +157,9 @@ I nomi delle variabili devono rispettare le seguenti convenzioni.
 * Le variabili possono contenere solo caratteri alfanumerici e il carattere di sottolineatura (`_`).
 * I nomi devono essere scritti in lettere maiuscole.
 * È previsto un limite di 200 variabili per pipeline.
-* Ogni nome deve avere una lunghezza inferiore a 100 caratteri.
+* Ogni nome non può contenere più di 100 caratteri.
 * Ogni valore della variabile `string` deve avere una lunghezza inferiore a 2048 caratteri.
-* Ogni valore della variabile di tipo `secretString` deve avere una lunghezza inferiore a 500 caratteri.
+* Ogni `secretString` il valore della variabile di tipo non può superare i 500 caratteri.
 
 Per l’utilizzo in un file `pom.xml` Maven, in genere è utile associare queste variabili alle proprietà Maven scrivendo una sintassi simile a quella proposta di seguito.
 

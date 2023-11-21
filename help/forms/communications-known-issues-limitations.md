@@ -2,9 +2,9 @@
 title: Quali sono le considerazioni, i problemi noti e le best practice in AEM Forms?
 description: Considerazioni sui problemi noti e sulle best practice per le API di comunicazione di AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -171,7 +171,7 @@ La tabella seguente specifica le opzioni XCI.
 
 ## Best practice
 
-* L’Adobe consiglia di ospitare l’archivio dei contenitori blob dei file di dati nell’area cloud utilizzata da AEM Cloud Service.
+* L’Adobe consiglia di ospitare l’archivio dei contenitori BLOB dei file di dati nell’area cloud utilizzata da AEM Cloud Service.
 
 ## Domande frequenti {#faq}
 

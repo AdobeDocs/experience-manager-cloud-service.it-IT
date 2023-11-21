@@ -2,9 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Scopri la ricerca e l’indicizzazione dei contenuti in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2427'
 ht-degree: 29%
 
 ---
@@ -96,7 +96,7 @@ Per illustrare la distribuzione di una versione personalizzata dell’indice pre
 1. Crea una nuova cartella con il nome di indice aggiornato nel `ui.apps` directory:
    * Esempio: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. Aggiungi un file di configurazione `.content.xml` con le configurazioni personalizzate all’interno della cartella appena creata. Di seguito è riportato un esempio di personalizzazione: Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. Aggiungi un file di configurazione `.content.xml` con le configurazioni personalizzate all’interno della cartella creata. Di seguito è riportato un esempio di personalizzazione: Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -307,7 +307,7 @@ Dopo un Adobe cambia un indice predefinito come &quot;damAssetLucene&quot; o &qu
 
 ### Limitazioni attuali {#current-limitations}
 
-La gestione degli indici è supportata solo per gli indici di tipo `lucene`, con `compatVersion` imposta su `2`. Internamente, possono essere configurati e utilizzati per le query altri indici, ad esempio gli indici Elasticsearch. Query scritte rispetto al `damAssetLucene` su AEM as a Cloud Service, l&#39;indice potrebbe infatti essere eseguito su una versione Elasticsearch di questo indice. Questa differenza è invisibile all&#39;utente finale dell&#39;applicazione, tuttavia alcuni strumenti come `explain` la funzione segnala un indice diverso. Per le differenze tra gli indici Lucene e Elasticsearch, consulta [la documentazione relativa agli Elasticsearch in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non possono e non devono configurare direttamente gli indici Elasticsearch.
+La gestione degli indici è supportata solo per gli indici di tipo `lucene`, con `compatVersion` imposta su `2`. Internamente, possono essere configurati e utilizzati per le query altri indici, ad esempio gli indici Elasticsearch. Query scritte rispetto al `damAssetLucene` In caso di AEM as a Cloud Service, l&#39;indice potrebbe essere eseguito con una versione Elasticsearch di questo indice. Questa differenza è invisibile all’utente dell’applicazione, tuttavia alcuni strumenti come `explain` la funzione segnala un indice diverso. Per le differenze tra gli indici Lucene e Elasticsearch, consulta [la documentazione relativa agli Elasticsearch in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non possono e non devono configurare direttamente gli indici Elasticsearch.
 
 Sono supportati solo gli analizzatori incorporati (ovvero, gli analizzatori forniti con il prodotto). Gli analizzatori personalizzati non sono supportati.
 

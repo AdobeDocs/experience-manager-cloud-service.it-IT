@@ -2,9 +2,9 @@
 title: Come si imposta un [!DNL AEM Forms] as a cloud service?
 description: Scopri come impostare e configurare un [!DNL AEM Forms] ambiente as a Cloud Service.
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '649'
 ht-degree: 17%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 17%
 
 * **Amministratore AEM**: un amministratore AEM può contribuire a una configurazione complessiva, ad esempio per configurare gli utenti, rinforzare l’ambiente, configurare le origini dati, le e-mail e il software di terze parti. L’amministratore AEM supporta anche integrazioni quali l’integrazione con Adobe Analytics, Adobe Target e Adobe Sign.
 
-* **Utente finale**: un utente finale interagisce con il modulo pubblicato, lo invia, firma i moduli inviati, tiene traccia delle applicazioni inviate tramite un portale web e riceve comunicazioni personalizzate.
+* **Utente finale**: un utente interagisce con il modulo pubblicato, lo invia, firma i moduli inviati, tiene traccia delle applicazioni inviate tramite un portale web e riceve comunicazioni personalizzate.
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 

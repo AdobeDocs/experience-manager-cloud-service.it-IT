@@ -3,7 +3,7 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Scopri la convalida locale, il debug, la struttura del file in modalità flessibile e come migrare dalla modalità legacy alla modalità flessibile.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2990'
 ht-degree: 1%
@@ -397,7 +397,7 @@ In modalità flessibile, è possibile includere anche altri file, purché si tro
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-Ad esempio, puoi includere un file in una directory appena creata in `conf.d/includes` come segue:
+Ad esempio, puoi includere un file in una directory creata in `conf.d/includes` come segue:
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf

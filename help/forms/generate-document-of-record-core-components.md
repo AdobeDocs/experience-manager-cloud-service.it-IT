@@ -2,9 +2,9 @@
 title: Come si genera un documento di record per Adaptive Forms?
 description: Scopri come generare un modello per un documento di record (DoR) per i componenti core di Forms adattivi.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3106'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Carica il modello XFA (file XDP) nella tua istanza di AEM Forms. Per configurare
 1. Nella sezione Configurazione modello del documento record della scheda Modello modulo, seleziona **Associa modello modulo come modello del documento record**. Quando si seleziona questa opzione, vengono visualizzati tutti i modelli XFA (file XDP) disponibili sul computer. Selezionare il file appropriato. Inoltre, assicurati che venga utilizzato lo stesso schema (schema dati) per il modulo adattivo e il modello XFA selezionato (file XDP).
 1. Clic **[!UICONTROL Fine.]**
 
-Il modulo adattivo è ora configurato per utilizzare un file XDP come modello per il documento di record. Il prossimo passo è: [associare componenti Modulo adattivo ai campi modello corrispondenti](#bind-adaptive-form-components-with-template-fields).
+Il modulo adattivo è ora configurato per utilizzare un file XDP come modello per il documento di record. Il passaggio successivo consiste nel [associare componenti Modulo adattivo ai campi modello corrispondenti](#bind-adaptive-form-components-with-template-fields).
 
 ## Generare un documento di record basato su Acroform {#generate-an-Acroform-based-document-of-record}
 
@@ -57,7 +57,7 @@ Carica Adobe Acrobat PDF (Acroform) nella tua istanza di AEM Forms. Per configur
 1. Nella sezione Configurazione modello del documento record della scheda Modello modulo, seleziona **Associa modello modulo come modello del documento record**. Selezionando questa opzione, vengono visualizzati tutti gli Acrobat PDF (Acroform) disponibili sul computer. Selezionare l&#39;Acroform che si desidera utilizzare.
 1. Clic **[!UICONTROL Fine.]**
 
-Il modulo adattivo è ora configurato per utilizzare un Acroform come modello per documento di record. Il prossimo passo è: [associare componenti Modulo adattivo ai campi modello corrispondenti](#bind-adaptive-form-components-with-template-fields).
+Il modulo adattivo è ora configurato per utilizzare un Acroform come modello per documento di record. Il passaggio successivo consiste nel [associare componenti Modulo adattivo ai campi modello corrispondenti](#bind-adaptive-form-components-with-template-fields).
 
 ## Genera automaticamente un documento di record {#auto-generate-a-document-of-record}
 
@@ -136,7 +136,7 @@ Ora, quando il modulo adattivo viene inviato, viene generato un documento di rec
 
 Tieni presenti le seguenti considerazioni e limitazioni durante l’utilizzo del documento di record per Forms adattivo.
 
-* I modelli di documento Record non supportano il formato RTF. Pertanto, qualsiasi testo RTF nel modulo adattivo statico o nelle informazioni fornite dall’utente finale viene visualizzato come testo normale nel documento di record.
+* I modelli di documento Record non supportano il formato RTF. Pertanto, qualsiasi testo RTF nel modulo adattivo statico o nelle informazioni compilate dall’utente viene visualizzato come testo normale nel documento di record.
 * I frammenti di documento in un modulo adattivo non vengono visualizzati nel documento di record. Tuttavia, sono supportati i frammenti di moduli adattivi.
 * L’associazione del contenuto nel documento di record generato per un modulo adattivo basato su schema XML non è supportata.
 * La versione localizzata del documento record viene creata su richiesta per una lingua quando l’utente richiede il rendering del documento record. La localizzazione del documento record si verifica insieme alla localizzazione del modulo adattivo. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->

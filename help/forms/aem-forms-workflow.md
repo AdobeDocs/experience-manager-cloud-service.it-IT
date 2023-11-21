@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 'Utilizza AEM Forms Workflow per automatizzare e creare rapidamente flussi di lavoro per i processi aziendali. Ad esempio: revisione e approvazione, Generazione di PDF, Flussi di lavoro di Adobe Sign.'
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2392'
 ht-degree: 2%
@@ -66,7 +66,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta d
 1. Apri la console Modelli di flusso di lavoro. L’URL predefinito è `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleziona **Crea**, quindi **Crea modello**. Viene visualizzata la finestra di dialogo Aggiungi modello flusso di lavoro.
 1. Inserisci il **Titolo** e **Nome** (facoltativo). Ad esempio, una richiesta di ipoteca. Tocca **Fine**.
-1. Seleziona il modello di flusso di lavoro appena creato e tocca **Modifica**. Ora è possibile aggiungere passaggi del flusso di lavoro per creare una logica di business. La prima volta che crei un modello di flusso di lavoro, contiene:
+1. Seleziona il modello di flusso di lavoro creato e tocca **Modifica**. Ora è possibile aggiungere passaggi del flusso di lavoro per creare una logica di business. La prima volta che crei un modello di flusso di lavoro, contiene:
 
    * I passaggi: Inizio flusso e Fine flusso. Questi passaggi rappresentano l’inizio e la fine del flusso di lavoro. Questi passaggi sono necessari e non possono essere modificati o rimossi.
    * Un esempio di passaggio Partecipante denominato Passaggio 1. Questo passaggio è configurato per assegnare un elemento di lavoro all’utente amministratore. Rimuovi questo passaggio.

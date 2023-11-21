@@ -1,8 +1,6 @@
 ---
 title: Configurare il servizio di trascrizione
-seo-title: Configure transcription service
 description: Adobe Experience Manager Assets è configurato con [!DNL Azure Media Services] che genera automaticamente la trascrizione testuale della lingua parlata in un file audio o video supportato in formato WebVTT (Vtt).
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,9 +9,9 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1689'
 ht-degree: 87%
 
 ---
@@ -158,7 +156,7 @@ La trascrizione supporta i seguenti formati di file audio e video:
 ## Limitazioni note {#known-limitations}
 
 * La funzione di trascrizione è supportata per video di durata fino a 10 minuti.
-* La lunghezza del titolo del video deve essere inferiore a 80 caratteri.
+* Il titolo del video non può contenere più di 80 caratteri.
 * Sono supportati file di dimensione fino a 15 GB.
 * La durata massima di elaborazione supportata è di 60 minuti.
 * In un account [!DNL Azure] a pagamento, puoi caricare fino a 50 filmati al minuto. Tuttavia, in un account di prova puoi caricare fino a cinque filmati al minuto.

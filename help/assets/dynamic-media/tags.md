@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '6663'
+source-wordcount: '6661'
 ht-degree: 7%
 
 ---
@@ -52,7 +52,7 @@ L’integrazione sfrutta due tipi separati e indipendenti di tracciamento dei vi
 
 ### Informazioni sul tracciamento con Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
-Adobe Analytics consente di tenere traccia delle azioni eseguite dall’utente finale quando interagiscono con i visualizzatori Dynamic Medie sul sito web. Adobe Analytics consente inoltre di tenere traccia dei dati specifici del visualizzatore. Ad esempio, puoi tenere traccia e registrare gli eventi di caricamento della visualizzazione insieme al nome della risorsa, alle azioni di zoom che si sono verificate e alle azioni di riproduzione video.
+Adobe Analytics consente di tenere traccia delle azioni eseguite dall’utente quando interagiscono con i visualizzatori Dynamic Medie sul sito web. Adobe Analytics consente inoltre di tenere traccia dei dati specifici del visualizzatore. Ad esempio, puoi tenere traccia e registrare gli eventi di caricamento della visualizzazione insieme al nome della risorsa, alle azioni di zoom che si sono verificate e alle azioni di riproduzione video.
 
 In Experienci Platform Tags, i concetti di *Elementi dati* e *Regole* collabora per abilitare il tracciamento di Adobe Analytics.
 
@@ -221,9 +221,9 @@ Il valore esatto restituito dall’elemento dati dipende dal contesto. Se l’el
    * Utilizza come attivatore l’evento di pressione del tasto dall’estensione Core Experienci Platform Tags.
    * Invia il valore di **[!UICONTROL ZoomScale]** Elemento dati in Adobe Analytics.
 
-Ora, supponiamo che l’utente finale carichi la pagina web con i due visualizzatori. In entrata *visualizzatore1*, ingrandiscono fino al 50% della scala; quindi, in *visualizzatore2*, ingrandiscono fino al 25% della scala. In entrata *visualizzatore1*, spostano l&#39;immagine e infine premendo un tasto sulla tastiera.
+Ora, supponiamo che l’utente carichi la pagina web con i due visualizzatori. In entrata *visualizzatore1*, ingrandiscono fino al 50% della scala; quindi, in *visualizzatore2*, ingrandiscono fino al 25% della scala. In entrata *visualizzatore1*, spostano l&#39;immagine e infine premendo un tasto sulla tastiera.
 
-L’attività dell’utente finale comporta l’esecuzione delle due chiamate di tracciamento seguenti ad Adobe Analytics:
+L’attività dell’utente comporta l’esecuzione delle seguenti due chiamate di tracciamento ad Adobe Analytics:
 
 * La prima chiamata si verifica perché **[!UICONTROL TrackPan]** La regola viene attivata quando l’utente effettua una panoramica *visualizzatore1*. Tale chiamata invia il 50% come valore di **[!UICONTROL ZoomScale]** Elemento dati perché l’elemento dati sa che la regola è attivata da *visualizzatore1* e recupera il valore di scala corrispondente;
 * La seconda chiamata si verifica perché **[!UICONTROL TrackKey]** La regola viene attivata quando l’utente preme un tasto sulla tastiera. La chiamata invia il 25% come valore di **[!UICONTROL ZoomScale]** Elemento dati perché la regola non è stata attivata dal visualizzatore. Di conseguenza, l’elemento dati restituisce il valore più aggiornato.
@@ -519,7 +519,7 @@ Vedi anche [Configurare una proprietà di tocco](https://experienceleague.adobe.
 
 1. Seleziona **[!UICONTROL Salva]**.
 
-   Seleziona la proprietà appena creata e procedi come segue: *Installazione e configurazione delle estensioni*.
+   Seleziona la proprietà creata, quindi procedi a *Installazione e configurazione delle estensioni*.
 
 ### Installazione e configurazione delle estensioni {#installing-and-setup-of-extensions}
 

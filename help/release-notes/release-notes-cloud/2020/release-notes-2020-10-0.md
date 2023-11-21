@@ -1,10 +1,10 @@
 ---
-title: Note sulla versione 2020.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione 2020.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.10.0 as a Cloud Service."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 28%
 
 ---
@@ -47,7 +47,7 @@ La seguente versione (2020.11.0) sarà del 1° dicembre 2020.
 
 ### Novità in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics per Forms adattivo**: ora puoi acquisire e tenere traccia del comportamento degli utenti connessi e non (anonimi) tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni approfondite sull’utente finale. Aiuta gli utenti aziendali a prendere decisioni informate sul contenuto, il layout e lo stile dei moduli adattivi in base alle informazioni raccolte.
+* **Analytics per Forms adattivo**: ora puoi acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni approfondite. Aiuta gli utenti aziendali a prendere decisioni informate sul contenuto, il layout e lo stile dei moduli adattivi in base alle informazioni raccolte.
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
@@ -63,9 +63,9 @@ Puoi scrivere a [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 
 ### Novità {#what-is-new-commerce}
 
-* È stato rilasciato il sito di riferimento CIF Venia (2020.10.2), che include la versione più recente dei Componenti Core CIF v1.4.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) per ulteriori dettagli.
+* È stato rilasciato il sito di riferimento CIF Venia (2020.10.2), che include la versione più recente dei Componenti core CIF v1.4.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) per ulteriori dettagli.
 
-* È stata rilasciata la versione 1.4.0 dei componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) per ulteriori dettagli.
+* È stata rilasciata la versione 1.4.0 dei Componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) per ulteriori dettagli.
 
 ### Correzioni di bug {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ La data di pubblicazione di Cloud Manager in Experience Manager as a Cloud Servi
 * Il numero di variabili per ambiente è stato aumentato a 200.
 
 * Ora nella scheda Ambiente della pagina Panoramica sono elencati fino a tre ambienti. Gli utenti possono selezionare il pulsante **Mostra tutto** per passare alla pagina di riepilogo Ambiente e visualizzare una tabella con l’elenco completo degli ambienti.
-Consulta [Ambiente di visualizzazione](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) per ulteriori dettagli.
+Per ulteriori dettagli, consulta la [Visualizzazione dell’ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
 
 ### Correzioni di bug {#bug-fixes-cloud-manager}
 

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2870'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ _Per creare un predefinito immagine, seleziona le opzioni dalla scheda Avanzate.
 
 Ricordi in [Anatomia di un URL Dynamic Medie](#dm-journey-d) in precedenza, hai letto dell’URL di Dynamic Medie e di come viene creato. Il **[!UICONTROL Modificatore immagine]** è la casella di testo in cui è possibile digitare qualsiasi parametro di elaborazione immagine aggiuntivo desiderato. I parametri vengono inclusi nel nome predefinito dell’URL quando le immagini vengono distribuite, utilizzando il predefinito. Nella schermata precedente, il parametro `bgc=451B15` è stato aggiunto. In altre parole, è stato aggiunto un colore di sfondo marrone scuro.
 
-Potete immaginare un predefinito immagine come una ricetta per le immagini. Fornirà tutte le immagini che usano il predefinito, in modo coerente, ogni volta; sarà lo stesso. Il parametro `&op_brightness=+10` per aumentare leggermente la luminosità.
+Potete immaginare un predefinito immagine come una ricetta per le immagini. Fornirà sempre tutte le immagini che usano il predefinito in modo coerente; sarà sempre lo stesso. Il parametro `&op_brightness=+10` per aumentare leggermente la luminosità.
 
 Una volta terminato, salvate il predefinito, che ora è disponibile per tutte le immagini. In questo caso, vogliamo applicare la _Medio_ predefinito immagine di un&#39;immagine di una ciotola di cioccolato liquido.
 
@@ -154,7 +154,7 @@ Alcuni degli utilizzi più comuni di Dynamic Medie è la possibilità di creare 
 
 I set di immagini sono in genere costituiti da una serie di risorse di immagini presentate come una singola entità. Questo tipo di set offre agli utenti un’esperienza di visualizzazione integrata, in cui gli utenti possono visualizzare diverse visualizzazioni di un elemento facendo clic su un’immagine di miniatura. I set di immagini consentono di presentare viste alternative di un elemento e il visualizzatore offre strumenti di zoom per esaminare attentamente le immagini. [Visualizzare un set di immagini denominato &quot;In esecuzione&quot; che utilizza il visualizzatore a comparsa](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-Qui in Dynamic Medie potete vedere diverse immagini di scarpe da corsa. Si tratta di una serie di linee di prodotti che il reparto vendite e marketing desidera che i clienti visualizzino come una singola presentazione, un set di immagini.
+Qui in Dynamic Medie potete vedere diverse immagini di scarpe da corsa. Si tratta di una serie di linee di prodotti che i reparti vendite e marketing desiderano visualizzare come una singola presentazione, un set di immagini.
 
 ![Creazione di un set di immagini](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _Inizio della creazione di un set di immagini._

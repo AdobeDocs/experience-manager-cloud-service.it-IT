@@ -4,10 +4,10 @@ description: Utilizza un’app React di esempio per scoprire come personalizzare
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 88%
+source-wordcount: '1019'
+ht-degree: 87%
 
 ---
 
@@ -89,7 +89,7 @@ Ora che hai modificato un titolo nell’app, prova a cambiare un’immagine.
 
 1. Seleziona **Anteprima** in alto a destra nella finestra per visualizzare le modifiche. L’anteprima dell’app demo si apre in una nuova scheda. Fai clic su Aggiorna nel browser per vedere nell’app la nuova immagine del biker con pantaloncini gialli.
 
-Come vedi, è davvero facile aggiornare immagini e risorse nelle app con il CMS AEM headless.
+Con i CMS headless AEM è facile aggiornare immagini e risorse nelle app.
 
 ## Aggiungi all’app un riferimento a un nuovo frammento di contenuto {#create-moment}
 

@@ -2,10 +2,10 @@
 title: Test dell’audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 93%
+source-wordcount: '588'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ L’audit dell’esperienza è una funzione disponibile nelle pipeline di produz
 
 1. non introducano regressioni.
 
-L’audit dell’esperienza in Cloud Manager assicura i più elevati standard di esperienza utente sul sito.
+L’audit dell’esperienza in Cloud Manager assicura che l’esperienza dell’utente sul sito sia degli standard più elevati.
 
 I risultati dell’audit sono informativi e consentono agli utenti con ruolo Responsabile dell’implementazione di visualizzare i punteggi e cosa è cambiato tra i punteggi correnti e precedenti. Questa informazione è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.
 

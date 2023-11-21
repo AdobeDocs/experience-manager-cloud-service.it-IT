@@ -2,9 +2,9 @@
 title: Creazione di componenti
 description: I componenti AEM vengono utilizzati per memorizzare, formattare ed eseguire il rendering dei contenuti resi disponibili sulle pagine web. Segui questa pagina per scoprire come creare canali e componenti di rendering.
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '287'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Tuttavia, poiché i componenti di un canale vengono in genere visualizzati a sch
 
 Ad esempio `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
-L’utente non deve preoccuparsi di aggiungere il selettore all’URL durante la modifica. Una logica lato client è in ascolto dell’evento di switch di livello e aggiunge il selettore se un canale ha il tipo di risorsa dedicato *screens/core/components/channel.*
+L’utente non deve preoccuparsi di aggiungere il selettore all’URL durante la modifica. Una logica lato client è in ascolto dell’evento di switch di livello e aggiunge il selettore se il canale ha il tipo di risorsa dedicato *screens/core/components/channel.*
 
 ## Rendering dei componenti {#rendering-components}
 

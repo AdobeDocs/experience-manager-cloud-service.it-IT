@@ -2,10 +2,10 @@
 title: Layout reattivo
 description: AEM consente di realizzare un layout dinamico per le pagine
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 83%
+source-wordcount: '1732'
+ht-degree: 82%
 
 ---
 
@@ -149,7 +149,7 @@ Come con altri componenti, puoi selezionare e quindi intervenire (tagliare, copi
 >
 >Poiché un contenitore di layout è un sistema paragrafo, l’eliminazione del componente comporta l’eliminazione sia della griglia di layout che di tutti i componenti (e del relativo contenuto) presenti all’interno del contenitore.
 
-1. Se passi il puntatore del mouse o tocchi il segnaposto della griglia, viene visualizzato il menu Azioni.
+1. Se passi il mouse o tocchi il segnaposto della griglia, viene visualizzato il menu Azioni.
 
    ![Aggiungi al Contenitore di layout](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

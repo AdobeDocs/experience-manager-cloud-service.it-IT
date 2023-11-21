@@ -2,9 +2,9 @@
 title: Utilizzo di CRXDE Lite
 description: CRXDE Liti fa parte del modulo quickstart dell’AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 1%
 
 ---
@@ -192,7 +192,7 @@ Ora puoi adattare il nodo alle tue esigenze modificando le proprietà o creando 
 >
 La maggior parte delle operazioni di modifica, tra cui **Crea nodo**, conserva tutte le modifiche in memoria e le archivia nell&#39;archivio solo al momento del salvataggio (utilizzando [**Pulsante Salva tutto**](#save-all-button)). Tuttavia, alcune operazioni, come lo spostamento, vengono mantenute automaticamente.
 >
-La convalida relativa alla possibilità che il nodo appena creato sia consentito dal tipo di nodo del nodo principale viene eseguita anche dall’archivio durante il salvataggio delle modifiche. Se ricevi un messaggio di errore durante il salvataggio di un nodo, controlla se la struttura del contenuto è valida (ad esempio, non è possibile creare un nodo). `nt:unstructured` nodo come elemento secondario di `nt:folder` nodo ).
+La convalida relativa all’autorizzazione o meno del nodo creato dal tipo di nodo del nodo principale viene eseguita anche dall’archivio durante il salvataggio delle modifiche. Se ricevi un messaggio di errore durante il salvataggio di un nodo, controlla se la struttura del contenuto è valida (ad esempio, non è possibile creare un nodo). `nt:unstructured` nodo come elemento secondario di `nt:folder` nodo ).
 
 ## Creazione di una proprietà {#creating-a-property}
 
@@ -242,7 +242,7 @@ Per importare una definizione di tipo di nodo:
 Con CRXDE Liti è possibile visualizzare il file `error.log` che si trova nel file system in `<aem-install-dir>/crx-quickstart/logs` e filtrarlo con il livello di registro appropriato. Procedere come segue:
 
 1. Apri CRXDE Liti nel browser.
-1. Nel menu a discesa a destra della sezione [**Scheda Console**](#console-tab) nella parte inferiore della finestra, seleziona **Registri server**.
+1. Nel menu a discesa a destra della [**Scheda Console**](#console-tab) nella parte inferiore della finestra, seleziona **Registri server**.
 1. Fai clic su **Interrompi** per visualizzare i messaggi.
 
 Operazioni disponibili:

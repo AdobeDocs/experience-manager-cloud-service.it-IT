@@ -1,7 +1,7 @@
 ---
 title: Cosa sono le espressioni di modulo adattivo?
 description: Utilizza espressioni Forms adattive per aggiungere convalida, calcolo e attivazione o disattivazione automatica della visibilità di una sezione.
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2698'
 ht-degree: 0%
@@ -121,7 +121,7 @@ L’espressione Riepilogo viene in genere utilizzata per ripetere gli elementi s
 
 **Tipo di ritorno:** L’espressione restituisce un elemento String che diventa il titolo del Pannello a soffietto.
 
-**Esempio:** &quot;Numero account : &quot;+ textbox1.value
+**Esempio:** &quot;Numero account : &quot; + textbox1.value
 
 ### Convalida espressione {#validate-expression}
 
@@ -187,7 +187,7 @@ I metodi per aggiungere convalide a un campo sono:
 
 ### Obbligatorio {#required}
 
-Per rendere obbligatorio un componente, in **Modifica** del componente, puoi selezionare l’opzione **Titolo e testo > Obbligatorio**. Puoi anche aggiungere il messaggio richiesto appropriato (facoltativo). .
+Per rendere obbligatorio un componente, in **Modifica** del componente, puoi selezionare l’opzione **Titolo e testo > Obbligatorio**. Puoi anche aggiungere il messaggio richiesto appropriato (facoltativo).
 
 ### Modelli di convalida {#validation-patterns}
 

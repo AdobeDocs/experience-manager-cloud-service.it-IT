@@ -2,7 +2,7 @@
 title: Modelli di pagina
 description: I Modelli di pagina vengono utilizzati durante la creazione di una pagina utilizzata come base per la nuova pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 7%
@@ -356,7 +356,7 @@ When creating an editable template, the value is copied from the template type t
 Se è stato creato un modello che può fungere da base per altri modelli, è possibile copiarlo come tipo di modello.
 
 1. Crea un modello come faresti con un modello pagina [come documentato qui](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), che fungerà da base per il tipo di modello.
-1. Utilizzando CRXDE Liti, copia il modello appena creato da `templates` nodo a `template-types` nodo sotto [cartella modelli](#template-folders).
+1. Utilizzando CRXDE Liti, copia il modello creato da `templates` nodo a `template-types` nodo sotto [cartella modelli](#template-folders).
 1. Elimina il modello da `templates` nodo sotto [cartella modelli](#template-folders).
 1. Nella copia del modello che si trova in `template-types` nodo, elimina tutto `cq:template` e `cq:templateType` proprietà da tutti `jcr:content` nodi.
 
@@ -595,6 +595,6 @@ Il diagramma seguente illustra il processo di valutazione del modello:
 
 Per limitare i modelli utilizzabili per creare pagine figlie in una determinata pagina, utilizza `cq:allowedTemplates` proprietà di `jcr:content` nodo della pagina per specificare l’elenco di modelli consentiti come pagine figlie. Ogni valore nell’elenco deve essere il percorso assoluto di un modello per una pagina figlia consentita, ad esempio `/apps/wknd/templates/page-content`.
 
-È possibile utilizzare `cq:allowedTemplates` proprietà del modello  `jcr:content` per applicare questa configurazione a tutte le nuove pagine create che utilizzano questo modello.
+È possibile utilizzare `cq:allowedTemplates` proprietà del modello  `jcr:content` per applicare questa configurazione a tutte le pagine create che utilizzano questo modello.
 
 Per aggiungere altri vincoli, ad esempio relativi alla gerarchia dei modelli, è possibile utilizzare `allowedParents/allowedChildren` proprietà nel modello. È quindi possibile specificare esplicitamente che le pagine create da un modello devono essere padri/figli di pagine create da un modello T.

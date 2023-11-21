@@ -2,9 +2,9 @@
 title: Sviluppo locale AEM con Universal Editor
 description: Scopri in che modo Universal Editor supporta la modifica sulle istanze AEM locali a scopo di sviluppo.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Questo documento illustra come eseguire AEM in HTTPS insieme a una copia locale 
 
 ## Configurare AEM per l’esecuzione su HTTPS {#aem-https}
 
-All’interno di un frame esterno protetto con HTTPS non è possibile caricare un frame HTTP non sicuro. Il servizio Universal Editor viene eseguito su HTTPS, pertanto anche su HTTPS deve essere eseguito AEM o qualsiasi altra pagina remota.
+All’interno di un frame esterno protetto con HTTPS non è possibile caricare un frame HTTP non protetto. Il servizio Universal Editor viene eseguito su HTTPS, pertanto anche su HTTPS deve essere eseguito AEM o qualsiasi altra pagina remota.
 
 A questo scopo, devi configurare l’AEM per l’esecuzione su HTTPS. A scopo di sviluppo, puoi utilizzare un certificato autofirmato.
 

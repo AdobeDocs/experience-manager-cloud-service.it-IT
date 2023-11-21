@@ -2,7 +2,7 @@
 title: Come possiamo creare e utilizzare i temi in Adaptive Forms?
 description: Puoi utilizzare i temi per assegnare uno stile e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2676'
 ht-degree: 4%
@@ -319,7 +319,7 @@ Per distribuire il tema è necessario un repository. Accedi al tuo [Archivio AEM
 
 ##### 5.2. Inviare le modifiche all’archivio {#committing-the-changes}
 
-Ora, invia le modifiche all’archivio dei temi del Cloud Service AEM Forms. .
+Ora, invia le modifiche all’archivio dei temi del Cloud Service AEM Forms.
 
 1. Passa alla cartella principale della cartella dei temi.  In questo caso, il nome della cartella dei temi è `aem-forms-theme-canvas`.
 1. Apri il prompt dei comandi o il terminale.

@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 43220614f567bdfad17c6ac9c8b3adcc856ff044
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Segui le [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experi
 ![Progetto Commerce AEM](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-Crea e distribuisci il progetto AEM Commerce appena creato nell’SDK AEM locale eseguendo il seguente comando dalla directory principale del progetto.
+Crea e distribuisci il progetto AEM Commerce creato nell’SDK AEM locale eseguendo il seguente comando dalla directory principale del progetto.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -403,11 +403,11 @@ Per creare uno stream di dati nell’Experience Platform, completa i passaggi se
 
    ![Crea flussi di dati AEP](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. Denomina lo stream di dati utilizzando __Nome__ campo obbligatorio. Sotto __Schema Evento__ , seleziona lo schema appena creato e fai clic su __Salva__.
+1. Denomina lo stream di dati utilizzando __Nome__ campo obbligatorio. Sotto __Schema Evento__ , seleziona lo schema creato e fai clic su __Salva__.
 
    ![Definisci flussi di dati AEP](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. Apri lo stream di dati appena creato e fai clic su __Aggiungi servizio__.
+1. Apri lo stream di dati creato e fai clic su __Aggiungi servizio__.
 
    ![Servizio di aggiunta flussi di dati AEP](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 

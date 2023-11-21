@@ -2,10 +2,10 @@
 title: Dashboard di audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO tramite un’interfaccia dashboard chiara e informativa.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 23%
+source-wordcount: '830'
+ht-degree: 22%
 
 ---
 
@@ -16,7 +16,7 @@ Scopri in che modo l’audit dell’esperienza convalida il processo di distribu
 
 >[!NOTE]
 >
->Questa funzione è disponibile solo per [il programma early adopter.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Questa funzione è disponibile solo per [il programma di adozione anticipata.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 >
 >Per informazioni dettagliate sulla funzione Audit dell’esperienza esistente per AEM as a Cloud Service, consulta [Test di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
@@ -28,7 +28,7 @@ L’audit dell’esperienza è una funzione disponibile nelle pipeline di produz
 
 1. non introducano regressioni.
 
-L’audit dell’esperienza in Cloud Manager assicura i più elevati standard di esperienza utente sul sito.
+L’audit dell’esperienza in Cloud Manager assicura che l’esperienza dell’utente sul sito sia degli standard più elevati.
 
 I risultati dell’audit sono informativi e consentono agli utenti con ruolo Responsabile dell’implementazione di visualizzare i punteggi e cosa è cambiato tra i punteggi correnti e precedenti. Questa informazione è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.
 

@@ -3,9 +3,9 @@ title: Come si precompilano i campi del modulo adattivo?
 description: 'Utilizzare i dati esistenti per precompilare i campi di un modulo adattivo: gli utenti possono precompilare le informazioni di base in un modulo accedendo con i propri profili social.'
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2041'
 ht-degree: 1%
 
 ---
@@ -261,7 +261,7 @@ In genere, i campi associati (schema modulo) e non associati vengono creati nell
 
 >[!NOTE]
 >
-> Di regola, non combinare campi associati e non associati se sono intersecati in dati compilati dall’utente finale in campi non associati. Se possibile, è necessario modificare lo schema o il modello di modulo XFA e aggiungere una voce per i campi non associati, in modo che anch&#39;esso diventi associato e i relativi dati siano disponibili come altri campi nei dati inviati.
+> Di regola, non combinare campi associati e non associati se sono intersecati nei dati compilati dall’utente nei campi non associati. Se possibile, è necessario modificare lo schema o il modello di modulo XFA e aggiungere una voce per i campi non associati, in modo che anch&#39;esso diventi associato e i relativi dati siano disponibili come altri campi nei dati inviati.
 
 ## Protocolli supportati per la precompilazione dei dati utente {#supported-protocols-for-prefilling-user-data}
 

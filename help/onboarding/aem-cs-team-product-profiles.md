@@ -2,10 +2,10 @@
 title: Team e profili di prodotto di AEM as a Cloud Service
 description: Scopri come usare i team e i profili di prodotto di AEM as a Cloud Service per consentire e limitare l’accesso alle soluzioni Adobe con licenza.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 85%
+source-wordcount: '847'
+ht-degree: 81%
 
 ---
 
@@ -42,7 +42,7 @@ Durante l’onboarding, i membri del gruppo di AEM as a Cloud Service vengono ag
 
 >[!TIP]
 >
->* Per ulteriori informazioni sui profili di prodotto di AEM, consulta il documento [Assegnazione dei profili di prodotto di AEM](/help/journey-onboarding/assign-profiles-aem.md).
+>* Per ulteriori informazioni sui profili di prodotto dell’AEM, consulta [Assegnazione dei profili di prodotto dell’AEM](/help/journey-onboarding/assign-profiles-aem.md).
 >* Per ulteriori informazioni sul processo di onboarding, consulta [percorso di onboarding](/help/journey-onboarding/overview.md).
 
 ## Profili di prodotto di Cloud Manager {#cloud-manager-product-profiles}
@@ -82,5 +82,5 @@ Il team di Cloud Manager deve includere almeno:
 
 >[!TIP]
 >
->* Per ulteriori informazioni sui profili di prodotto di Cloud Manager, consulta il documento [Assegnazione di membri del team ai profili di prodotto di Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* Per ulteriori informazioni sui profili di prodotto di Cloud Manager, consulta [Assegnazione dei membri del gruppo ai profili di prodotto di Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 >* Per ulteriori informazioni sul processo di onboarding, consulta [percorso di onboarding](/help/journey-onboarding/overview.md).

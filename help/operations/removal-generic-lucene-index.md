@@ -2,7 +2,7 @@
 title: Rimozione indice Lucene generico
 description: Scopri la rimozione pianificata degli indici Lucene generici e come potrebbe esserne interessato.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -154,6 +154,7 @@ Prima della rimozione dell’indice Lucene generico, il `pathfield` il component
 >[!NOTE]
 >
 >L’Editor modello per frammenti di contenuto utilizza campi percorso specializzati con il tipo di risorsa Sling `dam/cfm/models/editor/components/contentreference`.
+>
 > * Al momento queste query eseguono query senza tipi di nodo specificati, con conseguente registrazione di un avviso a causa dell’utilizzo dell’indice Lucene generico.
 > * Le istanze di questi componenti presto verranno impostate per impostazione predefinita su utilizzando `cq:Page` e `dam:Asset` tipi di nodo senza ulteriori azioni del cliente.
 > * Il `nodeTypes` per ignorare questi tipi di nodo predefiniti.
@@ -167,6 +168,6 @@ Adobe adotterà un approccio in due fasi per rimuovere l’indice Lucene generic
 
 Adobe monitorerà i messaggi di registro di cui sopra e tenterà di contattare i clienti che dipendono dall’indice Lucene generico.
 
-Come mitigazione a breve termine, Adobe aggiungerà definizioni di indici personalizzati direttamente ai sistemi dei clienti per evitare problemi funzionali o di prestazioni derivanti dalla rimozione dell’indice Lucene generico, se necessario.
+Come mitigazione a breve termine, Adobe aggiunge definizioni di indici personalizzati direttamente ai sistemi dei clienti per evitare problemi funzionali o di prestazioni derivanti dalla rimozione dell’indice Lucene generico, se necessario.
 
-In questi casi, al cliente verrà fornita la definizione aggiornata dell’indice e gli verrà consigliato di includerla nelle versioni future della sua applicazione tramite Cloud Manager.
+In questi casi, al cliente viene fornita la definizione di indice aggiornata e si consiglia di includerla nelle versioni future della sua applicazione tramite Cloud Manager.

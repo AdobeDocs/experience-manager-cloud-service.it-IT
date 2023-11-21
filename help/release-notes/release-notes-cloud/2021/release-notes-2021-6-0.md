@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione 2021.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione 2021.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 29%
+source-wordcount: '1435'
+ht-degree: 34%
 
 ---
 
@@ -48,7 +48,7 @@ La prossima versione è pianificata per il 15 luglio 2021.
 
 ### Novità {#what-is-new-junecm}
 
-* Ora il servizio di anteprima viene distribuito su base continua per tutti i programmi. I clienti ricevono una notifica interna al prodotto quando il programma è abilitato per il servizio Anteprima. Consulta [Accesso al servizio Anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) per ulteriori dettagli.
+* Ora il servizio di anteprima viene distribuito su base continua per tutti i programmi. Quando il programma sarà abilitato per il servizio di anteprima, i clienti riceveranno una notifica interna al prodotto. Per ulteriori informazioni, vedi [Accesso al servizio di anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 * Ora le dipendenze Maven scaricate durante la fase di build vengono memorizzate nella cache tra le esecuzioni della pipeline. La funzione verrà attivata per i clienti nelle prossime settimane.
 
@@ -60,15 +60,15 @@ La prossima versione è pianificata per il 15 luglio 2021.
 
 * La regola di qualità `ImmutableMutableMixCheck` è stata aggiornata per classificare i nodi `/oak:index` come non modificabili.
 
-* Le regole di qualità `CQBP-84` e `CQBP-84--dependencies` sono state consolidate in un’unica regola. Come parte di questo consolidamento, la scansione delle dipendenze identifica più accuratamente i problemi nelle dipendenze di terze parti che vengono distribuiti nel runtime AEM.
+* Le regole di qualità `CQBP-84` e `CQBP-84--dependencies` sono state consolidate in un’unica regola. Come parte di tale consolidamento, la scansione delle dipendenze identifica più accuratamente i problemi nelle dipendenze di terze parti distribuite nel runtime di AEM.
 
 * Per evitare confusione, nella pagina Dettagli dell’ambiente sono state consolidate le righe del segmento Pubblica AEM e Pubblica Dispatcher.
 
   ![Ambienti di Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* È stata aggiunta una nuova regola di qualità del codice per convalidare la struttura degli indici `damAssetLucene`. Consulta [Indici Oak Lucene delle risorse DAM personalizzati](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) per ulteriori dettagli.
+* È stata aggiunta una nuova regola di qualità del codice per convalidare la struttura degli indici `damAssetLucene`. Per ulteriori informazioni, vedi [Indici Oak DAM Asset Lucene personalizzati](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check).
 
-* Ora nella pagina Dettagli dell’ambiente vengono visualizzati più nomi di dominio per i servizi Publish e Anteprima (a seconda dei casi). Consulta [Dettagli dell’ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) per ulteriori dettagli.
+* Ora nella pagina Dettagli dell’ambiente vengono visualizzati più nomi di dominio per i servizi di pubblicazione e anteprima (a seconda dei casi). Vedi [Dettagli dell’ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) per ulteriori dettagli.
 
 ### Correzioni di bug {#bug-fixes-junecm}
 
@@ -140,7 +140,7 @@ Puoi scrivere a [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
 ### Bug corretti in [!DNL Forms] {#forms-bugs-fixed}
 
 * Quando un campo viene convalidato prima dell’invio dei dati al servizio back-end tramite Form Data Model (FDM), le convalide hanno esito positivo ma il servizio Form Data Model non riesce a richiamare la post-convalida.
-* Quando invii un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file da 0 byte all’altra estremità. Questo è un problema noto in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* Quando invii un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file da 0 byte all’altra estremità. Si tratta di un problema noto in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 

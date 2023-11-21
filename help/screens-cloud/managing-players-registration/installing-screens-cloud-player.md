@@ -2,9 +2,9 @@
 title: Installazione e configurazione dei lettori in Schermi as a Cloud Service
 description: Questa pagina descrive come installare e configurare i lettori in Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Il monitoraggio della riproduzione di base in un lettore AEM Screens consente di
 
 * Migliora la reattività a schermate vuote o esperienze bloccate nel campo.
 
-* Riduce il rischio di mostrare all’utente finale un’esperienza non funzionante.
+* Riduce il rischio di mostrare all’utente un’esperienza non funzionante.
 
 ### Informazioni sulle proprietà {#understand-properties}
 

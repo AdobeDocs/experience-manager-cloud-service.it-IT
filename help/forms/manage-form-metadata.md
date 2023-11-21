@@ -2,9 +2,9 @@
 title: Come possiamo gestire i metadati per AEM Forms?
 description: I metadati semplificano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1742'
 ht-degree: 3%
 
 ---
@@ -140,7 +140,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
      <li>HTML</li> 
      <li>PDF</li> 
      <li>Entrambi</li> 
-    </ul> <p>Questa opzione viene utilizzata per limitare il formato di rendering dei moduli solo nel portale dei moduli in cui sono visibili all'utente finale.</p> </td> 
+    </ul> <p>Questa opzione viene utilizzata per limitare il formato di rendering dei moduli solo nel portale dei moduli in cui sono visibili all'utente.</p> </td> 
   </tr> 
   <tr> 
    <td>Tag</td> 

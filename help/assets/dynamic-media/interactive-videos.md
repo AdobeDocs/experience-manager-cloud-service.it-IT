@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '5966'
+source-wordcount: '5964'
 ht-degree: 3%
 
 ---
@@ -586,7 +586,7 @@ L’implementazione Quickview esistente rappresenta in genere una catena di azio
 1. La logica di back-end restituisce i dati o il contenuto Quickview corrispondenti al codice front-end.
 1. Il codice front-end carica i dati o il contenuto Quickview.
 1. Facoltativamente, il codice front-end converte i dati Quickview caricati in una rappresentazione HTML.
-1. Il codice front-end visualizza una finestra di dialogo o un pannello modale ed esegue il rendering del contenuto HTML sullo schermo per l’utente finale.
+1. Il codice front-end visualizza una finestra di dialogo o un pannello modale ed esegue il rendering del contenuto HTML sullo schermo per l’utente.
 
 Queste chiamate non rappresentano chiamate API pubbliche indipendenti che possono essere chiamate dalla logica della pagina web da un passaggio arbitrario. Si tratta invece di una chiamata concatenata in cui ogni passaggio successivo è nascosto nell’ultima fase (callback) del passaggio precedente.
 
@@ -598,7 +598,7 @@ In un gestore eventi di questo tipo, il codice front-end esegue le seguenti oper
 * Costruisce un URL Quickview in base ai dati delle miniature.
 * Attiva il processo di caricamento di Quickview dal backend e di rendering sullo schermo per la visualizzazione.
 
-Inoltre, il visualizzatore video interattivo supporta la modalità di funzionamento a schermo intero. L’utente finale attiva le Visualizzazioni rapide selezionando una miniatura senza uscire dallo schermo intero. Per ottenere questa funzionalità, modificate il codice front-end in modo che la finestra di dialogo modale Quickview sia collegata al contenitore del visualizzatore. Non aggiungere il BODY del documento o altri elementi della pagina web che non sono disponibili quando il visualizzatore è in modalità a schermo intero. Il codice che esegue questo processo ascolta un altro callback del visualizzatore inviato dopo il caricamento del visualizzatore sulla pagina.
+Inoltre, il visualizzatore video interattivo supporta la modalità di funzionamento a schermo intero. L’utente attiva le Visualizzazioni rapide selezionando una miniatura senza uscire dallo schermo intero. Per ottenere questa funzionalità, modificate il codice front-end in modo che la finestra di dialogo modale Quickview sia collegata al contenitore del visualizzatore. Non aggiungere il BODY del documento o altri elementi della pagina web che non sono disponibili quando il visualizzatore è in modalità a schermo intero. Il codice che esegue questo processo ascolta un altro callback del visualizzatore inviato dopo il caricamento del visualizzatore sulla pagina.
 
 Il codice di incorporamento restituito da Experience Manager dispone già di un gestore eventi pronto all’uso. Viene commentato come mostrato nel seguente snippet di codice evidenziato:
 

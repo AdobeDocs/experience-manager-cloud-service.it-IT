@@ -2,10 +2,10 @@
 title: 'Creazione di modelli per frammenti di contenuto: configurazione headless'
 description: Definisci la struttura del contenuto da creare e distribuire utilizzando le funzionalità headless di AEM, mediante i modelli per frammenti di contenuto.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 91%
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ Un architetto dell’informazione esegue tali attività solo occasionalmente, qu
 
 1. Al termine della creazione del modello, selezionare **Salva**.
 
-1. La modalità del modello appena creato dipende dalla selezione o meno dell’opzione **Abilita modello** durante la creazione dello stesso:
+1. La modalità del modello creato dipende dalla selezione o meno **Abilita modello** durante la creazione del modello:
    * selezionato: il nuovo modello è già **abilitato**
    * non selezionato: il nuovo modello viene creato nella modalità **Bozza**
 
