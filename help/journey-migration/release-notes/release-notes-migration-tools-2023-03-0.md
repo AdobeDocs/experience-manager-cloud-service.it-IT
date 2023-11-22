@@ -1,8 +1,9 @@
 ---
 title: Note sulla versione 2023.03.0 degli strumenti di migrazione nell’AEM as a Cloud Service
-description: Note sulla versione 2022.03.0 degli strumenti di migrazione nell’AEM as a Cloud Service
+description: Note sulla versione 2023.03.0 degli strumenti di migrazione nell’AEM as a Cloud Service
 feature: Release Information
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
+source-git-commit: d7e5a14c2dfee41b4ab5af733218fe58d17871fa
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 10%
@@ -11,7 +12,7 @@ ht-degree: 10%
 
 # Note sulla versione 2023.03.0 degli strumenti di migrazione nell’AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2022.03.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2023.03.0 degli strumenti di migrazione in AEM as a Cloud Service.
 
 ## Analisi delle best practice {#bpa-release}
 
@@ -32,7 +33,7 @@ La data di rilascio di Best Practices Analyzer v2.1.40 è il 03 marzo 2023.
 
 ### Data di pubblicazione {#release-date-ctt}
 
-La data di pubblicazione dello strumento Content Transfer v2.0.16 è il 8 marzo 2022.
+La data di pubblicazione dello strumento Content Transfer v2.0.16 è il 8 marzo 2023.
 
 ### Novità {#what-is-new-ctt}
 
