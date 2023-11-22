@@ -2,10 +2,10 @@
 title: Supporto OAuth2 per il servizio di posta
 description: Supporto Oauth2 per il servizio di posta in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 98%
+source-wordcount: '712'
+ht-degree: 92%
 
 ---
 
@@ -29,10 +29,12 @@ Per ulteriori informazioni sul servizio di posta AEM as a Cloud Service, consult
 1. Vai all’app creata e seleziona **Autorizzazioni API**.
 1. Fai clic su **Aggiungi autorizzazione** > **Autorizzazione grafico** > **Autorizzazioni delegate**.
 1. Seleziona le seguenti autorizzazioni per la tua app, quindi fai clic su **Aggiungi autorizzazione**:
+
+   >[!NOTE]
+   >
+   >La configurazione delle autorizzazioni può evolvere nel tempo. Se questi non funzionano come previsto, collabora con Microsoft.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
@@ -134,16 +136,18 @@ Prima di procedere alla configurazione di OAuth sul lato AEM, assicurati di conv
 
 1. Compila il `authUrl`, `tokenUrl`, e `refreshURL` costruendoli come descritto nella sezione precedente.
 1. Aggiungi i seguenti ambiti alla configurazione:
+
+   >[!NOTE]
+   >
+   >Gli ambiti possono evolvere nel tempo. Se questi non funzionano come previsto, collabora con Microsoft.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
 1. Creare un file di proprietà OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-sotto `/apps/<my-project>/osgiconfig/config` con la sintassi seguente. I valori `smtp.host` e `smtp.port` riflettono la configurazione di rete avanzata, come descritto nel [Tutorial sul servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=it).
+in `/apps/<my-project>/osgiconfig/config` con la sintassi seguente. I valori `smtp.host` e `smtp.port` riflettono la configurazione di rete avanzata, come descritto nel [Tutorial sul servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=it).
 
    ```
    {
