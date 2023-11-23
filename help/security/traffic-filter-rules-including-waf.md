@@ -2,10 +2,10 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
 workflow-type: tm+mt
-source-wordcount: '3437'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -259,7 +259,6 @@ La proprietà `wafFlags`, che può essere utilizzata nelle regole del filtro del
 | JSON-ERROR | Errore di codifica JSON | Corpo della richiesta POST, PUT o PATCH specificato come contenente JSON nell’intestazione della richiesta “Content-Type”, ma contenente errori di analisi JSON. Questo è spesso correlato a un errore di programmazione o a una richiesta automatizzata o dannosa. |
 | MALFORMED-DATA | Dati non validi nel corpo della richiesta | Corpo della richiesta POST, PUT o PATCH non valido in base all’intestazione della richiesta “Content-Type”. Ad esempio, se è specificata un’intestazione di richiesta “Content-Type: application/x-www-form-urlencoded” che contiene un corpo POST che è JSON. Spesso si tratta di un errore di programmazione, richiesta automatizzata o dannosa. Richiede l&#39;agente 3.2 o versione successiva. |
 | SANS | Traffico IP dannoso | Elenco [SANS Internet Storm Center](https://isc.sans.edu/) di indirizzi IP che sono stati segnalati come coinvolti in attività dannose |
-| SIGSCI-IP | Effetto di rete | IP contrassegnato da SignalSciences: ogni volta che un IP viene contrassegnato a causa di un segnale dannoso da parte del motore decisionale, tale IP verrà propagato a tutta la clientela. Vengono quindi registrate le richieste successive dagli indirizzi IP che contengono un segnale aggiuntivo per la durata del contrassegno |
 | NO-CONTENT-TYPE | Intestazione di richiesta “Content-Type” mancante | Una richiesta POST, PUT o PATCH senza intestazione di richiesta “Content-Type”. Per impostazione predefinita, i server delle applicazioni devono assumere in questo caso “Content-Type: text/plain; charset=us-ascii”. In molte richieste automatizzate e dannose potrebbe mancare “Content Type”. |
 | NOUA | Nessun agente utente | Molte richieste automatizzate e dannose utilizzano agenti utente falsi o mancanti per rendere difficile identificare il tipo di dispositivo che effettua le richieste. |
 | TORNODE | Traffico Tor | Tor è un software che nasconde l’identità di un utente. Un picco nel traffico Tor può indicare che un hacker sta cercando di mascherare la sua posizione. |
@@ -639,7 +638,6 @@ data:
         type: log
         wafFlags:
           - SANS
-          - SIGSCI-IP
           - TORNODE
           - NOUA
           - SCANNER
