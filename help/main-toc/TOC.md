@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 219eb2544dbac8ac5104be4ef8eb1bae996d95f0
+source-git-commit: 700d07e941dafd8dadd8f7abbfc10b92cb7e8144
 workflow-type: tm+mt
-source-wordcount: '4384'
+source-wordcount: '4390'
 ht-degree: 92%
 
 ---
@@ -680,6 +680,7 @@ ht-degree: 92%
    + Panoramica di Screens as a Cloud Service {#overview}
       + [Introduzione](/help/screens-cloud/introduction/introduction.md)
       + [Informazioni sulle definizioni dei ruoli](/help/screens-cloud/introduction/personas-screens-cloud.md)
+      + [Integrazione di Adobe Analytics con Screens Cloud](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
    + Onboarding in Screens as a Cloud Service {#onboarding-screens-cloud}
       + [Primo accesso](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + Aggiunta di un programma Screens come componente aggiuntivo in Cloud Manager {#adding-screens-addon}
