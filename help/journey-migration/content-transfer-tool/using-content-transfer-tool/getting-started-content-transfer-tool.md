@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1424'
-ht-degree: 18%
+ht-degree: 21%
 
 ---
 
@@ -111,7 +111,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
 >title="Popolare un set di migrazione"
->abstract="Dopo aver creato un set di migrazione, questo deve essere compilato con il contenuto dell’istanza di origine che deve essere spostato nell’ambiente as a Cloud Service dall’AEM. A questo scopo, è necessario installare lo strumento Content Transfer (Trasferimento contenuti) nell’istanza sorgente."
+>abstract="Dopo aver creato un set di migrazione, questo deve essere popolato con il contenuto dell’istanza di origine da spostare nell’ambiente AEM as a Cloud Service. A questo scopo, è necessario installare lo strumento Content Transfer (Trasferimento contenuti) nell’istanza di origine."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=it" text="Estrazione del contenuto"
 
 Per popolare il set di migrazione creato in Cloud Acceleration Manager, è necessario installare la versione più recente dello strumento Content Transfer (Trasferimento contenuti) nell’istanza Adobe Experience Manager (AEM) di origine. Segui questa sezione per scoprire come popolare il set di migrazione.
