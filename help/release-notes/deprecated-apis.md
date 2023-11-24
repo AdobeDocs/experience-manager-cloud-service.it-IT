@@ -2,8 +2,8 @@
 title: API obsolete
 description: Note sulla versione specifiche per le API obsolete e rimosse in  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: d2c7e3d88b5545eee3e6f1c511088c0f6638cfe7
+workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 100%
 
@@ -14,9 +14,8 @@ ht-degree: 100%
 Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa data di rimozione prevista. I clienti dovranno rimuovere le API dal proprio codice entro la data di rimozione prevista. L’eventuale uso delle API dopo la data di rimozione causerà errori nell’ambiente di SDK/sviluppo locale e nel processo di compilazione di Cloud Manager.
 
 
-<table>
-<thead>
 <table style="table-layout:auto">
+<thead>
   <tr>
     <th>Pacchetto/Classe</th>
     <th>Commenti</th>
