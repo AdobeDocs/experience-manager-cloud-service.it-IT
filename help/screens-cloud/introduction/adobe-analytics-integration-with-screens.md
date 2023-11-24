@@ -1,5 +1,5 @@
 ---
-title: Integrazione di Adobe Analytics con AEM Screens
+title: Integrazione di Adobe Analytics con AEM Screens Cloud
 seo-title: Adobe Analytics Integration with AEM Screens
 description: Segui questa pagina per scoprire l’integrazione predefinita di AEM Screens con Adobe Analytics e ti fornisce una prova di riproduzione.
 seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
@@ -12,14 +12,15 @@ discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bf0a841a5cd5eb278fd3d59484c84d1cee172b4e
+exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
+source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
-# Integrazione di Adobe Analytics con AEM Screens {#adobe-analytics-integration-with-aem-screens}
+# Integrazione di Adobe Analytics con AEM Screens Cloud {#adobe-analytics-integration-with-aem-screens}
 
 Questa sezione tratta i seguenti argomenti:
 
@@ -54,18 +55,15 @@ Il diagramma architetturale seguente spiega l’integrazione di Adobe Analytics 
 
 ![Integrazione con Adobe Analytics](/help/screens-cloud/assets/analytics-architecture.png)
 
-## Abilitazione di Adobe Analytics nel cloud AEM Screens {#enabling-adobe-analytics-in-aem-screens-cloud}
+## Abilitazione di Adobe Analytics in AEM Screens Cloud {#enabling-adobe-analytics-in-aem-screens-cloud}
 
 Contatta il tuo Adobe Relationship Manager per abilitare Adobe Analytics in Screens Cloud.
 
-## Screens Analytics: Flusso di abilitazione {#screens-analytics-enablement-flow}
-
->[!CAUTION]
->
->Prima di configurare le proprietà, contatta l’Adobe Relationship Manager per creare un ticket per ottenere un **Chiave API di Analytics** e **Progetto Analytics** da utilizzare con AEM Screens.
-
-## Utilizzo del servizio Adobe Analytics in AEM Screens {#using-adobe-analytics-service-in-aem-screens}
+## Utilizzo del servizio Adobe Analytics in AEM Screens Cloud {#using-adobe-analytics-service-in-aem-screens}
 
 Questo scenario richiama l’API di Analytics tramite chiamate REST da un servizio di analisi nei componenti core delle schermate firmware e strumento per creare e inviare in modo esplicito eventi specifici per un particolare caso d’uso, consentendo al contempo l’estensibilità in cui qualsiasi messaggio personalizzato può essere inviato ad Analytics da un canale sviluppato personalizzato.
 
 Gli eventi di Analytics vengono archiviati offline in indexedDB e successivamente bloccati e inviati al cloud.
+
+>[!NOTE]
+>Per ulteriori informazioni sul sequenziamento e sul modello dati standard per gli eventi, consulta [Configurazione di Adobe Analytics per AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) per i dettagli.
