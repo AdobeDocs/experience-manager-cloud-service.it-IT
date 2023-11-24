@@ -1,98 +1,98 @@
 ---
-title: Domande frequenti per AEM Forms as a Cloud Service
+title: Domande frequenti su AEM Forms as a Cloud Service
 description: Domande frequenti su Forms as a Cloud Service
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '995'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Domande frequenti {#frequently-asked-questions}
 
-* **Posso utilizzare l’editor di codice per creare regole?**
-Puoi utilizzare l’Editor visivo per creare le regole. L’editor di codice non è disponibile su [!DNL Forms] as a Cloud Service. Se il modulo adattivo utilizza script di regole sviluppati utilizzando l’editor di codice, utilizza [Utilità di migrazione](migrate-to-forms-as-a-cloud-service.md) per convertire gli script di codice in funzioni personalizzate. È possibile utilizzare funzioni personalizzate con Visual Editor per continuare a ottenere i risultati ottenuti con l&#39;editor di codice.
+* **È utilizzare l’editor di codice per creare regole?**
+Per creare le regole, è possibile utilizzare l’editor visivo. L’editor di codice non è disponibile su [!DNL Forms] as a Cloud Service. Se il modulo adattivo utilizza script di regole sviluppati utilizzando l’editor di codice, utilizza l’[utilità di migrazione](migrate-to-forms-as-a-cloud-service.md) per convertire gli script di codice in funzioni personalizzate. È possibile utilizzare le funzioni personalizzate con l’editor visivo per continuare a ottenere i risultati ottenuti con l’editor di codice.
 
 * **È possibile creare un modulo adattivo basato su XFA sulle istanze di Cloud Service?**
-Sì, puoi creare un modulo adattivo basato su XFA nell’istanza di Cloud Service. Tuttavia, il supporto per Adaptive Forms basato su XFA non è disponibile per AEM Forms as a Cloud Service SDK (Local development environment, ambiente di sviluppo locale). Se desideri utilizzare Adaptive Forms basato su XFA con l’SDK di AEM Forms as a Cloud Service, contatta il supporto Adobe con i dettagli del caso d’uso e i requisiti specifici.
+Sì, è possibile creare un modulo adattivo basato su XFA sull’istanza di Cloud Service. Tuttavia, il supporto per i moduli adattivi basati su XFA non è disponibile per l’SDK di AEM Forms as a Cloud Service (Ambiente di sviluppo locale). Se desideri utilizzare i moduli adattivi basati su XFA con l’SDK di AEM Forms as a Cloud Service, contatta il supporto Adobe con i dettagli del caso d’uso e i requisiti specifici.
 
 <!-- * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
 
   Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment). -->
 
-* **È possibile migrare il contenuto da un sito locale o [!DNL Adobe-Managed Services] ambienti da [!DNL Forms] ambiente as a Cloud Service?**
-Sì, puoi migrare il codice personalizzato, il contenuto e le risorse da On-Premise o [!DNL Adobe-Managed Services] ambienti da [!DNL Forms] ambiente as a Cloud Service. Per istruzioni dettagliate, consulta [Migrare a Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md).
+* **È possibile migrare il contenuto da ambienti on-premise o da [!DNL Adobe-Managed Services] all’ambiente di [!DNL Forms] as a Cloud Service?**
+Sì, è possibile migrare il codice personalizzato, il contenuto e le risorse da ambienti on-premise o da [!DNL Adobe-Managed Services] all’ambiente di [!DNL Forms] as a Cloud Service. Per istruzioni dettagliate, consulta [Migrare a Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md).
 
 <!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
 
-* **Dove posso trovare l&#39;AEM? [!DNL Forms] as a Cloud Service [!DNL Java™] Documentazione di riferimento API?**
-Puoi scaricare la documentazione di riferimento dell’API Java™ da [!DNL Maven Central Repository]. Per scaricare:
+* **Dove è possibile trovare la documentazione di riferimento API [!DNL Java™] per AEM [!DNL Forms] as a Cloud Service?**
+È possibile scaricare la documentazione di riferimento API Java™ da [!DNL Maven Central Repository]. Per scaricarla:
    1. Passa a [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
-   1. Individua e apri la pagina contenente la versione più recente di [!DNL Experience Manager Forms] SDK
-   1. Fare clic sull&#39;opzione Visualizza tutto per visualizzare tutti i file.
+   1. Individua e apri la pagina contenente la versione più recente di [!DNL Experience Manager Forms] SDK.
+   1. Fai clic sull’opzione Visualizza tutto per visualizzare tutti i file.
    1. Scarica ed estrai il file `aem-forms-sdk-api-<version>-javadocs`.jar.
-   1. Apri il file index.html per visualizzare la documentazione di riferimento dell’API.
+   1. Apri il file index.html per visualizzare la documentazione di riferimento API.
 
-* **Dove posso trovare [!DNL JavaScript™] Riferimento API per Forms adattivo?**
-Puoi scaricare [!DNL JavaScript™] Documentazione di riferimento API da[!DNL  Maven Central Repository]. Per scaricare:
+* **Dove è possibile trovare il riferimento API [!DNL JavaScript™] per i moduli adattivi?**
+È possibile scaricare la documentazione di riferimento API [!DNL JavaScript™] da [!DNL  Maven Central Repository]. Per scaricarla:
    1. Apri [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
-   1. Individua e apri la pagina contenente la versione più recente di [!DNL Experience Manager Forms] SDK
-   1. Fare clic sull&#39;opzione Visualizza tutto per visualizzare tutti i file.
+   1. Individua e apri la pagina contenente la versione più recente di [!DNL Experience Manager Forms] SDK.
+   1. Fai clic sull’opzione Visualizza tutto per visualizzare tutti i file.
    1. Scarica ed estrai il file `aem-forms-sdk-api-<version>-jsdoc.jar`.
-   1. Apri il file index.html per visualizzare la documentazione di riferimento dell’API.
+   1. Apri il file index.html per visualizzare la documentazione di riferimento API.
 
-* **Posso continuare a utilizzare i temi e i modelli esistenti?**
-Sì, puoi continuare a utilizzare i temi creati con AEM 6.4 Forms e AEM 6.5 Forms dopo aver utilizzato [Utilità di migrazione](migrate-to-forms-as-a-cloud-service.md) per spostarli in [!DNL AEM Forms] as a Cloud Service.
+* **È possibile continuare a utilizzare i temi e i modelli esistenti?**
+Sì, è possibile continuare a utilizzare i temi creati con AEM 6.4 Forms e AEM 6.5 Forms dopo aver utilizzato l’[utilità di migrazione](migrate-to-forms-as-a-cloud-service.md) per spostarli in [!DNL AEM Forms] as a Cloud Service.
 
-  Puoi anche creare un progetto basato su [!DNL AEM Forms] as a Cloud Service [Archetipo](setup-local-development-environment.md#forms-cloud-service-local-development-environment) e utilizza i temi e i modelli di esempio inclusi.
+  È possibile anche creare un progetto basato sull’[Archetipo](setup-local-development-environment.md#forms-cloud-service-local-development-environment) di [!DNL AEM Forms] as a Cloud Service e utilizzare i temi e i modelli di esempio inclusi.
 
-* **Posso produrre dati conformi allo schema?**
-Sì, puoi creare un Forms adattivo per produrre dati conformi allo schema.
+* **È possibile produrre dati conformi allo schema?**
+Sì, è possibile creare modelli adattivi per produrre dati conformi allo schema.
 
 <!-- * **Can I pass custom parameters to the prefill service?**
 Custom parameters are planned for an upcoming release. -->
 
-* **Posso memorizzare in cache contenuto protetto?**
-Per impostazione predefinita, la memorizzazione nella cache delle funzioni di contenuto protetto è disabilitata. Per attivare la funzione, è possibile eseguire le istruzioni fornite in [Caching di contenuto protetto](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it).
+* **È possibile memorizzare nella cache il contenuto protetto?**
+Per impostazione predefinita, la funzione di memorizzazione in cache del contenuto protetto è disabilitata. Per attivare la funzione, è possibile eseguire le istruzioni fornite in [Memorizzazione in cache del contenuto protetto](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it).
 
-* **Dispongo di un modulo adattivo localizzato; non viene eseguito il rendering della versione localizzata? Quale potrebbe essere la causa e come risolverla?**
+* **Il modulo adattivo localizzato non è il rendering di una versione localizzata? Quale potrebbe essere la causa e come risolvere il problema?**
 
-  La convenzione URL di Forms adattivo localizzato ora supporta la specifica di una lingua nell’URL. La nuova convenzione URL consente di memorizzare nella cache i moduli localizzati su una rete CDN o Dispatcher. In ambiente di Cloud Service, utilizza il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo anziché `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. L’Adobe consiglia di utilizzare il caching di Dispatcher o CDN. Consente di migliorare la velocità di rendering dei moduli precompilati.
+  La convenzione URL dei moduli adattivi localizzati consente ora di specificare le impostazioni internazionali della lingua nell’URL. La nuova convenzione URL consente di memorizzare i moduli localizzati nella cache di Dispatcher o della rete CDN. Nell’ambiente di Cloud Service, utilizza il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo anziché `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe consiglia di utilizzare la memorizzare nella cache di Dispatcher o della rete CDN. Questo consente di migliorare la velocità di rendering dei moduli precompilati.
 
-* **Ho aggiornato un modulo adattivo; la versione aggiornata non è disponibile per l’uso da parte dei clienti?**
-Per impostazione predefinita, la rete CDN aggiorna la cache dopo ogni 5 minuti, attendi 5 minuti e verifica la versione aggiornata.
+* **Se un modulo adattivo è stato aggiornato, la versione aggiornata non è disponibile per l’uso da parte da parte della clientela?**
+Per impostazione predefinita, la rete CDN aggiorna la cache ogni 5 minuti. Attendi 5 minuti e verifica la presenza della versione aggiornata.
 
-* **Posso utilizzare il passaggio Firma in un Modulo adattivo per creare un’esperienza di firma nel browser?**
-No, il passaggio Firma non è disponibile per [!DNL Forms] as a Cloud Service. Rimuovi il passaggio Firma nel Forms adattivo. Invece del passaggio Firma, consenti agli utenti di firmare un modulo adattivo dopo l’invio. Ti aiuta a continuare a fornire un’esperienza di firma nel browser.
+* **È possibile utilizzare il passaggio di Firma in un modulo adattivo per creare un’esperienza di firma nel browser?**
+No, il passaggio di Firma non è disponibile per [!DNL Forms] as a Cloud Service. Rimuovi il passaggio Firma nei moduli adattivi. Invece del passaggio di Firma, consenti agli utenti di firmare un modulo adattivo dopo l’invio. Consente di continuare a fornire un’esperienza di firma nel browser.
 
-* **Posso utilizzare il passaggio di verifica in un modulo adattivo?**
-No, il passaggio di verifica non è disponibile per [!DNL Forms] as a Cloud Service. Rimuovi il passaggio di verifica dal Forms adattivo esistente prima di spostare tali moduli in un ambiente di Cloud Service.
+* **È possibile utilizzare il passaggio di verifica in un modulo adattivo?**
+No, il passaggio di verifica non è disponibile per [!DNL Forms] as a Cloud Service. Rimuovi il passaggio di verifica dai moduli adattivi esistenti prima di spostarli in un ambiente Cloud Service.
 
-* **Posso aggiungere grafici a un modulo adattivo?**
-Sì, puoi aggiungere grafici ad Adaptive Forms. Forms adattivo fornisce un componente grafico. Puoi utilizzarlo per aggiungere grafici a un modulo adattivo.
+* **È possibile aggiungere grafici a un modulo adattivo?**
+Sì, puoi aggiungere grafici ai moduli adattivi. I moduli adattivi forniscono un componente grafico. È possibile utilizzarlo per aggiungere grafici a un modulo adattivo.
 
 * **È possibile collegare un modello di dati modulo a un modello di database relazionale?**
-È possibile collegare un modello dati modulo a [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services], e profilo utente di Experience Manager come origini dati. Il supporto per la connessione di un modello dati modulo a un database relazionale non è disponibile.
+È possibile collegare un modello dati modulo a [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] e al profilo utente di Experience Manager come origini dati. Il supporto per il collegamento di un modello dati modulo a un database relazionale non è disponibile.
 
-* **È possibile utilizzare certificati personalizzati con il modello dati modulo per l&#39;autenticazione?**
-Il modello dati modulo non fornisce un metodo per utilizzare certificati personalizzati per l&#39;autenticazione. Pertanto, i certificati personalizzati come x509 e SSL a 2 vie non sono supportati.
+* **È possibile utilizzare certificati personalizzati con il modello dati modulo per l’autenticazione?**
+Il modello dati modulo non fornisce un metodo per utilizzare certificati personalizzati per l’autenticazione. Pertanto, i certificati personalizzati come x509 e SSL bidirezionale non sono supportati.
 
-* **Posso utilizzare l’azione di invio Forms Portal per Forms adattivo?**
+* **È possibile utilizzare l’azione di invio Forms Portal per i moduli adattivi?**
 
-  Puoi modificare il Forms adattivo esistente per utilizzare [Invia all’endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Invia e-mail](configuring-submit-actions.md#send-email), [Invia utilizzando il modello dati modulo](configuring-submit-actions.md#submit-using-form-data-model), e [Richiama un flusso di lavoro AEM](configuring-submit-actions.md#invoke-an-aem-workflow) Inviare azioni. L’azione di invio Forms Portal e Forms Portal non è ancora disponibile. Per informazioni sulla disponibilità delle funzioni, consulta le note sulla versione mensili.
+  È possibile modificare i moduli adattivi esistenti per utilizzare le azioni di invio [Invia a endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Invia e-mail](configuring-submit-actions.md#send-email), [Invia utilizzando modello dati modulo](configuring-submit-actions.md#submit-using-form-data-model) e [Richiama un flusso di lavoro AEM](configuring-submit-actions.md#invoke-an-aem-workflow). Forms Portal e l’azione di invio da Forms Portal non sono ancora disponibili. Per informazioni sulla disponibilità delle funzioni, consulta le note sulla versione mensili.
 
-* **Posso utilizzare [!DNL AEM Forms] app con [!DNL AEM Forms] as a Cloud Service?**
+* **È possibile utilizzare l’app [!DNL AEM Forms] con [!DNL AEM Forms] as a Cloud Service?**
 
-  Forms adattivo offre un design responsive. Questi moduli modificano l’aspetto, la progettazione e l’interattività in base al dispositivo sottostante. Puoi continuare a utilizzare Adaptive Forms sui dispositivi mobili e controllare le note sulla versione mensili per verificare la disponibilità delle funzioni.
+  Forms adattivo offre un design responsive. Questi moduli modificano l’aspetto, la progettazione e l’interattività in base al dispositivo sottostante. Puoi continuare a utilizzare i moduli adattivi sui dispositivi mobili e controllare le note sulla versione mensili per verificare la disponibilità delle funzioni.
 
-* **Quali funzioni non fanno parte della versione GA iniziale?**
-Forms Portal [!DNL AEM Forms] L’app, l’integrazione con Adobe Analytics e l’integrazione con Adobe Target non fanno parte della versione GA iniziale. Per informazioni sulle nuove funzioni, consulta le note sulla versione mensili.
+* **Quali funzioni non fanno parte della versione iniziale con disponibilità generale?**
+Forms Portal, l’app [!DNL AEM Forms], l’integrazione con Adobe Analytics e l’integrazione con Adobe Target non fanno parte della versione iniziale con disponibilità generale. Per informazioni sulle nuove funzioni, consulta le note sulla versione mensili.
 
-* **Ho progettato un [Schema JSON per creare un modulo adattivo](adaptive-form-json-schema-form-model.md). Lo schema JSON definisce gli eventi per alcuni componenti di moduli adattivi. AEM Forms as a Cloud Service supporta gli eventi?**
-Creare il modulo adattivo basato sullo schema JSON nell’ambiente Forms Experience Manager 6.5 e utilizzare [Utility di migrazione](migrate-to-forms-as-a-cloud-service.md) per migrare tali Forms adattivi ad AEM Forms as a Cloud Service. L’utility converte tali eventi in librerie client e puoi continuare a utilizzare Forms adattivo con gli eventi in un ambiente di Cloud Service.
+* **Ho progettato uno [Schema JSON per creare un modulo adattivo](adaptive-form-json-schema-form-model.md). Lo schema JSON definisce gli eventi per alcuni componenti di moduli adattivi. AEM Forms as a Cloud Service supporta tali eventi?**
+Crea il modulo adattivo basato sullo schema JSON nell’ambiente Forms Experience Manager 6.5 e utilizza l’[utilità di migrazione](migrate-to-forms-as-a-cloud-service.md) per migrare tali moduli adattivi ad AEM Forms as a Cloud Service. L’utilità converte tali eventi in librerie client così sarà possibile continuare a utilizzare i moduli adattivi con gli eventi in un ambiente di Cloud Service.
 
 <!-- 
 
