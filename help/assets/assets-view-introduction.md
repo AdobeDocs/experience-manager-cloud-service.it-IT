@@ -3,10 +3,10 @@ title: Quali vantaggi offre Assets in AEM?
 description: Ulteriori informazioni sui principali vantaggi della visualizzazione Assets in AEM. Ad Adobe, utilizzando la sua esperienza nel rafforzamento dei professionisti del marketing e creativi, introduce una nuova esperienza utente rivoluzionaria.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 76%
+ht-degree: 74%
 
 ---
 
@@ -95,7 +95,7 @@ Imposta rapidamente una struttura di cartelle per l’organizzazione utilizzando
 
 ### Un approccio orientato alla ricerca per migliorare l’efficienza {#search-first}
 
-Sfrutta il potenziale della libreria di risorse digitali dell’organizzazione grazie alla potenza della ricerca con funzionalità all’avanguardia. Puoi dire addio alla noia di cercare manualmente tra innumerevoli file e cartelle. Qualsiasi utente può individuare immediatamente l’immagine, il video o il documento perfetto per creare campagne di marketing straordinarie, presentazioni accattivanti e contenuti coinvolgenti. Il nostro motore di ricerca ti consente di navigare facilmente tra i tipi di risorse, i metadati, i tag avanzati e persino il contenuto stesso senza conoscere la parola chiave esatta. Adotta il futuro di DAM con la nostra funzione Cerca prima e libera tutto il potenziale della tua libreria di risorse digitali.
+Sfrutta il potenziale della libreria di risorse digitali dell’organizzazione grazie alla potenza della ricerca con funzionalità all’avanguardia. Puoi dire addio alla difficoltà di navigare manualmente attraverso innumerevoli file e cartelle. Qualsiasi utente può individuare immediatamente l’immagine, il video o il documento perfetto per creare campagne di marketing straordinarie, presentazioni accattivanti e contenuti coinvolgenti. Il nostro motore di ricerca ti consente di navigare facilmente tra i tipi di risorse, i metadati, i tag avanzati e persino il contenuto stesso senza conoscere la parola chiave esatta. Adotta il futuro di DAM con la nostra funzione Cerca prima e libera tutto il potenziale della tua libreria di risorse digitali.
 
 ![Cerca prima](assets/search-first.gif)
 
