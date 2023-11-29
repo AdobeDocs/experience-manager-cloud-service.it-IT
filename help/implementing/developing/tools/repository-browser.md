@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: Il browser dell’archivio fornisce una vista in sola lettura dell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '866'
 ht-degree: 2%
 
 ---
@@ -25,20 +25,20 @@ ht-degree: 2%
 
 Il browser dell’archivio è uno strumento per sviluppatori che fornisce una visualizzazione di sola lettura nell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima. È progettato per facilitare la visualizzazione della struttura del contenuto e semplificare la visualizzazione o il debug del contenuto.
 
-Accessibile dalla Console per sviluppatori, può essere utilizzato per sfogliare l’archivio di un’istanza di authoring o pubblicazione per un ambiente selezionato.
+Accessibile da [Console per sviluppatori as a Cloud Service AEM](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), può essere utilizzato per sfogliare l’archivio di un’istanza di authoring o pubblicazione per un ambiente selezionato.
 
 ### Prerequisiti di accesso {#access-prerequisites}
 
-Per accedere a Console sviluppatori o al browser dell’archivio devono essere soddisfatte le seguenti condizioni
+Per accedere a AEM as a Cloud Service Developer Console o al browser dell’archivio devono essere soddisfatte le seguenti condizioni
 
-Per accedere a Console sviluppatori:
+Per accedere alla Console per sviluppatori as a Cloud Service dell’AEM:
 
-* Per i programmi di produzione, gli utenti devono disporre di **Cloud Manager - Ruolo Sviluppatore** nell’Admin Console
+* Per i programmi di produzione, gli utenti devono disporre di **Cloud Manager - Ruolo Sviluppatore** in Adobe Admin Console
 * Per i programmi sandbox, è disponibile per qualsiasi utente con un profilo di prodotto che consente di accedere a AEM as a Cloud Service.
 
 Per accedere al Browser dell’archivio:
 
-* Gli utenti devono disporre di **Cloud Manager - Sviluppatore** Ruolo nell’Admin Console per visualizzare le istanze Author e Publish.
+* Gli utenti devono disporre di **Cloud Manager - Sviluppatore** Ruolo nella Console per sviluppatori as a Cloud Service dell’AEM per visualizzare le istanze Author e Publish.
 * Inoltre, per l’autore, gli utenti con il profilo di prodotto Utenti AEM possono visualizzare il browser dell’archivio con un accesso in lettura minimo; le autorizzazioni dell’utente vengono rispettate durante la navigazione nell’archivio. Gli utenti con il profilo di prodotto per amministratori dell’AEM possono visualizzare il browser dell’archivio con accesso in lettura completo.
 
 Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
