@@ -4,9 +4,9 @@ description: Scopri come creare contenuti per i frammenti di contenuto, quindi c
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2267'
 ht-degree: 4%
 
 ---
@@ -59,6 +59,10 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
 * pannello centrale: mostra i campi e il contenuto effettivi della variante selezionata
    * consente di modificare il contenuto
    * se **Segnaposto scheda** I campi sono definiti all’interno del modello che vengono visualizzati qui e possono essere utilizzati per la navigazione; verranno presentati in orizzontale o come elenco a discesa.
+
+  >[!NOTE]
+  >
+  >A seconda delle definizioni nel modello sottostante, i campi possono essere soggetti a determinati tipi di [Convalida](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ![Editor frammenti di contenuto: panoramica](assets/cf-authoring-overview.png)
 

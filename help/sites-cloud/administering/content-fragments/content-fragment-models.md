@@ -4,9 +4,9 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3121'
 ht-degree: 59%
 
 ---
@@ -198,8 +198,9 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
   >
   >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
-* **Rendering come** 
-Sono disponibili varie opzioni per realizzare o riprodurre il campo in un frammento. Spesso questo consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze.
+* **Rendering come**
+
+  Le varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore può visualizzare una singola istanza del campo o se può creare più istanze. Quando **Campo multiplo** è utilizzato è possibile definire il numero minimo e massimo di elementi - vedere [Convalida](#validation) per ulteriori dettagli.
 
 * **Etichetta campo**
 Inserimento di un **Etichetta campo** genera automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente, se necessario.
@@ -257,6 +258,14 @@ Diversi tipi di dati includono ora la possibilità di definire requisiti di conv
    * È possibile fare riferimento solo alle immagini entro un intervallo di larghezza e/o altezza predefinito (in pixel).
 * **Riferimento frammento**
    * Verifica un modello per frammenti di contenuto specifico.
+* **Numero minimo di elementi** / **Numero massimo di elementi**
+
+  Campi definiti come **Campo multiplo** (impostato con **Rendering come**) puoi scegliere:
+
+   * **Limite minimo di elmenti**
+   * **Limite massimo di elementi**
+
+  Questi vengono convalidati nel [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Utilizzo di riferimenti per creare contenuti nidificati {#using-references-to-form-nested-content}
 

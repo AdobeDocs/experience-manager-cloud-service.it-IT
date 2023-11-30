@@ -4,10 +4,10 @@ description: Scopri come gestire i frammenti di contenuto AEM dalla console e da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 53%
+source-wordcount: '2622'
+ht-degree: 51%
 
 ---
 
@@ -143,10 +143,7 @@ Selezionando un frammento specifico si apre una barra degli strumenti incentrata
 * **[Sposta](/help/assets/manage-digital-assets.md)**
 * **[Rinomina](/help/assets/manage-digital-assets.md)**
 * **[Elimina](#deleting-a-fragment)**
-
-<!--
-* **[Replace](#find-and-replace)**
--->
+* **[Sostituisci](#find-and-replace)**
 
 >[!NOTE]
 >
@@ -369,13 +366,22 @@ Quando viene visualizzata la relativa finestra di dialogo, è possibile selezion
 >
 >Se il frammento è già oggetto di riferimento da un altro frammento o da una pagina, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera continuare.
 
-<!--
-## Find and Replace {#find-and-replace}
+## Trova e sostituisci {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+Il **Sostituisci** L’azione è disponibile (nella barra degli strumenti superiore) per trovare e sostituire il testo specificato nei Frammenti di contenuto selezionati.
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![Trova e sostituisci](assets/cf-managing-find-replace.png)
+
+Prima della sostituzione, vengono controllati i criteri di convalida e l’utente viene informato di eventuali conflitti, che consentono di modificare la stringa di sostituzione o di sostituire solo le istanze convalidate.
+
+>[!NOTE]
+>
+>L’azione Trova e sostituisci può essere eseguita solo su un massimo di 20 frammenti di contenuto selezionati (alla volta).
+>
+>Se selezioni più di 20 frammenti di contenuto, verrà visualizzato il messaggio **Impossibile trovare e sostituire**.
+
+![Conferma sostituzione](assets/cf-managing-confirm-replace.png)
+
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
