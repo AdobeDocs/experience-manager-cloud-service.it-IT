@@ -7,9 +7,9 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: 1d0f8bfd955c9315b01e49d8b1924add996b1599
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2146'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ Puoi scegliere di incorporare un frammento di modulo adattivo in un modulo adatt
 
 >[!NOTE]
 >
-> Se si utilizzano più volte frammenti di modulo basati su nessuno in un modulo adattivo, si verifica un problema di sincronizzazione dei dati tra i campi dei frammenti. È possibile utilizzare più volte in un modulo un singolo [frammento di modulo (basato su componenti core)](/help/forms/adaptive-form-fragments-core-components.md) non legato ad alcun modello di dati modulo, senza problemi di sincronizzazione dei dati.
+> Se si utilizzano più volte frammenti di modulo basati su nessuno in un modulo adattivo, si verifica un problema di sincronizzazione dei dati tra i campi dei frammenti. È possibile utilizzare un frammento](/help/forms/adaptive-form-fragments-core-components.md) di modulo basato su componente core che non sia legato ad alcun modello di dati modulo, più volte in un [modulo senza problemi di sincronizzazione dei dati.
 
 ## Automatico mappatura di frammenti per il binding dei dati {#auto-mapping-of-fragments-for-data-binding}
 

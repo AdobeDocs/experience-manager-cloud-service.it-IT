@@ -3,9 +3,9 @@ title: Come si configura un’azione di invio per un modulo adattivo?
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio incorporate o crearne di personalizzate
 keywords: come selezionare l’azione di invio per un modulo adattivo, collegare un modulo adattivo a un elenco di sharepoint, collegare un modulo adattivo a una raccolta documenti di sharepoint, collegare un modulo adattivo a un modello dati del modulo
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 24b0871e75280d0125c13b1605c0e8b5e555c8e7
+source-git-commit: 6ebc40b501472025cafffa258e253a53139a0301
 workflow-type: tm+mt
-source-wordcount: '3634'
+source-wordcount: '4063'
 ht-degree: 2%
 
 ---
@@ -107,10 +107,9 @@ Per attivare [!UICONTROL Allega documento record] , consulta la documentazione s
 
 Il **[!UICONTROL Invia a SharePoint]** L’azione di invio collega un modulo adattivo a un archivio Microsoft® SharePoint. È possibile inviare il file di dati del modulo, gli allegati o il documento di record all&#39;archivio di Microsoft® Sharepoint connesso.
 
-<!--
-Using Submit to SharePoint, you can:
-* [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+Utilizzando Invia a SharePoint, puoi:
+* [Collegare un modulo adattivo alla raccolta documenti di SharePoint](#connect-af-sharepoint-doc-library)
+* [Collegare un modulo adattivo a elenco SharePoint](#connect-af-sharepoint-list)
 
 ### Collegare un modulo adattivo alla raccolta documenti di SharePoint {#connect-af-sharepoint-doc-library}
 
@@ -169,61 +168,57 @@ Ora puoi utilizzare questa configurazione di SharePoint Sites per l’azione di 
 Quando si invia il modulo, i dati vengono salvati nell&#39;archivio della raccolta documenti di Microsoft® Sharepoint specificato.
 La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
 
-<!--
+### Collegare un modulo adattivo all’elenco di Microsoft® SharePoint {#connect-af-sharepoint-list}
 
-### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
+Per utilizzare [!UICONTROL Invia a elenco SharePoint] Azione di invio in un modulo adattivo:
 
-1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft® Sharepoint List Storage.
-1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
+1. [Creare una configurazione dell’elenco SharePoint](#create-sharepoint-list-configuration): collega AEM Forms all’archivio degli elenchi Microsoft® Sharepoint.
+1. [Utilizzare l’invio utilizzando il modello dati del modulo in un modulo adattivo](#use-submit-using-fdm): collega il modulo adattivo a Microsoft® SharePoint configurato.
 
-#### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
+#### Creare una configurazione dell’elenco SharePoint {#create-sharepoint-list-configuration}
 
-To connect AEM Forms to your Microsoft&reg; Sharepoint List:
+Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
-1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
-1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
-1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
-    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
-    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
+1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Seleziona un **Contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
+1. Clic **[!UICONTROL Crea]** > **[!UICONTROL Elenco SharePoint]** dall’elenco a discesa. Viene visualizzata la procedura guidata di configurazione di SharePoint.
+1. Specifica la **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l’ID client, il segreto client e l’ID tenant per l’URL OAuth, consulta [Documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * È possibile recuperare `Client ID` e `Client Secret` dell’app dal portale Microsoft® Azure.
+   * Nel portale Microsoft® Azure, aggiungi l’URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l’URL dell’istanza di authoring.
+   * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` nel **Grafico Microsoft®** per fornire autorizzazioni di lettura/scrittura. Aggiungi `AllSites.Manage` autorizzazione in **Sharepoint** per interagire in remoto con i dati di SharePoint.
+   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell’app dal portale Microsoft® Azure.
 
-      >[!NOTE]
-      >
-      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+     >[!NOTE]
+     >
+     > Il **segreto client** Il campo è obbligatorio o facoltativo dipende dalla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
 
-1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
-1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Clic **[!UICONTROL Connetti]**. In caso di connessione riuscita, il `Connection Successful` viene visualizzato il messaggio.
+1. Seleziona **[!UICONTROL Sito SharePoint]** e **[!UICONTROL Elenco SharePoint]** dall’elenco a discesa.
+1. Tocca **[!UICONTROL Crea]** per creare la configurazione cloud per Microsoft® SharePointList.
 
 
-#### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
+#### Utilizzare l’invio utilizzando il modello dati del modulo in un modulo adattivo {#use-submit-using-fdm}
 
-You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+È possibile utilizzare la configurazione dell’elenco SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in un elenco SharePoint. Per utilizzare un elenco SharePoint in un modulo adattivo come, effettua le seguenti operazioni:
 
-1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
-1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
-1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
-1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Creare un modello dati modulo utilizzando la configurazione Elenco Microsoft® SharePoint](/help/forms/create-form-data-models.md)
+1. [Configurare il modello dati modulo per recuperare e inviare dati](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
+1. [Configurare l’azione di invio utilizzando un modello dati modulo](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
-When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
+Quando si invia il modulo, i dati vengono salvati nell&#39;archivio elenco di Microsoft® Sharepoint specificato.
 
 >[!NOTE]
 >
-> In Microsoft® SharePoint List, the following column types are not supported:
-> * image column
-> * metadata column
-> * person column
-> * external data column
-
--->
+> In Microsoft® SharePoint List non sono supportati i seguenti tipi di colonna:
+> * colonna immagine
+> * colonna metadati
+> * colonna persona
+> * colonna di dati esterni
 
 ## Invia usando il modello dati modulo {#submit-using-form-data-model}
 
