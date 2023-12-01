@@ -3,10 +3,10 @@ title: Modificare le immagini
 description: Modifica le immagini utilizzando le opzioni baate su [!DNL Adobe Photoshop Express] e salva le immagini aggiornate come versioni.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 72%
+source-wordcount: '1171'
+ht-degree: 71%
 
 ---
 
@@ -82,12 +82,12 @@ Puoi convertire rapidamente un’immagine JPEG in formato PNG utilizzando Adobe 
 
 ## Modificare le immagini con l’editor incorporato di Adobi Express {#edit-using-embedded-editor}
 
-[!DNL Assets view] consente di modificare completamente le immagini direttamente dall’archivio delle risorse. L&#39;editor integrato consente di modificare facilmente un&#39;immagine [!DNL Adobe Express]. Accelera il riutilizzo delle risorse utilizzando modelli o modificando le risorse esistenti. È possibile utilizzare elementi predefiniti per rendere la risorsa sorprendente o eseguire azioni rapide per modificare l’immagine con pochi clic.
+Gli utenti con accesso a Express ora dispongono di strumenti integrati per la modifica e la creazione di immagini da Adobi Express e Adobe Firefly disponibili direttamente in AEM Assets per migliorare il riutilizzo dei contenuti e accelerarne la velocità. Puoi anche utilizzare elementi predefiniti per rendere la risorsa straordinaria o eseguire azioni rapide per modificare l’immagine con pochi clic.
 
 Per modificare le immagini mediante [!DNL Adobe Express] nell’editor incorporato, segui i passaggi seguenti:
 
 1. Seleziona un’immagine dal tuo [!DNL Experience Manager] Archivio risorse.
-1. Clic **[!UICONTROL Apri in Adobe Express]**. [!DNL Adobe Express] viene visualizzata la schermata.
+1. Clic **[!UICONTROL Apri in Adobe Express]**.
 
    ![Editor incorporato Adobi Express](assets/embedded-editor.png)
 
@@ -95,20 +95,20 @@ Per modificare le immagini mediante [!DNL Adobe Express] nell’editor incorpora
 
 1. Una volta completata la modifica dell’immagine, puoi scaricare una risorsa come nuova risorsa o salvarla come nuova versione.
 
-## Crea nuova risorsa tramite Adobi Express {#create-new-embedded-editor}
+## Creare nuove risorse con Adobi Express {#create-new-embedded-editor}
 
-[!DNL Assets view] offre la funzionalità per creare un nuovo modello da zero utilizzando [!DNL Adobe Express] editor incorporato. Per creare una nuova risorsa tramite [!DNL Adobe Expresss], esegui i seguenti passaggi:
+[!DNL Assets view] offre la funzionalità per creare un nuovo modello da zero utilizzando [!DNL Adobe Express] editor incorporato. Per creare una nuova risorsa tramite [!DNL Adobe Express], esegui i seguenti passaggi:
 
-1. Accedi a **[!UICONTROL Area di lavoro personale]** e fai clic su **[!UICONTROL Crea]**. [!DNL Adobe Express] un’area di lavoro vuota viene visualizzata all’interno del [!DNL Assets view] dell&#39;utente.
+1. Accedi a **[!UICONTROL Area di lavoro personale]** e fai clic su **[!UICONTROL Crea]** all’interno del banner di Adobe Express visualizzato sopra il [!UICONTROL Accesso rapido] sezione. [!DNL Adobe Express] un’area di lavoro vuota viene visualizzata all’interno del [!DNL Assets view] dell&#39;utente.
 1. Crea i contenuti con [Modelli](https://helpx.adobe.com/in/express/using/work-with-templates.html). In caso contrario, passa a **[!UICONTROL La tua roba]** per modificare il contenuto esistente.
 1. Dopo aver completato la modifica, fai clic su **[!UICONTROL Salva come nuova risorsa]**.
-1. Specifica il percorso di destinazione per la risorsa creata.
+1. Specifica il percorso di destinazione della risorsa creata e fai clic su **[!UICONTROL Salva]**.
 
 >[!NOTE]
 >
->* Puoi modificare solo `JPEG` e `PNG` formati.
+>* Puoi modificare solo le immagini di `JPEG` e `PNG` tipi di formato.
 >* La dimensione della risorsa deve essere inferiore a 14 MB.
->* È possibile salvare un&#39;immagine come `PDF`, `JPEG`, o `PNG` formati.
+>* È possibile salvare un&#39;immagine in `PDF`, `JPEG`, o `PNG` formati.
 
 ## Modificare le immagini utilizzando [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 

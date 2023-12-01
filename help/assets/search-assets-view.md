@@ -3,10 +3,10 @@ title: Scopri come cercare e individuare le risorse in [!DNL Assets view]?
 description: Scopri come cercare e individuare le risorse nella vista AEM Assets. La potente funzionalità di ricerca consente di trovare rapidamente la risorsa appropriata e velocizza le attività relative ai contenuti.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 73%
+source-wordcount: '1314'
+ht-degree: 74%
 
 ---
 
@@ -172,7 +172,7 @@ Puoi selezionare le risorse da visualizzare nei risultati della ricerca ed effet
 
 ## Configurazione della prima home page di ricerca {#configuring-search-first-homepage}
 
-La prima home page di Search consente di spostarsi all&#39;istante tra i vari file e cartelle. Consente di navigare facilmente tra i tipi di risorse, i metadati, i tag avanzati e persino il contenuto stesso senza conoscere la parola chiave esatta. [!DNL Assets view] consente di configurare la home page controllando cosa deve apparire quando si accede a [!DNL Assets view].
+Experience Manager Assets consente di selezionare la pagina di destinazione predefinita per la tua organizzazione. Quando si utilizza la pagina Home di Search First, è possibile personalizzare il marchio della pagina configurando lo sfondo e le immagini del logo in base al marchio.
 
 Per configurare la prima home page di ricerca, eseguire i passaggi seguenti:
 
@@ -191,7 +191,7 @@ Puoi aggiungere il logo del brand e l’immagine di sfondo alla prima pagina ini
 
 1. Accedi a **[!UICONTROL Sfondo e immagine del logo]** sezione in **[!UICONTROL Homepage]**.
 1. Clic **[!UICONTROL Sostituisci]** per sfogliare le immagini dall’archivio risorse esistente.
-1. Fai clic su **[!UICONTROL Salva]**. [Anteprima](#preview-configured-homepage) le modifiche per ripassare le modifiche.
+1. Fai clic su **[!UICONTROL Salva]**. [Anteprima](#preview-configured-homepage) le modifiche per esaminare le modifiche.
 
 ### Anteprima pagina home configurata {#preview-configured-homepage}
 
