@@ -3,7 +3,7 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 8eb087bdda335b0a33e616eb534615396b220369
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 13%
@@ -105,7 +105,7 @@ Ti interessa provare questa funzione e condividere feedback? Invia un messaggio 
 
 * **Inviare un modulo adattivo allo scenario Adobe Workfront Fusion**: Forms as a Cloud Service offre opzioni pronte all’uso per collegare facilmente un modulo adattivo ad Adobe Workfront. Questo semplifica il processo di invio di un modulo adattivo a uno scenario Adobe Workfront, consentendoti di attivare uno scenario Workfront Fusion all’invio di un modulo adattivo.
 
-* **Supporto lingue da destra a sinistra**: il Forms adattivo basato sui Componenti core ora può essere presentato in una lingua da destra a sinistra (RTL) come l’arabo, il persiano e l’urdu. Le lingue RTL sono parlate da oltre 2 miliardi di persone in tutto il mondo. L’utilizzo di un modulo in linguaggio RTL consente di estendere la portata dei moduli adattivi per soddisfare questi diversi tipi di pubblico e per accedere ai mercati RTL. In alcune regioni, è anche un mandato legale fornire moduli nella lingua locale. Accogliendo le lingue locali, non solo si aprono le porte a un pubblico più ampio, ma si garantisce anche la conformità con le leggi e i regolamenti pertinenti.
+* **[Supporto lingue da destra a sinistra](/help/forms/supporting-new-language-localization-core-components.md)**: il Forms adattivo basato sui Componenti core ora può essere presentato in una lingua da destra a sinistra (RTL) come l’arabo, il persiano e l’urdu. Le lingue RTL sono parlate da oltre 2 miliardi di persone in tutto il mondo. L’utilizzo di un modulo in linguaggio RTL consente di estendere la portata dei moduli adattivi per soddisfare questi diversi tipi di pubblico e per accedere ai mercati RTL. In alcune regioni, è anche un mandato legale fornire moduli nella lingua locale. Accogliendo le lingue locali, non solo si aprono le porte a un pubblico più ampio, ma si garantisce anche la conformità con le leggi e i regolamenti pertinenti.
 
   ![Supporto lingue da destra a sinistra](/help/forms/assets/right-to-left-language-support.png)
 
