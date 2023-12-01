@@ -3,9 +3,9 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 0290e40094147a1c85eacf157904c7ef7388c5e7
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 13%
 
 ---
@@ -146,6 +146,6 @@ L’elenco completo dei rilasci mensili degli strumenti di migrazione è disponi
 
 ## Problemi noti {#known-issues}
 
-* Gli utenti non possono inviare Forms adattivo basato sui Componenti core. Il problema si verifica per Forms adattivo creato utilizzando i Componenti core versioni 2.0.38 - 2.0.60.
+* Impossibile inviare il Forms adattivo basato sui componenti core. Il problema si verifica per Forms adattivo creato utilizzando i Componenti core versioni 2.0.38 - 2.0.60.
 
   Per risolvere il problema. puoi passare alla versione 2.0.62 o successiva dei componenti core del modulo adattivo. Per impostare una versione dei Componenti core Forms adattivi per il tuo ambiente: [impostare le versioni dei componenti core.forms.components.version, core.forms.components.af.version e core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) dipendenze nell’archivio Forms as a Cloud Service o nel progetto basato su AEM Archetipo e [implementare le modifiche nell’ambiente as a Cloud Service Forms](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). La versione più recente delle dipendenze dei Componenti core adattivi di Forms è disponibile all’indirizzo [Archivio Git dei Componenti core di Forms adattivi](https://github.com/adobe/aem-core-forms-components#system-requirements).
