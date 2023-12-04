@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
 workflow-type: tm+mt
-source-wordcount: '4393'
-ht-degree: 92%
+source-wordcount: '4420'
+ht-degree: 93%
 
 ---
 
@@ -178,7 +178,7 @@ ht-degree: 92%
 + Onboarding {#onboarding}
    + [Inizia qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=it)
    + Percorso di onboarding {#journey}
-      + [Percorso di onboarding Panoramica](/help/journey-onboarding/overview.md)
+      + [Panoramica del percorso di onboarding](/help/journey-onboarding/overview.md)
       + [Preparazione all’onboarding](/help/journey-onboarding/preparation.md)
       + [Terminologia di AEM as a Cloud Service](/help/journey-onboarding/terminology.md)
       + [L’Admin Console](/help/journey-onboarding/admin-console.md)
@@ -585,6 +585,7 @@ ht-degree: 92%
          + [Incorporare un modulo adattivo basato su Componenti core in una pagina web esterna](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Incorporare un modulo adattivo basato su Componenti Foundation in una pagina web esterna](/help/forms/embed-adaptive-form-external-web-page.md)
       + Modello dati modulo {#use-form-data-model}
+         + [Inviare un modulo adattivo ad Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Connettere AEM Forms a database o origine dati](/help/forms/data-integration.md)
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -750,7 +751,7 @@ ht-degree: 92%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migrazione](/help/commerce-cloud/migration.md)
    + [Domande frequenti](/help/commerce-cloud/faq.md)
-+ Servizi di consegna Edge {#edge-delivery}
++ Edge Delivery Services {#edge-delivery}
    + [Guida introduttiva alla distribuzione Edge](/help/edge/overview.md)
    + [Utilizzo della consegna Edge](/help/edge/using.md)
 + Headless {#headless}
@@ -859,7 +860,7 @@ ht-degree: 92%
          + [Panoramica](/help/implementing/cloud-manager/overview-test-results.md)
          + [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-         + Test funzionale {#functional-testing}
+         + Test funzionali {#functional-testing}
             + [Panoramica del test funzionale](/help/implementing/cloud-manager/functional-testing.md)
             + [Test funzionale Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Test dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md)
