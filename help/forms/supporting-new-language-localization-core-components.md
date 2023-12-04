@@ -2,9 +2,9 @@
 title: Come si aggiunge il supporto per nuove lingue a un modulo adattivo basato su componenti core?
 description: Scopri come aggiungere nuove lingue per un modulo adattivo.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1335'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 2%
 | -------- | ---------------------------- |
 | Componenti di base | [Fai clic qui](supporting-new-language-localization.md) |
 | Componenti core | Questo articolo |
+
+<span class="preview"> La funzione di supporto per le lingue da destra a sinistra è disponibile nel programma per i primi utenti. Puoi scrivere a aem-forms-early-adopter-program@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
 
 AEM Forms fornisce supporto predefinito per le lingue inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR). È possibile aggiungere il supporto anche per altre lingue, come Hindi(hi_IN). È inoltre possibile presentare Forms adattivo in una lingua RTL (Right-to-Left) come l’arabo, il persiano e l’urdu aggiungendo queste lingue.
 
@@ -86,7 +88,7 @@ Per aggiungere il supporto per una nuova lingua, eseguire la procedura seguente:
    ![Esempio di Guida a Localization Service.cfg.json](locales.png)
 
 1. Aggiungi il [codice locale della lingua](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) che stai cercando di aggiungere, ad esempio, aggiungi &quot;hi&quot; per hindi.
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 
 ### 3. Creare una libreria client per aggiungere una lingua
 
