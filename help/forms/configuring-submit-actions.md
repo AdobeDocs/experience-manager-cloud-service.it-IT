@@ -2,7 +2,7 @@
 title: Come si configura un’azione di invio per un modulo adattivo?
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
+source-git-commit: 738a0ceeb0a8cc9b08a1871ef3b2939cbcf2f80a
 workflow-type: tm+mt
 source-wordcount: '3913'
 ht-degree: 2%
@@ -410,7 +410,6 @@ Dopo una configurazione corretta, utilizza [Richiama un flusso Microsoft® Power
 È possibile configurare un modulo adattivo per inviare dati a Workfront Fusion al momento dell’invio. Workfront Fusion consente l&#39;automazione dei processi in modo che l&#39;utente possa concentrarsi su nuove attività anziché ripetere più volte le stesse attività. Automatizza attività semplici e complesse, risparmiando tempo e garantendo un&#39;esecuzione coerente dei processi.
 
 L’editor di Forms adattivo fornisce **Richiama uno scenario Workfront Fusion** azione di invio per inviare dati o allegati di Adaptive Forms a uno scenario Workfront Fusion. Per utilizzare l’azione di invio per inviare i dati acquisiti a uno scenario Workfront Fusion, consulta [Inviare un modulo adattivo ad Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
-
 
 ## Utilizzare l’invio sincrono o asincrono {#use-synchronous-or-asynchronous-submission}
 
