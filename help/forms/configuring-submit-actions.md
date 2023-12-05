@@ -2,9 +2,9 @@
 title: Come si configura un’azione di invio per un modulo adattivo?
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3913'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,7 @@ Un’azione di invio viene attivata quando un utente fa clic su **[!UICONTROL In
 * [Invia a OneDrive](#submit-to-onedrive)
 * [Invia ad Azure Blob Storage](#azure-blob-storage)
 * [Invia a Power Automate](#microsoft-power-automate)
+* [Invia a Workfront Fusion](#workfront-fusion)
 
 È inoltre possibile [estendere le azioni di invio predefinite](custom-submit-action-form.md) per creare un’azione di invio personalizzata.
 
@@ -403,6 +404,13 @@ Per impostare i valori di una configurazione: [Generare configurazioni OSGi util
 L’editor di Forms adattivo fornisce **Richiama un flusso Microsoft® Power Automate** l’azione di invio per inviare i dati dei moduli adattivi, gli allegati e il documento di record viene inviata a Power Automate Cloud Flow. Per utilizzare l&#39;azione Invia per inviare i dati acquisiti a Microsoft® Power Automate, [Collegare l&#39;istanza Forms as a Cloud Service con Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
 
 Dopo una configurazione corretta, utilizza [Richiama un flusso Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) azione di invio per inviare dati a un flusso Power Automate.
+
+## Invia a Workfront Fusion {#workfront-fusion}
+
+È possibile configurare un modulo adattivo per inviare dati a Workfront Fusion al momento dell’invio. Workfront Fusion consente l&#39;automazione dei processi in modo che l&#39;utente possa concentrarsi su nuove attività anziché ripetere più volte le stesse attività. Automatizza attività semplici e complesse, risparmiando tempo e garantendo un&#39;esecuzione coerente dei processi.
+
+L’editor di Forms adattivo fornisce **Richiama uno scenario Workfront Fusion** azione di invio per inviare dati o allegati di Adaptive Forms a uno scenario Workfront Fusion. Per utilizzare l’azione di invio per inviare i dati acquisiti a uno scenario Workfront Fusion, consulta [Inviare un modulo adattivo ad Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+
 
 ## Utilizzare l’invio sincrono o asincrono {#use-synchronous-or-asynchronous-submission}
 
