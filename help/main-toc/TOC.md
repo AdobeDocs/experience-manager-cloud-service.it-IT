@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 54ab961b9689075f6a34ff51ecf92bf1ae68ebf1
+source-git-commit: d3af2812e4f9e50937fbefbf9a0fb67004a460a9
 workflow-type: tm+mt
 source-wordcount: '4429'
 ht-degree: 93%
@@ -580,8 +580,8 @@ ht-degree: 93%
          + [Integrare AEM Forms as a Cloud Service con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrare Forms adattivo in Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [Visualizzazione e comprensione del rapporto di Adaptive Forms Analytics](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Inviare un modulo adattivo ad Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporare un modulo adattivo in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Incorporare un modulo adattivo basato su Componenti core in una pagina web esterna](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Incorporare un modulo adattivo basato su Componenti Foundation in una pagina web esterna](/help/forms/embed-adaptive-form-external-web-page.md)
