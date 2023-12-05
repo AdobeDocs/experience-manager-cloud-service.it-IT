@@ -3,9 +3,9 @@ title: Integrazione di Adobe Workfront Fusion con l’invio di AEM Forms
 description: Adobe Workfront Fusion consente di concentrarsi su nuove attività anziché su attività ripetitive. Puoi collegare Adobe Workfront Fusion a un modulo adattivo utilizzando Invio modulo.
 keywords: Inviare un modulo adattivo ad Adobe Workfront Fusion, Integrazione di Adobe Workfront Fusion con AEM Forms Invio, Adobe Workfront Fusion con AEM Forms, Workfront Fusion con AEM Forms, Connessione di Workfront Fusion a AEM Forms, AEM Forms e Workfront Fusion, Come collegare Workfront Fusion con AEM Forms?, Connessione di Workfront Fusion a un modulo
 topic-tags: author, developer
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Quando fai clic sul pulsante di attivazione/disattivazione, lo scenario Workfron
 - [Nuovo Forms adattivo](#new-af-submit-action)
 - [Moduli adattivi esistenti](#existing-af-submit-action)
 
-#### 2.1 Configurare l’azione di invio del nuovo modulo adattivo per Workfront Fusion {#new-af-submit-action}
+#### Configurare l’azione di invio del nuovo modulo adattivo per Workfront Fusion {#new-af-submit-action}
 
 Per configurare l’azione di invio del nuovo modulo adattivo per Workfront Fusion:
 
@@ -165,7 +165,7 @@ Per configurare l’azione di invio del nuovo modulo adattivo per Workfront Fusi
 1. Fai clic su **[!UICONTROL Crea]**.
 1. Specifica il nome per il nuovo modulo adattivo e fai clic su **[!UICONTROL Crea]**.
 
-#### 2.2 Configurare l’azione di invio del modulo adattivo esistente per Workfront Fusion {#existing-af-submit-action}
+#### Configurare l’azione di invio del modulo adattivo esistente per Workfront Fusion {#existing-af-submit-action}
 
 Per configurare l’azione di invio del modulo adattivo esistente per Workfront Fusion:
 
@@ -178,7 +178,7 @@ Per configurare l’azione di invio del modulo adattivo esistente per Workfront 
    ![Azione di invio per Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. Apri **[!UICONTROL Invio]** scheda.
-1. Seleziona la **[Azione di invio]** as **[!UICONTROL Richiama uno scenario Workfront Fusion]**
+1. Seleziona la **[!UICONTROL Azione di invio]** as **[!UICONTROL Richiama uno scenario Workfront Fusion]**
 1. Seleziona **[!UICONTROL Scenario Workfront Fusion]** dall’elenco a discesa.
 1. Clic **[!UICONTROL Fine]**.
 
